@@ -29,9 +29,9 @@ gh api --method PUT "repos/.../contents/path" \
 SHA=$(gh api "repos/{owner}/{repo}/contents/{path}?ref={branch}" --jq '.sha')
 ```
 
-### 第二步：读取原文件内容
+### 第二步：Base64 编码
 ```bash
-CONTENT=$(cat /path/to/file)
+CONTENT=$(base64 -i /path/to/file | tr -d '\n')
 ```
 
 ### 第三步：PUT 推送
@@ -48,7 +48,7 @@ gh api --method PUT "repos/{owner}/{repo}/contents/{path}" \
 ## 完整模板
 ```bash
 SHA=$(gh api "repos/USER/REPO/contents/src/App.tsx?ref=main" --jq '.sha')
-CONTENT=$(cat /tmp/App.tsx)
+CONTENT=$(base64 -i /tmp/App.tsx | tr -d '\n')
 gh api --method PUT "repos/USER/REPO/contents/src/App.tsx" \
   -f message="your commit message" \
   -f content="$CONTENT" \
