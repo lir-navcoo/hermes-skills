@@ -1,1 +1,354 @@
-IyBTeXN0ZW1hdGljIERlYnVnZ2luZwoKIyMgT3ZlcnZpZXcKClJhbmRvbSBmaXhlcyB3YXN0ZSB0aW1lIGFuZCBjcmVhdGUgbmV3IGJ1Z3MuIFF1aWNrIHBhdGNoZXMgbWFzayB1bmRlcmx5aW5nIGlzc3Vlcy4KCioqQ29yZSBwcmluY2lwbGU6KiogQUxXQVlTIGZpbmQgcm9vdCBjYXVzZSBiZWZvcmUgYXR0ZW1wdGluZyBmaXhlcy4gU3ltcHRvbSBmaXhlcyBhcmUgZmFpbHVyZS4KCioqVmlvbGF0aW5nIHRoZSBsZXR0ZXIgb2YgdGhpcyBwcm9jZXNzIGlzIHZpb2xhdGluZyB0aGUgc3Bpcml0IG9mIGRlYnVnZ2luZy4qKgoKIyMgVGhlIElyb24gTGF3CgpgYGAKTk8gRklYRVMgV0lUSE9VVCBST09UIENBVVNFIElOVkVTVElHQVRJT04gRklSU1QKYGBgCgpJZiB5b3UgaGF2ZW4ndCBjb21wbGV0ZWQgUGhhc2UgMSwgeW91IGNhbm5vdCBwcm9wb3NlIGZpeGVzLgoKIyMgV2hlbiB0byBVc2UKClVzZSBmb3IgQU5ZIHRlY2huaWNhbCBpc3N1ZToKLSBUZXN0IGZhaWx1cmVzCi0gQnVncyBpbiBwcm9kdWN0aW9uCi0gVW5leHBlY3RlZCBiZWhhdmlvcgotIFBlcmZvcm1hbmNlIHByb2JsZW1zCi0gQnVpbGQgZmFpbHVyZXMKLSBJbnRlZ3JhdGlvbiBpc3N1ZXMKCioqVXNlIHRoaXMgRVNQRUNJQUxMWSB3aGVuOioqCi0gVW5kZXIgdGltZSBwcmVzc3VyZSAoZW1lcmdlbmNpZXMgbWFrZSBndWVzc2luZyB0ZW1wdGluZykKLSAiSnVzdCBvbmUgcXVpY2sgZml4IiBzZWVtcyBvYnZpb3VzCi0gWW91J3ZlIGFscmVhZHkgdHJpZWQgbXVsdGlwbGUgZml4ZXMKLSBQcmV2aW91cyBmaXggZGlkbid0IHdvcmsKLSBZb3UgZG9uJ3QgZnVsbHkgdW5kZXJzdGFuZCB0aGUgaXNzdWUKCioqRG9uJ3Qgc2tpcCB3aGVuOioqCi0gSXNzdWUgc2VlbXMgc2ltcGxlIChzaW1wbGUgYnVncyBoYXZlIHJvb3QgY2F1c2VzIHRvbykKLSBZb3UncmUgaW4gYSBodXJyeSAocnVzaGluZyBndWFyYW50ZWVzIHJld29yaykKLSBTb21lb25lIHdhbnRzIGl0IGZpeGVkIE5PVyAoc3lzdGVtYXRpYyBpcyBmYXN0ZXIgdGhhbiB0aHJhc2hpbmcpCgojIyBUaGUgRm91ciBQaGFzZXMKCllvdSBNVVNUIGNvbXBsZXRlIGVhY2ggcGhhc2UgYmVmb3JlIHByb2NlZWRpbmcgdG8gdGhlIG5leHQuCgotLS0KCiMjIFBoYXNlIDE6IFJvb3QgQ2F1c2UgSW52ZXN0aWdhdGlvbgoKKipCRUZPUkUgYXR0ZW1wdGluZyBBTlkgZml4OioqCgojIyMgMS4gUmVhZCBFcnJvciBNZXNzYWdlcyBDYXJlZnVsbHkKCi0gRG9uJ3Qgc2tpcCBwYXN0IGVycm9ycyBvciB3YXJuaW5ncwotIFRoZXkgb2Z0ZW4gY29udGFpbiB0aGUgZXhhY3Qgc29sdXRpb24KLSBSZWFkIHN0YWNrIHRyYWNlcyBjb21wbGV0ZWx5Ci0gTm90ZSBsaW5lIG51bWJlcnMsIGZpbGUgcGF0aHMsIGVycm9yIGNvZGVzCgoqKkFjdGlvbjoqKiBVc2UgYHJlYWRfZmlsZWAgb24gdGhlIHJlbGV2YW50IHNvdXJjZSBmaWxlcy4gVXNlIGBzZWFyY2hfZmlsZXNgIHRvIGZpbmQgdGhlIGVycm9yIHN0cmluZyBpbiB0aGUgY29kZWJhc2UuCgojIyMgMi4gUmVwcm9kdWNlIENvbnNpc3RlbnRseQoKLSBDYW4geW91IHRyaWdnZXIgaXQgcmVsaWFibHk/Ci0gV2hhdCBhcmUgdGhlIGV4YWN0IHN0ZXBzPwotIERvZXMgaXQgaGFwcGVuIGV2ZXJ5IHRpbWU/Ci0gSWYgbm90IHJlcHJvZHVjaWJsZSDihpIgZ2F0aGVyIG1vcmUgZGF0YSwgZG9uJ3QgZ3Vlc3MKCioqQWN0aW9uOioqIFVzZSB0aGUgYHRlcm1pbmFsYCB0b29sIHRvIHJ1biB0aGUgZmFpbGluZyB0ZXN0IG9yIHRyaWdnZXIgdGhlIGJ1ZzoKCmBgYGJhc2gKIyBSdW4gc3BlY2lmaWMgZmFpbGluZyB0ZXN0CnB5dGVzdCB0ZXN0cy90ZXN0X21vZHVsZS5weTo6dGVzdF9uYW1lIC12CgojIFJ1biB3aXRoIHZlcmJvc2Ugb3V0cHV0CnB5dGVzdCB0ZXN0cy90ZXN0X21vZHVsZS5weSAtdiAtLXRiPWxvbmcKYGBgCgojIyMgMy4gQ2hlY2sgUmVjZW50IENoYW5nZXMKCi0gV2hhdCBjaGFuZ2VkIHRoYXQgY291bGQgY2F1c2UgdGhpcz8KLSBHaXQgZGlmZiwgcmVjZW50IGNvbW1pdHMKLSBOZXcgZGVwZW5kZW5jaWVzLCBjb25maWcgY2hhbmdlcwoKKipBY3Rpb246KioKCmBgYGJhc2gKIyBSZWNlbnQgY29tbWl0cwpnaXQgbG9nIC0tb25lbGluZSAtMTAKCiMgVW5jb21taXR0ZWQgY2hhbmdlcwpnaXQgZGlmZgoKIyBDaGFuZ2VzIGluIHNwZWNpZmljIGZpbGUKZ2l0IGxvZyAtcCAtLWZvbGxvdyBzcmMvcHJvYmxlbWF0aWNfZmlsZS5weSB8IGhlYWQgLTEwMApgYGAKCiMjIyA0LiBHYXRoZXIgRXZpZGVuY2UgaW4gTXVsdGktQ29tcG9uZW50IFN5c3RlbXMKCioqV0hFTiBzeXN0ZW0gaGFzIG11bHRpcGxlIGNvbXBvbmVudHMgKEFQSSDihpIgc2VydmljZSDihpIgZGF0YWJhc2UsIENJIOKGkiBidWlsZCDihpIgZGVwbG95KToqKgoKKipCRUZPUkUgcHJvcG9zaW5nIGZpeGVzLCBhZGQgZGlhZ25vc3RpYyBpbnN0cnVtZW50YXRpb246KioKCkZvciBFQUNIIGNvbXBvbmVudCBib3VuZGFyeToKLSBMb2cgd2hhdCBkYXRhIGVudGVycyB0aGUgY29tcG9uZW50Ci0gTG9nIHdoYXQgZGF0YSBleGl0cyB0aGUgY29tcG9uZW50Ci0gVmVyaWZ5IGVudmlyb25tZW50L2NvbmZpZyBwcm9wYWdhdGlvbgotIENoZWNrIHN0YXRlIGF0IGVhY2ggbGF5ZXIKClJ1biBvbmNlIHRvIGdhdGhlciBldmlkZW5jZSBzaG93aW5nIFdIRVJFIGl0IGJyZWFrcy4KVEhFTiBhbmFseXplIGV2aWRlbmNlIHRvIGlkZW50aWZ5IHRoZSBmYWlsaW5nIGNvbXBvbmVudC4KVEhFTiBpbnZlc3RpZ2F0ZSB0aGF0IHNwZWNpZmljIGNvbXBvbmVudC4KCiMjIyA1LiBUcmFjZSBEYXRhIEZsb3cKCioqV0hFTiBlcnJvciBpcyBkZWVwIGluIHRoZSBjYWxsIHN0YWNrOioqCgotIFdoZXJlIGRvZXMgdGhlIGJhZCB2YWx1ZSBvcmlnaW5hdGU/Ci0gV2hhdCBjYWxsZWQgdGhpcyBmdW5jdGlvbiB3aXRoIHRoZSBiYWQgdmFsdWU/Ci0gS2VlcCB0cmFjaW5nIHVwc3RyZWFtIHVudGlsIHlvdSBmaW5kIHRoZSBzb3VyY2UKLSBGaXggYXQgdGhlIHNvdXJjZSwgbm90IGF0IHRoZSBzeW1wdG9tCgoqKkFjdGlvbjoqKiBVc2UgYHNlYXJjaF9maWxlc2AgdG8gdHJhY2UgcmVmZXJlbmNlczoKCmBgYHB5dGhvbgojIEZpbmQgd2hlcmUgdGhlIGZ1bmN0aW9uIGlzIGNhbGxlZApzZWFyY2hfZmlsZXMoImZ1bmN0aW9uX25hbWUoIiwgcGF0aD0ic3JjLyIsIGZpbGVfZ2xvYj0iKi5weSIpCgojIEZpbmQgd2hlcmUgdGhlIHZhcmlhYmxlIGlzIHNldApzZWFyY2hfZmlsZXMoInZhcmlhYmxlX25hbWVcXHMqPSIsIHBhdGg9InNyYy8iLCBmaWxlX2dsb2I9IioucHkiKQpgYGAKCiMjIyBQaGFzZSAxIENvbXBsZXRpb24gQ2hlY2tsaXN0CgotIFsgXSBFcnJvciBtZXNzYWdlcyBmdWxseSByZWFkIGFuZCB1bmRlcnN0b29kCi0gWyBdIElzc3VlIHJlcHJvZHVjZWQgY29uc2lzdGVudGx5Ci0gWyBdIFJlY2VudCBjaGFuZ2VzIGlkZW50aWZpZWQgYW5kIHJldmlld2VkCi0gWyBdIEV2aWRlbmNlIGdhdGhlcmVkIChsb2dzLCBzdGF0ZSwgZGF0YSBmbG93KQotIFsgXSBQcm9ibGVtIGlzb2xhdGVkIHRvIHNwZWNpZmljIGNvbXBvbmVudC9jb2RlCi0gWyBdIFJvb3QgY2F1c2UgaHlwb3RoZXNpcyBmb3JtZWQKCioqU1RPUDoqKiBEbyBub3QgcHJvY2VlZCB0byBQaGFzZSAyIHVudGlsIHlvdSB1bmRlcnN0YW5kIFdIWSBpdCdzIGhhcHBlbmluZy4KCi0tLQoKIyMgUGhhc2UgMjogUGF0dGVybiBBbmFseXNpcwoKKipGaW5kIHRoZSBwYXR0ZXJuIGJlZm9yZSBmaXhpbmc6KioKCiMjIyAxLiBGaW5kIFdvcmtpbmcgRXhhbXBsZXMKCi0gTG9jYXRlIHNpbWlsYXIgd29ya2luZyBjb2RlIGluIHRoZSBzYW1lIGNvZGViYXNlCi0gV2hhdCB3b3JrcyB0aGF0J3Mgc2ltaWxhciB0byB3aGF0J3MgYnJva2VuPwoKKipBY3Rpb246KiogVXNlIGBzZWFyY2hfZmlsZXNgIHRvIGZpbmQgY29tcGFyYWJsZSBwYXR0ZXJuczoKCmBgYHB5dGhvbgpzZWFyY2hfZmlsZXMoInNpbWlsYXJfcGF0dGVybiIsIHBhdGg9InNyYy8iLCBmaWxlX2dsb2I9IioucHkiKQpgYGAKCiMjIyAyLiBDb21wYXJlIEFnYWluc3QgUmVmZXJlbmNlcwoKLSBJZiBpbXBsZW1lbnRpbmcgYSBwYXR0ZXJuLCByZWFkIHRoZSByZWZlcmVuY2UgaW1wbGVtZW50YXRpb24gQ09NUExFVEVMWQotIERvbid0IHNraW0g4oCUIHJlYWQgZXZlcnkgbGluZQotIFVuZGVyc3RhbmQgdGhlIHBhdHRlcm4gZnVsbHkgYmVmb3JlIGFwcGx5aW5nCgojIyMgMy4gSWRlbnRpZnkgRGlmZmVyZW5jZXMKCi0gV2hhdCdzIGRpZmZlcmVudCBiZXR3ZWVuIHdvcmtpbmcgYW5kIGJyb2tlbj8KLSBMaXN0IGV2ZXJ5IGRpZmZlcmVuY2UsIGhvd2V2ZXIgc21hbGwKLSBEb24ndCBhc3N1bWUgInRoYXQgY2FuJ3QgbWF0dGVyIgoKIyMjIDQuIFVuZGVyc3RhbmQgRGVwZW5kZW5jaWVzCgotIFdoYXQgb3RoZXIgY29tcG9uZW50cyBkb2VzIHRoaXMgbmVlZD8KLSBXaGF0IHNldHRpbmdzLCBjb25maWcsIGVudmlyb25tZW50PwotIFdoYXQgYXNzdW1wdGlvbnMgZG9lcyBpdCBtYWtlPwoKLS0tCgojIyBQaGFzZSAzOiBIeXBvdGhlc2lzIGFuZCBUZXN0aW5nCgoqKlNjaWVudGlmaWMgbWV0aG9kOioqCgojIyMgMS4gRm9ybSBhIFNpbmdsZSBIeXBvdGhlc2lzCgotIFN0YXRlIGNsZWFybHk6ICJJIHRoaW5rIFggaXMgdGhlIHJvb3QgY2F1c2UgYmVjYXVzZSBZIgotIFdyaXRlIGl0IGRvd24KLSBCZSBzcGVjaWZpYywgbm90IHZhZ3VlCgojIyMgMi4gVGVzdCBNaW5pbWFsbHkKCi0gTWFrZSB0aGUgU01BTExFU1QgcG9zc2libGUgY2hhbmdlIHRvIHRlc3QgdGhlIGh5cG90aGVzaXMKLSBPbmUgdmFyaWFibGUgYXQgYSB0aW1lCi0gRG9uJ3QgZml4IG11bHRpcGxlIHRoaW5ncyBhdCBvbmNlCgojIyMgMy4gVmVyaWZ5IEJlZm9yZSBDb250aW51aW5nCgotIERpZCBpdCB3b3JrPyDihpIgUGhhc2UgNAotIERpZG4ndCB3b3JrPyDihpIgRm9ybSBORVcgaHlwb3RoZXNpcwotIERPTidUIGFkZCBtb3JlIGZpeGVzIG9uIHRvcAoKIyMjIDQuIFdoZW4gWW91IERvbid0IEtub3cKCi0gU2F5ICJJIGRvbid0IHVuZGVyc3RhbmQgWCIKLSBEb24ndCBwcmV0ZW5kIHRvIGtub3cKLSBBc2sgdGhlIHVzZXIgZm9yIGhlbHAKLSBSZXNlYXJjaCBtb3JlCgotLS0KCiMjIFBoYXNlIDQ6IEltcGxlbWVudGF0aW9uCgoqKkZpeCB0aGUgcm9vdCBjYXVzZSwgbm90IHRoZSBzeW1wdG9tOioqCgojIyMgMS4gQ3JlYXRlIEZhaWxpbmcgVGVzdCBDYXNlCgotIFNpbXBsZXN0IHBvc3NpYmxlIHJlcHJvZHVjdGlvbgotIEF1dG9tYXRlZCB0ZXN0IGlmIHBvc3NpYmxlCi0gTVVTVCBoYXZlIGJlZm9yZSBmaXhpbmcKLSBVc2UgdGhlIGB0ZXN0LWRyaXZlbi1kZXZlbG9wbWVudGAgc2tpbGwKCiMjIyAyLiBJbXBsZW1lbnQgU2luZ2xlIEZpeAoKLSBBZGRyZXNzIHRoZSByb290IGNhdXNlIGlkZW50aWZpZWQKLSBPTkUgY2hhbmdlIGF0IGEgdGltZQotIE5vICJ3aGlsZSBJJ20gaGVyZSIgaW1wcm92ZW1lbnRzCi0gTm8gYnVuZGxlZCByZWZhY3RvcmluZwoKIyMjIDMuIFZlcmlmeSBGaXgKCmBgYGJhc2gKIyBSdW4gdGhlIHNwZWNpZmljIHJlZ3Jlc3Npb24gdGVzdApweXRlc3QgdGVzdHMvdGVzdF9tb2R1bGUucHk6OnRlc3RfcmVncmVzc2lvbiAtdgoKIyBSdW4gZnVsbCBzdWl0ZSDigJQgbm8gcmVncmVzc2lvbnMKcHl0ZXN0IHRlc3RzLyAtcQpgYGAKCiMjIyA0LiBJZiBGaXggRG9lc24ndCBXb3JrIOKAlCBUaGUgUnVsZSBvZiBUaHJlZQoKLSAqKlNUT1AuKioKLSBDb3VudDogSG93IG1hbnkgZml4ZXMgaGF2ZSB5b3UgdHJpZWQ/Ci0gSWYgPCAzOiBSZXR1cm4gdG8gUGhhc2UgMSwgcmUtYW5hbHl6ZSB3aXRoIG5ldyBpbmZvcm1hdGlvbgotICoqSWYg4omlIDM6IFNUT1AgYW5kIHF1ZXN0aW9uIHRoZSBhcmNoaXRlY3R1cmUgKHN0ZXAgNSBiZWxvdykqKgotIERPTidUIGF0dGVtcHQgRml4ICM0IHdpdGhvdXQgYXJjaGl0ZWN0dXJhbCBkaXNjdXNzaW9uCgojIyMgNS4gSWYgMysgRml4ZXMgRmFpbGVkOiBRdWVzdGlvbiBBcmNoaXRlY3R1cmUKCioqUGF0dGVybiBpbmRpY2F0aW5nIGFuIGFyY2hpdGVjdHVyYWwgcHJvYmxlbToqKgotIEVhY2ggZml4IHJldmVhbHMgbmV3IHNoYXJlZCBzdGF0ZS9jb3VwbGluZyBpbiBhIGRpZmZlcmVudCBwbGFjZQotIEZpeGVzIHJlcXVpcmUgIm1hc3NpdmUgcmVmYWN0b3JpbmciIHRvIGltcGxlbWVudAotIEVhY2ggZml4IGNyZWF0ZXMgbmV3IHN5bXB0b21zIGVsc2V3aGVyZQoKKipTVE9QIGFuZCBxdWVzdGlvbiBmdW5kYW1lbnRhbHM6KioKLSBJcyB0aGlzIHBhdHRlcm4gZnVuZGFtZW50YWxseSBzb3VuZD8KLSBBcmUgd2UgInN0aWNraW5nIHdpdGggaXQgdGhyb3VnaCBzaGVlciBpbmVydGlhIj8KLSBTaG91bGQgd2UgcmVmYWN0b3IgdGhlIGFyY2hpdGVjdHVyZSB2cy4gY29udGludWUgZml4aW5nIHN5bXB0b21zPwoKKipEaXNjdXNzIHdpdGggdGhlIHVzZXIgYmVmb3JlIGF0dGVtcHRpbmcgbW9yZSBmaXhlcy4qKgoKVGhpcyBpcyBOT1QgYSBmYWlsZWQgaHlwb3RoZXNpcyDigJQgdGhpcyBpcyBhIHdyb25nIGFyY2hpdGVjdHVyZS4KCi0tLQoKIyMgUmVkIEZsYWdzIOKAlCBTVE9QIGFuZCBGb2xsb3cgUHJvY2VzcwoKSWYgeW91IGNhdGNoIHlvdXJzZWxmIHRoaW5raW5nOgotICJRdWljayBmaXggZm9yIG5vdywgaW52ZXN0aWdhdGUgbGF0ZXIiCi0gIkp1c3QgdHJ5IGNoYW5naW5nIFggYW5kIHNlZSBpZiBpdCB3b3JrcyIKLSAiQWRkIG11bHRpcGxlIGNoYW5nZXMsIHJ1biB0ZXN0cyIKLSAiU2tpcCB0aGUgdGVzdCwgSSdsbCBtYW51YWxseSB2ZXJpZnkiCi0gIkl0J3MgcHJvYmFibHkgWCwgbGV0IG1lIGZpeCB0aGF0IgotICJJIGRvbid0IGZ1bGx5IHVuZGVyc3RhbmQgYnV0IHRoaXMgbWlnaHQgd29yayIKLSAiUGF0dGVybiBzYXlzIFggYnV0IEknbGwgYWRhcHQgaXQgZGlmZmVyZW50bHkiCi0gIkhlcmUgYXJlIHRoZSBtYWluIHByb2JsZW1zOiBbbGlzdHMgZml4ZXMgd2l0aG91dCBpbnZlc3RpZ2F0aW9uXSIKLSBQcm9wb3Npbmcgc29sdXRpb25zIGJlZm9yZSB0cmFjaW5nIGRhdGEgZmxvdwotICoqIk9uZSBtb3JlIGZpeCBhdHRlbXB0IiAod2hlbiBhbHJlYWR5IHRyaWVkIDIrKSoqCi0gKipFYWNoIGZpeCByZXZlYWxzIGEgbmV3IHByb2JsZW0gaW4gYSBkaWZmZXJlbnQgcGxhY2UqKgoKKipBTEwgb2YgdGhlc2UgbWVhbjogU1RPUC4gUmV0dXJuIHRvIFBoYXNlIDEuKioKCioqSWYgMysgZml4ZXMgZmFpbGVkOioqIFF1ZXN0aW9uIHRoZSBhcmNoaXRlY3R1cmUgKFBoYXNlIDQgc3RlcCA1KS4KCiMjIENvbW1vbiBSYXRpb25hbGl6YXRpb25zCgp8IEV4Y3VzZSB8IFJlYWxpdHkgfAp8LS0tLS0tLS18LS0tLS0tLS0tfAp8ICJJc3N1ZSBpcyBzaW1wbGUsIGRvbid0IG5lZWQgcHJvY2VzcyIgfCBTaW1wbGUgaXNzdWVzIGhhdmUgcm9vdCBjYXVzZXMgdG9vLiBQcm9jZXNzIGlzIGZhc3QgZm9yIHNpbXBsZSBidWdzLiB8CnwgIkVtZXJnZW5jeSwgbm8gdGltZSBmb3IgcHJvY2VzcyIgfCBTeXN0ZW1hdGljIGRlYnVnZ2luZyBpcyBGQVNURVIgdGhhbiBndWVzcy1hbmQtY2hlY2sgdGhyYXNoaW5nLiB8CnwgIkp1c3QgdHJ5IHRoaXMgZmlyc3QsIHRoZW4gaW52ZXN0aWdhdGUiIHwgRmlyc3QgZml4IHNldHMgdGhlIHBhdHRlcm4uIERvIGl0IHJpZ2h0IGZyb20gdGhlIHN0YXJ0LiB8CnwgIkknbGwgd3JpdGUgdGVzdCBhZnRlciBjb25maXJtaW5nIGZpeCB3b3JrcyIgfCBVbnRlc3RlZCBmaXhlcyBkb24ndCBzdGljay4gVGVzdCBmaXJzdCBwcm92ZXMgaXQuIHwKfCAiTXVsdGlwbGUgZml4ZXMgYXQgb25jZSBzYXZlcyB0aW1lIiB8IENhbid0IGlzb2xhdGUgd2hhdCB3b3JrZWQuIENhdXNlcyBuZXcgYnVncy4gfAp8ICJSZWZlcmVuY2UgdG9vIGxvbmcsIEknbGwgYWRhcHQgdGhlIHBhdHRlcm4iIHwgUGFydGlhbCB1bmRlcnN0YW5kaW5nIGd1YXJhbnRlZXMgYnVncy4gUmVhZCBpdCBjb21wbGV0ZWx5LiB8CnwgIkkgc2VlIHRoZSBwcm9ibGVtLCBsZXQgbWUgZml4IGl0IiB8IFNlZWluZyBzeW1wdG9tcyDiiaAgdW5kZXJzdGFuZGluZyByb290IGNhdXNlLiB8CnwgIk9uZSBtb3JlIGZpeCBhdHRlbXB0IiAoYWZ0ZXIgMisgZmFpbHVyZXMpIHwgMysgZmFpbHVyZXMgPSBhcmNoaXRlY3R1cmFsIHByb2JsZW0uIFF1ZXN0aW9uIHRoZSBwYXR0ZXJuLCBkb24ndCBmaXggYWdhaW4uIHwKCiMjIFF1aWNrIFJlZmVyZW5jZQoKfCBQaGFzZSB8IEtleSBBY3Rpdml0aWVzIHwgU3VjY2VzcyBDcml0ZXJpYSB8CnwtLS0tLS0tfC0tLS0tLS0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tLS0tLS18CnwgKioxLiBSb290IENhdXNlKiogfCBSZWFkIGVycm9ycywgcmVwcm9kdWNlLCBjaGVjayBjaGFuZ2VzLCBnYXRoZXIgZXZpZGVuY2UsIHRyYWNlIGRhdGEgZmxvdyB8IFVuZGVyc3RhbmQgV0hBVCBhbmQgV0hZIHwKfCAqKjIuIFBhdHRlcm4qKiB8IEZpbmQgd29ya2luZyBleGFtcGxlcywgY29tcGFyZSwgaWRlbnRpZnkgZGlmZmVyZW5jZXMgfCBLbm93IHdoYXQncyBkaWZmZXJlbnQgfAp8ICoqMy4gSHlwb3RoZXNpcyoqIHwgRm9ybSB0aGVvcnksIHRlc3QgbWluaW1hbGx5LCBvbmUgdmFyaWFibGUgYXQgYSB0aW1lIHwgQ29uZmlybWVkIG9yIG5ldyBoeXBvdGhlc2lzIHwKfCAqKjQuIEltcGxlbWVudGF0aW9uKiogfCBDcmVhdGUgcmVncmVzc2lvbiB0ZXN0LCBmaXggcm9vdCBjYXVzZSwgdmVyaWZ5IHwgQnVnIHJlc29sdmVkLCBhbGwgdGVzdHMgcGFzcyB8CgojIyBIZXJtZXMgQWdlbnQgSW50ZWdyYXRpb24KCiMjIyBJbnZlc3RpZ2F0aW9uIFRvb2xzCgpVc2UgdGhlc2UgSGVybWVzIHRvb2xzIGR1cmluZyBQaGFzZSAxOgoKLSAqKmBzZWFyY2hfZmlsZXNgKiog4oCUIEZpbmQgZXJyb3Igc3RyaW5ncywgdHJhY2UgZnVuY3Rpb24gY2FsbHMsIGxvY2F0ZSBwYXR0ZXJucwotICoqYHJlYWRfZmlsZWAqKiDigJQgUmVhZCBzb3VyY2UgY29kZSB3aXRoIGxpbmUgbnVtYmVycyBmb3IgcHJlY2lzZSBhbmFseXNpcwotICoqYHRlcm1pbmFsYCoqIOKAlCBSdW4gdGVzdHMsIGNoZWNrIGdpdCBoaXN0b3J5LCByZXByb2R1Y2UgYnVncwotICoqYHdlYl9zZWFyY2hgL2B3ZWJfZXh0cmFjdGAqKiDigJQgUmVzZWFyY2ggZXJyb3IgbWVzc2FnZXMsIGxpYnJhcnkgZG9jcwoKIyMjIFdpdGggZGVsZWdhdGVfdGFzawoKRm9yIGNvbXBsZXggbXVsdGktY29tcG9uZW50IGRlYnVnZ2luZywgZGlzcGF0Y2ggaW52ZXN0aWdhdGlvbiBzdWJhZ2VudHM6CgpgYGBweXRob24KZGVsZWdhdGVfdGFzaygKICAgIGdvYWw9IkludmVzdGlnYXRlIHdoeSBbc3BlY2lmaWMgdGVzdC9iZWhhdmlvcl0gZmFpbHMiLAogICAgY29udGV4dD0iIiIKICAgIEZvbGxvdyBzeXN0ZW1hdGljLWRlYnVnZ2luZyBza2lsbDoKICAgIDEuIFJlYWQgdGhlIGVycm9yIG1lc3NhZ2UgY2FyZWZ1bGx5CiAgICAyLiBSZXByb2R1Y2UgdGhlIGlzc3VlCiAgICAzLiBUcmFjZSB0aGUgZGF0YSBmbG93IHRvIGZpbmQgcm9vdCBjYXVzZQogICAgNC4gUmVwb3J0IGZpbmRpbmdzIOKAlCBkbyBOT1QgZml4IHlldAoKICAgIEVycm9yOiBbcGFzdGUgZnVsbCBlcnJvcl0KICAgIEZpbGU6IFtwYXRoIHRvIGZhaWxpbmcgY29kZV0KICAgIFRlc3QgY29tbWFuZDogW2V4YWN0IGNvbW1hbmRdCiAgICAiIiIsCiAgICB0b29sc2V0cz1bJ3Rlcm1pbmFsJywgJ2ZpbGUnXQopCmBgYAoKIyMjIFdpdGggdGVzdC1kcml2ZW4tZGV2ZWxvcG1lbnQKCldoZW4gZml4aW5nIGJ1Z3M6CjEuIFdyaXRlIGEgdGVzdCB0aGF0IHJlcHJvZHVjZXMgdGhlIGJ1ZyAoUkVEKQoyLiBEZWJ1ZyBzeXN0ZW1hdGljYWxseSB0byBmaW5kIHJvb3QgY2F1c2UKMy4gRml4IHRoZSByb290IGNhdXNlIChHUkVFTikKNC4gVGhlIHRlc3QgcHJvdmVzIHRoZSBmaXggYW5kIHByZXZlbnRzIHJlZ3Jlc3Npb24KCiMjIFJlYWwtV29ybGQgSW1wYWN0CgpGcm9tIGRlYnVnZ2luZyBzZXNzaW9uczoKLSBTeXN0ZW1hdGljIGFwcHJvYWNoOiAxNS0zMCBtaW51dGVzIHRvIGZpeAotIFJhbmRvbSBmaXhlcyBhcHByb2FjaDogMi0zIGhvdXJzIG9mIHRocmFzaGluZwotIEZpcnN0LXRpbWUgZml4IHJhdGU6IDk1JSB2cyA0MCUKLSBOZXcgYnVncyBpbnRyb2R1Y2VkOiBOZWFyIHplcm8gdnMgY29tbW9uCgoqKk5vIHNob3J0Y3V0cy4gTm8gZ3Vlc3NpbmcuIFN5c3RlbWF0aWMgYWx3YXlzIHdpbnMuKioK
+# Systematic Debugging
+
+## Overview
+
+Random fixes waste time and create new bugs. Quick patches mask underlying issues.
+
+**Core principle:** ALWAYS find root cause before attempting fixes. Symptom fixes are failure.
+
+**Violating the letter of this process is violating the spirit of debugging.**
+
+## The Iron Law
+
+```
+NO FIXES WITHOUT ROOT CAUSE INVESTIGATION FIRST
+```
+
+If you haven't completed Phase 1, you cannot propose fixes.
+
+## When to Use
+
+Use for ANY technical issue:
+- Test failures
+- Bugs in production
+- Unexpected behavior
+- Performance problems
+- Build failures
+- Integration issues
+
+**Use this ESPECIALLY when:**
+- Under time pressure (emergencies make guessing tempting)
+- "Just one quick fix" seems obvious
+- You've already tried multiple fixes
+- Previous fix didn't work
+- You don't fully understand the issue
+
+**Don't skip when:**
+- Issue seems simple (simple bugs have root causes too)
+- You're in a hurry (rushing guarantees rework)
+- Someone wants it fixed NOW (systematic is faster than thrashing)
+
+## The Four Phases
+
+You MUST complete each phase before proceeding to the next.
+
+---
+
+## Phase 1: Root Cause Investigation
+
+**BEFORE attempting ANY fix:**
+
+### 1. Read Error Messages Carefully
+
+- Don't skip past errors or warnings
+- They often contain the exact solution
+- Read stack traces completely
+- Note line numbers, file paths, error codes
+
+**Action:** Use `read_file` on the relevant source files. Use `search_files` to find the error string in the codebase.
+
+### 2. Reproduce Consistently
+
+- Can you trigger it reliably?
+- What are the exact steps?
+- Does it happen every time?
+- If not reproducible → gather more data, don't guess
+
+**Action:** Use the `terminal` tool to run the failing test or trigger the bug:
+
+```bash
+# Run specific failing test
+pytest tests/test_module.py::test_name -v
+
+# Run with verbose output
+pytest tests/test_module.py -v --tb=long
+```
+
+### 3. Check Recent Changes
+
+- What changed that could cause this?
+- Git diff, recent commits
+- New dependencies, config changes
+
+**Action:**
+
+```bash
+# Recent commits
+git log --oneline -10
+
+# Uncommitted changes
+git diff
+
+# Changes in specific file
+git log -p --follow src/problematic_file.py | head -100
+```
+
+### 4. Gather Evidence in Multi-Component Systems
+
+**WHEN system has multiple components (API → service → database, CI → build → deploy):**
+
+**BEFORE proposing fixes, add diagnostic instrumentation:**
+
+For EACH component boundary:
+- Log what data enters the component
+- Log what data exits the component
+- Verify environment/config propagation
+- Check state at each layer
+
+Run once to gather evidence showing WHERE it breaks.
+THEN analyze evidence to identify the failing component.
+THEN investigate that specific component.
+
+### 5. Trace Data Flow
+
+**WHEN error is deep in the call stack:**
+
+- Where does the bad value originate?
+- What called this function with the bad value?
+- Keep tracing upstream until you find the source
+- Fix at the source, not at the symptom
+
+**Action:** Use `search_files` to trace references:
+
+```python
+# Find where the function is called
+search_files("function_name(", path="src/", file_glob="*.py")
+
+# Find where the variable is set
+search_files("variable_name\\s*=", path="src/", file_glob="*.py")
+```
+
+### Phase 1 Completion Checklist
+
+- [ ] Error messages fully read and understood
+- [ ] Issue reproduced consistently
+- [ ] Recent changes identified and reviewed
+- [ ] Evidence gathered (logs, state, data flow)
+- [ ] Problem isolated to specific component/code
+- [ ] Root cause hypothesis formed
+
+**STOP:** Do not proceed to Phase 2 until you understand WHY it's happening.
+
+---
+
+## Phase 2: Pattern Analysis
+
+**Find the pattern before fixing:**
+
+### 1. Find Working Examples
+
+- Locate similar working code in the same codebase
+- What works that's similar to what's broken?
+
+**Action:** Use `search_files` to find comparable patterns:
+
+```python
+search_files("similar_pattern", path="src/", file_glob="*.py")
+```
+
+### 2. Compare Against References
+
+- If implementing a pattern, read the reference implementation COMPLETELY
+- Don't skim — read every line
+- Understand the pattern fully before applying
+
+### 3. Identify Differences
+
+- What's different between working and broken?
+- List every difference, however small
+- Don't assume "that can't matter"
+
+### 4. Understand Dependencies
+
+- What other components does this need?
+- What settings, config, environment?
+- What assumptions does it make?
+
+---
+
+## Phase 3: Hypothesis and Testing
+
+**Scientific method:**
+
+### 1. Form a Single Hypothesis
+
+- State clearly: "I think X is the root cause because Y"
+- Write it down
+- Be specific, not vague
+
+### 2. Test Minimally
+
+- Make the SMALLEST possible change to test the hypothesis
+- One variable at a time
+- Don't fix multiple things at once
+
+### 3. Verify Before Continuing
+
+- Did it work? → Phase 4
+- Didn't work? → Form NEW hypothesis
+- DON'T add more fixes on top
+
+### 4. When You Don't Know
+
+- Say "I don't understand X"
+- Don't pretend to know
+- Ask the user for help
+- Research more
+
+---
+
+## Phase 4: Implementation
+
+**Fix the root cause, not the symptom:**
+
+### 1. Create Failing Test Case
+
+- Simplest possible reproduction
+- Automated test if possible
+- MUST have before fixing
+- Use the `test-driven-development` skill
+
+### 2. Implement Single Fix
+
+- Address the root cause identified
+- ONE change at a time
+- No "while I'm here" improvements
+- No bundled refactoring
+
+### 3. Verify Fix
+
+```bash
+# Run the specific regression test
+pytest tests/test_module.py::test_regression -v
+
+# Run full suite — no regressions
+pytest tests/ -q
+```
+
+### 4. If Fix Doesn't Work — The Rule of Three
+
+- **STOP.**
+- Count: How many fixes have you tried?
+- If < 3: Return to Phase 1, re-analyze with new information
+- **If ≥ 3: STOP and question the architecture (step 5 below)**
+- DON'T attempt Fix #4 without architectural discussion
+
+### 5. If 3+ Fixes Failed: Question Architecture
+
+**Pattern indicating an architectural problem:**
+- Each fix reveals new shared state/coupling in a different place
+- Fixes require "massive refactoring" to implement
+- Each fix creates new symptoms elsewhere
+
+**STOP and question fundamentals:**
+- Is this pattern fundamentally sound?
+- Are we "sticking with it through sheer inertia"?
+- Should we refactor the architecture vs. continue fixing symptoms?
+
+**Discuss with the user before attempting more fixes.**
+
+This is NOT a failed hypothesis — this is a wrong architecture.
+
+---
+
+## Red Flags — STOP and Follow Process
+
+If you catch yourself thinking:
+- "Quick fix for now, investigate later"
+- "Just try changing X and see if it works"
+- "Add multiple changes, run tests"
+- "Skip the test, I'll manually verify"
+- "It's probably X, let me fix that"
+- "I don't fully understand but this might work"
+- "Pattern says X but I'll adapt it differently"
+- "Here are the main problems: [lists fixes without investigation]"
+- Proposing solutions before tracing data flow
+- **"One more fix attempt" (when already tried 2+)**
+- **Each fix reveals a new problem in a different place**
+
+**ALL of these mean: STOP. Return to Phase 1.**
+
+**If 3+ fixes failed:** Question the architecture (Phase 4 step 5).
+
+## Common Rationalizations
+
+| Excuse | Reality |
+|--------|---------|
+| "Issue is simple, don't need process" | Simple issues have root causes too. Process is fast for simple bugs. |
+| "Emergency, no time for process" | Systematic debugging is FASTER than guess-and-check thrashing. |
+| "Just try this first, then investigate" | First fix sets the pattern. Do it right from the start. |
+| "I'll write test after confirming fix works" | Untested fixes don't stick. Test first proves it. |
+| "Multiple fixes at once saves time" | Can't isolate what worked. Causes new bugs. |
+| "Reference too long, I'll adapt the pattern" | Partial understanding guarantees bugs. Read it completely. |
+| "I see the problem, let me fix it" | Seeing symptoms ≠ understanding root cause. |
+| "One more fix attempt" (after 2+ failures) | 3+ failures = architectural problem. Question the pattern, don't fix again. |
+
+## Quick Reference
+
+| Phase | Key Activities | Success Criteria |
+|-------|---------------|------------------|
+| **1. Root Cause** | Read errors, reproduce, check changes, gather evidence, trace data flow | Understand WHAT and WHY |
+| **2. Pattern** | Find working examples, compare, identify differences | Know what's different |
+| **3. Hypothesis** | Form theory, test minimally, one variable at a time | Confirmed or new hypothesis |
+| **4. Implementation** | Create regression test, fix root cause, verify | Bug resolved, all tests pass |
+
+## Hermes Agent Integration
+
+### Investigation Tools
+
+Use these Hermes tools during Phase 1:
+
+- **`search_files`** — Find error strings, trace function calls, locate patterns
+- **`read_file`** — Read source code with line numbers for precise analysis
+- **`terminal`** — Run tests, check git history, reproduce bugs
+- **`web_search`/`web_extract`** — Research error messages, library docs
+
+### With delegate_task
+
+For complex multi-component debugging, dispatch investigation subagents:
+
+```python
+delegate_task(
+    goal="Investigate why [specific test/behavior] fails",
+    context="""
+    Follow systematic-debugging skill:
+    1. Read the error message carefully
+    2. Reproduce the issue
+    3. Trace the data flow to find root cause
+    4. Report findings — do NOT fix yet
+
+    Error: [paste full error]
+    File: [path to failing code]
+    Test command: [exact command]
+    """,
+    toolsets=['terminal', 'file']
+)
+```
+
+### With test-driven-development
+
+When fixing bugs:
+1. Write a test that reproduces the bug (RED)
+2. Debug systematically to find root cause
+3. Fix the root cause (GREEN)
+4. The test proves the fix and prevents regression
+
+## Real-World Impact
+
+From debugging sessions:
+- Systematic approach: 15-30 minutes to fix
+- Random fixes approach: 2-3 hours of thrashing
+- First-time fix rate: 95% vs 40%
+- New bugs introduced: Near zero vs common
+
+**No shortcuts. No guessing. Systematic always wins.**
