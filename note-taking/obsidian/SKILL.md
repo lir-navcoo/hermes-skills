@@ -1,1 +1,93 @@
-LS0tCm5hbWU6IG9ic2lkaWFuCmRlc2NyaXB0aW9uOiBSZWFkLCBzZWFyY2gsIGFuZCBjcmVhdGUgbm90ZXMgaW4gdGhlIE9ic2lkaWFuIHZhdWx0LgotLS0KCiMgT2JzaWRpYW4gVmF1bHQKCioqTG9jYXRpb246KiogU2V0IHZpYSBgT0JTSURJQU5fVkFVTFRfUEFUSGAgZW52aXJvbm1lbnQgdmFyaWFibGUgKGUuZy4gaW4gYH4vLmhlcm1lcy8uZW52YCkuCgpJZiB1bnNldCwgZGVmYXVsdHMgdG8gYH4vRG9jdW1lbnRzL09ic2lkaWFuIFZhdWx0YC4KCk5vdGU6IFZhdWx0IHBhdGhzIG1heSBjb250YWluIHNwYWNlcyAtIGFsd2F5cyBxdW90ZSB0aGVtLgoKIyMgUmVhZCBhIG5vdGUKCmBgYGJhc2gKVkFVTFQ9IiR7T0JTSURJQU5fVkFVTFRfUEFUSDotJEhPTUUvRG9jdW1lbnRzL09ic2lkaWFuIFZhdWx0fSIKY2F0ICIkVkFVTFQvTm90ZSBOYW1lLm1kIgpgYGAKCiMjIExpc3Qgbm90ZXMKCmBgYGJhc2gKVkFVTFQ9IiR7T0JTSURJQU5fVkFVTFRfUEFUSDotJEhPTUUvRG9jdW1lbnRzL09ic2lkaWFuIFZhdWx0fSIKCiMgQWxsIG5vdGVzCmZpbmQgIiRWQVVMVCIgLW5hbWUgIioubWQiIC10eXBlIGYKCiMgSW4gYSBzcGVjaWZpYyBmb2xkZXIKbHMgIiRWQVVMVC9TdWJmb2xkZXIvIgpgYGAKCiMjIFNlYXJjaAoKYGBgYmFzaApWQVVMVD0iJHtPQlNJRElBTl9WQVVMVF9QQVRIOi0kSE9NRS9Eb2N1bWVudHMvT2JzaWRpYW4gVmF1bHR9IgoKIyBCeSBmaWxlbmFtZQpmaW5kICIkVkFVTFQiIC1uYW1lICIqLm1kIiAtaW5hbWUgIiprZXl3b3JkKiIKCiMgQnkgY29udGVudApncmVwIC1ybGkgImtleXdvcmQiICIkVkFVTFQiIC0taW5jbHVkZT0iKi5tZCIKYGBgCgojIyBDcmVhdGUgYSBub3RlCgpgYGBiYXNoClZBVUxUPSIke09CU0lESUFOX1ZBVUxUX1BBVEg6LSRIT01FL0RvY3VtZW50cy9PYnNpZGlhbiBWYXVsdH0iCmNhdCA+ICIkVkFVTFQvTmV3IE5vdGUubWQiIDw8ICdFTkROT1RFJwojIFRpdGxlCgpDb250ZW50IGhlcmUuCkVORE5PVEUKYGBgCgojIyBBcHBlbmQgdG8gYSBub3RlCgpgYGBiYXNoClZBVUxUPSIke09CU0lESUFOX1ZBVUxUX1BBVEg6LSRIT01FL0RvY3VtZW50cy9PYnNpZGlhbiBWYXVsdH0iCmVjaG8gIgpOZXcgY29udGVudCBoZXJlLiIgPj4gIiRWQVVMVC9FeGlzdGluZyBOb3RlLm1kIgpgYGAKCiMjIFdpa2lsaW5rcwoKT2JzaWRpYW4gbGlua3Mgbm90ZXMgd2l0aCBgW1tOb3RlIE5hbWVdXWAgc3ludGF4LiBXaGVuIGNyZWF0aW5nIG5vdGVzLCB1c2UgdGhlc2UgdG8gbGluayByZWxhdGVkIGNvbnRlbnQuCg==
+---
+name: obsidian
+description: Read, search, and create notes in the Obsidian vault.
+---
+
+# Obsidian Vault
+
+**Location:** Set via `OBSIDIAN_VAULT_PATH` environment variable (e.g. in `~/.hermes/.env`).
+
+If unset, defaults to `~/Documents/Obsidian Vault`.
+
+Note: Vault paths may contain spaces - always quote them.
+
+## Read a note
+
+```bash
+VAULT="${OBSIDIAN_VAULT_PATH:-$HOME/Documents/Obsidian Vault}"
+cat "$VAULT/Note Name.md"
+```
+
+## List notes
+
+```bash
+VAULT="${OBSIDIAN_VAULT_PATH:-$HOME/Documents/Obsidian Vault}"
+
+# All notes
+find "$VAULT" -name "*.md" -type f
+
+# In a specific folder
+ls "$VAULT/Subfolder/"
+```
+
+## Search
+
+```bash
+VAULT="${OBSIDIAN_VAULT_PATH:-$HOME/Documents/Obsidian Vault}"
+
+# By filename
+find "$VAULT" -name "*.md" -iname "*keyword*"
+
+# By content
+grep -rli "keyword" "$VAULT" --include="*.md"
+```
+
+## Create a note
+
+```bash
+VAULT="${OBSIDIAN_VAULT_PATH:-$HOME/Documents/Obsidian Vault}"
+cat > "$VAULT/New Note.md" << 'ENDNOTE'
+# Title
+
+Content here.
+ENDNOTE
+```
+
+## Append to a note
+
+```bash
+VAULT="${OBSIDIAN_VAULT_PATH:-$HOME/Documents/Obsidian Vault}"
+echo "
+New content here." >> "$VAULT/Existing Note.md"
+```
+
+## Obsidian 标签限制（重要）
+
+Obsidian 的 tags 不支持：
+- 纯数字（如 `002195`）→ 会报 "unknown data incompatible" 错误
+- 某些特殊字符
+
+**解决方案**：数字前加前缀字符
+
+```yaml
+# 错误示例
+tags:
+  - 持仓        # ❌ 纯中文在某些版本可能有问题
+  - 002195     # ❌ 纯数字不支持
+
+# 正确示例（BOSS验证可行）
+tags:
+  - 持仓
+  - 岩山科技
+  - 股002195   # ✅ 中文字符 + 数字组合可行
+```
+
+## 文件命名规范
+
+- 索引文件命名：文件夹名.md（如 `标的追踪.md` 而不是 `标的追踪索引.md`）
+- 持仓文件命名：`代码-名称.md`（如 `002097-山河智能.md`）
+- 推荐追踪文件命名：`YYYY-MM-DD-代码-名称.md`
+
+## Wikilinks
+
+Obsidian links notes with `[[Note Name]]` syntax. When creating notes, use these to link related content.
