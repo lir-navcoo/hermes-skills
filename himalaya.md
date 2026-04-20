@@ -1,3 +1,16 @@
+---
+name: himalaya
+description: CLI to manage emails via IMAP/SMTP. Use himalaya to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).
+version: 1.0.0
+author: community
+license: MIT
+metadata:
+  hermes:
+    tags: [Email, IMAP, SMTP, CLI, Communication]
+    homepage: https://github.com/pimalaya/himalaya
+prerequisites:
+  commands: [himalaya]
+---
 
 # Himalaya Email CLI
 
@@ -11,8 +24,8 @@ Himalaya is a CLI email client that lets you manage emails from the terminal usi
 ## Prerequisites
 
 1. Himalaya CLI installed (`himalaya --version` to verify)
-2. A configuration file at `~/.config/himalaya/config.toml`
-3. IMAP/SMTP credentials configured (password stored securely)
+2. **macOS**: config at `~/Library/Application Support/himalaya/config.toml`; **Linux**: `~/.config/himalaya/config.toml`
+3. IMAP/SMTP credentials configured (password stored securely via `auth.command`)
 
 ### Installation
 
@@ -59,6 +72,39 @@ message.send.backend.login = "you@example.com"
 message.send.backend.auth.type = "password"
 message.send.backend.auth.cmd = "pass show email/smtp"
 ```
+
+## QQ邮箱配置示例
+
+```toml
+[accounts.qq]
+email = "your_qq@qq.com"
+display-name = "你的名字"
+default = true
+
+# 收件/本地存储用 maildir（QQ邮箱 IMAP 有 APPEND BINARY 兼容问题）
+backend.type = "maildir"
+backend.root-dir = "/Users/you/.local/share/himalaya/qq"
+
+message.send.backend.type = "smtp"
+message.send.backend.host = "smtp.qq.com"
+message.send.backend.port = 587
+message.send.backend.encryption.type = "start-tls"
+message.send.backend.login = "your_qq@qq.com"
+message.send.backend.auth.type = "password"
+message.send.backend.auth.command = "echo 你的授权码"
+```
+
+**maildir 文件夹结构**（必须手动创建，否则报错 `cannot find maildir matching name Sent`）：
+
+```bash
+mkdir -p ~/.local/share/himalaya/qq/{Sent,INBOX,Drafts,Junk,Trash}/{cur,new,tmp}
+```
+
+**QQ邮箱要点：**
+- 授权码在网页版：设置 → 账户 → POP3/IMAP/SMTP/Exchange/CardDAV/CalDAV服务 → 开启 POP3/SMTP
+- SMTP 用 port 587 + start-tls（不是 465 SSL）
+- IMAP 用 imap.qq.com + port 993 + tls（但存已发送有 BINARY extension 兼容问题，推荐 maildir）
+- QQ邮箱已发送文件夹名是 `Sent Messages`（带空格），不是 `Sent`
 
 ## Hermes Integration Notes
 
@@ -263,3 +309,49 @@ RUST_LOG=trace RUST_BACKTRACE=1 himalaya envelope list
 - Message IDs are relative to the current folder; re-list after folder changes.
 - For composing rich emails with attachments, use MML syntax (see `references/message-composition.md`).
 - Store passwords securely using `pass`, system keyring, or a command that outputs the password.
+
+## Troubleshooting
+
+| 错误信息 | 原因 | 解决方案 |
+|---|---|---|
+| `cannot send message without a sender` | piped send缺少From header | 必须加 `From: your_email@domain.com` 且必须匹配配置的账号邮箱 |
+| `cannot find UID of appended IMAP message` | QQ邮箱 IMAP BINARY extension 不兼容 | 改用 maildir 后端存储已发送 |
+| `cannot find maildir matching name Sent` | maildir 文件夹未创建或命名错误 | 先 `mkdir -p` 创建 Sent/INBOX/Drafts 等文件夹 |
+| `TOML parse error: unknown variant 'ssl-tls'` | encryption type 拼写错误 | IMAP 用 `tls`，SMTP 用 `start-tls` |
+| `cannot add message: feature not available` | 没有后端配置 | 至少需要一个后端（maildir 或 imap）才能发送 |
+
+### 发送邮件的关键约束
+
+使用管道发送时 (`cat << EOF | himalaya template send`)：
+- **必须包含 `From:` header**，且地址必须与 `[accounts.xxx].email` 配置的地址完全一致
+- 必须包含 `To:` header
+- 必须包含 `Subject:` header
+- `Date:` header 可选（会自动生成）
+
+```bash
+# ✅ 正确 — From必须匹配配置
+cat << 'EOF' | himalaya template send
+From: 78080114@qq.com
+To: 78080114@qq.com
+Subject: Test
+
+Body here.
+EOF
+
+# ❌ 错误 — 缺少From或From不匹配
+cat << 'EOF' | himalaya template send
+To: 78080114@qq.com
+Subject: Test
+
+Body here.
+EOF
+```
+
+查找配置中的邮箱地址：
+```bash
+# macOS
+grep -A2 '\[accounts' ~/Library/Application\ Support/himalaya/config.toml | grep email
+
+# Linux
+grep -A2 '\[accounts' ~/.config/himalaya/config.toml | grep email
+```
