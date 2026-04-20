@@ -1,1 +1,50 @@
-IyAqQUNMIFBhcGVyIFN0eWxlcwoKVGhpcyBkaXJlY3RvcnkgY29udGFpbnMgdGhlIGxhdGVzdCBMYVRlWCB0ZW1wbGF0ZXMgZm9yICpBQ0wgY29uZmVyZW5jZXMuCgojIyBJbnN0cnVjdGlvbnMgZm9yIGF1dGhvcnMKClBhcGVyIHN1Ym1pc3Npb25zIHRvICpBQ0wgY29uZmVyZW5jZXMgbXVzdCB1c2UgdGhlIG9mZmljaWFsIEFDTCBzdHlsZQp0ZW1wbGF0ZXMuCgpUaGUgTGFUZVggc3R5bGUgZmlsZXMgYXJlIGF2YWlsYWJsZQoKLSBhcyBhbiBbT3ZlcmxlYWYgdGVtcGxhdGVdKGh0dHBzOi8vd3d3Lm92ZXJsZWFmLmNvbS9sYXRleC90ZW1wbGF0ZXMvYXNzb2NpYXRpb24tZm9yLWNvbXB1dGF0aW9uYWwtbGluZ3Vpc3RpY3MtYWNsLWNvbmZlcmVuY2UvanZ4c2t4cG56bmZqKQotIGluIHRoaXMgcmVwb3NpdG9yeQotIGFzIGEgWy56aXAgZmlsZV0oaHR0cHM6Ly9naXRodWIuY29tL2FjbC1vcmcvYWNsLXN0eWxlLWZpbGVzL2FyY2hpdmUvcmVmcy9oZWFkcy9tYXN0ZXIuemlwKQoKUGxlYXNlIHNlZSBbYGFjbF9sYXRleC50ZXhgXShodHRwczovL2dpdGh1Yi5jb20vYWNsLW9yZy9hY2wtc3R5bGUtZmlsZXMvYmxvYi9tYXN0ZXIvYWNsX2xhdGV4LnRleCkgZm9yIGFuIGV4YW1wbGUuCgpQbGVhc2UgZm9sbG93IHRoZSBwYXBlciBmb3JtYXR0aW5nIGd1aWRlbGluZXMgZ2VuZXJhbCB0byAqQUNMCmNvbmZlcmVuY2VzOgoKLSBbUGFwZXIgZm9ybWF0dGluZyBndWlkZWxpbmVzXShodHRwczovL2FjbC1vcmcuZ2l0aHViLmlvL0FDTFBVQi9mb3JtYXR0aW5nLmh0bWwpCgpBdXRob3JzIG1heSBub3QgbW9kaWZ5IHRoZXNlIHN0eWxlIGZpbGVzIG9yIHVzZSB0ZW1wbGF0ZXMgZGVzaWduZWQgZm9yCm90aGVyIGNvbmZlcmVuY2VzLgoKIyMgSW5zdHJ1Y3Rpb25zIGZvciBwdWJsaWNhdGlvbnMgY2hhaXJzCgpUbyBhZGFwdCB0aGUgc3R5bGUgZmlsZXMgZm9yIHlvdXIgY29uZmVyZW5jZSwgcGxlYXNlIGZvcmsgdGhpcyByZXBvc2l0b3J5IGFuZAptYWtlIG5lY2Vzc2FyeSBjaGFuZ2VzLiBNaW5pbWFsbHksIHlvdSdsbCBuZWVkIHRvIHVwZGF0ZSB0aGUgbmFtZSBvZgp0aGUgY29uZmVyZW5jZSBhbmQgcmVuYW1lIHRoZSBmaWxlcy4KCklmIHlvdSBtYWtlIGltcHJvdmVtZW50cyB0byB0aGUgdGVtcGxhdGVzIHRoYXQgc2hvdWxkIGJlIHByb3BhZ2F0ZWQgdG8KZnV0dXJlIGNvbmZlcmVuY2VzLCBwbGVhc2Ugc3VibWl0IGEgcHVsbCByZXF1ZXN0LiBUaGFuayB5b3UgaW4KYWR2YW5jZSEKCkluIG9sZGVyIHZlcnNpb25zIG9mIHRoZSB0ZW1wbGF0ZXMsIGF1dGhvcnMgd2VyZSBhc2tlZCB0byBmaWxsIGluIHRoZQpTVEFSVCBzdWJtaXNzaW9uIElEIHNvIHRoYXQgaXQgd291bGQgYmUgc3RhbXBlZCBhdCB0aGUgdG9wIG9mIGVhY2gKcGFnZSBvZiB0aGUgYW5vbnltaXplZCB2ZXJzaW9uLiBUaGlzIGlzIG5vIGxvbmdlciBuZWVkZWQsIGJlY2F1c2UgaXQKaXMgbm93IHBvc3NpYmxlIHRvIGRvIHRoaXMgc3RhbXBpbmcgYXV0b21hdGljYWxseSB3aXRoaW4KU1RBUlQuIEN1cnJlbnRseSwgdGhlIHdheSB0byBkbyB0aGlzIGlzIGZvciB0aGUgcHJvZ3JhbSBjaGFpciB0byBlbWFpbApzdXBwb3J0QHNvZnRjb25mLmNvbSBhbmQgcmVxdWVzdCBpdC4KCiMjIEluc3RydWN0aW9ucyBmb3IgbWFraW5nIGNoYW5nZXMgdG8gc3R5bGUgZmlsZXMKCi0gbWVyZ2UgcHVsbCByZXF1ZXN0IGluIGdpdGh1Yiwgb3IgcHVzaCB0byBnaXRodWIKLSBnaXQgcHVsbCBmcm9tIGdpdGh1YiB0byBhIGxvY2FsIHJlcG9zaXRvcnkKLSB0aGVuLCBnaXQgcHVzaCBmcm9tIHlvdXIgbG9jYWwgcmVwb3NpdG9yeSB0byBvdmVybGVhZiBwcm9qZWN0IAogICAgLSBPdmVybGVhZiBwcm9qZWN0IGlzIGh0dHBzOi8vd3d3Lm92ZXJsZWFmLmNvbS9wcm9qZWN0LzVmNjRmMWZiOTdjNGM1MDAwMWI2MDU0OQogICAgLSBPdmVybGVhZiBnaXQgdXJsIGlzIGh0dHBzOi8vZ2l0Lm92ZXJsZWFmLmNvbS81ZjY0ZjFmYjk3YzRjNTAwMDFiNjA1NDkKLSB0aGVuLCBjbGljayAiU3VibWl0IiBhbmQgdGhlbiAiU3VibWl0IGFzIFRlbXBsYXRlIiBpbiBvdmVybGVhZiBpbiBvcmRlciB0byBhc2sgb3ZlcmxlYWYgdG8gdXBkYXRlIHRoZSBvdmVybGVhZiB0ZW1wbGF0ZSBmcm9tIHRoZSBvdmVybGVhZiBwcm9qZWN0IAo=
+# *ACL Paper Styles
+
+This directory contains the latest LaTeX templates for *ACL conferences.
+
+## Instructions for authors
+
+Paper submissions to *ACL conferences must use the official ACL style
+templates.
+
+The LaTeX style files are available
+
+- as an [Overleaf template](https://www.overleaf.com/latex/templates/association-for-computational-linguistics-acl-conference/jvxskxpnznfj)
+- in this repository
+- as a [.zip file](https://github.com/acl-org/acl-style-files/archive/refs/heads/master.zip)
+
+Please see [`acl_latex.tex`](https://github.com/acl-org/acl-style-files/blob/master/acl_latex.tex) for an example.
+
+Please follow the paper formatting guidelines general to *ACL
+conferences:
+
+- [Paper formatting guidelines](https://acl-org.github.io/ACLPUB/formatting.html)
+
+Authors may not modify these style files or use templates designed for
+other conferences.
+
+## Instructions for publications chairs
+
+To adapt the style files for your conference, please fork this repository and
+make necessary changes. Minimally, you'll need to update the name of
+the conference and rename the files.
+
+If you make improvements to the templates that should be propagated to
+future conferences, please submit a pull request. Thank you in
+advance!
+
+In older versions of the templates, authors were asked to fill in the
+START submission ID so that it would be stamped at the top of each
+page of the anonymized version. This is no longer needed, because it
+is now possible to do this stamping automatically within
+START. Currently, the way to do this is for the program chair to email
+support@softconf.com and request it.
+
+## Instructions for making changes to style files
+
+- merge pull request in github, or push to github
+- git pull from github to a local repository
+- then, git push from your local repository to overleaf project 
+    - Overleaf project is https://www.overleaf.com/project/5f64f1fb97c4c50001b60549
+    - Overleaf git url is https://git.overleaf.com/5f64f1fb97c4c50001b60549
+- then, click "Submit" and then "Submit as Template" in overleaf in order to ask overleaf to update the overleaf template from the overleaf project 

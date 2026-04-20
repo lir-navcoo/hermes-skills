@@ -1,1 +1,23 @@
-IyBNYW5pbSBWaWRlbyBTa2lsbAoKUHJvZHVjdGlvbiBwaXBlbGluZSBmb3IgbWF0aGVtYXRpY2FsIGFuZCB0ZWNobmljYWwgYW5pbWF0aW9ucyB1c2luZyBbTWFuaW0gQ29tbXVuaXR5IEVkaXRpb25dKGh0dHBzOi8vd3d3Lm1hbmltLmNvbW11bml0eS8pLgoKIyMgV2hhdCBpdCBkb2VzCgpDcmVhdGVzIDNCbHVlMUJyb3duLXN0eWxlIGFuaW1hdGVkIHZpZGVvcyBmcm9tIHRleHQgcHJvbXB0cy4gVGhlIGFnZW50IGhhbmRsZXMgdGhlIGZ1bGwgcGlwZWxpbmU6IGNyZWF0aXZlIHBsYW5uaW5nLCBQeXRob24gY29kZSBnZW5lcmF0aW9uLCByZW5kZXJpbmcsIHNjZW5lIHN0aXRjaGluZywgYW5kIGl0ZXJhdGl2ZSByZWZpbmVtZW50LgoKIyMgVXNlIGNhc2VzCgotICoqQ29uY2VwdCBleHBsYWluZXJzKiog4oCUICJFeHBsYWluIGhvdyBuZXVyYWwgbmV0d29ya3MgbGVhcm4iCi0gKipFcXVhdGlvbiBkZXJpdmF0aW9ucyoqIOKAlCAiQW5pbWF0ZSB0aGUgcHJvb2Ygb2YgdGhlIFB5dGhhZ29yZWFuIHRoZW9yZW0iCi0gKipBbGdvcml0aG0gdmlzdWFsaXphdGlvbnMqKiDigJQgIlNob3cgaG93IHF1aWNrc29ydCB3b3JrcyBzdGVwIGJ5IHN0ZXAiCi0gKipEYXRhIHN0b3JpZXMqKiDigJQgIkFuaW1hdGUgb3VyIGJlZm9yZS9hZnRlciBwZXJmb3JtYW5jZSBtZXRyaWNzIgotICoqQXJjaGl0ZWN0dXJlIGRpYWdyYW1zKiog4oCUICJTaG93IG91ciBtaWNyb3NlcnZpY2UgYXJjaGl0ZWN0dXJlIGJ1aWxkaW5nIHVwIgoKIyMgUHJlcmVxdWlzaXRlcwoKUHl0aG9uIDMuMTArLCBNYW5pbSBDRSAoYHBpcCBpbnN0YWxsIG1hbmltYCksIExhVGVYLCBmZm1wZWcuCgpgYGBiYXNoCmJhc2ggc2tpbGxzL2NyZWF0aXZlL21hbmltLXZpZGVvL3NjcmlwdHMvc2V0dXAuc2gKYGBgCg==
+# Manim Video Skill
+
+Production pipeline for mathematical and technical animations using [Manim Community Edition](https://www.manim.community/).
+
+## What it does
+
+Creates 3Blue1Brown-style animated videos from text prompts. The agent handles the full pipeline: creative planning, Python code generation, rendering, scene stitching, and iterative refinement.
+
+## Use cases
+
+- **Concept explainers** — "Explain how neural networks learn"
+- **Equation derivations** — "Animate the proof of the Pythagorean theorem"
+- **Algorithm visualizations** — "Show how quicksort works step by step"
+- **Data stories** — "Animate our before/after performance metrics"
+- **Architecture diagrams** — "Show our microservice architecture building up"
+
+## Prerequisites
+
+Python 3.10+, Manim CE (`pip install manim`), LaTeX, ffmpeg.
+
+```bash
+bash skills/creative/manim-video/scripts/setup.sh
+```

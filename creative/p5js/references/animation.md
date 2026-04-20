@@ -1,1 +1,439 @@
-IyBBbmltYXRpb24KCiMjIEZyYW1lLUJhc2VkIEFuaW1hdGlvbgoKIyMjIFRoZSBEcmF3IExvb3AKCmBgYGphdmFzY3JpcHQKZnVuY3Rpb24gZHJhdygpIHsKICAvLyBDYWxsZWQgfjYwIHRpbWVzL3NlYyBieSBkZWZhdWx0CiAgLy8gZnJhbWVDb3VudCDigJQgaW50ZWdlciwgc3RhcnRzIGF0IDEKICAvLyBkZWx0YVRpbWUg4oCUIG1zIHNpbmNlIGxhc3QgZnJhbWUgKHVzZSBmb3IgZnJhbWVyYXRlLWluZGVwZW5kZW50IG1vdGlvbikKICAvLyBtaWxsaXMoKSDigJQgbXMgc2luY2Ugc2tldGNoIHN0YXJ0Cn0KYGBgCgojIyMgVGltZS1CYXNlZCB2cyBGcmFtZS1CYXNlZAoKYGBgamF2YXNjcmlwdAovLyBGcmFtZS1iYXNlZCAoc3BlZWQgdmFyaWVzIHdpdGggZnJhbWVyYXRlKQp4ICs9IHNwZWVkOwoKLy8gVGltZS1iYXNlZCAoY29uc2lzdGVudCBzcGVlZCByZWdhcmRsZXNzIG9mIGZyYW1lcmF0ZSkKeCArPSBzcGVlZCAqIChkZWx0YVRpbWUgLyAxNi42Nyk7ICAvLyBub3JtYWxpemVkIHRvIDYwZnBzCmBgYAoKIyMjIE5vcm1hbGl6ZWQgVGltZQoKYGBgamF2YXNjcmlwdAovLyBQcm9ncmVzcyBmcm9tIDAgdG8gMSBvdmVyIE4gc2Vjb25kcwpsZXQgZHVyYXRpb24gPSA1MDAwOyAgLy8gNSBzZWNvbmRzIGluIG1zCmxldCB0ID0gY29uc3RyYWluKG1pbGxpcygpIC8gZHVyYXRpb24sIDAsIDEpOwoKLy8gTG9vcGluZyBwcm9ncmVzcyAoMCDihpIgMSDihpIgMCDihpIgMS4uLikKbGV0IHBlcmlvZCA9IDMwMDA7ICAvLyAzIHNlY29uZCBsb29wCmxldCB0ID0gKG1pbGxpcygpICUgcGVyaW9kKSAvIHBlcmlvZDsKCi8vIFBpbmctcG9uZyAoMCDihpIgMSDihpIgMCDihpIgMS4uLikKbGV0IHJhdyA9IChtaWxsaXMoKSAlIChwZXJpb2QgKiAyKSkgLyBwZXJpb2Q7CmxldCB0ID0gcmF3IDw9IDEgPyByYXcgOiAyIC0gcmF3OwpgYGAKCiMjIEVhc2luZyBGdW5jdGlvbnMKCiMjIyBCdWlsdC1pbiBMZXJwCgpgYGBqYXZhc2NyaXB0Ci8vIExpbmVhciBpbnRlcnBvbGF0aW9uIOKAlCBzbW9vdGggYnV0IG1lY2hhbmljYWwKbGV0IHggPSBsZXJwKHN0YXJ0WCwgZW5kWCwgdCk7CgovLyBNYXAgZm9yIG5vbi0wLTEgcmFuZ2VzCmxldCB5ID0gbWFwKHQsIDAsIDEsIHN0YXJ0WSwgZW5kWSk7CmBgYAoKIyMjIENvbW1vbiBFYXNpbmcgQ3VydmVzCgpgYGBqYXZhc2NyaXB0Ci8vIEVhc2UgaW4gKHNsb3cgc3RhcnQpCmZ1bmN0aW9uIGVhc2VJblF1YWQodCkgeyByZXR1cm4gdCAqIHQ7IH0KZnVuY3Rpb24gZWFzZUluQ3ViaWModCkgeyByZXR1cm4gdCAqIHQgKiB0OyB9CmZ1bmN0aW9uIGVhc2VJbkV4cG8odCkgeyByZXR1cm4gdCA9PT0gMCA/IDAgOiBwb3coMiwgMTAgKiAodCAtIDEpKTsgfQoKLy8gRWFzZSBvdXQgKHNsb3cgZW5kKQpmdW5jdGlvbiBlYXNlT3V0UXVhZCh0KSB7IHJldHVybiAxIC0gKDEgLSB0KSAqICgxIC0gdCk7IH0KZnVuY3Rpb24gZWFzZU91dEN1YmljKHQpIHsgcmV0dXJuIDEgLSBwb3coMSAtIHQsIDMpOyB9CmZ1bmN0aW9uIGVhc2VPdXRFeHBvKHQpIHsgcmV0dXJuIHQgPT09IDEgPyAxIDogMSAtIHBvdygyLCAtMTAgKiB0KTsgfQoKLy8gRWFzZSBpbi1vdXQgKHNsb3cgYm90aCBlbmRzKQpmdW5jdGlvbiBlYXNlSW5PdXRDdWJpYyh0KSB7CiAgcmV0dXJuIHQgPCAwLjUgPyA0ICogdCAqIHQgKiB0IDogMSAtIHBvdygtMiAqIHQgKyAyLCAzKSAvIDI7Cn0KZnVuY3Rpb24gZWFzZUluT3V0UXVpbnQodCkgewogIHJldHVybiB0IDwgMC41ID8gMTYgKiB0ICogdCAqIHQgKiB0ICogdCA6IDEgLSBwb3coLTIgKiB0ICsgMiwgNSkgLyAyOwp9CgovLyBFbGFzdGljIChzcHJpbmcgb3ZlcnNob290KQpmdW5jdGlvbiBlYXNlT3V0RWxhc3RpYyh0KSB7CiAgaWYgKHQgPT09IDAgfHwgdCA9PT0gMSkgcmV0dXJuIHQ7CiAgcmV0dXJuIHBvdygyLCAtMTAgKiB0KSAqIHNpbigodCAqIDEwIC0gMC43NSkgKiAoMiAqIFBJIC8gMykpICsgMTsKfQoKLy8gQm91bmNlCmZ1bmN0aW9uIGVhc2VPdXRCb3VuY2UodCkgewogIGlmICh0IDwgMS8yLjc1KSByZXR1cm4gNy41NjI1ICogdCAqIHQ7CiAgZWxzZSBpZiAodCA8IDIvMi43NSkgeyB0IC09IDEuNS8yLjc1OyByZXR1cm4gNy41NjI1ICogdCAqIHQgKyAwLjc1OyB9CiAgZWxzZSBpZiAodCA8IDIuNS8yLjc1KSB7IHQgLT0gMi4yNS8yLjc1OyByZXR1cm4gNy41NjI1ICogdCAqIHQgKyAwLjkzNzU7IH0KICBlbHNlIHsgdCAtPSAyLjYyNS8yLjc1OyByZXR1cm4gNy41NjI1ICogdCAqIHQgKyAwLjk4NDM3NTsgfQp9CgovLyBTbW9vdGggc3RlcCAoSGVybWl0ZSBpbnRlcnBvbGF0aW9uIOKAlCBncmVhdCBkZWZhdWx0KQpmdW5jdGlvbiBzbW9vdGhzdGVwKHQpIHsgcmV0dXJuIHQgKiB0ICogKDMgLSAyICogdCk7IH0KCi8vIFNtb290aGVyIHN0ZXAgKEtlbiBQZXJsaW4pCmZ1bmN0aW9uIHNtb290aGVyc3RlcCh0KSB7IHJldHVybiB0ICogdCAqIHQgKiAodCAqICh0ICogNiAtIDE1KSArIDEwKTsgfQpgYGAKCiMjIyBBcHBseWluZyBFYXNpbmcKCmBgYGphdmFzY3JpcHQKLy8gQW5pbWF0ZSBmcm9tIHN0YXJ0VmFsIHRvIGVuZFZhbCBvdmVyIGR1cmF0aW9uIG1zCmZ1bmN0aW9uIGVhc2VkVmFsdWUoc3RhcnRWYWwsIGVuZFZhbCwgc3RhcnRUaW1lLCBkdXJhdGlvbiwgZWFzZUZuKSB7CiAgbGV0IHQgPSBjb25zdHJhaW4oKG1pbGxpcygpIC0gc3RhcnRUaW1lKSAvIGR1cmF0aW9uLCAwLCAxKTsKICByZXR1cm4gbGVycChzdGFydFZhbCwgZW5kVmFsLCBlYXNlRm4odCkpOwp9CgovLyBVc2FnZQpsZXQgeCA9IGVhc2VkVmFsdWUoMTAwLCA3MDAsIGFuaW1TdGFydFRpbWUsIDIwMDAsIGVhc2VPdXRDdWJpYyk7CmBgYAoKIyMgU3ByaW5nIFBoeXNpY3MKCk1vcmUgbmF0dXJhbCB0aGFuIGVhc2luZyDigJQgcmVzcG9uZHMgdG8gZm9yY2UsIG92ZXJzaG9vdHMsIHNldHRsZXMuCgpgYGBqYXZhc2NyaXB0CmNsYXNzIFNwcmluZyB7CiAgY29uc3RydWN0b3IodmFsdWUsIHRhcmdldCwgc3RpZmZuZXNzID0gMC4xLCBkYW1waW5nID0gMC43KSB7CiAgICB0aGlzLnZhbHVlID0gdmFsdWU7CiAgICB0aGlzLnRhcmdldCA9IHRhcmdldDsKICAgIHRoaXMudmVsb2NpdHkgPSAwOwogICAgdGhpcy5zdGlmZm5lc3MgPSBzdGlmZm5lc3M7CiAgICB0aGlzLmRhbXBpbmcgPSBkYW1waW5nOwogIH0KCiAgdXBkYXRlKCkgewogICAgbGV0IGZvcmNlID0gKHRoaXMudGFyZ2V0IC0gdGhpcy52YWx1ZSkgKiB0aGlzLnN0aWZmbmVzczsKICAgIHRoaXMudmVsb2NpdHkgKz0gZm9yY2U7CiAgICB0aGlzLnZlbG9jaXR5ICo9IHRoaXMuZGFtcGluZzsKICAgIHRoaXMudmFsdWUgKz0gdGhpcy52ZWxvY2l0eTsKICAgIHJldHVybiB0aGlzLnZhbHVlOwogIH0KCiAgc2V0VGFyZ2V0KHQpIHsgdGhpcy50YXJnZXQgPSB0OyB9CiAgaXNTZXR0bGVkKHRocmVzaG9sZCA9IDAuMDEpIHsKICAgIHJldHVybiBhYnModGhpcy52ZWxvY2l0eSkgPCB0aHJlc2hvbGQgJiYgYWJzKHRoaXMudmFsdWUgLSB0aGlzLnRhcmdldCkgPCB0aHJlc2hvbGQ7CiAgfQp9CgovLyBVc2FnZQpsZXQgc3ByaW5nWCA9IG5ldyBTcHJpbmcoMCwgMCwgMC4wOCwgMC44NSk7CmZ1bmN0aW9uIGRyYXcoKSB7CiAgc3ByaW5nWC5zZXRUYXJnZXQobW91c2VYKTsKICBsZXQgeCA9IHNwcmluZ1gudXBkYXRlKCk7CiAgZWxsaXBzZSh4LCBoZWlnaHQvMiwgNTApOwp9CmBgYAoKIyMjIDJEIFNwcmluZwoKYGBgamF2YXNjcmlwdApjbGFzcyBTcHJpbmcyRCB7CiAgY29uc3RydWN0b3IoeCwgeSkgewogICAgdGhpcy5wb3MgPSBjcmVhdGVWZWN0b3IoeCwgeSk7CiAgICB0aGlzLnRhcmdldCA9IGNyZWF0ZVZlY3Rvcih4LCB5KTsKICAgIHRoaXMudmVsID0gY3JlYXRlVmVjdG9yKDAsIDApOwogICAgdGhpcy5zdGlmZm5lc3MgPSAwLjA4OwogICAgdGhpcy5kYW1waW5nID0gMC44NTsKICB9CgogIHVwZGF0ZSgpIHsKICAgIGxldCBmb3JjZSA9IHA1LlZlY3Rvci5zdWIodGhpcy50YXJnZXQsIHRoaXMucG9zKS5tdWx0KHRoaXMuc3RpZmZuZXNzKTsKICAgIHRoaXMudmVsLmFkZChmb3JjZSkubXVsdCh0aGlzLmRhbXBpbmcpOwogICAgdGhpcy5wb3MuYWRkKHRoaXMudmVsKTsKICAgIHJldHVybiB0aGlzLnBvczsKICB9Cn0KYGBgCgojIyBTdGF0ZSBNYWNoaW5lcwoKRm9yIGNvbXBsZXggbXVsdGktcGhhc2UgYW5pbWF0aW9ucy4KCmBgYGphdmFzY3JpcHQKY29uc3QgU1RBVEVTID0geyBJRExFOiAwLCBFTlRFUjogMSwgQUNUSVZFOiAyLCBFWElUOiAzIH07CmxldCBzdGF0ZSA9IFNUQVRFUy5JRExFOwpsZXQgc3RhdGVTdGFydCA9IDA7CgpmdW5jdGlvbiBzZXRTdGF0ZShuZXdTdGF0ZSkgewogIHN0YXRlID0gbmV3U3RhdGU7CiAgc3RhdGVTdGFydCA9IG1pbGxpcygpOwp9CgpmdW5jdGlvbiBzdGF0ZVRpbWUoKSB7CiAgcmV0dXJuIG1pbGxpcygpIC0gc3RhdGVTdGFydDsKfQoKZnVuY3Rpb24gZHJhdygpIHsKICBzd2l0Y2ggKHN0YXRlKSB7CiAgICBjYXNlIFNUQVRFUy5JRExFOgogICAgICAvLyB3YWl0aW5nLi4uCiAgICAgIGJyZWFrOwogICAgY2FzZSBTVEFURVMuRU5URVI6CiAgICAgIGxldCB0ID0gY29uc3RyYWluKHN0YXRlVGltZSgpIC8gMTAwMCwgMCwgMSk7CiAgICAgIGxldCBhbHBoYSA9IGVhc2VPdXRDdWJpYyh0KSAqIDI1NTsKICAgICAgLy8gZmFkZSBpbi4uLgogICAgICBpZiAodCA+PSAxKSBzZXRTdGF0ZShTVEFURVMuQUNUSVZFKTsKICAgICAgYnJlYWs7CiAgICBjYXNlIFNUQVRFUy5BQ1RJVkU6CiAgICAgIC8vIG1haW4gYW5pbWF0aW9uLi4uCiAgICAgIGJyZWFrOwogICAgY2FzZSBTVEFURVMuRVhJVDoKICAgICAgbGV0IHQyID0gY29uc3RyYWluKHN0YXRlVGltZSgpIC8gNTAwLCAwLCAxKTsKICAgICAgLy8gZmFkZSBvdXQuLi4KICAgICAgaWYgKHQyID49IDEpIHNldFN0YXRlKFNUQVRFUy5JRExFKTsKICAgICAgYnJlYWs7CiAgfQp9CmBgYAoKIyMgVGltZWxpbmUgU2VxdWVuY2luZwoKRm9yIHRpbWVkIG11bHRpLXNjZW5lIGFuaW1hdGlvbnMgKG1vdGlvbiBncmFwaGljcywgdGl0bGUgc2VxdWVuY2VzKS4KCmBgYGphdmFzY3JpcHQKY2xhc3MgVGltZWxpbmUgewogIGNvbnN0cnVjdG9yKCkgewogICAgdGhpcy5ldmVudHMgPSBbXTsKICB9CgogIGF0KHRpbWVNcywgZHVyYXRpb24sIGZuKSB7CiAgICB0aGlzLmV2ZW50cy5wdXNoKHsgc3RhcnQ6IHRpbWVNcywgZW5kOiB0aW1lTXMgKyBkdXJhdGlvbiwgZm4gfSk7CiAgICByZXR1cm4gdGhpczsKICB9CgogIHVwZGF0ZSgpIHsKICAgIGxldCBub3cgPSBtaWxsaXMoKTsKICAgIGZvciAobGV0IGUgb2YgdGhpcy5ldmVudHMpIHsKICAgICAgaWYgKG5vdyA+PSBlLnN0YXJ0ICYmIG5vdyA8IGUuZW5kKSB7CiAgICAgICAgbGV0IHQgPSAobm93IC0gZS5zdGFydCkgLyAoZS5lbmQgLSBlLnN0YXJ0KTsKICAgICAgICBlLmZuKHQpOwogICAgICB9CiAgICB9CiAgfQp9CgovLyBVc2FnZQpsZXQgdGltZWxpbmUgPSBuZXcgVGltZWxpbmUoKTsKdGltZWxpbmUKICAuYXQoMCwgMjAwMCwgKHQpID0+IHsKICAgIC8vIFNjZW5lIDE6IHRpdGxlIGZhZGUgaW4gKDAtMnMpCiAgICBsZXQgYWxwaGEgPSBlYXNlT3V0Q3ViaWModCkgKiAyNTU7CiAgICBmaWxsKDI1NSwgYWxwaGEpOwogICAgdGV4dFNpemUoNDgpOwogICAgdGV4dCgiSGVsbG8iLCB3aWR0aC8yLCBoZWlnaHQvMik7CiAgfSkKICAuYXQoMjAwMCwgMTAwMCwgKHQpID0+IHsKICAgIC8vIFNjZW5lIDI6IHRpdGxlIGZhZGUgb3V0ICgyLTNzKQogICAgbGV0IGFscGhhID0gKDEgLSBlYXNlSW5DdWJpYyh0KSkgKiAyNTU7CiAgICBmaWxsKDI1NSwgYWxwaGEpOwogICAgdGV4dFNpemUoNDgpOwogICAgdGV4dCgiSGVsbG8iLCB3aWR0aC8yLCBoZWlnaHQvMik7CiAgfSkKICAuYXQoMzAwMCwgNTAwMCwgKHQpID0+IHsKICAgIC8vIFNjZW5lIDM6IG1haW4gY29udGVudCAoMy04cykKICAgIHJlbmRlck1haW5Db250ZW50KHQpOwogIH0pOwoKZnVuY3Rpb24gZHJhdygpIHsKICBiYWNrZ3JvdW5kKDApOwogIHRpbWVsaW5lLnVwZGF0ZSgpOwp9CmBgYAoKIyMgTm9pc2UtRHJpdmVuIE1vdGlvbgoKTW9yZSBvcmdhbmljIHRoYW4gZGV0ZXJtaW5pc3RpYyBhbmltYXRpb24uCgpgYGBqYXZhc2NyaXB0Ci8vIFNtb290aCB3YW5kZXJpbmcgcG9zaXRpb24KbGV0IHggPSBtYXAobm9pc2UoZnJhbWVDb3VudCAqIDAuMDA1LCAwKSwgMCwgMSwgMCwgd2lkdGgpOwpsZXQgeSA9IG1hcChub2lzZSgwLCBmcmFtZUNvdW50ICogMC4wMDUpLCAwLCAxLCAwLCBoZWlnaHQpOwoKLy8gTm9pc2UtZHJpdmVuIHJvdGF0aW9uCmxldCBhbmdsZSA9IG5vaXNlKGZyYW1lQ291bnQgKiAwLjAxKSAqIFRXT19QSTsKCi8vIE5vaXNlLWRyaXZlbiBzY2FsZSAoYnJlYXRoaW5nIGVmZmVjdCkKbGV0IHMgPSBtYXAobm9pc2UoZnJhbWVDb3VudCAqIDAuMDIpLCAwLCAxLCAwLjgsIDEuMik7CgovLyBOb2lzZS1kcml2ZW4gY29sb3Igc2hpZnQKbGV0IGh1ZSA9IG1hcChub2lzZShmcmFtZUNvdW50ICogMC4wMDMpLCAwLCAxLCAwLCAzNjApOwpgYGAKCiMjIFRyYW5zaXRpb24gUGF0dGVybnMKCiMjIyBGYWRlIEluL091dAoKYGBgamF2YXNjcmlwdApmdW5jdGlvbiBmYWRlSW4odCkgeyByZXR1cm4gY29uc3RyYWluKHQsIDAsIDEpOyB9CmZ1bmN0aW9uIGZhZGVPdXQodCkgeyByZXR1cm4gY29uc3RyYWluKDEgLSB0LCAwLCAxKTsgfQpgYGAKCiMjIyBTbGlkZQoKYGBgamF2YXNjcmlwdApmdW5jdGlvbiBzbGlkZUluKHQsIGRpcmVjdGlvbiA9ICdsZWZ0JykgewogIGxldCBldCA9IGVhc2VPdXRDdWJpYyh0KTsKICBzd2l0Y2ggKGRpcmVjdGlvbikgewogICAgY2FzZSAnbGVmdCc6IHJldHVybiBsZXJwKC13aWR0aCwgMCwgZXQpOwogICAgY2FzZSAncmlnaHQnOiByZXR1cm4gbGVycCh3aWR0aCwgMCwgZXQpOwogICAgY2FzZSAndXAnOiByZXR1cm4gbGVycCgtaGVpZ2h0LCAwLCBldCk7CiAgICBjYXNlICdkb3duJzogcmV0dXJuIGxlcnAoaGVpZ2h0LCAwLCBldCk7CiAgfQp9CmBgYAoKIyMjIFNjYWxlIFJldmVhbAoKYGBgamF2YXNjcmlwdApmdW5jdGlvbiBzY2FsZVJldmVhbCh0KSB7CiAgbGV0IGV0ID0gZWFzZU91dEVsYXN0aWMoY29uc3RyYWluKHQsIDAsIDEpKTsKICBwdXNoKCk7CiAgdHJhbnNsYXRlKHdpZHRoLzIsIGhlaWdodC8yKTsKICBzY2FsZShldCk7CiAgdHJhbnNsYXRlKC13aWR0aC8yLCAtaGVpZ2h0LzIpOwogIC8vIGRyYXcgY29udGVudC4uLgogIHBvcCgpOwp9CmBgYAoKIyMjIFN0YWdnZXJlZCBFbnRyeQoKYGBgamF2YXNjcmlwdAovLyBOIGVsZW1lbnRzIGFwcGVhciBvbmUgYWZ0ZXIgYW5vdGhlcgpsZXQgc3RhZ2dlckRlbGF5ID0gMTAwOyAgLy8gbXMgYmV0d2VlbiBlYWNoCmZvciAobGV0IGkgPSAwOyBpIDwgZWxlbWVudHMubGVuZ3RoOyBpKyspIHsKICBsZXQgaXRlbVN0YXJ0ID0gYmFzZVRpbWUgKyBpICogc3RhZ2dlckRlbGF5OwogIGxldCB0ID0gY29uc3RyYWluKChtaWxsaXMoKSAtIGl0ZW1TdGFydCkgLyA1MDAsIDAsIDEpOwogIGxldCBhbHBoYSA9IGVhc2VPdXRDdWJpYyh0KSAqIDI1NTsKICBsZXQgeU9mZnNldCA9IGxlcnAoMzAsIDAsIGVhc2VPdXRDdWJpYyh0KSk7CiAgLy8gZHJhdyBlbGVtZW50IHdpdGggYWxwaGEgYW5kIHlPZmZzZXQKfQpgYGAKCiMjIFJlY29yZGluZyBEZXRlcm1pbmlzdGljIEFuaW1hdGlvbnMKCkZvciBmcmFtZS1wZXJmZWN0IGV4cG9ydCwgdXNlIGZyYW1lIGNvdW50IGluc3RlYWQgb2YgbWlsbGlzKCk6CgpgYGBqYXZhc2NyaXB0CmNvbnN0IFRPVEFMX0ZSQU1FUyA9IDMwMDsgIC8vIDEwIHNlY29uZHMgYXQgMzBmcHMKY29uc3QgRlBTID0gMzA7CgpmdW5jdGlvbiBkcmF3KCkgewogIGxldCB0ID0gZnJhbWVDb3VudCAvIFRPVEFMX0ZSQU1FUzsgIC8vIDAgdG8gMSBvdmVyIGZ1bGwgZHVyYXRpb24KICBpZiAodCA+IDEpIHsgbm9Mb29wKCk7IHJldHVybjsgfQoKICAvLyBVc2UgdCBmb3IgYWxsIGFuaW1hdGlvbiB0aW1pbmcg4oCUIGRldGVybWluaXN0aWMKICByZW5kZXJGcmFtZSh0KTsKCiAgLy8gRXhwb3J0CiAgaWYgKENPTkZJRy5yZWNvcmRpbmcpIHsKICAgIHNhdmVDYW52YXMoJ2ZyYW1lLScgKyBuZihmcmFtZUNvdW50LCA0KSwgJ3BuZycpOwogIH0KfQpgYGAKCiMjIFNjZW5lIEZhZGUgRW52ZWxvcGVzIChWaWRlbykKCkV2ZXJ5IHNjZW5lIGluIGEgbXVsdGktc2NlbmUgdmlkZW8gbmVlZHMgZmFkZS1pbiBhbmQgZmFkZS1vdXQuIEhhcmQgY3V0cyBiZXR3ZWVuIHZpc3VhbGx5IGRpZmZlcmVudCBnZW5lcmF0aXZlIHNjZW5lcyBhcmUgamFycmluZy4KCmBgYGphdmFzY3JpcHQKY29uc3QgU0NFTkVfRlJBTUVTID0gMTUwOyAgLy8gNSBzZWNvbmRzIGF0IDMwZnBzCmNvbnN0IEZBREUgPSAxNTsgICAgICAgICAgIC8vIGhhbGYtc2Vjb25kIGZhZGUKCmZ1bmN0aW9uIGRyYXcoKSB7CiAgbGV0IGxmID0gZnJhbWVDb3VudCAtIDE7ICAvLyAwLWluZGV4ZWQgbG9jYWwgZnJhbWUKICBsZXQgdCA9IGxmIC8gU0NFTkVfRlJBTUVTOyAvLyAwLi4xIG5vcm1hbGl6ZWQgcHJvZ3Jlc3MKCiAgLy8gRmFkZSBlbnZlbG9wZTogcmFtcCB1cCBhdCBzdGFydCwgcmFtcCBkb3duIGF0IGVuZAogIGxldCBmYWRlID0gMTsKICBpZiAobGYgPCBGQURFKSBmYWRlID0gbGYgLyBGQURFOwogIGlmIChsZiA+IFNDRU5FX0ZSQU1FUyAtIEZBREUpIGZhZGUgPSAoU0NFTkVfRlJBTUVTIC0gbGYpIC8gRkFERTsKICBmYWRlID0gZmFkZSAqIGZhZGUgKiAoMyAtIDIgKiBmYWRlKTsgIC8vIHNtb290aHN0ZXAgZm9yIG9yZ2FuaWMgZmVlbAoKICAvLyBBcHBseSBmYWRlIHRvIGFsbCB2aXN1YWwgb3V0cHV0CiAgLy8gT3B0aW9uIDE6IG11bHRpcGx5IGFscGhhIHZhbHVlcyBieSBmYWRlCiAgZmlsbChyLCBnLCBiLCBhbHBoYSAqIGZhZGUpOwoKICAvLyBPcHRpb24gMjogdGludCBlbnRpcmUgY29tcG9zaXRlZCBpbWFnZQogIHRpbnQoMjU1LCBmYWRlICogMjU1KTsKICBpbWFnZShzY2VuZUJ1ZmZlciwgMCwgMCk7CiAgbm9UaW50KCk7CgogIC8vIE9wdGlvbiAzOiBtdWx0aXBseSBwaXhlbCBicmlnaHRuZXNzIChmb3IgcGl4ZWwtbGV2ZWwgc2NlbmVzKQogIHBpeGVsc1tpXSA9IHIgKiBmYWRlOwp9CmBgYAoKIyMgQW5pbWF0aW5nIFN0YXRpYyBBbGdvcml0aG1zCgpTb21lIGdlbmVyYXRpdmUgYWxnb3JpdGhtcyBwcm9kdWNlIGEgc2luZ2xlIHN0YXRpYyByZXN1bHQgKGF0dHJhY3RvcnMsIGNpcmNsZSBwYWNraW5nLCBWb3Jvbm9pKS4gSW4gdmlkZW8sIHN0YXRpYyBjb250ZW50IHJlYWRzIGFzIGZyb3plbi9icm9rZW4uIFRlY2huaXF1ZXMgdG8gYWRkIG1vdGlvbjoKCiMjIyBQcm9ncmVzc2l2ZSBSZXZlYWwKCkV4cGFuZCBhIG1hc2sgZnJvbSBjZW50ZXIgb3V0d2FyZCB0byByZXZlYWwgdGhlIHByZWNvbXB1dGVkIHJlc3VsdDoKCmBgYGphdmFzY3JpcHQKbGV0IHJldmVhbFJhZGl1cyA9IGVhc2VPdXRDdWJpYyhtaW4odCAqIDEuNSwgMSkpICogKHdpZHRoICogMC44KTsKLy8gSW4gdGhlIHJlbmRlciBsb29wLCBza2lwIHBpeGVscyBiZXlvbmQgcmV2ZWFsUmFkaXVzIGZyb20gY2VudGVyCmxldCBkeCA9IHggLSB3aWR0aC8yLCBkeSA9IHkgLSBoZWlnaHQvMjsKaWYgKHNxcnQoZHgqZHggKyBkeSpkeSkgPiByZXZlYWxSYWRpdXMpIGNvbnRpbnVlOwovLyBTb2Z0IGVkZ2U6CmxldCBlZGdlRmFkZSA9IGNvbnN0cmFpbigocmV2ZWFsUmFkaXVzIC0gZGlzdCkgLyA0MCwgMCwgMSk7CmBgYAoKIyMjIFBhcmFtZXRlciBTd2VlcAoKU2xvd2x5IGNoYW5nZSBhIHBhcmFtZXRlciB0byBzaG93IHRoZSBhbGdvcml0aG0gZXZvbHZpbmc6CgpgYGBqYXZhc2NyaXB0Ci8vIEF0dHJhY3RvciB3aXRoIGRyaWZ0aW5nIHBhcmFtZXRlcnMKbGV0IGEgPSAtMS43ICsgc2luKHQgKiAwLjUpICogMC4yOyAgLy8gb3NjaWxsYXRlIGFyb3VuZCBiYXNlIHZhbHVlCmxldCBiID0gMS4zICsgY29zKHQgKiAwLjMpICogMC4xNTsKYGBgCgojIyMgU2xvdyBDYW1lcmEgTW90aW9uCgpBcHBseSBzdWJ0bGUgem9vbSBvciByb3RhdGlvbiB0byB0aGUgZmluYWwgaW1hZ2U6CgpgYGBqYXZhc2NyaXB0CnB1c2goKTsKdHJhbnNsYXRlKHdpZHRoLzIsIGhlaWdodC8yKTsKc2NhbGUoMSArIHQgKiAwLjA1KTsgICAgICAgLy8gc2xvdyA1JSB6b29tIG92ZXIgc2NlbmUgZHVyYXRpb24Kcm90YXRlKHQgKiAwLjEpOyAgICAgICAgICAgIC8vIGdlbnRsZSByb3RhdGlvbgp0cmFuc2xhdGUoLXdpZHRoLzIsIC1oZWlnaHQvMik7CmltYWdlKHByZWNvbXB1dGVkUmVzdWx0LCAwLCAwKTsKcG9wKCk7CmBgYAoKIyMjIE92ZXJsYXkgRHluYW1pYyBFbGVtZW50cwoKQWRkIHBhcnRpY2xlcywgZ3JhaW4sIG9yIHN1YnRsZSBub2lzZSBvbiB0b3Agb2Ygc3RhdGljIGNvbnRlbnQ6CgpgYGBqYXZhc2NyaXB0Ci8vIFN0YXRpYyBiYWNrZ3JvdW5kCmltYWdlKHN0YXRpY1Jlc3VsdCwgMCwgMCk7Ci8vIER5bmFtaWMgb3ZlcmxheQpmb3IgKGxldCBwIG9mIGFtYmllbnRQYXJ0aWNsZXMpIHsKICBwLnVwZGF0ZSgpOwogIHAuZGlzcGxheSgpOyAgLy8gc2xvdy1tb3Zpbmcgc3BlY2tzIGFkZCBsaWZlCn0KYGBgCg==
+# Animation
+
+## Frame-Based Animation
+
+### The Draw Loop
+
+```javascript
+function draw() {
+  // Called ~60 times/sec by default
+  // frameCount — integer, starts at 1
+  // deltaTime — ms since last frame (use for framerate-independent motion)
+  // millis() — ms since sketch start
+}
+```
+
+### Time-Based vs Frame-Based
+
+```javascript
+// Frame-based (speed varies with framerate)
+x += speed;
+
+// Time-based (consistent speed regardless of framerate)
+x += speed * (deltaTime / 16.67);  // normalized to 60fps
+```
+
+### Normalized Time
+
+```javascript
+// Progress from 0 to 1 over N seconds
+let duration = 5000;  // 5 seconds in ms
+let t = constrain(millis() / duration, 0, 1);
+
+// Looping progress (0 → 1 → 0 → 1...)
+let period = 3000;  // 3 second loop
+let t = (millis() % period) / period;
+
+// Ping-pong (0 → 1 → 0 → 1...)
+let raw = (millis() % (period * 2)) / period;
+let t = raw <= 1 ? raw : 2 - raw;
+```
+
+## Easing Functions
+
+### Built-in Lerp
+
+```javascript
+// Linear interpolation — smooth but mechanical
+let x = lerp(startX, endX, t);
+
+// Map for non-0-1 ranges
+let y = map(t, 0, 1, startY, endY);
+```
+
+### Common Easing Curves
+
+```javascript
+// Ease in (slow start)
+function easeInQuad(t) { return t * t; }
+function easeInCubic(t) { return t * t * t; }
+function easeInExpo(t) { return t === 0 ? 0 : pow(2, 10 * (t - 1)); }
+
+// Ease out (slow end)
+function easeOutQuad(t) { return 1 - (1 - t) * (1 - t); }
+function easeOutCubic(t) { return 1 - pow(1 - t, 3); }
+function easeOutExpo(t) { return t === 1 ? 1 : 1 - pow(2, -10 * t); }
+
+// Ease in-out (slow both ends)
+function easeInOutCubic(t) {
+  return t < 0.5 ? 4 * t * t * t : 1 - pow(-2 * t + 2, 3) / 2;
+}
+function easeInOutQuint(t) {
+  return t < 0.5 ? 16 * t * t * t * t * t : 1 - pow(-2 * t + 2, 5) / 2;
+}
+
+// Elastic (spring overshoot)
+function easeOutElastic(t) {
+  if (t === 0 || t === 1) return t;
+  return pow(2, -10 * t) * sin((t * 10 - 0.75) * (2 * PI / 3)) + 1;
+}
+
+// Bounce
+function easeOutBounce(t) {
+  if (t < 1/2.75) return 7.5625 * t * t;
+  else if (t < 2/2.75) { t -= 1.5/2.75; return 7.5625 * t * t + 0.75; }
+  else if (t < 2.5/2.75) { t -= 2.25/2.75; return 7.5625 * t * t + 0.9375; }
+  else { t -= 2.625/2.75; return 7.5625 * t * t + 0.984375; }
+}
+
+// Smooth step (Hermite interpolation — great default)
+function smoothstep(t) { return t * t * (3 - 2 * t); }
+
+// Smoother step (Ken Perlin)
+function smootherstep(t) { return t * t * t * (t * (t * 6 - 15) + 10); }
+```
+
+### Applying Easing
+
+```javascript
+// Animate from startVal to endVal over duration ms
+function easedValue(startVal, endVal, startTime, duration, easeFn) {
+  let t = constrain((millis() - startTime) / duration, 0, 1);
+  return lerp(startVal, endVal, easeFn(t));
+}
+
+// Usage
+let x = easedValue(100, 700, animStartTime, 2000, easeOutCubic);
+```
+
+## Spring Physics
+
+More natural than easing — responds to force, overshoots, settles.
+
+```javascript
+class Spring {
+  constructor(value, target, stiffness = 0.1, damping = 0.7) {
+    this.value = value;
+    this.target = target;
+    this.velocity = 0;
+    this.stiffness = stiffness;
+    this.damping = damping;
+  }
+
+  update() {
+    let force = (this.target - this.value) * this.stiffness;
+    this.velocity += force;
+    this.velocity *= this.damping;
+    this.value += this.velocity;
+    return this.value;
+  }
+
+  setTarget(t) { this.target = t; }
+  isSettled(threshold = 0.01) {
+    return abs(this.velocity) < threshold && abs(this.value - this.target) < threshold;
+  }
+}
+
+// Usage
+let springX = new Spring(0, 0, 0.08, 0.85);
+function draw() {
+  springX.setTarget(mouseX);
+  let x = springX.update();
+  ellipse(x, height/2, 50);
+}
+```
+
+### 2D Spring
+
+```javascript
+class Spring2D {
+  constructor(x, y) {
+    this.pos = createVector(x, y);
+    this.target = createVector(x, y);
+    this.vel = createVector(0, 0);
+    this.stiffness = 0.08;
+    this.damping = 0.85;
+  }
+
+  update() {
+    let force = p5.Vector.sub(this.target, this.pos).mult(this.stiffness);
+    this.vel.add(force).mult(this.damping);
+    this.pos.add(this.vel);
+    return this.pos;
+  }
+}
+```
+
+## State Machines
+
+For complex multi-phase animations.
+
+```javascript
+const STATES = { IDLE: 0, ENTER: 1, ACTIVE: 2, EXIT: 3 };
+let state = STATES.IDLE;
+let stateStart = 0;
+
+function setState(newState) {
+  state = newState;
+  stateStart = millis();
+}
+
+function stateTime() {
+  return millis() - stateStart;
+}
+
+function draw() {
+  switch (state) {
+    case STATES.IDLE:
+      // waiting...
+      break;
+    case STATES.ENTER:
+      let t = constrain(stateTime() / 1000, 0, 1);
+      let alpha = easeOutCubic(t) * 255;
+      // fade in...
+      if (t >= 1) setState(STATES.ACTIVE);
+      break;
+    case STATES.ACTIVE:
+      // main animation...
+      break;
+    case STATES.EXIT:
+      let t2 = constrain(stateTime() / 500, 0, 1);
+      // fade out...
+      if (t2 >= 1) setState(STATES.IDLE);
+      break;
+  }
+}
+```
+
+## Timeline Sequencing
+
+For timed multi-scene animations (motion graphics, title sequences).
+
+```javascript
+class Timeline {
+  constructor() {
+    this.events = [];
+  }
+
+  at(timeMs, duration, fn) {
+    this.events.push({ start: timeMs, end: timeMs + duration, fn });
+    return this;
+  }
+
+  update() {
+    let now = millis();
+    for (let e of this.events) {
+      if (now >= e.start && now < e.end) {
+        let t = (now - e.start) / (e.end - e.start);
+        e.fn(t);
+      }
+    }
+  }
+}
+
+// Usage
+let timeline = new Timeline();
+timeline
+  .at(0, 2000, (t) => {
+    // Scene 1: title fade in (0-2s)
+    let alpha = easeOutCubic(t) * 255;
+    fill(255, alpha);
+    textSize(48);
+    text("Hello", width/2, height/2);
+  })
+  .at(2000, 1000, (t) => {
+    // Scene 2: title fade out (2-3s)
+    let alpha = (1 - easeInCubic(t)) * 255;
+    fill(255, alpha);
+    textSize(48);
+    text("Hello", width/2, height/2);
+  })
+  .at(3000, 5000, (t) => {
+    // Scene 3: main content (3-8s)
+    renderMainContent(t);
+  });
+
+function draw() {
+  background(0);
+  timeline.update();
+}
+```
+
+## Noise-Driven Motion
+
+More organic than deterministic animation.
+
+```javascript
+// Smooth wandering position
+let x = map(noise(frameCount * 0.005, 0), 0, 1, 0, width);
+let y = map(noise(0, frameCount * 0.005), 0, 1, 0, height);
+
+// Noise-driven rotation
+let angle = noise(frameCount * 0.01) * TWO_PI;
+
+// Noise-driven scale (breathing effect)
+let s = map(noise(frameCount * 0.02), 0, 1, 0.8, 1.2);
+
+// Noise-driven color shift
+let hue = map(noise(frameCount * 0.003), 0, 1, 0, 360);
+```
+
+## Transition Patterns
+
+### Fade In/Out
+
+```javascript
+function fadeIn(t) { return constrain(t, 0, 1); }
+function fadeOut(t) { return constrain(1 - t, 0, 1); }
+```
+
+### Slide
+
+```javascript
+function slideIn(t, direction = 'left') {
+  let et = easeOutCubic(t);
+  switch (direction) {
+    case 'left': return lerp(-width, 0, et);
+    case 'right': return lerp(width, 0, et);
+    case 'up': return lerp(-height, 0, et);
+    case 'down': return lerp(height, 0, et);
+  }
+}
+```
+
+### Scale Reveal
+
+```javascript
+function scaleReveal(t) {
+  let et = easeOutElastic(constrain(t, 0, 1));
+  push();
+  translate(width/2, height/2);
+  scale(et);
+  translate(-width/2, -height/2);
+  // draw content...
+  pop();
+}
+```
+
+### Staggered Entry
+
+```javascript
+// N elements appear one after another
+let staggerDelay = 100;  // ms between each
+for (let i = 0; i < elements.length; i++) {
+  let itemStart = baseTime + i * staggerDelay;
+  let t = constrain((millis() - itemStart) / 500, 0, 1);
+  let alpha = easeOutCubic(t) * 255;
+  let yOffset = lerp(30, 0, easeOutCubic(t));
+  // draw element with alpha and yOffset
+}
+```
+
+## Recording Deterministic Animations
+
+For frame-perfect export, use frame count instead of millis():
+
+```javascript
+const TOTAL_FRAMES = 300;  // 10 seconds at 30fps
+const FPS = 30;
+
+function draw() {
+  let t = frameCount / TOTAL_FRAMES;  // 0 to 1 over full duration
+  if (t > 1) { noLoop(); return; }
+
+  // Use t for all animation timing — deterministic
+  renderFrame(t);
+
+  // Export
+  if (CONFIG.recording) {
+    saveCanvas('frame-' + nf(frameCount, 4), 'png');
+  }
+}
+```
+
+## Scene Fade Envelopes (Video)
+
+Every scene in a multi-scene video needs fade-in and fade-out. Hard cuts between visually different generative scenes are jarring.
+
+```javascript
+const SCENE_FRAMES = 150;  // 5 seconds at 30fps
+const FADE = 15;           // half-second fade
+
+function draw() {
+  let lf = frameCount - 1;  // 0-indexed local frame
+  let t = lf / SCENE_FRAMES; // 0..1 normalized progress
+
+  // Fade envelope: ramp up at start, ramp down at end
+  let fade = 1;
+  if (lf < FADE) fade = lf / FADE;
+  if (lf > SCENE_FRAMES - FADE) fade = (SCENE_FRAMES - lf) / FADE;
+  fade = fade * fade * (3 - 2 * fade);  // smoothstep for organic feel
+
+  // Apply fade to all visual output
+  // Option 1: multiply alpha values by fade
+  fill(r, g, b, alpha * fade);
+
+  // Option 2: tint entire composited image
+  tint(255, fade * 255);
+  image(sceneBuffer, 0, 0);
+  noTint();
+
+  // Option 3: multiply pixel brightness (for pixel-level scenes)
+  pixels[i] = r * fade;
+}
+```
+
+## Animating Static Algorithms
+
+Some generative algorithms produce a single static result (attractors, circle packing, Voronoi). In video, static content reads as frozen/broken. Techniques to add motion:
+
+### Progressive Reveal
+
+Expand a mask from center outward to reveal the precomputed result:
+
+```javascript
+let revealRadius = easeOutCubic(min(t * 1.5, 1)) * (width * 0.8);
+// In the render loop, skip pixels beyond revealRadius from center
+let dx = x - width/2, dy = y - height/2;
+if (sqrt(dx*dx + dy*dy) > revealRadius) continue;
+// Soft edge:
+let edgeFade = constrain((revealRadius - dist) / 40, 0, 1);
+```
+
+### Parameter Sweep
+
+Slowly change a parameter to show the algorithm evolving:
+
+```javascript
+// Attractor with drifting parameters
+let a = -1.7 + sin(t * 0.5) * 0.2;  // oscillate around base value
+let b = 1.3 + cos(t * 0.3) * 0.15;
+```
+
+### Slow Camera Motion
+
+Apply subtle zoom or rotation to the final image:
+
+```javascript
+push();
+translate(width/2, height/2);
+scale(1 + t * 0.05);       // slow 5% zoom over scene duration
+rotate(t * 0.1);            // gentle rotation
+translate(-width/2, -height/2);
+image(precomputedResult, 0, 0);
+pop();
+```
+
+### Overlay Dynamic Elements
+
+Add particles, grain, or subtle noise on top of static content:
+
+```javascript
+// Static background
+image(staticResult, 0, 0);
+// Dynamic overlay
+for (let p of ambientParticles) {
+  p.update();
+  p.display();  // slow-moving specks add life
+}
+```

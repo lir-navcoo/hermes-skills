@@ -1,1 +1,220 @@
-IyBQb2x5bWFya2V0IEFQSSBFbmRwb2ludHMgUmVmZXJlbmNlCgpBbGwgZW5kcG9pbnRzIGFyZSBwdWJsaWMgUkVTVCAoR0VUKSwgcmV0dXJuIEpTT04sIGFuZCBuZWVkIG5vIGF1dGhlbnRpY2F0aW9uLgoKIyMgR2FtbWEgQVBJIOKAlCBnYW1tYS1hcGkucG9seW1hcmtldC5jb20KCiMjIyBTZWFyY2ggTWFya2V0cwoKYGBgCkdFVCAvcHVibGljLXNlYXJjaD9xPVFVRVJZCmBgYAoKUmVzcG9uc2Ugc3RydWN0dXJlOgpgYGBqc29uCnsKICAiZXZlbnRzIjogWwogICAgewogICAgICAiaWQiOiAiMTIzNDUiLAogICAgICAidGl0bGUiOiAiRXZlbnQgdGl0bGUiLAogICAgICAic2x1ZyI6ICJldmVudC1zbHVnIiwKICAgICAgInZvbHVtZSI6IDEyMzQ1NjcuODksCiAgICAgICJtYXJrZXRzIjogWwogICAgICAgIHsKICAgICAgICAgICJxdWVzdGlvbiI6ICJXaWxsIFggaGFwcGVuPyIsCiAgICAgICAgICAib3V0Y29tZVByaWNlcyI6ICJbXCIwLjY1XCIsIFwiMC4zNVwiXSIsCiAgICAgICAgICAib3V0Y29tZXMiOiAiW1wiWWVzXCIsIFwiTm9cIl0iLAogICAgICAgICAgImNsb2JUb2tlbklkcyI6ICJbXCJUT0tFTl9ZRVNcIiwgXCJUT0tFTl9OT1wiXSIsCiAgICAgICAgICAiY29uZGl0aW9uSWQiOiAiMHhhYmMuLi4iLAogICAgICAgICAgInZvbHVtZSI6IDUwMDAwMAogICAgICAgIH0KICAgICAgXQogICAgfQogIF0sCiAgInBhZ2luYXRpb24iOiB7Imhhc01vcmUiOiB0cnVlLCAidG90YWxSZXN1bHRzIjogMTAwfQp9CmBgYAoKIyMjIExpc3QgRXZlbnRzCgpgYGAKR0VUIC9ldmVudHM/bGltaXQ9TiZhY3RpdmU9dHJ1ZSZjbG9zZWQ9ZmFsc2Umb3JkZXI9dm9sdW1lJmFzY2VuZGluZz1mYWxzZQpgYGAKClBhcmFtZXRlcnM6Ci0gYGxpbWl0YCDigJQgbWF4IHJlc3VsdHMgKGRlZmF1bHQgdmFyaWVzKQotIGBvZmZzZXRgIOKAlCBwYWdpbmF0aW9uIG9mZnNldAotIGBhY3RpdmVgIOKAlCB0cnVlL2ZhbHNlCi0gYGNsb3NlZGAg4oCUIHRydWUvZmFsc2UKLSBgb3JkZXJgIOKAlCBzb3J0IGZpZWxkOiBgdm9sdW1lYCwgYGNyZWF0ZWRBdGAsIGB1cGRhdGVkQXRgCi0gYGFzY2VuZGluZ2Ag4oCUIHRydWUvZmFsc2UKLSBgdGFnYCDigJQgZmlsdGVyIGJ5IHRhZyBzbHVnCi0gYHNsdWdgIOKAlCBnZXQgc3BlY2lmaWMgZXZlbnQgYnkgc2x1ZwoKUmVzcG9uc2U6IGFycmF5IG9mIGV2ZW50IG9iamVjdHMuIEVhY2ggZXZlbnQgaW5jbHVkZXMgYSBgbWFya2V0c2AgYXJyYXkuCgpFdmVudCBmaWVsZHM6IGBpZGAsIGB0aXRsZWAsIGBzbHVnYCwgYGRlc2NyaXB0aW9uYCwgYHZvbHVtZWAsIGBsaXF1aWRpdHlgLApgb3BlbkludGVyZXN0YCwgYGFjdGl2ZWAsIGBjbG9zZWRgLCBgY2F0ZWdvcnlgLCBgc3RhcnREYXRlYCwgYGVuZERhdGVgLApgbWFya2V0c2AgKGFycmF5IG9mIG1hcmtldCBvYmplY3RzKS4KCiMjIyBMaXN0IE1hcmtldHMKCmBgYApHRVQgL21hcmtldHM/bGltaXQ9TiZhY3RpdmU9dHJ1ZSZjbG9zZWQ9ZmFsc2Umb3JkZXI9dm9sdW1lJmFzY2VuZGluZz1mYWxzZQpgYGAKClNhbWUgZmlsdGVyIHBhcmFtZXRlcnMgYXMgZXZlbnRzLCBwbHVzOgotIGBzbHVnYCDigJQgZ2V0IHNwZWNpZmljIG1hcmtldCBieSBzbHVnCgpNYXJrZXQgZmllbGRzOiBgaWRgLCBgcXVlc3Rpb25gLCBgY29uZGl0aW9uSWRgLCBgc2x1Z2AsIGBkZXNjcmlwdGlvbmAsCmBvdXRjb21lc2AsIGBvdXRjb21lUHJpY2VzYCwgYHZvbHVtZWAsIGBsaXF1aWRpdHlgLCBgYWN0aXZlYCwgYGNsb3NlZGAsCmBtYXJrZXRUeXBlYCwgYGNsb2JUb2tlbklkc2AsIGBlbmREYXRlYCwgYGNhdGVnb3J5YCwgYGNyZWF0ZWRBdGAuCgpJbXBvcnRhbnQ6IGBvdXRjb21lUHJpY2VzYCwgYG91dGNvbWVzYCwgYW5kIGBjbG9iVG9rZW5JZHNgIGFyZSBKU09OIHN0cmluZ3MKKGRvdWJsZS1lbmNvZGVkKS4gUGFyc2Ugd2l0aCBqc29uLmxvYWRzKCkgaW4gUHl0aG9uLgoKIyMjIExpc3QgVGFncwoKYGBgCkdFVCAvdGFncwpgYGAKClJldHVybnMgYXJyYXkgb2YgdGFnIG9iamVjdHM6IGBpZGAsIGBsYWJlbGAsIGBzbHVnYC4KVXNlIHRoZSBgc2x1Z2AgdmFsdWUgd2hlbiBmaWx0ZXJpbmcgZXZlbnRzL21hcmtldHMgYnkgdGFnLgoKLS0tCgojIyBDTE9CIEFQSSDigJQgY2xvYi5wb2x5bWFya2V0LmNvbQoKQWxsIENMT0IgcHJpY2UgZW5kcG9pbnRzIHVzZSBgdG9rZW5faWRgIGZyb20gdGhlIG1hcmtldCdzIGBjbG9iVG9rZW5JZHNgIGZpZWxkLgpJbmRleCAwID0gWWVzIG91dGNvbWUsIEluZGV4IDEgPSBObyBvdXRjb21lLgoKIyMjIEN1cnJlbnQgUHJpY2UKCmBgYApHRVQgL3ByaWNlP3Rva2VuX2lkPVRPS0VOX0lEJnNpZGU9YnV5CmBgYAoKUmVzcG9uc2U6IGB7InByaWNlIjogIjAuNjUwIn1gCgpUaGUgYHNpZGVgIHBhcmFtZXRlcjogYGJ1eWAgb3IgYHNlbGxgLgoKIyMjIE1pZHBvaW50IFByaWNlCgpgYGAKR0VUIC9taWRwb2ludD90b2tlbl9pZD1UT0tFTl9JRApgYGAKClJlc3BvbnNlOiBgeyJtaWQiOiAiMC42NDUifWAKCiMjIyBTcHJlYWQKCmBgYApHRVQgL3NwcmVhZD90b2tlbl9pZD1UT0tFTl9JRApgYGAKClJlc3BvbnNlOiBgeyJzcHJlYWQiOiAiMC4wMiJ9YAoKIyMjIE9yZGVyYm9vawoKYGBgCkdFVCAvYm9vaz90b2tlbl9pZD1UT0tFTl9JRApgYGAKClJlc3BvbnNlOgpgYGBqc29uCnsKICAibWFya2V0IjogImNvbmRpdGlvbl9pZCIsCiAgImFzc2V0X2lkIjogInRva2VuX2lkIiwKICAiYmlkcyI6IFt7InByaWNlIjogIjAuNjQiLCAic2l6ZSI6ICI1MDAifSwgLi4uXSwKICAiYXNrcyI6IFt7InByaWNlIjogIjAuNjYiLCAic2l6ZSI6ICIzMDAifSwgLi4uXSwKICAibWluX29yZGVyX3NpemUiOiAiNSIsCiAgInRpY2tfc2l6ZSI6ICIwLjAxIiwKICAibGFzdF90cmFkZV9wcmljZSI6ICIwLjY1Igp9CmBgYAoKQmlkcyBhbmQgYXNrcyBhcmUgc29ydGVkIGJ5IHByaWNlLiBTaXplIGlzIGluIHNoYXJlcyAoVVNEQy1kZW5vbWluYXRlZCkuCgojIyMgUHJpY2UgSGlzdG9yeQoKYGBgCkdFVCAvcHJpY2VzLWhpc3Rvcnk/bWFya2V0PUNPTkRJVElPTl9JRCZpbnRlcnZhbD1JTlRFUlZBTCZmaWRlbGl0eT1OCmBgYAoKUGFyYW1ldGVyczoKLSBgbWFya2V0YCDigJQgdGhlIGNvbmRpdGlvbklkIChoZXggc3RyaW5nIHdpdGggMHggcHJlZml4KQotIGBpbnRlcnZhbGAg4oCUIHRpbWUgcmFuZ2U6IGBhbGxgLCBgMWRgLCBgMXdgLCBgMW1gLCBgM21gLCBgNm1gLCBgMXlgCi0gYGZpZGVsaXR5YCDigJQgbnVtYmVyIG9mIGRhdGEgcG9pbnRzIHRvIHJldHVybgoKUmVzcG9uc2U6CmBgYGpzb24KewogICJoaXN0b3J5IjogWwogICAgeyJ0IjogMTcwOTAwMDAwMCwgInAiOiAiMC41NSJ9LAogICAgeyJ0IjogMTcwOTEwMDAwMCwgInAiOiAiMC41OCJ9CiAgXQp9CmBgYAoKYHRgIGlzIFVuaXggdGltZXN0YW1wLCBgcGAgaXMgcHJpY2UgKHByb2JhYmlsaXR5KS4KCk5vdGU6IFZlcnkgbmV3IG1hcmtldHMgbWF5IHJldHVybiBlbXB0eSBoaXN0b3J5LgoKIyMjIENMT0IgTWFya2V0cyBMaXN0CgpgYGAKR0VUIC9tYXJrZXRzP2xpbWl0PU4KYGBgCgpSZXNwb25zZToKYGBganNvbgp7CiAgImRhdGEiOiBbCiAgICB7CiAgICAgICJjb25kaXRpb25faWQiOiAiMHhhYmMuLi4iLAogICAgICAicXVlc3Rpb24iOiAiV2lsbCBYPyIsCiAgICAgICJ0b2tlbnMiOiBbCiAgICAgICAgeyJ0b2tlbl9pZCI6ICIxMjMuLi4iLCAib3V0Y29tZSI6ICJZZXMiLCAicHJpY2UiOiAwLjY1fSwKICAgICAgICB7InRva2VuX2lkIjogIjQ1Ni4uLiIsICJvdXRjb21lIjogIk5vIiwgInByaWNlIjogMC4zNX0KICAgICAgXSwKICAgICAgImFjdGl2ZSI6IHRydWUsCiAgICAgICJjbG9zZWQiOiBmYWxzZQogICAgfQogIF0sCiAgIm5leHRfY3Vyc29yIjogImN1cnNvcl9zdHJpbmciLAogICJsaW1pdCI6IDEwMCwKICAiY291bnQiOiAxMDAwCn0KYGBgCgotLS0KCiMjIERhdGEgQVBJIOKAlCBkYXRhLWFwaS5wb2x5bWFya2V0LmNvbQoKIyMjIFJlY2VudCBUcmFkZXMKCmBgYApHRVQgL3RyYWRlcz9saW1pdD1OCkdFVCAvdHJhZGVzP21hcmtldD1DT05ESVRJT05fSUQmbGltaXQ9TgpgYGAKClRyYWRlIGZpZWxkczogYHNpZGVgIChCVVkvU0VMTCksIGBzaXplYCwgYHByaWNlYCwgYHRpbWVzdGFtcGAsCmB0aXRsZWAsIGBzbHVnYCwgYG91dGNvbWVgLCBgdHJhbnNhY3Rpb25IYXNoYCwgYGNvbmRpdGlvbklkYC4KCiMjIyBPcGVuIEludGVyZXN0CgpgYGAKR0VUIC9vaT9tYXJrZXQ9Q09ORElUSU9OX0lECmBgYAoKLS0tCgojIyBGaWVsZCBDcm9zcy1SZWZlcmVuY2UKClRvIGdvIGZyb20gYSBHYW1tYSBtYXJrZXQgdG8gQ0xPQiBkYXRhOgoKMS4gR2V0IG1hcmtldCBmcm9tIEdhbW1hOiBoYXMgYGNsb2JUb2tlbklkc2AgYW5kIGBjb25kaXRpb25JZGAKMi4gUGFyc2UgYGNsb2JUb2tlbklkc2AgKEpTT04gc3RyaW5nKTogYFsiWUVTX1RPS0VOIiwgIk5PX1RPS0VOIl1gCjMuIFVzZSBZRVNfVE9LRU4gd2l0aCBgL3ByaWNlYCwgYC9ib29rYCwgYC9taWRwb2ludGAsIGAvc3ByZWFkYAo0LiBVc2UgYGNvbmRpdGlvbklkYCB3aXRoIGAvcHJpY2VzLWhpc3RvcnlgIGFuZCBEYXRhIEFQSSBlbmRwb2ludHMK
+# Polymarket API Endpoints Reference
+
+All endpoints are public REST (GET), return JSON, and need no authentication.
+
+## Gamma API — gamma-api.polymarket.com
+
+### Search Markets
+
+```
+GET /public-search?q=QUERY
+```
+
+Response structure:
+```json
+{
+  "events": [
+    {
+      "id": "12345",
+      "title": "Event title",
+      "slug": "event-slug",
+      "volume": 1234567.89,
+      "markets": [
+        {
+          "question": "Will X happen?",
+          "outcomePrices": "[\"0.65\", \"0.35\"]",
+          "outcomes": "[\"Yes\", \"No\"]",
+          "clobTokenIds": "[\"TOKEN_YES\", \"TOKEN_NO\"]",
+          "conditionId": "0xabc...",
+          "volume": 500000
+        }
+      ]
+    }
+  ],
+  "pagination": {"hasMore": true, "totalResults": 100}
+}
+```
+
+### List Events
+
+```
+GET /events?limit=N&active=true&closed=false&order=volume&ascending=false
+```
+
+Parameters:
+- `limit` — max results (default varies)
+- `offset` — pagination offset
+- `active` — true/false
+- `closed` — true/false
+- `order` — sort field: `volume`, `createdAt`, `updatedAt`
+- `ascending` — true/false
+- `tag` — filter by tag slug
+- `slug` — get specific event by slug
+
+Response: array of event objects. Each event includes a `markets` array.
+
+Event fields: `id`, `title`, `slug`, `description`, `volume`, `liquidity`,
+`openInterest`, `active`, `closed`, `category`, `startDate`, `endDate`,
+`markets` (array of market objects).
+
+### List Markets
+
+```
+GET /markets?limit=N&active=true&closed=false&order=volume&ascending=false
+```
+
+Same filter parameters as events, plus:
+- `slug` — get specific market by slug
+
+Market fields: `id`, `question`, `conditionId`, `slug`, `description`,
+`outcomes`, `outcomePrices`, `volume`, `liquidity`, `active`, `closed`,
+`marketType`, `clobTokenIds`, `endDate`, `category`, `createdAt`.
+
+Important: `outcomePrices`, `outcomes`, and `clobTokenIds` are JSON strings
+(double-encoded). Parse with json.loads() in Python.
+
+### List Tags
+
+```
+GET /tags
+```
+
+Returns array of tag objects: `id`, `label`, `slug`.
+Use the `slug` value when filtering events/markets by tag.
+
+---
+
+## CLOB API — clob.polymarket.com
+
+All CLOB price endpoints use `token_id` from the market's `clobTokenIds` field.
+Index 0 = Yes outcome, Index 1 = No outcome.
+
+### Current Price
+
+```
+GET /price?token_id=TOKEN_ID&side=buy
+```
+
+Response: `{"price": "0.650"}`
+
+The `side` parameter: `buy` or `sell`.
+
+### Midpoint Price
+
+```
+GET /midpoint?token_id=TOKEN_ID
+```
+
+Response: `{"mid": "0.645"}`
+
+### Spread
+
+```
+GET /spread?token_id=TOKEN_ID
+```
+
+Response: `{"spread": "0.02"}`
+
+### Orderbook
+
+```
+GET /book?token_id=TOKEN_ID
+```
+
+Response:
+```json
+{
+  "market": "condition_id",
+  "asset_id": "token_id",
+  "bids": [{"price": "0.64", "size": "500"}, ...],
+  "asks": [{"price": "0.66", "size": "300"}, ...],
+  "min_order_size": "5",
+  "tick_size": "0.01",
+  "last_trade_price": "0.65"
+}
+```
+
+Bids and asks are sorted by price. Size is in shares (USDC-denominated).
+
+### Price History
+
+```
+GET /prices-history?market=CONDITION_ID&interval=INTERVAL&fidelity=N
+```
+
+Parameters:
+- `market` — the conditionId (hex string with 0x prefix)
+- `interval` — time range: `all`, `1d`, `1w`, `1m`, `3m`, `6m`, `1y`
+- `fidelity` — number of data points to return
+
+Response:
+```json
+{
+  "history": [
+    {"t": 1709000000, "p": "0.55"},
+    {"t": 1709100000, "p": "0.58"}
+  ]
+}
+```
+
+`t` is Unix timestamp, `p` is price (probability).
+
+Note: Very new markets may return empty history.
+
+### CLOB Markets List
+
+```
+GET /markets?limit=N
+```
+
+Response:
+```json
+{
+  "data": [
+    {
+      "condition_id": "0xabc...",
+      "question": "Will X?",
+      "tokens": [
+        {"token_id": "123...", "outcome": "Yes", "price": 0.65},
+        {"token_id": "456...", "outcome": "No", "price": 0.35}
+      ],
+      "active": true,
+      "closed": false
+    }
+  ],
+  "next_cursor": "cursor_string",
+  "limit": 100,
+  "count": 1000
+}
+```
+
+---
+
+## Data API — data-api.polymarket.com
+
+### Recent Trades
+
+```
+GET /trades?limit=N
+GET /trades?market=CONDITION_ID&limit=N
+```
+
+Trade fields: `side` (BUY/SELL), `size`, `price`, `timestamp`,
+`title`, `slug`, `outcome`, `transactionHash`, `conditionId`.
+
+### Open Interest
+
+```
+GET /oi?market=CONDITION_ID
+```
+
+---
+
+## Field Cross-Reference
+
+To go from a Gamma market to CLOB data:
+
+1. Get market from Gamma: has `clobTokenIds` and `conditionId`
+2. Parse `clobTokenIds` (JSON string): `["YES_TOKEN", "NO_TOKEN"]`
+3. Use YES_TOKEN with `/price`, `/book`, `/midpoint`, `/spread`
+4. Use `conditionId` with `/prices-history` and Data API endpoints

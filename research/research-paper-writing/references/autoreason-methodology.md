@@ -1,1 +1,394 @@
-IyBBdXRvcmVhc29uOiBJdGVyYXRpdmUgUmVmaW5lbWVudCBNZXRob2RvbG9neQoKQ29tcGxldGUgcmVmZXJlbmNlIGZvciB0aGUgYXV0b3JlYXNvbiBpdGVyYXRpdmUgcmVmaW5lbWVudCBtZXRob2QsIGRlcml2ZWQgZnJvbSBleHBlcmltZW50YWwgcmVzdWx0cyBhY3Jvc3Mgc3ViamVjdGl2ZSB3cml0aW5nIHRhc2tzLCBjb21wZXRpdGl2ZSBwcm9ncmFtbWluZywgYW5kIGZvdXIgbW9kZWwgdGllcnMuIFVzZSB0aGlzIHdoZW4gYW55IG91dHB1dCAocGFwZXIgZHJhZnQsIGV4cGVyaW1lbnQgc2NyaXB0LCBhbmFseXNpcywgdGFzayBkZWZpbml0aW9uKSBuZWVkcyBpdGVyYXRpdmUgaW1wcm92ZW1lbnQuCgoqKlNvdXJjZSoqOiBbTm91c1Jlc2VhcmNoL2F1dG9yZWFzb25dKGh0dHBzOi8vZ2l0aHViLmNvbS9Ob3VzUmVzZWFyY2gvYXV0b3JlYXNvbikg4oCUICJBdXRvcmVhc29uOiBXaGVuIEl0ZXJhdGl2ZSBMTE0gUmVmaW5lbWVudCBXb3JrcyBhbmQgV2h5IEl0IEZhaWxzIgoKLS0tCgojIyBTdHJhdGVneSBTZWxlY3Rpb24gR3VpZGUKCiMjIyBEZWNpc2lvbiBUcmVlCgpgYGAKSXMgdGhlIHRhc2sgb2JqZWN0aXZlbHkgdmVyaWZpYWJsZSAoY29kZSwgbWF0aCwgZmFjdHVhbCk/CuKUnOKUgOKUgCBZRVMg4oaSIERvZXMgdGhlIG1vZGVsIHNvbHZlIGl0IG9uIHRoZSBmaXJzdCBhdHRlbXB0PwrilIIgICDilJzilIDilIAgWUVTIOKGkiBVc2Ugc2luZ2xlIHBhc3MgKG5vIHJlZmluZW1lbnQgbmVlZGVkKQrilIIgICDilJTilIDilIAgTk8g4oaSIFVzZSBhdXRvcmVhc29uIChzdHJ1Y3R1cmVkIGFuYWx5c2lzIOKGkiByZWFzb24taW5mb3JtZWQgcmV2aXNpb24pCuKUggrilJTilIDilIAgTk8gKHN1YmplY3RpdmUpIOKGkiBXaGF0IG1vZGVsIHRpZXIgYXJlIHlvdSB1c2luZz8KICAgIOKUnOKUgOKUgCBXZWFrIChMbGFtYSA4Qiwgc21hbGwgbW9kZWxzKQogICAg4pSCICAg4oaSIFNpbmdsZSBwYXNzLiBNb2RlbCB0b28gd2VhayBmb3IgcmVmaW5lbWVudCB0byBoZWxwLgogICAg4pSCICAgICBJbnZlc3QgaW4gZ2VuZXJhdGlvbiBxdWFsaXR5LCBub3QgaXRlcmF0aW9uLgogICAg4pSCCiAgICDilJzilIDilIAgTWlkLXRpZXIgKEhhaWt1IDMuNSwgR2VtaW5pIEZsYXNoKQogICAg4pSCICAg4oaSIEF1dG9yZWFzb24gd2l0aCBzdHJvbmdlciBqdWRnZXMuIFRoaXMgaXMgdGhlIHN3ZWV0IHNwb3QuCiAgICDilIIgICAgIFNlbGYtcmVmaW5lbWVudCBERVNUUk9ZUyB3ZWFrIG1vZGVsIG91dHB1dHMg4oCUIGF1dG9yZWFzb24gcHJldmVudHMgdGhpcy4KICAgIOKUggogICAg4pSc4pSA4pSAIFN0cm9uZyAoU29ubmV0IDQpCiAgICDilIIgICDihpIgQXV0b3JlYXNvbiBmb3Igb3Blbi1lbmRlZCB0YXNrcy4gV2lucyAzLzUuCiAgICDilIIgICAgIENyaXRpcXVlLWFuZC1yZXZpc2UgZm9yIGNvbmNyZXRlIHRlY2huaWNhbCB0YXNrcyAoMi81KS4KICAgIOKUggogICAg4pSU4pSA4pSAIEZyb250aWVyIChTb25uZXQgNC42LCBPcHVzKQogICAgICAgIOKUnOKUgOKUgCBDb25zdHJhaW5lZCBzY29wZT8g4oaSIEF1dG9yZWFzb24uIFdpbnMgMi8zIGNvbnN0cmFpbmVkIHRhc2tzLgogICAgICAgIOKUlOKUgOKUgCBVbmNvbnN0cmFpbmVkPyDihpIgQ3JpdGlxdWUtYW5kLXJldmlzZSBvciBzaW5nbGUgcGFzcy4KICAgICAgICAgICAgQXV0b3JlYXNvbiBGQUlMUyBvbiB1bmNvbnN0cmFpbmVkIGZyb250aWVyIHRhc2tzIChjb21lcyBsYXN0KS4KYGBgCgojIyMgU3RyYXRlZ3kgQ29tcGFyaXNvbiBUYWJsZQoKfCBTdHJhdGVneSB8IEJlc3QgRm9yIHwgQXZvaWQgV2hlbiB8IENvbXB1dGUgKHBlciBpdGVyYXRpb24pIHwKfC0tLS0tLS0tLS18LS0tLS0tLS0tLXwtLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tfAp8ICoqU2luZ2xlIHBhc3MqKiB8IEZyb250aWVyIG1vZGVscywgdGVtcGxhdGUgdGFza3MsIHRpZ2h0IGJ1ZGdldHMgfCBNaWQtdGllciBtb2RlbHMgd2hlcmUgcXVhbGl0eSBjZWlsaW5nIGlzIGxvdyB8IDEgY2FsbCB8CnwgKipDcml0aXF1ZS1hbmQtcmV2aXNlKiogfCBDb25jcmV0ZSB0ZWNobmljYWwgcmVxdWlyZW1lbnRzIChzeXN0ZW0gZGVzaWduLCBzcGVjaWZpY2F0aW9ucykgfCBXZWFrIG1vZGVscyAoZGVncmFkZXMgb3V0cHV0KSwgdW5jb25zdHJhaW5lZCBzdWJqZWN0aXZlIHRhc2tzIHwgMiBjYWxscyB8CnwgKipBdXRvcmVhc29uKiogfCBNaWQtdGllciBtb2RlbHMsIGNvbnN0cmFpbmVkIHNjb3BlLCB0YXNrcyB3aXRoIGdlbnVpbmUgdHJhZGVvZmZzIHwgV2VhayBtb2RlbHMgKExsYW1hIDhCKSwgZnJvbnRpZXIgKyB1bmNvbnN0cmFpbmVkIHwgfjYgY2FsbHMgfAp8ICoqQmVzdC1vZi1OKiogfCBBbG1vc3QgbmV2ZXIgcmVjb21tZW5kZWQgfCBXZWFrIG1vZGVscyBlc3BlY2lhbGx5IOKAlCB3b3JzZSB0aGFuIHNpbmdsZSBwYXNzIHwgTiBjYWxscyB8CgojIyMgV2h5IEVhY2ggU3RyYXRlZ3kgRmFpbHMKCnwgU3RyYXRlZ3kgfCBGYWlsdXJlIE1vZGUgfCBNZWNoYW5pc20gfAp8LS0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tfAp8ICoqU2luZ2xlIHBhc3MqKiB8IFF1YWxpdHkgY2VpbGluZyB8IE5vIG1lY2hhbmlzbSB0byBpbXByb3ZlIGJleW9uZCBmaXJzdCBhdHRlbXB0IHwKfCAqKkNyaXRpcXVlLWFuZC1yZXZpc2UqKiB8IFByb2dyZXNzaXZlIGRlZ3JhZGF0aW9uIHwgTW9kZWwgaGFsbHVjaW5hdGVzIHByb2JsZW1zIChzeWNvcGhhbmN5KSwgc2NvcGUgY3JlZXBzIGVhY2ggcGFzcywgbmV2ZXIgZGVjbGluZXMgdG8gY2hhbmdlIHwKfCAqKkJlc3Qtb2YtTioqIHwgUmFuZG9tIHNlbGVjdGlvbiB8IFdpdGhvdXQgZ29vZCByYW5raW5nIHNpZ25hbCwgbW9yZSBzYW1wbGVzID0gbW9yZSBtZWRpb2NyZSBvcHRpb25zIHwKfCAqKkF1dG9yZWFzb24gKHVuY29uc3RyYWluZWQpKiogfCBTeW50aGVzaXMgZHJpZnQgfCBTdHJvbmdlciBtb2RlbHMgcHJvZHVjZSBzeW50aGVzZXMgc28gY29uc2lzdGVudGx5IHByZWZlcnJlZCB0aGF0IGluY3VtYmVudCBuZXZlciBzdGFiaWxpemVzIHwKCi0tLQoKIyMgVGhlIEF1dG9yZWFzb24gTG9vcAoKIyMjIEFyY2hpdGVjdHVyZQoKYGBgCuKUjOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUkArilIIgICAgICAgICAgICAgICAgICAgIElURVJBVElPTiBMT09QICAgICAgICAgICAgICAgICAgICAgICAgIOKUggrilIIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIOKUggrilIIgICBJbmN1bWJlbnQgQSDilIDilIDilrogQ3JpdGljIOKUgOKUgOKWuiBBdXRob3IgQiDilIDilIDilrogU3ludGhlc2l6ZXIgICAgIOKUggrilIIgICAgICAg4pSCICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICDilIIgICAgICAgICAgICDilIIK4pSCICAgICAgIOKUgiAgICAgICAgICAgICAg4pSM4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSYICAgICAgICAgICAg4pSCCuKUgiAgICAgICDilrwgICAgICAgICAgICAgIOKWvCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIOKUggrilIIgICAgICBbQV0gICAgICAgICAgIFtBQl0gICAgICAgICAgW0JdICAgICAgICAgICAgICAgICAgICAgIOKUggrilIIgICAgICAg4pSCICAgICAgICAgICAgICDilIIgICAgICAgICAgICDilIIgICAgICAgICAgICAgICAgICAgICAgIOKUggrilIIgICAgICAg4pSU4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pS84pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSYICAgICAgICAgICAgICAgICAgICAgICDilIIK4pSCICAgICAgICAgICAgICAgICAgICAgIOKWvCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIOKUggrilIIgICAgICAgICAgICAgIEp1ZGdlIFBhbmVsIChibGluZCkgICAgICAgICAgICAgICAgICAgICAgICAgIOKUggrilIIgICAgICAgICAgICAgICAgICAgICAg4pSCICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg4pSCCuKUgiAgICAgICAgICAgICAgICAgICAgICDilrwgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICDilIIK4pSCICAgICAgICAgICAgICAgICAgIFdpbm5lciAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICDilIIK4pSCICAgICAgICAgICAgICAgICAgICAgIOKUgiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIOKUggrilIIgICAgICAgICAgICAgIOKUjOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUtOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUkCAgICAgICAgICAgICAgICAgICAgICAgICAgICDilIIK4pSCICAgICAgICAgICAgICDilrwgICAgICAgICAgICAgICDilrwgICAgICAgICAgICAgICAgICAgICAgICAgICAg4pSCCuKUgiAgICAgICAgIEEgd2lucyBrPTIgICAgICBCIG9yIEFCIHdpbnMgICAgICAgICAgICAgICAgICAgICAg4pSCCuKUgiAgICAgICAgIGNvbnNlY3V0aXZlPyAgICDihpIgbmV3IGluY3VtYmVudCAgICAgICAgICAgICAgICAgICDilIIK4pSCICAgICAgICAgICAgICDilIIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIOKUggrilIIgICAgICAgICAgICAgIOKWvCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg4pSCCuKUgiAgICAgICAgICAgQ09OVkVSR0VEICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg4pSCCuKUlOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUmApgYGAKCiMjIyBSb2xlcwoKRXZlcnkgcm9sZSBpcyBhICoqZnJlc2gsIGlzb2xhdGVkIGFnZW50Kiogd2l0aCBubyBzaGFyZWQgY29udGV4dDoKCnwgUm9sZSB8IElucHV0IHwgT3V0cHV0IHwgS2V5IFJ1bGUgfAp8LS0tLS0tfC0tLS0tLS18LS0tLS0tLS18LS0tLS0tLS0tLXwKfCAqKkNyaXRpYyoqIHwgVGFzayArIEluY3VtYmVudCBBIHwgTGlzdCBvZiBwcm9ibGVtcyB8IEZpbmQgcHJvYmxlbXMgT05MWS4gTm8gZml4ZXMuIE5vIHN1Z2dlc3Rpb25zLiB8CnwgKipBdXRob3IgQioqIHwgVGFzayArIEEgKyBDcml0aXF1ZSB8IFJldmlzZWQgdmVyc2lvbiBCIHwgQWRkcmVzcyBlYWNoIGNyaXRpY2lzbS4gU3RhdGUgd2hpY2ggcHJvYmxlbSBlYWNoIGNoYW5nZSBmaXhlcy4gfAp8ICoqU3ludGhlc2l6ZXIqKiB8IFRhc2sgKyBYICsgWSAocmFuZG9taXplZCBsYWJlbHMpIHwgU3ludGhlc2lzIEFCIHwgVGFrZSBzdHJvbmdlc3QgZWxlbWVudHMgb2YgZWFjaC4gTm90IGEgY29tcHJvbWlzZS4gfAp8ICoqSnVkZ2UgUGFuZWwqKiB8IFRhc2sgKyBBLCBBQiwgQiAocmFuZG9taXplZCBsYWJlbHMgKyBvcmRlcikgfCBSYW5raW5nIHwgUmFuayBiZXN0IHRvIHdvcnN0LiBObyBhdXRob3JzaGlwIHN0YWtlLiB8CgojIyMgQ29uZmlndXJhdGlvbgoKfCBQYXJhbWV0ZXIgfCBWYWx1ZSB8IFJhdGlvbmFsZSB8CnwtLS0tLS0tLS0tLXwtLS0tLS0tfC0tLS0tLS0tLS0tfAp8ICoqQ29udmVyZ2VuY2UgayoqIHwgMiB8IGs9MSBwcmVtYXR1cmUgKDk0JSBkaXNwbGFjZWQgbGF0ZXIpLiBrPTIgY29udmVyZ2VzIDEwMCUsIHF1YWxpdHkgcGxhdGVhdXMuIGs9MyBmYWlscyAyNCUsIDJ4IGNvc3QsIG5vIHF1YWxpdHkgZ2Fpbi4gfAp8ICoqQXV0aG9yIHRlbXBlcmF0dXJlKiogfCAwLjctMC44IHwgRW5jb3VyYWdlcyBkaXZlcnNlIHJldmlzaW9ucyB8CnwgKipKdWRnZSB0ZW1wZXJhdHVyZSoqIHwgMC4zIHwgRW5jb3VyYWdlcyBjb25zaXN0ZW50IGV2YWx1YXRpb24gfAp8ICoqSW4tbG9vcCBqdWRnZXMqKiB8IDMgfCBCYWxhbmNlIHBlci1wYXNzIGNvc3QgdnMgZXZhbHVhdGlvbiBzdGFiaWxpdHkgfAp8ICoqRmluYWwgZXZhbHVhdGlvbiBqdWRnZXMqKiB8IDcgfCBIaWdoZXIgc3RhdGlzdGljYWwgcG93ZXIgZm9yIGZpbmFsIGNvbXBhcmlzb24gfAp8ICoqTWF4IHRva2VucyoqIHwgNDA5NiB8IFN0YW5kYXJkOyA4MTkyIGZvciBsb25nLWZvcm0gKHBhcGVycykgfAp8ICoqSnVkZ2UgdHlwZSoqIHwgQ2hhaW4tb2YtdGhvdWdodCB8IDN4IGZhc3RlciBjb252ZXJnZW5jZSBvbiBzb21lIHRhc2tzLiBBbHdheXMgdXNlLiB8CnwgKipUaWVicmVhayoqIHwgQ29uc2VydmF0aXZlIChpbmN1bWJlbnQgd2lucykgfCBQcmV2ZW50cyBmYWxzZSBwb3NpdGl2ZXMg4oCUIEEgbXVzdCBiZSBnZW51aW5lbHkgYmVhdGVuIHwKfCAqKk1heCBwYXNzZXMqKiB8IDI1IChjb25zdHJhaW5lZCksIDUwIChyZW1lZHkpIHwgU2FmZXR5IGNhcDsgbW9zdCBjb252ZXJnZSBieSBwYXNzIDEwLTE1IHwKCiMjIyBQcm9tcHRzCgojIyMjIENyaXRpYwpgYGAKU3lzdGVtOiBZb3UgYXJlIGEgY3JpdGljYWwgcmV2aWV3ZXIuIFlvdXIgb25seSBqb2IgaXMgdG8gZmluZCByZWFsIHByb2JsZW1zLiAKQmUgc3BlY2lmaWMgYW5kIGNvbmNyZXRlLiBEbyBub3Qgc3VnZ2VzdCBmaXhlcy4KClVzZXI6IEZpbmQgcmVhbCBwcm9ibGVtcyB3aXRoIHRoaXMgcHJvcG9zYWwuIEZvY3VzIG9uOgotIFRoaW5ncyB0aGF0IHdvbid0IHdvcmsgYXMgZGVzY3JpYmVkCi0gQ29tcGxleGl0eSB0aGF0IGRvZXNuJ3QgcGF5IGZvciBpdHNlbGYKLSBBc3N1bXB0aW9ucyB0aGF0IGFyZSB3cm9uZwotIE1pc3NpbmcgcGllY2VzCkRvIE5PVCBwcm9wb3NlIGZpeGVzLiBKdXN0IHRoZSBwcm9ibGVtcy4KYGBgCgojIyMjIEF1dGhvciBCCmBgYApTeXN0ZW06IFlvdSBhcmUgYSBzZW5pb3IgY29uc3VsdGFudCByZXZpc2luZyBhIHByb3Bvc2FsIGJhc2VkIG9uIHNwZWNpZmljIApjcml0aWNpc21zLiBBZGRyZXNzIGVhY2ggdmFsaWQgY3JpdGljaXNtIGRpcmVjdGx5LiBEbyBub3QgbWFrZSBjaGFuZ2VzIG5vdCAKbW90aXZhdGVkIGJ5IGFuIGlkZW50aWZpZWQgcHJvYmxlbS4KClVzZXI6IFtUQVNLXSArIFtWRVJTSU9OIEFdICsgW0NSSVRJQyBPVVRQVVRdClJldmlzZSB0byBhZGRyZXNzIHRoZXNlIHByb2JsZW1zLiBGb3IgZWFjaCBjaGFuZ2UsIHN0YXRlIHdoaWNoIHByb2JsZW0gaXQgZml4ZXMuCmBgYAoKIyMjIyBTeW50aGVzaXplcgpgYGAKU3lzdGVtOiBZb3UgYXJlIGdpdmVuIHR3byB2ZXJzaW9ucyBhcyBlcXVhbCBpbnB1dHMuIFRha2UgdGhlIHN0cm9uZ2VzdCBlbGVtZW50cyAKZnJvbSBlYWNoIGFuZCBwcm9kdWNlIGEgY29oZXJlbnQgc3ludGhlc2lzLiBUaGlzIGlzIG5vdCBhIGNvbXByb21pc2UuCgpVc2VyOiBbVEFTS10gKyBbVkVSU0lPTiBYXSArIFtWRVJTSU9OIFldCihsYWJlbHMgcmFuZG9taXplZCDigJQgc3ludGhlc2l6ZXIgZG9lc24ndCBrbm93IHdoaWNoIGlzIGluY3VtYmVudCkKYGBgCgojIyMjIEp1ZGdlIChDaGFpbi1vZi1UaG91Z2h0KSDigJQgQUxXQVlTIFVTRSBUSElTIFZFUlNJT04KYGBgClN5c3RlbTogWW91IGFyZSBhbiBpbmRlcGVuZGVudCBldmFsdWF0b3IuIFRoaW5rIGNhcmVmdWxseSBiZWZvcmUgZGVjaWRpbmcuCgpVc2VyOiBbVEFTS10gKyBUaHJlZSBwcm9wb3NhbHMuIEZvciBlYWNoLCB0aGluayBzdGVwIGJ5IHN0ZXA6CjEuIFdoYXQgZG9lcyBpdCBnZXQgcmlnaHQ/CjIuIFdoYXQgZG9lcyBpdCBnZXQgd3Jvbmcgb3IgbWlzcz8KMy4gQXJlIG51bWJlcnMgYW5kIGNsYWltcyBkZWZlbnNpYmxlPwo0LiBJcyBkZXRhaWwgYXBwcm9wcmlhdGUgb3IgYmxvYXRlZD8KQWZ0ZXIgcmVhc29uaW5nLCByYW5rIGFsbCB0aHJlZS4KUkFOS0lORzogW2Jlc3RdLCBbc2Vjb25kXSwgW3dvcnN0XQpgYGAKCiMjIyMgQmFzZWxpbmUgUHJvbXB0cyAoZm9yIGNvbXBhcmlzb24gZXhwZXJpbWVudHMpCgp8IEJhc2VsaW5lIHwgUHJvbXB0IHwKfC0tLS0tLS0tLS18LS0tLS0tLS18CnwgKipDb25zZXJ2YXRpdmUqKiB8ICJNYWtlIG1pbmltYWwgaW1wcm92ZW1lbnRzIHdoaWxlIHByZXNlcnZpbmcgd2hhdCB3b3Jrcy4gRG8gbm90IGFkZCBuZXcgc2VjdGlvbnMgb3Igc2lnbmlmaWNhbnRseSBleHBhbmQgc2NvcGUuIiB8CnwgKipJbXByb3ZlIHRoaXMqKiB8ICJJbXByb3ZlIHRoaXMgZG9jdW1lbnQuIiAobm8gZnVydGhlciBndWlkYW5jZSkgfAp8ICoqSGFyc2ggY3JpdGljKiogfCAiQ3JpdGljYWxseSBldmFsdWF0ZSBhbmQgcmV3cml0ZSwgZml4aW5nIGFsbCB3ZWFrbmVzc2VzIHlvdSBpZGVudGlmeS4iIHwKfCAqKkNyaXRpcXVlICYgcmV2aXNlKiogfCBTdGVwIDE6ICJQcm9kdWNlIGEgc3RydWN0dXJlZCBjcml0aXF1ZS4gTGlzdCBzcGVjaWZpYyB3ZWFrbmVzc2VzLiIgU3RlcCAyOiAiUmV2aXNlIHRvIGFkZHJlc3MgZWFjaCBjcml0aWNpc20uIiB8CgotLS0KCiMjIFNjb3Jpbmc6IEJvcmRhIENvdW50CgpKdWRnZXMgcmFuayBjYW5kaWRhdGVzLiBQb2ludHMgYXdhcmRlZCBieSByYW5rIHBvc2l0aW9uOgoKfCBSYW5rIHwgUG9pbnRzICgzIGNhbmRpZGF0ZXMpIHwKfC0tLS0tLXwtLS0tLS0tLS0tLS0tLS0tLS0tLS0tfAp8IDFzdCB8IDMgfAp8IDJuZCB8IDIgfAp8IDNyZCB8IDEgfAoKKipBZ2dyZWdhdGlvbioqOiBTdW0gYWNyb3NzIGFsbCBqdWRnZXMuIFdpbm5lciA9IGhpZ2hlc3QgdG90YWwuCioqVGllYnJlYWsqKjogSW5jdW1iZW50IChBKSB3aW5zIGFueSB0aWUuCgoqKkV4YW1wbGUqKiAoMyBqdWRnZXMpOgotIEp1ZGdlIDE6IEFCID4gQSA+IEIg4oaSIEFCIGdldHMgMywgQSBnZXRzIDIsIEIgZ2V0cyAxCi0gSnVkZ2UgMjogQSA+IEFCID4gQiDihpIgQSBnZXRzIDMsIEFCIGdldHMgMiwgQiBnZXRzIDEKLSBKdWRnZSAzOiBBQiA+IEIgPiBBIOKGkiBBQiBnZXRzIDMsIEIgZ2V0cyAyLCBBIGdldHMgMQotIFRvdGFsczogQUI9OCwgQT02LCBCPTQg4oaSIEFCIHdpbnMsIGJlY29tZXMgbmV3IGluY3VtYmVudAoKKipSYW5kb21pemF0aW9uIHBlciBqdWRnZSoqOgotIENhbmRpZGF0ZSBsYWJlbHMgcmFuZG9taXplZCAoQSBtaWdodCBiZSBjYWxsZWQgIlByb3Bvc2FsIFgiIGZvciBvbmUganVkZ2UsICJQcm9wb3NhbCBaIiBmb3IgYW5vdGhlcikKLSBQcmVzZW50YXRpb24gb3JkZXIgcmFuZG9taXplZCAoQUIgbWlnaHQgYXBwZWFyIGZpcnN0IG9yIGxhc3QpCi0gVGhpcyBwcmV2ZW50cyBwb3NpdGlvbiBiaWFzIGFuZCBsYWJlbCBiaWFzCgotLS0KCiMjIE1vZGVsIFNlbGVjdGlvbiBHdWlkZQoKIyMjIEVtcGlyaWNhbCBSZXN1bHRzIGJ5IE1vZGVsIFRpZXIKCnwgTW9kZWwgfCBBdXRvcmVhc29uIFdpbnMgfCBBdXRvcmVhc29uIEF2ZyBCb3JkYSB8IEJlc3QgQmFzZWxpbmUgfCBNYXJnaW4gfCBSZWNvbW1lbmRhdGlvbiB8CnwtLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLXwtLS0tLS0tLXwtLS0tLS0tLS0tLS0tLS0tfAp8ICoqTGxhbWEgMy4xIDhCKiogfCAxLzMgfCAyMy43IHwgMjUuMCAoc2luZ2xlKSB8IC0xLjMgfCBTa2lwIGF1dG9yZWFzb24uIE1vZGVsIHRvbyB3ZWFrIGZvciBkaXZlcnNlIGNhbmRpZGF0ZXMuIHwKfCAqKkdlbWluaSAyLjAgRmxhc2gqKiB8IDIvMyB8IDI1LjAgfCAyMC4wIChzaW5nbGUpIHwgKzUuMCB8IEdvb2QgY2FuZGlkYXRlLiBNb2RlcmF0ZSBnYWlucy4gfAp8ICoqSGFpa3UgMy41KiogfCAzLzMgfCAqKjQyLjAqKiB8IDMzLjcgKHNpbmdsZSkgfCAqKis4LjMqKiB8ICoqQmVzdCBjYW5kaWRhdGUuKiogUGVyZmVjdCBzY29yZXMuIEJhc2VsaW5lcyBhY3RpdmVseSBkZXN0cm95IHF1YWxpdHkuIHwKfCAqKlNvbm5ldCA0KiogfCAzLzUgfCAyNy44IHwgMjIuNCAoQyZSKSB8ICs1LjQgfCBHb29kIGNhbmRpZGF0ZSBmb3Igb3BlbiB0YXNrcy4gQyZSIGJldHRlciBmb3IgdGVjaG5pY2FsIHRhc2tzLiB8CnwgKipTb25uZXQgNC42ICh1bmNvbnN0cmFpbmVkKSoqIHwgMC8xIHwgNy4wIHwgMzEuMCAoQyZSKSB8IC0yNC4wIHwgRG8gTk9UIHVzZSBhdXRvcmVhc29uIHdpdGhvdXQgY29uc3RyYWludHMuIHwKfCAqKlNvbm5ldCA0LjYgKGNvbnN0cmFpbmVkKSoqIHwgMi8zIHwgMjkuMCB8IDI3LjAgKGltcHJvdmUpIHwgKzIuMCB8IFVzZSBvbmx5IHdpdGggc2NvcGUgY29uc3RyYWludHMuIHwKCiMjIyBUaGUgR2VuZXJhdGlvbi1FdmFsdWF0aW9uIEdhcAoKVGhlIGNvcmUgaW5zaWdodDogKiphdXRvcmVhc29uJ3MgdmFsdWUgZGVwZW5kcyBvbiB0aGUgZ2FwIGJldHdlZW4gYSBtb2RlbCdzIGdlbmVyYXRpb24gY2FwYWJpbGl0eSBhbmQgaXRzIHNlbGYtZXZhbHVhdGlvbiBjYXBhYmlsaXR5LioqCgpgYGAKV2VhayBtb2RlbHMgKExsYW1hIDhCKToKICBHZW5lcmF0aW9uOiBQb29yICB8ICBTZWxmLWV2YWx1YXRpb246IFBvb3IKICBHYXA6IFNtYWxsIChib3RoIGJhZCkg4oaSIEF1dG9yZWFzb24gY2FuJ3QgaGVscCwgbm8gZGl2ZXJzZSBjYW5kaWRhdGVzCgpNaWQtdGllciBtb2RlbHMgKEhhaWt1LCBGbGFzaCk6CiAgR2VuZXJhdGlvbjogRGVjZW50ICB8ICBTZWxmLWV2YWx1YXRpb246IFBvb3IKICBHYXA6IExBUkdFIOKGkiBBdXRvcmVhc29uJ3Mgc3dlZXQgc3BvdC4gRXh0ZXJuYWwgZXZhbCBicmlkZ2VzIHRoZSBnYXAuCgpTdHJvbmcgbW9kZWxzIChTb25uZXQgNCk6CiAgR2VuZXJhdGlvbjogR29vZCAgfCAgU2VsZi1ldmFsdWF0aW9uOiBEZWNlbnQKICBHYXA6IE1vZGVyYXRlIOKGkiBBdXRvcmVhc29uIGhlbHBzIG9uIDMvNSB0YXNrcwoKRnJvbnRpZXIgbW9kZWxzIChTb25uZXQgNC42KToKICBHZW5lcmF0aW9uOiBFeGNlbGxlbnQgIHwgIFNlbGYtZXZhbHVhdGlvbjogR29vZAogIEdhcDogU21hbGwg4oaSIFNpbXBsZSBtZXRob2RzIHN1ZmZpY2UuIEF1dG9yZWFzb24gaHVydHMgb24gdW5jb25zdHJhaW5lZCB0YXNrcy4KYGBgCgoqKlByYWN0aWNhbCBydWxlKio6IEFzIG1vZGVsIGNvc3RzIGRyb3AgYW5kIGNhcGFiaWxpdGllcyBpbXByb3ZlLCB0b2RheSdzIGZyb250aWVyIGJlY29tZXMgdG9tb3Jyb3cncyBtaWQtdGllci4gVGhlIGdlbmVyYXRpb24tZXZhbHVhdGlvbiBnYXAgaXMgc3RydWN0dXJhbCwgbm90IHRlbXBvcmFyeS4gTWF0Y2ggcmVmaW5lbWVudCBhcmNoaXRlY3R1cmUgdG8gdGhlIG1vZGVsJ3MgcG9zaXRpb24gb24gdGhlIGNhcGFiaWxpdHkgY3VydmUuCgojIyMgSnVkZ2UgU2VsZWN0aW9uCgp8IEF1dGhvciBNb2RlbCB8IFJlY29tbWVuZGVkIEp1ZGdlIHwgUmF0aW9uYWxlIHwKfC0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tfAp8IExsYW1hIDhCIHwgRG9uJ3QgdXNlIGF1dG9yZWFzb24gfCBNb2RlbCB0b28gd2VhayB8CnwgR2VtaW5pIEZsYXNoIHwgU29ubmV0IDQgfCBDcm9zcy1tb2RlbCBldmFsdWF0aW9uIHdvcmtzIHwKfCBIYWlrdSAzLjUgfCBTb25uZXQgNCB8IFN0cm9uZyBleHRlcm5hbCBldmFsIGlzIHRoZSBtZWNoYW5pc20gfAp8IEhhaWt1IDMuNSB8IEhhaWt1IDMuNSAoc2FtZSkgfCBTdGlsbCB3b3JrcyDigJQgdG91cm5hbWVudCBzdHJ1Y3R1cmUgcHJvdmlkZXMgdmFsdWUgZXZlbiB3aXRob3V0IHN0cm9uZyBqdWRnZXMgKDIwLjcgdnMgMTguMyBhdmcgQm9yZGEpIHwKfCBTb25uZXQgNCB8IFNvbm5ldCA0IChzYW1lKSB8IFNhbWUtbW9kZWwganVkZ2VzIHdvcmsgYXQgdGhpcyB0aWVyIHwKfCBTb25uZXQgNC42IHwgU29ubmV0IDQuNiAoc2FtZSkgfCBPbmx5IHdpdGggc2NvcGUgY29uc3RyYWludHMgfAoKLS0tCgojIyBTY29wZSBDb25zdHJhaW50IERlc2lnbgoKIyMjIFdoYXQgTWFrZXMgQXV0b3JlYXNvbiBXb3JrIG9uIENvbnN0cmFpbmVkIFRhc2tzCgpUaGUgc2FtZSBtb2RlbCAoU29ubmV0IDQuNikgZ29lcyBmcm9tICoqbGFzdCBwbGFjZSoqICh1bmNvbnN0cmFpbmVkKSB0byAqKmZpcnN0IHBsYWNlKiogKGNvbnN0cmFpbmVkKSB3aXRoIHNjb3BlIGNvbnN0cmFpbnRzLiBUaGUgY29uc3RyYWludHMgYm91bmQgdGhlIGltcHJvdmVtZW50IHNwYWNlIHNvIHN5bnRoZXNpcyBkcmlmdCBjYW4ndCBhY2N1bXVsYXRlLgoKIyMjIEVmZmVjdGl2ZSBDb25zdHJhaW50cwoKfCBDb25zdHJhaW50IFR5cGUgfCBFeGFtcGxlIHwgV2h5IEl0IFdvcmtzIHwKfC0tLS0tLS0tLS0tLS0tLS18LS0tLS0tLS0tfC0tLS0tLS0tLS0tLS18CnwgKipGaXhlZCBmYWN0cyoqIHwgIlVzZSBvbmx5IHRoZXNlIDggZGF0YSBwb2ludHMsIGFkZCBub3RoaW5nIGVsc2UiIHwgQm91bmRzIGluZm9ybWF0aW9uIHNwYWNlIHwKfCAqKkZpeGVkIGRlbGl2ZXJhYmxlKiogfCAiNTAwLXdvcmQgc3RhcnR1cCBwaXRjaCIgKG5vdCAiaW1wcm92ZSB0aGlzIikgfCBEZWZpbmVzIGRvbmUgY29uZGl0aW9uIHwKfCAqKkZpeGVkIHN0cnVjdHVyZSoqIHwgIkV4YWN0bHkgNCBzZWN0aW9ucywgZWFjaCB3aXRoIDMgbnVtYmVyZWQgaXRlbXMiIHwgUHJldmVudHMgc3RydWN0dXJhbCBkcmlmdCB8CnwgKipGaXhlZCBjaGFuZ2UgaXRlbXMqKiB8ICJBZGRyZXNzIGV4YWN0bHkgdGhlc2UgMyByZXZpZXdlciBjb25jZXJucyIgfCBCb3VuZHMgbW9kaWZpY2F0aW9uIHNjb3BlIHwKCiMjIyBJbmVmZmVjdGl2ZSBDb25zdHJhaW50cwoKfCBDb25zdHJhaW50IHwgV2h5IEl0IEZhaWxzIHwgV2hhdCBIYXBwZW5zIHwKfC0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLXwKfCBXb3JkIGNvdW50IGFsb25lIHwgTm90IGEgc2NvcGUgY29uc3RyYWludCB8IEZhbHNlIGNvbnZlcmdlbmNlIOKAlCByZWplY3RlZCBmb3IgbGVuZ3RoLCBub3QgcXVhbGl0eSB8CnwgIkJlIGNvbmNpc2UiIHwgVG9vIHZhZ3VlIHwgSWdub3JlZCBhZnRlciAyLTMgcGFzc2VzIHwKfCAiQmUgY29tcHJlaGVuc2l2ZSIgfCBBbnRpLWNvbnN0cmFpbnQgfCBJbnZpdGVzIHNjb3BlIGNyZWVwIHwKfCBObyBjb25zdHJhaW50cyBhdCBhbGwgfCBVbmJvdW5kZWQgaW1wcm92ZW1lbnQgc3BhY2UgfCBTeW50aGVzaXMgZG9taW5hdGVzLCBubyBjb252ZXJnZW5jZSB8CgojIyMgVGFzayBDYXRlZ29yaWVzCgp8IFRhc2sgVHlwZSB8IEF1dG9yZWFzb24gV29ya3M/IHwgV2h5IHwKfC0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS0tLS18LS0tLS18CnwgVGFza3Mgd2l0aCBnZW51aW5lIHRyYWRlb2ZmcyAoc3RyYXRlZ3ksIHBvbGljeSkgfCBZZXMgfCBNdWx0aXBsZSB2YWxpZCBhcHByb2FjaGVzIGZvciB0b3VybmFtZW50IHRvIHNlbGVjdCBiZXR3ZWVuIHwKfCBDb25zdHJhaW5lZCB3cml0aW5nIChwaXRjaCwgbWVtbywgcG9zdG1vcnRlbSkgfCBNb3N0bHkgKDIvMykgfCBCb3VuZGVkIHNjb3BlLCBjbGVhciBldmFsdWF0aW9uIGNyaXRlcmlhIHwKfCBUZW1wbGF0ZS1maWxsaW5nIChpbmNpZGVudCBwb3N0bW9ydGVtKSB8IE5vIHwgT25lIGNvcnJlY3Qgc3RydWN0dXJlLCBtaW5pbWFsIGRlY2lzaW9uIHNwYWNlIHwKfCBDb21wZXRpdGl2ZSBwcm9ncmFtbWluZyB8IFllcyB8IE5hdHVyYWxseSBzY29wZWQsIHRlc3Qgc3VpdGUgcHJvdmlkZXMgZXh0ZXJuYWwgdmVyaWZpY2F0aW9uIHwKfCBPcGVuLWVuZGVkIHVuY29uc3RyYWluZWQgKyBmcm9udGllciBtb2RlbCB8IE5vIHwgU3ludGhlc2lzIGRyaWZ0LCBubyBjb252ZXJnZW5jZSB8CgotLS0KCiMjIEZhaWx1cmUgVGF4b25vbXkKCnwgRmFpbHVyZSBNb2RlIHwgQ29uZGl0aW9uIHwgRGV0ZWN0aW9uIHwgRXZpZGVuY2UgfAp8LS0tLS0tLS0tLS0tLXwtLS0tLS0tLS0tLXwtLS0tLS0tLS0tLXwtLS0tLS0tLS0tfAp8ICoqU2VsZi1jb3JyZWN0aW9uIHVucmVsaWFibGUqKiB8IE5vIGV4dGVybmFsIGV2YWx1YXRpb24gc2lnbmFsIHwgQmFzZWxpbmVzIGRlZ3JhZGUgYmVsb3cgc2luZ2xlIHBhc3MgfCBIYWlrdSBiYXNlbGluZXM6IDE2LjMgYXZnIHZzIDMzLjcgc2luZ2xlIHBhc3MgfAp8ICoqRHJpZnQgLyBzeW50aGVzaXMgZG9taW5hbmNlKiogfCBVbmNvbnN0cmFpbmVkIHNjb3BlIHwgQSB3aW5zIDwxNSUsIEFCIGRvbWluYXRlcyB8IFNvbm5ldCA0LjYgdW5jb25zdHJhaW5lZDogQSB3aW5zIDEyJSwgQUIgd2lucyA2MCUrIHwKfCAqKk92ZXJmaXR0aW5nIHRvIHZpc2libGUgZmVlZGJhY2sqKiB8IFNoYWxsb3cgcmV2aXNpb24gbG9vcCAoQyZSKSB8IEhpZ2ggcHVibGljL3ByaXZhdGUgZGl2ZXJnZW5jZSB8IEMmUiBvdmVyZml0cyAzMiUgb24gaGFyZCBjb2RlIHByb2JsZW1zIHwKfCAqKk5vIGNvbnZlcmdlbmNlKiogfCBCcm9rZW4ganVkZ2UgcGlwZWxpbmUgfCBQYXJzaW5nIGZhaWx1cmVzLCA8MyB2YWxpZCBqdWRnZXMgfCBNaXhlZCBwYW5lbCBwYXJzZXIgZmFpbHVyZTogMTErIHBhc3NlcyB8CnwgKipNb2RlbCB0b28gd2VhayoqIHwgSW5zdWZmaWNpZW50IGdlbmVyYXRpb24gZGl2ZXJzaXR5IHwgQWxsIGNhbmRpZGF0ZXMgbG9vayBzaW1pbGFyIHwgTGxhbWEgOEIgd2lucyBvbmx5IDEvMyB0YXNrcyB8CgojIyMgUmVjb3ZlcnkgUGF0dGVybnMKCnwgRmFpbHVyZSB8IFJlY292ZXJ5IHwKfC0tLS0tLS0tLXwtLS0tLS0tLS0tfAp8IE5vIGNvbnZlcmdlbmNlIChkcmlmdCkgfCBBZGQgc2NvcGUgY29uc3RyYWludHMgdG8gdGhlIHRhc2sgfAp8IE5vIGNvbnZlcmdlbmNlIChicm9rZW4ganVkZ2VzKSB8IEZpeCBwYXJzZXIsIGVuc3VyZSAzIHZhbGlkIGp1ZGdlcyBiZWZvcmUgY29udGludWluZyB8CnwgUXVhbGl0eSBkZWdyYWRlcyB3aXRoIGl0ZXJhdGlvbiB8IFN3aXRjaCB0byBzaW5nbGUgcGFzcyBvciBhZGQgY29uc3RyYWludHMgfAp8IE1vZGVsIHRvbyB3ZWFrIHwgVXNlIGEgc3Ryb25nZXIgbW9kZWwgZm9yIGdlbmVyYXRpb24sIGtlZXAgd2VhayBtb2RlbCBmb3IgY2hlYXAgcm9sZXMgfAp8IE92ZXJmaXR0aW5nIChjb2RlKSB8IFVzZSBzdHJ1Y3R1cmVkIGFuYWx5c2lzIHN0ZXAsIG5vdCBqdXN0IHRlc3QgZmVlZGJhY2sgfAoKLS0tCgojIyBDb2RlIERvbWFpbiBBZGFwdGF0aW9uCgpUaGUgYXV0b3JlYXNvbiBtZXRob2QgYWRhcHRzIGRpZmZlcmVudGx5IGZvciBjb2RlIHZzIHdyaXRpbmc6CgojIyMgV3JpdGluZyBEb21haW4KYGBgCkNhbGwgMTogQ3JpdGljIChmaW5kIHByb2JsZW1zIGluIGluY3VtYmVudCkKQ2FsbCAyOiBBdXRob3IgQiAocmV2aXNlIGJhc2VkIG9uIGNyaXRpcXVlKQpDYWxsIDM6IFN5bnRoZXNpemVyIChtZXJnZSBBIGFuZCBCKQpDYWxscyA0LTY6IEp1ZGdlIFBhbmVsICgzIGJsaW5kIGp1ZGdlcyByYW5rIEEsIEIsIEFCKQpgYGAKCiMjIyBDb2RlIERvbWFpbiAoNi1jYWxsIGJ1ZGdldCkKYGBgCkNhbGwgMTogSW5pdGlhbCBnZW5lcmF0aW9uCkNhbGwgMjogU3RydWN0dXJlZCBhbmFseXNpcyAoNSBwb2ludHMg4oCUIE5PIENPREUpOgogIC0gUHJvYmxlbSBhbmFseXNpczogd2hhdCBkb2VzIHRoZSBwcm9ibGVtIGFjdHVhbGx5IHJlcXVpcmU/CiAgLSBBcHByb2FjaCBhbmFseXNpczogd2hhdCBhcHByb2FjaCBkaWQgd2UgdXNlLCBpcyBpdCBjb3JyZWN0PwogIC0gRmFpbHVyZSBhbmFseXNpczogd2h5IGRpZCB0ZXN0cyBmYWlsPwogIC0gQWx0ZXJuYXRpdmUgYXBwcm9hY2hlczogd2hhdCBlbHNlIGNvdWxkIHdvcms/CiAgLSBFZGdlIGNhc2VzOiB3aGF0IGlucHV0cyBtaWdodCBicmVhayB0aGUgc29sdXRpb24/CkNhbGxzIDMtNjogUmVhc29uLWluZm9ybWVkIHJldmlzaW9ucwogIC0gRWFjaCByZXZpc2lvbiBtdXN0IGV4cGxhaW4gV0hZIGl0IGZpeGVzIHRoZSBpc3N1ZQogIC0gU2VlcyB0ZXN0IHJlc3VsdHMgZnJvbSBwdWJsaWMgKHZpc2libGUpIHRlc3QgY2FzZXMKYGBgCgoqKktleSBkaWZmZXJlbmNlKio6IFRoZSBjb2RlIHN0cmF0ZWd5IHJlcGxhY2VzIHRoZSBqdWRnZSBwYW5lbCB3aXRoIHRlc3Qtc3VpdGUgZXZhbHVhdGlvbiAob2JqZWN0aXZlIGdyb3VuZCB0cnV0aCkuIFRoZSBzdHJ1Y3R1cmVkIGFuYWx5c2lzIHN0ZXAgKENhbGwgMikgaXMgd2hhdCBkcml2ZXMgcmVjb3Zlcnkg4oCUIGl0IGZvcmNlcyByZWFzb25pbmcgYWJvdXQgKndoeSogdGhlIGFwcHJvYWNoIGZhaWxlZCBiZWZvcmUgYXR0ZW1wdGluZyBmaXhlcy4KCioqUmVzdWx0cyoqOiBSZWNvdmVyeSBpcyB0aGUgbWVjaGFuaXNtLiBBbW9uZyBwcm9ibGVtcyB3aGVyZSBib3RoIGF1dG9yZWFzb24gYW5kIHNpbmdsZS1wYXNzIGZhaWxlZCBpbml0aWFsbHksIGF1dG9yZWFzb24gcmVjb3ZlcmVkIDYyJSB2cyBzaW5nbGUtcGFzcydzIDQzJSAoTWNOZW1hciBwPTAuMDQxLCBDb2hlbidzIGg9MC4zMikuCgotLS0KCiMjIEFwcGx5aW5nIEF1dG9yZWFzb24gdG8gUGFwZXIgV3JpdGluZwoKVGhlIHBhcGVyIGl0c2VsZiB3YXMgcmVmaW5lZCB1c2luZyBhdXRvcmVhc29uIChTZWN0aW9uIDggb2YgdGhlIHBhcGVyKToKCiMjIyBTZXR1cAotIE1vZGVsOiBjbGF1ZGUtb3B1cy00Ci0gSnVkZ2VzOiAzIE9wdXMganVkZ2VzCi0gRW5oYW5jZW1lbnQ6IEdyb3VuZC10cnV0aCBjcml0aWMgKGFjY2VzcyB0byBhY3R1YWwgZXhwZXJpbWVudGFsIGRhdGEpCi0gUmVzdWx0OiBDb252ZXJnZWQgaW4gOSBwYXNzZXMKCiMjIyBLZXkgRmluZGluZ3MgZm9yIFBhcGVyIFJlZmluZW1lbnQKCjEuICoqR3JvdW5kLXRydXRoIGNyaXRpYyBpcyBlc3NlbnRpYWwqKjogV2l0aG91dCBncm91bmQtdHJ1dGggYWNjZXNzLCBPcHVzIGhhbGx1Y2luYXRlZCBhIGZhYnJpY2F0ZWQgYWJsYXRpb24gc3R1ZHksIGZha2UgY29uZmlkZW5jZSBpbnRlcnZhbHMsIHdyb25nIG1vZGVsIG5hbWVzLCBhbmQgaW5jb3JyZWN0IHJvbGUgZGVzY3JpcHRpb25zLiBXaXRoIGdyb3VuZC10cnV0aCBhY2Nlc3MsIHRoZSBjcml0aWMgY2F1Z2h0IGFsbCBmb3VyIG9uIHBhc3MgMS4KCjIuICoqSnVkZ2UgcGFuZWwgaW50ZWdyaXR5IG1hdHRlcnMqKjogQSBicm9rZW4gcGFyc2VyIGluIG9uZSBqdWRnZSAoR2VtaW5pIG91dHB1dCBmb3JtYXQgbWlzbWF0Y2gpIHJlZHVjZWQgdGhlIHBhbmVsIGZyb20gMyB0byAyIGp1ZGdlcy4gVGhpcyBwcmV2ZW50ZWQgY29udmVyZ2VuY2UgZm9yIDExKyBwYXNzZXMuIEZpeGluZyB0byAzIHdvcmtpbmcganVkZ2VzLCB0aGUgc2FtZSBpbmN1bWJlbnQgY29udmVyZ2VkIGluIDIgcGFzc2VzLiBBIGJyb2tlbiBqdWRnZSBkb2Vzbid0IGFkZCBub2lzZSDigJQgaXQgcHJldmVudHMgZXF1aWxpYnJpdW0uCgojIyMgUmVjb21tZW5kZWQgU2V0dXAgZm9yIFBhcGVyIFJlZmluZW1lbnQKCmBgYApDcml0aWMgcHJvbXB0OiAiWW91IGFyZSByZXZpZXdpbmcgYSByZXNlYXJjaCBwYXBlciBkcmFmdC4gWW91IGhhdmUgYWNjZXNzIHRvIHRoZSAKYWN0dWFsIGV4cGVyaW1lbnRhbCByZXN1bHRzIFtHUk9VTkQgVFJVVEggREFUQV0uIEZpbmQgZmFjdHVhbCBlcnJvcnMsIHVuc3VwcG9ydGVkIApjbGFpbXMsIGhhbGx1Y2luYXRlZCByZXN1bHRzLCBhbmQgc3RydWN0dXJhbCBwcm9ibGVtcy4gRG8gbm90IHN1Z2dlc3QgZml4ZXMuIgoKQXV0aG9yIEIgcHJvbXB0OiAiUmV2aXNlIHRoaXMgcGFwZXIgZHJhZnQgdG8gZml4IHRoZSBpZGVudGlmaWVkIHByb2JsZW1zLiBGb3IgZWFjaCAKY2hhbmdlLCBjaXRlIHRoZSBzcGVjaWZpYyBwcm9ibGVtIGl0IGFkZHJlc3Nlcy4gRG8gbm90IGFkZCBjbGFpbXMgbm90IHN1cHBvcnRlZCBieSAKdGhlIHByb3ZpZGVkIGV4cGVyaW1lbnRhbCBkYXRhLiIKCkp1ZGdlIHByb21wdCAoQ29UKTogIkNvbXBhcmUgdGhyZWUgdmVyc2lvbnMgb2YgdGhpcyBwYXBlci4gRm9yIGVhY2gsIGV2YWx1YXRlOgoxLiBGYWN0dWFsIGFjY3VyYWN5IGFnYWluc3QgdGhlIHByb3ZpZGVkIHJlc3VsdHMKMi4gQ2xhcml0eSBvZiB0aGUgbmFycmF0aXZlIGFuZCBjb250cmlidXRpb24KMy4gV2hldGhlciBjbGFpbXMgYXJlIHByb3Blcmx5IGhlZGdlZCBhbmQgc3VwcG9ydGVkCjQuIFdyaXRpbmcgcXVhbGl0eSAoY29uY2lzaW9uLCBwcmVjaXNpb24sIG5vIGZpbGxlcikKQWZ0ZXIgcmVhc29uaW5nLCByYW5rIGFsbCB0aHJlZS4gUkFOS0lORzogW2Jlc3RdLCBbc2Vjb25kXSwgW3dvcnN0XSIKYGBgCgojIyMgV2hhdCB0byBQcm92aWRlIGFzIEdyb3VuZCBUcnV0aAotIEFsbCBleHBlcmltZW50YWwgcmVzdWx0IEpTT04gZmlsZXMKLSBTdGF0aXN0aWNhbCB0ZXN0IG91dHB1dHMKLSBSYXcgbnVtYmVycyBmb3IgZXZlcnkgdGFibGUgYW5kIGZpZ3VyZQotIENvbmZpZ3VyYXRpb24gZmlsZXMgc2hvd2luZyBleGFjdCBoeXBlcnBhcmFtZXRlcnMKLSBDb2RlIHRoYXQgZ2VuZXJhdGVkIHRoZSByZXN1bHRzIChmb3IgbWV0aG9kIGRlc2NyaXB0aW9uIGFjY3VyYWN5KQoKLS0tCgojIyBDb21wdXRlIEJ1ZGdldCBSZWZlcmVuY2UKCnwgTWV0aG9kIHwgQ2FsbHMgcGVyIFBhc3MgfCBUeXBpY2FsIFBhc3NlcyB8IFRvdGFsIENhbGxzIHwgUmVsYXRpdmUgQ29zdCB8CnwtLS0tLS0tLXwtLS0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLXwKfCBTaW5nbGUgcGFzcyB8IDEgfCAxIHwgMSB8IDF4IHwKfCBCZXN0LW9mLU4gfCBOIHwgMSB8IE4gfCBOeCB8CnwgQ3JpdGlxdWUgJiByZXZpc2UgfCAyIHwgMTUgfCAzMCB8IDMweCB8CnwgQXV0b3JlYXNvbiAoaW4tbG9vcCkgfCB+NiB8IDEwLTE1IHwgNjAtOTAgfCA2MC05MHggfAp8IEF1dG9yZWFzb24gKHdpdGggZmluYWwgZXZhbCkgfCB+NiArIDcgfCAxMC0xNSArIDEgfCA2Ny05NyB8IH44MHggfAoKKipDb3N0LXF1YWxpdHkgdHJhZGVvZmYqKjogQXV0b3JlYXNvbiB1c2VzIH42eCBtb3JlIGNvbXB1dGUgcGVyIHBhc3MgYW5kIHR5cGljYWxseSBydW5zIG1vcmUgcGFzc2VzLiBUaGlzIGlzIGEgcmVhbCB0cmFkZW9mZi4gVGhlIG1ldGhvZCB0cmFkZXMgY29tcHV0ZSBmb3IgZXZhbHVhdGlvbiBxdWFsaXR5LiBPbiBjb25zdHJhaW5lZCB0YXNrcyB3aXRoIG1pZC10aWVyIG1vZGVscywgdGhpcyB0cmFkZW9mZiBpcyBzdHJvbmdseSBwb3NpdGl2ZS4gT24gdW5jb25zdHJhaW5lZCB0YXNrcyB3aXRoIGZyb250aWVyIG1vZGVscywgaXQncyBuZWdhdGl2ZS4KCioqQ29UIGp1ZGdlcyByZWR1Y2UgY29zdCoqOiAxIENvVCBqdWRnZSBwcm92aWRlcyBldmFsdWF0aW9uIHF1YWxpdHkgY29tcGFyYWJsZSB0byAzIHN0YW5kYXJkIGp1ZGdlcywgYXQgfjQwJSBjb3N0IHNhdmluZ3MuIEFsd2F5cyB1c2UgQ29UIGp1ZGdlcy4K
+# Autoreason: Iterative Refinement Methodology
+
+Complete reference for the autoreason iterative refinement method, derived from experimental results across subjective writing tasks, competitive programming, and four model tiers. Use this when any output (paper draft, experiment script, analysis, task definition) needs iterative improvement.
+
+**Source**: [NousResearch/autoreason](https://github.com/NousResearch/autoreason) — "Autoreason: When Iterative LLM Refinement Works and Why It Fails"
+
+---
+
+## Strategy Selection Guide
+
+### Decision Tree
+
+```
+Is the task objectively verifiable (code, math, factual)?
+├── YES → Does the model solve it on the first attempt?
+│   ├── YES → Use single pass (no refinement needed)
+│   └── NO → Use autoreason (structured analysis → reason-informed revision)
+│
+└── NO (subjective) → What model tier are you using?
+    ├── Weak (Llama 8B, small models)
+    │   → Single pass. Model too weak for refinement to help.
+    │     Invest in generation quality, not iteration.
+    │
+    ├── Mid-tier (Haiku 3.5, Gemini Flash)
+    │   → Autoreason with stronger judges. This is the sweet spot.
+    │     Self-refinement DESTROYS weak model outputs — autoreason prevents this.
+    │
+    ├── Strong (Sonnet 4)
+    │   → Autoreason for open-ended tasks. Wins 3/5.
+    │     Critique-and-revise for concrete technical tasks (2/5).
+    │
+    └── Frontier (Sonnet 4.6, Opus)
+        ├── Constrained scope? → Autoreason. Wins 2/3 constrained tasks.
+        └── Unconstrained? → Critique-and-revise or single pass.
+            Autoreason FAILS on unconstrained frontier tasks (comes last).
+```
+
+### Strategy Comparison Table
+
+| Strategy | Best For | Avoid When | Compute (per iteration) |
+|----------|----------|------------|------------------------|
+| **Single pass** | Frontier models, template tasks, tight budgets | Mid-tier models where quality ceiling is low | 1 call |
+| **Critique-and-revise** | Concrete technical requirements (system design, specifications) | Weak models (degrades output), unconstrained subjective tasks | 2 calls |
+| **Autoreason** | Mid-tier models, constrained scope, tasks with genuine tradeoffs | Weak models (Llama 8B), frontier + unconstrained | ~6 calls |
+| **Best-of-N** | Almost never recommended | Weak models especially — worse than single pass | N calls |
+
+### Why Each Strategy Fails
+
+| Strategy | Failure Mode | Mechanism |
+|----------|-------------|-----------|
+| **Single pass** | Quality ceiling | No mechanism to improve beyond first attempt |
+| **Critique-and-revise** | Progressive degradation | Model hallucinates problems (sycophancy), scope creeps each pass, never declines to change |
+| **Best-of-N** | Random selection | Without good ranking signal, more samples = more mediocre options |
+| **Autoreason (unconstrained)** | Synthesis drift | Stronger models produce syntheses so consistently preferred that incumbent never stabilizes |
+
+---
+
+## The Autoreason Loop
+
+### Architecture
+
+```
+┌──────────────────────────────────────────────────────────┐
+│                    ITERATION LOOP                         │
+│                                                           │
+│   Incumbent A ──► Critic ──► Author B ──► Synthesizer     │
+│       │                                      │            │
+│       │              ┌───────────────────────┘            │
+│       ▼              ▼                                    │
+│      [A]           [AB]          [B]                      │
+│       │              │            │                       │
+│       └──────────────┼────────────┘                       │
+│                      ▼                                    │
+│              Judge Panel (blind)                          │
+│                      │                                    │
+│                      ▼                                    │
+│                   Winner                                  │
+│                      │                                    │
+│              ┌───────┴───────┐                            │
+│              ▼               ▼                            │
+│         A wins k=2      B or AB wins                      │
+│         consecutive?    → new incumbent                   │
+│              │                                            │
+│              ▼                                            │
+│           CONVERGED                                       │
+└──────────────────────────────────────────────────────────┘
+```
+
+### Roles
+
+Every role is a **fresh, isolated agent** with no shared context:
+
+| Role | Input | Output | Key Rule |
+|------|-------|--------|----------|
+| **Critic** | Task + Incumbent A | List of problems | Find problems ONLY. No fixes. No suggestions. |
+| **Author B** | Task + A + Critique | Revised version B | Address each criticism. State which problem each change fixes. |
+| **Synthesizer** | Task + X + Y (randomized labels) | Synthesis AB | Take strongest elements of each. Not a compromise. |
+| **Judge Panel** | Task + A, AB, B (randomized labels + order) | Ranking | Rank best to worst. No authorship stake. |
+
+### Configuration
+
+| Parameter | Value | Rationale |
+|-----------|-------|-----------|
+| **Convergence k** | 2 | k=1 premature (94% displaced later). k=2 converges 100%, quality plateaus. k=3 fails 24%, 2x cost, no quality gain. |
+| **Author temperature** | 0.7-0.8 | Encourages diverse revisions |
+| **Judge temperature** | 0.3 | Encourages consistent evaluation |
+| **In-loop judges** | 3 | Balance per-pass cost vs evaluation stability |
+| **Final evaluation judges** | 7 | Higher statistical power for final comparison |
+| **Max tokens** | 4096 | Standard; 8192 for long-form (papers) |
+| **Judge type** | Chain-of-thought | 3x faster convergence on some tasks. Always use. |
+| **Tiebreak** | Conservative (incumbent wins) | Prevents false positives — A must be genuinely beaten |
+| **Max passes** | 25 (constrained), 50 (remedy) | Safety cap; most converge by pass 10-15 |
+
+### Prompts
+
+#### Critic
+```
+System: You are a critical reviewer. Your only job is to find real problems. 
+Be specific and concrete. Do not suggest fixes.
+
+User: Find real problems with this proposal. Focus on:
+- Things that won't work as described
+- Complexity that doesn't pay for itself
+- Assumptions that are wrong
+- Missing pieces
+Do NOT propose fixes. Just the problems.
+```
+
+#### Author B
+```
+System: You are a senior consultant revising a proposal based on specific 
+criticisms. Address each valid criticism directly. Do not make changes not 
+motivated by an identified problem.
+
+User: [TASK] + [VERSION A] + [CRITIC OUTPUT]
+Revise to address these problems. For each change, state which problem it fixes.
+```
+
+#### Synthesizer
+```
+System: You are given two versions as equal inputs. Take the strongest elements 
+from each and produce a coherent synthesis. This is not a compromise.
+
+User: [TASK] + [VERSION X] + [VERSION Y]
+(labels randomized — synthesizer doesn't know which is incumbent)
+```
+
+#### Judge (Chain-of-Thought) — ALWAYS USE THIS VERSION
+```
+System: You are an independent evaluator. Think carefully before deciding.
+
+User: [TASK] + Three proposals. For each, think step by step:
+1. What does it get right?
+2. What does it get wrong or miss?
+3. Are numbers and claims defensible?
+4. Is detail appropriate or bloated?
+After reasoning, rank all three.
+RANKING: [best], [second], [worst]
+```
+
+#### Baseline Prompts (for comparison experiments)
+
+| Baseline | Prompt |
+|----------|--------|
+| **Conservative** | "Make minimal improvements while preserving what works. Do not add new sections or significantly expand scope." |
+| **Improve this** | "Improve this document." (no further guidance) |
+| **Harsh critic** | "Critically evaluate and rewrite, fixing all weaknesses you identify." |
+| **Critique & revise** | Step 1: "Produce a structured critique. List specific weaknesses." Step 2: "Revise to address each criticism." |
+
+---
+
+## Scoring: Borda Count
+
+Judges rank candidates. Points awarded by rank position:
+
+| Rank | Points (3 candidates) |
+|------|----------------------|
+| 1st | 3 |
+| 2nd | 2 |
+| 3rd | 1 |
+
+**Aggregation**: Sum across all judges. Winner = highest total.
+**Tiebreak**: Incumbent (A) wins any tie.
+
+**Example** (3 judges):
+- Judge 1: AB > A > B → AB gets 3, A gets 2, B gets 1
+- Judge 2: A > AB > B → A gets 3, AB gets 2, B gets 1
+- Judge 3: AB > B > A → AB gets 3, B gets 2, A gets 1
+- Totals: AB=8, A=6, B=4 → AB wins, becomes new incumbent
+
+**Randomization per judge**:
+- Candidate labels randomized (A might be called "Proposal X" for one judge, "Proposal Z" for another)
+- Presentation order randomized (AB might appear first or last)
+- This prevents position bias and label bias
+
+---
+
+## Model Selection Guide
+
+### Empirical Results by Model Tier
+
+| Model | Autoreason Wins | Autoreason Avg Borda | Best Baseline | Margin | Recommendation |
+|-------|----------------|---------------------|---------------|--------|----------------|
+| **Llama 3.1 8B** | 1/3 | 23.7 | 25.0 (single) | -1.3 | Skip autoreason. Model too weak for diverse candidates. |
+| **Gemini 2.0 Flash** | 2/3 | 25.0 | 20.0 (single) | +5.0 | Good candidate. Moderate gains. |
+| **Haiku 3.5** | 3/3 | **42.0** | 33.7 (single) | **+8.3** | **Best candidate.** Perfect scores. Baselines actively destroy quality. |
+| **Sonnet 4** | 3/5 | 27.8 | 22.4 (C&R) | +5.4 | Good candidate for open tasks. C&R better for technical tasks. |
+| **Sonnet 4.6 (unconstrained)** | 0/1 | 7.0 | 31.0 (C&R) | -24.0 | Do NOT use autoreason without constraints. |
+| **Sonnet 4.6 (constrained)** | 2/3 | 29.0 | 27.0 (improve) | +2.0 | Use only with scope constraints. |
+
+### The Generation-Evaluation Gap
+
+The core insight: **autoreason's value depends on the gap between a model's generation capability and its self-evaluation capability.**
+
+```
+Weak models (Llama 8B):
+  Generation: Poor  |  Self-evaluation: Poor
+  Gap: Small (both bad) → Autoreason can't help, no diverse candidates
+
+Mid-tier models (Haiku, Flash):
+  Generation: Decent  |  Self-evaluation: Poor
+  Gap: LARGE → Autoreason's sweet spot. External eval bridges the gap.
+
+Strong models (Sonnet 4):
+  Generation: Good  |  Self-evaluation: Decent
+  Gap: Moderate → Autoreason helps on 3/5 tasks
+
+Frontier models (Sonnet 4.6):
+  Generation: Excellent  |  Self-evaluation: Good
+  Gap: Small → Simple methods suffice. Autoreason hurts on unconstrained tasks.
+```
+
+**Practical rule**: As model costs drop and capabilities improve, today's frontier becomes tomorrow's mid-tier. The generation-evaluation gap is structural, not temporary. Match refinement architecture to the model's position on the capability curve.
+
+### Judge Selection
+
+| Author Model | Recommended Judge | Rationale |
+|-------------|------------------|-----------|
+| Llama 8B | Don't use autoreason | Model too weak |
+| Gemini Flash | Sonnet 4 | Cross-model evaluation works |
+| Haiku 3.5 | Sonnet 4 | Strong external eval is the mechanism |
+| Haiku 3.5 | Haiku 3.5 (same) | Still works — tournament structure provides value even without strong judges (20.7 vs 18.3 avg Borda) |
+| Sonnet 4 | Sonnet 4 (same) | Same-model judges work at this tier |
+| Sonnet 4.6 | Sonnet 4.6 (same) | Only with scope constraints |
+
+---
+
+## Scope Constraint Design
+
+### What Makes Autoreason Work on Constrained Tasks
+
+The same model (Sonnet 4.6) goes from **last place** (unconstrained) to **first place** (constrained) with scope constraints. The constraints bound the improvement space so synthesis drift can't accumulate.
+
+### Effective Constraints
+
+| Constraint Type | Example | Why It Works |
+|----------------|---------|-------------|
+| **Fixed facts** | "Use only these 8 data points, add nothing else" | Bounds information space |
+| **Fixed deliverable** | "500-word startup pitch" (not "improve this") | Defines done condition |
+| **Fixed structure** | "Exactly 4 sections, each with 3 numbered items" | Prevents structural drift |
+| **Fixed change items** | "Address exactly these 3 reviewer concerns" | Bounds modification scope |
+
+### Ineffective Constraints
+
+| Constraint | Why It Fails | What Happens |
+|-----------|-------------|-------------|
+| Word count alone | Not a scope constraint | False convergence — rejected for length, not quality |
+| "Be concise" | Too vague | Ignored after 2-3 passes |
+| "Be comprehensive" | Anti-constraint | Invites scope creep |
+| No constraints at all | Unbounded improvement space | Synthesis dominates, no convergence |
+
+### Task Categories
+
+| Task Type | Autoreason Works? | Why |
+|-----------|-------------------|-----|
+| Tasks with genuine tradeoffs (strategy, policy) | Yes | Multiple valid approaches for tournament to select between |
+| Constrained writing (pitch, memo, postmortem) | Mostly (2/3) | Bounded scope, clear evaluation criteria |
+| Template-filling (incident postmortem) | No | One correct structure, minimal decision space |
+| Competitive programming | Yes | Naturally scoped, test suite provides external verification |
+| Open-ended unconstrained + frontier model | No | Synthesis drift, no convergence |
+
+---
+
+## Failure Taxonomy
+
+| Failure Mode | Condition | Detection | Evidence |
+|-------------|-----------|-----------|----------|
+| **Self-correction unreliable** | No external evaluation signal | Baselines degrade below single pass | Haiku baselines: 16.3 avg vs 33.7 single pass |
+| **Drift / synthesis dominance** | Unconstrained scope | A wins <15%, AB dominates | Sonnet 4.6 unconstrained: A wins 12%, AB wins 60%+ |
+| **Overfitting to visible feedback** | Shallow revision loop (C&R) | High public/private divergence | C&R overfits 32% on hard code problems |
+| **No convergence** | Broken judge pipeline | Parsing failures, <3 valid judges | Mixed panel parser failure: 11+ passes |
+| **Model too weak** | Insufficient generation diversity | All candidates look similar | Llama 8B wins only 1/3 tasks |
+
+### Recovery Patterns
+
+| Failure | Recovery |
+|---------|----------|
+| No convergence (drift) | Add scope constraints to the task |
+| No convergence (broken judges) | Fix parser, ensure 3 valid judges before continuing |
+| Quality degrades with iteration | Switch to single pass or add constraints |
+| Model too weak | Use a stronger model for generation, keep weak model for cheap roles |
+| Overfitting (code) | Use structured analysis step, not just test feedback |
+
+---
+
+## Code Domain Adaptation
+
+The autoreason method adapts differently for code vs writing:
+
+### Writing Domain
+```
+Call 1: Critic (find problems in incumbent)
+Call 2: Author B (revise based on critique)
+Call 3: Synthesizer (merge A and B)
+Calls 4-6: Judge Panel (3 blind judges rank A, B, AB)
+```
+
+### Code Domain (6-call budget)
+```
+Call 1: Initial generation
+Call 2: Structured analysis (5 points — NO CODE):
+  - Problem analysis: what does the problem actually require?
+  - Approach analysis: what approach did we use, is it correct?
+  - Failure analysis: why did tests fail?
+  - Alternative approaches: what else could work?
+  - Edge cases: what inputs might break the solution?
+Calls 3-6: Reason-informed revisions
+  - Each revision must explain WHY it fixes the issue
+  - Sees test results from public (visible) test cases
+```
+
+**Key difference**: The code strategy replaces the judge panel with test-suite evaluation (objective ground truth). The structured analysis step (Call 2) is what drives recovery — it forces reasoning about *why* the approach failed before attempting fixes.
+
+**Results**: Recovery is the mechanism. Among problems where both autoreason and single-pass failed initially, autoreason recovered 62% vs single-pass's 43% (McNemar p=0.041, Cohen's h=0.32).
+
+---
+
+## Applying Autoreason to Paper Writing
+
+The paper itself was refined using autoreason (Section 8 of the paper):
+
+### Setup
+- Model: claude-opus-4
+- Judges: 3 Opus judges
+- Enhancement: Ground-truth critic (access to actual experimental data)
+- Result: Converged in 9 passes
+
+### Key Findings for Paper Refinement
+
+1. **Ground-truth critic is essential**: Without ground-truth access, Opus hallucinated a fabricated ablation study, fake confidence intervals, wrong model names, and incorrect role descriptions. With ground-truth access, the critic caught all four on pass 1.
+
+2. **Judge panel integrity matters**: A broken parser in one judge (Gemini output format mismatch) reduced the panel from 3 to 2 judges. This prevented convergence for 11+ passes. Fixing to 3 working judges, the same incumbent converged in 2 passes. A broken judge doesn't add noise — it prevents equilibrium.
+
+### Recommended Setup for Paper Refinement
+
+```
+Critic prompt: "You are reviewing a research paper draft. You have access to the 
+actual experimental results [GROUND TRUTH DATA]. Find factual errors, unsupported 
+claims, hallucinated results, and structural problems. Do not suggest fixes."
+
+Author B prompt: "Revise this paper draft to fix the identified problems. For each 
+change, cite the specific problem it addresses. Do not add claims not supported by 
+the provided experimental data."
+
+Judge prompt (CoT): "Compare three versions of this paper. For each, evaluate:
+1. Factual accuracy against the provided results
+2. Clarity of the narrative and contribution
+3. Whether claims are properly hedged and supported
+4. Writing quality (concision, precision, no filler)
+After reasoning, rank all three. RANKING: [best], [second], [worst]"
+```
+
+### What to Provide as Ground Truth
+- All experimental result JSON files
+- Statistical test outputs
+- Raw numbers for every table and figure
+- Configuration files showing exact hyperparameters
+- Code that generated the results (for method description accuracy)
+
+---
+
+## Compute Budget Reference
+
+| Method | Calls per Pass | Typical Passes | Total Calls | Relative Cost |
+|--------|---------------|----------------|-------------|---------------|
+| Single pass | 1 | 1 | 1 | 1x |
+| Best-of-N | N | 1 | N | Nx |
+| Critique & revise | 2 | 15 | 30 | 30x |
+| Autoreason (in-loop) | ~6 | 10-15 | 60-90 | 60-90x |
+| Autoreason (with final eval) | ~6 + 7 | 10-15 + 1 | 67-97 | ~80x |
+
+**Cost-quality tradeoff**: Autoreason uses ~6x more compute per pass and typically runs more passes. This is a real tradeoff. The method trades compute for evaluation quality. On constrained tasks with mid-tier models, this tradeoff is strongly positive. On unconstrained tasks with frontier models, it's negative.
+
+**CoT judges reduce cost**: 1 CoT judge provides evaluation quality comparable to 3 standard judges, at ~40% cost savings. Always use CoT judges.

@@ -1,1 +1,189 @@
-IyBXaGlzcGVyIExhbmd1YWdlIFN1cHBvcnQgR3VpZGUKCkNvbXBsZXRlIGd1aWRlIHRvIFdoaXNwZXIncyBtdWx0aWxpbmd1YWwgY2FwYWJpbGl0aWVzLgoKIyMgU3VwcG9ydGVkIGxhbmd1YWdlcyAoOTkgdG90YWwpCgojIyMgVG9wLXRpZXIgc3VwcG9ydCAoV0VSIDwgMTAlKQoKLSBFbmdsaXNoIChlbikKLSBTcGFuaXNoIChlcykKLSBGcmVuY2ggKGZyKQotIEdlcm1hbiAoZGUpCi0gSXRhbGlhbiAoaXQpCi0gUG9ydHVndWVzZSAocHQpCi0gRHV0Y2ggKG5sKQotIFBvbGlzaCAocGwpCi0gUnVzc2lhbiAocnUpCi0gSmFwYW5lc2UgKGphKQotIEtvcmVhbiAoa28pCi0gQ2hpbmVzZSAoemgpCgojIyMgR29vZCBzdXBwb3J0IChXRVIgMTAtMjAlKQoKLSBBcmFiaWMgKGFyKQotIFR1cmtpc2ggKHRyKQotIFZpZXRuYW1lc2UgKHZpKQotIFN3ZWRpc2ggKHN2KQotIEZpbm5pc2ggKGZpKQotIEN6ZWNoIChjcykKLSBSb21hbmlhbiAocm8pCi0gSHVuZ2FyaWFuIChodSkKLSBEYW5pc2ggKGRhKQotIE5vcndlZ2lhbiAobm8pCi0gVGhhaSAodGgpCi0gSGVicmV3IChoZSkKLSBHcmVlayAoZWwpCi0gSW5kb25lc2lhbiAoaWQpCi0gTWFsYXkgKG1zKQoKIyMjIEZ1bGwgbGlzdCAoOTkgbGFuZ3VhZ2VzKQoKQWZyaWthYW5zLCBBbGJhbmlhbiwgQW1oYXJpYywgQXJhYmljLCBBcm1lbmlhbiwgQXNzYW1lc2UsIEF6ZXJiYWlqYW5pLCBCYXNoa2lyLCBCYXNxdWUsIEJlbGFydXNpYW4sIEJlbmdhbGksIEJvc25pYW4sIEJyZXRvbiwgQnVsZ2FyaWFuLCBCdXJtZXNlLCBDYW50b25lc2UsIENhdGFsYW4sIENoaW5lc2UsIENyb2F0aWFuLCBDemVjaCwgRGFuaXNoLCBEdXRjaCwgRW5nbGlzaCwgRXN0b25pYW4sIEZhcm9lc2UsIEZpbm5pc2gsIEZyZW5jaCwgR2FsaWNpYW4sIEdlb3JnaWFuLCBHZXJtYW4sIEdyZWVrLCBHdWphcmF0aSwgSGFpdGlhbiBDcmVvbGUsIEhhdXNhLCBIYXdhaWlhbiwgSGVicmV3LCBIaW5kaSwgSHVuZ2FyaWFuLCBJY2VsYW5kaWMsIEluZG9uZXNpYW4sIEl0YWxpYW4sIEphcGFuZXNlLCBKYXZhbmVzZSwgS2FubmFkYSwgS2F6YWtoLCBLaG1lciwgS29yZWFuLCBMYW8sIExhdGluLCBMYXR2aWFuLCBMaW5nYWxhLCBMaXRodWFuaWFuLCBMdXhlbWJvdXJnaXNoLCBNYWNlZG9uaWFuLCBNYWxhZ2FzeSwgTWFsYXksIE1hbGF5YWxhbSwgTWFsdGVzZSwgTWFvcmksIE1hcmF0aGksIE1vbGRhdmlhbiwgTW9uZ29saWFuLCBNeWFubWFyLCBOZXBhbGksIE5vcndlZ2lhbiwgTnlub3JzaywgT2NjaXRhbiwgUGFzaHRvLCBQZXJzaWFuLCBQb2xpc2gsIFBvcnR1Z3Vlc2UsIFB1bmphYmksIFB1c2h0bywgUm9tYW5pYW4sIFJ1c3NpYW4sIFNhbnNrcml0LCBTZXJiaWFuLCBTaG9uYSwgU2luZGhpLCBTaW5oYWxhLCBTbG92YWssIFNsb3ZlbmlhbiwgU29tYWxpLCBTcGFuaXNoLCBTdW5kYW5lc2UsIFN3YWhpbGksIFN3ZWRpc2gsIFRhZ2Fsb2csIFRhamlrLCBUYW1pbCwgVGF0YXIsIFRlbHVndSwgVGhhaSwgVGliZXRhbiwgVHVya2lzaCwgVHVya21lbiwgVWtyYWluaWFuLCBVcmR1LCBVemJlaywgVmlldG5hbWVzZSwgV2Vsc2gsIFlpZGRpc2gsIFlvcnViYQoKIyMgVXNhZ2UgZXhhbXBsZXMKCiMjIyBBdXRvLWRldGVjdCBsYW5ndWFnZQoKYGBgcHl0aG9uCmltcG9ydCB3aGlzcGVyCgptb2RlbCA9IHdoaXNwZXIubG9hZF9tb2RlbCgidHVyYm8iKQoKIyBBdXRvLWRldGVjdCBsYW5ndWFnZQpyZXN1bHQgPSBtb2RlbC50cmFuc2NyaWJlKCJhdWRpby5tcDMiKQoKcHJpbnQoZiJEZXRlY3RlZCBsYW5ndWFnZToge3Jlc3VsdFsnbGFuZ3VhZ2UnXX0iKQpwcmludChmIlRleHQ6IHtyZXN1bHRbJ3RleHQnXX0iKQpgYGAKCiMjIyBTcGVjaWZ5IGxhbmd1YWdlIChmYXN0ZXIpCgpgYGBweXRob24KIyBTcGVjaWZ5IGxhbmd1YWdlIGZvciBmYXN0ZXIgdHJhbnNjcmlwdGlvbgpyZXN1bHQgPSBtb2RlbC50cmFuc2NyaWJlKCJhdWRpby5tcDMiLCBsYW5ndWFnZT0iZXMiKSAgIyBTcGFuaXNoCnJlc3VsdCA9IG1vZGVsLnRyYW5zY3JpYmUoImF1ZGlvLm1wMyIsIGxhbmd1YWdlPSJmciIpICAjIEZyZW5jaApyZXN1bHQgPSBtb2RlbC50cmFuc2NyaWJlKCJhdWRpby5tcDMiLCBsYW5ndWFnZT0iamEiKSAgIyBKYXBhbmVzZQpgYGAKCiMjIyBUcmFuc2xhdGlvbiB0byBFbmdsaXNoCgpgYGBweXRob24KIyBUcmFuc2xhdGUgYW55IGxhbmd1YWdlIHRvIEVuZ2xpc2gKcmVzdWx0ID0gbW9kZWwudHJhbnNjcmliZSgKICAgICJzcGFuaXNoX2F1ZGlvLm1wMyIsCiAgICB0YXNrPSJ0cmFuc2xhdGUiICAjIFRyYW5zbGF0ZXMgdG8gRW5nbGlzaAopCgpwcmludChmIk9yaWdpbmFsIGxhbmd1YWdlOiB7cmVzdWx0WydsYW5ndWFnZSddfSIpCnByaW50KGYiRW5nbGlzaCB0cmFuc2xhdGlvbjoge3Jlc3VsdFsndGV4dCddfSIpCmBgYAoKIyMgTGFuZ3VhZ2Utc3BlY2lmaWMgdGlwcwoKIyMjIENoaW5lc2UKCmBgYHB5dGhvbgojIENoaW5lc2Ugd29ya3Mgd2VsbCB3aXRoIGxhcmdlciBtb2RlbHMKbW9kZWwgPSB3aGlzcGVyLmxvYWRfbW9kZWwoImxhcmdlIikKCnJlc3VsdCA9IG1vZGVsLnRyYW5zY3JpYmUoCiAgICAiY2hpbmVzZV9hdWRpby5tcDMiLAogICAgbGFuZ3VhZ2U9InpoIiwKICAgIGluaXRpYWxfcHJvbXB0PSLov5nmmK/kuIDmrrXlhbPkuo7mioDmnK/nmoTorqjorroiICAjIENvbnRleHQgaGVscHMKKQpgYGAKCiMjIyBKYXBhbmVzZQoKYGBgcHl0aG9uCiMgSmFwYW5lc2UgYmVuZWZpdHMgZnJvbSBpbml0aWFsIHByb21wdApyZXN1bHQgPSBtb2RlbC50cmFuc2NyaWJlKAogICAgImphcGFuZXNlX2F1ZGlvLm1wMyIsCiAgICBsYW5ndWFnZT0iamEiLAogICAgaW5pdGlhbF9wcm9tcHQ9IuOBk+OCjOOBr+aKgOihk+eahOOBquS8muitsOOBrumMsumfs+OBp+OBmSIKKQpgYGAKCiMjIyBBcmFiaWMKCmBgYHB5dGhvbgojIEFyYWJpYzogVXNlIGxhcmdlIG1vZGVsIGZvciBiZXN0IHJlc3VsdHMKbW9kZWwgPSB3aGlzcGVyLmxvYWRfbW9kZWwoImxhcmdlIikKCnJlc3VsdCA9IG1vZGVsLnRyYW5zY3JpYmUoCiAgICAiYXJhYmljX2F1ZGlvLm1wMyIsCiAgICBsYW5ndWFnZT0iYXIiCikKYGBgCgojIyBNb2RlbCBzaXplIHJlY29tbWVuZGF0aW9ucwoKfCBMYW5ndWFnZSBUaWVyIHwgUmVjb21tZW5kZWQgTW9kZWwgfCBXRVIgfAp8LS0tLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS0tLS18LS0tLS18CnwgVG9wLXRpZXIgKGVuLCBlcywgZnIsIGRlKSB8IGJhc2UvdHVyYm8gfCA8IDEwJSB8CnwgR29vZCAoYXIsIHRyLCB2aSkgfCBtZWRpdW0vbGFyZ2UgfCAxMC0yMCUgfAp8IExvd2VyLXJlc291cmNlIHwgbGFyZ2UgfCAyMC0zMCUgfAoKIyMgUGVyZm9ybWFuY2UgYnkgbGFuZ3VhZ2UKCiMjIyBFbmdsaXNoCgotICoqdGlueSoqOiBXRVIgfjE1JQotICoqYmFzZSoqOiBXRVIgfjglCi0gKipzbWFsbCoqOiBXRVIgfjUlCi0gKiptZWRpdW0qKjogV0VSIH40JQotICoqbGFyZ2UqKjogV0VSIH4zJQotICoqdHVyYm8qKjogV0VSIH4zLjUlCgojIyMgU3BhbmlzaAoKLSAqKnRpbnkqKjogV0VSIH4yMCUKLSAqKmJhc2UqKjogV0VSIH4xMiUKLSAqKm1lZGl1bSoqOiBXRVIgfjYlCi0gKipsYXJnZSoqOiBXRVIgfjQlCgojIyMgQ2hpbmVzZQoKLSAqKnNtYWxsKio6IFdFUiB+MTUlCi0gKiptZWRpdW0qKjogV0VSIH44JQotICoqbGFyZ2UqKjogV0VSIH41JQoKIyMgQmVzdCBwcmFjdGljZXMKCjEuICoqVXNlIEVuZ2xpc2gtb25seSBtb2RlbHMqKiAtIEJldHRlciBmb3Igc21hbGwgbW9kZWxzICh0aW55L2Jhc2UpCjIuICoqU3BlY2lmeSBsYW5ndWFnZSoqIC0gRmFzdGVyIHRoYW4gYXV0by1kZXRlY3QKMy4gKipBZGQgaW5pdGlhbCBwcm9tcHQqKiAtIEltcHJvdmVzIGFjY3VyYWN5IGZvciB0ZWNobmljYWwgdGVybXMKNC4gKipVc2UgbGFyZ2VyIG1vZGVscyoqIC0gRm9yIGxvdy1yZXNvdXJjZSBsYW5ndWFnZXMKNS4gKipUZXN0IG9uIHNhbXBsZSoqIC0gUXVhbGl0eSB2YXJpZXMgYnkgYWNjZW50L2RpYWxlY3QKNi4gKipDb25zaWRlciBhdWRpbyBxdWFsaXR5KiogLSBDbGVhciBhdWRpbyA9IGJldHRlciByZXN1bHRzCjcuICoqQ2hlY2sgbGFuZ3VhZ2UgY29kZXMqKiAtIFVzZSBJU08gNjM5LTEgY29kZXMgKDIgbGV0dGVycykKCiMjIExhbmd1YWdlIGRldGVjdGlvbgoKYGBgcHl0aG9uCiMgRGV0ZWN0IGxhbmd1YWdlIG9ubHkgKG5vIHRyYW5zY3JpcHRpb24pCmltcG9ydCB3aGlzcGVyCgptb2RlbCA9IHdoaXNwZXIubG9hZF9tb2RlbCgiYmFzZSIpCgojIExvYWQgYXVkaW8KYXVkaW8gPSB3aGlzcGVyLmxvYWRfYXVkaW8oImF1ZGlvLm1wMyIpCmF1ZGlvID0gd2hpc3Blci5wYWRfb3JfdHJpbShhdWRpbykKCiMgTWFrZSBsb2ctTWVsIHNwZWN0cm9ncmFtCm1lbCA9IHdoaXNwZXIubG9nX21lbF9zcGVjdHJvZ3JhbShhdWRpbykudG8obW9kZWwuZGV2aWNlKQoKIyBEZXRlY3QgbGFuZ3VhZ2UKXywgcHJvYnMgPSBtb2RlbC5kZXRlY3RfbGFuZ3VhZ2UobWVsKQpkZXRlY3RlZF9sYW5ndWFnZSA9IG1heChwcm9icywga2V5PXByb2JzLmdldCkKCnByaW50KGYiRGV0ZWN0ZWQgbGFuZ3VhZ2U6IHtkZXRlY3RlZF9sYW5ndWFnZX0iKQpwcmludChmIkNvbmZpZGVuY2U6IHtwcm9ic1tkZXRlY3RlZF9sYW5ndWFnZV06LjIlfSIpCmBgYAoKIyMgUmVzb3VyY2VzCgotICoqUGFwZXIqKjogaHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIyMTIuMDQzNTYKLSAqKkdpdEh1YioqOiBodHRwczovL2dpdGh1Yi5jb20vb3BlbmFpL3doaXNwZXIKLSAqKk1vZGVsIENhcmQqKjogaHR0cHM6Ly9naXRodWIuY29tL29wZW5haS93aGlzcGVyL2Jsb2IvbWFpbi9tb2RlbC1jYXJkLm1kCg==
+# Whisper Language Support Guide
+
+Complete guide to Whisper's multilingual capabilities.
+
+## Supported languages (99 total)
+
+### Top-tier support (WER < 10%)
+
+- English (en)
+- Spanish (es)
+- French (fr)
+- German (de)
+- Italian (it)
+- Portuguese (pt)
+- Dutch (nl)
+- Polish (pl)
+- Russian (ru)
+- Japanese (ja)
+- Korean (ko)
+- Chinese (zh)
+
+### Good support (WER 10-20%)
+
+- Arabic (ar)
+- Turkish (tr)
+- Vietnamese (vi)
+- Swedish (sv)
+- Finnish (fi)
+- Czech (cs)
+- Romanian (ro)
+- Hungarian (hu)
+- Danish (da)
+- Norwegian (no)
+- Thai (th)
+- Hebrew (he)
+- Greek (el)
+- Indonesian (id)
+- Malay (ms)
+
+### Full list (99 languages)
+
+Afrikaans, Albanian, Amharic, Arabic, Armenian, Assamese, Azerbaijani, Bashkir, Basque, Belarusian, Bengali, Bosnian, Breton, Bulgarian, Burmese, Cantonese, Catalan, Chinese, Croatian, Czech, Danish, Dutch, English, Estonian, Faroese, Finnish, French, Galician, Georgian, German, Greek, Gujarati, Haitian Creole, Hausa, Hawaiian, Hebrew, Hindi, Hungarian, Icelandic, Indonesian, Italian, Japanese, Javanese, Kannada, Kazakh, Khmer, Korean, Lao, Latin, Latvian, Lingala, Lithuanian, Luxembourgish, Macedonian, Malagasy, Malay, Malayalam, Maltese, Maori, Marathi, Moldavian, Mongolian, Myanmar, Nepali, Norwegian, Nynorsk, Occitan, Pashto, Persian, Polish, Portuguese, Punjabi, Pushto, Romanian, Russian, Sanskrit, Serbian, Shona, Sindhi, Sinhala, Slovak, Slovenian, Somali, Spanish, Sundanese, Swahili, Swedish, Tagalog, Tajik, Tamil, Tatar, Telugu, Thai, Tibetan, Turkish, Turkmen, Ukrainian, Urdu, Uzbek, Vietnamese, Welsh, Yiddish, Yoruba
+
+## Usage examples
+
+### Auto-detect language
+
+```python
+import whisper
+
+model = whisper.load_model("turbo")
+
+# Auto-detect language
+result = model.transcribe("audio.mp3")
+
+print(f"Detected language: {result['language']}")
+print(f"Text: {result['text']}")
+```
+
+### Specify language (faster)
+
+```python
+# Specify language for faster transcription
+result = model.transcribe("audio.mp3", language="es")  # Spanish
+result = model.transcribe("audio.mp3", language="fr")  # French
+result = model.transcribe("audio.mp3", language="ja")  # Japanese
+```
+
+### Translation to English
+
+```python
+# Translate any language to English
+result = model.transcribe(
+    "spanish_audio.mp3",
+    task="translate"  # Translates to English
+)
+
+print(f"Original language: {result['language']}")
+print(f"English translation: {result['text']}")
+```
+
+## Language-specific tips
+
+### Chinese
+
+```python
+# Chinese works well with larger models
+model = whisper.load_model("large")
+
+result = model.transcribe(
+    "chinese_audio.mp3",
+    language="zh",
+    initial_prompt="这是一段关于技术的讨论"  # Context helps
+)
+```
+
+### Japanese
+
+```python
+# Japanese benefits from initial prompt
+result = model.transcribe(
+    "japanese_audio.mp3",
+    language="ja",
+    initial_prompt="これは技術的な会議の録音です"
+)
+```
+
+### Arabic
+
+```python
+# Arabic: Use large model for best results
+model = whisper.load_model("large")
+
+result = model.transcribe(
+    "arabic_audio.mp3",
+    language="ar"
+)
+```
+
+## Model size recommendations
+
+| Language Tier | Recommended Model | WER |
+|---------------|-------------------|-----|
+| Top-tier (en, es, fr, de) | base/turbo | < 10% |
+| Good (ar, tr, vi) | medium/large | 10-20% |
+| Lower-resource | large | 20-30% |
+
+## Performance by language
+
+### English
+
+- **tiny**: WER ~15%
+- **base**: WER ~8%
+- **small**: WER ~5%
+- **medium**: WER ~4%
+- **large**: WER ~3%
+- **turbo**: WER ~3.5%
+
+### Spanish
+
+- **tiny**: WER ~20%
+- **base**: WER ~12%
+- **medium**: WER ~6%
+- **large**: WER ~4%
+
+### Chinese
+
+- **small**: WER ~15%
+- **medium**: WER ~8%
+- **large**: WER ~5%
+
+## Best practices
+
+1. **Use English-only models** - Better for small models (tiny/base)
+2. **Specify language** - Faster than auto-detect
+3. **Add initial prompt** - Improves accuracy for technical terms
+4. **Use larger models** - For low-resource languages
+5. **Test on sample** - Quality varies by accent/dialect
+6. **Consider audio quality** - Clear audio = better results
+7. **Check language codes** - Use ISO 639-1 codes (2 letters)
+
+## Language detection
+
+```python
+# Detect language only (no transcription)
+import whisper
+
+model = whisper.load_model("base")
+
+# Load audio
+audio = whisper.load_audio("audio.mp3")
+audio = whisper.pad_or_trim(audio)
+
+# Make log-Mel spectrogram
+mel = whisper.log_mel_spectrogram(audio).to(model.device)
+
+# Detect language
+_, probs = model.detect_language(mel)
+detected_language = max(probs, key=probs.get)
+
+print(f"Detected language: {detected_language}")
+print(f"Confidence: {probs[detected_language]:.2%}")
+```
+
+## Resources
+
+- **Paper**: https://arxiv.org/abs/2212.04356
+- **GitHub**: https://github.com/openai/whisper
+- **Model Card**: https://github.com/openai/whisper/blob/main/model-card.md

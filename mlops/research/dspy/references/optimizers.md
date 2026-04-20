@@ -1,1 +1,566 @@
-IyBEU1B5IE9wdGltaXplcnMgKFRlbGVwcm9tcHRlcnMpCgpDb21wbGV0ZSBndWlkZSB0byBEU1B5J3Mgb3B0aW1pemF0aW9uIGFsZ29yaXRobXMgZm9yIGltcHJvdmluZyBwcm9tcHRzIGFuZCBtb2RlbCB3ZWlnaHRzLgoKIyMgV2hhdCBhcmUgT3B0aW1pemVycz8KCkRTUHkgb3B0aW1pemVycyAoY2FsbGVkICJ0ZWxlcHJvbXB0ZXJzIikgYXV0b21hdGljYWxseSBpbXByb3ZlIHlvdXIgbW9kdWxlcyBieToKLSAqKlN5bnRoZXNpemluZyBmZXctc2hvdCBleGFtcGxlcyoqIGZyb20gdHJhaW5pbmcgZGF0YQotICoqUHJvcG9zaW5nIGJldHRlciBpbnN0cnVjdGlvbnMqKiB0aHJvdWdoIHNlYXJjaAotICoqRmluZS10dW5pbmcgbW9kZWwgd2VpZ2h0cyoqIChvcHRpb25hbCkKCioqS2V5IGlkZWEqKjogSW5zdGVhZCBvZiBtYW51YWxseSB0dW5pbmcgcHJvbXB0cywgZGVmaW5lIGEgbWV0cmljIGFuZCBsZXQgRFNQeSBvcHRpbWl6ZS4KCiMjIE9wdGltaXplciBTZWxlY3Rpb24gR3VpZGUKCnwgT3B0aW1pemVyIHwgQmVzdCBGb3IgfCBTcGVlZCB8IFF1YWxpdHkgfCBEYXRhIE5lZWRlZCB8CnwtLS0tLS0tLS0tLXwtLS0tLS0tLS0tfC0tLS0tLS18LS0tLS0tLS0tfC0tLS0tLS0tLS0tLS18CnwgQm9vdHN0cmFwRmV3U2hvdCB8IEdlbmVyYWwgcHVycG9zZSB8IEZhc3QgfCBHb29kIHwgMTAtNTAgZXhhbXBsZXMgfAp8IE1JUFJPIHwgSW5zdHJ1Y3Rpb24gdHVuaW5nIHwgTWVkaXVtIHwgRXhjZWxsZW50IHwgNTAtMjAwIGV4YW1wbGVzIHwKfCBCb290c3RyYXBGaW5ldHVuZSB8IEZpbmUtdHVuaW5nIHwgU2xvdyB8IEV4Y2VsbGVudCB8IDEwMCsgZXhhbXBsZXMgfAp8IENPUFJPIHwgUHJvbXB0IG9wdGltaXphdGlvbiB8IE1lZGl1bSB8IEdvb2QgfCAyMC0xMDAgZXhhbXBsZXMgfAp8IEtOTkZld1Nob3QgfCBRdWljayBiYXNlbGluZSB8IFZlcnkgZmFzdCB8IEZhaXIgfCAxMCsgZXhhbXBsZXMgfAoKIyMgQ29yZSBPcHRpbWl6ZXJzCgojIyMgQm9vdHN0cmFwRmV3U2hvdAoKKipNb3N0IHBvcHVsYXIgb3B0aW1pemVyKiogLSBHZW5lcmF0ZXMgZmV3LXNob3QgZGVtb25zdHJhdGlvbnMgZnJvbSB0cmFpbmluZyBkYXRhLgoKKipIb3cgaXQgd29ya3M6KioKMS4gVGFrZXMgeW91ciB0cmFpbmluZyBleGFtcGxlcwoyLiBVc2VzIHlvdXIgbW9kdWxlIHRvIGdlbmVyYXRlIHByZWRpY3Rpb25zCjMuIFNlbGVjdHMgaGlnaC1xdWFsaXR5IHByZWRpY3Rpb25zIChiYXNlZCBvbiBtZXRyaWMpCjQuIFVzZXMgdGhlc2UgYXMgZmV3LXNob3QgZXhhbXBsZXMgaW4gZnV0dXJlIHByb21wdHMKCioqUGFyYW1ldGVyczoqKgotIGBtZXRyaWNgOiBGdW5jdGlvbiB0aGF0IHNjb3JlcyBwcmVkaWN0aW9ucyAocmVxdWlyZWQpCi0gYG1heF9ib290c3RyYXBwZWRfZGVtb3NgOiBNYXggZGVtb25zdHJhdGlvbnMgdG8gZ2VuZXJhdGUgKGRlZmF1bHQ6IDQpCi0gYG1heF9sYWJlbGVkX2RlbW9zYDogTWF4IGxhYmVsZWQgZXhhbXBsZXMgdG8gdXNlIChkZWZhdWx0OiAxNikKLSBgbWF4X3JvdW5kc2A6IE9wdGltaXphdGlvbiBpdGVyYXRpb25zIChkZWZhdWx0OiAxKQotIGBtZXRyaWNfdGhyZXNob2xkYDogTWluaW11bSBzY29yZSB0byBhY2NlcHQgKG9wdGlvbmFsKQoKYGBgcHl0aG9uCmltcG9ydCBkc3B5CmZyb20gZHNweS50ZWxlcHJvbXB0IGltcG9ydCBCb290c3RyYXBGZXdTaG90CgojIERlZmluZSBtZXRyaWMKZGVmIHZhbGlkYXRlX2Fuc3dlcihleGFtcGxlLCBwcmVkLCB0cmFjZT1Ob25lKToKICAgICIiIlJldHVybiBUcnVlIGlmIHByZWRpY3Rpb24gbWF0Y2hlcyBnb2xkIGFuc3dlci4iIiIKICAgIHJldHVybiBleGFtcGxlLmFuc3dlci5sb3dlcigpID09IHByZWQuYW5zd2VyLmxvd2VyKCkKCiMgVHJhaW5pbmcgZGF0YQp0cmFpbnNldCA9IFsKICAgIGRzcHkuRXhhbXBsZShxdWVzdGlvbj0iV2hhdCBpcyAyKzI/IiwgYW5zd2VyPSI0Iikud2l0aF9pbnB1dHMoInF1ZXN0aW9uIiksCiAgICBkc3B5LkV4YW1wbGUocXVlc3Rpb249IldoYXQgaXMgMys1PyIsIGFuc3dlcj0iOCIpLndpdGhfaW5wdXRzKCJxdWVzdGlvbiIpLAogICAgZHNweS5FeGFtcGxlKHF1ZXN0aW9uPSJXaGF0IGlzIDEwLTM/IiwgYW5zd2VyPSI3Iikud2l0aF9pbnB1dHMoInF1ZXN0aW9uIiksCl0KCiMgQ3JlYXRlIG1vZHVsZQpxYSA9IGRzcHkuQ2hhaW5PZlRob3VnaHQoInF1ZXN0aW9uIC0+IGFuc3dlciIpCgojIE9wdGltaXplCm9wdGltaXplciA9IEJvb3RzdHJhcEZld1Nob3QoCiAgICBtZXRyaWM9dmFsaWRhdGVfYW5zd2VyLAogICAgbWF4X2Jvb3RzdHJhcHBlZF9kZW1vcz0zLAogICAgbWF4X3JvdW5kcz0yCikKCm9wdGltaXplZF9xYSA9IG9wdGltaXplci5jb21waWxlKHFhLCB0cmFpbnNldD10cmFpbnNldCkKCiMgTm93IG9wdGltaXplZF9xYSBoYXMgbGVhcm5lZCBmZXctc2hvdCBleGFtcGxlcyEKcmVzdWx0ID0gb3B0aW1pemVkX3FhKHF1ZXN0aW9uPSJXaGF0IGlzIDUrNz8iKQpgYGAKCioqQmVzdCBwcmFjdGljZXM6KioKLSBTdGFydCB3aXRoIDEwLTUwIHRyYWluaW5nIGV4YW1wbGVzCi0gVXNlIGRpdmVyc2UgZXhhbXBsZXMgY292ZXJpbmcgZWRnZSBjYXNlcwotIFNldCBgbWF4X2Jvb3RzdHJhcHBlZF9kZW1vcz0zLTVgIGZvciBtb3N0IHRhc2tzCi0gSW5jcmVhc2UgYG1heF9yb3VuZHM9Mi0zYCBmb3IgYmV0dGVyIHF1YWxpdHkKCioqV2hlbiB0byB1c2U6KioKLSBGaXJzdCBvcHRpbWl6ZXIgdG8gdHJ5Ci0gWW91IGhhdmUgMTArIGxhYmVsZWQgZXhhbXBsZXMKLSBXYW50IHF1aWNrIGltcHJvdmVtZW50cwotIEdlbmVyYWwtcHVycG9zZSB0YXNrcwoKIyMjIE1JUFJPIChNb3N0IEltcG9ydGFudCBQcm9tcHQgT3B0aW1pemF0aW9uKQoKKipTdGF0ZS1vZi10aGUtYXJ0IG9wdGltaXplcioqIC0gSXRlcmF0aXZlbHkgc2VhcmNoZXMgZm9yIGJldHRlciBpbnN0cnVjdGlvbnMuCgoqKkhvdyBpdCB3b3JrczoqKgoxLiBHZW5lcmF0ZXMgY2FuZGlkYXRlIGluc3RydWN0aW9ucwoyLiBUZXN0cyBlYWNoIG9uIHZhbGlkYXRpb24gc2V0CjMuIFNlbGVjdHMgYmVzdC1wZXJmb3JtaW5nIGluc3RydWN0aW9ucwo0LiBJdGVyYXRlcyB0byByZWZpbmUgZnVydGhlcgoKKipQYXJhbWV0ZXJzOioqCi0gYG1ldHJpY2A6IEV2YWx1YXRpb24gbWV0cmljIChyZXF1aXJlZCkKLSBgbnVtX2NhbmRpZGF0ZXNgOiBJbnN0cnVjdGlvbnMgdG8gdHJ5IHBlciBpdGVyYXRpb24gKGRlZmF1bHQ6IDEwKQotIGBpbml0X3RlbXBlcmF0dXJlYDogU2FtcGxpbmcgdGVtcGVyYXR1cmUgKGRlZmF1bHQ6IDEuMCkKLSBgdmVyYm9zZWA6IFNob3cgcHJvZ3Jlc3MgKGRlZmF1bHQ6IEZhbHNlKQoKYGBgcHl0aG9uCmZyb20gZHNweS50ZWxlcHJvbXB0IGltcG9ydCBNSVBSTwoKIyBEZWZpbmUgbWV0cmljIHdpdGggbW9yZSBudWFuY2UKZGVmIGFuc3dlcl9xdWFsaXR5KGV4YW1wbGUsIHByZWQsIHRyYWNlPU5vbmUpOgogICAgIiIiU2NvcmUgYW5zd2VyIHF1YWxpdHkgMC0xLiIiIgogICAgaWYgZXhhbXBsZS5hbnN3ZXIubG93ZXIoKSBpbiBwcmVkLmFuc3dlci5sb3dlcigpOgogICAgICAgIHJldHVybiAxLjAKICAgICMgUGFydGlhbCBjcmVkaXQgZm9yIHNpbWlsYXIgYW5zd2VycwogICAgcmV0dXJuIDAuNSBpZiBsZW4oc2V0KGV4YW1wbGUuYW5zd2VyLnNwbGl0KCkpICYgc2V0KHByZWQuYW5zd2VyLnNwbGl0KCkpKSA+IDAgZWxzZSAwLjAKCiMgTGFyZ2VyIHRyYWluaW5nIHNldCAoTUlQUk8gYmVuZWZpdHMgZnJvbSBtb3JlIGRhdGEpCnRyYWluc2V0ID0gWy4uLl0gICMgNTAtMjAwIGV4YW1wbGVzCnZhbHNldCA9IFsuLi5dICAgICMgMjAtNTAgZXhhbXBsZXMKCiMgQ3JlYXRlIG1vZHVsZQpxYSA9IGRzcHkuQ2hhaW5PZlRob3VnaHQoInF1ZXN0aW9uIC0+IGFuc3dlciIpCgojIE9wdGltaXplIHdpdGggTUlQUk8Kb3B0aW1pemVyID0gTUlQUk8oCiAgICBtZXRyaWM9YW5zd2VyX3F1YWxpdHksCiAgICBudW1fY2FuZGlkYXRlcz0xMCwKICAgIGluaXRfdGVtcGVyYXR1cmU9MS4wLAogICAgdmVyYm9zZT1UcnVlCikKCm9wdGltaXplZF9xYSA9IG9wdGltaXplci5jb21waWxlKAogICAgc3R1ZGVudD1xYSwKICAgIHRyYWluc2V0PXRyYWluc2V0LAogICAgdmFsc2V0PXZhbHNldCwgICMgTUlQUk8gdXNlcyBzZXBhcmF0ZSB2YWxpZGF0aW9uIHNldAogICAgbnVtX3RyaWFscz0xMDAgICAjIE1vcmUgdHJpYWxzID0gYmV0dGVyIHF1YWxpdHkKKQpgYGAKCioqQmVzdCBwcmFjdGljZXM6KioKLSBVc2UgNTAtMjAwIHRyYWluaW5nIGV4YW1wbGVzCi0gU2VwYXJhdGUgdmFsaWRhdGlvbiBzZXQgKDIwLTUwIGV4YW1wbGVzKQotIFJ1biAxMDAtMjAwIHRyaWFscyBmb3IgYmVzdCByZXN1bHRzCi0gVGFrZXMgMTAtMzAgbWludXRlcyB0eXBpY2FsbHkKCioqV2hlbiB0byB1c2U6KioKLSBZb3UgaGF2ZSA1MCsgbGFiZWxlZCBleGFtcGxlcwotIFdhbnQgc3RhdGUtb2YtdGhlLWFydCBwZXJmb3JtYW5jZQotIFdpbGxpbmcgdG8gd2FpdCBmb3Igb3B0aW1pemF0aW9uCi0gQ29tcGxleCByZWFzb25pbmcgdGFza3MKCiMjIyBCb290c3RyYXBGaW5ldHVuZQoKKipGaW5lLXR1bmUgbW9kZWwgd2VpZ2h0cyoqIC0gQ3JlYXRlcyB0cmFpbmluZyBkYXRhc2V0IGZvciBmaW5lLXR1bmluZy4KCioqSG93IGl0IHdvcmtzOioqCjEuIEdlbmVyYXRlcyBzeW50aGV0aWMgdHJhaW5pbmcgZGF0YQoyLiBFeHBvcnRzIGRhdGEgaW4gZmluZS10dW5pbmcgZm9ybWF0CjMuIFlvdSBmaW5lLXR1bmUgbW9kZWwgc2VwYXJhdGVseQo0LiBMb2FkIGZpbmUtdHVuZWQgbW9kZWwgYmFjawoKKipQYXJhbWV0ZXJzOioqCi0gYG1ldHJpY2A6IEV2YWx1YXRpb24gbWV0cmljIChyZXF1aXJlZCkKLSBgbWF4X2Jvb3RzdHJhcHBlZF9kZW1vc2A6IERlbW9uc3RyYXRpb25zIHRvIGdlbmVyYXRlIChkZWZhdWx0OiA0KQotIGBtYXhfcm91bmRzYDogRGF0YSBnZW5lcmF0aW9uIHJvdW5kcyAoZGVmYXVsdDogMSkKCmBgYHB5dGhvbgpmcm9tIGRzcHkudGVsZXByb21wdCBpbXBvcnQgQm9vdHN0cmFwRmluZXR1bmUKCiMgVHJhaW5pbmcgZGF0YQp0cmFpbnNldCA9IFsuLi5dICAjIDEwMCsgZXhhbXBsZXMgcmVjb21tZW5kZWQKCiMgRGVmaW5lIG1ldHJpYwpkZWYgdmFsaWRhdGUoZXhhbXBsZSwgcHJlZCwgdHJhY2U9Tm9uZSk6CiAgICByZXR1cm4gZXhhbXBsZS5hbnN3ZXIgPT0gcHJlZC5hbnN3ZXIKCiMgQ3JlYXRlIG1vZHVsZQpxYSA9IGRzcHkuQ2hhaW5PZlRob3VnaHQoInF1ZXN0aW9uIC0+IGFuc3dlciIpCgojIEdlbmVyYXRlIGZpbmUtdHVuaW5nIGRhdGEKb3B0aW1pemVyID0gQm9vdHN0cmFwRmluZXR1bmUobWV0cmljPXZhbGlkYXRlKQpvcHRpbWl6ZWRfcWEgPSBvcHRpbWl6ZXIuY29tcGlsZShxYSwgdHJhaW5zZXQ9dHJhaW5zZXQpCgojIEV4cG9ydHMgdHJhaW5pbmcgZGF0YSB0byBmaWxlCiMgWW91IHRoZW4gZmluZS10dW5lIHVzaW5nIHlvdXIgTE0gcHJvdmlkZXIncyBBUEkKCiMgQWZ0ZXIgZmluZS10dW5pbmcsIGxvYWQgeW91ciBtb2RlbDoKZmluZXR1bmVkX2xtID0gZHNweS5PcGVuQUkobW9kZWw9ImZ0OmdwdC0zLjUtdHVyYm86eW91ci1tb2RlbC1pZCIpCmRzcHkuc2V0dGluZ3MuY29uZmlndXJlKGxtPWZpbmV0dW5lZF9sbSkKYGBgCgoqKkJlc3QgcHJhY3RpY2VzOioqCi0gVXNlIDEwMCsgdHJhaW5pbmcgZXhhbXBsZXMKLSBWYWxpZGF0ZSBvbiBoZWxkLW91dCB0ZXN0IHNldAotIE1vbml0b3IgZm9yIG92ZXJmaXR0aW5nCi0gQ29tcGFyZSB3aXRoIHByb21wdC1iYXNlZCBtZXRob2RzIGZpcnN0CgoqKldoZW4gdG8gdXNlOioqCi0gWW91IGhhdmUgMTAwKyBleGFtcGxlcwotIExhdGVuY3kgaXMgY3JpdGljYWwgKGZpbmUtdHVuZWQgbW9kZWxzIGZhc3RlcikKLSBUYXNrIGlzIG5hcnJvdyBhbmQgd2VsbC1kZWZpbmVkCi0gUHJvbXB0IG9wdGltaXphdGlvbiBpc24ndCBlbm91Z2gKCiMjIyBDT1BSTyAoQ29vcmRpbmF0ZSBQcm9tcHQgT3B0aW1pemF0aW9uKQoKKipPcHRpbWl6ZSBwcm9tcHRzIHZpYSBncmFkaWVudC1mcmVlIHNlYXJjaC4qKgoKKipIb3cgaXQgd29ya3M6KioKMS4gR2VuZXJhdGVzIHByb21wdCB2YXJpYW50cwoyLiBFdmFsdWF0ZXMgZWFjaCB2YXJpYW50CjMuIFNlbGVjdHMgYmVzdCBwcm9tcHRzCjQuIEl0ZXJhdGVzIHRvIHJlZmluZQoKYGBgcHl0aG9uCmZyb20gZHNweS50ZWxlcHJvbXB0IGltcG9ydCBDT1BSTwoKIyBUcmFpbmluZyBkYXRhCnRyYWluc2V0ID0gWy4uLl0KCiMgRGVmaW5lIG1ldHJpYwpkZWYgbWV0cmljKGV4YW1wbGUsIHByZWQsIHRyYWNlPU5vbmUpOgogICAgcmV0dXJuIGV4YW1wbGUuYW5zd2VyID09IHByZWQuYW5zd2VyCgojIENyZWF0ZSBtb2R1bGUKcWEgPSBkc3B5LkNoYWluT2ZUaG91Z2h0KCJxdWVzdGlvbiAtPiBhbnN3ZXIiKQoKIyBPcHRpbWl6ZSB3aXRoIENPUFJPCm9wdGltaXplciA9IENPUFJPKAogICAgbWV0cmljPW1ldHJpYywKICAgIGJyZWFkdGg9MTAsICAjIENhbmRpZGF0ZXMgcGVyIGl0ZXJhdGlvbgogICAgZGVwdGg9MyAgICAgICMgT3B0aW1pemF0aW9uIHJvdW5kcwopCgpvcHRpbWl6ZWRfcWEgPSBvcHRpbWl6ZXIuY29tcGlsZShxYSwgdHJhaW5zZXQ9dHJhaW5zZXQpCmBgYAoKKipXaGVuIHRvIHVzZToqKgotIFdhbnQgcHJvbXB0IG9wdGltaXphdGlvbgotIEhhdmUgMjAtMTAwIGV4YW1wbGVzCi0gTUlQUk8gdG9vIHNsb3cKCiMjIyBLTk5GZXdTaG90CgoqKlNpbXBsZSBrLW5lYXJlc3QgbmVpZ2hib3JzKiogLSBTZWxlY3RzIHNpbWlsYXIgZXhhbXBsZXMgZm9yIGVhY2ggcXVlcnkuCgoqKkhvdyBpdCB3b3JrczoqKgoxLiBFbWJlZHMgYWxsIHRyYWluaW5nIGV4YW1wbGVzCjIuIEZvciBlYWNoIHF1ZXJ5LCBmaW5kcyBrIG1vc3Qgc2ltaWxhciBleGFtcGxlcwozLiBVc2VzIHRoZXNlIGFzIGZldy1zaG90IGRlbW9uc3RyYXRpb25zCgpgYGBweXRob24KZnJvbSBkc3B5LnRlbGVwcm9tcHQgaW1wb3J0IEtOTkZld1Nob3QKCnRyYWluc2V0ID0gWy4uLl0KCiMgTm8gbWV0cmljIG5lZWRlZCAtIGp1c3Qgc2VsZWN0cyBzaW1pbGFyIGV4YW1wbGVzCm9wdGltaXplciA9IEtOTkZld1Nob3Qoaz0zKQpvcHRpbWl6ZWRfcWEgPSBvcHRpbWl6ZXIuY29tcGlsZShxYSwgdHJhaW5zZXQ9dHJhaW5zZXQpCgojIEZvciBlYWNoIHF1ZXJ5LCB1c2VzIDMgbW9zdCBzaW1pbGFyIGV4YW1wbGVzIGZyb20gdHJhaW5zZXQKYGBgCgoqKldoZW4gdG8gdXNlOioqCi0gUXVpY2sgYmFzZWxpbmUKLSBIYXZlIGRpdmVyc2UgdHJhaW5pbmcgZXhhbXBsZXMKLSBTaW1pbGFyaXR5IGlzIGdvb2QgcHJveHkgZm9yIGhlbHBmdWxuZXNzCgojIyBXcml0aW5nIE1ldHJpY3MKCk1ldHJpY3MgYXJlIGZ1bmN0aW9ucyB0aGF0IHNjb3JlIHByZWRpY3Rpb25zLiBUaGV5J3JlIGNyaXRpY2FsIGZvciBvcHRpbWl6YXRpb24uCgojIyMgQmluYXJ5IE1ldHJpY3MKCmBgYHB5dGhvbgpkZWYgZXhhY3RfbWF0Y2goZXhhbXBsZSwgcHJlZCwgdHJhY2U9Tm9uZSk6CiAgICAiIiJSZXR1cm4gVHJ1ZSBpZiBwcmVkaWN0aW9uIGV4YWN0bHkgbWF0Y2hlcyBnb2xkLiIiIgogICAgcmV0dXJuIGV4YW1wbGUuYW5zd2VyID09IHByZWQuYW5zd2VyCgpkZWYgY29udGFpbnNfYW5zd2VyKGV4YW1wbGUsIHByZWQsIHRyYWNlPU5vbmUpOgogICAgIiIiUmV0dXJuIFRydWUgaWYgcHJlZGljdGlvbiBjb250YWlucyBnb2xkIGFuc3dlci4iIiIKICAgIHJldHVybiBleGFtcGxlLmFuc3dlci5sb3dlcigpIGluIHByZWQuYW5zd2VyLmxvd2VyKCkKYGBgCgojIyMgQ29udGludW91cyBNZXRyaWNzCgpgYGBweXRob24KZGVmIGYxX3Njb3JlKGV4YW1wbGUsIHByZWQsIHRyYWNlPU5vbmUpOgogICAgIiIiRjEgc2NvcmUgYmV0d2VlbiBwcmVkaWN0aW9uIGFuZCBnb2xkLiIiIgogICAgcHJlZF90b2tlbnMgPSBzZXQocHJlZC5hbnN3ZXIubG93ZXIoKS5zcGxpdCgpKQogICAgZ29sZF90b2tlbnMgPSBzZXQoZXhhbXBsZS5hbnN3ZXIubG93ZXIoKS5zcGxpdCgpKQoKICAgIGlmIG5vdCBwcmVkX3Rva2VuczoKICAgICAgICByZXR1cm4gMC4wCgogICAgcHJlY2lzaW9uID0gbGVuKHByZWRfdG9rZW5zICYgZ29sZF90b2tlbnMpIC8gbGVuKHByZWRfdG9rZW5zKQogICAgcmVjYWxsID0gbGVuKHByZWRfdG9rZW5zICYgZ29sZF90b2tlbnMpIC8gbGVuKGdvbGRfdG9rZW5zKQoKICAgIGlmIHByZWNpc2lvbiArIHJlY2FsbCA9PSAwOgogICAgICAgIHJldHVybiAwLjAKCiAgICByZXR1cm4gMiAqIChwcmVjaXNpb24gKiByZWNhbGwpIC8gKHByZWNpc2lvbiArIHJlY2FsbCkKCmRlZiBzZW1hbnRpY19zaW1pbGFyaXR5KGV4YW1wbGUsIHByZWQsIHRyYWNlPU5vbmUpOgogICAgIiIiRW1iZWRkaW5nIHNpbWlsYXJpdHkgYmV0d2VlbiBwcmVkaWN0aW9uIGFuZCBnb2xkLiIiIgogICAgZnJvbSBzZW50ZW5jZV90cmFuc2Zvcm1lcnMgaW1wb3J0IFNlbnRlbmNlVHJhbnNmb3JtZXIKICAgIG1vZGVsID0gU2VudGVuY2VUcmFuc2Zvcm1lcignYWxsLU1pbmlMTS1MNi12MicpCgogICAgZW1iMSA9IG1vZGVsLmVuY29kZShleGFtcGxlLmFuc3dlcikKICAgIGVtYjIgPSBtb2RlbC5lbmNvZGUocHJlZC5hbnN3ZXIpCgogICAgc2ltaWxhcml0eSA9IGNvc2luZV9zaW1pbGFyaXR5KGVtYjEsIGVtYjIpCiAgICByZXR1cm4gc2ltaWxhcml0eQpgYGAKCiMjIyBNdWx0aS1GYWN0b3IgTWV0cmljcwoKYGBgcHl0aG9uCmRlZiBjb21wcmVoZW5zaXZlX21ldHJpYyhleGFtcGxlLCBwcmVkLCB0cmFjZT1Ob25lKToKICAgICIiIkNvbWJpbmUgbXVsdGlwbGUgZmFjdG9ycy4iIiIKICAgIHNjb3JlID0gMC4wCgogICAgIyBDb3JyZWN0bmVzcyAoNTAlKQogICAgaWYgZXhhbXBsZS5hbnN3ZXIubG93ZXIoKSBpbiBwcmVkLmFuc3dlci5sb3dlcigpOgogICAgICAgIHNjb3JlICs9IDAuNQoKICAgICMgQ29uY2lzZW5lc3MgKDI1JSkKICAgIGlmIGxlbihwcmVkLmFuc3dlci5zcGxpdCgpKSA8PSAyMDoKICAgICAgICBzY29yZSArPSAwLjI1CgogICAgIyBDaXRhdGlvbiAoMjUlKQogICAgaWYgInNvdXJjZToiIGluIHByZWQuYW5zd2VyLmxvd2VyKCk6CiAgICAgICAgc2NvcmUgKz0gMC4yNQoKICAgIHJldHVybiBzY29yZQpgYGAKCiMjIyBVc2luZyBUcmFjZSBmb3IgRGVidWdnaW5nCgpgYGBweXRob24KZGVmIG1ldHJpY193aXRoX3RyYWNlKGV4YW1wbGUsIHByZWQsIHRyYWNlPU5vbmUpOgogICAgIiIiTWV0cmljIHRoYXQgdXNlcyB0cmFjZSBmb3IgZGVidWdnaW5nLiIiIgogICAgaXNfY29ycmVjdCA9IGV4YW1wbGUuYW5zd2VyID09IHByZWQuYW5zd2VyCgogICAgaWYgdHJhY2UgaXMgbm90IE5vbmUgYW5kIG5vdCBpc19jb3JyZWN0OgogICAgICAgICMgTG9nIGZhaWx1cmVzIGZvciBhbmFseXNpcwogICAgICAgIHByaW50KGYiRmFpbGVkIG9uOiB7ZXhhbXBsZS5xdWVzdGlvbn0iKQogICAgICAgIHByaW50KGYiRXhwZWN0ZWQ6IHtleGFtcGxlLmFuc3dlcn0iKQogICAgICAgIHByaW50KGYiR290OiB7cHJlZC5hbnN3ZXJ9IikKCiAgICByZXR1cm4gaXNfY29ycmVjdApgYGAKCiMjIEV2YWx1YXRpb24gQmVzdCBQcmFjdGljZXMKCiMjIyBUcmFpbi9WYWwvVGVzdCBTcGxpdAoKYGBgcHl0aG9uCiMgU3BsaXQgZGF0YQp0cmFpbnNldCA9IGRhdGFbOjEwMF0gICAjIDcwJQp2YWxzZXQgPSBkYXRhWzEwMDoxMjBdICAjIDE1JQp0ZXN0c2V0ID0gZGF0YVsxMjA6XSAgICAjIDE1JQoKIyBPcHRpbWl6ZSBvbiB0cmFpbgpvcHRpbWl6ZWQgPSBvcHRpbWl6ZXIuY29tcGlsZShtb2R1bGUsIHRyYWluc2V0PXRyYWluc2V0KQoKIyBWYWxpZGF0ZSBkdXJpbmcgb3B0aW1pemF0aW9uIChmb3IgTUlQUk8pCm9wdGltaXplZCA9IG9wdGltaXplci5jb21waWxlKG1vZHVsZSwgdHJhaW5zZXQ9dHJhaW5zZXQsIHZhbHNldD12YWxzZXQpCgojIEV2YWx1YXRlIG9uIHRlc3QKZnJvbSBkc3B5LmV2YWx1YXRlIGltcG9ydCBFdmFsdWF0ZQpldmFsdWF0b3IgPSBFdmFsdWF0ZShkZXZzZXQ9dGVzdHNldCwgbWV0cmljPW1ldHJpYykKc2NvcmUgPSBldmFsdWF0b3Iob3B0aW1pemVkKQpgYGAKCiMjIyBDcm9zcy1WYWxpZGF0aW9uCgpgYGBweXRob24KZnJvbSBza2xlYXJuLm1vZGVsX3NlbGVjdGlvbiBpbXBvcnQgS0ZvbGQKCmtmb2xkID0gS0ZvbGQobl9zcGxpdHM9NSkKc2NvcmVzID0gW10KCmZvciB0cmFpbl9pZHgsIHZhbF9pZHggaW4ga2ZvbGQuc3BsaXQoZGF0YSk6CiAgICB0cmFpbnNldCA9IFtkYXRhW2ldIGZvciBpIGluIHRyYWluX2lkeF0KICAgIHZhbHNldCA9IFtkYXRhW2ldIGZvciBpIGluIHZhbF9pZHhdCgogICAgb3B0aW1pemVkID0gb3B0aW1pemVyLmNvbXBpbGUobW9kdWxlLCB0cmFpbnNldD10cmFpbnNldCkKICAgIHNjb3JlID0gZXZhbHVhdG9yKG9wdGltaXplZCwgZGV2c2V0PXZhbHNldCkKICAgIHNjb3Jlcy5hcHBlbmQoc2NvcmUpCgpwcmludChmIkF2ZXJhZ2Ugc2NvcmU6IHtzdW0oc2NvcmVzKSAvIGxlbihzY29yZXMpOi4yZn0iKQpgYGAKCiMjIyBDb21wYXJpbmcgT3B0aW1pemVycwoKYGBgcHl0aG9uCnJlc3VsdHMgPSB7fQoKZm9yIG9wdF9uYW1lLCBvcHRpbWl6ZXIgaW4gWwogICAgKCJiYXNlbGluZSIsIE5vbmUpLAogICAgKCJmZXdzaG90IiwgQm9vdHN0cmFwRmV3U2hvdChtZXRyaWM9bWV0cmljKSksCiAgICAoIm1pcHJvIiwgTUlQUk8obWV0cmljPW1ldHJpYykpLApdOgogICAgaWYgb3B0aW1pemVyIGlzIE5vbmU6CiAgICAgICAgbW9kdWxlX29wdCA9IG1vZHVsZQogICAgZWxzZToKICAgICAgICBtb2R1bGVfb3B0ID0gb3B0aW1pemVyLmNvbXBpbGUobW9kdWxlLCB0cmFpbnNldD10cmFpbnNldCkKCiAgICBzY29yZSA9IGV2YWx1YXRvcihtb2R1bGVfb3B0LCBkZXZzZXQ9dGVzdHNldCkKICAgIHJlc3VsdHNbb3B0X25hbWVdID0gc2NvcmUKCnByaW50KHJlc3VsdHMpCiMgeydiYXNlbGluZSc6IDAuNjUsICdmZXdzaG90JzogMC43OCwgJ21pcHJvJzogMC44NX0KYGBgCgojIyBBZHZhbmNlZCBQYXR0ZXJucwoKIyMjIEN1c3RvbSBPcHRpbWl6ZXIKCmBgYHB5dGhvbgpmcm9tIGRzcHkudGVsZXByb21wdCBpbXBvcnQgVGVsZXByb21wdGVyCgpjbGFzcyBDdXN0b21PcHRpbWl6ZXIoVGVsZXByb21wdGVyKToKICAgIGRlZiBfX2luaXRfXyhzZWxmLCBtZXRyaWMpOgogICAgICAgIHNlbGYubWV0cmljID0gbWV0cmljCgogICAgZGVmIGNvbXBpbGUoc2VsZiwgc3R1ZGVudCwgdHJhaW5zZXQsICoqa3dhcmdzKToKICAgICAgICAjIFlvdXIgb3B0aW1pemF0aW9uIGxvZ2ljIGhlcmUKICAgICAgICAjIFJldHVybiBvcHRpbWl6ZWQgc3R1ZGVudCBtb2R1bGUKICAgICAgICByZXR1cm4gc3R1ZGVudApgYGAKCiMjIyBNdWx0aS1TdGFnZSBPcHRpbWl6YXRpb24KCmBgYHB5dGhvbgojIFN0YWdlIDE6IEJvb3RzdHJhcCBmZXctc2hvdApzdGFnZTEgPSBCb290c3RyYXBGZXdTaG90KG1ldHJpYz1tZXRyaWMsIG1heF9ib290c3RyYXBwZWRfZGVtb3M9MykKb3B0aW1pemVkMSA9IHN0YWdlMS5jb21waWxlKG1vZHVsZSwgdHJhaW5zZXQ9dHJhaW5zZXQpCgojIFN0YWdlIDI6IEluc3RydWN0aW9uIHR1bmluZwpzdGFnZTIgPSBNSVBSTyhtZXRyaWM9bWV0cmljLCBudW1fY2FuZGlkYXRlcz0xMCkKb3B0aW1pemVkMiA9IHN0YWdlMi5jb21waWxlKG9wdGltaXplZDEsIHRyYWluc2V0PXRyYWluc2V0LCB2YWxzZXQ9dmFsc2V0KQoKIyBGaW5hbCBvcHRpbWl6ZWQgbW9kdWxlCmZpbmFsX21vZHVsZSA9IG9wdGltaXplZDIKYGBgCgojIyMgRW5zZW1ibGUgT3B0aW1pemF0aW9uCgpgYGBweXRob24KY2xhc3MgRW5zZW1ibGVNb2R1bGUoZHNweS5Nb2R1bGUpOgogICAgZGVmIF9faW5pdF9fKHNlbGYsIG1vZHVsZXMpOgogICAgICAgIHN1cGVyKCkuX19pbml0X18oKQogICAgICAgIHNlbGYubW9kdWxlcyA9IG1vZHVsZXMKCiAgICBkZWYgZm9yd2FyZChzZWxmLCBxdWVzdGlvbik6CiAgICAgICAgcHJlZGljdGlvbnMgPSBbbShxdWVzdGlvbj1xdWVzdGlvbikuYW5zd2VyIGZvciBtIGluIHNlbGYubW9kdWxlc10KICAgICAgICAjIFZvdGUgb3IgYXZlcmFnZQogICAgICAgIHJldHVybiBkc3B5LlByZWRpY3Rpb24oYW5zd2VyPW1heChzZXQocHJlZGljdGlvbnMpLCBrZXk9cHJlZGljdGlvbnMuY291bnQpKQoKIyBPcHRpbWl6ZSBtdWx0aXBsZSBtb2R1bGVzCm9wdDEgPSBCb290c3RyYXBGZXdTaG90KG1ldHJpYz1tZXRyaWMpLmNvbXBpbGUobW9kdWxlLCB0cmFpbnNldD10cmFpbnNldCkKb3B0MiA9IE1JUFJPKG1ldHJpYz1tZXRyaWMpLmNvbXBpbGUobW9kdWxlLCB0cmFpbnNldD10cmFpbnNldCkKb3B0MyA9IENPUFJPKG1ldHJpYz1tZXRyaWMpLmNvbXBpbGUobW9kdWxlLCB0cmFpbnNldD10cmFpbnNldCkKCiMgRW5zZW1ibGUKZW5zZW1ibGUgPSBFbnNlbWJsZU1vZHVsZShbb3B0MSwgb3B0Miwgb3B0M10pCmBgYAoKIyMgT3B0aW1pemF0aW9uIFdvcmtmbG93CgojIyMgMS4gU3RhcnQgd2l0aCBCYXNlbGluZQoKYGBgcHl0aG9uCiMgTm8gb3B0aW1pemF0aW9uCmJhc2VsaW5lID0gZHNweS5DaGFpbk9mVGhvdWdodCgicXVlc3Rpb24gLT4gYW5zd2VyIikKYmFzZWxpbmVfc2NvcmUgPSBldmFsdWF0b3IoYmFzZWxpbmUsIGRldnNldD10ZXN0c2V0KQpwcmludChmIkJhc2VsaW5lOiB7YmFzZWxpbmVfc2NvcmV9IikKYGBgCgojIyMgMi4gVHJ5IEJvb3RzdHJhcEZld1Nob3QKCmBgYHB5dGhvbgojIFF1aWNrIG9wdGltaXphdGlvbgpmZXdzaG90ID0gQm9vdHN0cmFwRmV3U2hvdChtZXRyaWM9bWV0cmljLCBtYXhfYm9vdHN0cmFwcGVkX2RlbW9zPTMpCm9wdGltaXplZCA9IGZld3Nob3QuY29tcGlsZShiYXNlbGluZSwgdHJhaW5zZXQ9dHJhaW5zZXQpCmZld3Nob3Rfc2NvcmUgPSBldmFsdWF0b3Iob3B0aW1pemVkLCBkZXZzZXQ9dGVzdHNldCkKcHJpbnQoZiJGZXctc2hvdDoge2Zld3Nob3Rfc2NvcmV9ICgre2Zld3Nob3Rfc2NvcmUgLSBiYXNlbGluZV9zY29yZTouMmZ9KSIpCmBgYAoKIyMjIDMuIElmIE1vcmUgRGF0YSBBdmFpbGFibGUsIFRyeSBNSVBSTwoKYGBgcHl0aG9uCiMgU3RhdGUtb2YtdGhlLWFydCBvcHRpbWl6YXRpb24KbWlwcm8gPSBNSVBSTyhtZXRyaWM9bWV0cmljLCBudW1fY2FuZGlkYXRlcz0xMCkKb3B0aW1pemVkX21pcHJvID0gbWlwcm8uY29tcGlsZShiYXNlbGluZSwgdHJhaW5zZXQ9dHJhaW5zZXQsIHZhbHNldD12YWxzZXQpCm1pcHJvX3Njb3JlID0gZXZhbHVhdG9yKG9wdGltaXplZF9taXBybywgZGV2c2V0PXRlc3RzZXQpCnByaW50KGYiTUlQUk86IHttaXByb19zY29yZX0gKCt7bWlwcm9fc2NvcmUgLSBiYXNlbGluZV9zY29yZTouMmZ9KSIpCmBgYAoKIyMjIDQuIFNhdmUgQmVzdCBNb2RlbAoKYGBgcHl0aG9uCmlmIG1pcHJvX3Njb3JlID4gZmV3c2hvdF9zY29yZToKICAgIG9wdGltaXplZF9taXByby5zYXZlKCJtb2RlbHMvYmVzdF9tb2RlbC5qc29uIikKZWxzZToKICAgIG9wdGltaXplZC5zYXZlKCJtb2RlbHMvYmVzdF9tb2RlbC5qc29uIikKYGBgCgojIyBDb21tb24gUGl0ZmFsbHMKCiMjIyAxLiBPdmVyZml0dGluZyB0byBUcmFpbmluZyBEYXRhCgpgYGBweXRob24KIyDinYwgQmFkOiBUb28gbWFueSBkZW1vcwpvcHRpbWl6ZXIgPSBCb290c3RyYXBGZXdTaG90KG1heF9ib290c3RyYXBwZWRfZGVtb3M9MjApICAjIE92ZXJmaXRzIQoKIyDinIUgR29vZDogTW9kZXJhdGUgZGVtb3MKb3B0aW1pemVyID0gQm9vdHN0cmFwRmV3U2hvdChtYXhfYm9vdHN0cmFwcGVkX2RlbW9zPTMtNSkKYGBgCgojIyMgMi4gTWV0cmljIERvZXNuJ3QgTWF0Y2ggVGFzawoKYGBgcHl0aG9uCiMg4p2MIEJhZDogQmluYXJ5IG1ldHJpYyBmb3IgbnVhbmNlZCB0YXNrCmRlZiBiYWRfbWV0cmljKGV4YW1wbGUsIHByZWQsIHRyYWNlPU5vbmUpOgogICAgcmV0dXJuIGV4YW1wbGUuYW5zd2VyID09IHByZWQuYW5zd2VyICAjIFRvbyBzdHJpY3QhCgojIOKchSBHb29kOiBHcmFkZWQgbWV0cmljCmRlZiBnb29kX21ldHJpYyhleGFtcGxlLCBwcmVkLCB0cmFjZT1Ob25lKToKICAgIHJldHVybiBmMV9zY29yZShleGFtcGxlLmFuc3dlciwgcHJlZC5hbnN3ZXIpICAjIEFsbG93cyBwYXJ0aWFsIGNyZWRpdApgYGAKCiMjIyAzLiBJbnN1ZmZpY2llbnQgVHJhaW5pbmcgRGF0YQoKYGBgcHl0aG9uCiMg4p2MIEJhZDogVG9vIGxpdHRsZSBkYXRhCnRyYWluc2V0ID0gZGF0YVs6NV0gICMgTm90IGVub3VnaCEKCiMg4pyFIEdvb2Q6IFN1ZmZpY2llbnQgZGF0YQp0cmFpbnNldCA9IGRhdGFbOjUwXSAgIyBCZXR0ZXIKYGBgCgojIyMgNC4gTm8gVmFsaWRhdGlvbiBTZXQKCmBgYHB5dGhvbgojIOKdjCBCYWQ6IE9wdGltaXppbmcgb24gdGVzdCBzZXQKb3B0aW1pemVyLmNvbXBpbGUobW9kdWxlLCB0cmFpbnNldD10ZXN0c2V0KSAgIyBDaGVhdGluZyEKCiMg4pyFIEdvb2Q6IFByb3BlciBzcGxpdHMKb3B0aW1pemVyLmNvbXBpbGUobW9kdWxlLCB0cmFpbnNldD10cmFpbnNldCwgdmFsc2V0PXZhbHNldCkKZXZhbHVhdG9yKG9wdGltaXplZCwgZGV2c2V0PXRlc3RzZXQpCmBgYAoKIyMgUGVyZm9ybWFuY2UgVGlwcwoKMS4gKipTdGFydCBzaW1wbGUqKjogQm9vdHN0cmFwRmV3U2hvdCBmaXJzdAoyLiAqKlVzZSByZXByZXNlbnRhdGl2ZSBkYXRhKio6IENvdmVyIGVkZ2UgY2FzZXMKMy4gKipNb25pdG9yIG92ZXJmaXR0aW5nKio6IFZhbGlkYXRlIG9uIGhlbGQtb3V0IHNldAo0LiAqKkl0ZXJhdGUgbWV0cmljcyoqOiBSZWZpbmUgYmFzZWQgb24gZmFpbHVyZXMKNS4gKipTYXZlIGNoZWNrcG9pbnRzKio6IERvbid0IGxvc2UgcHJvZ3Jlc3MKNi4gKipDb21wYXJlIHRvIGJhc2VsaW5lKio6IE1lYXN1cmUgaW1wcm92ZW1lbnQKNy4gKipUZXN0IG11bHRpcGxlIG9wdGltaXplcnMqKjogRmluZCBiZXN0IGZpdAoKIyMgUmVzb3VyY2VzCgotICoqUGFwZXIqKjogIkRTUHk6IENvbXBpbGluZyBEZWNsYXJhdGl2ZSBMYW5ndWFnZSBNb2RlbCBDYWxscyBpbnRvIFNlbGYtSW1wcm92aW5nIFBpcGVsaW5lcyIKLSAqKkdpdEh1YioqOiBodHRwczovL2dpdGh1Yi5jb20vc3RhbmZvcmRubHAvZHNweQotICoqRGlzY29yZCoqOiBodHRwczovL2Rpc2NvcmQuZ2cvWENHeTJXRENRQgo=
+# DSPy Optimizers (Teleprompters)
+
+Complete guide to DSPy's optimization algorithms for improving prompts and model weights.
+
+## What are Optimizers?
+
+DSPy optimizers (called "teleprompters") automatically improve your modules by:
+- **Synthesizing few-shot examples** from training data
+- **Proposing better instructions** through search
+- **Fine-tuning model weights** (optional)
+
+**Key idea**: Instead of manually tuning prompts, define a metric and let DSPy optimize.
+
+## Optimizer Selection Guide
+
+| Optimizer | Best For | Speed | Quality | Data Needed |
+|-----------|----------|-------|---------|-------------|
+| BootstrapFewShot | General purpose | Fast | Good | 10-50 examples |
+| MIPRO | Instruction tuning | Medium | Excellent | 50-200 examples |
+| BootstrapFinetune | Fine-tuning | Slow | Excellent | 100+ examples |
+| COPRO | Prompt optimization | Medium | Good | 20-100 examples |
+| KNNFewShot | Quick baseline | Very fast | Fair | 10+ examples |
+
+## Core Optimizers
+
+### BootstrapFewShot
+
+**Most popular optimizer** - Generates few-shot demonstrations from training data.
+
+**How it works:**
+1. Takes your training examples
+2. Uses your module to generate predictions
+3. Selects high-quality predictions (based on metric)
+4. Uses these as few-shot examples in future prompts
+
+**Parameters:**
+- `metric`: Function that scores predictions (required)
+- `max_bootstrapped_demos`: Max demonstrations to generate (default: 4)
+- `max_labeled_demos`: Max labeled examples to use (default: 16)
+- `max_rounds`: Optimization iterations (default: 1)
+- `metric_threshold`: Minimum score to accept (optional)
+
+```python
+import dspy
+from dspy.teleprompt import BootstrapFewShot
+
+# Define metric
+def validate_answer(example, pred, trace=None):
+    """Return True if prediction matches gold answer."""
+    return example.answer.lower() == pred.answer.lower()
+
+# Training data
+trainset = [
+    dspy.Example(question="What is 2+2?", answer="4").with_inputs("question"),
+    dspy.Example(question="What is 3+5?", answer="8").with_inputs("question"),
+    dspy.Example(question="What is 10-3?", answer="7").with_inputs("question"),
+]
+
+# Create module
+qa = dspy.ChainOfThought("question -> answer")
+
+# Optimize
+optimizer = BootstrapFewShot(
+    metric=validate_answer,
+    max_bootstrapped_demos=3,
+    max_rounds=2
+)
+
+optimized_qa = optimizer.compile(qa, trainset=trainset)
+
+# Now optimized_qa has learned few-shot examples!
+result = optimized_qa(question="What is 5+7?")
+```
+
+**Best practices:**
+- Start with 10-50 training examples
+- Use diverse examples covering edge cases
+- Set `max_bootstrapped_demos=3-5` for most tasks
+- Increase `max_rounds=2-3` for better quality
+
+**When to use:**
+- First optimizer to try
+- You have 10+ labeled examples
+- Want quick improvements
+- General-purpose tasks
+
+### MIPRO (Most Important Prompt Optimization)
+
+**State-of-the-art optimizer** - Iteratively searches for better instructions.
+
+**How it works:**
+1. Generates candidate instructions
+2. Tests each on validation set
+3. Selects best-performing instructions
+4. Iterates to refine further
+
+**Parameters:**
+- `metric`: Evaluation metric (required)
+- `num_candidates`: Instructions to try per iteration (default: 10)
+- `init_temperature`: Sampling temperature (default: 1.0)
+- `verbose`: Show progress (default: False)
+
+```python
+from dspy.teleprompt import MIPRO
+
+# Define metric with more nuance
+def answer_quality(example, pred, trace=None):
+    """Score answer quality 0-1."""
+    if example.answer.lower() in pred.answer.lower():
+        return 1.0
+    # Partial credit for similar answers
+    return 0.5 if len(set(example.answer.split()) & set(pred.answer.split())) > 0 else 0.0
+
+# Larger training set (MIPRO benefits from more data)
+trainset = [...]  # 50-200 examples
+valset = [...]    # 20-50 examples
+
+# Create module
+qa = dspy.ChainOfThought("question -> answer")
+
+# Optimize with MIPRO
+optimizer = MIPRO(
+    metric=answer_quality,
+    num_candidates=10,
+    init_temperature=1.0,
+    verbose=True
+)
+
+optimized_qa = optimizer.compile(
+    student=qa,
+    trainset=trainset,
+    valset=valset,  # MIPRO uses separate validation set
+    num_trials=100   # More trials = better quality
+)
+```
+
+**Best practices:**
+- Use 50-200 training examples
+- Separate validation set (20-50 examples)
+- Run 100-200 trials for best results
+- Takes 10-30 minutes typically
+
+**When to use:**
+- You have 50+ labeled examples
+- Want state-of-the-art performance
+- Willing to wait for optimization
+- Complex reasoning tasks
+
+### BootstrapFinetune
+
+**Fine-tune model weights** - Creates training dataset for fine-tuning.
+
+**How it works:**
+1. Generates synthetic training data
+2. Exports data in fine-tuning format
+3. You fine-tune model separately
+4. Load fine-tuned model back
+
+**Parameters:**
+- `metric`: Evaluation metric (required)
+- `max_bootstrapped_demos`: Demonstrations to generate (default: 4)
+- `max_rounds`: Data generation rounds (default: 1)
+
+```python
+from dspy.teleprompt import BootstrapFinetune
+
+# Training data
+trainset = [...]  # 100+ examples recommended
+
+# Define metric
+def validate(example, pred, trace=None):
+    return example.answer == pred.answer
+
+# Create module
+qa = dspy.ChainOfThought("question -> answer")
+
+# Generate fine-tuning data
+optimizer = BootstrapFinetune(metric=validate)
+optimized_qa = optimizer.compile(qa, trainset=trainset)
+
+# Exports training data to file
+# You then fine-tune using your LM provider's API
+
+# After fine-tuning, load your model:
+finetuned_lm = dspy.OpenAI(model="ft:gpt-3.5-turbo:your-model-id")
+dspy.settings.configure(lm=finetuned_lm)
+```
+
+**Best practices:**
+- Use 100+ training examples
+- Validate on held-out test set
+- Monitor for overfitting
+- Compare with prompt-based methods first
+
+**When to use:**
+- You have 100+ examples
+- Latency is critical (fine-tuned models faster)
+- Task is narrow and well-defined
+- Prompt optimization isn't enough
+
+### COPRO (Coordinate Prompt Optimization)
+
+**Optimize prompts via gradient-free search.**
+
+**How it works:**
+1. Generates prompt variants
+2. Evaluates each variant
+3. Selects best prompts
+4. Iterates to refine
+
+```python
+from dspy.teleprompt import COPRO
+
+# Training data
+trainset = [...]
+
+# Define metric
+def metric(example, pred, trace=None):
+    return example.answer == pred.answer
+
+# Create module
+qa = dspy.ChainOfThought("question -> answer")
+
+# Optimize with COPRO
+optimizer = COPRO(
+    metric=metric,
+    breadth=10,  # Candidates per iteration
+    depth=3      # Optimization rounds
+)
+
+optimized_qa = optimizer.compile(qa, trainset=trainset)
+```
+
+**When to use:**
+- Want prompt optimization
+- Have 20-100 examples
+- MIPRO too slow
+
+### KNNFewShot
+
+**Simple k-nearest neighbors** - Selects similar examples for each query.
+
+**How it works:**
+1. Embeds all training examples
+2. For each query, finds k most similar examples
+3. Uses these as few-shot demonstrations
+
+```python
+from dspy.teleprompt import KNNFewShot
+
+trainset = [...]
+
+# No metric needed - just selects similar examples
+optimizer = KNNFewShot(k=3)
+optimized_qa = optimizer.compile(qa, trainset=trainset)
+
+# For each query, uses 3 most similar examples from trainset
+```
+
+**When to use:**
+- Quick baseline
+- Have diverse training examples
+- Similarity is good proxy for helpfulness
+
+## Writing Metrics
+
+Metrics are functions that score predictions. They're critical for optimization.
+
+### Binary Metrics
+
+```python
+def exact_match(example, pred, trace=None):
+    """Return True if prediction exactly matches gold."""
+    return example.answer == pred.answer
+
+def contains_answer(example, pred, trace=None):
+    """Return True if prediction contains gold answer."""
+    return example.answer.lower() in pred.answer.lower()
+```
+
+### Continuous Metrics
+
+```python
+def f1_score(example, pred, trace=None):
+    """F1 score between prediction and gold."""
+    pred_tokens = set(pred.answer.lower().split())
+    gold_tokens = set(example.answer.lower().split())
+
+    if not pred_tokens:
+        return 0.0
+
+    precision = len(pred_tokens & gold_tokens) / len(pred_tokens)
+    recall = len(pred_tokens & gold_tokens) / len(gold_tokens)
+
+    if precision + recall == 0:
+        return 0.0
+
+    return 2 * (precision * recall) / (precision + recall)
+
+def semantic_similarity(example, pred, trace=None):
+    """Embedding similarity between prediction and gold."""
+    from sentence_transformers import SentenceTransformer
+    model = SentenceTransformer('all-MiniLM-L6-v2')
+
+    emb1 = model.encode(example.answer)
+    emb2 = model.encode(pred.answer)
+
+    similarity = cosine_similarity(emb1, emb2)
+    return similarity
+```
+
+### Multi-Factor Metrics
+
+```python
+def comprehensive_metric(example, pred, trace=None):
+    """Combine multiple factors."""
+    score = 0.0
+
+    # Correctness (50%)
+    if example.answer.lower() in pred.answer.lower():
+        score += 0.5
+
+    # Conciseness (25%)
+    if len(pred.answer.split()) <= 20:
+        score += 0.25
+
+    # Citation (25%)
+    if "source:" in pred.answer.lower():
+        score += 0.25
+
+    return score
+```
+
+### Using Trace for Debugging
+
+```python
+def metric_with_trace(example, pred, trace=None):
+    """Metric that uses trace for debugging."""
+    is_correct = example.answer == pred.answer
+
+    if trace is not None and not is_correct:
+        # Log failures for analysis
+        print(f"Failed on: {example.question}")
+        print(f"Expected: {example.answer}")
+        print(f"Got: {pred.answer}")
+
+    return is_correct
+```
+
+## Evaluation Best Practices
+
+### Train/Val/Test Split
+
+```python
+# Split data
+trainset = data[:100]   # 70%
+valset = data[100:120]  # 15%
+testset = data[120:]    # 15%
+
+# Optimize on train
+optimized = optimizer.compile(module, trainset=trainset)
+
+# Validate during optimization (for MIPRO)
+optimized = optimizer.compile(module, trainset=trainset, valset=valset)
+
+# Evaluate on test
+from dspy.evaluate import Evaluate
+evaluator = Evaluate(devset=testset, metric=metric)
+score = evaluator(optimized)
+```
+
+### Cross-Validation
+
+```python
+from sklearn.model_selection import KFold
+
+kfold = KFold(n_splits=5)
+scores = []
+
+for train_idx, val_idx in kfold.split(data):
+    trainset = [data[i] for i in train_idx]
+    valset = [data[i] for i in val_idx]
+
+    optimized = optimizer.compile(module, trainset=trainset)
+    score = evaluator(optimized, devset=valset)
+    scores.append(score)
+
+print(f"Average score: {sum(scores) / len(scores):.2f}")
+```
+
+### Comparing Optimizers
+
+```python
+results = {}
+
+for opt_name, optimizer in [
+    ("baseline", None),
+    ("fewshot", BootstrapFewShot(metric=metric)),
+    ("mipro", MIPRO(metric=metric)),
+]:
+    if optimizer is None:
+        module_opt = module
+    else:
+        module_opt = optimizer.compile(module, trainset=trainset)
+
+    score = evaluator(module_opt, devset=testset)
+    results[opt_name] = score
+
+print(results)
+# {'baseline': 0.65, 'fewshot': 0.78, 'mipro': 0.85}
+```
+
+## Advanced Patterns
+
+### Custom Optimizer
+
+```python
+from dspy.teleprompt import Teleprompter
+
+class CustomOptimizer(Teleprompter):
+    def __init__(self, metric):
+        self.metric = metric
+
+    def compile(self, student, trainset, **kwargs):
+        # Your optimization logic here
+        # Return optimized student module
+        return student
+```
+
+### Multi-Stage Optimization
+
+```python
+# Stage 1: Bootstrap few-shot
+stage1 = BootstrapFewShot(metric=metric, max_bootstrapped_demos=3)
+optimized1 = stage1.compile(module, trainset=trainset)
+
+# Stage 2: Instruction tuning
+stage2 = MIPRO(metric=metric, num_candidates=10)
+optimized2 = stage2.compile(optimized1, trainset=trainset, valset=valset)
+
+# Final optimized module
+final_module = optimized2
+```
+
+### Ensemble Optimization
+
+```python
+class EnsembleModule(dspy.Module):
+    def __init__(self, modules):
+        super().__init__()
+        self.modules = modules
+
+    def forward(self, question):
+        predictions = [m(question=question).answer for m in self.modules]
+        # Vote or average
+        return dspy.Prediction(answer=max(set(predictions), key=predictions.count))
+
+# Optimize multiple modules
+opt1 = BootstrapFewShot(metric=metric).compile(module, trainset=trainset)
+opt2 = MIPRO(metric=metric).compile(module, trainset=trainset)
+opt3 = COPRO(metric=metric).compile(module, trainset=trainset)
+
+# Ensemble
+ensemble = EnsembleModule([opt1, opt2, opt3])
+```
+
+## Optimization Workflow
+
+### 1. Start with Baseline
+
+```python
+# No optimization
+baseline = dspy.ChainOfThought("question -> answer")
+baseline_score = evaluator(baseline, devset=testset)
+print(f"Baseline: {baseline_score}")
+```
+
+### 2. Try BootstrapFewShot
+
+```python
+# Quick optimization
+fewshot = BootstrapFewShot(metric=metric, max_bootstrapped_demos=3)
+optimized = fewshot.compile(baseline, trainset=trainset)
+fewshot_score = evaluator(optimized, devset=testset)
+print(f"Few-shot: {fewshot_score} (+{fewshot_score - baseline_score:.2f})")
+```
+
+### 3. If More Data Available, Try MIPRO
+
+```python
+# State-of-the-art optimization
+mipro = MIPRO(metric=metric, num_candidates=10)
+optimized_mipro = mipro.compile(baseline, trainset=trainset, valset=valset)
+mipro_score = evaluator(optimized_mipro, devset=testset)
+print(f"MIPRO: {mipro_score} (+{mipro_score - baseline_score:.2f})")
+```
+
+### 4. Save Best Model
+
+```python
+if mipro_score > fewshot_score:
+    optimized_mipro.save("models/best_model.json")
+else:
+    optimized.save("models/best_model.json")
+```
+
+## Common Pitfalls
+
+### 1. Overfitting to Training Data
+
+```python
+# ❌ Bad: Too many demos
+optimizer = BootstrapFewShot(max_bootstrapped_demos=20)  # Overfits!
+
+# ✅ Good: Moderate demos
+optimizer = BootstrapFewShot(max_bootstrapped_demos=3-5)
+```
+
+### 2. Metric Doesn't Match Task
+
+```python
+# ❌ Bad: Binary metric for nuanced task
+def bad_metric(example, pred, trace=None):
+    return example.answer == pred.answer  # Too strict!
+
+# ✅ Good: Graded metric
+def good_metric(example, pred, trace=None):
+    return f1_score(example.answer, pred.answer)  # Allows partial credit
+```
+
+### 3. Insufficient Training Data
+
+```python
+# ❌ Bad: Too little data
+trainset = data[:5]  # Not enough!
+
+# ✅ Good: Sufficient data
+trainset = data[:50]  # Better
+```
+
+### 4. No Validation Set
+
+```python
+# ❌ Bad: Optimizing on test set
+optimizer.compile(module, trainset=testset)  # Cheating!
+
+# ✅ Good: Proper splits
+optimizer.compile(module, trainset=trainset, valset=valset)
+evaluator(optimized, devset=testset)
+```
+
+## Performance Tips
+
+1. **Start simple**: BootstrapFewShot first
+2. **Use representative data**: Cover edge cases
+3. **Monitor overfitting**: Validate on held-out set
+4. **Iterate metrics**: Refine based on failures
+5. **Save checkpoints**: Don't lose progress
+6. **Compare to baseline**: Measure improvement
+7. **Test multiple optimizers**: Find best fit
+
+## Resources
+
+- **Paper**: "DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines"
+- **GitHub**: https://github.com/stanfordnlp/dspy
+- **Discord**: https://discord.gg/XCGy2WDCQB

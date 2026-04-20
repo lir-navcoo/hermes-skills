@@ -1,1 +1,255 @@
-IyBTZXJ2ZXIgRGVwbG95bWVudCBQYXR0ZXJucwoKIyMgQ29udGVudHMKLSBEb2NrZXIgZGVwbG95bWVudAotIEt1YmVybmV0ZXMgZGVwbG95bWVudAotIExvYWQgYmFsYW5jaW5nIHdpdGggTmdpbngKLSBNdWx0aS1ub2RlIGRpc3RyaWJ1dGVkIHNlcnZpbmcKLSBQcm9kdWN0aW9uIGNvbmZpZ3VyYXRpb24gZXhhbXBsZXMKLSBIZWFsdGggY2hlY2tzIGFuZCBtb25pdG9yaW5nCgojIyBEb2NrZXIgZGVwbG95bWVudAoKKipCYXNpYyBEb2NrZXJmaWxlKio6CmBgYGRvY2tlcmZpbGUKRlJPTSBudmlkaWEvY3VkYToxMi4xLjAtZGV2ZWwtdWJ1bnR1MjIuMDQKClJVTiBhcHQtZ2V0IHVwZGF0ZSAmJiBhcHQtZ2V0IGluc3RhbGwgLXkgcHl0aG9uMy1waXAKUlVOIHBpcCBpbnN0YWxsIHZsbG0KCkVYUE9TRSA4MDAwCgpDTUQgWyJ2bGxtIiwgInNlcnZlIiwgIm1ldGEtbGxhbWEvTGxhbWEtMy04Qi1JbnN0cnVjdCIsIFwKICAgICAiLS1ob3N0IiwgIjAuMC4wLjAiLCAiLS1wb3J0IiwgIjgwMDAiLCBcCiAgICAgIi0tZ3B1LW1lbW9yeS11dGlsaXphdGlvbiIsICIwLjkiXQpgYGAKCioqQnVpbGQgYW5kIHJ1bioqOgpgYGBiYXNoCmRvY2tlciBidWlsZCAtdCB2bGxtLXNlcnZlciAuCmRvY2tlciBydW4gLS1ncHVzIGFsbCAtcCA4MDAwOjgwMDAgdmxsbS1zZXJ2ZXIKYGBgCgoqKkRvY2tlciBDb21wb3NlKiogKHdpdGggbWV0cmljcyk6CmBgYHlhbWwKdmVyc2lvbjogJzMuOCcKc2VydmljZXM6CiAgdmxsbToKICAgIGltYWdlOiB2bGxtL3ZsbG0tb3BlbmFpOmxhdGVzdAogICAgY29tbWFuZDogPgogICAgICAtLW1vZGVsIG1ldGEtbGxhbWEvTGxhbWEtMy04Qi1JbnN0cnVjdAogICAgICAtLWdwdS1tZW1vcnktdXRpbGl6YXRpb24gMC45CiAgICAgIC0tZW5hYmxlLW1ldHJpY3MKICAgICAgLS1tZXRyaWNzLXBvcnQgOTA5MAogICAgcG9ydHM6CiAgICAgIC0gIjgwMDA6ODAwMCIKICAgICAgLSAiOTA5MDo5MDkwIgogICAgZGVwbG95OgogICAgICByZXNvdXJjZXM6CiAgICAgICAgcmVzZXJ2YXRpb25zOgogICAgICAgICAgZGV2aWNlczoKICAgICAgICAgICAgLSBkcml2ZXI6IG52aWRpYQogICAgICAgICAgICAgIGNvdW50OiBhbGwKICAgICAgICAgICAgICBjYXBhYmlsaXRpZXM6IFtncHVdCmBgYAoKIyMgS3ViZXJuZXRlcyBkZXBsb3ltZW50CgoqKkRlcGxveW1lbnQgbWFuaWZlc3QqKjoKYGBgeWFtbAphcGlWZXJzaW9uOiBhcHBzL3YxCmtpbmQ6IERlcGxveW1lbnQKbWV0YWRhdGE6CiAgbmFtZTogdmxsbS1zZXJ2ZXIKc3BlYzoKICByZXBsaWNhczogMgogIHNlbGVjdG9yOgogICAgbWF0Y2hMYWJlbHM6CiAgICAgIGFwcDogdmxsbQogIHRlbXBsYXRlOgogICAgbWV0YWRhdGE6CiAgICAgIGxhYmVsczoKICAgICAgICBhcHA6IHZsbG0KICAgIHNwZWM6CiAgICAgIGNvbnRhaW5lcnM6CiAgICAgIC0gbmFtZTogdmxsbQogICAgICAgIGltYWdlOiB2bGxtL3ZsbG0tb3BlbmFpOmxhdGVzdAogICAgICAgIGFyZ3M6CiAgICAgICAgICAtICItLW1vZGVsPW1ldGEtbGxhbWEvTGxhbWEtMy04Qi1JbnN0cnVjdCIKICAgICAgICAgIC0gIi0tZ3B1LW1lbW9yeS11dGlsaXphdGlvbj0wLjkiCiAgICAgICAgICAtICItLWVuYWJsZS1wcmVmaXgtY2FjaGluZyIKICAgICAgICByZXNvdXJjZXM6CiAgICAgICAgICBsaW1pdHM6CiAgICAgICAgICAgIG52aWRpYS5jb20vZ3B1OiAxCiAgICAgICAgcG9ydHM6CiAgICAgICAgLSBjb250YWluZXJQb3J0OiA4MDAwCiAgICAgICAgICBuYW1lOiBodHRwCiAgICAgICAgLSBjb250YWluZXJQb3J0OiA5MDkwCiAgICAgICAgICBuYW1lOiBtZXRyaWNzCiAgICAgICAgcmVhZGluZXNzUHJvYmU6CiAgICAgICAgICBodHRwR2V0OgogICAgICAgICAgICBwYXRoOiAvaGVhbHRoCiAgICAgICAgICAgIHBvcnQ6IDgwMDAKICAgICAgICAgIGluaXRpYWxEZWxheVNlY29uZHM6IDMwCiAgICAgICAgICBwZXJpb2RTZWNvbmRzOiAxMAogICAgICAgIGxpdmVuZXNzUHJvYmU6CiAgICAgICAgICBodHRwR2V0OgogICAgICAgICAgICBwYXRoOiAvaGVhbHRoCiAgICAgICAgICAgIHBvcnQ6IDgwMDAKICAgICAgICAgIGluaXRpYWxEZWxheVNlY29uZHM6IDYwCiAgICAgICAgICBwZXJpb2RTZWNvbmRzOiAzMAotLS0KYXBpVmVyc2lvbjogdjEKa2luZDogU2VydmljZQptZXRhZGF0YToKICBuYW1lOiB2bGxtLXNlcnZpY2UKc3BlYzoKICBzZWxlY3RvcjoKICAgIGFwcDogdmxsbQogIHBvcnRzOgogIC0gcG9ydDogODAwMAogICAgdGFyZ2V0UG9ydDogODAwMAogICAgbmFtZTogaHR0cAogIC0gcG9ydDogOTA5MAogICAgdGFyZ2V0UG9ydDogOTA5MAogICAgbmFtZTogbWV0cmljcwogIHR5cGU6IExvYWRCYWxhbmNlcgpgYGAKCiMjIExvYWQgYmFsYW5jaW5nIHdpdGggTmdpbngKCioqTmdpbnggY29uZmlndXJhdGlvbioqOgpgYGBuZ2lueAp1cHN0cmVhbSB2bGxtX2JhY2tlbmQgewogICAgbGVhc3RfY29ubjsgICMgUm91dGUgdG8gbGVhc3QtbG9hZGVkIHNlcnZlcgogICAgc2VydmVyIGxvY2FsaG9zdDo4MDAxOwogICAgc2VydmVyIGxvY2FsaG9zdDo4MDAyOwogICAgc2VydmVyIGxvY2FsaG9zdDo4MDAzOwp9CgpzZXJ2ZXIgewogICAgbGlzdGVuIDgwOwoKICAgIGxvY2F0aW9uIC8gewogICAgICAgIHByb3h5X3Bhc3MgaHR0cDovL3ZsbG1fYmFja2VuZDsKICAgICAgICBwcm94eV9zZXRfaGVhZGVyIEhvc3QgJGhvc3Q7CiAgICAgICAgcHJveHlfc2V0X2hlYWRlciBYLVJlYWwtSVAgJHJlbW90ZV9hZGRyOwoKICAgICAgICAjIFRpbWVvdXRzIGZvciBsb25nLXJ1bm5pbmcgaW5mZXJlbmNlCiAgICAgICAgcHJveHlfcmVhZF90aW1lb3V0IDMwMHM7CiAgICAgICAgcHJveHlfY29ubmVjdF90aW1lb3V0IDc1czsKICAgIH0KCiAgICAjIE1ldHJpY3MgZW5kcG9pbnQKICAgIGxvY2F0aW9uIC9tZXRyaWNzIHsKICAgICAgICBwcm94eV9wYXNzIGh0dHA6Ly9sb2NhbGhvc3Q6OTA5MC9tZXRyaWNzOwogICAgfQp9CmBgYAoKKipTdGFydCBtdWx0aXBsZSB2TExNIGluc3RhbmNlcyoqOgpgYGBiYXNoCiMgVGVybWluYWwgMQp2bGxtIHNlcnZlIE1PREVMIC0tcG9ydCA4MDAxIC0tdGVuc29yLXBhcmFsbGVsLXNpemUgMQoKIyBUZXJtaW5hbCAyCnZsbG0gc2VydmUgTU9ERUwgLS1wb3J0IDgwMDIgLS10ZW5zb3ItcGFyYWxsZWwtc2l6ZSAxCgojIFRlcm1pbmFsIDMKdmxsbSBzZXJ2ZSBNT0RFTCAtLXBvcnQgODAwMyAtLXRlbnNvci1wYXJhbGxlbC1zaXplIDEKCiMgU3RhcnQgTmdpbngKbmdpbnggLWMgL3BhdGgvdG8vbmdpbnguY29uZgpgYGAKCiMjIE11bHRpLW5vZGUgZGlzdHJpYnV0ZWQgc2VydmluZwoKRm9yIG1vZGVscyB0b28gbGFyZ2UgZm9yIHNpbmdsZSBub2RlOgoKKipOb2RlIDEqKiAobWFzdGVyKToKYGBgYmFzaApleHBvcnQgTUFTVEVSX0FERFI9MTkyLjE2OC4xLjEwCmV4cG9ydCBNQVNURVJfUE9SVD0yOTUwMApleHBvcnQgUkFOSz0wCmV4cG9ydCBXT1JMRF9TSVpFPTIKCnZsbG0gc2VydmUgbWV0YS1sbGFtYS9MbGFtYS0yLTcwYi1oZiBcCiAgLS10ZW5zb3ItcGFyYWxsZWwtc2l6ZSA4IFwKICAtLXBpcGVsaW5lLXBhcmFsbGVsLXNpemUgMgpgYGAKCioqTm9kZSAyKiogKHdvcmtlcik6CmBgYGJhc2gKZXhwb3J0IE1BU1RFUl9BRERSPTE5Mi4xNjguMS4xMApleHBvcnQgTUFTVEVSX1BPUlQ9Mjk1MDAKZXhwb3J0IFJBTks9MQpleHBvcnQgV09STERfU0laRT0yCgp2bGxtIHNlcnZlIG1ldGEtbGxhbWEvTGxhbWEtMi03MGItaGYgXAogIC0tdGVuc29yLXBhcmFsbGVsLXNpemUgOCBcCiAgLS1waXBlbGluZS1wYXJhbGxlbC1zaXplIDIKYGBgCgojIyBQcm9kdWN0aW9uIGNvbmZpZ3VyYXRpb24gZXhhbXBsZXMKCioqSGlnaCB0aHJvdWdocHV0KiogKGJhdGNoLWhlYXZ5IHdvcmtsb2FkKToKYGBgYmFzaAp2bGxtIHNlcnZlIE1PREVMIFwKICAtLW1heC1udW0tc2VxcyA1MTIgXAogIC0tZ3B1LW1lbW9yeS11dGlsaXphdGlvbiAwLjk1IFwKICAtLWVuYWJsZS1wcmVmaXgtY2FjaGluZyBcCiAgLS10cnVzdC1yZW1vdGUtY29kZQpgYGAKCioqTG93IGxhdGVuY3kqKiAoaW50ZXJhY3RpdmUgd29ya2xvYWQpOgpgYGBiYXNoCnZsbG0gc2VydmUgTU9ERUwgXAogIC0tbWF4LW51bS1zZXFzIDY0IFwKICAtLWdwdS1tZW1vcnktdXRpbGl6YXRpb24gMC44NSBcCiAgLS1lbmFibGUtY2h1bmtlZC1wcmVmaWxsCmBgYAoKKipNZW1vcnktY29uc3RyYWluZWQqKiAoNDBHQiBHUFUgZm9yIDcwQiBtb2RlbCk6CmBgYGJhc2gKdmxsbSBzZXJ2ZSBUaGVCbG9rZS9MbGFtYS0yLTcwQi1BV1EgXAogIC0tcXVhbnRpemF0aW9uIGF3cSBcCiAgLS10ZW5zb3ItcGFyYWxsZWwtc2l6ZSAxIFwKICAtLWdwdS1tZW1vcnktdXRpbGl6YXRpb24gMC45NSBcCiAgLS1tYXgtbW9kZWwtbGVuIDQwOTYKYGBgCgojIyBIZWFsdGggY2hlY2tzIGFuZCBtb25pdG9yaW5nCgoqKkhlYWx0aCBjaGVjayBlbmRwb2ludCoqOgpgYGBiYXNoCmN1cmwgaHR0cDovL2xvY2FsaG9zdDo4MDAwL2hlYWx0aAojIFJldHVybnM6IHsic3RhdHVzIjogIm9rIn0KYGBgCgoqKlJlYWRpbmVzcyBjaGVjayoqICh3YWl0IGZvciBtb2RlbCBsb2FkZWQpOgpgYGBiYXNoCiMhL2Jpbi9iYXNoCnVudGlsIGN1cmwgLWYgaHR0cDovL2xvY2FsaG9zdDo4MDAwL2hlYWx0aDsgZG8KICAgIGVjaG8gIldhaXRpbmcgZm9yIHZMTE0gdG8gYmUgcmVhZHkuLi4iCiAgICBzbGVlcCA1CmRvbmUKZWNobyAidkxMTSBpcyByZWFkeSEiCmBgYAoKKipQcm9tZXRoZXVzIHNjcmFwaW5nKio6CmBgYHlhbWwKIyBwcm9tZXRoZXVzLnltbApzY3JhcGVfY29uZmlnczoKICAtIGpvYl9uYW1lOiAndmxsbScKICAgIHN0YXRpY19jb25maWdzOgogICAgICAtIHRhcmdldHM6IFsnbG9jYWxob3N0OjkwOTAnXQogICAgbWV0cmljc19wYXRoOiAnL21ldHJpY3MnCiAgICBzY3JhcGVfaW50ZXJ2YWw6IDE1cwpgYGAKCioqR3JhZmFuYSBkYXNoYm9hcmQqKiAoa2V5IG1ldHJpY3MpOgotIFJlcXVlc3RzIHBlciBzZWNvbmQ6IGByYXRlKHZsbG1fcmVxdWVzdF9zdWNjZXNzX3RvdGFsWzVtXSlgCi0gVFRGVCBwNTA6IGBoaXN0b2dyYW1fcXVhbnRpbGUoMC41LCB2bGxtX3RpbWVfdG9fZmlyc3RfdG9rZW5fc2Vjb25kc19idWNrZXQpYAotIFRURlQgcDk5OiBgaGlzdG9ncmFtX3F1YW50aWxlKDAuOTksIHZsbG1fdGltZV90b19maXJzdF90b2tlbl9zZWNvbmRzX2J1Y2tldClgCi0gR1BVIGNhY2hlIHVzYWdlOiBgdmxsbV9ncHVfY2FjaGVfdXNhZ2VfcGVyY2AKLSBBY3RpdmUgcmVxdWVzdHM6IGB2bGxtX251bV9yZXF1ZXN0c19ydW5uaW5nYAo=
+# Server Deployment Patterns
+
+## Contents
+- Docker deployment
+- Kubernetes deployment
+- Load balancing with Nginx
+- Multi-node distributed serving
+- Production configuration examples
+- Health checks and monitoring
+
+## Docker deployment
+
+**Basic Dockerfile**:
+```dockerfile
+FROM nvidia/cuda:12.1.0-devel-ubuntu22.04
+
+RUN apt-get update && apt-get install -y python3-pip
+RUN pip install vllm
+
+EXPOSE 8000
+
+CMD ["vllm", "serve", "meta-llama/Llama-3-8B-Instruct", \
+     "--host", "0.0.0.0", "--port", "8000", \
+     "--gpu-memory-utilization", "0.9"]
+```
+
+**Build and run**:
+```bash
+docker build -t vllm-server .
+docker run --gpus all -p 8000:8000 vllm-server
+```
+
+**Docker Compose** (with metrics):
+```yaml
+version: '3.8'
+services:
+  vllm:
+    image: vllm/vllm-openai:latest
+    command: >
+      --model meta-llama/Llama-3-8B-Instruct
+      --gpu-memory-utilization 0.9
+      --enable-metrics
+      --metrics-port 9090
+    ports:
+      - "8000:8000"
+      - "9090:9090"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+```
+
+## Kubernetes deployment
+
+**Deployment manifest**:
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vllm-server
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: vllm
+  template:
+    metadata:
+      labels:
+        app: vllm
+    spec:
+      containers:
+      - name: vllm
+        image: vllm/vllm-openai:latest
+        args:
+          - "--model=meta-llama/Llama-3-8B-Instruct"
+          - "--gpu-memory-utilization=0.9"
+          - "--enable-prefix-caching"
+        resources:
+          limits:
+            nvidia.com/gpu: 1
+        ports:
+        - containerPort: 8000
+          name: http
+        - containerPort: 9090
+          name: metrics
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 60
+          periodSeconds: 30
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: vllm-service
+spec:
+  selector:
+    app: vllm
+  ports:
+  - port: 8000
+    targetPort: 8000
+    name: http
+  - port: 9090
+    targetPort: 9090
+    name: metrics
+  type: LoadBalancer
+```
+
+## Load balancing with Nginx
+
+**Nginx configuration**:
+```nginx
+upstream vllm_backend {
+    least_conn;  # Route to least-loaded server
+    server localhost:8001;
+    server localhost:8002;
+    server localhost:8003;
+}
+
+server {
+    listen 80;
+
+    location / {
+        proxy_pass http://vllm_backend;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+
+        # Timeouts for long-running inference
+        proxy_read_timeout 300s;
+        proxy_connect_timeout 75s;
+    }
+
+    # Metrics endpoint
+    location /metrics {
+        proxy_pass http://localhost:9090/metrics;
+    }
+}
+```
+
+**Start multiple vLLM instances**:
+```bash
+# Terminal 1
+vllm serve MODEL --port 8001 --tensor-parallel-size 1
+
+# Terminal 2
+vllm serve MODEL --port 8002 --tensor-parallel-size 1
+
+# Terminal 3
+vllm serve MODEL --port 8003 --tensor-parallel-size 1
+
+# Start Nginx
+nginx -c /path/to/nginx.conf
+```
+
+## Multi-node distributed serving
+
+For models too large for single node:
+
+**Node 1** (master):
+```bash
+export MASTER_ADDR=192.168.1.10
+export MASTER_PORT=29500
+export RANK=0
+export WORLD_SIZE=2
+
+vllm serve meta-llama/Llama-2-70b-hf \
+  --tensor-parallel-size 8 \
+  --pipeline-parallel-size 2
+```
+
+**Node 2** (worker):
+```bash
+export MASTER_ADDR=192.168.1.10
+export MASTER_PORT=29500
+export RANK=1
+export WORLD_SIZE=2
+
+vllm serve meta-llama/Llama-2-70b-hf \
+  --tensor-parallel-size 8 \
+  --pipeline-parallel-size 2
+```
+
+## Production configuration examples
+
+**High throughput** (batch-heavy workload):
+```bash
+vllm serve MODEL \
+  --max-num-seqs 512 \
+  --gpu-memory-utilization 0.95 \
+  --enable-prefix-caching \
+  --trust-remote-code
+```
+
+**Low latency** (interactive workload):
+```bash
+vllm serve MODEL \
+  --max-num-seqs 64 \
+  --gpu-memory-utilization 0.85 \
+  --enable-chunked-prefill
+```
+
+**Memory-constrained** (40GB GPU for 70B model):
+```bash
+vllm serve TheBloke/Llama-2-70B-AWQ \
+  --quantization awq \
+  --tensor-parallel-size 1 \
+  --gpu-memory-utilization 0.95 \
+  --max-model-len 4096
+```
+
+## Health checks and monitoring
+
+**Health check endpoint**:
+```bash
+curl http://localhost:8000/health
+# Returns: {"status": "ok"}
+```
+
+**Readiness check** (wait for model loaded):
+```bash
+#!/bin/bash
+until curl -f http://localhost:8000/health; do
+    echo "Waiting for vLLM to be ready..."
+    sleep 5
+done
+echo "vLLM is ready!"
+```
+
+**Prometheus scraping**:
+```yaml
+# prometheus.yml
+scrape_configs:
+  - job_name: 'vllm'
+    static_configs:
+      - targets: ['localhost:9090']
+    metrics_path: '/metrics'
+    scrape_interval: 15s
+```
+
+**Grafana dashboard** (key metrics):
+- Requests per second: `rate(vllm_request_success_total[5m])`
+- TTFT p50: `histogram_quantile(0.5, vllm_time_to_first_token_seconds_bucket)`
+- TTFT p99: `histogram_quantile(0.99, vllm_time_to_first_token_seconds_bucket)`
+- GPU cache usage: `vllm_gpu_cache_usage_perc`
+- Active requests: `vllm_num_requests_running`

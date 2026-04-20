@@ -1,1 +1,3 @@
-LS0tCmRlc2NyaXB0aW9uOiBTa2lsbHMgZm9yIGludGVyYWN0aW5nIHdpdGggc29jaWFsIHBsYXRmb3JtcyBhbmQgc29jaWFsLW1lZGlhIHdvcmtmbG93cyDigJQgcG9zdGluZywgcmVhZGluZywgbW9uaXRvcmluZywgYW5kIGFjY291bnQgb3BlcmF0aW9ucy4KLS0tCg==
+---
+description: Skills for interacting with social platforms and social-media workflows — posting, reading, monitoring, and account operations.
+---

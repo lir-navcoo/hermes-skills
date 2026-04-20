@@ -1,1 +1,251 @@
-IyBMYVRlWCBUZW1wbGF0ZXMgZm9yIE1ML0FJIENvbmZlcmVuY2VzCgpUaGlzIGRpcmVjdG9yeSBjb250YWlucyBvZmZpY2lhbCBMYVRlWCB0ZW1wbGF0ZXMgZm9yIG1ham9yIG1hY2hpbmUgbGVhcm5pbmcgYW5kIEFJIGNvbmZlcmVuY2VzLgoKLS0tCgojIyBDb21waWxpbmcgTGFUZVggdG8gUERGCgojIyMgT3B0aW9uIDE6IFZTIENvZGUgd2l0aCBMYVRlWCBXb3Jrc2hvcCAoUmVjb21tZW5kZWQpCgoqKlNldHVwOioqCjEuIEluc3RhbGwgW1RlWCBMaXZlXShodHRwczovL3d3dy50dWcub3JnL3RleGxpdmUvKSAoZnVsbCBkaXN0cmlidXRpb24gcmVjb21tZW5kZWQpCiAgIC0gbWFjT1M6IGBicmV3IGluc3RhbGwgLS1jYXNrIG1hY3RleGAKICAgLSBVYnVudHU6IGBzdWRvIGFwdCBpbnN0YWxsIHRleGxpdmUtZnVsbGAKICAgLSBXaW5kb3dzOiBEb3dubG9hZCBmcm9tIFt0dWcub3JnL3RleGxpdmVdKGh0dHBzOi8vd3d3LnR1Zy5vcmcvdGV4bGl2ZS8pCgoyLiBJbnN0YWxsIFZTIENvZGUgZXh0ZW5zaW9uOiAqKkxhVGVYIFdvcmtzaG9wKiogYnkgSmFtZXMgWXUKICAgLSBPcGVuIFZTIENvZGUg4oaSIEV4dGVuc2lvbnMgKENtZC9DdHJsK1NoaWZ0K1gpIOKGkiBTZWFyY2ggIkxhVGVYIFdvcmtzaG9wIiDihpIgSW5zdGFsbAoKKipVc2FnZToqKgotIE9wZW4gYW55IGAudGV4YCBmaWxlIGluIFZTIENvZGUKLSBTYXZlIHRoZSBmaWxlIChDbWQvQ3RybCtTKSDihpIgQXV0by1jb21waWxlcyB0byBQREYKLSBDbGljayB0aGUgZ3JlZW4gcGxheSBidXR0b24gb3IgdXNlIGBDbWQvQ3RybCtBbHQrQmAgdG8gYnVpbGQKLSBWaWV3IFBERjogQ2xpY2sgIlZpZXcgTGFUZVggUERGIiBpY29uIG9yIGBDbWQvQ3RybCtBbHQrVmAKLSBTaWRlLWJ5LXNpZGUgdmlldzogYENtZC9DdHJsK0FsdCtWYCB0aGVuIGRyYWcgdGFiCgoqKlNldHRpbmdzKiogKGFkZCB0byBWUyBDb2RlIGBzZXR0aW5ncy5qc29uYCk6CmBgYGpzb24KewogICJsYXRleC13b3Jrc2hvcC5sYXRleC5hdXRvQnVpbGQucnVuIjogIm9uU2F2ZSIsCiAgImxhdGV4LXdvcmtzaG9wLnZpZXcucGRmLnZpZXdlciI6ICJ0YWIiLAogICJsYXRleC13b3Jrc2hvcC5sYXRleC5yZWNpcGVzIjogWwogICAgewogICAgICAibmFtZSI6ICJwZGZsYXRleCDihpIgYmlidGV4IOKGkiBwZGZsYXRleCDDlyAyIiwKICAgICAgInRvb2xzIjogWyJwZGZsYXRleCIsICJiaWJ0ZXgiLCAicGRmbGF0ZXgiLCAicGRmbGF0ZXgiXQogICAgfQogIF0KfQpgYGAKCiMjIyBPcHRpb24gMjogQ29tbWFuZCBMaW5lCgpgYGBiYXNoCiMgQmFzaWMgY29tcGlsYXRpb24KcGRmbGF0ZXggbWFpbi50ZXgKCiMgV2l0aCBiaWJsaW9ncmFwaHkgKGZ1bGwgd29ya2Zsb3cpCnBkZmxhdGV4IG1haW4udGV4CmJpYnRleCBtYWluCnBkZmxhdGV4IG1haW4udGV4CnBkZmxhdGV4IG1haW4udGV4CgojIFVzaW5nIGxhdGV4bWsgKGhhbmRsZXMgZGVwZW5kZW5jaWVzIGF1dG9tYXRpY2FsbHkpCmxhdGV4bWsgLXBkZiBtYWluLnRleAoKIyBDb250aW51b3VzIGNvbXBpbGF0aW9uICh3YXRjaGVzIGZvciBjaGFuZ2VzKQpsYXRleG1rIC1wZGYgLXB2YyBtYWluLnRleApgYGAKCiMjIyBPcHRpb24gMzogT3ZlcmxlYWYgKE9ubGluZSkKCjEuIEdvIHRvIFtvdmVybGVhZi5jb21dKGh0dHBzOi8vd3d3Lm92ZXJsZWFmLmNvbSkKMi4gTmV3IFByb2plY3Qg4oaSIFVwbG9hZCBQcm9qZWN0IOKGkiBVcGxvYWQgdGhlIHRlbXBsYXRlIGZvbGRlciBhcyBaSVAKMy4gRWRpdCBvbmxpbmUgd2l0aCByZWFsLXRpbWUgUERGIHByZXZpZXcKNC4gTm8gbG9jYWwgaW5zdGFsbGF0aW9uIG5lZWRlZAoKIyMjIE9wdGlvbiA0OiBPdGhlciBJREVzCgp8IElERSB8IEV4dGVuc2lvbi9QbHVnaW4gfCBOb3RlcyB8CnwtLS0tLXwtLS0tLS0tLS0tLS0tLS0tLS18LS0tLS0tLXwKfCAqKkN1cnNvcioqIHwgTGFUZVggV29ya3Nob3AgfCBTYW1lIGFzIFZTIENvZGUgfAp8ICoqU3VibGltZSBUZXh0KiogfCBMYVRlWFRvb2xzIHwgUG9wdWxhciwgd2VsbC1tYWludGFpbmVkIHwKfCAqKlZpbS9OZW92aW0qKiB8IFZpbVRlWCB8IFBvd2VyZnVsLCBrZXlib2FyZC1kcml2ZW4gfAp8ICoqRW1hY3MqKiB8IEFVQ1RlWCB8IENvbXByZWhlbnNpdmUgTGFUZVggZW52aXJvbm1lbnQgfAp8ICoqVGVYc3R1ZGlvKiogfCBCdWlsdC1pbiB8IERlZGljYXRlZCBMYVRlWCBJREUgfAp8ICoqVGV4bWFrZXIqKiB8IEJ1aWx0LWluIHwgQ3Jvc3MtcGxhdGZvcm0gTGFUZVggZWRpdG9yIHwKCiMjIyBUcm91Ymxlc2hvb3RpbmcgQ29tcGlsYXRpb24KCioqIkZpbGUgbm90IGZvdW5kIiBlcnJvcnM6KioKYGBgYmFzaAojIEVuc3VyZSB5b3UncmUgaW4gdGhlIHRlbXBsYXRlIGRpcmVjdG9yeQpjZCB0ZW1wbGF0ZXMvaWNtbDIwMjYKcGRmbGF0ZXggZXhhbXBsZV9wYXBlci50ZXgKYGBgCgoqKkJpYmxpb2dyYXBoeSBub3QgYXBwZWFyaW5nOioqCmBgYGJhc2gKIyBSdW4gYmlidGV4IGFmdGVyIGZpcnN0IHBkZmxhdGV4CnBkZmxhdGV4IG1haW4udGV4CmJpYnRleCBtYWluICAgICAgICAjIFVzZXMgbWFpbi5hdXggdG8gZmluZCBjaXRhdGlvbnMKcGRmbGF0ZXggbWFpbi50ZXggICMgSW5jb3Jwb3JhdGVzIGJpYmxpb2dyYXBoeQpwZGZsYXRleCBtYWluLnRleCAgIyBSZXNvbHZlcyByZWZlcmVuY2VzCmBgYAoKKipNaXNzaW5nIHBhY2thZ2VzOioqCmBgYGJhc2gKIyBUZVggTGl2ZSBwYWNrYWdlIG1hbmFnZXIKdGxtZ3IgaW5zdGFsbCA8cGFja2FnZS1uYW1lPgoKIyBPciBpbnN0YWxsIGZ1bGwgZGlzdHJpYnV0aW9uIHRvIGF2b2lkIHRoaXMKYGBgCgotLS0KCiMjIEF2YWlsYWJsZSBUZW1wbGF0ZXMKCnwgQ29uZmVyZW5jZSB8IERpcmVjdG9yeSB8IFllYXIgfCBTb3VyY2UgfAp8LS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tfC0tLS0tLXwtLS0tLS0tLXwKfCBJQ01MIHwgYGljbWwyMDI2L2AgfCAyMDI2IHwgW09mZmljaWFsIElDTUxdKGh0dHBzOi8vaWNtbC5jYy9Db25mZXJlbmNlcy8yMDI2L0F1dGhvckluc3RydWN0aW9ucykgfAp8IElDTFIgfCBgaWNscjIwMjYvYCB8IDIwMjYgfCBbT2ZmaWNpYWwgR2l0SHViXShodHRwczovL2dpdGh1Yi5jb20vSUNMUi9NYXN0ZXItVGVtcGxhdGUpIHwKfCBOZXVySVBTIHwgYG5ldXJpcHMyMDI1L2AgfCAyMDI1IHwgQ29tbXVuaXR5IHRlbXBsYXRlIHwKfCBBQ0wgfCBgYWNsL2AgfCAyMDI1KyB8IFtPZmZpY2lhbCBBQ0xdKGh0dHBzOi8vZ2l0aHViLmNvbS9hY2wtb3JnL2FjbC1zdHlsZS1maWxlcykgfAp8IEFBQUkgfCBgYWFhaTIwMjYvYCB8IDIwMjYgfCBbQUFBSSBBdXRob3IgS2l0XShodHRwczovL2FhYWkub3JnL2F1dGhvcmtpdDI2LykgfAp8IENPTE0gfCBgY29sbTIwMjUvYCB8IDIwMjUgfCBbT2ZmaWNpYWwgQ09MTV0oaHR0cHM6Ly9naXRodWIuY29tL0NPTE0tb3JnL1RlbXBsYXRlKSB8CgojIyBVc2FnZQoKIyMjIElDTUwgMjAyNgoKYGBgbGF0ZXgKXGRvY3VtZW50Y2xhc3N7YXJ0aWNsZX0KXHVzZXBhY2thZ2V7aWNtbDIwMjZ9ICAlIEZvciBzdWJtaXNzaW9uCiUgXHVzZXBhY2thZ2VbYWNjZXB0ZWRde2ljbWwyMDI2fSAgJSBGb3IgY2FtZXJhLXJlYWR5CgpcYmVnaW57ZG9jdW1lbnR9CiUgWW91ciBwYXBlciBjb250ZW50ClxlbmR7ZG9jdW1lbnR9CmBgYAoKS2V5IGZpbGVzOgotIGBpY21sMjAyNi5zdHlgIC0gU3R5bGUgZmlsZQotIGBpY21sMjAyNi5ic3RgIC0gQmlibGlvZ3JhcGh5IHN0eWxlCi0gYGV4YW1wbGVfcGFwZXIudGV4YCAtIEV4YW1wbGUgZG9jdW1lbnQKCiMjIyBJQ0xSIDIwMjYKCmBgYGxhdGV4Clxkb2N1bWVudGNsYXNze2FydGljbGV9Clx1c2VwYWNrYWdlW3N1Ym1pc3Npb25de2ljbHIyMDI2X2NvbmZlcmVuY2V9ICAlIEZvciBzdWJtaXNzaW9uCiUgXHVzZXBhY2thZ2VbZmluYWxde2ljbHIyMDI2X2NvbmZlcmVuY2V9ICAlIEZvciBjYW1lcmEtcmVhZHkKClxiZWdpbntkb2N1bWVudH0KJSBZb3VyIHBhcGVyIGNvbnRlbnQKXGVuZHtkb2N1bWVudH0KYGBgCgpLZXkgZmlsZXM6Ci0gYGljbHIyMDI2X2NvbmZlcmVuY2Uuc3R5YCAtIFN0eWxlIGZpbGUKLSBgaWNscjIwMjZfY29uZmVyZW5jZS5ic3RgIC0gQmlibGlvZ3JhcGh5IHN0eWxlCi0gYGljbHIyMDI2X2NvbmZlcmVuY2UudGV4YCAtIEV4YW1wbGUgZG9jdW1lbnQKCiMjIyBBQ0wgVmVudWVzIChBQ0wsIEVNTkxQLCBOQUFDTCkKCmBgYGxhdGV4Clxkb2N1bWVudGNsYXNzWzExcHRde2FydGljbGV9Clx1c2VwYWNrYWdlW3Jldmlld117YWNsfSAgJSBGb3IgcmV2aWV3CiUgXHVzZXBhY2thZ2V7YWNsfSAgJSBGb3IgY2FtZXJhLXJlYWR5CgpcYmVnaW57ZG9jdW1lbnR9CiUgWW91ciBwYXBlciBjb250ZW50ClxlbmR7ZG9jdW1lbnR9CmBgYAoKS2V5IGZpbGVzOgotIGBhY2wuc3R5YCAtIFN0eWxlIGZpbGUKLSBgYWNsX25hdGJpYi5ic3RgIC0gQmlibGlvZ3JhcGh5IHN0eWxlCi0gYGFjbF9sYXRleC50ZXhgIC0gRXhhbXBsZSBkb2N1bWVudAoKIyMjIEFBQUkgMjAyNgoKYGBgbGF0ZXgKXGRvY3VtZW50Y2xhc3NbbGV0dGVycGFwZXJde2FydGljbGV9Clx1c2VwYWNrYWdlW3N1Ym1pc3Npb25de2FhYWkyMDI2fSAgJSBGb3Igc3VibWlzc2lvbgolIFx1c2VwYWNrYWdle2FhYWkyMDI2fSAgJSBGb3IgY2FtZXJhLXJlYWR5CgpcYmVnaW57ZG9jdW1lbnR9CiUgWW91ciBwYXBlciBjb250ZW50ClxlbmR7ZG9jdW1lbnR9CmBgYAoKS2V5IGZpbGVzOgotIGBhYWFpMjAyNi5zdHlgIC0gU3R5bGUgZmlsZQotIGBhYWFpMjAyNi5ic3RgIC0gQmlibGlvZ3JhcGh5IHN0eWxlCgojIyMgQ09MTSAyMDI1CgpgYGBsYXRleApcZG9jdW1lbnRjbGFzc3thcnRpY2xlfQpcdXNlcGFja2FnZVtzdWJtaXNzaW9uXXtjb2xtMjAyNV9jb25mZXJlbmNlfSAgJSBGb3Igc3VibWlzc2lvbgolIFx1c2VwYWNrYWdlW2ZpbmFsXXtjb2xtMjAyNV9jb25mZXJlbmNlfSAgJSBGb3IgY2FtZXJhLXJlYWR5CgpcYmVnaW57ZG9jdW1lbnR9CiUgWW91ciBwYXBlciBjb250ZW50ClxlbmR7ZG9jdW1lbnR9CmBgYAoKS2V5IGZpbGVzOgotIGBjb2xtMjAyNV9jb25mZXJlbmNlLnN0eWAgLSBTdHlsZSBmaWxlCi0gYGNvbG0yMDI1X2NvbmZlcmVuY2UuYnN0YCAtIEJpYmxpb2dyYXBoeSBzdHlsZQoKIyMgUGFnZSBMaW1pdHMgU3VtbWFyeQoKfCBDb25mZXJlbmNlIHwgU3VibWlzc2lvbiB8IENhbWVyYS1SZWFkeSB8IE5vdGVzIHwKfC0tLS0tLS0tLS0tLXwtLS0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tLXwtLS0tLS0tfAp8IElDTUwgMjAyNiB8IDggcGFnZXMgfCA5IHBhZ2VzIHwgK3VubGltaXRlZCByZWZzL2FwcGVuZGl4IHwKfCBJQ0xSIDIwMjYgfCA5IHBhZ2VzIHwgMTAgcGFnZXMgfCArdW5saW1pdGVkIHJlZnMvYXBwZW5kaXggfAp8IE5ldXJJUFMgMjAyNSB8IDkgcGFnZXMgfCA5IHBhZ2VzIHwgK2NoZWNrbGlzdCBvdXRzaWRlIGxpbWl0IHwKfCBBQ0wgMjAyNSB8IDggcGFnZXMgKGxvbmcpIHwgdmFyaWVzIHwgK3VubGltaXRlZCByZWZzL2FwcGVuZGl4IHwKfCBBQUFJIDIwMjYgfCA3IHBhZ2VzIHwgOCBwYWdlcyB8ICt1bmxpbWl0ZWQgcmVmcy9hcHBlbmRpeCB8CnwgQ09MTSAyMDI1IHwgOSBwYWdlcyB8IDEwIHBhZ2VzIHwgK3VubGltaXRlZCByZWZzL2FwcGVuZGl4IHwKCiMjIENvbW1vbiBJc3N1ZXMKCiMjIyBDb21waWxhdGlvbiBFcnJvcnMKCjEuICoqTWlzc2luZyBwYWNrYWdlcyoqOiBJbnN0YWxsIGZ1bGwgVGVYIGRpc3RyaWJ1dGlvbiAoVGVYIExpdmUgRnVsbCBvciBNaWtUZVgpCjIuICoqQmlibGlvZ3JhcGh5IGVycm9ycyoqOiBVc2UgdGhlIHByb3ZpZGVkIGAuYnN0YCBmaWxlIHdpdGggYFxiaWJsaW9ncmFwaHlzdHlsZXt9YAozLiAqKkZvbnQgd2FybmluZ3MqKjogSW5zdGFsbCBgY20tc3VwZXJgIG9yIHVzZSBgXHVzZXBhY2thZ2V7bG1vZGVybn1gCgojIyMgQW5vbnltaXphdGlvbgoKRm9yIHN1Ym1pc3Npb24sIGVuc3VyZToKLSBObyBhdXRob3IgbmFtZXMgaW4gYFxhdXRob3J7fWAKLSBObyBhY2tub3dsZWRnbWVudHMgc2VjdGlvbgotIE5vIGdyYW50IG51bWJlcnMKLSBVc2UgYW5vbnltb3VzIHJlcG9zaXRvcmllcwotIENpdGUgb3duIHdvcmsgaW4gdGhpcmQgcGVyc29uCgojIyMgQ29tbW9uIExhVGVYIFBhY2thZ2VzCgpgYGBsYXRleAolIFJlY29tbWVuZGVkIHBhY2thZ2VzIChjaGVjayBjb21wYXRpYmlsaXR5IHdpdGggdmVudWUgc3R5bGUpClx1c2VwYWNrYWdle2Ftc21hdGgsYW1zdGhtLGFtc3N5bWJ9ICAlIE1hdGgKXHVzZXBhY2thZ2V7Z3JhcGhpY3h9ICAgICAgICAgICAgICAgICAlIEZpZ3VyZXMKXHVzZXBhY2thZ2V7Ym9va3RhYnN9ICAgICAgICAgICAgICAgICAlIFRhYmxlcwpcdXNlcGFja2FnZXtoeXBlcnJlZn0gICAgICAgICAgICAgICAgICUgTGlua3MKXHVzZXBhY2thZ2V7YWxnb3JpdGhtLGFsZ29yaXRobWljfSAgICAlIEFsZ29yaXRobXMKXHVzZXBhY2thZ2V7bmF0YmlifSAgICAgICAgICAgICAgICAgICAlIENpdGF0aW9ucwpgYGAKCiMjIFVwZGF0aW5nIFRlbXBsYXRlcwoKVGVtcGxhdGVzIGFyZSB1cGRhdGVkIGFubnVhbGx5LiBDaGVjayBvZmZpY2lhbCBzb3VyY2VzIGJlZm9yZSBlYWNoIHN1Ym1pc3Npb246CgotIElDTUw6IGh0dHBzOi8vaWNtbC5jYy8KLSBJQ0xSOiBodHRwczovL2ljbHIuY2MvCi0gTmV1cklQUzogaHR0cHM6Ly9uZXVyaXBzLmNjLwotIEFDTDogaHR0cHM6Ly9naXRodWIuY29tL2FjbC1vcmcvYWNsLXN0eWxlLWZpbGVzCi0gQUFBSTogaHR0cHM6Ly9hYWFpLm9yZy8KLSBDT0xNOiBodHRwczovL2NvbG13ZWIub3JnLwo=
+# LaTeX Templates for ML/AI Conferences
+
+This directory contains official LaTeX templates for major machine learning and AI conferences.
+
+---
+
+## Compiling LaTeX to PDF
+
+### Option 1: VS Code with LaTeX Workshop (Recommended)
+
+**Setup:**
+1. Install [TeX Live](https://www.tug.org/texlive/) (full distribution recommended)
+   - macOS: `brew install --cask mactex`
+   - Ubuntu: `sudo apt install texlive-full`
+   - Windows: Download from [tug.org/texlive](https://www.tug.org/texlive/)
+
+2. Install VS Code extension: **LaTeX Workshop** by James Yu
+   - Open VS Code → Extensions (Cmd/Ctrl+Shift+X) → Search "LaTeX Workshop" → Install
+
+**Usage:**
+- Open any `.tex` file in VS Code
+- Save the file (Cmd/Ctrl+S) → Auto-compiles to PDF
+- Click the green play button or use `Cmd/Ctrl+Alt+B` to build
+- View PDF: Click "View LaTeX PDF" icon or `Cmd/Ctrl+Alt+V`
+- Side-by-side view: `Cmd/Ctrl+Alt+V` then drag tab
+
+**Settings** (add to VS Code `settings.json`):
+```json
+{
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "pdflatex → bibtex → pdflatex × 2",
+      "tools": ["pdflatex", "bibtex", "pdflatex", "pdflatex"]
+    }
+  ]
+}
+```
+
+### Option 2: Command Line
+
+```bash
+# Basic compilation
+pdflatex main.tex
+
+# With bibliography (full workflow)
+pdflatex main.tex
+bibtex main
+pdflatex main.tex
+pdflatex main.tex
+
+# Using latexmk (handles dependencies automatically)
+latexmk -pdf main.tex
+
+# Continuous compilation (watches for changes)
+latexmk -pdf -pvc main.tex
+```
+
+### Option 3: Overleaf (Online)
+
+1. Go to [overleaf.com](https://www.overleaf.com)
+2. New Project → Upload Project → Upload the template folder as ZIP
+3. Edit online with real-time PDF preview
+4. No local installation needed
+
+### Option 4: Other IDEs
+
+| IDE | Extension/Plugin | Notes |
+|-----|------------------|-------|
+| **Cursor** | LaTeX Workshop | Same as VS Code |
+| **Sublime Text** | LaTeXTools | Popular, well-maintained |
+| **Vim/Neovim** | VimTeX | Powerful, keyboard-driven |
+| **Emacs** | AUCTeX | Comprehensive LaTeX environment |
+| **TeXstudio** | Built-in | Dedicated LaTeX IDE |
+| **Texmaker** | Built-in | Cross-platform LaTeX editor |
+
+### Troubleshooting Compilation
+
+**"File not found" errors:**
+```bash
+# Ensure you're in the template directory
+cd templates/icml2026
+pdflatex example_paper.tex
+```
+
+**Bibliography not appearing:**
+```bash
+# Run bibtex after first pdflatex
+pdflatex main.tex
+bibtex main        # Uses main.aux to find citations
+pdflatex main.tex  # Incorporates bibliography
+pdflatex main.tex  # Resolves references
+```
+
+**Missing packages:**
+```bash
+# TeX Live package manager
+tlmgr install <package-name>
+
+# Or install full distribution to avoid this
+```
+
+---
+
+## Available Templates
+
+| Conference | Directory | Year | Source |
+|------------|-----------|------|--------|
+| ICML | `icml2026/` | 2026 | [Official ICML](https://icml.cc/Conferences/2026/AuthorInstructions) |
+| ICLR | `iclr2026/` | 2026 | [Official GitHub](https://github.com/ICLR/Master-Template) |
+| NeurIPS | `neurips2025/` | 2025 | Community template |
+| ACL | `acl/` | 2025+ | [Official ACL](https://github.com/acl-org/acl-style-files) |
+| AAAI | `aaai2026/` | 2026 | [AAAI Author Kit](https://aaai.org/authorkit26/) |
+| COLM | `colm2025/` | 2025 | [Official COLM](https://github.com/COLM-org/Template) |
+
+## Usage
+
+### ICML 2026
+
+```latex
+\documentclass{article}
+\usepackage{icml2026}  % For submission
+% \usepackage[accepted]{icml2026}  % For camera-ready
+
+\begin{document}
+% Your paper content
+\end{document}
+```
+
+Key files:
+- `icml2026.sty` - Style file
+- `icml2026.bst` - Bibliography style
+- `example_paper.tex` - Example document
+
+### ICLR 2026
+
+```latex
+\documentclass{article}
+\usepackage[submission]{iclr2026_conference}  % For submission
+% \usepackage[final]{iclr2026_conference}  % For camera-ready
+
+\begin{document}
+% Your paper content
+\end{document}
+```
+
+Key files:
+- `iclr2026_conference.sty` - Style file
+- `iclr2026_conference.bst` - Bibliography style
+- `iclr2026_conference.tex` - Example document
+
+### ACL Venues (ACL, EMNLP, NAACL)
+
+```latex
+\documentclass[11pt]{article}
+\usepackage[review]{acl}  % For review
+% \usepackage{acl}  % For camera-ready
+
+\begin{document}
+% Your paper content
+\end{document}
+```
+
+Key files:
+- `acl.sty` - Style file
+- `acl_natbib.bst` - Bibliography style
+- `acl_latex.tex` - Example document
+
+### AAAI 2026
+
+```latex
+\documentclass[letterpaper]{article}
+\usepackage[submission]{aaai2026}  % For submission
+% \usepackage{aaai2026}  % For camera-ready
+
+\begin{document}
+% Your paper content
+\end{document}
+```
+
+Key files:
+- `aaai2026.sty` - Style file
+- `aaai2026.bst` - Bibliography style
+
+### COLM 2025
+
+```latex
+\documentclass{article}
+\usepackage[submission]{colm2025_conference}  % For submission
+% \usepackage[final]{colm2025_conference}  % For camera-ready
+
+\begin{document}
+% Your paper content
+\end{document}
+```
+
+Key files:
+- `colm2025_conference.sty` - Style file
+- `colm2025_conference.bst` - Bibliography style
+
+## Page Limits Summary
+
+| Conference | Submission | Camera-Ready | Notes |
+|------------|-----------|--------------|-------|
+| ICML 2026 | 8 pages | 9 pages | +unlimited refs/appendix |
+| ICLR 2026 | 9 pages | 10 pages | +unlimited refs/appendix |
+| NeurIPS 2025 | 9 pages | 9 pages | +checklist outside limit |
+| ACL 2025 | 8 pages (long) | varies | +unlimited refs/appendix |
+| AAAI 2026 | 7 pages | 8 pages | +unlimited refs/appendix |
+| COLM 2025 | 9 pages | 10 pages | +unlimited refs/appendix |
+
+## Common Issues
+
+### Compilation Errors
+
+1. **Missing packages**: Install full TeX distribution (TeX Live Full or MikTeX)
+2. **Bibliography errors**: Use the provided `.bst` file with `\bibliographystyle{}`
+3. **Font warnings**: Install `cm-super` or use `\usepackage{lmodern}`
+
+### Anonymization
+
+For submission, ensure:
+- No author names in `\author{}`
+- No acknowledgments section
+- No grant numbers
+- Use anonymous repositories
+- Cite own work in third person
+
+### Common LaTeX Packages
+
+```latex
+% Recommended packages (check compatibility with venue style)
+\usepackage{amsmath,amsthm,amssymb}  % Math
+\usepackage{graphicx}                 % Figures
+\usepackage{booktabs}                 % Tables
+\usepackage{hyperref}                 % Links
+\usepackage{algorithm,algorithmic}    % Algorithms
+\usepackage{natbib}                   % Citations
+```
+
+## Updating Templates
+
+Templates are updated annually. Check official sources before each submission:
+
+- ICML: https://icml.cc/
+- ICLR: https://iclr.cc/
+- NeurIPS: https://neurips.cc/
+- ACL: https://github.com/acl-org/acl-style-files
+- AAAI: https://aaai.org/
+- COLM: https://colmweb.org/

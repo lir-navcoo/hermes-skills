@@ -1,1 +1,480 @@
-LS0tCm5hbWU6IGdpdGh1Yi1jb2RlLXJldmlldwpkZXNjcmlwdGlvbjogUmV2aWV3IGNvZGUgY2hhbmdlcyBieSBhbmFseXppbmcgZ2l0IGRpZmZzLCBsZWF2aW5nIGlubGluZSBjb21tZW50cyBvbiBQUnMsIGFuZCBwZXJmb3JtaW5nIHRob3JvdWdoIHByZS1wdXNoIHJldmlldy4gV29ya3Mgd2l0aCBnaCBDTEkgb3IgZmFsbHMgYmFjayB0byBnaXQgKyBHaXRIdWIgUkVTVCBBUEkgdmlhIGN1cmwuCnZlcnNpb246IDEuMS4wCmF1dGhvcjogSGVybWVzIEFnZW50CmxpY2Vuc2U6IE1JVAptZXRhZGF0YToKICBoZXJtZXM6CiAgICB0YWdzOiBbR2l0SHViLCBDb2RlLVJldmlldywgUHVsbC1SZXF1ZXN0cywgR2l0LCBRdWFsaXR5XQogICAgcmVsYXRlZF9za2lsbHM6IFtnaXRodWItYXV0aCwgZ2l0aHViLXByLXdvcmtmbG93XQotLS0KCiMgR2l0SHViIENvZGUgUmV2aWV3CgpQZXJmb3JtIGNvZGUgcmV2aWV3cyBvbiBsb2NhbCBjaGFuZ2VzIGJlZm9yZSBwdXNoaW5nLCBvciByZXZpZXcgb3BlbiBQUnMgb24gR2l0SHViLiBNb3N0IG9mIHRoaXMgc2tpbGwgdXNlcyBwbGFpbiBgZ2l0YCDigJQgdGhlIGBnaGAvYGN1cmxgIHNwbGl0IG9ubHkgbWF0dGVycyBmb3IgUFItbGV2ZWwgaW50ZXJhY3Rpb25zLgoKIyMgUHJlcmVxdWlzaXRlcwoKLSBBdXRoZW50aWNhdGVkIHdpdGggR2l0SHViIChzZWUgYGdpdGh1Yi1hdXRoYCBza2lsbCkKLSBJbnNpZGUgYSBnaXQgcmVwb3NpdG9yeQoKIyMjIFNldHVwIChmb3IgUFIgaW50ZXJhY3Rpb25zKQoKYGBgYmFzaAppZiBjb21tYW5kIC12IGdoICY+L2Rldi9udWxsICYmIGdoIGF1dGggc3RhdHVzICY+L2Rldi9udWxsOyB0aGVuCiAgQVVUSD0iZ2giCmVsc2UKICBBVVRIPSJnaXQiCiAgaWYgWyAteiAiJEdJVEhVQl9UT0tFTiIgXTsgdGhlbgogICAgaWYgWyAtZiB+Ly5oZXJtZXMvLmVudiBdICYmIGdyZXAgLXEgIl5HSVRIVUJfVE9LRU49IiB+Ly5oZXJtZXMvLmVudjsgdGhlbgogICAgICBHSVRIVUJfVE9LRU49JChncmVwICJeR0lUSFVCX1RPS0VOPSIgfi8uaGVybWVzLy5lbnYgfCBoZWFkIC0xIHwgY3V0IC1kPSAtZjIgfCB0ciAtZCAnXG5ccicpCiAgICBlbGlmIGdyZXAgLXEgImdpdGh1Yi5jb20iIH4vLmdpdC1jcmVkZW50aWFscyAyPi9kZXYvbnVsbDsgdGhlbgogICAgICBHSVRIVUJfVE9LRU49JChncmVwICJnaXRodWIuY29tIiB+Ly5naXQtY3JlZGVudGlhbHMgMj4vZGV2L251bGwgfCBoZWFkIC0xIHwgc2VkICdzfGh0dHBzOi8vW146XSo6XChbXkBdKlwpQC4qfFwxfCcpCiAgICBmaQogIGZpCmZpCgpSRU1PVEVfVVJMPSQoZ2l0IHJlbW90ZSBnZXQtdXJsIG9yaWdpbikKT1dORVJfUkVQTz0kKGVjaG8gIiRSRU1PVEVfVVJMIiB8IHNlZCAtRSAnc3wuKmdpdGh1YlwuY29tWzovXXx8OyBzfFwuZ2l0JHx8JykKT1dORVI9JChlY2hvICIkT1dORVJfUkVQTyIgfCBjdXQgLWQvIC1mMSkKUkVQTz0kKGVjaG8gIiRPV05FUl9SRVBPIiB8IGN1dCAtZC8gLWYyKQpgYGAKCi0tLQoKIyMgMS4gUmV2aWV3aW5nIExvY2FsIENoYW5nZXMgKFByZS1QdXNoKQoKVGhpcyBpcyBwdXJlIGBnaXRgIOKAlCB3b3JrcyBldmVyeXdoZXJlLCBubyBBUEkgbmVlZGVkLgoKIyMjIEdldCB0aGUgRGlmZgoKYGBgYmFzaAojIFN0YWdlZCBjaGFuZ2VzICh3aGF0IHdvdWxkIGJlIGNvbW1pdHRlZCkKZ2l0IGRpZmYgLS1zdGFnZWQKCiMgQWxsIGNoYW5nZXMgdnMgbWFpbiAod2hhdCBhIFBSIHdvdWxkIGNvbnRhaW4pCmdpdCBkaWZmIG1haW4uLi5IRUFECgojIEZpbGUgbmFtZXMgb25seQpnaXQgZGlmZiBtYWluLi4uSEVBRCAtLW5hbWUtb25seQoKIyBTdGF0IHN1bW1hcnkgKGluc2VydGlvbnMvZGVsZXRpb25zIHBlciBmaWxlKQpnaXQgZGlmZiBtYWluLi4uSEVBRCAtLXN0YXQKYGBgCgojIyMgUmV2aWV3IFN0cmF0ZWd5CgoxLiAqKkdldCB0aGUgYmlnIHBpY3R1cmUgZmlyc3Q6KioKCmBgYGJhc2gKZ2l0IGRpZmYgbWFpbi4uLkhFQUQgLS1zdGF0CmdpdCBsb2cgbWFpbi4uSEVBRCAtLW9uZWxpbmUKYGBgCgoyLiAqKlJldmlldyBmaWxlIGJ5IGZpbGUqKiDigJQgdXNlIGByZWFkX2ZpbGVgIG9uIGNoYW5nZWQgZmlsZXMgZm9yIGZ1bGwgY29udGV4dCwgYW5kIHRoZSBkaWZmIHRvIHNlZSB3aGF0IGNoYW5nZWQ6CgpgYGBiYXNoCmdpdCBkaWZmIG1haW4uLi5IRUFEIC0tIHNyYy9hdXRoL2xvZ2luLnB5CmBgYAoKMy4gKipDaGVjayBmb3IgY29tbW9uIGlzc3VlczoqKgoKYGBgYmFzaAojIERlYnVnIHN0YXRlbWVudHMsIFRPRE9zLCBjb25zb2xlLmxvZ3MgbGVmdCBiZWhpbmQKZ2l0IGRpZmYgbWFpbi4uLkhFQUQgfCBncmVwIC1uICJwcmludChcfGNvbnNvbGVcLmxvZ1x8VE9ET1x8RklYTUVcfEhBQ0tcfFhYWFx8ZGVidWdnZXIiCgojIExhcmdlIGZpbGVzIGFjY2lkZW50YWxseSBzdGFnZWQKZ2l0IGRpZmYgbWFpbi4uLkhFQUQgLS1zdGF0IHwgc29ydCAtdCd8JyAtazIgLXJuIHwgaGVhZCAtMTAKCiMgU2VjcmV0cyBvciBjcmVkZW50aWFsIHBhdHRlcm5zCmdpdCBkaWZmIG1haW4uLi5IRUFEIHwgZ3JlcCAtaW4gInBhc3N3b3JkXHxzZWNyZXRcfGFwaV9rZXlcfHRva2VuLio9XHxwcml2YXRlX2tleSIKCiMgTWVyZ2UgY29uZmxpY3QgbWFya2VycwpnaXQgZGlmZiBtYWluLi4uSEVBRCB8IGdyZXAgLW4gIjw8PDw8PFx8Pj4+Pj4+XHw9PT09PT09IgpgYGAKCjQuICoqUHJlc2VudCBzdHJ1Y3R1cmVkIGZlZWRiYWNrKiogdG8gdGhlIHVzZXIuCgojIyMgUmV2aWV3IE91dHB1dCBGb3JtYXQKCldoZW4gcmV2aWV3aW5nIGxvY2FsIGNoYW5nZXMsIHByZXNlbnQgZmluZGluZ3MgaW4gdGhpcyBzdHJ1Y3R1cmU6CgpgYGAKIyMgQ29kZSBSZXZpZXcgU3VtbWFyeQoKIyMjIENyaXRpY2FsCi0gKipzcmMvYXV0aC5weTo0NSoqIOKAlCBTUUwgaW5qZWN0aW9uOiB1c2VyIGlucHV0IHBhc3NlZCBkaXJlY3RseSB0byBxdWVyeS4KICBTdWdnZXN0aW9uOiBVc2UgcGFyYW1ldGVyaXplZCBxdWVyaWVzLgoKIyMjIFdhcm5pbmdzCi0gKipzcmMvbW9kZWxzL3VzZXIucHk6MjMqKiDigJQgUGFzc3dvcmQgc3RvcmVkIGluIHBsYWludGV4dC4gVXNlIGJjcnlwdCBvciBhcmdvbjIuCi0gKipzcmMvYXBpL3JvdXRlcy5weToxMTIqKiDigJQgTm8gcmF0ZSBsaW1pdGluZyBvbiBsb2dpbiBlbmRwb2ludC4KCiMjIyBTdWdnZXN0aW9ucwotICoqc3JjL3V0aWxzL2hlbHBlcnMucHk6OCoqIOKAlCBEdXBsaWNhdGVzIGxvZ2ljIGluIGBzcmMvY29yZS91dGlscy5weTozNGAuIENvbnNvbGlkYXRlLgotICoqdGVzdHMvdGVzdF9hdXRoLnB5Kiog4oCUIE1pc3NpbmcgZWRnZSBjYXNlOiBleHBpcmVkIHRva2VuIHRlc3QuCgojIyMgTG9va3MgR29vZAotIENsZWFuIHNlcGFyYXRpb24gb2YgY29uY2VybnMgaW4gdGhlIG1pZGRsZXdhcmUgbGF5ZXIKLSBHb29kIHRlc3QgY292ZXJhZ2UgZm9yIHRoZSBoYXBweSBwYXRoCmBgYAoKLS0tCgojIyAyLiBSZXZpZXdpbmcgYSBQdWxsIFJlcXVlc3Qgb24gR2l0SHViCgojIyMgVmlldyBQUiBEZXRhaWxzCgoqKldpdGggZ2g6KioKCmBgYGJhc2gKZ2ggcHIgdmlldyAxMjMKZ2ggcHIgZGlmZiAxMjMKZ2ggcHIgZGlmZiAxMjMgLS1uYW1lLW9ubHkKYGBgCgoqKldpdGggZ2l0ICsgY3VybDoqKgoKYGBgYmFzaApQUl9OVU1CRVI9MTIzCgojIEdldCBQUiBkZXRhaWxzCmN1cmwgLXMgXAogIC1IICJBdXRob3JpemF0aW9uOiB0b2tlbiAkR0lUSFVCX1RPS0VOIiBcCiAgaHR0cHM6Ly9hcGkuZ2l0aHViLmNvbS9yZXBvcy8kT1dORVIvJFJFUE8vcHVsbHMvJFBSX05VTUJFUiBcCiAgfCBweXRob24zIC1jICIKaW1wb3J0IHN5cywganNvbgpwciA9IGpzb24ubG9hZChzeXMuc3RkaW4pCnByaW50KGZcIlRpdGxlOiB7cHJbJ3RpdGxlJ119XCIpCnByaW50KGZcIkF1dGhvcjoge3ByWyd1c2VyJ11bJ2xvZ2luJ119XCIpCnByaW50KGZcIkJyYW5jaDoge3ByWydoZWFkJ11bJ3JlZiddfSAtPiB7cHJbJ2Jhc2UnXVsncmVmJ119XCIpCnByaW50KGZcIlN0YXRlOiB7cHJbJ3N0YXRlJ119XCIpCnByaW50KGZcIkJvZHk6XG57cHJbJ2JvZHknXX1cIikiCgojIExpc3QgY2hhbmdlZCBmaWxlcwpjdXJsIC1zIFwKICAtSCAiQXV0aG9yaXphdGlvbjogdG9rZW4gJEdJVEhVQl9UT0tFTiIgXAogIGh0dHBzOi8vYXBpLmdpdGh1Yi5jb20vcmVwb3MvJE9XTkVSLyRSRVBPL3B1bGxzLyRQUl9OVU1CRVIvZmlsZXMgXAogIHwgcHl0aG9uMyAtYyAiCmltcG9ydCBzeXMsIGpzb24KZm9yIGYgaW4ganNvbi5sb2FkKHN5cy5zdGRpbik6CiAgICBwcmludChmXCJ7Zlsnc3RhdHVzJ106MTB9ICt7ZlsnYWRkaXRpb25zJ106LTR9IC17ZlsnZGVsZXRpb25zJ106LTR9ICB7ZlsnZmlsZW5hbWUnXX1cIikiCmBgYAoKIyMjIENoZWNrIE91dCBQUiBMb2NhbGx5IGZvciBGdWxsIFJldmlldwoKVGhpcyB3b3JrcyB3aXRoIHBsYWluIGBnaXRgIOKAlCBubyBgZ2hgIG5lZWRlZDoKCmBgYGJhc2gKIyBGZXRjaCB0aGUgUFIgYnJhbmNoIGFuZCBjaGVjayBpdCBvdXQKZ2l0IGZldGNoIG9yaWdpbiBwdWxsLzEyMy9oZWFkOnByLTEyMwpnaXQgY2hlY2tvdXQgcHItMTIzCgojIE5vdyB5b3UgY2FuIHVzZSByZWFkX2ZpbGUsIHNlYXJjaF9maWxlcywgcnVuIHRlc3RzLCBldGMuCgojIFZpZXcgZGlmZiBhZ2FpbnN0IHRoZSBiYXNlIGJyYW5jaApnaXQgZGlmZiBtYWluLi4ucHItMTIzCmBgYAoKKipXaXRoIGdoIChzaG9ydGN1dCk6KioKCmBgYGJhc2gKZ2ggcHIgY2hlY2tvdXQgMTIzCmBgYAoKIyMjIExlYXZlIENvbW1lbnRzIG9uIGEgUFIKCioqR2VuZXJhbCBQUiBjb21tZW50IOKAlCB3aXRoIGdoOioqCgpgYGBiYXNoCmdoIHByIGNvbW1lbnQgMTIzIC0tYm9keSAiT3ZlcmFsbCBsb29rcyBnb29kLCBhIGZldyBzdWdnZXN0aW9ucyBiZWxvdy4iCmBgYAoKKipHZW5lcmFsIFBSIGNvbW1lbnQg4oCUIHdpdGggY3VybDoqKgoKYGBgYmFzaApjdXJsIC1zIC1YIFBPU1QgXAogIC1IICJBdXRob3JpemF0aW9uOiB0b2tlbiAkR0lUSFVCX1RPS0VOIiBcCiAgaHR0cHM6Ly9hcGkuZ2l0aHViLmNvbS9yZXBvcy8kT1dORVIvJFJFUE8vaXNzdWVzLyRQUl9OVU1CRVIvY29tbWVudHMgXAogIC1kICd7ImJvZHkiOiAiT3ZlcmFsbCBsb29rcyBnb29kLCBhIGZldyBzdWdnZXN0aW9ucyBiZWxvdy4ifScKYGBgCgojIyMgTGVhdmUgSW5saW5lIFJldmlldyBDb21tZW50cwoKKipTaW5nbGUgaW5saW5lIGNvbW1lbnQg4oCUIHdpdGggZ2ggKHZpYSBBUEkpOioqCgpgYGBiYXNoCkhFQURfU0hBPSQoZ2ggcHIgdmlldyAxMjMgLS1qc29uIGhlYWRSZWZPaWQgLS1qcSAnLmhlYWRSZWZPaWQnKQoKZ2ggYXBpIHJlcG9zLyRPV05FUi8kUkVQTy9wdWxscy8xMjMvY29tbWVudHMgXAogIC0tbWV0aG9kIFBPU1QgXAogIC1mIGJvZHk9IlRoaXMgY291bGQgYmUgc2ltcGxpZmllZCB3aXRoIGEgbGlzdCBjb21wcmVoZW5zaW9uLiIgXAogIC1mIHBhdGg9InNyYy9hdXRoL2xvZ2luLnB5IiBcCiAgLWYgY29tbWl0X2lkPSIkSEVBRF9TSEEiIFwKICAtZiBsaW5lPTQ1IFwKICAtZiBzaWRlPSJSSUdIVCIKYGBgCgoqKlNpbmdsZSBpbmxpbmUgY29tbWVudCDigJQgd2l0aCBjdXJsOioqCgpgYGBiYXNoCiMgR2V0IHRoZSBoZWFkIGNvbW1pdCBTSEEKSEVBRF9TSEE9JChjdXJsIC1zIFwKICAtSCAiQXV0aG9yaXphdGlvbjogdG9rZW4gJEdJVEhVQl9UT0tFTiIgXAogIGh0dHBzOi8vYXBpLmdpdGh1Yi5jb20vcmVwb3MvJE9XTkVSLyRSRVBPL3B1bGxzLyRQUl9OVU1CRVIgXAogIHwgcHl0aG9uMyAtYyAiaW1wb3J0IHN5cyxqc29uOyBwcmludChqc29uLmxvYWQoc3lzLnN0ZGluKVsnaGVhZCddWydzaGEnXSkiKQoKY3VybCAtcyAtWCBQT1NUIFwKICAtSCAiQXV0aG9yaXphdGlvbjogdG9rZW4gJEdJVEhVQl9UT0tFTiIgXAogIGh0dHBzOi8vYXBpLmdpdGh1Yi5jb20vcmVwb3MvJE9XTkVSLyRSRVBPL3B1bGxzLyRQUl9OVU1CRVIvY29tbWVudHMgXAogIC1kICJ7CiAgICBcImJvZHlcIjogXCJUaGlzIGNvdWxkIGJlIHNpbXBsaWZpZWQgd2l0aCBhIGxpc3QgY29tcHJlaGVuc2lvbi5cIiwKICAgIFwicGF0aFwiOiBcInNyYy9hdXRoL2xvZ2luLnB5XCIsCiAgICBcImNvbW1pdF9pZFwiOiBcIiRIRUFEX1NIQVwiLAogICAgXCJsaW5lXCI6IDQ1LAogICAgXCJzaWRlXCI6IFwiUklHSFRcIgogIH0iCmBgYAoKIyMjIFN1Ym1pdCBhIEZvcm1hbCBSZXZpZXcgKEFwcHJvdmUgLyBSZXF1ZXN0IENoYW5nZXMpCgoqKldpdGggZ2g6KioKCmBgYGJhc2gKZ2ggcHIgcmV2aWV3IDEyMyAtLWFwcHJvdmUgLS1ib2R5ICJMR1RNISIKZ2ggcHIgcmV2aWV3IDEyMyAtLXJlcXVlc3QtY2hhbmdlcyAtLWJvZHkgIlNlZSBpbmxpbmUgY29tbWVudHMuIgpnaCBwciByZXZpZXcgMTIzIC0tY29tbWVudCAtLWJvZHkgIlNvbWUgc3VnZ2VzdGlvbnMsIG5vdGhpbmcgYmxvY2tpbmcuIgpgYGAKCioqV2l0aCBjdXJsIOKAlCBtdWx0aS1jb21tZW50IHJldmlldyBzdWJtaXR0ZWQgYXRvbWljYWxseToqKgoKYGBgYmFzaApIRUFEX1NIQT0kKGN1cmwgLXMgXAogIC1IICJBdXRob3JpemF0aW9uOiB0b2tlbiAkR0lUSFVCX1RPS0VOIiBcCiAgaHR0cHM6Ly9hcGkuZ2l0aHViLmNvbS9yZXBvcy8kT1dORVIvJFJFUE8vcHVsbHMvJFBSX05VTUJFUiBcCiAgfCBweXRob24zIC1jICJpbXBvcnQgc3lzLGpzb247IHByaW50KGpzb24ubG9hZChzeXMuc3RkaW4pWydoZWFkJ11bJ3NoYSddKSIpCgpjdXJsIC1zIC1YIFBPU1QgXAogIC1IICJBdXRob3JpemF0aW9uOiB0b2tlbiAkR0lUSFVCX1RPS0VOIiBcCiAgaHR0cHM6Ly9hcGkuZ2l0aHViLmNvbS9yZXBvcy8kT1dORVIvJFJFUE8vcHVsbHMvJFBSX05VTUJFUi9yZXZpZXdzIFwKICAtZCAiewogICAgXCJjb21taXRfaWRcIjogXCIkSEVBRF9TSEFcIiwKICAgIFwiZXZlbnRcIjogXCJDT01NRU5UXCIsCiAgICBcImJvZHlcIjogXCJDb2RlIHJldmlldyBmcm9tIEhlcm1lcyBBZ2VudFwiLAogICAgXCJjb21tZW50c1wiOiBbCiAgICAgIHtcInBhdGhcIjogXCJzcmMvYXV0aC5weVwiLCBcImxpbmVcIjogNDUsIFwiYm9keVwiOiBcIlVzZSBwYXJhbWV0ZXJpemVkIHF1ZXJpZXMgdG8gcHJldmVudCBTUUwgaW5qZWN0aW9uLlwifSwKICAgICAge1wicGF0aFwiOiBcInNyYy9tb2RlbHMvdXNlci5weVwiLCBcImxpbmVcIjogMjMsIFwiYm9keVwiOiBcIkhhc2ggcGFzc3dvcmRzIHdpdGggYmNyeXB0IGJlZm9yZSBzdG9yaW5nLlwifSwKICAgICAge1wicGF0aFwiOiBcInRlc3RzL3Rlc3RfYXV0aC5weVwiLCBcImxpbmVcIjogMSwgXCJib2R5XCI6IFwiQWRkIHRlc3QgZm9yIGV4cGlyZWQgdG9rZW4gZWRnZSBjYXNlLlwifQogICAgXQogIH0iCmBgYAoKRXZlbnQgdmFsdWVzOiBgIkFQUFJPVkUiYCwgYCJSRVFVRVNUX0NIQU5HRVMiYCwgYCJDT01NRU5UImAKClRoZSBgbGluZWAgZmllbGQgcmVmZXJzIHRvIHRoZSBsaW5lIG51bWJlciBpbiB0aGUgKm5ldyogdmVyc2lvbiBvZiB0aGUgZmlsZS4gRm9yIGRlbGV0ZWQgbGluZXMsIHVzZSBgInNpZGUiOiAiTEVGVCJgLgoKLS0tCgojIyAzLiBSZXZpZXcgQ2hlY2tsaXN0CgpXaGVuIHBlcmZvcm1pbmcgYSBjb2RlIHJldmlldyAobG9jYWwgb3IgUFIpLCBzeXN0ZW1hdGljYWxseSBjaGVjazoKCiMjIyBDb3JyZWN0bmVzcwotIERvZXMgdGhlIGNvZGUgZG8gd2hhdCBpdCBjbGFpbXM/Ci0gRWRnZSBjYXNlcyBoYW5kbGVkIChlbXB0eSBpbnB1dHMsIG51bGxzLCBsYXJnZSBkYXRhLCBjb25jdXJyZW50IGFjY2Vzcyk/Ci0gRXJyb3IgcGF0aHMgaGFuZGxlZCBncmFjZWZ1bGx5PwoKIyMjIFNlY3VyaXR5Ci0gTm8gaGFyZGNvZGVkIHNlY3JldHMsIGNyZWRlbnRpYWxzLCBvciBBUEkga2V5cwotIElucHV0IHZhbGlkYXRpb24gb24gdXNlci1mYWNpbmcgaW5wdXRzCi0gTm8gU1FMIGluamVjdGlvbiwgWFNTLCBvciBwYXRoIHRyYXZlcnNhbAotIEF1dGgvYXV0aHogY2hlY2tzIHdoZXJlIG5lZWRlZAoKIyMjIENvZGUgUXVhbGl0eQotIENsZWFyIG5hbWluZyAodmFyaWFibGVzLCBmdW5jdGlvbnMsIGNsYXNzZXMpCi0gTm8gdW5uZWNlc3NhcnkgY29tcGxleGl0eSBvciBwcmVtYXR1cmUgYWJzdHJhY3Rpb24KLSBEUlkg4oCUIG5vIGR1cGxpY2F0ZWQgbG9naWMgdGhhdCBzaG91bGQgYmUgZXh0cmFjdGVkCi0gRnVuY3Rpb25zIGFyZSBmb2N1c2VkIChzaW5nbGUgcmVzcG9uc2liaWxpdHkpCgojIyMgVGVzdGluZwotIE5ldyBjb2RlIHBhdGhzIHRlc3RlZD8KLSBIYXBweSBwYXRoIGFuZCBlcnJvciBjYXNlcyBjb3ZlcmVkPwotIFRlc3RzIHJlYWRhYmxlIGFuZCBtYWludGFpbmFibGU/CgojIyMgUGVyZm9ybWFuY2UKLSBObyBOKzEgcXVlcmllcyBvciB1bm5lY2Vzc2FyeSBsb29wcwotIEFwcHJvcHJpYXRlIGNhY2hpbmcgd2hlcmUgYmVuZWZpY2lhbAotIE5vIGJsb2NraW5nIG9wZXJhdGlvbnMgaW4gYXN5bmMgY29kZSBwYXRocwoKIyMjIERvY3VtZW50YXRpb24KLSBQdWJsaWMgQVBJcyBkb2N1bWVudGVkCi0gTm9uLW9idmlvdXMgbG9naWMgaGFzIGNvbW1lbnRzIGV4cGxhaW5pbmcgIndoeSIKLSBSRUFETUUgdXBkYXRlZCBpZiBiZWhhdmlvciBjaGFuZ2VkCgotLS0KCiMjIDQuIFByZS1QdXNoIFJldmlldyBXb3JrZmxvdwoKV2hlbiB0aGUgdXNlciBhc2tzIHlvdSB0byAicmV2aWV3IHRoZSBjb2RlIiBvciAiY2hlY2sgYmVmb3JlIHB1c2hpbmciOgoKMS4gYGdpdCBkaWZmIG1haW4uLi5IRUFEIC0tc3RhdGAg4oCUIHNlZSBzY29wZSBvZiBjaGFuZ2VzCjIuIGBnaXQgZGlmZiBtYWluLi4uSEVBRGAg4oCUIHJlYWQgdGhlIGZ1bGwgZGlmZgozLiBGb3IgZWFjaCBjaGFuZ2VkIGZpbGUsIHVzZSBgcmVhZF9maWxlYCBpZiB5b3UgbmVlZCBtb3JlIGNvbnRleHQKNC4gQXBwbHkgdGhlIGNoZWNrbGlzdCBhYm92ZQo1LiBQcmVzZW50IGZpbmRpbmdzIGluIHRoZSBzdHJ1Y3R1cmVkIGZvcm1hdCAoQ3JpdGljYWwgLyBXYXJuaW5ncyAvIFN1Z2dlc3Rpb25zIC8gTG9va3MgR29vZCkKNi4gSWYgY3JpdGljYWwgaXNzdWVzIGZvdW5kLCBvZmZlciB0byBmaXggdGhlbSBiZWZvcmUgdGhlIHVzZXIgcHVzaGVzCgotLS0KCiMjIDUuIFBSIFJldmlldyBXb3JrZmxvdyAoRW5kLXRvLUVuZCkKCldoZW4gdGhlIHVzZXIgYXNrcyB5b3UgdG8gInJldmlldyBQUiAjTiIsICJsb29rIGF0IHRoaXMgUFIiLCBvciBnaXZlcyB5b3UgYSBQUiBVUkwsIGZvbGxvdyB0aGlzIHJlY2lwZToKCiMjIyBTdGVwIDE6IFNldCB1cCBlbnZpcm9ubWVudAoKYGBgYmFzaApzb3VyY2UgIiR7SEVSTUVTX0hPTUU6LSRIT01FLy5oZXJtZXN9L3NraWxscy9naXRodWIvZ2l0aHViLWF1dGgvc2NyaXB0cy9naC1lbnYuc2giCiMgT3IgcnVuIHRoZSBpbmxpbmUgc2V0dXAgYmxvY2sgZnJvbSB0aGUgdG9wIG9mIHRoaXMgc2tpbGwKYGBgCgojIyMgU3RlcCAyOiBHYXRoZXIgUFIgY29udGV4dAoKR2V0IHRoZSBQUiBtZXRhZGF0YSwgZGVzY3JpcHRpb24sIGFuZCBsaXN0IG9mIGNoYW5nZWQgZmlsZXMgdG8gdW5kZXJzdGFuZCBzY29wZSBiZWZvcmUgZGl2aW5nIGludG8gY29kZS4KCioqV2l0aCBnaDoqKgpgYGBiYXNoCmdoIHByIHZpZXcgMTIzCmdoIHByIGRpZmYgMTIzIC0tbmFtZS1vbmx5CmdoIHByIGNoZWNrcyAxMjMKYGBgCgoqKldpdGggY3VybDoqKgpgYGBiYXNoClBSX05VTUJFUj0xMjMKCiMgUFIgZGV0YWlscyAodGl0bGUsIGF1dGhvciwgZGVzY3JpcHRpb24sIGJyYW5jaCkKY3VybCAtcyAtSCAiQXV0aG9yaXphdGlvbjogdG9rZW4gJEdJVEhVQl9UT0tFTiIgXAogIGh0dHBzOi8vYXBpLmdpdGh1Yi5jb20vcmVwb3MvJEdIX09XTkVSLyRHSF9SRVBPL3B1bGxzLyRQUl9OVU1CRVIKCiMgQ2hhbmdlZCBmaWxlcyB3aXRoIGxpbmUgY291bnRzCmN1cmwgLXMgLUggIkF1dGhvcml6YXRpb246IHRva2VuICRHSVRIVUJfVE9LRU4iIFwKICBodHRwczovL2FwaS5naXRodWIuY29tL3JlcG9zLyRHSF9PV05FUi8kR0hfUkVQTy9wdWxscy8kUFJfTlVNQkVSL2ZpbGVzCmBgYAoKIyMjIFN0ZXAgMzogQ2hlY2sgb3V0IHRoZSBQUiBsb2NhbGx5CgpUaGlzIGdpdmVzIHlvdSBmdWxsIGFjY2VzcyB0byBgcmVhZF9maWxlYCwgYHNlYXJjaF9maWxlc2AsIGFuZCB0aGUgYWJpbGl0eSB0byBydW4gdGVzdHMuCgpgYGBiYXNoCmdpdCBmZXRjaCBvcmlnaW4gcHVsbC8kUFJfTlVNQkVSL2hlYWQ6cHItJFBSX05VTUJFUgpnaXQgY2hlY2tvdXQgcHItJFBSX05VTUJFUgpgYGAKCiMjIyBTdGVwIDQ6IFJlYWQgdGhlIGRpZmYgYW5kIHVuZGVyc3RhbmQgY2hhbmdlcwoKYGBgYmFzaAojIEZ1bGwgZGlmZiBhZ2FpbnN0IHRoZSBiYXNlIGJyYW5jaApnaXQgZGlmZiBtYWluLi4uSEVBRAoKIyBPciBmaWxlLWJ5LWZpbGUgZm9yIGxhcmdlIFBScwpnaXQgZGlmZiBtYWluLi4uSEVBRCAtLW5hbWUtb25seQojIFRoZW4gZm9yIGVhY2ggZmlsZToKZ2l0IGRpZmYgbWFpbi4uLkhFQUQgLS0gcGF0aC90by9maWxlLnB5CmBgYAoKRm9yIGVhY2ggY2hhbmdlZCBmaWxlLCB1c2UgYHJlYWRfZmlsZWAgdG8gc2VlIGZ1bGwgY29udGV4dCBhcm91bmQgdGhlIGNoYW5nZXMg4oCUIGRpZmZzIGFsb25lIGNhbiBtaXNzIGlzc3VlcyB2aXNpYmxlIG9ubHkgd2l0aCBzdXJyb3VuZGluZyBjb2RlLgoKIyMjIFN0ZXAgNTogUnVuIGF1dG9tYXRlZCBjaGVja3MgbG9jYWxseSAoaWYgYXBwbGljYWJsZSkKCmBgYGJhc2gKIyBSdW4gdGVzdHMgaWYgdGhlcmUncyBhIHRlc3Qgc3VpdGUKcHl0aG9uIC1tIHB5dGVzdCAyPiYxIHwgdGFpbCAtMjAKIyBvcjogbnBtIHRlc3QsIGNhcmdvIHRlc3QsIGdvIHRlc3QgLi8uLi4sIGV0Yy4KCiMgUnVuIGxpbnRlciBpZiBjb25maWd1cmVkCnJ1ZmYgY2hlY2sgLiAyPiYxIHwgaGVhZCAtMzAKIyBvcjogZXNsaW50LCBjbGlwcHksIGV0Yy4KYGBgCgojIyMgU3RlcCA2OiBBcHBseSB0aGUgcmV2aWV3IGNoZWNrbGlzdCAoU2VjdGlvbiAzKQoKR28gdGhyb3VnaCBlYWNoIGNhdGVnb3J5OiBDb3JyZWN0bmVzcywgU2VjdXJpdHksIENvZGUgUXVhbGl0eSwgVGVzdGluZywgUGVyZm9ybWFuY2UsIERvY3VtZW50YXRpb24uCgojIyMgU3RlcCA3OiBQb3N0IHRoZSByZXZpZXcgdG8gR2l0SHViCgpDb2xsZWN0IHlvdXIgZmluZGluZ3MgYW5kIHN1Ym1pdCB0aGVtIGFzIGEgZm9ybWFsIHJldmlldyB3aXRoIGlubGluZSBjb21tZW50cy4KCioqV2l0aCBnaDoqKgpgYGBiYXNoCiMgSWYgbm8gaXNzdWVzIOKAlCBhcHByb3ZlCmdoIHByIHJldmlldyAkUFJfTlVNQkVSIC0tYXBwcm92ZSAtLWJvZHkgIlJldmlld2VkIGJ5IEhlcm1lcyBBZ2VudC4gQ29kZSBsb29rcyBjbGVhbiDigJQgZ29vZCB0ZXN0IGNvdmVyYWdlLCBubyBzZWN1cml0eSBjb25jZXJucy4iCgojIElmIGlzc3VlcyBmb3VuZCDigJQgcmVxdWVzdCBjaGFuZ2VzIHdpdGggaW5saW5lIGNvbW1lbnRzCmdoIHByIHJldmlldyAkUFJfTlVNQkVSIC0tcmVxdWVzdC1jaGFuZ2VzIC0tYm9keSAiRm91bmQgYSBmZXcgaXNzdWVzIOKAlCBzZWUgaW5saW5lIGNvbW1lbnRzLiIKYGBgCgoqKldpdGggY3VybCDigJQgYXRvbWljIHJldmlldyB3aXRoIG11bHRpcGxlIGlubGluZSBjb21tZW50czoqKgpgYGBiYXNoCkhFQURfU0hBPSQoY3VybCAtcyAtSCAiQXV0aG9yaXphdGlvbjogdG9rZW4gJEdJVEhVQl9UT0tFTiIgXAogIGh0dHBzOi8vYXBpLmdpdGh1Yi5jb20vcmVwb3MvJEdIX09XTkVSLyRHSF9SRVBPL3B1bGxzLyRQUl9OVU1CRVIgXAogIHwgcHl0aG9uMyAtYyAiaW1wb3J0IHN5cyxqc29uOyBwcmludChqc29uLmxvYWQoc3lzLnN0ZGluKVsnaGVhZCddWydzaGEnXSkiKQoKIyBCdWlsZCB0aGUgcmV2aWV3IEpTT04g4oCUIGV2ZW50IGlzIEFQUFJPVkUsIFJFUVVFU1RfQ0hBTkdFUywgb3IgQ09NTUVOVApjdXJsIC1zIC1YIFBPU1QgXAogIC1IICJBdXRob3JpemF0aW9uOiB0b2tlbiAkR0lUSFVCX1RPS0VOIiBcCiAgaHR0cHM6Ly9hcGkuZ2l0aHViLmNvbS9yZXBvcy8kR0hfT1dORVIvJEdIX1JFUE8vcHVsbHMvJFBSX05VTUJFUi9yZXZpZXdzIFwKICAtZCAiewogICAgXCJjb21taXRfaWRcIjogXCIkSEVBRF9TSEFcIiwKICAgIFwiZXZlbnRcIjogXCJSRVFVRVNUX0NIQU5HRVNcIiwKICAgIFwiYm9keVwiOiBcIiMjIEhlcm1lcyBBZ2VudCBSZXZpZXdcblxuRm91bmQgMiBpc3N1ZXMsIDEgc3VnZ2VzdGlvbi4gU2VlIGlubGluZSBjb21tZW50cy5cIiwKICAgIFwiY29tbWVudHNcIjogWwogICAgICB7XCJwYXRoXCI6IFwic3JjL2F1dGgucHlcIiwgXCJsaW5lXCI6IDQ1LCBcImJvZHlcIjogXCLwn5S0ICoqQ3JpdGljYWw6KiogVXNlciBpbnB1dCBwYXNzZWQgZGlyZWN0bHkgdG8gU1FMIHF1ZXJ5IOKAlCB1c2UgcGFyYW1ldGVyaXplZCBxdWVyaWVzLlwifSwKICAgICAge1wicGF0aFwiOiBcInNyYy9tb2RlbHMucHlcIiwgXCJsaW5lXCI6IDIzLCBcImJvZHlcIjogXCLimqDvuI8gKipXYXJuaW5nOioqIFBhc3N3b3JkIHN0b3JlZCB3aXRob3V0IGhhc2hpbmcuXCJ9LAogICAgICB7XCJwYXRoXCI6IFwic3JjL3V0aWxzLnB5XCIsIFwibGluZVwiOiA4LCBcImJvZHlcIjogXCLwn5KhICoqU3VnZ2VzdGlvbjoqKiBUaGlzIGR1cGxpY2F0ZXMgbG9naWMgaW4gY29yZS91dGlscy5weTozNC5cIn0KICAgIF0KICB9IgpgYGAKCiMjIyBTdGVwIDg6IEFsc28gcG9zdCBhIHN1bW1hcnkgY29tbWVudAoKSW4gYWRkaXRpb24gdG8gaW5saW5lIGNvbW1lbnRzLCBsZWF2ZSBhIHRvcC1sZXZlbCBzdW1tYXJ5IHNvIHRoZSBQUiBhdXRob3IgZ2V0cyB0aGUgZnVsbCBwaWN0dXJlIGF0IGEgZ2xhbmNlLiBVc2UgdGhlIHJldmlldyBvdXRwdXQgZm9ybWF0IGZyb20gYHJlZmVyZW5jZXMvcmV2aWV3LW91dHB1dC10ZW1wbGF0ZS5tZGAuCgoqKldpdGggZ2g6KioKYGBgYmFzaApnaCBwciBjb21tZW50ICRQUl9OVU1CRVIgLS1ib2R5ICIkKGNhdCA8PCdFT0YnCiMjIENvZGUgUmV2aWV3IFN1bW1hcnkKCioqVmVyZGljdDogQ2hhbmdlcyBSZXF1ZXN0ZWQqKiAoMiBpc3N1ZXMsIDEgc3VnZ2VzdGlvbikKCiMjIyDwn5S0IENyaXRpY2FsCi0gKipzcmMvYXV0aC5weTo0NSoqIOKAlCBTUUwgaW5qZWN0aW9uIHZ1bG5lcmFiaWxpdHkKCiMjIyDimqDvuI8gV2FybmluZ3MKLSAqKnNyYy9tb2RlbHMucHk6MjMqKiDigJQgUGxhaW50ZXh0IHBhc3N3b3JkIHN0b3JhZ2UKCiMjIyDwn5KhIFN1Z2dlc3Rpb25zCi0gKipzcmMvdXRpbHMucHk6OCoqIOKAlCBEdXBsaWNhdGVkIGxvZ2ljLCBjb25zaWRlciBjb25zb2xpZGF0aW5nCgojIyMg4pyFIExvb2tzIEdvb2QKLSBDbGVhbiBBUEkgZGVzaWduCi0gR29vZCBlcnJvciBoYW5kbGluZyBpbiB0aGUgbWlkZGxld2FyZSBsYXllcgoKLS0tCipSZXZpZXdlZCBieSBIZXJtZXMgQWdlbnQqCkVPRgopIgpgYGAKCiMjIyBTdGVwIDk6IENsZWFuIHVwCgpgYGBiYXNoCmdpdCBjaGVja291dCBtYWluCmdpdCBicmFuY2ggLUQgcHItJFBSX05VTUJFUgpgYGAKCiMjIyBEZWNpc2lvbjogQXBwcm92ZSB2cyBSZXF1ZXN0IENoYW5nZXMgdnMgQ29tbWVudAoKLSAqKkFwcHJvdmUqKiDigJQgbm8gY3JpdGljYWwgb3Igd2FybmluZy1sZXZlbCBpc3N1ZXMsIG9ubHkgbWlub3Igc3VnZ2VzdGlvbnMgb3IgYWxsIGNsZWFyCi0gKipSZXF1ZXN0IENoYW5nZXMqKiDigJQgYW55IGNyaXRpY2FsIG9yIHdhcm5pbmctbGV2ZWwgaXNzdWUgdGhhdCBzaG91bGQgYmUgZml4ZWQgYmVmb3JlIG1lcmdlCi0gKipDb21tZW50Kiog4oCUIG9ic2VydmF0aW9ucyBhbmQgc3VnZ2VzdGlvbnMsIGJ1dCBub3RoaW5nIGJsb2NraW5nICh1c2Ugd2hlbiB5b3UncmUgdW5zdXJlIG9yIHRoZSBQUiBpcyBhIGRyYWZ0KQo=
+---
+name: github-code-review
+description: Review code changes by analyzing git diffs, leaving inline comments on PRs, and performing thorough pre-push review. Works with gh CLI or falls back to git + GitHub REST API via curl.
+version: 1.1.0
+author: Hermes Agent
+license: MIT
+metadata:
+  hermes:
+    tags: [GitHub, Code-Review, Pull-Requests, Git, Quality]
+    related_skills: [github-auth, github-pr-workflow]
+---
+
+# GitHub Code Review
+
+Perform code reviews on local changes before pushing, or review open PRs on GitHub. Most of this skill uses plain `git` — the `gh`/`curl` split only matters for PR-level interactions.
+
+## Prerequisites
+
+- Authenticated with GitHub (see `github-auth` skill)
+- Inside a git repository
+
+### Setup (for PR interactions)
+
+```bash
+if command -v gh &>/dev/null && gh auth status &>/dev/null; then
+  AUTH="gh"
+else
+  AUTH="git"
+  if [ -z "$GITHUB_TOKEN" ]; then
+    if [ -f ~/.hermes/.env ] && grep -q "^GITHUB_TOKEN=" ~/.hermes/.env; then
+      GITHUB_TOKEN=$(grep "^GITHUB_TOKEN=" ~/.hermes/.env | head -1 | cut -d= -f2 | tr -d '\n\r')
+    elif grep -q "github.com" ~/.git-credentials 2>/dev/null; then
+      GITHUB_TOKEN=$(grep "github.com" ~/.git-credentials 2>/dev/null | head -1 | sed 's|https://[^:]*:\([^@]*\)@.*|\1|')
+    fi
+  fi
+fi
+
+REMOTE_URL=$(git remote get-url origin)
+OWNER_REPO=$(echo "$REMOTE_URL" | sed -E 's|.*github\.com[:/]||; s|\.git$||')
+OWNER=$(echo "$OWNER_REPO" | cut -d/ -f1)
+REPO=$(echo "$OWNER_REPO" | cut -d/ -f2)
+```
+
+---
+
+## 1. Reviewing Local Changes (Pre-Push)
+
+This is pure `git` — works everywhere, no API needed.
+
+### Get the Diff
+
+```bash
+# Staged changes (what would be committed)
+git diff --staged
+
+# All changes vs main (what a PR would contain)
+git diff main...HEAD
+
+# File names only
+git diff main...HEAD --name-only
+
+# Stat summary (insertions/deletions per file)
+git diff main...HEAD --stat
+```
+
+### Review Strategy
+
+1. **Get the big picture first:**
+
+```bash
+git diff main...HEAD --stat
+git log main..HEAD --oneline
+```
+
+2. **Review file by file** — use `read_file` on changed files for full context, and the diff to see what changed:
+
+```bash
+git diff main...HEAD -- src/auth/login.py
+```
+
+3. **Check for common issues:**
+
+```bash
+# Debug statements, TODOs, console.logs left behind
+git diff main...HEAD | grep -n "print(\|console\.log\|TODO\|FIXME\|HACK\|XXX\|debugger"
+
+# Large files accidentally staged
+git diff main...HEAD --stat | sort -t'|' -k2 -rn | head -10
+
+# Secrets or credential patterns
+git diff main...HEAD | grep -in "password\|secret\|api_key\|token.*=\|private_key"
+
+# Merge conflict markers
+git diff main...HEAD | grep -n "<<<<<<\|>>>>>>\|======="
+```
+
+4. **Present structured feedback** to the user.
+
+### Review Output Format
+
+When reviewing local changes, present findings in this structure:
+
+```
+## Code Review Summary
+
+### Critical
+- **src/auth.py:45** — SQL injection: user input passed directly to query.
+  Suggestion: Use parameterized queries.
+
+### Warnings
+- **src/models/user.py:23** — Password stored in plaintext. Use bcrypt or argon2.
+- **src/api/routes.py:112** — No rate limiting on login endpoint.
+
+### Suggestions
+- **src/utils/helpers.py:8** — Duplicates logic in `src/core/utils.py:34`. Consolidate.
+- **tests/test_auth.py** — Missing edge case: expired token test.
+
+### Looks Good
+- Clean separation of concerns in the middleware layer
+- Good test coverage for the happy path
+```
+
+---
+
+## 2. Reviewing a Pull Request on GitHub
+
+### View PR Details
+
+**With gh:**
+
+```bash
+gh pr view 123
+gh pr diff 123
+gh pr diff 123 --name-only
+```
+
+**With git + curl:**
+
+```bash
+PR_NUMBER=123
+
+# Get PR details
+curl -s \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  https://api.github.com/repos/$OWNER/$REPO/pulls/$PR_NUMBER \
+  | python3 -c "
+import sys, json
+pr = json.load(sys.stdin)
+print(f\"Title: {pr['title']}\")
+print(f\"Author: {pr['user']['login']}\")
+print(f\"Branch: {pr['head']['ref']} -> {pr['base']['ref']}\")
+print(f\"State: {pr['state']}\")
+print(f\"Body:\n{pr['body']}\")"
+
+# List changed files
+curl -s \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  https://api.github.com/repos/$OWNER/$REPO/pulls/$PR_NUMBER/files \
+  | python3 -c "
+import sys, json
+for f in json.load(sys.stdin):
+    print(f\"{f['status']:10} +{f['additions']:-4} -{f['deletions']:-4}  {f['filename']}\")"
+```
+
+### Check Out PR Locally for Full Review
+
+This works with plain `git` — no `gh` needed:
+
+```bash
+# Fetch the PR branch and check it out
+git fetch origin pull/123/head:pr-123
+git checkout pr-123
+
+# Now you can use read_file, search_files, run tests, etc.
+
+# View diff against the base branch
+git diff main...pr-123
+```
+
+**With gh (shortcut):**
+
+```bash
+gh pr checkout 123
+```
+
+### Leave Comments on a PR
+
+**General PR comment — with gh:**
+
+```bash
+gh pr comment 123 --body "Overall looks good, a few suggestions below."
+```
+
+**General PR comment — with curl:**
+
+```bash
+curl -s -X POST \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  https://api.github.com/repos/$OWNER/$REPO/issues/$PR_NUMBER/comments \
+  -d '{"body": "Overall looks good, a few suggestions below."}'
+```
+
+### Leave Inline Review Comments
+
+**Single inline comment — with gh (via API):**
+
+```bash
+HEAD_SHA=$(gh pr view 123 --json headRefOid --jq '.headRefOid')
+
+gh api repos/$OWNER/$REPO/pulls/123/comments \
+  --method POST \
+  -f body="This could be simplified with a list comprehension." \
+  -f path="src/auth/login.py" \
+  -f commit_id="$HEAD_SHA" \
+  -f line=45 \
+  -f side="RIGHT"
+```
+
+**Single inline comment — with curl:**
+
+```bash
+# Get the head commit SHA
+HEAD_SHA=$(curl -s \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  https://api.github.com/repos/$OWNER/$REPO/pulls/$PR_NUMBER \
+  | python3 -c "import sys,json; print(json.load(sys.stdin)['head']['sha'])")
+
+curl -s -X POST \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  https://api.github.com/repos/$OWNER/$REPO/pulls/$PR_NUMBER/comments \
+  -d "{
+    \"body\": \"This could be simplified with a list comprehension.\",
+    \"path\": \"src/auth/login.py\",
+    \"commit_id\": \"$HEAD_SHA\",
+    \"line\": 45,
+    \"side\": \"RIGHT\"
+  }"
+```
+
+### Submit a Formal Review (Approve / Request Changes)
+
+**With gh:**
+
+```bash
+gh pr review 123 --approve --body "LGTM!"
+gh pr review 123 --request-changes --body "See inline comments."
+gh pr review 123 --comment --body "Some suggestions, nothing blocking."
+```
+
+**With curl — multi-comment review submitted atomically:**
+
+```bash
+HEAD_SHA=$(curl -s \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  https://api.github.com/repos/$OWNER/$REPO/pulls/$PR_NUMBER \
+  | python3 -c "import sys,json; print(json.load(sys.stdin)['head']['sha'])")
+
+curl -s -X POST \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  https://api.github.com/repos/$OWNER/$REPO/pulls/$PR_NUMBER/reviews \
+  -d "{
+    \"commit_id\": \"$HEAD_SHA\",
+    \"event\": \"COMMENT\",
+    \"body\": \"Code review from Hermes Agent\",
+    \"comments\": [
+      {\"path\": \"src/auth.py\", \"line\": 45, \"body\": \"Use parameterized queries to prevent SQL injection.\"},
+      {\"path\": \"src/models/user.py\", \"line\": 23, \"body\": \"Hash passwords with bcrypt before storing.\"},
+      {\"path\": \"tests/test_auth.py\", \"line\": 1, \"body\": \"Add test for expired token edge case.\"}
+    ]
+  }"
+```
+
+Event values: `"APPROVE"`, `"REQUEST_CHANGES"`, `"COMMENT"`
+
+The `line` field refers to the line number in the *new* version of the file. For deleted lines, use `"side": "LEFT"`.
+
+---
+
+## 3. Review Checklist
+
+When performing a code review (local or PR), systematically check:
+
+### Correctness
+- Does the code do what it claims?
+- Edge cases handled (empty inputs, nulls, large data, concurrent access)?
+- Error paths handled gracefully?
+
+### Security
+- No hardcoded secrets, credentials, or API keys
+- Input validation on user-facing inputs
+- No SQL injection, XSS, or path traversal
+- Auth/authz checks where needed
+
+### Code Quality
+- Clear naming (variables, functions, classes)
+- No unnecessary complexity or premature abstraction
+- DRY — no duplicated logic that should be extracted
+- Functions are focused (single responsibility)
+
+### Testing
+- New code paths tested?
+- Happy path and error cases covered?
+- Tests readable and maintainable?
+
+### Performance
+- No N+1 queries or unnecessary loops
+- Appropriate caching where beneficial
+- No blocking operations in async code paths
+
+### Documentation
+- Public APIs documented
+- Non-obvious logic has comments explaining "why"
+- README updated if behavior changed
+
+---
+
+## 4. Pre-Push Review Workflow
+
+When the user asks you to "review the code" or "check before pushing":
+
+1. `git diff main...HEAD --stat` — see scope of changes
+2. `git diff main...HEAD` — read the full diff
+3. For each changed file, use `read_file` if you need more context
+4. Apply the checklist above
+5. Present findings in the structured format (Critical / Warnings / Suggestions / Looks Good)
+6. If critical issues found, offer to fix them before the user pushes
+
+---
+
+## 5. PR Review Workflow (End-to-End)
+
+When the user asks you to "review PR #N", "look at this PR", or gives you a PR URL, follow this recipe:
+
+### Step 1: Set up environment
+
+```bash
+source "${HERMES_HOME:-$HOME/.hermes}/skills/github/github-auth/scripts/gh-env.sh"
+# Or run the inline setup block from the top of this skill
+```
+
+### Step 2: Gather PR context
+
+Get the PR metadata, description, and list of changed files to understand scope before diving into code.
+
+**With gh:**
+```bash
+gh pr view 123
+gh pr diff 123 --name-only
+gh pr checks 123
+```
+
+**With curl:**
+```bash
+PR_NUMBER=123
+
+# PR details (title, author, description, branch)
+curl -s -H "Authorization: token $GITHUB_TOKEN" \
+  https://api.github.com/repos/$GH_OWNER/$GH_REPO/pulls/$PR_NUMBER
+
+# Changed files with line counts
+curl -s -H "Authorization: token $GITHUB_TOKEN" \
+  https://api.github.com/repos/$GH_OWNER/$GH_REPO/pulls/$PR_NUMBER/files
+```
+
+### Step 3: Check out the PR locally
+
+This gives you full access to `read_file`, `search_files`, and the ability to run tests.
+
+```bash
+git fetch origin pull/$PR_NUMBER/head:pr-$PR_NUMBER
+git checkout pr-$PR_NUMBER
+```
+
+### Step 4: Read the diff and understand changes
+
+```bash
+# Full diff against the base branch
+git diff main...HEAD
+
+# Or file-by-file for large PRs
+git diff main...HEAD --name-only
+# Then for each file:
+git diff main...HEAD -- path/to/file.py
+```
+
+For each changed file, use `read_file` to see full context around the changes — diffs alone can miss issues visible only with surrounding code.
+
+### Step 5: Run automated checks locally (if applicable)
+
+```bash
+# Run tests if there's a test suite
+python -m pytest 2>&1 | tail -20
+# or: npm test, cargo test, go test ./..., etc.
+
+# Run linter if configured
+ruff check . 2>&1 | head -30
+# or: eslint, clippy, etc.
+```
+
+### Step 6: Apply the review checklist (Section 3)
+
+Go through each category: Correctness, Security, Code Quality, Testing, Performance, Documentation.
+
+### Step 7: Post the review to GitHub
+
+Collect your findings and submit them as a formal review with inline comments.
+
+**With gh:**
+```bash
+# If no issues — approve
+gh pr review $PR_NUMBER --approve --body "Reviewed by Hermes Agent. Code looks clean — good test coverage, no security concerns."
+
+# If issues found — request changes with inline comments
+gh pr review $PR_NUMBER --request-changes --body "Found a few issues — see inline comments."
+```
+
+**With curl — atomic review with multiple inline comments:**
+```bash
+HEAD_SHA=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+  https://api.github.com/repos/$GH_OWNER/$GH_REPO/pulls/$PR_NUMBER \
+  | python3 -c "import sys,json; print(json.load(sys.stdin)['head']['sha'])")
+
+# Build the review JSON — event is APPROVE, REQUEST_CHANGES, or COMMENT
+curl -s -X POST \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  https://api.github.com/repos/$GH_OWNER/$GH_REPO/pulls/$PR_NUMBER/reviews \
+  -d "{
+    \"commit_id\": \"$HEAD_SHA\",
+    \"event\": \"REQUEST_CHANGES\",
+    \"body\": \"## Hermes Agent Review\n\nFound 2 issues, 1 suggestion. See inline comments.\",
+    \"comments\": [
+      {\"path\": \"src/auth.py\", \"line\": 45, \"body\": \"🔴 **Critical:** User input passed directly to SQL query — use parameterized queries.\"},
+      {\"path\": \"src/models.py\", \"line\": 23, \"body\": \"⚠️ **Warning:** Password stored without hashing.\"},
+      {\"path\": \"src/utils.py\", \"line\": 8, \"body\": \"💡 **Suggestion:** This duplicates logic in core/utils.py:34.\"}
+    ]
+  }"
+```
+
+### Step 8: Also post a summary comment
+
+In addition to inline comments, leave a top-level summary so the PR author gets the full picture at a glance. Use the review output format from `references/review-output-template.md`.
+
+**With gh:**
+```bash
+gh pr comment $PR_NUMBER --body "$(cat <<'EOF'
+## Code Review Summary
+
+**Verdict: Changes Requested** (2 issues, 1 suggestion)
+
+### 🔴 Critical
+- **src/auth.py:45** — SQL injection vulnerability
+
+### ⚠️ Warnings
+- **src/models.py:23** — Plaintext password storage
+
+### 💡 Suggestions
+- **src/utils.py:8** — Duplicated logic, consider consolidating
+
+### ✅ Looks Good
+- Clean API design
+- Good error handling in the middleware layer
+
+---
+*Reviewed by Hermes Agent*
+EOF
+)"
+```
+
+### Step 9: Clean up
+
+```bash
+git checkout main
+git branch -D pr-$PR_NUMBER
+```
+
+### Decision: Approve vs Request Changes vs Comment
+
+- **Approve** — no critical or warning-level issues, only minor suggestions or all clear
+- **Request Changes** — any critical or warning-level issue that should be fixed before merge
+- **Comment** — observations and suggestions, but nothing blocking (use when you're unsure or the PR is a draft)

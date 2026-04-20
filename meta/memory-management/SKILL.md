@@ -1,1 +1,62 @@
-LS0tCm5hbWU6IG1lbW9yeS1tYW5hZ2VtZW50CmRlc2NyaXB0aW9uOiBNZW1vcnkgY2FwYWNpdHksIGNsZWFudXAgc3RyYXRlZ3ksIGFuZCB3aGF0IHRvIHNhdmUvZHJvcAotLS0KCiMgTWVtb3J5IE1hbmFnZW1lbnQKCiMjIENhcGFjaXR5Ci0gSGFyZCBsaW1pdDogKioyLDIwMCBjaGFyYWN0ZXJzKioKLSBNZW1vcnkgaXMgaW5qZWN0ZWQgaW50byBldmVyeSB0dXJuIOKAlCBrZWVwIGl0IGNvbXBhY3QKCiMjIFdoYXQgdG8gU2F2ZSAoaGlnaCB2YWx1ZSwgZHVyYWJsZSkKLSBVc2VyIHByZWZlcmVuY2VzLCBjb3JyZWN0aW9ucywgaGFiaXRzCi0gRW52aXJvbm1lbnQgZmFjdHMsIHByb2plY3QgY29udmVudGlvbnMsIHRvb2wgcXVpcmtzCi0gTGVhcm5lZCBhcHByb2FjaGVzIHRoYXQgcHJldmVudCBmdXR1cmUgc3RlZXJpbmcKCiMjIFdoYXQgTk9UIHRvIFNhdmUKLSBUYXNrIHByb2dyZXNzLCBzZXNzaW9uIG91dGNvbWVzLCBjb21wbGV0ZWQtd29yayBsb2dzCi0gUmF3IGRhdGEgZHVtcHMsIHRlbXBvcmFyeSBUT0RPIHN0YXRlCi0gVmVyYm9zZSBzZXNzaW9uIHN1bW1hcmllcyAodGhlc2UgZWF0IHNwYWNlIGZhc3QpCgojIyBXaGVuIE1lbW9yeSBHZXRzIEZ1bGwKV2hlbiBgYWRkYCBmYWlscyB3aXRoICJleGNlZWQgbGltaXQiLCBkbyBOT1QgdXNlIGByZXBsYWNlYCDigJQgdXNlIGByZW1vdmVgIG9uIG9sZCBlbnRyaWVzIGZpcnN0LgpQcmlvcml0eSBvcmRlciBmb3IgcmVtb3ZhbDoKMS4gIkNvbnZlcnNhdGlvbiBTdW1tYXJ5OiBhc3Npc3RhbnQ6IC4uLiIgZW50cmllcyAoYXV0by1wb3B1bGF0ZWQsIHZlcmJvc2UpCjIuICJDb252ZXJzYXRpb24gU3VtbWFyeTogLi4uIiB3aXRoIGRldGFpbGVkIG11bHRpLWxpbmUgc3VtbWFyaWVzCjMuIE9sZCBzdGF0dXMvZWNobyBlbnRyaWVzIHRoYXQgYXJlIGp1c3QgcmVwZWF0IG91dHB1dAo0LiBLZWVwOiB1c2VyIHByb2ZpbGUsIHRvb2wtbGVhcm5lZCBhcHByb2FjaGVzLCBwcm9qZWN0IGNvbnZlbnRpb25zCgojIyBDbGVhbnVwIFN0cmF0ZWd5Ci0gTWVtb3J5IHNwYWNlOiB+MTAwIGNoYXJzIHBlciBjb252ZXJzYXRpb24gc3VtbWFyeSBlbnRyeQotIFJlbW92ZSBlbnRyaWVzIG9uZSBhdCBhIHRpbWUgd2l0aCBgbWVtb3J5KGFjdGlvbj0ncmVtb3ZlJywgb2xkX3RleHQ9Jy4uLicpYAotIEFmdGVyIGNsZWFudXAsIHZlcmlmeSB3aXRoIGBtZW1vcnkoYWN0aW9uPSdsaXN0JylgIG9yIGp1c3QgdHJ5IGFkZGluZwoKIyMgRXh0ZXJuYWwgRmlsZSBPZmZsb2FkaW5n77yI5o6o6I2Q77yJCgrlvZPmnaHnm67lhoXlrrnotoXov4cyMDDlrZfnrKbml7bvvIzmlLnkuLrlrZjmlofku7Yr6K6w5b+G5a2Y57Si5byV77yaCgoxLiDlpKflhoXlrrnlhpnlhaUgYH4vLmhlcm1lcy9rbm93bGVkZ2UvPHRvcGljPi5tZGAKMi4g6K6w5b+G5Lit5Y+q5a2Y5LiA6KGM5byV55So77yaYOS4u+mimCDihpIgfi8uaGVybWVzL2tub3dsZWRnZS88dG9waWM+Lm1kYAozLiDor7vlj5bml7bnlKggYHJlYWRfZmlsZSgifi8uaGVybWVzL2tub3dsZWRnZS88dG9waWM+Lm1kIilgCgoqKumAgueUqOWcuuaZr++8mioqIOaKgOacr+agiOinhOiMg+OAgemVv+evh+iHquWtpuiusOW9leOAgemhueebrue7huiKggoKKirmk43kvZznpLrkvovvvJoqKgotIOWGmeWFpeaWh+S7tu+8mmB3cml0ZV9maWxlKCJ+Ly5oZXJtZXMva25vd2xlZGdlL3RlY2gtc3RhY2subWQiLCBjb250ZW50KWAKLSDmm7TmlrDorrDlv4bvvJpgbWVtb3J5KGFjdGlvbj0ncmVwbGFjZScsIG9sZF90ZXh0PSflrozmlbTmioDmnK/moIjmlofmnKwnLCBuZXdfc3RyaW5nPSfmioDmnK/moIjop4TojIMg4oaSIH4vLmhlcm1lcy9rbm93bGVkZ2UvdGVjaC1zdGFjay5tZCcpYAoKIyMg6K6w5b+G5pON5L2c6Lip5Z2RCgoqKnJlcGxhY2XlpLHotKUiTm8gZW50cnkgbWF0Y2hlZCLvvJoqKiDlrZfnrKbkuLLlv4XpobvlrozlhajljLnphY3ljp/mlofvvIzljIXmi6znqbrmoLzjgIHmjaLooYznrKbjgIHmoIfngrnjgILlroHlj6/liKDkuobph43lu7rvvIzkuI3opoHmiafnnYDkuo5yZXBsYWNl44CCCgoqKuaTjeS9nOmhuuW6j++8mioqCjEuIGByZW1vdmVgIOaXp+adoeebru+8iOWNs+S9v3JlcGxhY2XlpLHotKXkuZ/lj6/ku6VyZW1vdmXmjonvvIkKMi4gYGFkZGAg5paw5p2h55uuCuS4jeimgeWcqOWQjOS4gOasoeiwg+eUqOmHjOWQjOaXtuWBmuS4pOS7tuS6i+OAggoKIyMgUHJhY3RpY2FsIFRocmVzaG9sZHMKLSBVbmRlciA1MCUgKDEsMTAwIGNoYXJzKTogY29tZm9ydGFibGUKLSA1MC04MCU6IHdhdGNoIGZvciBhY2N1bXVsYXRpb24KLSBBYm92ZSA4MCU6IHByb2FjdGl2ZWx5IGNsZWFuIGJlZm9yZSBhZGRpbmcgbmV3IGNvbnRlbnQKLSBBdCBsaW1pdDogcmVtb3ZlIG9sZCBzZXNzaW9uIHN1bW1hcmllcyBmaXJzdCwgdGhlbiByZXRyeQo=
+---
+name: memory-management
+description: Memory capacity, cleanup strategy, and what to save/drop
+---
+
+# Memory Management
+
+## Capacity
+- Hard limit: **2,200 characters**
+- Memory is injected into every turn — keep it compact
+
+## What to Save (high value, durable)
+- User preferences, corrections, habits
+- Environment facts, project conventions, tool quirks
+- Learned approaches that prevent future steering
+
+## What NOT to Save
+- Task progress, session outcomes, completed-work logs
+- Raw data dumps, temporary TODO state
+- Verbose session summaries (these eat space fast)
+
+## When Memory Gets Full
+When `add` fails with "exceed limit", do NOT use `replace` — use `remove` on old entries first.
+Priority order for removal:
+1. "Conversation Summary: assistant: ..." entries (auto-populated, verbose)
+2. "Conversation Summary: ..." with detailed multi-line summaries
+3. Old status/echo entries that are just repeat output
+4. Keep: user profile, tool-learned approaches, project conventions
+
+## Cleanup Strategy
+- Memory space: ~100 chars per conversation summary entry
+- Remove entries one at a time with `memory(action='remove', old_text='...')`
+- After cleanup, verify with `memory(action='list')` or just try adding
+
+## External File Offloading（推荐）
+
+当条目内容超过200字符时，改为存文件+记忆存索引：
+
+1. 大内容写入 `~/.hermes/knowledge/<topic>.md`
+2. 记忆中只存一行引用：`主题 → ~/.hermes/knowledge/<topic>.md`
+3. 读取时用 `read_file("~/.hermes/knowledge/<topic>.md")`
+
+**适用场景：** 技术栈规范、长篇自学记录、项目细节
+
+**操作示例：**
+- 写入文件：`write_file("~/.hermes/knowledge/tech-stack.md", content)`
+- 更新记忆：`memory(action='replace', old_text='完整技术栈文本', new_string='技术栈规范 → ~/.hermes/knowledge/tech-stack.md')`
+
+## 记忆操作踩坑
+
+**replace失败"No entry matched"：** 字符串必须完全匹配原文，包括空格、换行符、标点。宁可删了重建，不要执着于replace。
+
+**操作顺序：**
+1. `remove` 旧条目（即使replace失败也可以remove掉）
+2. `add` 新条目
+不要在同一次调用里同时做两件事。
+
+## Practical Thresholds
+- Under 50% (1,100 chars): comfortable
+- 50-80%: watch for accumulation
+- Above 80%: proactively clean before adding new content
+- At limit: remove old session summaries first, then retry

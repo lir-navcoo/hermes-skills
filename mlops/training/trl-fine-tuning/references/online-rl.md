@@ -1,1 +1,82 @@
-IyBPbmxpbmUgUkwgTWV0aG9kcwoKR3VpZGUgdG8gb25saW5lIHJlaW5mb3JjZW1lbnQgbGVhcm5pbmcgd2l0aCBQUE8sIEdSUE8sIFJMT08sIGFuZCBPbmxpbmVEUE8uCgojIyBPdmVydmlldwoKT25saW5lIFJMIGdlbmVyYXRlcyBjb21wbGV0aW9ucyBkdXJpbmcgdHJhaW5pbmcgYW5kIG9wdGltaXplcyBiYXNlZCBvbiByZXdhcmRzLgoKIyMgUFBPIChQcm94aW1hbCBQb2xpY3kgT3B0aW1pemF0aW9uKQoKQ2xhc3NpYyBSTCBhbGdvcml0aG0gZm9yIExMTSBhbGlnbm1lbnQuCgojIyMgQmFzaWMgVXNhZ2UKCmBgYGJhc2gKcHl0aG9uIC1tIHRybC5zY3JpcHRzLnBwbyBcCiAgICAtLW1vZGVsX25hbWVfb3JfcGF0aCBRd2VuL1F3ZW4yLjUtMC41Qi1JbnN0cnVjdCBcCiAgICAtLXJld2FyZF9tb2RlbF9wYXRoIHJld2FyZC1tb2RlbCBcCiAgICAtLWRhdGFzZXRfbmFtZSB0cmwtaW50ZXJuYWwtdGVzdGluZy9kZXNjcmlwdGl2ZW5lc3Mtc2VudGltZW50LXRybC1zdHlsZSBcCiAgICAtLW91dHB1dF9kaXIgbW9kZWwtcHBvIFwKICAgIC0tbGVhcm5pbmdfcmF0ZSAzZS02IFwKICAgIC0tcGVyX2RldmljZV90cmFpbl9iYXRjaF9zaXplIDY0IFwKICAgIC0tdG90YWxfZXBpc29kZXMgMTAwMDAgXAogICAgLS1udW1fcHBvX2Vwb2NocyA0IFwKICAgIC0ta2xfY29lZiAwLjA1CmBgYAoKIyMjIEtleSBQYXJhbWV0ZXJzCgotIGBrbF9jb2VmYDogS0wgcGVuYWx0eSAoMC4wNS0wLjIpCi0gYG51bV9wcG9fZXBvY2hzYDogRXBvY2hzIHBlciBiYXRjaCAoMi00KQotIGBjbGlwcmFuZ2VgOiBQUE8gY2xpcCAoMC4xLTAuMykKLSBgdmZfY29lZmA6IFZhbHVlIGZ1bmN0aW9uIGNvZWYgKDAuMSkKCiMjIEdSUE8gKEdyb3VwIFJlbGF0aXZlIFBvbGljeSBPcHRpbWl6YXRpb24pCgpNZW1vcnktZWZmaWNpZW50IG9ubGluZSBSTC4KCiMjIyBCYXNpYyBVc2FnZQoKYGBgcHl0aG9uCmZyb20gdHJsIGltcG9ydCBHUlBPVHJhaW5lciwgR1JQT0NvbmZpZwpmcm9tIGRhdGFzZXRzIGltcG9ydCBsb2FkX2RhdGFzZXQKCiMgRGVmaW5lIHJld2FyZCBmdW5jdGlvbgpkZWYgcmV3YXJkX2Z1bmMoY29tcGxldGlvbnMsICoqa3dhcmdzKToKICAgIHJldHVybiBbbGVuKHNldChjLnNwbGl0KCkpKSBmb3IgYyBpbiBjb21wbGV0aW9uc10KCmNvbmZpZyA9IEdSUE9Db25maWcoCiAgICBvdXRwdXRfZGlyPSJtb2RlbC1ncnBvIiwKICAgIG51bV9nZW5lcmF0aW9ucz00LCAgIyBDb21wbGV0aW9ucyBwZXIgcHJvbXB0CiAgICBtYXhfbmV3X3Rva2Vucz0xMjgKKQoKdHJhaW5lciA9IEdSUE9UcmFpbmVyKAogICAgbW9kZWw9IlF3ZW4vUXdlbjItMC41Qi1JbnN0cnVjdCIsCiAgICByZXdhcmRfZnVuY3M9cmV3YXJkX2Z1bmMsCiAgICBhcmdzPWNvbmZpZywKICAgIHRyYWluX2RhdGFzZXQ9bG9hZF9kYXRhc2V0KCJ0cmwtbGliL3RsZHIiLCBzcGxpdD0idHJhaW4iKQopCnRyYWluZXIudHJhaW4oKQpgYGAKCiMjIyBLZXkgUGFyYW1ldGVycwoKLSBgbnVtX2dlbmVyYXRpb25zYDogMi04IGNvbXBsZXRpb25zCi0gYG1heF9uZXdfdG9rZW5zYDogNjQtMjU2Ci0gTGVhcm5pbmcgcmF0ZTogMWUtNSB0byAxZS00CgojIyBNZW1vcnkgQ29tcGFyaXNvbgoKfCBNZXRob2QgfCBNZW1vcnkgKDdCKSB8IFNwZWVkIHwgVXNlIENhc2UgfAp8LS0tLS0tLS18LS0tLS0tLS0tLS0tLXwtLS0tLS0tfC0tLS0tLS0tLS18CnwgUFBPIHwgNDBHQiB8IE1lZGl1bSB8IE1heGltdW0gY29udHJvbCB8CnwgR1JQTyB8IDI0R0IgfCBGYXN0IHwgKipNZW1vcnktY29uc3RyYWluZWQqKiB8CnwgT25saW5lRFBPIHwgMjhHQiB8IEZhc3QgfCBObyByZXdhcmQgbW9kZWwgfAoKIyMgUmVmZXJlbmNlcwoKLSBQUE8gcGFwZXI6IGh0dHBzOi8vYXJ4aXYub3JnL2Ficy8xNzA3LjA2MzQ3Ci0gR1JQTyBwYXBlcjogaHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI0MDIuMDMzMDAKLSBUUkwgZG9jczogaHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kb2NzL3RybC8K
+# Online RL Methods
+
+Guide to online reinforcement learning with PPO, GRPO, RLOO, and OnlineDPO.
+
+## Overview
+
+Online RL generates completions during training and optimizes based on rewards.
+
+## PPO (Proximal Policy Optimization)
+
+Classic RL algorithm for LLM alignment.
+
+### Basic Usage
+
+```bash
+python -m trl.scripts.ppo \
+    --model_name_or_path Qwen/Qwen2.5-0.5B-Instruct \
+    --reward_model_path reward-model \
+    --dataset_name trl-internal-testing/descriptiveness-sentiment-trl-style \
+    --output_dir model-ppo \
+    --learning_rate 3e-6 \
+    --per_device_train_batch_size 64 \
+    --total_episodes 10000 \
+    --num_ppo_epochs 4 \
+    --kl_coef 0.05
+```
+
+### Key Parameters
+
+- `kl_coef`: KL penalty (0.05-0.2)
+- `num_ppo_epochs`: Epochs per batch (2-4)
+- `cliprange`: PPO clip (0.1-0.3)
+- `vf_coef`: Value function coef (0.1)
+
+## GRPO (Group Relative Policy Optimization)
+
+Memory-efficient online RL.
+
+### Basic Usage
+
+```python
+from trl import GRPOTrainer, GRPOConfig
+from datasets import load_dataset
+
+# Define reward function
+def reward_func(completions, **kwargs):
+    return [len(set(c.split())) for c in completions]
+
+config = GRPOConfig(
+    output_dir="model-grpo",
+    num_generations=4,  # Completions per prompt
+    max_new_tokens=128
+)
+
+trainer = GRPOTrainer(
+    model="Qwen/Qwen2-0.5B-Instruct",
+    reward_funcs=reward_func,
+    args=config,
+    train_dataset=load_dataset("trl-lib/tldr", split="train")
+)
+trainer.train()
+```
+
+### Key Parameters
+
+- `num_generations`: 2-8 completions
+- `max_new_tokens`: 64-256
+- Learning rate: 1e-5 to 1e-4
+
+## Memory Comparison
+
+| Method | Memory (7B) | Speed | Use Case |
+|--------|-------------|-------|----------|
+| PPO | 40GB | Medium | Maximum control |
+| GRPO | 24GB | Fast | **Memory-constrained** |
+| OnlineDPO | 28GB | Fast | No reward model |
+
+## References
+
+- PPO paper: https://arxiv.org/abs/1707.06347
+- GRPO paper: https://arxiv.org/abs/2402.03300
+- TRL docs: https://huggingface.co/docs/trl/

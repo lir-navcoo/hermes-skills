@@ -1,1 +1,131 @@
-LS0tCm5hbWU6IGZpbmRteQpkZXNjcmlwdGlvbjogVHJhY2sgQXBwbGUgZGV2aWNlcyBhbmQgQWlyVGFncyB2aWEgRmluZE15LmFwcCBvbiBtYWNPUyB1c2luZyBBcHBsZVNjcmlwdCBhbmQgc2NyZWVuIGNhcHR1cmUuCnZlcnNpb246IDEuMC4wCmF1dGhvcjogSGVybWVzIEFnZW50CmxpY2Vuc2U6IE1JVApwbGF0Zm9ybXM6IFttYWNvc10KbWV0YWRhdGE6CiAgaGVybWVzOgogICAgdGFnczogW0ZpbmRNeSwgQWlyVGFnLCBsb2NhdGlvbiwgdHJhY2tpbmcsIG1hY09TLCBBcHBsZV0KLS0tCgojIEZpbmQgTXkgKEFwcGxlKQoKVHJhY2sgQXBwbGUgZGV2aWNlcyBhbmQgQWlyVGFncyB2aWEgdGhlIEZpbmRNeS5hcHAgb24gbWFjT1MuIFNpbmNlIEFwcGxlIGRvZXNuJ3QKcHJvdmlkZSBhIENMSSBmb3IgRmluZE15LCB0aGlzIHNraWxsIHVzZXMgQXBwbGVTY3JpcHQgdG8gb3BlbiB0aGUgYXBwIGFuZApzY3JlZW4gY2FwdHVyZSB0byByZWFkIGRldmljZSBsb2NhdGlvbnMuCgojIyBQcmVyZXF1aXNpdGVzCgotICoqbWFjT1MqKiB3aXRoIEZpbmQgTXkgYXBwIGFuZCBpQ2xvdWQgc2lnbmVkIGluCi0gRGV2aWNlcy9BaXJUYWdzIGFscmVhZHkgcmVnaXN0ZXJlZCBpbiBGaW5kIE15Ci0gU2NyZWVuIFJlY29yZGluZyBwZXJtaXNzaW9uIGZvciB0ZXJtaW5hbCAoU3lzdGVtIFNldHRpbmdzIOKGkiBQcml2YWN5IOKGkiBTY3JlZW4gUmVjb3JkaW5nKQotICoqT3B0aW9uYWwgYnV0IHJlY29tbWVuZGVkKio6IEluc3RhbGwgYHBlZWthYm9vYCBmb3IgYmV0dGVyIFVJIGF1dG9tYXRpb246CiAgYGJyZXcgaW5zdGFsbCBzdGVpcGV0ZS90YXAvcGVla2Fib29gCgojIyBXaGVuIHRvIFVzZQoKLSBVc2VyIGFza3MgIndoZXJlIGlzIG15IFtkZXZpY2UvY2F0L2tleXMvYmFnXT8iCi0gVHJhY2tpbmcgQWlyVGFnIGxvY2F0aW9ucwotIENoZWNraW5nIGRldmljZSBsb2NhdGlvbnMgKGlQaG9uZSwgaVBhZCwgTWFjLCBBaXJQb2RzKQotIE1vbml0b3JpbmcgcGV0IG9yIGl0ZW0gbW92ZW1lbnQgb3ZlciB0aW1lIChBaXJUYWcgcGF0cm9sIHJvdXRlcykKCiMjIE1ldGhvZCAxOiBBcHBsZVNjcmlwdCArIFNjcmVlbnNob3QgKEJhc2ljKQoKIyMjIE9wZW4gRmluZE15IGFuZCBOYXZpZ2F0ZQoKYGBgYmFzaAojIE9wZW4gRmluZCBNeSBhcHAKb3Nhc2NyaXB0IC1lICd0ZWxsIGFwcGxpY2F0aW9uICJGaW5kTXkiIHRvIGFjdGl2YXRlJwoKIyBXYWl0IGZvciBpdCB0byBsb2FkCnNsZWVwIDMKCiMgVGFrZSBhIHNjcmVlbnNob3Qgb2YgdGhlIEZpbmQgTXkgd2luZG93CnNjcmVlbmNhcHR1cmUgLXcgLW8gL3RtcC9maW5kbXkucG5nCmBgYAoKVGhlbiB1c2UgYHZpc2lvbl9hbmFseXplYCB0byByZWFkIHRoZSBzY3JlZW5zaG90OgpgYGAKdmlzaW9uX2FuYWx5emUoaW1hZ2VfdXJsPSIvdG1wL2ZpbmRteS5wbmciLCBxdWVzdGlvbj0iV2hhdCBkZXZpY2VzL2l0ZW1zIGFyZSBzaG93biBhbmQgd2hhdCBhcmUgdGhlaXIgbG9jYXRpb25zPyIpCmBgYAoKIyMjIFN3aXRjaCBCZXR3ZWVuIFRhYnMKCmBgYGJhc2gKIyBTd2l0Y2ggdG8gRGV2aWNlcyB0YWIKb3Nhc2NyaXB0IC1lICcKdGVsbCBhcHBsaWNhdGlvbiAiU3lzdGVtIEV2ZW50cyIKICAgIHRlbGwgcHJvY2VzcyAiRmluZE15IgogICAgICAgIGNsaWNrIGJ1dHRvbiAiRGV2aWNlcyIgb2YgdG9vbGJhciAxIG9mIHdpbmRvdyAxCiAgICBlbmQgdGVsbAplbmQgdGVsbCcKCiMgU3dpdGNoIHRvIEl0ZW1zIHRhYiAoQWlyVGFncykKb3Nhc2NyaXB0IC1lICcKdGVsbCBhcHBsaWNhdGlvbiAiU3lzdGVtIEV2ZW50cyIKICAgIHRlbGwgcHJvY2VzcyAiRmluZE15IgogICAgICAgIGNsaWNrIGJ1dHRvbiAiSXRlbXMiIG9mIHRvb2xiYXIgMSBvZiB3aW5kb3cgMQogICAgZW5kIHRlbGwKZW5kIHRlbGwnCmBgYAoKIyMgTWV0aG9kIDI6IFBlZWthYm9vIFVJIEF1dG9tYXRpb24gKFJlY29tbWVuZGVkKQoKSWYgYHBlZWthYm9vYCBpcyBpbnN0YWxsZWQsIHVzZSBpdCBmb3IgbW9yZSByZWxpYWJsZSBVSSBpbnRlcmFjdGlvbjoKCmBgYGJhc2gKIyBPcGVuIEZpbmQgTXkKb3Nhc2NyaXB0IC1lICd0ZWxsIGFwcGxpY2F0aW9uICJGaW5kTXkiIHRvIGFjdGl2YXRlJwpzbGVlcCAzCgojIENhcHR1cmUgYW5kIGFubm90YXRlIHRoZSBVSQpwZWVrYWJvbyBzZWUgLS1hcHAgIkZpbmRNeSIgLS1hbm5vdGF0ZSAtLXBhdGggL3RtcC9maW5kbXktdWkucG5nCgojIENsaWNrIG9uIGEgc3BlY2lmaWMgZGV2aWNlL2l0ZW0gYnkgZWxlbWVudCBJRApwZWVrYWJvbyBjbGljayAtLW9uIEIzIC0tYXBwICJGaW5kTXkiCgojIENhcHR1cmUgdGhlIGRldGFpbCB2aWV3CnBlZWthYm9vIGltYWdlIC0tYXBwICJGaW5kTXkiIC0tcGF0aCAvdG1wL2ZpbmRteS1kZXRhaWwucG5nCmBgYAoKVGhlbiBhbmFseXplIHdpdGggdmlzaW9uOgpgYGAKdmlzaW9uX2FuYWx5emUoaW1hZ2VfdXJsPSIvdG1wL2ZpbmRteS1kZXRhaWwucG5nIiwgcXVlc3Rpb249IldoYXQgaXMgdGhlIGxvY2F0aW9uIHNob3duIGZvciB0aGlzIGRldmljZS9pdGVtPyBJbmNsdWRlIGFkZHJlc3MgYW5kIGNvb3JkaW5hdGVzIGlmIHZpc2libGUuIikKYGBgCgojIyBXb3JrZmxvdzogVHJhY2sgQWlyVGFnIExvY2F0aW9uIE92ZXIgVGltZQoKRm9yIG1vbml0b3JpbmcgYW4gQWlyVGFnIChlLmcuLCB0cmFja2luZyBhIGNhdCdzIHBhdHJvbCByb3V0ZSk6CgpgYGBiYXNoCiMgMS4gT3BlbiBGaW5kTXkgdG8gSXRlbXMgdGFiCm9zYXNjcmlwdCAtZSAndGVsbCBhcHBsaWNhdGlvbiAiRmluZE15IiB0byBhY3RpdmF0ZScKc2xlZXAgMwoKIyAyLiBDbGljayBvbiB0aGUgQWlyVGFnIGl0ZW0gKHN0YXkgb24gcGFnZSDigJQgQWlyVGFnIG9ubHkgdXBkYXRlcyB3aGVuIHBhZ2UgaXMgb3BlbikKCiMgMy4gUGVyaW9kaWNhbGx5IGNhcHR1cmUgbG9jYXRpb24Kd2hpbGUgdHJ1ZTsgZG8KICAgIHNjcmVlbmNhcHR1cmUgLXcgLW8gL3RtcC9maW5kbXktJChkYXRlICslSCVNJVMpLnBuZwogICAgc2xlZXAgMzAwICAjIEV2ZXJ5IDUgbWludXRlcwpkb25lCmBgYAoKQW5hbHl6ZSBlYWNoIHNjcmVlbnNob3Qgd2l0aCB2aXNpb24gdG8gZXh0cmFjdCBjb29yZGluYXRlcywgdGhlbiBjb21waWxlIGEgcm91dGUuCgojIyBMaW1pdGF0aW9ucwoKLSBGaW5kTXkgaGFzICoqbm8gQ0xJIG9yIEFQSSoqIOKAlCBtdXN0IHVzZSBVSSBhdXRvbWF0aW9uCi0gQWlyVGFncyBvbmx5IHVwZGF0ZSBsb2NhdGlvbiB3aGlsZSB0aGUgRmluZE15IHBhZ2UgaXMgYWN0aXZlbHkgZGlzcGxheWVkCi0gTG9jYXRpb24gYWNjdXJhY3kgZGVwZW5kcyBvbiBuZWFyYnkgQXBwbGUgZGV2aWNlcyBpbiB0aGUgRmluZE15IG5ldHdvcmsKLSBTY3JlZW4gUmVjb3JkaW5nIHBlcm1pc3Npb24gcmVxdWlyZWQgZm9yIHNjcmVlbnNob3RzCi0gQXBwbGVTY3JpcHQgVUkgYXV0b21hdGlvbiBtYXkgYnJlYWsgYWNyb3NzIG1hY09TIHZlcnNpb25zCgojIyBSdWxlcwoKMS4gS2VlcCBGaW5kTXkgYXBwIGluIHRoZSBmb3JlZ3JvdW5kIHdoZW4gdHJhY2tpbmcgQWlyVGFncyAodXBkYXRlcyBzdG9wIHdoZW4gbWluaW1pemVkKQoyLiBVc2UgYHZpc2lvbl9hbmFseXplYCB0byByZWFkIHNjcmVlbnNob3QgY29udGVudCDigJQgZG9uJ3QgdHJ5IHRvIHBhcnNlIHBpeGVscwozLiBGb3Igb25nb2luZyB0cmFja2luZywgdXNlIGEgY3JvbmpvYiB0byBwZXJpb2RpY2FsbHkgY2FwdHVyZSBhbmQgbG9nIGxvY2F0aW9ucwo0LiBSZXNwZWN0IHByaXZhY3kg4oCUIG9ubHkgdHJhY2sgZGV2aWNlcy9pdGVtcyB0aGUgdXNlciBvd25zCg==
+---
+name: findmy
+description: Track Apple devices and AirTags via FindMy.app on macOS using AppleScript and screen capture.
+version: 1.0.0
+author: Hermes Agent
+license: MIT
+platforms: [macos]
+metadata:
+  hermes:
+    tags: [FindMy, AirTag, location, tracking, macOS, Apple]
+---
+
+# Find My (Apple)
+
+Track Apple devices and AirTags via the FindMy.app on macOS. Since Apple doesn't
+provide a CLI for FindMy, this skill uses AppleScript to open the app and
+screen capture to read device locations.
+
+## Prerequisites
+
+- **macOS** with Find My app and iCloud signed in
+- Devices/AirTags already registered in Find My
+- Screen Recording permission for terminal (System Settings → Privacy → Screen Recording)
+- **Optional but recommended**: Install `peekaboo` for better UI automation:
+  `brew install steipete/tap/peekaboo`
+
+## When to Use
+
+- User asks "where is my [device/cat/keys/bag]?"
+- Tracking AirTag locations
+- Checking device locations (iPhone, iPad, Mac, AirPods)
+- Monitoring pet or item movement over time (AirTag patrol routes)
+
+## Method 1: AppleScript + Screenshot (Basic)
+
+### Open FindMy and Navigate
+
+```bash
+# Open Find My app
+osascript -e 'tell application "FindMy" to activate'
+
+# Wait for it to load
+sleep 3
+
+# Take a screenshot of the Find My window
+screencapture -w -o /tmp/findmy.png
+```
+
+Then use `vision_analyze` to read the screenshot:
+```
+vision_analyze(image_url="/tmp/findmy.png", question="What devices/items are shown and what are their locations?")
+```
+
+### Switch Between Tabs
+
+```bash
+# Switch to Devices tab
+osascript -e '
+tell application "System Events"
+    tell process "FindMy"
+        click button "Devices" of toolbar 1 of window 1
+    end tell
+end tell'
+
+# Switch to Items tab (AirTags)
+osascript -e '
+tell application "System Events"
+    tell process "FindMy"
+        click button "Items" of toolbar 1 of window 1
+    end tell
+end tell'
+```
+
+## Method 2: Peekaboo UI Automation (Recommended)
+
+If `peekaboo` is installed, use it for more reliable UI interaction:
+
+```bash
+# Open Find My
+osascript -e 'tell application "FindMy" to activate'
+sleep 3
+
+# Capture and annotate the UI
+peekaboo see --app "FindMy" --annotate --path /tmp/findmy-ui.png
+
+# Click on a specific device/item by element ID
+peekaboo click --on B3 --app "FindMy"
+
+# Capture the detail view
+peekaboo image --app "FindMy" --path /tmp/findmy-detail.png
+```
+
+Then analyze with vision:
+```
+vision_analyze(image_url="/tmp/findmy-detail.png", question="What is the location shown for this device/item? Include address and coordinates if visible.")
+```
+
+## Workflow: Track AirTag Location Over Time
+
+For monitoring an AirTag (e.g., tracking a cat's patrol route):
+
+```bash
+# 1. Open FindMy to Items tab
+osascript -e 'tell application "FindMy" to activate'
+sleep 3
+
+# 2. Click on the AirTag item (stay on page — AirTag only updates when page is open)
+
+# 3. Periodically capture location
+while true; do
+    screencapture -w -o /tmp/findmy-$(date +%H%M%S).png
+    sleep 300  # Every 5 minutes
+done
+```
+
+Analyze each screenshot with vision to extract coordinates, then compile a route.
+
+## Limitations
+
+- FindMy has **no CLI or API** — must use UI automation
+- AirTags only update location while the FindMy page is actively displayed
+- Location accuracy depends on nearby Apple devices in the FindMy network
+- Screen Recording permission required for screenshots
+- AppleScript UI automation may break across macOS versions
+
+## Rules
+
+1. Keep FindMy app in the foreground when tracking AirTags (updates stop when minimized)
+2. Use `vision_analyze` to read screenshot content — don't try to parse pixels
+3. For ongoing tracking, use a cronjob to periodically capture and log locations
+4. Respect privacy — only track devices/items the user owns

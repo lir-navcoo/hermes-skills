@@ -1,1 +1,216 @@
-IyBFcXVhdGlvbnMgYW5kIExhVGVYIFJlZmVyZW5jZQoKIyMgQmFzaWMgTGFUZVgKCmBgYHB5dGhvbgplcSA9IE1hdGhUZXgociJFID0gbWNeMiIpCmVxID0gTWF0aFRleChyImYoeCkgJj0geF4yICsgMnggKyAxIFxcICY9ICh4ICsgMSleMiIpICAjIG11bHRpLWxpbmUgYWxpZ25lZApgYGAKCioqQWx3YXlzIHVzZSByYXcgc3RyaW5ncyAoYHIiImApLioqCgojIyBTdGVwLWJ5LVN0ZXAgRGVyaXZhdGlvbnMKCmBgYHB5dGhvbgpzdGVwMSA9IE1hdGhUZXgociJhXjIgKyBiXjIgPSBjXjIiKQpzdGVwMiA9IE1hdGhUZXgociJhXjIgPSBjXjIgLSBiXjIiKQpzZWxmLnBsYXkoV3JpdGUoc3RlcDEpLCBydW5fdGltZT0xLjUpCnNlbGYud2FpdCgxLjUpCnNlbGYucGxheShUcmFuc2Zvcm1NYXRjaGluZ1RleChzdGVwMSwgc3RlcDIpLCBydW5fdGltZT0xLjUpCmBgYAoKIyMgU2VsZWN0aXZlIENvbG9yCgpgYGBweXRob24KZXEgPSBNYXRoVGV4KHIiYV4yIiwgciIrIiwgciJiXjIiLCByIj0iLCByImNeMiIpCmVxWzBdLnNldF9jb2xvcihSRUQpCmVxWzRdLnNldF9jb2xvcihHUkVFTikKYGBgCgojIyBCdWlsZGluZyBJbmNyZW1lbnRhbGx5CgpgYGBweXRob24KcGFydHMgPSBNYXRoVGV4KHIiZih4KSIsIHIiPSIsIHIiXHN1bV97bj0wfV57XGluZnR5fSIsIHIiXGZyYWN7Zl57KG4pfShhKX17biF9IiwgciIoeC1hKV5uIikKc2VsZi5wbGF5KFdyaXRlKHBhcnRzWzA6Ml0pKQpzZWxmLndhaXQoMC41KQpzZWxmLnBsYXkoV3JpdGUocGFydHNbMl0pKQpzZWxmLndhaXQoMC41KQpzZWxmLnBsYXkoV3JpdGUocGFydHNbMzpdKSkKYGBgCgojIyBIaWdobGlnaHRpbmcKCmBgYHB5dGhvbgpoaWdobGlnaHQgPSBTdXJyb3VuZGluZ1JlY3RhbmdsZShlcVsyXSwgY29sb3I9WUVMTE9XLCBidWZmPTAuMSkKc2VsZi5wbGF5KENyZWF0ZShoaWdobGlnaHQpKQpzZWxmLnBsYXkoSW5kaWNhdGUoZXFbNF0sIGNvbG9yPVlFTExPVykpCmBgYAoKIyMgQW5ub3RhdGlvbgoKYGBgcHl0aG9uCmJyYWNlID0gQnJhY2UoZXEsIERPV04sIGNvbG9yPVlFTExPVykKbGFiZWwgPSBicmFjZS5nZXRfdGV4dCgiRnVuZGFtZW50YWwgVGhlb3JlbSIsIGZvbnRfc2l6ZT0yNCkKc2VsZi5wbGF5KEdyb3dGcm9tQ2VudGVyKGJyYWNlKSwgV3JpdGUobGFiZWwpKQpgYGAKCiMjIENvbW1vbiBMYVRlWAoKYGBgcHl0aG9uCk1hdGhUZXgociJcZnJhY3thfXtifSIpICAgICAgICAgICAgICAgICAgIyBmcmFjdGlvbgpNYXRoVGV4KHIiXGFscGhhLCBcYmV0YSwgXGdhbW1hIikgICAgICAgICAjIEdyZWVrCk1hdGhUZXgociJcc3VtX3tpPTF9XntufSB4X2kiKSAgICAgICAgICAgIyBzdW1tYXRpb24KTWF0aFRleChyIlxpbnRfezB9XntcaW5mdHl9IGVeey14fSBkeCIpICAjIGludGVncmFsCk1hdGhUZXgociJcdmVje3Z9IikgICAgICAgICAgICAgICAgICAgICAgICMgdmVjdG9yCk1hdGhUZXgociJcbGltX3t4IFx0byBcaW5mdHl9IGYoeCkiKSAgICAjIGxpbWl0CmBgYAoKIyMgTWF0cmljZXMKCmBNYXRoVGV4YCBzdXBwb3J0cyBzdGFuZGFyZCBMYVRlWCBtYXRyaXggZW52aXJvbm1lbnRzIHZpYSBgYW1zbWF0aGAgKGxvYWRlZCBieSBkZWZhdWx0KToKCmBgYHB5dGhvbgojIEJyYWNrZXRlZCBtYXRyaXgKTWF0aFRleChyIlxiZWdpbntibWF0cml4fSAxICYgMCBcXCAwICYgMSBcZW5ke2JtYXRyaXh9IikKCiMgUGFyZW50aGVzaXplZCBtYXRyaXgKTWF0aFRleChyIlxiZWdpbntwbWF0cml4fSBhICYgYiBcXCBjICYgZCBcZW5ke3BtYXRyaXh9IikKCiMgRGV0ZXJtaW5hbnQgKHZlcnRpY2FsIGJhcnMpCk1hdGhUZXgociJcYmVnaW57dm1hdHJpeH0gYSAmIGIgXFwgYyAmIGQgXGVuZHt2bWF0cml4fSIpCgojIFBsYWluIChubyBkZWxpbWl0ZXJzKQpNYXRoVGV4KHIiXGJlZ2lue21hdHJpeH0geF8xIFxcIHhfMiBcXCB4XzMgXGVuZHttYXRyaXh9IikKYGBgCgpGb3IgbWF0cmljZXMgeW91IG5lZWQgdG8gYW5pbWF0ZSBlbGVtZW50LWJ5LWVsZW1lbnQgb3IgY29sb3IgaW5kaXZpZHVhbCBlbnRyaWVzLCB1c2UgdGhlIGBJbnRlZ2VyTWF0cml4YCwgYERlY2ltYWxNYXRyaXhgLCBvciBgTW9iamVjdE1hdHJpeGAgbW9iamVjdHMgaW5zdGVhZCDigJQgc2VlIGBtb2JqZWN0cy5tZGAuCgojIyBDYXNlcyBhbmQgUGllY2V3aXNlIEZ1bmN0aW9ucwoKYGBgcHl0aG9uCk1hdGhUZXgociIiIgogICAgZih4KSA9IFxiZWdpbntjYXNlc30KICAgICAgICB4XjIgICAgJiBcdGV4dHtpZiB9IHggXGdlcSAwIFxcCiAgICAgICAgLXheMiAgICYgXHRleHR7aWYgfSB4IDwgMAogICAgXGVuZHtjYXNlc30KIiIiKQpgYGAKCiMjIEFsaWduZWQgRW52aXJvbm1lbnRzCgpGb3IgbXVsdGktbGluZSBkZXJpdmF0aW9ucyB3aXRoIGFsaWdubWVudCwgdXNlIGBhbGlnbmVkYCBpbnNpZGUgYE1hdGhUZXhgOgoKYGBgcHl0aG9uCk1hdGhUZXgociIiIgogICAgXGJlZ2lue2FsaWduZWR9CiAgICAgICAgXG5hYmxhIFxjZG90IFxtYXRoYmZ7RX0gJj0gXGZyYWN7XHJob317XGVwc2lsb25fMH0gXFwKICAgICAgICBcbmFibGEgXGNkb3QgXG1hdGhiZntCfSAmPSAwIFxcCiAgICAgICAgXG5hYmxhIFx0aW1lcyBcbWF0aGJme0V9ICY9IC1cZnJhY3tccGFydGlhbCBcbWF0aGJme0J9fXtccGFydGlhbCB0fSBcXAogICAgICAgIFxuYWJsYSBcdGltZXMgXG1hdGhiZntCfSAmPSBcbXVfMCBcbWF0aGJme0p9ICsgXG11XzAgXGVwc2lsb25fMCBcZnJhY3tccGFydGlhbCBcbWF0aGJme0V9fXtccGFydGlhbCB0fQogICAgXGVuZHthbGlnbmVkfQoiIiIpCmBgYAoKTm90ZTogYE1hdGhUZXhgIHdyYXBzIGNvbnRlbnQgaW4gYGFsaWduKmAgYnkgZGVmYXVsdC4gT3ZlcnJpZGUgd2l0aCBgdGV4X2Vudmlyb25tZW50YCBpZiBuZWVkZWQ6CmBgYHB5dGhvbgpNYXRoVGV4KHIiLi4uIiwgdGV4X2Vudmlyb25tZW50PSJnYXRoZXIqIikKYGBgCgojIyBEZXJpdmF0aW9uIFBhdHRlcm4KCmBgYHB5dGhvbgpjbGFzcyBEZXJpdmF0aW9uU2NlbmUoU2NlbmUpOgogICAgZGVmIGNvbnN0cnVjdChzZWxmKToKICAgICAgICBzZWxmLmNhbWVyYS5iYWNrZ3JvdW5kX2NvbG9yID0gQkcKICAgICAgICBzMSA9IE1hdGhUZXgociJheF4yICsgYnggKyBjID0gMCIpCiAgICAgICAgc2VsZi5wbGF5KFdyaXRlKHMxKSkKICAgICAgICBzZWxmLndhaXQoMS41KQogICAgICAgIHMyID0gTWF0aFRleChyInheMiArIFxmcmFje2J9e2F9eCArIFxmcmFje2N9e2F9ID0gMCIpCiAgICAgICAgczIubmV4dF90byhzMSwgRE9XTiwgYnVmZj0wLjgpCiAgICAgICAgc2VsZi5wbGF5KHMxLmFuaW1hdGUuc2V0X29wYWNpdHkoMC40KSwgVHJhbnNmb3JtTWF0Y2hpbmdUZXgoczEuY29weSgpLCBzMikpCmBgYAoKIyMgc3Vic3RyaW5nc190b19pc29sYXRlIGZvciBDb21wbGV4IEVxdWF0aW9ucwoKRm9yIGRlbnNlIGVxdWF0aW9ucyB3aGVyZSBtYW51YWxseSBzcGxpdHRpbmcgaW50byBwYXJ0cyBpcyBpbXByYWN0aWNhbCwgdXNlIGBzdWJzdHJpbmdzX3RvX2lzb2xhdGVgIHRvIHRlbGwgTWFuaW0gd2hpY2ggc3Vic3RyaW5ncyB0byB0cmFjayBhcyBpbmRpdmlkdWFsIGVsZW1lbnRzOgoKYGBgcHl0aG9uCiMgV2l0aG91dCBpc29sYXRpb24g4oCUIHRoZSB3aG9sZSBleHByZXNzaW9uIGlzIG9uZSBibG9iCmxhZ3JhbmdpYW4gPSBNYXRoVGV4KAogICAgciJcbWF0aGNhbHtMfSA9IFxiYXJ7XHBzaX0oaSBcZ2FtbWFeXG11IERfXG11IC0gbSlccHNpIC0gXHRmcmFjezF9ezR9Rl97XG11XG51fUZee1xtdVxudX0iCikKCiMgV2l0aCBpc29sYXRpb24g4oCUIGVhY2ggbmFtZWQgc3Vic3RyaW5nIGlzIGEgc2VwYXJhdGUgc3VibW9iamVjdApsYWdyYW5naWFuID0gTWF0aFRleCgKICAgIHIiXG1hdGhjYWx7TH0gPSBcYmFye1xwc2l9KGkgXGdhbW1hXlxtdSBEX1xtdSAtIG0pXHBzaSAtIFx0ZnJhY3sxfXs0fUZfe1xtdVxudX1GXntcbXVcbnV9IiwKICAgIHN1YnN0cmluZ3NfdG9faXNvbGF0ZT1bciJccHNpIiwgciJEX1xtdSIsIHIiXGdhbW1hXlxtdSIsIHIiRl97XG11XG51fSJdCikKIyBOb3cgeW91IGNhbiBjb2xvciBpbmRpdmlkdWFsIHRlcm1zCmxhZ3JhbmdpYW4uc2V0X2NvbG9yX2J5X3RleChyIlxwc2kiLCBCTFVFKQpsYWdyYW5naWFuLnNldF9jb2xvcl9ieV90ZXgociJGX3tcbXVcbnV9IiwgWUVMTE9XKQpgYGAKCkVzc2VudGlhbCBmb3IgYFRyYW5zZm9ybU1hdGNoaW5nVGV4YCBvbiBjb21wbGV4IGVxdWF0aW9ucyDigJQgd2l0aG91dCBpc29sYXRpb24sIG1hdGNoaW5nIGZhaWxzIG9uIGRlbnNlIGV4cHJlc3Npb25zLgoKIyMgTXVsdGktTGluZSBDb21wbGV4IEVxdWF0aW9ucwoKRm9yIGVxdWF0aW9ucyB3aXRoIG11bHRpcGxlIHJlbGF0ZWQgbGluZXMsIHBhc3MgZWFjaCBsaW5lIGFzIGEgc2VwYXJhdGUgYXJndW1lbnQ6CgpgYGBweXRob24KbWF4d2VsbCA9IE1hdGhUZXgoCiAgICByIlxuYWJsYSBcY2RvdCBcbWF0aGJme0V9ID0gXGZyYWN7XHJob317XGVwc2lsb25fMH0iLAogICAgciJcbmFibGEgXHRpbWVzIFxtYXRoYmZ7Qn0gPSBcbXVfMFxtYXRoYmZ7Sn0gKyBcbXVfMFxlcHNpbG9uXzBcZnJhY3tccGFydGlhbCBcbWF0aGJme0V9fXtccGFydGlhbCB0fSIKKS5hcnJhbmdlKERPV04pCgojIEVhY2ggbGluZSBpcyBhIHNlcGFyYXRlIHN1Ym1vYmplY3Qg4oCUIGFuaW1hdGUgaW5kZXBlbmRlbnRseQpzZWxmLnBsYXkoV3JpdGUobWF4d2VsbFswXSkpCnNlbGYud2FpdCgxKQpzZWxmLnBsYXkoV3JpdGUobWF4d2VsbFsxXSkpCmBgYAoKIyMgVHJhbnNmb3JtTWF0Y2hpbmdUZXggd2l0aCBrZXlfbWFwCgpNYXAgc3BlY2lmaWMgc3Vic3RyaW5ncyBiZXR3ZWVuIHNvdXJjZSBhbmQgdGFyZ2V0IGVxdWF0aW9ucyBkdXJpbmcgdHJhbnNmb3JtYXRpb246CgpgYGBweXRob24KZXExID0gTWF0aFRleChyIkFeMiArIEJeMiA9IENeMiIpCmVxMiA9IE1hdGhUZXgociJBXjIgPSBDXjIgLSBCXjIiKQoKc2VsZi5wbGF5KFRyYW5zZm9ybU1hdGNoaW5nVGV4KAogICAgZXExLCBlcTIsCiAgICBrZXlfbWFwPXsiKyI6ICItIn0sICAgIyBtYXAgIisiIGluIHNvdXJjZSB0byAiLSIgaW4gdGFyZ2V0CiAgICBwYXRoX2FyYz1QSSAvIDIsICAgICAgIyBhcmMgdGhlIHBpZWNlcyBpbnRvIHBvc2l0aW9uCikpCmBgYAoKIyMgc2V0X2NvbG9yX2J5X3RleCDigJQgQ29sb3IgYnkgU3Vic3RyaW5nCgpgYGBweXRob24KZXEgPSBNYXRoVGV4KHIiRSA9IG1jXjIiKQplcS5zZXRfY29sb3JfYnlfdGV4KCJFIiwgQkxVRSkKZXEuc2V0X2NvbG9yX2J5X3RleCgibSIsIFJFRCkKZXEuc2V0X2NvbG9yX2J5X3RleCgiYyIsIEdSRUVOKQpgYGAKCiMjIFRyYW5zZm9ybU1hdGNoaW5nVGV4IHdpdGggbWF0Y2hlZF9rZXlzCgpXaGVuIG1hdGNoaW5nIHN1YnN0cmluZ3MgYXJlIGFtYmlndW91cywgc3BlY2lmeSB3aGljaCB0byBhbGlnbiBleHBsaWNpdGx5OgoKYGBgcHl0aG9uCmt3ID0gZGljdChmb250X3NpemU9NzIsIHQyYz17IkEiOiBCTFVFLCAiQiI6IFRFQUwsICJDIjogR1JFRU59KQpsaW5lcyA9IFsKICAgIE1hdGhUZXgociJBXjIgKyBCXjIgPSBDXjIiLCAqKmt3KSwKICAgIE1hdGhUZXgociJBXjIgPSBDXjIgLSBCXjIiLCAqKmt3KSwKICAgIE1hdGhUZXgociJBXjIgPSAoQyArIEIpKEMgLSBCKSIsICoqa3cpLAogICAgTWF0aFRleChyIkEgPSBcc3FydHsoQyArIEIpKEMgLSBCKX0iLCAqKmt3KSwKXQoKc2VsZi5wbGF5KFRyYW5zZm9ybU1hdGNoaW5nVGV4KAogICAgbGluZXNbMF0uY29weSgpLCBsaW5lc1sxXSwKICAgIG1hdGNoZWRfa2V5cz1bIkFeMiIsICJCXjIiLCAiQ14yIl0sICAjIGV4cGxpY2l0bHkgbWF0Y2ggdGhlc2UKICAgIGtleV9tYXA9eyIrIjogIi0ifSwgICAgICAgICAgICAgICAgICAgICMgbWFwICsgdG8gLQogICAgcGF0aF9hcmM9UEkgLyAyLCAgICAgICAgICAgICAgICAgICAgICAgIyBhcmMgcGllY2VzIGludG8gcG9zaXRpb24KKSkKYGBgCgpXaXRob3V0IGBtYXRjaGVkX2tleXNgLCB0aGUgYW5pbWF0aW9uIG1hdGNoZXMgdGhlIGxvbmdlc3QgY29tbW9uIHN1YnN0cmluZ3MsIHdoaWNoIGNhbiBwcm9kdWNlIHVuZXhwZWN0ZWQgcmVzdWx0cyBvbiBjb21wbGV4IGVxdWF0aW9ucyAoZS5nLiwgIl4yID0gQ14yIiBtYXRjaGluZyBhY3Jvc3MgdGVybXMpLgo=
+# Equations and LaTeX Reference
+
+## Basic LaTeX
+
+```python
+eq = MathTex(r"E = mc^2")
+eq = MathTex(r"f(x) &= x^2 + 2x + 1 \\ &= (x + 1)^2")  # multi-line aligned
+```
+
+**Always use raw strings (`r""`).**
+
+## Step-by-Step Derivations
+
+```python
+step1 = MathTex(r"a^2 + b^2 = c^2")
+step2 = MathTex(r"a^2 = c^2 - b^2")
+self.play(Write(step1), run_time=1.5)
+self.wait(1.5)
+self.play(TransformMatchingTex(step1, step2), run_time=1.5)
+```
+
+## Selective Color
+
+```python
+eq = MathTex(r"a^2", r"+", r"b^2", r"=", r"c^2")
+eq[0].set_color(RED)
+eq[4].set_color(GREEN)
+```
+
+## Building Incrementally
+
+```python
+parts = MathTex(r"f(x)", r"=", r"\sum_{n=0}^{\infty}", r"\frac{f^{(n)}(a)}{n!}", r"(x-a)^n")
+self.play(Write(parts[0:2]))
+self.wait(0.5)
+self.play(Write(parts[2]))
+self.wait(0.5)
+self.play(Write(parts[3:]))
+```
+
+## Highlighting
+
+```python
+highlight = SurroundingRectangle(eq[2], color=YELLOW, buff=0.1)
+self.play(Create(highlight))
+self.play(Indicate(eq[4], color=YELLOW))
+```
+
+## Annotation
+
+```python
+brace = Brace(eq, DOWN, color=YELLOW)
+label = brace.get_text("Fundamental Theorem", font_size=24)
+self.play(GrowFromCenter(brace), Write(label))
+```
+
+## Common LaTeX
+
+```python
+MathTex(r"\frac{a}{b}")                  # fraction
+MathTex(r"\alpha, \beta, \gamma")         # Greek
+MathTex(r"\sum_{i=1}^{n} x_i")           # summation
+MathTex(r"\int_{0}^{\infty} e^{-x} dx")  # integral
+MathTex(r"\vec{v}")                       # vector
+MathTex(r"\lim_{x \to \infty} f(x)")    # limit
+```
+
+## Matrices
+
+`MathTex` supports standard LaTeX matrix environments via `amsmath` (loaded by default):
+
+```python
+# Bracketed matrix
+MathTex(r"\begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}")
+
+# Parenthesized matrix
+MathTex(r"\begin{pmatrix} a & b \\ c & d \end{pmatrix}")
+
+# Determinant (vertical bars)
+MathTex(r"\begin{vmatrix} a & b \\ c & d \end{vmatrix}")
+
+# Plain (no delimiters)
+MathTex(r"\begin{matrix} x_1 \\ x_2 \\ x_3 \end{matrix}")
+```
+
+For matrices you need to animate element-by-element or color individual entries, use the `IntegerMatrix`, `DecimalMatrix`, or `MobjectMatrix` mobjects instead — see `mobjects.md`.
+
+## Cases and Piecewise Functions
+
+```python
+MathTex(r"""
+    f(x) = \begin{cases}
+        x^2    & \text{if } x \geq 0 \\
+        -x^2   & \text{if } x < 0
+    \end{cases}
+""")
+```
+
+## Aligned Environments
+
+For multi-line derivations with alignment, use `aligned` inside `MathTex`:
+
+```python
+MathTex(r"""
+    \begin{aligned}
+        \nabla \cdot \mathbf{E} &= \frac{\rho}{\epsilon_0} \\
+        \nabla \cdot \mathbf{B} &= 0 \\
+        \nabla \times \mathbf{E} &= -\frac{\partial \mathbf{B}}{\partial t} \\
+        \nabla \times \mathbf{B} &= \mu_0 \mathbf{J} + \mu_0 \epsilon_0 \frac{\partial \mathbf{E}}{\partial t}
+    \end{aligned}
+""")
+```
+
+Note: `MathTex` wraps content in `align*` by default. Override with `tex_environment` if needed:
+```python
+MathTex(r"...", tex_environment="gather*")
+```
+
+## Derivation Pattern
+
+```python
+class DerivationScene(Scene):
+    def construct(self):
+        self.camera.background_color = BG
+        s1 = MathTex(r"ax^2 + bx + c = 0")
+        self.play(Write(s1))
+        self.wait(1.5)
+        s2 = MathTex(r"x^2 + \frac{b}{a}x + \frac{c}{a} = 0")
+        s2.next_to(s1, DOWN, buff=0.8)
+        self.play(s1.animate.set_opacity(0.4), TransformMatchingTex(s1.copy(), s2))
+```
+
+## substrings_to_isolate for Complex Equations
+
+For dense equations where manually splitting into parts is impractical, use `substrings_to_isolate` to tell Manim which substrings to track as individual elements:
+
+```python
+# Without isolation — the whole expression is one blob
+lagrangian = MathTex(
+    r"\mathcal{L} = \bar{\psi}(i \gamma^\mu D_\mu - m)\psi - \tfrac{1}{4}F_{\mu\nu}F^{\mu\nu}"
+)
+
+# With isolation — each named substring is a separate submobject
+lagrangian = MathTex(
+    r"\mathcal{L} = \bar{\psi}(i \gamma^\mu D_\mu - m)\psi - \tfrac{1}{4}F_{\mu\nu}F^{\mu\nu}",
+    substrings_to_isolate=[r"\psi", r"D_\mu", r"\gamma^\mu", r"F_{\mu\nu}"]
+)
+# Now you can color individual terms
+lagrangian.set_color_by_tex(r"\psi", BLUE)
+lagrangian.set_color_by_tex(r"F_{\mu\nu}", YELLOW)
+```
+
+Essential for `TransformMatchingTex` on complex equations — without isolation, matching fails on dense expressions.
+
+## Multi-Line Complex Equations
+
+For equations with multiple related lines, pass each line as a separate argument:
+
+```python
+maxwell = MathTex(
+    r"\nabla \cdot \mathbf{E} = \frac{\rho}{\epsilon_0}",
+    r"\nabla \times \mathbf{B} = \mu_0\mathbf{J} + \mu_0\epsilon_0\frac{\partial \mathbf{E}}{\partial t}"
+).arrange(DOWN)
+
+# Each line is a separate submobject — animate independently
+self.play(Write(maxwell[0]))
+self.wait(1)
+self.play(Write(maxwell[1]))
+```
+
+## TransformMatchingTex with key_map
+
+Map specific substrings between source and target equations during transformation:
+
+```python
+eq1 = MathTex(r"A^2 + B^2 = C^2")
+eq2 = MathTex(r"A^2 = C^2 - B^2")
+
+self.play(TransformMatchingTex(
+    eq1, eq2,
+    key_map={"+": "-"},   # map "+" in source to "-" in target
+    path_arc=PI / 2,      # arc the pieces into position
+))
+```
+
+## set_color_by_tex — Color by Substring
+
+```python
+eq = MathTex(r"E = mc^2")
+eq.set_color_by_tex("E", BLUE)
+eq.set_color_by_tex("m", RED)
+eq.set_color_by_tex("c", GREEN)
+```
+
+## TransformMatchingTex with matched_keys
+
+When matching substrings are ambiguous, specify which to align explicitly:
+
+```python
+kw = dict(font_size=72, t2c={"A": BLUE, "B": TEAL, "C": GREEN})
+lines = [
+    MathTex(r"A^2 + B^2 = C^2", **kw),
+    MathTex(r"A^2 = C^2 - B^2", **kw),
+    MathTex(r"A^2 = (C + B)(C - B)", **kw),
+    MathTex(r"A = \sqrt{(C + B)(C - B)}", **kw),
+]
+
+self.play(TransformMatchingTex(
+    lines[0].copy(), lines[1],
+    matched_keys=["A^2", "B^2", "C^2"],  # explicitly match these
+    key_map={"+": "-"},                    # map + to -
+    path_arc=PI / 2,                       # arc pieces into position
+))
+```
+
+Without `matched_keys`, the animation matches the longest common substrings, which can produce unexpected results on complex equations (e.g., "^2 = C^2" matching across terms).

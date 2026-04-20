@@ -1,1 +1,69 @@
-LS0tCm5hbWU6IGZpbmQtbmVhcmJ5CmRlc2NyaXB0aW9uOiBGaW5kIG5lYXJieSBwbGFjZXMgKHJlc3RhdXJhbnRzLCBjYWZlcywgYmFycywgcGhhcm1hY2llcywgZXRjLikgdXNpbmcgT3BlblN0cmVldE1hcC4gV29ya3Mgd2l0aCBjb29yZGluYXRlcywgYWRkcmVzc2VzLCBjaXRpZXMsIHppcCBjb2Rlcywgb3IgVGVsZWdyYW0gbG9jYXRpb24gcGlucy4gTm8gQVBJIGtleXMgbmVlZGVkLgp2ZXJzaW9uOiAxLjAuMAptZXRhZGF0YToKICBoZXJtZXM6CiAgICB0YWdzOiBbbG9jYXRpb24sIG1hcHMsIG5lYXJieSwgcGxhY2VzLCByZXN0YXVyYW50cywgbG9jYWxdCiAgICByZWxhdGVkX3NraWxsczogW10KLS0tCgojIEZpbmQgTmVhcmJ5IOKAlCBMb2NhbCBQbGFjZSBEaXNjb3ZlcnkKCkZpbmQgcmVzdGF1cmFudHMsIGNhZmVzLCBiYXJzLCBwaGFybWFjaWVzLCBhbmQgb3RoZXIgcGxhY2VzIG5lYXIgYW55IGxvY2F0aW9uLiBVc2VzIE9wZW5TdHJlZXRNYXAgKGZyZWUsIG5vIEFQSSBrZXlzKS4gV29ya3Mgd2l0aDoKCi0gKipDb29yZGluYXRlcyoqIGZyb20gVGVsZWdyYW0gbG9jYXRpb24gcGlucyAobGF0aXR1ZGUvbG9uZ2l0dWRlIGluIGNvbnZlcnNhdGlvbikKLSAqKkFkZHJlc3NlcyoqICgibmVhciAxMjMgTWFpbiBTdCwgU3ByaW5nZmllbGQiKQotICoqQ2l0aWVzKiogKCJyZXN0YXVyYW50cyBpbiBkb3dudG93biBBdXN0aW4iKQotICoqWmlwIGNvZGVzKiogKCJwaGFybWFjaWVzIG5lYXIgOTAyMTAiKQotICoqTGFuZG1hcmtzKiogKCJjYWZlcyBuZWFyIFRpbWVzIFNxdWFyZSIpCgojIyBRdWljayBSZWZlcmVuY2UKCmBgYGJhc2gKIyBCeSBjb29yZGluYXRlcyAoZnJvbSBUZWxlZ3JhbSBsb2NhdGlvbiBwaW4gb3IgdXNlci1wcm92aWRlZCkKcHl0aG9uMyBTS0lMTF9ESVIvc2NyaXB0cy9maW5kX25lYXJieS5weSAtLWxhdCA8TEFUPiAtLWxvbiA8TE9OPiAtLXR5cGUgcmVzdGF1cmFudCAtLXJhZGl1cyAxNTAwCgojIEJ5IGFkZHJlc3MsIGNpdHksIG9yIGxhbmRtYXJrIChhdXRvLWdlb2NvZGVkKQpweXRob24zIFNLSUxMX0RJUi9zY3JpcHRzL2ZpbmRfbmVhcmJ5LnB5IC0tbmVhciAiVGltZXMgU3F1YXJlLCBOZXcgWW9yayIgLS10eXBlIGNhZmUKCiMgTXVsdGlwbGUgcGxhY2UgdHlwZXMKcHl0aG9uMyBTS0lMTF9ESVIvc2NyaXB0cy9maW5kX25lYXJieS5weSAtLW5lYXIgImRvd250b3duIGF1c3RpbiIgLS10eXBlIHJlc3RhdXJhbnQgLS10eXBlIGJhciAtLWxpbWl0IDEwCgojIEpTT04gb3V0cHV0CnB5dGhvbjMgU0tJTExfRElSL3NjcmlwdHMvZmluZF9uZWFyYnkucHkgLS1uZWFyICI5MDIxMCIgLS10eXBlIHBoYXJtYWN5IC0tanNvbgpgYGAKCiMjIyBQYXJhbWV0ZXJzCgp8IEZsYWcgfCBEZXNjcmlwdGlvbiB8IERlZmF1bHQgfAp8LS0tLS0tfC0tLS0tLS0tLS0tLS18LS0tLS0tLS0tfAp8IGAtLWxhdGAsIGAtLWxvbmAgfCBFeGFjdCBjb29yZGluYXRlcyB8IOKAlCB8CnwgYC0tbmVhcmAgfCBBZGRyZXNzLCBjaXR5LCB6aXAsIG9yIGxhbmRtYXJrIChnZW9jb2RlZCkgfCDigJQgfAp8IGAtLXR5cGVgIHwgUGxhY2UgdHlwZSAocmVwZWF0YWJsZSBmb3IgbXVsdGlwbGUpIHwgcmVzdGF1cmFudCB8CnwgYC0tcmFkaXVzYCB8IFNlYXJjaCByYWRpdXMgaW4gbWV0ZXJzIHwgMTUwMCB8CnwgYC0tbGltaXRgIHwgTWF4IHJlc3VsdHMgfCAxNSB8CnwgYC0tanNvbmAgfCBNYWNoaW5lLXJlYWRhYmxlIEpTT04gb3V0cHV0IHwgb2ZmIHwKCiMjIyBDb21tb24gUGxhY2UgVHlwZXMKCmByZXN0YXVyYW50YCwgYGNhZmVgLCBgYmFyYCwgYHB1YmAsIGBmYXN0X2Zvb2RgLCBgcGhhcm1hY3lgLCBgaG9zcGl0YWxgLCBgYmFua2AsIGBhdG1gLCBgZnVlbGAsIGBwYXJraW5nYCwgYHN1cGVybWFya2V0YCwgYGNvbnZlbmllbmNlYCwgYGhvdGVsYAoKIyMgV29ya2Zsb3cKCjEuICoqR2V0IHRoZSBsb2NhdGlvbi4qKiBMb29rIGZvciBjb29yZGluYXRlcyAoYGxhdGl0dWRlOiAuLi4gLyBsb25naXR1ZGU6IC4uLmApIGZyb20gYSBUZWxlZ3JhbSBwaW4sIG9yIGFzayB0aGUgdXNlciBmb3IgYW4gYWRkcmVzcy9jaXR5L3ppcC4KCjIuICoqQXNrIGZvciBwcmVmZXJlbmNlcyoqIChvbmx5IGlmIG5vdCBhbHJlYWR5IHN0YXRlZCk6IHBsYWNlIHR5cGUsIGhvdyBmYXIgdGhleSdyZSB3aWxsaW5nIHRvIGdvLCBhbnkgc3BlY2lmaWNzIChjdWlzaW5lLCAib3BlbiBub3ciLCBldGMuKS4KCjMuICoqUnVuIHRoZSBzY3JpcHQqKiB3aXRoIGFwcHJvcHJpYXRlIGZsYWdzLiBVc2UgYC0tanNvbmAgaWYgeW91IG5lZWQgdG8gcHJvY2VzcyByZXN1bHRzIHByb2dyYW1tYXRpY2FsbHkuCgo0LiAqKlByZXNlbnQgcmVzdWx0cyoqIHdpdGggbmFtZXMsIGRpc3RhbmNlcywgYW5kIEdvb2dsZSBNYXBzIGxpbmtzLiBJZiB0aGUgdXNlciBhc2tlZCBhYm91dCBob3VycyBvciAib3BlbiBub3csIiBjaGVjayB0aGUgYGhvdXJzYCBmaWVsZCBpbiByZXN1bHRzIOKAlCBpZiBtaXNzaW5nIG9yIHVuY2xlYXIsIHZlcmlmeSB3aXRoIGB3ZWJfc2VhcmNoYC4KCjUuICoqRm9yIGRpcmVjdGlvbnMqKiwgdXNlIHRoZSBgZGlyZWN0aW9uc191cmxgIGZyb20gcmVzdWx0cywgb3IgY29uc3RydWN0OiBgaHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9tYXBzL2Rpci8/YXBpPTEmb3JpZ2luPTxMQVQ+LDxMT04+JmRlc3RpbmF0aW9uPTxMQVQ+LDxMT04+YAoKIyMgVGlwcwoKLSBJZiByZXN1bHRzIGFyZSBzcGFyc2UsIHdpZGVuIHRoZSByYWRpdXMgKDE1MDAg4oaSIDMwMDBtKQotIEZvciAib3BlbiBub3ciIHJlcXVlc3RzOiBjaGVjayB0aGUgYGhvdXJzYCBmaWVsZCBpbiByZXN1bHRzLCBjcm9zcy1yZWZlcmVuY2Ugd2l0aCBgd2ViX3NlYXJjaGAgZm9yIGFjY3VyYWN5IHNpbmNlIE9TTSBob3VycyBhcmVuJ3QgYWx3YXlzIGNvbXBsZXRlCi0gWmlwIGNvZGVzIGFsb25lIGNhbiBiZSBhbWJpZ3VvdXMgZ2xvYmFsbHkg4oCUIHByb21wdCB0aGUgdXNlciBmb3IgY291bnRyeS9zdGF0ZSBpZiByZXN1bHRzIGxvb2sgd3JvbmcKLSBUaGUgc2NyaXB0IHVzZXMgT3BlblN0cmVldE1hcCBkYXRhIHdoaWNoIGlzIGNvbW11bml0eS1tYWludGFpbmVkOyBjb3ZlcmFnZSB2YXJpZXMgYnkgcmVnaW9uCg==
+---
+name: find-nearby
+description: Find nearby places (restaurants, cafes, bars, pharmacies, etc.) using OpenStreetMap. Works with coordinates, addresses, cities, zip codes, or Telegram location pins. No API keys needed.
+version: 1.0.0
+metadata:
+  hermes:
+    tags: [location, maps, nearby, places, restaurants, local]
+    related_skills: []
+---
+
+# Find Nearby — Local Place Discovery
+
+Find restaurants, cafes, bars, pharmacies, and other places near any location. Uses OpenStreetMap (free, no API keys). Works with:
+
+- **Coordinates** from Telegram location pins (latitude/longitude in conversation)
+- **Addresses** ("near 123 Main St, Springfield")
+- **Cities** ("restaurants in downtown Austin")
+- **Zip codes** ("pharmacies near 90210")
+- **Landmarks** ("cafes near Times Square")
+
+## Quick Reference
+
+```bash
+# By coordinates (from Telegram location pin or user-provided)
+python3 SKILL_DIR/scripts/find_nearby.py --lat <LAT> --lon <LON> --type restaurant --radius 1500
+
+# By address, city, or landmark (auto-geocoded)
+python3 SKILL_DIR/scripts/find_nearby.py --near "Times Square, New York" --type cafe
+
+# Multiple place types
+python3 SKILL_DIR/scripts/find_nearby.py --near "downtown austin" --type restaurant --type bar --limit 10
+
+# JSON output
+python3 SKILL_DIR/scripts/find_nearby.py --near "90210" --type pharmacy --json
+```
+
+### Parameters
+
+| Flag | Description | Default |
+|------|-------------|---------|
+| `--lat`, `--lon` | Exact coordinates | — |
+| `--near` | Address, city, zip, or landmark (geocoded) | — |
+| `--type` | Place type (repeatable for multiple) | restaurant |
+| `--radius` | Search radius in meters | 1500 |
+| `--limit` | Max results | 15 |
+| `--json` | Machine-readable JSON output | off |
+
+### Common Place Types
+
+`restaurant`, `cafe`, `bar`, `pub`, `fast_food`, `pharmacy`, `hospital`, `bank`, `atm`, `fuel`, `parking`, `supermarket`, `convenience`, `hotel`
+
+## Workflow
+
+1. **Get the location.** Look for coordinates (`latitude: ... / longitude: ...`) from a Telegram pin, or ask the user for an address/city/zip.
+
+2. **Ask for preferences** (only if not already stated): place type, how far they're willing to go, any specifics (cuisine, "open now", etc.).
+
+3. **Run the script** with appropriate flags. Use `--json` if you need to process results programmatically.
+
+4. **Present results** with names, distances, and Google Maps links. If the user asked about hours or "open now," check the `hours` field in results — if missing or unclear, verify with `web_search`.
+
+5. **For directions**, use the `directions_url` from results, or construct: `https://www.google.com/maps/dir/?api=1&origin=<LAT>,<LON>&destination=<LAT>,<LON>`
+
+## Tips
+
+- If results are sparse, widen the radius (1500 → 3000m)
+- For "open now" requests: check the `hours` field in results, cross-reference with `web_search` for accuracy since OSM hours aren't always complete
+- Zip codes alone can be ambiguous globally — prompt the user for country/state if results look wrong
+- The script uses OpenStreetMap data which is community-maintained; coverage varies by region

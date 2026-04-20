@@ -1,1 +1,161 @@
-LS0tCm5hbWU6IGRvZ2Zvb2QKZGVzY3JpcHRpb246IFN5c3RlbWF0aWMgZXhwbG9yYXRvcnkgUUEgdGVzdGluZyBvZiB3ZWIgYXBwbGljYXRpb25zIOKAlCBmaW5kIGJ1Z3MsIGNhcHR1cmUgZXZpZGVuY2UsIGFuZCBnZW5lcmF0ZSBzdHJ1Y3R1cmVkIHJlcG9ydHMKdmVyc2lvbjogMS4wLjAKbWV0YWRhdGE6CiAgaGVybWVzOgogICAgdGFnczogW3FhLCB0ZXN0aW5nLCBicm93c2VyLCB3ZWIsIGRvZ2Zvb2RdCiAgICByZWxhdGVkX3NraWxsczogW10KLS0tCgojIERvZ2Zvb2Q6IFN5c3RlbWF0aWMgV2ViIEFwcGxpY2F0aW9uIFFBIFRlc3RpbmcKCiMjIE92ZXJ2aWV3CgpUaGlzIHNraWxsIGd1aWRlcyB5b3UgdGhyb3VnaCBzeXN0ZW1hdGljIGV4cGxvcmF0b3J5IFFBIHRlc3Rpbmcgb2Ygd2ViIGFwcGxpY2F0aW9ucyB1c2luZyB0aGUgYnJvd3NlciB0b29sc2V0LiBZb3Ugd2lsbCBuYXZpZ2F0ZSB0aGUgYXBwbGljYXRpb24sIGludGVyYWN0IHdpdGggZWxlbWVudHMsIGNhcHR1cmUgZXZpZGVuY2Ugb2YgaXNzdWVzLCBhbmQgcHJvZHVjZSBhIHN0cnVjdHVyZWQgYnVnIHJlcG9ydC4KCiMjIFByZXJlcXVpc2l0ZXMKCi0gQnJvd3NlciB0b29sc2V0IG11c3QgYmUgYXZhaWxhYmxlIChgYnJvd3Nlcl9uYXZpZ2F0ZWAsIGBicm93c2VyX3NuYXBzaG90YCwgYGJyb3dzZXJfY2xpY2tgLCBgYnJvd3Nlcl90eXBlYCwgYGJyb3dzZXJfdmlzaW9uYCwgYGJyb3dzZXJfY29uc29sZWAsIGBicm93c2VyX3Njcm9sbGAsIGBicm93c2VyX2JhY2tgLCBgYnJvd3Nlcl9wcmVzc2ApCi0gQSB0YXJnZXQgVVJMIGFuZCB0ZXN0aW5nIHNjb3BlIGZyb20gdGhlIHVzZXIKCiMjIElucHV0cwoKVGhlIHVzZXIgcHJvdmlkZXM6CjEuICoqVGFyZ2V0IFVSTCoqIOKAlCB0aGUgZW50cnkgcG9pbnQgZm9yIHRlc3RpbmcKMi4gKipTY29wZSoqIOKAlCB3aGF0IGFyZWFzL2ZlYXR1cmVzIHRvIGZvY3VzIG9uIChvciAiZnVsbCBzaXRlIiBmb3IgY29tcHJlaGVuc2l2ZSB0ZXN0aW5nKQozLiAqKk91dHB1dCBkaXJlY3RvcnkqKiAob3B0aW9uYWwpIOKAlCB3aGVyZSB0byBzYXZlIHNjcmVlbnNob3RzIGFuZCB0aGUgcmVwb3J0IChkZWZhdWx0OiBgLi9kb2dmb29kLW91dHB1dGApCgojIyBXb3JrZmxvdwoKRm9sbG93IHRoaXMgNS1waGFzZSBzeXN0ZW1hdGljIHdvcmtmbG93OgoKIyMjIFBoYXNlIDE6IFBsYW4KCjEuIENyZWF0ZSB0aGUgb3V0cHV0IGRpcmVjdG9yeSBzdHJ1Y3R1cmU6CiAgIGBgYAogICB7b3V0cHV0X2Rpcn0vCiAgIOKUnOKUgOKUgCBzY3JlZW5zaG90cy8gICAgICAgIyBFdmlkZW5jZSBzY3JlZW5zaG90cwogICDilJTilIDilIAgcmVwb3J0Lm1kICAgICAgICAgICMgRmluYWwgcmVwb3J0IChnZW5lcmF0ZWQgaW4gUGhhc2UgNSkKICAgYGBgCjIuIElkZW50aWZ5IHRoZSB0ZXN0aW5nIHNjb3BlIGJhc2VkIG9uIHVzZXIgaW5wdXQuCjMuIEJ1aWxkIGEgcm91Z2ggc2l0ZW1hcCBieSBwbGFubmluZyB3aGljaCBwYWdlcyBhbmQgZmVhdHVyZXMgdG8gdGVzdDoKICAgLSBMYW5kaW5nL2hvbWUgcGFnZQogICAtIE5hdmlnYXRpb24gbGlua3MgKGhlYWRlciwgZm9vdGVyLCBzaWRlYmFyKQogICAtIEtleSB1c2VyIGZsb3dzIChzaWduIHVwLCBsb2dpbiwgc2VhcmNoLCBjaGVja291dCwgZXRjLikKICAgLSBGb3JtcyBhbmQgaW50ZXJhY3RpdmUgZWxlbWVudHMKICAgLSBFZGdlIGNhc2VzIChlbXB0eSBzdGF0ZXMsIGVycm9yIHBhZ2VzLCA0MDRzKQoKIyMjIFBoYXNlIDI6IEV4cGxvcmUKCkZvciBlYWNoIHBhZ2Ugb3IgZmVhdHVyZSBpbiB5b3VyIHBsYW46CgoxLiAqKk5hdmlnYXRlKiogdG8gdGhlIHBhZ2U6CiAgIGBgYAogICBicm93c2VyX25hdmlnYXRlKHVybD0iaHR0cHM6Ly9leGFtcGxlLmNvbS9wYWdlIikKICAgYGBgCgoyLiAqKlRha2UgYSBzbmFwc2hvdCoqIHRvIHVuZGVyc3RhbmQgdGhlIERPTSBzdHJ1Y3R1cmU6CiAgIGBgYAogICBicm93c2VyX3NuYXBzaG90KCkKICAgYGBgCgozLiAqKkNoZWNrIHRoZSBjb25zb2xlKiogZm9yIEphdmFTY3JpcHQgZXJyb3JzOgogICBgYGAKICAgYnJvd3Nlcl9jb25zb2xlKGNsZWFyPXRydWUpCiAgIGBgYAogICBEbyB0aGlzIGFmdGVyIGV2ZXJ5IG5hdmlnYXRpb24gYW5kIGFmdGVyIGV2ZXJ5IHNpZ25pZmljYW50IGludGVyYWN0aW9uLiBTaWxlbnQgSlMgZXJyb3JzIGFyZSBoaWdoLXZhbHVlIGZpbmRpbmdzLgoKNC4gKipUYWtlIGFuIGFubm90YXRlZCBzY3JlZW5zaG90KiogdG8gdmlzdWFsbHkgYXNzZXNzIHRoZSBwYWdlIGFuZCBpZGVudGlmeSBpbnRlcmFjdGl2ZSBlbGVtZW50czoKICAgYGBgCiAgIGJyb3dzZXJfdmlzaW9uKHF1ZXN0aW9uPSJEZXNjcmliZSB0aGUgcGFnZSBsYXlvdXQsIGlkZW50aWZ5IGFueSB2aXN1YWwgaXNzdWVzLCBicm9rZW4gZWxlbWVudHMsIG9yIGFjY2Vzc2liaWxpdHkgY29uY2VybnMiLCBhbm5vdGF0ZT10cnVlKQogICBgYGAKICAgVGhlIGBhbm5vdGF0ZT10cnVlYCBmbGFnIG92ZXJsYXlzIG51bWJlcmVkIGBbTl1gIGxhYmVscyBvbiBpbnRlcmFjdGl2ZSBlbGVtZW50cy4gRWFjaCBgW05dYCBtYXBzIHRvIHJlZiBgQGVOYCBmb3Igc3Vic2VxdWVudCBicm93c2VyIGNvbW1hbmRzLgoKNS4gKipUZXN0IGludGVyYWN0aXZlIGVsZW1lbnRzKiogc3lzdGVtYXRpY2FsbHk6CiAgIC0gQ2xpY2sgYnV0dG9ucyBhbmQgbGlua3M6IGBicm93c2VyX2NsaWNrKHJlZj0iQGVOIilgCiAgIC0gRmlsbCBmb3JtczogYGJyb3dzZXJfdHlwZShyZWY9IkBlTiIsIHRleHQ9InRlc3QgaW5wdXQiKWAKICAgLSBUZXN0IGtleWJvYXJkIG5hdmlnYXRpb246IGBicm93c2VyX3ByZXNzKGtleT0iVGFiIilgLCBgYnJvd3Nlcl9wcmVzcyhrZXk9IkVudGVyIilgCiAgIC0gU2Nyb2xsIHRocm91Z2ggY29udGVudDogYGJyb3dzZXJfc2Nyb2xsKGRpcmVjdGlvbj0iZG93biIpYAogICAtIFRlc3QgZm9ybSB2YWxpZGF0aW9uIHdpdGggaW52YWxpZCBpbnB1dHMKICAgLSBUZXN0IGVtcHR5IHN1Ym1pc3Npb25zCgo2LiAqKkFmdGVyIGVhY2ggaW50ZXJhY3Rpb24qKiwgY2hlY2sgZm9yOgogICAtIENvbnNvbGUgZXJyb3JzOiBgYnJvd3Nlcl9jb25zb2xlKClgCiAgIC0gVmlzdWFsIGNoYW5nZXM6IGBicm93c2VyX3Zpc2lvbihxdWVzdGlvbj0iV2hhdCBjaGFuZ2VkIGFmdGVyIHRoZSBpbnRlcmFjdGlvbj8iKWAKICAgLSBFeHBlY3RlZCB2cyBhY3R1YWwgYmVoYXZpb3IKCiMjIyBQaGFzZSAzOiBDb2xsZWN0IEV2aWRlbmNlCgpGb3IgZXZlcnkgaXNzdWUgZm91bmQ6CgoxLiAqKlRha2UgYSBzY3JlZW5zaG90Kiogc2hvd2luZyB0aGUgaXNzdWU6CiAgIGBgYAogICBicm93c2VyX3Zpc2lvbihxdWVzdGlvbj0iQ2FwdHVyZSBhbmQgZGVzY3JpYmUgdGhlIGlzc3VlIHZpc2libGUgb24gdGhpcyBwYWdlIiwgYW5ub3RhdGU9ZmFsc2UpCiAgIGBgYAogICBTYXZlIHRoZSBgc2NyZWVuc2hvdF9wYXRoYCBmcm9tIHRoZSByZXNwb25zZSDigJQgeW91IHdpbGwgcmVmZXJlbmNlIGl0IGluIHRoZSByZXBvcnQuCgoyLiAqKlJlY29yZCB0aGUgZGV0YWlscyoqOgogICAtIFVSTCB3aGVyZSB0aGUgaXNzdWUgb2NjdXJzCiAgIC0gU3RlcHMgdG8gcmVwcm9kdWNlCiAgIC0gRXhwZWN0ZWQgYmVoYXZpb3IKICAgLSBBY3R1YWwgYmVoYXZpb3IKICAgLSBDb25zb2xlIGVycm9ycyAoaWYgYW55KQogICAtIFNjcmVlbnNob3QgcGF0aAoKMy4gKipDbGFzc2lmeSB0aGUgaXNzdWUqKiB1c2luZyB0aGUgaXNzdWUgdGF4b25vbXkgKHNlZSBgcmVmZXJlbmNlcy9pc3N1ZS10YXhvbm9teS5tZGApOgogICAtIFNldmVyaXR5OiBDcml0aWNhbCAvIEhpZ2ggLyBNZWRpdW0gLyBMb3cKICAgLSBDYXRlZ29yeTogRnVuY3Rpb25hbCAvIFZpc3VhbCAvIEFjY2Vzc2liaWxpdHkgLyBDb25zb2xlIC8gVVggLyBDb250ZW50CgojIyMgUGhhc2UgNDogQ2F0ZWdvcml6ZQoKMS4gUmV2aWV3IGFsbCBjb2xsZWN0ZWQgaXNzdWVzLgoyLiBEZS1kdXBsaWNhdGUg4oCUIG1lcmdlIGlzc3VlcyB0aGF0IGFyZSB0aGUgc2FtZSBidWcgbWFuaWZlc3RpbmcgaW4gZGlmZmVyZW50IHBsYWNlcy4KMy4gQXNzaWduIGZpbmFsIHNldmVyaXR5IGFuZCBjYXRlZ29yeSB0byBlYWNoIGlzc3VlLgo0LiBTb3J0IGJ5IHNldmVyaXR5IChDcml0aWNhbCBmaXJzdCwgdGhlbiBIaWdoLCBNZWRpdW0sIExvdykuCjUuIENvdW50IGlzc3VlcyBieSBzZXZlcml0eSBhbmQgY2F0ZWdvcnkgZm9yIHRoZSBleGVjdXRpdmUgc3VtbWFyeS4KCiMjIyBQaGFzZSA1OiBSZXBvcnQKCkdlbmVyYXRlIHRoZSBmaW5hbCByZXBvcnQgdXNpbmcgdGhlIHRlbXBsYXRlIGF0IGB0ZW1wbGF0ZXMvZG9nZm9vZC1yZXBvcnQtdGVtcGxhdGUubWRgLgoKVGhlIHJlcG9ydCBtdXN0IGluY2x1ZGU6CjEuICoqRXhlY3V0aXZlIHN1bW1hcnkqKiB3aXRoIHRvdGFsIGlzc3VlIGNvdW50LCBicmVha2Rvd24gYnkgc2V2ZXJpdHksIGFuZCB0ZXN0aW5nIHNjb3BlCjIuICoqUGVyLWlzc3VlIHNlY3Rpb25zKiogd2l0aDoKICAgLSBJc3N1ZSBudW1iZXIgYW5kIHRpdGxlCiAgIC0gU2V2ZXJpdHkgYW5kIGNhdGVnb3J5IGJhZGdlcwogICAtIFVSTCB3aGVyZSBvYnNlcnZlZAogICAtIERlc2NyaXB0aW9uIG9mIHRoZSBpc3N1ZQogICAtIFN0ZXBzIHRvIHJlcHJvZHVjZQogICAtIEV4cGVjdGVkIHZzIGFjdHVhbCBiZWhhdmlvcgogICAtIFNjcmVlbnNob3QgcmVmZXJlbmNlcyAodXNlIGBNRURJQTo8c2NyZWVuc2hvdF9wYXRoPmAgZm9yIGlubGluZSBpbWFnZXMpCiAgIC0gQ29uc29sZSBlcnJvcnMgaWYgcmVsZXZhbnQKMy4gKipTdW1tYXJ5IHRhYmxlKiogb2YgYWxsIGlzc3Vlcwo0LiAqKlRlc3Rpbmcgbm90ZXMqKiDigJQgd2hhdCB3YXMgdGVzdGVkLCB3aGF0IHdhcyBub3QsIGFueSBibG9ja2VycwoKU2F2ZSB0aGUgcmVwb3J0IHRvIGB7b3V0cHV0X2Rpcn0vcmVwb3J0Lm1kYC4KCiMjIFRvb2xzIFJlZmVyZW5jZQoKfCBUb29sIHwgUHVycG9zZSB8CnwtLS0tLS18LS0tLS0tLS0tfAp8IGBicm93c2VyX25hdmlnYXRlYCB8IEdvIHRvIGEgVVJMIHwKfCBgYnJvd3Nlcl9zbmFwc2hvdGAgfCBHZXQgRE9NIHRleHQgc25hcHNob3QgKGFjY2Vzc2liaWxpdHkgdHJlZSkgfAp8IGBicm93c2VyX2NsaWNrYCB8IENsaWNrIGFuIGVsZW1lbnQgYnkgcmVmIChgQGVOYCkgb3IgdGV4dCB8CnwgYGJyb3dzZXJfdHlwZWAgfCBUeXBlIGludG8gYW4gaW5wdXQgZmllbGQgfAp8IGBicm93c2VyX3Njcm9sbGAgfCBTY3JvbGwgdXAvZG93biBvbiB0aGUgcGFnZSB8CnwgYGJyb3dzZXJfYmFja2AgfCBHbyBiYWNrIGluIGJyb3dzZXIgaGlzdG9yeSB8CnwgYGJyb3dzZXJfcHJlc3NgIHwgUHJlc3MgYSBrZXlib2FyZCBrZXkgfAp8IGBicm93c2VyX3Zpc2lvbmAgfCBTY3JlZW5zaG90ICsgQUkgYW5hbHlzaXM7IHVzZSBgYW5ub3RhdGU9dHJ1ZWAgZm9yIGVsZW1lbnQgbGFiZWxzIHwKfCBgYnJvd3Nlcl9jb25zb2xlYCB8IEdldCBKUyBjb25zb2xlIG91dHB1dCBhbmQgZXJyb3JzIHwKCiMjIFRpcHMKCi0gKipBbHdheXMgY2hlY2sgYGJyb3dzZXJfY29uc29sZSgpYCBhZnRlciBuYXZpZ2F0aW5nIGFuZCBhZnRlciBzaWduaWZpY2FudCBpbnRlcmFjdGlvbnMuKiogU2lsZW50IEpTIGVycm9ycyBhcmUgYW1vbmcgdGhlIG1vc3QgdmFsdWFibGUgZmluZGluZ3MuCi0gKipVc2UgYGFubm90YXRlPXRydWVgIHdpdGggYGJyb3dzZXJfdmlzaW9uYCoqIHdoZW4geW91IG5lZWQgdG8gcmVhc29uIGFib3V0IGludGVyYWN0aXZlIGVsZW1lbnQgcG9zaXRpb25zIG9yIHdoZW4gdGhlIHNuYXBzaG90IHJlZnMgYXJlIHVuY2xlYXIuCi0gKipUZXN0IHdpdGggYm90aCB2YWxpZCBhbmQgaW52YWxpZCBpbnB1dHMqKiDigJQgZm9ybSB2YWxpZGF0aW9uIGJ1Z3MgYXJlIGNvbW1vbi4KLSAqKlNjcm9sbCB0aHJvdWdoIGxvbmcgcGFnZXMqKiDigJQgY29udGVudCBiZWxvdyB0aGUgZm9sZCBtYXkgaGF2ZSByZW5kZXJpbmcgaXNzdWVzLgotICoqVGVzdCBuYXZpZ2F0aW9uIGZsb3dzKiog4oCUIGNsaWNrIHRocm91Z2ggbXVsdGktc3RlcCBwcm9jZXNzZXMgZW5kLXRvLWVuZC4KLSAqKkNoZWNrIHJlc3BvbnNpdmUgYmVoYXZpb3IqKiBieSBub3RpbmcgYW55IGxheW91dCBpc3N1ZXMgdmlzaWJsZSBpbiBzY3JlZW5zaG90cy4KLSAqKkRvbid0IGZvcmdldCBlZGdlIGNhc2VzKio6IGVtcHR5IHN0YXRlcywgdmVyeSBsb25nIHRleHQsIHNwZWNpYWwgY2hhcmFjdGVycywgcmFwaWQgY2xpY2tpbmcuCi0gV2hlbiByZXBvcnRpbmcgc2NyZWVuc2hvdHMgdG8gdGhlIHVzZXIsIGluY2x1ZGUgYE1FRElBOjxzY3JlZW5zaG90X3BhdGg+YCBzbyB0aGV5IGNhbiBzZWUgdGhlIGV2aWRlbmNlIGlubGluZS4K
+---
+name: dogfood
+description: Systematic exploratory QA testing of web applications — find bugs, capture evidence, and generate structured reports
+version: 1.0.0
+metadata:
+  hermes:
+    tags: [qa, testing, browser, web, dogfood]
+    related_skills: []
+---
+
+# Dogfood: Systematic Web Application QA Testing
+
+## Overview
+
+This skill guides you through systematic exploratory QA testing of web applications using the browser toolset. You will navigate the application, interact with elements, capture evidence of issues, and produce a structured bug report.
+
+## Prerequisites
+
+- Browser toolset must be available (`browser_navigate`, `browser_snapshot`, `browser_click`, `browser_type`, `browser_vision`, `browser_console`, `browser_scroll`, `browser_back`, `browser_press`)
+- A target URL and testing scope from the user
+
+## Inputs
+
+The user provides:
+1. **Target URL** — the entry point for testing
+2. **Scope** — what areas/features to focus on (or "full site" for comprehensive testing)
+3. **Output directory** (optional) — where to save screenshots and the report (default: `./dogfood-output`)
+
+## Workflow
+
+Follow this 5-phase systematic workflow:
+
+### Phase 1: Plan
+
+1. Create the output directory structure:
+   ```
+   {output_dir}/
+   ├── screenshots/       # Evidence screenshots
+   └── report.md          # Final report (generated in Phase 5)
+   ```
+2. Identify the testing scope based on user input.
+3. Build a rough sitemap by planning which pages and features to test:
+   - Landing/home page
+   - Navigation links (header, footer, sidebar)
+   - Key user flows (sign up, login, search, checkout, etc.)
+   - Forms and interactive elements
+   - Edge cases (empty states, error pages, 404s)
+
+### Phase 2: Explore
+
+For each page or feature in your plan:
+
+1. **Navigate** to the page:
+   ```
+   browser_navigate(url="https://example.com/page")
+   ```
+
+2. **Take a snapshot** to understand the DOM structure:
+   ```
+   browser_snapshot()
+   ```
+
+3. **Check the console** for JavaScript errors:
+   ```
+   browser_console(clear=true)
+   ```
+   Do this after every navigation and after every significant interaction. Silent JS errors are high-value findings.
+
+4. **Take an annotated screenshot** to visually assess the page and identify interactive elements:
+   ```
+   browser_vision(question="Describe the page layout, identify any visual issues, broken elements, or accessibility concerns", annotate=true)
+   ```
+   The `annotate=true` flag overlays numbered `[N]` labels on interactive elements. Each `[N]` maps to ref `@eN` for subsequent browser commands.
+
+5. **Test interactive elements** systematically:
+   - Click buttons and links: `browser_click(ref="@eN")`
+   - Fill forms: `browser_type(ref="@eN", text="test input")`
+   - Test keyboard navigation: `browser_press(key="Tab")`, `browser_press(key="Enter")`
+   - Scroll through content: `browser_scroll(direction="down")`
+   - Test form validation with invalid inputs
+   - Test empty submissions
+
+6. **After each interaction**, check for:
+   - Console errors: `browser_console()`
+   - Visual changes: `browser_vision(question="What changed after the interaction?")`
+   - Expected vs actual behavior
+
+### Phase 3: Collect Evidence
+
+For every issue found:
+
+1. **Take a screenshot** showing the issue:
+   ```
+   browser_vision(question="Capture and describe the issue visible on this page", annotate=false)
+   ```
+   Save the `screenshot_path` from the response — you will reference it in the report.
+
+2. **Record the details**:
+   - URL where the issue occurs
+   - Steps to reproduce
+   - Expected behavior
+   - Actual behavior
+   - Console errors (if any)
+   - Screenshot path
+
+3. **Classify the issue** using the issue taxonomy (see `references/issue-taxonomy.md`):
+   - Severity: Critical / High / Medium / Low
+   - Category: Functional / Visual / Accessibility / Console / UX / Content
+
+### Phase 4: Categorize
+
+1. Review all collected issues.
+2. De-duplicate — merge issues that are the same bug manifesting in different places.
+3. Assign final severity and category to each issue.
+4. Sort by severity (Critical first, then High, Medium, Low).
+5. Count issues by severity and category for the executive summary.
+
+### Phase 5: Report
+
+Generate the final report using the template at `templates/dogfood-report-template.md`.
+
+The report must include:
+1. **Executive summary** with total issue count, breakdown by severity, and testing scope
+2. **Per-issue sections** with:
+   - Issue number and title
+   - Severity and category badges
+   - URL where observed
+   - Description of the issue
+   - Steps to reproduce
+   - Expected vs actual behavior
+   - Screenshot references (use `MEDIA:<screenshot_path>` for inline images)
+   - Console errors if relevant
+3. **Summary table** of all issues
+4. **Testing notes** — what was tested, what was not, any blockers
+
+Save the report to `{output_dir}/report.md`.
+
+## Tools Reference
+
+| Tool | Purpose |
+|------|---------|
+| `browser_navigate` | Go to a URL |
+| `browser_snapshot` | Get DOM text snapshot (accessibility tree) |
+| `browser_click` | Click an element by ref (`@eN`) or text |
+| `browser_type` | Type into an input field |
+| `browser_scroll` | Scroll up/down on the page |
+| `browser_back` | Go back in browser history |
+| `browser_press` | Press a keyboard key |
+| `browser_vision` | Screenshot + AI analysis; use `annotate=true` for element labels |
+| `browser_console` | Get JS console output and errors |
+
+## Tips
+
+- **Always check `browser_console()` after navigating and after significant interactions.** Silent JS errors are among the most valuable findings.
+- **Use `annotate=true` with `browser_vision`** when you need to reason about interactive element positions or when the snapshot refs are unclear.
+- **Test with both valid and invalid inputs** — form validation bugs are common.
+- **Scroll through long pages** — content below the fold may have rendering issues.
+- **Test navigation flows** — click through multi-step processes end-to-end.
+- **Check responsive behavior** by noting any layout issues visible in screenshots.
+- **Don't forget edge cases**: empty states, very long text, special characters, rapid clicking.
+- When reporting screenshots to the user, include `MEDIA:<screenshot_path>` so they can see the evidence inline.

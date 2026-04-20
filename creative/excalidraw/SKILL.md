@@ -1,1 +1,194 @@
-LS0tCm5hbWU6IGV4Y2FsaWRyYXcKZGVzY3JpcHRpb246IENyZWF0ZSBoYW5kLWRyYXduIHN0eWxlIGRpYWdyYW1zIHVzaW5nIEV4Y2FsaWRyYXcgSlNPTiBmb3JtYXQuIEdlbmVyYXRlIC5leGNhbGlkcmF3IGZpbGVzIGZvciBhcmNoaXRlY3R1cmUgZGlhZ3JhbXMsIGZsb3djaGFydHMsIHNlcXVlbmNlIGRpYWdyYW1zLCBjb25jZXB0IG1hcHMsIGFuZCBtb3JlLiBGaWxlcyBjYW4gYmUgb3BlbmVkIGF0IGV4Y2FsaWRyYXcuY29tIG9yIHVwbG9hZGVkIGZvciBzaGFyZWFibGUgbGlua3MuCnZlcnNpb246IDEuMC4wCmF1dGhvcjogSGVybWVzIEFnZW50CmxpY2Vuc2U6IE1JVApkZXBlbmRlbmNpZXM6IFtdCm1ldGFkYXRhOgogIGhlcm1lczoKICAgIHRhZ3M6IFtFeGNhbGlkcmF3LCBEaWFncmFtcywgRmxvd2NoYXJ0cywgQXJjaGl0ZWN0dXJlLCBWaXN1YWxpemF0aW9uLCBKU09OXQogICAgcmVsYXRlZF9za2lsbHM6IFtdCgotLS0KCiMgRXhjYWxpZHJhdyBEaWFncmFtIFNraWxsCgpDcmVhdGUgZGlhZ3JhbXMgYnkgd3JpdGluZyBzdGFuZGFyZCBFeGNhbGlkcmF3IGVsZW1lbnQgSlNPTiBhbmQgc2F2aW5nIGFzIGAuZXhjYWxpZHJhd2AgZmlsZXMuIFRoZXNlIGZpbGVzIGNhbiBiZSBkcmFnLWFuZC1kcm9wcGVkIG9udG8gW2V4Y2FsaWRyYXcuY29tXShodHRwczovL2V4Y2FsaWRyYXcuY29tKSBmb3Igdmlld2luZyBhbmQgZWRpdGluZy4gTm8gYWNjb3VudHMsIG5vIEFQSSBrZXlzLCBubyByZW5kZXJpbmcgbGlicmFyaWVzIC0tIGp1c3QgSlNPTi4KCiMjIFdvcmtmbG93CgoxLiAqKkxvYWQgdGhpcyBza2lsbCoqICh5b3UgYWxyZWFkeSBkaWQpCjIuICoqV3JpdGUgdGhlIGVsZW1lbnRzIEpTT04qKiAtLSBhbiBhcnJheSBvZiBFeGNhbGlkcmF3IGVsZW1lbnQgb2JqZWN0cwozLiAqKlNhdmUgdGhlIGZpbGUqKiB1c2luZyBgd3JpdGVfZmlsZWAgdG8gY3JlYXRlIGEgYC5leGNhbGlkcmF3YCBmaWxlCjQuICoqT3B0aW9uYWxseSB1cGxvYWQqKiBmb3IgYSBzaGFyZWFibGUgbGluayB1c2luZyBgc2NyaXB0cy91cGxvYWQucHlgIHZpYSBgdGVybWluYWxgCgojIyMgU2F2aW5nIGEgRGlhZ3JhbQoKV3JhcCB5b3VyIGVsZW1lbnRzIGFycmF5IGluIHRoZSBzdGFuZGFyZCBgLmV4Y2FsaWRyYXdgIGVudmVsb3BlIGFuZCBzYXZlIHdpdGggYHdyaXRlX2ZpbGVgOgoKYGBganNvbgp7CiAgInR5cGUiOiAiZXhjYWxpZHJhdyIsCiAgInZlcnNpb24iOiAyLAogICJzb3VyY2UiOiAiaGVybWVzLWFnZW50IiwKICAiZWxlbWVudHMiOiBbIC4uLnlvdXIgZWxlbWVudHMgYXJyYXkgaGVyZS4uLiBdLAogICJhcHBTdGF0ZSI6IHsKICAgICJ2aWV3QmFja2dyb3VuZENvbG9yIjogIiNmZmZmZmYiCiAgfQp9CmBgYAoKU2F2ZSB0byBhbnkgcGF0aCwgZS5nLiBgfi9kaWFncmFtcy9teV9kaWFncmFtLmV4Y2FsaWRyYXdgLgoKIyMjIFVwbG9hZGluZyBmb3IgYSBTaGFyZWFibGUgTGluawoKUnVuIHRoZSB1cGxvYWQgc2NyaXB0IChsb2NhdGVkIGluIHRoaXMgc2tpbGwncyBgc2NyaXB0cy9gIGRpcmVjdG9yeSkgdmlhIHRlcm1pbmFsOgoKYGBgYmFzaApweXRob24gc2tpbGxzL2RpYWdyYW1taW5nL2V4Y2FsaWRyYXcvc2NyaXB0cy91cGxvYWQucHkgfi9kaWFncmFtcy9teV9kaWFncmFtLmV4Y2FsaWRyYXcKYGBgCgpUaGlzIHVwbG9hZHMgdG8gZXhjYWxpZHJhdy5jb20gKG5vIGFjY291bnQgbmVlZGVkKSBhbmQgcHJpbnRzIGEgc2hhcmVhYmxlIFVSTC4gUmVxdWlyZXMgdGhlIGBjcnlwdG9ncmFwaHlgIHBpcCBwYWNrYWdlIChgcGlwIGluc3RhbGwgY3J5cHRvZ3JhcGh5YCkuCgotLS0KCiMjIEVsZW1lbnQgRm9ybWF0IFJlZmVyZW5jZQoKIyMjIFJlcXVpcmVkIEZpZWxkcyAoYWxsIGVsZW1lbnRzKQpgdHlwZWAsIGBpZGAgKHVuaXF1ZSBzdHJpbmcpLCBgeGAsIGB5YCwgYHdpZHRoYCwgYGhlaWdodGAKCiMjIyBEZWZhdWx0cyAoc2tpcCB0aGVzZSAtLSB0aGV5J3JlIGFwcGxpZWQgYXV0b21hdGljYWxseSkKLSBgc3Ryb2tlQ29sb3JgOiBgIiMxZTFlMWUiYAotIGBiYWNrZ3JvdW5kQ29sb3JgOiBgInRyYW5zcGFyZW50ImAKLSBgZmlsbFN0eWxlYDogYCJzb2xpZCJgCi0gYHN0cm9rZVdpZHRoYDogYDJgCi0gYHJvdWdobmVzc2A6IGAxYCAoaGFuZC1kcmF3biBsb29rKQotIGBvcGFjaXR5YDogYDEwMGAKCkNhbnZhcyBiYWNrZ3JvdW5kIGlzIHdoaXRlLgoKIyMjIEVsZW1lbnQgVHlwZXMKCioqUmVjdGFuZ2xlKio6CmBgYGpzb24KeyAidHlwZSI6ICJyZWN0YW5nbGUiLCAiaWQiOiAicjEiLCAieCI6IDEwMCwgInkiOiAxMDAsICJ3aWR0aCI6IDIwMCwgImhlaWdodCI6IDEwMCB9CmBgYAotIGByb3VuZG5lc3M6IHsgInR5cGUiOiAzIH1gIGZvciByb3VuZGVkIGNvcm5lcnMKLSBgYmFja2dyb3VuZENvbG9yOiAiI2E1ZDhmZiJgLCBgZmlsbFN0eWxlOiAic29saWQiYCBmb3IgZmlsbGVkCgoqKkVsbGlwc2UqKjoKYGBganNvbgp7ICJ0eXBlIjogImVsbGlwc2UiLCAiaWQiOiAiZTEiLCAieCI6IDEwMCwgInkiOiAxMDAsICJ3aWR0aCI6IDE1MCwgImhlaWdodCI6IDE1MCB9CmBgYAoKKipEaWFtb25kKio6CmBgYGpzb24KeyAidHlwZSI6ICJkaWFtb25kIiwgImlkIjogImQxIiwgIngiOiAxMDAsICJ5IjogMTAwLCAid2lkdGgiOiAxNTAsICJoZWlnaHQiOiAxNTAgfQpgYGAKCioqTGFiZWxlZCBzaGFwZSAoY29udGFpbmVyIGJpbmRpbmcpKiogLS0gY3JlYXRlIGEgdGV4dCBlbGVtZW50IGJvdW5kIHRvIHRoZSBzaGFwZToKCj4gKipXQVJOSU5HOioqIERvIE5PVCB1c2UgYCJsYWJlbCI6IHsgInRleHQiOiAiLi4uIiB9YCBvbiBzaGFwZXMuIFRoaXMgaXMgTk9UIGEgdmFsaWQKPiBFeGNhbGlkcmF3IHByb3BlcnR5IGFuZCB3aWxsIGJlIHNpbGVudGx5IGlnbm9yZWQsIHByb2R1Y2luZyBibGFuayBzaGFwZXMuIFlvdSBNVVNUCj4gdXNlIHRoZSBjb250YWluZXIgYmluZGluZyBhcHByb2FjaCBiZWxvdy4KClRoZSBzaGFwZSBuZWVkcyBgYm91bmRFbGVtZW50c2AgbGlzdGluZyB0aGUgdGV4dCwgYW5kIHRoZSB0ZXh0IG5lZWRzIGBjb250YWluZXJJZGAgcG9pbnRpbmcgYmFjazoKYGBganNvbgp7ICJ0eXBlIjogInJlY3RhbmdsZSIsICJpZCI6ICJyMSIsICJ4IjogMTAwLCAieSI6IDEwMCwgIndpZHRoIjogMjAwLCAiaGVpZ2h0IjogODAsCiAgInJvdW5kbmVzcyI6IHsgInR5cGUiOiAzIH0sICJiYWNrZ3JvdW5kQ29sb3IiOiAiI2E1ZDhmZiIsICJmaWxsU3R5bGUiOiAic29saWQiLAogICJib3VuZEVsZW1lbnRzIjogW3sgImlkIjogInRfcjEiLCAidHlwZSI6ICJ0ZXh0IiB9XSB9LAp7ICJ0eXBlIjogInRleHQiLCAiaWQiOiAidF9yMSIsICJ4IjogMTA1LCAieSI6IDExMCwgIndpZHRoIjogMTkwLCAiaGVpZ2h0IjogMjUsCiAgInRleHQiOiAiSGVsbG8iLCAiZm9udFNpemUiOiAyMCwgImZvbnRGYW1pbHkiOiAxLCAic3Ryb2tlQ29sb3IiOiAiIzFlMWUxZSIsCiAgInRleHRBbGlnbiI6ICJjZW50ZXIiLCAidmVydGljYWxBbGlnbiI6ICJtaWRkbGUiLAogICJjb250YWluZXJJZCI6ICJyMSIsICJvcmlnaW5hbFRleHQiOiAiSGVsbG8iLCAiYXV0b1Jlc2l6ZSI6IHRydWUgfQpgYGAKLSBXb3JrcyBvbiByZWN0YW5nbGUsIGVsbGlwc2UsIGRpYW1vbmQKLSBUZXh0IGlzIGF1dG8tY2VudGVyZWQgYnkgRXhjYWxpZHJhdyB3aGVuIGBjb250YWluZXJJZGAgaXMgc2V0Ci0gVGhlIHRleHQgYHhgL2B5YC9gd2lkdGhgL2BoZWlnaHRgIGFyZSBhcHByb3hpbWF0ZSAtLSBFeGNhbGlkcmF3IHJlY2FsY3VsYXRlcyB0aGVtIG9uIGxvYWQKLSBgb3JpZ2luYWxUZXh0YCBzaG91bGQgbWF0Y2ggYHRleHRgCi0gQWx3YXlzIGluY2x1ZGUgYGZvbnRGYW1pbHk6IDFgIChWaXJnaWwvaGFuZC1kcmF3biBmb250KQoKKipMYWJlbGVkIGFycm93KiogLS0gc2FtZSBjb250YWluZXIgYmluZGluZyBhcHByb2FjaDoKYGBganNvbgp7ICJ0eXBlIjogImFycm93IiwgImlkIjogImExIiwgIngiOiAzMDAsICJ5IjogMTUwLCAid2lkdGgiOiAyMDAsICJoZWlnaHQiOiAwLAogICJwb2ludHMiOiBbWzAsMF0sWzIwMCwwXV0sICJlbmRBcnJvd2hlYWQiOiAiYXJyb3ciLAogICJib3VuZEVsZW1lbnRzIjogW3sgImlkIjogInRfYTEiLCAidHlwZSI6ICJ0ZXh0IiB9XSB9LAp7ICJ0eXBlIjogInRleHQiLCAiaWQiOiAidF9hMSIsICJ4IjogMzcwLCAieSI6IDEzMCwgIndpZHRoIjogNjAsICJoZWlnaHQiOiAyMCwKICAidGV4dCI6ICJjb25uZWN0cyIsICJmb250U2l6ZSI6IDE2LCAiZm9udEZhbWlseSI6IDEsICJzdHJva2VDb2xvciI6ICIjMWUxZTFlIiwKICAidGV4dEFsaWduIjogImNlbnRlciIsICJ2ZXJ0aWNhbEFsaWduIjogIm1pZGRsZSIsCiAgImNvbnRhaW5lcklkIjogImExIiwgIm9yaWdpbmFsVGV4dCI6ICJjb25uZWN0cyIsICJhdXRvUmVzaXplIjogdHJ1ZSB9CmBgYAoKKipTdGFuZGFsb25lIHRleHQqKiAodGl0bGVzIGFuZCBhbm5vdGF0aW9ucyBvbmx5IC0tIG5vIGNvbnRhaW5lcik6CmBgYGpzb24KeyAidHlwZSI6ICJ0ZXh0IiwgImlkIjogInQxIiwgIngiOiAxNTAsICJ5IjogMTM4LCAidGV4dCI6ICJIZWxsbyIsICJmb250U2l6ZSI6IDIwLAogICJmb250RmFtaWx5IjogMSwgInN0cm9rZUNvbG9yIjogIiMxZTFlMWUiLCAib3JpZ2luYWxUZXh0IjogIkhlbGxvIiwgImF1dG9SZXNpemUiOiB0cnVlIH0KYGBgCi0gYHhgIGlzIHRoZSBMRUZUIGVkZ2UuIFRvIGNlbnRlciBhdCBwb3NpdGlvbiBgY3hgOiBgeCA9IGN4IC0gKHRleHQubGVuZ3RoICogZm9udFNpemUgKiAwLjUpIC8gMmAKLSBEbyBOT1QgcmVseSBvbiBgdGV4dEFsaWduYCBvciBgd2lkdGhgIGZvciBwb3NpdGlvbmluZwoKKipBcnJvdyoqOgpgYGBqc29uCnsgInR5cGUiOiAiYXJyb3ciLCAiaWQiOiAiYTEiLCAieCI6IDMwMCwgInkiOiAxNTAsICJ3aWR0aCI6IDIwMCwgImhlaWdodCI6IDAsCiAgInBvaW50cyI6IFtbMCwwXSxbMjAwLDBdXSwgImVuZEFycm93aGVhZCI6ICJhcnJvdyIgfQpgYGAKLSBgcG9pbnRzYDogYFtkeCwgZHldYCBvZmZzZXRzIGZyb20gZWxlbWVudCBgeGAsIGB5YAotIGBlbmRBcnJvd2hlYWRgOiBgbnVsbGAgfCBgImFycm93ImAgfCBgImJhciJgIHwgYCJkb3QiYCB8IGAidHJpYW5nbGUiYAotIGBzdHJva2VTdHlsZWA6IGAic29saWQiYCAoZGVmYXVsdCkgfCBgImRhc2hlZCJgIHwgYCJkb3R0ZWQiYAoKIyMjIEFycm93IEJpbmRpbmdzIChjb25uZWN0IGFycm93cyB0byBzaGFwZXMpCgpgYGBqc29uCnsKICAidHlwZSI6ICJhcnJvdyIsICJpZCI6ICJhMSIsICJ4IjogMzAwLCAieSI6IDE1MCwgIndpZHRoIjogMTUwLCAiaGVpZ2h0IjogMCwKICAicG9pbnRzIjogW1swLDBdLFsxNTAsMF1dLCAiZW5kQXJyb3doZWFkIjogImFycm93IiwKICAic3RhcnRCaW5kaW5nIjogeyAiZWxlbWVudElkIjogInIxIiwgImZpeGVkUG9pbnQiOiBbMSwgMC41XSB9LAogICJlbmRCaW5kaW5nIjogeyAiZWxlbWVudElkIjogInIyIiwgImZpeGVkUG9pbnQiOiBbMCwgMC41XSB9Cn0KYGBgCgpgZml4ZWRQb2ludGAgY29vcmRpbmF0ZXM6IGB0b3A9WzAuNSwwXWAsIGBib3R0b209WzAuNSwxXWAsIGBsZWZ0PVswLDAuNV1gLCBgcmlnaHQ9WzEsMC41XWAKCiMjIyBEcmF3aW5nIE9yZGVyICh6LW9yZGVyKQotIEFycmF5IG9yZGVyID0gei1vcmRlciAoZmlyc3QgPSBiYWNrLCBsYXN0ID0gZnJvbnQpCi0gRW1pdCBwcm9ncmVzc2l2ZWx5OiBiYWNrZ3JvdW5kIHpvbmVzIOKGkiBzaGFwZSDihpIgaXRzIGJvdW5kIHRleHQg4oaSIGl0cyBhcnJvd3Mg4oaSIG5leHQgc2hhcGUKLSBCQUQ6IGFsbCByZWN0YW5nbGVzLCB0aGVuIGFsbCB0ZXh0cywgdGhlbiBhbGwgYXJyb3dzCi0gR09PRDogYmdfem9uZSDihpIgc2hhcGUxIOKGkiB0ZXh0X2Zvcl9zaGFwZTEg4oaSIGFycm93MSDihpIgYXJyb3dfbGFiZWxfdGV4dCDihpIgc2hhcGUyIOKGkiB0ZXh0X2Zvcl9zaGFwZTIg4oaSIC4uLgotIEFsd2F5cyBwbGFjZSB0aGUgYm91bmQgdGV4dCBlbGVtZW50IGltbWVkaWF0ZWx5IGFmdGVyIGl0cyBjb250YWluZXIgc2hhcGUKCiMjIyBTaXppbmcgR3VpZGVsaW5lcwoKKipGb250IHNpemVzOioqCi0gTWluaW11bSBgZm9udFNpemVgOiAqKjE2KiogZm9yIGJvZHkgdGV4dCwgbGFiZWxzLCBkZXNjcmlwdGlvbnMKLSBNaW5pbXVtIGBmb250U2l6ZWA6ICoqMjAqKiBmb3IgdGl0bGVzIGFuZCBoZWFkaW5ncwotIE1pbmltdW0gYGZvbnRTaXplYDogKioxNCoqIGZvciBzZWNvbmRhcnkgYW5ub3RhdGlvbnMgb25seSAoc3BhcmluZ2x5KQotIE5FVkVSIHVzZSBgZm9udFNpemVgIGJlbG93IDE0CgoqKkVsZW1lbnQgc2l6ZXM6KioKLSBNaW5pbXVtIHNoYXBlIHNpemU6IDEyMHg2MCBmb3IgbGFiZWxlZCByZWN0YW5nbGVzL2VsbGlwc2VzCi0gTGVhdmUgMjAtMzBweCBnYXBzIGJldHdlZW4gZWxlbWVudHMgbWluaW11bQotIFByZWZlciBmZXdlciwgbGFyZ2VyIGVsZW1lbnRzIG92ZXIgbWFueSB0aW55IG9uZXMKCiMjIyBDb2xvciBQYWxldHRlCgpTZWUgYHJlZmVyZW5jZXMvY29sb3JzLm1kYCBmb3IgZnVsbCBjb2xvciB0YWJsZXMuIFF1aWNrIHJlZmVyZW5jZToKCnwgVXNlIHwgRmlsbCBDb2xvciB8IEhleCB8CnwtLS0tLXwtLS0tLS0tLS0tLXwtLS0tLXwKfCBQcmltYXJ5IC8gSW5wdXQgfCBMaWdodCBCbHVlIHwgYCNhNWQ4ZmZgIHwKfCBTdWNjZXNzIC8gT3V0cHV0IHwgTGlnaHQgR3JlZW4gfCBgI2IyZjJiYmAgfAp8IFdhcm5pbmcgLyBFeHRlcm5hbCB8IExpZ2h0IE9yYW5nZSB8IGAjZmZkOGE4YCB8CnwgUHJvY2Vzc2luZyAvIFNwZWNpYWwgfCBMaWdodCBQdXJwbGUgfCBgI2QwYmZmZmAgfAp8IEVycm9yIC8gQ3JpdGljYWwgfCBMaWdodCBSZWQgfCBgI2ZmYzljOWAgfAp8IE5vdGVzIC8gRGVjaXNpb25zIHwgTGlnaHQgWWVsbG93IHwgYCNmZmYzYmZgIHwKfCBTdG9yYWdlIC8gRGF0YSB8IExpZ2h0IFRlYWwgfCBgI2MzZmFlOGAgfAoKIyMjIFRpcHMKLSBVc2UgdGhlIGNvbG9yIHBhbGV0dGUgY29uc2lzdGVudGx5IGFjcm9zcyB0aGUgZGlhZ3JhbQotICoqVGV4dCBjb250cmFzdCBpcyBDUklUSUNBTCoqIC0tIG5ldmVyIHVzZSBsaWdodCBncmF5IG9uIHdoaXRlIGJhY2tncm91bmRzLiBNaW5pbXVtIHRleHQgY29sb3Igb24gd2hpdGU6IGAjNzU3NTc1YAotIERvIE5PVCB1c2UgZW1vamkgaW4gdGV4dCAtLSB0aGV5IGRvbid0IHJlbmRlciBpbiBFeGNhbGlkcmF3J3MgZm9udAotIEZvciBkYXJrIG1vZGUgZGlhZ3JhbXMsIHNlZSBgcmVmZXJlbmNlcy9kYXJrLW1vZGUubWRgCi0gRm9yIGxhcmdlciBleGFtcGxlcywgc2VlIGByZWZlcmVuY2VzL2V4YW1wbGVzLm1kYAoKCg==
+---
+name: excalidraw
+description: Create hand-drawn style diagrams using Excalidraw JSON format. Generate .excalidraw files for architecture diagrams, flowcharts, sequence diagrams, concept maps, and more. Files can be opened at excalidraw.com or uploaded for shareable links.
+version: 1.0.0
+author: Hermes Agent
+license: MIT
+dependencies: []
+metadata:
+  hermes:
+    tags: [Excalidraw, Diagrams, Flowcharts, Architecture, Visualization, JSON]
+    related_skills: []
+
+---
+
+# Excalidraw Diagram Skill
+
+Create diagrams by writing standard Excalidraw element JSON and saving as `.excalidraw` files. These files can be drag-and-dropped onto [excalidraw.com](https://excalidraw.com) for viewing and editing. No accounts, no API keys, no rendering libraries -- just JSON.
+
+## Workflow
+
+1. **Load this skill** (you already did)
+2. **Write the elements JSON** -- an array of Excalidraw element objects
+3. **Save the file** using `write_file` to create a `.excalidraw` file
+4. **Optionally upload** for a shareable link using `scripts/upload.py` via `terminal`
+
+### Saving a Diagram
+
+Wrap your elements array in the standard `.excalidraw` envelope and save with `write_file`:
+
+```json
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "hermes-agent",
+  "elements": [ ...your elements array here... ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}
+```
+
+Save to any path, e.g. `~/diagrams/my_diagram.excalidraw`.
+
+### Uploading for a Shareable Link
+
+Run the upload script (located in this skill's `scripts/` directory) via terminal:
+
+```bash
+python skills/diagramming/excalidraw/scripts/upload.py ~/diagrams/my_diagram.excalidraw
+```
+
+This uploads to excalidraw.com (no account needed) and prints a shareable URL. Requires the `cryptography` pip package (`pip install cryptography`).
+
+---
+
+## Element Format Reference
+
+### Required Fields (all elements)
+`type`, `id` (unique string), `x`, `y`, `width`, `height`
+
+### Defaults (skip these -- they're applied automatically)
+- `strokeColor`: `"#1e1e1e"`
+- `backgroundColor`: `"transparent"`
+- `fillStyle`: `"solid"`
+- `strokeWidth`: `2`
+- `roughness`: `1` (hand-drawn look)
+- `opacity`: `100`
+
+Canvas background is white.
+
+### Element Types
+
+**Rectangle**:
+```json
+{ "type": "rectangle", "id": "r1", "x": 100, "y": 100, "width": 200, "height": 100 }
+```
+- `roundness: { "type": 3 }` for rounded corners
+- `backgroundColor: "#a5d8ff"`, `fillStyle: "solid"` for filled
+
+**Ellipse**:
+```json
+{ "type": "ellipse", "id": "e1", "x": 100, "y": 100, "width": 150, "height": 150 }
+```
+
+**Diamond**:
+```json
+{ "type": "diamond", "id": "d1", "x": 100, "y": 100, "width": 150, "height": 150 }
+```
+
+**Labeled shape (container binding)** -- create a text element bound to the shape:
+
+> **WARNING:** Do NOT use `"label": { "text": "..." }` on shapes. This is NOT a valid
+> Excalidraw property and will be silently ignored, producing blank shapes. You MUST
+> use the container binding approach below.
+
+The shape needs `boundElements` listing the text, and the text needs `containerId` pointing back:
+```json
+{ "type": "rectangle", "id": "r1", "x": 100, "y": 100, "width": 200, "height": 80,
+  "roundness": { "type": 3 }, "backgroundColor": "#a5d8ff", "fillStyle": "solid",
+  "boundElements": [{ "id": "t_r1", "type": "text" }] },
+{ "type": "text", "id": "t_r1", "x": 105, "y": 110, "width": 190, "height": 25,
+  "text": "Hello", "fontSize": 20, "fontFamily": 1, "strokeColor": "#1e1e1e",
+  "textAlign": "center", "verticalAlign": "middle",
+  "containerId": "r1", "originalText": "Hello", "autoResize": true }
+```
+- Works on rectangle, ellipse, diamond
+- Text is auto-centered by Excalidraw when `containerId` is set
+- The text `x`/`y`/`width`/`height` are approximate -- Excalidraw recalculates them on load
+- `originalText` should match `text`
+- Always include `fontFamily: 1` (Virgil/hand-drawn font)
+
+**Labeled arrow** -- same container binding approach:
+```json
+{ "type": "arrow", "id": "a1", "x": 300, "y": 150, "width": 200, "height": 0,
+  "points": [[0,0],[200,0]], "endArrowhead": "arrow",
+  "boundElements": [{ "id": "t_a1", "type": "text" }] },
+{ "type": "text", "id": "t_a1", "x": 370, "y": 130, "width": 60, "height": 20,
+  "text": "connects", "fontSize": 16, "fontFamily": 1, "strokeColor": "#1e1e1e",
+  "textAlign": "center", "verticalAlign": "middle",
+  "containerId": "a1", "originalText": "connects", "autoResize": true }
+```
+
+**Standalone text** (titles and annotations only -- no container):
+```json
+{ "type": "text", "id": "t1", "x": 150, "y": 138, "text": "Hello", "fontSize": 20,
+  "fontFamily": 1, "strokeColor": "#1e1e1e", "originalText": "Hello", "autoResize": true }
+```
+- `x` is the LEFT edge. To center at position `cx`: `x = cx - (text.length * fontSize * 0.5) / 2`
+- Do NOT rely on `textAlign` or `width` for positioning
+
+**Arrow**:
+```json
+{ "type": "arrow", "id": "a1", "x": 300, "y": 150, "width": 200, "height": 0,
+  "points": [[0,0],[200,0]], "endArrowhead": "arrow" }
+```
+- `points`: `[dx, dy]` offsets from element `x`, `y`
+- `endArrowhead`: `null` | `"arrow"` | `"bar"` | `"dot"` | `"triangle"`
+- `strokeStyle`: `"solid"` (default) | `"dashed"` | `"dotted"`
+
+### Arrow Bindings (connect arrows to shapes)
+
+```json
+{
+  "type": "arrow", "id": "a1", "x": 300, "y": 150, "width": 150, "height": 0,
+  "points": [[0,0],[150,0]], "endArrowhead": "arrow",
+  "startBinding": { "elementId": "r1", "fixedPoint": [1, 0.5] },
+  "endBinding": { "elementId": "r2", "fixedPoint": [0, 0.5] }
+}
+```
+
+`fixedPoint` coordinates: `top=[0.5,0]`, `bottom=[0.5,1]`, `left=[0,0.5]`, `right=[1,0.5]`
+
+### Drawing Order (z-order)
+- Array order = z-order (first = back, last = front)
+- Emit progressively: background zones → shape → its bound text → its arrows → next shape
+- BAD: all rectangles, then all texts, then all arrows
+- GOOD: bg_zone → shape1 → text_for_shape1 → arrow1 → arrow_label_text → shape2 → text_for_shape2 → ...
+- Always place the bound text element immediately after its container shape
+
+### Sizing Guidelines
+
+**Font sizes:**
+- Minimum `fontSize`: **16** for body text, labels, descriptions
+- Minimum `fontSize`: **20** for titles and headings
+- Minimum `fontSize`: **14** for secondary annotations only (sparingly)
+- NEVER use `fontSize` below 14
+
+**Element sizes:**
+- Minimum shape size: 120x60 for labeled rectangles/ellipses
+- Leave 20-30px gaps between elements minimum
+- Prefer fewer, larger elements over many tiny ones
+
+### Color Palette
+
+See `references/colors.md` for full color tables. Quick reference:
+
+| Use | Fill Color | Hex |
+|-----|-----------|-----|
+| Primary / Input | Light Blue | `#a5d8ff` |
+| Success / Output | Light Green | `#b2f2bb` |
+| Warning / External | Light Orange | `#ffd8a8` |
+| Processing / Special | Light Purple | `#d0bfff` |
+| Error / Critical | Light Red | `#ffc9c9` |
+| Notes / Decisions | Light Yellow | `#fff3bf` |
+| Storage / Data | Light Teal | `#c3fae8` |
+
+### Tips
+- Use the color palette consistently across the diagram
+- **Text contrast is CRITICAL** -- never use light gray on white backgrounds. Minimum text color on white: `#757575`
+- Do NOT use emoji in text -- they don't render in Excalidraw's font
+- For dark mode diagrams, see `references/dark-mode.md`
+- For larger examples, see `references/examples.md`
+
+

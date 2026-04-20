@@ -1,1 +1,218 @@
-LS0tCm5hbWU6IG9wZW5jb2RlCmRlc2NyaXB0aW9uOiBEZWxlZ2F0ZSBjb2RpbmcgdGFza3MgdG8gT3BlbkNvZGUgQ0xJIGFnZW50IGZvciBmZWF0dXJlIGltcGxlbWVudGF0aW9uLCByZWZhY3RvcmluZywgUFIgcmV2aWV3LCBhbmQgbG9uZy1ydW5uaW5nIGF1dG9ub21vdXMgc2Vzc2lvbnMuIFJlcXVpcmVzIHRoZSBvcGVuY29kZSBDTEkgaW5zdGFsbGVkIGFuZCBhdXRoZW50aWNhdGVkLgp2ZXJzaW9uOiAxLjIuMAphdXRob3I6IEhlcm1lcyBBZ2VudApsaWNlbnNlOiBNSVQKbWV0YWRhdGE6CiAgaGVybWVzOgogICAgdGFnczogW0NvZGluZy1BZ2VudCwgT3BlbkNvZGUsIEF1dG9ub21vdXMsIFJlZmFjdG9yaW5nLCBDb2RlLVJldmlld10KICAgIHJlbGF0ZWRfc2tpbGxzOiBbY2xhdWRlLWNvZGUsIGNvZGV4LCBoZXJtZXMtYWdlbnRdCi0tLQoKIyBPcGVuQ29kZSBDTEkKClVzZSBbT3BlbkNvZGVdKGh0dHBzOi8vb3BlbmNvZGUuYWkpIGFzIGFuIGF1dG9ub21vdXMgY29kaW5nIHdvcmtlciBvcmNoZXN0cmF0ZWQgYnkgSGVybWVzIHRlcm1pbmFsL3Byb2Nlc3MgdG9vbHMuIE9wZW5Db2RlIGlzIGEgcHJvdmlkZXItYWdub3N0aWMsIG9wZW4tc291cmNlIEFJIGNvZGluZyBhZ2VudCB3aXRoIGEgVFVJIGFuZCBDTEkuCgojIyBXaGVuIHRvIFVzZQoKLSBVc2VyIGV4cGxpY2l0bHkgYXNrcyB0byB1c2UgT3BlbkNvZGUKLSBZb3Ugd2FudCBhbiBleHRlcm5hbCBjb2RpbmcgYWdlbnQgdG8gaW1wbGVtZW50L3JlZmFjdG9yL3JldmlldyBjb2RlCi0gWW91IG5lZWQgbG9uZy1ydW5uaW5nIGNvZGluZyBzZXNzaW9ucyB3aXRoIHByb2dyZXNzIGNoZWNrcwotIFlvdSB3YW50IHBhcmFsbGVsIHRhc2sgZXhlY3V0aW9uIGluIGlzb2xhdGVkIHdvcmtkaXJzL3dvcmt0cmVlcwoKIyMgUHJlcmVxdWlzaXRlcwoKLSBPcGVuQ29kZSBpbnN0YWxsZWQ6IGBucG0gaSAtZyBvcGVuY29kZS1haUBsYXRlc3RgIG9yIGBicmV3IGluc3RhbGwgYW5vbWFseWNvL3RhcC9vcGVuY29kZWAKLSBBdXRoIGNvbmZpZ3VyZWQ6IGBvcGVuY29kZSBhdXRoIGxvZ2luYCBvciBzZXQgcHJvdmlkZXIgZW52IHZhcnMgKE9QRU5ST1VURVJfQVBJX0tFWSwgZXRjLikKLSBWZXJpZnk6IGBvcGVuY29kZSBhdXRoIGxpc3RgIHNob3VsZCBzaG93IGF0IGxlYXN0IG9uZSBwcm92aWRlcgotIEdpdCByZXBvc2l0b3J5IGZvciBjb2RlIHRhc2tzIChyZWNvbW1lbmRlZCkKLSBgcHR5PXRydWVgIGZvciBpbnRlcmFjdGl2ZSBUVUkgc2Vzc2lvbnMKCiMjIEJpbmFyeSBSZXNvbHV0aW9uIChJbXBvcnRhbnQpCgpTaGVsbCBlbnZpcm9ubWVudHMgbWF5IHJlc29sdmUgZGlmZmVyZW50IE9wZW5Db2RlIGJpbmFyaWVzLiBJZiBiZWhhdmlvciBkaWZmZXJzIGJldHdlZW4geW91ciB0ZXJtaW5hbCBhbmQgSGVybWVzLCBjaGVjazoKCmBgYAp0ZXJtaW5hbChjb21tYW5kPSJ3aGljaCAtYSBvcGVuY29kZSIpCnRlcm1pbmFsKGNvbW1hbmQ9Im9wZW5jb2RlIC0tdmVyc2lvbiIpCmBgYAoKSWYgbmVlZGVkLCBwaW4gYW4gZXhwbGljaXQgYmluYXJ5IHBhdGg6CgpgYGAKdGVybWluYWwoY29tbWFuZD0iJEhPTUUvLm9wZW5jb2RlL2Jpbi9vcGVuY29kZSBydW4gJy4uLiciLCB3b3JrZGlyPSJ+L3Byb2plY3QiLCBwdHk9dHJ1ZSkKYGBgCgojIyBPbmUtU2hvdCBUYXNrcwoKVXNlIGBvcGVuY29kZSBydW5gIGZvciBib3VuZGVkLCBub24taW50ZXJhY3RpdmUgdGFza3M6CgpgYGAKdGVybWluYWwoY29tbWFuZD0ib3BlbmNvZGUgcnVuICdBZGQgcmV0cnkgbG9naWMgdG8gQVBJIGNhbGxzIGFuZCB1cGRhdGUgdGVzdHMnIiwgd29ya2Rpcj0ifi9wcm9qZWN0IikKYGBgCgpBdHRhY2ggY29udGV4dCBmaWxlcyB3aXRoIGAtZmA6CgpgYGAKdGVybWluYWwoY29tbWFuZD0ib3BlbmNvZGUgcnVuICdSZXZpZXcgdGhpcyBjb25maWcgZm9yIHNlY3VyaXR5IGlzc3VlcycgLWYgY29uZmlnLnlhbWwgLWYgLmVudi5leGFtcGxlIiwgd29ya2Rpcj0ifi9wcm9qZWN0IikKYGBgCgpTaG93IG1vZGVsIHRoaW5raW5nIHdpdGggYC0tdGhpbmtpbmdgOgoKYGBgCnRlcm1pbmFsKGNvbW1hbmQ9Im9wZW5jb2RlIHJ1biAnRGVidWcgd2h5IHRlc3RzIGZhaWwgaW4gQ0knIC0tdGhpbmtpbmciLCB3b3JrZGlyPSJ+L3Byb2plY3QiKQpgYGAKCkZvcmNlIGEgc3BlY2lmaWMgbW9kZWw6CgpgYGAKdGVybWluYWwoY29tbWFuZD0ib3BlbmNvZGUgcnVuICdSZWZhY3RvciBhdXRoIG1vZHVsZScgLS1tb2RlbCBvcGVucm91dGVyL2FudGhyb3BpYy9jbGF1ZGUtc29ubmV0LTQiLCB3b3JrZGlyPSJ+L3Byb2plY3QiKQpgYGAKCiMjIEludGVyYWN0aXZlIFNlc3Npb25zIChCYWNrZ3JvdW5kKQoKRm9yIGl0ZXJhdGl2ZSB3b3JrIHJlcXVpcmluZyBtdWx0aXBsZSBleGNoYW5nZXMsIHN0YXJ0IHRoZSBUVUkgaW4gYmFja2dyb3VuZDoKCmBgYAp0ZXJtaW5hbChjb21tYW5kPSJvcGVuY29kZSIsIHdvcmtkaXI9In4vcHJvamVjdCIsIGJhY2tncm91bmQ9dHJ1ZSwgcHR5PXRydWUpCiMgUmV0dXJucyBzZXNzaW9uX2lkCgojIFNlbmQgYSBwcm9tcHQKcHJvY2VzcyhhY3Rpb249InN1Ym1pdCIsIHNlc3Npb25faWQ9IjxpZD4iLCBkYXRhPSJJbXBsZW1lbnQgT0F1dGggcmVmcmVzaCBmbG93IGFuZCBhZGQgdGVzdHMiKQoKIyBNb25pdG9yIHByb2dyZXNzCnByb2Nlc3MoYWN0aW9uPSJwb2xsIiwgc2Vzc2lvbl9pZD0iPGlkPiIpCnByb2Nlc3MoYWN0aW9uPSJsb2ciLCBzZXNzaW9uX2lkPSI8aWQ+IikKCiMgU2VuZCBmb2xsb3ctdXAgaW5wdXQKcHJvY2VzcyhhY3Rpb249InN1Ym1pdCIsIHNlc3Npb25faWQ9IjxpZD4iLCBkYXRhPSJOb3cgYWRkIGVycm9yIGhhbmRsaW5nIGZvciB0b2tlbiBleHBpcnkiKQoKIyBFeGl0IGNsZWFubHkg4oCUIEN0cmwrQwpwcm9jZXNzKGFjdGlvbj0id3JpdGUiLCBzZXNzaW9uX2lkPSI8aWQ+IiwgZGF0YT0iXHgwMyIpCiMgT3IganVzdCBraWxsIHRoZSBwcm9jZXNzCnByb2Nlc3MoYWN0aW9uPSJraWxsIiwgc2Vzc2lvbl9pZD0iPGlkPiIpCmBgYAoKKipJbXBvcnRhbnQ6KiogRG8gTk9UIHVzZSBgL2V4aXRgIOKAlCBpdCBpcyBub3QgYSB2YWxpZCBPcGVuQ29kZSBjb21tYW5kIGFuZCB3aWxsIG9wZW4gYW4gYWdlbnQgc2VsZWN0b3IgZGlhbG9nIGluc3RlYWQuIFVzZSBDdHJsK0MgKGBceDAzYCkgb3IgYHByb2Nlc3MoYWN0aW9uPSJraWxsIilgIHRvIGV4aXQuCgojIyMgVFVJIEtleWJpbmRpbmdzCgp8IEtleSB8IEFjdGlvbiB8CnwtLS0tLXwtLS0tLS0tLXwKfCBgRW50ZXJgIHwgU3VibWl0IG1lc3NhZ2UgKHByZXNzIHR3aWNlIGlmIG5lZWRlZCkgfAp8IGBUYWJgIHwgU3dpdGNoIGJldHdlZW4gYWdlbnRzIChidWlsZC9wbGFuKSB8CnwgYEN0cmwrUGAgfCBPcGVuIGNvbW1hbmQgcGFsZXR0ZSB8CnwgYEN0cmwrWCBMYCB8IFN3aXRjaCBzZXNzaW9uIHwKfCBgQ3RybCtYIE1gIHwgU3dpdGNoIG1vZGVsIHwKfCBgQ3RybCtYIE5gIHwgTmV3IHNlc3Npb24gfAp8IGBDdHJsK1ggRWAgfCBPcGVuIGVkaXRvciB8CnwgYEN0cmwrQ2AgfCBFeGl0IE9wZW5Db2RlIHwKCiMjIyBSZXN1bWluZyBTZXNzaW9ucwoKQWZ0ZXIgZXhpdGluZywgT3BlbkNvZGUgcHJpbnRzIGEgc2Vzc2lvbiBJRC4gUmVzdW1lIHdpdGg6CgpgYGAKdGVybWluYWwoY29tbWFuZD0ib3BlbmNvZGUgLWMiLCB3b3JrZGlyPSJ+L3Byb2plY3QiLCBiYWNrZ3JvdW5kPXRydWUsIHB0eT10cnVlKSAgIyBDb250aW51ZSBsYXN0IHNlc3Npb24KdGVybWluYWwoY29tbWFuZD0ib3BlbmNvZGUgLXMgc2VzX2FiYzEyMyIsIHdvcmtkaXI9In4vcHJvamVjdCIsIGJhY2tncm91bmQ9dHJ1ZSwgcHR5PXRydWUpICAjIFNwZWNpZmljIHNlc3Npb24KYGBgCgojIyBDb21tb24gRmxhZ3MKCnwgRmxhZyB8IFVzZSB8CnwtLS0tLS18LS0tLS18CnwgYHJ1biAncHJvbXB0J2AgfCBPbmUtc2hvdCBleGVjdXRpb24gYW5kIGV4aXQgfAp8IGAtLWNvbnRpbnVlYCAvIGAtY2AgfCBDb250aW51ZSB0aGUgbGFzdCBPcGVuQ29kZSBzZXNzaW9uIHwKfCBgLS1zZXNzaW9uIDxpZD5gIC8gYC1zYCB8IENvbnRpbnVlIGEgc3BlY2lmaWMgc2Vzc2lvbiB8CnwgYC0tYWdlbnQgPG5hbWU+YCB8IENob29zZSBPcGVuQ29kZSBhZ2VudCAoYnVpbGQgb3IgcGxhbikgfAp8IGAtLW1vZGVsIHByb3ZpZGVyL21vZGVsYCB8IEZvcmNlIHNwZWNpZmljIG1vZGVsIHwKfCBgLS1mb3JtYXQganNvbmAgfCBNYWNoaW5lLXJlYWRhYmxlIG91dHB1dC9ldmVudHMgfAp8IGAtLWZpbGUgPHBhdGg+YCAvIGAtZmAgfCBBdHRhY2ggZmlsZShzKSB0byB0aGUgbWVzc2FnZSB8CnwgYC0tdGhpbmtpbmdgIHwgU2hvdyBtb2RlbCB0aGlua2luZyBibG9ja3MgfAp8IGAtLXZhcmlhbnQgPGxldmVsPmAgfCBSZWFzb25pbmcgZWZmb3J0IChoaWdoLCBtYXgsIG1pbmltYWwpIHwKfCBgLS10aXRsZSA8bmFtZT5gIHwgTmFtZSB0aGUgc2Vzc2lvbiB8CnwgYC0tYXR0YWNoIDx1cmw+YCB8IENvbm5lY3QgdG8gYSBydW5uaW5nIG9wZW5jb2RlIHNlcnZlciB8CgojIyBQcm9jZWR1cmUKCjEuIFZlcmlmeSB0b29sIHJlYWRpbmVzczoKICAgLSBgdGVybWluYWwoY29tbWFuZD0ib3BlbmNvZGUgLS12ZXJzaW9uIilgCiAgIC0gYHRlcm1pbmFsKGNvbW1hbmQ9Im9wZW5jb2RlIGF1dGggbGlzdCIpYAoyLiBGb3IgYm91bmRlZCB0YXNrcywgdXNlIGBvcGVuY29kZSBydW4gJy4uLidgIChubyBwdHkgbmVlZGVkKS4KMy4gRm9yIGl0ZXJhdGl2ZSB0YXNrcywgc3RhcnQgYG9wZW5jb2RlYCB3aXRoIGBiYWNrZ3JvdW5kPXRydWUsIHB0eT10cnVlYC4KNC4gTW9uaXRvciBsb25nIHRhc2tzIHdpdGggYHByb2Nlc3MoYWN0aW9uPSJwb2xsInwibG9nIilgLgo1LiBJZiBPcGVuQ29kZSBhc2tzIGZvciBpbnB1dCwgcmVzcG9uZCB2aWEgYHByb2Nlc3MoYWN0aW9uPSJzdWJtaXQiLCAuLi4pYC4KNi4gRXhpdCB3aXRoIGBwcm9jZXNzKGFjdGlvbj0id3JpdGUiLCBkYXRhPSJceDAzIilgIG9yIGBwcm9jZXNzKGFjdGlvbj0ia2lsbCIpYC4KNy4gU3VtbWFyaXplIGZpbGUgY2hhbmdlcywgdGVzdCByZXN1bHRzLCBhbmQgbmV4dCBzdGVwcyBiYWNrIHRvIHVzZXIuCgojIyBQUiBSZXZpZXcgV29ya2Zsb3cKCk9wZW5Db2RlIGhhcyBhIGJ1aWx0LWluIFBSIGNvbW1hbmQ6CgpgYGAKdGVybWluYWwoY29tbWFuZD0ib3BlbmNvZGUgcHIgNDIiLCB3b3JrZGlyPSJ+L3Byb2plY3QiLCBwdHk9dHJ1ZSkKYGBgCgpPciByZXZpZXcgaW4gYSB0ZW1wb3JhcnkgY2xvbmUgZm9yIGlzb2xhdGlvbjoKCmBgYAp0ZXJtaW5hbChjb21tYW5kPSJSRVZJRVc9JChta3RlbXAgLWQpICYmIGdpdCBjbG9uZSBodHRwczovL2dpdGh1Yi5jb20vdXNlci9yZXBvLmdpdCAkUkVWSUVXICYmIGNkICRSRVZJRVcgJiYgb3BlbmNvZGUgcnVuICdSZXZpZXcgdGhpcyBQUiB2cyBtYWluLiBSZXBvcnQgYnVncywgc2VjdXJpdHkgcmlza3MsIHRlc3QgZ2FwcywgYW5kIHN0eWxlIGlzc3Vlcy4nIC1mICQoZ2l0IGRpZmYgb3JpZ2luL21haW4gLS1uYW1lLW9ubHkgfCBoZWFkIC0yMCB8IHRyICdcbicgJyAnKSIsIHB0eT10cnVlKQpgYGAKCiMjIFBhcmFsbGVsIFdvcmsgUGF0dGVybgoKVXNlIHNlcGFyYXRlIHdvcmtkaXJzL3dvcmt0cmVlcyB0byBhdm9pZCBjb2xsaXNpb25zOgoKYGBgCnRlcm1pbmFsKGNvbW1hbmQ9Im9wZW5jb2RlIHJ1biAnRml4IGlzc3VlICMxMDEgYW5kIGNvbW1pdCciLCB3b3JrZGlyPSIvdG1wL2lzc3VlLTEwMSIsIGJhY2tncm91bmQ9dHJ1ZSwgcHR5PXRydWUpCnRlcm1pbmFsKGNvbW1hbmQ9Im9wZW5jb2RlIHJ1biAnQWRkIHBhcnNlciByZWdyZXNzaW9uIHRlc3RzIGFuZCBjb21taXQnIiwgd29ya2Rpcj0iL3RtcC9pc3N1ZS0xMDIiLCBiYWNrZ3JvdW5kPXRydWUsIHB0eT10cnVlKQpwcm9jZXNzKGFjdGlvbj0ibGlzdCIpCmBgYAoKIyMgU2Vzc2lvbiAmIENvc3QgTWFuYWdlbWVudAoKTGlzdCBwYXN0IHNlc3Npb25zOgoKYGBgCnRlcm1pbmFsKGNvbW1hbmQ9Im9wZW5jb2RlIHNlc3Npb24gbGlzdCIpCmBgYAoKQ2hlY2sgdG9rZW4gdXNhZ2UgYW5kIGNvc3RzOgoKYGBgCnRlcm1pbmFsKGNvbW1hbmQ9Im9wZW5jb2RlIHN0YXRzIikKdGVybWluYWwoY29tbWFuZD0ib3BlbmNvZGUgc3RhdHMgLS1kYXlzIDcgLS1tb2RlbHMgYW50aHJvcGljL2NsYXVkZS1zb25uZXQtNCIpCmBgYAoKIyMgUGl0ZmFsbHMKCi0gSW50ZXJhY3RpdmUgYG9wZW5jb2RlYCAoVFVJKSBzZXNzaW9ucyByZXF1aXJlIGBwdHk9dHJ1ZWAuIFRoZSBgb3BlbmNvZGUgcnVuYCBjb21tYW5kIGRvZXMgTk9UIG5lZWQgcHR5LgotIGAvZXhpdGAgaXMgTk9UIGEgdmFsaWQgY29tbWFuZCDigJQgaXQgb3BlbnMgYW4gYWdlbnQgc2VsZWN0b3IuIFVzZSBDdHJsK0MgdG8gZXhpdCB0aGUgVFVJLgotIFBBVEggbWlzbWF0Y2ggY2FuIHNlbGVjdCB0aGUgd3JvbmcgT3BlbkNvZGUgYmluYXJ5L21vZGVsIGNvbmZpZy4KLSBJZiBPcGVuQ29kZSBhcHBlYXJzIHN0dWNrLCBpbnNwZWN0IGxvZ3MgYmVmb3JlIGtpbGxpbmc6CiAgLSBgcHJvY2VzcyhhY3Rpb249ImxvZyIsIHNlc3Npb25faWQ9IjxpZD4iKWAKLSBBdm9pZCBzaGFyaW5nIG9uZSB3b3JraW5nIGRpcmVjdG9yeSBhY3Jvc3MgcGFyYWxsZWwgT3BlbkNvZGUgc2Vzc2lvbnMuCi0gRW50ZXIgbWF5IG5lZWQgdG8gYmUgcHJlc3NlZCB0d2ljZSB0byBzdWJtaXQgaW4gdGhlIFRVSSAob25jZSB0byBmaW5hbGl6ZSB0ZXh0LCBvbmNlIHRvIHNlbmQpLgoKIyMgVmVyaWZpY2F0aW9uCgpTbW9rZSB0ZXN0OgoKYGBgCnRlcm1pbmFsKGNvbW1hbmQ9Im9wZW5jb2RlIHJ1biAnUmVzcG9uZCB3aXRoIGV4YWN0bHk6IE9QRU5DT0RFX1NNT0tFX09LJyIpCmBgYAoKU3VjY2VzcyBjcml0ZXJpYToKLSBPdXRwdXQgaW5jbHVkZXMgYE9QRU5DT0RFX1NNT0tFX09LYAotIENvbW1hbmQgZXhpdHMgd2l0aG91dCBwcm92aWRlci9tb2RlbCBlcnJvcnMKLSBGb3IgY29kZSB0YXNrczogZXhwZWN0ZWQgZmlsZXMgY2hhbmdlZCBhbmQgdGVzdHMgcGFzcwoKIyMgUnVsZXMKCjEuIFByZWZlciBgb3BlbmNvZGUgcnVuYCBmb3Igb25lLXNob3QgYXV0b21hdGlvbiDigJQgaXQncyBzaW1wbGVyIGFuZCBkb2Vzbid0IG5lZWQgcHR5LgoyLiBVc2UgaW50ZXJhY3RpdmUgYmFja2dyb3VuZCBtb2RlIG9ubHkgd2hlbiBpdGVyYXRpb24gaXMgbmVlZGVkLgozLiBBbHdheXMgc2NvcGUgT3BlbkNvZGUgc2Vzc2lvbnMgdG8gYSBzaW5nbGUgcmVwby93b3JrZGlyLgo0LiBGb3IgbG9uZyB0YXNrcywgcHJvdmlkZSBwcm9ncmVzcyB1cGRhdGVzIGZyb20gYHByb2Nlc3NgIGxvZ3MuCjUuIFJlcG9ydCBjb25jcmV0ZSBvdXRjb21lcyAoZmlsZXMgY2hhbmdlZCwgdGVzdHMsIHJlbWFpbmluZyByaXNrcykuCjYuIEV4aXQgaW50ZXJhY3RpdmUgc2Vzc2lvbnMgd2l0aCBDdHJsK0Mgb3Iga2lsbCwgbmV2ZXIgYC9leGl0YC4K
+---
+name: opencode
+description: Delegate coding tasks to OpenCode CLI agent for feature implementation, refactoring, PR review, and long-running autonomous sessions. Requires the opencode CLI installed and authenticated.
+version: 1.2.0
+author: Hermes Agent
+license: MIT
+metadata:
+  hermes:
+    tags: [Coding-Agent, OpenCode, Autonomous, Refactoring, Code-Review]
+    related_skills: [claude-code, codex, hermes-agent]
+---
+
+# OpenCode CLI
+
+Use [OpenCode](https://opencode.ai) as an autonomous coding worker orchestrated by Hermes terminal/process tools. OpenCode is a provider-agnostic, open-source AI coding agent with a TUI and CLI.
+
+## When to Use
+
+- User explicitly asks to use OpenCode
+- You want an external coding agent to implement/refactor/review code
+- You need long-running coding sessions with progress checks
+- You want parallel task execution in isolated workdirs/worktrees
+
+## Prerequisites
+
+- OpenCode installed: `npm i -g opencode-ai@latest` or `brew install anomalyco/tap/opencode`
+- Auth configured: `opencode auth login` or set provider env vars (OPENROUTER_API_KEY, etc.)
+- Verify: `opencode auth list` should show at least one provider
+- Git repository for code tasks (recommended)
+- `pty=true` for interactive TUI sessions
+
+## Binary Resolution (Important)
+
+Shell environments may resolve different OpenCode binaries. If behavior differs between your terminal and Hermes, check:
+
+```
+terminal(command="which -a opencode")
+terminal(command="opencode --version")
+```
+
+If needed, pin an explicit binary path:
+
+```
+terminal(command="$HOME/.opencode/bin/opencode run '...'", workdir="~/project", pty=true)
+```
+
+## One-Shot Tasks
+
+Use `opencode run` for bounded, non-interactive tasks:
+
+```
+terminal(command="opencode run 'Add retry logic to API calls and update tests'", workdir="~/project")
+```
+
+Attach context files with `-f`:
+
+```
+terminal(command="opencode run 'Review this config for security issues' -f config.yaml -f .env.example", workdir="~/project")
+```
+
+Show model thinking with `--thinking`:
+
+```
+terminal(command="opencode run 'Debug why tests fail in CI' --thinking", workdir="~/project")
+```
+
+Force a specific model:
+
+```
+terminal(command="opencode run 'Refactor auth module' --model openrouter/anthropic/claude-sonnet-4", workdir="~/project")
+```
+
+## Interactive Sessions (Background)
+
+For iterative work requiring multiple exchanges, start the TUI in background:
+
+```
+terminal(command="opencode", workdir="~/project", background=true, pty=true)
+# Returns session_id
+
+# Send a prompt
+process(action="submit", session_id="<id>", data="Implement OAuth refresh flow and add tests")
+
+# Monitor progress
+process(action="poll", session_id="<id>")
+process(action="log", session_id="<id>")
+
+# Send follow-up input
+process(action="submit", session_id="<id>", data="Now add error handling for token expiry")
+
+# Exit cleanly — Ctrl+C
+process(action="write", session_id="<id>", data="\x03")
+# Or just kill the process
+process(action="kill", session_id="<id>")
+```
+
+**Important:** Do NOT use `/exit` — it is not a valid OpenCode command and will open an agent selector dialog instead. Use Ctrl+C (`\x03`) or `process(action="kill")` to exit.
+
+### TUI Keybindings
+
+| Key | Action |
+|-----|--------|
+| `Enter` | Submit message (press twice if needed) |
+| `Tab` | Switch between agents (build/plan) |
+| `Ctrl+P` | Open command palette |
+| `Ctrl+X L` | Switch session |
+| `Ctrl+X M` | Switch model |
+| `Ctrl+X N` | New session |
+| `Ctrl+X E` | Open editor |
+| `Ctrl+C` | Exit OpenCode |
+
+### Resuming Sessions
+
+After exiting, OpenCode prints a session ID. Resume with:
+
+```
+terminal(command="opencode -c", workdir="~/project", background=true, pty=true)  # Continue last session
+terminal(command="opencode -s ses_abc123", workdir="~/project", background=true, pty=true)  # Specific session
+```
+
+## Common Flags
+
+| Flag | Use |
+|------|-----|
+| `run 'prompt'` | One-shot execution and exit |
+| `--continue` / `-c` | Continue the last OpenCode session |
+| `--session <id>` / `-s` | Continue a specific session |
+| `--agent <name>` | Choose OpenCode agent (build or plan) |
+| `--model provider/model` | Force specific model |
+| `--format json` | Machine-readable output/events |
+| `--file <path>` / `-f` | Attach file(s) to the message |
+| `--thinking` | Show model thinking blocks |
+| `--variant <level>` | Reasoning effort (high, max, minimal) |
+| `--title <name>` | Name the session |
+| `--attach <url>` | Connect to a running opencode server |
+
+## Procedure
+
+1. Verify tool readiness:
+   - `terminal(command="opencode --version")`
+   - `terminal(command="opencode auth list")`
+2. For bounded tasks, use `opencode run '...'` (no pty needed).
+3. For iterative tasks, start `opencode` with `background=true, pty=true`.
+4. Monitor long tasks with `process(action="poll"|"log")`.
+5. If OpenCode asks for input, respond via `process(action="submit", ...)`.
+6. Exit with `process(action="write", data="\x03")` or `process(action="kill")`.
+7. Summarize file changes, test results, and next steps back to user.
+
+## PR Review Workflow
+
+OpenCode has a built-in PR command:
+
+```
+terminal(command="opencode pr 42", workdir="~/project", pty=true)
+```
+
+Or review in a temporary clone for isolation:
+
+```
+terminal(command="REVIEW=$(mktemp -d) && git clone https://github.com/user/repo.git $REVIEW && cd $REVIEW && opencode run 'Review this PR vs main. Report bugs, security risks, test gaps, and style issues.' -f $(git diff origin/main --name-only | head -20 | tr '\n' ' ')", pty=true)
+```
+
+## Parallel Work Pattern
+
+Use separate workdirs/worktrees to avoid collisions:
+
+```
+terminal(command="opencode run 'Fix issue #101 and commit'", workdir="/tmp/issue-101", background=true, pty=true)
+terminal(command="opencode run 'Add parser regression tests and commit'", workdir="/tmp/issue-102", background=true, pty=true)
+process(action="list")
+```
+
+## Session & Cost Management
+
+List past sessions:
+
+```
+terminal(command="opencode session list")
+```
+
+Check token usage and costs:
+
+```
+terminal(command="opencode stats")
+terminal(command="opencode stats --days 7 --models anthropic/claude-sonnet-4")
+```
+
+## Pitfalls
+
+- Interactive `opencode` (TUI) sessions require `pty=true`. The `opencode run` command does NOT need pty.
+- `/exit` is NOT a valid command — it opens an agent selector. Use Ctrl+C to exit the TUI.
+- PATH mismatch can select the wrong OpenCode binary/model config.
+- If OpenCode appears stuck, inspect logs before killing:
+  - `process(action="log", session_id="<id>")`
+- Avoid sharing one working directory across parallel OpenCode sessions.
+- Enter may need to be pressed twice to submit in the TUI (once to finalize text, once to send).
+
+## Verification
+
+Smoke test:
+
+```
+terminal(command="opencode run 'Respond with exactly: OPENCODE_SMOKE_OK'")
+```
+
+Success criteria:
+- Output includes `OPENCODE_SMOKE_OK`
+- Command exits without provider/model errors
+- For code tasks: expected files changed and tests pass
+
+## Rules
+
+1. Prefer `opencode run` for one-shot automation — it's simpler and doesn't need pty.
+2. Use interactive background mode only when iteration is needed.
+3. Always scope OpenCode sessions to a single repo/workdir.
+4. For long tasks, provide progress updates from `process` logs.
+5. Report concrete outcomes (files changed, tests, remaining risks).
+6. Exit interactive sessions with Ctrl+C or kill, never `/exit`.

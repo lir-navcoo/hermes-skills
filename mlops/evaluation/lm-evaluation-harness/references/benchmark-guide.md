@@ -1,1 +1,488 @@
-IyBCZW5jaG1hcmsgR3VpZGUKCkNvbXBsZXRlIGd1aWRlIHRvIGFsbCA2MCsgZXZhbHVhdGlvbiB0YXNrcyBpbiBsbS1ldmFsdWF0aW9uLWhhcm5lc3MsIHdoYXQgdGhleSBtZWFzdXJlLCBhbmQgaG93IHRvIGludGVycHJldCByZXN1bHRzLgoKIyMgT3ZlcnZpZXcKClRoZSBsbS1ldmFsdWF0aW9uLWhhcm5lc3MgaW5jbHVkZXMgNjArIGJlbmNobWFya3Mgc3Bhbm5pbmc6Ci0gTGFuZ3VhZ2UgdW5kZXJzdGFuZGluZyAoTU1MVSwgR0xVRSkKLSBNYXRoZW1hdGljYWwgcmVhc29uaW5nIChHU004SywgTUFUSCkKLSBDb2RlIGdlbmVyYXRpb24gKEh1bWFuRXZhbCwgTUJQUCkKLSBJbnN0cnVjdGlvbiBmb2xsb3dpbmcgKElGRXZhbCwgQWxwYWNhRXZhbCkKLSBMb25nLWNvbnRleHQgdW5kZXJzdGFuZGluZyAoTG9uZ0JlbmNoKQotIE11bHRpbGluZ3VhbCBjYXBhYmlsaXRpZXMgKEFmcm9CZW5jaCwgTm9yRXZhbCkKLSBSZWFzb25pbmcgKEJCSCwgQVJDKQotIFRydXRoZnVsbmVzcyAoVHJ1dGhmdWxRQSkKCioqTGlzdCBhbGwgdGFza3MqKjoKYGBgYmFzaApsbV9ldmFsIC0tdGFza3MgbGlzdApgYGAKCiMjIE1ham9yIEJlbmNobWFya3MKCiMjIyBNTUxVIChNYXNzaXZlIE11bHRpdGFzayBMYW5ndWFnZSBVbmRlcnN0YW5kaW5nKQoKKipXaGF0IGl0IG1lYXN1cmVzKio6IEJyb2FkIGtub3dsZWRnZSBhY3Jvc3MgNTcgc3ViamVjdHMgKFNURU0sIGh1bWFuaXRpZXMsIHNvY2lhbCBzY2llbmNlcywgbGF3KS4KCioqVGFzayB2YXJpYW50cyoqOgotIGBtbWx1YDogT3JpZ2luYWwgNTctc3ViamVjdCBiZW5jaG1hcmsKLSBgbW1sdV9wcm9gOiBNb3JlIGNoYWxsZW5naW5nIHZlcnNpb24gd2l0aCByZWFzb25pbmctZm9jdXNlZCBxdWVzdGlvbnMKLSBgbW1sdV9wcm94YDogTXVsdGlsaW5ndWFsIGV4dGVuc2lvbgoKKipGb3JtYXQqKjogTXVsdGlwbGUgY2hvaWNlICg0IG9wdGlvbnMpCgoqKkV4YW1wbGUqKjoKYGBgClF1ZXN0aW9uOiBXaGF0IGlzIHRoZSBjYXBpdGFsIG9mIEZyYW5jZT8KQS4gQmVybGluCkIuIFBhcmlzCkMuIExvbmRvbgpELiBNYWRyaWQKQW5zd2VyOiBCCmBgYAoKKipDb21tYW5kKio6CmBgYGJhc2gKbG1fZXZhbCAtLW1vZGVsIGhmIFwKICAtLW1vZGVsX2FyZ3MgcHJldHJhaW5lZD1tZXRhLWxsYW1hL0xsYW1hLTItN2ItaGYgXAogIC0tdGFza3MgbW1sdSBcCiAgLS1udW1fZmV3c2hvdCA1CmBgYAoKKipJbnRlcnByZXRhdGlvbioqOgotIFJhbmRvbTogMjUlIChjaGFuY2UpCi0gR1BULTMgKDE3NUIpOiA0My45JQotIEdQVC00OiA4Ni40JQotIEh1bWFuIGV4cGVydDogfjkwJQoKKipHb29kIGZvcioqOiBBc3Nlc3NpbmcgZ2VuZXJhbCBrbm93bGVkZ2UgYW5kIGRvbWFpbiBleHBlcnRpc2UuCgojIyMgR1NNOEsgKEdyYWRlIFNjaG9vbCBNYXRoIDhLKQoKKipXaGF0IGl0IG1lYXN1cmVzKio6IE1hdGhlbWF0aWNhbCByZWFzb25pbmcgb24gZ3JhZGUtc2Nob29sIGxldmVsIHdvcmQgcHJvYmxlbXMuCgoqKlRhc2sgdmFyaWFudHMqKjoKLSBgZ3NtOGtgOiBCYXNlIHRhc2sKLSBgZ3NtOGtfY290YDogV2l0aCBjaGFpbi1vZi10aG91Z2h0IHByb21wdGluZwotIGBnc21fcGx1c2A6IEFkdmVyc2FyaWFsIHZhcmlhbnQgd2l0aCBwZXJ0dXJiYXRpb25zCgoqKkZvcm1hdCoqOiBGcmVlLWZvcm0gZ2VuZXJhdGlvbiwgZXh0cmFjdCBudW1lcmljYWwgYW5zd2VyCgoqKkV4YW1wbGUqKjoKYGBgClF1ZXN0aW9uOiBBIGJha2VyIG1hZGUgMjAwIGNvb2tpZXMuIEhlIHNvbGQgMy81IG9mIHRoZW0gaW4gdGhlIG1vcm5pbmcgYW5kIDEvNCBvZiB0aGUgcmVtYWluaW5nIGluIHRoZSBhZnRlcm5vb24uIEhvdyBtYW55IGNvb2tpZXMgZG9lcyBoZSBoYXZlIGxlZnQ/CkFuc3dlcjogNjAKYGBgCgoqKkNvbW1hbmQqKjoKYGBgYmFzaApsbV9ldmFsIC0tbW9kZWwgaGYgXAogIC0tbW9kZWxfYXJncyBwcmV0cmFpbmVkPW1ldGEtbGxhbWEvTGxhbWEtMi03Yi1oZiBcCiAgLS10YXNrcyBnc204ayBcCiAgLS1udW1fZmV3c2hvdCA1CmBgYAoKKipJbnRlcnByZXRhdGlvbioqOgotIFJhbmRvbTogfjAlCi0gR1BULTMgKDE3NUIpOiAxNy4wJQotIEdQVC00OiA5Mi4wJQotIExsYW1hIDIgNzBCOiA1Ni44JQoKKipHb29kIGZvcioqOiBUZXN0aW5nIG11bHRpLXN0ZXAgcmVhc29uaW5nIGFuZCBhcml0aG1ldGljLgoKIyMjIEh1bWFuRXZhbAoKKipXaGF0IGl0IG1lYXN1cmVzKio6IFB5dGhvbiBjb2RlIGdlbmVyYXRpb24gZnJvbSBkb2NzdHJpbmdzIChmdW5jdGlvbmFsIGNvcnJlY3RuZXNzKS4KCioqVGFzayB2YXJpYW50cyoqOgotIGBodW1hbmV2YWxgOiBTdGFuZGFyZCBiZW5jaG1hcmsKLSBgaHVtYW5ldmFsX2luc3RydWN0YDogRm9yIGluc3RydWN0aW9uLXR1bmVkIG1vZGVscwoKKipGb3JtYXQqKjogQ29kZSBnZW5lcmF0aW9uLCBleGVjdXRpb24tYmFzZWQgZXZhbHVhdGlvbgoKKipFeGFtcGxlKio6CmBgYHB5dGhvbgpkZWYgaGFzX2Nsb3NlX2VsZW1lbnRzKG51bWJlcnM6IExpc3RbZmxvYXRdLCB0aHJlc2hvbGQ6IGZsb2F0KSAtPiBib29sOgogICAgIiIiIENoZWNrIGlmIGluIGdpdmVuIGxpc3Qgb2YgbnVtYmVycywgYXJlIGFueSB0d28gbnVtYmVycyBjbG9zZXIgdG8gZWFjaCBvdGhlciB0aGFuCiAgICBnaXZlbiB0aHJlc2hvbGQuCiAgICA+Pj4gaGFzX2Nsb3NlX2VsZW1lbnRzKFsxLjAsIDIuMCwgMy4wXSwgMC41KQogICAgRmFsc2UKICAgID4+PiBoYXNfY2xvc2VfZWxlbWVudHMoWzEuMCwgMi44LCAzLjAsIDQuMCwgNS4wLCAyLjBdLCAwLjMpCiAgICBUcnVlCiAgICAiIiIKYGBgCgoqKkNvbW1hbmQqKjoKYGBgYmFzaApsbV9ldmFsIC0tbW9kZWwgaGYgXAogIC0tbW9kZWxfYXJncyBwcmV0cmFpbmVkPWNvZGVsbGFtYS9Db2RlTGxhbWEtN2ItaGYgXAogIC0tdGFza3MgaHVtYW5ldmFsIFwKICAtLWJhdGNoX3NpemUgMQpgYGAKCioqSW50ZXJwcmV0YXRpb24qKjoKLSBSYW5kb206IDAlCi0gR1BULTMgKDE3NUIpOiAwJQotIENvZGV4OiAyOC44JQotIEdQVC00OiA2Ny4wJQotIENvZGUgTGxhbWEgMzRCOiA1My43JQoKKipHb29kIGZvcioqOiBFdmFsdWF0aW5nIGNvZGUgZ2VuZXJhdGlvbiBjYXBhYmlsaXRpZXMuCgojIyMgQkJIIChCSUctQmVuY2ggSGFyZCkKCioqV2hhdCBpdCBtZWFzdXJlcyoqOiAyMyBjaGFsbGVuZ2luZyByZWFzb25pbmcgdGFza3Mgd2hlcmUgbW9kZWxzIHByZXZpb3VzbHkgZmFpbGVkIHRvIGJlYXQgaHVtYW5zLgoKKipDYXRlZ29yaWVzKio6Ci0gTG9naWNhbCByZWFzb25pbmcKLSBNYXRoIHdvcmQgcHJvYmxlbXMKLSBTb2NpYWwgdW5kZXJzdGFuZGluZwotIEFsZ29yaXRobWljIHJlYXNvbmluZwoKKipGb3JtYXQqKjogTXVsdGlwbGUgY2hvaWNlIGFuZCBmcmVlLWZvcm0KCioqQ29tbWFuZCoqOgpgYGBiYXNoCmxtX2V2YWwgLS1tb2RlbCBoZiBcCiAgLS1tb2RlbF9hcmdzIHByZXRyYWluZWQ9bWV0YS1sbGFtYS9MbGFtYS0yLTdiLWhmIFwKICAtLXRhc2tzIGJiaCBcCiAgLS1udW1fZmV3c2hvdCAzCmBgYAoKKipJbnRlcnByZXRhdGlvbioqOgotIFJhbmRvbTogfjI1JQotIEdQVC0zICgxNzVCKTogMzMuOSUKLSBQYUxNIDU0MEI6IDU4LjMlCi0gR1BULTQ6IDg2LjclCgoqKkdvb2QgZm9yKio6IFRlc3RpbmcgYWR2YW5jZWQgcmVhc29uaW5nIGNhcGFiaWxpdGllcy4KCiMjIyBJRkV2YWwgKEluc3RydWN0aW9uLUZvbGxvd2luZyBFdmFsdWF0aW9uKQoKKipXaGF0IGl0IG1lYXN1cmVzKio6IEFiaWxpdHkgdG8gZm9sbG93IHNwZWNpZmljLCB2ZXJpZmlhYmxlIGluc3RydWN0aW9ucy4KCioqSW5zdHJ1Y3Rpb24gdHlwZXMqKjoKLSBGb3JtYXQgY29uc3RyYWludHMgKGUuZy4sICJhbnN3ZXIgaW4gMyBzZW50ZW5jZXMiKQotIExlbmd0aCBjb25zdHJhaW50cyAoZS5nLiwgInVzZSBhdCBsZWFzdCAxMDAgd29yZHMiKQotIENvbnRlbnQgY29uc3RyYWludHMgKGUuZy4sICJpbmNsdWRlIHRoZSB3b3JkICdiYW5hbmEnIikKLSBTdHJ1Y3R1cmFsIGNvbnN0cmFpbnRzIChlLmcuLCAidXNlIGJ1bGxldCBwb2ludHMiKQoKKipGb3JtYXQqKjogRnJlZS1mb3JtIGdlbmVyYXRpb24gd2l0aCBydWxlLWJhc2VkIHZlcmlmaWNhdGlvbgoKKipDb21tYW5kKio6CmBgYGJhc2gKbG1fZXZhbCAtLW1vZGVsIGhmIFwKICAtLW1vZGVsX2FyZ3MgcHJldHJhaW5lZD1tZXRhLWxsYW1hL0xsYW1hLTItN2ItY2hhdC1oZiBcCiAgLS10YXNrcyBpZmV2YWwgXAogIC0tYmF0Y2hfc2l6ZSBhdXRvCmBgYAoKKipJbnRlcnByZXRhdGlvbioqOgotIE1lYXN1cmVzOiBJbnN0cnVjdGlvbiBhZGhlcmVuY2UgKG5vdCBxdWFsaXR5KQotIEdQVC00OiA4NiUgaW5zdHJ1Y3Rpb24gZm9sbG93aW5nCi0gQ2xhdWRlIDI6IDg0JQoKKipHb29kIGZvcioqOiBFdmFsdWF0aW5nIGNoYXQvaW5zdHJ1Y3QgbW9kZWxzLgoKIyMjIEdMVUUgKEdlbmVyYWwgTGFuZ3VhZ2UgVW5kZXJzdGFuZGluZyBFdmFsdWF0aW9uKQoKKipXaGF0IGl0IG1lYXN1cmVzKio6IE5hdHVyYWwgbGFuZ3VhZ2UgdW5kZXJzdGFuZGluZyBhY3Jvc3MgOSB0YXNrcy4KCioqVGFza3MqKjoKLSBgY29sYWA6IEdyYW1tYXRpY2FsIGFjY2VwdGFiaWxpdHkKLSBgc3N0MmA6IFNlbnRpbWVudCBhbmFseXNpcwotIGBtcnBjYDogUGFyYXBocmFzZSBkZXRlY3Rpb24KLSBgcXFwYDogUXVlc3Rpb24gcGFpcnMKLSBgc3RzYmA6IFNlbWFudGljIHNpbWlsYXJpdHkKLSBgbW5saWA6IE5hdHVyYWwgbGFuZ3VhZ2UgaW5mZXJlbmNlCi0gYHFubGlgOiBRdWVzdGlvbiBhbnN3ZXJpbmcgTkxJCi0gYHJ0ZWA6IFJlY29nbml6aW5nIHRleHR1YWwgZW50YWlsbWVudAotIGB3bmxpYDogV2lub2dyYWQgc2NoZW1hcwoKKipDb21tYW5kKio6CmBgYGJhc2gKbG1fZXZhbCAtLW1vZGVsIGhmIFwKICAtLW1vZGVsX2FyZ3MgcHJldHJhaW5lZD1iZXJ0LWJhc2UtdW5jYXNlZCBcCiAgLS10YXNrcyBnbHVlIFwKICAtLW51bV9mZXdzaG90IDAKYGBgCgoqKkludGVycHJldGF0aW9uKio6Ci0gQkVSVCBCYXNlOiA3OC4zIChHTFVFIHNjb3JlKQotIFJvQkVSVGEgTGFyZ2U6IDg4LjUKLSBIdW1hbiBiYXNlbGluZTogODcuMQoKKipHb29kIGZvcioqOiBFbmNvZGVyLW9ubHkgbW9kZWxzLCBmaW5lLXR1bmluZyBiYXNlbGluZXMuCgojIyMgTG9uZ0JlbmNoCgoqKldoYXQgaXQgbWVhc3VyZXMqKjogTG9uZy1jb250ZXh0IHVuZGVyc3RhbmRpbmcgKDRLLTMySyB0b2tlbnMpLgoKKioyMSB0YXNrcyBjb3ZlcmluZyoqOgotIFNpbmdsZS1kb2N1bWVudCBRQQotIE11bHRpLWRvY3VtZW50IFFBCi0gU3VtbWFyaXphdGlvbgotIEZldy1zaG90IGxlYXJuaW5nCi0gQ29kZSBjb21wbGV0aW9uCi0gU3ludGhldGljIHRhc2tzCgoqKkNvbW1hbmQqKjoKYGBgYmFzaApsbV9ldmFsIC0tbW9kZWwgaGYgXAogIC0tbW9kZWxfYXJncyBwcmV0cmFpbmVkPW1ldGEtbGxhbWEvTGxhbWEtMi03Yi1oZiBcCiAgLS10YXNrcyBsb25nYmVuY2ggXAogIC0tYmF0Y2hfc2l6ZSAxCmBgYAoKKipJbnRlcnByZXRhdGlvbioqOgotIFRlc3RzIGNvbnRleHQgdXRpbGl6YXRpb24KLSBNYW55IG1vZGVscyBzdHJ1Z2dsZSBiZXlvbmQgNEsgdG9rZW5zCi0gR1BULTQgVHVyYm86IDU0LjMlCgoqKkdvb2QgZm9yKio6IEV2YWx1YXRpbmcgbG9uZy1jb250ZXh0IG1vZGVscy4KCiMjIEFkZGl0aW9uYWwgQmVuY2htYXJrcwoKIyMjIFRydXRoZnVsUUEKCioqV2hhdCBpdCBtZWFzdXJlcyoqOiBNb2RlbCdzIHByb3BlbnNpdHkgdG8gYmUgdHJ1dGhmdWwgdnMuIGdlbmVyYXRlIHBsYXVzaWJsZS1zb3VuZGluZyBmYWxzZWhvb2RzLgoKKipGb3JtYXQqKjogTXVsdGlwbGUgY2hvaWNlIHdpdGggNC01IG9wdGlvbnMKCioqQ29tbWFuZCoqOgpgYGBiYXNoCmxtX2V2YWwgLS1tb2RlbCBoZiBcCiAgLS1tb2RlbF9hcmdzIHByZXRyYWluZWQ9bWV0YS1sbGFtYS9MbGFtYS0yLTdiLWhmIFwKICAtLXRhc2tzIHRydXRoZnVscWFfbWMyIFwKICAtLWJhdGNoX3NpemUgYXV0bwpgYGAKCioqSW50ZXJwcmV0YXRpb24qKjoKLSBMYXJnZXIgbW9kZWxzIG9mdGVuIHNjb3JlIHdvcnNlIChtb3JlIGNvbnZpbmNpbmcgbGllcykKLSBHUFQtMzogNTguOCUKLSBHUFQtNDogNTkuMCUKLSBIdW1hbjogfjk0JQoKIyMjIEFSQyAoQUkyIFJlYXNvbmluZyBDaGFsbGVuZ2UpCgoqKldoYXQgaXQgbWVhc3VyZXMqKjogR3JhZGUtc2Nob29sIHNjaWVuY2UgcXVlc3Rpb25zLgoKKipWYXJpYW50cyoqOgotIGBhcmNfZWFzeWA6IEVhc2llciBxdWVzdGlvbnMKLSBgYXJjX2NoYWxsZW5nZWA6IEhhcmRlciBxdWVzdGlvbnMgcmVxdWlyaW5nIHJlYXNvbmluZwoKKipDb21tYW5kKio6CmBgYGJhc2gKbG1fZXZhbCAtLW1vZGVsIGhmIFwKICAtLW1vZGVsX2FyZ3MgcHJldHJhaW5lZD1tZXRhLWxsYW1hL0xsYW1hLTItN2ItaGYgXAogIC0tdGFza3MgYXJjX2NoYWxsZW5nZSBcCiAgLS1udW1fZmV3c2hvdCAyNQpgYGAKCioqSW50ZXJwcmV0YXRpb24qKjoKLSBBUkMtRWFzeTogTW9zdCBtb2RlbHMgPjgwJQotIEFSQy1DaGFsbGVuZ2UgcmFuZG9tOiAyNSUKLSBHUFQtNDogOTYuMyUKCiMjIyBIZWxsYVN3YWcKCioqV2hhdCBpdCBtZWFzdXJlcyoqOiBDb21tb25zZW5zZSByZWFzb25pbmcgYWJvdXQgZXZlcnlkYXkgc2l0dWF0aW9ucy4KCioqRm9ybWF0Kio6IENob29zZSBtb3N0IHBsYXVzaWJsZSBjb250aW51YXRpb24KCioqQ29tbWFuZCoqOgpgYGBiYXNoCmxtX2V2YWwgLS1tb2RlbCBoZiBcCiAgLS1tb2RlbF9hcmdzIHByZXRyYWluZWQ9bWV0YS1sbGFtYS9MbGFtYS0yLTdiLWhmIFwKICAtLXRhc2tzIGhlbGxhc3dhZyBcCiAgLS1udW1fZmV3c2hvdCAxMApgYGAKCioqSW50ZXJwcmV0YXRpb24qKjoKLSBSYW5kb206IDI1JQotIEdQVC0zOiA3OC45JQotIExsYW1hIDIgNzBCOiA4NS4zJQoKIyMjIFdpbm9HcmFuZGUKCioqV2hhdCBpdCBtZWFzdXJlcyoqOiBDb21tb25zZW5zZSByZWFzb25pbmcgdmlhIHByb25vdW4gcmVzb2x1dGlvbi4KCioqRXhhbXBsZSoqOgpgYGAKVGhlIHRyb3BoeSBkb2Vzbid0IGZpdCBpbiB0aGUgYnJvd24gc3VpdGNhc2UgYmVjYXVzZSBfIGlzIHRvbyBsYXJnZS4KQS4gdGhlIHRyb3BoeQpCLiB0aGUgc3VpdGNhc2UKYGBgCgoqKkNvbW1hbmQqKjoKYGBgYmFzaApsbV9ldmFsIC0tbW9kZWwgaGYgXAogIC0tbW9kZWxfYXJncyBwcmV0cmFpbmVkPW1ldGEtbGxhbWEvTGxhbWEtMi03Yi1oZiBcCiAgLS10YXNrcyB3aW5vZ3JhbmRlIFwKICAtLW51bV9mZXdzaG90IDUKYGBgCgojIyMgUElRQQoKKipXaGF0IGl0IG1lYXN1cmVzKio6IFBoeXNpY2FsIGNvbW1vbnNlbnNlIHJlYXNvbmluZy4KCioqRXhhbXBsZSoqOiAiVG8gY2xlYW4gYSBrZXlib2FyZCwgdXNlIGNvbXByZXNzZWQgYWlyIG9yLi4uIgoKKipDb21tYW5kKio6CmBgYGJhc2gKbG1fZXZhbCAtLW1vZGVsIGhmIFwKICAtLW1vZGVsX2FyZ3MgcHJldHJhaW5lZD1tZXRhLWxsYW1hL0xsYW1hLTItN2ItaGYgXAogIC0tdGFza3MgcGlxYQpgYGAKCiMjIE11bHRpbGluZ3VhbCBCZW5jaG1hcmtzCgojIyMgQWZyb0JlbmNoCgoqKldoYXQgaXQgbWVhc3VyZXMqKjogUGVyZm9ybWFuY2UgYWNyb3NzIDY0IEFmcmljYW4gbGFuZ3VhZ2VzLgoKKioxNSB0YXNrcyoqOiBOTFUsIHRleHQgZ2VuZXJhdGlvbiwga25vd2xlZGdlLCBRQSwgbWF0aCByZWFzb25pbmcKCioqQ29tbWFuZCoqOgpgYGBiYXNoCmxtX2V2YWwgLS1tb2RlbCBoZiBcCiAgLS1tb2RlbF9hcmdzIHByZXRyYWluZWQ9bWV0YS1sbGFtYS9MbGFtYS0yLTdiLWhmIFwKICAtLXRhc2tzIGFmcm9iZW5jaApgYGAKCiMjIyBOb3JFdmFsCgoqKldoYXQgaXQgbWVhc3VyZXMqKjogTm9yd2VnaWFuIGxhbmd1YWdlIHVuZGVyc3RhbmRpbmcgKDkgdGFzayBjYXRlZ29yaWVzKS4KCioqQ29tbWFuZCoqOgpgYGBiYXNoCmxtX2V2YWwgLS1tb2RlbCBoZiBcCiAgLS1tb2RlbF9hcmdzIHByZXRyYWluZWQ9TmJBaUxhYi9uYi1ncHQtai02QiBcCiAgLS10YXNrcyBub3JldmFsCmBgYAoKIyMgRG9tYWluLVNwZWNpZmljIEJlbmNobWFya3MKCiMjIyBNQVRICgoqKldoYXQgaXQgbWVhc3VyZXMqKjogSGlnaC1zY2hvb2wgY29tcGV0aXRpb24gbWF0aCBwcm9ibGVtcy4KCioqQ29tbWFuZCoqOgpgYGBiYXNoCmxtX2V2YWwgLS1tb2RlbCBoZiBcCiAgLS1tb2RlbF9hcmdzIHByZXRyYWluZWQ9bWV0YS1sbGFtYS9MbGFtYS0yLTdiLWhmIFwKICAtLXRhc2tzIG1hdGggXAogIC0tbnVtX2Zld3Nob3QgNApgYGAKCioqSW50ZXJwcmV0YXRpb24qKjoKLSBWZXJ5IGNoYWxsZW5naW5nCi0gR1BULTQ6IDQyLjUlCi0gTWluZXJ2YSA1NDBCOiAzMy42JQoKIyMjIE1CUFAgKE1vc3RseSBCYXNpYyBQeXRob24gUHJvYmxlbXMpCgoqKldoYXQgaXQgbWVhc3VyZXMqKjogUHl0aG9uIHByb2dyYW1taW5nIGZyb20gbmF0dXJhbCBsYW5ndWFnZSBkZXNjcmlwdGlvbnMuCgoqKkNvbW1hbmQqKjoKYGBgYmFzaApsbV9ldmFsIC0tbW9kZWwgaGYgXAogIC0tbW9kZWxfYXJncyBwcmV0cmFpbmVkPWNvZGVsbGFtYS9Db2RlTGxhbWEtN2ItaGYgXAogIC0tdGFza3MgbWJwcCBcCiAgLS1iYXRjaF9zaXplIDEKYGBgCgojIyMgRFJPUAoKKipXaGF0IGl0IG1lYXN1cmVzKio6IFJlYWRpbmcgY29tcHJlaGVuc2lvbiByZXF1aXJpbmcgZGlzY3JldGUgcmVhc29uaW5nLgoKKipDb21tYW5kKio6CmBgYGJhc2gKbG1fZXZhbCAtLW1vZGVsIGhmIFwKICAtLW1vZGVsX2FyZ3MgcHJldHJhaW5lZD1tZXRhLWxsYW1hL0xsYW1hLTItN2ItaGYgXAogIC0tdGFza3MgZHJvcApgYGAKCiMjIEJlbmNobWFyayBTZWxlY3Rpb24gR3VpZGUKCiMjIyBGb3IgR2VuZXJhbCBQdXJwb3NlIE1vZGVscwoKUnVuIHRoaXMgc3VpdGU6CmBgYGJhc2gKbG1fZXZhbCAtLW1vZGVsIGhmIFwKICAtLW1vZGVsX2FyZ3MgcHJldHJhaW5lZD1tZXRhLWxsYW1hL0xsYW1hLTItN2ItaGYgXAogIC0tdGFza3MgbW1sdSxnc204ayxoZWxsYXN3YWcsYXJjX2NoYWxsZW5nZSx0cnV0aGZ1bHFhX21jMiBcCiAgLS1udW1fZmV3c2hvdCA1CmBgYAoKIyMjIEZvciBDb2RlIE1vZGVscwoKYGBgYmFzaApsbV9ldmFsIC0tbW9kZWwgaGYgXAogIC0tbW9kZWxfYXJncyBwcmV0cmFpbmVkPWNvZGVsbGFtYS9Db2RlTGxhbWEtN2ItaGYgXAogIC0tdGFza3MgaHVtYW5ldmFsLG1icHAgXAogIC0tYmF0Y2hfc2l6ZSAxCmBgYAoKIyMjIEZvciBDaGF0L0luc3RydWN0IE1vZGVscwoKYGBgYmFzaApsbV9ldmFsIC0tbW9kZWwgaGYgXAogIC0tbW9kZWxfYXJncyBwcmV0cmFpbmVkPW1ldGEtbGxhbWEvTGxhbWEtMi03Yi1jaGF0LWhmIFwKICAtLXRhc2tzIGlmZXZhbCxtbWx1LGdzbThrX2NvdCBcCiAgLS1iYXRjaF9zaXplIGF1dG8KYGBgCgojIyMgRm9yIExvbmcgQ29udGV4dCBNb2RlbHMKCmBgYGJhc2gKbG1fZXZhbCAtLW1vZGVsIGhmIFwKICAtLW1vZGVsX2FyZ3MgcHJldHJhaW5lZD1tZXRhLWxsYW1hL0xsYW1hLTMuMS04QiBcCiAgLS10YXNrcyBsb25nYmVuY2ggXAogIC0tYmF0Y2hfc2l6ZSAxCmBgYAoKIyMgSW50ZXJwcmV0aW5nIFJlc3VsdHMKCiMjIyBVbmRlcnN0YW5kaW5nIE1ldHJpY3MKCioqQWNjdXJhY3kqKjogUGVyY2VudGFnZSBvZiBjb3JyZWN0IGFuc3dlcnMgKG1vc3QgY29tbW9uKQoKKipFeGFjdCBNYXRjaCAoRU0pKio6IFJlcXVpcmVzIGV4YWN0IHN0cmluZyBtYXRjaCAoc3RyaWN0KQoKKipGMSBTY29yZSoqOiBCYWxhbmNlcyBwcmVjaXNpb24gYW5kIHJlY2FsbAoKKipCTEVVL1JPVUdFKio6IFRleHQgZ2VuZXJhdGlvbiBzaW1pbGFyaXR5CgoqKlBhc3NAayoqOiBQZXJjZW50YWdlIHBhc3Npbmcgd2hlbiBnZW5lcmF0aW5nIGsgc2FtcGxlcwoKIyMjIFR5cGljYWwgU2NvcmUgUmFuZ2VzCgp8IE1vZGVsIFNpemUgfCBNTUxVIHwgR1NNOEsgfCBIdW1hbkV2YWwgfCBIZWxsYVN3YWcgfAp8LS0tLS0tLS0tLS0tfC0tLS0tLXwtLS0tLS0tfC0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tfAp8IDdCIHwgNDAtNTAlIHwgMTAtMjAlIHwgNS0xNSUgfCA3MC04MCUgfAp8IDEzQiB8IDQ1LTU1JSB8IDIwLTM1JSB8IDE1LTI1JSB8IDc1LTgyJSB8CnwgNzBCIHwgNjAtNzAlIHwgNTAtNjUlIHwgMzUtNTAlIHwgODItODclIHwKfCBHUFQtNCB8IDg2JSB8IDkyJSB8IDY3JSB8IDk1JSB8CgojIyMgUmVkIEZsYWdzCgotICoqQWxsIHRhc2tzIGF0IHJhbmRvbSBjaGFuY2UqKjogTW9kZWwgbm90IHRyYWluZWQgcHJvcGVybHkKLSAqKkV4YWN0IDAlIG9uIGdlbmVyYXRpb24gdGFza3MqKjogTGlrZWx5IGZvcm1hdC9wYXJzaW5nIGlzc3VlCi0gKipIdWdlIHZhcmlhbmNlIGFjcm9zcyBydW5zKio6IENoZWNrIHNlZWQvc2FtcGxpbmcgc2V0dGluZ3MKLSAqKkJldHRlciB0aGFuIEdQVC00IG9uIGV2ZXJ5dGhpbmcqKjogTGlrZWx5IGNvbnRhbWluYXRpb24KCiMjIEJlc3QgUHJhY3RpY2VzCgoxLiAqKkFsd2F5cyByZXBvcnQgZmV3LXNob3Qgc2V0dGluZyoqOiAwLXNob3QsIDUtc2hvdCwgZXRjLgoyLiAqKlJ1biBtdWx0aXBsZSBzZWVkcyoqOiBSZXBvcnQgbWVhbiDCsSBzdGQKMy4gKipDaGVjayBmb3IgZGF0YSBjb250YW1pbmF0aW9uKio6IFNlYXJjaCB0cmFpbmluZyBkYXRhIGZvciBiZW5jaG1hcmsgZXhhbXBsZXMKNC4gKipDb21wYXJlIHRvIHB1Ymxpc2hlZCBiYXNlbGluZXMqKjogVmFsaWRhdGUgeW91ciBzZXR1cAo1LiAqKlJlcG9ydCBhbGwgaHlwZXJwYXJhbWV0ZXJzKio6IE1vZGVsLCBiYXRjaCBzaXplLCBtYXggdG9rZW5zLCB0ZW1wZXJhdHVyZQoKIyMgUmVmZXJlbmNlcwoKLSBUYXNrIGxpc3Q6IGBsbV9ldmFsIC0tdGFza3MgbGlzdGAKLSBUYXNrIFJFQURNRTogYGxtX2V2YWwvdGFza3MvUkVBRE1FLm1kYAotIFBhcGVyczogU2VlIGluZGl2aWR1YWwgYmVuY2htYXJrIHBhcGVycwo=
+# Benchmark Guide
+
+Complete guide to all 60+ evaluation tasks in lm-evaluation-harness, what they measure, and how to interpret results.
+
+## Overview
+
+The lm-evaluation-harness includes 60+ benchmarks spanning:
+- Language understanding (MMLU, GLUE)
+- Mathematical reasoning (GSM8K, MATH)
+- Code generation (HumanEval, MBPP)
+- Instruction following (IFEval, AlpacaEval)
+- Long-context understanding (LongBench)
+- Multilingual capabilities (AfroBench, NorEval)
+- Reasoning (BBH, ARC)
+- Truthfulness (TruthfulQA)
+
+**List all tasks**:
+```bash
+lm_eval --tasks list
+```
+
+## Major Benchmarks
+
+### MMLU (Massive Multitask Language Understanding)
+
+**What it measures**: Broad knowledge across 57 subjects (STEM, humanities, social sciences, law).
+
+**Task variants**:
+- `mmlu`: Original 57-subject benchmark
+- `mmlu_pro`: More challenging version with reasoning-focused questions
+- `mmlu_prox`: Multilingual extension
+
+**Format**: Multiple choice (4 options)
+
+**Example**:
+```
+Question: What is the capital of France?
+A. Berlin
+B. Paris
+C. London
+D. Madrid
+Answer: B
+```
+
+**Command**:
+```bash
+lm_eval --model hf \
+  --model_args pretrained=meta-llama/Llama-2-7b-hf \
+  --tasks mmlu \
+  --num_fewshot 5
+```
+
+**Interpretation**:
+- Random: 25% (chance)
+- GPT-3 (175B): 43.9%
+- GPT-4: 86.4%
+- Human expert: ~90%
+
+**Good for**: Assessing general knowledge and domain expertise.
+
+### GSM8K (Grade School Math 8K)
+
+**What it measures**: Mathematical reasoning on grade-school level word problems.
+
+**Task variants**:
+- `gsm8k`: Base task
+- `gsm8k_cot`: With chain-of-thought prompting
+- `gsm_plus`: Adversarial variant with perturbations
+
+**Format**: Free-form generation, extract numerical answer
+
+**Example**:
+```
+Question: A baker made 200 cookies. He sold 3/5 of them in the morning and 1/4 of the remaining in the afternoon. How many cookies does he have left?
+Answer: 60
+```
+
+**Command**:
+```bash
+lm_eval --model hf \
+  --model_args pretrained=meta-llama/Llama-2-7b-hf \
+  --tasks gsm8k \
+  --num_fewshot 5
+```
+
+**Interpretation**:
+- Random: ~0%
+- GPT-3 (175B): 17.0%
+- GPT-4: 92.0%
+- Llama 2 70B: 56.8%
+
+**Good for**: Testing multi-step reasoning and arithmetic.
+
+### HumanEval
+
+**What it measures**: Python code generation from docstrings (functional correctness).
+
+**Task variants**:
+- `humaneval`: Standard benchmark
+- `humaneval_instruct`: For instruction-tuned models
+
+**Format**: Code generation, execution-based evaluation
+
+**Example**:
+```python
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    """ Check if in given list of numbers, are any two numbers closer to each other than
+    given threshold.
+    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)
+    False
+    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
+    True
+    """
+```
+
+**Command**:
+```bash
+lm_eval --model hf \
+  --model_args pretrained=codellama/CodeLlama-7b-hf \
+  --tasks humaneval \
+  --batch_size 1
+```
+
+**Interpretation**:
+- Random: 0%
+- GPT-3 (175B): 0%
+- Codex: 28.8%
+- GPT-4: 67.0%
+- Code Llama 34B: 53.7%
+
+**Good for**: Evaluating code generation capabilities.
+
+### BBH (BIG-Bench Hard)
+
+**What it measures**: 23 challenging reasoning tasks where models previously failed to beat humans.
+
+**Categories**:
+- Logical reasoning
+- Math word problems
+- Social understanding
+- Algorithmic reasoning
+
+**Format**: Multiple choice and free-form
+
+**Command**:
+```bash
+lm_eval --model hf \
+  --model_args pretrained=meta-llama/Llama-2-7b-hf \
+  --tasks bbh \
+  --num_fewshot 3
+```
+
+**Interpretation**:
+- Random: ~25%
+- GPT-3 (175B): 33.9%
+- PaLM 540B: 58.3%
+- GPT-4: 86.7%
+
+**Good for**: Testing advanced reasoning capabilities.
+
+### IFEval (Instruction-Following Evaluation)
+
+**What it measures**: Ability to follow specific, verifiable instructions.
+
+**Instruction types**:
+- Format constraints (e.g., "answer in 3 sentences")
+- Length constraints (e.g., "use at least 100 words")
+- Content constraints (e.g., "include the word 'banana'")
+- Structural constraints (e.g., "use bullet points")
+
+**Format**: Free-form generation with rule-based verification
+
+**Command**:
+```bash
+lm_eval --model hf \
+  --model_args pretrained=meta-llama/Llama-2-7b-chat-hf \
+  --tasks ifeval \
+  --batch_size auto
+```
+
+**Interpretation**:
+- Measures: Instruction adherence (not quality)
+- GPT-4: 86% instruction following
+- Claude 2: 84%
+
+**Good for**: Evaluating chat/instruct models.
+
+### GLUE (General Language Understanding Evaluation)
+
+**What it measures**: Natural language understanding across 9 tasks.
+
+**Tasks**:
+- `cola`: Grammatical acceptability
+- `sst2`: Sentiment analysis
+- `mrpc`: Paraphrase detection
+- `qqp`: Question pairs
+- `stsb`: Semantic similarity
+- `mnli`: Natural language inference
+- `qnli`: Question answering NLI
+- `rte`: Recognizing textual entailment
+- `wnli`: Winograd schemas
+
+**Command**:
+```bash
+lm_eval --model hf \
+  --model_args pretrained=bert-base-uncased \
+  --tasks glue \
+  --num_fewshot 0
+```
+
+**Interpretation**:
+- BERT Base: 78.3 (GLUE score)
+- RoBERTa Large: 88.5
+- Human baseline: 87.1
+
+**Good for**: Encoder-only models, fine-tuning baselines.
+
+### LongBench
+
+**What it measures**: Long-context understanding (4K-32K tokens).
+
+**21 tasks covering**:
+- Single-document QA
+- Multi-document QA
+- Summarization
+- Few-shot learning
+- Code completion
+- Synthetic tasks
+
+**Command**:
+```bash
+lm_eval --model hf \
+  --model_args pretrained=meta-llama/Llama-2-7b-hf \
+  --tasks longbench \
+  --batch_size 1
+```
+
+**Interpretation**:
+- Tests context utilization
+- Many models struggle beyond 4K tokens
+- GPT-4 Turbo: 54.3%
+
+**Good for**: Evaluating long-context models.
+
+## Additional Benchmarks
+
+### TruthfulQA
+
+**What it measures**: Model's propensity to be truthful vs. generate plausible-sounding falsehoods.
+
+**Format**: Multiple choice with 4-5 options
+
+**Command**:
+```bash
+lm_eval --model hf \
+  --model_args pretrained=meta-llama/Llama-2-7b-hf \
+  --tasks truthfulqa_mc2 \
+  --batch_size auto
+```
+
+**Interpretation**:
+- Larger models often score worse (more convincing lies)
+- GPT-3: 58.8%
+- GPT-4: 59.0%
+- Human: ~94%
+
+### ARC (AI2 Reasoning Challenge)
+
+**What it measures**: Grade-school science questions.
+
+**Variants**:
+- `arc_easy`: Easier questions
+- `arc_challenge`: Harder questions requiring reasoning
+
+**Command**:
+```bash
+lm_eval --model hf \
+  --model_args pretrained=meta-llama/Llama-2-7b-hf \
+  --tasks arc_challenge \
+  --num_fewshot 25
+```
+
+**Interpretation**:
+- ARC-Easy: Most models >80%
+- ARC-Challenge random: 25%
+- GPT-4: 96.3%
+
+### HellaSwag
+
+**What it measures**: Commonsense reasoning about everyday situations.
+
+**Format**: Choose most plausible continuation
+
+**Command**:
+```bash
+lm_eval --model hf \
+  --model_args pretrained=meta-llama/Llama-2-7b-hf \
+  --tasks hellaswag \
+  --num_fewshot 10
+```
+
+**Interpretation**:
+- Random: 25%
+- GPT-3: 78.9%
+- Llama 2 70B: 85.3%
+
+### WinoGrande
+
+**What it measures**: Commonsense reasoning via pronoun resolution.
+
+**Example**:
+```
+The trophy doesn't fit in the brown suitcase because _ is too large.
+A. the trophy
+B. the suitcase
+```
+
+**Command**:
+```bash
+lm_eval --model hf \
+  --model_args pretrained=meta-llama/Llama-2-7b-hf \
+  --tasks winogrande \
+  --num_fewshot 5
+```
+
+### PIQA
+
+**What it measures**: Physical commonsense reasoning.
+
+**Example**: "To clean a keyboard, use compressed air or..."
+
+**Command**:
+```bash
+lm_eval --model hf \
+  --model_args pretrained=meta-llama/Llama-2-7b-hf \
+  --tasks piqa
+```
+
+## Multilingual Benchmarks
+
+### AfroBench
+
+**What it measures**: Performance across 64 African languages.
+
+**15 tasks**: NLU, text generation, knowledge, QA, math reasoning
+
+**Command**:
+```bash
+lm_eval --model hf \
+  --model_args pretrained=meta-llama/Llama-2-7b-hf \
+  --tasks afrobench
+```
+
+### NorEval
+
+**What it measures**: Norwegian language understanding (9 task categories).
+
+**Command**:
+```bash
+lm_eval --model hf \
+  --model_args pretrained=NbAiLab/nb-gpt-j-6B \
+  --tasks noreval
+```
+
+## Domain-Specific Benchmarks
+
+### MATH
+
+**What it measures**: High-school competition math problems.
+
+**Command**:
+```bash
+lm_eval --model hf \
+  --model_args pretrained=meta-llama/Llama-2-7b-hf \
+  --tasks math \
+  --num_fewshot 4
+```
+
+**Interpretation**:
+- Very challenging
+- GPT-4: 42.5%
+- Minerva 540B: 33.6%
+
+### MBPP (Mostly Basic Python Problems)
+
+**What it measures**: Python programming from natural language descriptions.
+
+**Command**:
+```bash
+lm_eval --model hf \
+  --model_args pretrained=codellama/CodeLlama-7b-hf \
+  --tasks mbpp \
+  --batch_size 1
+```
+
+### DROP
+
+**What it measures**: Reading comprehension requiring discrete reasoning.
+
+**Command**:
+```bash
+lm_eval --model hf \
+  --model_args pretrained=meta-llama/Llama-2-7b-hf \
+  --tasks drop
+```
+
+## Benchmark Selection Guide
+
+### For General Purpose Models
+
+Run this suite:
+```bash
+lm_eval --model hf \
+  --model_args pretrained=meta-llama/Llama-2-7b-hf \
+  --tasks mmlu,gsm8k,hellaswag,arc_challenge,truthfulqa_mc2 \
+  --num_fewshot 5
+```
+
+### For Code Models
+
+```bash
+lm_eval --model hf \
+  --model_args pretrained=codellama/CodeLlama-7b-hf \
+  --tasks humaneval,mbpp \
+  --batch_size 1
+```
+
+### For Chat/Instruct Models
+
+```bash
+lm_eval --model hf \
+  --model_args pretrained=meta-llama/Llama-2-7b-chat-hf \
+  --tasks ifeval,mmlu,gsm8k_cot \
+  --batch_size auto
+```
+
+### For Long Context Models
+
+```bash
+lm_eval --model hf \
+  --model_args pretrained=meta-llama/Llama-3.1-8B \
+  --tasks longbench \
+  --batch_size 1
+```
+
+## Interpreting Results
+
+### Understanding Metrics
+
+**Accuracy**: Percentage of correct answers (most common)
+
+**Exact Match (EM)**: Requires exact string match (strict)
+
+**F1 Score**: Balances precision and recall
+
+**BLEU/ROUGE**: Text generation similarity
+
+**Pass@k**: Percentage passing when generating k samples
+
+### Typical Score Ranges
+
+| Model Size | MMLU | GSM8K | HumanEval | HellaSwag |
+|------------|------|-------|-----------|-----------|
+| 7B | 40-50% | 10-20% | 5-15% | 70-80% |
+| 13B | 45-55% | 20-35% | 15-25% | 75-82% |
+| 70B | 60-70% | 50-65% | 35-50% | 82-87% |
+| GPT-4 | 86% | 92% | 67% | 95% |
+
+### Red Flags
+
+- **All tasks at random chance**: Model not trained properly
+- **Exact 0% on generation tasks**: Likely format/parsing issue
+- **Huge variance across runs**: Check seed/sampling settings
+- **Better than GPT-4 on everything**: Likely contamination
+
+## Best Practices
+
+1. **Always report few-shot setting**: 0-shot, 5-shot, etc.
+2. **Run multiple seeds**: Report mean ± std
+3. **Check for data contamination**: Search training data for benchmark examples
+4. **Compare to published baselines**: Validate your setup
+5. **Report all hyperparameters**: Model, batch size, max tokens, temperature
+
+## References
+
+- Task list: `lm_eval --tasks list`
+- Task README: `lm_eval/tasks/README.md`
+- Papers: See individual benchmark papers

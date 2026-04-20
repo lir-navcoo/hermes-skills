@@ -1,1 +1,367 @@
-IyBUcm91Ymxlc2hvb3RpbmcgUmVmZXJlbmNlCgo+ICoqU2VlIGFsc286KiogY29tcG9zaXRpb24ubWQgwrcgYXJjaGl0ZWN0dXJlLm1kIMK3IHNoYWRlcnMubWQgwrcgc2NlbmVzLm1kIMK3IG9wdGltaXphdGlvbi5tZAoKIyMgUXVpY2sgRGlhZ25vc3RpYwoKfCBTeW1wdG9tIHwgTGlrZWx5IENhdXNlIHwgRml4IHwKfC0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tfC0tLS0tfAp8IEFsbCBibGFjayBvdXRwdXQgfCB0b25lbWFwIGdhbW1hIHRvbyBoaWdoIG9yIG5vIGVmZmVjdHMgcmVuZGVyaW5nIHwgTG93ZXIgZ2FtbWEgdG8gMC41LCBjaGVjayBzY2VuZV9mbiByZXR1cm5zIG5vbi16ZXJvIGNhbnZhcyB8CnwgV2FzaGVkIG91dCAvIHRvbyBicmlnaHQgfCBMaW5lYXIgYnJpZ2h0bmVzcyBtdWx0aXBsaWVyIGluc3RlYWQgb2YgdG9uZW1hcCB8IFJlcGxhY2UgYGNhbnZhcyAqIE5gIHdpdGggYHRvbmVtYXAoY2FudmFzLCBnYW1tYT0wLjc1KWAgfAp8IGZmbXBlZyBoYW5ncyBtaWQtcmVuZGVyIHwgc3RkZXJyPXN1YnByb2Nlc3MuUElQRSBkZWFkbG9jayB8IFJlZGlyZWN0IHN0ZGVyciB0byBmaWxlIHwKfCAicmVhZC1vbmx5IiBhcnJheSBlcnJvciB8IGJyb2FkY2FzdF90byB2aWV3IHdpdGhvdXQgLmNvcHkoKSB8IEFkZCBgLmNvcHkoKWAgYWZ0ZXIgYnJvYWRjYXN0X3RvIHwKfCBQaWNrbGluZ0Vycm9yIHwgTGFtYmRhIG9yIGNsb3N1cmUgaW4gU0NFTkVTIHRhYmxlIHwgRGVmaW5lIGFsbCBmeF8qIGF0IG1vZHVsZSBsZXZlbCB8CnwgUmFuZG9tIGRhcmsgaG9sZXMgaW4gb3V0cHV0IHwgRm9udCBtaXNzaW5nIFVuaWNvZGUgZ2x5cGhzIHwgVmFsaWRhdGUgcGFsZXR0ZXMgYXQgaW5pdCB8CnwgQXVkaW8tdmlzdWFsIGRlc3luYyB8IEZyYW1lIHRpbWluZyBhY2N1bXVsYXRpb24gfCBVc2UgaW50ZWdlciBmcmFtZSBjb3VudGVyLCBjb21wdXRlIHQgZnJlc2ggZWFjaCBmcmFtZSB8CnwgU2luZ2xlLWNvbG9yIGZsYXQgb3V0cHV0IHwgSHVlIGZpZWxkIHNoYXBlIG1pc21hdGNoIHwgRW5zdXJlIGgscyx2IGFycmF5cyBhbGwgKHJvd3MsY29scykgYmVmb3JlIGhzdjJyZ2IgfAp8IFRleHQgdW5yZWFkYWJsZSBvdmVyIGJ1c3kgYmcgfCBObyBjb250cmFzdCBiZXR3ZWVuIHRleHQgYW5kIGJhY2tncm91bmQgfCBVc2UgYGFwcGx5X3RleHRfYmFja2Ryb3AoKWAgKGNvbXBvc2l0aW9uLm1kKSArIGByZXZlcnNlX3ZpZ25ldHRlYCBzaGFkZXIgKHNoYWRlcnMubWQpIHwKfCBUZXh0IGdhcmJsZWQvbWlycm9yZWQgfCBLYWxlaWRvc2NvcGUgb3IgbWlycm9yIHNoYWRlciBhcHBsaWVkIHRvIHRleHQgc2NlbmUgfCAqKk5ldmVyIGFwcGx5IGthbGVpZG9zY29wZSwgbWlycm9yX2gvdi9xdWFkL2RpYWcgdG8gc2NlbmVzIHdpdGggcmVhZGFibGUgdGV4dCoqIOKAlCByYWRpYWwgZm9sZGluZyBkZXN0cm95cyBsZWdpYmlsaXR5LiBBcHBseSB0aGVzZSBvbmx5IHRvIGJhY2tncm91bmQgbGF5ZXJzIG9yIHRleHQtZnJlZSBzY2VuZXMgfAoKQ29tbW9uIGJ1Z3MsIGdvdGNoYXMsIGFuZCBwbGF0Zm9ybS1zcGVjaWZpYyBpc3N1ZXMgZW5jb3VudGVyZWQgZHVyaW5nIEFTQ0lJIHZpZGVvIGRldmVsb3BtZW50LgoKIyMgTnVtUHkgQnJvYWRjYXN0aW5nCgojIyMgVGhlIGBicm9hZGNhc3RfdG8oKS5jb3B5KClgIFRyYXAKCkh1ZSBmaWVsZCBnZW5lcmF0b3JzIG9mdGVuIHJldHVybiBhcnJheXMgdGhhdCBhcmUgYnJvYWRjYXN0IHZpZXdzIOKAlCB0aGV5IGhhdmUgc2hhcGUgYCgxLCBjb2xzKWAgb3IgYChyb3dzLCAxKWAgdGhhdCBudW1weSBicm9hZGNhc3RzIHRvIGAocm93cywgY29scylgLiBUaGVzZSB2aWV3cyBhcmUgKipyZWFkLW9ubHkqKi4gSWYgYW55IGRvd25zdHJlYW0gY29kZSB0cmllcyB0byBtb2RpZnkgdGhlbSBpbi1wbGFjZSAoZS5nLiwgYGggJT0gMS4wYCksIG51bXB5IHJhaXNlczoKCmBgYApWYWx1ZUVycm9yOiBvdXRwdXQgYXJyYXkgaXMgcmVhZC1vbmx5CmBgYAoKKipGaXgqKjogQWx3YXlzIGAuY29weSgpYCBhZnRlciBgYnJvYWRjYXN0X3RvKClgOgoKYGBgcHl0aG9uCmggPSBucC5icm9hZGNhc3RfdG8oaCwgKGcucm93cywgZy5jb2xzKSkuY29weSgpCmBgYAoKVGhpcyBpcyBlc3BlY2lhbGx5IGltcG9ydGFudCBpbiBgX3JlbmRlcl92ZigpYCB3aGVyZSBodWUgYXJyYXlzIGZsb3cgdGhyb3VnaCBgaHN2MnJnYigpYC4KCiMjIyBUaGUgYCs9YCB2cyBgK2AgVHJhcAoKQnJvYWRjYXN0aW5nIGFsc28gZmFpbHMgd2l0aCBpbi1wbGFjZSBvcGVyYXRvcnMgd2hlbiBvcGVyYW5kIHNoYXBlcyBkb24ndCBtYXRjaCBleGFjdGx5OgoKYGBgcHl0aG9uCiMgRkFJTFMgaWYgcmVzdWx0IGlzIChyb3dzLDEpIGFuZCBvcGVyYW5kIGlzIChyb3dzLCBjb2xzKQp2YWwgKz0gbnAuc2luKGcuY2MgKiAwLjAyICsgdCAqIDAuMykgKiAwLjUKCiMgV09SS1Mg4oCUIGNyZWF0ZXMgYSBuZXcgYXJyYXkKdmFsID0gdmFsICsgbnAuc2luKGcuY2MgKiAwLjAyICsgdCAqIDAuMykgKiAwLjUKYGBgCgpUaGUgYHZmX3BsYXNtYSgpYCBmdW5jdGlvbiBoYWQgdGhpcyBidWcuIFVzZSBgK2AgaW5zdGVhZCBvZiBgKz1gIHdoZW4gbWl4aW5nIGRpZmZlcmVudC1zaGFwZWQgYXJyYXlzLgoKIyMjIFNoYXBlIE1pc21hdGNoIGluIGBoc3YycmdiKClgCgpgaHN2MnJnYihoLCBzLCB2KWAgcmVxdWlyZXMgYWxsIHRocmVlIGFycmF5cyB0byBoYXZlIGlkZW50aWNhbCBzaGFwZXMuIElmIGBoYCBpcyBgKDEsIGNvbHMpYCBhbmQgYHNgIGlzIGAocm93cywgY29scylgLCB0aGUgZnVuY3Rpb24gY3Jhc2hlcyBvciBwcm9kdWNlcyB3cm9uZyBvdXRwdXQuCgoqKkZpeCoqOiBFbnN1cmUgYWxsIGlucHV0cyBhcmUgYnJvYWRjYXN0IGFuZCBjb3BpZWQgdG8gYChyb3dzLCBjb2xzKWAgYmVmb3JlIGNhbGxpbmcuCgotLS0KCiMjIEJsZW5kIE1vZGUgUGl0ZmFsbHMKCiMjIyBPdmVybGF5IENydXNoZXMgRGFyayBJbnB1dHMKCmBvdmVybGF5KGEsIGIpID0gMiphKmJgIHdoZW4gYGEgPCAwLjVgLiBUd28gdmFsdWVzIG9mIDAuMTIgcHJvZHVjZSBgMiAqIDAuMTIgKiAwLjEyID0gMC4wM2AuIFRoZSByZXN1bHQgaXMgZGFya2VyIHRoYW4gZWl0aGVyIGlucHV0LgoKKipJbXBhY3QqKjogSWYgYm90aCBsYXllcnMgYXJlIGRhcmsgKHdoaWNoIEFTQ0lJIGFydCB1c3VhbGx5IGlzKSwgb3ZlcmxheSBwcm9kdWNlcyBuZWFyLWJsYWNrIG91dHB1dC4KCioqRml4Kio6IFVzZSBgc2NyZWVuYCBmb3IgZGFyayBzb3VyY2UgbWF0ZXJpYWwuIFNjcmVlbiBhbHdheXMgYnJpZ2h0ZW5zOiBgMSAtICgxLWEpKigxLWIpYC4KCiMjIyBDb2xvcmRvZGdlIERpdmlzaW9uIGJ5IFplcm8KCmBjb2xvcmRvZGdlKGEsIGIpID0gYSAvICgxIC0gYilgLiBXaGVuIGBiID0gMS4wYCAocHVyZSB3aGl0ZSBwaXhlbHMpLCB0aGlzIGRpdmlkZXMgYnkgemVyby4KCioqRml4Kio6IEFkZCBlcHNpbG9uOiBgYSAvICgxIC0gYiArIDFlLTYpYC4gVGhlIGltcGxlbWVudGF0aW9uIGluIGBCTEVORF9NT0RFU2Agc2hvdWxkIGluY2x1ZGUgdGhpcy4KCiMjIyBDb2xvcmJ1cm4gRGl2aXNpb24gYnkgWmVybwoKYGNvbG9yYnVybihhLCBiKSA9IDEgLSAoMS1hKSAvIGJgLiBXaGVuIGBiID0gMGAgKHB1cmUgYmxhY2sgcGl4ZWxzKSwgdGhpcyBkaXZpZGVzIGJ5IHplcm8uCgoqKkZpeCoqOiBBZGQgZXBzaWxvbjogYDEgLSAoMS1hKSAvIChiICsgMWUtNilgLgoKIyMjIE11bHRpcGx5IEFsd2F5cyBEYXJrZW5zCgpgbXVsdGlwbHkoYSwgYikgPSBhICogYmAuIFNpbmNlIGJvdGggb3BlcmFuZHMgYXJlIFswLDFdLCB0aGUgcmVzdWx0IGlzIGFsd2F5cyA8PSBtaW4oYSxiKS4gTmV2ZXIgdXNlIG11bHRpcGx5IGFzIGEgZmVlZGJhY2sgYmxlbmQgbW9kZSDigJQgdGhlIGZyYW1lIGdvZXMgYmxhY2sgd2l0aGluIGEgZmV3IGZyYW1lcy4KCioqRml4Kio6IFVzZSBgc2NyZWVuYCBmb3IgZmVlZGJhY2ssIG9yIGBhZGRgIHdpdGggbG93IG9wYWNpdHkuCgotLS0KCiMjIE11bHRpcHJvY2Vzc2luZwoKIyMjIFBpY2tsaW5nIENvbnN0cmFpbnRzCgpgUHJvY2Vzc1Bvb2xFeGVjdXRvcmAgc2VyaWFsaXplcyBmdW5jdGlvbiBhcmd1bWVudHMgdmlhIHBpY2tsZS4gVGhpcyBjb25zdHJhaW5zIHdoYXQgeW91IGNhbiBwYXNzIHRvIHdvcmtlcnM6Cgp8IENhbiBQaWNrbGUgfCBDYW5ub3QgUGlja2xlIHwKfC0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLXwKfCBNb2R1bGUtbGV2ZWwgZnVuY3Rpb25zIChgZGVmIGZ4X2ZvbygpOmApIHwgTGFtYmRhcyAoYGxhbWJkYSB4OiB4ICsgMWApIHwKfCBEaWN0cywgbGlzdHMsIG51bXB5IGFycmF5cyB8IENsb3N1cmVzIChmdW5jdGlvbnMgZGVmaW5lZCBpbnNpZGUgZnVuY3Rpb25zKSB8CnwgQ2xhc3MgaW5zdGFuY2VzICh3aXRoIGBfX3JlZHVjZV9fYCkgfCBJbnN0YW5jZSBtZXRob2RzIHwKfCBTdHJpbmdzLCBudW1iZXJzIHwgRmlsZSBoYW5kbGVzLCBzb2NrZXRzIHwKCioqSW1wYWN0Kio6IEFsbCBzY2VuZSBmdW5jdGlvbnMgcmVmZXJlbmNlZCBpbiB0aGUgU0NFTkVTIHRhYmxlIG11c3QgYmUgZGVmaW5lZCBhdCBtb2R1bGUgbGV2ZWwgd2l0aCBgZGVmYC4gSWYgeW91IHVzZSBhIGxhbWJkYSBvciBjbG9zdXJlLCB5b3UgZ2V0OgoKYGBgCl9waWNrbGUuUGlja2xpbmdFcnJvcjogQ2FuJ3QgcGlja2xlIDxmdW5jdGlvbiA8bGFtYmRhPiBhdCAweC4uLj4KYGBgCgoqKkZpeCoqOiBEZWZpbmUgYWxsIHNjZW5lIGZ1bmN0aW9ucyBhdCBtb2R1bGUgdG9wIGxldmVsLiBMYW1iZGFzIHVzZWQgaW5zaWRlIGBfcmVuZGVyX3ZmKClgIGFzIHZhbF9mbi9odWVfZm4gYXJlIGZpbmUgYmVjYXVzZSB0aGV5IGV4ZWN1dGUgd2l0aGluIHRoZSB3b3JrZXIgcHJvY2VzcyDigJQgdGhleSdyZSBub3QgcGlja2xlZCBhY3Jvc3MgcHJvY2VzcyBib3VuZGFyaWVzLgoKIyMjIG1hY09TIHNwYXduIHZzIExpbnV4IGZvcmsKCk9uIG1hY09TLCBgbXVsdGlwcm9jZXNzaW5nYCBkZWZhdWx0cyB0byBgc3Bhd25gIChmdWxsIHNlcmlhbGl6YXRpb24pLiBPbiBMaW51eCwgaXQgZGVmYXVsdHMgdG8gYGZvcmtgIChjb3B5LW9uLXdyaXRlKS4gVGhpcyBtZWFuczoKCi0gKiptYWNPUyoqOiBGZWF0dXJlIGFycmF5cyBhcmUgc2VyaWFsaXplZCBwZXIgd29ya2VyICh+NTdLQiBmb3IgMzBzIHZpZGVvLCBidXQgc2NhbGVzIHdpdGggZHVyYXRpb24pLiBFYWNoIHdvcmtlciByZS1pbXBvcnRzIHRoZSBlbnRpcmUgbW9kdWxlLgotICoqTGludXgqKjogRmVhdHVyZSBhcnJheXMgYXJlIHNoYXJlZCB2aWEgQ09XLiBXb3JrZXJzIGluaGVyaXQgdGhlIHBhcmVudCdzIG1lbW9yeS4KCioqSW1wYWN0Kio6IE9uIG1hY09TLCBtb2R1bGUtbGV2ZWwgY29kZSAobGlrZSBgZGV0ZWN0X2hhcmR3YXJlKClgKSBydW5zIGluIGV2ZXJ5IHdvcmtlciBwcm9jZXNzLiBJZiBpdCBoYXMgc2lkZSBlZmZlY3RzIChlLmcuLCBzdWJwcm9jZXNzIGNhbGxzKSwgdGhvc2UgaGFwcGVuIE4rMSB0aW1lcy4KCiMjIyBQZXItV29ya2VyIFN0YXRlIElzb2xhdGlvbgoKRWFjaCB3b3JrZXIgY3JlYXRlcyBpdHMgb3duOgotIGBSZW5kZXJlcmAgaW5zdGFuY2UgKHdpdGggZnJlc2ggZ3JpZCBjYWNoZSkKLSBgRmVlZGJhY2tCdWZmZXJgIChmZWVkYmFjayBkb2Vzbid0IGNyb3NzIHNjZW5lIGJvdW5kYXJpZXMpCi0gUmFuZG9tIHNlZWQgKGByYW5kb20uc2VlZChoYXNoKHNlZ19pZCkgKyA0MilgKQoKVGhpcyBtZWFuczoKLSBQYXJ0aWNsZSBzdGF0ZSBkb2Vzbid0IGNhcnJ5IGJldHdlZW4gc2NlbmVzIChleHBlY3RlZCkKLSBGZWVkYmFjayB0cmFpbHMgcmVzZXQgYXQgc2NlbmUgY3V0cyAoZXhwZWN0ZWQpCi0gYG5wLnJhbmRvbWAgc3RhdGUgaXMgTk9UIHNlZWRlZCBieSBgcmFuZG9tLnNlZWQoKWAg4oCUIHRoZXkgdXNlIHNlcGFyYXRlIFJOR3MKCioqRml4IGZvciBkZXRlcm1pbmlzdGljIG5vaXNlKio6IFVzZSBgbnAucmFuZG9tLlJhbmRvbVN0YXRlKHNlZWQpYCBleHBsaWNpdGx5OgoKYGBgcHl0aG9uCnJuZyA9IG5wLnJhbmRvbS5SYW5kb21TdGF0ZShoYXNoKHNlZ19pZCkgKyA0MikKbm9pc2UgPSBybmcucmFuZG9tKChyb3dzLCBjb2xzKSkKYGBgCgotLS0KCiMjIEJyaWdodG5lc3MgSXNzdWVzCgojIyMgRGFyayBTY2VuZXMgQWZ0ZXIgVG9uZW1hcAoKSWYgYSBzY2VuZSBpcyBzdGlsbCBkYXJrIGFmdGVyIHRvbmVtYXAsIGNoZWNrOgoKMS4gKipHYW1tYSB0b28gaGlnaCoqOiBMb3dlciBnYW1tYSAoMC41LTAuNikgZm9yIHNjZW5lcyB3aXRoIGRlc3RydWN0aXZlIHBvc3QtcHJvY2Vzc2luZwoyLiAqKlNoYWRlciBkZXN0cm95aW5nIGJyaWdodG5lc3MqKjogU29sYXJpemUsIHBvc3Rlcml6ZSwgb3IgY29udHJhc3QgYWRqdXN0bWVudHMgaW4gdGhlIHNoYWRlciBjaGFpbiBjYW4gdW5kbyB0b25lbWFwJ3Mgd29yay4gTW92ZSBkZXN0cnVjdGl2ZSBzaGFkZXJzIGVhcmxpZXIgaW4gdGhlIGNoYWluLCBvciBpbmNyZWFzZSBnYW1tYSB0byBjb21wZW5zYXRlLgozLiAqKkZlZWRiYWNrIHdpdGggbXVsdGlwbHkqKjogTXVsdGlwbHkgZmVlZGJhY2sgZGFya2VucyBldmVyeSBmcmFtZS4gU3dpdGNoIHRvIHNjcmVlbiBvciBhZGQuCjQuICoqT3ZlcmxheSBibGVuZCBpbiBzY2VuZSoqOiBJZiB0aGUgc2NlbmUgZnVuY3Rpb24gdXNlcyBgYmxlbmRfY2FudmFzKC4uLiwgIm92ZXJsYXkiLCAuLi4pYCB3aXRoIGRhcmsgbGF5ZXJzLCBzd2l0Y2ggdG8gc2NyZWVuLgoKIyMjIERpYWdub3N0aWM6IFRlc3QtRnJhbWUgQnJpZ2h0bmVzcwoKYGBgYmFzaApweXRob24gcmVlbC5weSAtLXRlc3QtZnJhbWUgMTAuMAojIE91dHB1dDogTWVhbiBicmlnaHRuZXNzOiA0NC4zLCBtYXg6IDI1NQpgYGAKCklmIG1lYW4gPCAyMCwgdGhlIHNjZW5lIG5lZWRzIGF0dGVudGlvbi4gQ29tbW9uIGZpeGVzOgotIExvd2VyIGdhbW1hIGluIHRoZSBTQ0VORVMgZW50cnkKLSBDaGFuZ2UgaW50ZXJuYWwgYmxlbmQgbW9kZXMgZnJvbSBvdmVybGF5L211bHRpcGx5IHRvIHNjcmVlbi9hZGQKLSBJbmNyZWFzZSB2YWx1ZSBmaWVsZCBtdWx0aXBsaWVycyAoZS5nLiwgYHZmX3BsYXNtYSguLi4pICogMS41YCkKLSBDaGVjayB0aGF0IHRoZSBzaGFkZXIgY2hhaW4gZG9lc24ndCBoYXZlIGFuIGFnZ3Jlc3NpdmUgc29sYXJpemUgb3IgdGhyZXNob2xkCgojIyMgdjEgQnJpZ2h0bmVzcyBQYXR0ZXJuIChEZXByZWNhdGVkKQoKVGhlIG9sZCBwYXR0ZXJuIHVzZWQgYSBsaW5lYXIgbXVsdGlwbGllcjoKCmBgYHB5dGhvbgojIE9MRCDigJQgZG9uJ3QgdXNlCmNhbnZhcyA9IG5wLmNsaXAoY2FudmFzLmFzdHlwZShucC5mbG9hdDMyKSAqIDIuMCwgMCwgMjU1KS5hc3R5cGUobnAudWludDgpCmBgYAoKVGhpcyBmYWlscyBiZWNhdXNlOgotIERhcmsgc2NlbmVzIChtZWFuIDgpOiBgOCAqIDIuMCA9IDE2YCDigJQgc3RpbGwgZGFyawotIEJyaWdodCBzY2VuZXMgKG1lYW4gMTMwKTogYDEzMCAqIDIuMCA9IDI1NWAg4oCUIGNsaXBwZWQsIGxvc3QgZGV0YWlsCgpVc2UgYHRvbmVtYXAoKWAgaW5zdGVhZC4gU2VlIGBjb21wb3NpdGlvbi5tZGAgwqcgQWRhcHRpdmUgVG9uZSBNYXBwaW5nLgoKLS0tCgojIyBmZm1wZWcgSXNzdWVzCgojIyMgUGlwZSBEZWFkbG9jawoKVGhlICMxIHByb2R1Y3Rpb24gYnVnLiBJZiB5b3UgdXNlIGBzdGRlcnI9c3VicHJvY2Vzcy5QSVBFYDoKCmBgYHB5dGhvbgojIERFQURMT0NLIOKAlCBzdGRlcnIgYnVmZmVyIGZpbGxzIGF0IDY0S0IsIGJsb2NrcyBmZm1wZWcsIGJsb2NrcyB5b3VyIHdyaXRlcwpwaXBlID0gc3VicHJvY2Vzcy5Qb3BlbihjbWQsIHN0ZGluPXN1YnByb2Nlc3MuUElQRSwgc3RkZXJyPXN1YnByb2Nlc3MuUElQRSkKYGBgCgoqKkZpeCoqOiBBbHdheXMgcmVkaXJlY3Qgc3RkZXJyIHRvIGEgZmlsZToKCmBgYHB5dGhvbgpzdGRlcnJfZmggPSBvcGVuKGVycl9wYXRoLCAidyIpCnBpcGUgPSBzdWJwcm9jZXNzLlBvcGVuKGNtZCwgc3RkaW49c3VicHJvY2Vzcy5QSVBFLAogICAgICAgICAgICAgICAgICAgICAgICBzdGRvdXQ9c3VicHJvY2Vzcy5ERVZOVUxMLCBzdGRlcnI9c3RkZXJyX2ZoKQpgYGAKCiMjIyBGcmFtZSBDb3VudCBNaXNtYXRjaAoKSWYgdGhlIG51bWJlciBvZiBmcmFtZXMgd3JpdHRlbiB0byB0aGUgcGlwZSBkb2Vzbid0IG1hdGNoIHdoYXQgZmZtcGVnIGV4cGVjdHMgKGJhc2VkIG9uIGAtcmAgYW5kIGR1cmF0aW9uKSwgdGhlIG91dHB1dCBtYXkgaGF2ZToKLSBNaXNzaW5nIGZyYW1lcyBhdCB0aGUgZW5kCi0gSW5jb3JyZWN0IGR1cmF0aW9uCi0gQXVkaW8tdmlkZW8gZGVzeW5jCgoqKkZpeCoqOiBDYWxjdWxhdGUgZnJhbWUgY291bnQgZXhwbGljaXRseTogYG5fZnJhbWVzID0gaW50KGR1cmF0aW9uICogRlBTKWAuIERvbid0IHVzZSBgcmFuZ2UoaW50KHN0YXJ0KkZQUyksIGludChlbmQqRlBTKSlgIHdpdGhvdXQgdmVyaWZ5aW5nIHRoZSB0b3RhbCBtYXRjaGVzLgoKIyMjIENvbmNhdCBGYWlscyB3aXRoICJ1bnNhZmUgZmlsZSBuYW1lIgoKYGBgCltjb25jYXQgQCAuLi5dIFVuc2FmZSBmaWxlIG5hbWUKYGBgCgoqKkZpeCoqOiBBbHdheXMgdXNlIGAtc2FmZSAwYDoKYGBgcHl0aG9uClsiZmZtcGVnIiwgIi1mIiwgImNvbmNhdCIsICItc2FmZSIsICIwIiwgIi1pIiwgY29uY2F0X3BhdGgsIC4uLl0KYGBgCgotLS0KCiMjIEZvbnQgSXNzdWVzCgojIyMgQ2VsbCBIZWlnaHQgKG1hY09TIFBpbGxvdykKCmB0ZXh0YmJveCgpYCBhbmQgYGdldGJib3goKWAgcmV0dXJuIGluY29ycmVjdCBoZWlnaHRzIG9uIHNvbWUgbWFjT1MgUGlsbG93IHZlcnNpb25zLiBVc2UgYGdldG1ldHJpY3MoKWA6CgpgYGBweXRob24KYXNjZW50LCBkZXNjZW50ID0gZm9udC5nZXRtZXRyaWNzKCkKY2VsbF9oZWlnaHQgPSBhc2NlbnQgKyBkZXNjZW50ICAjIGNvcnJlY3QKIyBOT1Q6IGZvbnQuZ2V0YmJveCgiTSIpWzNdICAjIHdyb25nIG9uIHNvbWUgdmVyc2lvbnMKYGBgCgojIyMgTWlzc2luZyBVbmljb2RlIEdseXBocwoKTm90IGFsbCBmb250cyByZW5kZXIgYWxsIFVuaWNvZGUgY2hhcmFjdGVycy4gSWYgYSBwYWxldHRlIGNoYXJhY3RlciBpc24ndCBpbiB0aGUgZm9udCwgdGhlIGdseXBoIHJlbmRlcnMgYXMgYSBibGFuayBvciB0b2Z1IGJveCwgYXBwZWFyaW5nIGFzIGEgZGFyayBob2xlIGluIHRoZSBvdXRwdXQuCgoqKkZpeCoqOiBWYWxpZGF0ZSBhdCBpbml0OgoKYGBgcHl0aG9uCmFsbF9jaGFycyA9IHNldCgpCmZvciBwYWwgaW4gW1BBTF9ERUZBVUxULCBQQUxfREVOU0UsIFBBTF9SVU5FLCAuLi5dOgogICAgYWxsX2NoYXJzLnVwZGF0ZShwYWwpCgp2YWxpZF9jaGFycyA9IHNldCgpCmZvciBjIGluIGFsbF9jaGFyczoKICAgIGlmIGMgPT0gIiAiOgogICAgICAgIHZhbGlkX2NoYXJzLmFkZChjKQogICAgICAgIGNvbnRpbnVlCiAgICBpbWcgPSBJbWFnZS5uZXcoIkwiLCAoMjAsIDIwKSwgMCkKICAgIEltYWdlRHJhdy5EcmF3KGltZykudGV4dCgoMCwgMCksIGMsIGZpbGw9MjU1LCBmb250PWZvbnQpCiAgICBpZiBucC5hcnJheShpbWcpLm1heCgpID4gMDoKICAgICAgICB2YWxpZF9jaGFycy5hZGQoYykKICAgIGVsc2U6CiAgICAgICAgbG9nKGYiV0FSTklORzogJ3tjfScgKFUre29yZChjKTowNFh9KSBtaXNzaW5nIGZyb20gZm9udCIpCmBgYAoKIyMjIFBsYXRmb3JtIEZvbnQgUGF0aHMKCnwgUGxhdGZvcm0gfCBDb21tb24gUGF0aHMgfAp8LS0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tfAp8IG1hY09TIHwgYC9TeXN0ZW0vTGlicmFyeS9Gb250cy9NZW5sby50dGNgLCBgL1N5c3RlbS9MaWJyYXJ5L0ZvbnRzL01vbmFjby50dGZgIHwKfCBMaW51eCB8IGAvdXNyL3NoYXJlL2ZvbnRzL3RydWV0eXBlL2RlamF2dS9EZWphVnVTYW5zTW9uby50dGZgIHwKfCBXaW5kb3dzIHwgYEM6XFdpbmRvd3NcRm9udHNcY29uc29sYS50dGZgIChDb25zb2xhcykgfAoKQWx3YXlzIHByb2JlIG11bHRpcGxlIHBhdGhzIGFuZCBmYWxsIGJhY2sgZ3JhY2VmdWxseS4gU2VlIGBhcmNoaXRlY3R1cmUubWRgIMKnIEZvbnQgU2VsZWN0aW9uLgoKLS0tCgojIyBQZXJmb3JtYW5jZQoKIyMjIFNsb3cgU2hhZGVycwoKU29tZSBzaGFkZXJzIHVzZSBQeXRob24gbG9vcHMgYW5kIGFyZSB2ZXJ5IHNsb3cgYXQgMTA4MHA6Cgp8IFNoYWRlciB8IElzc3VlIHwgRml4IHwKfC0tLS0tLS0tfC0tLS0tLS18LS0tLS18CnwgYHdhdmVfZGlzdG9ydGAgfCBQZXItcm93IFB5dGhvbiBsb29wIHwgVXNlIHZlY3Rvcml6ZWQgZmFuY3kgaW5kZXhpbmcgfAp8IGBoYWxmdG9uZWAgfCBUcmlwbGUtbmVzdGVkIGxvb3AgfCBWZWN0b3JpemUgd2l0aCBibG9jayByZWR1Y3Rpb24gfAp8IGBtYXRyaXggcmFpbmAgfCBQZXItY29sdW1uIHBlci10cmFpbCBsb29wIHwgQWNjdW11bGF0ZSBpbmRleCBhcnJheXMsIGJ1bGsgYXNzaWduIHwKCiMjIyBSZW5kZXIgVGltZSBTY2FsaW5nCgpJZiByZW5kZXIgaXMgdGFraW5nIG11Y2ggbG9uZ2VyIHRoYW4gZXhwZWN0ZWQ6CjEuIENoZWNrIGdyaWQgY291bnQg4oCUIGVhY2ggZXh0cmEgZ3JpZCBhZGRzIH4xMDAtMTUwbXMvZnJhbWUgZm9yIGluaXQKMi4gQ2hlY2sgcGFydGljbGUgY291bnQg4oCUIGNhcCBhdCBxdWFsaXR5LWFwcHJvcHJpYXRlIGxpbWl0cwozLiBDaGVjayBzaGFkZXIgY291bnQg4oCUIGVhY2ggc2hhZGVyIGFkZHMgMi0yNW1zCjQuIENoZWNrIGZvciBhY2NpZGVudGFsIFB5dGhvbiBsb29wcyBpbiBlZmZlY3RzIChzaG91bGQgYmUgbnVtcHkgb25seSkKCi0tLQoKIyMgQ29tbW9uIE1pc3Rha2VzCgojIyMgVXNpbmcgYHIuU2AgdnMgdGhlIGBTYCBQYXJhbWV0ZXIKClRoZSB2MiBzY2VuZSBwcm90b2NvbCBwYXNzZXMgYFNgICh0aGUgc3RhdGUgZGljdCkgYXMgYW4gZXhwbGljaXQgcGFyYW1ldGVyLiBCdXQgYFNgIElTIGByLlNgIOKAlCB0aGV5J3JlIHRoZSBzYW1lIG9iamVjdC4gQm90aCB3b3JrOgoKYGBgcHl0aG9uCmRlZiBmeF9zY2VuZShyLCBmLCB0LCBTKToKICAgIFNbImNvdW50ZXIiXSA9IFMuZ2V0KCJjb3VudGVyIiwgMCkgKyAxICAgIyB2aWEgcGFyYW1ldGVyIChwcmVmZXJyZWQpCiAgICByLlNbImNvdW50ZXIiXSA9IHIuUy5nZXQoImNvdW50ZXIiLCAwKSArIDEgICMgdmlhIHJlbmRlcmVyIChhbHNvIHdvcmtzKQpgYGAKClVzZSB0aGUgYFNgIHBhcmFtZXRlciBmb3IgY2xhcml0eS4gVGhlIGV4cGxpY2l0IHBhcmFtZXRlciBtYWtlcyBpdCBvYnZpb3VzIHRoYXQgdGhlIGZ1bmN0aW9uIGhhcyBwZXJzaXN0ZW50IHN0YXRlLgoKIyMjIEZvcmdldHRpbmcgdG8gSGFuZGxlIEVtcHR5IEZlYXR1cmUgVmFsdWVzCgpBdWRpbyBmZWF0dXJlcyBkZWZhdWx0IHRvIDAuMCBpZiB0aGUgYXVkaW8gaXMgc2lsZW50LiBVc2UgYC5nZXQoKWAgd2l0aCBzZW5zaWJsZSBkZWZhdWx0czoKCmBgYHB5dGhvbgplbmVyZ3kgPSBmLmdldCgiYmFzcyIsIDAuMykgICMgZGVmYXVsdCB0byAwLjMsIG5vdCAwCmBgYAoKSWYgeW91IGRlZmF1bHQgdG8gMCwgZWZmZWN0cyBnbyBibGFuayBkdXJpbmcgc2lsZW5jZS4KCiMjIyBXcml0aW5nIE5ldyBGaWxlcyBJbnN0ZWFkIG9mIEVkaXRpbmcgRXhpc3RpbmcgU3RhdGUKCkEgY29tbW9uIGJ1ZyBpbiBwYXJ0aWNsZSBzeXN0ZW1zOiBjcmVhdGluZyBuZXcgYXJyYXlzIGV2ZXJ5IGZyYW1lIGluc3RlYWQgb2YgdXBkYXRpbmcgcGVyc2lzdGVudCBzdGF0ZS4KCmBgYHB5dGhvbgojIFdST05HIOKAlCBwYXJ0aWNsZXMgcmVzZXQgZXZlcnkgZnJhbWUKU1sicHgiXSA9IFtdCmZvciBfIGluIHJhbmdlKDEwMCk6CiAgICBTWyJweCJdLmFwcGVuZChyYW5kb20ucmFuZG9tKCkpCgojIFJJR0hUIOKAlCBvbmx5IGluaXRpYWxpemUgb25jZSwgdXBkYXRlIGVhY2ggZnJhbWUKaWYgInB4IiBub3QgaW4gUzoKICAgIFNbInB4Il0gPSBbXQojIC4uLiBlbWl0IG5ldyBwYXJ0aWNsZXMgYmFzZWQgb24gYmVhdHMKIyAuLi4gdXBkYXRlIGV4aXN0aW5nIHBhcnRpY2xlcwpgYGAKCiMjIyBOb3QgQ2xpcHBpbmcgVmFsdWUgRmllbGRzCgpWYWx1ZSBmaWVsZHMgc2hvdWxkIGJlIFswLCAxXS4gSWYgdGhleSBleGNlZWQgdGhpcyByYW5nZSwgYHZhbDJjaGFyKClgIHByb2R1Y2VzIGluZGV4IGVycm9yczoKCmBgYHB5dGhvbgojIFdST05HIOKAlCB2Zl9wbGFzbWEoKSAqIDEuNSBjYW4gZXhjZWVkIDEuMAp2YWwgPSB2Zl9wbGFzbWEoZywgZiwgdCwgUykgKiAxLjUKCiMgUklHSFQg4oCUIGNsaXAgYWZ0ZXIgc2NhbGluZwp2YWwgPSBucC5jbGlwKHZmX3BsYXNtYShnLCBmLCB0LCBTKSAqIDEuNSwgMCwgMSkKYGBgCgpUaGUgYF9yZW5kZXJfdmYoKWAgaGVscGVyIGNsaXBzIGF1dG9tYXRpY2FsbHksIGJ1dCBpZiB5b3UncmUgYnVpbGRpbmcgY3VzdG9tIHNjZW5lcywgY2xpcCBleHBsaWNpdGx5LgoKIyMgQnJpZ2h0bmVzcyBCZXN0IFByYWN0aWNlcwoKLSBEZW5zZSBhbmltYXRlZCBiYWNrZ3JvdW5kcyDigJQgbmV2ZXIgZmxhdCBibGFjaywgYWx3YXlzIGZpbGwgdGhlIGdyaWQKLSBWaWduZXR0ZSBtaW5pbXVtIGNsYW1wZWQgdG8gMC4xNSAobm90IDAuMTIpCi0gQmxvb20gdGhyZXNob2xkIDEzMCAobm90IDE3MCkgc28gbW9yZSBwaXhlbHMgY29udHJpYnV0ZSB0byBnbG93Ci0gVXNlIGBzY3JlZW5gIGJsZW5kIG1vZGUgKG5vdCBgb3ZlcmxheWApIGZvciBkYXJrIEFTQ0lJIGxheWVycyDigJQgb3ZlcmxheSBzcXVhcmVzIGRhcmsgdmFsdWVzOiBgMiAqIDAuMTIgKiAwLjEyID0gMC4wM2AKLSBGZWVkYmFja0J1ZmZlciBkZWNheSBtaW5pbXVtIDAuNSDigJQgYmVsb3cgdGhhdCwgZmVlZGJhY2sgZGlzYXBwZWFycyB0b28gZmFzdCB0byBzZWUKLSBWYWx1ZSBmaWVsZCBmbG9vcjogYHZmICogMC44ICsgMC4wNWAgZW5zdXJlcyBubyBjZWxsIGlzIHRydWx5IHplcm8KLSBQZXItc2NlbmUgZ2FtbWEgb3ZlcnJpZGVzOiBkZWZhdWx0IDAuNzUsIHNvbGFyaXplIDAuNTUsIHBvc3Rlcml6ZSAwLjUwLCBicmlnaHQgc2NlbmVzIDAuODUKLSBUZXN0IGZyYW1lcyBlYXJseTogcmVuZGVyIHNpbmdsZSBmcmFtZXMgYXQga2V5IHRpbWVzdGFtcHMgYmVmb3JlIGNvbW1pdHRpbmcgdG8gZnVsbCByZW5kZXIKCioqUXVpY2sgY2hlY2tsaXN0IGJlZm9yZSBmdWxsIHJlbmRlcjoqKgoxLiBSZW5kZXIgMyB0ZXN0IGZyYW1lcyAoc3RhcnQsIG1pZGRsZSwgZW5kKQoyLiBDaGVjayBgY2FudmFzLm1lYW4oKSA+IDhgIGFmdGVyIHRvbmVtYXAKMy4gQ2hlY2sgbm8gc2NlbmUgaXMgdmlzdWFsbHkgZmxhdCBibGFjawo0LiBWZXJpZnkgcGVyLXNlY3Rpb24gdmFyaWF0aW9uIChkaWZmZXJlbnQgYmcvcGFsZXR0ZS9jb2xvciBwZXIgc2NlbmUpCjUuIENvbmZpcm0gc2hhZGVyIGNoYWluIGluY2x1ZGVzIGJsb29tICh0aHJlc2hvbGQgMTMwKQo2LiBDb25maXJtIHZpZ25ldHRlIHN0cmVuZ3RoIOKJpCAwLjI1Cg==
+# Troubleshooting Reference
+
+> **See also:** composition.md · architecture.md · shaders.md · scenes.md · optimization.md
+
+## Quick Diagnostic
+
+| Symptom | Likely Cause | Fix |
+|---------|-------------|-----|
+| All black output | tonemap gamma too high or no effects rendering | Lower gamma to 0.5, check scene_fn returns non-zero canvas |
+| Washed out / too bright | Linear brightness multiplier instead of tonemap | Replace `canvas * N` with `tonemap(canvas, gamma=0.75)` |
+| ffmpeg hangs mid-render | stderr=subprocess.PIPE deadlock | Redirect stderr to file |
+| "read-only" array error | broadcast_to view without .copy() | Add `.copy()` after broadcast_to |
+| PicklingError | Lambda or closure in SCENES table | Define all fx_* at module level |
+| Random dark holes in output | Font missing Unicode glyphs | Validate palettes at init |
+| Audio-visual desync | Frame timing accumulation | Use integer frame counter, compute t fresh each frame |
+| Single-color flat output | Hue field shape mismatch | Ensure h,s,v arrays all (rows,cols) before hsv2rgb |
+| Text unreadable over busy bg | No contrast between text and background | Use `apply_text_backdrop()` (composition.md) + `reverse_vignette` shader (shaders.md) |
+| Text garbled/mirrored | Kaleidoscope or mirror shader applied to text scene | **Never apply kaleidoscope, mirror_h/v/quad/diag to scenes with readable text** — radial folding destroys legibility. Apply these only to background layers or text-free scenes |
+
+Common bugs, gotchas, and platform-specific issues encountered during ASCII video development.
+
+## NumPy Broadcasting
+
+### The `broadcast_to().copy()` Trap
+
+Hue field generators often return arrays that are broadcast views — they have shape `(1, cols)` or `(rows, 1)` that numpy broadcasts to `(rows, cols)`. These views are **read-only**. If any downstream code tries to modify them in-place (e.g., `h %= 1.0`), numpy raises:
+
+```
+ValueError: output array is read-only
+```
+
+**Fix**: Always `.copy()` after `broadcast_to()`:
+
+```python
+h = np.broadcast_to(h, (g.rows, g.cols)).copy()
+```
+
+This is especially important in `_render_vf()` where hue arrays flow through `hsv2rgb()`.
+
+### The `+=` vs `+` Trap
+
+Broadcasting also fails with in-place operators when operand shapes don't match exactly:
+
+```python
+# FAILS if result is (rows,1) and operand is (rows, cols)
+val += np.sin(g.cc * 0.02 + t * 0.3) * 0.5
+
+# WORKS — creates a new array
+val = val + np.sin(g.cc * 0.02 + t * 0.3) * 0.5
+```
+
+The `vf_plasma()` function had this bug. Use `+` instead of `+=` when mixing different-shaped arrays.
+
+### Shape Mismatch in `hsv2rgb()`
+
+`hsv2rgb(h, s, v)` requires all three arrays to have identical shapes. If `h` is `(1, cols)` and `s` is `(rows, cols)`, the function crashes or produces wrong output.
+
+**Fix**: Ensure all inputs are broadcast and copied to `(rows, cols)` before calling.
+
+---
+
+## Blend Mode Pitfalls
+
+### Overlay Crushes Dark Inputs
+
+`overlay(a, b) = 2*a*b` when `a < 0.5`. Two values of 0.12 produce `2 * 0.12 * 0.12 = 0.03`. The result is darker than either input.
+
+**Impact**: If both layers are dark (which ASCII art usually is), overlay produces near-black output.
+
+**Fix**: Use `screen` for dark source material. Screen always brightens: `1 - (1-a)*(1-b)`.
+
+### Colordodge Division by Zero
+
+`colordodge(a, b) = a / (1 - b)`. When `b = 1.0` (pure white pixels), this divides by zero.
+
+**Fix**: Add epsilon: `a / (1 - b + 1e-6)`. The implementation in `BLEND_MODES` should include this.
+
+### Colorburn Division by Zero
+
+`colorburn(a, b) = 1 - (1-a) / b`. When `b = 0` (pure black pixels), this divides by zero.
+
+**Fix**: Add epsilon: `1 - (1-a) / (b + 1e-6)`.
+
+### Multiply Always Darkens
+
+`multiply(a, b) = a * b`. Since both operands are [0,1], the result is always <= min(a,b). Never use multiply as a feedback blend mode — the frame goes black within a few frames.
+
+**Fix**: Use `screen` for feedback, or `add` with low opacity.
+
+---
+
+## Multiprocessing
+
+### Pickling Constraints
+
+`ProcessPoolExecutor` serializes function arguments via pickle. This constrains what you can pass to workers:
+
+| Can Pickle | Cannot Pickle |
+|-----------|---------------|
+| Module-level functions (`def fx_foo():`) | Lambdas (`lambda x: x + 1`) |
+| Dicts, lists, numpy arrays | Closures (functions defined inside functions) |
+| Class instances (with `__reduce__`) | Instance methods |
+| Strings, numbers | File handles, sockets |
+
+**Impact**: All scene functions referenced in the SCENES table must be defined at module level with `def`. If you use a lambda or closure, you get:
+
+```
+_pickle.PicklingError: Can't pickle <function <lambda> at 0x...>
+```
+
+**Fix**: Define all scene functions at module top level. Lambdas used inside `_render_vf()` as val_fn/hue_fn are fine because they execute within the worker process — they're not pickled across process boundaries.
+
+### macOS spawn vs Linux fork
+
+On macOS, `multiprocessing` defaults to `spawn` (full serialization). On Linux, it defaults to `fork` (copy-on-write). This means:
+
+- **macOS**: Feature arrays are serialized per worker (~57KB for 30s video, but scales with duration). Each worker re-imports the entire module.
+- **Linux**: Feature arrays are shared via COW. Workers inherit the parent's memory.
+
+**Impact**: On macOS, module-level code (like `detect_hardware()`) runs in every worker process. If it has side effects (e.g., subprocess calls), those happen N+1 times.
+
+### Per-Worker State Isolation
+
+Each worker creates its own:
+- `Renderer` instance (with fresh grid cache)
+- `FeedbackBuffer` (feedback doesn't cross scene boundaries)
+- Random seed (`random.seed(hash(seg_id) + 42)`)
+
+This means:
+- Particle state doesn't carry between scenes (expected)
+- Feedback trails reset at scene cuts (expected)
+- `np.random` state is NOT seeded by `random.seed()` — they use separate RNGs
+
+**Fix for deterministic noise**: Use `np.random.RandomState(seed)` explicitly:
+
+```python
+rng = np.random.RandomState(hash(seg_id) + 42)
+noise = rng.random((rows, cols))
+```
+
+---
+
+## Brightness Issues
+
+### Dark Scenes After Tonemap
+
+If a scene is still dark after tonemap, check:
+
+1. **Gamma too high**: Lower gamma (0.5-0.6) for scenes with destructive post-processing
+2. **Shader destroying brightness**: Solarize, posterize, or contrast adjustments in the shader chain can undo tonemap's work. Move destructive shaders earlier in the chain, or increase gamma to compensate.
+3. **Feedback with multiply**: Multiply feedback darkens every frame. Switch to screen or add.
+4. **Overlay blend in scene**: If the scene function uses `blend_canvas(..., "overlay", ...)` with dark layers, switch to screen.
+
+### Diagnostic: Test-Frame Brightness
+
+```bash
+python reel.py --test-frame 10.0
+# Output: Mean brightness: 44.3, max: 255
+```
+
+If mean < 20, the scene needs attention. Common fixes:
+- Lower gamma in the SCENES entry
+- Change internal blend modes from overlay/multiply to screen/add
+- Increase value field multipliers (e.g., `vf_plasma(...) * 1.5`)
+- Check that the shader chain doesn't have an aggressive solarize or threshold
+
+### v1 Brightness Pattern (Deprecated)
+
+The old pattern used a linear multiplier:
+
+```python
+# OLD — don't use
+canvas = np.clip(canvas.astype(np.float32) * 2.0, 0, 255).astype(np.uint8)
+```
+
+This fails because:
+- Dark scenes (mean 8): `8 * 2.0 = 16` — still dark
+- Bright scenes (mean 130): `130 * 2.0 = 255` — clipped, lost detail
+
+Use `tonemap()` instead. See `composition.md` § Adaptive Tone Mapping.
+
+---
+
+## ffmpeg Issues
+
+### Pipe Deadlock
+
+The #1 production bug. If you use `stderr=subprocess.PIPE`:
+
+```python
+# DEADLOCK — stderr buffer fills at 64KB, blocks ffmpeg, blocks your writes
+pipe = subprocess.Popen(cmd, stdin=subprocess.PIPE, stderr=subprocess.PIPE)
+```
+
+**Fix**: Always redirect stderr to a file:
+
+```python
+stderr_fh = open(err_path, "w")
+pipe = subprocess.Popen(cmd, stdin=subprocess.PIPE,
+                        stdout=subprocess.DEVNULL, stderr=stderr_fh)
+```
+
+### Frame Count Mismatch
+
+If the number of frames written to the pipe doesn't match what ffmpeg expects (based on `-r` and duration), the output may have:
+- Missing frames at the end
+- Incorrect duration
+- Audio-video desync
+
+**Fix**: Calculate frame count explicitly: `n_frames = int(duration * FPS)`. Don't use `range(int(start*FPS), int(end*FPS))` without verifying the total matches.
+
+### Concat Fails with "unsafe file name"
+
+```
+[concat @ ...] Unsafe file name
+```
+
+**Fix**: Always use `-safe 0`:
+```python
+["ffmpeg", "-f", "concat", "-safe", "0", "-i", concat_path, ...]
+```
+
+---
+
+## Font Issues
+
+### Cell Height (macOS Pillow)
+
+`textbbox()` and `getbbox()` return incorrect heights on some macOS Pillow versions. Use `getmetrics()`:
+
+```python
+ascent, descent = font.getmetrics()
+cell_height = ascent + descent  # correct
+# NOT: font.getbbox("M")[3]  # wrong on some versions
+```
+
+### Missing Unicode Glyphs
+
+Not all fonts render all Unicode characters. If a palette character isn't in the font, the glyph renders as a blank or tofu box, appearing as a dark hole in the output.
+
+**Fix**: Validate at init:
+
+```python
+all_chars = set()
+for pal in [PAL_DEFAULT, PAL_DENSE, PAL_RUNE, ...]:
+    all_chars.update(pal)
+
+valid_chars = set()
+for c in all_chars:
+    if c == " ":
+        valid_chars.add(c)
+        continue
+    img = Image.new("L", (20, 20), 0)
+    ImageDraw.Draw(img).text((0, 0), c, fill=255, font=font)
+    if np.array(img).max() > 0:
+        valid_chars.add(c)
+    else:
+        log(f"WARNING: '{c}' (U+{ord(c):04X}) missing from font")
+```
+
+### Platform Font Paths
+
+| Platform | Common Paths |
+|----------|-------------|
+| macOS | `/System/Library/Fonts/Menlo.ttc`, `/System/Library/Fonts/Monaco.ttf` |
+| Linux | `/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf` |
+| Windows | `C:\Windows\Fonts\consola.ttf` (Consolas) |
+
+Always probe multiple paths and fall back gracefully. See `architecture.md` § Font Selection.
+
+---
+
+## Performance
+
+### Slow Shaders
+
+Some shaders use Python loops and are very slow at 1080p:
+
+| Shader | Issue | Fix |
+|--------|-------|-----|
+| `wave_distort` | Per-row Python loop | Use vectorized fancy indexing |
+| `halftone` | Triple-nested loop | Vectorize with block reduction |
+| `matrix rain` | Per-column per-trail loop | Accumulate index arrays, bulk assign |
+
+### Render Time Scaling
+
+If render is taking much longer than expected:
+1. Check grid count — each extra grid adds ~100-150ms/frame for init
+2. Check particle count — cap at quality-appropriate limits
+3. Check shader count — each shader adds 2-25ms
+4. Check for accidental Python loops in effects (should be numpy only)
+
+---
+
+## Common Mistakes
+
+### Using `r.S` vs the `S` Parameter
+
+The v2 scene protocol passes `S` (the state dict) as an explicit parameter. But `S` IS `r.S` — they're the same object. Both work:
+
+```python
+def fx_scene(r, f, t, S):
+    S["counter"] = S.get("counter", 0) + 1   # via parameter (preferred)
+    r.S["counter"] = r.S.get("counter", 0) + 1  # via renderer (also works)
+```
+
+Use the `S` parameter for clarity. The explicit parameter makes it obvious that the function has persistent state.
+
+### Forgetting to Handle Empty Feature Values
+
+Audio features default to 0.0 if the audio is silent. Use `.get()` with sensible defaults:
+
+```python
+energy = f.get("bass", 0.3)  # default to 0.3, not 0
+```
+
+If you default to 0, effects go blank during silence.
+
+### Writing New Files Instead of Editing Existing State
+
+A common bug in particle systems: creating new arrays every frame instead of updating persistent state.
+
+```python
+# WRONG — particles reset every frame
+S["px"] = []
+for _ in range(100):
+    S["px"].append(random.random())
+
+# RIGHT — only initialize once, update each frame
+if "px" not in S:
+    S["px"] = []
+# ... emit new particles based on beats
+# ... update existing particles
+```
+
+### Not Clipping Value Fields
+
+Value fields should be [0, 1]. If they exceed this range, `val2char()` produces index errors:
+
+```python
+# WRONG — vf_plasma() * 1.5 can exceed 1.0
+val = vf_plasma(g, f, t, S) * 1.5
+
+# RIGHT — clip after scaling
+val = np.clip(vf_plasma(g, f, t, S) * 1.5, 0, 1)
+```
+
+The `_render_vf()` helper clips automatically, but if you're building custom scenes, clip explicitly.
+
+## Brightness Best Practices
+
+- Dense animated backgrounds — never flat black, always fill the grid
+- Vignette minimum clamped to 0.15 (not 0.12)
+- Bloom threshold 130 (not 170) so more pixels contribute to glow
+- Use `screen` blend mode (not `overlay`) for dark ASCII layers — overlay squares dark values: `2 * 0.12 * 0.12 = 0.03`
+- FeedbackBuffer decay minimum 0.5 — below that, feedback disappears too fast to see
+- Value field floor: `vf * 0.8 + 0.05` ensures no cell is truly zero
+- Per-scene gamma overrides: default 0.75, solarize 0.55, posterize 0.50, bright scenes 0.85
+- Test frames early: render single frames at key timestamps before committing to full render
+
+**Quick checklist before full render:**
+1. Render 3 test frames (start, middle, end)
+2. Check `canvas.mean() > 8` after tonemap
+3. Check no scene is visually flat black
+4. Verify per-section variation (different bg/palette/color per scene)
+5. Confirm shader chain includes bloom (threshold 130)
+6. Confirm vignette strength ≤ 0.25

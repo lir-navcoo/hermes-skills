@@ -1,1 +1,122 @@
-IyBSZXdhcmQgTW9kZWxpbmcKCkd1aWRlIHRvIHRyYWluaW5nIHJld2FyZCBtb2RlbHMgd2l0aCBUUkwgZm9yIFJMSEYgcGlwZWxpbmVzLgoKIyMgT3ZlcnZpZXcKClJld2FyZCBtb2RlbHMgc2NvcmUgY29tcGxldGlvbnMgYmFzZWQgb24gaHVtYW4gcHJlZmVyZW5jZXMuIFVzZWQgaW46Ci0gUFBPIHRyYWluaW5nIChSTCBmZWVkYmFjaykKLSBHUlBPIG9ubGluZSBSTAotIENvbXBsZXRpb24gcmFua2luZwoKIyMgQmFzaWMgVHJhaW5pbmcKCmBgYHB5dGhvbgpmcm9tIHRyYW5zZm9ybWVycyBpbXBvcnQgQXV0b01vZGVsRm9yU2VxdWVuY2VDbGFzc2lmaWNhdGlvbiwgQXV0b1Rva2VuaXplcgpmcm9tIHRybCBpbXBvcnQgUmV3YXJkVHJhaW5lciwgUmV3YXJkQ29uZmlnCmZyb20gZGF0YXNldHMgaW1wb3J0IGxvYWRfZGF0YXNldAoKIyBMb2FkIG1vZGVsIChudW1fbGFiZWxzPTEgZm9yIHNpbmdsZSByZXdhcmQgc2NvcmUpCm1vZGVsID0gQXV0b01vZGVsRm9yU2VxdWVuY2VDbGFzc2lmaWNhdGlvbi5mcm9tX3ByZXRyYWluZWQoCiAgICAiUXdlbi9Rd2VuMi41LTAuNUItSW5zdHJ1Y3QiLAogICAgbnVtX2xhYmVscz0xCikKdG9rZW5pemVyID0gQXV0b1Rva2VuaXplci5mcm9tX3ByZXRyYWluZWQoIlF3ZW4vUXdlbjIuNS0wLjVCLUluc3RydWN0IikKCiMgTG9hZCBwcmVmZXJlbmNlIGRhdGFzZXQgKGNob3Nlbi9yZWplY3RlZCBwYWlycykKZGF0YXNldCA9IGxvYWRfZGF0YXNldCgidHJsLWxpYi91bHRyYWZlZWRiYWNrX2JpbmFyaXplZCIsIHNwbGl0PSJ0cmFpbiIpCgojIENvbmZpZ3VyZQpjb25maWcgPSBSZXdhcmRDb25maWcoCiAgICBvdXRwdXRfZGlyPSJRd2VuMi41LVJld2FyZCIsCiAgICBwZXJfZGV2aWNlX3RyYWluX2JhdGNoX3NpemU9MiwKICAgIG51bV90cmFpbl9lcG9jaHM9MSwKICAgIGxlYXJuaW5nX3JhdGU9MWUtNQopCgojIFRyYWluCnRyYWluZXIgPSBSZXdhcmRUcmFpbmVyKAogICAgbW9kZWw9bW9kZWwsCiAgICBhcmdzPWNvbmZpZywKICAgIHByb2Nlc3NpbmdfY2xhc3M9dG9rZW5pemVyLAogICAgdHJhaW5fZGF0YXNldD1kYXRhc2V0CikKdHJhaW5lci50cmFpbigpCmBgYAoKIyMgRGF0YXNldCBGb3JtYXQKClJlcXVpcmVkIGZpZWxkczoKYGBganNvbgp7CiAgInByb21wdCI6ICJRdWVzdGlvbiBvciBpbnN0cnVjdGlvbiIsCiAgImNob3NlbiI6ICJCZXR0ZXIgcmVzcG9uc2UiLAogICJyZWplY3RlZCI6ICJXb3JzZSByZXNwb25zZSIKfQpgYGAKCiMjIEJyYWRsZXktVGVycnkgTG9zcwoKRGVmYXVsdCBsb3NzIGZ1bmN0aW9uOgpgYGAKbG9zcyA9IC1sb2coc2lnbW9pZChyZXdhcmRfY2hvc2VuIC0gcmV3YXJkX3JlamVjdGVkKSkKYGBgCgpMZWFybnMgdG8gc2NvcmUgY2hvc2VuID4gcmVqZWN0ZWQuCgojIyBVc2luZyBSZXdhcmQgTW9kZWxzCgojIyMgSW5mZXJlbmNlCgpgYGBweXRob24KZnJvbSB0cmFuc2Zvcm1lcnMgaW1wb3J0IHBpcGVsaW5lCgojIExvYWQgdHJhaW5lZCByZXdhcmQgbW9kZWwKcmV3YXJkX3BpcGUgPSBwaXBlbGluZSgidGV4dC1jbGFzc2lmaWNhdGlvbiIsIG1vZGVsPSJRd2VuMi41LVJld2FyZCIpCgojIFNjb3JlIGNvbXBsZXRpb25zCnRleHRzID0gWyJHb29kIGFuc3dlciIsICJCYWQgYW5zd2VyIl0Kc2NvcmVzID0gcmV3YXJkX3BpcGUodGV4dHMpCnByaW50KHNjb3JlcykgICMgSGlnaGVyIHNjb3JlID0gYmV0dGVyCmBgYAoKIyMjIEluIFBQTwoKYGBgcHl0aG9uCmZyb20gdHJsIGltcG9ydCBQUE9UcmFpbmVyLCBQUE9Db25maWcKCmNvbmZpZyA9IFBQT0NvbmZpZygKICAgIHJld2FyZF9tb2RlbF9wYXRoPSJRd2VuMi41LVJld2FyZCIgICMgVXNlIHRyYWluZWQgcmV3YXJkIG1vZGVsCikKCnRyYWluZXIgPSBQUE9UcmFpbmVyKAogICAgbW9kZWw9cG9saWN5X21vZGVsLAogICAgY29uZmlnPWNvbmZpZywKICAgICMgUmV3YXJkIG1vZGVsIGxvYWRlZCBhdXRvbWF0aWNhbGx5CikKYGBgCgojIyBIeXBlcnBhcmFtZXRlcnMKCnwgTW9kZWwgU2l6ZSB8IExlYXJuaW5nIFJhdGUgfCBCYXRjaCBTaXplIHwgRXBvY2hzIHwKfC0tLS0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tfC0tLS0tLS0tfAp8IDwxQiB8IDJlLTUgfCA0LTggfCAxLTIgfAp8IDEtN0IgfCAxZS01IHwgMi00IHwgMSB8CnwgNy0xM0IgfCA1ZS02IHwgMS0yIHwgMSB8CgojIyBFdmFsdWF0aW9uCgpDaGVjayByZXdhcmQgc2VwYXJhdGlvbjoKYGBgcHl0aG9uCiMgQ2hvc2VuIHNob3VsZCBzY29yZSBoaWdoZXIgdGhhbiByZWplY3RlZApjaG9zZW5fcmV3YXJkcyA9IG1vZGVsKCoqY2hvc2VuX2lucHV0cykubG9naXRzCnJlamVjdGVkX3Jld2FyZHMgPSBtb2RlbCgqKnJlamVjdGVkX2lucHV0cykubG9naXRzCgphY2N1cmFjeSA9IChjaG9zZW5fcmV3YXJkcyA+IHJlamVjdGVkX3Jld2FyZHMpLmZsb2F0KCkubWVhbigpCnByaW50KGYiQWNjdXJhY3k6IHthY2N1cmFjeTouMiV9IikgICMgVGFyZ2V0OiA+ODAlCmBgYAoKIyMgUmVmZXJlbmNlcwoKLSBJbnN0cnVjdEdQVCBwYXBlcjogaHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzIyMDMuMDIxNTUKLSBUUkwgZG9jczogaHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kb2NzL3RybC9yZXdhcmRfdHJhaW5lcgo=
+# Reward Modeling
+
+Guide to training reward models with TRL for RLHF pipelines.
+
+## Overview
+
+Reward models score completions based on human preferences. Used in:
+- PPO training (RL feedback)
+- GRPO online RL
+- Completion ranking
+
+## Basic Training
+
+```python
+from transformers import AutoModelForSequenceClassification, AutoTokenizer
+from trl import RewardTrainer, RewardConfig
+from datasets import load_dataset
+
+# Load model (num_labels=1 for single reward score)
+model = AutoModelForSequenceClassification.from_pretrained(
+    "Qwen/Qwen2.5-0.5B-Instruct",
+    num_labels=1
+)
+tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen2.5-0.5B-Instruct")
+
+# Load preference dataset (chosen/rejected pairs)
+dataset = load_dataset("trl-lib/ultrafeedback_binarized", split="train")
+
+# Configure
+config = RewardConfig(
+    output_dir="Qwen2.5-Reward",
+    per_device_train_batch_size=2,
+    num_train_epochs=1,
+    learning_rate=1e-5
+)
+
+# Train
+trainer = RewardTrainer(
+    model=model,
+    args=config,
+    processing_class=tokenizer,
+    train_dataset=dataset
+)
+trainer.train()
+```
+
+## Dataset Format
+
+Required fields:
+```json
+{
+  "prompt": "Question or instruction",
+  "chosen": "Better response",
+  "rejected": "Worse response"
+}
+```
+
+## Bradley-Terry Loss
+
+Default loss function:
+```
+loss = -log(sigmoid(reward_chosen - reward_rejected))
+```
+
+Learns to score chosen > rejected.
+
+## Using Reward Models
+
+### Inference
+
+```python
+from transformers import pipeline
+
+# Load trained reward model
+reward_pipe = pipeline("text-classification", model="Qwen2.5-Reward")
+
+# Score completions
+texts = ["Good answer", "Bad answer"]
+scores = reward_pipe(texts)
+print(scores)  # Higher score = better
+```
+
+### In PPO
+
+```python
+from trl import PPOTrainer, PPOConfig
+
+config = PPOConfig(
+    reward_model_path="Qwen2.5-Reward"  # Use trained reward model
+)
+
+trainer = PPOTrainer(
+    model=policy_model,
+    config=config,
+    # Reward model loaded automatically
+)
+```
+
+## Hyperparameters
+
+| Model Size | Learning Rate | Batch Size | Epochs |
+|------------|---------------|------------|--------|
+| <1B | 2e-5 | 4-8 | 1-2 |
+| 1-7B | 1e-5 | 2-4 | 1 |
+| 7-13B | 5e-6 | 1-2 | 1 |
+
+## Evaluation
+
+Check reward separation:
+```python
+# Chosen should score higher than rejected
+chosen_rewards = model(**chosen_inputs).logits
+rejected_rewards = model(**rejected_inputs).logits
+
+accuracy = (chosen_rewards > rejected_rewards).float().mean()
+print(f"Accuracy: {accuracy:.2%}")  # Target: >80%
+```
+
+## References
+
+- InstructGPT paper: https://arxiv.org/abs/2203.02155
+- TRL docs: https://huggingface.co/docs/trl/reward_trainer

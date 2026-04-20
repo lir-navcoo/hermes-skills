@@ -1,1 +1,534 @@
-IyBBQUFJIDIwMjYg57uf5LiATGFUZVjmqKHmnb/kvb/nlKjor7TmmI4gLyBBQUFJIDIwMjYgVW5pZmllZCBMYVRlWCBUZW1wbGF0ZSBHdWlkZQoKPiAqKvCfk50g6YeN6KaB6K+05piOIC8gSW1wb3J0YW50IE5vdGljZSoqOiDmnKzku5PlupPlgJ/liqlDdXJzb3LlnKhBQUFJIDIwMjblrpjmlrnmqKHmnb/ln7rnoYDkuIrmlLnov5vlvpfliLDjgILlpoLmnpzpgYfliLDkuI3mu6HotrPmiJbmnInlhrLnqoHnmoTmg4XlhrXvvIzor7fnp6/mnoHmj5Bpc3N1ZXPjgIIKPiAKPiAqKvCfk50gSW1wb3J0YW50IE5vdGljZSoqOiBUaGlzIHJlcG9zaXRvcnkgaXMgaW1wcm92ZWQgYmFzZWQgb24gdGhlIG9mZmljaWFsIEFBQUkgMjAyNiB0ZW1wbGF0ZSB3aXRoIHRoZSBhc3Npc3RhbmNlIG9mIEN1cnNvci4gSWYgeW91IGVuY291bnRlciBhbnkgaXNzdWVzIG9yIGNvbmZsaWN0cywgcGxlYXNlIGFjdGl2ZWx5IHN1Ym1pdCBpc3N1ZXMuCgpb5Lit5paHXSgj5Lit5paH54mI5pysKSB8IFtFbmdsaXNoXSgjZW5nbGlzaC12ZXJzaW9uKQoKLS0tCgojIyDwn4yQIOWcqOe6v+afpeeciyAvIE9ubGluZSBBY2Nlc3MKCioq8J+TliDlnKjnur/pmIXor7vlkozmtYvor5XmqKHmnb8qKjogW2h0dHBzOi8vY24ub3ZlcmxlYWYuY29tL3JlYWQvd3loY252Y3J0cHl0I2NkNGEwN10oaHR0cHM6Ly9jbi5vdmVybGVhZi5jb20vcmVhZC93eWhjbnZjcnRweXQjY2Q0YTA3KQoKKirwn5OWIE9ubGluZSBWaWV3IGFuZCBUZXN0IFRlbXBsYXRlKio6IFtodHRwczovL2NuLm92ZXJsZWFmLmNvbS9yZWFkL3d5aGNudmNydHB5dCNjZDRhMDddKGh0dHBzOi8vY24ub3ZlcmxlYWYuY29tL3JlYWQvd3loY252Y3J0cHl0I2NkNGEwNykKCvCfkqEgKirmj5DnpLogLyBUaXBzKio6IAotIOS4reaWh++8muaCqOWPr+S7pemAmui/h+S4iui/sOmTvuaOpeWcqE92ZXJsZWFm5Lit55u05o6l5p+l55yL44CB57yW6L6R5ZKM57yW6K+R5qih5p2/77yM5peg6ZyA5pys5Zyw5a6J6KOFTGFUZVjnjq/looMKLSBFbmdsaXNoOiBZb3UgY2FuIHZpZXcsIGVkaXQsIGFuZCBjb21waWxlIHRoZSB0ZW1wbGF0ZSBkaXJlY3RseSBpbiBPdmVybGVhZiB1c2luZyB0aGUgbGluayBhYm92ZSwgd2l0aG91dCBuZWVkaW5nIGEgbG9jYWwgTGFUZVggaW5zdGFsbGF0aW9uCgotLS0KCiMjIOS4reaWh+eJiOacrAoKIyMjIOamgui/sCDinIUKCuaIkeW3sue7j+WwhkFBQUkgMjAyNueahOS4pOS4queJiOacrO+8iOWMv+WQjeaKleeov+eJiOacrOWSjGNhbWVyYS1yZWFkeeeJiOacrO+8iSoq5a6M5pW05ZCI5bm2KirmiJDkuIDkuKrnu5/kuIDnmoTmqKHmnb/mlofku7YgYGFhYWkyMDI2LXVuaWZpZWQtdGVtcGxhdGUudGV4YOOAggoK6K+l5qih5p2/5YyF5ZCr5LqG5Y6f5aeL5Lik5Liq5qih5p2/55qEKirmiYDmnInlrozmlbTlhoXlrrkqKu+8iOWFsTg4NuihjO+8jOavlOWOn+Wni+aWh+S7tuabtOWFqOmdou+8ie+8jOWMheaLrO+8mgotIOaJgOacieagvOW8j+WMluivtOaYjuWSjOimgeaxggotIOWujOaVtOeahOekuuS+i+S7o+eggeWSjOihqOagvAotIOWbvueJh+WkhOeQhuaMh+WNlwotIOWPguiAg+aWh+eMruagvOW8j+imgeaxggotIOaJgOacieeroOiKguWSjOmZhOW9leWGheWuuQotIOeJiOacrOeJueWumueahEFja25vd2xlZGdtZW50c+mDqOWIhgoKIyMjIOS4u+imgeW3ruW8guWIhuaekAoK6YCa6L+H5q+U6L6D5Y6f5aeL55qE5Lik5Liq5qih5p2/77yM5oiR5Y+R546w5Li76KaB5beu5byC5Zyo5LqO77yaCgojIyMjIDEuIOWMheeahOWKoOi9veaWueW8jwotICoq5Yy/5ZCN54mI5pysKio6IGBcdXNlcGFja2FnZVtzdWJtaXNzaW9uXXthYWFpMjAyNn1gCi0gKipDYW1lcmEtcmVhZHnniYjmnKwqKjogYFx1c2VwYWNrYWdle2FhYWkyMDI2fWAKCiMjIyMgMi4g5qCH6aKY5beu5byCCi0gKirljL/lkI3niYjmnKwqKjogIkFBQUkgUHJlc3MgQW5vbnltb3VzIFN1Ym1pc3Npb24gSW5zdHJ1Y3Rpb25zIGZvciBBdXRob3JzIFVzaW5nIExhVGVYIgotICoqQ2FtZXJhLXJlYWR554mI5pysKio6ICJBQUFJIFByZXNzIEZvcm1hdHRpbmcgSW5zdHJ1Y3Rpb25zIGZvciBBdXRob3JzIFVzaW5nIExhVGVYIC0tLSBBIEd1aWRlIgoKIyMjIyAzLiBMaW5rc+eOr+Wig+eahOWkhOeQhgotICoq5Yy/5ZCN54mI5pysKio6IExpbmtz546v5aKD6KKr5rOo6YeK5o6J77yM6Ziy5q2i5rOE6Zyy5L2c6ICF6Lqr5Lu9Ci0gKipDYW1lcmEtcmVhZHnniYjmnKwqKjogTGlua3Pnjq/looPmraPluLjmmL7npLoKCiMjIyMgNC4g5YaF5a656YOo5YiG5beu5byCCi0gKirljL/lkI3niYjmnKwqKjog5YyF5ZCrIlByZXBhcmluZyBhbiBBbm9ueW1vdXMgU3VibWlzc2lvbiLpg6jliIbnmoTnibnmroror7TmmI4KLSAqKkNhbWVyYS1yZWFkeeeJiOacrCoqOiDljIXlkKvlrozmlbTnmoTmoLzlvI/or7TmmI7lkozniYjmnYPkv6Hmga8KCiMjIyDkvp3otZbmlofku7bmo4Dmn6Xnu5PmnpwKCuKchSAqKuW3sumqjOivgeW5tuWkjeWItuWIsOS4u+ebruW9leeahOaWh+S7tioq77yaCgotIGBhYWFpMjAyNi5zdHlgIC0gQUFBSSAyMDI2IOagt+W8j+aWh+S7tu+8iOS4pOS4queJiOacrOWujOWFqOebuOWQjO+8iQotIGBhYWFpMjAyNi5ic3RgIC0g5Y+C6ICD5paH54yu5qC35byP5paH5Lu277yI5Lik5Liq54mI5pys5a6M5YWo55u45ZCM77yJCi0gYGFhYWkyMDI2LmJpYmAgLSDnpLrkvovlj4LogIPmlofnjK7mlofku7YKLSBgZmlndXJlMS5wZGZgIOWSjCBgZmlndXJlMi5wZGZgIC0g56S65L6L5Zu+54mH5paH5Lu2CgrmiYDmnInov5nkupvmlofku7blnKjkuKTkuKrniYjmnKzkuK3pg73mmK/nm7jlkIznmoTvvIzlm6DmraTnu5/kuIDmqKHmnb/lj6/ku6XmraPluLjlt6XkvZzjgIIKCiMjIyDlpoLkvZXkvb/nlKjnu5/kuIDmqKHmnb8KCiMjIyMg5YiH5o2i5Yiw5Yy/5ZCN5oqV56i/54mI5pysCuWcqOaooeadv+aWh+S7tuesrDEx6KGM77yMKirlj5bmtojms6jph4oqKui/meS4gOihjO+8mgpgYGBsYXRleApcZGVmXGFhYWlhbm9ueW1vdXN7dHJ1ZX0KYGBgCgojIyMjIOWIh+aNouWIsENhbWVyYS1yZWFkeeeJiOacrArlnKjmqKHmnb/mlofku7bnrKwxMeihjO+8jCoq5rOo6YeK5o6JKirmiJYqKuWIoOmZpCoq6L+Z5LiA6KGM77yaCmBgYGxhdGV4CiUgXGRlZlxhYWFpYW5vbnltb3Vze3RydWV9CmBgYAoKIyMjIOS4gOmUruWIh+aNoueahOaguOW/g+acuuWItgoK57uf5LiA5qih5p2/5L2/55So5LqGTGFUZVjnmoTmnaHku7bnvJbor5Hlip/og73vvJoKCmBgYGxhdGV4CiUg5p2h5Lu25YyF5Yqg6L29ClxpZmRlZmluZWRcYWFhaWFub255bW91cwogICAgXHVzZXBhY2thZ2Vbc3VibWlzc2lvbl17YWFhaTIwMjZ9ICAlIOWMv+WQjeeJiOacrApcZWxzZQogICAgXHVzZXBhY2thZ2V7YWFhaTIwMjZ9ICAgICAgICAgICAgICAlIENhbWVyYS1yZWFkeeeJiOacrApcZmkKCiUg5p2h5Lu25qCH6aKY6K6+572uClxpZmRlZmluZWRcYWFhaWFub255bW91cwogICAgXHRpdGxle0FBQUkgUHJlc3MgQW5vbnltb3VzIFN1Ym1pc3Npb25cXEluc3RydWN0aW9ucyBmb3IgQXV0aG9ycyBVc2luZyBcTGFUZVh7fX0KXGVsc2UKICAgIFx0aXRsZXtBQUFJIFByZXNzIEZvcm1hdHRpbmcgSW5zdHJ1Y3Rpb25zIFxcZm9yIEF1dGhvcnMgVXNpbmcgXExhVGVYe30gLS0tIEEgR3VpZGV9ClxmaQoKJSDmnaHku7blhoXlrrnmmL7npLoKXGlmZGVmaW5lZFxhYWFpYW5vbnltb3VzCiAgICAlIOWMv+WQjeeJiOacrOeJueacieWGheWuuQpcZWxzZQogICAgJSBDYW1lcmEtcmVhZHnniYjmnKznibnmnInlhoXlrrkKXGZpCmBgYAoKIyMjIOaWh+S7tua4heWNlQoK5Li755uu5b2V546w5Zyo5YyF5ZCr5Lul5LiL5paH5Lu277yaCgotIGBhYWFpMjAyNi11bmlmaWVkLXRlbXBsYXRlLnRleGAgLSDnu5/kuIDkuLvorrrmlofmqKHmnb/mlofku7YKLSBgYWFhaTIwMjYtdW5pZmllZC1zdXBwLnRleGAgLSDnu5/kuIDooaXlhYXmnZDmlpnmqKHmnb/mlofku7YKLSBgYWFhaTIwMjYuc3R5YCAtIEFBQUkgMjAyNiBMYVRlWCDmoLflvI/mlofku7YKLSBgYWFhaTIwMjYuYnN0YCAtIOWPguiAg+aWh+eMruagt+W8j+aWh+S7tiAgCi0gYGFhYWkyMDI2LmJpYmAgLSDnpLrkvovlj4LogIPmlofnjK7mlofku7YKLSBgZmlndXJlMS5wZGZgIC0g56S65L6L5Zu+54mHMQotIGBmaWd1cmUyLnBkZmAgLSDnpLrkvovlm77niYcyCi0gYFJFQURNRS5tZGAgLSDmnKzor7TmmI7mlofmoaMKCiMjIyDooaXlhYXmnZDmlpnmqKHmnb8gKFN1cHBsZW1lbnRhcnkgTWF0ZXJpYWwgVGVtcGxhdGUpCgojIyMjIOamgui/sApgYWFhaTIwMjYtdW5pZmllZC1zdXBwLnRleGAg5piv5LiT6Zeo5Li6QUFBSSAyMDI26KGl5YWF5p2Q5paZ6K6+6K6h55qE57uf5LiA5qih5p2/77yM5LiO5Li76K665paH5qih5p2/5L2/55So55u45ZCM55qE54mI5pys5YiH5o2i5py65Yi244CCCgojIyMjIOS4u+imgeWKn+iDvQotICoq54mI5pys5YiH5o2iKio6IOmAmui/h+S/ruaUueS4gOihjOS7o+eggeWcqOWMv+WQjeaKleeov+WSjGNhbWVyYS1yZWFkeeeJiOacrOmXtOWIh+aNogotICoq6KGl5YWF5YaF5a655pSv5oyBKio6IOaUr+aMgemineWklueahOWunumqjOOAgeaOqOWvvOOAgeaVsOaNruOAgeWbvuihqOOAgeeul+azleetiQotICoq5qC85byP5LiA6Ie05oCnKio6IOS4juS4u+iuuuaWh+aooeadv+S/neaMgeWujOWFqOS4gOiHtOeahOagvOW8j+imgeaxggotICoq5Luj56CB56S65L6LKio6IOWMheWQq+eul+azleOAgeS7o+eggeWIl+ihqOetieihpeWFheadkOaWmeeahOekuuS+iwoKIyMjIyDkvb/nlKjmlrnms5UK5LiO5Li76K665paH5qih5p2/55u45ZCM77yM5Y+q6ZyA5L+u5pS556ysMTHooYzvvJoKYGBgbGF0ZXgKJSDljL/lkI3mipXnqL/niYjmnKwKXGRlZlxhYWFpYW5vbnltb3Vze3RydWV9CgolIENhbWVyYS1yZWFkeeeJiOacrCAgCiUgXGRlZlxhYWFpYW5vbnltb3Vze3RydWV9CmBgYAoKIyMjIyDooaXlhYXmnZDmlpnlhoXlrrnlu7rorq4KLSDpop3lpJbnmoTlrp7pqoznu5Pmnpzlkozmtojono3noJTnqbYKLSDor6bnu4bnmoTmlbDlrabmjqjlr7zlkozor4HmmI4KLSDmm7TlpJrnmoTlm77ooajlkozlj6/op4bljJYKLSDnrpfms5XkvKrku6PnoIHlkozlrp7njrDnu4boioIKLSDmlbDmja7pm4bmj4/ov7DlkozpooTlpITnkIbmraXpqqQKLSDotoXlj4LmlbDorr7nva7lkozlrp7pqozphY3nva4KLSDlpLHotKXmoYjkvovliIbmnpAKLSDorqHnrpflpI3mnYLluqbliIbmnpAKCiMjIyDkvb/nlKjmo4Dmn6XmuIXljZUgKFVzYWdlIENoZWNrbGlzdCkKCiMjIyMg8J+TiyDmipXnqL/liY3mo4Dmn6XmuIXljZUgKFByZS1TdWJtaXNzaW9uIENoZWNrbGlzdCkKCioq54mI5pys6K6+572uKio6Ci0gWyBdIOW3suiuvue9riBgXGRlZlxhYWFpYW5vbnltb3Vze3RydWV9YCAo5Yy/5ZCN5oqV56i/KQotIFsgXSDlt7Lms6jph4rmjonmiYDmnInlj6/og73mmrTpnLLouqvku73nmoTkv6Hmga8KLSBbIF0g5bey5Yy/5ZCN5YyW5Y+C6ICD5paH54yu77yI56e76Zmk5L2c6ICF5aeT5ZCN77yJCgoqKuWGheWuueWujOaVtOaApyoqOgotIFsgXSDmoIfpopjjgIHmkZjopoHjgIHlhbPplK7or43lt7LloavlhpkKLSBbIF0g5omA5pyJ56ug6IqC5YaF5a655a6M5pW0Ci0gWyBdIOWbvuihqOe8luWPt+i/nue7reS4lOato+ehrgotIFsgXSDlj4LogIPmlofnjK7moLzlvI/mraPnoa4KLSBbIF0g6KGl5YWF5p2Q5paZ77yI5aaC5pyJ77yJ5bey5YeG5aSHCgoqKuagvOW8j+ajgOafpSoqOgotIFsgXSDpobXpnaLovrnot53nrKblkIjopoHmsYIKLSBbIF0g5a2X5L2T5ZKM5a2X5Y+35q2j56GuCi0gWyBdIOihjOmXtOi3neespuWQiOagh+WHhgotIFsgXSDlm77ooajkvY3nva7lkozlpKflsI/lkIjpgIIKLSBbIF0g5pWw5a2m5YWs5byP5qC85byP5q2j56GuCgoqKuaKgOacr+ajgOafpSoqOgotIFsgXSBMYVRlWOe8luivkeaXoOmUmeivrwotIFsgXSDlj4LogIPmlofnjK7mraPnoa7nlJ/miJAKLSBbIF0gUERG6L6T5Ye65q2j5bi4Ci0gWyBdIOaWh+S7tuWkp+Wwj+WcqOmZkOWItuiMg+WbtOWGhQoKIyMjIyDwn5OLIOW9leeUqOWQjuajgOafpea4heWNlSAoUG9zdC1BY2NlcHRhbmNlIENoZWNrbGlzdCkKCioq54mI5pys5YiH5o2iKio6Ci0gWyBdIOW3suazqOmHiuaOiSBgXGRlZlxhYWFpYW5vbnltb3Vze3RydWV9YCAoY2FtZXJhLXJlYWR5KQotIFsgXSDlt7Lmt7vliqDlrozmlbTnmoTkvZzogIXkv6Hmga8KLSBbIF0g5bey5re75Yqg5omA5pyJ5L2c6ICF5Y2V5L2N5L+h5oGvCi0gWyBdIOW3suaBouWkjeaJgOacieiiq+azqOmHiueahOWGheWuuQoKKirlhoXlrrnmm7TmlrAqKjoKLSBbIF0g5bey5qC55o2u5a6h56i/5oSP6KeB5L+u5pS55YaF5a65Ci0gWyBdIOW3suabtOaWsOaJgOacieWbvuihqOWSjOWunumqjAotIFsgXSDlt7LlrozlloTooaXlhYXmnZDmlpkKLSBbIF0g5bey5qOA5p+l5omA5pyJ6ZO+5o6l5ZKM5byV55SoCgoqKuacgOe7iOajgOafpSoqOgotIFsgXSDmnIDnu4hQREbotKjph4/mo4Dmn6UKLSBbIF0g5omA5pyJ5paH5Lu25bey5aSH5Lu9Ci0gWyBdIOespuWQiOS8muiuruacgOe7iOaPkOS6pOimgeaxggotIFsgXSDooaXlhYXmnZDmlpnlt7LljZXni6zmj5DkuqTvvIjlpoLpnIDopoHvvIkKCiMjIyMg8J+TiyDooaXlhYXmnZDmlpnmo4Dmn6XmuIXljZUgKFN1cHBsZW1lbnRhcnkgTWF0ZXJpYWwgQ2hlY2tsaXN0KQoKKirlhoXlrrnnu4Tnu4cqKjoKLSBbIF0g6KGl5YWF5p2Q5paZ5LiO5Li76K665paH5YaF5a655a+55bqUCi0gWyBdIOeroOiKgue7k+aehOa4heaZsOWQiOeQhgotIFsgXSDlm77ooajnvJblj7fkuI7kuLvorrrmlofkuI3lhrLnqoEKLSBbIF0g5Y+C6ICD5paH54yu5qC85byP5LiA6Ie0CgoqKuaKgOacr+e7huiKgioqOgotIFsgXSDnrpfms5XkvKrku6PnoIHmuIXmmbDlrozmlbQKLSBbIF0g5a6e6aqM6K6+572u6K+m57uG6K+05piOCi0gWyBdIOaVsOaNrumihOWkhOeQhuatpemqpOaYjuehrgotIFsgXSDotoXlj4LmlbDphY3nva7lrozmlbQKCioq5qC85byP6KaB5rGCKio6Ci0gWyBdIOS9v+eUqOe7n+S4gOeahHN1cHDmqKHmnb8KLSBbIF0g6aG16Z2i6K6+572u5LiO5Li76K665paH5LiA6Ie0Ci0gWyBdIOWtl+S9k+WSjOagvOW8j+espuWQiOimgeaxggotIFsgXSDmlofku7blpKflsI/lnKjpmZDliLbojIPlm7TlhoUKCiMjIyDlrp7pmYXkvb/nlKjlu7rorq4KCjEuICoq5oqV56i/6Zi25q61Kio6IAogICAtIOWPlua2iOazqOmHiiBgXGRlZlxhYWFpYW5vbnltb3Vze3RydWV9YCAKICAgLSDnoa7kv53kuI3ljIXlkKvku7vkvZXlj6/og73mmrTpnLLouqvku73nmoTkv6Hmga8KICAgLSDmo4Dmn6Xlj4LogIPmlofnjK7mmK/lkKblt7LljL/lkI3ljJYKCjIuICoq5b2V55So5ZCO5YeG5aSHZmluYWzniYjmnKwqKjoKICAgLSDms6jph4rmjonmiJbliKDpmaQgYFxkZWZcYWFhaWFub255bW91c3t0cnVlfWAg6L+Z5LiA6KGMCiAgIC0g5re75Yqg5a6M5pW055qE5L2c6ICF5L+h5oGv5ZKMYWZmaWxpYXRpb25zCiAgIC0g5Y+W5raI5rOo6YeKbGlua3Pnjq/looPvvIjlpoLmnpzpnIDopoHvvIkKCjMuICoq57yW6K+R5rWL6K+VKio6CiAgIC0g5YiG5Yir5Zyo5Lik56eN5qih5byP5LiL57yW6K+R77yM56Gu5L+d6YO96IO95q2j5bi45bel5L2cCiAgIC0g5qOA5p+l6L6T5Ye655qEUERG5piv5ZCm56ym5ZCI6KaB5rGCCiAgIC0g6aqM6K+B5Y+C6ICD5paH54yu5qC85byP5piv5ZCm5q2j56GuCgo0LiAqKuS+nei1luaWh+S7tuehruiupCoqOgogICAtIOehruS/neaJgOacieS+nei1luaWh+S7tumDveWcqOWQjOS4gOebruW9leS4iwogICAtIOWmguaenOenu+WKqOaooeadv+aWh+S7tu+8jOiusOW+l+WQjOaXtuenu+WKqOS+nei1luaWh+S7tgoKIyMjIOmHjeimgeazqOaEj+S6i+mhuQoK4pqg77iPICoq5YWz5LqOQmlibGlvZ3JhcGh5IFN0eWxlKio6Ci0gYGFhYWkyMDI2LnN0eWDmlofku7blt7Lnu4/oh6rliqjorr7nva7kuoZgXGJpYmxpb2dyYXBoeXN0eWxle2FhYWkyMDI2fWAKLSAqKuS4jeimgSoq5Zyo5paH5qGj5Lit5YaN5qyh5re75YqgYFxiaWJsaW9ncmFwaHlzdHlsZXthYWFpMjAyNn1g5ZG95LukCi0g5ZCm5YiZ5Lya5Ye6546wImBJbGxlZ2FsLCBhbm90aGVyIFxiaWJzdHlsZSBjb21tYW5kYCLplJnor68KLSDlj6rpnIDopoHkvb/nlKhgXGJpYmxpb2dyYXBoeXthYWFpMjAyNn1g5ZG95Luk5Y2z5Y+vCgojIyMg57yW6K+R5ZG95Luk56S65L6LCgpgYGBiYXNoCiMg57yW6K+RTGFUZVjmlofmoaMKcGRmbGF0ZXggYWFhaTIwMjYtdW5pZmllZC10ZW1wbGF0ZS50ZXgKYmlidGV4IGFhYWkyMDI2LXVuaWZpZWQtdGVtcGxhdGUKcGRmbGF0ZXggYWFhaTIwMjYtdW5pZmllZC10ZW1wbGF0ZS50ZXgKcGRmbGF0ZXggYWFhaTIwMjYtdW5pZmllZC10ZW1wbGF0ZS50ZXgKYGBgCgojIyMg5bi46KeB6Zeu6aKY6Kej5YazCgojIyMjIDEuICJJbGxlZ2FsLCBhbm90aGVyIFxiaWJzdHlsZSBjb21tYW5kIumUmeivrwoqKuWOn+WboCoqOiDph43lpI3orr7nva7kuoZiaWJsaW9ncmFwaHkgc3R5bGUgIAoqKuino+WGs+aWueahiCoqOiDliKDpmaTmlofmoaPkuK3nmoRgXGJpYmxpb2dyYXBoeXN0eWxle2FhYWkyMDI2fWDlkb3ku6TvvIxgYWFhaTIwMjYuc3R5YOS8muiHquWKqOWkhOeQhgoKIyMjIyAyLiDlj4LogIPmlofnjK7moLzlvI/kuI3mraPnoa4KKirljp/lm6AqKjog5Y+v6IO957y65bCRbmF0Ymli5YyF5oiW6ICFQmliVGVY5paH5Lu26Zeu6aKYICAKKirop6PlhrPmlrnmoYgqKjog56Gu5L+d5oyJ54Wn5qCH5YeG55qETGFUZVjnvJbor5HmtYHnqIvvvJpwZGZsYXRleCDihpIgYmlidGV4IOKGkiBwZGZsYXRleCDihpIgcGRmbGF0ZXgKCi0tLQoKIyMgRW5nbGlzaCBWZXJzaW9uCgojIyMgT3ZlcnZpZXcg4pyFCgpJIGhhdmUgKipjb21wbGV0ZWx5IG1lcmdlZCoqIHRoZSB0d28gQUFBSSAyMDI2IHZlcnNpb25zIChhbm9ueW1vdXMgc3VibWlzc2lvbiBhbmQgY2FtZXJhLXJlYWR5KSBpbnRvIGEgc2luZ2xlIHVuaWZpZWQgdGVtcGxhdGUgZmlsZSBgYWFhaTIwMjYtdW5pZmllZC10ZW1wbGF0ZS50ZXhgLgoKVGhpcyB0ZW1wbGF0ZSBjb250YWlucyAqKmFsbCBjb21wbGV0ZSBjb250ZW50KiogZnJvbSBib3RoIG9yaWdpbmFsIHRlbXBsYXRlcyAoODg2IGxpbmVzIHRvdGFsLCBtb3JlIGNvbXByZWhlbnNpdmUgdGhhbiB0aGUgb3JpZ2luYWwgZmlsZXMpLCBpbmNsdWRpbmc6Ci0gQWxsIGZvcm1hdHRpbmcgaW5zdHJ1Y3Rpb25zIGFuZCByZXF1aXJlbWVudHMKLSBDb21wbGV0ZSBleGFtcGxlIGNvZGVzIGFuZCB0YWJsZXMKLSBJbWFnZSBwcm9jZXNzaW5nIGd1aWRlbGluZXMKLSBSZWZlcmVuY2UgZm9ybWF0dGluZyByZXF1aXJlbWVudHMKLSBBbGwgc2VjdGlvbnMgYW5kIGFwcGVuZGl4IGNvbnRlbnQKLSBWZXJzaW9uLXNwZWNpZmljIEFja25vd2xlZGdtZW50cyBzZWN0aW9ucwoKIyMjIEtleSBEaWZmZXJlbmNlcyBBbmFseXNpcwoKQnkgY29tcGFyaW5nIHRoZSB0d28gb3JpZ2luYWwgdGVtcGxhdGVzLCB0aGUgbWFpbiBkaWZmZXJlbmNlcyBhcmU6CgojIyMjIDEuIFBhY2thZ2UgTG9hZGluZyBNZXRob2QKLSAqKkFub255bW91cyB2ZXJzaW9uKio6IGBcdXNlcGFja2FnZVtzdWJtaXNzaW9uXXthYWFpMjAyNn1gCi0gKipDYW1lcmEtcmVhZHkgdmVyc2lvbioqOiBgXHVzZXBhY2thZ2V7YWFhaTIwMjZ9YAoKIyMjIyAyLiBUaXRsZSBEaWZmZXJlbmNlcwotICoqQW5vbnltb3VzIHZlcnNpb24qKjogIkFBQUkgUHJlc3MgQW5vbnltb3VzIFN1Ym1pc3Npb24gSW5zdHJ1Y3Rpb25zIGZvciBBdXRob3JzIFVzaW5nIExhVGVYIgotICoqQ2FtZXJhLXJlYWR5IHZlcnNpb24qKjogIkFBQUkgUHJlc3MgRm9ybWF0dGluZyBJbnN0cnVjdGlvbnMgZm9yIEF1dGhvcnMgVXNpbmcgTGFUZVggLS0tIEEgR3VpZGUiCgojIyMjIDMuIExpbmtzIEVudmlyb25tZW50IEhhbmRsaW5nCi0gKipBbm9ueW1vdXMgdmVyc2lvbioqOiBMaW5rcyBlbnZpcm9ubWVudCBjb21tZW50ZWQgb3V0IHRvIHByZXZlbnQgaWRlbnRpdHkgZGlzY2xvc3VyZQotICoqQ2FtZXJhLXJlYWR5IHZlcnNpb24qKjogTGlua3MgZW52aXJvbm1lbnQgZGlzcGxheWVkIG5vcm1hbGx5CgojIyMjIDQuIENvbnRlbnQgU2VjdGlvbiBEaWZmZXJlbmNlcwotICoqQW5vbnltb3VzIHZlcnNpb24qKjogQ29udGFpbnMgc3BlY2lhbCBpbnN0cnVjdGlvbnMgaW4gIlByZXBhcmluZyBhbiBBbm9ueW1vdXMgU3VibWlzc2lvbiIgc2VjdGlvbgotICoqQ2FtZXJhLXJlYWR5IHZlcnNpb24qKjogQ29udGFpbnMgY29tcGxldGUgZm9ybWF0dGluZyBpbnN0cnVjdGlvbnMgYW5kIGNvcHlyaWdodCBpbmZvcm1hdGlvbgoKIyMjIERlcGVuZGVuY3kgRmlsZXMgVmVyaWZpY2F0aW9uCgrinIUgKipGaWxlcyB2ZXJpZmllZCBhbmQgY29waWVkIHRvIG1haW4gZGlyZWN0b3J5Kio6CgotIGBhYWFpMjAyNi5zdHlgIC0gQUFBSSAyMDI2IHN0eWxlIGZpbGUgKGlkZW50aWNhbCBpbiBib3RoIHZlcnNpb25zKQotIGBhYWFpMjAyNi5ic3RgIC0gQmlibGlvZ3JhcGh5IHN0eWxlIGZpbGUgKGlkZW50aWNhbCBpbiBib3RoIHZlcnNpb25zKQotIGBhYWFpMjAyNi5iaWJgIC0gU2FtcGxlIGJpYmxpb2dyYXBoeSBmaWxlCi0gYGZpZ3VyZTEucGRmYCBhbmQgYGZpZ3VyZTIucGRmYCAtIFNhbXBsZSBpbWFnZSBmaWxlcwoKQWxsIHRoZXNlIGZpbGVzIGFyZSBpZGVudGljYWwgaW4gYm90aCB2ZXJzaW9ucywgc28gdGhlIHVuaWZpZWQgdGVtcGxhdGUgd29ya3MgcHJvcGVybHkuCgojIyMgSG93IHRvIFVzZSB0aGUgVW5pZmllZCBUZW1wbGF0ZQoKIyMjIyBTd2l0Y2ggdG8gQW5vbnltb3VzIFN1Ym1pc3Npb24gVmVyc2lvbgpPbiBsaW5lIDExIG9mIHRoZSB0ZW1wbGF0ZSBmaWxlLCAqKnVuY29tbWVudCoqIHRoaXMgbGluZToKYGBgbGF0ZXgKXGRlZlxhYWFpYW5vbnltb3Vze3RydWV9CmBgYAoKIyMjIyBTd2l0Y2ggdG8gQ2FtZXJhLXJlYWR5IFZlcnNpb24KT24gbGluZSAxMSBvZiB0aGUgdGVtcGxhdGUgZmlsZSwgKipjb21tZW50IG91dCoqIG9yICoqZGVsZXRlKiogdGhpcyBsaW5lOgpgYGBsYXRleAolIFxkZWZcYWFhaWFub255bW91c3t0cnVlfQpgYGAKCiMjIyBDb3JlIE1lY2hhbmlzbSBvZiBPbmUtQ2xpY2sgU3dpdGNoaW5nCgpUaGUgdW5pZmllZCB0ZW1wbGF0ZSB1c2VzIExhVGVYIGNvbmRpdGlvbmFsIGNvbXBpbGF0aW9uOgoKYGBgbGF0ZXgKJSBDb25kaXRpb25hbCBwYWNrYWdlIGxvYWRpbmcKXGlmZGVmaW5lZFxhYWFpYW5vbnltb3VzCiAgICBcdXNlcGFja2FnZVtzdWJtaXNzaW9uXXthYWFpMjAyNn0gICUgQW5vbnltb3VzIHZlcnNpb24KXGVsc2UKICAgIFx1c2VwYWNrYWdle2FhYWkyMDI2fSAgICAgICAgICAgICAgJSBDYW1lcmEtcmVhZHkgdmVyc2lvbgpcZmkKCiUgQ29uZGl0aW9uYWwgdGl0bGUgc2V0dGluZwpcaWZkZWZpbmVkXGFhYWlhbm9ueW1vdXMKICAgIFx0aXRsZXtBQUFJIFByZXNzIEFub255bW91cyBTdWJtaXNzaW9uXFxJbnN0cnVjdGlvbnMgZm9yIEF1dGhvcnMgVXNpbmcgXExhVGVYe319ClxlbHNlCiAgICBcdGl0bGV7QUFBSSBQcmVzcyBGb3JtYXR0aW5nIEluc3RydWN0aW9ucyBcXGZvciBBdXRob3JzIFVzaW5nIFxMYVRlWHt9IC0tLSBBIEd1aWRlfQpcZmkKCiUgQ29uZGl0aW9uYWwgY29udGVudCBkaXNwbGF5ClxpZmRlZmluZWRcYWFhaWFub255bW91cwogICAgJSBBbm9ueW1vdXMgdmVyc2lvbiBzcGVjaWZpYyBjb250ZW50ClxlbHNlCiAgICAlIENhbWVyYS1yZWFkeSB2ZXJzaW9uIHNwZWNpZmljIGNvbnRlbnQKXGZpCmBgYAoKIyMjIEZpbGUgTGlzdAoKVGhlIG1haW4gZGlyZWN0b3J5IG5vdyBjb250YWlucyB0aGUgZm9sbG93aW5nIGZpbGVzOgoKLSBgYWFhaTIwMjYtdW5pZmllZC10ZW1wbGF0ZS50ZXhgIC0gVW5pZmllZCBtYWluIHBhcGVyIHRlbXBsYXRlIGZpbGUKLSBgYWFhaTIwMjYtdW5pZmllZC1zdXBwLnRleGAgLSBVbmlmaWVkIHN1cHBsZW1lbnRhcnkgbWF0ZXJpYWwgdGVtcGxhdGUgZmlsZQotIGBhYWFpMjAyNi5zdHlgIC0gQUFBSSAyMDI2IExhVGVYIHN0eWxlIGZpbGUKLSBgYWFhaTIwMjYuYnN0YCAtIEJpYmxpb2dyYXBoeSBzdHlsZSBmaWxlCi0gYGFhYWkyMDI2LmJpYmAgLSBTYW1wbGUgYmlibGlvZ3JhcGh5IGZpbGUKLSBgZmlndXJlMS5wZGZgIC0gU2FtcGxlIGltYWdlIDEKLSBgZmlndXJlMi5wZGZgIC0gU2FtcGxlIGltYWdlIDIKLSBgUkVBRE1FLm1kYCAtIFRoaXMgZG9jdW1lbnRhdGlvbgoKIyMjIFN1cHBsZW1lbnRhcnkgTWF0ZXJpYWwgVGVtcGxhdGUKCiMjIyMgT3ZlcnZpZXcKYGFhYWkyMDI2LXVuaWZpZWQtc3VwcC50ZXhgIGlzIGEgdW5pZmllZCB0ZW1wbGF0ZSBzcGVjaWZpY2FsbHkgZGVzaWduZWQgZm9yIEFBQUkgMjAyNiBzdXBwbGVtZW50YXJ5IG1hdGVyaWFscywgdXNpbmcgdGhlIHNhbWUgdmVyc2lvbiBzd2l0Y2hpbmcgbWVjaGFuaXNtIGFzIHRoZSBtYWluIHBhcGVyIHRlbXBsYXRlLgoKIyMjIyBLZXkgRmVhdHVyZXMKLSAqKlZlcnNpb24gU3dpdGNoaW5nKio6IFN3aXRjaCBiZXR3ZWVuIGFub255bW91cyBzdWJtaXNzaW9uIGFuZCBjYW1lcmEtcmVhZHkgdmVyc2lvbnMgYnkgbW9kaWZ5aW5nIG9uZSBsaW5lIG9mIGNvZGUKLSAqKlN1cHBsZW1lbnRhcnkgQ29udGVudCBTdXBwb3J0Kio6IFN1cHBvcnRzIGFkZGl0aW9uYWwgZXhwZXJpbWVudHMsIGRlcml2YXRpb25zLCBkYXRhLCBmaWd1cmVzLCBhbGdvcml0aG1zLCBldGMuCi0gKipGb3JtYXQgQ29uc2lzdGVuY3kqKjogTWFpbnRhaW5zIGNvbXBsZXRlIGZvcm1hdCBjb25zaXN0ZW5jeSB3aXRoIHRoZSBtYWluIHBhcGVyIHRlbXBsYXRlCi0gKipDb2RlIEV4YW1wbGVzKio6IEluY2x1ZGVzIGV4YW1wbGVzIGZvciBhbGdvcml0aG1zLCBjb2RlIGxpc3RpbmdzLCBhbmQgb3RoZXIgc3VwcGxlbWVudGFyeSBtYXRlcmlhbHMKCiMjIyMgVXNhZ2UKU2FtZSBhcyB0aGUgbWFpbiBwYXBlciB0ZW1wbGF0ZSwganVzdCBtb2RpZnkgbGluZSAxMToKYGBgbGF0ZXgKJSBBbm9ueW1vdXMgc3VibWlzc2lvbiB2ZXJzaW9uClxkZWZcYWFhaWFub255bW91c3t0cnVlfQoKJSBDYW1lcmEtcmVhZHkgdmVyc2lvbgolIFxkZWZcYWFhaWFub255bW91c3t0cnVlfQpgYGAKCiMjIyMgU3VwcGxlbWVudGFyeSBNYXRlcmlhbCBDb250ZW50IFN1Z2dlc3Rpb25zCi0gQWRkaXRpb25hbCBleHBlcmltZW50YWwgcmVzdWx0cyBhbmQgYWJsYXRpb24gc3R1ZGllcwotIERldGFpbGVkIG1hdGhlbWF0aWNhbCBkZXJpdmF0aW9ucyBhbmQgcHJvb2ZzCi0gTW9yZSBmaWd1cmVzIGFuZCB2aXN1YWxpemF0aW9ucwotIEFsZ29yaXRobSBwc2V1ZG9jb2RlIGFuZCBpbXBsZW1lbnRhdGlvbiBkZXRhaWxzCi0gRGF0YXNldCBkZXNjcmlwdGlvbnMgYW5kIHByZXByb2Nlc3Npbmcgc3RlcHMKLSBIeXBlcnBhcmFtZXRlciBzZXR0aW5ncyBhbmQgZXhwZXJpbWVudGFsIGNvbmZpZ3VyYXRpb25zCi0gRmFpbHVyZSBjYXNlIGFuYWx5c2lzCi0gQ29tcHV0YXRpb25hbCBjb21wbGV4aXR5IGFuYWx5c2lzCgojIyMgVXNhZ2UgQ2hlY2tsaXN0CgojIyMjIPCfk4sgUHJlLVN1Ym1pc3Npb24gQ2hlY2tsaXN0CgoqKlZlcnNpb24gU2V0dXAqKjoKLSBbIF0gU2V0IGBcZGVmXGFhYWlhbm9ueW1vdXN7dHJ1ZX1gIChhbm9ueW1vdXMgc3VibWlzc2lvbikKLSBbIF0gQ29tbWVudGVkIG91dCBhbGwgaW5mb3JtYXRpb24gdGhhdCBjb3VsZCByZXZlYWwgaWRlbnRpdHkKLSBbIF0gQW5vbnltaXplZCByZWZlcmVuY2VzIChyZW1vdmVkIGF1dGhvciBuYW1lcykKCioqQ29udGVudCBDb21wbGV0ZW5lc3MqKjoKLSBbIF0gVGl0bGUsIGFic3RyYWN0LCBhbmQga2V5d29yZHMgZmlsbGVkCi0gWyBdIEFsbCBzZWN0aW9ucyBjb21wbGV0ZQotIFsgXSBGaWd1cmUgYW5kIHRhYmxlIG51bWJlcnMgY29uc2VjdXRpdmUgYW5kIGNvcnJlY3QKLSBbIF0gUmVmZXJlbmNlIGZvcm1hdCBjb3JyZWN0Ci0gWyBdIFN1cHBsZW1lbnRhcnkgbWF0ZXJpYWxzIHByZXBhcmVkIChpZiBhbnkpCgoqKkZvcm1hdCBDaGVjayoqOgotIFsgXSBQYWdlIG1hcmdpbnMgbWVldCByZXF1aXJlbWVudHMKLSBbIF0gRm9udCBhbmQgZm9udCBzaXplIGNvcnJlY3QKLSBbIF0gTGluZSBzcGFjaW5nIG1lZXRzIHN0YW5kYXJkcwotIFsgXSBGaWd1cmUgYW5kIHRhYmxlIHBvc2l0aW9ucyBhbmQgc2l6ZXMgYXBwcm9wcmlhdGUKLSBbIF0gTWF0aGVtYXRpY2FsIGZvcm11bGEgZm9ybWF0IGNvcnJlY3QKCioqVGVjaG5pY2FsIENoZWNrKio6Ci0gWyBdIExhVGVYIGNvbXBpbGF0aW9uIGVycm9yLWZyZWUKLSBbIF0gUmVmZXJlbmNlcyBnZW5lcmF0ZWQgY29ycmVjdGx5Ci0gWyBdIFBERiBvdXRwdXQgbm9ybWFsCi0gWyBdIEZpbGUgc2l6ZSB3aXRoaW4gbGltaXRzCgojIyMjIPCfk4sgUG9zdC1BY2NlcHRhbmNlIENoZWNrbGlzdAoKKipWZXJzaW9uIFN3aXRjaCoqOgotIFsgXSBDb21tZW50ZWQgb3V0IGBcZGVmXGFhYWlhbm9ueW1vdXN7dHJ1ZX1gIChjYW1lcmEtcmVhZHkpCi0gWyBdIEFkZGVkIGNvbXBsZXRlIGF1dGhvciBpbmZvcm1hdGlvbgotIFsgXSBBZGRlZCBhbGwgYXV0aG9yIGFmZmlsaWF0aW9uIGluZm9ybWF0aW9uCi0gWyBdIFJlc3RvcmVkIGFsbCBjb21tZW50ZWQgY29udGVudAoKKipDb250ZW50IFVwZGF0ZXMqKjoKLSBbIF0gTW9kaWZpZWQgY29udGVudCBhY2NvcmRpbmcgdG8gcmV2aWV3ZXIgY29tbWVudHMKLSBbIF0gVXBkYXRlZCBhbGwgZmlndXJlcyBhbmQgZXhwZXJpbWVudHMKLSBbIF0gQ29tcGxldGVkIHN1cHBsZW1lbnRhcnkgbWF0ZXJpYWxzCi0gWyBdIENoZWNrZWQgYWxsIGxpbmtzIGFuZCBjaXRhdGlvbnMKCioqRmluYWwgQ2hlY2sqKjoKLSBbIF0gRmluYWwgUERGIHF1YWxpdHkgY2hlY2sKLSBbIF0gQWxsIGZpbGVzIGJhY2tlZCB1cAotIFsgXSBNZWV0cyBjb25mZXJlbmNlIGZpbmFsIHN1Ym1pc3Npb24gcmVxdWlyZW1lbnRzCi0gWyBdIFN1cHBsZW1lbnRhcnkgbWF0ZXJpYWxzIHN1Ym1pdHRlZCBzZXBhcmF0ZWx5IChpZiBuZWVkZWQpCgojIyMjIPCfk4sgU3VwcGxlbWVudGFyeSBNYXRlcmlhbCBDaGVja2xpc3QKCioqQ29udGVudCBPcmdhbml6YXRpb24qKjoKLSBbIF0gU3VwcGxlbWVudGFyeSBtYXRlcmlhbHMgY29ycmVzcG9uZCB0byBtYWluIHBhcGVyIGNvbnRlbnQKLSBbIF0gQ2hhcHRlciBzdHJ1Y3R1cmUgY2xlYXIgYW5kIHJlYXNvbmFibGUKLSBbIF0gRmlndXJlIGFuZCB0YWJsZSBudW1iZXJzIGRvbid0IGNvbmZsaWN0IHdpdGggbWFpbiBwYXBlcgotIFsgXSBSZWZlcmVuY2UgZm9ybWF0IGNvbnNpc3RlbnQKCioqVGVjaG5pY2FsIERldGFpbHMqKjoKLSBbIF0gQWxnb3JpdGhtIHBzZXVkb2NvZGUgY2xlYXIgYW5kIGNvbXBsZXRlCi0gWyBdIEV4cGVyaW1lbnRhbCBzZXR1cCBleHBsYWluZWQgaW4gZGV0YWlsCi0gWyBdIERhdGEgcHJlcHJvY2Vzc2luZyBzdGVwcyBjbGVhcgotIFsgXSBIeXBlcnBhcmFtZXRlciBjb25maWd1cmF0aW9uIGNvbXBsZXRlCgoqKkZvcm1hdCBSZXF1aXJlbWVudHMqKjoKLSBbIF0gVXNpbmcgdW5pZmllZCBzdXBwIHRlbXBsYXRlCi0gWyBdIFBhZ2Ugc2V0dGluZ3MgY29uc2lzdGVudCB3aXRoIG1haW4gcGFwZXIKLSBbIF0gRm9udCBhbmQgZm9ybWF0IG1lZXQgcmVxdWlyZW1lbnRzCi0gWyBdIEZpbGUgc2l6ZSB3aXRoaW4gbGltaXRzCgojIyMgUHJhY3RpY2FsIFVzYWdlIFJlY29tbWVuZGF0aW9ucwoKMS4gKipTdWJtaXNzaW9uIFN0YWdlKio6IAogICAtIFVuY29tbWVudCBgXGRlZlxhYWFpYW5vbnltb3Vze3RydWV9YCAKICAgLSBFbnN1cmUgbm8gaW5mb3JtYXRpb24gdGhhdCBjb3VsZCByZXZlYWwgaWRlbnRpdHkgaXMgaW5jbHVkZWQKICAgLSBDaGVjayB0aGF0IHJlZmVyZW5jZXMgYXJlIGFub255bWl6ZWQKCjIuICoqUHJlcGFyaW5nIGZpbmFsIHZlcnNpb24gYWZ0ZXIgYWNjZXB0YW5jZSoqOgogICAtIENvbW1lbnQgb3V0IG9yIGRlbGV0ZSB0aGUgYFxkZWZcYWFhaWFub255bW91c3t0cnVlfWAgbGluZQogICAtIEFkZCBjb21wbGV0ZSBhdXRob3IgaW5mb3JtYXRpb24gYW5kIGFmZmlsaWF0aW9ucwogICAtIFVuY29tbWVudCBsaW5rcyBlbnZpcm9ubWVudCAoaWYgbmVlZGVkKQoKMy4gKipDb21waWxhdGlvbiBUZXN0aW5nKio6CiAgIC0gQ29tcGlsZSBpbiBib3RoIG1vZGVzIHRvIGVuc3VyZSBwcm9wZXIgZnVuY3Rpb25hbGl0eQogICAtIENoZWNrIGlmIHRoZSBvdXRwdXQgUERGIG1lZXRzIHJlcXVpcmVtZW50cwogICAtIFZlcmlmeSByZWZlcmVuY2UgZm9ybWF0dGluZyBpcyBjb3JyZWN0Cgo0LiAqKkRlcGVuZGVuY3kgRmlsZSBDb25maXJtYXRpb24qKjoKICAgLSBFbnN1cmUgYWxsIGRlcGVuZGVuY3kgZmlsZXMgYXJlIGluIHRoZSBzYW1lIGRpcmVjdG9yeQogICAtIFJlbWVtYmVyIHRvIG1vdmUgZGVwZW5kZW5jeSBmaWxlcyB3aGVuIG1vdmluZyB0aGUgdGVtcGxhdGUgZmlsZQoKIyMjIEltcG9ydGFudCBOb3RlcwoK4pqg77iPICoqQWJvdXQgQmlibGlvZ3JhcGh5IFN0eWxlKio6Ci0gVGhlIGBhYWFpMjAyNi5zdHlgIGZpbGUgYXV0b21hdGljYWxseSBzZXRzIGBcYmlibGlvZ3JhcGh5c3R5bGV7YWFhaTIwMjZ9YAotICoqRG8gTk9UKiogYWRkIGBcYmlibGlvZ3JhcGh5c3R5bGV7YWFhaTIwMjZ9YCBjb21tYW5kIGFnYWluIGluIHlvdXIgZG9jdW1lbnQKLSBPdGhlcndpc2UgeW91J2xsIGdldCAiYElsbGVnYWwsIGFub3RoZXIgXGJpYnN0eWxlIGNvbW1hbmRgIiBlcnJvcgotIEp1c3QgdXNlIHRoZSBgXGJpYmxpb2dyYXBoeXthYWFpMjAyNn1gIGNvbW1hbmQKCiMjIyBDb21waWxhdGlvbiBDb21tYW5kcyBFeGFtcGxlCgpgYGBiYXNoCiMgQ29tcGlsZSBMYVRlWCBkb2N1bWVudApwZGZsYXRleCBhYWFpMjAyNi11bmlmaWVkLXRlbXBsYXRlLnRleApiaWJ0ZXggYWFhaTIwMjYtdW5pZmllZC10ZW1wbGF0ZQpwZGZsYXRleCBhYWFpMjAyNi11bmlmaWVkLXRlbXBsYXRlLnRleApwZGZsYXRleCBhYWFpMjAyNi11bmlmaWVkLXRlbXBsYXRlLnRleApgYGAKCiMjIyBDb21tb24gSXNzdWVzIGFuZCBTb2x1dGlvbnMKCiMjIyMgMS4gIklsbGVnYWwsIGFub3RoZXIgXGJpYnN0eWxlIGNvbW1hbmQiIEVycm9yCioqQ2F1c2UqKjogRHVwbGljYXRlIGJpYmxpb2dyYXBoeSBzdHlsZSBzZXR0aW5nICAKKipTb2x1dGlvbioqOiBSZW1vdmUgdGhlIGBcYmlibGlvZ3JhcGh5c3R5bGV7YWFhaTIwMjZ9YCBjb21tYW5kIGZyb20geW91ciBkb2N1bWVudCwgYGFhYWkyMDI2LnN0eWAgaGFuZGxlcyBpdCBhdXRvbWF0aWNhbGx5CgojIyMjIDIuIEluY29ycmVjdCBSZWZlcmVuY2UgRm9ybWF0CioqQ2F1c2UqKjogTWlzc2luZyBuYXRiaWIgcGFja2FnZSBvciBCaWJUZVggZmlsZSBpc3N1ZXMgIAoqKlNvbHV0aW9uKio6IEZvbGxvdyB0aGUgc3RhbmRhcmQgTGFUZVggY29tcGlsYXRpb24gcHJvY2VzczogcGRmbGF0ZXgg4oaSIGJpYnRleCDihpIgcGRmbGF0ZXgg4oaSIHBkZmxhdGV4CgotLS0KCiMjIOeJiOacrOS/oeaBryAvIFZlcnNpb24gSW5mb3JtYXRpb24KCi0gKirmqKHmnb/niYjmnKwgLyBUZW1wbGF0ZSBWZXJzaW9uKio6IEFBQUkgMjAyNiBVbmlmaWVkIChNYWluICsgU3VwcGxlbWVudGFyeSkKLSAqKuWIm+W7uuaXpeacnyAvIENyZWF0ZWQqKjogMjAyNOW5tDEy5pyICi0gKirmlK/mjIHmoLzlvI8gLyBTdXBwb3J0ZWQgRm9ybWF0cyoqOiBBbm9ueW1vdXMgU3VibWlzc2lvbiAmIENhbWVyYS1SZWFkeQotICoq5qih5p2/57G75Z6LIC8gVGVtcGxhdGUgVHlwZXMqKjogTWFpbiBQYXBlciBUZW1wbGF0ZSAmIFN1cHBsZW1lbnRhcnkgTWF0ZXJpYWwgVGVtcGxhdGUKLSAqKuWFvOWuueaApyAvIENvbXBhdGliaWxpdHkqKjogTGFUZVggMjAyMCsgLyBUZVhMaXZlIDIwMjQrCgotLS0KCvCfjokgKirnjrDlnKjmgqjlj6rpnIDopoHkv67mlLnkuIDooYzku6PnoIHlsLHlj6/ku6XlnKjkuKTkuKrniYjmnKzkuYvpl7TliIfmjaLvvIzlkIzml7bmiYDmnInlv4XopoHnmoTkvp3otZbmlofku7bpg73lt7Lnu4/lh4blpIflsLHnu6rvvIEqKiAgCvCfjokgKipOb3cgeW91IG9ubHkgbmVlZCB0byBtb2RpZnkgb25lIGxpbmUgb2YgY29kZSB0byBzd2l0Y2ggYmV0d2VlbiB0aGUgdHdvIHZlcnNpb25zLCB3aXRoIGFsbCBuZWNlc3NhcnkgZGVwZW5kZW5jeSBmaWxlcyByZWFkeSB0byB1c2UhKio=
+# AAAI 2026 统一LaTeX模板使用说明 / AAAI 2026 Unified LaTeX Template Guide
+
+> **📝 重要说明 / Important Notice**: 本仓库借助Cursor在AAAI 2026官方模板基础上改进得到。如果遇到不满足或有冲突的情况，请积极提issues。
+> 
+> **📝 Important Notice**: This repository is improved based on the official AAAI 2026 template with the assistance of Cursor. If you encounter any issues or conflicts, please actively submit issues.
+
+[中文](#中文版本) | [English](#english-version)
+
+---
+
+## 🌐 在线查看 / Online Access
+
+**📖 在线阅读和测试模板**: [https://cn.overleaf.com/read/wyhcnvcrtpyt#cd4a07](https://cn.overleaf.com/read/wyhcnvcrtpyt#cd4a07)
+
+**📖 Online View and Test Template**: [https://cn.overleaf.com/read/wyhcnvcrtpyt#cd4a07](https://cn.overleaf.com/read/wyhcnvcrtpyt#cd4a07)
+
+💡 **提示 / Tips**: 
+- 中文：您可以通过上述链接在Overleaf中直接查看、编辑和编译模板，无需本地安装LaTeX环境
+- English: You can view, edit, and compile the template directly in Overleaf using the link above, without needing a local LaTeX installation
+
+---
+
+## 中文版本
+
+### 概述 ✅
+
+我已经将AAAI 2026的两个版本（匿名投稿版本和camera-ready版本）**完整合并**成一个统一的模板文件 `aaai2026-unified-template.tex`。
+
+该模板包含了原始两个模板的**所有完整内容**（共886行，比原始文件更全面），包括：
+- 所有格式化说明和要求
+- 完整的示例代码和表格
+- 图片处理指南
+- 参考文献格式要求
+- 所有章节和附录内容
+- 版本特定的Acknowledgments部分
+
+### 主要差异分析
+
+通过比较原始的两个模板，我发现主要差异在于：
+
+#### 1. 包的加载方式
+- **匿名版本**: `\usepackage[submission]{aaai2026}`
+- **Camera-ready版本**: `\usepackage{aaai2026}`
+
+#### 2. 标题差异
+- **匿名版本**: "AAAI Press Anonymous Submission Instructions for Authors Using LaTeX"
+- **Camera-ready版本**: "AAAI Press Formatting Instructions for Authors Using LaTeX --- A Guide"
+
+#### 3. Links环境的处理
+- **匿名版本**: Links环境被注释掉，防止泄露作者身份
+- **Camera-ready版本**: Links环境正常显示
+
+#### 4. 内容部分差异
+- **匿名版本**: 包含"Preparing an Anonymous Submission"部分的特殊说明
+- **Camera-ready版本**: 包含完整的格式说明和版权信息
+
+### 依赖文件检查结果
+
+✅ **已验证并复制到主目录的文件**：
+
+- `aaai2026.sty` - AAAI 2026 样式文件（两个版本完全相同）
+- `aaai2026.bst` - 参考文献样式文件（两个版本完全相同）
+- `aaai2026.bib` - 示例参考文献文件
+- `figure1.pdf` 和 `figure2.pdf` - 示例图片文件
+
+所有这些文件在两个版本中都是相同的，因此统一模板可以正常工作。
+
+### 如何使用统一模板
+
+#### 切换到匿名投稿版本
+在模板文件第11行，**取消注释**这一行：
+```latex
+\def\aaaianonymous{true}
+```
+
+#### 切换到Camera-ready版本
+在模板文件第11行，**注释掉**或**删除**这一行：
+```latex
+% \def\aaaianonymous{true}
+```
+
+### 一键切换的核心机制
+
+统一模板使用了LaTeX的条件编译功能：
+
+```latex
+% 条件包加载
+\ifdefined\aaaianonymous
+    \usepackage[submission]{aaai2026}  % 匿名版本
+\else
+    \usepackage{aaai2026}              % Camera-ready版本
+\fi
+
+% 条件标题设置
+\ifdefined\aaaianonymous
+    \title{AAAI Press Anonymous Submission\\Instructions for Authors Using \LaTeX{}}
+\else
+    \title{AAAI Press Formatting Instructions \\for Authors Using \LaTeX{} --- A Guide}
+\fi
+
+% 条件内容显示
+\ifdefined\aaaianonymous
+    % 匿名版本特有内容
+\else
+    % Camera-ready版本特有内容
+\fi
+```
+
+### 文件清单
+
+主目录现在包含以下文件：
+
+- `aaai2026-unified-template.tex` - 统一主论文模板文件
+- `aaai2026-unified-supp.tex` - 统一补充材料模板文件
+- `aaai2026.sty` - AAAI 2026 LaTeX 样式文件
+- `aaai2026.bst` - 参考文献样式文件  
+- `aaai2026.bib` - 示例参考文献文件
+- `figure1.pdf` - 示例图片1
+- `figure2.pdf` - 示例图片2
+- `README.md` - 本说明文档
+
+### 补充材料模板 (Supplementary Material Template)
+
+#### 概述
+`aaai2026-unified-supp.tex` 是专门为AAAI 2026补充材料设计的统一模板，与主论文模板使用相同的版本切换机制。
+
+#### 主要功能
+- **版本切换**: 通过修改一行代码在匿名投稿和camera-ready版本间切换
+- **补充内容支持**: 支持额外的实验、推导、数据、图表、算法等
+- **格式一致性**: 与主论文模板保持完全一致的格式要求
+- **代码示例**: 包含算法、代码列表等补充材料的示例
+
+#### 使用方法
+与主论文模板相同，只需修改第11行：
+```latex
+% 匿名投稿版本
+\def\aaaianonymous{true}
+
+% Camera-ready版本  
+% \def\aaaianonymous{true}
+```
+
+#### 补充材料内容建议
+- 额外的实验结果和消融研究
+- 详细的数学推导和证明
+- 更多的图表和可视化
+- 算法伪代码和实现细节
+- 数据集描述和预处理步骤
+- 超参数设置和实验配置
+- 失败案例分析
+- 计算复杂度分析
+
+### 使用检查清单 (Usage Checklist)
+
+#### 📋 投稿前检查清单 (Pre-Submission Checklist)
+
+**版本设置**:
+- [ ] 已设置 `\def\aaaianonymous{true}` (匿名投稿)
+- [ ] 已注释掉所有可能暴露身份的信息
+- [ ] 已匿名化参考文献（移除作者姓名）
+
+**内容完整性**:
+- [ ] 标题、摘要、关键词已填写
+- [ ] 所有章节内容完整
+- [ ] 图表编号连续且正确
+- [ ] 参考文献格式正确
+- [ ] 补充材料（如有）已准备
+
+**格式检查**:
+- [ ] 页面边距符合要求
+- [ ] 字体和字号正确
+- [ ] 行间距符合标准
+- [ ] 图表位置和大小合适
+- [ ] 数学公式格式正确
+
+**技术检查**:
+- [ ] LaTeX编译无错误
+- [ ] 参考文献正确生成
+- [ ] PDF输出正常
+- [ ] 文件大小在限制范围内
+
+#### 📋 录用后检查清单 (Post-Acceptance Checklist)
+
+**版本切换**:
+- [ ] 已注释掉 `\def\aaaianonymous{true}` (camera-ready)
+- [ ] 已添加完整的作者信息
+- [ ] 已添加所有作者单位信息
+- [ ] 已恢复所有被注释的内容
+
+**内容更新**:
+- [ ] 已根据审稿意见修改内容
+- [ ] 已更新所有图表和实验
+- [ ] 已完善补充材料
+- [ ] 已检查所有链接和引用
+
+**最终检查**:
+- [ ] 最终PDF质量检查
+- [ ] 所有文件已备份
+- [ ] 符合会议最终提交要求
+- [ ] 补充材料已单独提交（如需要）
+
+#### 📋 补充材料检查清单 (Supplementary Material Checklist)
+
+**内容组织**:
+- [ ] 补充材料与主论文内容对应
+- [ ] 章节结构清晰合理
+- [ ] 图表编号与主论文不冲突
+- [ ] 参考文献格式一致
+
+**技术细节**:
+- [ ] 算法伪代码清晰完整
+- [ ] 实验设置详细说明
+- [ ] 数据预处理步骤明确
+- [ ] 超参数配置完整
+
+**格式要求**:
+- [ ] 使用统一的supp模板
+- [ ] 页面设置与主论文一致
+- [ ] 字体和格式符合要求
+- [ ] 文件大小在限制范围内
+
+### 实际使用建议
+
+1. **投稿阶段**: 
+   - 取消注释 `\def\aaaianonymous{true}` 
+   - 确保不包含任何可能暴露身份的信息
+   - 检查参考文献是否已匿名化
+
+2. **录用后准备final版本**:
+   - 注释掉或删除 `\def\aaaianonymous{true}` 这一行
+   - 添加完整的作者信息和affiliations
+   - 取消注释links环境（如果需要）
+
+3. **编译测试**:
+   - 分别在两种模式下编译，确保都能正常工作
+   - 检查输出的PDF是否符合要求
+   - 验证参考文献格式是否正确
+
+4. **依赖文件确认**:
+   - 确保所有依赖文件都在同一目录下
+   - 如果移动模板文件，记得同时移动依赖文件
+
+### 重要注意事项
+
+⚠️ **关于Bibliography Style**:
+- `aaai2026.sty`文件已经自动设置了`\bibliographystyle{aaai2026}`
+- **不要**在文档中再次添加`\bibliographystyle{aaai2026}`命令
+- 否则会出现"`Illegal, another \bibstyle command`"错误
+- 只需要使用`\bibliography{aaai2026}`命令即可
+
+### 编译命令示例
+
+```bash
+# 编译LaTeX文档
+pdflatex aaai2026-unified-template.tex
+bibtex aaai2026-unified-template
+pdflatex aaai2026-unified-template.tex
+pdflatex aaai2026-unified-template.tex
+```
+
+### 常见问题解决
+
+#### 1. "Illegal, another \bibstyle command"错误
+**原因**: 重复设置了bibliography style  
+**解决方案**: 删除文档中的`\bibliographystyle{aaai2026}`命令，`aaai2026.sty`会自动处理
+
+#### 2. 参考文献格式不正确
+**原因**: 可能缺少natbib包或者BibTeX文件问题  
+**解决方案**: 确保按照标准的LaTeX编译流程：pdflatex → bibtex → pdflatex → pdflatex
+
+---
+
+## English Version
+
+### Overview ✅
+
+I have **completely merged** the two AAAI 2026 versions (anonymous submission and camera-ready) into a single unified template file `aaai2026-unified-template.tex`.
+
+This template contains **all complete content** from both original templates (886 lines total, more comprehensive than the original files), including:
+- All formatting instructions and requirements
+- Complete example codes and tables
+- Image processing guidelines
+- Reference formatting requirements
+- All sections and appendix content
+- Version-specific Acknowledgments sections
+
+### Key Differences Analysis
+
+By comparing the two original templates, the main differences are:
+
+#### 1. Package Loading Method
+- **Anonymous version**: `\usepackage[submission]{aaai2026}`
+- **Camera-ready version**: `\usepackage{aaai2026}`
+
+#### 2. Title Differences
+- **Anonymous version**: "AAAI Press Anonymous Submission Instructions for Authors Using LaTeX"
+- **Camera-ready version**: "AAAI Press Formatting Instructions for Authors Using LaTeX --- A Guide"
+
+#### 3. Links Environment Handling
+- **Anonymous version**: Links environment commented out to prevent identity disclosure
+- **Camera-ready version**: Links environment displayed normally
+
+#### 4. Content Section Differences
+- **Anonymous version**: Contains special instructions in "Preparing an Anonymous Submission" section
+- **Camera-ready version**: Contains complete formatting instructions and copyright information
+
+### Dependency Files Verification
+
+✅ **Files verified and copied to main directory**:
+
+- `aaai2026.sty` - AAAI 2026 style file (identical in both versions)
+- `aaai2026.bst` - Bibliography style file (identical in both versions)
+- `aaai2026.bib` - Sample bibliography file
+- `figure1.pdf` and `figure2.pdf` - Sample image files
+
+All these files are identical in both versions, so the unified template works properly.
+
+### How to Use the Unified Template
+
+#### Switch to Anonymous Submission Version
+On line 11 of the template file, **uncomment** this line:
+```latex
+\def\aaaianonymous{true}
+```
+
+#### Switch to Camera-ready Version
+On line 11 of the template file, **comment out** or **delete** this line:
+```latex
+% \def\aaaianonymous{true}
+```
+
+### Core Mechanism of One-Click Switching
+
+The unified template uses LaTeX conditional compilation:
+
+```latex
+% Conditional package loading
+\ifdefined\aaaianonymous
+    \usepackage[submission]{aaai2026}  % Anonymous version
+\else
+    \usepackage{aaai2026}              % Camera-ready version
+\fi
+
+% Conditional title setting
+\ifdefined\aaaianonymous
+    \title{AAAI Press Anonymous Submission\\Instructions for Authors Using \LaTeX{}}
+\else
+    \title{AAAI Press Formatting Instructions \\for Authors Using \LaTeX{} --- A Guide}
+\fi
+
+% Conditional content display
+\ifdefined\aaaianonymous
+    % Anonymous version specific content
+\else
+    % Camera-ready version specific content
+\fi
+```
+
+### File List
+
+The main directory now contains the following files:
+
+- `aaai2026-unified-template.tex` - Unified main paper template file
+- `aaai2026-unified-supp.tex` - Unified supplementary material template file
+- `aaai2026.sty` - AAAI 2026 LaTeX style file
+- `aaai2026.bst` - Bibliography style file
+- `aaai2026.bib` - Sample bibliography file
+- `figure1.pdf` - Sample image 1
+- `figure2.pdf` - Sample image 2
+- `README.md` - This documentation
+
+### Supplementary Material Template
+
+#### Overview
+`aaai2026-unified-supp.tex` is a unified template specifically designed for AAAI 2026 supplementary materials, using the same version switching mechanism as the main paper template.
+
+#### Key Features
+- **Version Switching**: Switch between anonymous submission and camera-ready versions by modifying one line of code
+- **Supplementary Content Support**: Supports additional experiments, derivations, data, figures, algorithms, etc.
+- **Format Consistency**: Maintains complete format consistency with the main paper template
+- **Code Examples**: Includes examples for algorithms, code listings, and other supplementary materials
+
+#### Usage
+Same as the main paper template, just modify line 11:
+```latex
+% Anonymous submission version
+\def\aaaianonymous{true}
+
+% Camera-ready version
+% \def\aaaianonymous{true}
+```
+
+#### Supplementary Material Content Suggestions
+- Additional experimental results and ablation studies
+- Detailed mathematical derivations and proofs
+- More figures and visualizations
+- Algorithm pseudocode and implementation details
+- Dataset descriptions and preprocessing steps
+- Hyperparameter settings and experimental configurations
+- Failure case analysis
+- Computational complexity analysis
+
+### Usage Checklist
+
+#### 📋 Pre-Submission Checklist
+
+**Version Setup**:
+- [ ] Set `\def\aaaianonymous{true}` (anonymous submission)
+- [ ] Commented out all information that could reveal identity
+- [ ] Anonymized references (removed author names)
+
+**Content Completeness**:
+- [ ] Title, abstract, and keywords filled
+- [ ] All sections complete
+- [ ] Figure and table numbers consecutive and correct
+- [ ] Reference format correct
+- [ ] Supplementary materials prepared (if any)
+
+**Format Check**:
+- [ ] Page margins meet requirements
+- [ ] Font and font size correct
+- [ ] Line spacing meets standards
+- [ ] Figure and table positions and sizes appropriate
+- [ ] Mathematical formula format correct
+
+**Technical Check**:
+- [ ] LaTeX compilation error-free
+- [ ] References generated correctly
+- [ ] PDF output normal
+- [ ] File size within limits
+
+#### 📋 Post-Acceptance Checklist
+
+**Version Switch**:
+- [ ] Commented out `\def\aaaianonymous{true}` (camera-ready)
+- [ ] Added complete author information
+- [ ] Added all author affiliation information
+- [ ] Restored all commented content
+
+**Content Updates**:
+- [ ] Modified content according to reviewer comments
+- [ ] Updated all figures and experiments
+- [ ] Completed supplementary materials
+- [ ] Checked all links and citations
+
+**Final Check**:
+- [ ] Final PDF quality check
+- [ ] All files backed up
+- [ ] Meets conference final submission requirements
+- [ ] Supplementary materials submitted separately (if needed)
+
+#### 📋 Supplementary Material Checklist
+
+**Content Organization**:
+- [ ] Supplementary materials correspond to main paper content
+- [ ] Chapter structure clear and reasonable
+- [ ] Figure and table numbers don't conflict with main paper
+- [ ] Reference format consistent
+
+**Technical Details**:
+- [ ] Algorithm pseudocode clear and complete
+- [ ] Experimental setup explained in detail
+- [ ] Data preprocessing steps clear
+- [ ] Hyperparameter configuration complete
+
+**Format Requirements**:
+- [ ] Using unified supp template
+- [ ] Page settings consistent with main paper
+- [ ] Font and format meet requirements
+- [ ] File size within limits
+
+### Practical Usage Recommendations
+
+1. **Submission Stage**: 
+   - Uncomment `\def\aaaianonymous{true}` 
+   - Ensure no information that could reveal identity is included
+   - Check that references are anonymized
+
+2. **Preparing final version after acceptance**:
+   - Comment out or delete the `\def\aaaianonymous{true}` line
+   - Add complete author information and affiliations
+   - Uncomment links environment (if needed)
+
+3. **Compilation Testing**:
+   - Compile in both modes to ensure proper functionality
+   - Check if the output PDF meets requirements
+   - Verify reference formatting is correct
+
+4. **Dependency File Confirmation**:
+   - Ensure all dependency files are in the same directory
+   - Remember to move dependency files when moving the template file
+
+### Important Notes
+
+⚠️ **About Bibliography Style**:
+- The `aaai2026.sty` file automatically sets `\bibliographystyle{aaai2026}`
+- **Do NOT** add `\bibliographystyle{aaai2026}` command again in your document
+- Otherwise you'll get "`Illegal, another \bibstyle command`" error
+- Just use the `\bibliography{aaai2026}` command
+
+### Compilation Commands Example
+
+```bash
+# Compile LaTeX document
+pdflatex aaai2026-unified-template.tex
+bibtex aaai2026-unified-template
+pdflatex aaai2026-unified-template.tex
+pdflatex aaai2026-unified-template.tex
+```
+
+### Common Issues and Solutions
+
+#### 1. "Illegal, another \bibstyle command" Error
+**Cause**: Duplicate bibliography style setting  
+**Solution**: Remove the `\bibliographystyle{aaai2026}` command from your document, `aaai2026.sty` handles it automatically
+
+#### 2. Incorrect Reference Format
+**Cause**: Missing natbib package or BibTeX file issues  
+**Solution**: Follow the standard LaTeX compilation process: pdflatex → bibtex → pdflatex → pdflatex
+
+---
+
+## 版本信息 / Version Information
+
+- **模板版本 / Template Version**: AAAI 2026 Unified (Main + Supplementary)
+- **创建日期 / Created**: 2024年12月
+- **支持格式 / Supported Formats**: Anonymous Submission & Camera-Ready
+- **模板类型 / Template Types**: Main Paper Template & Supplementary Material Template
+- **兼容性 / Compatibility**: LaTeX 2020+ / TeXLive 2024+
+
+---
+
+🎉 **现在您只需要修改一行代码就可以在两个版本之间切换，同时所有必要的依赖文件都已经准备就绪！**  
+🎉 **Now you only need to modify one line of code to switch between the two versions, with all necessary dependency files ready to use!**

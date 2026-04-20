@@ -1,1 +1,352 @@
-IyBDb2xvciBTeXN0ZW1zCgojIyBDb2xvciBNb2RlcwoKIyMjIEhTQiAoUmVjb21tZW5kZWQgZm9yIEdlbmVyYXRpdmUgQXJ0KQoKYGBgamF2YXNjcmlwdApjb2xvck1vZGUoSFNCLCAzNjAsIDEwMCwgMTAwLCAxMDApOwovLyBIdWU6IDAtMzYwIChjb2xvciB3aGVlbCBwb3NpdGlvbikKLy8gU2F0dXJhdGlvbjogMC0xMDAgKGdyYXkgdG8gdml2aWQpCi8vIEJyaWdodG5lc3M6IDAtMTAwIChibGFjayB0byBmdWxsKQovLyBBbHBoYTogMC0xMDAKCmZpbGwoMjAwLCA4MCwgOTApOyAgICAgICAgLy8gYmx1ZSwgdml2aWQsIGJyaWdodApmaWxsKDIwMCwgODAsIDkwLCA1MCk7ICAgIC8vIDUwJSB0cmFuc3BhcmVudApgYGAKCkhTQiBhZHZhbnRhZ2VzOgotIFJvdGF0ZSBodWU6IGAoYmFzZUh1ZSArIG9mZnNldCkgJSAzNjBgCi0gRGVzYXR1cmF0ZTogcmVkdWNlIFMKLSBEYXJrZW46IHJlZHVjZSBCCi0gTW9ub2Nocm9tZSB2YXJpYXRpb25zOiBmaXggSCwgdmFyeSBTIGFuZCBCCi0gQ29tcGxlbWVudGFyeTogYChodWUgKyAxODApICUgMzYwYAotIEFuYWxvZ291czogYGh1ZSArLy0gMzBgCgojIyMgSFNMCgpgYGBqYXZhc2NyaXB0CmNvbG9yTW9kZShIU0wsIDM2MCwgMTAwLCAxMDAsIDEwMCk7Ci8vIExpZ2h0bmVzcyA1MCA9IHB1cmUgY29sb3IsIDAgPSBibGFjaywgMTAwID0gd2hpdGUKLy8gTW9yZSBpbnR1aXRpdmUgZm9yIHRpbnRzIChMID4gNTApIGFuZCBzaGFkZXMgKEwgPCA1MCkKYGBgCgojIyMgUkdCCgpgYGBqYXZhc2NyaXB0CmNvbG9yTW9kZShSR0IsIDI1NSwgMjU1LCAyNTUsIDI1NSk7ICAvLyBkZWZhdWx0Ci8vIERpcmVjdCBjaGFubmVsIGNvbnRyb2wsIGxlc3MgaW50dWl0aXZlIGZvciBwcm9jZWR1cmFsIHBhbGV0dGVzCmBgYAoKIyMgQ29sb3IgT2JqZWN0cwoKYGBgamF2YXNjcmlwdApsZXQgYyA9IGNvbG9yKDIwMCwgODAsIDkwKTsgICAgLy8gY3JlYXRlIGNvbG9yIG9iamVjdApmaWxsKGMpOwoKLy8gRXh0cmFjdCBjb21wb25lbnRzCmxldCBoID0gaHVlKGMpOwpsZXQgcyA9IHNhdHVyYXRpb24oYyk7CmxldCBiID0gYnJpZ2h0bmVzcyhjKTsKbGV0IHIgPSByZWQoYyk7CmxldCBnID0gZ3JlZW4oYyk7CmxldCBibCA9IGJsdWUoYyk7CmxldCBhID0gYWxwaGEoYyk7CgovLyBIZXggY29sb3JzIHdvcmsgZXZlcnl3aGVyZQpmaWxsKCcjZThkNWI3Jyk7CmZpbGwoJyNlOGQ1YjdjYycpOyAgLy8gd2l0aCBhbHBoYQoKLy8gTW9kaWZ5IHZpYSBzZXR0ZXJzCmMuc2V0QWxwaGEoMTI4KTsKYy5zZXRSZWQoMjAwKTsKYGBgCgojIyBDb2xvciBJbnRlcnBvbGF0aW9uCgojIyMgbGVycENvbG9yCgpgYGBqYXZhc2NyaXB0CmxldCBjMSA9IGNvbG9yKDAsIDgwLCAxMDApOyAgICAvLyByZWQKbGV0IGMyID0gY29sb3IoMjAwLCA4MCwgMTAwKTsgIC8vIGJsdWUKbGV0IG1peGVkID0gbGVycENvbG9yKGMxLCBjMiwgMC41KTsgIC8vIG1pZHBvaW50IGJsZW5kCi8vIFdvcmtzIGluIGN1cnJlbnQgY29sb3JNb2RlCmBgYAoKIyMjIHBhbGV0dGVMZXJwIChwNS5qcyAxLjExKykKCkludGVycG9sYXRlIHRocm91Z2ggbXVsdGlwbGUgY29sb3JzIGF0IG9uY2UuCgpgYGBqYXZhc2NyaXB0CmxldCBjb2xvcnMgPSBbCiAgY29sb3IoJyMyRTA4NTQnKSwKICBjb2xvcignIzg1MEUzNScpLAogIGNvbG9yKCcjRUU2QzREJyksCiAgY29sb3IoJyNGNUU2NjMnKQpdOwpsZXQgYyA9IHBhbGV0dGVMZXJwKGNvbG9ycywgdCk7ICAvLyB0ID0gMC4uMSwgaW50ZXJwb2xhdGVzIHRocm91Z2ggYWxsCmBgYAoKIyMjIE1hbnVhbCBNdWx0aS1TdG9wIEdyYWRpZW50CgpgYGBqYXZhc2NyaXB0CmZ1bmN0aW9uIG11bHRpTGVycChjb2xvcnMsIHQpIHsKICB0ID0gY29uc3RyYWluKHQsIDAsIDEpOwogIGxldCBzZWdtZW50ID0gdCAqIChjb2xvcnMubGVuZ3RoIC0gMSk7CiAgbGV0IGlkeCA9IGZsb29yKHNlZ21lbnQpOwogIGxldCBmcmFjID0gc2VnbWVudCAtIGlkeDsKICBpZHggPSBtaW4oaWR4LCBjb2xvcnMubGVuZ3RoIC0gMik7CiAgcmV0dXJuIGxlcnBDb2xvcihjb2xvcnNbaWR4XSwgY29sb3JzW2lkeCArIDFdLCBmcmFjKTsKfQpgYGAKCiMjIEdyYWRpZW50IFJlbmRlcmluZwoKIyMjIExpbmVhciBHcmFkaWVudAoKYGBgamF2YXNjcmlwdApmdW5jdGlvbiBsaW5lYXJHcmFkaWVudCh4MSwgeTEsIHgyLCB5MiwgYzEsIGMyKSB7CiAgbGV0IHN0ZXBzID0gZGlzdCh4MSwgeTEsIHgyLCB5Mik7CiAgZm9yIChsZXQgaSA9IDA7IGkgPD0gc3RlcHM7IGkrKykgewogICAgbGV0IHQgPSBpIC8gc3RlcHM7CiAgICBsZXQgYyA9IGxlcnBDb2xvcihjMSwgYzIsIHQpOwogICAgc3Ryb2tlKGMpOwogICAgbGV0IHggPSBsZXJwKHgxLCB4MiwgdCk7CiAgICBsZXQgeSA9IGxlcnAoeTEsIHkyLCB0KTsKICAgIC8vIERyYXcgcGVycGVuZGljdWxhciBsaW5lIGF0IGVhY2ggcG9pbnQKICAgIGxldCBkeCA9IC0oeTIgLSB5MSkgLyBzdGVwcyAqIDEwMDA7CiAgICBsZXQgZHkgPSAoeDIgLSB4MSkgLyBzdGVwcyAqIDEwMDA7CiAgICBsaW5lKHggLSBkeCwgeSAtIGR5LCB4ICsgZHgsIHkgKyBkeSk7CiAgfQp9CmBgYAoKIyMjIFJhZGlhbCBHcmFkaWVudAoKYGBgamF2YXNjcmlwdApmdW5jdGlvbiByYWRpYWxHcmFkaWVudChjeCwgY3ksIHIsIGlubmVyQ29sb3IsIG91dGVyQ29sb3IpIHsKICBub1N0cm9rZSgpOwogIGZvciAobGV0IGkgPSByOyBpID4gMDsgaS0tKSB7CiAgICBsZXQgdCA9IDEgLSBpIC8gcjsKICAgIGZpbGwobGVycENvbG9yKGlubmVyQ29sb3IsIG91dGVyQ29sb3IsIHQpKTsKICAgIGVsbGlwc2UoY3gsIGN5LCBpICogMik7CiAgfQp9CmBgYAoKIyMjIE5vaXNlLUJhc2VkIEdyYWRpZW50CgpgYGBqYXZhc2NyaXB0CmZ1bmN0aW9uIG5vaXNlR3JhZGllbnQoY29sb3JzLCBub2lzZVNjYWxlLCB0aW1lKSB7CiAgbG9hZFBpeGVscygpOwogIGZvciAobGV0IHkgPSAwOyB5IDwgaGVpZ2h0OyB5KyspIHsKICAgIGZvciAobGV0IHggPSAwOyB4IDwgd2lkdGg7IHgrKykgewogICAgICBsZXQgbiA9IG5vaXNlKHggKiBub2lzZVNjYWxlLCB5ICogbm9pc2VTY2FsZSwgdGltZSk7CiAgICAgIGxldCBjID0gbXVsdGlMZXJwKGNvbG9ycywgbik7CiAgICAgIGxldCBpZHggPSA0ICogKHkgKiB3aWR0aCArIHgpOwogICAgICBwaXhlbHNbaWR4XSA9IHJlZChjKTsKICAgICAgcGl4ZWxzW2lkeCsxXSA9IGdyZWVuKGMpOwogICAgICBwaXhlbHNbaWR4KzJdID0gYmx1ZShjKTsKICAgICAgcGl4ZWxzW2lkeCszXSA9IDI1NTsKICAgIH0KICB9CiAgdXBkYXRlUGl4ZWxzKCk7Cn0KYGBgCgojIyBQcm9jZWR1cmFsIFBhbGV0dGUgR2VuZXJhdGlvbgoKIyMjIENvbXBsZW1lbnRhcnkKCmBgYGphdmFzY3JpcHQKZnVuY3Rpb24gY29tcGxlbWVudGFyeShiYXNlSHVlKSB7CiAgcmV0dXJuIFtiYXNlSHVlLCAoYmFzZUh1ZSArIDE4MCkgJSAzNjBdOwp9CmBgYAoKIyMjIEFuYWxvZ291cwoKYGBgamF2YXNjcmlwdApmdW5jdGlvbiBhbmFsb2dvdXMoYmFzZUh1ZSwgc3ByZWFkID0gMzApIHsKICByZXR1cm4gWwogICAgKGJhc2VIdWUgLSBzcHJlYWQgKyAzNjApICUgMzYwLAogICAgYmFzZUh1ZSwKICAgIChiYXNlSHVlICsgc3ByZWFkKSAlIDM2MAogIF07Cn0KYGBgCgojIyMgVHJpYWRpYwoKYGBgamF2YXNjcmlwdApmdW5jdGlvbiB0cmlhZGljKGJhc2VIdWUpIHsKICByZXR1cm4gW2Jhc2VIdWUsIChiYXNlSHVlICsgMTIwKSAlIDM2MCwgKGJhc2VIdWUgKyAyNDApICUgMzYwXTsKfQpgYGAKCiMjIyBTcGxpdCBDb21wbGVtZW50YXJ5CgpgYGBqYXZhc2NyaXB0CmZ1bmN0aW9uIHNwbGl0Q29tcGxlbWVudGFyeShiYXNlSHVlKSB7CiAgcmV0dXJuIFtiYXNlSHVlLCAoYmFzZUh1ZSArIDE1MCkgJSAzNjAsIChiYXNlSHVlICsgMjEwKSAlIDM2MF07Cn0KYGBgCgojIyMgVGV0cmFkaWMgKFJlY3RhbmdsZSkKCmBgYGphdmFzY3JpcHQKZnVuY3Rpb24gdGV0cmFkaWMoYmFzZUh1ZSkgewogIHJldHVybiBbYmFzZUh1ZSwgKGJhc2VIdWUgKyA2MCkgJSAzNjAsIChiYXNlSHVlICsgMTgwKSAlIDM2MCwgKGJhc2VIdWUgKyAyNDApICUgMzYwXTsKfQpgYGAKCiMjIyBNb25vY2hyb21hdGljIFZhcmlhdGlvbnMKCmBgYGphdmFzY3JpcHQKZnVuY3Rpb24gbW9ub1ZhcmlhdGlvbnMoaHVlLCBjb3VudCA9IDUpIHsKICBsZXQgY29sb3JzID0gW107CiAgZm9yIChsZXQgaSA9IDA7IGkgPCBjb3VudDsgaSsrKSB7CiAgICBsZXQgcyA9IG1hcChpLCAwLCBjb3VudCAtIDEsIDIwLCA5MCk7CiAgICBsZXQgYiA9IG1hcChpLCAwLCBjb3VudCAtIDEsIDk1LCA0MCk7CiAgICBjb2xvcnMucHVzaChjb2xvcihodWUsIHMsIGIpKTsKICB9CiAgcmV0dXJuIGNvbG9yczsKfQpgYGAKCiMjIEN1cmF0ZWQgUGFsZXR0ZSBMaWJyYXJ5CgojIyMgV2FybSBQYWxldHRlcwoKYGBgamF2YXNjcmlwdApjb25zdCBTVU5TRVQgPSBbJyMyRTA4NTQnLCAnIzg1MEUzNScsICcjRUU2QzREJywgJyNGNUU2NjMnXTsKY29uc3QgRU1CRVIgID0gWycjMWEwMDAwJywgJyM0YTAwMDAnLCAnIzhiMjUwMCcsICcjY2Q1YzAwJywgJyNmZmQ3MDAnXTsKY29uc3QgUEVBQ0ggID0gWycjZmZmNWViJywgJyNmZmRhYjknLCAnI2ZmOWE3NicsICcjZmY2YjZiJywgJyNjOTRjNGMnXTsKY29uc3QgQ09QUEVSID0gWycjMWMxMTA4JywgJyMzZDJiMWYnLCAnIzdiNGIyYScsICcjYjg3MzMzJywgJyNkYWEwNmQnXTsKYGBgCgojIyMgQ29vbCBQYWxldHRlcwoKYGBgamF2YXNjcmlwdApjb25zdCBPQ0VBTiAgID0gWycjMGEwZTI3JywgJyMxYTFiNGInLCAnIzJhNGE3ZicsICcjM2Q3Y2I4JywgJyM4N2NlZWInXTsKY29uc3QgQVJDVElDICA9IFsnIzBkMWIyYScsICcjMWIyNjNiJywgJyM0MTVhNzcnLCAnIzc3OGRhOScsICcjZTBlMWRkJ107CmNvbnN0IEZPUkVTVCAgPSBbJyMwYjFhMGInLCAnIzFhM2ExYScsICcjMmQ1YTJkJywgJyM0YThjNGEnLCAnIzkwYzk5MCddOwpjb25zdCBERUVQX1NFQSA9IFsnIzAwMDgxNCcsICcjMDAxZDNkJywgJyMwMDM1NjYnLCAnIzAwNmQ3NycsICcjODNjNWJlJ107CmBgYAoKIyMjIE5ldXRyYWwgUGFsZXR0ZXMKCmBgYGphdmFzY3JpcHQKY29uc3QgR1JBUEhJVEUgPSBbJyMxYTFhMWEnLCAnIzMzMzMzMycsICcjNTU1NTU1JywgJyM4ODg4ODgnLCAnI2NjY2NjYyddOwpjb25zdCBDUkVBTSAgICA9IFsnI2Y0ZjBlOCcsICcjZThkY2M4JywgJyNjOWI5OWEnLCAnI2E4OTA3MCcsICcjN2E2NDUwJ107CmNvbnN0IFNMQVRFICAgID0gWycjMWUyOTNiJywgJyMzMzQxNTUnLCAnIzQ3NTU2OScsICcjNjQ3NDhiJywgJyM5NGEzYjgnXTsKYGBgCgojIyMgVml2aWQgUGFsZXR0ZXMKCmBgYGphdmFzY3JpcHQKY29uc3QgTkVPTiAgICAgPSBbJyNmZjAwZmYnLCAnIzAwZmZmZicsICcjZmYwMDgwJywgJyM4MGZmMDAnLCAnIzAwODBmZiddOwpjb25zdCBSQUlOQk9XICA9IFsnI2ZmMDAwMCcsICcjZmY4MDAwJywgJyNmZmZmMDAnLCAnIzAwZmYwMCcsICcjMDAwMGZmJywgJyM4MDAwZmYnXTsKY29uc3QgVkFQT1IgICAgPSBbJyNmZjcxY2UnLCAnIzAxY2RmZScsICcjMDVmZmExJywgJyNiOTY3ZmYnLCAnI2ZmZmI5NiddOwpjb25zdCBDWUJFUiAgICA9IFsnIzBmMGYwZicsICcjMDBmZjQxJywgJyNmZjAwOTAnLCAnIzAwZDRmZicsICcjZmZkMDAwJ107CmBgYAoKIyMjIEVhcnRoIFRvbmVzCgpgYGBqYXZhc2NyaXB0CmNvbnN0IFRFUlJBICAgID0gWycjMmMxODEwJywgJyM1YzNhMmEnLCAnIzhiNmI0YScsICcjYzRhNjcyJywgJyNlOGQ1YjcnXTsKY29uc3QgTU9TUyAgICAgPSBbJyMxYTFmMTYnLCAnIzNkNGEyZScsICcjNmI3YzRmJywgJyM5YWFiN2EnLCAnI2M4ZDRhOSddOwpjb25zdCBDTEFZICAgICA9IFsnIzNiMmYyZicsICcjNmI0YzRjJywgJyM5ZTc2NzYnLCAnI2M5YTBhMCcsICcjZThjYWNhJ107CmBgYAoKIyMgQmxlbmQgTW9kZXMKCmBgYGphdmFzY3JpcHQKYmxlbmRNb2RlKEJMRU5EKTsgICAgICAgLy8gZGVmYXVsdCDigJQgYWxwaGEgY29tcG9zaXRpbmcKYmxlbmRNb2RlKEFERCk7ICAgICAgICAgLy8gYWRkaXRpdmUg4oCUIGJyaWdodCBnbG93IGVmZmVjdHMKYmxlbmRNb2RlKE1VTFRJUExZKTsgICAgLy8gZGFya2VuaW5nIOKAlCBzaGFkb3dzLCB0ZXh0dXJlIG92ZXJsYXkKYmxlbmRNb2RlKFNDUkVFTik7ICAgICAgLy8gbGlnaHRlbmluZyDigJQgc29mdCBnbG93CmJsZW5kTW9kZShPVkVSTEFZKTsgICAgIC8vIGNvbnRyYXN0IGJvb3N0IOKAlCBoaWdoL2xvdyBlbXBoYXNpcwpibGVuZE1vZGUoRElGRkVSRU5DRSk7ICAvLyBjb2xvciBzdWJ0cmFjdGlvbiDigJQgcHN5Y2hlZGVsaWMKYmxlbmRNb2RlKEVYQ0xVU0lPTik7ICAgLy8gc29mdGVyIGRpZmZlcmVuY2UKYmxlbmRNb2RlKFJFUExBQ0UpOyAgICAgLy8gb3ZlcndyaXRlIChubyBhbHBoYSBibGVuZGluZykKYmxlbmRNb2RlKFJFTU9WRSk7ICAgICAgLy8gc3VidHJhY3QgYWxwaGEKYmxlbmRNb2RlKExJR0hURVNUKTsgICAgLy8ga2VlcCBicmlnaHRlciBwaXhlbApibGVuZE1vZGUoREFSS0VTVCk7ICAgICAvLyBrZWVwIGRhcmtlciBwaXhlbApibGVuZE1vZGUoQlVSTik7ICAgICAgICAvLyBkYXJrZW4gKyBzYXR1cmF0ZQpibGVuZE1vZGUoRE9ER0UpOyAgICAgICAvLyBsaWdodGVuICsgc2F0dXJhdGUKYmxlbmRNb2RlKFNPRlRfTElHSFQpOyAgLy8gc3VidGxlIG92ZXJsYXkKYmxlbmRNb2RlKEhBUkRfTElHSFQpOyAgLy8gc3Ryb25nIG92ZXJsYXkKCi8vIEFMV0FZUyByZXNldCBhZnRlciB1c2UKYmxlbmRNb2RlKEJMRU5EKTsKYGBgCgojIyMgQmxlbmQgTW9kZSBSZWNpcGVzCgp8IEVmZmVjdCB8IE1vZGUgfCBVc2UgY2FzZSB8CnwtLS0tLS0tLXwtLS0tLS18LS0tLS0tLS0tLXwKfCBBZGRpdGl2ZSBnbG93IHwgYEFERGAgfCBMaWdodCBiZWFtcywgZmlyZSwgcGFydGljbGVzIHwKfCBTaGFkb3cgb3ZlcmxheSB8IGBNVUxUSVBMWWAgfCBUZXh0dXJlLCB2aWduZXR0ZSB8CnwgU29mdCBsaWdodCBtaXggfCBgU0NSRUVOYCB8IEZvZywgbWlzdCwgYmFja2xpZ2h0IHwKfCBIaWdoIGNvbnRyYXN0IHwgYE9WRVJMQVlgIHwgRHJhbWF0aWMgY29tcG9zaXRpbmcgfAp8IENvbG9yIG5lZ2F0aXZlIHwgYERJRkZFUkVOQ0VgIHwgR2xpdGNoLCBwc3ljaGVkZWxpYyB8CnwgTGF5ZXIgY29tcG9zaXRpbmcgfCBgQkxFTkRgIHwgU3RhbmRhcmQgYWxwaGEgbGF5ZXJpbmcgfAoKIyMgQmFja2dyb3VuZCBUZWNobmlxdWVzCgojIyMgVGV4dHVyZWQgQmFja2dyb3VuZAoKYGBgamF2YXNjcmlwdApmdW5jdGlvbiB0ZXh0dXJlZEJhY2tncm91bmQoYmFzZUNvbG9yLCBub2lzZVNjYWxlLCBub2lzZUFtb3VudCkgewogIGxvYWRQaXhlbHMoKTsKICBsZXQgciA9IHJlZChiYXNlQ29sb3IpLCBnID0gZ3JlZW4oYmFzZUNvbG9yKSwgYiA9IGJsdWUoYmFzZUNvbG9yKTsKICBmb3IgKGxldCBpID0gMDsgaSA8IHBpeGVscy5sZW5ndGg7IGkgKz0gNCkgewogICAgbGV0IHggPSAoaSAvIDQpICUgd2lkdGg7CiAgICBsZXQgeSA9IGZsb29yKChpIC8gNCkgLyB3aWR0aCk7CiAgICBsZXQgbiA9IChub2lzZSh4ICogbm9pc2VTY2FsZSwgeSAqIG5vaXNlU2NhbGUpIC0gMC41KSAqIG5vaXNlQW1vdW50OwogICAgcGl4ZWxzW2ldID0gY29uc3RyYWluKHIgKyBuLCAwLCAyNTUpOwogICAgcGl4ZWxzW2krMV0gPSBjb25zdHJhaW4oZyArIG4sIDAsIDI1NSk7CiAgICBwaXhlbHNbaSsyXSA9IGNvbnN0cmFpbihiICsgbiwgMCwgMjU1KTsKICAgIHBpeGVsc1tpKzNdID0gMjU1OwogIH0KICB1cGRhdGVQaXhlbHMoKTsKfQpgYGAKCiMjIyBWaWduZXR0ZQoKYGBgamF2YXNjcmlwdApmdW5jdGlvbiB2aWduZXR0ZShzdHJlbmd0aCA9IDAuNSwgcmFkaXVzID0gMC43KSB7CiAgbG9hZFBpeGVscygpOwogIGxldCBjeCA9IHdpZHRoIC8gMiwgY3kgPSBoZWlnaHQgLyAyOwogIGxldCBtYXhEaXN0ID0gZGlzdCgwLCAwLCBjeCwgY3kpOwogIGZvciAobGV0IGkgPSAwOyBpIDwgcGl4ZWxzLmxlbmd0aDsgaSArPSA0KSB7CiAgICBsZXQgeCA9IChpIC8gNCkgJSB3aWR0aDsKICAgIGxldCB5ID0gZmxvb3IoKGkgLyA0KSAvIHdpZHRoKTsKICAgIGxldCBkID0gZGlzdCh4LCB5LCBjeCwgY3kpIC8gbWF4RGlzdDsKICAgIGxldCBmYWN0b3IgPSAxLjAgLSBzbW9vdGhzdGVwKGNvbnN0cmFpbigoZCAtIHJhZGl1cykgLyAoMSAtIHJhZGl1cyksIDAsIDEpKSAqIHN0cmVuZ3RoOwogICAgcGl4ZWxzW2ldICo9IGZhY3RvcjsKICAgIHBpeGVsc1tpKzFdICo9IGZhY3RvcjsKICAgIHBpeGVsc1tpKzJdICo9IGZhY3RvcjsKICB9CiAgdXBkYXRlUGl4ZWxzKCk7Cn0KCmZ1bmN0aW9uIHNtb290aHN0ZXAodCkgeyByZXR1cm4gdCAqIHQgKiAoMyAtIDIgKiB0KTsgfQpgYGAKCiMjIyBGaWxtIEdyYWluCgpgYGBqYXZhc2NyaXB0CmZ1bmN0aW9uIGZpbG1HcmFpbihhbW91bnQgPSAzMCkgewogIGxvYWRQaXhlbHMoKTsKICBmb3IgKGxldCBpID0gMDsgaSA8IHBpeGVscy5sZW5ndGg7IGkgKz0gNCkgewogICAgbGV0IGdyYWluID0gcmFuZG9tKC1hbW91bnQsIGFtb3VudCk7CiAgICBwaXhlbHNbaV0gPSBjb25zdHJhaW4ocGl4ZWxzW2ldICsgZ3JhaW4sIDAsIDI1NSk7CiAgICBwaXhlbHNbaSsxXSA9IGNvbnN0cmFpbihwaXhlbHNbaSsxXSArIGdyYWluLCAwLCAyNTUpOwogICAgcGl4ZWxzW2krMl0gPSBjb25zdHJhaW4ocGl4ZWxzW2krMl0gKyBncmFpbiwgMCwgMjU1KTsKICB9CiAgdXBkYXRlUGl4ZWxzKCk7Cn0KYGBgCg==
+# Color Systems
+
+## Color Modes
+
+### HSB (Recommended for Generative Art)
+
+```javascript
+colorMode(HSB, 360, 100, 100, 100);
+// Hue: 0-360 (color wheel position)
+// Saturation: 0-100 (gray to vivid)
+// Brightness: 0-100 (black to full)
+// Alpha: 0-100
+
+fill(200, 80, 90);        // blue, vivid, bright
+fill(200, 80, 90, 50);    // 50% transparent
+```
+
+HSB advantages:
+- Rotate hue: `(baseHue + offset) % 360`
+- Desaturate: reduce S
+- Darken: reduce B
+- Monochrome variations: fix H, vary S and B
+- Complementary: `(hue + 180) % 360`
+- Analogous: `hue +/- 30`
+
+### HSL
+
+```javascript
+colorMode(HSL, 360, 100, 100, 100);
+// Lightness 50 = pure color, 0 = black, 100 = white
+// More intuitive for tints (L > 50) and shades (L < 50)
+```
+
+### RGB
+
+```javascript
+colorMode(RGB, 255, 255, 255, 255);  // default
+// Direct channel control, less intuitive for procedural palettes
+```
+
+## Color Objects
+
+```javascript
+let c = color(200, 80, 90);    // create color object
+fill(c);
+
+// Extract components
+let h = hue(c);
+let s = saturation(c);
+let b = brightness(c);
+let r = red(c);
+let g = green(c);
+let bl = blue(c);
+let a = alpha(c);
+
+// Hex colors work everywhere
+fill('#e8d5b7');
+fill('#e8d5b7cc');  // with alpha
+
+// Modify via setters
+c.setAlpha(128);
+c.setRed(200);
+```
+
+## Color Interpolation
+
+### lerpColor
+
+```javascript
+let c1 = color(0, 80, 100);    // red
+let c2 = color(200, 80, 100);  // blue
+let mixed = lerpColor(c1, c2, 0.5);  // midpoint blend
+// Works in current colorMode
+```
+
+### paletteLerp (p5.js 1.11+)
+
+Interpolate through multiple colors at once.
+
+```javascript
+let colors = [
+  color('#2E0854'),
+  color('#850E35'),
+  color('#EE6C4D'),
+  color('#F5E663')
+];
+let c = paletteLerp(colors, t);  // t = 0..1, interpolates through all
+```
+
+### Manual Multi-Stop Gradient
+
+```javascript
+function multiLerp(colors, t) {
+  t = constrain(t, 0, 1);
+  let segment = t * (colors.length - 1);
+  let idx = floor(segment);
+  let frac = segment - idx;
+  idx = min(idx, colors.length - 2);
+  return lerpColor(colors[idx], colors[idx + 1], frac);
+}
+```
+
+## Gradient Rendering
+
+### Linear Gradient
+
+```javascript
+function linearGradient(x1, y1, x2, y2, c1, c2) {
+  let steps = dist(x1, y1, x2, y2);
+  for (let i = 0; i <= steps; i++) {
+    let t = i / steps;
+    let c = lerpColor(c1, c2, t);
+    stroke(c);
+    let x = lerp(x1, x2, t);
+    let y = lerp(y1, y2, t);
+    // Draw perpendicular line at each point
+    let dx = -(y2 - y1) / steps * 1000;
+    let dy = (x2 - x1) / steps * 1000;
+    line(x - dx, y - dy, x + dx, y + dy);
+  }
+}
+```
+
+### Radial Gradient
+
+```javascript
+function radialGradient(cx, cy, r, innerColor, outerColor) {
+  noStroke();
+  for (let i = r; i > 0; i--) {
+    let t = 1 - i / r;
+    fill(lerpColor(innerColor, outerColor, t));
+    ellipse(cx, cy, i * 2);
+  }
+}
+```
+
+### Noise-Based Gradient
+
+```javascript
+function noiseGradient(colors, noiseScale, time) {
+  loadPixels();
+  for (let y = 0; y < height; y++) {
+    for (let x = 0; x < width; x++) {
+      let n = noise(x * noiseScale, y * noiseScale, time);
+      let c = multiLerp(colors, n);
+      let idx = 4 * (y * width + x);
+      pixels[idx] = red(c);
+      pixels[idx+1] = green(c);
+      pixels[idx+2] = blue(c);
+      pixels[idx+3] = 255;
+    }
+  }
+  updatePixels();
+}
+```
+
+## Procedural Palette Generation
+
+### Complementary
+
+```javascript
+function complementary(baseHue) {
+  return [baseHue, (baseHue + 180) % 360];
+}
+```
+
+### Analogous
+
+```javascript
+function analogous(baseHue, spread = 30) {
+  return [
+    (baseHue - spread + 360) % 360,
+    baseHue,
+    (baseHue + spread) % 360
+  ];
+}
+```
+
+### Triadic
+
+```javascript
+function triadic(baseHue) {
+  return [baseHue, (baseHue + 120) % 360, (baseHue + 240) % 360];
+}
+```
+
+### Split Complementary
+
+```javascript
+function splitComplementary(baseHue) {
+  return [baseHue, (baseHue + 150) % 360, (baseHue + 210) % 360];
+}
+```
+
+### Tetradic (Rectangle)
+
+```javascript
+function tetradic(baseHue) {
+  return [baseHue, (baseHue + 60) % 360, (baseHue + 180) % 360, (baseHue + 240) % 360];
+}
+```
+
+### Monochromatic Variations
+
+```javascript
+function monoVariations(hue, count = 5) {
+  let colors = [];
+  for (let i = 0; i < count; i++) {
+    let s = map(i, 0, count - 1, 20, 90);
+    let b = map(i, 0, count - 1, 95, 40);
+    colors.push(color(hue, s, b));
+  }
+  return colors;
+}
+```
+
+## Curated Palette Library
+
+### Warm Palettes
+
+```javascript
+const SUNSET = ['#2E0854', '#850E35', '#EE6C4D', '#F5E663'];
+const EMBER  = ['#1a0000', '#4a0000', '#8b2500', '#cd5c00', '#ffd700'];
+const PEACH  = ['#fff5eb', '#ffdab9', '#ff9a76', '#ff6b6b', '#c94c4c'];
+const COPPER = ['#1c1108', '#3d2b1f', '#7b4b2a', '#b87333', '#daa06d'];
+```
+
+### Cool Palettes
+
+```javascript
+const OCEAN   = ['#0a0e27', '#1a1b4b', '#2a4a7f', '#3d7cb8', '#87ceeb'];
+const ARCTIC  = ['#0d1b2a', '#1b263b', '#415a77', '#778da9', '#e0e1dd'];
+const FOREST  = ['#0b1a0b', '#1a3a1a', '#2d5a2d', '#4a8c4a', '#90c990'];
+const DEEP_SEA = ['#000814', '#001d3d', '#003566', '#006d77', '#83c5be'];
+```
+
+### Neutral Palettes
+
+```javascript
+const GRAPHITE = ['#1a1a1a', '#333333', '#555555', '#888888', '#cccccc'];
+const CREAM    = ['#f4f0e8', '#e8dcc8', '#c9b99a', '#a89070', '#7a6450'];
+const SLATE    = ['#1e293b', '#334155', '#475569', '#64748b', '#94a3b8'];
+```
+
+### Vivid Palettes
+
+```javascript
+const NEON     = ['#ff00ff', '#00ffff', '#ff0080', '#80ff00', '#0080ff'];
+const RAINBOW  = ['#ff0000', '#ff8000', '#ffff00', '#00ff00', '#0000ff', '#8000ff'];
+const VAPOR    = ['#ff71ce', '#01cdfe', '#05ffa1', '#b967ff', '#fffb96'];
+const CYBER    = ['#0f0f0f', '#00ff41', '#ff0090', '#00d4ff', '#ffd000'];
+```
+
+### Earth Tones
+
+```javascript
+const TERRA    = ['#2c1810', '#5c3a2a', '#8b6b4a', '#c4a672', '#e8d5b7'];
+const MOSS     = ['#1a1f16', '#3d4a2e', '#6b7c4f', '#9aab7a', '#c8d4a9'];
+const CLAY     = ['#3b2f2f', '#6b4c4c', '#9e7676', '#c9a0a0', '#e8caca'];
+```
+
+## Blend Modes
+
+```javascript
+blendMode(BLEND);       // default — alpha compositing
+blendMode(ADD);         // additive — bright glow effects
+blendMode(MULTIPLY);    // darkening — shadows, texture overlay
+blendMode(SCREEN);      // lightening — soft glow
+blendMode(OVERLAY);     // contrast boost — high/low emphasis
+blendMode(DIFFERENCE);  // color subtraction — psychedelic
+blendMode(EXCLUSION);   // softer difference
+blendMode(REPLACE);     // overwrite (no alpha blending)
+blendMode(REMOVE);      // subtract alpha
+blendMode(LIGHTEST);    // keep brighter pixel
+blendMode(DARKEST);     // keep darker pixel
+blendMode(BURN);        // darken + saturate
+blendMode(DODGE);       // lighten + saturate
+blendMode(SOFT_LIGHT);  // subtle overlay
+blendMode(HARD_LIGHT);  // strong overlay
+
+// ALWAYS reset after use
+blendMode(BLEND);
+```
+
+### Blend Mode Recipes
+
+| Effect | Mode | Use case |
+|--------|------|----------|
+| Additive glow | `ADD` | Light beams, fire, particles |
+| Shadow overlay | `MULTIPLY` | Texture, vignette |
+| Soft light mix | `SCREEN` | Fog, mist, backlight |
+| High contrast | `OVERLAY` | Dramatic compositing |
+| Color negative | `DIFFERENCE` | Glitch, psychedelic |
+| Layer compositing | `BLEND` | Standard alpha layering |
+
+## Background Techniques
+
+### Textured Background
+
+```javascript
+function texturedBackground(baseColor, noiseScale, noiseAmount) {
+  loadPixels();
+  let r = red(baseColor), g = green(baseColor), b = blue(baseColor);
+  for (let i = 0; i < pixels.length; i += 4) {
+    let x = (i / 4) % width;
+    let y = floor((i / 4) / width);
+    let n = (noise(x * noiseScale, y * noiseScale) - 0.5) * noiseAmount;
+    pixels[i] = constrain(r + n, 0, 255);
+    pixels[i+1] = constrain(g + n, 0, 255);
+    pixels[i+2] = constrain(b + n, 0, 255);
+    pixels[i+3] = 255;
+  }
+  updatePixels();
+}
+```
+
+### Vignette
+
+```javascript
+function vignette(strength = 0.5, radius = 0.7) {
+  loadPixels();
+  let cx = width / 2, cy = height / 2;
+  let maxDist = dist(0, 0, cx, cy);
+  for (let i = 0; i < pixels.length; i += 4) {
+    let x = (i / 4) % width;
+    let y = floor((i / 4) / width);
+    let d = dist(x, y, cx, cy) / maxDist;
+    let factor = 1.0 - smoothstep(constrain((d - radius) / (1 - radius), 0, 1)) * strength;
+    pixels[i] *= factor;
+    pixels[i+1] *= factor;
+    pixels[i+2] *= factor;
+  }
+  updatePixels();
+}
+
+function smoothstep(t) { return t * t * (3 - 2 * t); }
+```
+
+### Film Grain
+
+```javascript
+function filmGrain(amount = 30) {
+  loadPixels();
+  for (let i = 0; i < pixels.length; i += 4) {
+    let grain = random(-amount, amount);
+    pixels[i] = constrain(pixels[i] + grain, 0, 255);
+    pixels[i+1] = constrain(pixels[i+1] + grain, 0, 255);
+    pixels[i+2] = constrain(pixels[i+2] + grain, 0, 255);
+  }
+  updatePixels();
+}
+```

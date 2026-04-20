@@ -1,1 +1,202 @@
-IyBEZWNvcmF0aW9ucyBhbmQgVmlzdWFsIFBvbGlzaAoKRGVjb3JhdGlvbnMgYXJlIG1vYmplY3RzIHRoYXQgYW5ub3RhdGUsIGhpZ2hsaWdodCwgb3IgZnJhbWUgb3RoZXIgbW9iamVjdHMuIFRoZXkgdHVybiBhIHRlY2huaWNhbGx5IGNvcnJlY3QgYW5pbWF0aW9uIGludG8gYSB2aXN1YWxseSBwb2xpc2hlZCBvbmUuCgojIyBTdXJyb3VuZGluZ1JlY3RhbmdsZQoKRHJhd3MgYSByZWN0YW5nbGUgYXJvdW5kIGFueSBtb2JqZWN0LiBUaGUgZ28tdG8gZm9yIGhpZ2hsaWdodGluZzoKCmBgYHB5dGhvbgpoaWdobGlnaHQgPSBTdXJyb3VuZGluZ1JlY3RhbmdsZSgKICAgIGVxdWF0aW9uWzJdLCAgICAgICAgICAgICMgdGhlIHRlcm0gdG8gaGlnaGxpZ2h0CiAgICBjb2xvcj1ZRUxMT1csCiAgICBidWZmPTAuMTUsICAgICAgICAgICAgICAjIHBhZGRpbmcgYmV0d2VlbiBjb250ZW50IGFuZCBib3JkZXIKICAgIGNvcm5lcl9yYWRpdXM9MC4xLCAgICAgICMgcm91bmRlZCBjb3JuZXJzCiAgICBzdHJva2Vfd2lkdGg9MgopCnNlbGYucGxheShDcmVhdGUoaGlnaGxpZ2h0KSkKc2VsZi53YWl0KDEpCnNlbGYucGxheShGYWRlT3V0KGhpZ2hsaWdodCkpCmBgYAoKIyMjIEFyb3VuZCBwYXJ0IG9mIGFuIGVxdWF0aW9uCgpgYGBweXRob24KZXEgPSBNYXRoVGV4KHIiRSIsIHIiPSIsIHIibSIsIHIiY14yIikKYm94ID0gU3Vycm91bmRpbmdSZWN0YW5nbGUoZXFbMjpdLCBjb2xvcj1ZRUxMT1csIGJ1ZmY9MC4xKSAgIyBoaWdobGlnaHQgIm1jwrIiCmxhYmVsID0gVGV4dCgibWFzcy1lbmVyZ3kiLCBmb250X3NpemU9MTgsIGZvbnQ9Ik1lbmxvIiwgY29sb3I9WUVMTE9XKQpsYWJlbC5uZXh0X3RvKGJveCwgRE9XTiwgYnVmZj0wLjIpCnNlbGYucGxheShDcmVhdGUoYm94KSwgRmFkZUluKGxhYmVsKSkKYGBgCgojIyBCYWNrZ3JvdW5kUmVjdGFuZ2xlCgpTZW1pLXRyYW5zcGFyZW50IGJhY2tncm91bmQgYmVoaW5kIHRleHQgZm9yIHJlYWRhYmlsaXR5IG92ZXIgY29tcGxleCBzY2VuZXM6CgpgYGBweXRob24KYmcgPSBCYWNrZ3JvdW5kUmVjdGFuZ2xlKGVxdWF0aW9uLCBmaWxsX29wYWNpdHk9MC43LCBidWZmPTAuMiwgY29sb3I9QkxBQ0spCnNlbGYucGxheShGYWRlSW4oYmcpLCBXcml0ZShlcXVhdGlvbikpCgojIE9yIHVzaW5nIHNldF9zdHJva2UgZm9yIGEgImJhY2tkcm9wIiBlZmZlY3Qgb24gdGhlIHRleHQgaXRzZWxmOgpsYWJlbC5zZXRfc3Ryb2tlKEJMQUNLLCB3aWR0aD01LCBiYWNrZ3JvdW5kPVRydWUpCmBgYAoKVGhlIGBzZXRfc3Ryb2tlKGJhY2tncm91bmQ9VHJ1ZSlgIGFwcHJvYWNoIGlzIGNsZWFuZXIgZm9yIHRleHQgbGFiZWxzIG92ZXIgZ3JhcGhzL2RpYWdyYW1zLgoKIyMgQnJhY2UgYW5kIEJyYWNlTGFiZWwKCkN1cmx5IGJyYWNlcyB0aGF0IGFubm90YXRlIHNlY3Rpb25zIG9mIGEgZGlhZ3JhbSBvciBlcXVhdGlvbjoKCmBgYHB5dGhvbgpicmFjZSA9IEJyYWNlKGVxdWF0aW9uWzI6NF0sIERPV04sIGNvbG9yPVlFTExPVykKYnJhY2VfbGFiZWwgPSBicmFjZS5nZXRfdGV4dCgidGhlc2UgdGVybXMiLCBmb250X3NpemU9MjApCnNlbGYucGxheShHcm93RnJvbUNlbnRlcihicmFjZSksIEZhZGVJbihicmFjZV9sYWJlbCkpCgojIEJldHdlZW4gdHdvIHNwZWNpZmljIHBvaW50cwpicmFjZSA9IEJyYWNlQmV0d2VlblBvaW50cyhwb2ludF9hLCBwb2ludF9iLCBkaXJlY3Rpb249VVApCmBgYAoKIyMjIEJyYWNlIHBsYWNlbWVudAoKYGBgcHl0aG9uCiMgQmVsb3cgYSBncm91cApCcmFjZShncm91cCwgRE9XTikKIyBBYm92ZSBhIGdyb3VwCkJyYWNlKGdyb3VwLCBVUCkKIyBMZWZ0IG9mIGEgZ3JvdXAKQnJhY2UoZ3JvdXAsIExFRlQpCiMgUmlnaHQgb2YgYSBncm91cApCcmFjZShncm91cCwgUklHSFQpCmBgYAoKIyMgQXJyb3dzIGZvciBBbm5vdGF0aW9uCgojIyMgU3RyYWlnaHQgYXJyb3dzIHBvaW50aW5nIHRvIG1vYmplY3RzCgpgYGBweXRob24KYXJyb3cgPSBBcnJvdygKICAgIHN0YXJ0PWxhYmVsLmdldF9ib3R0b20oKSwKICAgIGVuZD10YXJnZXQuZ2V0X3RvcCgpLAogICAgY29sb3I9WUVMTE9XLAogICAgc3Ryb2tlX3dpZHRoPTIsCiAgICBidWZmPTAuMSwgICAgICAgICAgICAgICAgICAgICMgZ2FwIGJldHdlZW4gYXJyb3cgdGlwIGFuZCB0YXJnZXQKICAgIG1heF90aXBfbGVuZ3RoX3RvX2xlbmd0aF9yYXRpbz0wLjE1ICAjIHNtYWxsIGFycm93aGVhZAopCnNlbGYucGxheShHcm93QXJyb3coYXJyb3cpLCBGYWRlSW4obGFiZWwpKQpgYGAKCiMjIyBDdXJ2ZWQgYXJyb3dzCgpgYGBweXRob24KYXJyb3cgPSBDdXJ2ZWRBcnJvdygKICAgIHN0YXJ0X3BvaW50PXNvdXJjZS5nZXRfcmlnaHQoKSwKICAgIGVuZF9wb2ludD10YXJnZXQuZ2V0X2xlZnQoKSwKICAgIGFuZ2xlPVBJLzQsICAgICAgICAgICAgICAgICAgIyBjdXJ2ZSBhbmdsZQogICAgY29sb3I9UFJJTUFSWQopCmBgYAoKIyMjIExhYmVsaW5nIHdpdGggYXJyb3dzCgpgYGBweXRob24KIyBMYWJlbGVkQXJyb3c6IGFycm93IHdpdGggYnVpbHQtaW4gdGV4dCBsYWJlbAphcnIgPSBMYWJlbGVkQXJyb3coCiAgICBUZXh0KCJncmFkaWVudCIsIGZvbnRfc2l6ZT0xNiwgZm9udD0iTWVubG8iKSwKICAgIHN0YXJ0PXBvaW50X2EsIGVuZD1wb2ludF9iLCBjb2xvcj1SRUQKKQpgYGAKCiMjIERhc2hlZExpbmUgYW5kIERhc2hlZFZNb2JqZWN0CgpgYGBweXRob24KIyBEYXNoZWQgbGluZSAoZm9yIGFzeW1wdG90ZXMsIGNvbnN0cnVjdGlvbiBsaW5lcywgaW1wbGllZCBjb25uZWN0aW9ucykKYXN5bXB0b3RlID0gRGFzaGVkTGluZSgKICAgIGF4ZXMuYzJwKDIsIC0zKSwgYXhlcy5jMnAoMiwgMyksCiAgICBjb2xvcj1ZRUxMT1csIGRhc2hfbGVuZ3RoPTAuMTUKKQoKIyBNYWtlIGFueSBWTW9iamVjdCBkYXNoZWQKZGFzaGVkX2NpcmNsZSA9IERhc2hlZFZNb2JqZWN0KENpcmNsZShyYWRpdXM9MiwgY29sb3I9QkxVRSksIG51bV9kYXNoZXM9MzApCmBgYAoKIyMgQW5nbGUgYW5kIFJpZ2h0QW5nbGUgTWFya2VycwoKYGBgcHl0aG9uCmxpbmUxID0gTGluZShPUklHSU4sIFJJR0hUICogMikKbGluZTIgPSBMaW5lKE9SSUdJTiwgVVAgKiAyICsgUklHSFQpCgojIEFuZ2xlIGFyYyBiZXR3ZWVuIHR3byBsaW5lcwphbmdsZSA9IEFuZ2xlKGxpbmUxLCBsaW5lMiwgcmFkaXVzPTAuNSwgY29sb3I9WUVMTE9XKQphbmdsZV92YWx1ZSA9IGFuZ2xlLmdldF92YWx1ZSgpICAjIHJhZGlhbnMKCiMgUmlnaHQgYW5nbGUgbWFya2VyICh0aGUgc21hbGwgc3F1YXJlKQpyaWdodF9hbmdsZSA9IFJpZ2h0QW5nbGUobGluZTEsIExpbmUoT1JJR0lOLCBVUCAqIDIpLCBsZW5ndGg9MC4zLCBjb2xvcj1XSElURSkKYGBgCgojIyBDcm9zcyAoc3RyaWtldGhyb3VnaCkKCk1hcmsgc29tZXRoaW5nIGFzIHdyb25nIG9yIGRlcHJlY2F0ZWQ6CgpgYGBweXRob24KY3Jvc3MgPSBDcm9zcyhvbGRfZXF1YXRpb24sIGNvbG9yPVJFRCwgc3Ryb2tlX3dpZHRoPTQpCnNlbGYucGxheShDcmVhdGUoY3Jvc3MpKQojIFRoZW4gc2hvdyB0aGUgY29ycmVjdCB2ZXJzaW9uCmBgYAoKIyMgVW5kZXJsaW5lCgpgYGBweXRob24KdW5kZXJsaW5lID0gVW5kZXJsaW5lKGltcG9ydGFudF90ZXh0LCBjb2xvcj1BQ0NFTlQsIHN0cm9rZV93aWR0aD0zKQpzZWxmLnBsYXkoQ3JlYXRlKHVuZGVybGluZSkpCmBgYAoKIyMgQ29sb3IgSGlnaGxpZ2h0aW5nIFdvcmtmbG93CgojIyMgTWV0aG9kIDE6IEF0IGNyZWF0aW9uIHdpdGggdDJjCgpgYGBweXRob24KdGV4dCA9IFRleHQoIlRoZSBncmFkaWVudCBpcyBuZWdhdGl2ZSBoZXJlIiwgdDJjPXsiZ3JhZGllbnQiOiBCTFVFLCAibmVnYXRpdmUiOiBSRUR9KQpgYGAKCiMjIyBNZXRob2QgMjogc2V0X2NvbG9yX2J5X3RleCBhZnRlciBjcmVhdGlvbgoKYGBgcHl0aG9uCmVxID0gTWF0aFRleChyIlxuYWJsYSBMID0gLVxmcmFje1xwYXJ0aWFsIEx9e1xwYXJ0aWFsIHd9IikKZXEuc2V0X2NvbG9yX2J5X3RleChyIlxuYWJsYSIsIEJMVUUpCmVxLnNldF9jb2xvcl9ieV90ZXgociJccGFydGlhbCIsIFJFRCkKYGBgCgojIyMgTWV0aG9kIDM6IEluZGV4IGludG8gc3VibW9iamVjdHMKCmBgYHB5dGhvbgplcSA9IE1hdGhUZXgociJhIiwgciIrIiwgciJiIiwgciI9IiwgciJjIikKZXFbMF0uc2V0X2NvbG9yKFJFRCkgICAgIyAiYSIKZXFbMl0uc2V0X2NvbG9yKEJMVUUpICAgIyAiYiIKZXFbNF0uc2V0X2NvbG9yKEdSRUVOKSAgIyAiYyIKYGBgCgojIyBDb21iaW5pbmcgQW5ub3RhdGlvbnMKCkxheWVyIG11bHRpcGxlIGFubm90YXRpb25zIGZvciBlbXBoYXNpczoKCmBgYHB5dGhvbgojIEhpZ2hsaWdodCBhIHRlcm0sIGFkZCBhIGJyYWNlLCBhbmQgYW4gYXJyb3cg4oCUIGluIHNlcXVlbmNlCmJveCA9IFN1cnJvdW5kaW5nUmVjdGFuZ2xlKGVxWzJdLCBjb2xvcj1ZRUxMT1csIGJ1ZmY9MC4xKQpicmFjZSA9IEJyYWNlKGVxWzJdLCBET1dOLCBjb2xvcj1ZRUxMT1cpCmxhYmVsID0gYnJhY2UuZ2V0X3RleHQoImxlYXJuaW5nIHJhdGUiLCBmb250X3NpemU9MTgpCgpzZWxmLnBsYXkoQ3JlYXRlKGJveCkpCnNlbGYud2FpdCgwLjUpCnNlbGYucGxheShGYWRlT3V0KGJveCksIEdyb3dGcm9tQ2VudGVyKGJyYWNlKSwgRmFkZUluKGxhYmVsKSkKc2VsZi53YWl0KDEuNSkKc2VsZi5wbGF5KEZhZGVPdXQoYnJhY2UpLCBGYWRlT3V0KGxhYmVsKSkKYGBgCgojIyMgVGhlIGFubm90YXRpb24gbGlmZWN5Y2xlCgpBbm5vdGF0aW9ucyBzaG91bGQgZm9sbG93IGEgcmh5dGhtOgoxLiAqKkFwcGVhcioqIOKAlCBkcmF3IGF0dGVudGlvbiAoQ3JlYXRlLCBHcm93RnJvbUNlbnRlcikKMi4gKipIb2xkKiog4oCUIHZpZXdlciByZWFkcyBhbmQgdW5kZXJzdGFuZHMgKHNlbGYud2FpdCkKMy4gKipEaXNhcHBlYXIqKiDigJQgY2xlYXIgdGhlIHN0YWdlIGZvciB0aGUgbmV4dCB0aGluZyAoRmFkZU91dCkKCk5ldmVyIGxlYXZlIGFubm90YXRpb25zIG9uIHNjcmVlbiBpbmRlZmluaXRlbHkg4oCUIHRoZXkgYmVjb21lIHZpc3VhbCBub2lzZSBvbmNlIHRoZWlyIHB1cnBvc2UgaXMgc2VydmVkLgo=
+# Decorations and Visual Polish
+
+Decorations are mobjects that annotate, highlight, or frame other mobjects. They turn a technically correct animation into a visually polished one.
+
+## SurroundingRectangle
+
+Draws a rectangle around any mobject. The go-to for highlighting:
+
+```python
+highlight = SurroundingRectangle(
+    equation[2],            # the term to highlight
+    color=YELLOW,
+    buff=0.15,              # padding between content and border
+    corner_radius=0.1,      # rounded corners
+    stroke_width=2
+)
+self.play(Create(highlight))
+self.wait(1)
+self.play(FadeOut(highlight))
+```
+
+### Around part of an equation
+
+```python
+eq = MathTex(r"E", r"=", r"m", r"c^2")
+box = SurroundingRectangle(eq[2:], color=YELLOW, buff=0.1)  # highlight "mc²"
+label = Text("mass-energy", font_size=18, font="Menlo", color=YELLOW)
+label.next_to(box, DOWN, buff=0.2)
+self.play(Create(box), FadeIn(label))
+```
+
+## BackgroundRectangle
+
+Semi-transparent background behind text for readability over complex scenes:
+
+```python
+bg = BackgroundRectangle(equation, fill_opacity=0.7, buff=0.2, color=BLACK)
+self.play(FadeIn(bg), Write(equation))
+
+# Or using set_stroke for a "backdrop" effect on the text itself:
+label.set_stroke(BLACK, width=5, background=True)
+```
+
+The `set_stroke(background=True)` approach is cleaner for text labels over graphs/diagrams.
+
+## Brace and BraceLabel
+
+Curly braces that annotate sections of a diagram or equation:
+
+```python
+brace = Brace(equation[2:4], DOWN, color=YELLOW)
+brace_label = brace.get_text("these terms", font_size=20)
+self.play(GrowFromCenter(brace), FadeIn(brace_label))
+
+# Between two specific points
+brace = BraceBetweenPoints(point_a, point_b, direction=UP)
+```
+
+### Brace placement
+
+```python
+# Below a group
+Brace(group, DOWN)
+# Above a group
+Brace(group, UP)
+# Left of a group
+Brace(group, LEFT)
+# Right of a group
+Brace(group, RIGHT)
+```
+
+## Arrows for Annotation
+
+### Straight arrows pointing to mobjects
+
+```python
+arrow = Arrow(
+    start=label.get_bottom(),
+    end=target.get_top(),
+    color=YELLOW,
+    stroke_width=2,
+    buff=0.1,                    # gap between arrow tip and target
+    max_tip_length_to_length_ratio=0.15  # small arrowhead
+)
+self.play(GrowArrow(arrow), FadeIn(label))
+```
+
+### Curved arrows
+
+```python
+arrow = CurvedArrow(
+    start_point=source.get_right(),
+    end_point=target.get_left(),
+    angle=PI/4,                  # curve angle
+    color=PRIMARY
+)
+```
+
+### Labeling with arrows
+
+```python
+# LabeledArrow: arrow with built-in text label
+arr = LabeledArrow(
+    Text("gradient", font_size=16, font="Menlo"),
+    start=point_a, end=point_b, color=RED
+)
+```
+
+## DashedLine and DashedVMobject
+
+```python
+# Dashed line (for asymptotes, construction lines, implied connections)
+asymptote = DashedLine(
+    axes.c2p(2, -3), axes.c2p(2, 3),
+    color=YELLOW, dash_length=0.15
+)
+
+# Make any VMobject dashed
+dashed_circle = DashedVMobject(Circle(radius=2, color=BLUE), num_dashes=30)
+```
+
+## Angle and RightAngle Markers
+
+```python
+line1 = Line(ORIGIN, RIGHT * 2)
+line2 = Line(ORIGIN, UP * 2 + RIGHT)
+
+# Angle arc between two lines
+angle = Angle(line1, line2, radius=0.5, color=YELLOW)
+angle_value = angle.get_value()  # radians
+
+# Right angle marker (the small square)
+right_angle = RightAngle(line1, Line(ORIGIN, UP * 2), length=0.3, color=WHITE)
+```
+
+## Cross (strikethrough)
+
+Mark something as wrong or deprecated:
+
+```python
+cross = Cross(old_equation, color=RED, stroke_width=4)
+self.play(Create(cross))
+# Then show the correct version
+```
+
+## Underline
+
+```python
+underline = Underline(important_text, color=ACCENT, stroke_width=3)
+self.play(Create(underline))
+```
+
+## Color Highlighting Workflow
+
+### Method 1: At creation with t2c
+
+```python
+text = Text("The gradient is negative here", t2c={"gradient": BLUE, "negative": RED})
+```
+
+### Method 2: set_color_by_tex after creation
+
+```python
+eq = MathTex(r"\nabla L = -\frac{\partial L}{\partial w}")
+eq.set_color_by_tex(r"\nabla", BLUE)
+eq.set_color_by_tex(r"\partial", RED)
+```
+
+### Method 3: Index into submobjects
+
+```python
+eq = MathTex(r"a", r"+", r"b", r"=", r"c")
+eq[0].set_color(RED)    # "a"
+eq[2].set_color(BLUE)   # "b"
+eq[4].set_color(GREEN)  # "c"
+```
+
+## Combining Annotations
+
+Layer multiple annotations for emphasis:
+
+```python
+# Highlight a term, add a brace, and an arrow — in sequence
+box = SurroundingRectangle(eq[2], color=YELLOW, buff=0.1)
+brace = Brace(eq[2], DOWN, color=YELLOW)
+label = brace.get_text("learning rate", font_size=18)
+
+self.play(Create(box))
+self.wait(0.5)
+self.play(FadeOut(box), GrowFromCenter(brace), FadeIn(label))
+self.wait(1.5)
+self.play(FadeOut(brace), FadeOut(label))
+```
+
+### The annotation lifecycle
+
+Annotations should follow a rhythm:
+1. **Appear** — draw attention (Create, GrowFromCenter)
+2. **Hold** — viewer reads and understands (self.wait)
+3. **Disappear** — clear the stage for the next thing (FadeOut)
+
+Never leave annotations on screen indefinitely — they become visual noise once their purpose is served.

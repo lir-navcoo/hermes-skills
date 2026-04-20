@@ -1,1 +1,282 @@
-IyBBbmltYXRpb25zIFJlZmVyZW5jZQoKIyMgQ29yZSBDb25jZXB0CgpBbiBhbmltYXRpb24gaXMgYSBQeXRob24gb2JqZWN0IHRoYXQgY29tcHV0ZXMgaW50ZXJtZWRpYXRlIHZpc3VhbCBzdGF0ZXMgb2YgYSBtb2JqZWN0IG92ZXIgdGltZS4gQW5pbWF0aW9ucyBhcmUgb2JqZWN0cyBwYXNzZWQgdG8gYHNlbGYucGxheSgpYCwgbm90IGZ1bmN0aW9ucy4KCmBydW5fdGltZWAgY29udHJvbHMgc2Vjb25kcyAoZGVmYXVsdDogMSkuIEFsd2F5cyBzcGVjaWZ5IGl0IGV4cGxpY2l0bHkgZm9yIGltcG9ydGFudCBhbmltYXRpb25zLgoKIyMgQ3JlYXRpb24gQW5pbWF0aW9ucwoKYGBgcHl0aG9uCnNlbGYucGxheShDcmVhdGUoY2lyY2xlKSkgICAgICAgICAgIyB0cmFjZXMgb3V0bGluZQpzZWxmLnBsYXkoV3JpdGUoZXF1YXRpb24pKSAgICAgICAgICMgc2ltdWxhdGVzIGhhbmR3cml0aW5nIChmb3IgVGV4dC9NYXRoVGV4KQpzZWxmLnBsYXkoRmFkZUluKGdyb3VwKSkgICAgICAgICAgICMgb3BhY2l0eSAwIC0+IDEKc2VsZi5wbGF5KEdyb3dGcm9tQ2VudGVyKGRvdCkpICAgICAjIHNjYWxlIDAgLT4gMSBmcm9tIGNlbnRlcgpzZWxmLnBsYXkoRHJhd0JvcmRlclRoZW5GaWxsKHNxKSkgICMgb3V0bGluZSBmaXJzdCwgdGhlbiBmaWxsCmBgYAoKIyMgUmVtb3ZhbCBBbmltYXRpb25zCgpgYGBweXRob24Kc2VsZi5wbGF5KEZhZGVPdXQobW9iamVjdCkpICAgICAgICAgIyBvcGFjaXR5IDEgLT4gMApzZWxmLnBsYXkoVW5jcmVhdGUoY2lyY2xlKSkgICAgICAgICMgcmV2ZXJzZSBvZiBDcmVhdGUKc2VsZi5wbGF5KFNocmlua1RvQ2VudGVyKGdyb3VwKSkgICAjIHNjYWxlIDEgLT4gMApgYGAKCiMjIFRyYW5zZm9ybSBBbmltYXRpb25zCgpgYGBweXRob24KIyBUcmFuc2Zvcm0gLS0gbW9kaWZpZXMgdGhlIG9yaWdpbmFsIGluIHBsYWNlCnNlbGYucGxheShUcmFuc2Zvcm0oY2lyY2xlLCBzcXVhcmUpKQojIEFmdGVyOiBjaXJjbGUgSVMgdGhlIHNxdWFyZSAoc2FtZSBvYmplY3QsIG5ldyBhcHBlYXJhbmNlKQoKIyBSZXBsYWNlbWVudFRyYW5zZm9ybSAtLSByZXBsYWNlcyBvbGQgd2l0aCBuZXcKc2VsZi5wbGF5KFJlcGxhY2VtZW50VHJhbnNmb3JtKGNpcmNsZSwgc3F1YXJlKSkKIyBBZnRlcjogY2lyY2xlIHJlbW92ZWQsIHNxdWFyZSBvbiBzY3JlZW4KCiMgVHJhbnNmb3JtTWF0Y2hpbmdUZXggLS0gc21hcnQgZXF1YXRpb24gbW9ycGhpbmcKZXExID0gTWF0aFRleChyImFeMiArIGJeMiIpCmVxMiA9IE1hdGhUZXgociJhXjIgKyBiXjIgPSBjXjIiKQpzZWxmLnBsYXkoVHJhbnNmb3JtTWF0Y2hpbmdUZXgoZXExLCBlcTIpKQpgYGAKCioqQ3JpdGljYWwqKjogQWZ0ZXIgYFRyYW5zZm9ybShBLCBCKWAsIHZhcmlhYmxlIGBBYCByZWZlcmVuY2VzIHRoZSBvbi1zY3JlZW4gbW9iamVjdC4gVmFyaWFibGUgYEJgIGlzIE5PVCBvbiBzY3JlZW4uIFVzZSBgUmVwbGFjZW1lbnRUcmFuc2Zvcm1gIHdoZW4geW91IHdhbnQgdG8gd29yayB3aXRoIGBCYCBhZnRlcndhcmRzLgoKIyMgVGhlIC5hbmltYXRlIFN5bnRheAoKYGBgcHl0aG9uCnNlbGYucGxheShjaXJjbGUuYW5pbWF0ZS5zZXRfY29sb3IoUkVEKSkKc2VsZi5wbGF5KGNpcmNsZS5hbmltYXRlLnNoaWZ0KFJJR0hUICogMikuc2NhbGUoMC41KSkgICMgY2hhaW4gbXVsdGlwbGUKYGBgCgojIyBBZGRpdGlvbmFsIENyZWF0aW9uIEFuaW1hdGlvbnMKCmBgYHB5dGhvbgpzZWxmLnBsYXkoR3Jvd0Zyb21Qb2ludChjaXJjbGUsIExFRlQgKiAzKSkgICAgICMgc2NhbGUgMCAtPiAxIGZyb20gYSBzcGVjaWZpYyBwb2ludApzZWxmLnBsYXkoR3Jvd0Zyb21FZGdlKHJlY3QsIERPV04pKSAgICAgICAgICAgICAjIGdyb3cgZnJvbSBvbmUgZWRnZQpzZWxmLnBsYXkoU3BpbkluRnJvbU5vdGhpbmcoc3F1YXJlKSkgICAgICAgICAgICAjIHNjYWxlIHVwIHdoaWxlIHJvdGF0aW5nIChkZWZhdWx0IFBJLzIpCnNlbGYucGxheShHcm93QXJyb3coYXJyb3cpKSAgICAgICAgICAgICAgICAgICAgICMgZ3Jvd3MgYXJyb3cgZnJvbSBzdGFydCB0byB0aXAKYGBgCgojIyBNb3ZlbWVudCBBbmltYXRpb25zCgpgYGBweXRob24KIyBNb3ZlIGEgbW9iamVjdCBhbG9uZyBhbiBhcmJpdHJhcnkgcGF0aApwYXRoID0gQXJjKHJhZGl1cz0yLCBhbmdsZT1QSSkKc2VsZi5wbGF5KE1vdmVBbG9uZ1BhdGgoZG90LCBwYXRoKSwgcnVuX3RpbWU9MikKCiMgUm90YXRlIChhcyBhIFRyYW5zZm9ybSwgbm90IC5hbmltYXRlIOKAlCBzdXBwb3J0cyBhYm91dF9wb2ludCkKc2VsZi5wbGF5KFJvdGF0ZShzcXVhcmUsIGFuZ2xlPVBJIC8gMiwgYWJvdXRfcG9pbnQ9T1JJR0lOKSwgcnVuX3RpbWU9MS41KQoKIyBSb3RhdGluZyAoY29udGludW91cyByb3RhdGlvbiwgdXBkYXRlci1zdHlsZSDigJQgZ29vZCBmb3Igc3Bpbm5pbmcgb2JqZWN0cykKc2VsZi5wbGF5KFJvdGF0aW5nKGdlYXIsIGFuZ2xlPVRBVSwgcnVuX3RpbWU9NCwgcmF0ZV9mdW5jPWxpbmVhcikpCmBgYAoKYE1vdmVBbG9uZ1BhdGhgIHRha2VzIGFueSBgVk1vYmplY3RgIGFzIHRoZSBwYXRoIOKAlCB1c2UgYEFyY2AsIGBDdWJpY0JlemllcmAsIGBMaW5lYCwgb3IgYSBjdXN0b20gYFZNb2JqZWN0YC4gUG9zaXRpb24gaXMgY29tcHV0ZWQgdmlhIGBwYXRoLnBvaW50X2Zyb21fcHJvcG9ydGlvbigpYC4KCiMjIEVtcGhhc2lzIEFuaW1hdGlvbnMKCmBgYHB5dGhvbgpzZWxmLnBsYXkoSW5kaWNhdGUobW9iamVjdCkpICAgICAgICAgICAgICMgYnJpZWYgeWVsbG93IGZsYXNoICsgc2NhbGUKc2VsZi5wbGF5KENpcmN1bXNjcmliZShtb2JqZWN0KSkgICAgICAgICAjIGRyYXcgcmVjdGFuZ2xlIGFyb3VuZCBpdApzZWxmLnBsYXkoRmxhc2gocG9pbnQpKSAgICAgICAgICAgICAgICAgICMgcmFkaWFsIGZsYXNoCnNlbGYucGxheShXaWdnbGUobW9iamVjdCkpICAgICAgICAgICAgICAgIyBzaGFrZSBzaWRlIHRvIHNpZGUKYGBgCgojIyBSYXRlIEZ1bmN0aW9ucwoKYGBgcHl0aG9uCnNlbGYucGxheShGYWRlSW4obW9iKSwgcmF0ZV9mdW5jPXNtb290aCkgICAgICAgICAgIyBkZWZhdWx0OiBlYXNlIGluL291dApzZWxmLnBsYXkoRmFkZUluKG1vYiksIHJhdGVfZnVuYz1saW5lYXIpICAgICAgICAgICAjIGNvbnN0YW50IHNwZWVkCnNlbGYucGxheShGYWRlSW4obW9iKSwgcmF0ZV9mdW5jPXJ1c2hfaW50bykgICAgICAgICMgc3RhcnQgc2xvdywgZW5kIGZhc3QKc2VsZi5wbGF5KEZhZGVJbihtb2IpLCByYXRlX2Z1bmM9cnVzaF9mcm9tKSAgICAgICAgIyBzdGFydCBmYXN0LCBlbmQgc2xvdwpzZWxmLnBsYXkoRmFkZUluKG1vYiksIHJhdGVfZnVuYz10aGVyZV9hbmRfYmFjaykgICAjIGFuaW1hdGUgdGhlbiByZXZlcnNlCmBgYAoKIyMgQ29tcG9zaXRpb24KCmBgYHB5dGhvbgojIFNpbXVsdGFuZW91cwpzZWxmLnBsYXkoRmFkZUluKHRpdGxlKSwgQ3JlYXRlKGNpcmNsZSksIHJ1bl90aW1lPTIpCgojIEFuaW1hdGlvbkdyb3VwIHdpdGggbGFnCnNlbGYucGxheShBbmltYXRpb25Hcm91cCgqW0ZhZGVJbihpKSBmb3IgaSBpbiBpdGVtc10sIGxhZ19yYXRpbz0wLjIpKQoKIyBMYWdnZWRTdGFydApzZWxmLnBsYXkoTGFnZ2VkU3RhcnQoKltXcml0ZShsKSBmb3IgbCBpbiBsaW5lc10sIGxhZ19yYXRpbz0wLjMsIHJ1bl90aW1lPTMpKQoKIyBTdWNjZXNzaW9uIChzZXF1ZW50aWFsIGluIG9uZSBwbGF5IGNhbGwpCnNlbGYucGxheShTdWNjZXNzaW9uKEZhZGVJbih0aXRsZSksIFdhaXQoMC41KSwgV3JpdGUoc3VidGl0bGUpKSkKYGBgCgojIyBVcGRhdGVycwoKYGBgcHl0aG9uCnRyYWNrZXIgPSBWYWx1ZVRyYWNrZXIoMCkKZG90ID0gRG90KCkuYWRkX3VwZGF0ZXIobGFtYmRhIG06IG0ubW92ZV90byhheGVzLmMycCh0cmFja2VyLmdldF92YWx1ZSgpLCAwKSkpCnNlbGYucGxheSh0cmFja2VyLmFuaW1hdGUuc2V0X3ZhbHVlKDUpLCBydW5fdGltZT0zKQpgYGAKCiMjIFN1YnRpdGxlcwoKYGBgcHl0aG9uCiMgTWV0aG9kIDE6IHN0YW5kYWxvbmUKc2VsZi5hZGRfc3ViY2FwdGlvbigiS2V5IGluc2lnaHQiLCBkdXJhdGlvbj0yKQpzZWxmLnBsYXkoV3JpdGUoZXF1YXRpb24pLCBydW5fdGltZT0yLjApCgojIE1ldGhvZCAyOiBpbmxpbmUKc2VsZi5wbGF5KFdyaXRlKGVxdWF0aW9uKSwgc3ViY2FwdGlvbj0iS2V5IGluc2lnaHQiLCBzdWJjYXB0aW9uX2R1cmF0aW9uPTIpCmBgYAoKTWFuaW0gYXV0by1nZW5lcmF0ZXMgYC5zcnRgIHN1YnRpdGxlIGZpbGVzLiBBbHdheXMgYWRkIHN1YmNhcHRpb25zIGZvciBhY2Nlc3NpYmlsaXR5LgoKIyMgVGltaW5nIFBhdHRlcm5zCgpgYGBweXRob24KIyBQYXVzZS1hZnRlci1yZXZlYWwKc2VsZi5wbGF5KFdyaXRlKGtleV9lcXVhdGlvbiksIHJ1bl90aW1lPTIuMCkKc2VsZi53YWl0KDIuMCkKCiMgRGltLWFuZC1mb2N1cwpzZWxmLnBsYXkob2xkX2NvbnRlbnQuYW5pbWF0ZS5zZXRfb3BhY2l0eSgwLjMpLCBGYWRlSW4obmV3X2NvbnRlbnQpKQoKIyBDbGVhbiBleGl0CnNlbGYucGxheShGYWRlT3V0KEdyb3VwKCpzZWxmLm1vYmplY3RzKSksIHJ1bl90aW1lPTAuNSkKc2VsZi53YWl0KDAuMykKYGBgCgojIyBSZWFjdGl2ZSBNb2JqZWN0czogYWx3YXlzX3JlZHJhdygpCgpSZWJ1aWxkIGEgbW9iamVjdCBmcm9tIHNjcmF0Y2ggZXZlcnkgZnJhbWUg4oCUIGVzc2VudGlhbCB3aGVuIGl0cyBnZW9tZXRyeSBkZXBlbmRzIG9uIG90aGVyIGFuaW1hdGVkIG9iamVjdHM6CgpgYGBweXRob24KIyBCcmFjZSB0aGF0IGZvbGxvd3MgYSByZXNpemluZyBzcXVhcmUKYnJhY2UgPSBhbHdheXNfcmVkcmF3KEJyYWNlLCBzcXVhcmUsIFVQKQpzZWxmLmFkZChicmFjZSkKc2VsZi5wbGF5KHNxdWFyZS5hbmltYXRlLnNjYWxlKDIpKSAgIyBicmFjZSBhdXRvLWFkanVzdHMKCiMgSG9yaXpvbnRhbCBsaW5lIHRoYXQgdHJhY2tzIGEgbW92aW5nIGRvdApoX2xpbmUgPSBhbHdheXNfcmVkcmF3KGxhbWJkYTogYXhlcy5nZXRfaF9saW5lKGRvdC5nZXRfbGVmdCgpKSkKCiMgTGFiZWwgdGhhdCBhbHdheXMgc3RheXMgbmV4dCB0byBhbm90aGVyIG1vYmplY3QKbGFiZWwgPSBhbHdheXNfcmVkcmF3KGxhbWJkYTogVGV4dCgiaGVyZSIsIGZvbnRfc2l6ZT0yMCkubmV4dF90byhkb3QsIFVQLCBidWZmPTAuMikpCmBgYAoKTm90ZTogYGFsd2F5c19yZWRyYXdgIHJlY3JlYXRlcyB0aGUgbW9iamVjdCBldmVyeSBmcmFtZS4gRm9yIHNpbXBsZSBwcm9wZXJ0eSB0cmFja2luZywgdXNlIGBhZGRfdXBkYXRlcmAgaW5zdGVhZCAoY2hlYXBlcik6CmBgYHB5dGhvbgpsYWJlbC5hZGRfdXBkYXRlcihsYW1iZGEgbTogbS5uZXh0X3RvKGRvdCwgVVApKQpgYGAKCiMjIFRyYWNlZFBhdGgg4oCUIFRyYWplY3RvcnkgVHJhY2luZwoKRHJhdyB0aGUgcGF0aCBhIHBvaW50IGhhcyB0cmF2ZWxlZDoKCmBgYHB5dGhvbgpkb3QgPSBEb3QoY29sb3I9WUVMTE9XKQpwYXRoID0gVHJhY2VkUGF0aChkb3QuZ2V0X2NlbnRlciwgc3Ryb2tlX2NvbG9yPVlFTExPVywgc3Ryb2tlX3dpZHRoPTIpCnNlbGYuYWRkKGRvdCwgcGF0aCkKc2VsZi5wbGF5KGRvdC5hbmltYXRlLnNoaWZ0KFJJR0hUICogMyArIFVQICogMiksIHJ1bl90aW1lPTIpCiMgcGF0aCBzaG93cyB0aGUgdHJhaWwgdGhlIGRvdCBsZWZ0IGJlaGluZAoKIyBGYWRpbmcgdHJhaWwgKGRpc3NpcGF0ZXMgb3ZlciB0aW1lKToKcGF0aCA9IFRyYWNlZFBhdGgoZG90LmdldF9jZW50ZXIsIGRpc3NpcGF0aW5nX3RpbWU9MC41LCBzdHJva2Vfb3BhY2l0eT1bMCwgMV0pCmBgYAoKVXNlIGNhc2VzOiBncmFkaWVudCBkZXNjZW50IHBhdGhzLCBwbGFuZXRhcnkgb3JiaXRzLCBmdW5jdGlvbiB0cmFjaW5nLCBwYXJ0aWNsZSB0cmFqZWN0b3JpZXMuCgojIyBGYWRlVHJhbnNmb3JtIOKAlCBTbW9vdGhlciBDcm9zcy1GYWRlcwoKYFRyYW5zZm9ybWAgbW9ycGhzIHNoYXBlcyB0aHJvdWdoIHVnbHkgaW50ZXJtZWRpYXRlIHdhcnBpbmcuIGBGYWRlVHJhbnNmb3JtYCBjcm9zcy1mYWRlcyB3aXRoIHBvc2l0aW9uIG1hdGNoaW5nIOKAlCB1c2UgaXQgd2hlbiBzb3VyY2UgYW5kIHRhcmdldCBsb29rIGRpZmZlcmVudDoKCmBgYHB5dGhvbgojIFVHTFk6IFRyYW5zZm9ybSB3YXJwcyBjaXJjbGUgaW50byBzcXVhcmUgdGhyb3VnaCBhIGJsb2IKc2VsZi5wbGF5KFRyYW5zZm9ybShjaXJjbGUsIHNxdWFyZSkpCgojIFNNT09USDogRmFkZVRyYW5zZm9ybSBjcm9zcy1mYWRlcyBjbGVhbmx5CnNlbGYucGxheShGYWRlVHJhbnNmb3JtKGNpcmNsZSwgc3F1YXJlKSkKCiMgRmFkZVRyYW5zZm9ybVBpZWNlczogcGVyLXN1Ym1vYmplY3QgRmFkZVRyYW5zZm9ybQpzZWxmLnBsYXkoRmFkZVRyYW5zZm9ybVBpZWNlcyhncm91cDEsIGdyb3VwMikpCgojIFRyYW5zZm9ybUZyb21Db3B5OiBhbmltYXRlIGEgQ09QWSB3aGlsZSBrZWVwaW5nIHRoZSBvcmlnaW5hbCB2aXNpYmxlCnNlbGYucGxheShUcmFuc2Zvcm1Gcm9tQ29weShzb3VyY2UsIHRhcmdldCkpCiMgc291cmNlIHN0YXlzIG9uIHNjcmVlbiwgYSBjb3B5IG1vcnBocyBpbnRvIHRhcmdldApgYGAKCioqUmVjb21tZW5kYXRpb246KiogVXNlIGBGYWRlVHJhbnNmb3JtYCBhcyBkZWZhdWx0IGZvciBkaXNzaW1pbGFyIHNoYXBlcy4gVXNlIGBUcmFuc2Zvcm1gL2BSZXBsYWNlbWVudFRyYW5zZm9ybWAgb25seSBmb3Igc2ltaWxhciBzaGFwZXMgKGNpcmNsZeKGkmVsbGlwc2UsIGVxdWF0aW9u4oaSZXF1YXRpb24pLgoKIyMgQXBwbHlNYXRyaXgg4oCUIExpbmVhciBUcmFuc2Zvcm1hdGlvbiBWaXN1YWxpemF0aW9uCgpBbmltYXRlIGEgbWF0cml4IHRyYW5zZm9ybWF0aW9uIG9uIG1vYmplY3RzOgoKYGBgcHl0aG9uCiMgQXBwbHkgYSAyeDIgbWF0cml4IHRvIGEgZ3JpZAptYXRyaXggPSBbWzIsIDFdLCBbMSwgMV1dCnNlbGYucGxheShBcHBseU1hdHJpeChtYXRyaXgsIG51bWJlcl9wbGFuZSksIHJ1bl90aW1lPTIpCgojIEFsc28gd29ya3Mgb24gaW5kaXZpZHVhbCBtb2JqZWN0cwpzZWxmLnBsYXkoQXBwbHlNYXRyaXgoW1swLCAtMV0sIFsxLCAwXV0sIHNxdWFyZSkpICAjIDkwLWRlZ3JlZSByb3RhdGlvbgpgYGAKClBhaXJzIHdpdGggYExpbmVhclRyYW5zZm9ybWF0aW9uU2NlbmVgIOKAlCBzZWUgYGNhbWVyYS1hbmQtM2QubWRgLgoKIyMgc3F1aXNoX3JhdGVfZnVuYyDigJQgVGltZS1XaW5kb3cgU3RhZ2dlcmluZwoKQ29tcHJlc3MgYW55IHJhdGUgZnVuY3Rpb24gaW50byBhIHRpbWUgd2luZG93IHdpdGhpbiBhbiBhbmltYXRpb24uIEVuYWJsZXMgb3ZlcmxhcHBpbmcgc3RhZ2dlciB3aXRob3V0IGBMYWdnZWRTdGFydGA6CgpgYGBweXRob24Kc2VsZi5wbGF5KAogICAgRmFkZUluKGEsIHJhdGVfZnVuYz1zcXVpc2hfcmF0ZV9mdW5jKHNtb290aCwgMCwgMC41KSksICAgICMgMCUgdG8gNTAlCiAgICBGYWRlSW4oYiwgcmF0ZV9mdW5jPXNxdWlzaF9yYXRlX2Z1bmMoc21vb3RoLCAwLjI1LCAwLjc1KSksICMgMjUlIHRvIDc1JQogICAgRmFkZUluKGMsIHJhdGVfZnVuYz1zcXVpc2hfcmF0ZV9mdW5jKHNtb290aCwgMC41LCAxLjApKSwgICMgNTAlIHRvIDEwMCUKICAgIHJ1bl90aW1lPTIKKQpgYGAKCk1vcmUgcHJlY2lzZSB0aGFuIGBMYWdnZWRTdGFydGAgd2hlbiB5b3UgbmVlZCBleGFjdCBvdmVybGFwIGNvbnRyb2wuCgojIyBBZGRpdGlvbmFsIFJhdGUgRnVuY3Rpb25zCgpgYGBweXRob24KZnJvbSBtYW5pbSBpbXBvcnQgKAogICAgc21vb3RoLCBsaW5lYXIsIHJ1c2hfaW50bywgcnVzaF9mcm9tLAogICAgdGhlcmVfYW5kX2JhY2ssIHRoZXJlX2FuZF9iYWNrX3dpdGhfcGF1c2UsCiAgICBydW5uaW5nX3N0YXJ0LCBkb3VibGVfc21vb3RoLCB3aWdnbGUsCiAgICBsaW5nZXJpbmcsIGV4cG9uZW50aWFsX2RlY2F5LCBub3RfcXVpdGVfdGhlcmUsCiAgICBzcXVpc2hfcmF0ZV9mdW5jCikKCiMgcnVubmluZ19zdGFydDogcHVsbHMgYmFjayBiZWZvcmUgZ29pbmcgZm9yd2FyZCAoYW50aWNpcGF0aW9uKQpzZWxmLnBsYXkoRmFkZUluKG1vYiwgcmF0ZV9mdW5jPXJ1bm5pbmdfc3RhcnQpKQoKIyB0aGVyZV9hbmRfYmFja193aXRoX3BhdXNlOiBnb2VzIHRoZXJlLCBob2xkcywgY29tZXMgYmFjawpzZWxmLnBsYXkobW9iLmFuaW1hdGUuc2hpZnQoVVApLCByYXRlX2Z1bmM9dGhlcmVfYW5kX2JhY2tfd2l0aF9wYXVzZSkKCiMgbm90X3F1aXRlX3RoZXJlOiBzdG9wcyBhdCBhIGZyYWN0aW9uIG9mIHRoZSBmdWxsIGFuaW1hdGlvbgpzZWxmLnBsYXkoRmFkZUluKG1vYiwgcmF0ZV9mdW5jPW5vdF9xdWl0ZV90aGVyZSgwLjcpKSkKYGBgCgojIyBTaG93SW5jcmVhc2luZ1N1YnNldHMgLyBTaG93U3VibW9iamVjdHNPbmVCeU9uZQoKUmV2ZWFsIGdyb3VwIG1lbWJlcnMgcHJvZ3Jlc3NpdmVseSDigJQgaWRlYWwgZm9yIGFsZ29yaXRobSB2aXN1YWxpemF0aW9uOgoKYGBgcHl0aG9uCiMgUmV2ZWFsIGFycmF5IGVsZW1lbnRzIG9uZSBhdCBhIHRpbWUKYXJyYXkgPSBHcm91cCgqW1NxdWFyZSgpIGZvciBfIGluIHJhbmdlKDgpXSkuYXJyYW5nZShSSUdIVCkKc2VsZi5wbGF5KFNob3dJbmNyZWFzaW5nU3Vic2V0cyhhcnJheSksIHJ1bl90aW1lPTMpCgojIFNob3cgc3VibW9iamVjdHMgd2l0aCBzdGFnZ2VyZWQgYXBwZWFyYW5jZQpzZWxmLnBsYXkoU2hvd1N1Ym1vYmplY3RzT25lQnlPbmUoY29kZV9saW5lcyksIHJ1bl90aW1lPTQpCmBgYAoKIyMgU2hvd1Bhc3NpbmdGbGFzaAoKQSBmbGFzaCBvZiBsaWdodCB0cmF2ZWxzIGFsb25nIGEgcGF0aDoKCmBgYHB5dGhvbgojIEZsYXNoIHRyYXZlbGluZyBhbG9uZyBhIGN1cnZlCnNlbGYucGxheShTaG93UGFzc2luZ0ZsYXNoKGN1cnZlLmNvcHkoKS5zZXRfY29sb3IoWUVMTE9XKSwgdGltZV93aWR0aD0wLjMpKQoKIyBHcmVhdCBmb3I6IGRhdGEgZmxvdywgZWxlY3RyaWNhbCBzaWduYWxzLCBuZXR3b3JrIHRyYWZmaWMKYGBgCg==
+# Animations Reference
+
+## Core Concept
+
+An animation is a Python object that computes intermediate visual states of a mobject over time. Animations are objects passed to `self.play()`, not functions.
+
+`run_time` controls seconds (default: 1). Always specify it explicitly for important animations.
+
+## Creation Animations
+
+```python
+self.play(Create(circle))          # traces outline
+self.play(Write(equation))         # simulates handwriting (for Text/MathTex)
+self.play(FadeIn(group))           # opacity 0 -> 1
+self.play(GrowFromCenter(dot))     # scale 0 -> 1 from center
+self.play(DrawBorderThenFill(sq))  # outline first, then fill
+```
+
+## Removal Animations
+
+```python
+self.play(FadeOut(mobject))         # opacity 1 -> 0
+self.play(Uncreate(circle))        # reverse of Create
+self.play(ShrinkToCenter(group))   # scale 1 -> 0
+```
+
+## Transform Animations
+
+```python
+# Transform -- modifies the original in place
+self.play(Transform(circle, square))
+# After: circle IS the square (same object, new appearance)
+
+# ReplacementTransform -- replaces old with new
+self.play(ReplacementTransform(circle, square))
+# After: circle removed, square on screen
+
+# TransformMatchingTex -- smart equation morphing
+eq1 = MathTex(r"a^2 + b^2")
+eq2 = MathTex(r"a^2 + b^2 = c^2")
+self.play(TransformMatchingTex(eq1, eq2))
+```
+
+**Critical**: After `Transform(A, B)`, variable `A` references the on-screen mobject. Variable `B` is NOT on screen. Use `ReplacementTransform` when you want to work with `B` afterwards.
+
+## The .animate Syntax
+
+```python
+self.play(circle.animate.set_color(RED))
+self.play(circle.animate.shift(RIGHT * 2).scale(0.5))  # chain multiple
+```
+
+## Additional Creation Animations
+
+```python
+self.play(GrowFromPoint(circle, LEFT * 3))     # scale 0 -> 1 from a specific point
+self.play(GrowFromEdge(rect, DOWN))             # grow from one edge
+self.play(SpinInFromNothing(square))            # scale up while rotating (default PI/2)
+self.play(GrowArrow(arrow))                     # grows arrow from start to tip
+```
+
+## Movement Animations
+
+```python
+# Move a mobject along an arbitrary path
+path = Arc(radius=2, angle=PI)
+self.play(MoveAlongPath(dot, path), run_time=2)
+
+# Rotate (as a Transform, not .animate — supports about_point)
+self.play(Rotate(square, angle=PI / 2, about_point=ORIGIN), run_time=1.5)
+
+# Rotating (continuous rotation, updater-style — good for spinning objects)
+self.play(Rotating(gear, angle=TAU, run_time=4, rate_func=linear))
+```
+
+`MoveAlongPath` takes any `VMobject` as the path — use `Arc`, `CubicBezier`, `Line`, or a custom `VMobject`. Position is computed via `path.point_from_proportion()`.
+
+## Emphasis Animations
+
+```python
+self.play(Indicate(mobject))             # brief yellow flash + scale
+self.play(Circumscribe(mobject))         # draw rectangle around it
+self.play(Flash(point))                  # radial flash
+self.play(Wiggle(mobject))               # shake side to side
+```
+
+## Rate Functions
+
+```python
+self.play(FadeIn(mob), rate_func=smooth)          # default: ease in/out
+self.play(FadeIn(mob), rate_func=linear)           # constant speed
+self.play(FadeIn(mob), rate_func=rush_into)        # start slow, end fast
+self.play(FadeIn(mob), rate_func=rush_from)        # start fast, end slow
+self.play(FadeIn(mob), rate_func=there_and_back)   # animate then reverse
+```
+
+## Composition
+
+```python
+# Simultaneous
+self.play(FadeIn(title), Create(circle), run_time=2)
+
+# AnimationGroup with lag
+self.play(AnimationGroup(*[FadeIn(i) for i in items], lag_ratio=0.2))
+
+# LaggedStart
+self.play(LaggedStart(*[Write(l) for l in lines], lag_ratio=0.3, run_time=3))
+
+# Succession (sequential in one play call)
+self.play(Succession(FadeIn(title), Wait(0.5), Write(subtitle)))
+```
+
+## Updaters
+
+```python
+tracker = ValueTracker(0)
+dot = Dot().add_updater(lambda m: m.move_to(axes.c2p(tracker.get_value(), 0)))
+self.play(tracker.animate.set_value(5), run_time=3)
+```
+
+## Subtitles
+
+```python
+# Method 1: standalone
+self.add_subcaption("Key insight", duration=2)
+self.play(Write(equation), run_time=2.0)
+
+# Method 2: inline
+self.play(Write(equation), subcaption="Key insight", subcaption_duration=2)
+```
+
+Manim auto-generates `.srt` subtitle files. Always add subcaptions for accessibility.
+
+## Timing Patterns
+
+```python
+# Pause-after-reveal
+self.play(Write(key_equation), run_time=2.0)
+self.wait(2.0)
+
+# Dim-and-focus
+self.play(old_content.animate.set_opacity(0.3), FadeIn(new_content))
+
+# Clean exit
+self.play(FadeOut(Group(*self.mobjects)), run_time=0.5)
+self.wait(0.3)
+```
+
+## Reactive Mobjects: always_redraw()
+
+Rebuild a mobject from scratch every frame — essential when its geometry depends on other animated objects:
+
+```python
+# Brace that follows a resizing square
+brace = always_redraw(Brace, square, UP)
+self.add(brace)
+self.play(square.animate.scale(2))  # brace auto-adjusts
+
+# Horizontal line that tracks a moving dot
+h_line = always_redraw(lambda: axes.get_h_line(dot.get_left()))
+
+# Label that always stays next to another mobject
+label = always_redraw(lambda: Text("here", font_size=20).next_to(dot, UP, buff=0.2))
+```
+
+Note: `always_redraw` recreates the mobject every frame. For simple property tracking, use `add_updater` instead (cheaper):
+```python
+label.add_updater(lambda m: m.next_to(dot, UP))
+```
+
+## TracedPath — Trajectory Tracing
+
+Draw the path a point has traveled:
+
+```python
+dot = Dot(color=YELLOW)
+path = TracedPath(dot.get_center, stroke_color=YELLOW, stroke_width=2)
+self.add(dot, path)
+self.play(dot.animate.shift(RIGHT * 3 + UP * 2), run_time=2)
+# path shows the trail the dot left behind
+
+# Fading trail (dissipates over time):
+path = TracedPath(dot.get_center, dissipating_time=0.5, stroke_opacity=[0, 1])
+```
+
+Use cases: gradient descent paths, planetary orbits, function tracing, particle trajectories.
+
+## FadeTransform — Smoother Cross-Fades
+
+`Transform` morphs shapes through ugly intermediate warping. `FadeTransform` cross-fades with position matching — use it when source and target look different:
+
+```python
+# UGLY: Transform warps circle into square through a blob
+self.play(Transform(circle, square))
+
+# SMOOTH: FadeTransform cross-fades cleanly
+self.play(FadeTransform(circle, square))
+
+# FadeTransformPieces: per-submobject FadeTransform
+self.play(FadeTransformPieces(group1, group2))
+
+# TransformFromCopy: animate a COPY while keeping the original visible
+self.play(TransformFromCopy(source, target))
+# source stays on screen, a copy morphs into target
+```
+
+**Recommendation:** Use `FadeTransform` as default for dissimilar shapes. Use `Transform`/`ReplacementTransform` only for similar shapes (circle→ellipse, equation→equation).
+
+## ApplyMatrix — Linear Transformation Visualization
+
+Animate a matrix transformation on mobjects:
+
+```python
+# Apply a 2x2 matrix to a grid
+matrix = [[2, 1], [1, 1]]
+self.play(ApplyMatrix(matrix, number_plane), run_time=2)
+
+# Also works on individual mobjects
+self.play(ApplyMatrix([[0, -1], [1, 0]], square))  # 90-degree rotation
+```
+
+Pairs with `LinearTransformationScene` — see `camera-and-3d.md`.
+
+## squish_rate_func — Time-Window Staggering
+
+Compress any rate function into a time window within an animation. Enables overlapping stagger without `LaggedStart`:
+
+```python
+self.play(
+    FadeIn(a, rate_func=squish_rate_func(smooth, 0, 0.5)),    # 0% to 50%
+    FadeIn(b, rate_func=squish_rate_func(smooth, 0.25, 0.75)), # 25% to 75%
+    FadeIn(c, rate_func=squish_rate_func(smooth, 0.5, 1.0)),  # 50% to 100%
+    run_time=2
+)
+```
+
+More precise than `LaggedStart` when you need exact overlap control.
+
+## Additional Rate Functions
+
+```python
+from manim import (
+    smooth, linear, rush_into, rush_from,
+    there_and_back, there_and_back_with_pause,
+    running_start, double_smooth, wiggle,
+    lingering, exponential_decay, not_quite_there,
+    squish_rate_func
+)
+
+# running_start: pulls back before going forward (anticipation)
+self.play(FadeIn(mob, rate_func=running_start))
+
+# there_and_back_with_pause: goes there, holds, comes back
+self.play(mob.animate.shift(UP), rate_func=there_and_back_with_pause)
+
+# not_quite_there: stops at a fraction of the full animation
+self.play(FadeIn(mob, rate_func=not_quite_there(0.7)))
+```
+
+## ShowIncreasingSubsets / ShowSubmobjectsOneByOne
+
+Reveal group members progressively — ideal for algorithm visualization:
+
+```python
+# Reveal array elements one at a time
+array = Group(*[Square() for _ in range(8)]).arrange(RIGHT)
+self.play(ShowIncreasingSubsets(array), run_time=3)
+
+# Show submobjects with staggered appearance
+self.play(ShowSubmobjectsOneByOne(code_lines), run_time=4)
+```
+
+## ShowPassingFlash
+
+A flash of light travels along a path:
+
+```python
+# Flash traveling along a curve
+self.play(ShowPassingFlash(curve.copy().set_color(YELLOW), time_width=0.3))
+
+# Great for: data flow, electrical signals, network traffic
+```

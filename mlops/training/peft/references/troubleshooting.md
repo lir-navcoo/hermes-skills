@@ -1,1 +1,480 @@
-IyBQRUZUIFRyb3VibGVzaG9vdGluZyBHdWlkZQoKIyMgSW5zdGFsbGF0aW9uIElzc3VlcwoKIyMjIGJpdHNhbmRieXRlcyBDVURBIEVycm9yCgoqKkVycm9yKio6IGBDVURBIFNldHVwIGZhaWxlZCBkZXNwaXRlIEdQVSBiZWluZyBhdmFpbGFibGVgCgoqKkZpeCoqOgpgYGBiYXNoCiMgQ2hlY2sgQ1VEQSB2ZXJzaW9uCm52Y2MgLS12ZXJzaW9uCgojIEluc3RhbGwgbWF0Y2hpbmcgYml0c2FuZGJ5dGVzCnBpcCB1bmluc3RhbGwgYml0c2FuZGJ5dGVzCnBpcCBpbnN0YWxsIGJpdHNhbmRieXRlcyAtLW5vLWNhY2hlLWRpcgoKIyBPciBjb21waWxlIGZyb20gc291cmNlIGZvciBzcGVjaWZpYyBDVURBCmdpdCBjbG9uZSBodHRwczovL2dpdGh1Yi5jb20vVGltRGV0dG1lcnMvYml0c2FuZGJ5dGVzLmdpdApjZCBiaXRzYW5kYnl0ZXMKQ1VEQV9WRVJTSU9OPTExOCBtYWtlIGN1ZGExMXggICMgQWRqdXN0IGZvciB5b3VyIENVREEKcGlwIGluc3RhbGwgLgpgYGAKCiMjIyBUcml0b24gSW1wb3J0IEVycm9yCgoqKkVycm9yKio6IGBNb2R1bGVOb3RGb3VuZEVycm9yOiBObyBtb2R1bGUgbmFtZWQgJ3RyaXRvbidgCgoqKkZpeCoqOgpgYGBiYXNoCiMgSW5zdGFsbCB0cml0b24gKExpbnV4IG9ubHkpCnBpcCBpbnN0YWxsIHRyaXRvbgoKIyBXaW5kb3dzOiBUcml0b24gbm90IHN1cHBvcnRlZCwgdXNlIENVREEgYmFja2VuZAojIFNldCBlbnZpcm9ubWVudCB2YXJpYWJsZSB0byBkaXNhYmxlIHRyaXRvbgpleHBvcnQgQ1VEQV9WSVNJQkxFX0RFVklDRVM9MApgYGAKCiMjIyBQRUZUIFZlcnNpb24gQ29uZmxpY3RzCgoqKkVycm9yKio6IGBBdHRyaWJ1dGVFcnJvcjogJ0xvcmFDb25maWcnIG9iamVjdCBoYXMgbm8gYXR0cmlidXRlICd1c2VfZG9yYSdgCgoqKkZpeCoqOgpgYGBiYXNoCiMgVXBncmFkZSB0byBsYXRlc3QgUEVGVApwaXAgaW5zdGFsbCBwZWZ0Pj0wLjEzLjAgLS11cGdyYWRlCgojIENoZWNrIHZlcnNpb24KcHl0aG9uIC1jICJpbXBvcnQgcGVmdDsgcHJpbnQocGVmdC5fX3ZlcnNpb25fXykiCmBgYAoKIyMgVHJhaW5pbmcgSXNzdWVzCgojIyMgQ1VEQSBPdXQgb2YgTWVtb3J5CgoqKkVycm9yKio6IGB0b3JjaC5jdWRhLk91dE9mTWVtb3J5RXJyb3I6IENVREEgb3V0IG9mIG1lbW9yeWAKCioqU29sdXRpb25zKio6CgoxLiAqKkVuYWJsZSBncmFkaWVudCBjaGVja3BvaW50aW5nKio6CmBgYHB5dGhvbgpmcm9tIHBlZnQgaW1wb3J0IHByZXBhcmVfbW9kZWxfZm9yX2tiaXRfdHJhaW5pbmcKbW9kZWwgPSBwcmVwYXJlX21vZGVsX2Zvcl9rYml0X3RyYWluaW5nKG1vZGVsLCB1c2VfZ3JhZGllbnRfY2hlY2twb2ludGluZz1UcnVlKQpgYGAKCjIuICoqUmVkdWNlIGJhdGNoIHNpemUqKjoKYGBgcHl0aG9uClRyYWluaW5nQXJndW1lbnRzKAogICAgcGVyX2RldmljZV90cmFpbl9iYXRjaF9zaXplPTEsCiAgICBncmFkaWVudF9hY2N1bXVsYXRpb25fc3RlcHM9MTYgICMgTWFpbnRhaW4gZWZmZWN0aXZlIGJhdGNoIHNpemUKKQpgYGAKCjMuICoqVXNlIFFMb1JBKio6CmBgYHB5dGhvbgpmcm9tIHRyYW5zZm9ybWVycyBpbXBvcnQgQml0c0FuZEJ5dGVzQ29uZmlnCgpibmJfY29uZmlnID0gQml0c0FuZEJ5dGVzQ29uZmlnKAogICAgbG9hZF9pbl80Yml0PVRydWUsCiAgICBibmJfNGJpdF9xdWFudF90eXBlPSJuZjQiLAogICAgYm5iXzRiaXRfdXNlX2RvdWJsZV9xdWFudD1UcnVlCikKbW9kZWwgPSBBdXRvTW9kZWxGb3JDYXVzYWxMTS5mcm9tX3ByZXRyYWluZWQobW9kZWxfbmFtZSwgcXVhbnRpemF0aW9uX2NvbmZpZz1ibmJfY29uZmlnKQpgYGAKCjQuICoqTG93ZXIgTG9SQSByYW5rKio6CmBgYHB5dGhvbgpMb3JhQ29uZmlnKHI9OCkgICMgSW5zdGVhZCBvZiByPTE2IG9yIGhpZ2hlcgpgYGAKCjUuICoqVGFyZ2V0IGZld2VyIG1vZHVsZXMqKjoKYGBgcHl0aG9uCnRhcmdldF9tb2R1bGVzPVsicV9wcm9qIiwgInZfcHJvaiJdICAjIEluc3RlYWQgb2YgYWxsLWxpbmVhcgpgYGAKCiMjIyBMb3NzIE5vdCBEZWNyZWFzaW5nCgoqKlByb2JsZW0qKjogVHJhaW5pbmcgbG9zcyBzdGF5cyBmbGF0IG9yIGluY3JlYXNlcy4KCioqU29sdXRpb25zKio6CgoxLiAqKkNoZWNrIGxlYXJuaW5nIHJhdGUqKjoKYGBgcHl0aG9uCiMgU3RhcnQgbG93ZXIKVHJhaW5pbmdBcmd1bWVudHMobGVhcm5pbmdfcmF0ZT0xZS00KSAgIyBOb3QgMmUtNCBvciBoaWdoZXIKYGBgCgoyLiAqKlZlcmlmeSBhZGFwdGVyIGlzIGFjdGl2ZSoqOgpgYGBweXRob24KbW9kZWwucHJpbnRfdHJhaW5hYmxlX3BhcmFtZXRlcnMoKQojIFNob3VsZCBzaG93ID4wIHRyYWluYWJsZSBwYXJhbXMKCiMgQ2hlY2sgYWRhcHRlciBhcHBsaWVkCnByaW50KG1vZGVsLnBlZnRfY29uZmlnKQpgYGAKCjMuICoqQ2hlY2sgZGF0YSBmb3JtYXR0aW5nKio6CmBgYHB5dGhvbgojIFZlcmlmeSB0b2tlbml6YXRpb24Kc2FtcGxlID0gZGF0YXNldFswXQpkZWNvZGVkID0gdG9rZW5pemVyLmRlY29kZShzYW1wbGVbImlucHV0X2lkcyJdKQpwcmludChkZWNvZGVkKSAgIyBTaG91bGQgbG9vayBjb3JyZWN0CmBgYAoKNC4gKipJbmNyZWFzZSByYW5rKio6CmBgYHB5dGhvbgpMb3JhQ29uZmlnKHI9MzIsIGxvcmFfYWxwaGE9NjQpICAjIE1vcmUgY2FwYWNpdHkKYGBgCgojIyMgTmFOIExvc3MKCioqRXJyb3IqKjogYExvc3MgaXMgTmFOYAoKKipGaXgqKjoKYGBgcHl0aG9uCiMgVXNlIGJmMTYgaW5zdGVhZCBvZiBmcDE2ClRyYWluaW5nQXJndW1lbnRzKGJmMTY9VHJ1ZSwgZnAxNj1GYWxzZSkKCiMgT3IgZW5hYmxlIGxvc3Mgc2NhbGluZwpUcmFpbmluZ0FyZ3VtZW50cyhmcDE2PVRydWUsIGZwMTZfZnVsbF9ldmFsPVRydWUpCgojIExvd2VyIGxlYXJuaW5nIHJhdGUKVHJhaW5pbmdBcmd1bWVudHMobGVhcm5pbmdfcmF0ZT01ZS01KQoKIyBDaGVjayBmb3IgZGF0YSBpc3N1ZXMKZm9yIGJhdGNoIGluIGRhdGFsb2FkZXI6CiAgICBpZiB0b3JjaC5pc25hbihiYXRjaFsiaW5wdXRfaWRzIl0uZmxvYXQoKSkuYW55KCk6CiAgICAgICAgcHJpbnQoIk5hTiBpbiBpbnB1dCEiKQpgYGAKCiMjIyBBZGFwdGVyIE5vdCBUcmFpbmluZwoKKipQcm9ibGVtKio6IGB0cmFpbmFibGUgcGFyYW1zOiAwYCBvciBtb2RlbCBub3QgdXBkYXRpbmcuCgoqKkZpeCoqOgpgYGBweXRob24KIyBWZXJpZnkgTG9SQSBhcHBsaWVkIHRvIGNvcnJlY3QgbW9kdWxlcwpmb3IgbmFtZSwgbW9kdWxlIGluIG1vZGVsLm5hbWVkX21vZHVsZXMoKToKICAgIGlmICJsb3JhIiBpbiBuYW1lLmxvd2VyKCk6CiAgICAgICAgcHJpbnQoZiJGb3VuZCBMb1JBOiB7bmFtZX0iKQoKIyBDaGVjayB0YXJnZXRfbW9kdWxlcyBtYXRjaCBtb2RlbCBhcmNoaXRlY3R1cmUKZnJvbSBwZWZ0LnV0aWxzIGltcG9ydCBUUkFOU0ZPUk1FUlNfTU9ERUxTX1RPX0xPUkFfVEFSR0VUX01PRFVMRVNfTUFQUElORwpwcmludChUUkFOU0ZPUk1FUlNfTU9ERUxTX1RPX0xPUkFfVEFSR0VUX01PRFVMRVNfTUFQUElORy5nZXQobW9kZWwuY29uZmlnLm1vZGVsX3R5cGUpKQoKIyBFbnN1cmUgbW9kZWwgaW4gdHJhaW5pbmcgbW9kZQptb2RlbC50cmFpbigpCgojIENoZWNrIHJlcXVpcmVzX2dyYWQKZm9yIG5hbWUsIHBhcmFtIGluIG1vZGVsLm5hbWVkX3BhcmFtZXRlcnMoKToKICAgIGlmIHBhcmFtLnJlcXVpcmVzX2dyYWQ6CiAgICAgICAgcHJpbnQoZiJUcmFpbmFibGU6IHtuYW1lfSIpCmBgYAoKIyMgTG9hZGluZyBJc3N1ZXMKCiMjIyBBZGFwdGVyIExvYWRpbmcgRmFpbHMKCioqRXJyb3IqKjogYFZhbHVlRXJyb3I6IENhbid0IGZpbmQgYWRhcHRlciB3ZWlnaHRzYAoKKipGaXgqKjoKYGBgcHl0aG9uCiMgQ2hlY2sgYWRhcHRlciBmaWxlcyBleGlzdAppbXBvcnQgb3MKcHJpbnQob3MubGlzdGRpcigiLi9hZGFwdGVyLXBhdGgiKSkKIyBTaG91bGQgY29udGFpbjogYWRhcHRlcl9jb25maWcuanNvbiwgYWRhcHRlcl9tb2RlbC5zYWZldGVuc29ycwoKIyBMb2FkIHdpdGggY29ycmVjdCBzdHJ1Y3R1cmUKZnJvbSBwZWZ0IGltcG9ydCBQZWZ0TW9kZWwsIFBlZnRDb25maWcKCiMgQ2hlY2sgY29uZmlnCmNvbmZpZyA9IFBlZnRDb25maWcuZnJvbV9wcmV0cmFpbmVkKCIuL2FkYXB0ZXItcGF0aCIpCnByaW50KGNvbmZpZykKCiMgTG9hZCBiYXNlIG1vZGVsIGZpcnN0CmJhc2VfbW9kZWwgPSBBdXRvTW9kZWxGb3JDYXVzYWxMTS5mcm9tX3ByZXRyYWluZWQoY29uZmlnLmJhc2VfbW9kZWxfbmFtZV9vcl9wYXRoKQptb2RlbCA9IFBlZnRNb2RlbC5mcm9tX3ByZXRyYWluZWQoYmFzZV9tb2RlbCwgIi4vYWRhcHRlci1wYXRoIikKYGBgCgojIyMgQmFzZSBNb2RlbCBNaXNtYXRjaAoKKipFcnJvcioqOiBgUnVudGltZUVycm9yOiBzaXplIG1pc21hdGNoYAoKKipGaXgqKjoKYGBgcHl0aG9uCiMgRW5zdXJlIGJhc2UgbW9kZWwgbWF0Y2hlcyBhZGFwdGVyCmZyb20gcGVmdCBpbXBvcnQgUGVmdENvbmZpZwoKY29uZmlnID0gUGVmdENvbmZpZy5mcm9tX3ByZXRyYWluZWQoIi4vYWRhcHRlci1wYXRoIikKcHJpbnQoZiJCYXNlIG1vZGVsOiB7Y29uZmlnLmJhc2VfbW9kZWxfbmFtZV9vcl9wYXRofSIpCgojIExvYWQgZXhhY3Qgc2FtZSBiYXNlIG1vZGVsCmJhc2VfbW9kZWwgPSBBdXRvTW9kZWxGb3JDYXVzYWxMTS5mcm9tX3ByZXRyYWluZWQoY29uZmlnLmJhc2VfbW9kZWxfbmFtZV9vcl9wYXRoKQpgYGAKCiMjIyBTYWZldGVuc29ycyB2cyBQeVRvcmNoIEZvcm1hdAoKKipFcnJvcioqOiBgVmFsdWVFcnJvcjogV2UgY291bGRuJ3QgY29ubmVjdCB0byAnaHR0cHM6Ly9odWdnaW5nZmFjZS5jbydgCgoqKkZpeCoqOgpgYGBweXRob24KIyBGb3JjZSBsb2NhbCBsb2FkaW5nCm1vZGVsID0gUGVmdE1vZGVsLmZyb21fcHJldHJhaW5lZCgKICAgIGJhc2VfbW9kZWwsCiAgICAiLi9hZGFwdGVyLXBhdGgiLAogICAgbG9jYWxfZmlsZXNfb25seT1UcnVlCikKCiMgT3Igc3BlY2lmeSBmb3JtYXQKbW9kZWwuc2F2ZV9wcmV0cmFpbmVkKCIuL2FkYXB0ZXIiLCBzYWZlX3NlcmlhbGl6YXRpb249VHJ1ZSkgICMgc2FmZXRlbnNvcnMKbW9kZWwuc2F2ZV9wcmV0cmFpbmVkKCIuL2FkYXB0ZXIiLCBzYWZlX3NlcmlhbGl6YXRpb249RmFsc2UpICAjIHB5dG9yY2gKYGBgCgojIyBJbmZlcmVuY2UgSXNzdWVzCgojIyMgU2xvdyBHZW5lcmF0aW9uCgoqKlByb2JsZW0qKjogSW5mZXJlbmNlIG11Y2ggc2xvd2VyIHRoYW4gZXhwZWN0ZWQuCgoqKlNvbHV0aW9ucyoqOgoKMS4gKipNZXJnZSBhZGFwdGVyIGZvciBkZXBsb3ltZW50Kio6CmBgYHB5dGhvbgptZXJnZWRfbW9kZWwgPSBtb2RlbC5tZXJnZV9hbmRfdW5sb2FkKCkKIyBObyBhZGFwdGVyIG92ZXJoZWFkIGR1cmluZyBpbmZlcmVuY2UKYGBgCgoyLiAqKlVzZSBvcHRpbWl6ZWQgaW5mZXJlbmNlIGVuZ2luZSoqOgpgYGBweXRob24KZnJvbSB2bGxtIGltcG9ydCBMTE0KbGxtID0gTExNKG1vZGVsPSIuL21lcmdlZC1tb2RlbCIsIGR0eXBlPSJoYWxmIikKYGBgCgozLiAqKkVuYWJsZSBGbGFzaCBBdHRlbnRpb24qKjoKYGBgcHl0aG9uCm1vZGVsID0gQXV0b01vZGVsRm9yQ2F1c2FsTE0uZnJvbV9wcmV0cmFpbmVkKAogICAgbW9kZWxfbmFtZSwKICAgIGF0dG5faW1wbGVtZW50YXRpb249ImZsYXNoX2F0dGVudGlvbl8yIgopCmBgYAoKIyMjIE91dHB1dCBRdWFsaXR5IElzc3VlcwoKKipQcm9ibGVtKio6IEZpbmUtdHVuZWQgbW9kZWwgcHJvZHVjZXMgd29yc2Ugb3V0cHV0cy4KCioqU29sdXRpb25zKio6CgoxLiAqKkNoZWNrIGV2YWx1YXRpb24gd2l0aG91dCBhZGFwdGVyKio6CmBgYHB5dGhvbgp3aXRoIG1vZGVsLmRpc2FibGVfYWRhcHRlcigpOgogICAgYmFzZV9vdXRwdXQgPSBtb2RlbC5nZW5lcmF0ZSgqKmlucHV0cykKIyBDb21wYXJlIHdpdGggYWRhcHRlciBvdXRwdXQKYGBgCgoyLiAqKkxvd2VyIHRlbXBlcmF0dXJlIGR1cmluZyBldmFsKio6CmBgYHB5dGhvbgptb2RlbC5nZW5lcmF0ZSgqKmlucHV0cywgdGVtcGVyYXR1cmU9MC4xLCBkb19zYW1wbGU9RmFsc2UpCmBgYAoKMy4gKipSZXRyYWluIHdpdGggbW9yZSBkYXRhKio6CmBgYHB5dGhvbgojIEluY3JlYXNlIHRyYWluaW5nIHNhbXBsZXMKIyBVc2UgaGlnaGVyIHF1YWxpdHkgZGF0YQojIFRyYWluIGZvciBtb3JlIGVwb2NocwpgYGAKCiMjIyBXcm9uZyBBZGFwdGVyIEFjdGl2ZQoKKipQcm9ibGVtKio6IE1vZGVsIHVzaW5nIHdyb25nIGFkYXB0ZXIgb3Igbm8gYWRhcHRlci4KCioqRml4Kio6CmBgYHB5dGhvbgojIENoZWNrIGFjdGl2ZSBhZGFwdGVycwpwcmludChtb2RlbC5hY3RpdmVfYWRhcHRlcnMpCgojIEV4cGxpY2l0bHkgc2V0IGFkYXB0ZXIKbW9kZWwuc2V0X2FkYXB0ZXIoInlvdXItYWRhcHRlci1uYW1lIikKCiMgTGlzdCBhbGwgYWRhcHRlcnMKcHJpbnQobW9kZWwucGVmdF9jb25maWcua2V5cygpKQpgYGAKCiMjIFFMb1JBIFNwZWNpZmljIElzc3VlcwoKIyMjIFF1YW50aXphdGlvbiBFcnJvcnMKCioqRXJyb3IqKjogYFJ1bnRpbWVFcnJvcjogbWF0MSBhbmQgbWF0MiBzaGFwZXMgY2Fubm90IGJlIG11bHRpcGxpZWRgCgoqKkZpeCoqOgpgYGBweXRob24KIyBFbnN1cmUgY29tcHV0ZSBkdHlwZSBtYXRjaGVzCmJuYl9jb25maWcgPSBCaXRzQW5kQnl0ZXNDb25maWcoCiAgICBsb2FkX2luXzRiaXQ9VHJ1ZSwKICAgIGJuYl80Yml0X2NvbXB1dGVfZHR5cGU9dG9yY2guYmZsb2F0MTYsICAjIE1hdGNoIG1vZGVsIGR0eXBlCiAgICBibmJfNGJpdF9xdWFudF90eXBlPSJuZjQiCikKCiMgTG9hZCB3aXRoIGNvcnJlY3QgZHR5cGUKbW9kZWwgPSBBdXRvTW9kZWxGb3JDYXVzYWxMTS5mcm9tX3ByZXRyYWluZWQoCiAgICBtb2RlbF9uYW1lLAogICAgcXVhbnRpemF0aW9uX2NvbmZpZz1ibmJfY29uZmlnLAogICAgdG9yY2hfZHR5cGU9dG9yY2guYmZsb2F0MTYKKQpgYGAKCiMjIyBRTG9SQSBPT00KCioqRXJyb3IqKjogT09NIGV2ZW4gd2l0aCA0LWJpdCBxdWFudGl6YXRpb24uCgoqKkZpeCoqOgpgYGBweXRob24KIyBFbmFibGUgZG91YmxlIHF1YW50aXphdGlvbgpibmJfY29uZmlnID0gQml0c0FuZEJ5dGVzQ29uZmlnKAogICAgbG9hZF9pbl80Yml0PVRydWUsCiAgICBibmJfNGJpdF91c2VfZG91YmxlX3F1YW50PVRydWUgICMgRnVydGhlciBtZW1vcnkgcmVkdWN0aW9uCikKCiMgVXNlIG9mZmxvYWRpbmcKbW9kZWwgPSBBdXRvTW9kZWxGb3JDYXVzYWxMTS5mcm9tX3ByZXRyYWluZWQoCiAgICBtb2RlbF9uYW1lLAogICAgcXVhbnRpemF0aW9uX2NvbmZpZz1ibmJfY29uZmlnLAogICAgZGV2aWNlX21hcD0iYXV0byIsCiAgICBtYXhfbWVtb3J5PXswOiAiMjBHQiIsICJjcHUiOiAiMTAwR0IifQopCmBgYAoKIyMjIFFMb1JBIE1lcmdlIEZhaWxzCgoqKkVycm9yKio6IGBSdW50aW1lRXJyb3I6IGV4cGVjdGVkIHNjYWxhciB0eXBlIEJGbG9hdDE2IGJ1dCBmb3VuZCBGbG9hdGAKCioqRml4Kio6CmBgYHB5dGhvbgojIERlcXVhbnRpemUgYmVmb3JlIG1lcmdpbmcKZnJvbSBwZWZ0IGltcG9ydCBQZWZ0TW9kZWwKCiMgTG9hZCBpbiBoaWdoZXIgcHJlY2lzaW9uIGZvciBtZXJnaW5nCmJhc2VfbW9kZWwgPSBBdXRvTW9kZWxGb3JDYXVzYWxMTS5mcm9tX3ByZXRyYWluZWQoCiAgICBiYXNlX21vZGVsX25hbWUsCiAgICB0b3JjaF9kdHlwZT10b3JjaC5mbG9hdDE2LCAgIyBOb3QgcXVhbnRpemVkCiAgICBkZXZpY2VfbWFwPSJhdXRvIgopCgojIExvYWQgYWRhcHRlcgptb2RlbCA9IFBlZnRNb2RlbC5mcm9tX3ByZXRyYWluZWQoYmFzZV9tb2RlbCwgIi4vcWxvcmEtYWRhcHRlciIpCgojIE5vdyBtZXJnZQptZXJnZWQgPSBtb2RlbC5tZXJnZV9hbmRfdW5sb2FkKCkKYGBgCgojIyBNdWx0aS1BZGFwdGVyIElzc3VlcwoKIyMjIEFkYXB0ZXIgQ29uZmxpY3QKCioqRXJyb3IqKjogYFZhbHVlRXJyb3I6IEFkYXB0ZXIgd2l0aCBuYW1lICdkZWZhdWx0JyBhbHJlYWR5IGV4aXN0c2AKCioqRml4Kio6CmBgYHB5dGhvbgojIFVzZSB1bmlxdWUgbmFtZXMKbW9kZWwubG9hZF9hZGFwdGVyKCIuL2FkYXB0ZXIxIiwgYWRhcHRlcl9uYW1lPSJ0YXNrMSIpCm1vZGVsLmxvYWRfYWRhcHRlcigiLi9hZGFwdGVyMiIsIGFkYXB0ZXJfbmFtZT0idGFzazIiKQoKIyBPciBkZWxldGUgZXhpc3RpbmcKbW9kZWwuZGVsZXRlX2FkYXB0ZXIoImRlZmF1bHQiKQpgYGAKCiMjIyBNaXhlZCBQcmVjaXNpb24gQWRhcHRlcnMKCioqRXJyb3IqKjogQWRhcHRlcnMgdHJhaW5lZCB3aXRoIGRpZmZlcmVudCBkdHlwZXMuCgoqKkZpeCoqOgpgYGBweXRob24KIyBDb252ZXJ0IGFkYXB0ZXIgcHJlY2lzaW9uCm1vZGVsID0gUGVmdE1vZGVsLmZyb21fcHJldHJhaW5lZChiYXNlX21vZGVsLCAiLi9hZGFwdGVyIikKbW9kZWwgPSBtb2RlbC50byh0b3JjaC5iZmxvYXQxNikKCiMgT3IgbG9hZCB3aXRoIHNwZWNpZmljIGR0eXBlCm1vZGVsID0gUGVmdE1vZGVsLmZyb21fcHJldHJhaW5lZCgKICAgIGJhc2VfbW9kZWwsCiAgICAiLi9hZGFwdGVyIiwKICAgIHRvcmNoX2R0eXBlPXRvcmNoLmJmbG9hdDE2CikKYGBgCgojIyBQZXJmb3JtYW5jZSBPcHRpbWl6YXRpb24KCiMjIyBNZW1vcnkgUHJvZmlsaW5nCgpgYGBweXRob24KaW1wb3J0IHRvcmNoCgpkZWYgcHJpbnRfbWVtb3J5KCk6CiAgICBpZiB0b3JjaC5jdWRhLmlzX2F2YWlsYWJsZSgpOgogICAgICAgIGFsbG9jYXRlZCA9IHRvcmNoLmN1ZGEubWVtb3J5X2FsbG9jYXRlZCgpIC8gMWU5CiAgICAgICAgcmVzZXJ2ZWQgPSB0b3JjaC5jdWRhLm1lbW9yeV9yZXNlcnZlZCgpIC8gMWU5CiAgICAgICAgcHJpbnQoZiJBbGxvY2F0ZWQ6IHthbGxvY2F0ZWQ6LjJmfUdCLCBSZXNlcnZlZDoge3Jlc2VydmVkOi4yZn1HQiIpCgojIFByb2ZpbGUgZHVyaW5nIHRyYWluaW5nCnByaW50X21lbW9yeSgpICAjIEJlZm9yZQptb2RlbC50cmFpbigpCmxvc3MgPSBtb2RlbCgqKmJhdGNoKS5sb3NzCmxvc3MuYmFja3dhcmQoKQpwcmludF9tZW1vcnkoKSAgIyBBZnRlcgpgYGAKCiMjIyBTcGVlZCBQcm9maWxpbmcKCmBgYHB5dGhvbgppbXBvcnQgdGltZQppbXBvcnQgdG9yY2gKCmRlZiBiZW5jaG1hcmtfZ2VuZXJhdGlvbihtb2RlbCwgdG9rZW5pemVyLCBwcm9tcHQsIG5fcnVucz01KToKICAgIGlucHV0cyA9IHRva2VuaXplcihwcm9tcHQsIHJldHVybl90ZW5zb3JzPSJwdCIpLnRvKG1vZGVsLmRldmljZSkKCiAgICAjIFdhcm11cAogICAgbW9kZWwuZ2VuZXJhdGUoKippbnB1dHMsIG1heF9uZXdfdG9rZW5zPTEwKQogICAgdG9yY2guY3VkYS5zeW5jaHJvbml6ZSgpCgogICAgIyBCZW5jaG1hcmsKICAgIHRpbWVzID0gW10KICAgIGZvciBfIGluIHJhbmdlKG5fcnVucyk6CiAgICAgICAgc3RhcnQgPSB0aW1lLnBlcmZfY291bnRlcigpCiAgICAgICAgb3V0cHV0cyA9IG1vZGVsLmdlbmVyYXRlKCoqaW5wdXRzLCBtYXhfbmV3X3Rva2Vucz0xMDApCiAgICAgICAgdG9yY2guY3VkYS5zeW5jaHJvbml6ZSgpCiAgICAgICAgdGltZXMuYXBwZW5kKHRpbWUucGVyZl9jb3VudGVyKCkgLSBzdGFydCkKCiAgICB0b2tlbnMgPSBvdXRwdXRzLnNoYXBlWzFdIC0gaW5wdXRzLmlucHV0X2lkcy5zaGFwZVsxXQogICAgYXZnX3RpbWUgPSBzdW0odGltZXMpIC8gbGVuKHRpbWVzKQogICAgcHJpbnQoZiJTcGVlZDoge3Rva2Vucy9hdmdfdGltZTouMmZ9IHRva2Vucy9zZWMiKQoKIyBDb21wYXJlIGFkYXB0ZXIgdnMgbWVyZ2VkCmJlbmNobWFya19nZW5lcmF0aW9uKGFkYXB0ZXJfbW9kZWwsIHRva2VuaXplciwgIkhlbGxvIikKYmVuY2htYXJrX2dlbmVyYXRpb24obWVyZ2VkX21vZGVsLCB0b2tlbml6ZXIsICJIZWxsbyIpCmBgYAoKIyMgR2V0dGluZyBIZWxwCgoxLiAqKkNoZWNrIFBFRlQgR2l0SHViIElzc3VlcyoqOiBodHRwczovL2dpdGh1Yi5jb20vaHVnZ2luZ2ZhY2UvcGVmdC9pc3N1ZXMKMi4gKipIdWdnaW5nRmFjZSBGb3J1bXMqKjogaHR0cHM6Ly9kaXNjdXNzLmh1Z2dpbmdmYWNlLmNvLwozLiAqKlBFRlQgRG9jdW1lbnRhdGlvbioqOiBodHRwczovL2h1Z2dpbmdmYWNlLmNvL2RvY3MvcGVmdAoKIyMjIERlYnVnZ2luZyBUZW1wbGF0ZQoKV2hlbiByZXBvcnRpbmcgaXNzdWVzLCBpbmNsdWRlOgoKYGBgcHl0aG9uCiMgU3lzdGVtIGluZm8KaW1wb3J0IHBlZnQKaW1wb3J0IHRyYW5zZm9ybWVycwppbXBvcnQgdG9yY2gKCnByaW50KGYiUEVGVDoge3BlZnQuX192ZXJzaW9uX199IikKcHJpbnQoZiJUcmFuc2Zvcm1lcnM6IHt0cmFuc2Zvcm1lcnMuX192ZXJzaW9uX199IikKcHJpbnQoZiJQeVRvcmNoOiB7dG9yY2guX192ZXJzaW9uX199IikKcHJpbnQoZiJDVURBOiB7dG9yY2gudmVyc2lvbi5jdWRhfSIpCnByaW50KGYiR1BVOiB7dG9yY2guY3VkYS5nZXRfZGV2aWNlX25hbWUoMCkgaWYgdG9yY2guY3VkYS5pc19hdmFpbGFibGUoKSBlbHNlICdOL0EnfSIpCgojIENvbmZpZwpwcmludChtb2RlbC5wZWZ0X2NvbmZpZykKbW9kZWwucHJpbnRfdHJhaW5hYmxlX3BhcmFtZXRlcnMoKQpgYGAK
+# PEFT Troubleshooting Guide
+
+## Installation Issues
+
+### bitsandbytes CUDA Error
+
+**Error**: `CUDA Setup failed despite GPU being available`
+
+**Fix**:
+```bash
+# Check CUDA version
+nvcc --version
+
+# Install matching bitsandbytes
+pip uninstall bitsandbytes
+pip install bitsandbytes --no-cache-dir
+
+# Or compile from source for specific CUDA
+git clone https://github.com/TimDettmers/bitsandbytes.git
+cd bitsandbytes
+CUDA_VERSION=118 make cuda11x  # Adjust for your CUDA
+pip install .
+```
+
+### Triton Import Error
+
+**Error**: `ModuleNotFoundError: No module named 'triton'`
+
+**Fix**:
+```bash
+# Install triton (Linux only)
+pip install triton
+
+# Windows: Triton not supported, use CUDA backend
+# Set environment variable to disable triton
+export CUDA_VISIBLE_DEVICES=0
+```
+
+### PEFT Version Conflicts
+
+**Error**: `AttributeError: 'LoraConfig' object has no attribute 'use_dora'`
+
+**Fix**:
+```bash
+# Upgrade to latest PEFT
+pip install peft>=0.13.0 --upgrade
+
+# Check version
+python -c "import peft; print(peft.__version__)"
+```
+
+## Training Issues
+
+### CUDA Out of Memory
+
+**Error**: `torch.cuda.OutOfMemoryError: CUDA out of memory`
+
+**Solutions**:
+
+1. **Enable gradient checkpointing**:
+```python
+from peft import prepare_model_for_kbit_training
+model = prepare_model_for_kbit_training(model, use_gradient_checkpointing=True)
+```
+
+2. **Reduce batch size**:
+```python
+TrainingArguments(
+    per_device_train_batch_size=1,
+    gradient_accumulation_steps=16  # Maintain effective batch size
+)
+```
+
+3. **Use QLoRA**:
+```python
+from transformers import BitsAndBytesConfig
+
+bnb_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_quant_type="nf4",
+    bnb_4bit_use_double_quant=True
+)
+model = AutoModelForCausalLM.from_pretrained(model_name, quantization_config=bnb_config)
+```
+
+4. **Lower LoRA rank**:
+```python
+LoraConfig(r=8)  # Instead of r=16 or higher
+```
+
+5. **Target fewer modules**:
+```python
+target_modules=["q_proj", "v_proj"]  # Instead of all-linear
+```
+
+### Loss Not Decreasing
+
+**Problem**: Training loss stays flat or increases.
+
+**Solutions**:
+
+1. **Check learning rate**:
+```python
+# Start lower
+TrainingArguments(learning_rate=1e-4)  # Not 2e-4 or higher
+```
+
+2. **Verify adapter is active**:
+```python
+model.print_trainable_parameters()
+# Should show >0 trainable params
+
+# Check adapter applied
+print(model.peft_config)
+```
+
+3. **Check data formatting**:
+```python
+# Verify tokenization
+sample = dataset[0]
+decoded = tokenizer.decode(sample["input_ids"])
+print(decoded)  # Should look correct
+```
+
+4. **Increase rank**:
+```python
+LoraConfig(r=32, lora_alpha=64)  # More capacity
+```
+
+### NaN Loss
+
+**Error**: `Loss is NaN`
+
+**Fix**:
+```python
+# Use bf16 instead of fp16
+TrainingArguments(bf16=True, fp16=False)
+
+# Or enable loss scaling
+TrainingArguments(fp16=True, fp16_full_eval=True)
+
+# Lower learning rate
+TrainingArguments(learning_rate=5e-5)
+
+# Check for data issues
+for batch in dataloader:
+    if torch.isnan(batch["input_ids"].float()).any():
+        print("NaN in input!")
+```
+
+### Adapter Not Training
+
+**Problem**: `trainable params: 0` or model not updating.
+
+**Fix**:
+```python
+# Verify LoRA applied to correct modules
+for name, module in model.named_modules():
+    if "lora" in name.lower():
+        print(f"Found LoRA: {name}")
+
+# Check target_modules match model architecture
+from peft.utils import TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING
+print(TRANSFORMERS_MODELS_TO_LORA_TARGET_MODULES_MAPPING.get(model.config.model_type))
+
+# Ensure model in training mode
+model.train()
+
+# Check requires_grad
+for name, param in model.named_parameters():
+    if param.requires_grad:
+        print(f"Trainable: {name}")
+```
+
+## Loading Issues
+
+### Adapter Loading Fails
+
+**Error**: `ValueError: Can't find adapter weights`
+
+**Fix**:
+```python
+# Check adapter files exist
+import os
+print(os.listdir("./adapter-path"))
+# Should contain: adapter_config.json, adapter_model.safetensors
+
+# Load with correct structure
+from peft import PeftModel, PeftConfig
+
+# Check config
+config = PeftConfig.from_pretrained("./adapter-path")
+print(config)
+
+# Load base model first
+base_model = AutoModelForCausalLM.from_pretrained(config.base_model_name_or_path)
+model = PeftModel.from_pretrained(base_model, "./adapter-path")
+```
+
+### Base Model Mismatch
+
+**Error**: `RuntimeError: size mismatch`
+
+**Fix**:
+```python
+# Ensure base model matches adapter
+from peft import PeftConfig
+
+config = PeftConfig.from_pretrained("./adapter-path")
+print(f"Base model: {config.base_model_name_or_path}")
+
+# Load exact same base model
+base_model = AutoModelForCausalLM.from_pretrained(config.base_model_name_or_path)
+```
+
+### Safetensors vs PyTorch Format
+
+**Error**: `ValueError: We couldn't connect to 'https://huggingface.co'`
+
+**Fix**:
+```python
+# Force local loading
+model = PeftModel.from_pretrained(
+    base_model,
+    "./adapter-path",
+    local_files_only=True
+)
+
+# Or specify format
+model.save_pretrained("./adapter", safe_serialization=True)  # safetensors
+model.save_pretrained("./adapter", safe_serialization=False)  # pytorch
+```
+
+## Inference Issues
+
+### Slow Generation
+
+**Problem**: Inference much slower than expected.
+
+**Solutions**:
+
+1. **Merge adapter for deployment**:
+```python
+merged_model = model.merge_and_unload()
+# No adapter overhead during inference
+```
+
+2. **Use optimized inference engine**:
+```python
+from vllm import LLM
+llm = LLM(model="./merged-model", dtype="half")
+```
+
+3. **Enable Flash Attention**:
+```python
+model = AutoModelForCausalLM.from_pretrained(
+    model_name,
+    attn_implementation="flash_attention_2"
+)
+```
+
+### Output Quality Issues
+
+**Problem**: Fine-tuned model produces worse outputs.
+
+**Solutions**:
+
+1. **Check evaluation without adapter**:
+```python
+with model.disable_adapter():
+    base_output = model.generate(**inputs)
+# Compare with adapter output
+```
+
+2. **Lower temperature during eval**:
+```python
+model.generate(**inputs, temperature=0.1, do_sample=False)
+```
+
+3. **Retrain with more data**:
+```python
+# Increase training samples
+# Use higher quality data
+# Train for more epochs
+```
+
+### Wrong Adapter Active
+
+**Problem**: Model using wrong adapter or no adapter.
+
+**Fix**:
+```python
+# Check active adapters
+print(model.active_adapters)
+
+# Explicitly set adapter
+model.set_adapter("your-adapter-name")
+
+# List all adapters
+print(model.peft_config.keys())
+```
+
+## QLoRA Specific Issues
+
+### Quantization Errors
+
+**Error**: `RuntimeError: mat1 and mat2 shapes cannot be multiplied`
+
+**Fix**:
+```python
+# Ensure compute dtype matches
+bnb_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_compute_dtype=torch.bfloat16,  # Match model dtype
+    bnb_4bit_quant_type="nf4"
+)
+
+# Load with correct dtype
+model = AutoModelForCausalLM.from_pretrained(
+    model_name,
+    quantization_config=bnb_config,
+    torch_dtype=torch.bfloat16
+)
+```
+
+### QLoRA OOM
+
+**Error**: OOM even with 4-bit quantization.
+
+**Fix**:
+```python
+# Enable double quantization
+bnb_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_use_double_quant=True  # Further memory reduction
+)
+
+# Use offloading
+model = AutoModelForCausalLM.from_pretrained(
+    model_name,
+    quantization_config=bnb_config,
+    device_map="auto",
+    max_memory={0: "20GB", "cpu": "100GB"}
+)
+```
+
+### QLoRA Merge Fails
+
+**Error**: `RuntimeError: expected scalar type BFloat16 but found Float`
+
+**Fix**:
+```python
+# Dequantize before merging
+from peft import PeftModel
+
+# Load in higher precision for merging
+base_model = AutoModelForCausalLM.from_pretrained(
+    base_model_name,
+    torch_dtype=torch.float16,  # Not quantized
+    device_map="auto"
+)
+
+# Load adapter
+model = PeftModel.from_pretrained(base_model, "./qlora-adapter")
+
+# Now merge
+merged = model.merge_and_unload()
+```
+
+## Multi-Adapter Issues
+
+### Adapter Conflict
+
+**Error**: `ValueError: Adapter with name 'default' already exists`
+
+**Fix**:
+```python
+# Use unique names
+model.load_adapter("./adapter1", adapter_name="task1")
+model.load_adapter("./adapter2", adapter_name="task2")
+
+# Or delete existing
+model.delete_adapter("default")
+```
+
+### Mixed Precision Adapters
+
+**Error**: Adapters trained with different dtypes.
+
+**Fix**:
+```python
+# Convert adapter precision
+model = PeftModel.from_pretrained(base_model, "./adapter")
+model = model.to(torch.bfloat16)
+
+# Or load with specific dtype
+model = PeftModel.from_pretrained(
+    base_model,
+    "./adapter",
+    torch_dtype=torch.bfloat16
+)
+```
+
+## Performance Optimization
+
+### Memory Profiling
+
+```python
+import torch
+
+def print_memory():
+    if torch.cuda.is_available():
+        allocated = torch.cuda.memory_allocated() / 1e9
+        reserved = torch.cuda.memory_reserved() / 1e9
+        print(f"Allocated: {allocated:.2f}GB, Reserved: {reserved:.2f}GB")
+
+# Profile during training
+print_memory()  # Before
+model.train()
+loss = model(**batch).loss
+loss.backward()
+print_memory()  # After
+```
+
+### Speed Profiling
+
+```python
+import time
+import torch
+
+def benchmark_generation(model, tokenizer, prompt, n_runs=5):
+    inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+
+    # Warmup
+    model.generate(**inputs, max_new_tokens=10)
+    torch.cuda.synchronize()
+
+    # Benchmark
+    times = []
+    for _ in range(n_runs):
+        start = time.perf_counter()
+        outputs = model.generate(**inputs, max_new_tokens=100)
+        torch.cuda.synchronize()
+        times.append(time.perf_counter() - start)
+
+    tokens = outputs.shape[1] - inputs.input_ids.shape[1]
+    avg_time = sum(times) / len(times)
+    print(f"Speed: {tokens/avg_time:.2f} tokens/sec")
+
+# Compare adapter vs merged
+benchmark_generation(adapter_model, tokenizer, "Hello")
+benchmark_generation(merged_model, tokenizer, "Hello")
+```
+
+## Getting Help
+
+1. **Check PEFT GitHub Issues**: https://github.com/huggingface/peft/issues
+2. **HuggingFace Forums**: https://discuss.huggingface.co/
+3. **PEFT Documentation**: https://huggingface.co/docs/peft
+
+### Debugging Template
+
+When reporting issues, include:
+
+```python
+# System info
+import peft
+import transformers
+import torch
+
+print(f"PEFT: {peft.__version__}")
+print(f"Transformers: {transformers.__version__}")
+print(f"PyTorch: {torch.__version__}")
+print(f"CUDA: {torch.version.cuda}")
+print(f"GPU: {torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'N/A'}")
+
+# Config
+print(model.peft_config)
+model.print_trainable_parameters()
+```

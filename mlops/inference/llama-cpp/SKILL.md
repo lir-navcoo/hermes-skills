@@ -1,1 +1,438 @@
-LS0tCm5hbWU6IGxsYW1hLWNwcApkZXNjcmlwdGlvbjogUnVuIExMTSBpbmZlcmVuY2Ugd2l0aCBsbGFtYS5jcHAgb24gQ1BVLCBBcHBsZSBTaWxpY29uLCBBTUQvSW50ZWwgR1BVcywgb3IgTlZJRElBIOKAlCBwbHVzIEdHVUYgbW9kZWwgY29udmVyc2lvbiBhbmQgcXVhbnRpemF0aW9uICgy4oCTOCBiaXQgd2l0aCBLLXF1YW50cyBhbmQgaW1hdHJpeCkuIENvdmVycyBDTEksIFB5dGhvbiBiaW5kaW5ncywgT3BlbkFJLWNvbXBhdGlibGUgc2VydmVyLCBhbmQgT2xsYW1hL0xNIFN0dWRpbyBpbnRlZ3JhdGlvbi4gVXNlIGZvciBlZGdlIGRlcGxveW1lbnQsIE0xL00yL00zL000IE1hY3MsIENVREEtbGVzcyBlbnZpcm9ubWVudHMsIG9yIGZsZXhpYmxlIGxvY2FsIHF1YW50aXphdGlvbi4KdmVyc2lvbjogMi4wLjAKYXV0aG9yOiBPcmNoZXN0cmEgUmVzZWFyY2gKbGljZW5zZTogTUlUCmRlcGVuZGVuY2llczogW2xsYW1hLWNwcC1weXRob24+PTAuMi4wXQptZXRhZGF0YToKICBoZXJtZXM6CiAgICB0YWdzOiBbbGxhbWEuY3BwLCBHR1VGLCBRdWFudGl6YXRpb24sIENQVSBJbmZlcmVuY2UsIEFwcGxlIFNpbGljb24sIEVkZ2UgRGVwbG95bWVudCwgTm9uLU5WSURJQSwgQU1EIEdQVXMsIEludGVsIEdQVXMsIEVtYmVkZGVkLCBNb2RlbCBDb21wcmVzc2lvbl0KLS0tCgojIGxsYW1hLmNwcCArIEdHVUYKClB1cmUgQy9DKysgTExNIGluZmVyZW5jZSB3aXRoIG1pbmltYWwgZGVwZW5kZW5jaWVzLCBwbHVzIHRoZSBHR1VGIChHUFQtR2VuZXJhdGVkIFVuaWZpZWQgRm9ybWF0KSBzdGFuZGFyZCB1c2VkIGZvciBxdWFudGl6ZWQgd2VpZ2h0cy4gT25lIHRvb2xjaGFpbiBjb3ZlcnMgY29udmVyc2lvbiwgcXVhbnRpemF0aW9uLCBhbmQgc2VydmluZy4KCiMjIFdoZW4gdG8gdXNlCgoqKlVzZSBsbGFtYS5jcHAgKyBHR1VGIHdoZW46KioKLSBSdW5uaW5nIG9uIENQVS1vbmx5IG1hY2hpbmVzIG9yIEFwcGxlIFNpbGljb24gKE0xL00yL00zL000KSB3aXRoIE1ldGFsIGFjY2VsZXJhdGlvbgotIFVzaW5nIEFNRCAoUk9DbSkgb3IgSW50ZWwgR1BVcyB3aGVyZSBDVURBIGlzbid0IGF2YWlsYWJsZQotIEVkZ2UgZGVwbG95bWVudCAoUmFzcGJlcnJ5IFBpLCBlbWJlZGRlZCBzeXN0ZW1zLCBjb25zdW1lciBsYXB0b3BzKQotIE5lZWQgZmxleGlibGUgcXVhbnRpemF0aW9uICgy4oCTOCBiaXQgd2l0aCBLLXF1YW50cykKLSBXYW50IGxvY2FsIEFJIHRvb2xzIChMTSBTdHVkaW8sIE9sbGFtYSwgdGV4dC1nZW5lcmF0aW9uLXdlYnVpLCBrb2JvbGRjcHApCi0gV2FudCBhIHNpbmdsZSBiaW5hcnkgZGVwbG95IHdpdGhvdXQgRG9ja2VyL1B5dGhvbgoKKipLZXkgYWR2YW50YWdlczoqKgotIFVuaXZlcnNhbCBoYXJkd2FyZTogQ1BVLCBBcHBsZSBTaWxpY29uLCBOVklESUEsIEFNRCwgSW50ZWwKLSBObyBQeXRob24gcnVudGltZSByZXF1aXJlZCAocHVyZSBDL0MrKykKLSBLLXF1YW50cyArIGltYXRyaXggZm9yIGJldHRlciBsb3ctYml0IHF1YWxpdHkKLSBPcGVuQUktY29tcGF0aWJsZSBzZXJ2ZXIgYnVpbHQgaW4KLSBSaWNoIGVjb3N5c3RlbSAoT2xsYW1hLCBMTSBTdHVkaW8sIGxsYW1hLWNwcC1weXRob24pCgoqKlVzZSBhbHRlcm5hdGl2ZXMgaW5zdGVhZDoqKgotICoqdkxMTSoqIOKAlCBOVklESUEgR1BVcywgUGFnZWRBdHRlbnRpb24sIFB5dGhvbi1maXJzdCwgbWF4IHRocm91Z2hwdXQKLSAqKlRlbnNvclJULUxMTSoqIOKAlCBQcm9kdWN0aW9uIE5WSURJQSAoQTEwMC9IMTAwKSwgbWF4aW11bSBzcGVlZAotICoqQVdRL0dQVFEqKiDigJQgQ2FsaWJyYXRlZCBxdWFudGl6YXRpb24gZm9yIE5WSURJQS1vbmx5IGRlcGxveW1lbnRzCi0gKipiaXRzYW5kYnl0ZXMqKiDigJQgU2ltcGxlIEh1Z2dpbmdGYWNlIHRyYW5zZm9ybWVycyBpbnRlZ3JhdGlvbgotICoqSFFRKiog4oCUIEZhc3QgY2FsaWJyYXRpb24tZnJlZSBxdWFudGl6YXRpb24KCiMjIFF1aWNrIHN0YXJ0CgojIyMgSW5zdGFsbAoKYGBgYmFzaAojIG1hY09TIC8gTGludXggKHNpbXBsZXN0KQpicmV3IGluc3RhbGwgbGxhbWEuY3BwCgojIE9yIGJ1aWxkIGZyb20gc291cmNlCmdpdCBjbG9uZSBodHRwczovL2dpdGh1Yi5jb20vZ2dtbC1vcmcvbGxhbWEuY3BwCmNkIGxsYW1hLmNwcAptYWtlICAgICAgICAgICAgICAgICAgICAgICAgIyBDUFUKbWFrZSBHR01MX01FVEFMPTEgICAgICAgICAgICMgQXBwbGUgU2lsaWNvbgptYWtlIEdHTUxfQ1VEQT0xICAgICAgICAgICAgIyBOVklESUEgQ1VEQQptYWtlIExMQU1BX0hJUD0xICAgICAgICAgICAgIyBBTUQgUk9DbQoKIyBQeXRob24gYmluZGluZ3MgKG9wdGlvbmFsKQpwaXAgaW5zdGFsbCBsbGFtYS1jcHAtcHl0aG9uCiMgV2l0aCBDVURBOiAgIENNQUtFX0FSR1M9Ii1ER0dNTF9DVURBPW9uIiBwaXAgaW5zdGFsbCBsbGFtYS1jcHAtcHl0aG9uIC0tZm9yY2UtcmVpbnN0YWxsIC0tbm8tY2FjaGUtZGlyCiMgV2l0aCBNZXRhbDogIENNQUtFX0FSR1M9Ii1ER0dNTF9NRVRBTD1vbiIgcGlwIGluc3RhbGwgbGxhbWEtY3BwLXB5dGhvbiAtLWZvcmNlLXJlaW5zdGFsbCAtLW5vLWNhY2hlLWRpcgpgYGAKCiMjIyBEb3dubG9hZCBhIHByZS1xdWFudGl6ZWQgR0dVRgoKYGBgYmFzaAojIFRoZUJsb2tlIGhvc3RzIG1vc3QgcG9wdWxhciBtb2RlbHMgcHJlLXF1YW50aXplZApodWdnaW5nZmFjZS1jbGkgZG93bmxvYWQgXAogICAgVGhlQmxva2UvTGxhbWEtMi03Qi1DaGF0LUdHVUYgXAogICAgbGxhbWEtMi03Yi1jaGF0LlE0X0tfTS5nZ3VmIFwKICAgIC0tbG9jYWwtZGlyIG1vZGVscy8KYGBgCgojIyMgT3IgY29udmVydCBhIEh1Z2dpbmdGYWNlIG1vZGVsIHRvIEdHVUYKCmBgYGJhc2gKIyAxLiBEb3dubG9hZCBIRiBtb2RlbApodWdnaW5nZmFjZS1jbGkgZG93bmxvYWQgbWV0YS1sbGFtYS9MbGFtYS0zLjEtOEIgLS1sb2NhbC1kaXIgLi9sbGFtYS0zLjEtOGIKCiMgMi4gQ29udmVydCB0byBGUDE2IEdHVUYKcHl0aG9uIGNvbnZlcnRfaGZfdG9fZ2d1Zi5weSAuL2xsYW1hLTMuMS04YiBcCiAgICAtLW91dGZpbGUgbGxhbWEtMy4xLThiLWYxNi5nZ3VmIFwKICAgIC0tb3V0dHlwZSBmMTYKCiMgMy4gUXVhbnRpemUgdG8gUTRfS19NCi4vbGxhbWEtcXVhbnRpemUgbGxhbWEtMy4xLThiLWYxNi5nZ3VmIGxsYW1hLTMuMS04Yi1xNF9rX20uZ2d1ZiBRNF9LX00KYGBgCgojIyMgUnVuIGluZmVyZW5jZQoKYGBgYmFzaAojIE9uZS1zaG90IHByb21wdAouL2xsYW1hLWNsaSAtbSBtb2RlbC5RNF9LX00uZ2d1ZiAtcCAiRXhwbGFpbiBxdWFudHVtIGNvbXB1dGluZyIgLW4gMjU2CgojIEludGVyYWN0aXZlIGNoYXQKLi9sbGFtYS1jbGkgLW0gbW9kZWwuUTRfS19NLmdndWYgLS1pbnRlcmFjdGl2ZQoKIyBXaXRoIEdQVSBvZmZsb2FkCi4vbGxhbWEtY2xpIC1tIG1vZGVsLlE0X0tfTS5nZ3VmIC1uZ2wgMzUgLXAgIkhlbGxvISIKYGBgCgojIyMgU2VydmUgYW4gT3BlbkFJLWNvbXBhdGlibGUgQVBJCgpgYGBiYXNoCi4vbGxhbWEtc2VydmVyIFwKICAgIC1tIG1vZGVsLlE0X0tfTS5nZ3VmIFwKICAgIC0taG9zdCAwLjAuMC4wIFwKICAgIC0tcG9ydCA4MDgwIFwKICAgIC1uZ2wgMzUgXAogICAgLWMgNDA5NiBcCiAgICAtLXBhcmFsbGVsIDQgXAogICAgLS1jb250LWJhdGNoaW5nCmBgYAoKYGBgYmFzaApjdXJsIGh0dHA6Ly9sb2NhbGhvc3Q6ODA4MC92MS9jaGF0L2NvbXBsZXRpb25zIFwKICAtSCAiQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uIiBcCiAgLWQgJ3sKICAgICJtb2RlbCI6ICJsb2NhbCIsCiAgICAibWVzc2FnZXMiOiBbeyJyb2xlIjogInVzZXIiLCAiY29udGVudCI6ICJIZWxsbyEifV0sCiAgICAidGVtcGVyYXR1cmUiOiAwLjcsCiAgICAibWF4X3Rva2VucyI6IDEwMAogIH0nCmBgYAoKIyMgUXVhbnRpemF0aW9uIGZvcm1hdHMgKEdHVUYpCgojIyMgSy1xdWFudCBtZXRob2RzIChyZWNvbW1lbmRlZCkKCnwgVHlwZSB8IEJpdHMgfCBTaXplICg3QikgfCBRdWFsaXR5IHwgVXNlIENhc2UgfAp8LS0tLS0tfC0tLS0tLXwtLS0tLS0tLS0tLXwtLS0tLS0tLS18LS0tLS0tLS0tLXwKfCBRMl9LIHwgMi41IHwgfjIuOCBHQiB8IExvdyB8IEV4dHJlbWUgY29tcHJlc3Npb24gKHRlc3Rpbmcgb25seSkgfAp8IFEzX0tfUyB8IDMuMCB8IH4zLjAgR0IgfCBMb3ctTWVkIHwgTWVtb3J5IGNvbnN0cmFpbmVkIHwKfCBRM19LX00gfCAzLjMgfCB+My4zIEdCIHwgTWVkaXVtIHwgRml0cyBzbWFsbCBkZXZpY2VzIHwKfCBRNF9LX1MgfCA0LjAgfCB+My44IEdCIHwgTWVkLUhpZ2ggfCBTcGVlZCBjcml0aWNhbCB8CnwgKipRNF9LX00qKiB8IDQuNSB8IH40LjEgR0IgfCBIaWdoIHwgKipSZWNvbW1lbmRlZCBkZWZhdWx0KiogfAp8IFE1X0tfUyB8IDUuMCB8IH40LjYgR0IgfCBIaWdoIHwgUXVhbGl0eSBmb2N1c2VkIHwKfCBRNV9LX00gfCA1LjUgfCB+NC44IEdCIHwgVmVyeSBIaWdoIHwgSGlnaCBxdWFsaXR5IHwKfCBRNl9LIHwgNi4wIHwgfjUuNSBHQiB8IEV4Y2VsbGVudCB8IE5lYXItb3JpZ2luYWwgfAp8IFE4XzAgfCA4LjAgfCB+Ny4yIEdCIHwgQmVzdCB8IE1heGltdW0gcXVhbGl0eSwgbWluaW1hbCBkZWdyYWRhdGlvbiB8CgoqKlZhcmlhbnQgc3VmZml4ZXMqKiDigJQgYF9TYCAoU21hbGwsIGZhc3RlciwgbG93ZXIgcXVhbGl0eSksIGBfTWAgKE1lZGl1bSwgYmFsYW5jZWQpLCBgX0xgIChMYXJnZSwgYmV0dGVyIHF1YWxpdHkpLgoKKipMZWdhY3kgKFE0XzAvUTRfMS9RNV8wL1E1XzEpIGV4aXN0KiogYnV0IGFsd2F5cyBwcmVmZXIgSy1xdWFudHMgZm9yIGJldHRlciBxdWFsaXR5L3NpemUgcmF0aW8uCgoqKklRIHF1YW50aXphdGlvbioqIOKAlCB1bHRyYS1sb3ctYml0IHdpdGggaW1wb3J0YW5jZS1hd2FyZSBtZXRob2RzOiBJUTJfWFhTLCBJUTJfWFMsIElRMl9TLCBJUTNfWFhTLCBJUTNfWFMsIElRM19TLCBJUTRfWFMuIFJlcXVpcmUgYC0taW1hdHJpeGAuCgoqKlRhc2stc3BlY2lmaWMgZGVmYXVsdHM6KioKLSBHZW5lcmFsIGNoYXQgLyBhc3Npc3RhbnRzOiBRNF9LX00sIG9yIFE1X0tfTSBpZiBSQU0gYWxsb3dzCi0gQ29kZSBnZW5lcmF0aW9uOiBRNV9LX00gb3IgUTZfSyAoaGlnaGVyIHByZWNpc2lvbiBoZWxwcykKLSBUZWNobmljYWwgLyBtZWRpY2FsOiBRNl9LIG9yIFE4XzAKLSBWZXJ5IGxhcmdlICg3MEIsIDQwNUIpIG9uIGNvbnN1bWVyIGhhcmR3YXJlOiBRM19LX00gb3IgUTRfS19TCi0gUmFzcGJlcnJ5IFBpIC8gZWRnZTogUTJfSyBvciBRM19LX1MKCiMjIENvbnZlcnNpb24gd29ya2Zsb3dzCgojIyMgQmFzaWM6IEhGIOKGkiBHR1VGIOKGkiBxdWFudGl6ZWQKCmBgYGJhc2gKcHl0aG9uIGNvbnZlcnRfaGZfdG9fZ2d1Zi5weSAuL21vZGVsIC0tb3V0ZmlsZSBtb2RlbC1mMTYuZ2d1ZiAtLW91dHR5cGUgZjE2Ci4vbGxhbWEtcXVhbnRpemUgbW9kZWwtZjE2LmdndWYgbW9kZWwtcTRfa19tLmdndWYgUTRfS19NCi4vbGxhbWEtY2xpIC1tIG1vZGVsLXE0X2tfbS5nZ3VmIC1wICJIZWxsbyEiIC1uIDUwCmBgYAoKIyMjIFdpdGggaW1wb3J0YW5jZSBtYXRyaXggKGltYXRyaXgpIOKAlCBiZXR0ZXIgbG93LWJpdCBxdWFsaXR5CgpgaW1hdHJpeGAgZ2l2ZXMgMTDigJMyMCUgcGVycGxleGl0eSBpbXByb3ZlbWVudCBhdCBRNCwgZXNzZW50aWFsIGF0IFEzIGFuZCBiZWxvdy4KCmBgYGJhc2gKIyAxLiBDb252ZXJ0IHRvIEZQMTYgR0dVRgpweXRob24gY29udmVydF9oZl90b19nZ3VmLnB5IC4vbW9kZWwgLS1vdXRmaWxlIG1vZGVsLWYxNi5nZ3VmCgojIDIuIFByZXBhcmUgY2FsaWJyYXRpb24gZGF0YSAoZGl2ZXJzZSB0ZXh0LCB+MTAwTUIgaXMgaWRlYWwpCmNhdCA+IGNhbGlicmF0aW9uLnR4dCA8PCAnRU9GJwpUaGUgcXVpY2sgYnJvd24gZm94IGp1bXBzIG92ZXIgdGhlIGxhenkgZG9nLgpNYWNoaW5lIGxlYXJuaW5nIGlzIGEgc3Vic2V0IG9mIGFydGlmaWNpYWwgaW50ZWxsaWdlbmNlLgojIEFkZCBtb3JlIGRpdmVyc2UgdGV4dCBzYW1wbGVzLi4uCkVPRgoKIyAzLiBHZW5lcmF0ZSBpbXBvcnRhbmNlIG1hdHJpeAouL2xsYW1hLWltYXRyaXggLW0gbW9kZWwtZjE2LmdndWYgXAogICAgLWYgY2FsaWJyYXRpb24udHh0IFwKICAgIC0tY2h1bmsgNTEyIFwKICAgIC1vIG1vZGVsLmltYXRyaXggXAogICAgLW5nbCAzNQoKIyA0LiBRdWFudGl6ZSB3aXRoIGltYXRyaXgKLi9sbGFtYS1xdWFudGl6ZSAtLWltYXRyaXggbW9kZWwuaW1hdHJpeCBcCiAgICBtb2RlbC1mMTYuZ2d1ZiBtb2RlbC1xNF9rX20uZ2d1ZiBRNF9LX00KYGBgCgojIyMgTXVsdGktcXVhbnQgYmF0Y2gKCmBgYGJhc2gKIyEvYmluL2Jhc2gKTU9ERUw9ImxsYW1hLTMuMS04Yi1mMTYuZ2d1ZiIKSU1BVFJJWD0ibGxhbWEtMy4xLThiLmltYXRyaXgiCgouL2xsYW1hLWltYXRyaXggLW0gJE1PREVMIC1mIHdpa2kudHh0IC1vICRJTUFUUklYIC1uZ2wgMzUKCmZvciBRVUFOVCBpbiBRNF9LX00gUTVfS19NIFE2X0sgUThfMDsgZG8KICAgIE9VVFBVVD0ibGxhbWEtMy4xLThiLSR7UVVBTlQsLH0uZ2d1ZiIKICAgIC4vbGxhbWEtcXVhbnRpemUgLS1pbWF0cml4ICRJTUFUUklYICRNT0RFTCAkT1VUUFVUICRRVUFOVAogICAgZWNobyAiQ3JlYXRlZDogJE9VVFBVVCAoJChkdSAtaCAkT1VUUFVUIHwgY3V0IC1mMSkpIgpkb25lCmBgYAoKIyMjIFF1YWxpdHkgdGVzdGluZyAocGVycGxleGl0eSkKCmBgYGJhc2gKLi9sbGFtYS1wZXJwbGV4aXR5IC1tIG1vZGVsLmdndWYgLWYgd2lraXRleHQtMi1yYXcvd2lraS50ZXN0LnJhdyAtYyA1MTIKIyBCYXNlbGluZSBGUDE2OiB+NS45NiAgfCAgUTRfS19NOiB+Ni4wNiAoKzEuNyUpICB8ICBRMl9LOiB+Ni44NyAoKzE1LjMlKQpgYGAKCiMjIFB5dGhvbiBiaW5kaW5ncyAobGxhbWEtY3BwLXB5dGhvbikKCiMjIyBCYXNpYyBnZW5lcmF0aW9uCgpgYGBweXRob24KZnJvbSBsbGFtYV9jcHAgaW1wb3J0IExsYW1hCgpsbG0gPSBMbGFtYSgKICAgIG1vZGVsX3BhdGg9Ii4vbW9kZWwtcTRfa19tLmdndWYiLAogICAgbl9jdHg9NDA5NiwKICAgIG5fZ3B1X2xheWVycz0zNSwgICAgICMgMCBmb3IgQ1BVIG9ubHksIDk5IHRvIG9mZmxvYWQgZXZlcnl0aGluZwogICAgbl90aHJlYWRzPTgsCikKCm91dHB1dCA9IGxsbSgKICAgICJXaGF0IGlzIG1hY2hpbmUgbGVhcm5pbmc/IiwKICAgIG1heF90b2tlbnM9MjU2LAogICAgdGVtcGVyYXR1cmU9MC43LAogICAgc3RvcD1bIjwvcz4iLCAiXG5cbiJdLAopCnByaW50KG91dHB1dFsiY2hvaWNlcyJdWzBdWyJ0ZXh0Il0pCmBgYAoKIyMjIENoYXQgY29tcGxldGlvbiArIHN0cmVhbWluZwoKYGBgcHl0aG9uCmxsbSA9IExsYW1hKAogICAgbW9kZWxfcGF0aD0iLi9tb2RlbC1xNF9rX20uZ2d1ZiIsCiAgICBuX2N0eD00MDk2LAogICAgbl9ncHVfbGF5ZXJzPTM1LAogICAgY2hhdF9mb3JtYXQ9ImxsYW1hLTMiLCAgICAjIE9yICJjaGF0bWwiLCAibWlzdHJhbCIsIGV0Yy4KKQoKIyBOb24tc3RyZWFtaW5nCnJlc3BvbnNlID0gbGxtLmNyZWF0ZV9jaGF0X2NvbXBsZXRpb24oCiAgICBtZXNzYWdlcz1bCiAgICAgICAgeyJyb2xlIjogInN5c3RlbSIsICJjb250ZW50IjogIllvdSBhcmUgYSBoZWxwZnVsIGFzc2lzdGFudC4ifSwKICAgICAgICB7InJvbGUiOiAidXNlciIsICJjb250ZW50IjogIldoYXQgaXMgUHl0aG9uPyJ9LAogICAgXSwKICAgIG1heF90b2tlbnM9MjU2LAogICAgdGVtcGVyYXR1cmU9MC43LAopCnByaW50KHJlc3BvbnNlWyJjaG9pY2VzIl1bMF1bIm1lc3NhZ2UiXVsiY29udGVudCJdKQoKIyBTdHJlYW1pbmcKZm9yIGNodW5rIGluIGxsbSgiRXhwbGFpbiBxdWFudHVtIGNvbXB1dGluZzoiLCBtYXhfdG9rZW5zPTI1Niwgc3RyZWFtPVRydWUpOgogICAgcHJpbnQoY2h1bmtbImNob2ljZXMiXVswXVsidGV4dCJdLCBlbmQ9IiIsIGZsdXNoPVRydWUpCmBgYAoKIyMjIEVtYmVkZGluZ3MKCmBgYHB5dGhvbgpsbG0gPSBMbGFtYShtb2RlbF9wYXRoPSIuL21vZGVsLXE0X2tfbS5nZ3VmIiwgZW1iZWRkaW5nPVRydWUsIG5fZ3B1X2xheWVycz0zNSkKdmVjID0gbGxtLmVtYmVkKCJUaGlzIGlzIGEgdGVzdCBzZW50ZW5jZS4iKQpwcmludChmIkVtYmVkZGluZyBkaW1lbnNpb246IHtsZW4odmVjKX0iKQpgYGAKCiMjIEhhcmR3YXJlIGFjY2VsZXJhdGlvbgoKIyMjIEFwcGxlIFNpbGljb24gKE1ldGFsKQoKYGBgYmFzaAptYWtlIGNsZWFuICYmIG1ha2UgR0dNTF9NRVRBTD0xCi4vbGxhbWEtY2xpIC1tIG1vZGVsLmdndWYgLW5nbCA5OSAtcCAiSGVsbG8iICAgIyBvZmZsb2FkIGFsbCBsYXllcnMKYGBgCgpgYGBweXRob24KbGxtID0gTGxhbWEoCiAgICBtb2RlbF9wYXRoPSJtb2RlbC5nZ3VmIiwKICAgIG5fZ3B1X2xheWVycz05OSwgICAgICMgT2ZmbG9hZCBldmVyeXRoaW5nCiAgICBuX3RocmVhZHM9MSwgICAgICAgICAjIE1ldGFsIGhhbmRsZXMgcGFyYWxsZWxpc20KKQpgYGAKClBlcmZvcm1hbmNlOiBNMyBNYXggfjQw4oCTNjAgdG9rL3Mgb24gTGxhbWEgMi03QiBRNF9LX00uCgojIyMgTlZJRElBIChDVURBKQoKYGBgYmFzaAptYWtlIGNsZWFuICYmIG1ha2UgR0dNTF9DVURBPTEKLi9sbGFtYS1jbGkgLW0gbW9kZWwuZ2d1ZiAtbmdsIDM1IC1wICJIZWxsbyIKCiMgSHlicmlkIGZvciBsYXJnZSBtb2RlbHMKLi9sbGFtYS1jbGkgLW0gbGxhbWEtNzBiLlE0X0tfTS5nZ3VmIC1uZ2wgMjAgICAjIEdQVTogMjAgbGF5ZXJzLCBDUFU6IHJlc3QKCiMgTXVsdGktR1BVIHNwbGl0Ci4vbGxhbWEtY2xpIC1tIGxhcmdlLW1vZGVsLmdndWYgLS10ZW5zb3Itc3BsaXQgMC41LDAuNSAtbmdsIDYwCmBgYAoKIyMjIEFNRCAoUk9DbSkKCmBgYGJhc2gKbWFrZSBMTEFNQV9ISVA9MQouL2xsYW1hLWNsaSAtbSBtb2RlbC5nZ3VmIC1uZ2wgOTk5CmBgYAoKIyMjIENQVQoKYGBgYmFzaAojIE1hdGNoIFBIWVNJQ0FMIGNvcmVzLCBub3QgbG9naWNhbAouL2xsYW1hLWNsaSAtbSBtb2RlbC5nZ3VmIC10IDggLXAgIkhlbGxvIgoKIyBCTEFTIGFjY2VsZXJhdGlvbiAoMuKAkzPDlyBzcGVlZHVwKQptYWtlIExMQU1BX09QRU5CTEFTPTEKYGBgCgpgYGBweXRob24KbGxtID0gTGxhbWEoCiAgICBtb2RlbF9wYXRoPSJtb2RlbC5nZ3VmIiwKICAgIG5fZ3B1X2xheWVycz0wLAogICAgbl90aHJlYWRzPTgsCiAgICBuX2JhdGNoPTUxMiwgICAgICAgICAjIExhcmdlciBiYXRjaCA9IGZhc3RlciBwcm9tcHQgcHJvY2Vzc2luZwopCmBgYAoKIyMgUGVyZm9ybWFuY2UgYmVuY2htYXJrcwoKIyMjIENQVSAoTGxhbWEgMi03QiBRNF9LX00pCgp8IENQVSB8IFRocmVhZHMgfCBTcGVlZCB8CnwtLS0tLXwtLS0tLS0tLS18LS0tLS0tLXwKfCBBcHBsZSBNMyBNYXggKE1ldGFsKSB8IDE2IHwgNTAgdG9rL3MgfAp8IEFNRCBSeXplbiA5IDc5NTBYIHwgMzIgfCAzNSB0b2svcyB8CnwgSW50ZWwgaTktMTM5MDBLIHwgMzIgfCAzMCB0b2svcyB8CgojIyMgR1BVIG9mZmxvYWRpbmcgb24gUlRYIDQwOTAKCnwgTGF5ZXJzIEdQVSB8IFNwZWVkIHwgVlJBTSB8CnwtLS0tLS0tLS0tLS18LS0tLS0tLXwtLS0tLS18CnwgMCAoQ1BVIG9ubHkpIHwgMzAgdG9rL3MgfCAwIEdCIHwKfCAyMCAoaHlicmlkKSB8IDgwIHRvay9zIHwgOCBHQiB8CnwgMzUgKGFsbCkgfCAxMjAgdG9rL3MgfCAxMiBHQiB8CgojIyBTdXBwb3J0ZWQgbW9kZWxzCgotICoqTExhTUEgZmFtaWx5Kio6IExsYW1hIDIgKDdCLzEzQi83MEIpLCBMbGFtYSAzICg4Qi83MEIvNDA1QiksIENvZGUgTGxhbWEKLSAqKk1pc3RyYWwgZmFtaWx5Kio6IE1pc3RyYWwgN0IsIE1peHRyYWwgOHg3Qi84eDIyQgotICoqT3RoZXIqKjogRmFsY29uLCBCTE9PTSwgR1BULUosIFBoaS0zLCBHZW1tYSwgUXdlbiwgTExhVkEgKHZpc2lvbiksIFdoaXNwZXIgKGF1ZGlvKQoKRmluZCBHR1VGIG1vZGVsczogaHR0cHM6Ly9odWdnaW5nZmFjZS5jby9tb2RlbHM/bGlicmFyeT1nZ3VmCgojIyBFY29zeXN0ZW0gaW50ZWdyYXRpb25zCgojIyMgT2xsYW1hCgpgYGBiYXNoCmNhdCA+IE1vZGVsZmlsZSA8PCAnRU9GJwpGUk9NIC4vbW9kZWwtcTRfa19tLmdndWYKVEVNUExBVEUgIiIie3sgLlN5c3RlbSB9fQp7eyAuUHJvbXB0IH19IiIiClBBUkFNRVRFUiB0ZW1wZXJhdHVyZSAwLjcKUEFSQU1FVEVSIG51bV9jdHggNDA5NgpFT0YKCm9sbGFtYSBjcmVhdGUgbXltb2RlbCAtZiBNb2RlbGZpbGUKb2xsYW1hIHJ1biBteW1vZGVsICJIZWxsbyEiCmBgYAoKIyMjIExNIFN0dWRpbwoKMS4gUGxhY2UgR0dVRiBmaWxlIGluIGB+Ly5jYWNoZS9sbS1zdHVkaW8vbW9kZWxzL2AKMi4gT3BlbiBMTSBTdHVkaW8gYW5kIHNlbGVjdCB0aGUgbW9kZWwKMy4gQ29uZmlndXJlIGNvbnRleHQgbGVuZ3RoIGFuZCBHUFUgb2ZmbG9hZCwgc3RhcnQgaW5mZXJlbmNlCgojIyMgdGV4dC1nZW5lcmF0aW9uLXdlYnVpCgpgYGBiYXNoCmNwIG1vZGVsLXE0X2tfbS5nZ3VmIHRleHQtZ2VuZXJhdGlvbi13ZWJ1aS9tb2RlbHMvCnB5dGhvbiBzZXJ2ZXIucHkgLS1tb2RlbCBtb2RlbC1xNF9rX20uZ2d1ZiAtLWxvYWRlciBsbGFtYS5jcHAgLS1uLWdwdS1sYXllcnMgMzUKYGBgCgojIyMgT3BlbkFJIGNsaWVudCDihpIgbGxhbWEtc2VydmVyCgpgYGBweXRob24KZnJvbSBvcGVuYWkgaW1wb3J0IE9wZW5BSQoKY2xpZW50ID0gT3BlbkFJKGJhc2VfdXJsPSJodHRwOi8vbG9jYWxob3N0OjgwODAvdjEiLCBhcGlfa2V5PSJub3QtbmVlZGVkIikKcmVzcG9uc2UgPSBjbGllbnQuY2hhdC5jb21wbGV0aW9ucy5jcmVhdGUoCiAgICBtb2RlbD0ibG9jYWwtbW9kZWwiLAogICAgbWVzc2FnZXM9W3sicm9sZSI6ICJ1c2VyIiwgImNvbnRlbnQiOiAiSGVsbG8hIn1dLAogICAgbWF4X3Rva2Vucz0yNTYsCikKcHJpbnQocmVzcG9uc2UuY2hvaWNlc1swXS5tZXNzYWdlLmNvbnRlbnQpCmBgYAoKIyMgQmVzdCBwcmFjdGljZXMKCjEuICoqVXNlIEstcXVhbnRzKiog4oCUIFE0X0tfTSBpcyB0aGUgcmVjb21tZW5kZWQgZGVmYXVsdAoyLiAqKlVzZSBpbWF0cml4KiogZm9yIFE0IGFuZCBiZWxvdyAoY2FsaWJyYXRpb24gaW1wcm92ZXMgcXVhbGl0eSBzdWJzdGFudGlhbGx5KQozLiAqKk9mZmxvYWQgYXMgbWFueSBsYXllcnMgYXMgVlJBTSBhbGxvd3MqKiDigJQgc3RhcnQgaGlnaCwgcmVkdWNlIGJ5IDUgb24gT09NCjQuICoqVGhyZWFkIGNvdW50Kiog4oCUIG1hdGNoIHBoeXNpY2FsIGNvcmVzLCBub3QgbG9naWNhbAo1LiAqKkJhdGNoIHNpemUqKiDigJQgaW5jcmVhc2UgYG5fYmF0Y2hgIChlLmcuIDUxMikgZm9yIGZhc3RlciBwcm9tcHQgcHJvY2Vzc2luZwo2LiAqKkNvbnRleHQqKiDigJQgc3RhcnQgYXQgNDA5NiwgZ3JvdyBvbmx5IGFzIG5lZWRlZCAobWVtb3J5IHNjYWxlcyB3aXRoIGN0eCkKNy4gKipGbGFzaCBBdHRlbnRpb24qKiDigJQgYWRkIGAtLWZsYXNoLWF0dG5gIGlmIHlvdXIgYnVpbGQgc3VwcG9ydHMgaXQKCiMjIENvbW1vbiBpc3N1ZXMgKHF1aWNrIGZpeGVzKQoKKipNb2RlbCBsb2FkcyBzbG93bHkqKiDigJQgdXNlIGAtLW1tYXBgIGZvciBtZW1vcnktbWFwcGVkIGxvYWRpbmcuCgoqKk91dCBvZiBtZW1vcnkgKEdQVSkqKiDigJQgcmVkdWNlIGAtbmdsYCwgdXNlIGEgc21hbGxlciBxdWFudCAoUTRfS19TIC8gUTNfS19NKSwgb3IgcXVhbnRpemUgdGhlIEtWIGNhY2hlOgpgYGBweXRob24KTGxhbWEobW9kZWxfcGF0aD0iLi4uIiwgdHlwZV9rPTIsIHR5cGVfdj0yLCBuX2dwdV9sYXllcnM9MzUpICAjIFE0XzAgS1YgY2FjaGUKYGBgCgoqKkdhcmJhZ2Ugb3V0cHV0Kiog4oCUIHdyb25nIGBjaGF0X2Zvcm1hdGAsIHRlbXBlcmF0dXJlIHRvbyBoaWdoLCBvciBtb2RlbCBmaWxlIGNvcnJ1cHRlZC4gVGVzdCB3aXRoIGB0ZW1wZXJhdHVyZT0wLjFgIGFuZCB2ZXJpZnkgRlAxNiBiYXNlbGluZSB3b3Jrcy4KCioqQ29ubmVjdGlvbiByZWZ1c2VkIChzZXJ2ZXIpKiog4oCUIGJpbmQgdG8gYC0taG9zdCAwLjAuMC4wYCwgY2hlY2sgYGxzb2YgLWkgOjgwODBgLgoKU2VlIGByZWZlcmVuY2VzL3Ryb3VibGVzaG9vdGluZy5tZGAgZm9yIHRoZSBmdWxsIHBsYXlib29rLgoKIyMgUmVmZXJlbmNlcwoKLSAqKlthZHZhbmNlZC11c2FnZS5tZF0ocmVmZXJlbmNlcy9hZHZhbmNlZC11c2FnZS5tZCkqKiDigJQgc3BlY3VsYXRpdmUgZGVjb2RpbmcsIGJhdGNoZWQgaW5mZXJlbmNlLCBncmFtbWFyLWNvbnN0cmFpbmVkIGdlbmVyYXRpb24sIExvUkEsIG11bHRpLUdQVSwgY3VzdG9tIGJ1aWxkcywgYmVuY2htYXJrIHNjcmlwdHMKLSAqKltxdWFudGl6YXRpb24ubWRdKHJlZmVyZW5jZXMvcXVhbnRpemF0aW9uLm1kKSoqIOKAlCBwZXJwbGV4aXR5IHRhYmxlcywgdXNlLWNhc2UgZ3VpZGUsIG1vZGVsIHNpemUgc2NhbGluZyAoN0IvMTNCLzcwQiBSQU0gbmVlZHMpLCBpbWF0cml4IGRlZXAgZGl2ZQotICoqW3NlcnZlci5tZF0ocmVmZXJlbmNlcy9zZXJ2ZXIubWQpKiog4oCUIE9wZW5BSSBBUEkgZW5kcG9pbnRzLCBEb2NrZXIgZGVwbG95bWVudCwgTkdJTlggbG9hZCBiYWxhbmNpbmcsIG1vbml0b3JpbmcKLSAqKltvcHRpbWl6YXRpb24ubWRdKHJlZmVyZW5jZXMvb3B0aW1pemF0aW9uLm1kKSoqIOKAlCBDUFUgdGhyZWFkaW5nLCBCTEFTLCBHUFUgb2ZmbG9hZCBoZXVyaXN0aWNzLCBiYXRjaCB0dW5pbmcsIGJlbmNobWFya3MKLSAqKlt0cm91Ymxlc2hvb3RpbmcubWRdKHJlZmVyZW5jZXMvdHJvdWJsZXNob290aW5nLm1kKSoqIOKAlCBpbnN0YWxsL2NvbnZlcnQvcXVhbnRpemUvaW5mZXJlbmNlL3NlcnZlciBpc3N1ZXMsIEFwcGxlIFNpbGljb24sIGRlYnVnZ2luZwoKIyMgUmVzb3VyY2VzCgotICoqR2l0SHViKio6IGh0dHBzOi8vZ2l0aHViLmNvbS9nZ21sLW9yZy9sbGFtYS5jcHAKLSAqKlB5dGhvbiBiaW5kaW5ncyoqOiBodHRwczovL2dpdGh1Yi5jb20vYWJldGxlbi9sbGFtYS1jcHAtcHl0aG9uCi0gKipQcmUtcXVhbnRpemVkIG1vZGVscyoqOiBodHRwczovL2h1Z2dpbmdmYWNlLmNvL1RoZUJsb2tlCi0gKipHR1VGIGNvbnZlcnRlciBTcGFjZSoqOiBodHRwczovL2h1Z2dpbmdmYWNlLmNvL3NwYWNlcy9nZ21sLW9yZy9nZ3VmLW15LXJlcG8KLSAqKkxpY2Vuc2UqKjogTUlUCg==
+---
+name: llama-cpp
+description: Run LLM inference with llama.cpp on CPU, Apple Silicon, AMD/Intel GPUs, or NVIDIA — plus GGUF model conversion and quantization (2–8 bit with K-quants and imatrix). Covers CLI, Python bindings, OpenAI-compatible server, and Ollama/LM Studio integration. Use for edge deployment, M1/M2/M3/M4 Macs, CUDA-less environments, or flexible local quantization.
+version: 2.0.0
+author: Orchestra Research
+license: MIT
+dependencies: [llama-cpp-python>=0.2.0]
+metadata:
+  hermes:
+    tags: [llama.cpp, GGUF, Quantization, CPU Inference, Apple Silicon, Edge Deployment, Non-NVIDIA, AMD GPUs, Intel GPUs, Embedded, Model Compression]
+---
+
+# llama.cpp + GGUF
+
+Pure C/C++ LLM inference with minimal dependencies, plus the GGUF (GPT-Generated Unified Format) standard used for quantized weights. One toolchain covers conversion, quantization, and serving.
+
+## When to use
+
+**Use llama.cpp + GGUF when:**
+- Running on CPU-only machines or Apple Silicon (M1/M2/M3/M4) with Metal acceleration
+- Using AMD (ROCm) or Intel GPUs where CUDA isn't available
+- Edge deployment (Raspberry Pi, embedded systems, consumer laptops)
+- Need flexible quantization (2–8 bit with K-quants)
+- Want local AI tools (LM Studio, Ollama, text-generation-webui, koboldcpp)
+- Want a single binary deploy without Docker/Python
+
+**Key advantages:**
+- Universal hardware: CPU, Apple Silicon, NVIDIA, AMD, Intel
+- No Python runtime required (pure C/C++)
+- K-quants + imatrix for better low-bit quality
+- OpenAI-compatible server built in
+- Rich ecosystem (Ollama, LM Studio, llama-cpp-python)
+
+**Use alternatives instead:**
+- **vLLM** — NVIDIA GPUs, PagedAttention, Python-first, max throughput
+- **TensorRT-LLM** — Production NVIDIA (A100/H100), maximum speed
+- **AWQ/GPTQ** — Calibrated quantization for NVIDIA-only deployments
+- **bitsandbytes** — Simple HuggingFace transformers integration
+- **HQQ** — Fast calibration-free quantization
+
+## Quick start
+
+### Install
+
+```bash
+# macOS / Linux (simplest)
+brew install llama.cpp
+
+# Or build from source
+git clone https://github.com/ggml-org/llama.cpp
+cd llama.cpp
+make                        # CPU
+make GGML_METAL=1           # Apple Silicon
+make GGML_CUDA=1            # NVIDIA CUDA
+make LLAMA_HIP=1            # AMD ROCm
+
+# Python bindings (optional)
+pip install llama-cpp-python
+# With CUDA:   CMAKE_ARGS="-DGGML_CUDA=on" pip install llama-cpp-python --force-reinstall --no-cache-dir
+# With Metal:  CMAKE_ARGS="-DGGML_METAL=on" pip install llama-cpp-python --force-reinstall --no-cache-dir
+```
+
+### Download a pre-quantized GGUF
+
+```bash
+# TheBloke hosts most popular models pre-quantized
+huggingface-cli download \
+    TheBloke/Llama-2-7B-Chat-GGUF \
+    llama-2-7b-chat.Q4_K_M.gguf \
+    --local-dir models/
+```
+
+### Or convert a HuggingFace model to GGUF
+
+```bash
+# 1. Download HF model
+huggingface-cli download meta-llama/Llama-3.1-8B --local-dir ./llama-3.1-8b
+
+# 2. Convert to FP16 GGUF
+python convert_hf_to_gguf.py ./llama-3.1-8b \
+    --outfile llama-3.1-8b-f16.gguf \
+    --outtype f16
+
+# 3. Quantize to Q4_K_M
+./llama-quantize llama-3.1-8b-f16.gguf llama-3.1-8b-q4_k_m.gguf Q4_K_M
+```
+
+### Run inference
+
+```bash
+# One-shot prompt
+./llama-cli -m model.Q4_K_M.gguf -p "Explain quantum computing" -n 256
+
+# Interactive chat
+./llama-cli -m model.Q4_K_M.gguf --interactive
+
+# With GPU offload
+./llama-cli -m model.Q4_K_M.gguf -ngl 35 -p "Hello!"
+```
+
+### Serve an OpenAI-compatible API
+
+```bash
+./llama-server \
+    -m model.Q4_K_M.gguf \
+    --host 0.0.0.0 \
+    --port 8080 \
+    -ngl 35 \
+    -c 4096 \
+    --parallel 4 \
+    --cont-batching
+```
+
+```bash
+curl http://localhost:8080/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "local",
+    "messages": [{"role": "user", "content": "Hello!"}],
+    "temperature": 0.7,
+    "max_tokens": 100
+  }'
+```
+
+## Quantization formats (GGUF)
+
+### K-quant methods (recommended)
+
+| Type | Bits | Size (7B) | Quality | Use Case |
+|------|------|-----------|---------|----------|
+| Q2_K | 2.5 | ~2.8 GB | Low | Extreme compression (testing only) |
+| Q3_K_S | 3.0 | ~3.0 GB | Low-Med | Memory constrained |
+| Q3_K_M | 3.3 | ~3.3 GB | Medium | Fits small devices |
+| Q4_K_S | 4.0 | ~3.8 GB | Med-High | Speed critical |
+| **Q4_K_M** | 4.5 | ~4.1 GB | High | **Recommended default** |
+| Q5_K_S | 5.0 | ~4.6 GB | High | Quality focused |
+| Q5_K_M | 5.5 | ~4.8 GB | Very High | High quality |
+| Q6_K | 6.0 | ~5.5 GB | Excellent | Near-original |
+| Q8_0 | 8.0 | ~7.2 GB | Best | Maximum quality, minimal degradation |
+
+**Variant suffixes** — `_S` (Small, faster, lower quality), `_M` (Medium, balanced), `_L` (Large, better quality).
+
+**Legacy (Q4_0/Q4_1/Q5_0/Q5_1) exist** but always prefer K-quants for better quality/size ratio.
+
+**IQ quantization** — ultra-low-bit with importance-aware methods: IQ2_XXS, IQ2_XS, IQ2_S, IQ3_XXS, IQ3_XS, IQ3_S, IQ4_XS. Require `--imatrix`.
+
+**Task-specific defaults:**
+- General chat / assistants: Q4_K_M, or Q5_K_M if RAM allows
+- Code generation: Q5_K_M or Q6_K (higher precision helps)
+- Technical / medical: Q6_K or Q8_0
+- Very large (70B, 405B) on consumer hardware: Q3_K_M or Q4_K_S
+- Raspberry Pi / edge: Q2_K or Q3_K_S
+
+## Conversion workflows
+
+### Basic: HF → GGUF → quantized
+
+```bash
+python convert_hf_to_gguf.py ./model --outfile model-f16.gguf --outtype f16
+./llama-quantize model-f16.gguf model-q4_k_m.gguf Q4_K_M
+./llama-cli -m model-q4_k_m.gguf -p "Hello!" -n 50
+```
+
+### With importance matrix (imatrix) — better low-bit quality
+
+`imatrix` gives 10–20% perplexity improvement at Q4, essential at Q3 and below.
+
+```bash
+# 1. Convert to FP16 GGUF
+python convert_hf_to_gguf.py ./model --outfile model-f16.gguf
+
+# 2. Prepare calibration data (diverse text, ~100MB is ideal)
+cat > calibration.txt << 'EOF'
+The quick brown fox jumps over the lazy dog.
+Machine learning is a subset of artificial intelligence.
+# Add more diverse text samples...
+EOF
+
+# 3. Generate importance matrix
+./llama-imatrix -m model-f16.gguf \
+    -f calibration.txt \
+    --chunk 512 \
+    -o model.imatrix \
+    -ngl 35
+
+# 4. Quantize with imatrix
+./llama-quantize --imatrix model.imatrix \
+    model-f16.gguf model-q4_k_m.gguf Q4_K_M
+```
+
+### Multi-quant batch
+
+```bash
+#!/bin/bash
+MODEL="llama-3.1-8b-f16.gguf"
+IMATRIX="llama-3.1-8b.imatrix"
+
+./llama-imatrix -m $MODEL -f wiki.txt -o $IMATRIX -ngl 35
+
+for QUANT in Q4_K_M Q5_K_M Q6_K Q8_0; do
+    OUTPUT="llama-3.1-8b-${QUANT,,}.gguf"
+    ./llama-quantize --imatrix $IMATRIX $MODEL $OUTPUT $QUANT
+    echo "Created: $OUTPUT ($(du -h $OUTPUT | cut -f1))"
+done
+```
+
+### Quality testing (perplexity)
+
+```bash
+./llama-perplexity -m model.gguf -f wikitext-2-raw/wiki.test.raw -c 512
+# Baseline FP16: ~5.96  |  Q4_K_M: ~6.06 (+1.7%)  |  Q2_K: ~6.87 (+15.3%)
+```
+
+## Python bindings (llama-cpp-python)
+
+### Basic generation
+
+```python
+from llama_cpp import Llama
+
+llm = Llama(
+    model_path="./model-q4_k_m.gguf",
+    n_ctx=4096,
+    n_gpu_layers=35,     # 0 for CPU only, 99 to offload everything
+    n_threads=8,
+)
+
+output = llm(
+    "What is machine learning?",
+    max_tokens=256,
+    temperature=0.7,
+    stop=["</s>", "\n\n"],
+)
+print(output["choices"][0]["text"])
+```
+
+### Chat completion + streaming
+
+```python
+llm = Llama(
+    model_path="./model-q4_k_m.gguf",
+    n_ctx=4096,
+    n_gpu_layers=35,
+    chat_format="llama-3",    # Or "chatml", "mistral", etc.
+)
+
+# Non-streaming
+response = llm.create_chat_completion(
+    messages=[
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": "What is Python?"},
+    ],
+    max_tokens=256,
+    temperature=0.7,
+)
+print(response["choices"][0]["message"]["content"])
+
+# Streaming
+for chunk in llm("Explain quantum computing:", max_tokens=256, stream=True):
+    print(chunk["choices"][0]["text"], end="", flush=True)
+```
+
+### Embeddings
+
+```python
+llm = Llama(model_path="./model-q4_k_m.gguf", embedding=True, n_gpu_layers=35)
+vec = llm.embed("This is a test sentence.")
+print(f"Embedding dimension: {len(vec)}")
+```
+
+## Hardware acceleration
+
+### Apple Silicon (Metal)
+
+```bash
+make clean && make GGML_METAL=1
+./llama-cli -m model.gguf -ngl 99 -p "Hello"   # offload all layers
+```
+
+```python
+llm = Llama(
+    model_path="model.gguf",
+    n_gpu_layers=99,     # Offload everything
+    n_threads=1,         # Metal handles parallelism
+)
+```
+
+Performance: M3 Max ~40–60 tok/s on Llama 2-7B Q4_K_M.
+
+### NVIDIA (CUDA)
+
+```bash
+make clean && make GGML_CUDA=1
+./llama-cli -m model.gguf -ngl 35 -p "Hello"
+
+# Hybrid for large models
+./llama-cli -m llama-70b.Q4_K_M.gguf -ngl 20   # GPU: 20 layers, CPU: rest
+
+# Multi-GPU split
+./llama-cli -m large-model.gguf --tensor-split 0.5,0.5 -ngl 60
+```
+
+### AMD (ROCm)
+
+```bash
+make LLAMA_HIP=1
+./llama-cli -m model.gguf -ngl 999
+```
+
+### CPU
+
+```bash
+# Match PHYSICAL cores, not logical
+./llama-cli -m model.gguf -t 8 -p "Hello"
+
+# BLAS acceleration (2–3× speedup)
+make LLAMA_OPENBLAS=1
+```
+
+```python
+llm = Llama(
+    model_path="model.gguf",
+    n_gpu_layers=0,
+    n_threads=8,
+    n_batch=512,         # Larger batch = faster prompt processing
+)
+```
+
+## Performance benchmarks
+
+### CPU (Llama 2-7B Q4_K_M)
+
+| CPU | Threads | Speed |
+|-----|---------|-------|
+| Apple M3 Max (Metal) | 16 | 50 tok/s |
+| AMD Ryzen 9 7950X | 32 | 35 tok/s |
+| Intel i9-13900K | 32 | 30 tok/s |
+
+### GPU offloading on RTX 4090
+
+| Layers GPU | Speed | VRAM |
+|------------|-------|------|
+| 0 (CPU only) | 30 tok/s | 0 GB |
+| 20 (hybrid) | 80 tok/s | 8 GB |
+| 35 (all) | 120 tok/s | 12 GB |
+
+## Supported models
+
+- **LLaMA family**: Llama 2 (7B/13B/70B), Llama 3 (8B/70B/405B), Code Llama
+- **Mistral family**: Mistral 7B, Mixtral 8x7B/8x22B
+- **Other**: Falcon, BLOOM, GPT-J, Phi-3, Gemma, Qwen, LLaVA (vision), Whisper (audio)
+
+Find GGUF models: https://huggingface.co/models?library=gguf
+
+## Ecosystem integrations
+
+### Ollama
+
+```bash
+cat > Modelfile << 'EOF'
+FROM ./model-q4_k_m.gguf
+TEMPLATE """{{ .System }}
+{{ .Prompt }}"""
+PARAMETER temperature 0.7
+PARAMETER num_ctx 4096
+EOF
+
+ollama create mymodel -f Modelfile
+ollama run mymodel "Hello!"
+```
+
+### LM Studio
+
+1. Place GGUF file in `~/.cache/lm-studio/models/`
+2. Open LM Studio and select the model
+3. Configure context length and GPU offload, start inference
+
+### text-generation-webui
+
+```bash
+cp model-q4_k_m.gguf text-generation-webui/models/
+python server.py --model model-q4_k_m.gguf --loader llama.cpp --n-gpu-layers 35
+```
+
+### OpenAI client → llama-server
+
+```python
+from openai import OpenAI
+
+client = OpenAI(base_url="http://localhost:8080/v1", api_key="not-needed")
+response = client.chat.completions.create(
+    model="local-model",
+    messages=[{"role": "user", "content": "Hello!"}],
+    max_tokens=256,
+)
+print(response.choices[0].message.content)
+```
+
+## Best practices
+
+1. **Use K-quants** — Q4_K_M is the recommended default
+2. **Use imatrix** for Q4 and below (calibration improves quality substantially)
+3. **Offload as many layers as VRAM allows** — start high, reduce by 5 on OOM
+4. **Thread count** — match physical cores, not logical
+5. **Batch size** — increase `n_batch` (e.g. 512) for faster prompt processing
+6. **Context** — start at 4096, grow only as needed (memory scales with ctx)
+7. **Flash Attention** — add `--flash-attn` if your build supports it
+
+## Common issues (quick fixes)
+
+**Model loads slowly** — use `--mmap` for memory-mapped loading.
+
+**Out of memory (GPU)** — reduce `-ngl`, use a smaller quant (Q4_K_S / Q3_K_M), or quantize the KV cache:
+```python
+Llama(model_path="...", type_k=2, type_v=2, n_gpu_layers=35)  # Q4_0 KV cache
+```
+
+**Garbage output** — wrong `chat_format`, temperature too high, or model file corrupted. Test with `temperature=0.1` and verify FP16 baseline works.
+
+**Connection refused (server)** — bind to `--host 0.0.0.0`, check `lsof -i :8080`.
+
+See `references/troubleshooting.md` for the full playbook.
+
+## References
+
+- **[advanced-usage.md](references/advanced-usage.md)** — speculative decoding, batched inference, grammar-constrained generation, LoRA, multi-GPU, custom builds, benchmark scripts
+- **[quantization.md](references/quantization.md)** — perplexity tables, use-case guide, model size scaling (7B/13B/70B RAM needs), imatrix deep dive
+- **[server.md](references/server.md)** — OpenAI API endpoints, Docker deployment, NGINX load balancing, monitoring
+- **[optimization.md](references/optimization.md)** — CPU threading, BLAS, GPU offload heuristics, batch tuning, benchmarks
+- **[troubleshooting.md](references/troubleshooting.md)** — install/convert/quantize/inference/server issues, Apple Silicon, debugging
+
+## Resources
+
+- **GitHub**: https://github.com/ggml-org/llama.cpp
+- **Python bindings**: https://github.com/abetlen/llama-cpp-python
+- **Pre-quantized models**: https://huggingface.co/TheBloke
+- **GGUF converter Space**: https://huggingface.co/spaces/ggml-org/gguf-my-repo
+- **License**: MIT

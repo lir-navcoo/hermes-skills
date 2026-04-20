@@ -1,1 +1,275 @@
-IyBEZXNpZ24gU3lzdGVtOiBTZW50cnkKCgo+ICoqSGVybWVzIEFnZW50IOKAlCBJbXBsZW1lbnRhdGlvbiBOb3RlcyoqCj4KPiBUaGUgb3JpZ2luYWwgc2l0ZSB1c2VzIHByb3ByaWV0YXJ5IGZvbnRzLiBGb3Igc2VsZi1jb250YWluZWQgSFRNTCBvdXRwdXQsIHVzZSB0aGVzZSBDRE4gc3Vic3RpdHV0ZXM6Cj4gLSAqKlByaW1hcnk6KiogYFJ1YmlrYCB8ICoqTW9ubzoqKiBgSmV0QnJhaW5zIE1vbm9gCj4gLSAqKkZvbnQgc3RhY2sgKENTUyk6KiogYGZvbnQtZmFtaWx5OiAnUnViaWsnLCBzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sICdTZWdvZSBVSScsIFJvYm90bywgc2Fucy1zZXJpZjtgCj4gLSAqKk1vbm8gc3RhY2sgKENTUyk6KiogYGZvbnQtZmFtaWx5OiAnSmV0QnJhaW5zIE1vbm8nLCB1aS1tb25vc3BhY2UsIFNGTW9uby1SZWd1bGFyLCBNZW5sbywgTW9uYWNvLCBDb25zb2xhcywgJ0xpYmVyYXRpb24gTW9ubycsICdDb3VyaWVyIE5ldycsIG1vbm9zcGFjZTtgCj4gYGBgaHRtbAo+IDxsaW5rIGhyZWY9Imh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9UnViaWs6d2dodEAzMDA7NDAwOzUwMDs2MDA7NzAwJmZhbWlseT1KZXRCcmFpbnMrTW9ubzp3Z2h0QDQwMDs1MDAmZGlzcGxheT1zd2FwIiByZWw9InN0eWxlc2hlZXQiPgo+IGBgYAo+IFVzZSBgd3JpdGVfZmlsZWAgdG8gY3JlYXRlIEhUTUwsIHNlcnZlIHZpYSBgZ2VuZXJhdGl2ZS13aWRnZXRzYCBza2lsbCAoY2xvdWRmbGFyZWQgdHVubmVsKS4KPiBWZXJpZnkgdmlzdWFsIGFjY3VyYWN5IHdpdGggYGJyb3dzZXJfdmlzaW9uYCBhZnRlciBnZW5lcmF0aW5nLgoKIyMgMS4gVmlzdWFsIFRoZW1lICYgQXRtb3NwaGVyZQoKU2VudHJ5J3Mgd2Vic2l0ZSBpcyBhIGRhcmstbW9kZS1maXJzdCBkZXZlbG9wZXIgdG9vbCBpbnRlcmZhY2UgdGhhdCBzcGVha3MgdGhlIGxhbmd1YWdlIG9mIGNvZGUgZWRpdG9ycyBhbmQgdGVybWluYWwgd2luZG93cy4gVGhlIGVudGlyZSBhZXN0aGV0aWMgaXMgcm9vdGVkIGluIGRlZXAgcHVycGxlLWJsYWNrIGJhY2tncm91bmRzIChgIzFmMTYzM2AsIGAjMTUwZjIzYCkgdGhhdCBldm9rZSB0aGUgbGF0ZS1uaWdodCBkZWJ1Z2dpbmcgc2Vzc2lvbnMgU2VudHJ5IHdhcyBidWlsdCBmb3IuIEFnYWluc3QgdGhpcyBpbmt5IGNhbnZhcywgYSBjYXJlZnVsbHkgY3VyYXRlZCBzZXQgb2YgcHVycGxlcywgcGlua3MsIGFuZCBhIGRpc3RpbmN0aXZlIGxpbWUtZ3JlZW4gYWNjZW50IChgI2MyZWY0ZWApIGNyZWF0ZSBhIHZpc3VhbCBzeXN0ZW0gdGhhdCBmZWVscyBzaW11bHRhbmVvdXNseSB0ZWNobmljYWwgYW5kIHZpYnJhbnQuCgpUaGUgdHlwb2dyYXBoeSBwYWlyaW5nIGlzIGRlbGliZXJhdGU6ICJEYW1taXQgU2FucyIgYXBwZWFycyBhdCBoZXJvIHNjYWxlICg4OHB4LCB3ZWlnaHQgNzAwKSBhcyBhIGRpc3BsYXkgZm9udCB3aXRoIHBlcnNvbmFsaXR5IGFuZCBhdHRpdHVkZSB0aGF0IG1hdGNoZXMgU2VudHJ5J3MgaXJyZXZlcmVudCBicmFuZCB2b2ljZSAoIkNvZGUgYnJlYWtzLiBGaXggaXQgZmFzdGVyLiIpLCB3aGlsZSBSdWJpayBzZXJ2ZXMgYXMgdGhlIHdvcmtob3JzZSBVSSBmb250IGFjcm9zcyBhbGwgZnVuY3Rpb25hbCB0ZXh0IOKAlCBoZWFkaW5ncywgYm9keSwgYnV0dG9ucywgY2FwdGlvbnMsIGFuZCBuYXZpZ2F0aW9uLiBNb25hY28gcHJvdmlkZXMgdGhlIG1vbm9zcGFjZSBsYXllciBmb3IgY29kZSBzbmlwcGV0cyBhbmQgdGVjaG5pY2FsIGNvbnRlbnQsIGNvbXBsZXRpbmcgdGhlIGRldmVsb3Blci10b29sIHRyaW5pdHkuCgpXaGF0IG1ha2VzIFNlbnRyeSBkaXN0aW5jdGl2ZSBpcyBpdHMgZW1icmFjZSBvZiB0aGUgImRhcmsgSURFIiBhZXN0aGV0aWMgd2l0aG91dCBmZWVsaW5nIGNvbGQgb3Igc3RlcmlsZS4gV2FybSBwdXJwbGUgdG9uZXMgcmVwbGFjZSB0aGUgdHlwaWNhbCBjb29sIGdyYXlzIG9mIGRldmVsb3BlciB0b29scywgYW5kIGJvbGQgaWxsdXN0cmF0aXZlIGVsZW1lbnRzICgzRCBjaGFyYWN0ZXJzLCBjb2xvcmZ1bCBwcm9kdWN0IHNjcmVlbnNob3RzKSBwdW5jdHVhdGUgdGhlIGRhcmsgY2FudmFzLiBUaGUgYnV0dG9uIHN5c3RlbSB1c2VzIGEgc2lnbmF0dXJlIG11dGVkIHB1cnBsZSAoYCM3OTYyOGNgKSB3aXRoIGluc2V0IHNoYWRvd3MgdGhhdCBjcmVhdGVzIGEgdGFjdGlsZSwgYWxtb3N0IHBoeXNpY2FsIHF1YWxpdHkg4oCUIGJ1dHRvbnMgZmVlbCBsaWtlIHRoZXkgY291bGQgYmUgcHJlc3NlZCBpbnRvIHRoZSBzdXJmYWNlLgoKKipLZXkgQ2hhcmFjdGVyaXN0aWNzOioqCi0gRGFyayBwdXJwbGUtYmxhY2sgYmFja2dyb3VuZHMgKGAjMWYxNjMzYCwgYCMxNTBmMjNgKSDigJQgbmV2ZXIgcHVyZSBibGFjawotIFdhcm0gcHVycGxlIGFjY2VudCBzcGVjdHJ1bTogZnJvbSBkZWVwIChgIzM2MmQ1OWApIHRocm91Z2ggbWlkIChgIzc5NjI4Y2AsIGAjNmE1ZmMxYCkgdG8gdmlicmFudCAoYCM0MjIwODJgKQotIExpbWUtZ3JlZW4gYWNjZW50IChgI2MyZWY0ZWApIGZvciBoaWdoLXZpc2liaWxpdHkgQ1RBcyBhbmQgaGlnaGxpZ2h0cwotIFBpbmsvY29yYWwgYWNjZW50cyAoYCNmZmIyODdgLCBgI2ZhN2ZhYWApIGZvciBmb2N1cyBzdGF0ZXMgYW5kIHNlY29uZGFyeSBoaWdobGlnaHRzCi0gIkRhbW1pdCBTYW5zIiBkaXNwbGF5IGZvbnQgZm9yIGJyYW5kIHBlcnNvbmFsaXR5IGF0IGhlcm8gc2NhbGUKLSBSdWJpayBhcyBwcmltYXJ5IFVJIGZvbnQgd2l0aCB1cHBlcmNhc2UgbGV0dGVyLXNwYWNlZCBsYWJlbHMKLSBNb25hY28gbW9ub3NwYWNlIGZvciBjb2RlIGVsZW1lbnRzCi0gSW5zZXQgc2hhZG93cyBvbiBidXR0b25zIGNyZWF0aW5nIHRhY3RpbGUgZGVwdGgKLSBGcm9zdGVkIGdsYXNzIGVmZmVjdHMgd2l0aCBgYmx1cigxOHB4KSBzYXR1cmF0ZSgxODAlKWAKCiMjIDIuIENvbG9yIFBhbGV0dGUgJiBSb2xlcwoKIyMjIFByaW1hcnkgQnJhbmQKLSAqKkRlZXAgUHVycGxlKiogKGAjMWYxNjMzYCk6IFByaW1hcnkgYmFja2dyb3VuZCwgdGhlIGRlZmluaW5nIGNvbG9yIG9mIHRoZSBicmFuZAotICoqRGFya2VyIFB1cnBsZSoqIChgIzE1MGYyM2ApOiBEZWVwZXIgc2VjdGlvbnMsIGZvb3Rlciwgc2Vjb25kYXJ5IGJhY2tncm91bmRzCi0gKipCb3JkZXIgUHVycGxlKiogKGAjMzYyZDU5YCk6IEJvcmRlcnMsIGRpdmlkZXJzLCBzdWJ0bGUgc3RydWN0dXJhbCBsaW5lcwoKIyMjIEFjY2VudCBDb2xvcnMKLSAqKlNlbnRyeSBQdXJwbGUqKiAoYCM2YTVmYzFgKTogUHJpbWFyeSBpbnRlcmFjdGl2ZSBjb2xvciDigJQgbGlua3MsIGhvdmVyIHN0YXRlcywgZm9jdXMgcmluZ3MKLSAqKk11dGVkIFB1cnBsZSoqIChgIzc5NjI4Y2ApOiBCdXR0b24gYmFja2dyb3VuZHMsIHNlY29uZGFyeSBpbnRlcmFjdGl2ZSBlbGVtZW50cwotICoqRGVlcCBWaW9sZXQqKiAoYCM0MjIwODJgKTogU2VsZWN0IGRyb3Bkb3ducywgYWN0aXZlIHN0YXRlcywgaGlnaC1lbXBoYXNpcyBzdXJmYWNlcwotICoqTGltZSBHcmVlbioqIChgI2MyZWY0ZWApOiBIaWdoLXZpc2liaWxpdHkgYWNjZW50LCBzcGVjaWFsIGxpbmtzLCBiYWRnZSBoaWdobGlnaHRzCi0gKipDb3JhbCoqIChgI2ZmYjI4N2ApOiBGb2N1cyBzdGF0ZSBiYWNrZ3JvdW5kcywgd2FybSBhY2NlbnQKLSAqKlBpbmsqKiAoYCNmYTdmYWFgKTogRm9jdXMgb3V0bGluZXMsIGRlY29yYXRpdmUgYWNjZW50cwoKIyMjIFRleHQgQ29sb3JzCi0gKipQdXJlIFdoaXRlKiogKGAjZmZmZmZmYCk6IFByaW1hcnkgdGV4dCBvbiBkYXJrIGJhY2tncm91bmRzCi0gKipMaWdodCBHcmF5KiogKGAjZTVlN2ViYCk6IFNlY29uZGFyeSB0ZXh0LCBtdXRlZCBjb250ZW50Ci0gKipDb2RlIFllbGxvdyoqIChgI2RjZGNhYWApOiBTeW50YXggaGlnaGxpZ2h0aW5nLCBjb2RlIHRva2VucwoKIyMjIFN1cmZhY2UgJiBPdmVybGF5Ci0gKipHbGFzcyBXaGl0ZSoqIChgcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjE4KWApOiBGcm9zdGVkIGdsYXNzIGJ1dHRvbiBiYWNrZ3JvdW5kcwotICoqR2xhc3MgRGFyayoqIChgcmdiYSg1NCwgMjIsIDEwNywgMC4xNClgKTogSG92ZXIgb3ZlcmxheSBvbiBnbGFzcyBlbGVtZW50cwotICoqSW5wdXQgV2hpdGUqKiAoYCNmZmZmZmZgKTogRm9ybSBpbnB1dCBiYWNrZ3JvdW5kcyAobGlnaHQgY29udGV4dCkKLSAqKklucHV0IEJvcmRlcioqIChgI2NmY2ZkYmApOiBGb3JtIGZpZWxkIGJvcmRlcnMKCiMjIyBTaGFkb3dzCi0gKipBbWJpZW50IEdsb3cqKiAoYHJnYmEoMjIsIDE1LCAzNiwgMC45KSAwcHggNHB4IDRweCA5cHhgKTogRGVlcCBwdXJwbGUgYW1iaWVudCBzaGFkb3cKLSAqKkJ1dHRvbiBIb3ZlcioqIChgcmdiYSgwLCAwLCAwLCAwLjE4KSAwcHggMC41cmVtIDEuNXJlbWApOiBFbGV2YXRlZCBob3ZlciBzdGF0ZQotICoqQ2FyZCBTaGFkb3cqKiAoYHJnYmEoMCwgMCwgMCwgMC4xKSAwcHggMTBweCAxNXB4IC0zcHhgKTogU3RhbmRhcmQgY2FyZCBlbGV2YXRpb24KLSAqKkluc2V0IEJ1dHRvbioqIChgcmdiYSgwLCAwLCAwLCAwLjEpIDBweCAxcHggM3B4IDBweCBpbnNldGApOiBUYWN0aWxlIHByZXNzZWQgZWZmZWN0CgojIyAzLiBUeXBvZ3JhcGh5IFJ1bGVzCgojIyMgRm9udCBGYW1pbGllcwotICoqRGlzcGxheSoqOiBgRGFtbWl0IFNhbnNgIOKAlCBicmFuZCBwZXJzb25hbGl0eSBmb250IGZvciBoZXJvIGhlYWRpbmdzCi0gKipQcmltYXJ5IFVJKio6IGBSdWJpa2AsIHdpdGggZmFsbGJhY2tzOiBgLWFwcGxlLXN5c3RlbSwgc3lzdGVtLXVpLCBTZWdvZSBVSSwgSGVsdmV0aWNhLCBBcmlhbGAKLSAqKk1vbm9zcGFjZSoqOiBgTW9uYWNvYCwgd2l0aCBmYWxsYmFja3M6IGBNZW5sbywgVWJ1bnR1IE1vbm9gCgojIyMgSGllcmFyY2h5Cgp8IFJvbGUgfCBGb250IHwgU2l6ZSB8IFdlaWdodCB8IExpbmUgSGVpZ2h0IHwgTGV0dGVyIFNwYWNpbmcgfCBOb3RlcyB8CnwtLS0tLS18LS0tLS0tfC0tLS0tLXwtLS0tLS0tLXwtLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS18LS0tLS0tLXwKfCBEaXNwbGF5IEhlcm8gfCBEYW1taXQgU2FucyB8IDg4cHggKDUuNTByZW0pIHwgNzAwIHwgMS4yMCAodGlnaHQpIHwgbm9ybWFsIHwgTWF4aW11bSBpbXBhY3QsIGJyYW5kIHZvaWNlIHwKfCBEaXNwbGF5IFNlY29uZGFyeSB8IERhbW1pdCBTYW5zIHwgNjBweCAoMy43NXJlbSkgfCA1MDAgfCAxLjEwICh0aWdodCkgfCBub3JtYWwgfCBTZWNvbmRhcnkgaGVybyB0ZXh0IHwKfCBTZWN0aW9uIEhlYWRpbmcgfCBSdWJpayB8IDMwcHggKDEuODhyZW0pIHwgNDAwIHwgMS4yMCAodGlnaHQpIHwgbm9ybWFsIHwgTWFqb3Igc2VjdGlvbiB0aXRsZXMgfAp8IFN1Yi1oZWFkaW5nIHwgUnViaWsgfCAyN3B4ICgxLjY5cmVtKSB8IDUwMCB8IDEuMjUgKHRpZ2h0KSB8IG5vcm1hbCB8IEZlYXR1cmUgc2VjdGlvbiBoZWFkZXJzIHwKfCBDYXJkIFRpdGxlIHwgUnViaWsgfCAyNHB4ICgxLjUwcmVtKSB8IDUwMCB8IDEuMjUgKHRpZ2h0KSB8IG5vcm1hbCB8IENhcmQgYW5kIGJsb2NrIGhlYWRpbmdzIHwKfCBGZWF0dXJlIFRpdGxlIHwgUnViaWsgfCAyMHB4ICgxLjI1cmVtKSB8IDYwMCB8IDEuMjUgKHRpZ2h0KSB8IG5vcm1hbCB8IEVtcGhhc2l6ZWQgZmVhdHVyZSBuYW1lcyB8CnwgQm9keSB8IFJ1YmlrIHwgMTZweCAoMS4wMHJlbSkgfCA0MDAgfCAxLjUwIHwgbm9ybWFsIHwgU3RhbmRhcmQgYm9keSB0ZXh0IHwKfCBCb2R5IEVtcGhhc2lzIHwgUnViaWsgfCAxNnB4ICgxLjAwcmVtKSB8IDUwMOKAkzYwMCB8IDEuNTAgfCBub3JtYWwgfCBCb2xkIGJvZHksIG5hdiBpdGVtcyB8CnwgTmF2IExhYmVsIHwgUnViaWsgfCAxNXB4ICgwLjk0cmVtKSB8IDUwMCB8IDEuNDAgfCBub3JtYWwgfCBOYXZpZ2F0aW9uIGxpbmtzIHwKfCBVcHBlcmNhc2UgTGFiZWwgfCBSdWJpayB8IDE1cHggKDAuOTRyZW0pIHwgNTAwIHwgMS4yNSAodGlnaHQpIHwgbm9ybWFsIHwgYHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2VgIHwKfCBCdXR0b24gVGV4dCB8IFJ1YmlrIHwgMTRweCAoMC44OHJlbSkgfCA1MDDigJM3MDAgfCAxLjE04oCTMS4yOSAodGlnaHQpIHwgMC4ycHggfCBgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZWAgfAp8IENhcHRpb24gfCBSdWJpayB8IDE0cHggKDAuODhyZW0pIHwgNTAw4oCTNzAwIHwgMS4wMOKAkzEuNDMgfCAwLjJweCB8IE9mdGVuIHVwcGVyY2FzZSB8CnwgU21hbGwgQ2FwdGlvbiB8IFJ1YmlrIHwgMTJweCAoMC43NXJlbSkgfCA2MDAgfCAyLjAwIChyZWxheGVkKSB8IG5vcm1hbCB8IFN1YnRsZSBhbm5vdGF0aW9ucyB8CnwgTWljcm8gTGFiZWwgfCBSdWJpayB8IDEwcHggKDAuNjNyZW0pIHwgNjAwIHwgMS44MCAocmVsYXhlZCkgfCAwLjI1cHggfCBgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZWAgfAp8IENvZGUgfCBNb25hY28gfCAxNnB4ICgxLjAwcmVtKSB8IDQwMOKAkzcwMCB8IDEuNTAgfCBub3JtYWwgfCBDb2RlIGJsb2NrcywgdGVjaG5pY2FsIHRleHQgfAoKIyMjIFByaW5jaXBsZXMKLSAqKkR1YWwgcGVyc29uYWxpdHkqKjogRGFtbWl0IFNhbnMgYnJpbmdzIGlycmV2ZXJlbnQgYnJhbmQgY2hhcmFjdGVyIGF0IGRpc3BsYXkgc2NhbGU7IFJ1YmlrIHByb3ZpZGVzIGNsZWFuIHByb2Zlc3Npb25hbGlzbSBmb3IgZXZlcnl0aGluZyBmdW5jdGlvbmFsLgotICoqVXBwZXJjYXNlIGFzIHN5c3RlbSoqOiBCdXR0b25zLCBjYXB0aW9ucywgbGFiZWxzLCBhbmQgbWljcm8tdGV4dCBhbGwgdXNlIGB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlYCB3aXRoIHN1YnRsZSBsZXR0ZXItc3BhY2luZyAoMC4ycHjigJMwLjI1cHgpLCBjcmVhdGluZyBhIHN5c3RlbWF0aWMgInRlY2huaWNhbCBsYWJlbCIgcGF0dGVybiB0aHJvdWdob3V0LgotICoqV2VpZ2h0IHN0cmF0aWZpY2F0aW9uKio6IFJ1YmlrIHVzZXMgNDAwIChib2R5KSwgNTAwIChlbXBoYXNpcy9uYXYpLCA2MDAgKHRpdGxlcy9zdHJvbmcpLCA3MDAgKGJ1dHRvbnMvQ1RBcykg4oCUIGEgY2xlYW4gZm91ci10aWVyIHdlaWdodCBzeXN0ZW0uCi0gKipUaWdodCBoZWFkaW5ncywgcmVsYXhlZCBib2R5Kio6IEFsbCBoZWFkaW5ncyB1c2UgMS4xMOKAkzEuMjUgbGluZS1oZWlnaHQ7IGJvZHkgdXNlcyAxLjUwOyBzbWFsbCBjYXB0aW9ucyBleHBhbmQgdG8gMi4wMCBmb3IgcmVhZGFiaWxpdHkgYXQgdGlueSBzaXplcy4KCiMjIDQuIENvbXBvbmVudCBTdHlsaW5ncwoKIyMjIEJ1dHRvbnMKCioqUHJpbWFyeSBNdXRlZCBQdXJwbGUqKgotIEJhY2tncm91bmQ6IGAjNzk2MjhjYCAocmdiKDEyMSwgOTgsIDE0MCkpCi0gVGV4dDogYCNmZmZmZmZgLCB1cHBlcmNhc2UsIDE0cHgsIHdlaWdodCA1MDDigJM3MDAsIGxldHRlci1zcGFjaW5nIDAuMnB4Ci0gQm9yZGVyOiBgMXB4IHNvbGlkICM1ODQ2NzRgCi0gUmFkaXVzOiAxM3B4Ci0gU2hhZG93OiBgcmdiYSgwLCAwLCAwLCAwLjEpIDBweCAxcHggM3B4IDBweCBpbnNldGAgKHRhY3RpbGUgaW5zZXQpCi0gSG92ZXI6IGVsZXZhdGVkIHNoYWRvdyBgcmdiYSgwLCAwLCAwLCAwLjE4KSAwcHggMC41cmVtIDEuNXJlbWAKCioqR2xhc3MgV2hpdGUqKgotIEJhY2tncm91bmQ6IGByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMTgpYCAoZnJvc3RlZCBnbGFzcykKLSBUZXh0OiBgI2ZmZmZmZmAKLSBQYWRkaW5nOiA4cHgKLSBSYWRpdXM6IDEycHggKGxlZnQtYWxpZ25lZCB2YXJpYW50OiBgMTJweCAwcHggMHB4IDEycHhgKQotIFNoYWRvdzogYHJnYmEoMCwgMCwgMCwgMC4wOCkgMHB4IDJweCA4cHhgCi0gSG92ZXIgYmFja2dyb3VuZDogYHJnYmEoNTQsIDIyLCAxMDcsIDAuMTQpYAotIFVzZTogU2Vjb25kYXJ5IGFjdGlvbnMgb24gZGFyayBzdXJmYWNlcwoKKipXaGl0ZSBTb2xpZCoqCi0gQmFja2dyb3VuZDogYCNmZmZmZmZgCi0gVGV4dDogYCMxZjE2MzNgCi0gUGFkZGluZzogMTJweCAxNnB4Ci0gUmFkaXVzOiA4cHgKLSBIb3ZlcjogYmFja2dyb3VuZCB0cmFuc2l0aW9ucyB0byBgIzZhNWZjMWAsIHRleHQgdG8gd2hpdGUKLSBGb2N1czogYmFja2dyb3VuZCBgI2ZmYjI4N2AgKGNvcmFsKSwgb3V0bGluZSBgcmdiKDEwNiwgOTUsIDE5Mykgc29saWQgMC4xMjVyZW1gCi0gVXNlOiBIaWdoLXZpc2liaWxpdHkgQ1RBIG9uIGRhcmsgYmFja2dyb3VuZHMKCioqRGVlcCBWaW9sZXQgKFNlbGVjdC9Ecm9wZG93bikqKgotIEJhY2tncm91bmQ6IGAjNDIyMDgyYAotIFRleHQ6IGAjZmZmZmZmYAotIFBhZGRpbmc6IDhweCAxNnB4Ci0gUmFkaXVzOiA4cHgKCiMjIyBJbnB1dHMKCioqVGV4dCBJbnB1dCoqCi0gQmFja2dyb3VuZDogYCNmZmZmZmZgCi0gVGV4dDogYCMxZjE2MzNgCi0gQm9yZGVyOiBgMXB4IHNvbGlkICNjZmNmZGJgCi0gUGFkZGluZzogOHB4IDEycHgKLSBSYWRpdXM6IDZweAotIEZvY3VzOiBib3JkZXItY29sb3Igc3RheXMgYCNjZmNmZGJgLCBzaGFkb3cgYHJnYmEoMCwgMCwgMCwgMC4xNSkgMHB4IDJweCAxMHB4IGluc2V0YAoKIyMjIExpbmtzCi0gKipEZWZhdWx0IG9uIGRhcmsqKjogYCNmZmZmZmZgLCB1bmRlcmxpbmUgZGVjb3JhdGlvbgotICoqSG92ZXIqKjogY29sb3IgdHJhbnNpdGlvbnMgdG8gYCM2YTVmYzFgIChTZW50cnkgUHVycGxlKQotICoqUHVycGxlIGxpbmtzKio6IGAjNmE1ZmMxYCBkZWZhdWx0LCBob3ZlciB1bmRlcmxpbmUKLSAqKkxpbWUgYWNjZW50IGxpbmtzKio6IGAjYzJlZjRlYCBkZWZhdWx0LCBob3ZlciB0byBgIzZhNWZjMWAKLSAqKkRhcmsgY29udGV4dCBsaW5rcyoqOiBgIzM2MmQ1OWAsIGhvdmVyIHRvIGAjZmZmZmZmYAoKIyMjIENhcmRzICYgQ29udGFpbmVycwotIEJhY2tncm91bmQ6IHNlbWktdHJhbnNwYXJlbnQgb3IgZGFyayBwdXJwbGUgc3VyZmFjZXMKLSBSYWRpdXM6IDhweOKAkzEycHgKLSBTaGFkb3c6IGByZ2JhKDAsIDAsIDAsIDAuMSkgMHB4IDEwcHggMTVweCAtM3B4YAotIEJhY2tkcm9wIGZpbHRlcjogYGJsdXIoMThweCkgc2F0dXJhdGUoMTgwJSlgIGZvciBnbGFzcyBlZmZlY3RzCgojIyMgTmF2aWdhdGlvbgotIERhcmsgdHJhbnNwYXJlbnQgaGVhZGVyIG92ZXIgaGVybyBjb250ZW50Ci0gUnViaWsgMTVweCB3ZWlnaHQgNTAwIGZvciBuYXYgbGlua3MKLSBXaGl0ZSB0ZXh0LCBob3ZlciB0byBTZW50cnkgUHVycGxlIChgIzZhNWZjMWApCi0gVXBwZXJjYXNlIGxhYmVscyB3aXRoIDAuMnB4IGxldHRlci1zcGFjaW5nIGZvciBjYXRlZ29yaWVzCi0gTW9iaWxlOiBoYW1idXJnZXIgbWVudSwgZnVsbC13aWR0aCBleHBhbmRlZAoKIyMgNS4gTGF5b3V0IFByaW5jaXBsZXMKCiMjIyBTcGFjaW5nIFN5c3RlbQotIEJhc2UgdW5pdDogOHB4Ci0gU2NhbGU6IDFweCwgMnB4LCA0cHgsIDVweCwgNnB4LCA4cHgsIDEycHgsIDE2cHgsIDI0cHgsIDMycHgsIDQwcHgsIDQ0cHgsIDQ1cHgsIDQ3cHgKCiMjIyBHcmlkICYgQ29udGFpbmVyCi0gTWF4IGNvbnRlbnQgd2lkdGg6IDExNTJweCAoWEwgYnJlYWtwb2ludCkKLSBSZXNwb25zaXZlIHBhZGRpbmc6IDJyZW0gKG1vYmlsZSkg4oaSIDRyZW0gKHRhYmxldCspCi0gQ29udGVudCBjZW50ZXJlZCB3aXRoaW4gY29udGFpbmVyCi0gRnVsbC13aWR0aCBkYXJrIHNlY3Rpb25zIHdpdGggY29udGFpbmVkIGlubmVyIGNvbnRlbnQKCiMjIyBCcmVha3BvaW50cwp8IE5hbWUgfCBXaWR0aCB8IEtleSBDaGFuZ2VzIHwKfC0tLS0tLXwtLS0tLS0tfC0tLS0tLS0tLS0tLS18CnwgTW9iaWxlIHwgPCA1NzZweCB8IFNpbmdsZSBjb2x1bW4sIHN0YWNrZWQgbGF5b3V0IHwKfCBTbWFsbCBUYWJsZXQgfCA1NzbigJM2NDBweCB8IE1pbm9yIHdpZHRoIGFkanVzdG1lbnRzIHwKfCBUYWJsZXQgfCA2NDDigJM3NjhweCB8IDItY29sdW1uIGJlZ2lucyB8CnwgU21hbGwgRGVza3RvcCB8IDc2OOKAkzk5MnB4IHwgRnVsbCBuYXYgdmlzaWJsZSB8CnwgRGVza3RvcCB8IDk5MuKAkzExNTJweCB8IFN0YW5kYXJkIGxheW91dCB8CnwgTGFyZ2UgRGVza3RvcCB8IDExNTLigJMxNDQwcHggfCBNYXgtd2lkdGggY29udGVudCB8CgojIyMgV2hpdGVzcGFjZSBQaGlsb3NvcGh5Ci0gKipEYXJrIGJyZWF0aGluZyByb29tKio6IEdlbmVyb3VzIHZlcnRpY2FsIHNwYWNpbmcgYmV0d2VlbiBzZWN0aW9ucyAoNjRweOKAkzgwcHgrKSBsZXRzIHRoZSBkYXJrIGJhY2tncm91bmQgc2VydmUgYXMgYSB2aXN1YWwgcmVzdC4KLSAqKkNvbnRlbnQgaXNsYW5kcyoqOiBGZWF0dXJlIHNlY3Rpb25zIGFyZSBzZWxmLWNvbnRhaW5lZCBibG9ja3MgZmxvYXRpbmcgaW4gdGhlIGRhcmsgcHVycGxlIHNlYSwgZWFjaCB3aXRoIGl0cyBvd24gaW50ZXJuYWwgc3BhY2luZyByaHl0aG0uCi0gKipBc3ltbWV0cmljIHBhZGRpbmcqKjogQnV0dG9ucyB1c2UgYXN5bW1ldHJpYyBwYWRkaW5nIHBhdHRlcm5zICgxMnB4IDE2cHgsIDhweCAxMnB4KSB0aGF0IGZlZWwgb3JnYW5pYyByYXRoZXIgdGhhbiByaWdpZC4KCiMjIyBCb3JkZXIgUmFkaXVzIFNjYWxlCi0gTWluaW1hbCAoNnB4KTogRm9ybSBpbnB1dHMsIHNtYWxsIGludGVyYWN0aXZlIGVsZW1lbnRzCi0gU3RhbmRhcmQgKDhweCk6IEJ1dHRvbnMsIGNhcmRzLCBjb250YWluZXJzCi0gQ29tZm9ydGFibGUgKDEwcHjigJMxMnB4KTogTGFyZ2VyIGNvbnRhaW5lcnMsIGdsYXNzIHBhbmVscwotIFJvdW5kZWQgKDEzcHgpOiBQcmltYXJ5IG11dGVkIGJ1dHRvbnMKLSBQaWxsICgxOHB4KTogSW1hZ2UgY29udGFpbmVycywgYmFkZ2VzCgojIyA2LiBEZXB0aCAmIEVsZXZhdGlvbgoKfCBMZXZlbCB8IFRyZWF0bWVudCB8IFVzZSB8CnwtLS0tLS0tfC0tLS0tLS0tLS0tfC0tLS0tfAp8IFN1bmtlbiAoTGV2ZWwgLTEpIHwgSW5zZXQgc2hhZG93IGByZ2JhKDAsIDAsIDAsIDAuMSkgMHB4IDFweCAzcHggaW5zZXRgIHwgUHJpbWFyeSBidXR0b25zICh0YWN0aWxlIHByZXNzZWQgZmVlbCkgfAp8IEZsYXQgKExldmVsIDApIHwgTm8gc2hhZG93IHwgRGVmYXVsdCBzdXJmYWNlcywgZGFyayBiYWNrZ3JvdW5kcyB8CnwgU3VyZmFjZSAoTGV2ZWwgMSkgfCBgcmdiYSgwLCAwLCAwLCAwLjA4KSAwcHggMnB4IDhweGAgfCBHbGFzcyBidXR0b25zLCBzdWJ0bGUgY2FyZHMgfAp8IEVsZXZhdGVkIChMZXZlbCAyKSB8IGByZ2JhKDAsIDAsIDAsIDAuMSkgMHB4IDEwcHggMTVweCAtM3B4YCB8IENhcmRzLCBmbG9hdGluZyBwYW5lbHMgfAp8IFByb21pbmVudCAoTGV2ZWwgMykgfCBgcmdiYSgwLCAwLCAwLCAwLjE4KSAwcHggMC41cmVtIDEuNXJlbWAgfCBIb3ZlciBzdGF0ZXMsIG1vZGFscyB8CnwgQW1iaWVudCAoTGV2ZWwgNCkgfCBgcmdiYSgyMiwgMTUsIDM2LCAwLjkpIDBweCA0cHggNHB4IDlweGAgfCBEZWVwIHB1cnBsZSBhbWJpZW50IGdsb3cgYXJvdW5kIGhlcm8gfAoKKipTaGFkb3cgUGhpbG9zb3BoeSoqOiBTZW50cnkgdXNlcyBhIHVuaXF1ZSBjb21iaW5hdGlvbiBvZiBpbnNldCBzaGFkb3dzIChidXR0b25zIGZlZWwgcHJlc3NlZCBJTlRPIHRoZSBzdXJmYWNlKSBhbmQgYW1iaWVudCBnbG93cyAoY29udGVudCByYWRpYXRlcyBmcm9tIHRoZSBkYXJrIGJhY2tncm91bmQpLiBUaGUgZGVlcCBwdXJwbGUgYW1iaWVudCBzaGFkb3cgKGByZ2JhKDIyLCAxNSwgMzYsIDAuOSlgKSBpcyB0aGUgc2lnbmF0dXJlIOKAlCBpdCBjcmVhdGVzIGEgYmlvbHVtaW5lc2NlbnQgcXVhbGl0eSB3aGVyZSBjb250ZW50IHNlZW1zIHRvIGVtaXQgaXRzIG93biBwdXJwbGUtdGludGVkIGxpZ2h0LgoKIyMgNy4gRG8ncyBhbmQgRG9uJ3RzCgojIyMgRG8KLSBVc2UgZGVlcCBwdXJwbGUgYmFja2dyb3VuZHMgKGAjMWYxNjMzYCwgYCMxNTBmMjNgKSDigJQgbmV2ZXIgcHVyZSBibGFjayAoYCMwMDAwMDBgKQotIEFwcGx5IGluc2V0IHNoYWRvd3Mgb24gcHJpbWFyeSBidXR0b25zIGZvciB0aGUgdGFjdGlsZSBwcmVzc2VkIGVmZmVjdAotIFVzZSBEYW1taXQgU2FucyBPTkxZIGZvciBoZXJvL2Rpc3BsYXkgaGVhZGluZ3Mg4oCUIFJ1YmlrIGZvciBldmVyeXRoaW5nIGVsc2UKLSBBcHBseSBgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZWAgd2l0aCBgbGV0dGVyLXNwYWNpbmc6IDAuMnB4YCBvbiBidXR0b25zIGFuZCBsYWJlbHMKLSBVc2UgdGhlIGxpbWUtZ3JlZW4gYWNjZW50IChgI2MyZWY0ZWApIHNwYXJpbmdseSBmb3IgbWF4aW11bSBpbXBhY3QKLSBFbXBsb3kgZnJvc3RlZCBnbGFzcyBlZmZlY3RzIChgYmx1cigxOHB4KSBzYXR1cmF0ZSgxODAlKWApIGZvciBsYXllcmVkIHN1cmZhY2VzCi0gTWFpbnRhaW4gdGhlIHdhcm0gcHVycGxlIHNoYWRvdyB0b25lcyDigJQgc2hhZG93cyBzaG91bGQgZmVlbCBwdXJwbGUtdGludGVkLCBub3QgbmV1dHJhbCBncmF5Ci0gVXNlIFJ1YmlrJ3MgNC10aWVyIHdlaWdodCBzeXN0ZW06IDQwMCAoYm9keSksIDUwMCAobmF2L2VtcGhhc2lzKSwgNjAwICh0aXRsZXMpLCA3MDAgKENUQXMpCgojIyMgRG9uJ3QKLSBEb24ndCB1c2UgcHVyZSBibGFjayAoYCMwMDAwMDBgKSBmb3IgYmFja2dyb3VuZHMg4oCUIGFsd2F5cyB1c2UgdGhlIHdhcm0gcHVycGxlLWJsYWNrcwotIERvbid0IGFwcGx5IERhbW1pdCBTYW5zIHRvIGJvZHkgdGV4dCBvciBVSSBlbGVtZW50cyDigJQgaXQncyBkaXNwbGF5LW9ubHkKLSBEb24ndCB1c2Ugc3RhbmRhcmQgZ3JheSAoYCM2NjZgLCBgIzk5OWApIGZvciBib3JkZXJzIOKAlCB1c2UgcHVycGxlLXRpbnRlZCBncmF5cyAoYCMzNjJkNTlgLCBgIzU4NDY3NGApCi0gRG9uJ3QgZHJvcCB0aGUgdXBwZXJjYXNlIHRyZWF0bWVudCBvbiBidXR0b25zIOKAlCBpdCdzIGEgc3lzdGVtLXdpZGUgcGF0dGVybgotIERvbid0IHVzZSBzaGFycCBjb3JuZXJzICgwcHggcmFkaXVzKSDigJQgbWluaW11bSA2cHggZm9yIGFsbCBpbnRlcmFjdGl2ZSBlbGVtZW50cwotIERvbid0IG1peCB0aGUgbGltZS1ncmVlbiBhY2NlbnQgd2l0aCB0aGUgY29yYWwvcGluayBhY2NlbnRzIGluIHRoZSBzYW1lIGNvbXBvbmVudAotIERvbid0IHVzZSBmbGF0IChub24taW5zZXQpIHNoYWRvd3Mgb24gcHJpbWFyeSBidXR0b25zIOKAlCB0aGUgdGFjdGlsZSBxdWFsaXR5IGlzIHNpZ25hdHVyZQotIERvbid0IGZvcmdldCBsZXR0ZXItc3BhY2luZyBvbiB1cHBlcmNhc2UgdGV4dCDigJQgMC4ycHggbWluaW11bQoKIyMgOC4gUmVzcG9uc2l2ZSBCZWhhdmlvcgoKIyMjIEJyZWFrcG9pbnRzCnwgTmFtZSB8IFdpZHRoIHwgS2V5IENoYW5nZXMgfAp8LS0tLS0tfC0tLS0tLS18LS0tLS0tLS0tLS0tLXwKfCBNb2JpbGUgfCA8NTc2cHggfCBTaW5nbGUgY29sdW1uLCBoYW1idXJnZXIgbmF2LCBzdGFja2VkIENUQXMgfAp8IFRhYmxldCB8IDU3NuKAkzc2OHB4IHwgMi1jb2x1bW4gZmVhdHVyZSBncmlkcyBiZWdpbiB8CnwgU21hbGwgRGVza3RvcCB8IDc2OOKAkzk5MnB4IHwgRnVsbCBuYXZpZ2F0aW9uLCBzaWRlLWJ5LXNpZGUgbGF5b3V0cyB8CnwgRGVza3RvcCB8IDk5MuKAkzExNTJweCB8IE1heC13aWR0aCBjb250YWluZXIsIGZ1bGwgbGF5b3V0IHwKfCBMYXJnZSB8ID4xMTUycHggfCBDb250ZW50IG1heC13aWR0aCBtYWludGFpbmVkLCBnZW5lcm91cyBtYXJnaW5zIHwKCiMjIyBDb2xsYXBzaW5nIFN0cmF0ZWd5Ci0gSGVybyB0ZXh0OiA4OHB4IERhbW1pdCBTYW5zIOKGkiA2MHB4IOKGkiBtb2JpbGUgc2NhbGVzCi0gTmF2aWdhdGlvbjogaG9yaXpvbnRhbCDihpIgaGFtYnVyZ2VyIHdpdGggc2xpZGUtb3V0Ci0gRmVhdHVyZSBzZWN0aW9uczogc2lkZS1ieS1zaWRlIOKGkiBzdGFja2VkIGNhcmRzCi0gQnV0dG9uczogaW5saW5lIOKGkiBmdWxsLXdpZHRoIHN0YWNrZWQgb24gbW9iaWxlCi0gQ29udGFpbmVyIHBhZGRpbmc6IDRyZW0g4oaSIDJyZW0KCiMjIDkuIEFnZW50IFByb21wdCBHdWlkZQoKIyMjIFF1aWNrIENvbG9yIFJlZmVyZW5jZQotIEJhY2tncm91bmQ6IGAjMWYxNjMzYCAocHJpbWFyeSksIGAjMTUwZjIzYCAoZGVlcGVyKQotIFRleHQ6IGAjZmZmZmZmYCAocHJpbWFyeSksIGAjZTVlN2ViYCAoc2Vjb25kYXJ5KQotIEludGVyYWN0aXZlOiBgIzZhNWZjMWAgKGxpbmtzL2hvdmVyKSwgYCM3OTYyOGNgIChidXR0b25zKQotIEFjY2VudDogYCNjMmVmNGVgIChsaW1lIGhpZ2hsaWdodCksIGAjZmZiMjg3YCAoY29yYWwgZm9jdXMpCi0gQm9yZGVyOiBgIzM2MmQ1OWAgKGRhcmspLCBgI2NmY2ZkYmAgKGxpZ2h0IGNvbnRleHQpCgojIyMgRXhhbXBsZSBDb21wb25lbnQgUHJvbXB0cwotICJDcmVhdGUgYSBoZXJvIHNlY3Rpb24gb24gZGVlcCBwdXJwbGUgYmFja2dyb3VuZCAoIzFmMTYzMykuIEhlYWRsaW5lIGF0IDg4cHggRGFtbWl0IFNhbnMgd2VpZ2h0IDcwMCwgbGluZS1oZWlnaHQgMS4yMCwgd2hpdGUgdGV4dC4gU3ViLXRleHQgYXQgMTZweCBSdWJpayB3ZWlnaHQgNDAwLCBsaW5lLWhlaWdodCAxLjUwLiBXaGl0ZSBzb2xpZCBDVEEgYnV0dG9uICg4cHggcmFkaXVzLCAxMnB4IDE2cHggcGFkZGluZyksIGhvdmVyIHRyYW5zaXRpb25zIHRvICM2YTVmYzEuIgotICJEZXNpZ24gYSBuYXZpZ2F0aW9uIGJhcjogdHJhbnNwYXJlbnQgb3ZlciBkYXJrIGJhY2tncm91bmQuIFJ1YmlrIDE1cHggd2VpZ2h0IDUwMCwgd2hpdGUgdGV4dC4gVXBwZXJjYXNlIGNhdGVnb3J5IGxhYmVscyB3aXRoIDAuMnB4IGxldHRlci1zcGFjaW5nLiBIb3ZlciBjb2xvciAjNmE1ZmMxLiIKLSAiQnVpbGQgYSBwcmltYXJ5IGJ1dHRvbjogYmFja2dyb3VuZCAjNzk2MjhjLCBib3JkZXIgMXB4IHNvbGlkICM1ODQ2NzQsIGluc2V0IHNoYWRvdyByZ2JhKDAsMCwwLDAuMSkgMHB4IDFweCAzcHgsIHdoaXRlIHVwcGVyY2FzZSB0ZXh0IGF0IDE0cHggUnViaWsgd2VpZ2h0IDcwMCwgbGV0dGVyLXNwYWNpbmcgMC4ycHgsIHJhZGl1cyAxM3B4LiBIb3Zlcjogc2hhZG93IHJnYmEoMCwwLDAsMC4xOCkgMHB4IDAuNXJlbSAxLjVyZW0uIgotICJDcmVhdGUgYSBnbGFzcyBjYXJkIHBhbmVsOiBiYWNrZ3JvdW5kIHJnYmEoMjU1LDI1NSwyNTUsMC4xOCksIGJhY2tkcm9wLWZpbHRlciBibHVyKDE4cHgpIHNhdHVyYXRlKDE4MCUpLCByYWRpdXMgMTJweC4gV2hpdGUgdGV4dCBjb250ZW50IGluc2lkZS4iCi0gIkRlc2lnbiBhIGZlYXR1cmUgc2VjdGlvbjogIzE1MGYyMyBiYWNrZ3JvdW5kLCAyNHB4IFJ1YmlrIHdlaWdodCA1MDAgaGVhZGluZywgMTZweCBSdWJpayB3ZWlnaHQgNDAwIGJvZHkgdGV4dC4gMTRweCB1cHBlcmNhc2UgbGltZS1ncmVlbiAoI2MyZWY0ZSkgbGFiZWwgYWJvdmUgaGVhZGluZy4iCgojIyMgSXRlcmF0aW9uIEd1aWRlCjEuIEFsd2F5cyBzdGFydCB3aXRoIHRoZSBkYXJrIHB1cnBsZSBiYWNrZ3JvdW5kIOKAlCB0aGUgY29sb3IgcGFsZXR0ZSBpcyBidWlsdCBGT1IgZGFyayBtb2RlCjIuIFVzZSBpbnNldCBzaGFkb3dzIG9uIGJ1dHRvbnMsIGFtYmllbnQgcHVycGxlIGdsb3dzIG9uIGhlcm8gc2VjdGlvbnMKMy4gVXBwZXJjYXNlICsgbGV0dGVyLXNwYWNpbmcgaXMgdGhlIHN5c3RlbWF0aWMgcGF0dGVybiBmb3IgbGFiZWxzLCBidXR0b25zLCBhbmQgY2FwdGlvbnMKNC4gTGltZSBncmVlbiAoI2MyZWY0ZSkgaXMgdGhlICJwb3AiIGNvbG9yIOKAlCB1c2Ugb25jZSBwZXIgc2VjdGlvbiBtYXhpbXVtCjUuIEZyb3N0ZWQgZ2xhc3MgZm9yIG92ZXJsYWlkIHBhbmVscywgc29saWQgcHVycGxlIGZvciBwcmltYXJ5IHN1cmZhY2VzCjYuIFJ1YmlrIGhhbmRsZXMgOTAlIG9mIHR5cG9ncmFwaHkg4oCUIERhbW1pdCBTYW5zIGlzIGhlcm8tb25seQo=
+# Design System: Sentry
+
+
+> **Hermes Agent — Implementation Notes**
+>
+> The original site uses proprietary fonts. For self-contained HTML output, use these CDN substitutes:
+> - **Primary:** `Rubik` | **Mono:** `JetBrains Mono`
+> - **Font stack (CSS):** `font-family: 'Rubik', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;`
+> - **Mono stack (CSS):** `font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;`
+> ```html
+> <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+> ```
+> Use `write_file` to create HTML, serve via `generative-widgets` skill (cloudflared tunnel).
+> Verify visual accuracy with `browser_vision` after generating.
+
+## 1. Visual Theme & Atmosphere
+
+Sentry's website is a dark-mode-first developer tool interface that speaks the language of code editors and terminal windows. The entire aesthetic is rooted in deep purple-black backgrounds (`#1f1633`, `#150f23`) that evoke the late-night debugging sessions Sentry was built for. Against this inky canvas, a carefully curated set of purples, pinks, and a distinctive lime-green accent (`#c2ef4e`) create a visual system that feels simultaneously technical and vibrant.
+
+The typography pairing is deliberate: "Dammit Sans" appears at hero scale (88px, weight 700) as a display font with personality and attitude that matches Sentry's irreverent brand voice ("Code breaks. Fix it faster."), while Rubik serves as the workhorse UI font across all functional text — headings, body, buttons, captions, and navigation. Monaco provides the monospace layer for code snippets and technical content, completing the developer-tool trinity.
+
+What makes Sentry distinctive is its embrace of the "dark IDE" aesthetic without feeling cold or sterile. Warm purple tones replace the typical cool grays of developer tools, and bold illustrative elements (3D characters, colorful product screenshots) punctuate the dark canvas. The button system uses a signature muted purple (`#79628c`) with inset shadows that creates a tactile, almost physical quality — buttons feel like they could be pressed into the surface.
+
+**Key Characteristics:**
+- Dark purple-black backgrounds (`#1f1633`, `#150f23`) — never pure black
+- Warm purple accent spectrum: from deep (`#362d59`) through mid (`#79628c`, `#6a5fc1`) to vibrant (`#422082`)
+- Lime-green accent (`#c2ef4e`) for high-visibility CTAs and highlights
+- Pink/coral accents (`#ffb287`, `#fa7faa`) for focus states and secondary highlights
+- "Dammit Sans" display font for brand personality at hero scale
+- Rubik as primary UI font with uppercase letter-spaced labels
+- Monaco monospace for code elements
+- Inset shadows on buttons creating tactile depth
+- Frosted glass effects with `blur(18px) saturate(180%)`
+
+## 2. Color Palette & Roles
+
+### Primary Brand
+- **Deep Purple** (`#1f1633`): Primary background, the defining color of the brand
+- **Darker Purple** (`#150f23`): Deeper sections, footer, secondary backgrounds
+- **Border Purple** (`#362d59`): Borders, dividers, subtle structural lines
+
+### Accent Colors
+- **Sentry Purple** (`#6a5fc1`): Primary interactive color — links, hover states, focus rings
+- **Muted Purple** (`#79628c`): Button backgrounds, secondary interactive elements
+- **Deep Violet** (`#422082`): Select dropdowns, active states, high-emphasis surfaces
+- **Lime Green** (`#c2ef4e`): High-visibility accent, special links, badge highlights
+- **Coral** (`#ffb287`): Focus state backgrounds, warm accent
+- **Pink** (`#fa7faa`): Focus outlines, decorative accents
+
+### Text Colors
+- **Pure White** (`#ffffff`): Primary text on dark backgrounds
+- **Light Gray** (`#e5e7eb`): Secondary text, muted content
+- **Code Yellow** (`#dcdcaa`): Syntax highlighting, code tokens
+
+### Surface & Overlay
+- **Glass White** (`rgba(255, 255, 255, 0.18)`): Frosted glass button backgrounds
+- **Glass Dark** (`rgba(54, 22, 107, 0.14)`): Hover overlay on glass elements
+- **Input White** (`#ffffff`): Form input backgrounds (light context)
+- **Input Border** (`#cfcfdb`): Form field borders
+
+### Shadows
+- **Ambient Glow** (`rgba(22, 15, 36, 0.9) 0px 4px 4px 9px`): Deep purple ambient shadow
+- **Button Hover** (`rgba(0, 0, 0, 0.18) 0px 0.5rem 1.5rem`): Elevated hover state
+- **Card Shadow** (`rgba(0, 0, 0, 0.1) 0px 10px 15px -3px`): Standard card elevation
+- **Inset Button** (`rgba(0, 0, 0, 0.1) 0px 1px 3px 0px inset`): Tactile pressed effect
+
+## 3. Typography Rules
+
+### Font Families
+- **Display**: `Dammit Sans` — brand personality font for hero headings
+- **Primary UI**: `Rubik`, with fallbacks: `-apple-system, system-ui, Segoe UI, Helvetica, Arial`
+- **Monospace**: `Monaco`, with fallbacks: `Menlo, Ubuntu Mono`
+
+### Hierarchy
+
+| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
+|------|------|------|--------|-------------|----------------|-------|
+| Display Hero | Dammit Sans | 88px (5.50rem) | 700 | 1.20 (tight) | normal | Maximum impact, brand voice |
+| Display Secondary | Dammit Sans | 60px (3.75rem) | 500 | 1.10 (tight) | normal | Secondary hero text |
+| Section Heading | Rubik | 30px (1.88rem) | 400 | 1.20 (tight) | normal | Major section titles |
+| Sub-heading | Rubik | 27px (1.69rem) | 500 | 1.25 (tight) | normal | Feature section headers |
+| Card Title | Rubik | 24px (1.50rem) | 500 | 1.25 (tight) | normal | Card and block headings |
+| Feature Title | Rubik | 20px (1.25rem) | 600 | 1.25 (tight) | normal | Emphasized feature names |
+| Body | Rubik | 16px (1.00rem) | 400 | 1.50 | normal | Standard body text |
+| Body Emphasis | Rubik | 16px (1.00rem) | 500–600 | 1.50 | normal | Bold body, nav items |
+| Nav Label | Rubik | 15px (0.94rem) | 500 | 1.40 | normal | Navigation links |
+| Uppercase Label | Rubik | 15px (0.94rem) | 500 | 1.25 (tight) | normal | `text-transform: uppercase` |
+| Button Text | Rubik | 14px (0.88rem) | 500–700 | 1.14–1.29 (tight) | 0.2px | `text-transform: uppercase` |
+| Caption | Rubik | 14px (0.88rem) | 500–700 | 1.00–1.43 | 0.2px | Often uppercase |
+| Small Caption | Rubik | 12px (0.75rem) | 600 | 2.00 (relaxed) | normal | Subtle annotations |
+| Micro Label | Rubik | 10px (0.63rem) | 600 | 1.80 (relaxed) | 0.25px | `text-transform: uppercase` |
+| Code | Monaco | 16px (1.00rem) | 400–700 | 1.50 | normal | Code blocks, technical text |
+
+### Principles
+- **Dual personality**: Dammit Sans brings irreverent brand character at display scale; Rubik provides clean professionalism for everything functional.
+- **Uppercase as system**: Buttons, captions, labels, and micro-text all use `text-transform: uppercase` with subtle letter-spacing (0.2px–0.25px), creating a systematic "technical label" pattern throughout.
+- **Weight stratification**: Rubik uses 400 (body), 500 (emphasis/nav), 600 (titles/strong), 700 (buttons/CTAs) — a clean four-tier weight system.
+- **Tight headings, relaxed body**: All headings use 1.10–1.25 line-height; body uses 1.50; small captions expand to 2.00 for readability at tiny sizes.
+
+## 4. Component Stylings
+
+### Buttons
+
+**Primary Muted Purple**
+- Background: `#79628c` (rgb(121, 98, 140))
+- Text: `#ffffff`, uppercase, 14px, weight 500–700, letter-spacing 0.2px
+- Border: `1px solid #584674`
+- Radius: 13px
+- Shadow: `rgba(0, 0, 0, 0.1) 0px 1px 3px 0px inset` (tactile inset)
+- Hover: elevated shadow `rgba(0, 0, 0, 0.18) 0px 0.5rem 1.5rem`
+
+**Glass White**
+- Background: `rgba(255, 255, 255, 0.18)` (frosted glass)
+- Text: `#ffffff`
+- Padding: 8px
+- Radius: 12px (left-aligned variant: `12px 0px 0px 12px`)
+- Shadow: `rgba(0, 0, 0, 0.08) 0px 2px 8px`
+- Hover background: `rgba(54, 22, 107, 0.14)`
+- Use: Secondary actions on dark surfaces
+
+**White Solid**
+- Background: `#ffffff`
+- Text: `#1f1633`
+- Padding: 12px 16px
+- Radius: 8px
+- Hover: background transitions to `#6a5fc1`, text to white
+- Focus: background `#ffb287` (coral), outline `rgb(106, 95, 193) solid 0.125rem`
+- Use: High-visibility CTA on dark backgrounds
+
+**Deep Violet (Select/Dropdown)**
+- Background: `#422082`
+- Text: `#ffffff`
+- Padding: 8px 16px
+- Radius: 8px
+
+### Inputs
+
+**Text Input**
+- Background: `#ffffff`
+- Text: `#1f1633`
+- Border: `1px solid #cfcfdb`
+- Padding: 8px 12px
+- Radius: 6px
+- Focus: border-color stays `#cfcfdb`, shadow `rgba(0, 0, 0, 0.15) 0px 2px 10px inset`
+
+### Links
+- **Default on dark**: `#ffffff`, underline decoration
+- **Hover**: color transitions to `#6a5fc1` (Sentry Purple)
+- **Purple links**: `#6a5fc1` default, hover underline
+- **Lime accent links**: `#c2ef4e` default, hover to `#6a5fc1`
+- **Dark context links**: `#362d59`, hover to `#ffffff`
+
+### Cards & Containers
+- Background: semi-transparent or dark purple surfaces
+- Radius: 8px–12px
+- Shadow: `rgba(0, 0, 0, 0.1) 0px 10px 15px -3px`
+- Backdrop filter: `blur(18px) saturate(180%)` for glass effects
+
+### Navigation
+- Dark transparent header over hero content
+- Rubik 15px weight 500 for nav links
+- White text, hover to Sentry Purple (`#6a5fc1`)
+- Uppercase labels with 0.2px letter-spacing for categories
+- Mobile: hamburger menu, full-width expanded
+
+## 5. Layout Principles
+
+### Spacing System
+- Base unit: 8px
+- Scale: 1px, 2px, 4px, 5px, 6px, 8px, 12px, 16px, 24px, 32px, 40px, 44px, 45px, 47px
+
+### Grid & Container
+- Max content width: 1152px (XL breakpoint)
+- Responsive padding: 2rem (mobile) → 4rem (tablet+)
+- Content centered within container
+- Full-width dark sections with contained inner content
+
+### Breakpoints
+| Name | Width | Key Changes |
+|------|-------|-------------|
+| Mobile | < 576px | Single column, stacked layout |
+| Small Tablet | 576–640px | Minor width adjustments |
+| Tablet | 640–768px | 2-column begins |
+| Small Desktop | 768–992px | Full nav visible |
+| Desktop | 992–1152px | Standard layout |
+| Large Desktop | 1152–1440px | Max-width content |
+
+### Whitespace Philosophy
+- **Dark breathing room**: Generous vertical spacing between sections (64px–80px+) lets the dark background serve as a visual rest.
+- **Content islands**: Feature sections are self-contained blocks floating in the dark purple sea, each with its own internal spacing rhythm.
+- **Asymmetric padding**: Buttons use asymmetric padding patterns (12px 16px, 8px 12px) that feel organic rather than rigid.
+
+### Border Radius Scale
+- Minimal (6px): Form inputs, small interactive elements
+- Standard (8px): Buttons, cards, containers
+- Comfortable (10px–12px): Larger containers, glass panels
+- Rounded (13px): Primary muted buttons
+- Pill (18px): Image containers, badges
+
+## 6. Depth & Elevation
+
+| Level | Treatment | Use |
+|-------|-----------|-----|
+| Sunken (Level -1) | Inset shadow `rgba(0, 0, 0, 0.1) 0px 1px 3px inset` | Primary buttons (tactile pressed feel) |
+| Flat (Level 0) | No shadow | Default surfaces, dark backgrounds |
+| Surface (Level 1) | `rgba(0, 0, 0, 0.08) 0px 2px 8px` | Glass buttons, subtle cards |
+| Elevated (Level 2) | `rgba(0, 0, 0, 0.1) 0px 10px 15px -3px` | Cards, floating panels |
+| Prominent (Level 3) | `rgba(0, 0, 0, 0.18) 0px 0.5rem 1.5rem` | Hover states, modals |
+| Ambient (Level 4) | `rgba(22, 15, 36, 0.9) 0px 4px 4px 9px` | Deep purple ambient glow around hero |
+
+**Shadow Philosophy**: Sentry uses a unique combination of inset shadows (buttons feel pressed INTO the surface) and ambient glows (content radiates from the dark background). The deep purple ambient shadow (`rgba(22, 15, 36, 0.9)`) is the signature — it creates a bioluminescent quality where content seems to emit its own purple-tinted light.
+
+## 7. Do's and Don'ts
+
+### Do
+- Use deep purple backgrounds (`#1f1633`, `#150f23`) — never pure black (`#000000`)
+- Apply inset shadows on primary buttons for the tactile pressed effect
+- Use Dammit Sans ONLY for hero/display headings — Rubik for everything else
+- Apply `text-transform: uppercase` with `letter-spacing: 0.2px` on buttons and labels
+- Use the lime-green accent (`#c2ef4e`) sparingly for maximum impact
+- Employ frosted glass effects (`blur(18px) saturate(180%)`) for layered surfaces
+- Maintain the warm purple shadow tones — shadows should feel purple-tinted, not neutral gray
+- Use Rubik's 4-tier weight system: 400 (body), 500 (nav/emphasis), 600 (titles), 700 (CTAs)
+
+### Don't
+- Don't use pure black (`#000000`) for backgrounds — always use the warm purple-blacks
+- Don't apply Dammit Sans to body text or UI elements — it's display-only
+- Don't use standard gray (`#666`, `#999`) for borders — use purple-tinted grays (`#362d59`, `#584674`)
+- Don't drop the uppercase treatment on buttons — it's a system-wide pattern
+- Don't use sharp corners (0px radius) — minimum 6px for all interactive elements
+- Don't mix the lime-green accent with the coral/pink accents in the same component
+- Don't use flat (non-inset) shadows on primary buttons — the tactile quality is signature
+- Don't forget letter-spacing on uppercase text — 0.2px minimum
+
+## 8. Responsive Behavior
+
+### Breakpoints
+| Name | Width | Key Changes |
+|------|-------|-------------|
+| Mobile | <576px | Single column, hamburger nav, stacked CTAs |
+| Tablet | 576–768px | 2-column feature grids begin |
+| Small Desktop | 768–992px | Full navigation, side-by-side layouts |
+| Desktop | 992–1152px | Max-width container, full layout |
+| Large | >1152px | Content max-width maintained, generous margins |
+
+### Collapsing Strategy
+- Hero text: 88px Dammit Sans → 60px → mobile scales
+- Navigation: horizontal → hamburger with slide-out
+- Feature sections: side-by-side → stacked cards
+- Buttons: inline → full-width stacked on mobile
+- Container padding: 4rem → 2rem
+
+## 9. Agent Prompt Guide
+
+### Quick Color Reference
+- Background: `#1f1633` (primary), `#150f23` (deeper)
+- Text: `#ffffff` (primary), `#e5e7eb` (secondary)
+- Interactive: `#6a5fc1` (links/hover), `#79628c` (buttons)
+- Accent: `#c2ef4e` (lime highlight), `#ffb287` (coral focus)
+- Border: `#362d59` (dark), `#cfcfdb` (light context)
+
+### Example Component Prompts
+- "Create a hero section on deep purple background (#1f1633). Headline at 88px Dammit Sans weight 700, line-height 1.20, white text. Sub-text at 16px Rubik weight 400, line-height 1.50. White solid CTA button (8px radius, 12px 16px padding), hover transitions to #6a5fc1."
+- "Design a navigation bar: transparent over dark background. Rubik 15px weight 500, white text. Uppercase category labels with 0.2px letter-spacing. Hover color #6a5fc1."
+- "Build a primary button: background #79628c, border 1px solid #584674, inset shadow rgba(0,0,0,0.1) 0px 1px 3px, white uppercase text at 14px Rubik weight 700, letter-spacing 0.2px, radius 13px. Hover: shadow rgba(0,0,0,0.18) 0px 0.5rem 1.5rem."
+- "Create a glass card panel: background rgba(255,255,255,0.18), backdrop-filter blur(18px) saturate(180%), radius 12px. White text content inside."
+- "Design a feature section: #150f23 background, 24px Rubik weight 500 heading, 16px Rubik weight 400 body text. 14px uppercase lime-green (#c2ef4e) label above heading."
+
+### Iteration Guide
+1. Always start with the dark purple background — the color palette is built FOR dark mode
+2. Use inset shadows on buttons, ambient purple glows on hero sections
+3. Uppercase + letter-spacing is the systematic pattern for labels, buttons, and captions
+4. Lime green (#c2ef4e) is the "pop" color — use once per section maximum
+5. Frosted glass for overlaid panels, solid purple for primary surfaces
+6. Rubik handles 90% of typography — Dammit Sans is hero-only

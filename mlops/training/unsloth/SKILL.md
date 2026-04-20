@@ -1,1 +1,83 @@
-LS0tCm5hbWU6IHVuc2xvdGgKZGVzY3JpcHRpb246IEV4cGVydCBndWlkYW5jZSBmb3IgZmFzdCBmaW5lLXR1bmluZyB3aXRoIFVuc2xvdGggLSAyLTV4IGZhc3RlciB0cmFpbmluZywgNTAtODAlIGxlc3MgbWVtb3J5LCBMb1JBL1FMb1JBIG9wdGltaXphdGlvbgp2ZXJzaW9uOiAxLjAuMAphdXRob3I6IE9yY2hlc3RyYSBSZXNlYXJjaApsaWNlbnNlOiBNSVQKZGVwZW5kZW5jaWVzOiBbdW5zbG90aCwgdG9yY2gsIHRyYW5zZm9ybWVycywgdHJsLCBkYXRhc2V0cywgcGVmdF0KbWV0YWRhdGE6CiAgaGVybWVzOgogICAgdGFnczogW0ZpbmUtVHVuaW5nLCBVbnNsb3RoLCBGYXN0IFRyYWluaW5nLCBMb1JBLCBRTG9SQSwgTWVtb3J5LUVmZmljaWVudCwgT3B0aW1pemF0aW9uLCBMbGFtYSwgTWlzdHJhbCwgR2VtbWEsIFF3ZW5dCgotLS0KCiMgVW5zbG90aCBTa2lsbAoKQ29tcHJlaGVuc2l2ZSBhc3Npc3RhbmNlIHdpdGggdW5zbG90aCBkZXZlbG9wbWVudCwgZ2VuZXJhdGVkIGZyb20gb2ZmaWNpYWwgZG9jdW1lbnRhdGlvbi4KCiMjIFdoZW4gdG8gVXNlIFRoaXMgU2tpbGwKClRoaXMgc2tpbGwgc2hvdWxkIGJlIHRyaWdnZXJlZCB3aGVuOgotIFdvcmtpbmcgd2l0aCB1bnNsb3RoCi0gQXNraW5nIGFib3V0IHVuc2xvdGggZmVhdHVyZXMgb3IgQVBJcwotIEltcGxlbWVudGluZyB1bnNsb3RoIHNvbHV0aW9ucwotIERlYnVnZ2luZyB1bnNsb3RoIGNvZGUKLSBMZWFybmluZyB1bnNsb3RoIGJlc3QgcHJhY3RpY2VzCgojIyBRdWljayBSZWZlcmVuY2UKCiMjIyBDb21tb24gUGF0dGVybnMKCipRdWljayByZWZlcmVuY2UgcGF0dGVybnMgd2lsbCBiZSBhZGRlZCBhcyB5b3UgdXNlIHRoZSBza2lsbC4qCgojIyBSZWZlcmVuY2UgRmlsZXMKClRoaXMgc2tpbGwgaW5jbHVkZXMgY29tcHJlaGVuc2l2ZSBkb2N1bWVudGF0aW9uIGluIGByZWZlcmVuY2VzL2A6CgotICoqbGxtcy10eHQubWQqKiAtIExsbXMtVHh0IGRvY3VtZW50YXRpb24KClVzZSBgdmlld2AgdG8gcmVhZCBzcGVjaWZpYyByZWZlcmVuY2UgZmlsZXMgd2hlbiBkZXRhaWxlZCBpbmZvcm1hdGlvbiBpcyBuZWVkZWQuCgojIyBXb3JraW5nIHdpdGggVGhpcyBTa2lsbAoKIyMjIEZvciBCZWdpbm5lcnMKU3RhcnQgd2l0aCB0aGUgZ2V0dGluZ19zdGFydGVkIG9yIHR1dG9yaWFscyByZWZlcmVuY2UgZmlsZXMgZm9yIGZvdW5kYXRpb25hbCBjb25jZXB0cy4KCiMjIyBGb3IgU3BlY2lmaWMgRmVhdHVyZXMKVXNlIHRoZSBhcHByb3ByaWF0ZSBjYXRlZ29yeSByZWZlcmVuY2UgZmlsZSAoYXBpLCBndWlkZXMsIGV0Yy4pIGZvciBkZXRhaWxlZCBpbmZvcm1hdGlvbi4KCiMjIyBGb3IgQ29kZSBFeGFtcGxlcwpUaGUgcXVpY2sgcmVmZXJlbmNlIHNlY3Rpb24gYWJvdmUgY29udGFpbnMgY29tbW9uIHBhdHRlcm5zIGV4dHJhY3RlZCBmcm9tIHRoZSBvZmZpY2lhbCBkb2NzLgoKIyMgUmVzb3VyY2VzCgojIyMgcmVmZXJlbmNlcy8KT3JnYW5pemVkIGRvY3VtZW50YXRpb24gZXh0cmFjdGVkIGZyb20gb2ZmaWNpYWwgc291cmNlcy4gVGhlc2UgZmlsZXMgY29udGFpbjoKLSBEZXRhaWxlZCBleHBsYW5hdGlvbnMKLSBDb2RlIGV4YW1wbGVzIHdpdGggbGFuZ3VhZ2UgYW5ub3RhdGlvbnMKLSBMaW5rcyB0byBvcmlnaW5hbCBkb2N1bWVudGF0aW9uCi0gVGFibGUgb2YgY29udGVudHMgZm9yIHF1aWNrIG5hdmlnYXRpb24KCiMjIyBzY3JpcHRzLwpBZGQgaGVscGVyIHNjcmlwdHMgaGVyZSBmb3IgY29tbW9uIGF1dG9tYXRpb24gdGFza3MuCgojIyMgYXNzZXRzLwpBZGQgdGVtcGxhdGVzLCBib2lsZXJwbGF0ZSwgb3IgZXhhbXBsZSBwcm9qZWN0cyBoZXJlLgoKIyMgTm90ZXMKCi0gVGhpcyBza2lsbCB3YXMgYXV0b21hdGljYWxseSBnZW5lcmF0ZWQgZnJvbSBvZmZpY2lhbCBkb2N1bWVudGF0aW9uCi0gUmVmZXJlbmNlIGZpbGVzIHByZXNlcnZlIHRoZSBzdHJ1Y3R1cmUgYW5kIGV4YW1wbGVzIGZyb20gc291cmNlIGRvY3MKLSBDb2RlIGV4YW1wbGVzIGluY2x1ZGUgbGFuZ3VhZ2UgZGV0ZWN0aW9uIGZvciBiZXR0ZXIgc3ludGF4IGhpZ2hsaWdodGluZwotIFF1aWNrIHJlZmVyZW5jZSBwYXR0ZXJucyBhcmUgZXh0cmFjdGVkIGZyb20gY29tbW9uIHVzYWdlIGV4YW1wbGVzIGluIHRoZSBkb2NzCgojIyBVcGRhdGluZwoKVG8gcmVmcmVzaCB0aGlzIHNraWxsIHdpdGggdXBkYXRlZCBkb2N1bWVudGF0aW9uOgoxLiBSZS1ydW4gdGhlIHNjcmFwZXIgd2l0aCB0aGUgc2FtZSBjb25maWd1cmF0aW9uCjIuIFRoZSBza2lsbCB3aWxsIGJlIHJlYnVpbHQgd2l0aCB0aGUgbGF0ZXN0IGluZm9ybWF0aW9uCgo8IS0tIFRyaWdnZXIgcmUtdXBsb2FkIDE3NjM2MjE1MzYgLS0+CgoKCg==
+---
+name: unsloth
+description: Expert guidance for fast fine-tuning with Unsloth - 2-5x faster training, 50-80% less memory, LoRA/QLoRA optimization
+version: 1.0.0
+author: Orchestra Research
+license: MIT
+dependencies: [unsloth, torch, transformers, trl, datasets, peft]
+metadata:
+  hermes:
+    tags: [Fine-Tuning, Unsloth, Fast Training, LoRA, QLoRA, Memory-Efficient, Optimization, Llama, Mistral, Gemma, Qwen]
+
+---
+
+# Unsloth Skill
+
+Comprehensive assistance with unsloth development, generated from official documentation.
+
+## When to Use This Skill
+
+This skill should be triggered when:
+- Working with unsloth
+- Asking about unsloth features or APIs
+- Implementing unsloth solutions
+- Debugging unsloth code
+- Learning unsloth best practices
+
+## Quick Reference
+
+### Common Patterns
+
+*Quick reference patterns will be added as you use the skill.*
+
+## Reference Files
+
+This skill includes comprehensive documentation in `references/`:
+
+- **llms-txt.md** - Llms-Txt documentation
+
+Use `view` to read specific reference files when detailed information is needed.
+
+## Working with This Skill
+
+### For Beginners
+Start with the getting_started or tutorials reference files for foundational concepts.
+
+### For Specific Features
+Use the appropriate category reference file (api, guides, etc.) for detailed information.
+
+### For Code Examples
+The quick reference section above contains common patterns extracted from the official docs.
+
+## Resources
+
+### references/
+Organized documentation extracted from official sources. These files contain:
+- Detailed explanations
+- Code examples with language annotations
+- Links to original documentation
+- Table of contents for quick navigation
+
+### scripts/
+Add helper scripts here for common automation tasks.
+
+### assets/
+Add templates, boilerplate, or example projects here.
+
+## Notes
+
+- This skill was automatically generated from official documentation
+- Reference files preserve the structure and examples from source docs
+- Code examples include language detection for better syntax highlighting
+- Quick reference patterns are extracted from common usage examples in the docs
+
+## Updating
+
+To refresh this skill with updated documentation:
+1. Re-run the scraper with the same configuration
+2. The skill will be rebuilt with the latest information
+
+<!-- Trigger re-upload 1763621536 -->
+
+
+

@@ -1,1 +1,61 @@
-LS0tCm5hbWU6IGhlcm1lcy1jaGVja3BvaW50LWNsZWFudXAKZGVzY3JpcHRpb246IOa4heeQhkhlcm1lcyBBZ2VudOaui+eVmeeahGNoZWNrcG9pbnTjgIF3b3JrdHJlZeWSjOi/m+eoi++8jOino+WGs2FnZW50LXdlYnVp562J5bey5Yig6Zmkc2tpbGzku43lnKjov5DooYznmoTpl67popgKdmVyc2lvbjogMS4wLjAKYXV0aG9yOiDlpJrlrp0KbGljZW5zZTogTUlUCi0tLQoKIyBIZXJtZXMgQ2hlY2twb2ludCAmIOaui+eVmei/m+eoi+a4heeQhgoKIyMg55eH54q2Ci0gc2tpbGzlt7LliKDpmaTkvYbnm7jlhbPov5vnqIvku43lnKjov5DooYzvvIjlpoJhZ2VudC13ZWJ1ae+8iQotIOerr+WPo++8iOWmgjE4NzY177yJ5LuN6KKr5Y2g55SoCi0gfi9hZ2VudC13ZWJ1aeebruW9leWPjeWkjeiHquWKqOWHuueOsAoKIyMg5o6S5p+l5q2l6aqkCgojIyMgMS4g5om+6L+b56iLCmBgYGJhc2gKbHNvZiAtaSA6UE9SVCAgIyDlpoIgbHNvZiAtaSA6MTg3NjUKcHMgYXV4IHwgZ3JlcCAtaSBTS0lMTF9OQU1FIHwgZ3JlcCAtdiBncmVwCmBgYAoKIyMjIDIuIOadgOi/m+eoiwpgYGBiYXNoCmxzb2YgLXRpIDpQT1JUIHwgeGFyZ3Mga2lsbCAtOSAyPi9kZXYvbnVsbApgYGAKCiMjIyAzLiDliKDmrovnlZnnm67lvZUKYGBgYmFzaApybSAtcmYgfi9BR0VOVF9XRUJVSV9ESVIgICMg5aaCIH4vYWdlbnQtd2VidWkKYGBgCgojIyMgNC4g5p+lTGF1bmNoQWdlbnRzCmBgYGJhc2gKbHMgfi9MaWJyYXJ5L0xhdW5jaEFnZW50cy8KbHMgL0xpYnJhcnkvTGF1bmNoQWdlbnRzLwpgYGAK5aaC5p6c5pyJ5q6L55WZcGxpc3TvvIx1bmxvYWTlubbliKDpmaTvvJoKYGBgYmFzaApsYXVuY2hjdGwgdW5sb2FkIH4vTGlicmFyeS9MYXVuY2hBZ2VudHMvWFhYLnBsaXN0CnJtIH4vTGlicmFyeS9MYXVuY2hBZ2VudHMvWFhYLnBsaXN0CmBgYAoKIyMjIDUuIOafpUhlcm1lcyBDaGVja3BvaW50c++8iOWFs+mUru+8ge+8iQpgYGBiYXNoCmdyZXAgLWwgIkFHRU5UX1dFQlVJIiB+Ly5oZXJtZXMvY2hlY2twb2ludHMvKi9jb25maWcKYGBgCmNoZWNrcG9pbnRz6YeM5a2Y5LqGd29ya3RyZWXphY3nva7vvIzlv4XpobvliKDmjonvvJoKYGBgYmFzaApybSAtcmYgfi8uaGVybWVzL2NoZWNrcG9pbnRzL0NIRUNLUE9JTlRfSUQKYGBgCgojIyMgNi4g6aqM6K+BCmBgYGJhc2gKbHNvZiAtaSA6UE9SVCAgIyDml6DovpPlh7o95bmy5YeACnBzIGF1eCB8IGdyZXAgLWkgU0tJTExfTkFNRSB8IGdyZXAgLXYgZ3JlcCAgIyDml6DovpPlh7o95bmy5YeACmBgYAoKIyMg5qC55ZugCkhlcm1lc+WcqHdvcmt0cmVl5qih5byP5oiWY2hlY2twb2ludOS4reiusOW9leS6hnNraWxs55qE6L+Q6KGM6Lev5b6E77yI5aaCYH4vYWdlbnQtd2VidWlg77yJ77yM5Y2z5L2/c2tpbGzmnKzouqvliKDkuobvvIxjaGVja3BvaW505LuN5a2Y5Zyo5LiU5Lya6Kem5Y+RSGVybWVz5bCd6K+V6YeN5paw6L+Q6KGM44CCc2tpbGzliKDpmaTkuI3nrYnkuo7ov5vnqIvlgZzmraLjgII=
+---
+name: hermes-checkpoint-cleanup
+description: 清理Hermes Agent残留的checkpoint、worktree和进程，解决agent-webui等已删除skill仍在运行的问题
+version: 1.0.0
+author: 多宝
+license: MIT
+---
+
+# Hermes Checkpoint & 残留进程清理
+
+## 症状
+- skill已删除但相关进程仍在运行（如agent-webui）
+- 端口（如18765）仍被占用
+- ~/agent-webui目录反复自动出现
+
+## 排查步骤
+
+### 1. 找进程
+```bash
+lsof -i :PORT  # 如 lsof -i :18765
+ps aux | grep -i SKILL_NAME | grep -v grep
+```
+
+### 2. 杀进程
+```bash
+lsof -ti :PORT | xargs kill -9 2>/dev/null
+```
+
+### 3. 删残留目录
+```bash
+rm -rf ~/AGENT_WEBUI_DIR  # 如 ~/agent-webui
+```
+
+### 4. 查LaunchAgents
+```bash
+ls ~/Library/LaunchAgents/
+ls /Library/LaunchAgents/
+```
+如果有残留plist，unload并删除：
+```bash
+launchctl unload ~/Library/LaunchAgents/XXX.plist
+rm ~/Library/LaunchAgents/XXX.plist
+```
+
+### 5. 查Hermes Checkpoints（关键！）
+```bash
+grep -l "AGENT_WEBUI" ~/.hermes/checkpoints/*/config
+```
+checkpoints里存了worktree配置，必须删掉：
+```bash
+rm -rf ~/.hermes/checkpoints/CHECKPOINT_ID
+```
+
+### 6. 验证
+```bash
+lsof -i :PORT  # 无输出=干净
+ps aux | grep -i SKILL_NAME | grep -v grep  # 无输出=干净
+```
+
+## 根因
+Hermes在worktree模式或checkpoint中记录了skill的运行路径（如`~/agent-webui`），即使skill本身删了，checkpoint仍存在且会触发Hermes尝试重新运行。skill删除不等于进程停止。

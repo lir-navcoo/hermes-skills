@@ -1,1 +1,31 @@
-IyMgRmVhdHVyZSBEZXNjcmlwdGlvbgoKPCEtLSBXaGF0IGRvIHlvdSB3YW50PyAtLT4KCiMjIE1vdGl2YXRpb24KCjwhLS0gV2h5IHdvdWxkIHRoaXMgYmUgdXNlZnVsPyBXaGF0IHByb2JsZW0gZG9lcyBpdCBzb2x2ZT8gLS0+CgojIyBQcm9wb3NlZCBTb2x1dGlvbgoKPCEtLSBIb3cgY291bGQgaXQgd29yaz8gSW5jbHVkZSBBUEkgc2tldGNoZXMsIENMSSBleGFtcGxlcywgb3IgbW9ja3VwcyBpZiBoZWxwZnVsIC0tPgoKYGBgCiMgRXhhbXBsZSB1c2FnZQpgYGAKCiMjIEFsdGVybmF0aXZlcyBDb25zaWRlcmVkCgo8IS0tIE90aGVyIGFwcHJvYWNoZXMgYW5kIHdoeSB0aGV5J3JlIGxlc3MgaWRlYWwgLS0+CgotCgojIyBTY29wZSAvIEVmZm9ydCBFc3RpbWF0ZQoKPCEtLSBIb3cgYmlnIGlzIHRoaXM/IFdoYXQgYXJlYXMgb2YgdGhlIGNvZGViYXNlIHdvdWxkIGl0IHRvdWNoPyAtLT4KClNtYWxsIC8gTWVkaXVtIC8gTGFyZ2Ug4oCUIDwhLS0gZXhwbGFuYXRpb24gLS0+CgojIyBBZGRpdGlvbmFsIENvbnRleHQKCjwhLS0gTGlua3MgdG8gc2ltaWxhciBmZWF0dXJlcyBpbiBvdGhlciB0b29scywgcmVsZXZhbnQgZGlzY3Vzc2lvbnMsIGV0Yy4gLS0+Cg==
+## Feature Description
+
+<!-- What do you want? -->
+
+## Motivation
+
+<!-- Why would this be useful? What problem does it solve? -->
+
+## Proposed Solution
+
+<!-- How could it work? Include API sketches, CLI examples, or mockups if helpful -->
+
+```
+# Example usage
+```
+
+## Alternatives Considered
+
+<!-- Other approaches and why they're less ideal -->
+
+-
+
+## Scope / Effort Estimate
+
+<!-- How big is this? What areas of the codebase would it touch? -->
+
+Small / Medium / Large — <!-- explanation -->
+
+## Additional Context
+
+<!-- Links to similar features in other tools, relevant discussions, etc. -->

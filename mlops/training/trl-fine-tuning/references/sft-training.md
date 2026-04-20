@@ -1,1 +1,168 @@
-IyBTRlQgVHJhaW5pbmcgR3VpZGUKCkNvbXBsZXRlIGd1aWRlIHRvIFN1cGVydmlzZWQgRmluZS1UdW5pbmcgKFNGVCkgd2l0aCBUUkwgZm9yIGluc3RydWN0aW9uIHR1bmluZyBhbmQgdGFzay1zcGVjaWZpYyBmaW5lLXR1bmluZy4KCiMjIE92ZXJ2aWV3CgpTRlQgdHJhaW5zIG1vZGVscyBvbiBpbnB1dC1vdXRwdXQgcGFpcnMgdG8gbWluaW1pemUgY3Jvc3MtZW50cm9weSBsb3NzLiBVc2UgZm9yOgotIEluc3RydWN0aW9uIGZvbGxvd2luZwotIFRhc2stc3BlY2lmaWMgZmluZS10dW5pbmcKLSBDaGF0Ym90IHRyYWluaW5nCi0gRG9tYWluIGFkYXB0YXRpb24KCiMjIERhdGFzZXQgRm9ybWF0cwoKIyMjIEZvcm1hdCAxOiBQcm9tcHQtQ29tcGxldGlvbgoKYGBganNvbgpbCiAgewogICAgInByb21wdCI6ICJXaGF0IGlzIHRoZSBjYXBpdGFsIG9mIEZyYW5jZT8iLAogICAgImNvbXBsZXRpb24iOiAiVGhlIGNhcGl0YWwgb2YgRnJhbmNlIGlzIFBhcmlzLiIKICB9Cl0KYGBgCgojIyMgRm9ybWF0IDI6IENvbnZlcnNhdGlvbmFsIChDaGF0TUwpCgpgYGBqc29uClsKICB7CiAgICAibWVzc2FnZXMiOiBbCiAgICAgIHsicm9sZSI6ICJ1c2VyIiwgImNvbnRlbnQiOiAiV2hhdCBpcyBQeXRob24/In0sCiAgICAgIHsicm9sZSI6ICJhc3Npc3RhbnQiLCAiY29udGVudCI6ICJQeXRob24gaXMgYSBwcm9ncmFtbWluZyBsYW5ndWFnZS4ifQogICAgXQogIH0KXQpgYGAKCiMjIyBGb3JtYXQgMzogVGV4dC1vbmx5CgpgYGBqc29uClsKICB7InRleHQiOiAiVXNlcjogSGVsbG9cbkFzc2lzdGFudDogSGkhIEhvdyBjYW4gSSBoZWxwPyJ9Cl0KYGBgCgojIyBCYXNpYyBUcmFpbmluZwoKYGBgcHl0aG9uCmZyb20gdHJsIGltcG9ydCBTRlRUcmFpbmVyLCBTRlRDb25maWcKZnJvbSB0cmFuc2Zvcm1lcnMgaW1wb3J0IEF1dG9Nb2RlbEZvckNhdXNhbExNLCBBdXRvVG9rZW5pemVyCmZyb20gZGF0YXNldHMgaW1wb3J0IGxvYWRfZGF0YXNldAoKIyBMb2FkIG1vZGVsCm1vZGVsID0gQXV0b01vZGVsRm9yQ2F1c2FsTE0uZnJvbV9wcmV0cmFpbmVkKCJRd2VuL1F3ZW4yLjUtMC41QiIpCnRva2VuaXplciA9IEF1dG9Ub2tlbml6ZXIuZnJvbV9wcmV0cmFpbmVkKCJRd2VuL1F3ZW4yLjUtMC41QiIpCgojIExvYWQgZGF0YXNldApkYXRhc2V0ID0gbG9hZF9kYXRhc2V0KCJ0cmwtbGliL0NhcHliYXJhIiwgc3BsaXQ9InRyYWluIikKCiMgQ29uZmlndXJlCmNvbmZpZyA9IFNGVENvbmZpZygKICAgIG91dHB1dF9kaXI9IlF3ZW4yLjUtU0ZUIiwKICAgIHBlcl9kZXZpY2VfdHJhaW5fYmF0Y2hfc2l6ZT00LAogICAgbnVtX3RyYWluX2Vwb2Nocz0xLAogICAgbGVhcm5pbmdfcmF0ZT0yZS01LAogICAgc2F2ZV9zdHJhdGVneT0iZXBvY2giCikKCiMgVHJhaW4KdHJhaW5lciA9IFNGVFRyYWluZXIoCiAgICBtb2RlbD1tb2RlbCwKICAgIGFyZ3M9Y29uZmlnLAogICAgdHJhaW5fZGF0YXNldD1kYXRhc2V0LAogICAgdG9rZW5pemVyPXRva2VuaXplcgopCnRyYWluZXIudHJhaW4oKQpgYGAKCiMjIENoYXQgVGVtcGxhdGVzCgpBcHBseSBjaGF0IHRlbXBsYXRlcyBhdXRvbWF0aWNhbGx5OgoKYGBgcHl0aG9uCnRyYWluZXIgPSBTRlRUcmFpbmVyKAogICAgbW9kZWw9bW9kZWwsCiAgICBhcmdzPWNvbmZpZywKICAgIHRyYWluX2RhdGFzZXQ9ZGF0YXNldCwgICMgTWVzc2FnZXMgZm9ybWF0CiAgICB0b2tlbml6ZXI9dG9rZW5pemVyCiAgICAjIENoYXQgdGVtcGxhdGUgYXBwbGllZCBhdXRvbWF0aWNhbGx5CikKYGBgCgpPciBtYW51YWxseToKYGBgcHl0aG9uCmRlZiBmb3JtYXRfY2hhdChleGFtcGxlKToKICAgIG1lc3NhZ2VzID0gZXhhbXBsZVsibWVzc2FnZXMiXQogICAgdGV4dCA9IHRva2VuaXplci5hcHBseV9jaGF0X3RlbXBsYXRlKG1lc3NhZ2VzLCB0b2tlbml6ZT1GYWxzZSkKICAgIHJldHVybiB7InRleHQiOiB0ZXh0fQoKZGF0YXNldCA9IGRhdGFzZXQubWFwKGZvcm1hdF9jaGF0KQpgYGAKCiMjIFBhY2tpbmcgZm9yIEVmZmljaWVuY3kKClBhY2sgbXVsdGlwbGUgc2VxdWVuY2VzIGludG8gb25lIHRvIG1heGltaXplIEdQVSB1dGlsaXphdGlvbjoKCmBgYHB5dGhvbgpjb25maWcgPSBTRlRDb25maWcoCiAgICBwYWNraW5nPVRydWUsICAjIEVuYWJsZSBwYWNraW5nCiAgICBtYXhfc2VxX2xlbmd0aD0yMDQ4LAogICAgZGF0YXNldF90ZXh0X2ZpZWxkPSJ0ZXh0IgopCmBgYAoKKipCZW5lZml0cyoqOiAyLTPDlyBmYXN0ZXIgdHJhaW5pbmcKKipUcmFkZS1vZmYqKjogU2xpZ2h0bHkgbW9yZSBjb21wbGV4IGJhdGNoaW5nCgojIyBNdWx0aS1HUFUgVHJhaW5pbmcKCmBgYGJhc2gKYWNjZWxlcmF0ZSBsYXVuY2ggLS1udW1fcHJvY2Vzc2VzIDQgdHJhaW5fc2Z0LnB5CmBgYAoKT3Igd2l0aCBjb25maWc6CmBgYHB5dGhvbgpjb25maWcgPSBTRlRDb25maWcoCiAgICBvdXRwdXRfZGlyPSJtb2RlbC1zZnQiLAogICAgcGVyX2RldmljZV90cmFpbl9iYXRjaF9zaXplPTQsCiAgICBncmFkaWVudF9hY2N1bXVsYXRpb25fc3RlcHM9NCwKICAgIG51bV90cmFpbl9lcG9jaHM9MQopCmBgYAoKIyMgTG9SQSBGaW5lLVR1bmluZwoKYGBgcHl0aG9uCmZyb20gcGVmdCBpbXBvcnQgTG9yYUNvbmZpZwoKbG9yYV9jb25maWcgPSBMb3JhQ29uZmlnKAogICAgcj0xNiwKICAgIGxvcmFfYWxwaGE9MzIsCiAgICB0YXJnZXRfbW9kdWxlcz0iYWxsLWxpbmVhciIsCiAgICBsb3JhX2Ryb3BvdXQ9MC4wNSwKICAgIHRhc2tfdHlwZT0iQ0FVU0FMX0xNIgopCgp0cmFpbmVyID0gU0ZUVHJhaW5lcigKICAgIG1vZGVsPW1vZGVsLAogICAgYXJncz1jb25maWcsCiAgICB0cmFpbl9kYXRhc2V0PWRhdGFzZXQsCiAgICBwZWZ0X2NvbmZpZz1sb3JhX2NvbmZpZyAgIyBBZGQgTG9SQQopCmBgYAoKIyMgSHlwZXJwYXJhbWV0ZXJzCgp8IE1vZGVsIFNpemUgfCBMZWFybmluZyBSYXRlIHwgQmF0Y2ggU2l6ZSB8IEVwb2NocyB8CnwtLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLXwtLS0tLS0tLXwKfCA8MUIgfCA1ZS01IHwgOC0xNiB8IDEtMyB8CnwgMS03QiB8IDJlLTUgfCA0LTggfCAxLTIgfAp8IDctMTNCIHwgMWUtNSB8IDItNCB8IDEgfAp8IDEzQisgfCA1ZS02IHwgMS0yIHwgMSB8CgojIyBSZWZlcmVuY2VzCgotIFRSTCBkb2NzOiBodHRwczovL2h1Z2dpbmdmYWNlLmNvL2RvY3MvdHJsL3NmdF90cmFpbmVyCi0gRXhhbXBsZXM6IGh0dHBzOi8vZ2l0aHViLmNvbS9odWdnaW5nZmFjZS90cmwvdHJlZS9tYWluL2V4YW1wbGVzL3NjcmlwdHMK
+# SFT Training Guide
+
+Complete guide to Supervised Fine-Tuning (SFT) with TRL for instruction tuning and task-specific fine-tuning.
+
+## Overview
+
+SFT trains models on input-output pairs to minimize cross-entropy loss. Use for:
+- Instruction following
+- Task-specific fine-tuning
+- Chatbot training
+- Domain adaptation
+
+## Dataset Formats
+
+### Format 1: Prompt-Completion
+
+```json
+[
+  {
+    "prompt": "What is the capital of France?",
+    "completion": "The capital of France is Paris."
+  }
+]
+```
+
+### Format 2: Conversational (ChatML)
+
+```json
+[
+  {
+    "messages": [
+      {"role": "user", "content": "What is Python?"},
+      {"role": "assistant", "content": "Python is a programming language."}
+    ]
+  }
+]
+```
+
+### Format 3: Text-only
+
+```json
+[
+  {"text": "User: Hello\nAssistant: Hi! How can I help?"}
+]
+```
+
+## Basic Training
+
+```python
+from trl import SFTTrainer, SFTConfig
+from transformers import AutoModelForCausalLM, AutoTokenizer
+from datasets import load_dataset
+
+# Load model
+model = AutoModelForCausalLM.from_pretrained("Qwen/Qwen2.5-0.5B")
+tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen2.5-0.5B")
+
+# Load dataset
+dataset = load_dataset("trl-lib/Capybara", split="train")
+
+# Configure
+config = SFTConfig(
+    output_dir="Qwen2.5-SFT",
+    per_device_train_batch_size=4,
+    num_train_epochs=1,
+    learning_rate=2e-5,
+    save_strategy="epoch"
+)
+
+# Train
+trainer = SFTTrainer(
+    model=model,
+    args=config,
+    train_dataset=dataset,
+    tokenizer=tokenizer
+)
+trainer.train()
+```
+
+## Chat Templates
+
+Apply chat templates automatically:
+
+```python
+trainer = SFTTrainer(
+    model=model,
+    args=config,
+    train_dataset=dataset,  # Messages format
+    tokenizer=tokenizer
+    # Chat template applied automatically
+)
+```
+
+Or manually:
+```python
+def format_chat(example):
+    messages = example["messages"]
+    text = tokenizer.apply_chat_template(messages, tokenize=False)
+    return {"text": text}
+
+dataset = dataset.map(format_chat)
+```
+
+## Packing for Efficiency
+
+Pack multiple sequences into one to maximize GPU utilization:
+
+```python
+config = SFTConfig(
+    packing=True,  # Enable packing
+    max_seq_length=2048,
+    dataset_text_field="text"
+)
+```
+
+**Benefits**: 2-3× faster training
+**Trade-off**: Slightly more complex batching
+
+## Multi-GPU Training
+
+```bash
+accelerate launch --num_processes 4 train_sft.py
+```
+
+Or with config:
+```python
+config = SFTConfig(
+    output_dir="model-sft",
+    per_device_train_batch_size=4,
+    gradient_accumulation_steps=4,
+    num_train_epochs=1
+)
+```
+
+## LoRA Fine-Tuning
+
+```python
+from peft import LoraConfig
+
+lora_config = LoraConfig(
+    r=16,
+    lora_alpha=32,
+    target_modules="all-linear",
+    lora_dropout=0.05,
+    task_type="CAUSAL_LM"
+)
+
+trainer = SFTTrainer(
+    model=model,
+    args=config,
+    train_dataset=dataset,
+    peft_config=lora_config  # Add LoRA
+)
+```
+
+## Hyperparameters
+
+| Model Size | Learning Rate | Batch Size | Epochs |
+|------------|---------------|------------|--------|
+| <1B | 5e-5 | 8-16 | 1-3 |
+| 1-7B | 2e-5 | 4-8 | 1-2 |
+| 7-13B | 1e-5 | 2-4 | 1 |
+| 13B+ | 5e-6 | 1-2 | 1 |
+
+## References
+
+- TRL docs: https://huggingface.co/docs/trl/sft_trainer
+- Examples: https://github.com/huggingface/trl/tree/main/examples/scripts

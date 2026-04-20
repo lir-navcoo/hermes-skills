@@ -1,1 +1,567 @@
-LS0tCm5hbWU6IGF1ZGlvY3JhZnQtYXVkaW8tZ2VuZXJhdGlvbgpkZXNjcmlwdGlvbjogUHlUb3JjaCBsaWJyYXJ5IGZvciBhdWRpbyBnZW5lcmF0aW9uIGluY2x1ZGluZyB0ZXh0LXRvLW11c2ljIChNdXNpY0dlbikgYW5kIHRleHQtdG8tc291bmQgKEF1ZGlvR2VuKS4gVXNlIHdoZW4geW91IG5lZWQgdG8gZ2VuZXJhdGUgbXVzaWMgZnJvbSB0ZXh0IGRlc2NyaXB0aW9ucywgY3JlYXRlIHNvdW5kIGVmZmVjdHMsIG9yIHBlcmZvcm0gbWVsb2R5LWNvbmRpdGlvbmVkIG11c2ljIGdlbmVyYXRpb24uCnZlcnNpb246IDEuMC4wCmF1dGhvcjogT3JjaGVzdHJhIFJlc2VhcmNoCmxpY2Vuc2U6IE1JVApkZXBlbmRlbmNpZXM6IFthdWRpb2NyYWZ0LCB0b3JjaD49Mi4wLjAsIHRyYW5zZm9ybWVycz49NC4zMC4wXQptZXRhZGF0YToKICBoZXJtZXM6CiAgICB0YWdzOiBbTXVsdGltb2RhbCwgQXVkaW8gR2VuZXJhdGlvbiwgVGV4dC10by1NdXNpYywgVGV4dC10by1BdWRpbywgTXVzaWNHZW5dCgotLS0KCiMgQXVkaW9DcmFmdDogQXVkaW8gR2VuZXJhdGlvbgoKQ29tcHJlaGVuc2l2ZSBndWlkZSB0byB1c2luZyBNZXRhJ3MgQXVkaW9DcmFmdCBmb3IgdGV4dC10by1tdXNpYyBhbmQgdGV4dC10by1hdWRpbyBnZW5lcmF0aW9uIHdpdGggTXVzaWNHZW4sIEF1ZGlvR2VuLCBhbmQgRW5Db2RlYy4KCiMjIFdoZW4gdG8gdXNlIEF1ZGlvQ3JhZnQKCioqVXNlIEF1ZGlvQ3JhZnQgd2hlbjoqKgotIE5lZWQgdG8gZ2VuZXJhdGUgbXVzaWMgZnJvbSB0ZXh0IGRlc2NyaXB0aW9ucwotIENyZWF0aW5nIHNvdW5kIGVmZmVjdHMgYW5kIGVudmlyb25tZW50YWwgYXVkaW8KLSBCdWlsZGluZyBtdXNpYyBnZW5lcmF0aW9uIGFwcGxpY2F0aW9ucwotIE5lZWQgbWVsb2R5LWNvbmRpdGlvbmVkIG11c2ljIGdlbmVyYXRpb24KLSBXYW50IHN0ZXJlbyBhdWRpbyBvdXRwdXQKLSBSZXF1aXJlIGNvbnRyb2xsYWJsZSBtdXNpYyBnZW5lcmF0aW9uIHdpdGggc3R5bGUgdHJhbnNmZXIKCioqS2V5IGZlYXR1cmVzOioqCi0gKipNdXNpY0dlbioqOiBUZXh0LXRvLW11c2ljIGdlbmVyYXRpb24gd2l0aCBtZWxvZHkgY29uZGl0aW9uaW5nCi0gKipBdWRpb0dlbioqOiBUZXh0LXRvLXNvdW5kIGVmZmVjdHMgZ2VuZXJhdGlvbgotICoqRW5Db2RlYyoqOiBIaWdoLWZpZGVsaXR5IG5ldXJhbCBhdWRpbyBjb2RlYwotICoqTXVsdGlwbGUgbW9kZWwgc2l6ZXMqKjogU21hbGwgKDMwME0pIHRvIExhcmdlICgzLjNCKQotICoqU3RlcmVvIHN1cHBvcnQqKjogRnVsbCBzdGVyZW8gYXVkaW8gZ2VuZXJhdGlvbgotICoqU3R5bGUgY29uZGl0aW9uaW5nKio6IE11c2ljR2VuLVN0eWxlIGZvciByZWZlcmVuY2UtYmFzZWQgZ2VuZXJhdGlvbgoKKipVc2UgYWx0ZXJuYXRpdmVzIGluc3RlYWQ6KioKLSAqKlN0YWJsZSBBdWRpbyoqOiBGb3IgbG9uZ2VyIGNvbW1lcmNpYWwgbXVzaWMgZ2VuZXJhdGlvbgotICoqQmFyayoqOiBGb3IgdGV4dC10by1zcGVlY2ggd2l0aCBtdXNpYy9zb3VuZCBlZmZlY3RzCi0gKipSaWZmdXNpb24qKjogRm9yIHNwZWN0b2dyYW0tYmFzZWQgbXVzaWMgZ2VuZXJhdGlvbgotICoqT3BlbkFJIEp1a2Vib3gqKjogRm9yIHJhdyBhdWRpbyBnZW5lcmF0aW9uIHdpdGggbHlyaWNzCgojIyBRdWljayBzdGFydAoKIyMjIEluc3RhbGxhdGlvbgoKYGBgYmFzaAojIEZyb20gUHlQSQpwaXAgaW5zdGFsbCBhdWRpb2NyYWZ0CgojIEZyb20gR2l0SHViIChsYXRlc3QpCnBpcCBpbnN0YWxsIGdpdCtodHRwczovL2dpdGh1Yi5jb20vZmFjZWJvb2tyZXNlYXJjaC9hdWRpb2NyYWZ0LmdpdAoKIyBPciB1c2UgSHVnZ2luZ0ZhY2UgVHJhbnNmb3JtZXJzCnBpcCBpbnN0YWxsIHRyYW5zZm9ybWVycyB0b3JjaCB0b3JjaGF1ZGlvCmBgYAoKIyMjIEJhc2ljIHRleHQtdG8tbXVzaWMgKEF1ZGlvQ3JhZnQpCgpgYGBweXRob24KaW1wb3J0IHRvcmNoYXVkaW8KZnJvbSBhdWRpb2NyYWZ0Lm1vZGVscyBpbXBvcnQgTXVzaWNHZW4KCiMgTG9hZCBtb2RlbAptb2RlbCA9IE11c2ljR2VuLmdldF9wcmV0cmFpbmVkKCdmYWNlYm9vay9tdXNpY2dlbi1zbWFsbCcpCgojIFNldCBnZW5lcmF0aW9uIHBhcmFtZXRlcnMKbW9kZWwuc2V0X2dlbmVyYXRpb25fcGFyYW1zKAogICAgZHVyYXRpb249OCwgICMgc2Vjb25kcwogICAgdG9wX2s9MjUwLAogICAgdGVtcGVyYXR1cmU9MS4wCikKCiMgR2VuZXJhdGUgZnJvbSB0ZXh0CmRlc2NyaXB0aW9ucyA9IFsiaGFwcHkgdXBiZWF0IGVsZWN0cm9uaWMgZGFuY2UgbXVzaWMgd2l0aCBzeW50aHMiXQp3YXYgPSBtb2RlbC5nZW5lcmF0ZShkZXNjcmlwdGlvbnMpCgojIFNhdmUgYXVkaW8KdG9yY2hhdWRpby5zYXZlKCJvdXRwdXQud2F2Iiwgd2F2WzBdLmNwdSgpLCBzYW1wbGVfcmF0ZT0zMjAwMCkKYGBgCgojIyMgVXNpbmcgSHVnZ2luZ0ZhY2UgVHJhbnNmb3JtZXJzCgpgYGBweXRob24KZnJvbSB0cmFuc2Zvcm1lcnMgaW1wb3J0IEF1dG9Qcm9jZXNzb3IsIE11c2ljZ2VuRm9yQ29uZGl0aW9uYWxHZW5lcmF0aW9uCmltcG9ydCBzY2lweQoKIyBMb2FkIG1vZGVsIGFuZCBwcm9jZXNzb3IKcHJvY2Vzc29yID0gQXV0b1Byb2Nlc3Nvci5mcm9tX3ByZXRyYWluZWQoImZhY2Vib29rL211c2ljZ2VuLXNtYWxsIikKbW9kZWwgPSBNdXNpY2dlbkZvckNvbmRpdGlvbmFsR2VuZXJhdGlvbi5mcm9tX3ByZXRyYWluZWQoImZhY2Vib29rL211c2ljZ2VuLXNtYWxsIikKbW9kZWwudG8oImN1ZGEiKQoKIyBHZW5lcmF0ZSBtdXNpYwppbnB1dHMgPSBwcm9jZXNzb3IoCiAgICB0ZXh0PVsiODBzIHBvcCB0cmFjayB3aXRoIGJhc3N5IGRydW1zIGFuZCBzeW50aCJdLAogICAgcGFkZGluZz1UcnVlLAogICAgcmV0dXJuX3RlbnNvcnM9InB0IgopLnRvKCJjdWRhIikKCmF1ZGlvX3ZhbHVlcyA9IG1vZGVsLmdlbmVyYXRlKAogICAgKippbnB1dHMsCiAgICBkb19zYW1wbGU9VHJ1ZSwKICAgIGd1aWRhbmNlX3NjYWxlPTMsCiAgICBtYXhfbmV3X3Rva2Vucz0yNTYKKQoKIyBTYXZlCnNhbXBsaW5nX3JhdGUgPSBtb2RlbC5jb25maWcuYXVkaW9fZW5jb2Rlci5zYW1wbGluZ19yYXRlCnNjaXB5LmlvLndhdmZpbGUud3JpdGUoIm91dHB1dC53YXYiLCByYXRlPXNhbXBsaW5nX3JhdGUsIGRhdGE9YXVkaW9fdmFsdWVzWzAsIDBdLmNwdSgpLm51bXB5KCkpCmBgYAoKIyMjIFRleHQtdG8tc291bmQgd2l0aCBBdWRpb0dlbgoKYGBgcHl0aG9uCmZyb20gYXVkaW9jcmFmdC5tb2RlbHMgaW1wb3J0IEF1ZGlvR2VuCgojIExvYWQgQXVkaW9HZW4KbW9kZWwgPSBBdWRpb0dlbi5nZXRfcHJldHJhaW5lZCgnZmFjZWJvb2svYXVkaW9nZW4tbWVkaXVtJykKCm1vZGVsLnNldF9nZW5lcmF0aW9uX3BhcmFtcyhkdXJhdGlvbj01KQoKIyBHZW5lcmF0ZSBzb3VuZCBlZmZlY3RzCmRlc2NyaXB0aW9ucyA9IFsiZG9nIGJhcmtpbmcgaW4gYSBwYXJrIHdpdGggYmlyZHMgY2hpcnBpbmciXQp3YXYgPSBtb2RlbC5nZW5lcmF0ZShkZXNjcmlwdGlvbnMpCgp0b3JjaGF1ZGlvLnNhdmUoInNvdW5kLndhdiIsIHdhdlswXS5jcHUoKSwgc2FtcGxlX3JhdGU9MTYwMDApCmBgYAoKIyMgQ29yZSBjb25jZXB0cwoKIyMjIEFyY2hpdGVjdHVyZSBvdmVydmlldwoKYGBgCkF1ZGlvQ3JhZnQgQXJjaGl0ZWN0dXJlOgrilIzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilJAK4pSCICAgICAgICAgICAgICAgICAgICBUZXh0IEVuY29kZXIgKFQ1KSAgICAgICAgICAgICAgICAgICAgICAgICAg4pSCCuKUgiAgICAgICAgICAgICAgICAgICAgICAgICDilIIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg4pSCCuKUgiAgICAgICAgICAgICAgICAgICAgVGV4dCBFbWJlZGRpbmdzICAgICAgICAgICAgICAgICAgICAgICAgICAgIOKUggrilJTilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilKzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilJgKICAgICAgICAgICAgICAgICAgICAgICAgIOKUggrilIzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilrzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilJAK4pSCICAgICAgICAgICAgICBUcmFuc2Zvcm1lciBEZWNvZGVyIChMTSkgICAgICAgICAgICAgICAgICAgICAgICAg4pSCCuKUgiAgICAgQXV0by1yZWdyZXNzaXZlbHkgZ2VuZXJhdGVzIGF1ZGlvIHRva2VucyAgICAgICAgICAgICAgICAgIOKUggrilIIgICAgIFVzaW5nIGVmZmljaWVudCB0b2tlbiBpbnRlcmxlYXZpbmcgcGF0dGVybnMgICAgICAgICAgICAgICDilIIK4pSU4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSs4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSYCiAgICAgICAgICAgICAgICAgICAgICAgICDilIIK4pSM4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pa84pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSQCuKUgiAgICAgICAgICAgICAgICBFbkNvZGVjIEF1ZGlvIERlY29kZXIgICAgICAgICAgICAgICAgICAgICAgICAgIOKUggrilIIgICAgICAgIENvbnZlcnRzIHRva2VucyBiYWNrIHRvIGF1ZGlvIHdhdmVmb3JtICAgICAgICAgICAgICAgICDilIIK4pSU4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSYCmBgYAoKIyMjIE1vZGVsIHZhcmlhbnRzCgp8IE1vZGVsIHwgU2l6ZSB8IERlc2NyaXB0aW9uIHwgVXNlIENhc2UgfAp8LS0tLS0tLXwtLS0tLS18LS0tLS0tLS0tLS0tLXwtLS0tLS0tLS0tfAp8IGBtdXNpY2dlbi1zbWFsbGAgfCAzMDBNIHwgVGV4dC10by1tdXNpYyB8IFF1aWNrIGdlbmVyYXRpb24gfAp8IGBtdXNpY2dlbi1tZWRpdW1gIHwgMS41QiB8IFRleHQtdG8tbXVzaWMgfCBCYWxhbmNlZCB8CnwgYG11c2ljZ2VuLWxhcmdlYCB8IDMuM0IgfCBUZXh0LXRvLW11c2ljIHwgQmVzdCBxdWFsaXR5IHwKfCBgbXVzaWNnZW4tbWVsb2R5YCB8IDEuNUIgfCBUZXh0ICsgbWVsb2R5IHwgTWVsb2R5IGNvbmRpdGlvbmluZyB8CnwgYG11c2ljZ2VuLW1lbG9keS1sYXJnZWAgfCAzLjNCIHwgVGV4dCArIG1lbG9keSB8IEJlc3QgbWVsb2R5IHwKfCBgbXVzaWNnZW4tc3RlcmVvLSpgIHwgVmFyaWVzIHwgU3RlcmVvIG91dHB1dCB8IFN0ZXJlbyBnZW5lcmF0aW9uIHwKfCBgbXVzaWNnZW4tc3R5bGVgIHwgMS41QiB8IFN0eWxlIHRyYW5zZmVyIHwgUmVmZXJlbmNlLWJhc2VkIHwKfCBgYXVkaW9nZW4tbWVkaXVtYCB8IDEuNUIgfCBUZXh0LXRvLXNvdW5kIHwgU291bmQgZWZmZWN0cyB8CgojIyMgR2VuZXJhdGlvbiBwYXJhbWV0ZXJzCgp8IFBhcmFtZXRlciB8IERlZmF1bHQgfCBEZXNjcmlwdGlvbiB8CnwtLS0tLS0tLS0tLXwtLS0tLS0tLS18LS0tLS0tLS0tLS0tLXwKfCBgZHVyYXRpb25gIHwgOC4wIHwgTGVuZ3RoIGluIHNlY29uZHMgKDEtMTIwKSB8CnwgYHRvcF9rYCB8IDI1MCB8IFRvcC1rIHNhbXBsaW5nIHwKfCBgdG9wX3BgIHwgMC4wIHwgTnVjbGV1cyBzYW1wbGluZyAoMCA9IGRpc2FibGVkKSB8CnwgYHRlbXBlcmF0dXJlYCB8IDEuMCB8IFNhbXBsaW5nIHRlbXBlcmF0dXJlIHwKfCBgY2ZnX2NvZWZgIHwgMy4wIHwgQ2xhc3NpZmllci1mcmVlIGd1aWRhbmNlIHwKCiMjIE11c2ljR2VuIHVzYWdlCgojIyMgVGV4dC10by1tdXNpYyBnZW5lcmF0aW9uCgpgYGBweXRob24KZnJvbSBhdWRpb2NyYWZ0Lm1vZGVscyBpbXBvcnQgTXVzaWNHZW4KaW1wb3J0IHRvcmNoYXVkaW8KCm1vZGVsID0gTXVzaWNHZW4uZ2V0X3ByZXRyYWluZWQoJ2ZhY2Vib29rL211c2ljZ2VuLW1lZGl1bScpCgojIENvbmZpZ3VyZSBnZW5lcmF0aW9uCm1vZGVsLnNldF9nZW5lcmF0aW9uX3BhcmFtcygKICAgIGR1cmF0aW9uPTMwLCAgICAgICAgICAjIFVwIHRvIDMwIHNlY29uZHMKICAgIHRvcF9rPTI1MCwgICAgICAgICAgICAjIFNhbXBsaW5nIGRpdmVyc2l0eQogICAgdG9wX3A9MC4wLCAgICAgICAgICAgICMgMCA9IHVzZSB0b3BfayBvbmx5CiAgICB0ZW1wZXJhdHVyZT0xLjAsICAgICAgIyBDcmVhdGl2aXR5IChoaWdoZXIgPSBtb3JlIHZhcmllZCkKICAgIGNmZ19jb2VmPTMuMCAgICAgICAgICAjIFRleHQgYWRoZXJlbmNlIChoaWdoZXIgPSBzdHJpY3RlcikKKQoKIyBHZW5lcmF0ZSBtdWx0aXBsZSBzYW1wbGVzCmRlc2NyaXB0aW9ucyA9IFsKICAgICJlcGljIG9yY2hlc3RyYWwgc291bmR0cmFjayB3aXRoIHN0cmluZ3MgYW5kIGJyYXNzIiwKICAgICJjaGlsbCBsby1maSBoaXAgaG9wIGJlYXQgd2l0aCBqYXp6eSBwaWFubyIsCiAgICAiZW5lcmdldGljIHJvY2sgc29uZyB3aXRoIGVsZWN0cmljIGd1aXRhciIKXQoKIyBHZW5lcmF0ZSAocmV0dXJucyBbYmF0Y2gsIGNoYW5uZWxzLCBzYW1wbGVzXSkKd2F2ID0gbW9kZWwuZ2VuZXJhdGUoZGVzY3JpcHRpb25zKQoKIyBTYXZlIGVhY2gKZm9yIGksIGF1ZGlvIGluIGVudW1lcmF0ZSh3YXYpOgogICAgdG9yY2hhdWRpby5zYXZlKGYibXVzaWNfe2l9LndhdiIsIGF1ZGlvLmNwdSgpLCBzYW1wbGVfcmF0ZT0zMjAwMCkKYGBgCgojIyMgTWVsb2R5LWNvbmRpdGlvbmVkIGdlbmVyYXRpb24KCmBgYHB5dGhvbgpmcm9tIGF1ZGlvY3JhZnQubW9kZWxzIGltcG9ydCBNdXNpY0dlbgppbXBvcnQgdG9yY2hhdWRpbwoKIyBMb2FkIG1lbG9keSBtb2RlbAptb2RlbCA9IE11c2ljR2VuLmdldF9wcmV0cmFpbmVkKCdmYWNlYm9vay9tdXNpY2dlbi1tZWxvZHknKQptb2RlbC5zZXRfZ2VuZXJhdGlvbl9wYXJhbXMoZHVyYXRpb249MzApCgojIExvYWQgbWVsb2R5IGF1ZGlvCm1lbG9keSwgc3IgPSB0b3JjaGF1ZGlvLmxvYWQoIm1lbG9keS53YXYiKQoKIyBHZW5lcmF0ZSB3aXRoIG1lbG9keSBjb25kaXRpb25pbmcKZGVzY3JpcHRpb25zID0gWyJhY291c3RpYyBndWl0YXIgZm9sayBzb25nIl0Kd2F2ID0gbW9kZWwuZ2VuZXJhdGVfd2l0aF9jaHJvbWEoZGVzY3JpcHRpb25zLCBtZWxvZHksIHNyKQoKdG9yY2hhdWRpby5zYXZlKCJtZWxvZHlfY29uZGl0aW9uZWQud2F2Iiwgd2F2WzBdLmNwdSgpLCBzYW1wbGVfcmF0ZT0zMjAwMCkKYGBgCgojIyMgU3RlcmVvIGdlbmVyYXRpb24KCmBgYHB5dGhvbgpmcm9tIGF1ZGlvY3JhZnQubW9kZWxzIGltcG9ydCBNdXNpY0dlbgoKIyBMb2FkIHN0ZXJlbyBtb2RlbAptb2RlbCA9IE11c2ljR2VuLmdldF9wcmV0cmFpbmVkKCdmYWNlYm9vay9tdXNpY2dlbi1zdGVyZW8tbWVkaXVtJykKbW9kZWwuc2V0X2dlbmVyYXRpb25fcGFyYW1zKGR1cmF0aW9uPTE1KQoKZGVzY3JpcHRpb25zID0gWyJhbWJpZW50IGVsZWN0cm9uaWMgbXVzaWMgd2l0aCB3aWRlIHN0ZXJlbyBwYW5uaW5nIl0Kd2F2ID0gbW9kZWwuZ2VuZXJhdGUoZGVzY3JpcHRpb25zKQoKIyB3YXYgc2hhcGU6IFtiYXRjaCwgMiwgc2FtcGxlc10gZm9yIHN0ZXJlbwpwcmludChmIlN0ZXJlbyBzaGFwZToge3dhdi5zaGFwZX0iKSAgIyBbMSwgMiwgNDgwMDAwXQp0b3JjaGF1ZGlvLnNhdmUoInN0ZXJlby53YXYiLCB3YXZbMF0uY3B1KCksIHNhbXBsZV9yYXRlPTMyMDAwKQpgYGAKCiMjIyBBdWRpbyBjb250aW51YXRpb24KCmBgYHB5dGhvbgpmcm9tIHRyYW5zZm9ybWVycyBpbXBvcnQgQXV0b1Byb2Nlc3NvciwgTXVzaWNnZW5Gb3JDb25kaXRpb25hbEdlbmVyYXRpb24KCnByb2Nlc3NvciA9IEF1dG9Qcm9jZXNzb3IuZnJvbV9wcmV0cmFpbmVkKCJmYWNlYm9vay9tdXNpY2dlbi1tZWRpdW0iKQptb2RlbCA9IE11c2ljZ2VuRm9yQ29uZGl0aW9uYWxHZW5lcmF0aW9uLmZyb21fcHJldHJhaW5lZCgiZmFjZWJvb2svbXVzaWNnZW4tbWVkaXVtIikKCiMgTG9hZCBhdWRpbyB0byBjb250aW51ZQppbXBvcnQgdG9yY2hhdWRpbwphdWRpbywgc3IgPSB0b3JjaGF1ZGlvLmxvYWQoImludHJvLndhdiIpCgojIFByb2Nlc3Mgd2l0aCB0ZXh0IGFuZCBhdWRpbwppbnB1dHMgPSBwcm9jZXNzb3IoCiAgICBhdWRpbz1hdWRpby5zcXVlZXplKCkubnVtcHkoKSwKICAgIHNhbXBsaW5nX3JhdGU9c3IsCiAgICB0ZXh0PVsiY29udGludWUgd2l0aCBhIGVwaWMgY2hvcnVzIl0sCiAgICBwYWRkaW5nPVRydWUsCiAgICByZXR1cm5fdGVuc29ycz0icHQiCikKCiMgR2VuZXJhdGUgY29udGludWF0aW9uCmF1ZGlvX3ZhbHVlcyA9IG1vZGVsLmdlbmVyYXRlKCoqaW5wdXRzLCBkb19zYW1wbGU9VHJ1ZSwgZ3VpZGFuY2Vfc2NhbGU9MywgbWF4X25ld190b2tlbnM9NTEyKQpgYGAKCiMjIE11c2ljR2VuLVN0eWxlIHVzYWdlCgojIyMgU3R5bGUtY29uZGl0aW9uZWQgZ2VuZXJhdGlvbgoKYGBgcHl0aG9uCmZyb20gYXVkaW9jcmFmdC5tb2RlbHMgaW1wb3J0IE11c2ljR2VuCgojIExvYWQgc3R5bGUgbW9kZWwKbW9kZWwgPSBNdXNpY0dlbi5nZXRfcHJldHJhaW5lZCgnZmFjZWJvb2svbXVzaWNnZW4tc3R5bGUnKQoKIyBDb25maWd1cmUgZ2VuZXJhdGlvbiB3aXRoIHN0eWxlCm1vZGVsLnNldF9nZW5lcmF0aW9uX3BhcmFtcygKICAgIGR1cmF0aW9uPTMwLAogICAgY2ZnX2NvZWY9My4wLAogICAgY2ZnX2NvZWZfYmV0YT01LjAgICMgU3R5bGUgaW5mbHVlbmNlCikKCiMgQ29uZmlndXJlIHN0eWxlIGNvbmRpdGlvbmVyCm1vZGVsLnNldF9zdHlsZV9jb25kaXRpb25lcl9wYXJhbXMoCiAgICBldmFsX3E9MywgICAgICAgICAgIyBSVlEgcXVhbnRpemVycyAoMS02KQogICAgZXhjZXJwdF9sZW5ndGg9My4wICAjIFN0eWxlIGV4Y2VycHQgbGVuZ3RoCikKCiMgTG9hZCBzdHlsZSByZWZlcmVuY2UKc3R5bGVfYXVkaW8sIHNyID0gdG9yY2hhdWRpby5sb2FkKCJyZWZlcmVuY2Vfc3R5bGUud2F2IikKCiMgR2VuZXJhdGUgd2l0aCB0ZXh0ICsgc3R5bGUKZGVzY3JpcHRpb25zID0gWyJ1cGJlYXQgZGFuY2UgdHJhY2siXQp3YXYgPSBtb2RlbC5nZW5lcmF0ZV93aXRoX3N0eWxlKGRlc2NyaXB0aW9ucywgc3R5bGVfYXVkaW8sIHNyKQpgYGAKCiMjIyBTdHlsZS1vbmx5IGdlbmVyYXRpb24gKG5vIHRleHQpCgpgYGBweXRob24KIyBHZW5lcmF0ZSBtYXRjaGluZyBzdHlsZSB3aXRob3V0IHRleHQgcHJvbXB0Cm1vZGVsLnNldF9nZW5lcmF0aW9uX3BhcmFtcygKICAgIGR1cmF0aW9uPTMwLAogICAgY2ZnX2NvZWY9My4wLAogICAgY2ZnX2NvZWZfYmV0YT1Ob25lICAjIERpc2FibGUgZG91YmxlIENGRyBmb3Igc3R5bGUtb25seQopCgp3YXYgPSBtb2RlbC5nZW5lcmF0ZV93aXRoX3N0eWxlKFtOb25lXSwgc3R5bGVfYXVkaW8sIHNyKQpgYGAKCiMjIEF1ZGlvR2VuIHVzYWdlCgojIyMgU291bmQgZWZmZWN0IGdlbmVyYXRpb24KCmBgYHB5dGhvbgpmcm9tIGF1ZGlvY3JhZnQubW9kZWxzIGltcG9ydCBBdWRpb0dlbgppbXBvcnQgdG9yY2hhdWRpbwoKbW9kZWwgPSBBdWRpb0dlbi5nZXRfcHJldHJhaW5lZCgnZmFjZWJvb2svYXVkaW9nZW4tbWVkaXVtJykKbW9kZWwuc2V0X2dlbmVyYXRpb25fcGFyYW1zKGR1cmF0aW9uPTEwKQoKIyBHZW5lcmF0ZSB2YXJpb3VzIHNvdW5kcwpkZXNjcmlwdGlvbnMgPSBbCiAgICAidGh1bmRlcnN0b3JtIHdpdGggaGVhdnkgcmFpbiBhbmQgbGlnaHRuaW5nIiwKICAgICJidXN5IGNpdHkgdHJhZmZpYyB3aXRoIGNhciBob3JucyIsCiAgICAib2NlYW4gd2F2ZXMgY3Jhc2hpbmcgb24gcm9ja3MiLAogICAgImNyYWNrbGluZyBjYW1wZmlyZSBpbiBmb3Jlc3QiCl0KCndhdiA9IG1vZGVsLmdlbmVyYXRlKGRlc2NyaXB0aW9ucykKCmZvciBpLCBhdWRpbyBpbiBlbnVtZXJhdGUod2F2KToKICAgIHRvcmNoYXVkaW8uc2F2ZShmInNvdW5kX3tpfS53YXYiLCBhdWRpby5jcHUoKSwgc2FtcGxlX3JhdGU9MTYwMDApCmBgYAoKIyMgRW5Db2RlYyB1c2FnZQoKIyMjIEF1ZGlvIGNvbXByZXNzaW9uCgpgYGBweXRob24KZnJvbSBhdWRpb2NyYWZ0Lm1vZGVscyBpbXBvcnQgQ29tcHJlc3Npb25Nb2RlbAppbXBvcnQgdG9yY2gKaW1wb3J0IHRvcmNoYXVkaW8KCiMgTG9hZCBFbkNvZGVjCm1vZGVsID0gQ29tcHJlc3Npb25Nb2RlbC5nZXRfcHJldHJhaW5lZCgnZmFjZWJvb2svZW5jb2RlY18zMmtoeicpCgojIExvYWQgYXVkaW8Kd2F2LCBzciA9IHRvcmNoYXVkaW8ubG9hZCgiYXVkaW8ud2F2IikKCiMgRW5zdXJlIGNvcnJlY3Qgc2FtcGxlIHJhdGUKaWYgc3IgIT0gMzIwMDA6CiAgICByZXNhbXBsZXIgPSB0b3JjaGF1ZGlvLnRyYW5zZm9ybXMuUmVzYW1wbGUoc3IsIDMyMDAwKQogICAgd2F2ID0gcmVzYW1wbGVyKHdhdikKCiMgRW5jb2RlIHRvIHRva2Vucwp3aXRoIHRvcmNoLm5vX2dyYWQoKToKICAgIGVuY29kZWQgPSBtb2RlbC5lbmNvZGUod2F2LnVuc3F1ZWV6ZSgwKSkKICAgIGNvZGVzID0gZW5jb2RlZFswXSAgIyBBdWRpbyBjb2RlcwoKIyBEZWNvZGUgYmFjayB0byBhdWRpbwp3aXRoIHRvcmNoLm5vX2dyYWQoKToKICAgIGRlY29kZWQgPSBtb2RlbC5kZWNvZGUoY29kZXMpCgp0b3JjaGF1ZGlvLnNhdmUoInJlY29uc3RydWN0ZWQud2F2IiwgZGVjb2RlZFswXS5jcHUoKSwgc2FtcGxlX3JhdGU9MzIwMDApCmBgYAoKIyMgQ29tbW9uIHdvcmtmbG93cwoKIyMjIFdvcmtmbG93IDE6IE11c2ljIGdlbmVyYXRpb24gcGlwZWxpbmUKCmBgYHB5dGhvbgppbXBvcnQgdG9yY2gKaW1wb3J0IHRvcmNoYXVkaW8KZnJvbSBhdWRpb2NyYWZ0Lm1vZGVscyBpbXBvcnQgTXVzaWNHZW4KCmNsYXNzIE11c2ljR2VuZXJhdG9yOgogICAgZGVmIF9faW5pdF9fKHNlbGYsIG1vZGVsX25hbWU9ImZhY2Vib29rL211c2ljZ2VuLW1lZGl1bSIpOgogICAgICAgIHNlbGYubW9kZWwgPSBNdXNpY0dlbi5nZXRfcHJldHJhaW5lZChtb2RlbF9uYW1lKQogICAgICAgIHNlbGYuc2FtcGxlX3JhdGUgPSAzMjAwMAoKICAgIGRlZiBnZW5lcmF0ZShzZWxmLCBwcm9tcHQsIGR1cmF0aW9uPTMwLCB0ZW1wZXJhdHVyZT0xLjAsIGNmZz0zLjApOgogICAgICAgIHNlbGYubW9kZWwuc2V0X2dlbmVyYXRpb25fcGFyYW1zKAogICAgICAgICAgICBkdXJhdGlvbj1kdXJhdGlvbiwKICAgICAgICAgICAgdG9wX2s9MjUwLAogICAgICAgICAgICB0ZW1wZXJhdHVyZT10ZW1wZXJhdHVyZSwKICAgICAgICAgICAgY2ZnX2NvZWY9Y2ZnCiAgICAgICAgKQoKICAgICAgICB3aXRoIHRvcmNoLm5vX2dyYWQoKToKICAgICAgICAgICAgd2F2ID0gc2VsZi5tb2RlbC5nZW5lcmF0ZShbcHJvbXB0XSkKCiAgICAgICAgcmV0dXJuIHdhdlswXS5jcHUoKQoKICAgIGRlZiBnZW5lcmF0ZV9iYXRjaChzZWxmLCBwcm9tcHRzLCBkdXJhdGlvbj0zMCk6CiAgICAgICAgc2VsZi5tb2RlbC5zZXRfZ2VuZXJhdGlvbl9wYXJhbXMoZHVyYXRpb249ZHVyYXRpb24pCgogICAgICAgIHdpdGggdG9yY2gubm9fZ3JhZCgpOgogICAgICAgICAgICB3YXYgPSBzZWxmLm1vZGVsLmdlbmVyYXRlKHByb21wdHMpCgogICAgICAgIHJldHVybiB3YXYuY3B1KCkKCiAgICBkZWYgc2F2ZShzZWxmLCBhdWRpbywgcGF0aCk6CiAgICAgICAgdG9yY2hhdWRpby5zYXZlKHBhdGgsIGF1ZGlvLCBzYW1wbGVfcmF0ZT1zZWxmLnNhbXBsZV9yYXRlKQoKIyBVc2FnZQpnZW5lcmF0b3IgPSBNdXNpY0dlbmVyYXRvcigpCmF1ZGlvID0gZ2VuZXJhdG9yLmdlbmVyYXRlKAogICAgImVwaWMgY2luZW1hdGljIG9yY2hlc3RyYWwgbXVzaWMiLAogICAgZHVyYXRpb249MzAsCiAgICB0ZW1wZXJhdHVyZT0xLjAKKQpnZW5lcmF0b3Iuc2F2ZShhdWRpbywgImVwaWNfbXVzaWMud2F2IikKYGBgCgojIyMgV29ya2Zsb3cgMjogU291bmQgZGVzaWduIGJhdGNoIHByb2Nlc3NpbmcKCmBgYHB5dGhvbgppbXBvcnQganNvbgpmcm9tIHBhdGhsaWIgaW1wb3J0IFBhdGgKZnJvbSBhdWRpb2NyYWZ0Lm1vZGVscyBpbXBvcnQgQXVkaW9HZW4KaW1wb3J0IHRvcmNoYXVkaW8KCmRlZiBiYXRjaF9nZW5lcmF0ZV9zb3VuZHMoc291bmRfc3BlY3MsIG91dHB1dF9kaXIpOgogICAgIiIiCiAgICBHZW5lcmF0ZSBtdWx0aXBsZSBzb3VuZHMgZnJvbSBzcGVjaWZpY2F0aW9ucy4KCiAgICBBcmdzOgogICAgICAgIHNvdW5kX3NwZWNzOiBsaXN0IG9mIHsibmFtZSI6IHN0ciwgImRlc2NyaXB0aW9uIjogc3RyLCAiZHVyYXRpb24iOiBmbG9hdH0KICAgICAgICBvdXRwdXRfZGlyOiBvdXRwdXQgZGlyZWN0b3J5IHBhdGgKICAgICIiIgogICAgbW9kZWwgPSBBdWRpb0dlbi5nZXRfcHJldHJhaW5lZCgnZmFjZWJvb2svYXVkaW9nZW4tbWVkaXVtJykKICAgIG91dHB1dF9kaXIgPSBQYXRoKG91dHB1dF9kaXIpCiAgICBvdXRwdXRfZGlyLm1rZGlyKGV4aXN0X29rPVRydWUpCgogICAgcmVzdWx0cyA9IFtdCgogICAgZm9yIHNwZWMgaW4gc291bmRfc3BlY3M6CiAgICAgICAgbW9kZWwuc2V0X2dlbmVyYXRpb25fcGFyYW1zKGR1cmF0aW9uPXNwZWMuZ2V0KCJkdXJhdGlvbiIsIDUpKQoKICAgICAgICB3YXYgPSBtb2RlbC5nZW5lcmF0ZShbc3BlY1siZGVzY3JpcHRpb24iXV0pCgogICAgICAgIG91dHB1dF9wYXRoID0gb3V0cHV0X2RpciAvIGYie3NwZWNbJ25hbWUnXX0ud2F2IgogICAgICAgIHRvcmNoYXVkaW8uc2F2ZShzdHIob3V0cHV0X3BhdGgpLCB3YXZbMF0uY3B1KCksIHNhbXBsZV9yYXRlPTE2MDAwKQoKICAgICAgICByZXN1bHRzLmFwcGVuZCh7CiAgICAgICAgICAgICJuYW1lIjogc3BlY1sibmFtZSJdLAogICAgICAgICAgICAicGF0aCI6IHN0cihvdXRwdXRfcGF0aCksCiAgICAgICAgICAgICJkZXNjcmlwdGlvbiI6IHNwZWNbImRlc2NyaXB0aW9uIl0KICAgICAgICB9KQoKICAgIHJldHVybiByZXN1bHRzCgojIFVzYWdlCnNvdW5kcyA9IFsKICAgIHsibmFtZSI6ICJleHBsb3Npb24iLCAiZGVzY3JpcHRpb24iOiAibWFzc2l2ZSBleHBsb3Npb24gd2l0aCBkZWJyaXMiLCAiZHVyYXRpb24iOiAzfSwKICAgIHsibmFtZSI6ICJmb290c3RlcHMiLCAiZGVzY3JpcHRpb24iOiAiZm9vdHN0ZXBzIG9uIHdvb2RlbiBmbG9vciIsICJkdXJhdGlvbiI6IDV9LAogICAgeyJuYW1lIjogImRvb3IiLCAiZGVzY3JpcHRpb24iOiAid29vZGVuIGRvb3IgY3JlYWtpbmcgYW5kIGNsb3NpbmciLCAiZHVyYXRpb24iOiAyfQpdCgpyZXN1bHRzID0gYmF0Y2hfZ2VuZXJhdGVfc291bmRzKHNvdW5kcywgInNvdW5kX2VmZmVjdHMvIikKYGBgCgojIyMgV29ya2Zsb3cgMzogR3JhZGlvIGRlbW8KCmBgYHB5dGhvbgppbXBvcnQgZ3JhZGlvIGFzIGdyCmltcG9ydCB0b3JjaAppbXBvcnQgdG9yY2hhdWRpbwpmcm9tIGF1ZGlvY3JhZnQubW9kZWxzIGltcG9ydCBNdXNpY0dlbgoKbW9kZWwgPSBNdXNpY0dlbi5nZXRfcHJldHJhaW5lZCgnZmFjZWJvb2svbXVzaWNnZW4tc21hbGwnKQoKZGVmIGdlbmVyYXRlX211c2ljKHByb21wdCwgZHVyYXRpb24sIHRlbXBlcmF0dXJlLCBjZmdfY29lZik6CiAgICBtb2RlbC5zZXRfZ2VuZXJhdGlvbl9wYXJhbXMoCiAgICAgICAgZHVyYXRpb249ZHVyYXRpb24sCiAgICAgICAgdGVtcGVyYXR1cmU9dGVtcGVyYXR1cmUsCiAgICAgICAgY2ZnX2NvZWY9Y2ZnX2NvZWYKICAgICkKCiAgICB3aXRoIHRvcmNoLm5vX2dyYWQoKToKICAgICAgICB3YXYgPSBtb2RlbC5nZW5lcmF0ZShbcHJvbXB0XSkKCiAgICAjIFNhdmUgdG8gdGVtcCBmaWxlCiAgICBwYXRoID0gInRlbXBfb3V0cHV0LndhdiIKICAgIHRvcmNoYXVkaW8uc2F2ZShwYXRoLCB3YXZbMF0uY3B1KCksIHNhbXBsZV9yYXRlPTMyMDAwKQogICAgcmV0dXJuIHBhdGgKCmRlbW8gPSBnci5JbnRlcmZhY2UoCiAgICBmbj1nZW5lcmF0ZV9tdXNpYywKICAgIGlucHV0cz1bCiAgICAgICAgZ3IuVGV4dGJveChsYWJlbD0iTXVzaWMgRGVzY3JpcHRpb24iLCBwbGFjZWhvbGRlcj0idXBiZWF0IGVsZWN0cm9uaWMgZGFuY2UgbXVzaWMiKSwKICAgICAgICBnci5TbGlkZXIoMSwgMzAsIHZhbHVlPTgsIGxhYmVsPSJEdXJhdGlvbiAoc2Vjb25kcykiKSwKICAgICAgICBnci5TbGlkZXIoMC41LCAyLjAsIHZhbHVlPTEuMCwgbGFiZWw9IlRlbXBlcmF0dXJlIiksCiAgICAgICAgZ3IuU2xpZGVyKDEuMCwgMTAuMCwgdmFsdWU9My4wLCBsYWJlbD0iQ0ZHIENvZWZmaWNpZW50IikKICAgIF0sCiAgICBvdXRwdXRzPWdyLkF1ZGlvKGxhYmVsPSJHZW5lcmF0ZWQgTXVzaWMiKSwKICAgIHRpdGxlPSJNdXNpY0dlbiBEZW1vIgopCgpkZW1vLmxhdW5jaCgpCmBgYAoKIyMgUGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uCgojIyMgTWVtb3J5IG9wdGltaXphdGlvbgoKYGBgcHl0aG9uCiMgVXNlIHNtYWxsZXIgbW9kZWwKbW9kZWwgPSBNdXNpY0dlbi5nZXRfcHJldHJhaW5lZCgnZmFjZWJvb2svbXVzaWNnZW4tc21hbGwnKQoKIyBDbGVhciBjYWNoZSBiZXR3ZWVuIGdlbmVyYXRpb25zCnRvcmNoLmN1ZGEuZW1wdHlfY2FjaGUoKQoKIyBHZW5lcmF0ZSBzaG9ydGVyIGR1cmF0aW9ucwptb2RlbC5zZXRfZ2VuZXJhdGlvbl9wYXJhbXMoZHVyYXRpb249MTApICAjIEluc3RlYWQgb2YgMzAKCiMgVXNlIGhhbGYgcHJlY2lzaW9uCm1vZGVsID0gbW9kZWwuaGFsZigpCmBgYAoKIyMjIEJhdGNoIHByb2Nlc3NpbmcgZWZmaWNpZW5jeQoKYGBgcHl0aG9uCiMgUHJvY2VzcyBtdWx0aXBsZSBwcm9tcHRzIGF0IG9uY2UgKG1vcmUgZWZmaWNpZW50KQpkZXNjcmlwdGlvbnMgPSBbInByb21wdDEiLCAicHJvbXB0MiIsICJwcm9tcHQzIiwgInByb21wdDQiXQp3YXYgPSBtb2RlbC5nZW5lcmF0ZShkZXNjcmlwdGlvbnMpICAjIFNpbmdsZSBiYXRjaAoKIyBJbnN0ZWFkIG9mCmZvciBkZXNjIGluIGRlc2NyaXB0aW9uczoKICAgIHdhdiA9IG1vZGVsLmdlbmVyYXRlKFtkZXNjXSkgICMgTXVsdGlwbGUgYmF0Y2hlcyAoc2xvd2VyKQpgYGAKCiMjIyBHUFUgbWVtb3J5IHJlcXVpcmVtZW50cwoKfCBNb2RlbCB8IEZQMzIgVlJBTSB8IEZQMTYgVlJBTSB8CnwtLS0tLS0tfC0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tfAp8IG11c2ljZ2VuLXNtYWxsIHwgfjRHQiB8IH4yR0IgfAp8IG11c2ljZ2VuLW1lZGl1bSB8IH44R0IgfCB+NEdCIHwKfCBtdXNpY2dlbi1sYXJnZSB8IH4xNkdCIHwgfjhHQiB8CgojIyBDb21tb24gaXNzdWVzCgp8IElzc3VlIHwgU29sdXRpb24gfAp8LS0tLS0tLXwtLS0tLS0tLS0tfAp8IENVREEgT09NIHwgVXNlIHNtYWxsZXIgbW9kZWwsIHJlZHVjZSBkdXJhdGlvbiB8CnwgUG9vciBxdWFsaXR5IHwgSW5jcmVhc2UgY2ZnX2NvZWYsIGJldHRlciBwcm9tcHRzIHwKfCBHZW5lcmF0aW9uIHRvbyBzaG9ydCB8IENoZWNrIG1heCBkdXJhdGlvbiBzZXR0aW5nIHwKfCBBdWRpbyBhcnRpZmFjdHMgfCBUcnkgZGlmZmVyZW50IHRlbXBlcmF0dXJlIHwKfCBTdGVyZW8gbm90IHdvcmtpbmcgfCBVc2Ugc3RlcmVvIG1vZGVsIHZhcmlhbnQgfAoKIyMgUmVmZXJlbmNlcwoKLSAqKltBZHZhbmNlZCBVc2FnZV0ocmVmZXJlbmNlcy9hZHZhbmNlZC11c2FnZS5tZCkqKiAtIFRyYWluaW5nLCBmaW5lLXR1bmluZywgZGVwbG95bWVudAotICoqW1Ryb3VibGVzaG9vdGluZ10ocmVmZXJlbmNlcy90cm91Ymxlc2hvb3RpbmcubWQpKiogLSBDb21tb24gaXNzdWVzIGFuZCBzb2x1dGlvbnMKCiMjIFJlc291cmNlcwoKLSAqKkdpdEh1YioqOiBodHRwczovL2dpdGh1Yi5jb20vZmFjZWJvb2tyZXNlYXJjaC9hdWRpb2NyYWZ0Ci0gKipQYXBlciAoTXVzaWNHZW4pKio6IGh0dHBzOi8vYXJ4aXYub3JnL2Ficy8yMzA2LjA1Mjg0Ci0gKipQYXBlciAoQXVkaW9HZW4pKio6IGh0dHBzOi8vYXJ4aXYub3JnL2Ficy8yMjA5LjE1MzUyCi0gKipIdWdnaW5nRmFjZSoqOiBodHRwczovL2h1Z2dpbmdmYWNlLmNvL2ZhY2Vib29rL211c2ljZ2VuLXNtYWxsCi0gKipEZW1vKio6IGh0dHBzOi8vaHVnZ2luZ2ZhY2UuY28vc3BhY2VzL2ZhY2Vib29rL011c2ljR2VuCg==
+---
+name: audiocraft-audio-generation
+description: PyTorch library for audio generation including text-to-music (MusicGen) and text-to-sound (AudioGen). Use when you need to generate music from text descriptions, create sound effects, or perform melody-conditioned music generation.
+version: 1.0.0
+author: Orchestra Research
+license: MIT
+dependencies: [audiocraft, torch>=2.0.0, transformers>=4.30.0]
+metadata:
+  hermes:
+    tags: [Multimodal, Audio Generation, Text-to-Music, Text-to-Audio, MusicGen]
+
+---
+
+# AudioCraft: Audio Generation
+
+Comprehensive guide to using Meta's AudioCraft for text-to-music and text-to-audio generation with MusicGen, AudioGen, and EnCodec.
+
+## When to use AudioCraft
+
+**Use AudioCraft when:**
+- Need to generate music from text descriptions
+- Creating sound effects and environmental audio
+- Building music generation applications
+- Need melody-conditioned music generation
+- Want stereo audio output
+- Require controllable music generation with style transfer
+
+**Key features:**
+- **MusicGen**: Text-to-music generation with melody conditioning
+- **AudioGen**: Text-to-sound effects generation
+- **EnCodec**: High-fidelity neural audio codec
+- **Multiple model sizes**: Small (300M) to Large (3.3B)
+- **Stereo support**: Full stereo audio generation
+- **Style conditioning**: MusicGen-Style for reference-based generation
+
+**Use alternatives instead:**
+- **Stable Audio**: For longer commercial music generation
+- **Bark**: For text-to-speech with music/sound effects
+- **Riffusion**: For spectogram-based music generation
+- **OpenAI Jukebox**: For raw audio generation with lyrics
+
+## Quick start
+
+### Installation
+
+```bash
+# From PyPI
+pip install audiocraft
+
+# From GitHub (latest)
+pip install git+https://github.com/facebookresearch/audiocraft.git
+
+# Or use HuggingFace Transformers
+pip install transformers torch torchaudio
+```
+
+### Basic text-to-music (AudioCraft)
+
+```python
+import torchaudio
+from audiocraft.models import MusicGen
+
+# Load model
+model = MusicGen.get_pretrained('facebook/musicgen-small')
+
+# Set generation parameters
+model.set_generation_params(
+    duration=8,  # seconds
+    top_k=250,
+    temperature=1.0
+)
+
+# Generate from text
+descriptions = ["happy upbeat electronic dance music with synths"]
+wav = model.generate(descriptions)
+
+# Save audio
+torchaudio.save("output.wav", wav[0].cpu(), sample_rate=32000)
+```
+
+### Using HuggingFace Transformers
+
+```python
+from transformers import AutoProcessor, MusicgenForConditionalGeneration
+import scipy
+
+# Load model and processor
+processor = AutoProcessor.from_pretrained("facebook/musicgen-small")
+model = MusicgenForConditionalGeneration.from_pretrained("facebook/musicgen-small")
+model.to("cuda")
+
+# Generate music
+inputs = processor(
+    text=["80s pop track with bassy drums and synth"],
+    padding=True,
+    return_tensors="pt"
+).to("cuda")
+
+audio_values = model.generate(
+    **inputs,
+    do_sample=True,
+    guidance_scale=3,
+    max_new_tokens=256
+)
+
+# Save
+sampling_rate = model.config.audio_encoder.sampling_rate
+scipy.io.wavfile.write("output.wav", rate=sampling_rate, data=audio_values[0, 0].cpu().numpy())
+```
+
+### Text-to-sound with AudioGen
+
+```python
+from audiocraft.models import AudioGen
+
+# Load AudioGen
+model = AudioGen.get_pretrained('facebook/audiogen-medium')
+
+model.set_generation_params(duration=5)
+
+# Generate sound effects
+descriptions = ["dog barking in a park with birds chirping"]
+wav = model.generate(descriptions)
+
+torchaudio.save("sound.wav", wav[0].cpu(), sample_rate=16000)
+```
+
+## Core concepts
+
+### Architecture overview
+
+```
+AudioCraft Architecture:
+┌──────────────────────────────────────────────────────────────┐
+│                    Text Encoder (T5)                          │
+│                         │                                     │
+│                    Text Embeddings                            │
+└────────────────────────┬─────────────────────────────────────┘
+                         │
+┌────────────────────────▼─────────────────────────────────────┐
+│              Transformer Decoder (LM)                         │
+│     Auto-regressively generates audio tokens                  │
+│     Using efficient token interleaving patterns               │
+└────────────────────────┬─────────────────────────────────────┘
+                         │
+┌────────────────────────▼─────────────────────────────────────┐
+│                EnCodec Audio Decoder                          │
+│        Converts tokens back to audio waveform                 │
+└──────────────────────────────────────────────────────────────┘
+```
+
+### Model variants
+
+| Model | Size | Description | Use Case |
+|-------|------|-------------|----------|
+| `musicgen-small` | 300M | Text-to-music | Quick generation |
+| `musicgen-medium` | 1.5B | Text-to-music | Balanced |
+| `musicgen-large` | 3.3B | Text-to-music | Best quality |
+| `musicgen-melody` | 1.5B | Text + melody | Melody conditioning |
+| `musicgen-melody-large` | 3.3B | Text + melody | Best melody |
+| `musicgen-stereo-*` | Varies | Stereo output | Stereo generation |
+| `musicgen-style` | 1.5B | Style transfer | Reference-based |
+| `audiogen-medium` | 1.5B | Text-to-sound | Sound effects |
+
+### Generation parameters
+
+| Parameter | Default | Description |
+|-----------|---------|-------------|
+| `duration` | 8.0 | Length in seconds (1-120) |
+| `top_k` | 250 | Top-k sampling |
+| `top_p` | 0.0 | Nucleus sampling (0 = disabled) |
+| `temperature` | 1.0 | Sampling temperature |
+| `cfg_coef` | 3.0 | Classifier-free guidance |
+
+## MusicGen usage
+
+### Text-to-music generation
+
+```python
+from audiocraft.models import MusicGen
+import torchaudio
+
+model = MusicGen.get_pretrained('facebook/musicgen-medium')
+
+# Configure generation
+model.set_generation_params(
+    duration=30,          # Up to 30 seconds
+    top_k=250,            # Sampling diversity
+    top_p=0.0,            # 0 = use top_k only
+    temperature=1.0,      # Creativity (higher = more varied)
+    cfg_coef=3.0          # Text adherence (higher = stricter)
+)
+
+# Generate multiple samples
+descriptions = [
+    "epic orchestral soundtrack with strings and brass",
+    "chill lo-fi hip hop beat with jazzy piano",
+    "energetic rock song with electric guitar"
+]
+
+# Generate (returns [batch, channels, samples])
+wav = model.generate(descriptions)
+
+# Save each
+for i, audio in enumerate(wav):
+    torchaudio.save(f"music_{i}.wav", audio.cpu(), sample_rate=32000)
+```
+
+### Melody-conditioned generation
+
+```python
+from audiocraft.models import MusicGen
+import torchaudio
+
+# Load melody model
+model = MusicGen.get_pretrained('facebook/musicgen-melody')
+model.set_generation_params(duration=30)
+
+# Load melody audio
+melody, sr = torchaudio.load("melody.wav")
+
+# Generate with melody conditioning
+descriptions = ["acoustic guitar folk song"]
+wav = model.generate_with_chroma(descriptions, melody, sr)
+
+torchaudio.save("melody_conditioned.wav", wav[0].cpu(), sample_rate=32000)
+```
+
+### Stereo generation
+
+```python
+from audiocraft.models import MusicGen
+
+# Load stereo model
+model = MusicGen.get_pretrained('facebook/musicgen-stereo-medium')
+model.set_generation_params(duration=15)
+
+descriptions = ["ambient electronic music with wide stereo panning"]
+wav = model.generate(descriptions)
+
+# wav shape: [batch, 2, samples] for stereo
+print(f"Stereo shape: {wav.shape}")  # [1, 2, 480000]
+torchaudio.save("stereo.wav", wav[0].cpu(), sample_rate=32000)
+```
+
+### Audio continuation
+
+```python
+from transformers import AutoProcessor, MusicgenForConditionalGeneration
+
+processor = AutoProcessor.from_pretrained("facebook/musicgen-medium")
+model = MusicgenForConditionalGeneration.from_pretrained("facebook/musicgen-medium")
+
+# Load audio to continue
+import torchaudio
+audio, sr = torchaudio.load("intro.wav")
+
+# Process with text and audio
+inputs = processor(
+    audio=audio.squeeze().numpy(),
+    sampling_rate=sr,
+    text=["continue with a epic chorus"],
+    padding=True,
+    return_tensors="pt"
+)
+
+# Generate continuation
+audio_values = model.generate(**inputs, do_sample=True, guidance_scale=3, max_new_tokens=512)
+```
+
+## MusicGen-Style usage
+
+### Style-conditioned generation
+
+```python
+from audiocraft.models import MusicGen
+
+# Load style model
+model = MusicGen.get_pretrained('facebook/musicgen-style')
+
+# Configure generation with style
+model.set_generation_params(
+    duration=30,
+    cfg_coef=3.0,
+    cfg_coef_beta=5.0  # Style influence
+)
+
+# Configure style conditioner
+model.set_style_conditioner_params(
+    eval_q=3,          # RVQ quantizers (1-6)
+    excerpt_length=3.0  # Style excerpt length
+)
+
+# Load style reference
+style_audio, sr = torchaudio.load("reference_style.wav")
+
+# Generate with text + style
+descriptions = ["upbeat dance track"]
+wav = model.generate_with_style(descriptions, style_audio, sr)
+```
+
+### Style-only generation (no text)
+
+```python
+# Generate matching style without text prompt
+model.set_generation_params(
+    duration=30,
+    cfg_coef=3.0,
+    cfg_coef_beta=None  # Disable double CFG for style-only
+)
+
+wav = model.generate_with_style([None], style_audio, sr)
+```
+
+## AudioGen usage
+
+### Sound effect generation
+
+```python
+from audiocraft.models import AudioGen
+import torchaudio
+
+model = AudioGen.get_pretrained('facebook/audiogen-medium')
+model.set_generation_params(duration=10)
+
+# Generate various sounds
+descriptions = [
+    "thunderstorm with heavy rain and lightning",
+    "busy city traffic with car horns",
+    "ocean waves crashing on rocks",
+    "crackling campfire in forest"
+]
+
+wav = model.generate(descriptions)
+
+for i, audio in enumerate(wav):
+    torchaudio.save(f"sound_{i}.wav", audio.cpu(), sample_rate=16000)
+```
+
+## EnCodec usage
+
+### Audio compression
+
+```python
+from audiocraft.models import CompressionModel
+import torch
+import torchaudio
+
+# Load EnCodec
+model = CompressionModel.get_pretrained('facebook/encodec_32khz')
+
+# Load audio
+wav, sr = torchaudio.load("audio.wav")
+
+# Ensure correct sample rate
+if sr != 32000:
+    resampler = torchaudio.transforms.Resample(sr, 32000)
+    wav = resampler(wav)
+
+# Encode to tokens
+with torch.no_grad():
+    encoded = model.encode(wav.unsqueeze(0))
+    codes = encoded[0]  # Audio codes
+
+# Decode back to audio
+with torch.no_grad():
+    decoded = model.decode(codes)
+
+torchaudio.save("reconstructed.wav", decoded[0].cpu(), sample_rate=32000)
+```
+
+## Common workflows
+
+### Workflow 1: Music generation pipeline
+
+```python
+import torch
+import torchaudio
+from audiocraft.models import MusicGen
+
+class MusicGenerator:
+    def __init__(self, model_name="facebook/musicgen-medium"):
+        self.model = MusicGen.get_pretrained(model_name)
+        self.sample_rate = 32000
+
+    def generate(self, prompt, duration=30, temperature=1.0, cfg=3.0):
+        self.model.set_generation_params(
+            duration=duration,
+            top_k=250,
+            temperature=temperature,
+            cfg_coef=cfg
+        )
+
+        with torch.no_grad():
+            wav = self.model.generate([prompt])
+
+        return wav[0].cpu()
+
+    def generate_batch(self, prompts, duration=30):
+        self.model.set_generation_params(duration=duration)
+
+        with torch.no_grad():
+            wav = self.model.generate(prompts)
+
+        return wav.cpu()
+
+    def save(self, audio, path):
+        torchaudio.save(path, audio, sample_rate=self.sample_rate)
+
+# Usage
+generator = MusicGenerator()
+audio = generator.generate(
+    "epic cinematic orchestral music",
+    duration=30,
+    temperature=1.0
+)
+generator.save(audio, "epic_music.wav")
+```
+
+### Workflow 2: Sound design batch processing
+
+```python
+import json
+from pathlib import Path
+from audiocraft.models import AudioGen
+import torchaudio
+
+def batch_generate_sounds(sound_specs, output_dir):
+    """
+    Generate multiple sounds from specifications.
+
+    Args:
+        sound_specs: list of {"name": str, "description": str, "duration": float}
+        output_dir: output directory path
+    """
+    model = AudioGen.get_pretrained('facebook/audiogen-medium')
+    output_dir = Path(output_dir)
+    output_dir.mkdir(exist_ok=True)
+
+    results = []
+
+    for spec in sound_specs:
+        model.set_generation_params(duration=spec.get("duration", 5))
+
+        wav = model.generate([spec["description"]])
+
+        output_path = output_dir / f"{spec['name']}.wav"
+        torchaudio.save(str(output_path), wav[0].cpu(), sample_rate=16000)
+
+        results.append({
+            "name": spec["name"],
+            "path": str(output_path),
+            "description": spec["description"]
+        })
+
+    return results
+
+# Usage
+sounds = [
+    {"name": "explosion", "description": "massive explosion with debris", "duration": 3},
+    {"name": "footsteps", "description": "footsteps on wooden floor", "duration": 5},
+    {"name": "door", "description": "wooden door creaking and closing", "duration": 2}
+]
+
+results = batch_generate_sounds(sounds, "sound_effects/")
+```
+
+### Workflow 3: Gradio demo
+
+```python
+import gradio as gr
+import torch
+import torchaudio
+from audiocraft.models import MusicGen
+
+model = MusicGen.get_pretrained('facebook/musicgen-small')
+
+def generate_music(prompt, duration, temperature, cfg_coef):
+    model.set_generation_params(
+        duration=duration,
+        temperature=temperature,
+        cfg_coef=cfg_coef
+    )
+
+    with torch.no_grad():
+        wav = model.generate([prompt])
+
+    # Save to temp file
+    path = "temp_output.wav"
+    torchaudio.save(path, wav[0].cpu(), sample_rate=32000)
+    return path
+
+demo = gr.Interface(
+    fn=generate_music,
+    inputs=[
+        gr.Textbox(label="Music Description", placeholder="upbeat electronic dance music"),
+        gr.Slider(1, 30, value=8, label="Duration (seconds)"),
+        gr.Slider(0.5, 2.0, value=1.0, label="Temperature"),
+        gr.Slider(1.0, 10.0, value=3.0, label="CFG Coefficient")
+    ],
+    outputs=gr.Audio(label="Generated Music"),
+    title="MusicGen Demo"
+)
+
+demo.launch()
+```
+
+## Performance optimization
+
+### Memory optimization
+
+```python
+# Use smaller model
+model = MusicGen.get_pretrained('facebook/musicgen-small')
+
+# Clear cache between generations
+torch.cuda.empty_cache()
+
+# Generate shorter durations
+model.set_generation_params(duration=10)  # Instead of 30
+
+# Use half precision
+model = model.half()
+```
+
+### Batch processing efficiency
+
+```python
+# Process multiple prompts at once (more efficient)
+descriptions = ["prompt1", "prompt2", "prompt3", "prompt4"]
+wav = model.generate(descriptions)  # Single batch
+
+# Instead of
+for desc in descriptions:
+    wav = model.generate([desc])  # Multiple batches (slower)
+```
+
+### GPU memory requirements
+
+| Model | FP32 VRAM | FP16 VRAM |
+|-------|-----------|-----------|
+| musicgen-small | ~4GB | ~2GB |
+| musicgen-medium | ~8GB | ~4GB |
+| musicgen-large | ~16GB | ~8GB |
+
+## Common issues
+
+| Issue | Solution |
+|-------|----------|
+| CUDA OOM | Use smaller model, reduce duration |
+| Poor quality | Increase cfg_coef, better prompts |
+| Generation too short | Check max duration setting |
+| Audio artifacts | Try different temperature |
+| Stereo not working | Use stereo model variant |
+
+## References
+
+- **[Advanced Usage](references/advanced-usage.md)** - Training, fine-tuning, deployment
+- **[Troubleshooting](references/troubleshooting.md)** - Common issues and solutions
+
+## Resources
+
+- **GitHub**: https://github.com/facebookresearch/audiocraft
+- **Paper (MusicGen)**: https://arxiv.org/abs/2306.05284
+- **Paper (AudioGen)**: https://arxiv.org/abs/2209.15352
+- **HuggingFace**: https://huggingface.co/facebook/musicgen-small
+- **Demo**: https://huggingface.co/spaces/facebook/MusicGen

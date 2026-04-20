@@ -1,1 +1,19 @@
-IyBpbmZlcmVuY2Uuc2gKClJ1biAxNTArIEFJIGFwcGxpY2F0aW9ucyBpbiB0aGUgY2xvdWQgdmlhIHRoZSBbaW5mZXJlbmNlLnNoXShodHRwczovL2luZmVyZW5jZS5zaCkgcGxhdGZvcm0uCgoqKk9uZSBBUEkga2V5IGZvciBldmVyeXRoaW5nKiog4oCUIGFjY2VzcyBpbWFnZSBnZW5lcmF0aW9uLCB2aWRlbyBjcmVhdGlvbiwgTExNcywgc2VhcmNoLCAzRCwgYW5kIG1vcmUgdGhyb3VnaCBhIHNpbmdsZSBhY2NvdW50LiBObyBuZWVkIHRvIG1hbmFnZSBzZXBhcmF0ZSBBUEkga2V5cyBmb3IgZWFjaCBwcm92aWRlci4KCiMjIEF2YWlsYWJsZSBTa2lsbHMKCi0gKipjbGkqKjogVXNlIHRoZSBpbmZlcmVuY2Uuc2ggQ0xJIChgaW5mc2hgKSB2aWEgdGhlIHRlcm1pbmFsIHRvb2wKCiMjIFdoYXQncyBJbmNsdWRlZAoKLSAqKkltYWdlIEdlbmVyYXRpb24qKjogRkxVWCwgUmV2ZSwgU2VlZHJlYW0sIEdyb2sgSW1hZ2luZSwgR2VtaW5pCi0gKipWaWRlbyBHZW5lcmF0aW9uKio6IFZlbywgV2FuLCBTZWVkYW5jZSwgT21uaUh1bWFuLCBIdW55dWFuVmlkZW8KLSAqKkxMTXMqKjogQ2xhdWRlLCBHZW1pbmksIEtpbWksIEdMTS00ICh2aWEgT3BlblJvdXRlcikKLSAqKlNlYXJjaCoqOiBUYXZpbHksIEV4YQotICoqM0QqKjogUm9kaW4KLSAqKlNvY2lhbCoqOiBUd2l0dGVyL1ggYXV0b21hdGlvbgotICoqQXVkaW8qKjogVFRTLCB2b2ljZSBjbG9uaW5nCg==
+# inference.sh
+
+Run 150+ AI applications in the cloud via the [inference.sh](https://inference.sh) platform.
+
+**One API key for everything** — access image generation, video creation, LLMs, search, 3D, and more through a single account. No need to manage separate API keys for each provider.
+
+## Available Skills
+
+- **cli**: Use the inference.sh CLI (`infsh`) via the terminal tool
+
+## What's Included
+
+- **Image Generation**: FLUX, Reve, Seedream, Grok Imagine, Gemini
+- **Video Generation**: Veo, Wan, Seedance, OmniHuman, HunyuanVideo
+- **LLMs**: Claude, Gemini, Kimi, GLM-4 (via OpenRouter)
+- **Search**: Tavily, Exa
+- **3D**: Rodin
+- **Social**: Twitter/X automation
+- **Audio**: TTS, voice cloning

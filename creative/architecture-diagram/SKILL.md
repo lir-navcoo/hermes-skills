@@ -1,1 +1,147 @@
-LS0tCm5hbWU6IGFyY2hpdGVjdHVyZS1kaWFncmFtCmRlc2NyaXB0aW9uOiBHZW5lcmF0ZSBkYXJrLXRoZW1lZCBTVkcgZGlhZ3JhbXMgb2Ygc29mdHdhcmUgc3lzdGVtcyBhbmQgY2xvdWQgaW5mcmFzdHJ1Y3R1cmUgYXMgc3RhbmRhbG9uZSBIVE1MIGZpbGVzIHdpdGggaW5saW5lIFNWRyBncmFwaGljcy4gU2VtYW50aWMgY29tcG9uZW50IGNvbG9ycyAoY3lhbj1mcm9udGVuZCwgZW1lcmFsZD1iYWNrZW5kLCB2aW9sZXQ9ZGF0YWJhc2UsIGFtYmVyPWNsb3VkL0FXUywgcm9zZT1zZWN1cml0eSwgb3JhbmdlPW1lc3NhZ2UgYnVzKSwgSmV0QnJhaW5zIE1vbm8gZm9udCwgZ3JpZCBiYWNrZ3JvdW5kLiBCZXN0IHN1aXRlZCBmb3Igc29mdHdhcmUgYXJjaGl0ZWN0dXJlLCBjbG91ZC9WUEMgdG9wb2xvZ3ksIG1pY3Jvc2VydmljZSBtYXBzLCBzZXJ2aWNlLW1lc2ggZGlhZ3JhbXMsIGRhdGFiYXNlICsgQVBJIGxheWVyIGRpYWdyYW1zLCBzZWN1cml0eSBncm91cHMsIG1lc3NhZ2UgYnVzZXMg4oCUIGFueXRoaW5nIHRoYXQgZml0cyBhIHRlY2gtaW5mcmEgZGVjayB3aXRoIGEgZGFyayBhZXN0aGV0aWMuIElmIGEgbW9yZSBzcGVjaWFsaXplZCBkaWFncmFtbWluZyBza2lsbCBleGlzdHMgZm9yIHRoZSBzdWJqZWN0IChzY2llbnRpZmljLCBlZHVjYXRpb25hbCwgaGFuZC1kcmF3biwgYW5pbWF0ZWQsIGV0Yy4pLCBwcmVmZXIgdGhhdCDigJQgb3RoZXJ3aXNlIHRoaXMgc2tpbGwgY2FuIGFsc28gc2VydmUgYXMgYSBnZW5lcmFsLXB1cnBvc2UgU1ZHIGRpYWdyYW0gZmFsbGJhY2suIEJhc2VkIG9uIENvY29vbiBBSSdzIGFyY2hpdGVjdHVyZS1kaWFncmFtLWdlbmVyYXRvciAoTUlUKS4KdmVyc2lvbjogMS4wLjAKYXV0aG9yOiBDb2Nvb24gQUkgKGhlbGxvQGNvY29vbi1haS5jb20pLCBwb3J0ZWQgYnkgSGVybWVzIEFnZW50CmxpY2Vuc2U6IE1JVApkZXBlbmRlbmNpZXM6IFtdCm1ldGFkYXRhOgogIGhlcm1lczoKICAgIHRhZ3M6IFthcmNoaXRlY3R1cmUsIGRpYWdyYW1zLCBTVkcsIEhUTUwsIHZpc3VhbGl6YXRpb24sIGluZnJhc3RydWN0dXJlLCBjbG91ZF0KICAgIHJlbGF0ZWRfc2tpbGxzOiBbY29uY2VwdC1kaWFncmFtcywgZXhjYWxpZHJhd10KLS0tCgojIEFyY2hpdGVjdHVyZSBEaWFncmFtIFNraWxsCgpHZW5lcmF0ZSBwcm9mZXNzaW9uYWwsIGRhcmstdGhlbWVkIHRlY2huaWNhbCBhcmNoaXRlY3R1cmUgZGlhZ3JhbXMgYXMgc3RhbmRhbG9uZSBIVE1MIGZpbGVzIHdpdGggaW5saW5lIFNWRyBncmFwaGljcy4gTm8gZXh0ZXJuYWwgdG9vbHMsIG5vIEFQSSBrZXlzLCBubyByZW5kZXJpbmcgbGlicmFyaWVzIOKAlCBqdXN0IHdyaXRlIHRoZSBIVE1MIGZpbGUgYW5kIG9wZW4gaXQgaW4gYSBicm93c2VyLgoKIyMgU2NvcGUKCioqQmVzdCBzdWl0ZWQgZm9yOioqCi0gU29mdHdhcmUgc3lzdGVtIGFyY2hpdGVjdHVyZSAoZnJvbnRlbmQgLyBiYWNrZW5kIC8gZGF0YWJhc2UgbGF5ZXJzKQotIENsb3VkIGluZnJhc3RydWN0dXJlIChWUEMsIHJlZ2lvbnMsIHN1Ym5ldHMsIG1hbmFnZWQgc2VydmljZXMpCi0gTWljcm9zZXJ2aWNlIC8gc2VydmljZS1tZXNoIHRvcG9sb2d5Ci0gRGF0YWJhc2UgKyBBUEkgbWFwLCBkZXBsb3ltZW50IGRpYWdyYW1zCi0gQW55dGhpbmcgd2l0aCBhIHRlY2gtaW5mcmEgc3ViamVjdCB0aGF0IGZpdHMgYSBkYXJrLCBncmlkLWJhY2tlZCBhZXN0aGV0aWMKCioqTG9vayBlbHNld2hlcmUgZmlyc3QgZm9yOioqCi0gUGh5c2ljcywgY2hlbWlzdHJ5LCBtYXRoLCBiaW9sb2d5LCBvciBvdGhlciBzY2llbnRpZmljIHN1YmplY3RzCi0gUGh5c2ljYWwgb2JqZWN0cyAodmVoaWNsZXMsIGhhcmR3YXJlLCBhbmF0b215LCBjcm9zcy1zZWN0aW9ucykKLSBGbG9vciBwbGFucywgbmFycmF0aXZlIGpvdXJuZXlzLCBlZHVjYXRpb25hbCAvIHRleHRib29rLXN0eWxlIHZpc3VhbHMKLSBIYW5kLWRyYXduIHdoaXRlYm9hcmQgc2tldGNoZXMgKGNvbnNpZGVyIGBleGNhbGlkcmF3YCkKLSBBbmltYXRlZCBleHBsYWluZXJzIChjb25zaWRlciBhbiBhbmltYXRpb24gc2tpbGwpCgpJZiBhIG1vcmUgc3BlY2lhbGl6ZWQgc2tpbGwgaXMgYXZhaWxhYmxlIGZvciB0aGUgc3ViamVjdCwgcHJlZmVyIHRoYXQuIElmIG5vbmUgZml0cywgdGhpcyBza2lsbCBjYW4gYWxzbyBzZXJ2ZSBhcyBhIGdlbmVyYWwgU1ZHIGRpYWdyYW0gZmFsbGJhY2sg4oCUIHRoZSBvdXRwdXQgd2lsbCBqdXN0IGNhcnJ5IHRoZSBkYXJrIHRlY2ggYWVzdGhldGljIGRlc2NyaWJlZCBiZWxvdy4KCkJhc2VkIG9uIFtDb2Nvb24gQUkncyBhcmNoaXRlY3R1cmUtZGlhZ3JhbS1nZW5lcmF0b3JdKGh0dHBzOi8vZ2l0aHViLmNvbS9Db2Nvb24tQUkvYXJjaGl0ZWN0dXJlLWRpYWdyYW0tZ2VuZXJhdG9yKSAoTUlUKS4KCiMjIFdvcmtmbG93CgoxLiBVc2VyIGRlc2NyaWJlcyB0aGVpciBzeXN0ZW0gYXJjaGl0ZWN0dXJlIChjb21wb25lbnRzLCBjb25uZWN0aW9ucywgdGVjaG5vbG9naWVzKQoyLiBHZW5lcmF0ZSB0aGUgSFRNTCBmaWxlIGZvbGxvd2luZyB0aGUgZGVzaWduIHN5c3RlbSBiZWxvdwozLiBTYXZlIHdpdGggYHdyaXRlX2ZpbGVgIHRvIGEgYC5odG1sYCBmaWxlIChlLmcuIGB+L2FyY2hpdGVjdHVyZS1kaWFncmFtLmh0bWxgKQo0LiBVc2VyIG9wZW5zIGluIGFueSBicm93c2VyIOKAlCB3b3JrcyBvZmZsaW5lLCBubyBkZXBlbmRlbmNpZXMKCiMjIyBPdXRwdXQgTG9jYXRpb24KClNhdmUgZGlhZ3JhbXMgdG8gYSB1c2VyLXNwZWNpZmllZCBwYXRoLCBvciBkZWZhdWx0IHRvIHRoZSBjdXJyZW50IHdvcmtpbmcgZGlyZWN0b3J5OgpgYGAKLi9bcHJvamVjdC1uYW1lXS1hcmNoaXRlY3R1cmUuaHRtbApgYGAKCiMjIyBQcmV2aWV3CgpBZnRlciBzYXZpbmcsIHN1Z2dlc3QgdGhlIHVzZXIgb3BlbiBpdDoKYGBgYmFzaAojIG1hY09TCm9wZW4gLi9teS1hcmNoaXRlY3R1cmUuaHRtbAojIExpbnV4CnhkZy1vcGVuIC4vbXktYXJjaGl0ZWN0dXJlLmh0bWwKYGBgCgojIyBEZXNpZ24gU3lzdGVtICYgVmlzdWFsIExhbmd1YWdlCgojIyMgQ29sb3IgUGFsZXR0ZSAoU2VtYW50aWMgTWFwcGluZykKClVzZSBzcGVjaWZpYyBgcmdiYWAgZmlsbHMgYW5kIGhleCBzdHJva2VzIHRvIGNhdGVnb3JpemUgY29tcG9uZW50czoKCnwgQ29tcG9uZW50IFR5cGUgfCBGaWxsIChyZ2JhKSB8IFN0cm9rZSAoSGV4KSB8CnwgOi0tLSB8IDotLS0gfCA6LS0tIHwKfCAqKkZyb250ZW5kKiogfCBgcmdiYSg4LCA1MSwgNjgsIDAuNClgIHwgYCMyMmQzZWVgIChjeWFuLTQwMCkgfAp8ICoqQmFja2VuZCoqIHwgYHJnYmEoNiwgNzgsIDU5LCAwLjQpYCB8IGAjMzRkMzk5YCAoZW1lcmFsZC00MDApIHwKfCAqKkRhdGFiYXNlKiogfCBgcmdiYSg3NiwgMjksIDE0OSwgMC40KWAgfCBgI2E3OGJmYWAgKHZpb2xldC00MDApIHwKfCAqKkFXUy9DbG91ZCoqIHwgYHJnYmEoMTIwLCA1MywgMTUsIDAuMylgIHwgYCNmYmJmMjRgIChhbWJlci00MDApIHwKfCAqKlNlY3VyaXR5KiogfCBgcmdiYSgxMzYsIDE5LCA1NSwgMC40KWAgfCBgI2ZiNzE4NWAgKHJvc2UtNDAwKSB8CnwgKipNZXNzYWdlIEJ1cyoqIHwgYHJnYmEoMjUxLCAxNDYsIDYwLCAwLjMpYCB8IGAjZmI5MjNjYCAob3JhbmdlLTQwMCkgfAp8ICoqRXh0ZXJuYWwqKiB8IGByZ2JhKDMwLCA0MSwgNTksIDAuNSlgIHwgYCM5NGEzYjhgIChzbGF0ZS00MDApIHwKCiMjIyBUeXBvZ3JhcGh5ICYgQmFja2dyb3VuZAotICoqRm9udDoqKiBKZXRCcmFpbnMgTW9ubyAoTW9ub3NwYWNlKSwgbG9hZGVkIGZyb20gR29vZ2xlIEZvbnRzCi0gKipTaXplczoqKiAxMnB4IChOYW1lcyksIDlweCAoU3VibGFiZWxzKSwgOHB4IChBbm5vdGF0aW9ucyksIDdweCAoVGlueSBsYWJlbHMpCi0gKipCYWNrZ3JvdW5kOioqIFNsYXRlLTk1MCAoYCMwMjA2MTdgKSB3aXRoIGEgc3VidGxlIDQwcHggZ3JpZCBwYXR0ZXJuCgpgYGBzdmcKPCEtLSBCYWNrZ3JvdW5kIEdyaWQgUGF0dGVybiAtLT4KPHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgPHBhdGggZD0iTSA0MCAwIEwgMCAwIDAgNDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzFlMjkzYiIgc3Ryb2tlLXdpZHRoPSIwLjUiLz4KPC9wYXR0ZXJuPgpgYGAKCiMjIFRlY2huaWNhbCBJbXBsZW1lbnRhdGlvbiBEZXRhaWxzCgojIyMgQ29tcG9uZW50IFJlbmRlcmluZwpDb21wb25lbnRzIGFyZSByb3VuZGVkIHJlY3RhbmdsZXMgKGByeD0iNiJgKSB3aXRoIDEuNXB4IHN0cm9rZXMuIFRvIHByZXZlbnQgYXJyb3dzIGZyb20gc2hvd2luZyB0aHJvdWdoIHNlbWktdHJhbnNwYXJlbnQgZmlsbHMsIHVzZSBhICoqZG91YmxlLXJlY3QgbWFza2luZyB0ZWNobmlxdWUqKjoKMS4gRHJhdyBhbiBvcGFxdWUgYmFja2dyb3VuZCByZWN0IChgIzBmMTcyYWApCjIuIERyYXcgdGhlIHNlbWktdHJhbnNwYXJlbnQgc3R5bGVkIHJlY3Qgb24gdG9wCgojIyMgQ29ubmVjdGlvbiBSdWxlcwotICoqWi1PcmRlcjoqKiBEcmF3IGFycm93cyAqZWFybHkqIGluIHRoZSBTVkcgKGFmdGVyIHRoZSBncmlkKSBzbyB0aGV5IHJlbmRlciBiZWhpbmQgY29tcG9uZW50IGJveGVzCi0gKipBcnJvd2hlYWRzOioqIERlZmluZWQgdmlhIFNWRyBtYXJrZXJzCi0gKipTZWN1cml0eSBGbG93czoqKiBVc2UgZGFzaGVkIGxpbmVzIGluIHJvc2UgY29sb3IgKGAjZmI3MTg1YCkKLSAqKkJvdW5kYXJpZXM6KioKICAtICpTZWN1cml0eSBHcm91cHM6KiBEYXNoZWQgKGA0LDRgKSwgcm9zZSBjb2xvcgogIC0gKlJlZ2lvbnM6KiBMYXJnZSBkYXNoZWQgKGA4LDRgKSwgYW1iZXIgY29sb3IsIGByeD0iMTIiYAoKIyMjIFNwYWNpbmcgJiBMYXlvdXQgTG9naWMKLSAqKlN0YW5kYXJkIEhlaWdodDoqKiA2MHB4IChTZXJ2aWNlcyk7IDgwLTEyMHB4IChMYXJnZSBjb21wb25lbnRzKQotICoqVmVydGljYWwgR2FwOioqIE1pbmltdW0gNDBweCBiZXR3ZWVuIGNvbXBvbmVudHMKLSAqKk1lc3NhZ2UgQnVzZXM6KiogTXVzdCBiZSBwbGFjZWQgKmluIHRoZSBnYXAqIGJldHdlZW4gc2VydmljZXMsIG5vdCBvdmVybGFwcGluZyB0aGVtCi0gKipMZWdlbmQgUGxhY2VtZW50OioqICoqQ1JJVElDQUwuKiogTXVzdCBiZSBwbGFjZWQgb3V0c2lkZSBhbGwgYm91bmRhcnkgYm94ZXMuIENhbGN1bGF0ZSB0aGUgbG93ZXN0IFktY29vcmRpbmF0ZSBvZiBhbGwgYm91bmRhcmllcyBhbmQgcGxhY2UgdGhlIGxlZ2VuZCBhdCBsZWFzdCAyMHB4IGJlbG93IGl0LgoKIyMgRG9jdW1lbnQgU3RydWN0dXJlCgpUaGUgZ2VuZXJhdGVkIEhUTUwgZmlsZSBmb2xsb3dzIGEgZm91ci1wYXJ0IGxheW91dDoKMS4gKipIZWFkZXI6KiogVGl0bGUgd2l0aCBhIHB1bHNpbmcgZG90IGluZGljYXRvciBhbmQgc3VidGl0bGUKMi4gKipNYWluIFNWRzoqKiBUaGUgZGlhZ3JhbSBjb250YWluZWQgd2l0aGluIGEgcm91bmRlZCBib3JkZXIgY2FyZAozLiAqKlN1bW1hcnkgQ2FyZHM6KiogQSBncmlkIG9mIHRocmVlIGNhcmRzIGJlbG93IHRoZSBkaWFncmFtIGZvciBoaWdoLWxldmVsIGRldGFpbHMKNC4gKipGb290ZXI6KiogTWluaW1hbCBtZXRhZGF0YQoKIyMjIEluZm8gQ2FyZCBQYXR0ZXJuCmBgYGh0bWwKPGRpdiBjbGFzcz0iY2FyZCI+CiAgPGRpdiBjbGFzcz0iY2FyZC1oZWFkZXIiPgogICAgPGRpdiBjbGFzcz0iY2FyZC1kb3QgY3lhbiI+PC9kaXY+CiAgICA8aDM+VGl0bGU8L2gzPgogIDwvZGl2PgogIDx1bD4KICAgIDxsaT7igKIgSXRlbSBvbmU8L2xpPgogICAgPGxpPuKAoiBJdGVtIHR3bzwvbGk+CiAgPC91bD4KPC9kaXY+CmBgYAoKIyMgT3V0cHV0IFJlcXVpcmVtZW50cwotICoqU2luZ2xlIEZpbGU6KiogT25lIHNlbGYtY29udGFpbmVkIGAuaHRtbGAgZmlsZQotICoqTm8gRXh0ZXJuYWwgRGVwZW5kZW5jaWVzOioqIEFsbCBDU1MgYW5kIFNWRyBtdXN0IGJlIGlubGluZSAoZXhjZXB0IEdvb2dsZSBGb250cykKLSAqKk5vIEphdmFTY3JpcHQ6KiogVXNlIHB1cmUgQ1NTIGZvciBhbnkgYW5pbWF0aW9ucyAobGlrZSBwdWxzaW5nIGRvdHMpCi0gKipDb21wYXRpYmlsaXR5OioqIE11c3QgcmVuZGVyIGNvcnJlY3RseSBpbiBhbnkgbW9kZXJuIHdlYiBicm93c2VyCgojIyBUZW1wbGF0ZSBSZWZlcmVuY2UKCkxvYWQgdGhlIGZ1bGwgSFRNTCB0ZW1wbGF0ZSBmb3IgdGhlIGV4YWN0IHN0cnVjdHVyZSwgQ1NTLCBhbmQgU1ZHIGNvbXBvbmVudCBleGFtcGxlczoKCmBgYApza2lsbF92aWV3KG5hbWU9ImFyY2hpdGVjdHVyZS1kaWFncmFtIiwgZmlsZV9wYXRoPSJ0ZW1wbGF0ZXMvdGVtcGxhdGUuaHRtbCIpCmBgYAoKVGhlIHRlbXBsYXRlIGNvbnRhaW5zIHdvcmtpbmcgZXhhbXBsZXMgb2YgZXZlcnkgY29tcG9uZW50IHR5cGUgKGZyb250ZW5kLCBiYWNrZW5kLCBkYXRhYmFzZSwgY2xvdWQsIHNlY3VyaXR5KSwgYXJyb3cgc3R5bGVzIChzdGFuZGFyZCwgZGFzaGVkLCBjdXJ2ZWQpLCBzZWN1cml0eSBncm91cHMsIHJlZ2lvbiBib3VuZGFyaWVzLCBhbmQgdGhlIGxlZ2VuZCDigJQgdXNlIGl0IGFzIHlvdXIgc3RydWN0dXJhbCByZWZlcmVuY2Ugd2hlbiBnZW5lcmF0aW5nIGRpYWdyYW1zLgo=
+---
+name: architecture-diagram
+description: Generate dark-themed SVG diagrams of software systems and cloud infrastructure as standalone HTML files with inline SVG graphics. Semantic component colors (cyan=frontend, emerald=backend, violet=database, amber=cloud/AWS, rose=security, orange=message bus), JetBrains Mono font, grid background. Best suited for software architecture, cloud/VPC topology, microservice maps, service-mesh diagrams, database + API layer diagrams, security groups, message buses — anything that fits a tech-infra deck with a dark aesthetic. If a more specialized diagramming skill exists for the subject (scientific, educational, hand-drawn, animated, etc.), prefer that — otherwise this skill can also serve as a general-purpose SVG diagram fallback. Based on Cocoon AI's architecture-diagram-generator (MIT).
+version: 1.0.0
+author: Cocoon AI (hello@cocoon-ai.com), ported by Hermes Agent
+license: MIT
+dependencies: []
+metadata:
+  hermes:
+    tags: [architecture, diagrams, SVG, HTML, visualization, infrastructure, cloud]
+    related_skills: [concept-diagrams, excalidraw]
+---
+
+# Architecture Diagram Skill
+
+Generate professional, dark-themed technical architecture diagrams as standalone HTML files with inline SVG graphics. No external tools, no API keys, no rendering libraries — just write the HTML file and open it in a browser.
+
+## Scope
+
+**Best suited for:**
+- Software system architecture (frontend / backend / database layers)
+- Cloud infrastructure (VPC, regions, subnets, managed services)
+- Microservice / service-mesh topology
+- Database + API map, deployment diagrams
+- Anything with a tech-infra subject that fits a dark, grid-backed aesthetic
+
+**Look elsewhere first for:**
+- Physics, chemistry, math, biology, or other scientific subjects
+- Physical objects (vehicles, hardware, anatomy, cross-sections)
+- Floor plans, narrative journeys, educational / textbook-style visuals
+- Hand-drawn whiteboard sketches (consider `excalidraw`)
+- Animated explainers (consider an animation skill)
+
+If a more specialized skill is available for the subject, prefer that. If none fits, this skill can also serve as a general SVG diagram fallback — the output will just carry the dark tech aesthetic described below.
+
+Based on [Cocoon AI's architecture-diagram-generator](https://github.com/Cocoon-AI/architecture-diagram-generator) (MIT).
+
+## Workflow
+
+1. User describes their system architecture (components, connections, technologies)
+2. Generate the HTML file following the design system below
+3. Save with `write_file` to a `.html` file (e.g. `~/architecture-diagram.html`)
+4. User opens in any browser — works offline, no dependencies
+
+### Output Location
+
+Save diagrams to a user-specified path, or default to the current working directory:
+```
+./[project-name]-architecture.html
+```
+
+### Preview
+
+After saving, suggest the user open it:
+```bash
+# macOS
+open ./my-architecture.html
+# Linux
+xdg-open ./my-architecture.html
+```
+
+## Design System & Visual Language
+
+### Color Palette (Semantic Mapping)
+
+Use specific `rgba` fills and hex strokes to categorize components:
+
+| Component Type | Fill (rgba) | Stroke (Hex) |
+| :--- | :--- | :--- |
+| **Frontend** | `rgba(8, 51, 68, 0.4)` | `#22d3ee` (cyan-400) |
+| **Backend** | `rgba(6, 78, 59, 0.4)` | `#34d399` (emerald-400) |
+| **Database** | `rgba(76, 29, 149, 0.4)` | `#a78bfa` (violet-400) |
+| **AWS/Cloud** | `rgba(120, 53, 15, 0.3)` | `#fbbf24` (amber-400) |
+| **Security** | `rgba(136, 19, 55, 0.4)` | `#fb7185` (rose-400) |
+| **Message Bus** | `rgba(251, 146, 60, 0.3)` | `#fb923c` (orange-400) |
+| **External** | `rgba(30, 41, 59, 0.5)` | `#94a3b8` (slate-400) |
+
+### Typography & Background
+- **Font:** JetBrains Mono (Monospace), loaded from Google Fonts
+- **Sizes:** 12px (Names), 9px (Sublabels), 8px (Annotations), 7px (Tiny labels)
+- **Background:** Slate-950 (`#020617`) with a subtle 40px grid pattern
+
+```svg
+<!-- Background Grid Pattern -->
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+  <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+</pattern>
+```
+
+## Technical Implementation Details
+
+### Component Rendering
+Components are rounded rectangles (`rx="6"`) with 1.5px strokes. To prevent arrows from showing through semi-transparent fills, use a **double-rect masking technique**:
+1. Draw an opaque background rect (`#0f172a`)
+2. Draw the semi-transparent styled rect on top
+
+### Connection Rules
+- **Z-Order:** Draw arrows *early* in the SVG (after the grid) so they render behind component boxes
+- **Arrowheads:** Defined via SVG markers
+- **Security Flows:** Use dashed lines in rose color (`#fb7185`)
+- **Boundaries:**
+  - *Security Groups:* Dashed (`4,4`), rose color
+  - *Regions:* Large dashed (`8,4`), amber color, `rx="12"`
+
+### Spacing & Layout Logic
+- **Standard Height:** 60px (Services); 80-120px (Large components)
+- **Vertical Gap:** Minimum 40px between components
+- **Message Buses:** Must be placed *in the gap* between services, not overlapping them
+- **Legend Placement:** **CRITICAL.** Must be placed outside all boundary boxes. Calculate the lowest Y-coordinate of all boundaries and place the legend at least 20px below it.
+
+## Document Structure
+
+The generated HTML file follows a four-part layout:
+1. **Header:** Title with a pulsing dot indicator and subtitle
+2. **Main SVG:** The diagram contained within a rounded border card
+3. **Summary Cards:** A grid of three cards below the diagram for high-level details
+4. **Footer:** Minimal metadata
+
+### Info Card Pattern
+```html
+<div class="card">
+  <div class="card-header">
+    <div class="card-dot cyan"></div>
+    <h3>Title</h3>
+  </div>
+  <ul>
+    <li>• Item one</li>
+    <li>• Item two</li>
+  </ul>
+</div>
+```
+
+## Output Requirements
+- **Single File:** One self-contained `.html` file
+- **No External Dependencies:** All CSS and SVG must be inline (except Google Fonts)
+- **No JavaScript:** Use pure CSS for any animations (like pulsing dots)
+- **Compatibility:** Must render correctly in any modern web browser
+
+## Template Reference
+
+Load the full HTML template for the exact structure, CSS, and SVG component examples:
+
+```
+skill_view(name="architecture-diagram", file_path="templates/template.html")
+```
+
+The template contains working examples of every component type (frontend, backend, database, cloud, security), arrow styles (standard, dashed, curved), security groups, region boundaries, and the legend — use it as your structural reference when generating diagrams.

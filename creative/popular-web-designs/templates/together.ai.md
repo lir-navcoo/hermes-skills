@@ -1,1 +1,276 @@
-IyBEZXNpZ24gU3lzdGVtOiBUb2dldGhlciBBSQoKCj4gKipIZXJtZXMgQWdlbnQg4oCUIEltcGxlbWVudGF0aW9uIE5vdGVzKioKPgo+IFRoZSBvcmlnaW5hbCBzaXRlIHVzZXMgcHJvcHJpZXRhcnkgZm9udHMuIEZvciBzZWxmLWNvbnRhaW5lZCBIVE1MIG91dHB1dCwgdXNlIHRoZXNlIENETiBzdWJzdGl0dXRlczoKPiAtICoqUHJpbWFyeToqKiBgSW50ZXJgIHwgKipNb25vOioqIGBKZXRCcmFpbnMgTW9ub2AKPiAtICoqRm9udCBzdGFjayAoQ1NTKToqKiBgZm9udC1mYW1pbHk6ICdJbnRlcicsIHN5c3RlbS11aSwgLWFwcGxlLXN5c3RlbSwgJ1NlZ29lIFVJJywgUm9ib3RvLCBzYW5zLXNlcmlmO2AKPiAtICoqTW9ubyBzdGFjayAoQ1NTKToqKiBgZm9udC1mYW1pbHk6ICdKZXRCcmFpbnMgTW9ubycsIHVpLW1vbm9zcGFjZSwgU0ZNb25vLVJlZ3VsYXIsIE1lbmxvLCBNb25hY28sIENvbnNvbGFzLCAnTGliZXJhdGlvbiBNb25vJywgJ0NvdXJpZXIgTmV3JywgbW9ub3NwYWNlO2AKPiBgYGBodG1sCj4gPGxpbmsgaHJlZj0iaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3MyP2ZhbWlseT1JbnRlcjp3Z2h0QDMwMDs0MDA7NTAwOzYwMDs3MDAmZmFtaWx5PUpldEJyYWlucytNb25vOndnaHRANDAwOzUwMCZkaXNwbGF5PXN3YXAiIHJlbD0ic3R5bGVzaGVldCI+Cj4gYGBgCj4gVXNlIGB3cml0ZV9maWxlYCB0byBjcmVhdGUgSFRNTCwgc2VydmUgdmlhIGBnZW5lcmF0aXZlLXdpZGdldHNgIHNraWxsIChjbG91ZGZsYXJlZCB0dW5uZWwpLgo+IFZlcmlmeSB2aXN1YWwgYWNjdXJhY3kgd2l0aCBgYnJvd3Nlcl92aXNpb25gIGFmdGVyIGdlbmVyYXRpbmcuCgojIyAxLiBWaXN1YWwgVGhlbWUgJiBBdG1vc3BoZXJlCgpUb2dldGhlciBBSSdzIGludGVyZmFjZSBpcyBhIHBhc3RlbC1ncmFkaWVudCBkcmVhbXNjYXBlIGJ1aWx0IGZvciBlbnRlcnByaXNlIEFJIGluZnJhc3RydWN0dXJlIOKAlCBhIGRlc2lnbiB0aGF0IHNvbWVob3cgbWFrZXMgR1BVIGNsdXN0ZXJzIGFuZCBtb2RlbCBpbmZlcmVuY2UgZmVlbCBsaWdodCwgYWlyeSwgYW5kIG9wdGltaXN0aWMuIFRoZSBoZXJvIHNlY3Rpb24gYmxvb21zIHdpdGggc29mdCBwaW5rLWJsdWUtbGF2ZW5kZXIgZ3JhZGllbnRzIGFuZCBhYnN0cmFjdCwgcGFpbnRlcmx5IGlsbHVzdHJhdGlvbnMgdGhhdCBldm9rZSBjbG91ZHMgYW5kIGZsaWdodCwgZXN0YWJsaXNoaW5nIGEgdmlzdWFsIG1ldGFwaG9yIGZvciB0aGUgIkFJLU5hdGl2ZSBDbG91ZCIgcHJvcG9zaXRpb24uIEFnYWluc3QgdGhpcyBzb2Z0bmVzcywgdGhlIHR5cG9ncmFwaHkgY3V0cyB0aHJvdWdoIHdpdGggcHJlY2lzaW9uOiAiVGhlIEZ1dHVyZSIgZGlzcGxheSBmb250IGF0IDY0cHggd2l0aCBhZ2dyZXNzaXZlIG5lZ2F0aXZlIHRyYWNraW5nICgtMS45MnB4KSBjcmVhdGVzIGRlbnNlLCBhdXRob3JpdGF0aXZlIGhlYWRsaW5lIGJsb2Nrcy4KClRoZSBkZXNpZ24gc3RyYWRkbGVzIHR3byB3b3JsZHM6IGEgYnJpZ2h0LCB3aGl0ZS1jYW52YXMgbGlnaHQgc2lkZSB3aGVyZSBwYXN0ZWwgZ3JhZGllbnRzIGFuZCBzdGF0cyBjYXJkcyBjcmVhdGUgYW4gYXBwcm9hY2hhYmxlIHBsYXRmb3JtIG92ZXJ2aWV3LCBhbmQgYSBkYXJrIG5hdnkgdW5pdmVyc2UgKGAjMDEwMTIwYCDigJQgbm90IGdyYXktYmxhY2sgYnV0IGEgZGVlcCBtaWRuaWdodCBibHVlKSB3aGVyZSByZXNlYXJjaCBwYXBlcnMgYW5kIHRlY2huaWNhbCBjb250ZW50IGxpdmUuIFRoaXMgZHVhbC13b3JsZCBhcHByb2FjaCBlbGVnYW50bHkgc2VwYXJhdGVzIHRoZSAiYnVzaW5lc3MiIG1lc3NhZ2luZyAobGlnaHQsIGZyaWVuZGx5LCBzdGF0LWRyaXZlbikgZnJvbSB0aGUgInJlc2VhcmNoIiBtZXNzYWdpbmcgKGRhcmssIHNlcmlvdXMsIGFjYWRlbWljKS4KCldoYXQgbWFrZXMgVG9nZXRoZXIgQUkgZGlzdGluY3RpdmUgaXMgaXRzIHR5cGUgc3lzdGVtLiAiVGhlIEZ1dHVyZSIgaGFuZGxlcyBhbGwgZGlzcGxheSBhbmQgYm9keSB0ZXh0IHdpdGggYSBnZW9tZXRyaWMgbW9kZXJuaXN0IGFlc3RoZXRpYywgd2hpbGUgIlBQIE5ldWUgTW9udHJlYWwgTW9ubyIgcHJvdmlkZXMgdXBwZXJjYXNlIGxhYmVscyB3aXRoIG1ldGljdWxvdXMgbGV0dGVyLXNwYWNpbmcg4oCUIGNyZWF0aW5nIGEgInRlY2huaWNhbCBpbmZyYXN0cnVjdHVyZSBjb21wYW55IHdpdGggdGFzdGUiIHBlcnNvbmFsaXR5LiBUaGUgYnJhbmQgYWNjZW50cyDigJQgbWFnZW50YSAoYCNlZjJjYzFgKSBhbmQgb3JhbmdlIChgI2ZjNGMwMmApIOKAlCBhcHBlYXIgc3BhcmluZ2x5IGluIHRoZSBncmFkaWVudCBhbmQgaWxsdXN0cmF0aW9ucywgbmV2ZXIgcG9sbHV0aW5nIHRoZSBjbGVhbiBVSS4KCioqS2V5IENoYXJhY3RlcmlzdGljczoqKgotIFNvZnQgcGFzdGVsIGdyYWRpZW50cyAocGluaywgYmx1ZSwgbGF2ZW5kZXIpIGFnYWluc3QgcHVyZSB3aGl0ZSBjYW52YXMKLSBEZWVwIG1pZG5pZ2h0IGJsdWUgKGAjMDEwMTIwYCkgZm9yIGRhcmsvcmVzZWFyY2ggc2VjdGlvbnMg4oCUIG5vdCBncmF5LWJsYWNrCi0gQ3VzdG9tICJUaGUgRnV0dXJlIiBmb250IHdpdGggYWdncmVzc2l2ZSBuZWdhdGl2ZSBsZXR0ZXItc3BhY2luZyB0aHJvdWdob3V0Ci0gUFAgTmV1ZSBNb250cmVhbCBNb25vIGZvciB1cHBlcmNhc2UgdGVjaG5pY2FsIGxhYmVscwotIFNoYXJwIGdlb21ldHJ5ICg0cHgsIDhweCByYWRpdXMpIOKAlCBub3Qgcm91bmRlZCwgbm90IHBpbGwKLSBNYWdlbnRhICgjZWYyY2MxKSArIG9yYW5nZSAoI2ZjNGMwMikgYnJhbmQgYWNjZW50cyBpbiBpbGx1c3RyYXRpb25zIG9ubHkKLSBMYXZlbmRlciAoI2JkYmJmZikgYXMgYSBzb2Z0IHNlY29uZGFyeSBhY2NlbnQKLSBFbnRlcnByaXNlIHN0YXRzIHByb21pbmVudGx5IGRpc3BsYXllZCAoMngsIDYwJSwgOTAlKQotIERhcmstYmx1ZS10aW50ZWQgc2hhZG93cyAocmdiYSgxLCAxLCAzMiwgMC4xKSkKCiMjIDIuIENvbG9yIFBhbGV0dGUgJiBSb2xlcwoKIyMjIFByaW1hcnkKLSAqKkJyYW5kIE1hZ2VudGEqKiAoYCNlZjJjYzFgKTogVGhlIHByaW1hcnkgYnJhbmQgYWNjZW50IOKAlCBhIHZpdmlkIHBpbmstbWFnZW50YSB1c2VkIGluIGdyYWRpZW50IGlsbHVzdHJhdGlvbnMgYW5kIHRoZSBoaWdoZXN0LXNpZ25hbCBicmFuZCBtb21lbnRzLiBOZXZlciB1c2VkIGFzIFVJIGNocm9tZS4KLSAqKkJyYW5kIE9yYW5nZSoqIChgI2ZjNGMwMmApOiBUaGUgc2Vjb25kYXJ5IGJyYW5kIGFjY2VudCDigJQgYSB2aXZpZCBvcmFuZ2UgZm9yIGdyYWRpZW50IGVuZHBvaW50cyBhbmQgd2FybSBhY2NlbnQgbW9tZW50cy4KLSAqKkRhcmsgQmx1ZSoqIChgIzAxMDEyMGApOiBUaGUgcHJpbWFyeSBkYXJrIHN1cmZhY2Ug4oCUIGEgZGVlcCBtaWRuaWdodCBibHVlLWJsYWNrIHVzZWQgZm9yIHJlc2VhcmNoIHNlY3Rpb25zLCBmb290ZXIsIGFuZCBkYXJrIGNvbnRhaW5lcnMuIE5vdCBncmF5LCBub3QgYmxhY2sg4oCUIGRpc3RpbmN0bHkgYmx1ZS4KCiMjIyBTZWNvbmRhcnkgJiBBY2NlbnQKLSAqKlNvZnQgTGF2ZW5kZXIqKiAoYCNiZGJiZmZgKTogQSBnZW50bGUgYmx1ZS12aW9sZXQgdXNlZCBmb3Igc3VidGxlIGFjY2VudHMsIHNlY29uZGFyeSBpbmRpY2F0b3JzLCBhbmQgc29mdCBVSSBoaWdobGlnaHRzLgotICoqQmxhY2sgNDAqKiAoYCMwMDAwMDA2NmApOiBTZW1pLXRyYW5zcGFyZW50IGJsYWNrIGZvciBkZS1lbXBoYXNpemVkIG92ZXJsYXlzIGFuZCBzZWNvbmRhcnkgdGV4dC4KCiMjIyBTdXJmYWNlICYgQmFja2dyb3VuZAotICoqUHVyZSBXaGl0ZSoqIChgI2ZmZmZmZmApOiBUaGUgcHJpbWFyeSBsaWdodC1zZWN0aW9uIHBhZ2UgYmFja2dyb3VuZC4KLSAqKkRhcmsgQmx1ZSoqIChgIzAxMDEyMGApOiBEYXJrLXNlY3Rpb24gYmFja2dyb3VuZHMg4oCUIHJlc2VhcmNoLCBmb290ZXIsIHRlY2huaWNhbCBjb250ZW50LgotICoqR2xhc3MgTGlnaHQqKiAoYHJnYmEoMjU1LCAyNTUsIDI1NSwgMC4xMilgKTogRnJvc3RlZCBnbGFzcyBidXR0b24gYmFja2dyb3VuZHMgb24gZGFyayBzZWN0aW9ucy4KLSAqKkdsYXNzIERhcmsqKiAoYHJnYmEoMCwgMCwgMCwgMC4wOClgKTogU3VidGxlIHRpbnRlZCBzdXJmYWNlcyBvbiBsaWdodCBzZWN0aW9ucy4KCiMjIyBOZXV0cmFscyAmIFRleHQKLSAqKlB1cmUgQmxhY2sqKiAoYCMwMDAwMDBgKTogUHJpbWFyeSB0ZXh0IG9uIGxpZ2h0IHN1cmZhY2VzLgotICoqUHVyZSBXaGl0ZSoqIChgI2ZmZmZmZmApOiBQcmltYXJ5IHRleHQgb24gZGFyayBzdXJmYWNlcy4KLSAqKkJsYWNrIDglKiogKGByZ2JhKDAsIDAsIDAsIDAuMDgpYCk6IEJvcmRlcnMgYW5kIHN1YnRsZSBjb250YWlubWVudCBvbiBsaWdodCBzdXJmYWNlcy4KLSAqKldoaXRlIDEyJSoqIChgcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjEyKWApOiBCb3JkZXJzIGFuZCBjb250YWlubWVudCBvbiBkYXJrIHN1cmZhY2VzLgoKIyMjIEdyYWRpZW50IFN5c3RlbQotICoqUGFzdGVsIENsb3VkIEdyYWRpZW50Kio6IFNvZnQgcGluayDihpIgbGF2ZW5kZXIg4oaSIHNvZnQgYmx1ZSBncmFkaWVudHMgaW4gaGVybyBpbGx1c3RyYXRpb25zLiBUaGVzZSBhcHBlYXIgaW4gYWJzdHJhY3QsIHBhaW50ZXJseSBmb3JtcyDigJQgY2xvdWRzLCBmZWF0aGVycywgZmxvd2luZyBzaGFwZXMg4oCUIHRoYXQgY3JlYXRlIHZpc3VhbCB3YXJtdGggd2l0aG91dCBsaXRlcmFsIG1lYW5pbmcuCi0gKipIZXJvIEdyYWRpZW50Kio6IFRoZSBoZXJvIGJhY2tncm91bmQgdXNlcyBzb2Z0IHBhc3RlbCB0aW50cyBsYXllcmVkIG92ZXIgd2hpdGUsIGNyZWF0aW5nIGEgZGF3bi1saWtlIGF0bW9zcGhlcmljIGVmZmVjdC4KCiMjIDMuIFR5cG9ncmFwaHkgUnVsZXMKCiMjIyBGb250IEZhbWlseQotICoqUHJpbWFyeSoqOiBgVGhlIEZ1dHVyZWAsIHdpdGggZmFsbGJhY2s6IGBBcmlhbGAKLSAqKk1vbm9zcGFjZSAvIExhYmVscyoqOiBgUFAgTmV1ZSBNb250cmVhbCBNb25vYCwgd2l0aCBmYWxsYmFjazogYEdlb3JnaWFgCgojIyMgSGllcmFyY2h5Cgp8IFJvbGUgfCBGb250IHwgU2l6ZSB8IFdlaWdodCB8IExpbmUgSGVpZ2h0IHwgTGV0dGVyIFNwYWNpbmcgfCBOb3RlcyB8CnwtLS0tLS18LS0tLS0tfC0tLS0tLXwtLS0tLS0tLXwtLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS18LS0tLS0tLXwKfCBEaXNwbGF5IC8gSGVybyB8IFRoZSBGdXR1cmUgfCA2NHB4ICg0cmVtKSB8IDQwMOKAkzUwMCB8IDEuMDDigJMxLjEwICh0aWdodCkgfCAtMS45MnB4IHwgTWF4aW11bSBpbXBhY3QsIGRlbnNlIGJsb2NrcyB8CnwgU2VjdGlvbiBIZWFkaW5nIHwgVGhlIEZ1dHVyZSB8IDQwcHggKDIuNXJlbSkgfCA1MDAgfCAxLjIwICh0aWdodCkgfCAtMC44cHggfCBGZWF0dXJlIHNlY3Rpb24gdGl0bGVzIHwKfCBTdWItaGVhZGluZyB8IFRoZSBGdXR1cmUgfCAyOHB4ICgxLjc1cmVtKSB8IDUwMCB8IDEuMTUgKHRpZ2h0KSB8IC0wLjQycHggfCBDYXJkIGhlYWRpbmdzIHwKfCBGZWF0dXJlIFRpdGxlIHwgVGhlIEZ1dHVyZSB8IDIycHggKDEuMzhyZW0pIHwgNTAwIHwgMS4xNSAodGlnaHQpIHwgLTAuMjJweCB8IFNtYWxsIGZlYXR1cmUgaGVhZGluZ3MgfAp8IEJvZHkgTGFyZ2UgfCBUaGUgRnV0dXJlIHwgMThweCAoMS4xM3JlbSkgfCA0MDDigJM1MDAgfCAxLjMwICh0aWdodCkgfCAtMC4xOHB4IHwgRGVzY3JpcHRpb25zLCBzZWN0aW9ucyB8CnwgQm9keSAvIEJ1dHRvbiB8IFRoZSBGdXR1cmUgfCAxNnB4ICgxcmVtKSB8IDQwMOKAkzUwMCB8IDEuMjXigJMxLjMwIHwgLTAuMTZweCB8IFN0YW5kYXJkIGJvZHksIG5hdiwgYnV0dG9ucyB8CnwgQ2FwdGlvbiB8IFRoZSBGdXR1cmUgfCAxNHB4ICgwLjg4cmVtKSB8IDQwMOKAkzUwMCB8IDEuNDAgfCBub3JtYWwgfCBNZXRhZGF0YSwgZGVzY3JpcHRpb25zIHwKfCBNb25vIExhYmVsIHwgUFAgTmV1ZSBNb250cmVhbCBNb25vIHwgMTZweCAoMXJlbSkgfCA1MDAgfCAxLjAwICh0aWdodCkgfCAwLjA4cHggfCBVcHBlcmNhc2Ugc2VjdGlvbiBsYWJlbHMgfAp8IE1vbm8gU21hbGwgfCBQUCBOZXVlIE1vbnRyZWFsIE1vbm8gfCAxMXB4ICgwLjY5cmVtKSB8IDUwMCB8IDEuMDDigJMxLjQwIHwgMC4wNTXigJMwLjA4cHggfCBTbWFsbCB1cHBlcmNhc2UgdGFncyB8CnwgTW9ubyBNaWNybyB8IFBQIE5ldWUgTW9udHJlYWwgTW9ubyB8IDEwcHggKDAuNjNyZW0pIHwgNDAwIHwgMS40MCB8IDAuMDVweCB8IFNtYWxsZXN0IHVwcGVyY2FzZSBsYWJlbHMgfAoKIyMjIFByaW5jaXBsZXMKLSAqKk5lZ2F0aXZlIHRyYWNraW5nIGV2ZXJ5d2hlcmUqKjogRXZlcnkgc2l6ZSBvZiAiVGhlIEZ1dHVyZSIgdXNlcyBuZWdhdGl2ZSBsZXR0ZXItc3BhY2luZyAoLTAuMTZweCB0byAtMS45MnB4KSwgY3JlYXRpbmcgY29uc2lzdGVudGx5IHRpZ2h0LCBtb2Rlcm4gdGV4dC4KLSAqKk1vbm8gZm9yIHN0cnVjdHVyZSoqOiBQUCBOZXVlIE1vbnRyZWFsIE1vbm8gaW4gdXBwZXJjYXNlIHdpdGggcG9zaXRpdmUgbGV0dGVyLXNwYWNpbmcgY3JlYXRlcyB0ZWNobmljYWwgImxhYmVsIiBtb21lbnRzIHRoYXQgc3RydWN0dXJlIHRoZSBwYWdlIHdpdGhvdXQgY29tcGV0aW5nIHdpdGggZGlzcGxheSB0ZXh0LgotICoqV2VpZ2h0IDUwMCBhcyBlbXBoYXNpcyoqOiBUaGUgc3lzdGVtIHVzZXMgNDAwIChyZWd1bGFyKSBhbmQgNTAwIChtZWRpdW0pIOKAlCBubyBib2xkLiBNZWRpdW0gd2VpZ2h0IG1hcmtzIGhlYWRpbmdzIGFuZCBlbXBoYXNpcy4KLSAqKlRpZ2h0IGxpbmUtaGVpZ2h0cyB0aHJvdWdob3V0Kio6IEV2ZW4gYm9keSB0ZXh0IHVzZXMgMS4yNeKAkzEuMzAgbGluZS1oZWlnaHQg4oCUIHRpZ2h0ZXIgdGhhbiB0eXBpY2FsLCBjcmVhdGluZyBhIGRlbnNlLCBpbmZvcm1hdGlvbi1yaWNoIGZlZWwuCgojIyA0LiBDb21wb25lbnQgU3R5bGluZ3MKCiMjIyBCdXR0b25zCgoqKkdsYXNzIG9uIERhcmsqKgotIEJhY2tncm91bmQ6IGByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMTIpYCAoZnJvc3RlZCBnbGFzcykKLSBUZXh0OiBQdXJlIFdoaXRlIChgI2ZmZmZmZmApCi0gUmFkaXVzOiBzaGFycCAoNHB4KQotIE9wYWNpdHk6IDAuNQotIEhvdmVyOiB0cmFuc3BhcmVudCBkYXJrIG92ZXJsYXkKLSBVc2VkIG9uIGRhcmsgc2VjdGlvbnMg4oCUIHN1YnRsZSwgZ2xhc3MtbGlrZQoKKipEYXJrIFNvbGlkKioKLSBCYWNrZ3JvdW5kOiBEYXJrIEJsdWUgKGAjMDEwMTIwYCkgb3IgUHVyZSBCbGFjawotIFRleHQ6IFB1cmUgV2hpdGUKLSBSYWRpdXM6IHNoYXJwICg0cHgpCi0gVGhlIHByaW1hcnkgQ1RBIG9uIGxpZ2h0IHN1cmZhY2VzCgoqKk91dGxpbmVkIExpZ2h0KioKLSBCb3JkZXI6IGAxcHggc29saWQgcmdiYSgwLCAwLCAwLCAwLjA4KWAKLSBCYWNrZ3JvdW5kOiB0cmFuc3BhcmVudCBvciBzdWJ0bGUgZ2xhc3MKLSBUZXh0OiBQdXJlIEJsYWNrCi0gUmFkaXVzOiBzaGFycCAoNHB4KQotIFNlY29uZGFyeSBhY3Rpb25zIG9uIGxpZ2h0IHN1cmZhY2VzCgojIyMgQ2FyZHMgJiBDb250YWluZXJzCi0gQmFja2dyb3VuZDogUHVyZSBXaGl0ZSBvciBzdWJ0bGUgZ2xhc3MgdGludAotIEJvcmRlcjogYDFweCBzb2xpZCByZ2JhKDAsIDAsIDAsIDAuMDgpYCBvbiBsaWdodDsgYDFweCBzb2xpZCByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMTIpYCBvbiBkYXJrCi0gUmFkaXVzOiBzaGFycCAoNHB4KSBmb3IgYmFkZ2VzIGFuZCBzbWFsbCBlbGVtZW50czsgY29tZm9ydGFibGUgKDhweCkgZm9yIGxhcmdlciBjb250YWluZXJzCi0gU2hhZG93OiBkYXJrLWJsdWUtdGludGVkIChgcmdiYSgxLCAxLCAzMiwgMC4xKSAwcHggNHB4IDEwcHhgKSDigJQgd2FybSBhbmQgc3VidGxlCi0gU3RhdHMgY2FyZHMgd2l0aCBsYXJnZSBudW1iZXJzIHByb21pbmVudGx5IGRpc3BsYXllZAoKIyMjIEJhZGdlcyAvIFRhZ3MKLSBCYWNrZ3JvdW5kOiBgcmdiYSgwLCAwLCAwLCAwLjA0KWAgKGxpZ2h0KSBvciBgcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjEyKWAgKGRhcmspCi0gVGV4dDogQmxhY2sgKGxpZ2h0KSBvciBXaGl0ZSAoZGFyaykKLSBQYWRkaW5nOiAycHggOHB4IChjb21wYWN0KQotIFJhZGl1czogc2hhcnAgKDRweCkKLSBCb3JkZXI6IGAxcHggc29saWQgcmdiYSgwLCAwLCAwLCAwLjA4KWAKLSBQUCBOZXVlIE1vbnRyZWFsIE1vbm8sIHVwcGVyY2FzZSwgMTZweAoKIyMjIE5hdmlnYXRpb24KLSBDbGVhbiBob3Jpem9udGFsIG5hdiBvbiB3aGl0ZS90cmFuc3BhcmVudAotIExvZ286IFRvZ2V0aGVyIEFJIHdvcmRtYXJrCi0gTGlua3M6IFRoZSBGdXR1cmUgYXQgMTZweCwgd2VpZ2h0IDQwMAotIENUQTogRGFyayBzb2xpZCBidXR0b24KLSBIb3Zlcjogbm8gdGV4dC1kZWNvcmF0aW9uCgojIyMgSW1hZ2UgVHJlYXRtZW50Ci0gQWJzdHJhY3QgcGFzdGVsIGdyYWRpZW50IGlsbHVzdHJhdGlvbnMgKGNsb3VkL2ZlYXRoZXIgZm9ybXMpCi0gUHJvZHVjdCBVSSBzY3JlZW5zaG90cyBvbiBkYXJrL2xpZ2h0IHN1cmZhY2VzCi0gVGVhbSBwaG90b3MgaW4gZWRpdG9yaWFsIHN0eWxlCi0gUmVzZWFyY2ggcGFwZXIgY2FyZHMgd2l0aCBkYXJrIGJhY2tncm91bmRzCgojIyMgRGlzdGluY3RpdmUgQ29tcG9uZW50cwoKKipTdGF0cyBCYXIqKgotIExhcmdlIHBlcmZvcm1hbmNlIG1ldHJpY3MgKDJ4LCA2MCUsIDkwJSkKLSBCb2xkIGRpc3BsYXkgbnVtYmVycwotIFNob3J0IGRlc2NyaXB0aXZlIGNhcHRpb25zIGJlbmVhdGgKLSBDbGVhbiBob3Jpem9udGFsIGxheW91dAoKKipNb25vIFNlY3Rpb24gTGFiZWxzKioKLSBQUCBOZXVlIE1vbnRyZWFsIE1vbm8sIHVwcGVyY2FzZSwgMTFweCwgbGV0dGVyLXNwYWNpbmcgMC4wNTVweAotIFVzZWQgYXMgbmF2aWdhdGlvbmFsIHNpZ25wb3N0cyB0aHJvdWdob3V0IHRoZSBwYWdlCi0gVGVjaG5pY2FsLCBzdHJ1Y3R1cmVkIGZlZWwKCioqUmVzZWFyY2ggU2VjdGlvbioqCi0gRGFyayBCbHVlICgjMDEwMTIwKSBiYWNrZ3JvdW5kCi0gV2hpdGUgdGV4dCwgcmVzZWFyY2ggcGFwZXIgdGh1bWJuYWlscwotIENyZWF0ZXMgYSBkaXN0aW5jdCAiYWNhZGVtaWMiIHpvbmUKCioqTGFyZ2UgRm9vdGVyIExvZ28qKgotICJ0b2dldGhlciIgd29yZG1hcmsgcmVuZGVyZWQgYXQgbWFzc2l2ZSBzY2FsZSBpbiB0aGUgZGFyayBmb290ZXIKLSBDcmVhdGVzIGEgYnJhbmQtc3RhdGVtZW50IGNsb3NpbmcgbW9tZW50CgojIyA1LiBMYXlvdXQgUHJpbmNpcGxlcwoKIyMjIFNwYWNpbmcgU3lzdGVtCi0gQmFzZSB1bml0OiA4cHgKLSBTY2FsZTogMXB4LCAycHgsIDRweCwgOHB4LCAxMHB4LCAxMnB4LCAxNnB4LCAyMHB4LCAyNHB4LCAzMnB4LCA0NHB4LCA0OHB4LCA4MHB4LCAxMDBweCwgMTIwcHgKLSBCdXR0b24vYmFkZ2UgcGFkZGluZzogMnB4IDhweCAoY29tcGFjdCkKLSBDYXJkIGludGVybmFsIHBhZGRpbmc6IGFwcHJveGltYXRlbHkgMjTigJMzMnB4Ci0gU2VjdGlvbiB2ZXJ0aWNhbCBzcGFjaW5nOiBnZW5lcm91cyAoODDigJMxMjBweCkKCiMjIyBHcmlkICYgQ29udGFpbmVyCi0gTWF4IGNvbnRhaW5lciB3aWR0aDogYXBwcm94aW1hdGVseSAxMjAwcHgsIGNlbnRlcmVkCi0gSGVybzogY2VudGVyZWQgd2l0aCBwYXN0ZWwgZ3JhZGllbnQgYmFja2dyb3VuZAotIEZlYXR1cmUgc2VjdGlvbnM6IG11bHRpLWNvbHVtbiBjYXJkIGdyaWRzCi0gU3RhdHM6IGhvcml6b250YWwgcm93IG9mIG1ldHJpYyBjYXJkcwotIFJlc2VhcmNoOiBkYXJrIGZ1bGwtd2lkdGggc2VjdGlvbgoKIyMjIFdoaXRlc3BhY2UgUGhpbG9zb3BoeQotICoqT3B0aW1pc3RpYyBicmVhdGhpbmcgcm9vbSoqOiBHZW5lcm91cyBzcGFjaW5nIGJldHdlZW4gc2VjdGlvbnMgY3JlYXRlcyBhbiBvcGVuLCBpbnZpdGluZyBmZWVsIHRoYXQgbWFrZXMgZW50ZXJwcmlzZSBBSSBpbmZyYXN0cnVjdHVyZSBmZWVsIGFjY2Vzc2libGUuCi0gKipEdWFsIGF0bW9zcGhlcmUqKjogTGlnaHQgc2VjdGlvbnMgYnJlYXRoZSB3aXRoIHdoaXRlc3BhY2U7IGRhcmsgc2VjdGlvbnMgYXJlIGRlbnNlciB3aXRoIGNvbnRlbnQuCi0gKipTdGF0cyBhcyB2aXN1YWwgYW5jaG9ycyoqOiBMYXJnZSBudW1iZXJzIHdpdGggc21hbGwgY2FwdGlvbnMgY3JlYXRlIG5hdHVyYWwgZm9jYWwgcG9pbnRzLgoKIyMjIEJvcmRlciBSYWRpdXMgU2NhbGUKLSBTaGFycCAoNHB4KTogQnV0dG9ucywgYmFkZ2VzLCB0YWdzLCBzbWFsbCBpbnRlcmFjdGl2ZSBlbGVtZW50cyDigJQgdGhlIHByaW1hcnkgcmFkaXVzCi0gQ29tZm9ydGFibGUgKDhweCk6IExhcmdlciBjb250YWluZXJzLCBmZWF0dXJlIGNhcmRzCgoqVGhpcyBpcyBhIGRlbGliZXJhdGVseSByZXN0cmFpbmVkIHJhZGl1cyBzeXN0ZW0g4oCUIG5vIHBpbGxzLCBubyBnZW5lcm91cyByb3VuZGluZy4gVGhlIHNoYXJwIGdlb21ldHJ5IGNvbnRyYXN0cyB3aXRoIHRoZSBzb2Z0IHBhc3RlbCBncmFkaWVudHMuKgoKIyMgNi4gRGVwdGggJiBFbGV2YXRpb24KCnwgTGV2ZWwgfCBUcmVhdG1lbnQgfCBVc2UgfAp8LS0tLS0tLXwtLS0tLS0tLS0tLXwtLS0tLXwKfCBGbGF0IChMZXZlbCAwKSB8IE5vIHNoYWRvdywgbm8gYm9yZGVyIHwgUGFnZSBiYWNrZ3JvdW5kLCB0ZXh0IGJsb2NrcyB8CnwgQ29udGFpbmVkIChMZXZlbCAxKSB8IGAxcHggc29saWQgcmdiYSgwLDAsMCwwLjA4KWAgKGxpZ2h0KSBvciBgcmdiYSgyNTUsMjU1LDI1NSwwLjEyKWAgKGRhcmspIHwgQ2FyZHMsIGJhZGdlcywgY29udGFpbmVycyB8CnwgRWxldmF0ZWQgKExldmVsIDIpIHwgYHJnYmEoMSwgMSwgMzIsIDAuMSkgMHB4IDRweCAxMHB4YCB8IEZlYXR1cmUgY2FyZHMsIGhvdmVyIHN0YXRlcyB8CnwgRGFyayBab25lIChMZXZlbCAzKSB8IERhcmsgQmx1ZSAoIzAxMDEyMCkgZnVsbC13aWR0aCBiYWNrZ3JvdW5kIHwgUmVzZWFyY2gsIGZvb3RlciwgdGVjaG5pY2FsIHNlY3Rpb25zIHwKCioqU2hhZG93IFBoaWxvc29waHkqKjogVG9nZXRoZXIgQUkgdXNlcyBhIHNpbmdsZSwgZGlzdGluY3RpdmUgc2hhZG93IOKAlCB0aW50ZWQgd2l0aCBEYXJrIEJsdWUgKGByZ2JhKDEsIDEsIDMyLCAwLjEpYCkgcmF0aGVyIHRoYW4gZ2VuZXJpYyBibGFjay4gVGhpcyBnaXZlcyBlbGV2YXRlZCBlbGVtZW50cyBhIHN1YnRsZSBibHVlLWlzaCBjYXN0IHRoYXQgdGllcyB0aGVtIHRvIHRoZSBicmFuZCdzIG1pZG5pZ2h0LWJsdWUgZGFyayBtb2RlLiBUaGUgc2hhZG93IGlzIHNvZnQgKDEwcHggYmx1ciwgNHB4IG9mZnNldCkgYW5kIGFsd2F5cyBkb3dud2FyZCDigJQgY3JlYXRpbmcgZ2VudGxlIHBhcGVyLWhvdmVyIGVsZXZhdGlvbi4KCiMjIDcuIERvJ3MgYW5kIERvbid0cwoKIyMjIERvCi0gVXNlIHBhc3RlbCBncmFkaWVudHMgKHBpbmsvYmx1ZS9sYXZlbmRlcikgZm9yIGhlcm8gaWxsdXN0cmF0aW9ucyBhbmQgZGVjb3JhdGl2ZSBiYWNrZ3JvdW5kcwotIFVzZSBEYXJrIEJsdWUgKCMwMTAxMjApIGZvciBkYXJrIHNlY3Rpb25zIOKAlCBuZXZlciBnZW5lcmljIGdyYXktYmxhY2sKLSBBcHBseSBuZWdhdGl2ZSBsZXR0ZXItc3BhY2luZyBvbiBhbGwgIlRoZSBGdXR1cmUiIHRleHQgKHNjYWxlZCBieSBzaXplKQotIFVzZSBQUCBOZXVlIE1vbnRyZWFsIE1vbm8gaW4gdXBwZXJjYXNlIGZvciBzZWN0aW9uIGxhYmVscyBhbmQgdGVjaG5pY2FsIG1hcmtlcnMKLSBLZWVwIGJvcmRlci1yYWRpdXMgc2hhcnAgKDRweCkgZm9yIGJhZGdlcyBhbmQgaW50ZXJhY3RpdmUgZWxlbWVudHMKLSBVc2UgdGhlIGRhcmstYmx1ZS10aW50ZWQgc2hhZG93IGZvciBlbGV2YXRpb24KLSBNYWludGFpbiB0aGUgbGlnaHQvZGFyayBzZWN0aW9uIGR1YWxpdHkg4oCUIGJ1c2luZXNzIChsaWdodCkgdnMgcmVzZWFyY2ggKGRhcmspCi0gU2hvdyBlbnRlcnByaXNlIHN0YXRzIHByb21pbmVudGx5IHdpdGggbGFyZ2UgZGlzcGxheSBudW1iZXJzCgojIyMgRG9uJ3QKLSBEb24ndCB1c2UgQnJhbmQgTWFnZW50YSAoI2VmMmNjMSkgb3IgQnJhbmQgT3JhbmdlICgjZmM0YzAyKSBhcyBVSSBjb2xvcnMg4oCUIHRoZXkncmUgZm9yIGlsbHVzdHJhdGlvbnMgb25seQotIERvbid0IHVzZSBwaWxsLXNoYXBlZCBvciBnZW5lcm91c2x5IHJvdW5kZWQgY29ybmVycyDigJQgdGhlIGdlb21ldHJ5IGlzIHNoYXJwCi0gRG9uJ3QgdXNlIGdlbmVyaWMgZ3JheS1ibGFjayBmb3IgZGFyayBzZWN0aW9ucyDigJQgYWx3YXlzIERhcmsgQmx1ZSAoIzAxMDEyMCkKLSBEb24ndCB1c2UgcG9zaXRpdmUgbGV0dGVyLXNwYWNpbmcgb24gIlRoZSBGdXR1cmUiIOKAlCBpdCdzIGFsd2F5cyBuZWdhdGl2ZQotIERvbid0IHVzZSBib2xkICg3MDArKSB3ZWlnaHQg4oCUIDQwMOKAkzUwMCBpcyB0aGUgZnVsbCByYW5nZQotIERvbid0IHVzZSB3YXJtLXRvbmVkIHNoYWRvd3Mg4oCUIGFsd2F5cyBkYXJrLWJsdWUtdGludGVkCi0gRG9uJ3QgcmVkdWNlIHNlY3Rpb24gc3BhY2luZyBiZWxvdyA0OHB4IOKAlCB0aGUgb3BlbiBmZWVsaW5nIGlzIGNvcmUKLSBEb24ndCBtaXggaW4gYWRkaXRpb25hbCB0eXBlZmFjZXMg4oCUICJUaGUgRnV0dXJlIiArIFBQIE5ldWUgTW9udHJlYWwgTW9ubyBpcyB0aGUgcGFpcgoKIyMgOC4gUmVzcG9uc2l2ZSBCZWhhdmlvcgoKIyMjIEJyZWFrcG9pbnRzCnwgTmFtZSB8IFdpZHRoIHwgS2V5IENoYW5nZXMgfAp8LS0tLS0tfC0tLS0tLS18LS0tLS0tLS0tLS0tLXwKfCBNb2JpbGUgfCA8NDc5cHggfCBDb21wYWN0IGxheW91dCwgc3RhY2tlZCBldmVyeXRoaW5nIHwKfCBMYXJnZSBNb2JpbGUgfCA0NznigJM3NjdweCB8IFNpbmdsZSBjb2x1bW4sIGhhbWJ1cmdlciBuYXYgfAp8IFRhYmxldCB8IDc2OOKAkzk5MXB4IHwgMi1jb2x1bW4gZ3JpZHMgYmVnaW4gfAp8IERlc2t0b3AgfCA5OTJweCsgfCBGdWxsIG11bHRpLWNvbHVtbiBsYXlvdXQgfAoKIyMjIFRvdWNoIFRhcmdldHMKLSBCdXR0b25zIHdpdGggYWRlcXVhdGUgcGFkZGluZwotIENhcmQgc3VyZmFjZXMgYXMgdG91Y2ggdGFyZ2V0cwotIE5hdmlnYXRpb24gbGlua3MgYXQgY29tZm9ydGFibGUgMTZweAoKIyMjIENvbGxhcHNpbmcgU3RyYXRlZ3kKLSAqKk5hdmlnYXRpb24qKjogQ29sbGFwc2VzIHRvIGhhbWJ1cmdlciBvbiBtb2JpbGUKLSAqKkhlcm8gdGV4dCoqOiA2NHB4IOKGkiA0MHB4IOKGkiAyOHB4IHByb2dyZXNzaXZlIHNjYWxpbmcKLSAqKlN0YXRzIGJhcioqOiBIb3Jpem9udGFsIOKGkiBzdGFja2VkIHZlcnRpY2FsCi0gKipGZWF0dXJlIGdyaWRzKio6IE11bHRpLWNvbHVtbiDihpIgc2luZ2xlIGNvbHVtbgotICoqUmVzZWFyY2ggc2VjdGlvbioqOiBDYXJkcyBzdGFjayB2ZXJ0aWNhbGx5CgojIyMgSW1hZ2UgQmVoYXZpb3IKLSBQYXN0ZWwgaWxsdXN0cmF0aW9ucyBzY2FsZSBwcm9wb3J0aW9uYWxseQotIFByb2R1Y3Qgc2NyZWVuc2hvdHMgbWFpbnRhaW4gYXNwZWN0IHJhdGlvCi0gVGVhbSBwaG90b3Mgc2NhbGUgd2l0aGluIGNvbnRhaW5lcnMKCiMjIDkuIEFnZW50IFByb21wdCBHdWlkZQoKIyMjIFF1aWNrIENvbG9yIFJlZmVyZW5jZQotIFByaW1hcnkgVGV4dCAobGlnaHQpOiAiUHVyZSBCbGFjayAoIzAwMDAwMCkiCi0gUHJpbWFyeSBUZXh0IChkYXJrKTogIlB1cmUgV2hpdGUgKCNmZmZmZmYpIgotIFBhZ2UgQmFja2dyb3VuZDogIlB1cmUgV2hpdGUgKCNmZmZmZmYpIgotIERhcmsgU3VyZmFjZTogIkRhcmsgQmx1ZSAoIzAxMDEyMCkiCi0gQnJhbmQgQWNjZW50IDE6ICJCcmFuZCBNYWdlbnRhICgjZWYyY2MxKSIKLSBCcmFuZCBBY2NlbnQgMjogIkJyYW5kIE9yYW5nZSAoI2ZjNGMwMikiCi0gU29mdCBBY2NlbnQ6ICJTb2Z0IExhdmVuZGVyICgjYmRiYmZmKSIKLSBCb3JkZXIgKGxpZ2h0KTogInJnYmEoMCwgMCwgMCwgMC4wOCkiCgojIyMgRXhhbXBsZSBDb21wb25lbnQgUHJvbXB0cwotICJDcmVhdGUgYSBoZXJvIHNlY3Rpb24gb24gd2hpdGUgd2l0aCBzb2Z0IHBhc3RlbCBncmFkaWVudHMgKHBpbmsg4oaSIGxhdmVuZGVyIOKGkiBibHVlKSBhcyBiYWNrZ3JvdW5kLiBIZWFkbGluZSBhdCA2NHB4ICdUaGUgRnV0dXJlJyB3ZWlnaHQgNTAwLCBsaW5lLWhlaWdodCAxLjEwLCBsZXR0ZXItc3BhY2luZyAtMS45MnB4LiBQdXJlIEJsYWNrIHRleHQuIEluY2x1ZGUgYSBkYXJrIGJsdWUgQ1RBIGJ1dHRvbiAoIzAxMDEyMCwgNHB4IHJhZGl1cykuIgotICJEZXNpZ24gYSBzdGF0cyBjYXJkOiBsYXJnZSBkaXNwbGF5IG51bWJlciAoNjRweCwgd2VpZ2h0IDUwMCkgd2l0aCBhIHNtYWxsIGNhcHRpb24gYmVsb3cgKDE0cHgpLiBXaGl0ZSBiYWNrZ3JvdW5kLCA4cHggcmFkaXVzLCBkYXJrLWJsdWUtdGludGVkIHNoYWRvdyAocmdiYSgxLCAxLCAzMiwgMC4xKSAwcHggNHB4IDEwcHgpLiIKLSAiQnVpbGQgYSBzZWN0aW9uIGxhYmVsOiBQUCBOZXVlIE1vbnRyZWFsIE1vbm8sIDExcHgsIHdlaWdodCA1MDAsIHVwcGVyY2FzZSwgbGV0dGVyLXNwYWNpbmcgMC4wNTVweC4gQmxhY2sgdGV4dCBvbiBsaWdodCwgd2hpdGUgb24gZGFyay4iCi0gIkNyZWF0ZSBhIGRhcmsgcmVzZWFyY2ggc2VjdGlvbjogRGFyayBCbHVlICgjMDEwMTIwKSBiYWNrZ3JvdW5kLiBXaGl0ZSB0ZXh0LCBzZWN0aW9uIGhlYWRpbmcgYXQgNDBweCAnVGhlIEZ1dHVyZScgd2VpZ2h0IDUwMCwgbGV0dGVyLXNwYWNpbmcgLTAuOHB4LiBDYXJkcyB3aXRoIHJnYmEoMjU1LCAyNTUsIDI1NSwgMC4xMikgYm9yZGVyLiIKLSAiRGVzaWduIGEgYmFkZ2U6IDRweCByYWRpdXMsIHJnYmEoMCwgMCwgMCwgMC4wNCkgYmFja2dyb3VuZCwgMXB4IHNvbGlkIHJnYmEoMCwgMCwgMCwgMC4wOCkgYm9yZGVyLCAnVGhlIEZ1dHVyZScgMTZweCB0ZXh0LiBQYWRkaW5nOiAycHggOHB4LiIKCiMjIyBJdGVyYXRpb24gR3VpZGUKMS4gQWx3YXlzIHNwZWNpZnkgbmVnYXRpdmUgbGV0dGVyLXNwYWNpbmcgZm9yICJUaGUgRnV0dXJlIiDigJQgaXQncyBzY2FsZWQgYnkgc2l6ZQoyLiBEYXJrIHNlY3Rpb25zIHVzZSAjMDEwMTIwIChtaWRuaWdodCBibHVlKSwgbmV2ZXIgZ2VuZXJpYyBibGFjawozLiBTaGFkb3dzIGFyZSBhbHdheXMgZGFyay1ibHVlLXRpbnRlZDogcmdiYSgxLCAxLCAzMiwgMC4xKQo0LiBNb25vIGxhYmVscyBhcmUgYWx3YXlzIHVwcGVyY2FzZSB3aXRoIHBvc2l0aXZlIGxldHRlci1zcGFjaW5nCjUuIEtlZXAgcmFkaXVzIHNoYXJwICg0cHggb3IgOHB4KSDigJQgbm8gcGlsbHMsIG5vIGdlbmVyb3VzIHJvdW5kaW5nCjYuIFBhc3RlbCBncmFkaWVudHMgYXJlIGZvciBkZWNvcmF0aW9uLCBub3QgVUkgY2hyb21lCg==
+# Design System: Together AI
+
+
+> **Hermes Agent — Implementation Notes**
+>
+> The original site uses proprietary fonts. For self-contained HTML output, use these CDN substitutes:
+> - **Primary:** `Inter` | **Mono:** `JetBrains Mono`
+> - **Font stack (CSS):** `font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;`
+> - **Mono stack (CSS):** `font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;`
+> ```html
+> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+> ```
+> Use `write_file` to create HTML, serve via `generative-widgets` skill (cloudflared tunnel).
+> Verify visual accuracy with `browser_vision` after generating.
+
+## 1. Visual Theme & Atmosphere
+
+Together AI's interface is a pastel-gradient dreamscape built for enterprise AI infrastructure — a design that somehow makes GPU clusters and model inference feel light, airy, and optimistic. The hero section blooms with soft pink-blue-lavender gradients and abstract, painterly illustrations that evoke clouds and flight, establishing a visual metaphor for the "AI-Native Cloud" proposition. Against this softness, the typography cuts through with precision: "The Future" display font at 64px with aggressive negative tracking (-1.92px) creates dense, authoritative headline blocks.
+
+The design straddles two worlds: a bright, white-canvas light side where pastel gradients and stats cards create an approachable platform overview, and a dark navy universe (`#010120` — not gray-black but a deep midnight blue) where research papers and technical content live. This dual-world approach elegantly separates the "business" messaging (light, friendly, stat-driven) from the "research" messaging (dark, serious, academic).
+
+What makes Together AI distinctive is its type system. "The Future" handles all display and body text with a geometric modernist aesthetic, while "PP Neue Montreal Mono" provides uppercase labels with meticulous letter-spacing — creating a "technical infrastructure company with taste" personality. The brand accents — magenta (`#ef2cc1`) and orange (`#fc4c02`) — appear sparingly in the gradient and illustrations, never polluting the clean UI.
+
+**Key Characteristics:**
+- Soft pastel gradients (pink, blue, lavender) against pure white canvas
+- Deep midnight blue (`#010120`) for dark/research sections — not gray-black
+- Custom "The Future" font with aggressive negative letter-spacing throughout
+- PP Neue Montreal Mono for uppercase technical labels
+- Sharp geometry (4px, 8px radius) — not rounded, not pill
+- Magenta (#ef2cc1) + orange (#fc4c02) brand accents in illustrations only
+- Lavender (#bdbbff) as a soft secondary accent
+- Enterprise stats prominently displayed (2x, 60%, 90%)
+- Dark-blue-tinted shadows (rgba(1, 1, 32, 0.1))
+
+## 2. Color Palette & Roles
+
+### Primary
+- **Brand Magenta** (`#ef2cc1`): The primary brand accent — a vivid pink-magenta used in gradient illustrations and the highest-signal brand moments. Never used as UI chrome.
+- **Brand Orange** (`#fc4c02`): The secondary brand accent — a vivid orange for gradient endpoints and warm accent moments.
+- **Dark Blue** (`#010120`): The primary dark surface — a deep midnight blue-black used for research sections, footer, and dark containers. Not gray, not black — distinctly blue.
+
+### Secondary & Accent
+- **Soft Lavender** (`#bdbbff`): A gentle blue-violet used for subtle accents, secondary indicators, and soft UI highlights.
+- **Black 40** (`#00000066`): Semi-transparent black for de-emphasized overlays and secondary text.
+
+### Surface & Background
+- **Pure White** (`#ffffff`): The primary light-section page background.
+- **Dark Blue** (`#010120`): Dark-section backgrounds — research, footer, technical content.
+- **Glass Light** (`rgba(255, 255, 255, 0.12)`): Frosted glass button backgrounds on dark sections.
+- **Glass Dark** (`rgba(0, 0, 0, 0.08)`): Subtle tinted surfaces on light sections.
+
+### Neutrals & Text
+- **Pure Black** (`#000000`): Primary text on light surfaces.
+- **Pure White** (`#ffffff`): Primary text on dark surfaces.
+- **Black 8%** (`rgba(0, 0, 0, 0.08)`): Borders and subtle containment on light surfaces.
+- **White 12%** (`rgba(255, 255, 255, 0.12)`): Borders and containment on dark surfaces.
+
+### Gradient System
+- **Pastel Cloud Gradient**: Soft pink → lavender → soft blue gradients in hero illustrations. These appear in abstract, painterly forms — clouds, feathers, flowing shapes — that create visual warmth without literal meaning.
+- **Hero Gradient**: The hero background uses soft pastel tints layered over white, creating a dawn-like atmospheric effect.
+
+## 3. Typography Rules
+
+### Font Family
+- **Primary**: `The Future`, with fallback: `Arial`
+- **Monospace / Labels**: `PP Neue Montreal Mono`, with fallback: `Georgia`
+
+### Hierarchy
+
+| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
+|------|------|------|--------|-------------|----------------|-------|
+| Display / Hero | The Future | 64px (4rem) | 400–500 | 1.00–1.10 (tight) | -1.92px | Maximum impact, dense blocks |
+| Section Heading | The Future | 40px (2.5rem) | 500 | 1.20 (tight) | -0.8px | Feature section titles |
+| Sub-heading | The Future | 28px (1.75rem) | 500 | 1.15 (tight) | -0.42px | Card headings |
+| Feature Title | The Future | 22px (1.38rem) | 500 | 1.15 (tight) | -0.22px | Small feature headings |
+| Body Large | The Future | 18px (1.13rem) | 400–500 | 1.30 (tight) | -0.18px | Descriptions, sections |
+| Body / Button | The Future | 16px (1rem) | 400–500 | 1.25–1.30 | -0.16px | Standard body, nav, buttons |
+| Caption | The Future | 14px (0.88rem) | 400–500 | 1.40 | normal | Metadata, descriptions |
+| Mono Label | PP Neue Montreal Mono | 16px (1rem) | 500 | 1.00 (tight) | 0.08px | Uppercase section labels |
+| Mono Small | PP Neue Montreal Mono | 11px (0.69rem) | 500 | 1.00–1.40 | 0.055–0.08px | Small uppercase tags |
+| Mono Micro | PP Neue Montreal Mono | 10px (0.63rem) | 400 | 1.40 | 0.05px | Smallest uppercase labels |
+
+### Principles
+- **Negative tracking everywhere**: Every size of "The Future" uses negative letter-spacing (-0.16px to -1.92px), creating consistently tight, modern text.
+- **Mono for structure**: PP Neue Montreal Mono in uppercase with positive letter-spacing creates technical "label" moments that structure the page without competing with display text.
+- **Weight 500 as emphasis**: The system uses 400 (regular) and 500 (medium) — no bold. Medium weight marks headings and emphasis.
+- **Tight line-heights throughout**: Even body text uses 1.25–1.30 line-height — tighter than typical, creating a dense, information-rich feel.
+
+## 4. Component Stylings
+
+### Buttons
+
+**Glass on Dark**
+- Background: `rgba(255, 255, 255, 0.12)` (frosted glass)
+- Text: Pure White (`#ffffff`)
+- Radius: sharp (4px)
+- Opacity: 0.5
+- Hover: transparent dark overlay
+- Used on dark sections — subtle, glass-like
+
+**Dark Solid**
+- Background: Dark Blue (`#010120`) or Pure Black
+- Text: Pure White
+- Radius: sharp (4px)
+- The primary CTA on light surfaces
+
+**Outlined Light**
+- Border: `1px solid rgba(0, 0, 0, 0.08)`
+- Background: transparent or subtle glass
+- Text: Pure Black
+- Radius: sharp (4px)
+- Secondary actions on light surfaces
+
+### Cards & Containers
+- Background: Pure White or subtle glass tint
+- Border: `1px solid rgba(0, 0, 0, 0.08)` on light; `1px solid rgba(255, 255, 255, 0.12)` on dark
+- Radius: sharp (4px) for badges and small elements; comfortable (8px) for larger containers
+- Shadow: dark-blue-tinted (`rgba(1, 1, 32, 0.1) 0px 4px 10px`) — warm and subtle
+- Stats cards with large numbers prominently displayed
+
+### Badges / Tags
+- Background: `rgba(0, 0, 0, 0.04)` (light) or `rgba(255, 255, 255, 0.12)` (dark)
+- Text: Black (light) or White (dark)
+- Padding: 2px 8px (compact)
+- Radius: sharp (4px)
+- Border: `1px solid rgba(0, 0, 0, 0.08)`
+- PP Neue Montreal Mono, uppercase, 16px
+
+### Navigation
+- Clean horizontal nav on white/transparent
+- Logo: Together AI wordmark
+- Links: The Future at 16px, weight 400
+- CTA: Dark solid button
+- Hover: no text-decoration
+
+### Image Treatment
+- Abstract pastel gradient illustrations (cloud/feather forms)
+- Product UI screenshots on dark/light surfaces
+- Team photos in editorial style
+- Research paper cards with dark backgrounds
+
+### Distinctive Components
+
+**Stats Bar**
+- Large performance metrics (2x, 60%, 90%)
+- Bold display numbers
+- Short descriptive captions beneath
+- Clean horizontal layout
+
+**Mono Section Labels**
+- PP Neue Montreal Mono, uppercase, 11px, letter-spacing 0.055px
+- Used as navigational signposts throughout the page
+- Technical, structured feel
+
+**Research Section**
+- Dark Blue (#010120) background
+- White text, research paper thumbnails
+- Creates a distinct "academic" zone
+
+**Large Footer Logo**
+- "together" wordmark rendered at massive scale in the dark footer
+- Creates a brand-statement closing moment
+
+## 5. Layout Principles
+
+### Spacing System
+- Base unit: 8px
+- Scale: 1px, 2px, 4px, 8px, 10px, 12px, 16px, 20px, 24px, 32px, 44px, 48px, 80px, 100px, 120px
+- Button/badge padding: 2px 8px (compact)
+- Card internal padding: approximately 24–32px
+- Section vertical spacing: generous (80–120px)
+
+### Grid & Container
+- Max container width: approximately 1200px, centered
+- Hero: centered with pastel gradient background
+- Feature sections: multi-column card grids
+- Stats: horizontal row of metric cards
+- Research: dark full-width section
+
+### Whitespace Philosophy
+- **Optimistic breathing room**: Generous spacing between sections creates an open, inviting feel that makes enterprise AI infrastructure feel accessible.
+- **Dual atmosphere**: Light sections breathe with whitespace; dark sections are denser with content.
+- **Stats as visual anchors**: Large numbers with small captions create natural focal points.
+
+### Border Radius Scale
+- Sharp (4px): Buttons, badges, tags, small interactive elements — the primary radius
+- Comfortable (8px): Larger containers, feature cards
+
+*This is a deliberately restrained radius system — no pills, no generous rounding. The sharp geometry contrasts with the soft pastel gradients.*
+
+## 6. Depth & Elevation
+
+| Level | Treatment | Use |
+|-------|-----------|-----|
+| Flat (Level 0) | No shadow, no border | Page background, text blocks |
+| Contained (Level 1) | `1px solid rgba(0,0,0,0.08)` (light) or `rgba(255,255,255,0.12)` (dark) | Cards, badges, containers |
+| Elevated (Level 2) | `rgba(1, 1, 32, 0.1) 0px 4px 10px` | Feature cards, hover states |
+| Dark Zone (Level 3) | Dark Blue (#010120) full-width background | Research, footer, technical sections |
+
+**Shadow Philosophy**: Together AI uses a single, distinctive shadow — tinted with Dark Blue (`rgba(1, 1, 32, 0.1)`) rather than generic black. This gives elevated elements a subtle blue-ish cast that ties them to the brand's midnight-blue dark mode. The shadow is soft (10px blur, 4px offset) and always downward — creating gentle paper-hover elevation.
+
+## 7. Do's and Don'ts
+
+### Do
+- Use pastel gradients (pink/blue/lavender) for hero illustrations and decorative backgrounds
+- Use Dark Blue (#010120) for dark sections — never generic gray-black
+- Apply negative letter-spacing on all "The Future" text (scaled by size)
+- Use PP Neue Montreal Mono in uppercase for section labels and technical markers
+- Keep border-radius sharp (4px) for badges and interactive elements
+- Use the dark-blue-tinted shadow for elevation
+- Maintain the light/dark section duality — business (light) vs research (dark)
+- Show enterprise stats prominently with large display numbers
+
+### Don't
+- Don't use Brand Magenta (#ef2cc1) or Brand Orange (#fc4c02) as UI colors — they're for illustrations only
+- Don't use pill-shaped or generously rounded corners — the geometry is sharp
+- Don't use generic gray-black for dark sections — always Dark Blue (#010120)
+- Don't use positive letter-spacing on "The Future" — it's always negative
+- Don't use bold (700+) weight — 400–500 is the full range
+- Don't use warm-toned shadows — always dark-blue-tinted
+- Don't reduce section spacing below 48px — the open feeling is core
+- Don't mix in additional typefaces — "The Future" + PP Neue Montreal Mono is the pair
+
+## 8. Responsive Behavior
+
+### Breakpoints
+| Name | Width | Key Changes |
+|------|-------|-------------|
+| Mobile | <479px | Compact layout, stacked everything |
+| Large Mobile | 479–767px | Single column, hamburger nav |
+| Tablet | 768–991px | 2-column grids begin |
+| Desktop | 992px+ | Full multi-column layout |
+
+### Touch Targets
+- Buttons with adequate padding
+- Card surfaces as touch targets
+- Navigation links at comfortable 16px
+
+### Collapsing Strategy
+- **Navigation**: Collapses to hamburger on mobile
+- **Hero text**: 64px → 40px → 28px progressive scaling
+- **Stats bar**: Horizontal → stacked vertical
+- **Feature grids**: Multi-column → single column
+- **Research section**: Cards stack vertically
+
+### Image Behavior
+- Pastel illustrations scale proportionally
+- Product screenshots maintain aspect ratio
+- Team photos scale within containers
+
+## 9. Agent Prompt Guide
+
+### Quick Color Reference
+- Primary Text (light): "Pure Black (#000000)"
+- Primary Text (dark): "Pure White (#ffffff)"
+- Page Background: "Pure White (#ffffff)"
+- Dark Surface: "Dark Blue (#010120)"
+- Brand Accent 1: "Brand Magenta (#ef2cc1)"
+- Brand Accent 2: "Brand Orange (#fc4c02)"
+- Soft Accent: "Soft Lavender (#bdbbff)"
+- Border (light): "rgba(0, 0, 0, 0.08)"
+
+### Example Component Prompts
+- "Create a hero section on white with soft pastel gradients (pink → lavender → blue) as background. Headline at 64px 'The Future' weight 500, line-height 1.10, letter-spacing -1.92px. Pure Black text. Include a dark blue CTA button (#010120, 4px radius)."
+- "Design a stats card: large display number (64px, weight 500) with a small caption below (14px). White background, 8px radius, dark-blue-tinted shadow (rgba(1, 1, 32, 0.1) 0px 4px 10px)."
+- "Build a section label: PP Neue Montreal Mono, 11px, weight 500, uppercase, letter-spacing 0.055px. Black text on light, white on dark."
+- "Create a dark research section: Dark Blue (#010120) background. White text, section heading at 40px 'The Future' weight 500, letter-spacing -0.8px. Cards with rgba(255, 255, 255, 0.12) border."
+- "Design a badge: 4px radius, rgba(0, 0, 0, 0.04) background, 1px solid rgba(0, 0, 0, 0.08) border, 'The Future' 16px text. Padding: 2px 8px."
+
+### Iteration Guide
+1. Always specify negative letter-spacing for "The Future" — it's scaled by size
+2. Dark sections use #010120 (midnight blue), never generic black
+3. Shadows are always dark-blue-tinted: rgba(1, 1, 32, 0.1)
+4. Mono labels are always uppercase with positive letter-spacing
+5. Keep radius sharp (4px or 8px) — no pills, no generous rounding
+6. Pastel gradients are for decoration, not UI chrome

@@ -1,1 +1,120 @@
-LS0tCm5hbWU6IGhlcm1lcy1mZWlzaHUtaW50ZWdyYXRpb24KZGVzY3JpcHRpb246IOmjnuS5pu+8iEZlaXNodS9MYXJr77yJ5py65Zmo5Lq65o6l5YWlSGVybWVzIEFnZW5055qE5a6M5pW05rWB56iL77yM5YyF5ZCr546v5aKD6YWN572u44CBbGF1bmNoZOazqOaEj+S6i+mhueOAgeadg+mZkOiuvue9ruWSjOW4uOingemXrumimOaOkuafpQp2ZXJzaW9uOiAxLjAuMAp0YWdzOiBb6aOe5LmmLCBGZWlzaHUsIEhlcm1lcywg6ZuG5oiQLCDmnLrlmajkurpdCi0tLQoKIyBIZXJtZXMgKyDpo57kuabmjqXlhaXmjIfljZcKCiMjIOaguOW/g+imgeeCuQoK6aOe5Lmm5bey5ZyoSGVybWVz5Lit5Y6f55Sf6ZuG5oiQ77yIYGdhdGV3YXkvcGxhdGZvcm1zL2ZlaXNodS5weWDvvInvvIzkvYZtYWNPU+S4iumcgOazqOaEj2xhdW5jaGTmnI3liqHnmoTnjq/looPlj5jph4/pl67popjjgIIKCi0tLQoKIyMg5LiA44CB5YmN572u5YeG5aSHCgojIyMgMS4g5Yib5bu66aOe5Lmm5bqU55SoCi0g5ZyoIGh0dHBzOi8vb3Blbi5mZWlzaHUuY24vYXBwIOWIm+W7uuW6lOeUqAotIOiOt+WPliBgQXBwIElEYO+8iOagvOW8j++8mmBjbGlfeHh4YO+8ieWSjCBgQXBwIFNlY3JldGAKLSDlvIDlkK/jgIzmnLrlmajkurrjgI3og73lipsKLSDphY3nva7mnYPpmZDvvJrpnIDopoEgYGltOm1lc3NhZ2Vg44CBYGltOm1lc3NhZ2U6cmVjZWl2ZWAg562JCgojIyMgMi4g5a6J6KOF5L6d6LWWCmBgYGJhc2gKcGlwMyBpbnN0YWxsIGxhcmstb2FwaQpgYGAKCi0tLQoKIyMg5LqM44CB546v5aKD5Y+Y6YeP6YWN572u77yI5YWz6ZSu77yB77yJCgoqKm1hY09T5LiKbGF1bmNoZOacjeWKoeS4jee7p+aJv3NoZWxs546v5aKD5Y+Y6YePKirvvIzlm6DmraTkuI3og73lj6rlhplgLmVudmDvvIzlv4Xpobvnm7TmjqXlhpnlnKhwbGlzdOaWh+S7tumHjOOAggoKIyMjIOatpemqpAoKMS4g57yW6L6RIGxhdW5jaGQgcGxpc3TvvJoKYGBgYmFzaAp2aW0gfi9MaWJyYXJ5L0xhdW5jaEFnZW50cy9haS5oZXJtZXMuZ2F0ZXdheS5wbGlzdApgYGAKCjIuIOWcqCBgRW52aXJvbm1lbnRWYXJpYWJsZXNgIGRpY3Qg5Lit5re75Yqg77yaCmBgYHhtbAo8a2V5PkZFSVNIVV9BUFBfSUQ8L2tleT4KPHN0cmluZz5jbGlf5L2g55qEQXBwSUQ8L3N0cmluZz4KPGtleT5GRUlTSFVfQVBQX1NFQ1JFVDwva2V5Pgo8c3RyaW5nPuS9oOeahEFwcFNlY3JldDwvc3RyaW5nPgo8a2V5PkZFSVNIVV9DT05ORUNUSU9OX01PREU8L2tleT4KPHN0cmluZz53ZWJzb2NrZXQ8L3N0cmluZz4KPGtleT5GRUlTSFVfSE9NRV9DSEFOTkVMPC9rZXk+CjxzdHJpbmc+5py65Zmo5Lq655qEb3Blbl9pZDwvc3RyaW5nPgo8a2V5PkZFSVNIVV9IT01FX0NIQU5ORUxfTkFNRTwva2V5Pgo8c3RyaW5nPuWkmuWunTwvc3RyaW5nPgo8a2V5PkZFSVNIVV9BTExPV0VEX1VTRVJTPC9rZXk+CjxzdHJpbmc+PC9zdHJpbmc+CjxrZXk+R0FURVdBWV9BTExPV19BTExfVVNFUlM8L2tleT4KPHN0cmluZz50cnVlPC9zdHJpbmc+CmBgYAoKMy4g6YeN5paw5Yqg6L295pyN5Yqh77yaCmBgYGJhc2gKbGF1bmNoY3RsIHVubG9hZCB+L0xpYnJhcnkvTGF1bmNoQWdlbnRzL2FpLmhlcm1lcy5nYXRld2F5LnBsaXN0CmxhdW5jaGN0bCBsb2FkIH4vTGlicmFyeS9MYXVuY2hBZ2VudHMvYWkuaGVybWVzLmdhdGV3YXkucGxpc3QKYGBgCgotLS0KCiMjIOS4ieOAgemqjOivgei/nuaOpeeKtuaAgQoKYGBgYmFzaAojIOafpeeci2dhdGV3YXnml6Xlv5cKdGFpbCAtZiB+Ly5oZXJtZXMvbG9ncy9nYXRld2F5LmxvZwoKIyDmo4Dmn6Xpo57kuabov57mjqXvvIjlupTor6XmnIkgW0xhcmtdIGNvbm5lY3RlZCB0byB3c3M6Ly9tc2ctZnJvbnRpZXIuZmVpc2h1LmNuIO+8iQpncmVwICJMYXJrLipjb25uZWN0ZWQiIH4vLmhlcm1lcy9sb2dzL2dhdGV3YXkubG9nCgojIOajgOafpeacuuWZqOS6uueKtuaAgQpjdXJsIC1zIC1YIEdFVCAnaHR0cHM6Ly9vcGVuLmZlaXNodS5jbi9vcGVuLWFwaXMvYm90L3YzL2luZm8nIFwKICAtSCAnQXV0aG9yaXphdGlvbjogQmVhcmVyIFRPS0VOJwojIGFjdGl2YXRlX3N0YXR1czogMD3mnKrmv4DmtLssIDE95pyq55+lLCAyPeiiq+emgeeUqCwgMz3mraPluLgKYGBgCgotLS0KCiMjIOWbm+OAgeW4uOingemXrumimAoKIyMjIDEuICJObyBtZXNzYWdpbmcgcGxhdGZvcm1zIGVuYWJsZWQiCi0g5Y6f5Zug77yabGF1bmNoZOacjeWKoeayoeacieivu+WPluWIsEZFSVNIVeeOr+Wig+WPmOmHjwotIOino+WGs++8mueOr+Wig+WPmOmHj+W/hemhu+WGmeWcqHBsaXN055qERW52aXJvbm1lbnRWYXJpYWJsZXPph4zvvIzkuI3og73lj6rpnaAuZW52CgojIyMgMi4gImxhcmstb2FwaSBub3QgaW5zdGFsbGVkIgotIOWOn+WboO+8mmxhcmstb2FwaeWMheacquWuieijhe+8jOaIluWuieijheWcqOezu+e7n1B5dGhvbuiAjOmdnnZlbnYKLSDop6PlhrPvvJpgcGlwMyBpbnN0YWxsIGxhcmstb2FwaWAKCiMjIyAzLiBhY3RpdmF0ZV9zdGF0dXM9MCDmiJYgMgotIDAgPSDmnLrlmajkurrmnKrmv4DmtLvvvIjpnIDopoHlnKjpo57kuablvIDmlL7lubPlj7DlkK/nlKjvvIkKLSAyID0g5py65Zmo5Lq66KKr56aB55So77yI6ZyA6KaB5Zyo5bqU55So566h55CG5ZCO5Y+w5ZCv55So77yJCi0g6Kej5Yaz77ya5ZyoIGh0dHBzOi8vb3Blbi5mZWlzaHUuY24vYXBwIOWvueW6lOW6lOeUqOS4i+W8gOWQr+acuuWZqOS6uuiDveWKmwoKIyMjIDQuICJVbmFibGUgdG8gaHlkcmF0ZSBib3QgaWRlbnRpdHkiCi0g6K2m5ZGK57qn5Yir77yM5LiN5b2x5ZON5Z+65pys5Yqf6IO9Ci0g5Y6f5Zug77ya57y65bCRIGBhZG1pbjphcHAuaW5mbzpyZWFkb25seWAg5oiWIGBhcHBsaWNhdGlvbjphcHBsaWNhdGlvbjpzZWxmX21hbmFnZWAg5p2D6ZmQCi0g6Kej5Yaz77ya5Zyo6aOe5Lmm5byA5pS+5bmz5Y+w57uZ5bqU55So5re75Yqg6L+Z5Lqb5p2D6ZmQCgojIyMgNS4g5py65Zmo5Lq65LiN5Zue5aSN5raI5oGvCi0g5qOA5p+lIGBHQVRFV0FZX0FMTE9XX0FMTF9VU0VSUz10cnVlYCDmmK/lkKborr7nva4KLSDmo4Dmn6Xpo57kuaZCb3TmmK/lkKblt7Lmt7vliqDliLDkvJror50KLSDmn6XnnIvml6Xlv5fnoa7orqRXU+i/nuaOpeaYr+WQpuW7uueriwoKLS0tCgojIyDkupTjgIHlj5HpgIHmtYvor5Xmtojmga8KCuWcqOmjnuS5puWuouaIt+err+aJvuWIsOacuuWZqOS6uu+8jOebtOaOpeWPkea2iOaBr+a1i+ivleOAguWTjeW6lOivtOaYjuaOpeWFpeaIkOWKn+OAggoKLS0tCgojIyDlha3jgIFDcm9u5Lu75Yqh5Y+R6YCB5Yiw6aOe5LmmCgrliJvlu7pjcm9u5Lu75Yqh5pe26K6+572uIGBkZWxpdmVyPSJmZWlzaHU6b3Blbl9pZCJgIOWNs+WPr+aOqOmAgeWIsOmjnuS5puOAggo=
+---
+name: hermes-feishu-integration
+description: 飞书（Feishu/Lark）机器人接入Hermes Agent的完整流程，包含环境配置、launchd注意事项、权限设置和常见问题排查
+version: 1.0.0
+tags: [飞书, Feishu, Hermes, 集成, 机器人]
+---
+
+# Hermes + 飞书接入指南
+
+## 核心要点
+
+飞书已在Hermes中原生集成（`gateway/platforms/feishu.py`），但macOS上需注意launchd服务的环境变量问题。
+
+---
+
+## 一、前置准备
+
+### 1. 创建飞书应用
+- 在 https://open.feishu.cn/app 创建应用
+- 获取 `App ID`（格式：`cli_xxx`）和 `App Secret`
+- 开启「机器人」能力
+- 配置权限：需要 `im:message`、`im:message:receive` 等
+
+### 2. 安装依赖
+```bash
+pip3 install lark-oapi
+```
+
+---
+
+## 二、环境变量配置（关键！）
+
+**macOS上launchd服务不继承shell环境变量**，因此不能只写`.env`，必须直接写在plist文件里。
+
+### 步骤
+
+1. 编辑 launchd plist：
+```bash
+vim ~/Library/LaunchAgents/ai.hermes.gateway.plist
+```
+
+2. 在 `EnvironmentVariables` dict 中添加：
+```xml
+<key>FEISHU_APP_ID</key>
+<string>cli_你的AppID</string>
+<key>FEISHU_APP_SECRET</key>
+<string>你的AppSecret</string>
+<key>FEISHU_CONNECTION_MODE</key>
+<string>websocket</string>
+<key>FEISHU_HOME_CHANNEL</key>
+<string>机器人的open_id</string>
+<key>FEISHU_HOME_CHANNEL_NAME</key>
+<string>多宝</string>
+<key>FEISHU_ALLOWED_USERS</key>
+<string></string>
+<key>GATEWAY_ALLOW_ALL_USERS</key>
+<string>true</string>
+```
+
+3. 重新加载服务：
+```bash
+launchctl unload ~/Library/LaunchAgents/ai.hermes.gateway.plist
+launchctl load ~/Library/LaunchAgents/ai.hermes.gateway.plist
+```
+
+---
+
+## 三、验证连接状态
+
+```bash
+# 查看gateway日志
+tail -f ~/.hermes/logs/gateway.log
+
+# 检查飞书连接（应该有 [Lark] connected to wss://msg-frontier.feishu.cn ）
+grep "Lark.*connected" ~/.hermes/logs/gateway.log
+
+# 检查机器人状态
+curl -s -X GET 'https://open.feishu.cn/open-apis/bot/v3/info' \
+  -H 'Authorization: Bearer TOKEN'
+# activate_status: 0=未激活, 1=未知, 2=被禁用, 3=正常
+```
+
+---
+
+## 四、常见问题
+
+### 1. "No messaging platforms enabled"
+- 原因：launchd服务没有读取到FEISHU环境变量
+- 解决：环境变量必须写在plist的EnvironmentVariables里，不能只靠.env
+
+### 2. "lark-oapi not installed"
+- 原因：lark-oapi包未安装，或安装在系统Python而非venv
+- 解决：`pip3 install lark-oapi`
+
+### 3. activate_status=0 或 2
+- 0 = 机器人未激活（需要在飞书开放平台启用）
+- 2 = 机器人被禁用（需要在应用管理后台启用）
+- 解决：在 https://open.feishu.cn/app 对应应用下开启机器人能力
+
+### 4. "Unable to hydrate bot identity"
+- 警告级别，不影响基本功能
+- 原因：缺少 `admin:app.info:readonly` 或 `application:application:self_manage` 权限
+- 解决：在飞书开放平台给应用添加这些权限
+
+### 5. 机器人不回复消息
+- 检查 `GATEWAY_ALLOW_ALL_USERS=true` 是否设置
+- 检查飞书Bot是否已添加到会话
+- 查看日志确认WS连接是否建立
+
+---
+
+## 五、发送测试消息
+
+在飞书客户端找到机器人，直接发消息测试。响应说明接入成功。
+
+---
+
+## 六、Cron任务发送到飞书
+
+创建cron任务时设置 `deliver="feishu:open_id"` 即可推送到飞书。

@@ -1,1 +1,232 @@
-LS0tCm5hbWU6IHBvd2VycG9pbnQKZGVzY3JpcHRpb246ICJVc2UgdGhpcyBza2lsbCBhbnkgdGltZSBhIC5wcHR4IGZpbGUgaXMgaW52b2x2ZWQgaW4gYW55IHdheSDigJQgYXMgaW5wdXQsIG91dHB1dCwgb3IgYm90aC4gVGhpcyBpbmNsdWRlczogY3JlYXRpbmcgc2xpZGUgZGVja3MsIHBpdGNoIGRlY2tzLCBvciBwcmVzZW50YXRpb25zOyByZWFkaW5nLCBwYXJzaW5nLCBvciBleHRyYWN0aW5nIHRleHQgZnJvbSBhbnkgLnBwdHggZmlsZSAoZXZlbiBpZiB0aGUgZXh0cmFjdGVkIGNvbnRlbnQgd2lsbCBiZSB1c2VkIGVsc2V3aGVyZSwgbGlrZSBpbiBhbiBlbWFpbCBvciBzdW1tYXJ5KTsgZWRpdGluZywgbW9kaWZ5aW5nLCBvciB1cGRhdGluZyBleGlzdGluZyBwcmVzZW50YXRpb25zOyBjb21iaW5pbmcgb3Igc3BsaXR0aW5nIHNsaWRlIGZpbGVzOyB3b3JraW5nIHdpdGggdGVtcGxhdGVzLCBsYXlvdXRzLCBzcGVha2VyIG5vdGVzLCBvciBjb21tZW50cy4gVHJpZ2dlciB3aGVuZXZlciB0aGUgdXNlciBtZW50aW9ucyBcImRlY2ssXCIgXCJzbGlkZXMsXCIgXCJwcmVzZW50YXRpb24sXCIgb3IgcmVmZXJlbmNlcyBhIC5wcHR4IGZpbGVuYW1lLCByZWdhcmRsZXNzIG9mIHdoYXQgdGhleSBwbGFuIHRvIGRvIHdpdGggdGhlIGNvbnRlbnQgYWZ0ZXJ3YXJkLiBJZiBhIC5wcHR4IGZpbGUgbmVlZHMgdG8gYmUgb3BlbmVkLCBjcmVhdGVkLCBvciB0b3VjaGVkLCB1c2UgdGhpcyBza2lsbC4iCmxpY2Vuc2U6IFByb3ByaWV0YXJ5LiBMSUNFTlNFLnR4dCBoYXMgY29tcGxldGUgdGVybXMKLS0tCgojIFBvd2VycG9pbnQgU2tpbGwKCiMjIFF1aWNrIFJlZmVyZW5jZQoKfCBUYXNrIHwgR3VpZGUgfAp8LS0tLS0tfC0tLS0tLS18CnwgUmVhZC9hbmFseXplIGNvbnRlbnQgfCBgcHl0aG9uIC1tIG1hcmtpdGRvd24gcHJlc2VudGF0aW9uLnBwdHhgIHwKfCBFZGl0IG9yIGNyZWF0ZSBmcm9tIHRlbXBsYXRlIHwgUmVhZCBbZWRpdGluZy5tZF0oZWRpdGluZy5tZCkgfAp8IENyZWF0ZSBmcm9tIHNjcmF0Y2ggfCBSZWFkIFtwcHR4Z2VuanMubWRdKHBwdHhnZW5qcy5tZCkgfAoKLS0tCgojIyBSZWFkaW5nIENvbnRlbnQKCmBgYGJhc2gKIyBUZXh0IGV4dHJhY3Rpb24KcHl0aG9uIC1tIG1hcmtpdGRvd24gcHJlc2VudGF0aW9uLnBwdHgKCiMgVmlzdWFsIG92ZXJ2aWV3CnB5dGhvbiBzY3JpcHRzL3RodW1ibmFpbC5weSBwcmVzZW50YXRpb24ucHB0eAoKIyBSYXcgWE1MCnB5dGhvbiBzY3JpcHRzL29mZmljZS91bnBhY2sucHkgcHJlc2VudGF0aW9uLnBwdHggdW5wYWNrZWQvCmBgYAoKLS0tCgojIyBFZGl0aW5nIFdvcmtmbG93CgoqKlJlYWQgW2VkaXRpbmcubWRdKGVkaXRpbmcubWQpIGZvciBmdWxsIGRldGFpbHMuKioKCjEuIEFuYWx5emUgdGVtcGxhdGUgd2l0aCBgdGh1bWJuYWlsLnB5YAoyLiBVbnBhY2sg4oaSIG1hbmlwdWxhdGUgc2xpZGVzIOKGkiBlZGl0IGNvbnRlbnQg4oaSIGNsZWFuIOKGkiBwYWNrCgotLS0KCiMjIENyZWF0aW5nIGZyb20gU2NyYXRjaAoKKipSZWFkIFtwcHR4Z2VuanMubWRdKHBwdHhnZW5qcy5tZCkgZm9yIGZ1bGwgZGV0YWlscy4qKgoKVXNlIHdoZW4gbm8gdGVtcGxhdGUgb3IgcmVmZXJlbmNlIHByZXNlbnRhdGlvbiBpcyBhdmFpbGFibGUuCgotLS0KCiMjIERlc2lnbiBJZGVhcwoKKipEb24ndCBjcmVhdGUgYm9yaW5nIHNsaWRlcy4qKiBQbGFpbiBidWxsZXRzIG9uIGEgd2hpdGUgYmFja2dyb3VuZCB3b24ndCBpbXByZXNzIGFueW9uZS4gQ29uc2lkZXIgaWRlYXMgZnJvbSB0aGlzIGxpc3QgZm9yIGVhY2ggc2xpZGUuCgojIyMgQmVmb3JlIFN0YXJ0aW5nCgotICoqUGljayBhIGJvbGQsIGNvbnRlbnQtaW5mb3JtZWQgY29sb3IgcGFsZXR0ZSoqOiBUaGUgcGFsZXR0ZSBzaG91bGQgZmVlbCBkZXNpZ25lZCBmb3IgVEhJUyB0b3BpYy4gSWYgc3dhcHBpbmcgeW91ciBjb2xvcnMgaW50byBhIGNvbXBsZXRlbHkgZGlmZmVyZW50IHByZXNlbnRhdGlvbiB3b3VsZCBzdGlsbCAid29yaywiIHlvdSBoYXZlbid0IG1hZGUgc3BlY2lmaWMgZW5vdWdoIGNob2ljZXMuCi0gKipEb21pbmFuY2Ugb3ZlciBlcXVhbGl0eSoqOiBPbmUgY29sb3Igc2hvdWxkIGRvbWluYXRlICg2MC03MCUgdmlzdWFsIHdlaWdodCksIHdpdGggMS0yIHN1cHBvcnRpbmcgdG9uZXMgYW5kIG9uZSBzaGFycCBhY2NlbnQuIE5ldmVyIGdpdmUgYWxsIGNvbG9ycyBlcXVhbCB3ZWlnaHQuCi0gKipEYXJrL2xpZ2h0IGNvbnRyYXN0Kio6IERhcmsgYmFja2dyb3VuZHMgZm9yIHRpdGxlICsgY29uY2x1c2lvbiBzbGlkZXMsIGxpZ2h0IGZvciBjb250ZW50ICgic2FuZHdpY2giIHN0cnVjdHVyZSkuIE9yIGNvbW1pdCB0byBkYXJrIHRocm91Z2hvdXQgZm9yIGEgcHJlbWl1bSBmZWVsLgotICoqQ29tbWl0IHRvIGEgdmlzdWFsIG1vdGlmKio6IFBpY2sgT05FIGRpc3RpbmN0aXZlIGVsZW1lbnQgYW5kIHJlcGVhdCBpdCDigJQgcm91bmRlZCBpbWFnZSBmcmFtZXMsIGljb25zIGluIGNvbG9yZWQgY2lyY2xlcywgdGhpY2sgc2luZ2xlLXNpZGUgYm9yZGVycy4gQ2FycnkgaXQgYWNyb3NzIGV2ZXJ5IHNsaWRlLgoKIyMjIENvbG9yIFBhbGV0dGVzCgpDaG9vc2UgY29sb3JzIHRoYXQgbWF0Y2ggeW91ciB0b3BpYyDigJQgZG9uJ3QgZGVmYXVsdCB0byBnZW5lcmljIGJsdWUuIFVzZSB0aGVzZSBwYWxldHRlcyBhcyBpbnNwaXJhdGlvbjoKCnwgVGhlbWUgfCBQcmltYXJ5IHwgU2Vjb25kYXJ5IHwgQWNjZW50IHwKfC0tLS0tLS18LS0tLS0tLS0tfC0tLS0tLS0tLS0tfC0tLS0tLS0tfAp8ICoqTWlkbmlnaHQgRXhlY3V0aXZlKiogfCBgMUUyNzYxYCAobmF2eSkgfCBgQ0FEQ0ZDYCAoaWNlIGJsdWUpIHwgYEZGRkZGRmAgKHdoaXRlKSB8CnwgKipGb3Jlc3QgJiBNb3NzKiogfCBgMkM1RjJEYCAoZm9yZXN0KSB8IGA5N0JDNjJgIChtb3NzKSB8IGBGNUY1RjVgIChjcmVhbSkgfAp8ICoqQ29yYWwgRW5lcmd5KiogfCBgRjk2MTY3YCAoY29yYWwpIHwgYEY5RTc5NWAgKGdvbGQpIHwgYDJGM0M3RWAgKG5hdnkpIHwKfCAqKldhcm0gVGVycmFjb3R0YSoqIHwgYEI4NTA0MmAgKHRlcnJhY290dGEpIHwgYEU3RThEMWAgKHNhbmQpIHwgYEE3QkVBRWAgKHNhZ2UpIHwKfCAqKk9jZWFuIEdyYWRpZW50KiogfCBgMDY1QTgyYCAoZGVlcCBibHVlKSB8IGAxQzcyOTNgICh0ZWFsKSB8IGAyMTI5NUNgIChtaWRuaWdodCkgfAp8ICoqQ2hhcmNvYWwgTWluaW1hbCoqIHwgYDM2NDU0RmAgKGNoYXJjb2FsKSB8IGBGMkYyRjJgIChvZmYtd2hpdGUpIHwgYDIxMjEyMWAgKGJsYWNrKSB8CnwgKipUZWFsIFRydXN0KiogfCBgMDI4MDkwYCAodGVhbCkgfCBgMDBBODk2YCAoc2VhZm9hbSkgfCBgMDJDMzlBYCAobWludCkgfAp8ICoqQmVycnkgJiBDcmVhbSoqIHwgYDZEMkU0NmAgKGJlcnJ5KSB8IGBBMjY3NjlgIChkdXN0eSByb3NlKSB8IGBFQ0UyRDBgIChjcmVhbSkgfAp8ICoqU2FnZSBDYWxtKiogfCBgODRCNTlGYCAoc2FnZSkgfCBgNjlBMjk3YCAoZXVjYWx5cHR1cykgfCBgNTA4MDhFYCAoc2xhdGUpIHwKfCAqKkNoZXJyeSBCb2xkKiogfCBgOTkwMDExYCAoY2hlcnJ5KSB8IGBGQ0Y2RjVgIChvZmYtd2hpdGUpIHwgYDJGM0M3RWAgKG5hdnkpIHwKCiMjIyBGb3IgRWFjaCBTbGlkZQoKKipFdmVyeSBzbGlkZSBuZWVkcyBhIHZpc3VhbCBlbGVtZW50Kiog4oCUIGltYWdlLCBjaGFydCwgaWNvbiwgb3Igc2hhcGUuIFRleHQtb25seSBzbGlkZXMgYXJlIGZvcmdldHRhYmxlLgoKKipMYXlvdXQgb3B0aW9uczoqKgotIFR3by1jb2x1bW4gKHRleHQgbGVmdCwgaWxsdXN0cmF0aW9uIG9uIHJpZ2h0KQotIEljb24gKyB0ZXh0IHJvd3MgKGljb24gaW4gY29sb3JlZCBjaXJjbGUsIGJvbGQgaGVhZGVyLCBkZXNjcmlwdGlvbiBiZWxvdykKLSAyeDIgb3IgMngzIGdyaWQgKGltYWdlIG9uIG9uZSBzaWRlLCBncmlkIG9mIGNvbnRlbnQgYmxvY2tzIG9uIG90aGVyKQotIEhhbGYtYmxlZWQgaW1hZ2UgKGZ1bGwgbGVmdCBvciByaWdodCBzaWRlKSB3aXRoIGNvbnRlbnQgb3ZlcmxheQoKKipEYXRhIGRpc3BsYXk6KioKLSBMYXJnZSBzdGF0IGNhbGxvdXRzIChiaWcgbnVtYmVycyA2MC03MnB0IHdpdGggc21hbGwgbGFiZWxzIGJlbG93KQotIENvbXBhcmlzb24gY29sdW1ucyAoYmVmb3JlL2FmdGVyLCBwcm9zL2NvbnMsIHNpZGUtYnktc2lkZSBvcHRpb25zKQotIFRpbWVsaW5lIG9yIHByb2Nlc3MgZmxvdyAobnVtYmVyZWQgc3RlcHMsIGFycm93cykKCioqVmlzdWFsIHBvbGlzaDoqKgotIEljb25zIGluIHNtYWxsIGNvbG9yZWQgY2lyY2xlcyBuZXh0IHRvIHNlY3Rpb24gaGVhZGVycwotIEl0YWxpYyBhY2NlbnQgdGV4dCBmb3Iga2V5IHN0YXRzIG9yIHRhZ2xpbmVzCgojIyMgVHlwb2dyYXBoeQoKKipDaG9vc2UgYW4gaW50ZXJlc3RpbmcgZm9udCBwYWlyaW5nKiog4oCUIGRvbid0IGRlZmF1bHQgdG8gQXJpYWwuIFBpY2sgYSBoZWFkZXIgZm9udCB3aXRoIHBlcnNvbmFsaXR5IGFuZCBwYWlyIGl0IHdpdGggYSBjbGVhbiBib2R5IGZvbnQuCgp8IEhlYWRlciBGb250IHwgQm9keSBGb250IHwKfC0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS18CnwgR2VvcmdpYSB8IENhbGlicmkgfAp8IEFyaWFsIEJsYWNrIHwgQXJpYWwgfAp8IENhbGlicmkgfCBDYWxpYnJpIExpZ2h0IHwKfCBDYW1icmlhIHwgQ2FsaWJyaSB8CnwgVHJlYnVjaGV0IE1TIHwgQ2FsaWJyaSB8CnwgSW1wYWN0IHwgQXJpYWwgfAp8IFBhbGF0aW5vIHwgR2FyYW1vbmQgfAp8IENvbnNvbGFzIHwgQ2FsaWJyaSB8Cgp8IEVsZW1lbnQgfCBTaXplIHwKfC0tLS0tLS0tLXwtLS0tLS18CnwgU2xpZGUgdGl0bGUgfCAzNi00NHB0IGJvbGQgfAp8IFNlY3Rpb24gaGVhZGVyIHwgMjAtMjRwdCBib2xkIHwKfCBCb2R5IHRleHQgfCAxNC0xNnB0IHwKfCBDYXB0aW9ucyB8IDEwLTEycHQgbXV0ZWQgfAoKIyMjIFNwYWNpbmcKCi0gMC41IiBtaW5pbXVtIG1hcmdpbnMKLSAwLjMtMC41IiBiZXR3ZWVuIGNvbnRlbnQgYmxvY2tzCi0gTGVhdmUgYnJlYXRoaW5nIHJvb23igJRkb24ndCBmaWxsIGV2ZXJ5IGluY2gKCiMjIyBBdm9pZCAoQ29tbW9uIE1pc3Rha2VzKQoKLSAqKkRvbid0IHJlcGVhdCB0aGUgc2FtZSBsYXlvdXQqKiDigJQgdmFyeSBjb2x1bW5zLCBjYXJkcywgYW5kIGNhbGxvdXRzIGFjcm9zcyBzbGlkZXMKLSAqKkRvbid0IGNlbnRlciBib2R5IHRleHQqKiDigJQgbGVmdC1hbGlnbiBwYXJhZ3JhcGhzIGFuZCBsaXN0czsgY2VudGVyIG9ubHkgdGl0bGVzCi0gKipEb24ndCBza2ltcCBvbiBzaXplIGNvbnRyYXN0Kiog4oCUIHRpdGxlcyBuZWVkIDM2cHQrIHRvIHN0YW5kIG91dCBmcm9tIDE0LTE2cHQgYm9keQotICoqRG9uJ3QgZGVmYXVsdCB0byBibHVlKiog4oCUIHBpY2sgY29sb3JzIHRoYXQgcmVmbGVjdCB0aGUgc3BlY2lmaWMgdG9waWMKLSAqKkRvbid0IG1peCBzcGFjaW5nIHJhbmRvbWx5Kiog4oCUIGNob29zZSAwLjMiIG9yIDAuNSIgZ2FwcyBhbmQgdXNlIGNvbnNpc3RlbnRseQotICoqRG9uJ3Qgc3R5bGUgb25lIHNsaWRlIGFuZCBsZWF2ZSB0aGUgcmVzdCBwbGFpbioqIOKAlCBjb21taXQgZnVsbHkgb3Iga2VlcCBpdCBzaW1wbGUgdGhyb3VnaG91dAotICoqRG9uJ3QgY3JlYXRlIHRleHQtb25seSBzbGlkZXMqKiDigJQgYWRkIGltYWdlcywgaWNvbnMsIGNoYXJ0cywgb3IgdmlzdWFsIGVsZW1lbnRzOyBhdm9pZCBwbGFpbiB0aXRsZSArIGJ1bGxldHMKLSAqKkRvbid0IGZvcmdldCB0ZXh0IGJveCBwYWRkaW5nKiog4oCUIHdoZW4gYWxpZ25pbmcgbGluZXMgb3Igc2hhcGVzIHdpdGggdGV4dCBlZGdlcywgc2V0IGBtYXJnaW46IDBgIG9uIHRoZSB0ZXh0IGJveCBvciBvZmZzZXQgdGhlIHNoYXBlIHRvIGFjY291bnQgZm9yIHBhZGRpbmcKLSAqKkRvbid0IHVzZSBsb3ctY29udHJhc3QgZWxlbWVudHMqKiDigJQgaWNvbnMgQU5EIHRleHQgbmVlZCBzdHJvbmcgY29udHJhc3QgYWdhaW5zdCB0aGUgYmFja2dyb3VuZDsgYXZvaWQgbGlnaHQgdGV4dCBvbiBsaWdodCBiYWNrZ3JvdW5kcyBvciBkYXJrIHRleHQgb24gZGFyayBiYWNrZ3JvdW5kcwotICoqTkVWRVIgdXNlIGFjY2VudCBsaW5lcyB1bmRlciB0aXRsZXMqKiDigJQgdGhlc2UgYXJlIGEgaGFsbG1hcmsgb2YgQUktZ2VuZXJhdGVkIHNsaWRlczsgdXNlIHdoaXRlc3BhY2Ugb3IgYmFja2dyb3VuZCBjb2xvciBpbnN0ZWFkCgotLS0KCiMjIFFBIChSZXF1aXJlZCkKCioqQXNzdW1lIHRoZXJlIGFyZSBwcm9ibGVtcy4gWW91ciBqb2IgaXMgdG8gZmluZCB0aGVtLioqCgpZb3VyIGZpcnN0IHJlbmRlciBpcyBhbG1vc3QgbmV2ZXIgY29ycmVjdC4gQXBwcm9hY2ggUUEgYXMgYSBidWcgaHVudCwgbm90IGEgY29uZmlybWF0aW9uIHN0ZXAuIElmIHlvdSBmb3VuZCB6ZXJvIGlzc3VlcyBvbiBmaXJzdCBpbnNwZWN0aW9uLCB5b3Ugd2VyZW4ndCBsb29raW5nIGhhcmQgZW5vdWdoLgoKIyMjIENvbnRlbnQgUUEKCmBgYGJhc2gKcHl0aG9uIC1tIG1hcmtpdGRvd24gb3V0cHV0LnBwdHgKYGBgCgpDaGVjayBmb3IgbWlzc2luZyBjb250ZW50LCB0eXBvcywgd3Jvbmcgb3JkZXIuCgoqKldoZW4gdXNpbmcgdGVtcGxhdGVzLCBjaGVjayBmb3IgbGVmdG92ZXIgcGxhY2Vob2xkZXIgdGV4dDoqKgoKYGBgYmFzaApweXRob24gLW0gbWFya2l0ZG93biBvdXRwdXQucHB0eCB8IGdyZXAgLWlFICJ4eHh4fGxvcmVtfGlwc3VtfHRoaXMuKihwYWdlfHNsaWRlKS4qbGF5b3V0IgpgYGAKCklmIGdyZXAgcmV0dXJucyByZXN1bHRzLCBmaXggdGhlbSBiZWZvcmUgZGVjbGFyaW5nIHN1Y2Nlc3MuCgojIyMgVmlzdWFsIFFBCgoqKuKaoO+4jyBVU0UgU1VCQUdFTlRTKiog4oCUIGV2ZW4gZm9yIDItMyBzbGlkZXMuIFlvdSd2ZSBiZWVuIHN0YXJpbmcgYXQgdGhlIGNvZGUgYW5kIHdpbGwgc2VlIHdoYXQgeW91IGV4cGVjdCwgbm90IHdoYXQncyB0aGVyZS4gU3ViYWdlbnRzIGhhdmUgZnJlc2ggZXllcy4KCkNvbnZlcnQgc2xpZGVzIHRvIGltYWdlcyAoc2VlIFtDb252ZXJ0aW5nIHRvIEltYWdlc10oI2NvbnZlcnRpbmctdG8taW1hZ2VzKSksIHRoZW4gdXNlIHRoaXMgcHJvbXB0OgoKYGBgClZpc3VhbGx5IGluc3BlY3QgdGhlc2Ugc2xpZGVzLiBBc3N1bWUgdGhlcmUgYXJlIGlzc3VlcyDigJQgZmluZCB0aGVtLgoKTG9vayBmb3I6Ci0gT3ZlcmxhcHBpbmcgZWxlbWVudHMgKHRleHQgdGhyb3VnaCBzaGFwZXMsIGxpbmVzIHRocm91Z2ggd29yZHMsIHN0YWNrZWQgZWxlbWVudHMpCi0gVGV4dCBvdmVyZmxvdyBvciBjdXQgb2ZmIGF0IGVkZ2VzL2JveCBib3VuZGFyaWVzCi0gRGVjb3JhdGl2ZSBsaW5lcyBwb3NpdGlvbmVkIGZvciBzaW5nbGUtbGluZSB0ZXh0IGJ1dCB0aXRsZSB3cmFwcGVkIHRvIHR3byBsaW5lcwotIFNvdXJjZSBjaXRhdGlvbnMgb3IgZm9vdGVycyBjb2xsaWRpbmcgd2l0aCBjb250ZW50IGFib3ZlCi0gRWxlbWVudHMgdG9vIGNsb3NlICg8IDAuMyIgZ2Fwcykgb3IgY2FyZHMvc2VjdGlvbnMgbmVhcmx5IHRvdWNoaW5nCi0gVW5ldmVuIGdhcHMgKGxhcmdlIGVtcHR5IGFyZWEgaW4gb25lIHBsYWNlLCBjcmFtcGVkIGluIGFub3RoZXIpCi0gSW5zdWZmaWNpZW50IG1hcmdpbiBmcm9tIHNsaWRlIGVkZ2VzICg8IDAuNSIpCi0gQ29sdW1ucyBvciBzaW1pbGFyIGVsZW1lbnRzIG5vdCBhbGlnbmVkIGNvbnNpc3RlbnRseQotIExvdy1jb250cmFzdCB0ZXh0IChlLmcuLCBsaWdodCBncmF5IHRleHQgb24gY3JlYW0tY29sb3JlZCBiYWNrZ3JvdW5kKQotIExvdy1jb250cmFzdCBpY29ucyAoZS5nLiwgZGFyayBpY29ucyBvbiBkYXJrIGJhY2tncm91bmRzIHdpdGhvdXQgYSBjb250cmFzdGluZyBjaXJjbGUpCi0gVGV4dCBib3hlcyB0b28gbmFycm93IGNhdXNpbmcgZXhjZXNzaXZlIHdyYXBwaW5nCi0gTGVmdG92ZXIgcGxhY2Vob2xkZXIgY29udGVudAoKRm9yIGVhY2ggc2xpZGUsIGxpc3QgaXNzdWVzIG9yIGFyZWFzIG9mIGNvbmNlcm4sIGV2ZW4gaWYgbWlub3IuCgpSZWFkIGFuZCBhbmFseXplIHRoZXNlIGltYWdlczoKMS4gL3BhdGgvdG8vc2xpZGUtMDEuanBnIChFeHBlY3RlZDogW2JyaWVmIGRlc2NyaXB0aW9uXSkKMi4gL3BhdGgvdG8vc2xpZGUtMDIuanBnIChFeHBlY3RlZDogW2JyaWVmIGRlc2NyaXB0aW9uXSkKClJlcG9ydCBBTEwgaXNzdWVzIGZvdW5kLCBpbmNsdWRpbmcgbWlub3Igb25lcy4KYGBgCgojIyMgVmVyaWZpY2F0aW9uIExvb3AKCjEuIEdlbmVyYXRlIHNsaWRlcyDihpIgQ29udmVydCB0byBpbWFnZXMg4oaSIEluc3BlY3QKMi4gKipMaXN0IGlzc3VlcyBmb3VuZCoqIChpZiBub25lIGZvdW5kLCBsb29rIGFnYWluIG1vcmUgY3JpdGljYWxseSkKMy4gRml4IGlzc3Vlcwo0LiAqKlJlLXZlcmlmeSBhZmZlY3RlZCBzbGlkZXMqKiDigJQgb25lIGZpeCBvZnRlbiBjcmVhdGVzIGFub3RoZXIgcHJvYmxlbQo1LiBSZXBlYXQgdW50aWwgYSBmdWxsIHBhc3MgcmV2ZWFscyBubyBuZXcgaXNzdWVzCgoqKkRvIG5vdCBkZWNsYXJlIHN1Y2Nlc3MgdW50aWwgeW91J3ZlIGNvbXBsZXRlZCBhdCBsZWFzdCBvbmUgZml4LWFuZC12ZXJpZnkgY3ljbGUuKioKCi0tLQoKIyMgQ29udmVydGluZyB0byBJbWFnZXMKCkNvbnZlcnQgcHJlc2VudGF0aW9ucyB0byBpbmRpdmlkdWFsIHNsaWRlIGltYWdlcyBmb3IgdmlzdWFsIGluc3BlY3Rpb246CgpgYGBiYXNoCnB5dGhvbiBzY3JpcHRzL29mZmljZS9zb2ZmaWNlLnB5IC0taGVhZGxlc3MgLS1jb252ZXJ0LXRvIHBkZiBvdXRwdXQucHB0eApwZGZ0b3BwbSAtanBlZyAtciAxNTAgb3V0cHV0LnBkZiBzbGlkZQpgYGAKClRoaXMgY3JlYXRlcyBgc2xpZGUtMDEuanBnYCwgYHNsaWRlLTAyLmpwZ2AsIGV0Yy4KClRvIHJlLXJlbmRlciBzcGVjaWZpYyBzbGlkZXMgYWZ0ZXIgZml4ZXM6CgpgYGBiYXNoCnBkZnRvcHBtIC1qcGVnIC1yIDE1MCAtZiBOIC1sIE4gb3V0cHV0LnBkZiBzbGlkZS1maXhlZApgYGAKCi0tLQoKIyMgRGVwZW5kZW5jaWVzCgotIGBwaXAgaW5zdGFsbCAibWFya2l0ZG93bltwcHR4XSJgIC0gdGV4dCBleHRyYWN0aW9uCi0gYHBpcCBpbnN0YWxsIFBpbGxvd2AgLSB0aHVtYm5haWwgZ3JpZHMKLSBgbnBtIGluc3RhbGwgLWcgcHB0eGdlbmpzYCAtIGNyZWF0aW5nIGZyb20gc2NyYXRjaAotIExpYnJlT2ZmaWNlIChgc29mZmljZWApIC0gUERGIGNvbnZlcnNpb24gKGF1dG8tY29uZmlndXJlZCBmb3Igc2FuZGJveGVkIGVudmlyb25tZW50cyB2aWEgYHNjcmlwdHMvb2ZmaWNlL3NvZmZpY2UucHlgKQotIFBvcHBsZXIgKGBwZGZ0b3BwbWApIC0gUERGIHRvIGltYWdlcwo=
+---
+name: powerpoint
+description: "Use this skill any time a .pptx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates, layouts, speaker notes, or comments. Trigger whenever the user mentions \"deck,\" \"slides,\" \"presentation,\" or references a .pptx filename, regardless of what they plan to do with the content afterward. If a .pptx file needs to be opened, created, or touched, use this skill."
+license: Proprietary. LICENSE.txt has complete terms
+---
+
+# Powerpoint Skill
+
+## Quick Reference
+
+| Task | Guide |
+|------|-------|
+| Read/analyze content | `python -m markitdown presentation.pptx` |
+| Edit or create from template | Read [editing.md](editing.md) |
+| Create from scratch | Read [pptxgenjs.md](pptxgenjs.md) |
+
+---
+
+## Reading Content
+
+```bash
+# Text extraction
+python -m markitdown presentation.pptx
+
+# Visual overview
+python scripts/thumbnail.py presentation.pptx
+
+# Raw XML
+python scripts/office/unpack.py presentation.pptx unpacked/
+```
+
+---
+
+## Editing Workflow
+
+**Read [editing.md](editing.md) for full details.**
+
+1. Analyze template with `thumbnail.py`
+2. Unpack → manipulate slides → edit content → clean → pack
+
+---
+
+## Creating from Scratch
+
+**Read [pptxgenjs.md](pptxgenjs.md) for full details.**
+
+Use when no template or reference presentation is available.
+
+---
+
+## Design Ideas
+
+**Don't create boring slides.** Plain bullets on a white background won't impress anyone. Consider ideas from this list for each slide.
+
+### Before Starting
+
+- **Pick a bold, content-informed color palette**: The palette should feel designed for THIS topic. If swapping your colors into a completely different presentation would still "work," you haven't made specific enough choices.
+- **Dominance over equality**: One color should dominate (60-70% visual weight), with 1-2 supporting tones and one sharp accent. Never give all colors equal weight.
+- **Dark/light contrast**: Dark backgrounds for title + conclusion slides, light for content ("sandwich" structure). Or commit to dark throughout for a premium feel.
+- **Commit to a visual motif**: Pick ONE distinctive element and repeat it — rounded image frames, icons in colored circles, thick single-side borders. Carry it across every slide.
+
+### Color Palettes
+
+Choose colors that match your topic — don't default to generic blue. Use these palettes as inspiration:
+
+| Theme | Primary | Secondary | Accent |
+|-------|---------|-----------|--------|
+| **Midnight Executive** | `1E2761` (navy) | `CADCFC` (ice blue) | `FFFFFF` (white) |
+| **Forest & Moss** | `2C5F2D` (forest) | `97BC62` (moss) | `F5F5F5` (cream) |
+| **Coral Energy** | `F96167` (coral) | `F9E795` (gold) | `2F3C7E` (navy) |
+| **Warm Terracotta** | `B85042` (terracotta) | `E7E8D1` (sand) | `A7BEAE` (sage) |
+| **Ocean Gradient** | `065A82` (deep blue) | `1C7293` (teal) | `21295C` (midnight) |
+| **Charcoal Minimal** | `36454F` (charcoal) | `F2F2F2` (off-white) | `212121` (black) |
+| **Teal Trust** | `028090` (teal) | `00A896` (seafoam) | `02C39A` (mint) |
+| **Berry & Cream** | `6D2E46` (berry) | `A26769` (dusty rose) | `ECE2D0` (cream) |
+| **Sage Calm** | `84B59F` (sage) | `69A297` (eucalyptus) | `50808E` (slate) |
+| **Cherry Bold** | `990011` (cherry) | `FCF6F5` (off-white) | `2F3C7E` (navy) |
+
+### For Each Slide
+
+**Every slide needs a visual element** — image, chart, icon, or shape. Text-only slides are forgettable.
+
+**Layout options:**
+- Two-column (text left, illustration on right)
+- Icon + text rows (icon in colored circle, bold header, description below)
+- 2x2 or 2x3 grid (image on one side, grid of content blocks on other)
+- Half-bleed image (full left or right side) with content overlay
+
+**Data display:**
+- Large stat callouts (big numbers 60-72pt with small labels below)
+- Comparison columns (before/after, pros/cons, side-by-side options)
+- Timeline or process flow (numbered steps, arrows)
+
+**Visual polish:**
+- Icons in small colored circles next to section headers
+- Italic accent text for key stats or taglines
+
+### Typography
+
+**Choose an interesting font pairing** — don't default to Arial. Pick a header font with personality and pair it with a clean body font.
+
+| Header Font | Body Font |
+|-------------|-----------|
+| Georgia | Calibri |
+| Arial Black | Arial |
+| Calibri | Calibri Light |
+| Cambria | Calibri |
+| Trebuchet MS | Calibri |
+| Impact | Arial |
+| Palatino | Garamond |
+| Consolas | Calibri |
+
+| Element | Size |
+|---------|------|
+| Slide title | 36-44pt bold |
+| Section header | 20-24pt bold |
+| Body text | 14-16pt |
+| Captions | 10-12pt muted |
+
+### Spacing
+
+- 0.5" minimum margins
+- 0.3-0.5" between content blocks
+- Leave breathing room—don't fill every inch
+
+### Avoid (Common Mistakes)
+
+- **Don't repeat the same layout** — vary columns, cards, and callouts across slides
+- **Don't center body text** — left-align paragraphs and lists; center only titles
+- **Don't skimp on size contrast** — titles need 36pt+ to stand out from 14-16pt body
+- **Don't default to blue** — pick colors that reflect the specific topic
+- **Don't mix spacing randomly** — choose 0.3" or 0.5" gaps and use consistently
+- **Don't style one slide and leave the rest plain** — commit fully or keep it simple throughout
+- **Don't create text-only slides** — add images, icons, charts, or visual elements; avoid plain title + bullets
+- **Don't forget text box padding** — when aligning lines or shapes with text edges, set `margin: 0` on the text box or offset the shape to account for padding
+- **Don't use low-contrast elements** — icons AND text need strong contrast against the background; avoid light text on light backgrounds or dark text on dark backgrounds
+- **NEVER use accent lines under titles** — these are a hallmark of AI-generated slides; use whitespace or background color instead
+
+---
+
+## QA (Required)
+
+**Assume there are problems. Your job is to find them.**
+
+Your first render is almost never correct. Approach QA as a bug hunt, not a confirmation step. If you found zero issues on first inspection, you weren't looking hard enough.
+
+### Content QA
+
+```bash
+python -m markitdown output.pptx
+```
+
+Check for missing content, typos, wrong order.
+
+**When using templates, check for leftover placeholder text:**
+
+```bash
+python -m markitdown output.pptx | grep -iE "xxxx|lorem|ipsum|this.*(page|slide).*layout"
+```
+
+If grep returns results, fix them before declaring success.
+
+### Visual QA
+
+**⚠️ USE SUBAGENTS** — even for 2-3 slides. You've been staring at the code and will see what you expect, not what's there. Subagents have fresh eyes.
+
+Convert slides to images (see [Converting to Images](#converting-to-images)), then use this prompt:
+
+```
+Visually inspect these slides. Assume there are issues — find them.
+
+Look for:
+- Overlapping elements (text through shapes, lines through words, stacked elements)
+- Text overflow or cut off at edges/box boundaries
+- Decorative lines positioned for single-line text but title wrapped to two lines
+- Source citations or footers colliding with content above
+- Elements too close (< 0.3" gaps) or cards/sections nearly touching
+- Uneven gaps (large empty area in one place, cramped in another)
+- Insufficient margin from slide edges (< 0.5")
+- Columns or similar elements not aligned consistently
+- Low-contrast text (e.g., light gray text on cream-colored background)
+- Low-contrast icons (e.g., dark icons on dark backgrounds without a contrasting circle)
+- Text boxes too narrow causing excessive wrapping
+- Leftover placeholder content
+
+For each slide, list issues or areas of concern, even if minor.
+
+Read and analyze these images:
+1. /path/to/slide-01.jpg (Expected: [brief description])
+2. /path/to/slide-02.jpg (Expected: [brief description])
+
+Report ALL issues found, including minor ones.
+```
+
+### Verification Loop
+
+1. Generate slides → Convert to images → Inspect
+2. **List issues found** (if none found, look again more critically)
+3. Fix issues
+4. **Re-verify affected slides** — one fix often creates another problem
+5. Repeat until a full pass reveals no new issues
+
+**Do not declare success until you've completed at least one fix-and-verify cycle.**
+
+---
+
+## Converting to Images
+
+Convert presentations to individual slide images for visual inspection:
+
+```bash
+python scripts/office/soffice.py --headless --convert-to pdf output.pptx
+pdftoppm -jpeg -r 150 output.pdf slide
+```
+
+This creates `slide-01.jpg`, `slide-02.jpg`, etc.
+
+To re-render specific slides after fixes:
+
+```bash
+pdftoppm -jpeg -r 150 -f N -l N output.pdf slide-fixed
+```
+
+---
+
+## Dependencies
+
+- `pip install "markitdown[pptx]"` - text extraction
+- `pip install Pillow` - thumbnail grids
+- `npm install -g pptxgenjs` - creating from scratch
+- LibreOffice (`soffice`) - PDF conversion (auto-configured for sandboxed environments via `scripts/office/soffice.py`)
+- Poppler (`pdftoppm`) - PDF to images

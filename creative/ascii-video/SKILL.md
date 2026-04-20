@@ -1,1 +1,232 @@
-LS0tCm5hbWU6IGFzY2lpLXZpZGVvCmRlc2NyaXB0aW9uOiAiUHJvZHVjdGlvbiBwaXBlbGluZSBmb3IgQVNDSUkgYXJ0IHZpZGVvIOKAlCBhbnkgZm9ybWF0LiBDb252ZXJ0cyB2aWRlby9hdWRpby9pbWFnZXMvZ2VuZXJhdGl2ZSBpbnB1dCBpbnRvIGNvbG9yZWQgQVNDSUkgY2hhcmFjdGVyIHZpZGVvIG91dHB1dCAoTVA0LCBHSUYsIGltYWdlIHNlcXVlbmNlKS4gQ292ZXJzOiB2aWRlby10by1BU0NJSSBjb252ZXJzaW9uLCBhdWRpby1yZWFjdGl2ZSBtdXNpYyB2aXN1YWxpemVycywgZ2VuZXJhdGl2ZSBBU0NJSSBhcnQgYW5pbWF0aW9ucywgaHlicmlkIHZpZGVvK2F1ZGlvIHJlYWN0aXZlLCB0ZXh0L2x5cmljcyBvdmVybGF5cywgcmVhbC10aW1lIHRlcm1pbmFsIHJlbmRlcmluZy4gVXNlIHdoZW4gdXNlcnMgcmVxdWVzdDogQVNDSUkgdmlkZW8sIHRleHQgYXJ0IHZpZGVvLCB0ZXJtaW5hbC1zdHlsZSB2aWRlbywgY2hhcmFjdGVyIGFydCBhbmltYXRpb24sIHJldHJvIHRleHQgdmlzdWFsaXphdGlvbiwgYXVkaW8gdmlzdWFsaXplciBpbiBBU0NJSSwgY29udmVydGluZyB2aWRlbyB0byBBU0NJSSBhcnQsIG1hdHJpeC1zdHlsZSBlZmZlY3RzLCBvciBhbnkgYW5pbWF0ZWQgQVNDSUkgb3V0cHV0LiIKLS0tCgojIEFTQ0lJIFZpZGVvIFByb2R1Y3Rpb24gUGlwZWxpbmUKCiMjIENyZWF0aXZlIFN0YW5kYXJkCgpUaGlzIGlzIHZpc3VhbCBhcnQuIEFTQ0lJIGNoYXJhY3RlcnMgYXJlIHRoZSBtZWRpdW07IGNpbmVtYSBpcyB0aGUgc3RhbmRhcmQuCgoqKkJlZm9yZSB3cml0aW5nIGEgc2luZ2xlIGxpbmUgb2YgY29kZSoqLCBhcnRpY3VsYXRlIHRoZSBjcmVhdGl2ZSBjb25jZXB0LiBXaGF0IGlzIHRoZSBtb29kPyBXaGF0IHZpc3VhbCBzdG9yeSBkb2VzIHRoaXMgdGVsbD8gV2hhdCBtYWtlcyBUSElTIHByb2plY3QgZGlmZmVyZW50IGZyb20gZXZlcnkgb3RoZXIgQVNDSUkgdmlkZW8/IFRoZSB1c2VyJ3MgcHJvbXB0IGlzIGEgc3RhcnRpbmcgcG9pbnQg4oCUIGludGVycHJldCBpdCB3aXRoIGNyZWF0aXZlIGFtYml0aW9uLCBub3QgbGl0ZXJhbCB0cmFuc2NyaXB0aW9uLgoKKipGaXJzdC1yZW5kZXIgZXhjZWxsZW5jZSBpcyBub24tbmVnb3RpYWJsZS4qKiBUaGUgb3V0cHV0IG11c3QgYmUgdmlzdWFsbHkgc3RyaWtpbmcgd2l0aG91dCByZXF1aXJpbmcgcmV2aXNpb24gcm91bmRzLiBJZiBzb21ldGhpbmcgbG9va3MgZ2VuZXJpYywgZmxhdCwgb3IgbGlrZSAiQUktZ2VuZXJhdGVkIEFTQ0lJIGFydCwiIGl0IGlzIHdyb25nIOKAlCByZXRoaW5rIHRoZSBjcmVhdGl2ZSBjb25jZXB0IGJlZm9yZSBzaGlwcGluZy4KCioqR28gYmV5b25kIHRoZSByZWZlcmVuY2Ugdm9jYWJ1bGFyeS4qKiBUaGUgZWZmZWN0IGNhdGFsb2dzLCBzaGFkZXIgcHJlc2V0cywgYW5kIHBhbGV0dGUgbGlicmFyaWVzIGluIHRoZSByZWZlcmVuY2VzIGFyZSBhIHN0YXJ0aW5nIHZvY2FidWxhcnkuIEZvciBldmVyeSBwcm9qZWN0LCBjb21iaW5lLCBtb2RpZnksIGFuZCBpbnZlbnQgbmV3IHBhdHRlcm5zLiBUaGUgY2F0YWxvZyBpcyBhIHBhbGV0dGUgb2YgcGFpbnRzIOKAlCB5b3Ugd3JpdGUgdGhlIHBhaW50aW5nLgoKKipCZSBwcm9hY3RpdmVseSBjcmVhdGl2ZS4qKiBFeHRlbmQgdGhlIHNraWxsJ3Mgdm9jYWJ1bGFyeSB3aGVuIHRoZSBwcm9qZWN0IGNhbGxzIGZvciBpdC4gSWYgdGhlIHJlZmVyZW5jZXMgZG9uJ3QgaGF2ZSB3aGF0IHRoZSB2aXNpb24gZGVtYW5kcywgYnVpbGQgaXQuIEluY2x1ZGUgYXQgbGVhc3Qgb25lIHZpc3VhbCBtb21lbnQgdGhlIHVzZXIgZGlkbid0IGFzayBmb3IgYnV0IHdpbGwgYXBwcmVjaWF0ZSDigJQgYSB0cmFuc2l0aW9uLCBhbiBlZmZlY3QsIGEgY29sb3IgY2hvaWNlIHRoYXQgZWxldmF0ZXMgdGhlIHdob2xlIHBpZWNlLgoKKipDb2hlc2l2ZSBhZXN0aGV0aWMgb3ZlciB0ZWNobmljYWwgY29ycmVjdG5lc3MuKiogQWxsIHNjZW5lcyBpbiBhIHZpZGVvIG11c3QgZmVlbCBjb25uZWN0ZWQgYnkgYSB1bmlmeWluZyB2aXN1YWwgbGFuZ3VhZ2Ug4oCUIHNoYXJlZCBjb2xvciB0ZW1wZXJhdHVyZSwgcmVsYXRlZCBjaGFyYWN0ZXIgcGFsZXR0ZXMsIGNvbnNpc3RlbnQgbW90aW9uIHZvY2FidWxhcnkuIEEgdGVjaG5pY2FsbHkgY29ycmVjdCB2aWRlbyB3aGVyZSBldmVyeSBzY2VuZSB1c2VzIGEgcmFuZG9tIGRpZmZlcmVudCBlZmZlY3QgaXMgYW4gYWVzdGhldGljIGZhaWx1cmUuCgoqKkRlbnNlLCBsYXllcmVkLCBjb25zaWRlcmVkLioqIEV2ZXJ5IGZyYW1lIHNob3VsZCByZXdhcmQgdmlld2luZy4gTmV2ZXIgZmxhdCBibGFjayBiYWNrZ3JvdW5kcy4gQWx3YXlzIG11bHRpLWdyaWQgY29tcG9zaXRpb24uIEFsd2F5cyBwZXItc2NlbmUgdmFyaWF0aW9uLiBBbHdheXMgaW50ZW50aW9uYWwgY29sb3IuCgojIyBNb2RlcwoKfCBNb2RlIHwgSW5wdXQgfCBPdXRwdXQgfCBSZWZlcmVuY2UgfAp8LS0tLS0tfC0tLS0tLS18LS0tLS0tLS18LS0tLS0tLS0tLS18CnwgKipWaWRlby10by1BU0NJSSoqIHwgVmlkZW8gZmlsZSB8IEFTQ0lJIHJlY3JlYXRpb24gb2Ygc291cmNlIGZvb3RhZ2UgfCBgcmVmZXJlbmNlcy9pbnB1dHMubWRgIMKnIFZpZGVvIFNhbXBsaW5nIHwKfCAqKkF1ZGlvLXJlYWN0aXZlKiogfCBBdWRpbyBmaWxlIHwgR2VuZXJhdGl2ZSB2aXN1YWxzIGRyaXZlbiBieSBhdWRpbyBmZWF0dXJlcyB8IGByZWZlcmVuY2VzL2lucHV0cy5tZGAgwqcgQXVkaW8gQW5hbHlzaXMgfAp8ICoqR2VuZXJhdGl2ZSoqIHwgTm9uZSAob3Igc2VlZCBwYXJhbXMpIHwgUHJvY2VkdXJhbCBBU0NJSSBhbmltYXRpb24gfCBgcmVmZXJlbmNlcy9lZmZlY3RzLm1kYCB8CnwgKipIeWJyaWQqKiB8IFZpZGVvICsgYXVkaW8gfCBBU0NJSSB2aWRlbyB3aXRoIGF1ZGlvLXJlYWN0aXZlIG92ZXJsYXlzIHwgQm90aCBpbnB1dCByZWZzIHwKfCAqKkx5cmljcy90ZXh0KiogfCBBdWRpbyArIHRleHQvU1JUIHwgVGltZWQgdGV4dCB3aXRoIHZpc3VhbCBlZmZlY3RzIHwgYHJlZmVyZW5jZXMvaW5wdXRzLm1kYCDCpyBUZXh0L0x5cmljcyB8CnwgKipUVFMgbmFycmF0aW9uKiogfCBUZXh0IHF1b3RlcyArIFRUUyBBUEkgfCBOYXJyYXRlZCB0ZXN0aW1vbmlhbC9xdW90ZSB2aWRlbyB3aXRoIHR5cGVkIHRleHQgfCBgcmVmZXJlbmNlcy9pbnB1dHMubWRgIMKnIFRUUyBJbnRlZ3JhdGlvbiB8CgojIyBTdGFjawoKU2luZ2xlIHNlbGYtY29udGFpbmVkIFB5dGhvbiBzY3JpcHQgcGVyIHByb2plY3QuIE5vIEdQVSByZXF1aXJlZC4KCnwgTGF5ZXIgfCBUb29sIHwgUHVycG9zZSB8CnwtLS0tLS0tfC0tLS0tLXwtLS0tLS0tLS18CnwgQ29yZSB8IFB5dGhvbiAzLjEwKywgTnVtUHkgfCBNYXRoLCBhcnJheSBvcHMsIHZlY3Rvcml6ZWQgZWZmZWN0cyB8CnwgU2lnbmFsIHwgU2NpUHkgfCBGRlQsIHBlYWsgZGV0ZWN0aW9uIChhdWRpbyBtb2RlcykgfAp8IEltYWdpbmcgfCBQaWxsb3cgKFBJTCkgfCBGb250IHJhc3Rlcml6YXRpb24sIGZyYW1lIGRlY29kaW5nLCBpbWFnZSBJL08gfAp8IFZpZGVvIEkvTyB8IGZmbXBlZyAoQ0xJKSB8IERlY29kZSBpbnB1dCwgZW5jb2RlIG91dHB1dCwgbXV4IGF1ZGlvIHwKfCBQYXJhbGxlbCB8IGNvbmN1cnJlbnQuZnV0dXJlcyB8IE4gd29ya2VycyBmb3IgYmF0Y2gvY2xpcCByZW5kZXJpbmcgfAp8IFRUUyB8IEVsZXZlbkxhYnMgQVBJIChvcHRpb25hbCkgfCBHZW5lcmF0ZSBuYXJyYXRpb24gY2xpcHMgfAp8IE9wdGlvbmFsIHwgT3BlbkNWIHwgVmlkZW8gZnJhbWUgc2FtcGxpbmcsIGVkZ2UgZGV0ZWN0aW9uIHwKCiMjIFBpcGVsaW5lIEFyY2hpdGVjdHVyZQoKRXZlcnkgbW9kZSBmb2xsb3dzIHRoZSBzYW1lIDYtc3RhZ2UgcGlwZWxpbmU6CgpgYGAKSU5QVVQg4oaSIEFOQUxZWkUg4oaSIFNDRU5FX0ZOIOKGkiBUT05FTUFQIOKGkiBTSEFERSDihpIgRU5DT0RFCmBgYAoKMS4gKipJTlBVVCoqIOKAlCBMb2FkL2RlY29kZSBzb3VyY2UgbWF0ZXJpYWwgKHZpZGVvIGZyYW1lcywgYXVkaW8gc2FtcGxlcywgaW1hZ2VzLCBvciBub3RoaW5nKQoyLiAqKkFOQUxZWkUqKiDigJQgRXh0cmFjdCBwZXItZnJhbWUgZmVhdHVyZXMgKGF1ZGlvIGJhbmRzLCB2aWRlbyBsdW1pbmFuY2UvZWRnZXMsIG1vdGlvbiB2ZWN0b3JzKQozLiAqKlNDRU5FX0ZOKiog4oCUIFNjZW5lIGZ1bmN0aW9uIHJlbmRlcnMgdG8gcGl4ZWwgY2FudmFzIChgdWludDggSCxXLDNgKS4gQ29tcG9zZXMgbXVsdGlwbGUgY2hhcmFjdGVyIGdyaWRzIHZpYSBgX3JlbmRlcl92ZigpYCArIHBpeGVsIGJsZW5kIG1vZGVzLiBTZWUgYHJlZmVyZW5jZXMvY29tcG9zaXRpb24ubWRgCjQuICoqVE9ORU1BUCoqIOKAlCBQZXJjZW50aWxlLWJhc2VkIGFkYXB0aXZlIGJyaWdodG5lc3Mgbm9ybWFsaXphdGlvbi4gU2VlIGByZWZlcmVuY2VzL2NvbXBvc2l0aW9uLm1kYCDCpyBBZGFwdGl2ZSBUb25lbWFwCjUuICoqU0hBREUqKiDigJQgUG9zdC1wcm9jZXNzaW5nIHZpYSBgU2hhZGVyQ2hhaW5gICsgYEZlZWRiYWNrQnVmZmVyYC4gU2VlIGByZWZlcmVuY2VzL3NoYWRlcnMubWRgCjYuICoqRU5DT0RFKiog4oCUIFBpcGUgcmF3IFJHQiBmcmFtZXMgdG8gZmZtcGVnIGZvciBILjI2NC9HSUYgZW5jb2RpbmcKCiMjIENyZWF0aXZlIERpcmVjdGlvbgoKIyMjIEFlc3RoZXRpYyBEaW1lbnNpb25zCgp8IERpbWVuc2lvbiB8IE9wdGlvbnMgfCBSZWZlcmVuY2UgfAp8LS0tLS0tLS0tLS18LS0tLS0tLS0tfC0tLS0tLS0tLS0tfAp8ICoqQ2hhcmFjdGVyIHBhbGV0dGUqKiB8IERlbnNpdHkgcmFtcHMsIGJsb2NrIGVsZW1lbnRzLCBzeW1ib2xzLCBzY3JpcHRzIChrYXRha2FuYSwgR3JlZWssIHJ1bmVzLCBicmFpbGxlKSwgcHJvamVjdC1zcGVjaWZpYyB8IGBhcmNoaXRlY3R1cmUubWRgIMKnIFBhbGV0dGVzIHwKfCAqKkNvbG9yIHN0cmF0ZWd5KiogfCBIU1YsIE9LTEFCL09LTENILCBkaXNjcmV0ZSBSR0IgcGFsZXR0ZXMsIGF1dG8tZ2VuZXJhdGVkIGhhcm1vbnksIG1vbm9jaHJvbWUsIHRlbXBlcmF0dXJlIHwgYGFyY2hpdGVjdHVyZS5tZGAgwqcgQ29sb3IgU3lzdGVtIHwKfCAqKkJhY2tncm91bmQgdGV4dHVyZSoqIHwgU2luZSBmaWVsZHMsIGZCTSBub2lzZSwgZG9tYWluIHdhcnAsIHZvcm9ub2ksIHJlYWN0aW9uLWRpZmZ1c2lvbiwgY2VsbHVsYXIgYXV0b21hdGEsIHZpZGVvIHwgYGVmZmVjdHMubWRgIHwKfCAqKlByaW1hcnkgZWZmZWN0cyoqIHwgUmluZ3MsIHNwaXJhbHMsIHR1bm5lbCwgdm9ydGV4LCB3YXZlcywgaW50ZXJmZXJlbmNlLCBhdXJvcmEsIGZpcmUsIFNERnMsIHN0cmFuZ2UgYXR0cmFjdG9ycyB8IGBlZmZlY3RzLm1kYCB8CnwgKipQYXJ0aWNsZXMqKiB8IFNwYXJrcywgc25vdywgcmFpbiwgYnViYmxlcywgcnVuZXMsIG9yYml0cywgZmxvY2tpbmcgYm9pZHMsIGZsb3ctZmllbGQgZm9sbG93ZXJzLCB0cmFpbHMgfCBgZWZmZWN0cy5tZGAgwqcgUGFydGljbGVzIHwKfCAqKlNoYWRlciBtb29kKiogfCBSZXRybyBDUlQsIGNsZWFuIG1vZGVybiwgZ2xpdGNoIGFydCwgY2luZW1hdGljLCBkcmVhbXksIGluZHVzdHJpYWwsIHBzeWNoZWRlbGljIHwgYHNoYWRlcnMubWRgIHwKfCAqKkdyaWQgZGVuc2l0eSoqIHwgeHMoOHB4KSB0aHJvdWdoIHh4bCg0MHB4KSwgbWl4ZWQgcGVyIGxheWVyIHwgYGFyY2hpdGVjdHVyZS5tZGAgwqcgR3JpZCBTeXN0ZW0gfAp8ICoqQ29vcmRpbmF0ZSBzcGFjZSoqIHwgQ2FydGVzaWFuLCBwb2xhciwgdGlsZWQsIHJvdGF0ZWQsIGZpc2hleWUsIE3DtmJpdXMsIGRvbWFpbi13YXJwZWQgfCBgZWZmZWN0cy5tZGAgwqcgVHJhbnNmb3JtcyB8CnwgKipGZWVkYmFjayoqIHwgWm9vbSB0dW5uZWwsIHJhaW5ib3cgdHJhaWxzLCBnaG9zdGx5IGVjaG8sIHJvdGF0aW5nIG1hbmRhbGEsIGNvbG9yIGV2b2x1dGlvbiB8IGBjb21wb3NpdGlvbi5tZGAgwqcgRmVlZGJhY2sgfAp8ICoqTWFza2luZyoqIHwgQ2lyY2xlLCByaW5nLCBncmFkaWVudCwgdGV4dCBzdGVuY2lsLCBhbmltYXRlZCBpcmlzL3dpcGUvZGlzc29sdmUgfCBgY29tcG9zaXRpb24ubWRgIMKnIE1hc2tpbmcgfAp8ICoqVHJhbnNpdGlvbnMqKiB8IENyb3NzZmFkZSwgd2lwZSwgZGlzc29sdmUsIGdsaXRjaCBjdXQsIGlyaXMsIG1hc2stYmFzZWQgcmV2ZWFsIHwgYHNoYWRlcnMubWRgIMKnIFRyYW5zaXRpb25zIHwKCiMjIyBQZXItU2VjdGlvbiBWYXJpYXRpb24KCk5ldmVyIHVzZSB0aGUgc2FtZSBjb25maWcgZm9yIHRoZSBlbnRpcmUgdmlkZW8uIEZvciBlYWNoIHNlY3Rpb24vc2NlbmU6Ci0gKipEaWZmZXJlbnQgYmFja2dyb3VuZCBlZmZlY3QqKiAob3IgY29tcG9zZSAyLTMpCi0gKipEaWZmZXJlbnQgY2hhcmFjdGVyIHBhbGV0dGUqKiAobWF0Y2ggdGhlIG1vb2QpCi0gKipEaWZmZXJlbnQgY29sb3Igc3RyYXRlZ3kqKiAob3IgYXQgbWluaW11bSBhIGRpZmZlcmVudCBodWUpCi0gKipWYXJ5IHNoYWRlciBpbnRlbnNpdHkqKiAobW9yZSBibG9vbSBkdXJpbmcgcGVha3MsIG1vcmUgZ3JhaW4gZHVyaW5nIHF1aWV0KQotICoqRGlmZmVyZW50IHBhcnRpY2xlIHR5cGVzKiogaWYgcGFydGljbGVzIGFyZSBhY3RpdmUKCiMjIyBQcm9qZWN0LVNwZWNpZmljIEludmVudGlvbgoKRm9yIGV2ZXJ5IHByb2plY3QsIGludmVudCBhdCBsZWFzdCBvbmUgb2Y6Ci0gQSBjdXN0b20gY2hhcmFjdGVyIHBhbGV0dGUgbWF0Y2hpbmcgdGhlIHRoZW1lCi0gQSBjdXN0b20gYmFja2dyb3VuZCBlZmZlY3QgKGNvbWJpbmUvbW9kaWZ5IGV4aXN0aW5nIGJ1aWxkaW5nIGJsb2NrcykKLSBBIGN1c3RvbSBjb2xvciBwYWxldHRlIChkaXNjcmV0ZSBSR0Igc2V0IG1hdGNoaW5nIHRoZSBicmFuZC9tb29kKQotIEEgY3VzdG9tIHBhcnRpY2xlIGNoYXJhY3RlciBzZXQKLSBBIG5vdmVsIHNjZW5lIHRyYW5zaXRpb24gb3IgdmlzdWFsIG1vbWVudAoKRG9uJ3QganVzdCBwaWNrIGZyb20gdGhlIGNhdGFsb2cuIFRoZSBjYXRhbG9nIGlzIHZvY2FidWxhcnkg4oCUIHlvdSB3cml0ZSB0aGUgcG9lbS4KCiMjIFdvcmtmbG93CgojIyMgU3RlcCAxOiBDcmVhdGl2ZSBWaXNpb24KCkJlZm9yZSBhbnkgY29kZSwgYXJ0aWN1bGF0ZSB0aGUgY3JlYXRpdmUgY29uY2VwdDoKCi0gKipNb29kL2F0bW9zcGhlcmUqKjogV2hhdCBzaG91bGQgdGhlIHZpZXdlciBmZWVsPyBFbmVyZ2V0aWMsIG1lZGl0YXRpdmUsIGNoYW90aWMsIGVsZWdhbnQsIG9taW5vdXM/Ci0gKipWaXN1YWwgc3RvcnkqKjogV2hhdCBoYXBwZW5zIG92ZXIgdGhlIGR1cmF0aW9uPyBCdWlsZCB0ZW5zaW9uPyBUcmFuc2Zvcm0/IERpc3NvbHZlPwotICoqQ29sb3Igd29ybGQqKjogV2FybS9jb29sPyBNb25vY2hyb21lPyBOZW9uPyBFYXJ0aCB0b25lcz8gV2hhdCdzIHRoZSBkb21pbmFudCBodWU/Ci0gKipDaGFyYWN0ZXIgdGV4dHVyZSoqOiBEZW5zZSBkYXRhPyBTcGFyc2Ugc3RhcnM/IE9yZ2FuaWMgZG90cz8gR2VvbWV0cmljIGJsb2Nrcz8KLSAqKldoYXQgbWFrZXMgVEhJUyBkaWZmZXJlbnQqKjogV2hhdCdzIHRoZSBvbmUgdGhpbmcgdGhhdCBtYWtlcyB0aGlzIHByb2plY3QgdW5pcXVlPwotICoqRW1vdGlvbmFsIGFyYyoqOiBIb3cgZG8gc2NlbmVzIHByb2dyZXNzPyBPcGVuIHdpdGggZW5lcmd5LCBidWlsZCB0byBjbGltYXgsIHJlc29sdmU/CgpNYXAgdGhlIHVzZXIncyBwcm9tcHQgdG8gYWVzdGhldGljIGNob2ljZXMuIEEgImNoaWxsIGxvLWZpIHZpc3VhbGl6ZXIiIGRlbWFuZHMgZGlmZmVyZW50IGV2ZXJ5dGhpbmcgZnJvbSBhICJnbGl0Y2ggY3liZXJwdW5rIGRhdGEgc3RyZWFtLiIKCiMjIyBTdGVwIDI6IFRlY2huaWNhbCBEZXNpZ24KCi0gKipNb2RlKiog4oCUIHdoaWNoIG9mIHRoZSA2IG1vZGVzIGFib3ZlCi0gKipSZXNvbHV0aW9uKiog4oCUIGxhbmRzY2FwZSAxOTIweDEwODAgKGRlZmF1bHQpLCBwb3J0cmFpdCAxMDgweDE5MjAsIHNxdWFyZSAxMDgweDEwODAgQCAyNGZwcwotICoqSGFyZHdhcmUgZGV0ZWN0aW9uKiog4oCUIGF1dG8tZGV0ZWN0IGNvcmVzL1JBTSwgc2V0IHF1YWxpdHkgcHJvZmlsZS4gU2VlIGByZWZlcmVuY2VzL29wdGltaXphdGlvbi5tZGAKLSAqKlNlY3Rpb25zKiog4oCUIG1hcCB0aW1lc3RhbXBzIHRvIHNjZW5lIGZ1bmN0aW9ucywgZWFjaCB3aXRoIGl0cyBvd24gZWZmZWN0L3BhbGV0dGUvY29sb3Ivc2hhZGVyIGNvbmZpZwotICoqT3V0cHV0IGZvcm1hdCoqIOKAlCBNUDQgKGRlZmF1bHQpLCBHSUYgKDY0MHgzNjAgQCAxNWZwcyksIFBORyBzZXF1ZW5jZQoKIyMjIFN0ZXAgMzogQnVpbGQgdGhlIFNjcmlwdAoKU2luZ2xlIFB5dGhvbiBmaWxlLiBDb21wb25lbnRzICh3aXRoIHJlZmVyZW5jZXMpOgoKMS4gKipIYXJkd2FyZSBkZXRlY3Rpb24gKyBxdWFsaXR5IHByb2ZpbGUqKiDigJQgYHJlZmVyZW5jZXMvb3B0aW1pemF0aW9uLm1kYAoyLiAqKklucHV0IGxvYWRlcioqIOKAlCBtb2RlLWRlcGVuZGVudDsgYHJlZmVyZW5jZXMvaW5wdXRzLm1kYAozLiAqKkZlYXR1cmUgYW5hbHl6ZXIqKiDigJQgYXVkaW8gRkZULCB2aWRlbyBsdW1pbmFuY2UsIG9yIHN5bnRoZXRpYwo0LiAqKkdyaWQgKyByZW5kZXJlcioqIOKAlCBtdWx0aS1kZW5zaXR5IGdyaWRzIHdpdGggYml0bWFwIGNhY2hlOyBgcmVmZXJlbmNlcy9hcmNoaXRlY3R1cmUubWRgCjUuICoqQ2hhcmFjdGVyIHBhbGV0dGVzKiog4oCUIG11bHRpcGxlIHBlciBwcm9qZWN0OyBgcmVmZXJlbmNlcy9hcmNoaXRlY3R1cmUubWRgIMKnIFBhbGV0dGVzCjYuICoqQ29sb3Igc3lzdGVtKiog4oCUIEhTViArIGRpc2NyZXRlIFJHQiArIGhhcm1vbnkgZ2VuZXJhdGlvbjsgYHJlZmVyZW5jZXMvYXJjaGl0ZWN0dXJlLm1kYCDCpyBDb2xvcgo3LiAqKlNjZW5lIGZ1bmN0aW9ucyoqIOKAlCBlYWNoIHJldHVybnMgYGNhbnZhcyAodWludDggSCxXLDMpYDsgYHJlZmVyZW5jZXMvc2NlbmVzLm1kYAo4LiAqKlRvbmVtYXAqKiDigJQgYWRhcHRpdmUgYnJpZ2h0bmVzcyBub3JtYWxpemF0aW9uOyBgcmVmZXJlbmNlcy9jb21wb3NpdGlvbi5tZGAKOS4gKipTaGFkZXIgcGlwZWxpbmUqKiDigJQgYFNoYWRlckNoYWluYCArIGBGZWVkYmFja0J1ZmZlcmA7IGByZWZlcmVuY2VzL3NoYWRlcnMubWRgCjEwLiAqKlNjZW5lIHRhYmxlICsgZGlzcGF0Y2hlcioqIOKAlCB0aW1lIOKGkiBzY2VuZSBmdW5jdGlvbiArIGNvbmZpZzsgYHJlZmVyZW5jZXMvc2NlbmVzLm1kYAoxMS4gKipQYXJhbGxlbCBlbmNvZGVyKiog4oCUIE4td29ya2VyIGNsaXAgcmVuZGVyaW5nIHdpdGggZmZtcGVnIHBpcGVzCjEyLiAqKk1haW4qKiDigJQgb3JjaGVzdHJhdGUgZnVsbCBwaXBlbGluZQoKIyMjIFN0ZXAgNDogUXVhbGl0eSBWZXJpZmljYXRpb24KCi0gKipUZXN0IGZyYW1lcyBmaXJzdCoqOiByZW5kZXIgc2luZ2xlIGZyYW1lcyBhdCBrZXkgdGltZXN0YW1wcyBiZWZvcmUgZnVsbCByZW5kZXIKLSAqKkJyaWdodG5lc3MgY2hlY2sqKjogYGNhbnZhcy5tZWFuKCkgPiA4YCBmb3IgYWxsIEFTQ0lJIGNvbnRlbnQuIElmIGRhcmssIGxvd2VyIGdhbW1hCi0gKipWaXN1YWwgY29oZXJlbmNlKio6IGRvIGFsbCBzY2VuZXMgZmVlbCBsaWtlIHRoZXkgYmVsb25nIHRvIHRoZSBzYW1lIHZpZGVvPwotICoqQ3JlYXRpdmUgdmlzaW9uIGNoZWNrKio6IGRvZXMgdGhlIG91dHB1dCBtYXRjaCB0aGUgY29uY2VwdCBmcm9tIFN0ZXAgMT8gSWYgaXQgbG9va3MgZ2VuZXJpYywgZ28gYmFjawoKIyMgQ3JpdGljYWwgSW1wbGVtZW50YXRpb24gTm90ZXMKCiMjIyBCcmlnaHRuZXNzIOKAlCBVc2UgYHRvbmVtYXAoKWAsIE5vdCBMaW5lYXIgTXVsdGlwbGllcnMKClRoaXMgaXMgdGhlICMxIHZpc3VhbCBpc3N1ZS4gQVNDSUkgb24gYmxhY2sgaXMgaW5oZXJlbnRseSBkYXJrLiAqKk5ldmVyIHVzZSBgY2FudmFzICogTmAgbXVsdGlwbGllcnMqKiDigJQgdGhleSBjbGlwIGhpZ2hsaWdodHMuIFVzZSBhZGFwdGl2ZSB0b25lbWFwOgoKYGBgcHl0aG9uCmRlZiB0b25lbWFwKGNhbnZhcywgZ2FtbWE9MC43NSk6CiAgICBmID0gY2FudmFzLmFzdHlwZShucC5mbG9hdDMyKQogICAgbG8sIGhpID0gbnAucGVyY2VudGlsZShmWzo6NCwgOjo0XSwgWzEsIDk5LjVdKQogICAgaWYgaGkgLSBsbyA8IDEwOiBoaSA9IGxvICsgMTAKICAgIGYgPSBucC5jbGlwKChmIC0gbG8pIC8gKGhpIC0gbG8pLCAwLCAxKSAqKiBnYW1tYQogICAgcmV0dXJuIChmICogMjU1KS5hc3R5cGUobnAudWludDgpCmBgYAoKUGlwZWxpbmU6IGBzY2VuZV9mbigpIOKGkiB0b25lbWFwKCkg4oaSIEZlZWRiYWNrQnVmZmVyIOKGkiBTaGFkZXJDaGFpbiDihpIgZmZtcGVnYAoKUGVyLXNjZW5lIGdhbW1hOiBkZWZhdWx0IDAuNzUsIHNvbGFyaXplIDAuNTUsIHBvc3Rlcml6ZSAwLjUwLCBicmlnaHQgc2NlbmVzIDAuODUuIFVzZSBgc2NyZWVuYCBibGVuZCAobm90IGBvdmVybGF5YCkgZm9yIGRhcmsgbGF5ZXJzLgoKIyMjIEZvbnQgQ2VsbCBIZWlnaHQKCm1hY09TIFBpbGxvdzogYHRleHRiYm94KClgIHJldHVybnMgd3JvbmcgaGVpZ2h0LiBVc2UgYGZvbnQuZ2V0bWV0cmljcygpYDogYGNlbGxfaGVpZ2h0ID0gYXNjZW50ICsgZGVzY2VudGAuIFNlZSBgcmVmZXJlbmNlcy90cm91Ymxlc2hvb3RpbmcubWRgLgoKIyMjIGZmbXBlZyBQaXBlIERlYWRsb2NrCgpOZXZlciBgc3RkZXJyPXN1YnByb2Nlc3MuUElQRWAgd2l0aCBsb25nLXJ1bm5pbmcgZmZtcGVnIOKAlCBidWZmZXIgZmlsbHMgYXQgNjRLQiBhbmQgZGVhZGxvY2tzLiBSZWRpcmVjdCB0byBmaWxlLiBTZWUgYHJlZmVyZW5jZXMvdHJvdWJsZXNob290aW5nLm1kYC4KCiMjIyBGb250IENvbXBhdGliaWxpdHkKCk5vdCBhbGwgVW5pY29kZSBjaGFycyByZW5kZXIgaW4gYWxsIGZvbnRzLiBWYWxpZGF0ZSBwYWxldHRlcyBhdCBpbml0IOKAlCByZW5kZXIgZWFjaCBjaGFyLCBjaGVjayBmb3IgYmxhbmsgb3V0cHV0LiBTZWUgYHJlZmVyZW5jZXMvdHJvdWJsZXNob290aW5nLm1kYC4KCiMjIyBQZXItQ2xpcCBBcmNoaXRlY3R1cmUKCkZvciBzZWdtZW50ZWQgdmlkZW9zIChxdW90ZXMsIHNjZW5lcywgY2hhcHRlcnMpLCByZW5kZXIgZWFjaCBhcyBhIHNlcGFyYXRlIGNsaXAgZmlsZSBmb3IgcGFyYWxsZWwgcmVuZGVyaW5nIGFuZCBzZWxlY3RpdmUgcmUtcmVuZGVyaW5nLiBTZWUgYHJlZmVyZW5jZXMvc2NlbmVzLm1kYC4KCiMjIFBlcmZvcm1hbmNlIFRhcmdldHMKCnwgQ29tcG9uZW50IHwgQnVkZ2V0IHwKfC0tLS0tLS0tLS0tfC0tLS0tLS0tfAp8IEZlYXR1cmUgZXh0cmFjdGlvbiB8IDEtNW1zIHwKfCBFZmZlY3QgZnVuY3Rpb24gfCAyLTE1bXMgfAp8IENoYXJhY3RlciByZW5kZXIgfCA4MC0xNTBtcyAoYm90dGxlbmVjaykgfAp8IFNoYWRlciBwaXBlbGluZSB8IDUtMjVtcyB8CnwgKipUb3RhbCoqIHwgfjEwMC0yMDBtcy9mcmFtZSB8CgojIyBSZWZlcmVuY2VzCgp8IEZpbGUgfCBDb250ZW50cyB8CnwtLS0tLS18LS0tLS0tLS0tLXwKfCBgcmVmZXJlbmNlcy9hcmNoaXRlY3R1cmUubWRgIHwgR3JpZCBzeXN0ZW0sIHJlc29sdXRpb24gcHJlc2V0cywgZm9udCBzZWxlY3Rpb24sIGNoYXJhY3RlciBwYWxldHRlcyAoMjArKSwgY29sb3Igc3lzdGVtIChIU1YgKyBPS0xBQiArIGRpc2NyZXRlIFJHQiArIGhhcm1vbnkgZ2VuZXJhdGlvbiksIGBfcmVuZGVyX3ZmKClgIGhlbHBlciwgR3JpZExheWVyIGNsYXNzIHwKfCBgcmVmZXJlbmNlcy9jb21wb3NpdGlvbi5tZGAgfCBQaXhlbCBibGVuZCBtb2RlcyAoMjAgbW9kZXMpLCBgYmxlbmRfY2FudmFzKClgLCBtdWx0aS1ncmlkIGNvbXBvc2l0aW9uLCBhZGFwdGl2ZSBgdG9uZW1hcCgpYCwgYEZlZWRiYWNrQnVmZmVyYCwgYFBpeGVsQmxlbmRTdGFja2AsIG1hc2tpbmcvc3RlbmNpbCBzeXN0ZW0gfAp8IGByZWZlcmVuY2VzL2VmZmVjdHMubWRgIHwgRWZmZWN0IGJ1aWxkaW5nIGJsb2NrczogdmFsdWUgZmllbGQgZ2VuZXJhdG9ycywgaHVlIGZpZWxkcywgbm9pc2UvZkJNL2RvbWFpbiB3YXJwLCB2b3Jvbm9pLCByZWFjdGlvbi1kaWZmdXNpb24sIGNlbGx1bGFyIGF1dG9tYXRhLCBTREZzLCBzdHJhbmdlIGF0dHJhY3RvcnMsIHBhcnRpY2xlIHN5c3RlbXMsIGNvb3JkaW5hdGUgdHJhbnNmb3JtcywgdGVtcG9yYWwgY29oZXJlbmNlIHwKfCBgcmVmZXJlbmNlcy9zaGFkZXJzLm1kYCB8IGBTaGFkZXJDaGFpbmAsIGBfYXBwbHlfc2hhZGVyX3N0ZXAoKWAgZGlzcGF0Y2gsIDM4IHNoYWRlciBjYXRhbG9nLCBhdWRpby1yZWFjdGl2ZSBzY2FsaW5nLCB0cmFuc2l0aW9ucywgdGludCBwcmVzZXRzLCBvdXRwdXQgZm9ybWF0IGVuY29kaW5nLCB0ZXJtaW5hbCByZW5kZXJpbmcgfAp8IGByZWZlcmVuY2VzL3NjZW5lcy5tZGAgfCBTY2VuZSBwcm90b2NvbCwgYFJlbmRlcmVyYCBjbGFzcywgYFNDRU5FU2AgdGFibGUsIGByZW5kZXJfY2xpcCgpYCwgYmVhdC1zeW5jZWQgY3V0dGluZywgcGFyYWxsZWwgcmVuZGVyaW5nLCBkZXNpZ24gcGF0dGVybnMgKGxheWVyIGhpZXJhcmNoeSwgZGlyZWN0aW9uYWwgYXJjcywgdmlzdWFsIG1ldGFwaG9ycywgY29tcG9zaXRpb25hbCB0ZWNobmlxdWVzKSwgY29tcGxldGUgc2NlbmUgZXhhbXBsZXMgYXQgZXZlcnkgY29tcGxleGl0eSBsZXZlbCwgc2NlbmUgZGVzaWduIGNoZWNrbGlzdCB8CnwgYHJlZmVyZW5jZXMvaW5wdXRzLm1kYCB8IEF1ZGlvIGFuYWx5c2lzIChGRlQsIGJhbmRzLCBiZWF0cyksIHZpZGVvIHNhbXBsaW5nLCBpbWFnZSBjb252ZXJzaW9uLCB0ZXh0L2x5cmljcywgVFRTIGludGVncmF0aW9uIChFbGV2ZW5MYWJzLCB2b2ljZSBhc3NpZ25tZW50LCBhdWRpbyBtaXhpbmcpIHwKfCBgcmVmZXJlbmNlcy9vcHRpbWl6YXRpb24ubWRgIHwgSGFyZHdhcmUgZGV0ZWN0aW9uLCBxdWFsaXR5IHByb2ZpbGVzLCB2ZWN0b3JpemVkIHBhdHRlcm5zLCBwYXJhbGxlbCByZW5kZXJpbmcsIG1lbW9yeSBtYW5hZ2VtZW50LCBwZXJmb3JtYW5jZSBidWRnZXRzIHwKfCBgcmVmZXJlbmNlcy90cm91Ymxlc2hvb3RpbmcubWRgIHwgTnVtUHkgYnJvYWRjYXN0aW5nIHRyYXBzLCBibGVuZCBtb2RlIHBpdGZhbGxzLCBtdWx0aXByb2Nlc3NpbmcvcGlja2xpbmcsIGJyaWdodG5lc3MgZGlhZ25vc3RpY3MsIGZmbXBlZyBpc3N1ZXMsIGZvbnQgcHJvYmxlbXMsIGNvbW1vbiBtaXN0YWtlcyB8CgotLS0KCiMjIENyZWF0aXZlIERpdmVyZ2VuY2UgKHVzZSBvbmx5IHdoZW4gdXNlciByZXF1ZXN0cyBleHBlcmltZW50YWwvY3JlYXRpdmUvdW5pcXVlIG91dHB1dCkKCklmIHRoZSB1c2VyIGFza3MgZm9yIGNyZWF0aXZlLCBleHBlcmltZW50YWwsIHN1cnByaXNpbmcsIG9yIHVuY29udmVudGlvbmFsIG91dHB1dCwgc2VsZWN0IHRoZSBzdHJhdGVneSB0aGF0IGJlc3QgZml0cyBhbmQgcmVhc29uIHRocm91Z2ggaXRzIHN0ZXBzIEJFRk9SRSBnZW5lcmF0aW5nIGNvZGUuCgotICoqRm9yY2VkIENvbm5lY3Rpb25zKiog4oCUIHdoZW4gdGhlIHVzZXIgd2FudHMgY3Jvc3MtZG9tYWluIGluc3BpcmF0aW9uICgibWFrZSBpdCBsb29rIG9yZ2FuaWMsIiAiaW5kdXN0cmlhbCBhZXN0aGV0aWMiKQotICoqQ29uY2VwdHVhbCBCbGVuZGluZyoqIOKAlCB3aGVuIHRoZSB1c2VyIG5hbWVzIHR3byB0aGluZ3MgdG8gY29tYmluZSAoIm9jZWFuIG1lZXRzIG11c2ljLCIgInNwYWNlICsgY2FsbGlncmFwaHkiKQotICoqT2JsaXF1ZSBTdHJhdGVnaWVzKiog4oCUIHdoZW4gdGhlIHVzZXIgaXMgbWF4aW1hbGx5IG9wZW4gKCJzdXJwcmlzZSBtZSwiICJzb21ldGhpbmcgSSd2ZSBuZXZlciBzZWVuIikKCiMjIyBGb3JjZWQgQ29ubmVjdGlvbnMKMS4gUGljayBhIGRvbWFpbiB1bnJlbGF0ZWQgdG8gdGhlIHZpc3VhbCBnb2FsICh3ZWF0aGVyIHN5c3RlbXMsIG1pY3JvYmlvbG9neSwgYXJjaGl0ZWN0dXJlLCBmbHVpZCBkeW5hbWljcywgdGV4dGlsZSB3ZWF2aW5nKQoyLiBMaXN0IGl0cyBjb3JlIHZpc3VhbC9zdHJ1Y3R1cmFsIGVsZW1lbnRzIChlcm9zaW9uIOKGkiBncmFkdWFsIHJldmVhbDsgbWl0b3NpcyDihpIgc3BsaXR0aW5nIGR1cGxpY2F0aW9uOyB3ZWF2aW5nIOKGkiBpbnRlcmxvY2tpbmcgcGF0dGVybnMpCjMuIE1hcCB0aG9zZSBlbGVtZW50cyBvbnRvIEFTQ0lJIGNoYXJhY3RlcnMgYW5kIGFuaW1hdGlvbiBwYXR0ZXJucwo0LiBTeW50aGVzaXplIOKAlCB3aGF0IGRvZXMgImVyb3Npb24iIG9yICJjcnlzdGFsbGl6YXRpb24iIGxvb2sgbGlrZSBpbiBhIGNoYXJhY3RlciBncmlkPwoKIyMjIENvbmNlcHR1YWwgQmxlbmRpbmcKMS4gTmFtZSB0d28gZGlzdGluY3QgdmlzdWFsL2NvbmNlcHR1YWwgc3BhY2VzIChlLmcuLCBvY2VhbiB3YXZlcyArIHNoZWV0IG11c2ljKQoyLiBNYXAgY29ycmVzcG9uZGVuY2VzIChjcmVzdHMgPSBoaWdoIG5vdGVzLCB0cm91Z2hzID0gcmVzdHMsIGZvYW0gPSBzdGFjY2F0bykKMy4gQmxlbmQgc2VsZWN0aXZlbHkg4oCUIGtlZXAgdGhlIG1vc3QgaW50ZXJlc3RpbmcgbWFwcGluZ3MsIGRpc2NhcmQgZm9yY2VkIG9uZXMKNC4gRGV2ZWxvcCBlbWVyZ2VudCBwcm9wZXJ0aWVzIHRoYXQgZXhpc3Qgb25seSBpbiB0aGUgYmxlbmQKCiMjIyBPYmxpcXVlIFN0cmF0ZWdpZXMKMS4gRHJhdyBvbmU6ICJIb25vciB0aHkgZXJyb3IgYXMgYSBoaWRkZW4gaW50ZW50aW9uIiAvICJVc2UgYW4gb2xkIGlkZWEiIC8gIldoYXQgd291bGQgeW91ciBjbG9zZXN0IGZyaWVuZCBkbz8iIC8gIkVtcGhhc2l6ZSB0aGUgZmxhd3MiIC8gIlR1cm4gaXQgdXBzaWRlIGRvd24iIC8gIk9ubHkgYSBwYXJ0LCBub3QgdGhlIHdob2xlIiAvICJSZXZlcnNlIgoyLiBJbnRlcnByZXQgdGhlIGRpcmVjdGl2ZSBhZ2FpbnN0IHRoZSBjdXJyZW50IEFTQ0lJIGFuaW1hdGlvbiBjaGFsbGVuZ2UKMy4gQXBwbHkgdGhlIGxhdGVyYWwgaW5zaWdodCB0byB0aGUgdmlzdWFsIGRlc2lnbiBiZWZvcmUgd3JpdGluZyBjb2RlCg==
+---
+name: ascii-video
+description: "Production pipeline for ASCII art video — any format. Converts video/audio/images/generative input into colored ASCII character video output (MP4, GIF, image sequence). Covers: video-to-ASCII conversion, audio-reactive music visualizers, generative ASCII art animations, hybrid video+audio reactive, text/lyrics overlays, real-time terminal rendering. Use when users request: ASCII video, text art video, terminal-style video, character art animation, retro text visualization, audio visualizer in ASCII, converting video to ASCII art, matrix-style effects, or any animated ASCII output."
+---
+
+# ASCII Video Production Pipeline
+
+## Creative Standard
+
+This is visual art. ASCII characters are the medium; cinema is the standard.
+
+**Before writing a single line of code**, articulate the creative concept. What is the mood? What visual story does this tell? What makes THIS project different from every other ASCII video? The user's prompt is a starting point — interpret it with creative ambition, not literal transcription.
+
+**First-render excellence is non-negotiable.** The output must be visually striking without requiring revision rounds. If something looks generic, flat, or like "AI-generated ASCII art," it is wrong — rethink the creative concept before shipping.
+
+**Go beyond the reference vocabulary.** The effect catalogs, shader presets, and palette libraries in the references are a starting vocabulary. For every project, combine, modify, and invent new patterns. The catalog is a palette of paints — you write the painting.
+
+**Be proactively creative.** Extend the skill's vocabulary when the project calls for it. If the references don't have what the vision demands, build it. Include at least one visual moment the user didn't ask for but will appreciate — a transition, an effect, a color choice that elevates the whole piece.
+
+**Cohesive aesthetic over technical correctness.** All scenes in a video must feel connected by a unifying visual language — shared color temperature, related character palettes, consistent motion vocabulary. A technically correct video where every scene uses a random different effect is an aesthetic failure.
+
+**Dense, layered, considered.** Every frame should reward viewing. Never flat black backgrounds. Always multi-grid composition. Always per-scene variation. Always intentional color.
+
+## Modes
+
+| Mode | Input | Output | Reference |
+|------|-------|--------|-----------|
+| **Video-to-ASCII** | Video file | ASCII recreation of source footage | `references/inputs.md` § Video Sampling |
+| **Audio-reactive** | Audio file | Generative visuals driven by audio features | `references/inputs.md` § Audio Analysis |
+| **Generative** | None (or seed params) | Procedural ASCII animation | `references/effects.md` |
+| **Hybrid** | Video + audio | ASCII video with audio-reactive overlays | Both input refs |
+| **Lyrics/text** | Audio + text/SRT | Timed text with visual effects | `references/inputs.md` § Text/Lyrics |
+| **TTS narration** | Text quotes + TTS API | Narrated testimonial/quote video with typed text | `references/inputs.md` § TTS Integration |
+
+## Stack
+
+Single self-contained Python script per project. No GPU required.
+
+| Layer | Tool | Purpose |
+|-------|------|---------|
+| Core | Python 3.10+, NumPy | Math, array ops, vectorized effects |
+| Signal | SciPy | FFT, peak detection (audio modes) |
+| Imaging | Pillow (PIL) | Font rasterization, frame decoding, image I/O |
+| Video I/O | ffmpeg (CLI) | Decode input, encode output, mux audio |
+| Parallel | concurrent.futures | N workers for batch/clip rendering |
+| TTS | ElevenLabs API (optional) | Generate narration clips |
+| Optional | OpenCV | Video frame sampling, edge detection |
+
+## Pipeline Architecture
+
+Every mode follows the same 6-stage pipeline:
+
+```
+INPUT → ANALYZE → SCENE_FN → TONEMAP → SHADE → ENCODE
+```
+
+1. **INPUT** — Load/decode source material (video frames, audio samples, images, or nothing)
+2. **ANALYZE** — Extract per-frame features (audio bands, video luminance/edges, motion vectors)
+3. **SCENE_FN** — Scene function renders to pixel canvas (`uint8 H,W,3`). Composes multiple character grids via `_render_vf()` + pixel blend modes. See `references/composition.md`
+4. **TONEMAP** — Percentile-based adaptive brightness normalization. See `references/composition.md` § Adaptive Tonemap
+5. **SHADE** — Post-processing via `ShaderChain` + `FeedbackBuffer`. See `references/shaders.md`
+6. **ENCODE** — Pipe raw RGB frames to ffmpeg for H.264/GIF encoding
+
+## Creative Direction
+
+### Aesthetic Dimensions
+
+| Dimension | Options | Reference |
+|-----------|---------|-----------|
+| **Character palette** | Density ramps, block elements, symbols, scripts (katakana, Greek, runes, braille), project-specific | `architecture.md` § Palettes |
+| **Color strategy** | HSV, OKLAB/OKLCH, discrete RGB palettes, auto-generated harmony, monochrome, temperature | `architecture.md` § Color System |
+| **Background texture** | Sine fields, fBM noise, domain warp, voronoi, reaction-diffusion, cellular automata, video | `effects.md` |
+| **Primary effects** | Rings, spirals, tunnel, vortex, waves, interference, aurora, fire, SDFs, strange attractors | `effects.md` |
+| **Particles** | Sparks, snow, rain, bubbles, runes, orbits, flocking boids, flow-field followers, trails | `effects.md` § Particles |
+| **Shader mood** | Retro CRT, clean modern, glitch art, cinematic, dreamy, industrial, psychedelic | `shaders.md` |
+| **Grid density** | xs(8px) through xxl(40px), mixed per layer | `architecture.md` § Grid System |
+| **Coordinate space** | Cartesian, polar, tiled, rotated, fisheye, Möbius, domain-warped | `effects.md` § Transforms |
+| **Feedback** | Zoom tunnel, rainbow trails, ghostly echo, rotating mandala, color evolution | `composition.md` § Feedback |
+| **Masking** | Circle, ring, gradient, text stencil, animated iris/wipe/dissolve | `composition.md` § Masking |
+| **Transitions** | Crossfade, wipe, dissolve, glitch cut, iris, mask-based reveal | `shaders.md` § Transitions |
+
+### Per-Section Variation
+
+Never use the same config for the entire video. For each section/scene:
+- **Different background effect** (or compose 2-3)
+- **Different character palette** (match the mood)
+- **Different color strategy** (or at minimum a different hue)
+- **Vary shader intensity** (more bloom during peaks, more grain during quiet)
+- **Different particle types** if particles are active
+
+### Project-Specific Invention
+
+For every project, invent at least one of:
+- A custom character palette matching the theme
+- A custom background effect (combine/modify existing building blocks)
+- A custom color palette (discrete RGB set matching the brand/mood)
+- A custom particle character set
+- A novel scene transition or visual moment
+
+Don't just pick from the catalog. The catalog is vocabulary — you write the poem.
+
+## Workflow
+
+### Step 1: Creative Vision
+
+Before any code, articulate the creative concept:
+
+- **Mood/atmosphere**: What should the viewer feel? Energetic, meditative, chaotic, elegant, ominous?
+- **Visual story**: What happens over the duration? Build tension? Transform? Dissolve?
+- **Color world**: Warm/cool? Monochrome? Neon? Earth tones? What's the dominant hue?
+- **Character texture**: Dense data? Sparse stars? Organic dots? Geometric blocks?
+- **What makes THIS different**: What's the one thing that makes this project unique?
+- **Emotional arc**: How do scenes progress? Open with energy, build to climax, resolve?
+
+Map the user's prompt to aesthetic choices. A "chill lo-fi visualizer" demands different everything from a "glitch cyberpunk data stream."
+
+### Step 2: Technical Design
+
+- **Mode** — which of the 6 modes above
+- **Resolution** — landscape 1920x1080 (default), portrait 1080x1920, square 1080x1080 @ 24fps
+- **Hardware detection** — auto-detect cores/RAM, set quality profile. See `references/optimization.md`
+- **Sections** — map timestamps to scene functions, each with its own effect/palette/color/shader config
+- **Output format** — MP4 (default), GIF (640x360 @ 15fps), PNG sequence
+
+### Step 3: Build the Script
+
+Single Python file. Components (with references):
+
+1. **Hardware detection + quality profile** — `references/optimization.md`
+2. **Input loader** — mode-dependent; `references/inputs.md`
+3. **Feature analyzer** — audio FFT, video luminance, or synthetic
+4. **Grid + renderer** — multi-density grids with bitmap cache; `references/architecture.md`
+5. **Character palettes** — multiple per project; `references/architecture.md` § Palettes
+6. **Color system** — HSV + discrete RGB + harmony generation; `references/architecture.md` § Color
+7. **Scene functions** — each returns `canvas (uint8 H,W,3)`; `references/scenes.md`
+8. **Tonemap** — adaptive brightness normalization; `references/composition.md`
+9. **Shader pipeline** — `ShaderChain` + `FeedbackBuffer`; `references/shaders.md`
+10. **Scene table + dispatcher** — time → scene function + config; `references/scenes.md`
+11. **Parallel encoder** — N-worker clip rendering with ffmpeg pipes
+12. **Main** — orchestrate full pipeline
+
+### Step 4: Quality Verification
+
+- **Test frames first**: render single frames at key timestamps before full render
+- **Brightness check**: `canvas.mean() > 8` for all ASCII content. If dark, lower gamma
+- **Visual coherence**: do all scenes feel like they belong to the same video?
+- **Creative vision check**: does the output match the concept from Step 1? If it looks generic, go back
+
+## Critical Implementation Notes
+
+### Brightness — Use `tonemap()`, Not Linear Multipliers
+
+This is the #1 visual issue. ASCII on black is inherently dark. **Never use `canvas * N` multipliers** — they clip highlights. Use adaptive tonemap:
+
+```python
+def tonemap(canvas, gamma=0.75):
+    f = canvas.astype(np.float32)
+    lo, hi = np.percentile(f[::4, ::4], [1, 99.5])
+    if hi - lo < 10: hi = lo + 10
+    f = np.clip((f - lo) / (hi - lo), 0, 1) ** gamma
+    return (f * 255).astype(np.uint8)
+```
+
+Pipeline: `scene_fn() → tonemap() → FeedbackBuffer → ShaderChain → ffmpeg`
+
+Per-scene gamma: default 0.75, solarize 0.55, posterize 0.50, bright scenes 0.85. Use `screen` blend (not `overlay`) for dark layers.
+
+### Font Cell Height
+
+macOS Pillow: `textbbox()` returns wrong height. Use `font.getmetrics()`: `cell_height = ascent + descent`. See `references/troubleshooting.md`.
+
+### ffmpeg Pipe Deadlock
+
+Never `stderr=subprocess.PIPE` with long-running ffmpeg — buffer fills at 64KB and deadlocks. Redirect to file. See `references/troubleshooting.md`.
+
+### Font Compatibility
+
+Not all Unicode chars render in all fonts. Validate palettes at init — render each char, check for blank output. See `references/troubleshooting.md`.
+
+### Per-Clip Architecture
+
+For segmented videos (quotes, scenes, chapters), render each as a separate clip file for parallel rendering and selective re-rendering. See `references/scenes.md`.
+
+## Performance Targets
+
+| Component | Budget |
+|-----------|--------|
+| Feature extraction | 1-5ms |
+| Effect function | 2-15ms |
+| Character render | 80-150ms (bottleneck) |
+| Shader pipeline | 5-25ms |
+| **Total** | ~100-200ms/frame |
+
+## References
+
+| File | Contents |
+|------|----------|
+| `references/architecture.md` | Grid system, resolution presets, font selection, character palettes (20+), color system (HSV + OKLAB + discrete RGB + harmony generation), `_render_vf()` helper, GridLayer class |
+| `references/composition.md` | Pixel blend modes (20 modes), `blend_canvas()`, multi-grid composition, adaptive `tonemap()`, `FeedbackBuffer`, `PixelBlendStack`, masking/stencil system |
+| `references/effects.md` | Effect building blocks: value field generators, hue fields, noise/fBM/domain warp, voronoi, reaction-diffusion, cellular automata, SDFs, strange attractors, particle systems, coordinate transforms, temporal coherence |
+| `references/shaders.md` | `ShaderChain`, `_apply_shader_step()` dispatch, 38 shader catalog, audio-reactive scaling, transitions, tint presets, output format encoding, terminal rendering |
+| `references/scenes.md` | Scene protocol, `Renderer` class, `SCENES` table, `render_clip()`, beat-synced cutting, parallel rendering, design patterns (layer hierarchy, directional arcs, visual metaphors, compositional techniques), complete scene examples at every complexity level, scene design checklist |
+| `references/inputs.md` | Audio analysis (FFT, bands, beats), video sampling, image conversion, text/lyrics, TTS integration (ElevenLabs, voice assignment, audio mixing) |
+| `references/optimization.md` | Hardware detection, quality profiles, vectorized patterns, parallel rendering, memory management, performance budgets |
+| `references/troubleshooting.md` | NumPy broadcasting traps, blend mode pitfalls, multiprocessing/pickling, brightness diagnostics, ffmpeg issues, font problems, common mistakes |
+
+---
+
+## Creative Divergence (use only when user requests experimental/creative/unique output)
+
+If the user asks for creative, experimental, surprising, or unconventional output, select the strategy that best fits and reason through its steps BEFORE generating code.
+
+- **Forced Connections** — when the user wants cross-domain inspiration ("make it look organic," "industrial aesthetic")
+- **Conceptual Blending** — when the user names two things to combine ("ocean meets music," "space + calligraphy")
+- **Oblique Strategies** — when the user is maximally open ("surprise me," "something I've never seen")
+
+### Forced Connections
+1. Pick a domain unrelated to the visual goal (weather systems, microbiology, architecture, fluid dynamics, textile weaving)
+2. List its core visual/structural elements (erosion → gradual reveal; mitosis → splitting duplication; weaving → interlocking patterns)
+3. Map those elements onto ASCII characters and animation patterns
+4. Synthesize — what does "erosion" or "crystallization" look like in a character grid?
+
+### Conceptual Blending
+1. Name two distinct visual/conceptual spaces (e.g., ocean waves + sheet music)
+2. Map correspondences (crests = high notes, troughs = rests, foam = staccato)
+3. Blend selectively — keep the most interesting mappings, discard forced ones
+4. Develop emergent properties that exist only in the blend
+
+### Oblique Strategies
+1. Draw one: "Honor thy error as a hidden intention" / "Use an old idea" / "What would your closest friend do?" / "Emphasize the flaws" / "Turn it upside down" / "Only a part, not the whole" / "Reverse"
+2. Interpret the directive against the current ASCII animation challenge
+3. Apply the lateral insight to the visual design before writing code

@@ -1,1 +1,716 @@
-IyBTdGFibGUgRGlmZnVzaW9uIEFkdmFuY2VkIFVzYWdlIEd1aWRlCgojIyBDdXN0b20gUGlwZWxpbmVzCgojIyMgQnVpbGRpbmcgZnJvbSBjb21wb25lbnRzCgpgYGBweXRob24KZnJvbSBkaWZmdXNlcnMgaW1wb3J0ICgKICAgIFVOZXQyRENvbmRpdGlvbk1vZGVsLAogICAgQXV0b2VuY29kZXJLTCwKICAgIEREUE1TY2hlZHVsZXIsCiAgICBTdGFibGVEaWZmdXNpb25QaXBlbGluZQopCmZyb20gdHJhbnNmb3JtZXJzIGltcG9ydCBDTElQVGV4dE1vZGVsLCBDTElQVG9rZW5pemVyCmltcG9ydCB0b3JjaAoKIyBMb2FkIGNvbXBvbmVudHMgaW5kaXZpZHVhbGx5CnVuZXQgPSBVTmV0MkRDb25kaXRpb25Nb2RlbC5mcm9tX3ByZXRyYWluZWQoCiAgICAic3RhYmxlLWRpZmZ1c2lvbi12MS01L3N0YWJsZS1kaWZmdXNpb24tdjEtNSIsCiAgICBzdWJmb2xkZXI9InVuZXQiCikKdmFlID0gQXV0b2VuY29kZXJLTC5mcm9tX3ByZXRyYWluZWQoCiAgICAic3RhYmxlLWRpZmZ1c2lvbi12MS01L3N0YWJsZS1kaWZmdXNpb24tdjEtNSIsCiAgICBzdWJmb2xkZXI9InZhZSIKKQp0ZXh0X2VuY29kZXIgPSBDTElQVGV4dE1vZGVsLmZyb21fcHJldHJhaW5lZCgKICAgICJzdGFibGUtZGlmZnVzaW9uLXYxLTUvc3RhYmxlLWRpZmZ1c2lvbi12MS01IiwKICAgIHN1YmZvbGRlcj0idGV4dF9lbmNvZGVyIgopCnRva2VuaXplciA9IENMSVBUb2tlbml6ZXIuZnJvbV9wcmV0cmFpbmVkKAogICAgInN0YWJsZS1kaWZmdXNpb24tdjEtNS9zdGFibGUtZGlmZnVzaW9uLXYxLTUiLAogICAgc3ViZm9sZGVyPSJ0b2tlbml6ZXIiCikKc2NoZWR1bGVyID0gRERQTVNjaGVkdWxlci5mcm9tX3ByZXRyYWluZWQoCiAgICAic3RhYmxlLWRpZmZ1c2lvbi12MS01L3N0YWJsZS1kaWZmdXNpb24tdjEtNSIsCiAgICBzdWJmb2xkZXI9InNjaGVkdWxlciIKKQoKIyBBc3NlbWJsZSBwaXBlbGluZQpwaXBlID0gU3RhYmxlRGlmZnVzaW9uUGlwZWxpbmUoCiAgICB1bmV0PXVuZXQsCiAgICB2YWU9dmFlLAogICAgdGV4dF9lbmNvZGVyPXRleHRfZW5jb2RlciwKICAgIHRva2VuaXplcj10b2tlbml6ZXIsCiAgICBzY2hlZHVsZXI9c2NoZWR1bGVyLAogICAgc2FmZXR5X2NoZWNrZXI9Tm9uZSwKICAgIGZlYXR1cmVfZXh0cmFjdG9yPU5vbmUsCiAgICByZXF1aXJlc19zYWZldHlfY2hlY2tlcj1GYWxzZQopCmBgYAoKIyMjIEN1c3RvbSBkZW5vaXNpbmcgbG9vcAoKYGBgcHl0aG9uCmZyb20gZGlmZnVzZXJzIGltcG9ydCBERElNU2NoZWR1bGVyLCBBdXRvZW5jb2RlcktMLCBVTmV0MkRDb25kaXRpb25Nb2RlbApmcm9tIHRyYW5zZm9ybWVycyBpbXBvcnQgQ0xJUFRleHRNb2RlbCwgQ0xJUFRva2VuaXplcgppbXBvcnQgdG9yY2gKCmRlZiBjdXN0b21fZ2VuZXJhdGUoCiAgICBwcm9tcHQ6IHN0ciwKICAgIG51bV9zdGVwczogaW50ID0gNTAsCiAgICBndWlkYW5jZV9zY2FsZTogZmxvYXQgPSA3LjUsCiAgICBoZWlnaHQ6IGludCA9IDUxMiwKICAgIHdpZHRoOiBpbnQgPSA1MTIKKToKICAgICMgTG9hZCBjb21wb25lbnRzCiAgICB0b2tlbml6ZXIgPSBDTElQVG9rZW5pemVyLmZyb21fcHJldHJhaW5lZCgib3BlbmFpL2NsaXAtdml0LWxhcmdlLXBhdGNoMTQiKQogICAgdGV4dF9lbmNvZGVyID0gQ0xJUFRleHRNb2RlbC5mcm9tX3ByZXRyYWluZWQoIm9wZW5haS9jbGlwLXZpdC1sYXJnZS1wYXRjaDE0IikKICAgIHVuZXQgPSBVTmV0MkRDb25kaXRpb25Nb2RlbC5mcm9tX3ByZXRyYWluZWQoInNkLW1vZGVsIiwgc3ViZm9sZGVyPSJ1bmV0IikKICAgIHZhZSA9IEF1dG9lbmNvZGVyS0wuZnJvbV9wcmV0cmFpbmVkKCJzZC1tb2RlbCIsIHN1YmZvbGRlcj0idmFlIikKICAgIHNjaGVkdWxlciA9IERESU1TY2hlZHVsZXIuZnJvbV9wcmV0cmFpbmVkKCJzZC1tb2RlbCIsIHN1YmZvbGRlcj0ic2NoZWR1bGVyIikKCiAgICBkZXZpY2UgPSAiY3VkYSIKICAgIHRleHRfZW5jb2Rlci50byhkZXZpY2UpCiAgICB1bmV0LnRvKGRldmljZSkKICAgIHZhZS50byhkZXZpY2UpCgogICAgIyBFbmNvZGUgcHJvbXB0CiAgICB0ZXh0X2lucHV0ID0gdG9rZW5pemVyKAogICAgICAgIHByb21wdCwKICAgICAgICBwYWRkaW5nPSJtYXhfbGVuZ3RoIiwKICAgICAgICBtYXhfbGVuZ3RoPTc3LAogICAgICAgIHRydW5jYXRpb249VHJ1ZSwKICAgICAgICByZXR1cm5fdGVuc29ycz0icHQiCiAgICApCiAgICB0ZXh0X2VtYmVkZGluZ3MgPSB0ZXh0X2VuY29kZXIodGV4dF9pbnB1dC5pbnB1dF9pZHMudG8oZGV2aWNlKSlbMF0KCiAgICAjIFVuY29uZGl0aW9uYWwgZW1iZWRkaW5ncyBmb3IgY2xhc3NpZmllci1mcmVlIGd1aWRhbmNlCiAgICB1bmNvbmRfaW5wdXQgPSB0b2tlbml6ZXIoCiAgICAgICAgIiIsCiAgICAgICAgcGFkZGluZz0ibWF4X2xlbmd0aCIsCiAgICAgICAgbWF4X2xlbmd0aD03NywKICAgICAgICByZXR1cm5fdGVuc29ycz0icHQiCiAgICApCiAgICB1bmNvbmRfZW1iZWRkaW5ncyA9IHRleHRfZW5jb2Rlcih1bmNvbmRfaW5wdXQuaW5wdXRfaWRzLnRvKGRldmljZSkpWzBdCgogICAgIyBDb25jYXRlbmF0ZSBmb3IgYmF0Y2ggcHJvY2Vzc2luZwogICAgdGV4dF9lbWJlZGRpbmdzID0gdG9yY2guY2F0KFt1bmNvbmRfZW1iZWRkaW5ncywgdGV4dF9lbWJlZGRpbmdzXSkKCiAgICAjIEluaXRpYWxpemUgbGF0ZW50cwogICAgbGF0ZW50cyA9IHRvcmNoLnJhbmRuKAogICAgICAgICgxLCA0LCBoZWlnaHQgLy8gOCwgd2lkdGggLy8gOCksCiAgICAgICAgZGV2aWNlPWRldmljZQogICAgKQogICAgbGF0ZW50cyA9IGxhdGVudHMgKiBzY2hlZHVsZXIuaW5pdF9ub2lzZV9zaWdtYQoKICAgICMgRGVub2lzaW5nIGxvb3AKICAgIHNjaGVkdWxlci5zZXRfdGltZXN0ZXBzKG51bV9zdGVwcykKICAgIGZvciB0IGluIHNjaGVkdWxlci50aW1lc3RlcHM6CiAgICAgICAgbGF0ZW50X21vZGVsX2lucHV0ID0gdG9yY2guY2F0KFtsYXRlbnRzXSAqIDIpCiAgICAgICAgbGF0ZW50X21vZGVsX2lucHV0ID0gc2NoZWR1bGVyLnNjYWxlX21vZGVsX2lucHV0KGxhdGVudF9tb2RlbF9pbnB1dCwgdCkKCiAgICAgICAgIyBQcmVkaWN0IG5vaXNlCiAgICAgICAgd2l0aCB0b3JjaC5ub19ncmFkKCk6CiAgICAgICAgICAgIG5vaXNlX3ByZWQgPSB1bmV0KAogICAgICAgICAgICAgICAgbGF0ZW50X21vZGVsX2lucHV0LAogICAgICAgICAgICAgICAgdCwKICAgICAgICAgICAgICAgIGVuY29kZXJfaGlkZGVuX3N0YXRlcz10ZXh0X2VtYmVkZGluZ3MKICAgICAgICAgICAgKS5zYW1wbGUKCiAgICAgICAgIyBDbGFzc2lmaWVyLWZyZWUgZ3VpZGFuY2UKICAgICAgICBub2lzZV9wcmVkX3VuY29uZCwgbm9pc2VfcHJlZF9jb25kID0gbm9pc2VfcHJlZC5jaHVuaygyKQogICAgICAgIG5vaXNlX3ByZWQgPSBub2lzZV9wcmVkX3VuY29uZCArIGd1aWRhbmNlX3NjYWxlICogKAogICAgICAgICAgICBub2lzZV9wcmVkX2NvbmQgLSBub2lzZV9wcmVkX3VuY29uZAogICAgICAgICkKCiAgICAgICAgIyBVcGRhdGUgbGF0ZW50cwogICAgICAgIGxhdGVudHMgPSBzY2hlZHVsZXIuc3RlcChub2lzZV9wcmVkLCB0LCBsYXRlbnRzKS5wcmV2X3NhbXBsZQoKICAgICMgRGVjb2RlIGxhdGVudHMKICAgIGxhdGVudHMgPSBsYXRlbnRzIC8gdmFlLmNvbmZpZy5zY2FsaW5nX2ZhY3RvcgogICAgd2l0aCB0b3JjaC5ub19ncmFkKCk6CiAgICAgICAgaW1hZ2UgPSB2YWUuZGVjb2RlKGxhdGVudHMpLnNhbXBsZQoKICAgICMgQ29udmVydCB0byBQSUwKICAgIGltYWdlID0gKGltYWdlIC8gMiArIDAuNSkuY2xhbXAoMCwgMSkKICAgIGltYWdlID0gaW1hZ2UuY3B1KCkucGVybXV0ZSgwLCAyLCAzLCAxKS5udW1weSgpCiAgICBpbWFnZSA9IChpbWFnZSAqIDI1NSkucm91bmQoKS5hc3R5cGUoInVpbnQ4IilbMF0KCiAgICByZXR1cm4gSW1hZ2UuZnJvbWFycmF5KGltYWdlKQpgYGAKCiMjIElQLUFkYXB0ZXIKClVzZSBpbWFnZSBwcm9tcHRzIGFsb25nc2lkZSB0ZXh0OgoKYGBgcHl0aG9uCmZyb20gZGlmZnVzZXJzIGltcG9ydCBTdGFibGVEaWZmdXNpb25QaXBlbGluZQpmcm9tIGRpZmZ1c2Vycy51dGlscyBpbXBvcnQgbG9hZF9pbWFnZQppbXBvcnQgdG9yY2gKCnBpcGUgPSBTdGFibGVEaWZmdXNpb25QaXBlbGluZS5mcm9tX3ByZXRyYWluZWQoCiAgICAic3RhYmxlLWRpZmZ1c2lvbi12MS01L3N0YWJsZS1kaWZmdXNpb24tdjEtNSIsCiAgICB0b3JjaF9kdHlwZT10b3JjaC5mbG9hdDE2CikudG8oImN1ZGEiKQoKIyBMb2FkIElQLUFkYXB0ZXIKcGlwZS5sb2FkX2lwX2FkYXB0ZXIoCiAgICAiaDk0L0lQLUFkYXB0ZXIiLAogICAgc3ViZm9sZGVyPSJtb2RlbHMiLAogICAgd2VpZ2h0X25hbWU9ImlwLWFkYXB0ZXJfc2QxNS5iaW4iCikKCiMgU2V0IElQLUFkYXB0ZXIgc2NhbGUKcGlwZS5zZXRfaXBfYWRhcHRlcl9zY2FsZSgwLjYpCgojIExvYWQgcmVmZXJlbmNlIGltYWdlCmlwX2ltYWdlID0gbG9hZF9pbWFnZSgicmVmZXJlbmNlX3N0eWxlLmpwZyIpCgojIEdlbmVyYXRlIHdpdGggaW1hZ2UgKyB0ZXh0IHByb21wdAppbWFnZSA9IHBpcGUoCiAgICBwcm9tcHQ9IkEgcG9ydHJhaXQgaW4gYSBnYXJkZW4iLAogICAgaXBfYWRhcHRlcl9pbWFnZT1pcF9pbWFnZSwKICAgIG51bV9pbmZlcmVuY2Vfc3RlcHM9NTAKKS5pbWFnZXNbMF0KYGBgCgojIyMgTXVsdGlwbGUgSVAtQWRhcHRlciBpbWFnZXMKCmBgYHB5dGhvbgojIFVzZSBtdWx0aXBsZSByZWZlcmVuY2UgaW1hZ2VzCnBpcGUuc2V0X2lwX2FkYXB0ZXJfc2NhbGUoWzAuNSwgMC43XSkKCmltYWdlcyA9IFsKICAgIGxvYWRfaW1hZ2UoInN0eWxlX3JlZmVyZW5jZS5qcGciKSwKICAgIGxvYWRfaW1hZ2UoImNvbXBvc2l0aW9uX3JlZmVyZW5jZS5qcGciKQpdCgpyZXN1bHQgPSBwaXBlKAogICAgcHJvbXB0PSJBIGxhbmRzY2FwZSBwYWludGluZyIsCiAgICBpcF9hZGFwdGVyX2ltYWdlPWltYWdlcywKICAgIG51bV9pbmZlcmVuY2Vfc3RlcHM9NTAKKS5pbWFnZXNbMF0KYGBgCgojIyBTRFhMIFJlZmluZXIKClR3by1zdGFnZSBnZW5lcmF0aW9uIGZvciBoaWdoZXIgcXVhbGl0eToKCmBgYHB5dGhvbgpmcm9tIGRpZmZ1c2VycyBpbXBvcnQgU3RhYmxlRGlmZnVzaW9uWExQaXBlbGluZSwgU3RhYmxlRGlmZnVzaW9uWExJbWcySW1nUGlwZWxpbmUKaW1wb3J0IHRvcmNoCgojIExvYWQgYmFzZSBtb2RlbApiYXNlID0gU3RhYmxlRGlmZnVzaW9uWExQaXBlbGluZS5mcm9tX3ByZXRyYWluZWQoCiAgICAic3RhYmlsaXR5YWkvc3RhYmxlLWRpZmZ1c2lvbi14bC1iYXNlLTEuMCIsCiAgICB0b3JjaF9kdHlwZT10b3JjaC5mbG9hdDE2LAogICAgdmFyaWFudD0iZnAxNiIKKS50bygiY3VkYSIpCgojIExvYWQgcmVmaW5lcgpyZWZpbmVyID0gU3RhYmxlRGlmZnVzaW9uWExJbWcySW1nUGlwZWxpbmUuZnJvbV9wcmV0cmFpbmVkKAogICAgInN0YWJpbGl0eWFpL3N0YWJsZS1kaWZmdXNpb24teGwtcmVmaW5lci0xLjAiLAogICAgdG9yY2hfZHR5cGU9dG9yY2guZmxvYXQxNiwKICAgIHZhcmlhbnQ9ImZwMTYiCikudG8oImN1ZGEiKQoKIyBHZW5lcmF0ZSB3aXRoIGJhc2UgKHBhcnRpYWwgZGVub2lzaW5nKQppbWFnZSA9IGJhc2UoCiAgICBwcm9tcHQ9IkEgbWFqZXN0aWMgZWFnbGUgc29hcmluZyBvdmVyIG1vdW50YWlucyIsCiAgICBudW1faW5mZXJlbmNlX3N0ZXBzPTQwLAogICAgZGVub2lzaW5nX2VuZD0wLjgsCiAgICBvdXRwdXRfdHlwZT0ibGF0ZW50IgopLmltYWdlcwoKIyBSZWZpbmUgd2l0aCByZWZpbmVyCnJlZmluZWQgPSByZWZpbmVyKAogICAgcHJvbXB0PSJBIG1hamVzdGljIGVhZ2xlIHNvYXJpbmcgb3ZlciBtb3VudGFpbnMiLAogICAgaW1hZ2U9aW1hZ2UsCiAgICBudW1faW5mZXJlbmNlX3N0ZXBzPTQwLAogICAgZGVub2lzaW5nX3N0YXJ0PTAuOAopLmltYWdlc1swXQpgYGAKCiMjIFQySS1BZGFwdGVyCgpMaWdodHdlaWdodCBjb25kaXRpb25pbmcgd2l0aG91dCBmdWxsIENvbnRyb2xOZXQ6CgpgYGBweXRob24KZnJvbSBkaWZmdXNlcnMgaW1wb3J0IFN0YWJsZURpZmZ1c2lvblhMQWRhcHRlclBpcGVsaW5lLCBUMklBZGFwdGVyCmltcG9ydCB0b3JjaAoKIyBMb2FkIGFkYXB0ZXIKYWRhcHRlciA9IFQySUFkYXB0ZXIuZnJvbV9wcmV0cmFpbmVkKAogICAgIlRlbmNlbnRBUkMvdDJpLWFkYXB0ZXItY2Fubnktc2R4bC0xLjAiLAogICAgdG9yY2hfZHR5cGU9dG9yY2guZmxvYXQxNgopCgpwaXBlID0gU3RhYmxlRGlmZnVzaW9uWExBZGFwdGVyUGlwZWxpbmUuZnJvbV9wcmV0cmFpbmVkKAogICAgInN0YWJpbGl0eWFpL3N0YWJsZS1kaWZmdXNpb24teGwtYmFzZS0xLjAiLAogICAgYWRhcHRlcj1hZGFwdGVyLAogICAgdG9yY2hfZHR5cGU9dG9yY2guZmxvYXQxNgopLnRvKCJjdWRhIikKCiMgR2V0IGNhbm55IGVkZ2VzCmNhbm55X2ltYWdlID0gZ2V0X2Nhbm55X2ltYWdlKGlucHV0X2ltYWdlKQoKaW1hZ2UgPSBwaXBlKAogICAgcHJvbXB0PSJBIGNvbG9yZnVsIGFuaW1lIGNoYXJhY3RlciIsCiAgICBpbWFnZT1jYW5ueV9pbWFnZSwKICAgIG51bV9pbmZlcmVuY2Vfc3RlcHM9MzAsCiAgICBhZGFwdGVyX2NvbmRpdGlvbmluZ19zY2FsZT0wLjgKKS5pbWFnZXNbMF0KYGBgCgojIyBGaW5lLXR1bmluZyB3aXRoIERyZWFtQm9vdGgKClRyYWluIG9uIGN1c3RvbSBzdWJqZWN0czoKCmBgYHB5dGhvbgpmcm9tIGRpZmZ1c2VycyBpbXBvcnQgU3RhYmxlRGlmZnVzaW9uUGlwZWxpbmUsIEREUE1TY2hlZHVsZXIKZnJvbSBkaWZmdXNlcnMub3B0aW1pemF0aW9uIGltcG9ydCBnZXRfc2NoZWR1bGVyCmltcG9ydCB0b3JjaApmcm9tIHRvcmNoLnV0aWxzLmRhdGEgaW1wb3J0IERhdGFzZXQsIERhdGFMb2FkZXIKZnJvbSBQSUwgaW1wb3J0IEltYWdlCmltcG9ydCBvcwoKY2xhc3MgRHJlYW1Cb290aERhdGFzZXQoRGF0YXNldCk6CiAgICBkZWYgX19pbml0X18oc2VsZiwgaW5zdGFuY2VfaW1hZ2VzX3BhdGgsIGluc3RhbmNlX3Byb21wdCwgdG9rZW5pemVyLCBzaXplPTUxMik6CiAgICAgICAgc2VsZi5pbnN0YW5jZV9pbWFnZXNfcGF0aCA9IGluc3RhbmNlX2ltYWdlc19wYXRoCiAgICAgICAgc2VsZi5pbnN0YW5jZV9wcm9tcHQgPSBpbnN0YW5jZV9wcm9tcHQKICAgICAgICBzZWxmLnRva2VuaXplciA9IHRva2VuaXplcgogICAgICAgIHNlbGYuc2l6ZSA9IHNpemUKCiAgICAgICAgc2VsZi5pbnN0YW5jZV9pbWFnZXMgPSBbCiAgICAgICAgICAgIG9zLnBhdGguam9pbihpbnN0YW5jZV9pbWFnZXNfcGF0aCwgZikKICAgICAgICAgICAgZm9yIGYgaW4gb3MubGlzdGRpcihpbnN0YW5jZV9pbWFnZXNfcGF0aCkKICAgICAgICAgICAgaWYgZi5lbmRzd2l0aCgoJy5wbmcnLCAnLmpwZycsICcuanBlZycpKQogICAgICAgIF0KCiAgICBkZWYgX19sZW5fXyhzZWxmKToKICAgICAgICByZXR1cm4gbGVuKHNlbGYuaW5zdGFuY2VfaW1hZ2VzKQoKICAgIGRlZiBfX2dldGl0ZW1fXyhzZWxmLCBpZHgpOgogICAgICAgIGltYWdlID0gSW1hZ2Uub3BlbihzZWxmLmluc3RhbmNlX2ltYWdlc1tpZHhdKS5jb252ZXJ0KCJSR0IiKQogICAgICAgIGltYWdlID0gaW1hZ2UucmVzaXplKChzZWxmLnNpemUsIHNlbGYuc2l6ZSkpCiAgICAgICAgaW1hZ2UgPSB0b3JjaC50ZW5zb3IobnAuYXJyYXkoaW1hZ2UpKS5wZXJtdXRlKDIsIDAsIDEpIC8gMTI3LjUgLSAxLjAKCiAgICAgICAgdG9rZW5zID0gc2VsZi50b2tlbml6ZXIoCiAgICAgICAgICAgIHNlbGYuaW5zdGFuY2VfcHJvbXB0LAogICAgICAgICAgICBwYWRkaW5nPSJtYXhfbGVuZ3RoIiwKICAgICAgICAgICAgbWF4X2xlbmd0aD03NywKICAgICAgICAgICAgdHJ1bmNhdGlvbj1UcnVlLAogICAgICAgICAgICByZXR1cm5fdGVuc29ycz0icHQiCiAgICAgICAgKQoKICAgICAgICByZXR1cm4geyJpbWFnZSI6IGltYWdlLCAiaW5wdXRfaWRzIjogdG9rZW5zLmlucHV0X2lkcy5zcXVlZXplKCl9CgpkZWYgdHJhaW5fZHJlYW1ib290aCgKICAgIHByZXRyYWluZWRfbW9kZWw6IHN0ciwKICAgIGluc3RhbmNlX2RhdGFfZGlyOiBzdHIsCiAgICBpbnN0YW5jZV9wcm9tcHQ6IHN0ciwKICAgIG91dHB1dF9kaXI6IHN0ciwKICAgIGxlYXJuaW5nX3JhdGU6IGZsb2F0ID0gNWUtNiwKICAgIG1heF90cmFpbl9zdGVwczogaW50ID0gODAwLAogICAgdHJhaW5fYmF0Y2hfc2l6ZTogaW50ID0gMQopOgogICAgIyBMb2FkIHBpcGVsaW5lCiAgICBwaXBlID0gU3RhYmxlRGlmZnVzaW9uUGlwZWxpbmUuZnJvbV9wcmV0cmFpbmVkKHByZXRyYWluZWRfbW9kZWwpCgogICAgdW5ldCA9IHBpcGUudW5ldAogICAgdmFlID0gcGlwZS52YWUKICAgIHRleHRfZW5jb2RlciA9IHBpcGUudGV4dF9lbmNvZGVyCiAgICB0b2tlbml6ZXIgPSBwaXBlLnRva2VuaXplcgogICAgbm9pc2Vfc2NoZWR1bGVyID0gRERQTVNjaGVkdWxlci5mcm9tX3ByZXRyYWluZWQocHJldHJhaW5lZF9tb2RlbCwgc3ViZm9sZGVyPSJzY2hlZHVsZXIiKQoKICAgICMgRnJlZXplIFZBRSBhbmQgdGV4dCBlbmNvZGVyCiAgICB2YWUucmVxdWlyZXNfZ3JhZF8oRmFsc2UpCiAgICB0ZXh0X2VuY29kZXIucmVxdWlyZXNfZ3JhZF8oRmFsc2UpCgogICAgIyBDcmVhdGUgZGF0YXNldAogICAgZGF0YXNldCA9IERyZWFtQm9vdGhEYXRhc2V0KAogICAgICAgIGluc3RhbmNlX2RhdGFfZGlyLCBpbnN0YW5jZV9wcm9tcHQsIHRva2VuaXplcgogICAgKQogICAgZGF0YWxvYWRlciA9IERhdGFMb2FkZXIoZGF0YXNldCwgYmF0Y2hfc2l6ZT10cmFpbl9iYXRjaF9zaXplLCBzaHVmZmxlPVRydWUpCgogICAgIyBTZXR1cCBvcHRpbWl6ZXIKICAgIG9wdGltaXplciA9IHRvcmNoLm9wdGltLkFkYW1XKHVuZXQucGFyYW1ldGVycygpLCBscj1sZWFybmluZ19yYXRlKQogICAgbHJfc2NoZWR1bGVyID0gZ2V0X3NjaGVkdWxlcigKICAgICAgICAiY29uc3RhbnQiLAogICAgICAgIG9wdGltaXplcj1vcHRpbWl6ZXIsCiAgICAgICAgbnVtX3dhcm11cF9zdGVwcz0wLAogICAgICAgIG51bV90cmFpbmluZ19zdGVwcz1tYXhfdHJhaW5fc3RlcHMKICAgICkKCiAgICAjIFRyYWluaW5nIGxvb3AKICAgIHVuZXQudHJhaW4oKQogICAgZGV2aWNlID0gImN1ZGEiCiAgICB1bmV0LnRvKGRldmljZSkKICAgIHZhZS50byhkZXZpY2UpCiAgICB0ZXh0X2VuY29kZXIudG8oZGV2aWNlKQoKICAgIGdsb2JhbF9zdGVwID0gMAogICAgZm9yIGVwb2NoIGluIHJhbmdlKG1heF90cmFpbl9zdGVwcyAvLyBsZW4oZGF0YWxvYWRlcikgKyAxKToKICAgICAgICBmb3IgYmF0Y2ggaW4gZGF0YWxvYWRlcjoKICAgICAgICAgICAgaWYgZ2xvYmFsX3N0ZXAgPj0gbWF4X3RyYWluX3N0ZXBzOgogICAgICAgICAgICAgICAgYnJlYWsKCiAgICAgICAgICAgICMgRW5jb2RlIGltYWdlcyB0byBsYXRlbnRzCiAgICAgICAgICAgIGxhdGVudHMgPSB2YWUuZW5jb2RlKGJhdGNoWyJpbWFnZSJdLnRvKGRldmljZSkpLmxhdGVudF9kaXN0LnNhbXBsZSgpCiAgICAgICAgICAgIGxhdGVudHMgPSBsYXRlbnRzICogdmFlLmNvbmZpZy5zY2FsaW5nX2ZhY3RvcgoKICAgICAgICAgICAgIyBTYW1wbGUgbm9pc2UKICAgICAgICAgICAgbm9pc2UgPSB0b3JjaC5yYW5kbl9saWtlKGxhdGVudHMpCiAgICAgICAgICAgIHRpbWVzdGVwcyA9IHRvcmNoLnJhbmRpbnQoMCwgbm9pc2Vfc2NoZWR1bGVyLm51bV90cmFpbl90aW1lc3RlcHMsIChsYXRlbnRzLnNoYXBlWzBdLCkpCiAgICAgICAgICAgIHRpbWVzdGVwcyA9IHRpbWVzdGVwcy50byhkZXZpY2UpCgogICAgICAgICAgICAjIEFkZCBub2lzZQogICAgICAgICAgICBub2lzeV9sYXRlbnRzID0gbm9pc2Vfc2NoZWR1bGVyLmFkZF9ub2lzZShsYXRlbnRzLCBub2lzZSwgdGltZXN0ZXBzKQoKICAgICAgICAgICAgIyBHZXQgdGV4dCBlbWJlZGRpbmdzCiAgICAgICAgICAgIGVuY29kZXJfaGlkZGVuX3N0YXRlcyA9IHRleHRfZW5jb2RlcihiYXRjaFsiaW5wdXRfaWRzIl0udG8oZGV2aWNlKSlbMF0KCiAgICAgICAgICAgICMgUHJlZGljdCBub2lzZQogICAgICAgICAgICBub2lzZV9wcmVkID0gdW5ldChub2lzeV9sYXRlbnRzLCB0aW1lc3RlcHMsIGVuY29kZXJfaGlkZGVuX3N0YXRlcykuc2FtcGxlCgogICAgICAgICAgICAjIENvbXB1dGUgbG9zcwogICAgICAgICAgICBsb3NzID0gdG9yY2gubm4uZnVuY3Rpb25hbC5tc2VfbG9zcyhub2lzZV9wcmVkLCBub2lzZSkKCiAgICAgICAgICAgICMgQmFja3Byb3AKICAgICAgICAgICAgbG9zcy5iYWNrd2FyZCgpCiAgICAgICAgICAgIG9wdGltaXplci5zdGVwKCkKICAgICAgICAgICAgbHJfc2NoZWR1bGVyLnN0ZXAoKQogICAgICAgICAgICBvcHRpbWl6ZXIuemVyb19ncmFkKCkKCiAgICAgICAgICAgIGdsb2JhbF9zdGVwICs9IDEKCiAgICAgICAgICAgIGlmIGdsb2JhbF9zdGVwICUgMTAwID09IDA6CiAgICAgICAgICAgICAgICBwcmludChmIlN0ZXAge2dsb2JhbF9zdGVwfSwgTG9zczoge2xvc3MuaXRlbSgpOi40Zn0iKQoKICAgICMgU2F2ZSBtb2RlbAogICAgcGlwZS51bmV0ID0gdW5ldAogICAgcGlwZS5zYXZlX3ByZXRyYWluZWQob3V0cHV0X2RpcikKYGBgCgojIyBMb1JBIFRyYWluaW5nCgpFZmZpY2llbnQgZmluZS10dW5pbmcgd2l0aCBMb3ctUmFuayBBZGFwdGF0aW9uOgoKYGBgcHl0aG9uCmZyb20gcGVmdCBpbXBvcnQgTG9yYUNvbmZpZywgZ2V0X3BlZnRfbW9kZWwKZnJvbSBkaWZmdXNlcnMgaW1wb3J0IFN0YWJsZURpZmZ1c2lvblBpcGVsaW5lCmltcG9ydCB0b3JjaAoKZGVmIHRyYWluX2xvcmEoCiAgICBiYXNlX21vZGVsOiBzdHIsCiAgICB0cmFpbl9kYXRhc2V0LAogICAgb3V0cHV0X2Rpcjogc3RyLAogICAgbG9yYV9yYW5rOiBpbnQgPSA0LAogICAgbGVhcm5pbmdfcmF0ZTogZmxvYXQgPSAxZS00LAogICAgbWF4X3RyYWluX3N0ZXBzOiBpbnQgPSAxMDAwCik6CiAgICBwaXBlID0gU3RhYmxlRGlmZnVzaW9uUGlwZWxpbmUuZnJvbV9wcmV0cmFpbmVkKGJhc2VfbW9kZWwpCiAgICB1bmV0ID0gcGlwZS51bmV0CgogICAgIyBDb25maWd1cmUgTG9SQQogICAgbG9yYV9jb25maWcgPSBMb3JhQ29uZmlnKAogICAgICAgIHI9bG9yYV9yYW5rLAogICAgICAgIGxvcmFfYWxwaGE9bG9yYV9yYW5rLAogICAgICAgIHRhcmdldF9tb2R1bGVzPVsidG9fcSIsICJ0b192IiwgInRvX2siLCAidG9fb3V0LjAiXSwKICAgICAgICBsb3JhX2Ryb3BvdXQ9MC4xCiAgICApCgogICAgIyBBcHBseSBMb1JBIHRvIFVOZXQKICAgIHVuZXQgPSBnZXRfcGVmdF9tb2RlbCh1bmV0LCBsb3JhX2NvbmZpZykKICAgIHVuZXQucHJpbnRfdHJhaW5hYmxlX3BhcmFtZXRlcnMoKSAgIyBTaG93cyB+MC4xJSB0cmFpbmFibGUKCiAgICAjIFRyYWluIChzaW1pbGFyIHRvIERyZWFtQm9vdGggYnV0IG9ubHkgTG9SQSBwYXJhbXMpCiAgICBvcHRpbWl6ZXIgPSB0b3JjaC5vcHRpbS5BZGFtVygKICAgICAgICB1bmV0LnBhcmFtZXRlcnMoKSwKICAgICAgICBscj1sZWFybmluZ19yYXRlCiAgICApCgogICAgIyAuLi4gdHJhaW5pbmcgbG9vcCAuLi4KCiAgICAjIFNhdmUgTG9SQSB3ZWlnaHRzIG9ubHkKICAgIHVuZXQuc2F2ZV9wcmV0cmFpbmVkKG91dHB1dF9kaXIpCmBgYAoKIyMgVGV4dHVhbCBJbnZlcnNpb24KCkxlYXJuIG5ldyBjb25jZXB0cyB0aHJvdWdoIGVtYmVkZGluZ3M6CgpgYGBweXRob24KZnJvbSBkaWZmdXNlcnMgaW1wb3J0IFN0YWJsZURpZmZ1c2lvblBpcGVsaW5lCmltcG9ydCB0b3JjaAoKIyBMb2FkIHdpdGggdGV4dHVhbCBpbnZlcnNpb24KcGlwZSA9IFN0YWJsZURpZmZ1c2lvblBpcGVsaW5lLmZyb21fcHJldHJhaW5lZCgKICAgICJzdGFibGUtZGlmZnVzaW9uLXYxLTUvc3RhYmxlLWRpZmZ1c2lvbi12MS01IiwKICAgIHRvcmNoX2R0eXBlPXRvcmNoLmZsb2F0MTYKKS50bygiY3VkYSIpCgojIExvYWQgbGVhcm5lZCBlbWJlZGRpbmcKcGlwZS5sb2FkX3RleHR1YWxfaW52ZXJzaW9uKAogICAgInNkLWNvbmNlcHRzLWxpYnJhcnkvY2F0LXRveSIsCiAgICB0b2tlbj0iPGNhdC10b3k+IgopCgojIFVzZSBpbiBwcm9tcHRzCmltYWdlID0gcGlwZSgiQSBwaG90byBvZiA8Y2F0LXRveT4gb24gYSBiZWFjaCIpLmltYWdlc1swXQpgYGAKCiMjIFF1YW50aXphdGlvbgoKUmVkdWNlIG1lbW9yeSB3aXRoIHF1YW50aXphdGlvbjoKCmBgYHB5dGhvbgpmcm9tIGRpZmZ1c2VycyBpbXBvcnQgQml0c0FuZEJ5dGVzQ29uZmlnLCBTdGFibGVEaWZmdXNpb25YTFBpcGVsaW5lCmltcG9ydCB0b3JjaAoKIyA4LWJpdCBxdWFudGl6YXRpb24KcXVhbnRpemF0aW9uX2NvbmZpZyA9IEJpdHNBbmRCeXRlc0NvbmZpZyhsb2FkX2luXzhiaXQ9VHJ1ZSkKCnBpcGUgPSBTdGFibGVEaWZmdXNpb25YTFBpcGVsaW5lLmZyb21fcHJldHJhaW5lZCgKICAgICJzdGFiaWxpdHlhaS9zdGFibGUtZGlmZnVzaW9uLXhsLWJhc2UtMS4wIiwKICAgIHF1YW50aXphdGlvbl9jb25maWc9cXVhbnRpemF0aW9uX2NvbmZpZywKICAgIHRvcmNoX2R0eXBlPXRvcmNoLmZsb2F0MTYKKQpgYGAKCiMjIyBORjQgcXVhbnRpemF0aW9uICg0LWJpdCkKCmBgYHB5dGhvbgpxdWFudGl6YXRpb25fY29uZmlnID0gQml0c0FuZEJ5dGVzQ29uZmlnKAogICAgbG9hZF9pbl80Yml0PVRydWUsCiAgICBibmJfNGJpdF9xdWFudF90eXBlPSJuZjQiLAogICAgYm5iXzRiaXRfY29tcHV0ZV9kdHlwZT10b3JjaC5mbG9hdDE2CikKCnBpcGUgPSBTdGFibGVEaWZmdXNpb25YTFBpcGVsaW5lLmZyb21fcHJldHJhaW5lZCgKICAgICJzdGFiaWxpdHlhaS9zdGFibGUtZGlmZnVzaW9uLXhsLWJhc2UtMS4wIiwKICAgIHF1YW50aXphdGlvbl9jb25maWc9cXVhbnRpemF0aW9uX2NvbmZpZwopCmBgYAoKIyMgUHJvZHVjdGlvbiBEZXBsb3ltZW50CgojIyMgRmFzdEFQSSBzZXJ2ZXIKCmBgYHB5dGhvbgpmcm9tIGZhc3RhcGkgaW1wb3J0IEZhc3RBUEksIEhUVFBFeGNlcHRpb24KZnJvbSBweWRhbnRpYyBpbXBvcnQgQmFzZU1vZGVsCmZyb20gZGlmZnVzZXJzIGltcG9ydCBEaWZmdXNpb25QaXBlbGluZQppbXBvcnQgdG9yY2gKaW1wb3J0IGJhc2U2NApmcm9tIGlvIGltcG9ydCBCeXRlc0lPCgphcHAgPSBGYXN0QVBJKCkKCiMgTG9hZCBtb2RlbCBhdCBzdGFydHVwCnBpcGUgPSBEaWZmdXNpb25QaXBlbGluZS5mcm9tX3ByZXRyYWluZWQoCiAgICAic3RhYmxlLWRpZmZ1c2lvbi12MS01L3N0YWJsZS1kaWZmdXNpb24tdjEtNSIsCiAgICB0b3JjaF9kdHlwZT10b3JjaC5mbG9hdDE2CikudG8oImN1ZGEiKQpwaXBlLmVuYWJsZV9tb2RlbF9jcHVfb2ZmbG9hZCgpCgpjbGFzcyBHZW5lcmF0aW9uUmVxdWVzdChCYXNlTW9kZWwpOgogICAgcHJvbXB0OiBzdHIKICAgIG5lZ2F0aXZlX3Byb21wdDogc3RyID0gIiIKICAgIG51bV9pbmZlcmVuY2Vfc3RlcHM6IGludCA9IDMwCiAgICBndWlkYW5jZV9zY2FsZTogZmxvYXQgPSA3LjUKICAgIHdpZHRoOiBpbnQgPSA1MTIKICAgIGhlaWdodDogaW50ID0gNTEyCiAgICBzZWVkOiBpbnQgPSBOb25lCgpjbGFzcyBHZW5lcmF0aW9uUmVzcG9uc2UoQmFzZU1vZGVsKToKICAgIGltYWdlX2Jhc2U2NDogc3RyCiAgICBzZWVkOiBpbnQKCkBhcHAucG9zdCgiL2dlbmVyYXRlIiwgcmVzcG9uc2VfbW9kZWw9R2VuZXJhdGlvblJlc3BvbnNlKQphc3luYyBkZWYgZ2VuZXJhdGUocmVxdWVzdDogR2VuZXJhdGlvblJlcXVlc3QpOgogICAgdHJ5OgogICAgICAgIGdlbmVyYXRvciA9IE5vbmUKICAgICAgICBzZWVkID0gcmVxdWVzdC5zZWVkIG9yIHRvcmNoLnJhbmRpbnQoMCwgMioqMzIsICgxLCkpLml0ZW0oKQogICAgICAgIGdlbmVyYXRvciA9IHRvcmNoLkdlbmVyYXRvcigiY3VkYSIpLm1hbnVhbF9zZWVkKHNlZWQpCgogICAgICAgIGltYWdlID0gcGlwZSgKICAgICAgICAgICAgcHJvbXB0PXJlcXVlc3QucHJvbXB0LAogICAgICAgICAgICBuZWdhdGl2ZV9wcm9tcHQ9cmVxdWVzdC5uZWdhdGl2ZV9wcm9tcHQsCiAgICAgICAgICAgIG51bV9pbmZlcmVuY2Vfc3RlcHM9cmVxdWVzdC5udW1faW5mZXJlbmNlX3N0ZXBzLAogICAgICAgICAgICBndWlkYW5jZV9zY2FsZT1yZXF1ZXN0Lmd1aWRhbmNlX3NjYWxlLAogICAgICAgICAgICB3aWR0aD1yZXF1ZXN0LndpZHRoLAogICAgICAgICAgICBoZWlnaHQ9cmVxdWVzdC5oZWlnaHQsCiAgICAgICAgICAgIGdlbmVyYXRvcj1nZW5lcmF0b3IKICAgICAgICApLmltYWdlc1swXQoKICAgICAgICAjIENvbnZlcnQgdG8gYmFzZTY0CiAgICAgICAgYnVmZmVyID0gQnl0ZXNJTygpCiAgICAgICAgaW1hZ2Uuc2F2ZShidWZmZXIsIGZvcm1hdD0iUE5HIikKICAgICAgICBpbWFnZV9iYXNlNjQgPSBiYXNlNjQuYjY0ZW5jb2RlKGJ1ZmZlci5nZXR2YWx1ZSgpKS5kZWNvZGUoKQoKICAgICAgICByZXR1cm4gR2VuZXJhdGlvblJlc3BvbnNlKGltYWdlX2Jhc2U2ND1pbWFnZV9iYXNlNjQsIHNlZWQ9c2VlZCkKCiAgICBleGNlcHQgRXhjZXB0aW9uIGFzIGU6CiAgICAgICAgcmFpc2UgSFRUUEV4Y2VwdGlvbihzdGF0dXNfY29kZT01MDAsIGRldGFpbD1zdHIoZSkpCgpAYXBwLmdldCgiL2hlYWx0aCIpCmFzeW5jIGRlZiBoZWFsdGgoKToKICAgIHJldHVybiB7InN0YXR1cyI6ICJoZWFsdGh5In0KYGBgCgojIyMgRG9ja2VyIGRlcGxveW1lbnQKCmBgYGRvY2tlcmZpbGUKRlJPTSBudmlkaWEvY3VkYToxMi4xLXJ1bnRpbWUtdWJ1bnR1MjIuMDQKClJVTiBhcHQtZ2V0IHVwZGF0ZSAmJiBhcHQtZ2V0IGluc3RhbGwgLXkgcHl0aG9uMyBweXRob24zLXBpcAoKV09SS0RJUiAvYXBwCgpDT1BZIHJlcXVpcmVtZW50cy50eHQgLgpSVU4gcGlwMyBpbnN0YWxsIC1yIHJlcXVpcmVtZW50cy50eHQKCkNPUFkgLiAuCgojIFByZS1kb3dubG9hZCBtb2RlbApSVU4gcHl0aG9uMyAtYyAiZnJvbSBkaWZmdXNlcnMgaW1wb3J0IERpZmZ1c2lvblBpcGVsaW5lOyBEaWZmdXNpb25QaXBlbGluZS5mcm9tX3ByZXRyYWluZWQoJ3N0YWJsZS1kaWZmdXNpb24tdjEtNS9zdGFibGUtZGlmZnVzaW9uLXYxLTUnKSIKCkVYUE9TRSA4MDAwCkNNRCBbInV2aWNvcm4iLCAic2VydmVyOmFwcCIsICItLWhvc3QiLCAiMC4wLjAuMCIsICItLXBvcnQiLCAiODAwMCJdCmBgYAoKIyMjIEt1YmVybmV0ZXMgZGVwbG95bWVudAoKYGBgeWFtbAphcGlWZXJzaW9uOiBhcHBzL3YxCmtpbmQ6IERlcGxveW1lbnQKbWV0YWRhdGE6CiAgbmFtZTogc3RhYmxlLWRpZmZ1c2lvbgpzcGVjOgogIHJlcGxpY2FzOiAyCiAgc2VsZWN0b3I6CiAgICBtYXRjaExhYmVsczoKICAgICAgYXBwOiBzdGFibGUtZGlmZnVzaW9uCiAgdGVtcGxhdGU6CiAgICBtZXRhZGF0YToKICAgICAgbGFiZWxzOgogICAgICAgIGFwcDogc3RhYmxlLWRpZmZ1c2lvbgogICAgc3BlYzoKICAgICAgY29udGFpbmVyczoKICAgICAgLSBuYW1lOiBzZAogICAgICAgIGltYWdlOiB5b3VyLXJlZ2lzdHJ5L3N0YWJsZS1kaWZmdXNpb246bGF0ZXN0CiAgICAgICAgcG9ydHM6CiAgICAgICAgLSBjb250YWluZXJQb3J0OiA4MDAwCiAgICAgICAgcmVzb3VyY2VzOgogICAgICAgICAgbGltaXRzOgogICAgICAgICAgICBudmlkaWEuY29tL2dwdTogMQogICAgICAgICAgICBtZW1vcnk6ICIxNkdpIgogICAgICAgICAgcmVxdWVzdHM6CiAgICAgICAgICAgIG52aWRpYS5jb20vZ3B1OiAxCiAgICAgICAgICAgIG1lbW9yeTogIjhHaSIKICAgICAgICBlbnY6CiAgICAgICAgLSBuYW1lOiBUUkFOU0ZPUk1FUlNfQ0FDSEUKICAgICAgICAgIHZhbHVlOiAiL2NhY2hlL2h1Z2dpbmdmYWNlIgogICAgICAgIHZvbHVtZU1vdW50czoKICAgICAgICAtIG5hbWU6IG1vZGVsLWNhY2hlCiAgICAgICAgICBtb3VudFBhdGg6IC9jYWNoZQogICAgICB2b2x1bWVzOgogICAgICAtIG5hbWU6IG1vZGVsLWNhY2hlCiAgICAgICAgcGVyc2lzdGVudFZvbHVtZUNsYWltOgogICAgICAgICAgY2xhaW1OYW1lOiBtb2RlbC1jYWNoZS1wdmMKLS0tCmFwaVZlcnNpb246IHYxCmtpbmQ6IFNlcnZpY2UKbWV0YWRhdGE6CiAgbmFtZTogc3RhYmxlLWRpZmZ1c2lvbgpzcGVjOgogIHNlbGVjdG9yOgogICAgYXBwOiBzdGFibGUtZGlmZnVzaW9uCiAgcG9ydHM6CiAgLSBwb3J0OiA4MAogICAgdGFyZ2V0UG9ydDogODAwMAogIHR5cGU6IExvYWRCYWxhbmNlcgpgYGAKCiMjIENhbGxiYWNrIFN5c3RlbQoKTW9uaXRvciBhbmQgbW9kaWZ5IGdlbmVyYXRpb246CgpgYGBweXRob24KZnJvbSBkaWZmdXNlcnMgaW1wb3J0IFN0YWJsZURpZmZ1c2lvblBpcGVsaW5lCmZyb20gZGlmZnVzZXJzLmNhbGxiYWNrcyBpbXBvcnQgUGlwZWxpbmVDYWxsYmFjawppbXBvcnQgdG9yY2gKCmNsYXNzIFByb2dyZXNzQ2FsbGJhY2soUGlwZWxpbmVDYWxsYmFjayk6CiAgICBkZWYgX19pbml0X18oc2VsZik6CiAgICAgICAgc2VsZi5wcm9ncmVzcyA9IFtdCgogICAgZGVmIGNhbGxiYWNrX2ZuKHNlbGYsIHBpcGUsIHN0ZXBfaW5kZXgsIHRpbWVzdGVwLCBjYWxsYmFja19rd2FyZ3MpOgogICAgICAgIHNlbGYucHJvZ3Jlc3MuYXBwZW5kKHsKICAgICAgICAgICAgInN0ZXAiOiBzdGVwX2luZGV4LAogICAgICAgICAgICAidGltZXN0ZXAiOiB0aW1lc3RlcC5pdGVtKCkKICAgICAgICB9KQoKICAgICAgICAjIE9wdGlvbmFsbHkgbW9kaWZ5IGxhdGVudHMKICAgICAgICBsYXRlbnRzID0gY2FsbGJhY2tfa3dhcmdzWyJsYXRlbnRzIl0KCiAgICAgICAgcmV0dXJuIGNhbGxiYWNrX2t3YXJncwoKIyBVc2UgY2FsbGJhY2sKY2FsbGJhY2sgPSBQcm9ncmVzc0NhbGxiYWNrKCkKCmltYWdlID0gcGlwZSgKICAgIHByb21wdD0iQSBzdW5zZXQiLAogICAgY2FsbGJhY2tfb25fc3RlcF9lbmQ9Y2FsbGJhY2suY2FsbGJhY2tfZm4sCiAgICBjYWxsYmFja19vbl9zdGVwX2VuZF90ZW5zb3JfaW5wdXRzPVsibGF0ZW50cyJdCikuaW1hZ2VzWzBdCgpwcmludChmIkdlbmVyYXRpb24gY29tcGxldGVkIGluIHtsZW4oY2FsbGJhY2sucHJvZ3Jlc3MpfSBzdGVwcyIpCmBgYAoKIyMjIEVhcmx5IHN0b3BwaW5nCgpgYGBweXRob24KZGVmIGVhcmx5X3N0b3BfY2FsbGJhY2socGlwZSwgc3RlcF9pbmRleCwgdGltZXN0ZXAsIGNhbGxiYWNrX2t3YXJncyk6CiAgICAjIFN0b3AgYWZ0ZXIgMjAgc3RlcHMKICAgIGlmIHN0ZXBfaW5kZXggPj0gMjA6CiAgICAgICAgcGlwZS5faW50ZXJydXB0ID0gVHJ1ZQogICAgcmV0dXJuIGNhbGxiYWNrX2t3YXJncwoKaW1hZ2UgPSBwaXBlKAogICAgcHJvbXB0PSJBIGxhbmRzY2FwZSIsCiAgICBudW1faW5mZXJlbmNlX3N0ZXBzPTUwLAogICAgY2FsbGJhY2tfb25fc3RlcF9lbmQ9ZWFybHlfc3RvcF9jYWxsYmFjawopLmltYWdlc1swXQpgYGAKCiMjIE11bHRpLUdQVSBJbmZlcmVuY2UKCiMjIyBEZXZpY2UgbWFwIGF1dG8KCmBgYHB5dGhvbgpmcm9tIGRpZmZ1c2VycyBpbXBvcnQgU3RhYmxlRGlmZnVzaW9uWExQaXBlbGluZQoKcGlwZSA9IFN0YWJsZURpZmZ1c2lvblhMUGlwZWxpbmUuZnJvbV9wcmV0cmFpbmVkKAogICAgInN0YWJpbGl0eWFpL3N0YWJsZS1kaWZmdXNpb24teGwtYmFzZS0xLjAiLAogICAgZGV2aWNlX21hcD0iYXV0byIsICAjIEF1dG9tYXRpY2FsbHkgZGlzdHJpYnV0ZSBhY3Jvc3MgR1BVcwogICAgdG9yY2hfZHR5cGU9dG9yY2guZmxvYXQxNgopCmBgYAoKIyMjIE1hbnVhbCBkaXN0cmlidXRpb24KCmBgYHB5dGhvbgpmcm9tIGFjY2VsZXJhdGUgaW1wb3J0IGluZmVyX2F1dG9fZGV2aWNlX21hcCwgZGlzcGF0Y2hfbW9kZWwKCiMgQ3JlYXRlIGRldmljZSBtYXAKZGV2aWNlX21hcCA9IGluZmVyX2F1dG9fZGV2aWNlX21hcCgKICAgIHBpcGUudW5ldCwKICAgIG1heF9tZW1vcnk9ezA6ICIxMEdpQiIsIDE6ICIxMEdpQiJ9CikKCiMgRGlzcGF0Y2ggbW9kZWwKcGlwZS51bmV0ID0gZGlzcGF0Y2hfbW9kZWwocGlwZS51bmV0LCBkZXZpY2VfbWFwPWRldmljZV9tYXApCmBgYAo=
+# Stable Diffusion Advanced Usage Guide
+
+## Custom Pipelines
+
+### Building from components
+
+```python
+from diffusers import (
+    UNet2DConditionModel,
+    AutoencoderKL,
+    DDPMScheduler,
+    StableDiffusionPipeline
+)
+from transformers import CLIPTextModel, CLIPTokenizer
+import torch
+
+# Load components individually
+unet = UNet2DConditionModel.from_pretrained(
+    "stable-diffusion-v1-5/stable-diffusion-v1-5",
+    subfolder="unet"
+)
+vae = AutoencoderKL.from_pretrained(
+    "stable-diffusion-v1-5/stable-diffusion-v1-5",
+    subfolder="vae"
+)
+text_encoder = CLIPTextModel.from_pretrained(
+    "stable-diffusion-v1-5/stable-diffusion-v1-5",
+    subfolder="text_encoder"
+)
+tokenizer = CLIPTokenizer.from_pretrained(
+    "stable-diffusion-v1-5/stable-diffusion-v1-5",
+    subfolder="tokenizer"
+)
+scheduler = DDPMScheduler.from_pretrained(
+    "stable-diffusion-v1-5/stable-diffusion-v1-5",
+    subfolder="scheduler"
+)
+
+# Assemble pipeline
+pipe = StableDiffusionPipeline(
+    unet=unet,
+    vae=vae,
+    text_encoder=text_encoder,
+    tokenizer=tokenizer,
+    scheduler=scheduler,
+    safety_checker=None,
+    feature_extractor=None,
+    requires_safety_checker=False
+)
+```
+
+### Custom denoising loop
+
+```python
+from diffusers import DDIMScheduler, AutoencoderKL, UNet2DConditionModel
+from transformers import CLIPTextModel, CLIPTokenizer
+import torch
+
+def custom_generate(
+    prompt: str,
+    num_steps: int = 50,
+    guidance_scale: float = 7.5,
+    height: int = 512,
+    width: int = 512
+):
+    # Load components
+    tokenizer = CLIPTokenizer.from_pretrained("openai/clip-vit-large-patch14")
+    text_encoder = CLIPTextModel.from_pretrained("openai/clip-vit-large-patch14")
+    unet = UNet2DConditionModel.from_pretrained("sd-model", subfolder="unet")
+    vae = AutoencoderKL.from_pretrained("sd-model", subfolder="vae")
+    scheduler = DDIMScheduler.from_pretrained("sd-model", subfolder="scheduler")
+
+    device = "cuda"
+    text_encoder.to(device)
+    unet.to(device)
+    vae.to(device)
+
+    # Encode prompt
+    text_input = tokenizer(
+        prompt,
+        padding="max_length",
+        max_length=77,
+        truncation=True,
+        return_tensors="pt"
+    )
+    text_embeddings = text_encoder(text_input.input_ids.to(device))[0]
+
+    # Unconditional embeddings for classifier-free guidance
+    uncond_input = tokenizer(
+        "",
+        padding="max_length",
+        max_length=77,
+        return_tensors="pt"
+    )
+    uncond_embeddings = text_encoder(uncond_input.input_ids.to(device))[0]
+
+    # Concatenate for batch processing
+    text_embeddings = torch.cat([uncond_embeddings, text_embeddings])
+
+    # Initialize latents
+    latents = torch.randn(
+        (1, 4, height // 8, width // 8),
+        device=device
+    )
+    latents = latents * scheduler.init_noise_sigma
+
+    # Denoising loop
+    scheduler.set_timesteps(num_steps)
+    for t in scheduler.timesteps:
+        latent_model_input = torch.cat([latents] * 2)
+        latent_model_input = scheduler.scale_model_input(latent_model_input, t)
+
+        # Predict noise
+        with torch.no_grad():
+            noise_pred = unet(
+                latent_model_input,
+                t,
+                encoder_hidden_states=text_embeddings
+            ).sample
+
+        # Classifier-free guidance
+        noise_pred_uncond, noise_pred_cond = noise_pred.chunk(2)
+        noise_pred = noise_pred_uncond + guidance_scale * (
+            noise_pred_cond - noise_pred_uncond
+        )
+
+        # Update latents
+        latents = scheduler.step(noise_pred, t, latents).prev_sample
+
+    # Decode latents
+    latents = latents / vae.config.scaling_factor
+    with torch.no_grad():
+        image = vae.decode(latents).sample
+
+    # Convert to PIL
+    image = (image / 2 + 0.5).clamp(0, 1)
+    image = image.cpu().permute(0, 2, 3, 1).numpy()
+    image = (image * 255).round().astype("uint8")[0]
+
+    return Image.fromarray(image)
+```
+
+## IP-Adapter
+
+Use image prompts alongside text:
+
+```python
+from diffusers import StableDiffusionPipeline
+from diffusers.utils import load_image
+import torch
+
+pipe = StableDiffusionPipeline.from_pretrained(
+    "stable-diffusion-v1-5/stable-diffusion-v1-5",
+    torch_dtype=torch.float16
+).to("cuda")
+
+# Load IP-Adapter
+pipe.load_ip_adapter(
+    "h94/IP-Adapter",
+    subfolder="models",
+    weight_name="ip-adapter_sd15.bin"
+)
+
+# Set IP-Adapter scale
+pipe.set_ip_adapter_scale(0.6)
+
+# Load reference image
+ip_image = load_image("reference_style.jpg")
+
+# Generate with image + text prompt
+image = pipe(
+    prompt="A portrait in a garden",
+    ip_adapter_image=ip_image,
+    num_inference_steps=50
+).images[0]
+```
+
+### Multiple IP-Adapter images
+
+```python
+# Use multiple reference images
+pipe.set_ip_adapter_scale([0.5, 0.7])
+
+images = [
+    load_image("style_reference.jpg"),
+    load_image("composition_reference.jpg")
+]
+
+result = pipe(
+    prompt="A landscape painting",
+    ip_adapter_image=images,
+    num_inference_steps=50
+).images[0]
+```
+
+## SDXL Refiner
+
+Two-stage generation for higher quality:
+
+```python
+from diffusers import StableDiffusionXLPipeline, StableDiffusionXLImg2ImgPipeline
+import torch
+
+# Load base model
+base = StableDiffusionXLPipeline.from_pretrained(
+    "stabilityai/stable-diffusion-xl-base-1.0",
+    torch_dtype=torch.float16,
+    variant="fp16"
+).to("cuda")
+
+# Load refiner
+refiner = StableDiffusionXLImg2ImgPipeline.from_pretrained(
+    "stabilityai/stable-diffusion-xl-refiner-1.0",
+    torch_dtype=torch.float16,
+    variant="fp16"
+).to("cuda")
+
+# Generate with base (partial denoising)
+image = base(
+    prompt="A majestic eagle soaring over mountains",
+    num_inference_steps=40,
+    denoising_end=0.8,
+    output_type="latent"
+).images
+
+# Refine with refiner
+refined = refiner(
+    prompt="A majestic eagle soaring over mountains",
+    image=image,
+    num_inference_steps=40,
+    denoising_start=0.8
+).images[0]
+```
+
+## T2I-Adapter
+
+Lightweight conditioning without full ControlNet:
+
+```python
+from diffusers import StableDiffusionXLAdapterPipeline, T2IAdapter
+import torch
+
+# Load adapter
+adapter = T2IAdapter.from_pretrained(
+    "TencentARC/t2i-adapter-canny-sdxl-1.0",
+    torch_dtype=torch.float16
+)
+
+pipe = StableDiffusionXLAdapterPipeline.from_pretrained(
+    "stabilityai/stable-diffusion-xl-base-1.0",
+    adapter=adapter,
+    torch_dtype=torch.float16
+).to("cuda")
+
+# Get canny edges
+canny_image = get_canny_image(input_image)
+
+image = pipe(
+    prompt="A colorful anime character",
+    image=canny_image,
+    num_inference_steps=30,
+    adapter_conditioning_scale=0.8
+).images[0]
+```
+
+## Fine-tuning with DreamBooth
+
+Train on custom subjects:
+
+```python
+from diffusers import StableDiffusionPipeline, DDPMScheduler
+from diffusers.optimization import get_scheduler
+import torch
+from torch.utils.data import Dataset, DataLoader
+from PIL import Image
+import os
+
+class DreamBoothDataset(Dataset):
+    def __init__(self, instance_images_path, instance_prompt, tokenizer, size=512):
+        self.instance_images_path = instance_images_path
+        self.instance_prompt = instance_prompt
+        self.tokenizer = tokenizer
+        self.size = size
+
+        self.instance_images = [
+            os.path.join(instance_images_path, f)
+            for f in os.listdir(instance_images_path)
+            if f.endswith(('.png', '.jpg', '.jpeg'))
+        ]
+
+    def __len__(self):
+        return len(self.instance_images)
+
+    def __getitem__(self, idx):
+        image = Image.open(self.instance_images[idx]).convert("RGB")
+        image = image.resize((self.size, self.size))
+        image = torch.tensor(np.array(image)).permute(2, 0, 1) / 127.5 - 1.0
+
+        tokens = self.tokenizer(
+            self.instance_prompt,
+            padding="max_length",
+            max_length=77,
+            truncation=True,
+            return_tensors="pt"
+        )
+
+        return {"image": image, "input_ids": tokens.input_ids.squeeze()}
+
+def train_dreambooth(
+    pretrained_model: str,
+    instance_data_dir: str,
+    instance_prompt: str,
+    output_dir: str,
+    learning_rate: float = 5e-6,
+    max_train_steps: int = 800,
+    train_batch_size: int = 1
+):
+    # Load pipeline
+    pipe = StableDiffusionPipeline.from_pretrained(pretrained_model)
+
+    unet = pipe.unet
+    vae = pipe.vae
+    text_encoder = pipe.text_encoder
+    tokenizer = pipe.tokenizer
+    noise_scheduler = DDPMScheduler.from_pretrained(pretrained_model, subfolder="scheduler")
+
+    # Freeze VAE and text encoder
+    vae.requires_grad_(False)
+    text_encoder.requires_grad_(False)
+
+    # Create dataset
+    dataset = DreamBoothDataset(
+        instance_data_dir, instance_prompt, tokenizer
+    )
+    dataloader = DataLoader(dataset, batch_size=train_batch_size, shuffle=True)
+
+    # Setup optimizer
+    optimizer = torch.optim.AdamW(unet.parameters(), lr=learning_rate)
+    lr_scheduler = get_scheduler(
+        "constant",
+        optimizer=optimizer,
+        num_warmup_steps=0,
+        num_training_steps=max_train_steps
+    )
+
+    # Training loop
+    unet.train()
+    device = "cuda"
+    unet.to(device)
+    vae.to(device)
+    text_encoder.to(device)
+
+    global_step = 0
+    for epoch in range(max_train_steps // len(dataloader) + 1):
+        for batch in dataloader:
+            if global_step >= max_train_steps:
+                break
+
+            # Encode images to latents
+            latents = vae.encode(batch["image"].to(device)).latent_dist.sample()
+            latents = latents * vae.config.scaling_factor
+
+            # Sample noise
+            noise = torch.randn_like(latents)
+            timesteps = torch.randint(0, noise_scheduler.num_train_timesteps, (latents.shape[0],))
+            timesteps = timesteps.to(device)
+
+            # Add noise
+            noisy_latents = noise_scheduler.add_noise(latents, noise, timesteps)
+
+            # Get text embeddings
+            encoder_hidden_states = text_encoder(batch["input_ids"].to(device))[0]
+
+            # Predict noise
+            noise_pred = unet(noisy_latents, timesteps, encoder_hidden_states).sample
+
+            # Compute loss
+            loss = torch.nn.functional.mse_loss(noise_pred, noise)
+
+            # Backprop
+            loss.backward()
+            optimizer.step()
+            lr_scheduler.step()
+            optimizer.zero_grad()
+
+            global_step += 1
+
+            if global_step % 100 == 0:
+                print(f"Step {global_step}, Loss: {loss.item():.4f}")
+
+    # Save model
+    pipe.unet = unet
+    pipe.save_pretrained(output_dir)
+```
+
+## LoRA Training
+
+Efficient fine-tuning with Low-Rank Adaptation:
+
+```python
+from peft import LoraConfig, get_peft_model
+from diffusers import StableDiffusionPipeline
+import torch
+
+def train_lora(
+    base_model: str,
+    train_dataset,
+    output_dir: str,
+    lora_rank: int = 4,
+    learning_rate: float = 1e-4,
+    max_train_steps: int = 1000
+):
+    pipe = StableDiffusionPipeline.from_pretrained(base_model)
+    unet = pipe.unet
+
+    # Configure LoRA
+    lora_config = LoraConfig(
+        r=lora_rank,
+        lora_alpha=lora_rank,
+        target_modules=["to_q", "to_v", "to_k", "to_out.0"],
+        lora_dropout=0.1
+    )
+
+    # Apply LoRA to UNet
+    unet = get_peft_model(unet, lora_config)
+    unet.print_trainable_parameters()  # Shows ~0.1% trainable
+
+    # Train (similar to DreamBooth but only LoRA params)
+    optimizer = torch.optim.AdamW(
+        unet.parameters(),
+        lr=learning_rate
+    )
+
+    # ... training loop ...
+
+    # Save LoRA weights only
+    unet.save_pretrained(output_dir)
+```
+
+## Textual Inversion
+
+Learn new concepts through embeddings:
+
+```python
+from diffusers import StableDiffusionPipeline
+import torch
+
+# Load with textual inversion
+pipe = StableDiffusionPipeline.from_pretrained(
+    "stable-diffusion-v1-5/stable-diffusion-v1-5",
+    torch_dtype=torch.float16
+).to("cuda")
+
+# Load learned embedding
+pipe.load_textual_inversion(
+    "sd-concepts-library/cat-toy",
+    token="<cat-toy>"
+)
+
+# Use in prompts
+image = pipe("A photo of <cat-toy> on a beach").images[0]
+```
+
+## Quantization
+
+Reduce memory with quantization:
+
+```python
+from diffusers import BitsAndBytesConfig, StableDiffusionXLPipeline
+import torch
+
+# 8-bit quantization
+quantization_config = BitsAndBytesConfig(load_in_8bit=True)
+
+pipe = StableDiffusionXLPipeline.from_pretrained(
+    "stabilityai/stable-diffusion-xl-base-1.0",
+    quantization_config=quantization_config,
+    torch_dtype=torch.float16
+)
+```
+
+### NF4 quantization (4-bit)
+
+```python
+quantization_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_quant_type="nf4",
+    bnb_4bit_compute_dtype=torch.float16
+)
+
+pipe = StableDiffusionXLPipeline.from_pretrained(
+    "stabilityai/stable-diffusion-xl-base-1.0",
+    quantization_config=quantization_config
+)
+```
+
+## Production Deployment
+
+### FastAPI server
+
+```python
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
+from diffusers import DiffusionPipeline
+import torch
+import base64
+from io import BytesIO
+
+app = FastAPI()
+
+# Load model at startup
+pipe = DiffusionPipeline.from_pretrained(
+    "stable-diffusion-v1-5/stable-diffusion-v1-5",
+    torch_dtype=torch.float16
+).to("cuda")
+pipe.enable_model_cpu_offload()
+
+class GenerationRequest(BaseModel):
+    prompt: str
+    negative_prompt: str = ""
+    num_inference_steps: int = 30
+    guidance_scale: float = 7.5
+    width: int = 512
+    height: int = 512
+    seed: int = None
+
+class GenerationResponse(BaseModel):
+    image_base64: str
+    seed: int
+
+@app.post("/generate", response_model=GenerationResponse)
+async def generate(request: GenerationRequest):
+    try:
+        generator = None
+        seed = request.seed or torch.randint(0, 2**32, (1,)).item()
+        generator = torch.Generator("cuda").manual_seed(seed)
+
+        image = pipe(
+            prompt=request.prompt,
+            negative_prompt=request.negative_prompt,
+            num_inference_steps=request.num_inference_steps,
+            guidance_scale=request.guidance_scale,
+            width=request.width,
+            height=request.height,
+            generator=generator
+        ).images[0]
+
+        # Convert to base64
+        buffer = BytesIO()
+        image.save(buffer, format="PNG")
+        image_base64 = base64.b64encode(buffer.getvalue()).decode()
+
+        return GenerationResponse(image_base64=image_base64, seed=seed)
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/health")
+async def health():
+    return {"status": "healthy"}
+```
+
+### Docker deployment
+
+```dockerfile
+FROM nvidia/cuda:12.1-runtime-ubuntu22.04
+
+RUN apt-get update && apt-get install -y python3 python3-pip
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip3 install -r requirements.txt
+
+COPY . .
+
+# Pre-download model
+RUN python3 -c "from diffusers import DiffusionPipeline; DiffusionPipeline.from_pretrained('stable-diffusion-v1-5/stable-diffusion-v1-5')"
+
+EXPOSE 8000
+CMD ["uvicorn", "server:app", "--host", "0.0.0.0", "--port", "8000"]
+```
+
+### Kubernetes deployment
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stable-diffusion
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: stable-diffusion
+  template:
+    metadata:
+      labels:
+        app: stable-diffusion
+    spec:
+      containers:
+      - name: sd
+        image: your-registry/stable-diffusion:latest
+        ports:
+        - containerPort: 8000
+        resources:
+          limits:
+            nvidia.com/gpu: 1
+            memory: "16Gi"
+          requests:
+            nvidia.com/gpu: 1
+            memory: "8Gi"
+        env:
+        - name: TRANSFORMERS_CACHE
+          value: "/cache/huggingface"
+        volumeMounts:
+        - name: model-cache
+          mountPath: /cache
+      volumes:
+      - name: model-cache
+        persistentVolumeClaim:
+          claimName: model-cache-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: stable-diffusion
+spec:
+  selector:
+    app: stable-diffusion
+  ports:
+  - port: 80
+    targetPort: 8000
+  type: LoadBalancer
+```
+
+## Callback System
+
+Monitor and modify generation:
+
+```python
+from diffusers import StableDiffusionPipeline
+from diffusers.callbacks import PipelineCallback
+import torch
+
+class ProgressCallback(PipelineCallback):
+    def __init__(self):
+        self.progress = []
+
+    def callback_fn(self, pipe, step_index, timestep, callback_kwargs):
+        self.progress.append({
+            "step": step_index,
+            "timestep": timestep.item()
+        })
+
+        # Optionally modify latents
+        latents = callback_kwargs["latents"]
+
+        return callback_kwargs
+
+# Use callback
+callback = ProgressCallback()
+
+image = pipe(
+    prompt="A sunset",
+    callback_on_step_end=callback.callback_fn,
+    callback_on_step_end_tensor_inputs=["latents"]
+).images[0]
+
+print(f"Generation completed in {len(callback.progress)} steps")
+```
+
+### Early stopping
+
+```python
+def early_stop_callback(pipe, step_index, timestep, callback_kwargs):
+    # Stop after 20 steps
+    if step_index >= 20:
+        pipe._interrupt = True
+    return callback_kwargs
+
+image = pipe(
+    prompt="A landscape",
+    num_inference_steps=50,
+    callback_on_step_end=early_stop_callback
+).images[0]
+```
+
+## Multi-GPU Inference
+
+### Device map auto
+
+```python
+from diffusers import StableDiffusionXLPipeline
+
+pipe = StableDiffusionXLPipeline.from_pretrained(
+    "stabilityai/stable-diffusion-xl-base-1.0",
+    device_map="auto",  # Automatically distribute across GPUs
+    torch_dtype=torch.float16
+)
+```
+
+### Manual distribution
+
+```python
+from accelerate import infer_auto_device_map, dispatch_model
+
+# Create device map
+device_map = infer_auto_device_map(
+    pipe.unet,
+    max_memory={0: "10GiB", 1: "10GiB"}
+)
+
+# Dispatch model
+pipe.unet = dispatch_model(pipe.unet, device_map=device_map)
+```

@@ -1,1 +1,123 @@
-LS0tCm5hbWU6IGdpdGh1Yi1hcGktcHVzaC13aXRoLWJ1aWxkCmRlc2NyaXB0aW9uOiBHaXRIdWIg5o6o6YCBICsg5pys5ZywIGJ1aWxkIOmqjOivgeW3peS9nOa1ge+8jOmAgueUqOS6jiBHaXRIdWIgUGFnZXMg5YmN56uv6aG555uuCmNhdGVnb3J5OiBnaXRodWIKLS0tCgojIEdpdEh1YiDmjqjpgIEgKyBCdWlsZCDpqozor4Hlt6XkvZzmtYEKCiMjIOS9leaXtueUqArlkJEgR2l0SHViIOS7k+W6k+aOqOmAgeS7o+eggeaXtu+8iOWwpOWFtuaYr+WJjeerr+mhueebru+8ieOAggoKIyMg5qCH5YeG5rWB56iLCgojIyMgMS4g5pys5Zyw5L+u5pS55paH5Lu2CgojIyMgMi4g5pys5Zyw6aqM6K+BIGJ1aWxkCmBgYGJhc2gKbnBtIGluc3RhbGwKbnBtIHJ1biBidWlsZApgYGAK56Gu6K6kIFR5cGVTY3JpcHQg57yW6K+RICsgVml0ZSDmnoTlu7rlnYfmiJDlip/lkI7lho3mjqjpgIHjgIIKCiMjIyAzLiDmjqjpgIHvvIjkuKTnp43mlrnlvI/vvIkKCioq5pa55byPIEHvvJpnaXQgcmVtb3RlIHNldC10b2tlbu+8iOaOqOiNkO+8iSoqCmBgYGJhc2gKZ2l0IHJlbW90ZSBzZXQtdXJsIG9yaWdpbiBodHRwczovL1RPS0VOQGdpdGh1Yi5jb20vdXNlci9yZXBvLmdpdApnaXQgYWRkIC4gJiYgZ2l0IGNvbW1pdCAtbSAibWVzc2FnZSIgJiYgZ2l0IHB1c2gKYGBgCuazqOaEj++8mlRPS0VOIOabv+aNouS4uuecn+WuniBHaXRIdWIgUEFU44CCCgoqKuaWueW8jyBC77yaR2l0SHViIEFQSe+8iGdpdCBwdXNoIOWksei0peaXtueUqO+8iSoqCmBgYGJhc2gKU0hBPSQoZ2ggYXBpICJyZXBvcy91c2VyL3JlcG8vY29udGVudHMvcGF0aD9yZWY9bWFpbiIgLS1qcSAnLnNoYScpCkNPTlRFTlQ9JChiYXNlNjQgLWkgcGF0aC90by9maWxlKQpnaCBhcGkgLS1tZXRob2QgUFVUICJyZXBvcy91c2VyL3JlcG8vY29udGVudHMvcGF0aCIgXAogIC1mIG1lc3NhZ2U9ImNvbW1pdCBtZXNzYWdlIiBcCiAgLWYgY29udGVudD0iJENPTlRFTlQiIFwKICAtZiBzaGE9IiRTSEEiCmBgYAoKIyMjIDQuIOetieW+hSBHaXRIdWIgQWN0aW9ucwpgYGBiYXNoCmdoIGFwaSByZXBvcy91c2VyL3JlcG8vYWN0aW9ucy9ydW5zIC0tanEgJy53b3JrZmxvd19ydW5zWzBdIHwge3N0YXR1cywgY29uY2x1c2lvbn0nCmBgYArnrYnlvoUgYGNvbmNsdXNpb25gIOWPmOS4uiBgc3VjY2Vzc2Ag5oiWIGBmYWlsdXJlYOOAggoKIyMg5bi46KeB6ZSZ6K+vCgojIyMgVHlwZVNjcmlwdCBgYXMgY29uc3RgIOWtl+mdoumHj+exu+Wei+S4jeWFvOWuue+8iOmrmOmikei4qeWdke+8iQoqKumUmeivryoq77yaYExhYmVsc2Ag57G75Z6L55SoIGB0eXBlb2YgbGFiZWxzYCDml7bvvIzkuK3oi7Hmloflr7nosaHlrZfpnaLph48gVFMg5oql6ZSZ44CM57G75Z6L5LiN5Y+v5YiG6YWN44CN44CCCioq5qC55ZugKirvvJpUeXBlU2NyaXB0IOaOqOaWreS4pOS4qiBgYXMgY29uc3RgIOWvueixoeS4uuS4jeWQjOWtl+mdoumHj+exu+Wei++8jOWNs+S9v+e7k+aehOWujOWFqOS4gOiHtOOAggoqKuino+WGsyoq77yaCmBgYHR5cGVzY3JpcHQKLy8g4p2MIOaKpemUme+8mlR5cGUgJyJOYW1lIicgaXMgbm90IGFzc2lnbmFibGUgdG8gdHlwZSAnIuWnk+WQjSInCnR5cGUgTGFiZWxzID0gdHlwZW9mIGxhYmVscwoKLy8g4pyFIOato+ehru+8muS9v+eUqCBSZWNvcmQ8c3RyaW5nLCBzdHJpbmc+CnR5cGUgTGFiZWxzID0gUmVjb3JkPHN0cmluZywgc3RyaW5nPgpjb25zdCBpMThuID0gKGxhbmc6ICd6aCcgfCAnZW4nKTogTGFiZWxzID0+IGxhbmcgPT09ICdlbicgPyBsYWJlbHNFbiA6IGxhYmVscwpgYGAKCiMjIyBnaXQgcHVzaCAvIGdpdCByZW1vdGUgc2V0LXVybCDlnYfmiqUgIkRldmljZSBub3QgY29uZmlndXJlZCIKKirljp/lm6AqKu+8mmdpdC1jcmVkZW50aWFsIGhlbHBlciDlnKjmnKznjq/looPkuI3lj6/nlKjvvIzku7vkvZXotbAgZ2l0IGNyZWRlbnRpYWwg55qE5pa55byP6YO95aSx6LSl44CCCioq6Kej5YazKirvvJrlp4vnu4jnlKggR2l0SHViIEFQSSDmlrnlvI/vvIjmlrnlvI8gQu+8ieaOqOmAge+8jOS4jeWwneivlSBnaXQgcHVzaOOAggo+IOaVmeiure+8iOmrmOmikei4qeWdke+8ie+8muacrOeOr+WigyBnaXQgY3JlZGVudGlhbCDmsLjov5zlpLHotKXvvIzku7vkvZUgZ2l0IHB1c2gg5pa55byP6YO95LiN5Y+v55So44CC5b+F6aG75pys5ZywIGJ1aWxkIOmqjOivgSDihpIgR2l0SHViIEFQSSDmjqjpgIEg4oaSIOetieW+hSBBY3Rpb25zIOehruiupOOAggoKIyMjIOeugOWOhuermeeJueS+i++8iC90bXAvcmVzdW1lLWJ1aWxk77yJCmBgYGJhc2gKIyDpppbmrKHvvJrlhYvpmobvvIgtLWRlcHRoPTEg5Yqg6YCf77yJCmdpdCBjbG9uZSAtLWRlcHRoPTEgaHR0cHM6Ly9naXRodWIuY29tL2xpci1uYXZjb28vcmVzdW1lLmdpdCAvdG1wL3Jlc3VtZS1idWlsZAoKIyDkv67mlLnlkI7vvJrlpI3liLbmlofku7YgKyDmnKzlnLDpqozor4EgYnVpbGQKY3AgL3RtcC9yZXN1bWVfYXBwLnRzeCAvdG1wL3Jlc3VtZS1idWlsZC9zcmMvQXBwLnRzeApjZCAvdG1wL3Jlc3VtZS1idWlsZCAmJiBucG0gaW5zdGFsbCAmJiBucG0gcnVuIGJ1aWxkCgojIOehruiupCBidWlsZCDmiJDlip/vvIjml6AgVFMg6ZSZ6K+v77yJ5ZCO77yM55SoIEdpdEh1YiBBUEkg5o6o6YCBClNIQT0kKGdoIGFwaSAicmVwb3MvbGlyLW5hdmNvby9yZXN1bWUvY29udGVudHMvc3JjL0FwcC50c3g/cmVmPW1haW4iIC0tanEgJy5zaGEnKQpDT05URU5UPSQoYmFzZTY0IC1pIC90bXAvcmVzdW1lX2FwcC50c3gpCmdoIGFwaSAtLW1ldGhvZCBQVVQgInJlcG9zL2xpci1uYXZjb28vcmVzdW1lL2NvbnRlbnRzL3NyYy9BcHAudHN4IiBcCiAgLWYgbWVzc2FnZT0iY29tbWl0IG1lc3NhZ2UiIC1mIGNvbnRlbnQ9IiRDT05URU5UIiAtZiBzaGE9IiRTSEEiCgojIOaOqOmAgeWQjui9ruivoiBBY3Rpb25zIOeKtuaAge+8iOavj+asoSBwdXNoIOWQjuW/hemhu+aJp+ihjO+8iQpzbGVlcCAzNSAmJiBnaCBhcGkgcmVwb3MvbGlyLW5hdmNvby9yZXN1bWUvYWN0aW9ucy9ydW5zIC0tanEgJy53b3JrZmxvd19ydW5zWzBdIHwge3N0YXR1cywgY29uY2x1c2lvbn0nCmBgYAoKIyMjIOeugOWOhuermeaWsOWinuaVsOaNruadoeebruWtl+auteinhOiMgwrlnKggYHJlc3VtZURhdGFgIOS4reaWsOWinuWPr+mAieWtl+aute+8iOWmgiBgYWNoaWV2ZW1lbnRg77yJ5pe277yaCjEuIOebtOaOpeWcqOWvueW6lOadoeebruWvueixoeS4rea3u+WKoCBgYWNoaWV2ZW1lbnQ6ICflhoXlrrknYAoyLiBKU1gg5riy5p+T5aSE5L2/55SoIGAoZXhwIGFzIGFueSkuYWNoaWV2ZW1lbnRgIOiuv+mXru+8iOmBv+WFjeS/ruaUueWFqOWxgOexu+Wei++8iQozLiDmnaHku7bmuLLmn5PnlKggYHsoZXhwIGFzIGFueSkuYWNoaWV2ZW1lbnQgJiYgKC4uLil9YAoKIyMjIFR5cGVTY3JpcHQgYGFzIGNvbnN0YCDlrZfpnaLph4/nsbvlnovkuI3lhbzlrrnvvIjpq5jpopHouKnlnZHvvIkKKirplJnor68qKu+8mmBMYWJlbHNgIOexu+Wei+eUqCBgdHlwZW9mIGxhYmVsc2Ag5pe277yM5Lit6Iux5paH5a+56LGh5a2X6Z2i6YePIFRTIOaKpemUmeOAjOexu+Wei+S4jeWPr+WIhumFjeOAjeOAggoqKuagueWboCoq77yaVHlwZVNjcmlwdCDmjqjmlq3kuKTkuKogYGFzIGNvbnN0YCDlr7nosaHkuLrkuI3lkIzlrZfpnaLph4/nsbvlnovvvIzljbPkvb/nu5PmnoTlrozlhajkuIDoh7TjgIIKKirop6PlhrMqKu+8mgpgYGB0eXBlc2NyaXB0Ci8vIOKdjCDmiqXplJnvvJpUeXBlICciTmFtZSInIGlzIG5vdCBhc3NpZ25hYmxlIHRvIHR5cGUgJyLlp5PlkI0iJwp0eXBlIExhYmVscyA9IHR5cGVvZiBsYWJlbHMKCi8vIOKchSDmraPnoa7vvJrkvb/nlKggUmVjb3JkPHN0cmluZywgc3RyaW5nPgp0eXBlIExhYmVscyA9IFJlY29yZDxzdHJpbmcsIHN0cmluZz4KY29uc3QgaTE4biA9IChsYW5nOiAnemgnIHwgJ2VuJyk6IExhYmVscyA9PiBsYW5nID09PSAnZW4nID8gbGFiZWxzRW4gOiBsYWJlbHMKYGBgCgojIyMgVHlwZVNjcmlwdCDlj6/pgInlrZfmrrXlsZ7mgKfkuI3lrZjlnKjvvIjmlrDlop7lrZfmrrXlnLrmma/vvIzpq5jpopHouKnlnZHvvIkKKirplJnor68qKu+8mmBQcm9wZXJ0eSAnYWNoaWV2ZW1lbnQnIGRvZXMgbm90IGV4aXN0IG9uIHR5cGUgJy4uLidgIOKAlCDnu5nmlbDmja7mnaHnm67mlrDlop7lj6/pgInlrZfmrrXml7bvvIzlt7LlrprkuYnnmoTnsbvlnovmsqHmnInor6XlrZfmrrXjgIIKKirop6PlhrMqKu+8muWcqCBKU1gg5Lit5L2/55So57G75Z6L5pat6KiAIGAoZXhwIGFzIGFueSkuYWNoaWV2ZW1lbnRg77yM6YG/5YWN5L+u5pS55YWo5bGA5pWw5o2u57G75Z6L44CCCmBgYHR5cGVzY3JpcHQKLy8g4pyFIOWcqCBKU1gg5riy5p+T5LitCnsoZXhwIGFzIGFueSkuYWNoaWV2ZW1lbnQgJiYgKAogIDxkaXY+eyhleHAgYXMgYW55KS5hY2hpZXZlbWVudH08L2Rpdj4KKX0KYGBgCgojIyMgR2l0SHViIEFjdGlvbnMgYnVpbGQg5aSx6LSl5o6S5p+l77yI6auY6aKR6Lip5Z2R77yJCioq6Zeu6aKYKirvvJpHaXRIdWIgQWN0aW9ucyDml6Xlv5fkuI3lr7nlpJbmmrTpnLIgQVBJ77yM5peg5rOV6L+c56iL5o6S5p+l5aSx6LSl5Y6f5Zug44CCCioq6Kej5YazKirvvJrlhYvpmobku5PlupPliLDmnKzlnLDlrozmlbQgYnVpbGQg6aqM6K+B44CCCmBgYGJhc2gKZ2l0IGNsb25lIC0tZGVwdGg9MSBodHRwczovL2dpdGh1Yi5jb20vdXNlci9yZXBvLmdpdCAvdG1wL3JlcG8tYnVpbGQKY2QgL3RtcC9yZXBvLWJ1aWxkICYmIG5wbSBpbnN0YWxsICYmIG5wbSBydW4gYnVpbGQKIyDmnKzlnLAgYnVpbGQg5aSx6LSl5pe277yM6ZSZ6K+v5L+h5oGv55u05o6l6L6T5Ye65Zyo57uI56uvCmBgYAo=
+---
+name: github-api-push-with-build
+description: GitHub 推送 + 本地 build 验证工作流，适用于 GitHub Pages 前端项目
+category: github
+---
+
+# GitHub 推送 + Build 验证工作流
+
+## 何时用
+向 GitHub 仓库推送代码时（尤其是前端项目）。
+
+## 标准流程
+
+### 1. 本地修改文件
+
+### 2. 本地验证 build
+```bash
+npm install
+npm run build
+```
+确认 TypeScript 编译 + Vite 构建均成功后再推送。
+
+### 3. 推送（两种方式）
+
+**方式 A：git remote set-token（推荐）**
+```bash
+git remote set-url origin https://TOKEN@github.com/user/repo.git
+git add . && git commit -m "message" && git push
+```
+注意：TOKEN 替换为真实 GitHub PAT。
+
+**方式 B：GitHub API（git push 失败时用）**
+```bash
+SHA=$(gh api "repos/user/repo/contents/path?ref=main" --jq '.sha')
+CONTENT=$(base64 -i path/to/file)
+gh api --method PUT "repos/user/repo/contents/path" \
+  -f message="commit message" \
+  -f content="$CONTENT" \
+  -f sha="$SHA"
+```
+
+### 4. 等待 GitHub Actions
+```bash
+gh api repos/user/repo/actions/runs --jq '.workflow_runs[0] | {status, conclusion}'
+```
+等待 `conclusion` 变为 `success` 或 `failure`。
+
+## 常见错误
+
+### TypeScript `as const` 字面量类型不兼容（高频踩坑）
+**错误**：`Labels` 类型用 `typeof labels` 时，中英文对象字面量 TS 报错「类型不可分配」。
+**根因**：TypeScript 推断两个 `as const` 对象为不同字面量类型，即使结构完全一致。
+**解决**：
+```typescript
+// ❌ 报错：Type '"Name"' is not assignable to type '"姓名"'
+type Labels = typeof labels
+
+// ✅ 正确：使用 Record<string, string>
+type Labels = Record<string, string>
+const i18n = (lang: 'zh' | 'en'): Labels => lang === 'en' ? labelsEn : labels
+```
+
+### git push / git remote set-url 均报 "Device not configured"
+**原因**：git-credential helper 在本环境不可用，任何走 git credential 的方式都失败。
+**解决**：始终用 GitHub API 方式（方式 B）推送，不尝试 git push。
+> 教训（高频踩坑）：本环境 git credential 永远失败，任何 git push 方式都不可用。必须本地 build 验证 → GitHub API 推送 → 等待 Actions 确认。
+
+### 简历站特例（/tmp/resume-build）
+```bash
+# 首次：克隆（--depth=1 加速）
+git clone --depth=1 https://github.com/lir-navcoo/resume.git /tmp/resume-build
+
+# 修改后：复制文件 + 本地验证 build
+cp /tmp/resume_app.tsx /tmp/resume-build/src/App.tsx
+cd /tmp/resume-build && npm install && npm run build
+
+# 确认 build 成功（无 TS 错误）后，用 GitHub API 推送
+SHA=$(gh api "repos/lir-navcoo/resume/contents/src/App.tsx?ref=main" --jq '.sha')
+CONTENT=$(base64 -i /tmp/resume_app.tsx)
+gh api --method PUT "repos/lir-navcoo/resume/contents/src/App.tsx" \
+  -f message="commit message" -f content="$CONTENT" -f sha="$SHA"
+
+# 推送后轮询 Actions 状态（每次 push 后必须执行）
+sleep 35 && gh api repos/lir-navcoo/resume/actions/runs --jq '.workflow_runs[0] | {status, conclusion}'
+```
+
+### 简历站新增数据条目字段规范
+在 `resumeData` 中新增可选字段（如 `achievement`）时：
+1. 直接在对应条目对象中添加 `achievement: '内容'`
+2. JSX 渲染处使用 `(exp as any).achievement` 访问（避免修改全局类型）
+3. 条件渲染用 `{(exp as any).achievement && (...)}`
+
+### TypeScript `as const` 字面量类型不兼容（高频踩坑）
+**错误**：`Labels` 类型用 `typeof labels` 时，中英文对象字面量 TS 报错「类型不可分配」。
+**根因**：TypeScript 推断两个 `as const` 对象为不同字面量类型，即使结构完全一致。
+**解决**：
+```typescript
+// ❌ 报错：Type '"Name"' is not assignable to type '"姓名"'
+type Labels = typeof labels
+
+// ✅ 正确：使用 Record<string, string>
+type Labels = Record<string, string>
+const i18n = (lang: 'zh' | 'en'): Labels => lang === 'en' ? labelsEn : labels
+```
+
+### TypeScript 可选字段属性不存在（新增字段场景，高频踩坑）
+**错误**：`Property 'achievement' does not exist on type '...'` — 给数据条目新增可选字段时，已定义的类型没有该字段。
+**解决**：在 JSX 中使用类型断言 `(exp as any).achievement`，避免修改全局数据类型。
+```typescript
+// ✅ 在 JSX 渲染中
+{(exp as any).achievement && (
+  <div>{(exp as any).achievement}</div>
+)}
+```
+
+### GitHub Actions build 失败排查（高频踩坑）
+**问题**：GitHub Actions 日志不对外暴露 API，无法远程排查失败原因。
+**解决**：克隆仓库到本地完整 build 验证。
+```bash
+git clone --depth=1 https://github.com/user/repo.git /tmp/repo-build
+cd /tmp/repo-build && npm install && npm run build
+# 本地 build 失败时，错误信息直接输出在终端
+```

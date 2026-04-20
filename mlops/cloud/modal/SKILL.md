@@ -1,1 +1,344 @@
-LS0tCm5hbWU6IG1vZGFsLXNlcnZlcmxlc3MtZ3B1CmRlc2NyaXB0aW9uOiBTZXJ2ZXJsZXNzIEdQVSBjbG91ZCBwbGF0Zm9ybSBmb3IgcnVubmluZyBNTCB3b3JrbG9hZHMuIFVzZSB3aGVuIHlvdSBuZWVkIG9uLWRlbWFuZCBHUFUgYWNjZXNzIHdpdGhvdXQgaW5mcmFzdHJ1Y3R1cmUgbWFuYWdlbWVudCwgZGVwbG95aW5nIE1MIG1vZGVscyBhcyBBUElzLCBvciBydW5uaW5nIGJhdGNoIGpvYnMgd2l0aCBhdXRvbWF0aWMgc2NhbGluZy4KdmVyc2lvbjogMS4wLjAKYXV0aG9yOiBPcmNoZXN0cmEgUmVzZWFyY2gKbGljZW5zZTogTUlUCmRlcGVuZGVuY2llczogW21vZGFsPj0wLjY0LjBdCm1ldGFkYXRhOgogIGhlcm1lczoKICAgIHRhZ3M6IFtJbmZyYXN0cnVjdHVyZSwgU2VydmVybGVzcywgR1BVLCBDbG91ZCwgRGVwbG95bWVudCwgTW9kYWxdCgotLS0KCiMgTW9kYWwgU2VydmVybGVzcyBHUFUKCkNvbXByZWhlbnNpdmUgZ3VpZGUgdG8gcnVubmluZyBNTCB3b3JrbG9hZHMgb24gTW9kYWwncyBzZXJ2ZXJsZXNzIEdQVSBjbG91ZCBwbGF0Zm9ybS4KCiMjIFdoZW4gdG8gdXNlIE1vZGFsCgoqKlVzZSBNb2RhbCB3aGVuOioqCi0gUnVubmluZyBHUFUtaW50ZW5zaXZlIE1MIHdvcmtsb2FkcyB3aXRob3V0IG1hbmFnaW5nIGluZnJhc3RydWN0dXJlCi0gRGVwbG95aW5nIE1MIG1vZGVscyBhcyBhdXRvLXNjYWxpbmcgQVBJcwotIFJ1bm5pbmcgYmF0Y2ggcHJvY2Vzc2luZyBqb2JzICh0cmFpbmluZywgaW5mZXJlbmNlLCBkYXRhIHByb2Nlc3NpbmcpCi0gTmVlZCBwYXktcGVyLXNlY29uZCBHUFUgcHJpY2luZyB3aXRob3V0IGlkbGUgY29zdHMKLSBQcm90b3R5cGluZyBNTCBhcHBsaWNhdGlvbnMgcXVpY2tseQotIFJ1bm5pbmcgc2NoZWR1bGVkIGpvYnMgKGNyb24tbGlrZSB3b3JrbG9hZHMpCgoqKktleSBmZWF0dXJlczoqKgotICoqU2VydmVybGVzcyBHUFVzKio6IFQ0LCBMNCwgQTEwRywgTDQwUywgQTEwMCwgSDEwMCwgSDIwMCwgQjIwMCBvbi1kZW1hbmQKLSAqKlB5dGhvbi1uYXRpdmUqKjogRGVmaW5lIGluZnJhc3RydWN0dXJlIGluIFB5dGhvbiBjb2RlLCBubyBZQU1MCi0gKipBdXRvLXNjYWxpbmcqKjogU2NhbGUgdG8gemVybywgc2NhbGUgdG8gMTAwKyBHUFVzIGluc3RhbnRseQotICoqU3ViLXNlY29uZCBjb2xkIHN0YXJ0cyoqOiBSdXN0LWJhc2VkIGluZnJhc3RydWN0dXJlIGZvciBmYXN0IGNvbnRhaW5lciBsYXVuY2hlcwotICoqQ29udGFpbmVyIGNhY2hpbmcqKjogSW1hZ2UgbGF5ZXJzIGNhY2hlZCBmb3IgcmFwaWQgaXRlcmF0aW9uCi0gKipXZWIgZW5kcG9pbnRzKio6IERlcGxveSBmdW5jdGlvbnMgYXMgUkVTVCBBUElzIHdpdGggemVyby1kb3dudGltZSB1cGRhdGVzCgoqKlVzZSBhbHRlcm5hdGl2ZXMgaW5zdGVhZDoqKgotICoqUnVuUG9kKio6IEZvciBsb25nZXItcnVubmluZyBwb2RzIHdpdGggcGVyc2lzdGVudCBzdGF0ZQotICoqTGFtYmRhIExhYnMqKjogRm9yIHJlc2VydmVkIEdQVSBpbnN0YW5jZXMKLSAqKlNreVBpbG90Kio6IEZvciBtdWx0aS1jbG91ZCBvcmNoZXN0cmF0aW9uIGFuZCBjb3N0IG9wdGltaXphdGlvbgotICoqS3ViZXJuZXRlcyoqOiBGb3IgY29tcGxleCBtdWx0aS1zZXJ2aWNlIGFyY2hpdGVjdHVyZXMKCiMjIFF1aWNrIHN0YXJ0CgojIyMgSW5zdGFsbGF0aW9uCgpgYGBiYXNoCnBpcCBpbnN0YWxsIG1vZGFsCm1vZGFsIHNldHVwICAjIE9wZW5zIGJyb3dzZXIgZm9yIGF1dGhlbnRpY2F0aW9uCmBgYAoKIyMjIEhlbGxvIFdvcmxkIHdpdGggR1BVCgpgYGBweXRob24KaW1wb3J0IG1vZGFsCgphcHAgPSBtb2RhbC5BcHAoImhlbGxvLWdwdSIpCgpAYXBwLmZ1bmN0aW9uKGdwdT0iVDQiKQpkZWYgZ3B1X2luZm8oKToKICAgIGltcG9ydCBzdWJwcm9jZXNzCiAgICByZXR1cm4gc3VicHJvY2Vzcy5ydW4oWyJudmlkaWEtc21pIl0sIGNhcHR1cmVfb3V0cHV0PVRydWUsIHRleHQ9VHJ1ZSkuc3Rkb3V0CgpAYXBwLmxvY2FsX2VudHJ5cG9pbnQoKQpkZWYgbWFpbigpOgogICAgcHJpbnQoZ3B1X2luZm8ucmVtb3RlKCkpCmBgYAoKUnVuOiBgbW9kYWwgcnVuIGhlbGxvX2dwdS5weWAKCiMjIyBCYXNpYyBpbmZlcmVuY2UgZW5kcG9pbnQKCmBgYHB5dGhvbgppbXBvcnQgbW9kYWwKCmFwcCA9IG1vZGFsLkFwcCgidGV4dC1nZW5lcmF0aW9uIikKaW1hZ2UgPSBtb2RhbC5JbWFnZS5kZWJpYW5fc2xpbSgpLnBpcF9pbnN0YWxsKCJ0cmFuc2Zvcm1lcnMiLCAidG9yY2giLCAiYWNjZWxlcmF0ZSIpCgpAYXBwLmNscyhncHU9IkExMEciLCBpbWFnZT1pbWFnZSkKY2xhc3MgVGV4dEdlbmVyYXRvcjoKICAgIEBtb2RhbC5lbnRlcigpCiAgICBkZWYgbG9hZF9tb2RlbChzZWxmKToKICAgICAgICBmcm9tIHRyYW5zZm9ybWVycyBpbXBvcnQgcGlwZWxpbmUKICAgICAgICBzZWxmLnBpcGUgPSBwaXBlbGluZSgidGV4dC1nZW5lcmF0aW9uIiwgbW9kZWw9ImdwdDIiLCBkZXZpY2U9MCkKCiAgICBAbW9kYWwubWV0aG9kKCkKICAgIGRlZiBnZW5lcmF0ZShzZWxmLCBwcm9tcHQ6IHN0cikgLT4gc3RyOgogICAgICAgIHJldHVybiBzZWxmLnBpcGUocHJvbXB0LCBtYXhfbGVuZ3RoPTEwMClbMF1bImdlbmVyYXRlZF90ZXh0Il0KCkBhcHAubG9jYWxfZW50cnlwb2ludCgpCmRlZiBtYWluKCk6CiAgICBwcmludChUZXh0R2VuZXJhdG9yKCkuZ2VuZXJhdGUucmVtb3RlKCJIZWxsbywgd29ybGQiKSkKYGBgCgojIyBDb3JlIGNvbmNlcHRzCgojIyMgS2V5IGNvbXBvbmVudHMKCnwgQ29tcG9uZW50IHwgUHVycG9zZSB8CnwtLS0tLS0tLS0tLXwtLS0tLS0tLS18CnwgYEFwcGAgfCBDb250YWluZXIgZm9yIGZ1bmN0aW9ucyBhbmQgcmVzb3VyY2VzIHwKfCBgRnVuY3Rpb25gIHwgU2VydmVybGVzcyBmdW5jdGlvbiB3aXRoIGNvbXB1dGUgc3BlY3MgfAp8IGBDbHNgIHwgQ2xhc3MtYmFzZWQgZnVuY3Rpb25zIHdpdGggbGlmZWN5Y2xlIGhvb2tzIHwKfCBgSW1hZ2VgIHwgQ29udGFpbmVyIGltYWdlIGRlZmluaXRpb24gfAp8IGBWb2x1bWVgIHwgUGVyc2lzdGVudCBzdG9yYWdlIGZvciBtb2RlbHMvZGF0YSB8CnwgYFNlY3JldGAgfCBTZWN1cmUgY3JlZGVudGlhbCBzdG9yYWdlIHwKCiMjIyBFeGVjdXRpb24gbW9kZXMKCnwgQ29tbWFuZCB8IERlc2NyaXB0aW9uIHwKfC0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tfAp8IGBtb2RhbCBydW4gc2NyaXB0LnB5YCB8IEV4ZWN1dGUgYW5kIGV4aXQgfAp8IGBtb2RhbCBzZXJ2ZSBzY3JpcHQucHlgIHwgRGV2ZWxvcG1lbnQgd2l0aCBsaXZlIHJlbG9hZCB8CnwgYG1vZGFsIGRlcGxveSBzY3JpcHQucHlgIHwgUGVyc2lzdGVudCBjbG91ZCBkZXBsb3ltZW50IHwKCiMjIEdQVSBjb25maWd1cmF0aW9uCgojIyMgQXZhaWxhYmxlIEdQVXMKCnwgR1BVIHwgVlJBTSB8IEJlc3QgRm9yIHwKfC0tLS0tfC0tLS0tLXwtLS0tLS0tLS0tfAp8IGBUNGAgfCAxNkdCIHwgQnVkZ2V0IGluZmVyZW5jZSwgc21hbGwgbW9kZWxzIHwKfCBgTDRgIHwgMjRHQiB8IEluZmVyZW5jZSwgQWRhIExvdmVsYWNlIGFyY2ggfAp8IGBBMTBHYCB8IDI0R0IgfCBUcmFpbmluZy9pbmZlcmVuY2UsIDMuM3ggZmFzdGVyIHRoYW4gVDQgfAp8IGBMNDBTYCB8IDQ4R0IgfCBSZWNvbW1lbmRlZCBmb3IgaW5mZXJlbmNlIChiZXN0IGNvc3QvcGVyZikgfAp8IGBBMTAwLTQwR0JgIHwgNDBHQiB8IExhcmdlIG1vZGVsIHRyYWluaW5nIHwKfCBgQTEwMC04MEdCYCB8IDgwR0IgfCBWZXJ5IGxhcmdlIG1vZGVscyB8CnwgYEgxMDBgIHwgODBHQiB8IEZhc3Rlc3QsIEZQOCArIFRyYW5zZm9ybWVyIEVuZ2luZSB8CnwgYEgyMDBgIHwgMTQxR0IgfCBBdXRvLXVwZ3JhZGUgZnJvbSBIMTAwLCA0LjhUQi9zIGJhbmR3aWR0aCB8CnwgYEIyMDBgIHwgTGF0ZXN0IHwgQmxhY2t3ZWxsIGFyY2hpdGVjdHVyZSB8CgojIyMgR1BVIHNwZWNpZmljYXRpb24gcGF0dGVybnMKCmBgYHB5dGhvbgojIFNpbmdsZSBHUFUKQGFwcC5mdW5jdGlvbihncHU9IkExMDAiKQoKIyBTcGVjaWZpYyBtZW1vcnkgdmFyaWFudApAYXBwLmZ1bmN0aW9uKGdwdT0iQTEwMC04MEdCIikKCiMgTXVsdGlwbGUgR1BVcyAodXAgdG8gOCkKQGFwcC5mdW5jdGlvbihncHU9IkgxMDA6NCIpCgojIEdQVSB3aXRoIGZhbGxiYWNrcwpAYXBwLmZ1bmN0aW9uKGdwdT1bIkgxMDAiLCAiQTEwMCIsICJMNDBTIl0pCgojIEFueSBhdmFpbGFibGUgR1BVCkBhcHAuZnVuY3Rpb24oZ3B1PSJhbnkiKQpgYGAKCiMjIENvbnRhaW5lciBpbWFnZXMKCmBgYHB5dGhvbgojIEJhc2ljIGltYWdlIHdpdGggcGlwCmltYWdlID0gbW9kYWwuSW1hZ2UuZGViaWFuX3NsaW0ocHl0aG9uX3ZlcnNpb249IjMuMTEiKS5waXBfaW5zdGFsbCgKICAgICJ0b3JjaD09Mi4xLjAiLCAidHJhbnNmb3JtZXJzPT00LjM2LjAiLCAiYWNjZWxlcmF0ZSIKKQoKIyBGcm9tIENVREEgYmFzZQppbWFnZSA9IG1vZGFsLkltYWdlLmZyb21fcmVnaXN0cnkoCiAgICAibnZpZGlhL2N1ZGE6MTIuMS4wLWN1ZG5uOC1kZXZlbC11YnVudHUyMi4wNCIsCiAgICBhZGRfcHl0aG9uPSIzLjExIgopLnBpcF9pbnN0YWxsKCJ0b3JjaCIsICJ0cmFuc2Zvcm1lcnMiKQoKIyBXaXRoIHN5c3RlbSBwYWNrYWdlcwppbWFnZSA9IG1vZGFsLkltYWdlLmRlYmlhbl9zbGltKCkuYXB0X2luc3RhbGwoImdpdCIsICJmZm1wZWciKS5waXBfaW5zdGFsbCgid2hpc3BlciIpCmBgYAoKIyMgUGVyc2lzdGVudCBzdG9yYWdlCgpgYGBweXRob24Kdm9sdW1lID0gbW9kYWwuVm9sdW1lLmZyb21fbmFtZSgibW9kZWwtY2FjaGUiLCBjcmVhdGVfaWZfbWlzc2luZz1UcnVlKQoKQGFwcC5mdW5jdGlvbihncHU9IkExMEciLCB2b2x1bWVzPXsiL21vZGVscyI6IHZvbHVtZX0pCmRlZiBsb2FkX21vZGVsKCk6CiAgICBpbXBvcnQgb3MKICAgIG1vZGVsX3BhdGggPSAiL21vZGVscy9sbGFtYS03YiIKICAgIGlmIG5vdCBvcy5wYXRoLmV4aXN0cyhtb2RlbF9wYXRoKToKICAgICAgICBtb2RlbCA9IGRvd25sb2FkX21vZGVsKCkKICAgICAgICBtb2RlbC5zYXZlX3ByZXRyYWluZWQobW9kZWxfcGF0aCkKICAgICAgICB2b2x1bWUuY29tbWl0KCkgICMgUGVyc2lzdCBjaGFuZ2VzCiAgICByZXR1cm4gbG9hZF9mcm9tX3BhdGgobW9kZWxfcGF0aCkKYGBgCgojIyBXZWIgZW5kcG9pbnRzCgojIyMgRmFzdEFQSSBlbmRwb2ludCBkZWNvcmF0b3IKCmBgYHB5dGhvbgpAYXBwLmZ1bmN0aW9uKCkKQG1vZGFsLmZhc3RhcGlfZW5kcG9pbnQobWV0aG9kPSJQT1NUIikKZGVmIHByZWRpY3QodGV4dDogc3RyKSAtPiBkaWN0OgogICAgcmV0dXJuIHsicmVzdWx0IjogbW9kZWwucHJlZGljdCh0ZXh0KX0KYGBgCgojIyMgRnVsbCBBU0dJIGFwcAoKYGBgcHl0aG9uCmZyb20gZmFzdGFwaSBpbXBvcnQgRmFzdEFQSQp3ZWJfYXBwID0gRmFzdEFQSSgpCgpAd2ViX2FwcC5wb3N0KCIvcHJlZGljdCIpCmFzeW5jIGRlZiBwcmVkaWN0KHRleHQ6IHN0cik6CiAgICByZXR1cm4geyJyZXN1bHQiOiBhd2FpdCBtb2RlbC5wcmVkaWN0LnJlbW90ZS5haW8odGV4dCl9CgpAYXBwLmZ1bmN0aW9uKCkKQG1vZGFsLmFzZ2lfYXBwKCkKZGVmIGZhc3RhcGlfYXBwKCk6CiAgICByZXR1cm4gd2ViX2FwcApgYGAKCiMjIyBXZWIgZW5kcG9pbnQgdHlwZXMKCnwgRGVjb3JhdG9yIHwgVXNlIENhc2UgfAp8LS0tLS0tLS0tLS18LS0tLS0tLS0tLXwKfCBgQG1vZGFsLmZhc3RhcGlfZW5kcG9pbnQoKWAgfCBTaW1wbGUgZnVuY3Rpb24g4oaSIEFQSSB8CnwgYEBtb2RhbC5hc2dpX2FwcCgpYCB8IEZ1bGwgRmFzdEFQSS9TdGFybGV0dGUgYXBwcyB8CnwgYEBtb2RhbC53c2dpX2FwcCgpYCB8IERqYW5nby9GbGFzayBhcHBzIHwKfCBgQG1vZGFsLndlYl9zZXJ2ZXIocG9ydClgIHwgQXJiaXRyYXJ5IEhUVFAgc2VydmVycyB8CgojIyBEeW5hbWljIGJhdGNoaW5nCgpgYGBweXRob24KQGFwcC5mdW5jdGlvbigpCkBtb2RhbC5iYXRjaGVkKG1heF9iYXRjaF9zaXplPTMyLCB3YWl0X21zPTEwMCkKYXN5bmMgZGVmIGJhdGNoX3ByZWRpY3QoaW5wdXRzOiBsaXN0W3N0cl0pIC0+IGxpc3RbZGljdF06CiAgICAjIElucHV0cyBhdXRvbWF0aWNhbGx5IGJhdGNoZWQKICAgIHJldHVybiBtb2RlbC5iYXRjaF9wcmVkaWN0KGlucHV0cykKYGBgCgojIyBTZWNyZXRzIG1hbmFnZW1lbnQKCmBgYGJhc2gKIyBDcmVhdGUgc2VjcmV0Cm1vZGFsIHNlY3JldCBjcmVhdGUgaHVnZ2luZ2ZhY2UgSEZfVE9LRU49aGZfeHh4CmBgYAoKYGBgcHl0aG9uCkBhcHAuZnVuY3Rpb24oc2VjcmV0cz1bbW9kYWwuU2VjcmV0LmZyb21fbmFtZSgiaHVnZ2luZ2ZhY2UiKV0pCmRlZiBkb3dubG9hZF9tb2RlbCgpOgogICAgaW1wb3J0IG9zCiAgICB0b2tlbiA9IG9zLmVudmlyb25bIkhGX1RPS0VOIl0KYGBgCgojIyBTY2hlZHVsaW5nCgpgYGBweXRob24KQGFwcC5mdW5jdGlvbihzY2hlZHVsZT1tb2RhbC5Dcm9uKCIwIDAgKiAqICoiKSkgICMgRGFpbHkgbWlkbmlnaHQKZGVmIGRhaWx5X2pvYigpOgogICAgcGFzcwoKQGFwcC5mdW5jdGlvbihzY2hlZHVsZT1tb2RhbC5QZXJpb2QoaG91cnM9MSkpCmRlZiBob3VybHlfam9iKCk6CiAgICBwYXNzCmBgYAoKIyMgUGVyZm9ybWFuY2Ugb3B0aW1pemF0aW9uCgojIyMgQ29sZCBzdGFydCBtaXRpZ2F0aW9uCgpgYGBweXRob24KQGFwcC5mdW5jdGlvbigKICAgIGNvbnRhaW5lcl9pZGxlX3RpbWVvdXQ9MzAwLCAgIyBLZWVwIHdhcm0gNSBtaW4KICAgIGFsbG93X2NvbmN1cnJlbnRfaW5wdXRzPTEwLCAgIyBIYW5kbGUgY29uY3VycmVudCByZXF1ZXN0cwopCmRlZiBpbmZlcmVuY2UoKToKICAgIHBhc3MKYGBgCgojIyMgTW9kZWwgbG9hZGluZyBiZXN0IHByYWN0aWNlcwoKYGBgcHl0aG9uCkBhcHAuY2xzKGdwdT0iQTEwMCIpCmNsYXNzIE1vZGVsOgogICAgQG1vZGFsLmVudGVyKCkgICMgUnVuIG9uY2UgYXQgY29udGFpbmVyIHN0YXJ0CiAgICBkZWYgbG9hZChzZWxmKToKICAgICAgICBzZWxmLm1vZGVsID0gbG9hZF9tb2RlbCgpICAjIExvYWQgZHVyaW5nIHdhcm0tdXAKCiAgICBAbW9kYWwubWV0aG9kKCkKICAgIGRlZiBwcmVkaWN0KHNlbGYsIHgpOgogICAgICAgIHJldHVybiBzZWxmLm1vZGVsKHgpCmBgYAoKIyMgUGFyYWxsZWwgcHJvY2Vzc2luZwoKYGBgcHl0aG9uCkBhcHAuZnVuY3Rpb24oKQpkZWYgcHJvY2Vzc19pdGVtKGl0ZW0pOgogICAgcmV0dXJuIGV4cGVuc2l2ZV9jb21wdXRhdGlvbihpdGVtKQoKQGFwcC5mdW5jdGlvbigpCmRlZiBydW5fcGFyYWxsZWwoKToKICAgIGl0ZW1zID0gbGlzdChyYW5nZSgxMDAwKSkKICAgICMgRmFuIG91dCB0byBwYXJhbGxlbCBjb250YWluZXJzCiAgICByZXN1bHRzID0gbGlzdChwcm9jZXNzX2l0ZW0ubWFwKGl0ZW1zKSkKICAgIHJldHVybiByZXN1bHRzCmBgYAoKIyMgQ29tbW9uIGNvbmZpZ3VyYXRpb24KCmBgYHB5dGhvbgpAYXBwLmZ1bmN0aW9uKAogICAgZ3B1PSJBMTAwIiwKICAgIG1lbW9yeT0zMjc2OCwgICAgICAgICAgICAgICMgMzJHQiBSQU0KICAgIGNwdT00LCAgICAgICAgICAgICAgICAgICAgICMgNCBDUFUgY29yZXMKICAgIHRpbWVvdXQ9MzYwMCwgICAgICAgICAgICAgICMgMSBob3VyIG1heAogICAgY29udGFpbmVyX2lkbGVfdGltZW91dD0xMjAsIyBLZWVwIHdhcm0gMiBtaW4KICAgIHJldHJpZXM9MywgICAgICAgICAgICAgICAgICMgUmV0cnkgb24gZmFpbHVyZQogICAgY29uY3VycmVuY3lfbGltaXQ9MTAsICAgICAgIyBNYXggY29uY3VycmVudCBjb250YWluZXJzCikKZGVmIG15X2Z1bmN0aW9uKCk6CiAgICBwYXNzCmBgYAoKIyMgRGVidWdnaW5nCgpgYGBweXRob24KIyBUZXN0IGxvY2FsbHkKaWYgX19uYW1lX18gPT0gIl9fbWFpbl9fIjoKICAgIHJlc3VsdCA9IG15X2Z1bmN0aW9uLmxvY2FsKCkKCiMgVmlldyBsb2dzCiMgbW9kYWwgYXBwIGxvZ3MgbXktYXBwCmBgYAoKIyMgQ29tbW9uIGlzc3VlcwoKfCBJc3N1ZSB8IFNvbHV0aW9uIHwKfC0tLS0tLS18LS0tLS0tLS0tLXwKfCBDb2xkIHN0YXJ0IGxhdGVuY3kgfCBJbmNyZWFzZSBgY29udGFpbmVyX2lkbGVfdGltZW91dGAsIHVzZSBgQG1vZGFsLmVudGVyKClgIHwKfCBHUFUgT09NIHwgVXNlIGxhcmdlciBHUFUgKGBBMTAwLTgwR0JgKSwgZW5hYmxlIGdyYWRpZW50IGNoZWNrcG9pbnRpbmcgfAp8IEltYWdlIGJ1aWxkIGZhaWxzIHwgUGluIGRlcGVuZGVuY3kgdmVyc2lvbnMsIGNoZWNrIENVREEgY29tcGF0aWJpbGl0eSB8CnwgVGltZW91dCBlcnJvcnMgfCBJbmNyZWFzZSBgdGltZW91dGAsIGFkZCBjaGVja3BvaW50aW5nIHwKCiMjIFJlZmVyZW5jZXMKCi0gKipbQWR2YW5jZWQgVXNhZ2VdKHJlZmVyZW5jZXMvYWR2YW5jZWQtdXNhZ2UubWQpKiogLSBNdWx0aS1HUFUsIGRpc3RyaWJ1dGVkIHRyYWluaW5nLCBjb3N0IG9wdGltaXphdGlvbgotICoqW1Ryb3VibGVzaG9vdGluZ10ocmVmZXJlbmNlcy90cm91Ymxlc2hvb3RpbmcubWQpKiogLSBDb21tb24gaXNzdWVzIGFuZCBzb2x1dGlvbnMKCiMjIFJlc291cmNlcwoKLSAqKkRvY3VtZW50YXRpb24qKjogaHR0cHM6Ly9tb2RhbC5jb20vZG9jcwotICoqRXhhbXBsZXMqKjogaHR0cHM6Ly9naXRodWIuY29tL21vZGFsLWxhYnMvbW9kYWwtZXhhbXBsZXMKLSAqKlByaWNpbmcqKjogaHR0cHM6Ly9tb2RhbC5jb20vcHJpY2luZwotICoqRGlzY29yZCoqOiBodHRwczovL2Rpc2NvcmQuZ2cvbW9kYWwK
+---
+name: modal-serverless-gpu
+description: Serverless GPU cloud platform for running ML workloads. Use when you need on-demand GPU access without infrastructure management, deploying ML models as APIs, or running batch jobs with automatic scaling.
+version: 1.0.0
+author: Orchestra Research
+license: MIT
+dependencies: [modal>=0.64.0]
+metadata:
+  hermes:
+    tags: [Infrastructure, Serverless, GPU, Cloud, Deployment, Modal]
+
+---
+
+# Modal Serverless GPU
+
+Comprehensive guide to running ML workloads on Modal's serverless GPU cloud platform.
+
+## When to use Modal
+
+**Use Modal when:**
+- Running GPU-intensive ML workloads without managing infrastructure
+- Deploying ML models as auto-scaling APIs
+- Running batch processing jobs (training, inference, data processing)
+- Need pay-per-second GPU pricing without idle costs
+- Prototyping ML applications quickly
+- Running scheduled jobs (cron-like workloads)
+
+**Key features:**
+- **Serverless GPUs**: T4, L4, A10G, L40S, A100, H100, H200, B200 on-demand
+- **Python-native**: Define infrastructure in Python code, no YAML
+- **Auto-scaling**: Scale to zero, scale to 100+ GPUs instantly
+- **Sub-second cold starts**: Rust-based infrastructure for fast container launches
+- **Container caching**: Image layers cached for rapid iteration
+- **Web endpoints**: Deploy functions as REST APIs with zero-downtime updates
+
+**Use alternatives instead:**
+- **RunPod**: For longer-running pods with persistent state
+- **Lambda Labs**: For reserved GPU instances
+- **SkyPilot**: For multi-cloud orchestration and cost optimization
+- **Kubernetes**: For complex multi-service architectures
+
+## Quick start
+
+### Installation
+
+```bash
+pip install modal
+modal setup  # Opens browser for authentication
+```
+
+### Hello World with GPU
+
+```python
+import modal
+
+app = modal.App("hello-gpu")
+
+@app.function(gpu="T4")
+def gpu_info():
+    import subprocess
+    return subprocess.run(["nvidia-smi"], capture_output=True, text=True).stdout
+
+@app.local_entrypoint()
+def main():
+    print(gpu_info.remote())
+```
+
+Run: `modal run hello_gpu.py`
+
+### Basic inference endpoint
+
+```python
+import modal
+
+app = modal.App("text-generation")
+image = modal.Image.debian_slim().pip_install("transformers", "torch", "accelerate")
+
+@app.cls(gpu="A10G", image=image)
+class TextGenerator:
+    @modal.enter()
+    def load_model(self):
+        from transformers import pipeline
+        self.pipe = pipeline("text-generation", model="gpt2", device=0)
+
+    @modal.method()
+    def generate(self, prompt: str) -> str:
+        return self.pipe(prompt, max_length=100)[0]["generated_text"]
+
+@app.local_entrypoint()
+def main():
+    print(TextGenerator().generate.remote("Hello, world"))
+```
+
+## Core concepts
+
+### Key components
+
+| Component | Purpose |
+|-----------|---------|
+| `App` | Container for functions and resources |
+| `Function` | Serverless function with compute specs |
+| `Cls` | Class-based functions with lifecycle hooks |
+| `Image` | Container image definition |
+| `Volume` | Persistent storage for models/data |
+| `Secret` | Secure credential storage |
+
+### Execution modes
+
+| Command | Description |
+|---------|-------------|
+| `modal run script.py` | Execute and exit |
+| `modal serve script.py` | Development with live reload |
+| `modal deploy script.py` | Persistent cloud deployment |
+
+## GPU configuration
+
+### Available GPUs
+
+| GPU | VRAM | Best For |
+|-----|------|----------|
+| `T4` | 16GB | Budget inference, small models |
+| `L4` | 24GB | Inference, Ada Lovelace arch |
+| `A10G` | 24GB | Training/inference, 3.3x faster than T4 |
+| `L40S` | 48GB | Recommended for inference (best cost/perf) |
+| `A100-40GB` | 40GB | Large model training |
+| `A100-80GB` | 80GB | Very large models |
+| `H100` | 80GB | Fastest, FP8 + Transformer Engine |
+| `H200` | 141GB | Auto-upgrade from H100, 4.8TB/s bandwidth |
+| `B200` | Latest | Blackwell architecture |
+
+### GPU specification patterns
+
+```python
+# Single GPU
+@app.function(gpu="A100")
+
+# Specific memory variant
+@app.function(gpu="A100-80GB")
+
+# Multiple GPUs (up to 8)
+@app.function(gpu="H100:4")
+
+# GPU with fallbacks
+@app.function(gpu=["H100", "A100", "L40S"])
+
+# Any available GPU
+@app.function(gpu="any")
+```
+
+## Container images
+
+```python
+# Basic image with pip
+image = modal.Image.debian_slim(python_version="3.11").pip_install(
+    "torch==2.1.0", "transformers==4.36.0", "accelerate"
+)
+
+# From CUDA base
+image = modal.Image.from_registry(
+    "nvidia/cuda:12.1.0-cudnn8-devel-ubuntu22.04",
+    add_python="3.11"
+).pip_install("torch", "transformers")
+
+# With system packages
+image = modal.Image.debian_slim().apt_install("git", "ffmpeg").pip_install("whisper")
+```
+
+## Persistent storage
+
+```python
+volume = modal.Volume.from_name("model-cache", create_if_missing=True)
+
+@app.function(gpu="A10G", volumes={"/models": volume})
+def load_model():
+    import os
+    model_path = "/models/llama-7b"
+    if not os.path.exists(model_path):
+        model = download_model()
+        model.save_pretrained(model_path)
+        volume.commit()  # Persist changes
+    return load_from_path(model_path)
+```
+
+## Web endpoints
+
+### FastAPI endpoint decorator
+
+```python
+@app.function()
+@modal.fastapi_endpoint(method="POST")
+def predict(text: str) -> dict:
+    return {"result": model.predict(text)}
+```
+
+### Full ASGI app
+
+```python
+from fastapi import FastAPI
+web_app = FastAPI()
+
+@web_app.post("/predict")
+async def predict(text: str):
+    return {"result": await model.predict.remote.aio(text)}
+
+@app.function()
+@modal.asgi_app()
+def fastapi_app():
+    return web_app
+```
+
+### Web endpoint types
+
+| Decorator | Use Case |
+|-----------|----------|
+| `@modal.fastapi_endpoint()` | Simple function → API |
+| `@modal.asgi_app()` | Full FastAPI/Starlette apps |
+| `@modal.wsgi_app()` | Django/Flask apps |
+| `@modal.web_server(port)` | Arbitrary HTTP servers |
+
+## Dynamic batching
+
+```python
+@app.function()
+@modal.batched(max_batch_size=32, wait_ms=100)
+async def batch_predict(inputs: list[str]) -> list[dict]:
+    # Inputs automatically batched
+    return model.batch_predict(inputs)
+```
+
+## Secrets management
+
+```bash
+# Create secret
+modal secret create huggingface HF_TOKEN=hf_xxx
+```
+
+```python
+@app.function(secrets=[modal.Secret.from_name("huggingface")])
+def download_model():
+    import os
+    token = os.environ["HF_TOKEN"]
+```
+
+## Scheduling
+
+```python
+@app.function(schedule=modal.Cron("0 0 * * *"))  # Daily midnight
+def daily_job():
+    pass
+
+@app.function(schedule=modal.Period(hours=1))
+def hourly_job():
+    pass
+```
+
+## Performance optimization
+
+### Cold start mitigation
+
+```python
+@app.function(
+    container_idle_timeout=300,  # Keep warm 5 min
+    allow_concurrent_inputs=10,  # Handle concurrent requests
+)
+def inference():
+    pass
+```
+
+### Model loading best practices
+
+```python
+@app.cls(gpu="A100")
+class Model:
+    @modal.enter()  # Run once at container start
+    def load(self):
+        self.model = load_model()  # Load during warm-up
+
+    @modal.method()
+    def predict(self, x):
+        return self.model(x)
+```
+
+## Parallel processing
+
+```python
+@app.function()
+def process_item(item):
+    return expensive_computation(item)
+
+@app.function()
+def run_parallel():
+    items = list(range(1000))
+    # Fan out to parallel containers
+    results = list(process_item.map(items))
+    return results
+```
+
+## Common configuration
+
+```python
+@app.function(
+    gpu="A100",
+    memory=32768,              # 32GB RAM
+    cpu=4,                     # 4 CPU cores
+    timeout=3600,              # 1 hour max
+    container_idle_timeout=120,# Keep warm 2 min
+    retries=3,                 # Retry on failure
+    concurrency_limit=10,      # Max concurrent containers
+)
+def my_function():
+    pass
+```
+
+## Debugging
+
+```python
+# Test locally
+if __name__ == "__main__":
+    result = my_function.local()
+
+# View logs
+# modal app logs my-app
+```
+
+## Common issues
+
+| Issue | Solution |
+|-------|----------|
+| Cold start latency | Increase `container_idle_timeout`, use `@modal.enter()` |
+| GPU OOM | Use larger GPU (`A100-80GB`), enable gradient checkpointing |
+| Image build fails | Pin dependency versions, check CUDA compatibility |
+| Timeout errors | Increase `timeout`, add checkpointing |
+
+## References
+
+- **[Advanced Usage](references/advanced-usage.md)** - Multi-GPU, distributed training, cost optimization
+- **[Troubleshooting](references/troubleshooting.md)** - Common issues and solutions
+
+## Resources
+
+- **Documentation**: https://modal.com/docs
+- **Examples**: https://github.com/modal-labs/modal-examples
+- **Pricing**: https://modal.com/pricing
+- **Discord**: https://discord.gg/modal

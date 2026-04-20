@@ -1,1 +1,575 @@
-LS0tCm5hbWU6IGd1aWRhbmNlCmRlc2NyaXB0aW9uOiBDb250cm9sIExMTSBvdXRwdXQgd2l0aCByZWdleCBhbmQgZ3JhbW1hcnMsIGd1YXJhbnRlZSB2YWxpZCBKU09OL1hNTC9jb2RlIGdlbmVyYXRpb24sIGVuZm9yY2Ugc3RydWN0dXJlZCBmb3JtYXRzLCBhbmQgYnVpbGQgbXVsdGktc3RlcCB3b3JrZmxvd3Mgd2l0aCBHdWlkYW5jZSAtIE1pY3Jvc29mdCBSZXNlYXJjaCdzIGNvbnN0cmFpbmVkIGdlbmVyYXRpb24gZnJhbWV3b3JrCnZlcnNpb246IDEuMC4wCmF1dGhvcjogT3JjaGVzdHJhIFJlc2VhcmNoCmxpY2Vuc2U6IE1JVApkZXBlbmRlbmNpZXM6IFtndWlkYW5jZSwgdHJhbnNmb3JtZXJzXQptZXRhZGF0YToKICBoZXJtZXM6CiAgICB0YWdzOiBbUHJvbXB0IEVuZ2luZWVyaW5nLCBHdWlkYW5jZSwgQ29uc3RyYWluZWQgR2VuZXJhdGlvbiwgU3RydWN0dXJlZCBPdXRwdXQsIEpTT04gVmFsaWRhdGlvbiwgR3JhbW1hciwgTWljcm9zb2Z0IFJlc2VhcmNoLCBGb3JtYXQgRW5mb3JjZW1lbnQsIE11bHRpLVN0ZXAgV29ya2Zsb3dzXQoKLS0tCgojIEd1aWRhbmNlOiBDb25zdHJhaW5lZCBMTE0gR2VuZXJhdGlvbgoKIyMgV2hlbiB0byBVc2UgVGhpcyBTa2lsbAoKVXNlIEd1aWRhbmNlIHdoZW4geW91IG5lZWQgdG86Ci0gKipDb250cm9sIExMTSBvdXRwdXQgc3ludGF4Kiogd2l0aCByZWdleCBvciBncmFtbWFycwotICoqR3VhcmFudGVlIHZhbGlkIEpTT04vWE1ML2NvZGUqKiBnZW5lcmF0aW9uCi0gKipSZWR1Y2UgbGF0ZW5jeSoqIHZzIHRyYWRpdGlvbmFsIHByb21wdGluZyBhcHByb2FjaGVzCi0gKipFbmZvcmNlIHN0cnVjdHVyZWQgZm9ybWF0cyoqIChkYXRlcywgZW1haWxzLCBJRHMsIGV0Yy4pCi0gKipCdWlsZCBtdWx0aS1zdGVwIHdvcmtmbG93cyoqIHdpdGggUHl0aG9uaWMgY29udHJvbCBmbG93Ci0gKipQcmV2ZW50IGludmFsaWQgb3V0cHV0cyoqIHRocm91Z2ggZ3JhbW1hdGljYWwgY29uc3RyYWludHMKCioqR2l0SHViIFN0YXJzKio6IDE4LDAwMCsgfCAqKkZyb20qKjogTWljcm9zb2Z0IFJlc2VhcmNoCgojIyBJbnN0YWxsYXRpb24KCmBgYGJhc2gKIyBCYXNlIGluc3RhbGxhdGlvbgpwaXAgaW5zdGFsbCBndWlkYW5jZQoKIyBXaXRoIHNwZWNpZmljIGJhY2tlbmRzCnBpcCBpbnN0YWxsIGd1aWRhbmNlW3RyYW5zZm9ybWVyc10gICMgSHVnZ2luZyBGYWNlIG1vZGVscwpwaXAgaW5zdGFsbCBndWlkYW5jZVtsbGFtYV9jcHBdICAgICAjIGxsYW1hLmNwcCBtb2RlbHMKYGBgCgojIyBRdWljayBTdGFydAoKIyMjIEJhc2ljIEV4YW1wbGU6IFN0cnVjdHVyZWQgR2VuZXJhdGlvbgoKYGBgcHl0aG9uCmZyb20gZ3VpZGFuY2UgaW1wb3J0IG1vZGVscywgZ2VuCgojIExvYWQgbW9kZWwgKHN1cHBvcnRzIE9wZW5BSSwgVHJhbnNmb3JtZXJzLCBsbGFtYS5jcHApCmxtID0gbW9kZWxzLk9wZW5BSSgiZ3B0LTQiKQoKIyBHZW5lcmF0ZSB3aXRoIGNvbnN0cmFpbnRzCnJlc3VsdCA9IGxtICsgIlRoZSBjYXBpdGFsIG9mIEZyYW5jZSBpcyAiICsgZ2VuKCJjYXBpdGFsIiwgbWF4X3Rva2Vucz01KQoKcHJpbnQocmVzdWx0WyJjYXBpdGFsIl0pICAjICJQYXJpcyIKYGBgCgojIyMgV2l0aCBBbnRocm9waWMgQ2xhdWRlCgpgYGBweXRob24KZnJvbSBndWlkYW5jZSBpbXBvcnQgbW9kZWxzLCBnZW4sIHN5c3RlbSwgdXNlciwgYXNzaXN0YW50CgojIENvbmZpZ3VyZSBDbGF1ZGUKbG0gPSBtb2RlbHMuQW50aHJvcGljKCJjbGF1ZGUtc29ubmV0LTQtNS0yMDI1MDkyOSIpCgojIFVzZSBjb250ZXh0IG1hbmFnZXJzIGZvciBjaGF0IGZvcm1hdAp3aXRoIHN5c3RlbSgpOgogICAgbG0gKz0gIllvdSBhcmUgYSBoZWxwZnVsIGFzc2lzdGFudC4iCgp3aXRoIHVzZXIoKToKICAgIGxtICs9ICJXaGF0IGlzIHRoZSBjYXBpdGFsIG9mIEZyYW5jZT8iCgp3aXRoIGFzc2lzdGFudCgpOgogICAgbG0gKz0gZ2VuKG1heF90b2tlbnM9MjApCmBgYAoKIyMgQ29yZSBDb25jZXB0cwoKIyMjIDEuIENvbnRleHQgTWFuYWdlcnMKCkd1aWRhbmNlIHVzZXMgUHl0aG9uaWMgY29udGV4dCBtYW5hZ2VycyBmb3IgY2hhdC1zdHlsZSBpbnRlcmFjdGlvbnMuCgpgYGBweXRob24KZnJvbSBndWlkYW5jZSBpbXBvcnQgc3lzdGVtLCB1c2VyLCBhc3Npc3RhbnQsIGdlbgoKbG0gPSBtb2RlbHMuQW50aHJvcGljKCJjbGF1ZGUtc29ubmV0LTQtNS0yMDI1MDkyOSIpCgojIFN5c3RlbSBtZXNzYWdlCndpdGggc3lzdGVtKCk6CiAgICBsbSArPSAiWW91IGFyZSBhIEpTT04gZ2VuZXJhdGlvbiBleHBlcnQuIgoKIyBVc2VyIG1lc3NhZ2UKd2l0aCB1c2VyKCk6CiAgICBsbSArPSAiR2VuZXJhdGUgYSBwZXJzb24gb2JqZWN0IHdpdGggbmFtZSBhbmQgYWdlLiIKCiMgQXNzaXN0YW50IHJlc3BvbnNlCndpdGggYXNzaXN0YW50KCk6CiAgICBsbSArPSBnZW4oInJlc3BvbnNlIiwgbWF4X3Rva2Vucz0xMDApCgpwcmludChsbVsicmVzcG9uc2UiXSkKYGBgCgoqKkJlbmVmaXRzOioqCi0gTmF0dXJhbCBjaGF0IGZsb3cKLSBDbGVhciByb2xlIHNlcGFyYXRpb24KLSBFYXN5IHRvIHJlYWQgYW5kIG1haW50YWluCgojIyMgMi4gQ29uc3RyYWluZWQgR2VuZXJhdGlvbgoKR3VpZGFuY2UgZW5zdXJlcyBvdXRwdXRzIG1hdGNoIHNwZWNpZmllZCBwYXR0ZXJucyB1c2luZyByZWdleCBvciBncmFtbWFycy4KCiMjIyMgUmVnZXggQ29uc3RyYWludHMKCmBgYHB5dGhvbgpmcm9tIGd1aWRhbmNlIGltcG9ydCBtb2RlbHMsIGdlbgoKbG0gPSBtb2RlbHMuQW50aHJvcGljKCJjbGF1ZGUtc29ubmV0LTQtNS0yMDI1MDkyOSIpCgojIENvbnN0cmFpbiB0byB2YWxpZCBlbWFpbCBmb3JtYXQKbG0gKz0gIkVtYWlsOiAiICsgZ2VuKCJlbWFpbCIsIHJlZ2V4PXIiW2EtekEtWjAtOS5fJSstXStAW2EtekEtWjAtOS4tXStcLlthLXpBLVpdezIsfSIpCgojIENvbnN0cmFpbiB0byBkYXRlIGZvcm1hdCAoWVlZWS1NTS1ERCkKbG0gKz0gIkRhdGU6ICIgKyBnZW4oImRhdGUiLCByZWdleD1yIlxkezR9LVxkezJ9LVxkezJ9IikKCiMgQ29uc3RyYWluIHRvIHBob25lIG51bWJlcgpsbSArPSAiUGhvbmU6ICIgKyBnZW4oInBob25lIiwgcmVnZXg9ciJcZHszfS1cZHszfS1cZHs0fSIpCgpwcmludChsbVsiZW1haWwiXSkgICMgR3VhcmFudGVlZCB2YWxpZCBlbWFpbApwcmludChsbVsiZGF0ZSJdKSAgICMgR3VhcmFudGVlZCBZWVlZLU1NLUREIGZvcm1hdApgYGAKCioqSG93IGl0IHdvcmtzOioqCi0gUmVnZXggY29udmVydGVkIHRvIGdyYW1tYXIgYXQgdG9rZW4gbGV2ZWwKLSBJbnZhbGlkIHRva2VucyBmaWx0ZXJlZCBkdXJpbmcgZ2VuZXJhdGlvbgotIE1vZGVsIGNhbiBvbmx5IHByb2R1Y2UgbWF0Y2hpbmcgb3V0cHV0cwoKIyMjIyBTZWxlY3Rpb24gQ29uc3RyYWludHMKCmBgYHB5dGhvbgpmcm9tIGd1aWRhbmNlIGltcG9ydCBtb2RlbHMsIGdlbiwgc2VsZWN0CgpsbSA9IG1vZGVscy5BbnRocm9waWMoImNsYXVkZS1zb25uZXQtNC01LTIwMjUwOTI5IikKCiMgQ29uc3RyYWluIHRvIHNwZWNpZmljIGNob2ljZXMKbG0gKz0gIlNlbnRpbWVudDogIiArIHNlbGVjdChbInBvc2l0aXZlIiwgIm5lZ2F0aXZlIiwgIm5ldXRyYWwiXSwgbmFtZT0ic2VudGltZW50IikKCiMgTXVsdGlwbGUtY2hvaWNlIHNlbGVjdGlvbgpsbSArPSAiQmVzdCBhbnN3ZXI6ICIgKyBzZWxlY3QoCiAgICBbIkEpIFBhcmlzIiwgIkIpIExvbmRvbiIsICJDKSBCZXJsaW4iLCAiRCkgTWFkcmlkIl0sCiAgICBuYW1lPSJhbnN3ZXIiCikKCnByaW50KGxtWyJzZW50aW1lbnQiXSkgICMgT25lIG9mOiBwb3NpdGl2ZSwgbmVnYXRpdmUsIG5ldXRyYWwKcHJpbnQobG1bImFuc3dlciJdKSAgICAgIyBPbmUgb2Y6IEEsIEIsIEMsIG9yIEQKYGBgCgojIyMgMy4gVG9rZW4gSGVhbGluZwoKR3VpZGFuY2UgYXV0b21hdGljYWxseSAiaGVhbHMiIHRva2VuIGJvdW5kYXJpZXMgYmV0d2VlbiBwcm9tcHQgYW5kIGdlbmVyYXRpb24uCgoqKlByb2JsZW06KiogVG9rZW5pemF0aW9uIGNyZWF0ZXMgdW5uYXR1cmFsIGJvdW5kYXJpZXMuCgpgYGBweXRob24KIyBXaXRob3V0IHRva2VuIGhlYWxpbmcKcHJvbXB0ID0gIlRoZSBjYXBpdGFsIG9mIEZyYW5jZSBpcyAiCiMgTGFzdCB0b2tlbjogIiBpcyAiCiMgRmlyc3QgZ2VuZXJhdGVkIHRva2VuIG1pZ2h0IGJlICIgUGFyIiAod2l0aCBsZWFkaW5nIHNwYWNlKQojIFJlc3VsdDogIlRoZSBjYXBpdGFsIG9mIEZyYW5jZSBpcyAgUGFyaXMiIChkb3VibGUgc3BhY2UhKQpgYGAKCioqU29sdXRpb246KiogR3VpZGFuY2UgYmFja3MgdXAgb25lIHRva2VuIGFuZCByZWdlbmVyYXRlcy4KCmBgYHB5dGhvbgpmcm9tIGd1aWRhbmNlIGltcG9ydCBtb2RlbHMsIGdlbgoKbG0gPSBtb2RlbHMuQW50aHJvcGljKCJjbGF1ZGUtc29ubmV0LTQtNS0yMDI1MDkyOSIpCgojIFRva2VuIGhlYWxpbmcgZW5hYmxlZCBieSBkZWZhdWx0CmxtICs9ICJUaGUgY2FwaXRhbCBvZiBGcmFuY2UgaXMgIiArIGdlbigiY2FwaXRhbCIsIG1heF90b2tlbnM9NSkKIyBSZXN1bHQ6ICJUaGUgY2FwaXRhbCBvZiBGcmFuY2UgaXMgUGFyaXMiIChjb3JyZWN0IHNwYWNpbmcpCmBgYAoKKipCZW5lZml0czoqKgotIE5hdHVyYWwgdGV4dCBib3VuZGFyaWVzCi0gTm8gYXdrd2FyZCBzcGFjaW5nIGlzc3VlcwotIEJldHRlciBtb2RlbCBwZXJmb3JtYW5jZSAoc2VlcyBuYXR1cmFsIHRva2VuIHNlcXVlbmNlcykKCiMjIyA0LiBHcmFtbWFyLUJhc2VkIEdlbmVyYXRpb24KCkRlZmluZSBjb21wbGV4IHN0cnVjdHVyZXMgdXNpbmcgY29udGV4dC1mcmVlIGdyYW1tYXJzLgoKYGBgcHl0aG9uCmZyb20gZ3VpZGFuY2UgaW1wb3J0IG1vZGVscywgZ2VuCgpsbSA9IG1vZGVscy5BbnRocm9waWMoImNsYXVkZS1zb25uZXQtNC01LTIwMjUwOTI5IikKCiMgSlNPTiBncmFtbWFyIChzaW1wbGlmaWVkKQpqc29uX2dyYW1tYXIgPSAiIiIKewogICAgIm5hbWUiOiA8Z2VuIG5hbWUgcmVnZXg9IltBLVphLXogXSsiIG1heF90b2tlbnM9MjA+LAogICAgImFnZSI6IDxnZW4gYWdlIHJlZ2V4PSJbMC05XSsiIG1heF90b2tlbnM9Mz4sCiAgICAiZW1haWwiOiA8Z2VuIGVtYWlsIHJlZ2V4PSJbYS16QS1aMC05Ll8lKy1dK0BbYS16QS1aMC05Li1dK1xcLlthLXpBLVpdezIsfSIgbWF4X3Rva2Vucz01MD4KfQoiIiIKCiMgR2VuZXJhdGUgdmFsaWQgSlNPTgpsbSArPSBnZW4oInBlcnNvbiIsIGdyYW1tYXI9anNvbl9ncmFtbWFyKQoKcHJpbnQobG1bInBlcnNvbiJdKSAgIyBHdWFyYW50ZWVkIHZhbGlkIEpTT04gc3RydWN0dXJlCmBgYAoKKipVc2UgY2FzZXM6KioKLSBDb21wbGV4IHN0cnVjdHVyZWQgb3V0cHV0cwotIE5lc3RlZCBkYXRhIHN0cnVjdHVyZXMKLSBQcm9ncmFtbWluZyBsYW5ndWFnZSBzeW50YXgKLSBEb21haW4tc3BlY2lmaWMgbGFuZ3VhZ2VzCgojIyMgNS4gR3VpZGFuY2UgRnVuY3Rpb25zCgpDcmVhdGUgcmV1c2FibGUgZ2VuZXJhdGlvbiBwYXR0ZXJucyB3aXRoIHRoZSBgQGd1aWRhbmNlYCBkZWNvcmF0b3IuCgpgYGBweXRob24KZnJvbSBndWlkYW5jZSBpbXBvcnQgZ3VpZGFuY2UsIGdlbiwgbW9kZWxzCgpAZ3VpZGFuY2UKZGVmIGdlbmVyYXRlX3BlcnNvbihsbSk6CiAgICAiIiJHZW5lcmF0ZSBhIHBlcnNvbiB3aXRoIG5hbWUgYW5kIGFnZS4iIiIKICAgIGxtICs9ICJOYW1lOiAiICsgZ2VuKCJuYW1lIiwgbWF4X3Rva2Vucz0yMCwgc3RvcD0iXG4iKQogICAgbG0gKz0gIlxuQWdlOiAiICsgZ2VuKCJhZ2UiLCByZWdleD1yIlswLTldKyIsIG1heF90b2tlbnM9MykKICAgIHJldHVybiBsbQoKIyBVc2UgdGhlIGZ1bmN0aW9uCmxtID0gbW9kZWxzLkFudGhyb3BpYygiY2xhdWRlLXNvbm5ldC00LTUtMjAyNTA5MjkiKQpsbSA9IGdlbmVyYXRlX3BlcnNvbihsbSkKCnByaW50KGxtWyJuYW1lIl0pCnByaW50KGxtWyJhZ2UiXSkKYGBgCgoqKlN0YXRlZnVsIEZ1bmN0aW9uczoqKgoKYGBgcHl0aG9uCkBndWlkYW5jZShzdGF0ZWxlc3M9RmFsc2UpCmRlZiByZWFjdF9hZ2VudChsbSwgcXVlc3Rpb24sIHRvb2xzLCBtYXhfcm91bmRzPTUpOgogICAgIiIiUmVBY3QgYWdlbnQgd2l0aCB0b29sIHVzZS4iIiIKICAgIGxtICs9IGYiUXVlc3Rpb246IHtxdWVzdGlvbn1cblxuIgoKICAgIGZvciBpIGluIHJhbmdlKG1heF9yb3VuZHMpOgogICAgICAgICMgVGhvdWdodAogICAgICAgIGxtICs9IGYiVGhvdWdodCB7aSsxfTogIiArIGdlbigidGhvdWdodCIsIHN0b3A9IlxuIikKCiAgICAgICAgIyBBY3Rpb24KICAgICAgICBsbSArPSAiXG5BY3Rpb246ICIgKyBzZWxlY3QobGlzdCh0b29scy5rZXlzKCkpLCBuYW1lPSJhY3Rpb24iKQoKICAgICAgICAjIEV4ZWN1dGUgdG9vbAogICAgICAgIHRvb2xfcmVzdWx0ID0gdG9vbHNbbG1bImFjdGlvbiJdXSgpCiAgICAgICAgbG0gKz0gZiJcbk9ic2VydmF0aW9uOiB7dG9vbF9yZXN1bHR9XG5cbiIKCiAgICAgICAgIyBDaGVjayBpZiBkb25lCiAgICAgICAgbG0gKz0gIkRvbmU/ICIgKyBzZWxlY3QoWyJZZXMiLCAiTm8iXSwgbmFtZT0iZG9uZSIpCiAgICAgICAgaWYgbG1bImRvbmUiXSA9PSAiWWVzIjoKICAgICAgICAgICAgYnJlYWsKCiAgICAjIEZpbmFsIGFuc3dlcgogICAgbG0gKz0gIlxuRmluYWwgQW5zd2VyOiAiICsgZ2VuKCJhbnN3ZXIiLCBtYXhfdG9rZW5zPTEwMCkKICAgIHJldHVybiBsbQpgYGAKCiMjIEJhY2tlbmQgQ29uZmlndXJhdGlvbgoKIyMjIEFudGhyb3BpYyBDbGF1ZGUKCmBgYHB5dGhvbgpmcm9tIGd1aWRhbmNlIGltcG9ydCBtb2RlbHMKCmxtID0gbW9kZWxzLkFudGhyb3BpYygKICAgIG1vZGVsPSJjbGF1ZGUtc29ubmV0LTQtNS0yMDI1MDkyOSIsCiAgICBhcGlfa2V5PSJ5b3VyLWFwaS1rZXkiICAjIE9yIHNldCBBTlRIUk9QSUNfQVBJX0tFWSBlbnYgdmFyCikKYGBgCgojIyMgT3BlbkFJCgpgYGBweXRob24KbG0gPSBtb2RlbHMuT3BlbkFJKAogICAgbW9kZWw9ImdwdC00by1taW5pIiwKICAgIGFwaV9rZXk9InlvdXItYXBpLWtleSIgICMgT3Igc2V0IE9QRU5BSV9BUElfS0VZIGVudiB2YXIKKQpgYGAKCiMjIyBMb2NhbCBNb2RlbHMgKFRyYW5zZm9ybWVycykKCmBgYHB5dGhvbgpmcm9tIGd1aWRhbmNlLm1vZGVscyBpbXBvcnQgVHJhbnNmb3JtZXJzCgpsbSA9IFRyYW5zZm9ybWVycygKICAgICJtaWNyb3NvZnQvUGhpLTQtbWluaS1pbnN0cnVjdCIsCiAgICBkZXZpY2U9ImN1ZGEiICAjIE9yICJjcHUiCikKYGBgCgojIyMgTG9jYWwgTW9kZWxzIChsbGFtYS5jcHApCgpgYGBweXRob24KZnJvbSBndWlkYW5jZS5tb2RlbHMgaW1wb3J0IExsYW1hQ3BwCgpsbSA9IExsYW1hQ3BwKAogICAgbW9kZWxfcGF0aD0iL3BhdGgvdG8vbW9kZWwuZ2d1ZiIsCiAgICBuX2N0eD00MDk2LAogICAgbl9ncHVfbGF5ZXJzPTM1CikKYGBgCgojIyBDb21tb24gUGF0dGVybnMKCiMjIyBQYXR0ZXJuIDE6IEpTT04gR2VuZXJhdGlvbgoKYGBgcHl0aG9uCmZyb20gZ3VpZGFuY2UgaW1wb3J0IG1vZGVscywgZ2VuLCBzeXN0ZW0sIHVzZXIsIGFzc2lzdGFudAoKbG0gPSBtb2RlbHMuQW50aHJvcGljKCJjbGF1ZGUtc29ubmV0LTQtNS0yMDI1MDkyOSIpCgp3aXRoIHN5c3RlbSgpOgogICAgbG0gKz0gIllvdSBnZW5lcmF0ZSB2YWxpZCBKU09OLiIKCndpdGggdXNlcigpOgogICAgbG0gKz0gIkdlbmVyYXRlIGEgdXNlciBwcm9maWxlIHdpdGggbmFtZSwgYWdlLCBhbmQgZW1haWwuIgoKd2l0aCBhc3Npc3RhbnQoKToKICAgIGxtICs9ICIiInsKICAgICJuYW1lIjogIiIiICsgZ2VuKCJuYW1lIiwgcmVnZXg9ciciW0EtWmEteiBdKyInLCBtYXhfdG9rZW5zPTMwKSArICIiIiwKICAgICJhZ2UiOiAiIiIgKyBnZW4oImFnZSIsIHJlZ2V4PXIiWzAtOV0rIiwgbWF4X3Rva2Vucz0zKSArICIiIiwKICAgICJlbWFpbCI6ICIiIiArIGdlbigiZW1haWwiLCByZWdleD1yJyJbYS16QS1aMC05Ll8lKy1dK0BbYS16QS1aMC05Li1dK1wuW2EtekEtWl17Mix9IicsIG1heF90b2tlbnM9NTApICsgIiIiCn0iIiIKCnByaW50KGxtKSAgIyBWYWxpZCBKU09OIGd1YXJhbnRlZWQKYGBgCgojIyMgUGF0dGVybiAyOiBDbGFzc2lmaWNhdGlvbgoKYGBgcHl0aG9uCmZyb20gZ3VpZGFuY2UgaW1wb3J0IG1vZGVscywgZ2VuLCBzZWxlY3QKCmxtID0gbW9kZWxzLkFudGhyb3BpYygiY2xhdWRlLXNvbm5ldC00LTUtMjAyNTA5MjkiKQoKdGV4dCA9ICJUaGlzIHByb2R1Y3QgaXMgYW1hemluZyEgSSBsb3ZlIGl0LiIKCmxtICs9IGYiVGV4dDoge3RleHR9XG4iCmxtICs9ICJTZW50aW1lbnQ6ICIgKyBzZWxlY3QoWyJwb3NpdGl2ZSIsICJuZWdhdGl2ZSIsICJuZXV0cmFsIl0sIG5hbWU9InNlbnRpbWVudCIpCmxtICs9ICJcbkNvbmZpZGVuY2U6ICIgKyBnZW4oImNvbmZpZGVuY2UiLCByZWdleD1yIlswLTldKyIsIG1heF90b2tlbnM9MykgKyAiJSIKCnByaW50KGYiU2VudGltZW50OiB7bG1bJ3NlbnRpbWVudCddfSIpCnByaW50KGYiQ29uZmlkZW5jZToge2xtWydjb25maWRlbmNlJ119JSIpCmBgYAoKIyMjIFBhdHRlcm4gMzogTXVsdGktU3RlcCBSZWFzb25pbmcKCmBgYHB5dGhvbgpmcm9tIGd1aWRhbmNlIGltcG9ydCBtb2RlbHMsIGdlbiwgZ3VpZGFuY2UKCkBndWlkYW5jZQpkZWYgY2hhaW5fb2ZfdGhvdWdodChsbSwgcXVlc3Rpb24pOgogICAgIiIiR2VuZXJhdGUgYW5zd2VyIHdpdGggc3RlcC1ieS1zdGVwIHJlYXNvbmluZy4iIiIKICAgIGxtICs9IGYiUXVlc3Rpb246IHtxdWVzdGlvbn1cblxuIgoKICAgICMgR2VuZXJhdGUgbXVsdGlwbGUgcmVhc29uaW5nIHN0ZXBzCiAgICBmb3IgaSBpbiByYW5nZSgzKToKICAgICAgICBsbSArPSBmIlN0ZXAge2krMX06ICIgKyBnZW4oZiJzdGVwX3tpKzF9Iiwgc3RvcD0iXG4iLCBtYXhfdG9rZW5zPTEwMCkgKyAiXG4iCgogICAgIyBGaW5hbCBhbnN3ZXIKICAgIGxtICs9ICJcblRoZXJlZm9yZSwgdGhlIGFuc3dlciBpczogIiArIGdlbigiYW5zd2VyIiwgbWF4X3Rva2Vucz01MCkKCiAgICByZXR1cm4gbG0KCmxtID0gbW9kZWxzLkFudGhyb3BpYygiY2xhdWRlLXNvbm5ldC00LTUtMjAyNTA5MjkiKQpsbSA9IGNoYWluX29mX3Rob3VnaHQobG0sICJXaGF0IGlzIDE1JSBvZiAyMDA/IikKCnByaW50KGxtWyJhbnN3ZXIiXSkKYGBgCgojIyMgUGF0dGVybiA0OiBSZUFjdCBBZ2VudAoKYGBgcHl0aG9uCmZyb20gZ3VpZGFuY2UgaW1wb3J0IG1vZGVscywgZ2VuLCBzZWxlY3QsIGd1aWRhbmNlCgpAZ3VpZGFuY2Uoc3RhdGVsZXNzPUZhbHNlKQpkZWYgcmVhY3RfYWdlbnQobG0sIHF1ZXN0aW9uKToKICAgICIiIlJlQWN0IGFnZW50IHdpdGggdG9vbCB1c2UuIiIiCiAgICB0b29scyA9IHsKICAgICAgICAiY2FsY3VsYXRvciI6IGxhbWJkYSBleHByOiBldmFsKGV4cHIpLAogICAgICAgICJzZWFyY2giOiBsYW1iZGEgcXVlcnk6IGYiU2VhcmNoIHJlc3VsdHMgZm9yOiB7cXVlcnl9IiwKICAgIH0KCiAgICBsbSArPSBmIlF1ZXN0aW9uOiB7cXVlc3Rpb259XG5cbiIKCiAgICBmb3Igcm91bmQgaW4gcmFuZ2UoNSk6CiAgICAgICAgIyBUaG91Z2h0CiAgICAgICAgbG0gKz0gZiJUaG91Z2h0OiAiICsgZ2VuKCJ0aG91Z2h0Iiwgc3RvcD0iXG4iKSArICJcbiIKCiAgICAgICAgIyBBY3Rpb24gc2VsZWN0aW9uCiAgICAgICAgbG0gKz0gIkFjdGlvbjogIiArIHNlbGVjdChbImNhbGN1bGF0b3IiLCAic2VhcmNoIiwgImFuc3dlciJdLCBuYW1lPSJhY3Rpb24iKQoKICAgICAgICBpZiBsbVsiYWN0aW9uIl0gPT0gImFuc3dlciI6CiAgICAgICAgICAgIGxtICs9ICJcbkZpbmFsIEFuc3dlcjogIiArIGdlbigiYW5zd2VyIiwgbWF4X3Rva2Vucz0xMDApCiAgICAgICAgICAgIGJyZWFrCgogICAgICAgICMgQWN0aW9uIGlucHV0CiAgICAgICAgbG0gKz0gIlxuQWN0aW9uIElucHV0OiAiICsgZ2VuKCJhY3Rpb25faW5wdXQiLCBzdG9wPSJcbiIpICsgIlxuIgoKICAgICAgICAjIEV4ZWN1dGUgdG9vbAogICAgICAgIGlmIGxtWyJhY3Rpb24iXSBpbiB0b29sczoKICAgICAgICAgICAgcmVzdWx0ID0gdG9vbHNbbG1bImFjdGlvbiJdXShsbVsiYWN0aW9uX2lucHV0Il0pCiAgICAgICAgICAgIGxtICs9IGYiT2JzZXJ2YXRpb246IHtyZXN1bHR9XG5cbiIKCiAgICByZXR1cm4gbG0KCmxtID0gbW9kZWxzLkFudGhyb3BpYygiY2xhdWRlLXNvbm5ldC00LTUtMjAyNTA5MjkiKQpsbSA9IHJlYWN0X2FnZW50KGxtLCAiV2hhdCBpcyAyNSAqIDQgKyAxMD8iKQpwcmludChsbVsiYW5zd2VyIl0pCmBgYAoKIyMjIFBhdHRlcm4gNTogRGF0YSBFeHRyYWN0aW9uCgpgYGBweXRob24KZnJvbSBndWlkYW5jZSBpbXBvcnQgbW9kZWxzLCBnZW4sIGd1aWRhbmNlCgpAZ3VpZGFuY2UKZGVmIGV4dHJhY3RfZW50aXRpZXMobG0sIHRleHQpOgogICAgIiIiRXh0cmFjdCBzdHJ1Y3R1cmVkIGVudGl0aWVzIGZyb20gdGV4dC4iIiIKICAgIGxtICs9IGYiVGV4dDoge3RleHR9XG5cbiIKCiAgICAjIEV4dHJhY3QgcGVyc29uCiAgICBsbSArPSAiUGVyc29uOiAiICsgZ2VuKCJwZXJzb24iLCBzdG9wPSJcbiIsIG1heF90b2tlbnM9MzApICsgIlxuIgoKICAgICMgRXh0cmFjdCBvcmdhbml6YXRpb24KICAgIGxtICs9ICJPcmdhbml6YXRpb246ICIgKyBnZW4oIm9yZ2FuaXphdGlvbiIsIHN0b3A9IlxuIiwgbWF4X3Rva2Vucz0zMCkgKyAiXG4iCgogICAgIyBFeHRyYWN0IGRhdGUKICAgIGxtICs9ICJEYXRlOiAiICsgZ2VuKCJkYXRlIiwgcmVnZXg9ciJcZHs0fS1cZHsyfS1cZHsyfSIsIG1heF90b2tlbnM9MTApICsgIlxuIgoKICAgICMgRXh0cmFjdCBsb2NhdGlvbgogICAgbG0gKz0gIkxvY2F0aW9uOiAiICsgZ2VuKCJsb2NhdGlvbiIsIHN0b3A9IlxuIiwgbWF4X3Rva2Vucz0zMCkgKyAiXG4iCgogICAgcmV0dXJuIGxtCgp0ZXh0ID0gIlRpbSBDb29rIGFubm91bmNlZCBhdCBBcHBsZSBQYXJrIG9uIDIwMjQtMDktMTUgaW4gQ3VwZXJ0aW5vLiIKCmxtID0gbW9kZWxzLkFudGhyb3BpYygiY2xhdWRlLXNvbm5ldC00LTUtMjAyNTA5MjkiKQpsbSA9IGV4dHJhY3RfZW50aXRpZXMobG0sIHRleHQpCgpwcmludChmIlBlcnNvbjoge2xtWydwZXJzb24nXX0iKQpwcmludChmIk9yZ2FuaXphdGlvbjoge2xtWydvcmdhbml6YXRpb24nXX0iKQpwcmludChmIkRhdGU6IHtsbVsnZGF0ZSddfSIpCnByaW50KGYiTG9jYXRpb246IHtsbVsnbG9jYXRpb24nXX0iKQpgYGAKCiMjIEJlc3QgUHJhY3RpY2VzCgojIyMgMS4gVXNlIFJlZ2V4IGZvciBGb3JtYXQgVmFsaWRhdGlvbgoKYGBgcHl0aG9uCiMg4pyFIEdvb2Q6IFJlZ2V4IGVuc3VyZXMgdmFsaWQgZm9ybWF0CmxtICs9ICJFbWFpbDogIiArIGdlbigiZW1haWwiLCByZWdleD1yIlthLXpBLVowLTkuXyUrLV0rQFthLXpBLVowLTkuLV0rXC5bYS16QS1aXXsyLH0iKQoKIyDinYwgQmFkOiBGcmVlIGdlbmVyYXRpb24gbWF5IHByb2R1Y2UgaW52YWxpZCBlbWFpbHMKbG0gKz0gIkVtYWlsOiAiICsgZ2VuKCJlbWFpbCIsIG1heF90b2tlbnM9NTApCmBgYAoKIyMjIDIuIFVzZSBzZWxlY3QoKSBmb3IgRml4ZWQgQ2F0ZWdvcmllcwoKYGBgcHl0aG9uCiMg4pyFIEdvb2Q6IEd1YXJhbnRlZWQgdmFsaWQgY2F0ZWdvcnkKbG0gKz0gIlN0YXR1czogIiArIHNlbGVjdChbInBlbmRpbmciLCAiYXBwcm92ZWQiLCAicmVqZWN0ZWQiXSwgbmFtZT0ic3RhdHVzIikKCiMg4p2MIEJhZDogTWF5IGdlbmVyYXRlIHR5cG9zIG9yIGludmFsaWQgdmFsdWVzCmxtICs9ICJTdGF0dXM6ICIgKyBnZW4oInN0YXR1cyIsIG1heF90b2tlbnM9MjApCmBgYAoKIyMjIDMuIExldmVyYWdlIFRva2VuIEhlYWxpbmcKCmBgYHB5dGhvbgojIFRva2VuIGhlYWxpbmcgaXMgZW5hYmxlZCBieSBkZWZhdWx0CiMgTm8gc3BlY2lhbCBhY3Rpb24gbmVlZGVkIC0ganVzdCBjb25jYXRlbmF0ZSBuYXR1cmFsbHkKbG0gKz0gIlRoZSBjYXBpdGFsIGlzICIgKyBnZW4oImNhcGl0YWwiKSAgIyBBdXRvbWF0aWMgaGVhbGluZwpgYGAKCiMjIyA0LiBVc2Ugc3RvcCBTZXF1ZW5jZXMKCmBgYHB5dGhvbgojIOKchSBHb29kOiBTdG9wIGF0IG5ld2xpbmUgZm9yIHNpbmdsZS1saW5lIG91dHB1dHMKbG0gKz0gIk5hbWU6ICIgKyBnZW4oIm5hbWUiLCBzdG9wPSJcbiIpCgojIOKdjCBCYWQ6IE1heSBnZW5lcmF0ZSBtdWx0aXBsZSBsaW5lcwpsbSArPSAiTmFtZTogIiArIGdlbigibmFtZSIsIG1heF90b2tlbnM9NTApCmBgYAoKIyMjIDUuIENyZWF0ZSBSZXVzYWJsZSBGdW5jdGlvbnMKCmBgYHB5dGhvbgojIOKchSBHb29kOiBSZXVzYWJsZSBwYXR0ZXJuCkBndWlkYW5jZQpkZWYgZ2VuZXJhdGVfcGVyc29uKGxtKToKICAgIGxtICs9ICJOYW1lOiAiICsgZ2VuKCJuYW1lIiwgc3RvcD0iXG4iKQogICAgbG0gKz0gIlxuQWdlOiAiICsgZ2VuKCJhZ2UiLCByZWdleD1yIlswLTldKyIpCiAgICByZXR1cm4gbG0KCiMgVXNlIG11bHRpcGxlIHRpbWVzCmxtID0gZ2VuZXJhdGVfcGVyc29uKGxtKQpsbSArPSAiXG5cbiIKbG0gPSBnZW5lcmF0ZV9wZXJzb24obG0pCmBgYAoKIyMjIDYuIEJhbGFuY2UgQ29uc3RyYWludHMKCmBgYHB5dGhvbgojIOKchSBHb29kOiBSZWFzb25hYmxlIGNvbnN0cmFpbnRzCmxtICs9IGdlbigibmFtZSIsIHJlZ2V4PXIiW0EtWmEteiBdKyIsIG1heF90b2tlbnM9MzApCgojIOKdjCBUb28gc3RyaWN0OiBNYXkgZmFpbCBvciBiZSB2ZXJ5IHNsb3cKbG0gKz0gZ2VuKCJuYW1lIiwgcmVnZXg9ciJeKEpvaG58SmFuZSkkIiwgbWF4X3Rva2Vucz0xMCkKYGBgCgojIyBDb21wYXJpc29uIHRvIEFsdGVybmF0aXZlcwoKfCBGZWF0dXJlIHwgR3VpZGFuY2UgfCBJbnN0cnVjdG9yIHwgT3V0bGluZXMgfCBMTVFMIHwKfC0tLS0tLS0tLXwtLS0tLS0tLS0tfC0tLS0tLS0tLS0tLXwtLS0tLS0tLS0tfC0tLS0tLXwKfCBSZWdleCBDb25zdHJhaW50cyB8IOKchSBZZXMgfCDinYwgTm8gfCDinIUgWWVzIHwg4pyFIFllcyB8CnwgR3JhbW1hciBTdXBwb3J0IHwg4pyFIENGRyB8IOKdjCBObyB8IOKchSBDRkcgfCDinIUgQ0ZHIHwKfCBQeWRhbnRpYyBWYWxpZGF0aW9uIHwg4p2MIE5vIHwg4pyFIFllcyB8IOKchSBZZXMgfCDinYwgTm8gfAp8IFRva2VuIEhlYWxpbmcgfCDinIUgWWVzIHwg4p2MIE5vIHwg4pyFIFllcyB8IOKdjCBObyB8CnwgTG9jYWwgTW9kZWxzIHwg4pyFIFllcyB8IOKaoO+4jyBMaW1pdGVkIHwg4pyFIFllcyB8IOKchSBZZXMgfAp8IEFQSSBNb2RlbHMgfCDinIUgWWVzIHwg4pyFIFllcyB8IOKaoO+4jyBMaW1pdGVkIHwg4pyFIFllcyB8CnwgUHl0aG9uaWMgU3ludGF4IHwg4pyFIFllcyB8IOKchSBZZXMgfCDinIUgWWVzIHwg4p2MIFNRTC1saWtlIHwKfCBMZWFybmluZyBDdXJ2ZSB8IExvdyB8IExvdyB8IE1lZGl1bSB8IEhpZ2ggfAoKKipXaGVuIHRvIGNob29zZSBHdWlkYW5jZToqKgotIE5lZWQgcmVnZXgvZ3JhbW1hciBjb25zdHJhaW50cwotIFdhbnQgdG9rZW4gaGVhbGluZwotIEJ1aWxkaW5nIGNvbXBsZXggd29ya2Zsb3dzIHdpdGggY29udHJvbCBmbG93Ci0gVXNpbmcgbG9jYWwgbW9kZWxzIChUcmFuc2Zvcm1lcnMsIGxsYW1hLmNwcCkKLSBQcmVmZXIgUHl0aG9uaWMgc3ludGF4CgoqKldoZW4gdG8gY2hvb3NlIGFsdGVybmF0aXZlczoqKgotIEluc3RydWN0b3I6IE5lZWQgUHlkYW50aWMgdmFsaWRhdGlvbiB3aXRoIGF1dG9tYXRpYyByZXRyeWluZwotIE91dGxpbmVzOiBOZWVkIEpTT04gc2NoZW1hIHZhbGlkYXRpb24KLSBMTVFMOiBQcmVmZXIgZGVjbGFyYXRpdmUgcXVlcnkgc3ludGF4CgojIyBQZXJmb3JtYW5jZSBDaGFyYWN0ZXJpc3RpY3MKCioqTGF0ZW5jeSBSZWR1Y3Rpb246KioKLSAzMC01MCUgZmFzdGVyIHRoYW4gdHJhZGl0aW9uYWwgcHJvbXB0aW5nIGZvciBjb25zdHJhaW5lZCBvdXRwdXRzCi0gVG9rZW4gaGVhbGluZyByZWR1Y2VzIHVubmVjZXNzYXJ5IHJlZ2VuZXJhdGlvbgotIEdyYW1tYXIgY29uc3RyYWludHMgcHJldmVudCBpbnZhbGlkIHRva2VuIGdlbmVyYXRpb24KCioqTWVtb3J5IFVzYWdlOioqCi0gTWluaW1hbCBvdmVyaGVhZCB2cyB1bmNvbnN0cmFpbmVkIGdlbmVyYXRpb24KLSBHcmFtbWFyIGNvbXBpbGF0aW9uIGNhY2hlZCBhZnRlciBmaXJzdCB1c2UKLSBFZmZpY2llbnQgdG9rZW4gZmlsdGVyaW5nIGF0IGluZmVyZW5jZSB0aW1lCgoqKlRva2VuIEVmZmljaWVuY3k6KioKLSBQcmV2ZW50cyB3YXN0ZWQgdG9rZW5zIG9uIGludmFsaWQgb3V0cHV0cwotIE5vIG5lZWQgZm9yIHJldHJ5IGxvb3BzCi0gRGlyZWN0IHBhdGggdG8gdmFsaWQgb3V0cHV0cwoKIyMgUmVzb3VyY2VzCgotICoqRG9jdW1lbnRhdGlvbioqOiBodHRwczovL2d1aWRhbmNlLnJlYWR0aGVkb2NzLmlvCi0gKipHaXRIdWIqKjogaHR0cHM6Ly9naXRodWIuY29tL2d1aWRhbmNlLWFpL2d1aWRhbmNlICgxOGsrIHN0YXJzKQotICoqTm90ZWJvb2tzKio6IGh0dHBzOi8vZ2l0aHViLmNvbS9ndWlkYW5jZS1haS9ndWlkYW5jZS90cmVlL21haW4vbm90ZWJvb2tzCi0gKipEaXNjb3JkKio6IENvbW11bml0eSBzdXBwb3J0IGF2YWlsYWJsZQoKIyMgU2VlIEFsc28KCi0gYHJlZmVyZW5jZXMvY29uc3RyYWludHMubWRgIC0gQ29tcHJlaGVuc2l2ZSByZWdleCBhbmQgZ3JhbW1hciBwYXR0ZXJucwotIGByZWZlcmVuY2VzL2JhY2tlbmRzLm1kYCAtIEJhY2tlbmQtc3BlY2lmaWMgY29uZmlndXJhdGlvbgotIGByZWZlcmVuY2VzL2V4YW1wbGVzLm1kYCAtIFByb2R1Y3Rpb24tcmVhZHkgZXhhbXBsZXMKCgo=
+---
+name: guidance
+description: Control LLM output with regex and grammars, guarantee valid JSON/XML/code generation, enforce structured formats, and build multi-step workflows with Guidance - Microsoft Research's constrained generation framework
+version: 1.0.0
+author: Orchestra Research
+license: MIT
+dependencies: [guidance, transformers]
+metadata:
+  hermes:
+    tags: [Prompt Engineering, Guidance, Constrained Generation, Structured Output, JSON Validation, Grammar, Microsoft Research, Format Enforcement, Multi-Step Workflows]
+
+---
+
+# Guidance: Constrained LLM Generation
+
+## When to Use This Skill
+
+Use Guidance when you need to:
+- **Control LLM output syntax** with regex or grammars
+- **Guarantee valid JSON/XML/code** generation
+- **Reduce latency** vs traditional prompting approaches
+- **Enforce structured formats** (dates, emails, IDs, etc.)
+- **Build multi-step workflows** with Pythonic control flow
+- **Prevent invalid outputs** through grammatical constraints
+
+**GitHub Stars**: 18,000+ | **From**: Microsoft Research
+
+## Installation
+
+```bash
+# Base installation
+pip install guidance
+
+# With specific backends
+pip install guidance[transformers]  # Hugging Face models
+pip install guidance[llama_cpp]     # llama.cpp models
+```
+
+## Quick Start
+
+### Basic Example: Structured Generation
+
+```python
+from guidance import models, gen
+
+# Load model (supports OpenAI, Transformers, llama.cpp)
+lm = models.OpenAI("gpt-4")
+
+# Generate with constraints
+result = lm + "The capital of France is " + gen("capital", max_tokens=5)
+
+print(result["capital"])  # "Paris"
+```
+
+### With Anthropic Claude
+
+```python
+from guidance import models, gen, system, user, assistant
+
+# Configure Claude
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+
+# Use context managers for chat format
+with system():
+    lm += "You are a helpful assistant."
+
+with user():
+    lm += "What is the capital of France?"
+
+with assistant():
+    lm += gen(max_tokens=20)
+```
+
+## Core Concepts
+
+### 1. Context Managers
+
+Guidance uses Pythonic context managers for chat-style interactions.
+
+```python
+from guidance import system, user, assistant, gen
+
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+
+# System message
+with system():
+    lm += "You are a JSON generation expert."
+
+# User message
+with user():
+    lm += "Generate a person object with name and age."
+
+# Assistant response
+with assistant():
+    lm += gen("response", max_tokens=100)
+
+print(lm["response"])
+```
+
+**Benefits:**
+- Natural chat flow
+- Clear role separation
+- Easy to read and maintain
+
+### 2. Constrained Generation
+
+Guidance ensures outputs match specified patterns using regex or grammars.
+
+#### Regex Constraints
+
+```python
+from guidance import models, gen
+
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+
+# Constrain to valid email format
+lm += "Email: " + gen("email", regex=r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}")
+
+# Constrain to date format (YYYY-MM-DD)
+lm += "Date: " + gen("date", regex=r"\d{4}-\d{2}-\d{2}")
+
+# Constrain to phone number
+lm += "Phone: " + gen("phone", regex=r"\d{3}-\d{3}-\d{4}")
+
+print(lm["email"])  # Guaranteed valid email
+print(lm["date"])   # Guaranteed YYYY-MM-DD format
+```
+
+**How it works:**
+- Regex converted to grammar at token level
+- Invalid tokens filtered during generation
+- Model can only produce matching outputs
+
+#### Selection Constraints
+
+```python
+from guidance import models, gen, select
+
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+
+# Constrain to specific choices
+lm += "Sentiment: " + select(["positive", "negative", "neutral"], name="sentiment")
+
+# Multiple-choice selection
+lm += "Best answer: " + select(
+    ["A) Paris", "B) London", "C) Berlin", "D) Madrid"],
+    name="answer"
+)
+
+print(lm["sentiment"])  # One of: positive, negative, neutral
+print(lm["answer"])     # One of: A, B, C, or D
+```
+
+### 3. Token Healing
+
+Guidance automatically "heals" token boundaries between prompt and generation.
+
+**Problem:** Tokenization creates unnatural boundaries.
+
+```python
+# Without token healing
+prompt = "The capital of France is "
+# Last token: " is "
+# First generated token might be " Par" (with leading space)
+# Result: "The capital of France is  Paris" (double space!)
+```
+
+**Solution:** Guidance backs up one token and regenerates.
+
+```python
+from guidance import models, gen
+
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+
+# Token healing enabled by default
+lm += "The capital of France is " + gen("capital", max_tokens=5)
+# Result: "The capital of France is Paris" (correct spacing)
+```
+
+**Benefits:**
+- Natural text boundaries
+- No awkward spacing issues
+- Better model performance (sees natural token sequences)
+
+### 4. Grammar-Based Generation
+
+Define complex structures using context-free grammars.
+
+```python
+from guidance import models, gen
+
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+
+# JSON grammar (simplified)
+json_grammar = """
+{
+    "name": <gen name regex="[A-Za-z ]+" max_tokens=20>,
+    "age": <gen age regex="[0-9]+" max_tokens=3>,
+    "email": <gen email regex="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}" max_tokens=50>
+}
+"""
+
+# Generate valid JSON
+lm += gen("person", grammar=json_grammar)
+
+print(lm["person"])  # Guaranteed valid JSON structure
+```
+
+**Use cases:**
+- Complex structured outputs
+- Nested data structures
+- Programming language syntax
+- Domain-specific languages
+
+### 5. Guidance Functions
+
+Create reusable generation patterns with the `@guidance` decorator.
+
+```python
+from guidance import guidance, gen, models
+
+@guidance
+def generate_person(lm):
+    """Generate a person with name and age."""
+    lm += "Name: " + gen("name", max_tokens=20, stop="\n")
+    lm += "\nAge: " + gen("age", regex=r"[0-9]+", max_tokens=3)
+    return lm
+
+# Use the function
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+lm = generate_person(lm)
+
+print(lm["name"])
+print(lm["age"])
+```
+
+**Stateful Functions:**
+
+```python
+@guidance(stateless=False)
+def react_agent(lm, question, tools, max_rounds=5):
+    """ReAct agent with tool use."""
+    lm += f"Question: {question}\n\n"
+
+    for i in range(max_rounds):
+        # Thought
+        lm += f"Thought {i+1}: " + gen("thought", stop="\n")
+
+        # Action
+        lm += "\nAction: " + select(list(tools.keys()), name="action")
+
+        # Execute tool
+        tool_result = tools[lm["action"]]()
+        lm += f"\nObservation: {tool_result}\n\n"
+
+        # Check if done
+        lm += "Done? " + select(["Yes", "No"], name="done")
+        if lm["done"] == "Yes":
+            break
+
+    # Final answer
+    lm += "\nFinal Answer: " + gen("answer", max_tokens=100)
+    return lm
+```
+
+## Backend Configuration
+
+### Anthropic Claude
+
+```python
+from guidance import models
+
+lm = models.Anthropic(
+    model="claude-sonnet-4-5-20250929",
+    api_key="your-api-key"  # Or set ANTHROPIC_API_KEY env var
+)
+```
+
+### OpenAI
+
+```python
+lm = models.OpenAI(
+    model="gpt-4o-mini",
+    api_key="your-api-key"  # Or set OPENAI_API_KEY env var
+)
+```
+
+### Local Models (Transformers)
+
+```python
+from guidance.models import Transformers
+
+lm = Transformers(
+    "microsoft/Phi-4-mini-instruct",
+    device="cuda"  # Or "cpu"
+)
+```
+
+### Local Models (llama.cpp)
+
+```python
+from guidance.models import LlamaCpp
+
+lm = LlamaCpp(
+    model_path="/path/to/model.gguf",
+    n_ctx=4096,
+    n_gpu_layers=35
+)
+```
+
+## Common Patterns
+
+### Pattern 1: JSON Generation
+
+```python
+from guidance import models, gen, system, user, assistant
+
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+
+with system():
+    lm += "You generate valid JSON."
+
+with user():
+    lm += "Generate a user profile with name, age, and email."
+
+with assistant():
+    lm += """{
+    "name": """ + gen("name", regex=r'"[A-Za-z ]+"', max_tokens=30) + """,
+    "age": """ + gen("age", regex=r"[0-9]+", max_tokens=3) + """,
+    "email": """ + gen("email", regex=r'"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"', max_tokens=50) + """
+}"""
+
+print(lm)  # Valid JSON guaranteed
+```
+
+### Pattern 2: Classification
+
+```python
+from guidance import models, gen, select
+
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+
+text = "This product is amazing! I love it."
+
+lm += f"Text: {text}\n"
+lm += "Sentiment: " + select(["positive", "negative", "neutral"], name="sentiment")
+lm += "\nConfidence: " + gen("confidence", regex=r"[0-9]+", max_tokens=3) + "%"
+
+print(f"Sentiment: {lm['sentiment']}")
+print(f"Confidence: {lm['confidence']}%")
+```
+
+### Pattern 3: Multi-Step Reasoning
+
+```python
+from guidance import models, gen, guidance
+
+@guidance
+def chain_of_thought(lm, question):
+    """Generate answer with step-by-step reasoning."""
+    lm += f"Question: {question}\n\n"
+
+    # Generate multiple reasoning steps
+    for i in range(3):
+        lm += f"Step {i+1}: " + gen(f"step_{i+1}", stop="\n", max_tokens=100) + "\n"
+
+    # Final answer
+    lm += "\nTherefore, the answer is: " + gen("answer", max_tokens=50)
+
+    return lm
+
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+lm = chain_of_thought(lm, "What is 15% of 200?")
+
+print(lm["answer"])
+```
+
+### Pattern 4: ReAct Agent
+
+```python
+from guidance import models, gen, select, guidance
+
+@guidance(stateless=False)
+def react_agent(lm, question):
+    """ReAct agent with tool use."""
+    tools = {
+        "calculator": lambda expr: eval(expr),
+        "search": lambda query: f"Search results for: {query}",
+    }
+
+    lm += f"Question: {question}\n\n"
+
+    for round in range(5):
+        # Thought
+        lm += f"Thought: " + gen("thought", stop="\n") + "\n"
+
+        # Action selection
+        lm += "Action: " + select(["calculator", "search", "answer"], name="action")
+
+        if lm["action"] == "answer":
+            lm += "\nFinal Answer: " + gen("answer", max_tokens=100)
+            break
+
+        # Action input
+        lm += "\nAction Input: " + gen("action_input", stop="\n") + "\n"
+
+        # Execute tool
+        if lm["action"] in tools:
+            result = tools[lm["action"]](lm["action_input"])
+            lm += f"Observation: {result}\n\n"
+
+    return lm
+
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+lm = react_agent(lm, "What is 25 * 4 + 10?")
+print(lm["answer"])
+```
+
+### Pattern 5: Data Extraction
+
+```python
+from guidance import models, gen, guidance
+
+@guidance
+def extract_entities(lm, text):
+    """Extract structured entities from text."""
+    lm += f"Text: {text}\n\n"
+
+    # Extract person
+    lm += "Person: " + gen("person", stop="\n", max_tokens=30) + "\n"
+
+    # Extract organization
+    lm += "Organization: " + gen("organization", stop="\n", max_tokens=30) + "\n"
+
+    # Extract date
+    lm += "Date: " + gen("date", regex=r"\d{4}-\d{2}-\d{2}", max_tokens=10) + "\n"
+
+    # Extract location
+    lm += "Location: " + gen("location", stop="\n", max_tokens=30) + "\n"
+
+    return lm
+
+text = "Tim Cook announced at Apple Park on 2024-09-15 in Cupertino."
+
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+lm = extract_entities(lm, text)
+
+print(f"Person: {lm['person']}")
+print(f"Organization: {lm['organization']}")
+print(f"Date: {lm['date']}")
+print(f"Location: {lm['location']}")
+```
+
+## Best Practices
+
+### 1. Use Regex for Format Validation
+
+```python
+# ✅ Good: Regex ensures valid format
+lm += "Email: " + gen("email", regex=r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}")
+
+# ❌ Bad: Free generation may produce invalid emails
+lm += "Email: " + gen("email", max_tokens=50)
+```
+
+### 2. Use select() for Fixed Categories
+
+```python
+# ✅ Good: Guaranteed valid category
+lm += "Status: " + select(["pending", "approved", "rejected"], name="status")
+
+# ❌ Bad: May generate typos or invalid values
+lm += "Status: " + gen("status", max_tokens=20)
+```
+
+### 3. Leverage Token Healing
+
+```python
+# Token healing is enabled by default
+# No special action needed - just concatenate naturally
+lm += "The capital is " + gen("capital")  # Automatic healing
+```
+
+### 4. Use stop Sequences
+
+```python
+# ✅ Good: Stop at newline for single-line outputs
+lm += "Name: " + gen("name", stop="\n")
+
+# ❌ Bad: May generate multiple lines
+lm += "Name: " + gen("name", max_tokens=50)
+```
+
+### 5. Create Reusable Functions
+
+```python
+# ✅ Good: Reusable pattern
+@guidance
+def generate_person(lm):
+    lm += "Name: " + gen("name", stop="\n")
+    lm += "\nAge: " + gen("age", regex=r"[0-9]+")
+    return lm
+
+# Use multiple times
+lm = generate_person(lm)
+lm += "\n\n"
+lm = generate_person(lm)
+```
+
+### 6. Balance Constraints
+
+```python
+# ✅ Good: Reasonable constraints
+lm += gen("name", regex=r"[A-Za-z ]+", max_tokens=30)
+
+# ❌ Too strict: May fail or be very slow
+lm += gen("name", regex=r"^(John|Jane)$", max_tokens=10)
+```
+
+## Comparison to Alternatives
+
+| Feature | Guidance | Instructor | Outlines | LMQL |
+|---------|----------|------------|----------|------|
+| Regex Constraints | ✅ Yes | ❌ No | ✅ Yes | ✅ Yes |
+| Grammar Support | ✅ CFG | ❌ No | ✅ CFG | ✅ CFG |
+| Pydantic Validation | ❌ No | ✅ Yes | ✅ Yes | ❌ No |
+| Token Healing | ✅ Yes | ❌ No | ✅ Yes | ❌ No |
+| Local Models | ✅ Yes | ⚠️ Limited | ✅ Yes | ✅ Yes |
+| API Models | ✅ Yes | ✅ Yes | ⚠️ Limited | ✅ Yes |
+| Pythonic Syntax | ✅ Yes | ✅ Yes | ✅ Yes | ❌ SQL-like |
+| Learning Curve | Low | Low | Medium | High |
+
+**When to choose Guidance:**
+- Need regex/grammar constraints
+- Want token healing
+- Building complex workflows with control flow
+- Using local models (Transformers, llama.cpp)
+- Prefer Pythonic syntax
+
+**When to choose alternatives:**
+- Instructor: Need Pydantic validation with automatic retrying
+- Outlines: Need JSON schema validation
+- LMQL: Prefer declarative query syntax
+
+## Performance Characteristics
+
+**Latency Reduction:**
+- 30-50% faster than traditional prompting for constrained outputs
+- Token healing reduces unnecessary regeneration
+- Grammar constraints prevent invalid token generation
+
+**Memory Usage:**
+- Minimal overhead vs unconstrained generation
+- Grammar compilation cached after first use
+- Efficient token filtering at inference time
+
+**Token Efficiency:**
+- Prevents wasted tokens on invalid outputs
+- No need for retry loops
+- Direct path to valid outputs
+
+## Resources
+
+- **Documentation**: https://guidance.readthedocs.io
+- **GitHub**: https://github.com/guidance-ai/guidance (18k+ stars)
+- **Notebooks**: https://github.com/guidance-ai/guidance/tree/main/notebooks
+- **Discord**: Community support available
+
+## See Also
+
+- `references/constraints.md` - Comprehensive regex and grammar patterns
+- `references/backends.md` - Backend-specific configuration
+- `references/examples.md` - Production-ready examples
+
+

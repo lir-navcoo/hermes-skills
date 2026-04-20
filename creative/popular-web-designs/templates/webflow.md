@@ -1,1 +1,105 @@
-IyBEZXNpZ24gU3lzdGVtOiBXZWJmbG93CgoKPiAqKkhlcm1lcyBBZ2VudCDigJQgSW1wbGVtZW50YXRpb24gTm90ZXMqKgo+Cj4gVGhlIG9yaWdpbmFsIHNpdGUgdXNlcyBwcm9wcmlldGFyeSBmb250cy4gRm9yIHNlbGYtY29udGFpbmVkIEhUTUwgb3V0cHV0LCB1c2UgdGhlc2UgQ0ROIHN1YnN0aXR1dGVzOgo+IC0gKipQcmltYXJ5OioqIGBJbnRlcmAgfCAqKk1vbm86KiogYHN5c3RlbSBtb25vc3BhY2Ugc3RhY2tgCj4gLSAqKkZvbnQgc3RhY2sgKENTUyk6KiogYGZvbnQtZmFtaWx5OiAnSW50ZXInLCBzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sICdTZWdvZSBVSScsIFJvYm90bywgc2Fucy1zZXJpZjtgCj4gLSAqKk1vbm8gc3RhY2sgKENTUyk6KiogYGZvbnQtZmFtaWx5OiB1aS1tb25vc3BhY2UsIFNGTW9uby1SZWd1bGFyLCBNZW5sbywgTW9uYWNvLCBDb25zb2xhcywgJ0xpYmVyYXRpb24gTW9ubycsICdDb3VyaWVyIE5ldycsIG1vbm9zcGFjZTtgCj4gYGBgaHRtbAo+IDxsaW5rIGhyZWY9Imh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9SW50ZXI6d2dodEAzMDA7NDAwOzUwMDs2MDA7NzAwJmRpc3BsYXk9c3dhcCIgcmVsPSJzdHlsZXNoZWV0Ij4KPiBgYGAKPiBVc2UgYHdyaXRlX2ZpbGVgIHRvIGNyZWF0ZSBIVE1MLCBzZXJ2ZSB2aWEgYGdlbmVyYXRpdmUtd2lkZ2V0c2Agc2tpbGwgKGNsb3VkZmxhcmVkIHR1bm5lbCkuCj4gVmVyaWZ5IHZpc3VhbCBhY2N1cmFjeSB3aXRoIGBicm93c2VyX3Zpc2lvbmAgYWZ0ZXIgZ2VuZXJhdGluZy4KCiMjIDEuIFZpc3VhbCBUaGVtZSAmIEF0bW9zcGhlcmUKCldlYmZsb3cncyB3ZWJzaXRlIGlzIGEgdmlzdWFsbHkgcmljaCwgdG9vbC1mb3J3YXJkIHBsYXRmb3JtIHRoYXQgY29tbXVuaWNhdGVzICJkZXNpZ24gd2l0aG91dCBjb2RlIiB0aHJvdWdoIGNsZWFuIHdoaXRlIHN1cmZhY2VzLCB0aGUgc2lnbmF0dXJlIFdlYmZsb3cgQmx1ZSAoYCMxNDZlZjVgKSwgYW5kIGEgcmljaCBzZWNvbmRhcnkgY29sb3IgcGFsZXR0ZSAocHVycGxlLCBwaW5rLCBncmVlbiwgb3JhbmdlLCB5ZWxsb3csIHJlZCkuIFRoZSBjdXN0b20gV0YgVmlzdWFsIFNhbnMgVmFyaWFibGUgZm9udCBjcmVhdGVzIGEgY29uZmlkZW50LCBwcmVjaXNlIHR5cG9ncmFwaGljIHN5c3RlbSB3aXRoIHdlaWdodCA2MDAgZm9yIGRpc3BsYXkgYW5kIDUwMCBmb3IgYm9keS4KCioqS2V5IENoYXJhY3RlcmlzdGljczoqKgotIFdoaXRlIGNhbnZhcyB3aXRoIG5lYXItYmxhY2sgKGAjMDgwODA4YCkgdGV4dAotIFdlYmZsb3cgQmx1ZSAoYCMxNDZlZjVgKSBhcyBwcmltYXJ5IGJyYW5kICsgaW50ZXJhY3RpdmUgY29sb3IKLSBXRiBWaXN1YWwgU2FucyBWYXJpYWJsZSDigJQgY3VzdG9tIHZhcmlhYmxlIGZvbnQgd2l0aCB3ZWlnaHQgNTAw4oCTNjAwCi0gUmljaCBzZWNvbmRhcnkgcGFsZXR0ZTogcHVycGxlIGAjN2EzZGZmYCwgcGluayBgI2VkNTJjYmAsIGdyZWVuIGAjMDBkNzIyYCwgb3JhbmdlIGAjZmY2YjAwYCwgeWVsbG93IGAjZmZhZTEzYCwgcmVkIGAjZWUxZDM2YAotIENvbnNlcnZhdGl2ZSA0cHjigJM4cHggYm9yZGVyLXJhZGl1cyDigJQgc2hhcnAsIG5vdCByb3VuZGVkCi0gTXVsdGktbGF5ZXIgc2hhZG93IHN0YWNrcyAoNS1sYXllciBjYXNjYWRpbmcgc2hhZG93cykKLSBVcHBlcmNhc2UgbGFiZWxzOiAxMHB44oCTMTVweCwgd2VpZ2h0IDUwMOKAkzYwMCwgd2lkZSBsZXR0ZXItc3BhY2luZyAoMC42cHjigJMxLjVweCkKLSB0cmFuc2xhdGUoNnB4KSBob3ZlciBhbmltYXRpb24gb24gYnV0dG9ucwoKIyMgMi4gQ29sb3IgUGFsZXR0ZSAmIFJvbGVzCgojIyMgUHJpbWFyeQotICoqTmVhciBCbGFjayoqIChgIzA4MDgwOGApOiBQcmltYXJ5IHRleHQKLSAqKldlYmZsb3cgQmx1ZSoqIChgIzE0NmVmNWApOiBgLS1fY29sb3ItLS1wcmltYXJ5LS13ZWJmbG93LWJsdWVgLCBwcmltYXJ5IENUQSBhbmQgbGlua3MKLSAqKkJsdWUgNDAwKiogKGAjM2I4OWZmYCk6IGAtLV9jb2xvci0tLXByaW1hcnktLWJsdWUtNDAwYCwgbGlnaHRlciBpbnRlcmFjdGl2ZSBibHVlCi0gKipCbHVlIDMwMCoqIChgIzAwNmFjY2ApOiBgLS1fY29sb3ItLS1ibHVlLTMwMGAsIGRhcmtlciBibHVlIHZhcmlhbnQKLSAqKkJ1dHRvbiBIb3ZlciBCbHVlKiogKGAjMDA1NWQ0YCk6IGAtLW1rdG8tZW1iZWQtY29sb3ItYnV0dG9uLWhvdmVyYAoKIyMjIFNlY29uZGFyeSBBY2NlbnRzCi0gKipQdXJwbGUqKiAoYCM3YTNkZmZgKTogYC0tX2NvbG9yLS0tc2Vjb25kYXJ5LS1wdXJwbGVgCi0gKipQaW5rKiogKGAjZWQ1MmNiYCk6IGAtLV9jb2xvci0tLXNlY29uZGFyeS0tcGlua2AKLSAqKkdyZWVuKiogKGAjMDBkNzIyYCk6IGAtLV9jb2xvci0tLXNlY29uZGFyeS0tZ3JlZW5gCi0gKipPcmFuZ2UqKiAoYCNmZjZiMDBgKTogYC0tX2NvbG9yLS0tc2Vjb25kYXJ5LS1vcmFuZ2VgCi0gKipZZWxsb3cqKiAoYCNmZmFlMTNgKTogYC0tX2NvbG9yLS0tc2Vjb25kYXJ5LS15ZWxsb3dgCi0gKipSZWQqKiAoYCNlZTFkMzZgKTogYC0tX2NvbG9yLS0tc2Vjb25kYXJ5LS1yZWRgCgojIyMgTmV1dHJhbAotICoqR3JheSA4MDAqKiAoYCMyMjIyMjJgKTogRGFyayBzZWNvbmRhcnkgdGV4dAotICoqR3JheSA3MDAqKiAoYCMzNjM2MzZgKTogTWlkIHRleHQKLSAqKkdyYXkgMzAwKiogKGAjYWJhYmFiYCk6IE11dGVkIHRleHQsIHBsYWNlaG9sZGVyCi0gKipNaWQgR3JheSoqIChgIzVhNWE1YWApOiBMaW5rIHRleHQKLSAqKkJvcmRlciBHcmF5KiogKGAjZDhkOGQ4YCk6IEJvcmRlcnMsIGRpdmlkZXJzCi0gKipCb3JkZXIgSG92ZXIqKiAoYCM4OTg5ODlgKTogSG92ZXIgYm9yZGVyCgojIyMgU2hhZG93cwotICoqNS1sYXllciBjYXNjYWRlKio6IGByZ2JhKDAsMCwwLDApIDBweCA4NHB4IDI0cHgsIHJnYmEoMCwwLDAsMC4wMSkgMHB4IDU0cHggMjJweCwgcmdiYSgwLDAsMCwwLjA0KSAwcHggMzBweCAxOHB4LCByZ2JhKDAsMCwwLDAuMDgpIDBweCAxM3B4IDEzcHgsIHJnYmEoMCwwLDAsMC4wOSkgMHB4IDNweCA3cHhgCgojIyAzLiBUeXBvZ3JhcGh5IFJ1bGVzCgojIyMgRm9udDogYFdGIFZpc3VhbCBTYW5zIFZhcmlhYmxlYCwgZmFsbGJhY2s6IGBBcmlhbGAKCnwgUm9sZSB8IFNpemUgfCBXZWlnaHQgfCBMaW5lIEhlaWdodCB8IExldHRlciBTcGFjaW5nIHwgTm90ZXMgfAp8LS0tLS0tfC0tLS0tLXwtLS0tLS0tLXwtLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS18LS0tLS0tLXwKfCBEaXNwbGF5IEhlcm8gfCA4MHB4IHwgNjAwIHwgMS4wNCB8IC0wLjhweCB8IHwKfCBTZWN0aW9uIEhlYWRpbmcgfCA1NnB4IHwgNjAwIHwgMS4wNCB8IG5vcm1hbCB8IHwKfCBTdWItaGVhZGluZyB8IDMycHggfCA1MDAgfCAxLjMwIHwgbm9ybWFsIHwgfAp8IEZlYXR1cmUgVGl0bGUgfCAyNHB4IHwgNTAw4oCTNjAwIHwgMS4zMCB8IG5vcm1hbCB8IHwKfCBCb2R5IHwgMjBweCB8IDQwMOKAkzUwMCB8IDEuNDDigJMxLjUwIHwgbm9ybWFsIHwgfAp8IEJvZHkgU3RhbmRhcmQgfCAxNnB4IHwgNDAw4oCTNTAwIHwgMS42MCB8IC0wLjE2cHggfCB8CnwgQnV0dG9uIHwgMTZweCB8IDUwMCB8IDEuNjAgfCAtMC4xNnB4IHwgfAp8IFVwcGVyY2FzZSBMYWJlbCB8IDE1cHggfCA1MDAgfCAxLjMwIHwgMS41cHggfCB1cHBlcmNhc2UgfAp8IENhcHRpb24gfCAxNHB4IHwgNDAw4oCTNTAwIHwgMS40MOKAkzEuNjAgfCBub3JtYWwgfCB8CnwgQmFkZ2UgVXBwZXJjYXNlIHwgMTIuOHB4IHwgNTUwIHwgMS4yMCB8IG5vcm1hbCB8IHVwcGVyY2FzZSB8CnwgTWljcm8gVXBwZXJjYXNlIHwgMTBweCB8IDUwMOKAkzYwMCB8IDEuMzAgfCAxcHggfCB1cHBlcmNhc2UgfAp8IENvZGU6IEluY29uc29sYXRhIChjb21wYW5pb24gbW9ub3NwYWNlIGZvbnQpCgojIyA0LiBDb21wb25lbnQgU3R5bGluZ3MKCiMjIyBCdXR0b25zCi0gVHJhbnNwYXJlbnQ6IHRleHQgYCMwODA4MDhgLCB0cmFuc2xhdGUoNnB4KSBvbiBob3ZlcgotIFdoaXRlIGNpcmNsZTogNTAlIHJhZGl1cywgd2hpdGUgYmcKLSBCbHVlIGJhZGdlOiBgIzE0NmVmNWAgYmcsIDRweCByYWRpdXMsIHdlaWdodCA1NTAKCiMjIyBDYXJkczogYDFweCBzb2xpZCAjZDhkOGQ4YCwgNHB44oCTOHB4IHJhZGl1cwojIyMgQmFkZ2VzOiBCbHVlLXRpbnRlZCBiZyBhdCAxMCUgb3BhY2l0eSwgNHB4IHJhZGl1cwoKIyMgNS4gTGF5b3V0Ci0gU3BhY2luZzogZnJhY3Rpb25hbCBzY2FsZSAoMXB4LCAyLjRweCwgMy4ycHgsIDRweCwgNS42cHgsIDZweCwgNy4ycHgsIDhweCwgOS42cHgsIDEycHgsIDE2cHgsIDI0cHgpCi0gUmFkaXVzOiAycHgsIDRweCwgOHB4LCA1MCUg4oCUIGNvbnNlcnZhdGl2ZSwgc2hhcnAKLSBCcmVha3BvaW50czogNDc5cHgsIDc2OHB4LCA5OTJweAoKIyMgNi4gRGVwdGg6IDUtbGF5ZXIgY2FzY2FkaW5nIHNoYWRvdyBzeXN0ZW0KCiMjIDcuIERvJ3MgYW5kIERvbid0cwotIERvOiBVc2UgV0YgVmlzdWFsIFNhbnMgVmFyaWFibGUgYXQgNTAw4oCTNjAwLiBCbHVlICgjMTQ2ZWY1KSBmb3IgQ1RBcy4gNHB4IHJhZGl1cy4gdHJhbnNsYXRlKDZweCkgaG92ZXIuCi0gRG9uJ3Q6IFJvdW5kIGJleW9uZCA4cHggZm9yIGZ1bmN0aW9uYWwgZWxlbWVudHMuIFVzZSBzZWNvbmRhcnkgY29sb3JzIG9uIHByaW1hcnkgQ1RBcy4KCiMjIDguIFJlc3BvbnNpdmU6IDQ3OXB4LCA3NjhweCwgOTkycHgKCiMjIDkuIEFnZW50IFByb21wdCBHdWlkZQotIFRleHQ6IE5lYXIgQmxhY2sgKGAjMDgwODA4YCkKLSBDVEE6IFdlYmZsb3cgQmx1ZSAoYCMxNDZlZjVgKQotIEJhY2tncm91bmQ6IFdoaXRlIChgI2ZmZmZmZmApCi0gQm9yZGVyOiBgI2Q4ZDhkOGAKLSBTZWNvbmRhcnk6IFB1cnBsZSBgIzdhM2RmZmAsIFBpbmsgYCNlZDUyY2JgLCBHcmVlbiBgIzAwZDcyMmAK
+# Design System: Webflow
+
+
+> **Hermes Agent — Implementation Notes**
+>
+> The original site uses proprietary fonts. For self-contained HTML output, use these CDN substitutes:
+> - **Primary:** `Inter` | **Mono:** `system monospace stack`
+> - **Font stack (CSS):** `font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;`
+> - **Mono stack (CSS):** `font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;`
+> ```html
+> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+> ```
+> Use `write_file` to create HTML, serve via `generative-widgets` skill (cloudflared tunnel).
+> Verify visual accuracy with `browser_vision` after generating.
+
+## 1. Visual Theme & Atmosphere
+
+Webflow's website is a visually rich, tool-forward platform that communicates "design without code" through clean white surfaces, the signature Webflow Blue (`#146ef5`), and a rich secondary color palette (purple, pink, green, orange, yellow, red). The custom WF Visual Sans Variable font creates a confident, precise typographic system with weight 600 for display and 500 for body.
+
+**Key Characteristics:**
+- White canvas with near-black (`#080808`) text
+- Webflow Blue (`#146ef5`) as primary brand + interactive color
+- WF Visual Sans Variable — custom variable font with weight 500–600
+- Rich secondary palette: purple `#7a3dff`, pink `#ed52cb`, green `#00d722`, orange `#ff6b00`, yellow `#ffae13`, red `#ee1d36`
+- Conservative 4px–8px border-radius — sharp, not rounded
+- Multi-layer shadow stacks (5-layer cascading shadows)
+- Uppercase labels: 10px–15px, weight 500–600, wide letter-spacing (0.6px–1.5px)
+- translate(6px) hover animation on buttons
+
+## 2. Color Palette & Roles
+
+### Primary
+- **Near Black** (`#080808`): Primary text
+- **Webflow Blue** (`#146ef5`): `--_color---primary--webflow-blue`, primary CTA and links
+- **Blue 400** (`#3b89ff`): `--_color---primary--blue-400`, lighter interactive blue
+- **Blue 300** (`#006acc`): `--_color---blue-300`, darker blue variant
+- **Button Hover Blue** (`#0055d4`): `--mkto-embed-color-button-hover`
+
+### Secondary Accents
+- **Purple** (`#7a3dff`): `--_color---secondary--purple`
+- **Pink** (`#ed52cb`): `--_color---secondary--pink`
+- **Green** (`#00d722`): `--_color---secondary--green`
+- **Orange** (`#ff6b00`): `--_color---secondary--orange`
+- **Yellow** (`#ffae13`): `--_color---secondary--yellow`
+- **Red** (`#ee1d36`): `--_color---secondary--red`
+
+### Neutral
+- **Gray 800** (`#222222`): Dark secondary text
+- **Gray 700** (`#363636`): Mid text
+- **Gray 300** (`#ababab`): Muted text, placeholder
+- **Mid Gray** (`#5a5a5a`): Link text
+- **Border Gray** (`#d8d8d8`): Borders, dividers
+- **Border Hover** (`#898989`): Hover border
+
+### Shadows
+- **5-layer cascade**: `rgba(0,0,0,0) 0px 84px 24px, rgba(0,0,0,0.01) 0px 54px 22px, rgba(0,0,0,0.04) 0px 30px 18px, rgba(0,0,0,0.08) 0px 13px 13px, rgba(0,0,0,0.09) 0px 3px 7px`
+
+## 3. Typography Rules
+
+### Font: `WF Visual Sans Variable`, fallback: `Arial`
+
+| Role | Size | Weight | Line Height | Letter Spacing | Notes |
+|------|------|--------|-------------|----------------|-------|
+| Display Hero | 80px | 600 | 1.04 | -0.8px | |
+| Section Heading | 56px | 600 | 1.04 | normal | |
+| Sub-heading | 32px | 500 | 1.30 | normal | |
+| Feature Title | 24px | 500–600 | 1.30 | normal | |
+| Body | 20px | 400–500 | 1.40–1.50 | normal | |
+| Body Standard | 16px | 400–500 | 1.60 | -0.16px | |
+| Button | 16px | 500 | 1.60 | -0.16px | |
+| Uppercase Label | 15px | 500 | 1.30 | 1.5px | uppercase |
+| Caption | 14px | 400–500 | 1.40–1.60 | normal | |
+| Badge Uppercase | 12.8px | 550 | 1.20 | normal | uppercase |
+| Micro Uppercase | 10px | 500–600 | 1.30 | 1px | uppercase |
+| Code: Inconsolata (companion monospace font)
+
+## 4. Component Stylings
+
+### Buttons
+- Transparent: text `#080808`, translate(6px) on hover
+- White circle: 50% radius, white bg
+- Blue badge: `#146ef5` bg, 4px radius, weight 550
+
+### Cards: `1px solid #d8d8d8`, 4px–8px radius
+### Badges: Blue-tinted bg at 10% opacity, 4px radius
+
+## 5. Layout
+- Spacing: fractional scale (1px, 2.4px, 3.2px, 4px, 5.6px, 6px, 7.2px, 8px, 9.6px, 12px, 16px, 24px)
+- Radius: 2px, 4px, 8px, 50% — conservative, sharp
+- Breakpoints: 479px, 768px, 992px
+
+## 6. Depth: 5-layer cascading shadow system
+
+## 7. Do's and Don'ts
+- Do: Use WF Visual Sans Variable at 500–600. Blue (#146ef5) for CTAs. 4px radius. translate(6px) hover.
+- Don't: Round beyond 8px for functional elements. Use secondary colors on primary CTAs.
+
+## 8. Responsive: 479px, 768px, 992px
+
+## 9. Agent Prompt Guide
+- Text: Near Black (`#080808`)
+- CTA: Webflow Blue (`#146ef5`)
+- Background: White (`#ffffff`)
+- Border: `#d8d8d8`
+- Secondary: Purple `#7a3dff`, Pink `#ed52cb`, Green `#00d722`

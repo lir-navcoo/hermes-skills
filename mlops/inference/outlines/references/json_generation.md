@@ -1,1 +1,652 @@
-IyBDb21wcmVoZW5zaXZlIEpTT04gR2VuZXJhdGlvbiBHdWlkZQoKQ29tcGxldGUgZ3VpZGUgdG8gSlNPTiBnZW5lcmF0aW9uIHdpdGggT3V0bGluZXMgdXNpbmcgUHlkYW50aWMgbW9kZWxzIGFuZCBKU09OIHNjaGVtYXMuCgojIyBUYWJsZSBvZiBDb250ZW50cwotIFB5ZGFudGljIE1vZGVscwotIEpTT04gU2NoZW1hIFN1cHBvcnQKLSBBZHZhbmNlZCBQYXR0ZXJucwotIE5lc3RlZCBTdHJ1Y3R1cmVzCi0gQ29tcGxleCBUeXBlcwotIFZhbGlkYXRpb24KLSBQZXJmb3JtYW5jZSBPcHRpbWl6YXRpb24KCiMjIFB5ZGFudGljIE1vZGVscwoKIyMjIEJhc2ljIE1vZGVscwoKYGBgcHl0aG9uCmZyb20gcHlkYW50aWMgaW1wb3J0IEJhc2VNb2RlbAppbXBvcnQgb3V0bGluZXMKCmNsYXNzIFVzZXIoQmFzZU1vZGVsKToKICAgIG5hbWU6IHN0cgogICAgYWdlOiBpbnQKICAgIGVtYWlsOiBzdHIKCm1vZGVsID0gb3V0bGluZXMubW9kZWxzLnRyYW5zZm9ybWVycygibWljcm9zb2Z0L1BoaS0zLW1pbmktNGstaW5zdHJ1Y3QiKQpnZW5lcmF0b3IgPSBvdXRsaW5lcy5nZW5lcmF0ZS5qc29uKG1vZGVsLCBVc2VyKQoKdXNlciA9IGdlbmVyYXRvcigiR2VuZXJhdGUgdXNlcjogQWxpY2UsIDI1LCBhbGljZUBleGFtcGxlLmNvbSIpCnByaW50KHVzZXIubmFtZSkgICAjICJBbGljZSIKcHJpbnQodXNlci5hZ2UpICAgICMgMjUKcHJpbnQodXNlci5lbWFpbCkgICMgImFsaWNlQGV4YW1wbGUuY29tIgpgYGAKCiMjIwoKIEZpZWxkIENvbnN0cmFpbnRzCgpgYGBweXRob24KZnJvbSBweWRhbnRpYyBpbXBvcnQgQmFzZU1vZGVsLCBGaWVsZAoKY2xhc3MgUHJvZHVjdChCYXNlTW9kZWwpOgogICAgbmFtZTogc3RyID0gRmllbGQobWluX2xlbmd0aD0xLCBtYXhfbGVuZ3RoPTEwMCkKICAgIHByaWNlOiBmbG9hdCA9IEZpZWxkKGd0PTAsIGRlc2NyaXB0aW9uPSJQcmljZSBpbiBVU0QiKQogICAgZGlzY291bnQ6IGZsb2F0ID0gRmllbGQoZ2U9MCwgbGU9MTAwLCBkZXNjcmlwdGlvbj0iRGlzY291bnQgcGVyY2VudGFnZSIpCiAgICBxdWFudGl0eTogaW50ID0gRmllbGQoZ2U9MCwgZGVzY3JpcHRpb249IkF2YWlsYWJsZSBxdWFudGl0eSIpCiAgICBza3U6IHN0ciA9IEZpZWxkKHBhdHRlcm49ciJeW0EtWl17M30tXGR7Nn0kIikKCm1vZGVsID0gb3V0bGluZXMubW9kZWxzLnRyYW5zZm9ybWVycygibWljcm9zb2Z0L1BoaS0zLW1pbmktNGstaW5zdHJ1Y3QiKQpnZW5lcmF0b3IgPSBvdXRsaW5lcy5nZW5lcmF0ZS5qc29uKG1vZGVsLCBQcm9kdWN0KQoKcHJvZHVjdCA9IGdlbmVyYXRvcigiR2VuZXJhdGUgcHJvZHVjdDogaVBob25lIDE1LCAkOTk5IikKIyBBbGwgZmllbGRzIGd1YXJhbnRlZWQgdG8gbWVldCBjb25zdHJhaW50cwpgYGAKCioqQXZhaWxhYmxlIENvbnN0cmFpbnRzOioqCi0gYG1pbl9sZW5ndGhgLCBgbWF4X2xlbmd0aGA6IFN0cmluZyBsZW5ndGgKLSBgZ3RgLCBgZ2VgLCBgbHRgLCBgbGVgOiBOdW1lcmljIGNvbXBhcmlzb25zCi0gYG11bHRpcGxlX29mYDogTnVtYmVyIG11c3QgYmUgbXVsdGlwbGUgb2YgdmFsdWUKLSBgcGF0dGVybmA6IFJlZ2V4IHBhdHRlcm4gZm9yIHN0cmluZ3MKLSBgbWluX2l0ZW1zYCwgYG1heF9pdGVtc2A6IExpc3QgbGVuZ3RoCgojIyMgT3B0aW9uYWwgRmllbGRzCgpgYGBweXRob24KZnJvbSB0eXBpbmcgaW1wb3J0IE9wdGlvbmFsCgpjbGFzcyBBcnRpY2xlKEJhc2VNb2RlbCk6CiAgICB0aXRsZTogc3RyICAjIFJlcXVpcmVkCiAgICBhdXRob3I6IE9wdGlvbmFsW3N0cl0gPSBOb25lICAjIE9wdGlvbmFsCiAgICBwdWJsaXNoZWRfZGF0ZTogT3B0aW9uYWxbc3RyXSA9IE5vbmUgICMgT3B0aW9uYWwKICAgIHRhZ3M6IGxpc3Rbc3RyXSA9IFtdICAjIERlZmF1bHQgZW1wdHkgbGlzdAogICAgdmlld19jb3VudDogaW50ID0gMCAgIyBEZWZhdWx0IHZhbHVlCgpnZW5lcmF0b3IgPSBvdXRsaW5lcy5nZW5lcmF0ZS5qc29uKG1vZGVsLCBBcnRpY2xlKQoKIyBDYW4gZ2VuZXJhdGUgZXZlbiBpZiBvcHRpb25hbCBmaWVsZHMgbWlzc2luZwphcnRpY2xlID0gZ2VuZXJhdG9yKCJUaXRsZTogSW50cm9kdWN0aW9uIHRvIEFJIikKcHJpbnQoYXJ0aWNsZS5hdXRob3IpICAjIE5vbmUgKG5vdCBwcm92aWRlZCkKcHJpbnQoYXJ0aWNsZS50YWdzKSAgICAjIFtdIChkZWZhdWx0KQpgYGAKCiMjIyBEZWZhdWx0IFZhbHVlcwoKYGBgcHl0aG9uCmNsYXNzIENvbmZpZyhCYXNlTW9kZWwpOgogICAgZGVidWc6IGJvb2wgPSBGYWxzZQogICAgbWF4X3JldHJpZXM6IGludCA9IDMKICAgIHRpbWVvdXQ6IGZsb2F0ID0gMzAuMAogICAgbG9nX2xldmVsOiBzdHIgPSAiSU5GTyIKCiMgR2VuZXJhdG9yIHVzZXMgZGVmYXVsdHMgd2hlbiBub3Qgc3BlY2lmaWVkCmdlbmVyYXRvciA9IG91dGxpbmVzLmdlbmVyYXRlLmpzb24obW9kZWwsIENvbmZpZykKY29uZmlnID0gZ2VuZXJhdG9yKCJHZW5lcmF0ZSBjb25maWcgd2l0aCBkZWJ1ZyBlbmFibGVkIikKcHJpbnQoY29uZmlnLmRlYnVnKSAgIyBUcnVlIChmcm9tIHByb21wdCkKcHJpbnQoY29uZmlnLnRpbWVvdXQpICAjIDMwLjAgKGRlZmF1bHQpCmBgYAoKIyMgRW51bXMgYW5kIExpdGVyYWxzCgojIyMgRW51bSBGaWVsZHMKCmBgYHB5dGhvbgpmcm9tIGVudW0gaW1wb3J0IEVudW0KCmNsYXNzIFN0YXR1cyhzdHIsIEVudW0pOgogICAgUEVORElORyA9ICJwZW5kaW5nIgogICAgQVBQUk9WRUQgPSAiYXBwcm92ZWQiCiAgICBSRUpFQ1RFRCA9ICJyZWplY3RlZCIKICAgIENBTkNFTExFRCA9ICJjYW5jZWxsZWQiCgpjbGFzcyBBcHBsaWNhdGlvbihCYXNlTW9kZWwpOgogICAgYXBwbGljYW50X25hbWU6IHN0cgogICAgc3RhdHVzOiBTdGF0dXMgICMgTXVzdCBiZSBvbmUgb2YgZW51bSB2YWx1ZXMKICAgIHN1Ym1pdHRlZF9kYXRlOiBzdHIKCmdlbmVyYXRvciA9IG91dGxpbmVzLmdlbmVyYXRlLmpzb24obW9kZWwsIEFwcGxpY2F0aW9uKQphcHAgPSBnZW5lcmF0b3IoIkdlbmVyYXRlIGFwcGxpY2F0aW9uIGZvciBKb2huIERvZSIpCgpwcmludChhcHAuc3RhdHVzKSAgIyBTdGF0dXMuUEVORElORyAob3Igb25lIG9mIHRoZSBlbnVtIHZhbHVlcykKcHJpbnQodHlwZShhcHAuc3RhdHVzKSkgICMgPGVudW0gJ1N0YXR1cyc+CmBgYAoKIyMjIExpdGVyYWwgVHlwZXMKCmBgYHB5dGhvbgpmcm9tIHR5cGluZyBpbXBvcnQgTGl0ZXJhbAoKY2xhc3MgVGFzayhCYXNlTW9kZWwpOgogICAgdGl0bGU6IHN0cgogICAgcHJpb3JpdHk6IExpdGVyYWxbImxvdyIsICJtZWRpdW0iLCAiaGlnaCIsICJjcml0aWNhbCJdCiAgICBzdGF0dXM6IExpdGVyYWxbInRvZG8iLCAiaW5fcHJvZ3Jlc3MiLCAiZG9uZSJdCiAgICBhc3NpZ25lZF90bzogc3RyCgpnZW5lcmF0b3IgPSBvdXRsaW5lcy5nZW5lcmF0ZS5qc29uKG1vZGVsLCBUYXNrKQp0YXNrID0gZ2VuZXJhdG9yKCJDcmVhdGUgaGlnaCBwcmlvcml0eSB0YXNrOiBGaXggYnVnIikKCnByaW50KHRhc2sucHJpb3JpdHkpICAjIE9uZSBvZjogImxvdyIsICJtZWRpdW0iLCAiaGlnaCIsICJjcml0aWNhbCIKYGBgCgojIyMgTXVsdGlwbGUgQ2hvaWNlIEZpZWxkcwoKYGBgcHl0aG9uCmNsYXNzIFN1cnZleShCYXNlTW9kZWwpOgogICAgcXVlc3Rpb246IHN0cgogICAgYW5zd2VyOiBMaXRlcmFsWyJzdHJvbmdseV9kaXNhZ3JlZSIsICJkaXNhZ3JlZSIsICJuZXV0cmFsIiwgImFncmVlIiwgInN0cm9uZ2x5X2FncmVlIl0KICAgIGNvbmZpZGVuY2U6IExpdGVyYWxbImxvdyIsICJtZWRpdW0iLCAiaGlnaCJdCgpnZW5lcmF0b3IgPSBvdXRsaW5lcy5nZW5lcmF0ZS5qc29uKG1vZGVsLCBTdXJ2ZXkpCnN1cnZleSA9IGdlbmVyYXRvcigiUmF0ZTogJ0kgZW5qb3kgdXNpbmcgdGhpcyBwcm9kdWN0JyIpCmBgYAoKIyMgTmVzdGVkIFN0cnVjdHVyZXMKCiMjIyBOZXN0ZWQgTW9kZWxzCgpgYGBweXRob24KY2xhc3MgQWRkcmVzcyhCYXNlTW9kZWwpOgogICAgc3RyZWV0OiBzdHIKICAgIGNpdHk6IHN0cgogICAgc3RhdGU6IHN0cgogICAgemlwX2NvZGU6IHN0cgogICAgY291bnRyeTogc3RyID0gIlVTQSIKCmNsYXNzIFBlcnNvbihCYXNlTW9kZWwpOgogICAgbmFtZTogc3RyCiAgICBhZ2U6IGludAogICAgZW1haWw6IHN0cgogICAgYWRkcmVzczogQWRkcmVzcyAgIyBOZXN0ZWQgbW9kZWwKCm1vZGVsID0gb3V0bGluZXMubW9kZWxzLnRyYW5zZm9ybWVycygibWljcm9zb2Z0L1BoaS0zLW1pbmktNGstaW5zdHJ1Y3QiKQpnZW5lcmF0b3IgPSBvdXRsaW5lcy5nZW5lcmF0ZS5qc29uKG1vZGVsLCBQZXJzb24pCgpwcm9tcHQgPSAiIiIKRXh0cmFjdCBwZXJzb246Ck5hbWU6IEFsaWNlIEpvaG5zb24KQWdlOiAyOApFbWFpbDogYWxpY2VAZXhhbXBsZS5jb20KQWRkcmVzczogMTIzIE1haW4gU3QsIEJvc3RvbiwgTUEsIDAyMTAxCiIiIgoKcGVyc29uID0gZ2VuZXJhdG9yKHByb21wdCkKcHJpbnQocGVyc29uLm5hbWUpICAjICJBbGljZSBKb2huc29uIgpwcmludChwZXJzb24uYWRkcmVzcy5jaXR5KSAgIyAiQm9zdG9uIgpwcmludChwZXJzb24uYWRkcmVzcy5zdGF0ZSkgICMgIk1BIgpgYGAKCiMjIyBEZWVwIE5lc3RpbmcKCmBgYHB5dGhvbgpjbGFzcyBDb29yZGluYXRlcyhCYXNlTW9kZWwpOgogICAgbGF0aXR1ZGU6IGZsb2F0CiAgICBsb25naXR1ZGU6IGZsb2F0CgpjbGFzcyBMb2NhdGlvbihCYXNlTW9kZWwpOgogICAgbmFtZTogc3RyCiAgICBjb29yZGluYXRlczogQ29vcmRpbmF0ZXMKCmNsYXNzIEV2ZW50KEJhc2VNb2RlbCk6CiAgICB0aXRsZTogc3RyCiAgICBkYXRlOiBzdHIKICAgIGxvY2F0aW9uOiBMb2NhdGlvbgoKZ2VuZXJhdG9yID0gb3V0bGluZXMuZ2VuZXJhdGUuanNvbihtb2RlbCwgRXZlbnQpCmV2ZW50ID0gZ2VuZXJhdG9yKCJHZW5lcmF0ZSBldmVudDogVGVjaCBDb25mZXJlbmNlIGluIFNhbiBGcmFuY2lzY28iKQoKcHJpbnQoZXZlbnQudGl0bGUpICAjICJUZWNoIENvbmZlcmVuY2UiCnByaW50KGV2ZW50LmxvY2F0aW9uLm5hbWUpICAjICJTYW4gRnJhbmNpc2NvIgpwcmludChldmVudC5sb2NhdGlvbi5jb29yZGluYXRlcy5sYXRpdHVkZSkgICMgMzcuNzc0OQpgYGAKCiMjIyBMaXN0cyBvZiBOZXN0ZWQgTW9kZWxzCgpgYGBweXRob24KY2xhc3MgSXRlbShCYXNlTW9kZWwpOgogICAgbmFtZTogc3RyCiAgICBxdWFudGl0eTogaW50CiAgICBwcmljZTogZmxvYXQKCmNsYXNzIE9yZGVyKEJhc2VNb2RlbCk6CiAgICBvcmRlcl9pZDogc3RyCiAgICBjdXN0b21lcjogc3RyCiAgICBpdGVtczogbGlzdFtJdGVtXSAgIyBMaXN0IG9mIG5lc3RlZCBtb2RlbHMKICAgIHRvdGFsOiBmbG9hdAoKZ2VuZXJhdG9yID0gb3V0bGluZXMuZ2VuZXJhdGUuanNvbihtb2RlbCwgT3JkZXIpCgpwcm9tcHQgPSAiIiIKR2VuZXJhdGUgb3JkZXIgZm9yIEpvaG46Ci0gMnggV2lkZ2V0ICgkMTAgZWFjaCkKLSAzeCBHYWRnZXQgKCQxNSBlYWNoKQpPcmRlciBJRDogT1JELTAwMQoiIiIKCm9yZGVyID0gZ2VuZXJhdG9yKHByb21wdCkKcHJpbnQoZiJPcmRlciBJRDoge29yZGVyLm9yZGVyX2lkfSIpCmZvciBpdGVtIGluIG9yZGVyLml0ZW1zOgogICAgcHJpbnQoZiItIHtpdGVtLnF1YW50aXR5fXgge2l0ZW0ubmFtZX0gQCAke2l0ZW0ucHJpY2V9IikKcHJpbnQoZiJUb3RhbDogJHtvcmRlci50b3RhbH0iKQpgYGAKCiMjIENvbXBsZXggVHlwZXMKCiMjIyBVbmlvbiBUeXBlcwoKYGBgcHl0aG9uCmZyb20gdHlwaW5nIGltcG9ydCBVbmlvbgoKY2xhc3MgVGV4dENvbnRlbnQoQmFzZU1vZGVsKToKICAgIHR5cGU6IExpdGVyYWxbInRleHQiXQogICAgY29udGVudDogc3RyCgpjbGFzcyBJbWFnZUNvbnRlbnQoQmFzZU1vZGVsKToKICAgIHR5cGU6IExpdGVyYWxbImltYWdlIl0KICAgIHVybDogc3RyCiAgICBjYXB0aW9uOiBzdHIKCmNsYXNzIFBvc3QoQmFzZU1vZGVsKToKICAgIHRpdGxlOiBzdHIKICAgIGNvbnRlbnQ6IFVuaW9uW1RleHRDb250ZW50LCBJbWFnZUNvbnRlbnRdICAjIEVpdGhlciB0eXBlCgpnZW5lcmF0b3IgPSBvdXRsaW5lcy5nZW5lcmF0ZS5qc29uKG1vZGVsLCBQb3N0KQoKIyBDYW4gZ2VuZXJhdGUgZWl0aGVyIHRleHQgb3IgaW1hZ2UgY29udGVudApwb3N0ID0gZ2VuZXJhdG9yKCJHZW5lcmF0ZSBibG9nIHBvc3Qgd2l0aCBpbWFnZSIpCmlmIHBvc3QuY29udGVudC50eXBlID09ICJ0ZXh0IjoKICAgIHByaW50KHBvc3QuY29udGVudC5jb250ZW50KQplbGlmIHBvc3QuY29udGVudC50eXBlID09ICJpbWFnZSI6CiAgICBwcmludChwb3N0LmNvbnRlbnQudXJsKQpgYGAKCiMjIyBMaXN0cyBhbmQgQXJyYXlzCgpgYGBweXRob24KY2xhc3MgQXJ0aWNsZShCYXNlTW9kZWwpOgogICAgdGl0bGU6IHN0cgogICAgYXV0aG9yczogbGlzdFtzdHJdICAjIExpc3Qgb2Ygc3RyaW5ncwogICAgdGFnczogbGlzdFtzdHJdCiAgICBzZWN0aW9uczogbGlzdFtkaWN0W3N0ciwgc3RyXV0gICMgTGlzdCBvZiBkaWN0cwogICAgcmVsYXRlZF9pZHM6IGxpc3RbaW50XQoKZ2VuZXJhdG9yID0gb3V0bGluZXMuZ2VuZXJhdGUuanNvbihtb2RlbCwgQXJ0aWNsZSkKYXJ0aWNsZSA9IGdlbmVyYXRvcigiR2VuZXJhdGUgYXJ0aWNsZSBhYm91dCBBSSIpCgpwcmludChhcnRpY2xlLmF1dGhvcnMpICAjIFsiQWxpY2UiLCAiQm9iIl0KcHJpbnQoYXJ0aWNsZS50YWdzKSAgIyBbIkFJIiwgIk1hY2hpbmUgTGVhcm5pbmciLCAiVGVjaG5vbG9neSJdCmBgYAoKIyMjIERpY3Rpb25hcmllcwoKYGBgcHl0aG9uCmNsYXNzIE1ldGFkYXRhKEJhc2VNb2RlbCk6CiAgICB0aXRsZTogc3RyCiAgICBwcm9wZXJ0aWVzOiBkaWN0W3N0ciwgc3RyXSAgIyBTdHJpbmcga2V5cyBhbmQgdmFsdWVzCiAgICBjb3VudHM6IGRpY3Rbc3RyLCBpbnRdICAjIFN0cmluZyBrZXlzLCBpbnQgdmFsdWVzCiAgICBzZXR0aW5nczogZGljdFtzdHIsIFVuaW9uW3N0ciwgaW50LCBib29sXV0gICMgTWl4ZWQgdmFsdWUgdHlwZXMKCmdlbmVyYXRvciA9IG91dGxpbmVzLmdlbmVyYXRlLmpzb24obW9kZWwsIE1ldGFkYXRhKQptZXRhID0gZ2VuZXJhdG9yKCJHZW5lcmF0ZSBtZXRhZGF0YSIpCgpwcmludChtZXRhLnByb3BlcnRpZXMpICAjIHsiYXV0aG9yIjogIkFsaWNlIiwgInZlcnNpb24iOiAiMS4wIn0KcHJpbnQobWV0YS5jb3VudHMpICAjIHsidmlld3MiOiAxMDAwLCAibGlrZXMiOiA1MH0KYGBgCgojIyMgQW55IFR5cGUgKFVzZSBTcGFyaW5nbHkpCgpgYGBweXRob24KZnJvbSB0eXBpbmcgaW1wb3J0IEFueQoKY2xhc3MgRmxleGlibGVEYXRhKEJhc2VNb2RlbCk6CiAgICBuYW1lOiBzdHIKICAgIHN0cnVjdHVyZWRfZmllbGQ6IHN0cgogICAgZmxleGlibGVfZmllbGQ6IEFueSAgIyBDYW4gYmUgYW55dGhpbmcKCiMgTm90ZTogQW55IHJlZHVjZXMgdHlwZSBzYWZldHksIHVzZSBvbmx5IHdoZW4gbmVjZXNzYXJ5CmdlbmVyYXRvciA9IG91dGxpbmVzLmdlbmVyYXRlLmpzb24obW9kZWwsIEZsZXhpYmxlRGF0YSkKYGBgCgojIyBKU09OIFNjaGVtYSBTdXBwb3J0CgojIyMgRGlyZWN0IFNjaGVtYSBVc2FnZQoKYGBgcHl0aG9uCmltcG9ydCBvdXRsaW5lcwoKbW9kZWwgPSBvdXRsaW5lcy5tb2RlbHMudHJhbnNmb3JtZXJzKCJtaWNyb3NvZnQvUGhpLTMtbWluaS00ay1pbnN0cnVjdCIpCgojIERlZmluZSBKU09OIHNjaGVtYQpzY2hlbWEgPSB7CiAgICAidHlwZSI6ICJvYmplY3QiLAogICAgInByb3BlcnRpZXMiOiB7CiAgICAgICAgIm5hbWUiOiB7InR5cGUiOiAic3RyaW5nIn0sCiAgICAgICAgImFnZSI6IHsidHlwZSI6ICJpbnRlZ2VyIiwgIm1pbmltdW0iOiAwLCAibWF4aW11bSI6IDEyMH0sCiAgICAgICAgImVtYWlsIjogeyJ0eXBlIjogInN0cmluZyIsICJmb3JtYXQiOiAiZW1haWwifQogICAgfSwKICAgICJyZXF1aXJlZCI6IFsibmFtZSIsICJhZ2UiLCAiZW1haWwiXQp9CgojIEdlbmVyYXRlIGZyb20gc2NoZW1hCmdlbmVyYXRvciA9IG91dGxpbmVzLmdlbmVyYXRlLmpzb24obW9kZWwsIHNjaGVtYSkKcmVzdWx0ID0gZ2VuZXJhdG9yKCJHZW5lcmF0ZSBwZXJzb246IEFsaWNlLCAyNSwgYWxpY2VAZXhhbXBsZS5jb20iKQoKcHJpbnQocmVzdWx0KSAgIyBWYWxpZCBKU09OIG1hdGNoaW5nIHNjaGVtYQpgYGAKCiMjIyBTY2hlbWEgZnJvbSBQeWRhbnRpYwoKYGBgcHl0aG9uCmNsYXNzIFVzZXIoQmFzZU1vZGVsKToKICAgIG5hbWU6IHN0cgogICAgYWdlOiBpbnQKICAgIGVtYWlsOiBzdHIKCiMgR2V0IEpTT04gc2NoZW1hIGZyb20gUHlkYW50aWMgbW9kZWwKc2NoZW1hID0gVXNlci5tb2RlbF9qc29uX3NjaGVtYSgpCnByaW50KHNjaGVtYSkKIyB7CiMgICAidHlwZSI6ICJvYmplY3QiLAojICAgInByb3BlcnRpZXMiOiB7CiMgICAgICJuYW1lIjogeyJ0eXBlIjogInN0cmluZyJ9LAojICAgICAiYWdlIjogeyJ0eXBlIjogImludGVnZXIifSwKIyAgICAgImVtYWlsIjogeyJ0eXBlIjogInN0cmluZyJ9CiMgICB9LAojICAgInJlcXVpcmVkIjogWyJuYW1lIiwgImFnZSIsICJlbWFpbCJdCiMgfQoKIyBCb3RoIGFwcHJvYWNoZXMgZXF1aXZhbGVudDoKZ2VuZXJhdG9yMSA9IG91dGxpbmVzLmdlbmVyYXRlLmpzb24obW9kZWwsIFVzZXIpCmdlbmVyYXRvcjIgPSBvdXRsaW5lcy5nZW5lcmF0ZS5qc29uKG1vZGVsLCBzY2hlbWEpCmBgYAoKIyMgQWR2YW5jZWQgUGF0dGVybnMKCiMjIyBDb25kaXRpb25hbCBGaWVsZHMKCmBgYHB5dGhvbgpjbGFzcyBPcmRlcihCYXNlTW9kZWwpOgogICAgb3JkZXJfdHlwZTogTGl0ZXJhbFsic3RhbmRhcmQiLCAiZXhwcmVzcyJdCiAgICBkZWxpdmVyeV9kYXRlOiBzdHIKICAgIGV4cHJlc3NfZmVlOiBPcHRpb25hbFtmbG9hdF0gPSBOb25lICAjIE9ubHkgZm9yIGV4cHJlc3Mgb3JkZXJzCgpnZW5lcmF0b3IgPSBvdXRsaW5lcy5nZW5lcmF0ZS5qc29uKG1vZGVsLCBPcmRlcikKCiMgRXhwcmVzcyBvcmRlcgpvcmRlcjEgPSBnZW5lcmF0b3IoIkNyZWF0ZSBleHByZXNzIG9yZGVyIGZvciB0b21vcnJvdyIpCnByaW50KG9yZGVyMS5leHByZXNzX2ZlZSkgICMgMjUuMAoKIyBTdGFuZGFyZCBvcmRlcgpvcmRlcjIgPSBnZW5lcmF0b3IoIkNyZWF0ZSBzdGFuZGFyZCBvcmRlciIpCnByaW50KG9yZGVyMi5leHByZXNzX2ZlZSkgICMgTm9uZQpgYGAKCiMjIyBSZWN1cnNpdmUgTW9kZWxzCgpgYGBweXRob24KZnJvbSB0eXBpbmcgaW1wb3J0IE9wdGlvbmFsLCBMaXN0CgpjbGFzcyBUcmVlTm9kZShCYXNlTW9kZWwpOgogICAgdmFsdWU6IHN0cgogICAgY2hpbGRyZW46IE9wdGlvbmFsW0xpc3RbJ1RyZWVOb2RlJ11dID0gTm9uZQoKIyBFbmFibGUgZm9yd2FyZCByZWZlcmVuY2VzClRyZWVOb2RlLm1vZGVsX3JlYnVpbGQoKQoKZ2VuZXJhdG9yID0gb3V0bGluZXMuZ2VuZXJhdGUuanNvbihtb2RlbCwgVHJlZU5vZGUpCnRyZWUgPSBnZW5lcmF0b3IoIkdlbmVyYXRlIGZpbGUgdHJlZSB3aXRoIHN1YmRpcmVjdG9yaWVzIikKCnByaW50KHRyZWUudmFsdWUpICAjICJyb290IgpwcmludCh0cmVlLmNoaWxkcmVuWzBdLnZhbHVlKSAgIyAic3ViZGlyMSIKYGBgCgojIyMgTW9kZWwgd2l0aCBWYWxpZGF0aW9uCgpgYGBweXRob24KZnJvbSBweWRhbnRpYyBpbXBvcnQgZmllbGRfdmFsaWRhdG9yCgpjbGFzcyBEYXRlUmFuZ2UoQmFzZU1vZGVsKToKICAgIHN0YXJ0X2RhdGU6IHN0cgogICAgZW5kX2RhdGU6IHN0cgoKICAgIEBmaWVsZF92YWxpZGF0b3IoJ2VuZF9kYXRlJykKICAgIGRlZiBlbmRfYWZ0ZXJfc3RhcnQoY2xzLCB2LCBpbmZvKToKICAgICAgICAiIiJFbnN1cmUgZW5kX2RhdGUgaXMgYWZ0ZXIgc3RhcnRfZGF0ZS4iIiIKICAgICAgICBpZiAnc3RhcnRfZGF0ZScgaW4gaW5mby5kYXRhOgogICAgICAgICAgICBmcm9tIGRhdGV0aW1lIGltcG9ydCBkYXRldGltZQogICAgICAgICAgICBzdGFydCA9IGRhdGV0aW1lLnN0cnB0aW1lKGluZm8uZGF0YVsnc3RhcnRfZGF0ZSddLCAnJVktJW0tJWQnKQogICAgICAgICAgICBlbmQgPSBkYXRldGltZS5zdHJwdGltZSh2LCAnJVktJW0tJWQnKQogICAgICAgICAgICBpZiBlbmQgPCBzdGFydDoKICAgICAgICAgICAgICAgIHJhaXNlIFZhbHVlRXJyb3IoJ2VuZF9kYXRlIG11c3QgYmUgYWZ0ZXIgc3RhcnRfZGF0ZScpCiAgICAgICAgcmV0dXJuIHYKCmdlbmVyYXRvciA9IG91dGxpbmVzLmdlbmVyYXRlLmpzb24obW9kZWwsIERhdGVSYW5nZSkKIyBWYWxpZGF0aW9uIGhhcHBlbnMgYWZ0ZXIgZ2VuZXJhdGlvbgpgYGAKCiMjIE11bHRpcGxlIE9iamVjdHMKCiMjIyBHZW5lcmF0ZSBMaXN0IG9mIE9iamVjdHMKCmBgYHB5dGhvbgpjbGFzcyBQZXJzb24oQmFzZU1vZGVsKToKICAgIG5hbWU6IHN0cgogICAgYWdlOiBpbnQKCmNsYXNzIFRlYW0oQmFzZU1vZGVsKToKICAgIHRlYW1fbmFtZTogc3RyCiAgICBtZW1iZXJzOiBsaXN0W1BlcnNvbl0KCmdlbmVyYXRvciA9IG91dGxpbmVzLmdlbmVyYXRlLmpzb24obW9kZWwsIFRlYW0pCgp0ZWFtID0gZ2VuZXJhdG9yKCJHZW5lcmF0ZSBlbmdpbmVlcmluZyB0ZWFtIHdpdGggNSBtZW1iZXJzIikKcHJpbnQoZiJUZWFtOiB7dGVhbS50ZWFtX25hbWV9IikKZm9yIG1lbWJlciBpbiB0ZWFtLm1lbWJlcnM6CiAgICBwcmludChmIi0ge21lbWJlci5uYW1lfSwge21lbWJlci5hZ2V9IikKYGBgCgojIyMgQmF0Y2ggR2VuZXJhdGlvbgoKYGBgcHl0aG9uCmRlZiBnZW5lcmF0ZV9iYXRjaChwcm9tcHRzOiBsaXN0W3N0cl0sIHNjaGVtYTogdHlwZVtCYXNlTW9kZWxdKToKICAgICIiIkdlbmVyYXRlIHN0cnVjdHVyZWQgb3V0cHV0cyBmb3IgbXVsdGlwbGUgcHJvbXB0cy4iIiIKICAgIG1vZGVsID0gb3V0bGluZXMubW9kZWxzLnRyYW5zZm9ybWVycygibWljcm9zb2Z0L1BoaS0zLW1pbmktNGstaW5zdHJ1Y3QiKQogICAgZ2VuZXJhdG9yID0gb3V0bGluZXMuZ2VuZXJhdGUuanNvbihtb2RlbCwgc2NoZW1hKQoKICAgIHJlc3VsdHMgPSBbXQogICAgZm9yIHByb21wdCBpbiBwcm9tcHRzOgogICAgICAgIHJlc3VsdCA9IGdlbmVyYXRvcihwcm9tcHQpCiAgICAgICAgcmVzdWx0cy5hcHBlbmQocmVzdWx0KQoKICAgIHJldHVybiByZXN1bHRzCgpjbGFzcyBQcm9kdWN0KEJhc2VNb2RlbCk6CiAgICBuYW1lOiBzdHIKICAgIHByaWNlOiBmbG9hdAoKcHJvbXB0cyA9IFsKICAgICJQcm9kdWN0OiBpUGhvbmUgMTUsICQ5OTkiLAogICAgIlByb2R1Y3Q6IE1hY0Jvb2sgUHJvLCAkMjQ5OSIsCiAgICAiUHJvZHVjdDogQWlyUG9kcywgJDE3OSIKXQoKcHJvZHVjdHMgPSBnZW5lcmF0ZV9iYXRjaChwcm9tcHRzLCBQcm9kdWN0KQpmb3IgcHJvZHVjdCBpbiBwcm9kdWN0czoKICAgIHByaW50KGYie3Byb2R1Y3QubmFtZX06ICR7cHJvZHVjdC5wcmljZX0iKQpgYGAKCiMjIFBlcmZvcm1hbmNlIE9wdGltaXphdGlvbgoKIyMjIENhY2hpbmcgR2VuZXJhdG9ycwoKYGBgcHl0aG9uCmZyb20gZnVuY3Rvb2xzIGltcG9ydCBscnVfY2FjaGUKCkBscnVfY2FjaGUobWF4c2l6ZT0xMCkKZGVmIGdldF9nZW5lcmF0b3IobW9kZWxfbmFtZTogc3RyLCBzY2hlbWFfaGFzaDogaW50KToKICAgICIiIkNhY2hlIGdlbmVyYXRvcnMgZm9yIHJldXNlLiIiIgogICAgbW9kZWwgPSBvdXRsaW5lcy5tb2RlbHMudHJhbnNmb3JtZXJzKG1vZGVsX25hbWUpCiAgICByZXR1cm4gb3V0bGluZXMuZ2VuZXJhdGUuanNvbihtb2RlbCwgc2NoZW1hKQoKIyBGaXJzdCBjYWxsOiBjcmVhdGVzIGdlbmVyYXRvcgpnZW4xID0gZ2V0X2dlbmVyYXRvcigibWljcm9zb2Z0L1BoaS0zLW1pbmktNGstaW5zdHJ1Y3QiLCBoYXNoKFVzZXIpKQoKIyBTZWNvbmQgY2FsbDogcmV0dXJucyBjYWNoZWQgZ2VuZXJhdG9yIChmYXN0ISkKZ2VuMiA9IGdldF9nZW5lcmF0b3IoIm1pY3Jvc29mdC9QaGktMy1taW5pLTRrLWluc3RydWN0IiwgaGFzaChVc2VyKSkKYGBgCgojIyMgQmF0Y2ggUHJvY2Vzc2luZwoKYGBgcHl0aG9uCiMgUHJvY2VzcyBtdWx0aXBsZSBpdGVtcyBlZmZpY2llbnRseQptb2RlbCA9IG91dGxpbmVzLm1vZGVscy50cmFuc2Zvcm1lcnMoIm1pY3Jvc29mdC9QaGktMy1taW5pLTRrLWluc3RydWN0IikKZ2VuZXJhdG9yID0gb3V0bGluZXMuZ2VuZXJhdGUuanNvbihtb2RlbCwgVXNlcikKCnRleHRzID0gWyJVc2VyOiBBbGljZSwgMjUiLCAiVXNlcjogQm9iLCAzMCIsICJVc2VyOiBDYXJvbCwgMzUiXQoKIyBSZXVzZSBnZW5lcmF0b3IgKG1vZGVsIHN0YXlzIGxvYWRlZCkKdXNlcnMgPSBbZ2VuZXJhdG9yKHRleHQpIGZvciB0ZXh0IGluIHRleHRzXQpgYGAKCiMjIyBNaW5pbWl6ZSBTY2hlbWEgQ29tcGxleGl0eQoKYGBgcHl0aG9uCiMg4pyFIEdvb2Q6IFNpbXBsZSwgZmxhdCBzdHJ1Y3R1cmUgKGZhc3RlcikKY2xhc3MgU2ltcGxlUGVyc29uKEJhc2VNb2RlbCk6CiAgICBuYW1lOiBzdHIKICAgIGFnZTogaW50CiAgICBjaXR5OiBzdHIKCiMg4pqg77iPIFNsb3dlcjogRGVlcCBuZXN0aW5nCmNsYXNzIENvbXBsZXhQZXJzb24oQmFzZU1vZGVsKToKICAgIHBlcnNvbmFsX2luZm86IFBlcnNvbmFsSW5mbwogICAgYWRkcmVzczogQWRkcmVzcwogICAgZW1wbG95bWVudDogRW1wbG95bWVudAogICAgIyAuLi4gbWFueSBuZXN0ZWQgbGV2ZWxzCmBgYAoKIyMgRXJyb3IgSGFuZGxpbmcKCiMjIyBIYW5kbGUgTWlzc2luZyBGaWVsZHMKCmBgYHB5dGhvbgpmcm9tIHB5ZGFudGljIGltcG9ydCBWYWxpZGF0aW9uRXJyb3IKCmNsYXNzIFVzZXIoQmFzZU1vZGVsKToKICAgIG5hbWU6IHN0cgogICAgYWdlOiBpbnQKICAgIGVtYWlsOiBzdHIKCnRyeToKICAgIHVzZXIgPSBnZW5lcmF0b3IoIkdlbmVyYXRlIHVzZXIiKSAgIyBNYXkgbm90IGluY2x1ZGUgYWxsIGZpZWxkcwpleGNlcHQgVmFsaWRhdGlvbkVycm9yIGFzIGU6CiAgICBwcmludChmIlZhbGlkYXRpb24gZXJyb3I6IHtlfSIpCiAgICAjIEhhbmRsZSBncmFjZWZ1bGx5CmBgYAoKIyMjIEZhbGxiYWNrIHdpdGggT3B0aW9uYWwgRmllbGRzCgpgYGBweXRob24KY2xhc3MgUm9idXN0VXNlcihCYXNlTW9kZWwpOgogICAgbmFtZTogc3RyICAjIFJlcXVpcmVkCiAgICBhZ2U6IE9wdGlvbmFsW2ludF0gPSBOb25lICAjIE9wdGlvbmFsCiAgICBlbWFpbDogT3B0aW9uYWxbc3RyXSA9IE5vbmUgICMgT3B0aW9uYWwKCiMgTW9yZSBsaWtlbHkgdG8gc3VjY2VlZCBldmVuIHdpdGggaW5jb21wbGV0ZSBkYXRhCnVzZXIgPSBnZW5lcmF0b3IoIkdlbmVyYXRlIHVzZXI6IEFsaWNlIikKcHJpbnQodXNlci5uYW1lKSAgIyAiQWxpY2UiCnByaW50KHVzZXIuYWdlKSAgIyBOb25lIChub3QgcHJvdmlkZWQpCmBgYAoKIyMgQmVzdCBQcmFjdGljZXMKCiMjIyAxLiBVc2UgU3BlY2lmaWMgVHlwZXMKCmBgYHB5dGhvbgojIOKchSBHb29kOiBTcGVjaWZpYyB0eXBlcwpjbGFzcyBQcm9kdWN0KEJhc2VNb2RlbCk6CiAgICBuYW1lOiBzdHIKICAgIHByaWNlOiBmbG9hdCAgIyBOb3QgQW55IG9yIHN0cgogICAgcXVhbnRpdHk6IGludCAgIyBOb3Qgc3RyCiAgICBpbl9zdG9jazogYm9vbCAgIyBOb3QgaW50CgojIOKdjCBCYWQ6IEdlbmVyaWMgdHlwZXMKY2xhc3MgUHJvZHVjdChCYXNlTW9kZWwpOgogICAgbmFtZTogQW55CiAgICBwcmljZTogc3RyICAjIFNob3VsZCBiZSBmbG9hdAogICAgcXVhbnRpdHk6IHN0ciAgIyBTaG91bGQgYmUgaW50CmBgYAoKIyMjIDIuIEFkZCBEZXNjcmlwdGlvbnMKCmBgYHB5dGhvbgojIOKchSBHb29kOiBDbGVhciBkZXNjcmlwdGlvbnMKY2xhc3MgQXJ0aWNsZShCYXNlTW9kZWwpOgogICAgdGl0bGU6IHN0ciA9IEZpZWxkKGRlc2NyaXB0aW9uPSJBcnRpY2xlIHRpdGxlLCAxMC0xMDAgY2hhcmFjdGVycyIpCiAgICBjb250ZW50OiBzdHIgPSBGaWVsZChkZXNjcmlwdGlvbj0iTWFpbiBhcnRpY2xlIGNvbnRlbnQgaW4gcGFyYWdyYXBocyIpCiAgICB0YWdzOiBsaXN0W3N0cl0gPSBGaWVsZChkZXNjcmlwdGlvbj0iTGlzdCBvZiByZWxldmFudCB0b3BpYyB0YWdzIikKCiMgRGVzY3JpcHRpb25zIGhlbHAgdGhlIG1vZGVsIHVuZGVyc3RhbmQgZXhwZWN0ZWQgb3V0cHV0CmBgYAoKIyMjIDMuIFVzZSBDb25zdHJhaW50cwoKYGBgcHl0aG9uCiMg4pyFIEdvb2Q6IFdpdGggY29uc3RyYWludHMKY2xhc3MgQWdlKEJhc2VNb2RlbCk6CiAgICB2YWx1ZTogaW50ID0gRmllbGQoZ2U9MCwgbGU9MTIwLCBkZXNjcmlwdGlvbj0iQWdlIGluIHllYXJzIikKCiMg4p2MIEJhZDogTm8gY29uc3RyYWludHMKY2xhc3MgQWdlKEJhc2VNb2RlbCk6CiAgICB2YWx1ZTogaW50ICAjIENvdWxkIGJlIG5lZ2F0aXZlIG9yID4gMTIwCmBgYAoKIyMjIDQuIFByZWZlciBFbnVtcyBPdmVyIFN0cmluZ3MKCmBgYHB5dGhvbgojIOKchSBHb29kOiBFbnVtIGZvciBmaXhlZCBzZXQKY2xhc3MgUHJpb3JpdHkoc3RyLCBFbnVtKToKICAgIExPVyA9ICJsb3ciCiAgICBNRURJVU0gPSAibWVkaXVtIgogICAgSElHSCA9ICJoaWdoIgoKY2xhc3MgVGFzayhCYXNlTW9kZWwpOgogICAgcHJpb3JpdHk6IFByaW9yaXR5ICAjIEd1YXJhbnRlZWQgdmFsaWQKCiMg4p2MIEJhZDogRnJlZS1mb3JtIHN0cmluZwpjbGFzcyBUYXNrKEJhc2VNb2RlbCk6CiAgICBwcmlvcml0eTogc3RyICAjIENvdWxkIGJlICJ1cmdlbnQiLCAiQVNBUCIsICIhISIsIGV0Yy4KYGBgCgojIyMgNS4gVGVzdCBZb3VyIE1vZGVscwoKYGBgcHl0aG9uCiMgVGVzdCBtb2RlbHMgd29yayBhcyBleHBlY3RlZApkZWYgdGVzdF9wcm9kdWN0X21vZGVsKCk6CiAgICBwcm9kdWN0ID0gUHJvZHVjdCgKICAgICAgICBuYW1lPSJUZXN0IFByb2R1Y3QiLAogICAgICAgIHByaWNlPTE5Ljk5LAogICAgICAgIHF1YW50aXR5PTEwLAogICAgICAgIGluX3N0b2NrPVRydWUKICAgICkKICAgIGFzc2VydCBwcm9kdWN0LnByaWNlID09IDE5Ljk5CiAgICBhc3NlcnQgaXNpbnN0YW5jZShwcm9kdWN0LCBQcm9kdWN0KQoKIyBSdW4gdGVzdHMgYmVmb3JlIHVzaW5nIGluIHByb2R1Y3Rpb24KYGBgCgojIyBSZXNvdXJjZXMKCi0gKipQeWRhbnRpYyBEb2NzKio6IGh0dHBzOi8vZG9jcy5weWRhbnRpYy5kZXYKLSAqKkpTT04gU2NoZW1hKio6IGh0dHBzOi8vanNvbi1zY2hlbWEub3JnCi0gKipPdXRsaW5lcyBHaXRIdWIqKjogaHR0cHM6Ly9naXRodWIuY29tL291dGxpbmVzLWRldi9vdXRsaW5lcwo=
+# Comprehensive JSON Generation Guide
+
+Complete guide to JSON generation with Outlines using Pydantic models and JSON schemas.
+
+## Table of Contents
+- Pydantic Models
+- JSON Schema Support
+- Advanced Patterns
+- Nested Structures
+- Complex Types
+- Validation
+- Performance Optimization
+
+## Pydantic Models
+
+### Basic Models
+
+```python
+from pydantic import BaseModel
+import outlines
+
+class User(BaseModel):
+    name: str
+    age: int
+    email: str
+
+model = outlines.models.transformers("microsoft/Phi-3-mini-4k-instruct")
+generator = outlines.generate.json(model, User)
+
+user = generator("Generate user: Alice, 25, alice@example.com")
+print(user.name)   # "Alice"
+print(user.age)    # 25
+print(user.email)  # "alice@example.com"
+```
+
+###
+
+ Field Constraints
+
+```python
+from pydantic import BaseModel, Field
+
+class Product(BaseModel):
+    name: str = Field(min_length=1, max_length=100)
+    price: float = Field(gt=0, description="Price in USD")
+    discount: float = Field(ge=0, le=100, description="Discount percentage")
+    quantity: int = Field(ge=0, description="Available quantity")
+    sku: str = Field(pattern=r"^[A-Z]{3}-\d{6}$")
+
+model = outlines.models.transformers("microsoft/Phi-3-mini-4k-instruct")
+generator = outlines.generate.json(model, Product)
+
+product = generator("Generate product: iPhone 15, $999")
+# All fields guaranteed to meet constraints
+```
+
+**Available Constraints:**
+- `min_length`, `max_length`: String length
+- `gt`, `ge`, `lt`, `le`: Numeric comparisons
+- `multiple_of`: Number must be multiple of value
+- `pattern`: Regex pattern for strings
+- `min_items`, `max_items`: List length
+
+### Optional Fields
+
+```python
+from typing import Optional
+
+class Article(BaseModel):
+    title: str  # Required
+    author: Optional[str] = None  # Optional
+    published_date: Optional[str] = None  # Optional
+    tags: list[str] = []  # Default empty list
+    view_count: int = 0  # Default value
+
+generator = outlines.generate.json(model, Article)
+
+# Can generate even if optional fields missing
+article = generator("Title: Introduction to AI")
+print(article.author)  # None (not provided)
+print(article.tags)    # [] (default)
+```
+
+### Default Values
+
+```python
+class Config(BaseModel):
+    debug: bool = False
+    max_retries: int = 3
+    timeout: float = 30.0
+    log_level: str = "INFO"
+
+# Generator uses defaults when not specified
+generator = outlines.generate.json(model, Config)
+config = generator("Generate config with debug enabled")
+print(config.debug)  # True (from prompt)
+print(config.timeout)  # 30.0 (default)
+```
+
+## Enums and Literals
+
+### Enum Fields
+
+```python
+from enum import Enum
+
+class Status(str, Enum):
+    PENDING = "pending"
+    APPROVED = "approved"
+    REJECTED = "rejected"
+    CANCELLED = "cancelled"
+
+class Application(BaseModel):
+    applicant_name: str
+    status: Status  # Must be one of enum values
+    submitted_date: str
+
+generator = outlines.generate.json(model, Application)
+app = generator("Generate application for John Doe")
+
+print(app.status)  # Status.PENDING (or one of the enum values)
+print(type(app.status))  # <enum 'Status'>
+```
+
+### Literal Types
+
+```python
+from typing import Literal
+
+class Task(BaseModel):
+    title: str
+    priority: Literal["low", "medium", "high", "critical"]
+    status: Literal["todo", "in_progress", "done"]
+    assigned_to: str
+
+generator = outlines.generate.json(model, Task)
+task = generator("Create high priority task: Fix bug")
+
+print(task.priority)  # One of: "low", "medium", "high", "critical"
+```
+
+### Multiple Choice Fields
+
+```python
+class Survey(BaseModel):
+    question: str
+    answer: Literal["strongly_disagree", "disagree", "neutral", "agree", "strongly_agree"]
+    confidence: Literal["low", "medium", "high"]
+
+generator = outlines.generate.json(model, Survey)
+survey = generator("Rate: 'I enjoy using this product'")
+```
+
+## Nested Structures
+
+### Nested Models
+
+```python
+class Address(BaseModel):
+    street: str
+    city: str
+    state: str
+    zip_code: str
+    country: str = "USA"
+
+class Person(BaseModel):
+    name: str
+    age: int
+    email: str
+    address: Address  # Nested model
+
+model = outlines.models.transformers("microsoft/Phi-3-mini-4k-instruct")
+generator = outlines.generate.json(model, Person)
+
+prompt = """
+Extract person:
+Name: Alice Johnson
+Age: 28
+Email: alice@example.com
+Address: 123 Main St, Boston, MA, 02101
+"""
+
+person = generator(prompt)
+print(person.name)  # "Alice Johnson"
+print(person.address.city)  # "Boston"
+print(person.address.state)  # "MA"
+```
+
+### Deep Nesting
+
+```python
+class Coordinates(BaseModel):
+    latitude: float
+    longitude: float
+
+class Location(BaseModel):
+    name: str
+    coordinates: Coordinates
+
+class Event(BaseModel):
+    title: str
+    date: str
+    location: Location
+
+generator = outlines.generate.json(model, Event)
+event = generator("Generate event: Tech Conference in San Francisco")
+
+print(event.title)  # "Tech Conference"
+print(event.location.name)  # "San Francisco"
+print(event.location.coordinates.latitude)  # 37.7749
+```
+
+### Lists of Nested Models
+
+```python
+class Item(BaseModel):
+    name: str
+    quantity: int
+    price: float
+
+class Order(BaseModel):
+    order_id: str
+    customer: str
+    items: list[Item]  # List of nested models
+    total: float
+
+generator = outlines.generate.json(model, Order)
+
+prompt = """
+Generate order for John:
+- 2x Widget ($10 each)
+- 3x Gadget ($15 each)
+Order ID: ORD-001
+"""
+
+order = generator(prompt)
+print(f"Order ID: {order.order_id}")
+for item in order.items:
+    print(f"- {item.quantity}x {item.name} @ ${item.price}")
+print(f"Total: ${order.total}")
+```
+
+## Complex Types
+
+### Union Types
+
+```python
+from typing import Union
+
+class TextContent(BaseModel):
+    type: Literal["text"]
+    content: str
+
+class ImageContent(BaseModel):
+    type: Literal["image"]
+    url: str
+    caption: str
+
+class Post(BaseModel):
+    title: str
+    content: Union[TextContent, ImageContent]  # Either type
+
+generator = outlines.generate.json(model, Post)
+
+# Can generate either text or image content
+post = generator("Generate blog post with image")
+if post.content.type == "text":
+    print(post.content.content)
+elif post.content.type == "image":
+    print(post.content.url)
+```
+
+### Lists and Arrays
+
+```python
+class Article(BaseModel):
+    title: str
+    authors: list[str]  # List of strings
+    tags: list[str]
+    sections: list[dict[str, str]]  # List of dicts
+    related_ids: list[int]
+
+generator = outlines.generate.json(model, Article)
+article = generator("Generate article about AI")
+
+print(article.authors)  # ["Alice", "Bob"]
+print(article.tags)  # ["AI", "Machine Learning", "Technology"]
+```
+
+### Dictionaries
+
+```python
+class Metadata(BaseModel):
+    title: str
+    properties: dict[str, str]  # String keys and values
+    counts: dict[str, int]  # String keys, int values
+    settings: dict[str, Union[str, int, bool]]  # Mixed value types
+
+generator = outlines.generate.json(model, Metadata)
+meta = generator("Generate metadata")
+
+print(meta.properties)  # {"author": "Alice", "version": "1.0"}
+print(meta.counts)  # {"views": 1000, "likes": 50}
+```
+
+### Any Type (Use Sparingly)
+
+```python
+from typing import Any
+
+class FlexibleData(BaseModel):
+    name: str
+    structured_field: str
+    flexible_field: Any  # Can be anything
+
+# Note: Any reduces type safety, use only when necessary
+generator = outlines.generate.json(model, FlexibleData)
+```
+
+## JSON Schema Support
+
+### Direct Schema Usage
+
+```python
+import outlines
+
+model = outlines.models.transformers("microsoft/Phi-3-mini-4k-instruct")
+
+# Define JSON schema
+schema = {
+    "type": "object",
+    "properties": {
+        "name": {"type": "string"},
+        "age": {"type": "integer", "minimum": 0, "maximum": 120},
+        "email": {"type": "string", "format": "email"}
+    },
+    "required": ["name", "age", "email"]
+}
+
+# Generate from schema
+generator = outlines.generate.json(model, schema)
+result = generator("Generate person: Alice, 25, alice@example.com")
+
+print(result)  # Valid JSON matching schema
+```
+
+### Schema from Pydantic
+
+```python
+class User(BaseModel):
+    name: str
+    age: int
+    email: str
+
+# Get JSON schema from Pydantic model
+schema = User.model_json_schema()
+print(schema)
+# {
+#   "type": "object",
+#   "properties": {
+#     "name": {"type": "string"},
+#     "age": {"type": "integer"},
+#     "email": {"type": "string"}
+#   },
+#   "required": ["name", "age", "email"]
+# }
+
+# Both approaches equivalent:
+generator1 = outlines.generate.json(model, User)
+generator2 = outlines.generate.json(model, schema)
+```
+
+## Advanced Patterns
+
+### Conditional Fields
+
+```python
+class Order(BaseModel):
+    order_type: Literal["standard", "express"]
+    delivery_date: str
+    express_fee: Optional[float] = None  # Only for express orders
+
+generator = outlines.generate.json(model, Order)
+
+# Express order
+order1 = generator("Create express order for tomorrow")
+print(order1.express_fee)  # 25.0
+
+# Standard order
+order2 = generator("Create standard order")
+print(order2.express_fee)  # None
+```
+
+### Recursive Models
+
+```python
+from typing import Optional, List
+
+class TreeNode(BaseModel):
+    value: str
+    children: Optional[List['TreeNode']] = None
+
+# Enable forward references
+TreeNode.model_rebuild()
+
+generator = outlines.generate.json(model, TreeNode)
+tree = generator("Generate file tree with subdirectories")
+
+print(tree.value)  # "root"
+print(tree.children[0].value)  # "subdir1"
+```
+
+### Model with Validation
+
+```python
+from pydantic import field_validator
+
+class DateRange(BaseModel):
+    start_date: str
+    end_date: str
+
+    @field_validator('end_date')
+    def end_after_start(cls, v, info):
+        """Ensure end_date is after start_date."""
+        if 'start_date' in info.data:
+            from datetime import datetime
+            start = datetime.strptime(info.data['start_date'], '%Y-%m-%d')
+            end = datetime.strptime(v, '%Y-%m-%d')
+            if end < start:
+                raise ValueError('end_date must be after start_date')
+        return v
+
+generator = outlines.generate.json(model, DateRange)
+# Validation happens after generation
+```
+
+## Multiple Objects
+
+### Generate List of Objects
+
+```python
+class Person(BaseModel):
+    name: str
+    age: int
+
+class Team(BaseModel):
+    team_name: str
+    members: list[Person]
+
+generator = outlines.generate.json(model, Team)
+
+team = generator("Generate engineering team with 5 members")
+print(f"Team: {team.team_name}")
+for member in team.members:
+    print(f"- {member.name}, {member.age}")
+```
+
+### Batch Generation
+
+```python
+def generate_batch(prompts: list[str], schema: type[BaseModel]):
+    """Generate structured outputs for multiple prompts."""
+    model = outlines.models.transformers("microsoft/Phi-3-mini-4k-instruct")
+    generator = outlines.generate.json(model, schema)
+
+    results = []
+    for prompt in prompts:
+        result = generator(prompt)
+        results.append(result)
+
+    return results
+
+class Product(BaseModel):
+    name: str
+    price: float
+
+prompts = [
+    "Product: iPhone 15, $999",
+    "Product: MacBook Pro, $2499",
+    "Product: AirPods, $179"
+]
+
+products = generate_batch(prompts, Product)
+for product in products:
+    print(f"{product.name}: ${product.price}")
+```
+
+## Performance Optimization
+
+### Caching Generators
+
+```python
+from functools import lru_cache
+
+@lru_cache(maxsize=10)
+def get_generator(model_name: str, schema_hash: int):
+    """Cache generators for reuse."""
+    model = outlines.models.transformers(model_name)
+    return outlines.generate.json(model, schema)
+
+# First call: creates generator
+gen1 = get_generator("microsoft/Phi-3-mini-4k-instruct", hash(User))
+
+# Second call: returns cached generator (fast!)
+gen2 = get_generator("microsoft/Phi-3-mini-4k-instruct", hash(User))
+```
+
+### Batch Processing
+
+```python
+# Process multiple items efficiently
+model = outlines.models.transformers("microsoft/Phi-3-mini-4k-instruct")
+generator = outlines.generate.json(model, User)
+
+texts = ["User: Alice, 25", "User: Bob, 30", "User: Carol, 35"]
+
+# Reuse generator (model stays loaded)
+users = [generator(text) for text in texts]
+```
+
+### Minimize Schema Complexity
+
+```python
+# ✅ Good: Simple, flat structure (faster)
+class SimplePerson(BaseModel):
+    name: str
+    age: int
+    city: str
+
+# ⚠️ Slower: Deep nesting
+class ComplexPerson(BaseModel):
+    personal_info: PersonalInfo
+    address: Address
+    employment: Employment
+    # ... many nested levels
+```
+
+## Error Handling
+
+### Handle Missing Fields
+
+```python
+from pydantic import ValidationError
+
+class User(BaseModel):
+    name: str
+    age: int
+    email: str
+
+try:
+    user = generator("Generate user")  # May not include all fields
+except ValidationError as e:
+    print(f"Validation error: {e}")
+    # Handle gracefully
+```
+
+### Fallback with Optional Fields
+
+```python
+class RobustUser(BaseModel):
+    name: str  # Required
+    age: Optional[int] = None  # Optional
+    email: Optional[str] = None  # Optional
+
+# More likely to succeed even with incomplete data
+user = generator("Generate user: Alice")
+print(user.name)  # "Alice"
+print(user.age)  # None (not provided)
+```
+
+## Best Practices
+
+### 1. Use Specific Types
+
+```python
+# ✅ Good: Specific types
+class Product(BaseModel):
+    name: str
+    price: float  # Not Any or str
+    quantity: int  # Not str
+    in_stock: bool  # Not int
+
+# ❌ Bad: Generic types
+class Product(BaseModel):
+    name: Any
+    price: str  # Should be float
+    quantity: str  # Should be int
+```
+
+### 2. Add Descriptions
+
+```python
+# ✅ Good: Clear descriptions
+class Article(BaseModel):
+    title: str = Field(description="Article title, 10-100 characters")
+    content: str = Field(description="Main article content in paragraphs")
+    tags: list[str] = Field(description="List of relevant topic tags")
+
+# Descriptions help the model understand expected output
+```
+
+### 3. Use Constraints
+
+```python
+# ✅ Good: With constraints
+class Age(BaseModel):
+    value: int = Field(ge=0, le=120, description="Age in years")
+
+# ❌ Bad: No constraints
+class Age(BaseModel):
+    value: int  # Could be negative or > 120
+```
+
+### 4. Prefer Enums Over Strings
+
+```python
+# ✅ Good: Enum for fixed set
+class Priority(str, Enum):
+    LOW = "low"
+    MEDIUM = "medium"
+    HIGH = "high"
+
+class Task(BaseModel):
+    priority: Priority  # Guaranteed valid
+
+# ❌ Bad: Free-form string
+class Task(BaseModel):
+    priority: str  # Could be "urgent", "ASAP", "!!", etc.
+```
+
+### 5. Test Your Models
+
+```python
+# Test models work as expected
+def test_product_model():
+    product = Product(
+        name="Test Product",
+        price=19.99,
+        quantity=10,
+        in_stock=True
+    )
+    assert product.price == 19.99
+    assert isinstance(product, Product)
+
+# Run tests before using in production
+```
+
+## Resources
+
+- **Pydantic Docs**: https://docs.pydantic.dev
+- **JSON Schema**: https://json-schema.org
+- **Outlines GitHub**: https://github.com/outlines-dev/outlines

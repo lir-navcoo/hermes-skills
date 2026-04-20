@@ -1,1 +1,342 @@
-LS0tCm5hbWU6IHN1YmFnZW50LWRyaXZlbi1kZXZlbG9wbWVudApkZXNjcmlwdGlvbjogVXNlIHdoZW4gZXhlY3V0aW5nIGltcGxlbWVudGF0aW9uIHBsYW5zIHdpdGggaW5kZXBlbmRlbnQgdGFza3MuIERpc3BhdGNoZXMgZnJlc2ggZGVsZWdhdGVfdGFzayBwZXIgdGFzayB3aXRoIHR3by1zdGFnZSByZXZpZXcgKHNwZWMgY29tcGxpYW5jZSB0aGVuIGNvZGUgcXVhbGl0eSkuCnZlcnNpb246IDEuMS4wCmF1dGhvcjogSGVybWVzIEFnZW50IChhZGFwdGVkIGZyb20gb2JyYS9zdXBlcnBvd2VycykKbGljZW5zZTogTUlUCm1ldGFkYXRhOgogIGhlcm1lczoKICAgIHRhZ3M6IFtkZWxlZ2F0aW9uLCBzdWJhZ2VudCwgaW1wbGVtZW50YXRpb24sIHdvcmtmbG93LCBwYXJhbGxlbF0KICAgIHJlbGF0ZWRfc2tpbGxzOiBbd3JpdGluZy1wbGFucywgcmVxdWVzdGluZy1jb2RlLXJldmlldywgdGVzdC1kcml2ZW4tZGV2ZWxvcG1lbnRdCi0tLQoKIyBTdWJhZ2VudC1Ecml2ZW4gRGV2ZWxvcG1lbnQKCiMjIE92ZXJ2aWV3CgpFeGVjdXRlIGltcGxlbWVudGF0aW9uIHBsYW5zIGJ5IGRpc3BhdGNoaW5nIGZyZXNoIHN1YmFnZW50cyBwZXIgdGFzayB3aXRoIHN5c3RlbWF0aWMgdHdvLXN0YWdlIHJldmlldy4KCioqQ29yZSBwcmluY2lwbGU6KiogRnJlc2ggc3ViYWdlbnQgcGVyIHRhc2sgKyB0d28tc3RhZ2UgcmV2aWV3IChzcGVjIHRoZW4gcXVhbGl0eSkgPSBoaWdoIHF1YWxpdHksIGZhc3QgaXRlcmF0aW9uLgoKIyMgV2hlbiB0byBVc2UKClVzZSB0aGlzIHNraWxsIHdoZW46Ci0gWW91IGhhdmUgYW4gaW1wbGVtZW50YXRpb24gcGxhbiAoZnJvbSB3cml0aW5nLXBsYW5zIHNraWxsIG9yIHVzZXIgcmVxdWlyZW1lbnRzKQotIFRhc2tzIGFyZSBtb3N0bHkgaW5kZXBlbmRlbnQKLSBRdWFsaXR5IGFuZCBzcGVjIGNvbXBsaWFuY2UgYXJlIGltcG9ydGFudAotIFlvdSB3YW50IGF1dG9tYXRlZCByZXZpZXcgYmV0d2VlbiB0YXNrcwoKKip2cy4gbWFudWFsIGV4ZWN1dGlvbjoqKgotIEZyZXNoIGNvbnRleHQgcGVyIHRhc2sgKG5vIGNvbmZ1c2lvbiBmcm9tIGFjY3VtdWxhdGVkIHN0YXRlKQotIEF1dG9tYXRlZCByZXZpZXcgcHJvY2VzcyBjYXRjaGVzIGlzc3VlcyBlYXJseQotIENvbnNpc3RlbnQgcXVhbGl0eSBjaGVja3MgYWNyb3NzIGFsbCB0YXNrcwotIFN1YmFnZW50cyBjYW4gYXNrIHF1ZXN0aW9ucyBiZWZvcmUgc3RhcnRpbmcgd29yawoKIyMgVGhlIFByb2Nlc3MKCiMjIyAxLiBSZWFkIGFuZCBQYXJzZSBQbGFuCgpSZWFkIHRoZSBwbGFuIGZpbGUuIEV4dHJhY3QgQUxMIHRhc2tzIHdpdGggdGhlaXIgZnVsbCB0ZXh0IGFuZCBjb250ZXh0IHVwZnJvbnQuIENyZWF0ZSBhIHRvZG8gbGlzdDoKCmBgYHB5dGhvbgojIFJlYWQgdGhlIHBsYW4KcmVhZF9maWxlKCJkb2NzL3BsYW5zL2ZlYXR1cmUtcGxhbi5tZCIpCgojIENyZWF0ZSB0b2RvIGxpc3Qgd2l0aCBhbGwgdGFza3MKdG9kbyhbCiAgICB7ImlkIjogInRhc2stMSIsICJjb250ZW50IjogIkNyZWF0ZSBVc2VyIG1vZGVsIHdpdGggZW1haWwgZmllbGQiLCAic3RhdHVzIjogInBlbmRpbmcifSwKICAgIHsiaWQiOiAidGFzay0yIiwgImNvbnRlbnQiOiAiQWRkIHBhc3N3b3JkIGhhc2hpbmcgdXRpbGl0eSIsICJzdGF0dXMiOiAicGVuZGluZyJ9LAogICAgeyJpZCI6ICJ0YXNrLTMiLCAiY29udGVudCI6ICJDcmVhdGUgbG9naW4gZW5kcG9pbnQiLCAic3RhdHVzIjogInBlbmRpbmcifSwKXSkKYGBgCgoqKktleToqKiBSZWFkIHRoZSBwbGFuIE9OQ0UuIEV4dHJhY3QgZXZlcnl0aGluZy4gRG9uJ3QgbWFrZSBzdWJhZ2VudHMgcmVhZCB0aGUgcGxhbiBmaWxlIOKAlCBwcm92aWRlIHRoZSBmdWxsIHRhc2sgdGV4dCBkaXJlY3RseSBpbiBjb250ZXh0LgoKIyMjIDIuIFBlci1UYXNrIFdvcmtmbG93CgpGb3IgRUFDSCB0YXNrIGluIHRoZSBwbGFuOgoKIyMjIyBTdGVwIDE6IERpc3BhdGNoIEltcGxlbWVudGVyIFN1YmFnZW50CgpVc2UgYGRlbGVnYXRlX3Rhc2tgIHdpdGggY29tcGxldGUgY29udGV4dDoKCmBgYHB5dGhvbgpkZWxlZ2F0ZV90YXNrKAogICAgZ29hbD0iSW1wbGVtZW50IFRhc2sgMTogQ3JlYXRlIFVzZXIgbW9kZWwgd2l0aCBlbWFpbCBhbmQgcGFzc3dvcmRfaGFzaCBmaWVsZHMiLAogICAgY29udGV4dD0iIiIKICAgIFRBU0sgRlJPTSBQTEFOOgogICAgLSBDcmVhdGU6IHNyYy9tb2RlbHMvdXNlci5weQogICAgLSBBZGQgVXNlciBjbGFzcyB3aXRoIGVtYWlsIChzdHIpIGFuZCBwYXNzd29yZF9oYXNoIChzdHIpIGZpZWxkcwogICAgLSBVc2UgYmNyeXB0IGZvciBwYXNzd29yZCBoYXNoaW5nCiAgICAtIEluY2x1ZGUgX19yZXByX18gZm9yIGRlYnVnZ2luZwoKICAgIEZPTExPVyBUREQ6CiAgICAxLiBXcml0ZSBmYWlsaW5nIHRlc3QgaW4gdGVzdHMvbW9kZWxzL3Rlc3RfdXNlci5weQogICAgMi4gUnVuOiBweXRlc3QgdGVzdHMvbW9kZWxzL3Rlc3RfdXNlci5weSAtdiAodmVyaWZ5IEZBSUwpCiAgICAzLiBXcml0ZSBtaW5pbWFsIGltcGxlbWVudGF0aW9uCiAgICA0LiBSdW46IHB5dGVzdCB0ZXN0cy9tb2RlbHMvdGVzdF91c2VyLnB5IC12ICh2ZXJpZnkgUEFTUykKICAgIDUuIFJ1bjogcHl0ZXN0IHRlc3RzLyAtcSAodmVyaWZ5IG5vIHJlZ3Jlc3Npb25zKQogICAgNi4gQ29tbWl0OiBnaXQgYWRkIC1BICYmIGdpdCBjb21taXQgLW0gImZlYXQ6IGFkZCBVc2VyIG1vZGVsIHdpdGggcGFzc3dvcmQgaGFzaGluZyIKCiAgICBQUk9KRUNUIENPTlRFWFQ6CiAgICAtIFB5dGhvbiAzLjExLCBGbGFzayBhcHAgaW4gc3JjL2FwcC5weQogICAgLSBFeGlzdGluZyBtb2RlbHMgaW4gc3JjL21vZGVscy8KICAgIC0gVGVzdHMgdXNlIHB5dGVzdCwgcnVuIGZyb20gcHJvamVjdCByb290CiAgICAtIGJjcnlwdCBhbHJlYWR5IGluIHJlcXVpcmVtZW50cy50eHQKICAgICIiIiwKICAgIHRvb2xzZXRzPVsndGVybWluYWwnLCAnZmlsZSddCikKYGBgCgojIyMjIFN0ZXAgMjogRGlzcGF0Y2ggU3BlYyBDb21wbGlhbmNlIFJldmlld2VyCgpBZnRlciB0aGUgaW1wbGVtZW50ZXIgY29tcGxldGVzLCB2ZXJpZnkgYWdhaW5zdCB0aGUgb3JpZ2luYWwgc3BlYzoKCmBgYHB5dGhvbgpkZWxlZ2F0ZV90YXNrKAogICAgZ29hbD0iUmV2aWV3IGlmIGltcGxlbWVudGF0aW9uIG1hdGNoZXMgdGhlIHNwZWMgZnJvbSB0aGUgcGxhbiIsCiAgICBjb250ZXh0PSIiIgogICAgT1JJR0lOQUwgVEFTSyBTUEVDOgogICAgLSBDcmVhdGUgc3JjL21vZGVscy91c2VyLnB5IHdpdGggVXNlciBjbGFzcwogICAgLSBGaWVsZHM6IGVtYWlsIChzdHIpLCBwYXNzd29yZF9oYXNoIChzdHIpCiAgICAtIFVzZSBiY3J5cHQgZm9yIHBhc3N3b3JkIGhhc2hpbmcKICAgIC0gSW5jbHVkZSBfX3JlcHJfXwoKICAgIENIRUNLOgogICAgLSBbIF0gQWxsIHJlcXVpcmVtZW50cyBmcm9tIHNwZWMgaW1wbGVtZW50ZWQ/CiAgICAtIFsgXSBGaWxlIHBhdGhzIG1hdGNoIHNwZWM/CiAgICAtIFsgXSBGdW5jdGlvbiBzaWduYXR1cmVzIG1hdGNoIHNwZWM/CiAgICAtIFsgXSBCZWhhdmlvciBtYXRjaGVzIGV4cGVjdGVkPwogICAgLSBbIF0gTm90aGluZyBleHRyYSBhZGRlZCAobm8gc2NvcGUgY3JlZXApPwoKICAgIE9VVFBVVDogUEFTUyBvciBsaXN0IG9mIHNwZWNpZmljIHNwZWMgZ2FwcyB0byBmaXguCiAgICAiIiIsCiAgICB0b29sc2V0cz1bJ2ZpbGUnXQopCmBgYAoKKipJZiBzcGVjIGlzc3VlcyBmb3VuZDoqKiBGaXggZ2FwcywgdGhlbiByZS1ydW4gc3BlYyByZXZpZXcuIENvbnRpbnVlIG9ubHkgd2hlbiBzcGVjLWNvbXBsaWFudC4KCiMjIyMgU3RlcCAzOiBEaXNwYXRjaCBDb2RlIFF1YWxpdHkgUmV2aWV3ZXIKCkFmdGVyIHNwZWMgY29tcGxpYW5jZSBwYXNzZXM6CgpgYGBweXRob24KZGVsZWdhdGVfdGFzaygKICAgIGdvYWw9IlJldmlldyBjb2RlIHF1YWxpdHkgZm9yIFRhc2sgMSBpbXBsZW1lbnRhdGlvbiIsCiAgICBjb250ZXh0PSIiIgogICAgRklMRVMgVE8gUkVWSUVXOgogICAgLSBzcmMvbW9kZWxzL3VzZXIucHkKICAgIC0gdGVzdHMvbW9kZWxzL3Rlc3RfdXNlci5weQoKICAgIENIRUNLOgogICAgLSBbIF0gRm9sbG93cyBwcm9qZWN0IGNvbnZlbnRpb25zIGFuZCBzdHlsZT8KICAgIC0gWyBdIFByb3BlciBlcnJvciBoYW5kbGluZz8KICAgIC0gWyBdIENsZWFyIHZhcmlhYmxlL2Z1bmN0aW9uIG5hbWVzPwogICAgLSBbIF0gQWRlcXVhdGUgdGVzdCBjb3ZlcmFnZT8KICAgIC0gWyBdIE5vIG9idmlvdXMgYnVncyBvciBtaXNzZWQgZWRnZSBjYXNlcz8KICAgIC0gWyBdIE5vIHNlY3VyaXR5IGlzc3Vlcz8KCiAgICBPVVRQVVQgRk9STUFUOgogICAgLSBDcml0aWNhbCBJc3N1ZXM6IFttdXN0IGZpeCBiZWZvcmUgcHJvY2VlZGluZ10KICAgIC0gSW1wb3J0YW50IElzc3VlczogW3Nob3VsZCBmaXhdCiAgICAtIE1pbm9yIElzc3VlczogW29wdGlvbmFsXQogICAgLSBWZXJkaWN0OiBBUFBST1ZFRCBvciBSRVFVRVNUX0NIQU5HRVMKICAgICIiIiwKICAgIHRvb2xzZXRzPVsnZmlsZSddCikKYGBgCgoqKklmIHF1YWxpdHkgaXNzdWVzIGZvdW5kOioqIEZpeCBpc3N1ZXMsIHJlLXJldmlldy4gQ29udGludWUgb25seSB3aGVuIGFwcHJvdmVkLgoKIyMjIyBTdGVwIDQ6IE1hcmsgQ29tcGxldGUKCmBgYHB5dGhvbgp0b2RvKFt7ImlkIjogInRhc2stMSIsICJjb250ZW50IjogIkNyZWF0ZSBVc2VyIG1vZGVsIHdpdGggZW1haWwgZmllbGQiLCAic3RhdHVzIjogImNvbXBsZXRlZCJ9XSwgbWVyZ2U9VHJ1ZSkKYGBgCgojIyMgMy4gRmluYWwgUmV2aWV3CgpBZnRlciBBTEwgdGFza3MgYXJlIGNvbXBsZXRlLCBkaXNwYXRjaCBhIGZpbmFsIGludGVncmF0aW9uIHJldmlld2VyOgoKYGBgcHl0aG9uCmRlbGVnYXRlX3Rhc2soCiAgICBnb2FsPSJSZXZpZXcgdGhlIGVudGlyZSBpbXBsZW1lbnRhdGlvbiBmb3IgY29uc2lzdGVuY3kgYW5kIGludGVncmF0aW9uIGlzc3VlcyIsCiAgICBjb250ZXh0PSIiIgogICAgQWxsIHRhc2tzIGZyb20gdGhlIHBsYW4gYXJlIGNvbXBsZXRlLiBSZXZpZXcgdGhlIGZ1bGwgaW1wbGVtZW50YXRpb246CiAgICAtIERvIGFsbCBjb21wb25lbnRzIHdvcmsgdG9nZXRoZXI/CiAgICAtIEFueSBpbmNvbnNpc3RlbmNpZXMgYmV0d2VlbiB0YXNrcz8KICAgIC0gQWxsIHRlc3RzIHBhc3Npbmc/CiAgICAtIFJlYWR5IGZvciBtZXJnZT8KICAgICIiIiwKICAgIHRvb2xzZXRzPVsndGVybWluYWwnLCAnZmlsZSddCikKYGBgCgojIyMgNC4gVmVyaWZ5IGFuZCBDb21taXQKCmBgYGJhc2gKIyBSdW4gZnVsbCB0ZXN0IHN1aXRlCnB5dGVzdCB0ZXN0cy8gLXEKCiMgUmV2aWV3IGFsbCBjaGFuZ2VzCmdpdCBkaWZmIC0tc3RhdAoKIyBGaW5hbCBjb21taXQgaWYgbmVlZGVkCmdpdCBhZGQgLUEgJiYgZ2l0IGNvbW1pdCAtbSAiZmVhdDogY29tcGxldGUgW2ZlYXR1cmUgbmFtZV0gaW1wbGVtZW50YXRpb24iCmBgYAoKIyMgVGFzayBHcmFudWxhcml0eQoKKipFYWNoIHRhc2sgPSAyLTUgbWludXRlcyBvZiBmb2N1c2VkIHdvcmsuKioKCioqVG9vIGJpZzoqKgotICJJbXBsZW1lbnQgdXNlciBhdXRoZW50aWNhdGlvbiBzeXN0ZW0iCgoqKlJpZ2h0IHNpemU6KioKLSAiQ3JlYXRlIFVzZXIgbW9kZWwgd2l0aCBlbWFpbCBhbmQgcGFzc3dvcmQgZmllbGRzIgotICJBZGQgcGFzc3dvcmQgaGFzaGluZyBmdW5jdGlvbiIKLSAiQ3JlYXRlIGxvZ2luIGVuZHBvaW50IgotICJBZGQgSldUIHRva2VuIGdlbmVyYXRpb24iCi0gIkNyZWF0ZSByZWdpc3RyYXRpb24gZW5kcG9pbnQiCgojIyBSZWQgRmxhZ3Mg4oCUIE5ldmVyIERvIFRoZXNlCgotIFN0YXJ0IGltcGxlbWVudGF0aW9uIHdpdGhvdXQgYSBwbGFuCi0gU2tpcCByZXZpZXdzIChzcGVjIGNvbXBsaWFuY2UgT1IgY29kZSBxdWFsaXR5KQotIFByb2NlZWQgd2l0aCB1bmZpeGVkIGNyaXRpY2FsL2ltcG9ydGFudCBpc3N1ZXMKLSBEaXNwYXRjaCBtdWx0aXBsZSBpbXBsZW1lbnRhdGlvbiBzdWJhZ2VudHMgZm9yIHRhc2tzIHRoYXQgdG91Y2ggdGhlIHNhbWUgZmlsZXMKLSBNYWtlIHN1YmFnZW50IHJlYWQgdGhlIHBsYW4gZmlsZSAocHJvdmlkZSBmdWxsIHRleHQgaW4gY29udGV4dCBpbnN0ZWFkKQotIFNraXAgc2NlbmUtc2V0dGluZyBjb250ZXh0IChzdWJhZ2VudCBuZWVkcyB0byB1bmRlcnN0YW5kIHdoZXJlIHRoZSB0YXNrIGZpdHMpCi0gSWdub3JlIHN1YmFnZW50IHF1ZXN0aW9ucyAoYW5zd2VyIGJlZm9yZSBsZXR0aW5nIHRoZW0gcHJvY2VlZCkKLSBBY2NlcHQgImNsb3NlIGVub3VnaCIgb24gc3BlYyBjb21wbGlhbmNlCi0gU2tpcCByZXZpZXcgbG9vcHMgKHJldmlld2VyIGZvdW5kIGlzc3VlcyDihpIgaW1wbGVtZW50ZXIgZml4ZXMg4oaSIHJldmlldyBhZ2FpbikKLSBMZXQgaW1wbGVtZW50ZXIgc2VsZi1yZXZpZXcgcmVwbGFjZSBhY3R1YWwgcmV2aWV3IChib3RoIGFyZSBuZWVkZWQpCi0gKipTdGFydCBjb2RlIHF1YWxpdHkgcmV2aWV3IGJlZm9yZSBzcGVjIGNvbXBsaWFuY2UgaXMgUEFTUyoqICh3cm9uZyBvcmRlcikKLSBNb3ZlIHRvIG5leHQgdGFzayB3aGlsZSBlaXRoZXIgcmV2aWV3IGhhcyBvcGVuIGlzc3VlcwoKIyMgSGFuZGxpbmcgSXNzdWVzCgojIyMgSWYgU3ViYWdlbnQgQXNrcyBRdWVzdGlvbnMKCi0gQW5zd2VyIGNsZWFybHkgYW5kIGNvbXBsZXRlbHkKLSBQcm92aWRlIGFkZGl0aW9uYWwgY29udGV4dCBpZiBuZWVkZWQKLSBEb24ndCBydXNoIHRoZW0gaW50byBpbXBsZW1lbnRhdGlvbgoKIyMjIElmIFJldmlld2VyIEZpbmRzIElzc3VlcwoKLSBJbXBsZW1lbnRlciBzdWJhZ2VudCAob3IgYSBuZXcgb25lKSBmaXhlcyB0aGVtCi0gUmV2aWV3ZXIgcmV2aWV3cyBhZ2FpbgotIFJlcGVhdCB1bnRpbCBhcHByb3ZlZAotIERvbid0IHNraXAgdGhlIHJlLXJldmlldwoKIyMjIElmIFN1YmFnZW50IEZhaWxzIGEgVGFzawoKLSBEaXNwYXRjaCBhIG5ldyBmaXggc3ViYWdlbnQgd2l0aCBzcGVjaWZpYyBpbnN0cnVjdGlvbnMgYWJvdXQgd2hhdCB3ZW50IHdyb25nCi0gRG9uJ3QgdHJ5IHRvIGZpeCBtYW51YWxseSBpbiB0aGUgY29udHJvbGxlciBzZXNzaW9uIChjb250ZXh0IHBvbGx1dGlvbikKCiMjIEVmZmljaWVuY3kgTm90ZXMKCioqV2h5IGZyZXNoIHN1YmFnZW50IHBlciB0YXNrOioqCi0gUHJldmVudHMgY29udGV4dCBwb2xsdXRpb24gZnJvbSBhY2N1bXVsYXRlZCBzdGF0ZQotIEVhY2ggc3ViYWdlbnQgZ2V0cyBjbGVhbiwgZm9jdXNlZCBjb250ZXh0Ci0gTm8gY29uZnVzaW9uIGZyb20gcHJpb3IgdGFza3MnIGNvZGUgb3IgcmVhc29uaW5nCgoqKldoeSB0d28tc3RhZ2UgcmV2aWV3OioqCi0gU3BlYyByZXZpZXcgY2F0Y2hlcyB1bmRlci9vdmVyLWJ1aWxkaW5nIGVhcmx5Ci0gUXVhbGl0eSByZXZpZXcgZW5zdXJlcyB0aGUgaW1wbGVtZW50YXRpb24gaXMgd2VsbC1idWlsdAotIENhdGNoZXMgaXNzdWVzIGJlZm9yZSB0aGV5IGNvbXBvdW5kIGFjcm9zcyB0YXNrcwoKKipDb3N0IHRyYWRlLW9mZjoqKgotIE1vcmUgc3ViYWdlbnQgaW52b2NhdGlvbnMgKGltcGxlbWVudGVyICsgMiByZXZpZXdlcnMgcGVyIHRhc2spCi0gQnV0IGNhdGNoZXMgaXNzdWVzIGVhcmx5IChjaGVhcGVyIHRoYW4gZGVidWdnaW5nIGNvbXBvdW5kZWQgcHJvYmxlbXMgbGF0ZXIpCgojIyBJbnRlZ3JhdGlvbiB3aXRoIE90aGVyIFNraWxscwoKIyMjIFdpdGggd3JpdGluZy1wbGFucwoKVGhpcyBza2lsbCBFWEVDVVRFUyBwbGFucyBjcmVhdGVkIGJ5IHRoZSB3cml0aW5nLXBsYW5zIHNraWxsOgoxLiBVc2VyIHJlcXVpcmVtZW50cyDihpIgd3JpdGluZy1wbGFucyDihpIgaW1wbGVtZW50YXRpb24gcGxhbgoyLiBJbXBsZW1lbnRhdGlvbiBwbGFuIOKGkiBzdWJhZ2VudC1kcml2ZW4tZGV2ZWxvcG1lbnQg4oaSIHdvcmtpbmcgY29kZQoKIyMjIFdpdGggdGVzdC1kcml2ZW4tZGV2ZWxvcG1lbnQKCkltcGxlbWVudGVyIHN1YmFnZW50cyBzaG91bGQgZm9sbG93IFRERDoKMS4gV3JpdGUgZmFpbGluZyB0ZXN0IGZpcnN0CjIuIEltcGxlbWVudCBtaW5pbWFsIGNvZGUKMy4gVmVyaWZ5IHRlc3QgcGFzc2VzCjQuIENvbW1pdAoKSW5jbHVkZSBUREQgaW5zdHJ1Y3Rpb25zIGluIGV2ZXJ5IGltcGxlbWVudGVyIGNvbnRleHQuCgojIyMgV2l0aCByZXF1ZXN0aW5nLWNvZGUtcmV2aWV3CgpUaGUgdHdvLXN0YWdlIHJldmlldyBwcm9jZXNzIElTIHRoZSBjb2RlIHJldmlldy4gRm9yIGZpbmFsIGludGVncmF0aW9uIHJldmlldywgdXNlIHRoZSByZXF1ZXN0aW5nLWNvZGUtcmV2aWV3IHNraWxsJ3MgcmV2aWV3IGRpbWVuc2lvbnMuCgojIyMgV2l0aCBzeXN0ZW1hdGljLWRlYnVnZ2luZwoKSWYgYSBzdWJhZ2VudCBlbmNvdW50ZXJzIGJ1Z3MgZHVyaW5nIGltcGxlbWVudGF0aW9uOgoxLiBGb2xsb3cgc3lzdGVtYXRpYy1kZWJ1Z2dpbmcgcHJvY2VzcwoyLiBGaW5kIHJvb3QgY2F1c2UgYmVmb3JlIGZpeGluZwozLiBXcml0ZSByZWdyZXNzaW9uIHRlc3QKNC4gUmVzdW1lIGltcGxlbWVudGF0aW9uCgojIyBFeGFtcGxlIFdvcmtmbG93CgpgYGAKW1JlYWQgcGxhbjogZG9jcy9wbGFucy9hdXRoLWZlYXR1cmUubWRdCltDcmVhdGUgdG9kbyBsaXN0IHdpdGggNSB0YXNrc10KCi0tLSBUYXNrIDE6IENyZWF0ZSBVc2VyIG1vZGVsIC0tLQpbRGlzcGF0Y2ggaW1wbGVtZW50ZXIgc3ViYWdlbnRdCiAgSW1wbGVtZW50ZXI6ICJTaG91bGQgZW1haWwgYmUgdW5pcXVlPyIKICBZb3U6ICJZZXMsIGVtYWlsIG11c3QgYmUgdW5pcXVlIgogIEltcGxlbWVudGVyOiBJbXBsZW1lbnRlZCwgMy8zIHRlc3RzIHBhc3NpbmcsIGNvbW1pdHRlZC4KCltEaXNwYXRjaCBzcGVjIHJldmlld2VyXQogIFNwZWMgcmV2aWV3ZXI6IOKchSBQQVNTIOKAlCBhbGwgcmVxdWlyZW1lbnRzIG1ldAoKW0Rpc3BhdGNoIHF1YWxpdHkgcmV2aWV3ZXJdCiAgUXVhbGl0eSByZXZpZXdlcjog4pyFIEFQUFJPVkVEIOKAlCBjbGVhbiBjb2RlLCBnb29kIHRlc3RzCgpbTWFyayBUYXNrIDEgY29tcGxldGVdCgotLS0gVGFzayAyOiBQYXNzd29yZCBoYXNoaW5nIC0tLQpbRGlzcGF0Y2ggaW1wbGVtZW50ZXIgc3ViYWdlbnRdCiAgSW1wbGVtZW50ZXI6IE5vIHF1ZXN0aW9ucywgaW1wbGVtZW50ZWQsIDUvNSB0ZXN0cyBwYXNzaW5nLgoKW0Rpc3BhdGNoIHNwZWMgcmV2aWV3ZXJdCiAgU3BlYyByZXZpZXdlcjog4p2MIE1pc3Npbmc6IHBhc3N3b3JkIHN0cmVuZ3RoIHZhbGlkYXRpb24gKHNwZWMgc2F5cyAibWluIDggY2hhcnMiKQoKW0ltcGxlbWVudGVyIGZpeGVzXQogIEltcGxlbWVudGVyOiBBZGRlZCB2YWxpZGF0aW9uLCA3LzcgdGVzdHMgcGFzc2luZy4KCltEaXNwYXRjaCBzcGVjIHJldmlld2VyIGFnYWluXQogIFNwZWMgcmV2aWV3ZXI6IOKchSBQQVNTCgpbRGlzcGF0Y2ggcXVhbGl0eSByZXZpZXdlcl0KICBRdWFsaXR5IHJldmlld2VyOiBJbXBvcnRhbnQ6IE1hZ2ljIG51bWJlciA4LCBleHRyYWN0IHRvIGNvbnN0YW50CiAgSW1wbGVtZW50ZXI6IEV4dHJhY3RlZCBNSU5fUEFTU1dPUkRfTEVOR1RIIGNvbnN0YW50CiAgUXVhbGl0eSByZXZpZXdlcjog4pyFIEFQUFJPVkVECgpbTWFyayBUYXNrIDIgY29tcGxldGVdCgouLi4gKGNvbnRpbnVlIGZvciBhbGwgdGFza3MpCgpbQWZ0ZXIgYWxsIHRhc2tzOiBkaXNwYXRjaCBmaW5hbCBpbnRlZ3JhdGlvbiByZXZpZXdlcl0KW1J1biBmdWxsIHRlc3Qgc3VpdGU6IGFsbCBwYXNzaW5nXQpbRG9uZSFdCmBgYAoKIyMgUmVtZW1iZXIKCmBgYApGcmVzaCBzdWJhZ2VudCBwZXIgdGFzawpUd28tc3RhZ2UgcmV2aWV3IGV2ZXJ5IHRpbWUKU3BlYyBjb21wbGlhbmNlIEZJUlNUCkNvZGUgcXVhbGl0eSBTRUNPTkQKTmV2ZXIgc2tpcCByZXZpZXdzCkNhdGNoIGlzc3VlcyBlYXJseQpgYGAKCioqUXVhbGl0eSBpcyBub3QgYW4gYWNjaWRlbnQuIEl0J3MgdGhlIHJlc3VsdCBvZiBzeXN0ZW1hdGljIHByb2Nlc3MuKioK
+---
+name: subagent-driven-development
+description: Use when executing implementation plans with independent tasks. Dispatches fresh delegate_task per task with two-stage review (spec compliance then code quality).
+version: 1.1.0
+author: Hermes Agent (adapted from obra/superpowers)
+license: MIT
+metadata:
+  hermes:
+    tags: [delegation, subagent, implementation, workflow, parallel]
+    related_skills: [writing-plans, requesting-code-review, test-driven-development]
+---
+
+# Subagent-Driven Development
+
+## Overview
+
+Execute implementation plans by dispatching fresh subagents per task with systematic two-stage review.
+
+**Core principle:** Fresh subagent per task + two-stage review (spec then quality) = high quality, fast iteration.
+
+## When to Use
+
+Use this skill when:
+- You have an implementation plan (from writing-plans skill or user requirements)
+- Tasks are mostly independent
+- Quality and spec compliance are important
+- You want automated review between tasks
+
+**vs. manual execution:**
+- Fresh context per task (no confusion from accumulated state)
+- Automated review process catches issues early
+- Consistent quality checks across all tasks
+- Subagents can ask questions before starting work
+
+## The Process
+
+### 1. Read and Parse Plan
+
+Read the plan file. Extract ALL tasks with their full text and context upfront. Create a todo list:
+
+```python
+# Read the plan
+read_file("docs/plans/feature-plan.md")
+
+# Create todo list with all tasks
+todo([
+    {"id": "task-1", "content": "Create User model with email field", "status": "pending"},
+    {"id": "task-2", "content": "Add password hashing utility", "status": "pending"},
+    {"id": "task-3", "content": "Create login endpoint", "status": "pending"},
+])
+```
+
+**Key:** Read the plan ONCE. Extract everything. Don't make subagents read the plan file — provide the full task text directly in context.
+
+### 2. Per-Task Workflow
+
+For EACH task in the plan:
+
+#### Step 1: Dispatch Implementer Subagent
+
+Use `delegate_task` with complete context:
+
+```python
+delegate_task(
+    goal="Implement Task 1: Create User model with email and password_hash fields",
+    context="""
+    TASK FROM PLAN:
+    - Create: src/models/user.py
+    - Add User class with email (str) and password_hash (str) fields
+    - Use bcrypt for password hashing
+    - Include __repr__ for debugging
+
+    FOLLOW TDD:
+    1. Write failing test in tests/models/test_user.py
+    2. Run: pytest tests/models/test_user.py -v (verify FAIL)
+    3. Write minimal implementation
+    4. Run: pytest tests/models/test_user.py -v (verify PASS)
+    5. Run: pytest tests/ -q (verify no regressions)
+    6. Commit: git add -A && git commit -m "feat: add User model with password hashing"
+
+    PROJECT CONTEXT:
+    - Python 3.11, Flask app in src/app.py
+    - Existing models in src/models/
+    - Tests use pytest, run from project root
+    - bcrypt already in requirements.txt
+    """,
+    toolsets=['terminal', 'file']
+)
+```
+
+#### Step 2: Dispatch Spec Compliance Reviewer
+
+After the implementer completes, verify against the original spec:
+
+```python
+delegate_task(
+    goal="Review if implementation matches the spec from the plan",
+    context="""
+    ORIGINAL TASK SPEC:
+    - Create src/models/user.py with User class
+    - Fields: email (str), password_hash (str)
+    - Use bcrypt for password hashing
+    - Include __repr__
+
+    CHECK:
+    - [ ] All requirements from spec implemented?
+    - [ ] File paths match spec?
+    - [ ] Function signatures match spec?
+    - [ ] Behavior matches expected?
+    - [ ] Nothing extra added (no scope creep)?
+
+    OUTPUT: PASS or list of specific spec gaps to fix.
+    """,
+    toolsets=['file']
+)
+```
+
+**If spec issues found:** Fix gaps, then re-run spec review. Continue only when spec-compliant.
+
+#### Step 3: Dispatch Code Quality Reviewer
+
+After spec compliance passes:
+
+```python
+delegate_task(
+    goal="Review code quality for Task 1 implementation",
+    context="""
+    FILES TO REVIEW:
+    - src/models/user.py
+    - tests/models/test_user.py
+
+    CHECK:
+    - [ ] Follows project conventions and style?
+    - [ ] Proper error handling?
+    - [ ] Clear variable/function names?
+    - [ ] Adequate test coverage?
+    - [ ] No obvious bugs or missed edge cases?
+    - [ ] No security issues?
+
+    OUTPUT FORMAT:
+    - Critical Issues: [must fix before proceeding]
+    - Important Issues: [should fix]
+    - Minor Issues: [optional]
+    - Verdict: APPROVED or REQUEST_CHANGES
+    """,
+    toolsets=['file']
+)
+```
+
+**If quality issues found:** Fix issues, re-review. Continue only when approved.
+
+#### Step 4: Mark Complete
+
+```python
+todo([{"id": "task-1", "content": "Create User model with email field", "status": "completed"}], merge=True)
+```
+
+### 3. Final Review
+
+After ALL tasks are complete, dispatch a final integration reviewer:
+
+```python
+delegate_task(
+    goal="Review the entire implementation for consistency and integration issues",
+    context="""
+    All tasks from the plan are complete. Review the full implementation:
+    - Do all components work together?
+    - Any inconsistencies between tasks?
+    - All tests passing?
+    - Ready for merge?
+    """,
+    toolsets=['terminal', 'file']
+)
+```
+
+### 4. Verify and Commit
+
+```bash
+# Run full test suite
+pytest tests/ -q
+
+# Review all changes
+git diff --stat
+
+# Final commit if needed
+git add -A && git commit -m "feat: complete [feature name] implementation"
+```
+
+## Task Granularity
+
+**Each task = 2-5 minutes of focused work.**
+
+**Too big:**
+- "Implement user authentication system"
+
+**Right size:**
+- "Create User model with email and password fields"
+- "Add password hashing function"
+- "Create login endpoint"
+- "Add JWT token generation"
+- "Create registration endpoint"
+
+## Red Flags — Never Do These
+
+- Start implementation without a plan
+- Skip reviews (spec compliance OR code quality)
+- Proceed with unfixed critical/important issues
+- Dispatch multiple implementation subagents for tasks that touch the same files
+- Make subagent read the plan file (provide full text in context instead)
+- Skip scene-setting context (subagent needs to understand where the task fits)
+- Ignore subagent questions (answer before letting them proceed)
+- Accept "close enough" on spec compliance
+- Skip review loops (reviewer found issues → implementer fixes → review again)
+- Let implementer self-review replace actual review (both are needed)
+- **Start code quality review before spec compliance is PASS** (wrong order)
+- Move to next task while either review has open issues
+
+## Handling Issues
+
+### If Subagent Asks Questions
+
+- Answer clearly and completely
+- Provide additional context if needed
+- Don't rush them into implementation
+
+### If Reviewer Finds Issues
+
+- Implementer subagent (or a new one) fixes them
+- Reviewer reviews again
+- Repeat until approved
+- Don't skip the re-review
+
+### If Subagent Fails a Task
+
+- Dispatch a new fix subagent with specific instructions about what went wrong
+- Don't try to fix manually in the controller session (context pollution)
+
+## Efficiency Notes
+
+**Why fresh subagent per task:**
+- Prevents context pollution from accumulated state
+- Each subagent gets clean, focused context
+- No confusion from prior tasks' code or reasoning
+
+**Why two-stage review:**
+- Spec review catches under/over-building early
+- Quality review ensures the implementation is well-built
+- Catches issues before they compound across tasks
+
+**Cost trade-off:**
+- More subagent invocations (implementer + 2 reviewers per task)
+- But catches issues early (cheaper than debugging compounded problems later)
+
+## Integration with Other Skills
+
+### With writing-plans
+
+This skill EXECUTES plans created by the writing-plans skill:
+1. User requirements → writing-plans → implementation plan
+2. Implementation plan → subagent-driven-development → working code
+
+### With test-driven-development
+
+Implementer subagents should follow TDD:
+1. Write failing test first
+2. Implement minimal code
+3. Verify test passes
+4. Commit
+
+Include TDD instructions in every implementer context.
+
+### With requesting-code-review
+
+The two-stage review process IS the code review. For final integration review, use the requesting-code-review skill's review dimensions.
+
+### With systematic-debugging
+
+If a subagent encounters bugs during implementation:
+1. Follow systematic-debugging process
+2. Find root cause before fixing
+3. Write regression test
+4. Resume implementation
+
+## Example Workflow
+
+```
+[Read plan: docs/plans/auth-feature.md]
+[Create todo list with 5 tasks]
+
+--- Task 1: Create User model ---
+[Dispatch implementer subagent]
+  Implementer: "Should email be unique?"
+  You: "Yes, email must be unique"
+  Implementer: Implemented, 3/3 tests passing, committed.
+
+[Dispatch spec reviewer]
+  Spec reviewer: ✅ PASS — all requirements met
+
+[Dispatch quality reviewer]
+  Quality reviewer: ✅ APPROVED — clean code, good tests
+
+[Mark Task 1 complete]
+
+--- Task 2: Password hashing ---
+[Dispatch implementer subagent]
+  Implementer: No questions, implemented, 5/5 tests passing.
+
+[Dispatch spec reviewer]
+  Spec reviewer: ❌ Missing: password strength validation (spec says "min 8 chars")
+
+[Implementer fixes]
+  Implementer: Added validation, 7/7 tests passing.
+
+[Dispatch spec reviewer again]
+  Spec reviewer: ✅ PASS
+
+[Dispatch quality reviewer]
+  Quality reviewer: Important: Magic number 8, extract to constant
+  Implementer: Extracted MIN_PASSWORD_LENGTH constant
+  Quality reviewer: ✅ APPROVED
+
+[Mark Task 2 complete]
+
+... (continue for all tasks)
+
+[After all tasks: dispatch final integration reviewer]
+[Run full test suite: all passing]
+[Done!]
+```
+
+## Remember
+
+```
+Fresh subagent per task
+Two-stage review every time
+Spec compliance FIRST
+Code quality SECOND
+Never skip reviews
+Catch issues early
+```
+
+**Quality is not an accident. It's the result of systematic process.**

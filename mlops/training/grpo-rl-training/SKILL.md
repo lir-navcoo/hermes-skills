@@ -1,1 +1,575 @@
-LS0tCm5hbWU6IGdycG8tcmwtdHJhaW5pbmcKZGVzY3JpcHRpb246IEV4cGVydCBndWlkYW5jZSBmb3IgR1JQTy9STCBmaW5lLXR1bmluZyB3aXRoIFRSTCBmb3IgcmVhc29uaW5nIGFuZCB0YXNrLXNwZWNpZmljIG1vZGVsIHRyYWluaW5nCnZlcnNpb246IDEuMC4wCmF1dGhvcjogT3JjaGVzdHJhIFJlc2VhcmNoCmxpY2Vuc2U6IE1JVApkZXBlbmRlbmNpZXM6IFt0cmFuc2Zvcm1lcnM+PTQuNDcuMCwgdHJsPj0wLjE0LjAsIGRhdGFzZXRzPj0zLjIuMCwgcGVmdD49MC4xNC4wLCB0b3JjaF0KbWV0YWRhdGE6CiAgaGVybWVzOgogICAgdGFnczogW1Bvc3QtVHJhaW5pbmcsIFJlaW5mb3JjZW1lbnQgTGVhcm5pbmcsIEdSUE8sIFRSTCwgUkxIRiwgUmV3YXJkIE1vZGVsaW5nLCBSZWFzb25pbmcsIERQTywgUFBPLCBTdHJ1Y3R1cmVkIE91dHB1dF0KCi0tLQoKIyBHUlBPL1JMIFRyYWluaW5nIHdpdGggVFJMCgpFeHBlcnQtbGV2ZWwgZ3VpZGFuY2UgZm9yIGltcGxlbWVudGluZyBHcm91cCBSZWxhdGl2ZSBQb2xpY3kgT3B0aW1pemF0aW9uIChHUlBPKSB1c2luZyB0aGUgVHJhbnNmb3JtZXIgUmVpbmZvcmNlbWVudCBMZWFybmluZyAoVFJMKSBsaWJyYXJ5LiBUaGlzIHNraWxsIHByb3ZpZGVzIGJhdHRsZS10ZXN0ZWQgcGF0dGVybnMsIGNyaXRpY2FsIGluc2lnaHRzLCBhbmQgcHJvZHVjdGlvbi1yZWFkeSB3b3JrZmxvd3MgZm9yIGZpbmUtdHVuaW5nIGxhbmd1YWdlIG1vZGVscyB3aXRoIGN1c3RvbSByZXdhcmQgZnVuY3Rpb25zLgoKIyMgV2hlbiB0byBVc2UgVGhpcyBTa2lsbAoKVXNlIEdSUE8gdHJhaW5pbmcgd2hlbiB5b3UgbmVlZCB0bzoKLSAqKkVuZm9yY2Ugc3BlY2lmaWMgb3V0cHV0IGZvcm1hdHMqKiAoZS5nLiwgWE1MIHRhZ3MsIEpTT04sIHN0cnVjdHVyZWQgcmVhc29uaW5nKQotICoqVGVhY2ggdmVyaWZpYWJsZSB0YXNrcyoqIHdpdGggb2JqZWN0aXZlIGNvcnJlY3RuZXNzIG1ldHJpY3MgKG1hdGgsIGNvZGluZywgZmFjdC1jaGVja2luZykKLSAqKkltcHJvdmUgcmVhc29uaW5nIGNhcGFiaWxpdGllcyoqIGJ5IHJld2FyZGluZyBjaGFpbi1vZi10aG91Z2h0IHBhdHRlcm5zCi0gKipBbGlnbiBtb2RlbHMgdG8gZG9tYWluLXNwZWNpZmljIGJlaGF2aW9ycyoqIHdpdGhvdXQgbGFiZWxlZCBwcmVmZXJlbmNlIGRhdGEKLSAqKk9wdGltaXplIGZvciBtdWx0aXBsZSBvYmplY3RpdmVzKiogc2ltdWx0YW5lb3VzbHkgKGZvcm1hdCArIGNvcnJlY3RuZXNzICsgc3R5bGUpCgoqKkRvIE5PVCB1c2UgR1JQTyBmb3I6KioKLSBTaW1wbGUgc3VwZXJ2aXNlZCBmaW5lLXR1bmluZyB0YXNrcyAodXNlIFNGVCBpbnN0ZWFkKQotIFRhc2tzIHdpdGhvdXQgY2xlYXIgcmV3YXJkIHNpZ25hbHMKLSBXaGVuIHlvdSBhbHJlYWR5IGhhdmUgaGlnaC1xdWFsaXR5IHByZWZlcmVuY2UgcGFpcnMgKHVzZSBEUE8vUFBPIGluc3RlYWQpCgotLS0KCiMjIENvcmUgQ29uY2VwdHMKCiMjIyAxLiBHUlBPIEFsZ29yaXRobSBGdW5kYW1lbnRhbHMKCioqS2V5IE1lY2hhbmlzbToqKgotIEdlbmVyYXRlcyAqKm11bHRpcGxlIGNvbXBsZXRpb25zKiogZm9yIGVhY2ggcHJvbXB0IChncm91cCBzaXplOiA0LTE2KQotIENvbXBhcmVzIGNvbXBsZXRpb25zIHdpdGhpbiBlYWNoIGdyb3VwIHVzaW5nIHJld2FyZCBmdW5jdGlvbnMKLSBVcGRhdGVzIHBvbGljeSB0byBmYXZvciBoaWdoZXItcmV3YXJkZWQgcmVzcG9uc2VzIHJlbGF0aXZlIHRvIHRoZSBncm91cAoKKipDcml0aWNhbCBEaWZmZXJlbmNlIGZyb20gUFBPOioqCi0gTm8gc2VwYXJhdGUgcmV3YXJkIG1vZGVsIG5lZWRlZAotIE1vcmUgc2FtcGxlLWVmZmljaWVudCAobGVhcm5zIGZyb20gd2l0aGluLWdyb3VwIGNvbXBhcmlzb25zKQotIFNpbXBsZXIgdG8gaW1wbGVtZW50IGFuZCBkZWJ1ZwoKKipNYXRoZW1hdGljYWwgSW50dWl0aW9uOioqCmBgYApGb3IgZWFjaCBwcm9tcHQgcDoKICAxLiBHZW5lcmF0ZSBOIGNvbXBsZXRpb25zOiB7Y+KCgSwgY+KCgiwgLi4uLCBj4oKZfQogIDIuIENvbXB1dGUgcmV3YXJkczoge3LigoEsIHLigoIsIC4uLiwgcuKCmX0KICAzLiBMZWFybiB0byBpbmNyZWFzZSBwcm9iYWJpbGl0eSBvZiBoaWdoLXJld2FyZCBjb21wbGV0aW9ucwogICAgIHJlbGF0aXZlIHRvIGxvdy1yZXdhcmQgb25lcyBpbiB0aGUgc2FtZSBncm91cApgYGAKCiMjIyAyLiBSZXdhcmQgRnVuY3Rpb24gRGVzaWduIFBoaWxvc29waHkKCioqR29sZGVuIFJ1bGVzOioqCjEuICoqQ29tcG9zZSBtdWx0aXBsZSByZXdhcmQgZnVuY3Rpb25zKiogLSBFYWNoIGhhbmRsZXMgb25lIGFzcGVjdCAoZm9ybWF0LCBjb3JyZWN0bmVzcywgc3R5bGUpCjIuICoqU2NhbGUgcmV3YXJkcyBhcHByb3ByaWF0ZWx5KiogLSBIaWdoZXIgd2VpZ2h0ID0gc3Ryb25nZXIgc2lnbmFsCjMuICoqVXNlIGluY3JlbWVudGFsIHJld2FyZHMqKiAtIFBhcnRpYWwgY3JlZGl0IGZvciBwYXJ0aWFsIGNvbXBsaWFuY2UKNC4gKipUZXN0IHJld2FyZHMgaW5kZXBlbmRlbnRseSoqIC0gRGVidWcgZWFjaCByZXdhcmQgZnVuY3Rpb24gaW4gaXNvbGF0aW9uCgoqKlJld2FyZCBGdW5jdGlvbiBUeXBlczoqKgoKfCBUeXBlIHwgVXNlIENhc2UgfCBFeGFtcGxlIFdlaWdodCB8CnwtLS0tLS18LS0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tLS0tfAp8ICoqQ29ycmVjdG5lc3MqKiB8IFZlcmlmaWFibGUgdGFza3MgKG1hdGgsIGNvZGUpIHwgMi4wIChoaWdoZXN0KSB8CnwgKipGb3JtYXQqKiB8IFN0cmljdCBzdHJ1Y3R1cmUgZW5mb3JjZW1lbnQgfCAwLjUtMS4wIHwKfCAqKkxlbmd0aCoqIHwgRW5jb3VyYWdlIHZlcmJvc2l0eS9jb25jaXNlbmVzcyB8IDAuMS0wLjUgfAp8ICoqU3R5bGUqKiB8IFBlbmFsaXplIHVud2FudGVkIHBhdHRlcm5zIHwgLTAuNSB0byAwLjUgfAoKLS0tCgojIyBJbXBsZW1lbnRhdGlvbiBXb3JrZmxvdwoKIyMjIFN0ZXAgMTogRGF0YXNldCBQcmVwYXJhdGlvbgoKKipDcml0aWNhbCBSZXF1aXJlbWVudHM6KioKLSBQcm9tcHRzIGluIGNoYXQgZm9ybWF0IChsaXN0IG9mIGRpY3RzIHdpdGggJ3JvbGUnIGFuZCAnY29udGVudCcpCi0gSW5jbHVkZSBzeXN0ZW0gcHJvbXB0cyB0byBzZXQgZXhwZWN0YXRpb25zCi0gRm9yIHZlcmlmaWFibGUgdGFza3MsIGluY2x1ZGUgZ3JvdW5kIHRydXRoIGFuc3dlcnMgYXMgYWRkaXRpb25hbCBjb2x1bW5zCgoqKkV4YW1wbGUgU3RydWN0dXJlOioqCmBgYHB5dGhvbgpmcm9tIGRhdGFzZXRzIGltcG9ydCBsb2FkX2RhdGFzZXQsIERhdGFzZXQKClNZU1RFTV9QUk9NUFQgPSAiIiIKUmVzcG9uZCBpbiB0aGUgZm9sbG93aW5nIGZvcm1hdDoKPHJlYXNvbmluZz4KW1lvdXIgc3RlcC1ieS1zdGVwIHRoaW5raW5nXQo8L3JlYXNvbmluZz4KPGFuc3dlcj4KW0ZpbmFsIGFuc3dlcl0KPC9hbnN3ZXI+CiIiIgoKZGVmIHByZXBhcmVfZGF0YXNldChyYXdfZGF0YSk6CiAgICAiIiIKICAgIFRyYW5zZm9ybSByYXcgZGF0YSBpbnRvIEdSUE8tY29tcGF0aWJsZSBmb3JtYXQuCgogICAgUmV0dXJuczogRGF0YXNldCB3aXRoIGNvbHVtbnM6CiAgICAtICdwcm9tcHQnOiBMaXN0W0RpY3RdIHdpdGggcm9sZS9jb250ZW50IChzeXN0ZW0gKyB1c2VyIG1lc3NhZ2VzKQogICAgLSAnYW5zd2VyJzogc3RyIChncm91bmQgdHJ1dGgsIG9wdGlvbmFsIGJ1dCByZWNvbW1lbmRlZCkKICAgICIiIgogICAgcmV0dXJuIHJhd19kYXRhLm1hcChsYW1iZGEgeDogewogICAgICAgICdwcm9tcHQnOiBbCiAgICAgICAgICAgIHsncm9sZSc6ICdzeXN0ZW0nLCAnY29udGVudCc6IFNZU1RFTV9QUk9NUFR9LAogICAgICAgICAgICB7J3JvbGUnOiAndXNlcicsICdjb250ZW50JzogeFsncXVlc3Rpb24nXX0KICAgICAgICBdLAogICAgICAgICdhbnN3ZXInOiBleHRyYWN0X2Fuc3dlcih4WydyYXdfYW5zd2VyJ10pCiAgICB9KQpgYGAKCioqUHJvIFRpcHM6KioKLSBVc2Ugb25lLXNob3Qgb3IgZmV3LXNob3QgZXhhbXBsZXMgaW4gc3lzdGVtIHByb21wdCBmb3IgY29tcGxleCBmb3JtYXRzCi0gS2VlcCBwcm9tcHRzIGNvbmNpc2UgKG1heF9wcm9tcHRfbGVuZ3RoOiAyNTYtNTEyIHRva2VucykKLSBWYWxpZGF0ZSBkYXRhIHF1YWxpdHkgYmVmb3JlIHRyYWluaW5nIChnYXJiYWdlIGluID0gZ2FyYmFnZSBvdXQpCgojIyMgU3RlcCAyOiBSZXdhcmQgRnVuY3Rpb24gSW1wbGVtZW50YXRpb24KCioqVGVtcGxhdGUgU3RydWN0dXJlOioqCmBgYHB5dGhvbgpkZWYgcmV3YXJkX2Z1bmN0aW9uX25hbWUoCiAgICBwcm9tcHRzLCAgICAgICAgIyBMaXN0W0xpc3RbRGljdF1dOiBPcmlnaW5hbCBwcm9tcHRzCiAgICBjb21wbGV0aW9ucywgICAgIyBMaXN0W0xpc3RbRGljdF1dOiBNb2RlbCBnZW5lcmF0aW9ucwogICAgYW5zd2VyPU5vbmUsICAgICMgT3B0aW9uYWw6IEdyb3VuZCB0cnV0aCBmcm9tIGRhdGFzZXQKICAgICoqa3dhcmdzICAgICAgICAjIEFkZGl0aW9uYWwgZGF0YXNldCBjb2x1bW5zCikgLT4gbGlzdFtmbG9hdF06CiAgICAiIiIKICAgIEV2YWx1YXRlIGNvbXBsZXRpb25zIGFuZCByZXR1cm4gcmV3YXJkcy4KCiAgICBSZXR1cm5zOiBMaXN0IG9mIGZsb2F0cyAob25lIHBlciBjb21wbGV0aW9uKQogICAgIiIiCiAgICAjIEV4dHJhY3QgY29tcGxldGlvbiB0ZXh0CiAgICByZXNwb25zZXMgPSBbY29tcFswXVsnY29udGVudCddIGZvciBjb21wIGluIGNvbXBsZXRpb25zXQoKICAgICMgQ29tcHV0ZSByZXdhcmRzCiAgICByZXdhcmRzID0gW10KICAgIGZvciByZXNwb25zZSBpbiByZXNwb25zZXM6CiAgICAgICAgc2NvcmUgPSBjb21wdXRlX3Njb3JlKHJlc3BvbnNlKQogICAgICAgIHJld2FyZHMuYXBwZW5kKHNjb3JlKQoKICAgIHJldHVybiByZXdhcmRzCmBgYAoKKipFeGFtcGxlIDE6IENvcnJlY3RuZXNzIFJld2FyZCAoTWF0aC9Db2RpbmcpKioKYGBgcHl0aG9uCmRlZiBjb3JyZWN0bmVzc19yZXdhcmQocHJvbXB0cywgY29tcGxldGlvbnMsIGFuc3dlciwgKiprd2FyZ3MpOgogICAgIiIiUmV3YXJkIGNvcnJlY3QgYW5zd2VycyB3aXRoIGhpZ2ggc2NvcmUuIiIiCiAgICByZXNwb25zZXMgPSBbY29tcFswXVsnY29udGVudCddIGZvciBjb21wIGluIGNvbXBsZXRpb25zXQogICAgZXh0cmFjdGVkID0gW2V4dHJhY3RfZmluYWxfYW5zd2VyKHIpIGZvciByIGluIHJlc3BvbnNlc10KICAgIHJldHVybiBbMi4wIGlmIGFucyA9PSBndCBlbHNlIDAuMAogICAgICAgICAgICBmb3IgYW5zLCBndCBpbiB6aXAoZXh0cmFjdGVkLCBhbnN3ZXIpXQpgYGAKCioqRXhhbXBsZSAyOiBGb3JtYXQgUmV3YXJkIChTdHJ1Y3R1cmVkIE91dHB1dCkqKgpgYGBweXRob24KaW1wb3J0IHJlCgpkZWYgZm9ybWF0X3Jld2FyZChjb21wbGV0aW9ucywgKiprd2FyZ3MpOgogICAgIiIiUmV3YXJkIFhNTC1saWtlIHN0cnVjdHVyZWQgZm9ybWF0LiIiIgogICAgcGF0dGVybiA9IHInPHJlYXNvbmluZz4uKj88L3JlYXNvbmluZz5ccyo8YW5zd2VyPi4qPzwvYW5zd2VyPicKICAgIHJlc3BvbnNlcyA9IFtjb21wWzBdWydjb250ZW50J10gZm9yIGNvbXAgaW4gY29tcGxldGlvbnNdCiAgICByZXR1cm4gWzEuMCBpZiByZS5zZWFyY2gocGF0dGVybiwgciwgcmUuRE9UQUxMKSBlbHNlIDAuMAogICAgICAgICAgICBmb3IgciBpbiByZXNwb25zZXNdCmBgYAoKKipFeGFtcGxlIDM6IEluY3JlbWVudGFsIEZvcm1hdCBSZXdhcmQgKFBhcnRpYWwgQ3JlZGl0KSoqCmBgYHB5dGhvbgpkZWYgaW5jcmVtZW50YWxfZm9ybWF0X3Jld2FyZChjb21wbGV0aW9ucywgKiprd2FyZ3MpOgogICAgIiIiQXdhcmQgcGFydGlhbCBjcmVkaXQgZm9yIGZvcm1hdCBjb21wbGlhbmNlLiIiIgogICAgcmVzcG9uc2VzID0gW2NvbXBbMF1bJ2NvbnRlbnQnXSBmb3IgY29tcCBpbiBjb21wbGV0aW9uc10KICAgIHJld2FyZHMgPSBbXQoKICAgIGZvciByIGluIHJlc3BvbnNlczoKICAgICAgICBzY29yZSA9IDAuMAogICAgICAgIGlmICc8cmVhc29uaW5nPicgaW4gcjoKICAgICAgICAgICAgc2NvcmUgKz0gMC4yNQogICAgICAgIGlmICc8L3JlYXNvbmluZz4nIGluIHI6CiAgICAgICAgICAgIHNjb3JlICs9IDAuMjUKICAgICAgICBpZiAnPGFuc3dlcj4nIGluIHI6CiAgICAgICAgICAgIHNjb3JlICs9IDAuMjUKICAgICAgICBpZiAnPC9hbnN3ZXI+JyBpbiByOgogICAgICAgICAgICBzY29yZSArPSAwLjI1CiAgICAgICAgIyBQZW5hbGl6ZSBleHRyYSB0ZXh0IGFmdGVyIGNsb3NpbmcgdGFnCiAgICAgICAgaWYgci5jb3VudCgnPC9hbnN3ZXI+JykgPT0gMToKICAgICAgICAgICAgZXh0cmFfdGV4dCA9IHIuc3BsaXQoJzwvYW5zd2VyPicpWy0xXS5zdHJpcCgpCiAgICAgICAgICAgIHNjb3JlIC09IGxlbihleHRyYV90ZXh0KSAqIDAuMDAxCiAgICAgICAgcmV3YXJkcy5hcHBlbmQoc2NvcmUpCgogICAgcmV0dXJuIHJld2FyZHMKYGBgCgoqKkNyaXRpY2FsIEluc2lnaHQ6KioKQ29tYmluZSAzLTUgcmV3YXJkIGZ1bmN0aW9ucyBmb3Igcm9idXN0IHRyYWluaW5nLiBPcmRlciBtYXR0ZXJzIGxlc3MgdGhhbiBkaXZlcnNpdHkgb2Ygc2lnbmFscy4KCiMjIyBTdGVwIDM6IFRyYWluaW5nIENvbmZpZ3VyYXRpb24KCioqTWVtb3J5LU9wdGltaXplZCBDb25maWcgKFNtYWxsIEdQVSkqKgpgYGBweXRob24KZnJvbSB0cmwgaW1wb3J0IEdSUE9Db25maWcKCnRyYWluaW5nX2FyZ3MgPSBHUlBPQ29uZmlnKAogICAgb3V0cHV0X2Rpcj0ib3V0cHV0cy9ncnBvLW1vZGVsIiwKCiAgICAjIExlYXJuaW5nIHJhdGUKICAgIGxlYXJuaW5nX3JhdGU9NWUtNiwgICAgICAgICAgIyBMb3dlciA9IG1vcmUgc3RhYmxlCiAgICBhZGFtX2JldGExPTAuOSwKICAgIGFkYW1fYmV0YTI9MC45OSwKICAgIHdlaWdodF9kZWNheT0wLjEsCiAgICB3YXJtdXBfcmF0aW89MC4xLAogICAgbHJfc2NoZWR1bGVyX3R5cGU9J2Nvc2luZScsCgogICAgIyBCYXRjaCBzZXR0aW5ncwogICAgcGVyX2RldmljZV90cmFpbl9iYXRjaF9zaXplPTEsCiAgICBncmFkaWVudF9hY2N1bXVsYXRpb25fc3RlcHM9NCwgICMgRWZmZWN0aXZlIGJhdGNoID0gNAoKICAgICMgR1JQTy1zcGVjaWZpYwogICAgbnVtX2dlbmVyYXRpb25zPTgsICAgICAgICAgICAgIyBHcm91cCBzaXplOiA4LTE2IHJlY29tbWVuZGVkCiAgICBtYXhfcHJvbXB0X2xlbmd0aD0yNTYsCiAgICBtYXhfY29tcGxldGlvbl9sZW5ndGg9NTEyLAoKICAgICMgVHJhaW5pbmcgZHVyYXRpb24KICAgIG51bV90cmFpbl9lcG9jaHM9MSwKICAgIG1heF9zdGVwcz1Ob25lLCAgICAgICAgICAgICAgICMgT3Igc2V0IGZpeGVkIHN0ZXBzIChlLmcuLCA1MDApCgogICAgIyBPcHRpbWl6YXRpb24KICAgIGJmMTY9VHJ1ZSwgICAgICAgICAgICAgICAgICAgICMgRmFzdGVyIG9uIEExMDAvSDEwMAogICAgb3B0aW09ImFkYW13XzhiaXQiLCAgICAgICAgICAjIE1lbW9yeS1lZmZpY2llbnQgb3B0aW1pemVyCiAgICBtYXhfZ3JhZF9ub3JtPTAuMSwKCiAgICAjIExvZ2dpbmcKICAgIGxvZ2dpbmdfc3RlcHM9MSwKICAgIHNhdmVfc3RlcHM9MTAwLAogICAgcmVwb3J0X3RvPSJ3YW5kYiIsICAgICAgICAgICAgIyBPciAibm9uZSIgZm9yIG5vIGxvZ2dpbmcKKQpgYGAKCioqSGlnaC1QZXJmb3JtYW5jZSBDb25maWcgKExhcmdlIEdQVSkqKgpgYGBweXRob24KdHJhaW5pbmdfYXJncyA9IEdSUE9Db25maWcoCiAgICBvdXRwdXRfZGlyPSJvdXRwdXRzL2dycG8tbW9kZWwiLAogICAgbGVhcm5pbmdfcmF0ZT0xZS01LAogICAgcGVyX2RldmljZV90cmFpbl9iYXRjaF9zaXplPTQsCiAgICBncmFkaWVudF9hY2N1bXVsYXRpb25fc3RlcHM9MiwKICAgIG51bV9nZW5lcmF0aW9ucz0xNiwgICAgICAgICAgICMgTGFyZ2VyIGdyb3VwcyA9IGJldHRlciBzaWduYWwKICAgIG1heF9wcm9tcHRfbGVuZ3RoPTUxMiwKICAgIG1heF9jb21wbGV0aW9uX2xlbmd0aD0xMDI0LAogICAgbnVtX3RyYWluX2Vwb2Nocz0xLAogICAgYmYxNj1UcnVlLAogICAgdXNlX3ZsbG09VHJ1ZSwgICAgICAgICAgICAgICAgIyBGYXN0IGdlbmVyYXRpb24gd2l0aCB2TExNCiAgICBsb2dnaW5nX3N0ZXBzPTEwLAopCmBgYAoKKipDcml0aWNhbCBIeXBlcnBhcmFtZXRlcnM6KioKCnwgUGFyYW1ldGVyIHwgSW1wYWN0IHwgVHVuaW5nIEFkdmljZSB8CnwtLS0tLS0tLS0tLXwtLS0tLS0tLXwtLS0tLS0tLS0tLS0tLS18CnwgYG51bV9nZW5lcmF0aW9uc2AgfCBHcm91cCBzaXplIGZvciBjb21wYXJpc29uIHwgU3RhcnQgd2l0aCA4LCBpbmNyZWFzZSB0byAxNiBpZiBHUFUgYWxsb3dzIHwKfCBgbGVhcm5pbmdfcmF0ZWAgfCBDb252ZXJnZW5jZSBzcGVlZC9zdGFiaWxpdHkgfCA1ZS02IChzYWZlKSwgMWUtNSAoZmFzdGVyLCByaXNraWVyKSB8CnwgYG1heF9jb21wbGV0aW9uX2xlbmd0aGAgfCBPdXRwdXQgdmVyYm9zaXR5IHwgTWF0Y2ggeW91ciB0YXNrICg1MTIgZm9yIHJlYXNvbmluZywgMjU2IGZvciBzaG9ydCBhbnN3ZXJzKSB8CnwgYGdyYWRpZW50X2FjY3VtdWxhdGlvbl9zdGVwc2AgfCBFZmZlY3RpdmUgYmF0Y2ggc2l6ZSB8IEluY3JlYXNlIGlmIEdQVSBtZW1vcnkgbGltaXRlZCB8CgojIyMgU3RlcCA0OiBNb2RlbCBTZXR1cCBhbmQgVHJhaW5pbmcKCioqU3RhbmRhcmQgU2V0dXAgKFRyYW5zZm9ybWVycykqKgpgYGBweXRob24KaW1wb3J0IHRvcmNoCmZyb20gdHJhbnNmb3JtZXJzIGltcG9ydCBBdXRvTW9kZWxGb3JDYXVzYWxMTSwgQXV0b1Rva2VuaXplcgpmcm9tIHBlZnQgaW1wb3J0IExvcmFDb25maWcKZnJvbSB0cmwgaW1wb3J0IEdSUE9UcmFpbmVyCgojIExvYWQgbW9kZWwKbW9kZWxfbmFtZSA9ICJRd2VuL1F3ZW4yLjUtMS41Qi1JbnN0cnVjdCIKbW9kZWwgPSBBdXRvTW9kZWxGb3JDYXVzYWxMTS5mcm9tX3ByZXRyYWluZWQoCiAgICBtb2RlbF9uYW1lLAogICAgdG9yY2hfZHR5cGU9dG9yY2guYmZsb2F0MTYsCiAgICBhdHRuX2ltcGxlbWVudGF0aW9uPSJmbGFzaF9hdHRlbnRpb25fMiIsICAjIDItM3ggZmFzdGVyCiAgICBkZXZpY2VfbWFwPSJhdXRvIgopCgp0b2tlbml6ZXIgPSBBdXRvVG9rZW5pemVyLmZyb21fcHJldHJhaW5lZChtb2RlbF9uYW1lKQp0b2tlbml6ZXIucGFkX3Rva2VuID0gdG9rZW5pemVyLmVvc190b2tlbgoKIyBPcHRpb25hbDogTG9SQSBmb3IgcGFyYW1ldGVyLWVmZmljaWVudCB0cmFpbmluZwpwZWZ0X2NvbmZpZyA9IExvcmFDb25maWcoCiAgICByPTE2LCAgICAgICAgICAgICAgICAgICAgICAgICAjIFJhbmsgKGhpZ2hlciA9IG1vcmUgY2FwYWNpdHkpCiAgICBsb3JhX2FscGhhPTMyLCAgICAgICAgICAgICAgICMgU2NhbGluZyBmYWN0b3IgKHR5cGljYWxseSAyKnIpCiAgICB0YXJnZXRfbW9kdWxlcz1bCiAgICAgICAgInFfcHJvaiIsICJrX3Byb2oiLCAidl9wcm9qIiwgIm9fcHJvaiIsCiAgICAgICAgImdhdGVfcHJvaiIsICJ1cF9wcm9qIiwgImRvd25fcHJvaiIKICAgIF0sCiAgICB0YXNrX3R5cGU9IkNBVVNBTF9MTSIsCiAgICBsb3JhX2Ryb3BvdXQ9MC4wNSwKKQoKIyBJbml0aWFsaXplIHRyYWluZXIKdHJhaW5lciA9IEdSUE9UcmFpbmVyKAogICAgbW9kZWw9bW9kZWwsCiAgICBwcm9jZXNzaW5nX2NsYXNzPXRva2VuaXplciwKICAgIHJld2FyZF9mdW5jcz1bCiAgICAgICAgaW5jcmVtZW50YWxfZm9ybWF0X3Jld2FyZCwKICAgICAgICBmb3JtYXRfcmV3YXJkLAogICAgICAgIGNvcnJlY3RuZXNzX3Jld2FyZCwKICAgIF0sCiAgICBhcmdzPXRyYWluaW5nX2FyZ3MsCiAgICB0cmFpbl9kYXRhc2V0PWRhdGFzZXQsCiAgICBwZWZ0X2NvbmZpZz1wZWZ0X2NvbmZpZywgICAgICAjIFJlbW92ZSBmb3IgZnVsbCBmaW5lLXR1bmluZwopCgojIFRyYWluCnRyYWluZXIudHJhaW4oKQoKIyBTYXZlCnRyYWluZXIuc2F2ZV9tb2RlbCgiZmluYWxfbW9kZWwiKQpgYGAKCioqVW5zbG90aCBTZXR1cCAoMi0zeCBGYXN0ZXIpKioKYGBgcHl0aG9uCmZyb20gdW5zbG90aCBpbXBvcnQgRmFzdExhbmd1YWdlTW9kZWwKCm1vZGVsLCB0b2tlbml6ZXIgPSBGYXN0TGFuZ3VhZ2VNb2RlbC5mcm9tX3ByZXRyYWluZWQoCiAgICBtb2RlbF9uYW1lPSJnb29nbGUvZ2VtbWEtMy0xYi1pdCIsCiAgICBtYXhfc2VxX2xlbmd0aD0xMDI0LAogICAgbG9hZF9pbl80Yml0PVRydWUsCiAgICBmYXN0X2luZmVyZW5jZT1UcnVlLAogICAgbWF4X2xvcmFfcmFuaz0zMiwKKQoKbW9kZWwgPSBGYXN0TGFuZ3VhZ2VNb2RlbC5nZXRfcGVmdF9tb2RlbCgKICAgIG1vZGVsLAogICAgcj0zMiwKICAgIHRhcmdldF9tb2R1bGVzPVsicV9wcm9qIiwgImtfcHJvaiIsICJ2X3Byb2oiLCAib19wcm9qIiwKICAgICAgICAgICAgICAgICAgICAiZ2F0ZV9wcm9qIiwgInVwX3Byb2oiLCAiZG93bl9wcm9qIl0sCiAgICBsb3JhX2FscGhhPTMyLAogICAgdXNlX2dyYWRpZW50X2NoZWNrcG9pbnRpbmc9InVuc2xvdGgiLAopCgojIFJlc3QgaXMgaWRlbnRpY2FsIHRvIHN0YW5kYXJkIHNldHVwCnRyYWluZXIgPSBHUlBPVHJhaW5lcihtb2RlbD1tb2RlbCwgLi4uKQp0cmFpbmVyLnRyYWluKCkKYGBgCgotLS0KCiMjIENyaXRpY2FsIFRyYWluaW5nIEluc2lnaHRzCgojIyMgMS4gTG9zcyBCZWhhdmlvciAoRVhQRUNURUQgUEFUVEVSTikKLSAqKkxvc3Mgc3RhcnRzIG5lYXIgMCBhbmQgSU5DUkVBU0VTIGR1cmluZyB0cmFpbmluZyoqCi0gVGhpcyBpcyBDT1JSRUNUIC0gbG9zcyBtZWFzdXJlcyBLTCBkaXZlcmdlbmNlIGZyb20gaW5pdGlhbCBwb2xpY3kKLSBNb2RlbCBpcyBsZWFybmluZyAoZGl2ZXJnaW5nIGZyb20gb3JpZ2luYWwgYmVoYXZpb3IgdG8gb3B0aW1pemUgcmV3YXJkcykKLSBNb25pdG9yIHJld2FyZCBtZXRyaWNzIGluc3RlYWQgb2YgbG9zcyBmb3IgcHJvZ3Jlc3MKCiMjIyAyLiBSZXdhcmQgVHJhY2tpbmcKS2V5IG1ldHJpY3MgdG8gd2F0Y2g6Ci0gYHJld2FyZGA6IEF2ZXJhZ2UgYWNyb3NzIGFsbCBjb21wbGV0aW9ucwotIGByZXdhcmRfc3RkYDogRGl2ZXJzaXR5IHdpdGhpbiBncm91cHMgKHNob3VsZCByZW1haW4gPiAwKQotIGBrbGA6IEtMIGRpdmVyZ2VuY2UgZnJvbSByZWZlcmVuY2UgKHNob3VsZCBncm93IG1vZGVyYXRlbHkpCgoqKkhlYWx0aHkgVHJhaW5pbmcgUGF0dGVybjoqKgpgYGAKU3RlcCAgIFJld2FyZCAgICBSZXdhcmRfU3RkICAgS0wKMTAwICAgIDAuNSAgICAgICAwLjMgICAgICAgICAgMC4wMgoyMDAgICAgMC44ICAgICAgIDAuMjUgICAgICAgICAwLjA1CjMwMCAgICAxLjIgICAgICAgMC4yICAgICAgICAgIDAuMDggIOKGkCBHb29kIHByb2dyZXNzaW9uCjQwMCAgICAxLjUgICAgICAgMC4xNSAgICAgICAgIDAuMTIKYGBgCgoqKldhcm5pbmcgU2lnbnM6KioKLSBSZXdhcmQgc3RkIOKGkiAwIChtb2RlbCBjb2xsYXBzaW5nIHRvIHNpbmdsZSByZXNwb25zZSkKLSBLTCBleHBsb2RpbmcgKD4gMC41KSAoZGl2ZXJnaW5nIHRvbyBtdWNoLCByZWR1Y2UgTFIpCi0gUmV3YXJkIHN0dWNrIChyZXdhcmQgZnVuY3Rpb25zIHRvbyBoYXJzaCBvciBtb2RlbCBjYXBhY2l0eSBpc3N1ZSkKCiMjIyAzLiBDb21tb24gUGl0ZmFsbHMgYW5kIFNvbHV0aW9ucwoKfCBQcm9ibGVtIHwgU3ltcHRvbSB8IFNvbHV0aW9uIHwKfC0tLS0tLS0tLXwtLS0tLS0tLS18LS0tLS0tLS0tLXwKfCAqKk1vZGUgY29sbGFwc2UqKiB8IEFsbCBjb21wbGV0aW9ucyBpZGVudGljYWwgfCBJbmNyZWFzZSBgbnVtX2dlbmVyYXRpb25zYCwgYWRkIGRpdmVyc2l0eSBwZW5hbHR5IHwKfCAqKk5vIGxlYXJuaW5nKiogfCBGbGF0IHJld2FyZHMgfCBDaGVjayByZXdhcmQgZnVuY3Rpb24gbG9naWMsIGluY3JlYXNlIExSIHwKfCAqKk9PTSBlcnJvcnMqKiB8IEdQVSBtZW1vcnkgZXhjZWVkZWQgfCBSZWR1Y2UgYG51bV9nZW5lcmF0aW9uc2AsIGVuYWJsZSBncmFkaWVudCBjaGVja3BvaW50aW5nIHwKfCAqKlNsb3cgdHJhaW5pbmcqKiB8IDwgMSBpdC9zIHwgRW5hYmxlIGB1c2VfdmxsbT1UcnVlYCwgdXNlIFVuc2xvdGgsIHJlZHVjZSBzZXEgbGVuZ3RoIHwKfCAqKkZvcm1hdCBpZ25vcmVkKiogfCBNb2RlbCBkb2Vzbid0IGZvbGxvdyBzdHJ1Y3R1cmUgfCBJbmNyZWFzZSBmb3JtYXQgcmV3YXJkIHdlaWdodCwgYWRkIGluY3JlbWVudGFsIHJld2FyZHMgfAoKLS0tCgojIyBBZHZhbmNlZCBQYXR0ZXJucwoKIyMjIDEuIE11bHRpLVN0YWdlIFRyYWluaW5nCkZvciBjb21wbGV4IHRhc2tzLCB0cmFpbiBpbiBzdGFnZXM6CgpgYGBweXRob24KIyBTdGFnZSAxOiBGb3JtYXQgY29tcGxpYW5jZSAoZXBvY2hzPTEpCnRyYWluZXJfc3RhZ2UxID0gR1JQT1RyYWluZXIoCiAgICBtb2RlbD1tb2RlbCwKICAgIHJld2FyZF9mdW5jcz1baW5jcmVtZW50YWxfZm9ybWF0X3Jld2FyZCwgZm9ybWF0X3Jld2FyZF0sCiAgICAuLi4KKQp0cmFpbmVyX3N0YWdlMS50cmFpbigpCgojIFN0YWdlIDI6IENvcnJlY3RuZXNzIChlcG9jaHM9MSkKdHJhaW5lcl9zdGFnZTIgPSBHUlBPVHJhaW5lcigKICAgIG1vZGVsPW1vZGVsLAogICAgcmV3YXJkX2Z1bmNzPVtmb3JtYXRfcmV3YXJkLCBjb3JyZWN0bmVzc19yZXdhcmRdLAogICAgLi4uCikKdHJhaW5lcl9zdGFnZTIudHJhaW4oKQpgYGAKCiMjIyAyLiBBZGFwdGl2ZSBSZXdhcmQgU2NhbGluZwpgYGBweXRob24KY2xhc3MgQWRhcHRpdmVSZXdhcmQ6CiAgICBkZWYgX19pbml0X18oc2VsZiwgYmFzZV9yZXdhcmRfZnVuYywgaW5pdGlhbF93ZWlnaHQ9MS4wKToKICAgICAgICBzZWxmLmZ1bmMgPSBiYXNlX3Jld2FyZF9mdW5jCiAgICAgICAgc2VsZi53ZWlnaHQgPSBpbml0aWFsX3dlaWdodAoKICAgIGRlZiBfX2NhbGxfXyhzZWxmLCAqYXJncywgKiprd2FyZ3MpOgogICAgICAgIHJld2FyZHMgPSBzZWxmLmZ1bmMoKmFyZ3MsICoqa3dhcmdzKQogICAgICAgIHJldHVybiBbciAqIHNlbGYud2VpZ2h0IGZvciByIGluIHJld2FyZHNdCgogICAgZGVmIGFkanVzdF93ZWlnaHQoc2VsZiwgc3VjY2Vzc19yYXRlKToKICAgICAgICAiIiJJbmNyZWFzZSB3ZWlnaHQgaWYgbW9kZWwgc3RydWdnbGluZywgZGVjcmVhc2UgaWYgc3VjY2VlZGluZy4iIiIKICAgICAgICBpZiBzdWNjZXNzX3JhdGUgPCAwLjM6CiAgICAgICAgICAgIHNlbGYud2VpZ2h0ICo9IDEuMgogICAgICAgIGVsaWYgc3VjY2Vzc19yYXRlID4gMC44OgogICAgICAgICAgICBzZWxmLndlaWdodCAqPSAwLjkKYGBgCgojIyMgMy4gQ3VzdG9tIERhdGFzZXQgSW50ZWdyYXRpb24KYGBgcHl0aG9uCmRlZiBsb2FkX2N1c3RvbV9rbm93bGVkZ2VfYmFzZShjc3ZfcGF0aCk6CiAgICAiIiJFeGFtcGxlOiBTY2hvb2wgY29tbXVuaWNhdGlvbiBwbGF0Zm9ybSBkb2NzLiIiIgogICAgaW1wb3J0IHBhbmRhcyBhcyBwZAogICAgZGYgPSBwZC5yZWFkX2Nzdihjc3ZfcGF0aCkKCiAgICBkYXRhc2V0ID0gRGF0YXNldC5mcm9tX3BhbmRhcyhkZikubWFwKGxhbWJkYSB4OiB7CiAgICAgICAgJ3Byb21wdCc6IFsKICAgICAgICAgICAgeydyb2xlJzogJ3N5c3RlbScsICdjb250ZW50JzogQ1VTVE9NX1NZU1RFTV9QUk9NUFR9LAogICAgICAgICAgICB7J3JvbGUnOiAndXNlcicsICdjb250ZW50JzogeFsncXVlc3Rpb24nXX0KICAgICAgICBdLAogICAgICAgICdhbnN3ZXInOiB4WydleHBlcnRfYW5zd2VyJ10KICAgIH0pCiAgICByZXR1cm4gZGF0YXNldApgYGAKCi0tLQoKIyMgRGVwbG95bWVudCBhbmQgSW5mZXJlbmNlCgojIyMgU2F2ZSBhbmQgTWVyZ2UgTG9SQQpgYGBweXRob24KIyBNZXJnZSBMb1JBIGFkYXB0ZXJzIGludG8gYmFzZSBtb2RlbAppZiBoYXNhdHRyKHRyYWluZXIubW9kZWwsICdtZXJnZV9hbmRfdW5sb2FkJyk6CiAgICBtZXJnZWRfbW9kZWwgPSB0cmFpbmVyLm1vZGVsLm1lcmdlX2FuZF91bmxvYWQoKQogICAgbWVyZ2VkX21vZGVsLnNhdmVfcHJldHJhaW5lZCgicHJvZHVjdGlvbl9tb2RlbCIpCiAgICB0b2tlbml6ZXIuc2F2ZV9wcmV0cmFpbmVkKCJwcm9kdWN0aW9uX21vZGVsIikKYGBgCgojIyMgSW5mZXJlbmNlIEV4YW1wbGUKYGBgcHl0aG9uCmZyb20gdHJhbnNmb3JtZXJzIGltcG9ydCBwaXBlbGluZQoKZ2VuZXJhdG9yID0gcGlwZWxpbmUoCiAgICAidGV4dC1nZW5lcmF0aW9uIiwKICAgIG1vZGVsPSJwcm9kdWN0aW9uX21vZGVsIiwKICAgIHRva2VuaXplcj10b2tlbml6ZXIKKQoKcmVzdWx0ID0gZ2VuZXJhdG9yKAogICAgWwogICAgICAgIHsncm9sZSc6ICdzeXN0ZW0nLCAnY29udGVudCc6IFNZU1RFTV9QUk9NUFR9LAogICAgICAgIHsncm9sZSc6ICd1c2VyJywgJ2NvbnRlbnQnOiAiV2hhdCBpcyAxNSArIDI3PyJ9CiAgICBdLAogICAgbWF4X25ld190b2tlbnM9MjU2LAogICAgZG9fc2FtcGxlPVRydWUsCiAgICB0ZW1wZXJhdHVyZT0wLjcsCiAgICB0b3BfcD0wLjkKKQpwcmludChyZXN1bHRbMF1bJ2dlbmVyYXRlZF90ZXh0J10pCmBgYAoKLS0tCgojIyBCZXN0IFByYWN0aWNlcyBDaGVja2xpc3QKCioqQmVmb3JlIFRyYWluaW5nOioqCi0gWyBdIFZhbGlkYXRlIGRhdGFzZXQgZm9ybWF0IChwcm9tcHRzIGFzIExpc3RbRGljdF0pCi0gWyBdIFRlc3QgcmV3YXJkIGZ1bmN0aW9ucyBvbiBzYW1wbGUgZGF0YQotIFsgXSBDYWxjdWxhdGUgZXhwZWN0ZWQgbWF4X3Byb21wdF9sZW5ndGggZnJvbSBkYXRhCi0gWyBdIENob29zZSBhcHByb3ByaWF0ZSBudW1fZ2VuZXJhdGlvbnMgYmFzZWQgb24gR1BVIG1lbW9yeQotIFsgXSBTZXQgdXAgbG9nZ2luZyAod2FuZGIgcmVjb21tZW5kZWQpCgoqKkR1cmluZyBUcmFpbmluZzoqKgotIFsgXSBNb25pdG9yIHJld2FyZCBwcm9ncmVzc2lvbiAoc2hvdWxkIGluY3JlYXNlKQotIFsgXSBDaGVjayByZXdhcmRfc3RkIChzaG91bGQgc3RheSA+IDAuMSkKLSBbIF0gV2F0Y2ggZm9yIE9PTSBlcnJvcnMgKHJlZHVjZSBiYXRjaCBzaXplIGlmIG5lZWRlZCkKLSBbIF0gU2FtcGxlIGdlbmVyYXRpb25zIGV2ZXJ5IDUwLTEwMCBzdGVwcwotIFsgXSBWYWxpZGF0ZSBmb3JtYXQgY29tcGxpYW5jZSBvbiBob2xkb3V0IHNldAoKKipBZnRlciBUcmFpbmluZzoqKgotIFsgXSBNZXJnZSBMb1JBIHdlaWdodHMgaWYgdXNpbmcgUEVGVAotIFsgXSBUZXN0IG9uIGRpdmVyc2UgcHJvbXB0cwotIFsgXSBDb21wYXJlIHRvIGJhc2VsaW5lIG1vZGVsCi0gWyBdIERvY3VtZW50IHJld2FyZCB3ZWlnaHRzIGFuZCBoeXBlcnBhcmFtZXRlcnMKLSBbIF0gU2F2ZSByZXByb2R1Y2liaWxpdHkgY29uZmlnCgotLS0KCiMjIFRyb3VibGVzaG9vdGluZyBHdWlkZQoKIyMjIERlYnVnZ2luZyBXb3JrZmxvdwoxLiAqKklzb2xhdGUgcmV3YXJkIGZ1bmN0aW9ucyoqIC0gVGVzdCBlYWNoIGluZGVwZW5kZW50bHkKMi4gKipDaGVjayBkYXRhIGRpc3RyaWJ1dGlvbioqIC0gRW5zdXJlIGRpdmVyc2l0eSBpbiBwcm9tcHRzCjMuICoqUmVkdWNlIGNvbXBsZXhpdHkqKiAtIFN0YXJ0IHdpdGggc2luZ2xlIHJld2FyZCwgYWRkIGdyYWR1YWxseQo0LiAqKk1vbml0b3IgZ2VuZXJhdGlvbnMqKiAtIFByaW50IHNhbXBsZXMgZXZlcnkgTiBzdGVwcwo1LiAqKlZhbGlkYXRlIGV4dHJhY3Rpb24gbG9naWMqKiAtIEVuc3VyZSBhbnN3ZXIgcGFyc2luZyB3b3JrcwoKIyMjIFF1aWNrIEZpeGVzCmBgYHB5dGhvbgojIERlYnVnIHJld2FyZCBmdW5jdGlvbgpkZWYgZGVidWdfcmV3YXJkKGNvbXBsZXRpb25zLCAqKmt3YXJncyk6CiAgICByZXNwb25zZXMgPSBbY29tcFswXVsnY29udGVudCddIGZvciBjb21wIGluIGNvbXBsZXRpb25zXQogICAgZm9yIGksIHIgaW4gZW51bWVyYXRlKHJlc3BvbnNlc1s6Ml0pOiAgIyBQcmludCBmaXJzdCAyCiAgICAgICAgcHJpbnQoZiJSZXNwb25zZSB7aX06IHtyWzoyMDBdfS4uLiIpCiAgICByZXR1cm4gWzEuMF0gKiBsZW4ocmVzcG9uc2VzKSAgIyBEdW1teSByZXdhcmRzCgojIFRlc3Qgd2l0aG91dCB0cmFpbmluZwp0cmFpbmVyID0gR1JQT1RyYWluZXIoLi4uLCByZXdhcmRfZnVuY3M9W2RlYnVnX3Jld2FyZF0pCnRyYWluZXIuZ2VuZXJhdGVfY29tcGxldGlvbnMoZGF0YXNldFs6MV0pICAjIEdlbmVyYXRlIHdpdGhvdXQgdXBkYXRpbmcKYGBgCgotLS0KCiMjIFJlZmVyZW5jZXMgYW5kIFJlc291cmNlcwoKKipPZmZpY2lhbCBEb2N1bWVudGF0aW9uOioqCi0gVFJMIEdSUE8gVHJhaW5lcjogaHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kb2NzL3RybC9ncnBvX3RyYWluZXIKLSBEZWVwU2VlayBSMSBQYXBlcjogaHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI1MDEuMTI5NDgKLSBVbnNsb3RoIERvY3M6IGh0dHBzOi8vZG9jcy51bnNsb3RoLmFpLwoKKipFeGFtcGxlIFJlcG9zaXRvcmllczoqKgotIE9wZW4gUjEgSW1wbGVtZW50YXRpb246IGh0dHBzOi8vZ2l0aHViLmNvbS9odWdnaW5nZmFjZS9vcGVuLXIxCi0gVFJMIEV4YW1wbGVzOiBodHRwczovL2dpdGh1Yi5jb20vaHVnZ2luZ2ZhY2UvdHJsL3RyZWUvbWFpbi9leGFtcGxlcwoKKipSZWNvbW1lbmRlZCBSZWFkaW5nOioqCi0gUHJvZ3Jlc3NpdmUgRGlzY2xvc3VyZSBQYXR0ZXJuIGZvciBhZ2VudCBpbnN0cnVjdGlvbnMKLSBSZXdhcmQgc2hhcGluZyBpbiBSTCAoTmcgZXQgYWwuKQotIExvUkEgcGFwZXIgKEh1IGV0IGFsLiwgMjAyMSkKCi0tLQoKIyMgVXNhZ2UgSW5zdHJ1Y3Rpb25zIGZvciBBZ2VudHMKCldoZW4gdGhpcyBza2lsbCBpcyBsb2FkZWQ6CgoxLiAqKlJlYWQgdGhpcyBlbnRpcmUgZmlsZSoqIGJlZm9yZSBpbXBsZW1lbnRpbmcgR1JQTyB0cmFpbmluZwoyLiAqKlN0YXJ0IHdpdGggdGhlIHNpbXBsZXN0IHJld2FyZCBmdW5jdGlvbioqIChlLmcuLCBsZW5ndGgtYmFzZWQpIHRvIHZhbGlkYXRlIHNldHVwCjMuICoqVXNlIHRoZSB0ZW1wbGF0ZXMqKiBpbiBgdGVtcGxhdGVzL2AgZGlyZWN0b3J5IGFzIHN0YXJ0aW5nIHBvaW50cwo0LiAqKlJlZmVyZW5jZSBleGFtcGxlcyoqIGluIGBleGFtcGxlcy9gIGZvciB0YXNrLXNwZWNpZmljIGltcGxlbWVudGF0aW9ucwo1LiAqKkZvbGxvdyB0aGUgd29ya2Zsb3cqKiBzZXF1ZW50aWFsbHkgKGRvbid0IHNraXAgc3RlcHMpCjYuICoqRGVidWcgaW5jcmVtZW50YWxseSoqIC0gYWRkIG9uZSByZXdhcmQgZnVuY3Rpb24gYXQgYSB0aW1lCgoqKkNyaXRpY2FsIFJlbWluZGVyczoqKgotIEFsd2F5cyB1c2UgbXVsdGlwbGUgcmV3YXJkIGZ1bmN0aW9ucyAoMy01IGlzIG9wdGltYWwpCi0gTW9uaXRvciByZXdhcmQgbWV0cmljcywgbm90IGxvc3MKLSBUZXN0IHJld2FyZCBmdW5jdGlvbnMgYmVmb3JlIHRyYWluaW5nCi0gU3RhcnQgc21hbGwgKG51bV9nZW5lcmF0aW9ucz00KSwgc2NhbGUgdXAgZ3JhZHVhbGx5Ci0gU2F2ZSBjaGVja3BvaW50cyBmcmVxdWVudGx5IChldmVyeSAxMDAgc3RlcHMpCgpUaGlzIHNraWxsIGlzIGRlc2lnbmVkIGZvciAqKmV4cGVydC1sZXZlbCBpbXBsZW1lbnRhdGlvbioqLiBCZWdpbm5lcnMgc2hvdWxkIHN0YXJ0IHdpdGggc3VwZXJ2aXNlZCBmaW5lLXR1bmluZyBiZWZvcmUgYXR0ZW1wdGluZyBHUlBPLgoKCgo=
+---
+name: grpo-rl-training
+description: Expert guidance for GRPO/RL fine-tuning with TRL for reasoning and task-specific model training
+version: 1.0.0
+author: Orchestra Research
+license: MIT
+dependencies: [transformers>=4.47.0, trl>=0.14.0, datasets>=3.2.0, peft>=0.14.0, torch]
+metadata:
+  hermes:
+    tags: [Post-Training, Reinforcement Learning, GRPO, TRL, RLHF, Reward Modeling, Reasoning, DPO, PPO, Structured Output]
+
+---
+
+# GRPO/RL Training with TRL
+
+Expert-level guidance for implementing Group Relative Policy Optimization (GRPO) using the Transformer Reinforcement Learning (TRL) library. This skill provides battle-tested patterns, critical insights, and production-ready workflows for fine-tuning language models with custom reward functions.
+
+## When to Use This Skill
+
+Use GRPO training when you need to:
+- **Enforce specific output formats** (e.g., XML tags, JSON, structured reasoning)
+- **Teach verifiable tasks** with objective correctness metrics (math, coding, fact-checking)
+- **Improve reasoning capabilities** by rewarding chain-of-thought patterns
+- **Align models to domain-specific behaviors** without labeled preference data
+- **Optimize for multiple objectives** simultaneously (format + correctness + style)
+
+**Do NOT use GRPO for:**
+- Simple supervised fine-tuning tasks (use SFT instead)
+- Tasks without clear reward signals
+- When you already have high-quality preference pairs (use DPO/PPO instead)
+
+---
+
+## Core Concepts
+
+### 1. GRPO Algorithm Fundamentals
+
+**Key Mechanism:**
+- Generates **multiple completions** for each prompt (group size: 4-16)
+- Compares completions within each group using reward functions
+- Updates policy to favor higher-rewarded responses relative to the group
+
+**Critical Difference from PPO:**
+- No separate reward model needed
+- More sample-efficient (learns from within-group comparisons)
+- Simpler to implement and debug
+
+**Mathematical Intuition:**
+```
+For each prompt p:
+  1. Generate N completions: {c₁, c₂, ..., cₙ}
+  2. Compute rewards: {r₁, r₂, ..., rₙ}
+  3. Learn to increase probability of high-reward completions
+     relative to low-reward ones in the same group
+```
+
+### 2. Reward Function Design Philosophy
+
+**Golden Rules:**
+1. **Compose multiple reward functions** - Each handles one aspect (format, correctness, style)
+2. **Scale rewards appropriately** - Higher weight = stronger signal
+3. **Use incremental rewards** - Partial credit for partial compliance
+4. **Test rewards independently** - Debug each reward function in isolation
+
+**Reward Function Types:**
+
+| Type | Use Case | Example Weight |
+|------|----------|----------------|
+| **Correctness** | Verifiable tasks (math, code) | 2.0 (highest) |
+| **Format** | Strict structure enforcement | 0.5-1.0 |
+| **Length** | Encourage verbosity/conciseness | 0.1-0.5 |
+| **Style** | Penalize unwanted patterns | -0.5 to 0.5 |
+
+---
+
+## Implementation Workflow
+
+### Step 1: Dataset Preparation
+
+**Critical Requirements:**
+- Prompts in chat format (list of dicts with 'role' and 'content')
+- Include system prompts to set expectations
+- For verifiable tasks, include ground truth answers as additional columns
+
+**Example Structure:**
+```python
+from datasets import load_dataset, Dataset
+
+SYSTEM_PROMPT = """
+Respond in the following format:
+<reasoning>
+[Your step-by-step thinking]
+</reasoning>
+<answer>
+[Final answer]
+</answer>
+"""
+
+def prepare_dataset(raw_data):
+    """
+    Transform raw data into GRPO-compatible format.
+
+    Returns: Dataset with columns:
+    - 'prompt': List[Dict] with role/content (system + user messages)
+    - 'answer': str (ground truth, optional but recommended)
+    """
+    return raw_data.map(lambda x: {
+        'prompt': [
+            {'role': 'system', 'content': SYSTEM_PROMPT},
+            {'role': 'user', 'content': x['question']}
+        ],
+        'answer': extract_answer(x['raw_answer'])
+    })
+```
+
+**Pro Tips:**
+- Use one-shot or few-shot examples in system prompt for complex formats
+- Keep prompts concise (max_prompt_length: 256-512 tokens)
+- Validate data quality before training (garbage in = garbage out)
+
+### Step 2: Reward Function Implementation
+
+**Template Structure:**
+```python
+def reward_function_name(
+    prompts,        # List[List[Dict]]: Original prompts
+    completions,    # List[List[Dict]]: Model generations
+    answer=None,    # Optional: Ground truth from dataset
+    **kwargs        # Additional dataset columns
+) -> list[float]:
+    """
+    Evaluate completions and return rewards.
+
+    Returns: List of floats (one per completion)
+    """
+    # Extract completion text
+    responses = [comp[0]['content'] for comp in completions]
+
+    # Compute rewards
+    rewards = []
+    for response in responses:
+        score = compute_score(response)
+        rewards.append(score)
+
+    return rewards
+```
+
+**Example 1: Correctness Reward (Math/Coding)**
+```python
+def correctness_reward(prompts, completions, answer, **kwargs):
+    """Reward correct answers with high score."""
+    responses = [comp[0]['content'] for comp in completions]
+    extracted = [extract_final_answer(r) for r in responses]
+    return [2.0 if ans == gt else 0.0
+            for ans, gt in zip(extracted, answer)]
+```
+
+**Example 2: Format Reward (Structured Output)**
+```python
+import re
+
+def format_reward(completions, **kwargs):
+    """Reward XML-like structured format."""
+    pattern = r'<reasoning>.*?</reasoning>\s*<answer>.*?</answer>'
+    responses = [comp[0]['content'] for comp in completions]
+    return [1.0 if re.search(pattern, r, re.DOTALL) else 0.0
+            for r in responses]
+```
+
+**Example 3: Incremental Format Reward (Partial Credit)**
+```python
+def incremental_format_reward(completions, **kwargs):
+    """Award partial credit for format compliance."""
+    responses = [comp[0]['content'] for comp in completions]
+    rewards = []
+
+    for r in responses:
+        score = 0.0
+        if '<reasoning>' in r:
+            score += 0.25
+        if '</reasoning>' in r:
+            score += 0.25
+        if '<answer>' in r:
+            score += 0.25
+        if '</answer>' in r:
+            score += 0.25
+        # Penalize extra text after closing tag
+        if r.count('</answer>') == 1:
+            extra_text = r.split('</answer>')[-1].strip()
+            score -= len(extra_text) * 0.001
+        rewards.append(score)
+
+    return rewards
+```
+
+**Critical Insight:**
+Combine 3-5 reward functions for robust training. Order matters less than diversity of signals.
+
+### Step 3: Training Configuration
+
+**Memory-Optimized Config (Small GPU)**
+```python
+from trl import GRPOConfig
+
+training_args = GRPOConfig(
+    output_dir="outputs/grpo-model",
+
+    # Learning rate
+    learning_rate=5e-6,          # Lower = more stable
+    adam_beta1=0.9,
+    adam_beta2=0.99,
+    weight_decay=0.1,
+    warmup_ratio=0.1,
+    lr_scheduler_type='cosine',
+
+    # Batch settings
+    per_device_train_batch_size=1,
+    gradient_accumulation_steps=4,  # Effective batch = 4
+
+    # GRPO-specific
+    num_generations=8,            # Group size: 8-16 recommended
+    max_prompt_length=256,
+    max_completion_length=512,
+
+    # Training duration
+    num_train_epochs=1,
+    max_steps=None,               # Or set fixed steps (e.g., 500)
+
+    # Optimization
+    bf16=True,                    # Faster on A100/H100
+    optim="adamw_8bit",          # Memory-efficient optimizer
+    max_grad_norm=0.1,
+
+    # Logging
+    logging_steps=1,
+    save_steps=100,
+    report_to="wandb",            # Or "none" for no logging
+)
+```
+
+**High-Performance Config (Large GPU)**
+```python
+training_args = GRPOConfig(
+    output_dir="outputs/grpo-model",
+    learning_rate=1e-5,
+    per_device_train_batch_size=4,
+    gradient_accumulation_steps=2,
+    num_generations=16,           # Larger groups = better signal
+    max_prompt_length=512,
+    max_completion_length=1024,
+    num_train_epochs=1,
+    bf16=True,
+    use_vllm=True,                # Fast generation with vLLM
+    logging_steps=10,
+)
+```
+
+**Critical Hyperparameters:**
+
+| Parameter | Impact | Tuning Advice |
+|-----------|--------|---------------|
+| `num_generations` | Group size for comparison | Start with 8, increase to 16 if GPU allows |
+| `learning_rate` | Convergence speed/stability | 5e-6 (safe), 1e-5 (faster, riskier) |
+| `max_completion_length` | Output verbosity | Match your task (512 for reasoning, 256 for short answers) |
+| `gradient_accumulation_steps` | Effective batch size | Increase if GPU memory limited |
+
+### Step 4: Model Setup and Training
+
+**Standard Setup (Transformers)**
+```python
+import torch
+from transformers import AutoModelForCausalLM, AutoTokenizer
+from peft import LoraConfig
+from trl import GRPOTrainer
+
+# Load model
+model_name = "Qwen/Qwen2.5-1.5B-Instruct"
+model = AutoModelForCausalLM.from_pretrained(
+    model_name,
+    torch_dtype=torch.bfloat16,
+    attn_implementation="flash_attention_2",  # 2-3x faster
+    device_map="auto"
+)
+
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+tokenizer.pad_token = tokenizer.eos_token
+
+# Optional: LoRA for parameter-efficient training
+peft_config = LoraConfig(
+    r=16,                         # Rank (higher = more capacity)
+    lora_alpha=32,               # Scaling factor (typically 2*r)
+    target_modules=[
+        "q_proj", "k_proj", "v_proj", "o_proj",
+        "gate_proj", "up_proj", "down_proj"
+    ],
+    task_type="CAUSAL_LM",
+    lora_dropout=0.05,
+)
+
+# Initialize trainer
+trainer = GRPOTrainer(
+    model=model,
+    processing_class=tokenizer,
+    reward_funcs=[
+        incremental_format_reward,
+        format_reward,
+        correctness_reward,
+    ],
+    args=training_args,
+    train_dataset=dataset,
+    peft_config=peft_config,      # Remove for full fine-tuning
+)
+
+# Train
+trainer.train()
+
+# Save
+trainer.save_model("final_model")
+```
+
+**Unsloth Setup (2-3x Faster)**
+```python
+from unsloth import FastLanguageModel
+
+model, tokenizer = FastLanguageModel.from_pretrained(
+    model_name="google/gemma-3-1b-it",
+    max_seq_length=1024,
+    load_in_4bit=True,
+    fast_inference=True,
+    max_lora_rank=32,
+)
+
+model = FastLanguageModel.get_peft_model(
+    model,
+    r=32,
+    target_modules=["q_proj", "k_proj", "v_proj", "o_proj",
+                    "gate_proj", "up_proj", "down_proj"],
+    lora_alpha=32,
+    use_gradient_checkpointing="unsloth",
+)
+
+# Rest is identical to standard setup
+trainer = GRPOTrainer(model=model, ...)
+trainer.train()
+```
+
+---
+
+## Critical Training Insights
+
+### 1. Loss Behavior (EXPECTED PATTERN)
+- **Loss starts near 0 and INCREASES during training**
+- This is CORRECT - loss measures KL divergence from initial policy
+- Model is learning (diverging from original behavior to optimize rewards)
+- Monitor reward metrics instead of loss for progress
+
+### 2. Reward Tracking
+Key metrics to watch:
+- `reward`: Average across all completions
+- `reward_std`: Diversity within groups (should remain > 0)
+- `kl`: KL divergence from reference (should grow moderately)
+
+**Healthy Training Pattern:**
+```
+Step   Reward    Reward_Std   KL
+100    0.5       0.3          0.02
+200    0.8       0.25         0.05
+300    1.2       0.2          0.08  ← Good progression
+400    1.5       0.15         0.12
+```
+
+**Warning Signs:**
+- Reward std → 0 (model collapsing to single response)
+- KL exploding (> 0.5) (diverging too much, reduce LR)
+- Reward stuck (reward functions too harsh or model capacity issue)
+
+### 3. Common Pitfalls and Solutions
+
+| Problem | Symptom | Solution |
+|---------|---------|----------|
+| **Mode collapse** | All completions identical | Increase `num_generations`, add diversity penalty |
+| **No learning** | Flat rewards | Check reward function logic, increase LR |
+| **OOM errors** | GPU memory exceeded | Reduce `num_generations`, enable gradient checkpointing |
+| **Slow training** | < 1 it/s | Enable `use_vllm=True`, use Unsloth, reduce seq length |
+| **Format ignored** | Model doesn't follow structure | Increase format reward weight, add incremental rewards |
+
+---
+
+## Advanced Patterns
+
+### 1. Multi-Stage Training
+For complex tasks, train in stages:
+
+```python
+# Stage 1: Format compliance (epochs=1)
+trainer_stage1 = GRPOTrainer(
+    model=model,
+    reward_funcs=[incremental_format_reward, format_reward],
+    ...
+)
+trainer_stage1.train()
+
+# Stage 2: Correctness (epochs=1)
+trainer_stage2 = GRPOTrainer(
+    model=model,
+    reward_funcs=[format_reward, correctness_reward],
+    ...
+)
+trainer_stage2.train()
+```
+
+### 2. Adaptive Reward Scaling
+```python
+class AdaptiveReward:
+    def __init__(self, base_reward_func, initial_weight=1.0):
+        self.func = base_reward_func
+        self.weight = initial_weight
+
+    def __call__(self, *args, **kwargs):
+        rewards = self.func(*args, **kwargs)
+        return [r * self.weight for r in rewards]
+
+    def adjust_weight(self, success_rate):
+        """Increase weight if model struggling, decrease if succeeding."""
+        if success_rate < 0.3:
+            self.weight *= 1.2
+        elif success_rate > 0.8:
+            self.weight *= 0.9
+```
+
+### 3. Custom Dataset Integration
+```python
+def load_custom_knowledge_base(csv_path):
+    """Example: School communication platform docs."""
+    import pandas as pd
+    df = pd.read_csv(csv_path)
+
+    dataset = Dataset.from_pandas(df).map(lambda x: {
+        'prompt': [
+            {'role': 'system', 'content': CUSTOM_SYSTEM_PROMPT},
+            {'role': 'user', 'content': x['question']}
+        ],
+        'answer': x['expert_answer']
+    })
+    return dataset
+```
+
+---
+
+## Deployment and Inference
+
+### Save and Merge LoRA
+```python
+# Merge LoRA adapters into base model
+if hasattr(trainer.model, 'merge_and_unload'):
+    merged_model = trainer.model.merge_and_unload()
+    merged_model.save_pretrained("production_model")
+    tokenizer.save_pretrained("production_model")
+```
+
+### Inference Example
+```python
+from transformers import pipeline
+
+generator = pipeline(
+    "text-generation",
+    model="production_model",
+    tokenizer=tokenizer
+)
+
+result = generator(
+    [
+        {'role': 'system', 'content': SYSTEM_PROMPT},
+        {'role': 'user', 'content': "What is 15 + 27?"}
+    ],
+    max_new_tokens=256,
+    do_sample=True,
+    temperature=0.7,
+    top_p=0.9
+)
+print(result[0]['generated_text'])
+```
+
+---
+
+## Best Practices Checklist
+
+**Before Training:**
+- [ ] Validate dataset format (prompts as List[Dict])
+- [ ] Test reward functions on sample data
+- [ ] Calculate expected max_prompt_length from data
+- [ ] Choose appropriate num_generations based on GPU memory
+- [ ] Set up logging (wandb recommended)
+
+**During Training:**
+- [ ] Monitor reward progression (should increase)
+- [ ] Check reward_std (should stay > 0.1)
+- [ ] Watch for OOM errors (reduce batch size if needed)
+- [ ] Sample generations every 50-100 steps
+- [ ] Validate format compliance on holdout set
+
+**After Training:**
+- [ ] Merge LoRA weights if using PEFT
+- [ ] Test on diverse prompts
+- [ ] Compare to baseline model
+- [ ] Document reward weights and hyperparameters
+- [ ] Save reproducibility config
+
+---
+
+## Troubleshooting Guide
+
+### Debugging Workflow
+1. **Isolate reward functions** - Test each independently
+2. **Check data distribution** - Ensure diversity in prompts
+3. **Reduce complexity** - Start with single reward, add gradually
+4. **Monitor generations** - Print samples every N steps
+5. **Validate extraction logic** - Ensure answer parsing works
+
+### Quick Fixes
+```python
+# Debug reward function
+def debug_reward(completions, **kwargs):
+    responses = [comp[0]['content'] for comp in completions]
+    for i, r in enumerate(responses[:2]):  # Print first 2
+        print(f"Response {i}: {r[:200]}...")
+    return [1.0] * len(responses)  # Dummy rewards
+
+# Test without training
+trainer = GRPOTrainer(..., reward_funcs=[debug_reward])
+trainer.generate_completions(dataset[:1])  # Generate without updating
+```
+
+---
+
+## References and Resources
+
+**Official Documentation:**
+- TRL GRPO Trainer: https://huggingface.co/docs/trl/grpo_trainer
+- DeepSeek R1 Paper: https://arxiv.org/abs/2501.12948
+- Unsloth Docs: https://docs.unsloth.ai/
+
+**Example Repositories:**
+- Open R1 Implementation: https://github.com/huggingface/open-r1
+- TRL Examples: https://github.com/huggingface/trl/tree/main/examples
+
+**Recommended Reading:**
+- Progressive Disclosure Pattern for agent instructions
+- Reward shaping in RL (Ng et al.)
+- LoRA paper (Hu et al., 2021)
+
+---
+
+## Usage Instructions for Agents
+
+When this skill is loaded:
+
+1. **Read this entire file** before implementing GRPO training
+2. **Start with the simplest reward function** (e.g., length-based) to validate setup
+3. **Use the templates** in `templates/` directory as starting points
+4. **Reference examples** in `examples/` for task-specific implementations
+5. **Follow the workflow** sequentially (don't skip steps)
+6. **Debug incrementally** - add one reward function at a time
+
+**Critical Reminders:**
+- Always use multiple reward functions (3-5 is optimal)
+- Monitor reward metrics, not loss
+- Test reward functions before training
+- Start small (num_generations=4), scale up gradually
+- Save checkpoints frequently (every 100 steps)
+
+This skill is designed for **expert-level implementation**. Beginners should start with supervised fine-tuning before attempting GRPO.
+
+
+

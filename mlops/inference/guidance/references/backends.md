@@ -1,1 +1,554 @@
-IyBCYWNrZW5kIENvbmZpZ3VyYXRpb24gR3VpZGUKCkNvbXBsZXRlIGd1aWRlIHRvIGNvbmZpZ3VyaW5nIEd1aWRhbmNlIHdpdGggZGlmZmVyZW50IExMTSBiYWNrZW5kcy4KCiMjIFRhYmxlIG9mIENvbnRlbnRzCi0gQVBJLUJhc2VkIE1vZGVscyAoQW50aHJvcGljLCBPcGVuQUkpCi0gTG9jYWwgTW9kZWxzIChUcmFuc2Zvcm1lcnMsIGxsYW1hLmNwcCkKLSBCYWNrZW5kIENvbXBhcmlzb24KLSBQZXJmb3JtYW5jZSBUdW5pbmcKLSBBZHZhbmNlZCBDb25maWd1cmF0aW9uCgojIyBBUEktQmFzZWQgTW9kZWxzCgojIyMgQW50aHJvcGljIENsYXVkZQoKIyMjIyBCYXNpYyBTZXR1cAoKYGBgcHl0aG9uCmZyb20gZ3VpZGFuY2UgaW1wb3J0IG1vZGVscwoKIyBVc2luZyBlbnZpcm9ubWVudCB2YXJpYWJsZQpsbSA9IG1vZGVscy5BbnRocm9waWMoImNsYXVkZS1zb25uZXQtNC01LTIwMjUwOTI5IikKIyBSZWFkcyBBTlRIUk9QSUNfQVBJX0tFWSBmcm9tIGVudmlyb25tZW50CgojIEV4cGxpY2l0IEFQSSBrZXkKbG0gPSBtb2RlbHMuQW50aHJvcGljKAogICAgbW9kZWw9ImNsYXVkZS1zb25uZXQtNC01LTIwMjUwOTI5IiwKICAgIGFwaV9rZXk9InlvdXItYXBpLWtleS1oZXJlIgopCmBgYAoKIyMjIyBBdmFpbGFibGUgTW9kZWxzCgpgYGBweXRob24KIyBDbGF1ZGUgMy41IFNvbm5ldCAoTGF0ZXN0LCByZWNvbW1lbmRlZCkKbG0gPSBtb2RlbHMuQW50aHJvcGljKCJjbGF1ZGUtc29ubmV0LTQtNS0yMDI1MDkyOSIpCgojIENsYXVkZSAzLjcgU29ubmV0IChGYXN0LCBjb3N0LWVmZmVjdGl2ZSkKbG0gPSBtb2RlbHMuQW50aHJvcGljKCJjbGF1ZGUtc29ubmV0LTMuNy0yMDI1MDIxOSIpCgojIENsYXVkZSAzIE9wdXMgKE1vc3QgY2FwYWJsZSkKbG0gPSBtb2RlbHMuQW50aHJvcGljKCJjbGF1ZGUtMy1vcHVzLTIwMjQwMjI5IikKCiMgQ2xhdWRlIDMuNSBIYWlrdSAoRmFzdGVzdCwgY2hlYXBlc3QpCmxtID0gbW9kZWxzLkFudGhyb3BpYygiY2xhdWRlLTMtNS1oYWlrdS0yMDI0MTAyMiIpCmBgYAoKIyMjIyBDb25maWd1cmF0aW9uIE9wdGlvbnMKCmBgYHB5dGhvbgpsbSA9IG1vZGVscy5BbnRocm9waWMoCiAgICBtb2RlbD0iY2xhdWRlLXNvbm5ldC00LTUtMjAyNTA5MjkiLAogICAgYXBpX2tleT0ieW91ci1hcGkta2V5IiwKICAgIG1heF90b2tlbnM9NDA5NiwgICAgICAgICAgICMgTWF4IHRva2VucyB0byBnZW5lcmF0ZQogICAgdGVtcGVyYXR1cmU9MC43LCAgICAgICAgICAgICMgU2FtcGxpbmcgdGVtcGVyYXR1cmUgKDAtMSkKICAgIHRvcF9wPTAuOSwgICAgICAgICAgICAgICAgICAjIE51Y2xldXMgc2FtcGxpbmcKICAgIHRpbWVvdXQ9MzAsICAgICAgICAgICAgICAgICAjIFJlcXVlc3QgdGltZW91dCAoc2Vjb25kcykKICAgIG1heF9yZXRyaWVzPTMgICAgICAgICAgICAgICMgUmV0cnkgZmFpbGVkIHJlcXVlc3RzCikKYGBgCgojIyMjIFdpdGggQ29udGV4dCBNYW5hZ2VycwoKYGBgcHl0aG9uCmZyb20gZ3VpZGFuY2UgaW1wb3J0IG1vZGVscywgc3lzdGVtLCB1c2VyLCBhc3Npc3RhbnQsIGdlbgoKbG0gPSBtb2RlbHMuQW50aHJvcGljKCJjbGF1ZGUtc29ubmV0LTQtNS0yMDI1MDkyOSIpCgp3aXRoIHN5c3RlbSgpOgogICAgbG0gKz0gIllvdSBhcmUgYSBoZWxwZnVsIGFzc2lzdGFudC4iCgp3aXRoIHVzZXIoKToKICAgIGxtICs9ICJXaGF0IGlzIHRoZSBjYXBpdGFsIG9mIEZyYW5jZT8iCgp3aXRoIGFzc2lzdGFudCgpOgogICAgbG0gKz0gZ2VuKG1heF90b2tlbnM9NTApCgpwcmludChsbSkKYGBgCgojIyMgT3BlbkFJCgojIyMjIEJhc2ljIFNldHVwCgpgYGBweXRob24KZnJvbSBndWlkYW5jZSBpbXBvcnQgbW9kZWxzCgojIFVzaW5nIGVudmlyb25tZW50IHZhcmlhYmxlCmxtID0gbW9kZWxzLk9wZW5BSSgiZ3B0LTRvIikKIyBSZWFkcyBPUEVOQUlfQVBJX0tFWSBmcm9tIGVudmlyb25tZW50CgojIEV4cGxpY2l0IEFQSSBrZXkKbG0gPSBtb2RlbHMuT3BlbkFJKAogICAgbW9kZWw9ImdwdC00byIsCiAgICBhcGlfa2V5PSJ5b3VyLWFwaS1rZXktaGVyZSIKKQpgYGAKCiMjIyMgQXZhaWxhYmxlIE1vZGVscwoKYGBgcHl0aG9uCiMgR1BULTRvIChMYXRlc3QsIG11bHRpbW9kYWwpCmxtID0gbW9kZWxzLk9wZW5BSSgiZ3B0LTRvIikKCiMgR1BULTRvIE1pbmkgKEZhc3QsIGNvc3QtZWZmZWN0aXZlKQpsbSA9IG1vZGVscy5PcGVuQUkoImdwdC00by1taW5pIikKCiMgR1BULTQgVHVyYm8KbG0gPSBtb2RlbHMuT3BlbkFJKCJncHQtNC10dXJibyIpCgojIEdQVC0zLjUgVHVyYm8gKENoZWFwZXN0KQpsbSA9IG1vZGVscy5PcGVuQUkoImdwdC0zLjUtdHVyYm8iKQpgYGAKCiMjIyMgQ29uZmlndXJhdGlvbiBPcHRpb25zCgpgYGBweXRob24KbG0gPSBtb2RlbHMuT3BlbkFJKAogICAgbW9kZWw9ImdwdC00by1taW5pIiwKICAgIGFwaV9rZXk9InlvdXItYXBpLWtleSIsCiAgICBtYXhfdG9rZW5zPTIwNDgsCiAgICB0ZW1wZXJhdHVyZT0wLjcsCiAgICB0b3BfcD0xLjAsCiAgICBmcmVxdWVuY3lfcGVuYWx0eT0wLjAsCiAgICBwcmVzZW5jZV9wZW5hbHR5PTAuMCwKICAgIHRpbWVvdXQ9MzAKKQpgYGAKCiMjIyMgQ2hhdCBGb3JtYXQKCmBgYHB5dGhvbgpmcm9tIGd1aWRhbmNlIGltcG9ydCBtb2RlbHMsIGdlbgoKbG0gPSBtb2RlbHMuT3BlbkFJKCJncHQtNG8tbWluaSIpCgojIE9wZW5BSSB1c2VzIGNoYXQgZm9ybWF0CmxtICs9IFsKICAgIHsicm9sZSI6ICJzeXN0ZW0iLCAiY29udGVudCI6ICJZb3UgYXJlIGEgaGVscGZ1bCBhc3Npc3RhbnQuIn0sCiAgICB7InJvbGUiOiAidXNlciIsICJjb250ZW50IjogIldoYXQgaXMgMisyPyJ9Cl0KCiMgR2VuZXJhdGUgcmVzcG9uc2UKbG0gKz0gZ2VuKG1heF90b2tlbnM9NTApCmBgYAoKIyMjIEF6dXJlIE9wZW5BSQoKYGBgcHl0aG9uCmZyb20gZ3VpZGFuY2UgaW1wb3J0IG1vZGVscwoKbG0gPSBtb2RlbHMuQXp1cmVPcGVuQUkoCiAgICBtb2RlbD0iZ3B0LTRvIiwKICAgIGF6dXJlX2VuZHBvaW50PSJodHRwczovL3lvdXItcmVzb3VyY2Uub3BlbmFpLmF6dXJlLmNvbS8iLAogICAgYXBpX2tleT0ieW91ci1henVyZS1hcGkta2V5IiwKICAgIGFwaV92ZXJzaW9uPSIyMDI0LTAyLTE1LXByZXZpZXciLAogICAgZGVwbG95bWVudF9uYW1lPSJ5b3VyLWRlcGxveW1lbnQtbmFtZSIKKQpgYGAKCiMjIExvY2FsIE1vZGVscwoKIyMjIFRyYW5zZm9ybWVycyAoSHVnZ2luZyBGYWNlKQoKIyMjIyBCYXNpYyBTZXR1cAoKYGBgcHl0aG9uCmZyb20gZ3VpZGFuY2UubW9kZWxzIGltcG9ydCBUcmFuc2Zvcm1lcnMKCiMgTG9hZCBtb2RlbCBmcm9tIEh1Z2dpbmcgRmFjZQpsbSA9IFRyYW5zZm9ybWVycygibWljcm9zb2Z0L1BoaS00LW1pbmktaW5zdHJ1Y3QiKQpgYGAKCiMjIyMgR1BVIENvbmZpZ3VyYXRpb24KCmBgYHB5dGhvbgojIFVzZSBHUFUKbG0gPSBUcmFuc2Zvcm1lcnMoCiAgICAibWljcm9zb2Z0L1BoaS00LW1pbmktaW5zdHJ1Y3QiLAogICAgZGV2aWNlPSJjdWRhIgopCgojIFVzZSBzcGVjaWZpYyBHUFUKbG0gPSBUcmFuc2Zvcm1lcnMoCiAgICAibWljcm9zb2Z0L1BoaS00LW1pbmktaW5zdHJ1Y3QiLAogICAgZGV2aWNlPSJjdWRhOjAiICAjIEdQVSAwCikKCiMgVXNlIENQVQpsbSA9IFRyYW5zZm9ybWVycygKICAgICJtaWNyb3NvZnQvUGhpLTQtbWluaS1pbnN0cnVjdCIsCiAgICBkZXZpY2U9ImNwdSIKKQpgYGAKCiMjIyMgQWR2YW5jZWQgQ29uZmlndXJhdGlvbgoKYGBgcHl0aG9uCmxtID0gVHJhbnNmb3JtZXJzKAogICAgIm1pY3Jvc29mdC9QaGktNC1taW5pLWluc3RydWN0IiwKICAgIGRldmljZT0iY3VkYSIsCiAgICB0b3JjaF9kdHlwZT0iZmxvYXQxNiIsICAgICAgIyBVc2UgRlAxNiAoZmFzdGVyLCBsZXNzIG1lbW9yeSkKICAgIGxvYWRfaW5fOGJpdD1UcnVlLCAgICAgICAgICAjIDgtYml0IHF1YW50aXphdGlvbgogICAgbWF4X21lbW9yeT17MDogIjIwR0IifSwgICAgICMgR1BVIG1lbW9yeSBsaW1pdAogICAgb2ZmbG9hZF9mb2xkZXI9Ii4vb2ZmbG9hZCIgICMgT2ZmbG9hZCB0byBkaXNrIGlmIG5lZWRlZAopCmBgYAoKIyMjIyBQb3B1bGFyIE1vZGVscwoKYGBgcHl0aG9uCiMgUGhpLTQgKE1pY3Jvc29mdCkKbG0gPSBUcmFuc2Zvcm1lcnMoIm1pY3Jvc29mdC9QaGktNC1taW5pLWluc3RydWN0IikKbG0gPSBUcmFuc2Zvcm1lcnMoIm1pY3Jvc29mdC9QaGktMy1tZWRpdW0tNGstaW5zdHJ1Y3QiKQoKIyBMbGFtYSAzIChNZXRhKQpsbSA9IFRyYW5zZm9ybWVycygibWV0YS1sbGFtYS9MbGFtYS0zLjEtOEItSW5zdHJ1Y3QiKQpsbSA9IFRyYW5zZm9ybWVycygibWV0YS1sbGFtYS9MbGFtYS0zLjEtNzBCLUluc3RydWN0IikKCiMgTWlzdHJhbCAoTWlzdHJhbCBBSSkKbG0gPSBUcmFuc2Zvcm1lcnMoIm1pc3RyYWxhaS9NaXN0cmFsLTdCLUluc3RydWN0LXYwLjMiKQpsbSA9IFRyYW5zZm9ybWVycygibWlzdHJhbGFpL01peHRyYWwtOHg3Qi1JbnN0cnVjdC12MC4xIikKCiMgUXdlbiAoQWxpYmFiYSkKbG0gPSBUcmFuc2Zvcm1lcnMoIlF3ZW4vUXdlbjIuNS03Qi1JbnN0cnVjdCIpCgojIEdlbW1hIChHb29nbGUpCmxtID0gVHJhbnNmb3JtZXJzKCJnb29nbGUvZ2VtbWEtMi05Yi1pdCIpCmBgYAoKIyMjIyBHZW5lcmF0aW9uIENvbmZpZ3VyYXRpb24KCmBgYHB5dGhvbgpsbSA9IFRyYW5zZm9ybWVycygKICAgICJtaWNyb3NvZnQvUGhpLTQtbWluaS1pbnN0cnVjdCIsCiAgICBkZXZpY2U9ImN1ZGEiCikKCiMgQ29uZmlndXJlIGdlbmVyYXRpb24KZnJvbSBndWlkYW5jZSBpbXBvcnQgZ2VuCgpyZXN1bHQgPSBsbSArIGdlbigKICAgIG1heF90b2tlbnM9MTAwLAogICAgdGVtcGVyYXR1cmU9MC43LAogICAgdG9wX3A9MC45LAogICAgdG9wX2s9NTAsCiAgICByZXBldGl0aW9uX3BlbmFsdHk9MS4xCikKYGBgCgojIyMgbGxhbWEuY3BwCgojIyMjIEJhc2ljIFNldHVwCgpgYGBweXRob24KZnJvbSBndWlkYW5jZS5tb2RlbHMgaW1wb3J0IExsYW1hQ3BwCgojIExvYWQgR0dVRiBtb2RlbApsbSA9IExsYW1hQ3BwKAogICAgbW9kZWxfcGF0aD0iL3BhdGgvdG8vbW9kZWwuZ2d1ZiIsCiAgICBuX2N0eD00MDk2ICAjIENvbnRleHQgd2luZG93CikKYGBgCgojIyMjIEdQVSBDb25maWd1cmF0aW9uCgpgYGBweXRob24KIyBVc2UgR1BVIGFjY2VsZXJhdGlvbgpsbSA9IExsYW1hQ3BwKAogICAgbW9kZWxfcGF0aD0iL3BhdGgvdG8vbW9kZWwuZ2d1ZiIsCiAgICBuX2N0eD00MDk2LAogICAgbl9ncHVfbGF5ZXJzPTM1LCAgIyBPZmZsb2FkIDM1IGxheWVycyB0byBHUFUKICAgIG5fdGhyZWFkcz04ICAgICAgICMgQ1BVIHRocmVhZHMgZm9yIHJlbWFpbmluZyBsYXllcnMKKQoKIyBGdWxsIEdQVSBvZmZsb2FkCmxtID0gTGxhbWFDcHAoCiAgICBtb2RlbF9wYXRoPSIvcGF0aC90by9tb2RlbC5nZ3VmIiwKICAgIG5fY3R4PTQwOTYsCiAgICBuX2dwdV9sYXllcnM9LTEgICMgT2ZmbG9hZCBhbGwgbGF5ZXJzCikKYGBgCgojIyMjIEFkdmFuY2VkIENvbmZpZ3VyYXRpb24KCmBgYHB5dGhvbgpsbSA9IExsYW1hQ3BwKAogICAgbW9kZWxfcGF0aD0iL3BhdGgvdG8vbGxhbWEtMy4xLThiLWluc3RydWN0LlE0X0tfTS5nZ3VmIiwKICAgIG5fY3R4PTgxOTIsICAgICAgICAgICMgQ29udGV4dCB3aW5kb3cgKHRva2VucykKICAgIG5fZ3B1X2xheWVycz0zNSwgICAgICMgR1BVIGxheWVycwogICAgbl90aHJlYWRzPTgsICAgICAgICAgIyBDUFUgdGhyZWFkcwogICAgbl9iYXRjaD01MTIsICAgICAgICAgIyBCYXRjaCBzaXplIGZvciBwcm9tcHQgcHJvY2Vzc2luZwogICAgdXNlX21tYXA9VHJ1ZSwgICAgICAgIyBNZW1vcnktbWFwIHRoZSBtb2RlbCBmaWxlCiAgICB1c2VfbWxvY2s9RmFsc2UsICAgICAjIExvY2sgbW9kZWwgaW4gUkFNCiAgICBzZWVkPTQyLCAgICAgICAgICAgICAjIFJhbmRvbSBzZWVkCiAgICB2ZXJib3NlPUZhbHNlICAgICAgICAjIFN1cHByZXNzIHZlcmJvc2Ugb3V0cHV0CikKYGBgCgojIyMjIFF1YW50aXplZCBNb2RlbHMKCmBgYHB5dGhvbgojIFE0X0tfTSAoNC1iaXQsIHJlY29tbWVuZGVkIGZvciBtb3N0IGNhc2VzKQpsbSA9IExsYW1hQ3BwKCIvcGF0aC90by9tb2RlbC5RNF9LX00uZ2d1ZiIpCgojIFE1X0tfTSAoNS1iaXQsIGJldHRlciBxdWFsaXR5KQpsbSA9IExsYW1hQ3BwKCIvcGF0aC90by9tb2RlbC5RNV9LX00uZ2d1ZiIpCgojIFE4XzAgKDgtYml0LCBoaWdoIHF1YWxpdHkpCmxtID0gTGxhbWFDcHAoIi9wYXRoL3RvL21vZGVsLlE4XzAuZ2d1ZiIpCgojIEYxNiAoMTYtYml0IGZsb2F0LCBoaWdoZXN0IHF1YWxpdHkpCmxtID0gTGxhbWFDcHAoIi9wYXRoL3RvL21vZGVsLkYxNi5nZ3VmIikKYGBgCgojIyMjIFBvcHVsYXIgR0dVRiBNb2RlbHMKCmBgYHB5dGhvbgojIExsYW1hIDMuMQpsbSA9IExsYW1hQ3BwKCJsbGFtYS0zLjEtOGItaW5zdHJ1Y3QuUTRfS19NLmdndWYiKQoKIyBNaXN0cmFsCmxtID0gTGxhbWFDcHAoIm1pc3RyYWwtN2ItaW5zdHJ1Y3QtdjAuMy5RNF9LX00uZ2d1ZiIpCgojIFBoaS00CmxtID0gTGxhbWFDcHAoInBoaS00LW1pbmktaW5zdHJ1Y3QuUTRfS19NLmdndWYiKQpgYGAKCiMjIEJhY2tlbmQgQ29tcGFyaXNvbgoKIyMjIEZlYXR1cmUgTWF0cml4Cgp8IEZlYXR1cmUgfCBBbnRocm9waWMgfCBPcGVuQUkgfCBUcmFuc2Zvcm1lcnMgfCBsbGFtYS5jcHAgfAp8LS0tLS0tLS0tfC0tLS0tLS0tLS0tfC0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tfAp8IENvbnN0cmFpbmVkIEdlbmVyYXRpb24gfCDinIUgRnVsbCB8IOKchSBGdWxsIHwg4pyFIEZ1bGwgfCDinIUgRnVsbCB8CnwgVG9rZW4gSGVhbGluZyB8IOKchSBZZXMgfCDinIUgWWVzIHwg4pyFIFllcyB8IOKchSBZZXMgfAp8IFN0cmVhbWluZyB8IOKchSBZZXMgfCDinIUgWWVzIHwg4pyFIFllcyB8IOKchSBZZXMgfAp8IEdQVSBTdXBwb3J0IHwgTi9BIHwgTi9BIHwg4pyFIFllcyB8IOKchSBZZXMgfAp8IFF1YW50aXphdGlvbiB8IE4vQSB8IE4vQSB8IOKchSBZZXMgfCDinIUgWWVzIHwKfCBDb3N0IHwgJCQkIHwgJCQkIHwgRnJlZSB8IEZyZWUgfAp8IExhdGVuY3kgfCBMb3cgfCBMb3cgfCBNZWRpdW0gfCBMb3cgfAp8IFNldHVwIERpZmZpY3VsdHkgfCBFYXN5IHwgRWFzeSB8IE1lZGl1bSB8IE1lZGl1bSB8CgojIyMgUGVyZm9ybWFuY2UgQ2hhcmFjdGVyaXN0aWNzCgoqKkFudGhyb3BpYyBDbGF1ZGU6KioKLSAqKkxhdGVuY3kqKjogMjAwLTUwMG1zIChBUEkgY2FsbCkKLSAqKlRocm91Z2hwdXQqKjogTGltaXRlZCBieSBBUEkgcmF0ZSBsaW1pdHMKLSAqKkNvc3QqKjogJDMtMTUgcGVyIDFNIGlucHV0IHRva2VucwotICoqQmVzdCBmb3IqKjogUHJvZHVjdGlvbiBzeXN0ZW1zLCBoaWdoLXF1YWxpdHkgb3V0cHV0cwoKKipPcGVuQUk6KioKLSAqKkxhdGVuY3kqKjogMjAwLTQwMG1zIChBUEkgY2FsbCkKLSAqKlRocm91Z2hwdXQqKjogTGltaXRlZCBieSBBUEkgcmF0ZSBsaW1pdHMKLSAqKkNvc3QqKjogJDAuMTUtMzAgcGVyIDFNIGlucHV0IHRva2VucwotICoqQmVzdCBmb3IqKjogQ29zdC1zZW5zaXRpdmUgcHJvZHVjdGlvbiwgZ3B0LTRvLW1pbmkKCioqVHJhbnNmb3JtZXJzOioqCi0gKipMYXRlbmN5Kio6IDUwLTIwMG1zIChsb2NhbCBpbmZlcmVuY2UpCi0gKipUaHJvdWdocHV0Kio6IEdQVS1kZXBlbmRlbnQgKDEwLTEwMCB0b2tlbnMvc2VjKQotICoqQ29zdCoqOiBIYXJkd2FyZSBjb3N0IG9ubHkKLSAqKkJlc3QgZm9yKio6IFByaXZhY3ktc2Vuc2l0aXZlLCBoaWdoLXZvbHVtZSwgZXhwZXJpbWVudGF0aW9uCgoqKmxsYW1hLmNwcDoqKgotICoqTGF0ZW5jeSoqOiAzMC0xNTBtcyAobG9jYWwgaW5mZXJlbmNlKQotICoqVGhyb3VnaHB1dCoqOiBIYXJkd2FyZS1kZXBlbmRlbnQgKDIwLTE1MCB0b2tlbnMvc2VjKQotICoqQ29zdCoqOiBIYXJkd2FyZSBjb3N0IG9ubHkKLSAqKkJlc3QgZm9yKio6IEVkZ2UgZGVwbG95bWVudCwgQXBwbGUgU2lsaWNvbiwgQ1BVIGluZmVyZW5jZQoKIyMjIE1lbW9yeSBSZXF1aXJlbWVudHMKCioqVHJhbnNmb3JtZXJzIChGUDE2KToqKgotIDdCIG1vZGVsOiB+MTRHQiBHUFUgVlJBTQotIDEzQiBtb2RlbDogfjI2R0IgR1BVIFZSQU0KLSA3MEIgbW9kZWw6IH4xNDBHQiBHUFUgVlJBTSAobXVsdGktR1BVKQoKKipsbGFtYS5jcHAgKFE0X0tfTSk6KioKLSA3QiBtb2RlbDogfjQuNUdCIFJBTQotIDEzQiBtb2RlbDogfjhHQiBSQU0KLSA3MEIgbW9kZWw6IH40MEdCIFJBTQoKKipPcHRpbWl6YXRpb24gVGlwczoqKgotIFVzZSBxdWFudGl6ZWQgbW9kZWxzIChRNF9LX00pIGZvciBsb3dlciBtZW1vcnkKLSBVc2UgR1BVIG9mZmxvYWRpbmcgZm9yIGZhc3RlciBpbmZlcmVuY2UKLSBVc2UgQ1BVIGluZmVyZW5jZSBmb3Igc21hbGxlciBtb2RlbHMgKDw3QikKCiMjIFBlcmZvcm1hbmNlIFR1bmluZwoKIyMjIEFQSSBNb2RlbHMgKEFudGhyb3BpYywgT3BlbkFJKQoKIyMjIyBSZWR1Y2UgTGF0ZW5jeQoKYGBgcHl0aG9uCmZyb20gZ3VpZGFuY2UgaW1wb3J0IG1vZGVscywgZ2VuCgpsbSA9IG1vZGVscy5BbnRocm9waWMoImNsYXVkZS1zb25uZXQtNC01LTIwMjUwOTI5IikKCiMgVXNlIGxvd2VyIG1heF90b2tlbnMgKGZhc3RlciByZXNwb25zZSkKbG0gKz0gZ2VuKG1heF90b2tlbnM9MTAwKSAgIyBJbnN0ZWFkIG9mIDEwMDAKCiMgVXNlIHN0cmVhbWluZyAocGVyY2VpdmVkIGxhdGVuY3kgcmVkdWN0aW9uKQpmb3IgY2h1bmsgaW4gbG0uc3RyZWFtKGdlbihtYXhfdG9rZW5zPTUwMCkpOgogICAgcHJpbnQoY2h1bmssIGVuZD0iIiwgZmx1c2g9VHJ1ZSkKYGBgCgojIyMjIFJlZHVjZSBDb3N0CgpgYGBweXRob24KIyBVc2UgY2hlYXBlciBtb2RlbHMKbG0gPSBtb2RlbHMuQW50aHJvcGljKCJjbGF1ZGUtMy01LWhhaWt1LTIwMjQxMDIyIikgICMgdnMgU29ubmV0CmxtID0gbW9kZWxzLk9wZW5BSSgiZ3B0LTRvLW1pbmkiKSAgIyB2cyBncHQtNG8KCiMgUmVkdWNlIGNvbnRleHQgc2l6ZQojIC0gS2VlcCBwcm9tcHRzIGNvbmNpc2UKIyAtIEF2b2lkIGxhcmdlIGZldy1zaG90IGV4YW1wbGVzCiMgLSBVc2UgbWF4X3Rva2VucyBsaW1pdHMKYGBgCgojIyMgTG9jYWwgTW9kZWxzIChUcmFuc2Zvcm1lcnMsIGxsYW1hLmNwcCkKCiMjIyMgT3B0aW1pemUgR1BVIFVzYWdlCgpgYGBweXRob24KZnJvbSBndWlkYW5jZS5tb2RlbHMgaW1wb3J0IFRyYW5zZm9ybWVycwoKIyBVc2UgRlAxNiBmb3IgMnggc3BlZWR1cApsbSA9IFRyYW5zZm9ybWVycygKICAgICJtZXRhLWxsYW1hL0xsYW1hLTMuMS04Qi1JbnN0cnVjdCIsCiAgICBkZXZpY2U9ImN1ZGEiLAogICAgdG9yY2hfZHR5cGU9ImZsb2F0MTYiCikKCiMgVXNlIDgtYml0IHF1YW50aXphdGlvbiBmb3IgNHggbWVtb3J5IHJlZHVjdGlvbgpsbSA9IFRyYW5zZm9ybWVycygKICAgICJtZXRhLWxsYW1hL0xsYW1hLTMuMS04Qi1JbnN0cnVjdCIsCiAgICBkZXZpY2U9ImN1ZGEiLAogICAgbG9hZF9pbl84Yml0PVRydWUKKQoKIyBVc2UgZmxhc2ggYXR0ZW50aW9uIChyZXF1aXJlcyBmbGFzaC1hdHRuIHBhY2thZ2UpCmxtID0gVHJhbnNmb3JtZXJzKAogICAgIm1ldGEtbGxhbWEvTGxhbWEtMy4xLThCLUluc3RydWN0IiwKICAgIGRldmljZT0iY3VkYSIsCiAgICB1c2VfZmxhc2hfYXR0ZW50aW9uXzI9VHJ1ZQopCmBgYAoKIyMjIyBPcHRpbWl6ZSBsbGFtYS5jcHAKCmBgYHB5dGhvbgpmcm9tIGd1aWRhbmNlLm1vZGVscyBpbXBvcnQgTGxhbWFDcHAKCiMgTWF4aW1pemUgR1BVIGxheWVycwpsbSA9IExsYW1hQ3BwKAogICAgbW9kZWxfcGF0aD0iL3BhdGgvdG8vbW9kZWwuUTRfS19NLmdndWYiLAogICAgbl9ncHVfbGF5ZXJzPS0xICAjIEFsbCBsYXllcnMgb24gR1BVCikKCiMgT3B0aW1pemUgYmF0Y2ggc2l6ZQpsbSA9IExsYW1hQ3BwKAogICAgbW9kZWxfcGF0aD0iL3BhdGgvdG8vbW9kZWwuUTRfS19NLmdndWYiLAogICAgbl9iYXRjaD01MTIsICAgICAjIExhcmdlciBiYXRjaCA9IGZhc3RlciBwcm9tcHQgcHJvY2Vzc2luZwogICAgbl9ncHVfbGF5ZXJzPS0xCikKCiMgVXNlIE1ldGFsIChBcHBsZSBTaWxpY29uKQpsbSA9IExsYW1hQ3BwKAogICAgbW9kZWxfcGF0aD0iL3BhdGgvdG8vbW9kZWwuUTRfS19NLmdndWYiLAogICAgbl9ncHVfbGF5ZXJzPS0xLCAgIyBVc2UgTWV0YWwgR1BVIGFjY2VsZXJhdGlvbgogICAgdXNlX21tYXA9VHJ1ZQopCmBgYAoKIyMjIyBCYXRjaCBQcm9jZXNzaW5nCgpgYGBweXRob24KIyBQcm9jZXNzIG11bHRpcGxlIHJlcXVlc3RzIGVmZmljaWVudGx5CnJlcXVlc3RzID0gWwogICAgIldoYXQgaXMgMisyPyIsCiAgICAiV2hhdCBpcyB0aGUgY2FwaXRhbCBvZiBGcmFuY2U/IiwKICAgICJXaGF0IGlzIHBob3Rvc3ludGhlc2lzPyIKXQoKIyBCYWQ6IFNlcXVlbnRpYWwgcHJvY2Vzc2luZwpmb3IgcmVxIGluIHJlcXVlc3RzOgogICAgbG0gPSBUcmFuc2Zvcm1lcnMoIm1pY3Jvc29mdC9QaGktNC1taW5pLWluc3RydWN0IikKICAgIGxtICs9IHJlcSArIGdlbihtYXhfdG9rZW5zPTUwKQoKIyBHb29kOiBSZXVzZSBsb2FkZWQgbW9kZWwKbG0gPSBUcmFuc2Zvcm1lcnMoIm1pY3Jvc29mdC9QaGktNC1taW5pLWluc3RydWN0IikKZm9yIHJlcSBpbiByZXF1ZXN0czoKICAgIGxtICs9IHJlcSArIGdlbihtYXhfdG9rZW5zPTUwKQpgYGAKCiMjIEFkdmFuY2VkIENvbmZpZ3VyYXRpb24KCiMjIyBDdXN0b20gTW9kZWwgQ29uZmlndXJhdGlvbnMKCmBgYHB5dGhvbgpmcm9tIHRyYW5zZm9ybWVycyBpbXBvcnQgQXV0b1Rva2VuaXplciwgQXV0b01vZGVsRm9yQ2F1c2FsTE0KZnJvbSBndWlkYW5jZS5tb2RlbHMgaW1wb3J0IFRyYW5zZm9ybWVycwoKIyBMb2FkIGN1c3RvbSBtb2RlbAp0b2tlbml6ZXIgPSBBdXRvVG9rZW5pemVyLmZyb21fcHJldHJhaW5lZCgieW91ci1tb2RlbCIpCm1vZGVsID0gQXV0b01vZGVsRm9yQ2F1c2FsTE0uZnJvbV9wcmV0cmFpbmVkKAogICAgInlvdXItbW9kZWwiLAogICAgZGV2aWNlX21hcD0iYXV0byIsCiAgICB0b3JjaF9kdHlwZT0iZmxvYXQxNiIKKQoKIyBVc2Ugd2l0aCBHdWlkYW5jZQpsbSA9IFRyYW5zZm9ybWVycyhtb2RlbD1tb2RlbCwgdG9rZW5pemVyPXRva2VuaXplcikKYGBgCgojIyMgRW52aXJvbm1lbnQgVmFyaWFibGVzCgpgYGBiYXNoCiMgQVBJIGtleXMKZXhwb3J0IEFOVEhST1BJQ19BUElfS0VZPSJzay1hbnQtLi4uIgpleHBvcnQgT1BFTkFJX0FQSV9LRVk9InNrLS4uLiIKCiMgVHJhbnNmb3JtZXJzIGNhY2hlCmV4cG9ydCBIRl9IT01FPSIvcGF0aC90by9jYWNoZSIKZXhwb3J0IFRSQU5TRk9STUVSU19DQUNIRT0iL3BhdGgvdG8vY2FjaGUiCgojIEdQVSBzZWxlY3Rpb24KZXhwb3J0IENVREFfVklTSUJMRV9ERVZJQ0VTPTAsMSAgIyBVc2UgR1BVIDAgYW5kIDEKYGBgCgojIyMgRGVidWdnaW5nCgpgYGBweXRob24KIyBFbmFibGUgdmVyYm9zZSBsb2dnaW5nCmltcG9ydCBsb2dnaW5nCmxvZ2dpbmcuYmFzaWNDb25maWcobGV2ZWw9bG9nZ2luZy5ERUJVRykKCiMgQ2hlY2sgYmFja2VuZCBpbmZvCmxtID0gbW9kZWxzLkFudGhyb3BpYygiY2xhdWRlLXNvbm5ldC00LTUtMjAyNTA5MjkiKQpwcmludChmIk1vZGVsOiB7bG0ubW9kZWxfbmFtZX0iKQpwcmludChmIkJhY2tlbmQ6IHtsbS5iYWNrZW5kfSIpCgojIENoZWNrIEdQVSB1c2FnZSAoVHJhbnNmb3JtZXJzKQpsbSA9IFRyYW5zZm9ybWVycygibWljcm9zb2Z0L1BoaS00LW1pbmktaW5zdHJ1Y3QiLCBkZXZpY2U9ImN1ZGEiKQpwcmludChmIkRldmljZToge2xtLmRldmljZX0iKQpwcmludChmIk1lbW9yeSBhbGxvY2F0ZWQ6IHt0b3JjaC5jdWRhLm1lbW9yeV9hbGxvY2F0ZWQoKSAvIDFlOTouMmZ9IEdCIikKYGBgCgojIyBSZXNvdXJjZXMKCi0gKipBbnRocm9waWMgRG9jcyoqOiBodHRwczovL2RvY3MuYW50aHJvcGljLmNvbQotICoqT3BlbkFJIERvY3MqKjogaHR0cHM6Ly9wbGF0Zm9ybS5vcGVuYWkuY29tL2RvY3MKLSAqKkh1Z2dpbmcgRmFjZSBNb2RlbHMqKjogaHR0cHM6Ly9odWdnaW5nZmFjZS5jby9tb2RlbHMKLSAqKmxsYW1hLmNwcCoqOiBodHRwczovL2dpdGh1Yi5jb20vZ2dlcmdhbm92L2xsYW1hLmNwcAotICoqR0dVRiBNb2RlbHMqKjogaHR0cHM6Ly9odWdnaW5nZmFjZS5jby9tb2RlbHM/bGlicmFyeT1nZ3VmCg==
+# Backend Configuration Guide
+
+Complete guide to configuring Guidance with different LLM backends.
+
+## Table of Contents
+- API-Based Models (Anthropic, OpenAI)
+- Local Models (Transformers, llama.cpp)
+- Backend Comparison
+- Performance Tuning
+- Advanced Configuration
+
+## API-Based Models
+
+### Anthropic Claude
+
+#### Basic Setup
+
+```python
+from guidance import models
+
+# Using environment variable
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+# Reads ANTHROPIC_API_KEY from environment
+
+# Explicit API key
+lm = models.Anthropic(
+    model="claude-sonnet-4-5-20250929",
+    api_key="your-api-key-here"
+)
+```
+
+#### Available Models
+
+```python
+# Claude 3.5 Sonnet (Latest, recommended)
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+
+# Claude 3.7 Sonnet (Fast, cost-effective)
+lm = models.Anthropic("claude-sonnet-3.7-20250219")
+
+# Claude 3 Opus (Most capable)
+lm = models.Anthropic("claude-3-opus-20240229")
+
+# Claude 3.5 Haiku (Fastest, cheapest)
+lm = models.Anthropic("claude-3-5-haiku-20241022")
+```
+
+#### Configuration Options
+
+```python
+lm = models.Anthropic(
+    model="claude-sonnet-4-5-20250929",
+    api_key="your-api-key",
+    max_tokens=4096,           # Max tokens to generate
+    temperature=0.7,            # Sampling temperature (0-1)
+    top_p=0.9,                  # Nucleus sampling
+    timeout=30,                 # Request timeout (seconds)
+    max_retries=3              # Retry failed requests
+)
+```
+
+#### With Context Managers
+
+```python
+from guidance import models, system, user, assistant, gen
+
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+
+with system():
+    lm += "You are a helpful assistant."
+
+with user():
+    lm += "What is the capital of France?"
+
+with assistant():
+    lm += gen(max_tokens=50)
+
+print(lm)
+```
+
+### OpenAI
+
+#### Basic Setup
+
+```python
+from guidance import models
+
+# Using environment variable
+lm = models.OpenAI("gpt-4o")
+# Reads OPENAI_API_KEY from environment
+
+# Explicit API key
+lm = models.OpenAI(
+    model="gpt-4o",
+    api_key="your-api-key-here"
+)
+```
+
+#### Available Models
+
+```python
+# GPT-4o (Latest, multimodal)
+lm = models.OpenAI("gpt-4o")
+
+# GPT-4o Mini (Fast, cost-effective)
+lm = models.OpenAI("gpt-4o-mini")
+
+# GPT-4 Turbo
+lm = models.OpenAI("gpt-4-turbo")
+
+# GPT-3.5 Turbo (Cheapest)
+lm = models.OpenAI("gpt-3.5-turbo")
+```
+
+#### Configuration Options
+
+```python
+lm = models.OpenAI(
+    model="gpt-4o-mini",
+    api_key="your-api-key",
+    max_tokens=2048,
+    temperature=0.7,
+    top_p=1.0,
+    frequency_penalty=0.0,
+    presence_penalty=0.0,
+    timeout=30
+)
+```
+
+#### Chat Format
+
+```python
+from guidance import models, gen
+
+lm = models.OpenAI("gpt-4o-mini")
+
+# OpenAI uses chat format
+lm += [
+    {"role": "system", "content": "You are a helpful assistant."},
+    {"role": "user", "content": "What is 2+2?"}
+]
+
+# Generate response
+lm += gen(max_tokens=50)
+```
+
+### Azure OpenAI
+
+```python
+from guidance import models
+
+lm = models.AzureOpenAI(
+    model="gpt-4o",
+    azure_endpoint="https://your-resource.openai.azure.com/",
+    api_key="your-azure-api-key",
+    api_version="2024-02-15-preview",
+    deployment_name="your-deployment-name"
+)
+```
+
+## Local Models
+
+### Transformers (Hugging Face)
+
+#### Basic Setup
+
+```python
+from guidance.models import Transformers
+
+# Load model from Hugging Face
+lm = Transformers("microsoft/Phi-4-mini-instruct")
+```
+
+#### GPU Configuration
+
+```python
+# Use GPU
+lm = Transformers(
+    "microsoft/Phi-4-mini-instruct",
+    device="cuda"
+)
+
+# Use specific GPU
+lm = Transformers(
+    "microsoft/Phi-4-mini-instruct",
+    device="cuda:0"  # GPU 0
+)
+
+# Use CPU
+lm = Transformers(
+    "microsoft/Phi-4-mini-instruct",
+    device="cpu"
+)
+```
+
+#### Advanced Configuration
+
+```python
+lm = Transformers(
+    "microsoft/Phi-4-mini-instruct",
+    device="cuda",
+    torch_dtype="float16",      # Use FP16 (faster, less memory)
+    load_in_8bit=True,          # 8-bit quantization
+    max_memory={0: "20GB"},     # GPU memory limit
+    offload_folder="./offload"  # Offload to disk if needed
+)
+```
+
+#### Popular Models
+
+```python
+# Phi-4 (Microsoft)
+lm = Transformers("microsoft/Phi-4-mini-instruct")
+lm = Transformers("microsoft/Phi-3-medium-4k-instruct")
+
+# Llama 3 (Meta)
+lm = Transformers("meta-llama/Llama-3.1-8B-Instruct")
+lm = Transformers("meta-llama/Llama-3.1-70B-Instruct")
+
+# Mistral (Mistral AI)
+lm = Transformers("mistralai/Mistral-7B-Instruct-v0.3")
+lm = Transformers("mistralai/Mixtral-8x7B-Instruct-v0.1")
+
+# Qwen (Alibaba)
+lm = Transformers("Qwen/Qwen2.5-7B-Instruct")
+
+# Gemma (Google)
+lm = Transformers("google/gemma-2-9b-it")
+```
+
+#### Generation Configuration
+
+```python
+lm = Transformers(
+    "microsoft/Phi-4-mini-instruct",
+    device="cuda"
+)
+
+# Configure generation
+from guidance import gen
+
+result = lm + gen(
+    max_tokens=100,
+    temperature=0.7,
+    top_p=0.9,
+    top_k=50,
+    repetition_penalty=1.1
+)
+```
+
+### llama.cpp
+
+#### Basic Setup
+
+```python
+from guidance.models import LlamaCpp
+
+# Load GGUF model
+lm = LlamaCpp(
+    model_path="/path/to/model.gguf",
+    n_ctx=4096  # Context window
+)
+```
+
+#### GPU Configuration
+
+```python
+# Use GPU acceleration
+lm = LlamaCpp(
+    model_path="/path/to/model.gguf",
+    n_ctx=4096,
+    n_gpu_layers=35,  # Offload 35 layers to GPU
+    n_threads=8       # CPU threads for remaining layers
+)
+
+# Full GPU offload
+lm = LlamaCpp(
+    model_path="/path/to/model.gguf",
+    n_ctx=4096,
+    n_gpu_layers=-1  # Offload all layers
+)
+```
+
+#### Advanced Configuration
+
+```python
+lm = LlamaCpp(
+    model_path="/path/to/llama-3.1-8b-instruct.Q4_K_M.gguf",
+    n_ctx=8192,          # Context window (tokens)
+    n_gpu_layers=35,     # GPU layers
+    n_threads=8,         # CPU threads
+    n_batch=512,         # Batch size for prompt processing
+    use_mmap=True,       # Memory-map the model file
+    use_mlock=False,     # Lock model in RAM
+    seed=42,             # Random seed
+    verbose=False        # Suppress verbose output
+)
+```
+
+#### Quantized Models
+
+```python
+# Q4_K_M (4-bit, recommended for most cases)
+lm = LlamaCpp("/path/to/model.Q4_K_M.gguf")
+
+# Q5_K_M (5-bit, better quality)
+lm = LlamaCpp("/path/to/model.Q5_K_M.gguf")
+
+# Q8_0 (8-bit, high quality)
+lm = LlamaCpp("/path/to/model.Q8_0.gguf")
+
+# F16 (16-bit float, highest quality)
+lm = LlamaCpp("/path/to/model.F16.gguf")
+```
+
+#### Popular GGUF Models
+
+```python
+# Llama 3.1
+lm = LlamaCpp("llama-3.1-8b-instruct.Q4_K_M.gguf")
+
+# Mistral
+lm = LlamaCpp("mistral-7b-instruct-v0.3.Q4_K_M.gguf")
+
+# Phi-4
+lm = LlamaCpp("phi-4-mini-instruct.Q4_K_M.gguf")
+```
+
+## Backend Comparison
+
+### Feature Matrix
+
+| Feature | Anthropic | OpenAI | Transformers | llama.cpp |
+|---------|-----------|--------|--------------|-----------|
+| Constrained Generation | ✅ Full | ✅ Full | ✅ Full | ✅ Full |
+| Token Healing | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes |
+| Streaming | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes |
+| GPU Support | N/A | N/A | ✅ Yes | ✅ Yes |
+| Quantization | N/A | N/A | ✅ Yes | ✅ Yes |
+| Cost | $$$ | $$$ | Free | Free |
+| Latency | Low | Low | Medium | Low |
+| Setup Difficulty | Easy | Easy | Medium | Medium |
+
+### Performance Characteristics
+
+**Anthropic Claude:**
+- **Latency**: 200-500ms (API call)
+- **Throughput**: Limited by API rate limits
+- **Cost**: $3-15 per 1M input tokens
+- **Best for**: Production systems, high-quality outputs
+
+**OpenAI:**
+- **Latency**: 200-400ms (API call)
+- **Throughput**: Limited by API rate limits
+- **Cost**: $0.15-30 per 1M input tokens
+- **Best for**: Cost-sensitive production, gpt-4o-mini
+
+**Transformers:**
+- **Latency**: 50-200ms (local inference)
+- **Throughput**: GPU-dependent (10-100 tokens/sec)
+- **Cost**: Hardware cost only
+- **Best for**: Privacy-sensitive, high-volume, experimentation
+
+**llama.cpp:**
+- **Latency**: 30-150ms (local inference)
+- **Throughput**: Hardware-dependent (20-150 tokens/sec)
+- **Cost**: Hardware cost only
+- **Best for**: Edge deployment, Apple Silicon, CPU inference
+
+### Memory Requirements
+
+**Transformers (FP16):**
+- 7B model: ~14GB GPU VRAM
+- 13B model: ~26GB GPU VRAM
+- 70B model: ~140GB GPU VRAM (multi-GPU)
+
+**llama.cpp (Q4_K_M):**
+- 7B model: ~4.5GB RAM
+- 13B model: ~8GB RAM
+- 70B model: ~40GB RAM
+
+**Optimization Tips:**
+- Use quantized models (Q4_K_M) for lower memory
+- Use GPU offloading for faster inference
+- Use CPU inference for smaller models (<7B)
+
+## Performance Tuning
+
+### API Models (Anthropic, OpenAI)
+
+#### Reduce Latency
+
+```python
+from guidance import models, gen
+
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+
+# Use lower max_tokens (faster response)
+lm += gen(max_tokens=100)  # Instead of 1000
+
+# Use streaming (perceived latency reduction)
+for chunk in lm.stream(gen(max_tokens=500)):
+    print(chunk, end="", flush=True)
+```
+
+#### Reduce Cost
+
+```python
+# Use cheaper models
+lm = models.Anthropic("claude-3-5-haiku-20241022")  # vs Sonnet
+lm = models.OpenAI("gpt-4o-mini")  # vs gpt-4o
+
+# Reduce context size
+# - Keep prompts concise
+# - Avoid large few-shot examples
+# - Use max_tokens limits
+```
+
+### Local Models (Transformers, llama.cpp)
+
+#### Optimize GPU Usage
+
+```python
+from guidance.models import Transformers
+
+# Use FP16 for 2x speedup
+lm = Transformers(
+    "meta-llama/Llama-3.1-8B-Instruct",
+    device="cuda",
+    torch_dtype="float16"
+)
+
+# Use 8-bit quantization for 4x memory reduction
+lm = Transformers(
+    "meta-llama/Llama-3.1-8B-Instruct",
+    device="cuda",
+    load_in_8bit=True
+)
+
+# Use flash attention (requires flash-attn package)
+lm = Transformers(
+    "meta-llama/Llama-3.1-8B-Instruct",
+    device="cuda",
+    use_flash_attention_2=True
+)
+```
+
+#### Optimize llama.cpp
+
+```python
+from guidance.models import LlamaCpp
+
+# Maximize GPU layers
+lm = LlamaCpp(
+    model_path="/path/to/model.Q4_K_M.gguf",
+    n_gpu_layers=-1  # All layers on GPU
+)
+
+# Optimize batch size
+lm = LlamaCpp(
+    model_path="/path/to/model.Q4_K_M.gguf",
+    n_batch=512,     # Larger batch = faster prompt processing
+    n_gpu_layers=-1
+)
+
+# Use Metal (Apple Silicon)
+lm = LlamaCpp(
+    model_path="/path/to/model.Q4_K_M.gguf",
+    n_gpu_layers=-1,  # Use Metal GPU acceleration
+    use_mmap=True
+)
+```
+
+#### Batch Processing
+
+```python
+# Process multiple requests efficiently
+requests = [
+    "What is 2+2?",
+    "What is the capital of France?",
+    "What is photosynthesis?"
+]
+
+# Bad: Sequential processing
+for req in requests:
+    lm = Transformers("microsoft/Phi-4-mini-instruct")
+    lm += req + gen(max_tokens=50)
+
+# Good: Reuse loaded model
+lm = Transformers("microsoft/Phi-4-mini-instruct")
+for req in requests:
+    lm += req + gen(max_tokens=50)
+```
+
+## Advanced Configuration
+
+### Custom Model Configurations
+
+```python
+from transformers import AutoTokenizer, AutoModelForCausalLM
+from guidance.models import Transformers
+
+# Load custom model
+tokenizer = AutoTokenizer.from_pretrained("your-model")
+model = AutoModelForCausalLM.from_pretrained(
+    "your-model",
+    device_map="auto",
+    torch_dtype="float16"
+)
+
+# Use with Guidance
+lm = Transformers(model=model, tokenizer=tokenizer)
+```
+
+### Environment Variables
+
+```bash
+# API keys
+export ANTHROPIC_API_KEY="sk-ant-..."
+export OPENAI_API_KEY="sk-..."
+
+# Transformers cache
+export HF_HOME="/path/to/cache"
+export TRANSFORMERS_CACHE="/path/to/cache"
+
+# GPU selection
+export CUDA_VISIBLE_DEVICES=0,1  # Use GPU 0 and 1
+```
+
+### Debugging
+
+```python
+# Enable verbose logging
+import logging
+logging.basicConfig(level=logging.DEBUG)
+
+# Check backend info
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+print(f"Model: {lm.model_name}")
+print(f"Backend: {lm.backend}")
+
+# Check GPU usage (Transformers)
+lm = Transformers("microsoft/Phi-4-mini-instruct", device="cuda")
+print(f"Device: {lm.device}")
+print(f"Memory allocated: {torch.cuda.memory_allocated() / 1e9:.2f} GB")
+```
+
+## Resources
+
+- **Anthropic Docs**: https://docs.anthropic.com
+- **OpenAI Docs**: https://platform.openai.com/docs
+- **Hugging Face Models**: https://huggingface.co/models
+- **llama.cpp**: https://github.com/ggerganov/llama.cpp
+- **GGUF Models**: https://huggingface.co/models?library=gguf

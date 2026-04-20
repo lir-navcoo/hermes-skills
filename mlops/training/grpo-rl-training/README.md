@@ -1,1 +1,97 @@
-IyBHUlBPL1JMIFRyYWluaW5nIFNraWxsCgoqKkV4cGVydC1sZXZlbCBndWlkYW5jZSBmb3IgR3JvdXAgUmVsYXRpdmUgUG9saWN5IE9wdGltaXphdGlvbiB3aXRoIFRSTCoqCgojIyDwn5OBIFNraWxsIFN0cnVjdHVyZQoKYGBgCmdycG8tcmwtdHJhaW5pbmcvCuKUnOKUgOKUgCBTS0lMTC5tZCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICMgTWFpbiBza2lsbCBkb2N1bWVudGF0aW9uIChSRUFEIFRISVMgRklSU1QpCuKUnOKUgOKUgCBSRUFETUUubWQgICAgICAgICAgICAgICAgICAgICAgICAgICAgICMgVGhpcyBmaWxlCuKUnOKUgOKUgCB0ZW1wbGF0ZXMvCuKUgiAgIOKUlOKUgOKUgCBiYXNpY19ncnBvX3RyYWluaW5nLnB5ICAgICAgICAgICAgIyBQcm9kdWN0aW9uLXJlYWR5IHRyYWluaW5nIHRlbXBsYXRlCuKUlOKUgOKUgCBleGFtcGxlcy8KICAgIOKUlOKUgOKUgCByZXdhcmRfZnVuY3Rpb25zX2xpYnJhcnkucHkgICAgICAgIyAyMCsgcmV3YXJkIGZ1bmN0aW9uIGV4YW1wbGVzCmBgYAoKIyMg8J+agCBRdWljayBTdGFydAoKMS4gKipSZWFkIFNLSUxMLm1kKiogLSBDb21wcmVoZW5zaXZlIGd1aWRlIHdpdGggYWxsIGNvbmNlcHRzIGFuZCBwYXR0ZXJucwoyLiAqKkNvcHkgYHRlbXBsYXRlcy9iYXNpY19ncnBvX3RyYWluaW5nLnB5YCoqIC0gU3RhcnQgd2l0aCB3b3JraW5nIGNvZGUKMy4gKipCcm93c2UgYGV4YW1wbGVzL3Jld2FyZF9mdW5jdGlvbnNfbGlicmFyeS5weWAqKiAtIFBpY2sgcmV3YXJkIGZ1bmN0aW9ucyBmb3IgeW91ciB0YXNrCjQuICoqTW9kaWZ5IGZvciB5b3VyIHVzZSBjYXNlKiogLSBBZGFwdCBkYXRhc2V0LCByZXdhcmRzLCBhbmQgY29uZmlnCgojIyDwn5KhIFdoYXQncyBJbnNpZGUKCiMjIyBTS0lMTC5tZCAoTWFpbiBEb2N1bWVudGF0aW9uKQotIENvcmUgR1JQTyBjb25jZXB0cyBhbmQgYWxnb3JpdGhtIGZ1bmRhbWVudGFscwotIENvbXBsZXRlIGltcGxlbWVudGF0aW9uIHdvcmtmbG93IChkYXRhc2V0IOKGkiByZXdhcmRzIOKGkiB0cmFpbmluZyDihpIgZGVwbG95bWVudCkKLSAxMCsgcmV3YXJkIGZ1bmN0aW9uIGV4YW1wbGVzIHdpdGggY29kZQotIEh5cGVycGFyYW1ldGVyIHR1bmluZyBndWlkZQotIFRyYWluaW5nIGluc2lnaHRzIChsb3NzIGJlaGF2aW9yLCBtZXRyaWNzLCBkZWJ1Z2dpbmcpCi0gVHJvdWJsZXNob290aW5nIGd1aWRlCi0gUHJvZHVjdGlvbiBiZXN0IHByYWN0aWNlcwoKIyMjIFRlbXBsYXRlcwotICoqYmFzaWNfZ3Jwb190cmFpbmluZy5weSoqOiBNaW5pbWFsLCBwcm9kdWN0aW9uLXJlYWR5IHRyYWluaW5nIHNjcmlwdAogIC0gVXNlcyBRd2VuIDIuNSAxLjVCIEluc3RydWN0CiAgLSAzIHJld2FyZCBmdW5jdGlvbnMgKGZvcm1hdCArIGNvcnJlY3RuZXNzKQogIC0gTG9SQSBmb3IgZWZmaWNpZW50IHRyYWluaW5nCiAgLSBGdWxseSBkb2N1bWVudGVkIGFuZCByZWFkeSB0byBydW4KCiMjIyBFeGFtcGxlcwotICoqcmV3YXJkX2Z1bmN0aW9uc19saWJyYXJ5LnB5Kio6IDIwKyBiYXR0bGUtdGVzdGVkIHJld2FyZCBmdW5jdGlvbnMKICAtIENvcnJlY3RuZXNzIHJld2FyZHMgKGV4YWN0IG1hdGNoLCBmdXp6eSBtYXRjaCwgbnVtZXJpYywgY29kZSBleGVjdXRpb24pCiAgLSBGb3JtYXQgcmV3YXJkcyAoWE1MLCBKU09OLCBzdHJpY3Qvc29mdCkKICAtIExlbmd0aCByZXdhcmRzIChpZGVhbCBsZW5ndGgsIG1pbi9tYXgpCiAgLSBTdHlsZSByZXdhcmRzIChyZWFzb25pbmcgcXVhbGl0eSwgY2l0YXRpb25zLCByZXBldGl0aW9uIHBlbmFsdHkpCiAgLSBDb21iaW5lZCByZXdhcmRzIChtdWx0aS1vYmplY3RpdmUgb3B0aW1pemF0aW9uKQogIC0gUHJlc2V0IGNvbGxlY3Rpb25zIGZvciBjb21tb24gdGFza3MKCiMjIPCfk5YgVXNhZ2UgZm9yIEFnZW50cwoKV2hlbiB0aGlzIHNraWxsIGlzIGxvYWRlZCBpbiB5b3VyIGFnZW50J3MgY29udGV4dDoKCjEuICoqQWx3YXlzIHJlYWQgU0tJTEwubWQgZmlyc3QqKiBiZWZvcmUgaW1wbGVtZW50aW5nCjIuICoqU3RhcnQgc2ltcGxlKiogLSBVc2UgbGVuZ3RoLWJhc2VkIHJld2FyZCB0byB2YWxpZGF0ZSBzZXR1cAozLiAqKkJ1aWxkIGluY3JlbWVudGFsbHkqKiAtIEFkZCBvbmUgcmV3YXJkIGZ1bmN0aW9uIGF0IGEgdGltZQo0LiAqKlJlZmVyZW5jZSBleGFtcGxlcyoqIC0gQ29weSBwYXR0ZXJucyBmcm9tIHJld2FyZF9mdW5jdGlvbnNfbGlicmFyeS5weQo1LiAqKk1vbml0b3IgdHJhaW5pbmcqKiAtIFdhdGNoIHJld2FyZCBtZXRyaWNzIChub3QgbG9zcyEpCgojIyDwn46vIENvbW1vbiBVc2UgQ2FzZXMKCnwgVGFzayBUeXBlIHwgUmVjb21tZW5kZWQgUmV3YXJkcyB8IFRlbXBsYXRlIHwKfC0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS0tLS0tLXwtLS0tLS0tLS0tfAp8IE1hdGggcmVhc29uaW5nIHwgYE1BVEhfUkVBU09OSU5HX1JFV0FSRFNgIHByZXNldCB8IGJhc2ljX2dycG9fdHJhaW5pbmcucHkgfAp8IENvZGUgZ2VuZXJhdGlvbiB8IGBDT0RFX0dFTkVSQVRJT05fUkVXQVJEU2AgcHJlc2V0IHwgTW9kaWZ5IGRhdGFzZXQgaW4gdGVtcGxhdGUgfAp8IFN1bW1hcml6YXRpb24gfCBgU1VNTUFSSVpBVElPTl9SRVdBUkRTYCBwcmVzZXQgfCBBZGp1c3QgcHJvbXB0cyArIHJld2FyZHMgfAp8IFEmQSB8IGBRQV9SRVdBUkRTYCBwcmVzZXQgfCBVc2UgZnV6enkgbWF0Y2ggKyBjaXRhdGlvbnMgfAoKIyMg4pqg77iPIENyaXRpY2FsIFJlbWluZGVycwoKLSAqKkxvc3MgZ29lcyBVUCBkdXJpbmcgdHJhaW5pbmcqKiAtIFRoaXMgaXMgbm9ybWFsIChpdCdzIEtMIGRpdmVyZ2VuY2UpCi0gKipVc2UgMy01IHJld2FyZCBmdW5jdGlvbnMqKiAtIFNpbmdsZSByZXdhcmRzIG9mdGVuIGZhaWwKLSAqKlRlc3QgcmV3YXJkcyBiZWZvcmUgdHJhaW5pbmcqKiAtIERlYnVnIGVhY2ggZnVuY3Rpb24gaW5kZXBlbmRlbnRseQotICoqTW9uaXRvciByZXdhcmRfc3RkKiogLSBTaG91bGQgc3RheSA+IDAuMSAoYXZvaWQgbW9kZSBjb2xsYXBzZSkKLSAqKlN0YXJ0IHdpdGggbnVtX2dlbmVyYXRpb25zPTQtOCoqIC0gU2NhbGUgdXAgaWYgR1BVIGFsbG93cwoKIyMg8J+UlyBFeHRlcm5hbCBSZXNvdXJjZXMKCi0gW1RSTCBEb2N1bWVudGF0aW9uXShodHRwczovL2h1Z2dpbmdmYWNlLmNvL2RvY3MvdHJsKQotIFtEZWVwU2VlayBSMSBQYXBlcl0oaHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI1MDEuMTI5NDgpCi0gW09wZW4gUjEgSW1wbGVtZW50YXRpb25dKGh0dHBzOi8vZ2l0aHViLmNvbS9odWdnaW5nZmFjZS9vcGVuLXIxKQotIFtVbnNsb3RoICgyLTN4IGZhc3RlcildKGh0dHBzOi8vZG9jcy51bnNsb3RoLmFpLykKCiMjIPCfk50gVmVyc2lvbgoKKip2MS4wLjAqKiAtIEluaXRpYWwgcmVsZWFzZSAoSmFudWFyeSAyMDI1KQoKIyMg8J+RqOKAjfCfkrsgTWFpbnRhaW5lZCBCeQoKT3JjaGVzdHJhIFJlc2VhcmNoCkZvciBxdWVzdGlvbnMgb3IgaW1wcm92ZW1lbnRzLCBzZWUgaHR0cHM6Ly9vcmNoZXN0cmEuY29tCgotLS0KCioqTGljZW5zZToqKiBNSVQKKipMYXN0IFVwZGF0ZWQ6KiogSmFudWFyeSAyMDI1Cg==
+# GRPO/RL Training Skill
+
+**Expert-level guidance for Group Relative Policy Optimization with TRL**
+
+## 📁 Skill Structure
+
+```
+grpo-rl-training/
+├── SKILL.md                              # Main skill documentation (READ THIS FIRST)
+├── README.md                             # This file
+├── templates/
+│   └── basic_grpo_training.py            # Production-ready training template
+└── examples/
+    └── reward_functions_library.py       # 20+ reward function examples
+```
+
+## 🚀 Quick Start
+
+1. **Read SKILL.md** - Comprehensive guide with all concepts and patterns
+2. **Copy `templates/basic_grpo_training.py`** - Start with working code
+3. **Browse `examples/reward_functions_library.py`** - Pick reward functions for your task
+4. **Modify for your use case** - Adapt dataset, rewards, and config
+
+## 💡 What's Inside
+
+### SKILL.md (Main Documentation)
+- Core GRPO concepts and algorithm fundamentals
+- Complete implementation workflow (dataset → rewards → training → deployment)
+- 10+ reward function examples with code
+- Hyperparameter tuning guide
+- Training insights (loss behavior, metrics, debugging)
+- Troubleshooting guide
+- Production best practices
+
+### Templates
+- **basic_grpo_training.py**: Minimal, production-ready training script
+  - Uses Qwen 2.5 1.5B Instruct
+  - 3 reward functions (format + correctness)
+  - LoRA for efficient training
+  - Fully documented and ready to run
+
+### Examples
+- **reward_functions_library.py**: 20+ battle-tested reward functions
+  - Correctness rewards (exact match, fuzzy match, numeric, code execution)
+  - Format rewards (XML, JSON, strict/soft)
+  - Length rewards (ideal length, min/max)
+  - Style rewards (reasoning quality, citations, repetition penalty)
+  - Combined rewards (multi-objective optimization)
+  - Preset collections for common tasks
+
+## 📖 Usage for Agents
+
+When this skill is loaded in your agent's context:
+
+1. **Always read SKILL.md first** before implementing
+2. **Start simple** - Use length-based reward to validate setup
+3. **Build incrementally** - Add one reward function at a time
+4. **Reference examples** - Copy patterns from reward_functions_library.py
+5. **Monitor training** - Watch reward metrics (not loss!)
+
+## 🎯 Common Use Cases
+
+| Task Type | Recommended Rewards | Template |
+|-----------|---------------------|----------|
+| Math reasoning | `MATH_REASONING_REWARDS` preset | basic_grpo_training.py |
+| Code generation | `CODE_GENERATION_REWARDS` preset | Modify dataset in template |
+| Summarization | `SUMMARIZATION_REWARDS` preset | Adjust prompts + rewards |
+| Q&A | `QA_REWARDS` preset | Use fuzzy match + citations |
+
+## ⚠️ Critical Reminders
+
+- **Loss goes UP during training** - This is normal (it's KL divergence)
+- **Use 3-5 reward functions** - Single rewards often fail
+- **Test rewards before training** - Debug each function independently
+- **Monitor reward_std** - Should stay > 0.1 (avoid mode collapse)
+- **Start with num_generations=4-8** - Scale up if GPU allows
+
+## 🔗 External Resources
+
+- [TRL Documentation](https://huggingface.co/docs/trl)
+- [DeepSeek R1 Paper](https://arxiv.org/abs/2501.12948)
+- [Open R1 Implementation](https://github.com/huggingface/open-r1)
+- [Unsloth (2-3x faster)](https://docs.unsloth.ai/)
+
+## 📝 Version
+
+**v1.0.0** - Initial release (January 2025)
+
+## 👨‍💻 Maintained By
+
+Orchestra Research
+For questions or improvements, see https://orchestra.com
+
+---
+
+**License:** MIT
+**Last Updated:** January 2025

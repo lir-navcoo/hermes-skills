@@ -1,1 +1,3 @@
-LS0tCmRlc2NyaXB0aW9uOiBLbm93bGVkZ2UgYW5kIFRvb2xzIGZvciBNYWNoaW5lIExlYXJuaW5nIE9wZXJhdGlvbnMgLSB0b29scyBhbmQgZnJhbWV3b3JrcyBmb3IgdHJhaW5pbmcsIGZpbmUtdHVuaW5nLCBkZXBsb3lpbmcsIGFuZCBvcHRpbWl6aW5nIE1ML0FJIG1vZGVscwotLS0K
+---
+description: Knowledge and Tools for Machine Learning Operations - tools and frameworks for training, fine-tuning, deploying, and optimizing ML/AI models
+---

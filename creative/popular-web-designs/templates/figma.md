@@ -1,1 +1,233 @@
-IyBEZXNpZ24gU3lzdGVtOiBGaWdtYQoKCj4gKipIZXJtZXMgQWdlbnQg4oCUIEltcGxlbWVudGF0aW9uIE5vdGVzKioKPgo+IFRoZSBvcmlnaW5hbCBzaXRlIHVzZXMgcHJvcHJpZXRhcnkgZm9udHMuIEZvciBzZWxmLWNvbnRhaW5lZCBIVE1MIG91dHB1dCwgdXNlIHRoZXNlIENETiBzdWJzdGl0dXRlczoKPiAtICoqUHJpbWFyeToqKiBgSW50ZXJgIHwgKipNb25vOioqIGBKZXRCcmFpbnMgTW9ub2AKPiAtICoqRm9udCBzdGFjayAoQ1NTKToqKiBgZm9udC1mYW1pbHk6ICdJbnRlcicsIHN5c3RlbS11aSwgLWFwcGxlLXN5c3RlbSwgJ1NlZ29lIFVJJywgUm9ib3RvLCBzYW5zLXNlcmlmO2AKPiAtICoqTW9ubyBzdGFjayAoQ1NTKToqKiBgZm9udC1mYW1pbHk6ICdKZXRCcmFpbnMgTW9ubycsIHVpLW1vbm9zcGFjZSwgU0ZNb25vLVJlZ3VsYXIsIE1lbmxvLCBNb25hY28sIENvbnNvbGFzLCAnTGliZXJhdGlvbiBNb25vJywgJ0NvdXJpZXIgTmV3JywgbW9ub3NwYWNlO2AKPiBgYGBodG1sCj4gPGxpbmsgaHJlZj0iaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3MyP2ZhbWlseT1JbnRlcjp3Z2h0QDMwMDs0MDA7NTAwOzYwMDs3MDAmZmFtaWx5PUpldEJyYWlucytNb25vOndnaHRANDAwOzUwMCZkaXNwbGF5PXN3YXAiIHJlbD0ic3R5bGVzaGVldCI+Cj4gYGBgCj4gVXNlIGB3cml0ZV9maWxlYCB0byBjcmVhdGUgSFRNTCwgc2VydmUgdmlhIGBnZW5lcmF0aXZlLXdpZGdldHNgIHNraWxsIChjbG91ZGZsYXJlZCB0dW5uZWwpLgo+IFZlcmlmeSB2aXN1YWwgYWNjdXJhY3kgd2l0aCBgYnJvd3Nlcl92aXNpb25gIGFmdGVyIGdlbmVyYXRpbmcuCgojIyAxLiBWaXN1YWwgVGhlbWUgJiBBdG1vc3BoZXJlCgpGaWdtYSdzIGludGVyZmFjZSBpcyB0aGUgZGVzaWduIHRvb2wgdGhhdCBkZXNpZ25lZCBpdHNlbGYg4oCUIGEgbWFzdGVyY2xhc3MgaW4gdHlwb2dyYXBoaWMgc29waGlzdGljYXRpb24gd2hlcmUgYSBjdXN0b20gdmFyaWFibGUgZm9udCAoZmlnbWFTYW5zKSBtb2R1bGF0ZXMgYmV0d2VlbiByYXpvci10aGluICh3ZWlnaHQgMzIwKSBhbmQgYm9sZCAod2VpZ2h0IDcwMCkgd2l0aCBzdG9wcyBhdCB1bnVzdWFsIGludGVybWVkaWF0ZXMgKDMzMCwgMzQwLCA0NTAsIDQ4MCwgNTQwKSB0aGF0IG1vc3QgdHlwZSBzeXN0ZW1zIG5ldmVyIGV4cGxvcmUuIFRoaXMgZ3JhbnVsYXIgd2VpZ2h0IGNvbnRyb2wgZ2l2ZXMgZXZlcnkgdGV4dCBlbGVtZW50IGEgcHJlY2lzZWx5IGNhbGlicmF0ZWQgdmlzdWFsIHdlaWdodCwgY3JlYXRpbmcgaGllcmFyY2h5IHRocm91Z2ggbWljcm8tZGlmZmVyZW5jZXMgcmF0aGVyIHRoYW4gdGhlIGJsdW50IGluc3RydW1lbnQgb2YgInJlZ3VsYXIgdnMgYm9sZC4iCgpUaGUgcGFnZSBwcmVzZW50cyBhIGZhc2NpbmF0aW5nIGR1YWxpdHk6IHRoZSBpbnRlcmZhY2UgY2hyb21lIGlzIHN0cmljdGx5IGJsYWNrLWFuZC13aGl0ZSAobGl0ZXJhbGx5IG9ubHkgYCMwMDAwMDBgIGFuZCBgI2ZmZmZmZmAgZGV0ZWN0ZWQgYXMgY29sb3JzKSwgd2hpbGUgdGhlIGhlcm8gc2VjdGlvbiBhbmQgcHJvZHVjdCBzaG93Y2FzZXMgZXhwbG9kZSB3aXRoIHZpYnJhbnQgbXVsdGktY29sb3IgZ3JhZGllbnRzIOKAlCBlbGVjdHJpYyBncmVlbnMsIGJyaWdodCB5ZWxsb3dzLCBkZWVwIHB1cnBsZXMsIGhvdCBwaW5rcy4gVGhpcyBzZXBhcmF0aW9uIG1lYW5zIHRoZSBkZXNpZ24gc3lzdGVtIGl0c2VsZiBpcyBjb2xvcmxlc3MsIHRyZWF0aW5nIHRoZSBwcm9kdWN0J3MgY29sb3JmdWwgb3V0cHV0IGFzIHRoZSBoZXJvIGNvbnRlbnQuIEZpZ21hJ3MgbWFya2V0aW5nIHBhZ2UgaXMgZXNzZW50aWFsbHkgYSB3aGl0ZSBnYWxsZXJ5IHdhbGwgZGlzcGxheWluZyBjb2xvcmZ1bCBhcnQuCgpXaGF0IG1ha2VzIEZpZ21hIGRpc3RpbmN0aXZlIGJleW9uZCB0aGUgdmFyaWFibGUgZm9udCBpcyBpdHMgY2lyY2xlLWFuZC1waWxsIGdlb21ldHJ5LiBCdXR0b25zIHVzZSA1MHB4IHJhZGl1cyAocGlsbCkgb3IgNTAlIChwZXJmZWN0IGNpcmNsZSBmb3IgaWNvbiBidXR0b25zKSwgY3JlYXRpbmcgYW4gb3JnYW5pYywgdG9vbC1wYWxldHRlLWxpa2UgZmVlbC4gVGhlIGRhc2hlZC1vdXRsaW5lIGZvY3VzIGluZGljYXRvciAoYGRhc2hlZCAycHhgKSBpcyBhIGRlbGliZXJhdGUgZGVzaWduIGNob2ljZSB0aGF0IGVjaG9lcyBzZWxlY3Rpb24gaGFuZGxlcyBpbiB0aGUgRmlnbWEgZWRpdG9yIGl0c2VsZiDigJQgdGhlIHdlYnNpdGUncyBVSSBsYW5ndWFnZSByZWZlcmVuY2VzIHRoZSBwcm9kdWN0J3MgVUkgbGFuZ3VhZ2UuCgoqKktleSBDaGFyYWN0ZXJpc3RpY3M6KioKLSBDdXN0b20gdmFyaWFibGUgZm9udCAoZmlnbWFTYW5zKSB3aXRoIHVudXN1YWwgd2VpZ2h0IHN0b3BzOiAzMjAsIDMzMCwgMzQwLCA0NTAsIDQ4MCwgNTQwLCA3MDAKLSBTdHJpY3RseSBibGFjay1hbmQtd2hpdGUgaW50ZXJmYWNlIGNocm9tZSDigJQgY29sb3IgZXhpc3RzIG9ubHkgaW4gcHJvZHVjdCBjb250ZW50Ci0gZmlnbWFNb25vIGZvciB1cHBlcmNhc2UgdGVjaG5pY2FsIGxhYmVscyB3aXRoIHdpZGUgbGV0dGVyLXNwYWNpbmcKLSBQaWxsICg1MHB4KSBhbmQgY2lyY3VsYXIgKDUwJSkgYnV0dG9uIGdlb21ldHJ5Ci0gRGFzaGVkIGZvY3VzIG91dGxpbmVzIGVjaG9pbmcgRmlnbWEncyBlZGl0b3Igc2VsZWN0aW9uIGhhbmRsZXMKLSBWaWJyYW50IG11bHRpLWNvbG9yIGhlcm8gZ3JhZGllbnRzIChncmVlbiwgeWVsbG93LCBwdXJwbGUsIHBpbmspCi0gT3BlblR5cGUgYCJrZXJuImAgZmVhdHVyZSBlbmFibGVkIGdsb2JhbGx5Ci0gTmVnYXRpdmUgbGV0dGVyLXNwYWNpbmcgdGhyb3VnaG91dCDigJQgZXZlbiBib2R5IHRleHQgYXQgLTAuMTRweCB0byAtMC4yNnB4CgojIyAyLiBDb2xvciBQYWxldHRlICYgUm9sZXMKCiMjIyBQcmltYXJ5Ci0gKipQdXJlIEJsYWNrKiogKGAjMDAwMDAwYCk6IEFsbCB0ZXh0LCBhbGwgc29saWQgYnV0dG9ucywgYWxsIGJvcmRlcnMuIFRoZSBzb2xlICJjb2xvciIgb2YgdGhlIGludGVyZmFjZS4KLSAqKlB1cmUgV2hpdGUqKiAoYCNmZmZmZmZgKTogQWxsIGJhY2tncm91bmRzLCB3aGl0ZSBidXR0b25zLCB0ZXh0IG9uIGRhcmsgc3VyZmFjZXMuIFRoZSBvdGhlciBoYWxmIG9mIHRoZSBiaW5hcnkuCgoqTm90ZTogRmlnbWEncyBtYXJrZXRpbmcgc2l0ZSB1c2VzIE9OTFkgdGhlc2UgdHdvIGNvbG9ycyBmb3IgaXRzIGludGVyZmFjZSBsYXllci4gQWxsIHZpYnJhbnQgY29sb3JzIGFwcGVhciBleGNsdXNpdmVseSBpbiBwcm9kdWN0IHNjcmVlbnNob3RzLCBoZXJvIGdyYWRpZW50cywgYW5kIGVtYmVkZGVkIGNvbnRlbnQuKgoKIyMjIFN1cmZhY2UgJiBCYWNrZ3JvdW5kCi0gKipQdXJlIFdoaXRlKiogKGAjZmZmZmZmYCk6IFByaW1hcnkgcGFnZSBiYWNrZ3JvdW5kIGFuZCBjYXJkIHN1cmZhY2VzLgotICoqR2xhc3MgQmxhY2sqKiAoYHJnYmEoMCwgMCwgMCwgMC4wOClgKTogU3VidGxlIGRhcmsgb3ZlcmxheSBmb3Igc2Vjb25kYXJ5IGNpcmN1bGFyIGJ1dHRvbnMgYW5kIGdsYXNzIGVmZmVjdHMuCi0gKipHbGFzcyBXaGl0ZSoqIChgcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjE2KWApOiBGcm9zdGVkIGdsYXNzIG92ZXJsYXkgZm9yIGJ1dHRvbnMgb24gZGFyay9jb2xvcmVkIHN1cmZhY2VzLgoKIyMjIEdyYWRpZW50IFN5c3RlbQotICoqSGVybyBHcmFkaWVudCoqOiBBIHZpYnJhbnQgbXVsdGktc3RvcCBncmFkaWVudCB1c2luZyBlbGVjdHJpYyBncmVlbiwgYnJpZ2h0IHllbGxvdywgZGVlcCBwdXJwbGUsIGFuZCBob3QgcGluay4gVGhpcyBncmFkaWVudCBpcyB0aGUgdmlzdWFsIHNpZ25hdHVyZSBvZiB0aGUgaGVybyBzZWN0aW9uIOKAlCBpdCByZXByZXNlbnRzIHRoZSBjcmVhdGl2ZSBwb3NzaWJpbGl0aWVzIG9mIHRoZSB0b29sLgotICoqUHJvZHVjdCBTZWN0aW9uIEdyYWRpZW50cyoqOiBJbmRpdmlkdWFsIHByb2R1Y3QgYXJlYXMgKERlc2lnbiwgRGV2IE1vZGUsIFByb3RvdHlwaW5nKSBtYXkgdXNlIGRpc3RpbmN0IGNvbG9yIHRoZW1lcyBpbiB0aGVpciBzaG93Y2FzZXMuCgojIyAzLiBUeXBvZ3JhcGh5IFJ1bGVzCgojIyMgRm9udCBGYW1pbHkKLSAqKlByaW1hcnkqKjogYGZpZ21hU2Fuc2AsIHdpdGggZmFsbGJhY2tzOiBgZmlnbWFTYW5zIEZhbGxiYWNrLCBTRiBQcm8gRGlzcGxheSwgc3lzdGVtLXVpLCBoZWx2ZXRpY2FgCi0gKipNb25vc3BhY2UgLyBMYWJlbHMqKjogYGZpZ21hTW9ub2AsIHdpdGggZmFsbGJhY2tzOiBgZmlnbWFNb25vIEZhbGxiYWNrLCBTRiBNb25vLCBtZW5sb2AKCiMjIyBIaWVyYXJjaHkKCnwgUm9sZSB8IEZvbnQgfCBTaXplIHwgV2VpZ2h0IHwgTGluZSBIZWlnaHQgfCBMZXR0ZXIgU3BhY2luZyB8IE5vdGVzIHwKfC0tLS0tLXwtLS0tLS18LS0tLS0tfC0tLS0tLS0tfC0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tLXwtLS0tLS0tfAp8IERpc3BsYXkgLyBIZXJvIHwgZmlnbWFTYW5zIHwgODZweCAoNS4zOHJlbSkgfCA0MDAgfCAxLjAwICh0aWdodCkgfCAtMS43MnB4IHwgTWF4aW11bSBpbXBhY3QsIGV4dHJlbWUgdHJhY2tpbmcgfAp8IFNlY3Rpb24gSGVhZGluZyB8IGZpZ21hU2FucyB8IDY0cHggKDRyZW0pIHwgNDAwIHwgMS4xMCAodGlnaHQpIHwgLTAuOTZweCB8IEZlYXR1cmUgc2VjdGlvbiB0aXRsZXMgfAp8IFN1Yi1oZWFkaW5nIHwgZmlnbWFTYW5zIHwgMjZweCAoMS42M3JlbSkgfCA1NDAgfCAxLjM1IHwgLTAuMjZweCB8IEVtcGhhc2l6ZWQgc2VjdGlvbiB0ZXh0IHwKfCBTdWItaGVhZGluZyBMaWdodCB8IGZpZ21hU2FucyB8IDI2cHggKDEuNjNyZW0pIHwgMzQwIHwgMS4zNSB8IC0wLjI2cHggfCBMaWdodC13ZWlnaHQgc2VjdGlvbiB0ZXh0IHwKfCBGZWF0dXJlIFRpdGxlIHwgZmlnbWFTYW5zIHwgMjRweCAoMS41cmVtKSB8IDcwMCB8IDEuNDUgfCBub3JtYWwgfCBCb2xkIGNhcmQgaGVhZGluZ3MgfAp8IEJvZHkgTGFyZ2UgfCBmaWdtYVNhbnMgfCAyMHB4ICgxLjI1cmVtKSB8IDMzMOKAkzQ1MCB8IDEuMzDigJMxLjQwIHwgLTAuMXB4IHRvIC0wLjE0cHggfCBEZXNjcmlwdGlvbnMsIGludHJvcyB8CnwgQm9keSAvIEJ1dHRvbiB8IGZpZ21hU2FucyB8IDE2cHggKDFyZW0pIHwgMzMw4oCTNDAwIHwgMS40MOKAkzEuNDUgfCAtMC4xNHB4IHRvIG5vcm1hbCB8IFN0YW5kYXJkIGJvZHksIG5hdiwgYnV0dG9ucyB8CnwgQm9keSBMaWdodCB8IGZpZ21hU2FucyB8IDE4cHggKDEuMTNyZW0pIHwgMzIwIHwgMS40NSB8IC0wLjI2cHggdG8gbm9ybWFsIHwgTGlnaHQtd2VpZ2h0IGJvZHkgdGV4dCB8CnwgTW9ubyBMYWJlbCB8IGZpZ21hTW9ubyB8IDE4cHggKDEuMTNyZW0pIHwgNDAwIHwgMS4zMCAodGlnaHQpIHwgMC41NHB4IHwgVXBwZXJjYXNlIHNlY3Rpb24gbGFiZWxzIHwKfCBNb25vIFNtYWxsIHwgZmlnbWFNb25vIHwgMTJweCAoMC43NXJlbSkgfCA0MDAgfCAxLjAwICh0aWdodCkgfCAwLjZweCB8IFVwcGVyY2FzZSB0aW55IHRhZ3MgfAoKIyMjIFByaW5jaXBsZXMKLSAqKlZhcmlhYmxlIGZvbnQgcHJlY2lzaW9uKio6IGZpZ21hU2FucyB1c2VzIHdlaWdodHMgdGhhdCBtb3N0IHN5c3RlbXMgbmV2ZXIgdG91Y2gg4oCUIDMyMCwgMzMwLCAzNDAsIDQ1MCwgNDgwLCA1NDAuIFRoaXMgY3JlYXRlcyBoaWVyYXJjaHkgdGhyb3VnaCBzdWJ0bGUgd2VpZ2h0IGRpZmZlcmVuY2VzIHJhdGhlciB0aGFuIGRyYW1hdGljIGp1bXBzLiBUaGUgZGlmZmVyZW5jZSBiZXR3ZWVuIDMzMCBhbmQgMzQwIGlzIG5lYXJseSBpbXBlcmNlcHRpYmxlIGJ1dCBzdHJ1Y3R1cmFsbHkgc2lnbmlmaWNhbnQuCi0gKipMaWdodCBhcyB0aGUgYmFzZSoqOiBNb3N0IGJvZHkgdGV4dCB1c2VzIDMyMOKAkzM0MCAobGlnaHRlciB0aGFuIHR5cGljYWwgNDAwICJyZWd1bGFyIiksIGNyZWF0aW5nIGFuIGV0aGVyZWFsLCBhaXJ5IHJlYWRpbmcgZXhwZXJpZW5jZSB0aGF0IG1hdGNoZXMgdGhlIGRlc2lnbi10b29sIGFlc3RoZXRpYy4KLSAqKktlcm4gZXZlcnl3aGVyZSoqOiBFdmVyeSB0ZXh0IGVsZW1lbnQgZW5hYmxlcyBPcGVuVHlwZSBgImtlcm4iYCBmZWF0dXJlIOKAlCBrZXJuaW5nIGlzIG5vdCBvcHRpb25hbCwgaXQncyBzdHJ1Y3R1cmFsLgotICoqTmVnYXRpdmUgdHJhY2tpbmcgYnkgZGVmYXVsdCoqOiBFdmVuIGJvZHkgdGV4dCB1c2VzIC0wLjFweCB0byAtMC4yNnB4IGxldHRlci1zcGFjaW5nLCBjcmVhdGluZyB1bml2ZXJzYWxseSB0aWdodCB0ZXh0LiBEaXNwbGF5IHRleHQgY29tcHJlc3NlcyBmdXJ0aGVyIHRvIC0wLjk2cHggYW5kIC0xLjcycHguCi0gKipNb25vIGZvciBzdHJ1Y3R1cmUqKjogZmlnbWFNb25vIGluIHVwcGVyY2FzZSB3aXRoIHBvc2l0aXZlIGxldHRlci1zcGFjaW5nICgwLjU0cHjigJMwLjZweCkgY3JlYXRlcyB0ZWNobmljYWwgc2lnbnBvc3QgbGFiZWxzLgoKIyMgNC4gQ29tcG9uZW50IFN0eWxpbmdzCgojIyMgQnV0dG9ucwoKKipCbGFjayBTb2xpZCAoUGlsbCkqKgotIEJhY2tncm91bmQ6IFB1cmUgQmxhY2sgKGAjMDAwMDAwYCkKLSBUZXh0OiBQdXJlIFdoaXRlIChgI2ZmZmZmZmApCi0gUmFkaXVzOiBjaXJjbGUgKDUwJSkgZm9yIGljb24gYnV0dG9ucwotIEZvY3VzOiBkYXNoZWQgMnB4IG91dGxpbmUKLSBNYXhpbXVtIGVtcGhhc2lzCgoqKldoaXRlIFBpbGwqKgotIEJhY2tncm91bmQ6IFB1cmUgV2hpdGUgKGAjZmZmZmZmYCkKLSBUZXh0OiBQdXJlIEJsYWNrIChgIzAwMDAwMGApCi0gUGFkZGluZzogOHB4IDE4cHggMTBweCAoYXN5bW1ldHJpYyB2ZXJ0aWNhbCkKLSBSYWRpdXM6IHBpbGwgKDUwcHgpCi0gRm9jdXM6IGRhc2hlZCAycHggb3V0bGluZQotIFN0YW5kYXJkIENUQSBvbiBkYXJrL2NvbG9yZWQgc3VyZmFjZXMKCioqR2xhc3MgRGFyayoqCi0gQmFja2dyb3VuZDogYHJnYmEoMCwgMCwgMCwgMC4wOClgIChzdWJ0bGUgZGFyayBvdmVybGF5KQotIFRleHQ6IFB1cmUgQmxhY2sKLSBSYWRpdXM6IGNpcmNsZSAoNTAlKQotIEZvY3VzOiBkYXNoZWQgMnB4IG91dGxpbmUKLSBTZWNvbmRhcnkgYWN0aW9uIG9uIGxpZ2h0IHN1cmZhY2VzCgoqKkdsYXNzIExpZ2h0KioKLSBCYWNrZ3JvdW5kOiBgcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjE2KWAgKGZyb3N0ZWQgZ2xhc3MpCi0gVGV4dDogUHVyZSBXaGl0ZQotIFJhZGl1czogY2lyY2xlICg1MCUpCi0gRm9jdXM6IGRhc2hlZCAycHggb3V0bGluZQotIFNlY29uZGFyeSBhY3Rpb24gb24gZGFyay9jb2xvcmVkIHN1cmZhY2VzCgojIyMgQ2FyZHMgJiBDb250YWluZXJzCi0gQmFja2dyb3VuZDogUHVyZSBXaGl0ZQotIEJvcmRlcjogbm9uZSBvciBtaW5pbWFsCi0gUmFkaXVzOiA2cHggKHNtYWxsIGNvbnRhaW5lcnMpLCA4cHggKGltYWdlcywgY2FyZHMsIGRpYWxvZ3MpCi0gU2hhZG93OiBzdWJ0bGUgdG8gbWVkaXVtIGVsZXZhdGlvbiBlZmZlY3RzCi0gUHJvZHVjdCBzY3JlZW5zaG90cyBhcyBjYXJkIGNvbnRlbnQKCiMjIyBOYXZpZ2F0aW9uCi0gQ2xlYW4gaG9yaXpvbnRhbCBuYXYgb24gd2hpdGUKLSBMb2dvOiBGaWdtYSB3b3JkbWFyayBpbiBibGFjawotIFByb2R1Y3QgdGFiczogcGlsbC1zaGFwZWQgKDUwcHgpIHRhYiBuYXZpZ2F0aW9uCi0gTGlua3M6IGJsYWNrIHRleHQsIHVuZGVybGluZSAxcHggZGVjb3JhdGlvbgotIENUQTogQmxhY2sgcGlsbCBidXR0b24KLSBIb3ZlcjogdGV4dCBjb2xvciB2aWEgQ1NTIHZhcmlhYmxlCgojIyMgRGlzdGluY3RpdmUgQ29tcG9uZW50cwoKKipQcm9kdWN0IFRhYiBCYXIqKgotIEhvcml6b250YWwgcGlsbC1zaGFwZWQgdGFicyAoNTBweCByYWRpdXMpCi0gRWFjaCB0YWIgcmVwcmVzZW50cyBhIEZpZ21hIHByb2R1Y3QgYXJlYSAoRGVzaWduLCBEZXYgTW9kZSwgUHJvdG90eXBpbmcsIGV0Yy4pCi0gQWN0aXZlIHRhYiBoaWdobGlnaHRlZAoKKipIZXJvIEdyYWRpZW50IFNlY3Rpb24qKgotIEZ1bGwtd2lkdGggdmlicmFudCBtdWx0aS1jb2xvciBncmFkaWVudCBiYWNrZ3JvdW5kCi0gV2hpdGUgdGV4dCBvdmVybGF5IHdpdGggODZweCBkaXNwbGF5IGhlYWRpbmcKLSBQcm9kdWN0IHNjcmVlbnNob3RzIGZsb2F0aW5nIHdpdGhpbiB0aGUgZ3JhZGllbnQKCioqRGFzaGVkIEZvY3VzIEluZGljYXRvcnMqKgotIEFsbCBpbnRlcmFjdGl2ZSBlbGVtZW50cyB1c2UgYGRhc2hlZCAycHhgIG91dGxpbmUgb24gZm9jdXMKLSBSZWZlcmVuY2VzIHRoZSBzZWxlY3Rpb24gaGFuZGxlcyBpbiB0aGUgRmlnbWEgZWRpdG9yCi0gQSBtZXRhLWRlc2lnbiBjaG9pY2UgY29ubmVjdGluZyB3ZWJzaXRlIGFuZCBwcm9kdWN0CgojIyA1LiBMYXlvdXQgUHJpbmNpcGxlcwoKIyMjIFNwYWNpbmcgU3lzdGVtCi0gQmFzZSB1bml0OiA4cHgKLSBTY2FsZTogMXB4LCAycHgsIDRweCwgNC41cHgsIDhweCwgMTBweCwgMTJweCwgMTZweCwgMThweCwgMjRweCwgMzJweCwgNDBweCwgNDZweCwgNDhweCwgNTBweAoKIyMjIEdyaWQgJiBDb250YWluZXIKLSBNYXggY29udGFpbmVyIHdpZHRoOiB1cCB0byAxOTIwcHgKLSBIZXJvOiBmdWxsLXdpZHRoIGdyYWRpZW50IHdpdGggY2VudGVyZWQgY29udGVudAotIFByb2R1Y3Qgc2VjdGlvbnM6IGFsdGVybmF0aW5nIHNob3djYXNlcwotIEZvb3RlcjogZGFyayBmdWxsLXdpZHRoIHNlY3Rpb24KLSBSZXNwb25zaXZlIGZyb20gNTU5cHggdG8gMTkyMHB4CgojIyMgV2hpdGVzcGFjZSBQaGlsb3NvcGh5Ci0gKipHYWxsZXJ5LWxpa2UgcGFjaW5nKio6IEdlbmVyb3VzIHNwYWNpbmcgbGV0cyBlYWNoIHByb2R1Y3Qgc2VjdGlvbiBicmVhdGhlIGFzIGl0cyBvd24gZXhoaWJpdC4KLSAqKkNvbG9yIHNlY3Rpb25zIGFzIHZpc3VhbCBicmVhdGhpbmcqKjogVGhlIGdyYWRpZW50IGhlcm8gYW5kIHByb2R1Y3Qgc2hvd2Nhc2VzIHByb3ZpZGUgY2hyb21hdGljIHJlbGllZiBiZXR3ZWVuIHRoZSBtb25vY2hyb21lIGludGVyZmFjZSBzZWN0aW9ucy4KCiMjIyBCb3JkZXIgUmFkaXVzIFNjYWxlCi0gTWluaW1hbCAoMnB4KTogU21hbGwgbGluayBlbGVtZW50cwotIFN1YnRsZSAoNnB4KTogU21hbGwgY29udGFpbmVycywgZGl2aWRlcnMKLSBDb21mb3J0YWJsZSAoOHB4KTogQ2FyZHMsIGltYWdlcywgZGlhbG9ncwotIFBpbGwgKDUwcHgpOiBUYWIgYnV0dG9ucywgQ1RBcwotIENpcmNsZSAoNTAlKTogSWNvbiBidXR0b25zLCBjaXJjdWxhciBlbGVtZW50cwoKIyMgNi4gRGVwdGggJiBFbGV2YXRpb24KCnwgTGV2ZWwgfCBUcmVhdG1lbnQgfCBVc2UgfAp8LS0tLS0tLXwtLS0tLS0tLS0tLXwtLS0tLXwKfCBGbGF0IChMZXZlbCAwKSB8IE5vIHNoYWRvdyB8IFBhZ2UgYmFja2dyb3VuZCwgbW9zdCB0ZXh0IHwKfCBTdXJmYWNlIChMZXZlbCAxKSB8IFdoaXRlIGNhcmQgb24gZ3JhZGllbnQvZGFyayBzZWN0aW9uIHwgQ2FyZHMsIHByb2R1Y3Qgc2hvd2Nhc2VzIHwKfCBFbGV2YXRlZCAoTGV2ZWwgMikgfCBTdWJ0bGUgc2hhZG93IHwgRmxvYXRpbmcgY2FyZHMsIGhvdmVyIHN0YXRlcyB8CgoqKlNoYWRvdyBQaGlsb3NvcGh5Kio6IEZpZ21hIHVzZXMgc2hhZG93cyBzcGFyaW5nbHkuIFRoZSBwcmltYXJ5IGRlcHRoIG1lY2hhbmlzbXMgYXJlICoqYmFja2dyb3VuZCBjb250cmFzdCoqICh3aGl0ZSBjb250ZW50IG9uIGNvbG9yZnVsL2Rhcmsgc2VjdGlvbnMpIGFuZCB0aGUgaW5oZXJlbnQgZGltZW5zaW9uYWxpdHkgb2YgdGhlIHByb2R1Y3Qgc2NyZWVuc2hvdHMgdGhlbXNlbHZlcy4KCiMjIDcuIERvJ3MgYW5kIERvbid0cwoKIyMjIERvCi0gVXNlIGZpZ21hU2FucyB3aXRoIHByZWNpc2UgdmFyaWFibGUgd2VpZ2h0cyAoMzIw4oCTNTQwKSDigJQgdGhlIGdyYW51bGFyIHdlaWdodCBjb250cm9sIElTIHRoZSBkZXNpZ24KLSBLZWVwIHRoZSBpbnRlcmZhY2Ugc3RyaWN0bHkgYmxhY2stYW5kLXdoaXRlIOKAlCBjb2xvciBjb21lcyBmcm9tIHByb2R1Y3QgY29udGVudCBvbmx5Ci0gVXNlIHBpbGwgKDUwcHgpIGFuZCBjaXJjdWxhciAoNTAlKSBnZW9tZXRyeSBmb3IgYWxsIGludGVyYWN0aXZlIGVsZW1lbnRzCi0gQXBwbHkgZGFzaGVkIDJweCBmb2N1cyBvdXRsaW5lcyDigJQgdGhlIHNpZ25hdHVyZSBhY2Nlc3NpYmlsaXR5IHBhdHRlcm4KLSBFbmFibGUgYCJrZXJuImAgZmVhdHVyZSBvbiBhbGwgdGV4dAotIFVzZSBmaWdtYU1vbm8gaW4gdXBwZXJjYXNlIHdpdGggcG9zaXRpdmUgbGV0dGVyLXNwYWNpbmcgZm9yIGxhYmVscwotIEFwcGx5IG5lZ2F0aXZlIGxldHRlci1zcGFjaW5nIHRocm91Z2hvdXQgKC0wLjFweCB0byAtMS43MnB4KQoKIyMjIERvbid0Ci0gRG9uJ3QgYWRkIGludGVyZmFjZSBjb2xvcnMg4oCUIHRoZSBtb25vY2hyb21lIHBhbGV0dGUgaXMgYWJzb2x1dGUKLSBEb24ndCB1c2Ugc3RhbmRhcmQgZm9udCB3ZWlnaHRzICg0MDAsIDUwMCwgNjAwLCA3MDApIOKAlCB1c2UgdGhlIHZhcmlhYmxlIGZvbnQncyB1bmlxdWUgc3RvcHMgKDMyMCwgMzMwLCAzNDAsIDQ1MCwgNDgwLCA1NDApCi0gRG9uJ3QgdXNlIHNoYXJwIGNvcm5lcnMgb24gYnV0dG9ucyDigJQgcGlsbCBhbmQgY2lyY3VsYXIgZ2VvbWV0cnkgb25seQotIERvbid0IHVzZSBzb2xpZCBmb2N1cyBvdXRsaW5lcyDigJQgZGFzaGVkIGlzIHRoZSBzaWduYXR1cmUKLSBEb24ndCBpbmNyZWFzZSBib2R5IGZvbnQgd2VpZ2h0IGFib3ZlIDQ1MCDigJQgdGhlIGxpZ2h0LXdlaWdodCBhZXN0aGV0aWMgaXMgY29yZQotIERvbid0IHVzZSBwb3NpdGl2ZSBsZXR0ZXItc3BhY2luZyBvbiBib2R5IHRleHQg4oCUIGl0J3MgYWx3YXlzIG5lZ2F0aXZlCgojIyA4LiBSZXNwb25zaXZlIEJlaGF2aW9yCgojIyMgQnJlYWtwb2ludHMKfCBOYW1lIHwgV2lkdGggfCBLZXkgQ2hhbmdlcyB8CnwtLS0tLS18LS0tLS0tLXwtLS0tLS0tLS0tLS0tfAp8IFNtYWxsIE1vYmlsZSB8IDw1NjBweCB8IENvbXBhY3QgbGF5b3V0LCBzdGFja2VkIHwKfCBUYWJsZXQgfCA1NjDigJM3NjhweCB8IE1pbm9yIGFkanVzdG1lbnRzIHwKfCBTbWFsbCBEZXNrdG9wIHwgNzY44oCTOTYwcHggfCAyLWNvbHVtbiBsYXlvdXRzIHwKfCBEZXNrdG9wIHwgOTYw4oCTMTI4MHB4IHwgU3RhbmRhcmQgbGF5b3V0IHwKfCBMYXJnZSBEZXNrdG9wIHwgMTI4MOKAkzE0NDBweCB8IEV4cGFuZGVkIHwKfCBVbHRyYS13aWRlIHwgMTQ0MOKAkzE5MjBweCB8IE1heGltdW0gd2lkdGggfAoKIyMjIENvbGxhcHNpbmcgU3RyYXRlZ3kKLSBIZXJvIHRleHQ6IDg2cHgg4oaSIDY0cHgg4oaSIDQ4cHgKLSBQcm9kdWN0IHRhYnM6IGhvcml6b250YWwgc2Nyb2xsIG9uIG1vYmlsZQotIEZlYXR1cmUgc2VjdGlvbnM6IHN0YWNrZWQgc2luZ2xlIGNvbHVtbgotIEZvb3RlcjogbXVsdGktY29sdW1uIOKGkiBzdGFja2VkCgojIyA5LiBBZ2VudCBQcm9tcHQgR3VpZGUKCiMjIyBRdWljayBDb2xvciBSZWZlcmVuY2UKLSBFdmVyeXRoaW5nOiAiUHVyZSBCbGFjayAoIzAwMDAwMCkiIGFuZCAiUHVyZSBXaGl0ZSAoI2ZmZmZmZikiCi0gR2xhc3MgRGFyazogInJnYmEoMCwgMCwgMCwgMC4wOCkiCi0gR2xhc3MgTGlnaHQ6ICJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMTYpIgoKIyMjIEV4YW1wbGUgQ29tcG9uZW50IFByb21wdHMKLSAiQ3JlYXRlIGEgaGVybyBvbiBhIHZpYnJhbnQgbXVsdGktY29sb3IgZ3JhZGllbnQgKGdyZWVuLCB5ZWxsb3csIHB1cnBsZSwgcGluaykuIEhlYWRsaW5lIGF0IDg2cHggZmlnbWFTYW5zIHdlaWdodCA0MDAsIGxpbmUtaGVpZ2h0IDEuMCwgbGV0dGVyLXNwYWNpbmcgLTEuNzJweC4gV2hpdGUgdGV4dC4gV2hpdGUgcGlsbCBDVEEgYnV0dG9uICg1MHB4IHJhZGl1cywgOHB4IDE4cHggcGFkZGluZykuIgotICJEZXNpZ24gYSBwcm9kdWN0IHRhYiBiYXIgd2l0aCBwaWxsLXNoYXBlZCBidXR0b25zICg1MHB4IHJhZGl1cykuIEFjdGl2ZTogQmxhY2sgYmcsIHdoaXRlIHRleHQuIEluYWN0aXZlOiB0cmFuc3BhcmVudCwgYmxhY2sgdGV4dC4gZmlnbWFTYW5zIGF0IDIwcHggd2VpZ2h0IDQ4MC4iCi0gIkJ1aWxkIGEgc2VjdGlvbiBsYWJlbDogZmlnbWFNb25vIDE4cHgsIHVwcGVyY2FzZSwgbGV0dGVyLXNwYWNpbmcgMC41NHB4LCBibGFjayB0ZXh0LiBLZXJuIGVuYWJsZWQuIgotICJDcmVhdGUgYm9keSB0ZXh0IGF0IDIwcHggZmlnbWFTYW5zIHdlaWdodCAzMzAsIGxpbmUtaGVpZ2h0IDEuNDAsIGxldHRlci1zcGFjaW5nIC0wLjE0cHguIFB1cmUgQmxhY2sgb24gd2hpdGUuIgoKIyMjIEl0ZXJhdGlvbiBHdWlkZQoxLiBVc2UgdmFyaWFibGUgZm9udCB3ZWlnaHQgc3RvcHMgcHJlY2lzZWx5OiAzMjAsIDMzMCwgMzQwLCA0NTAsIDQ4MCwgNTQwLCA3MDAKMi4gSW50ZXJmYWNlIGlzIGFsd2F5cyBibGFjayArIHdoaXRlIOKAlCBuZXZlciBhZGQgY29sb3JzIHRvIGNocm9tZQozLiBEYXNoZWQgZm9jdXMgb3V0bGluZXMsIG5vdCBzb2xpZAo0LiBMZXR0ZXItc3BhY2luZyBpcyBhbHdheXMgbmVnYXRpdmUgb24gYm9keSwgYWx3YXlzIHBvc2l0aXZlIG9uIG1vbm8gbGFiZWxzCjUuIFBpbGwgKDUwcHgpIGZvciBidXR0b25zL3RhYnMsIGNpcmNsZSAoNTAlKSBmb3IgaWNvbiBidXR0b25zCg==
+# Design System: Figma
+
+
+> **Hermes Agent — Implementation Notes**
+>
+> The original site uses proprietary fonts. For self-contained HTML output, use these CDN substitutes:
+> - **Primary:** `Inter` | **Mono:** `JetBrains Mono`
+> - **Font stack (CSS):** `font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;`
+> - **Mono stack (CSS):** `font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;`
+> ```html
+> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+> ```
+> Use `write_file` to create HTML, serve via `generative-widgets` skill (cloudflared tunnel).
+> Verify visual accuracy with `browser_vision` after generating.
+
+## 1. Visual Theme & Atmosphere
+
+Figma's interface is the design tool that designed itself — a masterclass in typographic sophistication where a custom variable font (figmaSans) modulates between razor-thin (weight 320) and bold (weight 700) with stops at unusual intermediates (330, 340, 450, 480, 540) that most type systems never explore. This granular weight control gives every text element a precisely calibrated visual weight, creating hierarchy through micro-differences rather than the blunt instrument of "regular vs bold."
+
+The page presents a fascinating duality: the interface chrome is strictly black-and-white (literally only `#000000` and `#ffffff` detected as colors), while the hero section and product showcases explode with vibrant multi-color gradients — electric greens, bright yellows, deep purples, hot pinks. This separation means the design system itself is colorless, treating the product's colorful output as the hero content. Figma's marketing page is essentially a white gallery wall displaying colorful art.
+
+What makes Figma distinctive beyond the variable font is its circle-and-pill geometry. Buttons use 50px radius (pill) or 50% (perfect circle for icon buttons), creating an organic, tool-palette-like feel. The dashed-outline focus indicator (`dashed 2px`) is a deliberate design choice that echoes selection handles in the Figma editor itself — the website's UI language references the product's UI language.
+
+**Key Characteristics:**
+- Custom variable font (figmaSans) with unusual weight stops: 320, 330, 340, 450, 480, 540, 700
+- Strictly black-and-white interface chrome — color exists only in product content
+- figmaMono for uppercase technical labels with wide letter-spacing
+- Pill (50px) and circular (50%) button geometry
+- Dashed focus outlines echoing Figma's editor selection handles
+- Vibrant multi-color hero gradients (green, yellow, purple, pink)
+- OpenType `"kern"` feature enabled globally
+- Negative letter-spacing throughout — even body text at -0.14px to -0.26px
+
+## 2. Color Palette & Roles
+
+### Primary
+- **Pure Black** (`#000000`): All text, all solid buttons, all borders. The sole "color" of the interface.
+- **Pure White** (`#ffffff`): All backgrounds, white buttons, text on dark surfaces. The other half of the binary.
+
+*Note: Figma's marketing site uses ONLY these two colors for its interface layer. All vibrant colors appear exclusively in product screenshots, hero gradients, and embedded content.*
+
+### Surface & Background
+- **Pure White** (`#ffffff`): Primary page background and card surfaces.
+- **Glass Black** (`rgba(0, 0, 0, 0.08)`): Subtle dark overlay for secondary circular buttons and glass effects.
+- **Glass White** (`rgba(255, 255, 255, 0.16)`): Frosted glass overlay for buttons on dark/colored surfaces.
+
+### Gradient System
+- **Hero Gradient**: A vibrant multi-stop gradient using electric green, bright yellow, deep purple, and hot pink. This gradient is the visual signature of the hero section — it represents the creative possibilities of the tool.
+- **Product Section Gradients**: Individual product areas (Design, Dev Mode, Prototyping) may use distinct color themes in their showcases.
+
+## 3. Typography Rules
+
+### Font Family
+- **Primary**: `figmaSans`, with fallbacks: `figmaSans Fallback, SF Pro Display, system-ui, helvetica`
+- **Monospace / Labels**: `figmaMono`, with fallbacks: `figmaMono Fallback, SF Mono, menlo`
+
+### Hierarchy
+
+| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
+|------|------|------|--------|-------------|----------------|-------|
+| Display / Hero | figmaSans | 86px (5.38rem) | 400 | 1.00 (tight) | -1.72px | Maximum impact, extreme tracking |
+| Section Heading | figmaSans | 64px (4rem) | 400 | 1.10 (tight) | -0.96px | Feature section titles |
+| Sub-heading | figmaSans | 26px (1.63rem) | 540 | 1.35 | -0.26px | Emphasized section text |
+| Sub-heading Light | figmaSans | 26px (1.63rem) | 340 | 1.35 | -0.26px | Light-weight section text |
+| Feature Title | figmaSans | 24px (1.5rem) | 700 | 1.45 | normal | Bold card headings |
+| Body Large | figmaSans | 20px (1.25rem) | 330–450 | 1.30–1.40 | -0.1px to -0.14px | Descriptions, intros |
+| Body / Button | figmaSans | 16px (1rem) | 330–400 | 1.40–1.45 | -0.14px to normal | Standard body, nav, buttons |
+| Body Light | figmaSans | 18px (1.13rem) | 320 | 1.45 | -0.26px to normal | Light-weight body text |
+| Mono Label | figmaMono | 18px (1.13rem) | 400 | 1.30 (tight) | 0.54px | Uppercase section labels |
+| Mono Small | figmaMono | 12px (0.75rem) | 400 | 1.00 (tight) | 0.6px | Uppercase tiny tags |
+
+### Principles
+- **Variable font precision**: figmaSans uses weights that most systems never touch — 320, 330, 340, 450, 480, 540. This creates hierarchy through subtle weight differences rather than dramatic jumps. The difference between 330 and 340 is nearly imperceptible but structurally significant.
+- **Light as the base**: Most body text uses 320–340 (lighter than typical 400 "regular"), creating an ethereal, airy reading experience that matches the design-tool aesthetic.
+- **Kern everywhere**: Every text element enables OpenType `"kern"` feature — kerning is not optional, it's structural.
+- **Negative tracking by default**: Even body text uses -0.1px to -0.26px letter-spacing, creating universally tight text. Display text compresses further to -0.96px and -1.72px.
+- **Mono for structure**: figmaMono in uppercase with positive letter-spacing (0.54px–0.6px) creates technical signpost labels.
+
+## 4. Component Stylings
+
+### Buttons
+
+**Black Solid (Pill)**
+- Background: Pure Black (`#000000`)
+- Text: Pure White (`#ffffff`)
+- Radius: circle (50%) for icon buttons
+- Focus: dashed 2px outline
+- Maximum emphasis
+
+**White Pill**
+- Background: Pure White (`#ffffff`)
+- Text: Pure Black (`#000000`)
+- Padding: 8px 18px 10px (asymmetric vertical)
+- Radius: pill (50px)
+- Focus: dashed 2px outline
+- Standard CTA on dark/colored surfaces
+
+**Glass Dark**
+- Background: `rgba(0, 0, 0, 0.08)` (subtle dark overlay)
+- Text: Pure Black
+- Radius: circle (50%)
+- Focus: dashed 2px outline
+- Secondary action on light surfaces
+
+**Glass Light**
+- Background: `rgba(255, 255, 255, 0.16)` (frosted glass)
+- Text: Pure White
+- Radius: circle (50%)
+- Focus: dashed 2px outline
+- Secondary action on dark/colored surfaces
+
+### Cards & Containers
+- Background: Pure White
+- Border: none or minimal
+- Radius: 6px (small containers), 8px (images, cards, dialogs)
+- Shadow: subtle to medium elevation effects
+- Product screenshots as card content
+
+### Navigation
+- Clean horizontal nav on white
+- Logo: Figma wordmark in black
+- Product tabs: pill-shaped (50px) tab navigation
+- Links: black text, underline 1px decoration
+- CTA: Black pill button
+- Hover: text color via CSS variable
+
+### Distinctive Components
+
+**Product Tab Bar**
+- Horizontal pill-shaped tabs (50px radius)
+- Each tab represents a Figma product area (Design, Dev Mode, Prototyping, etc.)
+- Active tab highlighted
+
+**Hero Gradient Section**
+- Full-width vibrant multi-color gradient background
+- White text overlay with 86px display heading
+- Product screenshots floating within the gradient
+
+**Dashed Focus Indicators**
+- All interactive elements use `dashed 2px` outline on focus
+- References the selection handles in the Figma editor
+- A meta-design choice connecting website and product
+
+## 5. Layout Principles
+
+### Spacing System
+- Base unit: 8px
+- Scale: 1px, 2px, 4px, 4.5px, 8px, 10px, 12px, 16px, 18px, 24px, 32px, 40px, 46px, 48px, 50px
+
+### Grid & Container
+- Max container width: up to 1920px
+- Hero: full-width gradient with centered content
+- Product sections: alternating showcases
+- Footer: dark full-width section
+- Responsive from 559px to 1920px
+
+### Whitespace Philosophy
+- **Gallery-like pacing**: Generous spacing lets each product section breathe as its own exhibit.
+- **Color sections as visual breathing**: The gradient hero and product showcases provide chromatic relief between the monochrome interface sections.
+
+### Border Radius Scale
+- Minimal (2px): Small link elements
+- Subtle (6px): Small containers, dividers
+- Comfortable (8px): Cards, images, dialogs
+- Pill (50px): Tab buttons, CTAs
+- Circle (50%): Icon buttons, circular elements
+
+## 6. Depth & Elevation
+
+| Level | Treatment | Use |
+|-------|-----------|-----|
+| Flat (Level 0) | No shadow | Page background, most text |
+| Surface (Level 1) | White card on gradient/dark section | Cards, product showcases |
+| Elevated (Level 2) | Subtle shadow | Floating cards, hover states |
+
+**Shadow Philosophy**: Figma uses shadows sparingly. The primary depth mechanisms are **background contrast** (white content on colorful/dark sections) and the inherent dimensionality of the product screenshots themselves.
+
+## 7. Do's and Don'ts
+
+### Do
+- Use figmaSans with precise variable weights (320–540) — the granular weight control IS the design
+- Keep the interface strictly black-and-white — color comes from product content only
+- Use pill (50px) and circular (50%) geometry for all interactive elements
+- Apply dashed 2px focus outlines — the signature accessibility pattern
+- Enable `"kern"` feature on all text
+- Use figmaMono in uppercase with positive letter-spacing for labels
+- Apply negative letter-spacing throughout (-0.1px to -1.72px)
+
+### Don't
+- Don't add interface colors — the monochrome palette is absolute
+- Don't use standard font weights (400, 500, 600, 700) — use the variable font's unique stops (320, 330, 340, 450, 480, 540)
+- Don't use sharp corners on buttons — pill and circular geometry only
+- Don't use solid focus outlines — dashed is the signature
+- Don't increase body font weight above 450 — the light-weight aesthetic is core
+- Don't use positive letter-spacing on body text — it's always negative
+
+## 8. Responsive Behavior
+
+### Breakpoints
+| Name | Width | Key Changes |
+|------|-------|-------------|
+| Small Mobile | <560px | Compact layout, stacked |
+| Tablet | 560–768px | Minor adjustments |
+| Small Desktop | 768–960px | 2-column layouts |
+| Desktop | 960–1280px | Standard layout |
+| Large Desktop | 1280–1440px | Expanded |
+| Ultra-wide | 1440–1920px | Maximum width |
+
+### Collapsing Strategy
+- Hero text: 86px → 64px → 48px
+- Product tabs: horizontal scroll on mobile
+- Feature sections: stacked single column
+- Footer: multi-column → stacked
+
+## 9. Agent Prompt Guide
+
+### Quick Color Reference
+- Everything: "Pure Black (#000000)" and "Pure White (#ffffff)"
+- Glass Dark: "rgba(0, 0, 0, 0.08)"
+- Glass Light: "rgba(255, 255, 255, 0.16)"
+
+### Example Component Prompts
+- "Create a hero on a vibrant multi-color gradient (green, yellow, purple, pink). Headline at 86px figmaSans weight 400, line-height 1.0, letter-spacing -1.72px. White text. White pill CTA button (50px radius, 8px 18px padding)."
+- "Design a product tab bar with pill-shaped buttons (50px radius). Active: Black bg, white text. Inactive: transparent, black text. figmaSans at 20px weight 480."
+- "Build a section label: figmaMono 18px, uppercase, letter-spacing 0.54px, black text. Kern enabled."
+- "Create body text at 20px figmaSans weight 330, line-height 1.40, letter-spacing -0.14px. Pure Black on white."
+
+### Iteration Guide
+1. Use variable font weight stops precisely: 320, 330, 340, 450, 480, 540, 700
+2. Interface is always black + white — never add colors to chrome
+3. Dashed focus outlines, not solid
+4. Letter-spacing is always negative on body, always positive on mono labels
+5. Pill (50px) for buttons/tabs, circle (50%) for icon buttons

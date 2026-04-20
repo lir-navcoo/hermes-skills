@@ -1,1 +1,494 @@
-IyBNb2RhbCBUcm91Ymxlc2hvb3RpbmcgR3VpZGUKCiMjIEluc3RhbGxhdGlvbiBJc3N1ZXMKCiMjIyBBdXRoZW50aWNhdGlvbiBmYWlscwoKKipFcnJvcioqOiBgbW9kYWwgc2V0dXBgIGRvZXNuJ3QgY29tcGxldGUgb3IgdG9rZW4gaXMgaW52YWxpZAoKKipTb2x1dGlvbnMqKjoKYGBgYmFzaAojIFJlLWF1dGhlbnRpY2F0ZQptb2RhbCB0b2tlbiBuZXcKCiMgQ2hlY2sgY3VycmVudCB0b2tlbgptb2RhbCBjb25maWcgc2hvdwoKIyBTZXQgdG9rZW4gdmlhIGVudmlyb25tZW50CmV4cG9ydCBNT0RBTF9UT0tFTl9JRD1hay0uLi4KZXhwb3J0IE1PREFMX1RPS0VOX1NFQ1JFVD1hcy0uLi4KYGBgCgojIyMgUGFja2FnZSBpbnN0YWxsYXRpb24gaXNzdWVzCgoqKkVycm9yKio6IGBwaXAgaW5zdGFsbCBtb2RhbGAgZmFpbHMKCioqU29sdXRpb25zKio6CmBgYGJhc2gKIyBVcGdyYWRlIHBpcApwaXAgaW5zdGFsbCAtLXVwZ3JhZGUgcGlwCgojIEluc3RhbGwgd2l0aCBzcGVjaWZpYyBQeXRob24gdmVyc2lvbgpweXRob24zLjExIC1tIHBpcCBpbnN0YWxsIG1vZGFsCgojIEluc3RhbGwgZnJvbSB3aGVlbApwaXAgaW5zdGFsbCBtb2RhbCAtLXByZWZlci1iaW5hcnkKYGBgCgojIyBDb250YWluZXIgSW1hZ2UgSXNzdWVzCgojIyMgSW1hZ2UgYnVpbGQgZmFpbHMKCioqRXJyb3IqKjogYEltYWdlQnVpbGRlckVycm9yOiBGYWlsZWQgdG8gYnVpbGQgaW1hZ2VgCgoqKlNvbHV0aW9ucyoqOgpgYGBweXRob24KIyBQaW4gcGFja2FnZSB2ZXJzaW9ucyB0byBhdm9pZCBjb25mbGljdHMKaW1hZ2UgPSBtb2RhbC5JbWFnZS5kZWJpYW5fc2xpbSgpLnBpcF9pbnN0YWxsKAogICAgInRvcmNoPT0yLjEuMCIsCiAgICAidHJhbnNmb3JtZXJzPT00LjM2LjAiLCAgIyBQaW4gdmVyc2lvbnMKICAgICJhY2NlbGVyYXRlPT0wLjI1LjAiCikKCiMgVXNlIGNvbXBhdGlibGUgQ1VEQSB2ZXJzaW9ucwppbWFnZSA9IG1vZGFsLkltYWdlLmZyb21fcmVnaXN0cnkoCiAgICAibnZpZGlhL2N1ZGE6MTIuMS4wLWN1ZG5uOC1ydW50aW1lLXVidW50dTIyLjA0IiwgICMgTWF0Y2ggUHlUb3JjaCBDVURBCiAgICBhZGRfcHl0aG9uPSIzLjExIgopCmBgYAoKIyMjIERlcGVuZGVuY3kgY29uZmxpY3RzCgoqKkVycm9yKio6IGBFUlJPUjogQ2Fubm90IGluc3RhbGwgcGFja2FnZSBkdWUgdG8gY29uZmxpY3RpbmcgZGVwZW5kZW5jaWVzYAoKKipTb2x1dGlvbnMqKjoKYGBgcHl0aG9uCiMgTGF5ZXIgZGVwZW5kZW5jaWVzIHNlcGFyYXRlbHkKYmFzZSA9IG1vZGFsLkltYWdlLmRlYmlhbl9zbGltKCkucGlwX2luc3RhbGwoInRvcmNoIikKbWwgPSBiYXNlLnBpcF9pbnN0YWxsKCJ0cmFuc2Zvcm1lcnMiKSAgIyBJbnN0YWxsIGFmdGVyIHRvcmNoCgojIFVzZSB1diBmb3IgYmV0dGVyIHJlc29sdXRpb24KaW1hZ2UgPSBtb2RhbC5JbWFnZS5kZWJpYW5fc2xpbSgpLnV2X3BpcF9pbnN0YWxsKAogICAgInRvcmNoIiwgInRyYW5zZm9ybWVycyIKKQpgYGAKCiMjIyBMYXJnZSBpbWFnZSBidWlsZHMgdGltZW91dAoKKipFcnJvcioqOiBJbWFnZSBidWlsZCBleGNlZWRzIHRpbWUgbGltaXQKCioqU29sdXRpb25zKio6CmBgYHB5dGhvbgojIFNwbGl0IGludG8gbXVsdGlwbGUgbGF5ZXJzIChiZXR0ZXIgY2FjaGluZykKYmFzZSA9IG1vZGFsLkltYWdlLmRlYmlhbl9zbGltKCkucGlwX2luc3RhbGwoInRvcmNoIikgICMgQ2FjaGVkCm1sID0gYmFzZS5waXBfaW5zdGFsbCgidHJhbnNmb3JtZXJzIiwgImRhdGFzZXRzIikgICAgICAjIENhY2hlZAphcHAgPSBtbC5jb3B5X2xvY2FsX2RpcigiLi9zcmMiLCAiL2FwcCIpICAgICAgICAgICAgICAgIyBSZWJ1aWxkcyBvbiBjb2RlIGNoYW5nZQoKIyBEb3dubG9hZCBtb2RlbHMgZHVyaW5nIGJ1aWxkLCBub3QgcnVudGltZQppbWFnZSA9IG1vZGFsLkltYWdlLmRlYmlhbl9zbGltKCkucGlwX2luc3RhbGwoInRyYW5zZm9ybWVycyIpLnJ1bl9jb21tYW5kcygKICAgICJweXRob24gLWMgJ2Zyb20gdHJhbnNmb3JtZXJzIGltcG9ydCBBdXRvTW9kZWw7IEF1dG9Nb2RlbC5mcm9tX3ByZXRyYWluZWQoXCJiZXJ0LWJhc2VcIiknIgopCmBgYAoKIyMgR1BVIElzc3VlcwoKIyMjIEdQVSBub3QgYXZhaWxhYmxlCgoqKkVycm9yKio6IGBSdW50aW1lRXJyb3I6IENVREEgbm90IGF2YWlsYWJsZWAKCioqU29sdXRpb25zKio6CmBgYHB5dGhvbgojIEVuc3VyZSBHUFUgaXMgc3BlY2lmaWVkCkBhcHAuZnVuY3Rpb24oZ3B1PSJUNCIpICAjIE11c3Qgc3BlY2lmeSBHUFUKZGVmIG15X2Z1bmN0aW9uKCk6CiAgICBpbXBvcnQgdG9yY2gKICAgIGFzc2VydCB0b3JjaC5jdWRhLmlzX2F2YWlsYWJsZSgpCgojIENoZWNrIENVREEgY29tcGF0aWJpbGl0eSBpbiBpbWFnZQppbWFnZSA9IG1vZGFsLkltYWdlLmZyb21fcmVnaXN0cnkoCiAgICAibnZpZGlhL2N1ZGE6MTIuMS4wLWN1ZG5uOC1kZXZlbC11YnVudHUyMi4wNCIsCiAgICBhZGRfcHl0aG9uPSIzLjExIgopLnBpcF9pbnN0YWxsKAogICAgInRvcmNoIiwKICAgIGluZGV4X3VybD0iaHR0cHM6Ly9kb3dubG9hZC5weXRvcmNoLm9yZy93aGwvY3UxMjEiICAjIE1hdGNoIENVREEKKQpgYGAKCiMjIyBHUFUgb3V0IG9mIG1lbW9yeQoKKipFcnJvcioqOiBgdG9yY2guY3VkYS5PdXRPZk1lbW9yeUVycm9yOiBDVURBIG91dCBvZiBtZW1vcnlgCgoqKlNvbHV0aW9ucyoqOgpgYGBweXRob24KIyBVc2UgbGFyZ2VyIEdQVQpAYXBwLmZ1bmN0aW9uKGdwdT0iQTEwMC04MEdCIikgICMgTW9yZSBWUkFNCmRlZiB0cmFpbigpOgogICAgcGFzcwoKIyBFbmFibGUgbWVtb3J5IG9wdGltaXphdGlvbgpAYXBwLmZ1bmN0aW9uKGdwdT0iQTEwMCIpCmRlZiBtZW1vcnlfb3B0aW1pemVkKCk6CiAgICBpbXBvcnQgdG9yY2gKICAgIHRvcmNoLmJhY2tlbmRzLmN1ZGEuZW5hYmxlX2ZsYXNoX3NkcChUcnVlKQoKICAgICMgVXNlIGdyYWRpZW50IGNoZWNrcG9pbnRpbmcKICAgIG1vZGVsLmdyYWRpZW50X2NoZWNrcG9pbnRpbmdfZW5hYmxlKCkKCiAgICAjIE1peGVkIHByZWNpc2lvbgogICAgd2l0aCB0b3JjaC5hdXRvY2FzdChkZXZpY2VfdHlwZT0iY3VkYSIsIGR0eXBlPXRvcmNoLmZsb2F0MTYpOgogICAgICAgIG91dHB1dHMgPSBtb2RlbCgqKmlucHV0cykKYGBgCgojIyMgV3JvbmcgR1BVIGFsbG9jYXRlZAoKKipFcnJvcioqOiBHb3QgZGlmZmVyZW50IEdQVSB0aGFuIHJlcXVlc3RlZAoKKipTb2x1dGlvbnMqKjoKYGBgcHl0aG9uCiMgVXNlIHN0cmljdCBHUFUgc2VsZWN0aW9uCkBhcHAuZnVuY3Rpb24oZ3B1PSJIMTAwISIpICAjIEgxMDAhIHByZXZlbnRzIGF1dG8tdXBncmFkZSB0byBIMjAwCgojIFNwZWNpZnkgZXhhY3QgbWVtb3J5IHZhcmlhbnQKQGFwcC5mdW5jdGlvbihncHU9IkExMDAtODBHQiIpICAjIE5vdCBqdXN0ICJBMTAwIgoKIyBDaGVjayBHUFUgYXQgcnVudGltZQpAYXBwLmZ1bmN0aW9uKGdwdT0iQTEwMCIpCmRlZiBjaGVja19ncHUoKToKICAgIGltcG9ydCBzdWJwcm9jZXNzCiAgICByZXN1bHQgPSBzdWJwcm9jZXNzLnJ1bihbIm52aWRpYS1zbWkiXSwgY2FwdHVyZV9vdXRwdXQ9VHJ1ZSwgdGV4dD1UcnVlKQogICAgcHJpbnQocmVzdWx0LnN0ZG91dCkKYGBgCgojIyBDb2xkIFN0YXJ0IElzc3VlcwoKIyMjIFNsb3cgY29sZCBzdGFydHMKCioqUHJvYmxlbSoqOiBGaXJzdCByZXF1ZXN0IHRha2VzIHRvbyBsb25nCgoqKlNvbHV0aW9ucyoqOgpgYGBweXRob24KIyBLZWVwIGNvbnRhaW5lcnMgd2FybQpAYXBwLmZ1bmN0aW9uKAogICAgY29udGFpbmVyX2lkbGVfdGltZW91dD02MDAsICAjIEtlZXAgd2FybSAxMCBtaW4KICAgIGtlZXBfd2FybT0xICAgICAgICAgICAgICAgICAgIyBBbHdheXMga2VlcCAxIGNvbnRhaW5lciByZWFkeQopCmRlZiBsb3dfbGF0ZW5jeSgpOgogICAgcGFzcwoKIyBMb2FkIG1vZGVsIGR1cmluZyBjb250YWluZXIgc3RhcnQKQGFwcC5jbHMoZ3B1PSJBMTAwIikKY2xhc3MgTW9kZWw6CiAgICBAbW9kYWwuZW50ZXIoKQogICAgZGVmIGxvYWQoc2VsZik6CiAgICAgICAgIyBUaGlzIHJ1bnMgb25jZSBhdCBjb250YWluZXIgc3RhcnQsIG5vdCBwZXIgcmVxdWVzdAogICAgICAgIHNlbGYubW9kZWwgPSBsb2FkX2hlYXZ5X21vZGVsKCkKCiMgQ2FjaGUgbW9kZWwgaW4gdm9sdW1lCnZvbHVtZSA9IG1vZGFsLlZvbHVtZS5mcm9tX25hbWUoIm1vZGVscyIsIGNyZWF0ZV9pZl9taXNzaW5nPVRydWUpCgpAYXBwLmZ1bmN0aW9uKHZvbHVtZXM9eyIvY2FjaGUiOiB2b2x1bWV9KQpkZWYgY2FjaGVkX21vZGVsKCk6CiAgICBpZiBvcy5wYXRoLmV4aXN0cygiL2NhY2hlL21vZGVsIik6CiAgICAgICAgbW9kZWwgPSBsb2FkX2Zyb21fZGlzaygiL2NhY2hlL21vZGVsIikKICAgIGVsc2U6CiAgICAgICAgbW9kZWwgPSBkb3dubG9hZF9tb2RlbCgpCiAgICAgICAgc2F2ZV90b19kaXNrKG1vZGVsLCAiL2NhY2hlL21vZGVsIikKICAgICAgICB2b2x1bWUuY29tbWl0KCkKYGBgCgojIyMgQ29udGFpbmVyIGtlZXBzIHJlc3RhcnRpbmcKCioqUHJvYmxlbSoqOiBDb250YWluZXJzIGFyZSBraWxsZWQgYW5kIHJlc3RhcnRlZCBmcmVxdWVudGx5CgoqKlNvbHV0aW9ucyoqOgpgYGBweXRob24KIyBJbmNyZWFzZSBtZW1vcnkKQGFwcC5mdW5jdGlvbihtZW1vcnk9MzI3NjgpICAjIDMyR0IgUkFNCmRlZiBtZW1vcnlfaGVhdnkoKToKICAgIHBhc3MKCiMgSW5jcmVhc2UgdGltZW91dApAYXBwLmZ1bmN0aW9uKHRpbWVvdXQ9MzYwMCkgICMgMSBob3VyCmRlZiBsb25nX3J1bm5pbmcoKToKICAgIHBhc3MKCiMgSGFuZGxlIHNpZ25hbHMgZ3JhY2VmdWxseQppbXBvcnQgc2lnbmFsCgpkZWYgaGFuZGxlcihzaWdudW0sIGZyYW1lKToKICAgIGNsZWFudXAoKQogICAgZXhpdCgwKQoKc2lnbmFsLnNpZ25hbChzaWduYWwuU0lHVEVSTSwgaGFuZGxlcikKYGBgCgojIyBWb2x1bWUgSXNzdWVzCgojIyMgVm9sdW1lIGNoYW5nZXMgbm90IHBlcnNpc3RpbmcKCioqRXJyb3IqKjogRGF0YSB3cml0dGVuIHRvIHZvbHVtZSBkaXNhcHBlYXJzCgoqKlNvbHV0aW9ucyoqOgpgYGBweXRob24Kdm9sdW1lID0gbW9kYWwuVm9sdW1lLmZyb21fbmFtZSgibXktdm9sdW1lIiwgY3JlYXRlX2lmX21pc3Npbmc9VHJ1ZSkKCkBhcHAuZnVuY3Rpb24odm9sdW1lcz17Ii9kYXRhIjogdm9sdW1lfSkKZGVmIHdyaXRlX2RhdGEoKToKICAgIHdpdGggb3BlbigiL2RhdGEvZmlsZS50eHQiLCAidyIpIGFzIGY6CiAgICAgICAgZi53cml0ZSgiZGF0YSIpCgogICAgIyBDUklUSUNBTDogQ29tbWl0IGNoYW5nZXMhCiAgICB2b2x1bWUuY29tbWl0KCkKYGBgCgojIyMgVm9sdW1lIHJlYWQgc2hvd3Mgc3RhbGUgZGF0YQoKKipFcnJvcioqOiBSZWFkaW5nIG91dGRhdGVkIGRhdGEgZnJvbSB2b2x1bWUKCioqU29sdXRpb25zKio6CmBgYHB5dGhvbgpAYXBwLmZ1bmN0aW9uKHZvbHVtZXM9eyIvZGF0YSI6IHZvbHVtZX0pCmRlZiByZWFkX2RhdGEoKToKICAgICMgUmVsb2FkIHRvIGdldCBsYXRlc3QKICAgIHZvbHVtZS5yZWxvYWQoKQoKICAgIHdpdGggb3BlbigiL2RhdGEvZmlsZS50eHQiLCAiciIpIGFzIGY6CiAgICAgICAgcmV0dXJuIGYucmVhZCgpCmBgYAoKIyMjIFZvbHVtZSBtb3VudCBmYWlscwoKKipFcnJvcioqOiBgVm9sdW1lRXJyb3I6IEZhaWxlZCB0byBtb3VudCB2b2x1bWVgCgoqKlNvbHV0aW9ucyoqOgpgYGBweXRob24KIyBFbnN1cmUgdm9sdW1lIGV4aXN0cwp2b2x1bWUgPSBtb2RhbC5Wb2x1bWUuZnJvbV9uYW1lKCJteS12b2x1bWUiLCBjcmVhdGVfaWZfbWlzc2luZz1UcnVlKQoKIyBVc2UgYWJzb2x1dGUgcGF0aApAYXBwLmZ1bmN0aW9uKHZvbHVtZXM9eyIvZGF0YSI6IHZvbHVtZX0pICAjIE5vdCAiLi9kYXRhIgpkZWYgbXlfZnVuY3Rpb24oKToKICAgIHBhc3MKCiMgQ2hlY2sgdm9sdW1lIGluIGRhc2hib2FyZAojIG1vZGFsIHZvbHVtZSBsaXN0CmBgYAoKIyMgV2ViIEVuZHBvaW50IElzc3VlcwoKIyMjIEVuZHBvaW50IHJldHVybnMgNTAyCgoqKkVycm9yKio6IEdhdGV3YXkgdGltZW91dCBvciBiYWQgZ2F0ZXdheQoKKipTb2x1dGlvbnMqKjoKYGBgcHl0aG9uCiMgSW5jcmVhc2UgdGltZW91dApAYXBwLmZ1bmN0aW9uKHRpbWVvdXQ9MzAwKSAgIyA1IG1pbgpAbW9kYWwud2ViX2VuZHBvaW50KCkKZGVmIHNsb3dfZW5kcG9pbnQoKToKICAgIHBhc3MKCiMgUmV0dXJuIHN0cmVhbWluZyByZXNwb25zZSBmb3IgbG9uZyBvcGVyYXRpb25zCmZyb20gZmFzdGFwaS5yZXNwb25zZXMgaW1wb3J0IFN0cmVhbWluZ1Jlc3BvbnNlCgpAYXBwLmZ1bmN0aW9uKCkKQG1vZGFsLmFzZ2lfYXBwKCkKZGVmIHN0cmVhbWluZ19hcHAoKToKICAgIGFzeW5jIGRlZiBnZW5lcmF0ZSgpOgogICAgICAgIGZvciBpIGluIHJhbmdlKDEwMCk6CiAgICAgICAgICAgIHlpZWxkIGYiZGF0YToge2l9XG5cbiIKICAgICAgICAgICAgYXdhaXQgcHJvY2Vzc19jaHVuayhpKQogICAgcmV0dXJuIFN0cmVhbWluZ1Jlc3BvbnNlKGdlbmVyYXRlKCksIG1lZGlhX3R5cGU9InRleHQvZXZlbnQtc3RyZWFtIikKYGBgCgojIyMgRW5kcG9pbnQgbm90IGFjY2Vzc2libGUKCioqRXJyb3IqKjogNDA0IG9yIGNhbm5vdCByZWFjaCBlbmRwb2ludAoKKipTb2x1dGlvbnMqKjoKYGBgYmFzaAojIENoZWNrIGRlcGxveW1lbnQgc3RhdHVzCm1vZGFsIGFwcCBsaXN0CgojIFJlZGVwbG95Cm1vZGFsIGRlcGxveSBteV9hcHAucHkKCiMgQ2hlY2sgbG9ncwptb2RhbCBhcHAgbG9ncyBteS1hcHAKYGBgCgojIyMgQ09SUyBlcnJvcnMKCioqRXJyb3IqKjogQ3Jvc3Mtb3JpZ2luIHJlcXVlc3QgYmxvY2tlZAoKKipTb2x1dGlvbnMqKjoKYGBgcHl0aG9uCmZyb20gZmFzdGFwaSBpbXBvcnQgRmFzdEFQSQpmcm9tIGZhc3RhcGkubWlkZGxld2FyZS5jb3JzIGltcG9ydCBDT1JTTWlkZGxld2FyZQoKd2ViX2FwcCA9IEZhc3RBUEkoKQp3ZWJfYXBwLmFkZF9taWRkbGV3YXJlKAogICAgQ09SU01pZGRsZXdhcmUsCiAgICBhbGxvd19vcmlnaW5zPVsiKiJdLAogICAgYWxsb3dfY3JlZGVudGlhbHM9VHJ1ZSwKICAgIGFsbG93X21ldGhvZHM9WyIqIl0sCiAgICBhbGxvd19oZWFkZXJzPVsiKiJdLAopCgpAYXBwLmZ1bmN0aW9uKCkKQG1vZGFsLmFzZ2lfYXBwKCkKZGVmIGNvcnNfZW5hYmxlZCgpOgogICAgcmV0dXJuIHdlYl9hcHAKYGBgCgojIyBTZWNyZXQgSXNzdWVzCgojIyMgU2VjcmV0IG5vdCBmb3VuZAoKKipFcnJvcioqOiBgU2VjcmV0Tm90Rm91bmQ6IFNlY3JldCAnbXktc2VjcmV0JyBub3QgZm91bmRgCgoqKlNvbHV0aW9ucyoqOgpgYGBiYXNoCiMgQ3JlYXRlIHNlY3JldCB2aWEgQ0xJCm1vZGFsIHNlY3JldCBjcmVhdGUgbXktc2VjcmV0IEtFWT12YWx1ZQoKIyBMaXN0IHNlY3JldHMKbW9kYWwgc2VjcmV0IGxpc3QKCiMgQ2hlY2sgc2VjcmV0IG5hbWUgbWF0Y2hlcyBleGFjdGx5CmBgYAoKIyMjIFNlY3JldCB2YWx1ZSBub3QgYWNjZXNzaWJsZQoKKipFcnJvcioqOiBFbnZpcm9ubWVudCB2YXJpYWJsZSBpcyBlbXB0eQoKKipTb2x1dGlvbnMqKjoKYGBgcHl0aG9uCiMgRW5zdXJlIHNlY3JldCBpcyBhdHRhY2hlZApAYXBwLmZ1bmN0aW9uKHNlY3JldHM9W21vZGFsLlNlY3JldC5mcm9tX25hbWUoIm15LXNlY3JldCIpXSkKZGVmIHVzZV9zZWNyZXQoKToKICAgIGltcG9ydCBvcwogICAgdmFsdWUgPSBvcy5lbnZpcm9uLmdldCgiS0VZIikgICMgVXNlIGdldCgpIHRvIGhhbmRsZSBtaXNzaW5nCiAgICBpZiBub3QgdmFsdWU6CiAgICAgICAgcmFpc2UgVmFsdWVFcnJvcigiS0VZIG5vdCBzZXQgaW4gc2VjcmV0IikKYGBgCgojIyBTY2hlZHVsaW5nIElzc3VlcwoKIyMjIFNjaGVkdWxlZCBqb2Igbm90IHJ1bm5pbmcKCioqRXJyb3IqKjogQ3JvbiBqb2IgZG9lc24ndCBleGVjdXRlCgoqKlNvbHV0aW9ucyoqOgpgYGBweXRob24KIyBWZXJpZnkgY3JvbiBzeW50YXgKQGFwcC5mdW5jdGlvbihzY2hlZHVsZT1tb2RhbC5Dcm9uKCIwIDAgKiAqICoiKSkgICMgRGFpbHkgYXQgbWlkbmlnaHQgVVRDCmRlZiBkYWlseV9qb2IoKToKICAgIHBhc3MKCiMgQ2hlY2sgdGltZXpvbmUgKE1vZGFsIHVzZXMgVVRDKQojICIwIDggKiAqICoiID0gOGFtIFVUQywgbm90IGxvY2FsIHRpbWUKCiMgRW5zdXJlIGFwcCBpcyBkZXBsb3llZAojIG1vZGFsIGRlcGxveSBteV9hcHAucHkKYGBgCgojIyMgSm9iIHJ1bnMgbXVsdGlwbGUgdGltZXMKCioqUHJvYmxlbSoqOiBTY2hlZHVsZWQgam9iIGV4ZWN1dGVzIG1vcmUgdGhhbiBleHBlY3RlZAoKKipTb2x1dGlvbnMqKjoKYGBgcHl0aG9uCiMgSW1wbGVtZW50IGlkZW1wb3RlbmN5CkBhcHAuZnVuY3Rpb24oc2NoZWR1bGU9bW9kYWwuQ3JvbigiMCAqICogKiAqIikpCmRlZiBob3VybHlfam9iKCk6CiAgICBqb2JfaWQgPSBnZXRfY3VycmVudF9ob3VyX2lkKCkKICAgIGlmIGFscmVhZHlfcHJvY2Vzc2VkKGpvYl9pZCk6CiAgICAgICAgcmV0dXJuCiAgICBwcm9jZXNzKCkKICAgIG1hcmtfcHJvY2Vzc2VkKGpvYl9pZCkKYGBgCgojIyBEZWJ1Z2dpbmcgVGlwcwoKIyMjIEVuYWJsZSBkZWJ1ZyBsb2dnaW5nCgpgYGBweXRob24KaW1wb3J0IGxvZ2dpbmcKbG9nZ2luZy5iYXNpY0NvbmZpZyhsZXZlbD1sb2dnaW5nLkRFQlVHKQoKQGFwcC5mdW5jdGlvbigpCmRlZiBkZWJ1Z19mdW5jdGlvbigpOgogICAgbG9nZ2luZy5kZWJ1ZygiRGVidWcgbWVzc2FnZSIpCiAgICBsb2dnaW5nLmluZm8oIkluZm8gbWVzc2FnZSIpCmBgYAoKIyMjIFZpZXcgY29udGFpbmVyIGxvZ3MKCmBgYGJhc2gKIyBTdHJlYW0gbG9ncwptb2RhbCBhcHAgbG9ncyBteS1hcHAKCiMgVmlldyBzcGVjaWZpYyBmdW5jdGlvbgptb2RhbCBhcHAgbG9ncyBteS1hcHAgLS1mdW5jdGlvbiBteV9mdW5jdGlvbgoKIyBWaWV3IGhpc3RvcmljYWwgbG9ncwptb2RhbCBhcHAgbG9ncyBteS1hcHAgLS1zaW5jZSAxaApgYGAKCiMjIyBUZXN0IGxvY2FsbHkKCmBgYHB5dGhvbgojIFJ1biBmdW5jdGlvbiBsb2NhbGx5IHdpdGhvdXQgTW9kYWwKaWYgX19uYW1lX18gPT0gIl9fbWFpbl9fIjoKICAgIHJlc3VsdCA9IG15X2Z1bmN0aW9uLmxvY2FsKCkgICMgUnVucyBvbiB5b3VyIG1hY2hpbmUKICAgIHByaW50KHJlc3VsdCkKYGBgCgojIyMgSW5zcGVjdCBjb250YWluZXIKCmBgYHB5dGhvbgpAYXBwLmZ1bmN0aW9uKGdwdT0iVDQiKQpkZWYgZGVidWdfZW52aXJvbm1lbnQoKToKICAgIGltcG9ydCBzdWJwcm9jZXNzCiAgICBpbXBvcnQgc3lzCgogICAgIyBTeXN0ZW0gaW5mbwogICAgcHJpbnQoZiJQeXRob246IHtzeXMudmVyc2lvbn0iKQogICAgcHJpbnQoc3VicHJvY2Vzcy5ydW4oWyJudmlkaWEtc21pIl0sIGNhcHR1cmVfb3V0cHV0PVRydWUsIHRleHQ9VHJ1ZSkuc3Rkb3V0KQogICAgcHJpbnQoc3VicHJvY2Vzcy5ydW4oWyJwaXAiLCAibGlzdCJdLCBjYXB0dXJlX291dHB1dD1UcnVlLCB0ZXh0PVRydWUpLnN0ZG91dCkKCiAgICAjIENVREEgaW5mbwogICAgaW1wb3J0IHRvcmNoCiAgICBwcmludChmIkNVREEgYXZhaWxhYmxlOiB7dG9yY2guY3VkYS5pc19hdmFpbGFibGUoKX0iKQogICAgcHJpbnQoZiJDVURBIHZlcnNpb246IHt0b3JjaC52ZXJzaW9uLmN1ZGF9IikKICAgIHByaW50KGYiR1BVOiB7dG9yY2guY3VkYS5nZXRfZGV2aWNlX25hbWUoMCl9IikKYGBgCgojIyBDb21tb24gRXJyb3IgTWVzc2FnZXMKCnwgRXJyb3IgfCBDYXVzZSB8IFNvbHV0aW9uIHwKfC0tLS0tLS18LS0tLS0tLXwtLS0tLS0tLS0tfAp8IGBGdW5jdGlvblRpbWVvdXRFcnJvcmAgfCBGdW5jdGlvbiBleGNlZWRlZCB0aW1lb3V0IHwgSW5jcmVhc2UgYHRpbWVvdXRgIHBhcmFtZXRlciB8CnwgYENvbnRhaW5lck1lbW9yeUV4Y2VlZGVkYCB8IE9PTSBraWxsZWQgfCBJbmNyZWFzZSBgbWVtb3J5YCBwYXJhbWV0ZXIgfAp8IGBJbWFnZUJ1aWxkZXJFcnJvcmAgfCBCdWlsZCBmYWlsZWQgfCBDaGVjayBkZXBlbmRlbmNpZXMsIHBpbiB2ZXJzaW9ucyB8CnwgYFJlc291cmNlRXhoYXVzdGVkYCB8IE5vIEdQVXMgYXZhaWxhYmxlIHwgVXNlIEdQVSBmYWxsYmFja3MsIHRyeSBsYXRlciB8CnwgYEF1dGhlbnRpY2F0aW9uRXJyb3JgIHwgSW52YWxpZCB0b2tlbiB8IFJ1biBgbW9kYWwgdG9rZW4gbmV3YCB8CnwgYFZvbHVtZU5vdEZvdW5kYCB8IFZvbHVtZSBkb2Vzbid0IGV4aXN0IHwgVXNlIGBjcmVhdGVfaWZfbWlzc2luZz1UcnVlYCB8CnwgYFNlY3JldE5vdEZvdW5kYCB8IFNlY3JldCBkb2Vzbid0IGV4aXN0IHwgQ3JlYXRlIHNlY3JldCB2aWEgQ0xJIHwKCiMjIEdldHRpbmcgSGVscAoKMS4gKipEb2N1bWVudGF0aW9uKio6IGh0dHBzOi8vbW9kYWwuY29tL2RvY3MKMi4gKipFeGFtcGxlcyoqOiBodHRwczovL2dpdGh1Yi5jb20vbW9kYWwtbGFicy9tb2RhbC1leGFtcGxlcwozLiAqKkRpc2NvcmQqKjogaHR0cHM6Ly9kaXNjb3JkLmdnL21vZGFsCjQuICoqU3RhdHVzKio6IGh0dHBzOi8vc3RhdHVzLm1vZGFsLmNvbQoKIyMjIFJlcG9ydGluZyBJc3N1ZXMKCkluY2x1ZGU6Ci0gTW9kYWwgY2xpZW50IHZlcnNpb246IGBtb2RhbCAtLXZlcnNpb25gCi0gUHl0aG9uIHZlcnNpb246IGBweXRob24gLS12ZXJzaW9uYAotIEZ1bGwgZXJyb3IgdHJhY2ViYWNrCi0gTWluaW1hbCByZXByb2R1Y2libGUgY29kZQotIEdQVSB0eXBlIGlmIHJlbGV2YW50Cg==
+# Modal Troubleshooting Guide
+
+## Installation Issues
+
+### Authentication fails
+
+**Error**: `modal setup` doesn't complete or token is invalid
+
+**Solutions**:
+```bash
+# Re-authenticate
+modal token new
+
+# Check current token
+modal config show
+
+# Set token via environment
+export MODAL_TOKEN_ID=ak-...
+export MODAL_TOKEN_SECRET=as-...
+```
+
+### Package installation issues
+
+**Error**: `pip install modal` fails
+
+**Solutions**:
+```bash
+# Upgrade pip
+pip install --upgrade pip
+
+# Install with specific Python version
+python3.11 -m pip install modal
+
+# Install from wheel
+pip install modal --prefer-binary
+```
+
+## Container Image Issues
+
+### Image build fails
+
+**Error**: `ImageBuilderError: Failed to build image`
+
+**Solutions**:
+```python
+# Pin package versions to avoid conflicts
+image = modal.Image.debian_slim().pip_install(
+    "torch==2.1.0",
+    "transformers==4.36.0",  # Pin versions
+    "accelerate==0.25.0"
+)
+
+# Use compatible CUDA versions
+image = modal.Image.from_registry(
+    "nvidia/cuda:12.1.0-cudnn8-runtime-ubuntu22.04",  # Match PyTorch CUDA
+    add_python="3.11"
+)
+```
+
+### Dependency conflicts
+
+**Error**: `ERROR: Cannot install package due to conflicting dependencies`
+
+**Solutions**:
+```python
+# Layer dependencies separately
+base = modal.Image.debian_slim().pip_install("torch")
+ml = base.pip_install("transformers")  # Install after torch
+
+# Use uv for better resolution
+image = modal.Image.debian_slim().uv_pip_install(
+    "torch", "transformers"
+)
+```
+
+### Large image builds timeout
+
+**Error**: Image build exceeds time limit
+
+**Solutions**:
+```python
+# Split into multiple layers (better caching)
+base = modal.Image.debian_slim().pip_install("torch")  # Cached
+ml = base.pip_install("transformers", "datasets")      # Cached
+app = ml.copy_local_dir("./src", "/app")               # Rebuilds on code change
+
+# Download models during build, not runtime
+image = modal.Image.debian_slim().pip_install("transformers").run_commands(
+    "python -c 'from transformers import AutoModel; AutoModel.from_pretrained(\"bert-base\")'"
+)
+```
+
+## GPU Issues
+
+### GPU not available
+
+**Error**: `RuntimeError: CUDA not available`
+
+**Solutions**:
+```python
+# Ensure GPU is specified
+@app.function(gpu="T4")  # Must specify GPU
+def my_function():
+    import torch
+    assert torch.cuda.is_available()
+
+# Check CUDA compatibility in image
+image = modal.Image.from_registry(
+    "nvidia/cuda:12.1.0-cudnn8-devel-ubuntu22.04",
+    add_python="3.11"
+).pip_install(
+    "torch",
+    index_url="https://download.pytorch.org/whl/cu121"  # Match CUDA
+)
+```
+
+### GPU out of memory
+
+**Error**: `torch.cuda.OutOfMemoryError: CUDA out of memory`
+
+**Solutions**:
+```python
+# Use larger GPU
+@app.function(gpu="A100-80GB")  # More VRAM
+def train():
+    pass
+
+# Enable memory optimization
+@app.function(gpu="A100")
+def memory_optimized():
+    import torch
+    torch.backends.cuda.enable_flash_sdp(True)
+
+    # Use gradient checkpointing
+    model.gradient_checkpointing_enable()
+
+    # Mixed precision
+    with torch.autocast(device_type="cuda", dtype=torch.float16):
+        outputs = model(**inputs)
+```
+
+### Wrong GPU allocated
+
+**Error**: Got different GPU than requested
+
+**Solutions**:
+```python
+# Use strict GPU selection
+@app.function(gpu="H100!")  # H100! prevents auto-upgrade to H200
+
+# Specify exact memory variant
+@app.function(gpu="A100-80GB")  # Not just "A100"
+
+# Check GPU at runtime
+@app.function(gpu="A100")
+def check_gpu():
+    import subprocess
+    result = subprocess.run(["nvidia-smi"], capture_output=True, text=True)
+    print(result.stdout)
+```
+
+## Cold Start Issues
+
+### Slow cold starts
+
+**Problem**: First request takes too long
+
+**Solutions**:
+```python
+# Keep containers warm
+@app.function(
+    container_idle_timeout=600,  # Keep warm 10 min
+    keep_warm=1                  # Always keep 1 container ready
+)
+def low_latency():
+    pass
+
+# Load model during container start
+@app.cls(gpu="A100")
+class Model:
+    @modal.enter()
+    def load(self):
+        # This runs once at container start, not per request
+        self.model = load_heavy_model()
+
+# Cache model in volume
+volume = modal.Volume.from_name("models", create_if_missing=True)
+
+@app.function(volumes={"/cache": volume})
+def cached_model():
+    if os.path.exists("/cache/model"):
+        model = load_from_disk("/cache/model")
+    else:
+        model = download_model()
+        save_to_disk(model, "/cache/model")
+        volume.commit()
+```
+
+### Container keeps restarting
+
+**Problem**: Containers are killed and restarted frequently
+
+**Solutions**:
+```python
+# Increase memory
+@app.function(memory=32768)  # 32GB RAM
+def memory_heavy():
+    pass
+
+# Increase timeout
+@app.function(timeout=3600)  # 1 hour
+def long_running():
+    pass
+
+# Handle signals gracefully
+import signal
+
+def handler(signum, frame):
+    cleanup()
+    exit(0)
+
+signal.signal(signal.SIGTERM, handler)
+```
+
+## Volume Issues
+
+### Volume changes not persisting
+
+**Error**: Data written to volume disappears
+
+**Solutions**:
+```python
+volume = modal.Volume.from_name("my-volume", create_if_missing=True)
+
+@app.function(volumes={"/data": volume})
+def write_data():
+    with open("/data/file.txt", "w") as f:
+        f.write("data")
+
+    # CRITICAL: Commit changes!
+    volume.commit()
+```
+
+### Volume read shows stale data
+
+**Error**: Reading outdated data from volume
+
+**Solutions**:
+```python
+@app.function(volumes={"/data": volume})
+def read_data():
+    # Reload to get latest
+    volume.reload()
+
+    with open("/data/file.txt", "r") as f:
+        return f.read()
+```
+
+### Volume mount fails
+
+**Error**: `VolumeError: Failed to mount volume`
+
+**Solutions**:
+```python
+# Ensure volume exists
+volume = modal.Volume.from_name("my-volume", create_if_missing=True)
+
+# Use absolute path
+@app.function(volumes={"/data": volume})  # Not "./data"
+def my_function():
+    pass
+
+# Check volume in dashboard
+# modal volume list
+```
+
+## Web Endpoint Issues
+
+### Endpoint returns 502
+
+**Error**: Gateway timeout or bad gateway
+
+**Solutions**:
+```python
+# Increase timeout
+@app.function(timeout=300)  # 5 min
+@modal.web_endpoint()
+def slow_endpoint():
+    pass
+
+# Return streaming response for long operations
+from fastapi.responses import StreamingResponse
+
+@app.function()
+@modal.asgi_app()
+def streaming_app():
+    async def generate():
+        for i in range(100):
+            yield f"data: {i}\n\n"
+            await process_chunk(i)
+    return StreamingResponse(generate(), media_type="text/event-stream")
+```
+
+### Endpoint not accessible
+
+**Error**: 404 or cannot reach endpoint
+
+**Solutions**:
+```bash
+# Check deployment status
+modal app list
+
+# Redeploy
+modal deploy my_app.py
+
+# Check logs
+modal app logs my-app
+```
+
+### CORS errors
+
+**Error**: Cross-origin request blocked
+
+**Solutions**:
+```python
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
+web_app = FastAPI()
+web_app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+@app.function()
+@modal.asgi_app()
+def cors_enabled():
+    return web_app
+```
+
+## Secret Issues
+
+### Secret not found
+
+**Error**: `SecretNotFound: Secret 'my-secret' not found`
+
+**Solutions**:
+```bash
+# Create secret via CLI
+modal secret create my-secret KEY=value
+
+# List secrets
+modal secret list
+
+# Check secret name matches exactly
+```
+
+### Secret value not accessible
+
+**Error**: Environment variable is empty
+
+**Solutions**:
+```python
+# Ensure secret is attached
+@app.function(secrets=[modal.Secret.from_name("my-secret")])
+def use_secret():
+    import os
+    value = os.environ.get("KEY")  # Use get() to handle missing
+    if not value:
+        raise ValueError("KEY not set in secret")
+```
+
+## Scheduling Issues
+
+### Scheduled job not running
+
+**Error**: Cron job doesn't execute
+
+**Solutions**:
+```python
+# Verify cron syntax
+@app.function(schedule=modal.Cron("0 0 * * *"))  # Daily at midnight UTC
+def daily_job():
+    pass
+
+# Check timezone (Modal uses UTC)
+# "0 8 * * *" = 8am UTC, not local time
+
+# Ensure app is deployed
+# modal deploy my_app.py
+```
+
+### Job runs multiple times
+
+**Problem**: Scheduled job executes more than expected
+
+**Solutions**:
+```python
+# Implement idempotency
+@app.function(schedule=modal.Cron("0 * * * *"))
+def hourly_job():
+    job_id = get_current_hour_id()
+    if already_processed(job_id):
+        return
+    process()
+    mark_processed(job_id)
+```
+
+## Debugging Tips
+
+### Enable debug logging
+
+```python
+import logging
+logging.basicConfig(level=logging.DEBUG)
+
+@app.function()
+def debug_function():
+    logging.debug("Debug message")
+    logging.info("Info message")
+```
+
+### View container logs
+
+```bash
+# Stream logs
+modal app logs my-app
+
+# View specific function
+modal app logs my-app --function my_function
+
+# View historical logs
+modal app logs my-app --since 1h
+```
+
+### Test locally
+
+```python
+# Run function locally without Modal
+if __name__ == "__main__":
+    result = my_function.local()  # Runs on your machine
+    print(result)
+```
+
+### Inspect container
+
+```python
+@app.function(gpu="T4")
+def debug_environment():
+    import subprocess
+    import sys
+
+    # System info
+    print(f"Python: {sys.version}")
+    print(subprocess.run(["nvidia-smi"], capture_output=True, text=True).stdout)
+    print(subprocess.run(["pip", "list"], capture_output=True, text=True).stdout)
+
+    # CUDA info
+    import torch
+    print(f"CUDA available: {torch.cuda.is_available()}")
+    print(f"CUDA version: {torch.version.cuda}")
+    print(f"GPU: {torch.cuda.get_device_name(0)}")
+```
+
+## Common Error Messages
+
+| Error | Cause | Solution |
+|-------|-------|----------|
+| `FunctionTimeoutError` | Function exceeded timeout | Increase `timeout` parameter |
+| `ContainerMemoryExceeded` | OOM killed | Increase `memory` parameter |
+| `ImageBuilderError` | Build failed | Check dependencies, pin versions |
+| `ResourceExhausted` | No GPUs available | Use GPU fallbacks, try later |
+| `AuthenticationError` | Invalid token | Run `modal token new` |
+| `VolumeNotFound` | Volume doesn't exist | Use `create_if_missing=True` |
+| `SecretNotFound` | Secret doesn't exist | Create secret via CLI |
+
+## Getting Help
+
+1. **Documentation**: https://modal.com/docs
+2. **Examples**: https://github.com/modal-labs/modal-examples
+3. **Discord**: https://discord.gg/modal
+4. **Status**: https://status.modal.com
+
+### Reporting Issues
+
+Include:
+- Modal client version: `modal --version`
+- Python version: `python --version`
+- Full error traceback
+- Minimal reproducible code
+- GPU type if relevant

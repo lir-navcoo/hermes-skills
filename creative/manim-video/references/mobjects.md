@@ -1,1 +1,333 @@
-IyBNb2JqZWN0cyBSZWZlcmVuY2UKCkV2ZXJ5dGhpbmcgdmlzaWJsZSBvbiBzY3JlZW4gaXMgYSBNb2JqZWN0LiBUaGV5IGhhdmUgcG9zaXRpb24sIGNvbG9yLCBvcGFjaXR5LCBhbmQgY2FuIGJlIGFuaW1hdGVkLgoKIyMgVGV4dAoKYGBgcHl0aG9uCnRpdGxlID0gVGV4dCgiSGVsbG8gV29ybGQiLCBmb250X3NpemU9NDgsIGNvbG9yPUJMVUUpCmVxID0gTWF0aFRleChyIkUgPSBtY14yIiwgZm9udF9zaXplPTQwKQoKIyBNdWx0aS1wYXJ0IChmb3Igc2VsZWN0aXZlIGNvbG9yaW5nKQplcSA9IE1hdGhUZXgociJhXjIiLCByIisiLCByImJeMiIsIHIiPSIsIHIiY14yIikKZXFbMF0uc2V0X2NvbG9yKFJFRCkKZXFbNF0uc2V0X2NvbG9yKEJMVUUpCgojIE1peGVkIHRleHQgYW5kIG1hdGgKdCA9IFRleChyIlRoZSBhcmVhIGlzICRccGkgcl4yJCIsIGZvbnRfc2l6ZT0zNikKCiMgU3R5bGVkIG1hcmt1cAp0ID0gTWFya3VwVGV4dCgnPHNwYW4gZm9yZWdyb3VuZD0iIzU4QzRERCI+Qmx1ZTwvc3Bhbj4gdGV4dCcsIGZvbnRfc2l6ZT0zMCkKYGBgCgoqKkFsd2F5cyB1c2UgcmF3IHN0cmluZ3MgKGByIiJgKSBmb3IgYW55IHN0cmluZyB3aXRoIGJhY2tzbGFzaGVzLioqCgojIyBTaGFwZXMKCmBgYHB5dGhvbgpjaXJjbGUgPSBDaXJjbGUocmFkaXVzPTEsIGNvbG9yPUJMVUUsIGZpbGxfb3BhY2l0eT0wLjUpCnNxdWFyZSA9IFNxdWFyZShzaWRlX2xlbmd0aD0yLCBjb2xvcj1SRUQpCnJlY3QgPSBSZWN0YW5nbGUod2lkdGg9NCwgaGVpZ2h0PTIsIGNvbG9yPUdSRUVOKQpkb3QgPSBEb3QocG9pbnQ9T1JJR0lOLCByYWRpdXM9MC4wOCwgY29sb3I9WUVMTE9XKQpsaW5lID0gTGluZShMRUZUICogMiwgUklHSFQgKiAyLCBjb2xvcj1XSElURSkKYXJyb3cgPSBBcnJvdyhMRUZULCBSSUdIVCwgY29sb3I9T1JBTkdFKQpycmVjdCA9IFJvdW5kZWRSZWN0YW5nbGUoY29ybmVyX3JhZGl1cz0wLjMsIHdpZHRoPTQsIGhlaWdodD0yKQpicmFjZSA9IEJyYWNlKHJlY3QsIERPV04sIGNvbG9yPVlFTExPVykKYGBgCgojIyBQb2x5Z29ucyBhbmQgQXJjcwoKYGBgcHl0aG9uCiMgQXJiaXRyYXJ5IHBvbHlnb24gZnJvbSB2ZXJ0aWNlcwpwb2x5ID0gUG9seWdvbihMRUZULCBVUCAqIDIsIFJJR0hULCBjb2xvcj1HUkVFTiwgZmlsbF9vcGFjaXR5PTAuMykKCiMgUmVndWxhciBuLXNpZGVkIHBvbHlnb24KaGV4YWdvbiA9IFJlZ3VsYXJQb2x5Z29uKG49NiwgY29sb3I9VEVBTCwgZmlsbF9vcGFjaXR5PTAuNCkKCiMgVHJpYW5nbGUgKHNob3J0aGFuZCBmb3IgUmVndWxhclBvbHlnb24obj0zKSkKdHJpID0gVHJpYW5nbGUoY29sb3I9WUVMTE9XLCBmaWxsX29wYWNpdHk9MC41KQoKIyBBcmMgKHBvcnRpb24gb2YgYSBjaXJjbGUpCmFyYyA9IEFyYyhyYWRpdXM9Miwgc3RhcnRfYW5nbGU9MCwgYW5nbGU9UEkgLyAyLCBjb2xvcj1CTFVFKQoKIyBBcmMgYmV0d2VlbiB0d28gcG9pbnRzCmFyY19iZXR3ZWVuID0gQXJjQmV0d2VlblBvaW50cyhMRUZUICogMiwgUklHSFQgKiAyLCBhbmdsZT1UQVUgLyA0LCBjb2xvcj1SRUQpCgojIEN1cnZlZCBhcnJvdyAoYXJjIHdpdGggdGlwKQpjdXJ2ZWRfYXJyb3cgPSBDdXJ2ZWRBcnJvdyhMRUZUICogMiwgUklHSFQgKiAyLCBjb2xvcj1PUkFOR0UpCmBgYAoKIyMgU2VjdG9ycyBhbmQgQW5udWxpCgpgYGBweXRob24KIyBTZWN0b3IgKHBpZSBzbGljZSkKc2VjdG9yID0gU2VjdG9yKG91dGVyX3JhZGl1cz0yLCBzdGFydF9hbmdsZT0wLCBhbmdsZT1QSSAvIDMsIGZpbGxfb3BhY2l0eT0wLjcsIGNvbG9yPUJMVUUpCgojIEFubnVsdXMgKHJpbmcpCnJpbmcgPSBBbm51bHVzKGlubmVyX3JhZGl1cz0xLCBvdXRlcl9yYWRpdXM9MiwgZmlsbF9vcGFjaXR5PTAuNSwgY29sb3I9R1JFRU4pCgojIEFubnVsYXIgc2VjdG9yIChwYXJ0aWFsIHJpbmcpCnBhcnRpYWxfcmluZyA9IEFubnVsYXJTZWN0b3IoCiAgICBpbm5lcl9yYWRpdXM9MSwgb3V0ZXJfcmFkaXVzPTIsCiAgICBhbmdsZT1QSSAvIDIsIHN0YXJ0X2FuZ2xlPTAsCiAgICBmaWxsX29wYWNpdHk9MC43LCBjb2xvcj1URUFMCikKCiMgQ3V0b3V0IChwdW5jaCBob2xlcyBpbiBhIHNoYXBlKQpiYWNrZ3JvdW5kID0gU3F1YXJlKHNpZGVfbGVuZ3RoPTQsIGZpbGxfb3BhY2l0eT0xLCBjb2xvcj1CTFVFKQpob2xlID0gQ2lyY2xlKHJhZGl1cz0wLjUpCmN1dG91dCA9IEN1dG91dChiYWNrZ3JvdW5kLCBob2xlLCBmaWxsX29wYWNpdHk9MSwgY29sb3I9QkxVRSkKYGBgCgpVc2UgY2FzZXM6IHBpZSBjaGFydHMsIHJpbmcgcHJvZ3Jlc3MgaW5kaWNhdG9ycywgVmVubiBkaWFncmFtcyB3aXRoIGFyY3MsIGdlb21ldHJpYyBwcm9vZnMuCgojIyBQb3NpdGlvbmluZwoKYGBgcHl0aG9uCm1vYi5tb3ZlX3RvKE9SSUdJTikgICAgICAgICAgICAgICAgICAgICAgICAjIGNlbnRlcgptb2IubW92ZV90byhVUCAqIDIgKyBSSUdIVCkgICAgICAgICAgICAgICAjIHJlbGF0aXZlCmxhYmVsLm5leHRfdG8oY2lyY2xlLCBET1dOLCBidWZmPTAuMykgICAgICMgbmV4dCB0byBhbm90aGVyCnRpdGxlLnRvX2VkZ2UoVVAsIGJ1ZmY9MC41KSAgICAgICAgICAgICAgICMgc2NyZWVuIGVkZ2UgKGJ1ZmYgPj0gMC41ISkKbW9iLnRvX2Nvcm5lcihVTCwgYnVmZj0wLjUpICAgICAgICAgICAgICAgIyBjb3JuZXIKYGBgCgojIyBWR3JvdXAgdnMgR3JvdXAKCioqVkdyb3VwKiogaXMgZm9yIGNvbGxlY3Rpb25zIG9mIHNoYXBlcyAoVk1vYmplY3RzIG9ubHkg4oCUIENpcmNsZSwgU3F1YXJlLCBBcnJvdywgTGluZSwgTWF0aFRleCk6CmBgYHB5dGhvbgpzaGFwZXMgPSBWR3JvdXAoY2lyY2xlLCBzcXVhcmUsIGFycm93KQpzaGFwZXMuYXJyYW5nZShET1dOLCBidWZmPTAuNSkKc2hhcGVzLnNldF9jb2xvcihCTFVFKQpgYGAKCioqR3JvdXAqKiBpcyBmb3IgbWl4ZWQgY29sbGVjdGlvbnMgKFRleHQgKyBzaGFwZXMsIG9yIGFueSBNb2JqZWN0IHR5cGVzKToKYGBgcHl0aG9uCiMgVGV4dCBvYmplY3RzIGFyZSBNb2JqZWN0cywgbm90IFZNb2JqZWN0cyDigJQgdXNlIEdyb3VwIHdoZW4gbWl4aW5nCmxhYmVsZWRfc2hhcGUgPSBHcm91cChjaXJjbGUsIFRleHQoIkxhYmVsIikubmV4dF90byhjaXJjbGUsIERPV04pKQpsYWJlbGVkX3NoYXBlLm1vdmVfdG8oT1JJR0lOKQoKIyBGYWRlT3V0IGV2ZXJ5dGhpbmcgb24gc2NyZWVuIChtYXkgY29udGFpbiBtaXhlZCB0eXBlcykKc2VsZi5wbGF5KEZhZGVPdXQoR3JvdXAoKnNlbGYubW9iamVjdHMpKSkKYGBgCgoqKlJ1bGU6IGlmIHlvdXIgZ3JvdXAgY29udGFpbnMgYW55IGBUZXh0KClgIG9iamVjdHMsIHVzZSBgR3JvdXBgLCBub3QgYFZHcm91cGAuKiogVkdyb3VwIHdpbGwgcmFpc2UgYSBUeXBlRXJyb3Igb24gTWFuaW0gQ0UgdjAuMjArLiBNYXRoVGV4IGFuZCBUZXggYXJlIFZNb2JqZWN0cyBhbmQgd29yayB3aXRoIFZHcm91cC4KCkJvdGggc3VwcG9ydCBgYXJyYW5nZSgpYCwgYGFycmFuZ2VfaW5fZ3JpZCgpYCwgYHNldF9vcGFjaXR5KClgLCBgc2hpZnQoKWAsIGBzY2FsZSgpYCwgYG1vdmVfdG8oKWAuCgojIyBTdHlsaW5nCgpgYGBweXRob24KbW9iLnNldF9jb2xvcihCTFVFKQptb2Iuc2V0X2ZpbGwoUkVELCBvcGFjaXR5PTAuNSkKbW9iLnNldF9zdHJva2UoV0hJVEUsIHdpZHRoPTIpCm1vYi5zZXRfb3BhY2l0eSgwLjQpCm1vYi5zZXRfel9pbmRleCgxKSAgICAgICAgICAgICAgICAgICAgICAgICAjIGxheWVyaW5nCmBgYAoKIyMgU3BlY2lhbGl6ZWQgTW9iamVjdHMKCmBgYHB5dGhvbgpubCA9IE51bWJlckxpbmUoeF9yYW5nZT1bLTMsIDMsIDFdLCBsZW5ndGg9OCwgaW5jbHVkZV9udW1iZXJzPVRydWUpCnRhYmxlID0gVGFibGUoW1siQSIsICJCIl0sIFsiQyIsICJEIl1dLCByb3dfbGFiZWxzPVtUZXh0KCJSMSIpLCBUZXh0KCJSMiIpXSkKY29kZSA9IENvZGUoImV4YW1wbGUucHkiLCB0YWJfd2lkdGg9NCwgZm9udF9zaXplPTIwLCBsYW5ndWFnZT0icHl0aG9uIikKaGlnaGxpZ2h0ID0gU3Vycm91bmRpbmdSZWN0YW5nbGUodGFyZ2V0LCBjb2xvcj1ZRUxMT1csIGJ1ZmY9MC4yKQpiZyA9IEJhY2tncm91bmRSZWN0YW5nbGUoZXF1YXRpb24sIGZpbGxfb3BhY2l0eT0wLjcsIGJ1ZmY9MC4yKQpgYGAKCiMjIEN1c3RvbSBNb2JqZWN0cwoKYGBgcHl0aG9uCmNsYXNzIE5ldHdvcmtOb2RlKEdyb3VwKToKICAgIGRlZiBfX2luaXRfXyhzZWxmLCBsYWJlbF90ZXh0LCBjb2xvcj1CTFVFLCAqKmt3YXJncyk6CiAgICAgICAgc3VwZXIoKS5fX2luaXRfXygqKmt3YXJncykKICAgICAgICBzZWxmLmNpcmNsZSA9IENpcmNsZShyYWRpdXM9MC40LCBjb2xvcj1jb2xvciwgZmlsbF9vcGFjaXR5PTAuMykKICAgICAgICBzZWxmLmxhYmVsID0gVGV4dChsYWJlbF90ZXh0LCBmb250X3NpemU9MjApLm1vdmVfdG8oc2VsZi5jaXJjbGUpCiAgICAgICAgc2VsZi5hZGQoc2VsZi5jaXJjbGUsIHNlbGYubGFiZWwpCmBgYAoKIyMgTWF0cml4IE1vYmplY3RzCgpEaXNwbGF5IG1hdHJpY2VzIGFzIGdyaWRzIG9mIG51bWJlcnMgb3IgbW9iamVjdHM6CgpgYGBweXRob24KIyBJbnRlZ2VyIG1hdHJpeAptID0gSW50ZWdlck1hdHJpeChbWzEsIDJdLCBbMywgNF1dKQoKIyBEZWNpbWFsIG1hdHJpeCAoY29udHJvbCBkZWNpbWFsIHBsYWNlcykKbSA9IERlY2ltYWxNYXRyaXgoW1sxLjUsIDIuN10sIFszLjEsIDQuOV1dLCBlbGVtZW50X3RvX21vYmplY3RfY29uZmlnPXsibnVtX2RlY2ltYWxfcGxhY2VzIjogMn0pCgojIE1vYmplY3QgbWF0cml4IChhbnkgbW9iamVjdCBpbiBlYWNoIGNlbGwpCm0gPSBNb2JqZWN0TWF0cml4KFsKICAgIFtNYXRoVGV4KHIiXHBpIiksIE1hdGhUZXgociJlIildLAogICAgW01hdGhUZXgociJccGhpIiksIE1hdGhUZXgociJcdGF1IildCl0pCgojIEJyYWNrZXQgdHlwZXM6ICIoIiAiWyIgInwiIG9yICJcXHsiCm0gPSBJbnRlZ2VyTWF0cml4KFtbMSwgMF0sIFswLCAxXV0sIGxlZnRfYnJhY2tldD0iWyIsIHJpZ2h0X2JyYWNrZXQ9Il0iKQpgYGAKClVzZSBjYXNlczogbGluZWFyIGFsZ2VicmEsIHRyYW5zZm9ybWF0aW9uIG1hdHJpY2VzLCBzeXN0ZW0tb2YtZXF1YXRpb25zIGNvZWZmaWNpZW50IGRpc3BsYXkuCgojIyBDb25zdGFudHMKCkRpcmVjdGlvbnM6IGBVUCwgRE9XTiwgTEVGVCwgUklHSFQsIE9SSUdJTiwgVUwsIFVSLCBETCwgRFJgCkNvbG9yczogYFJFRCwgQkxVRSwgR1JFRU4sIFlFTExPVywgV0hJVEUsIEdSQVksIE9SQU5HRSwgUElOSywgUFVSUExFLCBURUFMLCBHT0xEYApGcmFtZTogYGNvbmZpZy5mcmFtZV93aWR0aCA9IDE0LjIyMiwgY29uZmlnLmZyYW1lX2hlaWdodCA9IDguMGAKCiMjIFNWR01vYmplY3Qg4oCUIEltcG9ydCBTVkcgRmlsZXMKCmBgYHB5dGhvbgpsb2dvID0gU1ZHTW9iamVjdCgicGF0aC90by9sb2dvLnN2ZyIpCmxvZ28uc2V0X2NvbG9yKFdISVRFKS5zY2FsZSgwLjUpLnRvX2Nvcm5lcihVUikKc2VsZi5wbGF5KEZhZGVJbihsb2dvKSkKCiMgU1ZHIHN1Ym1vYmplY3RzIGFyZSBpbmRpdmlkdWFsbHkgYW5pbWF0YWJsZQpmb3IgcGFydCBpbiBsb2dvLnN1Ym1vYmplY3RzOgogICAgc2VsZi5wbGF5KHBhcnQuYW5pbWF0ZS5zZXRfY29sb3IocmFuZG9tX2NvbG9yKCkpKQpgYGAKCiMjIEltYWdlTW9iamVjdCDigJQgRGlzcGxheSBJbWFnZXMKCmBgYHB5dGhvbgppbWcgPSBJbWFnZU1vYmplY3QoInNjcmVlbnNob3QucG5nIikKaW1nLnNldF9oZWlnaHQoMykudG9fZWRnZShSSUdIVCkKc2VsZi5wbGF5KEZhZGVJbihpbWcpKQpgYGAKCk5vdGU6IGltYWdlcyBjYW5ub3QgYmUgYW5pbWF0ZWQgd2l0aCBgLmFuaW1hdGVgICh0aGV5J3JlIHJhc3Rlciwgbm90IHZlY3RvcikuIFVzZSBgRmFkZUluYC9gRmFkZU91dGAgYW5kIGBzaGlmdGAvYHNjYWxlYCBvbmx5LgoKIyMgVmFyaWFibGUg4oCUIEF1dG8tVXBkYXRpbmcgRGlzcGxheQoKYGBgcHl0aG9uCnZhciA9IFZhcmlhYmxlKDAsIFRleHQoIngiKSwgbnVtX2RlY2ltYWxfcGxhY2VzPTIpCnZhci5tb3ZlX3RvKE9SSUdJTikKc2VsZi5hZGQodmFyKQoKIyBBbmltYXRlIHRoZSB2YWx1ZQpzZWxmLnBsYXkodmFyLnRyYWNrZXIuYW5pbWF0ZS5zZXRfdmFsdWUoNSksIHJ1bl90aW1lPTIpCiMgRGlzcGxheSBhdXRvLXVwZGF0ZXM6ICJ4ID0gNS4wMCIKYGBgCgpDbGVhbmVyIHRoYW4gbWFudWFsIGBEZWNpbWFsTnVtYmVyYCArIGBhZGRfdXBkYXRlcmAgZm9yIHNpbXBsZSBsYWJlbGVkLXZhbHVlIGRpc3BsYXlzLgoKIyMgQnVsbGV0ZWRMaXN0CgpgYGBweXRob24KYnVsbGV0cyA9IEJ1bGxldGVkTGlzdCgKICAgICJGaXJzdCBrZXkgcG9pbnQiLAogICAgIlNlY29uZCBpbXBvcnRhbnQgZmFjdCIsCiAgICAiVGhpcmQgY29uY2x1c2lvbiIsCiAgICBmb250X3NpemU9MjgKKQpidWxsZXRzLnRvX2VkZ2UoTEVGVCwgYnVmZj0xLjApCnNlbGYucGxheShXcml0ZShidWxsZXRzKSkKCiMgSGlnaGxpZ2h0IGluZGl2aWR1YWwgaXRlbXMKc2VsZi5wbGF5KGJ1bGxldHNbMV0uYW5pbWF0ZS5zZXRfY29sb3IoWUVMTE9XKSkKYGBgCgojIyBEYXNoZWRMaW5lIGFuZCBBbmdsZSBNYXJrZXJzCgpgYGBweXRob24KIyBEYXNoZWQgbGluZSAoYXN5bXB0b3RlcywgY29uc3RydWN0aW9uIGxpbmVzKQpkYXNoZWQgPSBEYXNoZWRMaW5lKExFRlQgKiAzLCBSSUdIVCAqIDMsIGNvbG9yPVNVQlRMRSwgZGFzaF9sZW5ndGg9MC4xNSkKCiMgQW5nbGUgbWFya2VyIGJldHdlZW4gdHdvIGxpbmVzCmxpbmUxID0gTGluZShPUklHSU4sIFJJR0hUICogMikKbGluZTIgPSBMaW5lKE9SSUdJTiwgVVAgKiAyICsgUklHSFQpCmFuZ2xlID0gQW5nbGUobGluZTEsIGxpbmUyLCByYWRpdXM9MC41LCBjb2xvcj1ZRUxMT1cpCmFuZ2xlX2xhYmVsID0gYW5nbGUuZ2V0X3ZhbHVlKCkgICMgcmV0dXJucyB0aGUgYW5nbGUgaW4gcmFkaWFucwoKIyBSaWdodCBhbmdsZSBtYXJrZXIKcmlnaHRfYW5nbGUgPSBSaWdodEFuZ2xlKGxpbmUxLCBMaW5lKE9SSUdJTiwgVVAgKiAyKSwgbGVuZ3RoPTAuMywgY29sb3I9V0hJVEUpCmBgYAoKIyMgQm9vbGVhbiBPcGVyYXRpb25zIChDU0cpCgpDb21iaW5lLCBzdWJ0cmFjdCwgb3IgaW50ZXJzZWN0IDJEIHNoYXBlczoKCmBgYHB5dGhvbgpjaXJjbGUgPSBDaXJjbGUocmFkaXVzPTEuNSwgY29sb3I9QkxVRSwgZmlsbF9vcGFjaXR5PTAuNSkuc2hpZnQoTEVGVCAqIDAuNSkKc3F1YXJlID0gU3F1YXJlKHNpZGVfbGVuZ3RoPTIsIGNvbG9yPVJFRCwgZmlsbF9vcGFjaXR5PTAuNSkuc2hpZnQoUklHSFQgKiAwLjUpCgojIFVuaW9uLCBJbnRlcnNlY3Rpb24sIERpZmZlcmVuY2UsIEV4Y2x1c2lvbgp1bmlvbiA9IFVuaW9uKGNpcmNsZSwgc3F1YXJlLCBjb2xvcj1HUkVFTiwgZmlsbF9vcGFjaXR5PTAuNSkKaW50ZXJzZWN0ID0gSW50ZXJzZWN0aW9uKGNpcmNsZSwgc3F1YXJlLCBjb2xvcj1ZRUxMT1csIGZpbGxfb3BhY2l0eT0wLjUpCmRpZmYgPSBEaWZmZXJlbmNlKGNpcmNsZSwgc3F1YXJlLCBjb2xvcj1QVVJQTEUsIGZpbGxfb3BhY2l0eT0wLjUpCmV4Y2x1ZGUgPSBFeGNsdXNpb24oY2lyY2xlLCBzcXVhcmUsIGNvbG9yPU9SQU5HRSwgZmlsbF9vcGFjaXR5PTAuNSkKYGBgCgpVc2UgY2FzZXM6IFZlbm4gZGlhZ3JhbXMsIHNldCB0aGVvcnksIGdlb21ldHJpYyBwcm9vZnMsIGFyZWEgY2FsY3VsYXRpb25zLgoKIyMgTGFiZWxlZEFycm93IC8gTGFiZWxlZExpbmUKCmBgYHB5dGhvbgojIEFycm93IHdpdGggYnVpbHQtaW4gbGFiZWwgKGF1dG8tcG9zaXRpb25lZCkKYXJyID0gTGFiZWxlZEFycm93KFRleHQoImZvcmNlIiwgZm9udF9zaXplPTE4KSwgc3RhcnQ9TEVGVCwgZW5kPVJJR0hULCBjb2xvcj1SRUQpCgojIExpbmUgd2l0aCBsYWJlbApsaW5lID0gTGFiZWxlZExpbmUoVGV4dCgiZCA9IDVtIiwgZm9udF9zaXplPTE4KSwgc3RhcnQ9TEVGVCAqIDIsIGVuZD1SSUdIVCAqIDIpCmBgYAoKQXV0by1oYW5kbGVzIGxhYmVsIHBvc2l0aW9uaW5nIOKAlCBjbGVhbmVyIHRoYW4gbWFudWFsIGBBcnJvd2AgKyBgVGV4dCgpLm5leHRfdG8oKWAuCgojIyBUZXh0IENvbG9yL0ZvbnQvU3R5bGUgUGVyLVN1YnN0cmluZyAodDJjLCB0MmYsIHQycywgdDJ3KQoKYGBgcHl0aG9uCiMgQ29sb3Igc3BlY2lmaWMgd29yZHMgKHQyYyA9IHRleHQtdG8tY29sb3IpCnRleHQgPSBUZXh0KAogICAgIkdyYWRpZW50IGRlc2NlbnQgbWluaW1pemVzIHRoZSBsb3NzIGZ1bmN0aW9uIiwKICAgIHQyYz17IkdyYWRpZW50IGRlc2NlbnQiOiBCTFVFLCAibG9zcyBmdW5jdGlvbiI6IFJFRH0KKQoKIyBEaWZmZXJlbnQgZm9udHMgcGVyIHdvcmQgKHQyZiA9IHRleHQtdG8tZm9udCkKdGV4dCA9IFRleHQoCiAgICAiVXNlIE1lbmxvIGZvciBjb2RlIGFuZCBJbnRlciBmb3IgcHJvc2UiLAogICAgdDJmPXsiTWVubG8iOiAiTWVubG8iLCAiSW50ZXIiOiAiSW50ZXIifQopCgojIEl0YWxpYy9zbGFudCBwZXIgd29yZCAodDJzID0gdGV4dC10by1zbGFudCkKdGV4dCA9IFRleHQoIk5vcm1hbCBhbmQgaXRhbGljIHRleHQiLCB0MnM9eyJpdGFsaWMiOiBJVEFMSUN9KQoKIyBCb2xkIHBlciB3b3JkICh0MncgPSB0ZXh0LXRvLXdlaWdodCkKdGV4dCA9IFRleHQoIk5vcm1hbCBhbmQgYm9sZCB0ZXh0IiwgdDJ3PXsiYm9sZCI6IEJPTER9KQpgYGAKClRoZXNlIGFyZSBtdWNoIGNsZWFuZXIgdGhhbiBjcmVhdGluZyBzZXBhcmF0ZSBUZXh0IG9iamVjdHMgYW5kIGdyb3VwaW5nIHRoZW0uCgojIyBCYWNrc3Ryb2tlIGZvciBSZWFkYWJpbGl0eSBPdmVyIEJhY2tncm91bmRzCgpXaGVuIHRleHQgb3ZlcmxhcHMgb3RoZXIgY29udGVudCAoZ3JhcGhzLCBkaWFncmFtcywgaW1hZ2VzKSwgYWRkIGEgZGFyayBzdHJva2UgYmVoaW5kIGl0OgoKYGBgcHl0aG9uCiMgQ0Ugc3ludGF4OgpsYWJlbC5zZXRfc3Ryb2tlKEJMQUNLLCB3aWR0aD01LCBiYWNrZ3JvdW5kPVRydWUpCgojIEFwcGx5IHRvIGEgZ3JvdXAKZm9yIG1vYiBpbiBsYWJlbHM6CiAgICBtb2Iuc2V0X3N0cm9rZShCTEFDSywgd2lkdGg9NCwgYmFja2dyb3VuZD1UcnVlKQpgYGAKClRoaXMgaXMgaG93IDNCbHVlMUJyb3duIGtlZXBzIHRleHQgcmVhZGFibGUgb3ZlciBjb21wbGV4IGJhY2tncm91bmRzIHdpdGhvdXQgdXNpbmcgQmFja2dyb3VuZFJlY3RhbmdsZS4KCiMjIENvbXBsZXggRnVuY3Rpb24gVHJhbnNmb3JtcwoKQXBwbHkgY29tcGxleCBmdW5jdGlvbnMgdG8gZW50aXJlIG1vYmplY3RzIOKAlCB0cmFuc2Zvcm1zIHRoZSBwbGFuZToKCmBgYHB5dGhvbgpjX2dyaWQgPSBDb21wbGV4UGxhbmUoKQptb3ZpbmdfZ3JpZCA9IGNfZ3JpZC5jb3B5KCkKbW92aW5nX2dyaWQucHJlcGFyZV9mb3Jfbm9ubGluZWFyX3RyYW5zZm9ybSgpICAjIGFkZHMgbW9yZSBzYW1wbGUgcG9pbnRzIGZvciBzbW9vdGggZGVmb3JtYXRpb24KCnNlbGYucGxheSgKICAgIG1vdmluZ19ncmlkLmFuaW1hdGUuYXBwbHlfY29tcGxleF9mdW5jdGlvbihsYW1iZGEgejogeioqMiksCiAgICBydW5fdGltZT01LAopCgojIEFsc28gd29ya3Mgd2l0aCBSMy0+UjMgZnVuY3Rpb25zOgpzZWxmLnBsYXkoZ3JpZC5hbmltYXRlLmFwcGx5X2Z1bmN0aW9uKAogICAgbGFtYmRhIHA6IFtwWzBdICsgMC41ICogbWF0aC5zaW4ocFsxXSksIHBbMV0gKyAwLjUgKiBtYXRoLnNpbihwWzBdKSwgcFsyXV0KKSwgcnVuX3RpbWU9NSkKYGBgCgoqKkNyaXRpY2FsOioqIENhbGwgYHByZXBhcmVfZm9yX25vbmxpbmVhcl90cmFuc2Zvcm0oKWAgYmVmb3JlIGFwcGx5aW5nIG5vbmxpbmVhciBmdW5jdGlvbnMg4oCUIHdpdGhvdXQgaXQsIHRoZSBncmlkIGhhcyB0b28gZmV3IHNhbXBsZSBwb2ludHMgYW5kIHRoZSBkZWZvcm1hdGlvbiBsb29rcyBqYWdnZWQuCg==
+# Mobjects Reference
+
+Everything visible on screen is a Mobject. They have position, color, opacity, and can be animated.
+
+## Text
+
+```python
+title = Text("Hello World", font_size=48, color=BLUE)
+eq = MathTex(r"E = mc^2", font_size=40)
+
+# Multi-part (for selective coloring)
+eq = MathTex(r"a^2", r"+", r"b^2", r"=", r"c^2")
+eq[0].set_color(RED)
+eq[4].set_color(BLUE)
+
+# Mixed text and math
+t = Tex(r"The area is $\pi r^2$", font_size=36)
+
+# Styled markup
+t = MarkupText('<span foreground="#58C4DD">Blue</span> text', font_size=30)
+```
+
+**Always use raw strings (`r""`) for any string with backslashes.**
+
+## Shapes
+
+```python
+circle = Circle(radius=1, color=BLUE, fill_opacity=0.5)
+square = Square(side_length=2, color=RED)
+rect = Rectangle(width=4, height=2, color=GREEN)
+dot = Dot(point=ORIGIN, radius=0.08, color=YELLOW)
+line = Line(LEFT * 2, RIGHT * 2, color=WHITE)
+arrow = Arrow(LEFT, RIGHT, color=ORANGE)
+rrect = RoundedRectangle(corner_radius=0.3, width=4, height=2)
+brace = Brace(rect, DOWN, color=YELLOW)
+```
+
+## Polygons and Arcs
+
+```python
+# Arbitrary polygon from vertices
+poly = Polygon(LEFT, UP * 2, RIGHT, color=GREEN, fill_opacity=0.3)
+
+# Regular n-sided polygon
+hexagon = RegularPolygon(n=6, color=TEAL, fill_opacity=0.4)
+
+# Triangle (shorthand for RegularPolygon(n=3))
+tri = Triangle(color=YELLOW, fill_opacity=0.5)
+
+# Arc (portion of a circle)
+arc = Arc(radius=2, start_angle=0, angle=PI / 2, color=BLUE)
+
+# Arc between two points
+arc_between = ArcBetweenPoints(LEFT * 2, RIGHT * 2, angle=TAU / 4, color=RED)
+
+# Curved arrow (arc with tip)
+curved_arrow = CurvedArrow(LEFT * 2, RIGHT * 2, color=ORANGE)
+```
+
+## Sectors and Annuli
+
+```python
+# Sector (pie slice)
+sector = Sector(outer_radius=2, start_angle=0, angle=PI / 3, fill_opacity=0.7, color=BLUE)
+
+# Annulus (ring)
+ring = Annulus(inner_radius=1, outer_radius=2, fill_opacity=0.5, color=GREEN)
+
+# Annular sector (partial ring)
+partial_ring = AnnularSector(
+    inner_radius=1, outer_radius=2,
+    angle=PI / 2, start_angle=0,
+    fill_opacity=0.7, color=TEAL
+)
+
+# Cutout (punch holes in a shape)
+background = Square(side_length=4, fill_opacity=1, color=BLUE)
+hole = Circle(radius=0.5)
+cutout = Cutout(background, hole, fill_opacity=1, color=BLUE)
+```
+
+Use cases: pie charts, ring progress indicators, Venn diagrams with arcs, geometric proofs.
+
+## Positioning
+
+```python
+mob.move_to(ORIGIN)                        # center
+mob.move_to(UP * 2 + RIGHT)               # relative
+label.next_to(circle, DOWN, buff=0.3)     # next to another
+title.to_edge(UP, buff=0.5)               # screen edge (buff >= 0.5!)
+mob.to_corner(UL, buff=0.5)               # corner
+```
+
+## VGroup vs Group
+
+**VGroup** is for collections of shapes (VMobjects only — Circle, Square, Arrow, Line, MathTex):
+```python
+shapes = VGroup(circle, square, arrow)
+shapes.arrange(DOWN, buff=0.5)
+shapes.set_color(BLUE)
+```
+
+**Group** is for mixed collections (Text + shapes, or any Mobject types):
+```python
+# Text objects are Mobjects, not VMobjects — use Group when mixing
+labeled_shape = Group(circle, Text("Label").next_to(circle, DOWN))
+labeled_shape.move_to(ORIGIN)
+
+# FadeOut everything on screen (may contain mixed types)
+self.play(FadeOut(Group(*self.mobjects)))
+```
+
+**Rule: if your group contains any `Text()` objects, use `Group`, not `VGroup`.** VGroup will raise a TypeError on Manim CE v0.20+. MathTex and Tex are VMobjects and work with VGroup.
+
+Both support `arrange()`, `arrange_in_grid()`, `set_opacity()`, `shift()`, `scale()`, `move_to()`.
+
+## Styling
+
+```python
+mob.set_color(BLUE)
+mob.set_fill(RED, opacity=0.5)
+mob.set_stroke(WHITE, width=2)
+mob.set_opacity(0.4)
+mob.set_z_index(1)                         # layering
+```
+
+## Specialized Mobjects
+
+```python
+nl = NumberLine(x_range=[-3, 3, 1], length=8, include_numbers=True)
+table = Table([["A", "B"], ["C", "D"]], row_labels=[Text("R1"), Text("R2")])
+code = Code("example.py", tab_width=4, font_size=20, language="python")
+highlight = SurroundingRectangle(target, color=YELLOW, buff=0.2)
+bg = BackgroundRectangle(equation, fill_opacity=0.7, buff=0.2)
+```
+
+## Custom Mobjects
+
+```python
+class NetworkNode(Group):
+    def __init__(self, label_text, color=BLUE, **kwargs):
+        super().__init__(**kwargs)
+        self.circle = Circle(radius=0.4, color=color, fill_opacity=0.3)
+        self.label = Text(label_text, font_size=20).move_to(self.circle)
+        self.add(self.circle, self.label)
+```
+
+## Matrix Mobjects
+
+Display matrices as grids of numbers or mobjects:
+
+```python
+# Integer matrix
+m = IntegerMatrix([[1, 2], [3, 4]])
+
+# Decimal matrix (control decimal places)
+m = DecimalMatrix([[1.5, 2.7], [3.1, 4.9]], element_to_mobject_config={"num_decimal_places": 2})
+
+# Mobject matrix (any mobject in each cell)
+m = MobjectMatrix([
+    [MathTex(r"\pi"), MathTex(r"e")],
+    [MathTex(r"\phi"), MathTex(r"\tau")]
+])
+
+# Bracket types: "(" "[" "|" or "\\{"
+m = IntegerMatrix([[1, 0], [0, 1]], left_bracket="[", right_bracket="]")
+```
+
+Use cases: linear algebra, transformation matrices, system-of-equations coefficient display.
+
+## Constants
+
+Directions: `UP, DOWN, LEFT, RIGHT, ORIGIN, UL, UR, DL, DR`
+Colors: `RED, BLUE, GREEN, YELLOW, WHITE, GRAY, ORANGE, PINK, PURPLE, TEAL, GOLD`
+Frame: `config.frame_width = 14.222, config.frame_height = 8.0`
+
+## SVGMobject — Import SVG Files
+
+```python
+logo = SVGMobject("path/to/logo.svg")
+logo.set_color(WHITE).scale(0.5).to_corner(UR)
+self.play(FadeIn(logo))
+
+# SVG submobjects are individually animatable
+for part in logo.submobjects:
+    self.play(part.animate.set_color(random_color()))
+```
+
+## ImageMobject — Display Images
+
+```python
+img = ImageMobject("screenshot.png")
+img.set_height(3).to_edge(RIGHT)
+self.play(FadeIn(img))
+```
+
+Note: images cannot be animated with `.animate` (they're raster, not vector). Use `FadeIn`/`FadeOut` and `shift`/`scale` only.
+
+## Variable — Auto-Updating Display
+
+```python
+var = Variable(0, Text("x"), num_decimal_places=2)
+var.move_to(ORIGIN)
+self.add(var)
+
+# Animate the value
+self.play(var.tracker.animate.set_value(5), run_time=2)
+# Display auto-updates: "x = 5.00"
+```
+
+Cleaner than manual `DecimalNumber` + `add_updater` for simple labeled-value displays.
+
+## BulletedList
+
+```python
+bullets = BulletedList(
+    "First key point",
+    "Second important fact",
+    "Third conclusion",
+    font_size=28
+)
+bullets.to_edge(LEFT, buff=1.0)
+self.play(Write(bullets))
+
+# Highlight individual items
+self.play(bullets[1].animate.set_color(YELLOW))
+```
+
+## DashedLine and Angle Markers
+
+```python
+# Dashed line (asymptotes, construction lines)
+dashed = DashedLine(LEFT * 3, RIGHT * 3, color=SUBTLE, dash_length=0.15)
+
+# Angle marker between two lines
+line1 = Line(ORIGIN, RIGHT * 2)
+line2 = Line(ORIGIN, UP * 2 + RIGHT)
+angle = Angle(line1, line2, radius=0.5, color=YELLOW)
+angle_label = angle.get_value()  # returns the angle in radians
+
+# Right angle marker
+right_angle = RightAngle(line1, Line(ORIGIN, UP * 2), length=0.3, color=WHITE)
+```
+
+## Boolean Operations (CSG)
+
+Combine, subtract, or intersect 2D shapes:
+
+```python
+circle = Circle(radius=1.5, color=BLUE, fill_opacity=0.5).shift(LEFT * 0.5)
+square = Square(side_length=2, color=RED, fill_opacity=0.5).shift(RIGHT * 0.5)
+
+# Union, Intersection, Difference, Exclusion
+union = Union(circle, square, color=GREEN, fill_opacity=0.5)
+intersect = Intersection(circle, square, color=YELLOW, fill_opacity=0.5)
+diff = Difference(circle, square, color=PURPLE, fill_opacity=0.5)
+exclude = Exclusion(circle, square, color=ORANGE, fill_opacity=0.5)
+```
+
+Use cases: Venn diagrams, set theory, geometric proofs, area calculations.
+
+## LabeledArrow / LabeledLine
+
+```python
+# Arrow with built-in label (auto-positioned)
+arr = LabeledArrow(Text("force", font_size=18), start=LEFT, end=RIGHT, color=RED)
+
+# Line with label
+line = LabeledLine(Text("d = 5m", font_size=18), start=LEFT * 2, end=RIGHT * 2)
+```
+
+Auto-handles label positioning — cleaner than manual `Arrow` + `Text().next_to()`.
+
+## Text Color/Font/Style Per-Substring (t2c, t2f, t2s, t2w)
+
+```python
+# Color specific words (t2c = text-to-color)
+text = Text(
+    "Gradient descent minimizes the loss function",
+    t2c={"Gradient descent": BLUE, "loss function": RED}
+)
+
+# Different fonts per word (t2f = text-to-font)
+text = Text(
+    "Use Menlo for code and Inter for prose",
+    t2f={"Menlo": "Menlo", "Inter": "Inter"}
+)
+
+# Italic/slant per word (t2s = text-to-slant)
+text = Text("Normal and italic text", t2s={"italic": ITALIC})
+
+# Bold per word (t2w = text-to-weight)
+text = Text("Normal and bold text", t2w={"bold": BOLD})
+```
+
+These are much cleaner than creating separate Text objects and grouping them.
+
+## Backstroke for Readability Over Backgrounds
+
+When text overlaps other content (graphs, diagrams, images), add a dark stroke behind it:
+
+```python
+# CE syntax:
+label.set_stroke(BLACK, width=5, background=True)
+
+# Apply to a group
+for mob in labels:
+    mob.set_stroke(BLACK, width=4, background=True)
+```
+
+This is how 3Blue1Brown keeps text readable over complex backgrounds without using BackgroundRectangle.
+
+## Complex Function Transforms
+
+Apply complex functions to entire mobjects — transforms the plane:
+
+```python
+c_grid = ComplexPlane()
+moving_grid = c_grid.copy()
+moving_grid.prepare_for_nonlinear_transform()  # adds more sample points for smooth deformation
+
+self.play(
+    moving_grid.animate.apply_complex_function(lambda z: z**2),
+    run_time=5,
+)
+
+# Also works with R3->R3 functions:
+self.play(grid.animate.apply_function(
+    lambda p: [p[0] + 0.5 * math.sin(p[1]), p[1] + 0.5 * math.sin(p[0]), p[2]]
+), run_time=5)
+```
+
+**Critical:** Call `prepare_for_nonlinear_transform()` before applying nonlinear functions — without it, the grid has too few sample points and the deformation looks jagged.

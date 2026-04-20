@@ -1,1 +1,3 @@
-LS0tCmRlc2NyaXB0aW9uOiBWZWN0b3Igc2ltaWxhcml0eSBzZWFyY2ggYW5kIGVtYmVkZGluZyBkYXRhYmFzZXMgZm9yIFJBRywgc2VtYW50aWMgc2VhcmNoLCBhbmQgQUkgYXBwbGljYXRpb24gYmFja2VuZHMuCi0tLQo=
+---
+description: Vector similarity search and embedding databases for RAG, semantic search, and AI application backends.
+---

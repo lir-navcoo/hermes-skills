@@ -1,1 +1,190 @@
-IyBQcm9kdWN0aW9uIFF1YWxpdHkgQ2hlY2tsaXN0CgpTdGFuZGFyZHMgYW5kIGNoZWNrcyBmb3IgZW5zdXJpbmcgYW5pbWF0aW9uIG91dHB1dCBpcyBwdWJsaWNhdGlvbi1yZWFkeS4KCiMjIFByZS1Db2RlIENoZWNrbGlzdAoKQmVmb3JlIHdyaXRpbmcgYW55IE1hbmltIGNvZGU6CgotIFsgXSBOYXJyYXRpb24gc2NyaXB0IHdyaXR0ZW4gd2l0aCB2aXN1YWwgYmVhdHMgbWFya2VkCi0gWyBdIFNjZW5lIGxpc3Qgd2l0aCBwdXJwb3NlLCBkdXJhdGlvbiwgYW5kIGxheW91dCBmb3IgZWFjaAotIFsgXSBDb2xvciBwYWxldHRlIGRlZmluZWQgd2l0aCBtZWFuaW5nIGFzc2lnbm1lbnRzIChgUFJJTUFSWWAgPSBtYWluIGNvbmNlcHQsIGV0Yy4pCi0gWyBdIGBNT05PID0gIk1lbmxvImAgc2V0IGFzIHRoZSBmb250IGNvbnN0YW50Ci0gWyBdIFRhcmdldCByZXNvbHV0aW9uIGFuZCBhc3BlY3QgcmF0aW8gZGVjaWRlZAoKIyMgVGV4dCBRdWFsaXR5CgojIyMgT3ZlcmxhcCBwcmV2ZW50aW9uCgpgYGBweXRob24KIyBSVUxFOiBidWZmID49IDAuNSBmb3IgZWRnZSB0ZXh0CmxhYmVsLnRvX2VkZ2UoRE9XTiwgYnVmZj0wLjUpICAgICAjIEdPT0QKbGFiZWwudG9fZWRnZShET1dOLCBidWZmPTAuMykgICAgICMgQkFEIOKAlCBtYXkgY2xpcAoKIyBSVUxFOiBGYWRlT3V0IHByZXZpb3VzIGJlZm9yZSBhZGRpbmcgbmV3IGF0IHNhbWUgcG9zaXRpb24Kc2VsZi5wbGF5KFJlcGxhY2VtZW50VHJhbnNmb3JtKG5vdGUxLCBub3RlMikpICAjIEdPT0QKc2VsZi5wbGF5KFdyaXRlKG5vdGUyKSkgICAgICAgICAgICAgICAgICAgICAgICAgICMgQkFEIOKAlCBvdmVybGFwcyBub3RlMQoKIyBSVUxFOiBSZWR1Y2UgZm9udCBzaXplIGZvciBkZW5zZSBzY2VuZXMKIyBXaGVuID4gNCB0ZXh0IGVsZW1lbnRzIHZpc2libGUsIHVzZSBmb250X3NpemU9MjAgbm90IDI4CmBgYAoKIyMjIFdpZHRoIGVuZm9yY2VtZW50CgpMb25nIHRleHQgc3RyaW5ncyBvdmVyZmxvdyB0aGUgZnJhbWU6CgpgYGBweXRob24KIyBSVUxFOiBTZXQgbWF4IHdpZHRoIGZvciBhbnkgdGV4dCB0aGF0IG1pZ2h0IGJlIGxvbmcKdGV4dCA9IFRleHQoIlRoaXMgaXMgYSBwb3RlbnRpYWxseSBsb25nIGRlc2NyaXB0aW9uIiwgZm9udF9zaXplPTIyLCBmb250PU1PTk8pCmlmIHRleHQud2lkdGggPiBjb25maWcuZnJhbWVfd2lkdGggLSAxLjA6CiAgICB0ZXh0LnNldF93aWR0aChjb25maWcuZnJhbWVfd2lkdGggLSAxLjApCmBgYAoKIyMjIEZvbnQgY29uc2lzdGVuY3kKCmBgYHB5dGhvbgojIFJVTEU6IERlZmluZSBNT05PIG9uY2UsIHVzZSBldmVyeXdoZXJlCk1PTk8gPSAiTWVubG8iCgojIFdST05HOiBtaXhpbmcgZm9udHMKVGV4dCgiVGl0bGUiLCBmb250PSJIZWx2ZXRpY2EiKQpUZXh0KCJMYWJlbCIsIGZvbnQ9IkFyaWFsIikKVGV4dCgiQ29kZSIsIGZvbnQ9IkNvdXJpZXIiKQoKIyBSSUdIVDogb25lIGZvbnQKVGV4dCgiVGl0bGUiLCBmb250PU1PTk8sIHdlaWdodD1CT0xELCBmb250X3NpemU9NDgpClRleHQoIkxhYmVsIiwgZm9udD1NT05PLCBmb250X3NpemU9MjApClRleHQoIkNvZGUiLCBmb250PU1PTk8sIGZvbnRfc2l6ZT0xOCkKYGBgCgojIyBTcGF0aWFsIExheW91dAoKIyMjIFRoZSBjb29yZGluYXRlIGJ1ZGdldAoKVGhlIHZpc2libGUgZnJhbWUgaXMgYXBwcm94aW1hdGVseSAxNC4yIHdpZGUgw5cgOC4wIHRhbGwgKGRlZmF1bHQgMTY6OSkuIFdpdGggbWFuZGF0b3J5IG1hcmdpbnM6CgpgYGAKVXNhYmxlIGFyZWE6IHgg4oiIIFstNi41LCA2LjVdLCB5IOKIiCBbLTMuNSwgMy41XQpUb3AgdGl0bGUgem9uZTogeSDiiIggWzIuNSwgMy41XQpCb3R0b20gbm90ZSB6b25lOiB5IOKIiCBbLTMuNSwgLTIuNV0KTWFpbiBjb250ZW50OiB5IOKIiCBbLTIuNSwgMi41XSwgeCDiiIggWy02LjAsIDYuMF0KYGBgCgojIyMgRmlsbCB0aGUgZnJhbWUKCkVtcHR5IHNjZW5lcyBsb29rIHVuZmluaXNoZWQuIElmIHRoZSBtYWluIGNvbnRlbnQgaXMgc21hbGwsIGFkZCBjb250ZXh0OgotIEEgZGltbWVkIGdyaWQvYXhlcyBiZWhpbmQgdGhlIGNvbnRlbnQKLSBBIHRpdGxlL3N1YnRpdGxlIGF0IHRoZSB0b3AKLSBBIHNvdXJjZSBjaXRhdGlvbiBhdCB0aGUgYm90dG9tCi0gRGVjb3JhdGl2ZSBnZW9tZXRyeSBhdCBsb3cgb3BhY2l0eQoKIyMjIE1heGltdW0gc2ltdWx0YW5lb3VzIGVsZW1lbnRzCgoqKkhhcmQgbGltaXQ6IDYgYWN0aXZlbHkgdmlzaWJsZSBlbGVtZW50cy4qKiBCZXlvbmQgdGhhdCwgdGhlIHZpZXdlciBjYW4ndCB0cmFjayBldmVyeXRoaW5nLiBJZiB5b3UgbmVlZCBtb3JlOgotIERpbSBvbGQgZWxlbWVudHMgdG8gb3BhY2l0eSAwLjMKLSBSZW1vdmUgZWxlbWVudHMgdGhhdCBoYXZlIHNlcnZlZCB0aGVpciBwdXJwb3NlCi0gU3BsaXQgaW50byB0d28gc2NlbmVzCgojIyBBbmltYXRpb24gUXVhbGl0eQoKIyMjIFZhcmlldHkgYXVkaXQKCkNoZWNrIHRoYXQgbm8gdHdvIGNvbnNlY3V0aXZlIHNjZW5lcyB1c2UgdGhlIGV4YWN0IHNhbWU6Ci0gQW5pbWF0aW9uIHR5cGUgKGlmIFNjZW5lIDMgdXNlcyBXcml0ZSBmb3IgZXZlcnl0aGluZywgU2NlbmUgNCBzaG91bGQgdXNlIEZhZGVJbiBvciBDcmVhdGUpCi0gQ29sb3IgZW1waGFzaXMgKHJvdGF0ZSB0aHJvdWdoIHBhbGV0dGUgY29sb3JzKQotIExheW91dCAoY2VudGVyLCBsZWZ0LXJpZ2h0LCBncmlkIOKAlCBhbHRlcm5hdGUpCi0gUGFjaW5nIChpZiBTY2VuZSAyIHdhcyBzbG93IGFuZCBkZWxpYmVyYXRlLCBTY2VuZSAzIGNhbiBiZSBmYXN0ZXIpCgojIyMgVGVtcG8gY3VydmUKCkEgZ29vZCB2aWRlbyBmb2xsb3dzIGEgdGVtcG8gY3VydmU6CgpgYGAKU2xvdyDilIDilIDihpIgTWVkaXVtIOKUgOKUgOKGkiBGQVNUIChjbGltYXgpIOKUgOKUgOKGkiBTbG93IChjb25jbHVzaW9uKQoKU2NlbmUgMTogU2xvdyAoaW50cm9kdWN0aW9uLCBzZXR1cCkKU2NlbmUgMjogTWVkaXVtIChidWlsZGluZyB1bmRlcnN0YW5kaW5nKQpTY2VuZSAzOiBNZWRpdW0tRmFzdCAoY29yZSBjb250ZW50LCBsb3RzIG9mIGFuaW1hdGlvbikKU2NlbmUgNDogRkFTVCAobW9udGFnZSBvZiBhcHBsaWNhdGlvbnMvcmVzdWx0cykKU2NlbmUgNTogU2xvdyAoY29uY2x1c2lvbiwga2V5IHRha2Vhd2F5KQpgYGAKCiMjIyBUcmFuc2l0aW9uIHF1YWxpdHkKCkJldHdlZW4gc2NlbmVzOgotICoqQ2xlYW4gZXhpdCoqOiBgc2VsZi5wbGF5KEZhZGVPdXQoR3JvdXAoKnNlbGYubW9iamVjdHMpKSwgcnVuX3RpbWU9MC41KWAKLSAqKkJyaWVmIHBhdXNlKio6IGBzZWxmLndhaXQoMC4zKWAgYWZ0ZXIgZmFkZW91dCwgYmVmb3JlIG5leHQgc2NlbmUncyBmaXJzdCBhbmltYXRpb24KLSAqKk5ldmVyIGhhcmQtY3V0Kio6IGFsd2F5cyBhbmltYXRlIHRoZSB0cmFuc2l0aW9uCgojIyBDb2xvciBRdWFsaXR5CgojIyMgRGltbWluZyBvbiBkYXJrIGJhY2tncm91bmRzCgpDb2xvcnMgdGhhdCBsb29rIHZpYnJhbnQgb24gd2hpdGUgbG9vayBtdWRkeSBvbiBkYXJrIGJhY2tncm91bmRzICgjMEQxMTE3LCAjMUMxQzFDKS4gVGVzdCB5b3VyIHBhbGV0dGU6CgpgYGBweXRob24KIyBDb2xvcnMgdGhhdCB3b3JrIHdlbGwgb24gZGFyayBiYWNrZ3JvdW5kczoKIyBCcmlnaHQgYW5kIHNhdHVyYXRlZDogIzU4QzRERCwgIzgzQzE2NywgI0ZGRkYwMCwgI0ZGNkI2QgojIENvbG9ycyB0aGF0IERPTidUIHdvcms6ICM2NjY2NjYgKGludmlzaWJsZSksICMyMjQ0QUEgKHRvbyBkYXJrKQoKIyBSVUxFOiBTdHJ1Y3R1cmFsIGVsZW1lbnRzIChheGVzLCBncmlkcykgYXQgb3BhY2l0eSAwLjE1CiMgQ29udGV4dCBlbGVtZW50cyBhdCAwLjMtMC40CiMgUHJpbWFyeSBlbGVtZW50cyBhdCAxLjAKYGBgCgojIyMgQ29sb3IgbWVhbmluZyBjb25zaXN0ZW5jeQoKT25jZSBhIGNvbG9yIGlzIGFzc2lnbmVkIGEgbWVhbmluZywgaXQga2VlcHMgdGhhdCBtZWFuaW5nIGZvciB0aGUgZW50aXJlIHZpZGVvOgoKYGBgcHl0aG9uCiMgSWYgUFJJTUFSWSAoIzU4QzRERCkgbWVhbnMgInRoZSBtb2RlbCIgaW4gU2NlbmUgMSwKIyBpdCBtZWFucyAidGhlIG1vZGVsIiBpbiBldmVyeSBzY2VuZS4KIyBOZXZlciByZXVzZSBQUklNQVJZIGZvciBhIGRpZmZlcmVudCBjb25jZXB0IGxhdGVyLgpgYGAKCiMjIERhdGEgVmlzdWFsaXphdGlvbiBRdWFsaXR5CgojIyMgTWluaW11bSByZXF1aXJlbWVudHMgZm9yIGNoYXJ0cwoKLSBBeGlzIGxhYmVscyBvbiBldmVyeSBheGlzCi0gWS1heGlzIHJhbmdlIHN0YXJ0cyBhdCAwIChvciBoYXMgYSBjbGVhciBicmVhayBpbmRpY2F0b3IpCi0gQmFyL2xpbmUgY29sb3JzIG1hdGNoIHRoZSBsZWdlbmQKLSBOdW1iZXJzIG9uIG5vdGFibGUgZGF0YSBwb2ludHMgKGF0IGxlYXN0IHRoZSBtYXhpbXVtIGFuZCB0aGUgY29tcGFyaXNvbiBwb2ludCkKCiMjIyBBbmltYXRlZCBjb3VudGVycwoKV2hlbiBzaG93aW5nIGEgbnVtYmVyIGNoYW5naW5nOgpgYGBweXRob24KIyBHT09EOiBEZWNpbWFsTnVtYmVyIHdpdGggc21vb3RoIGFuaW1hdGlvbgpjb3VudGVyID0gRGVjaW1hbE51bWJlcigwLCBmb250X3NpemU9NDgsIG51bV9kZWNpbWFsX3BsYWNlcz0wLCBmb250PSJNZW5sbyIpCnNlbGYucGxheShjb3VudGVyLmFuaW1hdGUuc2V0X3ZhbHVlKDEwMDApLCBydW5fdGltZT0zLCByYXRlX2Z1bmM9cnVzaF9mcm9tKQoKIyBCQUQ6IFRleHQgdGhhdCBqdW1wcyBiZXR3ZWVuIHZhbHVlcwpgYGAKCiMjIFByZS1SZW5kZXIgQ2hlY2tsaXN0CgpCZWZvcmUgcnVubmluZyBgbWFuaW0gLXFoYDoKCi0gWyBdIEFsbCBzY2VuZXMgcmVuZGVyIHdpdGhvdXQgZXJyb3JzIGF0IGAtcWxgCi0gWyBdIFByZXZpZXcgc3RpbGxzIGF0IGAtcW1gIGZvciB0ZXh0LWhlYXZ5IHNjZW5lcyAoY2hlY2sga2VybmluZykKLSBbIF0gQmFja2dyb3VuZCBjb2xvciBzZXQgaW4gZXZlcnkgc2NlbmUgKGBzZWxmLmNhbWVyYS5iYWNrZ3JvdW5kX2NvbG9yID0gQkdgKQotIFsgXSBgYWRkX3N1YmNhcHRpb24oKWAgb3IgYHN1YmNhcHRpb249YCBvbiBldmVyeSBzaWduaWZpY2FudCBhbmltYXRpb24KLSBbIF0gTm8gdGV4dCBzbWFsbGVyIHRoYW4gZm9udF9zaXplPTE4Ci0gWyBdIE5vIHRleHQgdXNpbmcgcHJvcG9ydGlvbmFsIGZvbnRzICh1c2UgbW9ub3NwYWNlKQotIFsgXSBidWZmID49IDAuNSBvbiBhbGwgYC50b19lZGdlKClgIGNhbGxzCi0gWyBdIENsZWFuIGV4aXQgKEZhZGVPdXQgYWxsKSBhdCBlbmQgb2YgZXZlcnkgc2NlbmUKLSBbIF0gYHNlbGYud2FpdCgpYCBhZnRlciBldmVyeSByZXZlYWwKLSBbIF0gQ29sb3IgY29uc3RhbnRzIHVzZWQgKG5vIGhhcmRjb2RlZCBoZXggc3RyaW5ncyBpbiBzY2VuZSBjb2RlKQotIFsgXSBBbGwgc2NlbmVzIHVzZSB0aGUgc2FtZSBxdWFsaXR5IGZsYWcgKGRvbid0IG1peCBgLXFsYCBhbmQgYC1xaGApCgojIyBQb3N0LVJlbmRlciBDaGVja2xpc3QKCkFmdGVyIHN0aXRjaGluZyB0aGUgZmluYWwgdmlkZW86CgotIFsgXSBXYXRjaCB0aGUgY29tcGxldGUgdmlkZW8gYXQgMXggc3BlZWQg4oCUIGRvZXMgaXQgZmVlbCBydXNoZWQgYW55d2hlcmU/Ci0gWyBdIElzIHRoZXJlIGEgbW9tZW50IHdoZXJlIHR3byB0aGluZ3MgYW5pbWF0ZSBzaW11bHRhbmVvdXNseSBhbmQgaXQncyBjb25mdXNpbmc/Ci0gWyBdIERvZXMgZXZlcnkgdGV4dCBsYWJlbCBoYXZlIGVub3VnaCB0aW1lIHRvIGJlIHJlYWQ/Ci0gWyBdIEFyZSB0cmFuc2l0aW9ucyBiZXR3ZWVuIHNjZW5lcyBzbW9vdGggKG5vIGJsYWNrIGZyYW1lcywgbm8gamFycmluZyBjdXRzKT8KLSBbIF0gSXMgdGhlIGF1ZGlvIGluIHN5bmMgd2l0aCB0aGUgdmlzdWFscyAoaWYgdXNpbmcgdm9pY2VvdmVyKT8KLSBbIF0gSXMgdGhlIEdpYmJzLWxpa2UgImZpcnN0IGltcHJlc3Npb24iIGdvb2Q/IFRoZSBmaXJzdCA1IHNlY29uZHMgZGV0ZXJtaW5lIGlmIHNvbWVvbmUga2VlcHMgd2F0Y2hpbmcK
+# Production Quality Checklist
+
+Standards and checks for ensuring animation output is publication-ready.
+
+## Pre-Code Checklist
+
+Before writing any Manim code:
+
+- [ ] Narration script written with visual beats marked
+- [ ] Scene list with purpose, duration, and layout for each
+- [ ] Color palette defined with meaning assignments (`PRIMARY` = main concept, etc.)
+- [ ] `MONO = "Menlo"` set as the font constant
+- [ ] Target resolution and aspect ratio decided
+
+## Text Quality
+
+### Overlap prevention
+
+```python
+# RULE: buff >= 0.5 for edge text
+label.to_edge(DOWN, buff=0.5)     # GOOD
+label.to_edge(DOWN, buff=0.3)     # BAD — may clip
+
+# RULE: FadeOut previous before adding new at same position
+self.play(ReplacementTransform(note1, note2))  # GOOD
+self.play(Write(note2))                          # BAD — overlaps note1
+
+# RULE: Reduce font size for dense scenes
+# When > 4 text elements visible, use font_size=20 not 28
+```
+
+### Width enforcement
+
+Long text strings overflow the frame:
+
+```python
+# RULE: Set max width for any text that might be long
+text = Text("This is a potentially long description", font_size=22, font=MONO)
+if text.width > config.frame_width - 1.0:
+    text.set_width(config.frame_width - 1.0)
+```
+
+### Font consistency
+
+```python
+# RULE: Define MONO once, use everywhere
+MONO = "Menlo"
+
+# WRONG: mixing fonts
+Text("Title", font="Helvetica")
+Text("Label", font="Arial")
+Text("Code", font="Courier")
+
+# RIGHT: one font
+Text("Title", font=MONO, weight=BOLD, font_size=48)
+Text("Label", font=MONO, font_size=20)
+Text("Code", font=MONO, font_size=18)
+```
+
+## Spatial Layout
+
+### The coordinate budget
+
+The visible frame is approximately 14.2 wide × 8.0 tall (default 16:9). With mandatory margins:
+
+```
+Usable area: x ∈ [-6.5, 6.5], y ∈ [-3.5, 3.5]
+Top title zone: y ∈ [2.5, 3.5]
+Bottom note zone: y ∈ [-3.5, -2.5]
+Main content: y ∈ [-2.5, 2.5], x ∈ [-6.0, 6.0]
+```
+
+### Fill the frame
+
+Empty scenes look unfinished. If the main content is small, add context:
+- A dimmed grid/axes behind the content
+- A title/subtitle at the top
+- A source citation at the bottom
+- Decorative geometry at low opacity
+
+### Maximum simultaneous elements
+
+**Hard limit: 6 actively visible elements.** Beyond that, the viewer can't track everything. If you need more:
+- Dim old elements to opacity 0.3
+- Remove elements that have served their purpose
+- Split into two scenes
+
+## Animation Quality
+
+### Variety audit
+
+Check that no two consecutive scenes use the exact same:
+- Animation type (if Scene 3 uses Write for everything, Scene 4 should use FadeIn or Create)
+- Color emphasis (rotate through palette colors)
+- Layout (center, left-right, grid — alternate)
+- Pacing (if Scene 2 was slow and deliberate, Scene 3 can be faster)
+
+### Tempo curve
+
+A good video follows a tempo curve:
+
+```
+Slow ──→ Medium ──→ FAST (climax) ──→ Slow (conclusion)
+
+Scene 1: Slow (introduction, setup)
+Scene 2: Medium (building understanding)
+Scene 3: Medium-Fast (core content, lots of animation)
+Scene 4: FAST (montage of applications/results)
+Scene 5: Slow (conclusion, key takeaway)
+```
+
+### Transition quality
+
+Between scenes:
+- **Clean exit**: `self.play(FadeOut(Group(*self.mobjects)), run_time=0.5)`
+- **Brief pause**: `self.wait(0.3)` after fadeout, before next scene's first animation
+- **Never hard-cut**: always animate the transition
+
+## Color Quality
+
+### Dimming on dark backgrounds
+
+Colors that look vibrant on white look muddy on dark backgrounds (#0D1117, #1C1C1C). Test your palette:
+
+```python
+# Colors that work well on dark backgrounds:
+# Bright and saturated: #58C4DD, #83C167, #FFFF00, #FF6B6B
+# Colors that DON'T work: #666666 (invisible), #2244AA (too dark)
+
+# RULE: Structural elements (axes, grids) at opacity 0.15
+# Context elements at 0.3-0.4
+# Primary elements at 1.0
+```
+
+### Color meaning consistency
+
+Once a color is assigned a meaning, it keeps that meaning for the entire video:
+
+```python
+# If PRIMARY (#58C4DD) means "the model" in Scene 1,
+# it means "the model" in every scene.
+# Never reuse PRIMARY for a different concept later.
+```
+
+## Data Visualization Quality
+
+### Minimum requirements for charts
+
+- Axis labels on every axis
+- Y-axis range starts at 0 (or has a clear break indicator)
+- Bar/line colors match the legend
+- Numbers on notable data points (at least the maximum and the comparison point)
+
+### Animated counters
+
+When showing a number changing:
+```python
+# GOOD: DecimalNumber with smooth animation
+counter = DecimalNumber(0, font_size=48, num_decimal_places=0, font="Menlo")
+self.play(counter.animate.set_value(1000), run_time=3, rate_func=rush_from)
+
+# BAD: Text that jumps between values
+```
+
+## Pre-Render Checklist
+
+Before running `manim -qh`:
+
+- [ ] All scenes render without errors at `-ql`
+- [ ] Preview stills at `-qm` for text-heavy scenes (check kerning)
+- [ ] Background color set in every scene (`self.camera.background_color = BG`)
+- [ ] `add_subcaption()` or `subcaption=` on every significant animation
+- [ ] No text smaller than font_size=18
+- [ ] No text using proportional fonts (use monospace)
+- [ ] buff >= 0.5 on all `.to_edge()` calls
+- [ ] Clean exit (FadeOut all) at end of every scene
+- [ ] `self.wait()` after every reveal
+- [ ] Color constants used (no hardcoded hex strings in scene code)
+- [ ] All scenes use the same quality flag (don't mix `-ql` and `-qh`)
+
+## Post-Render Checklist
+
+After stitching the final video:
+
+- [ ] Watch the complete video at 1x speed — does it feel rushed anywhere?
+- [ ] Is there a moment where two things animate simultaneously and it's confusing?
+- [ ] Does every text label have enough time to be read?
+- [ ] Are transitions between scenes smooth (no black frames, no jarring cuts)?
+- [ ] Is the audio in sync with the visuals (if using voiceover)?
+- [ ] Is the Gibbs-like "first impression" good? The first 5 seconds determine if someone keeps watching

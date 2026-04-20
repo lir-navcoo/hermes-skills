@@ -1,1 +1,3 @@
-LS0tCmRlc2NyaXB0aW9uOiBTa2lsbHMgZm9yIHNwYXduaW5nIGFuZCBvcmNoZXN0cmF0aW5nIGF1dG9ub21vdXMgQUkgY29kaW5nIGFnZW50cyBhbmQgbXVsdGktYWdlbnQgd29ya2Zsb3dzIOKAlCBydW5uaW5nIGluZGVwZW5kZW50IGFnZW50IHByb2Nlc3NlcywgZGVsZWdhdGluZyB0YXNrcywgYW5kIGNvb3JkaW5hdGluZyBwYXJhbGxlbCB3b3Jrc3RyZWFtcy4KLS0tCg==
+---
+description: Skills for spawning and orchestrating autonomous AI coding agents and multi-agent workflows — running independent agent processes, delegating tasks, and coordinating parallel workstreams.
+---

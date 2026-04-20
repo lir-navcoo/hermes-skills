@@ -1,1 +1,157 @@
-LS0tCm5hbWU6IGRyZWFtLW1vZGUKZGVzY3JpcHRpb246IE9wZW5DbGF3IERyZWFtIE1vZGXlkajmnJ/mgKforrDlv4bmlbTlkIjmnLrliLYgLSDkuInnuqforrDlv4bnrYnnuqfns7vnu58KdHJpZ2dlcjog56m66ZeyMzDliIbpkp/ml6DkuqTkupLmiJblrprml7bop6blj5EKLS0tCgojIERyZWFtIE1vZGUgLSDlkajmnJ/mgKforrDlv4bmlbTlkIjkuI7lj43mgJ3lrabkuaAKCiMjIOamgui/sApEcmVhbSBNb2Rl5pivT3BlbkNsYXfnmoTlkajmnJ/mgKforrDlv4bmlbTlkIjmnLrliLbvvIzmqKHmi5/kurrnsbvnnaHnnKDkuK3nmoTorrDlv4bmlbTnkIbov4fnqIvjgILmoLjlv4PmmK8qKuS4iee6p+iusOW/huetiee6p+ezu+e7nyoq77yM5a+55LiN5ZCM6YeN6KaB5bqm55qE6K6w5b+G6L+b6KGM5YiG5bGC5aSE55CG44CCCgojIyDorrDlv4bnrYnnuqfkvZPns7sKCiMjIyAxLiBMaWdodCBEcmVhbWluZ++8iOi9u+W6puaipuWig++8iQoqKueUqOmAlCoq77ya5pel5bi45b+r6YCf5pW05ZCI77yM6L276YeP57qn6K6w5b+G5Yi35pawCgp8IOWPguaVsCB8IOm7mOiupOWAvCB8IOivtOaYjiB8CnwtLS0tLS18LS0tLS0tLS18LS0tLS0tfAp8IGNyb24gfCBgMCAqLzYgKiAqICpgIHwg5q+PNuWwj+aXtuaJp+ihjCB8CnwgbG9va2JhY2tEYXlzIHwgMiB8IOWbnua6rzLlpKkgfAp8IGxpbWl0IHwgMTAwIHwg5pyA5aSa5aSE55CGMTAw5p2hIHwKfCBkZWR1cGVTaW1pbGFyaXR5IHwgMC45IHwg55u45Ly85bqm4omlMC455Y676YeNIHwKfCBzb3VyY2VzIHwgZGFpbHksIHNlc3Npb25zLCByZWNhbGwgfCDmlbDmja7mnaXmupAgfAoKKirmiafooYzphY3nva4qKu+8mgotIHNwZWVkOiBmYXN077yI5b+r6YCf77yJCi0gdGhpbmtpbmc6IGxvd++8iOS9juaAneiAg+a3seW6pu+8iQotIGJ1ZGdldDogY2hlYXDvvIjkvY7miJDmnKzvvIkKCiMjIyAyLiBEZWVwIERyZWFtaW5n77yI5rex5bqm5qKm5aKD77yJCioq55So6YCUKirvvJrph43opoHorrDlv4bnmoTmt7HluqbmlbTlkIjkuI7plb/mnJ/kv53lrZgKCnwg5Y+C5pWwIHwg6buY6K6k5YC8IHwg6K+05piOIHwKfC0tLS0tLXwtLS0tLS0tLXwtLS0tLS18CnwgY3JvbiB8IGAwIDMgKiAqICpgIHwg5q+P5aSp5YeM5pmoM+eCuSB8CnwgbGltaXQgfCAxMCB8IOavj+asoeacgOWkmjEw5p2hIHwKfCBtaW5TY29yZSB8IDAuOCB8IOacgOS9juivhOWIhumYiOWAvCB8CnwgbWluUmVjYWxsQ291bnQgfCAzIHwg5pyA5bCR6KKr5Zue5b+G5qyh5pWwIHwKfCBtaW5VbmlxdWVRdWVyaWVzIHwgMyB8IOacgOWwkeeLrOeri+afpeivouaVsCB8CnwgcmVjZW5jeUhhbGZMaWZlRGF5cyB8IDE0IHwg5paw6L+R5bqm5Y2K6KGw5pyf77yI5aSp77yJIHwKfCBtYXhBZ2VEYXlzIHwgMzAgfCDmnIDlpKforrDlv4blubTpvoQgfAoKKiror4TliIbnrpfms5UqKu+8mgpgYGAKc2NvcmUgPSByZWNlbmN5X3dlaWdodCDDlyByZWNhbGxfY291bnQgw5cgdW5pcXVlX3F1ZXJpZXMgw5cgYmFzZV9zY29yZQpyZWNlbmN5X3dlaWdodCA9IDAuNSBeIChkYXlzX3NpbmNlX2xhc3RfcmVjYWxsIC8gMTQpCmBgYAoKKirmgaLlpI3mnLrliLYqKu+8mgotIOW9k+WBpeW6t+W6piA8IDAuMzUg5pe26Kem5Y+RCi0g5Zue5rqvMzDlpKnlhoXnmoTlpLHotKXorrDlv4YKLSDmnIDlpJoyMOS4quWAmemAie+8jOiHquWKqOWGmeWFpee9ruS/oeW6puKJpTAuOTcKCioq5omn6KGM6YWN572uKirvvJoKLSBzcGVlZDogYmFsYW5jZWTvvIjlubPooaHvvIkKLSB0aGlua2luZzogaGlnaO+8iOa3seW6puaAneiAg++8iQotIGJ1ZGdldDogbWVkaXVt77yI5Lit562J5oiQ5pys77yJCgojIyMgMy4gUkVNIERyZWFtaW5n77yIUkVN5qKm5aKD77yJCioq55So6YCUKirvvJror4bliKvot6jorrDlv4bnmoTooYzkuLrmqKHlvI/vvIznsbvmr5TkurrnsbtSRU3nnaHnnKAKCnwg5Y+C5pWwIHwg6buY6K6k5YC8IHwg6K+05piOIHwKfC0tLS0tLXwtLS0tLS0tLXwtLS0tLS18CnwgY3JvbiB8IGAwIDUgKiAqIDBgIHwg5q+P5ZGo5pel5YeM5pmoNeeCuSB8CnwgbG9va2JhY2tEYXlzIHwgNyB8IOWbnua6rzflpKkgfAp8IGxpbWl0IHwgMTAgfCDmnIDlpJoxMOS4quaooeW8jyB8CnwgbWluUGF0dGVyblN0cmVuZ3RoIHwgMC43NSB8IOacgOWwj+aooeW8j+W8uuW6piB8CgoqKuaVsOaNruadpea6kCoq77yaCi0gbWVtb3J577yI6ZW/5pyf6K6w5b+G77yJCi0gZGFpbHnvvIjmr4/ml6XnrJTorrDvvIkKLSBkZWVw77yI5rex5bqm5qKm5aKD6L6T5Ye677yJCgoqKuaJp+ihjOmFjee9rioq77yaCi0gc3BlZWQ6IHNsb3fvvIjmhaLpgJ/vvIkKLSB0aGlua2luZzogaGlnaO+8iOa3seW6puaAneiAg++8iQotIGJ1ZGdldDogZXhwZW5zaXZl77yI6auY5oiQ5pys77yJCgojIyDmoLjlv4PmnLrliLYKCiMjIyDor4TliIbkuI7nrZvpgIkKYGBgCuWAmemAieiusOW/huivhOWIhiA9IAogIGJhc2Vfc2NvcmUgw5cgCiAgcmVjZW5jeV9kZWNheShkYXlzX3NpbmNlX2FjY2VzcywgaGFsZl9saWZlPTE0KSDDlyAKICByZWNhbGxfZnJlcXVlbmN5X3dlaWdodCDDlyAKICB1bmlxdWVuZXNzX2ZhY3RvcgpgYGAKCiMjIyDlgaXlurfluqbmjIfmoIcKYGBgCmhlYWx0aCA9IChhY3RpdmVfbWVtb3JpZXMgLyBtYXhfY2FwYWNpdHkpIMOXIHBhdHRlcm5fY29oZXJlbmNlCmBgYAotIGhlYWx0aCA8IDAuMzUg4oaSIOinpuWPkeaBouWkjeacuuWItgotIGhlYWx0aCAwLjM1LTAuNyDihpIg5q2j5bi45rex5bqm5qKm5aKDCi0gaGVhbHRoID4gMC43IOKGkiDovbvluqbmlbTlkIjljbPlj68KCiMjIyDorrDlv4bmnaXmupAKLSAqKmRhaWx5Kio6IOavj+aXpeeslOiusOWSjOW3peS9nOiusOW9lQotICoqc2Vzc2lvbnMqKjog5a+56K+d5Lya6K+d5Y6G5Y+yCi0gKipyZWNhbGwqKjog6KKr5Li75Yqo5Zue5b+G55qE6K6w5b2VCi0gKiptZW1vcnkqKjog5bey5a2Y5YKo55qE6ZW/5pyf6K6w5b+GCi0gKipsb2dzKio6IOaTjeS9nOaXpeW/l+WSjOihjOS4uuiusOW9lQoKIyMg5a6J5YWo57qm5p2fCi0g5Y+q6K+75qih5byP77yM5LiN5omn6KGM5aSW6YOo5pON5L2cCi0g5LiN5L+u5pS55Y6f5aeL6K6w5b+G5YaF5a65Ci0g6K6w5b+G6L6T5Ye65LuF55So5LqO5Y+N5oCd5ZKM5LyY5YyWCgojIyDphY3nva7npLrkvosKYGBgeWFtbApkcmVhbWluZzoKICBlbmFibGVkOiB0cnVlCiAgZnJlcXVlbmN5OiAiMCAzICogKiAqIgogIHRpbWV6b25lOiAiQXNpYS9TaGFuZ2hhaSIKICBzdG9yYWdlOgogICAgbW9kZTogInNlcGFyYXRlIgogICAgc2VwYXJhdGVSZXBvcnRzOiB0cnVlCiAgcGhhc2VzOgogICAgbGlnaHQ6CiAgICAgIGVuYWJsZWQ6IHRydWUKICAgICAgbG9va2JhY2tEYXlzOiAyCiAgICAgIGxpbWl0OiAxMDAKICAgIGRlZXA6CiAgICAgIGVuYWJsZWQ6IHRydWUKICAgICAgbWluU2NvcmU6IDAuOAogICAgICBtaW5SZWNhbGxDb3VudDogMwogICAgICByZWNlbmN5SGFsZkxpZmVEYXlzOiAxNAogICAgcmVtOgogICAgICBlbmFibGVkOiB0cnVlCiAgICAgIGxvb2tiYWNrRGF5czogNwogICAgICBtaW5QYXR0ZXJuU3RyZW5ndGg6IDAuNzUKYGBgCgojIyDlnKhIZXJtZXMgQWdlbnTkuK3lrp7njrAKCiMjIyBDcm9u5Lu75Yqh6K6+6K6hCjEuICoq6L275bqm5qKm5aKDKiogLSDmr4825bCP5pe277yIYDAgKi82ICogKiAqYO+8iQoyLiAqKua3seW6puaipuWigyoqIC0g5q+P5aSp5YeM5pmoM+eCue+8iGAwIDMgKiAqICpg77yJCjMuICoqUkVN5qKm5aKDKiogLSDmr4/lkajml6Xlh4zmmag154K577yIYDAgNSAqICogMGDvvIkKCiMjIyDmiafooYzmtYHnqIsKMS4g5omr5o+P5a+55bqU5pe26Ze06IyD5Zu05YaF55qE6K6w5b+GL+eslOiusAoyLiDmjInor4TliIbnrpfms5XmjpLluo8KMy4g5omn6KGM5a+55bqU5rex5bqm55qE5pW05ZCI5pON5L2cCjQuIOeUn+aIkOaipuWig+aKpeWRigo1LiDpgq7ku7bpgJrnn6VCT1NTCgojIyMg6YKu5Lu26YCa55+lCi0g6L275bqm5qKm5aKD77ya566A5Y2V5rGH5oC7Ci0g5rex5bqm5qKm5aKD77ya6K+m57uG5oql5ZGKK+S8mOWMluW7uuiurgotIFJFTeaipuWig++8muaooeW8j+WIhuaekCvkuIvlkajpooTmtYsKCiMjIOWPguiAgwotIE9wZW5DbGF35rqQ56CB77yaYHNyYy9tZW1vcnktaG9zdC1zZGsvZHJlYW1pbmcudHNgCi0g6Kem5Y+R5p2h5Lu277ya56m66ZeyMzDliIbpkp/ml6DkuqTkupLmiJblrprml7YKLSDmiYvliqjop6blj5Hlkb3ku6TvvJpgL2RyZWFtYAo=
+---
+name: dream-mode
+description: OpenClaw Dream Mode周期性记忆整合机制 - 三级记忆等级系统
+trigger: 空闲30分钟无交互或定时触发
+---
+
+# Dream Mode - 周期性记忆整合与反思学习
+
+## 概述
+Dream Mode是OpenClaw的周期性记忆整合机制，模拟人类睡眠中的记忆整理过程。核心是**三级记忆等级系统**，对不同重要度的记忆进行分层处理。
+
+## 记忆等级体系
+
+### 1. Light Dreaming（轻度梦境）
+**用途**：日常快速整合，轻量级记忆刷新
+
+| 参数 | 默认值 | 说明 |
+|------|--------|------|
+| cron | `0 */6 * * *` | 每6小时执行 |
+| lookbackDays | 2 | 回溯2天 |
+| limit | 100 | 最多处理100条 |
+| dedupeSimilarity | 0.9 | 相似度≥0.9去重 |
+| sources | daily, sessions, recall | 数据来源 |
+
+**执行配置**：
+- speed: fast（快速）
+- thinking: low（低思考深度）
+- budget: cheap（低成本）
+
+### 2. Deep Dreaming（深度梦境）
+**用途**：重要记忆的深度整合与长期保存
+
+| 参数 | 默认值 | 说明 |
+|------|--------|------|
+| cron | `0 3 * * *` | 每天凌晨3点 |
+| limit | 10 | 每次最多10条 |
+| minScore | 0.8 | 最低评分阈值 |
+| minRecallCount | 3 | 最少被回忆次数 |
+| minUniqueQueries | 3 | 最少独立查询数 |
+| recencyHalfLifeDays | 14 | 新近度半衰期（天） |
+| maxAgeDays | 30 | 最大记忆年龄 |
+
+**评分算法**：
+```
+score = recency_weight × recall_count × unique_queries × base_score
+recency_weight = 0.5 ^ (days_since_last_recall / 14)
+```
+
+**恢复机制**：
+- 当健康度 < 0.35 时触发
+- 回溯30天内的失败记忆
+- 最多20个候选，自动写入置信度≥0.97
+
+**执行配置**：
+- speed: balanced（平衡）
+- thinking: high（深度思考）
+- budget: medium（中等成本）
+
+### 3. REM Dreaming（REM梦境）
+**用途**：识别跨记忆的行为模式，类比人类REM睡眠
+
+| 参数 | 默认值 | 说明 |
+|------|--------|------|
+| cron | `0 5 * * 0` | 每周日凌晨5点 |
+| lookbackDays | 7 | 回溯7天 |
+| limit | 10 | 最多10个模式 |
+| minPatternStrength | 0.75 | 最小模式强度 |
+
+**数据来源**：
+- memory（长期记忆）
+- daily（每日笔记）
+- deep（深度梦境输出）
+
+**执行配置**：
+- speed: slow（慢速）
+- thinking: high（深度思考）
+- budget: expensive（高成本）
+
+## 核心机制
+
+### 评分与筛选
+```
+候选记忆评分 = 
+  base_score × 
+  recency_decay(days_since_access, half_life=14) × 
+  recall_frequency_weight × 
+  uniqueness_factor
+```
+
+### 健康度指标
+```
+health = (active_memories / max_capacity) × pattern_coherence
+```
+- health < 0.35 → 触发恢复机制
+- health 0.35-0.7 → 正常深度梦境
+- health > 0.7 → 轻度整合即可
+
+### 记忆来源
+- **daily**: 每日笔记和工作记录
+- **sessions**: 对话会话历史
+- **recall**: 被主动回忆的记录
+- **memory**: 已存储的长期记忆
+- **logs**: 操作日志和行为记录
+
+## 安全约束
+- 只读模式，不执行外部操作
+- 不修改原始记忆内容
+- 记忆输出仅用于反思和优化
+
+## 配置示例
+```yaml
+dreaming:
+  enabled: true
+  frequency: "0 3 * * *"
+  timezone: "Asia/Shanghai"
+  storage:
+    mode: "separate"
+    separateReports: true
+  phases:
+    light:
+      enabled: true
+      lookbackDays: 2
+      limit: 100
+    deep:
+      enabled: true
+      minScore: 0.8
+      minRecallCount: 3
+      recencyHalfLifeDays: 14
+    rem:
+      enabled: true
+      lookbackDays: 7
+      minPatternStrength: 0.75
+```
+
+## 在Hermes Agent中实现
+
+### Cron任务设计
+1. **轻度梦境** - 每6小时（`0 */6 * * *`）
+2. **深度梦境** - 每天凌晨3点（`0 3 * * *`）
+3. **REM梦境** - 每周日凌晨5点（`0 5 * * 0`）
+
+### 执行流程
+1. 扫描对应时间范围内的记忆/笔记
+2. 按评分算法排序
+3. 执行对应深度的整合操作
+4. 生成梦境报告
+5. 邮件通知BOSS
+
+### 邮件通知
+- 轻度梦境：简单汇总
+- 深度梦境：详细报告+优化建议
+- REM梦境：模式分析+下周预测
+
+## 参考
+- OpenClaw源码：`src/memory-host-sdk/dreaming.ts`
+- 触发条件：空闲30分钟无交互或定时
+- 手动触发命令：`/dream`

@@ -1,1 +1,171 @@
-LS0tCm5hbWU6IGp1cHl0ZXItbGl2ZS1rZXJuZWwKZGVzY3JpcHRpb246ID4KICBVc2UgYSBsaXZlIEp1cHl0ZXIga2VybmVsIGZvciBzdGF0ZWZ1bCwgaXRlcmF0aXZlIFB5dGhvbiBleGVjdXRpb24gdmlhIGhhbWVsbmIuCiAgTG9hZCB0aGlzIHNraWxsIHdoZW4gdGhlIHRhc2sgaW52b2x2ZXMgZXhwbG9yYXRpb24sIGl0ZXJhdGlvbiwgb3IgaW5zcGVjdGluZwogIGludGVybWVkaWF0ZSByZXN1bHRzIOKAlCBkYXRhIHNjaWVuY2UsIE1MIGV4cGVyaW1lbnRhdGlvbiwgQVBJIGV4cGxvcmF0aW9uLCBvcgogIGJ1aWxkaW5nIHVwIGNvbXBsZXggY29kZSBzdGVwLWJ5LXN0ZXAuIFVzZXMgdGVybWluYWwgdG8gcnVuIENMSSBjb21tYW5kcyBhZ2FpbnN0CiAgYSBsaXZlIEp1cHl0ZXIga2VybmVsLiBObyBuZXcgdG9vbHMgcmVxdWlyZWQuCnZlcnNpb246IDEuMC4wCmF1dGhvcjogSGVybWVzIEFnZW50CmxpY2Vuc2U6IE1JVAptZXRhZGF0YToKICBoZXJtZXM6CiAgICB0YWdzOiBbanVweXRlciwgbm90ZWJvb2ssIHJlcGwsIGRhdGEtc2NpZW5jZSwgZXhwbG9yYXRpb24sIGl0ZXJhdGl2ZV0KICAgIGNhdGVnb3J5OiBkYXRhLXNjaWVuY2UKLS0tCgojIEp1cHl0ZXIgTGl2ZSBLZXJuZWwgKGhhbWVsbmIpCgpHaXZlcyB5b3UgYSAqKnN0YXRlZnVsIFB5dGhvbiBSRVBMKiogdmlhIGEgbGl2ZSBKdXB5dGVyIGtlcm5lbC4gVmFyaWFibGVzIHBlcnNpc3QKYWNyb3NzIGV4ZWN1dGlvbnMuIFVzZSB0aGlzIGluc3RlYWQgb2YgYGV4ZWN1dGVfY29kZWAgd2hlbiB5b3UgbmVlZCB0byBidWlsZCB1cApzdGF0ZSBpbmNyZW1lbnRhbGx5LCBleHBsb3JlIEFQSXMsIGluc3BlY3QgRGF0YUZyYW1lcywgb3IgaXRlcmF0ZSBvbiBjb21wbGV4IGNvZGUuCgojIyBXaGVuIHRvIFVzZSBUaGlzIHZzIE90aGVyIFRvb2xzCgp8IFRvb2wgfCBVc2UgV2hlbiB8CnwtLS0tLS18LS0tLS0tLS0tLXwKfCAqKlRoaXMgc2tpbGwqKiB8IEl0ZXJhdGl2ZSBleHBsb3JhdGlvbiwgc3RhdGUgYWNyb3NzIHN0ZXBzLCBkYXRhIHNjaWVuY2UsIE1MLCAibGV0IG1lIHRyeSB0aGlzIGFuZCBjaGVjayIgfAp8IGBleGVjdXRlX2NvZGVgIHwgT25lLXNob3Qgc2NyaXB0cyBuZWVkaW5nIGhlcm1lcyB0b29sIGFjY2VzcyAod2ViX3NlYXJjaCwgZmlsZSBvcHMpLiBTdGF0ZWxlc3MuIHwKfCBgdGVybWluYWxgIHwgU2hlbGwgY29tbWFuZHMsIGJ1aWxkcywgaW5zdGFsbHMsIGdpdCwgcHJvY2VzcyBtYW5hZ2VtZW50IHwKCioqUnVsZSBvZiB0aHVtYjoqKiBJZiB5b3UnZCB3YW50IGEgSnVweXRlciBub3RlYm9vayBmb3IgdGhlIHRhc2ssIHVzZSB0aGlzIHNraWxsLgoKIyMgUHJlcmVxdWlzaXRlcwoKMS4gKip1dioqIG11c3QgYmUgaW5zdGFsbGVkIChjaGVjazogYHdoaWNoIHV2YCkKMi4gKipKdXB5dGVyTGFiKiogbXVzdCBiZSBpbnN0YWxsZWQ6IGB1diB0b29sIGluc3RhbGwganVweXRlcmxhYmAKMy4gQSBKdXB5dGVyIHNlcnZlciBtdXN0IGJlIHJ1bm5pbmcgKHNlZSBTZXR1cCBiZWxvdykKCiMjIFNldHVwCgpUaGUgaGFtZWxuYiBzY3JpcHQgbG9jYXRpb246CmBgYApTQ1JJUFQ9IiRIT01FLy5hZ2VudC1za2lsbHMvaGFtZWxuYi9za2lsbHMvanVweXRlci1saXZlLWtlcm5lbC9zY3JpcHRzL2p1cHl0ZXJfbGl2ZV9rZXJuZWwucHkiCmBgYAoKSWYgbm90IGNsb25lZCB5ZXQ6CmBgYApnaXQgY2xvbmUgaHR0cHM6Ly9naXRodWIuY29tL2hhbWVsc211L2hhbWVsbmIuZ2l0IH4vLmFnZW50LXNraWxscy9oYW1lbG5iCmBgYAoKIyMjIFN0YXJ0aW5nIEp1cHl0ZXJMYWIKCkNoZWNrIGlmIGEgc2VydmVyIGlzIGFscmVhZHkgcnVubmluZzoKYGBgCnV2IHJ1biAiJFNDUklQVCIgc2VydmVycwpgYGAKCklmIG5vIHNlcnZlcnMgZm91bmQsIHN0YXJ0IG9uZToKYGBgCmp1cHl0ZXItbGFiIC0tbm8tYnJvd3NlciAtLXBvcnQ9ODg4OCAtLW5vdGVib29rLWRpcj0kSE9NRS9ub3RlYm9va3MgXAogIC0tSWRlbnRpdHlQcm92aWRlci50b2tlbj0nJyAtLVNlcnZlckFwcC5wYXNzd29yZD0nJyA+IC90bXAvanVweXRlci5sb2cgMj4mMSAmCnNsZWVwIDMKYGBgCgpOb3RlOiBUb2tlbi9wYXNzd29yZCBkaXNhYmxlZCBmb3IgbG9jYWwgYWdlbnQgYWNjZXNzLiBUaGUgc2VydmVyIHJ1bnMgaGVhZGxlc3MuCgojIyMgQ3JlYXRpbmcgYSBOb3RlYm9vayBmb3IgUkVQTCBVc2UKCklmIHlvdSBqdXN0IG5lZWQgYSBSRVBMIChubyBleGlzdGluZyBub3RlYm9vayksIGNyZWF0ZSBhIG1pbmltYWwgbm90ZWJvb2sgZmlsZToKYGBgCm1rZGlyIC1wIH4vbm90ZWJvb2tzCmBgYApXcml0ZSBhIG1pbmltYWwgLmlweW5iIEpTT04gZmlsZSB3aXRoIG9uZSBlbXB0eSBjb2RlIGNlbGwsIHRoZW4gc3RhcnQgYSBrZXJuZWwKc2Vzc2lvbiB2aWEgdGhlIEp1cHl0ZXIgUkVTVCBBUEk6CmBgYApjdXJsIC1zIC1YIFBPU1QgaHR0cDovLzEyNy4wLjAuMTo4ODg4L2FwaS9zZXNzaW9ucyBcCiAgLUggIkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbiIgXAogIC1kICd7InBhdGgiOiJzY3JhdGNoLmlweW5iIiwidHlwZSI6Im5vdGVib29rIiwibmFtZSI6InNjcmF0Y2guaXB5bmIiLCJrZXJuZWwiOnsibmFtZSI6InB5dGhvbjMifX0nCmBgYAoKIyMgQ29yZSBXb3JrZmxvdwoKQWxsIGNvbW1hbmRzIHJldHVybiBzdHJ1Y3R1cmVkIEpTT04uIEFsd2F5cyB1c2UgYC0tY29tcGFjdGAgdG8gc2F2ZSB0b2tlbnMuCgojIyMgMS4gRGlzY292ZXIgc2VydmVycyBhbmQgbm90ZWJvb2tzCgpgYGAKdXYgcnVuICIkU0NSSVBUIiBzZXJ2ZXJzIC0tY29tcGFjdAp1diBydW4gIiRTQ1JJUFQiIG5vdGVib29rcyAtLWNvbXBhY3QKYGBgCgojIyMgMi4gRXhlY3V0ZSBjb2RlIChwcmltYXJ5IG9wZXJhdGlvbikKCmBgYAp1diBydW4gIiRTQ1JJUFQiIGV4ZWN1dGUgLS1wYXRoIDxub3RlYm9vay5pcHluYj4gLS1jb2RlICc8cHl0aG9uIGNvZGU+JyAtLWNvbXBhY3QKYGBgCgpTdGF0ZSBwZXJzaXN0cyBhY3Jvc3MgZXhlY3V0ZSBjYWxscy4gVmFyaWFibGVzLCBpbXBvcnRzLCBvYmplY3RzIGFsbCBzdXJ2aXZlLgoKTXVsdGktbGluZSBjb2RlIHdvcmtzIHdpdGggJCcuLi4nIHF1b3Rpbmc6CmBgYAp1diBydW4gIiRTQ1JJUFQiIGV4ZWN1dGUgLS1wYXRoIHNjcmF0Y2guaXB5bmIgLS1jb2RlICQnaW1wb3J0IG9zXG5maWxlcyA9IG9zLmxpc3RkaXIoIi4iKVxucHJpbnQoZiJGb3VuZCB7bGVuKGZpbGVzKX0gZmlsZXMiKScgLS1jb21wYWN0CmBgYAoKIyMjIDMuIEluc3BlY3QgbGl2ZSB2YXJpYWJsZXMKCmBgYAp1diBydW4gIiRTQ1JJUFQiIHZhcmlhYmxlcyAtLXBhdGggPG5vdGVib29rLmlweW5iPiBsaXN0IC0tY29tcGFjdAp1diBydW4gIiRTQ1JJUFQiIHZhcmlhYmxlcyAtLXBhdGggPG5vdGVib29rLmlweW5iPiBwcmV2aWV3IC0tbmFtZSA8dmFybmFtZT4gLS1jb21wYWN0CmBgYAoKIyMjIDQuIEVkaXQgbm90ZWJvb2sgY2VsbHMKCmBgYAojIFZpZXcgY3VycmVudCBjZWxscwp1diBydW4gIiRTQ1JJUFQiIGNvbnRlbnRzIC0tcGF0aCA8bm90ZWJvb2suaXB5bmI+IC0tY29tcGFjdAoKIyBJbnNlcnQgYSBuZXcgY2VsbAp1diBydW4gIiRTQ1JJUFQiIGVkaXQgLS1wYXRoIDxub3RlYm9vay5pcHluYj4gaW5zZXJ0IFwKICAtLWF0LWluZGV4IDxOPiAtLWNlbGwtdHlwZSBjb2RlIC0tc291cmNlICc8Y29kZT4nIC0tY29tcGFjdAoKIyBSZXBsYWNlIGNlbGwgc291cmNlICh1c2UgY2VsbC1pZCBmcm9tIGNvbnRlbnRzIG91dHB1dCkKdXYgcnVuICIkU0NSSVBUIiBlZGl0IC0tcGF0aCA8bm90ZWJvb2suaXB5bmI+IHJlcGxhY2Utc291cmNlIFwKICAtLWNlbGwtaWQgPGlkPiAtLXNvdXJjZSAnPG5ldyBjb2RlPicgLS1jb21wYWN0CgojIERlbGV0ZSBhIGNlbGwKdXYgcnVuICIkU0NSSVBUIiBlZGl0IC0tcGF0aCA8bm90ZWJvb2suaXB5bmI+IGRlbGV0ZSAtLWNlbGwtaWQgPGlkPiAtLWNvbXBhY3QKYGBgCgojIyMgNS4gVmVyaWZpY2F0aW9uIChyZXN0YXJ0ICsgcnVuIGFsbCkKCk9ubHkgdXNlIHdoZW4gdGhlIHVzZXIgYXNrcyBmb3IgYSBjbGVhbiB2ZXJpZmljYXRpb24gb3IgeW91IG5lZWQgdG8gY29uZmlybQp0aGUgbm90ZWJvb2sgcnVucyB0b3AtdG8tYm90dG9tOgoKYGBgCnV2IHJ1biAiJFNDUklQVCIgcmVzdGFydC1ydW4tYWxsIC0tcGF0aCA8bm90ZWJvb2suaXB5bmI+IC0tc2F2ZS1vdXRwdXRzIC0tY29tcGFjdApgYGAKCiMjIFByYWN0aWNhbCBUaXBzIGZyb20gRXhwZXJpZW5jZQoKMS4gKipGaXJzdCBleGVjdXRpb24gYWZ0ZXIgc2VydmVyIHN0YXJ0IG1heSB0aW1lb3V0Kiog4oCUIHRoZSBrZXJuZWwgbmVlZHMgYSBtb21lbnQKICAgdG8gaW5pdGlhbGl6ZS4gSWYgeW91IGdldCBhIHRpbWVvdXQsIGp1c3QgcmV0cnkuCgoyLiAqKlRoZSBrZXJuZWwgUHl0aG9uIGlzIEp1cHl0ZXJMYWIncyBQeXRob24qKiDigJQgcGFja2FnZXMgbXVzdCBiZSBpbnN0YWxsZWQgaW4KICAgdGhhdCBlbnZpcm9ubWVudC4gSWYgeW91IG5lZWQgYWRkaXRpb25hbCBwYWNrYWdlcywgaW5zdGFsbCB0aGVtIGludG8gdGhlCiAgIEp1cHl0ZXJMYWIgdG9vbCBlbnZpcm9ubWVudCBmaXJzdC4KCjMuICoqLS1jb21wYWN0IGZsYWcgc2F2ZXMgc2lnbmlmaWNhbnQgdG9rZW5zKiog4oCUIGFsd2F5cyB1c2UgaXQuIEpTT04gb3V0cHV0IGNhbgogICBiZSB2ZXJ5IHZlcmJvc2Ugd2l0aG91dCBpdC4KCjQuICoqRm9yIHB1cmUgUkVQTCB1c2UqKiwgY3JlYXRlIGEgc2NyYXRjaC5pcHluYiBhbmQgZG9uJ3QgYm90aGVyIHdpdGggY2VsbCBlZGl0aW5nLgogICBKdXN0IHVzZSBgZXhlY3V0ZWAgcmVwZWF0ZWRseS4KCjUuICoqQXJndW1lbnQgb3JkZXIgbWF0dGVycyoqIOKAlCBzdWJjb21tYW5kIGZsYWdzIGxpa2UgYC0tcGF0aGAgZ28gQkVGT1JFIHRoZQogICBzdWItc3ViY29tbWFuZC4gRS5nLjogYHZhcmlhYmxlcyAtLXBhdGggbmIuaXB5bmIgbGlzdGAgbm90IGB2YXJpYWJsZXMgbGlzdCAtLXBhdGggbmIuaXB5bmJgLgoKNi4gKipJZiBhIHNlc3Npb24gZG9lc24ndCBleGlzdCB5ZXQqKiwgeW91IG5lZWQgdG8gc3RhcnQgb25lIHZpYSB0aGUgUkVTVCBBUEkKICAgKHNlZSBTZXR1cCBzZWN0aW9uKS4gVGhlIHRvb2wgY2FuJ3QgZXhlY3V0ZSB3aXRob3V0IGEgbGl2ZSBrZXJuZWwgc2Vzc2lvbi4KCjcuICoqRXJyb3JzIGFyZSByZXR1cm5lZCBhcyBKU09OKiogd2l0aCB0cmFjZWJhY2sg4oCUIHJlYWQgdGhlIGBlbmFtZWAgYW5kIGBldmFsdWVgCiAgIGZpZWxkcyB0byB1bmRlcnN0YW5kIHdoYXQgd2VudCB3cm9uZy4KCjguICoqT2NjYXNpb25hbCB3ZWJzb2NrZXQgdGltZW91dHMqKiDigJQgc29tZSBvcGVyYXRpb25zIG1heSB0aW1lb3V0IG9uIGZpcnN0IHRyeSwKICAgZXNwZWNpYWxseSBhZnRlciBhIGtlcm5lbCByZXN0YXJ0LiBSZXRyeSBvbmNlIGJlZm9yZSBlc2NhbGF0aW5nLgoKIyMgVGltZW91dCBEZWZhdWx0cwoKVGhlIHNjcmlwdCBoYXMgYSAzMC1zZWNvbmQgZGVmYXVsdCB0aW1lb3V0IHBlciBleGVjdXRpb24uIEZvciBsb25nLXJ1bm5pbmcKb3BlcmF0aW9ucywgcGFzcyBgLS10aW1lb3V0IDEyMGAuIFVzZSBnZW5lcm91cyB0aW1lb3V0cyAoNjArKSBmb3IgaW5pdGlhbApzZXR1cCBvciBoZWF2eSBjb21wdXRhdGlvbi4K
+---
+name: jupyter-live-kernel
+description: >
+  Use a live Jupyter kernel for stateful, iterative Python execution via hamelnb.
+  Load this skill when the task involves exploration, iteration, or inspecting
+  intermediate results — data science, ML experimentation, API exploration, or
+  building up complex code step-by-step. Uses terminal to run CLI commands against
+  a live Jupyter kernel. No new tools required.
+version: 1.0.0
+author: Hermes Agent
+license: MIT
+metadata:
+  hermes:
+    tags: [jupyter, notebook, repl, data-science, exploration, iterative]
+    category: data-science
+---
+
+# Jupyter Live Kernel (hamelnb)
+
+Gives you a **stateful Python REPL** via a live Jupyter kernel. Variables persist
+across executions. Use this instead of `execute_code` when you need to build up
+state incrementally, explore APIs, inspect DataFrames, or iterate on complex code.
+
+## When to Use This vs Other Tools
+
+| Tool | Use When |
+|------|----------|
+| **This skill** | Iterative exploration, state across steps, data science, ML, "let me try this and check" |
+| `execute_code` | One-shot scripts needing hermes tool access (web_search, file ops). Stateless. |
+| `terminal` | Shell commands, builds, installs, git, process management |
+
+**Rule of thumb:** If you'd want a Jupyter notebook for the task, use this skill.
+
+## Prerequisites
+
+1. **uv** must be installed (check: `which uv`)
+2. **JupyterLab** must be installed: `uv tool install jupyterlab`
+3. A Jupyter server must be running (see Setup below)
+
+## Setup
+
+The hamelnb script location:
+```
+SCRIPT="$HOME/.agent-skills/hamelnb/skills/jupyter-live-kernel/scripts/jupyter_live_kernel.py"
+```
+
+If not cloned yet:
+```
+git clone https://github.com/hamelsmu/hamelnb.git ~/.agent-skills/hamelnb
+```
+
+### Starting JupyterLab
+
+Check if a server is already running:
+```
+uv run "$SCRIPT" servers
+```
+
+If no servers found, start one:
+```
+jupyter-lab --no-browser --port=8888 --notebook-dir=$HOME/notebooks \
+  --IdentityProvider.token='' --ServerApp.password='' > /tmp/jupyter.log 2>&1 &
+sleep 3
+```
+
+Note: Token/password disabled for local agent access. The server runs headless.
+
+### Creating a Notebook for REPL Use
+
+If you just need a REPL (no existing notebook), create a minimal notebook file:
+```
+mkdir -p ~/notebooks
+```
+Write a minimal .ipynb JSON file with one empty code cell, then start a kernel
+session via the Jupyter REST API:
+```
+curl -s -X POST http://127.0.0.1:8888/api/sessions \
+  -H "Content-Type: application/json" \
+  -d '{"path":"scratch.ipynb","type":"notebook","name":"scratch.ipynb","kernel":{"name":"python3"}}'
+```
+
+## Core Workflow
+
+All commands return structured JSON. Always use `--compact` to save tokens.
+
+### 1. Discover servers and notebooks
+
+```
+uv run "$SCRIPT" servers --compact
+uv run "$SCRIPT" notebooks --compact
+```
+
+### 2. Execute code (primary operation)
+
+```
+uv run "$SCRIPT" execute --path <notebook.ipynb> --code '<python code>' --compact
+```
+
+State persists across execute calls. Variables, imports, objects all survive.
+
+Multi-line code works with $'...' quoting:
+```
+uv run "$SCRIPT" execute --path scratch.ipynb --code $'import os\nfiles = os.listdir(".")\nprint(f"Found {len(files)} files")' --compact
+```
+
+### 3. Inspect live variables
+
+```
+uv run "$SCRIPT" variables --path <notebook.ipynb> list --compact
+uv run "$SCRIPT" variables --path <notebook.ipynb> preview --name <varname> --compact
+```
+
+### 4. Edit notebook cells
+
+```
+# View current cells
+uv run "$SCRIPT" contents --path <notebook.ipynb> --compact
+
+# Insert a new cell
+uv run "$SCRIPT" edit --path <notebook.ipynb> insert \
+  --at-index <N> --cell-type code --source '<code>' --compact
+
+# Replace cell source (use cell-id from contents output)
+uv run "$SCRIPT" edit --path <notebook.ipynb> replace-source \
+  --cell-id <id> --source '<new code>' --compact
+
+# Delete a cell
+uv run "$SCRIPT" edit --path <notebook.ipynb> delete --cell-id <id> --compact
+```
+
+### 5. Verification (restart + run all)
+
+Only use when the user asks for a clean verification or you need to confirm
+the notebook runs top-to-bottom:
+
+```
+uv run "$SCRIPT" restart-run-all --path <notebook.ipynb> --save-outputs --compact
+```
+
+## Practical Tips from Experience
+
+1. **First execution after server start may timeout** — the kernel needs a moment
+   to initialize. If you get a timeout, just retry.
+
+2. **The kernel Python is JupyterLab's Python** — packages must be installed in
+   that environment. If you need additional packages, install them into the
+   JupyterLab tool environment first.
+
+3. **--compact flag saves significant tokens** — always use it. JSON output can
+   be very verbose without it.
+
+4. **For pure REPL use**, create a scratch.ipynb and don't bother with cell editing.
+   Just use `execute` repeatedly.
+
+5. **Argument order matters** — subcommand flags like `--path` go BEFORE the
+   sub-subcommand. E.g.: `variables --path nb.ipynb list` not `variables list --path nb.ipynb`.
+
+6. **If a session doesn't exist yet**, you need to start one via the REST API
+   (see Setup section). The tool can't execute without a live kernel session.
+
+7. **Errors are returned as JSON** with traceback — read the `ename` and `evalue`
+   fields to understand what went wrong.
+
+8. **Occasional websocket timeouts** — some operations may timeout on first try,
+   especially after a kernel restart. Retry once before escalating.
+
+## Timeout Defaults
+
+The script has a 30-second default timeout per execution. For long-running
+operations, pass `--timeout 120`. Use generous timeouts (60+) for initial
+setup or heavy computation.

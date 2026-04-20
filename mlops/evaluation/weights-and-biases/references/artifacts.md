@@ -1,1 +1,584 @@
-IyBBcnRpZmFjdHMgJiBNb2RlbCBSZWdpc3RyeSBHdWlkZQoKQ29tcGxldGUgZ3VpZGUgdG8gZGF0YSB2ZXJzaW9uaW5nIGFuZCBtb2RlbCBtYW5hZ2VtZW50IHdpdGggVyZCIEFydGlmYWN0cy4KCiMjIFRhYmxlIG9mIENvbnRlbnRzCi0gV2hhdCBhcmUgQXJ0aWZhY3RzCi0gQ3JlYXRpbmcgQXJ0aWZhY3RzCi0gVXNpbmcgQXJ0aWZhY3RzCi0gTW9kZWwgUmVnaXN0cnkKLSBWZXJzaW9uaW5nICYgTGluZWFnZQotIEJlc3QgUHJhY3RpY2VzCgojIyBXaGF0IGFyZSBBcnRpZmFjdHMKCkFydGlmYWN0cyBhcmUgdmVyc2lvbmVkIGRhdGFzZXRzLCBtb2RlbHMsIG9yIGZpbGVzIHRyYWNrZWQgd2l0aCBsaW5lYWdlLgoKKipLZXkgRmVhdHVyZXM6KioKLSBBdXRvbWF0aWMgdmVyc2lvbmluZyAodjAsIHYxLCB2Mi4uLikKLSBMaW5lYWdlIHRyYWNraW5nICh3aGljaCBydW5zIHByb2R1Y2VkL3VzZWQgYXJ0aWZhY3RzKQotIEVmZmljaWVudCBzdG9yYWdlIChkZWR1cGxpY2F0aW9uKQotIENvbGxhYm9yYXRpb24gKHRlYW0td2lkZSBhY2Nlc3MpCi0gQWxpYXNlcyAobGF0ZXN0LCBiZXN0LCBwcm9kdWN0aW9uKQoKKipDb21tb24gVXNlIENhc2VzOioqCi0gRGF0YXNldCB2ZXJzaW9uaW5nCi0gTW9kZWwgY2hlY2twb2ludHMKLSBQcmVwcm9jZXNzZWQgZGF0YQotIEV2YWx1YXRpb24gcmVzdWx0cwotIENvbmZpZ3VyYXRpb24gZmlsZXMKCiMjIENyZWF0aW5nIEFydGlmYWN0cwoKIyMjIEJhc2ljIERhdGFzZXQgQXJ0aWZhY3QKCmBgYHB5dGhvbgppbXBvcnQgd2FuZGIKCnJ1biA9IHdhbmRiLmluaXQocHJvamVjdD0ibXktcHJvamVjdCIpCgojIENyZWF0ZSBhcnRpZmFjdApkYXRhc2V0ID0gd2FuZGIuQXJ0aWZhY3QoCiAgICBuYW1lPSd0cmFpbmluZy1kYXRhJywKICAgIHR5cGU9J2RhdGFzZXQnLAogICAgZGVzY3JpcHRpb249J0ltYWdlTmV0IHRyYWluaW5nIHNwbGl0IHdpdGggYXVnbWVudGF0aW9ucycsCiAgICBtZXRhZGF0YT17CiAgICAgICAgJ3NpemUnOiAnMS4yTSBpbWFnZXMnLAogICAgICAgICdmb3JtYXQnOiAnSlBFRycsCiAgICAgICAgJ3Jlc29sdXRpb24nOiAnMjI0eDIyNCcKICAgIH0KKQoKIyBBZGQgZmlsZXMKZGF0YXNldC5hZGRfZmlsZSgnZGF0YS90cmFpbi5jc3YnKSAgICAgICAgIyBTaW5nbGUgZmlsZQpkYXRhc2V0LmFkZF9kaXIoJ2RhdGEvaW1hZ2VzJykgICAgICAgICAgICAjIEVudGlyZSBkaXJlY3RvcnkKZGF0YXNldC5hZGRfcmVmZXJlbmNlKCdzMzovL2J1Y2tldC9kYXRhJykgIyBDbG91ZCByZWZlcmVuY2UKCiMgTG9nIGFydGlmYWN0CnJ1bi5sb2dfYXJ0aWZhY3QoZGF0YXNldCkKd2FuZGIuZmluaXNoKCkKYGBgCgojIyMgTW9kZWwgQXJ0aWZhY3QKCmBgYHB5dGhvbgppbXBvcnQgdG9yY2gKaW1wb3J0IHdhbmRiCgpydW4gPSB3YW5kYi5pbml0KHByb2plY3Q9Im15LXByb2plY3QiKQoKIyBUcmFpbiBtb2RlbAptb2RlbCA9IHRyYWluX21vZGVsKCkKCiMgU2F2ZSBtb2RlbAp0b3JjaC5zYXZlKG1vZGVsLnN0YXRlX2RpY3QoKSwgJ21vZGVsLnB0aCcpCgojIENyZWF0ZSBtb2RlbCBhcnRpZmFjdAptb2RlbF9hcnRpZmFjdCA9IHdhbmRiLkFydGlmYWN0KAogICAgbmFtZT0ncmVzbmV0NTAtY2xhc3NpZmllcicsCiAgICB0eXBlPSdtb2RlbCcsCiAgICBkZXNjcmlwdGlvbj0nUmVzTmV0NTAgdHJhaW5lZCBvbiBJbWFnZU5ldCcsCiAgICBtZXRhZGF0YT17CiAgICAgICAgJ2FyY2hpdGVjdHVyZSc6ICdSZXNOZXQ1MCcsCiAgICAgICAgJ2FjY3VyYWN5JzogMC45NSwKICAgICAgICAnbG9zcyc6IDAuMTUsCiAgICAgICAgJ2Vwb2Nocyc6IDUwLAogICAgICAgICdmcmFtZXdvcmsnOiAnUHlUb3JjaCcKICAgIH0KKQoKIyBBZGQgbW9kZWwgZmlsZQptb2RlbF9hcnRpZmFjdC5hZGRfZmlsZSgnbW9kZWwucHRoJykKCiMgQWRkIGNvbmZpZwptb2RlbF9hcnRpZmFjdC5hZGRfZmlsZSgnY29uZmlnLnlhbWwnKQoKIyBMb2cgd2l0aCBhbGlhc2VzCnJ1bi5sb2dfYXJ0aWZhY3QobW9kZWxfYXJ0aWZhY3QsIGFsaWFzZXM9WydsYXRlc3QnLCAnYmVzdCddKQoKd2FuZGIuZmluaXNoKCkKYGBgCgojIyMgUHJlcHJvY2Vzc2VkIERhdGEgQXJ0aWZhY3QKCmBgYHB5dGhvbgppbXBvcnQgcGFuZGFzIGFzIHBkCmltcG9ydCB3YW5kYgoKcnVuID0gd2FuZGIuaW5pdChwcm9qZWN0PSJubHAtcHJvamVjdCIpCgojIFByZXByb2Nlc3MgZGF0YQpkZiA9IHBkLnJlYWRfY3N2KCdyYXdfZGF0YS5jc3YnKQpkZl9wcm9jZXNzZWQgPSBwcmVwcm9jZXNzKGRmKQpkZl9wcm9jZXNzZWQudG9fY3N2KCdwcm9jZXNzZWRfZGF0YS5jc3YnLCBpbmRleD1GYWxzZSkKCiMgQ3JlYXRlIGFydGlmYWN0CnByb2Nlc3NlZF9kYXRhID0gd2FuZGIuQXJ0aWZhY3QoCiAgICBuYW1lPSdwcm9jZXNzZWQtdGV4dC1kYXRhJywKICAgIHR5cGU9J2RhdGFzZXQnLAogICAgbWV0YWRhdGE9ewogICAgICAgICdyb3dzJzogbGVuKGRmX3Byb2Nlc3NlZCksCiAgICAgICAgJ2NvbHVtbnMnOiBsaXN0KGRmX3Byb2Nlc3NlZC5jb2x1bW5zKSwKICAgICAgICAncHJlcHJvY2Vzc2luZ19zdGVwcyc6IFsnbG93ZXJjYXNlJywgJ3JlbW92ZV9zdG9wd29yZHMnLCAndG9rZW5pemUnXQogICAgfQopCgpwcm9jZXNzZWRfZGF0YS5hZGRfZmlsZSgncHJvY2Vzc2VkX2RhdGEuY3N2JykKCiMgTG9nIGFydGlmYWN0CnJ1bi5sb2dfYXJ0aWZhY3QocHJvY2Vzc2VkX2RhdGEpCmBgYAoKIyMgVXNpbmcgQXJ0aWZhY3RzCgojIyMgRG93bmxvYWQgYW5kIFVzZQoKYGBgcHl0aG9uCmltcG9ydCB3YW5kYgoKcnVuID0gd2FuZGIuaW5pdChwcm9qZWN0PSJteS1wcm9qZWN0IikKCiMgRG93bmxvYWQgYXJ0aWZhY3QKYXJ0aWZhY3QgPSBydW4udXNlX2FydGlmYWN0KCd0cmFpbmluZy1kYXRhOmxhdGVzdCcpCmFydGlmYWN0X2RpciA9IGFydGlmYWN0LmRvd25sb2FkKCkKCiMgVXNlIGZpbGVzCmltcG9ydCBwYW5kYXMgYXMgcGQKZGYgPSBwZC5yZWFkX2NzdihmJ3thcnRpZmFjdF9kaXJ9L3RyYWluLmNzdicpCgojIFRyYWluIHdpdGggYXJ0aWZhY3QgZGF0YQptb2RlbCA9IHRyYWluX21vZGVsKGRmKQpgYGAKCiMjIyBVc2UgU3BlY2lmaWMgVmVyc2lvbgoKYGBgcHl0aG9uCiMgVXNlIHNwZWNpZmljIHZlcnNpb24KYXJ0aWZhY3RfdjIgPSBydW4udXNlX2FydGlmYWN0KCd0cmFpbmluZy1kYXRhOnYyJykKCiMgVXNlIGFsaWFzCmFydGlmYWN0X2Jlc3QgPSBydW4udXNlX2FydGlmYWN0KCdtb2RlbDpiZXN0JykKYXJ0aWZhY3RfcHJvZCA9IHJ1bi51c2VfYXJ0aWZhY3QoJ21vZGVsOnByb2R1Y3Rpb24nKQoKIyBVc2UgZnJvbSBhbm90aGVyIHByb2plY3QKYXJ0aWZhY3QgPSBydW4udXNlX2FydGlmYWN0KCd0ZWFtL290aGVyLXByb2plY3QvbW9kZWw6bGF0ZXN0JykKYGBgCgojIyMgQ2hlY2sgQXJ0aWZhY3QgTWV0YWRhdGEKCmBgYHB5dGhvbgphcnRpZmFjdCA9IHJ1bi51c2VfYXJ0aWZhY3QoJ3RyYWluaW5nLWRhdGE6bGF0ZXN0JykKCiMgQWNjZXNzIG1ldGFkYXRhCnByaW50KGFydGlmYWN0Lm1ldGFkYXRhKQpwcmludChmIlNpemU6IHthcnRpZmFjdC5tZXRhZGF0YVsnc2l6ZSddfSIpCgojIEFjY2VzcyB2ZXJzaW9uIGluZm8KcHJpbnQoZiJWZXJzaW9uOiB7YXJ0aWZhY3QudmVyc2lvbn0iKQpwcmludChmIkNyZWF0ZWQgYXQ6IHthcnRpZmFjdC5jcmVhdGVkX2F0fSIpCnByaW50KGYiRGlnZXN0OiB7YXJ0aWZhY3QuZGlnZXN0fSIpCmBgYAoKIyMgTW9kZWwgUmVnaXN0cnkKCkxpbmsgbW9kZWxzIHRvIGEgY2VudHJhbCByZWdpc3RyeSBmb3IgZ292ZXJuYW5jZSBhbmQgZGVwbG95bWVudC4KCiMjIyBDcmVhdGUgTW9kZWwgUmVnaXN0cnkKCmBgYHB5dGhvbgojIEluIFcmQiBVSToKIyAxLiBHbyB0byAiUmVnaXN0cnkiIHRhYgojIDIuIENyZWF0ZSBuZXcgcmVnaXN0cnk6ICJwcm9kdWN0aW9uLW1vZGVscyIKIyAzLiBEZWZpbmUgc3RhZ2VzOiBkZXZlbG9wbWVudCwgc3RhZ2luZywgcHJvZHVjdGlvbgpgYGAKCiMjIyBMaW5rIE1vZGVsIHRvIFJlZ2lzdHJ5CgpgYGBweXRob24KaW1wb3J0IHdhbmRiCgpydW4gPSB3YW5kYi5pbml0KHByb2plY3Q9InRyYWluaW5nIikKCiMgQ3JlYXRlIG1vZGVsIGFydGlmYWN0Cm1vZGVsX2FydGlmYWN0ID0gd2FuZGIuQXJ0aWZhY3QoCiAgICBuYW1lPSdzZW50aW1lbnQtY2xhc3NpZmllcicsCiAgICB0eXBlPSdtb2RlbCcsCiAgICBtZXRhZGF0YT17J2FjY3VyYWN5JzogMC45NCwgJ2YxJzogMC45Mn0KKQoKbW9kZWxfYXJ0aWZhY3QuYWRkX2ZpbGUoJ21vZGVsLnB0aCcpCgojIExvZyBhcnRpZmFjdApydW4ubG9nX2FydGlmYWN0KG1vZGVsX2FydGlmYWN0KQoKIyBMaW5rIHRvIHJlZ2lzdHJ5CnJ1bi5saW5rX2FydGlmYWN0KAogICAgbW9kZWxfYXJ0aWZhY3QsCiAgICAnbW9kZWwtcmVnaXN0cnkvcHJvZHVjdGlvbi1tb2RlbHMnLAogICAgYWxpYXNlcz1bJ3N0YWdpbmcnXSAgIyBEZXBsb3kgdG8gc3RhZ2luZwopCgp3YW5kYi5maW5pc2goKQpgYGAKCiMjIyBQcm9tb3RlIE1vZGVsIGluIFJlZ2lzdHJ5CgpgYGBweXRob24KIyBSZXRyaWV2ZSBtb2RlbCBmcm9tIHJlZ2lzdHJ5CmFwaSA9IHdhbmRiLkFwaSgpCmFydGlmYWN0ID0gYXBpLmFydGlmYWN0KCdtb2RlbC1yZWdpc3RyeS9wcm9kdWN0aW9uLW1vZGVscy9zZW50aW1lbnQtY2xhc3NpZmllcjpzdGFnaW5nJykKCiMgUHJvbW90ZSB0byBwcm9kdWN0aW9uCmFydGlmYWN0LmxpbmsoJ21vZGVsLXJlZ2lzdHJ5L3Byb2R1Y3Rpb24tbW9kZWxzJywgYWxpYXNlcz1bJ3Byb2R1Y3Rpb24nXSkKCiMgRGVtb3RlIGZyb20gcHJvZHVjdGlvbgphcnRpZmFjdC5hbGlhc2VzID0gWydhcmNoaXZlZCddCmFydGlmYWN0LnNhdmUoKQpgYGAKCiMjIyBVc2UgTW9kZWwgZnJvbSBSZWdpc3RyeQoKYGBgcHl0aG9uCmltcG9ydCB3YW5kYgoKcnVuID0gd2FuZGIuaW5pdCgpCgojIERvd25sb2FkIHByb2R1Y3Rpb24gbW9kZWwKbW9kZWxfYXJ0aWZhY3QgPSBydW4udXNlX2FydGlmYWN0KAogICAgJ21vZGVsLXJlZ2lzdHJ5L3Byb2R1Y3Rpb24tbW9kZWxzL3NlbnRpbWVudC1jbGFzc2lmaWVyOnByb2R1Y3Rpb24nCikKCm1vZGVsX2RpciA9IG1vZGVsX2FydGlmYWN0LmRvd25sb2FkKCkKCiMgTG9hZCBhbmQgdXNlCmltcG9ydCB0b3JjaAptb2RlbCA9IHRvcmNoLmxvYWQoZid7bW9kZWxfZGlyfS9tb2RlbC5wdGgnKQptb2RlbC5ldmFsKCkKYGBgCgojIyBWZXJzaW9uaW5nICYgTGluZWFnZQoKIyMjIEF1dG9tYXRpYyBWZXJzaW9uaW5nCgpgYGBweXRob24KIyBGaXJzdCBsb2c6IGNyZWF0ZXMgdjAKcnVuMSA9IHdhbmRiLmluaXQocHJvamVjdD0ibXktcHJvamVjdCIpCmRhdGFzZXRfdjAgPSB3YW5kYi5BcnRpZmFjdCgnbXktZGF0YXNldCcsIHR5cGU9J2RhdGFzZXQnKQpkYXRhc2V0X3YwLmFkZF9maWxlKCdkYXRhX3YxLmNzdicpCnJ1bjEubG9nX2FydGlmYWN0KGRhdGFzZXRfdjApCgojIFNlY29uZCBsb2cgd2l0aCBzYW1lIG5hbWU6IGNyZWF0ZXMgdjEKcnVuMiA9IHdhbmRiLmluaXQocHJvamVjdD0ibXktcHJvamVjdCIpCmRhdGFzZXRfdjEgPSB3YW5kYi5BcnRpZmFjdCgnbXktZGF0YXNldCcsIHR5cGU9J2RhdGFzZXQnKQpkYXRhc2V0X3YxLmFkZF9maWxlKCdkYXRhX3YyLmNzdicpICAjIERpZmZlcmVudCBjb250ZW50CnJ1bjIubG9nX2FydGlmYWN0KGRhdGFzZXRfdjEpCgojIFRoaXJkIGxvZyB3aXRoIFNBTUUgY29udGVudCBhcyB2MTogcmVmZXJlbmNlcyB2MSAobm8gbmV3IHZlcnNpb24pCnJ1bjMgPSB3YW5kYi5pbml0KHByb2plY3Q9Im15LXByb2plY3QiKQpkYXRhc2V0X3YxX2FnYWluID0gd2FuZGIuQXJ0aWZhY3QoJ215LWRhdGFzZXQnLCB0eXBlPSdkYXRhc2V0JykKZGF0YXNldF92MV9hZ2Fpbi5hZGRfZmlsZSgnZGF0YV92Mi5jc3YnKSAgIyBTYW1lIGNvbnRlbnQgYXMgdjEKcnVuMy5sb2dfYXJ0aWZhY3QoZGF0YXNldF92MV9hZ2FpbikgICMgU3RpbGwgdjEsIG5vIHYyIGNyZWF0ZWQKYGBgCgojIyMgVHJhY2sgTGluZWFnZQoKYGBgcHl0aG9uCiMgVHJhaW5pbmcgcnVuCnJ1biA9IHdhbmRiLmluaXQocHJvamVjdD0ibXktcHJvamVjdCIpCgojIFVzZSBkYXRhc2V0IChpbnB1dCkKZGF0YXNldCA9IHJ1bi51c2VfYXJ0aWZhY3QoJ3RyYWluaW5nLWRhdGE6djMnKQpkYXRhID0gbG9hZF9kYXRhKGRhdGFzZXQuZG93bmxvYWQoKSkKCiMgVHJhaW4gbW9kZWwKbW9kZWwgPSB0cmFpbihkYXRhKQoKIyBTYXZlIG1vZGVsIChvdXRwdXQpCm1vZGVsX2FydGlmYWN0ID0gd2FuZGIuQXJ0aWZhY3QoJ3RyYWluZWQtbW9kZWwnLCB0eXBlPSdtb2RlbCcpCnRvcmNoLnNhdmUobW9kZWwuc3RhdGVfZGljdCgpLCAnbW9kZWwucHRoJykKbW9kZWxfYXJ0aWZhY3QuYWRkX2ZpbGUoJ21vZGVsLnB0aCcpCnJ1bi5sb2dfYXJ0aWZhY3QobW9kZWxfYXJ0aWZhY3QpCgojIExpbmVhZ2UgYXV0b21hdGljYWxseSB0cmFja2VkOgojIHRyYWluaW5nLWRhdGE6djMgLS0+IFtydW5dIC0tPiB0cmFpbmVkLW1vZGVsOnYwCmBgYAoKIyMjIFZpZXcgTGluZWFnZSBHcmFwaAoKYGBgcHl0aG9uCiMgSW4gVyZCIFVJOgojIEFydGlmYWN0cyDihpIgU2VsZWN0IGFydGlmYWN0IOKGkiBMaW5lYWdlIHRhYgojIFNob3dzOgojIC0gV2hpY2ggcnVucyBwcm9kdWNlZCB0aGlzIGFydGlmYWN0CiMgLSBXaGljaCBydW5zIHVzZWQgdGhpcyBhcnRpZmFjdAojIC0gUGFyZW50L2NoaWxkIGFydGlmYWN0cwpgYGAKCiMjIEFydGlmYWN0IFR5cGVzCgojIyMgRGF0YXNldCBBcnRpZmFjdHMKCmBgYHB5dGhvbgojIFJhdyBkYXRhCnJhd19kYXRhID0gd2FuZGIuQXJ0aWZhY3QoJ3Jhdy1kYXRhJywgdHlwZT0nZGF0YXNldCcpCnJhd19kYXRhLmFkZF9kaXIoJ3Jhdy8nKQoKIyBQcm9jZXNzZWQgZGF0YQpwcm9jZXNzZWRfZGF0YSA9IHdhbmRiLkFydGlmYWN0KCdwcm9jZXNzZWQtZGF0YScsIHR5cGU9J2RhdGFzZXQnKQpwcm9jZXNzZWRfZGF0YS5hZGRfZGlyKCdwcm9jZXNzZWQvJykKCiMgVHJhaW4vdmFsL3Rlc3Qgc3BsaXRzCnRyYWluX3NwbGl0ID0gd2FuZGIuQXJ0aWZhY3QoJ3RyYWluLXNwbGl0JywgdHlwZT0nZGF0YXNldCcpCnRyYWluX3NwbGl0LmFkZF9maWxlKCd0cmFpbi5jc3YnKQoKdmFsX3NwbGl0ID0gd2FuZGIuQXJ0aWZhY3QoJ3ZhbC1zcGxpdCcsIHR5cGU9J2RhdGFzZXQnKQp2YWxfc3BsaXQuYWRkX2ZpbGUoJ3ZhbC5jc3YnKQpgYGAKCiMjIyBNb2RlbCBBcnRpZmFjdHMKCmBgYHB5dGhvbgojIENoZWNrcG9pbnQgZHVyaW5nIHRyYWluaW5nCmNoZWNrcG9pbnQgPSB3YW5kYi5BcnRpZmFjdCgnY2hlY2twb2ludC1lcG9jaC0xMCcsIHR5cGU9J21vZGVsJykKY2hlY2twb2ludC5hZGRfZmlsZSgnY2hlY2twb2ludF9lcG9jaF8xMC5wdGgnKQoKIyBGaW5hbCBtb2RlbApmaW5hbF9tb2RlbCA9IHdhbmRiLkFydGlmYWN0KCdmaW5hbC1tb2RlbCcsIHR5cGU9J21vZGVsJykKZmluYWxfbW9kZWwuYWRkX2ZpbGUoJ21vZGVsLnB0aCcpCmZpbmFsX21vZGVsLmFkZF9maWxlKCd0b2tlbml6ZXIuanNvbicpCgojIFF1YW50aXplZCBtb2RlbApxdWFudGl6ZWQgPSB3YW5kYi5BcnRpZmFjdCgncXVhbnRpemVkLW1vZGVsJywgdHlwZT0nbW9kZWwnKQpxdWFudGl6ZWQuYWRkX2ZpbGUoJ21vZGVsX2ludDgub25ueCcpCmBgYAoKIyMjIFJlc3VsdCBBcnRpZmFjdHMKCmBgYHB5dGhvbgojIFByZWRpY3Rpb25zCnByZWRpY3Rpb25zID0gd2FuZGIuQXJ0aWZhY3QoJ3Rlc3QtcHJlZGljdGlvbnMnLCB0eXBlPSdwcmVkaWN0aW9ucycpCnByZWRpY3Rpb25zLmFkZF9maWxlKCdwcmVkaWN0aW9ucy5jc3YnKQoKIyBFdmFsdWF0aW9uIG1ldHJpY3MKZXZhbF9yZXN1bHRzID0gd2FuZGIuQXJ0aWZhY3QoJ2V2YWx1YXRpb24nLCB0eXBlPSdldmFsdWF0aW9uJykKZXZhbF9yZXN1bHRzLmFkZF9maWxlKCdtZXRyaWNzLmpzb24nKQpldmFsX3Jlc3VsdHMuYWRkX2ZpbGUoJ2NvbmZ1c2lvbl9tYXRyaXgucG5nJykKYGBgCgojIyBBZHZhbmNlZCBQYXR0ZXJucwoKIyMjIEluY3JlbWVudGFsIEFydGlmYWN0cwoKQWRkIGZpbGVzIGluY3JlbWVudGFsbHkgd2l0aG91dCByZS11cGxvYWRpbmcuCgpgYGBweXRob24KcnVuID0gd2FuZGIuaW5pdChwcm9qZWN0PSJteS1wcm9qZWN0IikKCiMgQ3JlYXRlIGFydGlmYWN0CmRhdGFzZXQgPSB3YW5kYi5BcnRpZmFjdCgnaW5jcmVtZW50YWwtZGF0YXNldCcsIHR5cGU9J2RhdGFzZXQnKQoKIyBBZGQgZmlsZXMgaW5jcmVtZW50YWxseQpmb3IgaSBpbiByYW5nZSgxMDApOgogICAgZmlsZW5hbWUgPSBmJ2JhdGNoX3tpfS5jc3YnCiAgICBwcm9jZXNzX2JhdGNoKGksIGZpbGVuYW1lKQogICAgZGF0YXNldC5hZGRfZmlsZShmaWxlbmFtZSkKCiAgICAjIExvZyBwcm9ncmVzcwogICAgaWYgKGkgKyAxKSAlIDEwID09IDA6CiAgICAgICAgcHJpbnQoZiJBZGRlZCB7aSArIDF9LzEwMCBiYXRjaGVzIikKCiMgTG9nIGNvbXBsZXRlIGFydGlmYWN0CnJ1bi5sb2dfYXJ0aWZhY3QoZGF0YXNldCkKYGBgCgojIyMgQXJ0aWZhY3QgVGFibGVzCgpUcmFjayBzdHJ1Y3R1cmVkIGRhdGEgd2l0aCBXJkIgVGFibGVzLgoKYGBgcHl0aG9uCmltcG9ydCB3YW5kYgoKcnVuID0gd2FuZGIuaW5pdChwcm9qZWN0PSJteS1wcm9qZWN0IikKCiMgQ3JlYXRlIHRhYmxlCnRhYmxlID0gd2FuZGIuVGFibGUoY29sdW1ucz1bImlkIiwgImltYWdlIiwgImxhYmVsIiwgInByZWRpY3Rpb24iXSkKCmZvciBpZHgsIChpbWcsIGxhYmVsLCBwcmVkKSBpbiBlbnVtZXJhdGUoemlwKGltYWdlcywgbGFiZWxzLCBwcmVkaWN0aW9ucykpOgogICAgdGFibGUuYWRkX2RhdGEoCiAgICAgICAgaWR4LAogICAgICAgIHdhbmRiLkltYWdlKGltZyksCiAgICAgICAgbGFiZWwsCiAgICAgICAgcHJlZAogICAgKQoKIyBMb2cgYXMgYXJ0aWZhY3QKYXJ0aWZhY3QgPSB3YW5kYi5BcnRpZmFjdCgncHJlZGljdGlvbnMtdGFibGUnLCB0eXBlPSdwcmVkaWN0aW9ucycpCmFydGlmYWN0LmFkZCh0YWJsZSwgInByZWRpY3Rpb25zIikKcnVuLmxvZ19hcnRpZmFjdChhcnRpZmFjdCkKYGBgCgojIyMgQXJ0aWZhY3QgUmVmZXJlbmNlcwoKUmVmZXJlbmNlIGV4dGVybmFsIGRhdGEgd2l0aG91dCBjb3B5aW5nLgoKYGBgcHl0aG9uCiMgUzMgcmVmZXJlbmNlCmRhdGFzZXQgPSB3YW5kYi5BcnRpZmFjdCgnczMtZGF0YXNldCcsIHR5cGU9J2RhdGFzZXQnKQpkYXRhc2V0LmFkZF9yZWZlcmVuY2UoJ3MzOi8vbXktYnVja2V0L2RhdGEvJywgbmFtZT0ndHJhaW4nKQpkYXRhc2V0LmFkZF9yZWZlcmVuY2UoJ3MzOi8vbXktYnVja2V0L2xhYmVscy8nLCBuYW1lPSdsYWJlbHMnKQoKIyBHQ1MgcmVmZXJlbmNlCmRhdGFzZXQuYWRkX3JlZmVyZW5jZSgnZ3M6Ly9teS1idWNrZXQvZGF0YS8nKQoKIyBIVFRQIHJlZmVyZW5jZQpkYXRhc2V0LmFkZF9yZWZlcmVuY2UoJ2h0dHBzOi8vZXhhbXBsZS5jb20vZGF0YS56aXAnKQoKIyBMb2NhbCBmaWxlc3lzdGVtIHJlZmVyZW5jZSAoZm9yIHNoYXJlZCBzdG9yYWdlKQpkYXRhc2V0LmFkZF9yZWZlcmVuY2UoJ2ZpbGU6Ly8vbW50L3NoYXJlZC9kYXRhJykKYGBgCgojIyBDb2xsYWJvcmF0aW9uIFBhdHRlcm5zCgojIyMgVGVhbSBEYXRhc2V0IFNoYXJpbmcKCmBgYHB5dGhvbgojIERhdGEgZW5naW5lZXIgY3JlYXRlcyBkYXRhc2V0CnJ1biA9IHdhbmRiLmluaXQocHJvamVjdD0iZGF0YS1lbmciLCBlbnRpdHk9Im15LXRlYW0iKQpkYXRhc2V0ID0gd2FuZGIuQXJ0aWZhY3QoJ3NoYXJlZC1kYXRhc2V0JywgdHlwZT0nZGF0YXNldCcpCmRhdGFzZXQuYWRkX2RpcignZGF0YS8nKQpydW4ubG9nX2FydGlmYWN0KGRhdGFzZXQsIGFsaWFzZXM9WydsYXRlc3QnLCAncHJvZHVjdGlvbiddKQoKIyBNTCBlbmdpbmVlciB1c2VzIGRhdGFzZXQKcnVuID0gd2FuZGIuaW5pdChwcm9qZWN0PSJtbC10cmFpbmluZyIsIGVudGl0eT0ibXktdGVhbSIpCmRhdGFzZXQgPSBydW4udXNlX2FydGlmYWN0KCdteS10ZWFtL2RhdGEtZW5nL3NoYXJlZC1kYXRhc2V0OnByb2R1Y3Rpb24nKQpkYXRhID0gbG9hZF9kYXRhKGRhdGFzZXQuZG93bmxvYWQoKSkKYGBgCgojIyMgTW9kZWwgSGFuZG9mZgoKYGBgcHl0aG9uCiMgVHJhaW5pbmcgdGVhbQp0cmFpbl9ydW4gPSB3YW5kYi5pbml0KHByb2plY3Q9Im1vZGVsLXRyYWluaW5nIiwgZW50aXR5PSJtbC10ZWFtIikKbW9kZWwgPSB0cmFpbl9tb2RlbCgpCm1vZGVsX2FydGlmYWN0ID0gd2FuZGIuQXJ0aWZhY3QoJ25scC1tb2RlbCcsIHR5cGU9J21vZGVsJykKbW9kZWxfYXJ0aWZhY3QuYWRkX2ZpbGUoJ21vZGVsLnB0aCcpCnRyYWluX3J1bi5sb2dfYXJ0aWZhY3QobW9kZWxfYXJ0aWZhY3QpCnRyYWluX3J1bi5saW5rX2FydGlmYWN0KG1vZGVsX2FydGlmYWN0LCAnbW9kZWwtcmVnaXN0cnkvbmxwLW1vZGVscycsIGFsaWFzZXM9WydjYW5kaWRhdGUnXSkKCiMgRXZhbHVhdGlvbiB0ZWFtCmV2YWxfcnVuID0gd2FuZGIuaW5pdChwcm9qZWN0PSJtb2RlbC1ldmFsIiwgZW50aXR5PSJtbC10ZWFtIikKbW9kZWxfYXJ0aWZhY3QgPSBldmFsX3J1bi51c2VfYXJ0aWZhY3QoJ21vZGVsLXJlZ2lzdHJ5L25scC1tb2RlbHMvbmxwLW1vZGVsOmNhbmRpZGF0ZScpCm1ldHJpY3MgPSBldmFsdWF0ZV9tb2RlbChtb2RlbF9hcnRpZmFjdCkKCmlmIG1ldHJpY3NbJ2YxJ10gPiAwLjk6CiAgICAjIFByb21vdGUgdG8gcHJvZHVjdGlvbgogICAgbW9kZWxfYXJ0aWZhY3QubGluaygnbW9kZWwtcmVnaXN0cnkvbmxwLW1vZGVscycsIGFsaWFzZXM9Wydwcm9kdWN0aW9uJ10pCmBgYAoKIyMgQmVzdCBQcmFjdGljZXMKCiMjIyAxLiBVc2UgRGVzY3JpcHRpdmUgTmFtZXMKCmBgYHB5dGhvbgojIOKchSBHb29kOiBEZXNjcmlwdGl2ZSBuYW1lcwp3YW5kYi5BcnRpZmFjdCgnaW1hZ2VuZXQtdHJhaW4tYXVnbWVudGVkLXYyJywgdHlwZT0nZGF0YXNldCcpCndhbmRiLkFydGlmYWN0KCdiZXJ0LWJhc2Utc2VudGltZW50LWZpbmV0dW5lZCcsIHR5cGU9J21vZGVsJykKCiMg4p2MIEJhZDogR2VuZXJpYyBuYW1lcwp3YW5kYi5BcnRpZmFjdCgnZGF0YXNldDEnLCB0eXBlPSdkYXRhc2V0JykKd2FuZGIuQXJ0aWZhY3QoJ21vZGVsJywgdHlwZT0nbW9kZWwnKQpgYGAKCiMjIyAyLiBBZGQgQ29tcHJlaGVuc2l2ZSBNZXRhZGF0YQoKYGBgcHl0aG9uCm1vZGVsX2FydGlmYWN0ID0gd2FuZGIuQXJ0aWZhY3QoCiAgICAncHJvZHVjdGlvbi1tb2RlbCcsCiAgICB0eXBlPSdtb2RlbCcsCiAgICBkZXNjcmlwdGlvbj0nUmVzTmV0NTAgY2xhc3NpZmllciBmb3IgcHJvZHVjdCBjYXRlZ29yaXphdGlvbicsCiAgICBtZXRhZGF0YT17CiAgICAgICAgIyBNb2RlbCBpbmZvCiAgICAgICAgJ2FyY2hpdGVjdHVyZSc6ICdSZXNOZXQ1MCcsCiAgICAgICAgJ2ZyYW1ld29yayc6ICdQeVRvcmNoIDIuMCcsCiAgICAgICAgJ3ByZXRyYWluZWQnOiBUcnVlLAoKICAgICAgICAjIFBlcmZvcm1hbmNlCiAgICAgICAgJ2FjY3VyYWN5JzogMC45NSwKICAgICAgICAnZjFfc2NvcmUnOiAwLjkzLAogICAgICAgICdpbmZlcmVuY2VfdGltZV9tcyc6IDE1LAoKICAgICAgICAjIFRyYWluaW5nCiAgICAgICAgJ2Vwb2Nocyc6IDUwLAogICAgICAgICdkYXRhc2V0JzogJ2ltYWdlbmV0JywKICAgICAgICAnbnVtX3NhbXBsZXMnOiAxMjAwMDAwLAoKICAgICAgICAjIEJ1c2luZXNzIGNvbnRleHQKICAgICAgICAndXNlX2Nhc2UnOiAnZS1jb21tZXJjZSBwcm9kdWN0IGNsYXNzaWZpY2F0aW9uJywKICAgICAgICAnb3duZXInOiAnbWwtdGVhbUBjb21wYW55LmNvbScsCiAgICAgICAgJ2FwcHJvdmVkX2J5JzogJ2RhdGEtc2NpZW5jZS1sZWFkJwogICAgfQopCmBgYAoKIyMjIDMuIFVzZSBBbGlhc2VzIGZvciBEZXBsb3ltZW50IFN0YWdlcwoKYGBgcHl0aG9uCiMgRGV2ZWxvcG1lbnQKcnVuLmxvZ19hcnRpZmFjdChtb2RlbCwgYWxpYXNlcz1bJ2RldicsICdsYXRlc3QnXSkKCiMgU3RhZ2luZwpydW4ubG9nX2FydGlmYWN0KG1vZGVsLCBhbGlhc2VzPVsnc3RhZ2luZyddKQoKIyBQcm9kdWN0aW9uCnJ1bi5sb2dfYXJ0aWZhY3QobW9kZWwsIGFsaWFzZXM9Wydwcm9kdWN0aW9uJywgJ3YxLjIuMCddKQoKIyBBcmNoaXZlIG9sZCB2ZXJzaW9ucwpvbGRfYXJ0aWZhY3QgPSBhcGkuYXJ0aWZhY3QoJ21vZGVsOnByb2R1Y3Rpb24nKQpvbGRfYXJ0aWZhY3QuYWxpYXNlcyA9IFsnYXJjaGl2ZWQtdjEuMS4wJ10Kb2xkX2FydGlmYWN0LnNhdmUoKQpgYGAKCiMjIyA0LiBUcmFjayBEYXRhIExpbmVhZ2UKCmBgYHB5dGhvbgpkZWYgY3JlYXRlX3RyYWluaW5nX3BpcGVsaW5lKCk6CiAgICBydW4gPSB3YW5kYi5pbml0KHByb2plY3Q9InBpcGVsaW5lIikKCiAgICAjIDEuIExvYWQgcmF3IGRhdGEKICAgIHJhd19kYXRhID0gcnVuLnVzZV9hcnRpZmFjdCgncmF3LWRhdGE6bGF0ZXN0JykKCiAgICAjIDIuIFByZXByb2Nlc3MKICAgIHByb2Nlc3NlZCA9IHByZXByb2Nlc3MocmF3X2RhdGEpCiAgICBwcm9jZXNzZWRfYXJ0aWZhY3QgPSB3YW5kYi5BcnRpZmFjdCgncHJvY2Vzc2VkLWRhdGEnLCB0eXBlPSdkYXRhc2V0JykKICAgIHByb2Nlc3NlZF9hcnRpZmFjdC5hZGRfZmlsZSgncHJvY2Vzc2VkLmNzdicpCiAgICBydW4ubG9nX2FydGlmYWN0KHByb2Nlc3NlZF9hcnRpZmFjdCkKCiAgICAjIDMuIFRyYWluIG1vZGVsCiAgICBtb2RlbCA9IHRyYWluKHByb2Nlc3NlZCkKICAgIG1vZGVsX2FydGlmYWN0ID0gd2FuZGIuQXJ0aWZhY3QoJ3RyYWluZWQtbW9kZWwnLCB0eXBlPSdtb2RlbCcpCiAgICBtb2RlbF9hcnRpZmFjdC5hZGRfZmlsZSgnbW9kZWwucHRoJykKICAgIHJ1bi5sb2dfYXJ0aWZhY3QobW9kZWxfYXJ0aWZhY3QpCgogICAgIyBMaW5lYWdlOiByYXctZGF0YSDihpIgcHJvY2Vzc2VkLWRhdGEg4oaSIHRyYWluZWQtbW9kZWwKYGBgCgojIyMgNS4gRWZmaWNpZW50IFN0b3JhZ2UKCmBgYHB5dGhvbgojIOKchSBHb29kOiBSZWZlcmVuY2UgbGFyZ2UgZmlsZXMKbGFyZ2VfZGF0YXNldCA9IHdhbmRiLkFydGlmYWN0KCdsYXJnZS1kYXRhc2V0JywgdHlwZT0nZGF0YXNldCcpCmxhcmdlX2RhdGFzZXQuYWRkX3JlZmVyZW5jZSgnczM6Ly9idWNrZXQvaHVnZS1maWxlLnRhci5neicpCgojIOKdjCBCYWQ6IFVwbG9hZCBnaWFudCBmaWxlcwojIGxhcmdlX2RhdGFzZXQuYWRkX2ZpbGUoJ2h1Z2UtZmlsZS50YXIuZ3onKSAgIyBEb24ndCBkbyB0aGlzCgojIOKchSBHb29kOiBVcGxvYWQgb25seSBtZXRhZGF0YQptZXRhZGF0YV9hcnRpZmFjdCA9IHdhbmRiLkFydGlmYWN0KCdkYXRhc2V0LW1ldGFkYXRhJywgdHlwZT0nZGF0YXNldCcpCm1ldGFkYXRhX2FydGlmYWN0LmFkZF9maWxlKCdtZXRhZGF0YS5qc29uJykgICMgU21hbGwgZmlsZQpgYGAKCiMjIFJlc291cmNlcwoKLSAqKkFydGlmYWN0cyBEb2N1bWVudGF0aW9uKio6IGh0dHBzOi8vZG9jcy53YW5kYi5haS9ndWlkZXMvYXJ0aWZhY3RzCi0gKipNb2RlbCBSZWdpc3RyeSoqOiBodHRwczovL2RvY3Mud2FuZGIuYWkvZ3VpZGVzL21vZGVsLXJlZ2lzdHJ5Ci0gKipCZXN0IFByYWN0aWNlcyoqOiBodHRwczovL3dhbmRiLmFpL3NpdGUvYXJ0aWNsZXMvdmVyc2lvbmluZy1kYXRhLWFuZC1tb2RlbHMtaW4tbWwK
+# Artifacts & Model Registry Guide
+
+Complete guide to data versioning and model management with W&B Artifacts.
+
+## Table of Contents
+- What are Artifacts
+- Creating Artifacts
+- Using Artifacts
+- Model Registry
+- Versioning & Lineage
+- Best Practices
+
+## What are Artifacts
+
+Artifacts are versioned datasets, models, or files tracked with lineage.
+
+**Key Features:**
+- Automatic versioning (v0, v1, v2...)
+- Lineage tracking (which runs produced/used artifacts)
+- Efficient storage (deduplication)
+- Collaboration (team-wide access)
+- Aliases (latest, best, production)
+
+**Common Use Cases:**
+- Dataset versioning
+- Model checkpoints
+- Preprocessed data
+- Evaluation results
+- Configuration files
+
+## Creating Artifacts
+
+### Basic Dataset Artifact
+
+```python
+import wandb
+
+run = wandb.init(project="my-project")
+
+# Create artifact
+dataset = wandb.Artifact(
+    name='training-data',
+    type='dataset',
+    description='ImageNet training split with augmentations',
+    metadata={
+        'size': '1.2M images',
+        'format': 'JPEG',
+        'resolution': '224x224'
+    }
+)
+
+# Add files
+dataset.add_file('data/train.csv')        # Single file
+dataset.add_dir('data/images')            # Entire directory
+dataset.add_reference('s3://bucket/data') # Cloud reference
+
+# Log artifact
+run.log_artifact(dataset)
+wandb.finish()
+```
+
+### Model Artifact
+
+```python
+import torch
+import wandb
+
+run = wandb.init(project="my-project")
+
+# Train model
+model = train_model()
+
+# Save model
+torch.save(model.state_dict(), 'model.pth')
+
+# Create model artifact
+model_artifact = wandb.Artifact(
+    name='resnet50-classifier',
+    type='model',
+    description='ResNet50 trained on ImageNet',
+    metadata={
+        'architecture': 'ResNet50',
+        'accuracy': 0.95,
+        'loss': 0.15,
+        'epochs': 50,
+        'framework': 'PyTorch'
+    }
+)
+
+# Add model file
+model_artifact.add_file('model.pth')
+
+# Add config
+model_artifact.add_file('config.yaml')
+
+# Log with aliases
+run.log_artifact(model_artifact, aliases=['latest', 'best'])
+
+wandb.finish()
+```
+
+### Preprocessed Data Artifact
+
+```python
+import pandas as pd
+import wandb
+
+run = wandb.init(project="nlp-project")
+
+# Preprocess data
+df = pd.read_csv('raw_data.csv')
+df_processed = preprocess(df)
+df_processed.to_csv('processed_data.csv', index=False)
+
+# Create artifact
+processed_data = wandb.Artifact(
+    name='processed-text-data',
+    type='dataset',
+    metadata={
+        'rows': len(df_processed),
+        'columns': list(df_processed.columns),
+        'preprocessing_steps': ['lowercase', 'remove_stopwords', 'tokenize']
+    }
+)
+
+processed_data.add_file('processed_data.csv')
+
+# Log artifact
+run.log_artifact(processed_data)
+```
+
+## Using Artifacts
+
+### Download and Use
+
+```python
+import wandb
+
+run = wandb.init(project="my-project")
+
+# Download artifact
+artifact = run.use_artifact('training-data:latest')
+artifact_dir = artifact.download()
+
+# Use files
+import pandas as pd
+df = pd.read_csv(f'{artifact_dir}/train.csv')
+
+# Train with artifact data
+model = train_model(df)
+```
+
+### Use Specific Version
+
+```python
+# Use specific version
+artifact_v2 = run.use_artifact('training-data:v2')
+
+# Use alias
+artifact_best = run.use_artifact('model:best')
+artifact_prod = run.use_artifact('model:production')
+
+# Use from another project
+artifact = run.use_artifact('team/other-project/model:latest')
+```
+
+### Check Artifact Metadata
+
+```python
+artifact = run.use_artifact('training-data:latest')
+
+# Access metadata
+print(artifact.metadata)
+print(f"Size: {artifact.metadata['size']}")
+
+# Access version info
+print(f"Version: {artifact.version}")
+print(f"Created at: {artifact.created_at}")
+print(f"Digest: {artifact.digest}")
+```
+
+## Model Registry
+
+Link models to a central registry for governance and deployment.
+
+### Create Model Registry
+
+```python
+# In W&B UI:
+# 1. Go to "Registry" tab
+# 2. Create new registry: "production-models"
+# 3. Define stages: development, staging, production
+```
+
+### Link Model to Registry
+
+```python
+import wandb
+
+run = wandb.init(project="training")
+
+# Create model artifact
+model_artifact = wandb.Artifact(
+    name='sentiment-classifier',
+    type='model',
+    metadata={'accuracy': 0.94, 'f1': 0.92}
+)
+
+model_artifact.add_file('model.pth')
+
+# Log artifact
+run.log_artifact(model_artifact)
+
+# Link to registry
+run.link_artifact(
+    model_artifact,
+    'model-registry/production-models',
+    aliases=['staging']  # Deploy to staging
+)
+
+wandb.finish()
+```
+
+### Promote Model in Registry
+
+```python
+# Retrieve model from registry
+api = wandb.Api()
+artifact = api.artifact('model-registry/production-models/sentiment-classifier:staging')
+
+# Promote to production
+artifact.link('model-registry/production-models', aliases=['production'])
+
+# Demote from production
+artifact.aliases = ['archived']
+artifact.save()
+```
+
+### Use Model from Registry
+
+```python
+import wandb
+
+run = wandb.init()
+
+# Download production model
+model_artifact = run.use_artifact(
+    'model-registry/production-models/sentiment-classifier:production'
+)
+
+model_dir = model_artifact.download()
+
+# Load and use
+import torch
+model = torch.load(f'{model_dir}/model.pth')
+model.eval()
+```
+
+## Versioning & Lineage
+
+### Automatic Versioning
+
+```python
+# First log: creates v0
+run1 = wandb.init(project="my-project")
+dataset_v0 = wandb.Artifact('my-dataset', type='dataset')
+dataset_v0.add_file('data_v1.csv')
+run1.log_artifact(dataset_v0)
+
+# Second log with same name: creates v1
+run2 = wandb.init(project="my-project")
+dataset_v1 = wandb.Artifact('my-dataset', type='dataset')
+dataset_v1.add_file('data_v2.csv')  # Different content
+run2.log_artifact(dataset_v1)
+
+# Third log with SAME content as v1: references v1 (no new version)
+run3 = wandb.init(project="my-project")
+dataset_v1_again = wandb.Artifact('my-dataset', type='dataset')
+dataset_v1_again.add_file('data_v2.csv')  # Same content as v1
+run3.log_artifact(dataset_v1_again)  # Still v1, no v2 created
+```
+
+### Track Lineage
+
+```python
+# Training run
+run = wandb.init(project="my-project")
+
+# Use dataset (input)
+dataset = run.use_artifact('training-data:v3')
+data = load_data(dataset.download())
+
+# Train model
+model = train(data)
+
+# Save model (output)
+model_artifact = wandb.Artifact('trained-model', type='model')
+torch.save(model.state_dict(), 'model.pth')
+model_artifact.add_file('model.pth')
+run.log_artifact(model_artifact)
+
+# Lineage automatically tracked:
+# training-data:v3 --> [run] --> trained-model:v0
+```
+
+### View Lineage Graph
+
+```python
+# In W&B UI:
+# Artifacts → Select artifact → Lineage tab
+# Shows:
+# - Which runs produced this artifact
+# - Which runs used this artifact
+# - Parent/child artifacts
+```
+
+## Artifact Types
+
+### Dataset Artifacts
+
+```python
+# Raw data
+raw_data = wandb.Artifact('raw-data', type='dataset')
+raw_data.add_dir('raw/')
+
+# Processed data
+processed_data = wandb.Artifact('processed-data', type='dataset')
+processed_data.add_dir('processed/')
+
+# Train/val/test splits
+train_split = wandb.Artifact('train-split', type='dataset')
+train_split.add_file('train.csv')
+
+val_split = wandb.Artifact('val-split', type='dataset')
+val_split.add_file('val.csv')
+```
+
+### Model Artifacts
+
+```python
+# Checkpoint during training
+checkpoint = wandb.Artifact('checkpoint-epoch-10', type='model')
+checkpoint.add_file('checkpoint_epoch_10.pth')
+
+# Final model
+final_model = wandb.Artifact('final-model', type='model')
+final_model.add_file('model.pth')
+final_model.add_file('tokenizer.json')
+
+# Quantized model
+quantized = wandb.Artifact('quantized-model', type='model')
+quantized.add_file('model_int8.onnx')
+```
+
+### Result Artifacts
+
+```python
+# Predictions
+predictions = wandb.Artifact('test-predictions', type='predictions')
+predictions.add_file('predictions.csv')
+
+# Evaluation metrics
+eval_results = wandb.Artifact('evaluation', type='evaluation')
+eval_results.add_file('metrics.json')
+eval_results.add_file('confusion_matrix.png')
+```
+
+## Advanced Patterns
+
+### Incremental Artifacts
+
+Add files incrementally without re-uploading.
+
+```python
+run = wandb.init(project="my-project")
+
+# Create artifact
+dataset = wandb.Artifact('incremental-dataset', type='dataset')
+
+# Add files incrementally
+for i in range(100):
+    filename = f'batch_{i}.csv'
+    process_batch(i, filename)
+    dataset.add_file(filename)
+
+    # Log progress
+    if (i + 1) % 10 == 0:
+        print(f"Added {i + 1}/100 batches")
+
+# Log complete artifact
+run.log_artifact(dataset)
+```
+
+### Artifact Tables
+
+Track structured data with W&B Tables.
+
+```python
+import wandb
+
+run = wandb.init(project="my-project")
+
+# Create table
+table = wandb.Table(columns=["id", "image", "label", "prediction"])
+
+for idx, (img, label, pred) in enumerate(zip(images, labels, predictions)):
+    table.add_data(
+        idx,
+        wandb.Image(img),
+        label,
+        pred
+    )
+
+# Log as artifact
+artifact = wandb.Artifact('predictions-table', type='predictions')
+artifact.add(table, "predictions")
+run.log_artifact(artifact)
+```
+
+### Artifact References
+
+Reference external data without copying.
+
+```python
+# S3 reference
+dataset = wandb.Artifact('s3-dataset', type='dataset')
+dataset.add_reference('s3://my-bucket/data/', name='train')
+dataset.add_reference('s3://my-bucket/labels/', name='labels')
+
+# GCS reference
+dataset.add_reference('gs://my-bucket/data/')
+
+# HTTP reference
+dataset.add_reference('https://example.com/data.zip')
+
+# Local filesystem reference (for shared storage)
+dataset.add_reference('file:///mnt/shared/data')
+```
+
+## Collaboration Patterns
+
+### Team Dataset Sharing
+
+```python
+# Data engineer creates dataset
+run = wandb.init(project="data-eng", entity="my-team")
+dataset = wandb.Artifact('shared-dataset', type='dataset')
+dataset.add_dir('data/')
+run.log_artifact(dataset, aliases=['latest', 'production'])
+
+# ML engineer uses dataset
+run = wandb.init(project="ml-training", entity="my-team")
+dataset = run.use_artifact('my-team/data-eng/shared-dataset:production')
+data = load_data(dataset.download())
+```
+
+### Model Handoff
+
+```python
+# Training team
+train_run = wandb.init(project="model-training", entity="ml-team")
+model = train_model()
+model_artifact = wandb.Artifact('nlp-model', type='model')
+model_artifact.add_file('model.pth')
+train_run.log_artifact(model_artifact)
+train_run.link_artifact(model_artifact, 'model-registry/nlp-models', aliases=['candidate'])
+
+# Evaluation team
+eval_run = wandb.init(project="model-eval", entity="ml-team")
+model_artifact = eval_run.use_artifact('model-registry/nlp-models/nlp-model:candidate')
+metrics = evaluate_model(model_artifact)
+
+if metrics['f1'] > 0.9:
+    # Promote to production
+    model_artifact.link('model-registry/nlp-models', aliases=['production'])
+```
+
+## Best Practices
+
+### 1. Use Descriptive Names
+
+```python
+# ✅ Good: Descriptive names
+wandb.Artifact('imagenet-train-augmented-v2', type='dataset')
+wandb.Artifact('bert-base-sentiment-finetuned', type='model')
+
+# ❌ Bad: Generic names
+wandb.Artifact('dataset1', type='dataset')
+wandb.Artifact('model', type='model')
+```
+
+### 2. Add Comprehensive Metadata
+
+```python
+model_artifact = wandb.Artifact(
+    'production-model',
+    type='model',
+    description='ResNet50 classifier for product categorization',
+    metadata={
+        # Model info
+        'architecture': 'ResNet50',
+        'framework': 'PyTorch 2.0',
+        'pretrained': True,
+
+        # Performance
+        'accuracy': 0.95,
+        'f1_score': 0.93,
+        'inference_time_ms': 15,
+
+        # Training
+        'epochs': 50,
+        'dataset': 'imagenet',
+        'num_samples': 1200000,
+
+        # Business context
+        'use_case': 'e-commerce product classification',
+        'owner': 'ml-team@company.com',
+        'approved_by': 'data-science-lead'
+    }
+)
+```
+
+### 3. Use Aliases for Deployment Stages
+
+```python
+# Development
+run.log_artifact(model, aliases=['dev', 'latest'])
+
+# Staging
+run.log_artifact(model, aliases=['staging'])
+
+# Production
+run.log_artifact(model, aliases=['production', 'v1.2.0'])
+
+# Archive old versions
+old_artifact = api.artifact('model:production')
+old_artifact.aliases = ['archived-v1.1.0']
+old_artifact.save()
+```
+
+### 4. Track Data Lineage
+
+```python
+def create_training_pipeline():
+    run = wandb.init(project="pipeline")
+
+    # 1. Load raw data
+    raw_data = run.use_artifact('raw-data:latest')
+
+    # 2. Preprocess
+    processed = preprocess(raw_data)
+    processed_artifact = wandb.Artifact('processed-data', type='dataset')
+    processed_artifact.add_file('processed.csv')
+    run.log_artifact(processed_artifact)
+
+    # 3. Train model
+    model = train(processed)
+    model_artifact = wandb.Artifact('trained-model', type='model')
+    model_artifact.add_file('model.pth')
+    run.log_artifact(model_artifact)
+
+    # Lineage: raw-data → processed-data → trained-model
+```
+
+### 5. Efficient Storage
+
+```python
+# ✅ Good: Reference large files
+large_dataset = wandb.Artifact('large-dataset', type='dataset')
+large_dataset.add_reference('s3://bucket/huge-file.tar.gz')
+
+# ❌ Bad: Upload giant files
+# large_dataset.add_file('huge-file.tar.gz')  # Don't do this
+
+# ✅ Good: Upload only metadata
+metadata_artifact = wandb.Artifact('dataset-metadata', type='dataset')
+metadata_artifact.add_file('metadata.json')  # Small file
+```
+
+## Resources
+
+- **Artifacts Documentation**: https://docs.wandb.ai/guides/artifacts
+- **Model Registry**: https://docs.wandb.ai/guides/model-registry
+- **Best Practices**: https://wandb.ai/site/articles/versioning-data-and-models-in-ml

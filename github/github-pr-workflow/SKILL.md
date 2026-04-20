@@ -1,1 +1,366 @@
-LS0tCm5hbWU6IGdpdGh1Yi1wci13b3JrZmxvdwpkZXNjcmlwdGlvbjogRnVsbCBwdWxsIHJlcXVlc3QgbGlmZWN5Y2xlIOKAlCBjcmVhdGUgYnJhbmNoZXMsIGNvbW1pdCBjaGFuZ2VzLCBvcGVuIFBScywgbW9uaXRvciBDSSBzdGF0dXMsIGF1dG8tZml4IGZhaWx1cmVzLCBhbmQgbWVyZ2UuIFdvcmtzIHdpdGggZ2ggQ0xJIG9yIGZhbGxzIGJhY2sgdG8gZ2l0ICsgR2l0SHViIFJFU1QgQVBJIHZpYSBjdXJsLgp2ZXJzaW9uOiAxLjEuMAphdXRob3I6IEhlcm1lcyBBZ2VudApsaWNlbnNlOiBNSVQKbWV0YWRhdGE6CiAgaGVybWVzOgogICAgdGFnczogW0dpdEh1YiwgUHVsbC1SZXF1ZXN0cywgQ0kvQ0QsIEdpdCwgQXV0b21hdGlvbiwgTWVyZ2VdCiAgICByZWxhdGVkX3NraWxsczogW2dpdGh1Yi1hdXRoLCBnaXRodWItY29kZS1yZXZpZXddCi0tLQoKIyBHaXRIdWIgUHVsbCBSZXF1ZXN0IFdvcmtmbG93CgpDb21wbGV0ZSBndWlkZSBmb3IgbWFuYWdpbmcgdGhlIFBSIGxpZmVjeWNsZS4gRWFjaCBzZWN0aW9uIHNob3dzIHRoZSBgZ2hgIHdheSBmaXJzdCwgdGhlbiB0aGUgYGdpdGAgKyBgY3VybGAgZmFsbGJhY2sgZm9yIG1hY2hpbmVzIHdpdGhvdXQgYGdoYC4KCiMjIFByZXJlcXVpc2l0ZXMKCi0gQXV0aGVudGljYXRlZCB3aXRoIEdpdEh1YiAoc2VlIGBnaXRodWItYXV0aGAgc2tpbGwpCi0gSW5zaWRlIGEgZ2l0IHJlcG9zaXRvcnkgd2l0aCBhIEdpdEh1YiByZW1vdGUKCiMjIyBRdWljayBBdXRoIERldGVjdGlvbgoKYGBgYmFzaAojIERldGVybWluZSB3aGljaCBtZXRob2QgdG8gdXNlIHRocm91Z2hvdXQgdGhpcyB3b3JrZmxvdwppZiBjb21tYW5kIC12IGdoICY+L2Rldi9udWxsICYmIGdoIGF1dGggc3RhdHVzICY+L2Rldi9udWxsOyB0aGVuCiAgQVVUSD0iZ2giCmVsc2UKICBBVVRIPSJnaXQiCiAgIyBFbnN1cmUgd2UgaGF2ZSBhIHRva2VuIGZvciBBUEkgY2FsbHMKICBpZiBbIC16ICIkR0lUSFVCX1RPS0VOIiBdOyB0aGVuCiAgICBpZiBbIC1mIH4vLmhlcm1lcy8uZW52IF0gJiYgZ3JlcCAtcSAiXkdJVEhVQl9UT0tFTj0iIH4vLmhlcm1lcy8uZW52OyB0aGVuCiAgICAgIEdJVEhVQl9UT0tFTj0kKGdyZXAgIl5HSVRIVUJfVE9LRU49IiB+Ly5oZXJtZXMvLmVudiB8IGhlYWQgLTEgfCBjdXQgLWQ9IC1mMiB8IHRyIC1kICdcblxyJykKICAgIGVsaWYgZ3JlcCAtcSAiZ2l0aHViLmNvbSIgfi8uZ2l0LWNyZWRlbnRpYWxzIDI+L2Rldi9udWxsOyB0aGVuCiAgICAgIEdJVEhVQl9UT0tFTj0kKGdyZXAgImdpdGh1Yi5jb20iIH4vLmdpdC1jcmVkZW50aWFscyAyPi9kZXYvbnVsbCB8IGhlYWQgLTEgfCBzZWQgJ3N8aHR0cHM6Ly9bXjpdKjpcKFteQF0qXClALip8XDF8JykKICAgIGZpCiAgZmkKZmkKZWNobyAiVXNpbmc6ICRBVVRIIgpgYGAKCiMjIyBFeHRyYWN0aW5nIE93bmVyL1JlcG8gZnJvbSB0aGUgR2l0IFJlbW90ZQoKTWFueSBgY3VybGAgY29tbWFuZHMgbmVlZCBgb3duZXIvcmVwb2AuIEV4dHJhY3QgaXQgZnJvbSB0aGUgZ2l0IHJlbW90ZToKCmBgYGJhc2gKIyBXb3JrcyBmb3IgYm90aCBIVFRQUyBhbmQgU1NIIHJlbW90ZSBVUkxzClJFTU9URV9VUkw9JChnaXQgcmVtb3RlIGdldC11cmwgb3JpZ2luKQpPV05FUl9SRVBPPSQoZWNobyAiJFJFTU9URV9VUkwiIHwgc2VkIC1FICdzfC4qZ2l0aHViXC5jb21bOi9dfHw7IHN8XC5naXQkfHwnKQpPV05FUj0kKGVjaG8gIiRPV05FUl9SRVBPIiB8IGN1dCAtZC8gLWYxKQpSRVBPPSQoZWNobyAiJE9XTkVSX1JFUE8iIHwgY3V0IC1kLyAtZjIpCmVjaG8gIk93bmVyOiAkT1dORVIsIFJlcG86ICRSRVBPIgpgYGAKCi0tLQoKIyMgMS4gQnJhbmNoIENyZWF0aW9uCgpUaGlzIHBhcnQgaXMgcHVyZSBgZ2l0YCDigJQgaWRlbnRpY2FsIGVpdGhlciB3YXk6CgpgYGBiYXNoCiMgTWFrZSBzdXJlIHlvdSdyZSB1cCB0byBkYXRlCmdpdCBmZXRjaCBvcmlnaW4KZ2l0IGNoZWNrb3V0IG1haW4gJiYgZ2l0IHB1bGwgb3JpZ2luIG1haW4KCiMgQ3JlYXRlIGFuZCBzd2l0Y2ggdG8gYSBuZXcgYnJhbmNoCmdpdCBjaGVja291dCAtYiBmZWF0L2FkZC11c2VyLWF1dGhlbnRpY2F0aW9uCmBgYAoKQnJhbmNoIG5hbWluZyBjb252ZW50aW9uczoKLSBgZmVhdC9kZXNjcmlwdGlvbmAg4oCUIG5ldyBmZWF0dXJlcwotIGBmaXgvZGVzY3JpcHRpb25gIOKAlCBidWcgZml4ZXMKLSBgcmVmYWN0b3IvZGVzY3JpcHRpb25gIOKAlCBjb2RlIHJlc3RydWN0dXJpbmcKLSBgZG9jcy9kZXNjcmlwdGlvbmAg4oCUIGRvY3VtZW50YXRpb24KLSBgY2kvZGVzY3JpcHRpb25gIOKAlCBDSS9DRCBjaGFuZ2VzCgojIyAyLiBNYWtpbmcgQ29tbWl0cwoKVXNlIHRoZSBhZ2VudCdzIGZpbGUgdG9vbHMgKGB3cml0ZV9maWxlYCwgYHBhdGNoYCkgdG8gbWFrZSBjaGFuZ2VzLCB0aGVuIGNvbW1pdDoKCmBgYGJhc2gKIyBTdGFnZSBzcGVjaWZpYyBmaWxlcwpnaXQgYWRkIHNyYy9hdXRoLnB5IHNyYy9tb2RlbHMvdXNlci5weSB0ZXN0cy90ZXN0X2F1dGgucHkKCiMgQ29tbWl0IHdpdGggYSBjb252ZW50aW9uYWwgY29tbWl0IG1lc3NhZ2UKZ2l0IGNvbW1pdCAtbSAiZmVhdDogYWRkIEpXVC1iYXNlZCB1c2VyIGF1dGhlbnRpY2F0aW9uCgotIEFkZCBsb2dpbi9yZWdpc3RlciBlbmRwb2ludHMKLSBBZGQgVXNlciBtb2RlbCB3aXRoIHBhc3N3b3JkIGhhc2hpbmcKLSBBZGQgYXV0aCBtaWRkbGV3YXJlIGZvciBwcm90ZWN0ZWQgcm91dGVzCi0gQWRkIHVuaXQgdGVzdHMgZm9yIGF1dGggZmxvdyIKYGBgCgpDb21taXQgbWVzc2FnZSBmb3JtYXQgKENvbnZlbnRpb25hbCBDb21taXRzKToKYGBgCnR5cGUoc2NvcGUpOiBzaG9ydCBkZXNjcmlwdGlvbgoKTG9uZ2VyIGV4cGxhbmF0aW9uIGlmIG5lZWRlZC4gV3JhcCBhdCA3MiBjaGFyYWN0ZXJzLgpgYGAKClR5cGVzOiBgZmVhdGAsIGBmaXhgLCBgcmVmYWN0b3JgLCBgZG9jc2AsIGB0ZXN0YCwgYGNpYCwgYGNob3JlYCwgYHBlcmZgCgojIyAzLiBQdXNoaW5nIGFuZCBDcmVhdGluZyBhIFBSCgojIyMgUHVzaCB0aGUgQnJhbmNoIChzYW1lIGVpdGhlciB3YXkpCgpgYGBiYXNoCmdpdCBwdXNoIC11IG9yaWdpbiBIRUFECmBgYAoKIyMjIENyZWF0ZSB0aGUgUFIKCioqV2l0aCBnaDoqKgoKYGBgYmFzaApnaCBwciBjcmVhdGUgXAogIC0tdGl0bGUgImZlYXQ6IGFkZCBKV1QtYmFzZWQgdXNlciBhdXRoZW50aWNhdGlvbiIgXAogIC0tYm9keSAiIyMgU3VtbWFyeQotIEFkZHMgbG9naW4gYW5kIHJlZ2lzdGVyIEFQSSBlbmRwb2ludHMKLSBKV1QgdG9rZW4gZ2VuZXJhdGlvbiBhbmQgdmFsaWRhdGlvbgoKIyMgVGVzdCBQbGFuCi0gWyBdIFVuaXQgdGVzdHMgcGFzcwoKQ2xvc2VzICM0MiIKYGBgCgpPcHRpb25zOiBgLS1kcmFmdGAsIGAtLXJldmlld2VyIHVzZXIxLHVzZXIyYCwgYC0tbGFiZWwgImVuaGFuY2VtZW50ImAsIGAtLWJhc2UgZGV2ZWxvcGAKCioqV2l0aCBnaXQgKyBjdXJsOioqCgpgYGBiYXNoCkJSQU5DSD0kKGdpdCBicmFuY2ggLS1zaG93LWN1cnJlbnQpCgpjdXJsIC1zIC1YIFBPU1QgXAogIC1IICJBdXRob3JpemF0aW9uOiB0b2tlbiAkR0lUSFVCX1RPS0VOIiBcCiAgLUggIkFjY2VwdDogYXBwbGljYXRpb24vdm5kLmdpdGh1Yi52Mytqc29uIiBcCiAgaHR0cHM6Ly9hcGkuZ2l0aHViLmNvbS9yZXBvcy8kT1dORVIvJFJFUE8vcHVsbHMgXAogIC1kICJ7CiAgICBcInRpdGxlXCI6IFwiZmVhdDogYWRkIEpXVC1iYXNlZCB1c2VyIGF1dGhlbnRpY2F0aW9uXCIsCiAgICBcImJvZHlcIjogXCIjIyBTdW1tYXJ5XG5BZGRzIGxvZ2luIGFuZCByZWdpc3RlciBBUEkgZW5kcG9pbnRzLlxuXG5DbG9zZXMgIzQyXCIsCiAgICBcImhlYWRcIjogXCIkQlJBTkNIXCIsCiAgICBcImJhc2VcIjogXCJtYWluXCIKICB9IgpgYGAKClRoZSByZXNwb25zZSBKU09OIGluY2x1ZGVzIHRoZSBQUiBgbnVtYmVyYCDigJQgc2F2ZSBpdCBmb3IgbGF0ZXIgY29tbWFuZHMuCgpUbyBjcmVhdGUgYXMgYSBkcmFmdCwgYWRkIGAiZHJhZnQiOiB0cnVlYCB0byB0aGUgSlNPTiBib2R5LgoKIyMgNC4gTW9uaXRvcmluZyBDSSBTdGF0dXMKCiMjIyBDaGVjayBDSSBTdGF0dXMKCioqV2l0aCBnaDoqKgoKYGBgYmFzaAojIE9uZS1zaG90IGNoZWNrCmdoIHByIGNoZWNrcwoKIyBXYXRjaCB1bnRpbCBhbGwgY2hlY2tzIGZpbmlzaCAocG9sbHMgZXZlcnkgMTBzKQpnaCBwciBjaGVja3MgLS13YXRjaApgYGAKCioqV2l0aCBnaXQgKyBjdXJsOioqCgpgYGBiYXNoCiMgR2V0IHRoZSBsYXRlc3QgY29tbWl0IFNIQSBvbiB0aGUgY3VycmVudCBicmFuY2gKU0hBPSQoZ2l0IHJldi1wYXJzZSBIRUFEKQoKIyBRdWVyeSB0aGUgY29tYmluZWQgc3RhdHVzCmN1cmwgLXMgXAogIC1IICJBdXRob3JpemF0aW9uOiB0b2tlbiAkR0lUSFVCX1RPS0VOIiBcCiAgaHR0cHM6Ly9hcGkuZ2l0aHViLmNvbS9yZXBvcy8kT1dORVIvJFJFUE8vY29tbWl0cy8kU0hBL3N0YXR1cyBcCiAgfCBweXRob24zIC1jICIKaW1wb3J0IHN5cywganNvbgpkYXRhID0ganNvbi5sb2FkKHN5cy5zdGRpbikKcHJpbnQoZlwiT3ZlcmFsbDoge2RhdGFbJ3N0YXRlJ119XCIpCmZvciBzIGluIGRhdGEuZ2V0KCdzdGF0dXNlcycsIFtdKToKICAgIHByaW50KGZcIiAge3NbJ2NvbnRleHQnXX06IHtzWydzdGF0ZSddfSAtIHtzLmdldCgnZGVzY3JpcHRpb24nLCAnJyl9XCIpIgoKIyBBbHNvIGNoZWNrIEdpdEh1YiBBY3Rpb25zIGNoZWNrIHJ1bnMgKHNlcGFyYXRlIGVuZHBvaW50KQpjdXJsIC1zIFwKICAtSCAiQXV0aG9yaXphdGlvbjogdG9rZW4gJEdJVEhVQl9UT0tFTiIgXAogIGh0dHBzOi8vYXBpLmdpdGh1Yi5jb20vcmVwb3MvJE9XTkVSLyRSRVBPL2NvbW1pdHMvJFNIQS9jaGVjay1ydW5zIFwKICB8IHB5dGhvbjMgLWMgIgppbXBvcnQgc3lzLCBqc29uCmRhdGEgPSBqc29uLmxvYWQoc3lzLnN0ZGluKQpmb3IgY3IgaW4gZGF0YS5nZXQoJ2NoZWNrX3J1bnMnLCBbXSk6CiAgICBwcmludChmXCIgIHtjclsnbmFtZSddfToge2NyWydzdGF0dXMnXX0gLyB7Y3JbJ2NvbmNsdXNpb24nXSBvciAncGVuZGluZyd9XCIpIgpgYGAKCiMjIyBQb2xsIFVudGlsIENvbXBsZXRlIChnaXQgKyBjdXJsKQoKYGBgYmFzaAojIFNpbXBsZSBwb2xsaW5nIGxvb3Ag4oCUIGNoZWNrIGV2ZXJ5IDMwIHNlY29uZHMsIHVwIHRvIDEwIG1pbnV0ZXMKU0hBPSQoZ2l0IHJldi1wYXJzZSBIRUFEKQpmb3IgaSBpbiAkKHNlcSAxIDIwKTsgZG8KICBTVEFUVVM9JChjdXJsIC1zIFwKICAgIC1IICJBdXRob3JpemF0aW9uOiB0b2tlbiAkR0lUSFVCX1RPS0VOIiBcCiAgICBodHRwczovL2FwaS5naXRodWIuY29tL3JlcG9zLyRPV05FUi8kUkVQTy9jb21taXRzLyRTSEEvc3RhdHVzIFwKICAgIHwgcHl0aG9uMyAtYyAiaW1wb3J0IHN5cyxqc29uOyBwcmludChqc29uLmxvYWQoc3lzLnN0ZGluKVsnc3RhdGUnXSkiKQogIGVjaG8gIkNoZWNrICRpOiAkU1RBVFVTIgogIGlmIFsgIiRTVEFUVVMiID0gInN1Y2Nlc3MiIF0gfHwgWyAiJFNUQVRVUyIgPSAiZmFpbHVyZSIgXSB8fCBbICIkU1RBVFVTIiA9ICJlcnJvciIgXTsgdGhlbgogICAgYnJlYWsKICBmaQogIHNsZWVwIDMwCmRvbmUKYGBgCgojIyA1LiBBdXRvLUZpeGluZyBDSSBGYWlsdXJlcwoKV2hlbiBDSSBmYWlscywgZGlhZ25vc2UgYW5kIGZpeC4gVGhpcyBsb29wIHdvcmtzIHdpdGggZWl0aGVyIGF1dGggbWV0aG9kLgoKIyMjIFN0ZXAgMTogR2V0IEZhaWx1cmUgRGV0YWlscwoKKipXaXRoIGdoOioqCgpgYGBiYXNoCiMgTGlzdCByZWNlbnQgd29ya2Zsb3cgcnVucyBvbiB0aGlzIGJyYW5jaApnaCBydW4gbGlzdCAtLWJyYW5jaCAkKGdpdCBicmFuY2ggLS1zaG93LWN1cnJlbnQpIC0tbGltaXQgNQoKIyBWaWV3IGZhaWxlZCBsb2dzCmdoIHJ1biB2aWV3IDxSVU5fSUQ+IC0tbG9nLWZhaWxlZApgYGAKCioqV2l0aCBnaXQgKyBjdXJsOioqCgpgYGBiYXNoCkJSQU5DSD0kKGdpdCBicmFuY2ggLS1zaG93LWN1cnJlbnQpCgojIExpc3Qgd29ya2Zsb3cgcnVucyBvbiB0aGlzIGJyYW5jaApjdXJsIC1zIFwKICAtSCAiQXV0aG9yaXphdGlvbjogdG9rZW4gJEdJVEhVQl9UT0tFTiIgXAogICJodHRwczovL2FwaS5naXRodWIuY29tL3JlcG9zLyRPV05FUi8kUkVQTy9hY3Rpb25zL3J1bnM/YnJhbmNoPSRCUkFOQ0gmcGVyX3BhZ2U9NSIgXAogIHwgcHl0aG9uMyAtYyAiCmltcG9ydCBzeXMsIGpzb24KcnVucyA9IGpzb24ubG9hZChzeXMuc3RkaW4pWyd3b3JrZmxvd19ydW5zJ10KZm9yIHIgaW4gcnVuczoKICAgIHByaW50KGZcIlJ1biB7clsnaWQnXX06IHtyWyduYW1lJ119IC0ge3JbJ2NvbmNsdXNpb24nXSBvciByWydzdGF0dXMnXX1cIikiCgojIEdldCBmYWlsZWQgam9iIGxvZ3MgKGRvd25sb2FkIGFzIHppcCwgZXh0cmFjdCwgcmVhZCkKUlVOX0lEPTxydW5faWQ+CmN1cmwgLXMgLUwgXAogIC1IICJBdXRob3JpemF0aW9uOiB0b2tlbiAkR0lUSFVCX1RPS0VOIiBcCiAgaHR0cHM6Ly9hcGkuZ2l0aHViLmNvbS9yZXBvcy8kT1dORVIvJFJFUE8vYWN0aW9ucy9ydW5zLyRSVU5fSUQvbG9ncyBcCiAgLW8gL3RtcC9jaS1sb2dzLnppcApjZCAvdG1wICYmIHVuemlwIC1vIGNpLWxvZ3MuemlwIC1kIGNpLWxvZ3MgJiYgY2F0IGNpLWxvZ3MvKi50eHQKYGBgCgojIyMgU3RlcCAyOiBGaXggYW5kIFB1c2gKCkFmdGVyIGlkZW50aWZ5aW5nIHRoZSBpc3N1ZSwgdXNlIGZpbGUgdG9vbHMgKGBwYXRjaGAsIGB3cml0ZV9maWxlYCkgdG8gZml4IGl0OgoKYGBgYmFzaApnaXQgYWRkIDxmaXhlZF9maWxlcz4KZ2l0IGNvbW1pdCAtbSAiZml4OiByZXNvbHZlIENJIGZhaWx1cmUgaW4gPGNoZWNrX25hbWU+IgpnaXQgcHVzaApgYGAKCiMjIyBTdGVwIDM6IFZlcmlmeQoKUmUtY2hlY2sgQ0kgc3RhdHVzIHVzaW5nIHRoZSBjb21tYW5kcyBmcm9tIFNlY3Rpb24gNCBhYm92ZS4KCiMjIyBBdXRvLUZpeCBMb29wIFBhdHRlcm4KCldoZW4gYXNrZWQgdG8gYXV0by1maXggQ0ksIGZvbGxvdyB0aGlzIGxvb3A6CgoxLiBDaGVjayBDSSBzdGF0dXMg4oaSIGlkZW50aWZ5IGZhaWx1cmVzCjIuIFJlYWQgZmFpbHVyZSBsb2dzIOKGkiB1bmRlcnN0YW5kIHRoZSBlcnJvcgozLiBVc2UgYHJlYWRfZmlsZWAgKyBgcGF0Y2hgL2B3cml0ZV9maWxlYCDihpIgZml4IHRoZSBjb2RlCjQuIGBnaXQgYWRkIC4gJiYgZ2l0IGNvbW1pdCAtbSAiZml4OiAuLi4iICYmIGdpdCBwdXNoYAo1LiBXYWl0IGZvciBDSSDihpIgcmUtY2hlY2sgc3RhdHVzCjYuIFJlcGVhdCBpZiBzdGlsbCBmYWlsaW5nICh1cCB0byAzIGF0dGVtcHRzLCB0aGVuIGFzayB0aGUgdXNlcikKCiMjIDYuIE1lcmdpbmcKCioqV2l0aCBnaDoqKgoKYGBgYmFzaAojIFNxdWFzaCBtZXJnZSArIGRlbGV0ZSBicmFuY2ggKGNsZWFuZXN0IGZvciBmZWF0dXJlIGJyYW5jaGVzKQpnaCBwciBtZXJnZSAtLXNxdWFzaCAtLWRlbGV0ZS1icmFuY2gKCiMgRW5hYmxlIGF1dG8tbWVyZ2UgKG1lcmdlcyB3aGVuIGFsbCBjaGVja3MgcGFzcykKZ2ggcHIgbWVyZ2UgLS1hdXRvIC0tc3F1YXNoIC0tZGVsZXRlLWJyYW5jaApgYGAKCioqV2l0aCBnaXQgKyBjdXJsOioqCgpgYGBiYXNoClBSX05VTUJFUj08bnVtYmVyPgoKIyBNZXJnZSB0aGUgUFIgdmlhIEFQSSAoc3F1YXNoKQpjdXJsIC1zIC1YIFBVVCBcCiAgLUggIkF1dGhvcml6YXRpb246IHRva2VuICRHSVRIVUJfVE9LRU4iIFwKICBodHRwczovL2FwaS5naXRodWIuY29tL3JlcG9zLyRPV05FUi8kUkVQTy9wdWxscy8kUFJfTlVNQkVSL21lcmdlIFwKICAtZCAiewogICAgXCJtZXJnZV9tZXRob2RcIjogXCJzcXVhc2hcIiwKICAgIFwiY29tbWl0X3RpdGxlXCI6IFwiZmVhdDogYWRkIHVzZXIgYXV0aGVudGljYXRpb24gKCMkUFJfTlVNQkVSKVwiCiAgfSIKCiMgRGVsZXRlIHRoZSByZW1vdGUgYnJhbmNoIGFmdGVyIG1lcmdlCkJSQU5DSD0kKGdpdCBicmFuY2ggLS1zaG93LWN1cnJlbnQpCmdpdCBwdXNoIG9yaWdpbiAtLWRlbGV0ZSAkQlJBTkNICgojIFN3aXRjaCBiYWNrIHRvIG1haW4gbG9jYWxseQpnaXQgY2hlY2tvdXQgbWFpbiAmJiBnaXQgcHVsbCBvcmlnaW4gbWFpbgpnaXQgYnJhbmNoIC1kICRCUkFOQ0gKYGBgCgpNZXJnZSBtZXRob2RzOiBgIm1lcmdlImAgKG1lcmdlIGNvbW1pdCksIGAic3F1YXNoImAsIGAicmViYXNlImAKCiMjIyBFbmFibGUgQXV0by1NZXJnZSAoY3VybCkKCmBgYGJhc2gKIyBBdXRvLW1lcmdlIHJlcXVpcmVzIHRoZSByZXBvIHRvIGhhdmUgaXQgZW5hYmxlZCBpbiBzZXR0aW5ncy4KIyBUaGlzIHVzZXMgdGhlIEdyYXBoUUwgQVBJIHNpbmNlIFJFU1QgZG9lc24ndCBzdXBwb3J0IGF1dG8tbWVyZ2UuClBSX05PREVfSUQ9JChjdXJsIC1zIFwKICAtSCAiQXV0aG9yaXphdGlvbjogdG9rZW4gJEdJVEhVQl9UT0tFTiIgXAogIGh0dHBzOi8vYXBpLmdpdGh1Yi5jb20vcmVwb3MvJE9XTkVSLyRSRVBPL3B1bGxzLyRQUl9OVU1CRVIgXAogIHwgcHl0aG9uMyAtYyAiaW1wb3J0IHN5cyxqc29uOyBwcmludChqc29uLmxvYWQoc3lzLnN0ZGluKVsnbm9kZV9pZCddKSIpCgpjdXJsIC1zIC1YIFBPU1QgXAogIC1IICJBdXRob3JpemF0aW9uOiB0b2tlbiAkR0lUSFVCX1RPS0VOIiBcCiAgaHR0cHM6Ly9hcGkuZ2l0aHViLmNvbS9ncmFwaHFsIFwKICAtZCAie1wicXVlcnlcIjogXCJtdXRhdGlvbiB7IGVuYWJsZVB1bGxSZXF1ZXN0QXV0b01lcmdlKGlucHV0OiB7cHVsbFJlcXVlc3RJZDogXFxcIiRQUl9OT0RFX0lEXFxcIiwgbWVyZ2VNZXRob2Q6IFNRVUFTSH0pIHsgY2xpZW50TXV0YXRpb25JZCB9IH1cIn0iCmBgYAoKIyMgNy4gQ29tcGxldGUgV29ya2Zsb3cgRXhhbXBsZQoKYGBgYmFzaAojIDEuIFN0YXJ0IGZyb20gY2xlYW4gbWFpbgpnaXQgY2hlY2tvdXQgbWFpbiAmJiBnaXQgcHVsbCBvcmlnaW4gbWFpbgoKIyAyLiBCcmFuY2gKZ2l0IGNoZWNrb3V0IC1iIGZpeC9sb2dpbi1yZWRpcmVjdC1idWcKCiMgMy4gKEFnZW50IG1ha2VzIGNvZGUgY2hhbmdlcyB3aXRoIGZpbGUgdG9vbHMpCgojIDQuIENvbW1pdApnaXQgYWRkIHNyYy9hdXRoL2xvZ2luLnB5IHRlc3RzL3Rlc3RfbG9naW4ucHkKZ2l0IGNvbW1pdCAtbSAiZml4OiBjb3JyZWN0IHJlZGlyZWN0IFVSTCBhZnRlciBsb2dpbgoKUHJlc2VydmVzIHRoZSA/bmV4dD0gcGFyYW1ldGVyIGluc3RlYWQgb2YgYWx3YXlzIHJlZGlyZWN0aW5nIHRvIC9kYXNoYm9hcmQuIgoKIyA1LiBQdXNoCmdpdCBwdXNoIC11IG9yaWdpbiBIRUFECgojIDYuIENyZWF0ZSBQUiAocGlja3MgZ2ggb3IgY3VybCBiYXNlZCBvbiB3aGF0J3MgYXZhaWxhYmxlKQojIC4uLiAoc2VlIFNlY3Rpb24gMykKCiMgNy4gTW9uaXRvciBDSSAoc2VlIFNlY3Rpb24gNCkKCiMgOC4gTWVyZ2Ugd2hlbiBncmVlbiAoc2VlIFNlY3Rpb24gNikKYGBgCgojIyBVc2VmdWwgUFIgQ29tbWFuZHMgUmVmZXJlbmNlCgp8IEFjdGlvbiB8IGdoIHwgZ2l0ICsgY3VybCB8CnwtLS0tLS0tLXwtLS0tLXwtLS0tLS0tLS0tLXwKfCBMaXN0IG15IFBScyB8IGBnaCBwciBsaXN0IC0tYXV0aG9yIEBtZWAgfCBgY3VybCAtcyAtSCAiQXV0aG9yaXphdGlvbjogdG9rZW4gJEdJVEhVQl9UT0tFTiIgImh0dHBzOi8vYXBpLmdpdGh1Yi5jb20vcmVwb3MvJE9XTkVSLyRSRVBPL3B1bGxzP3N0YXRlPW9wZW4iYCB8CnwgVmlldyBQUiBkaWZmIHwgYGdoIHByIGRpZmZgIHwgYGdpdCBkaWZmIG1haW4uLi5IRUFEYCAobG9jYWwpIG9yIGBjdXJsIC1IICJBY2NlcHQ6IGFwcGxpY2F0aW9uL3ZuZC5naXRodWIuZGlmZiIgLi4uYCB8CnwgQWRkIGNvbW1lbnQgfCBgZ2ggcHIgY29tbWVudCBOIC0tYm9keSAiLi4uImAgfCBgY3VybCAtWCBQT1NUIC4uLi9pc3N1ZXMvTi9jb21tZW50cyAtZCAneyJib2R5IjoiLi4uIn0nYCB8CnwgUmVxdWVzdCByZXZpZXcgfCBgZ2ggcHIgZWRpdCBOIC0tYWRkLXJldmlld2VyIHVzZXJgIHwgYGN1cmwgLVggUE9TVCAuLi4vcHVsbHMvTi9yZXF1ZXN0ZWRfcmV2aWV3ZXJzIC1kICd7InJldmlld2VycyI6WyJ1c2VyIl19J2AgfAp8IENsb3NlIFBSIHwgYGdoIHByIGNsb3NlIE5gIHwgYGN1cmwgLVggUEFUQ0ggLi4uL3B1bGxzL04gLWQgJ3sic3RhdGUiOiJjbG9zZWQifSdgIHwKfCBDaGVjayBvdXQgc29tZW9uZSdzIFBSIHwgYGdoIHByIGNoZWNrb3V0IE5gIHwgYGdpdCBmZXRjaCBvcmlnaW4gcHVsbC9OL2hlYWQ6cHItTiAmJiBnaXQgY2hlY2tvdXQgcHItTmAgfAo=
+---
+name: github-pr-workflow
+description: Full pull request lifecycle — create branches, commit changes, open PRs, monitor CI status, auto-fix failures, and merge. Works with gh CLI or falls back to git + GitHub REST API via curl.
+version: 1.1.0
+author: Hermes Agent
+license: MIT
+metadata:
+  hermes:
+    tags: [GitHub, Pull-Requests, CI/CD, Git, Automation, Merge]
+    related_skills: [github-auth, github-code-review]
+---
+
+# GitHub Pull Request Workflow
+
+Complete guide for managing the PR lifecycle. Each section shows the `gh` way first, then the `git` + `curl` fallback for machines without `gh`.
+
+## Prerequisites
+
+- Authenticated with GitHub (see `github-auth` skill)
+- Inside a git repository with a GitHub remote
+
+### Quick Auth Detection
+
+```bash
+# Determine which method to use throughout this workflow
+if command -v gh &>/dev/null && gh auth status &>/dev/null; then
+  AUTH="gh"
+else
+  AUTH="git"
+  # Ensure we have a token for API calls
+  if [ -z "$GITHUB_TOKEN" ]; then
+    if [ -f ~/.hermes/.env ] && grep -q "^GITHUB_TOKEN=" ~/.hermes/.env; then
+      GITHUB_TOKEN=$(grep "^GITHUB_TOKEN=" ~/.hermes/.env | head -1 | cut -d= -f2 | tr -d '\n\r')
+    elif grep -q "github.com" ~/.git-credentials 2>/dev/null; then
+      GITHUB_TOKEN=$(grep "github.com" ~/.git-credentials 2>/dev/null | head -1 | sed 's|https://[^:]*:\([^@]*\)@.*|\1|')
+    fi
+  fi
+fi
+echo "Using: $AUTH"
+```
+
+### Extracting Owner/Repo from the Git Remote
+
+Many `curl` commands need `owner/repo`. Extract it from the git remote:
+
+```bash
+# Works for both HTTPS and SSH remote URLs
+REMOTE_URL=$(git remote get-url origin)
+OWNER_REPO=$(echo "$REMOTE_URL" | sed -E 's|.*github\.com[:/]||; s|\.git$||')
+OWNER=$(echo "$OWNER_REPO" | cut -d/ -f1)
+REPO=$(echo "$OWNER_REPO" | cut -d/ -f2)
+echo "Owner: $OWNER, Repo: $REPO"
+```
+
+---
+
+## 1. Branch Creation
+
+This part is pure `git` — identical either way:
+
+```bash
+# Make sure you're up to date
+git fetch origin
+git checkout main && git pull origin main
+
+# Create and switch to a new branch
+git checkout -b feat/add-user-authentication
+```
+
+Branch naming conventions:
+- `feat/description` — new features
+- `fix/description` — bug fixes
+- `refactor/description` — code restructuring
+- `docs/description` — documentation
+- `ci/description` — CI/CD changes
+
+## 2. Making Commits
+
+Use the agent's file tools (`write_file`, `patch`) to make changes, then commit:
+
+```bash
+# Stage specific files
+git add src/auth.py src/models/user.py tests/test_auth.py
+
+# Commit with a conventional commit message
+git commit -m "feat: add JWT-based user authentication
+
+- Add login/register endpoints
+- Add User model with password hashing
+- Add auth middleware for protected routes
+- Add unit tests for auth flow"
+```
+
+Commit message format (Conventional Commits):
+```
+type(scope): short description
+
+Longer explanation if needed. Wrap at 72 characters.
+```
+
+Types: `feat`, `fix`, `refactor`, `docs`, `test`, `ci`, `chore`, `perf`
+
+## 3. Pushing and Creating a PR
+
+### Push the Branch (same either way)
+
+```bash
+git push -u origin HEAD
+```
+
+### Create the PR
+
+**With gh:**
+
+```bash
+gh pr create \
+  --title "feat: add JWT-based user authentication" \
+  --body "## Summary
+- Adds login and register API endpoints
+- JWT token generation and validation
+
+## Test Plan
+- [ ] Unit tests pass
+
+Closes #42"
+```
+
+Options: `--draft`, `--reviewer user1,user2`, `--label "enhancement"`, `--base develop`
+
+**With git + curl:**
+
+```bash
+BRANCH=$(git branch --show-current)
+
+curl -s -X POST \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  -H "Accept: application/vnd.github.v3+json" \
+  https://api.github.com/repos/$OWNER/$REPO/pulls \
+  -d "{
+    \"title\": \"feat: add JWT-based user authentication\",
+    \"body\": \"## Summary\nAdds login and register API endpoints.\n\nCloses #42\",
+    \"head\": \"$BRANCH\",
+    \"base\": \"main\"
+  }"
+```
+
+The response JSON includes the PR `number` — save it for later commands.
+
+To create as a draft, add `"draft": true` to the JSON body.
+
+## 4. Monitoring CI Status
+
+### Check CI Status
+
+**With gh:**
+
+```bash
+# One-shot check
+gh pr checks
+
+# Watch until all checks finish (polls every 10s)
+gh pr checks --watch
+```
+
+**With git + curl:**
+
+```bash
+# Get the latest commit SHA on the current branch
+SHA=$(git rev-parse HEAD)
+
+# Query the combined status
+curl -s \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  https://api.github.com/repos/$OWNER/$REPO/commits/$SHA/status \
+  | python3 -c "
+import sys, json
+data = json.load(sys.stdin)
+print(f\"Overall: {data['state']}\")
+for s in data.get('statuses', []):
+    print(f\"  {s['context']}: {s['state']} - {s.get('description', '')}\")"
+
+# Also check GitHub Actions check runs (separate endpoint)
+curl -s \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  https://api.github.com/repos/$OWNER/$REPO/commits/$SHA/check-runs \
+  | python3 -c "
+import sys, json
+data = json.load(sys.stdin)
+for cr in data.get('check_runs', []):
+    print(f\"  {cr['name']}: {cr['status']} / {cr['conclusion'] or 'pending'}\")"
+```
+
+### Poll Until Complete (git + curl)
+
+```bash
+# Simple polling loop — check every 30 seconds, up to 10 minutes
+SHA=$(git rev-parse HEAD)
+for i in $(seq 1 20); do
+  STATUS=$(curl -s \
+    -H "Authorization: token $GITHUB_TOKEN" \
+    https://api.github.com/repos/$OWNER/$REPO/commits/$SHA/status \
+    | python3 -c "import sys,json; print(json.load(sys.stdin)['state'])")
+  echo "Check $i: $STATUS"
+  if [ "$STATUS" = "success" ] || [ "$STATUS" = "failure" ] || [ "$STATUS" = "error" ]; then
+    break
+  fi
+  sleep 30
+done
+```
+
+## 5. Auto-Fixing CI Failures
+
+When CI fails, diagnose and fix. This loop works with either auth method.
+
+### Step 1: Get Failure Details
+
+**With gh:**
+
+```bash
+# List recent workflow runs on this branch
+gh run list --branch $(git branch --show-current) --limit 5
+
+# View failed logs
+gh run view <RUN_ID> --log-failed
+```
+
+**With git + curl:**
+
+```bash
+BRANCH=$(git branch --show-current)
+
+# List workflow runs on this branch
+curl -s \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  "https://api.github.com/repos/$OWNER/$REPO/actions/runs?branch=$BRANCH&per_page=5" \
+  | python3 -c "
+import sys, json
+runs = json.load(sys.stdin)['workflow_runs']
+for r in runs:
+    print(f\"Run {r['id']}: {r['name']} - {r['conclusion'] or r['status']}\")"
+
+# Get failed job logs (download as zip, extract, read)
+RUN_ID=<run_id>
+curl -s -L \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  https://api.github.com/repos/$OWNER/$REPO/actions/runs/$RUN_ID/logs \
+  -o /tmp/ci-logs.zip
+cd /tmp && unzip -o ci-logs.zip -d ci-logs && cat ci-logs/*.txt
+```
+
+### Step 2: Fix and Push
+
+After identifying the issue, use file tools (`patch`, `write_file`) to fix it:
+
+```bash
+git add <fixed_files>
+git commit -m "fix: resolve CI failure in <check_name>"
+git push
+```
+
+### Step 3: Verify
+
+Re-check CI status using the commands from Section 4 above.
+
+### Auto-Fix Loop Pattern
+
+When asked to auto-fix CI, follow this loop:
+
+1. Check CI status → identify failures
+2. Read failure logs → understand the error
+3. Use `read_file` + `patch`/`write_file` → fix the code
+4. `git add . && git commit -m "fix: ..." && git push`
+5. Wait for CI → re-check status
+6. Repeat if still failing (up to 3 attempts, then ask the user)
+
+## 6. Merging
+
+**With gh:**
+
+```bash
+# Squash merge + delete branch (cleanest for feature branches)
+gh pr merge --squash --delete-branch
+
+# Enable auto-merge (merges when all checks pass)
+gh pr merge --auto --squash --delete-branch
+```
+
+**With git + curl:**
+
+```bash
+PR_NUMBER=<number>
+
+# Merge the PR via API (squash)
+curl -s -X PUT \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  https://api.github.com/repos/$OWNER/$REPO/pulls/$PR_NUMBER/merge \
+  -d "{
+    \"merge_method\": \"squash\",
+    \"commit_title\": \"feat: add user authentication (#$PR_NUMBER)\"
+  }"
+
+# Delete the remote branch after merge
+BRANCH=$(git branch --show-current)
+git push origin --delete $BRANCH
+
+# Switch back to main locally
+git checkout main && git pull origin main
+git branch -d $BRANCH
+```
+
+Merge methods: `"merge"` (merge commit), `"squash"`, `"rebase"`
+
+### Enable Auto-Merge (curl)
+
+```bash
+# Auto-merge requires the repo to have it enabled in settings.
+# This uses the GraphQL API since REST doesn't support auto-merge.
+PR_NODE_ID=$(curl -s \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  https://api.github.com/repos/$OWNER/$REPO/pulls/$PR_NUMBER \
+  | python3 -c "import sys,json; print(json.load(sys.stdin)['node_id'])")
+
+curl -s -X POST \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  https://api.github.com/graphql \
+  -d "{\"query\": \"mutation { enablePullRequestAutoMerge(input: {pullRequestId: \\\"$PR_NODE_ID\\\", mergeMethod: SQUASH}) { clientMutationId } }\"}"
+```
+
+## 7. Complete Workflow Example
+
+```bash
+# 1. Start from clean main
+git checkout main && git pull origin main
+
+# 2. Branch
+git checkout -b fix/login-redirect-bug
+
+# 3. (Agent makes code changes with file tools)
+
+# 4. Commit
+git add src/auth/login.py tests/test_login.py
+git commit -m "fix: correct redirect URL after login
+
+Preserves the ?next= parameter instead of always redirecting to /dashboard."
+
+# 5. Push
+git push -u origin HEAD
+
+# 6. Create PR (picks gh or curl based on what's available)
+# ... (see Section 3)
+
+# 7. Monitor CI (see Section 4)
+
+# 8. Merge when green (see Section 6)
+```
+
+## Useful PR Commands Reference
+
+| Action | gh | git + curl |
+|--------|-----|-----------|
+| List my PRs | `gh pr list --author @me` | `curl -s -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/repos/$OWNER/$REPO/pulls?state=open"` |
+| View PR diff | `gh pr diff` | `git diff main...HEAD` (local) or `curl -H "Accept: application/vnd.github.diff" ...` |
+| Add comment | `gh pr comment N --body "..."` | `curl -X POST .../issues/N/comments -d '{"body":"..."}'` |
+| Request review | `gh pr edit N --add-reviewer user` | `curl -X POST .../pulls/N/requested_reviewers -d '{"reviewers":["user"]}'` |
+| Close PR | `gh pr close N` | `curl -X PATCH .../pulls/N -d '{"state":"closed"}'` |
+| Check out someone's PR | `gh pr checkout N` | `git fetch origin pull/N/head:pr-N && git checkout pr-N` |

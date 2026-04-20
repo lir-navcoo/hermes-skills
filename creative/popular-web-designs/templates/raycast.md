@@ -1,1 +1,281 @@
-IyBEZXNpZ24gU3lzdGVtOiBSYXljYXN0CgoKPiAqKkhlcm1lcyBBZ2VudCDigJQgSW1wbGVtZW50YXRpb24gTm90ZXMqKgo+Cj4gVGhlIG9yaWdpbmFsIHNpdGUgdXNlcyBwcm9wcmlldGFyeSBmb250cy4gRm9yIHNlbGYtY29udGFpbmVkIEhUTUwgb3V0cHV0LCB1c2UgdGhlc2UgQ0ROIHN1YnN0aXR1dGVzOgo+IC0gKipQcmltYXJ5OioqIGBJbnRlcmAgfCAqKk1vbm86KiogYEdlaXN0IE1vbm9gCj4gLSAqKkZvbnQgc3RhY2sgKENTUyk6KiogYGZvbnQtZmFtaWx5OiAnSW50ZXInLCBzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sICdTZWdvZSBVSScsIFJvYm90bywgc2Fucy1zZXJpZjtgCj4gLSAqKk1vbm8gc3RhY2sgKENTUyk6KiogYGZvbnQtZmFtaWx5OiAnR2Vpc3QgTW9ubycsIHVpLW1vbm9zcGFjZSwgU0ZNb25vLVJlZ3VsYXIsIE1lbmxvLCBNb25hY28sIENvbnNvbGFzLCAnTGliZXJhdGlvbiBNb25vJywgJ0NvdXJpZXIgTmV3JywgbW9ub3NwYWNlO2AKPiBgYGBodG1sCj4gPGxpbmsgaHJlZj0iaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3MyP2ZhbWlseT1JbnRlcjp3Z2h0QDMwMDs0MDA7NTAwOzYwMDs3MDAmZmFtaWx5PUdlaXN0K01vbm86d2dodEA0MDA7NTAwJmRpc3BsYXk9c3dhcCIgcmVsPSJzdHlsZXNoZWV0Ij4KPiBgYGAKPiBVc2UgYHdyaXRlX2ZpbGVgIHRvIGNyZWF0ZSBIVE1MLCBzZXJ2ZSB2aWEgYGdlbmVyYXRpdmUtd2lkZ2V0c2Agc2tpbGwgKGNsb3VkZmxhcmVkIHR1bm5lbCkuCj4gVmVyaWZ5IHZpc3VhbCBhY2N1cmFjeSB3aXRoIGBicm93c2VyX3Zpc2lvbmAgYWZ0ZXIgZ2VuZXJhdGluZy4KCiMjIDEuIFZpc3VhbCBUaGVtZSAmIEF0bW9zcGhlcmUKClJheWNhc3QncyBtYXJrZXRpbmcgc2l0ZSBmZWVscyBsaWtlIHRoZSBkYXJrIGludGVyaW9yIG9mIGEgcHJlY2lzaW9uIGluc3RydW1lbnQg4oCUIGEgU3dpc3Mgd2F0Y2ggY2FzZSBjYXJ2ZWQgZnJvbSBvYnNpZGlhbi4gVGhlIGJhY2tncm91bmQgaXNuJ3QganVzdCBkYXJrLCBpdCdzIGFuIGFsbW9zdC1ibGFjayBibHVlLXRpbnQgKGAjMDcwODBhYCkgdGhhdCBjcmVhdGVzIGEgc2Vuc2Ugb2YgYmVpbmcgaW5zaWRlIGEgbWFjT1MgbmF0aXZlIGFwcGxpY2F0aW9uIHJhdGhlciB0aGFuIGEgd2Vic2l0ZS4gRXZlcnkgc3VyZmFjZSwgZXZlcnkgYm9yZGVyLCBldmVyeSBzaGFkb3cgaXMgY2FsaWJyYXRlZCB0byBldm9rZSB0aGUgZmVlbGluZyBvZiBhIGhpZ2gtcGVyZm9ybWFuY2UgZGVza3RvcCB1dGlsaXR5OiBmYXN0LCBtaW5pbWFsLCB0cnVzdHdvcnRoeS4KClRoZSBzaWduYXR1cmUgbW92ZSBpcyB0aGUgbGF5ZXJlZCBzaGFkb3cgc3lzdGVtIGJvcnJvd2VkIGZyb20gbWFjT1Mgd2luZG93IGNocm9tZTogbXVsdGktbGF5ZXIgYm94LXNoYWRvd3Mgd2l0aCBpbnNldCBoaWdobGlnaHRzIHRoYXQgc2ltdWxhdGUgcGh5c2ljYWwgZGVwdGgsIGFzIGlmIGNhcmRzIGFuZCBidXR0b25zIGFyZSBhY3R1YWwgcHJlc3NlZCBvciByYWlzZWQgZ2xhc3MgZWxlbWVudHMgb24gYSBkYXJrIGRlc2suIENvbWJpbmVkIHdpdGggUmF5Y2FzdCBSZWQgKGAjRkY2MzYzYCkg4oCUIGRlcGxveWVkIGFsbW9zdCBleGNsdXNpdmVseSBpbiB0aGUgaGVybydzIGljb25pYyBkaWFnb25hbCBzdHJpcGUgcGF0dGVybiDigJQgdGhlIHBhbGV0dGUgY3JlYXRlcyBhIGJyYW5kIHRoYXQgcmVhZHMgYXMgInBvd2VyZnVsIHRvb2wgd2l0aCBwZXJzb25hbGl0eS4iIFRoZSByZWQgZG9lc24ndCBkb21pbmF0ZTsgaXQgcHVuY3R1YXRlcy4KCkludGVyIGlzIHVzZWQgZXZlcnl3aGVyZSDigJQgaGVhZGluZ3MsIGJvZHksIGJ1dHRvbnMsIGNhcHRpb25zIOKAlCB3aXRoIGV4dGVuc2l2ZSBPcGVuVHlwZSBmZWF0dXJlcyAoYGNhbHRgLCBga2VybmAsIGBsaWdhYCwgYHNzMDNgKSBjcmVhdGluZyBhIGNvbnNpc3RlbnQsIHJlYWRhYmxlIHR5cG9ncmFwaGljIHZvaWNlLiBUaGUgcG9zaXRpdmUgbGV0dGVyLXNwYWNpbmcgKDAuMnB44oCTMC40cHggb24gYm9keSB0ZXh0KSBpcyB1bnVzdWFsIGZvciBhIGRhcmsgVUkgYW5kIGdpdmVzIHRoZSB0ZXh0IGFuIGFpcnksIGJyZWF0aGFibGUgcXVhbGl0eSB0aGF0IGNvdW50ZXJiYWxhbmNlcyB0aGUgZGVuc2UsIGRhcmsgc3VyZmFjZXMuIEdlaXN0TW9ubyBhcHBlYXJzIGZvciBjb2RlIGVsZW1lbnRzLCByZWluZm9yY2luZyB0aGUgZGV2ZWxvcGVyLXRvb2wgaWRlbnRpdHkuCgoqKktleSBDaGFyYWN0ZXJpc3RpY3M6KioKLSBOZWFyLWJsYWNrIGJsdWUtdGludGVkIGJhY2tncm91bmQgKGAjMDcwODBhYCkg4oCUIG5vdCBwdXJlIGJsYWNrLCBzdWJ0bHkgYmx1ZS1zaGlmdGVkCi0gbWFjT1MtbmF0aXZlIHNoYWRvdyBzeXN0ZW0gd2l0aCBtdWx0aS1sYXllciBpbnNldCBoaWdobGlnaHRzIHNpbXVsYXRpbmcgcGh5c2ljYWwgZGVwdGgKLSBSYXljYXN0IFJlZCAoYCNGRjYzNjNgKSBhcyBhIHB1bmN0dWF0aW9uIGNvbG9yIOKAlCBoZXJvIHN0cmlwZXMsIG5vdCBwZXJ2YXNpdmUKLSBJbnRlciB3aXRoIHBvc2l0aXZlIGxldHRlci1zcGFjaW5nICgwLjJweCkgZm9yIGFuIGFpcnksIHJlYWRhYmxlIGRhcmstbW9kZSBleHBlcmllbmNlCi0gUmFkaXggVUkgY29tcG9uZW50IHByaW1pdGl2ZXMgcG93ZXJpbmcgdGhlIGludGVyYWN0aW9uIGxheWVyCi0gU3VidGxlIHJnYmEgd2hpdGUgYm9yZGVycyAoMC4wNuKAkzAuMSBvcGFjaXR5KSBmb3IgY29udGFpbm1lbnQgb24gZGFyayBzdXJmYWNlcwotIEtleWJvYXJkIHNob3J0Y3V0IHN0eWxpbmcgd2l0aCBncmFkaWVudCBrZXkgY2FwcyBhbmQgaGVhdnkgc2hhZG93cwoKIyMgMi4gQ29sb3IgUGFsZXR0ZSAmIFJvbGVzCgojIyMgUHJpbWFyeQotICoqTmVhci1CbGFjayBCbHVlKiogKGAjMDcwODBhYCk6IFByaW1hcnkgcGFnZSBiYWNrZ3JvdW5kIOKAlCB0aGUgZm91bmRhdGlvbmFsIHZvaWQgd2l0aCBhIHN1YnRsZSBibHVlLWNvbGQgdW5kZXJ0b25lCi0gKipQdXJlIFdoaXRlKiogKGAjZmZmZmZmYCk6IFByaW1hcnkgaGVhZGluZyB0ZXh0LCBoaWdoLWVtcGhhc2lzIGVsZW1lbnRzCi0gKipSYXljYXN0IFJlZCoqIChgI0ZGNjM2M2AgLyBgaHNsKDAsIDEwMCUsIDY5JSlgKTogQnJhbmQgYWNjZW50IOKAlCBoZXJvIHN0cmlwZXMsIGRhbmdlciBzdGF0ZXMsIGNyaXRpY2FsIGhpZ2hsaWdodHMKCiMjIyBTZWNvbmRhcnkgJiBBY2NlbnQKLSAqKlJheWNhc3QgQmx1ZSoqIChgaHNsKDIwMiwgMTAwJSwgNjclKWAgLyB+YCM1NWIzZmZgKTogSW50ZXJhY3RpdmUgYWNjZW50IOKAlCBsaW5rcywgZm9jdXMgc3RhdGVzLCBzZWxlY3RlZCBpdGVtcwotICoqUmF5Y2FzdCBHcmVlbioqIChgaHNsKDE1MSwgNTklLCA1OSUpYCAvIH5gIzVmYzk5MmApOiBTdWNjZXNzIHN0YXRlcywgcG9zaXRpdmUgaW5kaWNhdG9ycwotICoqUmF5Y2FzdCBZZWxsb3cqKiAoYGhzbCg0MywgMTAwJSwgNjAlKWAgLyB+YCNmZmJjMzNgKTogV2FybmluZyBhY2NlbnRzLCBoaWdobGlnaHRzCi0gKipCbHVlIFRyYW5zcGFyZW50KiogKGBoc2xhKDIwMiwgMTAwJSwgNjclLCAwLjE1KWApOiBCbHVlIHRpbnQgb3ZlcmxheSBmb3IgaW50ZXJhY3RpdmUgc3VyZmFjZXMKLSAqKlJlZCBUcmFuc3BhcmVudCoqIChgaHNsYSgwLCAxMDAlLCA2OSUsIDAuMTUpYCk6IFJlZCB0aW50IG92ZXJsYXkgZm9yIGRhbmdlci9lcnJvciBzdXJmYWNlcwoKIyMjIFN1cmZhY2UgJiBCYWNrZ3JvdW5kCi0gKipEZWVwIEJhY2tncm91bmQqKiAoYCMwNzA4MGFgKTogUGFnZSBjYW52YXMsIHRoZSBkYXJrZXN0IHN1cmZhY2UKLSAqKlN1cmZhY2UgMTAwKiogKGAjMTAxMTExYCk6IEVsZXZhdGVkIHN1cmZhY2UsIGNhcmQgYmFja2dyb3VuZHMKLSAqKktleSBTdGFydCoqIChgIzEyMTIxMmApOiBLZXlib2FyZCBrZXkgZ3JhZGllbnQgc3RhcnQKLSAqKktleSBFbmQqKiAoYCMwZDBkMGRgKTogS2V5Ym9hcmQga2V5IGdyYWRpZW50IGVuZAotICoqQ2FyZCBTdXJmYWNlKiogKGAjMWIxYzFlYCk6IEJhZGdlIGJhY2tncm91bmRzLCB0YWcgZmlsbHMsIGVsZXZhdGVkIGNvbnRhaW5lcnMKLSAqKkJ1dHRvbiBGb3JlZ3JvdW5kKiogKGAjMTgxOTFhYCk6IERhcmsgc3VyZmFjZSBmb3IgYnV0dG9uIHRleHQgb24gbGlnaHQgYmFja2dyb3VuZHMKCiMjIyBOZXV0cmFscyAmIFRleHQKLSAqKk5lYXIgV2hpdGUqKiAoYCNmOWY5ZjlgIC8gYGhzbCgyNDAsIDExJSwgOTYlKWApOiBQcmltYXJ5IGJvZHkgdGV4dCwgaGlnaC1lbXBoYXNpcyBjb250ZW50Ci0gKipMaWdodCBHcmF5KiogKGAjY2VjZWNlYCAvIGAjY2RjZGNlYCk6IFNlY29uZGFyeSBib2R5IHRleHQsIGRlc2NyaXB0aW9ucwotICoqU2lsdmVyKiogKGAjYzBjMGMwYCk6IFRlcnRpYXJ5IHRleHQsIHN1YmR1ZWQgbGFiZWxzCi0gKipNZWRpdW0gR3JheSoqIChgIzljOWM5ZGApOiBMaW5rIGRlZmF1bHQgY29sb3IsIHNlY29uZGFyeSBuYXZpZ2F0aW9uCi0gKipEaW0gR3JheSoqIChgIzZhNmI2Y2ApOiBEaXNhYmxlZCB0ZXh0LCBsb3ctZW1waGFzaXMgbGFiZWxzCi0gKipEYXJrIEdyYXkqKiAoYCM0MzQzNDVgKTogTXV0ZWQgYm9yZGVycywgaW5hY3RpdmUgbmF2aWdhdGlvbiBsaW5rcwotICoqQm9yZGVyKiogKGBoc2woMTk1LCA1JSwgMTUlKWAgLyB+YCMyNTI4MjlgKTogU3RhbmRhcmQgYm9yZGVyIGNvbG9yIGZvciBjYXJkcyBhbmQgZGl2aWRlcnMKLSAqKkRhcmsgQm9yZGVyKiogKGAjMmYzMDMxYCk6IFNlcGFyYXRvciBsaW5lcywgdGFibGUgYm9yZGVycwoKIyMjIFNlbWFudGljICYgQWNjZW50Ci0gKipFcnJvciBSZWQqKiAoYGhzbCgwLCAxMDAlLCA2OSUpYCk6IEVycm9yIHN0YXRlcywgZGVzdHJ1Y3RpdmUgYWN0aW9ucwotICoqU3VjY2VzcyBHcmVlbioqIChgaHNsKDE1MSwgNTklLCA1OSUpYCk6IFN1Y2Nlc3MgY29uZmlybWF0aW9ucywgcG9zaXRpdmUgc3RhdGVzCi0gKipXYXJuaW5nIFllbGxvdyoqIChgaHNsKDQzLCAxMDAlLCA2MCUpYCk6IFdhcm5pbmdzLCBhdHRlbnRpb24tbmVlZGVkIHN0YXRlcwotICoqSW5mbyBCbHVlKiogKGBoc2woMjAyLCAxMDAlLCA2NyUpYCk6IEluZm9ybWF0aW9uYWwgaGlnaGxpZ2h0cywgbGlua3MKCiMjIyBHcmFkaWVudCBTeXN0ZW0KLSAqKktleWJvYXJkIEtleSBHcmFkaWVudCoqOiBMaW5lYXIgZ3JhZGllbnQgZnJvbSBgIzEyMTIxMmAgKHRvcCkgdG8gYCMwZDBkMGRgIChib3R0b20pIOKAlCBzaW11bGF0ZXMgcGh5c2ljYWwga2V5IGRlcHRoCi0gKipXYXJtIEdsb3cqKjogYHJnYmEoMjE1LCAyMDEsIDE3NSwgMC4wNSlgIHJhZGlhbCBzcHJlYWQg4oCUIHN1YnRsZSB3YXJtIGFtYmllbnQgZ2xvdyBiZWhpbmQgZmVhdHVyZWQgZWxlbWVudHMKCiMjIDMuIFR5cG9ncmFwaHkgUnVsZXMKCiMjIyBGb250IEZhbWlseQotICoqUHJpbWFyeSoqOiBgSW50ZXJgIOKAlCBodW1hbmlzdCBzYW5zLXNlcmlmLCB1c2VkIGV2ZXJ5d2hlcmUuIEZhbGxiYWNrczogYEludGVyIEZhbGxiYWNrYCwgc3lzdGVtIHNhbnMtc2VyaWYKLSAqKlN5c3RlbSoqOiBgU0YgUHJvIFRleHRgIOKAlCBBcHBsZSBzeXN0ZW0gZm9udCBmb3Igc2VsZWN0IG1hY09TLW5hdGl2ZSBVSSBlbGVtZW50cy4gRmFsbGJhY2tzOiBgU0YgUHJvIEljb25zYCwgYEludGVyYCwgYEludGVyIEZhbGxiYWNrYAotICoqTW9ub3NwYWNlKio6IGBHZWlzdE1vbm9gIOKAlCBWZXJjZWwncyBtb25vc3BhY2UgZm9udCBmb3IgY29kZSBlbGVtZW50cy4gRmFsbGJhY2tzOiBgdWktbW9ub3NwYWNlYCwgYFNGTW9uby1SZWd1bGFyYCwgYFJvYm90byBNb25vYCwgYE1lbmxvYCwgYE1vbmFjb2AKLSAqKk9wZW5UeXBlIGZlYXR1cmVzKio6IGBjYWx0YCwgYGtlcm5gLCBgbGlnYWAsIGBzczAzYCBlbmFibGVkIGdsb2JhbGx5OyBgc3MwMmAsIGBzczA4YCBvbiBkaXNwbGF5IHRleHQ7IGBsaWdhYCBkaXNhYmxlZCAoYCJsaWdhIiAwYCkgb24gaGVybyBoZWFkaW5ncwoKIyMjIEhpZXJhcmNoeQoKfCBSb2xlIHwgU2l6ZSB8IFdlaWdodCB8IExpbmUgSGVpZ2h0IHwgTGV0dGVyIFNwYWNpbmcgfCBOb3RlcyB8CnwtLS0tLS18LS0tLS0tfC0tLS0tLS0tfC0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tLXwtLS0tLS0tfAp8IERpc3BsYXkgSGVybyB8IDY0cHggfCA2MDAgfCAxLjEwIHwgMHB4IHwgT3BlblR5cGU6IGxpZ2EgMCwgc3MwMiwgc3MwOCB8CnwgU2VjdGlvbiBEaXNwbGF5IHwgNTZweCB8IDQwMCB8IDEuMTcgfCAwLjJweCB8IE9wZW5UeXBlOiBjYWx0LCBrZXJuLCBsaWdhLCBzczAzIHwKfCBTZWN0aW9uIEhlYWRpbmcgfCAyNHB4IHwgNTAwIHwgbm9ybWFsIHwgMC4ycHggfCBPcGVuVHlwZTogY2FsdCwga2VybiwgbGlnYSwgc3MwMyB8CnwgQ2FyZCBIZWFkaW5nIHwgMjJweCB8IDQwMCB8IDEuMTUgfCAwcHggfCBPcGVuVHlwZTogY2FsdCwga2VybiwgbGlnYSwgc3MwMyB8CnwgU3ViLWhlYWRpbmcgfCAyMHB4IHwgNTAwIHwgMS42MCB8IDAuMnB4IHwgUmVsYXhlZCBsaW5lLWhlaWdodCBmb3IgcmVhZGFiaWxpdHkgfAp8IEJvZHkgTGFyZ2UgfCAxOHB4IHwgNDAwIHwgMS4xNSB8IDAuMnB4IHwgT3BlblR5cGU6IGNhbHQsIGtlcm4sIGxpZ2EsIHNzMDMgfAp8IEJvZHkgfCAxNnB4IHwgNTAwIHwgMS42MCB8IDAuMnB4IHwgUHJpbWFyeSBib2R5IHRleHQsIHJlbGF4ZWQgcmh5dGhtIHwKfCBCb2R5IFRpZ2h0IHwgMTZweCB8IDQwMCB8IDEuMTUgfCAwLjFweCB8IFVJIGxhYmVscywgY29tcGFjdCBjb250ZXh0cyB8CnwgQnV0dG9uIHwgMTZweCB8IDYwMCB8IDEuMTUgfCAwLjNweCB8IFNlbWlib2xkLCBzbGlnaHRseSB3aWRlciB0cmFja2luZyB8CnwgTmF2IExpbmsgfCAxNnB4IHwgNTAwIHwgMS40MCB8IDAuM3B4IHwgTGlua3MgaW4gbmF2aWdhdGlvbiB8CnwgQ2FwdGlvbiB8IDE0cHggfCA1MDAgfCAxLjE0IHwgMC4ycHggfCBTbWFsbCBsYWJlbHMsIG1ldGFkYXRhIHwKfCBDYXB0aW9uIEJvbGQgfCAxNHB4IHwgNjAwIHwgMS40MCB8IDBweCB8IEVtcGhhc2l6ZWQgY2FwdGlvbnMgfAp8IFNtYWxsIHwgMTJweCB8IDYwMCB8IDEuMzMgfCAwcHggfCBCYWRnZXMsIHRhZ3MsIG1pY3JvLWxhYmVscyB8CnwgU21hbGwgTGluayB8IDEycHggfCA0MDAgfCAxLjUwIHwgMC40cHggfCBGb290ZXIgbGlua3MsIGZpbmUgcHJpbnQgfAp8IENvZGUgfCAxNHB4IChHZWlzdE1vbm8pIHwgNTAwIHwgMS42MCB8IDAuM3B4IHwgQ29kZSBibG9ja3MsIHRlY2huaWNhbCBjb250ZW50IHwKfCBDb2RlIFNtYWxsIHwgMTJweCAoR2Vpc3RNb25vKSB8IDQwMCB8IDEuNjAgfCAwLjJweCB8IElubGluZSBjb2RlLCB0ZXJtaW5hbCBvdXRwdXQgfAoKIyMjIFByaW5jaXBsZXMKLSAqKlBvc2l0aXZlIHRyYWNraW5nIG9uIGRhcmsqKjogVW5saWtlIG1vc3QgZGFyayBVSXMgdGhhdCB1c2UgdGlnaHQgb3IgbmV1dHJhbCBsZXR0ZXItc3BhY2luZywgUmF5Y2FzdCBhcHBsaWVzICswLjJweCB0byArMC40cHgg4oCUIGNyZWF0aW5nIGFuIGFpcnksIHJlYWRhYmxlIGZlZWwgdGhhdCBjb21wZW5zYXRlcyBmb3IgdGhlIGRhcmsgYmFja2dyb3VuZAotICoqV2VpZ2h0IDUwMCBhcyBiYXNlbGluZSoqOiBNb3N0IGJvZHkgdGV4dCB1c2VzIG1lZGl1bSB3ZWlnaHQgKDUwMCksIG5vdCByZWd1bGFyICg0MDApIOKAlCBzdWJ0bGUgZXh0cmEgaGVmdCBpbXByb3ZlcyBsZWdpYmlsaXR5IG9uIGRhcmsgc3VyZmFjZXMKLSAqKkRpc3BsYXkgcmVzdHJhaW50Kio6IEhlcm8gdGV4dCBhdCA2NHB4LzYwMCBpcyBjb25maWRlbnQgYnV0IG5vdCBvdmVyc2l6ZWQg4oCUIFJheWNhc3QgYXZvaWRzIHR5cG9ncmFwaGljIHNwZWN0YWNsZSBpbiBmYXZvciBvZiBmdW5jdGlvbmFsIGVsZWdhbmNlCi0gKipPcGVuVHlwZSBldmVyeXdoZXJlKio6IGBzczAzYCAoc3R5bGlzdGljIHNldCAzKSBpcyBlbmFibGVkIGdsb2JhbGx5IGFjcm9zcyBJbnRlciwgZ2l2aW5nIHRoZSB0eXBlZmFjZSBhIHNsaWdodGx5IG1vcmUgZ2VvbWV0cmljLCB0b29sLWxpa2UgcXVhbGl0eQoKIyMgNC4gQ29tcG9uZW50IFN0eWxpbmdzCgojIyMgQnV0dG9ucwotICoqUHJpbWFyeSBQaWxsKio6IFRyYW5zcGFyZW50IGJhY2tncm91bmQsIHdoaXRlIHRleHQsIHBpbGwgc2hhcGUgKDg2cHggcmFkaXVzKSwgbXVsdGktbGF5ZXIgaW5zZXQgc2hhZG93IChgcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjEpIDBweCAxcHggMHB4IDBweCBpbnNldGApLiBIb3Zlcjogb3BhY2l0eSAwLjYKLSAqKlNlY29uZGFyeSBCdXR0b24qKjogVHJhbnNwYXJlbnQgYmFja2dyb3VuZCwgd2hpdGUgdGV4dCwgNnB4IHJhZGl1cywgYDFweCBzb2xpZCByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMSlgIGJvcmRlciwgc3VidGxlIGRyb3Agc2hhZG93IChgcmdiYSgwLCAwLCAwLCAwLjAzKSAwcHggN3B4IDNweGApLiBIb3Zlcjogb3BhY2l0eSAwLjYKLSAqKkdob3N0IEJ1dHRvbioqOiBObyBiYWNrZ3JvdW5kIG9yIGJvcmRlciwgZ3JheSB0ZXh0IChgIzZhNmI2Y2ApLCA4NnB4IHJhZGl1cywgc2FtZSBpbnNldCBzaGFkb3cuIEhvdmVyOiBvcGFjaXR5IDAuNiwgdGV4dCBicmlnaHRlbnMgdG8gd2hpdGUKLSAqKkNUQSAoRG93bmxvYWQpKio6IFNlbWktdHJhbnNwYXJlbnQgd2hpdGUgYmFja2dyb3VuZCAoYGhzbGEoMCwgMCUsIDEwMCUsIDAuODE1KWApLCBkYXJrIHRleHQgKGAjMTgxOTFhYCksIHBpbGwgc2hhcGUuIEhvdmVyOiBmdWxsIHdoaXRlIGJhY2tncm91bmQgKGBoc2woMCwgMCUsIDEwMCUpYCkKLSAqKlRyYW5zaXRpb24qKjogQWxsIGJ1dHRvbnMgdXNlIG9wYWNpdHkgdHJhbnNpdGlvbiBmb3IgaG92ZXIgcmF0aGVyIHRoYW4gYmFja2dyb3VuZC1jb2xvciBjaGFuZ2Ug4oCUIGEgc2lnbmF0dXJlIFJheWNhc3QgaW50ZXJhY3Rpb24gcGF0dGVybgoKIyMjIENhcmRzICYgQ29udGFpbmVycwotICoqU3RhbmRhcmQgQ2FyZCoqOiBgIzEwMTExMWAgc3VyZmFjZSwgYDFweCBzb2xpZCByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDYpYCBib3JkZXIsIDEycHjigJMxNnB4IGJvcmRlci1yYWRpdXMKLSAqKkVsZXZhdGVkIENhcmQqKjogUmluZyBzaGFkb3cgYHJnYigyNywgMjgsIDMwKSAwcHggMHB4IDBweCAxcHhgIG91dGVyICsgYHJnYig3LCA4LCAxMCkgMHB4IDBweCAwcHggMXB4IGluc2V0YCBpbm5lciDigJQgY3JlYXRlcyBhIGRvdWJsZS1yaW5nIGNvbnRhaW5tZW50Ci0gKipGZWF0dXJlIENhcmQqKjogMTZweOKAkzIwcHggYm9yZGVyLXJhZGl1cywgc3VidGxlIHdhcm0gZ2xvdyAoYHJnYmEoMjE1LCAyMDEsIDE3NSwgMC4wNSkgMHB4IDBweCAyMHB4IDVweGApIGJlaGluZCBoZXJvIGVsZW1lbnRzCi0gKipIb3ZlcioqOiBDYXJkcyBicmlnaHRlbiBzbGlnaHRseSB2aWEgYm9yZGVyIG9wYWNpdHkgaW5jcmVhc2Ugb3Igc3VidGxlIHNoYWRvdyBlbmhhbmNlbWVudAoKIyMjIElucHV0cyAmIEZvcm1zCi0gRGFyayBpbnB1dCBmaWVsZHMgd2l0aCBgIzA3MDgwYWAgYmFja2dyb3VuZCwgYDFweCBzb2xpZCByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDgpYCBib3JkZXIsIDhweCBib3JkZXItcmFkaXVzCi0gRm9jdXMgc3RhdGU6IEJvcmRlciBicmlnaHRlbnMsIGJsdWUgZ2xvdyAoYGhzbGEoMjAyLCAxMDAlLCA2NyUsIDAuMTUpYCkgcmluZyBhcHBlYXJzCi0gVGV4dDogYCNmOWY5ZjlgIGlucHV0IGNvbG9yLCBgIzZhNmI2Y2AgcGxhY2Vob2xkZXIKLSBMYWJlbHM6IGAjOWM5YzlkYCBhdCAxNHB4IHdlaWdodCA1MDAKCiMjIyBOYXZpZ2F0aW9uCi0gKipUb3AgbmF2Kio6IERhcmsgYmFja2dyb3VuZCBibGVuZGluZyB3aXRoIHBhZ2UsIHdoaXRlIHRleHQgbGlua3MgYXQgMTZweCB3ZWlnaHQgNTAwCi0gKipOYXYgbGlua3MqKjogR3JheSB0ZXh0IChgIzljOWM5ZGApIOKGkiB3aGl0ZSBvbiBob3ZlciwgdW5kZXJsaW5lIGRlY29yYXRpb24gb24gaG92ZXIKLSAqKkNUQSBidXR0b24qKjogU2VtaS10cmFuc3BhcmVudCB3aGl0ZSBwaWxsIGF0IG5hdiBlbmQKLSAqKk1vYmlsZSoqOiBDb2xsYXBzZXMgdG8gaGFtYnVyZ2VyLCBtYWludGFpbnMgZGFyayB0aGVtZQotICoqU3RpY2t5Kio6IE5hdiBmaXhlZCBhdCB0b3Agd2l0aCBzdWJ0bGUgYm9yZGVyIHNlcGFyYXRvcgoKIyMjIEltYWdlIFRyZWF0bWVudAotICoqUHJvZHVjdCBzY3JlZW5zaG90cyoqOiBtYWNPUyB3aW5kb3cgY2hyb21lIHN0eWxlIOKAlCByb3VuZGVkIGNvcm5lcnMgKDEycHgpLCBkZWVwIHNoYWRvd3Mgc2ltdWxhdGluZyBmbG9hdGluZyB3aW5kb3dzCi0gKipGdWxsLWJsZWVkIHNlY3Rpb25zKio6IERhcmsgc2NyZWVuc2hvdHMgYmxlbmQgc2VhbWxlc3NseSBpbnRvIHRoZSBkYXJrIGJhY2tncm91bmQKLSAqKkhlcm8gaWxsdXN0cmF0aW9uKio6IERpYWdvbmFsIHN0cmlwZSBwYXR0ZXJuIGluIFJheWNhc3QgUmVkIOKAlCBhYnN0cmFjdCwgZ2VvbWV0cmljLCBicmFuZC1kZWZpbmluZwotICoqQXBwIFVJIGVtYmVkcyoqOiBTaG93aW5nIGFjdHVhbCBSYXljYXN0IGNvbW1hbmQgcGFsZXR0ZSBhbmQgZXh0ZW5zaW9ucyDigJQgcHJvZHVjdCBhcyBjb250ZW50CgojIyMgS2V5Ym9hcmQgU2hvcnRjdXQgS2V5cwotICoqS2V5IGNhcCBzdHlsaW5nKio6IEdyYWRpZW50IGJhY2tncm91bmQgKGAjMTIxMjEyYCDihpIgYCMwZDBkMGRgKSwgaGVhdnkgbXVsdGktbGF5ZXIgc2hhZG93IChgcmdiYSgwLCAwLCAwLCAwLjQpIDBweCAxLjVweCAwLjVweCAyLjVweGAgKyBpbnNldCBzaGFkb3dzKSwgY3JlYXRpbmcgcmVhbGlzdGljIHBoeXNpY2FsIGtleSBhcHBlYXJhbmNlCi0gQm9yZGVyLXJhZGl1czogNHB44oCTNnB4IGZvciBpbmRpdmlkdWFsIGtleXMKCiMjIyBCYWRnZXMgJiBUYWdzCi0gKipOZXV0cmFsIGJhZGdlKio6IGAjMWIxYzFlYCBiYWNrZ3JvdW5kLCB3aGl0ZSB0ZXh0LCA2cHggcmFkaXVzLCAxNHB4IGZvbnQgYXQgd2VpZ2h0IDUwMCwgYDBweCA2cHhgIHBhZGRpbmcKLSBDb21wYWN0LCBwaWxsLWxpa2UgdHJlYXRtZW50IGZvciBjYXRlZ29yaXphdGlvbgoKIyMgNS4gTGF5b3V0IFByaW5jaXBsZXMKCiMjIyBTcGFjaW5nIFN5c3RlbQotICoqQmFzZSB1bml0Kio6IDhweAotICoqU2NhbGUqKjogMXB4LCAycHgsIDNweCwgNHB4LCA4cHgsIDEwcHgsIDEycHgsIDE2cHgsIDIwcHgsIDI0cHgsIDMycHgsIDQwcHgKLSAqKlNlY3Rpb24gcGFkZGluZyoqOiA4MHB44oCTMTIwcHggdmVydGljYWwgYmV0d2VlbiBtYWpvciBzZWN0aW9ucwotICoqQ2FyZCBwYWRkaW5nKio6IDE2cHjigJMzMnB4IGludGVybmFsIHNwYWNpbmcKLSAqKkNvbXBvbmVudCBnYXBzKio6IDhweOKAkzE2cHggYmV0d2VlbiByZWxhdGVkIGVsZW1lbnRzCgojIyMgR3JpZCAmIENvbnRhaW5lcgotICoqTWF4IHdpZHRoKio6IH4xMjAwcHggY29udGFpbmVyIChicmVha3BvaW50IGF0IDEyMDRweCksIGNlbnRlcmVkCi0gKipDb2x1bW4gcGF0dGVybnMqKjogU2luZ2xlLWNvbHVtbiBoZXJvLCAy4oCTMyBjb2x1bW4gZmVhdHVyZSBncmlkcywgZnVsbC13aWR0aCBzaG93Y2FzZSBzZWN0aW9ucwotICoqQXBwIHNob3djYXNlKio6IFByb2R1Y3QgVUkgcHJlc2VudGVkIGluIGNlbnRlcmVkIHdpbmRvdyBmcmFtZXMKCiMjIyBXaGl0ZXNwYWNlIFBoaWxvc29waHkKLSAqKkRyYW1hdGljIG5lZ2F0aXZlIHNwYWNlKio6IFNlY3Rpb25zIGZsb2F0IGluIHZhc3QgZGFyayB2b2lkLCBjcmVhdGluZyBjaW5lbWF0aWMgcGFjaW5nIGJldHdlZW4gZmVhdHVyZXMKLSAqKkRlbnNlIHByb2R1Y3QsIHNwYXJzZSBtYXJrZXRpbmcqKjogVGhlIHByb2R1Y3QgVUkgc2NyZWVuc2hvdHMgYXJlIGluZm9ybWF0aW9uLWRlbnNlLCBidXQgdGhlIHN1cnJvdW5kaW5nIG1hcmtldGluZyBjb3B5IHVzZXMgbWluaW1hbCB0ZXh0IHdpdGggZ2VuZXJvdXMgc3BhY2luZwotICoqVmVydGljYWwgcmh5dGhtKio6IENvbnNpc3RlbnQgMjRweOKAkzMycHggZ2FwcyBiZXR3ZWVuIGVsZW1lbnRzIHdpdGhpbiBzZWN0aW9ucwoKIyMjIEJvcmRlciBSYWRpdXMgU2NhbGUKLSAqKjJweOKAkzNweCoqOiBNaWNyby1lbGVtZW50cywgY29kZSBzcGFucywgdGlueSBpbmRpY2F0b3JzCi0gKio0cHjigJM1cHgqKjogS2V5Ym9hcmQga2V5cywgc21hbGwgaW50ZXJhY3RpdmUgZWxlbWVudHMKLSAqKjZweCoqOiBCdXR0b25zLCBiYWRnZXMsIHRhZ3Mg4oCUIHRoZSB3b3JraG9yc2UgcmFkaXVzCi0gKio4cHgqKjogSW5wdXQgZmllbGRzLCBpbmxpbmUgY29tcG9uZW50cwotICoqOXB44oCTMTFweCoqOiBJbWFnZXMsIG1lZGl1bSBjb250YWluZXJzCi0gKioxMnB4Kio6IFN0YW5kYXJkIGNhcmRzLCBwcm9kdWN0IHNjcmVlbnNob3RzCi0gKioxNnB4Kio6IExhcmdlIGNhcmRzLCBmZWF0dXJlIHNlY3Rpb25zCi0gKioyMHB4Kio6IEhlcm8gY2FyZHMsIHByb21pbmVudCBjb250YWluZXJzCi0gKio4NnB4KyoqOiBQaWxsIGJ1dHRvbnMsIG5hdiBDVEFzIOKAlCBmdWxsIHBpbGwgc2hhcGUKCiMjIDYuIERlcHRoICYgRWxldmF0aW9uCgp8IExldmVsIHwgVHJlYXRtZW50IHwgVXNlIHwKfC0tLS0tLS18LS0tLS0tLS0tLS18LS0tLS18CnwgTGV2ZWwgMCAoVm9pZCkgfCBObyBzaGFkb3csIGAjMDcwODBhYCBzdXJmYWNlIHwgUGFnZSBiYWNrZ3JvdW5kIHwKfCBMZXZlbCAxIChTdWJ0bGUpIHwgYHJnYmEoMCwgMCwgMCwgMC4yOCkgMHB4IDEuMTg5cHggMi4zNzdweGAgfCBNaW5pbWFsIGxpZnQsIGlubGluZSBlbGVtZW50cyB8CnwgTGV2ZWwgMiAoUmluZykgfCBgcmdiKDI3LCAyOCwgMzApIDBweCAwcHggMHB4IDFweGAgb3V0ZXIgKyBgcmdiKDcsIDgsIDEwKSAwcHggMHB4IDBweCAxcHggaW5zZXRgIGlubmVyIHwgQ2FyZCBjb250YWlubWVudCwgZG91YmxlLXJpbmcgdGVjaG5pcXVlIHwKfCBMZXZlbCAzIChCdXR0b24pIHwgYHJnYmEoMjU1LCAyNTUsIDI1NSwgMC4wNSkgMHB4IDFweCAwcHggMHB4IGluc2V0YCArIGByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMjUpIDBweCAwcHggMHB4IDFweGAgKyBgcmdiYSgwLCAwLCAwLCAwLjIpIDBweCAtMXB4IDBweCAwcHggaW5zZXRgIHwgbWFjT1MtbmF0aXZlIGJ1dHRvbiBwcmVzcyDigJQgd2hpdGUgaGlnaGxpZ2h0IHRvcCwgZGFyayBpbnNldCBib3R0b20gfAp8IExldmVsIDQgKEtleSkgfCA1LWxheWVyIHNoYWRvdyBzdGFjayB3aXRoIGluc2V0IHByZXNzIGVmZmVjdHMgfCBLZXlib2FyZCBzaG9ydGN1dCBrZXkgY2FwcyDigJQgcGh5c2ljYWwgM0QgYXBwZWFyYW5jZSB8CnwgTGV2ZWwgNSAoRmxvYXRpbmcpIHwgYHJnYmEoMCwgMCwgMCwgMC41KSAwcHggMHB4IDBweCAycHhgICsgYHJnYmEoMjU1LCAyNTUsIDI1NSwgMC4xOSkgMHB4IDBweCAxNHB4YCArIGluc2V0cyB8IENvbW1hbmQgcGFsZXR0ZSwgZmxvYXRpbmcgcGFuZWxzIOKAlCBoZWF2eSBkZXB0aCB3aXRoIGdsb3cgfAoKIyMjIFNoYWRvdyBQaGlsb3NvcGh5ClJheWNhc3QncyBzaGFkb3cgc3lzdGVtIGlzIHRoZSBtb3N0IG1hY09TLW5hdGl2ZSBvbiB0aGUgd2ViLiBNdWx0aS1sYXllciBzaGFkb3dzIGNvbWJpbmU6Ci0gKipPdXRlciByaW5ncyoqIGZvciBjb250YWlubWVudCAocmVwbGFjaW5nIHRyYWRpdGlvbmFsIGJvcmRlcnMpCi0gKipJbnNldCB0b3AgaGlnaGxpZ2h0cyoqIChgcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjA14oCTMC4yNSlgKSBzaW11bGF0aW5nIGxpZ2h0IHNvdXJjZSBmcm9tIGFib3ZlCi0gKipJbnNldCBib3R0b20gZGFya3MqKiAoYHJnYmEoMCwgMCwgMCwgMC4yKWApIHNpbXVsYXRpbmcgc2hhZG93IHVuZGVybmVhdGgKLSBUaGUgZWZmZWN0IGlzIHBoeXNpY2FsOiBlbGVtZW50cyBmZWVsIGxpa2UgZ2xhc3Mgb3IgYnJ1c2hlZCBtZXRhbCwgbm90IGZsYXQgcmVjdGFuZ2xlcwoKIyMjIERlY29yYXRpdmUgRGVwdGgKLSAqKldhcm0gZ2xvdyoqOiBgcmdiYSgyMTUsIDIwMSwgMTc1LCAwLjA1KSAwcHggMHB4IDIwcHggNXB4YCBiZWhpbmQgZmVhdHVyZWQgZWxlbWVudHMg4oCUIGEgc3VidGxlIHdhcm0gYXVyYSBvbiB0aGUgY29sZCBkYXJrIGNhbnZhcwotICoqQmx1ZSBpbmZvIGdsb3cqKjogYHJnYmEoMCwgMTUzLCAyNTUsIDAuMTUpYCBmb3IgaW50ZXJhY3RpdmUgc3RhdGUgZW1waGFzaXMKLSAqKlJlZCBkYW5nZXIgZ2xvdyoqOiBgcmdiYSgyNTUsIDk5LCA5OSwgMC4xNSlgIGZvciBlcnJvci9kZXN0cnVjdGl2ZSBzdGF0ZSBlbXBoYXNpcwoKIyMgNy4gRG8ncyBhbmQgRG9uJ3RzCgojIyMgRG8KLSBVc2UgYCMwNzA4MGFgIChub3QgcHVyZSBibGFjaykgYXMgdGhlIGJhY2tncm91bmQg4oCUIHRoZSBibHVlLWNvbGQgdGludCBpcyBlc3NlbnRpYWwgdG8gdGhlIFJheWNhc3QgZmVlbAotIEFwcGx5IHBvc2l0aXZlIGxldHRlci1zcGFjaW5nICgrMC4ycHgpIG9uIGJvZHkgdGV4dCDigJQgdGhpcyBpcyBkZWxpYmVyYXRlbHkgZGlmZmVyZW50IGZyb20gbW9zdCBkYXJrIFVJcwotIFVzZSBtdWx0aS1sYXllciBzaGFkb3dzIHdpdGggaW5zZXQgaGlnaGxpZ2h0cyBmb3IgaW50ZXJhY3RpdmUgZWxlbWVudHMg4oCUIHRoZSBtYWNPUy1uYXRpdmUgZGVwdGggaXMgc2lnbmF0dXJlCi0gS2VlcCBSYXljYXN0IFJlZCAoYCNGRjYzNjNgKSBhcyBwdW5jdHVhdGlvbiwgbm90IHBlcnZhc2l2ZSDigJQgcmVzZXJ2ZSBpdCBmb3IgaGVybyBtb21lbnRzIGFuZCBlcnJvciBzdGF0ZXMKLSBVc2UgYHJnYmEoMjU1LCAyNTUsIDI1NSwgMC4wNilgIGJvcmRlcnMgZm9yIGNhcmQgY29udGFpbm1lbnQg4oCUIGJhcmVseSB2aXNpYmxlLCBzdHJ1Y3R1cmFsbHkgZXNzZW50aWFsCi0gQXBwbHkgd2VpZ2h0IDUwMCBhcyB0aGUgYm9keSB0ZXh0IGJhc2VsaW5lIOKAlCBtZWRpdW0gd2VpZ2h0IGltcHJvdmVzIGRhcmstbW9kZSBsZWdpYmlsaXR5Ci0gVXNlIHBpbGwgc2hhcGVzICg4NnB4KyByYWRpdXMpIGZvciBwcmltYXJ5IENUQXMsIHJlY3Rhbmd1bGFyIHNoYXBlcyAoNnB44oCTOHB4KSBmb3Igc2Vjb25kYXJ5IGFjdGlvbnMKLSBFbmFibGUgT3BlblR5cGUgZmVhdHVyZXMgYGNhbHRgLCBga2VybmAsIGBsaWdhYCwgYHNzMDNgIG9uIGFsbCBJbnRlciB0ZXh0Ci0gVXNlIG9wYWNpdHkgdHJhbnNpdGlvbnMgKGhvdmVyOiBvcGFjaXR5IDAuNikgZm9yIGJ1dHRvbiBpbnRlcmFjdGlvbnMsIG5vdCBjb2xvciBjaGFuZ2VzCgojIyMgRG9uJ3QKLSBVc2UgcHVyZSBibGFjayAoYCMwMDAwMDBgKSBhcyB0aGUgYmFja2dyb3VuZCDigJQgdGhlIGJsdWUgdGludCBkaWZmZXJlbnRpYXRlcyBSYXljYXN0IGZyb20gZ2VuZXJpYyBkYXJrIHRoZW1lcwotIEFwcGx5IG5lZ2F0aXZlIGxldHRlci1zcGFjaW5nIG9uIGJvZHkgdGV4dCDigJQgUmF5Y2FzdCBkZWxpYmVyYXRlbHkgdXNlcyBwb3NpdGl2ZSBzcGFjaW5nIGZvciByZWFkYWJpbGl0eQotIFVzZSBSYXljYXN0IEJsdWUgYXMgdGhlIHByaW1hcnkgYWNjZW50IGZvciBldmVyeXRoaW5nIOKAlCBibHVlIGlzIGZvciBpbnRlcmFjdGl2ZS9pbmZvLCByZWQgaXMgdGhlIGJyYW5kIGNvbG9yCi0gQ3JlYXRlIHNpbmdsZS1sYXllciBmbGF0IHNoYWRvd3Mg4oCUIHRoZSBtdWx0aS1sYXllciBpbnNldCBzeXN0ZW0gaXMgY29yZSB0byB0aGUgbWFjT1MtbmF0aXZlIGFlc3RoZXRpYwotIFVzZSByZWd1bGFyIHdlaWdodCAoNDAwKSBmb3IgYm9keSB0ZXh0IHdoZW4gNTAwIGlzIGF2YWlsYWJsZSDigJQgdGhlIGV4dHJhIHdlaWdodCBwcmV2ZW50cyBkYXJrLW1vZGUgdGV4dCBmcm9tIGZlZWxpbmcgdGhpbgotIE1peCB3YXJtIGFuZCBjb29sIGJvcmRlcnMg4oCUIHN0aWNrIHRvIHRoZSBjb29sIGdyYXkgKGBoc2woMTk1LCA1JSwgMTUlKWApIGJvcmRlciBwYWxldHRlCi0gQXBwbHkgaGVhdnkgZHJvcCBzaGFkb3dzIHdpdGhvdXQgaW5zZXQgY29tcGFuaW9ucyDigJQgc2hhZG93cyBhbHdheXMgY29tZSBpbiBwYWlycyAob3V0ZXIgKyBpbnNldCkKLSBVc2UgZGVjb3JhdGl2ZSBlbGVtZW50cywgZ3JhZGllbnRzLCBvciBjb2xvcmZ1bCBiYWNrZ3JvdW5kcyDigJQgdGhlIGRhcmsgdm9pZCBpcyB0aGUgc3RhZ2UsIGNvbnRlbnQgaXMgdGhlIHBlcmZvcm1lcgoKIyMgOC4gUmVzcG9uc2l2ZSBCZWhhdmlvcgoKIyMjIEJyZWFrcG9pbnRzCnwgTmFtZSB8IFdpZHRoIHwgS2V5IENoYW5nZXMgfAp8LS0tLS0tfC0tLS0tLS18LS0tLS0tLS0tLS0tLXwKfCBNb2JpbGUgfCA8NjAwcHggfCBTaW5nbGUgY29sdW1uLCBzdGFja2VkIGNhcmRzLCBoYW1idXJnZXIgbmF2LCBoZXJvIHRleHQgcmVkdWNlcyB0byB+NDBweCB8CnwgU21hbGwgVGFibGV0IHwgNjAwcHjigJM3NjhweCB8IDItY29sdW1uIGdyaWQgYmVnaW5zLCBuYXYgcGFydGlhbGx5IHZpc2libGUgfAp8IFRhYmxldCB8IDc2OHB44oCTMTAyNHB4IHwgMuKAkzMgY29sdW1uIGZlYXR1cmVzLCBuYXYgZXhwYW5kaW5nLCBzY3JlZW5zaG90cyBzY2FsZSB8CnwgRGVza3RvcCB8IDEwMjRweOKAkzEyMDBweCB8IEZ1bGwgbGF5b3V0LCBhbGwgbmF2IGxpbmtzIHZpc2libGUsIDY0cHggaGVybyBkaXNwbGF5IHwKfCBMYXJnZSBEZXNrdG9wIHwgPjEyMDBweCB8IE1heC13aWR0aCBjb250YWluZXIgY2VudGVyZWQsIGdlbmVyb3VzIHNpZGUgbWFyZ2lucyB8CgojIyMgVG91Y2ggVGFyZ2V0cwotIFBpbGwgYnV0dG9uczogODZweCByYWRpdXMgd2l0aCAyMHB4IHBhZGRpbmcg4oCUIHdlbGwgYWJvdmUgNDRweCBtaW5pbXVtCi0gU2Vjb25kYXJ5IGJ1dHRvbnM6IDhweCBwYWRkaW5nIG1pbmltdW0sIGJ1dCBib3JkZXIgcHJvdmlkZXMgdmlzdWFsIHRhcmdldCBleHBhbnNpb24KLSBOYXYgbGlua3M6IDE2cHggdGV4dCB3aXRoIHN1cnJvdW5kaW5nIHBhZGRpbmcgZm9yIGFjY2Vzc2libGUgdG91Y2ggdGFyZ2V0cwoKIyMjIENvbGxhcHNpbmcgU3RyYXRlZ3kKLSAqKk5hdmlnYXRpb24qKjogRnVsbCBob3Jpem9udGFsIG5hdiDihpIgaGFtYnVyZ2VyIGF0IG1vYmlsZSB3aXRoIHNsaWRlLW91dCBtZW51Ci0gKipIZXJvKio6IDY0cHggZGlzcGxheSDihpIgNDhweCDihpIgMzZweCBhY3Jvc3MgYnJlYWtwb2ludHMKLSAqKkZlYXR1cmUgZ3JpZHMqKjogMy1jb2x1bW4g4oaSIDItY29sdW1uIOKGkiBzaW5nbGUtY29sdW1uIHN0YWNrCi0gKipQcm9kdWN0IHNjcmVlbnNob3RzKio6IFNjYWxlIHdpdGhpbiBjb250YWluZXJzLCBtYWludGFpbmluZyBtYWNPUyB3aW5kb3cgY2hyb21lIHByb3BvcnRpb25zCi0gKipLZXlib2FyZCBzaG9ydGN1dCBkaXNwbGF5cyoqOiBTaW1wbGlmeSBvciBoaWRlIG9uIG1vYmlsZSB3aGVyZSBrZXlib2FyZCBzaG9ydGN1dHMgYXJlIGlycmVsZXZhbnQKCiMjIyBJbWFnZSBCZWhhdmlvcgotIFByb2R1Y3Qgc2NyZWVuc2hvdHMgc2NhbGUgcmVzcG9uc2l2ZWx5IHdpdGhpbiBmaXhlZC1yYXRpbyBjb250YWluZXJzCi0gSGVybyBkaWFnb25hbCBzdHJpcGUgcGF0dGVybiBzY2FsZXMgcHJvcG9ydGlvbmFsbHkKLSBtYWNPUyB3aW5kb3cgY2hyb21lIHJvdW5kZWQgY29ybmVycyBtYWludGFpbmVkIGF0IGFsbCBzaXplcwotIE5vIGxhenktbG9hZGluZyBhcnRpZmFjdHMg4oCUIGltYWdlcyBhcmUgY3JpdGljYWwgdG8gdGhlIHByb2R1Y3QgbmFycmF0aXZlCgojIyA5LiBBZ2VudCBQcm9tcHQgR3VpZGUKCiMjIyBRdWljayBDb2xvciBSZWZlcmVuY2UKLSBQcmltYXJ5IEJhY2tncm91bmQ6IE5lYXItQmxhY2sgQmx1ZSAoYCMwNzA4MGFgKQotIFByaW1hcnkgVGV4dDogTmVhciBXaGl0ZSAoYCNmOWY5ZjlgKQotIEJyYW5kIEFjY2VudDogUmF5Y2FzdCBSZWQgKGAjRkY2MzYzYCkKLSBJbnRlcmFjdGl2ZSBCbHVlOiBSYXljYXN0IEJsdWUgKGBoc2woMjAyLCAxMDAlLCA2NyUpYCAvIH5gIzU1YjNmZmApCi0gU2Vjb25kYXJ5IFRleHQ6IE1lZGl1bSBHcmF5IChgIzljOWM5ZGApCi0gQ2FyZCBTdXJmYWNlOiBTdXJmYWNlIDEwMCAoYCMxMDExMTFgKQotIEJvcmRlcjogRGFyayBCb3JkZXIgKGBoc2woMTk1LCA1JSwgMTUlKWAgLyB+YCMyNTI4MjlgKQoKIyMjIEV4YW1wbGUgQ29tcG9uZW50IFByb21wdHMKLSAiQ3JlYXRlIGEgaGVybyBzZWN0aW9uIG9uICMwNzA4MGEgYmFja2dyb3VuZCB3aXRoIDY0cHggSW50ZXIgaGVhZGluZyAod2VpZ2h0IDYwMCwgbGluZS1oZWlnaHQgMS4xKSwgbmVhci13aGl0ZSB0ZXh0ICgjZjlmOWY5KSwgYW5kIGEgc2VtaS10cmFuc3BhcmVudCB3aGl0ZSBwaWxsIENUQSBidXR0b24gKGhzbGEoMCwwJSwxMDAlLDAuODE1KSwgODZweCByYWRpdXMsIGRhcmsgdGV4dCAjMTgxOTFhKSIKLSAiRGVzaWduIGEgZmVhdHVyZSBjYXJkIHdpdGggIzEwMTExMSBiYWNrZ3JvdW5kLCAxcHggc29saWQgcmdiYSgyNTUsMjU1LDI1NSwwLjA2KSBib3JkZXIsIDE2cHggYm9yZGVyLXJhZGl1cywgZG91YmxlLXJpbmcgc2hhZG93IChyZ2IoMjcsMjgsMzApIDBweCAwcHggMHB4IDFweCBvdXRlciksIDIycHggSW50ZXIgaGVhZGluZywgYW5kICM5YzljOWQgYm9keSB0ZXh0IgotICJCdWlsZCBhIG5hdmlnYXRpb24gYmFyIG9uIGRhcmsgYmFja2dyb3VuZCAoIzA3MDgwYSksIEludGVyIGxpbmtzIGF0IDE2cHggd2VpZ2h0IDUwMCBpbiAjOWM5YzlkLCBob3ZlciB0byB3aGl0ZSwgYW5kIGEgdHJhbnNsdWNlbnQgd2hpdGUgcGlsbCBidXR0b24gYXQgdGhlIHJpZ2h0IGVuZCIKLSAiQ3JlYXRlIGEga2V5Ym9hcmQgc2hvcnRjdXQgZGlzcGxheSB3aXRoIGtleSBjYXBzIHVzaW5nIGdyYWRpZW50IGJhY2tncm91bmQgKCMxMjEyMTLihpIjMGQwZDBkKSwgNS1sYXllciBzaGFkb3cgZm9yIHBoeXNpY2FsIGRlcHRoLCA0cHggcmFkaXVzLCBJbnRlciAxMnB4IHdlaWdodCA2MDAgdGV4dCIKLSAiRGVzaWduIGFuIGFsZXJ0IGNhcmQgd2l0aCAjMTAxMTExIHN1cmZhY2UsIFJheWNhc3QgUmVkICgjRkY2MzYzKSBsZWZ0IGJvcmRlciBhY2NlbnQsIHRyYW5zbHVjZW50IHJlZCBnbG93IChoc2xhKDAsMTAwJSw2OSUsMC4xNSkpLCB3aGl0ZSBoZWFkaW5nLCBhbmQgI2NlY2VjZSBkZXNjcmlwdGlvbiB0ZXh0IgoKIyMjIEl0ZXJhdGlvbiBHdWlkZQpXaGVuIHJlZmluaW5nIGV4aXN0aW5nIHNjcmVlbnMgZ2VuZXJhdGVkIHdpdGggdGhpcyBkZXNpZ24gc3lzdGVtOgoxLiBDaGVjayB0aGUgYmFja2dyb3VuZCBpcyBgIzA3MDgwYWAgbm90IHB1cmUgYmxhY2sg4oCUIHRoZSBibHVlIHRpbnQgaXMgY3JpdGljYWwKMi4gVmVyaWZ5IGxldHRlci1zcGFjaW5nIGlzIHBvc2l0aXZlICgrMC4ycHgpIG9uIGJvZHkgdGV4dCDigJQgbmVnYXRpdmUgc3BhY2luZyBicmVha3MgdGhlIFJheWNhc3QgYWVzdGhldGljCjMuIEVuc3VyZSBzaGFkb3dzIGhhdmUgYm90aCBvdXRlciBhbmQgaW5zZXQgbGF5ZXJzIOKAlCBzaW5nbGUtbGF5ZXIgc2hhZG93cyBsb29rIGZsYXQgYW5kIHdyb25nCjQuIENvbmZpcm0gSW50ZXIgaGFzIE9wZW5UeXBlIGZlYXR1cmVzIGBjYWx0YCwgYGtlcm5gLCBgbGlnYWAsIGBzczAzYCBlbmFibGVkCjUuIFRlc3QgdGhhdCBob3ZlciBzdGF0ZXMgdXNlIG9wYWNpdHkgdHJhbnNpdGlvbnMgKDAuNikgbm90IGNvbG9yIHN3YXBzIOKAlCB0aGlzIGlzIGEgY29yZSBpbnRlcmFjdGlvbiBwYXR0ZXJuCg==
+# Design System: Raycast
+
+
+> **Hermes Agent — Implementation Notes**
+>
+> The original site uses proprietary fonts. For self-contained HTML output, use these CDN substitutes:
+> - **Primary:** `Inter` | **Mono:** `Geist Mono`
+> - **Font stack (CSS):** `font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;`
+> - **Mono stack (CSS):** `font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;`
+> ```html
+> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+> ```
+> Use `write_file` to create HTML, serve via `generative-widgets` skill (cloudflared tunnel).
+> Verify visual accuracy with `browser_vision` after generating.
+
+## 1. Visual Theme & Atmosphere
+
+Raycast's marketing site feels like the dark interior of a precision instrument — a Swiss watch case carved from obsidian. The background isn't just dark, it's an almost-black blue-tint (`#07080a`) that creates a sense of being inside a macOS native application rather than a website. Every surface, every border, every shadow is calibrated to evoke the feeling of a high-performance desktop utility: fast, minimal, trustworthy.
+
+The signature move is the layered shadow system borrowed from macOS window chrome: multi-layer box-shadows with inset highlights that simulate physical depth, as if cards and buttons are actual pressed or raised glass elements on a dark desk. Combined with Raycast Red (`#FF6363`) — deployed almost exclusively in the hero's iconic diagonal stripe pattern — the palette creates a brand that reads as "powerful tool with personality." The red doesn't dominate; it punctuates.
+
+Inter is used everywhere — headings, body, buttons, captions — with extensive OpenType features (`calt`, `kern`, `liga`, `ss03`) creating a consistent, readable typographic voice. The positive letter-spacing (0.2px–0.4px on body text) is unusual for a dark UI and gives the text an airy, breathable quality that counterbalances the dense, dark surfaces. GeistMono appears for code elements, reinforcing the developer-tool identity.
+
+**Key Characteristics:**
+- Near-black blue-tinted background (`#07080a`) — not pure black, subtly blue-shifted
+- macOS-native shadow system with multi-layer inset highlights simulating physical depth
+- Raycast Red (`#FF6363`) as a punctuation color — hero stripes, not pervasive
+- Inter with positive letter-spacing (0.2px) for an airy, readable dark-mode experience
+- Radix UI component primitives powering the interaction layer
+- Subtle rgba white borders (0.06–0.1 opacity) for containment on dark surfaces
+- Keyboard shortcut styling with gradient key caps and heavy shadows
+
+## 2. Color Palette & Roles
+
+### Primary
+- **Near-Black Blue** (`#07080a`): Primary page background — the foundational void with a subtle blue-cold undertone
+- **Pure White** (`#ffffff`): Primary heading text, high-emphasis elements
+- **Raycast Red** (`#FF6363` / `hsl(0, 100%, 69%)`): Brand accent — hero stripes, danger states, critical highlights
+
+### Secondary & Accent
+- **Raycast Blue** (`hsl(202, 100%, 67%)` / ~`#55b3ff`): Interactive accent — links, focus states, selected items
+- **Raycast Green** (`hsl(151, 59%, 59%)` / ~`#5fc992`): Success states, positive indicators
+- **Raycast Yellow** (`hsl(43, 100%, 60%)` / ~`#ffbc33`): Warning accents, highlights
+- **Blue Transparent** (`hsla(202, 100%, 67%, 0.15)`): Blue tint overlay for interactive surfaces
+- **Red Transparent** (`hsla(0, 100%, 69%, 0.15)`): Red tint overlay for danger/error surfaces
+
+### Surface & Background
+- **Deep Background** (`#07080a`): Page canvas, the darkest surface
+- **Surface 100** (`#101111`): Elevated surface, card backgrounds
+- **Key Start** (`#121212`): Keyboard key gradient start
+- **Key End** (`#0d0d0d`): Keyboard key gradient end
+- **Card Surface** (`#1b1c1e`): Badge backgrounds, tag fills, elevated containers
+- **Button Foreground** (`#18191a`): Dark surface for button text on light backgrounds
+
+### Neutrals & Text
+- **Near White** (`#f9f9f9` / `hsl(240, 11%, 96%)`): Primary body text, high-emphasis content
+- **Light Gray** (`#cecece` / `#cdcdce`): Secondary body text, descriptions
+- **Silver** (`#c0c0c0`): Tertiary text, subdued labels
+- **Medium Gray** (`#9c9c9d`): Link default color, secondary navigation
+- **Dim Gray** (`#6a6b6c`): Disabled text, low-emphasis labels
+- **Dark Gray** (`#434345`): Muted borders, inactive navigation links
+- **Border** (`hsl(195, 5%, 15%)` / ~`#252829`): Standard border color for cards and dividers
+- **Dark Border** (`#2f3031`): Separator lines, table borders
+
+### Semantic & Accent
+- **Error Red** (`hsl(0, 100%, 69%)`): Error states, destructive actions
+- **Success Green** (`hsl(151, 59%, 59%)`): Success confirmations, positive states
+- **Warning Yellow** (`hsl(43, 100%, 60%)`): Warnings, attention-needed states
+- **Info Blue** (`hsl(202, 100%, 67%)`): Informational highlights, links
+
+### Gradient System
+- **Keyboard Key Gradient**: Linear gradient from `#121212` (top) to `#0d0d0d` (bottom) — simulates physical key depth
+- **Warm Glow**: `rgba(215, 201, 175, 0.05)` radial spread — subtle warm ambient glow behind featured elements
+
+## 3. Typography Rules
+
+### Font Family
+- **Primary**: `Inter` — humanist sans-serif, used everywhere. Fallbacks: `Inter Fallback`, system sans-serif
+- **System**: `SF Pro Text` — Apple system font for select macOS-native UI elements. Fallbacks: `SF Pro Icons`, `Inter`, `Inter Fallback`
+- **Monospace**: `GeistMono` — Vercel's monospace font for code elements. Fallbacks: `ui-monospace`, `SFMono-Regular`, `Roboto Mono`, `Menlo`, `Monaco`
+- **OpenType features**: `calt`, `kern`, `liga`, `ss03` enabled globally; `ss02`, `ss08` on display text; `liga` disabled (`"liga" 0`) on hero headings
+
+### Hierarchy
+
+| Role | Size | Weight | Line Height | Letter Spacing | Notes |
+|------|------|--------|-------------|----------------|-------|
+| Display Hero | 64px | 600 | 1.10 | 0px | OpenType: liga 0, ss02, ss08 |
+| Section Display | 56px | 400 | 1.17 | 0.2px | OpenType: calt, kern, liga, ss03 |
+| Section Heading | 24px | 500 | normal | 0.2px | OpenType: calt, kern, liga, ss03 |
+| Card Heading | 22px | 400 | 1.15 | 0px | OpenType: calt, kern, liga, ss03 |
+| Sub-heading | 20px | 500 | 1.60 | 0.2px | Relaxed line-height for readability |
+| Body Large | 18px | 400 | 1.15 | 0.2px | OpenType: calt, kern, liga, ss03 |
+| Body | 16px | 500 | 1.60 | 0.2px | Primary body text, relaxed rhythm |
+| Body Tight | 16px | 400 | 1.15 | 0.1px | UI labels, compact contexts |
+| Button | 16px | 600 | 1.15 | 0.3px | Semibold, slightly wider tracking |
+| Nav Link | 16px | 500 | 1.40 | 0.3px | Links in navigation |
+| Caption | 14px | 500 | 1.14 | 0.2px | Small labels, metadata |
+| Caption Bold | 14px | 600 | 1.40 | 0px | Emphasized captions |
+| Small | 12px | 600 | 1.33 | 0px | Badges, tags, micro-labels |
+| Small Link | 12px | 400 | 1.50 | 0.4px | Footer links, fine print |
+| Code | 14px (GeistMono) | 500 | 1.60 | 0.3px | Code blocks, technical content |
+| Code Small | 12px (GeistMono) | 400 | 1.60 | 0.2px | Inline code, terminal output |
+
+### Principles
+- **Positive tracking on dark**: Unlike most dark UIs that use tight or neutral letter-spacing, Raycast applies +0.2px to +0.4px — creating an airy, readable feel that compensates for the dark background
+- **Weight 500 as baseline**: Most body text uses medium weight (500), not regular (400) — subtle extra heft improves legibility on dark surfaces
+- **Display restraint**: Hero text at 64px/600 is confident but not oversized — Raycast avoids typographic spectacle in favor of functional elegance
+- **OpenType everywhere**: `ss03` (stylistic set 3) is enabled globally across Inter, giving the typeface a slightly more geometric, tool-like quality
+
+## 4. Component Stylings
+
+### Buttons
+- **Primary Pill**: Transparent background, white text, pill shape (86px radius), multi-layer inset shadow (`rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset`). Hover: opacity 0.6
+- **Secondary Button**: Transparent background, white text, 6px radius, `1px solid rgba(255, 255, 255, 0.1)` border, subtle drop shadow (`rgba(0, 0, 0, 0.03) 0px 7px 3px`). Hover: opacity 0.6
+- **Ghost Button**: No background or border, gray text (`#6a6b6c`), 86px radius, same inset shadow. Hover: opacity 0.6, text brightens to white
+- **CTA (Download)**: Semi-transparent white background (`hsla(0, 0%, 100%, 0.815)`), dark text (`#18191a`), pill shape. Hover: full white background (`hsl(0, 0%, 100%)`)
+- **Transition**: All buttons use opacity transition for hover rather than background-color change — a signature Raycast interaction pattern
+
+### Cards & Containers
+- **Standard Card**: `#101111` surface, `1px solid rgba(255, 255, 255, 0.06)` border, 12px–16px border-radius
+- **Elevated Card**: Ring shadow `rgb(27, 28, 30) 0px 0px 0px 1px` outer + `rgb(7, 8, 10) 0px 0px 0px 1px inset` inner — creates a double-ring containment
+- **Feature Card**: 16px–20px border-radius, subtle warm glow (`rgba(215, 201, 175, 0.05) 0px 0px 20px 5px`) behind hero elements
+- **Hover**: Cards brighten slightly via border opacity increase or subtle shadow enhancement
+
+### Inputs & Forms
+- Dark input fields with `#07080a` background, `1px solid rgba(255, 255, 255, 0.08)` border, 8px border-radius
+- Focus state: Border brightens, blue glow (`hsla(202, 100%, 67%, 0.15)`) ring appears
+- Text: `#f9f9f9` input color, `#6a6b6c` placeholder
+- Labels: `#9c9c9d` at 14px weight 500
+
+### Navigation
+- **Top nav**: Dark background blending with page, white text links at 16px weight 500
+- **Nav links**: Gray text (`#9c9c9d`) → white on hover, underline decoration on hover
+- **CTA button**: Semi-transparent white pill at nav end
+- **Mobile**: Collapses to hamburger, maintains dark theme
+- **Sticky**: Nav fixed at top with subtle border separator
+
+### Image Treatment
+- **Product screenshots**: macOS window chrome style — rounded corners (12px), deep shadows simulating floating windows
+- **Full-bleed sections**: Dark screenshots blend seamlessly into the dark background
+- **Hero illustration**: Diagonal stripe pattern in Raycast Red — abstract, geometric, brand-defining
+- **App UI embeds**: Showing actual Raycast command palette and extensions — product as content
+
+### Keyboard Shortcut Keys
+- **Key cap styling**: Gradient background (`#121212` → `#0d0d0d`), heavy multi-layer shadow (`rgba(0, 0, 0, 0.4) 0px 1.5px 0.5px 2.5px` + inset shadows), creating realistic physical key appearance
+- Border-radius: 4px–6px for individual keys
+
+### Badges & Tags
+- **Neutral badge**: `#1b1c1e` background, white text, 6px radius, 14px font at weight 500, `0px 6px` padding
+- Compact, pill-like treatment for categorization
+
+## 5. Layout Principles
+
+### Spacing System
+- **Base unit**: 8px
+- **Scale**: 1px, 2px, 3px, 4px, 8px, 10px, 12px, 16px, 20px, 24px, 32px, 40px
+- **Section padding**: 80px–120px vertical between major sections
+- **Card padding**: 16px–32px internal spacing
+- **Component gaps**: 8px–16px between related elements
+
+### Grid & Container
+- **Max width**: ~1200px container (breakpoint at 1204px), centered
+- **Column patterns**: Single-column hero, 2–3 column feature grids, full-width showcase sections
+- **App showcase**: Product UI presented in centered window frames
+
+### Whitespace Philosophy
+- **Dramatic negative space**: Sections float in vast dark void, creating cinematic pacing between features
+- **Dense product, sparse marketing**: The product UI screenshots are information-dense, but the surrounding marketing copy uses minimal text with generous spacing
+- **Vertical rhythm**: Consistent 24px–32px gaps between elements within sections
+
+### Border Radius Scale
+- **2px–3px**: Micro-elements, code spans, tiny indicators
+- **4px–5px**: Keyboard keys, small interactive elements
+- **6px**: Buttons, badges, tags — the workhorse radius
+- **8px**: Input fields, inline components
+- **9px–11px**: Images, medium containers
+- **12px**: Standard cards, product screenshots
+- **16px**: Large cards, feature sections
+- **20px**: Hero cards, prominent containers
+- **86px+**: Pill buttons, nav CTAs — full pill shape
+
+## 6. Depth & Elevation
+
+| Level | Treatment | Use |
+|-------|-----------|-----|
+| Level 0 (Void) | No shadow, `#07080a` surface | Page background |
+| Level 1 (Subtle) | `rgba(0, 0, 0, 0.28) 0px 1.189px 2.377px` | Minimal lift, inline elements |
+| Level 2 (Ring) | `rgb(27, 28, 30) 0px 0px 0px 1px` outer + `rgb(7, 8, 10) 0px 0px 0px 1px inset` inner | Card containment, double-ring technique |
+| Level 3 (Button) | `rgba(255, 255, 255, 0.05) 0px 1px 0px 0px inset` + `rgba(255, 255, 255, 0.25) 0px 0px 0px 1px` + `rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset` | macOS-native button press — white highlight top, dark inset bottom |
+| Level 4 (Key) | 5-layer shadow stack with inset press effects | Keyboard shortcut key caps — physical 3D appearance |
+| Level 5 (Floating) | `rgba(0, 0, 0, 0.5) 0px 0px 0px 2px` + `rgba(255, 255, 255, 0.19) 0px 0px 14px` + insets | Command palette, floating panels — heavy depth with glow |
+
+### Shadow Philosophy
+Raycast's shadow system is the most macOS-native on the web. Multi-layer shadows combine:
+- **Outer rings** for containment (replacing traditional borders)
+- **Inset top highlights** (`rgba(255, 255, 255, 0.05–0.25)`) simulating light source from above
+- **Inset bottom darks** (`rgba(0, 0, 0, 0.2)`) simulating shadow underneath
+- The effect is physical: elements feel like glass or brushed metal, not flat rectangles
+
+### Decorative Depth
+- **Warm glow**: `rgba(215, 201, 175, 0.05) 0px 0px 20px 5px` behind featured elements — a subtle warm aura on the cold dark canvas
+- **Blue info glow**: `rgba(0, 153, 255, 0.15)` for interactive state emphasis
+- **Red danger glow**: `rgba(255, 99, 99, 0.15)` for error/destructive state emphasis
+
+## 7. Do's and Don'ts
+
+### Do
+- Use `#07080a` (not pure black) as the background — the blue-cold tint is essential to the Raycast feel
+- Apply positive letter-spacing (+0.2px) on body text — this is deliberately different from most dark UIs
+- Use multi-layer shadows with inset highlights for interactive elements — the macOS-native depth is signature
+- Keep Raycast Red (`#FF6363`) as punctuation, not pervasive — reserve it for hero moments and error states
+- Use `rgba(255, 255, 255, 0.06)` borders for card containment — barely visible, structurally essential
+- Apply weight 500 as the body text baseline — medium weight improves dark-mode legibility
+- Use pill shapes (86px+ radius) for primary CTAs, rectangular shapes (6px–8px) for secondary actions
+- Enable OpenType features `calt`, `kern`, `liga`, `ss03` on all Inter text
+- Use opacity transitions (hover: opacity 0.6) for button interactions, not color changes
+
+### Don't
+- Use pure black (`#000000`) as the background — the blue tint differentiates Raycast from generic dark themes
+- Apply negative letter-spacing on body text — Raycast deliberately uses positive spacing for readability
+- Use Raycast Blue as the primary accent for everything — blue is for interactive/info, red is the brand color
+- Create single-layer flat shadows — the multi-layer inset system is core to the macOS-native aesthetic
+- Use regular weight (400) for body text when 500 is available — the extra weight prevents dark-mode text from feeling thin
+- Mix warm and cool borders — stick to the cool gray (`hsl(195, 5%, 15%)`) border palette
+- Apply heavy drop shadows without inset companions — shadows always come in pairs (outer + inset)
+- Use decorative elements, gradients, or colorful backgrounds — the dark void is the stage, content is the performer
+
+## 8. Responsive Behavior
+
+### Breakpoints
+| Name | Width | Key Changes |
+|------|-------|-------------|
+| Mobile | <600px | Single column, stacked cards, hamburger nav, hero text reduces to ~40px |
+| Small Tablet | 600px–768px | 2-column grid begins, nav partially visible |
+| Tablet | 768px–1024px | 2–3 column features, nav expanding, screenshots scale |
+| Desktop | 1024px–1200px | Full layout, all nav links visible, 64px hero display |
+| Large Desktop | >1200px | Max-width container centered, generous side margins |
+
+### Touch Targets
+- Pill buttons: 86px radius with 20px padding — well above 44px minimum
+- Secondary buttons: 8px padding minimum, but border provides visual target expansion
+- Nav links: 16px text with surrounding padding for accessible touch targets
+
+### Collapsing Strategy
+- **Navigation**: Full horizontal nav → hamburger at mobile with slide-out menu
+- **Hero**: 64px display → 48px → 36px across breakpoints
+- **Feature grids**: 3-column → 2-column → single-column stack
+- **Product screenshots**: Scale within containers, maintaining macOS window chrome proportions
+- **Keyboard shortcut displays**: Simplify or hide on mobile where keyboard shortcuts are irrelevant
+
+### Image Behavior
+- Product screenshots scale responsively within fixed-ratio containers
+- Hero diagonal stripe pattern scales proportionally
+- macOS window chrome rounded corners maintained at all sizes
+- No lazy-loading artifacts — images are critical to the product narrative
+
+## 9. Agent Prompt Guide
+
+### Quick Color Reference
+- Primary Background: Near-Black Blue (`#07080a`)
+- Primary Text: Near White (`#f9f9f9`)
+- Brand Accent: Raycast Red (`#FF6363`)
+- Interactive Blue: Raycast Blue (`hsl(202, 100%, 67%)` / ~`#55b3ff`)
+- Secondary Text: Medium Gray (`#9c9c9d`)
+- Card Surface: Surface 100 (`#101111`)
+- Border: Dark Border (`hsl(195, 5%, 15%)` / ~`#252829`)
+
+### Example Component Prompts
+- "Create a hero section on #07080a background with 64px Inter heading (weight 600, line-height 1.1), near-white text (#f9f9f9), and a semi-transparent white pill CTA button (hsla(0,0%,100%,0.815), 86px radius, dark text #18191a)"
+- "Design a feature card with #101111 background, 1px solid rgba(255,255,255,0.06) border, 16px border-radius, double-ring shadow (rgb(27,28,30) 0px 0px 0px 1px outer), 22px Inter heading, and #9c9c9d body text"
+- "Build a navigation bar on dark background (#07080a), Inter links at 16px weight 500 in #9c9c9d, hover to white, and a translucent white pill button at the right end"
+- "Create a keyboard shortcut display with key caps using gradient background (#121212→#0d0d0d), 5-layer shadow for physical depth, 4px radius, Inter 12px weight 600 text"
+- "Design an alert card with #101111 surface, Raycast Red (#FF6363) left border accent, translucent red glow (hsla(0,100%,69%,0.15)), white heading, and #cecece description text"
+
+### Iteration Guide
+When refining existing screens generated with this design system:
+1. Check the background is `#07080a` not pure black — the blue tint is critical
+2. Verify letter-spacing is positive (+0.2px) on body text — negative spacing breaks the Raycast aesthetic
+3. Ensure shadows have both outer and inset layers — single-layer shadows look flat and wrong
+4. Confirm Inter has OpenType features `calt`, `kern`, `liga`, `ss03` enabled
+5. Test that hover states use opacity transitions (0.6) not color swaps — this is a core interaction pattern

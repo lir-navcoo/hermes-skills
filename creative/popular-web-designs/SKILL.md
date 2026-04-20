@@ -1,1 +1,207 @@
-LS0tCm5hbWU6IHBvcHVsYXItd2ViLWRlc2lnbnMKZGVzY3JpcHRpb246ID4KICA1NCBwcm9kdWN0aW9uLXF1YWxpdHkgZGVzaWduIHN5c3RlbXMgZXh0cmFjdGVkIGZyb20gcmVhbCB3ZWJzaXRlcy4gTG9hZCBhIHRlbXBsYXRlCiAgdG8gZ2VuZXJhdGUgSFRNTC9DU1MgdGhhdCBtYXRjaGVzIHRoZSB2aXN1YWwgaWRlbnRpdHkgb2Ygc2l0ZXMgbGlrZSBTdHJpcGUsIExpbmVhciwKICBWZXJjZWwsIE5vdGlvbiwgQWlyYm5iLCBhbmQgbW9yZS4gRWFjaCB0ZW1wbGF0ZSBpbmNsdWRlcyBjb2xvcnMsIHR5cG9ncmFwaHksIGNvbXBvbmVudHMsCiAgbGF5b3V0IHJ1bGVzLCBhbmQgcmVhZHktdG8tdXNlIENTUyB2YWx1ZXMuCnZlcnNpb246IDEuMC4wCmF1dGhvcjogSGVybWVzIEFnZW50ICsgVGVrbml1bSAoZGVzaWduIHN5c3RlbXMgc291cmNlZCBmcm9tIFZvbHRBZ2VudC9hd2Vzb21lLWRlc2lnbi1tZCkKbGljZW5zZTogTUlUCnRhZ3M6IFtkZXNpZ24sIGNzcywgaHRtbCwgdWksIHdlYi1kZXZlbG9wbWVudCwgZGVzaWduLXN5c3RlbXMsIHRlbXBsYXRlc10KdHJpZ2dlcnM6CiAgLSBidWlsZCBhIHBhZ2UgdGhhdCBsb29rcyBsaWtlCiAgLSBtYWtlIGl0IGxvb2sgbGlrZSBzdHJpcGUKICAtIGRlc2lnbiBsaWtlIGxpbmVhcgogIC0gdmVyY2VsIHN0eWxlCiAgLSBjcmVhdGUgYSBVSQogIC0gd2ViIGRlc2lnbgogIC0gbGFuZGluZyBwYWdlCiAgLSBkYXNoYm9hcmQgZGVzaWduCiAgLSB3ZWJzaXRlIHN0eWxlZCBsaWtlCi0tLQoKIyBQb3B1bGFyIFdlYiBEZXNpZ25zCgo1NCByZWFsLXdvcmxkIGRlc2lnbiBzeXN0ZW1zIHJlYWR5IGZvciB1c2Ugd2hlbiBnZW5lcmF0aW5nIEhUTUwvQ1NTLiBFYWNoIHRlbXBsYXRlIGNhcHR1cmVzIGEKc2l0ZSdzIGNvbXBsZXRlIHZpc3VhbCBsYW5ndWFnZTogY29sb3IgcGFsZXR0ZSwgdHlwb2dyYXBoeSBoaWVyYXJjaHksIGNvbXBvbmVudCBzdHlsZXMsIHNwYWNpbmcKc3lzdGVtLCBzaGFkb3dzLCByZXNwb25zaXZlIGJlaGF2aW9yLCBhbmQgcHJhY3RpY2FsIGFnZW50IHByb21wdHMgd2l0aCBleGFjdCBDU1MgdmFsdWVzLgoKIyMgSG93IHRvIFVzZQoKMS4gUGljayBhIGRlc2lnbiBmcm9tIHRoZSBjYXRhbG9nIGJlbG93CjIuIExvYWQgaXQ6IGBza2lsbF92aWV3KG5hbWU9InBvcHVsYXItd2ViLWRlc2lnbnMiLCBmaWxlX3BhdGg9InRlbXBsYXRlcy88c2l0ZT4ubWQiKWAKMy4gVXNlIHRoZSBkZXNpZ24gdG9rZW5zIGFuZCBjb21wb25lbnQgc3BlY3Mgd2hlbiBnZW5lcmF0aW5nIEhUTUwKNC4gUGFpciB3aXRoIHRoZSBgZ2VuZXJhdGl2ZS13aWRnZXRzYCBza2lsbCB0byBzZXJ2ZSB0aGUgcmVzdWx0IHZpYSBjbG91ZGZsYXJlZCB0dW5uZWwKCkVhY2ggdGVtcGxhdGUgaW5jbHVkZXMgYSAqKkhlcm1lcyBJbXBsZW1lbnRhdGlvbiBOb3RlcyoqIGJsb2NrIGF0IHRoZSB0b3Agd2l0aDoKLSBDRE4gZm9udCBzdWJzdGl0dXRlIGFuZCBHb29nbGUgRm9udHMgYDxsaW5rPmAgdGFnIChyZWFkeSB0byBwYXN0ZSkKLSBDU1MgZm9udC1mYW1pbHkgc3RhY2tzIGZvciBwcmltYXJ5IGFuZCBtb25vc3BhY2UKLSBSZW1pbmRlcnMgdG8gdXNlIGB3cml0ZV9maWxlYCBmb3IgSFRNTCBjcmVhdGlvbiBhbmQgYGJyb3dzZXJfdmlzaW9uYCBmb3IgdmVyaWZpY2F0aW9uCgojIyBIVE1MIEdlbmVyYXRpb24gUGF0dGVybgoKYGBgaHRtbAo8IURPQ1RZUEUgaHRtbD4KPGh0bWwgbGFuZz0iZW4iPgo8aGVhZD4KICA8bWV0YSBjaGFyc2V0PSJVVEYtOCI+CiAgPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLjAiPgogIDx0aXRsZT5QYWdlIFRpdGxlPC90aXRsZT4KICA8IS0tIFBhc3RlIHRoZSBHb29nbGUgRm9udHMgPGxpbms+IGZyb20gdGhlIHRlbXBsYXRlJ3MgSGVybWVzIG5vdGVzIC0tPgogIDxsaW5rIGhyZWY9Imh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9Li4uIiByZWw9InN0eWxlc2hlZXQiPgogIDxzdHlsZT4KICAgIC8qIEFwcGx5IHRoZSB0ZW1wbGF0ZSdzIGNvbG9yIHBhbGV0dGUgYXMgQ1NTIGN1c3RvbSBwcm9wZXJ0aWVzICovCiAgICA6cm9vdCB7CiAgICAgIC0tY29sb3ItYmc6ICNmZmZmZmY7CiAgICAgIC0tY29sb3ItdGV4dDogIzE3MTcxNzsKICAgICAgLS1jb2xvci1hY2NlbnQ6ICM1MzNhZmQ7CiAgICAgIC8qIC4uLiBtb3JlIGZyb20gdGVtcGxhdGUgU2VjdGlvbiAyICovCiAgICB9CiAgICAvKiBBcHBseSB0eXBvZ3JhcGh5IGZyb20gdGVtcGxhdGUgU2VjdGlvbiAzICovCiAgICBib2R5IHsKICAgICAgZm9udC1mYW1pbHk6ICdJbnRlcicsIHN5c3RlbS11aSwgc2Fucy1zZXJpZjsKICAgICAgY29sb3I6IHZhcigtLWNvbG9yLXRleHQpOwogICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1jb2xvci1iZyk7CiAgICB9CiAgICAvKiBBcHBseSBjb21wb25lbnQgc3R5bGVzIGZyb20gdGVtcGxhdGUgU2VjdGlvbiA0ICovCiAgICAvKiBBcHBseSBsYXlvdXQgZnJvbSB0ZW1wbGF0ZSBTZWN0aW9uIDUgKi8KICAgIC8qIEFwcGx5IHNoYWRvd3MgZnJvbSB0ZW1wbGF0ZSBTZWN0aW9uIDYgKi8KICA8L3N0eWxlPgo8L2hlYWQ+Cjxib2R5PgogIDwhLS0gQnVpbGQgdXNpbmcgY29tcG9uZW50IHNwZWNzIGZyb20gdGhlIHRlbXBsYXRlIC0tPgo8L2JvZHk+CjwvaHRtbD4KYGBgCgpXcml0ZSB0aGUgZmlsZSB3aXRoIGB3cml0ZV9maWxlYCwgc2VydmUgd2l0aCB0aGUgYGdlbmVyYXRpdmUtd2lkZ2V0c2Agd29ya2Zsb3cgKGNsb3VkZmxhcmVkIHR1bm5lbCksCmFuZCB2ZXJpZnkgdGhlIHJlc3VsdCB3aXRoIGBicm93c2VyX3Zpc2lvbmAgdG8gY29uZmlybSB2aXN1YWwgYWNjdXJhY3kuCgojIyBGb250IFN1YnN0aXR1dGlvbiBSZWZlcmVuY2UKCk1vc3Qgc2l0ZXMgdXNlIHByb3ByaWV0YXJ5IGZvbnRzIHVuYXZhaWxhYmxlIHZpYSBDRE4uIEVhY2ggdGVtcGxhdGUgbWFwcyB0byBhIEdvb2dsZSBGb250cwpzdWJzdGl0dXRlIHRoYXQgcHJlc2VydmVzIHRoZSBkZXNpZ24ncyBjaGFyYWN0ZXIuIENvbW1vbiBtYXBwaW5nczoKCnwgUHJvcHJpZXRhcnkgRm9udCB8IENETiBTdWJzdGl0dXRlIHwgQ2hhcmFjdGVyIHwKfC0tLXwtLS18LS0tfAp8IEdlaXN0IC8gR2Vpc3QgU2FucyB8IEdlaXN0IChvbiBHb29nbGUgRm9udHMpIHwgR2VvbWV0cmljLCBjb21wcmVzc2VkIHRyYWNraW5nIHwKfCBHZWlzdCBNb25vIHwgR2Vpc3QgTW9ubyAob24gR29vZ2xlIEZvbnRzKSB8IENsZWFuIG1vbm9zcGFjZSwgbGlnYXR1cmVzIHwKfCBzb2huZS12YXIgKFN0cmlwZSkgfCBTb3VyY2UgU2FucyAzIHwgTGlnaHQgd2VpZ2h0IGVsZWdhbmNlIHwKfCBCZXJrZWxleSBNb25vIHwgSmV0QnJhaW5zIE1vbm8gfCBUZWNobmljYWwgbW9ub3NwYWNlIHwKfCBBaXJibmIgQ2VyZWFsIFZGIHwgRE0gU2FucyB8IFJvdW5kZWQsIGZyaWVuZGx5IGdlb21ldHJpYyB8CnwgQ2lyY3VsYXIgKFNwb3RpZnkpIHwgRE0gU2FucyB8IEdlb21ldHJpYywgd2FybSB8CnwgZmlnbWFTYW5zIHwgSW50ZXIgfCBDbGVhbiBodW1hbmlzdCB8CnwgUGluIFNhbnMgKFBpbnRlcmVzdCkgfCBETSBTYW5zIHwgRnJpZW5kbHksIHJvdW5kZWQgfAp8IE5WSURJQS1FTUVBIHwgSW50ZXIgKG9yIEFyaWFsIHN5c3RlbSkgfCBJbmR1c3RyaWFsLCBjbGVhbiB8CnwgQ29pbmJhc2VEaXNwbGF5L1NhbnMgfCBETSBTYW5zIHwgR2VvbWV0cmljLCB0cnVzdHdvcnRoeSB8CnwgVWJlck1vdmUgfCBETSBTYW5zIHwgQm9sZCwgdGlnaHQgfAp8IEhhc2hpQ29ycCBTYW5zIHwgSW50ZXIgfCBFbnRlcnByaXNlLCBuZXV0cmFsIHwKfCB3YWxkZW5idXJnTm9ybWFsIChTYW5pdHkpIHwgU3BhY2UgR3JvdGVzayB8IEdlb21ldHJpYywgc2xpZ2h0bHkgY29uZGVuc2VkIHwKfCBJQk0gUGxleCBTYW5zL01vbm8gfCBJQk0gUGxleCBTYW5zL01vbm8gfCBBdmFpbGFibGUgb24gR29vZ2xlIEZvbnRzIHwKfCBSdWJpayAoU2VudHJ5KSB8IFJ1YmlrIHwgQXZhaWxhYmxlIG9uIEdvb2dsZSBGb250cyB8CgpXaGVuIGEgdGVtcGxhdGUncyBDRE4gZm9udCBtYXRjaGVzIHRoZSBvcmlnaW5hbCAoSW50ZXIsIElCTSBQbGV4LCBSdWJpaywgR2Vpc3QpLCBubwpzdWJzdGl0dXRpb24gbG9zcyBvY2N1cnMuIFdoZW4gYSBzdWJzdGl0dXRlIGlzIHVzZWQgKERNIFNhbnMgZm9yIENpcmN1bGFyLCBTb3VyY2UgU2FucyAzCmZvciBzb2huZS12YXIpLCBmb2xsb3cgdGhlIHRlbXBsYXRlJ3Mgd2VpZ2h0LCBzaXplLCBhbmQgbGV0dGVyLXNwYWNpbmcgdmFsdWVzIGNsb3NlbHkg4oCUCnRob3NlIGNhcnJ5IG1vcmUgdmlzdWFsIGlkZW50aXR5IHRoYW4gdGhlIHNwZWNpZmljIGZvbnQgZmFjZS4KCiMjIERlc2lnbiBDYXRhbG9nCgojIyMgQUkgJiBNYWNoaW5lIExlYXJuaW5nCgp8IFRlbXBsYXRlIHwgU2l0ZSB8IFN0eWxlIHwKfC0tLXwtLS18LS0tfAp8IGBjbGF1ZGUubWRgIHwgQW50aHJvcGljIENsYXVkZSB8IFdhcm0gdGVycmFjb3R0YSBhY2NlbnQsIGNsZWFuIGVkaXRvcmlhbCBsYXlvdXQgfAp8IGBjb2hlcmUubWRgIHwgQ29oZXJlIHwgVmlicmFudCBncmFkaWVudHMsIGRhdGEtcmljaCBkYXNoYm9hcmQgYWVzdGhldGljIHwKfCBgZWxldmVubGFicy5tZGAgfCBFbGV2ZW5MYWJzIHwgRGFyayBjaW5lbWF0aWMgVUksIGF1ZGlvLXdhdmVmb3JtIGFlc3RoZXRpY3MgfAp8IGBtaW5pbWF4Lm1kYCB8IE1pbmltYXggfCBCb2xkIGRhcmsgaW50ZXJmYWNlIHdpdGggbmVvbiBhY2NlbnRzIHwKfCBgbWlzdHJhbC5haS5tZGAgfCBNaXN0cmFsIEFJIHwgRnJlbmNoLWVuZ2luZWVyZWQgbWluaW1hbGlzbSwgcHVycGxlLXRvbmVkIHwKfCBgb2xsYW1hLm1kYCB8IE9sbGFtYSB8IFRlcm1pbmFsLWZpcnN0LCBtb25vY2hyb21lIHNpbXBsaWNpdHkgfAp8IGBvcGVuY29kZS5haS5tZGAgfCBPcGVuQ29kZSBBSSB8IERldmVsb3Blci1jZW50cmljIGRhcmsgdGhlbWUsIGZ1bGwgbW9ub3NwYWNlIHwKfCBgcmVwbGljYXRlLm1kYCB8IFJlcGxpY2F0ZSB8IENsZWFuIHdoaXRlIGNhbnZhcywgY29kZS1mb3J3YXJkIHwKfCBgcnVud2F5bWwubWRgIHwgUnVud2F5TUwgfCBDaW5lbWF0aWMgZGFyayBVSSwgbWVkaWEtcmljaCBsYXlvdXQgfAp8IGB0b2dldGhlci5haS5tZGAgfCBUb2dldGhlciBBSSB8IFRlY2huaWNhbCwgYmx1ZXByaW50LXN0eWxlIGRlc2lnbiB8CnwgYHZvbHRhZ2VudC5tZGAgfCBWb2x0QWdlbnQgfCBWb2lkLWJsYWNrIGNhbnZhcywgZW1lcmFsZCBhY2NlbnQsIHRlcm1pbmFsLW5hdGl2ZSB8CnwgYHguYWkubWRgIHwgeEFJIHwgU3RhcmsgbW9ub2Nocm9tZSwgZnV0dXJpc3RpYyBtaW5pbWFsaXNtLCBmdWxsIG1vbm9zcGFjZSB8CgojIyMgRGV2ZWxvcGVyIFRvb2xzICYgUGxhdGZvcm1zCgp8IFRlbXBsYXRlIHwgU2l0ZSB8IFN0eWxlIHwKfC0tLXwtLS18LS0tfAp8IGBjdXJzb3IubWRgIHwgQ3Vyc29yIHwgU2xlZWsgZGFyayBpbnRlcmZhY2UsIGdyYWRpZW50IGFjY2VudHMgfAp8IGBleHBvLm1kYCB8IEV4cG8gfCBEYXJrIHRoZW1lLCB0aWdodCBsZXR0ZXItc3BhY2luZywgY29kZS1jZW50cmljIHwKfCBgbGluZWFyLmFwcC5tZGAgfCBMaW5lYXIgfCBVbHRyYS1taW5pbWFsIGRhcmstbW9kZSwgcHJlY2lzZSwgcHVycGxlIGFjY2VudCB8CnwgYGxvdmFibGUubWRgIHwgTG92YWJsZSB8IFBsYXlmdWwgZ3JhZGllbnRzLCBmcmllbmRseSBkZXYgYWVzdGhldGljIHwKfCBgbWludGxpZnkubWRgIHwgTWludGxpZnkgfCBDbGVhbiwgZ3JlZW4tYWNjZW50ZWQsIHJlYWRpbmctb3B0aW1pemVkIHwKfCBgcG9zdGhvZy5tZGAgfCBQb3N0SG9nIHwgUGxheWZ1bCBicmFuZGluZywgZGV2ZWxvcGVyLWZyaWVuZGx5IGRhcmsgVUkgfAp8IGByYXljYXN0Lm1kYCB8IFJheWNhc3QgfCBTbGVlayBkYXJrIGNocm9tZSwgdmlicmFudCBncmFkaWVudCBhY2NlbnRzIHwKfCBgcmVzZW5kLm1kYCB8IFJlc2VuZCB8IE1pbmltYWwgZGFyayB0aGVtZSwgbW9ub3NwYWNlIGFjY2VudHMgfAp8IGBzZW50cnkubWRgIHwgU2VudHJ5IHwgRGFyayBkYXNoYm9hcmQsIGRhdGEtZGVuc2UsIHBpbmstcHVycGxlIGFjY2VudCB8CnwgYHN1cGFiYXNlLm1kYCB8IFN1cGFiYXNlIHwgRGFyayBlbWVyYWxkIHRoZW1lLCBjb2RlLWZpcnN0IGRldmVsb3BlciB0b29sIHwKfCBgc3VwZXJodW1hbi5tZGAgfCBTdXBlcmh1bWFuIHwgUHJlbWl1bSBkYXJrIFVJLCBrZXlib2FyZC1maXJzdCwgcHVycGxlIGdsb3cgfAp8IGB2ZXJjZWwubWRgIHwgVmVyY2VsIHwgQmxhY2sgYW5kIHdoaXRlIHByZWNpc2lvbiwgR2Vpc3QgZm9udCBzeXN0ZW0gfAp8IGB3YXJwLm1kYCB8IFdhcnAgfCBEYXJrIElERS1saWtlIGludGVyZmFjZSwgYmxvY2stYmFzZWQgY29tbWFuZCBVSSB8CnwgYHphcGllci5tZGAgfCBaYXBpZXIgfCBXYXJtIG9yYW5nZSwgZnJpZW5kbHkgaWxsdXN0cmF0aW9uLWRyaXZlbiB8CgojIyMgSW5mcmFzdHJ1Y3R1cmUgJiBDbG91ZAoKfCBUZW1wbGF0ZSB8IFNpdGUgfCBTdHlsZSB8CnwtLS18LS0tfC0tLXwKfCBgY2xpY2tob3VzZS5tZGAgfCBDbGlja0hvdXNlIHwgWWVsbG93LWFjY2VudGVkLCB0ZWNobmljYWwgZG9jdW1lbnRhdGlvbiBzdHlsZSB8CnwgYGNvbXBvc2lvLm1kYCB8IENvbXBvc2lvIHwgTW9kZXJuIGRhcmsgd2l0aCBjb2xvcmZ1bCBpbnRlZ3JhdGlvbiBpY29ucyB8CnwgYGhhc2hpY29ycC5tZGAgfCBIYXNoaUNvcnAgfCBFbnRlcnByaXNlLWNsZWFuLCBibGFjayBhbmQgd2hpdGUgfAp8IGBtb25nb2RiLm1kYCB8IE1vbmdvREIgfCBHcmVlbiBsZWFmIGJyYW5kaW5nLCBkZXZlbG9wZXIgZG9jdW1lbnRhdGlvbiBmb2N1cyB8CnwgYHNhbml0eS5tZGAgfCBTYW5pdHkgfCBSZWQgYWNjZW50LCBjb250ZW50LWZpcnN0IGVkaXRvcmlhbCBsYXlvdXQgfAp8IGBzdHJpcGUubWRgIHwgU3RyaXBlIHwgU2lnbmF0dXJlIHB1cnBsZSBncmFkaWVudHMsIHdlaWdodC0zMDAgZWxlZ2FuY2UgfAoKIyMjIERlc2lnbiAmIFByb2R1Y3Rpdml0eQoKfCBUZW1wbGF0ZSB8IFNpdGUgfCBTdHlsZSB8CnwtLS18LS0tfC0tLXwKfCBgYWlydGFibGUubWRgIHwgQWlydGFibGUgfCBDb2xvcmZ1bCwgZnJpZW5kbHksIHN0cnVjdHVyZWQgZGF0YSBhZXN0aGV0aWMgfAp8IGBjYWwubWRgIHwgQ2FsLmNvbSB8IENsZWFuIG5ldXRyYWwgVUksIGRldmVsb3Blci1vcmllbnRlZCBzaW1wbGljaXR5IHwKfCBgY2xheS5tZGAgfCBDbGF5IHwgT3JnYW5pYyBzaGFwZXMsIHNvZnQgZ3JhZGllbnRzLCBhcnQtZGlyZWN0ZWQgbGF5b3V0IHwKfCBgZmlnbWEubWRgIHwgRmlnbWEgfCBWaWJyYW50IG11bHRpLWNvbG9yLCBwbGF5ZnVsIHlldCBwcm9mZXNzaW9uYWwgfAp8IGBmcmFtZXIubWRgIHwgRnJhbWVyIHwgQm9sZCBibGFjayBhbmQgYmx1ZSwgbW90aW9uLWZpcnN0LCBkZXNpZ24tZm9yd2FyZCB8CnwgYGludGVyY29tLm1kYCB8IEludGVyY29tIHwgRnJpZW5kbHkgYmx1ZSBwYWxldHRlLCBjb252ZXJzYXRpb25hbCBVSSBwYXR0ZXJucyB8CnwgYG1pcm8ubWRgIHwgTWlybyB8IEJyaWdodCB5ZWxsb3cgYWNjZW50LCBpbmZpbml0ZSBjYW52YXMgYWVzdGhldGljIHwKfCBgbm90aW9uLm1kYCB8IE5vdGlvbiB8IFdhcm0gbWluaW1hbGlzbSwgc2VyaWYgaGVhZGluZ3MsIHNvZnQgc3VyZmFjZXMgfAp8IGBwaW50ZXJlc3QubWRgIHwgUGludGVyZXN0IHwgUmVkIGFjY2VudCwgbWFzb25yeSBncmlkLCBpbWFnZS1maXJzdCBsYXlvdXQgfAp8IGB3ZWJmbG93Lm1kYCB8IFdlYmZsb3cgfCBCbHVlLWFjY2VudGVkLCBwb2xpc2hlZCBtYXJrZXRpbmcgc2l0ZSBhZXN0aGV0aWMgfAoKIyMjIEZpbnRlY2ggJiBDcnlwdG8KCnwgVGVtcGxhdGUgfCBTaXRlIHwgU3R5bGUgfAp8LS0tfC0tLXwtLS18CnwgYGNvaW5iYXNlLm1kYCB8IENvaW5iYXNlIHwgQ2xlYW4gYmx1ZSBpZGVudGl0eSwgdHJ1c3QtZm9jdXNlZCwgaW5zdGl0dXRpb25hbCBmZWVsIHwKfCBga3Jha2VuLm1kYCB8IEtyYWtlbiB8IFB1cnBsZS1hY2NlbnRlZCBkYXJrIFVJLCBkYXRhLWRlbnNlIGRhc2hib2FyZHMgfAp8IGByZXZvbHV0Lm1kYCB8IFJldm9sdXQgfCBTbGVlayBkYXJrIGludGVyZmFjZSwgZ3JhZGllbnQgY2FyZHMsIGZpbnRlY2ggcHJlY2lzaW9uIHwKfCBgd2lzZS5tZGAgfCBXaXNlIHwgQnJpZ2h0IGdyZWVuIGFjY2VudCwgZnJpZW5kbHkgYW5kIGNsZWFyIHwKCiMjIyBFbnRlcnByaXNlICYgQ29uc3VtZXIKCnwgVGVtcGxhdGUgfCBTaXRlIHwgU3R5bGUgfAp8LS0tfC0tLXwtLS18CnwgYGFpcmJuYi5tZGAgfCBBaXJibmIgfCBXYXJtIGNvcmFsIGFjY2VudCwgcGhvdG9ncmFwaHktZHJpdmVuLCByb3VuZGVkIFVJIHwKfCBgYXBwbGUubWRgIHwgQXBwbGUgfCBQcmVtaXVtIHdoaXRlIHNwYWNlLCBTRiBQcm8sIGNpbmVtYXRpYyBpbWFnZXJ5IHwKfCBgYm13Lm1kYCB8IEJNVyB8IERhcmsgcHJlbWl1bSBzdXJmYWNlcywgcHJlY2lzZSBlbmdpbmVlcmluZyBhZXN0aGV0aWMgfAp8IGBpYm0ubWRgIHwgSUJNIHwgQ2FyYm9uIGRlc2lnbiBzeXN0ZW0sIHN0cnVjdHVyZWQgYmx1ZSBwYWxldHRlIHwKfCBgbnZpZGlhLm1kYCB8IE5WSURJQSB8IEdyZWVuLWJsYWNrIGVuZXJneSwgdGVjaG5pY2FsIHBvd2VyIGFlc3RoZXRpYyB8CnwgYHNwYWNleC5tZGAgfCBTcGFjZVggfCBTdGFyayBibGFjayBhbmQgd2hpdGUsIGZ1bGwtYmxlZWQgaW1hZ2VyeSwgZnV0dXJpc3RpYyB8CnwgYHNwb3RpZnkubWRgIHwgU3BvdGlmeSB8IFZpYnJhbnQgZ3JlZW4gb24gZGFyaywgYm9sZCB0eXBlLCBhbGJ1bS1hcnQtZHJpdmVuIHwKfCBgdWJlci5tZGAgfCBVYmVyIHwgQm9sZCBibGFjayBhbmQgd2hpdGUsIHRpZ2h0IHR5cGUsIHVyYmFuIGVuZXJneSB8CgojIyBDaG9vc2luZyBhIERlc2lnbgoKTWF0Y2ggdGhlIGRlc2lnbiB0byB0aGUgY29udGVudDoKCi0gKipEZXZlbG9wZXIgdG9vbHMgLyBkYXNoYm9hcmRzOioqIExpbmVhciwgVmVyY2VsLCBTdXBhYmFzZSwgUmF5Y2FzdCwgU2VudHJ5Ci0gKipEb2N1bWVudGF0aW9uIC8gY29udGVudCBzaXRlczoqKiBNaW50bGlmeSwgTm90aW9uLCBTYW5pdHksIE1vbmdvREIKLSAqKk1hcmtldGluZyAvIGxhbmRpbmcgcGFnZXM6KiogU3RyaXBlLCBGcmFtZXIsIEFwcGxlLCBTcGFjZVgKLSAqKkRhcmsgbW9kZSBVSXM6KiogTGluZWFyLCBDdXJzb3IsIEVsZXZlbkxhYnMsIFdhcnAsIFN1cGVyaHVtYW4KLSAqKkxpZ2h0IC8gY2xlYW4gVUlzOioqIFZlcmNlbCwgU3RyaXBlLCBOb3Rpb24sIENhbC5jb20sIFJlcGxpY2F0ZQotICoqUGxheWZ1bCAvIGZyaWVuZGx5OioqIFBvc3RIb2csIEZpZ21hLCBMb3ZhYmxlLCBaYXBpZXIsIE1pcm8KLSAqKlByZW1pdW0gLyBsdXh1cnk6KiogQXBwbGUsIEJNVywgU3RyaXBlLCBTdXBlcmh1bWFuLCBSZXZvbHV0Ci0gKipEYXRhLWRlbnNlIC8gZGFzaGJvYXJkczoqKiBTZW50cnksIEtyYWtlbiwgQ29oZXJlLCBDbGlja0hvdXNlCi0gKipNb25vc3BhY2UgLyB0ZXJtaW5hbCBhZXN0aGV0aWM6KiogT2xsYW1hLCBPcGVuQ29kZSwgeC5haSwgVm9sdEFnZW50
+---
+name: popular-web-designs
+description: >
+  54 production-quality design systems extracted from real websites. Load a template
+  to generate HTML/CSS that matches the visual identity of sites like Stripe, Linear,
+  Vercel, Notion, Airbnb, and more. Each template includes colors, typography, components,
+  layout rules, and ready-to-use CSS values.
+version: 1.0.0
+author: Hermes Agent + Teknium (design systems sourced from VoltAgent/awesome-design-md)
+license: MIT
+tags: [design, css, html, ui, web-development, design-systems, templates]
+triggers:
+  - build a page that looks like
+  - make it look like stripe
+  - design like linear
+  - vercel style
+  - create a UI
+  - web design
+  - landing page
+  - dashboard design
+  - website styled like
+---
+
+# Popular Web Designs
+
+54 real-world design systems ready for use when generating HTML/CSS. Each template captures a
+site's complete visual language: color palette, typography hierarchy, component styles, spacing
+system, shadows, responsive behavior, and practical agent prompts with exact CSS values.
+
+## How to Use
+
+1. Pick a design from the catalog below
+2. Load it: `skill_view(name="popular-web-designs", file_path="templates/<site>.md")`
+3. Use the design tokens and component specs when generating HTML
+4. Pair with the `generative-widgets` skill to serve the result via cloudflared tunnel
+
+Each template includes a **Hermes Implementation Notes** block at the top with:
+- CDN font substitute and Google Fonts `<link>` tag (ready to paste)
+- CSS font-family stacks for primary and monospace
+- Reminders to use `write_file` for HTML creation and `browser_vision` for verification
+
+## HTML Generation Pattern
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Title</title>
+  <!-- Paste the Google Fonts <link> from the template's Hermes notes -->
+  <link href="https://fonts.googleapis.com/css2?family=..." rel="stylesheet">
+  <style>
+    /* Apply the template's color palette as CSS custom properties */
+    :root {
+      --color-bg: #ffffff;
+      --color-text: #171717;
+      --color-accent: #533afd;
+      /* ... more from template Section 2 */
+    }
+    /* Apply typography from template Section 3 */
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      color: var(--color-text);
+      background: var(--color-bg);
+    }
+    /* Apply component styles from template Section 4 */
+    /* Apply layout from template Section 5 */
+    /* Apply shadows from template Section 6 */
+  </style>
+</head>
+<body>
+  <!-- Build using component specs from the template -->
+</body>
+</html>
+```
+
+Write the file with `write_file`, serve with the `generative-widgets` workflow (cloudflared tunnel),
+and verify the result with `browser_vision` to confirm visual accuracy.
+
+## Font Substitution Reference
+
+Most sites use proprietary fonts unavailable via CDN. Each template maps to a Google Fonts
+substitute that preserves the design's character. Common mappings:
+
+| Proprietary Font | CDN Substitute | Character |
+|---|---|---|
+| Geist / Geist Sans | Geist (on Google Fonts) | Geometric, compressed tracking |
+| Geist Mono | Geist Mono (on Google Fonts) | Clean monospace, ligatures |
+| sohne-var (Stripe) | Source Sans 3 | Light weight elegance |
+| Berkeley Mono | JetBrains Mono | Technical monospace |
+| Airbnb Cereal VF | DM Sans | Rounded, friendly geometric |
+| Circular (Spotify) | DM Sans | Geometric, warm |
+| figmaSans | Inter | Clean humanist |
+| Pin Sans (Pinterest) | DM Sans | Friendly, rounded |
+| NVIDIA-EMEA | Inter (or Arial system) | Industrial, clean |
+| CoinbaseDisplay/Sans | DM Sans | Geometric, trustworthy |
+| UberMove | DM Sans | Bold, tight |
+| HashiCorp Sans | Inter | Enterprise, neutral |
+| waldenburgNormal (Sanity) | Space Grotesk | Geometric, slightly condensed |
+| IBM Plex Sans/Mono | IBM Plex Sans/Mono | Available on Google Fonts |
+| Rubik (Sentry) | Rubik | Available on Google Fonts |
+
+When a template's CDN font matches the original (Inter, IBM Plex, Rubik, Geist), no
+substitution loss occurs. When a substitute is used (DM Sans for Circular, Source Sans 3
+for sohne-var), follow the template's weight, size, and letter-spacing values closely —
+those carry more visual identity than the specific font face.
+
+## Design Catalog
+
+### AI & Machine Learning
+
+| Template | Site | Style |
+|---|---|---|
+| `claude.md` | Anthropic Claude | Warm terracotta accent, clean editorial layout |
+| `cohere.md` | Cohere | Vibrant gradients, data-rich dashboard aesthetic |
+| `elevenlabs.md` | ElevenLabs | Dark cinematic UI, audio-waveform aesthetics |
+| `minimax.md` | Minimax | Bold dark interface with neon accents |
+| `mistral.ai.md` | Mistral AI | French-engineered minimalism, purple-toned |
+| `ollama.md` | Ollama | Terminal-first, monochrome simplicity |
+| `opencode.ai.md` | OpenCode AI | Developer-centric dark theme, full monospace |
+| `replicate.md` | Replicate | Clean white canvas, code-forward |
+| `runwayml.md` | RunwayML | Cinematic dark UI, media-rich layout |
+| `together.ai.md` | Together AI | Technical, blueprint-style design |
+| `voltagent.md` | VoltAgent | Void-black canvas, emerald accent, terminal-native |
+| `x.ai.md` | xAI | Stark monochrome, futuristic minimalism, full monospace |
+
+### Developer Tools & Platforms
+
+| Template | Site | Style |
+|---|---|---|
+| `cursor.md` | Cursor | Sleek dark interface, gradient accents |
+| `expo.md` | Expo | Dark theme, tight letter-spacing, code-centric |
+| `linear.app.md` | Linear | Ultra-minimal dark-mode, precise, purple accent |
+| `lovable.md` | Lovable | Playful gradients, friendly dev aesthetic |
+| `mintlify.md` | Mintlify | Clean, green-accented, reading-optimized |
+| `posthog.md` | PostHog | Playful branding, developer-friendly dark UI |
+| `raycast.md` | Raycast | Sleek dark chrome, vibrant gradient accents |
+| `resend.md` | Resend | Minimal dark theme, monospace accents |
+| `sentry.md` | Sentry | Dark dashboard, data-dense, pink-purple accent |
+| `supabase.md` | Supabase | Dark emerald theme, code-first developer tool |
+| `superhuman.md` | Superhuman | Premium dark UI, keyboard-first, purple glow |
+| `vercel.md` | Vercel | Black and white precision, Geist font system |
+| `warp.md` | Warp | Dark IDE-like interface, block-based command UI |
+| `zapier.md` | Zapier | Warm orange, friendly illustration-driven |
+
+### Infrastructure & Cloud
+
+| Template | Site | Style |
+|---|---|---|
+| `clickhouse.md` | ClickHouse | Yellow-accented, technical documentation style |
+| `composio.md` | Composio | Modern dark with colorful integration icons |
+| `hashicorp.md` | HashiCorp | Enterprise-clean, black and white |
+| `mongodb.md` | MongoDB | Green leaf branding, developer documentation focus |
+| `sanity.md` | Sanity | Red accent, content-first editorial layout |
+| `stripe.md` | Stripe | Signature purple gradients, weight-300 elegance |
+
+### Design & Productivity
+
+| Template | Site | Style |
+|---|---|---|
+| `airtable.md` | Airtable | Colorful, friendly, structured data aesthetic |
+| `cal.md` | Cal.com | Clean neutral UI, developer-oriented simplicity |
+| `clay.md` | Clay | Organic shapes, soft gradients, art-directed layout |
+| `figma.md` | Figma | Vibrant multi-color, playful yet professional |
+| `framer.md` | Framer | Bold black and blue, motion-first, design-forward |
+| `intercom.md` | Intercom | Friendly blue palette, conversational UI patterns |
+| `miro.md` | Miro | Bright yellow accent, infinite canvas aesthetic |
+| `notion.md` | Notion | Warm minimalism, serif headings, soft surfaces |
+| `pinterest.md` | Pinterest | Red accent, masonry grid, image-first layout |
+| `webflow.md` | Webflow | Blue-accented, polished marketing site aesthetic |
+
+### Fintech & Crypto
+
+| Template | Site | Style |
+|---|---|---|
+| `coinbase.md` | Coinbase | Clean blue identity, trust-focused, institutional feel |
+| `kraken.md` | Kraken | Purple-accented dark UI, data-dense dashboards |
+| `revolut.md` | Revolut | Sleek dark interface, gradient cards, fintech precision |
+| `wise.md` | Wise | Bright green accent, friendly and clear |
+
+### Enterprise & Consumer
+
+| Template | Site | Style |
+|---|---|---|
+| `airbnb.md` | Airbnb | Warm coral accent, photography-driven, rounded UI |
+| `apple.md` | Apple | Premium white space, SF Pro, cinematic imagery |
+| `bmw.md` | BMW | Dark premium surfaces, precise engineering aesthetic |
+| `ibm.md` | IBM | Carbon design system, structured blue palette |
+| `nvidia.md` | NVIDIA | Green-black energy, technical power aesthetic |
+| `spacex.md` | SpaceX | Stark black and white, full-bleed imagery, futuristic |
+| `spotify.md` | Spotify | Vibrant green on dark, bold type, album-art-driven |
+| `uber.md` | Uber | Bold black and white, tight type, urban energy |
+
+## Choosing a Design
+
+Match the design to the content:
+
+- **Developer tools / dashboards:** Linear, Vercel, Supabase, Raycast, Sentry
+- **Documentation / content sites:** Mintlify, Notion, Sanity, MongoDB
+- **Marketing / landing pages:** Stripe, Framer, Apple, SpaceX
+- **Dark mode UIs:** Linear, Cursor, ElevenLabs, Warp, Superhuman
+- **Light / clean UIs:** Vercel, Stripe, Notion, Cal.com, Replicate
+- **Playful / friendly:** PostHog, Figma, Lovable, Zapier, Miro
+- **Premium / luxury:** Apple, BMW, Stripe, Superhuman, Revolut
+- **Data-dense / dashboards:** Sentry, Kraken, Cohere, ClickHouse
+- **Monospace / terminal aesthetic:** Ollama, OpenCode, x.ai, VoltAgent

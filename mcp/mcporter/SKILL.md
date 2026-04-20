@@ -1,1 +1,122 @@
-LS0tCm5hbWU6IG1jcG9ydGVyCmRlc2NyaXB0aW9uOiBVc2UgdGhlIG1jcG9ydGVyIENMSSB0byBsaXN0LCBjb25maWd1cmUsIGF1dGgsIGFuZCBjYWxsIE1DUCBzZXJ2ZXJzL3Rvb2xzIGRpcmVjdGx5IChIVFRQIG9yIHN0ZGlvKSwgaW5jbHVkaW5nIGFkLWhvYyBzZXJ2ZXJzLCBjb25maWcgZWRpdHMsIGFuZCBDTEkvdHlwZSBnZW5lcmF0aW9uLgp2ZXJzaW9uOiAxLjAuMAphdXRob3I6IGNvbW11bml0eQpsaWNlbnNlOiBNSVQKbWV0YWRhdGE6CiAgaGVybWVzOgogICAgdGFnczogW01DUCwgVG9vbHMsIEFQSSwgSW50ZWdyYXRpb25zLCBJbnRlcm9wXQogICAgaG9tZXBhZ2U6IGh0dHBzOi8vbWNwb3J0ZXIuZGV2CnByZXJlcXVpc2l0ZXM6CiAgY29tbWFuZHM6IFtucHhdCi0tLQoKIyBtY3BvcnRlcgoKVXNlIGBtY3BvcnRlcmAgdG8gZGlzY292ZXIsIGNhbGwsIGFuZCBtYW5hZ2UgW01DUCAoTW9kZWwgQ29udGV4dCBQcm90b2NvbCldKGh0dHBzOi8vbW9kZWxjb250ZXh0cHJvdG9jb2wuaW8vKSBzZXJ2ZXJzIGFuZCB0b29scyBkaXJlY3RseSBmcm9tIHRoZSB0ZXJtaW5hbC4KCiMjIFByZXJlcXVpc2l0ZXMKClJlcXVpcmVzIE5vZGUuanM6CmBgYGJhc2gKIyBObyBpbnN0YWxsIG5lZWRlZCAocnVucyB2aWEgbnB4KQpucHggbWNwb3J0ZXIgbGlzdAoKIyBPciBpbnN0YWxsIGdsb2JhbGx5Cm5wbSBpbnN0YWxsIC1nIG1jcG9ydGVyCmBgYAoKIyMgUXVpY2sgU3RhcnQKCmBgYGJhc2gKIyBMaXN0IE1DUCBzZXJ2ZXJzIGFscmVhZHkgY29uZmlndXJlZCBvbiB0aGlzIG1hY2hpbmUKbWNwb3J0ZXIgbGlzdAoKIyBMaXN0IHRvb2xzIGZvciBhIHNwZWNpZmljIHNlcnZlciB3aXRoIHNjaGVtYSBkZXRhaWxzCm1jcG9ydGVyIGxpc3QgPHNlcnZlcj4gLS1zY2hlbWEKCiMgQ2FsbCBhIHRvb2wKbWNwb3J0ZXIgY2FsbCA8c2VydmVyLnRvb2w+IGtleT12YWx1ZQpgYGAKCiMjIERpc2NvdmVyaW5nIE1DUCBTZXJ2ZXJzCgptY3BvcnRlciBhdXRvLWRpc2NvdmVycyBzZXJ2ZXJzIGNvbmZpZ3VyZWQgYnkgb3RoZXIgTUNQIGNsaWVudHMgKENsYXVkZSBEZXNrdG9wLCBDdXJzb3IsIGV0Yy4pIG9uIHRoZSBtYWNoaW5lLiBUbyBmaW5kIG5ldyBzZXJ2ZXJzIHRvIHVzZSwgYnJvd3NlIHJlZ2lzdHJpZXMgbGlrZSBbbWNwZmluZGVyLmRldl0oaHR0cHM6Ly9tY3BmaW5kZXIuZGV2KSBvciBbbWNwLnNvXShodHRwczovL21jcC5zbyksIHRoZW4gY29ubmVjdCBhZC1ob2M6CgpgYGBiYXNoCiMgQ29ubmVjdCB0byBhbnkgTUNQIHNlcnZlciBieSBVUkwgKG5vIGNvbmZpZyBuZWVkZWQpCm1jcG9ydGVyIGxpc3QgLS1odHRwLXVybCBodHRwczovL3NvbWUtbWNwLXNlcnZlci5jb20gLS1uYW1lIG15X3NlcnZlcgoKIyBPciBydW4gYSBzdGRpbyBzZXJ2ZXIgb24gdGhlIGZseQptY3BvcnRlciBsaXN0IC0tc3RkaW8gIm5weCAteSBAbW9kZWxjb250ZXh0cHJvdG9jb2wvc2VydmVyLWZpbGVzeXN0ZW0iIC0tbmFtZSBmcwpgYGAKCiMjIENhbGxpbmcgVG9vbHMKCmBgYGJhc2gKIyBLZXk9dmFsdWUgc3ludGF4Cm1jcG9ydGVyIGNhbGwgbGluZWFyLmxpc3RfaXNzdWVzIHRlYW09RU5HIGxpbWl0OjUKCiMgRnVuY3Rpb24gc3ludGF4Cm1jcG9ydGVyIGNhbGwgImxpbmVhci5jcmVhdGVfaXNzdWUodGl0bGU6IFwiQnVnIGZpeCBuZWVkZWRcIikiCgojIEFkLWhvYyBIVFRQIHNlcnZlciAobm8gY29uZmlnIG5lZWRlZCkKbWNwb3J0ZXIgY2FsbCBodHRwczovL2FwaS5leGFtcGxlLmNvbS9tY3AuZmV0Y2ggdXJsPWh0dHBzOi8vZXhhbXBsZS5jb20KCiMgQWQtaG9jIHN0ZGlvIHNlcnZlcgptY3BvcnRlciBjYWxsIC0tc3RkaW8gImJ1biBydW4gLi9zZXJ2ZXIudHMiIHNjcmFwZSB1cmw9aHR0cHM6Ly9leGFtcGxlLmNvbQoKIyBKU09OIHBheWxvYWQKbWNwb3J0ZXIgY2FsbCA8c2VydmVyLnRvb2w+IC0tYXJncyAneyJsaW1pdCI6IDV9JwoKIyBNYWNoaW5lLXJlYWRhYmxlIG91dHB1dCAocmVjb21tZW5kZWQgZm9yIEhlcm1lcykKbWNwb3J0ZXIgY2FsbCA8c2VydmVyLnRvb2w+IGtleT12YWx1ZSAtLW91dHB1dCBqc29uCmBgYAoKIyMgQXV0aCBhbmQgQ29uZmlnCgpgYGBiYXNoCiMgT0F1dGggbG9naW4gZm9yIGEgc2VydmVyCm1jcG9ydGVyIGF1dGggPHNlcnZlciB8IHVybD4gWy0tcmVzZXRdCgojIE1hbmFnZSBjb25maWcKbWNwb3J0ZXIgY29uZmlnIGxpc3QKbWNwb3J0ZXIgY29uZmlnIGdldCA8a2V5PgptY3BvcnRlciBjb25maWcgYWRkIDxzZXJ2ZXI+Cm1jcG9ydGVyIGNvbmZpZyByZW1vdmUgPHNlcnZlcj4KbWNwb3J0ZXIgY29uZmlnIGltcG9ydCA8cGF0aD4KYGBgCgpDb25maWcgZmlsZSBsb2NhdGlvbjogYC4vY29uZmlnL21jcG9ydGVyLmpzb25gIChvdmVycmlkZSB3aXRoIGAtLWNvbmZpZ2ApLgoKIyMgRGFlbW9uCgpGb3IgcGVyc2lzdGVudCBzZXJ2ZXIgY29ubmVjdGlvbnM6CmBgYGJhc2gKbWNwb3J0ZXIgZGFlbW9uIHN0YXJ0Cm1jcG9ydGVyIGRhZW1vbiBzdGF0dXMKbWNwb3J0ZXIgZGFlbW9uIHN0b3AKbWNwb3J0ZXIgZGFlbW9uIHJlc3RhcnQKYGBgCgojIyBDb2RlIEdlbmVyYXRpb24KCmBgYGJhc2gKIyBHZW5lcmF0ZSBhIENMSSB3cmFwcGVyIGZvciBhbiBNQ1Agc2VydmVyCm1jcG9ydGVyIGdlbmVyYXRlLWNsaSAtLXNlcnZlciA8bmFtZT4KbWNwb3J0ZXIgZ2VuZXJhdGUtY2xpIC0tY29tbWFuZCA8dXJsPgoKIyBJbnNwZWN0IGEgZ2VuZXJhdGVkIENMSQptY3BvcnRlciBpbnNwZWN0LWNsaSA8cGF0aD4gWy0tanNvbl0KCiMgR2VuZXJhdGUgVHlwZVNjcmlwdCB0eXBlcy9jbGllbnQKbWNwb3J0ZXIgZW1pdC10cyA8c2VydmVyPiAtLW1vZGUgY2xpZW50Cm1jcG9ydGVyIGVtaXQtdHMgPHNlcnZlcj4gLS1tb2RlIHR5cGVzCmBgYAoKIyMgTm90ZXMKCi0gVXNlIGAtLW91dHB1dCBqc29uYCBmb3Igc3RydWN0dXJlZCBvdXRwdXQgdGhhdCdzIGVhc2llciB0byBwYXJzZQotIEFkLWhvYyBzZXJ2ZXJzIChIVFRQIFVSTCBvciBgLS1zdGRpb2AgY29tbWFuZCkgd29yayB3aXRob3V0IGFueSBjb25maWcg4oCUIHVzZWZ1bCBmb3Igb25lLW9mZiBjYWxscwotIE9BdXRoIGF1dGggbWF5IHJlcXVpcmUgaW50ZXJhY3RpdmUgYnJvd3NlciBmbG93IOKAlCB1c2UgYHRlcm1pbmFsKGNvbW1hbmQ9Im1jcG9ydGVyIGF1dGggPHNlcnZlcj4iLCBwdHk9dHJ1ZSlgIGlmIG5lZWRlZAo=
+---
+name: mcporter
+description: Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.
+version: 1.0.0
+author: community
+license: MIT
+metadata:
+  hermes:
+    tags: [MCP, Tools, API, Integrations, Interop]
+    homepage: https://mcporter.dev
+prerequisites:
+  commands: [npx]
+---
+
+# mcporter
+
+Use `mcporter` to discover, call, and manage [MCP (Model Context Protocol)](https://modelcontextprotocol.io/) servers and tools directly from the terminal.
+
+## Prerequisites
+
+Requires Node.js:
+```bash
+# No install needed (runs via npx)
+npx mcporter list
+
+# Or install globally
+npm install -g mcporter
+```
+
+## Quick Start
+
+```bash
+# List MCP servers already configured on this machine
+mcporter list
+
+# List tools for a specific server with schema details
+mcporter list <server> --schema
+
+# Call a tool
+mcporter call <server.tool> key=value
+```
+
+## Discovering MCP Servers
+
+mcporter auto-discovers servers configured by other MCP clients (Claude Desktop, Cursor, etc.) on the machine. To find new servers to use, browse registries like [mcpfinder.dev](https://mcpfinder.dev) or [mcp.so](https://mcp.so), then connect ad-hoc:
+
+```bash
+# Connect to any MCP server by URL (no config needed)
+mcporter list --http-url https://some-mcp-server.com --name my_server
+
+# Or run a stdio server on the fly
+mcporter list --stdio "npx -y @modelcontextprotocol/server-filesystem" --name fs
+```
+
+## Calling Tools
+
+```bash
+# Key=value syntax
+mcporter call linear.list_issues team=ENG limit:5
+
+# Function syntax
+mcporter call "linear.create_issue(title: \"Bug fix needed\")"
+
+# Ad-hoc HTTP server (no config needed)
+mcporter call https://api.example.com/mcp.fetch url=https://example.com
+
+# Ad-hoc stdio server
+mcporter call --stdio "bun run ./server.ts" scrape url=https://example.com
+
+# JSON payload
+mcporter call <server.tool> --args '{"limit": 5}'
+
+# Machine-readable output (recommended for Hermes)
+mcporter call <server.tool> key=value --output json
+```
+
+## Auth and Config
+
+```bash
+# OAuth login for a server
+mcporter auth <server | url> [--reset]
+
+# Manage config
+mcporter config list
+mcporter config get <key>
+mcporter config add <server>
+mcporter config remove <server>
+mcporter config import <path>
+```
+
+Config file location: `./config/mcporter.json` (override with `--config`).
+
+## Daemon
+
+For persistent server connections:
+```bash
+mcporter daemon start
+mcporter daemon status
+mcporter daemon stop
+mcporter daemon restart
+```
+
+## Code Generation
+
+```bash
+# Generate a CLI wrapper for an MCP server
+mcporter generate-cli --server <name>
+mcporter generate-cli --command <url>
+
+# Inspect a generated CLI
+mcporter inspect-cli <path> [--json]
+
+# Generate TypeScript types/client
+mcporter emit-ts <server> --mode client
+mcporter emit-ts <server> --mode types
+```
+
+## Notes
+
+- Use `--output json` for structured output that's easier to parse
+- Ad-hoc servers (HTTP URL or `--stdio` command) work without any config — useful for one-off calls
+- OAuth auth may require interactive browser flow — use `terminal(command="mcporter auth <server>", pty=true)` if needed

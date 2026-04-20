@@ -1,1 +1,147 @@
-LS0tCm5hbWU6IGlkZWF0aW9uCnRpdGxlOiBDcmVhdGl2ZSBJZGVhdGlvbiDigJQgQ29uc3RyYWludC1Ecml2ZW4gUHJvamVjdCBHZW5lcmF0aW9uCmRlc2NyaXB0aW9uOiAiR2VuZXJhdGUgcHJvamVjdCBpZGVhcyB0aHJvdWdoIGNyZWF0aXZlIGNvbnN0cmFpbnRzLiBVc2Ugd2hlbiB0aGUgdXNlciBzYXlzICdJIHdhbnQgdG8gYnVpbGQgc29tZXRoaW5nJywgJ2dpdmUgbWUgYSBwcm9qZWN0IGlkZWEnLCAnSSdtIGJvcmVkJywgJ3doYXQgc2hvdWxkIEkgbWFrZScsICdpbnNwaXJlIG1lJywgb3IgYW55IHZhcmlhbnQgb2YgJ0kgaGF2ZSB0b29scyBidXQgbm8gZGlyZWN0aW9uJy4gV29ya3MgZm9yIGNvZGUsIGFydCwgaGFyZHdhcmUsIHdyaXRpbmcsIHRvb2xzLCBhbmQgYW55dGhpbmcgdGhhdCBjYW4gYmUgbWFkZS4iCnZlcnNpb246IDEuMC4wCmF1dGhvcjogU0hMME1TCmxpY2Vuc2U6IE1JVAptZXRhZGF0YToKICBoZXJtZXM6CiAgICB0YWdzOiBbQ3JlYXRpdmUsIElkZWF0aW9uLCBQcm9qZWN0cywgQnJhaW5zdG9ybWluZywgSW5zcGlyYXRpb25dCiAgICBjYXRlZ29yeTogY3JlYXRpdmUKICAgIHJlcXVpcmVzX3Rvb2xzZXRzOiBbXQotLS0KCiMgQ3JlYXRpdmUgSWRlYXRpb24KCkdlbmVyYXRlIHByb2plY3QgaWRlYXMgdGhyb3VnaCBjcmVhdGl2ZSBjb25zdHJhaW50cy4gQ29uc3RyYWludCArIGRpcmVjdGlvbiA9IGNyZWF0aXZpdHkuCgojIyBIb3cgSXQgV29ya3MKCjEuICoqUGljayBhIGNvbnN0cmFpbnQqKiBmcm9tIHRoZSBsaWJyYXJ5IGJlbG93IOKAlCByYW5kb20sIG9yIG1hdGNoZWQgdG8gdGhlIHVzZXIncyBkb21haW4vbW9vZAoyLiAqKkludGVycHJldCBpdCBicm9hZGx5Kiog4oCUIGEgY29kaW5nIHByb21wdCBjYW4gYmVjb21lIGEgaGFyZHdhcmUgcHJvamVjdCwgYW4gYXJ0IHByb21wdCBjYW4gYmVjb21lIGEgQ0xJIHRvb2wKMy4gKipHZW5lcmF0ZSAzIGNvbmNyZXRlIHByb2plY3QgaWRlYXMqKiB0aGF0IHNhdGlzZnkgdGhlIGNvbnN0cmFpbnQKNC4gKipJZiB0aGV5IHBpY2sgb25lLCBidWlsZCBpdCoqIOKAlCBjcmVhdGUgdGhlIHByb2plY3QsIHdyaXRlIHRoZSBjb2RlLCBzaGlwIGl0CgojIyBUaGUgUnVsZQoKRXZlcnkgcHJvbXB0IGlzIGludGVycHJldGVkIGFzIGJyb2FkbHkgYXMgcG9zc2libGUuICJEb2VzIHRoaXMgaW5jbHVkZSBYPyIg4oaSIFllcy4gVGhlIHByb21wdHMgcHJvdmlkZSBkaXJlY3Rpb24gYW5kIG1pbGQgY29uc3RyYWludC4gV2l0aG91dCBlaXRoZXIsIHRoZXJlIGlzIG5vIGNyZWF0aXZpdHkuCgojIyBDb25zdHJhaW50IExpYnJhcnkKCiMjIyBGb3IgRGV2ZWxvcGVycwoKKipTb2x2ZSB5b3VyIG93biBpdGNoOioqCkJ1aWxkIHRoZSB0b29sIHlvdSB3aXNoZWQgZXhpc3RlZCB0aGlzIHdlZWsuIFVuZGVyIDUwIGxpbmVzLiBTaGlwIGl0IHRvZGF5LgoKKipBdXRvbWF0ZSB0aGUgYW5ub3lpbmcgdGhpbmc6KioKV2hhdCdzIHRoZSBtb3N0IHRlZGlvdXMgcGFydCBvZiB5b3VyIHdvcmtmbG93PyBTY3JpcHQgaXQgYXdheS4gVHdvIGhvdXJzIHRvIGZpeCBhIHByb2JsZW0gdGhhdCBjb3N0cyB5b3UgZml2ZSBtaW51dGVzIGEgZGF5LgoKKipUaGUgQ0xJIHRvb2wgdGhhdCBzaG91bGQgZXhpc3Q6KioKVGhpbmsgb2YgYSBjb21tYW5kIHlvdSd2ZSB3aXNoZWQgeW91IGNvdWxkIHR5cGUuIGBnaXQgdW5kby10aGF0LXRoaW5nLWktanVzdC1kaWRgLiBgZG9ja2VyIHdoeS1pcy10aGlzLWJyb2tlbmAuIGBucG0gZXhwbGFpbi15b3Vyc2VsZmAuIE5vdyBidWlsZCBpdC4KCioqTm90aGluZyBuZXcgZXhjZXB0IGdsdWU6KioKTWFrZSBzb21ldGhpbmcgZW50aXJlbHkgZnJvbSBleGlzdGluZyBBUElzLCBsaWJyYXJpZXMsIGFuZCBkYXRhc2V0cy4gVGhlIG9ubHkgb3JpZ2luYWwgY29udHJpYnV0aW9uIGlzIGhvdyB5b3UgY29ubmVjdCB0aGVtLgoKKipGcmFua2Vuc3RlaW4gd2VlazoqKgpUYWtlIHNvbWV0aGluZyB0aGF0IGRvZXMgWCBhbmQgbWFrZSBpdCBkbyBZLiBBIGdpdCByZXBvIHRoYXQgcGxheXMgbXVzaWMuIEEgRG9ja2VyZmlsZSB0aGF0IGdlbmVyYXRlcyBwb2V0cnkuIEEgY3JvbiBqb2IgdGhhdCBzZW5kcyBjb21wbGltZW50cy4KCioqU3VidHJhY3Q6KioKSG93IG11Y2ggY2FuIHlvdSByZW1vdmUgZnJvbSBhIGNvZGViYXNlIGJlZm9yZSBpdCBicmVha3M/IFN0cmlwIGEgdG9vbCB0byBpdHMgbWluaW11bSB2aWFibGUgZnVuY3Rpb24uIERlbGV0ZSB1bnRpbCBvbmx5IHRoZSBlc3NlbmNlIHJlbWFpbnMuCgoqKkhpZ2ggY29uY2VwdCwgbG93IGVmZm9ydDoqKgpBIGRlZXAgaWRlYSwgbGF6aWx5IGV4ZWN1dGVkLiBUaGUgY29uY2VwdCBzaG91bGQgYmUgYnJpbGxpYW50LiBUaGUgaW1wbGVtZW50YXRpb24gc2hvdWxkIHRha2UgYW4gYWZ0ZXJub29uLiBJZiBpdCB0YWtlcyBsb25nZXIsIHlvdSdyZSBvdmVydGhpbmtpbmcgaXQuCgojIyMgRm9yIE1ha2VycyAmIEFydGlzdHMKCioqQmxhdGFudGx5IGNvcHkgc29tZXRoaW5nOioqClBpY2sgc29tZXRoaW5nIHlvdSBhZG1pcmUg4oCUIGEgdG9vbCwgYW4gYXJ0d29yaywgYW4gaW50ZXJmYWNlLiBSZWNyZWF0ZSBpdCBmcm9tIHNjcmF0Y2guIFRoZSBsZWFybmluZyBpcyBpbiB0aGUgZ2FwIGJldHdlZW4geW91ciB2ZXJzaW9uIGFuZCB0aGVpcnMuCgoqKk9uZSBtaWxsaW9uIG9mIHNvbWV0aGluZzoqKgpPbmUgbWlsbGlvbiBpcyBib3RoIGEgbG90IGFuZCBub3QgdGhhdCBtdWNoLiBPbmUgbWlsbGlvbiBwaXhlbHMgaXMgYSAxTUIgcGhvdG8uIE9uZSBtaWxsaW9uIEFQSSBjYWxscyBpcyBhIFR1ZXNkYXkuIE9uZSBtaWxsaW9uIG9mIGFueXRoaW5nIGJlY29tZXMgaW50ZXJlc3RpbmcgYXQgc2NhbGUuCgoqKk1ha2Ugc29tZXRoaW5nIHRoYXQgZGllczoqKgpBIHdlYnNpdGUgdGhhdCBsb3NlcyBhIGZlYXR1cmUgZXZlcnkgZGF5LiBBIGNoYXRib3QgdGhhdCBmb3JnZXRzLiBBIGNvdW50ZG93biB0byBub3RoaW5nLiBBbiBleGVyY2lzZSBpbiByb3QsIGtpbGxpbmcsIG9yIGxldHRpbmcgZ28uCgoqKkRvIGEgbG90IG9mIG1hdGg6KioKR2VuZXJhdGl2ZSBnZW9tZXRyeSwgc2hhZGVyIGdvbGYsIG1hdGhlbWF0aWNhbCBhcnQsIGNvbXB1dGF0aW9uYWwgb3JpZ2FtaS4gVGltZSB0byByZS1sZWFybiB3aGF0IGFuIGFyY3NpbiBpcy4KCiMjIyBGb3IgQW55b25lCgoqKlRleHQgaXMgdGhlIHVuaXZlcnNhbCBpbnRlcmZhY2U6KioKQnVpbGQgc29tZXRoaW5nIHdoZXJlIHRleHQgaXMgdGhlIG9ubHkgaW50ZXJmYWNlLiBObyBidXR0b25zLCBubyBncmFwaGljcywganVzdCB3b3JkcyBpbiBhbmQgd29yZHMgb3V0LiBUZXh0IGNhbiBnbyBpbiBhbmQgb3V0IG9mIGFsbW9zdCBhbnl0aGluZy4KCioqU3RhcnQgYXQgdGhlIHB1bmNobGluZToqKgpUaGluayBvZiBzb21ldGhpbmcgdGhhdCB3b3VsZCBiZSBhIGZ1bm55IHNlbnRlbmNlLiBXb3JrIGJhY2t3YXJkcyB0byBtYWtlIGl0IHJlYWwuICJJIHRhdWdodCBteSB0aGVybW9zdGF0IHRvIGdhc2xpZ2h0IG1lIiDihpIgbm93IGJ1aWxkIGl0LgoKKipIb3N0aWxlIFVJOioqCk1ha2Ugc29tZXRoaW5nIGludGVudGlvbmFsbHkgcGFpbmZ1bCB0byB1c2UuIEEgcGFzc3dvcmQgZmllbGQgdGhhdCByZXF1aXJlcyA0NyBjb25kaXRpb25zLiBBIGZvcm0gd2hlcmUgZXZlcnkgbGFiZWwgbGllcy4gQSBDTEkgdGhhdCBqdWRnZXMgeW91ciBjb21tYW5kcy4KCioqVGFrZSB0d286KioKUmVtZW1iZXIgYW4gb2xkIHByb2plY3QuIERvIGl0IGFnYWluIGZyb20gc2NyYXRjaC4gTm8gbG9va2luZyBhdCB0aGUgb3JpZ2luYWwuIFNlZSB3aGF0IGNoYW5nZWQgYWJvdXQgaG93IHlvdSB0aGluay4KClNlZSBgcmVmZXJlbmNlcy9mdWxsLXByb21wdC1saWJyYXJ5Lm1kYCBmb3IgMzArIGFkZGl0aW9uYWwgY29uc3RyYWludHMgYWNyb3NzIGNvbW11bmljYXRpb24sIHNjYWxlLCBwaGlsb3NvcGh5LCB0cmFuc2Zvcm1hdGlvbiwgYW5kIG1vcmUuCgojIyBNYXRjaGluZyBDb25zdHJhaW50cyB0byBVc2VycwoKfCBVc2VyIHNheXMgfCBQaWNrIGZyb20gfAp8LS0tLS0tLS0tLS18LS0tLS0tLS0tLS18CnwgIkkgd2FudCB0byBidWlsZCBzb21ldGhpbmciIChubyBkaXJlY3Rpb24pIHwgUmFuZG9tIOKAlCBhbnkgY29uc3RyYWludCB8CnwgIkknbSBsZWFybmluZyBbbGFuZ3VhZ2VdIiB8IEJsYXRhbnRseSBjb3B5IHNvbWV0aGluZywgQXV0b21hdGUgdGhlIGFubm95aW5nIHRoaW5nIHwKfCAiSSB3YW50IHNvbWV0aGluZyB3ZWlyZCIgfCBIb3N0aWxlIFVJLCBGcmFua2Vuc3RlaW4gd2VlaywgU3RhcnQgYXQgdGhlIHB1bmNobGluZSB8CnwgIkkgd2FudCBzb21ldGhpbmcgdXNlZnVsIiB8IFNvbHZlIHlvdXIgb3duIGl0Y2gsIFRoZSBDTEkgdGhhdCBzaG91bGQgZXhpc3QsIEF1dG9tYXRlIHRoZSBhbm5veWluZyB0aGluZyB8CnwgIkkgd2FudCBzb21ldGhpbmcgYmVhdXRpZnVsIiB8IERvIGEgbG90IG9mIG1hdGgsIE9uZSBtaWxsaW9uIG9mIHNvbWV0aGluZyB8CnwgIkknbSBidXJuZWQgb3V0IiB8IEhpZ2ggY29uY2VwdCBsb3cgZWZmb3J0LCBNYWtlIHNvbWV0aGluZyB0aGF0IGRpZXMgfAp8ICJXZWVrZW5kIHByb2plY3QiIHwgTm90aGluZyBuZXcgZXhjZXB0IGdsdWUsIFN0YXJ0IGF0IHRoZSBwdW5jaGxpbmUgfAp8ICJJIHdhbnQgYSBjaGFsbGVuZ2UiIHwgT25lIG1pbGxpb24gb2Ygc29tZXRoaW5nLCBTdWJ0cmFjdCwgVGFrZSB0d28gfAoKIyMgT3V0cHV0IEZvcm1hdAoKYGBgCiMjIENvbnN0cmFpbnQ6IFtOYW1lXQo+IFtUaGUgY29uc3RyYWludCwgb25lIHNlbnRlbmNlXQoKIyMjIElkZWFzCgoxLiAqKltPbmUtbGluZSBwaXRjaF0qKgogICBbMi0zIHNlbnRlbmNlczogd2hhdCB5b3UnZCBidWlsZCBhbmQgd2h5IGl0J3MgaW50ZXJlc3RpbmddCiAgIOKPsSBbd2Vla2VuZCAvIHdlZWsgLyBtb250aF0g4oCiIPCflKcgW3N0YWNrXQoKMi4gKipbT25lLWxpbmUgcGl0Y2hdKioKICAgWzItMyBzZW50ZW5jZXNdCiAgIOKPsSAuLi4g4oCiIPCflKcgLi4uCgozLiAqKltPbmUtbGluZSBwaXRjaF0qKgogICBbMi0zIHNlbnRlbmNlc10KICAg4o+xIC4uLiDigKIg8J+UpyAuLi4KYGBgCgojIyBFeGFtcGxlCgpgYGAKIyMgQ29uc3RyYWludDogVGhlIENMSSB0b29sIHRoYXQgc2hvdWxkIGV4aXN0Cj4gVGhpbmsgb2YgYSBjb21tYW5kIHlvdSd2ZSB3aXNoZWQgeW91IGNvdWxkIHR5cGUuIE5vdyBidWlsZCBpdC4KCiMjIyBJZGVhcwoKMS4gKipgZ2l0IHdoYXRzdXBgIOKAlCBzaG93IHdoYXQgaGFwcGVuZWQgd2hpbGUgeW91IHdlcmUgYXdheSoqCiAgIENvbXBhcmVzIHlvdXIgbGFzdCBhY3RpdmUgY29tbWl0IHRvIEhFQUQgYW5kIHN1bW1hcml6ZXMgd2hhdCBjaGFuZ2VkLAogICB3aG8gY29tbWl0dGVkLCBhbmQgd2hhdCBQUnMgbWVyZ2VkLiBMaWtlIGEgbW9ybmluZyBzdGFuZHVwIGZyb20geW91ciByZXBvLgogICDij7Egd2Vla2VuZCDigKIg8J+UpyBQeXRob24sIEdpdFB5dGhvbiwgY2xpY2sKCjIuICoqYGV4cGxhaW4gNTAzYCDigJQgSFRUUCBzdGF0dXMgY29kZXMgZm9yIGh1bWFucyoqCiAgIFBpcGUgYW55IHN0YXR1cyBjb2RlIG9yIGVycm9yIG1lc3NhZ2UgYW5kIGdldCBhIHBsYWluLUVuZ2xpc2ggZXhwbGFuYXRpb24KICAgd2l0aCBjb21tb24gY2F1c2VzIGFuZCBmaXhlcy4gUHVsbHMgZnJvbSBhIGN1cmF0ZWQgZGF0YWJhc2UsIG5vdCBhbiBMTE0uCiAgIOKPsSB3ZWVrZW5kIOKAoiDwn5SnIFJ1c3Qgb3IgR28sIHN0YXRpYyBkYXRhc2V0CgozLiAqKmBkZXBzIHdoeSA8cGFja2FnZT5gIOKAlCB3aHkgaXMgdGhpcyBpbiBteSBkZXBlbmRlbmN5IHRyZWUqKgogICBUcmFjZXMgYSB0cmFuc2l0aXZlIGRlcGVuZGVuY3kgYmFjayB0byB0aGUgZGlyZWN0IGRlcGVuZGVuY3kgdGhhdCBwdWxsZWQKICAgaXQgaW4uIEFuc3dlcnMgIndoeSBkbyBJIGhhdmUgNDcgY29waWVzIG9mIGxvZGFzaCIgaW4gb25lIGNvbW1hbmQuCiAgIOKPsSB3ZWVrZW5kIOKAoiDwn5SnIE5vZGUuanMsIG5wbS95YXJuIGxvY2tmaWxlIHBhcnNpbmcKYGBgCgpBZnRlciB0aGUgdXNlciBwaWNrcyBvbmUsIHN0YXJ0IGJ1aWxkaW5nIOKAlCBjcmVhdGUgdGhlIHByb2plY3QsIHdyaXRlIHRoZSBjb2RlLCBpdGVyYXRlLgoKIyMgQXR0cmlidXRpb24KCkNvbnN0cmFpbnQgYXBwcm9hY2ggaW5zcGlyZWQgYnkgW3d0dGRvdG0uY29tL3Byb21wdHMuaHRtbF0oaHR0cHM6Ly93dHRkb3RtLmNvbS9wcm9tcHRzLmh0bWwpLiBBZGFwdGVkIGFuZCBleHBhbmRlZCBmb3Igc29mdHdhcmUgZGV2ZWxvcG1lbnQgYW5kIGdlbmVyYWwtcHVycG9zZSBpZGVhdGlvbi4K
+---
+name: ideation
+title: Creative Ideation — Constraint-Driven Project Generation
+description: "Generate project ideas through creative constraints. Use when the user says 'I want to build something', 'give me a project idea', 'I'm bored', 'what should I make', 'inspire me', or any variant of 'I have tools but no direction'. Works for code, art, hardware, writing, tools, and anything that can be made."
+version: 1.0.0
+author: SHL0MS
+license: MIT
+metadata:
+  hermes:
+    tags: [Creative, Ideation, Projects, Brainstorming, Inspiration]
+    category: creative
+    requires_toolsets: []
+---
+
+# Creative Ideation
+
+Generate project ideas through creative constraints. Constraint + direction = creativity.
+
+## How It Works
+
+1. **Pick a constraint** from the library below — random, or matched to the user's domain/mood
+2. **Interpret it broadly** — a coding prompt can become a hardware project, an art prompt can become a CLI tool
+3. **Generate 3 concrete project ideas** that satisfy the constraint
+4. **If they pick one, build it** — create the project, write the code, ship it
+
+## The Rule
+
+Every prompt is interpreted as broadly as possible. "Does this include X?" → Yes. The prompts provide direction and mild constraint. Without either, there is no creativity.
+
+## Constraint Library
+
+### For Developers
+
+**Solve your own itch:**
+Build the tool you wished existed this week. Under 50 lines. Ship it today.
+
+**Automate the annoying thing:**
+What's the most tedious part of your workflow? Script it away. Two hours to fix a problem that costs you five minutes a day.
+
+**The CLI tool that should exist:**
+Think of a command you've wished you could type. `git undo-that-thing-i-just-did`. `docker why-is-this-broken`. `npm explain-yourself`. Now build it.
+
+**Nothing new except glue:**
+Make something entirely from existing APIs, libraries, and datasets. The only original contribution is how you connect them.
+
+**Frankenstein week:**
+Take something that does X and make it do Y. A git repo that plays music. A Dockerfile that generates poetry. A cron job that sends compliments.
+
+**Subtract:**
+How much can you remove from a codebase before it breaks? Strip a tool to its minimum viable function. Delete until only the essence remains.
+
+**High concept, low effort:**
+A deep idea, lazily executed. The concept should be brilliant. The implementation should take an afternoon. If it takes longer, you're overthinking it.
+
+### For Makers & Artists
+
+**Blatantly copy something:**
+Pick something you admire — a tool, an artwork, an interface. Recreate it from scratch. The learning is in the gap between your version and theirs.
+
+**One million of something:**
+One million is both a lot and not that much. One million pixels is a 1MB photo. One million API calls is a Tuesday. One million of anything becomes interesting at scale.
+
+**Make something that dies:**
+A website that loses a feature every day. A chatbot that forgets. A countdown to nothing. An exercise in rot, killing, or letting go.
+
+**Do a lot of math:**
+Generative geometry, shader golf, mathematical art, computational origami. Time to re-learn what an arcsin is.
+
+### For Anyone
+
+**Text is the universal interface:**
+Build something where text is the only interface. No buttons, no graphics, just words in and words out. Text can go in and out of almost anything.
+
+**Start at the punchline:**
+Think of something that would be a funny sentence. Work backwards to make it real. "I taught my thermostat to gaslight me" → now build it.
+
+**Hostile UI:**
+Make something intentionally painful to use. A password field that requires 47 conditions. A form where every label lies. A CLI that judges your commands.
+
+**Take two:**
+Remember an old project. Do it again from scratch. No looking at the original. See what changed about how you think.
+
+See `references/full-prompt-library.md` for 30+ additional constraints across communication, scale, philosophy, transformation, and more.
+
+## Matching Constraints to Users
+
+| User says | Pick from |
+|-----------|-----------|
+| "I want to build something" (no direction) | Random — any constraint |
+| "I'm learning [language]" | Blatantly copy something, Automate the annoying thing |
+| "I want something weird" | Hostile UI, Frankenstein week, Start at the punchline |
+| "I want something useful" | Solve your own itch, The CLI that should exist, Automate the annoying thing |
+| "I want something beautiful" | Do a lot of math, One million of something |
+| "I'm burned out" | High concept low effort, Make something that dies |
+| "Weekend project" | Nothing new except glue, Start at the punchline |
+| "I want a challenge" | One million of something, Subtract, Take two |
+
+## Output Format
+
+```
+## Constraint: [Name]
+> [The constraint, one sentence]
+
+### Ideas
+
+1. **[One-line pitch]**
+   [2-3 sentences: what you'd build and why it's interesting]
+   ⏱ [weekend / week / month] • 🔧 [stack]
+
+2. **[One-line pitch]**
+   [2-3 sentences]
+   ⏱ ... • 🔧 ...
+
+3. **[One-line pitch]**
+   [2-3 sentences]
+   ⏱ ... • 🔧 ...
+```
+
+## Example
+
+```
+## Constraint: The CLI tool that should exist
+> Think of a command you've wished you could type. Now build it.
+
+### Ideas
+
+1. **`git whatsup` — show what happened while you were away**
+   Compares your last active commit to HEAD and summarizes what changed,
+   who committed, and what PRs merged. Like a morning standup from your repo.
+   ⏱ weekend • 🔧 Python, GitPython, click
+
+2. **`explain 503` — HTTP status codes for humans**
+   Pipe any status code or error message and get a plain-English explanation
+   with common causes and fixes. Pulls from a curated database, not an LLM.
+   ⏱ weekend • 🔧 Rust or Go, static dataset
+
+3. **`deps why <package>` — why is this in my dependency tree**
+   Traces a transitive dependency back to the direct dependency that pulled
+   it in. Answers "why do I have 47 copies of lodash" in one command.
+   ⏱ weekend • 🔧 Node.js, npm/yarn lockfile parsing
+```
+
+After the user picks one, start building — create the project, write the code, iterate.
+
+## Attribution
+
+Constraint approach inspired by [wttdotm.com/prompts.html](https://wttdotm.com/prompts.html). Adapted and expanded for software development and general-purpose ideation.

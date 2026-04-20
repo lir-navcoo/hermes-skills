@@ -1,1 +1,102 @@
-LS0tCm5hbWU6IGltZXNzYWdlCmRlc2NyaXB0aW9uOiBTZW5kIGFuZCByZWNlaXZlIGlNZXNzYWdlcy9TTVMgdmlhIHRoZSBpbXNnIENMSSBvbiBtYWNPUy4KdmVyc2lvbjogMS4wLjAKYXV0aG9yOiBIZXJtZXMgQWdlbnQKbGljZW5zZTogTUlUCnBsYXRmb3JtczogW21hY29zXQptZXRhZGF0YToKICBoZXJtZXM6CiAgICB0YWdzOiBbaU1lc3NhZ2UsIFNNUywgbWVzc2FnaW5nLCBtYWNPUywgQXBwbGVdCnByZXJlcXVpc2l0ZXM6CiAgY29tbWFuZHM6IFtpbXNnXQotLS0KCiMgaU1lc3NhZ2UKClVzZSBgaW1zZ2AgdG8gcmVhZCBhbmQgc2VuZCBpTWVzc2FnZS9TTVMgdmlhIG1hY09TIE1lc3NhZ2VzLmFwcC4KCiMjIFByZXJlcXVpc2l0ZXMKCi0gKiptYWNPUyoqIHdpdGggTWVzc2FnZXMuYXBwIHNpZ25lZCBpbgotIEluc3RhbGw6IGBicmV3IGluc3RhbGwgc3RlaXBldGUvdGFwL2ltc2dgCi0gR3JhbnQgRnVsbCBEaXNrIEFjY2VzcyBmb3IgdGVybWluYWwgKFN5c3RlbSBTZXR0aW5ncyDihpIgUHJpdmFjeSDihpIgRnVsbCBEaXNrIEFjY2VzcykKLSBHcmFudCBBdXRvbWF0aW9uIHBlcm1pc3Npb24gZm9yIE1lc3NhZ2VzLmFwcCB3aGVuIHByb21wdGVkCgojIyBXaGVuIHRvIFVzZQoKLSBVc2VyIGFza3MgdG8gc2VuZCBhbiBpTWVzc2FnZSBvciB0ZXh0IG1lc3NhZ2UKLSBSZWFkaW5nIGlNZXNzYWdlIGNvbnZlcnNhdGlvbiBoaXN0b3J5Ci0gQ2hlY2tpbmcgcmVjZW50IE1lc3NhZ2VzLmFwcCBjaGF0cwotIFNlbmRpbmcgdG8gcGhvbmUgbnVtYmVycyBvciBBcHBsZSBJRHMKCiMjIFdoZW4gTk9UIHRvIFVzZQoKLSBUZWxlZ3JhbS9EaXNjb3JkL1NsYWNrL1doYXRzQXBwIG1lc3NhZ2VzIOKGkiB1c2UgdGhlIGFwcHJvcHJpYXRlIGdhdGV3YXkgY2hhbm5lbAotIEdyb3VwIGNoYXQgbWFuYWdlbWVudCAoYWRkaW5nL3JlbW92aW5nIG1lbWJlcnMpIOKGkiBub3Qgc3VwcG9ydGVkCi0gQnVsay9tYXNzIG1lc3NhZ2luZyDihpIgYWx3YXlzIGNvbmZpcm0gd2l0aCB1c2VyIGZpcnN0CgojIyBRdWljayBSZWZlcmVuY2UKCiMjIyBMaXN0IENoYXRzCgpgYGBiYXNoCmltc2cgY2hhdHMgLS1saW1pdCAxMCAtLWpzb24KYGBgCgojIyMgVmlldyBIaXN0b3J5CgpgYGBiYXNoCiMgQnkgY2hhdCBJRAppbXNnIGhpc3RvcnkgLS1jaGF0LWlkIDEgLS1saW1pdCAyMCAtLWpzb24KCiMgV2l0aCBhdHRhY2htZW50cyBpbmZvCmltc2cgaGlzdG9yeSAtLWNoYXQtaWQgMSAtLWxpbWl0IDIwIC0tYXR0YWNobWVudHMgLS1qc29uCmBgYAoKIyMjIFNlbmQgTWVzc2FnZXMKCmBgYGJhc2gKIyBUZXh0IG9ubHkKaW1zZyBzZW5kIC0tdG8gIisxNDE1NTU1MTIxMiIgLS10ZXh0ICJIZWxsbyEiCgojIFdpdGggYXR0YWNobWVudAppbXNnIHNlbmQgLS10byAiKzE0MTU1NTUxMjEyIiAtLXRleHQgIkNoZWNrIHRoaXMgb3V0IiAtLWZpbGUgL3BhdGgvdG8vaW1hZ2UuanBnCgojIEZvcmNlIGlNZXNzYWdlIG9yIFNNUwppbXNnIHNlbmQgLS10byAiKzE0MTU1NTUxMjEyIiAtLXRleHQgIkhpIiAtLXNlcnZpY2UgaW1lc3NhZ2UKaW1zZyBzZW5kIC0tdG8gIisxNDE1NTU1MTIxMiIgLS10ZXh0ICJIaSIgLS1zZXJ2aWNlIHNtcwpgYGAKCiMjIyBXYXRjaCBmb3IgTmV3IE1lc3NhZ2VzCgpgYGBiYXNoCmltc2cgd2F0Y2ggLS1jaGF0LWlkIDEgLS1hdHRhY2htZW50cwpgYGAKCiMjIFNlcnZpY2UgT3B0aW9ucwoKLSBgLS1zZXJ2aWNlIGltZXNzYWdlYCDigJQgRm9yY2UgaU1lc3NhZ2UgKHJlcXVpcmVzIHJlY2lwaWVudCBoYXMgaU1lc3NhZ2UpCi0gYC0tc2VydmljZSBzbXNgIOKAlCBGb3JjZSBTTVMgKGdyZWVuIGJ1YmJsZSkKLSBgLS1zZXJ2aWNlIGF1dG9gIOKAlCBMZXQgTWVzc2FnZXMuYXBwIGRlY2lkZSAoZGVmYXVsdCkKCiMjIFJ1bGVzCgoxLiAqKkFsd2F5cyBjb25maXJtIHJlY2lwaWVudCBhbmQgbWVzc2FnZSBjb250ZW50KiogYmVmb3JlIHNlbmRpbmcKMi4gKipOZXZlciBzZW5kIHRvIHVua25vd24gbnVtYmVycyoqIHdpdGhvdXQgZXhwbGljaXQgdXNlciBhcHByb3ZhbAozLiAqKlZlcmlmeSBmaWxlIHBhdGhzKiogZXhpc3QgYmVmb3JlIGF0dGFjaGluZwo0LiAqKkRvbid0IHNwYW0qKiDigJQgcmF0ZS1saW1pdCB5b3Vyc2VsZgoKIyMgRXhhbXBsZSBXb3JrZmxvdwoKVXNlcjogIlRleHQgbW9tIHRoYXQgSSdsbCBiZSBsYXRlIgoKYGBgYmFzaAojIDEuIEZpbmQgbW9tJ3MgY2hhdAppbXNnIGNoYXRzIC0tbGltaXQgMjAgLS1qc29uIHwganEgJy5bXSB8IHNlbGVjdCguZGlzcGxheU5hbWUgfCBjb250YWlucygiTW9tIikpJwoKIyAyLiBDb25maXJtIHdpdGggdXNlcjogIkZvdW5kIE1vbSBhdCArMTU1NTEyMzQ1Ni4gU2VuZCAnSSdsbCBiZSBsYXRlJyB2aWEgaU1lc3NhZ2U/IgoKIyAzLiBTZW5kIGFmdGVyIGNvbmZpcm1hdGlvbgppbXNnIHNlbmQgLS10byAiKzE1NTUxMjM0NTYiIC0tdGV4dCAiSSdsbCBiZSBsYXRlIgpgYGAK
+---
+name: imessage
+description: Send and receive iMessages/SMS via the imsg CLI on macOS.
+version: 1.0.0
+author: Hermes Agent
+license: MIT
+platforms: [macos]
+metadata:
+  hermes:
+    tags: [iMessage, SMS, messaging, macOS, Apple]
+prerequisites:
+  commands: [imsg]
+---
+
+# iMessage
+
+Use `imsg` to read and send iMessage/SMS via macOS Messages.app.
+
+## Prerequisites
+
+- **macOS** with Messages.app signed in
+- Install: `brew install steipete/tap/imsg`
+- Grant Full Disk Access for terminal (System Settings → Privacy → Full Disk Access)
+- Grant Automation permission for Messages.app when prompted
+
+## When to Use
+
+- User asks to send an iMessage or text message
+- Reading iMessage conversation history
+- Checking recent Messages.app chats
+- Sending to phone numbers or Apple IDs
+
+## When NOT to Use
+
+- Telegram/Discord/Slack/WhatsApp messages → use the appropriate gateway channel
+- Group chat management (adding/removing members) → not supported
+- Bulk/mass messaging → always confirm with user first
+
+## Quick Reference
+
+### List Chats
+
+```bash
+imsg chats --limit 10 --json
+```
+
+### View History
+
+```bash
+# By chat ID
+imsg history --chat-id 1 --limit 20 --json
+
+# With attachments info
+imsg history --chat-id 1 --limit 20 --attachments --json
+```
+
+### Send Messages
+
+```bash
+# Text only
+imsg send --to "+14155551212" --text "Hello!"
+
+# With attachment
+imsg send --to "+14155551212" --text "Check this out" --file /path/to/image.jpg
+
+# Force iMessage or SMS
+imsg send --to "+14155551212" --text "Hi" --service imessage
+imsg send --to "+14155551212" --text "Hi" --service sms
+```
+
+### Watch for New Messages
+
+```bash
+imsg watch --chat-id 1 --attachments
+```
+
+## Service Options
+
+- `--service imessage` — Force iMessage (requires recipient has iMessage)
+- `--service sms` — Force SMS (green bubble)
+- `--service auto` — Let Messages.app decide (default)
+
+## Rules
+
+1. **Always confirm recipient and message content** before sending
+2. **Never send to unknown numbers** without explicit user approval
+3. **Verify file paths** exist before attaching
+4. **Don't spam** — rate-limit yourself
+
+## Example Workflow
+
+User: "Text mom that I'll be late"
+
+```bash
+# 1. Find mom's chat
+imsg chats --limit 20 --json | jq '.[] | select(.displayName | contains("Mom"))'
+
+# 2. Confirm with user: "Found Mom at +1555123456. Send 'I'll be late' via iMessage?"
+
+# 3. Send after confirmation
+imsg send --to "+1555123456" --text "I'll be late"
+```

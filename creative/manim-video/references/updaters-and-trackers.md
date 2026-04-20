@@ -1,1 +1,260 @@
-IyBVcGRhdGVycyBhbmQgVmFsdWUgVHJhY2tlcnMKCiMjIFRoZSBwcm9ibGVtIHVwZGF0ZXJzIHNvbHZlCgpOb3JtYWwgYW5pbWF0aW9ucyBhcmUgZGlzY3JldGU6IGBzZWxmLnBsYXkoKWAgZ29lcyBmcm9tIHN0YXRlIEEgdG8gc3RhdGUgQi4gQnV0IHdoYXQgaWYgeW91IG5lZWQgY29udGludW91cyByZWxhdGlvbnNoaXBzIOKAlCBhIGxhYmVsIHRoYXQgYWx3YXlzIGhvdmVycyBhYm92ZSBhIG1vdmluZyBkb3QsIG9yIGEgbGluZSB0aGF0IGFsd2F5cyBjb25uZWN0cyB0d28gcG9pbnRzPwoKV2l0aG91dCB1cGRhdGVycywgeW91J2QgbWFudWFsbHkgcmVwb3NpdGlvbiBldmVyeSBkZXBlbmRlbnQgb2JqZWN0IGJlZm9yZSBldmVyeSBgc2VsZi5wbGF5KClgLiBGaXZlIGFuaW1hdGlvbnMgdGhhdCBtb3ZlIGEgZG90IG1lYW5zIGZpdmUgbWFudWFsIHJlcG9zaXRpb25pbmcgY2FsbHMgZm9yIHRoZSBsYWJlbC4gTWlzcyBvbmUgYW5kIGl0IGZyZWV6ZXMgaW4gdGhlIHdyb25nIHNwb3QuCgpVcGRhdGVycyBsZXQgeW91IGRlY2xhcmUgYSByZWxhdGlvbnNoaXAgT05DRS4gTWFuaW0gY2FsbHMgdGhlIHVwZGF0ZXIgZnVuY3Rpb24gRVZFUlkgRlJBTUUgKDE1LTYwIGZwcyBkZXBlbmRpbmcgb24gcXVhbGl0eSkgdG8gZW5mb3JjZSB0aGF0IHJlbGF0aW9uc2hpcCwgbm8gbWF0dGVyIHdoYXQgZWxzZSBpcyBoYXBwZW5pbmcuCgojIyBWYWx1ZVRyYWNrZXI6IGFuIGludmlzaWJsZSBzdGVlcmluZyB3aGVlbAoKQSBWYWx1ZVRyYWNrZXIgaXMgYW4gaW52aXNpYmxlIE1vYmplY3QgdGhhdCBob2xkcyBhIHNpbmdsZSBmbG9hdC4gSXQgbmV2ZXIgYXBwZWFycyBvbiBzY3JlZW4uIEl0IGV4aXN0cyBzbyB5b3UgY2FuIEFOSU1BVEUgaXQgd2hpbGUgb3RoZXIgb2JqZWN0cyBSRUFDVCB0byBpdHMgdmFsdWUuCgpUaGluayBvZiBpdCBhcyBhIHNsaWRlcjogZHJhZyB0aGUgc2xpZGVyIGZyb20gMCB0byA1LCBhbmQgZXZlcnkgb2JqZWN0IHdpcmVkIHRvIGl0IHJlc3BvbmRzIGluIHJlYWwgdGltZS4KCmBgYHB5dGhvbgp0cmFja2VyID0gVmFsdWVUcmFja2VyKDApICAgICAgICAjIGludmlzaWJsZSwgc3RvcmVzIDAuMAp0cmFja2VyLmdldF92YWx1ZSgpICAgICAgICAgICAgICAjIHJlYWQ6IDAuMAp0cmFja2VyLnNldF92YWx1ZSg1KSAgICAgICAgICAgICAjIHdyaXRlOiBqdW1wIHRvIDUuMCBpbnN0YW50bHkKdHJhY2tlci5hbmltYXRlLnNldF92YWx1ZSg1KSAgICAgIyBhbmltYXRlOiBzbW9vdGhseSBpbnRlcnBvbGF0ZSB0byA1LjAKYGBgCgojIyMgVGhlIHRocmVlLXN0ZXAgcGF0dGVybgoKRXZlcnkgVmFsdWVUcmFja2VyIHVzYWdlIGZvbGxvd3MgdGhpczoKCjEuICoqQ3JlYXRlIHRoZSB0cmFja2VyKiogKHRoZSBpbnZpc2libGUgc2xpZGVyKQoyLiAqKkNyZWF0ZSB2aXNpYmxlIG9iamVjdHMgdGhhdCBSRUFEIHRoZSB0cmFja2VyKiogdmlhIHVwZGF0ZXJzCjMuICoqQW5pbWF0ZSB0aGUgdHJhY2tlcioqIOKAlCBhbGwgZGVwZW5kZW50cyB1cGRhdGUgYXV0b21hdGljYWxseQoKYGBgcHl0aG9uCiMgU3RlcCAxOiBDcmVhdGUgdHJhY2tlcgp4X3RyYWNrZXIgPSBWYWx1ZVRyYWNrZXIoMSkKCiMgU3RlcCAyOiBDcmVhdGUgZGVwZW5kZW50IG9iamVjdHMKZG90ID0gYWx3YXlzX3JlZHJhdyhsYW1iZGE6IERvdChheGVzLmMycCh4X3RyYWNrZXIuZ2V0X3ZhbHVlKCksIDApLCBjb2xvcj1ZRUxMT1cpKQp2X2xpbmUgPSBhbHdheXNfcmVkcmF3KGxhbWJkYTogYXhlcy5nZXRfdmVydGljYWxfbGluZSgKICAgIGF4ZXMuYzJwKHhfdHJhY2tlci5nZXRfdmFsdWUoKSwgZnVuYyh4X3RyYWNrZXIuZ2V0X3ZhbHVlKCkpKSwgY29sb3I9QkxVRQopKQpsYWJlbCA9IGFsd2F5c19yZWRyYXcobGFtYmRhOiBEZWNpbWFsTnVtYmVyKHhfdHJhY2tlci5nZXRfdmFsdWUoKSwgZm9udF9zaXplPTI0KQogICAgLm5leHRfdG8oZG90LCBVUCkpCgpzZWxmLmFkZChkb3QsIHZfbGluZSwgbGFiZWwpCgojIFN0ZXAgMzogQW5pbWF0ZSB0aGUgdHJhY2tlciDigJQgZXZlcnl0aGluZyBmb2xsb3dzCnNlbGYucGxheSh4X3RyYWNrZXIuYW5pbWF0ZS5zZXRfdmFsdWUoNSksIHJ1bl90aW1lPTMpCmBgYAoKIyMgVHlwZXMgb2YgdXBkYXRlcnMKCiMjIyBMYW1iZGEgdXBkYXRlciAobW9zdCBjb21tb24pCgpSdW5zIGEgZnVuY3Rpb24gZXZlcnkgZnJhbWUsIHBhc3NpbmcgdGhlIG1vYmplY3QgaXRzZWxmOgoKYGBgcHl0aG9uCiMgTGFiZWwgYWx3YXlzIHN0YXlzIGFib3ZlIHRoZSBkb3QKbGFiZWwuYWRkX3VwZGF0ZXIobGFtYmRhIG06IG0ubmV4dF90byhkb3QsIFVQLCBidWZmPTAuMikpCgojIExpbmUgYWx3YXlzIGNvbm5lY3RzIHR3byBwb2ludHMKbGluZS5hZGRfdXBkYXRlcihsYW1iZGEgbTogbS5wdXRfc3RhcnRfYW5kX2VuZF9vbigKICAgIHBvaW50X2EuZ2V0X2NlbnRlcigpLCBwb2ludF9iLmdldF9jZW50ZXIoKQopKQpgYGAKCiMjIyBUaW1lLWJhc2VkIHVwZGF0ZXIgKHdpdGggZHQpCgpUaGUgc2Vjb25kIGFyZ3VtZW50IGBkdGAgaXMgdGhlIHRpbWUgc2luY2UgdGhlIGxhc3QgZnJhbWUgKH4wLjAxN3MgYXQgNjBmcHMpOgoKYGBgcHl0aG9uCiMgQ29udGludW91cyByb3RhdGlvbgpzcXVhcmUuYWRkX3VwZGF0ZXIobGFtYmRhIG0sIGR0OiBtLnJvdGF0ZSgwLjUgKiBkdCkpCgojIENvbnRpbnVvdXMgcmlnaHR3YXJkIGRyaWZ0CmRvdC5hZGRfdXBkYXRlcihsYW1iZGEgbSwgZHQ6IG0uc2hpZnQoUklHSFQgKiAwLjMgKiBkdCkpCgojIE9zY2lsbGF0aW9uCmRvdC5hZGRfdXBkYXRlcihsYW1iZGEgbSwgZHQ6IG0ubW92ZV90bygKICAgIGF4ZXMuYzJwKG0uZ2V0X2NlbnRlcigpWzBdLCBucC5zaW4oc2VsZi50aW1lKSkKKSkKYGBgCgpVc2UgYGR0YCB1cGRhdGVycyBmb3IgcGh5c2ljcyBzaW11bGF0aW9ucywgY29udGludW91cyBtb3Rpb24sIGFuZCB0aW1lLWRlcGVuZGVudCBlZmZlY3RzLgoKIyMjIGFsd2F5c19yZWRyYXc6IGZ1bGwgcmVidWlsZCBldmVyeSBmcmFtZQoKQ3JlYXRlcyBhIG5ldyBtb2JqZWN0IGZyb20gc2NyYXRjaCBlYWNoIGZyYW1lLiBNb3JlIGV4cGVuc2l2ZSB0aGFuIGBhZGRfdXBkYXRlcmAgYnV0IGhhbmRsZXMgY2FzZXMgd2hlcmUgdGhlIG1vYmplY3QncyBzdHJ1Y3R1cmUgY2hhbmdlcyAobm90IGp1c3QgcG9zaXRpb24vY29sb3IpOgoKYGBgcHl0aG9uCiMgQnJhY2UgdGhhdCBmb2xsb3dzIGEgcmVzaXppbmcgc3F1YXJlCmJyYWNlID0gYWx3YXlzX3JlZHJhdyhCcmFjZSwgc3F1YXJlLCBVUCkKCiMgQXJlYSB1bmRlciBjdXJ2ZSB0aGF0IHVwZGF0ZXMgYXMgZnVuY3Rpb24gY2hhbmdlcwphcmVhID0gYWx3YXlzX3JlZHJhdyhsYW1iZGE6IGF4ZXMuZ2V0X2FyZWEoCiAgICBncmFwaCwgeF9yYW5nZT1bMCwgeF90cmFja2VyLmdldF92YWx1ZSgpXSwgY29sb3I9QkxVRSwgb3BhY2l0eT0wLjMKKSkKCiMgTGFiZWwgdGhhdCByZWNvbnN0cnVjdHMgaXRzIHRleHQKY291bnRlciA9IGFsd2F5c19yZWRyYXcobGFtYmRhOiBUZXh0KAogICAgZiJuID0ge2ludCh4X3RyYWNrZXIuZ2V0X3ZhbHVlKCkpfSIsIGZvbnRfc2l6ZT0yNCwgZm9udD0iTWVubG8iCikudG9fY29ybmVyKFVSKSkKYGBgCgoqKldoZW4gdG8gdXNlIHdoaWNoOioqCi0gYGFkZF91cGRhdGVyYCDigJQgcG9zaXRpb24sIGNvbG9yLCBvcGFjaXR5IGNoYW5nZXMgKGNoZWFwLCBwcmVmZXJyZWQpCi0gYGFsd2F5c19yZWRyYXdgIOKAlCB3aGVuIHRoZSBzaGFwZS9zdHJ1Y3R1cmUgaXRzZWxmIGNoYW5nZXMgKGV4cGVuc2l2ZSwgdXNlIHNwYXJpbmdseSkKCiMjIERlY2ltYWxOdW1iZXI6IHNob3dpbmcgbGl2ZSB2YWx1ZXMKCmBgYHB5dGhvbgojIENvdW50ZXIgdGhhdCB0cmFja3MgYSBWYWx1ZVRyYWNrZXIKdHJhY2tlciA9IFZhbHVlVHJhY2tlcigwKQpudW1iZXIgPSBEZWNpbWFsTnVtYmVyKDAsIGZvbnRfc2l6ZT00OCwgbnVtX2RlY2ltYWxfcGxhY2VzPTEsIGNvbG9yPVBSSU1BUlkpCm51bWJlci5hZGRfdXBkYXRlcihsYW1iZGEgbTogbS5zZXRfdmFsdWUodHJhY2tlci5nZXRfdmFsdWUoKSkpCm51bWJlci5hZGRfdXBkYXRlcihsYW1iZGEgbTogbS5uZXh0X3RvKGRvdCwgUklHSFQsIGJ1ZmY9MC4zKSkKCnNlbGYuYWRkKG51bWJlcikKc2VsZi5wbGF5KHRyYWNrZXIuYW5pbWF0ZS5zZXRfdmFsdWUoMTAwKSwgcnVuX3RpbWU9MykKYGBgCgojIyMgVmFyaWFibGU6IHRoZSBsYWJlbGVkIHZlcnNpb24KCmBgYHB5dGhvbgp2YXIgPSBWYXJpYWJsZSgwLCBUZXh0KCJ4IiwgZm9udF9zaXplPTI0LCBmb250PSJNZW5sbyIpLCBudW1fZGVjaW1hbF9wbGFjZXM9MikKc2VsZi5hZGQodmFyKQpzZWxmLnBsYXkodmFyLnRyYWNrZXIuYW5pbWF0ZS5zZXRfdmFsdWUoUEkpLCBydW5fdGltZT0yKQojIERpc3BsYXlzOiB4ID0gMy4xNApgYGAKCiMjIFJlbW92aW5nIHVwZGF0ZXJzCgpgYGBweXRob24KIyBSZW1vdmUgYWxsIHVwZGF0ZXJzCm1vYmplY3QuY2xlYXJfdXBkYXRlcnMoKQoKIyBTdXNwZW5kIHRlbXBvcmFyaWx5IChkdXJpbmcgYW4gYW5pbWF0aW9uIHRoYXQgd291bGQgZmlnaHQgdGhlIHVwZGF0ZXIpCm1vYmplY3Quc3VzcGVuZF91cGRhdGluZygpCnNlbGYucGxheShtb2JqZWN0LmFuaW1hdGUuc2hpZnQoUklHSFQpKQptb2JqZWN0LnJlc3VtZV91cGRhdGluZygpCgojIFJlbW92ZSBzcGVjaWZpYyB1cGRhdGVyIChpZiB5b3Ugc3RvcmVkIGEgcmVmZXJlbmNlKQpkZWYgbXlfdXBkYXRlcihtKToKICAgIG0ubmV4dF90byhkb3QsIFVQKQpsYWJlbC5hZGRfdXBkYXRlcihteV91cGRhdGVyKQojIC4uLiBsYXRlciAuLi4KbGFiZWwucmVtb3ZlX3VwZGF0ZXIobXlfdXBkYXRlcikKYGBgCgojIyBBbmltYXRpb24tYmFzZWQgdXBkYXRlcnMKCiMjIyBVcGRhdGVGcm9tRnVuYyAvIFVwZGF0ZUZyb21BbHBoYUZ1bmMKClRoZXNlIGFyZSBBTklNQVRJT05TIChwYXNzZWQgdG8gYHNlbGYucGxheWApLCBub3QgcGVyc2lzdGVudCB1cGRhdGVyczoKCmBgYHB5dGhvbgojIENhbGwgYSBmdW5jdGlvbiBvbiBlYWNoIGZyYW1lIG9mIHRoZSBhbmltYXRpb24Kc2VsZi5wbGF5KFVwZGF0ZUZyb21GdW5jKG1vYmplY3QsIGxhbWJkYSBtOiBtLm5leHRfdG8obW92aW5nX3RhcmdldCwgVVApKSwgcnVuX3RpbWU9MykKCiMgV2l0aCBhbHBoYSAoMCB0byAxKSDigJQgdXNlZnVsIGZvciBjdXN0b20gaW50ZXJwb2xhdGlvbgpzZWxmLnBsYXkoVXBkYXRlRnJvbUFscGhhRnVuYyhjaXJjbGUsIGxhbWJkYSBtLCBhOiBtLnNldF9maWxsKG9wYWNpdHk9YSkpLCBydW5fdGltZT0yKQpgYGAKCiMjIyB0dXJuX2FuaW1hdGlvbl9pbnRvX3VwZGF0ZXIKCkNvbnZlcnQgYSBvbmUtc2hvdCBhbmltYXRpb24gaW50byBhIGNvbnRpbnVvdXMgdXBkYXRlcjoKCmBgYHB5dGhvbgpmcm9tIG1hbmltIGltcG9ydCB0dXJuX2FuaW1hdGlvbl9pbnRvX3VwZGF0ZXIKCiMgVGhpcyB3b3VsZCBub3JtYWxseSBwbGF5IG9uY2Ug4oCUIG5vdyBpdCBsb29wcyBmb3JldmVyCnR1cm5fYW5pbWF0aW9uX2ludG9fdXBkYXRlcihSb3RhdGluZyhnZWFyLCByYXRlPVBJLzQpKQpzZWxmLmFkZChnZWFyKQpzZWxmLndhaXQoNSkgICMgZ2VhciByb3RhdGVzIGZvciA1IHNlY29uZHMKYGBgCgojIyBQcmFjdGljYWwgcGF0dGVybnMKCiMjIyBQYXR0ZXJuIDE6IERvdCB0cmFjaW5nIGEgZnVuY3Rpb24KCmBgYHB5dGhvbgp0cmFja2VyID0gVmFsdWVUcmFja2VyKDApCmdyYXBoID0gYXhlcy5wbG90KG5wLnNpbiwgeF9yYW5nZT1bMCwgMipQSV0sIGNvbG9yPVBSSU1BUlkpCmRvdCA9IGFsd2F5c19yZWRyYXcobGFtYmRhOiBEb3QoCiAgICBheGVzLmMycCh0cmFja2VyLmdldF92YWx1ZSgpLCBucC5zaW4odHJhY2tlci5nZXRfdmFsdWUoKSkpLAogICAgY29sb3I9WUVMTE9XCikpCnRhbmdlbnQgPSBhbHdheXNfcmVkcmF3KGxhbWJkYTogYXhlcy5nZXRfc2VjYW50X3Nsb3BlX2dyb3VwKAogICAgeD10cmFja2VyLmdldF92YWx1ZSgpLCBncmFwaD1ncmFwaCwgZHg9MC4wMSwKICAgIHNlY2FudF9saW5lX2NvbG9yPUhJR0hMSUdIVCwgc2VjYW50X2xpbmVfbGVuZ3RoPTMKKSkKCnNlbGYuYWRkKGdyYXBoLCBkb3QsIHRhbmdlbnQpCnNlbGYucGxheSh0cmFja2VyLmFuaW1hdGUuc2V0X3ZhbHVlKDIqUEkpLCBydW5fdGltZT02LCByYXRlX2Z1bmM9bGluZWFyKQpgYGAKCiMjIyBQYXR0ZXJuIDI6IExpdmUgYXJlYSB1bmRlciBjdXJ2ZQoKYGBgcHl0aG9uCnRyYWNrZXIgPSBWYWx1ZVRyYWNrZXIoMC41KQphcmVhID0gYWx3YXlzX3JlZHJhdyhsYW1iZGE6IGF4ZXMuZ2V0X2FyZWEoCiAgICBncmFwaCwgeF9yYW5nZT1bMCwgdHJhY2tlci5nZXRfdmFsdWUoKV0sCiAgICBjb2xvcj1QUklNQVJZLCBvcGFjaXR5PTAuMwopKQphcmVhX2xhYmVsID0gYWx3YXlzX3JlZHJhdyhsYW1iZGE6IERlY2ltYWxOdW1iZXIoCiAgICAjIE51bWVyaWNhbCBpbnRlZ3JhdGlvbgogICAgc3VtKGZ1bmMoeCkgKiAwLjAxIGZvciB4IGluIG5wLmFyYW5nZSgwLCB0cmFja2VyLmdldF92YWx1ZSgpLCAwLjAxKSksCiAgICBmb250X3NpemU9MjQKKS5uZXh0X3RvKGF4ZXMsIFJJR0hUKSkKCnNlbGYuYWRkKGFyZWEsIGFyZWFfbGFiZWwpCnNlbGYucGxheSh0cmFja2VyLmFuaW1hdGUuc2V0X3ZhbHVlKDQpLCBydW5fdGltZT01KQpgYGAKCiMjIyBQYXR0ZXJuIDM6IENvbm5lY3RlZCBkaWFncmFtCgpgYGBweXRob24KIyBOb2RlcyB0aGF0IGNhbiBiZSBtb3ZlZCwgd2l0aCBlZGdlcyB0aGF0IGF1dG8tZm9sbG93Cm5vZGVfYSA9IERvdChMRUZUICogMiwgY29sb3I9UFJJTUFSWSkKbm9kZV9iID0gRG90KFJJR0hUICogMiwgY29sb3I9U0VDT05EQVJZKQplZGdlID0gTGluZSgpLmFkZF91cGRhdGVyKGxhbWJkYSBtOiBtLnB1dF9zdGFydF9hbmRfZW5kX29uKAogICAgbm9kZV9hLmdldF9jZW50ZXIoKSwgbm9kZV9iLmdldF9jZW50ZXIoKQopKQpsYWJlbCA9IFRleHQoImVkZ2UiLCBmb250X3NpemU9MTgsIGZvbnQ9Ik1lbmxvIikuYWRkX3VwZGF0ZXIoCiAgICBsYW1iZGEgbTogbS5tb3ZlX3RvKGVkZ2UuZ2V0X2NlbnRlcigpICsgVVAgKiAwLjMpCikKCnNlbGYuYWRkKG5vZGVfYSwgbm9kZV9iLCBlZGdlLCBsYWJlbCkKc2VsZi5wbGF5KG5vZGVfYS5hbmltYXRlLnNoaWZ0KFVQICogMiksIHJ1bl90aW1lPTIpCnNlbGYucGxheShub2RlX2IuYW5pbWF0ZS5zaGlmdChET1dOICsgUklHSFQpLCBydW5fdGltZT0yKQojIEVkZ2UgYW5kIGxhYmVsIGZvbGxvdyBhdXRvbWF0aWNhbGx5CmBgYAoKIyMjIFBhdHRlcm4gNDogUGFyYW1ldGVyIGV4cGxvcmF0aW9uCgpgYGBweXRob24KIyBFeHBsb3JlIGhvdyBhIHBhcmFtZXRlciBjaGFuZ2VzIGEgY3VydmUKYV90cmFja2VyID0gVmFsdWVUcmFja2VyKDEpCmN1cnZlID0gYWx3YXlzX3JlZHJhdyhsYW1iZGE6IGF4ZXMucGxvdCgKICAgIGxhbWJkYSB4OiBhX3RyYWNrZXIuZ2V0X3ZhbHVlKCkgKiBucC5zaW4oeCksCiAgICB4X3JhbmdlPVswLCAyKlBJXSwgY29sb3I9UFJJTUFSWQopKQpwYXJhbV9sYWJlbCA9IGFsd2F5c19yZWRyYXcobGFtYmRhOiBUZXh0KAogICAgZiJhID0ge2FfdHJhY2tlci5nZXRfdmFsdWUoKTouMWZ9IiwgZm9udF9zaXplPTI0LCBmb250PSJNZW5sbyIKKS50b19jb3JuZXIoVVIpKQoKc2VsZi5hZGQoY3VydmUsIHBhcmFtX2xhYmVsKQpzZWxmLnBsYXkoYV90cmFja2VyLmFuaW1hdGUuc2V0X3ZhbHVlKDMpLCBydW5fdGltZT0zKQpzZWxmLnBsYXkoYV90cmFja2VyLmFuaW1hdGUuc2V0X3ZhbHVlKDAuNSksIHJ1bl90aW1lPTIpCnNlbGYucGxheShhX3RyYWNrZXIuYW5pbWF0ZS5zZXRfdmFsdWUoMSksIHJ1bl90aW1lPTEpCmBgYAoKIyMgQ29tbW9uIG1pc3Rha2VzCgoxLiAqKlVwZGF0ZXIgZmlnaHRzIGFuaW1hdGlvbjoqKiBJZiBhIG1vYmplY3QgaGFzIGFuIHVwZGF0ZXIgdGhhdCBzZXRzIGl0cyBwb3NpdGlvbiwgYW5kIHlvdSB0cnkgdG8gYW5pbWF0ZSBpdCBlbHNld2hlcmUsIHRoZSB1cGRhdGVyIHdpbnMgZXZlcnkgZnJhbWUuIFN1c3BlbmQgdXBkYXRpbmcgZmlyc3QuCgoyLiAqKmFsd2F5c19yZWRyYXcgZm9yIHNpbXBsZSBtb3ZlczoqKiBJZiB5b3Ugb25seSBuZWVkIHRvIHJlcG9zaXRpb24sIHVzZSBgYWRkX3VwZGF0ZXJgLiBgYWx3YXlzX3JlZHJhd2AgcmVjb25zdHJ1Y3RzIHRoZSBlbnRpcmUgbW9iamVjdCBldmVyeSBmcmFtZSDigJQgZXhwZW5zaXZlIGFuZCB1bm5lY2Vzc2FyeSBmb3IgcG9zaXRpb24gdHJhY2tpbmcuCgozLiAqKkZvcmdldHRpbmcgdG8gYWRkIHRvIHNjZW5lOioqIFVwZGF0ZXJzIG9ubHkgcnVuIG9uIG1vYmplY3RzIHRoYXQgYXJlIGluIHRoZSBzY2VuZS4gYGFsd2F5c19yZWRyYXdgIGNyZWF0ZXMgdGhlIG1vYmplY3QgYnV0IHlvdSBzdGlsbCBuZWVkIGBzZWxmLmFkZCgpYC4KCjQuICoqVXBkYXRlciBjcmVhdGVzIG5ldyBtb2JqZWN0cyB3aXRob3V0IGNsZWFudXA6KiogSWYgeW91ciB1cGRhdGVyIGNyZWF0ZXMgVGV4dCBvYmplY3RzIGV2ZXJ5IGZyYW1lLCB0aGV5IGFjY3VtdWxhdGUuIFVzZSBgYWx3YXlzX3JlZHJhd2AgKHdoaWNoIGhhbmRsZXMgY2xlYW51cCkgb3IgdXBkYXRlIHByb3BlcnRpZXMgaW4tcGxhY2UuCg==
+# Updaters and Value Trackers
+
+## The problem updaters solve
+
+Normal animations are discrete: `self.play()` goes from state A to state B. But what if you need continuous relationships — a label that always hovers above a moving dot, or a line that always connects two points?
+
+Without updaters, you'd manually reposition every dependent object before every `self.play()`. Five animations that move a dot means five manual repositioning calls for the label. Miss one and it freezes in the wrong spot.
+
+Updaters let you declare a relationship ONCE. Manim calls the updater function EVERY FRAME (15-60 fps depending on quality) to enforce that relationship, no matter what else is happening.
+
+## ValueTracker: an invisible steering wheel
+
+A ValueTracker is an invisible Mobject that holds a single float. It never appears on screen. It exists so you can ANIMATE it while other objects REACT to its value.
+
+Think of it as a slider: drag the slider from 0 to 5, and every object wired to it responds in real time.
+
+```python
+tracker = ValueTracker(0)        # invisible, stores 0.0
+tracker.get_value()              # read: 0.0
+tracker.set_value(5)             # write: jump to 5.0 instantly
+tracker.animate.set_value(5)     # animate: smoothly interpolate to 5.0
+```
+
+### The three-step pattern
+
+Every ValueTracker usage follows this:
+
+1. **Create the tracker** (the invisible slider)
+2. **Create visible objects that READ the tracker** via updaters
+3. **Animate the tracker** — all dependents update automatically
+
+```python
+# Step 1: Create tracker
+x_tracker = ValueTracker(1)
+
+# Step 2: Create dependent objects
+dot = always_redraw(lambda: Dot(axes.c2p(x_tracker.get_value(), 0), color=YELLOW))
+v_line = always_redraw(lambda: axes.get_vertical_line(
+    axes.c2p(x_tracker.get_value(), func(x_tracker.get_value())), color=BLUE
+))
+label = always_redraw(lambda: DecimalNumber(x_tracker.get_value(), font_size=24)
+    .next_to(dot, UP))
+
+self.add(dot, v_line, label)
+
+# Step 3: Animate the tracker — everything follows
+self.play(x_tracker.animate.set_value(5), run_time=3)
+```
+
+## Types of updaters
+
+### Lambda updater (most common)
+
+Runs a function every frame, passing the mobject itself:
+
+```python
+# Label always stays above the dot
+label.add_updater(lambda m: m.next_to(dot, UP, buff=0.2))
+
+# Line always connects two points
+line.add_updater(lambda m: m.put_start_and_end_on(
+    point_a.get_center(), point_b.get_center()
+))
+```
+
+### Time-based updater (with dt)
+
+The second argument `dt` is the time since the last frame (~0.017s at 60fps):
+
+```python
+# Continuous rotation
+square.add_updater(lambda m, dt: m.rotate(0.5 * dt))
+
+# Continuous rightward drift
+dot.add_updater(lambda m, dt: m.shift(RIGHT * 0.3 * dt))
+
+# Oscillation
+dot.add_updater(lambda m, dt: m.move_to(
+    axes.c2p(m.get_center()[0], np.sin(self.time))
+))
+```
+
+Use `dt` updaters for physics simulations, continuous motion, and time-dependent effects.
+
+### always_redraw: full rebuild every frame
+
+Creates a new mobject from scratch each frame. More expensive than `add_updater` but handles cases where the mobject's structure changes (not just position/color):
+
+```python
+# Brace that follows a resizing square
+brace = always_redraw(Brace, square, UP)
+
+# Area under curve that updates as function changes
+area = always_redraw(lambda: axes.get_area(
+    graph, x_range=[0, x_tracker.get_value()], color=BLUE, opacity=0.3
+))
+
+# Label that reconstructs its text
+counter = always_redraw(lambda: Text(
+    f"n = {int(x_tracker.get_value())}", font_size=24, font="Menlo"
+).to_corner(UR))
+```
+
+**When to use which:**
+- `add_updater` — position, color, opacity changes (cheap, preferred)
+- `always_redraw` — when the shape/structure itself changes (expensive, use sparingly)
+
+## DecimalNumber: showing live values
+
+```python
+# Counter that tracks a ValueTracker
+tracker = ValueTracker(0)
+number = DecimalNumber(0, font_size=48, num_decimal_places=1, color=PRIMARY)
+number.add_updater(lambda m: m.set_value(tracker.get_value()))
+number.add_updater(lambda m: m.next_to(dot, RIGHT, buff=0.3))
+
+self.add(number)
+self.play(tracker.animate.set_value(100), run_time=3)
+```
+
+### Variable: the labeled version
+
+```python
+var = Variable(0, Text("x", font_size=24, font="Menlo"), num_decimal_places=2)
+self.add(var)
+self.play(var.tracker.animate.set_value(PI), run_time=2)
+# Displays: x = 3.14
+```
+
+## Removing updaters
+
+```python
+# Remove all updaters
+mobject.clear_updaters()
+
+# Suspend temporarily (during an animation that would fight the updater)
+mobject.suspend_updating()
+self.play(mobject.animate.shift(RIGHT))
+mobject.resume_updating()
+
+# Remove specific updater (if you stored a reference)
+def my_updater(m):
+    m.next_to(dot, UP)
+label.add_updater(my_updater)
+# ... later ...
+label.remove_updater(my_updater)
+```
+
+## Animation-based updaters
+
+### UpdateFromFunc / UpdateFromAlphaFunc
+
+These are ANIMATIONS (passed to `self.play`), not persistent updaters:
+
+```python
+# Call a function on each frame of the animation
+self.play(UpdateFromFunc(mobject, lambda m: m.next_to(moving_target, UP)), run_time=3)
+
+# With alpha (0 to 1) — useful for custom interpolation
+self.play(UpdateFromAlphaFunc(circle, lambda m, a: m.set_fill(opacity=a)), run_time=2)
+```
+
+### turn_animation_into_updater
+
+Convert a one-shot animation into a continuous updater:
+
+```python
+from manim import turn_animation_into_updater
+
+# This would normally play once — now it loops forever
+turn_animation_into_updater(Rotating(gear, rate=PI/4))
+self.add(gear)
+self.wait(5)  # gear rotates for 5 seconds
+```
+
+## Practical patterns
+
+### Pattern 1: Dot tracing a function
+
+```python
+tracker = ValueTracker(0)
+graph = axes.plot(np.sin, x_range=[0, 2*PI], color=PRIMARY)
+dot = always_redraw(lambda: Dot(
+    axes.c2p(tracker.get_value(), np.sin(tracker.get_value())),
+    color=YELLOW
+))
+tangent = always_redraw(lambda: axes.get_secant_slope_group(
+    x=tracker.get_value(), graph=graph, dx=0.01,
+    secant_line_color=HIGHLIGHT, secant_line_length=3
+))
+
+self.add(graph, dot, tangent)
+self.play(tracker.animate.set_value(2*PI), run_time=6, rate_func=linear)
+```
+
+### Pattern 2: Live area under curve
+
+```python
+tracker = ValueTracker(0.5)
+area = always_redraw(lambda: axes.get_area(
+    graph, x_range=[0, tracker.get_value()],
+    color=PRIMARY, opacity=0.3
+))
+area_label = always_redraw(lambda: DecimalNumber(
+    # Numerical integration
+    sum(func(x) * 0.01 for x in np.arange(0, tracker.get_value(), 0.01)),
+    font_size=24
+).next_to(axes, RIGHT))
+
+self.add(area, area_label)
+self.play(tracker.animate.set_value(4), run_time=5)
+```
+
+### Pattern 3: Connected diagram
+
+```python
+# Nodes that can be moved, with edges that auto-follow
+node_a = Dot(LEFT * 2, color=PRIMARY)
+node_b = Dot(RIGHT * 2, color=SECONDARY)
+edge = Line().add_updater(lambda m: m.put_start_and_end_on(
+    node_a.get_center(), node_b.get_center()
+))
+label = Text("edge", font_size=18, font="Menlo").add_updater(
+    lambda m: m.move_to(edge.get_center() + UP * 0.3)
+)
+
+self.add(node_a, node_b, edge, label)
+self.play(node_a.animate.shift(UP * 2), run_time=2)
+self.play(node_b.animate.shift(DOWN + RIGHT), run_time=2)
+# Edge and label follow automatically
+```
+
+### Pattern 4: Parameter exploration
+
+```python
+# Explore how a parameter changes a curve
+a_tracker = ValueTracker(1)
+curve = always_redraw(lambda: axes.plot(
+    lambda x: a_tracker.get_value() * np.sin(x),
+    x_range=[0, 2*PI], color=PRIMARY
+))
+param_label = always_redraw(lambda: Text(
+    f"a = {a_tracker.get_value():.1f}", font_size=24, font="Menlo"
+).to_corner(UR))
+
+self.add(curve, param_label)
+self.play(a_tracker.animate.set_value(3), run_time=3)
+self.play(a_tracker.animate.set_value(0.5), run_time=2)
+self.play(a_tracker.animate.set_value(1), run_time=1)
+```
+
+## Common mistakes
+
+1. **Updater fights animation:** If a mobject has an updater that sets its position, and you try to animate it elsewhere, the updater wins every frame. Suspend updating first.
+
+2. **always_redraw for simple moves:** If you only need to reposition, use `add_updater`. `always_redraw` reconstructs the entire mobject every frame — expensive and unnecessary for position tracking.
+
+3. **Forgetting to add to scene:** Updaters only run on mobjects that are in the scene. `always_redraw` creates the mobject but you still need `self.add()`.
+
+4. **Updater creates new mobjects without cleanup:** If your updater creates Text objects every frame, they accumulate. Use `always_redraw` (which handles cleanup) or update properties in-place.

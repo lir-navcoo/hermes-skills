@@ -1,1 +1,64 @@
-IyBwNS5qcyBTa2lsbAoKUHJvZHVjdGlvbiBwaXBlbGluZSBmb3IgaW50ZXJhY3RpdmUgYW5kIGdlbmVyYXRpdmUgdmlzdWFsIGFydCB1c2luZyBbcDUuanNdKGh0dHBzOi8vcDVqcy5vcmcvKS4KCiMjIFdoYXQgaXQgZG9lcwoKQ3JlYXRlcyBicm93c2VyLWJhc2VkIHZpc3VhbCBhcnQgZnJvbSB0ZXh0IHByb21wdHMuIFRoZSBhZ2VudCBoYW5kbGVzIHRoZSBmdWxsIHBpcGVsaW5lOiBjcmVhdGl2ZSBjb25jZXB0LCBjb2RlIGdlbmVyYXRpb24sIHByZXZpZXcsIGV4cG9ydCwgYW5kIGl0ZXJhdGl2ZSByZWZpbmVtZW50LiBPdXRwdXQgaXMgYSBzaW5nbGUgc2VsZi1jb250YWluZWQgSFRNTCBmaWxlIHRoYXQgcnVucyBpbiBhbnkgYnJvd3NlciDigJQgbm8gYnVpbGQgc3RlcCwgbm8gc2VydmVyLCBubyBkZXBlbmRlbmNpZXMgYmV5b25kIGEgQ0ROIHNjcmlwdCB0YWcuCgpUaGUgb3V0cHV0IGlzIHJlYWwgaW50ZXJhY3RpdmUgYXJ0LiBOb3QgdHV0b3JpYWwgZXhlcmNpc2VzLiBHZW5lcmF0aXZlIHN5c3RlbXMsIHBhcnRpY2xlIHBoeXNpY3MsIG5vaXNlIGZpZWxkcywgc2hhZGVyIGVmZmVjdHMsIGtpbmV0aWMgdHlwb2dyYXBoeSDigJQgY29tcG9zZWQgd2l0aCBpbnRlbnRpb25hbCBjb2xvciBwYWxldHRlcywgbGF5ZXJlZCBjb21wb3NpdGlvbiwgYW5kIHZpc3VhbCBoaWVyYXJjaHkuCgojIyBNb2RlcwoKfCBNb2RlIHwgSW5wdXQgfCBPdXRwdXQgfAp8LS0tLS0tfC0tLS0tLS18LS0tLS0tLS18CnwgKipHZW5lcmF0aXZlIGFydCoqIHwgU2VlZCAvIHBhcmFtZXRlcnMgfCBQcm9jZWR1cmFsIHZpc3VhbCBjb21wb3NpdGlvbiB8CnwgKipEYXRhIHZpc3VhbGl6YXRpb24qKiB8IERhdGFzZXQgLyBBUEkgfCBJbnRlcmFjdGl2ZSBjaGFydHMsIGN1c3RvbSBkYXRhIGRpc3BsYXlzIHwKfCAqKkludGVyYWN0aXZlIGV4cGVyaWVuY2UqKiB8IE5vbmUgKHVzZXIgZHJpdmVzKSB8IE1vdXNlL2tleWJvYXJkL3RvdWNoLWRyaXZlbiBza2V0Y2ggfAp8ICoqQW5pbWF0aW9uIC8gbW90aW9uIGdyYXBoaWNzKiogfCBUaW1lbGluZSAvIHN0b3J5Ym9hcmQgfCBUaW1lZCBzZXF1ZW5jZXMsIGtpbmV0aWMgdHlwb2dyYXBoeSB8CnwgKiozRCBzY2VuZSoqIHwgQ29uY2VwdCBkZXNjcmlwdGlvbiB8IFdlYkdMIGdlb21ldHJ5LCBsaWdodGluZywgc2hhZGVycyB8CnwgKipJbWFnZSBwcm9jZXNzaW5nKiogfCBJbWFnZSBmaWxlKHMpIHwgUGl4ZWwgbWFuaXB1bGF0aW9uLCBmaWx0ZXJzLCBwb2ludGlsbGlzbSB8CnwgKipBdWRpby1yZWFjdGl2ZSoqIHwgQXVkaW8gZmlsZSAvIG1pYyB8IFNvdW5kLWRyaXZlbiBnZW5lcmF0aXZlIHZpc3VhbHMgfAoKIyMgRXhwb3J0IEZvcm1hdHMKCnwgRm9ybWF0IHwgTWV0aG9kIHwKfC0tLS0tLS0tfC0tLS0tLS0tfAp8ICoqSFRNTCoqIHwgU2VsZi1jb250YWluZWQgZmlsZSwgb3BlbnMgaW4gYW55IGJyb3dzZXIgfAp8ICoqUE5HKiogfCBgc2F2ZUNhbnZhcygpYCDigJQgcHJlc3MgJ3MnIHRvIGNhcHR1cmUgfAp8ICoqR0lGKiogfCBgc2F2ZUdpZigpYCDigJQgcHJlc3MgJ2cnIHRvIGNhcHR1cmUgfAp8ICoqTVA0KiogfCBGcmFtZSBzZXF1ZW5jZSArIGZmbXBlZyB2aWEgYHNjcmlwdHMvcmVuZGVyLnNoYCB8CnwgKipTVkcqKiB8IHA1LmpzLXN2ZyByZW5kZXJlciBmb3IgdmVjdG9yIG91dHB1dCB8CgojIyBQcmVyZXF1aXNpdGVzCgpBIG1vZGVybiBicm93c2VyLiBUaGF0J3MgaXQgZm9yIGJhc2ljIHVzZS4KCkZvciBoZWFkbGVzcyBleHBvcnQ6IE5vZGUuanMsIFB1cHBldGVlciwgZmZtcGVnLgoKYGBgYmFzaApiYXNoIHNraWxscy9jcmVhdGl2ZS9wNWpzL3NjcmlwdHMvc2V0dXAuc2gKYGBgCgojIyBGaWxlIFN0cnVjdHVyZQoKYGBgCuKUnOKUgOKUgCBTS0lMTC5tZCAgICAgICAgICAgICAgICAgICAgICAjIE1vZGVzLCB3b3JrZmxvdywgY3JlYXRpdmUgZGlyZWN0aW9uLCBjcml0aWNhbCBub3RlcwrilJzilIDilIAgUkVBRE1FLm1kICAgICAgICAgICAgICAgICAgICAgIyBUaGlzIGZpbGUK4pSc4pSA4pSAIHJlZmVyZW5jZXMvCuKUgiAgIOKUnOKUgOKUgCBjb3JlLWFwaS5tZCAgICAgICAgICAgICAgIyBDYW52YXMsIGRyYXcgbG9vcCwgdHJhbnNmb3Jtcywgb2Zmc2NyZWVuIGJ1ZmZlcnMsIG1hdGgK4pSCICAg4pSc4pSA4pSAIHNoYXBlcy1hbmQtZ2VvbWV0cnkubWQgICAjIFByaW1pdGl2ZXMsIHZlcnRpY2VzLCBjdXJ2ZXMsIHZlY3RvcnMsIFNERnMsIGNsaXBwaW5nCuKUgiAgIOKUnOKUgOKUgCB2aXN1YWwtZWZmZWN0cy5tZCAgICAgICAgIyBOb2lzZSwgZmxvdyBmaWVsZHMsIHBhcnRpY2xlcywgcGl4ZWxzLCB0ZXh0dXJlcywgZmVlZGJhY2sK4pSCICAg4pSc4pSA4pSAIGFuaW1hdGlvbi5tZCAgICAgICAgICAgICAjIEVhc2luZywgc3ByaW5ncywgc3RhdGUgbWFjaGluZXMsIHRpbWVsaW5lcywgdHJhbnNpdGlvbnMK4pSCICAg4pSc4pSA4pSAIHR5cG9ncmFwaHkubWQgICAgICAgICAgICAjIEZvbnRzLCB0ZXh0VG9Qb2ludHMsIGtpbmV0aWMgdGV4dCwgdGV4dCBtYXNrcwrilIIgICDilJzilIDilIAgY29sb3Itc3lzdGVtcy5tZCAgICAgICAgICMgSFNCL1JHQiwgcGFsZXR0ZXMsIGdyYWRpZW50cywgYmxlbmQgbW9kZXMsIGN1cmF0ZWQgY29sb3JzCuKUgiAgIOKUnOKUgOKUgCB3ZWJnbC1hbmQtM2QubWQgICAgICAgICAgIyAzRCBwcmltaXRpdmVzLCBjYW1lcmEsIGxpZ2h0aW5nLCBzaGFkZXJzLCBmcmFtZWJ1ZmZlcnMK4pSCICAg4pSc4pSA4pSAIGludGVyYWN0aW9uLm1kICAgICAgICAgICAjIE1vdXNlLCBrZXlib2FyZCwgdG91Y2gsIERPTSwgYXVkaW8sIHNjcm9sbArilIIgICDilJzilIDilIAgZXhwb3J0LXBpcGVsaW5lLm1kICAgICAgICMgUE5HLCBHSUYsIE1QNCwgU1ZHLCBoZWFkbGVzcywgdGlsaW5nLCBiYXRjaCBleHBvcnQK4pSCICAg4pSU4pSA4pSAIHRyb3VibGVzaG9vdGluZy5tZCAgICAgICAjIFBlcmZvcm1hbmNlLCBjb21tb24gbWlzdGFrZXMsIGJyb3dzZXIgaXNzdWVzLCBkZWJ1Z2dpbmcK4pSU4pSA4pSAIHNjcmlwdHMvCiAgICDilJzilIDilIAgc2V0dXAuc2ggICAgICAgICAgICAgICAgICMgRGVwZW5kZW5jeSB2ZXJpZmljYXRpb24KICAgIOKUnOKUgOKUgCBzZXJ2ZS5zaCAgICAgICAgICAgICAgICAgIyBMb2NhbCBkZXYgc2VydmVyIChmb3IgbG9hZGluZyBsb2NhbCBhc3NldHMpCiAgICDilJzilIDilIAgcmVuZGVyLnNoICAgICAgICAgICAgICAgICMgSGVhZGxlc3MgcmVuZGVyIHBpcGVsaW5lIChIVE1MIOKGkiBmcmFtZXMg4oaSIE1QNCkKICAgIOKUlOKUgOKUgCBleHBvcnQtZnJhbWVzLmpzICAgICAgICAgIyBQdXBwZXRlZXIgZnJhbWUgY2FwdHVyZSAoTm9kZS5qcykKYGBgCg==
+# p5.js Skill
+
+Production pipeline for interactive and generative visual art using [p5.js](https://p5js.org/).
+
+## What it does
+
+Creates browser-based visual art from text prompts. The agent handles the full pipeline: creative concept, code generation, preview, export, and iterative refinement. Output is a single self-contained HTML file that runs in any browser — no build step, no server, no dependencies beyond a CDN script tag.
+
+The output is real interactive art. Not tutorial exercises. Generative systems, particle physics, noise fields, shader effects, kinetic typography — composed with intentional color palettes, layered composition, and visual hierarchy.
+
+## Modes
+
+| Mode | Input | Output |
+|------|-------|--------|
+| **Generative art** | Seed / parameters | Procedural visual composition |
+| **Data visualization** | Dataset / API | Interactive charts, custom data displays |
+| **Interactive experience** | None (user drives) | Mouse/keyboard/touch-driven sketch |
+| **Animation / motion graphics** | Timeline / storyboard | Timed sequences, kinetic typography |
+| **3D scene** | Concept description | WebGL geometry, lighting, shaders |
+| **Image processing** | Image file(s) | Pixel manipulation, filters, pointillism |
+| **Audio-reactive** | Audio file / mic | Sound-driven generative visuals |
+
+## Export Formats
+
+| Format | Method |
+|--------|--------|
+| **HTML** | Self-contained file, opens in any browser |
+| **PNG** | `saveCanvas()` — press 's' to capture |
+| **GIF** | `saveGif()` — press 'g' to capture |
+| **MP4** | Frame sequence + ffmpeg via `scripts/render.sh` |
+| **SVG** | p5.js-svg renderer for vector output |
+
+## Prerequisites
+
+A modern browser. That's it for basic use.
+
+For headless export: Node.js, Puppeteer, ffmpeg.
+
+```bash
+bash skills/creative/p5js/scripts/setup.sh
+```
+
+## File Structure
+
+```
+├── SKILL.md                      # Modes, workflow, creative direction, critical notes
+├── README.md                     # This file
+├── references/
+│   ├── core-api.md              # Canvas, draw loop, transforms, offscreen buffers, math
+│   ├── shapes-and-geometry.md   # Primitives, vertices, curves, vectors, SDFs, clipping
+│   ├── visual-effects.md        # Noise, flow fields, particles, pixels, textures, feedback
+│   ├── animation.md             # Easing, springs, state machines, timelines, transitions
+│   ├── typography.md            # Fonts, textToPoints, kinetic text, text masks
+│   ├── color-systems.md         # HSB/RGB, palettes, gradients, blend modes, curated colors
+│   ├── webgl-and-3d.md          # 3D primitives, camera, lighting, shaders, framebuffers
+│   ├── interaction.md           # Mouse, keyboard, touch, DOM, audio, scroll
+│   ├── export-pipeline.md       # PNG, GIF, MP4, SVG, headless, tiling, batch export
+│   └── troubleshooting.md       # Performance, common mistakes, browser issues, debugging
+└── scripts/
+    ├── setup.sh                 # Dependency verification
+    ├── serve.sh                 # Local dev server (for loading local assets)
+    ├── render.sh                # Headless render pipeline (HTML → frames → MP4)
+    └── export-frames.js         # Puppeteer frame capture (Node.js)
+```

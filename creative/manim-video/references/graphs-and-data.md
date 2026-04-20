@@ -1,1 +1,163 @@
-IyBHcmFwaHMsIFBsb3RzLCBhbmQgRGF0YSBWaXN1YWxpemF0aW9uCgojIyBBeGVzCgpgYGBweXRob24KYXhlcyA9IEF4ZXMoCiAgICB4X3JhbmdlPVstMywgMywgMV0sIHlfcmFuZ2U9Wy0yLCAyLCAxXSwKICAgIHhfbGVuZ3RoPTgsIHlfbGVuZ3RoPTUsCiAgICBheGlzX2NvbmZpZz17ImluY2x1ZGVfbnVtYmVycyI6IFRydWUsICJmb250X3NpemUiOiAyNH0KKQpheGVzLnNldF9vcGFjaXR5KDAuMTUpICAjIHN0cnVjdHVyYWwgZWxlbWVudAp4X2xhYmVsID0gYXhlcy5nZXRfeF9heGlzX2xhYmVsKHIieCIpCmBgYAoKIyMgUGxvdHRpbmcKCmBgYHB5dGhvbgpncmFwaCA9IGF4ZXMucGxvdChsYW1iZGEgeDogeCoqMiwgY29sb3I9QkxVRSkKZ3JhcGhfbGFiZWwgPSBheGVzLmdldF9ncmFwaF9sYWJlbChncmFwaCwgbGFiZWw9ciJ4XjIiLCB4X3ZhbD0yKQphcmVhID0gYXhlcy5nZXRfYXJlYShncmFwaCwgeF9yYW5nZT1bMCwgMl0sIGNvbG9yPUJMVUUsIG9wYWNpdHk9MC4zKQpgYGAKCiMjIEFuaW1hdGVkIFBsb3R0aW5nCgpgYGBweXRob24Kc2VsZi5wbGF5KENyZWF0ZShncmFwaCksIHJ1bl90aW1lPTMpICAjIHRyYWNlIHRoZSBncmFwaAoKIyBNb3ZpbmcgZG90IGFsb25nIGN1cnZlCmRvdCA9IERvdChjb2xvcj1ZRUxMT1cpLm1vdmVfdG8oYXhlcy5jMnAoMCwgMCkpCnNlbGYucGxheShNb3ZlQWxvbmdQYXRoKGRvdCwgZ3JhcGgpLCBydW5fdGltZT0zKQoKIyBEeW5hbWljIHBhcmFtZXRlcgp0cmFja2VyID0gVmFsdWVUcmFja2VyKDEpCmR5bmFtaWMgPSBhbHdheXNfcmVkcmF3KGxhbWJkYTogYXhlcy5wbG90KGxhbWJkYSB4OiB0cmFja2VyLmdldF92YWx1ZSgpICogeCoqMiwgY29sb3I9QkxVRSkpCnNlbGYuYWRkKGR5bmFtaWMpCnNlbGYucGxheSh0cmFja2VyLmFuaW1hdGUuc2V0X3ZhbHVlKDMpLCBydW5fdGltZT0yKQpgYGAKCiMjIEJhciBDaGFydHMKCmBgYHB5dGhvbgpjaGFydCA9IEJhckNoYXJ0KAogICAgdmFsdWVzPVs0LCA2LCAyLCA4LCA1XSwgYmFyX25hbWVzPVsiQSIsICJCIiwgIkMiLCAiRCIsICJFIl0sCiAgICB5X3JhbmdlPVswLCAxMCwgMl0sIGJhcl9jb2xvcnM9W1JFRCwgR1JFRU4sIEJMVUUsIFlFTExPVywgUFVSUExFXQopCnNlbGYucGxheShDcmVhdGUoY2hhcnQpLCBydW5fdGltZT0yKQpzZWxmLnBsYXkoY2hhcnQuYW5pbWF0ZS5jaGFuZ2VfYmFyX3ZhbHVlcyhbNiwgMywgNywgNCwgOV0pKQpgYGAKCiMjIE51bWJlciBMaW5lcwoKYGBgcHl0aG9uCm5sID0gTnVtYmVyTGluZSh4X3JhbmdlPVswLCAxMCwgMV0sIGxlbmd0aD0xMCwgaW5jbHVkZV9udW1iZXJzPVRydWUpCnBvaW50ZXIgPSBBcnJvdyhubC5uMnAoMykgKyBVUCAqIDAuNSwgbmwubjJwKDMpLCBjb2xvcj1SRUQsIGJ1ZmY9MCkKdHJhY2tlciA9IFZhbHVlVHJhY2tlcigzKQpwb2ludGVyLmFkZF91cGRhdGVyKGxhbWJkYSBtOiBtLnB1dF9zdGFydF9hbmRfZW5kX29uKAogICAgbmwubjJwKHRyYWNrZXIuZ2V0X3ZhbHVlKCkpICsgVVAgKiAwLjUsIG5sLm4ycCh0cmFja2VyLmdldF92YWx1ZSgpKSkpCnNlbGYucGxheSh0cmFja2VyLmFuaW1hdGUuc2V0X3ZhbHVlKDgpLCBydW5fdGltZT0yKQpgYGAKCiMjIEFuaW1hdGVkIENvdW50ZXJzCgpgYGBweXRob24KY291bnRlciA9IERlY2ltYWxOdW1iZXIoMCwgZm9udF9zaXplPTcyLCBudW1fZGVjaW1hbF9wbGFjZXM9MCkKc2VsZi5wbGF5KGNvdW50ZXIuYW5pbWF0ZS5zZXRfdmFsdWUoMTAwMCksIHJ1bl90aW1lPTMsIHJhdGVfZnVuYz1ydXNoX2Zyb20pCmBgYAoKIyMgQWxnb3JpdGhtIFZpc3VhbGl6YXRpb24gUGF0dGVybgoKYGBgcHl0aG9uCnZhbHVlcyA9IFs1LCAyLCA4LCAxLCA5LCAzXQpiYXJzID0gVkdyb3VwKCpbCiAgICBSZWN0YW5nbGUod2lkdGg9MC42LCBoZWlnaHQ9diAqIDAuNCwgY29sb3I9QkxVRSwgZmlsbF9vcGFjaXR5PTAuNykKICAgIGZvciB2IGluIHZhbHVlcwpdKS5hcnJhbmdlKFJJR0hULCBidWZmPTAuMiwgYWxpZ25lZF9lZGdlPURPV04pLm1vdmVfdG8oT1JJR0lOKQpzZWxmLnBsYXkoTGFnZ2VkU3RhcnQoKltHcm93RnJvbUVkZ2UoYiwgRE9XTikgZm9yIGIgaW4gYmFyc10sIGxhZ19yYXRpbz0wLjEpKQojIEhpZ2hsaWdodCwgc3dhcCwgZXRjLgpgYGAKCiMjIERhdGEgU3RvcnkgUGF0dGVybgoKYGBgcHl0aG9uCiMgQmVmb3JlL0FmdGVyIGNvbXBhcmlzb24KYmVmb3JlID0gQmFyQ2hhcnQodmFsdWVzPVszLCA1LCAyXSwgYmFyX2NvbG9ycz1bUkVEXSozKS5zaGlmdChMRUZUICogMykKYWZ0ZXIgPSBCYXJDaGFydCh2YWx1ZXM9WzgsIDksIDddLCBiYXJfY29sb3JzPVtHUkVFTl0qMykuc2hpZnQoUklHSFQgKiAzKQpzZWxmLnBsYXkoQ3JlYXRlKGJlZm9yZSkpOyBzZWxmLndhaXQoMSkKc2VsZi5wbGF5KENyZWF0ZShhZnRlcikpOyBzZWxmLndhaXQoMSkKYXJyb3cgPSBBcnJvdyhiZWZvcmUuZ2V0X3JpZ2h0KCksIGFmdGVyLmdldF9sZWZ0KCksIGNvbG9yPVlFTExPVykKbGFiZWwgPSBUZXh0KCIrMTY3JSIsIGZvbnRfc2l6ZT0zNiwgY29sb3I9WUVMTE9XKS5uZXh0X3RvKGFycm93LCBVUCkKc2VsZi5wbGF5KEdyb3dBcnJvdyhhcnJvdyksIFdyaXRlKGxhYmVsKSkKYGBgCgojIyBHcmFwaCAvIERpR3JhcGgg4oCUIEdyYXBoIFRoZW9yeSBWaXN1YWxpemF0aW9uCgpCdWlsdC1pbiBncmFwaCBtb2JqZWN0cyB3aXRoIGF1dG9tYXRpYyBsYXlvdXQ6CgpgYGBweXRob24KIyBVbmRpcmVjdGVkIGdyYXBoCmcgPSBHcmFwaCgKICAgIHZlcnRpY2VzPVsxLCAyLCAzLCA0LCA1XSwKICAgIGVkZ2VzPVsoMSwgMiksICgyLCAzKSwgKDMsIDQpLCAoNCwgNSksICg1LCAxKSwgKDEsIDMpXSwKICAgIGxheW91dD0ic3ByaW5nIiwgICMgb3IgImNpcmN1bGFyIiwgImthbWFkYV9rYXdhaSIsICJwbGFuYXIiLCAidHJlZSIKICAgIGxhYmVscz1UcnVlLAogICAgdmVydGV4X2NvbmZpZz17ImZpbGxfY29sb3IiOiBQUklNQVJZfSwKICAgIGVkZ2VfY29uZmlnPXsic3Ryb2tlX2NvbG9yIjogU1VCVExFfSwKKQpzZWxmLnBsYXkoQ3JlYXRlKGcpKQoKIyBEaXJlY3RlZCBncmFwaApkZyA9IERpR3JhcGgoCiAgICB2ZXJ0aWNlcz1bIkEiLCAiQiIsICJDIl0sCiAgICBlZGdlcz1bKCJBIiwgIkIiKSwgKCJCIiwgIkMiKSwgKCJDIiwgIkEiKV0sCiAgICBsYXlvdXQ9ImNpcmN1bGFyIiwKICAgIGxhYmVscz1UcnVlLAogICAgZWRnZV9jb25maWc9eygiQSIsICJCIik6IHsic3Ryb2tlX2NvbG9yIjogUkVEfX0sCikKCiMgQWRkL3JlbW92ZSB2ZXJ0aWNlcyBhbmQgZWRnZXMgZHluYW1pY2FsbHkKc2VsZi5wbGF5KGcuYW5pbWF0ZS5hZGRfdmVydGljZXMoNiwgcG9zaXRpb25zPXs2OiBSSUdIVCAqIDJ9KSkKc2VsZi5wbGF5KGcuYW5pbWF0ZS5hZGRfZWRnZXMoKDEsIDYpKSkKc2VsZi5wbGF5KGcuYW5pbWF0ZS5yZW1vdmVfdmVydGljZXMoMykpCmBgYAoKTGF5b3V0IGFsZ29yaXRobXM6IGAic3ByaW5nImAsIGAiY2lyY3VsYXIiYCwgYCJrYW1hZGFfa2F3YWkiYCwgYCJwbGFuYXIiYCwgYCJzcGVjdHJhbCJgLCBgInRyZWUiYCAoZm9yIHJvb3RlZCB0cmVlcywgc3BlY2lmeSBgcm9vdD1gKS4KCiMjIEFycm93VmVjdG9yRmllbGQgLyBTdHJlYW1MaW5lcyDigJQgVmVjdG9yIEZpZWxkcwoKYGBgcHl0aG9uCiMgQXJyb3cgZmllbGQ6IGFycm93cyBzaG93aW5nIGRpcmVjdGlvbiBhdCBlYWNoIHBvaW50CmZpZWxkID0gQXJyb3dWZWN0b3JGaWVsZCgKICAgIGxhbWJkYSBwb3M6IG5wLmFycmF5KFstcG9zWzFdLCBwb3NbMF0sIDBdKSwgICMgcm90YXRpb24gZmllbGQKICAgIHhfcmFuZ2U9Wy0zLCAzXSwgeV9yYW5nZT1bLTMsIDNdLAogICAgY29sb3JzPVtCTFVFLCBHUkVFTiwgWUVMTE9XLCBSRURdCikKc2VsZi5wbGF5KENyZWF0ZShmaWVsZCkpCgojIFN0cmVhbUxpbmVzOiBmbG93aW5nIHBhcnRpY2xlIHRyYWNlcyB0aHJvdWdoIHRoZSBmaWVsZApzdHJlYW0gPSBTdHJlYW1MaW5lcygKICAgIGxhbWJkYSBwb3M6IG5wLmFycmF5KFstcG9zWzFdLCBwb3NbMF0sIDBdKSwKICAgIHN0cm9rZV93aWR0aD0yLCBtYXhfYW5jaG9yc19wZXJfbGluZT0zMAopCnNlbGYuYWRkKHN0cmVhbSkKc3RyZWFtLnN0YXJ0X2FuaW1hdGlvbih3YXJtX3VwPVRydWUsIGZsb3dfc3BlZWQ9MS41KQpzZWxmLndhaXQoMykKc3RyZWFtLmVuZF9hbmltYXRpb24oKQpgYGAKClVzZSBjYXNlczogZWxlY3Ryb21hZ25ldGljIGZpZWxkcywgZmx1aWQgZmxvdywgZ3JhZGllbnQgZmllbGRzLCBPREUgcGhhc2UgcG9ydHJhaXRzLgoKIyMgQ29tcGxleFBsYW5lIC8gUG9sYXJQbGFuZQoKYGBgcHl0aG9uCiMgQ29tcGxleCBwbGFuZSB3aXRoIFJlL0ltIGxhYmVscwpjcGxhbmUgPSBDb21wbGV4UGxhbmUoKS5hZGRfY29vcmRpbmF0ZXMoKQpkb3QgPSBEb3QoY3BsYW5lLm4ycCgyICsgMWopLCBjb2xvcj1ZRUxMT1cpCmxhYmVsID0gVGV4dCgiMitpIiwgZm9udF9zaXplPTIwKS5uZXh0X3RvKGRvdCwgVVIsIGJ1ZmY9MC4xKQoKIyBBcHBseSBjb21wbGV4IGZ1bmN0aW9uIHRvIHRoZSBwbGFuZQpzZWxmLnBsYXkoY3BsYW5lLmFuaW1hdGUuYXBwbHlfY29tcGxleF9mdW5jdGlvbihsYW1iZGEgejogeioqMiksIHJ1bl90aW1lPTMpCgojIFBvbGFyIHBsYW5lCnBvbGFyID0gUG9sYXJQbGFuZShyYWRpdXNfbWF4PTMpLmFkZF9jb29yZGluYXRlcygpCmBgYAo=
+# Graphs, Plots, and Data Visualization
+
+## Axes
+
+```python
+axes = Axes(
+    x_range=[-3, 3, 1], y_range=[-2, 2, 1],
+    x_length=8, y_length=5,
+    axis_config={"include_numbers": True, "font_size": 24}
+)
+axes.set_opacity(0.15)  # structural element
+x_label = axes.get_x_axis_label(r"x")
+```
+
+## Plotting
+
+```python
+graph = axes.plot(lambda x: x**2, color=BLUE)
+graph_label = axes.get_graph_label(graph, label=r"x^2", x_val=2)
+area = axes.get_area(graph, x_range=[0, 2], color=BLUE, opacity=0.3)
+```
+
+## Animated Plotting
+
+```python
+self.play(Create(graph), run_time=3)  # trace the graph
+
+# Moving dot along curve
+dot = Dot(color=YELLOW).move_to(axes.c2p(0, 0))
+self.play(MoveAlongPath(dot, graph), run_time=3)
+
+# Dynamic parameter
+tracker = ValueTracker(1)
+dynamic = always_redraw(lambda: axes.plot(lambda x: tracker.get_value() * x**2, color=BLUE))
+self.add(dynamic)
+self.play(tracker.animate.set_value(3), run_time=2)
+```
+
+## Bar Charts
+
+```python
+chart = BarChart(
+    values=[4, 6, 2, 8, 5], bar_names=["A", "B", "C", "D", "E"],
+    y_range=[0, 10, 2], bar_colors=[RED, GREEN, BLUE, YELLOW, PURPLE]
+)
+self.play(Create(chart), run_time=2)
+self.play(chart.animate.change_bar_values([6, 3, 7, 4, 9]))
+```
+
+## Number Lines
+
+```python
+nl = NumberLine(x_range=[0, 10, 1], length=10, include_numbers=True)
+pointer = Arrow(nl.n2p(3) + UP * 0.5, nl.n2p(3), color=RED, buff=0)
+tracker = ValueTracker(3)
+pointer.add_updater(lambda m: m.put_start_and_end_on(
+    nl.n2p(tracker.get_value()) + UP * 0.5, nl.n2p(tracker.get_value())))
+self.play(tracker.animate.set_value(8), run_time=2)
+```
+
+## Animated Counters
+
+```python
+counter = DecimalNumber(0, font_size=72, num_decimal_places=0)
+self.play(counter.animate.set_value(1000), run_time=3, rate_func=rush_from)
+```
+
+## Algorithm Visualization Pattern
+
+```python
+values = [5, 2, 8, 1, 9, 3]
+bars = VGroup(*[
+    Rectangle(width=0.6, height=v * 0.4, color=BLUE, fill_opacity=0.7)
+    for v in values
+]).arrange(RIGHT, buff=0.2, aligned_edge=DOWN).move_to(ORIGIN)
+self.play(LaggedStart(*[GrowFromEdge(b, DOWN) for b in bars], lag_ratio=0.1))
+# Highlight, swap, etc.
+```
+
+## Data Story Pattern
+
+```python
+# Before/After comparison
+before = BarChart(values=[3, 5, 2], bar_colors=[RED]*3).shift(LEFT * 3)
+after = BarChart(values=[8, 9, 7], bar_colors=[GREEN]*3).shift(RIGHT * 3)
+self.play(Create(before)); self.wait(1)
+self.play(Create(after)); self.wait(1)
+arrow = Arrow(before.get_right(), after.get_left(), color=YELLOW)
+label = Text("+167%", font_size=36, color=YELLOW).next_to(arrow, UP)
+self.play(GrowArrow(arrow), Write(label))
+```
+
+## Graph / DiGraph — Graph Theory Visualization
+
+Built-in graph mobjects with automatic layout:
+
+```python
+# Undirected graph
+g = Graph(
+    vertices=[1, 2, 3, 4, 5],
+    edges=[(1, 2), (2, 3), (3, 4), (4, 5), (5, 1), (1, 3)],
+    layout="spring",  # or "circular", "kamada_kawai", "planar", "tree"
+    labels=True,
+    vertex_config={"fill_color": PRIMARY},
+    edge_config={"stroke_color": SUBTLE},
+)
+self.play(Create(g))
+
+# Directed graph
+dg = DiGraph(
+    vertices=["A", "B", "C"],
+    edges=[("A", "B"), ("B", "C"), ("C", "A")],
+    layout="circular",
+    labels=True,
+    edge_config={("A", "B"): {"stroke_color": RED}},
+)
+
+# Add/remove vertices and edges dynamically
+self.play(g.animate.add_vertices(6, positions={6: RIGHT * 2}))
+self.play(g.animate.add_edges((1, 6)))
+self.play(g.animate.remove_vertices(3))
+```
+
+Layout algorithms: `"spring"`, `"circular"`, `"kamada_kawai"`, `"planar"`, `"spectral"`, `"tree"` (for rooted trees, specify `root=`).
+
+## ArrowVectorField / StreamLines — Vector Fields
+
+```python
+# Arrow field: arrows showing direction at each point
+field = ArrowVectorField(
+    lambda pos: np.array([-pos[1], pos[0], 0]),  # rotation field
+    x_range=[-3, 3], y_range=[-3, 3],
+    colors=[BLUE, GREEN, YELLOW, RED]
+)
+self.play(Create(field))
+
+# StreamLines: flowing particle traces through the field
+stream = StreamLines(
+    lambda pos: np.array([-pos[1], pos[0], 0]),
+    stroke_width=2, max_anchors_per_line=30
+)
+self.add(stream)
+stream.start_animation(warm_up=True, flow_speed=1.5)
+self.wait(3)
+stream.end_animation()
+```
+
+Use cases: electromagnetic fields, fluid flow, gradient fields, ODE phase portraits.
+
+## ComplexPlane / PolarPlane
+
+```python
+# Complex plane with Re/Im labels
+cplane = ComplexPlane().add_coordinates()
+dot = Dot(cplane.n2p(2 + 1j), color=YELLOW)
+label = Text("2+i", font_size=20).next_to(dot, UR, buff=0.1)
+
+# Apply complex function to the plane
+self.play(cplane.animate.apply_complex_function(lambda z: z**2), run_time=3)
+
+# Polar plane
+polar = PolarPlane(radius_max=3).add_coordinates()
+```

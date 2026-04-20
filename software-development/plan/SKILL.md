@@ -1,1 +1,57 @@
-LS0tCm5hbWU6IHBsYW4KZGVzY3JpcHRpb246IFBsYW4gbW9kZSBmb3IgSGVybWVzIOKAlCBpbnNwZWN0IGNvbnRleHQsIHdyaXRlIGEgbWFya2Rvd24gcGxhbiBpbnRvIHRoZSBhY3RpdmUgd29ya3NwYWNlJ3MgYC5oZXJtZXMvcGxhbnMvYCBkaXJlY3RvcnksIGFuZCBkbyBub3QgZXhlY3V0ZSB0aGUgd29yay4KdmVyc2lvbjogMS4wLjAKYXV0aG9yOiBIZXJtZXMgQWdlbnQKbGljZW5zZTogTUlUCm1ldGFkYXRhOgogIGhlcm1lczoKICAgIHRhZ3M6IFtwbGFubmluZywgcGxhbi1tb2RlLCBpbXBsZW1lbnRhdGlvbiwgd29ya2Zsb3ddCiAgICByZWxhdGVkX3NraWxsczogW3dyaXRpbmctcGxhbnMsIHN1YmFnZW50LWRyaXZlbi1kZXZlbG9wbWVudF0KLS0tCgojIFBsYW4gTW9kZQoKVXNlIHRoaXMgc2tpbGwgd2hlbiB0aGUgdXNlciB3YW50cyBhIHBsYW4gaW5zdGVhZCBvZiBleGVjdXRpb24uCgojIyBDb3JlIGJlaGF2aW9yCgpGb3IgdGhpcyB0dXJuLCB5b3UgYXJlIHBsYW5uaW5nIG9ubHkuCgotIERvIG5vdCBpbXBsZW1lbnQgY29kZS4KLSBEbyBub3QgZWRpdCBwcm9qZWN0IGZpbGVzIGV4Y2VwdCB0aGUgcGxhbiBtYXJrZG93biBmaWxlLgotIERvIG5vdCBydW4gbXV0YXRpbmcgdGVybWluYWwgY29tbWFuZHMsIGNvbW1pdCwgcHVzaCwgb3IgcGVyZm9ybSBleHRlcm5hbCBhY3Rpb25zLgotIFlvdSBtYXkgaW5zcGVjdCB0aGUgcmVwbyBvciBvdGhlciBjb250ZXh0IHdpdGggcmVhZC1vbmx5IGNvbW1hbmRzL3Rvb2xzIHdoZW4gbmVlZGVkLgotIFlvdXIgZGVsaXZlcmFibGUgaXMgYSBtYXJrZG93biBwbGFuIHNhdmVkIGluc2lkZSB0aGUgYWN0aXZlIHdvcmtzcGFjZSB1bmRlciBgLmhlcm1lcy9wbGFucy9gLgoKIyMgT3V0cHV0IHJlcXVpcmVtZW50cwoKV3JpdGUgYSBtYXJrZG93biBwbGFuIHRoYXQgaXMgY29uY3JldGUgYW5kIGFjdGlvbmFibGUuCgpJbmNsdWRlLCB3aGVuIHJlbGV2YW50OgotIEdvYWwKLSBDdXJyZW50IGNvbnRleHQgLyBhc3N1bXB0aW9ucwotIFByb3Bvc2VkIGFwcHJvYWNoCi0gU3RlcC1ieS1zdGVwIHBsYW4KLSBGaWxlcyBsaWtlbHkgdG8gY2hhbmdlCi0gVGVzdHMgLyB2YWxpZGF0aW9uCi0gUmlza3MsIHRyYWRlb2ZmcywgYW5kIG9wZW4gcXVlc3Rpb25zCgpJZiB0aGUgdGFzayBpcyBjb2RlLXJlbGF0ZWQsIGluY2x1ZGUgZXhhY3QgZmlsZSBwYXRocywgbGlrZWx5IHRlc3QgdGFyZ2V0cywgYW5kIHZlcmlmaWNhdGlvbiBzdGVwcy4KCiMjIFNhdmUgbG9jYXRpb24KClNhdmUgdGhlIHBsYW4gd2l0aCBgd3JpdGVfZmlsZWAgdW5kZXI6Ci0gYC5oZXJtZXMvcGxhbnMvWVlZWS1NTS1ERF9ISE1NU1MtPHNsdWc+Lm1kYAoKVHJlYXQgdGhhdCBhcyByZWxhdGl2ZSB0byB0aGUgYWN0aXZlIHdvcmtpbmcgZGlyZWN0b3J5IC8gYmFja2VuZCB3b3Jrc3BhY2UuIEhlcm1lcyBmaWxlIHRvb2xzIGFyZSBiYWNrZW5kLWF3YXJlLCBzbyB1c2luZyB0aGlzIHJlbGF0aXZlIHBhdGgga2VlcHMgdGhlIHBsYW4gd2l0aCB0aGUgd29ya3NwYWNlIG9uIGxvY2FsLCBkb2NrZXIsIHNzaCwgbW9kYWwsIGFuZCBkYXl0b25hIGJhY2tlbmRzLgoKSWYgdGhlIHJ1bnRpbWUgcHJvdmlkZXMgYSBzcGVjaWZpYyB0YXJnZXQgcGF0aCwgdXNlIHRoYXQgZXhhY3QgcGF0aC4KSWYgbm90LCBjcmVhdGUgYSBzZW5zaWJsZSB0aW1lc3RhbXBlZCBmaWxlbmFtZSB5b3Vyc2VsZiB1bmRlciBgLmhlcm1lcy9wbGFucy9gLgoKIyMgSW50ZXJhY3Rpb24gc3R5bGUKCi0gSWYgdGhlIHJlcXVlc3QgaXMgY2xlYXIgZW5vdWdoLCB3cml0ZSB0aGUgcGxhbiBkaXJlY3RseS4KLSBJZiBubyBleHBsaWNpdCBpbnN0cnVjdGlvbiBhY2NvbXBhbmllcyBgL3BsYW5gLCBpbmZlciB0aGUgdGFzayBmcm9tIHRoZSBjdXJyZW50IGNvbnZlcnNhdGlvbiBjb250ZXh0LgotIElmIGl0IGlzIGdlbnVpbmVseSB1bmRlcnNwZWNpZmllZCwgYXNrIGEgYnJpZWYgY2xhcmlmeWluZyBxdWVzdGlvbiBpbnN0ZWFkIG9mIGd1ZXNzaW5nLgotIEFmdGVyIHNhdmluZyB0aGUgcGxhbiwgcmVwbHkgYnJpZWZseSB3aXRoIHdoYXQgeW91IHBsYW5uZWQgYW5kIHRoZSBzYXZlZCBwYXRoLgo=
+---
+name: plan
+description: Plan mode for Hermes — inspect context, write a markdown plan into the active workspace's `.hermes/plans/` directory, and do not execute the work.
+version: 1.0.0
+author: Hermes Agent
+license: MIT
+metadata:
+  hermes:
+    tags: [planning, plan-mode, implementation, workflow]
+    related_skills: [writing-plans, subagent-driven-development]
+---
+
+# Plan Mode
+
+Use this skill when the user wants a plan instead of execution.
+
+## Core behavior
+
+For this turn, you are planning only.
+
+- Do not implement code.
+- Do not edit project files except the plan markdown file.
+- Do not run mutating terminal commands, commit, push, or perform external actions.
+- You may inspect the repo or other context with read-only commands/tools when needed.
+- Your deliverable is a markdown plan saved inside the active workspace under `.hermes/plans/`.
+
+## Output requirements
+
+Write a markdown plan that is concrete and actionable.
+
+Include, when relevant:
+- Goal
+- Current context / assumptions
+- Proposed approach
+- Step-by-step plan
+- Files likely to change
+- Tests / validation
+- Risks, tradeoffs, and open questions
+
+If the task is code-related, include exact file paths, likely test targets, and verification steps.
+
+## Save location
+
+Save the plan with `write_file` under:
+- `.hermes/plans/YYYY-MM-DD_HHMMSS-<slug>.md`
+
+Treat that as relative to the active working directory / backend workspace. Hermes file tools are backend-aware, so using this relative path keeps the plan with the workspace on local, docker, ssh, modal, and daytona backends.
+
+If the runtime provides a specific target path, use that exact path.
+If not, create a sensible timestamped filename yourself under `.hermes/plans/`.
+
+## Interaction style
+
+- If the request is clear enough, write the plan directly.
+- If no explicit instruction accompanies `/plan`, infer the task from the current conversation context.
+- If it is genuinely underspecified, ask a brief clarifying question instead of guessing.
+- After saving the plan, reply briefly with what you planned and the saved path.

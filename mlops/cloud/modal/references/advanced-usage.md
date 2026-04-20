@@ -1,1 +1,503 @@
-IyBNb2RhbCBBZHZhbmNlZCBVc2FnZSBHdWlkZQoKIyMgTXVsdGktR1BVIFRyYWluaW5nCgojIyMgU2luZ2xlLW5vZGUgbXVsdGktR1BVCgpgYGBweXRob24KaW1wb3J0IG1vZGFsCgphcHAgPSBtb2RhbC5BcHAoIm11bHRpLWdwdS10cmFpbmluZyIpCmltYWdlID0gbW9kYWwuSW1hZ2UuZGViaWFuX3NsaW0oKS5waXBfaW5zdGFsbCgidG9yY2giLCAidHJhbnNmb3JtZXJzIiwgImFjY2VsZXJhdGUiKQoKQGFwcC5mdW5jdGlvbihncHU9IkgxMDA6NCIsIGltYWdlPWltYWdlLCB0aW1lb3V0PTcyMDApCmRlZiB0cmFpbl9tdWx0aV9ncHUoKToKICAgIGZyb20gYWNjZWxlcmF0ZSBpbXBvcnQgQWNjZWxlcmF0b3IKCiAgICBhY2NlbGVyYXRvciA9IEFjY2VsZXJhdG9yKCkKICAgIG1vZGVsLCBvcHRpbWl6ZXIsIGRhdGFsb2FkZXIgPSBhY2NlbGVyYXRvci5wcmVwYXJlKG1vZGVsLCBvcHRpbWl6ZXIsIGRhdGFsb2FkZXIpCgogICAgZm9yIGJhdGNoIGluIGRhdGFsb2FkZXI6CiAgICAgICAgb3V0cHV0cyA9IG1vZGVsKCoqYmF0Y2gpCiAgICAgICAgbG9zcyA9IG91dHB1dHMubG9zcwogICAgICAgIGFjY2VsZXJhdG9yLmJhY2t3YXJkKGxvc3MpCiAgICAgICAgb3B0aW1pemVyLnN0ZXAoKQpgYGAKCiMjIyBEZWVwU3BlZWQgaW50ZWdyYXRpb24KCmBgYHB5dGhvbgppbWFnZSA9IG1vZGFsLkltYWdlLmRlYmlhbl9zbGltKCkucGlwX2luc3RhbGwoCiAgICAidG9yY2giLCAidHJhbnNmb3JtZXJzIiwgImRlZXBzcGVlZCIsICJhY2NlbGVyYXRlIgopCgpAYXBwLmZ1bmN0aW9uKGdwdT0iQTEwMDo4IiwgaW1hZ2U9aW1hZ2UsIHRpbWVvdXQ9MTQ0MDApCmRlZiBkZWVwc3BlZWRfdHJhaW4oY29uZmlnOiBkaWN0KToKICAgIGZyb20gdHJhbnNmb3JtZXJzIGltcG9ydCBUcmFpbmVyLCBUcmFpbmluZ0FyZ3VtZW50cwoKICAgIGFyZ3MgPSBUcmFpbmluZ0FyZ3VtZW50cygKICAgICAgICBvdXRwdXRfZGlyPSIvb3V0cHV0cyIsCiAgICAgICAgZGVlcHNwZWVkPSJkc19jb25maWcuanNvbiIsCiAgICAgICAgZnAxNj1UcnVlLAogICAgICAgIHBlcl9kZXZpY2VfdHJhaW5fYmF0Y2hfc2l6ZT00LAogICAgICAgIGdyYWRpZW50X2FjY3VtdWxhdGlvbl9zdGVwcz00CiAgICApCgogICAgdHJhaW5lciA9IFRyYWluZXIobW9kZWw9bW9kZWwsIGFyZ3M9YXJncywgdHJhaW5fZGF0YXNldD1kYXRhc2V0KQogICAgdHJhaW5lci50cmFpbigpCmBgYAoKIyMjIE11bHRpLUdQVSBjb25zaWRlcmF0aW9ucwoKRm9yIGZyYW1ld29ya3MgdGhhdCByZS1leGVjdXRlIHRoZSBQeXRob24gZW50cnlwb2ludCAobGlrZSBQeVRvcmNoIExpZ2h0bmluZyksIHVzZToKLSBgZGRwX3NwYXduYCBvciBgZGRwX25vdGVib29rYCBzdHJhdGVneQotIFJ1biB0cmFpbmluZyBhcyBhIHN1YnByb2Nlc3MgdG8gYXZvaWQgaXNzdWVzCgpgYGBweXRob24KQGFwcC5mdW5jdGlvbihncHU9IkgxMDA6NCIpCmRlZiB0cmFpbl93aXRoX3N1YnByb2Nlc3MoKToKICAgIGltcG9ydCBzdWJwcm9jZXNzCiAgICBzdWJwcm9jZXNzLnJ1bihbInB5dGhvbiIsICItbSIsICJ0b3JjaC5kaXN0cmlidXRlZC5sYXVuY2giLCAidHJhaW4ucHkiXSkKYGBgCgojIyBBZHZhbmNlZCBDb250YWluZXIgQ29uZmlndXJhdGlvbgoKIyMjIE11bHRpLXN0YWdlIGJ1aWxkcyBmb3IgY2FjaGluZwoKYGBgcHl0aG9uCiMgU3RhZ2UgMTogQmFzZSBkZXBlbmRlbmNpZXMgKGNhY2hlZCkKYmFzZV9pbWFnZSA9IG1vZGFsLkltYWdlLmRlYmlhbl9zbGltKCkucGlwX2luc3RhbGwoInRvcmNoIiwgIm51bXB5IiwgInNjaXB5IikKCiMgU3RhZ2UgMjogTUwgbGlicmFyaWVzIChjYWNoZWQgc2VwYXJhdGVseSkKbWxfaW1hZ2UgPSBiYXNlX2ltYWdlLnBpcF9pbnN0YWxsKCJ0cmFuc2Zvcm1lcnMiLCAiZGF0YXNldHMiLCAiYWNjZWxlcmF0ZSIpCgojIFN0YWdlIDM6IEN1c3RvbSBjb2RlIChyZWJ1aWx0IG9uIGNoYW5nZXMpCmZpbmFsX2ltYWdlID0gbWxfaW1hZ2UuY29weV9sb2NhbF9kaXIoIi4vc3JjIiwgIi9hcHAvc3JjIikKYGBgCgojIyMgQ3VzdG9tIERvY2tlcmZpbGVzCgpgYGBweXRob24KaW1hZ2UgPSBtb2RhbC5JbWFnZS5mcm9tX2RvY2tlcmZpbGUoIi4vRG9ja2VyZmlsZSIpCmBgYAoKIyMjIEluc3RhbGxpbmcgZnJvbSBHaXQKCmBgYHB5dGhvbgppbWFnZSA9IG1vZGFsLkltYWdlLmRlYmlhbl9zbGltKCkucGlwX2luc3RhbGwoCiAgICAiZ2l0K2h0dHBzOi8vZ2l0aHViLmNvbS9odWdnaW5nZmFjZS90cmFuc2Zvcm1lcnMuZ2l0QG1haW4iCikKYGBgCgojIyMgVXNpbmcgdXYgZm9yIGZhc3RlciBpbnN0YWxscwoKYGBgcHl0aG9uCmltYWdlID0gbW9kYWwuSW1hZ2UuZGViaWFuX3NsaW0oKS51dl9waXBfaW5zdGFsbCgKICAgICJ0b3JjaCIsICJ0cmFuc2Zvcm1lcnMiLCAiYWNjZWxlcmF0ZSIKKQpgYGAKCiMjIEFkdmFuY2VkIENsYXNzIFBhdHRlcm5zCgojIyMgTGlmZWN5Y2xlIGhvb2tzCgpgYGBweXRob24KQGFwcC5jbHMoZ3B1PSJBMTBHIikKY2xhc3MgSW5mZXJlbmNlU2VydmljZToKICAgIEBtb2RhbC5lbnRlcigpCiAgICBkZWYgc3RhcnR1cChzZWxmKToKICAgICAgICAiIiJDYWxsZWQgb25jZSB3aGVuIGNvbnRhaW5lciBzdGFydHMiIiIKICAgICAgICBzZWxmLm1vZGVsID0gbG9hZF9tb2RlbCgpCiAgICAgICAgc2VsZi50b2tlbml6ZXIgPSBsb2FkX3Rva2VuaXplcigpCgogICAgQG1vZGFsLmV4aXQoKQogICAgZGVmIHNodXRkb3duKHNlbGYpOgogICAgICAgICIiIkNhbGxlZCB3aGVuIGNvbnRhaW5lciBzaHV0cyBkb3duIiIiCiAgICAgICAgY2xlYW51cF9yZXNvdXJjZXMoKQoKICAgIEBtb2RhbC5tZXRob2QoKQogICAgZGVmIHByZWRpY3Qoc2VsZiwgdGV4dDogc3RyKToKICAgICAgICByZXR1cm4gc2VsZi5tb2RlbChzZWxmLnRva2VuaXplcih0ZXh0KSkKYGBgCgojIyMgQ29uY3VycmVudCByZXF1ZXN0IGhhbmRsaW5nCgpgYGBweXRob24KQGFwcC5jbHMoCiAgICBncHU9IkExMDAiLAogICAgYWxsb3dfY29uY3VycmVudF9pbnB1dHM9MjAsICAjIEhhbmRsZSAyMCByZXF1ZXN0cyBwZXIgY29udGFpbmVyCiAgICBjb250YWluZXJfaWRsZV90aW1lb3V0PTMwMAopCmNsYXNzIEJhdGNoSW5mZXJlbmNlOgogICAgQG1vZGFsLmVudGVyKCkKICAgIGRlZiBsb2FkKHNlbGYpOgogICAgICAgIHNlbGYubW9kZWwgPSBsb2FkX21vZGVsKCkKCiAgICBAbW9kYWwubWV0aG9kKCkKICAgIGRlZiBwcmVkaWN0KHNlbGYsIGlucHV0czogbGlzdCk6CiAgICAgICAgcmV0dXJuIHNlbGYubW9kZWwuYmF0Y2hfcHJlZGljdChpbnB1dHMpCmBgYAoKIyMjIElucHV0IGNvbmN1cnJlbmN5IHZzIGJhdGNoaW5nCgotICoqSW5wdXQgY29uY3VycmVuY3kqKjogTXVsdGlwbGUgcmVxdWVzdHMgcHJvY2Vzc2VkIHNpbXVsdGFuZW91c2x5IChhc3luYyBJL08pCi0gKipEeW5hbWljIGJhdGNoaW5nKio6IFJlcXVlc3RzIGFjY3VtdWxhdGVkIGFuZCBwcm9jZXNzZWQgdG9nZXRoZXIgKEdQVSBlZmZpY2llbmN5KQoKYGBgcHl0aG9uCiMgSW5wdXQgY29uY3VycmVuY3kgLSBnb29kIGZvciBJL08tYm91bmQKQGFwcC5mdW5jdGlvbihhbGxvd19jb25jdXJyZW50X2lucHV0cz0xMCkKYXN5bmMgZGVmIGZldGNoX2RhdGEodXJsOiBzdHIpOgogICAgYXN5bmMgd2l0aCBhaW9odHRwLkNsaWVudFNlc3Npb24oKSBhcyBzZXNzaW9uOgogICAgICAgIHJldHVybiBhd2FpdCBzZXNzaW9uLmdldCh1cmwpCgojIER5bmFtaWMgYmF0Y2hpbmcgLSBnb29kIGZvciBHUFUgaW5mZXJlbmNlCkBhcHAuZnVuY3Rpb24oKQpAbW9kYWwuYmF0Y2hlZChtYXhfYmF0Y2hfc2l6ZT0zMiwgd2FpdF9tcz0xMDApCmFzeW5jIGRlZiBiYXRjaF9lbWJlZCh0ZXh0czogbGlzdFtzdHJdKSAtPiBsaXN0W2xpc3RbZmxvYXRdXToKICAgIHJldHVybiBtb2RlbC5lbmNvZGUodGV4dHMpCmBgYAoKIyMgQWR2YW5jZWQgVm9sdW1lcwoKIyMjIFZvbHVtZSBvcGVyYXRpb25zCgpgYGBweXRob24Kdm9sdW1lID0gbW9kYWwuVm9sdW1lLmZyb21fbmFtZSgibXktdm9sdW1lIiwgY3JlYXRlX2lmX21pc3Npbmc9VHJ1ZSkKCkBhcHAuZnVuY3Rpb24odm9sdW1lcz17Ii9kYXRhIjogdm9sdW1lfSkKZGVmIHZvbHVtZV9vcGVyYXRpb25zKCk6CiAgICBpbXBvcnQgb3MKCiAgICAjIFdyaXRlIGRhdGEKICAgIHdpdGggb3BlbigiL2RhdGEvb3V0cHV0LnR4dCIsICJ3IikgYXMgZjoKICAgICAgICBmLndyaXRlKCJSZXN1bHRzIikKCiAgICAjIENvbW1pdCBjaGFuZ2VzIChwZXJzaXN0IHRvIHZvbHVtZSkKICAgIHZvbHVtZS5jb21taXQoKQoKICAgICMgUmVsb2FkIGZyb20gcmVtb3RlIChnZXQgbGF0ZXN0KQogICAgdm9sdW1lLnJlbG9hZCgpCmBgYAoKIyMjIFNoYXJlZCB2b2x1bWVzIGJldHdlZW4gZnVuY3Rpb25zCgpgYGBweXRob24Kc2hhcmVkX3ZvbHVtZSA9IG1vZGFsLlZvbHVtZS5mcm9tX25hbWUoInNoYXJlZC1kYXRhIiwgY3JlYXRlX2lmX21pc3Npbmc9VHJ1ZSkKCkBhcHAuZnVuY3Rpb24odm9sdW1lcz17Ii9zaGFyZWQiOiBzaGFyZWRfdm9sdW1lfSkKZGVmIHdyaXRlcigpOgogICAgd2l0aCBvcGVuKCIvc2hhcmVkL2RhdGEudHh0IiwgInciKSBhcyBmOgogICAgICAgIGYud3JpdGUoIkhlbGxvIGZyb20gd3JpdGVyIikKICAgIHNoYXJlZF92b2x1bWUuY29tbWl0KCkKCkBhcHAuZnVuY3Rpb24odm9sdW1lcz17Ii9zaGFyZWQiOiBzaGFyZWRfdm9sdW1lfSkKZGVmIHJlYWRlcigpOgogICAgc2hhcmVkX3ZvbHVtZS5yZWxvYWQoKSAgIyBHZXQgbGF0ZXN0CiAgICB3aXRoIG9wZW4oIi9zaGFyZWQvZGF0YS50eHQiLCAiciIpIGFzIGY6CiAgICAgICAgcmV0dXJuIGYucmVhZCgpCmBgYAoKIyMjIENsb3VkIGJ1Y2tldCBtb3VudHMKCmBgYHB5dGhvbgojIE1vdW50IFMzIGJ1Y2tldApidWNrZXQgPSBtb2RhbC5DbG91ZEJ1Y2tldE1vdW50KAogICAgYnVja2V0X25hbWU9Im15LWJ1Y2tldCIsCiAgICBzZWNyZXQ9bW9kYWwuU2VjcmV0LmZyb21fbmFtZSgiYXdzLWNyZWRlbnRpYWxzIikKKQoKQGFwcC5mdW5jdGlvbih2b2x1bWVzPXsiL3MzIjogYnVja2V0fSkKZGVmIHByb2Nlc3NfczNfZGF0YSgpOgogICAgIyBBY2Nlc3MgUzMgZmlsZXMgbGlrZSBsb2NhbCBmaWxlc3lzdGVtCiAgICBkYXRhID0gb3BlbigiL3MzL2RhdGEucGFycXVldCIpLnJlYWQoKQpgYGAKCiMjIEZ1bmN0aW9uIENvbXBvc2l0aW9uCgojIyMgQ2hhaW5pbmcgZnVuY3Rpb25zCgpgYGBweXRob24KQGFwcC5mdW5jdGlvbigpCmRlZiBwcmVwcm9jZXNzKGRhdGEpOgogICAgcmV0dXJuIGNsZWFuZWRfZGF0YQoKQGFwcC5mdW5jdGlvbihncHU9IlQ0IikKZGVmIGluZmVyZW5jZShkYXRhKToKICAgIHJldHVybiBwcmVkaWN0aW9ucwoKQGFwcC5mdW5jdGlvbigpCmRlZiBwb3N0cHJvY2VzcyhwcmVkaWN0aW9ucyk6CiAgICByZXR1cm4gZm9ybWF0dGVkX3Jlc3VsdHMKCkBhcHAuZnVuY3Rpb24oKQpkZWYgcGlwZWxpbmUocmF3X2RhdGEpOgogICAgY2xlYW5lZCA9IHByZXByb2Nlc3MucmVtb3RlKHJhd19kYXRhKQogICAgcHJlZGljdGlvbnMgPSBpbmZlcmVuY2UucmVtb3RlKGNsZWFuZWQpCiAgICByZXN1bHRzID0gcG9zdHByb2Nlc3MucmVtb3RlKHByZWRpY3Rpb25zKQogICAgcmV0dXJuIHJlc3VsdHMKYGBgCgojIyMgUGFyYWxsZWwgZmFuLW91dAoKYGBgcHl0aG9uCkBhcHAuZnVuY3Rpb24oKQpkZWYgcHJvY2Vzc19pdGVtKGl0ZW0pOgogICAgcmV0dXJuIGV4cGVuc2l2ZV9jb21wdXRhdGlvbihpdGVtKQoKQGFwcC5mdW5jdGlvbigpCmRlZiBwYXJhbGxlbF9waXBlbGluZShpdGVtcyk6CiAgICAjIEZhbiBvdXQ6IHByb2Nlc3MgYWxsIGl0ZW1zIGluIHBhcmFsbGVsCiAgICByZXN1bHRzID0gbGlzdChwcm9jZXNzX2l0ZW0ubWFwKGl0ZW1zKSkKICAgIHJldHVybiByZXN1bHRzCmBgYAoKIyMjIFN0YXJtYXAgZm9yIG11bHRpcGxlIGFyZ3VtZW50cwoKYGBgcHl0aG9uCkBhcHAuZnVuY3Rpb24oKQpkZWYgcHJvY2Vzcyh4LCB5LCB6KToKICAgIHJldHVybiB4ICsgeSArIHoKCkBhcHAuZnVuY3Rpb24oKQpkZWYgb3JjaGVzdHJhdGUoKToKICAgIGFyZ3MgPSBbKDEsIDIsIDMpLCAoNCwgNSwgNiksICg3LCA4LCA5KV0KICAgIHJlc3VsdHMgPSBsaXN0KHByb2Nlc3Muc3Rhcm1hcChhcmdzKSkKICAgIHJldHVybiByZXN1bHRzCmBgYAoKIyMgQWR2YW5jZWQgV2ViIEVuZHBvaW50cwoKIyMjIFdlYlNvY2tldCBzdXBwb3J0CgpgYGBweXRob24KZnJvbSBmYXN0YXBpIGltcG9ydCBGYXN0QVBJLCBXZWJTb2NrZXQKCmFwcCA9IG1vZGFsLkFwcCgid2Vic29ja2V0LWFwcCIpCndlYl9hcHAgPSBGYXN0QVBJKCkKCkB3ZWJfYXBwLndlYnNvY2tldCgiL3dzIikKYXN5bmMgZGVmIHdlYnNvY2tldF9lbmRwb2ludCh3ZWJzb2NrZXQ6IFdlYlNvY2tldCk6CiAgICBhd2FpdCB3ZWJzb2NrZXQuYWNjZXB0KCkKICAgIHdoaWxlIFRydWU6CiAgICAgICAgZGF0YSA9IGF3YWl0IHdlYnNvY2tldC5yZWNlaXZlX3RleHQoKQogICAgICAgIGF3YWl0IHdlYnNvY2tldC5zZW5kX3RleHQoZiJQcm9jZXNzZWQ6IHtkYXRhfSIpCgpAYXBwLmZ1bmN0aW9uKCkKQG1vZGFsLmFzZ2lfYXBwKCkKZGVmIHdzX2FwcCgpOgogICAgcmV0dXJuIHdlYl9hcHAKYGBgCgojIyMgU3RyZWFtaW5nIHJlc3BvbnNlcwoKYGBgcHl0aG9uCmZyb20gZmFzdGFwaS5yZXNwb25zZXMgaW1wb3J0IFN0cmVhbWluZ1Jlc3BvbnNlCgpAYXBwLmZ1bmN0aW9uKGdwdT0iQTEwMCIpCmRlZiBnZW5lcmF0ZV9zdHJlYW0ocHJvbXB0OiBzdHIpOgogICAgZm9yIHRva2VuIGluIG1vZGVsLmdlbmVyYXRlX3N0cmVhbShwcm9tcHQpOgogICAgICAgIHlpZWxkIHRva2VuCgpAd2ViX2FwcC5nZXQoIi9zdHJlYW0iKQphc3luYyBkZWYgc3RyZWFtX3Jlc3BvbnNlKHByb21wdDogc3RyKToKICAgIHJldHVybiBTdHJlYW1pbmdSZXNwb25zZSgKICAgICAgICBnZW5lcmF0ZV9zdHJlYW0ucmVtb3RlX2dlbihwcm9tcHQpLAogICAgICAgIG1lZGlhX3R5cGU9InRleHQvZXZlbnQtc3RyZWFtIgogICAgKQpgYGAKCiMjIyBBdXRoZW50aWNhdGlvbgoKYGBgcHl0aG9uCmZyb20gZmFzdGFwaSBpbXBvcnQgRGVwZW5kcywgSFRUUEV4Y2VwdGlvbiwgSGVhZGVyCgphc3luYyBkZWYgdmVyaWZ5X3Rva2VuKGF1dGhvcml6YXRpb246IHN0ciA9IEhlYWRlcihOb25lKSk6CiAgICBpZiBub3QgYXV0aG9yaXphdGlvbiBvciBub3QgYXV0aG9yaXphdGlvbi5zdGFydHN3aXRoKCJCZWFyZXIgIik6CiAgICAgICAgcmFpc2UgSFRUUEV4Y2VwdGlvbihzdGF0dXNfY29kZT00MDEpCiAgICB0b2tlbiA9IGF1dGhvcml6YXRpb24uc3BsaXQoIiAiKVsxXQogICAgaWYgbm90IHZlcmlmeV9qd3QodG9rZW4pOgogICAgICAgIHJhaXNlIEhUVFBFeGNlcHRpb24oc3RhdHVzX2NvZGU9NDAzKQogICAgcmV0dXJuIHRva2VuCgpAd2ViX2FwcC5wb3N0KCIvcHJlZGljdCIpCmFzeW5jIGRlZiBwcmVkaWN0KGRhdGE6IGRpY3QsIHRva2VuOiBzdHIgPSBEZXBlbmRzKHZlcmlmeV90b2tlbikpOgogICAgcmV0dXJuIG1vZGVsLnByZWRpY3QoZGF0YSkKYGBgCgojIyBDb3N0IE9wdGltaXphdGlvbgoKIyMjIFJpZ2h0LXNpemluZyBHUFVzCgpgYGBweXRob24KIyBGb3IgaW5mZXJlbmNlOiBzbWFsbGVyIEdQVXMgb2Z0ZW4gc3VmZmljaWVudApAYXBwLmZ1bmN0aW9uKGdwdT0iTDQwUyIpICAjIDQ4R0IsIGJlc3QgY29zdC9wZXJmIGZvciBpbmZlcmVuY2UKZGVmIGluZmVyZW5jZSgpOgogICAgcGFzcwoKIyBGb3IgdHJhaW5pbmc6IGxhcmdlciBHUFVzIGZvciB0aHJvdWdocHV0CkBhcHAuZnVuY3Rpb24oZ3B1PSJBMTAwLTgwR0IiKQpkZWYgdHJhaW5pbmcoKToKICAgIHBhc3MKYGBgCgojIyMgR1BVIGZhbGxiYWNrcyBmb3IgYXZhaWxhYmlsaXR5CgpgYGBweXRob24KQGFwcC5mdW5jdGlvbihncHU9WyJIMTAwIiwgIkExMDAiLCAiTDQwUyJdKSAgIyBUcnkgaW4gb3JkZXIKZGVmIGZsZXhpYmxlX2NvbXB1dGUoKToKICAgIHBhc3MKYGBgCgojIyMgU2NhbGUgdG8gemVybwoKYGBgcHl0aG9uCiMgRGVmYXVsdCBiZWhhdmlvcjogc2NhbGUgdG8gemVybyB3aGVuIGlkbGUKQGFwcC5mdW5jdGlvbihncHU9IkExMDAiKQpkZWYgb25fZGVtYW5kKCk6CiAgICBwYXNzCgojIEtlZXAgY29udGFpbmVycyB3YXJtIGZvciBsb3cgbGF0ZW5jeSAoY29zdHMgbW9yZSkKQGFwcC5mdW5jdGlvbihncHU9IkExMDAiLCBrZWVwX3dhcm09MSkKZGVmIGFsd2F5c19yZWFkeSgpOgogICAgcGFzcwpgYGAKCiMjIyBCYXRjaCBwcm9jZXNzaW5nIGZvciBlZmZpY2llbmN5CgpgYGBweXRob24KIyBQcm9jZXNzIGluIGJhdGNoZXMgdG8gcmVkdWNlIGNvbGQgc3RhcnRzCkBhcHAuZnVuY3Rpb24oZ3B1PSJBMTAwIikKZGVmIGJhdGNoX3Byb2Nlc3MoaXRlbXM6IGxpc3QpOgogICAgcmV0dXJuIFtwcm9jZXNzKGl0ZW0pIGZvciBpdGVtIGluIGl0ZW1zXQoKIyBCZXR0ZXIgdGhhbiBpbmRpdmlkdWFsIGNhbGxzCnJlc3VsdHMgPSBiYXRjaF9wcm9jZXNzLnJlbW90ZShhbGxfaXRlbXMpCmBgYAoKIyMgTW9uaXRvcmluZyBhbmQgT2JzZXJ2YWJpbGl0eQoKIyMjIFN0cnVjdHVyZWQgbG9nZ2luZwoKYGBgcHl0aG9uCmltcG9ydCBqc29uCmltcG9ydCBsb2dnaW5nCgpsb2dnaW5nLmJhc2ljQ29uZmlnKGxldmVsPWxvZ2dpbmcuSU5GTykKbG9nZ2VyID0gbG9nZ2luZy5nZXRMb2dnZXIoX19uYW1lX18pCgpAYXBwLmZ1bmN0aW9uKCkKZGVmIHN0cnVjdHVyZWRfbG9nZ2luZyhyZXF1ZXN0X2lkOiBzdHIsIGRhdGE6IGRpY3QpOgogICAgbG9nZ2VyLmluZm8oanNvbi5kdW1wcyh7CiAgICAgICAgImV2ZW50IjogImluZmVyZW5jZV9zdGFydCIsCiAgICAgICAgInJlcXVlc3RfaWQiOiByZXF1ZXN0X2lkLAogICAgICAgICJpbnB1dF9zaXplIjogbGVuKGRhdGEpCiAgICB9KSkKCiAgICByZXN1bHQgPSBwcm9jZXNzKGRhdGEpCgogICAgbG9nZ2VyLmluZm8oanNvbi5kdW1wcyh7CiAgICAgICAgImV2ZW50IjogImluZmVyZW5jZV9jb21wbGV0ZSIsCiAgICAgICAgInJlcXVlc3RfaWQiOiByZXF1ZXN0X2lkLAogICAgICAgICJvdXRwdXRfc2l6ZSI6IGxlbihyZXN1bHQpCiAgICB9KSkKCiAgICByZXR1cm4gcmVzdWx0CmBgYAoKIyMjIEN1c3RvbSBtZXRyaWNzCgpgYGBweXRob24KQGFwcC5mdW5jdGlvbihncHU9IkExMDAiKQpkZWYgbW9uaXRvcmVkX2luZmVyZW5jZShpbnB1dHMpOgogICAgaW1wb3J0IHRpbWUKCiAgICBzdGFydCA9IHRpbWUudGltZSgpCiAgICByZXN1bHRzID0gbW9kZWwucHJlZGljdChpbnB1dHMpCiAgICBsYXRlbmN5ID0gdGltZS50aW1lKCkgLSBzdGFydAoKICAgICMgTG9nIG1ldHJpY3MgKHZpc2libGUgaW4gTW9kYWwgZGFzaGJvYXJkKQogICAgcHJpbnQoZiJNRVRSSUMgbGF0ZW5jeT17bGF0ZW5jeTouM2Z9cyBiYXRjaF9zaXplPXtsZW4oaW5wdXRzKX0iKQoKICAgIHJldHVybiByZXN1bHRzCmBgYAoKIyMgUHJvZHVjdGlvbiBEZXBsb3ltZW50CgojIyMgRW52aXJvbm1lbnQgc2VwYXJhdGlvbgoKYGBgcHl0aG9uCmltcG9ydCBvcwoKZW52ID0gb3MuZW52aXJvbi5nZXQoIk1PREFMX0VOViIsICJkZXYiKQphcHAgPSBtb2RhbC5BcHAoZiJteS1zZXJ2aWNlLXtlbnZ9IikKCiMgRW52aXJvbm1lbnQtc3BlY2lmaWMgY29uZmlnCmlmIGVudiA9PSAicHJvZCI6CiAgICBncHVfY29uZmlnID0gIkExMDAiCiAgICB0aW1lb3V0ID0gMzYwMAplbHNlOgogICAgZ3B1X2NvbmZpZyA9ICJUNCIKICAgIHRpbWVvdXQgPSAzMDAKYGBgCgojIyMgWmVyby1kb3dudGltZSBkZXBsb3ltZW50cwoKTW9kYWwgYXV0b21hdGljYWxseSBoYW5kbGVzIHplcm8tZG93bnRpbWUgZGVwbG95bWVudHM6CjEuIE5ldyBjb250YWluZXJzIGFyZSBidWlsdCBhbmQgc3RhcnRlZAoyLiBUcmFmZmljIGdyYWR1YWxseSBzaGlmdHMgdG8gbmV3IHZlcnNpb24KMy4gT2xkIGNvbnRhaW5lcnMgZHJhaW4gZXhpc3RpbmcgcmVxdWVzdHMKNC4gT2xkIGNvbnRhaW5lcnMgYXJlIHRlcm1pbmF0ZWQKCiMjIyBIZWFsdGggY2hlY2tzCgpgYGBweXRob24KQGFwcC5mdW5jdGlvbigpCkBtb2RhbC53ZWJfZW5kcG9pbnQoKQpkZWYgaGVhbHRoKCk6CiAgICByZXR1cm4gewogICAgICAgICJzdGF0dXMiOiAiaGVhbHRoeSIsCiAgICAgICAgIm1vZGVsX2xvYWRlZCI6IGhhc2F0dHIoTW9kZWwsICJfbW9kZWwiKSwKICAgICAgICAiZ3B1X2F2YWlsYWJsZSI6IHRvcmNoLmN1ZGEuaXNfYXZhaWxhYmxlKCkKICAgIH0KYGBgCgojIyBTYW5kYm94ZXMKCiMjIyBJbnRlcmFjdGl2ZSBleGVjdXRpb24gZW52aXJvbm1lbnRzCgpgYGBweXRob24KQGFwcC5mdW5jdGlvbigpCmRlZiBydW5fc2FuZGJveCgpOgogICAgc2FuZGJveCA9IG1vZGFsLlNhbmRib3guY3JlYXRlKAogICAgICAgIGFwcD1hcHAsCiAgICAgICAgaW1hZ2U9aW1hZ2UsCiAgICAgICAgZ3B1PSJUNCIKICAgICkKCiAgICAjIEV4ZWN1dGUgY29kZSBpbiBzYW5kYm94CiAgICByZXN1bHQgPSBzYW5kYm94LmV4ZWMoInB5dGhvbiIsICItYyIsICJwcmludCgnSGVsbG8gZnJvbSBzYW5kYm94JykiKQoKICAgIHNhbmRib3gudGVybWluYXRlKCkKICAgIHJldHVybiByZXN1bHQKYGBgCgojIyBJbnZva2luZyBEZXBsb3llZCBGdW5jdGlvbnMKCiMjIyBGcm9tIGV4dGVybmFsIGNvZGUKCmBgYHB5dGhvbgojIENhbGwgZGVwbG95ZWQgZnVuY3Rpb24gZnJvbSBhbnkgUHl0aG9uIHNjcmlwdAppbXBvcnQgbW9kYWwKCmYgPSBtb2RhbC5GdW5jdGlvbi5sb29rdXAoIm15LWFwcCIsICJteV9mdW5jdGlvbiIpCnJlc3VsdCA9IGYucmVtb3RlKGFyZzEsIGFyZzIpCmBgYAoKIyMjIFJFU1QgQVBJIGludm9jYXRpb24KCmBgYGJhc2gKIyBEZXBsb3llZCBlbmRwb2ludHMgYWNjZXNzaWJsZSB2aWEgSFRUUFMKY3VybCAtWCBQT1NUIGh0dHBzOi8veW91ci13b3Jrc3BhY2UtLW15LWFwcC1wcmVkaWN0Lm1vZGFsLnJ1biBcCiAgLUggIkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbiIgXAogIC1kICd7InRleHQiOiAiSGVsbG8gd29ybGQifScKYGBgCg==
+# Modal Advanced Usage Guide
+
+## Multi-GPU Training
+
+### Single-node multi-GPU
+
+```python
+import modal
+
+app = modal.App("multi-gpu-training")
+image = modal.Image.debian_slim().pip_install("torch", "transformers", "accelerate")
+
+@app.function(gpu="H100:4", image=image, timeout=7200)
+def train_multi_gpu():
+    from accelerate import Accelerator
+
+    accelerator = Accelerator()
+    model, optimizer, dataloader = accelerator.prepare(model, optimizer, dataloader)
+
+    for batch in dataloader:
+        outputs = model(**batch)
+        loss = outputs.loss
+        accelerator.backward(loss)
+        optimizer.step()
+```
+
+### DeepSpeed integration
+
+```python
+image = modal.Image.debian_slim().pip_install(
+    "torch", "transformers", "deepspeed", "accelerate"
+)
+
+@app.function(gpu="A100:8", image=image, timeout=14400)
+def deepspeed_train(config: dict):
+    from transformers import Trainer, TrainingArguments
+
+    args = TrainingArguments(
+        output_dir="/outputs",
+        deepspeed="ds_config.json",
+        fp16=True,
+        per_device_train_batch_size=4,
+        gradient_accumulation_steps=4
+    )
+
+    trainer = Trainer(model=model, args=args, train_dataset=dataset)
+    trainer.train()
+```
+
+### Multi-GPU considerations
+
+For frameworks that re-execute the Python entrypoint (like PyTorch Lightning), use:
+- `ddp_spawn` or `ddp_notebook` strategy
+- Run training as a subprocess to avoid issues
+
+```python
+@app.function(gpu="H100:4")
+def train_with_subprocess():
+    import subprocess
+    subprocess.run(["python", "-m", "torch.distributed.launch", "train.py"])
+```
+
+## Advanced Container Configuration
+
+### Multi-stage builds for caching
+
+```python
+# Stage 1: Base dependencies (cached)
+base_image = modal.Image.debian_slim().pip_install("torch", "numpy", "scipy")
+
+# Stage 2: ML libraries (cached separately)
+ml_image = base_image.pip_install("transformers", "datasets", "accelerate")
+
+# Stage 3: Custom code (rebuilt on changes)
+final_image = ml_image.copy_local_dir("./src", "/app/src")
+```
+
+### Custom Dockerfiles
+
+```python
+image = modal.Image.from_dockerfile("./Dockerfile")
+```
+
+### Installing from Git
+
+```python
+image = modal.Image.debian_slim().pip_install(
+    "git+https://github.com/huggingface/transformers.git@main"
+)
+```
+
+### Using uv for faster installs
+
+```python
+image = modal.Image.debian_slim().uv_pip_install(
+    "torch", "transformers", "accelerate"
+)
+```
+
+## Advanced Class Patterns
+
+### Lifecycle hooks
+
+```python
+@app.cls(gpu="A10G")
+class InferenceService:
+    @modal.enter()
+    def startup(self):
+        """Called once when container starts"""
+        self.model = load_model()
+        self.tokenizer = load_tokenizer()
+
+    @modal.exit()
+    def shutdown(self):
+        """Called when container shuts down"""
+        cleanup_resources()
+
+    @modal.method()
+    def predict(self, text: str):
+        return self.model(self.tokenizer(text))
+```
+
+### Concurrent request handling
+
+```python
+@app.cls(
+    gpu="A100",
+    allow_concurrent_inputs=20,  # Handle 20 requests per container
+    container_idle_timeout=300
+)
+class BatchInference:
+    @modal.enter()
+    def load(self):
+        self.model = load_model()
+
+    @modal.method()
+    def predict(self, inputs: list):
+        return self.model.batch_predict(inputs)
+```
+
+### Input concurrency vs batching
+
+- **Input concurrency**: Multiple requests processed simultaneously (async I/O)
+- **Dynamic batching**: Requests accumulated and processed together (GPU efficiency)
+
+```python
+# Input concurrency - good for I/O-bound
+@app.function(allow_concurrent_inputs=10)
+async def fetch_data(url: str):
+    async with aiohttp.ClientSession() as session:
+        return await session.get(url)
+
+# Dynamic batching - good for GPU inference
+@app.function()
+@modal.batched(max_batch_size=32, wait_ms=100)
+async def batch_embed(texts: list[str]) -> list[list[float]]:
+    return model.encode(texts)
+```
+
+## Advanced Volumes
+
+### Volume operations
+
+```python
+volume = modal.Volume.from_name("my-volume", create_if_missing=True)
+
+@app.function(volumes={"/data": volume})
+def volume_operations():
+    import os
+
+    # Write data
+    with open("/data/output.txt", "w") as f:
+        f.write("Results")
+
+    # Commit changes (persist to volume)
+    volume.commit()
+
+    # Reload from remote (get latest)
+    volume.reload()
+```
+
+### Shared volumes between functions
+
+```python
+shared_volume = modal.Volume.from_name("shared-data", create_if_missing=True)
+
+@app.function(volumes={"/shared": shared_volume})
+def writer():
+    with open("/shared/data.txt", "w") as f:
+        f.write("Hello from writer")
+    shared_volume.commit()
+
+@app.function(volumes={"/shared": shared_volume})
+def reader():
+    shared_volume.reload()  # Get latest
+    with open("/shared/data.txt", "r") as f:
+        return f.read()
+```
+
+### Cloud bucket mounts
+
+```python
+# Mount S3 bucket
+bucket = modal.CloudBucketMount(
+    bucket_name="my-bucket",
+    secret=modal.Secret.from_name("aws-credentials")
+)
+
+@app.function(volumes={"/s3": bucket})
+def process_s3_data():
+    # Access S3 files like local filesystem
+    data = open("/s3/data.parquet").read()
+```
+
+## Function Composition
+
+### Chaining functions
+
+```python
+@app.function()
+def preprocess(data):
+    return cleaned_data
+
+@app.function(gpu="T4")
+def inference(data):
+    return predictions
+
+@app.function()
+def postprocess(predictions):
+    return formatted_results
+
+@app.function()
+def pipeline(raw_data):
+    cleaned = preprocess.remote(raw_data)
+    predictions = inference.remote(cleaned)
+    results = postprocess.remote(predictions)
+    return results
+```
+
+### Parallel fan-out
+
+```python
+@app.function()
+def process_item(item):
+    return expensive_computation(item)
+
+@app.function()
+def parallel_pipeline(items):
+    # Fan out: process all items in parallel
+    results = list(process_item.map(items))
+    return results
+```
+
+### Starmap for multiple arguments
+
+```python
+@app.function()
+def process(x, y, z):
+    return x + y + z
+
+@app.function()
+def orchestrate():
+    args = [(1, 2, 3), (4, 5, 6), (7, 8, 9)]
+    results = list(process.starmap(args))
+    return results
+```
+
+## Advanced Web Endpoints
+
+### WebSocket support
+
+```python
+from fastapi import FastAPI, WebSocket
+
+app = modal.App("websocket-app")
+web_app = FastAPI()
+
+@web_app.websocket("/ws")
+async def websocket_endpoint(websocket: WebSocket):
+    await websocket.accept()
+    while True:
+        data = await websocket.receive_text()
+        await websocket.send_text(f"Processed: {data}")
+
+@app.function()
+@modal.asgi_app()
+def ws_app():
+    return web_app
+```
+
+### Streaming responses
+
+```python
+from fastapi.responses import StreamingResponse
+
+@app.function(gpu="A100")
+def generate_stream(prompt: str):
+    for token in model.generate_stream(prompt):
+        yield token
+
+@web_app.get("/stream")
+async def stream_response(prompt: str):
+    return StreamingResponse(
+        generate_stream.remote_gen(prompt),
+        media_type="text/event-stream"
+    )
+```
+
+### Authentication
+
+```python
+from fastapi import Depends, HTTPException, Header
+
+async def verify_token(authorization: str = Header(None)):
+    if not authorization or not authorization.startswith("Bearer "):
+        raise HTTPException(status_code=401)
+    token = authorization.split(" ")[1]
+    if not verify_jwt(token):
+        raise HTTPException(status_code=403)
+    return token
+
+@web_app.post("/predict")
+async def predict(data: dict, token: str = Depends(verify_token)):
+    return model.predict(data)
+```
+
+## Cost Optimization
+
+### Right-sizing GPUs
+
+```python
+# For inference: smaller GPUs often sufficient
+@app.function(gpu="L40S")  # 48GB, best cost/perf for inference
+def inference():
+    pass
+
+# For training: larger GPUs for throughput
+@app.function(gpu="A100-80GB")
+def training():
+    pass
+```
+
+### GPU fallbacks for availability
+
+```python
+@app.function(gpu=["H100", "A100", "L40S"])  # Try in order
+def flexible_compute():
+    pass
+```
+
+### Scale to zero
+
+```python
+# Default behavior: scale to zero when idle
+@app.function(gpu="A100")
+def on_demand():
+    pass
+
+# Keep containers warm for low latency (costs more)
+@app.function(gpu="A100", keep_warm=1)
+def always_ready():
+    pass
+```
+
+### Batch processing for efficiency
+
+```python
+# Process in batches to reduce cold starts
+@app.function(gpu="A100")
+def batch_process(items: list):
+    return [process(item) for item in items]
+
+# Better than individual calls
+results = batch_process.remote(all_items)
+```
+
+## Monitoring and Observability
+
+### Structured logging
+
+```python
+import json
+import logging
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+@app.function()
+def structured_logging(request_id: str, data: dict):
+    logger.info(json.dumps({
+        "event": "inference_start",
+        "request_id": request_id,
+        "input_size": len(data)
+    }))
+
+    result = process(data)
+
+    logger.info(json.dumps({
+        "event": "inference_complete",
+        "request_id": request_id,
+        "output_size": len(result)
+    }))
+
+    return result
+```
+
+### Custom metrics
+
+```python
+@app.function(gpu="A100")
+def monitored_inference(inputs):
+    import time
+
+    start = time.time()
+    results = model.predict(inputs)
+    latency = time.time() - start
+
+    # Log metrics (visible in Modal dashboard)
+    print(f"METRIC latency={latency:.3f}s batch_size={len(inputs)}")
+
+    return results
+```
+
+## Production Deployment
+
+### Environment separation
+
+```python
+import os
+
+env = os.environ.get("MODAL_ENV", "dev")
+app = modal.App(f"my-service-{env}")
+
+# Environment-specific config
+if env == "prod":
+    gpu_config = "A100"
+    timeout = 3600
+else:
+    gpu_config = "T4"
+    timeout = 300
+```
+
+### Zero-downtime deployments
+
+Modal automatically handles zero-downtime deployments:
+1. New containers are built and started
+2. Traffic gradually shifts to new version
+3. Old containers drain existing requests
+4. Old containers are terminated
+
+### Health checks
+
+```python
+@app.function()
+@modal.web_endpoint()
+def health():
+    return {
+        "status": "healthy",
+        "model_loaded": hasattr(Model, "_model"),
+        "gpu_available": torch.cuda.is_available()
+    }
+```
+
+## Sandboxes
+
+### Interactive execution environments
+
+```python
+@app.function()
+def run_sandbox():
+    sandbox = modal.Sandbox.create(
+        app=app,
+        image=image,
+        gpu="T4"
+    )
+
+    # Execute code in sandbox
+    result = sandbox.exec("python", "-c", "print('Hello from sandbox')")
+
+    sandbox.terminate()
+    return result
+```
+
+## Invoking Deployed Functions
+
+### From external code
+
+```python
+# Call deployed function from any Python script
+import modal
+
+f = modal.Function.lookup("my-app", "my_function")
+result = f.remote(arg1, arg2)
+```
+
+### REST API invocation
+
+```bash
+# Deployed endpoints accessible via HTTPS
+curl -X POST https://your-workspace--my-app-predict.modal.run \
+  -H "Content-Type: application/json" \
+  -d '{"text": "Hello world"}'
+```

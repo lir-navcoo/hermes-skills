@@ -1,1 +1,176 @@
-LS0tCm5hbWU6IGFzdG9jay1hbmFseXNpcwpkZXNjcmlwdGlvbjogQeiCoeW4guWcuumrmOS7t+WAvOagh+eahOetm+mAieS4juWkjeebmOWIhuaekOahhuaetu+8jOWMheWQq+aKgOacr+mdouOAgeWfuuacrOmdouOAgei1hOmHkemdouOAgeeDreeCueaDhee7quWbm+e7tOW6pumAieiCoeaWueazlQp2ZXJzaW9uOiAyLjAuMAp0YWdzOiBbQeiCoSwg6YCJ6IKhLCDmioDmnK/liIbmnpAsIOWfuuacrOmdouWIhuaekCwg6YeP5YyW5Lqk5piTXQotLS0KCiMgQeiCoemrmOS7t+WAvOagh+eahOetm+mAieS4juWkjeebmOahhuaetiB2Mi4wCgojIyDkuIDjgIHmjIHku5Por4rmlq3vvIjmr4/kuKrml6nnm5jlv4XlgZrvvIkKCioqQk9TU+aMgeS7k++8mioqCi0gMDAyMDk3IOWxseays+aZuuiDve+8iOa3sTEwMOiCoe+8jOaIkOacrDI0LjI1Mu+8iQotIDAwMjE5NSDlsqnlsbHnp5HmioDvvIjmt7E2MDDogqHvvIzmiJDmnKwxMC42NjfvvIkKLSA2MDA2MzMg5rWZ5pWw5paH5YyW77yI5rKqMzAw6IKh77yM5oiQ5pysMTYuNzgw77yJCi0gNjAwOTY3IOWGheiSmeS4gOacuu+8iOayqjMwMOiCoe+8jOaIkOacrDMwLjYwMO+8iQoKKirmjIHku5PliIbmnpDmraXpqqTvvJoqKgoxLiDojrflj5bmjIHku5Plrp7ml7bku7fmoLzvvIjohb7orq/ooYzmg4VBUEnvvIkKMi4g6K6h566X5rWu5LqP6YeR6aKd5ZKM5rWu5LqP5q+U5L6LCjMuIOaKgOacr+mdouiviuaWre+8muaYr+WQpuegtOS9jeOAgeaYr+WQpue8qemHj+OAgeaYr+WQpuacieWPjeW8ueS/oeWPtwo0LiDnu5PlkIjlpKfnm5jnjq/looPnu5nlh7rlvZPml6Xmk43kvZzlu7rorq7vvIjmjIHmnIkv5Yqg5LuTL+WHj+S7ky/mraLmjZ/vvIkKCi0tLQoKIyMg5LqM44CB5pep55uY562W55Wl77yI5bel5L2c5pelMDg6MzDmiafooYzvvIkKCioq5omn6KGM5q2l6aqk77yaKioKMS4g5pCc57Si6ZqU5aSc5aSW5Zu05biC5Zy677yI576O6IKh5LiJ5aSn5oyH44CB5oGS55Sf5oyH5pWw44CBQTUw5pyf6LSn77yJCjIuIOaQnOe0oumalOWknOmHjeimgei0oue7j+a2iOaBr++8iOaUv+etluOAgeihjOS4muOAgeWFrOWPuO+8iQozLiDojrflj5blvZPml6Xnm5jliY3otYTph5HliqjlkJHvvIjljJflkJHotYTph5HjgIHono3otYTono3liLjvvIkKNC4g57uT5ZCI5aSn55uY546v5aKD77yM57uZ5Ye65pep55uY5pON5L2c562W55WlCgoqKua2iOaBr+agvOW8j++8iOS4peagvOaMieatpOi+k+WHuu+8ie+8mioqCgotLS0K8J+TiCAqKuOAkEHogqHml6nnm5jnrZbnlaXjgJF75pel5pyffSoqCgoqKvCfjJkg6ZqU5aSc5aSW5Zu0KioKLSDnvo7ogqHvvJp76KGo546wfQotIOa4r+iCoe+8mnvooajnjrB9Ci0gQTUw5pyf6LSn77yae+ihqOeOsH0KCioq8J+TsCDpmpTlpJzopoHpl7sqKgp75oyJ6YeN6KaB5oCn5o6S5YiX55qEMy015p2h6YeN6KaB5raI5oGvfQoKKirwn46vIOaXqeebmOetlueVpSoqCi0g5aSn55uY6aKE5Yik77yae+mch+iNoS/kuIrmtqgv5LiL6LeM5Y+K55CG55SxfQotIOWFs+azqOaWueWQke+8mnvng63ngrnmlrnlkJF9Ci0g5pON5L2c5bu66K6u77yae+WFt+S9k+W7uuiurn0KCioq8J+UpSDku4rml6Xph43ngrnop4Llr58qKgp7Mi0z5Y+q6ZyA6KaB54m55Yir5YWz5rOo55qE5qCH55qEfQoKLS0tCuKaoO+4jyDmnKznrZbnlaXku4Xkvpvlj4LogIPvvIzkuI3mnoTmiJDmipXotYTlu7rorq7jgIIKCi0tLQoKIyMg5LiJ44CB5pS255uY5pel5oql77yI5bel5L2c5pelMTU6MTDmiafooYzvvIkKCioq5omn6KGM5q2l6aqk77yaKioKMS4g5pCc57Si5b2T5pelQeiCoeaUtuebmOaVsOaNru+8iOS4iuivgeaMh+aVsOOAgea3seivgeaIkOaMh+OAgeWIm+S4muadv+aMh+aUtuebmOeCueS9jeWSjOa2qOi3jOW5he+8iQoyLiDmkJzntKLlvZPml6Xng63ngrnmnb/lnZflkozkuLvlipvotYTph5HmtYHlkJEKMy4g57uT5ZCI5b2T5pel6KGM5oOF77yM5LuO5Lul5LiL57u05bqm562b6YCJMy015Y+q6YeN54K55YWz5rOo6IKh56Wo77yaCiAgIC0g6LWE6YeR6Z2i77ya5Li75Yqb6LWE6YeR5oyB57ut5YeA5rWB5YWlCiAgIC0g5oqA5pyv6Z2i77ya5aSE5LqO5LiK5Y2H6LaL5Yq/77yM6YeP5Lu36YWN5ZCI6Imv5aW9CiAgIC0g5raI5oGv6Z2i77ya5pyJ5q2j6Z2i5YKs5YyW5YmC77yI5pS/562W5Yip5aW944CB6KGM5Lia5pmv5rCU5bqm5o+Q5Y2H562J77yJCjQuIOeUn+aIkOaUtuebmOaXpeaKpe+8jOagvOW8j+WmguS4i++8mgoKLS0tCvCfk4ogKirjgJBB6IKh5pS255uY5pel5oql44CRe+aXpeacn30qKgoKKirwn5OIIOS7iuaXpeaUtuebmCoqCi0g5LiK6K+B5oyH5pWw77yae+eCueS9jX3vvIh75rao6LeM5bmFfe+8iQotIOa3seivgeaIkOaMh++8mnvngrnkvY1977yIe+a2qOi3jOW5hX3vvIkKLSDliJvkuJrmnb/mjIfvvJp754K55L2Nfe+8iHvmtqjot4zluYV977yJCgoqKvCflKUg5LuK5pel54Ot54K5KioKe+eDreeCueadv+Wdl+WIl+ihqH0KCioq8J+SsCDkuLvlipvotYTph5EqKgp76LWE6YeR5YeA5rWB5YWl5YmNM30KCioq8J+MnyDmmI7ml6XlhbPms6gqKgoxLiAqKnvogqHnpajlkI3np7B9KirvvIh75Luj56CBfe+8iQogICAtIOaOqOiNkOeQhueUse+8mnvnroDov7B9CiAgIC0g5Y+C6ICD5L2N572u77yae+aKgOacr+mdoueugOaekH0KCu+8iOmHjeWkjTMtNeWPqu+8iQoKLS0tCuKaoO+4jyDmnKzml6XmiqXku4Xkvpvlj4LogIPvvIzkuI3mnoTmiJDmipXotYTlu7rorq7jgIIKCi0tLQoKIyMg5Zub44CB5qC45b+D6YCJ6IKh57u05bqm77yI5pSv5pKR5Lul5LiK5YiG5p6Q55qE55CG6K665qGG5p6277yJCgojIyMg5oqA5pyv6Z2i77yI5p2D6YeNNDAl77yJCi0gS+e6v+W9ouaAge+8mumUpOWtkOe6v+OAgeWQnuayoeW9ouaAgeOAgeWQr+aYjuS5i+aYn+OAgeeqgeegtOWei+mYs+e6vwotIOWdh+e6v+ezu+e7n++8muWkmuWktOaOkuWIl+OAgeWdh+e6v+mHkeWPieOAgeWdh+e6v+eymOWQiOWQjuWPkeaVowotIE1BQ0TvvJrlupXog4znprvjgIHph5Hlj4kr57qi5p+x5pS+5aSnCi0g5oiQ5Lqk6YeP77ya5pS+6YeP5LiK5raoPeecn+WunueqgeegtO+8jOe8qemHj+S4iua2qD3pmbfpmLEKLSDluIPmnpfluKbvvJrop6blj4rkuIvovajlj43lvLkr5pS+6YePCgojIyMg5Z+65pys6Z2i77yI5p2D6YeNMzAl77yJCi0g5YeA5Yip5ram5aKe6YCf77ya6L+RMuWto+W6puWQjOavlCA+IDIwJQotIFJPRe+8muW5tOW6piA+IDEyJQotIFBFL1BC5Lyw5YC85LiO6KGM5Lia5Z2H5YC85a+55q+UCi0g546w6YeR5rWB5YGl5bq3CgojIyMg6LWE6YeR6Z2i77yI5p2D6YeNMzAl77yJCi0g5YyX5ZCR6LWE6YeR6L+RM+aXpee0r+iuoeWHgOS5sOWFpSA+IDHkur8KLSDkuLvlipvlh4DmtYHlhaXmppznrZvpgIkKLSDono3otYTkvZnpop3lop7plb895p2g5p2G6LWE6YeR55yL5aSaCgojIyMg54Ot54K55LiO5oOF57uqCi0g5pS/562W6Z2i5a+55bqU6KGM5Lia5py65LyaCi0g5p2/5Z2X6L2u5Yqo5pa55ZCRCi0g5rao5YGc5a625pWw44CB5pio5pel5rao5YGc5rqi5Lu3546HCgotLS0KCiMjIOS6lOOAgeWunuaXtuihjOaDheiOt+WPlgoKIyMjIOiFvuiur+ihjOaDhUFQSe+8iFB5dGhvbu+8iQoKYGBgcHl0aG9uCmltcG9ydCB1cmxsaWIucmVxdWVzdAoKIyDojrflj5blpJrlj6rogqHnpajlrp7ml7bku7fmoLwKc3RvY2tzID0gWydzejAwMjA5NycsICdzejAwMjE5NScsICdzaDYwMDYzMycsICdzaDYwMDk2NyddICAjIHN6Pea3seWcsyBzaD3kuIrmtbcKdXJsID0gJ2h0dHBzOi8vcXQuZ3RpbWcuY24vcT0nICsgJywnLmpvaW4oc3RvY2tzKQpyZXEgPSB1cmxsaWIucmVxdWVzdC5SZXF1ZXN0KHVybCwgaGVhZGVycz17J1VzZXItQWdlbnQnOiAnTW96aWxsYS81LjAnfSkKcmVzcG9uc2UgPSB1cmxsaWIucmVxdWVzdC51cmxvcGVuKHJlcSwgdGltZW91dD0xMCkKZGF0YSA9IHJlc3BvbnNlLnJlYWQoKS5kZWNvZGUoJ2diaycpICAjIOW/hemhu+eUqEdCS+ino+eggQoKIyDov5Tlm57mlbDmja7moLzlvI/vvJp2X3N6MDAyMDk3PSI1MX7lsbHmsrPmmbrog71+MDAyMDk3fjEwLjAzfi4uLiIKIyDlrZfmrrXor7TmmI7vvJowPeexu+WeiywgMT3lkI3np7AsIDI95Luj56CBLCAzPeeOsOS7tywgND3mmKjmlLYsIDU95LuK5byALCA2PeaIkOS6pOmHjy4uLgojIOino+aekOekuuS+iwpmb3IgbGluZSBpbiBkYXRhLnN0cmlwKCkuc3BsaXQoJ1xuJyk6CiAgICBwYXJ0cyA9IGxpbmUuc3BsaXQoJ34nKQogICAgaWYgbGVuKHBhcnRzKSA+IDM6CiAgICAgICAgY29kZSA9IHBhcnRzWzJdCiAgICAgICAgbmFtZSA9IHBhcnRzWzFdCiAgICAgICAgcHJpY2UgPSBmbG9hdChwYXJ0c1szXSkKICAgICAgICBjaGFuZ2VfcGN0ID0gZmxvYXQocGFydHNbMzJdKSAgIyDmtqjot4zluYUlCiAgICAgICAgcHJpbnQoZiJ7bmFtZX0oe2NvZGV9KToge3ByaWNlfSAoe2NoYW5nZV9wY3Q6Ky4yZn0lKSIpCmBgYAoKIyMjIOazqOaEj+S6i+mhuQotIOa1j+iniOWZqOebtOaOpeiuv+mXrkFQSeS8mkNPUlPmi6bmiKrvvIzlv4XpobvnlKhQeXRob24v5ZCO56uvCi0g6IKh56Wo5Luj56CB5YmN57yA77yac3o95rex5Zyz44CBc2g95LiK5rW344CBdXM9576O6IKhCi0g6L+U5Zue5pWw5o2u5Li6R0JL57yW56CB77yM6Z2eVVRGLTgKCi0tLQoKIyMg5YWt44CB5pWw5o2u5p2l5rqQCgotIOS4nOaWuei0ouWvjO+8mmh0dHBzOi8vd3d3LmVhc3Rtb25leS5jb20g77yI6KGM5oOF44CB6LWE6YeR44CB5YWs5ZGK77yJCi0g5ZCM6Iqx6aG677yaaHR0cHM6Ly93d3cuMTBqcWthLmNvbS5jbiDvvIjpgInogqHlmajjgIHotKLliqHmlbDmja7vvIkKLSDpm6rnkIPvvJpodHRwczovL3h1ZXFpdS5jb20g77yI6K6o6K6644CB6LWE6K6v77yJCi0g5paw5rWq6LSi57uPL+WHpOWHsOi0oue7j++8mumalOWknOWkluebmOWSjOa2iOaBrwotIOa3seS6pOaJgC/kuIrkuqTmiYDlrpjnvZHvvJrlhazlkYrjgIHnm5HnrqHliqjmgIEKCiMjIOS4g+OAgUNyb27ku7vliqHphY3nva4KCioq5pep55uY5o6o6YCB77yI5bel5L2c5pelMDg6MzDvvInvvJoqKgotIGNyb246IGAwIDggKiAqIDEtNWDvvIhBc2lhL1NoYW5naGFp5pe25Yy677yJCi0g5YaF5a6577ya5aSW5Zu05biC5Zy6K+malOWknOimgemXuyvml6nnm5jnrZbnlaUr5oyB5LuT6K+K5patCi0g5Y+R6YCB6Iez77yaNzgwODAxMTRAcXEuY29tICsg6aOe5LmmQk9TUwoKKirkuIvljYjlpI3nm5jvvIjlt6XkvZzml6UxNToxMO+8ie+8mioqCi0gY3JvbjogYDAgMTUgKiAqIDEtNWDvvIhBc2lhL1NoYW5naGFp5pe25Yy677yJCi0g5YaF5a6577ya5aSn55uY6KGo546wK+aMgeS7k+i/vei4qivmk43kvZzlm57pob4r5piO5pel5bGV5pybCi0g5Y+R6YCB6Iez77yaNzgwODAxMTRAcXEuY29tICsg6aOe5LmmQk9TUwo=
+---
+name: astock-analysis
+description: A股市场高价值标的筛选与复盘分析框架，包含技术面、基本面、资金面、热点情绪四维度选股方法
+version: 2.0.0
+tags: [A股, 选股, 技术分析, 基本面分析, 量化交易]
+---
+
+# A股高价值标的筛选与复盘框架 v2.0
+
+## 一、持仓诊断（每个早盘必做）
+
+**BOSS持仓：**
+- 002097 山河智能（深100股，成本24.252）
+- 002195 岩山科技（深600股，成本10.667）
+- 600633 浙数文化（沪300股，成本16.780）
+- 600967 内蒙一机（沪300股，成本30.600）
+
+**持仓分析步骤：**
+1. 获取持仓实时价格（腾讯行情API）
+2. 计算浮亏金额和浮亏比例
+3. 技术面诊断：是否破位、是否缩量、是否有反弹信号
+4. 结合大盘环境给出当日操作建议（持有/加仓/减仓/止损）
+
+---
+
+## 二、早盘策略（工作日08:30执行）
+
+**执行步骤：**
+1. 搜索隔夜外围市场（美股三大指、恒生指数、A50期货）
+2. 搜索隔夜重要财经消息（政策、行业、公司）
+3. 获取当日盘前资金动向（北向资金、融资融券）
+4. 结合大盘环境，给出早盘操作策略
+
+**消息格式（严格按此输出）：**
+
+---
+📈 **【A股早盘策略】{日期}**
+
+**🌙 隔夜外围**
+- 美股：{表现}
+- 港股：{表现}
+- A50期货：{表现}
+
+**📰 隔夜要闻**
+{按重要性排列的3-5条重要消息}
+
+**🎯 早盘策略**
+- 大盘预判：{震荡/上涨/下跌及理由}
+- 关注方向：{热点方向}
+- 操作建议：{具体建议}
+
+**🔥 今日重点观察**
+{2-3只需要特别关注的标的}
+
+---
+⚠️ 本策略仅供参考，不构成投资建议。
+
+---
+
+## 三、收盘日报（工作日15:10执行）
+
+**执行步骤：**
+1. 搜索当日A股收盘数据（上证指数、深证成指、创业板指收盘点位和涨跌幅）
+2. 搜索当日热点板块和主力资金流向
+3. 结合当日行情，从以下维度筛选3-5只重点关注股票：
+   - 资金面：主力资金持续净流入
+   - 技术面：处于上升趋势，量价配合良好
+   - 消息面：有正面催化剂（政策利好、行业景气度提升等）
+4. 生成收盘日报，格式如下：
+
+---
+📊 **【A股收盘日报】{日期}**
+
+**📈 今日收盘**
+- 上证指数：{点位}（{涨跌幅}）
+- 深证成指：{点位}（{涨跌幅}）
+- 创业板指：{点位}（{涨跌幅}）
+
+**🔥 今日热点**
+{热点板块列表}
+
+**💰 主力资金**
+{资金净流入前3}
+
+**🌟 明日关注**
+1. **{股票名称}**（{代码}）
+   - 推荐理由：{简述}
+   - 参考位置：{技术面简析}
+
+（重复3-5只）
+
+---
+⚠️ 本日报仅供参考，不构成投资建议。
+
+---
+
+## 四、核心选股维度（支撑以上分析的理论框架）
+
+### 技术面（权重40%）
+- K线形态：锤子线、吞没形态、启明之星、突破型阳线
+- 均线系统：多头排列、均线金叉、均线粘合后发散
+- MACD：底背离、金叉+红柱放大
+- 成交量：放量上涨=真实突破，缩量上涨=陷阱
+- 布林带：触及下轨反弹+放量
+
+### 基本面（权重30%）
+- 净利润增速：近2季度同比 > 20%
+- ROE：年度 > 12%
+- PE/PB估值与行业均值对比
+- 现金流健康
+
+### 资金面（权重30%）
+- 北向资金近3日累计净买入 > 1亿
+- 主力净流入榜筛选
+- 融资余额增长=杠杆资金看多
+
+### 热点与情绪
+- 政策面对应行业机会
+- 板块轮动方向
+- 涨停家数、昨日涨停溢价率
+
+---
+
+## 五、实时行情获取
+
+### 腾讯行情API（Python）
+
+```python
+import urllib.request
+
+# 获取多只股票实时价格
+stocks = ['sz002097', 'sz002195', 'sh600633', 'sh600967']  # sz=深圳 sh=上海
+url = 'https://qt.gtimg.cn/q=' + ','.join(stocks)
+req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+response = urllib.request.urlopen(req, timeout=10)
+data = response.read().decode('gbk')  # 必须用GBK解码
+
+# 返回数据格式：v_sz002097="51~山河智能~002097~10.03~..."
+# 字段说明：0=类型, 1=名称, 2=代码, 3=现价, 4=昨收, 5=今开, 6=成交量...
+# 解析示例
+for line in data.strip().split('\n'):
+    parts = line.split('~')
+    if len(parts) > 3:
+        code = parts[2]
+        name = parts[1]
+        price = float(parts[3])
+        change_pct = float(parts[32])  # 涨跌幅%
+        print(f"{name}({code}): {price} ({change_pct:+.2f}%)")
+```
+
+### 注意事项
+- 浏览器直接访问API会CORS拦截，必须用Python/后端
+- 股票代码前缀：sz=深圳、sh=上海、us=美股
+- 返回数据为GBK编码，非UTF-8
+
+---
+
+## 六、数据来源
+
+- 东方财富：https://www.eastmoney.com （行情、资金、公告）
+- 同花顺：https://www.10jqka.com.cn （选股器、财务数据）
+- 雪球：https://xueqiu.com （讨论、资讯）
+- 新浪财经/凤凰财经：隔夜外盘和消息
+- 深交所/上交所官网：公告、监管动态
+
+## 七、Cron任务配置
+
+**早盘推送（工作日08:30）：**
+- cron: `0 8 * * 1-5`（Asia/Shanghai时区）
+- 内容：外围市场+隔夜要闻+早盘策略+持仓诊断
+- 发送至：78080114@qq.com + 飞书BOSS
+
+**下午复盘（工作日15:10）：**
+- cron: `0 15 * * 1-5`（Asia/Shanghai时区）
+- 内容：大盘表现+持仓追踪+操作回顾+明日展望
+- 发送至：78080114@qq.com + 飞书BOSS

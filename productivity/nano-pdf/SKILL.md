@@ -1,1 +1,51 @@
-LS0tCm5hbWU6IG5hbm8tcGRmCmRlc2NyaXB0aW9uOiBFZGl0IFBERnMgd2l0aCBuYXR1cmFsLWxhbmd1YWdlIGluc3RydWN0aW9ucyB1c2luZyB0aGUgbmFuby1wZGYgQ0xJLiBNb2RpZnkgdGV4dCwgZml4IHR5cG9zLCB1cGRhdGUgdGl0bGVzLCBhbmQgbWFrZSBjb250ZW50IGNoYW5nZXMgdG8gc3BlY2lmaWMgcGFnZXMgd2l0aG91dCBtYW51YWwgZWRpdGluZy4KdmVyc2lvbjogMS4wLjAKYXV0aG9yOiBjb21tdW5pdHkKbGljZW5zZTogTUlUCm1ldGFkYXRhOgogIGhlcm1lczoKICAgIHRhZ3M6IFtQREYsIERvY3VtZW50cywgRWRpdGluZywgTkxQLCBQcm9kdWN0aXZpdHldCiAgICBob21lcGFnZTogaHR0cHM6Ly9weXBpLm9yZy9wcm9qZWN0L25hbm8tcGRmLwotLS0KCiMgbmFuby1wZGYKCkVkaXQgUERGcyB1c2luZyBuYXR1cmFsLWxhbmd1YWdlIGluc3RydWN0aW9ucy4gUG9pbnQgaXQgYXQgYSBwYWdlIGFuZCBkZXNjcmliZSB3aGF0IHRvIGNoYW5nZS4KCiMjIFByZXJlcXVpc2l0ZXMKCmBgYGJhc2gKIyBJbnN0YWxsIHdpdGggdXYgKHJlY29tbWVuZGVkIOKAlCBhbHJlYWR5IGF2YWlsYWJsZSBpbiBIZXJtZXMpCnV2IHBpcCBpbnN0YWxsIG5hbm8tcGRmCgojIE9yIHdpdGggcGlwCnBpcCBpbnN0YWxsIG5hbm8tcGRmCmBgYAoKIyMgVXNhZ2UKCmBgYGJhc2gKbmFuby1wZGYgZWRpdCA8ZmlsZS5wZGY+IDxwYWdlX251bWJlcj4gIjxpbnN0cnVjdGlvbj4iCmBgYAoKIyMgRXhhbXBsZXMKCmBgYGJhc2gKIyBDaGFuZ2UgYSB0aXRsZSBvbiBwYWdlIDEKbmFuby1wZGYgZWRpdCBkZWNrLnBkZiAxICJDaGFuZ2UgdGhlIHRpdGxlIHRvICdRMyBSZXN1bHRzJyBhbmQgZml4IHRoZSB0eXBvIGluIHRoZSBzdWJ0aXRsZSIKCiMgVXBkYXRlIGEgZGF0ZSBvbiBhIHNwZWNpZmljIHBhZ2UKbmFuby1wZGYgZWRpdCByZXBvcnQucGRmIDMgIlVwZGF0ZSB0aGUgZGF0ZSBmcm9tIEphbnVhcnkgdG8gRmVicnVhcnkgMjAyNiIKCiMgRml4IGNvbnRlbnQKbmFuby1wZGYgZWRpdCBjb250cmFjdC5wZGYgMiAiQ2hhbmdlIHRoZSBjbGllbnQgbmFtZSBmcm9tICdBY21lIENvcnAnIHRvICdBY21lIEluZHVzdHJpZXMnIgpgYGAKCiMjIE5vdGVzCgotIFBhZ2UgbnVtYmVycyBtYXkgYmUgMC1iYXNlZCBvciAxLWJhc2VkIGRlcGVuZGluZyBvbiB2ZXJzaW9uIOKAlCBpZiB0aGUgZWRpdCBoaXRzIHRoZSB3cm9uZyBwYWdlLCByZXRyeSB3aXRoIMKxMQotIEFsd2F5cyB2ZXJpZnkgdGhlIG91dHB1dCBQREYgYWZ0ZXIgZWRpdGluZyAodXNlIGByZWFkX2ZpbGVgIHRvIGNoZWNrIGZpbGUgc2l6ZSwgb3Igb3BlbiBpdCkKLSBUaGUgdG9vbCB1c2VzIGFuIExMTSB1bmRlciB0aGUgaG9vZCDigJQgcmVxdWlyZXMgYW4gQVBJIGtleSAoY2hlY2sgYG5hbm8tcGRmIC0taGVscGAgZm9yIGNvbmZpZykKLSBXb3JrcyB3ZWxsIGZvciB0ZXh0IGNoYW5nZXM7IGNvbXBsZXggbGF5b3V0IG1vZGlmaWNhdGlvbnMgbWF5IG5lZWQgYSBkaWZmZXJlbnQgYXBwcm9hY2gK
+---
+name: nano-pdf
+description: Edit PDFs with natural-language instructions using the nano-pdf CLI. Modify text, fix typos, update titles, and make content changes to specific pages without manual editing.
+version: 1.0.0
+author: community
+license: MIT
+metadata:
+  hermes:
+    tags: [PDF, Documents, Editing, NLP, Productivity]
+    homepage: https://pypi.org/project/nano-pdf/
+---
+
+# nano-pdf
+
+Edit PDFs using natural-language instructions. Point it at a page and describe what to change.
+
+## Prerequisites
+
+```bash
+# Install with uv (recommended — already available in Hermes)
+uv pip install nano-pdf
+
+# Or with pip
+pip install nano-pdf
+```
+
+## Usage
+
+```bash
+nano-pdf edit <file.pdf> <page_number> "<instruction>"
+```
+
+## Examples
+
+```bash
+# Change a title on page 1
+nano-pdf edit deck.pdf 1 "Change the title to 'Q3 Results' and fix the typo in the subtitle"
+
+# Update a date on a specific page
+nano-pdf edit report.pdf 3 "Update the date from January to February 2026"
+
+# Fix content
+nano-pdf edit contract.pdf 2 "Change the client name from 'Acme Corp' to 'Acme Industries'"
+```
+
+## Notes
+
+- Page numbers may be 0-based or 1-based depending on version — if the edit hits the wrong page, retry with ±1
+- Always verify the output PDF after editing (use `read_file` to check file size, or open it)
+- The tool uses an LLM under the hood — requires an API key (check `nano-pdf --help` for config)
+- Works well for text changes; complex layout modifications may need a different approach

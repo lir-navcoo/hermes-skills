@@ -1,1 +1,161 @@
-IyBBbmltYXRpb24gRGVzaWduIFRoaW5raW5nCgpIb3cgdG8gZGVjaWRlIFdIQVQgdG8gYW5pbWF0ZSBhbmQgSE9XIHRvIHN0cnVjdHVyZSBpdCDigJQgYmVmb3JlIHdyaXRpbmcgYW55IGNvZGUuCgojIyBTaG91bGQgSSBhbmltYXRlIHRoaXM/CgpOb3QgZXZlcnl0aGluZyBiZW5lZml0cyBmcm9tIGFuaW1hdGlvbi4gTW90aW9uIGFkZHMgY29nbml0aXZlIGxvYWQuIEJhZCBhbmltYXRpb24gaXMgd29yc2UgdGhhbiBhIGdvb2Qgc3RhdGljIGRpYWdyYW0uCgoqKkFuaW1hdGUgd2hlbjoqKgotIEEgc2VxdWVuY2UgdW5mb2xkcyBvdmVyIHRpbWUgKGFsZ29yaXRobSBzdGVwcywgZGVyaXZhdGlvbiwgcGlwZWxpbmUgc3RhZ2VzKQotIFNwYXRpYWwgcmVsYXRpb25zaGlwcyBjaGFuZ2UgKHRyYW5zZm9ybWF0aW9uLCBkZWZvcm1hdGlvbiwgcm90YXRpb24pCi0gU29tZXRoaW5nIGlzIGJ1aWx0IGZyb20gcGFydHMgKGNvbnN0cnVjdGlvbiwgYXNzZW1ibHksIGFjY3VtdWxhdGlvbikKLSBZb3UncmUgY29tcGFyaW5nIHN0YXRlcyAoYmVmb3JlL2FmdGVyLCBtZXRob2QgQSB2cyBtZXRob2QgQikKLSBUZW1wb3JhbCBldm9sdXRpb24gaXMgdGhlIHBvaW50ICh0cmFpbmluZyBjdXJ2ZXMsIHdhdmUgcHJvcGFnYXRpb24sIGdyYWRpZW50IGRlc2NlbnQpCgoqKlNob3cgc3RhdGljIHdoZW46KioKLSBUaGUgY29uY2VwdCBpcyBhIHNpbmdsZSBsYWJlbGVkIGRpYWdyYW0gKGNpcmN1aXQsIGFuYXRvbXksIGFyY2hpdGVjdHVyZSBvdmVydmlldykKLSBNb3Rpb24gd291bGQgZGlzdHJhY3QgZnJvbSBzcGF0aWFsIGxheW91dAotIFRoZSB2aWV3ZXIgbmVlZHMgdG8gc3R1ZHkgaXQgY2FyZWZ1bGx5IChkZW5zZSB0YWJsZSwgcmVmZXJlbmNlIGNoYXJ0KQotIFRoZSBjb25jZXB0IGlzIGFscmVhZHkgaW50dWl0aXZlIGZyb20gYSB3ZWxsLWxhYmVsZWQgZmlndXJlCgoqKlJ1bGUgb2YgdGh1bWI6KiogSWYgeW91J2QgZXhwbGFpbiBpdCB3aXRoICJmaXJzdCBYLCB0aGVuIFksIHRoZW4gWiIg4oCUIGFuaW1hdGUgaXQuIElmIHlvdSdkIGV4cGxhaW4gaXQgYnkgcG9pbnRpbmcgYXQgcGFydHMgb2Ygb25lIHBpY3R1cmUg4oCUIHNob3cgaXQgc3RhdGljLgoKIyMgRGVjb21wb3NpbmcgYSBjb25jZXB0IGludG8gYW5pbWF0aW9uCgojIyMgU3RlcCAxOiBXcml0ZSB0aGUgbmFycmF0aW9uIGZpcnN0CgpCZWZvcmUgYW55IGNvZGUsIHdyaXRlIHdoYXQgdGhlIG5hcnJhdG9yIHdvdWxkIHNheS4gVGhpcyBkZXRlcm1pbmVzOgotICoqT3JkZXIqKiDigJQgd2hhdCBjb25jZXB0IGNvbWVzIGZpcnN0Ci0gKipEdXJhdGlvbioqIOKAlCBob3cgbG9uZyBlYWNoIGlkZWEgZ2V0cwotICoqVmlzdWFscyoqIOKAlCB3aGF0IHRoZSB2aWV3ZXIgbXVzdCBTRUUgd2hlbiB0aGV5IEhFQVIgZWFjaCBzZW50ZW5jZQoKQSBzY2VuZSB3aGVyZSB0aGUgbmFycmF0aW9uIHNheXMgInRoZSBncmFkaWVudCBwb2ludHMgdXBoaWxsIiBtdXN0IHNob3cgYSBncmFkaWVudCBhcnJvdyBhdCB0aGF0IG1vbWVudC4gSWYgdGhlIHZpc3VhbCBkb2Vzbid0IG1hdGNoIHRoZSBhdWRpbywgdGhlIHZpZXdlcidzIGJyYWluIHNwbGl0cyBhdHRlbnRpb24gYW5kIGJvdGggdHJhY2tzIGFyZSBsb3N0LgoKIyMjIFN0ZXAgMjogSWRlbnRpZnkgdmlzdWFsIGJlYXRzCgpBICJiZWF0IiBpcyBhIG1vbWVudCB3aGVyZSBzb21ldGhpbmcgY2hhbmdlcyBvbiBzY3JlZW4uIE1hcmsgZWFjaCBiZWF0IGluIHlvdXIgbmFycmF0aW9uOgoKYGBgCiJDb25zaWRlciBhIGZ1bmN0aW9uIGYgb2YgeC4iICAgICAgICAg4oaSIFtCRUFUOiBheGVzICsgY3VydmUgYXBwZWFyXQoiQXQgdGhpcyBwb2ludC4uLiIgICAgICAgICAgICAgICAgICAgICDihpIgW0JFQVQ6IGRvdCBhcHBlYXJzIG9uIGN1cnZlXQoiLi4udGhlIHNsb3BlIGlzIHBvc2l0aXZlLiIgICAgICAgICAgICDihpIgW0JFQVQ6IHRhbmdlbnQgbGluZSBkcmF3bl0KIlNvIHRoZSBncmFkaWVudCB0ZWxscyB1cyB0byBnbyBsZWZ0LiIg4oaSIFtCRUFUOiBhcnJvdyBwb2ludHMgbGVmdCwgZG90IG1vdmVzXQpgYGAKCkVhY2ggYmVhdCBpcyBvbmUgYHNlbGYucGxheSgpYCBjYWxsIG9yIGEgc21hbGwgZ3JvdXAgb2Ygc2ltdWx0YW5lb3VzIGFuaW1hdGlvbnMuCgojIyMgU3RlcCAzOiBDaG9vc2UgdGhlIHJpZ2h0IHRvb2wgcGVyIGJlYXQKCnwgVmlzdWFsIG5lZWQgfCBNYW5pbSBhcHByb2FjaCB8CnwtLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS18CnwgT2JqZWN0IGFwcGVhcnMgZm9yIGZpcnN0IHRpbWUgfCBgQ3JlYXRlYCwgYFdyaXRlYCwgYEZhZGVJbmAsIGBHcm93RnJvbUNlbnRlcmAgfAp8IE9iamVjdCB0cmFuc2Zvcm1zIGludG8gYW5vdGhlciB8IGBUcmFuc2Zvcm1gLCBgUmVwbGFjZW1lbnRUcmFuc2Zvcm1gLCBgRmFkZVRyYW5zZm9ybWAgfAp8IEF0dGVudGlvbiBkcmF3biB0byBleGlzdGluZyBvYmplY3QgfCBgSW5kaWNhdGVgLCBgQ2lyY3Vtc2NyaWJlYCwgYEZsYXNoYCwgYFNob3dQYXNzaW5nRmxhc2hgIHwKfCBDb250aW51b3VzIHJlbGF0aW9uc2hpcCBtYWludGFpbmVkIHwgYGFkZF91cGRhdGVyYCwgYGFsd2F5c19yZWRyYXdgLCBgVmFsdWVUcmFja2VyYCB8CnwgT2JqZWN0IGxlYXZlcyB0aGUgc2NlbmUgfCBgRmFkZU91dGAsIGBVbmNyZWF0ZWAsIGBTaHJpbmtUb0NlbnRlcmAgfAp8IFN0YXRpYyBjb250ZXh0IHRoYXQgc3RheXMgdmlzaWJsZSB8IGBzZWxmLmFkZCgpYCAobm8gYW5pbWF0aW9uKSB8CgojIyBQYWNpbmc6IHRoZSB1bml2ZXJzYWwgbWlzdGFrZSBpcyB0b28gZmFzdAoKIyMjIFRpbWluZyBydWxlcwoKfCBDb250ZW50IHR5cGUgfCBNaW5pbXVtIG9uLXNjcmVlbiB0aW1lIHwKfC0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tLS0tLS0tLXwKfCBOZXcgZXF1YXRpb24gYXBwZWFyaW5nIHwgMi4wcyBhbmltYXRpb24gKyAyLjBzIHBhdXNlIHwKfCBOZXcgY29uY2VwdCBsYWJlbCB8IDEuMHMgYW5pbWF0aW9uICsgMS4wcyBwYXVzZSB8CnwgS2V5IGluc2lnaHQgKCJhaGEgbW9tZW50IikgfCAyLjVzIGFuaW1hdGlvbiArIDMuMHMgcGF1c2UgfAp8IFN1cHBvcnRpbmcgYW5ub3RhdGlvbiB8IDAuOHMgYW5pbWF0aW9uICsgMC41cyBwYXVzZSB8CnwgU2NlbmUgdHJhbnNpdGlvbiAoRmFkZU91dCBhbGwpIHwgMC41cyBhbmltYXRpb24gKyAwLjNzIHBhdXNlIHwKCiMjIyBCcmVhdGhpbmcgcm9vbQoKQWZ0ZXIgZXZlcnkgcmV2ZWFsLCBhZGQgYHNlbGYud2FpdCgpYC4gVGhlIHZpZXdlciBuZWVkcyB0aW1lIHRvOgoxLiBSZWFkIHRoZSBuZXcgdGV4dAoyLiBDb25uZWN0IGl0IHRvIHdoYXQncyBhbHJlYWR5IG9uIHNjcmVlbgozLiBGb3JtIGFuIGV4cGVjdGF0aW9uIGFib3V0IHdoYXQgY29tZXMgbmV4dAoKKipObyB3YWl0ID0gdGhlIHZpZXdlciBpcyBhbHdheXMgYmVoaW5kIHlvdS4qKiBUaGV5J3JlIHN0aWxsIHJlYWRpbmcgdGhlIGVxdWF0aW9uIHdoZW4geW91J3ZlIGFscmVhZHkgc3RhcnRlZCB0cmFuc2Zvcm1pbmcgaXQuCgojIyMgVGVtcG8gdmFyaWF0aW9uCgpNb25vdG9ub3VzIHBhY2luZyBmZWVscyBsaWtlIGEgbGVjdHVyZS4gVmFyeSB0aGUgdGVtcG86Ci0gKipTbG93IGJ1aWxkKiogZm9yIGNvcmUgY29uY2VwdHMgKGxvbmcgcnVuX3RpbWUsIGxvbmcgcGF1c2VzKQotICoqUXVpY2sgc3VjY2Vzc2lvbioqIGZvciBzdXBwb3J0aW5nIGRldGFpbHMgKHNob3J0IHJ1bl90aW1lLCBtaW5pbWFsIHBhdXNlcykKLSAqKkRyYW1hdGljIHBhdXNlKiogYmVmb3JlIHRoZSBrZXkgcmV2ZWFsIChleHRyYSBgc2VsZi53YWl0KDIuMClgIGJlZm9yZSB0aGUgImFoYSIpCi0gKipSYXBpZCBtb250YWdlKiogZm9yICJhbmQgdGhpcyBhcHBsaWVzIHRvIFgsIFksIFouLi4iIHNlcXVlbmNlcyAoYExhZ2dlZFN0YXJ0YCB3aXRoIHRpZ2h0IGxhZ19yYXRpbykKCiMjIE5hcnJhdGlvbiBzeW5jaHJvbml6YXRpb24KCiMjIyBUaGUgInNlZSB0aGVuIGhlYXIiIHByaW5jaXBsZQoKVGhlIHZpc3VhbCBzaG91bGQgYXBwZWFyIHNsaWdodGx5IEJFRk9SRSB0aGUgbmFycmF0aW9uIGRlc2NyaWJlcyBpdC4gV2hlbiB0aGUgdmlld2VyIHNlZXMgYSBjaXJjbGUgYXBwZWFyIGFuZCBUSEVOIGhlYXJzICJjb25zaWRlciBhIGNpcmNsZSwiIHRoZSB2aXN1YWwgcHJpbWVzIHRoZWlyIGJyYWluIGZvciB0aGUgY29uY2VwdC4gVGhlIHJldmVyc2Ug4oCUIGhlYXJpbmcgZmlyc3QsIHNlZWluZyBzZWNvbmQg4oCUIGNyZWF0ZXMgY29uZnVzaW9uIGJlY2F1c2UgdGhleSdyZSBzZWFyY2hpbmcgdGhlIHNjcmVlbiBmb3Igc29tZXRoaW5nIHRoYXQgaXNuJ3QgdGhlcmUgeWV0LgoKIyMjIFByYWN0aWNhbCB0aW1pbmcKCmBgYHB5dGhvbgojIFNjZW5lIGR1cmF0aW9uIHNob3VsZCBtYXRjaCBuYXJyYXRpb24gZHVyYXRpb24uCiMgSWYgbmFycmF0aW9uIGZvciB0aGlzIHNjZW5lIGlzIDggc2Vjb25kczoKIyBUb3RhbCBhbmltYXRpb24gcnVuX3RpbWVzICsgdG90YWwgc2VsZi53YWl0KCkgdGltZXMgPSB+OCBzZWNvbmRzLgoKIyBVc2UgbWFuaW0tdm9pY2VvdmVyIGZvciBhdXRvbWF0aWMgc3luYzoKd2l0aCBzZWxmLnZvaWNlb3Zlcih0ZXh0PSJUaGUgZ3JhZGllbnQgcG9pbnRzIGRvd25oaWxsIikgYXMgdHJhY2tlcjoKICAgIHNlbGYucGxheShHcm93QXJyb3coZ3JhZGllbnRfYXJyb3cpLCBydW5fdGltZT10cmFja2VyLmR1cmF0aW9uKQpgYGAKCiMjIEVxdWF0aW9uIGRlY29tcG9zaXRpb24gc3RyYXRlZ3kKCiMjIyBUaGUgImRpbSBhbmQgcmV2ZWFsIiBwYXR0ZXJuCgpXaGVuIGJ1aWxkaW5nIGEgY29tcGxleCBlcXVhdGlvbiBzdGVwIGJ5IHN0ZXA6CjEuIFNob3cgdGhlIGZ1bGwgZXF1YXRpb24gZGltbWVkIGF0IGBvcGFjaXR5PTAuMmAgKHNldHMgZXhwZWN0YXRpb24gZm9yIHdoZXJlIHlvdSdyZSBnb2luZykKMi4gSGlnaGxpZ2h0IHRoZSBmaXJzdCB0ZXJtIGF0IGZ1bGwgb3BhY2l0eQozLiBFeHBsYWluIGl0CjQuIEhpZ2hsaWdodCB0aGUgbmV4dCB0ZXJtLCBkaW0gdGhlIGZpcnN0IHRvIGAwLjVgIChpdCdzIG5vdyBjb250ZXh0KQo1LiBSZXBlYXQgdW50aWwgdGhlIGZ1bGwgZXF1YXRpb24gaXMgYnJpZ2h0CgpUaGlzIGlzIGJldHRlciB0aGFuIGJ1aWxkaW5nIGxlZnQtdG8tcmlnaHQgYmVjYXVzZSB0aGUgdmlld2VyIGFsd2F5cyBzZWVzIHRoZSBkZXN0aW5hdGlvbi4KCiMjIyBUZXJtIG9yZGVyaW5nCgpBbmltYXRlIHRlcm1zIGluIHRoZSBvcmRlciB0aGUgdmlld2VyIG5lZWRzIHRvIHVuZGVyc3RhbmQgdGhlbSwgbm90IGluIHRoZSBvcmRlciB0aGV5IGFwcGVhciBpbiB0aGUgZXF1YXRpb24uIEZvciBgRSA9IG1jwrJgOgotIFNob3cgYEVgICh0aGUgdGhpbmcgd2Ugd2FudCB0byBrbm93KQotIFRoZW4gYG1gICh0aGUgaW5wdXQpCi0gVGhlbiBgY8KyYCAodGhlIGNvbnN0YW50IHRoYXQgbWFrZXMgaXQgd29yaykKLSBUaGVuIHRoZSBgPWAgKGNvbm5lY3RpbmcgdGhlbSkKCiMjIEFyY2hpdGVjdHVyZSBhbmQgcGlwZWxpbmUgZGlhZ3JhbXMKCiMjIyBCb3ggZ3JhbnVsYXJpdHkKClRoZSBtb3N0IGNvbW1vbiBtaXN0YWtlOiB0b28gbWFueSBib3hlcy4gRWFjaCBib3ggaXMgYSBjb25jZXB0IHRoZSB2aWV3ZXIgbXVzdCB0cmFjay4gRml2ZSBib3hlcyB3aXRoIGNsZWFyIGxhYmVscyBiZWF0cyB0d2VsdmUgYm94ZXMgd2l0aCBhYmJyZXZpYXRpb25zLgoKKipSdWxlOioqIElmIHR3byBjb25zZWN1dGl2ZSBib3hlcyBjb3VsZCBiZSBsYWJlbGVkICJYIiBhbmQgInByb2Nlc3MgWCBvdXRwdXQsIiBtZXJnZSB0aGVtIGludG8gb25lIGJveC4KCiMjIyBBbmltYXRpb24gc3RyYXRlZ3kKCkJ1aWxkIHBpcGVsaW5lcyBsZWZ0LXRvLXJpZ2h0IChvciB0b3AtdG8tYm90dG9tKSB3aXRoIGFycm93cyBjb25uZWN0aW5nIHRoZW06CjEuIEZpcnN0IGJveCBhcHBlYXJzIGFsb25lIOKGkiBleHBsYWluIGl0CjIuIEFycm93IGdyb3dzIGZyb20gZmlyc3QgdG8gc2Vjb25kIOKGkiAidGhlIG91dHB1dCBmZWVkcyBpbnRvLi4uIgozLiBTZWNvbmQgYm94IGFwcGVhcnMg4oaSIGV4cGxhaW4gaXQKNC4gUmVwZWF0CgpUaGVuIHNob3cgZGF0YSBmbG93aW5nIHRocm91Z2g6IGBTaG93UGFzc2luZ0ZsYXNoYCBhbG9uZyB0aGUgYXJyb3dzLCBvciBhIGNvbG9yZWQgZG90IHRyYXZlcnNpbmcgdGhlIHBhdGguCgojIyMgVGhlIHpvb20tYW5kLXJldHVybiBwYXR0ZXJuCgpGb3IgY29tcGxleCBzeXN0ZW1zOgoxLiBTaG93IHRoZSBmdWxsIG92ZXJ2aWV3IChhbGwgYm94ZXMsIHNtYWxsKQoyLiBab29tIGludG8gb25lIGJveCAoYE1vdmluZ0NhbWVyYVNjZW5lLmNhbWVyYS5mcmFtZS5hbmltYXRlYCkKMy4gRXhwYW5kIHRoYXQgYm94IGludG8gaXRzIGludGVybmFsIGNvbXBvbmVudHMKNC4gWm9vbSBiYWNrIG91dCB0byB0aGUgb3ZlcnZpZXcKNS4gWm9vbSBpbnRvIHRoZSBuZXh0IGJveAoKIyMgQ29tbW9uIGRlc2lnbiBtaXN0YWtlcwoKMS4gKipBbmltYXRpbmcgZXZlcnl0aGluZyBhdCBvbmNlLioqIFRoZSB2aWV3ZXIgY2FuIHRyYWNrIDEtMiBzaW11bHRhbmVvdXMgYW5pbWF0aW9ucy4gTW9yZSB0aGFuIHRoYXQgYW5kIG5vdGhpbmcgcmVnaXN0ZXJzLgoyLiAqKk5vIHZpc3VhbCBoaWVyYXJjaHkuKiogRXZlcnl0aGluZyBhdCB0aGUgc2FtZSBvcGFjaXR5L3NpemUvY29sb3IgbWVhbnMgbm90aGluZyBzdGFuZHMgb3V0LiBVc2Ugb3BhY2l0eSBsYXllcmluZy4KMy4gKipFcXVhdGlvbnMgd2l0aG91dCBjb250ZXh0LioqIEFuIGVxdWF0aW9uIGFwcGVhcmluZyBhbG9uZSBtZWFucyBub3RoaW5nLiBBbHdheXMgc2hvdyB0aGUgZ2VvbWV0cmljL3Zpc3VhbCBpbnRlcnByZXRhdGlvbiBmaXJzdCBvciBzaW11bHRhbmVvdXNseS4KNC4gKipTa2lwcGluZyB0aGUgIndoeS4iKiogU2hvd2luZyBIT1cgYSB0cmFuc2Zvcm1hdGlvbiB3b3JrcyB3aXRob3V0IFdIWSBpdCBtYXR0ZXJzLiBBZGQgYSBzZW50ZW5jZS9sYWJlbCBleHBsYWluaW5nIHRoZSBwdXJwb3NlLgo1LiAqKklkZW50aWNhbCBwYWNpbmcgdGhyb3VnaG91dC4qKiBFdmVyeSBhbmltYXRpb24gYXQgcnVuX3RpbWU9MS41LCBldmVyeSB3YWl0IGF0IDEuMC4gVmFyeSBpdC4KNi4gKipGb3JnZXR0aW5nIHRoZSBhdWRpZW5jZS4qKiBBIHZpZGVvIGZvciBoaWdoIHNjaG9vbGVycyBuZWVkcyBkaWZmZXJlbnQgcGFjaW5nIGFuZCBjb21wbGV4aXR5IHRoYW4gb25lIGZvciBQaEQgc3R1ZGVudHMuIERlY2lkZSB0aGUgYXVkaWVuY2UgaW4gdGhlIHBsYW5uaW5nIHBoYXNlLgo=
+# Animation Design Thinking
+
+How to decide WHAT to animate and HOW to structure it — before writing any code.
+
+## Should I animate this?
+
+Not everything benefits from animation. Motion adds cognitive load. Bad animation is worse than a good static diagram.
+
+**Animate when:**
+- A sequence unfolds over time (algorithm steps, derivation, pipeline stages)
+- Spatial relationships change (transformation, deformation, rotation)
+- Something is built from parts (construction, assembly, accumulation)
+- You're comparing states (before/after, method A vs method B)
+- Temporal evolution is the point (training curves, wave propagation, gradient descent)
+
+**Show static when:**
+- The concept is a single labeled diagram (circuit, anatomy, architecture overview)
+- Motion would distract from spatial layout
+- The viewer needs to study it carefully (dense table, reference chart)
+- The concept is already intuitive from a well-labeled figure
+
+**Rule of thumb:** If you'd explain it with "first X, then Y, then Z" — animate it. If you'd explain it by pointing at parts of one picture — show it static.
+
+## Decomposing a concept into animation
+
+### Step 1: Write the narration first
+
+Before any code, write what the narrator would say. This determines:
+- **Order** — what concept comes first
+- **Duration** — how long each idea gets
+- **Visuals** — what the viewer must SEE when they HEAR each sentence
+
+A scene where the narration says "the gradient points uphill" must show a gradient arrow at that moment. If the visual doesn't match the audio, the viewer's brain splits attention and both tracks are lost.
+
+### Step 2: Identify visual beats
+
+A "beat" is a moment where something changes on screen. Mark each beat in your narration:
+
+```
+"Consider a function f of x."         → [BEAT: axes + curve appear]
+"At this point..."                     → [BEAT: dot appears on curve]
+"...the slope is positive."            → [BEAT: tangent line drawn]
+"So the gradient tells us to go left." → [BEAT: arrow points left, dot moves]
+```
+
+Each beat is one `self.play()` call or a small group of simultaneous animations.
+
+### Step 3: Choose the right tool per beat
+
+| Visual need | Manim approach |
+|-------------|----------------|
+| Object appears for first time | `Create`, `Write`, `FadeIn`, `GrowFromCenter` |
+| Object transforms into another | `Transform`, `ReplacementTransform`, `FadeTransform` |
+| Attention drawn to existing object | `Indicate`, `Circumscribe`, `Flash`, `ShowPassingFlash` |
+| Continuous relationship maintained | `add_updater`, `always_redraw`, `ValueTracker` |
+| Object leaves the scene | `FadeOut`, `Uncreate`, `ShrinkToCenter` |
+| Static context that stays visible | `self.add()` (no animation) |
+
+## Pacing: the universal mistake is too fast
+
+### Timing rules
+
+| Content type | Minimum on-screen time |
+|-------------|----------------------|
+| New equation appearing | 2.0s animation + 2.0s pause |
+| New concept label | 1.0s animation + 1.0s pause |
+| Key insight ("aha moment") | 2.5s animation + 3.0s pause |
+| Supporting annotation | 0.8s animation + 0.5s pause |
+| Scene transition (FadeOut all) | 0.5s animation + 0.3s pause |
+
+### Breathing room
+
+After every reveal, add `self.wait()`. The viewer needs time to:
+1. Read the new text
+2. Connect it to what's already on screen
+3. Form an expectation about what comes next
+
+**No wait = the viewer is always behind you.** They're still reading the equation when you've already started transforming it.
+
+### Tempo variation
+
+Monotonous pacing feels like a lecture. Vary the tempo:
+- **Slow build** for core concepts (long run_time, long pauses)
+- **Quick succession** for supporting details (short run_time, minimal pauses)
+- **Dramatic pause** before the key reveal (extra `self.wait(2.0)` before the "aha")
+- **Rapid montage** for "and this applies to X, Y, Z..." sequences (`LaggedStart` with tight lag_ratio)
+
+## Narration synchronization
+
+### The "see then hear" principle
+
+The visual should appear slightly BEFORE the narration describes it. When the viewer sees a circle appear and THEN hears "consider a circle," the visual primes their brain for the concept. The reverse — hearing first, seeing second — creates confusion because they're searching the screen for something that isn't there yet.
+
+### Practical timing
+
+```python
+# Scene duration should match narration duration.
+# If narration for this scene is 8 seconds:
+# Total animation run_times + total self.wait() times = ~8 seconds.
+
+# Use manim-voiceover for automatic sync:
+with self.voiceover(text="The gradient points downhill") as tracker:
+    self.play(GrowArrow(gradient_arrow), run_time=tracker.duration)
+```
+
+## Equation decomposition strategy
+
+### The "dim and reveal" pattern
+
+When building a complex equation step by step:
+1. Show the full equation dimmed at `opacity=0.2` (sets expectation for where you're going)
+2. Highlight the first term at full opacity
+3. Explain it
+4. Highlight the next term, dim the first to `0.5` (it's now context)
+5. Repeat until the full equation is bright
+
+This is better than building left-to-right because the viewer always sees the destination.
+
+### Term ordering
+
+Animate terms in the order the viewer needs to understand them, not in the order they appear in the equation. For `E = mc²`:
+- Show `E` (the thing we want to know)
+- Then `m` (the input)
+- Then `c²` (the constant that makes it work)
+- Then the `=` (connecting them)
+
+## Architecture and pipeline diagrams
+
+### Box granularity
+
+The most common mistake: too many boxes. Each box is a concept the viewer must track. Five boxes with clear labels beats twelve boxes with abbreviations.
+
+**Rule:** If two consecutive boxes could be labeled "X" and "process X output," merge them into one box.
+
+### Animation strategy
+
+Build pipelines left-to-right (or top-to-bottom) with arrows connecting them:
+1. First box appears alone → explain it
+2. Arrow grows from first to second → "the output feeds into..."
+3. Second box appears → explain it
+4. Repeat
+
+Then show data flowing through: `ShowPassingFlash` along the arrows, or a colored dot traversing the path.
+
+### The zoom-and-return pattern
+
+For complex systems:
+1. Show the full overview (all boxes, small)
+2. Zoom into one box (`MovingCameraScene.camera.frame.animate`)
+3. Expand that box into its internal components
+4. Zoom back out to the overview
+5. Zoom into the next box
+
+## Common design mistakes
+
+1. **Animating everything at once.** The viewer can track 1-2 simultaneous animations. More than that and nothing registers.
+2. **No visual hierarchy.** Everything at the same opacity/size/color means nothing stands out. Use opacity layering.
+3. **Equations without context.** An equation appearing alone means nothing. Always show the geometric/visual interpretation first or simultaneously.
+4. **Skipping the "why."** Showing HOW a transformation works without WHY it matters. Add a sentence/label explaining the purpose.
+5. **Identical pacing throughout.** Every animation at run_time=1.5, every wait at 1.0. Vary it.
+6. **Forgetting the audience.** A video for high schoolers needs different pacing and complexity than one for PhD students. Decide the audience in the planning phase.

@@ -1,1 +1,243 @@
-IyBEZXNpZ24gU3lzdGVtOiBQaW50ZXJlc3QKCgo+ICoqSGVybWVzIEFnZW50IOKAlCBJbXBsZW1lbnRhdGlvbiBOb3RlcyoqCj4KPiBUaGUgb3JpZ2luYWwgc2l0ZSB1c2VzIHByb3ByaWV0YXJ5IGZvbnRzLiBGb3Igc2VsZi1jb250YWluZWQgSFRNTCBvdXRwdXQsIHVzZSB0aGVzZSBDRE4gc3Vic3RpdHV0ZXM6Cj4gLSAqKlByaW1hcnk6KiogYERNIFNhbnNgIHwgKipNb25vOioqIGBzeXN0ZW0gbW9ub3NwYWNlIHN0YWNrYAo+IC0gKipGb250IHN0YWNrIChDU1MpOioqIGBmb250LWZhbWlseTogJ0RNIFNhbnMnLCBzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sICdTZWdvZSBVSScsIFJvYm90bywgc2Fucy1zZXJpZjtgCj4gLSAqKk1vbm8gc3RhY2sgKENTUyk6KiogYGZvbnQtZmFtaWx5OiB1aS1tb25vc3BhY2UsIFNGTW9uby1SZWd1bGFyLCBNZW5sbywgTW9uYWNvLCBDb25zb2xhcywgJ0xpYmVyYXRpb24gTW9ubycsICdDb3VyaWVyIE5ldycsIG1vbm9zcGFjZTtgCj4gYGBgaHRtbAo+IDxsaW5rIGhyZWY9Imh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9RE0rU2FuczppdGFsLG9wc3osd2dodEAwLDkuLjQwLDEwMC4uMTAwMDsxLDkuLjQwLDEwMC4uMTAwMCZkaXNwbGF5PXN3YXAiIHJlbD0ic3R5bGVzaGVldCI+Cj4gYGBgCj4gVXNlIGB3cml0ZV9maWxlYCB0byBjcmVhdGUgSFRNTCwgc2VydmUgdmlhIGBnZW5lcmF0aXZlLXdpZGdldHNgIHNraWxsIChjbG91ZGZsYXJlZCB0dW5uZWwpLgo+IFZlcmlmeSB2aXN1YWwgYWNjdXJhY3kgd2l0aCBgYnJvd3Nlcl92aXNpb25gIGFmdGVyIGdlbmVyYXRpbmcuCgojIyAxLiBWaXN1YWwgVGhlbWUgJiBBdG1vc3BoZXJlCgpQaW50ZXJlc3QncyB3ZWJzaXRlIGlzIGEgd2FybSwgaW5zcGlyYXRpb24tZHJpdmVuIGNhbnZhcyB0aGF0IHRyZWF0cyB2aXN1YWwgZGlzY292ZXJ5IGxpa2UgYSBsaWZlc3R5bGUgbWFnYXppbmUuIFRoZSBkZXNpZ24gb3BlcmF0ZXMgb24gYSBzb2Z0LCBzbGlnaHRseSB3YXJtIHdoaXRlIGJhY2tncm91bmQgd2l0aCBQaW50ZXJlc3QgUmVkIChgI2U2MDAyM2ApIGFzIHRoZSBzaW5ndWxhciwgYm9sZCBicmFuZCBhY2NlbnQuIFVubGlrZSB0aGUgY29vbCBibHVlcyBvZiBtb3N0IHRlY2ggcGxhdGZvcm1zLCBQaW50ZXJlc3QncyBuZXV0cmFsIHNjYWxlIGhhcyBhIGRpc3RpbmN0bHkgd2FybSB1bmRlcnRvbmUg4oCUIGdyYXlzIGxlYW4gdG93YXJkIG9saXZlL3NhbmQgKGAjOTE5MThjYCwgYCM2MjYyNWJgLCBgI2U1ZTVlMGApIHJhdGhlciB0aGFuIGNvb2wgc3RlZWwsIGNyZWF0aW5nIGEgY296eSwgY3JhZnQtbGlrZSBhdG1vc3BoZXJlIHRoYXQgaW52aXRlcyBicm93c2luZy4KClRoZSB0eXBvZ3JhcGh5IHVzZXMgUGluIFNhbnMg4oCUIGEgY3VzdG9tIHByb3ByaWV0YXJ5IGZvbnQgd2l0aCBhIGJyb2FkIGZhbGxiYWNrIHN0YWNrIGluY2x1ZGluZyBKYXBhbmVzZSBmb250cywgcmVmbGVjdGluZyBQaW50ZXJlc3QncyBnbG9iYWwgcmVhY2guIEF0IGRpc3BsYXkgc2NhbGUgKDcwcHgsIHdlaWdodCA2MDApLCBQaW4gU2FucyBjcmVhdGVzIGxhcmdlLCBpbnZpdGluZyBoZWFkbGluZXMuIEF0IHNtYWxsZXIgc2l6ZXMsIHRoZSBzeXN0ZW0gaXMgY29tcGFjdDogYnV0dG9ucyBhdCAxMnB4LCBjYXB0aW9ucyBhdCAxMuKAkzE0cHguIFRoZSBDU1MgdmFyaWFibGUgbmFtaW5nIHN5c3RlbSAoYC0tY29tcC0qYCwgYC0tc2VtYS0qYCwgYC0tYmFzZS0qYCkgcmV2ZWFscyBhIHNvcGhpc3RpY2F0ZWQgdGhyZWUtdGllciBkZXNpZ24gdG9rZW4gYXJjaGl0ZWN0dXJlOiBjb21wb25lbnQtbGV2ZWwsIHNlbWFudGljLWxldmVsLCBhbmQgYmFzZS1sZXZlbCB0b2tlbnMuCgpXaGF0IGRpc3Rpbmd1aXNoZXMgUGludGVyZXN0IGlzIGl0cyBnZW5lcm91cyBib3JkZXItcmFkaXVzIHN5c3RlbSAoMTJweOKAkzQwcHgsIHBsdXMgNTAlIGZvciBjaXJjbGVzKSBhbmQgd2FybS10aW50ZWQgYnV0dG9uIGJhY2tncm91bmRzLiBUaGUgc2Vjb25kYXJ5IGJ1dHRvbiAoYCNlNWU1ZTBgKSBoYXMgYSBkaXN0aW5jdGx5IHdhcm0sIHNhbmQtbGlrZSB0b25lIHJhdGhlciB0aGFuIGNvbGQgZ3JheS4gVGhlIHByaW1hcnkgcmVkIGJ1dHRvbiB1c2VzIDE2cHggcmFkaXVzIOKAlCByb3VuZGVkIGJ1dCBub3QgcGlsbC1zaGFwZWQuIENvbWJpbmVkIHdpdGggd2FybSBiYWRnZSBiYWNrZ3JvdW5kcyAoYGhzbGEoNjAsMjAlLDk4JSwuNSlgIOKAlCBhIHN1YnRsZSB5ZWxsb3ctd2FybSB3YXNoKSBhbmQgcGhvdG9ncmFwaHktZG9taW5hbnQgbGF5b3V0cywgdGhlIHJlc3VsdCBpcyBhIGRlc2lnbiB0aGF0IGZlZWxzIGhhbmRjcmFmdGVkIGFuZCBwZXJzb25hbCwgbm90IGNvcnBvcmF0ZSBhbmQgc3RlcmlsZS4KCioqS2V5IENoYXJhY3RlcmlzdGljczoqKgotIFdhcm0gd2hpdGUgY2FudmFzIHdpdGggb2xpdmUvc2FuZC10b25lZCBuZXV0cmFscyDigJQgY296eSwgbm90IGNsaW5pY2FsCi0gUGludGVyZXN0IFJlZCAoYCNlNjAwMjNgKSBhcyBzaW5ndWxhciBib2xkIGFjY2VudCDigJQgbmV2ZXIgc3VidGxlLCBhbHdheXMgY29uZmlkZW50Ci0gUGluIFNhbnMgY3VzdG9tIGZvbnQgd2l0aCBnbG9iYWwgZmFsbGJhY2sgc3RhY2sgKGluY2x1ZGluZyBDSkspCi0gVGhyZWUtdGllciB0b2tlbiBhcmNoaXRlY3R1cmU6IGAtLWNvbXAtKmAgLyBgLS1zZW1hLSpgIC8gYC0tYmFzZS0qYAotIFdhcm0gc2Vjb25kYXJ5IHN1cmZhY2VzOiBzYW5kIGdyYXkgKGAjZTVlNWUwYCksIHdhcm0gYmFkZ2UgKGBoc2xhKDYwLDIwJSw5OCUsLjUpYCkKLSBHZW5lcm91cyBib3JkZXItcmFkaXVzOiAxNnB4IHN0YW5kYXJkLCB1cCB0byA0MHB4IGZvciBsYXJnZSBjb250YWluZXJzCi0gUGhvdG9ncmFwaHktZmlyc3QgY29udGVudCDigJQgcGlucy9pbWFnZXMgYXJlIHRoZSBwcmltYXJ5IHZpc3VhbCBlbGVtZW50Ci0gRGFyayBuZWFyLXB1cnBsZSB0ZXh0IChgIzIxMTkyMmApIOKAlCB3YXJtLCB3aXRoIGEgaGludCBvZiBwbHVtCgojIyAyLiBDb2xvciBQYWxldHRlICYgUm9sZXMKCiMjIyBQcmltYXJ5IEJyYW5kCi0gKipQaW50ZXJlc3QgUmVkKiogKGAjZTYwMDIzYCk6IFByaW1hcnkgQ1RBLCBicmFuZCBhY2NlbnQg4oCUIGJvbGQsIGNvbmZpZGVudCByZWQKLSAqKkdyZWVuIDcwMCoqIChgIzEwM2MyNWApOiBgLS1iYXNlLWNvbG9yLWdyZWVuLTcwMGAsIHN1Y2Nlc3MvbmF0dXJlIGFjY2VudAotICoqR3JlZW4gNzAwIEhvdmVyKiogKGAjMGIyODE5YCk6IGAtLWJhc2UtY29sb3ItaG92ZXItZ3JlZW4tNzAwYCwgcHJlc3NlZCBncmVlbgoKIyMjIFRleHQKLSAqKlBsdW0gQmxhY2sqKiAoYCMyMTE5MjJgKTogUHJpbWFyeSB0ZXh0IOKAlCB3YXJtIG5lYXItYmxhY2sgd2l0aCBwbHVtIHVuZGVydG9uZQotICoqQmxhY2sqKiAoYCMwMDAwMDBgKTogU2Vjb25kYXJ5IHRleHQsIGJ1dHRvbiB0ZXh0Ci0gKipPbGl2ZSBHcmF5KiogKGAjNjI2MjViYCk6IFNlY29uZGFyeSBkZXNjcmlwdGlvbnMsIG11dGVkIHRleHQKLSAqKldhcm0gU2lsdmVyKiogKGAjOTE5MThjYCk6IGAtLWNvbXAtYnV0dG9uLWNvbG9yLXRleHQtdHJhbnNwYXJlbnQtZGlzYWJsZWRgLCBkaXNhYmxlZCB0ZXh0LCBpbnB1dCBib3JkZXJzCi0gKipXaGl0ZSoqIChgI2ZmZmZmZmApOiBUZXh0IG9uIGRhcmsvY29sb3JlZCBzdXJmYWNlcwoKIyMjIEludGVyYWN0aXZlCi0gKipGb2N1cyBCbHVlKiogKGAjNDM1ZWU1YCk6IGAtLWNvbXAtYnV0dG9uLWNvbG9yLWJvcmRlci1mb2N1cy1vdXRlci10cmFuc3BhcmVudGAsIGZvY3VzIHJpbmdzCi0gKipQZXJmb3JtYW5jZSBQdXJwbGUqKiAoYCM2ODQ1YWJgKTogYC0tc2VtYS1jb2xvci1ob3Zlci1pY29uLXBlcmZvcm1hbmNlLXBsdXNgLCBwZXJmb3JtYW5jZSBmZWF0dXJlcwotICoqUmVjb21tZW5kYXRpb24gUHVycGxlKiogKGAjN2UyMzhiYCk6IGAtLXNlbWEtY29sb3ItaG92ZXItdGV4dC1yZWNvbW1lbmRhdGlvbmAsIEFJIHJlY29tbWVuZGF0aW9uCi0gKipMaW5rIEJsdWUqKiAoYCMyYjQ4ZDRgKTogTGluayB0ZXh0IGNvbG9yCi0gKipGYWNlYm9vayBCbHVlKiogKGAjMDg2NmZmYCk6IGAtLWZhY2Vib29rLWJhY2tncm91bmQtY29sb3JgLCBzb2NpYWwgbG9naW4KLSAqKlByZXNzZWQgQmx1ZSoqIChgIzYxN2JmZmApOiBgLS1iYXNlLWNvbG9yLXByZXNzZWQtYmx1ZS0yMDBgLCBwcmVzc2VkIHN0YXRlCgojIyMgU3VyZmFjZSAmIEJvcmRlcgotICoqU2FuZCBHcmF5KiogKGAjZTVlNWUwYCk6IFNlY29uZGFyeSBidXR0b24gYmFja2dyb3VuZCDigJQgd2FybSwgY3JhZnQtbGlrZQotICoqV2FybSBMaWdodCoqIChgI2UwZTBkOWApOiBDaXJjdWxhciBidXR0b24gYmFja2dyb3VuZHMsIGJhZGdlcwotICoqV2FybSBXYXNoKiogKGBoc2xhKDYwLCAyMCUsIDk4JSwgMC41KWApOiBgLS1jb21wLWJhZGdlLWNvbG9yLWJhY2tncm91bmQtd2FzaC1saWdodGAsIHN1YnRsZSB3YXJtIGJhZGdlIGJnCi0gKipGb2cqKiAoYCNmNmY2ZjNgKTogTGlnaHQgc3VyZmFjZSAoYXQgNTAlIG9wYWNpdHkpCi0gKipCb3JkZXIgRGlzYWJsZWQqKiAoYCNjOGM4YzFgKTogYC0tc2VtYS1jb2xvci1ib3JkZXItZGlzYWJsZWRgLCBkaXNhYmxlZCBib3JkZXJzCi0gKipIb3ZlciBHcmF5KiogKGAjYmNiY2IzYCk6IGAtLWJhc2UtY29sb3ItaG92ZXItZ3JheXNjYWxlLTE1MGAsIGhvdmVyIGJvcmRlcgotICoqRGFyayBTdXJmYWNlKiogKGAjMzMzMzJlYCk6IERhcmsgc2VjdGlvbiBiYWNrZ3JvdW5kcwoKIyMjIFNlbWFudGljCi0gKipFcnJvciBSZWQqKiAoYCM5ZTBhMGFgKTogQ2hlY2tib3gvZm9ybSBlcnJvciBzdGF0ZXMKCiMjIDMuIFR5cG9ncmFwaHkgUnVsZXMKCiMjIyBGb250IEZhbWlseQotICoqUHJpbWFyeSoqOiBgUGluIFNhbnNgLCBmYWxsYmFja3M6IGAtYXBwbGUtc3lzdGVtLCBzeXN0ZW0tdWksIFNlZ29lIFVJLCBSb2JvdG8sIE94eWdlbi1TYW5zLCBBcHBsZSBDb2xvciBFbW9qaSwgU2Vnb2UgVUkgRW1vamksIFNlZ29lIFVJIFN5bWJvbCwgVWJ1bnR1LCBDYW50YXJlbGwsIEZpcmEgU2FucywgRHJvaWQgU2FucywgSGVsdmV0aWNhIE5ldWUsIEhlbHZldGljYSwg44OS44Op44Ku44OO6KeS44K0IFBybyBXMywg44Oh44Kk44Oq44KqLCBNZWlyeW8sIO+8re+8syDvvLDjgrTjgrfjg4Pjgq8sIEFyaWFsYAoKIyMjIEhpZXJhcmNoeQoKfCBSb2xlIHwgRm9udCB8IFNpemUgfCBXZWlnaHQgfCBMaW5lIEhlaWdodCB8IExldHRlciBTcGFjaW5nIHwgTm90ZXMgfAp8LS0tLS0tfC0tLS0tLXwtLS0tLS18LS0tLS0tLS18LS0tLS0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tLS0tfC0tLS0tLS18CnwgRGlzcGxheSBIZXJvIHwgUGluIFNhbnMgfCA3MHB4ICg0LjM4cmVtKSB8IDYwMCB8IG5vcm1hbCB8IG5vcm1hbCB8IE1heGltdW0gaW1wYWN0IHwKfCBTZWN0aW9uIEhlYWRpbmcgfCBQaW4gU2FucyB8IDI4cHggKDEuNzVyZW0pIHwgNzAwIHwgbm9ybWFsIHwgLTEuMnB4IHwgTmVnYXRpdmUgdHJhY2tpbmcgfAp8IEJvZHkgfCBQaW4gU2FucyB8IDE2cHggKDEuMDByZW0pIHwgNDAwIHwgMS40MCB8IG5vcm1hbCB8IFN0YW5kYXJkIHJlYWRpbmcgfAp8IENhcHRpb24gQm9sZCB8IFBpbiBTYW5zIHwgMTRweCAoMC44OHJlbSkgfCA3MDAgfCBub3JtYWwgfCBub3JtYWwgfCBTdHJvbmcgbWV0YWRhdGEgfAp8IENhcHRpb24gfCBQaW4gU2FucyB8IDEycHggKDAuNzVyZW0pIHwgNDAw4oCTNTAwIHwgMS41MCB8IG5vcm1hbCB8IFNtYWxsIHRleHQsIHRhZ3MgfAp8IEJ1dHRvbiB8IFBpbiBTYW5zIHwgMTJweCAoMC43NXJlbSkgfCA0MDAgfCBub3JtYWwgfCBub3JtYWwgfCBCdXR0b24gbGFiZWxzIHwKCiMjIyBQcmluY2lwbGVzCi0gKipDb21wYWN0IHR5cGUgc2NhbGUqKjogVGhlIHJhbmdlIGlzIDEycHjigJM3MHB4IHdpdGggYSBkcmFtYXRpYyBqdW1wIOKAlCBtb3N0IGZ1bmN0aW9uYWwgdGV4dCBpcyAxMuKAkzE2cHgsIGNyZWF0aW5nIGEgZGVuc2UsIGFwcC1saWtlIGluZm9ybWF0aW9uIGhpZXJhcmNoeS4KLSAqKldhcm0gd2VpZ2h0IGRpc3RyaWJ1dGlvbioqOiA2MDDigJM3MDAgZm9yIGhlYWRpbmdzLCA0MDDigJM1MDAgZm9yIGJvZHkuIE5vIHVsdHJhLWxpZ2h0IHdlaWdodHMg4oCUIHRoZSB0eXBlIGFsd2F5cyBmZWVscyBzdWJzdGFudGlhbC4KLSAqKk5lZ2F0aXZlIHRyYWNraW5nIG9uIGhlYWRpbmdzKio6IC0xLjJweCBvbiAyOHB4IGhlYWRpbmdzIGNyZWF0ZXMgY296eSwgaW50aW1hdGUgc2VjdGlvbiB0aXRsZXMuCi0gKipTaW5nbGUgZm9udCBmYW1pbHkqKjogUGluIFNhbnMgaGFuZGxlcyBldmVyeXRoaW5nIOKAlCBubyBzZWNvbmRhcnkgZGlzcGxheSBvciBtb25vc3BhY2UgZm9udCBkZXRlY3RlZC4KCiMjIDQuIENvbXBvbmVudCBTdHlsaW5ncwoKIyMjIEJ1dHRvbnMKCioqUHJpbWFyeSBSZWQqKgotIEJhY2tncm91bmQ6IGAjZTYwMDIzYCAoUGludGVyZXN0IFJlZCkKLSBUZXh0OiBgIzAwMDAwMGAgKGJsYWNrIOKAlCB1bnVzdWFsIGNob2ljZSBmb3IgY29udHJhc3Qgb24gcmVkKQotIFBhZGRpbmc6IDZweCAxNHB4Ci0gUmFkaXVzOiAxNnB4IChnZW5lcm91c2x5IHJvdW5kZWQsIG5vdCBwaWxsKQotIEJvcmRlcjogYDJweCBzb2xpZCByZ2JhKDI1NSwgMjU1LCAyNTUsIDApYCAodHJhbnNwYXJlbnQpCi0gRm9jdXM6IHNlbWFudGljIGJvcmRlciArIG91dGxpbmUgdmlhIENTUyB2YXJpYWJsZXMKCioqU2Vjb25kYXJ5IFNhbmQqKgotIEJhY2tncm91bmQ6IGAjZTVlNWUwYCAod2FybSBzYW5kIGdyYXkpCi0gVGV4dDogYCMwMDAwMDBgCi0gUGFkZGluZzogNnB4IDE0cHgKLSBSYWRpdXM6IDE2cHgKLSBGb2N1czogc2FtZSBzZW1hbnRpYyBib3JkZXIgc3lzdGVtCgoqKkNpcmN1bGFyIEFjdGlvbioqCi0gQmFja2dyb3VuZDogYCNlMGUwZDlgICh3YXJtIGxpZ2h0KQotIFRleHQ6IGAjMjExOTIyYCAocGx1bSBibGFjaykKLSBSYWRpdXM6IDUwJSAoY2lyY2xlKQotIFVzZTogUGluIGFjdGlvbnMsIG5hdmlnYXRpb24gY29udHJvbHMKCioqR2hvc3QgLyBUcmFuc3BhcmVudCoqCi0gQmFja2dyb3VuZDogdHJhbnNwYXJlbnQKLSBUZXh0OiBgIzAwMDAwMGAKLSBObyBib3JkZXIKLSBVc2U6IFRlcnRpYXJ5IGFjdGlvbnMKCiMjIyBDYXJkcyAmIENvbnRhaW5lcnMKLSBQaG90b2dyYXBoeS1maXJzdCBwaW4gY2FyZHMgd2l0aCBnZW5lcm91cyByYWRpdXMgKDEycHjigJMyMHB4KQotIE5vIHRyYWRpdGlvbmFsIGJveC1zaGFkb3cgb24gbW9zdCBjYXJkcwotIFdoaXRlIG9yIHdhcm0gZm9nIGJhY2tncm91bmRzCi0gOHB4IHdoaXRlIHRoaWNrIGJvcmRlciBvbiBzb21lIGltYWdlIGNvbnRhaW5lcnMKCiMjIyBJbnB1dHMKLSBFbWFpbCBpbnB1dDogd2hpdGUgYmFja2dyb3VuZCwgYDFweCBzb2xpZCAjOTE5MThjYCBib3JkZXIsIDE2cHggcmFkaXVzLCAxMXB4IDE1cHggcGFkZGluZwotIEZvY3VzOiBzZW1hbnRpYyBib3JkZXIgKyBvdXRsaW5lIHN5c3RlbSB2aWEgQ1NTIHZhcmlhYmxlcwoKIyMjIE5hdmlnYXRpb24KLSBDbGVhbiBoZWFkZXIgb24gd2hpdGUgb3Igd2FybSBiYWNrZ3JvdW5kCi0gUGludGVyZXN0IGxvZ28gKyBzZWFyY2ggYmFyIGNlbnRlcmVkCi0gUGluIFNhbnMgMTZweCBmb3IgbmF2IGxpbmtzCi0gUGludGVyZXN0IFJlZCBhY2NlbnRzIGZvciBhY3RpdmUgc3RhdGVzCgojIyMgSW1hZ2UgVHJlYXRtZW50Ci0gUGluLXN0eWxlIG1hc29ucnkgZ3JpZCAoc2lnbmF0dXJlIFBpbnRlcmVzdCBsYXlvdXQpCi0gUm91bmRlZCBjb3JuZXJzOiAxMnB44oCTMjBweCBvbiBpbWFnZXMKLSBQaG90b2dyYXBoeSBhcyBwcmltYXJ5IGNvbnRlbnQg4oCUIGV2ZXJ5IHBpbiBpcyBhbiBpbWFnZQotIFRoaWNrIHdoaXRlIGJvcmRlcnMgKDhweCkgb24gZmVhdHVyZWQgaW1hZ2UgY29udGFpbmVycwoKIyMgNS4gTGF5b3V0IFByaW5jaXBsZXMKCiMjIyBTcGFjaW5nIFN5c3RlbQotIEJhc2UgdW5pdDogOHB4Ci0gU2NhbGU6IDRweCwgNnB4LCA3cHgsIDhweCwgMTBweCwgMTFweCwgMTJweCwgMTZweCwgMThweCwgMjBweCwgMjJweCwgMjRweCwgMzJweCwgODBweCwgMTAwcHgKLSBMYXJnZSBqdW1wczogMzJweCDihpIgODBweCDihpIgMTAwcHggZm9yIHNlY3Rpb24gc3BhY2luZwoKIyMjIEdyaWQgJiBDb250YWluZXIKLSBNYXNvbnJ5IGdyaWQgZm9yIHBpbiBjb250ZW50IChzaWduYXR1cmUgbGF5b3V0KQotIENlbnRlcmVkIGNvbnRlbnQgc2VjdGlvbnMgd2l0aCBnZW5lcm91cyBtYXgtd2lkdGgKLSBGdWxsLXdpZHRoIGRhcmsgZm9vdGVyCi0gU2VhcmNoIGJhciBhcyBwcmltYXJ5IG5hdmlnYXRpb24gZWxlbWVudAoKIyMjIFdoaXRlc3BhY2UgUGhpbG9zb3BoeQotICoqSW5zcGlyYXRpb24gZGVuc2l0eSoqOiBUaGUgbWFzb25yeSBncmlkIHBhY2tzIHBpbnMgdGlnaHRseSDigJQgdGhlIGNvbnRlbnQgZGVuc2l0eSBJUyB0aGUgdmFsdWUgcHJvcG9zaXRpb24uIFdoaXRlc3BhY2UgZXhpc3RzIGJldHdlZW4gc2VjdGlvbnMsIG5vdCB3aXRoaW4gdGhlIGdyaWQuCi0gKipCcmVhdGhpbmcgYWJvdmUsIGRlbnNpdHkgYmVsb3cqKjogSGVyby9mZWF0dXJlIHNlY3Rpb25zIGdldCBnZW5lcm91cyBwYWRkaW5nOyB0aGUgcGluIGdyaWQgaXMgY29tcGFjdCBhbmQgaW1tZXJzaXZlLgoKIyMjIEJvcmRlciBSYWRpdXMgU2NhbGUKLSBTdGFuZGFyZCAoMTJweCk6IFNtYWxsIGNhcmRzLCBsaW5rcwotIEJ1dHRvbiAoMTZweCk6IEJ1dHRvbnMsIGlucHV0cywgbWVkaXVtIGNhcmRzCi0gQ29tZm9ydGFibGUgKDIwcHgpOiBGZWF0dXJlIGNhcmRzCi0gTGFyZ2UgKDI4cHgpOiBMYXJnZSBjb250YWluZXJzCi0gU2VjdGlvbiAoMzJweCk6IFRhYiBlbGVtZW50cywgbGFyZ2UgcGFuZWxzCi0gSGVybyAoNDBweCk6IEhlcm8gY29udGFpbmVycywgbGFyZ2UgZmVhdHVyZSBibG9ja3MKLSBDaXJjbGUgKDUwJSk6IEFjdGlvbiBidXR0b25zLCB0YWIgaW5kaWNhdG9ycwoKIyMgNi4gRGVwdGggJiBFbGV2YXRpb24KCnwgTGV2ZWwgfCBUcmVhdG1lbnQgfCBVc2UgfAp8LS0tLS0tLXwtLS0tLS0tLS0tLXwtLS0tLXwKfCBGbGF0IChMZXZlbCAwKSB8IE5vIHNoYWRvdyB8IERlZmF1bHQg4oCUIHBpbnMgcmVseSBvbiBjb250ZW50LCBub3Qgc2hhZG93IHwKfCBTdWJ0bGUgKExldmVsIDEpIHwgTWluaW1hbCBzaGFkb3cgKGZyb20gdG9rZW5zKSB8IEVsZXZhdGVkIG92ZXJsYXlzLCBkcm9wZG93bnMgfAp8IEZvY3VzIChBY2Nlc3NpYmlsaXR5KSB8IGAtLXNlbWEtY29sb3ItYm9yZGVyLWZvY3VzLW91dGVyLWRlZmF1bHRgIHJpbmcgfCBGb2N1cyBzdGF0ZXMgfAoKKipTaGFkb3cgUGhpbG9zb3BoeSoqOiBQaW50ZXJlc3QgdXNlcyBtaW5pbWFsIHNoYWRvd3MuIFRoZSBtYXNvbnJ5IGdyaWQgcmVsaWVzIG9uIGNvbnRlbnQgKHBob3RvZ3JhcGh5KSB0byBjcmVhdGUgdmlzdWFsIGludGVyZXN0IHJhdGhlciB0aGFuIGVsZXZhdGlvbiBlZmZlY3RzLiBEZXB0aCBjb21lcyBmcm9tIHRoZSB3YXJtdGggb2Ygc3VyZmFjZSBjb2xvcnMgYW5kIHRoZSBnZW5lcm91cyByb3VuZGluZyBvZiBjb250YWluZXJzLgoKIyMgNy4gRG8ncyBhbmQgRG9uJ3RzCgojIyMgRG8KLSBVc2Ugd2FybSBuZXV0cmFscyAoYCNlNWU1ZTBgLCBgI2UwZTBkOWAsIGAjOTE5MThjYCkg4oCUIHRoZSB3YXJtIG9saXZlL3NhbmQgdG9uZSBpcyB0aGUgaWRlbnRpdHkKLSBBcHBseSBQaW50ZXJlc3QgUmVkIChgI2U2MDAyM2ApIG9ubHkgZm9yIHByaW1hcnkgQ1RBcyDigJQgaXQncyBib2xkIGFuZCBzaW5ndWxhcgotIFVzZSBQaW4gU2FucyBleGNsdXNpdmVseSDigJQgb25lIGZvbnQgZm9yIGV2ZXJ5dGhpbmcKLSBBcHBseSBnZW5lcm91cyBib3JkZXItcmFkaXVzOiAxNnB4IGZvciBidXR0b25zL2lucHV0cywgMjBweCsgZm9yIGNhcmRzCi0gS2VlcCB0aGUgbWFzb25yeSBncmlkIGRlbnNlIOKAlCBjb250ZW50IGRlbnNpdHkgaXMgdGhlIHZhbHVlCi0gVXNlIHdhcm0gYmFkZ2UgYmFja2dyb3VuZHMgKGBoc2xhKDYwLDIwJSw5OCUsLjUpYCkgZm9yIHN1YnRsZSB3YXJtIHdhc2hlcwotIFVzZSBgIzIxMTkyMmAgKHBsdW0gYmxhY2spIGZvciBwcmltYXJ5IHRleHQg4oCUIGl0J3Mgd2FybWVyIHRoYW4gcHVyZSBibGFjawoKIyMjIERvbid0Ci0gRG9uJ3QgdXNlIGNvb2wgZ3JheSBuZXV0cmFscyDigJQgYWx3YXlzIHdhcm0vb2xpdmUtdG9uZWQKLSBEb24ndCB1c2UgcHVyZSBibGFjayAoYCMwMDAwMDBgKSBhcyBwcmltYXJ5IHRleHQg4oCUIHVzZSBwbHVtIGJsYWNrIChgIzIxMTkyMmApCi0gRG9uJ3QgdXNlIHBpbGwtc2hhcGVkIGJ1dHRvbnMg4oCUIDE2cHggcmFkaXVzIGlzIHJvdW5kZWQgYnV0IG5vdCBwaWxsCi0gRG9uJ3QgYWRkIGhlYXZ5IHNoYWRvd3Mg4oCUIFBpbnRlcmVzdCBpcyBmbGF0IGJ5IGRlc2lnbiwgZGVwdGggZnJvbSBjb250ZW50Ci0gRG9uJ3QgdXNlIHNtYWxsIGJvcmRlci1yYWRpdXMgKDwxMnB4KSBvbiBjYXJkcyDigJQgdGhlIGdlbmVyb3VzIHJvdW5kaW5nIGlzIGNvcmUKLSBEb24ndCBpbnRyb2R1Y2UgYWRkaXRpb25hbCBicmFuZCBjb2xvcnMg4oCUIHJlZCArIHdhcm0gbmV1dHJhbHMgaXMgdGhlIGNvbXBsZXRlIHBhbGV0dGUKLSBEb24ndCB1c2UgdGhpbiBmb250IHdlaWdodHMg4oCUIFBpbiBTYW5zIGF0IDQwMCBtaW5pbXVtCgojIyA4LiBSZXNwb25zaXZlIEJlaGF2aW9yCgojIyMgQnJlYWtwb2ludHMKfCBOYW1lIHwgV2lkdGggfCBLZXkgQ2hhbmdlcyB8CnwtLS0tLS18LS0tLS0tLXwtLS0tLS0tLS0tLS0tfAp8IE1vYmlsZSB8IDw1NzZweCB8IFNpbmdsZSBjb2x1bW4sIGNvbXBhY3QgbGF5b3V0IHwKfCBNb2JpbGUgTGFyZ2UgfCA1NzbigJM3NjhweCB8IDItY29sdW1uIHBpbiBncmlkIHwKfCBUYWJsZXQgfCA3NjjigJM4OTBweCB8IEV4cGFuZGVkIGdyaWQgfAp8IERlc2t0b3AgU21hbGwgfCA4OTDigJMxMzEycHggfCBTdGFuZGFyZCBtYXNvbnJ5IGdyaWQgfAp8IERlc2t0b3AgfCAxMzEy4oCTMTQ0MHB4IHwgRnVsbCBsYXlvdXQgfAp8IExhcmdlIERlc2t0b3AgfCAxNDQw4oCTMTY4MHB4IHwgRXhwYW5kZWQgZ3JpZCBjb2x1bW5zIHwKfCBVbHRyYS13aWRlIHwgPjE2ODBweCB8IE1heGltdW0gZ3JpZCBkZW5zaXR5IHwKCiMjIyBDb2xsYXBzaW5nIFN0cmF0ZWd5Ci0gUGluIGdyaWQ6IDUrIGNvbHVtbnMg4oaSIDMg4oaSIDIg4oaSIDEKLSBOYXZpZ2F0aW9uOiBzZWFyY2ggYmFyICsgaWNvbnMg4oaSIHNpbXBsaWZpZWQgbW9iaWxlIG5hdgotIEZlYXR1cmUgc2VjdGlvbnM6IHNpZGUtYnktc2lkZSDihpIgc3RhY2tlZAotIEhlcm86IDcwcHgg4oaSIHNjYWxlcyBkb3duIHByb3BvcnRpb25hbGx5Ci0gRm9vdGVyOiBkYXJrIG11bHRpLWNvbHVtbiDihpIgc3RhY2tlZAoKIyMgOS4gQWdlbnQgUHJvbXB0IEd1aWRlCgojIyMgUXVpY2sgQ29sb3IgUmVmZXJlbmNlCi0gQnJhbmQ6IFBpbnRlcmVzdCBSZWQgKGAjZTYwMDIzYCkKLSBCYWNrZ3JvdW5kOiBXaGl0ZSAoYCNmZmZmZmZgKQotIFRleHQ6IFBsdW0gQmxhY2sgKGAjMjExOTIyYCkKLSBTZWNvbmRhcnkgdGV4dDogT2xpdmUgR3JheSAoYCM2MjYyNWJgKQotIEJ1dHRvbiBzdXJmYWNlOiBTYW5kIEdyYXkgKGAjZTVlNWUwYCkKLSBCb3JkZXI6IFdhcm0gU2lsdmVyIChgIzkxOTE4Y2ApCi0gRm9jdXM6IEZvY3VzIEJsdWUgKGAjNDM1ZWU1YCkKCiMjIyBFeGFtcGxlIENvbXBvbmVudCBQcm9tcHRzCi0gIkNyZWF0ZSBhIGhlcm86IHdoaXRlIGJhY2tncm91bmQuIEhlYWRsaW5lIGF0IDcwcHggUGluIFNhbnMgd2VpZ2h0IDYwMCwgcGx1bSBibGFjayAoIzIxMTkyMikuIFJlZCBDVEEgYnV0dG9uICgjZTYwMDIzLCAxNnB4IHJhZGl1cywgNnB4IDE0cHggcGFkZGluZykuIFNlY29uZGFyeSBzYW5kIGJ1dHRvbiAoI2U1ZTVlMCwgMTZweCByYWRpdXMpLiIKLSAiRGVzaWduIGEgcGluIGNhcmQ6IHdoaXRlIGJhY2tncm91bmQsIDE2cHggcmFkaXVzLCBubyBzaGFkb3cuIFBob3RvZ3JhcGh5IGZpbGxzIHRvcCwgMTZweCBQaW4gU2FucyB3ZWlnaHQgNDAwIGRlc2NyaXB0aW9uIGJlbG93IGluICM2MjYyNWIuIgotICJCdWlsZCBhIGNpcmN1bGFyIGFjdGlvbiBidXR0b246ICNlMGUwZDkgYmFja2dyb3VuZCwgNTAlIHJhZGl1cywgIzIxMTkyMiBpY29uLiIKLSAiQ3JlYXRlIGFuIGlucHV0IGZpZWxkOiB3aGl0ZSBiYWNrZ3JvdW5kLCAxcHggc29saWQgIzkxOTE4YywgMTZweCByYWRpdXMsIDExcHggMTVweCBwYWRkaW5nLiBGb2N1czogYmx1ZSBvdXRsaW5lIHZpYSBzZW1hbnRpYyB0b2tlbnMuIgotICJEZXNpZ24gdGhlIGRhcmsgZm9vdGVyOiAjMzMzMzJlIGJhY2tncm91bmQuIFBpbnRlcmVzdCBzY3JpcHQgbG9nbyBpbiB3aGl0ZS4gMTJweCBQaW4gU2FucyBsaW5rcyBpbiAjOTE5MThjLiIKCiMjIyBJdGVyYXRpb24gR3VpZGUKMS4gV2FybSBuZXV0cmFscyBldmVyeXdoZXJlIOKAlCBvbGl2ZS9zYW5kIGdyYXlzLCBuZXZlciBjb29sIHN0ZWVsCjIuIFBpbnRlcmVzdCBSZWQgZm9yIENUQXMgb25seSDigJQgYm9sZCBhbmQgc2luZ3VsYXIKMy4gMTZweCByYWRpdXMgb24gYnV0dG9ucy9pbnB1dHMsIDIwcHgrIG9uIGNhcmRzIOKAlCBnZW5lcm91cyBidXQgbm90IHBpbGwKNC4gUGluIFNhbnMgaXMgdGhlIG9ubHkgZm9udCDigJQgY29tcGFjdCBhdCAxMnB4IGZvciBVSSwgNzBweCBmb3IgZGlzcGxheQo1LiBQaG90b2dyYXBoeSBjYXJyaWVzIHRoZSBkZXNpZ24g4oCUIHRoZSBVSSBzdGF5cyB3YXJtIGFuZCBtaW5pbWFsCjYuIFBsdW0gYmxhY2sgKCMyMTE5MjIpIGZvciB0ZXh0IOKAlCB3YXJtZXIgdGhhbiBwdXJlIGJsYWNrCg==
+# Design System: Pinterest
+
+
+> **Hermes Agent — Implementation Notes**
+>
+> The original site uses proprietary fonts. For self-contained HTML output, use these CDN substitutes:
+> - **Primary:** `DM Sans` | **Mono:** `system monospace stack`
+> - **Font stack (CSS):** `font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;`
+> - **Mono stack (CSS):** `font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;`
+> ```html
+> <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+> ```
+> Use `write_file` to create HTML, serve via `generative-widgets` skill (cloudflared tunnel).
+> Verify visual accuracy with `browser_vision` after generating.
+
+## 1. Visual Theme & Atmosphere
+
+Pinterest's website is a warm, inspiration-driven canvas that treats visual discovery like a lifestyle magazine. The design operates on a soft, slightly warm white background with Pinterest Red (`#e60023`) as the singular, bold brand accent. Unlike the cool blues of most tech platforms, Pinterest's neutral scale has a distinctly warm undertone — grays lean toward olive/sand (`#91918c`, `#62625b`, `#e5e5e0`) rather than cool steel, creating a cozy, craft-like atmosphere that invites browsing.
+
+The typography uses Pin Sans — a custom proprietary font with a broad fallback stack including Japanese fonts, reflecting Pinterest's global reach. At display scale (70px, weight 600), Pin Sans creates large, inviting headlines. At smaller sizes, the system is compact: buttons at 12px, captions at 12–14px. The CSS variable naming system (`--comp-*`, `--sema-*`, `--base-*`) reveals a sophisticated three-tier design token architecture: component-level, semantic-level, and base-level tokens.
+
+What distinguishes Pinterest is its generous border-radius system (12px–40px, plus 50% for circles) and warm-tinted button backgrounds. The secondary button (`#e5e5e0`) has a distinctly warm, sand-like tone rather than cold gray. The primary red button uses 16px radius — rounded but not pill-shaped. Combined with warm badge backgrounds (`hsla(60,20%,98%,.5)` — a subtle yellow-warm wash) and photography-dominant layouts, the result is a design that feels handcrafted and personal, not corporate and sterile.
+
+**Key Characteristics:**
+- Warm white canvas with olive/sand-toned neutrals — cozy, not clinical
+- Pinterest Red (`#e60023`) as singular bold accent — never subtle, always confident
+- Pin Sans custom font with global fallback stack (including CJK)
+- Three-tier token architecture: `--comp-*` / `--sema-*` / `--base-*`
+- Warm secondary surfaces: sand gray (`#e5e5e0`), warm badge (`hsla(60,20%,98%,.5)`)
+- Generous border-radius: 16px standard, up to 40px for large containers
+- Photography-first content — pins/images are the primary visual element
+- Dark near-purple text (`#211922`) — warm, with a hint of plum
+
+## 2. Color Palette & Roles
+
+### Primary Brand
+- **Pinterest Red** (`#e60023`): Primary CTA, brand accent — bold, confident red
+- **Green 700** (`#103c25`): `--base-color-green-700`, success/nature accent
+- **Green 700 Hover** (`#0b2819`): `--base-color-hover-green-700`, pressed green
+
+### Text
+- **Plum Black** (`#211922`): Primary text — warm near-black with plum undertone
+- **Black** (`#000000`): Secondary text, button text
+- **Olive Gray** (`#62625b`): Secondary descriptions, muted text
+- **Warm Silver** (`#91918c`): `--comp-button-color-text-transparent-disabled`, disabled text, input borders
+- **White** (`#ffffff`): Text on dark/colored surfaces
+
+### Interactive
+- **Focus Blue** (`#435ee5`): `--comp-button-color-border-focus-outer-transparent`, focus rings
+- **Performance Purple** (`#6845ab`): `--sema-color-hover-icon-performance-plus`, performance features
+- **Recommendation Purple** (`#7e238b`): `--sema-color-hover-text-recommendation`, AI recommendation
+- **Link Blue** (`#2b48d4`): Link text color
+- **Facebook Blue** (`#0866ff`): `--facebook-background-color`, social login
+- **Pressed Blue** (`#617bff`): `--base-color-pressed-blue-200`, pressed state
+
+### Surface & Border
+- **Sand Gray** (`#e5e5e0`): Secondary button background — warm, craft-like
+- **Warm Light** (`#e0e0d9`): Circular button backgrounds, badges
+- **Warm Wash** (`hsla(60, 20%, 98%, 0.5)`): `--comp-badge-color-background-wash-light`, subtle warm badge bg
+- **Fog** (`#f6f6f3`): Light surface (at 50% opacity)
+- **Border Disabled** (`#c8c8c1`): `--sema-color-border-disabled`, disabled borders
+- **Hover Gray** (`#bcbcb3`): `--base-color-hover-grayscale-150`, hover border
+- **Dark Surface** (`#33332e`): Dark section backgrounds
+
+### Semantic
+- **Error Red** (`#9e0a0a`): Checkbox/form error states
+
+## 3. Typography Rules
+
+### Font Family
+- **Primary**: `Pin Sans`, fallbacks: `-apple-system, system-ui, Segoe UI, Roboto, Oxygen-Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, ヒラギノ角ゴ Pro W3, メイリオ, Meiryo, ＭＳ Ｐゴシック, Arial`
+
+### Hierarchy
+
+| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
+|------|------|------|--------|-------------|----------------|-------|
+| Display Hero | Pin Sans | 70px (4.38rem) | 600 | normal | normal | Maximum impact |
+| Section Heading | Pin Sans | 28px (1.75rem) | 700 | normal | -1.2px | Negative tracking |
+| Body | Pin Sans | 16px (1.00rem) | 400 | 1.40 | normal | Standard reading |
+| Caption Bold | Pin Sans | 14px (0.88rem) | 700 | normal | normal | Strong metadata |
+| Caption | Pin Sans | 12px (0.75rem) | 400–500 | 1.50 | normal | Small text, tags |
+| Button | Pin Sans | 12px (0.75rem) | 400 | normal | normal | Button labels |
+
+### Principles
+- **Compact type scale**: The range is 12px–70px with a dramatic jump — most functional text is 12–16px, creating a dense, app-like information hierarchy.
+- **Warm weight distribution**: 600–700 for headings, 400–500 for body. No ultra-light weights — the type always feels substantial.
+- **Negative tracking on headings**: -1.2px on 28px headings creates cozy, intimate section titles.
+- **Single font family**: Pin Sans handles everything — no secondary display or monospace font detected.
+
+## 4. Component Stylings
+
+### Buttons
+
+**Primary Red**
+- Background: `#e60023` (Pinterest Red)
+- Text: `#000000` (black — unusual choice for contrast on red)
+- Padding: 6px 14px
+- Radius: 16px (generously rounded, not pill)
+- Border: `2px solid rgba(255, 255, 255, 0)` (transparent)
+- Focus: semantic border + outline via CSS variables
+
+**Secondary Sand**
+- Background: `#e5e5e0` (warm sand gray)
+- Text: `#000000`
+- Padding: 6px 14px
+- Radius: 16px
+- Focus: same semantic border system
+
+**Circular Action**
+- Background: `#e0e0d9` (warm light)
+- Text: `#211922` (plum black)
+- Radius: 50% (circle)
+- Use: Pin actions, navigation controls
+
+**Ghost / Transparent**
+- Background: transparent
+- Text: `#000000`
+- No border
+- Use: Tertiary actions
+
+### Cards & Containers
+- Photography-first pin cards with generous radius (12px–20px)
+- No traditional box-shadow on most cards
+- White or warm fog backgrounds
+- 8px white thick border on some image containers
+
+### Inputs
+- Email input: white background, `1px solid #91918c` border, 16px radius, 11px 15px padding
+- Focus: semantic border + outline system via CSS variables
+
+### Navigation
+- Clean header on white or warm background
+- Pinterest logo + search bar centered
+- Pin Sans 16px for nav links
+- Pinterest Red accents for active states
+
+### Image Treatment
+- Pin-style masonry grid (signature Pinterest layout)
+- Rounded corners: 12px–20px on images
+- Photography as primary content — every pin is an image
+- Thick white borders (8px) on featured image containers
+
+## 5. Layout Principles
+
+### Spacing System
+- Base unit: 8px
+- Scale: 4px, 6px, 7px, 8px, 10px, 11px, 12px, 16px, 18px, 20px, 22px, 24px, 32px, 80px, 100px
+- Large jumps: 32px → 80px → 100px for section spacing
+
+### Grid & Container
+- Masonry grid for pin content (signature layout)
+- Centered content sections with generous max-width
+- Full-width dark footer
+- Search bar as primary navigation element
+
+### Whitespace Philosophy
+- **Inspiration density**: The masonry grid packs pins tightly — the content density IS the value proposition. Whitespace exists between sections, not within the grid.
+- **Breathing above, density below**: Hero/feature sections get generous padding; the pin grid is compact and immersive.
+
+### Border Radius Scale
+- Standard (12px): Small cards, links
+- Button (16px): Buttons, inputs, medium cards
+- Comfortable (20px): Feature cards
+- Large (28px): Large containers
+- Section (32px): Tab elements, large panels
+- Hero (40px): Hero containers, large feature blocks
+- Circle (50%): Action buttons, tab indicators
+
+## 6. Depth & Elevation
+
+| Level | Treatment | Use |
+|-------|-----------|-----|
+| Flat (Level 0) | No shadow | Default — pins rely on content, not shadow |
+| Subtle (Level 1) | Minimal shadow (from tokens) | Elevated overlays, dropdowns |
+| Focus (Accessibility) | `--sema-color-border-focus-outer-default` ring | Focus states |
+
+**Shadow Philosophy**: Pinterest uses minimal shadows. The masonry grid relies on content (photography) to create visual interest rather than elevation effects. Depth comes from the warmth of surface colors and the generous rounding of containers.
+
+## 7. Do's and Don'ts
+
+### Do
+- Use warm neutrals (`#e5e5e0`, `#e0e0d9`, `#91918c`) — the warm olive/sand tone is the identity
+- Apply Pinterest Red (`#e60023`) only for primary CTAs — it's bold and singular
+- Use Pin Sans exclusively — one font for everything
+- Apply generous border-radius: 16px for buttons/inputs, 20px+ for cards
+- Keep the masonry grid dense — content density is the value
+- Use warm badge backgrounds (`hsla(60,20%,98%,.5)`) for subtle warm washes
+- Use `#211922` (plum black) for primary text — it's warmer than pure black
+
+### Don't
+- Don't use cool gray neutrals — always warm/olive-toned
+- Don't use pure black (`#000000`) as primary text — use plum black (`#211922`)
+- Don't use pill-shaped buttons — 16px radius is rounded but not pill
+- Don't add heavy shadows — Pinterest is flat by design, depth from content
+- Don't use small border-radius (<12px) on cards — the generous rounding is core
+- Don't introduce additional brand colors — red + warm neutrals is the complete palette
+- Don't use thin font weights — Pin Sans at 400 minimum
+
+## 8. Responsive Behavior
+
+### Breakpoints
+| Name | Width | Key Changes |
+|------|-------|-------------|
+| Mobile | <576px | Single column, compact layout |
+| Mobile Large | 576–768px | 2-column pin grid |
+| Tablet | 768–890px | Expanded grid |
+| Desktop Small | 890–1312px | Standard masonry grid |
+| Desktop | 1312–1440px | Full layout |
+| Large Desktop | 1440–1680px | Expanded grid columns |
+| Ultra-wide | >1680px | Maximum grid density |
+
+### Collapsing Strategy
+- Pin grid: 5+ columns → 3 → 2 → 1
+- Navigation: search bar + icons → simplified mobile nav
+- Feature sections: side-by-side → stacked
+- Hero: 70px → scales down proportionally
+- Footer: dark multi-column → stacked
+
+## 9. Agent Prompt Guide
+
+### Quick Color Reference
+- Brand: Pinterest Red (`#e60023`)
+- Background: White (`#ffffff`)
+- Text: Plum Black (`#211922`)
+- Secondary text: Olive Gray (`#62625b`)
+- Button surface: Sand Gray (`#e5e5e0`)
+- Border: Warm Silver (`#91918c`)
+- Focus: Focus Blue (`#435ee5`)
+
+### Example Component Prompts
+- "Create a hero: white background. Headline at 70px Pin Sans weight 600, plum black (#211922). Red CTA button (#e60023, 16px radius, 6px 14px padding). Secondary sand button (#e5e5e0, 16px radius)."
+- "Design a pin card: white background, 16px radius, no shadow. Photography fills top, 16px Pin Sans weight 400 description below in #62625b."
+- "Build a circular action button: #e0e0d9 background, 50% radius, #211922 icon."
+- "Create an input field: white background, 1px solid #91918c, 16px radius, 11px 15px padding. Focus: blue outline via semantic tokens."
+- "Design the dark footer: #33332e background. Pinterest script logo in white. 12px Pin Sans links in #91918c."
+
+### Iteration Guide
+1. Warm neutrals everywhere — olive/sand grays, never cool steel
+2. Pinterest Red for CTAs only — bold and singular
+3. 16px radius on buttons/inputs, 20px+ on cards — generous but not pill
+4. Pin Sans is the only font — compact at 12px for UI, 70px for display
+5. Photography carries the design — the UI stays warm and minimal
+6. Plum black (#211922) for text — warmer than pure black

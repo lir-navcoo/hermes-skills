@@ -1,1 +1,198 @@
-IyBEZXNpZ24gU3lzdGVtOiBSZXZvbHV0CgoKPiAqKkhlcm1lcyBBZ2VudCDigJQgSW1wbGVtZW50YXRpb24gTm90ZXMqKgo+Cj4gVGhlIG9yaWdpbmFsIHNpdGUgdXNlcyBwcm9wcmlldGFyeSBmb250cy4gRm9yIHNlbGYtY29udGFpbmVkIEhUTUwgb3V0cHV0LCB1c2UgdGhlc2UgQ0ROIHN1YnN0aXR1dGVzOgo+IC0gKipQcmltYXJ5OioqIGBJbnRlcmAgfCAqKk1vbm86KiogYHN5c3RlbSBtb25vc3BhY2Ugc3RhY2tgCj4gLSAqKkZvbnQgc3RhY2sgKENTUyk6KiogYGZvbnQtZmFtaWx5OiAnSW50ZXInLCBzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sICdTZWdvZSBVSScsIFJvYm90bywgc2Fucy1zZXJpZjtgCj4gLSAqKk1vbm8gc3RhY2sgKENTUyk6KiogYGZvbnQtZmFtaWx5OiB1aS1tb25vc3BhY2UsIFNGTW9uby1SZWd1bGFyLCBNZW5sbywgTW9uYWNvLCBDb25zb2xhcywgJ0xpYmVyYXRpb24gTW9ubycsICdDb3VyaWVyIE5ldycsIG1vbm9zcGFjZTtgCj4gYGBgaHRtbAo+IDxsaW5rIGhyZWY9Imh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9SW50ZXI6d2dodEAzMDA7NDAwOzUwMDs2MDA7NzAwJmRpc3BsYXk9c3dhcCIgcmVsPSJzdHlsZXNoZWV0Ij4KPiBgYGAKPiBVc2UgYHdyaXRlX2ZpbGVgIHRvIGNyZWF0ZSBIVE1MLCBzZXJ2ZSB2aWEgYGdlbmVyYXRpdmUtd2lkZ2V0c2Agc2tpbGwgKGNsb3VkZmxhcmVkIHR1bm5lbCkuCj4gVmVyaWZ5IHZpc3VhbCBhY2N1cmFjeSB3aXRoIGBicm93c2VyX3Zpc2lvbmAgYWZ0ZXIgZ2VuZXJhdGluZy4KCiMjIDEuIFZpc3VhbCBUaGVtZSAmIEF0bW9zcGhlcmUKClJldm9sdXQncyB3ZWJzaXRlIGlzIGZpbnRlY2ggY29uZmlkZW5jZSBkaXN0aWxsZWQgaW50byBwaXhlbHMg4oCUIGEgZGVzaWduIHN5c3RlbSB0aGF0IGNvbW11bmljYXRlcyAieW91ciBtb25leSBpcyBpbiBjYXBhYmxlIGhhbmRzIiB0aHJvdWdoIG1hc3NpdmUgdHlwb2dyYXBoeSwgZ2VuZXJvdXMgd2hpdGVzcGFjZSwgYW5kIGEgZGlzY2lwbGluZWQgbmV1dHJhbCBwYWxldHRlLiBUaGUgdmlzdWFsIGxhbmd1YWdlIGlzIGJ1aWx0IG9uIEFlb25payBQcm8sIGEgZ2VvbWV0cmljIGdyb3Rlc3F1ZSB0aGF0IGNyZWF0ZXMgYmlsbGJvYXJkLXNjYWxlIGhlYWRsaW5lcyBhdCAxMzZweCB3aXRoIHdlaWdodCA1MDAgYW5kIGFnZ3Jlc3NpdmUgbmVnYXRpdmUgdHJhY2tpbmcgKC0yLjcycHgpLiBUaGlzIGlzbid0IHN1YnRsZSBicmFuZGluZzsgaXQncyBmaW50ZWNoIGF0IHN0YWRpdW0gc2NhbGUuCgpUaGUgY29sb3Igc3lzdGVtIGlzIGJ1aWx0IG9uIGEgY29tcHJlaGVuc2l2ZSBgLS1ydWktKmAgKFJldm9sdXQgVUkpIHRva2VuIGFyY2hpdGVjdHVyZSB3aXRoIHNlbWFudGljIG5hbWluZyBmb3IgZXZlcnkgc3RhdGU6IGRhbmdlciAoYCNlMjNiNGFgKSwgd2FybmluZyAoYCNlYzdlMDBgKSwgdGVhbCAoYCMwMGE4N2VgKSwgYmx1ZSAoYCM0OTRmZGZgKSwgZGVlcC1waW5rIChgI2U2MWU0OWApLCBhbmQgbW9yZS4gQnV0IHRoZSBtYXJrZXRpbmcgc3VyZmFjZSBpdHNlbGYgaXMgcmVtYXJrYWJseSByZXN0cmFpbmVkIOKAlCBuZWFyLWJsYWNrIChgIzE5MWMxZmApIGFuZCBwdXJlIHdoaXRlIChgI2ZmZmZmZmApIGRvbWluYXRlLCB3aXRoIHRoZSBjb2xvcmZ1bCBzZW1hbnRpYyB0b2tlbnMgcmVzZXJ2ZWQgZm9yIHRoZSBwcm9kdWN0IGludGVyZmFjZSwgbm90IHRoZSBtYXJrZXRpbmcgcGFnZS4KCldoYXQgZGlzdGluZ3Vpc2hlcyBSZXZvbHV0IGlzIGl0cyBwaWxsLWV2ZXJ5dGhpbmcgYnV0dG9uIHN5c3RlbS4gRXZlcnkgYnV0dG9uIHVzZXMgOTk5OXB4IHJhZGl1cyDigJQgcHJpbWFyeSBkYXJrIChgIzE5MWMxZmApLCBzZWNvbmRhcnkgbGlnaHQgKGAjZjRmNGY0YCksIG91dGxpbmVkIChgdHJhbnNwYXJlbnQgKyAycHggc29saWRgKSwgYW5kIGdob3N0IG9uIGRhcmsgKGByZ2JhKDI0NCwyNDQsMjQ0LDAuMSkgKyAycHggc29saWRgKS4gVGhlIHBhZGRpbmcgaXMgZ2VuZXJvdXMgKDE0cHggMzJweOKAkzM0cHgpLCBjcmVhdGluZyBsYXJnZSwgY29uZmlkZW50IHRvdWNoIHRhcmdldHMuIENvbWJpbmVkIHdpdGggSW50ZXIgZm9yIGJvZHkgdGV4dCBhdCB2YXJpb3VzIHdlaWdodHMgYW5kIHBvc2l0aXZlIGxldHRlci1zcGFjaW5nICgwLjE2cHjigJMwLjI0cHgpLCB0aGUgcmVzdWx0IGlzIGEgZGVzaWduIHRoYXQgZmVlbHMgYm90aCBwcmVtaXVtIGFuZCBhY2Nlc3NpYmxlIOKAlCBiYW5raW5nIGZvciB0aGUgbW9kZXJuIGVyYS4KCioqS2V5IENoYXJhY3RlcmlzdGljczoqKgotIEFlb25payBQcm8gZGlzcGxheSBhdCAxMzZweCB3ZWlnaHQgNTAwIOKAlCBiaWxsYm9hcmQtc2NhbGUgZmludGVjaCBoZWFkbGluZXMKLSBOZWFyLWJsYWNrIChgIzE5MWMxZmApICsgd2hpdGUgYmluYXJ5IHdpdGggY29tcHJlaGVuc2l2ZSBgLS1ydWktKmAgc2VtYW50aWMgdG9rZW5zCi0gVW5pdmVyc2FsIHBpbGwgYnV0dG9ucyAoOTk5OXB4IHJhZGl1cykgd2l0aCBnZW5lcm91cyBwYWRkaW5nICgxNHB4IDMycHgpCi0gSW50ZXIgZm9yIGJvZHkgdGV4dCB3aXRoIHBvc2l0aXZlIGxldHRlci1zcGFjaW5nICgwLjE2cHjigJMwLjI0cHgpCi0gUmljaCBzZW1hbnRpYyBjb2xvciBzeXN0ZW06IGJsdWUsIHRlYWwsIHBpbmssIHllbGxvdywgZ3JlZW4sIGJyb3duLCBkYW5nZXIsIHdhcm5pbmcKLSBaZXJvIHNoYWRvd3MgZGV0ZWN0ZWQg4oCUIGRlcHRoIHRocm91Z2ggY29sb3IgY29udHJhc3Qgb25seQotIFRpZ2h0IGRpc3BsYXkgbGluZS1oZWlnaHRzICgxLjAwKSB3aXRoIHJlbGF4ZWQgYm9keSAoMS41MOKAkzEuNTYpCgojIyAyLiBDb2xvciBQYWxldHRlICYgUm9sZXMKCiMjIyBQcmltYXJ5Ci0gKipSZXZvbHV0IERhcmsqKiAoYCMxOTFjMWZgKTogUHJpbWFyeSBkYXJrIHN1cmZhY2UsIGJ1dHRvbiBiYWNrZ3JvdW5kLCBuZWFyLWJsYWNrIHRleHQKLSAqKlB1cmUgV2hpdGUqKiAoYCNmZmZmZmZgKTogYC0tcnVpLWNvbG9yLWFjdGlvbi1sYWJlbGAsIHByaW1hcnkgbGlnaHQgc3VyZmFjZQotICoqTGlnaHQgU3VyZmFjZSoqIChgI2Y0ZjRmNGApOiBTZWNvbmRhcnkgYnV0dG9uIGJhY2tncm91bmQsIHN1YnRsZSBzdXJmYWNlCgojIyMgQnJhbmQgLyBJbnRlcmFjdGl2ZQotICoqUmV2b2x1dCBCbHVlKiogKGAjNDk0ZmRmYCk6IGAtLXJ1aS1jb2xvci1ibHVlYCwgcHJpbWFyeSBicmFuZCBibHVlCi0gKipBY3Rpb24gQmx1ZSoqIChgIzRmNTVmMWApOiBgLS1ydWktY29sb3ItYWN0aW9uLXBob3RvLWhlYWRlci10ZXh0YCwgaGVhZGVyIGFjY2VudAotICoqQmx1ZSBUZXh0KiogKGAjMzc2Y2Q1YCk6IGAtLXdlYnNpdGUtY29sb3ItYmx1ZS10ZXh0YCwgbGluayBibHVlCgojIyMgU2VtYW50aWMKLSAqKkRhbmdlciBSZWQqKiAoYCNlMjNiNGFgKTogYC0tcnVpLWNvbG9yLWRhbmdlcmAsIGVycm9yL2Rlc3RydWN0aXZlCi0gKipEZWVwIFBpbmsqKiAoYCNlNjFlNDlgKTogYC0tcnVpLWNvbG9yLWRlZXAtcGlua2AsIGNyaXRpY2FsIGFjY2VudAotICoqV2FybmluZyBPcmFuZ2UqKiAoYCNlYzdlMDBgKTogYC0tcnVpLWNvbG9yLXdhcm5pbmdgLCB3YXJuaW5nIHN0YXRlcwotICoqWWVsbG93KiogKGAjYjA5MDAwYCk6IGAtLXJ1aS1jb2xvci15ZWxsb3dgLCBhdHRlbnRpb24KLSAqKlRlYWwqKiAoYCMwMGE4N2VgKTogYC0tcnVpLWNvbG9yLXRlYWxgLCBzdWNjZXNzL3Bvc2l0aXZlCi0gKipMaWdodCBHcmVlbioqIChgIzQyODYxOWApOiBgLS1ydWktY29sb3ItbGlnaHQtZ3JlZW5gLCBzZWNvbmRhcnkgc3VjY2VzcwotICoqR3JlZW4gVGV4dCoqIChgIzAwNjQwMGApOiBgLS13ZWJzaXRlLWNvbG9yLWdyZWVuLXRleHRgLCBncmVlbiB0ZXh0Ci0gKipMaWdodCBCbHVlKiogKGAjMDA3YmMyYCk6IGAtLXJ1aS1jb2xvci1saWdodC1ibHVlYCwgaW5mb3JtYXRpb25hbAotICoqQnJvd24qKiAoYCM5MzZkNjJgKTogYC0tcnVpLWNvbG9yLWJyb3duYCwgd2FybSBuZXV0cmFsIGFjY2VudAotICoqUmVkIFRleHQqKiAoYCM4YjAwMDBgKTogYC0td2Vic2l0ZS1jb2xvci1yZWQtdGV4dGAsIGRhcmsgcmVkIHRleHQKCiMjIyBOZXV0cmFsIFNjYWxlCi0gKipNaWQgU2xhdGUqKiAoYCM1MDVhNjNgKTogU2Vjb25kYXJ5IHRleHQKLSAqKkNvb2wgR3JheSoqIChgIzhkOTY5ZWApOiBNdXRlZCB0ZXh0LCB0ZXJ0aWFyeQotICoqR3JheSBUb25lKiogKGAjYzljOWNkYCk6IGAtLXJ1aS1jb2xvci1ncmV5LXRvbmUtMjBgLCBib3JkZXJzL2RpdmlkZXJzCgojIyAzLiBUeXBvZ3JhcGh5IFJ1bGVzCgojIyMgRm9udCBGYW1pbGllcwotICoqRGlzcGxheSoqOiBgQWVvbmlrIFByb2Ag4oCUIGdlb21ldHJpYyBncm90ZXNxdWUsIG5vIGRldGVjdGVkIGZhbGxiYWNrcwotICoqQm9keSAvIFVJKio6IGBJbnRlcmAg4oCUIHN0YW5kYXJkIHN5c3RlbSBzYW5zCi0gKipGYWxsYmFjayoqOiBgQXJpYWxgIGZvciBzcGVjaWZpYyBidXR0b24gY29udGV4dHMKCiMjIyBIaWVyYXJjaHkKCnwgUm9sZSB8IEZvbnQgfCBTaXplIHwgV2VpZ2h0IHwgTGluZSBIZWlnaHQgfCBMZXR0ZXIgU3BhY2luZyB8IE5vdGVzIHwKfC0tLS0tLXwtLS0tLS18LS0tLS0tfC0tLS0tLS0tfC0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tLXwtLS0tLS0tfAp8IERpc3BsYXkgTWVnYSB8IEFlb25payBQcm8gfCAxMzZweCAoOC41MHJlbSkgfCA1MDAgfCAxLjAwICh0aWdodCkgfCAtMi43MnB4IHwgU3RhZGl1bS1zY2FsZSBoZXJvIHwKfCBEaXNwbGF5IEhlcm8gfCBBZW9uaWsgUHJvIHwgODBweCAoNS4wMHJlbSkgfCA1MDAgfCAxLjAwICh0aWdodCkgfCAtMC44cHggfCBQcmltYXJ5IGhlcm8gfAp8IFNlY3Rpb24gSGVhZGluZyB8IEFlb25payBQcm8gfCA0OHB4ICgzLjAwcmVtKSB8IDUwMCB8IDEuMjEgKHRpZ2h0KSB8IC0wLjQ4cHggfCBGZWF0dXJlIHNlY3Rpb25zIHwKfCBTdWItaGVhZGluZyB8IEFlb25payBQcm8gfCA0MHB4ICgyLjUwcmVtKSB8IDUwMCB8IDEuMjAgKHRpZ2h0KSB8IC0wLjRweCB8IFN1Yi1zZWN0aW9ucyB8CnwgQ2FyZCBUaXRsZSB8IEFlb25payBQcm8gfCAzMnB4ICgyLjAwcmVtKSB8IDUwMCB8IDEuMTkgKHRpZ2h0KSB8IC0wLjMycHggfCBDYXJkIGhlYWRpbmdzIHwKfCBGZWF0dXJlIFRpdGxlIHwgQWVvbmlrIFBybyB8IDI0cHggKDEuNTByZW0pIHwgNDAwIHwgMS4zMyB8IG5vcm1hbCB8IExpZ2h0IGhlYWRpbmdzIHwKfCBOYXYgLyBVSSB8IEFlb25payBQcm8gfCAyMHB4ICgxLjI1cmVtKSB8IDUwMCB8IDEuNDAgfCBub3JtYWwgfCBOYXZpZ2F0aW9uLCBidXR0b25zIHwKfCBCb2R5IExhcmdlIHwgSW50ZXIgfCAxOHB4ICgxLjEzcmVtKSB8IDQwMCB8IDEuNTYgfCAtMC4wOXB4IHwgSW50cm9kdWN0aW9ucyB8CnwgQm9keSB8IEludGVyIHwgMTZweCAoMS4wMHJlbSkgfCA0MDAgfCAxLjUwIHwgMC4yNHB4IHwgU3RhbmRhcmQgcmVhZGluZyB8CnwgQm9keSBTZW1pYm9sZCB8IEludGVyIHwgMTZweCAoMS4wMHJlbSkgfCA2MDAgfCAxLjUwIHwgMC4xNnB4IHwgRW1waGFzaXplZCBib2R5IHwKfCBCb2R5IEJvbGQgTGluayB8IEludGVyIHwgMTZweCAoMS4wMHJlbSkgfCA3MDAgfCAxLjUwIHwgMC4yNHB4IHwgQm9sZCBsaW5rcyB8CgojIyMgUHJpbmNpcGxlcwotICoqV2VpZ2h0IDUwMCBhcyBkaXNwbGF5IGRlZmF1bHQqKjogQWVvbmlrIFBybyB1c2VzIG1lZGl1bSAoNTAwKSBmb3IgQUxMIGhlYWRpbmdzIOKAlCBubyBib2xkLiBUaGlzIGNyZWF0ZXMgYXV0aG9yaXR5IHRocm91Z2ggc2l6ZSBhbmQgdHJhY2tpbmcsIG5vdCB3ZWlnaHQuCi0gKipCaWxsYm9hcmQgdHJhY2tpbmcqKjogLTIuNzJweCBhdCAxMzZweCBpcyBleHRyZW1lbHkgY29tcHJlc3NlZCDigJQgdGV4dCBkZXNpZ25lZCB0byBiZSByZWFkIGF0IGEgZ2xhbmNlLCBsaWtlIGFpcnBvcnQgc2lnbmFnZS4KLSAqKlBvc2l0aXZlIHRyYWNraW5nIG9uIGJvZHkqKjogSW50ZXIgdXNlcyArMC4xNnB4IHRvICswLjI0cHgsIGNyZWF0aW5nIGFpcnksIHdlbGwtc3BhY2VkIHJlYWRpbmcgdGV4dCB0aGF0IGNvbnRyYXN0cyB3aXRoIHRoZSBjb21wcmVzc2VkIGhlYWRpbmdzLgoKIyMgNC4gQ29tcG9uZW50IFN0eWxpbmdzCgojIyMgQnV0dG9ucwoKKipQcmltYXJ5IERhcmsgUGlsbCoqCi0gQmFja2dyb3VuZDogYCMxOTFjMWZgCi0gVGV4dDogYCNmZmZmZmZgCi0gUGFkZGluZzogMTRweCAzMnB4Ci0gUmFkaXVzOiA5OTk5cHggKGZ1bGwgcGlsbCkKLSBIb3Zlcjogb3BhY2l0eSAwLjg1Ci0gRm9jdXM6IGAwIDAgMCAwLjEyNXJlbWAgcmluZwoKKipTZWNvbmRhcnkgTGlnaHQgUGlsbCoqCi0gQmFja2dyb3VuZDogYCNmNGY0ZjRgCi0gVGV4dDogYCMwMDAwMDBgCi0gUGFkZGluZzogMTRweCAzNHB4Ci0gUmFkaXVzOiA5OTk5cHgKLSBIb3Zlcjogb3BhY2l0eSAwLjg1CgoqKk91dGxpbmVkIFBpbGwqKgotIEJhY2tncm91bmQ6IHRyYW5zcGFyZW50Ci0gVGV4dDogYCMxOTFjMWZgCi0gQm9yZGVyOiBgMnB4IHNvbGlkICMxOTFjMWZgCi0gUGFkZGluZzogMTRweCAzMnB4Ci0gUmFkaXVzOiA5OTk5cHgKCioqR2hvc3Qgb24gRGFyayoqCi0gQmFja2dyb3VuZDogYHJnYmEoMjQ0LCAyNDQsIDI0NCwgMC4xKWAKLSBUZXh0OiBgI2Y0ZjRmNGAKLSBCb3JkZXI6IGAycHggc29saWQgI2Y0ZjRmNGAKLSBQYWRkaW5nOiAxNHB4IDMycHgKLSBSYWRpdXM6IDk5OTlweAoKIyMjIENhcmRzICYgQ29udGFpbmVycwotIFJhZGl1czogMTJweCAoc21hbGwpLCAyMHB4IChjYXJkcykKLSBObyBzaGFkb3dzIOKAlCBmbGF0IHN1cmZhY2VzIHdpdGggY29sb3IgY29udHJhc3QKLSBEYXJrIGFuZCBsaWdodCBzZWN0aW9uIGFsdGVybmF0aW9uCgojIyMgTmF2aWdhdGlvbgotIEFlb25payBQcm8gMjBweCB3ZWlnaHQgNTAwCi0gQ2xlYW4gaGVhZGVyLCBoYW1idXJnZXIgdG9nZ2xlIGF0IDEycHggcmFkaXVzCi0gUGlsbCBDVEFzIHJpZ2h0LWFsaWduZWQKCiMjIDUuIExheW91dCBQcmluY2lwbGVzCgojIyMgU3BhY2luZyBTeXN0ZW0KLSBCYXNlIHVuaXQ6IDhweAotIFNjYWxlOiA0cHgsIDZweCwgOHB4LCAxNHB4LCAxNnB4LCAyMHB4LCAyNHB4LCAzMnB4LCA0MHB4LCA0OHB4LCA4MHB4LCA4OHB4LCAxMjBweAotIExhcmdlIHNlY3Rpb24gc3BhY2luZzogODBweOKAkzEyMHB4CgojIyMgQm9yZGVyIFJhZGl1cyBTY2FsZQotIFN0YW5kYXJkICgxMnB4KTogTmF2aWdhdGlvbiwgc21hbGwgYnV0dG9ucwotIENhcmQgKDIwcHgpOiBGZWF0dXJlIGNhcmRzCi0gUGlsbCAoOTk5OXB4KTogQWxsIGJ1dHRvbnMKCiMjIDYuIERlcHRoICYgRWxldmF0aW9uCgp8IExldmVsIHwgVHJlYXRtZW50IHwgVXNlIHwKfC0tLS0tLS18LS0tLS0tLS0tLS18LS0tLS18CnwgRmxhdCAoTGV2ZWwgMCkgfCBObyBzaGFkb3cgfCBFdmVyeXRoaW5nIOKAlCBSZXZvbHV0IHVzZXMgemVybyBzaGFkb3dzIHwKfCBGb2N1cyB8IGAwIDAgMCAwLjEyNXJlbWAgcmluZyB8IEFjY2Vzc2liaWxpdHkgZm9jdXMgfAoKKipTaGFkb3cgUGhpbG9zb3BoeSoqOiBSZXZvbHV0IHVzZXMgWkVSTyBzaGFkb3dzLiBEZXB0aCBjb21lcyBlbnRpcmVseSBmcm9tIHRoZSBkYXJrL2xpZ2h0IHNlY3Rpb24gY29udHJhc3QgYW5kIHRoZSBnZW5lcm91cyB3aGl0ZXNwYWNlIGJldHdlZW4gZWxlbWVudHMuCgojIyA3LiBEbydzIGFuZCBEb24ndHMKCiMjIyBEbwotIFVzZSBBZW9uaWsgUHJvIHdlaWdodCA1MDAgZm9yIGFsbCBkaXNwbGF5IGhlYWRpbmdzCi0gQXBwbHkgOTk5OXB4IHJhZGl1cyB0byBhbGwgYnV0dG9ucyDigJQgcGlsbCBzaGFwZSBpcyB1bml2ZXJzYWwKLSBVc2UgZ2VuZXJvdXMgYnV0dG9uIHBhZGRpbmcgKDE0cHggMzJweCkKLSBLZWVwIHRoZSBwYWxldHRlIHRvIG5lYXItYmxhY2sgKyB3aGl0ZSBmb3IgbWFya2V0aW5nIHN1cmZhY2VzCi0gQXBwbHkgcG9zaXRpdmUgbGV0dGVyLXNwYWNpbmcgb24gSW50ZXIgYm9keSB0ZXh0CgojIyMgRG9uJ3QKLSBEb24ndCB1c2Ugc2hhZG93cyDigJQgUmV2b2x1dCBpcyBmbGF0IGJ5IGRlc2lnbgotIERvbid0IHVzZSBib2xkICg3MDApIGZvciBBZW9uaWsgUHJvIGhlYWRpbmdzIOKAlCA1MDAgaXMgdGhlIHdlaWdodAotIERvbid0IHVzZSBzbWFsbCBidXR0b25zIOKAlCB0aGUgZ2VuZXJvdXMgcGFkZGluZyBpcyBpbnRlbnRpb25hbAotIERvbid0IGFwcGx5IHNlbWFudGljIGNvbG9ycyB0byBtYXJrZXRpbmcgc3VyZmFjZXMg4oCUIHRoZXkncmUgZm9yIHRoZSBwcm9kdWN0CgojIyA4LiBSZXNwb25zaXZlIEJlaGF2aW9yCgojIyMgQnJlYWtwb2ludHMKfCBOYW1lIHwgV2lkdGggfCBLZXkgQ2hhbmdlcyB8CnwtLS0tLS18LS0tLS0tLXwtLS0tLS0tLS0tLS0tfAp8IE1vYmlsZSBTbWFsbCB8IDw0MDBweCB8IENvbXBhY3QsIHNpbmdsZSBjb2x1bW4gfAp8IE1vYmlsZSB8IDQwMOKAkzcyMHB4IHwgU3RhbmRhcmQgbW9iaWxlIHwKfCBUYWJsZXQgfCA3MjDigJMxMDI0cHggfCAyLWNvbHVtbiBsYXlvdXRzIHwKfCBEZXNrdG9wIHwgMTAyNOKAkzEyODBweCB8IFN0YW5kYXJkIGRlc2t0b3AgfAp8IExhcmdlIHwgMTI4MOKAkzE5MjBweCB8IEZ1bGwgbGF5b3V0IHwKCiMjIDkuIEFnZW50IFByb21wdCBHdWlkZQoKIyMjIFF1aWNrIENvbG9yIFJlZmVyZW5jZQotIERhcms6IFJldm9sdXQgRGFyayAoYCMxOTFjMWZgKQotIExpZ2h0OiBXaGl0ZSAoYCNmZmZmZmZgKQotIFN1cmZhY2U6IExpZ2h0IChgI2Y0ZjRmNGApCi0gQmx1ZTogUmV2b2x1dCBCbHVlIChgIzQ5NGZkZmApCi0gRGFuZ2VyOiBSZWQgKGAjZTIzYjRhYCkKLSBTdWNjZXNzOiBUZWFsIChgIzAwYTg3ZWApCgojIyMgRXhhbXBsZSBDb21wb25lbnQgUHJvbXB0cwotICJDcmVhdGUgYSBoZXJvOiB3aGl0ZSBiYWNrZ3JvdW5kLiBIZWFkbGluZSBhdCAxMzZweCBBZW9uaWsgUHJvIHdlaWdodCA1MDAsIGxpbmUtaGVpZ2h0IDEuMDAsIGxldHRlci1zcGFjaW5nIC0yLjcycHgsICMxOTFjMWYgdGV4dC4gRGFyayBwaWxsIENUQSAoIzE5MWMxZiwgOTk5OXB4LCAxNHB4IDMycHgpLiBPdXRsaW5lZCBwaWxsIHNlY29uZGFyeSAodHJhbnNwYXJlbnQsIDJweCBzb2xpZCAjMTkxYzFmKS4iCi0gIkJ1aWxkIGEgcGlsbCBidXR0b246ICMxOTFjMWYgYmFja2dyb3VuZCwgd2hpdGUgdGV4dCwgOTk5OXB4IHJhZGl1cywgMTRweCAzMnB4IHBhZGRpbmcsIDIwcHggQWVvbmlrIFBybyB3ZWlnaHQgNTAwLiBIb3Zlcjogb3BhY2l0eSAwLjg1LiIKCiMjIyBJdGVyYXRpb24gR3VpZGUKMS4gQWVvbmlrIFBybyA1MDAgZm9yIGhlYWRpbmdzIOKAlCBuZXZlciBib2xkCjIuIEFsbCBidXR0b25zIGFyZSBwaWxscyAoOTk5OXB4KSB3aXRoIGdlbmVyb3VzIHBhZGRpbmcKMy4gWmVybyBzaGFkb3dzIOKAlCBmbGF0IGlzIHRoZSBSZXZvbHV0IGlkZW50aXR5CjQuIE5lYXItYmxhY2sgKyB3aGl0ZSBmb3IgbWFya2V0aW5nLCBzZW1hbnRpYyBjb2xvcnMgZm9yIHByb2R1Y3QK
+# Design System: Revolut
+
+
+> **Hermes Agent — Implementation Notes**
+>
+> The original site uses proprietary fonts. For self-contained HTML output, use these CDN substitutes:
+> - **Primary:** `Inter` | **Mono:** `system monospace stack`
+> - **Font stack (CSS):** `font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;`
+> - **Mono stack (CSS):** `font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;`
+> ```html
+> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+> ```
+> Use `write_file` to create HTML, serve via `generative-widgets` skill (cloudflared tunnel).
+> Verify visual accuracy with `browser_vision` after generating.
+
+## 1. Visual Theme & Atmosphere
+
+Revolut's website is fintech confidence distilled into pixels — a design system that communicates "your money is in capable hands" through massive typography, generous whitespace, and a disciplined neutral palette. The visual language is built on Aeonik Pro, a geometric grotesque that creates billboard-scale headlines at 136px with weight 500 and aggressive negative tracking (-2.72px). This isn't subtle branding; it's fintech at stadium scale.
+
+The color system is built on a comprehensive `--rui-*` (Revolut UI) token architecture with semantic naming for every state: danger (`#e23b4a`), warning (`#ec7e00`), teal (`#00a87e`), blue (`#494fdf`), deep-pink (`#e61e49`), and more. But the marketing surface itself is remarkably restrained — near-black (`#191c1f`) and pure white (`#ffffff`) dominate, with the colorful semantic tokens reserved for the product interface, not the marketing page.
+
+What distinguishes Revolut is its pill-everything button system. Every button uses 9999px radius — primary dark (`#191c1f`), secondary light (`#f4f4f4`), outlined (`transparent + 2px solid`), and ghost on dark (`rgba(244,244,244,0.1) + 2px solid`). The padding is generous (14px 32px–34px), creating large, confident touch targets. Combined with Inter for body text at various weights and positive letter-spacing (0.16px–0.24px), the result is a design that feels both premium and accessible — banking for the modern era.
+
+**Key Characteristics:**
+- Aeonik Pro display at 136px weight 500 — billboard-scale fintech headlines
+- Near-black (`#191c1f`) + white binary with comprehensive `--rui-*` semantic tokens
+- Universal pill buttons (9999px radius) with generous padding (14px 32px)
+- Inter for body text with positive letter-spacing (0.16px–0.24px)
+- Rich semantic color system: blue, teal, pink, yellow, green, brown, danger, warning
+- Zero shadows detected — depth through color contrast only
+- Tight display line-heights (1.00) with relaxed body (1.50–1.56)
+
+## 2. Color Palette & Roles
+
+### Primary
+- **Revolut Dark** (`#191c1f`): Primary dark surface, button background, near-black text
+- **Pure White** (`#ffffff`): `--rui-color-action-label`, primary light surface
+- **Light Surface** (`#f4f4f4`): Secondary button background, subtle surface
+
+### Brand / Interactive
+- **Revolut Blue** (`#494fdf`): `--rui-color-blue`, primary brand blue
+- **Action Blue** (`#4f55f1`): `--rui-color-action-photo-header-text`, header accent
+- **Blue Text** (`#376cd5`): `--website-color-blue-text`, link blue
+
+### Semantic
+- **Danger Red** (`#e23b4a`): `--rui-color-danger`, error/destructive
+- **Deep Pink** (`#e61e49`): `--rui-color-deep-pink`, critical accent
+- **Warning Orange** (`#ec7e00`): `--rui-color-warning`, warning states
+- **Yellow** (`#b09000`): `--rui-color-yellow`, attention
+- **Teal** (`#00a87e`): `--rui-color-teal`, success/positive
+- **Light Green** (`#428619`): `--rui-color-light-green`, secondary success
+- **Green Text** (`#006400`): `--website-color-green-text`, green text
+- **Light Blue** (`#007bc2`): `--rui-color-light-blue`, informational
+- **Brown** (`#936d62`): `--rui-color-brown`, warm neutral accent
+- **Red Text** (`#8b0000`): `--website-color-red-text`, dark red text
+
+### Neutral Scale
+- **Mid Slate** (`#505a63`): Secondary text
+- **Cool Gray** (`#8d969e`): Muted text, tertiary
+- **Gray Tone** (`#c9c9cd`): `--rui-color-grey-tone-20`, borders/dividers
+
+## 3. Typography Rules
+
+### Font Families
+- **Display**: `Aeonik Pro` — geometric grotesque, no detected fallbacks
+- **Body / UI**: `Inter` — standard system sans
+- **Fallback**: `Arial` for specific button contexts
+
+### Hierarchy
+
+| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
+|------|------|------|--------|-------------|----------------|-------|
+| Display Mega | Aeonik Pro | 136px (8.50rem) | 500 | 1.00 (tight) | -2.72px | Stadium-scale hero |
+| Display Hero | Aeonik Pro | 80px (5.00rem) | 500 | 1.00 (tight) | -0.8px | Primary hero |
+| Section Heading | Aeonik Pro | 48px (3.00rem) | 500 | 1.21 (tight) | -0.48px | Feature sections |
+| Sub-heading | Aeonik Pro | 40px (2.50rem) | 500 | 1.20 (tight) | -0.4px | Sub-sections |
+| Card Title | Aeonik Pro | 32px (2.00rem) | 500 | 1.19 (tight) | -0.32px | Card headings |
+| Feature Title | Aeonik Pro | 24px (1.50rem) | 400 | 1.33 | normal | Light headings |
+| Nav / UI | Aeonik Pro | 20px (1.25rem) | 500 | 1.40 | normal | Navigation, buttons |
+| Body Large | Inter | 18px (1.13rem) | 400 | 1.56 | -0.09px | Introductions |
+| Body | Inter | 16px (1.00rem) | 400 | 1.50 | 0.24px | Standard reading |
+| Body Semibold | Inter | 16px (1.00rem) | 600 | 1.50 | 0.16px | Emphasized body |
+| Body Bold Link | Inter | 16px (1.00rem) | 700 | 1.50 | 0.24px | Bold links |
+
+### Principles
+- **Weight 500 as display default**: Aeonik Pro uses medium (500) for ALL headings — no bold. This creates authority through size and tracking, not weight.
+- **Billboard tracking**: -2.72px at 136px is extremely compressed — text designed to be read at a glance, like airport signage.
+- **Positive tracking on body**: Inter uses +0.16px to +0.24px, creating airy, well-spaced reading text that contrasts with the compressed headings.
+
+## 4. Component Stylings
+
+### Buttons
+
+**Primary Dark Pill**
+- Background: `#191c1f`
+- Text: `#ffffff`
+- Padding: 14px 32px
+- Radius: 9999px (full pill)
+- Hover: opacity 0.85
+- Focus: `0 0 0 0.125rem` ring
+
+**Secondary Light Pill**
+- Background: `#f4f4f4`
+- Text: `#000000`
+- Padding: 14px 34px
+- Radius: 9999px
+- Hover: opacity 0.85
+
+**Outlined Pill**
+- Background: transparent
+- Text: `#191c1f`
+- Border: `2px solid #191c1f`
+- Padding: 14px 32px
+- Radius: 9999px
+
+**Ghost on Dark**
+- Background: `rgba(244, 244, 244, 0.1)`
+- Text: `#f4f4f4`
+- Border: `2px solid #f4f4f4`
+- Padding: 14px 32px
+- Radius: 9999px
+
+### Cards & Containers
+- Radius: 12px (small), 20px (cards)
+- No shadows — flat surfaces with color contrast
+- Dark and light section alternation
+
+### Navigation
+- Aeonik Pro 20px weight 500
+- Clean header, hamburger toggle at 12px radius
+- Pill CTAs right-aligned
+
+## 5. Layout Principles
+
+### Spacing System
+- Base unit: 8px
+- Scale: 4px, 6px, 8px, 14px, 16px, 20px, 24px, 32px, 40px, 48px, 80px, 88px, 120px
+- Large section spacing: 80px–120px
+
+### Border Radius Scale
+- Standard (12px): Navigation, small buttons
+- Card (20px): Feature cards
+- Pill (9999px): All buttons
+
+## 6. Depth & Elevation
+
+| Level | Treatment | Use |
+|-------|-----------|-----|
+| Flat (Level 0) | No shadow | Everything — Revolut uses zero shadows |
+| Focus | `0 0 0 0.125rem` ring | Accessibility focus |
+
+**Shadow Philosophy**: Revolut uses ZERO shadows. Depth comes entirely from the dark/light section contrast and the generous whitespace between elements.
+
+## 7. Do's and Don'ts
+
+### Do
+- Use Aeonik Pro weight 500 for all display headings
+- Apply 9999px radius to all buttons — pill shape is universal
+- Use generous button padding (14px 32px)
+- Keep the palette to near-black + white for marketing surfaces
+- Apply positive letter-spacing on Inter body text
+
+### Don't
+- Don't use shadows — Revolut is flat by design
+- Don't use bold (700) for Aeonik Pro headings — 500 is the weight
+- Don't use small buttons — the generous padding is intentional
+- Don't apply semantic colors to marketing surfaces — they're for the product
+
+## 8. Responsive Behavior
+
+### Breakpoints
+| Name | Width | Key Changes |
+|------|-------|-------------|
+| Mobile Small | <400px | Compact, single column |
+| Mobile | 400–720px | Standard mobile |
+| Tablet | 720–1024px | 2-column layouts |
+| Desktop | 1024–1280px | Standard desktop |
+| Large | 1280–1920px | Full layout |
+
+## 9. Agent Prompt Guide
+
+### Quick Color Reference
+- Dark: Revolut Dark (`#191c1f`)
+- Light: White (`#ffffff`)
+- Surface: Light (`#f4f4f4`)
+- Blue: Revolut Blue (`#494fdf`)
+- Danger: Red (`#e23b4a`)
+- Success: Teal (`#00a87e`)
+
+### Example Component Prompts
+- "Create a hero: white background. Headline at 136px Aeonik Pro weight 500, line-height 1.00, letter-spacing -2.72px, #191c1f text. Dark pill CTA (#191c1f, 9999px, 14px 32px). Outlined pill secondary (transparent, 2px solid #191c1f)."
+- "Build a pill button: #191c1f background, white text, 9999px radius, 14px 32px padding, 20px Aeonik Pro weight 500. Hover: opacity 0.85."
+
+### Iteration Guide
+1. Aeonik Pro 500 for headings — never bold
+2. All buttons are pills (9999px) with generous padding
+3. Zero shadows — flat is the Revolut identity
+4. Near-black + white for marketing, semantic colors for product

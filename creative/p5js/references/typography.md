@@ -1,1 +1,302 @@
-IyBUeXBvZ3JhcGh5CgojIyBMb2FkaW5nIEZvbnRzCgojIyMgU3lzdGVtIEZvbnRzCgpgYGBqYXZhc2NyaXB0CnRleHRGb250KCdIZWx2ZXRpY2EnKTsKdGV4dEZvbnQoJ0dlb3JnaWEnKTsKdGV4dEZvbnQoJ21vbm9zcGFjZScpOwpgYGAKCiMjIyBDdXN0b20gRm9udHMgKE9URi9UVEYvV09GRjIpCgpgYGBqYXZhc2NyaXB0CmxldCBteUZvbnQ7CgpmdW5jdGlvbiBwcmVsb2FkKCkgewogIG15Rm9udCA9IGxvYWRGb250KCdwYXRoL3RvL2ZvbnQub3RmJyk7CiAgLy8gUmVxdWlyZXMgbG9jYWwgc2VydmVyIG9yIENPUlMtZW5hYmxlZCBVUkwKfQoKZnVuY3Rpb24gc2V0dXAoKSB7CiAgdGV4dEZvbnQobXlGb250KTsKfQpgYGAKCiMjIyBHb29nbGUgRm9udHMgdmlhIENTUwoKYGBgaHRtbAo8bGluayBocmVmPSJodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2NzczI/ZmFtaWx5PUludGVyOndnaHRANDAwOzcwMCZkaXNwbGF5PXN3YXAiIHJlbD0ic3R5bGVzaGVldCI+CjxzY3JpcHQ+CmZ1bmN0aW9uIHNldHVwKCkgewogIHRleHRGb250KCdJbnRlcicpOwp9Cjwvc2NyaXB0PgpgYGAKCkdvb2dsZSBGb250cyB3b3JrIHdpdGhvdXQgYGxvYWRGb250KClgIGJ1dCBvbmx5IGZvciBgdGV4dCgpYCDigJQgbm90IGZvciBgdGV4dFRvUG9pbnRzKClgLiBGb3IgcGFydGljbGUgdGV4dCwgeW91IG5lZWQgYGxvYWRGb250KClgIHdpdGggYW4gT1RGL1RURiBmaWxlLgoKIyMgVGV4dCBSZW5kZXJpbmcKCiMjIyBCYXNpYyBUZXh0CgpgYGBqYXZhc2NyaXB0CnRleHRTaXplKDMyKTsKdGV4dEFsaWduKENFTlRFUiwgQ0VOVEVSKTsKdGV4dCgnSGVsbG8gV29ybGQnLCB3aWR0aC8yLCBoZWlnaHQvMik7CmBgYAoKIyMjIFRleHQgUHJvcGVydGllcwoKYGBgamF2YXNjcmlwdAp0ZXh0U2l6ZSg0OCk7ICAgICAgICAgICAgICAgICAgICAvLyBwaXhlbCBzaXplCnRleHRBbGlnbihMRUZULCBUT1ApOyAgICAgICAgICAgIC8vIGhvcml6b250YWw6IExFRlQsIENFTlRFUiwgUklHSFQKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLy8gdmVydGljYWw6IFRPUCwgQ0VOVEVSLCBCT1RUT00sIEJBU0VMSU5FCnRleHRMZWFkaW5nKDQwKTsgICAgICAgICAgICAgICAgIC8vIGxpbmUgc3BhY2luZyAoZm9yIG11bHRpLWxpbmUgdGV4dCkKdGV4dFN0eWxlKEJPTEQpOyAgICAgICAgICAgICAgICAgLy8gTk9STUFMLCBCT0xELCBJVEFMSUMsIEJPTERJVEFMSUMKdGV4dFdyYXAoV09SRCk7ICAgICAgICAgICAgICAgICAgLy8gV09SRCBvciBDSEFSIChmb3IgdGV4dCgpIHdpdGggbWF4IHdpZHRoKQpgYGAKCiMjIyBUZXh0IE1ldHJpY3MKCmBgYGphdmFzY3JpcHQKbGV0IHcgPSB0ZXh0V2lkdGgoJ0hlbGxvJyk7ICAgICAgLy8gcGl4ZWwgd2lkdGggb2Ygc3RyaW5nCmxldCBhID0gdGV4dEFzY2VudCgpOyAgICAgICAgICAgIC8vIGhlaWdodCBhYm92ZSBiYXNlbGluZQpsZXQgZCA9IHRleHREZXNjZW50KCk7ICAgICAgICAgICAvLyBoZWlnaHQgYmVsb3cgYmFzZWxpbmUKbGV0IHRvdGFsSCA9IGEgKyBkOyAgICAgICAgICAgICAgLy8gZnVsbCBsaW5lIGhlaWdodApgYGAKCiMjIyBUZXh0IEJvdW5kaW5nIEJveAoKYGBgamF2YXNjcmlwdApsZXQgYm91bmRzID0gbXlGb250LnRleHRCb3VuZHMoJ0hlbGxvJywgeCwgeSwgc2l6ZSk7Ci8vIGJvdW5kcyA9IHsgeCwgeSwgdywgaCB9Ci8vIFVzZWZ1bCBmb3IgcG9zaXRpb25pbmcsIGNvbGxpc2lvbiwgYmFja2dyb3VuZCByZWN0YW5nbGVzCmBgYAoKIyMjIE11bHRpLUxpbmUgVGV4dAoKYGBgamF2YXNjcmlwdAovLyBXaXRoIG1heCB3aWR0aCDigJQgYXV0byB3cmFwcwp0ZXh0V3JhcChXT1JEKTsKdGV4dCgnTG9uZyB0ZXh0IHRoYXQgd3JhcHMgd2l0aGluIHRoZSBnaXZlbiB3aWR0aCcsIHgsIHksIG1heFdpZHRoKTsKCi8vIFdpdGggbWF4IHdpZHRoIEFORCBoZWlnaHQg4oCUIGNsaXBzCnRleHQoJ1ZlcnkgbG9uZyB0ZXh0JywgeCwgeSwgbWF4V2lkdGgsIG1heEhlaWdodCk7CmBgYAoKIyMgdGV4dFRvUG9pbnRzKCkg4oCUIFRleHQgYXMgUGFydGljbGVzCgpDb252ZXJ0IHRleHQgb3V0bGluZSB0byBhcnJheSBvZiBwb2ludHMuIFJlcXVpcmVzIGEgbG9hZGVkIGZvbnQgKE9URi9UVEYgdmlhIGBsb2FkRm9udCgpYCkuCgpgYGBqYXZhc2NyaXB0CmxldCBmb250OwpsZXQgcG9pbnRzOwoKZnVuY3Rpb24gcHJlbG9hZCgpIHsKICBmb250ID0gbG9hZEZvbnQoJ2ZvbnQub3RmJyk7ICAvLyBNVVNUIGJlIGxvYWRGb250LCBub3QgQ1NTCn0KCmZ1bmN0aW9uIHNldHVwKCkgewogIGNyZWF0ZUNhbnZhcygxMjAwLCA2MDApOwogIHBvaW50cyA9IGZvbnQudGV4dFRvUG9pbnRzKCdIRUxMTycsIDEwMCwgNDAwLCAyMDAsIHsKICAgIHNhbXBsZUZhY3RvcjogMC4xLCAgLy8gbG93ZXIgPSBtb3JlIHBvaW50cyAoMC4xLTAuNSB0eXBpY2FsKQogICAgc2ltcGxpZnlUaHJlc2hvbGQ6IDAKICB9KTsKfQoKZnVuY3Rpb24gZHJhdygpIHsKICBiYWNrZ3JvdW5kKDApOwogIGZvciAobGV0IHB0IG9mIHBvaW50cykgewogICAgbGV0IG4gPSBub2lzZShwdC54ICogMC4wMSwgcHQueSAqIDAuMDEsIGZyYW1lQ291bnQgKiAwLjAxKTsKICAgIGZpbGwoMjU1LCBuICogMjU1KTsKICAgIG5vU3Ryb2tlKCk7CiAgICBlbGxpcHNlKHB0LnggKyByYW5kb20oLTIsIDIpLCBwdC55ICsgcmFuZG9tKC0yLCAyKSwgMyk7CiAgfQp9CmBgYAoKIyMjIFBhcnRpY2xlIFRleHQgQ2xhc3MKCmBgYGphdmFzY3JpcHQKY2xhc3MgVGV4dFBhcnRpY2xlIHsKICBjb25zdHJ1Y3Rvcih0YXJnZXQpIHsKICAgIHRoaXMudGFyZ2V0ID0gY3JlYXRlVmVjdG9yKHRhcmdldC54LCB0YXJnZXQueSk7CiAgICB0aGlzLnBvcyA9IGNyZWF0ZVZlY3RvcihyYW5kb20od2lkdGgpLCByYW5kb20oaGVpZ2h0KSk7CiAgICB0aGlzLnZlbCA9IGNyZWF0ZVZlY3RvcigwLCAwKTsKICAgIHRoaXMuYWNjID0gY3JlYXRlVmVjdG9yKDAsIDApOwogICAgdGhpcy5tYXhTcGVlZCA9IDEwOwogICAgdGhpcy5tYXhGb3JjZSA9IDAuNTsKICB9CgogIGFycml2ZSgpIHsKICAgIGxldCBkZXNpcmVkID0gcDUuVmVjdG9yLnN1Yih0aGlzLnRhcmdldCwgdGhpcy5wb3MpOwogICAgbGV0IGQgPSBkZXNpcmVkLm1hZygpOwogICAgbGV0IHNwZWVkID0gZCA8IDEwMCA/IG1hcChkLCAwLCAxMDAsIDAsIHRoaXMubWF4U3BlZWQpIDogdGhpcy5tYXhTcGVlZDsKICAgIGRlc2lyZWQuc2V0TWFnKHNwZWVkKTsKICAgIGxldCBzdGVlciA9IHA1LlZlY3Rvci5zdWIoZGVzaXJlZCwgdGhpcy52ZWwpOwogICAgc3RlZXIubGltaXQodGhpcy5tYXhGb3JjZSk7CiAgICB0aGlzLmFjYy5hZGQoc3RlZXIpOwogIH0KCiAgZmxlZSh0YXJnZXQsIHJhZGl1cykgewogICAgbGV0IGQgPSB0aGlzLnBvcy5kaXN0KHRhcmdldCk7CiAgICBpZiAoZCA8IHJhZGl1cykgewogICAgICBsZXQgZGVzaXJlZCA9IHA1LlZlY3Rvci5zdWIodGhpcy5wb3MsIHRhcmdldCk7CiAgICAgIGRlc2lyZWQuc2V0TWFnKHRoaXMubWF4U3BlZWQpOwogICAgICBsZXQgc3RlZXIgPSBwNS5WZWN0b3Iuc3ViKGRlc2lyZWQsIHRoaXMudmVsKTsKICAgICAgc3RlZXIubGltaXQodGhpcy5tYXhGb3JjZSAqIDIpOwogICAgICB0aGlzLmFjYy5hZGQoc3RlZXIpOwogICAgfQogIH0KCiAgdXBkYXRlKCkgewogICAgdGhpcy52ZWwuYWRkKHRoaXMuYWNjKTsKICAgIHRoaXMudmVsLmxpbWl0KHRoaXMubWF4U3BlZWQpOwogICAgdGhpcy5wb3MuYWRkKHRoaXMudmVsKTsKICAgIHRoaXMuYWNjLm11bHQoMCk7CiAgfQoKICBkaXNwbGF5KCkgewogICAgZmlsbCgyNTUpOwogICAgbm9TdHJva2UoKTsKICAgIGVsbGlwc2UodGhpcy5wb3MueCwgdGhpcy5wb3MueSwgMyk7CiAgfQp9CgovLyBVc2FnZTogcGFydGljbGVzIGZvcm0gdGV4dCwgc2NhdHRlciBmcm9tIG1vdXNlCmxldCB0ZXh0UGFydGljbGVzID0gW107CmZvciAobGV0IHB0IG9mIHBvaW50cykgewogIHRleHRQYXJ0aWNsZXMucHVzaChuZXcgVGV4dFBhcnRpY2xlKHB0KSk7Cn0KCmZ1bmN0aW9uIGRyYXcoKSB7CiAgYmFja2dyb3VuZCgwKTsKICBmb3IgKGxldCBwIG9mIHRleHRQYXJ0aWNsZXMpIHsKICAgIHAuYXJyaXZlKCk7CiAgICBwLmZsZWUoY3JlYXRlVmVjdG9yKG1vdXNlWCwgbW91c2VZKSwgODApOwogICAgcC51cGRhdGUoKTsKICAgIHAuZGlzcGxheSgpOwogIH0KfQpgYGAKCiMjIEtpbmV0aWMgVHlwb2dyYXBoeQoKIyMjIFdhdmUgVGV4dAoKYGBgamF2YXNjcmlwdApmdW5jdGlvbiB3YXZlVGV4dChzdHIsIHgsIHksIHNpemUsIGFtcGxpdHVkZSwgZnJlcXVlbmN5KSB7CiAgdGV4dFNpemUoc2l6ZSk7CiAgdGV4dEFsaWduKExFRlQsIEJBU0VMSU5FKTsKICBsZXQgeE9mZiA9IDA7CiAgZm9yIChsZXQgaSA9IDA7IGkgPCBzdHIubGVuZ3RoOyBpKyspIHsKICAgIGxldCB5T2ZmID0gc2luKGZyYW1lQ291bnQgKiAwLjA1ICsgaSAqIGZyZXF1ZW5jeSkgKiBhbXBsaXR1ZGU7CiAgICB0ZXh0KHN0cltpXSwgeCArIHhPZmYsIHkgKyB5T2ZmKTsKICAgIHhPZmYgKz0gdGV4dFdpZHRoKHN0cltpXSk7CiAgfQp9CmBgYAoKIyMjIFR5cGV3cml0ZXIgRWZmZWN0CgpgYGBqYXZhc2NyaXB0CmNsYXNzIFR5cGV3cml0ZXIgewogIGNvbnN0cnVjdG9yKHN0ciwgeCwgeSwgc3BlZWQgPSA1MCkgewogICAgdGhpcy5zdHIgPSBzdHI7CiAgICB0aGlzLnggPSB4OwogICAgdGhpcy55ID0geTsKICAgIHRoaXMuc3BlZWQgPSBzcGVlZDsgIC8vIG1zIHBlciBjaGFyYWN0ZXIKICAgIHRoaXMuc3RhcnRUaW1lID0gbWlsbGlzKCk7CiAgICB0aGlzLmN1cnNvciA9IHRydWU7CiAgfQoKICBkaXNwbGF5KCkgewogICAgbGV0IGVsYXBzZWQgPSBtaWxsaXMoKSAtIHRoaXMuc3RhcnRUaW1lOwogICAgbGV0IGNoYXJzID0gbWluKGZsb29yKGVsYXBzZWQgLyB0aGlzLnNwZWVkKSwgdGhpcy5zdHIubGVuZ3RoKTsKICAgIGxldCB2aXNpYmxlID0gdGhpcy5zdHIuc3Vic3RyaW5nKDAsIGNoYXJzKTsKCiAgICB0ZXh0QWxpZ24oTEVGVCwgVE9QKTsKICAgIHRleHQodmlzaWJsZSwgdGhpcy54LCB0aGlzLnkpOwoKICAgIC8vIEJsaW5raW5nIGN1cnNvcgogICAgaWYgKGNoYXJzIDwgdGhpcy5zdHIubGVuZ3RoICYmIGZsb29yKG1pbGxpcygpIC8gNTAwKSAlIDIgPT09IDApIHsKICAgICAgbGV0IGN1cnNvclggPSB0aGlzLnggKyB0ZXh0V2lkdGgodmlzaWJsZSk7CiAgICAgIGxpbmUoY3Vyc29yWCwgdGhpcy55LCBjdXJzb3JYLCB0aGlzLnkgKyB0ZXh0QXNjZW50KCkgKyB0ZXh0RGVzY2VudCgpKTsKICAgIH0KICB9CgogIGlzRG9uZSgpIHsgcmV0dXJuIG1pbGxpcygpIC0gdGhpcy5zdGFydFRpbWUgPj0gdGhpcy5zdHIubGVuZ3RoICogdGhpcy5zcGVlZDsgfQp9CmBgYAoKIyMjIENoYXJhY3Rlci1ieS1DaGFyYWN0ZXIgQW5pbWF0aW9uCgpgYGBqYXZhc2NyaXB0CmZ1bmN0aW9uIGFuaW1hdGVkVGV4dChzdHIsIHgsIHksIHNpemUsIGRlbGF5ID0gNTApIHsKICB0ZXh0U2l6ZShzaXplKTsKICB0ZXh0QWxpZ24oTEVGVCwgQkFTRUxJTkUpOwogIGxldCB4T2ZmID0gMDsKCiAgZm9yIChsZXQgaSA9IDA7IGkgPCBzdHIubGVuZ3RoOyBpKyspIHsKICAgIGxldCBjaGFyU3RhcnQgPSBpICogZGVsYXk7CiAgICBsZXQgdCA9IGNvbnN0cmFpbigobWlsbGlzKCkgLSBjaGFyU3RhcnQpIC8gNTAwLCAwLCAxKTsKICAgIGxldCBldCA9IGVhc2VPdXRFbGFzdGljKHQpOwoKICAgIHB1c2goKTsKICAgIHRyYW5zbGF0ZSh4ICsgeE9mZiwgeSk7CiAgICBzY2FsZShldCk7CiAgICBsZXQgYWxwaGEgPSB0ICogMjU1OwogICAgZmlsbCgyNTUsIGFscGhhKTsKICAgIHRleHQoc3RyW2ldLCAwLCAwKTsKICAgIHBvcCgpOwoKICAgIHhPZmYgKz0gdGV4dFdpZHRoKHN0cltpXSk7CiAgfQp9CmBgYAoKIyMgVGV4dCBhcyBNYXNrCgpgYGBqYXZhc2NyaXB0CmxldCB0ZXh0QnVmZmVyOwoKZnVuY3Rpb24gc2V0dXAoKSB7CiAgY3JlYXRlQ2FudmFzKDgwMCwgODAwKTsKICB0ZXh0QnVmZmVyID0gY3JlYXRlR3JhcGhpY3Mod2lkdGgsIGhlaWdodCk7CiAgdGV4dEJ1ZmZlci5iYWNrZ3JvdW5kKDApOwogIHRleHRCdWZmZXIuZmlsbCgyNTUpOwogIHRleHRCdWZmZXIudGV4dFNpemUoMjAwKTsKICB0ZXh0QnVmZmVyLnRleHRBbGlnbihDRU5URVIsIENFTlRFUik7CiAgdGV4dEJ1ZmZlci50ZXh0KCdNQVNLJywgd2lkdGgvMiwgaGVpZ2h0LzIpOwp9CgpmdW5jdGlvbiBkcmF3KCkgewogIC8vIERyYXcgY29udGVudAogIGJhY2tncm91bmQoMCk7CiAgLy8gLi4uIHJlbmRlciBzb21ldGhpbmcgY29sb3JmdWwKCiAgLy8gQXBwbHkgdGV4dCBtYXNrIChzaG93IGNvbnRlbnQgb25seSB3aGVyZSB0ZXh0IGlzIHdoaXRlKQogIGxvYWRQaXhlbHMoKTsKICB0ZXh0QnVmZmVyLmxvYWRQaXhlbHMoKTsKICBmb3IgKGxldCBpID0gMDsgaSA8IHBpeGVscy5sZW5ndGg7IGkgKz0gNCkgewogICAgbGV0IG1hc2tWYWwgPSB0ZXh0QnVmZmVyLnBpeGVsc1tpXTsgIC8vIHdoaXRlID0gc2hvdywgYmxhY2sgPSBoaWRlCiAgICBwaXhlbHNbaSArIDNdID0gbWFza1ZhbDsgIC8vIHNldCBhbHBoYSBmcm9tIG1hc2sKICB9CiAgdXBkYXRlUGl4ZWxzKCk7Cn0KYGBgCgojIyBSZXNwb25zaXZlIFRleHQgU2l6aW5nCgpgYGBqYXZhc2NyaXB0CmZ1bmN0aW9uIHJlc3BvbnNpdmVUZXh0U2l6ZShiYXNlU2l6ZSwgYmFzZVdpZHRoID0gMTkyMCkgewogIHJldHVybiBiYXNlU2l6ZSAqICh3aWR0aCAvIGJhc2VXaWR0aCk7Cn0KCi8vIFVzYWdlCnRleHRTaXplKHJlc3BvbnNpdmVUZXh0U2l6ZSg0OCkpOwp0ZXh0KCdTY2FsZXMgd2l0aCBjYW52YXMnLCB3aWR0aC8yLCBoZWlnaHQvMik7CmBgYAo=
+# Typography
+
+## Loading Fonts
+
+### System Fonts
+
+```javascript
+textFont('Helvetica');
+textFont('Georgia');
+textFont('monospace');
+```
+
+### Custom Fonts (OTF/TTF/WOFF2)
+
+```javascript
+let myFont;
+
+function preload() {
+  myFont = loadFont('path/to/font.otf');
+  // Requires local server or CORS-enabled URL
+}
+
+function setup() {
+  textFont(myFont);
+}
+```
+
+### Google Fonts via CSS
+
+```html
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<script>
+function setup() {
+  textFont('Inter');
+}
+</script>
+```
+
+Google Fonts work without `loadFont()` but only for `text()` — not for `textToPoints()`. For particle text, you need `loadFont()` with an OTF/TTF file.
+
+## Text Rendering
+
+### Basic Text
+
+```javascript
+textSize(32);
+textAlign(CENTER, CENTER);
+text('Hello World', width/2, height/2);
+```
+
+### Text Properties
+
+```javascript
+textSize(48);                    // pixel size
+textAlign(LEFT, TOP);            // horizontal: LEFT, CENTER, RIGHT
+                                 // vertical: TOP, CENTER, BOTTOM, BASELINE
+textLeading(40);                 // line spacing (for multi-line text)
+textStyle(BOLD);                 // NORMAL, BOLD, ITALIC, BOLDITALIC
+textWrap(WORD);                  // WORD or CHAR (for text() with max width)
+```
+
+### Text Metrics
+
+```javascript
+let w = textWidth('Hello');      // pixel width of string
+let a = textAscent();            // height above baseline
+let d = textDescent();           // height below baseline
+let totalH = a + d;              // full line height
+```
+
+### Text Bounding Box
+
+```javascript
+let bounds = myFont.textBounds('Hello', x, y, size);
+// bounds = { x, y, w, h }
+// Useful for positioning, collision, background rectangles
+```
+
+### Multi-Line Text
+
+```javascript
+// With max width — auto wraps
+textWrap(WORD);
+text('Long text that wraps within the given width', x, y, maxWidth);
+
+// With max width AND height — clips
+text('Very long text', x, y, maxWidth, maxHeight);
+```
+
+## textToPoints() — Text as Particles
+
+Convert text outline to array of points. Requires a loaded font (OTF/TTF via `loadFont()`).
+
+```javascript
+let font;
+let points;
+
+function preload() {
+  font = loadFont('font.otf');  // MUST be loadFont, not CSS
+}
+
+function setup() {
+  createCanvas(1200, 600);
+  points = font.textToPoints('HELLO', 100, 400, 200, {
+    sampleFactor: 0.1,  // lower = more points (0.1-0.5 typical)
+    simplifyThreshold: 0
+  });
+}
+
+function draw() {
+  background(0);
+  for (let pt of points) {
+    let n = noise(pt.x * 0.01, pt.y * 0.01, frameCount * 0.01);
+    fill(255, n * 255);
+    noStroke();
+    ellipse(pt.x + random(-2, 2), pt.y + random(-2, 2), 3);
+  }
+}
+```
+
+### Particle Text Class
+
+```javascript
+class TextParticle {
+  constructor(target) {
+    this.target = createVector(target.x, target.y);
+    this.pos = createVector(random(width), random(height));
+    this.vel = createVector(0, 0);
+    this.acc = createVector(0, 0);
+    this.maxSpeed = 10;
+    this.maxForce = 0.5;
+  }
+
+  arrive() {
+    let desired = p5.Vector.sub(this.target, this.pos);
+    let d = desired.mag();
+    let speed = d < 100 ? map(d, 0, 100, 0, this.maxSpeed) : this.maxSpeed;
+    desired.setMag(speed);
+    let steer = p5.Vector.sub(desired, this.vel);
+    steer.limit(this.maxForce);
+    this.acc.add(steer);
+  }
+
+  flee(target, radius) {
+    let d = this.pos.dist(target);
+    if (d < radius) {
+      let desired = p5.Vector.sub(this.pos, target);
+      desired.setMag(this.maxSpeed);
+      let steer = p5.Vector.sub(desired, this.vel);
+      steer.limit(this.maxForce * 2);
+      this.acc.add(steer);
+    }
+  }
+
+  update() {
+    this.vel.add(this.acc);
+    this.vel.limit(this.maxSpeed);
+    this.pos.add(this.vel);
+    this.acc.mult(0);
+  }
+
+  display() {
+    fill(255);
+    noStroke();
+    ellipse(this.pos.x, this.pos.y, 3);
+  }
+}
+
+// Usage: particles form text, scatter from mouse
+let textParticles = [];
+for (let pt of points) {
+  textParticles.push(new TextParticle(pt));
+}
+
+function draw() {
+  background(0);
+  for (let p of textParticles) {
+    p.arrive();
+    p.flee(createVector(mouseX, mouseY), 80);
+    p.update();
+    p.display();
+  }
+}
+```
+
+## Kinetic Typography
+
+### Wave Text
+
+```javascript
+function waveText(str, x, y, size, amplitude, frequency) {
+  textSize(size);
+  textAlign(LEFT, BASELINE);
+  let xOff = 0;
+  for (let i = 0; i < str.length; i++) {
+    let yOff = sin(frameCount * 0.05 + i * frequency) * amplitude;
+    text(str[i], x + xOff, y + yOff);
+    xOff += textWidth(str[i]);
+  }
+}
+```
+
+### Typewriter Effect
+
+```javascript
+class Typewriter {
+  constructor(str, x, y, speed = 50) {
+    this.str = str;
+    this.x = x;
+    this.y = y;
+    this.speed = speed;  // ms per character
+    this.startTime = millis();
+    this.cursor = true;
+  }
+
+  display() {
+    let elapsed = millis() - this.startTime;
+    let chars = min(floor(elapsed / this.speed), this.str.length);
+    let visible = this.str.substring(0, chars);
+
+    textAlign(LEFT, TOP);
+    text(visible, this.x, this.y);
+
+    // Blinking cursor
+    if (chars < this.str.length && floor(millis() / 500) % 2 === 0) {
+      let cursorX = this.x + textWidth(visible);
+      line(cursorX, this.y, cursorX, this.y + textAscent() + textDescent());
+    }
+  }
+
+  isDone() { return millis() - this.startTime >= this.str.length * this.speed; }
+}
+```
+
+### Character-by-Character Animation
+
+```javascript
+function animatedText(str, x, y, size, delay = 50) {
+  textSize(size);
+  textAlign(LEFT, BASELINE);
+  let xOff = 0;
+
+  for (let i = 0; i < str.length; i++) {
+    let charStart = i * delay;
+    let t = constrain((millis() - charStart) / 500, 0, 1);
+    let et = easeOutElastic(t);
+
+    push();
+    translate(x + xOff, y);
+    scale(et);
+    let alpha = t * 255;
+    fill(255, alpha);
+    text(str[i], 0, 0);
+    pop();
+
+    xOff += textWidth(str[i]);
+  }
+}
+```
+
+## Text as Mask
+
+```javascript
+let textBuffer;
+
+function setup() {
+  createCanvas(800, 800);
+  textBuffer = createGraphics(width, height);
+  textBuffer.background(0);
+  textBuffer.fill(255);
+  textBuffer.textSize(200);
+  textBuffer.textAlign(CENTER, CENTER);
+  textBuffer.text('MASK', width/2, height/2);
+}
+
+function draw() {
+  // Draw content
+  background(0);
+  // ... render something colorful
+
+  // Apply text mask (show content only where text is white)
+  loadPixels();
+  textBuffer.loadPixels();
+  for (let i = 0; i < pixels.length; i += 4) {
+    let maskVal = textBuffer.pixels[i];  // white = show, black = hide
+    pixels[i + 3] = maskVal;  // set alpha from mask
+  }
+  updatePixels();
+}
+```
+
+## Responsive Text Sizing
+
+```javascript
+function responsiveTextSize(baseSize, baseWidth = 1920) {
+  return baseSize * (width / baseWidth);
+}
+
+// Usage
+textSize(responsiveTextSize(48));
+text('Scales with canvas', width/2, height/2);
+```

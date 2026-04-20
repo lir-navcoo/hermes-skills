@@ -1,1 +1,504 @@
-IyBBdWRpb0NyYWZ0IFRyb3VibGVzaG9vdGluZyBHdWlkZQoKIyMgSW5zdGFsbGF0aW9uIElzc3VlcwoKIyMjIEltcG9ydCBlcnJvcnMKCioqRXJyb3IqKjogYE1vZHVsZU5vdEZvdW5kRXJyb3I6IE5vIG1vZHVsZSBuYW1lZCAnYXVkaW9jcmFmdCdgCgoqKlNvbHV0aW9ucyoqOgpgYGBiYXNoCiMgSW5zdGFsbCBmcm9tIFB5UEkKcGlwIGluc3RhbGwgYXVkaW9jcmFmdAoKIyBPciBmcm9tIEdpdEh1YgpwaXAgaW5zdGFsbCBnaXQraHR0cHM6Ly9naXRodWIuY29tL2ZhY2Vib29rcmVzZWFyY2gvYXVkaW9jcmFmdC5naXQKCiMgVmVyaWZ5IGluc3RhbGxhdGlvbgpweXRob24gLWMgImZyb20gYXVkaW9jcmFmdC5tb2RlbHMgaW1wb3J0IE11c2ljR2VuOyBwcmludCgnT0snKSIKYGBgCgojIyMgRkZtcGVnIG5vdCBmb3VuZAoKKipFcnJvcioqOiBgUnVudGltZUVycm9yOiBmZm1wZWcgbm90IGZvdW5kYAoKKipTb2x1dGlvbnMqKjoKYGBgYmFzaAojIFVidW50dS9EZWJpYW4Kc3VkbyBhcHQtZ2V0IGluc3RhbGwgZmZtcGVnCgojIG1hY09TCmJyZXcgaW5zdGFsbCBmZm1wZWcKCiMgV2luZG93cyAodXNpbmcgY29uZGEpCmNvbmRhIGluc3RhbGwgLWMgY29uZGEtZm9yZ2UgZmZtcGVnCgojIFZlcmlmeQpmZm1wZWcgLXZlcnNpb24KYGBgCgojIyMgUHlUb3JjaCBDVURBIG1pc21hdGNoCgoqKkVycm9yKio6IGBSdW50aW1lRXJyb3I6IENVREEgZXJyb3I6IG5vIGtlcm5lbCBpbWFnZSBpcyBhdmFpbGFibGVgCgoqKlNvbHV0aW9ucyoqOgpgYGBiYXNoCiMgQ2hlY2sgQ1VEQSB2ZXJzaW9uCm52Y2MgLS12ZXJzaW9uCnB5dGhvbiAtYyAiaW1wb3J0IHRvcmNoOyBwcmludCh0b3JjaC52ZXJzaW9uLmN1ZGEpIgoKIyBJbnN0YWxsIG1hdGNoaW5nIFB5VG9yY2gKcGlwIGluc3RhbGwgdG9yY2ggdG9yY2hhdWRpbyAtLWluZGV4LXVybCBodHRwczovL2Rvd25sb2FkLnB5dG9yY2gub3JnL3dobC9jdTEyMQoKIyBGb3IgQ1VEQSAxMS44CnBpcCBpbnN0YWxsIHRvcmNoIHRvcmNoYXVkaW8gLS1pbmRleC11cmwgaHR0cHM6Ly9kb3dubG9hZC5weXRvcmNoLm9yZy93aGwvY3UxMTgKYGBgCgojIyMgeGZvcm1lcnMgaXNzdWVzCgoqKkVycm9yKio6IGBJbXBvcnRFcnJvcjogeGZvcm1lcnNgIHJlbGF0ZWQgZXJyb3JzCgoqKlNvbHV0aW9ucyoqOgpgYGBiYXNoCiMgSW5zdGFsbCB4Zm9ybWVycyBmb3IgbWVtb3J5IGVmZmljaWVuY3kKcGlwIGluc3RhbGwgeGZvcm1lcnMKCiMgT3IgZGlzYWJsZSB4Zm9ybWVycwpleHBvcnQgQVVESU9DUkFGVF9VU0VfWEZPUk1FUlM9MAoKIyBJbiBQeXRob24KaW1wb3J0IG9zCm9zLmVudmlyb25bIkFVRElPQ1JBRlRfVVNFX1hGT1JNRVJTIl0gPSAiMCIKZnJvbSBhdWRpb2NyYWZ0Lm1vZGVscyBpbXBvcnQgTXVzaWNHZW4KYGBgCgojIyBNb2RlbCBMb2FkaW5nIElzc3VlcwoKIyMjIE91dCBvZiBtZW1vcnkgZHVyaW5nIGxvYWQKCioqRXJyb3IqKjogYHRvcmNoLmN1ZGEuT3V0T2ZNZW1vcnlFcnJvcmAgZHVyaW5nIG1vZGVsIGxvYWRpbmcKCioqU29sdXRpb25zKio6CmBgYHB5dGhvbgojIFVzZSBzbWFsbGVyIG1vZGVsCm1vZGVsID0gTXVzaWNHZW4uZ2V0X3ByZXRyYWluZWQoJ2ZhY2Vib29rL211c2ljZ2VuLXNtYWxsJykKCiMgRm9yY2UgQ1BVIGxvYWRpbmcgZmlyc3QKaW1wb3J0IHRvcmNoCmRldmljZSA9ICJjcHUiCm1vZGVsID0gTXVzaWNHZW4uZ2V0X3ByZXRyYWluZWQoJ2ZhY2Vib29rL211c2ljZ2VuLXNtYWxsJywgZGV2aWNlPWRldmljZSkKbW9kZWwgPSBtb2RlbC50bygiY3VkYSIpCgojIFVzZSBIdWdnaW5nRmFjZSB3aXRoIGRldmljZV9tYXAKZnJvbSB0cmFuc2Zvcm1lcnMgaW1wb3J0IE11c2ljZ2VuRm9yQ29uZGl0aW9uYWxHZW5lcmF0aW9uCm1vZGVsID0gTXVzaWNnZW5Gb3JDb25kaXRpb25hbEdlbmVyYXRpb24uZnJvbV9wcmV0cmFpbmVkKAogICAgImZhY2Vib29rL211c2ljZ2VuLXNtYWxsIiwKICAgIGRldmljZV9tYXA9ImF1dG8iCikKYGBgCgojIyMgRG93bmxvYWQgZmFpbHVyZXMKCioqRXJyb3IqKjogQ29ubmVjdGlvbiBlcnJvcnMgb3IgaW5jb21wbGV0ZSBkb3dubG9hZHMKCioqU29sdXRpb25zKio6CmBgYHB5dGhvbgojIFNldCBjYWNoZSBkaXJlY3RvcnkKaW1wb3J0IG9zCm9zLmVudmlyb25bIkFVRElPQ1JBRlRfQ0FDSEVfRElSIl0gPSAiL3BhdGgvdG8vY2FjaGUiCgojIE9yIGZvciBIdWdnaW5nRmFjZQpvcy5lbnZpcm9uWyJIRl9IT01FIl0gPSAiL3BhdGgvdG8vaGZfY2FjaGUiCgojIFJlc3VtZSBkb3dubG9hZApmcm9tIGh1Z2dpbmdmYWNlX2h1YiBpbXBvcnQgc25hcHNob3RfZG93bmxvYWQKc25hcHNob3RfZG93bmxvYWQoImZhY2Vib29rL211c2ljZ2VuLXNtYWxsIiwgcmVzdW1lX2Rvd25sb2FkPVRydWUpCgojIFVzZSBsb2NhbCBmaWxlcwptb2RlbCA9IE11c2ljR2VuLmdldF9wcmV0cmFpbmVkKCcvbG9jYWwvcGF0aC90by9tb2RlbCcpCmBgYAoKIyMjIFdyb25nIG1vZGVsIHR5cGUKCioqRXJyb3IqKjogTG9hZGluZyB3cm9uZyBtb2RlbCBmb3IgdGFzawoKKipTb2x1dGlvbnMqKjoKYGBgcHl0aG9uCiMgRm9yIHRleHQtdG8tbXVzaWM6IHVzZSBNdXNpY0dlbgpmcm9tIGF1ZGlvY3JhZnQubW9kZWxzIGltcG9ydCBNdXNpY0dlbgptb2RlbCA9IE11c2ljR2VuLmdldF9wcmV0cmFpbmVkKCdmYWNlYm9vay9tdXNpY2dlbi1tZWRpdW0nKQoKIyBGb3IgdGV4dC10by1zb3VuZDogdXNlIEF1ZGlvR2VuCmZyb20gYXVkaW9jcmFmdC5tb2RlbHMgaW1wb3J0IEF1ZGlvR2VuCm1vZGVsID0gQXVkaW9HZW4uZ2V0X3ByZXRyYWluZWQoJ2ZhY2Vib29rL2F1ZGlvZ2VuLW1lZGl1bScpCgojIEZvciBtZWxvZHkgY29uZGl0aW9uaW5nOiB1c2UgbWVsb2R5IHZhcmlhbnQKbW9kZWwgPSBNdXNpY0dlbi5nZXRfcHJldHJhaW5lZCgnZmFjZWJvb2svbXVzaWNnZW4tbWVsb2R5JykKCiMgRm9yIHN0ZXJlbzogdXNlIHN0ZXJlbyB2YXJpYW50Cm1vZGVsID0gTXVzaWNHZW4uZ2V0X3ByZXRyYWluZWQoJ2ZhY2Vib29rL211c2ljZ2VuLXN0ZXJlby1tZWRpdW0nKQpgYGAKCiMjIEdlbmVyYXRpb24gSXNzdWVzCgojIyMgRW1wdHkgb3Igc2lsZW50IG91dHB1dAoKKipQcm9ibGVtKio6IEdlbmVyYXRlZCBhdWRpbyBpcyBzaWxlbnQgb3IgdmVyeSBxdWlldAoKKipTb2x1dGlvbnMqKjoKYGBgcHl0aG9uCmltcG9ydCB0b3JjaAoKIyBDaGVjayBvdXRwdXQKd2F2ID0gbW9kZWwuZ2VuZXJhdGUoWyJ1cGJlYXQgbXVzaWMiXSkKcHJpbnQoZiJTaGFwZToge3dhdi5zaGFwZX0iKQpwcmludChmIk1heCBhbXBsaXR1ZGU6IHt3YXYuYWJzKCkubWF4KCkuaXRlbSgpfSIpCnByaW50KGYiTWVhbiBhbXBsaXR1ZGU6IHt3YXYuYWJzKCkubWVhbigpLml0ZW0oKX0iKQoKIyBJZiB0b28gcXVpZXQsIG5vcm1hbGl6ZQpkZWYgbm9ybWFsaXplX2F1ZGlvKGF1ZGlvLCB0YXJnZXRfZGI9LTE0LjApOgogICAgcm1zID0gdG9yY2guc3FydCh0b3JjaC5tZWFuKGF1ZGlvICoqIDIpKQogICAgdGFyZ2V0X3JtcyA9IDEwICoqICh0YXJnZXRfZGIgLyAyMCkKICAgIGdhaW4gPSB0YXJnZXRfcm1zIC8gKHJtcyArIDFlLTgpCiAgICByZXR1cm4gYXVkaW8gKiBnYWluCgp3YXZfbm9ybWFsaXplZCA9IG5vcm1hbGl6ZV9hdWRpbyh3YXYpCmBgYAoKIyMjIFBvb3IgcXVhbGl0eSBvdXRwdXQKCioqUHJvYmxlbSoqOiBHZW5lcmF0ZWQgbXVzaWMgc291bmRzIGJhZCBvciBub2lzeQoKKipTb2x1dGlvbnMqKjoKYGBgcHl0aG9uCiMgVXNlIGxhcmdlciBtb2RlbAptb2RlbCA9IE11c2ljR2VuLmdldF9wcmV0cmFpbmVkKCdmYWNlYm9vay9tdXNpY2dlbi1sYXJnZScpCgojIEFkanVzdCBnZW5lcmF0aW9uIHBhcmFtZXRlcnMKbW9kZWwuc2V0X2dlbmVyYXRpb25fcGFyYW1zKAogICAgZHVyYXRpb249MTUsCiAgICB0b3Bfaz0yNTAsICAgICAgICAgICMgSW5jcmVhc2UgZm9yIG1vcmUgZGl2ZXJzaXR5CiAgICB0ZW1wZXJhdHVyZT0wLjgsICAgICMgTG93ZXIgZm9yIG1vcmUgZm9jdXNlZCBvdXRwdXQKICAgIGNmZ19jb2VmPTQuMCAgICAgICAgIyBJbmNyZWFzZSBmb3IgYmV0dGVyIHRleHQgYWRoZXJlbmNlCikKCiMgVXNlIGJldHRlciBwcm9tcHRzCiMgQmFkOiAibXVzaWMiCiMgR29vZDogInVwYmVhdCBlbGVjdHJvbmljIGRhbmNlIG11c2ljIHdpdGggc3ludGhlc2l6ZXJzIGFuZCBwdW5jaHkgZHJ1bXMiCgojIFRyeSBNdWx0aUJhbmQgRGlmZnVzaW9uCmZyb20gYXVkaW9jcmFmdC5tb2RlbHMgaW1wb3J0IE11bHRpQmFuZERpZmZ1c2lvbgptYmQgPSBNdWx0aUJhbmREaWZmdXNpb24uZ2V0X21iZF9tdXNpY2dlbigpCnRva2VucyA9IG1vZGVsLmdlbmVyYXRlX3Rva2VucyhbInByb21wdCJdKQp3YXYgPSBtYmQudG9rZW5zX3RvX3dhdih0b2tlbnMpCmBgYAoKIyMjIEdlbmVyYXRpb24gdG9vIHNob3J0CgoqKlByb2JsZW0qKjogQXVkaW8gc2hvcnRlciB0aGFuIGV4cGVjdGVkCgoqKlNvbHV0aW9ucyoqOgpgYGBweXRob24KIyBDaGVjayBkdXJhdGlvbiBzZXR0aW5nCm1vZGVsLnNldF9nZW5lcmF0aW9uX3BhcmFtcyhkdXJhdGlvbj0zMCkgICMgU2V0IGJlZm9yZSBnZW5lcmF0ZQoKIyBWZXJpZnkgaW4gZ2VuZXJhdGlvbgpwcmludChmIkR1cmF0aW9uIHNldHRpbmc6IHttb2RlbC5nZW5lcmF0aW9uX3BhcmFtc30iKQoKIyBDaGVjayBvdXRwdXQgc2hhcGUKd2F2ID0gbW9kZWwuZ2VuZXJhdGUoWyJwcm9tcHQiXSkKYWN0dWFsX2R1cmF0aW9uID0gd2F2LnNoYXBlWy0xXSAvIDMyMDAwCnByaW50KGYiQWN0dWFsIGR1cmF0aW9uOiB7YWN0dWFsX2R1cmF0aW9ufXMiKQoKIyBOb3RlOiBtYXggZHVyYXRpb24gaXMgdHlwaWNhbGx5IDMwcwpgYGAKCiMjIyBNZWxvZHkgY29uZGl0aW9uaW5nIGZhaWxzCgoqKkVycm9yKio6IElzc3VlcyB3aXRoIG1lbG9keS1jb25kaXRpb25lZCBnZW5lcmF0aW9uCgoqKlNvbHV0aW9ucyoqOgpgYGBweXRob24KaW1wb3J0IHRvcmNoYXVkaW8KZnJvbSBhdWRpb2NyYWZ0Lm1vZGVscyBpbXBvcnQgTXVzaWNHZW4KCiMgTG9hZCBtZWxvZHkgbW9kZWwgKG5vdCBiYXNlIG1vZGVsKQptb2RlbCA9IE11c2ljR2VuLmdldF9wcmV0cmFpbmVkKCdmYWNlYm9vay9tdXNpY2dlbi1tZWxvZHknKQoKIyBMb2FkIGFuZCBwcmVwYXJlIG1lbG9keQptZWxvZHksIHNyID0gdG9yY2hhdWRpby5sb2FkKCJtZWxvZHkud2F2IikKCiMgUmVzYW1wbGUgdG8gbW9kZWwgc2FtcGxlIHJhdGUgaWYgbmVlZGVkCmlmIHNyICE9IDMyMDAwOgogICAgcmVzYW1wbGVyID0gdG9yY2hhdWRpby50cmFuc2Zvcm1zLlJlc2FtcGxlKHNyLCAzMjAwMCkKICAgIG1lbG9keSA9IHJlc2FtcGxlcihtZWxvZHkpCgojIEVuc3VyZSBjb3JyZWN0IHNoYXBlIFtiYXRjaCwgY2hhbm5lbHMsIHNhbXBsZXNdCmlmIG1lbG9keS5kaW0oKSA9PSAxOgogICAgbWVsb2R5ID0gbWVsb2R5LnVuc3F1ZWV6ZSgwKS51bnNxdWVlemUoMCkKZWxpZiBtZWxvZHkuZGltKCkgPT0gMjoKICAgIG1lbG9keSA9IG1lbG9keS51bnNxdWVlemUoMCkKCiMgQ29udmVydCBzdGVyZW8gdG8gbW9ubwppZiBtZWxvZHkuc2hhcGVbMV0gPiAxOgogICAgbWVsb2R5ID0gbWVsb2R5Lm1lYW4oZGltPTEsIGtlZXBkaW09VHJ1ZSkKCiMgR2VuZXJhdGUgd2l0aCBtZWxvZHkKbW9kZWwuc2V0X2dlbmVyYXRpb25fcGFyYW1zKGR1cmF0aW9uPW1pbihtZWxvZHkuc2hhcGVbLTFdIC8gMzIwMDAsIDMwKSkKd2F2ID0gbW9kZWwuZ2VuZXJhdGVfd2l0aF9jaHJvbWEoWyJwaWFubyBjb3ZlciJdLCBtZWxvZHksIDMyMDAwKQpgYGAKCiMjIE1lbW9yeSBJc3N1ZXMKCiMjIyBDVURBIG91dCBvZiBtZW1vcnkKCioqRXJyb3IqKjogYHRvcmNoLmN1ZGEuT3V0T2ZNZW1vcnlFcnJvcjogQ1VEQSBvdXQgb2YgbWVtb3J5YAoKKipTb2x1dGlvbnMqKjoKYGBgcHl0aG9uCmltcG9ydCB0b3JjaAoKIyBDbGVhciBjYWNoZSBiZWZvcmUgZ2VuZXJhdGlvbgp0b3JjaC5jdWRhLmVtcHR5X2NhY2hlKCkKCiMgVXNlIHNtYWxsZXIgbW9kZWwKbW9kZWwgPSBNdXNpY0dlbi5nZXRfcHJldHJhaW5lZCgnZmFjZWJvb2svbXVzaWNnZW4tc21hbGwnKQoKIyBSZWR1Y2UgZHVyYXRpb24KbW9kZWwuc2V0X2dlbmVyYXRpb25fcGFyYW1zKGR1cmF0aW9uPTEwKSAgIyBJbnN0ZWFkIG9mIDMwCgojIEdlbmVyYXRlIG9uZSBhdCBhIHRpbWUKZm9yIHByb21wdCBpbiBwcm9tcHRzOgogICAgd2F2ID0gbW9kZWwuZ2VuZXJhdGUoW3Byb21wdF0pCiAgICBzYXZlX2F1ZGlvKHdhdikKICAgIHRvcmNoLmN1ZGEuZW1wdHlfY2FjaGUoKQoKIyBVc2UgQ1BVIGZvciB2ZXJ5IGxhcmdlIGdlbmVyYXRpb25zCm1vZGVsID0gTXVzaWNHZW4uZ2V0X3ByZXRyYWluZWQoJ2ZhY2Vib29rL211c2ljZ2VuLXNtYWxsJywgZGV2aWNlPSJjcHUiKQpgYGAKCiMjIyBNZW1vcnkgbGVhayBkdXJpbmcgYmF0Y2ggcHJvY2Vzc2luZwoKKipQcm9ibGVtKio6IE1lbW9yeSBncm93cyBvdmVyIHRpbWUKCioqU29sdXRpb25zKio6CmBgYHB5dGhvbgppbXBvcnQgZ2MKaW1wb3J0IHRvcmNoCgpkZWYgZ2VuZXJhdGVfd2l0aF9jbGVhbnVwKG1vZGVsLCBwcm9tcHRzKToKICAgIHJlc3VsdHMgPSBbXQoKICAgIGZvciBwcm9tcHQgaW4gcHJvbXB0czoKICAgICAgICB3aXRoIHRvcmNoLm5vX2dyYWQoKToKICAgICAgICAgICAgd2F2ID0gbW9kZWwuZ2VuZXJhdGUoW3Byb21wdF0pCiAgICAgICAgICAgIHJlc3VsdHMuYXBwZW5kKHdhdi5jcHUoKSkKCiAgICAgICAgIyBDbGVhbnVwCiAgICAgICAgZGVsIHdhdgogICAgICAgIGdjLmNvbGxlY3QoKQogICAgICAgIHRvcmNoLmN1ZGEuZW1wdHlfY2FjaGUoKQoKICAgIHJldHVybiByZXN1bHRzCgojIFVzZSBjb250ZXh0IG1hbmFnZXIKd2l0aCB0b3JjaC5pbmZlcmVuY2VfbW9kZSgpOgogICAgd2F2ID0gbW9kZWwuZ2VuZXJhdGUoWyJwcm9tcHQiXSkKYGBgCgojIyBBdWRpbyBGb3JtYXQgSXNzdWVzCgojIyMgV3Jvbmcgc2FtcGxlIHJhdGUKCioqUHJvYmxlbSoqOiBBdWRpbyBwbGF5cyBhdCB3cm9uZyBzcGVlZAoKKipTb2x1dGlvbnMqKjoKYGBgcHl0aG9uCmltcG9ydCB0b3JjaGF1ZGlvCgojIE11c2ljR2VuIG91dHB1dHMgYXQgMzJrSHoKc2FtcGxlX3JhdGUgPSAzMjAwMAoKIyBBdWRpb0dlbiBvdXRwdXRzIGF0IDE2a0h6CnNhbXBsZV9yYXRlID0gMTYwMDAKCiMgQWx3YXlzIHVzZSBjb3JyZWN0IHJhdGUgd2hlbiBzYXZpbmcKdG9yY2hhdWRpby5zYXZlKCJvdXRwdXQud2F2Iiwgd2F2WzBdLmNwdSgpLCBzYW1wbGVfcmF0ZT1zYW1wbGVfcmF0ZSkKCiMgUmVzYW1wbGUgaWYgbmVlZGVkCnJlc2FtcGxlciA9IHRvcmNoYXVkaW8udHJhbnNmb3Jtcy5SZXNhbXBsZSgzMjAwMCwgNDQxMDApCndhdl9yZXNhbXBsZWQgPSByZXNhbXBsZXIod2F2KQpgYGAKCiMjIyBTdGVyZW8vbW9ubyBtaXNtYXRjaAoKKipQcm9ibGVtKio6IFdyb25nIG51bWJlciBvZiBjaGFubmVscwoKKipTb2x1dGlvbnMqKjoKYGBgcHl0aG9uCiMgQ2hlY2sgbW9kZWwgdHlwZQpwcmludChmIkF1ZGlvIGNoYW5uZWxzOiB7d2F2LnNoYXBlfSIpCiMgTW9ubzogW2JhdGNoLCAxLCBzYW1wbGVzXQojIFN0ZXJlbzogW2JhdGNoLCAyLCBzYW1wbGVzXQoKIyBDb252ZXJ0IG1vbm8gdG8gc3RlcmVvCmlmIHdhdi5zaGFwZVsxXSA9PSAxOgogICAgd2F2X3N0ZXJlbyA9IHdhdi5yZXBlYXQoMSwgMiwgMSkKCiMgQ29udmVydCBzdGVyZW8gdG8gbW9ubwppZiB3YXYuc2hhcGVbMV0gPT0gMjoKICAgIHdhdl9tb25vID0gd2F2Lm1lYW4oZGltPTEsIGtlZXBkaW09VHJ1ZSkKCiMgVXNlIHN0ZXJlbyBtb2RlbCBmb3Igc3RlcmVvIG91dHB1dAptb2RlbCA9IE11c2ljR2VuLmdldF9wcmV0cmFpbmVkKCdmYWNlYm9vay9tdXNpY2dlbi1zdGVyZW8tbWVkaXVtJykKYGBgCgojIyMgQ2xpcHBpbmcgYW5kIGRpc3RvcnRpb24KCioqUHJvYmxlbSoqOiBBdWRpbyBoYXMgY2xpcHBpbmcgb3IgZGlzdG9ydGlvbgoKKipTb2x1dGlvbnMqKjoKYGBgcHl0aG9uCmltcG9ydCB0b3JjaAoKIyBDaGVjayBmb3IgY2xpcHBpbmcKbWF4X3ZhbCA9IHdhdi5hYnMoKS5tYXgoKS5pdGVtKCkKcHJpbnQoZiJNYXggYW1wbGl0dWRlOiB7bWF4X3ZhbH0iKQoKIyBOb3JtYWxpemUgdG8gcHJldmVudCBjbGlwcGluZwppZiBtYXhfdmFsID4gMS4wOgogICAgd2F2ID0gd2F2IC8gbWF4X3ZhbAoKIyBBcHBseSBzb2Z0IGNsaXBwaW5nCmRlZiBzb2Z0X2NsaXAoeCwgdGhyZXNob2xkPTAuOSk6CiAgICByZXR1cm4gdG9yY2gudGFuaCh4IC8gdGhyZXNob2xkKSAqIHRocmVzaG9sZAoKd2F2X2NsaXBwZWQgPSBzb2Z0X2NsaXAod2F2KQoKIyBMb3dlciB0ZW1wZXJhdHVyZSBkdXJpbmcgZ2VuZXJhdGlvbgptb2RlbC5zZXRfZ2VuZXJhdGlvbl9wYXJhbXModGVtcGVyYXR1cmU9MC43KSAgIyBNb3JlIGNvbnRyb2xsZWQKYGBgCgojIyBIdWdnaW5nRmFjZSBUcmFuc2Zvcm1lcnMgSXNzdWVzCgojIyMgUHJvY2Vzc29yIGVycm9ycwoKKipFcnJvcioqOiBJc3N1ZXMgd2l0aCBNdXNpY2dlblByb2Nlc3NvcgoKKipTb2x1dGlvbnMqKjoKYGBgcHl0aG9uCmZyb20gdHJhbnNmb3JtZXJzIGltcG9ydCBBdXRvUHJvY2Vzc29yLCBNdXNpY2dlbkZvckNvbmRpdGlvbmFsR2VuZXJhdGlvbgoKIyBMb2FkIG1hdGNoaW5nIHByb2Nlc3NvciBhbmQgbW9kZWwKcHJvY2Vzc29yID0gQXV0b1Byb2Nlc3Nvci5mcm9tX3ByZXRyYWluZWQoImZhY2Vib29rL211c2ljZ2VuLXNtYWxsIikKbW9kZWwgPSBNdXNpY2dlbkZvckNvbmRpdGlvbmFsR2VuZXJhdGlvbi5mcm9tX3ByZXRyYWluZWQoImZhY2Vib29rL211c2ljZ2VuLXNtYWxsIikKCiMgRW5zdXJlIGlucHV0cyBhcmUgb24gc2FtZSBkZXZpY2UKaW5wdXRzID0gcHJvY2Vzc29yKAogICAgdGV4dD1bInByb21wdCJdLAogICAgcGFkZGluZz1UcnVlLAogICAgcmV0dXJuX3RlbnNvcnM9InB0IgopLnRvKCJjdWRhIikKCiMgQ2hlY2sgcHJvY2Vzc29yIGNvbmZpZ3VyYXRpb24KcHJpbnQocHJvY2Vzc29yLnRva2VuaXplcikKcHJpbnQocHJvY2Vzc29yLmZlYXR1cmVfZXh0cmFjdG9yKQpgYGAKCiMjIyBHZW5lcmF0aW9uIHBhcmFtZXRlciBlcnJvcnMKCioqRXJyb3IqKjogSW52YWxpZCBnZW5lcmF0aW9uIHBhcmFtZXRlcnMKCioqU29sdXRpb25zKio6CmBgYHB5dGhvbgojIEh1Z2dpbmdGYWNlIHVzZXMgZGlmZmVyZW50IHBhcmFtZXRlciBuYW1lcwphdWRpb192YWx1ZXMgPSBtb2RlbC5nZW5lcmF0ZSgKICAgICoqaW5wdXRzLAogICAgZG9fc2FtcGxlPVRydWUsICAgICAgICAgICAjIEVuYWJsZSBzYW1wbGluZwogICAgZ3VpZGFuY2Vfc2NhbGU9My4wLCAgICAgICAjIENGRyAobm90IGNmZ19jb2VmKQogICAgbWF4X25ld190b2tlbnM9MjU2LCAgICAgICAjIFRva2VuIGxpbWl0IChub3QgZHVyYXRpb24pCiAgICB0ZW1wZXJhdHVyZT0xLjAKKQoKIyBDYWxjdWxhdGUgdG9rZW5zIGZyb20gZHVyYXRpb24KIyB+NTAgdG9rZW5zIHBlciBzZWNvbmQKZHVyYXRpb25fc2Vjb25kcyA9IDEwCm1heF90b2tlbnMgPSBkdXJhdGlvbl9zZWNvbmRzICogNTAKYXVkaW9fdmFsdWVzID0gbW9kZWwuZ2VuZXJhdGUoKippbnB1dHMsIG1heF9uZXdfdG9rZW5zPW1heF90b2tlbnMpCmBgYAoKIyMgUGVyZm9ybWFuY2UgSXNzdWVzCgojIyMgU2xvdyBnZW5lcmF0aW9uCgoqKlByb2JsZW0qKjogR2VuZXJhdGlvbiB0YWtlcyB0b28gbG9uZwoKKipTb2x1dGlvbnMqKjoKYGBgcHl0aG9uCiMgVXNlIHNtYWxsZXIgbW9kZWwKbW9kZWwgPSBNdXNpY0dlbi5nZXRfcHJldHJhaW5lZCgnZmFjZWJvb2svbXVzaWNnZW4tc21hbGwnKQoKIyBSZWR1Y2UgZHVyYXRpb24KbW9kZWwuc2V0X2dlbmVyYXRpb25fcGFyYW1zKGR1cmF0aW9uPTEwKQoKIyBVc2UgR1BVCm1vZGVsLnRvKCJjdWRhIikKCiMgRW5hYmxlIGZsYXNoIGF0dGVudGlvbiBpZiBhdmFpbGFibGUKIyAocmVxdWlyZXMgY29tcGF0aWJsZSBoYXJkd2FyZSkKCiMgQmF0Y2ggbXVsdGlwbGUgcHJvbXB0cwpwcm9tcHRzID0gWyJwcm9tcHQxIiwgInByb21wdDIiLCAicHJvbXB0MyJdCndhdiA9IG1vZGVsLmdlbmVyYXRlKHByb21wdHMpICAjIFNpbmdsZSBiYXRjaCBpcyBmYXN0ZXIgdGhhbiBsb29wCgojIFVzZSBjb21waWxlIChQeVRvcmNoIDIuMCspCm1vZGVsLmxtID0gdG9yY2guY29tcGlsZShtb2RlbC5sbSkKYGBgCgojIyMgQ1BVIGZhbGxiYWNrCgoqKlByb2JsZW0qKjogR2VuZXJhdGlvbiBydW5uaW5nIG9uIENQVSBpbnN0ZWFkIG9mIEdQVQoKKipTb2x1dGlvbnMqKjoKYGBgcHl0aG9uCmltcG9ydCB0b3JjaAoKIyBDaGVjayBDVURBIGF2YWlsYWJpbGl0eQpwcmludChmIkNVREEgYXZhaWxhYmxlOiB7dG9yY2guY3VkYS5pc19hdmFpbGFibGUoKX0iKQpwcmludChmIkNVREEgZGV2aWNlOiB7dG9yY2guY3VkYS5nZXRfZGV2aWNlX25hbWUoMCl9IikKCiMgRXhwbGljaXRseSBtb3ZlIHRvIEdQVQptb2RlbCA9IE11c2ljR2VuLmdldF9wcmV0cmFpbmVkKCdmYWNlYm9vay9tdXNpY2dlbi1zbWFsbCcpCm1vZGVsLnRvKCJjdWRhIikKCiMgVmVyaWZ5IG1vZGVsIGRldmljZQpwcmludChmIk1vZGVsIGRldmljZToge25leHQobW9kZWwubG0ucGFyYW1ldGVycygpKS5kZXZpY2V9IikKYGBgCgojIyBDb21tb24gRXJyb3IgTWVzc2FnZXMKCnwgRXJyb3IgfCBDYXVzZSB8IFNvbHV0aW9uIHwKfC0tLS0tLS18LS0tLS0tLXwtLS0tLS0tLS0tfAp8IGBDVURBIG91dCBvZiBtZW1vcnlgIHwgTW9kZWwgdG9vIGxhcmdlIHwgVXNlIHNtYWxsZXIgbW9kZWwsIHJlZHVjZSBkdXJhdGlvbiB8CnwgYGZmbXBlZyBub3QgZm91bmRgIHwgRkZtcGVnIG5vdCBpbnN0YWxsZWQgfCBJbnN0YWxsIEZGbXBlZyB8CnwgYE5vIG1vZHVsZSBuYW1lZCAnYXVkaW9jcmFmdCdgIHwgTm90IGluc3RhbGxlZCB8IGBwaXAgaW5zdGFsbCBhdWRpb2NyYWZ0YCB8CnwgYFJ1bnRpbWVFcnJvcjogRXhwZWN0ZWQgM0QgdGVuc29yYCB8IFdyb25nIGlucHV0IHNoYXBlIHwgQ2hlY2sgdGVuc29yIGRpbWVuc2lvbnMgfAp8IGBLZXlFcnJvcjogJ21lbG9keSdgIHwgV3JvbmcgbW9kZWwgZm9yIG1lbG9keSB8IFVzZSBtdXNpY2dlbi1tZWxvZHkgfAp8IGBTYW1wbGUgcmF0ZSBtaXNtYXRjaGAgfCBXcm9uZyBhdWRpbyBmb3JtYXQgfCBSZXNhbXBsZSB0byBtb2RlbCByYXRlIHwKCiMjIEdldHRpbmcgSGVscAoKMS4gKipHaXRIdWIgSXNzdWVzKio6IGh0dHBzOi8vZ2l0aHViLmNvbS9mYWNlYm9va3Jlc2VhcmNoL2F1ZGlvY3JhZnQvaXNzdWVzCjIuICoqSHVnZ2luZ0ZhY2UgRm9ydW1zKio6IGh0dHBzOi8vZGlzY3Vzcy5odWdnaW5nZmFjZS5jbwozLiAqKlBhcGVyKio6IGh0dHBzOi8vYXJ4aXYub3JnL2Ficy8yMzA2LjA1Mjg0CgojIyMgUmVwb3J0aW5nIElzc3VlcwoKSW5jbHVkZToKLSBQeXRob24gdmVyc2lvbgotIFB5VG9yY2ggdmVyc2lvbgotIENVREEgdmVyc2lvbgotIEF1ZGlvQ3JhZnQgdmVyc2lvbjogYHBpcCBzaG93IGF1ZGlvY3JhZnRgCi0gRnVsbCBlcnJvciB0cmFjZWJhY2sKLSBNaW5pbWFsIHJlcHJvZHVjaWJsZSBjb2RlCi0gSGFyZHdhcmUgKEdQVSBtb2RlbCwgVlJBTSkK
+# AudioCraft Troubleshooting Guide
+
+## Installation Issues
+
+### Import errors
+
+**Error**: `ModuleNotFoundError: No module named 'audiocraft'`
+
+**Solutions**:
+```bash
+# Install from PyPI
+pip install audiocraft
+
+# Or from GitHub
+pip install git+https://github.com/facebookresearch/audiocraft.git
+
+# Verify installation
+python -c "from audiocraft.models import MusicGen; print('OK')"
+```
+
+### FFmpeg not found
+
+**Error**: `RuntimeError: ffmpeg not found`
+
+**Solutions**:
+```bash
+# Ubuntu/Debian
+sudo apt-get install ffmpeg
+
+# macOS
+brew install ffmpeg
+
+# Windows (using conda)
+conda install -c conda-forge ffmpeg
+
+# Verify
+ffmpeg -version
+```
+
+### PyTorch CUDA mismatch
+
+**Error**: `RuntimeError: CUDA error: no kernel image is available`
+
+**Solutions**:
+```bash
+# Check CUDA version
+nvcc --version
+python -c "import torch; print(torch.version.cuda)"
+
+# Install matching PyTorch
+pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+# For CUDA 11.8
+pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu118
+```
+
+### xformers issues
+
+**Error**: `ImportError: xformers` related errors
+
+**Solutions**:
+```bash
+# Install xformers for memory efficiency
+pip install xformers
+
+# Or disable xformers
+export AUDIOCRAFT_USE_XFORMERS=0
+
+# In Python
+import os
+os.environ["AUDIOCRAFT_USE_XFORMERS"] = "0"
+from audiocraft.models import MusicGen
+```
+
+## Model Loading Issues
+
+### Out of memory during load
+
+**Error**: `torch.cuda.OutOfMemoryError` during model loading
+
+**Solutions**:
+```python
+# Use smaller model
+model = MusicGen.get_pretrained('facebook/musicgen-small')
+
+# Force CPU loading first
+import torch
+device = "cpu"
+model = MusicGen.get_pretrained('facebook/musicgen-small', device=device)
+model = model.to("cuda")
+
+# Use HuggingFace with device_map
+from transformers import MusicgenForConditionalGeneration
+model = MusicgenForConditionalGeneration.from_pretrained(
+    "facebook/musicgen-small",
+    device_map="auto"
+)
+```
+
+### Download failures
+
+**Error**: Connection errors or incomplete downloads
+
+**Solutions**:
+```python
+# Set cache directory
+import os
+os.environ["AUDIOCRAFT_CACHE_DIR"] = "/path/to/cache"
+
+# Or for HuggingFace
+os.environ["HF_HOME"] = "/path/to/hf_cache"
+
+# Resume download
+from huggingface_hub import snapshot_download
+snapshot_download("facebook/musicgen-small", resume_download=True)
+
+# Use local files
+model = MusicGen.get_pretrained('/local/path/to/model')
+```
+
+### Wrong model type
+
+**Error**: Loading wrong model for task
+
+**Solutions**:
+```python
+# For text-to-music: use MusicGen
+from audiocraft.models import MusicGen
+model = MusicGen.get_pretrained('facebook/musicgen-medium')
+
+# For text-to-sound: use AudioGen
+from audiocraft.models import AudioGen
+model = AudioGen.get_pretrained('facebook/audiogen-medium')
+
+# For melody conditioning: use melody variant
+model = MusicGen.get_pretrained('facebook/musicgen-melody')
+
+# For stereo: use stereo variant
+model = MusicGen.get_pretrained('facebook/musicgen-stereo-medium')
+```
+
+## Generation Issues
+
+### Empty or silent output
+
+**Problem**: Generated audio is silent or very quiet
+
+**Solutions**:
+```python
+import torch
+
+# Check output
+wav = model.generate(["upbeat music"])
+print(f"Shape: {wav.shape}")
+print(f"Max amplitude: {wav.abs().max().item()}")
+print(f"Mean amplitude: {wav.abs().mean().item()}")
+
+# If too quiet, normalize
+def normalize_audio(audio, target_db=-14.0):
+    rms = torch.sqrt(torch.mean(audio ** 2))
+    target_rms = 10 ** (target_db / 20)
+    gain = target_rms / (rms + 1e-8)
+    return audio * gain
+
+wav_normalized = normalize_audio(wav)
+```
+
+### Poor quality output
+
+**Problem**: Generated music sounds bad or noisy
+
+**Solutions**:
+```python
+# Use larger model
+model = MusicGen.get_pretrained('facebook/musicgen-large')
+
+# Adjust generation parameters
+model.set_generation_params(
+    duration=15,
+    top_k=250,          # Increase for more diversity
+    temperature=0.8,    # Lower for more focused output
+    cfg_coef=4.0        # Increase for better text adherence
+)
+
+# Use better prompts
+# Bad: "music"
+# Good: "upbeat electronic dance music with synthesizers and punchy drums"
+
+# Try MultiBand Diffusion
+from audiocraft.models import MultiBandDiffusion
+mbd = MultiBandDiffusion.get_mbd_musicgen()
+tokens = model.generate_tokens(["prompt"])
+wav = mbd.tokens_to_wav(tokens)
+```
+
+### Generation too short
+
+**Problem**: Audio shorter than expected
+
+**Solutions**:
+```python
+# Check duration setting
+model.set_generation_params(duration=30)  # Set before generate
+
+# Verify in generation
+print(f"Duration setting: {model.generation_params}")
+
+# Check output shape
+wav = model.generate(["prompt"])
+actual_duration = wav.shape[-1] / 32000
+print(f"Actual duration: {actual_duration}s")
+
+# Note: max duration is typically 30s
+```
+
+### Melody conditioning fails
+
+**Error**: Issues with melody-conditioned generation
+
+**Solutions**:
+```python
+import torchaudio
+from audiocraft.models import MusicGen
+
+# Load melody model (not base model)
+model = MusicGen.get_pretrained('facebook/musicgen-melody')
+
+# Load and prepare melody
+melody, sr = torchaudio.load("melody.wav")
+
+# Resample to model sample rate if needed
+if sr != 32000:
+    resampler = torchaudio.transforms.Resample(sr, 32000)
+    melody = resampler(melody)
+
+# Ensure correct shape [batch, channels, samples]
+if melody.dim() == 1:
+    melody = melody.unsqueeze(0).unsqueeze(0)
+elif melody.dim() == 2:
+    melody = melody.unsqueeze(0)
+
+# Convert stereo to mono
+if melody.shape[1] > 1:
+    melody = melody.mean(dim=1, keepdim=True)
+
+# Generate with melody
+model.set_generation_params(duration=min(melody.shape[-1] / 32000, 30))
+wav = model.generate_with_chroma(["piano cover"], melody, 32000)
+```
+
+## Memory Issues
+
+### CUDA out of memory
+
+**Error**: `torch.cuda.OutOfMemoryError: CUDA out of memory`
+
+**Solutions**:
+```python
+import torch
+
+# Clear cache before generation
+torch.cuda.empty_cache()
+
+# Use smaller model
+model = MusicGen.get_pretrained('facebook/musicgen-small')
+
+# Reduce duration
+model.set_generation_params(duration=10)  # Instead of 30
+
+# Generate one at a time
+for prompt in prompts:
+    wav = model.generate([prompt])
+    save_audio(wav)
+    torch.cuda.empty_cache()
+
+# Use CPU for very large generations
+model = MusicGen.get_pretrained('facebook/musicgen-small', device="cpu")
+```
+
+### Memory leak during batch processing
+
+**Problem**: Memory grows over time
+
+**Solutions**:
+```python
+import gc
+import torch
+
+def generate_with_cleanup(model, prompts):
+    results = []
+
+    for prompt in prompts:
+        with torch.no_grad():
+            wav = model.generate([prompt])
+            results.append(wav.cpu())
+
+        # Cleanup
+        del wav
+        gc.collect()
+        torch.cuda.empty_cache()
+
+    return results
+
+# Use context manager
+with torch.inference_mode():
+    wav = model.generate(["prompt"])
+```
+
+## Audio Format Issues
+
+### Wrong sample rate
+
+**Problem**: Audio plays at wrong speed
+
+**Solutions**:
+```python
+import torchaudio
+
+# MusicGen outputs at 32kHz
+sample_rate = 32000
+
+# AudioGen outputs at 16kHz
+sample_rate = 16000
+
+# Always use correct rate when saving
+torchaudio.save("output.wav", wav[0].cpu(), sample_rate=sample_rate)
+
+# Resample if needed
+resampler = torchaudio.transforms.Resample(32000, 44100)
+wav_resampled = resampler(wav)
+```
+
+### Stereo/mono mismatch
+
+**Problem**: Wrong number of channels
+
+**Solutions**:
+```python
+# Check model type
+print(f"Audio channels: {wav.shape}")
+# Mono: [batch, 1, samples]
+# Stereo: [batch, 2, samples]
+
+# Convert mono to stereo
+if wav.shape[1] == 1:
+    wav_stereo = wav.repeat(1, 2, 1)
+
+# Convert stereo to mono
+if wav.shape[1] == 2:
+    wav_mono = wav.mean(dim=1, keepdim=True)
+
+# Use stereo model for stereo output
+model = MusicGen.get_pretrained('facebook/musicgen-stereo-medium')
+```
+
+### Clipping and distortion
+
+**Problem**: Audio has clipping or distortion
+
+**Solutions**:
+```python
+import torch
+
+# Check for clipping
+max_val = wav.abs().max().item()
+print(f"Max amplitude: {max_val}")
+
+# Normalize to prevent clipping
+if max_val > 1.0:
+    wav = wav / max_val
+
+# Apply soft clipping
+def soft_clip(x, threshold=0.9):
+    return torch.tanh(x / threshold) * threshold
+
+wav_clipped = soft_clip(wav)
+
+# Lower temperature during generation
+model.set_generation_params(temperature=0.7)  # More controlled
+```
+
+## HuggingFace Transformers Issues
+
+### Processor errors
+
+**Error**: Issues with MusicgenProcessor
+
+**Solutions**:
+```python
+from transformers import AutoProcessor, MusicgenForConditionalGeneration
+
+# Load matching processor and model
+processor = AutoProcessor.from_pretrained("facebook/musicgen-small")
+model = MusicgenForConditionalGeneration.from_pretrained("facebook/musicgen-small")
+
+# Ensure inputs are on same device
+inputs = processor(
+    text=["prompt"],
+    padding=True,
+    return_tensors="pt"
+).to("cuda")
+
+# Check processor configuration
+print(processor.tokenizer)
+print(processor.feature_extractor)
+```
+
+### Generation parameter errors
+
+**Error**: Invalid generation parameters
+
+**Solutions**:
+```python
+# HuggingFace uses different parameter names
+audio_values = model.generate(
+    **inputs,
+    do_sample=True,           # Enable sampling
+    guidance_scale=3.0,       # CFG (not cfg_coef)
+    max_new_tokens=256,       # Token limit (not duration)
+    temperature=1.0
+)
+
+# Calculate tokens from duration
+# ~50 tokens per second
+duration_seconds = 10
+max_tokens = duration_seconds * 50
+audio_values = model.generate(**inputs, max_new_tokens=max_tokens)
+```
+
+## Performance Issues
+
+### Slow generation
+
+**Problem**: Generation takes too long
+
+**Solutions**:
+```python
+# Use smaller model
+model = MusicGen.get_pretrained('facebook/musicgen-small')
+
+# Reduce duration
+model.set_generation_params(duration=10)
+
+# Use GPU
+model.to("cuda")
+
+# Enable flash attention if available
+# (requires compatible hardware)
+
+# Batch multiple prompts
+prompts = ["prompt1", "prompt2", "prompt3"]
+wav = model.generate(prompts)  # Single batch is faster than loop
+
+# Use compile (PyTorch 2.0+)
+model.lm = torch.compile(model.lm)
+```
+
+### CPU fallback
+
+**Problem**: Generation running on CPU instead of GPU
+
+**Solutions**:
+```python
+import torch
+
+# Check CUDA availability
+print(f"CUDA available: {torch.cuda.is_available()}")
+print(f"CUDA device: {torch.cuda.get_device_name(0)}")
+
+# Explicitly move to GPU
+model = MusicGen.get_pretrained('facebook/musicgen-small')
+model.to("cuda")
+
+# Verify model device
+print(f"Model device: {next(model.lm.parameters()).device}")
+```
+
+## Common Error Messages
+
+| Error | Cause | Solution |
+|-------|-------|----------|
+| `CUDA out of memory` | Model too large | Use smaller model, reduce duration |
+| `ffmpeg not found` | FFmpeg not installed | Install FFmpeg |
+| `No module named 'audiocraft'` | Not installed | `pip install audiocraft` |
+| `RuntimeError: Expected 3D tensor` | Wrong input shape | Check tensor dimensions |
+| `KeyError: 'melody'` | Wrong model for melody | Use musicgen-melody |
+| `Sample rate mismatch` | Wrong audio format | Resample to model rate |
+
+## Getting Help
+
+1. **GitHub Issues**: https://github.com/facebookresearch/audiocraft/issues
+2. **HuggingFace Forums**: https://discuss.huggingface.co
+3. **Paper**: https://arxiv.org/abs/2306.05284
+
+### Reporting Issues
+
+Include:
+- Python version
+- PyTorch version
+- CUDA version
+- AudioCraft version: `pip show audiocraft`
+- Full error traceback
+- Minimal reproducible code
+- Hardware (GPU model, VRAM)

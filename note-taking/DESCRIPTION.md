@@ -1,1 +1,3 @@
-LS0tCmRlc2NyaXB0aW9uOiBOb3RlIHRha2luZyBza2lsbHMsIHRvIHNhdmUgaW5mb3JtYXRpb24sIGFzc2lzdCB3aXRoIHJlc2VhcmNoLCBhbmQgY29sbGFiIG9uIG11bHRpLXNlc3Npb24gcGxhbm5pbmcgYW5kIGluZm9ybWF0aW9uIHNoYXJpbmcuCi0tLQo=
+---
+description: Note taking skills, to save information, assist with research, and collab on multi-session planning and information sharing.
+---

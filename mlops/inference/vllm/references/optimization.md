@@ -1,1 +1,226 @@
-IyBQZXJmb3JtYW5jZSBPcHRpbWl6YXRpb24KCiMjIENvbnRlbnRzCi0gUGFnZWRBdHRlbnRpb24gZXhwbGFpbmVkCi0gQ29udGludW91cyBiYXRjaGluZyBtZWNoYW5pY3MKLSBQcmVmaXggY2FjaGluZyBzdHJhdGVnaWVzCi0gU3BlY3VsYXRpdmUgZGVjb2Rpbmcgc2V0dXAKLSBCZW5jaG1hcmsgcmVzdWx0cyBhbmQgY29tcGFyaXNvbnMKLSBQZXJmb3JtYW5jZSB0dW5pbmcgZ3VpZGUKCiMjIFBhZ2VkQXR0ZW50aW9uIGV4cGxhaW5lZAoKKipUcmFkaXRpb25hbCBhdHRlbnRpb24gcHJvYmxlbSoqOgotIEtWIGNhY2hlIHN0b3JlZCBpbiBjb250aWd1b3VzIG1lbW9yeQotIFdhc3RlcyB+NTAlIEdQVSBtZW1vcnkgZHVlIHRvIGZyYWdtZW50YXRpb24KLSBDYW5ub3QgZHluYW1pY2FsbHkgcmVhbGxvY2F0ZSBmb3IgdmFyeWluZyBzZXF1ZW5jZSBsZW5ndGhzCgoqKlBhZ2VkQXR0ZW50aW9uIHNvbHV0aW9uKio6Ci0gRGl2aWRlcyBLViBjYWNoZSBpbnRvIGZpeGVkLXNpemUgYmxvY2tzIChsaWtlIE9TIHZpcnR1YWwgbWVtb3J5KQotIER5bmFtaWMgYWxsb2NhdGlvbiBmcm9tIGZyZWUgYmxvY2sgcXVldWUKLSBTaGFyZXMgYmxvY2tzIGFjcm9zcyBzZXF1ZW5jZXMgKGZvciBwcmVmaXggY2FjaGluZykKCioqTWVtb3J5IHNhdmluZ3MgZXhhbXBsZSoqOgpgYGAKVHJhZGl0aW9uYWw6IDcwQiBtb2RlbCBuZWVkcyAxNjBHQiBLViBjYWNoZSDihpIgT09NIG9uIDh4IEExMDAKUGFnZWRBdHRlbnRpb246IDcwQiBtb2RlbCBuZWVkcyA4MEdCIEtWIGNhY2hlIOKGkiBGaXRzIG9uIDR4IEExMDAKYGBgCgoqKkNvbmZpZ3VyYXRpb24qKjoKYGBgYmFzaAojIEJsb2NrIHNpemUgKGRlZmF1bHQ6IDE2IHRva2VucykKdmxsbSBzZXJ2ZSBNT0RFTCAtLWJsb2NrLXNpemUgMTYKCiMgTnVtYmVyIG9mIEdQVSBibG9ja3MgKGF1dG8tY2FsY3VsYXRlZCkKIyBDb250cm9sbGVkIGJ5IC0tZ3B1LW1lbW9yeS11dGlsaXphdGlvbgp2bGxtIHNlcnZlIE1PREVMIC0tZ3B1LW1lbW9yeS11dGlsaXphdGlvbiAwLjkKYGBgCgojIyBDb250aW51b3VzIGJhdGNoaW5nIG1lY2hhbmljcwoKKipUcmFkaXRpb25hbCBiYXRjaGluZyoqOgotIFdhaXQgZm9yIGFsbCBzZXF1ZW5jZXMgaW4gYmF0Y2ggdG8gZmluaXNoCi0gR1BVIGlkbGUgd2hpbGUgd2FpdGluZyBmb3IgbG9uZ2VzdCBzZXF1ZW5jZQotIExvdyBHUFUgdXRpbGl6YXRpb24gKH40MC02MCUpCgoqKkNvbnRpbnVvdXMgYmF0Y2hpbmcqKjoKLSBBZGQgbmV3IHJlcXVlc3RzIGFzIHNsb3RzIGJlY29tZSBhdmFpbGFibGUKLSBNaXggcHJlZmlsbCAobmV3IHJlcXVlc3RzKSBhbmQgZGVjb2RlIChvbmdvaW5nKSBpbiBzYW1lIGJhdGNoCi0gSGlnaCBHUFUgdXRpbGl6YXRpb24gKD45MCUpCgoqKlRocm91Z2hwdXQgaW1wcm92ZW1lbnQqKjoKYGBgClRyYWRpdGlvbmFsIGJhdGNoaW5nOiA1MCByZXEvc2VjIEAgNTAlIEdQVSB1dGlsCkNvbnRpbnVvdXMgYmF0Y2hpbmc6IDIwMCByZXEvc2VjIEAgOTAlIEdQVSB1dGlsCj0gNHggdGhyb3VnaHB1dCBpbXByb3ZlbWVudApgYGAKCioqVHVuaW5nIHBhcmFtZXRlcnMqKjoKYGBgYmFzaAojIE1heCBjb25jdXJyZW50IHNlcXVlbmNlcyAoaGlnaGVyID0gbW9yZSBiYXRjaGluZykKdmxsbSBzZXJ2ZSBNT0RFTCAtLW1heC1udW0tc2VxcyAyNTYKCiMgUHJlZmlsbC9kZWNvZGUgc2NoZWR1bGUgKGF1dG8tYmFsYW5jZWQgYnkgZGVmYXVsdCkKIyBObyBtYW51YWwgdHVuaW5nIG5lZWRlZApgYGAKCiMjIFByZWZpeCBjYWNoaW5nIHN0cmF0ZWdpZXMKClJldXNlIGNvbXB1dGVkIEtWIGNhY2hlIGZvciBjb21tb24gcHJvbXB0IHByZWZpeGVzLgoKKipVc2UgY2FzZXMqKjoKLSBTeXN0ZW0gcHJvbXB0cyByZXBlYXRlZCBhY3Jvc3MgcmVxdWVzdHMKLSBGZXctc2hvdCBleGFtcGxlcyBpbiBldmVyeSBwcm9tcHQKLSBSQUcgY29udGV4dHMgd2l0aCBvdmVybGFwcGluZyBjaHVua3MKCioqRXhhbXBsZSBzYXZpbmdzKio6CmBgYApQcm9tcHQ6IFtTeXN0ZW06IDUwMCB0b2tlbnNdICsgW1VzZXI6IDEwMCB0b2tlbnNdCgpXaXRob3V0IGNhY2hpbmc6IENvbXB1dGUgNjAwIHRva2VucyBldmVyeSByZXF1ZXN0CldpdGggY2FjaGluZzogQ29tcHV0ZSA1MDAgdG9rZW5zIG9uY2UsIHRoZW4gMTAwIHRva2Vucy9yZXF1ZXN0Cj0gODMlIGZhc3RlciBUVEZUCmBgYAoKKipFbmFibGUgcHJlZml4IGNhY2hpbmcqKjoKYGBgYmFzaAp2bGxtIHNlcnZlIE1PREVMIC0tZW5hYmxlLXByZWZpeC1jYWNoaW5nCmBgYAoKKipBdXRvbWF0aWMgcHJlZml4IGRldGVjdGlvbioqOgotIHZMTE0gZGV0ZWN0cyBjb21tb24gcHJlZml4ZXMgYXV0b21hdGljYWxseQotIE5vIGNvZGUgY2hhbmdlcyByZXF1aXJlZAotIFdvcmtzIHdpdGggT3BlbkFJLWNvbXBhdGlibGUgQVBJCgoqKkNhY2hlIGhpdCByYXRlIG1vbml0b3JpbmcqKjoKYGBgYmFzaApjdXJsIGh0dHA6Ly9sb2NhbGhvc3Q6OTA5MC9tZXRyaWNzIHwgZ3JlcCBjYWNoZV9oaXQKIyB2bGxtX2NhY2hlX2hpdF9yYXRlOiAwLjc1ICAoNzUlIGhpdCByYXRlKQpgYGAKCiMjIFNwZWN1bGF0aXZlIGRlY29kaW5nIHNldHVwCgpVc2Ugc21hbGxlciAiZHJhZnQiIG1vZGVsIHRvIHByb3Bvc2UgdG9rZW5zLCBsYXJnZXIgbW9kZWwgdG8gdmVyaWZ5LgoKKipTcGVlZCBpbXByb3ZlbWVudCoqOgpgYGAKU3RhbmRhcmQ6IEdlbmVyYXRlIDEgdG9rZW4gcGVyIGZvcndhcmQgcGFzcwpTcGVjdWxhdGl2ZTogR2VuZXJhdGUgMy01IHRva2VucyBwZXIgZm9yd2FyZCBwYXNzCj0gMi0zeCBmYXN0ZXIgZ2VuZXJhdGlvbgpgYGAKCioqSG93IGl0IHdvcmtzKio6CjEuIERyYWZ0IG1vZGVsIHByb3Bvc2VzIEsgdG9rZW5zIChmYXN0KQoyLiBUYXJnZXQgbW9kZWwgdmVyaWZpZXMgYWxsIEsgdG9rZW5zIGluIHBhcmFsbGVsIChvbmUgcGFzcykKMy4gQWNjZXB0IHZlcmlmaWVkIHRva2VucywgcmVzdGFydCBmcm9tIGZpcnN0IHJlamVjdGlvbgoKKipTZXR1cCB3aXRoIHNlcGFyYXRlIGRyYWZ0IG1vZGVsKio6CmBgYGJhc2gKdmxsbSBzZXJ2ZSBtZXRhLWxsYW1hL0xsYW1hLTMtNzBCLUluc3RydWN0IFwKICAtLXNwZWN1bGF0aXZlLW1vZGVsIFRpbnlMbGFtYS9UaW55TGxhbWEtMS4xQi1DaGF0LXYxLjAgXAogIC0tbnVtLXNwZWN1bGF0aXZlLXRva2VucyA1CmBgYAoKKipTZXR1cCB3aXRoIG4tZ3JhbSBkcmFmdCoqIChubyBzZXBhcmF0ZSBtb2RlbCk6CmBgYGJhc2gKdmxsbSBzZXJ2ZSBNT0RFTCBcCiAgLS1zcGVjdWxhdGl2ZS1tZXRob2QgbmdyYW0gXAogIC0tbnVtLXNwZWN1bGF0aXZlLXRva2VucyAzCmBgYAoKKipXaGVuIHRvIHVzZSoqOgotIE91dHB1dCBsZW5ndGggPiAxMDAgdG9rZW5zCi0gRHJhZnQgbW9kZWwgNS0xMHggc21hbGxlciB0aGFuIHRhcmdldAotIEFjY2VwdGFibGUgMi0zJSBhY2N1cmFjeSB0cmFkZS1vZmYKCiMjIEJlbmNobWFyayByZXN1bHRzCgoqKnZMTE0gdnMgSHVnZ2luZ0ZhY2UgVHJhbnNmb3JtZXJzKiogKExsYW1hIDMgOEIsIEExMDApOgpgYGAKTWV0cmljICAgICAgICAgICAgICAgICAgfCBIRiBUcmFuc2Zvcm1lcnMgfCB2TExNICAgfCBJbXByb3ZlbWVudAotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tLS18LS0tLS0tLS18LS0tLS0tLS0tLS0tClRocm91Z2hwdXQgKHJlcS9zZWMpICAgIHwgMTIgICAgICAgICAgICAgIHwgMjgwICAgIHwgMjN4ClRURlQgKG1zKSAgICAgICAgICAgICAgfCA4NTAgICAgICAgICAgICAgfCAxMjAgICAgfCA3eApUb2tlbnMvc2VjICAgICAgICAgICAgIHwgNDUgICAgICAgICAgICAgIHwgMiwxMDAgIHwgNDd4CkdQVSBNZW1vcnkgKEdCKSAgICAgICAgfCAyOCAgICAgICAgICAgICAgfCAxNiAgICAgfCAxLjc1eCBsZXNzCmBgYAoKKip2TExNIHZzIFRlbnNvclJULUxMTSoqIChMbGFtYSAyIDcwQiwgNHggQTEwMCk6CmBgYApNZXRyaWMgICAgICAgICAgICAgICAgICB8IFRlbnNvclJULUxMTSB8IHZMTE0gICB8IE5vdGVzCi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tLXwtLS0tLS0tLXwtLS0tLS0tLS0tLS0tLS0tLS0KVGhyb3VnaHB1dCAocmVxL3NlYykgICAgfCAzMjAgICAgICAgICAgfCAyODUgICAgfCBUUlQgMTIlIGZhc3RlcgpTZXR1cCBjb21wbGV4aXR5ICAgICAgICB8IEhpZ2ggICAgICAgICB8IExvdyAgICB8IHZMTE0gbXVjaCBlYXNpZXIKTlZJRElBLW9ubHkgICAgICAgICAgICB8IFllcyAgICAgICAgICB8IE5vICAgICB8IHZMTE0gbXVsdGktcGxhdGZvcm0KUXVhbnRpemF0aW9uIHN1cHBvcnQgICAgfCBGUDgsIElOVDggICAgfCBBV1EvR1BUUS9GUDggfCB2TExNIG1vcmUgb3B0aW9ucwpgYGAKCiMjIFBlcmZvcm1hbmNlIHR1bmluZyBndWlkZQoKKipTdGVwIDE6IE1lYXN1cmUgYmFzZWxpbmUqKgoKYGBgYmFzaAojIEluc3RhbGwgYmVuY2htYXJraW5nIHRvb2wKcGlwIGluc3RhbGwgbG9jdXN0CgojIFJ1biBiYXNlbGluZSBiZW5jaG1hcmsKdmxsbSBiZW5jaCB0aHJvdWdocHV0IFwKICAtLW1vZGVsIE1PREVMIFwKICAtLWlucHV0LXRva2VucyAxMjggXAogIC0tb3V0cHV0LXRva2VucyAyNTYgXAogIC0tbnVtLXByb21wdHMgMTAwMAoKIyBSZWNvcmQ6IHRocm91Z2hwdXQsIFRURlQsIHRva2Vucy9zZWMKYGBgCgoqKlN0ZXAgMjogVHVuZSBtZW1vcnkgdXRpbGl6YXRpb24qKgoKYGBgYmFzaAojIFRyeSBkaWZmZXJlbnQgdmFsdWVzOiAwLjcsIDAuODUsIDAuOSwgMC45NQp2bGxtIHNlcnZlIE1PREVMIC0tZ3B1LW1lbW9yeS11dGlsaXphdGlvbiAwLjkKYGBgCgpIaWdoZXIgPSBtb3JlIGJhdGNoIGNhcGFjaXR5ID0gaGlnaGVyIHRocm91Z2hwdXQsIGJ1dCByaXNrIE9PTS4KCioqU3RlcCAzOiBUdW5lIGNvbmN1cnJlbmN5KioKCmBgYGJhc2gKIyBUcnkgdmFsdWVzOiAxMjgsIDI1NiwgNTEyLCAxMDI0CnZsbG0gc2VydmUgTU9ERUwgLS1tYXgtbnVtLXNlcXMgMjU2CmBgYAoKSGlnaGVyID0gbW9yZSBiYXRjaGluZyBvcHBvcnR1bml0eSwgYnV0IG1heSBpbmNyZWFzZSBsYXRlbmN5LgoKKipTdGVwIDQ6IEVuYWJsZSBvcHRpbWl6YXRpb25zKioKCmBgYGJhc2gKdmxsbSBzZXJ2ZSBNT0RFTCBcCiAgLS1lbmFibGUtcHJlZml4LWNhY2hpbmcgXCAgICAgIyBGb3IgcmVwZWF0ZWQgcHJvbXB0cwogIC0tZW5hYmxlLWNodW5rZWQtcHJlZmlsbCBcICAgICMgRm9yIGxvbmcgcHJvbXB0cwogIC0tZ3B1LW1lbW9yeS11dGlsaXphdGlvbiAwLjkgXAogIC0tbWF4LW51bS1zZXFzIDUxMgpgYGAKCioqU3RlcCA1OiBSZS1iZW5jaG1hcmsgYW5kIGNvbXBhcmUqKgoKVGFyZ2V0IGltcHJvdmVtZW50czoKLSBUaHJvdWdocHV0OiArMzAtMTAwJQotIFRURlQ6IC0yMC01MCUKLSBHUFUgdXRpbGl6YXRpb246ID44NSUKCioqQ29tbW9uIHBlcmZvcm1hbmNlIGlzc3VlcyoqOgoKKipMb3cgdGhyb3VnaHB1dCAoPDUwIHJlcS9zZWMpKio6Ci0gSW5jcmVhc2UgYC0tbWF4LW51bS1zZXFzYAotIEVuYWJsZSBgLS1lbmFibGUtcHJlZml4LWNhY2hpbmdgCi0gQ2hlY2sgR1BVIHV0aWxpemF0aW9uIChzaG91bGQgYmUgPjgwJSkKCioqSGlnaCBUVEZUICg+MSBzZWNvbmQpKio6Ci0gRW5hYmxlIGAtLWVuYWJsZS1jaHVua2VkLXByZWZpbGxgCi0gUmVkdWNlIGAtLW1heC1tb2RlbC1sZW5gIGlmIHBvc3NpYmxlCi0gQ2hlY2sgaWYgbW9kZWwgaXMgdG9vIGxhcmdlIGZvciBHUFUKCioqT09NIGVycm9ycyoqOgotIFJlZHVjZSBgLS1ncHUtbWVtb3J5LXV0aWxpemF0aW9uYCB0byAwLjcKLSBSZWR1Y2UgYC0tbWF4LW1vZGVsLWxlbmAKLSBVc2UgcXVhbnRpemF0aW9uIChgLS1xdWFudGl6YXRpb24gYXdxYCkK
+# Performance Optimization
+
+## Contents
+- PagedAttention explained
+- Continuous batching mechanics
+- Prefix caching strategies
+- Speculative decoding setup
+- Benchmark results and comparisons
+- Performance tuning guide
+
+## PagedAttention explained
+
+**Traditional attention problem**:
+- KV cache stored in contiguous memory
+- Wastes ~50% GPU memory due to fragmentation
+- Cannot dynamically reallocate for varying sequence lengths
+
+**PagedAttention solution**:
+- Divides KV cache into fixed-size blocks (like OS virtual memory)
+- Dynamic allocation from free block queue
+- Shares blocks across sequences (for prefix caching)
+
+**Memory savings example**:
+```
+Traditional: 70B model needs 160GB KV cache → OOM on 8x A100
+PagedAttention: 70B model needs 80GB KV cache → Fits on 4x A100
+```
+
+**Configuration**:
+```bash
+# Block size (default: 16 tokens)
+vllm serve MODEL --block-size 16
+
+# Number of GPU blocks (auto-calculated)
+# Controlled by --gpu-memory-utilization
+vllm serve MODEL --gpu-memory-utilization 0.9
+```
+
+## Continuous batching mechanics
+
+**Traditional batching**:
+- Wait for all sequences in batch to finish
+- GPU idle while waiting for longest sequence
+- Low GPU utilization (~40-60%)
+
+**Continuous batching**:
+- Add new requests as slots become available
+- Mix prefill (new requests) and decode (ongoing) in same batch
+- High GPU utilization (>90%)
+
+**Throughput improvement**:
+```
+Traditional batching: 50 req/sec @ 50% GPU util
+Continuous batching: 200 req/sec @ 90% GPU util
+= 4x throughput improvement
+```
+
+**Tuning parameters**:
+```bash
+# Max concurrent sequences (higher = more batching)
+vllm serve MODEL --max-num-seqs 256
+
+# Prefill/decode schedule (auto-balanced by default)
+# No manual tuning needed
+```
+
+## Prefix caching strategies
+
+Reuse computed KV cache for common prompt prefixes.
+
+**Use cases**:
+- System prompts repeated across requests
+- Few-shot examples in every prompt
+- RAG contexts with overlapping chunks
+
+**Example savings**:
+```
+Prompt: [System: 500 tokens] + [User: 100 tokens]
+
+Without caching: Compute 600 tokens every request
+With caching: Compute 500 tokens once, then 100 tokens/request
+= 83% faster TTFT
+```
+
+**Enable prefix caching**:
+```bash
+vllm serve MODEL --enable-prefix-caching
+```
+
+**Automatic prefix detection**:
+- vLLM detects common prefixes automatically
+- No code changes required
+- Works with OpenAI-compatible API
+
+**Cache hit rate monitoring**:
+```bash
+curl http://localhost:9090/metrics | grep cache_hit
+# vllm_cache_hit_rate: 0.75  (75% hit rate)
+```
+
+## Speculative decoding setup
+
+Use smaller "draft" model to propose tokens, larger model to verify.
+
+**Speed improvement**:
+```
+Standard: Generate 1 token per forward pass
+Speculative: Generate 3-5 tokens per forward pass
+= 2-3x faster generation
+```
+
+**How it works**:
+1. Draft model proposes K tokens (fast)
+2. Target model verifies all K tokens in parallel (one pass)
+3. Accept verified tokens, restart from first rejection
+
+**Setup with separate draft model**:
+```bash
+vllm serve meta-llama/Llama-3-70B-Instruct \
+  --speculative-model TinyLlama/TinyLlama-1.1B-Chat-v1.0 \
+  --num-speculative-tokens 5
+```
+
+**Setup with n-gram draft** (no separate model):
+```bash
+vllm serve MODEL \
+  --speculative-method ngram \
+  --num-speculative-tokens 3
+```
+
+**When to use**:
+- Output length > 100 tokens
+- Draft model 5-10x smaller than target
+- Acceptable 2-3% accuracy trade-off
+
+## Benchmark results
+
+**vLLM vs HuggingFace Transformers** (Llama 3 8B, A100):
+```
+Metric                  | HF Transformers | vLLM   | Improvement
+------------------------|-----------------|--------|------------
+Throughput (req/sec)    | 12              | 280    | 23x
+TTFT (ms)              | 850             | 120    | 7x
+Tokens/sec             | 45              | 2,100  | 47x
+GPU Memory (GB)        | 28              | 16     | 1.75x less
+```
+
+**vLLM vs TensorRT-LLM** (Llama 2 70B, 4x A100):
+```
+Metric                  | TensorRT-LLM | vLLM   | Notes
+------------------------|--------------|--------|------------------
+Throughput (req/sec)    | 320          | 285    | TRT 12% faster
+Setup complexity        | High         | Low    | vLLM much easier
+NVIDIA-only            | Yes          | No     | vLLM multi-platform
+Quantization support    | FP8, INT8    | AWQ/GPTQ/FP8 | vLLM more options
+```
+
+## Performance tuning guide
+
+**Step 1: Measure baseline**
+
+```bash
+# Install benchmarking tool
+pip install locust
+
+# Run baseline benchmark
+vllm bench throughput \
+  --model MODEL \
+  --input-tokens 128 \
+  --output-tokens 256 \
+  --num-prompts 1000
+
+# Record: throughput, TTFT, tokens/sec
+```
+
+**Step 2: Tune memory utilization**
+
+```bash
+# Try different values: 0.7, 0.85, 0.9, 0.95
+vllm serve MODEL --gpu-memory-utilization 0.9
+```
+
+Higher = more batch capacity = higher throughput, but risk OOM.
+
+**Step 3: Tune concurrency**
+
+```bash
+# Try values: 128, 256, 512, 1024
+vllm serve MODEL --max-num-seqs 256
+```
+
+Higher = more batching opportunity, but may increase latency.
+
+**Step 4: Enable optimizations**
+
+```bash
+vllm serve MODEL \
+  --enable-prefix-caching \     # For repeated prompts
+  --enable-chunked-prefill \    # For long prompts
+  --gpu-memory-utilization 0.9 \
+  --max-num-seqs 512
+```
+
+**Step 5: Re-benchmark and compare**
+
+Target improvements:
+- Throughput: +30-100%
+- TTFT: -20-50%
+- GPU utilization: >85%
+
+**Common performance issues**:
+
+**Low throughput (<50 req/sec)**:
+- Increase `--max-num-seqs`
+- Enable `--enable-prefix-caching`
+- Check GPU utilization (should be >80%)
+
+**High TTFT (>1 second)**:
+- Enable `--enable-chunked-prefill`
+- Reduce `--max-model-len` if possible
+- Check if model is too large for GPU
+
+**OOM errors**:
+- Reduce `--gpu-memory-utilization` to 0.7
+- Reduce `--max-model-len`
+- Use quantization (`--quantization awq`)

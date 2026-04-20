@@ -1,1 +1,256 @@
-LS0tCm5hbWU6IGNsaXAKZGVzY3JpcHRpb246IE9wZW5BSSdzIG1vZGVsIGNvbm5lY3RpbmcgdmlzaW9uIGFuZCBsYW5ndWFnZS4gRW5hYmxlcyB6ZXJvLXNob3QgaW1hZ2UgY2xhc3NpZmljYXRpb24sIGltYWdlLXRleHQgbWF0Y2hpbmcsIGFuZCBjcm9zcy1tb2RhbCByZXRyaWV2YWwuIFRyYWluZWQgb24gNDAwTSBpbWFnZS10ZXh0IHBhaXJzLiBVc2UgZm9yIGltYWdlIHNlYXJjaCwgY29udGVudCBtb2RlcmF0aW9uLCBvciB2aXNpb24tbGFuZ3VhZ2UgdGFza3Mgd2l0aG91dCBmaW5lLXR1bmluZy4gQmVzdCBmb3IgZ2VuZXJhbC1wdXJwb3NlIGltYWdlIHVuZGVyc3RhbmRpbmcuCnZlcnNpb246IDEuMC4wCmF1dGhvcjogT3JjaGVzdHJhIFJlc2VhcmNoCmxpY2Vuc2U6IE1JVApkZXBlbmRlbmNpZXM6IFt0cmFuc2Zvcm1lcnMsIHRvcmNoLCBwaWxsb3ddCm1ldGFkYXRhOgogIGhlcm1lczoKICAgIHRhZ3M6IFtNdWx0aW1vZGFsLCBDTElQLCBWaXNpb24tTGFuZ3VhZ2UsIFplcm8tU2hvdCwgSW1hZ2UgQ2xhc3NpZmljYXRpb24sIE9wZW5BSSwgSW1hZ2UgU2VhcmNoLCBDcm9zcy1Nb2RhbCBSZXRyaWV2YWwsIENvbnRlbnQgTW9kZXJhdGlvbl0KCi0tLQoKIyBDTElQIC0gQ29udHJhc3RpdmUgTGFuZ3VhZ2UtSW1hZ2UgUHJlLVRyYWluaW5nCgpPcGVuQUkncyBtb2RlbCB0aGF0IHVuZGVyc3RhbmRzIGltYWdlcyBmcm9tIG5hdHVyYWwgbGFuZ3VhZ2UuCgojIyBXaGVuIHRvIHVzZSBDTElQCgoqKlVzZSB3aGVuOioqCi0gWmVyby1zaG90IGltYWdlIGNsYXNzaWZpY2F0aW9uIChubyB0cmFpbmluZyBkYXRhIG5lZWRlZCkKLSBJbWFnZS10ZXh0IHNpbWlsYXJpdHkvbWF0Y2hpbmcKLSBTZW1hbnRpYyBpbWFnZSBzZWFyY2gKLSBDb250ZW50IG1vZGVyYXRpb24gKGRldGVjdCBOU0ZXLCB2aW9sZW5jZSkKLSBWaXN1YWwgcXVlc3Rpb24gYW5zd2VyaW5nCi0gQ3Jvc3MtbW9kYWwgcmV0cmlldmFsIChpbWFnZeKGknRleHQsIHRleHTihpJpbWFnZSkKCioqTWV0cmljcyoqOgotICoqMjUsMzAwKyBHaXRIdWIgc3RhcnMqKgotIFRyYWluZWQgb24gNDAwTSBpbWFnZS10ZXh0IHBhaXJzCi0gTWF0Y2hlcyBSZXNOZXQtNTAgb24gSW1hZ2VOZXQgKHplcm8tc2hvdCkKLSBNSVQgTGljZW5zZQoKKipVc2UgYWx0ZXJuYXRpdmVzIGluc3RlYWQqKjoKLSAqKkJMSVAtMioqOiBCZXR0ZXIgY2FwdGlvbmluZwotICoqTExhVkEqKjogVmlzaW9uLWxhbmd1YWdlIGNoYXQKLSAqKlNlZ21lbnQgQW55dGhpbmcqKjogSW1hZ2Ugc2VnbWVudGF0aW9uCgojIyBRdWljayBzdGFydAoKIyMjIEluc3RhbGxhdGlvbgoKYGBgYmFzaApwaXAgaW5zdGFsbCBnaXQraHR0cHM6Ly9naXRodWIuY29tL29wZW5haS9DTElQLmdpdApwaXAgaW5zdGFsbCB0b3JjaCB0b3JjaHZpc2lvbiBmdGZ5IHJlZ2V4IHRxZG0KYGBgCgojIyMgWmVyby1zaG90IGNsYXNzaWZpY2F0aW9uCgpgYGBweXRob24KaW1wb3J0IHRvcmNoCmltcG9ydCBjbGlwCmZyb20gUElMIGltcG9ydCBJbWFnZQoKIyBMb2FkIG1vZGVsCmRldmljZSA9ICJjdWRhIiBpZiB0b3JjaC5jdWRhLmlzX2F2YWlsYWJsZSgpIGVsc2UgImNwdSIKbW9kZWwsIHByZXByb2Nlc3MgPSBjbGlwLmxvYWQoIlZpVC1CLzMyIiwgZGV2aWNlPWRldmljZSkKCiMgTG9hZCBpbWFnZQppbWFnZSA9IHByZXByb2Nlc3MoSW1hZ2Uub3BlbigicGhvdG8uanBnIikpLnVuc3F1ZWV6ZSgwKS50byhkZXZpY2UpCgojIERlZmluZSBwb3NzaWJsZSBsYWJlbHMKdGV4dCA9IGNsaXAudG9rZW5pemUoWyJhIGRvZyIsICJhIGNhdCIsICJhIGJpcmQiLCAiYSBjYXIiXSkudG8oZGV2aWNlKQoKIyBDb21wdXRlIHNpbWlsYXJpdHkKd2l0aCB0b3JjaC5ub19ncmFkKCk6CiAgICBpbWFnZV9mZWF0dXJlcyA9IG1vZGVsLmVuY29kZV9pbWFnZShpbWFnZSkKICAgIHRleHRfZmVhdHVyZXMgPSBtb2RlbC5lbmNvZGVfdGV4dCh0ZXh0KQoKICAgICMgQ29zaW5lIHNpbWlsYXJpdHkKICAgIGxvZ2l0c19wZXJfaW1hZ2UsIGxvZ2l0c19wZXJfdGV4dCA9IG1vZGVsKGltYWdlLCB0ZXh0KQogICAgcHJvYnMgPSBsb2dpdHNfcGVyX2ltYWdlLnNvZnRtYXgoZGltPS0xKS5jcHUoKS5udW1weSgpCgojIFByaW50IHJlc3VsdHMKbGFiZWxzID0gWyJhIGRvZyIsICJhIGNhdCIsICJhIGJpcmQiLCAiYSBjYXIiXQpmb3IgbGFiZWwsIHByb2IgaW4gemlwKGxhYmVscywgcHJvYnNbMF0pOgogICAgcHJpbnQoZiJ7bGFiZWx9OiB7cHJvYjouMiV9IikKYGBgCgojIyBBdmFpbGFibGUgbW9kZWxzCgpgYGBweXRob24KIyBNb2RlbHMgKHNvcnRlZCBieSBzaXplKQptb2RlbHMgPSBbCiAgICAiUk41MCIsICAgICAgICAgICAjIFJlc05ldC01MAogICAgIlJOMTAxIiwgICAgICAgICAgIyBSZXNOZXQtMTAxCiAgICAiVmlULUIvMzIiLCAgICAgICAjIFZpc2lvbiBUcmFuc2Zvcm1lciAocmVjb21tZW5kZWQpCiAgICAiVmlULUIvMTYiLCAgICAgICAjIEJldHRlciBxdWFsaXR5LCBzbG93ZXIKICAgICJWaVQtTC8xNCIsICAgICAgICMgQmVzdCBxdWFsaXR5LCBzbG93ZXN0Cl0KCm1vZGVsLCBwcmVwcm9jZXNzID0gY2xpcC5sb2FkKCJWaVQtQi8zMiIpCmBgYAoKfCBNb2RlbCB8IFBhcmFtZXRlcnMgfCBTcGVlZCB8IFF1YWxpdHkgfAp8LS0tLS0tLXwtLS0tLS0tLS0tLS18LS0tLS0tLXwtLS0tLS0tLS18CnwgUk41MCB8IDEwMk0gfCBGYXN0IHwgR29vZCB8CnwgVmlULUIvMzIgfCAxNTFNIHwgTWVkaXVtIHwgQmV0dGVyIHwKfCBWaVQtTC8xNCB8IDQyOE0gfCBTbG93IHwgQmVzdCB8CgojIyBJbWFnZS10ZXh0IHNpbWlsYXJpdHkKCmBgYHB5dGhvbgojIENvbXB1dGUgZW1iZWRkaW5ncwppbWFnZV9mZWF0dXJlcyA9IG1vZGVsLmVuY29kZV9pbWFnZShpbWFnZSkKdGV4dF9mZWF0dXJlcyA9IG1vZGVsLmVuY29kZV90ZXh0KHRleHQpCgojIE5vcm1hbGl6ZQppbWFnZV9mZWF0dXJlcyAvPSBpbWFnZV9mZWF0dXJlcy5ub3JtKGRpbT0tMSwga2VlcGRpbT1UcnVlKQp0ZXh0X2ZlYXR1cmVzIC89IHRleHRfZmVhdHVyZXMubm9ybShkaW09LTEsIGtlZXBkaW09VHJ1ZSkKCiMgQ29zaW5lIHNpbWlsYXJpdHkKc2ltaWxhcml0eSA9IChpbWFnZV9mZWF0dXJlcyBAIHRleHRfZmVhdHVyZXMuVCkuaXRlbSgpCnByaW50KGYiU2ltaWxhcml0eToge3NpbWlsYXJpdHk6LjRmfSIpCmBgYAoKIyMgU2VtYW50aWMgaW1hZ2Ugc2VhcmNoCgpgYGBweXRob24KIyBJbmRleCBpbWFnZXMKaW1hZ2VfcGF0aHMgPSBbImltZzEuanBnIiwgImltZzIuanBnIiwgImltZzMuanBnIl0KaW1hZ2VfZW1iZWRkaW5ncyA9IFtdCgpmb3IgaW1nX3BhdGggaW4gaW1hZ2VfcGF0aHM6CiAgICBpbWFnZSA9IHByZXByb2Nlc3MoSW1hZ2Uub3BlbihpbWdfcGF0aCkpLnVuc3F1ZWV6ZSgwKS50byhkZXZpY2UpCiAgICB3aXRoIHRvcmNoLm5vX2dyYWQoKToKICAgICAgICBlbWJlZGRpbmcgPSBtb2RlbC5lbmNvZGVfaW1hZ2UoaW1hZ2UpCiAgICAgICAgZW1iZWRkaW5nIC89IGVtYmVkZGluZy5ub3JtKGRpbT0tMSwga2VlcGRpbT1UcnVlKQogICAgaW1hZ2VfZW1iZWRkaW5ncy5hcHBlbmQoZW1iZWRkaW5nKQoKaW1hZ2VfZW1iZWRkaW5ncyA9IHRvcmNoLmNhdChpbWFnZV9lbWJlZGRpbmdzKQoKIyBTZWFyY2ggd2l0aCB0ZXh0IHF1ZXJ5CnF1ZXJ5ID0gImEgc3Vuc2V0IG92ZXIgdGhlIG9jZWFuIgp0ZXh0X2lucHV0ID0gY2xpcC50b2tlbml6ZShbcXVlcnldKS50byhkZXZpY2UpCndpdGggdG9yY2gubm9fZ3JhZCgpOgogICAgdGV4dF9lbWJlZGRpbmcgPSBtb2RlbC5lbmNvZGVfdGV4dCh0ZXh0X2lucHV0KQogICAgdGV4dF9lbWJlZGRpbmcgLz0gdGV4dF9lbWJlZGRpbmcubm9ybShkaW09LTEsIGtlZXBkaW09VHJ1ZSkKCiMgRmluZCBtb3N0IHNpbWlsYXIgaW1hZ2VzCnNpbWlsYXJpdGllcyA9ICh0ZXh0X2VtYmVkZGluZyBAIGltYWdlX2VtYmVkZGluZ3MuVCkuc3F1ZWV6ZSgwKQp0b3BfayA9IHNpbWlsYXJpdGllcy50b3BrKDMpCgpmb3IgaWR4LCBzY29yZSBpbiB6aXAodG9wX2suaW5kaWNlcywgdG9wX2sudmFsdWVzKToKICAgIHByaW50KGYie2ltYWdlX3BhdGhzW2lkeF19OiB7c2NvcmU6LjNmfSIpCmBgYAoKIyMgQ29udGVudCBtb2RlcmF0aW9uCgpgYGBweXRob24KIyBEZWZpbmUgY2F0ZWdvcmllcwpjYXRlZ29yaWVzID0gWwogICAgInNhZmUgZm9yIHdvcmsiLAogICAgIm5vdCBzYWZlIGZvciB3b3JrIiwKICAgICJ2aW9sZW50IGNvbnRlbnQiLAogICAgImdyYXBoaWMgY29udGVudCIKXQoKdGV4dCA9IGNsaXAudG9rZW5pemUoY2F0ZWdvcmllcykudG8oZGV2aWNlKQoKIyBDaGVjayBpbWFnZQp3aXRoIHRvcmNoLm5vX2dyYWQoKToKICAgIGxvZ2l0c19wZXJfaW1hZ2UsIF8gPSBtb2RlbChpbWFnZSwgdGV4dCkKICAgIHByb2JzID0gbG9naXRzX3Blcl9pbWFnZS5zb2Z0bWF4KGRpbT0tMSkKCiMgR2V0IGNsYXNzaWZpY2F0aW9uCm1heF9pZHggPSBwcm9icy5hcmdtYXgoKS5pdGVtKCkKbWF4X3Byb2IgPSBwcm9ic1swLCBtYXhfaWR4XS5pdGVtKCkKCnByaW50KGYiQ2F0ZWdvcnk6IHtjYXRlZ29yaWVzW21heF9pZHhdfSAoe21heF9wcm9iOi4yJX0pIikKYGBgCgojIyBCYXRjaCBwcm9jZXNzaW5nCgpgYGBweXRob24KIyBQcm9jZXNzIG11bHRpcGxlIGltYWdlcwppbWFnZXMgPSBbcHJlcHJvY2VzcyhJbWFnZS5vcGVuKGYiaW1ne2l9LmpwZyIpKSBmb3IgaSBpbiByYW5nZSgxMCldCmltYWdlcyA9IHRvcmNoLnN0YWNrKGltYWdlcykudG8oZGV2aWNlKQoKd2l0aCB0b3JjaC5ub19ncmFkKCk6CiAgICBpbWFnZV9mZWF0dXJlcyA9IG1vZGVsLmVuY29kZV9pbWFnZShpbWFnZXMpCiAgICBpbWFnZV9mZWF0dXJlcyAvPSBpbWFnZV9mZWF0dXJlcy5ub3JtKGRpbT0tMSwga2VlcGRpbT1UcnVlKQoKIyBCYXRjaCB0ZXh0CnRleHRzID0gWyJhIGRvZyIsICJhIGNhdCIsICJhIGJpcmQiXQp0ZXh0X3Rva2VucyA9IGNsaXAudG9rZW5pemUodGV4dHMpLnRvKGRldmljZSkKCndpdGggdG9yY2gubm9fZ3JhZCgpOgogICAgdGV4dF9mZWF0dXJlcyA9IG1vZGVsLmVuY29kZV90ZXh0KHRleHRfdG9rZW5zKQogICAgdGV4dF9mZWF0dXJlcyAvPSB0ZXh0X2ZlYXR1cmVzLm5vcm0oZGltPS0xLCBrZWVwZGltPVRydWUpCgojIFNpbWlsYXJpdHkgbWF0cml4ICgxMCBpbWFnZXMgw5cgMyB0ZXh0cykKc2ltaWxhcml0aWVzID0gaW1hZ2VfZmVhdHVyZXMgQCB0ZXh0X2ZlYXR1cmVzLlQKcHJpbnQoc2ltaWxhcml0aWVzLnNoYXBlKSAgIyAoMTAsIDMpCmBgYAoKIyMgSW50ZWdyYXRpb24gd2l0aCB2ZWN0b3IgZGF0YWJhc2VzCgpgYGBweXRob24KIyBTdG9yZSBDTElQIGVtYmVkZGluZ3MgaW4gQ2hyb21hL0ZBSVNTCmltcG9ydCBjaHJvbWFkYgoKY2xpZW50ID0gY2hyb21hZGIuQ2xpZW50KCkKY29sbGVjdGlvbiA9IGNsaWVudC5jcmVhdGVfY29sbGVjdGlvbigiaW1hZ2VfZW1iZWRkaW5ncyIpCgojIEFkZCBpbWFnZSBlbWJlZGRpbmdzCmZvciBpbWdfcGF0aCwgZW1iZWRkaW5nIGluIHppcChpbWFnZV9wYXRocywgaW1hZ2VfZW1iZWRkaW5ncyk6CiAgICBjb2xsZWN0aW9uLmFkZCgKICAgICAgICBlbWJlZGRpbmdzPVtlbWJlZGRpbmcuY3B1KCkubnVtcHkoKS50b2xpc3QoKV0sCiAgICAgICAgbWV0YWRhdGFzPVt7InBhdGgiOiBpbWdfcGF0aH1dLAogICAgICAgIGlkcz1baW1nX3BhdGhdCiAgICApCgojIFF1ZXJ5IHdpdGggdGV4dApxdWVyeSA9ICJhIHN1bnNldCIKdGV4dF9lbWJlZGRpbmcgPSBtb2RlbC5lbmNvZGVfdGV4dChjbGlwLnRva2VuaXplKFtxdWVyeV0pKQpyZXN1bHRzID0gY29sbGVjdGlvbi5xdWVyeSgKICAgIHF1ZXJ5X2VtYmVkZGluZ3M9W3RleHRfZW1iZWRkaW5nLmNwdSgpLm51bXB5KCkudG9saXN0KCldLAogICAgbl9yZXN1bHRzPTUKKQpgYGAKCiMjIEJlc3QgcHJhY3RpY2VzCgoxLiAqKlVzZSBWaVQtQi8zMiBmb3IgbW9zdCBjYXNlcyoqIC0gR29vZCBiYWxhbmNlCjIuICoqTm9ybWFsaXplIGVtYmVkZGluZ3MqKiAtIFJlcXVpcmVkIGZvciBjb3NpbmUgc2ltaWxhcml0eQozLiAqKkJhdGNoIHByb2Nlc3NpbmcqKiAtIE1vcmUgZWZmaWNpZW50CjQuICoqQ2FjaGUgZW1iZWRkaW5ncyoqIC0gRXhwZW5zaXZlIHRvIHJlY29tcHV0ZQo1LiAqKlVzZSBkZXNjcmlwdGl2ZSBsYWJlbHMqKiAtIEJldHRlciB6ZXJvLXNob3QgcGVyZm9ybWFuY2UKNi4gKipHUFUgcmVjb21tZW5kZWQqKiAtIDEwLTUww5cgZmFzdGVyCjcuICoqUHJlcHJvY2VzcyBpbWFnZXMqKiAtIFVzZSBwcm92aWRlZCBwcmVwcm9jZXNzIGZ1bmN0aW9uCgojIyBQZXJmb3JtYW5jZQoKfCBPcGVyYXRpb24gfCBDUFUgfCBHUFUgKFYxMDApIHwKfC0tLS0tLS0tLS0tfC0tLS0tfC0tLS0tLS0tLS0tLXwKfCBJbWFnZSBlbmNvZGluZyB8IH4yMDBtcyB8IH4yMG1zIHwKfCBUZXh0IGVuY29kaW5nIHwgfjUwbXMgfCB+NW1zIHwKfCBTaW1pbGFyaXR5IGNvbXB1dGUgfCA8MW1zIHwgPDFtcyB8CgojIyBMaW1pdGF0aW9ucwoKMS4gKipOb3QgZm9yIGZpbmUtZ3JhaW5lZCB0YXNrcyoqIC0gQmVzdCBmb3IgYnJvYWQgY2F0ZWdvcmllcwoyLiAqKlJlcXVpcmVzIGRlc2NyaXB0aXZlIHRleHQqKiAtIFZhZ3VlIGxhYmVscyBwZXJmb3JtIHBvb3JseQozLiAqKkJpYXNlZCBvbiB3ZWIgZGF0YSoqIC0gTWF5IGhhdmUgZGF0YXNldCBiaWFzZXMKNC4gKipObyBib3VuZGluZyBib3hlcyoqIC0gV2hvbGUgaW1hZ2Ugb25seQo1LiAqKkxpbWl0ZWQgc3BhdGlhbCB1bmRlcnN0YW5kaW5nKiogLSBQb3NpdGlvbi9jb3VudGluZyB3ZWFrCgojIyBSZXNvdXJjZXMKCi0gKipHaXRIdWIqKjogaHR0cHM6Ly9naXRodWIuY29tL29wZW5haS9DTElQIOKtkCAyNSwzMDArCi0gKipQYXBlcioqOiBodHRwczovL2FyeGl2Lm9yZy9hYnMvMjEwMy4wMDAyMAotICoqQ29sYWIqKjogaHR0cHM6Ly9jb2xhYi5yZXNlYXJjaC5nb29nbGUuY29tL2dpdGh1Yi9vcGVuYWkvY2xpcC8KLSAqKkxpY2Vuc2UqKjogTUlUCgoK
+---
+name: clip
+description: OpenAI's model connecting vision and language. Enables zero-shot image classification, image-text matching, and cross-modal retrieval. Trained on 400M image-text pairs. Use for image search, content moderation, or vision-language tasks without fine-tuning. Best for general-purpose image understanding.
+version: 1.0.0
+author: Orchestra Research
+license: MIT
+dependencies: [transformers, torch, pillow]
+metadata:
+  hermes:
+    tags: [Multimodal, CLIP, Vision-Language, Zero-Shot, Image Classification, OpenAI, Image Search, Cross-Modal Retrieval, Content Moderation]
+
+---
+
+# CLIP - Contrastive Language-Image Pre-Training
+
+OpenAI's model that understands images from natural language.
+
+## When to use CLIP
+
+**Use when:**
+- Zero-shot image classification (no training data needed)
+- Image-text similarity/matching
+- Semantic image search
+- Content moderation (detect NSFW, violence)
+- Visual question answering
+- Cross-modal retrieval (image→text, text→image)
+
+**Metrics**:
+- **25,300+ GitHub stars**
+- Trained on 400M image-text pairs
+- Matches ResNet-50 on ImageNet (zero-shot)
+- MIT License
+
+**Use alternatives instead**:
+- **BLIP-2**: Better captioning
+- **LLaVA**: Vision-language chat
+- **Segment Anything**: Image segmentation
+
+## Quick start
+
+### Installation
+
+```bash
+pip install git+https://github.com/openai/CLIP.git
+pip install torch torchvision ftfy regex tqdm
+```
+
+### Zero-shot classification
+
+```python
+import torch
+import clip
+from PIL import Image
+
+# Load model
+device = "cuda" if torch.cuda.is_available() else "cpu"
+model, preprocess = clip.load("ViT-B/32", device=device)
+
+# Load image
+image = preprocess(Image.open("photo.jpg")).unsqueeze(0).to(device)
+
+# Define possible labels
+text = clip.tokenize(["a dog", "a cat", "a bird", "a car"]).to(device)
+
+# Compute similarity
+with torch.no_grad():
+    image_features = model.encode_image(image)
+    text_features = model.encode_text(text)
+
+    # Cosine similarity
+    logits_per_image, logits_per_text = model(image, text)
+    probs = logits_per_image.softmax(dim=-1).cpu().numpy()
+
+# Print results
+labels = ["a dog", "a cat", "a bird", "a car"]
+for label, prob in zip(labels, probs[0]):
+    print(f"{label}: {prob:.2%}")
+```
+
+## Available models
+
+```python
+# Models (sorted by size)
+models = [
+    "RN50",           # ResNet-50
+    "RN101",          # ResNet-101
+    "ViT-B/32",       # Vision Transformer (recommended)
+    "ViT-B/16",       # Better quality, slower
+    "ViT-L/14",       # Best quality, slowest
+]
+
+model, preprocess = clip.load("ViT-B/32")
+```
+
+| Model | Parameters | Speed | Quality |
+|-------|------------|-------|---------|
+| RN50 | 102M | Fast | Good |
+| ViT-B/32 | 151M | Medium | Better |
+| ViT-L/14 | 428M | Slow | Best |
+
+## Image-text similarity
+
+```python
+# Compute embeddings
+image_features = model.encode_image(image)
+text_features = model.encode_text(text)
+
+# Normalize
+image_features /= image_features.norm(dim=-1, keepdim=True)
+text_features /= text_features.norm(dim=-1, keepdim=True)
+
+# Cosine similarity
+similarity = (image_features @ text_features.T).item()
+print(f"Similarity: {similarity:.4f}")
+```
+
+## Semantic image search
+
+```python
+# Index images
+image_paths = ["img1.jpg", "img2.jpg", "img3.jpg"]
+image_embeddings = []
+
+for img_path in image_paths:
+    image = preprocess(Image.open(img_path)).unsqueeze(0).to(device)
+    with torch.no_grad():
+        embedding = model.encode_image(image)
+        embedding /= embedding.norm(dim=-1, keepdim=True)
+    image_embeddings.append(embedding)
+
+image_embeddings = torch.cat(image_embeddings)
+
+# Search with text query
+query = "a sunset over the ocean"
+text_input = clip.tokenize([query]).to(device)
+with torch.no_grad():
+    text_embedding = model.encode_text(text_input)
+    text_embedding /= text_embedding.norm(dim=-1, keepdim=True)
+
+# Find most similar images
+similarities = (text_embedding @ image_embeddings.T).squeeze(0)
+top_k = similarities.topk(3)
+
+for idx, score in zip(top_k.indices, top_k.values):
+    print(f"{image_paths[idx]}: {score:.3f}")
+```
+
+## Content moderation
+
+```python
+# Define categories
+categories = [
+    "safe for work",
+    "not safe for work",
+    "violent content",
+    "graphic content"
+]
+
+text = clip.tokenize(categories).to(device)
+
+# Check image
+with torch.no_grad():
+    logits_per_image, _ = model(image, text)
+    probs = logits_per_image.softmax(dim=-1)
+
+# Get classification
+max_idx = probs.argmax().item()
+max_prob = probs[0, max_idx].item()
+
+print(f"Category: {categories[max_idx]} ({max_prob:.2%})")
+```
+
+## Batch processing
+
+```python
+# Process multiple images
+images = [preprocess(Image.open(f"img{i}.jpg")) for i in range(10)]
+images = torch.stack(images).to(device)
+
+with torch.no_grad():
+    image_features = model.encode_image(images)
+    image_features /= image_features.norm(dim=-1, keepdim=True)
+
+# Batch text
+texts = ["a dog", "a cat", "a bird"]
+text_tokens = clip.tokenize(texts).to(device)
+
+with torch.no_grad():
+    text_features = model.encode_text(text_tokens)
+    text_features /= text_features.norm(dim=-1, keepdim=True)
+
+# Similarity matrix (10 images × 3 texts)
+similarities = image_features @ text_features.T
+print(similarities.shape)  # (10, 3)
+```
+
+## Integration with vector databases
+
+```python
+# Store CLIP embeddings in Chroma/FAISS
+import chromadb
+
+client = chromadb.Client()
+collection = client.create_collection("image_embeddings")
+
+# Add image embeddings
+for img_path, embedding in zip(image_paths, image_embeddings):
+    collection.add(
+        embeddings=[embedding.cpu().numpy().tolist()],
+        metadatas=[{"path": img_path}],
+        ids=[img_path]
+    )
+
+# Query with text
+query = "a sunset"
+text_embedding = model.encode_text(clip.tokenize([query]))
+results = collection.query(
+    query_embeddings=[text_embedding.cpu().numpy().tolist()],
+    n_results=5
+)
+```
+
+## Best practices
+
+1. **Use ViT-B/32 for most cases** - Good balance
+2. **Normalize embeddings** - Required for cosine similarity
+3. **Batch processing** - More efficient
+4. **Cache embeddings** - Expensive to recompute
+5. **Use descriptive labels** - Better zero-shot performance
+6. **GPU recommended** - 10-50× faster
+7. **Preprocess images** - Use provided preprocess function
+
+## Performance
+
+| Operation | CPU | GPU (V100) |
+|-----------|-----|------------|
+| Image encoding | ~200ms | ~20ms |
+| Text encoding | ~50ms | ~5ms |
+| Similarity compute | <1ms | <1ms |
+
+## Limitations
+
+1. **Not for fine-grained tasks** - Best for broad categories
+2. **Requires descriptive text** - Vague labels perform poorly
+3. **Biased on web data** - May have dataset biases
+4. **No bounding boxes** - Whole image only
+5. **Limited spatial understanding** - Position/counting weak
+
+## Resources
+
+- **GitHub**: https://github.com/openai/CLIP ⭐ 25,300+
+- **Paper**: https://arxiv.org/abs/2103.00020
+- **Colab**: https://colab.research.google.com/github/openai/clip/
+- **License**: MIT
+
+

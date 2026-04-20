@@ -1,1 +1,602 @@
-IyBDdXN0b20gVGFza3MKCkNvbXBsZXRlIGd1aWRlIHRvIGNyZWF0aW5nIGRvbWFpbi1zcGVjaWZpYyBldmFsdWF0aW9uIHRhc2tzIGluIGxtLWV2YWx1YXRpb24taGFybmVzcy4KCiMjIE92ZXJ2aWV3CgpDdXN0b20gdGFza3MgYWxsb3cgeW91IHRvIGV2YWx1YXRlIG1vZGVscyBvbiB5b3VyIG93biBkYXRhc2V0cyBhbmQgbWV0cmljcy4gVGFza3MgYXJlIGRlZmluZWQgdXNpbmcgWUFNTCBjb25maWd1cmF0aW9uIGZpbGVzIHdpdGggb3B0aW9uYWwgUHl0aG9uIHV0aWxpdGllcyBmb3IgY29tcGxleCBsb2dpYy4KCioqV2h5IGNyZWF0ZSBjdXN0b20gdGFza3MqKjoKLSBFdmFsdWF0ZSBvbiBwcm9wcmlldGFyeS9kb21haW4tc3BlY2lmaWMgZGF0YQotIFRlc3Qgc3BlY2lmaWMgY2FwYWJpbGl0aWVzIG5vdCBjb3ZlcmVkIGJ5IGV4aXN0aW5nIGJlbmNobWFya3MKLSBDcmVhdGUgZXZhbHVhdGlvbiBwaXBlbGluZXMgZm9yIGludGVybmFsIG1vZGVscwotIFJlcHJvZHVjZSByZXNlYXJjaCBleHBlcmltZW50cwoKIyMgUXVpY2sgU3RhcnQKCiMjIyBNaW5pbWFsIEN1c3RvbSBUYXNrCgpDcmVhdGUgYG15X3Rhc2tzL3NpbXBsZV9xYS55YW1sYDoKCmBgYHlhbWwKdGFzazogc2ltcGxlX3FhCmRhdGFzZXRfcGF0aDogZGF0YS9zaW1wbGVfcWEuanNvbmwKb3V0cHV0X3R5cGU6IGdlbmVyYXRlX3VudGlsCmRvY190b190ZXh0OiAiUXVlc3Rpb246IHt7cXVlc3Rpb259fVxuQW5zd2VyOiIKZG9jX3RvX3RhcmdldDogInt7YW5zd2VyfX0iCm1ldHJpY19saXN0OgogIC0gbWV0cmljOiBleGFjdF9tYXRjaAogICAgYWdncmVnYXRpb246IG1lYW4KICAgIGhpZ2hlcl9pc19iZXR0ZXI6IHRydWUKYGBgCgoqKlJ1biBpdCoqOgpgYGBiYXNoCmxtX2V2YWwgLS1tb2RlbCBoZiBcCiAgLS1tb2RlbF9hcmdzIHByZXRyYWluZWQ9bWV0YS1sbGFtYS9MbGFtYS0yLTdiLWhmIFwKICAtLXRhc2tzIHNpbXBsZV9xYSBcCiAgLS1pbmNsdWRlX3BhdGggbXlfdGFza3MvCmBgYAoKIyMgVGFzayBDb25maWd1cmF0aW9uIFJlZmVyZW5jZQoKIyMjIEVzc2VudGlhbCBGaWVsZHMKCmBgYHlhbWwKIyBUYXNrIGlkZW50aWZpY2F0aW9uCnRhc2s6IG15X2N1c3RvbV90YXNrICAgICAgICAgICAjIFVuaXF1ZSB0YXNrIG5hbWUgKHJlcXVpcmVkKQp0YXNrX2FsaWFzOiAiTXkgVGFzayIgICAgICAgICAgIyBEaXNwbGF5IG5hbWUKdGFnOiAgICAgICAgICAgICAgICAgICAgICAgICAgICMgVGFncyBmb3IgZ3JvdXBpbmcKICAtIGN1c3RvbQogIC0gZG9tYWluX3NwZWNpZmljCgojIERhdGFzZXQgY29uZmlndXJhdGlvbgpkYXRhc2V0X3BhdGg6IGRhdGEvbXlfZGF0YS5qc29ubCAgIyBIdWdnaW5nRmFjZSBkYXRhc2V0IG9yIGxvY2FsIHBhdGgKZGF0YXNldF9uYW1lOiBkZWZhdWx0ICAgICAgICAgICAgICMgU3Vic2V0IG5hbWUgKGlmIGFwcGxpY2FibGUpCnRyYWluaW5nX3NwbGl0OiB0cmFpbgp2YWxpZGF0aW9uX3NwbGl0OiB2YWxpZGF0aW9uCnRlc3Rfc3BsaXQ6IHRlc3QKCiMgRXZhbHVhdGlvbiBjb25maWd1cmF0aW9uCm91dHB1dF90eXBlOiBnZW5lcmF0ZV91bnRpbCAgICAjIG9yIGxvZ2xpa2VsaWhvb2QsIG11bHRpcGxlX2Nob2ljZQpudW1fZmV3c2hvdDogNSAgICAgICAgICAgICAgICAgIyBOdW1iZXIgb2YgZmV3LXNob3QgZXhhbXBsZXMKYmF0Y2hfc2l6ZTogYXV0byAgICAgICAgICAgICAgICMgQmF0Y2ggc2l6ZQoKIyBQcm9tcHQgdGVtcGxhdGVzIChKaW5qYTIpCmRvY190b190ZXh0OiAiUXVlc3Rpb246IHt7cXVlc3Rpb259fSIKZG9jX3RvX3RhcmdldDogInt7YW5zd2VyfX0iCgojIE1ldHJpY3MKbWV0cmljX2xpc3Q6CiAgLSBtZXRyaWM6IGV4YWN0X21hdGNoCiAgICBhZ2dyZWdhdGlvbjogbWVhbgogICAgaGlnaGVyX2lzX2JldHRlcjogdHJ1ZQoKIyBNZXRhZGF0YQptZXRhZGF0YToKICB2ZXJzaW9uOiAxLjAKYGBgCgojIyMgT3V0cHV0IFR5cGVzCgoqKmBnZW5lcmF0ZV91bnRpbGAqKjogRnJlZS1mb3JtIGdlbmVyYXRpb24KYGBgeWFtbApvdXRwdXRfdHlwZTogZ2VuZXJhdGVfdW50aWwKZ2VuZXJhdGlvbl9rd2FyZ3M6CiAgbWF4X2dlbl90b2tzOiAyNTYKICB1bnRpbDoKICAgIC0gIlxuIgogICAgLSAiLiIKICB0ZW1wZXJhdHVyZTogMC4wCmBgYAoKKipgbG9nbGlrZWxpaG9vZGAqKjogQ29tcHV0ZSBsb2cgcHJvYmFiaWxpdHkgb2YgdGFyZ2V0cwpgYGB5YW1sCm91dHB1dF90eXBlOiBsb2dsaWtlbGlob29kCiMgVXNlZCBmb3IgcGVycGxleGl0eSwgY2xhc3NpZmljYXRpb24KYGBgCgoqKmBtdWx0aXBsZV9jaG9pY2VgKio6IENob29zZSBmcm9tIG9wdGlvbnMKYGBgeWFtbApvdXRwdXRfdHlwZTogbXVsdGlwbGVfY2hvaWNlCmRvY190b19jaG9pY2U6ICJ7e2Nob2ljZXN9fSIgICMgTGlzdCBvZiBjaG9pY2VzCmBgYAoKIyMgRGF0YSBGb3JtYXRzCgojIyMgTG9jYWwgSlNPTkwgRmlsZQoKYGRhdGEvbXlfZGF0YS5qc29ubGA6CmBgYGpzb24KeyJxdWVzdGlvbiI6ICJXaGF0IGlzIDIrMj8iLCAiYW5zd2VyIjogIjQifQp7InF1ZXN0aW9uIjogIkNhcGl0YWwgb2YgRnJhbmNlPyIsICJhbnN3ZXIiOiAiUGFyaXMifQpgYGAKCioqVGFzayBjb25maWcqKjoKYGBgeWFtbApkYXRhc2V0X3BhdGg6IGRhdGEvbXlfZGF0YS5qc29ubApkYXRhc2V0X2t3YXJnczoKICBkYXRhX2ZpbGVzOgogICAgdGVzdDogZGF0YS9teV9kYXRhLmpzb25sCmBgYAoKIyMjIEh1Z2dpbmdGYWNlIERhdGFzZXQKCmBgYHlhbWwKZGF0YXNldF9wYXRoOiBzcXVhZApkYXRhc2V0X25hbWU6IHBsYWluX3RleHQKdGVzdF9zcGxpdDogdmFsaWRhdGlvbgpgYGAKCiMjIyBDU1YgRmlsZQoKYGRhdGEvbXlfZGF0YS5jc3ZgOgpgYGBjc3YKcXVlc3Rpb24sYW5zd2VyLGNhdGVnb3J5CldoYXQgaXMgMisyPyw0LG1hdGgKQ2FwaXRhbCBvZiBGcmFuY2U/LFBhcmlzLGdlb2dyYXBoeQpgYGAKCioqVGFzayBjb25maWcqKjoKYGBgeWFtbApkYXRhc2V0X3BhdGg6IGRhdGEvbXlfZGF0YS5jc3YKZGF0YXNldF9rd2FyZ3M6CiAgZGF0YV9maWxlczoKICAgIHRlc3Q6IGRhdGEvbXlfZGF0YS5jc3YKYGBgCgojIyBQcm9tcHQgRW5naW5lZXJpbmcKCiMjIyBTaW1wbGUgVGVtcGxhdGUKCmBgYHlhbWwKZG9jX3RvX3RleHQ6ICJRdWVzdGlvbjoge3txdWVzdGlvbn19XG5BbnN3ZXI6Igpkb2NfdG9fdGFyZ2V0OiAie3thbnN3ZXJ9fSIKYGBgCgojIyMgQ29uZGl0aW9uYWwgTG9naWMKCmBgYHlhbWwKZG9jX3RvX3RleHQ6IHwKICB7JSBpZiBjb250ZXh0ICV9CiAgQ29udGV4dDoge3tjb250ZXh0fX0KICB7JSBlbmRpZiAlfQogIFF1ZXN0aW9uOiB7e3F1ZXN0aW9ufX0KICBBbnN3ZXI6CmBgYAoKIyMjIE11bHRpcGxlIENob2ljZQoKYGBgeWFtbApkb2NfdG9fdGV4dDogfAogIFF1ZXN0aW9uOiB7e3F1ZXN0aW9ufX0KICBBLiB7e2Nob2ljZXNbMF19fQogIEIuIHt7Y2hvaWNlc1sxXX19CiAgQy4ge3tjaG9pY2VzWzJdfX0KICBELiB7e2Nob2ljZXNbM119fQogIEFuc3dlcjoKCmRvY190b190YXJnZXQ6ICJ7eyAnQUJDRCdbYW5zd2VyX2lkeF0gfX0iCmRvY190b19jaG9pY2U6IFsiQSIsICJCIiwgIkMiLCAiRCJdCmBgYAoKIyMjIEZldy1TaG90IEZvcm1hdHRpbmcKCmBgYHlhbWwKZmV3c2hvdF9kZWxpbWl0ZXI6ICJcblxuIiAgICAgICAgIyBCZXR3ZWVuIGV4YW1wbGVzCnRhcmdldF9kZWxpbWl0ZXI6ICIgIiAgICAgICAgICAgICMgQmV0d2VlbiBxdWVzdGlvbiBhbmQgYW5zd2VyCmRvY190b190ZXh0OiAiUToge3txdWVzdGlvbn19Igpkb2NfdG9fdGFyZ2V0OiAiQToge3thbnN3ZXJ9fSIKYGBgCgojIyBDdXN0b20gUHl0aG9uIEZ1bmN0aW9ucwoKRm9yIGNvbXBsZXggbG9naWMsIHVzZSBQeXRob24gZnVuY3Rpb25zIGluIGB1dGlscy5weWAuCgojIyMgQ3JlYXRlIGBteV90YXNrcy91dGlscy5weWAKCmBgYHB5dGhvbgpkZWYgcHJvY2Vzc19kb2NzKGRhdGFzZXQpOgogICAgIiIiUHJlcHJvY2VzcyBkb2N1bWVudHMuIiIiCiAgICBkZWYgX3Byb2Nlc3MoZG9jKToKICAgICAgICAjIEN1c3RvbSBwcmVwcm9jZXNzaW5nCiAgICAgICAgZG9jWyJxdWVzdGlvbiJdID0gZG9jWyJxdWVzdGlvbiJdLnN0cmlwKCkubG93ZXIoKQogICAgICAgIHJldHVybiBkb2MKCiAgICByZXR1cm4gZGF0YXNldC5tYXAoX3Byb2Nlc3MpCgpkZWYgZG9jX3RvX3RleHQoZG9jKToKICAgICIiIkN1c3RvbSBwcm9tcHQgZm9ybWF0dGluZy4iIiIKICAgIGNvbnRleHQgPSBkb2MuZ2V0KCJjb250ZXh0IiwgIiIpCiAgICBxdWVzdGlvbiA9IGRvY1sicXVlc3Rpb24iXQoKICAgIGlmIGNvbnRleHQ6CiAgICAgICAgcmV0dXJuIGYiQ29udGV4dDoge2NvbnRleHR9XG5RdWVzdGlvbjoge3F1ZXN0aW9ufVxuQW5zd2VyOiIKICAgIHJldHVybiBmIlF1ZXN0aW9uOiB7cXVlc3Rpb259XG5BbnN3ZXI6IgoKZGVmIGRvY190b190YXJnZXQoZG9jKToKICAgICIiIkN1c3RvbSB0YXJnZXQgZXh0cmFjdGlvbi4iIiIKICAgIHJldHVybiBkb2NbImFuc3dlciJdLnN0cmlwKCkubG93ZXIoKQoKZGVmIGFnZ3JlZ2F0ZV9zY29yZXMoaXRlbXMpOgogICAgIiIiQ3VzdG9tIG1ldHJpYyBhZ2dyZWdhdGlvbi4iIiIKICAgIGNvcnJlY3QgPSBzdW0oMSBmb3IgaXRlbSBpbiBpdGVtcyBpZiBpdGVtID09IDEuMCkKICAgIHRvdGFsID0gbGVuKGl0ZW1zKQogICAgcmV0dXJuIGNvcnJlY3QgLyB0b3RhbCBpZiB0b3RhbCA+IDAgZWxzZSAwLjAKYGBgCgojIyMgVXNlIGluIFRhc2sgQ29uZmlnCgpgYGB5YW1sCnRhc2s6IG15X2N1c3RvbV90YXNrCmRhdGFzZXRfcGF0aDogZGF0YS9teV9kYXRhLmpzb25sCgojIFVzZSBQeXRob24gZnVuY3Rpb25zCnByb2Nlc3NfZG9jczogIWZ1bmN0aW9uIHV0aWxzLnByb2Nlc3NfZG9jcwpkb2NfdG9fdGV4dDogIWZ1bmN0aW9uIHV0aWxzLmRvY190b190ZXh0CmRvY190b190YXJnZXQ6ICFmdW5jdGlvbiB1dGlscy5kb2NfdG9fdGFyZ2V0CgptZXRyaWNfbGlzdDoKICAtIG1ldHJpYzogZXhhY3RfbWF0Y2gKICAgIGFnZ3JlZ2F0aW9uOiAhZnVuY3Rpb24gdXRpbHMuYWdncmVnYXRlX3Njb3JlcwogICAgaGlnaGVyX2lzX2JldHRlcjogdHJ1ZQpgYGAKCiMjIFJlYWwtV29ybGQgRXhhbXBsZXMKCiMjIyBFeGFtcGxlIDE6IERvbWFpbiBRQSBUYXNrCgoqKkdvYWwqKjogRXZhbHVhdGUgbWVkaWNhbCBxdWVzdGlvbiBhbnN3ZXJpbmcuCgpgbWVkaWNhbF9xYS9tZWRpY2FsX3FhLnlhbWxgOgpgYGB5YW1sCnRhc2s6IG1lZGljYWxfcWEKZGF0YXNldF9wYXRoOiBkYXRhL21lZGljYWxfcWEuanNvbmwKb3V0cHV0X3R5cGU6IGdlbmVyYXRlX3VudGlsCm51bV9mZXdzaG90OiAzCgpkb2NfdG9fdGV4dDogfAogIE1lZGljYWwgUXVlc3Rpb246IHt7cXVlc3Rpb259fQogIENvbnRleHQ6IHt7Y29udGV4dH19CiAgQW5zd2VyIChiZSBjb25jaXNlKToKCmRvY190b190YXJnZXQ6ICJ7e2Fuc3dlcn19IgoKZ2VuZXJhdGlvbl9rd2FyZ3M6CiAgbWF4X2dlbl90b2tzOiAxMDAKICB1bnRpbDoKICAgIC0gIlxuXG4iCiAgdGVtcGVyYXR1cmU6IDAuMAoKbWV0cmljX2xpc3Q6CiAgLSBtZXRyaWM6IGV4YWN0X21hdGNoCiAgICBhZ2dyZWdhdGlvbjogbWVhbgogICAgaGlnaGVyX2lzX2JldHRlcjogdHJ1ZQogIC0gbWV0cmljOiAhZnVuY3Rpb24gdXRpbHMubWVkaWNhbF9mMQogICAgYWdncmVnYXRpb246IG1lYW4KICAgIGhpZ2hlcl9pc19iZXR0ZXI6IHRydWUKCmZpbHRlcl9saXN0OgogIC0gbmFtZTogbG93ZXJjYXNlCiAgICBmaWx0ZXI6CiAgICAgIC0gZnVuY3Rpb246IGxvd2VyY2FzZQogICAgICAtIGZ1bmN0aW9uOiByZW1vdmVfd2hpdGVzcGFjZQoKbWV0YWRhdGE6CiAgdmVyc2lvbjogMS4wCiAgZG9tYWluOiBtZWRpY2FsCmBgYAoKYG1lZGljYWxfcWEvdXRpbHMucHlgOgpgYGBweXRob24KZnJvbSBza2xlYXJuLm1ldHJpY3MgaW1wb3J0IGYxX3Njb3JlCmltcG9ydCByZQoKZGVmIG1lZGljYWxfZjEocHJlZGljdGlvbnMsIHJlZmVyZW5jZXMpOgogICAgIiIiQ3VzdG9tIEYxIGZvciBtZWRpY2FsIHRlcm1zLiIiIgogICAgcHJlZF90ZXJtcyA9IHNldChleHRyYWN0X21lZGljYWxfdGVybXMocHJlZGljdGlvbnNbMF0pKQogICAgcmVmX3Rlcm1zID0gc2V0KGV4dHJhY3RfbWVkaWNhbF90ZXJtcyhyZWZlcmVuY2VzWzBdKSkKCiAgICBpZiBub3QgcHJlZF90ZXJtcyBhbmQgbm90IHJlZl90ZXJtczoKICAgICAgICByZXR1cm4gMS4wCiAgICBpZiBub3QgcHJlZF90ZXJtcyBvciBub3QgcmVmX3Rlcm1zOgogICAgICAgIHJldHVybiAwLjAKCiAgICB0cCA9IGxlbihwcmVkX3Rlcm1zICYgcmVmX3Rlcm1zKQogICAgZnAgPSBsZW4ocHJlZF90ZXJtcyAtIHJlZl90ZXJtcykKICAgIGZuID0gbGVuKHJlZl90ZXJtcyAtIHByZWRfdGVybXMpCgogICAgcHJlY2lzaW9uID0gdHAgLyAodHAgKyBmcCkgaWYgKHRwICsgZnApID4gMCBlbHNlIDAKICAgIHJlY2FsbCA9IHRwIC8gKHRwICsgZm4pIGlmICh0cCArIGZuKSA+IDAgZWxzZSAwCgogICAgcmV0dXJuIDIgKiAocHJlY2lzaW9uICogcmVjYWxsKSAvIChwcmVjaXNpb24gKyByZWNhbGwpIGlmIChwcmVjaXNpb24gKyByZWNhbGwpID4gMCBlbHNlIDAKCmRlZiBleHRyYWN0X21lZGljYWxfdGVybXModGV4dCk6CiAgICAiIiJFeHRyYWN0IG1lZGljYWwgdGVybWlub2xvZ3kuIiIiCiAgICAjIEN1c3RvbSBsb2dpYwogICAgcmV0dXJuIHJlLmZpbmRhbGwocidcYltBLVpdW2Etel0rKD86W0EtWl1bYS16XSspKlxiJywgdGV4dCkKYGBgCgojIyMgRXhhbXBsZSAyOiBDb2RlIEV2YWx1YXRpb24KCmBjb2RlX2V2YWwvcHl0aG9uX2NoYWxsZW5nZXMueWFtbGA6CmBgYHlhbWwKdGFzazogcHl0aG9uX2NoYWxsZW5nZXMKZGF0YXNldF9wYXRoOiBkYXRhL3B5dGhvbl9wcm9ibGVtcy5qc29ubApvdXRwdXRfdHlwZTogZ2VuZXJhdGVfdW50aWwKbnVtX2Zld3Nob3Q6IDAKCmRvY190b190ZXh0OiB8CiAgV3JpdGUgYSBQeXRob24gZnVuY3Rpb24gdG8gc29sdmU6CiAge3twcm9ibGVtX3N0YXRlbWVudH19CgogIEZ1bmN0aW9uIHNpZ25hdHVyZToKICB7e2Z1bmN0aW9uX3NpZ25hdHVyZX19Cgpkb2NfdG9fdGFyZ2V0OiAie3tjYW5vbmljYWxfc29sdXRpb259fSIKCmdlbmVyYXRpb25fa3dhcmdzOgogIG1heF9nZW5fdG9rczogNTEyCiAgdW50aWw6CiAgICAtICJcblxuY2xhc3MiCiAgICAtICJcblxuZGVmIgogIHRlbXBlcmF0dXJlOiAwLjIKCm1ldHJpY19saXN0OgogIC0gbWV0cmljOiAhZnVuY3Rpb24gdXRpbHMuZXhlY3V0ZV9jb2RlCiAgICBhZ2dyZWdhdGlvbjogbWVhbgogICAgaGlnaGVyX2lzX2JldHRlcjogdHJ1ZQoKcHJvY2Vzc19yZXN1bHRzOiAhZnVuY3Rpb24gdXRpbHMucHJvY2Vzc19jb2RlX3Jlc3VsdHMKCm1ldGFkYXRhOgogIHZlcnNpb246IDEuMApgYGAKCmBjb2RlX2V2YWwvdXRpbHMucHlgOgpgYGBweXRob24KaW1wb3J0IHN1YnByb2Nlc3MKaW1wb3J0IGpzb24KCmRlZiBleGVjdXRlX2NvZGUocHJlZGljdGlvbnMsIHJlZmVyZW5jZXMpOgogICAgIiIiRXhlY3V0ZSBnZW5lcmF0ZWQgY29kZSBhZ2FpbnN0IHRlc3QgY2FzZXMuIiIiCiAgICBnZW5lcmF0ZWRfY29kZSA9IHByZWRpY3Rpb25zWzBdCiAgICB0ZXN0X2Nhc2VzID0ganNvbi5sb2FkcyhyZWZlcmVuY2VzWzBdKQoKICAgIHRyeToKICAgICAgICAjIEV4ZWN1dGUgY29kZSB3aXRoIHRlc3QgY2FzZXMKICAgICAgICBmb3IgdGVzdF9pbnB1dCwgZXhwZWN0ZWRfb3V0cHV0IGluIHRlc3RfY2FzZXM6CiAgICAgICAgICAgIHJlc3VsdCA9IGV4ZWN1dGVfd2l0aF90aW1lb3V0KGdlbmVyYXRlZF9jb2RlLCB0ZXN0X2lucHV0LCB0aW1lb3V0PTUpCiAgICAgICAgICAgIGlmIHJlc3VsdCAhPSBleHBlY3RlZF9vdXRwdXQ6CiAgICAgICAgICAgICAgICByZXR1cm4gMC4wCiAgICAgICAgcmV0dXJuIDEuMAogICAgZXhjZXB0IEV4Y2VwdGlvbjoKICAgICAgICByZXR1cm4gMC4wCgpkZWYgZXhlY3V0ZV93aXRoX3RpbWVvdXQoY29kZSwgaW5wdXRfZGF0YSwgdGltZW91dD01KToKICAgICIiIlNhZmVseSBleGVjdXRlIGNvZGUgd2l0aCB0aW1lb3V0LiIiIgogICAgIyBJbXBsZW1lbnRhdGlvbiB3aXRoIHN1YnByb2Nlc3MgYW5kIHRpbWVvdXQKICAgIHBhc3MKCmRlZiBwcm9jZXNzX2NvZGVfcmVzdWx0cyhkb2MsIHJlc3VsdHMpOgogICAgIiIiUHJvY2VzcyBjb2RlIGV4ZWN1dGlvbiByZXN1bHRzLiIiIgogICAgcmV0dXJuIHsKICAgICAgICAicGFzc2VkIjogcmVzdWx0c1swXSA9PSAxLjAsCiAgICAgICAgImdlbmVyYXRlZF9jb2RlIjogcmVzdWx0c1sxXQogICAgfQpgYGAKCiMjIyBFeGFtcGxlIDM6IEluc3RydWN0aW9uIEZvbGxvd2luZwoKYGluc3RydWN0aW9uX2V2YWwvaW5zdHJ1Y3Rpb25fZXZhbC55YW1sYDoKYGBgeWFtbAp0YXNrOiBpbnN0cnVjdGlvbl9mb2xsb3dpbmcKZGF0YXNldF9wYXRoOiBkYXRhL2luc3RydWN0aW9ucy5qc29ubApvdXRwdXRfdHlwZTogZ2VuZXJhdGVfdW50aWwKbnVtX2Zld3Nob3Q6IDAKCmRvY190b190ZXh0OiB8CiAgSW5zdHJ1Y3Rpb246IHt7aW5zdHJ1Y3Rpb259fQogIHslIGlmIGNvbnN0cmFpbnRzICV9CiAgQ29uc3RyYWludHM6IHt7Y29uc3RyYWludHN9fQogIHslIGVuZGlmICV9CiAgUmVzcG9uc2U6Cgpkb2NfdG9fdGFyZ2V0OiAie3tleHBlY3RlZF9yZXNwb25zZX19IgoKZ2VuZXJhdGlvbl9rd2FyZ3M6CiAgbWF4X2dlbl90b2tzOiAyNTYKICB0ZW1wZXJhdHVyZTogMC43CgptZXRyaWNfbGlzdDoKICAtIG1ldHJpYzogIWZ1bmN0aW9uIHV0aWxzLmNoZWNrX2NvbnN0cmFpbnRzCiAgICBhZ2dyZWdhdGlvbjogbWVhbgogICAgaGlnaGVyX2lzX2JldHRlcjogdHJ1ZQogIC0gbWV0cmljOiAhZnVuY3Rpb24gdXRpbHMuc2VtYW50aWNfc2ltaWxhcml0eQogICAgYWdncmVnYXRpb246IG1lYW4KICAgIGhpZ2hlcl9pc19iZXR0ZXI6IHRydWUKCnByb2Nlc3NfZG9jczogIWZ1bmN0aW9uIHV0aWxzLmFkZF9jb25zdHJhaW50X2NoZWNrZXJzCmBgYAoKYGluc3RydWN0aW9uX2V2YWwvdXRpbHMucHlgOgpgYGBweXRob24KZnJvbSBzZW50ZW5jZV90cmFuc2Zvcm1lcnMgaW1wb3J0IFNlbnRlbmNlVHJhbnNmb3JtZXIsIHV0aWwKCm1vZGVsID0gU2VudGVuY2VUcmFuc2Zvcm1lcignYWxsLU1pbmlMTS1MNi12MicpCgpkZWYgY2hlY2tfY29uc3RyYWludHMocHJlZGljdGlvbnMsIHJlZmVyZW5jZXMpOgogICAgIiIiQ2hlY2sgaWYgcmVzcG9uc2Ugc2F0aXNmaWVzIGNvbnN0cmFpbnRzLiIiIgogICAgcmVzcG9uc2UgPSBwcmVkaWN0aW9uc1swXQogICAgY29uc3RyYWludHMgPSBqc29uLmxvYWRzKHJlZmVyZW5jZXNbMF0pCgogICAgc2F0aXNmaWVkID0gMAogICAgdG90YWwgPSBsZW4oY29uc3RyYWludHMpCgogICAgZm9yIGNvbnN0cmFpbnQgaW4gY29uc3RyYWludHM6CiAgICAgICAgaWYgdmVyaWZ5X2NvbnN0cmFpbnQocmVzcG9uc2UsIGNvbnN0cmFpbnQpOgogICAgICAgICAgICBzYXRpc2ZpZWQgKz0gMQoKICAgIHJldHVybiBzYXRpc2ZpZWQgLyB0b3RhbCBpZiB0b3RhbCA+IDAgZWxzZSAxLjAKCmRlZiB2ZXJpZnlfY29uc3RyYWludChyZXNwb25zZSwgY29uc3RyYWludCk6CiAgICAiIiJWZXJpZnkgc2luZ2xlIGNvbnN0cmFpbnQuIiIiCiAgICBpZiBjb25zdHJhaW50WyJ0eXBlIl0gPT0gImxlbmd0aCI6CiAgICAgICAgcmV0dXJuIGxlbihyZXNwb25zZS5zcGxpdCgpKSA+PSBjb25zdHJhaW50WyJtaW5fd29yZHMiXQogICAgZWxpZiBjb25zdHJhaW50WyJ0eXBlIl0gPT0gImNvbnRhaW5zIjoKICAgICAgICByZXR1cm4gY29uc3RyYWludFsia2V5d29yZCJdIGluIHJlc3BvbnNlLmxvd2VyKCkKICAgICMgQWRkIG1vcmUgY29uc3RyYWludCB0eXBlcwogICAgcmV0dXJuIFRydWUKCmRlZiBzZW1hbnRpY19zaW1pbGFyaXR5KHByZWRpY3Rpb25zLCByZWZlcmVuY2VzKToKICAgICIiIkNvbXB1dGUgc2VtYW50aWMgc2ltaWxhcml0eS4iIiIKICAgIHByZWRfZW1iZWRkaW5nID0gbW9kZWwuZW5jb2RlKHByZWRpY3Rpb25zWzBdKQogICAgcmVmX2VtYmVkZGluZyA9IG1vZGVsLmVuY29kZShyZWZlcmVuY2VzWzBdKQogICAgcmV0dXJuIGZsb2F0KHV0aWwuY29zX3NpbShwcmVkX2VtYmVkZGluZywgcmVmX2VtYmVkZGluZykpCgpkZWYgYWRkX2NvbnN0cmFpbnRfY2hlY2tlcnMoZGF0YXNldCk6CiAgICAiIiJQYXJzZSBjb25zdHJhaW50cyBpbnRvIHZlcmlmaWFibGUgZm9ybWF0LiIiIgogICAgZGVmIF9wYXJzZShkb2MpOgogICAgICAgICMgUGFyc2UgY29uc3RyYWludCBzdHJpbmcgaW50byBzdHJ1Y3R1cmVkIGZvcm1hdAogICAgICAgIGRvY1sicGFyc2VkX2NvbnN0cmFpbnRzIl0gPSBwYXJzZV9jb25zdHJhaW50cyhkb2MuZ2V0KCJjb25zdHJhaW50cyIsICIiKSkKICAgICAgICByZXR1cm4gZG9jCiAgICByZXR1cm4gZGF0YXNldC5tYXAoX3BhcnNlKQpgYGAKCiMjIEFkdmFuY2VkIEZlYXR1cmVzCgojIyMgT3V0cHV0IEZpbHRlcmluZwoKYGBgeWFtbApmaWx0ZXJfbGlzdDoKICAtIG5hbWU6IGV4dHJhY3RfYW5zd2VyCiAgICBmaWx0ZXI6CiAgICAgIC0gZnVuY3Rpb246IHJlZ2V4CiAgICAgICAgcmVnZXhfcGF0dGVybjogIkFuc3dlcjogKC4qKSIKICAgICAgICBncm91cDogMQogICAgICAtIGZ1bmN0aW9uOiBsb3dlcmNhc2UKICAgICAgLSBmdW5jdGlvbjogc3RyaXBfd2hpdGVzcGFjZQpgYGAKCiMjIyBNdWx0aXBsZSBNZXRyaWNzCgpgYGB5YW1sCm1ldHJpY19saXN0OgogIC0gbWV0cmljOiBleGFjdF9tYXRjaAogICAgYWdncmVnYXRpb246IG1lYW4KICAgIGhpZ2hlcl9pc19iZXR0ZXI6IHRydWUKICAtIG1ldHJpYzogZjEKICAgIGFnZ3JlZ2F0aW9uOiBtZWFuCiAgICBoaWdoZXJfaXNfYmV0dGVyOiB0cnVlCiAgLSBtZXRyaWM6IGJsZXUKICAgIGFnZ3JlZ2F0aW9uOiBtZWFuCiAgICBoaWdoZXJfaXNfYmV0dGVyOiB0cnVlCmBgYAoKIyMjIFRhc2sgR3JvdXBzCgpDcmVhdGUgYG15X3Rhc2tzL19kZWZhdWx0LnlhbWxgOgpgYGB5YW1sCmdyb3VwOiBteV9ldmFsX3N1aXRlCnRhc2s6CiAgLSBzaW1wbGVfcWEKICAtIG1lZGljYWxfcWEKICAtIHB5dGhvbl9jaGFsbGVuZ2VzCmBgYAoKKipSdW4gZW50aXJlIHN1aXRlKio6CmBgYGJhc2gKbG1fZXZhbCAtLW1vZGVsIGhmIFwKICAtLW1vZGVsX2FyZ3MgcHJldHJhaW5lZD1tZXRhLWxsYW1hL0xsYW1hLTItN2ItaGYgXAogIC0tdGFza3MgbXlfZXZhbF9zdWl0ZSBcCiAgLS1pbmNsdWRlX3BhdGggbXlfdGFza3MvCmBgYAoKIyMgVGVzdGluZyBZb3VyIFRhc2sKCiMjIyBWYWxpZGF0ZSBDb25maWd1cmF0aW9uCgpgYGBiYXNoCiMgVGVzdCB0YXNrIGxvYWRpbmcKbG1fZXZhbCAtLXRhc2tzIG15X2N1c3RvbV90YXNrIC0taW5jbHVkZV9wYXRoIG15X3Rhc2tzLyAtLWxpbWl0IDAKCiMgUnVuIG9uIDUgc2FtcGxlcwpsbV9ldmFsIC0tbW9kZWwgaGYgXAogIC0tbW9kZWxfYXJncyBwcmV0cmFpbmVkPWdwdDIgXAogIC0tdGFza3MgbXlfY3VzdG9tX3Rhc2sgXAogIC0taW5jbHVkZV9wYXRoIG15X3Rhc2tzLyBcCiAgLS1saW1pdCA1CmBgYAoKIyMjIERlYnVnIE1vZGUKCmBgYGJhc2gKbG1fZXZhbCAtLW1vZGVsIGhmIFwKICAtLW1vZGVsX2FyZ3MgcHJldHJhaW5lZD1ncHQyIFwKICAtLXRhc2tzIG15X2N1c3RvbV90YXNrIFwKICAtLWluY2x1ZGVfcGF0aCBteV90YXNrcy8gXAogIC0tbGltaXQgMSBcCiAgLS1sb2dfc2FtcGxlcyAgIyBTYXZlIGlucHV0L291dHB1dCBzYW1wbGVzCmBgYAoKIyMgQmVzdCBQcmFjdGljZXMKCjEuICoqU3RhcnQgc2ltcGxlKio6IFRlc3Qgd2l0aCBtaW5pbWFsIGNvbmZpZyBmaXJzdAoyLiAqKlZlcnNpb24geW91ciB0YXNrcyoqOiBVc2UgYG1ldGFkYXRhLnZlcnNpb25gCjMuICoqRG9jdW1lbnQgeW91ciBtZXRyaWNzKio6IEV4cGxhaW4gY3VzdG9tIG1ldHJpY3MgaW4gY29tbWVudHMKNC4gKipUZXN0IHdpdGggbXVsdGlwbGUgbW9kZWxzKio6IEVuc3VyZSByb2J1c3RuZXNzCjUuICoqVmFsaWRhdGUgb24ga25vd24gZXhhbXBsZXMqKjogSW5jbHVkZSBzYW5pdHkgY2hlY2tzCjYuICoqVXNlIGZpbHRlcnMgY2FyZWZ1bGx5Kio6IENhbiBoaWRlIGVycm9ycwo3LiAqKkhhbmRsZSBlZGdlIGNhc2VzKio6IEVtcHR5IHN0cmluZ3MsIG1pc3NpbmcgZmllbGRzCgojIyBDb21tb24gUGF0dGVybnMKCiMjIyBDbGFzc2lmaWNhdGlvbiBUYXNrCgpgYGB5YW1sCm91dHB1dF90eXBlOiBsb2dsaWtlbGlob29kCmRvY190b190ZXh0OiAiVGV4dDoge3t0ZXh0fX1cbkxhYmVsOiIKZG9jX3RvX3RhcmdldDogIiB7e2xhYmVsfX0iICAjIFNwYWNlIHByZWZpeCBpbXBvcnRhbnQhCm1ldHJpY19saXN0OgogIC0gbWV0cmljOiBhY2MKICAgIGFnZ3JlZ2F0aW9uOiBtZWFuCmBgYAoKIyMjIFBlcnBsZXhpdHkgRXZhbHVhdGlvbgoKYGBgeWFtbApvdXRwdXRfdHlwZTogbG9nbGlrZWxpaG9vZF9yb2xsaW5nCmRvY190b190ZXh0OiAie3t0ZXh0fX0iCm1ldHJpY19saXN0OgogIC0gbWV0cmljOiBwZXJwbGV4aXR5CiAgICBhZ2dyZWdhdGlvbjogcGVycGxleGl0eQpgYGAKCiMjIyBSYW5raW5nIFRhc2sKCmBgYHlhbWwKb3V0cHV0X3R5cGU6IGxvZ2xpa2VsaWhvb2QKZG9jX3RvX3RleHQ6ICJRdWVyeToge3txdWVyeX19XG5QYXNzYWdlOiB7e3Bhc3NhZ2V9fVxuUmVsZXZhbnQ6Igpkb2NfdG9fdGFyZ2V0OiBbIiBZZXMiLCAiIE5vIl0KbWV0cmljX2xpc3Q6CiAgLSBtZXRyaWM6IGFjYwogICAgYWdncmVnYXRpb246IG1lYW4KYGBgCgojIyBUcm91Ymxlc2hvb3RpbmcKCioqIlRhc2sgbm90IGZvdW5kIioqOiBDaGVjayBgLS1pbmNsdWRlX3BhdGhgIGFuZCB0YXNrIG5hbWUKCioqRW1wdHkgcmVzdWx0cyoqOiBWZXJpZnkgYGRvY190b190ZXh0YCBhbmQgYGRvY190b190YXJnZXRgIHRlbXBsYXRlcwoKKipNZXRyaWMgZXJyb3JzKio6IEVuc3VyZSBtZXRyaWMgbmFtZXMgYXJlIGNvcnJlY3QgKGV4YWN0X21hdGNoLCBub3QgZXhhY3QtbWF0Y2gpCgoqKkZpbHRlciBpc3N1ZXMqKjogVGVzdCBmaWx0ZXJzIHdpdGggYC0tbG9nX3NhbXBsZXNgCgoqKlB5dGhvbiBmdW5jdGlvbiBub3QgZm91bmQqKjogQ2hlY2sgYCFmdW5jdGlvbiBtb2R1bGUuZnVuY3Rpb25fbmFtZWAgc3ludGF4CgojIyBSZWZlcmVuY2VzCgotIFRhc2sgc3lzdGVtOiBFbGV1dGhlckFJL2xtLWV2YWx1YXRpb24taGFybmVzcyBkb2NzCi0gRXhhbXBsZSB0YXNrczogYGxtX2V2YWwvdGFza3MvYCBkaXJlY3RvcnkKLSBUYXNrQ29uZmlnOiBgbG1fZXZhbC9hcGkvdGFzay5weWAK
+# Custom Tasks
+
+Complete guide to creating domain-specific evaluation tasks in lm-evaluation-harness.
+
+## Overview
+
+Custom tasks allow you to evaluate models on your own datasets and metrics. Tasks are defined using YAML configuration files with optional Python utilities for complex logic.
+
+**Why create custom tasks**:
+- Evaluate on proprietary/domain-specific data
+- Test specific capabilities not covered by existing benchmarks
+- Create evaluation pipelines for internal models
+- Reproduce research experiments
+
+## Quick Start
+
+### Minimal Custom Task
+
+Create `my_tasks/simple_qa.yaml`:
+
+```yaml
+task: simple_qa
+dataset_path: data/simple_qa.jsonl
+output_type: generate_until
+doc_to_text: "Question: {{question}}\nAnswer:"
+doc_to_target: "{{answer}}"
+metric_list:
+  - metric: exact_match
+    aggregation: mean
+    higher_is_better: true
+```
+
+**Run it**:
+```bash
+lm_eval --model hf \
+  --model_args pretrained=meta-llama/Llama-2-7b-hf \
+  --tasks simple_qa \
+  --include_path my_tasks/
+```
+
+## Task Configuration Reference
+
+### Essential Fields
+
+```yaml
+# Task identification
+task: my_custom_task           # Unique task name (required)
+task_alias: "My Task"          # Display name
+tag:                           # Tags for grouping
+  - custom
+  - domain_specific
+
+# Dataset configuration
+dataset_path: data/my_data.jsonl  # HuggingFace dataset or local path
+dataset_name: default             # Subset name (if applicable)
+training_split: train
+validation_split: validation
+test_split: test
+
+# Evaluation configuration
+output_type: generate_until    # or loglikelihood, multiple_choice
+num_fewshot: 5                 # Number of few-shot examples
+batch_size: auto               # Batch size
+
+# Prompt templates (Jinja2)
+doc_to_text: "Question: {{question}}"
+doc_to_target: "{{answer}}"
+
+# Metrics
+metric_list:
+  - metric: exact_match
+    aggregation: mean
+    higher_is_better: true
+
+# Metadata
+metadata:
+  version: 1.0
+```
+
+### Output Types
+
+**`generate_until`**: Free-form generation
+```yaml
+output_type: generate_until
+generation_kwargs:
+  max_gen_toks: 256
+  until:
+    - "\n"
+    - "."
+  temperature: 0.0
+```
+
+**`loglikelihood`**: Compute log probability of targets
+```yaml
+output_type: loglikelihood
+# Used for perplexity, classification
+```
+
+**`multiple_choice`**: Choose from options
+```yaml
+output_type: multiple_choice
+doc_to_choice: "{{choices}}"  # List of choices
+```
+
+## Data Formats
+
+### Local JSONL File
+
+`data/my_data.jsonl`:
+```json
+{"question": "What is 2+2?", "answer": "4"}
+{"question": "Capital of France?", "answer": "Paris"}
+```
+
+**Task config**:
+```yaml
+dataset_path: data/my_data.jsonl
+dataset_kwargs:
+  data_files:
+    test: data/my_data.jsonl
+```
+
+### HuggingFace Dataset
+
+```yaml
+dataset_path: squad
+dataset_name: plain_text
+test_split: validation
+```
+
+### CSV File
+
+`data/my_data.csv`:
+```csv
+question,answer,category
+What is 2+2?,4,math
+Capital of France?,Paris,geography
+```
+
+**Task config**:
+```yaml
+dataset_path: data/my_data.csv
+dataset_kwargs:
+  data_files:
+    test: data/my_data.csv
+```
+
+## Prompt Engineering
+
+### Simple Template
+
+```yaml
+doc_to_text: "Question: {{question}}\nAnswer:"
+doc_to_target: "{{answer}}"
+```
+
+### Conditional Logic
+
+```yaml
+doc_to_text: |
+  {% if context %}
+  Context: {{context}}
+  {% endif %}
+  Question: {{question}}
+  Answer:
+```
+
+### Multiple Choice
+
+```yaml
+doc_to_text: |
+  Question: {{question}}
+  A. {{choices[0]}}
+  B. {{choices[1]}}
+  C. {{choices[2]}}
+  D. {{choices[3]}}
+  Answer:
+
+doc_to_target: "{{ 'ABCD'[answer_idx] }}"
+doc_to_choice: ["A", "B", "C", "D"]
+```
+
+### Few-Shot Formatting
+
+```yaml
+fewshot_delimiter: "\n\n"        # Between examples
+target_delimiter: " "            # Between question and answer
+doc_to_text: "Q: {{question}}"
+doc_to_target: "A: {{answer}}"
+```
+
+## Custom Python Functions
+
+For complex logic, use Python functions in `utils.py`.
+
+### Create `my_tasks/utils.py`
+
+```python
+def process_docs(dataset):
+    """Preprocess documents."""
+    def _process(doc):
+        # Custom preprocessing
+        doc["question"] = doc["question"].strip().lower()
+        return doc
+
+    return dataset.map(_process)
+
+def doc_to_text(doc):
+    """Custom prompt formatting."""
+    context = doc.get("context", "")
+    question = doc["question"]
+
+    if context:
+        return f"Context: {context}\nQuestion: {question}\nAnswer:"
+    return f"Question: {question}\nAnswer:"
+
+def doc_to_target(doc):
+    """Custom target extraction."""
+    return doc["answer"].strip().lower()
+
+def aggregate_scores(items):
+    """Custom metric aggregation."""
+    correct = sum(1 for item in items if item == 1.0)
+    total = len(items)
+    return correct / total if total > 0 else 0.0
+```
+
+### Use in Task Config
+
+```yaml
+task: my_custom_task
+dataset_path: data/my_data.jsonl
+
+# Use Python functions
+process_docs: !function utils.process_docs
+doc_to_text: !function utils.doc_to_text
+doc_to_target: !function utils.doc_to_target
+
+metric_list:
+  - metric: exact_match
+    aggregation: !function utils.aggregate_scores
+    higher_is_better: true
+```
+
+## Real-World Examples
+
+### Example 1: Domain QA Task
+
+**Goal**: Evaluate medical question answering.
+
+`medical_qa/medical_qa.yaml`:
+```yaml
+task: medical_qa
+dataset_path: data/medical_qa.jsonl
+output_type: generate_until
+num_fewshot: 3
+
+doc_to_text: |
+  Medical Question: {{question}}
+  Context: {{context}}
+  Answer (be concise):
+
+doc_to_target: "{{answer}}"
+
+generation_kwargs:
+  max_gen_toks: 100
+  until:
+    - "\n\n"
+  temperature: 0.0
+
+metric_list:
+  - metric: exact_match
+    aggregation: mean
+    higher_is_better: true
+  - metric: !function utils.medical_f1
+    aggregation: mean
+    higher_is_better: true
+
+filter_list:
+  - name: lowercase
+    filter:
+      - function: lowercase
+      - function: remove_whitespace
+
+metadata:
+  version: 1.0
+  domain: medical
+```
+
+`medical_qa/utils.py`:
+```python
+from sklearn.metrics import f1_score
+import re
+
+def medical_f1(predictions, references):
+    """Custom F1 for medical terms."""
+    pred_terms = set(extract_medical_terms(predictions[0]))
+    ref_terms = set(extract_medical_terms(references[0]))
+
+    if not pred_terms and not ref_terms:
+        return 1.0
+    if not pred_terms or not ref_terms:
+        return 0.0
+
+    tp = len(pred_terms & ref_terms)
+    fp = len(pred_terms - ref_terms)
+    fn = len(ref_terms - pred_terms)
+
+    precision = tp / (tp + fp) if (tp + fp) > 0 else 0
+    recall = tp / (tp + fn) if (tp + fn) > 0 else 0
+
+    return 2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0
+
+def extract_medical_terms(text):
+    """Extract medical terminology."""
+    # Custom logic
+    return re.findall(r'\b[A-Z][a-z]+(?:[A-Z][a-z]+)*\b', text)
+```
+
+### Example 2: Code Evaluation
+
+`code_eval/python_challenges.yaml`:
+```yaml
+task: python_challenges
+dataset_path: data/python_problems.jsonl
+output_type: generate_until
+num_fewshot: 0
+
+doc_to_text: |
+  Write a Python function to solve:
+  {{problem_statement}}
+
+  Function signature:
+  {{function_signature}}
+
+doc_to_target: "{{canonical_solution}}"
+
+generation_kwargs:
+  max_gen_toks: 512
+  until:
+    - "\n\nclass"
+    - "\n\ndef"
+  temperature: 0.2
+
+metric_list:
+  - metric: !function utils.execute_code
+    aggregation: mean
+    higher_is_better: true
+
+process_results: !function utils.process_code_results
+
+metadata:
+  version: 1.0
+```
+
+`code_eval/utils.py`:
+```python
+import subprocess
+import json
+
+def execute_code(predictions, references):
+    """Execute generated code against test cases."""
+    generated_code = predictions[0]
+    test_cases = json.loads(references[0])
+
+    try:
+        # Execute code with test cases
+        for test_input, expected_output in test_cases:
+            result = execute_with_timeout(generated_code, test_input, timeout=5)
+            if result != expected_output:
+                return 0.0
+        return 1.0
+    except Exception:
+        return 0.0
+
+def execute_with_timeout(code, input_data, timeout=5):
+    """Safely execute code with timeout."""
+    # Implementation with subprocess and timeout
+    pass
+
+def process_code_results(doc, results):
+    """Process code execution results."""
+    return {
+        "passed": results[0] == 1.0,
+        "generated_code": results[1]
+    }
+```
+
+### Example 3: Instruction Following
+
+`instruction_eval/instruction_eval.yaml`:
+```yaml
+task: instruction_following
+dataset_path: data/instructions.jsonl
+output_type: generate_until
+num_fewshot: 0
+
+doc_to_text: |
+  Instruction: {{instruction}}
+  {% if constraints %}
+  Constraints: {{constraints}}
+  {% endif %}
+  Response:
+
+doc_to_target: "{{expected_response}}"
+
+generation_kwargs:
+  max_gen_toks: 256
+  temperature: 0.7
+
+metric_list:
+  - metric: !function utils.check_constraints
+    aggregation: mean
+    higher_is_better: true
+  - metric: !function utils.semantic_similarity
+    aggregation: mean
+    higher_is_better: true
+
+process_docs: !function utils.add_constraint_checkers
+```
+
+`instruction_eval/utils.py`:
+```python
+from sentence_transformers import SentenceTransformer, util
+
+model = SentenceTransformer('all-MiniLM-L6-v2')
+
+def check_constraints(predictions, references):
+    """Check if response satisfies constraints."""
+    response = predictions[0]
+    constraints = json.loads(references[0])
+
+    satisfied = 0
+    total = len(constraints)
+
+    for constraint in constraints:
+        if verify_constraint(response, constraint):
+            satisfied += 1
+
+    return satisfied / total if total > 0 else 1.0
+
+def verify_constraint(response, constraint):
+    """Verify single constraint."""
+    if constraint["type"] == "length":
+        return len(response.split()) >= constraint["min_words"]
+    elif constraint["type"] == "contains":
+        return constraint["keyword"] in response.lower()
+    # Add more constraint types
+    return True
+
+def semantic_similarity(predictions, references):
+    """Compute semantic similarity."""
+    pred_embedding = model.encode(predictions[0])
+    ref_embedding = model.encode(references[0])
+    return float(util.cos_sim(pred_embedding, ref_embedding))
+
+def add_constraint_checkers(dataset):
+    """Parse constraints into verifiable format."""
+    def _parse(doc):
+        # Parse constraint string into structured format
+        doc["parsed_constraints"] = parse_constraints(doc.get("constraints", ""))
+        return doc
+    return dataset.map(_parse)
+```
+
+## Advanced Features
+
+### Output Filtering
+
+```yaml
+filter_list:
+  - name: extract_answer
+    filter:
+      - function: regex
+        regex_pattern: "Answer: (.*)"
+        group: 1
+      - function: lowercase
+      - function: strip_whitespace
+```
+
+### Multiple Metrics
+
+```yaml
+metric_list:
+  - metric: exact_match
+    aggregation: mean
+    higher_is_better: true
+  - metric: f1
+    aggregation: mean
+    higher_is_better: true
+  - metric: bleu
+    aggregation: mean
+    higher_is_better: true
+```
+
+### Task Groups
+
+Create `my_tasks/_default.yaml`:
+```yaml
+group: my_eval_suite
+task:
+  - simple_qa
+  - medical_qa
+  - python_challenges
+```
+
+**Run entire suite**:
+```bash
+lm_eval --model hf \
+  --model_args pretrained=meta-llama/Llama-2-7b-hf \
+  --tasks my_eval_suite \
+  --include_path my_tasks/
+```
+
+## Testing Your Task
+
+### Validate Configuration
+
+```bash
+# Test task loading
+lm_eval --tasks my_custom_task --include_path my_tasks/ --limit 0
+
+# Run on 5 samples
+lm_eval --model hf \
+  --model_args pretrained=gpt2 \
+  --tasks my_custom_task \
+  --include_path my_tasks/ \
+  --limit 5
+```
+
+### Debug Mode
+
+```bash
+lm_eval --model hf \
+  --model_args pretrained=gpt2 \
+  --tasks my_custom_task \
+  --include_path my_tasks/ \
+  --limit 1 \
+  --log_samples  # Save input/output samples
+```
+
+## Best Practices
+
+1. **Start simple**: Test with minimal config first
+2. **Version your tasks**: Use `metadata.version`
+3. **Document your metrics**: Explain custom metrics in comments
+4. **Test with multiple models**: Ensure robustness
+5. **Validate on known examples**: Include sanity checks
+6. **Use filters carefully**: Can hide errors
+7. **Handle edge cases**: Empty strings, missing fields
+
+## Common Patterns
+
+### Classification Task
+
+```yaml
+output_type: loglikelihood
+doc_to_text: "Text: {{text}}\nLabel:"
+doc_to_target: " {{label}}"  # Space prefix important!
+metric_list:
+  - metric: acc
+    aggregation: mean
+```
+
+### Perplexity Evaluation
+
+```yaml
+output_type: loglikelihood_rolling
+doc_to_text: "{{text}}"
+metric_list:
+  - metric: perplexity
+    aggregation: perplexity
+```
+
+### Ranking Task
+
+```yaml
+output_type: loglikelihood
+doc_to_text: "Query: {{query}}\nPassage: {{passage}}\nRelevant:"
+doc_to_target: [" Yes", " No"]
+metric_list:
+  - metric: acc
+    aggregation: mean
+```
+
+## Troubleshooting
+
+**"Task not found"**: Check `--include_path` and task name
+
+**Empty results**: Verify `doc_to_text` and `doc_to_target` templates
+
+**Metric errors**: Ensure metric names are correct (exact_match, not exact-match)
+
+**Filter issues**: Test filters with `--log_samples`
+
+**Python function not found**: Check `!function module.function_name` syntax
+
+## References
+
+- Task system: EleutherAI/lm-evaluation-harness docs
+- Example tasks: `lm_eval/tasks/` directory
+- TaskConfig: `lm_eval/api/task.py`

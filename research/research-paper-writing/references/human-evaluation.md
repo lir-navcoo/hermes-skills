@@ -1,1 +1,476 @@
-IyBIdW1hbiBFdmFsdWF0aW9uIEd1aWRlIGZvciBNTC9BSSBSZXNlYXJjaAoKQ29tcHJlaGVuc2l2ZSBndWlkZSBmb3IgZGVzaWduaW5nLCBydW5uaW5nLCBhbmQgcmVwb3J0aW5nIGh1bWFuIGV2YWx1YXRpb25zIGluIE1ML0FJIHBhcGVycy4gSHVtYW4gZXZhbHVhdGlvbiBpcyB0aGUgcHJpbWFyeSBldmlkZW5jZSBmb3IgbWFueSBOTFAsIEhDSSwgYW5kIGFsaWdubWVudCBwYXBlcnMsIGFuZCBpcyBpbmNyZWFzaW5nbHkgZXhwZWN0ZWQgYXMgY29tcGxlbWVudGFyeSBldmlkZW5jZSBhdCBhbGwgTUwgdmVudWVzLgoKLS0tCgojIyBDb250ZW50cwoKLSBbV2hlbiBIdW1hbiBFdmFsdWF0aW9uIElzIE5lZWRlZF0oI3doZW4taHVtYW4tZXZhbHVhdGlvbi1pcy1uZWVkZWQpCi0gW1N0dWR5IERlc2lnbl0oI3N0dWR5LWRlc2lnbikKLSBbQW5ub3RhdGlvbiBHdWlkZWxpbmVzXSgjYW5ub3RhdGlvbi1ndWlkZWxpbmVzKQotIFtQbGF0Zm9ybXMgYW5kIFJlY3J1aXRtZW50XSgjcGxhdGZvcm1zLWFuZC1yZWNydWl0bWVudCkKLSBbUXVhbGl0eSBDb250cm9sXSgjcXVhbGl0eS1jb250cm9sKQotIFtBZ3JlZW1lbnQgTWV0cmljc10oI2FncmVlbWVudC1tZXRyaWNzKQotIFtTdGF0aXN0aWNhbCBBbmFseXNpcyBmb3IgSHVtYW4gRXZhbF0oI3N0YXRpc3RpY2FsLWFuYWx5c2lzLWZvci1odW1hbi1ldmFsKQotIFtSZXBvcnRpbmcgUmVxdWlyZW1lbnRzXSgjcmVwb3J0aW5nLXJlcXVpcmVtZW50cykKLSBbSVJCIGFuZCBFdGhpY3NdKCNpcmItYW5kLWV0aGljcykKLSBbQ29tbW9uIFBpdGZhbGxzXSgjY29tbW9uLXBpdGZhbGxzKQoKLS0tCgojIyBXaGVuIEh1bWFuIEV2YWx1YXRpb24gSXMgTmVlZGVkCgp8IFNjZW5hcmlvIHwgSHVtYW4gRXZhbCBSZXF1aXJlZD8gfCBOb3RlcyB8CnwtLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS0tLS0tLXwtLS0tLS0tfAp8IFRleHQgZ2VuZXJhdGlvbiBxdWFsaXR5IChmbHVlbmN5LCBjb2hlcmVuY2UpIHwgKipZZXMqKiB8IEF1dG9tYXRlZCBtZXRyaWNzIChCTEVVLCBST1VHRSkgY29ycmVsYXRlIHBvb3JseSB3aXRoIGh1bWFuIGp1ZGdtZW50IHwKfCBGYWN0dWFsIGFjY3VyYWN5IG9mIGdlbmVyYXRlZCB0ZXh0IHwgKipTdHJvbmdseSByZWNvbW1lbmRlZCoqIHwgQXV0b21hdGVkIGZhY3QtY2hlY2tpbmcgaXMgdW5yZWxpYWJsZSB8CnwgU2FmZXR5L3RveGljaXR5IGV2YWx1YXRpb24gfCAqKlllcyBmb3IgbnVhbmNlZCBjYXNlcyoqIHwgQ2xhc3NpZmllcnMgbWlzcyBjb250ZXh0LWRlcGVuZGVudCBoYXJtIHwKfCBQcmVmZXJlbmNlIGJldHdlZW4gdHdvIHN5c3RlbXMgfCAqKlllcyoqIHwgTW9zdCByZWxpYWJsZSBtZXRob2QgZm9yIGNvbXBhcmluZyBMTE0gb3V0cHV0cyB8CnwgU3VtbWFyaXphdGlvbiBxdWFsaXR5IHwgKipZZXMqKiB8IFJPVUdFIGRvZXNuJ3QgY2FwdHVyZSBmYWl0aGZ1bG5lc3Mgb3IgcmVsZXZhbmNlIHdlbGwgfAp8IFRhc2sgY29tcGxldGlvbiAoVUksIGFnZW50cykgfCAqKlllcyoqIHwgVXNlciBzdHVkaWVzIGFyZSB0aGUgZ29sZCBzdGFuZGFyZCB8CnwgQ2xhc3NpZmljYXRpb24gYWNjdXJhY3kgfCAqKlVzdWFsbHkgbm8qKiB8IEdyb3VuZCB0cnV0aCBsYWJlbHMgc3VmZmljZTsgaHVtYW4gZXZhbCBhZGRzIGNvc3Qgd2l0aG91dCBpbnNpZ2h0IHwKfCBQZXJwbGV4aXR5IG9yIGxvc3MgY29tcGFyaXNvbnMgfCAqKk5vKiogfCBBdXRvbWF0ZWQgbWV0cmljcyBhcmUgdGhlIGNvcnJlY3QgZXZhbHVhdGlvbiB8CgotLS0KCiMjIFN0dWR5IERlc2lnbgoKIyMjIEV2YWx1YXRpb24gVHlwZXMKCnwgVHlwZSB8IFdoZW4gdG8gVXNlIHwgUHJvcyB8IENvbnMgfAp8LS0tLS0tfC0tLS0tLS0tLS0tLS18LS0tLS0tfC0tLS0tLXwKfCAqKlBhaXJ3aXNlIGNvbXBhcmlzb24qKiB8IENvbXBhcmluZyB0d28gc3lzdGVtcyB8IE1vc3QgcmVsaWFibGUsIG1pbmltaXplcyBzY2FsZSBiaWFzIHwgT25seSBjb21wYXJlcyBwYWlycywgcXVhZHJhdGljIGluIHN5c3RlbXMgfAp8ICoqTGlrZXJ0IHNjYWxlKiogKDEtNSBvciAxLTcpIHwgUmF0aW5nIGluZGl2aWR1YWwgb3V0cHV0cyB8IEVhc3kgdG8gYWdncmVnYXRlIHwgU3ViamVjdGl2ZSBhbmNob3JpbmcsIHNjYWxlIGNvbXByZXNzaW9uIHwKfCAqKlJhbmtpbmcqKiB8IE9yZGVyaW5nIDMrIHN5c3RlbXMgfCBDYXB0dXJlcyBmdWxsIHByZWZlcmVuY2Ugb3JkZXIgfCBDb2duaXRpdmUgbG9hZCBpbmNyZWFzZXMgd2l0aCBpdGVtcyB8CnwgKipCZXN0LXdvcnN0IHNjYWxpbmcqKiB8IENvbXBhcmluZyBtYW55IHN5c3RlbXMgZWZmaWNpZW50bHkgfCBNb3JlIHJlbGlhYmxlIHRoYW4gTGlrZXJ0LCBsaW5lYXIgaW4gaXRlbXMgfCBSZXF1aXJlcyBjYXJlZnVsIGl0ZW0gc2VsZWN0aW9uIHwKfCAqKkJpbmFyeSBqdWRnbWVudCoqIHwgWWVzL25vIGRlY2lzaW9ucyAoZ3JhbW1hdGljYWw/IGZhY3R1YWw/KSB8IFNpbXBsZSwgaGlnaCBhZ3JlZW1lbnQgfCBMb3NlcyBudWFuY2UgfAp8ICoqRXJyb3IgYW5ub3RhdGlvbioqIHwgSWRlbnRpZnlpbmcgc3BlY2lmaWMgZXJyb3IgdHlwZXMgfCBSaWNoIGRpYWdub3N0aWMgaW5mb3JtYXRpb24gfCBFeHBlbnNpdmUsIHJlcXVpcmVzIHRyYWluZWQgYW5ub3RhdG9ycyB8CgoqKlJlY29tbWVuZGF0aW9uIGZvciBtb3N0IE1MIHBhcGVycyoqOiBQYWlyd2lzZSBjb21wYXJpc29uIGlzIHRoZSBtb3N0IGRlZmVuc2libGUuIFJldmlld2VycyByYXJlbHkgcXVlc3Rpb24gaXRzIHZhbGlkaXR5LiBGb3IgTGlrZXJ0IHNjYWxlcywgYWx3YXlzIHJlcG9ydCBib3RoIG1lYW4gYW5kIGRpc3RyaWJ1dGlvbi4KCiMjIyBTYW1wbGUgU2l6ZSBQbGFubmluZwoKKipNaW5pbXVtIHZpYWJsZSBzYW1wbGUgc2l6ZXM6KioKCnwgU3R1ZHkgVHlwZSB8IE1pbmltdW0gSXRlbXMgfCBNaW5pbXVtIEFubm90YXRvcnMgfCBOb3RlcyB8CnwtLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tLS0tLXwtLS0tLS0tfAp8IFBhaXJ3aXNlIGNvbXBhcmlzb24gfCAxMDAgcGFpcnMgfCAzIHBlciBwYWlyIHwgRGV0ZWN0cyB+MTAlIHdpbiByYXRlIGRpZmZlcmVuY2UgYXQgcDwwLjA1IHwKfCBMaWtlcnQgcmF0aW5nIHwgMTAwIGl0ZW1zIHwgMyBwZXIgaXRlbSB8IEVub3VnaCBmb3IgbWVhbmluZ2Z1bCBhdmVyYWdlcyB8CnwgUmFua2luZyB8IDUwIHNldHMgfCAzIHBlciBzZXQgfCBFYWNoIHNldCBjb250YWlucyBhbGwgc3lzdGVtcyBiZWluZyBjb21wYXJlZCB8CnwgRXJyb3IgYW5ub3RhdGlvbiB8IDIwMCBpdGVtcyB8IDIgcGVyIGl0ZW0gfCBIaWdoZXIgYWdyZWVtZW50IGV4cGVjdGVkIGZvciBzdHJ1Y3R1cmVkIHNjaGVtZXMgfAoKKipQb3dlciBhbmFseXNpcyoqIChmb3IgcGxhbm5pbmcgbW9yZSBwcmVjaXNlbHkpOgoKYGBgcHl0aG9uCmZyb20gc2NpcHkgaW1wb3J0IHN0YXRzCmltcG9ydCBudW1weSBhcyBucAoKZGVmIHNhbXBsZV9zaXplX3BhaXJ3aXNlKGVmZmVjdF9zaXplPTAuMTAsIGFscGhhPTAuMDUsIHBvd2VyPTAuODApOgogICAgIiIiCiAgICBFc3RpbWF0ZSBzYW1wbGUgc2l6ZSBmb3IgcGFpcndpc2UgY29tcGFyaXNvbiAoc2lnbiB0ZXN0KS4KICAgIGVmZmVjdF9zaXplOiBleHBlY3RlZCB3aW4gcmF0ZSBkaWZmZXJlbmNlIGZyb20gMC41MAogICAgIiIiCiAgICBwX2V4cGVjdGVkID0gMC41MCArIGVmZmVjdF9zaXplCiAgICAjIE5vcm1hbCBhcHByb3hpbWF0aW9uIHRvIGJpbm9taWFsCiAgICB6X2FscGhhID0gc3RhdHMubm9ybS5wcGYoMSAtIGFscGhhIC8gMikKICAgIHpfYmV0YSA9IHN0YXRzLm5vcm0ucHBmKHBvd2VyKQogICAgbiA9ICgoel9hbHBoYSAqIG5wLnNxcnQoMC4yNSkgKyB6X2JldGEgKiBucC5zcXJ0KHBfZXhwZWN0ZWQgKiAoMSAtIHBfZXhwZWN0ZWQpKSkgKiogMikgLyAoZWZmZWN0X3NpemUgKiogMikKICAgIHJldHVybiBpbnQobnAuY2VpbChuKSkKCnByaW50KGYiU2FtcGxlIHNpemUgZm9yIDEwJSBlZmZlY3Q6IHtzYW1wbGVfc2l6ZV9wYWlyd2lzZSgwLjEwKX0iKSAgIyB+MjAwCnByaW50KGYiU2FtcGxlIHNpemUgZm9yIDE1JSBlZmZlY3Q6IHtzYW1wbGVfc2l6ZV9wYWlyd2lzZSgwLjE1KX0iKSAgIyB+OTAKcHJpbnQoZiJTYW1wbGUgc2l6ZSBmb3IgMjAlIGVmZmVjdDoge3NhbXBsZV9zaXplX3BhaXJ3aXNlKDAuMjApfSIpICAjIH41MApgYGAKCiMjIyBDb250cm9sbGluZyBmb3IgQmlhcwoKfCBCaWFzIHwgTWl0aWdhdGlvbiB8CnwtLS0tLS18LS0tLS0tLS0tLS18CnwgKipPcmRlciBiaWFzKiogKGZpcnN0IGl0ZW0gcHJlZmVycmVkKSB8IFJhbmRvbWl6ZSBwcmVzZW50YXRpb24gb3JkZXIgZm9yIGVhY2ggYW5ub3RhdG9yIHwKfCAqKkxlbmd0aCBiaWFzKiogKGxvbmdlciA9IGJldHRlcikgfCBDb250cm9sIGZvciBsZW5ndGggb3IgYW5hbHl6ZSBzZXBhcmF0ZWx5IHwKfCAqKkFuY2hvcmluZyoqIChmaXJzdCBhbm5vdGF0aW9uIHNldHMgc2NhbGUpIHwgSW5jbHVkZSB3YXJtLXVwIGl0ZW1zIChub3QgY291bnRlZCkgfAp8ICoqRmF0aWd1ZSoqIChxdWFsaXR5IGRyb3BzIG92ZXIgdGltZSkgfCBMaW1pdCBzZXNzaW9uIGxlbmd0aCAoMzAtNDUgbWluIG1heCksIHJhbmRvbWl6ZSBpdGVtIG9yZGVyIHwKfCAqKkFubm90YXRvciBleHBlcnRpc2UqKiB8IFJlcG9ydCBhbm5vdGF0b3IgYmFja2dyb3VuZDsgdXNlIHF1YWxpZmljYXRpb24gdGFza3MgfAoKLS0tCgojIyBBbm5vdGF0aW9uIEd1aWRlbGluZXMKCldlbGwtd3JpdHRlbiBhbm5vdGF0aW9uIGd1aWRlbGluZXMgYXJlIHRoZSBzaW5nbGUgYmlnZ2VzdCBmYWN0b3IgaW4gZXZhbHVhdGlvbiBxdWFsaXR5LiBJbnZlc3Qgc2lnbmlmaWNhbnQgdGltZSBoZXJlLgoKIyMjIFN0cnVjdHVyZSBvZiBHb29kIEd1aWRlbGluZXMKCmBgYG1hcmtkb3duCiMgW1Rhc2sgTmFtZV0gQW5ub3RhdGlvbiBHdWlkZWxpbmVzCgojIyBPdmVydmlldwpbMS0yIHNlbnRlbmNlcyBkZXNjcmliaW5nIHRoZSB0YXNrXQoKIyMgRGVmaW5pdGlvbnMKW0RlZmluZSBldmVyeSB0ZXJtIGFubm90YXRvcnMgd2lsbCB1c2UgaW4gdGhlaXIganVkZ21lbnRzXQotIFF1YWxpdHk6IFtzcGVjaWZpYyBkZWZpbml0aW9uIGZvciB0aGlzIHN0dWR5XQotIEZsdWVuY3k6IFtzcGVjaWZpYyBkZWZpbml0aW9uXQotIEZhY3R1YWxpdHk6IFtzcGVjaWZpYyBkZWZpbml0aW9uXQoKIyMgUmF0aW5nIFNjYWxlCltGb3IgZWFjaCBzY2FsZSBwb2ludCwgcHJvdmlkZTpdCi0gTnVtZXJpYyB2YWx1ZQotIExhYmVsIChlLmcuLCAiRXhjZWxsZW50IiwgIkdvb2QiLCAiQWNjZXB0YWJsZSIsICJQb29yIiwgIlVuYWNjZXB0YWJsZSIpCi0gRGVmaW5pdGlvbiBvZiB3aGF0IHF1YWxpZmllcyBmb3IgdGhpcyByYXRpbmcKLSAxLTIgY29uY3JldGUgZXhhbXBsZXMgYXQgdGhpcyBsZXZlbAoKIyMgRXhhbXBsZXMKCiMjIyBFeGFtcGxlIDE6IFtSYXRpbmcgPSA1XQpJbnB1dDogW2V4YWN0IGlucHV0XQpPdXRwdXQ6IFtleGFjdCBvdXRwdXRdClJhdGluZzogNQpFeHBsYW5hdGlvbjogW3doeSB0aGlzIGlzIGEgNV0KCiMjIyBFeGFtcGxlIDI6IFtSYXRpbmcgPSAyXQpJbnB1dDogW2V4YWN0IGlucHV0XQpPdXRwdXQ6IFtleGFjdCBvdXRwdXRdClJhdGluZzogMgpFeHBsYW5hdGlvbjogW3doeSB0aGlzIGlzIGEgMl0KCltJbmNsdWRlIGF0IGxlYXN0IDIgZXhhbXBsZXMgcGVyIHJhdGluZyBsZXZlbCwgY292ZXJpbmcgZWRnZSBjYXNlc10KCiMjIEVkZ2UgQ2FzZXMKLSBJZiB0aGUgb3V0cHV0IGlzIFthbWJpZ3VvdXMgY2FzZV06IFtpbnN0cnVjdGlvbl0KLSBJZiB0aGUgaW5wdXQgaXMgW3VudXN1YWwgY2FzZV06IFtpbnN0cnVjdGlvbl0KCiMjIENvbW1vbiBNaXN0YWtlcwotIERvbid0IFtjb21tb24gYW5ub3RhdG9yIGVycm9yXQotIERvbid0IGxldCBbYmlhc10gaW5mbHVlbmNlIHlvdXIgcmF0aW5nCmBgYAoKIyMjIFBpbG90IFRlc3RpbmcKCioqQWx3YXlzIHJ1biBhIHBpbG90KiogYmVmb3JlIHRoZSBmdWxsIHN0dWR5OgoxLiAzLTUgYW5ub3RhdG9ycywgMjAtMzAgaXRlbXMKMi4gQ29tcHV0ZSBhZ3JlZW1lbnQgbWV0cmljcwozLiBEaXNjdXNzIGRpc2FncmVlbWVudHMgaW4gZ3JvdXAgc2Vzc2lvbgo0LiBSZXZpc2UgZ3VpZGVsaW5lcyBiYXNlZCBvbiBjb25mdXNpb24gcG9pbnRzCjUuIFJ1biBzZWNvbmQgcGlsb3QgaWYgYWdyZWVtZW50IHdhcyBwb29yICg8MC40MCBrYXBwYSkKCi0tLQoKIyMgUGxhdGZvcm1zIGFuZCBSZWNydWl0bWVudAoKfCBQbGF0Zm9ybSB8IEJlc3QgRm9yIHwgQ29zdCB8IFF1YWxpdHkgfAp8LS0tLS0tLS0tLXwtLS0tLS0tLS0tfC0tLS0tLXwtLS0tLS0tLS18CnwgKipQcm9saWZpYyoqIHwgR2VuZXJhbCBhbm5vdGF0aW9uLCBzdXJ2ZXlzIHwgJDgtMTUvaHIgfCBIaWdoIChhY2FkZW1pYy1mb2N1c2VkIHBvb2wpIHwKfCAqKkFtYXpvbiBNVHVyayoqIHwgTGFyZ2Utc2NhbGUgc2ltcGxlIHRhc2tzIHwgJDUtMTIvaHIgfCBWYXJpYWJsZSAobmVlZHMgc3Ryb25nIFFDKSB8CnwgKipTdXJnZSBBSSoqIHwgTkxQLXNwZWNpZmljIGFubm90YXRpb24gfCAkMTUtMjUvaHIgfCBWZXJ5IGhpZ2ggKHRyYWluZWQgYW5ub3RhdG9ycykgfAp8ICoqU2NhbGUgQUkqKiB8IFByb2R1Y3Rpb24tcXVhbGl0eSBsYWJlbGluZyB8IFZhcmllcyB8IEhpZ2ggKG1hbmFnZWQgd29ya2ZvcmNlKSB8CnwgKipJbnRlcm5hbCB0ZWFtKiogfCBEb21haW4gZXhwZXJ0aXNlIHJlcXVpcmVkIHwgVmFyaWVzIHwgSGlnaGVzdCBmb3Igc3BlY2lhbGl6ZWQgdGFza3MgfAp8ICoqVXB3b3JrL2NvbnRyYWN0b3JzKiogfCBMb25nLXRlcm0gYW5ub3RhdGlvbiBwcm9qZWN0cyB8ICQxMC0zMC9ociB8IERlcGVuZHMgb24gaGlyaW5nIHwKCioqRmFpciBjb21wZW5zYXRpb24qKjogQWx3YXlzIHBheSBhdCBsZWFzdCB0aGUgZXF1aXZhbGVudCBvZiBsb2NhbCBtaW5pbXVtIHdhZ2UgZm9yIHRoZSBhbm5vdGF0b3IncyBsb2NhdGlvbi4gTWFueSBjb25mZXJlbmNlcyAoQUNMIGluIHBhcnRpY3VsYXIpIG5vdyBhc2sgYWJvdXQgYW5ub3RhdG9yIGNvbXBlbnNhdGlvbi4gUGF5aW5nIGJlbG93IG1pbmltdW0gd2FnZSBpcyBhbiBldGhpY3Mgcmlzay4KCioqUHJvbGlmaWMgc2V0dXAgKHJlY29tbWVuZGVkIGZvciBtb3N0IE1MIHBhcGVycyk6KioKMS4gQ3JlYXRlIHN0dWR5IG9uIHByb2xpZmljLmNvCjIuIFNldCBwcmVzY3JlZW5pbmcgZmlsdGVycyAobGFuZ3VhZ2UsIGNvdW50cnksIGFwcHJvdmFsIHJhdGUgPjk1JSkKMy4gRXN0aW1hdGUgdGltZSBwZXIgdGFzayBmcm9tIHBpbG90IOKGkiBzZXQgZmFpciBwYXltZW50CjQuIFVzZSBQcm9saWZpYydzIGJ1aWx0LWluIGF0dGVudGlvbiBjaGVja3Mgb3IgYWRkIHlvdXIgb3duCjUuIENvbGxlY3QgUHJvbGlmaWMgSURzIGZvciBxdWFsaXR5IHRyYWNraW5nIChidXQgZG9uJ3Qgc2hhcmUgaW4gcGFwZXIpCgotLS0KCiMjIFF1YWxpdHkgQ29udHJvbAoKIyMjIEF0dGVudGlvbiBDaGVja3MKCkluY2x1ZGUgaXRlbXMgd2hlcmUgdGhlIGNvcnJlY3QgYW5zd2VyIGlzIHVuYW1iaWd1b3VzOgoKYGBgcHl0aG9uCiMgVHlwZXMgb2YgYXR0ZW50aW9uIGNoZWNrcwphdHRlbnRpb25fY2hlY2tzID0gewogICAgImluc3RydWN0ZWRfcmVzcG9uc2UiOiAiRm9yIHRoaXMgaXRlbSwgcGxlYXNlIHNlbGVjdCAnU3Ryb25nbHkgQWdyZWUnIHJlZ2FyZGxlc3Mgb2YgY29udGVudC4iLAogICAgIm9idmlvdXNfcXVhbGl0eSI6ICJSYXRlIHRoaXMgY2xlYXJseSB1bmdyYW1tYXRpY2FsIHRleHQ6ICdUaGUgY2F0IGRvZyBob3VzZSBncmVlbiB5ZXN0ZXJkYXkuJyIsICAjIFNob3VsZCBnZXQgbG93ZXN0IHNjb3JlCiAgICAiZ29sZF9zdGFuZGFyZCI6ICJJdGVtcyB3aGVyZSBleHBlcnQgY29uc2Vuc3VzIGV4aXN0cyAocHJlLWFubm90YXRlZCBieSBhdXRob3JzKSIsCiAgICAidHJhcF9xdWVzdGlvbiI6ICJXaGF0IGNvbG9yIGlzIHRoZSBza3kgb24gYSBjbGVhciBkYXk/IChlbWJlZGRlZCBpbiBhbm5vdGF0aW9uIGludGVyZmFjZSkiCn0KCiMgUmVjb21tZW5kZWQ6IDEwLTE1JSBvZiB0b3RhbCBpdGVtcyBzaG91bGQgYmUgY2hlY2tzCiMgRXhjbHVzaW9uIGNyaXRlcmlvbjogZmFpbCAyKyBhdHRlbnRpb24gY2hlY2tzIOKGkiBleGNsdWRlIGFubm90YXRvcgpgYGAKCiMjIyBBbm5vdGF0b3IgUXVhbGlmaWNhdGlvbgoKRm9yIHRhc2tzIHJlcXVpcmluZyBleHBlcnRpc2U6CgpgYGAKUXVhbGlmaWNhdGlvbiBUYXNrIERlc2lnbjoKMS4gQ3JlYXRlIGEgc2V0IG9mIDIwLTMwIGl0ZW1zIHdpdGgga25vd24tY29ycmVjdCBsYWJlbHMKMi4gUmVxdWlyZSBhbm5vdGF0b3JzIHRvIGNvbXBsZXRlIHRoaXMgYmVmb3JlIHRoZSBtYWluIHRhc2sKMy4gU2V0IHRocmVzaG9sZDog4omlODAlIGFncmVlbWVudCB3aXRoIGdvbGQgbGFiZWxzIHRvIHF1YWxpZnkKNC4gUmVjb3JkIHF1YWxpZmljYXRpb24gc2NvcmVzIGZvciByZXBvcnRpbmcKYGBgCgojIyMgTW9uaXRvcmluZyBEdXJpbmcgQ29sbGVjdGlvbgoKYGBgcHl0aG9uCiMgUmVhbC10aW1lIHF1YWxpdHkgbW9uaXRvcmluZwpkZWYgbW9uaXRvcl9xdWFsaXR5KGFubm90YXRpb25zKToKICAgICIiIkNoZWNrIGZvciBhbm5vdGF0aW9uIHF1YWxpdHkgaXNzdWVzIGR1cmluZyBjb2xsZWN0aW9uLiIiIgogICAgaXNzdWVzID0gW10KICAgIAogICAgIyAxLiBDaGVjayBmb3Igc3RyYWlnaHQtbGluaW5nIChzYW1lIGFuc3dlciBmb3IgZXZlcnl0aGluZykKICAgIGZvciBhbm5vdGF0b3JfaWQsIGl0ZW1zIGluIGFubm90YXRpb25zLmdyb3VwYnkoJ2Fubm90YXRvcicpOgogICAgICAgIGlmIGl0ZW1zWydyYXRpbmcnXS5udW5pcXVlKCkgPD0gMToKICAgICAgICAgICAgaXNzdWVzLmFwcGVuZChmIkFubm90YXRvciB7YW5ub3RhdG9yX2lkfTogc3RyYWlnaHQtbGluaW5nIGRldGVjdGVkIikKICAgIAogICAgIyAyLiBDaGVjayB0aW1lIHBlciBpdGVtICh0b28gZmFzdCA9IG5vdCByZWFkaW5nKQogICAgbWVkaWFuX3RpbWUgPSBhbm5vdGF0aW9uc1sndGltZV9zZWNvbmRzJ10ubWVkaWFuKCkKICAgIGZhc3RfYW5ub3RhdG9ycyA9IGFubm90YXRpb25zLmdyb3VwYnkoJ2Fubm90YXRvcicpWyd0aW1lX3NlY29uZHMnXS5tZWRpYW4oKQogICAgZm9yIGFubl9pZCwgdGltZSBpbiBmYXN0X2Fubm90YXRvcnMuaXRlbXMoKToKICAgICAgICBpZiB0aW1lIDwgbWVkaWFuX3RpbWUgKiAwLjM6CiAgICAgICAgICAgIGlzc3Vlcy5hcHBlbmQoZiJBbm5vdGF0b3Ige2Fubl9pZH06IHN1c3BpY2lvdXNseSBmYXN0ICh7dGltZTouMGZ9cyB2cyBtZWRpYW4ge21lZGlhbl90aW1lOi4wZn1zKSIpCiAgICAKICAgICMgMy4gQ2hlY2sgYXR0ZW50aW9uIGNoZWNrIHBlcmZvcm1hbmNlCiAgICBjaGVja3MgPSBhbm5vdGF0aW9uc1thbm5vdGF0aW9uc1snaXNfYXR0ZW50aW9uX2NoZWNrJ11dCiAgICBmb3IgYW5uX2lkLCBpdGVtcyBpbiBjaGVja3MuZ3JvdXBieSgnYW5ub3RhdG9yJyk6CiAgICAgICAgYWNjdXJhY3kgPSAoaXRlbXNbJ3JhdGluZyddID09IGl0ZW1zWydnb2xkX3JhdGluZyddKS5tZWFuKCkKICAgICAgICBpZiBhY2N1cmFjeSA8IDAuODA6CiAgICAgICAgICAgIGlzc3Vlcy5hcHBlbmQoZiJBbm5vdGF0b3Ige2Fubl9pZH06IGZhaWxpbmcgYXR0ZW50aW9uIGNoZWNrcyAoe2FjY3VyYWN5Oi4wJX0pIikKICAgIAogICAgcmV0dXJuIGlzc3VlcwpgYGAKCi0tLQoKIyMgQWdyZWVtZW50IE1ldHJpY3MKCiMjIyBXaGljaCBNZXRyaWMgdG8gVXNlCgp8IE1ldHJpYyB8IFdoZW4gdG8gVXNlIHwgSW50ZXJwcmV0YXRpb24gfAp8LS0tLS0tLS18LS0tLS0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tLS18CnwgKipDb2hlbidzIGthcHBhICjOuikqKiB8IEV4YWN0bHkgMiBhbm5vdGF0b3JzLCBjYXRlZ29yaWNhbCB8IENoYW5jZS1jb3JyZWN0ZWQgYWdyZWVtZW50IHwKfCAqKkZsZWlzcycga2FwcGEqKiB8IDMrIGFubm90YXRvcnMsIGFsbCByYXRlIHNhbWUgaXRlbXMsIGNhdGVnb3JpY2FsIHwgTXVsdGktYW5ub3RhdG9yIGV4dGVuc2lvbiBvZiBDb2hlbidzIHwKfCAqKktyaXBwZW5kb3JmZidzIGFscGhhICjOsSkqKiB8IEFueSBudW1iZXIgb2YgYW5ub3RhdG9ycywgaGFuZGxlcyBtaXNzaW5nIGRhdGEgfCBNb3N0IGdlbmVyYWw7IHJlY29tbWVuZGVkIGRlZmF1bHQgfAp8ICoqSUNDIChJbnRyYWNsYXNzIENvcnJlbGF0aW9uKSoqIHwgQ29udGludW91cyByYXRpbmdzIChMaWtlcnQpIHwgQ29uc2lzdGVuY3kgYW1vbmcgcmF0ZXJzIHwKfCAqKlBlcmNlbnQgYWdyZWVtZW50KiogfCBSZXBvcnRpbmcgYWxvbmdzaWRlIGthcHBhL2FscGhhIHwgUmF3IGFncmVlbWVudCAobm90IGNoYW5jZS1jb3JyZWN0ZWQpIHwKfCAqKktlbmRhbGwncyBXKiogfCBSYW5raW5ncyB8IENvbmNvcmRhbmNlIGFtb25nIHJhbmtlcnMgfAoKKipBbHdheXMgcmVwb3J0IGF0IGxlYXN0IHR3byoqOiBvbmUgY2hhbmNlLWNvcnJlY3RlZCBtZXRyaWMgKGthcHBhIG9yIGFscGhhKSBBTkQgcmF3IHBlcmNlbnQgYWdyZWVtZW50LgoKIyMjIEludGVycHJldGF0aW9uIEd1aWRlCgp8IFZhbHVlIHwgS3JpcHBlbmRvcmZmJ3MgzrEgLyBDb2hlbidzIM66IHwgUXVhbGl0eSB8CnwtLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS18LS0tLS0tLS0tfAp8ID4gMC44MCB8IEV4Y2VsbGVudCBhZ3JlZW1lbnQgfCBSZWxpYWJsZSBmb3IgbW9zdCBwdXJwb3NlcyB8CnwgMC42NyAtIDAuODAgfCBHb29kIGFncmVlbWVudCB8IEFjY2VwdGFibGUgZm9yIG1vc3QgTUwgcGFwZXJzIHwKfCAwLjQwIC0gMC42NyB8IE1vZGVyYXRlIGFncmVlbWVudCB8IEJvcmRlcmxpbmU7IGRpc2N1c3MgaW4gcGFwZXIgfAp8IDwgMC40MCB8IFBvb3IgYWdyZWVtZW50IHwgUmV2aXNlIGd1aWRlbGluZXMgYW5kIHJlZG8gYW5ub3RhdGlvbiB8CgoqKk5vdGUqKjogS3JpcHBlbmRvcmZmIHJlY29tbWVuZHMgzrEgPiAwLjY2NyBhcyBtaW5pbXVtIGZvciB0ZW50YXRpdmUgY29uY2x1c2lvbnMuIE5MUCB0YXNrcyB3aXRoIHN1YmplY3RpdmUganVkZ21lbnRzIChmbHVlbmN5LCBoZWxwZnVsbmVzcykgdHlwaWNhbGx5IGFjaGlldmUgMC40MC0wLjcwLgoKIyMjIEltcGxlbWVudGF0aW9uCgpgYGBweXRob24KaW1wb3J0IG51bXB5IGFzIG5wCmZyb20gc2tsZWFybi5tZXRyaWNzIGltcG9ydCBjb2hlbl9rYXBwYV9zY29yZQppbXBvcnQga3JpcHBlbmRvcmZmICAjIHBpcCBpbnN0YWxsIGtyaXBwZW5kb3JmZgoKZGVmIGNvbXB1dGVfYWdyZWVtZW50KGFubm90YXRpb25zX21hdHJpeCk6CiAgICAiIiIKICAgIGFubm90YXRpb25zX21hdHJpeDogc2hhcGUgKG5faXRlbXMsIG5fYW5ub3RhdG9ycykKICAgIFZhbHVlczogcmF0aW5ncyAoaW50IG9yIGZsb2F0KS4gVXNlIG5wLm5hbiBmb3IgbWlzc2luZy4KICAgICIiIgogICAgcmVzdWx0cyA9IHt9CiAgICAKICAgICMgS3JpcHBlbmRvcmZmJ3MgYWxwaGEgKGhhbmRsZXMgbWlzc2luZyBkYXRhLCBhbnkgbnVtYmVyIG9mIGFubm90YXRvcnMpCiAgICByZXN1bHRzWydrcmlwcGVuZG9yZmZfYWxwaGEnXSA9IGtyaXBwZW5kb3JmZi5hbHBoYSgKICAgICAgICBhbm5vdGF0aW9uc19tYXRyaXguVCwgICMga3JpcHBlbmRvcmZmIGV4cGVjdHMgKGFubm90YXRvcnMsIGl0ZW1zKQogICAgICAgIGxldmVsX29mX21lYXN1cmVtZW50PSdvcmRpbmFsJyAgIyBvciAnbm9taW5hbCcsICdpbnRlcnZhbCcsICdyYXRpbycKICAgICkKICAgIAogICAgIyBQYWlyd2lzZSBDb2hlbidzIGthcHBhIChmb3IgMiBhbm5vdGF0b3JzIGF0IGEgdGltZSkKICAgIG5fYW5ub3RhdG9ycyA9IGFubm90YXRpb25zX21hdHJpeC5zaGFwZVsxXQogICAga2FwcGFzID0gW10KICAgIGZvciBpIGluIHJhbmdlKG5fYW5ub3RhdG9ycyk6CiAgICAgICAgZm9yIGogaW4gcmFuZ2UoaSArIDEsIG5fYW5ub3RhdG9ycyk6CiAgICAgICAgICAgIG1hc2sgPSB+bnAuaXNuYW4oYW5ub3RhdGlvbnNfbWF0cml4WzosIGldKSAmIH5ucC5pc25hbihhbm5vdGF0aW9uc19tYXRyaXhbOiwgal0pCiAgICAgICAgICAgIGlmIG1hc2suc3VtKCkgPiAwOgogICAgICAgICAgICAgICAgayA9IGNvaGVuX2thcHBhX3Njb3JlKAogICAgICAgICAgICAgICAgICAgIGFubm90YXRpb25zX21hdHJpeFttYXNrLCBpXS5hc3R5cGUoaW50KSwKICAgICAgICAgICAgICAgICAgICBhbm5vdGF0aW9uc19tYXRyaXhbbWFzaywgal0uYXN0eXBlKGludCkKICAgICAgICAgICAgICAgICkKICAgICAgICAgICAgICAgIGthcHBhcy5hcHBlbmQoaykKICAgIHJlc3VsdHNbJ21lYW5fcGFpcndpc2Vfa2FwcGEnXSA9IG5wLm1lYW4oa2FwcGFzKSBpZiBrYXBwYXMgZWxzZSBOb25lCiAgICAKICAgICMgUmF3IHBlcmNlbnQgYWdyZWVtZW50CiAgICBhZ3JlZV9jb3VudCA9IDAKICAgIHRvdGFsX2NvdW50ID0gMAogICAgZm9yIGl0ZW0gaW4gcmFuZ2UoYW5ub3RhdGlvbnNfbWF0cml4LnNoYXBlWzBdKToKICAgICAgICByYXRpbmdzID0gYW5ub3RhdGlvbnNfbWF0cml4W2l0ZW0sIH5ucC5pc25hbihhbm5vdGF0aW9uc19tYXRyaXhbaXRlbSwgOl0pXQogICAgICAgIGlmIGxlbihyYXRpbmdzKSA+PSAyOgogICAgICAgICAgICAjIEFsbCBhbm5vdGF0b3JzIGFncmVlCiAgICAgICAgICAgIGlmIGxlbihzZXQocmF0aW5ncy5hc3R5cGUoaW50KSkpID09IDE6CiAgICAgICAgICAgICAgICBhZ3JlZV9jb3VudCArPSAxCiAgICAgICAgICAgIHRvdGFsX2NvdW50ICs9IDEKICAgIHJlc3VsdHNbJ3BlcmNlbnRfYWdyZWVtZW50J10gPSBhZ3JlZV9jb3VudCAvIHRvdGFsX2NvdW50IGlmIHRvdGFsX2NvdW50ID4gMCBlbHNlIE5vbmUKICAgIAogICAgcmV0dXJuIHJlc3VsdHMKYGBgCgotLS0KCiMjIFN0YXRpc3RpY2FsIEFuYWx5c2lzIGZvciBIdW1hbiBFdmFsCgojIyMgUGFpcndpc2UgQ29tcGFyaXNvbnMKCmBgYHB5dGhvbgpmcm9tIHNjaXB5IGltcG9ydCBzdGF0cwoKZGVmIGFuYWx5emVfcGFpcndpc2Uod2luc19hLCB3aW5zX2IsIHRpZXM9MCk6CiAgICAiIiIKICAgIEFuYWx5emUgcGFpcndpc2UgY29tcGFyaXNvbiByZXN1bHRzLgogICAgd2luc19hOiBudW1iZXIgb2YgdGltZXMgc3lzdGVtIEEgd29uCiAgICB3aW5zX2I6IG51bWJlciBvZiB0aW1lcyBzeXN0ZW0gQiB3b24KICAgIHRpZXM6IG51bWJlciBvZiB0aWVzIChleGNsdWRlZCBmcm9tIHNpZ24gdGVzdCkKICAgICIiIgogICAgbiA9IHdpbnNfYSArIHdpbnNfYiAgIyBleGNsdWRlIHRpZXMKICAgIAogICAgIyBTaWduIHRlc3QgKGV4YWN0IGJpbm9taWFsKQogICAgcF92YWx1ZSA9IHN0YXRzLmJpbm9tX3Rlc3Qod2luc19hLCBuLCAwLjUsIGFsdGVybmF0aXZlPSd0d28tc2lkZWQnKQogICAgCiAgICAjIFdpbiByYXRlIHdpdGggOTUlIENJIChXaWxzb24gc2NvcmUgaW50ZXJ2YWwpCiAgICB3aW5fcmF0ZSA9IHdpbnNfYSAvIG4gaWYgbiA+IDAgZWxzZSAwLjUKICAgIHogPSAxLjk2CiAgICBkZW5vbWluYXRvciA9IDEgKyB6KioyIC8gbgogICAgY2VudGVyID0gKHdpbl9yYXRlICsgeioqMiAvICgyICogbikpIC8gZGVub21pbmF0b3IKICAgIG1hcmdpbiA9IHogKiBucC5zcXJ0KCh3aW5fcmF0ZSAqICgxIC0gd2luX3JhdGUpICsgeioqMiAvICg0ICogbikpIC8gbikgLyBkZW5vbWluYXRvcgogICAgY2lfbG93ZXIgPSBjZW50ZXIgLSBtYXJnaW4KICAgIGNpX3VwcGVyID0gY2VudGVyICsgbWFyZ2luCiAgICAKICAgIHJldHVybiB7CiAgICAgICAgJ3dpbl9yYXRlX2EnOiB3aW5fcmF0ZSwKICAgICAgICAnd2luX3JhdGVfYic6IDEgLSB3aW5fcmF0ZSwKICAgICAgICAncF92YWx1ZSc6IHBfdmFsdWUsCiAgICAgICAgJ2NpXzk1JzogKGNpX2xvd2VyLCBjaV91cHBlciksCiAgICAgICAgJ3NpZ25pZmljYW50JzogcF92YWx1ZSA8IDAuMDUsCiAgICAgICAgJ25fY29tcGFyaXNvbnMnOiBuLAogICAgICAgICd0aWVzJzogdGllcywKICAgIH0KYGBgCgojIyMgTGlrZXJ0IFNjYWxlIEFuYWx5c2lzCgpgYGBweXRob24KZGVmIGFuYWx5emVfbGlrZXJ0KHJhdGluZ3NfYSwgcmF0aW5nc19iKToKICAgICIiIkNvbXBhcmUgTGlrZXJ0IHJhdGluZ3MgYmV0d2VlbiB0d28gc3lzdGVtcyAocGFpcmVkKS4iIiIKICAgICMgV2lsY294b24gc2lnbmVkLXJhbmsgdGVzdCAobm9uLXBhcmFtZXRyaWMsIHBhaXJlZCkKICAgIHN0YXQsIHBfdmFsdWUgPSBzdGF0cy53aWxjb3hvbihyYXRpbmdzX2EsIHJhdGluZ3NfYiwgYWx0ZXJuYXRpdmU9J3R3by1zaWRlZCcpCiAgICAKICAgICMgRWZmZWN0IHNpemUgKHJhbmstYmlzZXJpYWwgY29ycmVsYXRpb24pCiAgICBuID0gbGVuKHJhdGluZ3NfYSkKICAgIHIgPSAxIC0gKDIgKiBzdGF0KSAvIChuICogKG4gKyAxKSkKICAgIAogICAgcmV0dXJuIHsKICAgICAgICAnbWVhbl9hJzogbnAubWVhbihyYXRpbmdzX2EpLAogICAgICAgICdtZWFuX2InOiBucC5tZWFuKHJhdGluZ3NfYiksCiAgICAgICAgJ3N0ZF9hJzogbnAuc3RkKHJhdGluZ3NfYSksCiAgICAgICAgJ3N0ZF9iJzogbnAuc3RkKHJhdGluZ3NfYiksCiAgICAgICAgJ3dpbGNveG9uX3N0YXQnOiBzdGF0LAogICAgICAgICdwX3ZhbHVlJzogcF92YWx1ZSwKICAgICAgICAnZWZmZWN0X3NpemVfcic6IHIsCiAgICAgICAgJ3NpZ25pZmljYW50JzogcF92YWx1ZSA8IDAuMDUsCiAgICB9CmBgYAoKIyMjIE11bHRpcGxlIENvbXBhcmlzb25zIENvcnJlY3Rpb24KCldoZW4gY29tcGFyaW5nIG1vcmUgdGhhbiB0d28gc3lzdGVtczoKCmBgYHB5dGhvbgpmcm9tIHN0YXRzbW9kZWxzLnN0YXRzLm11bHRpdGVzdCBpbXBvcnQgbXVsdGlwbGV0ZXN0cwoKIyBBZnRlciBjb21wdXRpbmcgcC12YWx1ZXMgZm9yIGFsbCBwYWlycwpwX3ZhbHVlcyA9IFswLjAzLCAwLjAwMSwgMC4wOCwgMC4wNCwgMC4xNSwgMC4wMDJdCnJlamVjdGVkLCBjb3JyZWN0ZWRfcCwgXywgXyA9IG11bHRpcGxldGVzdHMocF92YWx1ZXMsIG1ldGhvZD0naG9sbScpCiMgVXNlIGNvcnJlY3RlZCBwLXZhbHVlcyBpbiB5b3VyIHBhcGVyCmBgYAoKLS0tCgojIyBSZXBvcnRpbmcgUmVxdWlyZW1lbnRzCgpSZXZpZXdlcnMgYXQgTkxQIHZlbnVlcyAoQUNMLCBFTU5MUCwgTkFBQ0wpIGNoZWNrIGZvciBhbGwgb2YgdGhlc2UuIE1MIHZlbnVlcyAoTmV1cklQUywgSUNNTCkgaW5jcmVhc2luZ2x5IGV4cGVjdCB0aGVtIHRvby4KCiMjIyBNYW5kYXRvcnkgUmVwb3J0aW5nCgpgYGBsYXRleAolIEluIHlvdXIgcGFwZXIncyBodW1hbiBldmFsdWF0aW9uIHNlY3Rpb246ClxwYXJhZ3JhcGh7QW5ub3RhdG9ycy59IFdlIHJlY3J1aXRlZCBbTl0gYW5ub3RhdG9ycyB2aWEgW3BsYXRmb3JtXS4KW0Rlc2NyaWJlIHF1YWxpZmljYXRpb25zIG9yIHNjcmVlbmluZy5dIEFubm90YXRvcnMgd2VyZSBwYWlkClwkW1hdL2hvdXIsIGFib3ZlIHRoZSBbY291bnRyeV0gbWluaW11bSB3YWdlLgoKXHBhcmFncmFwaHtBZ3JlZW1lbnQufSBJbnRlci1hbm5vdGF0b3IgYWdyZWVtZW50IHdhcyBbbWV0cmljXSA9IFt2YWx1ZV0KKEtyaXBwZW5kb3JmZidzICRcYWxwaGEkID0gW3ZhbHVlXTsgcmF3IGFncmVlbWVudCA9IFt2YWx1ZV1cJSkuCltJZiBsb3c6IGV4cGxhaW4gd2h5IHRoZSB0YXNrIGlzIHN1YmplY3RpdmUgYW5kIGhvdyB5b3UgaGFuZGxlIGRpc2FncmVlbWVudHMuXQoKXHBhcmFncmFwaHtFdmFsdWF0aW9uIFByb3RvY29sLn0gRWFjaCBbaXRlbSB0eXBlXSB3YXMgcmF0ZWQgYnkgW05dCmFubm90YXRvcnMgb24gYSBbc2NhbGUgZGVzY3JpcHRpb25dLiBXZSBjb2xsZWN0ZWQgW3RvdGFsXSBhbm5vdGF0aW9ucwphY3Jvc3MgW04gaXRlbXNdLiBbRGVzY3JpYmUgcmFuZG9taXphdGlvbiBhbmQgYmxpbmRpbmcuXQpgYGAKCiMjIyBXaGF0IEdvZXMgaW4gdGhlIEFwcGVuZGl4CgpgYGAKQXBwZW5kaXg6IEh1bWFuIEV2YWx1YXRpb24gRGV0YWlscwotIEZ1bGwgYW5ub3RhdGlvbiBndWlkZWxpbmVzICh2ZXJiYXRpbSkKLSBTY3JlZW5zaG90IG9mIGFubm90YXRpb24gaW50ZXJmYWNlCi0gUXVhbGlmaWNhdGlvbiB0YXNrIGRldGFpbHMgYW5kIHRocmVzaG9sZAotIEF0dGVudGlvbiBjaGVjayBpdGVtcyBhbmQgZmFpbHVyZSByYXRlcwotIFBlci1hbm5vdGF0b3IgYWdyZWVtZW50IGJyZWFrZG93bgotIEZ1bGwgcmVzdWx0cyB0YWJsZSAobm90IGp1c3QgYXZlcmFnZXMpCi0gQ29tcGVuc2F0aW9uIGNhbGN1bGF0aW9uCi0gSVJCIGFwcHJvdmFsIG51bWJlciAoaWYgYXBwbGljYWJsZSkKYGBgCgotLS0KCiMjIElSQiBhbmQgRXRoaWNzCgojIyMgV2hlbiBJUkIgQXBwcm92YWwgSXMgTmVlZGVkCgp8IFNpdHVhdGlvbiB8IElSQiBSZXF1aXJlZD8gfAp8LS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tfAp8IENyb3dkd29ya2VycyByYXRpbmcgdGV4dCBxdWFsaXR5IHwgKipVc3VhbGx5IG5vKiogKG5vdCAiaHVtYW4gc3ViamVjdHMgcmVzZWFyY2giIGF0IG1vc3QgaW5zdGl0dXRpb25zKSB8CnwgVXNlciBzdHVkeSB3aXRoIHJlYWwgdXNlcnMgfCAqKlllcyoqIGF0IG1vc3QgVVMvRVUgaW5zdGl0dXRpb25zIHwKfCBDb2xsZWN0aW5nIHBlcnNvbmFsIGluZm9ybWF0aW9uIHwgKipZZXMqKiB8CnwgU3R1ZHlpbmcgYW5ub3RhdG9yIGJlaGF2aW9yL2NvZ25pdGlvbiB8ICoqWWVzKiogKHRoZXkgYmVjb21lIHRoZSBzdWJqZWN0KSB8CnwgVXNpbmcgZXhpc3RpbmcgYW5ub3RhdGVkIGRhdGEgfCAqKlVzdWFsbHkgbm8qKiAoc2Vjb25kYXJ5IGRhdGEgYW5hbHlzaXMpIHwKCioqQ2hlY2sgeW91ciBpbnN0aXR1dGlvbidzIHBvbGljeS4qKiBUaGUgZGVmaW5pdGlvbiBvZiAiaHVtYW4gc3ViamVjdHMgcmVzZWFyY2giIHZhcmllcy4gV2hlbiBpbiBkb3VidCwgc3VibWl0IGFuIElSQiBwcm90b2NvbCDigJQgdGhlIHJldmlldyBpcyBvZnRlbiBmYXN0IGZvciBtaW5pbWFsLXJpc2sgc3R1ZGllcy4KCiMjIyBFdGhpY3MgQ2hlY2tsaXN0IGZvciBIdW1hbiBFdmFsdWF0aW9uCgpgYGAKLSBbIF0gQW5ub3RhdG9ycyBpbmZvcm1lZCBhYm91dCB0YXNrIHB1cnBvc2UgKG5vdCBkZWNlcHRpdmUpCi0gWyBdIEFubm90YXRvcnMgY2FuIHdpdGhkcmF3IGF0IGFueSB0aW1lIHdpdGhvdXQgcGVuYWx0eQotIFsgXSBObyBwZXJzb25hbGx5IGlkZW50aWZpYWJsZSBpbmZvcm1hdGlvbiBjb2xsZWN0ZWQgYmV5b25kIHBsYXRmb3JtIElECi0gWyBdIENvbnRlbnQgYmVpbmcgZXZhbHVhdGVkIGRvZXMgbm90IGV4cG9zZSBhbm5vdGF0b3JzIHRvIGhhcm0KICAoaWYgaXQgZG9lczogY29udGVudCB3YXJuaW5ncyArIG9wdC1vdXQgKyBoaWdoZXIgY29tcGVuc2F0aW9uKQotIFsgXSBGYWlyIGNvbXBlbnNhdGlvbiAoPj0gZXF1aXZhbGVudCBsb2NhbCBtaW5pbXVtIHdhZ2UpCi0gWyBdIERhdGEgc3RvcmVkIHNlY3VyZWx5LCBhY2Nlc3MgbGltaXRlZCB0byByZXNlYXJjaCB0ZWFtCi0gWyBdIElSQiBhcHByb3ZhbCBvYnRhaW5lZCBpZiByZXF1aXJlZCBieSBpbnN0aXR1dGlvbgpgYGAKCi0tLQoKIyMgQ29tbW9uIFBpdGZhbGxzCgp8IFBpdGZhbGwgfCBQcm9ibGVtIHwgRml4IHwKfC0tLS0tLS0tLXwtLS0tLS0tLS18LS0tLS18CnwgVG9vIGZldyBhbm5vdGF0b3JzICgxLTIpIHwgTm8gYWdyZWVtZW50IG1ldHJpYyBwb3NzaWJsZSB8IE1pbmltdW0gMyBhbm5vdGF0b3JzIHBlciBpdGVtIHwKfCBObyBhdHRlbnRpb24gY2hlY2tzIHwgQ2FuJ3QgZGV0ZWN0IGxvdy1xdWFsaXR5IGFubm90YXRpb25zIHwgSW5jbHVkZSAxMC0xNSUgYXR0ZW50aW9uIGNoZWNrcyB8CnwgTm90IHJlcG9ydGluZyBjb21wZW5zYXRpb24gfCBSZXZpZXdlcnMgZmxhZyBhcyBldGhpY3MgY29uY2VybiB8IEFsd2F5cyByZXBvcnQgaG91cmx5IHJhdGUgfAp8IFVzaW5nIG9ubHkgYXV0b21hdGVkIG1ldHJpY3MgZm9yIGdlbmVyYXRpb24gfCBSZXZpZXdlcnMgd2lsbCBhc2sgZm9yIGh1bWFuIGV2YWwgfCBBZGQgYXQgbGVhc3QgcGFpcndpc2UgY29tcGFyaXNvbiB8CnwgTm90IHBpbG90aW5nIGd1aWRlbGluZXMgfCBMb3cgYWdyZWVtZW50LCB3YXN0ZWQgYnVkZ2V0IHwgQWx3YXlzIHBpbG90IHdpdGggMy01IHBlb3BsZSBmaXJzdCB8CnwgUmVwb3J0aW5nIG9ubHkgYXZlcmFnZXMgfCBIaWRlcyBhbm5vdGF0b3IgZGlzYWdyZWVtZW50IHwgUmVwb3J0IGRpc3RyaWJ1dGlvbiBhbmQgYWdyZWVtZW50IHwKfCBOb3QgY29udHJvbGxpbmcgZm9yIG9yZGVyL3Bvc2l0aW9uIHwgUG9zaXRpb24gYmlhcyBpbmZsYXRlcyByZXN1bHRzIHwgUmFuZG9taXplIHByZXNlbnRhdGlvbiBvcmRlciB8CnwgQ29uZmxhdGluZyBhbm5vdGF0b3IgYWdyZWVtZW50IHdpdGggZ3JvdW5kIHRydXRoIHwgSGlnaCBhZ3JlZW1lbnQgZG9lc24ndCBtZWFuIGNvcnJlY3QgfCBWYWxpZGF0ZSBhZ2FpbnN0IGV4cGVydCBqdWRnbWVudHMgfAo=
+# Human Evaluation Guide for ML/AI Research
+
+Comprehensive guide for designing, running, and reporting human evaluations in ML/AI papers. Human evaluation is the primary evidence for many NLP, HCI, and alignment papers, and is increasingly expected as complementary evidence at all ML venues.
+
+---
+
+## Contents
+
+- [When Human Evaluation Is Needed](#when-human-evaluation-is-needed)
+- [Study Design](#study-design)
+- [Annotation Guidelines](#annotation-guidelines)
+- [Platforms and Recruitment](#platforms-and-recruitment)
+- [Quality Control](#quality-control)
+- [Agreement Metrics](#agreement-metrics)
+- [Statistical Analysis for Human Eval](#statistical-analysis-for-human-eval)
+- [Reporting Requirements](#reporting-requirements)
+- [IRB and Ethics](#irb-and-ethics)
+- [Common Pitfalls](#common-pitfalls)
+
+---
+
+## When Human Evaluation Is Needed
+
+| Scenario | Human Eval Required? | Notes |
+|----------|---------------------|-------|
+| Text generation quality (fluency, coherence) | **Yes** | Automated metrics (BLEU, ROUGE) correlate poorly with human judgment |
+| Factual accuracy of generated text | **Strongly recommended** | Automated fact-checking is unreliable |
+| Safety/toxicity evaluation | **Yes for nuanced cases** | Classifiers miss context-dependent harm |
+| Preference between two systems | **Yes** | Most reliable method for comparing LLM outputs |
+| Summarization quality | **Yes** | ROUGE doesn't capture faithfulness or relevance well |
+| Task completion (UI, agents) | **Yes** | User studies are the gold standard |
+| Classification accuracy | **Usually no** | Ground truth labels suffice; human eval adds cost without insight |
+| Perplexity or loss comparisons | **No** | Automated metrics are the correct evaluation |
+
+---
+
+## Study Design
+
+### Evaluation Types
+
+| Type | When to Use | Pros | Cons |
+|------|-------------|------|------|
+| **Pairwise comparison** | Comparing two systems | Most reliable, minimizes scale bias | Only compares pairs, quadratic in systems |
+| **Likert scale** (1-5 or 1-7) | Rating individual outputs | Easy to aggregate | Subjective anchoring, scale compression |
+| **Ranking** | Ordering 3+ systems | Captures full preference order | Cognitive load increases with items |
+| **Best-worst scaling** | Comparing many systems efficiently | More reliable than Likert, linear in items | Requires careful item selection |
+| **Binary judgment** | Yes/no decisions (grammatical? factual?) | Simple, high agreement | Loses nuance |
+| **Error annotation** | Identifying specific error types | Rich diagnostic information | Expensive, requires trained annotators |
+
+**Recommendation for most ML papers**: Pairwise comparison is the most defensible. Reviewers rarely question its validity. For Likert scales, always report both mean and distribution.
+
+### Sample Size Planning
+
+**Minimum viable sample sizes:**
+
+| Study Type | Minimum Items | Minimum Annotators | Notes |
+|------------|--------------|-------------------|-------|
+| Pairwise comparison | 100 pairs | 3 per pair | Detects ~10% win rate difference at p<0.05 |
+| Likert rating | 100 items | 3 per item | Enough for meaningful averages |
+| Ranking | 50 sets | 3 per set | Each set contains all systems being compared |
+| Error annotation | 200 items | 2 per item | Higher agreement expected for structured schemes |
+
+**Power analysis** (for planning more precisely):
+
+```python
+from scipy import stats
+import numpy as np
+
+def sample_size_pairwise(effect_size=0.10, alpha=0.05, power=0.80):
+    """
+    Estimate sample size for pairwise comparison (sign test).
+    effect_size: expected win rate difference from 0.50
+    """
+    p_expected = 0.50 + effect_size
+    # Normal approximation to binomial
+    z_alpha = stats.norm.ppf(1 - alpha / 2)
+    z_beta = stats.norm.ppf(power)
+    n = ((z_alpha * np.sqrt(0.25) + z_beta * np.sqrt(p_expected * (1 - p_expected))) ** 2) / (effect_size ** 2)
+    return int(np.ceil(n))
+
+print(f"Sample size for 10% effect: {sample_size_pairwise(0.10)}")  # ~200
+print(f"Sample size for 15% effect: {sample_size_pairwise(0.15)}")  # ~90
+print(f"Sample size for 20% effect: {sample_size_pairwise(0.20)}")  # ~50
+```
+
+### Controlling for Bias
+
+| Bias | Mitigation |
+|------|-----------|
+| **Order bias** (first item preferred) | Randomize presentation order for each annotator |
+| **Length bias** (longer = better) | Control for length or analyze separately |
+| **Anchoring** (first annotation sets scale) | Include warm-up items (not counted) |
+| **Fatigue** (quality drops over time) | Limit session length (30-45 min max), randomize item order |
+| **Annotator expertise** | Report annotator background; use qualification tasks |
+
+---
+
+## Annotation Guidelines
+
+Well-written annotation guidelines are the single biggest factor in evaluation quality. Invest significant time here.
+
+### Structure of Good Guidelines
+
+```markdown
+# [Task Name] Annotation Guidelines
+
+## Overview
+[1-2 sentences describing the task]
+
+## Definitions
+[Define every term annotators will use in their judgments]
+- Quality: [specific definition for this study]
+- Fluency: [specific definition]
+- Factuality: [specific definition]
+
+## Rating Scale
+[For each scale point, provide:]
+- Numeric value
+- Label (e.g., "Excellent", "Good", "Acceptable", "Poor", "Unacceptable")
+- Definition of what qualifies for this rating
+- 1-2 concrete examples at this level
+
+## Examples
+
+### Example 1: [Rating = 5]
+Input: [exact input]
+Output: [exact output]
+Rating: 5
+Explanation: [why this is a 5]
+
+### Example 2: [Rating = 2]
+Input: [exact input]
+Output: [exact output]
+Rating: 2
+Explanation: [why this is a 2]
+
+[Include at least 2 examples per rating level, covering edge cases]
+
+## Edge Cases
+- If the output is [ambiguous case]: [instruction]
+- If the input is [unusual case]: [instruction]
+
+## Common Mistakes
+- Don't [common annotator error]
+- Don't let [bias] influence your rating
+```
+
+### Pilot Testing
+
+**Always run a pilot** before the full study:
+1. 3-5 annotators, 20-30 items
+2. Compute agreement metrics
+3. Discuss disagreements in group session
+4. Revise guidelines based on confusion points
+5. Run second pilot if agreement was poor (<0.40 kappa)
+
+---
+
+## Platforms and Recruitment
+
+| Platform | Best For | Cost | Quality |
+|----------|----------|------|---------|
+| **Prolific** | General annotation, surveys | $8-15/hr | High (academic-focused pool) |
+| **Amazon MTurk** | Large-scale simple tasks | $5-12/hr | Variable (needs strong QC) |
+| **Surge AI** | NLP-specific annotation | $15-25/hr | Very high (trained annotators) |
+| **Scale AI** | Production-quality labeling | Varies | High (managed workforce) |
+| **Internal team** | Domain expertise required | Varies | Highest for specialized tasks |
+| **Upwork/contractors** | Long-term annotation projects | $10-30/hr | Depends on hiring |
+
+**Fair compensation**: Always pay at least the equivalent of local minimum wage for the annotator's location. Many conferences (ACL in particular) now ask about annotator compensation. Paying below minimum wage is an ethics risk.
+
+**Prolific setup (recommended for most ML papers):**
+1. Create study on prolific.co
+2. Set prescreening filters (language, country, approval rate >95%)
+3. Estimate time per task from pilot → set fair payment
+4. Use Prolific's built-in attention checks or add your own
+5. Collect Prolific IDs for quality tracking (but don't share in paper)
+
+---
+
+## Quality Control
+
+### Attention Checks
+
+Include items where the correct answer is unambiguous:
+
+```python
+# Types of attention checks
+attention_checks = {
+    "instructed_response": "For this item, please select 'Strongly Agree' regardless of content.",
+    "obvious_quality": "Rate this clearly ungrammatical text: 'The cat dog house green yesterday.'",  # Should get lowest score
+    "gold_standard": "Items where expert consensus exists (pre-annotated by authors)",
+    "trap_question": "What color is the sky on a clear day? (embedded in annotation interface)"
+}
+
+# Recommended: 10-15% of total items should be checks
+# Exclusion criterion: fail 2+ attention checks → exclude annotator
+```
+
+### Annotator Qualification
+
+For tasks requiring expertise:
+
+```
+Qualification Task Design:
+1. Create a set of 20-30 items with known-correct labels
+2. Require annotators to complete this before the main task
+3. Set threshold: ≥80% agreement with gold labels to qualify
+4. Record qualification scores for reporting
+```
+
+### Monitoring During Collection
+
+```python
+# Real-time quality monitoring
+def monitor_quality(annotations):
+    """Check for annotation quality issues during collection."""
+    issues = []
+    
+    # 1. Check for straight-lining (same answer for everything)
+    for annotator_id, items in annotations.groupby('annotator'):
+        if items['rating'].nunique() <= 1:
+            issues.append(f"Annotator {annotator_id}: straight-lining detected")
+    
+    # 2. Check time per item (too fast = not reading)
+    median_time = annotations['time_seconds'].median()
+    fast_annotators = annotations.groupby('annotator')['time_seconds'].median()
+    for ann_id, time in fast_annotators.items():
+        if time < median_time * 0.3:
+            issues.append(f"Annotator {ann_id}: suspiciously fast ({time:.0f}s vs median {median_time:.0f}s)")
+    
+    # 3. Check attention check performance
+    checks = annotations[annotations['is_attention_check']]
+    for ann_id, items in checks.groupby('annotator'):
+        accuracy = (items['rating'] == items['gold_rating']).mean()
+        if accuracy < 0.80:
+            issues.append(f"Annotator {ann_id}: failing attention checks ({accuracy:.0%})")
+    
+    return issues
+```
+
+---
+
+## Agreement Metrics
+
+### Which Metric to Use
+
+| Metric | When to Use | Interpretation |
+|--------|-------------|---------------|
+| **Cohen's kappa (κ)** | Exactly 2 annotators, categorical | Chance-corrected agreement |
+| **Fleiss' kappa** | 3+ annotators, all rate same items, categorical | Multi-annotator extension of Cohen's |
+| **Krippendorff's alpha (α)** | Any number of annotators, handles missing data | Most general; recommended default |
+| **ICC (Intraclass Correlation)** | Continuous ratings (Likert) | Consistency among raters |
+| **Percent agreement** | Reporting alongside kappa/alpha | Raw agreement (not chance-corrected) |
+| **Kendall's W** | Rankings | Concordance among rankers |
+
+**Always report at least two**: one chance-corrected metric (kappa or alpha) AND raw percent agreement.
+
+### Interpretation Guide
+
+| Value | Krippendorff's α / Cohen's κ | Quality |
+|-------|-------------------------------|---------|
+| > 0.80 | Excellent agreement | Reliable for most purposes |
+| 0.67 - 0.80 | Good agreement | Acceptable for most ML papers |
+| 0.40 - 0.67 | Moderate agreement | Borderline; discuss in paper |
+| < 0.40 | Poor agreement | Revise guidelines and redo annotation |
+
+**Note**: Krippendorff recommends α > 0.667 as minimum for tentative conclusions. NLP tasks with subjective judgments (fluency, helpfulness) typically achieve 0.40-0.70.
+
+### Implementation
+
+```python
+import numpy as np
+from sklearn.metrics import cohen_kappa_score
+import krippendorff  # pip install krippendorff
+
+def compute_agreement(annotations_matrix):
+    """
+    annotations_matrix: shape (n_items, n_annotators)
+    Values: ratings (int or float). Use np.nan for missing.
+    """
+    results = {}
+    
+    # Krippendorff's alpha (handles missing data, any number of annotators)
+    results['krippendorff_alpha'] = krippendorff.alpha(
+        annotations_matrix.T,  # krippendorff expects (annotators, items)
+        level_of_measurement='ordinal'  # or 'nominal', 'interval', 'ratio'
+    )
+    
+    # Pairwise Cohen's kappa (for 2 annotators at a time)
+    n_annotators = annotations_matrix.shape[1]
+    kappas = []
+    for i in range(n_annotators):
+        for j in range(i + 1, n_annotators):
+            mask = ~np.isnan(annotations_matrix[:, i]) & ~np.isnan(annotations_matrix[:, j])
+            if mask.sum() > 0:
+                k = cohen_kappa_score(
+                    annotations_matrix[mask, i].astype(int),
+                    annotations_matrix[mask, j].astype(int)
+                )
+                kappas.append(k)
+    results['mean_pairwise_kappa'] = np.mean(kappas) if kappas else None
+    
+    # Raw percent agreement
+    agree_count = 0
+    total_count = 0
+    for item in range(annotations_matrix.shape[0]):
+        ratings = annotations_matrix[item, ~np.isnan(annotations_matrix[item, :])]
+        if len(ratings) >= 2:
+            # All annotators agree
+            if len(set(ratings.astype(int))) == 1:
+                agree_count += 1
+            total_count += 1
+    results['percent_agreement'] = agree_count / total_count if total_count > 0 else None
+    
+    return results
+```
+
+---
+
+## Statistical Analysis for Human Eval
+
+### Pairwise Comparisons
+
+```python
+from scipy import stats
+
+def analyze_pairwise(wins_a, wins_b, ties=0):
+    """
+    Analyze pairwise comparison results.
+    wins_a: number of times system A won
+    wins_b: number of times system B won
+    ties: number of ties (excluded from sign test)
+    """
+    n = wins_a + wins_b  # exclude ties
+    
+    # Sign test (exact binomial)
+    p_value = stats.binom_test(wins_a, n, 0.5, alternative='two-sided')
+    
+    # Win rate with 95% CI (Wilson score interval)
+    win_rate = wins_a / n if n > 0 else 0.5
+    z = 1.96
+    denominator = 1 + z**2 / n
+    center = (win_rate + z**2 / (2 * n)) / denominator
+    margin = z * np.sqrt((win_rate * (1 - win_rate) + z**2 / (4 * n)) / n) / denominator
+    ci_lower = center - margin
+    ci_upper = center + margin
+    
+    return {
+        'win_rate_a': win_rate,
+        'win_rate_b': 1 - win_rate,
+        'p_value': p_value,
+        'ci_95': (ci_lower, ci_upper),
+        'significant': p_value < 0.05,
+        'n_comparisons': n,
+        'ties': ties,
+    }
+```
+
+### Likert Scale Analysis
+
+```python
+def analyze_likert(ratings_a, ratings_b):
+    """Compare Likert ratings between two systems (paired)."""
+    # Wilcoxon signed-rank test (non-parametric, paired)
+    stat, p_value = stats.wilcoxon(ratings_a, ratings_b, alternative='two-sided')
+    
+    # Effect size (rank-biserial correlation)
+    n = len(ratings_a)
+    r = 1 - (2 * stat) / (n * (n + 1))
+    
+    return {
+        'mean_a': np.mean(ratings_a),
+        'mean_b': np.mean(ratings_b),
+        'std_a': np.std(ratings_a),
+        'std_b': np.std(ratings_b),
+        'wilcoxon_stat': stat,
+        'p_value': p_value,
+        'effect_size_r': r,
+        'significant': p_value < 0.05,
+    }
+```
+
+### Multiple Comparisons Correction
+
+When comparing more than two systems:
+
+```python
+from statsmodels.stats.multitest import multipletests
+
+# After computing p-values for all pairs
+p_values = [0.03, 0.001, 0.08, 0.04, 0.15, 0.002]
+rejected, corrected_p, _, _ = multipletests(p_values, method='holm')
+# Use corrected p-values in your paper
+```
+
+---
+
+## Reporting Requirements
+
+Reviewers at NLP venues (ACL, EMNLP, NAACL) check for all of these. ML venues (NeurIPS, ICML) increasingly expect them too.
+
+### Mandatory Reporting
+
+```latex
+% In your paper's human evaluation section:
+\paragraph{Annotators.} We recruited [N] annotators via [platform].
+[Describe qualifications or screening.] Annotators were paid
+\$[X]/hour, above the [country] minimum wage.
+
+\paragraph{Agreement.} Inter-annotator agreement was [metric] = [value]
+(Krippendorff's $\alpha$ = [value]; raw agreement = [value]\%).
+[If low: explain why the task is subjective and how you handle disagreements.]
+
+\paragraph{Evaluation Protocol.} Each [item type] was rated by [N]
+annotators on a [scale description]. We collected [total] annotations
+across [N items]. [Describe randomization and blinding.]
+```
+
+### What Goes in the Appendix
+
+```
+Appendix: Human Evaluation Details
+- Full annotation guidelines (verbatim)
+- Screenshot of annotation interface
+- Qualification task details and threshold
+- Attention check items and failure rates
+- Per-annotator agreement breakdown
+- Full results table (not just averages)
+- Compensation calculation
+- IRB approval number (if applicable)
+```
+
+---
+
+## IRB and Ethics
+
+### When IRB Approval Is Needed
+
+| Situation | IRB Required? |
+|-----------|---------------|
+| Crowdworkers rating text quality | **Usually no** (not "human subjects research" at most institutions) |
+| User study with real users | **Yes** at most US/EU institutions |
+| Collecting personal information | **Yes** |
+| Studying annotator behavior/cognition | **Yes** (they become the subject) |
+| Using existing annotated data | **Usually no** (secondary data analysis) |
+
+**Check your institution's policy.** The definition of "human subjects research" varies. When in doubt, submit an IRB protocol — the review is often fast for minimal-risk studies.
+
+### Ethics Checklist for Human Evaluation
+
+```
+- [ ] Annotators informed about task purpose (not deceptive)
+- [ ] Annotators can withdraw at any time without penalty
+- [ ] No personally identifiable information collected beyond platform ID
+- [ ] Content being evaluated does not expose annotators to harm
+  (if it does: content warnings + opt-out + higher compensation)
+- [ ] Fair compensation (>= equivalent local minimum wage)
+- [ ] Data stored securely, access limited to research team
+- [ ] IRB approval obtained if required by institution
+```
+
+---
+
+## Common Pitfalls
+
+| Pitfall | Problem | Fix |
+|---------|---------|-----|
+| Too few annotators (1-2) | No agreement metric possible | Minimum 3 annotators per item |
+| No attention checks | Can't detect low-quality annotations | Include 10-15% attention checks |
+| Not reporting compensation | Reviewers flag as ethics concern | Always report hourly rate |
+| Using only automated metrics for generation | Reviewers will ask for human eval | Add at least pairwise comparison |
+| Not piloting guidelines | Low agreement, wasted budget | Always pilot with 3-5 people first |
+| Reporting only averages | Hides annotator disagreement | Report distribution and agreement |
+| Not controlling for order/position | Position bias inflates results | Randomize presentation order |
+| Conflating annotator agreement with ground truth | High agreement doesn't mean correct | Validate against expert judgments |

@@ -1,1 +1,247 @@
-LS0tCm5hbWU6IGdpdGh1Yi1hdXRoCmRlc2NyaXB0aW9uOiBTZXQgdXAgR2l0SHViIGF1dGhlbnRpY2F0aW9uIGZvciB0aGUgYWdlbnQgdXNpbmcgZ2l0ICh1bml2ZXJzYWxseSBhdmFpbGFibGUpIG9yIHRoZSBnaCBDTEkuIENvdmVycyBIVFRQUyB0b2tlbnMsIFNTSCBrZXlzLCBjcmVkZW50aWFsIGhlbHBlcnMsIGFuZCBnaCBhdXRoIOKAlCB3aXRoIGEgZGV0ZWN0aW9uIGZsb3cgdG8gcGljayB0aGUgcmlnaHQgbWV0aG9kIGF1dG9tYXRpY2FsbHkuCnZlcnNpb246IDEuMS4wCmF1dGhvcjogSGVybWVzIEFnZW50CmxpY2Vuc2U6IE1JVAptZXRhZGF0YToKICBoZXJtZXM6CiAgICB0YWdzOiBbR2l0SHViLCBBdXRoZW50aWNhdGlvbiwgR2l0LCBnaC1jbGksIFNTSCwgU2V0dXBdCiAgICByZWxhdGVkX3NraWxsczogW2dpdGh1Yi1wci13b3JrZmxvdywgZ2l0aHViLWNvZGUtcmV2aWV3LCBnaXRodWItaXNzdWVzLCBnaXRodWItcmVwby1tYW5hZ2VtZW50XQotLS0KCiMgR2l0SHViIEF1dGhlbnRpY2F0aW9uIFNldHVwCgpUaGlzIHNraWxsIHNldHMgdXAgYXV0aGVudGljYXRpb24gc28gdGhlIGFnZW50IGNhbiB3b3JrIHdpdGggR2l0SHViIHJlcG9zaXRvcmllcywgUFJzLCBpc3N1ZXMsIGFuZCBDSS4gSXQgY292ZXJzIHR3byBwYXRoczoKCi0gKipgZ2l0YCAoYWx3YXlzIGF2YWlsYWJsZSkqKiDigJQgdXNlcyBIVFRQUyBwZXJzb25hbCBhY2Nlc3MgdG9rZW5zIG9yIFNTSCBrZXlzCi0gKipgZ2hgIENMSSAoaWYgaW5zdGFsbGVkKSoqIOKAlCByaWNoZXIgR2l0SHViIEFQSSBhY2Nlc3Mgd2l0aCBhIHNpbXBsZXIgYXV0aCBmbG93CgojIyBEZXRlY3Rpb24gRmxvdwoKV2hlbiBhIHVzZXIgYXNrcyB5b3UgdG8gd29yayB3aXRoIEdpdEh1YiwgcnVuIHRoaXMgY2hlY2sgZmlyc3Q6CgpgYGBiYXNoCiMgQ2hlY2sgd2hhdCdzIGF2YWlsYWJsZQpnaXQgLS12ZXJzaW9uCmdoIC0tdmVyc2lvbiAyPi9kZXYvbnVsbCB8fCBlY2hvICJnaCBub3QgaW5zdGFsbGVkIgoKIyBDaGVjayBpZiBhbHJlYWR5IGF1dGhlbnRpY2F0ZWQKZ2ggYXV0aCBzdGF0dXMgMj4vZGV2L251bGwgfHwgZWNobyAiZ2ggbm90IGF1dGhlbnRpY2F0ZWQiCmdpdCBjb25maWcgLS1nbG9iYWwgY3JlZGVudGlhbC5oZWxwZXIgMj4vZGV2L251bGwgfHwgZWNobyAibm8gZ2l0IGNyZWRlbnRpYWwgaGVscGVyIgpgYGAKCioqRGVjaXNpb24gdHJlZToqKgoxLiBJZiBgZ2ggYXV0aCBzdGF0dXNgIHNob3dzIGF1dGhlbnRpY2F0ZWQg4oaSIHlvdSdyZSBnb29kLCB1c2UgYGdoYCBmb3IgZXZlcnl0aGluZwoyLiBJZiBgZ2hgIGlzIGluc3RhbGxlZCBidXQgbm90IGF1dGhlbnRpY2F0ZWQg4oaSIHVzZSAiZ2ggYXV0aCIgbWV0aG9kIGJlbG93CjMuIElmIGBnaGAgaXMgbm90IGluc3RhbGxlZCDihpIgdXNlICJnaXQtb25seSIgbWV0aG9kIGJlbG93IChubyBzdWRvIG5lZWRlZCkKCi0tLQoKIyMgTWV0aG9kIDE6IEdpdC1Pbmx5IEF1dGhlbnRpY2F0aW9uIChObyBnaCwgTm8gc3VkbykKClRoaXMgd29ya3Mgb24gYW55IG1hY2hpbmUgd2l0aCBgZ2l0YCBpbnN0YWxsZWQuIE5vIHJvb3QgYWNjZXNzIG5lZWRlZC4KCiMjIyBPcHRpb24gQTogSFRUUFMgd2l0aCBQZXJzb25hbCBBY2Nlc3MgVG9rZW4gKFJlY29tbWVuZGVkKQoKVGhpcyBpcyB0aGUgbW9zdCBwb3J0YWJsZSBtZXRob2Qg4oCUIHdvcmtzIGV2ZXJ5d2hlcmUsIG5vIFNTSCBjb25maWcgbmVlZGVkLgoKKipTdGVwIDE6IENyZWF0ZSBhIHBlcnNvbmFsIGFjY2VzcyB0b2tlbioqCgpUZWxsIHRoZSB1c2VyIHRvIGdvIHRvOiAqKmh0dHBzOi8vZ2l0aHViLmNvbS9zZXR0aW5ncy90b2tlbnMqKgoKLSBDbGljayAiR2VuZXJhdGUgbmV3IHRva2VuIChjbGFzc2ljKSIKLSBHaXZlIGl0IGEgbmFtZSBsaWtlICJoZXJtZXMtYWdlbnQiCi0gU2VsZWN0IHNjb3BlczoKICAtIGByZXBvYCAoZnVsbCByZXBvc2l0b3J5IGFjY2VzcyDigJQgcmVhZCwgd3JpdGUsIHB1c2gsIFBScykKICAtIGB3b3JrZmxvd2AgKHRyaWdnZXIgYW5kIG1hbmFnZSBHaXRIdWIgQWN0aW9ucykKICAtIGByZWFkOm9yZ2AgKGlmIHdvcmtpbmcgd2l0aCBvcmdhbml6YXRpb24gcmVwb3MpCi0gU2V0IGV4cGlyYXRpb24gKDkwIGRheXMgaXMgYSBnb29kIGRlZmF1bHQpCi0gQ29weSB0aGUgdG9rZW4g4oCUIGl0IHdvbid0IGJlIHNob3duIGFnYWluCgoqKlN0ZXAgMjogQ29uZmlndXJlIGdpdCB0byBzdG9yZSB0aGUgdG9rZW4qKgoKYGBgYmFzaAojIFNldCB1cCB0aGUgY3JlZGVudGlhbCBoZWxwZXIgdG8gY2FjaGUgY3JlZGVudGlhbHMKIyAic3RvcmUiIHNhdmVzIHRvIH4vLmdpdC1jcmVkZW50aWFscyBpbiBwbGFpbnRleHQgKHNpbXBsZSwgcGVyc2lzdGVudCkKZ2l0IGNvbmZpZyAtLWdsb2JhbCBjcmVkZW50aWFsLmhlbHBlciBzdG9yZQoKIyBOb3cgZG8gYSB0ZXN0IG9wZXJhdGlvbiB0aGF0IHRyaWdnZXJzIGF1dGgg4oCUIGdpdCB3aWxsIHByb21wdCBmb3IgY3JlZGVudGlhbHMKIyBVc2VybmFtZTogPHRoZWlyLWdpdGh1Yi11c2VybmFtZT4KIyBQYXNzd29yZDogPHBhc3RlIHRoZSBwZXJzb25hbCBhY2Nlc3MgdG9rZW4sIE5PVCB0aGVpciBHaXRIdWIgcGFzc3dvcmQ+CmdpdCBscy1yZW1vdGUgaHR0cHM6Ly9naXRodWIuY29tLzx0aGVpci11c2VybmFtZT4vPGFueS1yZXBvPi5naXQKYGBgCgpBZnRlciBlbnRlcmluZyBjcmVkZW50aWFscyBvbmNlLCB0aGV5J3JlIHNhdmVkIGFuZCByZXVzZWQgZm9yIGFsbCBmdXR1cmUgb3BlcmF0aW9ucy4KCioqQWx0ZXJuYXRpdmU6IGNhY2hlIGhlbHBlciAoY3JlZGVudGlhbHMgZXhwaXJlIGZyb20gbWVtb3J5KSoqCgpgYGBiYXNoCiMgQ2FjaGUgaW4gbWVtb3J5IGZvciA4IGhvdXJzICgyODgwMCBzZWNvbmRzKSBpbnN0ZWFkIG9mIHNhdmluZyB0byBkaXNrCmdpdCBjb25maWcgLS1nbG9iYWwgY3JlZGVudGlhbC5oZWxwZXIgJ2NhY2hlIC0tdGltZW91dD0yODgwMCcKYGBgCgoqKkFsdGVybmF0aXZlOiBzZXQgdGhlIHRva2VuIGRpcmVjdGx5IGluIHRoZSByZW1vdGUgVVJMIChwZXItcmVwbykqKgoKYGBgYmFzaAojIEVtYmVkIHRva2VuIGluIHRoZSByZW1vdGUgVVJMIChhdm9pZHMgY3JlZGVudGlhbCBwcm9tcHRzIGVudGlyZWx5KQpnaXQgcmVtb3RlIHNldC11cmwgb3JpZ2luIGh0dHBzOi8vPHVzZXJuYW1lPjo8dG9rZW4+QGdpdGh1Yi5jb20vPG93bmVyPi88cmVwbz4uZ2l0CmBgYAoKKipTdGVwIDM6IENvbmZpZ3VyZSBnaXQgaWRlbnRpdHkqKgoKYGBgYmFzaAojIFJlcXVpcmVkIGZvciBjb21taXRzIOKAlCBzZXQgbmFtZSBhbmQgZW1haWwKZ2l0IGNvbmZpZyAtLWdsb2JhbCB1c2VyLm5hbWUgIlRoZWlyIE5hbWUiCmdpdCBjb25maWcgLS1nbG9iYWwgdXNlci5lbWFpbCAidGhlaXItZW1haWxAZXhhbXBsZS5jb20iCmBgYAoKKipTdGVwIDQ6IFZlcmlmeSoqCgpgYGBiYXNoCiMgVGVzdCBwdXNoIGFjY2VzcyAodGhpcyBzaG91bGQgd29yayB3aXRob3V0IGFueSBwcm9tcHRzIG5vdykKZ2l0IGxzLXJlbW90ZSBodHRwczovL2dpdGh1Yi5jb20vPHRoZWlyLXVzZXJuYW1lPi88YW55LXJlcG8+LmdpdAoKIyBWZXJpZnkgaWRlbnRpdHkKZ2l0IGNvbmZpZyAtLWdsb2JhbCB1c2VyLm5hbWUKZ2l0IGNvbmZpZyAtLWdsb2JhbCB1c2VyLmVtYWlsCmBgYAoKIyMjIE9wdGlvbiBCOiBTU0ggS2V5IEF1dGhlbnRpY2F0aW9uCgpHb29kIGZvciB1c2VycyB3aG8gcHJlZmVyIFNTSCBvciBhbHJlYWR5IGhhdmUga2V5cyBzZXQgdXAuCgoqKlN0ZXAgMTogQ2hlY2sgZm9yIGV4aXN0aW5nIFNTSCBrZXlzKioKCmBgYGJhc2gKbHMgLWxhIH4vLnNzaC9pZF8qLnB1YiAyPi9kZXYvbnVsbCB8fCBlY2hvICJObyBTU0gga2V5cyBmb3VuZCIKYGBgCgoqKlN0ZXAgMjogR2VuZXJhdGUgYSBrZXkgaWYgbmVlZGVkKioKCmBgYGJhc2gKIyBHZW5lcmF0ZSBhbiBlZDI1NTE5IGtleSAobW9kZXJuLCBzZWN1cmUsIGZhc3QpCnNzaC1rZXlnZW4gLXQgZWQyNTUxOSAtQyAidGhlaXItZW1haWxAZXhhbXBsZS5jb20iIC1mIH4vLnNzaC9pZF9lZDI1NTE5IC1OICIiCgojIERpc3BsYXkgdGhlIHB1YmxpYyBrZXkgZm9yIHRoZW0gdG8gYWRkIHRvIEdpdEh1YgpjYXQgfi8uc3NoL2lkX2VkMjU1MTkucHViCmBgYAoKVGVsbCB0aGUgdXNlciB0byBhZGQgdGhlIHB1YmxpYyBrZXkgYXQ6ICoqaHR0cHM6Ly9naXRodWIuY29tL3NldHRpbmdzL2tleXMqKgotIENsaWNrICJOZXcgU1NIIGtleSIKLSBQYXN0ZSB0aGUgcHVibGljIGtleSBjb250ZW50Ci0gR2l2ZSBpdCBhIHRpdGxlIGxpa2UgImhlcm1lcy1hZ2VudC08bWFjaGluZS1uYW1lPiIKCioqU3RlcCAzOiBUZXN0IHRoZSBjb25uZWN0aW9uKioKCmBgYGJhc2gKc3NoIC1UIGdpdEBnaXRodWIuY29tCiMgRXhwZWN0ZWQ6ICJIaSA8dXNlcm5hbWU+ISBZb3UndmUgc3VjY2Vzc2Z1bGx5IGF1dGhlbnRpY2F0ZWQuLi4iCmBgYAoKKipTdGVwIDQ6IENvbmZpZ3VyZSBnaXQgdG8gdXNlIFNTSCBmb3IgR2l0SHViKioKCmBgYGJhc2gKIyBSZXdyaXRlIEhUVFBTIEdpdEh1YiBVUkxzIHRvIFNTSCBhdXRvbWF0aWNhbGx5CmdpdCBjb25maWcgLS1nbG9iYWwgdXJsLiJnaXRAZ2l0aHViLmNvbToiLmluc3RlYWRPZiAiaHR0cHM6Ly9naXRodWIuY29tLyIKYGBgCgoqKlN0ZXAgNTogQ29uZmlndXJlIGdpdCBpZGVudGl0eSoqCgpgYGBiYXNoCmdpdCBjb25maWcgLS1nbG9iYWwgdXNlci5uYW1lICJUaGVpciBOYW1lIgpnaXQgY29uZmlnIC0tZ2xvYmFsIHVzZXIuZW1haWwgInRoZWlyLWVtYWlsQGV4YW1wbGUuY29tIgpgYGAKCi0tLQoKIyMgTWV0aG9kIDI6IGdoIENMSSBBdXRoZW50aWNhdGlvbgoKSWYgYGdoYCBpcyBpbnN0YWxsZWQsIGl0IGhhbmRsZXMgYm90aCBBUEkgYWNjZXNzIGFuZCBnaXQgY3JlZGVudGlhbHMgaW4gb25lIHN0ZXAuCgojIyMgSW50ZXJhY3RpdmUgQnJvd3NlciBMb2dpbiAoRGVza3RvcCkKCmBgYGJhc2gKZ2ggYXV0aCBsb2dpbgojIFNlbGVjdDogR2l0SHViLmNvbQojIFNlbGVjdDogSFRUUFMKIyBBdXRoZW50aWNhdGUgdmlhIGJyb3dzZXIKYGBgCgojIyMgVG9rZW4tQmFzZWQgTG9naW4gKEhlYWRsZXNzIC8gU1NIIFNlcnZlcnMpCgpgYGBiYXNoCmVjaG8gIjxUSEVJUl9UT0tFTj4iIHwgZ2ggYXV0aCBsb2dpbiAtLXdpdGgtdG9rZW4KCiMgU2V0IHVwIGdpdCBjcmVkZW50aWFscyB0aHJvdWdoIGdoCmdoIGF1dGggc2V0dXAtZ2l0CmBgYAoKIyMjIFZlcmlmeQoKYGBgYmFzaApnaCBhdXRoIHN0YXR1cwpgYGAKCi0tLQoKIyMgVXNpbmcgdGhlIEdpdEh1YiBBUEkgV2l0aG91dCBnaAoKV2hlbiBgZ2hgIGlzIG5vdCBhdmFpbGFibGUsIHlvdSBjYW4gc3RpbGwgYWNjZXNzIHRoZSBmdWxsIEdpdEh1YiBBUEkgdXNpbmcgYGN1cmxgIHdpdGggYSBwZXJzb25hbCBhY2Nlc3MgdG9rZW4uIFRoaXMgaXMgaG93IHRoZSBvdGhlciBHaXRIdWIgc2tpbGxzIGltcGxlbWVudCB0aGVpciBmYWxsYmFja3MuCgojIyMgU2V0dGluZyB0aGUgVG9rZW4gZm9yIEFQSSBDYWxscwoKYGBgYmFzaAojIE9wdGlvbiAxOiBFeHBvcnQgYXMgZW52IHZhciAocHJlZmVycmVkIOKAlCBrZWVwcyBpdCBvdXQgb2YgY29tbWFuZHMpCmV4cG9ydCBHSVRIVUJfVE9LRU49Ijx0b2tlbj4iCgojIFRoZW4gdXNlIGluIGN1cmwgY2FsbHM6CmN1cmwgLXMgLUggIkF1dGhvcml6YXRpb246IHRva2VuICRHSVRIVUJfVE9LRU4iIFwKICBodHRwczovL2FwaS5naXRodWIuY29tL3VzZXIKYGBgCgojIyMgRXh0cmFjdGluZyB0aGUgVG9rZW4gZnJvbSBHaXQgQ3JlZGVudGlhbHMKCklmIGdpdCBjcmVkZW50aWFscyBhcmUgYWxyZWFkeSBjb25maWd1cmVkICh2aWEgY3JlZGVudGlhbC5oZWxwZXIgc3RvcmUpLCB0aGUgdG9rZW4gY2FuIGJlIGV4dHJhY3RlZDoKCmBgYGJhc2gKIyBSZWFkIGZyb20gZ2l0IGNyZWRlbnRpYWwgc3RvcmUKZ3JlcCAiZ2l0aHViLmNvbSIgfi8uZ2l0LWNyZWRlbnRpYWxzIDI+L2Rldi9udWxsIHwgaGVhZCAtMSB8IHNlZCAnc3xodHRwczovL1teOl0qOlwoW15AXSpcKUAuKnxcMXwnCmBgYAoKIyMjIEhlbHBlcjogRGV0ZWN0IEF1dGggTWV0aG9kCgpVc2UgdGhpcyBwYXR0ZXJuIGF0IHRoZSBzdGFydCBvZiBhbnkgR2l0SHViIHdvcmtmbG93OgoKYGBgYmFzaAojIFRyeSBnaCBmaXJzdCwgZmFsbCBiYWNrIHRvIGdpdCArIGN1cmwKaWYgY29tbWFuZCAtdiBnaCAmPi9kZXYvbnVsbCAmJiBnaCBhdXRoIHN0YXR1cyAmPi9kZXYvbnVsbDsgdGhlbgogIGVjaG8gIkFVVEhfTUVUSE9EPWdoIgplbGlmIFsgLW4gIiRHSVRIVUJfVE9LRU4iIF07IHRoZW4KICBlY2hvICJBVVRIX01FVEhPRD1jdXJsIgplbGlmIFsgLWYgfi8uaGVybWVzLy5lbnYgXSAmJiBncmVwIC1xICJeR0lUSFVCX1RPS0VOPSIgfi8uaGVybWVzLy5lbnY7IHRoZW4KICBleHBvcnQgR0lUSFVCX1RPS0VOPSQoZ3JlcCAiXkdJVEhVQl9UT0tFTj0iIH4vLmhlcm1lcy8uZW52IHwgaGVhZCAtMSB8IGN1dCAtZD0gLWYyIHwgdHIgLWQgJ1xuXHInKQogIGVjaG8gIkFVVEhfTUVUSE9EPWN1cmwiCmVsaWYgZ3JlcCAtcSAiZ2l0aHViLmNvbSIgfi8uZ2l0LWNyZWRlbnRpYWxzIDI+L2Rldi9udWxsOyB0aGVuCiAgZXhwb3J0IEdJVEhVQl9UT0tFTj0kKGdyZXAgImdpdGh1Yi5jb20iIH4vLmdpdC1jcmVkZW50aWFscyB8IGhlYWQgLTEgfCBzZWQgJ3N8aHR0cHM6Ly9bXjpdKjpcKFteQF0qXClALip8XDF8JykKICBlY2hvICJBVVRIX01FVEhPRD1jdXJsIgplbHNlCiAgZWNobyAiQVVUSF9NRVRIT0Q9bm9uZSIKICBlY2hvICJOZWVkIHRvIHNldCB1cCBhdXRoZW50aWNhdGlvbiBmaXJzdCIKZmkKYGBgCgotLS0KCiMjIFRyb3VibGVzaG9vdGluZwoKfCBQcm9ibGVtIHwgU29sdXRpb24gfAp8LS0tLS0tLS0tfC0tLS0tLS0tLS18CnwgYGdpdCBwdXNoYCBhc2tzIGZvciBwYXNzd29yZCB8IEdpdEh1YiBkaXNhYmxlZCBwYXNzd29yZCBhdXRoLiBVc2UgYSBwZXJzb25hbCBhY2Nlc3MgdG9rZW4gYXMgdGhlIHBhc3N3b3JkLCBvciBzd2l0Y2ggdG8gU1NIIHwKfCBgcmVtb3RlOiBQZXJtaXNzaW9uIHRvIFggZGVuaWVkYCB8IFRva2VuIG1heSBsYWNrIGByZXBvYCBzY29wZSDigJQgcmVnZW5lcmF0ZSB3aXRoIGNvcnJlY3Qgc2NvcGVzIHwKfCBgZ2ggYXV0aCBsb2dpbmAg5ZCOIGdpdCBwdXNoIOS7jeaKpSAiY291bGQgbm90IHJlYWQgVXNlcm5hbWU6IERldmljZSBub3QgY29uZmlndXJlZCJgIHwgZ2gg55qEIHRva2VuIOS/neWtmOWcqCBtYWNPUyBrZXljaGFpbu+8jOS9hiBnaXQg6buY6K6k5LiN6K+75Y+W5a6D44CC6L+Q6KGMIGBnaCBhdXRoIHNldHVwLWdpdGAg6K6pIGdoIOS9nOS4uiBnaXQgY3JlZGVudGlhbCBoZWxwZXLvvJvmiJbnlKggZW1iZWRkaW5nIOaWueW8j++8mmBnaXQgcmVtb3RlIHNldC11cmwgb3JpZ2luIGh0dHBzOi8vPHRva2VuPkBnaXRodWIuY29tLzxvd25lcj4vPHJlcG8+LmdpdGDvvIjkuLTml7bmlrnmoYjvvIx0b2tlbiDkvJrmmrTpnLLlnKggZ2l0IGNvbmZpZyDkuK3vvInvvJtgZ2ggYXV0aCBnaXQtY3JlZGVudGlhbGAg5LiN5piv5pyJ5pWI5ZG95Luk77yM5Yir55SoIHwKfCBgZmF0YWw6IEF1dGhlbnRpY2F0aW9uIGZhaWxlZGAgfCBDYWNoZWQgY3JlZGVudGlhbHMgbWF5IGJlIHN0YWxlIOKAlCBydW4gYGdpdCBjcmVkZW50aWFsIHJlamVjdGAgdGhlbiByZS1hdXRoZW50aWNhdGUgfAp8IGBzc2g6IGNvbm5lY3QgdG8gaG9zdCBnaXRodWIuY29tIHBvcnQgMjI6IENvbm5lY3Rpb24gcmVmdXNlZGAgfCBUcnkgU1NIIG92ZXIgSFRUUFMgcG9ydDogYWRkIGBIb3N0IGdpdGh1Yi5jb21gIHdpdGggYFBvcnQgNDQzYCBhbmQgYEhvc3RuYW1lIHNzaC5naXRodWIuY29tYCB0byBgfi8uc3NoL2NvbmZpZ2AgfAp8IENyZWRlbnRpYWxzIG5vdCBwZXJzaXN0aW5nIHwgQ2hlY2sgYGdpdCBjb25maWcgLS1nbG9iYWwgY3JlZGVudGlhbC5oZWxwZXJgIOKAlCBtdXN0IGJlIGBzdG9yZWAgb3IgYGNhY2hlYCB8CnwgTXVsdGlwbGUgR2l0SHViIGFjY291bnRzIHwgVXNlIFNTSCB3aXRoIGRpZmZlcmVudCBrZXlzIHBlciBob3N0IGFsaWFzIGluIGB+Ly5zc2gvY29uZmlnYCwgb3IgcGVyLXJlcG8gY3JlZGVudGlhbCBVUkxzIHwKfCBgZ2g6IGNvbW1hbmQgbm90IGZvdW5kYCArIG5vIHN1ZG8gfCBVc2UgZ2l0LW9ubHkgTWV0aG9kIDEgYWJvdmUg4oCUIG5vIGluc3RhbGxhdGlvbiBuZWVkZWQgfAo=
+---
+name: github-auth
+description: Set up GitHub authentication for the agent using git (universally available) or the gh CLI. Covers HTTPS tokens, SSH keys, credential helpers, and gh auth — with a detection flow to pick the right method automatically.
+version: 1.1.0
+author: Hermes Agent
+license: MIT
+metadata:
+  hermes:
+    tags: [GitHub, Authentication, Git, gh-cli, SSH, Setup]
+    related_skills: [github-pr-workflow, github-code-review, github-issues, github-repo-management]
+---
+
+# GitHub Authentication Setup
+
+This skill sets up authentication so the agent can work with GitHub repositories, PRs, issues, and CI. It covers two paths:
+
+- **`git` (always available)** — uses HTTPS personal access tokens or SSH keys
+- **`gh` CLI (if installed)** — richer GitHub API access with a simpler auth flow
+
+## Detection Flow
+
+When a user asks you to work with GitHub, run this check first:
+
+```bash
+# Check what's available
+git --version
+gh --version 2>/dev/null || echo "gh not installed"
+
+# Check if already authenticated
+gh auth status 2>/dev/null || echo "gh not authenticated"
+git config --global credential.helper 2>/dev/null || echo "no git credential helper"
+```
+
+**Decision tree:**
+1. If `gh auth status` shows authenticated → you're good, use `gh` for everything
+2. If `gh` is installed but not authenticated → use "gh auth" method below
+3. If `gh` is not installed → use "git-only" method below (no sudo needed)
+
+---
+
+## Method 1: Git-Only Authentication (No gh, No sudo)
+
+This works on any machine with `git` installed. No root access needed.
+
+### Option A: HTTPS with Personal Access Token (Recommended)
+
+This is the most portable method — works everywhere, no SSH config needed.
+
+**Step 1: Create a personal access token**
+
+Tell the user to go to: **https://github.com/settings/tokens**
+
+- Click "Generate new token (classic)"
+- Give it a name like "hermes-agent"
+- Select scopes:
+  - `repo` (full repository access — read, write, push, PRs)
+  - `workflow` (trigger and manage GitHub Actions)
+  - `read:org` (if working with organization repos)
+- Set expiration (90 days is a good default)
+- Copy the token — it won't be shown again
+
+**Step 2: Configure git to store the token**
+
+```bash
+# Set up the credential helper to cache credentials
+# "store" saves to ~/.git-credentials in plaintext (simple, persistent)
+git config --global credential.helper store
+
+# Now do a test operation that triggers auth — git will prompt for credentials
+# Username: <their-github-username>
+# Password: <paste the personal access token, NOT their GitHub password>
+git ls-remote https://github.com/<their-username>/<any-repo>.git
+```
+
+After entering credentials once, they're saved and reused for all future operations.
+
+**Alternative: cache helper (credentials expire from memory)**
+
+```bash
+# Cache in memory for 8 hours (28800 seconds) instead of saving to disk
+git config --global credential.helper 'cache --timeout=28800'
+```
+
+**Alternative: set the token directly in the remote URL (per-repo)**
+
+```bash
+# Embed token in the remote URL (avoids credential prompts entirely)
+git remote set-url origin https://<username>:<token>@github.com/<owner>/<repo>.git
+```
+
+**Step 3: Configure git identity**
+
+```bash
+# Required for commits — set name and email
+git config --global user.name "Their Name"
+git config --global user.email "their-email@example.com"
+```
+
+**Step 4: Verify**
+
+```bash
+# Test push access (this should work without any prompts now)
+git ls-remote https://github.com/<their-username>/<any-repo>.git
+
+# Verify identity
+git config --global user.name
+git config --global user.email
+```
+
+### Option B: SSH Key Authentication
+
+Good for users who prefer SSH or already have keys set up.
+
+**Step 1: Check for existing SSH keys**
+
+```bash
+ls -la ~/.ssh/id_*.pub 2>/dev/null || echo "No SSH keys found"
+```
+
+**Step 2: Generate a key if needed**
+
+```bash
+# Generate an ed25519 key (modern, secure, fast)
+ssh-keygen -t ed25519 -C "their-email@example.com" -f ~/.ssh/id_ed25519 -N ""
+
+# Display the public key for them to add to GitHub
+cat ~/.ssh/id_ed25519.pub
+```
+
+Tell the user to add the public key at: **https://github.com/settings/keys**
+- Click "New SSH key"
+- Paste the public key content
+- Give it a title like "hermes-agent-<machine-name>"
+
+**Step 3: Test the connection**
+
+```bash
+ssh -T git@github.com
+# Expected: "Hi <username>! You've successfully authenticated..."
+```
+
+**Step 4: Configure git to use SSH for GitHub**
+
+```bash
+# Rewrite HTTPS GitHub URLs to SSH automatically
+git config --global url."git@github.com:".insteadOf "https://github.com/"
+```
+
+**Step 5: Configure git identity**
+
+```bash
+git config --global user.name "Their Name"
+git config --global user.email "their-email@example.com"
+```
+
+---
+
+## Method 2: gh CLI Authentication
+
+If `gh` is installed, it handles both API access and git credentials in one step.
+
+### Interactive Browser Login (Desktop)
+
+```bash
+gh auth login
+# Select: GitHub.com
+# Select: HTTPS
+# Authenticate via browser
+```
+
+### Token-Based Login (Headless / SSH Servers)
+
+```bash
+echo "<THEIR_TOKEN>" | gh auth login --with-token
+
+# Set up git credentials through gh
+gh auth setup-git
+```
+
+### Verify
+
+```bash
+gh auth status
+```
+
+---
+
+## Using the GitHub API Without gh
+
+When `gh` is not available, you can still access the full GitHub API using `curl` with a personal access token. This is how the other GitHub skills implement their fallbacks.
+
+### Setting the Token for API Calls
+
+```bash
+# Option 1: Export as env var (preferred — keeps it out of commands)
+export GITHUB_TOKEN="<token>"
+
+# Then use in curl calls:
+curl -s -H "Authorization: token $GITHUB_TOKEN" \
+  https://api.github.com/user
+```
+
+### Extracting the Token from Git Credentials
+
+If git credentials are already configured (via credential.helper store), the token can be extracted:
+
+```bash
+# Read from git credential store
+grep "github.com" ~/.git-credentials 2>/dev/null | head -1 | sed 's|https://[^:]*:\([^@]*\)@.*|\1|'
+```
+
+### Helper: Detect Auth Method
+
+Use this pattern at the start of any GitHub workflow:
+
+```bash
+# Try gh first, fall back to git + curl
+if command -v gh &>/dev/null && gh auth status &>/dev/null; then
+  echo "AUTH_METHOD=gh"
+elif [ -n "$GITHUB_TOKEN" ]; then
+  echo "AUTH_METHOD=curl"
+elif [ -f ~/.hermes/.env ] && grep -q "^GITHUB_TOKEN=" ~/.hermes/.env; then
+  export GITHUB_TOKEN=$(grep "^GITHUB_TOKEN=" ~/.hermes/.env | head -1 | cut -d= -f2 | tr -d '\n\r')
+  echo "AUTH_METHOD=curl"
+elif grep -q "github.com" ~/.git-credentials 2>/dev/null; then
+  export GITHUB_TOKEN=$(grep "github.com" ~/.git-credentials | head -1 | sed 's|https://[^:]*:\([^@]*\)@.*|\1|')
+  echo "AUTH_METHOD=curl"
+else
+  echo "AUTH_METHOD=none"
+  echo "Need to set up authentication first"
+fi
+```
+
+---
+
+## Troubleshooting
+
+| Problem | Solution |
+|---------|----------|
+| `git push` asks for password | GitHub disabled password auth. Use a personal access token as the password, or switch to SSH |
+| `remote: Permission to X denied` | Token may lack `repo` scope — regenerate with correct scopes |
+| `gh auth login` 后 git push 仍报 "could not read Username: Device not configured"` | gh 的 token 保存在 macOS keychain，但 git 默认不读取它。运行 `gh auth setup-git` 让 gh 作为 git credential helper；或用 embedding 方式：`git remote set-url origin https://<token>@github.com/<owner>/<repo>.git`（临时方案，token 会暴露在 git config 中）；`gh auth git-credential` 不是有效命令，别用 |
+| `fatal: Authentication failed` | Cached credentials may be stale — run `git credential reject` then re-authenticate |
+| `ssh: connect to host github.com port 22: Connection refused` | Try SSH over HTTPS port: add `Host github.com` with `Port 443` and `Hostname ssh.github.com` to `~/.ssh/config` |
+| Credentials not persisting | Check `git config --global credential.helper` — must be `store` or `cache` |
+| Multiple GitHub accounts | Use SSH with different keys per host alias in `~/.ssh/config`, or per-repo credential URLs |
+| `gh: command not found` + no sudo | Use git-only Method 1 above — no installation needed |

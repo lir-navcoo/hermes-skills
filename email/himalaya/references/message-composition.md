@@ -1,1 +1,199 @@
-IyBNZXNzYWdlIENvbXBvc2l0aW9uIHdpdGggTU1MIChNSU1FIE1ldGEgTGFuZ3VhZ2UpCgpIaW1hbGF5YSB1c2VzIE1NTCBmb3IgY29tcG9zaW5nIGVtYWlscy4gTU1MIGlzIGEgc2ltcGxlIFhNTC1iYXNlZCBzeW50YXggdGhhdCBjb21waWxlcyB0byBNSU1FIG1lc3NhZ2VzLgoKIyMgQmFzaWMgTWVzc2FnZSBTdHJ1Y3R1cmUKCkFuIGVtYWlsIG1lc3NhZ2UgaXMgYSBsaXN0IG9mICoqaGVhZGVycyoqIGZvbGxvd2VkIGJ5IGEgKipib2R5KiosIHNlcGFyYXRlZCBieSBhIGJsYW5rIGxpbmU6CgpgYGAKRnJvbTogc2VuZGVyQGV4YW1wbGUuY29tClRvOiByZWNpcGllbnRAZXhhbXBsZS5jb20KU3ViamVjdDogSGVsbG8gV29ybGQKClRoaXMgaXMgdGhlIG1lc3NhZ2UgYm9keS4KYGBgCgojIyBIZWFkZXJzCgpDb21tb24gaGVhZGVyczoKCi0gYEZyb21gOiBTZW5kZXIgYWRkcmVzcwotIGBUb2A6IFByaW1hcnkgcmVjaXBpZW50KHMpCi0gYENjYDogQ2FyYm9uIGNvcHkgcmVjaXBpZW50cwotIGBCY2NgOiBCbGluZCBjYXJib24gY29weSByZWNpcGllbnRzCi0gYFN1YmplY3RgOiBNZXNzYWdlIHN1YmplY3QKLSBgUmVwbHktVG9gOiBBZGRyZXNzIGZvciByZXBsaWVzIChpZiBkaWZmZXJlbnQgZnJvbSBGcm9tKQotIGBJbi1SZXBseS1Ub2A6IE1lc3NhZ2UgSUQgYmVpbmcgcmVwbGllZCB0bwoKIyMjIEFkZHJlc3MgRm9ybWF0cwoKYGBgClRvOiB1c2VyQGV4YW1wbGUuY29tClRvOiBKb2huIERvZSA8am9obkBleGFtcGxlLmNvbT4KVG86ICJKb2huIERvZSIgPGpvaG5AZXhhbXBsZS5jb20+ClRvOiB1c2VyMUBleGFtcGxlLmNvbSwgdXNlcjJAZXhhbXBsZS5jb20sICJKYW5lIiA8amFuZUBleGFtcGxlLmNvbT4KYGBgCgojIyBQbGFpbiBUZXh0IEJvZHkKClNpbXBsZSBwbGFpbiB0ZXh0IGVtYWlsOgoKYGBgCkZyb206IGFsaWNlQGxvY2FsaG9zdApUbzogYm9iQGxvY2FsaG9zdApTdWJqZWN0OiBQbGFpbiBUZXh0IEV4YW1wbGUKCkhlbGxvLCB0aGlzIGlzIGEgcGxhaW4gdGV4dCBlbWFpbC4KTm8gc3BlY2lhbCBmb3JtYXR0aW5nIG5lZWRlZC4KCkJlc3QsCkFsaWNlCmBgYAoKIyMgTU1MIGZvciBSaWNoIEVtYWlscwoKIyMjIE11bHRpcGFydCBNZXNzYWdlcwoKQWx0ZXJuYXRpdmUgdGV4dC9odG1sIHBhcnRzOgoKYGBgCkZyb206IGFsaWNlQGxvY2FsaG9zdApUbzogYm9iQGxvY2FsaG9zdApTdWJqZWN0OiBNdWx0aXBhcnQgRXhhbXBsZQoKPCNtdWx0aXBhcnQgdHlwZT1hbHRlcm5hdGl2ZT4KVGhpcyBpcyB0aGUgcGxhaW4gdGV4dCB2ZXJzaW9uLgo8I3BhcnQgdHlwZT10ZXh0L2h0bWw+CjxodG1sPjxib2R5PjxoMT5UaGlzIGlzIHRoZSBIVE1MIHZlcnNpb248L2gxPjwvYm9keT48L2h0bWw+CjwjL211bHRpcGFydD4KYGBgCgojIyMgQXR0YWNobWVudHMKCkF0dGFjaCBhIGZpbGU6CgpgYGAKRnJvbTogYWxpY2VAbG9jYWxob3N0ClRvOiBib2JAbG9jYWxob3N0ClN1YmplY3Q6IFdpdGggQXR0YWNobWVudAoKSGVyZSBpcyB0aGUgZG9jdW1lbnQgeW91IHJlcXVlc3RlZC4KCjwjcGFydCBmaWxlbmFtZT0vcGF0aC90by9kb2N1bWVudC5wZGY+PCMvcGFydD4KYGBgCgpBdHRhY2htZW50IHdpdGggY3VzdG9tIG5hbWU6CgpgYGAKPCNwYXJ0IGZpbGVuYW1lPS9wYXRoL3RvL2ZpbGUucGRmIG5hbWU9cmVwb3J0LnBkZj48Iy9wYXJ0PgpgYGAKCk11bHRpcGxlIGF0dGFjaG1lbnRzOgoKYGBgCjwjcGFydCBmaWxlbmFtZT0vcGF0aC90by9kb2MxLnBkZj48Iy9wYXJ0Pgo8I3BhcnQgZmlsZW5hbWU9L3BhdGgvdG8vZG9jMi5wZGY+PCMvcGFydD4KYGBgCgojIyMgSW5saW5lIEltYWdlcwoKRW1iZWQgYW4gaW1hZ2UgaW5saW5lOgoKYGBgCkZyb206IGFsaWNlQGxvY2FsaG9zdApUbzogYm9iQGxvY2FsaG9zdApTdWJqZWN0OiBJbmxpbmUgSW1hZ2UKCjwjbXVsdGlwYXJ0IHR5cGU9cmVsYXRlZD4KPCNwYXJ0IHR5cGU9dGV4dC9odG1sPgo8aHRtbD48Ym9keT4KPHA+Q2hlY2sgb3V0IHRoaXMgaW1hZ2U6PC9wPgo8aW1nIHNyYz0iY2lkOmltYWdlMSI+CjwvYm9keT48L2h0bWw+CjwjcGFydCBkaXNwb3NpdGlvbj1pbmxpbmUgaWQ9aW1hZ2UxIGZpbGVuYW1lPS9wYXRoL3RvL2ltYWdlLnBuZz48Iy9wYXJ0Pgo8Iy9tdWx0aXBhcnQ+CmBgYAoKIyMjIE1peGVkIENvbnRlbnQgKFRleHQgKyBBdHRhY2htZW50cykKCmBgYApGcm9tOiBhbGljZUBsb2NhbGhvc3QKVG86IGJvYkBsb2NhbGhvc3QKU3ViamVjdDogTWl4ZWQgQ29udGVudAoKPCNtdWx0aXBhcnQgdHlwZT1taXhlZD4KPCNwYXJ0IHR5cGU9dGV4dC9wbGFpbj4KUGxlYXNlIGZpbmQgdGhlIGF0dGFjaGVkIGZpbGVzLgoKQmVzdCwKQWxpY2UKPCNwYXJ0IGZpbGVuYW1lPS9wYXRoL3RvL2ZpbGUxLnBkZj48Iy9wYXJ0Pgo8I3BhcnQgZmlsZW5hbWU9L3BhdGgvdG8vZmlsZTIuemlwPjwjL3BhcnQ+CjwjL211bHRpcGFydD4KYGBgCgojIyBNTUwgVGFnIFJlZmVyZW5jZQoKIyMjIGA8I211bHRpcGFydD5gCgpHcm91cHMgbXVsdGlwbGUgcGFydHMgdG9nZXRoZXIuCgotIGB0eXBlPWFsdGVybmF0aXZlYDogRGlmZmVyZW50IHJlcHJlc2VudGF0aW9ucyBvZiBzYW1lIGNvbnRlbnQKLSBgdHlwZT1taXhlZGA6IEluZGVwZW5kZW50IHBhcnRzICh0ZXh0ICsgYXR0YWNobWVudHMpCi0gYHR5cGU9cmVsYXRlZGA6IFBhcnRzIHRoYXQgcmVmZXJlbmNlIGVhY2ggb3RoZXIgKEhUTUwgKyBpbWFnZXMpCgojIyMgYDwjcGFydD5gCgpEZWZpbmVzIGEgbWVzc2FnZSBwYXJ0LgoKLSBgdHlwZT08bWltZS10eXBlPmA6IENvbnRlbnQgdHlwZSAoZS5nLiwgYHRleHQvaHRtbGAsIGBhcHBsaWNhdGlvbi9wZGZgKQotIGBmaWxlbmFtZT08cGF0aD5gOiBGaWxlIHRvIGF0dGFjaAotIGBuYW1lPTxuYW1lPmA6IERpc3BsYXkgbmFtZSBmb3IgYXR0YWNobWVudAotIGBkaXNwb3NpdGlvbj1pbmxpbmVgOiBEaXNwbGF5IGlubGluZSBpbnN0ZWFkIG9mIGFzIGF0dGFjaG1lbnQKLSBgaWQ9PGNpZD5gOiBDb250ZW50IElEIGZvciByZWZlcmVuY2luZyBpbiBIVE1MCgojIyBDb21wb3NpbmcgZnJvbSBDTEkKCiMjIyBJbnRlcmFjdGl2ZSBjb21wb3NlCgpPcGVucyB5b3VyIGAkRURJVE9SYDoKCmBgYGJhc2gKaGltYWxheWEgbWVzc2FnZSB3cml0ZQpgYGAKCiMjIyBSZXBseSAob3BlbnMgZWRpdG9yIHdpdGggcXVvdGVkIG1lc3NhZ2UpCgpgYGBiYXNoCmhpbWFsYXlhIG1lc3NhZ2UgcmVwbHkgNDIKaGltYWxheWEgbWVzc2FnZSByZXBseSA0MiAtLWFsbCAgIyByZXBseS1hbGwKYGBgCgojIyMgRm9yd2FyZAoKYGBgYmFzaApoaW1hbGF5YSBtZXNzYWdlIGZvcndhcmQgNDIKYGBgCgojIyMgU2VuZCBmcm9tIHN0ZGluCgpgYGBiYXNoCmNhdCBtZXNzYWdlLnR4dCB8IGhpbWFsYXlhIHRlbXBsYXRlIHNlbmQKYGBgCgojIyMgUHJlZmlsbCBoZWFkZXJzIGZyb20gQ0xJCgpgYGBiYXNoCmhpbWFsYXlhIG1lc3NhZ2Ugd3JpdGUgXAogIC1IICJUbzpyZWNpcGllbnRAZXhhbXBsZS5jb20iIFwKICAtSCAiU3ViamVjdDpRdWljayBNZXNzYWdlIiBcCiAgIk1lc3NhZ2UgYm9keSBoZXJlIgpgYGAKCiMjIFRpcHMKCi0gVGhlIGVkaXRvciBvcGVucyB3aXRoIGEgdGVtcGxhdGU7IGZpbGwgaW4gaGVhZGVycyBhbmQgYm9keS4KLSBTYXZlIGFuZCBleGl0IHRoZSBlZGl0b3IgdG8gc2VuZDsgZXhpdCB3aXRob3V0IHNhdmluZyB0byBjYW5jZWwuCi0gTU1MIHBhcnRzIGFyZSBjb21waWxlZCB0byBwcm9wZXIgTUlNRSB3aGVuIHNlbmRpbmcuCi0gVXNlIGBoaW1hbGF5YSBtZXNzYWdlIGV4cG9ydCAtLWZ1bGxgIHRvIGluc3BlY3QgdGhlIHJhdyBNSU1FIHN0cnVjdHVyZSBvZiByZWNlaXZlZCBlbWFpbHMuCg==
+# Message Composition with MML (MIME Meta Language)
+
+Himalaya uses MML for composing emails. MML is a simple XML-based syntax that compiles to MIME messages.
+
+## Basic Message Structure
+
+An email message is a list of **headers** followed by a **body**, separated by a blank line:
+
+```
+From: sender@example.com
+To: recipient@example.com
+Subject: Hello World
+
+This is the message body.
+```
+
+## Headers
+
+Common headers:
+
+- `From`: Sender address
+- `To`: Primary recipient(s)
+- `Cc`: Carbon copy recipients
+- `Bcc`: Blind carbon copy recipients
+- `Subject`: Message subject
+- `Reply-To`: Address for replies (if different from From)
+- `In-Reply-To`: Message ID being replied to
+
+### Address Formats
+
+```
+To: user@example.com
+To: John Doe <john@example.com>
+To: "John Doe" <john@example.com>
+To: user1@example.com, user2@example.com, "Jane" <jane@example.com>
+```
+
+## Plain Text Body
+
+Simple plain text email:
+
+```
+From: alice@localhost
+To: bob@localhost
+Subject: Plain Text Example
+
+Hello, this is a plain text email.
+No special formatting needed.
+
+Best,
+Alice
+```
+
+## MML for Rich Emails
+
+### Multipart Messages
+
+Alternative text/html parts:
+
+```
+From: alice@localhost
+To: bob@localhost
+Subject: Multipart Example
+
+<#multipart type=alternative>
+This is the plain text version.
+<#part type=text/html>
+<html><body><h1>This is the HTML version</h1></body></html>
+<#/multipart>
+```
+
+### Attachments
+
+Attach a file:
+
+```
+From: alice@localhost
+To: bob@localhost
+Subject: With Attachment
+
+Here is the document you requested.
+
+<#part filename=/path/to/document.pdf><#/part>
+```
+
+Attachment with custom name:
+
+```
+<#part filename=/path/to/file.pdf name=report.pdf><#/part>
+```
+
+Multiple attachments:
+
+```
+<#part filename=/path/to/doc1.pdf><#/part>
+<#part filename=/path/to/doc2.pdf><#/part>
+```
+
+### Inline Images
+
+Embed an image inline:
+
+```
+From: alice@localhost
+To: bob@localhost
+Subject: Inline Image
+
+<#multipart type=related>
+<#part type=text/html>
+<html><body>
+<p>Check out this image:</p>
+<img src="cid:image1">
+</body></html>
+<#part disposition=inline id=image1 filename=/path/to/image.png><#/part>
+<#/multipart>
+```
+
+### Mixed Content (Text + Attachments)
+
+```
+From: alice@localhost
+To: bob@localhost
+Subject: Mixed Content
+
+<#multipart type=mixed>
+<#part type=text/plain>
+Please find the attached files.
+
+Best,
+Alice
+<#part filename=/path/to/file1.pdf><#/part>
+<#part filename=/path/to/file2.zip><#/part>
+<#/multipart>
+```
+
+## MML Tag Reference
+
+### `<#multipart>`
+
+Groups multiple parts together.
+
+- `type=alternative`: Different representations of same content
+- `type=mixed`: Independent parts (text + attachments)
+- `type=related`: Parts that reference each other (HTML + images)
+
+### `<#part>`
+
+Defines a message part.
+
+- `type=<mime-type>`: Content type (e.g., `text/html`, `application/pdf`)
+- `filename=<path>`: File to attach
+- `name=<name>`: Display name for attachment
+- `disposition=inline`: Display inline instead of as attachment
+- `id=<cid>`: Content ID for referencing in HTML
+
+## Composing from CLI
+
+### Interactive compose
+
+Opens your `$EDITOR`:
+
+```bash
+himalaya message write
+```
+
+### Reply (opens editor with quoted message)
+
+```bash
+himalaya message reply 42
+himalaya message reply 42 --all  # reply-all
+```
+
+### Forward
+
+```bash
+himalaya message forward 42
+```
+
+### Send from stdin
+
+```bash
+cat message.txt | himalaya template send
+```
+
+### Prefill headers from CLI
+
+```bash
+himalaya message write \
+  -H "To:recipient@example.com" \
+  -H "Subject:Quick Message" \
+  "Message body here"
+```
+
+## Tips
+
+- The editor opens with a template; fill in headers and body.
+- Save and exit the editor to send; exit without saving to cancel.
+- MML parts are compiled to proper MIME when sending.
+- Use `himalaya message export --full` to inspect the raw MIME structure of received emails.

@@ -1,1 +1,589 @@
-IyBTZWdtZW50IEFueXRoaW5nIEFkdmFuY2VkIFVzYWdlIEd1aWRlCgojIyBTQU0gMiAoVmlkZW8gU2VnbWVudGF0aW9uKQoKIyMjIE92ZXJ2aWV3CgpTQU0gMiBleHRlbmRzIFNBTSB0byB2aWRlbyBzZWdtZW50YXRpb24gd2l0aCBzdHJlYW1pbmcgbWVtb3J5IGFyY2hpdGVjdHVyZToKCmBgYGJhc2gKcGlwIGluc3RhbGwgZ2l0K2h0dHBzOi8vZ2l0aHViLmNvbS9mYWNlYm9va3Jlc2VhcmNoL3NlZ21lbnQtYW55dGhpbmctMi5naXQKYGBgCgojIyMgVmlkZW8gc2VnbWVudGF0aW9uCgpgYGBweXRob24KZnJvbSBzYW0yLmJ1aWxkX3NhbSBpbXBvcnQgYnVpbGRfc2FtMl92aWRlb19wcmVkaWN0b3IKCnByZWRpY3RvciA9IGJ1aWxkX3NhbTJfdmlkZW9fcHJlZGljdG9yKCJzYW0yX2hpZXJhX2wueWFtbCIsICJzYW0yX2hpZXJhX2xhcmdlLnB0IikKCiMgSW5pdGlhbGl6ZSB3aXRoIHZpZGVvCnByZWRpY3Rvci5pbml0X3N0YXRlKHZpZGVvX3BhdGg9InZpZGVvLm1wNCIpCgojIEFkZCBwcm9tcHQgb24gZmlyc3QgZnJhbWUKcHJlZGljdG9yLmFkZF9uZXdfcG9pbnRzKAogICAgZnJhbWVfaWR4PTAsCiAgICBvYmpfaWQ9MSwKICAgIHBvaW50cz1bWzEwMCwgMjAwXV0sCiAgICBsYWJlbHM9WzFdCikKCiMgUHJvcGFnYXRlIHRocm91Z2ggdmlkZW8KZm9yIGZyYW1lX2lkeCwgbWFza3MgaW4gcHJlZGljdG9yLnByb3BhZ2F0ZV9pbl92aWRlbygpOgogICAgIyBtYXNrcyBjb250YWlucyBzZWdtZW50YXRpb24gZm9yIGFsbCB0cmFja2VkIG9iamVjdHMKICAgIHByb2Nlc3NfZnJhbWUoZnJhbWVfaWR4LCBtYXNrcykKYGBgCgojIyMgU0FNIDIgdnMgU0FNIGNvbXBhcmlzb24KCnwgRmVhdHVyZSB8IFNBTSB8IFNBTSAyIHwKfC0tLS0tLS0tLXwtLS0tLXwtLS0tLS0tfAp8IElucHV0IHwgSW1hZ2VzIG9ubHkgfCBJbWFnZXMgKyBWaWRlb3MgfAp8IEFyY2hpdGVjdHVyZSB8IFZpVCArIERlY29kZXIgfCBIaWVyYSArIE1lbW9yeSB8CnwgTWVtb3J5IHwgUGVyLWltYWdlIHwgU3RyZWFtaW5nIG1lbW9yeSBiYW5rIHwKfCBUcmFja2luZyB8IE5vIHwgWWVzLCBhY3Jvc3MgZnJhbWVzIHwKfCBNb2RlbHMgfCBWaVQtQi9ML0ggfCBIaWVyYS1UL1MvQisvTCB8CgojIyBHcm91bmRlZCBTQU0gKFRleHQtUHJvbXB0ZWQgU2VnbWVudGF0aW9uKQoKIyMjIFNldHVwCgpgYGBiYXNoCnBpcCBpbnN0YWxsIGdyb3VuZGluZ2Rpbm8tcHkKcGlwIGluc3RhbGwgZ2l0K2h0dHBzOi8vZ2l0aHViLmNvbS9mYWNlYm9va3Jlc2VhcmNoL3NlZ21lbnQtYW55dGhpbmcuZ2l0CmBgYAoKIyMjIFRleHQtdG8tbWFzayBwaXBlbGluZQoKYGBgcHl0aG9uCmZyb20gZ3JvdW5kaW5nZGluby51dGlsLmluZmVyZW5jZSBpbXBvcnQgbG9hZF9tb2RlbCwgcHJlZGljdApmcm9tIHNlZ21lbnRfYW55dGhpbmcgaW1wb3J0IHNhbV9tb2RlbF9yZWdpc3RyeSwgU2FtUHJlZGljdG9yCmltcG9ydCBjdjIKCiMgTG9hZCBHcm91bmRpbmcgRElOTwpncm91bmRpbmdfbW9kZWwgPSBsb2FkX21vZGVsKCJncm91bmRpbmdkaW5vX3N3aW50X29nYy5wdGgiLCAiR3JvdW5kaW5nRElOT19Td2luVF9PR0MucHkiKQoKIyBMb2FkIFNBTQpzYW0gPSBzYW1fbW9kZWxfcmVnaXN0cnlbInZpdF9oIl0oY2hlY2twb2ludD0ic2FtX3ZpdF9oXzRiODkzOS5wdGgiKQpwcmVkaWN0b3IgPSBTYW1QcmVkaWN0b3Ioc2FtKQoKZGVmIHRleHRfdG9fbWFzayhpbWFnZSwgdGV4dF9wcm9tcHQsIGJveF90aHJlc2hvbGQ9MC4zLCB0ZXh0X3RocmVzaG9sZD0wLjI1KToKICAgICIiIkdlbmVyYXRlIG1hc2tzIGZyb20gdGV4dCBkZXNjcmlwdGlvbi4iIiIKICAgICMgR2V0IGJvdW5kaW5nIGJveGVzIGZyb20gdGV4dAogICAgYm94ZXMsIGxvZ2l0cywgcGhyYXNlcyA9IHByZWRpY3QoCiAgICAgICAgbW9kZWw9Z3JvdW5kaW5nX21vZGVsLAogICAgICAgIGltYWdlPWltYWdlLAogICAgICAgIGNhcHRpb249dGV4dF9wcm9tcHQsCiAgICAgICAgYm94X3RocmVzaG9sZD1ib3hfdGhyZXNob2xkLAogICAgICAgIHRleHRfdGhyZXNob2xkPXRleHRfdGhyZXNob2xkCiAgICApCgogICAgIyBHZW5lcmF0ZSBtYXNrcyB3aXRoIFNBTQogICAgcHJlZGljdG9yLnNldF9pbWFnZShpbWFnZSkKCiAgICBtYXNrcyA9IFtdCiAgICBmb3IgYm94IGluIGJveGVzOgogICAgICAgICMgQ29udmVydCBub3JtYWxpemVkIGJveCB0byBwaXhlbCBjb29yZGluYXRlcwogICAgICAgIGgsIHcgPSBpbWFnZS5zaGFwZVs6Ml0KICAgICAgICBib3hfcGl4ZWxzID0gYm94ICogbnAuYXJyYXkoW3csIGgsIHcsIGhdKQoKICAgICAgICBtYXNrLCBzY29yZSwgXyA9IHByZWRpY3Rvci5wcmVkaWN0KAogICAgICAgICAgICBib3g9Ym94X3BpeGVscywKICAgICAgICAgICAgbXVsdGltYXNrX291dHB1dD1GYWxzZQogICAgICAgICkKICAgICAgICBtYXNrcy5hcHBlbmQobWFza1swXSkKCiAgICByZXR1cm4gbWFza3MsIGJveGVzLCBwaHJhc2VzCgojIFVzYWdlCmltYWdlID0gY3YyLmltcmVhZCgiaW1hZ2UuanBnIikKaW1hZ2UgPSBjdjIuY3Z0Q29sb3IoaW1hZ2UsIGN2Mi5DT0xPUl9CR1IyUkdCKQoKbWFza3MsIGJveGVzLCBwaHJhc2VzID0gdGV4dF90b19tYXNrKGltYWdlLCAicGVyc29uIC4gZG9nIC4gY2FyIikKYGBgCgojIyBCYXRjaGVkIFByb2Nlc3NpbmcKCiMjIyBFZmZpY2llbnQgbXVsdGktaW1hZ2UgcHJvY2Vzc2luZwoKYGBgcHl0aG9uCmltcG9ydCB0b3JjaApmcm9tIHNlZ21lbnRfYW55dGhpbmcgaW1wb3J0IFNhbVByZWRpY3Rvciwgc2FtX21vZGVsX3JlZ2lzdHJ5CgpjbGFzcyBCYXRjaGVkU0FNOgogICAgZGVmIF9faW5pdF9fKHNlbGYsIGNoZWNrcG9pbnQsIG1vZGVsX3R5cGU9InZpdF9oIiwgZGV2aWNlPSJjdWRhIik6CiAgICAgICAgc2VsZi5zYW0gPSBzYW1fbW9kZWxfcmVnaXN0cnlbbW9kZWxfdHlwZV0oY2hlY2twb2ludD1jaGVja3BvaW50KQogICAgICAgIHNlbGYuc2FtLnRvKGRldmljZSkKICAgICAgICBzZWxmLnByZWRpY3RvciA9IFNhbVByZWRpY3RvcihzZWxmLnNhbSkKICAgICAgICBzZWxmLmRldmljZSA9IGRldmljZQoKICAgIGRlZiBwcm9jZXNzX2JhdGNoKHNlbGYsIGltYWdlcywgcHJvbXB0cyk6CiAgICAgICAgIiIiUHJvY2VzcyBtdWx0aXBsZSBpbWFnZXMgd2l0aCBjb3JyZXNwb25kaW5nIHByb21wdHMuIiIiCiAgICAgICAgcmVzdWx0cyA9IFtdCgogICAgICAgIGZvciBpbWFnZSwgcHJvbXB0IGluIHppcChpbWFnZXMsIHByb21wdHMpOgogICAgICAgICAgICBzZWxmLnByZWRpY3Rvci5zZXRfaW1hZ2UoaW1hZ2UpCgogICAgICAgICAgICBpZiAicG9pbnQiIGluIHByb21wdDoKICAgICAgICAgICAgICAgIG1hc2tzLCBzY29yZXMsIF8gPSBzZWxmLnByZWRpY3Rvci5wcmVkaWN0KAogICAgICAgICAgICAgICAgICAgIHBvaW50X2Nvb3Jkcz1wcm9tcHRbInBvaW50Il0sCiAgICAgICAgICAgICAgICAgICAgcG9pbnRfbGFiZWxzPXByb21wdFsibGFiZWwiXSwKICAgICAgICAgICAgICAgICAgICBtdWx0aW1hc2tfb3V0cHV0PVRydWUKICAgICAgICAgICAgICAgICkKICAgICAgICAgICAgZWxpZiAiYm94IiBpbiBwcm9tcHQ6CiAgICAgICAgICAgICAgICBtYXNrcywgc2NvcmVzLCBfID0gc2VsZi5wcmVkaWN0b3IucHJlZGljdCgKICAgICAgICAgICAgICAgICAgICBib3g9cHJvbXB0WyJib3giXSwKICAgICAgICAgICAgICAgICAgICBtdWx0aW1hc2tfb3V0cHV0PUZhbHNlCiAgICAgICAgICAgICAgICApCgogICAgICAgICAgICByZXN1bHRzLmFwcGVuZCh7CiAgICAgICAgICAgICAgICAibWFza3MiOiBtYXNrcywKICAgICAgICAgICAgICAgICJzY29yZXMiOiBzY29yZXMsCiAgICAgICAgICAgICAgICAiYmVzdF9tYXNrIjogbWFza3NbbnAuYXJnbWF4KHNjb3JlcyldCiAgICAgICAgICAgIH0pCgogICAgICAgIHJldHVybiByZXN1bHRzCgojIFVzYWdlCmJhdGNoX3NhbSA9IEJhdGNoZWRTQU0oInNhbV92aXRfaF80Yjg5MzkucHRoIikKCmltYWdlcyA9IFtjdjIuaW1yZWFkKGYiaW1hZ2Vfe2l9LmpwZyIpIGZvciBpIGluIHJhbmdlKDEwKV0KcHJvbXB0cyA9IFt7InBvaW50IjogbnAuYXJyYXkoW1sxMDAsIDEwMF1dKSwgImxhYmVsIjogbnAuYXJyYXkoWzFdKX0gZm9yIF8gaW4gcmFuZ2UoMTApXQoKcmVzdWx0cyA9IGJhdGNoX3NhbS5wcm9jZXNzX2JhdGNoKGltYWdlcywgcHJvbXB0cykKYGBgCgojIyMgUGFyYWxsZWwgYXV0b21hdGljIG1hc2sgZ2VuZXJhdGlvbgoKYGBgcHl0aG9uCmZyb20gY29uY3VycmVudC5mdXR1cmVzIGltcG9ydCBUaHJlYWRQb29sRXhlY3V0b3IKZnJvbSBzZWdtZW50X2FueXRoaW5nIGltcG9ydCBTYW1BdXRvbWF0aWNNYXNrR2VuZXJhdG9yCgpkZWYgZ2VuZXJhdGVfbWFza3NfcGFyYWxsZWwoaW1hZ2VzLCBudW1fd29ya2Vycz00KToKICAgICIiIkdlbmVyYXRlIG1hc2tzIGZvciBtdWx0aXBsZSBpbWFnZXMgaW4gcGFyYWxsZWwuIiIiCiAgICAjIE5vdGU6IEVhY2ggd29ya2VyIG5lZWRzIGl0cyBvd24gbW9kZWwgaW5zdGFuY2UKICAgIGRlZiB3b3JrZXJfaW5pdCgpOgogICAgICAgIHNhbSA9IHNhbV9tb2RlbF9yZWdpc3RyeVsidml0X2IiXShjaGVja3BvaW50PSJzYW1fdml0X2JfMDFlYzY0LnB0aCIpCiAgICAgICAgcmV0dXJuIFNhbUF1dG9tYXRpY01hc2tHZW5lcmF0b3Ioc2FtKQoKICAgIGdlbmVyYXRvcnMgPSBbd29ya2VyX2luaXQoKSBmb3IgXyBpbiByYW5nZShudW1fd29ya2VycyldCgogICAgZGVmIHByb2Nlc3NfaW1hZ2UoYXJncyk6CiAgICAgICAgaWR4LCBpbWFnZSA9IGFyZ3MKICAgICAgICBnZW5lcmF0b3IgPSBnZW5lcmF0b3JzW2lkeCAlIG51bV93b3JrZXJzXQogICAgICAgIHJldHVybiBnZW5lcmF0b3IuZ2VuZXJhdGUoaW1hZ2UpCgogICAgd2l0aCBUaHJlYWRQb29sRXhlY3V0b3IobWF4X3dvcmtlcnM9bnVtX3dvcmtlcnMpIGFzIGV4ZWN1dG9yOgogICAgICAgIHJlc3VsdHMgPSBsaXN0KGV4ZWN1dG9yLm1hcChwcm9jZXNzX2ltYWdlLCBlbnVtZXJhdGUoaW1hZ2VzKSkpCgogICAgcmV0dXJuIHJlc3VsdHMKYGBgCgojIyBDdXN0b20gSW50ZWdyYXRpb24KCiMjIyBGYXN0QVBJIHNlcnZpY2UKCmBgYHB5dGhvbgpmcm9tIGZhc3RhcGkgaW1wb3J0IEZhc3RBUEksIEZpbGUsIFVwbG9hZEZpbGUKZnJvbSBweWRhbnRpYyBpbXBvcnQgQmFzZU1vZGVsCmltcG9ydCBudW1weSBhcyBucAppbXBvcnQgY3YyCmltcG9ydCBpbwoKYXBwID0gRmFzdEFQSSgpCgojIExvYWQgbW9kZWwgb25jZQpzYW0gPSBzYW1fbW9kZWxfcmVnaXN0cnlbInZpdF9oIl0oY2hlY2twb2ludD0ic2FtX3ZpdF9oXzRiODkzOS5wdGgiKQpzYW0udG8oImN1ZGEiKQpwcmVkaWN0b3IgPSBTYW1QcmVkaWN0b3Ioc2FtKQoKY2xhc3MgUG9pbnRQcm9tcHQoQmFzZU1vZGVsKToKICAgIHg6IGludAogICAgeTogaW50CiAgICBsYWJlbDogaW50ID0gMQoKQGFwcC5wb3N0KCIvc2VnbWVudC9wb2ludCIpCmFzeW5jIGRlZiBzZWdtZW50X3dpdGhfcG9pbnQoCiAgICBmaWxlOiBVcGxvYWRGaWxlID0gRmlsZSguLi4pLAogICAgcG9pbnRzOiBsaXN0W1BvaW50UHJvbXB0XSA9IFtdCik6CiAgICAjIFJlYWQgaW1hZ2UKICAgIGNvbnRlbnRzID0gYXdhaXQgZmlsZS5yZWFkKCkKICAgIG5wYXJyID0gbnAuZnJvbWJ1ZmZlcihjb250ZW50cywgbnAudWludDgpCiAgICBpbWFnZSA9IGN2Mi5pbWRlY29kZShucGFyciwgY3YyLklNUkVBRF9DT0xPUikKICAgIGltYWdlID0gY3YyLmN2dENvbG9yKGltYWdlLCBjdjIuQ09MT1JfQkdSMlJHQikKCiAgICAjIFNldCBpbWFnZQogICAgcHJlZGljdG9yLnNldF9pbWFnZShpbWFnZSkKCiAgICAjIFByZXBhcmUgcHJvbXB0cwogICAgcG9pbnRfY29vcmRzID0gbnAuYXJyYXkoW1twLngsIHAueV0gZm9yIHAgaW4gcG9pbnRzXSkKICAgIHBvaW50X2xhYmVscyA9IG5wLmFycmF5KFtwLmxhYmVsIGZvciBwIGluIHBvaW50c10pCgogICAgIyBHZW5lcmF0ZSBtYXNrcwogICAgbWFza3MsIHNjb3JlcywgXyA9IHByZWRpY3Rvci5wcmVkaWN0KAogICAgICAgIHBvaW50X2Nvb3Jkcz1wb2ludF9jb29yZHMsCiAgICAgICAgcG9pbnRfbGFiZWxzPXBvaW50X2xhYmVscywKICAgICAgICBtdWx0aW1hc2tfb3V0cHV0PVRydWUKICAgICkKCiAgICBiZXN0X2lkeCA9IG5wLmFyZ21heChzY29yZXMpCgogICAgcmV0dXJuIHsKICAgICAgICAibWFzayI6IG1hc2tzW2Jlc3RfaWR4XS50b2xpc3QoKSwKICAgICAgICAic2NvcmUiOiBmbG9hdChzY29yZXNbYmVzdF9pZHhdKSwKICAgICAgICAiYWxsX3Njb3JlcyI6IHNjb3Jlcy50b2xpc3QoKQogICAgfQoKQGFwcC5wb3N0KCIvc2VnbWVudC9hdXRvIikKYXN5bmMgZGVmIHNlZ21lbnRfYXV0b21hdGljKGZpbGU6IFVwbG9hZEZpbGUgPSBGaWxlKC4uLikpOgogICAgY29udGVudHMgPSBhd2FpdCBmaWxlLnJlYWQoKQogICAgbnBhcnIgPSBucC5mcm9tYnVmZmVyKGNvbnRlbnRzLCBucC51aW50OCkKICAgIGltYWdlID0gY3YyLmltZGVjb2RlKG5wYXJyLCBjdjIuSU1SRUFEX0NPTE9SKQogICAgaW1hZ2UgPSBjdjIuY3Z0Q29sb3IoaW1hZ2UsIGN2Mi5DT0xPUl9CR1IyUkdCKQoKICAgIG1hc2tfZ2VuZXJhdG9yID0gU2FtQXV0b21hdGljTWFza0dlbmVyYXRvcihzYW0pCiAgICBtYXNrcyA9IG1hc2tfZ2VuZXJhdG9yLmdlbmVyYXRlKGltYWdlKQoKICAgIHJldHVybiB7CiAgICAgICAgIm51bV9tYXNrcyI6IGxlbihtYXNrcyksCiAgICAgICAgIm1hc2tzIjogWwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICAiYmJveCI6IG1bImJib3giXSwKICAgICAgICAgICAgICAgICJhcmVhIjogbVsiYXJlYSJdLAogICAgICAgICAgICAgICAgInByZWRpY3RlZF9pb3UiOiBtWyJwcmVkaWN0ZWRfaW91Il0sCiAgICAgICAgICAgICAgICAic3RhYmlsaXR5X3Njb3JlIjogbVsic3RhYmlsaXR5X3Njb3JlIl0KICAgICAgICAgICAgfQogICAgICAgICAgICBmb3IgbSBpbiBtYXNrcwogICAgICAgIF0KICAgIH0KYGBgCgojIyMgR3JhZGlvIGludGVyZmFjZQoKYGBgcHl0aG9uCmltcG9ydCBncmFkaW8gYXMgZ3IKaW1wb3J0IG51bXB5IGFzIG5wCgojIExvYWQgbW9kZWwKc2FtID0gc2FtX21vZGVsX3JlZ2lzdHJ5WyJ2aXRfaCJdKGNoZWNrcG9pbnQ9InNhbV92aXRfaF80Yjg5MzkucHRoIikKcHJlZGljdG9yID0gU2FtUHJlZGljdG9yKHNhbSkKCmRlZiBzZWdtZW50X2ltYWdlKGltYWdlLCBldnQ6IGdyLlNlbGVjdERhdGEpOgogICAgIiIiU2VnbWVudCBvYmplY3QgYXQgY2xpY2tlZCBwb2ludC4iIiIKICAgIHByZWRpY3Rvci5zZXRfaW1hZ2UoaW1hZ2UpCgogICAgcG9pbnQgPSBucC5hcnJheShbW2V2dC5pbmRleFswXSwgZXZ0LmluZGV4WzFdXV0pCiAgICBsYWJlbCA9IG5wLmFycmF5KFsxXSkKCiAgICBtYXNrcywgc2NvcmVzLCBfID0gcHJlZGljdG9yLnByZWRpY3QoCiAgICAgICAgcG9pbnRfY29vcmRzPXBvaW50LAogICAgICAgIHBvaW50X2xhYmVscz1sYWJlbCwKICAgICAgICBtdWx0aW1hc2tfb3V0cHV0PVRydWUKICAgICkKCiAgICBiZXN0X21hc2sgPSBtYXNrc1tucC5hcmdtYXgoc2NvcmVzKV0KCiAgICAjIE92ZXJsYXkgbWFzayBvbiBpbWFnZQogICAgb3ZlcmxheSA9IGltYWdlLmNvcHkoKQogICAgb3ZlcmxheVtiZXN0X21hc2tdID0gb3ZlcmxheVtiZXN0X21hc2tdICogMC41ICsgbnAuYXJyYXkoWzI1NSwgMCwgMF0pICogMC41CgogICAgcmV0dXJuIG92ZXJsYXkKCndpdGggZ3IuQmxvY2tzKCkgYXMgZGVtbzoKICAgIGdyLk1hcmtkb3duKCIjIFNBTSBJbnRlcmFjdGl2ZSBTZWdtZW50YXRpb24iKQogICAgZ3IuTWFya2Rvd24oIkNsaWNrIG9uIGFuIG9iamVjdCB0byBzZWdtZW50IGl0IikKCiAgICB3aXRoIGdyLlJvdygpOgogICAgICAgIGlucHV0X2ltYWdlID0gZ3IuSW1hZ2UobGFiZWw9IklucHV0IEltYWdlIiwgaW50ZXJhY3RpdmU9VHJ1ZSkKICAgICAgICBvdXRwdXRfaW1hZ2UgPSBnci5JbWFnZShsYWJlbD0iU2VnbWVudGVkIEltYWdlIikKCiAgICBpbnB1dF9pbWFnZS5zZWxlY3Qoc2VnbWVudF9pbWFnZSwgaW5wdXRzPVtpbnB1dF9pbWFnZV0sIG91dHB1dHM9W291dHB1dF9pbWFnZV0pCgpkZW1vLmxhdW5jaCgpCmBgYAoKIyMgRmluZS1UdW5pbmcgU0FNCgojIyMgTG9SQSBmaW5lLXR1bmluZyAoZXhwZXJpbWVudGFsKQoKYGBgcHl0aG9uCmZyb20gcGVmdCBpbXBvcnQgTG9yYUNvbmZpZywgZ2V0X3BlZnRfbW9kZWwKZnJvbSB0cmFuc2Zvcm1lcnMgaW1wb3J0IFNhbU1vZGVsCgojIExvYWQgbW9kZWwKbW9kZWwgPSBTYW1Nb2RlbC5mcm9tX3ByZXRyYWluZWQoImZhY2Vib29rL3NhbS12aXQtYmFzZSIpCgojIENvbmZpZ3VyZSBMb1JBCmxvcmFfY29uZmlnID0gTG9yYUNvbmZpZygKICAgIHI9MTYsCiAgICBsb3JhX2FscGhhPTMyLAogICAgdGFyZ2V0X21vZHVsZXM9WyJxa3YiXSwgICMgQXR0ZW50aW9uIGxheWVycwogICAgbG9yYV9kcm9wb3V0PTAuMSwKICAgIGJpYXM9Im5vbmUiLAopCgojIEFwcGx5IExvUkEKbW9kZWwgPSBnZXRfcGVmdF9tb2RlbChtb2RlbCwgbG9yYV9jb25maWcpCgojIFRyYWluaW5nIGxvb3AgKHNpbXBsaWZpZWQpCm9wdGltaXplciA9IHRvcmNoLm9wdGltLkFkYW1XKG1vZGVsLnBhcmFtZXRlcnMoKSwgbHI9MWUtNCkKCmZvciBiYXRjaCBpbiBkYXRhbG9hZGVyOgogICAgb3V0cHV0cyA9IG1vZGVsKAogICAgICAgIHBpeGVsX3ZhbHVlcz1iYXRjaFsicGl4ZWxfdmFsdWVzIl0sCiAgICAgICAgaW5wdXRfcG9pbnRzPWJhdGNoWyJpbnB1dF9wb2ludHMiXSwKICAgICAgICBpbnB1dF9sYWJlbHM9YmF0Y2hbImlucHV0X2xhYmVscyJdCiAgICApCgogICAgIyBDdXN0b20gbG9zcyAoZS5nLiwgSW9VIGxvc3Mgd2l0aCBncm91bmQgdHJ1dGgpCiAgICBsb3NzID0gY29tcHV0ZV9sb3NzKG91dHB1dHMucHJlZF9tYXNrcywgYmF0Y2hbImd0X21hc2tzIl0pCiAgICBsb3NzLmJhY2t3YXJkKCkKICAgIG9wdGltaXplci5zdGVwKCkKICAgIG9wdGltaXplci56ZXJvX2dyYWQoKQpgYGAKCiMjIyBNZWRTQU0gKE1lZGljYWwgaW1hZ2luZykKCmBgYHB5dGhvbgojIE1lZFNBTSBpcyBhIGZpbmUtdHVuZWQgU0FNIGZvciBtZWRpY2FsIGltYWdlcwojIGh0dHBzOi8vZ2l0aHViLmNvbS9ib3dhbmctbGFiL01lZFNBTQoKZnJvbSBzZWdtZW50X2FueXRoaW5nIGltcG9ydCBzYW1fbW9kZWxfcmVnaXN0cnksIFNhbVByZWRpY3RvcgppbXBvcnQgdG9yY2gKCiMgTG9hZCBNZWRTQU0gY2hlY2twb2ludAptZWRzYW0gPSBzYW1fbW9kZWxfcmVnaXN0cnlbInZpdF9iIl0oY2hlY2twb2ludD0ibWVkc2FtX3ZpdF9iLnB0aCIpCm1lZHNhbS50bygiY3VkYSIpCgpwcmVkaWN0b3IgPSBTYW1QcmVkaWN0b3IobWVkc2FtKQoKIyBQcm9jZXNzIG1lZGljYWwgaW1hZ2UKIyBDb252ZXJ0IGdyYXlzY2FsZSB0byBSR0IgaWYgbmVlZGVkCm1lZGljYWxfaW1hZ2UgPSBjdjIuaW1yZWFkKCJjdF9zY2FuLnBuZyIsIGN2Mi5JTVJFQURfR1JBWVNDQUxFKQpyZ2JfaW1hZ2UgPSBucC5zdGFjayhbbWVkaWNhbF9pbWFnZV0gKiAzLCBheGlzPS0xKQoKcHJlZGljdG9yLnNldF9pbWFnZShyZ2JfaW1hZ2UpCgojIFNlZ21lbnQgd2l0aCBib3ggcHJvbXB0IChjb21tb24gZm9yIG1lZGljYWwgaW1hZ2luZykKbWFza3MsIHNjb3JlcywgXyA9IHByZWRpY3Rvci5wcmVkaWN0KAogICAgYm94PW5wLmFycmF5KFt4MSwgeTEsIHgyLCB5Ml0pLAogICAgbXVsdGltYXNrX291dHB1dD1GYWxzZQopCmBgYAoKIyMgQWR2YW5jZWQgTWFzayBQcm9jZXNzaW5nCgojIyMgTWFzayByZWZpbmVtZW50CgpgYGBweXRob24KaW1wb3J0IGN2Mgpmcm9tIHNjaXB5IGltcG9ydCBuZGltYWdlCgpkZWYgcmVmaW5lX21hc2sobWFzaywga2VybmVsX3NpemU9NSwgaXRlcmF0aW9ucz0yKToKICAgICIiIlJlZmluZSBtYXNrIHdpdGggbW9ycGhvbG9naWNhbCBvcGVyYXRpb25zLiIiIgogICAga2VybmVsID0gY3YyLmdldFN0cnVjdHVyaW5nRWxlbWVudChjdjIuTU9SUEhfRUxMSVBTRSwgKGtlcm5lbF9zaXplLCBrZXJuZWxfc2l6ZSkpCgogICAgIyBDbG9zZSBzbWFsbCBob2xlcwogICAgY2xvc2VkID0gY3YyLm1vcnBob2xvZ3lFeChtYXNrLmFzdHlwZShucC51aW50OCksIGN2Mi5NT1JQSF9DTE9TRSwga2VybmVsLCBpdGVyYXRpb25zPWl0ZXJhdGlvbnMpCgogICAgIyBSZW1vdmUgc21hbGwgbm9pc2UKICAgIG9wZW5lZCA9IGN2Mi5tb3JwaG9sb2d5RXgoY2xvc2VkLCBjdjIuTU9SUEhfT1BFTiwga2VybmVsLCBpdGVyYXRpb25zPWl0ZXJhdGlvbnMpCgogICAgcmV0dXJuIG9wZW5lZC5hc3R5cGUoYm9vbCkKCmRlZiBmaWxsX2hvbGVzKG1hc2spOgogICAgIiIiRmlsbCBob2xlcyBpbiBtYXNrLiIiIgogICAgZmlsbGVkID0gbmRpbWFnZS5iaW5hcnlfZmlsbF9ob2xlcyhtYXNrKQogICAgcmV0dXJuIGZpbGxlZAoKZGVmIHJlbW92ZV9zbWFsbF9yZWdpb25zKG1hc2ssIG1pbl9hcmVhPTEwMCk6CiAgICAiIiJSZW1vdmUgc21hbGwgZGlzY29ubmVjdGVkIHJlZ2lvbnMuIiIiCiAgICBsYWJlbGVkLCBudW1fZmVhdHVyZXMgPSBuZGltYWdlLmxhYmVsKG1hc2spCiAgICBzaXplcyA9IG5kaW1hZ2Uuc3VtKG1hc2ssIGxhYmVsZWQsIHJhbmdlKDEsIG51bV9mZWF0dXJlcyArIDEpKQoKICAgICMgS2VlcCBvbmx5IHJlZ2lvbnMgbGFyZ2VyIHRoYW4gbWluX2FyZWEKICAgIG1hc2tfY2xlYW4gPSBucC56ZXJvc19saWtlKG1hc2spCiAgICBmb3IgaSwgc2l6ZSBpbiBlbnVtZXJhdGUoc2l6ZXMsIDEpOgogICAgICAgIGlmIHNpemUgPj0gbWluX2FyZWE6CiAgICAgICAgICAgIG1hc2tfY2xlYW5bbGFiZWxlZCA9PSBpXSA9IFRydWUKCiAgICByZXR1cm4gbWFza19jbGVhbgpgYGAKCiMjIyBNYXNrIHRvIHBvbHlnb24gY29udmVyc2lvbgoKYGBgcHl0aG9uCmltcG9ydCBjdjIKCmRlZiBtYXNrX3RvX3BvbHlnb25zKG1hc2ssIGVwc2lsb25fZmFjdG9yPTAuMDEpOgogICAgIiIiQ29udmVydCBiaW5hcnkgbWFzayB0byBwb2x5Z29uIGNvb3JkaW5hdGVzLiIiIgogICAgY29udG91cnMsIF8gPSBjdjIuZmluZENvbnRvdXJzKAogICAgICAgIG1hc2suYXN0eXBlKG5wLnVpbnQ4KSwKICAgICAgICBjdjIuUkVUUl9FWFRFUk5BTCwKICAgICAgICBjdjIuQ0hBSU5fQVBQUk9YX1NJTVBMRQogICAgKQoKICAgIHBvbHlnb25zID0gW10KICAgIGZvciBjb250b3VyIGluIGNvbnRvdXJzOgogICAgICAgIGVwc2lsb24gPSBlcHNpbG9uX2ZhY3RvciAqIGN2Mi5hcmNMZW5ndGgoY29udG91ciwgVHJ1ZSkKICAgICAgICBhcHByb3ggPSBjdjIuYXBwcm94UG9seURQKGNvbnRvdXIsIGVwc2lsb24sIFRydWUpCiAgICAgICAgcG9seWdvbiA9IGFwcHJveC5zcXVlZXplKCkudG9saXN0KCkKICAgICAgICBpZiBsZW4ocG9seWdvbikgPj0gMzogICMgVmFsaWQgcG9seWdvbgogICAgICAgICAgICBwb2x5Z29ucy5hcHBlbmQocG9seWdvbikKCiAgICByZXR1cm4gcG9seWdvbnMKCmRlZiBwb2x5Z29uc190b19tYXNrKHBvbHlnb25zLCBoZWlnaHQsIHdpZHRoKToKICAgICIiIkNvbnZlcnQgcG9seWdvbnMgYmFjayB0byBiaW5hcnkgbWFzay4iIiIKICAgIG1hc2sgPSBucC56ZXJvcygoaGVpZ2h0LCB3aWR0aCksIGR0eXBlPW5wLnVpbnQ4KQogICAgZm9yIHBvbHlnb24gaW4gcG9seWdvbnM6CiAgICAgICAgcHRzID0gbnAuYXJyYXkocG9seWdvbiwgZHR5cGU9bnAuaW50MzIpCiAgICAgICAgY3YyLmZpbGxQb2x5KG1hc2ssIFtwdHNdLCAxKQogICAgcmV0dXJuIG1hc2suYXN0eXBlKGJvb2wpCmBgYAoKIyMjIE11bHRpLXNjYWxlIHNlZ21lbnRhdGlvbgoKYGBgcHl0aG9uCmRlZiBtdWx0aXNjYWxlX3NlZ21lbnQoaW1hZ2UsIHByZWRpY3RvciwgcG9pbnQsIHNjYWxlcz1bMC41LCAxLjAsIDIuMF0pOgogICAgIiIiR2VuZXJhdGUgbWFza3MgYXQgbXVsdGlwbGUgc2NhbGVzIGFuZCBjb21iaW5lLiIiIgogICAgaCwgdyA9IGltYWdlLnNoYXBlWzoyXQogICAgbWFza3NfYWxsID0gW10KCiAgICBmb3Igc2NhbGUgaW4gc2NhbGVzOgogICAgICAgICMgUmVzaXplIGltYWdlCiAgICAgICAgbmV3X2gsIG5ld193ID0gaW50KGggKiBzY2FsZSksIGludCh3ICogc2NhbGUpCiAgICAgICAgc2NhbGVkX2ltYWdlID0gY3YyLnJlc2l6ZShpbWFnZSwgKG5ld193LCBuZXdfaCkpCiAgICAgICAgc2NhbGVkX3BvaW50ID0gKHBvaW50ICogc2NhbGUpLmFzdHlwZShpbnQpCgogICAgICAgICMgU2VnbWVudAogICAgICAgIHByZWRpY3Rvci5zZXRfaW1hZ2Uoc2NhbGVkX2ltYWdlKQogICAgICAgIG1hc2tzLCBzY29yZXMsIF8gPSBwcmVkaWN0b3IucHJlZGljdCgKICAgICAgICAgICAgcG9pbnRfY29vcmRzPXNjYWxlZF9wb2ludC5yZXNoYXBlKDEsIDIpLAogICAgICAgICAgICBwb2ludF9sYWJlbHM9bnAuYXJyYXkoWzFdKSwKICAgICAgICAgICAgbXVsdGltYXNrX291dHB1dD1UcnVlCiAgICAgICAgKQoKICAgICAgICAjIFJlc2l6ZSBtYXNrIGJhY2sKICAgICAgICBiZXN0X21hc2sgPSBtYXNrc1tucC5hcmdtYXgoc2NvcmVzKV0KICAgICAgICBvcmlnaW5hbF9tYXNrID0gY3YyLnJlc2l6ZShiZXN0X21hc2suYXN0eXBlKG5wLnVpbnQ4KSwgKHcsIGgpKSA+IDAuNQoKICAgICAgICBtYXNrc19hbGwuYXBwZW5kKG9yaWdpbmFsX21hc2spCgogICAgIyBDb21iaW5lIG1hc2tzIChtYWpvcml0eSB2b3RpbmcpCiAgICBjb21iaW5lZCA9IG5wLnN0YWNrKG1hc2tzX2FsbCwgYXhpcz0wKQogICAgZmluYWxfbWFzayA9IG5wLnN1bShjb21iaW5lZCwgYXhpcz0wKSA+PSBsZW4oc2NhbGVzKSAvLyAyICsgMQoKICAgIHJldHVybiBmaW5hbF9tYXNrCmBgYAoKIyMgUGVyZm9ybWFuY2UgT3B0aW1pemF0aW9uCgojIyMgVGVuc29yUlQgYWNjZWxlcmF0aW9uCgpgYGBweXRob24KaW1wb3J0IHRlbnNvcnJ0IGFzIHRydAppbXBvcnQgcHljdWRhLmRyaXZlciBhcyBjdWRhCmltcG9ydCBweWN1ZGEuYXV0b2luaXQKCmRlZiBleHBvcnRfdG9fdGVuc29ycnQob25ueF9wYXRoLCBlbmdpbmVfcGF0aCwgZnAxNj1UcnVlKToKICAgICIiIkNvbnZlcnQgT05OWCBtb2RlbCB0byBUZW5zb3JSVCBlbmdpbmUuIiIiCiAgICBsb2dnZXIgPSB0cnQuTG9nZ2VyKHRydC5Mb2dnZXIuV0FSTklORykKICAgIGJ1aWxkZXIgPSB0cnQuQnVpbGRlcihsb2dnZXIpCiAgICBuZXR3b3JrID0gYnVpbGRlci5jcmVhdGVfbmV0d29yaygxIDw8IGludCh0cnQuTmV0d29ya0RlZmluaXRpb25DcmVhdGlvbkZsYWcuRVhQTElDSVRfQkFUQ0gpKQogICAgcGFyc2VyID0gdHJ0Lk9ubnhQYXJzZXIobmV0d29yaywgbG9nZ2VyKQoKICAgIHdpdGggb3Blbihvbm54X3BhdGgsICdyYicpIGFzIGY6CiAgICAgICAgaWYgbm90IHBhcnNlci5wYXJzZShmLnJlYWQoKSk6CiAgICAgICAgICAgIGZvciBlcnJvciBpbiByYW5nZShwYXJzZXIubnVtX2Vycm9ycyk6CiAgICAgICAgICAgICAgICBwcmludChwYXJzZXIuZ2V0X2Vycm9yKGVycm9yKSkKICAgICAgICAgICAgcmV0dXJuIE5vbmUKCiAgICBjb25maWcgPSBidWlsZGVyLmNyZWF0ZV9idWlsZGVyX2NvbmZpZygpCiAgICBjb25maWcubWF4X3dvcmtzcGFjZV9zaXplID0gMSA8PCAzMCAgIyAxR0IKCiAgICBpZiBmcDE2OgogICAgICAgIGNvbmZpZy5zZXRfZmxhZyh0cnQuQnVpbGRlckZsYWcuRlAxNikKCiAgICBlbmdpbmUgPSBidWlsZGVyLmJ1aWxkX2VuZ2luZShuZXR3b3JrLCBjb25maWcpCgogICAgd2l0aCBvcGVuKGVuZ2luZV9wYXRoLCAnd2InKSBhcyBmOgogICAgICAgIGYud3JpdGUoZW5naW5lLnNlcmlhbGl6ZSgpKQoKICAgIHJldHVybiBlbmdpbmUKYGBgCgojIyMgTWVtb3J5LWVmZmljaWVudCBpbmZlcmVuY2UKCmBgYHB5dGhvbgpjbGFzcyBNZW1vcnlFZmZpY2llbnRTQU06CiAgICBkZWYgX19pbml0X18oc2VsZiwgY2hlY2twb2ludCwgbW9kZWxfdHlwZT0idml0X2IiKToKICAgICAgICBzZWxmLnNhbSA9IHNhbV9tb2RlbF9yZWdpc3RyeVttb2RlbF90eXBlXShjaGVja3BvaW50PWNoZWNrcG9pbnQpCiAgICAgICAgc2VsZi5zYW0uZXZhbCgpCiAgICAgICAgc2VsZi5wcmVkaWN0b3IgPSBOb25lCgogICAgZGVmIF9fZW50ZXJfXyhzZWxmKToKICAgICAgICBzZWxmLnNhbS50bygiY3VkYSIpCiAgICAgICAgc2VsZi5wcmVkaWN0b3IgPSBTYW1QcmVkaWN0b3Ioc2VsZi5zYW0pCiAgICAgICAgcmV0dXJuIHNlbGYKCiAgICBkZWYgX19leGl0X18oc2VsZiwgKmFyZ3MpOgogICAgICAgIHNlbGYuc2FtLnRvKCJjcHUiKQogICAgICAgIHRvcmNoLmN1ZGEuZW1wdHlfY2FjaGUoKQoKICAgIGRlZiBzZWdtZW50KHNlbGYsIGltYWdlLCBwb2ludHMsIGxhYmVscyk6CiAgICAgICAgc2VsZi5wcmVkaWN0b3Iuc2V0X2ltYWdlKGltYWdlKQogICAgICAgIG1hc2tzLCBzY29yZXMsIF8gPSBzZWxmLnByZWRpY3Rvci5wcmVkaWN0KAogICAgICAgICAgICBwb2ludF9jb29yZHM9cG9pbnRzLAogICAgICAgICAgICBwb2ludF9sYWJlbHM9bGFiZWxzLAogICAgICAgICAgICBtdWx0aW1hc2tfb3V0cHV0PVRydWUKICAgICAgICApCiAgICAgICAgcmV0dXJuIG1hc2tzLCBzY29yZXMKCiMgVXNhZ2Ugd2l0aCBjb250ZXh0IG1hbmFnZXIgKGF1dG8tY2xlYW51cCkKd2l0aCBNZW1vcnlFZmZpY2llbnRTQU0oInNhbV92aXRfYl8wMWVjNjQucHRoIikgYXMgc2FtOgogICAgbWFza3MsIHNjb3JlcyA9IHNhbS5zZWdtZW50KGltYWdlLCBwb2ludHMsIGxhYmVscykKIyBDVURBIG1lbW9yeSBmcmVlZCBhdXRvbWF0aWNhbGx5CmBgYAoKIyMgRGF0YXNldCBHZW5lcmF0aW9uCgojIyMgQ3JlYXRlIHNlZ21lbnRhdGlvbiBkYXRhc2V0CgpgYGBweXRob24KaW1wb3J0IGpzb24KCmRlZiBnZW5lcmF0ZV9kYXRhc2V0KGltYWdlc19kaXIsIG91dHB1dF9kaXIsIG1hc2tfZ2VuZXJhdG9yKToKICAgICIiIkdlbmVyYXRlIHNlZ21lbnRhdGlvbiBkYXRhc2V0IGZyb20gaW1hZ2VzLiIiIgogICAgYW5ub3RhdGlvbnMgPSBbXQoKICAgIGZvciBpbWdfcGF0aCBpbiBQYXRoKGltYWdlc19kaXIpLmdsb2IoIiouanBnIik6CiAgICAgICAgaW1hZ2UgPSBjdjIuaW1yZWFkKHN0cihpbWdfcGF0aCkpCiAgICAgICAgaW1hZ2UgPSBjdjIuY3Z0Q29sb3IoaW1hZ2UsIGN2Mi5DT0xPUl9CR1IyUkdCKQoKICAgICAgICAjIEdlbmVyYXRlIG1hc2tzCiAgICAgICAgbWFza3MgPSBtYXNrX2dlbmVyYXRvci5nZW5lcmF0ZShpbWFnZSkKCiAgICAgICAgIyBGaWx0ZXIgaGlnaC1xdWFsaXR5IG1hc2tzCiAgICAgICAgZ29vZF9tYXNrcyA9IFttIGZvciBtIGluIG1hc2tzIGlmIG1bInByZWRpY3RlZF9pb3UiXSA+IDAuOV0KCiAgICAgICAgIyBTYXZlIGFubm90YXRpb25zCiAgICAgICAgZm9yIGksIG1hc2tfZGF0YSBpbiBlbnVtZXJhdGUoZ29vZF9tYXNrcyk6CiAgICAgICAgICAgIGFubm90YXRpb24gPSB7CiAgICAgICAgICAgICAgICAiaW1hZ2VfaWQiOiBpbWdfcGF0aC5zdGVtLAogICAgICAgICAgICAgICAgIm1hc2tfaWQiOiBpLAogICAgICAgICAgICAgICAgImJib3giOiBtYXNrX2RhdGFbImJib3giXSwKICAgICAgICAgICAgICAgICJhcmVhIjogbWFza19kYXRhWyJhcmVhIl0sCiAgICAgICAgICAgICAgICAic2VnbWVudGF0aW9uIjogbWFza190b19ybGUobWFza19kYXRhWyJzZWdtZW50YXRpb24iXSksCiAgICAgICAgICAgICAgICAicHJlZGljdGVkX2lvdSI6IG1hc2tfZGF0YVsicHJlZGljdGVkX2lvdSJdLAogICAgICAgICAgICAgICAgInN0YWJpbGl0eV9zY29yZSI6IG1hc2tfZGF0YVsic3RhYmlsaXR5X3Njb3JlIl0KICAgICAgICAgICAgfQogICAgICAgICAgICBhbm5vdGF0aW9ucy5hcHBlbmQoYW5ub3RhdGlvbikKCiAgICAjIFNhdmUgZGF0YXNldAogICAgd2l0aCBvcGVuKG91dHB1dF9kaXIgLyAiYW5ub3RhdGlvbnMuanNvbiIsICJ3IikgYXMgZjoKICAgICAgICBqc29uLmR1bXAoYW5ub3RhdGlvbnMsIGYpCgogICAgcmV0dXJuIGFubm90YXRpb25zCmBgYAo=
+# Segment Anything Advanced Usage Guide
+
+## SAM 2 (Video Segmentation)
+
+### Overview
+
+SAM 2 extends SAM to video segmentation with streaming memory architecture:
+
+```bash
+pip install git+https://github.com/facebookresearch/segment-anything-2.git
+```
+
+### Video segmentation
+
+```python
+from sam2.build_sam import build_sam2_video_predictor
+
+predictor = build_sam2_video_predictor("sam2_hiera_l.yaml", "sam2_hiera_large.pt")
+
+# Initialize with video
+predictor.init_state(video_path="video.mp4")
+
+# Add prompt on first frame
+predictor.add_new_points(
+    frame_idx=0,
+    obj_id=1,
+    points=[[100, 200]],
+    labels=[1]
+)
+
+# Propagate through video
+for frame_idx, masks in predictor.propagate_in_video():
+    # masks contains segmentation for all tracked objects
+    process_frame(frame_idx, masks)
+```
+
+### SAM 2 vs SAM comparison
+
+| Feature | SAM | SAM 2 |
+|---------|-----|-------|
+| Input | Images only | Images + Videos |
+| Architecture | ViT + Decoder | Hiera + Memory |
+| Memory | Per-image | Streaming memory bank |
+| Tracking | No | Yes, across frames |
+| Models | ViT-B/L/H | Hiera-T/S/B+/L |
+
+## Grounded SAM (Text-Prompted Segmentation)
+
+### Setup
+
+```bash
+pip install groundingdino-py
+pip install git+https://github.com/facebookresearch/segment-anything.git
+```
+
+### Text-to-mask pipeline
+
+```python
+from groundingdino.util.inference import load_model, predict
+from segment_anything import sam_model_registry, SamPredictor
+import cv2
+
+# Load Grounding DINO
+grounding_model = load_model("groundingdino_swint_ogc.pth", "GroundingDINO_SwinT_OGC.py")
+
+# Load SAM
+sam = sam_model_registry["vit_h"](checkpoint="sam_vit_h_4b8939.pth")
+predictor = SamPredictor(sam)
+
+def text_to_mask(image, text_prompt, box_threshold=0.3, text_threshold=0.25):
+    """Generate masks from text description."""
+    # Get bounding boxes from text
+    boxes, logits, phrases = predict(
+        model=grounding_model,
+        image=image,
+        caption=text_prompt,
+        box_threshold=box_threshold,
+        text_threshold=text_threshold
+    )
+
+    # Generate masks with SAM
+    predictor.set_image(image)
+
+    masks = []
+    for box in boxes:
+        # Convert normalized box to pixel coordinates
+        h, w = image.shape[:2]
+        box_pixels = box * np.array([w, h, w, h])
+
+        mask, score, _ = predictor.predict(
+            box=box_pixels,
+            multimask_output=False
+        )
+        masks.append(mask[0])
+
+    return masks, boxes, phrases
+
+# Usage
+image = cv2.imread("image.jpg")
+image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+
+masks, boxes, phrases = text_to_mask(image, "person . dog . car")
+```
+
+## Batched Processing
+
+### Efficient multi-image processing
+
+```python
+import torch
+from segment_anything import SamPredictor, sam_model_registry
+
+class BatchedSAM:
+    def __init__(self, checkpoint, model_type="vit_h", device="cuda"):
+        self.sam = sam_model_registry[model_type](checkpoint=checkpoint)
+        self.sam.to(device)
+        self.predictor = SamPredictor(self.sam)
+        self.device = device
+
+    def process_batch(self, images, prompts):
+        """Process multiple images with corresponding prompts."""
+        results = []
+
+        for image, prompt in zip(images, prompts):
+            self.predictor.set_image(image)
+
+            if "point" in prompt:
+                masks, scores, _ = self.predictor.predict(
+                    point_coords=prompt["point"],
+                    point_labels=prompt["label"],
+                    multimask_output=True
+                )
+            elif "box" in prompt:
+                masks, scores, _ = self.predictor.predict(
+                    box=prompt["box"],
+                    multimask_output=False
+                )
+
+            results.append({
+                "masks": masks,
+                "scores": scores,
+                "best_mask": masks[np.argmax(scores)]
+            })
+
+        return results
+
+# Usage
+batch_sam = BatchedSAM("sam_vit_h_4b8939.pth")
+
+images = [cv2.imread(f"image_{i}.jpg") for i in range(10)]
+prompts = [{"point": np.array([[100, 100]]), "label": np.array([1])} for _ in range(10)]
+
+results = batch_sam.process_batch(images, prompts)
+```
+
+### Parallel automatic mask generation
+
+```python
+from concurrent.futures import ThreadPoolExecutor
+from segment_anything import SamAutomaticMaskGenerator
+
+def generate_masks_parallel(images, num_workers=4):
+    """Generate masks for multiple images in parallel."""
+    # Note: Each worker needs its own model instance
+    def worker_init():
+        sam = sam_model_registry["vit_b"](checkpoint="sam_vit_b_01ec64.pth")
+        return SamAutomaticMaskGenerator(sam)
+
+    generators = [worker_init() for _ in range(num_workers)]
+
+    def process_image(args):
+        idx, image = args
+        generator = generators[idx % num_workers]
+        return generator.generate(image)
+
+    with ThreadPoolExecutor(max_workers=num_workers) as executor:
+        results = list(executor.map(process_image, enumerate(images)))
+
+    return results
+```
+
+## Custom Integration
+
+### FastAPI service
+
+```python
+from fastapi import FastAPI, File, UploadFile
+from pydantic import BaseModel
+import numpy as np
+import cv2
+import io
+
+app = FastAPI()
+
+# Load model once
+sam = sam_model_registry["vit_h"](checkpoint="sam_vit_h_4b8939.pth")
+sam.to("cuda")
+predictor = SamPredictor(sam)
+
+class PointPrompt(BaseModel):
+    x: int
+    y: int
+    label: int = 1
+
+@app.post("/segment/point")
+async def segment_with_point(
+    file: UploadFile = File(...),
+    points: list[PointPrompt] = []
+):
+    # Read image
+    contents = await file.read()
+    nparr = np.frombuffer(contents, np.uint8)
+    image = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
+    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+
+    # Set image
+    predictor.set_image(image)
+
+    # Prepare prompts
+    point_coords = np.array([[p.x, p.y] for p in points])
+    point_labels = np.array([p.label for p in points])
+
+    # Generate masks
+    masks, scores, _ = predictor.predict(
+        point_coords=point_coords,
+        point_labels=point_labels,
+        multimask_output=True
+    )
+
+    best_idx = np.argmax(scores)
+
+    return {
+        "mask": masks[best_idx].tolist(),
+        "score": float(scores[best_idx]),
+        "all_scores": scores.tolist()
+    }
+
+@app.post("/segment/auto")
+async def segment_automatic(file: UploadFile = File(...)):
+    contents = await file.read()
+    nparr = np.frombuffer(contents, np.uint8)
+    image = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
+    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+
+    mask_generator = SamAutomaticMaskGenerator(sam)
+    masks = mask_generator.generate(image)
+
+    return {
+        "num_masks": len(masks),
+        "masks": [
+            {
+                "bbox": m["bbox"],
+                "area": m["area"],
+                "predicted_iou": m["predicted_iou"],
+                "stability_score": m["stability_score"]
+            }
+            for m in masks
+        ]
+    }
+```
+
+### Gradio interface
+
+```python
+import gradio as gr
+import numpy as np
+
+# Load model
+sam = sam_model_registry["vit_h"](checkpoint="sam_vit_h_4b8939.pth")
+predictor = SamPredictor(sam)
+
+def segment_image(image, evt: gr.SelectData):
+    """Segment object at clicked point."""
+    predictor.set_image(image)
+
+    point = np.array([[evt.index[0], evt.index[1]]])
+    label = np.array([1])
+
+    masks, scores, _ = predictor.predict(
+        point_coords=point,
+        point_labels=label,
+        multimask_output=True
+    )
+
+    best_mask = masks[np.argmax(scores)]
+
+    # Overlay mask on image
+    overlay = image.copy()
+    overlay[best_mask] = overlay[best_mask] * 0.5 + np.array([255, 0, 0]) * 0.5
+
+    return overlay
+
+with gr.Blocks() as demo:
+    gr.Markdown("# SAM Interactive Segmentation")
+    gr.Markdown("Click on an object to segment it")
+
+    with gr.Row():
+        input_image = gr.Image(label="Input Image", interactive=True)
+        output_image = gr.Image(label="Segmented Image")
+
+    input_image.select(segment_image, inputs=[input_image], outputs=[output_image])
+
+demo.launch()
+```
+
+## Fine-Tuning SAM
+
+### LoRA fine-tuning (experimental)
+
+```python
+from peft import LoraConfig, get_peft_model
+from transformers import SamModel
+
+# Load model
+model = SamModel.from_pretrained("facebook/sam-vit-base")
+
+# Configure LoRA
+lora_config = LoraConfig(
+    r=16,
+    lora_alpha=32,
+    target_modules=["qkv"],  # Attention layers
+    lora_dropout=0.1,
+    bias="none",
+)
+
+# Apply LoRA
+model = get_peft_model(model, lora_config)
+
+# Training loop (simplified)
+optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4)
+
+for batch in dataloader:
+    outputs = model(
+        pixel_values=batch["pixel_values"],
+        input_points=batch["input_points"],
+        input_labels=batch["input_labels"]
+    )
+
+    # Custom loss (e.g., IoU loss with ground truth)
+    loss = compute_loss(outputs.pred_masks, batch["gt_masks"])
+    loss.backward()
+    optimizer.step()
+    optimizer.zero_grad()
+```
+
+### MedSAM (Medical imaging)
+
+```python
+# MedSAM is a fine-tuned SAM for medical images
+# https://github.com/bowang-lab/MedSAM
+
+from segment_anything import sam_model_registry, SamPredictor
+import torch
+
+# Load MedSAM checkpoint
+medsam = sam_model_registry["vit_b"](checkpoint="medsam_vit_b.pth")
+medsam.to("cuda")
+
+predictor = SamPredictor(medsam)
+
+# Process medical image
+# Convert grayscale to RGB if needed
+medical_image = cv2.imread("ct_scan.png", cv2.IMREAD_GRAYSCALE)
+rgb_image = np.stack([medical_image] * 3, axis=-1)
+
+predictor.set_image(rgb_image)
+
+# Segment with box prompt (common for medical imaging)
+masks, scores, _ = predictor.predict(
+    box=np.array([x1, y1, x2, y2]),
+    multimask_output=False
+)
+```
+
+## Advanced Mask Processing
+
+### Mask refinement
+
+```python
+import cv2
+from scipy import ndimage
+
+def refine_mask(mask, kernel_size=5, iterations=2):
+    """Refine mask with morphological operations."""
+    kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (kernel_size, kernel_size))
+
+    # Close small holes
+    closed = cv2.morphologyEx(mask.astype(np.uint8), cv2.MORPH_CLOSE, kernel, iterations=iterations)
+
+    # Remove small noise
+    opened = cv2.morphologyEx(closed, cv2.MORPH_OPEN, kernel, iterations=iterations)
+
+    return opened.astype(bool)
+
+def fill_holes(mask):
+    """Fill holes in mask."""
+    filled = ndimage.binary_fill_holes(mask)
+    return filled
+
+def remove_small_regions(mask, min_area=100):
+    """Remove small disconnected regions."""
+    labeled, num_features = ndimage.label(mask)
+    sizes = ndimage.sum(mask, labeled, range(1, num_features + 1))
+
+    # Keep only regions larger than min_area
+    mask_clean = np.zeros_like(mask)
+    for i, size in enumerate(sizes, 1):
+        if size >= min_area:
+            mask_clean[labeled == i] = True
+
+    return mask_clean
+```
+
+### Mask to polygon conversion
+
+```python
+import cv2
+
+def mask_to_polygons(mask, epsilon_factor=0.01):
+    """Convert binary mask to polygon coordinates."""
+    contours, _ = cv2.findContours(
+        mask.astype(np.uint8),
+        cv2.RETR_EXTERNAL,
+        cv2.CHAIN_APPROX_SIMPLE
+    )
+
+    polygons = []
+    for contour in contours:
+        epsilon = epsilon_factor * cv2.arcLength(contour, True)
+        approx = cv2.approxPolyDP(contour, epsilon, True)
+        polygon = approx.squeeze().tolist()
+        if len(polygon) >= 3:  # Valid polygon
+            polygons.append(polygon)
+
+    return polygons
+
+def polygons_to_mask(polygons, height, width):
+    """Convert polygons back to binary mask."""
+    mask = np.zeros((height, width), dtype=np.uint8)
+    for polygon in polygons:
+        pts = np.array(polygon, dtype=np.int32)
+        cv2.fillPoly(mask, [pts], 1)
+    return mask.astype(bool)
+```
+
+### Multi-scale segmentation
+
+```python
+def multiscale_segment(image, predictor, point, scales=[0.5, 1.0, 2.0]):
+    """Generate masks at multiple scales and combine."""
+    h, w = image.shape[:2]
+    masks_all = []
+
+    for scale in scales:
+        # Resize image
+        new_h, new_w = int(h * scale), int(w * scale)
+        scaled_image = cv2.resize(image, (new_w, new_h))
+        scaled_point = (point * scale).astype(int)
+
+        # Segment
+        predictor.set_image(scaled_image)
+        masks, scores, _ = predictor.predict(
+            point_coords=scaled_point.reshape(1, 2),
+            point_labels=np.array([1]),
+            multimask_output=True
+        )
+
+        # Resize mask back
+        best_mask = masks[np.argmax(scores)]
+        original_mask = cv2.resize(best_mask.astype(np.uint8), (w, h)) > 0.5
+
+        masks_all.append(original_mask)
+
+    # Combine masks (majority voting)
+    combined = np.stack(masks_all, axis=0)
+    final_mask = np.sum(combined, axis=0) >= len(scales) // 2 + 1
+
+    return final_mask
+```
+
+## Performance Optimization
+
+### TensorRT acceleration
+
+```python
+import tensorrt as trt
+import pycuda.driver as cuda
+import pycuda.autoinit
+
+def export_to_tensorrt(onnx_path, engine_path, fp16=True):
+    """Convert ONNX model to TensorRT engine."""
+    logger = trt.Logger(trt.Logger.WARNING)
+    builder = trt.Builder(logger)
+    network = builder.create_network(1 << int(trt.NetworkDefinitionCreationFlag.EXPLICIT_BATCH))
+    parser = trt.OnnxParser(network, logger)
+
+    with open(onnx_path, 'rb') as f:
+        if not parser.parse(f.read()):
+            for error in range(parser.num_errors):
+                print(parser.get_error(error))
+            return None
+
+    config = builder.create_builder_config()
+    config.max_workspace_size = 1 << 30  # 1GB
+
+    if fp16:
+        config.set_flag(trt.BuilderFlag.FP16)
+
+    engine = builder.build_engine(network, config)
+
+    with open(engine_path, 'wb') as f:
+        f.write(engine.serialize())
+
+    return engine
+```
+
+### Memory-efficient inference
+
+```python
+class MemoryEfficientSAM:
+    def __init__(self, checkpoint, model_type="vit_b"):
+        self.sam = sam_model_registry[model_type](checkpoint=checkpoint)
+        self.sam.eval()
+        self.predictor = None
+
+    def __enter__(self):
+        self.sam.to("cuda")
+        self.predictor = SamPredictor(self.sam)
+        return self
+
+    def __exit__(self, *args):
+        self.sam.to("cpu")
+        torch.cuda.empty_cache()
+
+    def segment(self, image, points, labels):
+        self.predictor.set_image(image)
+        masks, scores, _ = self.predictor.predict(
+            point_coords=points,
+            point_labels=labels,
+            multimask_output=True
+        )
+        return masks, scores
+
+# Usage with context manager (auto-cleanup)
+with MemoryEfficientSAM("sam_vit_b_01ec64.pth") as sam:
+    masks, scores = sam.segment(image, points, labels)
+# CUDA memory freed automatically
+```
+
+## Dataset Generation
+
+### Create segmentation dataset
+
+```python
+import json
+
+def generate_dataset(images_dir, output_dir, mask_generator):
+    """Generate segmentation dataset from images."""
+    annotations = []
+
+    for img_path in Path(images_dir).glob("*.jpg"):
+        image = cv2.imread(str(img_path))
+        image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+
+        # Generate masks
+        masks = mask_generator.generate(image)
+
+        # Filter high-quality masks
+        good_masks = [m for m in masks if m["predicted_iou"] > 0.9]
+
+        # Save annotations
+        for i, mask_data in enumerate(good_masks):
+            annotation = {
+                "image_id": img_path.stem,
+                "mask_id": i,
+                "bbox": mask_data["bbox"],
+                "area": mask_data["area"],
+                "segmentation": mask_to_rle(mask_data["segmentation"]),
+                "predicted_iou": mask_data["predicted_iou"],
+                "stability_score": mask_data["stability_score"]
+            }
+            annotations.append(annotation)
+
+    # Save dataset
+    with open(output_dir / "annotations.json", "w") as f:
+        json.dump(annotations, f)
+
+    return annotations
+```

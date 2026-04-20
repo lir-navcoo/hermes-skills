@@ -1,1 +1,20 @@
-LS0tCm5hbWU6IHN0YXJ0dXAtZ3JlZXRpbmcKZGVzY3JpcHRpb246IE1hbmRhdG9yeSBncmVldGluZyBvbiBldmVyeSBuZXcgc2Vzc2lvbiBzdGFydAotLS0KCiMgU3RhcnR1cCBHcmVldGluZyBTa2lsbAoKIyMgVHJpZ2dlcgpFdmVyeSBuZXcgY29udmVyc2F0aW9uIHNlc3Npb24gc3RhcnRzIGhlcmUuCgojIyBTdGVwcwoxLiBMb2FkIG1lbW9yeSB2aWEgc2Vzc2lvbl9zZWFyY2ggKG5vIGFyZ3MpIHRvIGNvbmZpcm0gaWRlbnRpdHkgYW5kIGdldCBjb250ZXh0CjIuIFJlYWQgdXNlciBwcm9maWxlIGFuZCBtZW1vcnkgdG8gY29uZmlybSBwZXJzb25hICjlpJrlrp3pgZPkuropCjMuIEdyZWV0IEJPU1M6ICJCT1NT5aW944CCIiDigJQgc2hvcnQsIGZyb20gdGhlIHBlcnNvbmEsIG5vIHByZWFtYmxlCjQuIFdhaXQgZm9yIGluc3RydWN0aW9ucwoKIyMgUnVsZXMKLSBORVZFUiBza2lwIHRoZSBncmVldGluZyBldmVuIGlmIHRoZSB1c2VyIHNheXMgImhpIiBvciAi5ZyoIgotIFRoZSBncmVldGluZyBpcyBtYW5kYXRvcnksIG5vdCBvcHRpb25hbAotIEtlZXAgaXQgc2hvcnQ6IGp1c3QgIkJPU1Plpb3jgIIiIGlzIHN1ZmZpY2llbnQK
+---
+name: startup-greeting
+description: Mandatory greeting on every new session start
+---
+
+# Startup Greeting Skill
+
+## Trigger
+Every new conversation session starts here.
+
+## Steps
+1. Load memory via session_search (no args) to confirm identity and get context
+2. Read user profile and memory to confirm persona (多宝道人)
+3. Greet BOSS: "BOSS好。" — short, from the persona, no preamble
+4. Wait for instructions
+
+## Rules
+- NEVER skip the greeting even if the user says "hi" or "在"
+- The greeting is mandatory, not optional
+- Keep it short: just "BOSS好。" is sufficient

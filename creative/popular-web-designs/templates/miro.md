@@ -1,1 +1,121 @@
-IyBEZXNpZ24gU3lzdGVtOiBNaXJvCgoKPiAqKkhlcm1lcyBBZ2VudCDigJQgSW1wbGVtZW50YXRpb24gTm90ZXMqKgo+Cj4gVGhlIG9yaWdpbmFsIHNpdGUgdXNlcyBwcm9wcmlldGFyeSBmb250cy4gRm9yIHNlbGYtY29udGFpbmVkIEhUTUwgb3V0cHV0LCB1c2UgdGhlc2UgQ0ROIHN1YnN0aXR1dGVzOgo+IC0gKipQcmltYXJ5OioqIGBJbnRlcmAgfCAqKk1vbm86KiogYHN5c3RlbSBtb25vc3BhY2Ugc3RhY2tgCj4gLSAqKkZvbnQgc3RhY2sgKENTUyk6KiogYGZvbnQtZmFtaWx5OiAnSW50ZXInLCBzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sICdTZWdvZSBVSScsIFJvYm90bywgc2Fucy1zZXJpZjtgCj4gLSAqKk1vbm8gc3RhY2sgKENTUyk6KiogYGZvbnQtZmFtaWx5OiB1aS1tb25vc3BhY2UsIFNGTW9uby1SZWd1bGFyLCBNZW5sbywgTW9uYWNvLCBDb25zb2xhcywgJ0xpYmVyYXRpb24gTW9ubycsICdDb3VyaWVyIE5ldycsIG1vbm9zcGFjZTtgCj4gYGBgaHRtbAo+IDxsaW5rIGhyZWY9Imh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9SW50ZXI6d2dodEAzMDA7NDAwOzUwMDs2MDA7NzAwJmRpc3BsYXk9c3dhcCIgcmVsPSJzdHlsZXNoZWV0Ij4KPiBgYGAKPiBVc2UgYHdyaXRlX2ZpbGVgIHRvIGNyZWF0ZSBIVE1MLCBzZXJ2ZSB2aWEgYGdlbmVyYXRpdmUtd2lkZ2V0c2Agc2tpbGwgKGNsb3VkZmxhcmVkIHR1bm5lbCkuCj4gVmVyaWZ5IHZpc3VhbCBhY2N1cmFjeSB3aXRoIGBicm93c2VyX3Zpc2lvbmAgYWZ0ZXIgZ2VuZXJhdGluZy4KCiMjIDEuIFZpc3VhbCBUaGVtZSAmIEF0bW9zcGhlcmUKCk1pcm8ncyB3ZWJzaXRlIGlzIGEgY2xlYW4sIGNvbGxhYm9yYXRpdmUtdG9vbC1mb3J3YXJkIHBsYXRmb3JtIHRoYXQgY29tbXVuaWNhdGVzICJ2aXN1YWwgdGhpbmtpbmciIHRocm91Z2ggZ2VuZXJvdXMgd2hpdGVzcGFjZSwgcGFzdGVsIGFjY2VudCBjb2xvcnMsIGFuZCBhIGNvbmZpZGVudCBnZW9tZXRyaWMgZm9udC4gVGhlIGRlc2lnbiB1c2VzIGEgcHJlZG9taW5hbnRseSB3aGl0ZSBjYW52YXMgd2l0aCBuZWFyLWJsYWNrIHRleHQgKGAjMWMxYzFlYCkgYW5kIGEgZGlzdGluY3RpdmUgcGFzdGVsIGNvbG9yIHBhbGV0dGUg4oCUIGNvcmFsLCByb3NlLCB0ZWFsLCBvcmFuZ2UsIHllbGxvdywgbW9zcyDigJQgZWFjaCByZXByZXNlbnRpbmcgZGlmZmVyZW50IGNvbGxhYm9yYXRpb24gY29udGV4dHMuCgpUaGUgdHlwb2dyYXBoeSB1c2VzIFJvb2JlcnQgUFJPIE1lZGl1bSBhcyB0aGUgcHJpbWFyeSBkaXNwbGF5IGZvbnQgd2l0aCBPcGVuVHlwZSBjaGFyYWN0ZXIgdmFyaWFudHMgKGAiYmx3ZiIsICJjdjAzIiwgImN2MDQiLCAiY3YwOSIsICJjdjExImApIGFuZCBuZWdhdGl2ZSBsZXR0ZXItc3BhY2luZyAoLTEuNjhweCBhdCA1NnB4KS4gTm90byBTYW5zIGhhbmRsZXMgYm9keSB0ZXh0IHdpdGggaXRzIG93biBzdHlsaXN0aWMgc2V0IChgImxpZ2EiIDAsICJzczAxIiwgInNzMDQiLCAic3MwNSJgKS4gVGhlIGRlc2lnbiBpcyBidWlsdCB3aXRoIEZyYW1lciwgZ2l2aW5nIGl0IHNtb290aCBhbmltYXRpb25zIGFuZCBtb2Rlcm4gY29tcG9uZW50IHBhdHRlcm5zLgoKKipLZXkgQ2hhcmFjdGVyaXN0aWNzOioqCi0gV2hpdGUgY2FudmFzIHdpdGggbmVhci1ibGFjayAoYCMxYzFjMWVgKSB0ZXh0Ci0gUm9vYmVydCBQUk8gTWVkaXVtIHdpdGggbXVsdGlwbGUgT3BlblR5cGUgY2hhcmFjdGVyIHZhcmlhbnRzCi0gUGFzdGVsIGFjY2VudCBwYWxldHRlOiBjb3JhbCwgcm9zZSwgdGVhbCwgb3JhbmdlLCB5ZWxsb3csIG1vc3MgKGxpZ2h0ICsgZGFyayBwYWlycykKLSBCbHVlIDQ1MCAoYCM1Yjc2ZmVgKSBhcyBwcmltYXJ5IGludGVyYWN0aXZlIGNvbG9yCi0gU3VjY2VzcyBncmVlbiAoYCMwMGI0NzNgKSBmb3IgcG9zaXRpdmUgc3RhdGVzCi0gR2VuZXJvdXMgYm9yZGVyLXJhZGl1czogOHB44oCTNTBweCByYW5nZQotIEZyYW1lci1idWlsdCB3aXRoIHNtb290aCBtb3Rpb24gcGF0dGVybnMKLSBSaW5nIHNoYWRvdyBib3JkZXI6IGByZ2IoMjI0LDIyNiwyMzIpIDBweCAwcHggMHB4IDFweGAKCiMjIDIuIENvbG9yIFBhbGV0dGUgJiBSb2xlcwoKIyMjIFByaW1hcnkKLSAqKk5lYXIgQmxhY2sqKiAoYCMxYzFjMWVgKTogUHJpbWFyeSB0ZXh0Ci0gKipXaGl0ZSoqIChgI2ZmZmZmZmApOiBgLS10dy1jb2xvci13aGl0ZWAsIHByaW1hcnkgc3VyZmFjZQotICoqQmx1ZSA0NTAqKiAoYCM1Yjc2ZmVgKTogYC0tdHctY29sb3ItYmx1ZS00NTBgLCBwcmltYXJ5IGludGVyYWN0aXZlCi0gKipBY3Rpb25hYmxlIFByZXNzZWQqKiAoYCMyYTQxYjZgKTogYC0tdHctY29sb3ItYWN0aW9uYWJsZS1wcmVzc2VkYAoKIyMjIFBhc3RlbCBBY2NlbnRzIChMaWdodC9EYXJrIHBhaXJzKQotICoqQ29yYWwqKjogTGlnaHQgYCNmZmM2YzZgIC8gRGFyayBgIzYwMDAwMGAKLSAqKlJvc2UqKjogTGlnaHQgYCNmZmQ4ZjRgIC8gRGFyayAoaW1wbGllZCkKLSAqKlRlYWwqKjogTGlnaHQgYCNjM2ZhZjVgIC8gRGFyayBgIzE4NzU3NGAKLSAqKk9yYW5nZSoqOiBMaWdodCBgI2ZmZTZjZGAKLSAqKlllbGxvdyoqOiBEYXJrIGAjNzQ2MDE5YAotICoqTW9zcyoqOiBEYXJrIGAjMTg3NTc0YAotICoqUGluayoqIChgI2ZkZTBmMGApOiBTb2Z0IHBpbmsgc3VyZmFjZQotICoqUmVkKiogKGAjZmJkNGQ0YCk6IExpZ2h0IHJlZCBzdXJmYWNlCi0gKipEYXJrIFJlZCoqIChgI2UzYzVjNWApOiBNdXRlZCByZWQKCiMjIyBTZW1hbnRpYwotICoqU3VjY2VzcyoqIChgIzAwYjQ3M2ApOiBgLS10dy1jb2xvci1zdWNjZXNzLWFjY2VudGAKCiMjIyBOZXV0cmFsCi0gKipTbGF0ZSoqIChgIzU1NWE2YWApOiBTZWNvbmRhcnkgdGV4dAotICoqSW5wdXQgUGxhY2Vob2xkZXIqKiAoYCNhNWE4YjVgKTogYC0tdHctY29sb3ItaW5wdXQtcGxhY2Vob2xkZXJgCi0gKipCb3JkZXIqKiAoYCNjN2NhZDVgKTogQnV0dG9uIGJvcmRlcnMKLSAqKlJpbmcqKiAoYHJnYigyMjQsMjI2LDIzMilgKTogU2hhZG93LWFzLWJvcmRlcgoKIyMgMy4gVHlwb2dyYXBoeSBSdWxlcwoKIyMjIEZvbnQgRmFtaWxpZXMKLSAqKkRpc3BsYXkqKjogYFJvb2JlcnQgUFJPIE1lZGl1bWAsIGZhbGxiYWNrOiBQbGFjZWhvbGRlciDigJQgYCJibHdmIiwgImN2MDMiLCAiY3YwNCIsICJjdjA5IiwgImN2MTEiYAotICoqRGlzcGxheSBWYXJpYW50cyoqOiBgUm9vYmVydCBQUk8gU2VtaUJvbGRgLCBgUm9vYmVydCBQUk8gU2VtaUJvbGQgSXRhbGljYCwgYFJvb2JlcnQgUFJPYAotICoqQm9keSoqOiBgTm90byBTYW5zYCDigJQgYCJsaWdhIiAwLCAic3MwMSIsICJzczA0IiwgInNzMDUiYAoKIyMjIEhpZXJhcmNoeQoKfCBSb2xlIHwgRm9udCB8IFNpemUgfCBXZWlnaHQgfCBMaW5lIEhlaWdodCB8IExldHRlciBTcGFjaW5nIHwKfC0tLS0tLXwtLS0tLS18LS0tLS0tfC0tLS0tLS0tfC0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tLXwKfCBEaXNwbGF5IEhlcm8gfCBSb29iZXJ0IFBSTyBNZWRpdW0gfCA1NnB4IHwgNDAwIHwgMS4xNSB8IC0xLjY4cHggfAp8IFNlY3Rpb24gSGVhZGluZyB8IFJvb2JlcnQgUFJPIE1lZGl1bSB8IDQ4cHggfCA0MDAgfCAxLjE1IHwgLTEuNDRweCB8CnwgQ2FyZCBUaXRsZSB8IFJvb2JlcnQgUFJPIE1lZGl1bSB8IDI0cHggfCA0MDAgfCAxLjE1IHwgLTAuNzJweCB8CnwgU3ViLWhlYWRpbmcgfCBOb3RvIFNhbnMgfCAyMnB4IHwgNDAwIHwgMS4zNSB8IC0wLjQ0cHggfAp8IEZlYXR1cmUgfCBSb29iZXJ0IFBSTyBNZWRpdW0gfCAxOHB4IHwgNjAwIHwgMS4zNSB8IG5vcm1hbCB8CnwgQm9keSB8IE5vdG8gU2FucyB8IDE4cHggfCA0MDAgfCAxLjQ1IHwgbm9ybWFsIHwKfCBCb2R5IFN0YW5kYXJkIHwgTm90byBTYW5zIHwgMTZweCB8IDQwMOKAkzYwMCB8IDEuNTAgfCAtMC4xNnB4IHwKfCBCdXR0b24gfCBSb29iZXJ0IFBSTyBNZWRpdW0gfCAxNy41cHggfCA3MDAgfCAxLjI5IHwgMC4xNzVweCB8CnwgQ2FwdGlvbiB8IFJvb2JlcnQgUFJPIE1lZGl1bSB8IDE0cHggfCA0MDAgfCAxLjcxIHwgbm9ybWFsIHwKfCBTbWFsbCB8IFJvb2JlcnQgUFJPIE1lZGl1bSB8IDEycHggfCA0MDAgfCAxLjE1IHwgLTAuMzZweCB8CnwgTWljcm8gVXBwZXJjYXNlIHwgUm9vYmVydCBQUk8gfCAxMC41cHggfCA0MDAgfCAwLjkwIHwgdXBwZXJjYXNlIHwKCiMjIDQuIENvbXBvbmVudCBTdHlsaW5ncwoKIyMjIEJ1dHRvbnMKLSBPdXRsaW5lZDogdHJhbnNwYXJlbnQgYmcsIGAxcHggc29saWQgI2M3Y2FkNWAsIDhweCByYWRpdXMsIDdweCAxMnB4IHBhZGRpbmcKLSBXaGl0ZSBjaXJjbGU6IDUwJSByYWRpdXMsIHdoaXRlIGJnIHdpdGggc2hhZG93Ci0gQmx1ZSBwcmltYXJ5IChpbXBsaWVkIGZyb20gaW50ZXJhY3RpdmUgY29sb3IpCgojIyMgQ2FyZHM6IDEycHjigJMyNHB4IHJhZGl1cywgcGFzdGVsIGJhY2tncm91bmRzCiMjIyBJbnB1dHM6IHdoaXRlIGJnLCBgMXB4IHNvbGlkICNlOWVhZWZgLCA4cHggcmFkaXVzLCAxNnB4IHBhZGRpbmcKCiMjIDUuIExheW91dCBQcmluY2lwbGVzCi0gU3BhY2luZzogMeKAkzI0cHggYmFzZSBzY2FsZQotIFJhZGl1czogOHB4IChidXR0b25zKSwgMTBweOKAkzEycHggKGNhcmRzKSwgMjBweOKAkzI0cHggKHBhbmVscyksIDQwcHjigJM1MHB4IChsYXJnZSBjb250YWluZXJzKQotIFJpbmcgc2hhZG93OiBgcmdiKDIyNCwyMjYsMjMyKSAwcHggMHB4IDBweCAxcHhgCgojIyA2LiBEZXB0aCAmIEVsZXZhdGlvbgpNaW5pbWFsIOKAlCByaW5nIHNoYWRvdyArIHBhc3RlbCBzdXJmYWNlIGNvbnRyYXN0CgojIyA3LiBEbydzIGFuZCBEb24ndHMKIyMjIERvCi0gVXNlIHBhc3RlbCBsaWdodC9kYXJrIHBhaXJzIGZvciBmZWF0dXJlIHNlY3Rpb25zCi0gQXBwbHkgUm9vYmVydCBQUk8gd2l0aCBPcGVuVHlwZSBjaGFyYWN0ZXIgdmFyaWFudHMKLSBVc2UgQmx1ZSA0NTAgKCM1Yjc2ZmUpIGZvciBpbnRlcmFjdGl2ZSBlbGVtZW50cwojIyMgRG9uJ3QKLSBEb24ndCB1c2UgaGVhdnkgc2hhZG93cwotIERvbid0IG1peCBtb3JlIHRoYW4gMiBwYXN0ZWwgYWNjZW50cyBwZXIgc2VjdGlvbgoKIyMgOC4gUmVzcG9uc2l2ZSBCZWhhdmlvcgpCcmVha3BvaW50czogNDI1cHgsIDU3NnB4LCA3NjhweCwgODk2cHgsIDEwMjRweCwgMTIwMHB4LCAxMjgwcHgsIDEzNjZweCwgMTcwMHB4LCAxOTIwcHgKCiMjIDkuIEFnZW50IFByb21wdCBHdWlkZQojIyMgUXVpY2sgQ29sb3IgUmVmZXJlbmNlCi0gVGV4dDogTmVhciBCbGFjayAoYCMxYzFjMWVgKQotIEJhY2tncm91bmQ6IFdoaXRlIChgI2ZmZmZmZmApCi0gSW50ZXJhY3RpdmU6IEJsdWUgNDUwIChgIzViNzZmZWApCi0gU3VjY2VzczogYCMwMGI0NzNgCi0gQm9yZGVyOiBgI2M3Y2FkNWAKIyMjIEV4YW1wbGUgQ29tcG9uZW50IFByb21wdHMKLSAiQ3JlYXRlIGhlcm86IHdoaXRlIGJhY2tncm91bmQuIFJvb2JlcnQgUFJPIE1lZGl1bSA1NnB4LCBsaW5lLWhlaWdodCAxLjE1LCBsZXR0ZXItc3BhY2luZyAtMS42OHB4LiBCbHVlIENUQSAoIzViNzZmZSkuIE91dGxpbmVkIHNlY29uZGFyeSAoMXB4IHNvbGlkICNjN2NhZDUsIDhweCByYWRpdXMpLiIK
+# Design System: Miro
+
+
+> **Hermes Agent — Implementation Notes**
+>
+> The original site uses proprietary fonts. For self-contained HTML output, use these CDN substitutes:
+> - **Primary:** `Inter` | **Mono:** `system monospace stack`
+> - **Font stack (CSS):** `font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;`
+> - **Mono stack (CSS):** `font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;`
+> ```html
+> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+> ```
+> Use `write_file` to create HTML, serve via `generative-widgets` skill (cloudflared tunnel).
+> Verify visual accuracy with `browser_vision` after generating.
+
+## 1. Visual Theme & Atmosphere
+
+Miro's website is a clean, collaborative-tool-forward platform that communicates "visual thinking" through generous whitespace, pastel accent colors, and a confident geometric font. The design uses a predominantly white canvas with near-black text (`#1c1c1e`) and a distinctive pastel color palette — coral, rose, teal, orange, yellow, moss — each representing different collaboration contexts.
+
+The typography uses Roobert PRO Medium as the primary display font with OpenType character variants (`"blwf", "cv03", "cv04", "cv09", "cv11"`) and negative letter-spacing (-1.68px at 56px). Noto Sans handles body text with its own stylistic set (`"liga" 0, "ss01", "ss04", "ss05"`). The design is built with Framer, giving it smooth animations and modern component patterns.
+
+**Key Characteristics:**
+- White canvas with near-black (`#1c1c1e`) text
+- Roobert PRO Medium with multiple OpenType character variants
+- Pastel accent palette: coral, rose, teal, orange, yellow, moss (light + dark pairs)
+- Blue 450 (`#5b76fe`) as primary interactive color
+- Success green (`#00b473`) for positive states
+- Generous border-radius: 8px–50px range
+- Framer-built with smooth motion patterns
+- Ring shadow border: `rgb(224,226,232) 0px 0px 0px 1px`
+
+## 2. Color Palette & Roles
+
+### Primary
+- **Near Black** (`#1c1c1e`): Primary text
+- **White** (`#ffffff`): `--tw-color-white`, primary surface
+- **Blue 450** (`#5b76fe`): `--tw-color-blue-450`, primary interactive
+- **Actionable Pressed** (`#2a41b6`): `--tw-color-actionable-pressed`
+
+### Pastel Accents (Light/Dark pairs)
+- **Coral**: Light `#ffc6c6` / Dark `#600000`
+- **Rose**: Light `#ffd8f4` / Dark (implied)
+- **Teal**: Light `#c3faf5` / Dark `#187574`
+- **Orange**: Light `#ffe6cd`
+- **Yellow**: Dark `#746019`
+- **Moss**: Dark `#187574`
+- **Pink** (`#fde0f0`): Soft pink surface
+- **Red** (`#fbd4d4`): Light red surface
+- **Dark Red** (`#e3c5c5`): Muted red
+
+### Semantic
+- **Success** (`#00b473`): `--tw-color-success-accent`
+
+### Neutral
+- **Slate** (`#555a6a`): Secondary text
+- **Input Placeholder** (`#a5a8b5`): `--tw-color-input-placeholder`
+- **Border** (`#c7cad5`): Button borders
+- **Ring** (`rgb(224,226,232)`): Shadow-as-border
+
+## 3. Typography Rules
+
+### Font Families
+- **Display**: `Roobert PRO Medium`, fallback: Placeholder — `"blwf", "cv03", "cv04", "cv09", "cv11"`
+- **Display Variants**: `Roobert PRO SemiBold`, `Roobert PRO SemiBold Italic`, `Roobert PRO`
+- **Body**: `Noto Sans` — `"liga" 0, "ss01", "ss04", "ss05"`
+
+### Hierarchy
+
+| Role | Font | Size | Weight | Line Height | Letter Spacing |
+|------|------|------|--------|-------------|----------------|
+| Display Hero | Roobert PRO Medium | 56px | 400 | 1.15 | -1.68px |
+| Section Heading | Roobert PRO Medium | 48px | 400 | 1.15 | -1.44px |
+| Card Title | Roobert PRO Medium | 24px | 400 | 1.15 | -0.72px |
+| Sub-heading | Noto Sans | 22px | 400 | 1.35 | -0.44px |
+| Feature | Roobert PRO Medium | 18px | 600 | 1.35 | normal |
+| Body | Noto Sans | 18px | 400 | 1.45 | normal |
+| Body Standard | Noto Sans | 16px | 400–600 | 1.50 | -0.16px |
+| Button | Roobert PRO Medium | 17.5px | 700 | 1.29 | 0.175px |
+| Caption | Roobert PRO Medium | 14px | 400 | 1.71 | normal |
+| Small | Roobert PRO Medium | 12px | 400 | 1.15 | -0.36px |
+| Micro Uppercase | Roobert PRO | 10.5px | 400 | 0.90 | uppercase |
+
+## 4. Component Stylings
+
+### Buttons
+- Outlined: transparent bg, `1px solid #c7cad5`, 8px radius, 7px 12px padding
+- White circle: 50% radius, white bg with shadow
+- Blue primary (implied from interactive color)
+
+### Cards: 12px–24px radius, pastel backgrounds
+### Inputs: white bg, `1px solid #e9eaef`, 8px radius, 16px padding
+
+## 5. Layout Principles
+- Spacing: 1–24px base scale
+- Radius: 8px (buttons), 10px–12px (cards), 20px–24px (panels), 40px–50px (large containers)
+- Ring shadow: `rgb(224,226,232) 0px 0px 0px 1px`
+
+## 6. Depth & Elevation
+Minimal — ring shadow + pastel surface contrast
+
+## 7. Do's and Don'ts
+### Do
+- Use pastel light/dark pairs for feature sections
+- Apply Roobert PRO with OpenType character variants
+- Use Blue 450 (#5b76fe) for interactive elements
+### Don't
+- Don't use heavy shadows
+- Don't mix more than 2 pastel accents per section
+
+## 8. Responsive Behavior
+Breakpoints: 425px, 576px, 768px, 896px, 1024px, 1200px, 1280px, 1366px, 1700px, 1920px
+
+## 9. Agent Prompt Guide
+### Quick Color Reference
+- Text: Near Black (`#1c1c1e`)
+- Background: White (`#ffffff`)
+- Interactive: Blue 450 (`#5b76fe`)
+- Success: `#00b473`
+- Border: `#c7cad5`
+### Example Component Prompts
+- "Create hero: white background. Roobert PRO Medium 56px, line-height 1.15, letter-spacing -1.68px. Blue CTA (#5b76fe). Outlined secondary (1px solid #c7cad5, 8px radius)."

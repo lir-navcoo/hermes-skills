@@ -1,1 +1,297 @@
-LS0tCm5hbWU6IGxpbmVhcgpkZXNjcmlwdGlvbjogTWFuYWdlIExpbmVhciBpc3N1ZXMsIHByb2plY3RzLCBhbmQgdGVhbXMgdmlhIHRoZSBHcmFwaFFMIEFQSS4gQ3JlYXRlLCB1cGRhdGUsIHNlYXJjaCwgYW5kIG9yZ2FuaXplIGlzc3Vlcy4gVXNlcyBBUEkga2V5IGF1dGggKG5vIE9BdXRoIG5lZWRlZCkuIEFsbCBvcGVyYXRpb25zIHZpYSBjdXJsIOKAlCBubyBkZXBlbmRlbmNpZXMuCnZlcnNpb246IDEuMC4wCmF1dGhvcjogSGVybWVzIEFnZW50CmxpY2Vuc2U6IE1JVApwcmVyZXF1aXNpdGVzOgogIGVudl92YXJzOiBbTElORUFSX0FQSV9LRVldCiAgY29tbWFuZHM6IFtjdXJsXQptZXRhZGF0YToKICBoZXJtZXM6CiAgICB0YWdzOiBbTGluZWFyLCBQcm9qZWN0IE1hbmFnZW1lbnQsIElzc3VlcywgR3JhcGhRTCwgQVBJLCBQcm9kdWN0aXZpdHldCi0tLQoKIyBMaW5lYXIg4oCUIElzc3VlICYgUHJvamVjdCBNYW5hZ2VtZW50CgpNYW5hZ2UgTGluZWFyIGlzc3VlcywgcHJvamVjdHMsIGFuZCB0ZWFtcyBkaXJlY3RseSB2aWEgdGhlIEdyYXBoUUwgQVBJIHVzaW5nIGBjdXJsYC4gTm8gTUNQIHNlcnZlciwgbm8gT0F1dGggZmxvdywgbm8gZXh0cmEgZGVwZW5kZW5jaWVzLgoKIyMgU2V0dXAKCjEuIEdldCBhIHBlcnNvbmFsIEFQSSBrZXkgZnJvbSAqKkxpbmVhciBTZXR0aW5ncyA+IEFQSSA+IFBlcnNvbmFsIEFQSSBrZXlzKioKMi4gU2V0IGBMSU5FQVJfQVBJX0tFWWAgaW4geW91ciBlbnZpcm9ubWVudCAodmlhIGBoZXJtZXMgc2V0dXBgIG9yIHlvdXIgZW52IGNvbmZpZykKCiMjIEFQSSBCYXNpY3MKCi0gKipFbmRwb2ludDoqKiBgaHR0cHM6Ly9hcGkubGluZWFyLmFwcC9ncmFwaHFsYCAoUE9TVCkKLSAqKkF1dGggaGVhZGVyOioqIGBBdXRob3JpemF0aW9uOiAkTElORUFSX0FQSV9LRVlgIChubyAiQmVhcmVyIiBwcmVmaXggZm9yIEFQSSBrZXlzKQotICoqQWxsIHJlcXVlc3RzIGFyZSBQT1NUKiogd2l0aCBgQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uYAotICoqQm90aCBVVUlEcyBhbmQgc2hvcnQgaWRlbnRpZmllcnMqKiAoZS5nLiwgYEVORy0xMjNgKSB3b3JrIGZvciBgaXNzdWUoaWQ6KWAKCkJhc2UgY3VybCBwYXR0ZXJuOgpgYGBiYXNoCmN1cmwgLXMgLVggUE9TVCBodHRwczovL2FwaS5saW5lYXIuYXBwL2dyYXBocWwgXAogIC1IICJBdXRob3JpemF0aW9uOiAkTElORUFSX0FQSV9LRVkiIFwKICAtSCAiQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uIiBcCiAgLWQgJ3sicXVlcnkiOiAieyB2aWV3ZXIgeyBpZCBuYW1lIH0gfSJ9JyB8IHB5dGhvbjMgLW0ganNvbi50b29sCmBgYAoKIyMgV29ya2Zsb3cgU3RhdGVzCgpMaW5lYXIgdXNlcyBgV29ya2Zsb3dTdGF0ZWAgb2JqZWN0cyB3aXRoIGEgYHR5cGVgIGZpZWxkLiAqKjYgc3RhdGUgdHlwZXM6KioKCnwgVHlwZSB8IERlc2NyaXB0aW9uIHwKfC0tLS0tLXwtLS0tLS0tLS0tLS0tfAp8IGB0cmlhZ2VgIHwgSW5jb21pbmcgaXNzdWVzIG5lZWRpbmcgcmV2aWV3IHwKfCBgYmFja2xvZ2AgfCBBY2tub3dsZWRnZWQgYnV0IG5vdCB5ZXQgcGxhbm5lZCB8CnwgYHVuc3RhcnRlZGAgfCBQbGFubmVkL3JlYWR5IGJ1dCBub3Qgc3RhcnRlZCB8CnwgYHN0YXJ0ZWRgIHwgQWN0aXZlbHkgYmVpbmcgd29ya2VkIG9uIHwKfCBgY29tcGxldGVkYCB8IERvbmUgfAp8IGBjYW5jZWxlZGAgfCBXb24ndCBkbyB8CgpFYWNoIHRlYW0gaGFzIGl0cyBvd24gbmFtZWQgc3RhdGVzIChlLmcuLCAiSW4gUHJvZ3Jlc3MiIGlzIHR5cGUgYHN0YXJ0ZWRgKS4gVG8gY2hhbmdlIGFuIGlzc3VlJ3Mgc3RhdHVzLCB5b3UgbmVlZCB0aGUgYHN0YXRlSWRgIChVVUlEKSBvZiB0aGUgdGFyZ2V0IHN0YXRlIOKAlCBxdWVyeSB3b3JrZmxvdyBzdGF0ZXMgZmlyc3QuCgoqKlByaW9yaXR5IHZhbHVlczoqKiAwID0gTm9uZSwgMSA9IFVyZ2VudCwgMiA9IEhpZ2gsIDMgPSBNZWRpdW0sIDQgPSBMb3cKCiMjIENvbW1vbiBRdWVyaWVzCgojIyMgR2V0IGN1cnJlbnQgdXNlcgpgYGBiYXNoCmN1cmwgLXMgLVggUE9TVCBodHRwczovL2FwaS5saW5lYXIuYXBwL2dyYXBocWwgXAogIC1IICJBdXRob3JpemF0aW9uOiAkTElORUFSX0FQSV9LRVkiIFwKICAtSCAiQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uIiBcCiAgLWQgJ3sicXVlcnkiOiAieyB2aWV3ZXIgeyBpZCBuYW1lIGVtYWlsIH0gfSJ9JyB8IHB5dGhvbjMgLW0ganNvbi50b29sCmBgYAoKIyMjIExpc3QgdGVhbXMKYGBgYmFzaApjdXJsIC1zIC1YIFBPU1QgaHR0cHM6Ly9hcGkubGluZWFyLmFwcC9ncmFwaHFsIFwKICAtSCAiQXV0aG9yaXphdGlvbjogJExJTkVBUl9BUElfS0VZIiBcCiAgLUggIkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbiIgXAogIC1kICd7InF1ZXJ5IjogInsgdGVhbXMgeyBub2RlcyB7IGlkIG5hbWUga2V5IH0gfSB9In0nIHwgcHl0aG9uMyAtbSBqc29uLnRvb2wKYGBgCgojIyMgTGlzdCB3b3JrZmxvdyBzdGF0ZXMgZm9yIGEgdGVhbQpgYGBiYXNoCmN1cmwgLXMgLVggUE9TVCBodHRwczovL2FwaS5saW5lYXIuYXBwL2dyYXBocWwgXAogIC1IICJBdXRob3JpemF0aW9uOiAkTElORUFSX0FQSV9LRVkiIFwKICAtSCAiQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uIiBcCiAgLWQgJ3sicXVlcnkiOiAieyB3b3JrZmxvd1N0YXRlcyhmaWx0ZXI6IHsgdGVhbTogeyBrZXk6IHsgZXE6IFwiRU5HXCIgfSB9IH0pIHsgbm9kZXMgeyBpZCBuYW1lIHR5cGUgfSB9IH0ifScgfCBweXRob24zIC1tIGpzb24udG9vbApgYGAKCiMjIyBMaXN0IGlzc3VlcyAoZmlyc3QgMjApCmBgYGJhc2gKY3VybCAtcyAtWCBQT1NUIGh0dHBzOi8vYXBpLmxpbmVhci5hcHAvZ3JhcGhxbCBcCiAgLUggIkF1dGhvcml6YXRpb246ICRMSU5FQVJfQVBJX0tFWSIgXAogIC1IICJDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24iIFwKICAtZCAneyJxdWVyeSI6ICJ7IGlzc3VlcyhmaXJzdDogMjApIHsgbm9kZXMgeyBpZGVudGlmaWVyIHRpdGxlIHByaW9yaXR5IHN0YXRlIHsgbmFtZSB0eXBlIH0gYXNzaWduZWUgeyBuYW1lIH0gdGVhbSB7IGtleSB9IHVybCB9IHBhZ2VJbmZvIHsgaGFzTmV4dFBhZ2UgZW5kQ3Vyc29yIH0gfSB9In0nIHwgcHl0aG9uMyAtbSBqc29uLnRvb2wKYGBgCgojIyMgTGlzdCBteSBhc3NpZ25lZCBpc3N1ZXMKYGBgYmFzaApjdXJsIC1zIC1YIFBPU1QgaHR0cHM6Ly9hcGkubGluZWFyLmFwcC9ncmFwaHFsIFwKICAtSCAiQXV0aG9yaXphdGlvbjogJExJTkVBUl9BUElfS0VZIiBcCiAgLUggIkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbiIgXAogIC1kICd7InF1ZXJ5IjogInsgdmlld2VyIHsgYXNzaWduZWRJc3N1ZXMoZmlyc3Q6IDI1KSB7IG5vZGVzIHsgaWRlbnRpZmllciB0aXRsZSBzdGF0ZSB7IG5hbWUgdHlwZSB9IHByaW9yaXR5IHVybCB9IH0gfSB9In0nIHwgcHl0aG9uMyAtbSBqc29uLnRvb2wKYGBgCgojIyMgR2V0IGEgc2luZ2xlIGlzc3VlIChieSBpZGVudGlmaWVyIGxpa2UgRU5HLTEyMykKYGBgYmFzaApjdXJsIC1zIC1YIFBPU1QgaHR0cHM6Ly9hcGkubGluZWFyLmFwcC9ncmFwaHFsIFwKICAtSCAiQXV0aG9yaXphdGlvbjogJExJTkVBUl9BUElfS0VZIiBcCiAgLUggIkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbiIgXAogIC1kICd7InF1ZXJ5IjogInsgaXNzdWUoaWQ6IFwiRU5HLTEyM1wiKSB7IGlkIGlkZW50aWZpZXIgdGl0bGUgZGVzY3JpcHRpb24gcHJpb3JpdHkgc3RhdGUgeyBpZCBuYW1lIHR5cGUgfSBhc3NpZ25lZSB7IGlkIG5hbWUgfSB0ZWFtIHsga2V5IH0gcHJvamVjdCB7IG5hbWUgfSBsYWJlbHMgeyBub2RlcyB7IG5hbWUgfSB9IGNvbW1lbnRzIHsgbm9kZXMgeyBib2R5IHVzZXIgeyBuYW1lIH0gY3JlYXRlZEF0IH0gfSB1cmwgfSB9In0nIHwgcHl0aG9uMyAtbSBqc29uLnRvb2wKYGBgCgojIyMgU2VhcmNoIGlzc3VlcyBieSB0ZXh0CmBgYGJhc2gKY3VybCAtcyAtWCBQT1NUIGh0dHBzOi8vYXBpLmxpbmVhci5hcHAvZ3JhcGhxbCBcCiAgLUggIkF1dGhvcml6YXRpb246ICRMSU5FQVJfQVBJX0tFWSIgXAogIC1IICJDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24iIFwKICAtZCAneyJxdWVyeSI6ICJ7IGlzc3VlU2VhcmNoKHF1ZXJ5OiBcImJ1ZyBsb2dpblwiLCBmaXJzdDogMTApIHsgbm9kZXMgeyBpZGVudGlmaWVyIHRpdGxlIHN0YXRlIHsgbmFtZSB9IGFzc2lnbmVlIHsgbmFtZSB9IHVybCB9IH0gfSJ9JyB8IHB5dGhvbjMgLW0ganNvbi50b29sCmBgYAoKIyMjIEZpbHRlciBpc3N1ZXMgYnkgc3RhdGUgdHlwZQpgYGBiYXNoCmN1cmwgLXMgLVggUE9TVCBodHRwczovL2FwaS5saW5lYXIuYXBwL2dyYXBocWwgXAogIC1IICJBdXRob3JpemF0aW9uOiAkTElORUFSX0FQSV9LRVkiIFwKICAtSCAiQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uIiBcCiAgLWQgJ3sicXVlcnkiOiAieyBpc3N1ZXMoZmlsdGVyOiB7IHN0YXRlOiB7IHR5cGU6IHsgaW46IFtcInN0YXJ0ZWRcIl0gfSB9IH0sIGZpcnN0OiAyMCkgeyBub2RlcyB7IGlkZW50aWZpZXIgdGl0bGUgc3RhdGUgeyBuYW1lIH0gYXNzaWduZWUgeyBuYW1lIH0gfSB9IH0ifScgfCBweXRob24zIC1tIGpzb24udG9vbApgYGAKCiMjIyBGaWx0ZXIgYnkgdGVhbSBhbmQgYXNzaWduZWUKYGBgYmFzaApjdXJsIC1zIC1YIFBPU1QgaHR0cHM6Ly9hcGkubGluZWFyLmFwcC9ncmFwaHFsIFwKICAtSCAiQXV0aG9yaXphdGlvbjogJExJTkVBUl9BUElfS0VZIiBcCiAgLUggIkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbiIgXAogIC1kICd7InF1ZXJ5IjogInsgaXNzdWVzKGZpbHRlcjogeyB0ZWFtOiB7IGtleTogeyBlcTogXCJFTkdcIiB9IH0sIGFzc2lnbmVlOiB7IGVtYWlsOiB7IGVxOiBcInVzZXJAZXhhbXBsZS5jb21cIiB9IH0gfSwgZmlyc3Q6IDIwKSB7IG5vZGVzIHsgaWRlbnRpZmllciB0aXRsZSBzdGF0ZSB7IG5hbWUgfSBwcmlvcml0eSB9IH0gfSJ9JyB8IHB5dGhvbjMgLW0ganNvbi50b29sCmBgYAoKIyMjIExpc3QgcHJvamVjdHMKYGBgYmFzaApjdXJsIC1zIC1YIFBPU1QgaHR0cHM6Ly9hcGkubGluZWFyLmFwcC9ncmFwaHFsIFwKICAtSCAiQXV0aG9yaXphdGlvbjogJExJTkVBUl9BUElfS0VZIiBcCiAgLUggIkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbiIgXAogIC1kICd7InF1ZXJ5IjogInsgcHJvamVjdHMoZmlyc3Q6IDIwKSB7IG5vZGVzIHsgaWQgbmFtZSBkZXNjcmlwdGlvbiBwcm9ncmVzcyBsZWFkIHsgbmFtZSB9IHRlYW1zIHsgbm9kZXMgeyBrZXkgfSB9IHVybCB9IH0gfSJ9JyB8IHB5dGhvbjMgLW0ganNvbi50b29sCmBgYAoKIyMjIExpc3QgdGVhbSBtZW1iZXJzCmBgYGJhc2gKY3VybCAtcyAtWCBQT1NUIGh0dHBzOi8vYXBpLmxpbmVhci5hcHAvZ3JhcGhxbCBcCiAgLUggIkF1dGhvcml6YXRpb246ICRMSU5FQVJfQVBJX0tFWSIgXAogIC1IICJDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24iIFwKICAtZCAneyJxdWVyeSI6ICJ7IHVzZXJzIHsgbm9kZXMgeyBpZCBuYW1lIGVtYWlsIGFjdGl2ZSB9IH0gfSJ9JyB8IHB5dGhvbjMgLW0ganNvbi50b29sCmBgYAoKIyMjIExpc3QgbGFiZWxzCmBgYGJhc2gKY3VybCAtcyAtWCBQT1NUIGh0dHBzOi8vYXBpLmxpbmVhci5hcHAvZ3JhcGhxbCBcCiAgLUggIkF1dGhvcml6YXRpb246ICRMSU5FQVJfQVBJX0tFWSIgXAogIC1IICJDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24iIFwKICAtZCAneyJxdWVyeSI6ICJ7IGlzc3VlTGFiZWxzIHsgbm9kZXMgeyBpZCBuYW1lIGNvbG9yIH0gfSB9In0nIHwgcHl0aG9uMyAtbSBqc29uLnRvb2wKYGBgCgojIyBDb21tb24gTXV0YXRpb25zCgojIyMgQ3JlYXRlIGFuIGlzc3VlCmBgYGJhc2gKY3VybCAtcyAtWCBQT1NUIGh0dHBzOi8vYXBpLmxpbmVhci5hcHAvZ3JhcGhxbCBcCiAgLUggIkF1dGhvcml6YXRpb246ICRMSU5FQVJfQVBJX0tFWSIgXAogIC1IICJDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24iIFwKICAtZCAnewogICAgInF1ZXJ5IjogIm11dGF0aW9uKCRpbnB1dDogSXNzdWVDcmVhdGVJbnB1dCEpIHsgaXNzdWVDcmVhdGUoaW5wdXQ6ICRpbnB1dCkgeyBzdWNjZXNzIGlzc3VlIHsgaWQgaWRlbnRpZmllciB0aXRsZSB1cmwgfSB9IH0iLAogICAgInZhcmlhYmxlcyI6IHsKICAgICAgImlucHV0IjogewogICAgICAgICJ0ZWFtSWQiOiAiVEVBTV9VVUlEIiwKICAgICAgICAidGl0bGUiOiAiRml4IGxvZ2luIGJ1ZyIsCiAgICAgICAgImRlc2NyaXB0aW9uIjogIlVzZXJzIGNhbm5vdCBsb2dpbiB3aXRoIFNTTyIsCiAgICAgICAgInByaW9yaXR5IjogMgogICAgICB9CiAgICB9CiAgfScgfCBweXRob24zIC1tIGpzb24udG9vbApgYGAKCiMjIyBVcGRhdGUgaXNzdWUgc3RhdHVzCkZpcnN0IGdldCB0aGUgdGFyZ2V0IHN0YXRlIFVVSUQgZnJvbSB0aGUgd29ya2Zsb3cgc3RhdGVzIHF1ZXJ5IGFib3ZlLCB0aGVuOgpgYGBiYXNoCmN1cmwgLXMgLVggUE9TVCBodHRwczovL2FwaS5saW5lYXIuYXBwL2dyYXBocWwgXAogIC1IICJBdXRob3JpemF0aW9uOiAkTElORUFSX0FQSV9LRVkiIFwKICAtSCAiQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uIiBcCiAgLWQgJ3sicXVlcnkiOiAibXV0YXRpb24geyBpc3N1ZVVwZGF0ZShpZDogXCJFTkctMTIzXCIsIGlucHV0OiB7IHN0YXRlSWQ6IFwiU1RBVEVfVVVJRFwiIH0pIHsgc3VjY2VzcyBpc3N1ZSB7IGlkZW50aWZpZXIgc3RhdGUgeyBuYW1lIHR5cGUgfSB9IH0gfSJ9JyB8IHB5dGhvbjMgLW0ganNvbi50b29sCmBgYAoKIyMjIEFzc2lnbiBhbiBpc3N1ZQpgYGBiYXNoCmN1cmwgLXMgLVggUE9TVCBodHRwczovL2FwaS5saW5lYXIuYXBwL2dyYXBocWwgXAogIC1IICJBdXRob3JpemF0aW9uOiAkTElORUFSX0FQSV9LRVkiIFwKICAtSCAiQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uIiBcCiAgLWQgJ3sicXVlcnkiOiAibXV0YXRpb24geyBpc3N1ZVVwZGF0ZShpZDogXCJFTkctMTIzXCIsIGlucHV0OiB7IGFzc2lnbmVlSWQ6IFwiVVNFUl9VVUlEXCIgfSkgeyBzdWNjZXNzIGlzc3VlIHsgaWRlbnRpZmllciBhc3NpZ25lZSB7IG5hbWUgfSB9IH0gfSJ9JyB8IHB5dGhvbjMgLW0ganNvbi50b29sCmBgYAoKIyMjIFNldCBwcmlvcml0eQpgYGBiYXNoCmN1cmwgLXMgLVggUE9TVCBodHRwczovL2FwaS5saW5lYXIuYXBwL2dyYXBocWwgXAogIC1IICJBdXRob3JpemF0aW9uOiAkTElORUFSX0FQSV9LRVkiIFwKICAtSCAiQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uIiBcCiAgLWQgJ3sicXVlcnkiOiAibXV0YXRpb24geyBpc3N1ZVVwZGF0ZShpZDogXCJFTkctMTIzXCIsIGlucHV0OiB7IHByaW9yaXR5OiAxIH0pIHsgc3VjY2VzcyBpc3N1ZSB7IGlkZW50aWZpZXIgcHJpb3JpdHkgfSB9IH0ifScgfCBweXRob24zIC1tIGpzb24udG9vbApgYGAKCiMjIyBBZGQgYSBjb21tZW50CmBgYGJhc2gKY3VybCAtcyAtWCBQT1NUIGh0dHBzOi8vYXBpLmxpbmVhci5hcHAvZ3JhcGhxbCBcCiAgLUggIkF1dGhvcml6YXRpb246ICRMSU5FQVJfQVBJX0tFWSIgXAogIC1IICJDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24iIFwKICAtZCAneyJxdWVyeSI6ICJtdXRhdGlvbiB7IGNvbW1lbnRDcmVhdGUoaW5wdXQ6IHsgaXNzdWVJZDogXCJJU1NVRV9VVUlEXCIsIGJvZHk6IFwiSW52ZXN0aWdhdGVkLiBSb290IGNhdXNlIGlzIFguXCIgfSkgeyBzdWNjZXNzIGNvbW1lbnQgeyBpZCBib2R5IH0gfSB9In0nIHwgcHl0aG9uMyAtbSBqc29uLnRvb2wKYGBgCgojIyMgU2V0IGR1ZSBkYXRlCmBgYGJhc2gKY3VybCAtcyAtWCBQT1NUIGh0dHBzOi8vYXBpLmxpbmVhci5hcHAvZ3JhcGhxbCBcCiAgLUggIkF1dGhvcml6YXRpb246ICRMSU5FQVJfQVBJX0tFWSIgXAogIC1IICJDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24iIFwKICAtZCAneyJxdWVyeSI6ICJtdXRhdGlvbiB7IGlzc3VlVXBkYXRlKGlkOiBcIkVORy0xMjNcIiwgaW5wdXQ6IHsgZHVlRGF0ZTogXCIyMDI2LTA0LTAxXCIgfSkgeyBzdWNjZXNzIGlzc3VlIHsgaWRlbnRpZmllciBkdWVEYXRlIH0gfSB9In0nIHwgcHl0aG9uMyAtbSBqc29uLnRvb2wKYGBgCgojIyMgQWRkIGxhYmVscyB0byBhbiBpc3N1ZQpgYGBiYXNoCmN1cmwgLXMgLVggUE9TVCBodHRwczovL2FwaS5saW5lYXIuYXBwL2dyYXBocWwgXAogIC1IICJBdXRob3JpemF0aW9uOiAkTElORUFSX0FQSV9LRVkiIFwKICAtSCAiQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uIiBcCiAgLWQgJ3sicXVlcnkiOiAibXV0YXRpb24geyBpc3N1ZVVwZGF0ZShpZDogXCJFTkctMTIzXCIsIGlucHV0OiB7IGxhYmVsSWRzOiBbXCJMQUJFTF9VVUlEXzFcIiwgXCJMQUJFTF9VVUlEXzJcIl0gfSkgeyBzdWNjZXNzIGlzc3VlIHsgaWRlbnRpZmllciBsYWJlbHMgeyBub2RlcyB7IG5hbWUgfSB9IH0gfSB9In0nIHwgcHl0aG9uMyAtbSBqc29uLnRvb2wKYGBgCgojIyMgQWRkIGlzc3VlIHRvIGEgcHJvamVjdApgYGBiYXNoCmN1cmwgLXMgLVggUE9TVCBodHRwczovL2FwaS5saW5lYXIuYXBwL2dyYXBocWwgXAogIC1IICJBdXRob3JpemF0aW9uOiAkTElORUFSX0FQSV9LRVkiIFwKICAtSCAiQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uIiBcCiAgLWQgJ3sicXVlcnkiOiAibXV0YXRpb24geyBpc3N1ZVVwZGF0ZShpZDogXCJFTkctMTIzXCIsIGlucHV0OiB7IHByb2plY3RJZDogXCJQUk9KRUNUX1VVSURcIiB9KSB7IHN1Y2Nlc3MgaXNzdWUgeyBpZGVudGlmaWVyIHByb2plY3QgeyBuYW1lIH0gfSB9IH0ifScgfCBweXRob24zIC1tIGpzb24udG9vbApgYGAKCiMjIyBDcmVhdGUgYSBwcm9qZWN0CmBgYGJhc2gKY3VybCAtcyAtWCBQT1NUIGh0dHBzOi8vYXBpLmxpbmVhci5hcHAvZ3JhcGhxbCBcCiAgLUggIkF1dGhvcml6YXRpb246ICRMSU5FQVJfQVBJX0tFWSIgXAogIC1IICJDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24iIFwKICAtZCAnewogICAgInF1ZXJ5IjogIm11dGF0aW9uKCRpbnB1dDogUHJvamVjdENyZWF0ZUlucHV0ISkgeyBwcm9qZWN0Q3JlYXRlKGlucHV0OiAkaW5wdXQpIHsgc3VjY2VzcyBwcm9qZWN0IHsgaWQgbmFtZSB1cmwgfSB9IH0iLAogICAgInZhcmlhYmxlcyI6IHsKICAgICAgImlucHV0IjogewogICAgICAgICJuYW1lIjogIlEyIEF1dGggT3ZlcmhhdWwiLAogICAgICAgICJkZXNjcmlwdGlvbiI6ICJSZXBsYWNlIGxlZ2FjeSBhdXRoIHdpdGggT0F1dGgyIGFuZCBQS0NFIiwKICAgICAgICAidGVhbUlkcyI6IFsiVEVBTV9VVUlEIl0KICAgICAgfQogICAgfQogIH0nIHwgcHl0aG9uMyAtbSBqc29uLnRvb2wKYGBgCgojIyBQYWdpbmF0aW9uCgpMaW5lYXIgdXNlcyBSZWxheS1zdHlsZSBjdXJzb3IgcGFnaW5hdGlvbjoKCmBgYGJhc2gKIyBGaXJzdCBwYWdlCmN1cmwgLXMgLVggUE9TVCBodHRwczovL2FwaS5saW5lYXIuYXBwL2dyYXBocWwgXAogIC1IICJBdXRob3JpemF0aW9uOiAkTElORUFSX0FQSV9LRVkiIFwKICAtSCAiQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uIiBcCiAgLWQgJ3sicXVlcnkiOiAieyBpc3N1ZXMoZmlyc3Q6IDIwKSB7IG5vZGVzIHsgaWRlbnRpZmllciB0aXRsZSB9IHBhZ2VJbmZvIHsgaGFzTmV4dFBhZ2UgZW5kQ3Vyc29yIH0gfSB9In0nIHwgcHl0aG9uMyAtbSBqc29uLnRvb2wKCiMgTmV4dCBwYWdlIOKAlCB1c2UgZW5kQ3Vyc29yIGZyb20gcHJldmlvdXMgcmVzcG9uc2UKY3VybCAtcyAtWCBQT1NUIGh0dHBzOi8vYXBpLmxpbmVhci5hcHAvZ3JhcGhxbCBcCiAgLUggIkF1dGhvcml6YXRpb246ICRMSU5FQVJfQVBJX0tFWSIgXAogIC1IICJDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24iIFwKICAtZCAneyJxdWVyeSI6ICJ7IGlzc3VlcyhmaXJzdDogMjAsIGFmdGVyOiBcIkNVUlNPUl9GUk9NX1BSRVZJT1VTXCIpIHsgbm9kZXMgeyBpZGVudGlmaWVyIHRpdGxlIH0gcGFnZUluZm8geyBoYXNOZXh0UGFnZSBlbmRDdXJzb3IgfSB9IH0ifScgfCBweXRob24zIC1tIGpzb24udG9vbApgYGAKCkRlZmF1bHQgcGFnZSBzaXplOiA1MC4gTWF4OiAyNTAuIEFsd2F5cyB1c2UgYGZpcnN0OiBOYCB0byBsaW1pdCByZXN1bHRzLgoKIyMgRmlsdGVyaW5nIFJlZmVyZW5jZQoKQ29tcGFyYXRvcnM6IGBlcWAsIGBuZXFgLCBgaW5gLCBgbmluYCwgYGx0YCwgYGx0ZWAsIGBndGAsIGBndGVgLCBgY29udGFpbnNgLCBgc3RhcnRzV2l0aGAsIGBjb250YWluc0lnbm9yZUNhc2VgCgpDb21iaW5lIGZpbHRlcnMgd2l0aCBgb3I6IFsuLi5dYCBmb3IgT1IgbG9naWMgKGRlZmF1bHQgaXMgQU5EIHdpdGhpbiBhIGZpbHRlciBvYmplY3QpLgoKIyMgVHlwaWNhbCBXb3JrZmxvdwoKMS4gKipRdWVyeSB0ZWFtcyoqIHRvIGdldCB0ZWFtIElEcyBhbmQga2V5cwoyLiAqKlF1ZXJ5IHdvcmtmbG93IHN0YXRlcyoqIGZvciB0YXJnZXQgdGVhbSB0byBnZXQgc3RhdGUgVVVJRHMKMy4gKipMaXN0IG9yIHNlYXJjaCBpc3N1ZXMqKiB0byBmaW5kIHdoYXQgbmVlZHMgd29yawo0LiAqKkNyZWF0ZSBpc3N1ZXMqKiB3aXRoIHRlYW0gSUQsIHRpdGxlLCBkZXNjcmlwdGlvbiwgcHJpb3JpdHkKNS4gKipVcGRhdGUgc3RhdHVzKiogYnkgc2V0dGluZyBgc3RhdGVJZGAgdG8gdGhlIHRhcmdldCB3b3JrZmxvdyBzdGF0ZQo2LiAqKkFkZCBjb21tZW50cyoqIHRvIHRyYWNrIHByb2dyZXNzCjcuICoqTWFyayBjb21wbGV0ZSoqIGJ5IHNldHRpbmcgYHN0YXRlSWRgIHRvIHRoZSB0ZWFtJ3MgImNvbXBsZXRlZCIgdHlwZSBzdGF0ZQoKIyMgUmF0ZSBMaW1pdHMKCi0gNSwwMDAgcmVxdWVzdHMvaG91ciBwZXIgQVBJIGtleQotIDMsMDAwLDAwMCBjb21wbGV4aXR5IHBvaW50cy9ob3VyCi0gVXNlIGBmaXJzdDogTmAgdG8gbGltaXQgcmVzdWx0cyBhbmQgcmVkdWNlIGNvbXBsZXhpdHkgY29zdAotIE1vbml0b3IgYFgtUmF0ZUxpbWl0LVJlcXVlc3RzLVJlbWFpbmluZ2AgcmVzcG9uc2UgaGVhZGVyCgojIyBJbXBvcnRhbnQgTm90ZXMKCi0gQWx3YXlzIHVzZSBgdGVybWluYWxgIHRvb2wgd2l0aCBgY3VybGAgZm9yIEFQSSBjYWxscyDigJQgZG8gTk9UIHVzZSBgd2ViX2V4dHJhY3RgIG9yIGBicm93c2VyYAotIEFsd2F5cyBjaGVjayB0aGUgYGVycm9yc2AgYXJyYXkgaW4gR3JhcGhRTCByZXNwb25zZXMg4oCUIEhUVFAgMjAwIGNhbiBzdGlsbCBjb250YWluIGVycm9ycwotIElmIGBzdGF0ZUlkYCBpcyBvbWl0dGVkIHdoZW4gY3JlYXRpbmcgaXNzdWVzLCBMaW5lYXIgZGVmYXVsdHMgdG8gdGhlIGZpcnN0IGJhY2tsb2cgc3RhdGUKLSBUaGUgYGRlc2NyaXB0aW9uYCBmaWVsZCBzdXBwb3J0cyBNYXJrZG93bgotIFVzZSBgcHl0aG9uMyAtbSBqc29uLnRvb2xgIG9yIGBqcWAgdG8gZm9ybWF0IEpTT04gcmVzcG9uc2VzIGZvciByZWFkYWJpbGl0eQo=
+---
+name: linear
+description: Manage Linear issues, projects, and teams via the GraphQL API. Create, update, search, and organize issues. Uses API key auth (no OAuth needed). All operations via curl — no dependencies.
+version: 1.0.0
+author: Hermes Agent
+license: MIT
+prerequisites:
+  env_vars: [LINEAR_API_KEY]
+  commands: [curl]
+metadata:
+  hermes:
+    tags: [Linear, Project Management, Issues, GraphQL, API, Productivity]
+---
+
+# Linear — Issue & Project Management
+
+Manage Linear issues, projects, and teams directly via the GraphQL API using `curl`. No MCP server, no OAuth flow, no extra dependencies.
+
+## Setup
+
+1. Get a personal API key from **Linear Settings > API > Personal API keys**
+2. Set `LINEAR_API_KEY` in your environment (via `hermes setup` or your env config)
+
+## API Basics
+
+- **Endpoint:** `https://api.linear.app/graphql` (POST)
+- **Auth header:** `Authorization: $LINEAR_API_KEY` (no "Bearer" prefix for API keys)
+- **All requests are POST** with `Content-Type: application/json`
+- **Both UUIDs and short identifiers** (e.g., `ENG-123`) work for `issue(id:)`
+
+Base curl pattern:
+```bash
+curl -s -X POST https://api.linear.app/graphql \
+  -H "Authorization: $LINEAR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "{ viewer { id name } }"}' | python3 -m json.tool
+```
+
+## Workflow States
+
+Linear uses `WorkflowState` objects with a `type` field. **6 state types:**
+
+| Type | Description |
+|------|-------------|
+| `triage` | Incoming issues needing review |
+| `backlog` | Acknowledged but not yet planned |
+| `unstarted` | Planned/ready but not started |
+| `started` | Actively being worked on |
+| `completed` | Done |
+| `canceled` | Won't do |
+
+Each team has its own named states (e.g., "In Progress" is type `started`). To change an issue's status, you need the `stateId` (UUID) of the target state — query workflow states first.
+
+**Priority values:** 0 = None, 1 = Urgent, 2 = High, 3 = Medium, 4 = Low
+
+## Common Queries
+
+### Get current user
+```bash
+curl -s -X POST https://api.linear.app/graphql \
+  -H "Authorization: $LINEAR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "{ viewer { id name email } }"}' | python3 -m json.tool
+```
+
+### List teams
+```bash
+curl -s -X POST https://api.linear.app/graphql \
+  -H "Authorization: $LINEAR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "{ teams { nodes { id name key } } }"}' | python3 -m json.tool
+```
+
+### List workflow states for a team
+```bash
+curl -s -X POST https://api.linear.app/graphql \
+  -H "Authorization: $LINEAR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "{ workflowStates(filter: { team: { key: { eq: \"ENG\" } } }) { nodes { id name type } } }"}' | python3 -m json.tool
+```
+
+### List issues (first 20)
+```bash
+curl -s -X POST https://api.linear.app/graphql \
+  -H "Authorization: $LINEAR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "{ issues(first: 20) { nodes { identifier title priority state { name type } assignee { name } team { key } url } pageInfo { hasNextPage endCursor } } }"}' | python3 -m json.tool
+```
+
+### List my assigned issues
+```bash
+curl -s -X POST https://api.linear.app/graphql \
+  -H "Authorization: $LINEAR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "{ viewer { assignedIssues(first: 25) { nodes { identifier title state { name type } priority url } } } }"}' | python3 -m json.tool
+```
+
+### Get a single issue (by identifier like ENG-123)
+```bash
+curl -s -X POST https://api.linear.app/graphql \
+  -H "Authorization: $LINEAR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "{ issue(id: \"ENG-123\") { id identifier title description priority state { id name type } assignee { id name } team { key } project { name } labels { nodes { name } } comments { nodes { body user { name } createdAt } } url } }"}' | python3 -m json.tool
+```
+
+### Search issues by text
+```bash
+curl -s -X POST https://api.linear.app/graphql \
+  -H "Authorization: $LINEAR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "{ issueSearch(query: \"bug login\", first: 10) { nodes { identifier title state { name } assignee { name } url } } }"}' | python3 -m json.tool
+```
+
+### Filter issues by state type
+```bash
+curl -s -X POST https://api.linear.app/graphql \
+  -H "Authorization: $LINEAR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "{ issues(filter: { state: { type: { in: [\"started\"] } } }, first: 20) { nodes { identifier title state { name } assignee { name } } } }"}' | python3 -m json.tool
+```
+
+### Filter by team and assignee
+```bash
+curl -s -X POST https://api.linear.app/graphql \
+  -H "Authorization: $LINEAR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "{ issues(filter: { team: { key: { eq: \"ENG\" } }, assignee: { email: { eq: \"user@example.com\" } } }, first: 20) { nodes { identifier title state { name } priority } } }"}' | python3 -m json.tool
+```
+
+### List projects
+```bash
+curl -s -X POST https://api.linear.app/graphql \
+  -H "Authorization: $LINEAR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "{ projects(first: 20) { nodes { id name description progress lead { name } teams { nodes { key } } url } } }"}' | python3 -m json.tool
+```
+
+### List team members
+```bash
+curl -s -X POST https://api.linear.app/graphql \
+  -H "Authorization: $LINEAR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "{ users { nodes { id name email active } } }"}' | python3 -m json.tool
+```
+
+### List labels
+```bash
+curl -s -X POST https://api.linear.app/graphql \
+  -H "Authorization: $LINEAR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "{ issueLabels { nodes { id name color } } }"}' | python3 -m json.tool
+```
+
+## Common Mutations
+
+### Create an issue
+```bash
+curl -s -X POST https://api.linear.app/graphql \
+  -H "Authorization: $LINEAR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "query": "mutation($input: IssueCreateInput!) { issueCreate(input: $input) { success issue { id identifier title url } } }",
+    "variables": {
+      "input": {
+        "teamId": "TEAM_UUID",
+        "title": "Fix login bug",
+        "description": "Users cannot login with SSO",
+        "priority": 2
+      }
+    }
+  }' | python3 -m json.tool
+```
+
+### Update issue status
+First get the target state UUID from the workflow states query above, then:
+```bash
+curl -s -X POST https://api.linear.app/graphql \
+  -H "Authorization: $LINEAR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "mutation { issueUpdate(id: \"ENG-123\", input: { stateId: \"STATE_UUID\" }) { success issue { identifier state { name type } } } }"}' | python3 -m json.tool
+```
+
+### Assign an issue
+```bash
+curl -s -X POST https://api.linear.app/graphql \
+  -H "Authorization: $LINEAR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "mutation { issueUpdate(id: \"ENG-123\", input: { assigneeId: \"USER_UUID\" }) { success issue { identifier assignee { name } } } }"}' | python3 -m json.tool
+```
+
+### Set priority
+```bash
+curl -s -X POST https://api.linear.app/graphql \
+  -H "Authorization: $LINEAR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "mutation { issueUpdate(id: \"ENG-123\", input: { priority: 1 }) { success issue { identifier priority } } }"}' | python3 -m json.tool
+```
+
+### Add a comment
+```bash
+curl -s -X POST https://api.linear.app/graphql \
+  -H "Authorization: $LINEAR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "mutation { commentCreate(input: { issueId: \"ISSUE_UUID\", body: \"Investigated. Root cause is X.\" }) { success comment { id body } } }"}' | python3 -m json.tool
+```
+
+### Set due date
+```bash
+curl -s -X POST https://api.linear.app/graphql \
+  -H "Authorization: $LINEAR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "mutation { issueUpdate(id: \"ENG-123\", input: { dueDate: \"2026-04-01\" }) { success issue { identifier dueDate } } }"}' | python3 -m json.tool
+```
+
+### Add labels to an issue
+```bash
+curl -s -X POST https://api.linear.app/graphql \
+  -H "Authorization: $LINEAR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "mutation { issueUpdate(id: \"ENG-123\", input: { labelIds: [\"LABEL_UUID_1\", \"LABEL_UUID_2\"] }) { success issue { identifier labels { nodes { name } } } } }"}' | python3 -m json.tool
+```
+
+### Add issue to a project
+```bash
+curl -s -X POST https://api.linear.app/graphql \
+  -H "Authorization: $LINEAR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "mutation { issueUpdate(id: \"ENG-123\", input: { projectId: \"PROJECT_UUID\" }) { success issue { identifier project { name } } } }"}' | python3 -m json.tool
+```
+
+### Create a project
+```bash
+curl -s -X POST https://api.linear.app/graphql \
+  -H "Authorization: $LINEAR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "query": "mutation($input: ProjectCreateInput!) { projectCreate(input: $input) { success project { id name url } } }",
+    "variables": {
+      "input": {
+        "name": "Q2 Auth Overhaul",
+        "description": "Replace legacy auth with OAuth2 and PKCE",
+        "teamIds": ["TEAM_UUID"]
+      }
+    }
+  }' | python3 -m json.tool
+```
+
+## Pagination
+
+Linear uses Relay-style cursor pagination:
+
+```bash
+# First page
+curl -s -X POST https://api.linear.app/graphql \
+  -H "Authorization: $LINEAR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "{ issues(first: 20) { nodes { identifier title } pageInfo { hasNextPage endCursor } } }"}' | python3 -m json.tool
+
+# Next page — use endCursor from previous response
+curl -s -X POST https://api.linear.app/graphql \
+  -H "Authorization: $LINEAR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "{ issues(first: 20, after: \"CURSOR_FROM_PREVIOUS\") { nodes { identifier title } pageInfo { hasNextPage endCursor } } }"}' | python3 -m json.tool
+```
+
+Default page size: 50. Max: 250. Always use `first: N` to limit results.
+
+## Filtering Reference
+
+Comparators: `eq`, `neq`, `in`, `nin`, `lt`, `lte`, `gt`, `gte`, `contains`, `startsWith`, `containsIgnoreCase`
+
+Combine filters with `or: [...]` for OR logic (default is AND within a filter object).
+
+## Typical Workflow
+
+1. **Query teams** to get team IDs and keys
+2. **Query workflow states** for target team to get state UUIDs
+3. **List or search issues** to find what needs work
+4. **Create issues** with team ID, title, description, priority
+5. **Update status** by setting `stateId` to the target workflow state
+6. **Add comments** to track progress
+7. **Mark complete** by setting `stateId` to the team's "completed" type state
+
+## Rate Limits
+
+- 5,000 requests/hour per API key
+- 3,000,000 complexity points/hour
+- Use `first: N` to limit results and reduce complexity cost
+- Monitor `X-RateLimit-Requests-Remaining` response header
+
+## Important Notes
+
+- Always use `terminal` tool with `curl` for API calls — do NOT use `web_extract` or `browser`
+- Always check the `errors` array in GraphQL responses — HTTP 200 can still contain errors
+- If `stateId` is omitted when creating issues, Linear defaults to the first backlog state
+- The `description` field supports Markdown
+- Use `python3 -m json.tool` or `jq` to format JSON responses for readability

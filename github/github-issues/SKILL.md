@@ -1,1 +1,369 @@
-LS0tCm5hbWU6IGdpdGh1Yi1pc3N1ZXMKZGVzY3JpcHRpb246IENyZWF0ZSwgbWFuYWdlLCB0cmlhZ2UsIGFuZCBjbG9zZSBHaXRIdWIgaXNzdWVzLiBTZWFyY2ggZXhpc3RpbmcgaXNzdWVzLCBhZGQgbGFiZWxzLCBhc3NpZ24gcGVvcGxlLCBhbmQgbGluayB0byBQUnMuIFdvcmtzIHdpdGggZ2ggQ0xJIG9yIGZhbGxzIGJhY2sgdG8gZ2l0ICsgR2l0SHViIFJFU1QgQVBJIHZpYSBjdXJsLgp2ZXJzaW9uOiAxLjEuMAphdXRob3I6IEhlcm1lcyBBZ2VudApsaWNlbnNlOiBNSVQKbWV0YWRhdGE6CiAgaGVybWVzOgogICAgdGFnczogW0dpdEh1YiwgSXNzdWVzLCBQcm9qZWN0LU1hbmFnZW1lbnQsIEJ1Zy1UcmFja2luZywgVHJpYWdlXQogICAgcmVsYXRlZF9za2lsbHM6IFtnaXRodWItYXV0aCwgZ2l0aHViLXByLXdvcmtmbG93XQotLS0KCiMgR2l0SHViIElzc3VlcyBNYW5hZ2VtZW50CgpDcmVhdGUsIHNlYXJjaCwgdHJpYWdlLCBhbmQgbWFuYWdlIEdpdEh1YiBpc3N1ZXMuIEVhY2ggc2VjdGlvbiBzaG93cyBgZ2hgIGZpcnN0LCB0aGVuIHRoZSBgY3VybGAgZmFsbGJhY2suCgojIyBQcmVyZXF1aXNpdGVzCgotIEF1dGhlbnRpY2F0ZWQgd2l0aCBHaXRIdWIgKHNlZSBgZ2l0aHViLWF1dGhgIHNraWxsKQotIEluc2lkZSBhIGdpdCByZXBvIHdpdGggYSBHaXRIdWIgcmVtb3RlLCBvciBzcGVjaWZ5IHRoZSByZXBvIGV4cGxpY2l0bHkKCiMjIyBTZXR1cAoKYGBgYmFzaAppZiBjb21tYW5kIC12IGdoICY+L2Rldi9udWxsICYmIGdoIGF1dGggc3RhdHVzICY+L2Rldi9udWxsOyB0aGVuCiAgQVVUSD0iZ2giCmVsc2UKICBBVVRIPSJnaXQiCiAgaWYgWyAteiAiJEdJVEhVQl9UT0tFTiIgXTsgdGhlbgogICAgaWYgWyAtZiB+Ly5oZXJtZXMvLmVudiBdICYmIGdyZXAgLXEgIl5HSVRIVUJfVE9LRU49IiB+Ly5oZXJtZXMvLmVudjsgdGhlbgogICAgICBHSVRIVUJfVE9LRU49JChncmVwICJeR0lUSFVCX1RPS0VOPSIgfi8uaGVybWVzLy5lbnYgfCBoZWFkIC0xIHwgY3V0IC1kPSAtZjIgfCB0ciAtZCAnXG5ccicpCiAgICBlbGlmIGdyZXAgLXEgImdpdGh1Yi5jb20iIH4vLmdpdC1jcmVkZW50aWFscyAyPi9kZXYvbnVsbDsgdGhlbgogICAgICBHSVRIVUJfVE9LRU49JChncmVwICJnaXRodWIuY29tIiB+Ly5naXQtY3JlZGVudGlhbHMgMj4vZGV2L251bGwgfCBoZWFkIC0xIHwgc2VkICdzfGh0dHBzOi8vW146XSo6XChbXkBdKlwpQC4qfFwxfCcpCiAgICBmaQogIGZpCmZpCgpSRU1PVEVfVVJMPSQoZ2l0IHJlbW90ZSBnZXQtdXJsIG9yaWdpbikKT1dORVJfUkVQTz0kKGVjaG8gIiRSRU1PVEVfVVJMIiB8IHNlZCAtRSAnc3wuKmdpdGh1YlwuY29tWzovXXx8OyBzfFwuZ2l0JHx8JykKT1dORVI9JChlY2hvICIkT1dORVJfUkVQTyIgfCBjdXQgLWQvIC1mMSkKUkVQTz0kKGVjaG8gIiRPV05FUl9SRVBPIiB8IGN1dCAtZC8gLWYyKQpgYGAKCi0tLQoKIyMgMS4gVmlld2luZyBJc3N1ZXMKCioqV2l0aCBnaDoqKgoKYGBgYmFzaApnaCBpc3N1ZSBsaXN0CmdoIGlzc3VlIGxpc3QgLS1zdGF0ZSBvcGVuIC0tbGFiZWwgImJ1ZyIKZ2ggaXNzdWUgbGlzdCAtLWFzc2lnbmVlIEBtZQpnaCBpc3N1ZSBsaXN0IC0tc2VhcmNoICJhdXRoZW50aWNhdGlvbiBlcnJvciIgLS1zdGF0ZSBhbGwKZ2ggaXNzdWUgdmlldyA0MgpgYGAKCioqV2l0aCBjdXJsOioqCgpgYGBiYXNoCiMgTGlzdCBvcGVuIGlzc3VlcwpjdXJsIC1zIFwKICAtSCAiQXV0aG9yaXphdGlvbjogdG9rZW4gJEdJVEhVQl9UT0tFTiIgXAogICJodHRwczovL2FwaS5naXRodWIuY29tL3JlcG9zLyRPV05FUi8kUkVQTy9pc3N1ZXM/c3RhdGU9b3BlbiZwZXJfcGFnZT0yMCIgXAogIHwgcHl0aG9uMyAtYyAiCmltcG9ydCBzeXMsIGpzb24KZm9yIGkgaW4ganNvbi5sb2FkKHN5cy5zdGRpbik6CiAgICBpZiAncHVsbF9yZXF1ZXN0JyBub3QgaW4gaTogICMgR2l0SHViIEFQSSByZXR1cm5zIFBScyBpbiAvaXNzdWVzIHRvbwogICAgICAgIGxhYmVscyA9ICcsICcuam9pbihsWyduYW1lJ10gZm9yIGwgaW4gaVsnbGFiZWxzJ10pCiAgICAgICAgcHJpbnQoZlwiI3tpWydudW1iZXInXTo1fSAge2lbJ3N0YXRlJ106Nn0gIHtsYWJlbHM6MzB9ICB7aVsndGl0bGUnXX1cIikiCgojIEZpbHRlciBieSBsYWJlbApjdXJsIC1zIFwKICAtSCAiQXV0aG9yaXphdGlvbjogdG9rZW4gJEdJVEhVQl9UT0tFTiIgXAogICJodHRwczovL2FwaS5naXRodWIuY29tL3JlcG9zLyRPV05FUi8kUkVQTy9pc3N1ZXM/c3RhdGU9b3BlbiZsYWJlbHM9YnVnJnBlcl9wYWdlPTIwIiBcCiAgfCBweXRob24zIC1jICIKaW1wb3J0IHN5cywganNvbgpmb3IgaSBpbiBqc29uLmxvYWQoc3lzLnN0ZGluKToKICAgIGlmICdwdWxsX3JlcXVlc3QnIG5vdCBpbiBpOgogICAgICAgIHByaW50KGZcIiN7aVsnbnVtYmVyJ119ICB7aVsndGl0bGUnXX1cIikiCgojIFZpZXcgYSBzcGVjaWZpYyBpc3N1ZQpjdXJsIC1zIFwKICAtSCAiQXV0aG9yaXphdGlvbjogdG9rZW4gJEdJVEhVQl9UT0tFTiIgXAogIGh0dHBzOi8vYXBpLmdpdGh1Yi5jb20vcmVwb3MvJE9XTkVSLyRSRVBPL2lzc3Vlcy80MiBcCiAgfCBweXRob24zIC1jICIKaW1wb3J0IHN5cywganNvbgppID0ganNvbi5sb2FkKHN5cy5zdGRpbikKbGFiZWxzID0gJywgJy5qb2luKGxbJ25hbWUnXSBmb3IgbCBpbiBpWydsYWJlbHMnXSkKYXNzaWduZWVzID0gJywgJy5qb2luKGFbJ2xvZ2luJ10gZm9yIGEgaW4gaVsnYXNzaWduZWVzJ10pCnByaW50KGZcIiN7aVsnbnVtYmVyJ119OiB7aVsndGl0bGUnXX1cIikKcHJpbnQoZlwiU3RhdGU6IHtpWydzdGF0ZSddfSAgTGFiZWxzOiB7bGFiZWxzfSAgQXNzaWduZWVzOiB7YXNzaWduZWVzfVwiKQpwcmludChmXCJBdXRob3I6IHtpWyd1c2VyJ11bJ2xvZ2luJ119ICBDcmVhdGVkOiB7aVsnY3JlYXRlZF9hdCddfVwiKQpwcmludChmXCJcbntpWydib2R5J119XCIpIgoKIyBTZWFyY2ggaXNzdWVzCmN1cmwgLXMgXAogIC1IICJBdXRob3JpemF0aW9uOiB0b2tlbiAkR0lUSFVCX1RPS0VOIiBcCiAgImh0dHBzOi8vYXBpLmdpdGh1Yi5jb20vc2VhcmNoL2lzc3Vlcz9xPWF1dGhlbnRpY2F0aW9uK2Vycm9yK3JlcG86JE9XTkVSLyRSRVBPIiBcCiAgfCBweXRob24zIC1jICIKaW1wb3J0IHN5cywganNvbgpmb3IgaSBpbiBqc29uLmxvYWQoc3lzLnN0ZGluKVsnaXRlbXMnXToKICAgIHByaW50KGZcIiN7aVsnbnVtYmVyJ119ICB7aVsnc3RhdGUnXTo2fSAge2lbJ3RpdGxlJ119XCIpIgpgYGAKCiMjIDIuIENyZWF0aW5nIElzc3VlcwoKKipXaXRoIGdoOioqCgpgYGBiYXNoCmdoIGlzc3VlIGNyZWF0ZSBcCiAgLS10aXRsZSAiTG9naW4gcmVkaXJlY3QgaWdub3JlcyA/bmV4dD0gcGFyYW1ldGVyIiBcCiAgLS1ib2R5ICIjIyBEZXNjcmlwdGlvbgpBZnRlciBsb2dnaW5nIGluLCB1c2VycyBhbHdheXMgbGFuZCBvbiAvZGFzaGJvYXJkLgoKIyMgU3RlcHMgdG8gUmVwcm9kdWNlCjEuIE5hdmlnYXRlIHRvIC9zZXR0aW5ncyB3aGlsZSBsb2dnZWQgb3V0CjIuIEdldCByZWRpcmVjdGVkIHRvIC9sb2dpbj9uZXh0PS9zZXR0aW5ncwozLiBMb2cgaW4KNC4gQWN0dWFsOiByZWRpcmVjdGVkIHRvIC9kYXNoYm9hcmQgKHNob3VsZCBnbyB0byAvc2V0dGluZ3MpCgojIyBFeHBlY3RlZCBCZWhhdmlvcgpSZXNwZWN0IHRoZSA/bmV4dD0gcXVlcnkgcGFyYW1ldGVyLiIgXAogIC0tbGFiZWwgImJ1ZyxiYWNrZW5kIiBcCiAgLS1hc3NpZ25lZSAidXNlcm5hbWUiCmBgYAoKKipXaXRoIGN1cmw6KioKCmBgYGJhc2gKY3VybCAtcyAtWCBQT1NUIFwKICAtSCAiQXV0aG9yaXphdGlvbjogdG9rZW4gJEdJVEhVQl9UT0tFTiIgXAogIGh0dHBzOi8vYXBpLmdpdGh1Yi5jb20vcmVwb3MvJE9XTkVSLyRSRVBPL2lzc3VlcyBcCiAgLWQgJ3sKICAgICJ0aXRsZSI6ICJMb2dpbiByZWRpcmVjdCBpZ25vcmVzID9uZXh0PSBwYXJhbWV0ZXIiLAogICAgImJvZHkiOiAiIyMgRGVzY3JpcHRpb25cbkFmdGVyIGxvZ2dpbmcgaW4sIHVzZXJzIGFsd2F5cyBsYW5kIG9uIC9kYXNoYm9hcmQuXG5cbiMjIFN0ZXBzIHRvIFJlcHJvZHVjZVxuMS4gTmF2aWdhdGUgdG8gL3NldHRpbmdzIHdoaWxlIGxvZ2dlZCBvdXRcbjIuIEdldCByZWRpcmVjdGVkIHRvIC9sb2dpbj9uZXh0PS9zZXR0aW5nc1xuMy4gTG9nIGluXG40LiBBY3R1YWw6IHJlZGlyZWN0ZWQgdG8gL2Rhc2hib2FyZFxuXG4jIyBFeHBlY3RlZCBCZWhhdmlvclxuUmVzcGVjdCB0aGUgP25leHQ9IHF1ZXJ5IHBhcmFtZXRlci4iLAogICAgImxhYmVscyI6IFsiYnVnIiwgImJhY2tlbmQiXSwKICAgICJhc3NpZ25lZXMiOiBbInVzZXJuYW1lIl0KICB9JwpgYGAKCiMjIyBCdWcgUmVwb3J0IFRlbXBsYXRlCgpgYGAKIyMgQnVnIERlc2NyaXB0aW9uCjxXaGF0J3MgaGFwcGVuaW5nPgoKIyMgU3RlcHMgdG8gUmVwcm9kdWNlCjEuIDxzdGVwPgoyLiA8c3RlcD4KCiMjIEV4cGVjdGVkIEJlaGF2aW9yCjxXaGF0IHNob3VsZCBoYXBwZW4+CgojIyBBY3R1YWwgQmVoYXZpb3IKPFdoYXQgYWN0dWFsbHkgaGFwcGVucz4KCiMjIEVudmlyb25tZW50Ci0gT1M6IDxvcz4KLSBWZXJzaW9uOiA8dmVyc2lvbj4KYGBgCgojIyMgRmVhdHVyZSBSZXF1ZXN0IFRlbXBsYXRlCgpgYGAKIyMgRmVhdHVyZSBEZXNjcmlwdGlvbgo8V2hhdCB5b3Ugd2FudD4KCiMjIE1vdGl2YXRpb24KPFdoeSB0aGlzIHdvdWxkIGJlIHVzZWZ1bD4KCiMjIFByb3Bvc2VkIFNvbHV0aW9uCjxIb3cgaXQgY291bGQgd29yaz4KCiMjIEFsdGVybmF0aXZlcyBDb25zaWRlcmVkCjxPdGhlciBhcHByb2FjaGVzPgpgYGAKCiMjIDMuIE1hbmFnaW5nIElzc3VlcwoKIyMjIEFkZC9SZW1vdmUgTGFiZWxzCgoqKldpdGggZ2g6KioKCmBgYGJhc2gKZ2ggaXNzdWUgZWRpdCA0MiAtLWFkZC1sYWJlbCAicHJpb3JpdHk6aGlnaCxidWciCmdoIGlzc3VlIGVkaXQgNDIgLS1yZW1vdmUtbGFiZWwgIm5lZWRzLXRyaWFnZSIKYGBgCgoqKldpdGggY3VybDoqKgoKYGBgYmFzaAojIEFkZCBsYWJlbHMKY3VybCAtcyAtWCBQT1NUIFwKICAtSCAiQXV0aG9yaXphdGlvbjogdG9rZW4gJEdJVEhVQl9UT0tFTiIgXAogIGh0dHBzOi8vYXBpLmdpdGh1Yi5jb20vcmVwb3MvJE9XTkVSLyRSRVBPL2lzc3Vlcy80Mi9sYWJlbHMgXAogIC1kICd7ImxhYmVscyI6IFsicHJpb3JpdHk6aGlnaCIsICJidWciXX0nCgojIFJlbW92ZSBhIGxhYmVsCmN1cmwgLXMgLVggREVMRVRFIFwKICAtSCAiQXV0aG9yaXphdGlvbjogdG9rZW4gJEdJVEhVQl9UT0tFTiIgXAogIGh0dHBzOi8vYXBpLmdpdGh1Yi5jb20vcmVwb3MvJE9XTkVSLyRSRVBPL2lzc3Vlcy80Mi9sYWJlbHMvbmVlZHMtdHJpYWdlCgojIExpc3QgYXZhaWxhYmxlIGxhYmVscyBpbiB0aGUgcmVwbwpjdXJsIC1zIFwKICAtSCAiQXV0aG9yaXphdGlvbjogdG9rZW4gJEdJVEhVQl9UT0tFTiIgXAogIGh0dHBzOi8vYXBpLmdpdGh1Yi5jb20vcmVwb3MvJE9XTkVSLyRSRVBPL2xhYmVscyBcCiAgfCBweXRob24zIC1jICIKaW1wb3J0IHN5cywganNvbgpmb3IgbCBpbiBqc29uLmxvYWQoc3lzLnN0ZGluKToKICAgIHByaW50KGZcIiAge2xbJ25hbWUnXTozMH0gIHtsLmdldCgnZGVzY3JpcHRpb24nLCAnJyl9XCIpIgpgYGAKCiMjIyBBc3NpZ25tZW50CgoqKldpdGggZ2g6KioKCmBgYGJhc2gKZ2ggaXNzdWUgZWRpdCA0MiAtLWFkZC1hc3NpZ25lZSB1c2VybmFtZQpnaCBpc3N1ZSBlZGl0IDQyIC0tYWRkLWFzc2lnbmVlIEBtZQpgYGAKCioqV2l0aCBjdXJsOioqCgpgYGBiYXNoCmN1cmwgLXMgLVggUE9TVCBcCiAgLUggIkF1dGhvcml6YXRpb246IHRva2VuICRHSVRIVUJfVE9LRU4iIFwKICBodHRwczovL2FwaS5naXRodWIuY29tL3JlcG9zLyRPV05FUi8kUkVQTy9pc3N1ZXMvNDIvYXNzaWduZWVzIFwKICAtZCAneyJhc3NpZ25lZXMiOiBbInVzZXJuYW1lIl19JwpgYGAKCiMjIyBDb21tZW50aW5nCgoqKldpdGggZ2g6KioKCmBgYGJhc2gKZ2ggaXNzdWUgY29tbWVudCA0MiAtLWJvZHkgIkludmVzdGlnYXRlZCDigJQgcm9vdCBjYXVzZSBpcyBpbiBhdXRoIG1pZGRsZXdhcmUuIFdvcmtpbmcgb24gYSBmaXguIgpgYGAKCioqV2l0aCBjdXJsOioqCgpgYGBiYXNoCmN1cmwgLXMgLVggUE9TVCBcCiAgLUggIkF1dGhvcml6YXRpb246IHRva2VuICRHSVRIVUJfVE9LRU4iIFwKICBodHRwczovL2FwaS5naXRodWIuY29tL3JlcG9zLyRPV05FUi8kUkVQTy9pc3N1ZXMvNDIvY29tbWVudHMgXAogIC1kICd7ImJvZHkiOiAiSW52ZXN0aWdhdGVkIOKAlCByb290IGNhdXNlIGlzIGluIGF1dGggbWlkZGxld2FyZS4gV29ya2luZyBvbiBhIGZpeC4ifScKYGBgCgojIyMgQ2xvc2luZyBhbmQgUmVvcGVuaW5nCgoqKldpdGggZ2g6KioKCmBgYGJhc2gKZ2ggaXNzdWUgY2xvc2UgNDIKZ2ggaXNzdWUgY2xvc2UgNDIgLS1yZWFzb24gIm5vdCBwbGFubmVkIgpnaCBpc3N1ZSByZW9wZW4gNDIKYGBgCgoqKldpdGggY3VybDoqKgoKYGBgYmFzaAojIENsb3NlCmN1cmwgLXMgLVggUEFUQ0ggXAogIC1IICJBdXRob3JpemF0aW9uOiB0b2tlbiAkR0lUSFVCX1RPS0VOIiBcCiAgaHR0cHM6Ly9hcGkuZ2l0aHViLmNvbS9yZXBvcy8kT1dORVIvJFJFUE8vaXNzdWVzLzQyIFwKICAtZCAneyJzdGF0ZSI6ICJjbG9zZWQiLCAic3RhdGVfcmVhc29uIjogImNvbXBsZXRlZCJ9JwoKIyBSZW9wZW4KY3VybCAtcyAtWCBQQVRDSCBcCiAgLUggIkF1dGhvcml6YXRpb246IHRva2VuICRHSVRIVUJfVE9LRU4iIFwKICBodHRwczovL2FwaS5naXRodWIuY29tL3JlcG9zLyRPV05FUi8kUkVQTy9pc3N1ZXMvNDIgXAogIC1kICd7InN0YXRlIjogIm9wZW4ifScKYGBgCgojIyMgTGlua2luZyBJc3N1ZXMgdG8gUFJzCgpJc3N1ZXMgYXJlIGF1dG9tYXRpY2FsbHkgY2xvc2VkIHdoZW4gYSBQUiBtZXJnZXMgd2l0aCB0aGUgcmlnaHQga2V5d29yZHMgaW4gdGhlIGJvZHk6CgpgYGAKQ2xvc2VzICM0MgpGaXhlcyAjNDIKUmVzb2x2ZXMgIzQyCmBgYAoKVG8gY3JlYXRlIGEgYnJhbmNoIGZyb20gYW4gaXNzdWU6CgoqKldpdGggZ2g6KioKCmBgYGJhc2gKZ2ggaXNzdWUgZGV2ZWxvcCA0MiAtLWNoZWNrb3V0CmBgYAoKKipXaXRoIGdpdCAobWFudWFsIGVxdWl2YWxlbnQpOioqCgpgYGBiYXNoCmdpdCBjaGVja291dCBtYWluICYmIGdpdCBwdWxsIG9yaWdpbiBtYWluCmdpdCBjaGVja291dCAtYiBmaXgvaXNzdWUtNDItbG9naW4tcmVkaXJlY3QKYGBgCgojIyA0LiBJc3N1ZSBUcmlhZ2UgV29ya2Zsb3cKCldoZW4gYXNrZWQgdG8gdHJpYWdlIGlzc3VlczoKCjEuICoqTGlzdCB1bnRyaWFnZWQgaXNzdWVzOioqCgpgYGBiYXNoCiMgV2l0aCBnaApnaCBpc3N1ZSBsaXN0IC0tbGFiZWwgIm5lZWRzLXRyaWFnZSIgLS1zdGF0ZSBvcGVuCgojIFdpdGggY3VybApjdXJsIC1zIFwKICAtSCAiQXV0aG9yaXphdGlvbjogdG9rZW4gJEdJVEhVQl9UT0tFTiIgXAogICJodHRwczovL2FwaS5naXRodWIuY29tL3JlcG9zLyRPV05FUi8kUkVQTy9pc3N1ZXM/bGFiZWxzPW5lZWRzLXRyaWFnZSZzdGF0ZT1vcGVuIiBcCiAgfCBweXRob24zIC1jICIKaW1wb3J0IHN5cywganNvbgpmb3IgaSBpbiBqc29uLmxvYWQoc3lzLnN0ZGluKToKICAgIGlmICdwdWxsX3JlcXVlc3QnIG5vdCBpbiBpOgogICAgICAgIHByaW50KGZcIiN7aVsnbnVtYmVyJ119ICB7aVsndGl0bGUnXX1cIikiCmBgYAoKMi4gKipSZWFkIGFuZCBjYXRlZ29yaXplKiogZWFjaCBpc3N1ZSAodmlldyBkZXRhaWxzLCB1bmRlcnN0YW5kIHRoZSBidWcvZmVhdHVyZSkKCjMuICoqQXBwbHkgbGFiZWxzIGFuZCBwcmlvcml0eSoqIChzZWUgTWFuYWdpbmcgSXNzdWVzIGFib3ZlKQoKNC4gKipBc3NpZ24qKiBpZiB0aGUgb3duZXIgaXMgY2xlYXIKCjUuICoqQ29tbWVudCB3aXRoIHRyaWFnZSBub3RlcyoqIGlmIG5lZWRlZAoKIyMgNS4gQnVsayBPcGVyYXRpb25zCgpGb3IgYmF0Y2ggb3BlcmF0aW9ucywgY29tYmluZSBBUEkgY2FsbHMgd2l0aCBzaGVsbCBzY3JpcHRpbmc6CgoqKldpdGggZ2g6KioKCmBgYGJhc2gKIyBDbG9zZSBhbGwgaXNzdWVzIHdpdGggYSBzcGVjaWZpYyBsYWJlbApnaCBpc3N1ZSBsaXN0IC0tbGFiZWwgIndvbnRmaXgiIC0tanNvbiBudW1iZXIgLS1qcSAnLltdLm51bWJlcicgfCBcCiAgeGFyZ3MgLUkge30gZ2ggaXNzdWUgY2xvc2Uge30gLS1yZWFzb24gIm5vdCBwbGFubmVkIgpgYGAKCioqV2l0aCBjdXJsOioqCgpgYGBiYXNoCiMgTGlzdCBpc3N1ZSBudW1iZXJzIHdpdGggYSBsYWJlbCwgdGhlbiBjbG9zZSBlYWNoCmN1cmwgLXMgXAogIC1IICJBdXRob3JpemF0aW9uOiB0b2tlbiAkR0lUSFVCX1RPS0VOIiBcCiAgImh0dHBzOi8vYXBpLmdpdGh1Yi5jb20vcmVwb3MvJE9XTkVSLyRSRVBPL2lzc3Vlcz9sYWJlbHM9d29udGZpeCZzdGF0ZT1vcGVuIiBcCiAgfCBweXRob24zIC1jICJpbXBvcnQgc3lzLGpzb247IFtwcmludChpWydudW1iZXInXSkgZm9yIGkgaW4ganNvbi5sb2FkKHN5cy5zdGRpbildIiBcCiAgfCB3aGlsZSByZWFkIG51bTsgZG8KICAgIGN1cmwgLXMgLVggUEFUQ0ggXAogICAgICAtSCAiQXV0aG9yaXphdGlvbjogdG9rZW4gJEdJVEhVQl9UT0tFTiIgXAogICAgICBodHRwczovL2FwaS5naXRodWIuY29tL3JlcG9zLyRPV05FUi8kUkVQTy9pc3N1ZXMvJG51bSBcCiAgICAgIC1kICd7InN0YXRlIjogImNsb3NlZCIsICJzdGF0ZV9yZWFzb24iOiAibm90X3BsYW5uZWQifScKICAgIGVjaG8gIkNsb3NlZCAjJG51bSIKICBkb25lCmBgYAoKIyMgUXVpY2sgUmVmZXJlbmNlIFRhYmxlCgp8IEFjdGlvbiB8IGdoIHwgY3VybCBlbmRwb2ludCB8CnwtLS0tLS0tLXwtLS0tLXwtLS0tLS0tLS0tLS0tLXwKfCBMaXN0IGlzc3VlcyB8IGBnaCBpc3N1ZSBsaXN0YCB8IGBHRVQgL3JlcG9zL3tvfS97cn0vaXNzdWVzYCB8CnwgVmlldyBpc3N1ZSB8IGBnaCBpc3N1ZSB2aWV3IE5gIHwgYEdFVCAvcmVwb3Mve299L3tyfS9pc3N1ZXMvTmAgfAp8IENyZWF0ZSBpc3N1ZSB8IGBnaCBpc3N1ZSBjcmVhdGUgLi4uYCB8IGBQT1NUIC9yZXBvcy97b30ve3J9L2lzc3Vlc2AgfAp8IEFkZCBsYWJlbHMgfCBgZ2ggaXNzdWUgZWRpdCBOIC0tYWRkLWxhYmVsIC4uLmAgfCBgUE9TVCAvcmVwb3Mve299L3tyfS9pc3N1ZXMvTi9sYWJlbHNgIHwKfCBBc3NpZ24gfCBgZ2ggaXNzdWUgZWRpdCBOIC0tYWRkLWFzc2lnbmVlIC4uLmAgfCBgUE9TVCAvcmVwb3Mve299L3tyfS9pc3N1ZXMvTi9hc3NpZ25lZXNgIHwKfCBDb21tZW50IHwgYGdoIGlzc3VlIGNvbW1lbnQgTiAtLWJvZHkgLi4uYCB8IGBQT1NUIC9yZXBvcy97b30ve3J9L2lzc3Vlcy9OL2NvbW1lbnRzYCB8CnwgQ2xvc2UgfCBgZ2ggaXNzdWUgY2xvc2UgTmAgfCBgUEFUQ0ggL3JlcG9zL3tvfS97cn0vaXNzdWVzL05gIHwKfCBTZWFyY2ggfCBgZ2ggaXNzdWUgbGlzdCAtLXNlYXJjaCAiLi4uImAgfCBgR0VUIC9zZWFyY2gvaXNzdWVzP3E9Li4uYCB8Cg==
+---
+name: github-issues
+description: Create, manage, triage, and close GitHub issues. Search existing issues, add labels, assign people, and link to PRs. Works with gh CLI or falls back to git + GitHub REST API via curl.
+version: 1.1.0
+author: Hermes Agent
+license: MIT
+metadata:
+  hermes:
+    tags: [GitHub, Issues, Project-Management, Bug-Tracking, Triage]
+    related_skills: [github-auth, github-pr-workflow]
+---
+
+# GitHub Issues Management
+
+Create, search, triage, and manage GitHub issues. Each section shows `gh` first, then the `curl` fallback.
+
+## Prerequisites
+
+- Authenticated with GitHub (see `github-auth` skill)
+- Inside a git repo with a GitHub remote, or specify the repo explicitly
+
+### Setup
+
+```bash
+if command -v gh &>/dev/null && gh auth status &>/dev/null; then
+  AUTH="gh"
+else
+  AUTH="git"
+  if [ -z "$GITHUB_TOKEN" ]; then
+    if [ -f ~/.hermes/.env ] && grep -q "^GITHUB_TOKEN=" ~/.hermes/.env; then
+      GITHUB_TOKEN=$(grep "^GITHUB_TOKEN=" ~/.hermes/.env | head -1 | cut -d= -f2 | tr -d '\n\r')
+    elif grep -q "github.com" ~/.git-credentials 2>/dev/null; then
+      GITHUB_TOKEN=$(grep "github.com" ~/.git-credentials 2>/dev/null | head -1 | sed 's|https://[^:]*:\([^@]*\)@.*|\1|')
+    fi
+  fi
+fi
+
+REMOTE_URL=$(git remote get-url origin)
+OWNER_REPO=$(echo "$REMOTE_URL" | sed -E 's|.*github\.com[:/]||; s|\.git$||')
+OWNER=$(echo "$OWNER_REPO" | cut -d/ -f1)
+REPO=$(echo "$OWNER_REPO" | cut -d/ -f2)
+```
+
+---
+
+## 1. Viewing Issues
+
+**With gh:**
+
+```bash
+gh issue list
+gh issue list --state open --label "bug"
+gh issue list --assignee @me
+gh issue list --search "authentication error" --state all
+gh issue view 42
+```
+
+**With curl:**
+
+```bash
+# List open issues
+curl -s \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  "https://api.github.com/repos/$OWNER/$REPO/issues?state=open&per_page=20" \
+  | python3 -c "
+import sys, json
+for i in json.load(sys.stdin):
+    if 'pull_request' not in i:  # GitHub API returns PRs in /issues too
+        labels = ', '.join(l['name'] for l in i['labels'])
+        print(f\"#{i['number']:5}  {i['state']:6}  {labels:30}  {i['title']}\")"
+
+# Filter by label
+curl -s \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  "https://api.github.com/repos/$OWNER/$REPO/issues?state=open&labels=bug&per_page=20" \
+  | python3 -c "
+import sys, json
+for i in json.load(sys.stdin):
+    if 'pull_request' not in i:
+        print(f\"#{i['number']}  {i['title']}\")"
+
+# View a specific issue
+curl -s \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  https://api.github.com/repos/$OWNER/$REPO/issues/42 \
+  | python3 -c "
+import sys, json
+i = json.load(sys.stdin)
+labels = ', '.join(l['name'] for l in i['labels'])
+assignees = ', '.join(a['login'] for a in i['assignees'])
+print(f\"#{i['number']}: {i['title']}\")
+print(f\"State: {i['state']}  Labels: {labels}  Assignees: {assignees}\")
+print(f\"Author: {i['user']['login']}  Created: {i['created_at']}\")
+print(f\"\n{i['body']}\")"
+
+# Search issues
+curl -s \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  "https://api.github.com/search/issues?q=authentication+error+repo:$OWNER/$REPO" \
+  | python3 -c "
+import sys, json
+for i in json.load(sys.stdin)['items']:
+    print(f\"#{i['number']}  {i['state']:6}  {i['title']}\")"
+```
+
+## 2. Creating Issues
+
+**With gh:**
+
+```bash
+gh issue create \
+  --title "Login redirect ignores ?next= parameter" \
+  --body "## Description
+After logging in, users always land on /dashboard.
+
+## Steps to Reproduce
+1. Navigate to /settings while logged out
+2. Get redirected to /login?next=/settings
+3. Log in
+4. Actual: redirected to /dashboard (should go to /settings)
+
+## Expected Behavior
+Respect the ?next= query parameter." \
+  --label "bug,backend" \
+  --assignee "username"
+```
+
+**With curl:**
+
+```bash
+curl -s -X POST \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  https://api.github.com/repos/$OWNER/$REPO/issues \
+  -d '{
+    "title": "Login redirect ignores ?next= parameter",
+    "body": "## Description\nAfter logging in, users always land on /dashboard.\n\n## Steps to Reproduce\n1. Navigate to /settings while logged out\n2. Get redirected to /login?next=/settings\n3. Log in\n4. Actual: redirected to /dashboard\n\n## Expected Behavior\nRespect the ?next= query parameter.",
+    "labels": ["bug", "backend"],
+    "assignees": ["username"]
+  }'
+```
+
+### Bug Report Template
+
+```
+## Bug Description
+<What's happening>
+
+## Steps to Reproduce
+1. <step>
+2. <step>
+
+## Expected Behavior
+<What should happen>
+
+## Actual Behavior
+<What actually happens>
+
+## Environment
+- OS: <os>
+- Version: <version>
+```
+
+### Feature Request Template
+
+```
+## Feature Description
+<What you want>
+
+## Motivation
+<Why this would be useful>
+
+## Proposed Solution
+<How it could work>
+
+## Alternatives Considered
+<Other approaches>
+```
+
+## 3. Managing Issues
+
+### Add/Remove Labels
+
+**With gh:**
+
+```bash
+gh issue edit 42 --add-label "priority:high,bug"
+gh issue edit 42 --remove-label "needs-triage"
+```
+
+**With curl:**
+
+```bash
+# Add labels
+curl -s -X POST \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  https://api.github.com/repos/$OWNER/$REPO/issues/42/labels \
+  -d '{"labels": ["priority:high", "bug"]}'
+
+# Remove a label
+curl -s -X DELETE \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  https://api.github.com/repos/$OWNER/$REPO/issues/42/labels/needs-triage
+
+# List available labels in the repo
+curl -s \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  https://api.github.com/repos/$OWNER/$REPO/labels \
+  | python3 -c "
+import sys, json
+for l in json.load(sys.stdin):
+    print(f\"  {l['name']:30}  {l.get('description', '')}\")"
+```
+
+### Assignment
+
+**With gh:**
+
+```bash
+gh issue edit 42 --add-assignee username
+gh issue edit 42 --add-assignee @me
+```
+
+**With curl:**
+
+```bash
+curl -s -X POST \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  https://api.github.com/repos/$OWNER/$REPO/issues/42/assignees \
+  -d '{"assignees": ["username"]}'
+```
+
+### Commenting
+
+**With gh:**
+
+```bash
+gh issue comment 42 --body "Investigated — root cause is in auth middleware. Working on a fix."
+```
+
+**With curl:**
+
+```bash
+curl -s -X POST \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  https://api.github.com/repos/$OWNER/$REPO/issues/42/comments \
+  -d '{"body": "Investigated — root cause is in auth middleware. Working on a fix."}'
+```
+
+### Closing and Reopening
+
+**With gh:**
+
+```bash
+gh issue close 42
+gh issue close 42 --reason "not planned"
+gh issue reopen 42
+```
+
+**With curl:**
+
+```bash
+# Close
+curl -s -X PATCH \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  https://api.github.com/repos/$OWNER/$REPO/issues/42 \
+  -d '{"state": "closed", "state_reason": "completed"}'
+
+# Reopen
+curl -s -X PATCH \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  https://api.github.com/repos/$OWNER/$REPO/issues/42 \
+  -d '{"state": "open"}'
+```
+
+### Linking Issues to PRs
+
+Issues are automatically closed when a PR merges with the right keywords in the body:
+
+```
+Closes #42
+Fixes #42
+Resolves #42
+```
+
+To create a branch from an issue:
+
+**With gh:**
+
+```bash
+gh issue develop 42 --checkout
+```
+
+**With git (manual equivalent):**
+
+```bash
+git checkout main && git pull origin main
+git checkout -b fix/issue-42-login-redirect
+```
+
+## 4. Issue Triage Workflow
+
+When asked to triage issues:
+
+1. **List untriaged issues:**
+
+```bash
+# With gh
+gh issue list --label "needs-triage" --state open
+
+# With curl
+curl -s \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  "https://api.github.com/repos/$OWNER/$REPO/issues?labels=needs-triage&state=open" \
+  | python3 -c "
+import sys, json
+for i in json.load(sys.stdin):
+    if 'pull_request' not in i:
+        print(f\"#{i['number']}  {i['title']}\")"
+```
+
+2. **Read and categorize** each issue (view details, understand the bug/feature)
+
+3. **Apply labels and priority** (see Managing Issues above)
+
+4. **Assign** if the owner is clear
+
+5. **Comment with triage notes** if needed
+
+## 5. Bulk Operations
+
+For batch operations, combine API calls with shell scripting:
+
+**With gh:**
+
+```bash
+# Close all issues with a specific label
+gh issue list --label "wontfix" --json number --jq '.[].number' | \
+  xargs -I {} gh issue close {} --reason "not planned"
+```
+
+**With curl:**
+
+```bash
+# List issue numbers with a label, then close each
+curl -s \
+  -H "Authorization: token $GITHUB_TOKEN" \
+  "https://api.github.com/repos/$OWNER/$REPO/issues?labels=wontfix&state=open" \
+  | python3 -c "import sys,json; [print(i['number']) for i in json.load(sys.stdin)]" \
+  | while read num; do
+    curl -s -X PATCH \
+      -H "Authorization: token $GITHUB_TOKEN" \
+      https://api.github.com/repos/$OWNER/$REPO/issues/$num \
+      -d '{"state": "closed", "state_reason": "not_planned"}'
+    echo "Closed #$num"
+  done
+```
+
+## Quick Reference Table
+
+| Action | gh | curl endpoint |
+|--------|-----|--------------|
+| List issues | `gh issue list` | `GET /repos/{o}/{r}/issues` |
+| View issue | `gh issue view N` | `GET /repos/{o}/{r}/issues/N` |
+| Create issue | `gh issue create ...` | `POST /repos/{o}/{r}/issues` |
+| Add labels | `gh issue edit N --add-label ...` | `POST /repos/{o}/{r}/issues/N/labels` |
+| Assign | `gh issue edit N --add-assignee ...` | `POST /repos/{o}/{r}/issues/N/assignees` |
+| Comment | `gh issue comment N --body ...` | `POST /repos/{o}/{r}/issues/N/comments` |
+| Close | `gh issue close N` | `PATCH /repos/{o}/{r}/issues/N` |
+| Search | `gh issue list --search "..."` | `GET /search/issues?q=...` |

@@ -1,1 +1,205 @@
-IyBFZGl0aW5nIFByZXNlbnRhdGlvbnMKCiMjIFRlbXBsYXRlLUJhc2VkIFdvcmtmbG93CgpXaGVuIHVzaW5nIGFuIGV4aXN0aW5nIHByZXNlbnRhdGlvbiBhcyBhIHRlbXBsYXRlOgoKMS4gKipBbmFseXplIGV4aXN0aW5nIHNsaWRlcyoqOgogICBgYGBiYXNoCiAgIHB5dGhvbiBzY3JpcHRzL3RodW1ibmFpbC5weSB0ZW1wbGF0ZS5wcHR4CiAgIHB5dGhvbiAtbSBtYXJraXRkb3duIHRlbXBsYXRlLnBwdHgKICAgYGBgCiAgIFJldmlldyBgdGh1bWJuYWlscy5qcGdgIHRvIHNlZSBsYXlvdXRzLCBhbmQgbWFya2l0ZG93biBvdXRwdXQgdG8gc2VlIHBsYWNlaG9sZGVyIHRleHQuCgoyLiAqKlBsYW4gc2xpZGUgbWFwcGluZyoqOiBGb3IgZWFjaCBjb250ZW50IHNlY3Rpb24sIGNob29zZSBhIHRlbXBsYXRlIHNsaWRlLgoKICAg4pqg77iPICoqVVNFIFZBUklFRCBMQVlPVVRTKiog4oCUIG1vbm90b25vdXMgcHJlc2VudGF0aW9ucyBhcmUgYSBjb21tb24gZmFpbHVyZSBtb2RlLiBEb24ndCBkZWZhdWx0IHRvIGJhc2ljIHRpdGxlICsgYnVsbGV0IHNsaWRlcy4gQWN0aXZlbHkgc2VlayBvdXQ6CiAgIC0gTXVsdGktY29sdW1uIGxheW91dHMgKDItY29sdW1uLCAzLWNvbHVtbikKICAgLSBJbWFnZSArIHRleHQgY29tYmluYXRpb25zCiAgIC0gRnVsbC1ibGVlZCBpbWFnZXMgd2l0aCB0ZXh0IG92ZXJsYXkKICAgLSBRdW90ZSBvciBjYWxsb3V0IHNsaWRlcwogICAtIFNlY3Rpb24gZGl2aWRlcnMKICAgLSBTdGF0L251bWJlciBjYWxsb3V0cwogICAtIEljb24gZ3JpZHMgb3IgaWNvbiArIHRleHQgcm93cwoKICAgKipBdm9pZDoqKiBSZXBlYXRpbmcgdGhlIHNhbWUgdGV4dC1oZWF2eSBsYXlvdXQgZm9yIGV2ZXJ5IHNsaWRlLgoKICAgTWF0Y2ggY29udGVudCB0eXBlIHRvIGxheW91dCBzdHlsZSAoZS5nLiwga2V5IHBvaW50cyDihpIgYnVsbGV0IHNsaWRlLCB0ZWFtIGluZm8g4oaSIG11bHRpLWNvbHVtbiwgdGVzdGltb25pYWxzIOKGkiBxdW90ZSBzbGlkZSkuCgozLiAqKlVucGFjayoqOiBgcHl0aG9uIHNjcmlwdHMvb2ZmaWNlL3VucGFjay5weSB0ZW1wbGF0ZS5wcHR4IHVucGFja2VkL2AKCjQuICoqQnVpbGQgcHJlc2VudGF0aW9uKiogKGRvIHRoaXMgeW91cnNlbGYsIG5vdCB3aXRoIHN1YmFnZW50cyk6CiAgIC0gRGVsZXRlIHVud2FudGVkIHNsaWRlcyAocmVtb3ZlIGZyb20gYDxwOnNsZElkTHN0PmApCiAgIC0gRHVwbGljYXRlIHNsaWRlcyB5b3Ugd2FudCB0byByZXVzZSAoYGFkZF9zbGlkZS5weWApCiAgIC0gUmVvcmRlciBzbGlkZXMgaW4gYDxwOnNsZElkTHN0PmAKICAgLSAqKkNvbXBsZXRlIGFsbCBzdHJ1Y3R1cmFsIGNoYW5nZXMgYmVmb3JlIHN0ZXAgNSoqCgo1LiAqKkVkaXQgY29udGVudCoqOiBVcGRhdGUgdGV4dCBpbiBlYWNoIGBzbGlkZXtOfS54bWxgLgogICAqKlVzZSBzdWJhZ2VudHMgaGVyZSBpZiBhdmFpbGFibGUqKiDigJQgc2xpZGVzIGFyZSBzZXBhcmF0ZSBYTUwgZmlsZXMsIHNvIHN1YmFnZW50cyBjYW4gZWRpdCBpbiBwYXJhbGxlbC4KCjYuICoqQ2xlYW4qKjogYHB5dGhvbiBzY3JpcHRzL2NsZWFuLnB5IHVucGFja2VkL2AKCjcuICoqUGFjayoqOiBgcHl0aG9uIHNjcmlwdHMvb2ZmaWNlL3BhY2sucHkgdW5wYWNrZWQvIG91dHB1dC5wcHR4IC0tb3JpZ2luYWwgdGVtcGxhdGUucHB0eGAKCi0tLQoKIyMgU2NyaXB0cwoKfCBTY3JpcHQgfCBQdXJwb3NlIHwKfC0tLS0tLS0tfC0tLS0tLS0tLXwKfCBgdW5wYWNrLnB5YCB8IEV4dHJhY3QgYW5kIHByZXR0eS1wcmludCBQUFRYIHwKfCBgYWRkX3NsaWRlLnB5YCB8IER1cGxpY2F0ZSBzbGlkZSBvciBjcmVhdGUgZnJvbSBsYXlvdXQgfAp8IGBjbGVhbi5weWAgfCBSZW1vdmUgb3JwaGFuZWQgZmlsZXMgfAp8IGBwYWNrLnB5YCB8IFJlcGFjayB3aXRoIHZhbGlkYXRpb24gfAp8IGB0aHVtYm5haWwucHlgIHwgQ3JlYXRlIHZpc3VhbCBncmlkIG9mIHNsaWRlcyB8CgojIyMgdW5wYWNrLnB5CgpgYGBiYXNoCnB5dGhvbiBzY3JpcHRzL29mZmljZS91bnBhY2sucHkgaW5wdXQucHB0eCB1bnBhY2tlZC8KYGBgCgpFeHRyYWN0cyBQUFRYLCBwcmV0dHktcHJpbnRzIFhNTCwgZXNjYXBlcyBzbWFydCBxdW90ZXMuCgojIyMgYWRkX3NsaWRlLnB5CgpgYGBiYXNoCnB5dGhvbiBzY3JpcHRzL2FkZF9zbGlkZS5weSB1bnBhY2tlZC8gc2xpZGUyLnhtbCAgICAgICMgRHVwbGljYXRlIHNsaWRlCnB5dGhvbiBzY3JpcHRzL2FkZF9zbGlkZS5weSB1bnBhY2tlZC8gc2xpZGVMYXlvdXQyLnhtbCAjIEZyb20gbGF5b3V0CmBgYAoKUHJpbnRzIGA8cDpzbGRJZD5gIHRvIGFkZCB0byBgPHA6c2xkSWRMc3Q+YCBhdCBkZXNpcmVkIHBvc2l0aW9uLgoKIyMjIGNsZWFuLnB5CgpgYGBiYXNoCnB5dGhvbiBzY3JpcHRzL2NsZWFuLnB5IHVucGFja2VkLwpgYGAKClJlbW92ZXMgc2xpZGVzIG5vdCBpbiBgPHA6c2xkSWRMc3Q+YCwgdW5yZWZlcmVuY2VkIG1lZGlhLCBvcnBoYW5lZCByZWxzLgoKIyMjIHBhY2sucHkKCmBgYGJhc2gKcHl0aG9uIHNjcmlwdHMvb2ZmaWNlL3BhY2sucHkgdW5wYWNrZWQvIG91dHB1dC5wcHR4IC0tb3JpZ2luYWwgaW5wdXQucHB0eApgYGAKClZhbGlkYXRlcywgcmVwYWlycywgY29uZGVuc2VzIFhNTCwgcmUtZW5jb2RlcyBzbWFydCBxdW90ZXMuCgojIyMgdGh1bWJuYWlsLnB5CgpgYGBiYXNoCnB5dGhvbiBzY3JpcHRzL3RodW1ibmFpbC5weSBpbnB1dC5wcHR4IFtvdXRwdXRfcHJlZml4XSBbLS1jb2xzIE5dCmBgYAoKQ3JlYXRlcyBgdGh1bWJuYWlscy5qcGdgIHdpdGggc2xpZGUgZmlsZW5hbWVzIGFzIGxhYmVscy4gRGVmYXVsdCAzIGNvbHVtbnMsIG1heCAxMiBwZXIgZ3JpZC4KCioqVXNlIGZvciB0ZW1wbGF0ZSBhbmFseXNpcyBvbmx5KiogKGNob29zaW5nIGxheW91dHMpLiBGb3IgdmlzdWFsIFFBLCB1c2UgYHNvZmZpY2VgICsgYHBkZnRvcHBtYCB0byBjcmVhdGUgZnVsbC1yZXNvbHV0aW9uIGluZGl2aWR1YWwgc2xpZGUgaW1hZ2Vz4oCUc2VlIFNLSUxMLm1kLgoKLS0tCgojIyBTbGlkZSBPcGVyYXRpb25zCgpTbGlkZSBvcmRlciBpcyBpbiBgcHB0L3ByZXNlbnRhdGlvbi54bWxgIOKGkiBgPHA6c2xkSWRMc3Q+YC4KCioqUmVvcmRlcioqOiBSZWFycmFuZ2UgYDxwOnNsZElkPmAgZWxlbWVudHMuCgoqKkRlbGV0ZSoqOiBSZW1vdmUgYDxwOnNsZElkPmAsIHRoZW4gcnVuIGBjbGVhbi5weWAuCgoqKkFkZCoqOiBVc2UgYGFkZF9zbGlkZS5weWAuIE5ldmVyIG1hbnVhbGx5IGNvcHkgc2xpZGUgZmlsZXPigJR0aGUgc2NyaXB0IGhhbmRsZXMgbm90ZXMgcmVmZXJlbmNlcywgQ29udGVudF9UeXBlcy54bWwsIGFuZCByZWxhdGlvbnNoaXAgSURzIHRoYXQgbWFudWFsIGNvcHlpbmcgbWlzc2VzLgoKLS0tCgojIyBFZGl0aW5nIENvbnRlbnQKCioqU3ViYWdlbnRzOioqIElmIGF2YWlsYWJsZSwgdXNlIHRoZW0gaGVyZSAoYWZ0ZXIgY29tcGxldGluZyBzdGVwIDQpLiBFYWNoIHNsaWRlIGlzIGEgc2VwYXJhdGUgWE1MIGZpbGUsIHNvIHN1YmFnZW50cyBjYW4gZWRpdCBpbiBwYXJhbGxlbC4gSW4geW91ciBwcm9tcHQgdG8gc3ViYWdlbnRzLCBpbmNsdWRlOgotIFRoZSBzbGlkZSBmaWxlIHBhdGgocykgdG8gZWRpdAotICoqIlVzZSB0aGUgRWRpdCB0b29sIGZvciBhbGwgY2hhbmdlcyIqKgotIFRoZSBmb3JtYXR0aW5nIHJ1bGVzIGFuZCBjb21tb24gcGl0ZmFsbHMgYmVsb3cKCkZvciBlYWNoIHNsaWRlOgoxLiBSZWFkIHRoZSBzbGlkZSdzIFhNTAoyLiBJZGVudGlmeSBBTEwgcGxhY2Vob2xkZXIgY29udGVudOKAlHRleHQsIGltYWdlcywgY2hhcnRzLCBpY29ucywgY2FwdGlvbnMKMy4gUmVwbGFjZSBlYWNoIHBsYWNlaG9sZGVyIHdpdGggZmluYWwgY29udGVudAoKKipVc2UgdGhlIEVkaXQgdG9vbCwgbm90IHNlZCBvciBQeXRob24gc2NyaXB0cy4qKiBUaGUgRWRpdCB0b29sIGZvcmNlcyBzcGVjaWZpY2l0eSBhYm91dCB3aGF0IHRvIHJlcGxhY2UgYW5kIHdoZXJlLCB5aWVsZGluZyBiZXR0ZXIgcmVsaWFiaWxpdHkuCgojIyMgRm9ybWF0dGluZyBSdWxlcwoKLSAqKkJvbGQgYWxsIGhlYWRlcnMsIHN1YmhlYWRpbmdzLCBhbmQgaW5saW5lIGxhYmVscyoqOiBVc2UgYGI9IjEiYCBvbiBgPGE6clByPmAuIFRoaXMgaW5jbHVkZXM6CiAgLSBTbGlkZSB0aXRsZXMKICAtIFNlY3Rpb24gaGVhZGVycyB3aXRoaW4gYSBzbGlkZQogIC0gSW5saW5lIGxhYmVscyBsaWtlIChlLmcuOiAiU3RhdHVzOiIsICJEZXNjcmlwdGlvbjoiKSBhdCB0aGUgc3RhcnQgb2YgYSBsaW5lCi0gKipOZXZlciB1c2UgdW5pY29kZSBidWxsZXRzICjigKIpKio6IFVzZSBwcm9wZXIgbGlzdCBmb3JtYXR0aW5nIHdpdGggYDxhOmJ1Q2hhcj5gIG9yIGA8YTpidUF1dG9OdW0+YAotICoqQnVsbGV0IGNvbnNpc3RlbmN5Kio6IExldCBidWxsZXRzIGluaGVyaXQgZnJvbSB0aGUgbGF5b3V0LiBPbmx5IHNwZWNpZnkgYDxhOmJ1Q2hhcj5gIG9yIGA8YTpidU5vbmU+YC4KCi0tLQoKIyMgQ29tbW9uIFBpdGZhbGxzCgojIyMgVGVtcGxhdGUgQWRhcHRhdGlvbgoKV2hlbiBzb3VyY2UgY29udGVudCBoYXMgZmV3ZXIgaXRlbXMgdGhhbiB0aGUgdGVtcGxhdGU6Ci0gKipSZW1vdmUgZXhjZXNzIGVsZW1lbnRzIGVudGlyZWx5KiogKGltYWdlcywgc2hhcGVzLCB0ZXh0IGJveGVzKSwgZG9uJ3QganVzdCBjbGVhciB0ZXh0Ci0gQ2hlY2sgZm9yIG9ycGhhbmVkIHZpc3VhbHMgYWZ0ZXIgY2xlYXJpbmcgdGV4dCBjb250ZW50Ci0gUnVuIHZpc3VhbCBRQSB0byBjYXRjaCBtaXNtYXRjaGVkIGNvdW50cwoKV2hlbiByZXBsYWNpbmcgdGV4dCB3aXRoIGRpZmZlcmVudCBsZW5ndGggY29udGVudDoKLSAqKlNob3J0ZXIgcmVwbGFjZW1lbnRzKio6IFVzdWFsbHkgc2FmZQotICoqTG9uZ2VyIHJlcGxhY2VtZW50cyoqOiBNYXkgb3ZlcmZsb3cgb3Igd3JhcCB1bmV4cGVjdGVkbHkKLSBUZXN0IHdpdGggdmlzdWFsIFFBIGFmdGVyIHRleHQgY2hhbmdlcwotIENvbnNpZGVyIHRydW5jYXRpbmcgb3Igc3BsaXR0aW5nIGNvbnRlbnQgdG8gZml0IHRoZSB0ZW1wbGF0ZSdzIGRlc2lnbiBjb25zdHJhaW50cwoKKipUZW1wbGF0ZSBzbG90cyDiiaAgU291cmNlIGl0ZW1zKio6IElmIHRlbXBsYXRlIGhhcyA0IHRlYW0gbWVtYmVycyBidXQgc291cmNlIGhhcyAzIHVzZXJzLCBkZWxldGUgdGhlIDR0aCBtZW1iZXIncyBlbnRpcmUgZ3JvdXAgKGltYWdlICsgdGV4dCBib3hlcyksIG5vdCBqdXN0IHRoZSB0ZXh0LgoKIyMjIE11bHRpLUl0ZW0gQ29udGVudAoKSWYgc291cmNlIGhhcyBtdWx0aXBsZSBpdGVtcyAobnVtYmVyZWQgbGlzdHMsIG11bHRpcGxlIHNlY3Rpb25zKSwgY3JlYXRlIHNlcGFyYXRlIGA8YTpwPmAgZWxlbWVudHMgZm9yIGVhY2gg4oCUICoqbmV2ZXIgY29uY2F0ZW5hdGUgaW50byBvbmUgc3RyaW5nKiouCgoqKuKdjCBXUk9ORyoqIOKAlCBhbGwgaXRlbXMgaW4gb25lIHBhcmFncmFwaDoKYGBgeG1sCjxhOnA+CiAgPGE6cj48YTpyUHIgLi4uLz48YTp0PlN0ZXAgMTogRG8gdGhlIGZpcnN0IHRoaW5nLiBTdGVwIDI6IERvIHRoZSBzZWNvbmQgdGhpbmcuPC9hOnQ+PC9hOnI+CjwvYTpwPgpgYGAKCioq4pyFIENPUlJFQ1QqKiDigJQgc2VwYXJhdGUgcGFyYWdyYXBocyB3aXRoIGJvbGQgaGVhZGVyczoKYGBgeG1sCjxhOnA+CiAgPGE6cFByIGFsZ249ImwiPjxhOmxuU3BjPjxhOnNwY1B0cyB2YWw9IjM5MTkiLz48L2E6bG5TcGM+PC9hOnBQcj4KICA8YTpyPjxhOnJQciBsYW5nPSJlbi1VUyIgc3o9IjI3OTkiIGI9IjEiIC4uLi8+PGE6dD5TdGVwIDE8L2E6dD48L2E6cj4KPC9hOnA+CjxhOnA+CiAgPGE6cFByIGFsZ249ImwiPjxhOmxuU3BjPjxhOnNwY1B0cyB2YWw9IjM5MTkiLz48L2E6bG5TcGM+PC9hOnBQcj4KICA8YTpyPjxhOnJQciBsYW5nPSJlbi1VUyIgc3o9IjI3OTkiIC4uLi8+PGE6dD5EbyB0aGUgZmlyc3QgdGhpbmcuPC9hOnQ+PC9hOnI+CjwvYTpwPgo8YTpwPgogIDxhOnBQciBhbGduPSJsIj48YTpsblNwYz48YTpzcGNQdHMgdmFsPSIzOTE5Ii8+PC9hOmxuU3BjPjwvYTpwUHI+CiAgPGE6cj48YTpyUHIgbGFuZz0iZW4tVVMiIHN6PSIyNzk5IiBiPSIxIiAuLi4vPjxhOnQ+U3RlcCAyPC9hOnQ+PC9hOnI+CjwvYTpwPgo8IS0tIGNvbnRpbnVlIHBhdHRlcm4gLS0+CmBgYAoKQ29weSBgPGE6cFByPmAgZnJvbSB0aGUgb3JpZ2luYWwgcGFyYWdyYXBoIHRvIHByZXNlcnZlIGxpbmUgc3BhY2luZy4gVXNlIGBiPSIxImAgb24gaGVhZGVycy4KCiMjIyBTbWFydCBRdW90ZXMKCkhhbmRsZWQgYXV0b21hdGljYWxseSBieSB1bnBhY2svcGFjay4gQnV0IHRoZSBFZGl0IHRvb2wgY29udmVydHMgc21hcnQgcXVvdGVzIHRvIEFTQ0lJLgoKKipXaGVuIGFkZGluZyBuZXcgdGV4dCB3aXRoIHF1b3RlcywgdXNlIFhNTCBlbnRpdGllczoqKgoKYGBgeG1sCjxhOnQ+dGhlICYjeDIwMUM7QWdyZWVtZW50JiN4MjAxRDs8L2E6dD4KYGBgCgp8IENoYXJhY3RlciB8IE5hbWUgfCBVbmljb2RlIHwgWE1MIEVudGl0eSB8CnwtLS0tLS0tLS0tLXwtLS0tLS18LS0tLS0tLS0tfC0tLS0tLS0tLS0tLXwKfCBg4oCcYCB8IExlZnQgZG91YmxlIHF1b3RlIHwgVSsyMDFDIHwgYCYjeDIwMUM7YCB8CnwgYOKAnWAgfCBSaWdodCBkb3VibGUgcXVvdGUgfCBVKzIwMUQgfCBgJiN4MjAxRDtgIHwKfCBg4oCYYCB8IExlZnQgc2luZ2xlIHF1b3RlIHwgVSsyMDE4IHwgYCYjeDIwMTg7YCB8CnwgYOKAmWAgfCBSaWdodCBzaW5nbGUgcXVvdGUgfCBVKzIwMTkgfCBgJiN4MjAxOTtgIHwKCiMjIyBPdGhlcgoKLSAqKldoaXRlc3BhY2UqKjogVXNlIGB4bWw6c3BhY2U9InByZXNlcnZlImAgb24gYDxhOnQ+YCB3aXRoIGxlYWRpbmcvdHJhaWxpbmcgc3BhY2VzCi0gKipYTUwgcGFyc2luZyoqOiBVc2UgYGRlZnVzZWR4bWwubWluaWRvbWAsIG5vdCBgeG1sLmV0cmVlLkVsZW1lbnRUcmVlYCAoY29ycnVwdHMgbmFtZXNwYWNlcykK
+# Editing Presentations
+
+## Template-Based Workflow
+
+When using an existing presentation as a template:
+
+1. **Analyze existing slides**:
+   ```bash
+   python scripts/thumbnail.py template.pptx
+   python -m markitdown template.pptx
+   ```
+   Review `thumbnails.jpg` to see layouts, and markitdown output to see placeholder text.
+
+2. **Plan slide mapping**: For each content section, choose a template slide.
+
+   ⚠️ **USE VARIED LAYOUTS** — monotonous presentations are a common failure mode. Don't default to basic title + bullet slides. Actively seek out:
+   - Multi-column layouts (2-column, 3-column)
+   - Image + text combinations
+   - Full-bleed images with text overlay
+   - Quote or callout slides
+   - Section dividers
+   - Stat/number callouts
+   - Icon grids or icon + text rows
+
+   **Avoid:** Repeating the same text-heavy layout for every slide.
+
+   Match content type to layout style (e.g., key points → bullet slide, team info → multi-column, testimonials → quote slide).
+
+3. **Unpack**: `python scripts/office/unpack.py template.pptx unpacked/`
+
+4. **Build presentation** (do this yourself, not with subagents):
+   - Delete unwanted slides (remove from `<p:sldIdLst>`)
+   - Duplicate slides you want to reuse (`add_slide.py`)
+   - Reorder slides in `<p:sldIdLst>`
+   - **Complete all structural changes before step 5**
+
+5. **Edit content**: Update text in each `slide{N}.xml`.
+   **Use subagents here if available** — slides are separate XML files, so subagents can edit in parallel.
+
+6. **Clean**: `python scripts/clean.py unpacked/`
+
+7. **Pack**: `python scripts/office/pack.py unpacked/ output.pptx --original template.pptx`
+
+---
+
+## Scripts
+
+| Script | Purpose |
+|--------|---------|
+| `unpack.py` | Extract and pretty-print PPTX |
+| `add_slide.py` | Duplicate slide or create from layout |
+| `clean.py` | Remove orphaned files |
+| `pack.py` | Repack with validation |
+| `thumbnail.py` | Create visual grid of slides |
+
+### unpack.py
+
+```bash
+python scripts/office/unpack.py input.pptx unpacked/
+```
+
+Extracts PPTX, pretty-prints XML, escapes smart quotes.
+
+### add_slide.py
+
+```bash
+python scripts/add_slide.py unpacked/ slide2.xml      # Duplicate slide
+python scripts/add_slide.py unpacked/ slideLayout2.xml # From layout
+```
+
+Prints `<p:sldId>` to add to `<p:sldIdLst>` at desired position.
+
+### clean.py
+
+```bash
+python scripts/clean.py unpacked/
+```
+
+Removes slides not in `<p:sldIdLst>`, unreferenced media, orphaned rels.
+
+### pack.py
+
+```bash
+python scripts/office/pack.py unpacked/ output.pptx --original input.pptx
+```
+
+Validates, repairs, condenses XML, re-encodes smart quotes.
+
+### thumbnail.py
+
+```bash
+python scripts/thumbnail.py input.pptx [output_prefix] [--cols N]
+```
+
+Creates `thumbnails.jpg` with slide filenames as labels. Default 3 columns, max 12 per grid.
+
+**Use for template analysis only** (choosing layouts). For visual QA, use `soffice` + `pdftoppm` to create full-resolution individual slide images—see SKILL.md.
+
+---
+
+## Slide Operations
+
+Slide order is in `ppt/presentation.xml` → `<p:sldIdLst>`.
+
+**Reorder**: Rearrange `<p:sldId>` elements.
+
+**Delete**: Remove `<p:sldId>`, then run `clean.py`.
+
+**Add**: Use `add_slide.py`. Never manually copy slide files—the script handles notes references, Content_Types.xml, and relationship IDs that manual copying misses.
+
+---
+
+## Editing Content
+
+**Subagents:** If available, use them here (after completing step 4). Each slide is a separate XML file, so subagents can edit in parallel. In your prompt to subagents, include:
+- The slide file path(s) to edit
+- **"Use the Edit tool for all changes"**
+- The formatting rules and common pitfalls below
+
+For each slide:
+1. Read the slide's XML
+2. Identify ALL placeholder content—text, images, charts, icons, captions
+3. Replace each placeholder with final content
+
+**Use the Edit tool, not sed or Python scripts.** The Edit tool forces specificity about what to replace and where, yielding better reliability.
+
+### Formatting Rules
+
+- **Bold all headers, subheadings, and inline labels**: Use `b="1"` on `<a:rPr>`. This includes:
+  - Slide titles
+  - Section headers within a slide
+  - Inline labels like (e.g.: "Status:", "Description:") at the start of a line
+- **Never use unicode bullets (•)**: Use proper list formatting with `<a:buChar>` or `<a:buAutoNum>`
+- **Bullet consistency**: Let bullets inherit from the layout. Only specify `<a:buChar>` or `<a:buNone>`.
+
+---
+
+## Common Pitfalls
+
+### Template Adaptation
+
+When source content has fewer items than the template:
+- **Remove excess elements entirely** (images, shapes, text boxes), don't just clear text
+- Check for orphaned visuals after clearing text content
+- Run visual QA to catch mismatched counts
+
+When replacing text with different length content:
+- **Shorter replacements**: Usually safe
+- **Longer replacements**: May overflow or wrap unexpectedly
+- Test with visual QA after text changes
+- Consider truncating or splitting content to fit the template's design constraints
+
+**Template slots ≠ Source items**: If template has 4 team members but source has 3 users, delete the 4th member's entire group (image + text boxes), not just the text.
+
+### Multi-Item Content
+
+If source has multiple items (numbered lists, multiple sections), create separate `<a:p>` elements for each — **never concatenate into one string**.
+
+**❌ WRONG** — all items in one paragraph:
+```xml
+<a:p>
+  <a:r><a:rPr .../><a:t>Step 1: Do the first thing. Step 2: Do the second thing.</a:t></a:r>
+</a:p>
+```
+
+**✅ CORRECT** — separate paragraphs with bold headers:
+```xml
+<a:p>
+  <a:pPr algn="l"><a:lnSpc><a:spcPts val="3919"/></a:lnSpc></a:pPr>
+  <a:r><a:rPr lang="en-US" sz="2799" b="1" .../><a:t>Step 1</a:t></a:r>
+</a:p>
+<a:p>
+  <a:pPr algn="l"><a:lnSpc><a:spcPts val="3919"/></a:lnSpc></a:pPr>
+  <a:r><a:rPr lang="en-US" sz="2799" .../><a:t>Do the first thing.</a:t></a:r>
+</a:p>
+<a:p>
+  <a:pPr algn="l"><a:lnSpc><a:spcPts val="3919"/></a:lnSpc></a:pPr>
+  <a:r><a:rPr lang="en-US" sz="2799" b="1" .../><a:t>Step 2</a:t></a:r>
+</a:p>
+<!-- continue pattern -->
+```
+
+Copy `<a:pPr>` from the original paragraph to preserve line spacing. Use `b="1"` on headers.
+
+### Smart Quotes
+
+Handled automatically by unpack/pack. But the Edit tool converts smart quotes to ASCII.
+
+**When adding new text with quotes, use XML entities:**
+
+```xml
+<a:t>the &#x201C;Agreement&#x201D;</a:t>
+```
+
+| Character | Name | Unicode | XML Entity |
+|-----------|------|---------|------------|
+| `“` | Left double quote | U+201C | `&#x201C;` |
+| `”` | Right double quote | U+201D | `&#x201D;` |
+| `‘` | Left single quote | U+2018 | `&#x2018;` |
+| `’` | Right single quote | U+2019 | `&#x2019;` |
+
+### Other
+
+- **Whitespace**: Use `xml:space="preserve"` on `<a:t>` with leading/trailing spaces
+- **XML parsing**: Use `defusedxml.minidom`, not `xml.etree.ElementTree` (corrupts namespaces)

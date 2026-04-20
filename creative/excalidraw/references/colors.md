@@ -1,1 +1,44 @@
-IyBFeGNhbGlkcmF3IENvbG9yIFBhbGV0dGUKClVzZSB0aGVzZSBjb2xvcnMgY29uc2lzdGVudGx5IGFjcm9zcyBkaWFncmFtcy4KCiMjIFByaW1hcnkgQ29sb3JzIChmb3Igc3Ryb2tlcywgYXJyb3dzLCBhbmQgYWNjZW50cykKCnwgTmFtZSB8IEhleCB8IFVzZSB8CnwtLS0tLS18LS0tLS18LS0tLS18CnwgQmx1ZSB8IGAjNGE5ZWVkYCB8IFByaW1hcnkgYWN0aW9ucywgbGlua3MsIGRhdGEgc2VyaWVzIDEgfAp8IEFtYmVyIHwgYCNmNTllMGJgIHwgV2FybmluZ3MsIGhpZ2hsaWdodHMsIGRhdGEgc2VyaWVzIDIgfAp8IEdyZWVuIHwgYCMyMmM1NWVgIHwgU3VjY2VzcywgcG9zaXRpdmUsIGRhdGEgc2VyaWVzIDMgfAp8IFJlZCB8IGAjZWY0NDQ0YCB8IEVycm9ycywgbmVnYXRpdmUsIGRhdGEgc2VyaWVzIDQgfAp8IFB1cnBsZSB8IGAjOGI1Y2Y2YCB8IEFjY2VudHMsIHNwZWNpYWwgaXRlbXMsIGRhdGEgc2VyaWVzIDUgfAp8IFBpbmsgfCBgI2VjNDg5OWAgfCBEZWNvcmF0aXZlLCBkYXRhIHNlcmllcyA2IHwKfCBDeWFuIHwgYCMwNmI2ZDRgIHwgSW5mbywgc2Vjb25kYXJ5LCBkYXRhIHNlcmllcyA3IHwKfCBMaW1lIHwgYCM4NGNjMTZgIHwgRXh0cmEsIGRhdGEgc2VyaWVzIDggfAoKIyMgUGFzdGVsIEZpbGxzIChmb3Igc2hhcGUgYmFja2dyb3VuZHMpCgp8IENvbG9yIHwgSGV4IHwgR29vZCBGb3IgfAp8LS0tLS0tLXwtLS0tLXwtLS0tLS0tLS0tfAp8IExpZ2h0IEJsdWUgfCBgI2E1ZDhmZmAgfCBJbnB1dCwgc291cmNlcywgcHJpbWFyeSBub2RlcyB8CnwgTGlnaHQgR3JlZW4gfCBgI2IyZjJiYmAgfCBTdWNjZXNzLCBvdXRwdXQsIGNvbXBsZXRlZCB8CnwgTGlnaHQgT3JhbmdlIHwgYCNmZmQ4YThgIHwgV2FybmluZywgcGVuZGluZywgZXh0ZXJuYWwgfAp8IExpZ2h0IFB1cnBsZSB8IGAjZDBiZmZmYCB8IFByb2Nlc3NpbmcsIG1pZGRsZXdhcmUsIHNwZWNpYWwgfAp8IExpZ2h0IFJlZCB8IGAjZmZjOWM5YCB8IEVycm9yLCBjcml0aWNhbCwgYWxlcnRzIHwKfCBMaWdodCBZZWxsb3cgfCBgI2ZmZjNiZmAgfCBOb3RlcywgZGVjaXNpb25zLCBwbGFubmluZyB8CnwgTGlnaHQgVGVhbCB8IGAjYzNmYWU4YCB8IFN0b3JhZ2UsIGRhdGEsIG1lbW9yeSB8CnwgTGlnaHQgUGluayB8IGAjZWViZWZhYCB8IEFuYWx5dGljcywgbWV0cmljcyB8CgojIyBCYWNrZ3JvdW5kIFpvbmVzICh1c2Ugd2l0aCBvcGFjaXR5OiAzMC0zNSBmb3IgbGF5ZXJlZCBkaWFncmFtcykKCnwgQ29sb3IgfCBIZXggfCBHb29kIEZvciB8CnwtLS0tLS0tfC0tLS0tfC0tLS0tLS0tLS18CnwgQmx1ZSB6b25lIHwgYCNkYmU0ZmZgIHwgVUkgLyBmcm9udGVuZCBsYXllciB8CnwgUHVycGxlIHpvbmUgfCBgI2U1ZGJmZmAgfCBMb2dpYyAvIGFnZW50IGxheWVyIHwKfCBHcmVlbiB6b25lIHwgYCNkM2Y5ZDhgIHwgRGF0YSAvIHRvb2wgbGF5ZXIgfAoKIyMgVGV4dCBDb250cmFzdCBSdWxlcwoKLSAqKk9uIHdoaXRlIGJhY2tncm91bmRzKio6IG1pbmltdW0gdGV4dCBjb2xvciBpcyBgIzc1NzU3NWAuIERlZmF1bHQgYCMxZTFlMWVgIGlzIGJlc3QuCi0gKipDb2xvcmVkIHRleHQgb24gbGlnaHQgZmlsbHMqKjogdXNlIGRhcmsgdmFyaWFudHMgKGAjMTU4MDNkYCBub3QgYCMyMmM1NWVgLCBgIzI1NjNlYmAgbm90IGAjNGE5ZWVkYCkKLSAqKldoaXRlIHRleHQqKjogb25seSBvbiBkYXJrIGJhY2tncm91bmRzIChgIzlhNTAzMGAgbm90IGAjYzQ3OTViYCkKLSAqKk5ldmVyKio6IGxpZ2h0IGdyYXkgKGAjYjBiMGIwYCwgYCM5OTlgKSBvbiB3aGl0ZSAtLSB1bnJlYWRhYmxlCg==
+# Excalidraw Color Palette
+
+Use these colors consistently across diagrams.
+
+## Primary Colors (for strokes, arrows, and accents)
+
+| Name | Hex | Use |
+|------|-----|-----|
+| Blue | `#4a9eed` | Primary actions, links, data series 1 |
+| Amber | `#f59e0b` | Warnings, highlights, data series 2 |
+| Green | `#22c55e` | Success, positive, data series 3 |
+| Red | `#ef4444` | Errors, negative, data series 4 |
+| Purple | `#8b5cf6` | Accents, special items, data series 5 |
+| Pink | `#ec4899` | Decorative, data series 6 |
+| Cyan | `#06b6d4` | Info, secondary, data series 7 |
+| Lime | `#84cc16` | Extra, data series 8 |
+
+## Pastel Fills (for shape backgrounds)
+
+| Color | Hex | Good For |
+|-------|-----|----------|
+| Light Blue | `#a5d8ff` | Input, sources, primary nodes |
+| Light Green | `#b2f2bb` | Success, output, completed |
+| Light Orange | `#ffd8a8` | Warning, pending, external |
+| Light Purple | `#d0bfff` | Processing, middleware, special |
+| Light Red | `#ffc9c9` | Error, critical, alerts |
+| Light Yellow | `#fff3bf` | Notes, decisions, planning |
+| Light Teal | `#c3fae8` | Storage, data, memory |
+| Light Pink | `#eebefa` | Analytics, metrics |
+
+## Background Zones (use with opacity: 30-35 for layered diagrams)
+
+| Color | Hex | Good For |
+|-------|-----|----------|
+| Blue zone | `#dbe4ff` | UI / frontend layer |
+| Purple zone | `#e5dbff` | Logic / agent layer |
+| Green zone | `#d3f9d8` | Data / tool layer |
+
+## Text Contrast Rules
+
+- **On white backgrounds**: minimum text color is `#757575`. Default `#1e1e1e` is best.
+- **Colored text on light fills**: use dark variants (`#15803d` not `#22c55e`, `#2563eb` not `#4a9eed`)
+- **White text**: only on dark backgrounds (`#9a5030` not `#c4795b`)
+- **Never**: light gray (`#b0b0b0`, `#999`) on white -- unreadable

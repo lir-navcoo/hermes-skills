@@ -1,1 +1,532 @@
-IyBUcm91Ymxlc2hvb3RpbmcKCiMjIFBlcmZvcm1hbmNlCgojIyMgU3RlcCBaZXJvIOKAlCBEaXNhYmxlIEZFUwoKVGhlIEZyaWVuZGx5IEVycm9yIFN5c3RlbSAoRkVTKSBhZGRzIG1hc3NpdmUgb3ZlcmhlYWQg4oCUIHVwIHRvIDEweCBzbG93ZG93bi4gRGlzYWJsZSBpdCBpbiBldmVyeSBwcm9kdWN0aW9uIHNrZXRjaDoKCmBgYGphdmFzY3JpcHQKLy8gQkVGT1JFIGFueSBwNSBjb2RlCnA1LmRpc2FibGVGcmllbmRseUVycm9ycyA9IHRydWU7CgovLyBPciB1c2UgcDUubWluLmpzIGluc3RlYWQgb2YgcDUuanMg4oCUIEZFUyBpcyBzdHJpcHBlZCBmcm9tIG1pbmlmaWVkIGJ1aWxkCmBgYAoKIyMjIFN0ZXAgT25lIOKAlCBwaXhlbERlbnNpdHkoMSkKClJldGluYS9IaURQSSBkaXNwbGF5cyBkZWZhdWx0IHRvIDJ4IG9yIDN4IGRlbnNpdHksIG11bHRpcGx5aW5nIHBpeGVsIGNvdW50IGJ5IDQtOXg6CgpgYGBqYXZhc2NyaXB0CmZ1bmN0aW9uIHNldHVwKCkgewogIHBpeGVsRGVuc2l0eSgxKTsgICAgICAgIC8vIGZvcmNlIDE6MSDigJQgYWx3YXlzIGRvIHRoaXMgZmlyc3QKICBjcmVhdGVDYW52YXMoMTkyMCwgMTA4MCk7Cn0KYGBgCgojIyMgVXNlIE1hdGguKiBpbiBIb3QgTG9vcHMKCnA1J3MgYHNpbigpYCwgYGNvcygpYCwgYHJhbmRvbSgpYCwgYG1pbigpYCwgYG1heCgpYCwgYGFicygpYCBhcmUgd3JhcHBlciBmdW5jdGlvbnMgd2l0aCBvdmVyaGVhZC4gSW4gaG90IGxvb3BzICh0aG91c2FuZHMgb2YgaXRlcmF0aW9ucyBwZXIgZnJhbWUpLCB1c2UgbmF0aXZlIGBNYXRoLipgOgoKYGBgamF2YXNjcmlwdAovLyBTTE9XIOKAlCBwNSB3cmFwcGVycwpmb3IgKGxldCBwIG9mIHBhcnRpY2xlcykgewogIGxldCBhID0gc2luKHAuYW5nbGUpOwogIGxldCBkID0gZGlzdChwLngsIHAueSwgbXgsIG15KTsKfQoKLy8gRkFTVCDigJQgbmF0aXZlIE1hdGgKZm9yIChsZXQgcCBvZiBwYXJ0aWNsZXMpIHsKICBsZXQgYSA9IE1hdGguc2luKHAuYW5nbGUpOwogIGxldCBkeCA9IHAueCAtIG14LCBkeSA9IHAueSAtIG15OwogIGxldCBkU3EgPSBkeCAqIGR4ICsgZHkgKiBkeTsgIC8vIHNraXAgc3FydCBlbnRpcmVseQp9CmBgYAoKVXNlIGBtYWdTcSgpYCBpbnN0ZWFkIG9mIGBtYWcoKWAgZm9yIGRpc3RhbmNlIGNvbXBhcmlzb25zIOKAlCBhdm9pZHMgZXhwZW5zaXZlIGBzcXJ0KClgLgoKIyMjIERpYWdub3NpcwoKT3BlbiBDaHJvbWUgRGV2VG9vbHMgPiBQZXJmb3JtYW5jZSB0YWIgPiBSZWNvcmQgd2hpbGUgc2tldGNoIHJ1bnMuCgpDb21tb24gYm90dGxlbmVja3M6CjEuICoqRkVTIGVuYWJsZWQqKiDigJQgMTB4IG92ZXJoZWFkIG9uIGV2ZXJ5IHA1IGZ1bmN0aW9uIGNhbGwKMi4gKipwaXhlbERlbnNpdHkgPiAxKiog4oCUIDR4IHBpeGVsIGNvdW50LCA0eCBzbG93ZXIKMy4gKipUb28gbWFueSBkcmF3IGNhbGxzKiog4oCUIHRob3VzYW5kcyBvZiBgZWxsaXBzZSgpYCwgYHJlY3QoKWAgcGVyIGZyYW1lCjQuICoqTGFyZ2UgY2FudmFzICsgcGl4ZWwgb3BlcmF0aW9ucyoqIOKAlCBgbG9hZFBpeGVscygpYC9gdXBkYXRlUGl4ZWxzKClgIG9uIDRLIGNhbnZhcwo1LiAqKlVub3B0aW1pemVkIHBhcnRpY2xlIHN5c3RlbXMqKiDigJQgY2hlY2tpbmcgYWxsLXZzLWFsbCBkaXN0YW5jZXMgKE8obl4yKSkKNi4gKipNZW1vcnkgbGVha3MqKiDigJQgY3JlYXRpbmcgb2JqZWN0cyBldmVyeSBmcmFtZSB3aXRob3V0IGNsZWFudXAKNy4gKipTaGFkZXIgY29tcGlsYXRpb24qKiDigJQgY2FsbGluZyBgY3JlYXRlU2hhZGVyKClgIGluIGBkcmF3KClgIGluc3RlYWQgb2YgYHNldHVwKClgCjguICoqY29uc29sZS5sb2coKSBpbiBkcmF3KCkqKiDigJQgRE9NIHdyaXRlIHBlciBmcmFtZSwgZGVzdHJveXMgcGVyZm9ybWFuY2UKOS4gKipET00gbWFuaXB1bGF0aW9uIGluIGRyYXcoKSoqIOKAlCBsYXlvdXQgdGhyYXNoaW5nICg0MDAtNTAweCBzbG93ZXIgdGhhbiBjYW52YXMgb3BzKQoKIyMjIFNvbHV0aW9ucwoKKipSZWR1Y2UgZHJhdyBjYWxsczoqKgpgYGBqYXZhc2NyaXB0Ci8vIEJBRDogMTAwMDAgaW5kaXZpZHVhbCBjaXJjbGVzCmZvciAobGV0IHAgb2YgcGFydGljbGVzKSB7CiAgZWxsaXBzZShwLngsIHAueSwgcC5zaXplKTsKfQoKLy8gR09PRDogc2luZ2xlIHNoYXBlIHdpdGggdmVydGljZXMKYmVnaW5TaGFwZShQT0lOVFMpOwpmb3IgKGxldCBwIG9mIHBhcnRpY2xlcykgewogIHZlcnRleChwLngsIHAueSk7Cn0KZW5kU2hhcGUoKTsKCi8vIEJFU1Q6IGRpcmVjdCBwaXhlbCBtYW5pcHVsYXRpb24KbG9hZFBpeGVscygpOwpmb3IgKGxldCBwIG9mIHBhcnRpY2xlcykgewogIGxldCBpZHggPSA0ICogKGZsb29yKHAueSkgKiB3aWR0aCArIGZsb29yKHAueCkpOwogIHBpeGVsc1tpZHhdID0gcC5yOwogIHBpeGVsc1tpZHgrMV0gPSBwLmc7CiAgcGl4ZWxzW2lkeCsyXSA9IHAuYjsKICBwaXhlbHNbaWR4KzNdID0gMjU1Owp9CnVwZGF0ZVBpeGVscygpOwpgYGAKCioqU3BhdGlhbCBoYXNoaW5nIGZvciBuZWlnaGJvciBxdWVyaWVzOioqCmBgYGphdmFzY3JpcHQKY2xhc3MgU3BhdGlhbEhhc2ggewogIGNvbnN0cnVjdG9yKGNlbGxTaXplKSB7CiAgICB0aGlzLmNlbGxTaXplID0gY2VsbFNpemU7CiAgICB0aGlzLmNlbGxzID0gbmV3IE1hcCgpOwogIH0KCiAgY2xlYXIoKSB7IHRoaXMuY2VsbHMuY2xlYXIoKTsgfQoKICBfa2V5KHgsIHkpIHsKICAgIHJldHVybiBgJHtmbG9vcih4IC8gdGhpcy5jZWxsU2l6ZSl9LCR7Zmxvb3IoeSAvIHRoaXMuY2VsbFNpemUpfWA7CiAgfQoKICBpbnNlcnQob2JqKSB7CiAgICBsZXQga2V5ID0gdGhpcy5fa2V5KG9iai5wb3MueCwgb2JqLnBvcy55KTsKICAgIGlmICghdGhpcy5jZWxscy5oYXMoa2V5KSkgdGhpcy5jZWxscy5zZXQoa2V5LCBbXSk7CiAgICB0aGlzLmNlbGxzLmdldChrZXkpLnB1c2gob2JqKTsKICB9CgogIHF1ZXJ5KHgsIHksIHJhZGl1cykgewogICAgbGV0IHJlc3VsdHMgPSBbXTsKICAgIGxldCBtaW5DWCA9IGZsb29yKCh4IC0gcmFkaXVzKSAvIHRoaXMuY2VsbFNpemUpOwogICAgbGV0IG1heENYID0gZmxvb3IoKHggKyByYWRpdXMpIC8gdGhpcy5jZWxsU2l6ZSk7CiAgICBsZXQgbWluQ1kgPSBmbG9vcigoeSAtIHJhZGl1cykgLyB0aGlzLmNlbGxTaXplKTsKICAgIGxldCBtYXhDWSA9IGZsb29yKCh5ICsgcmFkaXVzKSAvIHRoaXMuY2VsbFNpemUpOwoKICAgIGZvciAobGV0IGN4ID0gbWluQ1g7IGN4IDw9IG1heENYOyBjeCsrKSB7CiAgICAgIGZvciAobGV0IGN5ID0gbWluQ1k7IGN5IDw9IG1heENZOyBjeSsrKSB7CiAgICAgICAgbGV0IGtleSA9IGAke2N4fSwke2N5fWA7CiAgICAgICAgbGV0IGNlbGwgPSB0aGlzLmNlbGxzLmdldChrZXkpOwogICAgICAgIGlmIChjZWxsKSB7CiAgICAgICAgICBmb3IgKGxldCBvYmogb2YgY2VsbCkgewogICAgICAgICAgICBpZiAoZGlzdCh4LCB5LCBvYmoucG9zLngsIG9iai5wb3MueSkgPD0gcmFkaXVzKSB7CiAgICAgICAgICAgICAgcmVzdWx0cy5wdXNoKG9iaik7CiAgICAgICAgICAgIH0KICAgICAgICAgIH0KICAgICAgICB9CiAgICAgIH0KICAgIH0KICAgIHJldHVybiByZXN1bHRzOwogIH0KfQpgYGAKCioqT2JqZWN0IHBvb2xpbmc6KioKYGBgamF2YXNjcmlwdApjbGFzcyBQYXJ0aWNsZVBvb2wgewogIGNvbnN0cnVjdG9yKG1heFNpemUpIHsKICAgIHRoaXMucG9vbCA9IFtdOwogICAgdGhpcy5hY3RpdmUgPSBbXTsKICAgIGZvciAobGV0IGkgPSAwOyBpIDwgbWF4U2l6ZTsgaSsrKSB7CiAgICAgIHRoaXMucG9vbC5wdXNoKG5ldyBQYXJ0aWNsZSgwLCAwKSk7CiAgICB9CiAgfQoKICBzcGF3bih4LCB5KSB7CiAgICBsZXQgcCA9IHRoaXMucG9vbC5wb3AoKTsKICAgIGlmIChwKSB7CiAgICAgIHAucmVzZXQoeCwgeSk7CiAgICAgIHRoaXMuYWN0aXZlLnB1c2gocCk7CiAgICB9CiAgfQoKICB1cGRhdGUoKSB7CiAgICBmb3IgKGxldCBpID0gdGhpcy5hY3RpdmUubGVuZ3RoIC0gMTsgaSA+PSAwOyBpLS0pIHsKICAgICAgdGhpcy5hY3RpdmVbaV0udXBkYXRlKCk7CiAgICAgIGlmICh0aGlzLmFjdGl2ZVtpXS5pc0RlYWQoKSkgewogICAgICAgIHRoaXMucG9vbC5wdXNoKHRoaXMuYWN0aXZlLnNwbGljZShpLCAxKVswXSk7CiAgICAgIH0KICAgIH0KICB9Cn0KYGBgCgoqKlRocm90dGxlIGhlYXZ5IG9wZXJhdGlvbnM6KioKYGBgamF2YXNjcmlwdAovLyBPbmx5IHVwZGF0ZSBmbG93IGZpZWxkIGV2ZXJ5IE4gZnJhbWVzCmlmIChmcmFtZUNvdW50ICUgNSA9PT0gMCkgewogIGZsb3dGaWVsZC51cGRhdGUoZnJhbWVDb3VudCAqIDAuMDAxKTsKfQpgYGAKCiMjIyBGcmFtZSBSYXRlIFRhcmdldHMKCnwgQ29udGV4dCB8IFRhcmdldCB8IEFjY2VwdGFibGUgfAp8LS0tLS0tLS0tfC0tLS0tLS0tfC0tLS0tLS0tLS0tLXwKfCBJbnRlcmFjdGl2ZSBza2V0Y2ggfCA2MGZwcyB8IDMwZnBzIHwKfCBBbWJpZW50IGFuaW1hdGlvbiB8IDMwZnBzIHwgMjBmcHMgfAp8IEV4cG9ydC9yZWNvcmRpbmcgfCAzMGZwcyByZW5kZXIgfCBBbnkgKG9mZmxpbmUpIHwKfCBNb2JpbGUgfCAzMGZwcyB8IDIwZnBzIHwKCiMjIyBQZXItUGl4ZWwgUmVuZGVyaW5nIEJ1ZGdldHMKClBpeGVsLWxldmVsIG9wZXJhdGlvbnMgKGBsb2FkUGl4ZWxzKClgIGxvb3BzKSBhcmUgdGhlIG1vc3QgZXhwZW5zaXZlIGNvbW1vbiBwYXR0ZXJuLiBCdWRnZXQgZGVwZW5kcyBvbiBjYW52YXMgc2l6ZSBhbmQgY29tcHV0YXRpb24gcGVyIHBpeGVsLgoKfCBDYW52YXMgfCBQaXhlbHMgfCBTaW1wbGUgbm9pc2UgKDEgY2FsbCkgfCBmQk0gKDQgb2N0YXZlKSB8IERvbWFpbiB3YXJwICgzLWxheWVyIGZCTSkgfAp8LS0tLS0tLS18LS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tfAp8IDU0MHg1NDAgfCAyOTFLIHwgfjVtcyB8IH4yMG1zIHwgfjgwbXMgfAp8IDEwODB4MTA4MCB8IDEuMTdNIHwgfjIwbXMgfCB+ODBtcyB8IH4zMDBtcysgfAp8IDE5MjB4MTA4MCB8IDIuMDdNIHwgfjM1bXMgfCB+MTQwbXMgfCB+NTAwbXMrIHwKfCAzODQweDIxNjAgfCA4LjNNIHwgfjE0MG1zIHwgfjU2MG1zIHwgV0lMTCBDUkFTSCB8CgoqKlJ1bGVzIG9mIHRodW1iOioqCi0gMSBgbm9pc2UoKWAgY2FsbCBwZXIgcGl4ZWwgYXQgMTA4MHgxMDgwID0gfjIwbXMvZnJhbWUgKE9LIGF0IDMwZnBzKQotIDQtb2N0YXZlIGZCTSBwZXIgcGl4ZWwgYXQgMTA4MHgxMDgwID0gfjgwbXMvZnJhbWUgKGJvcmRlcmxpbmUpCi0gTXVsdGktbGF5ZXIgZG9tYWluIHdhcnAgYXQgMTA4MHgxMDgwID0gMzAwbXMrICh0b28gc2xvdyBmb3IgcmVhbC10aW1lLCBmaW5lIGZvciBgbm9Mb29wKClgIGV4cG9ydCkKLSAqKkhlYWRsZXNzIENocm9tZSBpcyAyLTV4IHNsb3dlcioqIHRoYW4gZGVza3RvcCBDaHJvbWUgZm9yIHBpeGVsIG9wcwoKKipTb2x1dGlvbjogcmVuZGVyIGF0IGxvd2VyIHJlc29sdXRpb24sIGZpbGwgYmxvY2tzOioqCmBgYGphdmFzY3JpcHQKbGV0IHN0ZXAgPSAzOyAgLy8gcmVuZGVyIDEvOSBvZiBwaXhlbHMsIGZpbGwgM3gzIGJsb2Nrcwpsb2FkUGl4ZWxzKCk7CmZvciAobGV0IHkgPSAwOyB5IDwgSDsgeSArPSBzdGVwKSB7CiAgZm9yIChsZXQgeCA9IDA7IHggPCBXOyB4ICs9IHN0ZXApIHsKICAgIGxldCB2ID0gZXhwZW5zaXZlTm9pc2UoeCwgeSk7CiAgICBmb3IgKGxldCBkeSA9IDA7IGR5IDwgc3RlcCAmJiB5K2R5IDwgSDsgZHkrKykKICAgICAgZm9yIChsZXQgZHggPSAwOyBkeCA8IHN0ZXAgJiYgeCtkeCA8IFc7IGR4KyspIHsKICAgICAgICBsZXQgaSA9IDQgKiAoKHkrZHkpICogVyArICh4K2R4KSk7CiAgICAgICAgcGl4ZWxzW2ldID0gdjsgcGl4ZWxzW2krMV0gPSB2OyBwaXhlbHNbaSsyXSA9IHY7IHBpeGVsc1tpKzNdID0gMjU1OwogICAgICB9CiAgfQp9CnVwZGF0ZVBpeGVscygpOwpgYGAKClN0ZXA9MiBnaXZlcyA0eCBzcGVlZHVwLiBTdGVwPTMgZ2l2ZXMgOXguIFZpc2libGUgYXQgMTA4MHAgYnV0IGFjY2VwdGFibGUgZm9yIHZpZGVvIChtb3Rpb24gaGlkZXMgaXQpLgoKIyMgQ29tbW9uIE1pc3Rha2VzCgojIyMgMS4gRm9yZ2V0dGluZyB0byByZXNldCBibGVuZCBtb2RlCgpgYGBqYXZhc2NyaXB0CmJsZW5kTW9kZShBREQpOwppbWFnZShnbG93TGF5ZXIsIDAsIDApOwovLyBXUk9ORzogZXZlcnl0aGluZyBhZnRlciB0aGlzIGlzIEFERCBibGVuZGVkCmJsZW5kTW9kZShCTEVORCk7ICAvLyBBTFdBWVMgcmVzZXQKYGBgCgojIyMgMi4gQ3JlYXRpbmcgb2JqZWN0cyBpbiBkcmF3KCkKCmBgYGphdmFzY3JpcHQKLy8gQkFEOiBjcmVhdGVzIG5ldyBmb250IG9iamVjdCBldmVyeSBmcmFtZQpmdW5jdGlvbiBkcmF3KCkgewogIGxldCBmID0gbG9hZEZvbnQoJ2ZvbnQub3RmJyk7ICAvLyBORVZFUiBsb2FkIGluIGRyYXcoKQp9CgovLyBHT09EOiBsb2FkIGluIHByZWxvYWQsIHVzZSBpbiBkcmF3CmxldCBmOwpmdW5jdGlvbiBwcmVsb2FkKCkgeyBmID0gbG9hZEZvbnQoJ2ZvbnQub3RmJyk7IH0KYGBgCgojIyMgMy4gTm90IHVzaW5nIHB1c2goKS9wb3AoKSB3aXRoIHRyYW5zZm9ybXMKCmBgYGphdmFzY3JpcHQKLy8gQkFEOiB0cmFuc2Zvcm1zIGFjY3VtdWxhdGUKdHJhbnNsYXRlKDEwMCwgMCk7CnJvdGF0ZSgwLjEpOwplbGxpcHNlKDAsIDAsIDUwKTsKLy8gRXZlcnl0aGluZyBhZnRlciB0aGlzIGlzIGFsc28gdHJhbnNsYXRlZCBhbmQgcm90YXRlZAoKLy8gR09PRDogaXNvbGF0ZWQgdHJhbnNmb3JtcwpwdXNoKCk7CnRyYW5zbGF0ZSgxMDAsIDApOwpyb3RhdGUoMC4xKTsKZWxsaXBzZSgwLCAwLCA1MCk7CnBvcCgpOwpgYGAKCiMjIyA0LiBJbnRlZ2VyIGNvb3JkaW5hdGVzIGZvciBjcmlzcCBsaW5lcwoKYGBgamF2YXNjcmlwdAovLyBCTFVSUlk6IHN1Yi1waXhlbCByZW5kZXJpbmcKbGluZSgxMC41LCAyMC4zLCAxMDAuNywgODAuMik7CgovLyBDUklTUDogaW50ZWdlciArIDAuNSBmb3IgMXB4IGxpbmVzCmxpbmUoMTAuNSwgMjAuNSwgMTAwLjUsIDgwLjUpOyAgLy8gb24gcGl4ZWwgYm91bmRhcnkKYGBgCgojIyMgNS4gUGl4ZWwgZGVuc2l0eSBjb25mdXNpb24KCmBgYGphdmFzY3JpcHQKLy8gV1JPTkc6IGFzc3VtaW5nIHBpeGVsIGFycmF5IG1hdGNoZXMgY2FudmFzIGRpbWVuc2lvbnMKbG9hZFBpeGVscygpOwpsZXQgaWR4ID0gNCAqICh5ICogd2lkdGggKyB4KTsgIC8vIHdyb25nIGlmIHBpeGVsRGVuc2l0eSA+IDEKCi8vIFJJR0hUOiBhY2NvdW50IGZvciBwaXhlbCBkZW5zaXR5CmxldCBkID0gcGl4ZWxEZW5zaXR5KCk7CmxvYWRQaXhlbHMoKTsKbGV0IGlkeCA9IDQgKiAoKHkgKiBkKSAqICh3aWR0aCAqIGQpICsgKHggKiBkKSk7CgovLyBTSU1QTEVTVDogc2V0IHBpeGVsRGVuc2l0eSgxKSBhdCB0aGUgc3RhcnQKYGBgCgojIyMgNi4gQ29sb3IgbW9kZSBjb25mdXNpb24KCmBgYGphdmFzY3JpcHQKLy8gSW4gSFNCIG1vZGUsIGZpbGwoMjU1KSBpcyBOT1Qgd2hpdGUKY29sb3JNb2RlKEhTQiwgMzYwLCAxMDAsIDEwMCk7CmZpbGwoMjU1KTsgIC8vIFRoaXMgaXMgaHVlPTI1NSwgc2F0PTEwMCwgYnJpPTEwMCA9IHZpdmlkIHB1cnBsZQoKLy8gV2hpdGUgaW4gSFNCOgpmaWxsKDAsIDAsIDEwMCk7ICAvLyBhbnkgaHVlLCAwIHNhdHVyYXRpb24sIDEwMCBicmlnaHRuZXNzCgovLyBCbGFjayBpbiBIU0I6CmZpbGwoMCwgMCwgMCk7CmBgYAoKIyMjIDcuIFdlYkdMIG9yaWdpbiBpcyBjZW50ZXIKCmBgYGphdmFzY3JpcHQKLy8gSW4gV0VCR0wgbW9kZSwgKDAsMCkgaXMgQ0VOVEVSLCBub3QgdG9wLWxlZnQKZnVuY3Rpb24gZHJhdygpIHsKICAvLyBUaGlzIGRyYXdzIGF0IHRoZSBjZW50ZXIsIG5vdCB0aGUgY29ybmVyCiAgcmVjdCgwLCAwLCAxMDAsIDEwMCk7CgogIC8vIEZvciB0b3AtbGVmdCBiZWhhdmlvcjoKICB0cmFuc2xhdGUoLXdpZHRoLzIsIC1oZWlnaHQvMik7CiAgcmVjdCgwLCAwLCAxMDAsIDEwMCk7ICAvLyBub3cgYXQgdG9wLWxlZnQKfQpgYGAKCiMjIyA4LiBjcmVhdGVHcmFwaGljcyBjbGVhbnVwCgpgYGBqYXZhc2NyaXB0Ci8vIEJBRDogbWVtb3J5IGxlYWsg4oCUIGJ1ZmZlciBuZXZlciBmcmVlZApmdW5jdGlvbiBkcmF3KCkgewogIGxldCB0ZW1wID0gY3JlYXRlR3JhcGhpY3Mod2lkdGgsIGhlaWdodCk7ICAvLyBuZXcgYnVmZmVyIGV2ZXJ5IGZyYW1lIQogIC8vIC4uLgp9CgovLyBHT09EOiBjcmVhdGUgb25jZSwgcmV1c2UKbGV0IHRlbXA7CmZ1bmN0aW9uIHNldHVwKCkgewogIHRlbXAgPSBjcmVhdGVHcmFwaGljcyh3aWR0aCwgaGVpZ2h0KTsKfQpmdW5jdGlvbiBkcmF3KCkgewogIHRlbXAuY2xlYXIoKTsKICAvLyAuLi4gcmV1c2UgdGVtcAp9CgovLyBJZiB5b3UgbXVzdCBjcmVhdGUvZGVzdHJveToKdGVtcC5yZW1vdmUoKTsgIC8vIGV4cGxpY2l0bHkgZnJlZQpgYGAKCiMjIyA5LiBub2lzZSgpIHJldHVybnMgMC0xLCBub3QgLTEgdG8gMQoKYGBgamF2YXNjcmlwdApsZXQgbiA9IG5vaXNlKHgpOyAgLy8gMC4wIHRvIDEuMCAoYmlhc2VkIHRvd2FyZCAwLjUpCgovLyBGb3IgLTEgdG8gMSByYW5nZToKbGV0IG4gPSBub2lzZSh4KSAqIDIgLSAxOwoKLy8gRm9yIGEgc3BlY2lmaWMgcmFuZ2U6CmxldCBuID0gbWFwKG5vaXNlKHgpLCAwLCAxLCAtMTAwLCAxMDApOwpgYGAKCiMjIyAxMC4gc2F2ZUNhbnZhcygpIGluIGRyYXcoKSBzYXZlcyBldmVyeSBmcmFtZQoKYGBgamF2YXNjcmlwdAovLyBCQUQ6IHNhdmVzIGEgUE5HIGV2ZXJ5IHNpbmdsZSBmcmFtZQpmdW5jdGlvbiBkcmF3KCkgewogIC8vIC4uLiByZW5kZXIgLi4uCiAgc2F2ZUNhbnZhcygnb3V0cHV0JywgJ3BuZycpOyAgLy8gRE9OJ1QgRE8gVEhJUwp9CgovLyBHT09EOiBzYXZlIG9uY2UgdmlhIGtleWJvYXJkCmZ1bmN0aW9uIGtleVByZXNzZWQoKSB7CiAgaWYgKGtleSA9PT0gJ3MnKSBzYXZlQ2FudmFzKCdvdXRwdXQnLCAncG5nJyk7Cn0KCi8vIEdPT0Q6IHNhdmUgb25jZSBhZnRlciByZW5kZXJpbmcgc3RhdGljIHBpZWNlCmZ1bmN0aW9uIGRyYXcoKSB7CiAgLy8gLi4uIHJlbmRlciAuLi4KICBzYXZlQ2FudmFzKCdvdXRwdXQnLCAncG5nJyk7CiAgbm9Mb29wKCk7ICAvLyBzdG9wIGFmdGVyIHNhdmluZwp9CmBgYAoKIyMjIDExLiBjb25zb2xlLmxvZygpIGluIGRyYXcoKQoKYGBgamF2YXNjcmlwdAovLyBCQUQ6IHdyaXRlcyB0byBET00gY29uc29sZSBldmVyeSBmcmFtZSDigJQgbWFzc2l2ZSBvdmVyaGVhZApmdW5jdGlvbiBkcmF3KCkgewogIGNvbnNvbGUubG9nKHBhcnRpY2xlcy5sZW5ndGgpOyAgLy8gNjAgRE9NIHdyaXRlcy9zZWNvbmQKfQoKLy8gR09PRDogbG9nIHBlcmlvZGljYWxseSBvciBjb25kaXRpb25hbGx5CmZ1bmN0aW9uIGRyYXcoKSB7CiAgaWYgKGZyYW1lQ291bnQgJSA2MCA9PT0gMCkgY29uc29sZS5sb2coJ0ZQUzonLCBmcmFtZVJhdGUoKS50b0ZpeGVkKDEpKTsKfQpgYGAKCiMjIyAxMi4gRE9NIG1hbmlwdWxhdGlvbiBpbiBkcmF3KCkKCmBgYGphdmFzY3JpcHQKLy8gQkFEOiBsYXlvdXQgdGhyYXNoaW5nIOKAlCA0MDAtNTAweCBzbG93ZXIgdGhhbiBjYW52YXMgb3BzCmZ1bmN0aW9uIGRyYXcoKSB7CiAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2NvdW50ZXInKS5pbm5lclRleHQgPSBmcmFtZUNvdW50OwogIGxldCBlbCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJy5pbmZvJyk7ICAvLyBET00gcXVlcnkgcGVyIGZyYW1lCn0KCi8vIEdPT0Q6IGNhY2hlIERPTSByZWZzLCB1cGRhdGUgaW5mcmVxdWVudGx5CmxldCBjb3VudGVyRWw7CmZ1bmN0aW9uIHNldHVwKCkgeyBjb3VudGVyRWwgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnY291bnRlcicpOyB9CmZ1bmN0aW9uIGRyYXcoKSB7CiAgaWYgKGZyYW1lQ291bnQgJSAzMCA9PT0gMCkgY291bnRlckVsLmlubmVyVGV4dCA9IGZyYW1lQ291bnQ7Cn0KYGBgCgojIyMgMTMuIE5vdCBkaXNhYmxpbmcgRkVTIGluIHByb2R1Y3Rpb24KCmBgYGphdmFzY3JpcHQKLy8gQkFEOiBldmVyeSBwNSBmdW5jdGlvbiBjYWxsIGhhcyBlcnJvci1jaGVja2luZyBvdmVyaGVhZCAodXAgdG8gMTB4IHNsb3dlcikKZnVuY3Rpb24gc2V0dXAoKSB7IGNyZWF0ZUNhbnZhcyg4MDAsIDgwMCk7IH0KCi8vIEdPT0Q6IGRpc2FibGUgYmVmb3JlIGFueSBwNSBjb2RlCnA1LmRpc2FibGVGcmllbmRseUVycm9ycyA9IHRydWU7CmZ1bmN0aW9uIHNldHVwKCkgeyBjcmVhdGVDYW52YXMoODAwLCA4MDApOyB9CgovLyBBTFNPIEdPT0Q6IHVzZSBwNS5taW4uanMgKEZFUyBzdHJpcHBlZCBmcm9tIG1pbmlmaWVkIGJ1aWxkKQpgYGAKCiMjIEJyb3dzZXIgQ29tcGF0aWJpbGl0eQoKIyMjIFNhZmFyaSBJc3N1ZXMKLSBXZWJHTCBzaGFkZXIgcHJlY2lzaW9uOiBhbHdheXMgZGVjbGFyZSBgcHJlY2lzaW9uIG1lZGl1bXAgZmxvYXQ7YAotIGBBdWRpb0NvbnRleHRgIHJlcXVpcmVzIHVzZXIgZ2VzdHVyZSAoYHVzZXJTdGFydEF1ZGlvKClgKQotIFNvbWUgYGJsZW5kTW9kZSgpYCBvcHRpb25zIGJlaGF2ZSBkaWZmZXJlbnRseQoKIyMjIEZpcmVmb3ggSXNzdWVzCi0gYHRleHRUb1BvaW50cygpYCBtYXkgcmV0dXJuIHNsaWdodGx5IGRpZmZlcmVudCBwb2ludCBjb3VudHMKLSBXZWJHTCBleHRlbnNpb25zIG1heSBkaWZmZXIgZnJvbSBDaHJvbWUKLSBDb2xvciBwcm9maWxlIGhhbmRsaW5nIGNhbiBzaGlmdCBjb2xvcnMKCiMjIyBNb2JpbGUgSXNzdWVzCi0gVG91Y2ggZXZlbnRzIG5lZWQgYHJldHVybiBmYWxzZWAgdG8gcHJldmVudCBzY3JvbGwKLSBgZGV2aWNlUGl4ZWxSYXRpb2AgY2FuIGJlIDJ4IG9yIDN4IOKAlCB1c2UgYHBpeGVsRGVuc2l0eSgxKWAgZm9yIHBlcmZvcm1hbmNlCi0gU21hbGxlciBjYW52YXMgcmVjb21tZW5kZWQgKDcyMHAgb3IgbGVzcykKLSBBdWRpbyByZXF1aXJlcyBleHBsaWNpdCB1c2VyIGdlc3R1cmUgdG8gc3RhcnQKCiMjIENPUlMgSXNzdWVzCgpgYGBqYXZhc2NyaXB0Ci8vIExvYWRpbmcgaW1hZ2VzL2ZvbnRzIGZyb20gZXh0ZXJuYWwgVVJMcyByZXF1aXJlcyBDT1JTIGhlYWRlcnMKLy8gTG9jYWwgZmlsZXMgbmVlZCBhIHNlcnZlcjoKLy8gcHl0aG9uMyAtbSBodHRwLnNlcnZlciA4MDgwCgovLyBPciB1c2UgYSBDT1JTIHByb3h5IGZvciBleHRlcm5hbCByZXNvdXJjZXMgKG5vdCByZWNvbW1lbmRlZCBmb3IgcHJvZHVjdGlvbikKYGBgCgojIyBNZW1vcnkgTGVha3MKCiMjIyBTeW1wdG9tcwotIEZyYW1lcmF0ZSBkZWdyYWRpbmcgb3ZlciB0aW1lCi0gQnJvd3NlciB0YWIgbWVtb3J5IGdyb3dpbmcgdW5ib3VuZGVkCi0gUGFnZSBiZWNvbWVzIHVucmVzcG9uc2l2ZSBhZnRlciBtaW51dGVzCgojIyMgQ29tbW9uIENhdXNlcwoKYGBgamF2YXNjcmlwdAovLyAxLiBHcm93aW5nIGFycmF5cwpsZXQgaGlzdG9yeSA9IFtdOwpmdW5jdGlvbiBkcmF3KCkgewogIGhpc3RvcnkucHVzaChzb21lRGF0YSk7ICAvLyBncm93cyBmb3JldmVyCn0KLy8gRklYOiBjYXAgdGhlIGFycmF5CmlmIChoaXN0b3J5Lmxlbmd0aCA+IDEwMDApIGhpc3Rvcnkuc2hpZnQoKTsKCi8vIDIuIENyZWF0aW5nIHA1IG9iamVjdHMgaW4gZHJhdygpCmZ1bmN0aW9uIGRyYXcoKSB7CiAgbGV0IHYgPSBjcmVhdGVWZWN0b3IoMCwgMCk7ICAvLyBhbGxvY2F0aW9uIGV2ZXJ5IGZyYW1lCn0KLy8gRklYOiByZXVzZSBwcmUtYWxsb2NhdGVkIG9iamVjdHMKCi8vIDMuIFVucmVsZWFzZWQgZ3JhcGhpY3MgYnVmZmVycwpsZXQgbGF5ZXJzID0gW107CmZ1bmN0aW9uIHJlc2V0KCkgewogIGZvciAobGV0IGwgb2YgbGF5ZXJzKSBsLnJlbW92ZSgpOyAgLy8gZnJlZSBvbGQgYnVmZmVycwogIGxheWVycyA9IFtdOwp9CgovLyA0LiBFdmVudCBsaXN0ZW5lciBhY2N1bXVsYXRpb24KZnVuY3Rpb24gc2V0dXAoKSB7CiAgLy8gQkFEOiBhZGRzIG5ldyBsaXN0ZW5lciBldmVyeSB0aW1lIHNldHVwIHJ1bnMKICB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcigncmVzaXplJywgaGFuZGxlcik7Cn0KLy8gRklYOiB1c2UgcDUncyBidWlsdC1pbiB3aW5kb3dSZXNpemVkKCkKYGBgCgojIyBEZWJ1Z2dpbmcgVGlwcwoKIyMjIENvbnNvbGUgTG9nZ2luZwoKYGBgamF2YXNjcmlwdAovLyBMb2cgb25jZSAobm90IGV2ZXJ5IGZyYW1lKQppZiAoZnJhbWVDb3VudCA9PT0gMSkgewogIGNvbnNvbGUubG9nKCdDYW52YXM6Jywgd2lkdGgsICd4JywgaGVpZ2h0KTsKICBjb25zb2xlLmxvZygnUGl4ZWwgZGVuc2l0eTonLCBwaXhlbERlbnNpdHkoKSk7CiAgY29uc29sZS5sb2coJ1JlbmRlcmVyOicsIGRyYXdpbmdDb250ZXh0LmNvbnN0cnVjdG9yLm5hbWUpOwp9CgovLyBMb2cgcGVyaW9kaWNhbGx5CmlmIChmcmFtZUNvdW50ICUgNjAgPT09IDApIHsKICBjb25zb2xlLmxvZygnRlBTOicsIGZyYW1lUmF0ZSgpLnRvRml4ZWQoMSkpOwogIGNvbnNvbGUubG9nKCdQYXJ0aWNsZXM6JywgcGFydGljbGVzLmxlbmd0aCk7Cn0KYGBgCgojIyMgVmlzdWFsIERlYnVnZ2luZwoKYGBgamF2YXNjcmlwdAovLyBTaG93IGZyYW1lIHJhdGUKZnVuY3Rpb24gZHJhdygpIHsKICAvLyAuLi4geW91ciBza2V0Y2ggLi4uCiAgaWYgKENPTkZJRy5kZWJ1ZykgewogICAgZmlsbCgyNTUsIDAsIDApOwogICAgbm9TdHJva2UoKTsKICAgIHRleHRTaXplKDE0KTsKICAgIHRleHRBbGlnbihMRUZULCBUT1ApOwogICAgdGV4dCgnRlBTOiAnICsgZnJhbWVSYXRlKCkudG9GaXhlZCgxKSwgMTAsIDEwKTsKICAgIHRleHQoJ1BhcnRpY2xlczogJyArIHBhcnRpY2xlcy5sZW5ndGgsIDEwLCAyOCk7CiAgICB0ZXh0KCdGcmFtZTogJyArIGZyYW1lQ291bnQsIDEwLCA0Nik7CiAgfQp9CgovLyBUb2dnbGUgZGVidWcgd2l0aCAnZCcga2V5CmZ1bmN0aW9uIGtleVByZXNzZWQoKSB7CiAgaWYgKGtleSA9PT0gJ2QnKSBDT05GSUcuZGVidWcgPSAhQ09ORklHLmRlYnVnOwp9CmBgYAoKIyMjIElzb2xhdGluZyBJc3N1ZXMKCmBgYGphdmFzY3JpcHQKLy8gQ29tbWVudCBvdXQgbGF5ZXJzIHRvIGZpbmQgdGhlIHNsb3cgb25lCmZ1bmN0aW9uIGRyYXcoKSB7CiAgcmVuZGVyQmFja2dyb3VuZCgpOyAgICAgIC8vIGNvbW1lbnQgb3V0IHRvIHRlc3QKICAvLyByZW5kZXJQYXJ0aWNsZXMoKTsgICAgLy8gdGhpcyBtaWdodCBiZSBzbG93CiAgLy8gcmVuZGVyUG9zdEVmZmVjdHMoKTsgIC8vIG9yIHRoaXMKfQpgYGAK
+# Troubleshooting
+
+## Performance
+
+### Step Zero — Disable FES
+
+The Friendly Error System (FES) adds massive overhead — up to 10x slowdown. Disable it in every production sketch:
+
+```javascript
+// BEFORE any p5 code
+p5.disableFriendlyErrors = true;
+
+// Or use p5.min.js instead of p5.js — FES is stripped from minified build
+```
+
+### Step One — pixelDensity(1)
+
+Retina/HiDPI displays default to 2x or 3x density, multiplying pixel count by 4-9x:
+
+```javascript
+function setup() {
+  pixelDensity(1);        // force 1:1 — always do this first
+  createCanvas(1920, 1080);
+}
+```
+
+### Use Math.* in Hot Loops
+
+p5's `sin()`, `cos()`, `random()`, `min()`, `max()`, `abs()` are wrapper functions with overhead. In hot loops (thousands of iterations per frame), use native `Math.*`:
+
+```javascript
+// SLOW — p5 wrappers
+for (let p of particles) {
+  let a = sin(p.angle);
+  let d = dist(p.x, p.y, mx, my);
+}
+
+// FAST — native Math
+for (let p of particles) {
+  let a = Math.sin(p.angle);
+  let dx = p.x - mx, dy = p.y - my;
+  let dSq = dx * dx + dy * dy;  // skip sqrt entirely
+}
+```
+
+Use `magSq()` instead of `mag()` for distance comparisons — avoids expensive `sqrt()`.
+
+### Diagnosis
+
+Open Chrome DevTools > Performance tab > Record while sketch runs.
+
+Common bottlenecks:
+1. **FES enabled** — 10x overhead on every p5 function call
+2. **pixelDensity > 1** — 4x pixel count, 4x slower
+3. **Too many draw calls** — thousands of `ellipse()`, `rect()` per frame
+4. **Large canvas + pixel operations** — `loadPixels()`/`updatePixels()` on 4K canvas
+5. **Unoptimized particle systems** — checking all-vs-all distances (O(n^2))
+6. **Memory leaks** — creating objects every frame without cleanup
+7. **Shader compilation** — calling `createShader()` in `draw()` instead of `setup()`
+8. **console.log() in draw()** — DOM write per frame, destroys performance
+9. **DOM manipulation in draw()** — layout thrashing (400-500x slower than canvas ops)
+
+### Solutions
+
+**Reduce draw calls:**
+```javascript
+// BAD: 10000 individual circles
+for (let p of particles) {
+  ellipse(p.x, p.y, p.size);
+}
+
+// GOOD: single shape with vertices
+beginShape(POINTS);
+for (let p of particles) {
+  vertex(p.x, p.y);
+}
+endShape();
+
+// BEST: direct pixel manipulation
+loadPixels();
+for (let p of particles) {
+  let idx = 4 * (floor(p.y) * width + floor(p.x));
+  pixels[idx] = p.r;
+  pixels[idx+1] = p.g;
+  pixels[idx+2] = p.b;
+  pixels[idx+3] = 255;
+}
+updatePixels();
+```
+
+**Spatial hashing for neighbor queries:**
+```javascript
+class SpatialHash {
+  constructor(cellSize) {
+    this.cellSize = cellSize;
+    this.cells = new Map();
+  }
+
+  clear() { this.cells.clear(); }
+
+  _key(x, y) {
+    return `${floor(x / this.cellSize)},${floor(y / this.cellSize)}`;
+  }
+
+  insert(obj) {
+    let key = this._key(obj.pos.x, obj.pos.y);
+    if (!this.cells.has(key)) this.cells.set(key, []);
+    this.cells.get(key).push(obj);
+  }
+
+  query(x, y, radius) {
+    let results = [];
+    let minCX = floor((x - radius) / this.cellSize);
+    let maxCX = floor((x + radius) / this.cellSize);
+    let minCY = floor((y - radius) / this.cellSize);
+    let maxCY = floor((y + radius) / this.cellSize);
+
+    for (let cx = minCX; cx <= maxCX; cx++) {
+      for (let cy = minCY; cy <= maxCY; cy++) {
+        let key = `${cx},${cy}`;
+        let cell = this.cells.get(key);
+        if (cell) {
+          for (let obj of cell) {
+            if (dist(x, y, obj.pos.x, obj.pos.y) <= radius) {
+              results.push(obj);
+            }
+          }
+        }
+      }
+    }
+    return results;
+  }
+}
+```
+
+**Object pooling:**
+```javascript
+class ParticlePool {
+  constructor(maxSize) {
+    this.pool = [];
+    this.active = [];
+    for (let i = 0; i < maxSize; i++) {
+      this.pool.push(new Particle(0, 0));
+    }
+  }
+
+  spawn(x, y) {
+    let p = this.pool.pop();
+    if (p) {
+      p.reset(x, y);
+      this.active.push(p);
+    }
+  }
+
+  update() {
+    for (let i = this.active.length - 1; i >= 0; i--) {
+      this.active[i].update();
+      if (this.active[i].isDead()) {
+        this.pool.push(this.active.splice(i, 1)[0]);
+      }
+    }
+  }
+}
+```
+
+**Throttle heavy operations:**
+```javascript
+// Only update flow field every N frames
+if (frameCount % 5 === 0) {
+  flowField.update(frameCount * 0.001);
+}
+```
+
+### Frame Rate Targets
+
+| Context | Target | Acceptable |
+|---------|--------|------------|
+| Interactive sketch | 60fps | 30fps |
+| Ambient animation | 30fps | 20fps |
+| Export/recording | 30fps render | Any (offline) |
+| Mobile | 30fps | 20fps |
+
+### Per-Pixel Rendering Budgets
+
+Pixel-level operations (`loadPixels()` loops) are the most expensive common pattern. Budget depends on canvas size and computation per pixel.
+
+| Canvas | Pixels | Simple noise (1 call) | fBM (4 octave) | Domain warp (3-layer fBM) |
+|--------|--------|----------------------|----------------|--------------------------|
+| 540x540 | 291K | ~5ms | ~20ms | ~80ms |
+| 1080x1080 | 1.17M | ~20ms | ~80ms | ~300ms+ |
+| 1920x1080 | 2.07M | ~35ms | ~140ms | ~500ms+ |
+| 3840x2160 | 8.3M | ~140ms | ~560ms | WILL CRASH |
+
+**Rules of thumb:**
+- 1 `noise()` call per pixel at 1080x1080 = ~20ms/frame (OK at 30fps)
+- 4-octave fBM per pixel at 1080x1080 = ~80ms/frame (borderline)
+- Multi-layer domain warp at 1080x1080 = 300ms+ (too slow for real-time, fine for `noLoop()` export)
+- **Headless Chrome is 2-5x slower** than desktop Chrome for pixel ops
+
+**Solution: render at lower resolution, fill blocks:**
+```javascript
+let step = 3;  // render 1/9 of pixels, fill 3x3 blocks
+loadPixels();
+for (let y = 0; y < H; y += step) {
+  for (let x = 0; x < W; x += step) {
+    let v = expensiveNoise(x, y);
+    for (let dy = 0; dy < step && y+dy < H; dy++)
+      for (let dx = 0; dx < step && x+dx < W; dx++) {
+        let i = 4 * ((y+dy) * W + (x+dx));
+        pixels[i] = v; pixels[i+1] = v; pixels[i+2] = v; pixels[i+3] = 255;
+      }
+  }
+}
+updatePixels();
+```
+
+Step=2 gives 4x speedup. Step=3 gives 9x. Visible at 1080p but acceptable for video (motion hides it).
+
+## Common Mistakes
+
+### 1. Forgetting to reset blend mode
+
+```javascript
+blendMode(ADD);
+image(glowLayer, 0, 0);
+// WRONG: everything after this is ADD blended
+blendMode(BLEND);  // ALWAYS reset
+```
+
+### 2. Creating objects in draw()
+
+```javascript
+// BAD: creates new font object every frame
+function draw() {
+  let f = loadFont('font.otf');  // NEVER load in draw()
+}
+
+// GOOD: load in preload, use in draw
+let f;
+function preload() { f = loadFont('font.otf'); }
+```
+
+### 3. Not using push()/pop() with transforms
+
+```javascript
+// BAD: transforms accumulate
+translate(100, 0);
+rotate(0.1);
+ellipse(0, 0, 50);
+// Everything after this is also translated and rotated
+
+// GOOD: isolated transforms
+push();
+translate(100, 0);
+rotate(0.1);
+ellipse(0, 0, 50);
+pop();
+```
+
+### 4. Integer coordinates for crisp lines
+
+```javascript
+// BLURRY: sub-pixel rendering
+line(10.5, 20.3, 100.7, 80.2);
+
+// CRISP: integer + 0.5 for 1px lines
+line(10.5, 20.5, 100.5, 80.5);  // on pixel boundary
+```
+
+### 5. Pixel density confusion
+
+```javascript
+// WRONG: assuming pixel array matches canvas dimensions
+loadPixels();
+let idx = 4 * (y * width + x);  // wrong if pixelDensity > 1
+
+// RIGHT: account for pixel density
+let d = pixelDensity();
+loadPixels();
+let idx = 4 * ((y * d) * (width * d) + (x * d));
+
+// SIMPLEST: set pixelDensity(1) at the start
+```
+
+### 6. Color mode confusion
+
+```javascript
+// In HSB mode, fill(255) is NOT white
+colorMode(HSB, 360, 100, 100);
+fill(255);  // This is hue=255, sat=100, bri=100 = vivid purple
+
+// White in HSB:
+fill(0, 0, 100);  // any hue, 0 saturation, 100 brightness
+
+// Black in HSB:
+fill(0, 0, 0);
+```
+
+### 7. WebGL origin is center
+
+```javascript
+// In WEBGL mode, (0,0) is CENTER, not top-left
+function draw() {
+  // This draws at the center, not the corner
+  rect(0, 0, 100, 100);
+
+  // For top-left behavior:
+  translate(-width/2, -height/2);
+  rect(0, 0, 100, 100);  // now at top-left
+}
+```
+
+### 8. createGraphics cleanup
+
+```javascript
+// BAD: memory leak — buffer never freed
+function draw() {
+  let temp = createGraphics(width, height);  // new buffer every frame!
+  // ...
+}
+
+// GOOD: create once, reuse
+let temp;
+function setup() {
+  temp = createGraphics(width, height);
+}
+function draw() {
+  temp.clear();
+  // ... reuse temp
+}
+
+// If you must create/destroy:
+temp.remove();  // explicitly free
+```
+
+### 9. noise() returns 0-1, not -1 to 1
+
+```javascript
+let n = noise(x);  // 0.0 to 1.0 (biased toward 0.5)
+
+// For -1 to 1 range:
+let n = noise(x) * 2 - 1;
+
+// For a specific range:
+let n = map(noise(x), 0, 1, -100, 100);
+```
+
+### 10. saveCanvas() in draw() saves every frame
+
+```javascript
+// BAD: saves a PNG every single frame
+function draw() {
+  // ... render ...
+  saveCanvas('output', 'png');  // DON'T DO THIS
+}
+
+// GOOD: save once via keyboard
+function keyPressed() {
+  if (key === 's') saveCanvas('output', 'png');
+}
+
+// GOOD: save once after rendering static piece
+function draw() {
+  // ... render ...
+  saveCanvas('output', 'png');
+  noLoop();  // stop after saving
+}
+```
+
+### 11. console.log() in draw()
+
+```javascript
+// BAD: writes to DOM console every frame — massive overhead
+function draw() {
+  console.log(particles.length);  // 60 DOM writes/second
+}
+
+// GOOD: log periodically or conditionally
+function draw() {
+  if (frameCount % 60 === 0) console.log('FPS:', frameRate().toFixed(1));
+}
+```
+
+### 12. DOM manipulation in draw()
+
+```javascript
+// BAD: layout thrashing — 400-500x slower than canvas ops
+function draw() {
+  document.getElementById('counter').innerText = frameCount;
+  let el = document.querySelector('.info');  // DOM query per frame
+}
+
+// GOOD: cache DOM refs, update infrequently
+let counterEl;
+function setup() { counterEl = document.getElementById('counter'); }
+function draw() {
+  if (frameCount % 30 === 0) counterEl.innerText = frameCount;
+}
+```
+
+### 13. Not disabling FES in production
+
+```javascript
+// BAD: every p5 function call has error-checking overhead (up to 10x slower)
+function setup() { createCanvas(800, 800); }
+
+// GOOD: disable before any p5 code
+p5.disableFriendlyErrors = true;
+function setup() { createCanvas(800, 800); }
+
+// ALSO GOOD: use p5.min.js (FES stripped from minified build)
+```
+
+## Browser Compatibility
+
+### Safari Issues
+- WebGL shader precision: always declare `precision mediump float;`
+- `AudioContext` requires user gesture (`userStartAudio()`)
+- Some `blendMode()` options behave differently
+
+### Firefox Issues
+- `textToPoints()` may return slightly different point counts
+- WebGL extensions may differ from Chrome
+- Color profile handling can shift colors
+
+### Mobile Issues
+- Touch events need `return false` to prevent scroll
+- `devicePixelRatio` can be 2x or 3x — use `pixelDensity(1)` for performance
+- Smaller canvas recommended (720p or less)
+- Audio requires explicit user gesture to start
+
+## CORS Issues
+
+```javascript
+// Loading images/fonts from external URLs requires CORS headers
+// Local files need a server:
+// python3 -m http.server 8080
+
+// Or use a CORS proxy for external resources (not recommended for production)
+```
+
+## Memory Leaks
+
+### Symptoms
+- Framerate degrading over time
+- Browser tab memory growing unbounded
+- Page becomes unresponsive after minutes
+
+### Common Causes
+
+```javascript
+// 1. Growing arrays
+let history = [];
+function draw() {
+  history.push(someData);  // grows forever
+}
+// FIX: cap the array
+if (history.length > 1000) history.shift();
+
+// 2. Creating p5 objects in draw()
+function draw() {
+  let v = createVector(0, 0);  // allocation every frame
+}
+// FIX: reuse pre-allocated objects
+
+// 3. Unreleased graphics buffers
+let layers = [];
+function reset() {
+  for (let l of layers) l.remove();  // free old buffers
+  layers = [];
+}
+
+// 4. Event listener accumulation
+function setup() {
+  // BAD: adds new listener every time setup runs
+  window.addEventListener('resize', handler);
+}
+// FIX: use p5's built-in windowResized()
+```
+
+## Debugging Tips
+
+### Console Logging
+
+```javascript
+// Log once (not every frame)
+if (frameCount === 1) {
+  console.log('Canvas:', width, 'x', height);
+  console.log('Pixel density:', pixelDensity());
+  console.log('Renderer:', drawingContext.constructor.name);
+}
+
+// Log periodically
+if (frameCount % 60 === 0) {
+  console.log('FPS:', frameRate().toFixed(1));
+  console.log('Particles:', particles.length);
+}
+```
+
+### Visual Debugging
+
+```javascript
+// Show frame rate
+function draw() {
+  // ... your sketch ...
+  if (CONFIG.debug) {
+    fill(255, 0, 0);
+    noStroke();
+    textSize(14);
+    textAlign(LEFT, TOP);
+    text('FPS: ' + frameRate().toFixed(1), 10, 10);
+    text('Particles: ' + particles.length, 10, 28);
+    text('Frame: ' + frameCount, 10, 46);
+  }
+}
+
+// Toggle debug with 'd' key
+function keyPressed() {
+  if (key === 'd') CONFIG.debug = !CONFIG.debug;
+}
+```
+
+### Isolating Issues
+
+```javascript
+// Comment out layers to find the slow one
+function draw() {
+  renderBackground();      // comment out to test
+  // renderParticles();    // this might be slow
+  // renderPostEffects();  // or this
+}
+```

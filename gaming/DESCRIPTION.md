@@ -1,1 +1,3 @@
-LS0tCmRlc2NyaXB0aW9uOiBTa2lsbHMgZm9yIHNldHRpbmcgdXAsIGNvbmZpZ3VyaW5nLCBhbmQgbWFuYWdpbmcgZ2FtZSBzZXJ2ZXJzLCBtb2RwYWNrcywgYW5kIGdhbWluZy1yZWxhdGVkIGluZnJhc3RydWN0dXJlLgotLS0K
+---
+description: Skills for setting up, configuring, and managing game servers, modpacks, and gaming-related infrastructure.
+---

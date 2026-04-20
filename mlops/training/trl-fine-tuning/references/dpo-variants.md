@@ -1,1 +1,227 @@
-IyBEUE8gVmFyaWFudHMKCkNvbXBsZXRlIGd1aWRlIHRvIERpcmVjdCBQcmVmZXJlbmNlIE9wdGltaXphdGlvbiBsb3NzIHZhcmlhbnRzIGluIFRSTC4KCiMjIE92ZXJ2aWV3CgpEUE8gb3B0aW1pemVzIG1vZGVscyB1c2luZyBwcmVmZXJlbmNlIGRhdGEgKGNob3Nlbi9yZWplY3RlZCBwYWlycykuIFRSTCBzdXBwb3J0cyAxMCsgbG9zcyB2YXJpYW50cyBmb3IgZGlmZmVyZW50IHNjZW5hcmlvcy4KCiMjIExvc3MgVHlwZXMKCiMjIyAxLiBTaWdtb2lkIChTdGFuZGFyZCBEUE8pCgoqKkZvcm11bGEqKjogYC1sb2coc2lnbW9pZCjOsiAqIGxvZ2l0cykpYAoKKipXaGVuIHRvIHVzZSoqOiBEZWZhdWx0IGNob2ljZSwgZ2VuZXJhbCBwcmVmZXJlbmNlIGFsaWdubWVudAoKKipDb25maWcqKjoKYGBgcHl0aG9uCkRQT0NvbmZpZygKICAgIGxvc3NfdHlwZT0ic2lnbW9pZCIsCiAgICBiZXRhPTAuMSwgICMgS0wgcGVuYWx0eQogICAgcGVyX2RldmljZV90cmFpbl9iYXRjaF9zaXplPTY0LAogICAgbGVhcm5pbmdfcmF0ZT0xZS02CikKYGBgCgojIyMgMi4gSVBPIChJZGVudGl0eSBQb2xpY3kgT3B0aW1pemF0aW9uKQoKKipGb3JtdWxhKio6IGAobG9naXRzIC0gMS8oMs6yKSnCsmAKCioqV2hlbiB0byB1c2UqKjogQmV0dGVyIHRoZW9yZXRpY2FsIGZvdW5kYXRpb24sIHJlZHVjZSBvdmVyZml0dGluZwoKKipDb25maWcqKjoKYGBgcHl0aG9uCkRQT0NvbmZpZygKICAgIGxvc3NfdHlwZT0iaXBvIiwKICAgIGJldGE9MC4xLAogICAgcGVyX2RldmljZV90cmFpbl9iYXRjaF9zaXplPTkwLAogICAgbGVhcm5pbmdfcmF0ZT0xZS0yCikKYGBgCgojIyMgMy4gSGluZ2UgKFNMaUMpCgoqKkZvcm11bGEqKjogYFJlTFUoMSAtIM6yICogbG9naXRzKWAKCioqV2hlbiB0byB1c2UqKjogTWFyZ2luLWJhc2VkIG9iamVjdGl2ZQoKKipDb25maWcqKjoKYGBgcHl0aG9uCkRQT0NvbmZpZygKICAgIGxvc3NfdHlwZT0iaGluZ2UiLAogICAgYmV0YT0wLjEsCiAgICBwZXJfZGV2aWNlX3RyYWluX2JhdGNoX3NpemU9NTEyLAogICAgbGVhcm5pbmdfcmF0ZT0xZS00CikKYGBgCgojIyMgNC4gUm9idXN0IERQTwoKKipGb3JtdWxhKio6IFNpZ21vaWQgd2l0aCBsYWJlbCBzbW9vdGhpbmcgZm9yIG5vaXNlIHJvYnVzdG5lc3MKCioqV2hlbiB0byB1c2UqKjogTm9pc3kgcHJlZmVyZW5jZSBsYWJlbHMKCioqQ29uZmlnKio6CmBgYHB5dGhvbgpEUE9Db25maWcoCiAgICBsb3NzX3R5cGU9InJvYnVzdCIsCiAgICBiZXRhPTAuMDEsCiAgICBsYWJlbF9zbW9vdGhpbmc9MC4xLCAgIyBOb2lzZSBwcm9iYWJpbGl0eQogICAgcGVyX2RldmljZV90cmFpbl9iYXRjaF9zaXplPTE2LAogICAgbGVhcm5pbmdfcmF0ZT0xZS0zLAogICAgbWF4X3Byb21wdF9sZW5ndGg9MTI4LAogICAgbWF4X2xlbmd0aD01MTIKKQpgYGAKCiMjIyA1LiBCQ08gUGFpciAoQmluYXJ5IENsYXNzaWZpY2F0aW9uKQoKKipGb3JtdWxhKio6IFRyYWluIGJpbmFyeSBjbGFzc2lmaWVyIChjaG9zZW49MSwgcmVqZWN0ZWQ9MCkKCioqV2hlbiB0byB1c2UqKjogUGFpcndpc2UgcHJlZmVyZW5jZSBkYXRhCgoqKkNvbmZpZyoqOgpgYGBweXRob24KRFBPQ29uZmlnKAogICAgbG9zc190eXBlPSJiY29fcGFpciIsCiAgICBiZXRhPTAuMDEsCiAgICBwZXJfZGV2aWNlX3RyYWluX2JhdGNoX3NpemU9MTI4LAogICAgbGVhcm5pbmdfcmF0ZT01ZS03LAogICAgbWF4X3Byb21wdF9sZW5ndGg9MTUzNiwKICAgIG1heF9jb21wbGV0aW9uX2xlbmd0aD01MTIKKQpgYGAKCiMjIyA2LiBTUFBPIEhhcmQKCioqRm9ybXVsYSoqOiBQdXNoIGNob3NlbuKGkjAuNSwgcmVqZWN0ZWTihpItMC41CgoqKldoZW4gdG8gdXNlKio6IE5hc2ggZXF1aWxpYnJpdW0sIHNwYXJzZSBkYXRhCgoqKkNvbmZpZyoqOgpgYGBweXRob24KRFBPQ29uZmlnKAogICAgbG9zc190eXBlPSJzcHBvX2hhcmQiLAogICAgYmV0YT0wLjEKKQpgYGAKCiMjIyA3LiBEaXNjb1BPUAoKKipGb3JtdWxhKio6IExvZy1SYXRpbyBNb2R1bGF0ZWQgTG9zcwoKKipXaGVuIHRvIHVzZSoqOiBBdXRvbWF0ZWQgbG9zcyBkaXNjb3ZlcnkKCioqQ29uZmlnKio6CmBgYHB5dGhvbgpEUE9Db25maWcoCiAgICBsb3NzX3R5cGU9ImRpc2NvcG9wIiwKICAgIGJldGE9MC4wNSwKICAgIGRpc2NvcG9wX3RhdT0wLjA1LAogICAgcGVyX2RldmljZV90cmFpbl9iYXRjaF9zaXplPTY0LAogICAgbGVhcm5pbmdfcmF0ZT01ZS03CikKYGBgCgojIyMgOC4gQVBPIFplcm8KCioqRm9ybXVsYSoqOiBJbmNyZWFzZSBjaG9zZW4sIGRlY3JlYXNlIHJlamVjdGVkIGxpa2VsaWhvb2QKCioqV2hlbiB0byB1c2UqKjogTW9kZWwgd29yc2UgdGhhbiB3aW5uaW5nIG91dHB1dHMKCioqQ29uZmlnKio6CmBgYHB5dGhvbgpEUE9Db25maWcoCiAgICBsb3NzX3R5cGU9ImFwb196ZXJvIiwKICAgIGJldGE9MC4xLAogICAgcGVyX2RldmljZV90cmFpbl9iYXRjaF9zaXplPTY0LAogICAgbGVhcm5pbmdfcmF0ZT0yZS03LAogICAgbWF4X3Byb21wdF9sZW5ndGg9NTEyLAogICAgbWF4X2NvbXBsZXRpb25fbGVuZ3RoPTUxMgopCmBgYAoKIyMjIDkuIEFQTyBEb3duCgoqKkZvcm11bGEqKjogRGVjcmVhc2UgYm90aCwgZW1waGFzaXplIHJlamVjdGVkIHJlZHVjdGlvbgoKKipXaGVuIHRvIHVzZSoqOiBNb2RlbCBiZXR0ZXIgdGhhbiB3aW5uaW5nIG91dHB1dHMKCioqQ29uZmlnKio6CmBgYHB5dGhvbgpEUE9Db25maWcoCiAgICBsb3NzX3R5cGU9ImFwb19kb3duIiwKICAgIGJldGE9MC4xLAogICAgIyBTYW1lIGh5cGVycGFyYW1ldGVycyBhcyBhcG9femVybwopCmBgYAoKIyMjIDEwLiBBT1QgJiBBT1QgUGFpcgoKKipGb3JtdWxhKio6IERpc3RyaWJ1dGlvbmFsIGFsaWdubWVudCB2aWEgc3RvY2hhc3RpYyBkb21pbmFuY2UKCioqV2hlbiB0byB1c2UqKjoKLSBgYW90X3BhaXJgOiBQYWlyZWQgcHJlZmVyZW5jZSBkYXRhCi0gYGFvdGA6IFVucGFpcmVkIGRhdGEKCioqQ29uZmlnKio6CmBgYHB5dGhvbgpEUE9Db25maWcoCiAgICBsb3NzX3R5cGU9ImFvdF9wYWlyIiwgICMgb3IgImFvdCIKICAgIGJldGE9MC4xLAogICAgbGFiZWxfc21vb3RoaW5nPTAuMAopCmBgYAoKIyMgTXVsdGktTG9zcyBUcmFpbmluZwoKQ29tYmluZSBtdWx0aXBsZSBsb3NzZXM6CgpgYGBweXRob24KRFBPQ29uZmlnKAogICAgbG9zc190eXBlPVsic2lnbW9pZCIsICJpcG8iXSwKICAgIGxvc3Nfd2VpZ2h0cz1bMC43LCAwLjNdLCAgIyBXZWlnaHRlZCBjb21iaW5hdGlvbgogICAgYmV0YT0wLjEKKQpgYGAKCiMjIEtleSBQYXJhbWV0ZXJzCgojIyMgQmV0YSAozrIpCgpDb250cm9scyBkZXZpYXRpb24gZnJvbSByZWZlcmVuY2UgbW9kZWw6Ci0gKipIaWdoZXIqKiAoMC41KTogTW9yZSBjb25zZXJ2YXRpdmUsIHN0YXlzIGNsb3NlIHRvIHJlZmVyZW5jZQotICoqTG93ZXIqKiAoMC4wMSk6IE1vcmUgYWdncmVzc2l2ZSBhbGlnbm1lbnQKLSAqKkRlZmF1bHQqKjogMC4xCgojIyMgTGFiZWwgU21vb3RoaW5nCgpGb3Igcm9idXN0IERQTzoKLSAqKjAuMCoqOiBObyBzbW9vdGhpbmcgKGRlZmF1bHQpCi0gKiowLjEtMC4zKio6IE1vZGVyYXRlIG5vaXNlIHJvYnVzdG5lc3MKLSAqKjAuNSoqOiBNYXhpbXVtIG5vaXNlIHRvbGVyYW5jZQoKIyMjIE1heCBMZW5ndGhzCgotIGBtYXhfcHJvbXB0X2xlbmd0aGA6IDEyOC0xNTM2Ci0gYG1heF9jb21wbGV0aW9uX2xlbmd0aGA6IDEyOC01MTIKLSBgbWF4X2xlbmd0aGA6IFRvdGFsIHNlcXVlbmNlICgxMDI0LTIwNDgpCgojIyBDb21wYXJpc29uIFRhYmxlCgp8IExvc3MgfCBTcGVlZCB8IFN0YWJpbGl0eSB8IEJlc3QgRm9yIHwKfC0tLS0tLXwtLS0tLS0tfC0tLS0tLS0tLS0tfC0tLS0tLS0tLS18CnwgU2lnbW9pZCB8IEZhc3QgfCBHb29kIHwgKipHZW5lcmFsIHVzZSoqIHwKfCBJUE8gfCBGYXN0IHwgQmV0dGVyIHwgT3ZlcmZpdHRpbmcgaXNzdWVzIHwKfCBIaW5nZSB8IEZhc3QgfCBHb29kIHwgTWFyZ2luIG9iamVjdGl2ZXMgfAp8IFJvYnVzdCB8IEZhc3QgfCBCZXN0IHwgTm9pc3kgZGF0YSB8CnwgQkNPIHwgTWVkaXVtIHwgR29vZCB8IEJpbmFyeSBjbGFzc2lmaWNhdGlvbiB8CnwgRGlzY29QT1AgfCBGYXN0IHwgR29vZCB8IE5ldyBhcmNoaXRlY3R1cmVzIHwKfCBBUE8gfCBGYXN0IHwgR29vZCB8IE1vZGVsIHF1YWxpdHkgbWF0Y2hpbmcgfAoKIyMgUmVmZXJlbmNlcwoKLSBEUE8gcGFwZXI6IGh0dHBzOi8vYXJ4aXYub3JnL2Ficy8yMzA1LjE4MjkwCi0gSVBPIHBhcGVyOiBodHRwczovL2FyeGl2Lm9yZy9hYnMvMjMxMC4xMjAzNgotIFRSTCBkb2NzOiBodHRwczovL2h1Z2dpbmdmYWNlLmNvL2RvY3MvdHJsL2Rwb190cmFpbmVyCg==
+# DPO Variants
+
+Complete guide to Direct Preference Optimization loss variants in TRL.
+
+## Overview
+
+DPO optimizes models using preference data (chosen/rejected pairs). TRL supports 10+ loss variants for different scenarios.
+
+## Loss Types
+
+### 1. Sigmoid (Standard DPO)
+
+**Formula**: `-log(sigmoid(β * logits))`
+
+**When to use**: Default choice, general preference alignment
+
+**Config**:
+```python
+DPOConfig(
+    loss_type="sigmoid",
+    beta=0.1,  # KL penalty
+    per_device_train_batch_size=64,
+    learning_rate=1e-6
+)
+```
+
+### 2. IPO (Identity Policy Optimization)
+
+**Formula**: `(logits - 1/(2β))²`
+
+**When to use**: Better theoretical foundation, reduce overfitting
+
+**Config**:
+```python
+DPOConfig(
+    loss_type="ipo",
+    beta=0.1,
+    per_device_train_batch_size=90,
+    learning_rate=1e-2
+)
+```
+
+### 3. Hinge (SLiC)
+
+**Formula**: `ReLU(1 - β * logits)`
+
+**When to use**: Margin-based objective
+
+**Config**:
+```python
+DPOConfig(
+    loss_type="hinge",
+    beta=0.1,
+    per_device_train_batch_size=512,
+    learning_rate=1e-4
+)
+```
+
+### 4. Robust DPO
+
+**Formula**: Sigmoid with label smoothing for noise robustness
+
+**When to use**: Noisy preference labels
+
+**Config**:
+```python
+DPOConfig(
+    loss_type="robust",
+    beta=0.01,
+    label_smoothing=0.1,  # Noise probability
+    per_device_train_batch_size=16,
+    learning_rate=1e-3,
+    max_prompt_length=128,
+    max_length=512
+)
+```
+
+### 5. BCO Pair (Binary Classification)
+
+**Formula**: Train binary classifier (chosen=1, rejected=0)
+
+**When to use**: Pairwise preference data
+
+**Config**:
+```python
+DPOConfig(
+    loss_type="bco_pair",
+    beta=0.01,
+    per_device_train_batch_size=128,
+    learning_rate=5e-7,
+    max_prompt_length=1536,
+    max_completion_length=512
+)
+```
+
+### 6. SPPO Hard
+
+**Formula**: Push chosen→0.5, rejected→-0.5
+
+**When to use**: Nash equilibrium, sparse data
+
+**Config**:
+```python
+DPOConfig(
+    loss_type="sppo_hard",
+    beta=0.1
+)
+```
+
+### 7. DiscoPOP
+
+**Formula**: Log-Ratio Modulated Loss
+
+**When to use**: Automated loss discovery
+
+**Config**:
+```python
+DPOConfig(
+    loss_type="discopop",
+    beta=0.05,
+    discopop_tau=0.05,
+    per_device_train_batch_size=64,
+    learning_rate=5e-7
+)
+```
+
+### 8. APO Zero
+
+**Formula**: Increase chosen, decrease rejected likelihood
+
+**When to use**: Model worse than winning outputs
+
+**Config**:
+```python
+DPOConfig(
+    loss_type="apo_zero",
+    beta=0.1,
+    per_device_train_batch_size=64,
+    learning_rate=2e-7,
+    max_prompt_length=512,
+    max_completion_length=512
+)
+```
+
+### 9. APO Down
+
+**Formula**: Decrease both, emphasize rejected reduction
+
+**When to use**: Model better than winning outputs
+
+**Config**:
+```python
+DPOConfig(
+    loss_type="apo_down",
+    beta=0.1,
+    # Same hyperparameters as apo_zero
+)
+```
+
+### 10. AOT & AOT Pair
+
+**Formula**: Distributional alignment via stochastic dominance
+
+**When to use**:
+- `aot_pair`: Paired preference data
+- `aot`: Unpaired data
+
+**Config**:
+```python
+DPOConfig(
+    loss_type="aot_pair",  # or "aot"
+    beta=0.1,
+    label_smoothing=0.0
+)
+```
+
+## Multi-Loss Training
+
+Combine multiple losses:
+
+```python
+DPOConfig(
+    loss_type=["sigmoid", "ipo"],
+    loss_weights=[0.7, 0.3],  # Weighted combination
+    beta=0.1
+)
+```
+
+## Key Parameters
+
+### Beta (β)
+
+Controls deviation from reference model:
+- **Higher** (0.5): More conservative, stays close to reference
+- **Lower** (0.01): More aggressive alignment
+- **Default**: 0.1
+
+### Label Smoothing
+
+For robust DPO:
+- **0.0**: No smoothing (default)
+- **0.1-0.3**: Moderate noise robustness
+- **0.5**: Maximum noise tolerance
+
+### Max Lengths
+
+- `max_prompt_length`: 128-1536
+- `max_completion_length`: 128-512
+- `max_length`: Total sequence (1024-2048)
+
+## Comparison Table
+
+| Loss | Speed | Stability | Best For |
+|------|-------|-----------|----------|
+| Sigmoid | Fast | Good | **General use** |
+| IPO | Fast | Better | Overfitting issues |
+| Hinge | Fast | Good | Margin objectives |
+| Robust | Fast | Best | Noisy data |
+| BCO | Medium | Good | Binary classification |
+| DiscoPOP | Fast | Good | New architectures |
+| APO | Fast | Good | Model quality matching |
+
+## References
+
+- DPO paper: https://arxiv.org/abs/2305.18290
+- IPO paper: https://arxiv.org/abs/2310.12036
+- TRL docs: https://huggingface.co/docs/trl/dpo_trainer

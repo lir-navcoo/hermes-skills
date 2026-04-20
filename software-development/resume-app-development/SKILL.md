@@ -1,1 +1,227 @@
-LS0tCm5hbWU6IHJlc3VtZS1hcHAtZGV2ZWxvcG1lbnQKZGVzY3JpcHRpb246IOadjuedv+eugOWOhuW6lOeUqOeahOW8gOWPkeW3peS9nOa1ge+8jOWMheWQq0dpdEh1YuaOqOmAgeOAgeaVsOaNrue7k+aehOOAgea4suafk+aooeW8jwotLS0KCiMgUmVzdW1lIEFwcCBEZXZlbG9wbWVudCBXb3JrZmxvdwoKIyMgQ29udGV4dApnaXRodWIuY29tL2xpci1uYXZjb28vcmVzdW1l77yMR2l0SHViIFBhZ2VzIChicmFuY2g6IGBnaC1wYWdlc2ApCuaKgOacr+agiO+8mlJlYWN0ICsgVHlwZVNjcmlwdCArIFRhaWx3aW5kIENTUyArIFZpdGUgKyBzaGFkY24vdWkKCiMjIEdpdEh1YiBQdXNoIFdvcmtmbG93IChDcml0aWNhbCkKKipBbHdheXMgdmVyaWZ5IGJ1aWxkIGxvY2FsbHkgQkVGT1JFIHB1c2hpbmcgdG8gR2l0SHViLioqCgpgYGBiYXNoCmNkIC90bXAvcmVzdW1lLWJ1aWxkICYmIGNwIC90bXAvcmVzdW1lX2FwcC50c3ggc3JjL0FwcC50c3ggJiYgbnBtIHJ1biBidWlsZApgYGAKCklmIGJ1aWxkIGZhaWxzLCBmaXggVHlwZVNjcmlwdCBlcnJvcnMgbG9jYWxseS4gUHVzaCBvbmx5IGFmdGVyIGNsZWFuIGJ1aWxkLgoKKipQdXNoIHZpYSBHaXRIdWIgQVBJKiogKGdoIGNsaSBnaXQtY3JlZGVudGlhbCBkb2Vzbid0IHdvcmspOgpgYGBiYXNoClNIQT0kKGdoIGFwaSAicmVwb3MvbGlyLW5hdmNvby9yZXN1bWUvY29udGVudHMvc3JjL0FwcC50c3g/cmVmPW1haW4iIC0tanEgJy5zaGEnKQpDT05URU5UPSQoYmFzZTY0IC1pIC90bXAvcmVzdW1lX2FwcC50c3gpCmdoIGFwaSAtLW1ldGhvZCBQVVQgInJlcG9zL2xpci1uYXZjb28vcmVzdW1lL2NvbnRlbnRzL3NyYy9BcHAudHN4IiBcCiAgLWYgbWVzc2FnZT0iY29tbWl0IG1lc3NhZ2UiIC1mIGNvbnRlbnQ9IiRDT05URU5UIiAtZiBzaGE9IiRTSEEiCmBgYAoKIyMgTG9jYWwgRGV2IFNldHVwCmBgYGJhc2gKY2QgL3RtcCAmJiBnaXQgY2xvbmUgLS1kZXB0aD0xIGh0dHBzOi8vVE9LRU5AZ2l0aHViLmNvbS9saXItbmF2Y29vL3Jlc3VtZS5naXQgcmVzdW1lLWJ1aWxkCmNkIHJlc3VtZS1idWlsZCAmJiBucG0gaW5zdGFsbAojIEVkaXQgc3JjL0FwcC50c3gsIHRoZW46CmNwIC90bXAvcmVzdW1lX2FwcC50c3ggc3JjL0FwcC50c3ggJiYgbnBtIHJ1biBidWlsZApgYGAKCiMjIERhdGEgU3RydWN0dXJlOiBNdWx0aS1Sb2xlIENvbXBhbmllcyAoQmlsaW5ndWFsKQoKVXNlIGBjb21wYW5pZXNgIGFycmF5IGZvciBjb21wYW5pZXMgd2l0aCBtdWx0aXBsZSByb2xlcywgYGV4cGVyaWVuY2VgIGFycmF5IGZvciBzaW5nbGUtcm9sZSBjb21wYW5pZXMuIEFsbCB0ZXh0IGZpZWxkcyBoYXZlIGJpbGluZ3VhbCB2YXJpYW50cyAoYCpFbmAgc3VmZml4KS4KCmBgYHR5cGVzY3JpcHQKY29uc3QgcmVzdW1lRGF0YSA9IHsKICBjb21wYW5pZXM6IFsKICAgIHsKICAgICAgbmFtZTogJ+WFrOWPuOWQjScsCiAgICAgIG5hbWVFbjogJ0NvbXBhbnkgTmFtZSAoRW5nbGlzaCknLAogICAgICB0YWdzOiBbJ+e+juWboiddLCAgLy8gb3B0aW9uYWwsIHJlbmRlcmVkIG9uIGNvbXBhbnkgaGVhZGVyCiAgICAgIHJvbGVzOiBbCiAgICAgICAgeyBwZXJpb2Q6ICcyMDI0LjEwIOKAkyDoh7Pku4onLCBwZXJpb2RFbjogJ09jdCAyMDI0IOKAkyBQcmVzZW50Jywgcm9sZTogJ+iBjOS9jScsIHJvbGVFbjogJ1JvbGUgRU4nLCBkZXNjcmlwdGlvbjogJy4uLicsIGRlc2NyaXB0aW9uRW46ICcuLi4nLCBhY2hpZXZlbWVudDogJycsIGFjaGlldmVtZW50RW46ICcnIH0sCiAgICAgIF0sCiAgICB9LAogIF0sCiAgZXhwZXJpZW5jZTogWwogICAgeyBjb21wYW55OiAn5YW25LuW5YWs5Y+4JywgY29tcGFueUVuOiAnT3RoZXIgQ29tcGFueScsIHBlcmlvZDogJy4uLicsIHBlcmlvZEVuOiAnLi4uJywgcm9sZTogJy4uLicsIHJvbGVFbjogJy4uLicsIGRlc2NyaXB0aW9uOiAnLi4uJywgZGVzY3JpcHRpb25FbjogJy4uLicsIHRhZ3M6IFtdIH0sCiAgXSwKfQpgYGAKCioqS2V5IHJ1bGVzOioqCi0gKipETyBOT1QgdXNlIGBhcyBjb25zdGAqKiBvbiB0aGUgcmVzdW1lRGF0YSBvYmplY3Qg4oCUIGl0IGNhdXNlcyBUeXBlU2NyaXB0IHRvIGluZmVyIGBuZXZlcmAgdHlwZSBmb3IgYXJyYXlzIGFmdGVyIGZpbHRlcmluZywgYnJlYWtpbmcgc2tpbGwgcmVuZGVyaW5nCi0gVXNlIGAoZXhwIGFzIGFueSkuYWNoaWV2ZW1lbnRgIGZvciBvcHRpb25hbCBmaWVsZHMKLSBgY29tcGFuaWVzYCBhbmQgYGV4cGVyaWVuY2VgIGFyZSBzaWJsaW5nIGFycmF5cyBpbiByZXN1bWVEYXRhIChub3QgbmVzdGVkKQoKIyMgQmlsaW5ndWFsIFJlbmRlcmluZyBQYXR0ZXJuCgpVc2UgYSBoZWxwZXIgYEwoemgsIGVuKWAgZm9yIGFsbCB1c2VyLWZhY2luZyB0ZXh0OgoKYGBgdHlwZXNjcmlwdApjb25zdCBMID0gKHpoOiBzdHJpbmcsIGVuOiBzdHJpbmcpID0+IGxhbmcgPT09ICdlbicgPyBlbiA6IHpoCmNvbnN0IHQgPSBpMThuKGxhbmcpICAvLyB0IGZvciBzdGF0aWMgVUkgbGFiZWxzCgovLyBJbiBKU1g6CjxzcGFuPntMKCfmioDog73muIXljZUnLCAnU2tpbGxzJyl9PC9zcGFuPgo8cD57TCgn5LyY56eA5oiQ5p6cJywgJ0FjaGlldmVtZW50Jyl9OiB7TChyb2xlLmFjaGlldmVtZW50LCByb2xlLmFjaGlldmVtZW50RW4pfTwvcD4KCi8vIEZvciBza2lsbHMgY2F0ZWdvcnkgKGNhdGVnb3J5RW4gbWF5IGJlIHVuZGVmaW5lZCk6CjxwPntMKHNraWxsLmNhdGVnb3J5LCBza2lsbC5jYXRlZ29yeUVuIHx8IHNraWxsLmNhdGVnb3J5KX08L3A+CmBgYAoKKipDUklUSUNBTDogRm9yIG51bWJlcmVkIGxpc3QgaXRlbXMsIHVzZSBgaXRlbXNFbmAgYXJyYXkg4oCUIE5PVCBgTCh0ZXh0LCAnJylgKiouICAKQ2hpbmVzZSB1c2VzIGAx44CBYCBudW1iZXJpbmcsIEVuZ2xpc2ggdXNlcyBgMS5gIOKAlCByZWdleCBzcGxpdHRpbmcgZmFpbHMgc2lsZW50bHkgaW4gRW5nbGlzaCBtb2RlIGJlY2F1c2UgdGhlIHNlcGFyYXRvciBwYXR0ZXJucyBkb24ndCBtYXRjaC4KCioqRGF0YSBzdHJ1Y3R1cmUgZm9yIHJvbGVzIHdpdGggbnVtYmVyZWQgbGlzdHMg4oCUIGFsd2F5cyB1c2UgYGl0ZW1zRW5gOioqCmBgYHR5cGVzY3JpcHQKcm9sZXM6IFsKICB7CiAgICBwZXJpb2Q6ICcyMDIwLjA5IOKAkyAyMDIxLjA1JywgcGVyaW9kRW46ICdTZXAgMjAyMCDigJMgTWF5IDIwMjEnLAogICAgcm9sZTogJ+WuouaIt+aIkOWKn+e7j+eQhicsIHJvbGVFbjogJ0N1c3RvbWVyIFN1Y2Nlc3MgTWFuYWdlcicsCiAgICBkZXNjcmlwdGlvbjogJzHjgIHotJ/otKPmiafooYzlhazlj7jmlbTkvZPlrqLmiLfnrZbnlaXjgIIy44CB6LSf6LSj5a2Y6YeP5a6i5oi357ut6LS55oyH5qCHLi4uJywgZGVzY3JpcHRpb25FbjogJy4uLicsCiAgICBpdGVtc0VuOiBbJ0V4ZWN1dGVkIG92ZXJhbGwgY29tcGFueSBjdXN0b21lciBzdHJhdGVneScsICdNYW5hZ2VkIHJlbmV3YWwgdGFyZ2V0cyBmb3IgZXhpc3RpbmcgY3VzdG9tZXJzLi4uJywgJy4uLiddLCAgLy8gPC0tIGFsd2F5cyBhZGQgdGhpcwogICAgYWNoaWV2ZW1lbnQ6ICcuLi4nLCBhY2hpZXZlbWVudEVuOiAnLi4uJywKICB9Cl0KYGBgCgoqKkpTWCByZW5kZXJpbmcg4oCUIGFsd2F5cyBwcmVmZXIgYGl0ZW1zRW5gOioqCmBgYHRzeAp7cm9sZS5kZXNjcmlwdGlvbi5pbmNsdWRlcygn44CCJykgJiYgcm9sZS5kZXNjcmlwdGlvbi5tYXRjaCgvXlswLTld44CBLykgPyAoCiAgPG9sIGNsYXNzTmFtZT0ibXQtMiBzcGFjZS15LTEgbGlzdC1kZWNpbWFsIGxpc3QtaW5zaWRlIHRleHQtc20iPgogICAge3JvbGUuZGVzY3JpcHRpb24uc3BsaXQoLyg/PVswLTld44CBKS8pLmZpbHRlcihzID0+IHMudHJpbSgpKS5tYXAoKGl0ZW0sIGlkeCkgPT4gKAogICAgICA8bGkga2V5PXtpZHh9PgogICAgICAgIHtMKGl0ZW0ucmVwbGFjZSgvXlswLTl944CBXSsvLCAnJykudHJpbSgpLCAocm9sZSBhcyBhbnkpLml0ZW1zRW4/LltpZHhdIHx8IGl0ZW0ucmVwbGFjZSgvXlswLTl944CBXSsvLCAnJykudHJpbSgpKX0KICAgICAgPC9saT4KICAgICkpfQogIDwvb2w+CikgOiAoCiAgPHA+e0wocm9sZS5kZXNjcmlwdGlvbiwgcm9sZS5kZXNjcmlwdGlvbkVuKX08L3A+Cil9CmBgYAoKIyMgUHJpbnQgVGlwIFBhdHRlcm4KCkRvd25sb2FkIGJ1dHRvbiB3aXRoIGhvdmVyIHRvb2x0aXAgc2hvd2luZyBwcmludCB0aXAgYW5kIGhvdGtleToKYGBgdHN4CjxkaXYgY2xhc3NOYW1lPSJyZWxhdGl2ZSBncm91cCI+CiAgPGJ1dHRvbiBvbkNsaWNrPXtoYW5kbGVQcmludH0gLi4uIHRpdGxlPXtMKCfkuIvovb0gUERGIC8g5b+r5o236ZSuICcgKyB0LmhvdEtleSwgJ0Rvd25sb2FkIFBERiAvIEhvdGtleSAnICsgdC5ob3RLZXkpfT4KICAgIHsvKiBpY29uICovfQogIDwvYnV0dG9uPgogIDxkaXYgY2xhc3NOYW1lPSJhYnNvbHV0ZSByaWdodC0wIHRvcC1mdWxsIG10LTIgdy02NCBweC0zIHB5LTIuNSByb3VuZGVkLXhsIGJvcmRlciBzaGFkb3ctbGcgb3BhY2l0eS0wIGludmlzaWJsZSBncm91cC1ob3ZlcjpvcGFjaXR5LTEwMCBncm91cC1ob3Zlcjp2aXNpYmxlIHRyYW5zaXRpb24tYWxsIGR1cmF0aW9uLTIwMCB6LTUwIgogICAgc3R5bGU9e3sgYmFja2dyb3VuZDogY2FyZEJnLCBib3JkZXJDb2xvcjogY2FyZEJvcmRlciwgY29sb3I6IHRleHRTZWNvbmRhcnksIGZvbnRTaXplOiAnMTFweCcgfX0+CiAgICA8cCBjbGFzc05hbWU9ImZvbnQtbWVkaXVtIG1iLTEiIHN0eWxlPXt7IGNvbG9yOiB0ZXh0UHJpbWFyeSB9fT57TCgn8J+TjCAnICsgdC5wcmludFRpcFRpdGxlLCAn8J+TjCAnICsgdC5wcmludFRpcFRpdGxlKX08L3A+CiAgICA8cD57TCgn5Li65aKe5by65pWI5p6c77yM6K+35omT5Y2w5pe25Yu+6YCJIuaJk+WNsOiDjOaZryInLCB0LnByaW50VGlwKX08L3A+CiAgICA8cCBjbGFzc05hbWU9Im10LTEiIHN0eWxlPXt7IGNvbG9yOiB0ZXh0TXV0ZWQgfX0+e0woJ+W/q+aNt+mUrjogJyArIHQuaG90S2V5LCAnSG90a2V5OiAnICsgdC5ob3RLZXkpfTwvcD4KICA8L2Rpdj4KPC9kaXY+CmBgYAoKIyMgSlNYIFJlbmRlcmluZyBQYXR0ZXJuIChVbmlmaWVkLCBCaWxpbmd1YWwpCgpBbGwgZXhwZXJpZW5jZSBlbnRyaWVzIHJlbmRlciBpbiBhIHNpbmdsZSBgc3BhY2UteS00YCBjb250YWluZXIgKG5vIHNlcGFyYXRlIHNlY3Rpb25zIGZvciBjb21wYW5pZXMgdnMgZXhwZXJpZW5jZSkuCgpgYGB0c3gKPHNlY3Rpb24+CiAgPGgyIGNsYXNzTmFtZT0idGV4dC1sZyBmb250LXNlbWlib2xkIG1iLTMgZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIiIHN0eWxlPXt7IGNvbG9yOiB0ZXh0UHJpbWFyeSB9fT4KICAgIDxzcGFuIGNsYXNzTmFtZT0idy0xIGgtNSByb3VuZGVkLWZ1bGwgaW5saW5lLWJsb2NrIiBzdHlsZT17eyBiYWNrZ3JvdW5kOiBzZWN0aW9uQWNjZW50IH19IC8+CiAgICB7TCgn5bel5L2c57uP5Y6GJywgJ0V4cGVyaWVuY2UnKX0KICA8L2gyPgogIDxkaXYgY2xhc3NOYW1lPSJzcGFjZS15LTQiPgoKICAgIHsvKiBNdWx0aS1yb2xlIGNvbXBhbmllcyAqL30KICAgIHtyZXN1bWVEYXRhLmNvbXBhbmllcy5tYXAoKGNvbXBhbnksIGNpKSA9PiAoCiAgICAgIDxkaXYga2V5PXsnY28tJyArIGNpfSBjbGFzc05hbWU9InJvdW5kZWQteGwgYm9yZGVyIiBzdHlsZT17eyBiYWNrZ3JvdW5kOiBjYXJkQmcsIGJvcmRlckNvbG9yOiBjYXJkQm9yZGVyIH19PgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJweC01IHB5LTMgYm9yZGVyLWIgZmxleCBpdGVtcy1jZW50ZXIiIHN0eWxlPXt7IGJvcmRlckNvbG9yOiBjYXJkQm9yZGVyIH19PgogICAgICAgICAgPHAgY2xhc3NOYW1lPSJmb250LW1lZGl1bSIgc3R5bGU9e3sgY29sb3I6IHRleHRQcmltYXJ5IH19PntMKGNvbXBhbnkubmFtZSwgY29tcGFueS5uYW1lRW4pfTwvcD4KICAgICAgICAgIHsoY29tcGFueS50YWdzIHx8IFtdKS5tYXAodGFnID0+ICgKICAgICAgICAgICAgPHNwYW4ga2V5PXt0YWd9IGNsYXNzTmFtZT17YG1sLTIgdGV4dC1bMTBweF0gcHgtMS41IHB5LTAuNSByb3VuZGVkIGZvbnQtbWVkaXVtICR7dGFnTWVpdHVhbn1gfT4KICAgICAgICAgICAgICB7TCh0YWcsIHRhZyA9PT0gJ+e+juWboicgPyAnTWVpdHVhbicgOiB0YWcpfQogICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICApKX0KICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZGl2aWRlLXkiIHN0eWxlPXt7IGJvcmRlckNvbG9yOiBjYXJkQm9yZGVyIH19PgogICAgICAgICAge2NvbXBhbnkucm9sZXMubWFwKChyb2xlLCByaSkgPT4gKAogICAgICAgICAgICA8ZGl2IGtleT17J3JvbGUtJyArIHJpfSBjbGFzc05hbWU9InAtNSI+CiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtc3RhcnQganVzdGlmeS1iZXR3ZWVuIGdhcC0zIGZsZXgtd3JhcCI+CiAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9ImZvbnQtbWVkaXVtIHRleHQtc20iIHN0eWxlPXt7IGNvbG9yOiB0ZXh0U2Vjb25kYXJ5IH19PntMKHJvbGUucm9sZSwgcm9sZS5yb2xlRW4pfTwvcD4KICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC14cyB3aGl0ZXNwYWNlLW5vd3JhcCBtdC0wLjUiIHN0eWxlPXt7IGNvbG9yOiB0ZXh0TXV0ZWQgfX0+e0wocm9sZS5wZXJpb2QsIHJvbGUucGVyaW9kRW4pfTwvc3Bhbj4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICB7cm9sZS5kZXNjcmlwdGlvbi5pbmNsdWRlcygn44CCJykgJiYgcm9sZS5kZXNjcmlwdGlvbi5tYXRjaCgvXlswLTld44CBLykgPyAoCiAgICAgICAgICAgICAgICA8b2wgY2xhc3NOYW1lPSJtdC0yIHNwYWNlLXktMSBsaXN0LWRlY2ltYWwgbGlzdC1pbnNpZGUgdGV4dC1zbSIgc3R5bGU9e3sgY29sb3I6IHRleHRTZWNvbmRhcnkgfX0+CiAgICAgICAgICAgICAgICAgIHtyb2xlLmRlc2NyaXB0aW9uLnNwbGl0KC8oPz1bMC05XeOAgSkvKS5maWx0ZXIocyA9PiBzLnRyaW0oKSkubWFwKChpdGVtLCBpZHgpID0+ICgKICAgICAgICAgICAgICAgICAgICA8bGkga2V5PXtpZHh9PntMKGl0ZW0ucmVwbGFjZSgvXlswLTl944CBXSsvLCAnJykudHJpbSgpLCAnJyl9PC9saT4KICAgICAgICAgICAgICAgICAgKSl9CiAgICAgICAgICAgICAgICA8L29sPgogICAgICAgICAgICAgICkgOiAoCiAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9InRleHQtc20gbXQtMSBsZWFkaW5nLXJlbGF4ZWQiIHN0eWxlPXt7IGNvbG9yOiB0ZXh0U2Vjb25kYXJ5IH19PntMKHJvbGUuZGVzY3JpcHRpb24sIHJvbGUuZGVzY3JpcHRpb25Fbil9PC9wPgogICAgICAgICAgICAgICl9CiAgICAgICAgICAgICAge3JvbGUuYWNoaWV2ZW1lbnQgJiYgKAogICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9Im10LTMgcHgtMyBweS0yIHJvdW5kZWQtbGcgYm9yZGVyIiBzdHlsZT17eyBiYWNrZ3JvdW5kOiBpc0RhcmsgPyAncmdiYSg1OSwxMzAsMjQ2LDAuMSknIDogJ3JnYmEoNTksMTMwLDI0NiwwLjA2KScsIGJvcmRlckNvbG9yOiBpc0RhcmsgPyAncmdiYSg1OSwxMzAsMjQ2LDAuMjUpJyA6ICdyZ2JhKDU5LDEzMCwyNDYsMC4yKScgfX0+CiAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0idGV4dC14cyBmb250LW1lZGl1bSIgc3R5bGU9e3sgY29sb3I6IGlzRGFyayA/ICcjOTNjNWZkJyA6ICcjM2I4MmY2JyB9fT4KICAgICAgICAgICAgICAgICAgICB7TCgn5LyY56eA5oiQ5p6cJywgJ0FjaGlldmVtZW50Jyl9OiB7TChyb2xlLmFjaGlldmVtZW50LCByb2xlLmFjaGlldmVtZW50RW4pfQogICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICApfQogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICkpfQogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgICkpfQoKICAgIHsvKiBTaW5nbGUtcm9sZSBlbnRyaWVzIC0gc2FtZSBjYXJkIHN0eWxlICovfQogICAge3Jlc3VtZURhdGEuZXhwZXJpZW5jZS5tYXAoKGV4cCwgaSkgPT4gKAogICAgICA8ZGl2IGtleT17J2V4cC0nICsgaX0gY2xhc3NOYW1lPSJyb3VuZGVkLXhsIGJvcmRlciIgc3R5bGU9e3sgYmFja2dyb3VuZDogY2FyZEJnLCBib3JkZXJDb2xvcjogY2FyZEJvcmRlciB9fT4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0icHgtNSBweS0zIGJvcmRlci1iIGZsZXggaXRlbXMtY2VudGVyIiBzdHlsZT17eyBib3JkZXJDb2xvcjogY2FyZEJvcmRlciB9fT4KICAgICAgICAgIDxwIGNsYXNzTmFtZT0iZm9udC1tZWRpdW0iIHN0eWxlPXt7IGNvbG9yOiB0ZXh0UHJpbWFyeSB9fT57TChleHAuY29tcGFueSwgZXhwLmNvbXBhbnlFbil9PC9wPgogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJwLTUiPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtc3RhcnQganVzdGlmeS1iZXR3ZWVuIGdhcC0zIGZsZXgtd3JhcCI+CiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0iZm9udC1tZWRpdW0gdGV4dC1zbSIgc3R5bGU9e3sgY29sb3I6IHRleHRTZWNvbmRhcnkgfX0+e0woZXhwLnJvbGUsIGV4cC5yb2xlRW4pfTwvcD4KICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJ0ZXh0LXhzIHdoaXRlc3BhY2Utbm93cmFwIG10LTAuNSIgc3R5bGU9e3sgY29sb3I6IHRleHRNdXRlZCB9fT57TChleHAucGVyaW9kLCBleHAucGVyaW9kRW4pfTwvc3Bhbj4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPHAgY2xhc3NOYW1lPSJ0ZXh0LXNtIG10LTEgbGVhZGluZy1yZWxheGVkIiBzdHlsZT17eyBjb2xvcjogdGV4dFNlY29uZGFyeSB9fT57TChleHAuZGVzY3JpcHRpb24sIGV4cC5kZXNjcmlwdGlvbkVuKX08L3A+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgogICAgKSl9CiAgPC9kaXY+Cjwvc2VjdGlvbj4KYGBgCgoqKk5vdGU6KiogQm90aCBzaW5nbGUtcm9sZSBhbmQgbXVsdGktcm9sZSBjYXJkcyB1c2UgdGhlIHNhbWUgdmlzdWFsIHN0eWxlIChjb21wYW55IGhlYWRlciArIHJvbGUgYm9keSkuIFNpbmdsZS1yb2xlIGVudHJpZXMgc3RpbGwgcmVuZGVyIGluc2lkZSBhIGNvbXBhbnktaGVhZGVyIGRpdiBmb3IgdmlzdWFsIGNvbnNpc3RlbmN5LgoKIyMgVHlwZVNjcmlwdCBQaXRmYWxscwoKLSAqKkRPIE5PVCB1c2UgYGFzIGNvbnN0YCBvbiByZXN1bWVEYXRhKiog4oCUIGNhdXNlcyBUeXBlU2NyaXB0IHRvIGluZmVyIGBuZXZlcmAgdHlwZSBmb3IgZmlsdGVyZWQvdHJhbnNmb3JtZWQgYXJyYXlzLCBicmVha2luZyBza2lsbCByZW5kZXJpbmcuIFVzZSBwbGFpbiBvYmplY3QgbGl0ZXJhbC4KLSAqKlBhc3N3b3JkIHZhcmlhYmxlKio6IFdoZW4gZG9pbmcgZ2xvYmFsIGZpbmQtcmVwbGFjZSwgZW5zdXJlIGBDT1JSRUNUX1BBU1NXT1JEYCBpcyBub3QgYWNjaWRlbnRhbGx5IG92ZXJ3cml0dGVuIChlLmcuIHdpdGggYCcqKionYCkuIEFsd2F5cyB2ZXJpZnkgaXQgcmVhZHMgYGNvbnN0IENPUlJFQ1RfUEFTU1dPUkQ9J25hdmNvbydgIGJlZm9yZSBwdXNoaW5nLgotICoqT3B0aW9uYWwgYGFjaGlldmVtZW50YCoqOiBVc2UgYChleHAgYXMgYW55KS5hY2hpZXZlbWVudGAgc2luY2UgVHlwZVNjcmlwdCBkb2Vzbid0IGtub3cgYWJvdXQgb3B0aW9uYWwgZmllbGRzCi0gKipOdW1iZXJlZCBkZXNjcmlwdGlvbnMqKjogQ2hlY2sgYGV4cC5kZXNjcmlwdGlvbi5tYXRjaCgvXlswLTld44CBLylgIHRvIHJlbmRlciBhcyBgPG9sPmAgdnMgcGxhaW4gdGV4dAotICoqRHVwbGljYXRlIGVudHJpZXMgaW4gYXJyYXlzKio6IFdoZW4gYWRkaW5nIGJpbGluZ3VhbCBmaWVsZHMsIGJlIGNhcmVmdWwgbm90IHRvIGFjY2lkZW50YWxseSBjcmVhdGUgZHVwbGljYXRlIGFycmF5IGVudHJpZXMgKGUuZy4gdHdvIGlkZW50aWNhbCBza2lsbCBjYXRlZ29yaWVzIHdpdGggb25seSBFbmdsaXNoL0NoaW5lc2Ugc3BsaXQpLiBSZW1vdmUgYWxsIGR1cGxpY2F0ZXMgYmVmb3JlIHB1c2hpbmcuCgojIyBTZWN0aW9uIE9yZGVyCkFib3V0IOKGkiBTa2lsbHMg4oaSIEV4cGVyaWVuY2UgKENvbXBhbmllcyArIFNpbmdsZS1yb2xlIG1lcmdlZCkg4oaSIE9yaWdpbmFsIFByb2plY3RzIOKGkiBHaXRIdWIgUHJvamVjdHMg4oaSIEVkdWNhdGlvbiDihpIgRm9vdGVyCgojIyBBdmF0YXIKVXNlIERpbmdUYWxrIENETiBVUkwgZGlyZWN0bHkgKG5vIGxvY2FsIGZpbGUgbmVlZGVkKToKYGBgdHN4CjxpbWcgc3JjPSJodHRwczovL3N0YXRpYy5kaW5ndGFsay5jb20vbWVkaWEvbEFEUERobU96dXVBUGhqTkF0M05BdHdfNzMyXzczMy5qcGciIGFsdD17cmVzdW1lRGF0YS5uYW1lfSBjbGFzc05hbWU9InctZnVsbCBoLWZ1bGwgb2JqZWN0LWNvdmVyIiAvPgpgYGAKCiMjIENvbW1vbiBGaWxlIE9wZXJhdGlvbnMKCmBgYGJhc2gKIyBVcGxvYWQgZmlsZSB0byByZXBvCmdoIGFwaSAtLW1ldGhvZCBQVVQgInJlcG9zL2xpci1uYXZjb28vcmVzdW1lL2NvbnRlbnRzL3BhdGgvdG8vZmlsZSIgXAogIC1mIG1lc3NhZ2U9Im1zZyIgLWYgY29udGVudD0iJChiYXNlNjQgLWkgZmlsZS5qcGcgfCB0ciAtZCAnXG4nKSIKCiMgR2V0IGZpbGUgU0hBIGJlZm9yZSB1cGRhdGUKZ2ggYXBpICJyZXBvcy9saXItbmF2Y29vL3Jlc3VtZS9jb250ZW50cy9wYXRoP3JlZj1tYWluIiAtLWpxICcuc2hhJwpgYGAK
+---
+name: resume-app-development
+description: 李睿简历应用的开发工作流，包含GitHub推送、数据结构、渲染模式
+---
+
+# Resume App Development Workflow
+
+## Context
+github.com/lir-navcoo/resume，GitHub Pages (branch: `gh-pages`)
+技术栈：React + TypeScript + Tailwind CSS + Vite + shadcn/ui
+
+## GitHub Push Workflow (Critical)
+**Always verify build locally BEFORE pushing to GitHub.**
+
+```bash
+cd /tmp/resume-build && cp /tmp/resume_app.tsx src/App.tsx && npm run build
+```
+
+If build fails, fix TypeScript errors locally. Push only after clean build.
+
+**Push via GitHub API** (gh cli git-credential doesn't work):
+```bash
+SHA=$(gh api "repos/lir-navcoo/resume/contents/src/App.tsx?ref=main" --jq '.sha')
+CONTENT=$(base64 -i /tmp/resume_app.tsx)
+gh api --method PUT "repos/lir-navcoo/resume/contents/src/App.tsx" \
+  -f message="commit message" -f content="$CONTENT" -f sha="$SHA"
+```
+
+## Local Dev Setup
+```bash
+cd /tmp && git clone --depth=1 https://TOKEN@github.com/lir-navcoo/resume.git resume-build
+cd resume-build && npm install
+# Edit src/App.tsx, then:
+cp /tmp/resume_app.tsx src/App.tsx && npm run build
+```
+
+## Data Structure: Multi-Role Companies (Bilingual)
+
+Use `companies` array for companies with multiple roles, `experience` array for single-role companies. All text fields have bilingual variants (`*En` suffix).
+
+```typescript
+const resumeData = {
+  companies: [
+    {
+      name: '公司名',
+      nameEn: 'Company Name (English)',
+      tags: ['美团'],  // optional, rendered on company header
+      roles: [
+        { period: '2024.10 – 至今', periodEn: 'Oct 2024 – Present', role: '职位', roleEn: 'Role EN', description: '...', descriptionEn: '...', achievement: '', achievementEn: '' },
+      ],
+    },
+  ],
+  experience: [
+    { company: '其他公司', companyEn: 'Other Company', period: '...', periodEn: '...', role: '...', roleEn: '...', description: '...', descriptionEn: '...', tags: [] },
+  ],
+}
+```
+
+**Key rules:**
+- **DO NOT use `as const`** on the resumeData object — it causes TypeScript to infer `never` type for arrays after filtering, breaking skill rendering
+- Use `(exp as any).achievement` for optional fields
+- `companies` and `experience` are sibling arrays in resumeData (not nested)
+
+## Bilingual Rendering Pattern
+
+Use a helper `L(zh, en)` for all user-facing text:
+
+```typescript
+const L = (zh: string, en: string) => lang === 'en' ? en : zh
+const t = i18n(lang)  // t for static UI labels
+
+// In JSX:
+<span>{L('技能清单', 'Skills')}</span>
+<p>{L('优秀成果', 'Achievement')}: {L(role.achievement, role.achievementEn)}</p>
+
+// For skills category (categoryEn may be undefined):
+<p>{L(skill.category, skill.categoryEn || skill.category)}</p>
+```
+
+**CRITICAL: For numbered list items, use `itemsEn` array — NOT `L(text, '')`**.  
+Chinese uses `1、` numbering, English uses `1.` — regex splitting fails silently in English mode because the separator patterns don't match.
+
+**Data structure for roles with numbered lists — always use `itemsEn`:**
+```typescript
+roles: [
+  {
+    period: '2020.09 – 2021.05', periodEn: 'Sep 2020 – May 2021',
+    role: '客户成功经理', roleEn: 'Customer Success Manager',
+    description: '1、负责执行公司整体客户策略。2、负责存量客户续费指标...', descriptionEn: '...',
+    itemsEn: ['Executed overall company customer strategy', 'Managed renewal targets for existing customers...', '...'],  // <-- always add this
+    achievement: '...', achievementEn: '...',
+  }
+]
+```
+
+**JSX rendering — always prefer `itemsEn`:**
+```tsx
+{role.description.includes('。') && role.description.match(/^[0-9]、/) ? (
+  <ol className="mt-2 space-y-1 list-decimal list-inside text-sm">
+    {role.description.split(/(?=[0-9]、)/).filter(s => s.trim()).map((item, idx) => (
+      <li key={idx}>
+        {L(item.replace(/^[0-9}、]+/, '').trim(), (role as any).itemsEn?.[idx] || item.replace(/^[0-9}、]+/, '').trim())}
+      </li>
+    ))}
+  </ol>
+) : (
+  <p>{L(role.description, role.descriptionEn)}</p>
+)}
+```
+
+## Print Tip Pattern
+
+Download button with hover tooltip showing print tip and hotkey:
+```tsx
+<div className="relative group">
+  <button onClick={handlePrint} ... title={L('下载 PDF / 快捷键 ' + t.hotKey, 'Download PDF / Hotkey ' + t.hotKey)}>
+    {/* icon */}
+  </button>
+  <div className="absolute right-0 top-full mt-2 w-64 px-3 py-2.5 rounded-xl border shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
+    style={{ background: cardBg, borderColor: cardBorder, color: textSecondary, fontSize: '11px' }}>
+    <p className="font-medium mb-1" style={{ color: textPrimary }}>{L('📌 ' + t.printTipTitle, '📌 ' + t.printTipTitle)}</p>
+    <p>{L('为增强效果，请打印时勾选"打印背景"', t.printTip)}</p>
+    <p className="mt-1" style={{ color: textMuted }}>{L('快捷键: ' + t.hotKey, 'Hotkey: ' + t.hotKey)}</p>
+  </div>
+</div>
+```
+
+## JSX Rendering Pattern (Unified, Bilingual)
+
+All experience entries render in a single `space-y-4` container (no separate sections for companies vs experience).
+
+```tsx
+<section>
+  <h2 className="text-lg font-semibold mb-3 flex items-center gap-2" style={{ color: textPrimary }}>
+    <span className="w-1 h-5 rounded-full inline-block" style={{ background: sectionAccent }} />
+    {L('工作经历', 'Experience')}
+  </h2>
+  <div className="space-y-4">
+
+    {/* Multi-role companies */}
+    {resumeData.companies.map((company, ci) => (
+      <div key={'co-' + ci} className="rounded-xl border" style={{ background: cardBg, borderColor: cardBorder }}>
+        <div className="px-5 py-3 border-b flex items-center" style={{ borderColor: cardBorder }}>
+          <p className="font-medium" style={{ color: textPrimary }}>{L(company.name, company.nameEn)}</p>
+          {(company.tags || []).map(tag => (
+            <span key={tag} className={`ml-2 text-[10px] px-1.5 py-0.5 rounded font-medium ${tagMeituan}`}>
+              {L(tag, tag === '美团' ? 'Meituan' : tag)}
+            </span>
+          ))}
+        </div>
+        <div className="divide-y" style={{ borderColor: cardBorder }}>
+          {company.roles.map((role, ri) => (
+            <div key={'role-' + ri} className="p-5">
+              <div className="flex items-start justify-between gap-3 flex-wrap">
+                <p className="font-medium text-sm" style={{ color: textSecondary }}>{L(role.role, role.roleEn)}</p>
+                <span className="text-xs whitespace-nowrap mt-0.5" style={{ color: textMuted }}>{L(role.period, role.periodEn)}</span>
+              </div>
+              {role.description.includes('。') && role.description.match(/^[0-9]、/) ? (
+                <ol className="mt-2 space-y-1 list-decimal list-inside text-sm" style={{ color: textSecondary }}>
+                  {role.description.split(/(?=[0-9]、)/).filter(s => s.trim()).map((item, idx) => (
+                    <li key={idx}>{L(item.replace(/^[0-9}、]+/, '').trim(), '')}</li>
+                  ))}
+                </ol>
+              ) : (
+                <p className="text-sm mt-1 leading-relaxed" style={{ color: textSecondary }}>{L(role.description, role.descriptionEn)}</p>
+              )}
+              {role.achievement && (
+                <div className="mt-3 px-3 py-2 rounded-lg border" style={{ background: isDark ? 'rgba(59,130,246,0.1)' : 'rgba(59,130,246,0.06)', borderColor: isDark ? 'rgba(59,130,246,0.25)' : 'rgba(59,130,246,0.2)' }}>
+                  <p className="text-xs font-medium" style={{ color: isDark ? '#93c5fd' : '#3b82f6' }}>
+                    {L('优秀成果', 'Achievement')}: {L(role.achievement, role.achievementEn)}
+                  </p>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    ))}
+
+    {/* Single-role entries - same card style */}
+    {resumeData.experience.map((exp, i) => (
+      <div key={'exp-' + i} className="rounded-xl border" style={{ background: cardBg, borderColor: cardBorder }}>
+        <div className="px-5 py-3 border-b flex items-center" style={{ borderColor: cardBorder }}>
+          <p className="font-medium" style={{ color: textPrimary }}>{L(exp.company, exp.companyEn)}</p>
+        </div>
+        <div className="p-5">
+          <div className="flex items-start justify-between gap-3 flex-wrap">
+            <p className="font-medium text-sm" style={{ color: textSecondary }}>{L(exp.role, exp.roleEn)}</p>
+            <span className="text-xs whitespace-nowrap mt-0.5" style={{ color: textMuted }}>{L(exp.period, exp.periodEn)}</span>
+          </div>
+          <p className="text-sm mt-1 leading-relaxed" style={{ color: textSecondary }}>{L(exp.description, exp.descriptionEn)}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+```
+
+**Note:** Both single-role and multi-role cards use the same visual style (company header + role body). Single-role entries still render inside a company-header div for visual consistency.
+
+## TypeScript Pitfalls
+
+- **DO NOT use `as const` on resumeData** — causes TypeScript to infer `never` type for filtered/transformed arrays, breaking skill rendering. Use plain object literal.
+- **Password variable**: When doing global find-replace, ensure `CORRECT_PASSWORD` is not accidentally overwritten (e.g. with `'***'`). Always verify it reads `const CORRECT_PASSWORD='navcoo'` before pushing.
+- **Optional `achievement`**: Use `(exp as any).achievement` since TypeScript doesn't know about optional fields
+- **Numbered descriptions**: Check `exp.description.match(/^[0-9]、/)` to render as `<ol>` vs plain text
+- **Duplicate entries in arrays**: When adding bilingual fields, be careful not to accidentally create duplicate array entries (e.g. two identical skill categories with only English/Chinese split). Remove all duplicates before pushing.
+
+## Section Order
+About → Skills → Experience (Companies + Single-role merged) → Original Projects → GitHub Projects → Education → Footer
+
+## Avatar
+Use DingTalk CDN URL directly (no local file needed):
+```tsx
+<img src="https://static.dingtalk.com/media/lADPDhmOzuuAPhjNAt3NAtw_732_733.jpg" alt={resumeData.name} className="w-full h-full object-cover" />
+```
+
+## Common File Operations
+
+```bash
+# Upload file to repo
+gh api --method PUT "repos/lir-navcoo/resume/contents/path/to/file" \
+  -f message="msg" -f content="$(base64 -i file.jpg | tr -d '\n')"
+
+# Get file SHA before update
+gh api "repos/lir-navcoo/resume/contents/path?ref=main" --jq '.sha'
+```

@@ -1,1 +1,259 @@
-IyBEZXNpZ24gU3lzdGVtOiBBaXJibmIKCgo+ICoqSGVybWVzIEFnZW50IOKAlCBJbXBsZW1lbnRhdGlvbiBOb3RlcyoqCj4KPiBUaGUgb3JpZ2luYWwgc2l0ZSB1c2VzIHByb3ByaWV0YXJ5IGZvbnRzLiBGb3Igc2VsZi1jb250YWluZWQgSFRNTCBvdXRwdXQsIHVzZSB0aGVzZSBDRE4gc3Vic3RpdHV0ZXM6Cj4gLSAqKlByaW1hcnk6KiogYERNIFNhbnNgIHwgKipNb25vOioqIGBzeXN0ZW0gbW9ub3NwYWNlIHN0YWNrYAo+IC0gKipGb250IHN0YWNrIChDU1MpOioqIGBmb250LWZhbWlseTogJ0RNIFNhbnMnLCBzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sICdTZWdvZSBVSScsIFJvYm90bywgc2Fucy1zZXJpZjtgCj4gLSAqKk1vbm8gc3RhY2sgKENTUyk6KiogYGZvbnQtZmFtaWx5OiB1aS1tb25vc3BhY2UsIFNGTW9uby1SZWd1bGFyLCBNZW5sbywgTW9uYWNvLCBDb25zb2xhcywgJ0xpYmVyYXRpb24gTW9ubycsICdDb3VyaWVyIE5ldycsIG1vbm9zcGFjZTtgCj4gYGBgaHRtbAo+IDxsaW5rIGhyZWY9Imh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9RE0rU2FuczppdGFsLG9wc3osd2dodEAwLDkuLjQwLDEwMC4uMTAwMDsxLDkuLjQwLDEwMC4uMTAwMCZkaXNwbGF5PXN3YXAiIHJlbD0ic3R5bGVzaGVldCI+Cj4gYGBgCj4gVXNlIGB3cml0ZV9maWxlYCB0byBjcmVhdGUgSFRNTCwgc2VydmUgdmlhIGBnZW5lcmF0aXZlLXdpZGdldHNgIHNraWxsIChjbG91ZGZsYXJlZCB0dW5uZWwpLgo+IFZlcmlmeSB2aXN1YWwgYWNjdXJhY3kgd2l0aCBgYnJvd3Nlcl92aXNpb25gIGFmdGVyIGdlbmVyYXRpbmcuCgojIyAxLiBWaXN1YWwgVGhlbWUgJiBBdG1vc3BoZXJlCgpBaXJibmIncyB3ZWJzaXRlIGlzIGEgd2FybSwgcGhvdG9ncmFwaHktZm9yd2FyZCBtYXJrZXRwbGFjZSB0aGF0IGZlZWxzIGxpa2UgZmxpcHBpbmcgdGhyb3VnaCBhIHRyYXZlbCBtYWdhemluZSB3aGVyZSBldmVyeSBwYWdlIGludml0ZXMgeW91IHRvIGJvb2suIFRoZSBkZXNpZ24gb3BlcmF0ZXMgb24gYSBmb3VuZGF0aW9uIG9mIHB1cmUgd2hpdGUgKGAjZmZmZmZmYCkgd2l0aCB0aGUgaWNvbmljIFJhdXNjaCBSZWQgKGAjZmYzODVjYCkg4oCUIG5hbWVkIGFmdGVyIEFpcmJuYidzIGZpcnN0IHN0cmVldCBhZGRyZXNzIOKAlCBzZXJ2aW5nIGFzIHRoZSBzaW5ndWxhciBicmFuZCBhY2NlbnQuIFRoZSByZXN1bHQgaXMgYSBjbGVhbiwgYWlyeSBjYW52YXMgd2hlcmUgbGlzdGluZyBwaG90b2dyYXBoeSwgY2F0ZWdvcnkgaWNvbnMsIGFuZCB0aGUgcmVkIENUQSBidXR0b24gYXJlIHRoZSBvbmx5IHNvdXJjZXMgb2YgY29sb3IuCgpUaGUgdHlwb2dyYXBoeSB1c2VzIEFpcmJuYiBDZXJlYWwgVkYg4oCUIGEgY3VzdG9tIHZhcmlhYmxlIGZvbnQgdGhhdCdzIHdhcm0gYW5kIGFwcHJvYWNoYWJsZSwgd2l0aCByb3VuZGVkIHRlcm1pbmFscyB0aGF0IGVjaG8gdGhlIGJyYW5kJ3MgImJlbG9uZyBhbnl3aGVyZSIgcGhpbG9zb3BoeS4gVGhlIGZvbnQgb3BlcmF0ZXMgaW4gYSB0aWdodCB3ZWlnaHQgcmFuZ2U6IDUwMCAobWVkaXVtKSBmb3IgbW9zdCBVSSwgNjAwIChzZW1pYm9sZCkgZm9yIGVtcGhhc2lzLCBhbmQgNzAwIChib2xkKSBmb3IgcHJpbWFyeSBoZWFkaW5ncy4gU2xpZ2h0IG5lZ2F0aXZlIGxldHRlci1zcGFjaW5nICgtMC4xOHB4IHRvIC0wLjQ0cHgpIG9uIGhlYWRpbmdzIGNyZWF0ZXMgYSBjb3p5LCBpbnRpbWF0ZSByZWFkaW5nIGV4cGVyaWVuY2UgcmF0aGVyIHRoYW4gdGhlIGNvbXByZXNzZWQgZWZmaWNpZW5jeSBvZiB0ZWNoIGNvbXBhbmllcy4KCldoYXQgZGlzdGluZ3Vpc2hlcyBBaXJibmIgaXMgaXRzIHBhbGV0dGUtYmFzZWQgdG9rZW4gc3lzdGVtIChgLS1wYWxldHRlLSpgKSBhbmQgbXVsdGktbGF5ZXJlZCBzaGFkb3cgYXBwcm9hY2guIFRoZSBwcmltYXJ5IGNhcmQgc2hhZG93IHVzZXMgYSB0aHJlZS1sYXllciBzdGFjayAoYHJnYmEoMCwwLDAsMC4wMikgMHB4IDBweCAwcHggMXB4LCByZ2JhKDAsMCwwLDAuMDQpIDBweCAycHggNnB4LCByZ2JhKDAsMCwwLDAuMSkgMHB4IDRweCA4cHhgKSB0aGF0IGNyZWF0ZXMgYSBzdWJ0bGUsIHdhcm0gbGlmdC4gQ29tYmluZWQgd2l0aCBnZW5lcm91cyBib3JkZXItcmFkaXVzICg4cHjigJMzMnB4KSwgY2lyY3VsYXIgbmF2aWdhdGlvbiBjb250cm9scyAoNTAlKSwgYW5kIGEgY2F0ZWdvcnkgcGlsbCBiYXIgd2l0aCBob3Jpem9udGFsIHNjcm9sbGluZywgdGhlIGludGVyZmFjZSBmZWVscyB0YWN0aWxlIGFuZCBpbnZpdGluZyDigJQgZGVzaWduZWQgZm9yIGJyb3dzaW5nLCBub3QgY29tbWFuZGluZy4KCioqS2V5IENoYXJhY3RlcmlzdGljczoqKgotIFB1cmUgd2hpdGUgY2FudmFzIHdpdGggUmF1c2NoIFJlZCAoYCNmZjM4NWNgKSBhcyBzaW5ndWxhciBicmFuZCBhY2NlbnQKLSBBaXJibmIgQ2VyZWFsIFZGIOKAlCBjdXN0b20gdmFyaWFibGUgZm9udCB3aXRoIHdhcm0sIHJvdW5kZWQgdGVybWluYWxzCi0gUGFsZXR0ZS1iYXNlZCB0b2tlbiBzeXN0ZW0gKGAtLXBhbGV0dGUtKmApIGZvciBzeXN0ZW1hdGljIGNvbG9yIG1hbmFnZW1lbnQKLSBUaHJlZS1sYXllciBjYXJkIHNoYWRvd3M6IGJvcmRlciByaW5nICsgc29mdCBibHVyICsgc3Ryb25nZXIgYmx1cgotIEdlbmVyb3VzIGJvcmRlci1yYWRpdXM6IDhweCBidXR0b25zLCAxNHB4IGJhZGdlcywgMjBweCBjYXJkcywgMzJweCBsYXJnZSBlbGVtZW50cwotIENpcmN1bGFyIG5hdmlnYXRpb24gY29udHJvbHMgKDUwJSByYWRpdXMpCi0gUGhvdG9ncmFwaHktZmlyc3QgbGlzdGluZyBjYXJkcyDigJQgaW1hZ2VzIGFyZSB0aGUgaGVybyBjb250ZW50Ci0gTmVhci1ibGFjayB0ZXh0IChgIzIyMjIyMmApIOKAlCB3YXJtLCBub3QgY29sZAotIEx1eGUgUHVycGxlIChgIzQ2MDQ3OWApIGFuZCBQbHVzIE1hZ2VudGEgKGAjOTIxNzRkYCkgZm9yIHByZW1pdW0gdGllcnMKCiMjIDIuIENvbG9yIFBhbGV0dGUgJiBSb2xlcwoKIyMjIFByaW1hcnkgQnJhbmQKLSAqKlJhdXNjaCBSZWQqKiAoYCNmZjM4NWNgKTogYC0tcGFsZXR0ZS1iZy1wcmltYXJ5LWNvcmVgLCBwcmltYXJ5IENUQSwgYnJhbmQgYWNjZW50LCBhY3RpdmUgc3RhdGVzCi0gKipEZWVwIFJhdXNjaCoqIChgI2UwMGI0MWApOiBgLS1wYWxldHRlLWJnLXRlcnRpYXJ5LWNvcmVgLCBwcmVzc2VkL2RhcmsgdmFyaWFudCBvZiBicmFuZCByZWQKLSAqKkVycm9yIFJlZCoqIChgI2MxMzUxNWApOiBgLS1wYWxldHRlLXRleHQtcHJpbWFyeS1lcnJvcmAsIGVycm9yIHRleHQgb24gbGlnaHQKLSAqKkVycm9yIERhcmsqKiAoYCNiMzI1MDVgKTogYC0tcGFsZXR0ZS10ZXh0LXNlY29uZGFyeS1lcnJvci1ob3ZlcmAsIGVycm9yIGhvdmVyCgojIyMgUHJlbWl1bSBUaWVycwotICoqTHV4ZSBQdXJwbGUqKiAoYCM0NjA0NzlgKTogYC0tcGFsZXR0ZS1iZy1wcmltYXJ5LWx1eGVgLCBBaXJibmIgTHV4ZSB0aWVyIGJyYW5kaW5nCi0gKipQbHVzIE1hZ2VudGEqKiAoYCM5MjE3NGRgKTogYC0tcGFsZXR0ZS1iZy1wcmltYXJ5LXBsdXNgLCBBaXJibmIgUGx1cyB0aWVyIGJyYW5kaW5nCgojIyMgVGV4dCBTY2FsZQotICoqTmVhciBCbGFjayoqIChgIzIyMjIyMmApOiBgLS1wYWxldHRlLXRleHQtcHJpbWFyeWAsIHByaW1hcnkgdGV4dCDigJQgd2FybSwgbm90IGNvbGQKLSAqKkZvY3VzZWQgR3JheSoqIChgIzNmM2YzZmApOiBgLS1wYWxldHRlLXRleHQtZm9jdXNlZGAsIGZvY3VzZWQgc3RhdGUgdGV4dAotICoqU2Vjb25kYXJ5IEdyYXkqKiAoYCM2YTZhNmFgKTogU2Vjb25kYXJ5IHRleHQsIGRlc2NyaXB0aW9ucwotICoqRGlzYWJsZWQqKiAoYHJnYmEoMCwwLDAsMC4yNClgKTogYC0tcGFsZXR0ZS10ZXh0LW1hdGVyaWFsLWRpc2FibGVkYCwgZGlzYWJsZWQgc3RhdGUKLSAqKkxpbmsgRGlzYWJsZWQqKiAoYCM5MjkyOTJgKTogYC0tcGFsZXR0ZS10ZXh0LWxpbmstZGlzYWJsZWRgLCBkaXNhYmxlZCBsaW5rcwoKIyMjIEludGVyYWN0aXZlCi0gKipMZWdhbCBCbHVlKiogKGAjNDI4YmZmYCk6IGAtLXBhbGV0dGUtdGV4dC1sZWdhbGAsIGxlZ2FsIGxpbmtzLCBpbmZvcm1hdGlvbmFsCi0gKipCb3JkZXIgR3JheSoqIChgI2MxYzFjMWApOiBCb3JkZXIgY29sb3IgZm9yIGNhcmRzIGFuZCBkaXZpZGVycwotICoqTGlnaHQgU3VyZmFjZSoqIChgI2YyZjJmMmApOiBDaXJjdWxhciBuYXZpZ2F0aW9uIGJ1dHRvbnMsIHNlY29uZGFyeSBzdXJmYWNlcwoKIyMjIFN1cmZhY2UgJiBTaGFkb3dzCi0gKipQdXJlIFdoaXRlKiogKGAjZmZmZmZmYCk6IFBhZ2UgYmFja2dyb3VuZCwgY2FyZCBzdXJmYWNlcwotICoqQ2FyZCBTaGFkb3cqKiAoYHJnYmEoMCwwLDAsMC4wMikgMHB4IDBweCAwcHggMXB4LCByZ2JhKDAsMCwwLDAuMDQpIDBweCAycHggNnB4LCByZ2JhKDAsMCwwLDAuMSkgMHB4IDRweCA4cHhgKTogVGhyZWUtbGF5ZXIgd2FybSBsaWZ0Ci0gKipIb3ZlciBTaGFkb3cqKiAoYHJnYmEoMCwwLDAsMC4wOCkgMHB4IDRweCAxMnB4YCk6IEJ1dHRvbiBob3ZlciBlbGV2YXRpb24KCiMjIDMuIFR5cG9ncmFwaHkgUnVsZXMKCiMjIyBGb250IEZhbWlseQotICoqUHJpbWFyeSoqOiBgQWlyYm5iIENlcmVhbCBWRmAsIGZhbGxiYWNrczogYENpcmN1bGFyLCAtYXBwbGUtc3lzdGVtLCBzeXN0ZW0tdWksIFJvYm90bywgSGVsdmV0aWNhIE5ldWVgCi0gKipPcGVuVHlwZSBGZWF0dXJlcyoqOiBgInNhbHQiYCAoc3R5bGlzdGljIGFsdGVybmF0ZXMpIG9uIHNwZWNpZmljIGNhcHRpb24gZWxlbWVudHMKCiMjIyBIaWVyYXJjaHkKCnwgUm9sZSB8IEZvbnQgfCBTaXplIHwgV2VpZ2h0IHwgTGluZSBIZWlnaHQgfCBMZXR0ZXIgU3BhY2luZyB8IE5vdGVzIHwKfC0tLS0tLXwtLS0tLS18LS0tLS0tfC0tLS0tLS0tfC0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tLXwtLS0tLS0tfAp8IFNlY3Rpb24gSGVhZGluZyB8IEFpcmJuYiBDZXJlYWwgVkYgfCAyOHB4ICgxLjc1cmVtKSB8IDcwMCB8IDEuNDMgfCBub3JtYWwgfCBQcmltYXJ5IGhlYWRpbmdzIHwKfCBDYXJkIEhlYWRpbmcgfCBBaXJibmIgQ2VyZWFsIFZGIHwgMjJweCAoMS4zOHJlbSkgfCA2MDAgfCAxLjE4ICh0aWdodCkgfCAtMC40NHB4IHwgQ2F0ZWdvcnkvY2FyZCB0aXRsZXMgfAp8IENhcmQgSGVhZGluZyBNZWRpdW0gfCBBaXJibmIgQ2VyZWFsIFZGIHwgMjJweCAoMS4zOHJlbSkgfCA1MDAgfCAxLjE4ICh0aWdodCkgfCAtMC40NHB4IHwgTGlnaHRlciB2YXJpYW50IHwKfCBTdWItaGVhZGluZyB8IEFpcmJuYiBDZXJlYWwgVkYgfCAyMXB4ICgxLjMxcmVtKSB8IDcwMCB8IDEuNDMgfCBub3JtYWwgfCBCb2xkIHN1Yi1oZWFkaW5ncyB8CnwgRmVhdHVyZSBUaXRsZSB8IEFpcmJuYiBDZXJlYWwgVkYgfCAyMHB4ICgxLjI1cmVtKSB8IDYwMCB8IDEuMjAgKHRpZ2h0KSB8IC0wLjE4cHggfCBGZWF0dXJlIGhlYWRpbmdzIHwKfCBVSSBNZWRpdW0gfCBBaXJibmIgQ2VyZWFsIFZGIHwgMTZweCAoMS4wMHJlbSkgfCA1MDAgfCAxLjI1ICh0aWdodCkgfCBub3JtYWwgfCBOYXYsIGVtcGhhc2l6ZWQgdGV4dCB8CnwgVUkgU2VtaWJvbGQgfCBBaXJibmIgQ2VyZWFsIFZGIHwgMTZweCAoMS4wMHJlbSkgfCA2MDAgfCAxLjI1ICh0aWdodCkgfCBub3JtYWwgfCBTdHJvbmcgZW1waGFzaXMgfAp8IEJ1dHRvbiB8IEFpcmJuYiBDZXJlYWwgVkYgfCAxNnB4ICgxLjAwcmVtKSB8IDUwMCB8IDEuMjUgKHRpZ2h0KSB8IG5vcm1hbCB8IEJ1dHRvbiBsYWJlbHMgfAp8IEJvZHkgLyBMaW5rIHwgQWlyYm5iIENlcmVhbCBWRiB8IDE0cHggKDAuODhyZW0pIHwgNDAwIHwgMS40MyB8IG5vcm1hbCB8IFN0YW5kYXJkIGJvZHkgfAp8IEJvZHkgTWVkaXVtIHwgQWlyYm5iIENlcmVhbCBWRiB8IDE0cHggKDAuODhyZW0pIHwgNTAwIHwgMS4yOSAodGlnaHQpIHwgbm9ybWFsIHwgTWVkaXVtIGJvZHkgfAp8IENhcHRpb24gU2FsdCB8IEFpcmJuYiBDZXJlYWwgVkYgfCAxNHB4ICgwLjg4cmVtKSB8IDYwMCB8IDEuNDMgfCBub3JtYWwgfCBgInNhbHQiYCBmZWF0dXJlIHwKfCBTbWFsbCB8IEFpcmJuYiBDZXJlYWwgVkYgfCAxM3B4ICgwLjgxcmVtKSB8IDQwMCB8IDEuMjMgKHRpZ2h0KSB8IG5vcm1hbCB8IERlc2NyaXB0aW9ucyB8CnwgVGFnIHwgQWlyYm5iIENlcmVhbCBWRiB8IDEycHggKDAuNzVyZW0pIHwgNDAw4oCTNzAwIHwgMS4zMyB8IG5vcm1hbCB8IFRhZ3MsIHByaWNlcyB8CnwgQmFkZ2UgfCBBaXJibmIgQ2VyZWFsIFZGIHwgMTFweCAoMC42OXJlbSkgfCA2MDAgfCAxLjE4ICh0aWdodCkgfCBub3JtYWwgfCBgInNhbHQiYCBmZWF0dXJlIHwKfCBNaWNybyBVcHBlcmNhc2UgfCBBaXJibmIgQ2VyZWFsIFZGIHwgOHB4ICgwLjUwcmVtKSB8IDcwMCB8IDEuMjUgKHRpZ2h0KSB8IDAuMzJweCB8IGB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlYCB8CgojIyMgUHJpbmNpcGxlcwotICoqV2FybSB3ZWlnaHQgcmFuZ2UqKjogNTAw4oCTNzAwIGRvbWluYXRlLiBObyB3ZWlnaHQgMzAwIG9yIDQwMCBmb3IgaGVhZGluZ3Mg4oCUIEFpcmJuYidzIHR5cGUgaXMgYWx3YXlzIGF0IGxlYXN0IG1lZGl1bSB3ZWlnaHQsIGNyZWF0aW5nIGEgd2FybSwgY29uZmlkZW50IHZvaWNlLgotICoqTmVnYXRpdmUgdHJhY2tpbmcgb24gaGVhZGluZ3MqKjogLTAuMThweCB0byAtMC40NHB4IGxldHRlci1zcGFjaW5nIG9uIGRpc3BsYXkgY3JlYXRlcyBpbnRpbWF0ZSwgY296eSBoZWFkaW5ncyByYXRoZXIgdGhhbiBjb2xkLCBjb21wcmVzc2VkIG9uZXMuCi0gKioic2FsdCIgT3BlblR5cGUgZmVhdHVyZSoqOiBTdHlsaXN0aWMgYWx0ZXJuYXRlcyBvbiBzcGVjaWZpYyBVSSBlbGVtZW50cyAoYmFkZ2VzLCBjYXB0aW9ucykgY3JlYXRlIHN1YnRsZSBnbHlwaCB2YXJpYXRpb25zIHRoYXQgYWRkIHZpc3VhbCBpbnRlcmVzdC4KLSAqKlZhcmlhYmxlIGZvbnQgcHJlY2lzaW9uKio6IENlcmVhbCBWRiBlbmFibGVzIGNvbnRpbnVvdXMgd2VpZ2h0IGludGVycG9sYXRpb24sIHRob3VnaCB0aGUgZGVzaWduIHN5c3RlbSB1c2VzIGRpc2NyZXRlIHN0b3BzIGF0IDUwMCwgNjAwLCBhbmQgNzAwLgoKIyMgNC4gQ29tcG9uZW50IFN0eWxpbmdzCgojIyMgQnV0dG9ucwoKKipQcmltYXJ5IERhcmsqKgotIEJhY2tncm91bmQ6IGAjMjIyMjIyYCAobmVhci1ibGFjaywgbm90IHB1cmUgYmxhY2spCi0gVGV4dDogYCNmZmZmZmZgCi0gUGFkZGluZzogMHB4IDI0cHgKLSBSYWRpdXM6IDhweAotIEhvdmVyOiB0cmFuc2l0aW9ucyB0byBlcnJvci9icmFuZCBhY2NlbnQgdmlhIGB2YXIoLS1hY2NlbnQtYmctZXJyb3IpYAotIEZvY3VzOiBgMCAwIDAgMnB4IHZhcigtLXBhbGV0dGUtZ3JleTEwMDApYCByaW5nICsgc2NhbGUoMC45MikKCioqQ2lyY3VsYXIgTmF2KioKLSBCYWNrZ3JvdW5kOiBgI2YyZjJmMmAKLSBUZXh0OiBgIzIyMjIyMmAKLSBSYWRpdXM6IDUwJSAoY2lyY2xlKQotIEhvdmVyOiBzaGFkb3cgYHJnYmEoMCwwLDAsMC4wOCkgMHB4IDRweCAxMnB4YCArIHRyYW5zbGF0ZVgoNTAlKQotIEFjdGl2ZTogNHB4IHdoaXRlIGJvcmRlciByaW5nICsgZm9jdXMgc2hhZG93Ci0gRm9jdXM6IHNjYWxlKDAuOTIpIHNocmluayBhbmltYXRpb24KCiMjIyBDYXJkcyAmIENvbnRhaW5lcnMKLSBCYWNrZ3JvdW5kOiBgI2ZmZmZmZmAKLSBSYWRpdXM6IDE0cHggKGJhZGdlcyksIDIwcHggKGNhcmRzL2J1dHRvbnMpLCAzMnB4IChsYXJnZSkKLSBTaGFkb3c6IGByZ2JhKDAsMCwwLDAuMDIpIDBweCAwcHggMHB4IDFweCwgcmdiYSgwLDAsMCwwLjA0KSAwcHggMnB4IDZweCwgcmdiYSgwLDAsMCwwLjEpIDBweCA0cHggOHB4YCAodGhyZWUtbGF5ZXIpCi0gTGlzdGluZyBjYXJkczogZnVsbC13aWR0aCBwaG90b2dyYXBoeSBvbiB0b3AsIGRldGFpbHMgYmVsb3cKLSBDYXJvdXNlbCBjb250cm9sczogY2lyY3VsYXIgNTAlIGJ1dHRvbnMKCiMjIyBJbnB1dHMKLSBTZWFyY2g6IGAjMjIyMjIyYCB0ZXh0Ci0gRm9jdXM6IGB2YXIoLS1wYWxldHRlLWJnLXByaW1hcnktZXJyb3IpYCBiYWNrZ3JvdW5kIHRpbnQgKyBgMCAwIDAgMnB4YCByaW5nCi0gUmFkaXVzOiBkZXBlbmRzIG9uIGNvbnRleHQgKHNlYXJjaCBiYXIgdXNlcyBwaWxsLWxpa2Ugcm91bmRpbmcpCgojIyMgTmF2aWdhdGlvbgotIFdoaXRlIHN0aWNreSBoZWFkZXIgd2l0aCBzZWFyY2ggYmFyIGNlbnRlcmVkCi0gQWlyYm5iIGxvZ28gKFJhdXNjaCBSZWQpIGxlZnQtYWxpZ25lZAotIENhdGVnb3J5IGZpbHRlciBwaWxsczogaG9yaXpvbnRhbCBzY3JvbGwgYmVsb3cgc2VhcmNoCi0gQ2lyY3VsYXIgbmF2IGNvbnRyb2xzIGZvciBjYXJvdXNlbCBuYXZpZ2F0aW9uCi0gIkJlY29tZSBhIEhvc3QiIHRleHQgbGluaywgYXZhdGFyL21lbnUgcmlnaHQtYWxpZ25lZAoKIyMjIEltYWdlIFRyZWF0bWVudAotIExpc3RpbmcgcGhvdG9ncmFwaHkgZmlsbHMgY2FyZCB0b3Agd2l0aCBnZW5lcm91cyBoZWlnaHQKLSBJbWFnZSBjYXJvdXNlbCB3aXRoIGRvdCBpbmRpY2F0b3JzCi0gSGVhcnQvd2lzaGxpc3QgaWNvbiBvdmVybGF5IG9uIGltYWdlcwotIDhweOKAkzE0cHggcmFkaXVzIG9uIGNvbnRhaW5lZCBpbWFnZXMKCiMjIDUuIExheW91dCBQcmluY2lwbGVzCgojIyMgU3BhY2luZyBTeXN0ZW0KLSBCYXNlIHVuaXQ6IDhweAotIFNjYWxlOiAycHgsIDNweCwgNHB4LCA2cHgsIDhweCwgMTBweCwgMTFweCwgMTJweCwgMTVweCwgMTZweCwgMjJweCwgMjRweCwgMzJweAoKIyMjIEdyaWQgJiBDb250YWluZXIKLSBGdWxsLXdpZHRoIGhlYWRlciB3aXRoIGNlbnRlcmVkIHNlYXJjaAotIENhdGVnb3J5IHBpbGwgYmFyOiBob3Jpem9udGFsIHNjcm9sbGFibGUgcm93Ci0gTGlzdGluZyBncmlkOiByZXNwb25zaXZlIG11bHRpLWNvbHVtbiAoM+KAkzUgY29sdW1ucyBvbiBkZXNrdG9wKQotIEZ1bGwtd2lkdGggZm9vdGVyIHdpdGggbGluayBjb2x1bW5zCgojIyMgV2hpdGVzcGFjZSBQaGlsb3NvcGh5Ci0gKipUcmF2ZWwtbWFnYXppbmUgc3BhY2luZyoqOiBHZW5lcm91cyB2ZXJ0aWNhbCBwYWRkaW5nIGJldHdlZW4gc2VjdGlvbnMgY3JlYXRlcyBhIGxlaXN1cmVseSBicm93c2luZyBwYWNlIOKAlCB5b3UncmUgbWVhbnQgdG8gc2Nyb2xsIHNsb3dseSwgbGlrZSBicm93c2luZyBhIG1hZ2F6aW5lLgotICoqUGhvdG9ncmFwaHkgZGVuc2l0eSoqOiBMaXN0aW5nIGNhcmRzIGFyZSBwYWNrZWQgcmVsYXRpdmVseSB0aWdodGx5LCBidXQgZWFjaCBpbWFnZSBpcyBsYXJnZSBlbm91Z2ggdG8gZmVlbCBpbW1lcnNpdmUuCi0gKipTZWFyY2ggYmFyIHByb21pbmVuY2UqKjogVGhlIHNlYXJjaCBiYXIgZ2V0cyBtYXhpbXVtIHZlcnRpY2FsIHNwYWNlIGluIHRoZSBoZWFkZXIg4oCUIGZpbmRpbmcgeW91ciBkZXN0aW5hdGlvbiBpcyB0aGUgcHJpbWFyeSBhY3Rpb24uCgojIyMgQm9yZGVyIFJhZGl1cyBTY2FsZQotIFN1YnRsZSAoNHB4KTogU21hbGwgbGlua3MKLSBTdGFuZGFyZCAoOHB4KTogQnV0dG9ucywgdGFicywgc2VhcmNoIGVsZW1lbnRzCi0gQmFkZ2UgKDE0cHgpOiBTdGF0dXMgYmFkZ2VzLCBsYWJlbHMKLSBDYXJkICgyMHB4KTogRmVhdHVyZSBjYXJkcywgbGFyZ2UgYnV0dG9ucwotIExhcmdlICgzMnB4KTogTGFyZ2UgY29udGFpbmVycywgaGVybyBlbGVtZW50cwotIENpcmNsZSAoNTAlKTogTmF2IGNvbnRyb2xzLCBhdmF0YXJzLCBpY29ucwoKIyMgNi4gRGVwdGggJiBFbGV2YXRpb24KCnwgTGV2ZWwgfCBUcmVhdG1lbnQgfCBVc2UgfAp8LS0tLS0tLXwtLS0tLS0tLS0tLXwtLS0tLXwKfCBGbGF0IChMZXZlbCAwKSB8IE5vIHNoYWRvdyB8IFBhZ2UgYmFja2dyb3VuZCwgdGV4dCBibG9ja3MgfAp8IENhcmQgKExldmVsIDEpIHwgYHJnYmEoMCwwLDAsMC4wMikgMHB4IDBweCAwcHggMXB4LCByZ2JhKDAsMCwwLDAuMDQpIDBweCAycHggNnB4LCByZ2JhKDAsMCwwLDAuMSkgMHB4IDRweCA4cHhgIHwgTGlzdGluZyBjYXJkcywgc2VhcmNoIGJhciB8CnwgSG92ZXIgKExldmVsIDIpIHwgYHJnYmEoMCwwLDAsMC4wOCkgMHB4IDRweCAxMnB4YCB8IEJ1dHRvbiBob3ZlciwgaW50ZXJhY3RpdmUgbGlmdCB8CnwgQWN0aXZlIEZvY3VzIChMZXZlbCAzKSB8IGByZ2IoMjU1LDI1NSwyNTUpIDBweCAwcHggMHB4IDRweGAgKyBmb2N1cyByaW5nIHwgQWN0aXZlL2ZvY3VzZWQgZWxlbWVudHMgfAoKKipTaGFkb3cgUGhpbG9zb3BoeSoqOiBBaXJibmIncyB0aHJlZS1sYXllciBzaGFkb3cgc3lzdGVtIGNyZWF0ZXMgYSB3YXJtLCBuYXR1cmFsIGxpZnQuIExheWVyIDEgKGAwcHggMHB4IDBweCAxcHhgIGF0IDAuMDIgb3BhY2l0eSkgaXMgYW4gdWx0cmEtc3VidGxlIGJvcmRlci4gTGF5ZXIgMiAoYDBweCAycHggNnB4YCBhdCAwLjA0KSBwcm92aWRlcyBzb2Z0IGFtYmllbnQgc2hhZG93LiBMYXllciAzIChgMHB4IDRweCA4cHhgIGF0IDAuMSkgYWRkcyB0aGUgcHJpbWFyeSBsaWZ0LiBUaGlzIGdyYWR1YXRlZCBhcHByb2FjaCBjcmVhdGVzIHNoYWRvd3MgdGhhdCBmZWVsIGxpa2UgbmF0dXJhbCBsaWdodCByYXRoZXIgdGhhbiBDU1MgZWZmZWN0cy4KCiMjIDcuIERvJ3MgYW5kIERvbid0cwoKIyMjIERvCi0gVXNlIGAjMjIyMjIyYCAod2FybSBuZWFyLWJsYWNrKSBmb3IgdGV4dCDigJQgbmV2ZXIgcHVyZSBgIzAwMDAwMGAKLSBBcHBseSBSYXVzY2ggUmVkIChgI2ZmMzg1Y2ApIG9ubHkgZm9yIHByaW1hcnkgQ1RBcyBhbmQgYnJhbmQgbW9tZW50cyDigJQgaXQncyB0aGUgc2luZ3VsYXIgYWNjZW50Ci0gVXNlIEFpcmJuYiBDZXJlYWwgVkYgYXQgd2VpZ2h0IDUwMOKAkzcwMCDigJQgdGhlIHdhcm0gd2VpZ2h0IHJhbmdlIGlzIGludGVudGlvbmFsCi0gQXBwbHkgdGhlIHRocmVlLWxheWVyIGNhcmQgc2hhZG93IGZvciBhbGwgZWxldmF0ZWQgc3VyZmFjZXMKLSBVc2UgZ2VuZXJvdXMgYm9yZGVyLXJhZGl1czogOHB4IGZvciBidXR0b25zLCAyMHB4IGZvciBjYXJkcywgNTAlIGZvciBjb250cm9scwotIFVzZSBwaG90b2dyYXBoeSBhcyB0aGUgcHJpbWFyeSB2aXN1YWwgY29udGVudCDigJQgbGlzdGluZ3MgYXJlIGltYWdlLWZpcnN0Ci0gQXBwbHkgbmVnYXRpdmUgbGV0dGVyLXNwYWNpbmcgKC0wLjE4cHggdG8gLTAuNDRweCkgb24gaGVhZGluZ3MgZm9yIGludGltYWN5Ci0gVXNlIGNpcmN1bGFyICg1MCUpIGJ1dHRvbnMgZm9yIGNhcm91c2VsL25hdmlnYXRpb24gY29udHJvbHMKCiMjIyBEb24ndAotIERvbid0IHVzZSBwdXJlIGJsYWNrIChgIzAwMDAwMGApIGZvciB0ZXh0IOKAlCBhbHdheXMgYCMyMjIyMjJgICh3YXJtKQotIERvbid0IGFwcGx5IFJhdXNjaCBSZWQgdG8gYmFja2dyb3VuZHMgb3IgbGFyZ2Ugc3VyZmFjZXMg4oCUIGl0J3MgYW4gYWNjZW50IG9ubHkKLSBEb24ndCB1c2UgdGhpbiBmb250IHdlaWdodHMgKDMwMCwgNDAwKSBmb3IgaGVhZGluZ3Mg4oCUIDUwMCBtaW5pbXVtCi0gRG9uJ3QgdXNlIGhlYXZ5IHNoYWRvd3MgKD4wLjEgb3BhY2l0eSBhcyBwcmltYXJ5IGxheWVyKSDigJQga2VlcCB0aGVtIHdhcm0gYW5kIGdyYWR1YXRlZAotIERvbid0IHVzZSBzaGFycCBjb3JuZXJzICgw4oCTNHB4KSBvbiBjYXJkcyDigJQgdGhlIGdlbmVyb3VzIHJvdW5kaW5nICgyMHB4KykgaXMgY29yZQotIERvbid0IGludHJvZHVjZSBhZGRpdGlvbmFsIGJyYW5kIGNvbG9ycyBiZXlvbmQgdGhlIFJhdXNjaC9MdXhlL1BsdXMgc3lzdGVtCi0gRG9uJ3Qgb3ZlcnJpZGUgdGhlIHBhbGV0dGUgdG9rZW4gc3lzdGVtIOKAlCB1c2UgYC0tcGFsZXR0ZS0qYCB2YXJpYWJsZXMgY29uc2lzdGVudGx5CgojIyA4LiBSZXNwb25zaXZlIEJlaGF2aW9yCgojIyMgQnJlYWtwb2ludHMKfCBOYW1lIHwgV2lkdGggfCBLZXkgQ2hhbmdlcyB8CnwtLS0tLS18LS0tLS0tLXwtLS0tLS0tLS0tLS0tfAp8IE1vYmlsZSBTbWFsbCB8IDwzNzVweCB8IFNpbmdsZSBjb2x1bW4sIGNvbXBhY3Qgc2VhcmNoIHwKfCBNb2JpbGUgfCAzNzXigJM1NTBweCB8IFN0YW5kYXJkIG1vYmlsZSBsaXN0aW5nIGdyaWQgfAp8IFRhYmxldCBTbWFsbCB8IDU1MOKAkzc0NHB4IHwgMi1jb2x1bW4gbGlzdGluZ3MgfAp8IFRhYmxldCB8IDc0NOKAkzk1MHB4IHwgU2VhcmNoIGJhciBleHBhbnNpb24gfAp8IERlc2t0b3AgU21hbGwgfCA5NTDigJMxMTI4cHggfCAzLWNvbHVtbiBsaXN0aW5ncyB8CnwgRGVza3RvcCB8IDExMjjigJMxNDQwcHggfCA0LWNvbHVtbiBncmlkLCBmdWxsIGhlYWRlciB8CnwgTGFyZ2UgRGVza3RvcCB8IDE0NDDigJMxOTIwcHggfCA1LWNvbHVtbiBncmlkIHwKfCBVbHRyYS13aWRlIHwgPjE5MjBweCB8IE1heGltdW0gZ3JpZCB3aWR0aCB8CgoqTm90ZTogQWlyYm5iIGhhcyA2MSBkZXRlY3RlZCBicmVha3BvaW50cyDigJQgb25lIG9mIHRoZSBtb3N0IGdyYW51bGFyIHJlc3BvbnNpdmUgc3lzdGVtcyBvYnNlcnZlZCwgcmVmbGVjdGluZyB0aGVpciBvYnNlc3Npb24gd2l0aCBsYXlvdXQgYXQgZXZlcnkgcG9zc2libGUgc2NyZWVuIHNpemUuKgoKIyMjIFRvdWNoIFRhcmdldHMKLSBDaXJjdWxhciBuYXYgYnV0dG9uczogYWRlcXVhdGUgNTAlIHJhZGl1cyBzaXppbmcKLSBMaXN0aW5nIGNhcmRzOiBmdWxsLWNhcmQgdGFwIHRhcmdldCBvbiBtb2JpbGUKLSBTZWFyY2ggYmFyOiBwcm9taW5lbnRseSBzaXplZCBmb3IgdGh1bWIgaW50ZXJhY3Rpb24KLSBDYXRlZ29yeSBwaWxsczogaG9yaXpvbnRhbGx5IHNjcm9sbGFibGUgd2l0aCBnZW5lcm91cyBwYWRkaW5nCgojIyMgQ29sbGFwc2luZyBTdHJhdGVneQotIExpc3RpbmcgZ3JpZDogNSDihpIgNCDihpIgMyDihpIgMiDihpIgMSBjb2x1bW5zCi0gU2VhcmNoOiBleHBhbmRlZCBiYXIg4oaSIGNvbXBhY3QgYmFyIOKGkiBvdmVybGF5Ci0gQ2F0ZWdvcnkgcGlsbHM6IGhvcml6b250YWwgc2Nyb2xsIGF0IGFsbCBzaXplcwotIE5hdmlnYXRpb246IGZ1bGwgaGVhZGVyIOKGkiBtb2JpbGUgc2ltcGxpZmllZAotIE1hcDogc2lkZSBwYW5lbCDihpIgb3ZlcmxheS90b2dnbGUKCiMjIyBJbWFnZSBCZWhhdmlvcgotIExpc3RpbmcgcGhvdG9zOiBjYXJvdXNlbCB3aXRoIHN3aXBlIG9uIG1vYmlsZQotIFJlc3BvbnNpdmUgaW1hZ2Ugc2l6aW5nIHdpdGggYXNwZWN0IHJhdGlvIG1haW50YWluZWQKLSBIZWFydCBvdmVybGF5IHBvc2l0aW9uZWQgY29uc2lzdGVudGx5IGFjcm9zcyBzaXplcwotIFBob3RvIHF1YWxpdHkgYWRqdXN0cyBiYXNlZCBvbiB2aWV3cG9ydAoKIyMgOS4gQWdlbnQgUHJvbXB0IEd1aWRlCgojIyMgUXVpY2sgQ29sb3IgUmVmZXJlbmNlCi0gQmFja2dyb3VuZDogUHVyZSBXaGl0ZSAoYCNmZmZmZmZgKQotIFRleHQ6IE5lYXIgQmxhY2sgKGAjMjIyMjIyYCkKLSBCcmFuZCBhY2NlbnQ6IFJhdXNjaCBSZWQgKGAjZmYzODVjYCkKLSBTZWNvbmRhcnkgdGV4dDogYCM2YTZhNmFgCi0gRGlzYWJsZWQ6IGByZ2JhKDAsMCwwLDAuMjQpYAotIENhcmQgYm9yZGVyOiBgcmdiYSgwLDAsMCwwLjAyKSAwcHggMHB4IDBweCAxcHhgCi0gQ2FyZCBzaGFkb3c6IGZ1bGwgdGhyZWUtbGF5ZXIgc3RhY2sKLSBCdXR0b24gc3VyZmFjZTogYCNmMmYyZjJgCgojIyMgRXhhbXBsZSBDb21wb25lbnQgUHJvbXB0cwotICJDcmVhdGUgYSBsaXN0aW5nIGNhcmQ6IHdoaXRlIGJhY2tncm91bmQsIDIwcHggcmFkaXVzLiBUaHJlZS1sYXllciBzaGFkb3c6IHJnYmEoMCwwLDAsMC4wMikgMHB4IDBweCAwcHggMXB4LCByZ2JhKDAsMCwwLDAuMDQpIDBweCAycHggNnB4LCByZ2JhKDAsMCwwLDAuMSkgMHB4IDRweCA4cHguIFBob3RvIGFyZWEgb24gdG9wICgxNjoxMCByYXRpbyksIGRldGFpbHMgYmVsb3c6IDE2cHggQWlyYm5iIENlcmVhbCBWRiB3ZWlnaHQgNjAwIHRpdGxlLCAxNHB4IHdlaWdodCA0MDAgZGVzY3JpcHRpb24gaW4gIzZhNmE2YS4iCi0gIkRlc2lnbiBzZWFyY2ggYmFyOiB3aGl0ZSBiYWNrZ3JvdW5kLCBmdWxsIGNhcmQgc2hhZG93LCAzMnB4IHJhZGl1cyBvbiBjb250YWluZXIuIFNlYXJjaCB0ZXh0IGF0IDE0cHggQ2VyZWFsIFZGIHdlaWdodCA0MDAuIFJlZCBzZWFyY2ggYnV0dG9uICgjZmYzODVjLCA1MCUgcmFkaXVzLCB3aGl0ZSBpY29uKS4iCi0gIkJ1aWxkIGNhdGVnb3J5IHBpbGwgYmFyOiBob3Jpem9udGFsIHNjcm9sbGFibGUgcm93LiBFYWNoIHBpbGw6IDE0cHggQ2VyZWFsIFZGIHdlaWdodCA2MDAsICMyMjIyMjIgdGV4dCwgYm90dG9tIGJvcmRlciBvbiBhY3RpdmUuIENpcmN1bGFyIHByZXYvbmV4dCBhcnJvd3MgKCNmMmYyZjIgYmcsIDUwJSByYWRpdXMpLiIKLSAiQ3JlYXRlIGEgQ1RBIGJ1dHRvbjogIzIyMjIyMiBiYWNrZ3JvdW5kLCB3aGl0ZSB0ZXh0LCA4cHggcmFkaXVzLCAxNnB4IENlcmVhbCBWRiB3ZWlnaHQgNTAwLCAwcHggMjRweCBwYWRkaW5nLiBIb3ZlcjogYnJhbmQgcmVkIGFjY2VudC4iCi0gIkRlc2lnbiBhIGhlYXJ0L3dpc2hsaXN0IGJ1dHRvbjogdHJhbnNwYXJlbnQgYmFja2dyb3VuZCwgNTAlIHJhZGl1cywgd2hpdGUgaGVhcnQgaWNvbiB3aXRoIGRhcmsgc2hhZG93IG91dGxpbmUuIgoKIyMjIEl0ZXJhdGlvbiBHdWlkZQoxLiBTdGFydCB3aXRoIHdoaXRlIOKAlCB0aGUgcGhvdG9ncmFwaHkgcHJvdmlkZXMgYWxsIHRoZSBjb2xvcgoyLiBSYXVzY2ggUmVkICgjZmYzODVjKSBpcyB0aGUgc2luZ3VsYXIgYWNjZW50IOKAlCB1c2Ugc3BhcmluZ2x5IGZvciBDVEFzIG9ubHkKMy4gTmVhci1ibGFjayAoIzIyMjIyMikgZm9yIHRleHQg4oCUIHRoZSB3YXJtdGggbWF0dGVycwo0LiBUaHJlZS1sYXllciBzaGFkb3dzIGNyZWF0ZSBuYXR1cmFsLCB3YXJtIGxpZnQg4oCUIGFsd2F5cyB1c2UgYWxsIHRocmVlIGxheWVycwo1LiBHZW5lcm91cyByYWRpdXM6IDhweCBidXR0b25zLCAyMHB4IGNhcmRzLCA1MCUgY29udHJvbHMKNi4gQ2VyZWFsIFZGIGF0IDUwMOKAkzcwMCB3ZWlnaHQg4oCUIG5vIHRoaW4gd2VpZ2h0cyBmb3IgYW55IGhlYWRpbmcKNy4gUGhvdG9ncmFwaHkgaXMgaGVybyDigJQgZXZlcnkgbGlzdGluZyBjYXJkIGlzIGltYWdlLWZpcnN0Cg==
+# Design System: Airbnb
+
+
+> **Hermes Agent — Implementation Notes**
+>
+> The original site uses proprietary fonts. For self-contained HTML output, use these CDN substitutes:
+> - **Primary:** `DM Sans` | **Mono:** `system monospace stack`
+> - **Font stack (CSS):** `font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;`
+> - **Mono stack (CSS):** `font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;`
+> ```html
+> <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+> ```
+> Use `write_file` to create HTML, serve via `generative-widgets` skill (cloudflared tunnel).
+> Verify visual accuracy with `browser_vision` after generating.
+
+## 1. Visual Theme & Atmosphere
+
+Airbnb's website is a warm, photography-forward marketplace that feels like flipping through a travel magazine where every page invites you to book. The design operates on a foundation of pure white (`#ffffff`) with the iconic Rausch Red (`#ff385c`) — named after Airbnb's first street address — serving as the singular brand accent. The result is a clean, airy canvas where listing photography, category icons, and the red CTA button are the only sources of color.
+
+The typography uses Airbnb Cereal VF — a custom variable font that's warm and approachable, with rounded terminals that echo the brand's "belong anywhere" philosophy. The font operates in a tight weight range: 500 (medium) for most UI, 600 (semibold) for emphasis, and 700 (bold) for primary headings. Slight negative letter-spacing (-0.18px to -0.44px) on headings creates a cozy, intimate reading experience rather than the compressed efficiency of tech companies.
+
+What distinguishes Airbnb is its palette-based token system (`--palette-*`) and multi-layered shadow approach. The primary card shadow uses a three-layer stack (`rgba(0,0,0,0.02) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 6px, rgba(0,0,0,0.1) 0px 4px 8px`) that creates a subtle, warm lift. Combined with generous border-radius (8px–32px), circular navigation controls (50%), and a category pill bar with horizontal scrolling, the interface feels tactile and inviting — designed for browsing, not commanding.
+
+**Key Characteristics:**
+- Pure white canvas with Rausch Red (`#ff385c`) as singular brand accent
+- Airbnb Cereal VF — custom variable font with warm, rounded terminals
+- Palette-based token system (`--palette-*`) for systematic color management
+- Three-layer card shadows: border ring + soft blur + stronger blur
+- Generous border-radius: 8px buttons, 14px badges, 20px cards, 32px large elements
+- Circular navigation controls (50% radius)
+- Photography-first listing cards — images are the hero content
+- Near-black text (`#222222`) — warm, not cold
+- Luxe Purple (`#460479`) and Plus Magenta (`#92174d`) for premium tiers
+
+## 2. Color Palette & Roles
+
+### Primary Brand
+- **Rausch Red** (`#ff385c`): `--palette-bg-primary-core`, primary CTA, brand accent, active states
+- **Deep Rausch** (`#e00b41`): `--palette-bg-tertiary-core`, pressed/dark variant of brand red
+- **Error Red** (`#c13515`): `--palette-text-primary-error`, error text on light
+- **Error Dark** (`#b32505`): `--palette-text-secondary-error-hover`, error hover
+
+### Premium Tiers
+- **Luxe Purple** (`#460479`): `--palette-bg-primary-luxe`, Airbnb Luxe tier branding
+- **Plus Magenta** (`#92174d`): `--palette-bg-primary-plus`, Airbnb Plus tier branding
+
+### Text Scale
+- **Near Black** (`#222222`): `--palette-text-primary`, primary text — warm, not cold
+- **Focused Gray** (`#3f3f3f`): `--palette-text-focused`, focused state text
+- **Secondary Gray** (`#6a6a6a`): Secondary text, descriptions
+- **Disabled** (`rgba(0,0,0,0.24)`): `--palette-text-material-disabled`, disabled state
+- **Link Disabled** (`#929292`): `--palette-text-link-disabled`, disabled links
+
+### Interactive
+- **Legal Blue** (`#428bff`): `--palette-text-legal`, legal links, informational
+- **Border Gray** (`#c1c1c1`): Border color for cards and dividers
+- **Light Surface** (`#f2f2f2`): Circular navigation buttons, secondary surfaces
+
+### Surface & Shadows
+- **Pure White** (`#ffffff`): Page background, card surfaces
+- **Card Shadow** (`rgba(0,0,0,0.02) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 6px, rgba(0,0,0,0.1) 0px 4px 8px`): Three-layer warm lift
+- **Hover Shadow** (`rgba(0,0,0,0.08) 0px 4px 12px`): Button hover elevation
+
+## 3. Typography Rules
+
+### Font Family
+- **Primary**: `Airbnb Cereal VF`, fallbacks: `Circular, -apple-system, system-ui, Roboto, Helvetica Neue`
+- **OpenType Features**: `"salt"` (stylistic alternates) on specific caption elements
+
+### Hierarchy
+
+| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
+|------|------|------|--------|-------------|----------------|-------|
+| Section Heading | Airbnb Cereal VF | 28px (1.75rem) | 700 | 1.43 | normal | Primary headings |
+| Card Heading | Airbnb Cereal VF | 22px (1.38rem) | 600 | 1.18 (tight) | -0.44px | Category/card titles |
+| Card Heading Medium | Airbnb Cereal VF | 22px (1.38rem) | 500 | 1.18 (tight) | -0.44px | Lighter variant |
+| Sub-heading | Airbnb Cereal VF | 21px (1.31rem) | 700 | 1.43 | normal | Bold sub-headings |
+| Feature Title | Airbnb Cereal VF | 20px (1.25rem) | 600 | 1.20 (tight) | -0.18px | Feature headings |
+| UI Medium | Airbnb Cereal VF | 16px (1.00rem) | 500 | 1.25 (tight) | normal | Nav, emphasized text |
+| UI Semibold | Airbnb Cereal VF | 16px (1.00rem) | 600 | 1.25 (tight) | normal | Strong emphasis |
+| Button | Airbnb Cereal VF | 16px (1.00rem) | 500 | 1.25 (tight) | normal | Button labels |
+| Body / Link | Airbnb Cereal VF | 14px (0.88rem) | 400 | 1.43 | normal | Standard body |
+| Body Medium | Airbnb Cereal VF | 14px (0.88rem) | 500 | 1.29 (tight) | normal | Medium body |
+| Caption Salt | Airbnb Cereal VF | 14px (0.88rem) | 600 | 1.43 | normal | `"salt"` feature |
+| Small | Airbnb Cereal VF | 13px (0.81rem) | 400 | 1.23 (tight) | normal | Descriptions |
+| Tag | Airbnb Cereal VF | 12px (0.75rem) | 400–700 | 1.33 | normal | Tags, prices |
+| Badge | Airbnb Cereal VF | 11px (0.69rem) | 600 | 1.18 (tight) | normal | `"salt"` feature |
+| Micro Uppercase | Airbnb Cereal VF | 8px (0.50rem) | 700 | 1.25 (tight) | 0.32px | `text-transform: uppercase` |
+
+### Principles
+- **Warm weight range**: 500–700 dominate. No weight 300 or 400 for headings — Airbnb's type is always at least medium weight, creating a warm, confident voice.
+- **Negative tracking on headings**: -0.18px to -0.44px letter-spacing on display creates intimate, cozy headings rather than cold, compressed ones.
+- **"salt" OpenType feature**: Stylistic alternates on specific UI elements (badges, captions) create subtle glyph variations that add visual interest.
+- **Variable font precision**: Cereal VF enables continuous weight interpolation, though the design system uses discrete stops at 500, 600, and 700.
+
+## 4. Component Stylings
+
+### Buttons
+
+**Primary Dark**
+- Background: `#222222` (near-black, not pure black)
+- Text: `#ffffff`
+- Padding: 0px 24px
+- Radius: 8px
+- Hover: transitions to error/brand accent via `var(--accent-bg-error)`
+- Focus: `0 0 0 2px var(--palette-grey1000)` ring + scale(0.92)
+
+**Circular Nav**
+- Background: `#f2f2f2`
+- Text: `#222222`
+- Radius: 50% (circle)
+- Hover: shadow `rgba(0,0,0,0.08) 0px 4px 12px` + translateX(50%)
+- Active: 4px white border ring + focus shadow
+- Focus: scale(0.92) shrink animation
+
+### Cards & Containers
+- Background: `#ffffff`
+- Radius: 14px (badges), 20px (cards/buttons), 32px (large)
+- Shadow: `rgba(0,0,0,0.02) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 6px, rgba(0,0,0,0.1) 0px 4px 8px` (three-layer)
+- Listing cards: full-width photography on top, details below
+- Carousel controls: circular 50% buttons
+
+### Inputs
+- Search: `#222222` text
+- Focus: `var(--palette-bg-primary-error)` background tint + `0 0 0 2px` ring
+- Radius: depends on context (search bar uses pill-like rounding)
+
+### Navigation
+- White sticky header with search bar centered
+- Airbnb logo (Rausch Red) left-aligned
+- Category filter pills: horizontal scroll below search
+- Circular nav controls for carousel navigation
+- "Become a Host" text link, avatar/menu right-aligned
+
+### Image Treatment
+- Listing photography fills card top with generous height
+- Image carousel with dot indicators
+- Heart/wishlist icon overlay on images
+- 8px–14px radius on contained images
+
+## 5. Layout Principles
+
+### Spacing System
+- Base unit: 8px
+- Scale: 2px, 3px, 4px, 6px, 8px, 10px, 11px, 12px, 15px, 16px, 22px, 24px, 32px
+
+### Grid & Container
+- Full-width header with centered search
+- Category pill bar: horizontal scrollable row
+- Listing grid: responsive multi-column (3–5 columns on desktop)
+- Full-width footer with link columns
+
+### Whitespace Philosophy
+- **Travel-magazine spacing**: Generous vertical padding between sections creates a leisurely browsing pace — you're meant to scroll slowly, like browsing a magazine.
+- **Photography density**: Listing cards are packed relatively tightly, but each image is large enough to feel immersive.
+- **Search bar prominence**: The search bar gets maximum vertical space in the header — finding your destination is the primary action.
+
+### Border Radius Scale
+- Subtle (4px): Small links
+- Standard (8px): Buttons, tabs, search elements
+- Badge (14px): Status badges, labels
+- Card (20px): Feature cards, large buttons
+- Large (32px): Large containers, hero elements
+- Circle (50%): Nav controls, avatars, icons
+
+## 6. Depth & Elevation
+
+| Level | Treatment | Use |
+|-------|-----------|-----|
+| Flat (Level 0) | No shadow | Page background, text blocks |
+| Card (Level 1) | `rgba(0,0,0,0.02) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 6px, rgba(0,0,0,0.1) 0px 4px 8px` | Listing cards, search bar |
+| Hover (Level 2) | `rgba(0,0,0,0.08) 0px 4px 12px` | Button hover, interactive lift |
+| Active Focus (Level 3) | `rgb(255,255,255) 0px 0px 0px 4px` + focus ring | Active/focused elements |
+
+**Shadow Philosophy**: Airbnb's three-layer shadow system creates a warm, natural lift. Layer 1 (`0px 0px 0px 1px` at 0.02 opacity) is an ultra-subtle border. Layer 2 (`0px 2px 6px` at 0.04) provides soft ambient shadow. Layer 3 (`0px 4px 8px` at 0.1) adds the primary lift. This graduated approach creates shadows that feel like natural light rather than CSS effects.
+
+## 7. Do's and Don'ts
+
+### Do
+- Use `#222222` (warm near-black) for text — never pure `#000000`
+- Apply Rausch Red (`#ff385c`) only for primary CTAs and brand moments — it's the singular accent
+- Use Airbnb Cereal VF at weight 500–700 — the warm weight range is intentional
+- Apply the three-layer card shadow for all elevated surfaces
+- Use generous border-radius: 8px for buttons, 20px for cards, 50% for controls
+- Use photography as the primary visual content — listings are image-first
+- Apply negative letter-spacing (-0.18px to -0.44px) on headings for intimacy
+- Use circular (50%) buttons for carousel/navigation controls
+
+### Don't
+- Don't use pure black (`#000000`) for text — always `#222222` (warm)
+- Don't apply Rausch Red to backgrounds or large surfaces — it's an accent only
+- Don't use thin font weights (300, 400) for headings — 500 minimum
+- Don't use heavy shadows (>0.1 opacity as primary layer) — keep them warm and graduated
+- Don't use sharp corners (0–4px) on cards — the generous rounding (20px+) is core
+- Don't introduce additional brand colors beyond the Rausch/Luxe/Plus system
+- Don't override the palette token system — use `--palette-*` variables consistently
+
+## 8. Responsive Behavior
+
+### Breakpoints
+| Name | Width | Key Changes |
+|------|-------|-------------|
+| Mobile Small | <375px | Single column, compact search |
+| Mobile | 375–550px | Standard mobile listing grid |
+| Tablet Small | 550–744px | 2-column listings |
+| Tablet | 744–950px | Search bar expansion |
+| Desktop Small | 950–1128px | 3-column listings |
+| Desktop | 1128–1440px | 4-column grid, full header |
+| Large Desktop | 1440–1920px | 5-column grid |
+| Ultra-wide | >1920px | Maximum grid width |
+
+*Note: Airbnb has 61 detected breakpoints — one of the most granular responsive systems observed, reflecting their obsession with layout at every possible screen size.*
+
+### Touch Targets
+- Circular nav buttons: adequate 50% radius sizing
+- Listing cards: full-card tap target on mobile
+- Search bar: prominently sized for thumb interaction
+- Category pills: horizontally scrollable with generous padding
+
+### Collapsing Strategy
+- Listing grid: 5 → 4 → 3 → 2 → 1 columns
+- Search: expanded bar → compact bar → overlay
+- Category pills: horizontal scroll at all sizes
+- Navigation: full header → mobile simplified
+- Map: side panel → overlay/toggle
+
+### Image Behavior
+- Listing photos: carousel with swipe on mobile
+- Responsive image sizing with aspect ratio maintained
+- Heart overlay positioned consistently across sizes
+- Photo quality adjusts based on viewport
+
+## 9. Agent Prompt Guide
+
+### Quick Color Reference
+- Background: Pure White (`#ffffff`)
+- Text: Near Black (`#222222`)
+- Brand accent: Rausch Red (`#ff385c`)
+- Secondary text: `#6a6a6a`
+- Disabled: `rgba(0,0,0,0.24)`
+- Card border: `rgba(0,0,0,0.02) 0px 0px 0px 1px`
+- Card shadow: full three-layer stack
+- Button surface: `#f2f2f2`
+
+### Example Component Prompts
+- "Create a listing card: white background, 20px radius. Three-layer shadow: rgba(0,0,0,0.02) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 2px 6px, rgba(0,0,0,0.1) 0px 4px 8px. Photo area on top (16:10 ratio), details below: 16px Airbnb Cereal VF weight 600 title, 14px weight 400 description in #6a6a6a."
+- "Design search bar: white background, full card shadow, 32px radius on container. Search text at 14px Cereal VF weight 400. Red search button (#ff385c, 50% radius, white icon)."
+- "Build category pill bar: horizontal scrollable row. Each pill: 14px Cereal VF weight 600, #222222 text, bottom border on active. Circular prev/next arrows (#f2f2f2 bg, 50% radius)."
+- "Create a CTA button: #222222 background, white text, 8px radius, 16px Cereal VF weight 500, 0px 24px padding. Hover: brand red accent."
+- "Design a heart/wishlist button: transparent background, 50% radius, white heart icon with dark shadow outline."
+
+### Iteration Guide
+1. Start with white — the photography provides all the color
+2. Rausch Red (#ff385c) is the singular accent — use sparingly for CTAs only
+3. Near-black (#222222) for text — the warmth matters
+4. Three-layer shadows create natural, warm lift — always use all three layers
+5. Generous radius: 8px buttons, 20px cards, 50% controls
+6. Cereal VF at 500–700 weight — no thin weights for any heading
+7. Photography is hero — every listing card is image-first

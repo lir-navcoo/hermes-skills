@@ -1,1 +1,186 @@
-IyBEZXNpZ24gU3lzdGVtOiBXaXNlCgoKPiAqKkhlcm1lcyBBZ2VudCDigJQgSW1wbGVtZW50YXRpb24gTm90ZXMqKgo+Cj4gVGhlIG9yaWdpbmFsIHNpdGUgdXNlcyBwcm9wcmlldGFyeSBmb250cy4gRm9yIHNlbGYtY29udGFpbmVkIEhUTUwgb3V0cHV0LCB1c2UgdGhlc2UgQ0ROIHN1YnN0aXR1dGVzOgo+IC0gKipQcmltYXJ5OioqIGBJbnRlcmAgfCAqKk1vbm86KiogYHN5c3RlbSBtb25vc3BhY2Ugc3RhY2tgCj4gLSAqKkZvbnQgc3RhY2sgKENTUyk6KiogYGZvbnQtZmFtaWx5OiAnSW50ZXInLCBzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sICdTZWdvZSBVSScsIFJvYm90bywgc2Fucy1zZXJpZjtgCj4gLSAqKk1vbm8gc3RhY2sgKENTUyk6KiogYGZvbnQtZmFtaWx5OiB1aS1tb25vc3BhY2UsIFNGTW9uby1SZWd1bGFyLCBNZW5sbywgTW9uYWNvLCBDb25zb2xhcywgJ0xpYmVyYXRpb24gTW9ubycsICdDb3VyaWVyIE5ldycsIG1vbm9zcGFjZTtgCj4gYGBgaHRtbAo+IDxsaW5rIGhyZWY9Imh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9SW50ZXI6d2dodEAzMDA7NDAwOzUwMDs2MDA7NzAwJmRpc3BsYXk9c3dhcCIgcmVsPSJzdHlsZXNoZWV0Ij4KPiBgYGAKPiBVc2UgYHdyaXRlX2ZpbGVgIHRvIGNyZWF0ZSBIVE1MLCBzZXJ2ZSB2aWEgYGdlbmVyYXRpdmUtd2lkZ2V0c2Agc2tpbGwgKGNsb3VkZmxhcmVkIHR1bm5lbCkuCj4gVmVyaWZ5IHZpc3VhbCBhY2N1cmFjeSB3aXRoIGBicm93c2VyX3Zpc2lvbmAgYWZ0ZXIgZ2VuZXJhdGluZy4KCiMjIDEuIFZpc3VhbCBUaGVtZSAmIEF0bW9zcGhlcmUKCldpc2UncyB3ZWJzaXRlIGlzIGEgYm9sZCwgY29uZmlkZW50IGZpbnRlY2ggcGxhdGZvcm0gdGhhdCBjb21tdW5pY2F0ZXMgIm1vbmV5IHdpdGhvdXQgYm9yZGVycyIgdGhyb3VnaCBtYXNzaXZlIHR5cG9ncmFwaHkgYW5kIGEgZGlzdGluY3RpdmUgbGltZS1ncmVlbiBhY2NlbnQuIFRoZSBkZXNpZ24gb3BlcmF0ZXMgb24gYSB3YXJtIG9mZi13aGl0ZSBjYW52YXMgd2l0aCBuZWFyLWJsYWNrIHRleHQgKGAjMGUwZjBjYCkgYW5kIGEgc2lnbmF0dXJlIFdpc2UgR3JlZW4gKGAjOWZlODcwYCkg4oCUIGEgZnJlc2gsIGxpbWUtYnJpZ2h0IGNvbG9yIHRoYXQgZmVlbHMgYWxpdmUgYW5kIG9wdGltaXN0aWMsIHVubGlrZSB0aGUgY29ycG9yYXRlIGJsdWVzIG9mIHRyYWRpdGlvbmFsIGJhbmtpbmcuCgpUaGUgdHlwb2dyYXBoeSB1c2VzIFdpc2UgU2FucyDigJQgYSBwcm9wcmlldGFyeSBmb250IHVzZWQgYXQgZXh0cmVtZSB3ZWlnaHQgOTAwIChibGFjaykgZm9yIGRpc3BsYXkgaGVhZGluZ3Mgd2l0aCBhIHJlbWFya2FibHkgdGlnaHQgbGluZS1oZWlnaHQgb2YgMC44NSBhbmQgT3BlblR5cGUgYCJjYWx0ImAgKGNvbnRleHR1YWwgYWx0ZXJuYXRlcykuIEF0IDEyNnB4LCB0aGUgdGV4dCBpcyBzbyBkZW5zZSBpdCBmZWVscyBsaWtlIGEgcHJvdGVzdCBzaWduIOKAlCBib2xkLCB1cmdlbnQsIGFuZCBpbXBvc3NpYmxlIHRvIGlnbm9yZS4gSW50ZXIgc2VydmVzIGFzIHRoZSBib2R5IGZvbnQgd2l0aCB3ZWlnaHQgNjAwIGFzIHRoZSBkZWZhdWx0IGZvciBlbXBoYXNpcywgY3JlYXRpbmcgYSBjb25zaXN0ZW50bHkgY29uZmlkZW50IHZvaWNlLgoKV2hhdCBkaXN0aW5ndWlzaGVzIFdpc2UgaXMgaXRzIGdyZWVuLW9uLXdoaXRlLW9uLWJsYWNrIG1hdGVyaWFsIHBhbGV0dGUuIExpbWUgR3JlZW4gKGAjOWZlODcwYCkgYXBwZWFycyBvbiBidXR0b25zIHdpdGggZGFyayBncmVlbiB0ZXh0IChgIzE2MzMwMGApLCBjcmVhdGluZyBhIG5hdHVyZS1pbnNwaXJlZCBDVEEgdGhhdCBmZWVscyBmcmVzaC4gSG92ZXIgc3RhdGVzIHVzZSBgc2NhbGUoMS4wNSlgIGV4cGFuc2lvbiByYXRoZXIgdGhhbiBjb2xvciBjaGFuZ2VzIOKAlCBidXR0b25zIHBoeXNpY2FsbHkgZ3JvdyBvbiBpbnRlcmFjdGlvbi4gVGhlIGJvcmRlci1yYWRpdXMgc3lzdGVtIHVzZXMgOTk5OXB4IGZvciBidXR0b25zIChwaWxsKSwgMzBweOKAkzQwcHggZm9yIGNhcmRzLCBhbmQgdGhlIHNoYWRvdyBzeXN0ZW0gaXMgbWluaW1hbCDigJQganVzdCBgcmdiYSgxNCwxNSwxMiwwLjEyKSAwcHggMHB4IDBweCAxcHhgIHJpbmcgc2hhZG93cy4KCioqS2V5IENoYXJhY3RlcmlzdGljczoqKgotIFdpc2UgU2FucyBhdCB3ZWlnaHQgOTAwLCAwLjg1IGxpbmUtaGVpZ2h0IOKAlCBiaWxsYm9hcmQtc2NhbGUgYm9sZCBoZWFkbGluZXMKLSBMaW1lIEdyZWVuIChgIzlmZTg3MGApIGFjY2VudCB3aXRoIGRhcmsgZ3JlZW4gdGV4dCAoYCMxNjMzMDBgKSDigJQgbmF0dXJlLWluc3BpcmVkIGZpbnRlY2gKLSBJbnRlciBib2R5IGF0IHdlaWdodCA2MDAgYXMgZGVmYXVsdCDigJQgY29uZmlkZW50LCBub3QgbGlnaHQKLSBOZWFyLWJsYWNrIChgIzBlMGYwY2ApIHByaW1hcnkgd2l0aCB3YXJtIGdyZWVuIHVuZGVydG9uZQotIFNjYWxlKDEuMDUpIGhvdmVyIGFuaW1hdGlvbnMg4oCUIGJ1dHRvbnMgcGh5c2ljYWxseSBncm93Ci0gT3BlblR5cGUgYCJjYWx0ImAgb24gYWxsIHRleHQKLSBQaWxsIGJ1dHRvbnMgKDk5OTlweCkgYW5kIGxhcmdlIHJvdW5kZWQgY2FyZHMgKDMwcHjigJM0MHB4KQotIFNlbWFudGljIGNvbG9yIHN5c3RlbSB3aXRoIGNvbXByZWhlbnNpdmUgc3RhdGUgbWFuYWdlbWVudAoKIyMgMi4gQ29sb3IgUGFsZXR0ZSAmIFJvbGVzCgojIyMgUHJpbWFyeSBCcmFuZAotICoqTmVhciBCbGFjayoqIChgIzBlMGYwY2ApOiBQcmltYXJ5IHRleHQsIGJhY2tncm91bmQgZm9yIGRhcmsgc2VjdGlvbnMKLSAqKldpc2UgR3JlZW4qKiAoYCM5ZmU4NzBgKTogUHJpbWFyeSBDVEEgYnV0dG9uLCBicmFuZCBhY2NlbnQKLSAqKkRhcmsgR3JlZW4qKiAoYCMxNjMzMDBgKTogQnV0dG9uIHRleHQgb24gZ3JlZW4sIGRlZXAgZ3JlZW4gYWNjZW50Ci0gKipMaWdodCBNaW50KiogKGAjZTJmNmQ1YCk6IFNvZnQgZ3JlZW4gc3VyZmFjZSwgYmFkZ2UgYmFja2dyb3VuZHMKLSAqKlBhc3RlbCBHcmVlbioqIChgI2NkZmZhZGApOiBgLS1jb2xvci1pbnRlcmFjdGl2ZS1jb250cmFzdC1ob3ZlcmAsIGhvdmVyIGFjY2VudAoKIyMjIFNlbWFudGljCi0gKipQb3NpdGl2ZSBHcmVlbioqIChgIzA1NGQyOGApOiBgLS1jb2xvci1zZW50aW1lbnQtcG9zaXRpdmUtcHJpbWFyeWAsIHN1Y2Nlc3MKLSAqKkRhbmdlciBSZWQqKiAoYCNkMDMyMzhgKTogYC0tY29sb3ItaW50ZXJhY3RpdmUtbmVnYXRpdmUtaG92ZXJgLCBlcnJvci9kZXN0cnVjdGl2ZQotICoqV2FybmluZyBZZWxsb3cqKiAoYCNmZmQxMWFgKTogYC0tY29sb3Itc2VudGltZW50LXdhcm5pbmctaG92ZXJgLCB3YXJuaW5ncwotICoqQmFja2dyb3VuZCBDeWFuKiogKGByZ2JhKDU2LDIwMCwyNTUsMC4xMClgKTogYC0tY29sb3ItYmFja2dyb3VuZC1hY2NlbnRgLCBpbmZvIHRpbnQKLSAqKkJyaWdodCBPcmFuZ2UqKiAoYCNmZmMwOTFgKTogYC0tY29sb3ItYnJpZ2h0LW9yYW5nZWAsIHdhcm0gYWNjZW50CgojIyMgTmV1dHJhbAotICoqV2FybSBEYXJrKiogKGAjNDU0NzQ1YCk6IFNlY29uZGFyeSB0ZXh0LCBib3JkZXJzCi0gKipHcmF5KiogKGAjODY4Njg1YCk6IE11dGVkIHRleHQsIHRlcnRpYXJ5Ci0gKipMaWdodCBTdXJmYWNlKiogKGAjZThlYmU2YCk6IFN1YnRsZSBncmVlbi10aW50ZWQgbGlnaHQgc3VyZmFjZQoKIyMgMy4gVHlwb2dyYXBoeSBSdWxlcwoKIyMjIEZvbnQgRmFtaWxpZXMKLSAqKkRpc3BsYXkqKjogYFdpc2UgU2Fuc2AsIGZhbGxiYWNrOiBgSW50ZXJgIOKAlCBPcGVuVHlwZSBgImNhbHQiYCBvbiBhbGwgdGV4dAotICoqQm9keSAvIFVJKio6IGBJbnRlcmAsIGZhbGxiYWNrczogYEhlbHZldGljYSwgQXJpYWxgCgojIyMgSGllcmFyY2h5Cgp8IFJvbGUgfCBGb250IHwgU2l6ZSB8IFdlaWdodCB8IExpbmUgSGVpZ2h0IHwgTGV0dGVyIFNwYWNpbmcgfCBOb3RlcyB8CnwtLS0tLS18LS0tLS0tfC0tLS0tLXwtLS0tLS0tLXwtLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS18LS0tLS0tLXwKfCBEaXNwbGF5IE1lZ2EgfCBXaXNlIFNhbnMgfCAxMjZweCAoNy44OHJlbSkgfCA5MDAgfCAwLjg1ICh1bHRyYS10aWdodCkgfCBub3JtYWwgfCBgImNhbHQiYCB8CnwgRGlzcGxheSBIZXJvIHwgV2lzZSBTYW5zIHwgOTZweCAoNi4wMHJlbSkgfCA5MDAgfCAwLjg1IHwgbm9ybWFsIHwgYCJjYWx0ImAgfAp8IFNlY3Rpb24gSGVhZGluZyB8IFdpc2UgU2FucyB8IDY0cHggKDQuMDByZW0pIHwgOTAwIHwgMC44NSB8IG5vcm1hbCB8IGAiY2FsdCJgIHwKfCBTdWItaGVhZGluZyB8IFdpc2UgU2FucyB8IDQwcHggKDIuNTByZW0pIHwgOTAwIHwgMC44NSB8IG5vcm1hbCB8IGAiY2FsdCJgIHwKfCBBbHQgSGVhZGluZyB8IEludGVyIHwgNzhweCAoNC44OHJlbSkgfCA2MDAgfCAxLjEwICh0aWdodCkgfCAtMi4zNHB4IHwgYCJjYWx0ImAgfAp8IENhcmQgVGl0bGUgfCBJbnRlciB8IDI2cHggKDEuNjJyZW0pIHwgNjAwIHwgMS4yMyAodGlnaHQpIHwgLTAuMzlweCB8IGAiY2FsdCJgIHwKfCBGZWF0dXJlIFRpdGxlIHwgSW50ZXIgfCAyMnB4ICgxLjM4cmVtKSB8IDYwMCB8IDEuMjUgKHRpZ2h0KSB8IC0wLjM5NnB4IHwgYCJjYWx0ImAgfAp8IEJvZHkgfCBJbnRlciB8IDE4cHggKDEuMTNyZW0pIHwgNDAwIHwgMS40NCB8IDAuMThweCB8IGAiY2FsdCJgIHwKfCBCb2R5IFNlbWlib2xkIHwgSW50ZXIgfCAxOHB4ICgxLjEzcmVtKSB8IDYwMCB8IDEuNDQgfCAtMC4xMDhweCB8IGAiY2FsdCJgIHwKfCBCdXR0b24gfCBJbnRlciB8IDE4cHjigJMyMnB4IHwgNjAwIHwgMS4wMOKAkzEuNDQgfCAtMC4xMDhweCB8IGAiY2FsdCJgIHwKfCBDYXB0aW9uIHwgSW50ZXIgfCAxNHB4ICgwLjg4cmVtKSB8IDQwMOKAkzYwMCB8IDEuNTDigJMxLjg2IHwgLTAuMDg0cHggdG8gLTAuMTA4cHggfCBgImNhbHQiYCB8CnwgU21hbGwgfCBJbnRlciB8IDEycHggKDAuNzVyZW0pIHwgNDAw4oCTNjAwIHwgMS4wMOKAkzIuMTcgfCAtMC4wODRweCB0byAtMC4xMDhweCB8IGAiY2FsdCJgIHwKCiMjIyBQcmluY2lwbGVzCi0gKipXZWlnaHQgOTAwIGFzIGlkZW50aXR5Kio6IFdpc2UgU2FucyBCbGFjayAoOTAwKSBpcyB1c2VkIGV4Y2x1c2l2ZWx5IGZvciBkaXNwbGF5IOKAlCB0aGUgaGVhdmllc3Qgd2VpZ2h0IGluIGFueSBhbmFseXplZCBzeXN0ZW0uIEl0IGNyZWF0ZXMgdGV4dCB0aGF0IGZlZWxzIHN0YW1wZWQsIHByZXNzZWQsIHBoeXNpY2FsLgotICoqMC44NSBsaW5lLWhlaWdodCoqOiBUaGUgdGlnaHRlc3QgZGlzcGxheSBsaW5lLWhlaWdodCBhbmFseXplZC4gTGV0dGVycyBvdmVybGFwIHZlcnRpY2FsbHksIGNyZWF0aW5nIGRlbnNlLCBiaWxsYm9hcmQtbGlrZSB0ZXh0IGJsb2Nrcy4KLSAqKiJjYWx0IiBldmVyeXdoZXJlKio6IENvbnRleHR1YWwgYWx0ZXJuYXRlcyBlbmFibGVkIG9uIEFMTCB0ZXh0IOKAlCBib3RoIFdpc2UgU2FucyBhbmQgSW50ZXIuCi0gKipXZWlnaHQgNjAwIGFzIGJvZHkgZGVmYXVsdCoqOiBJbnRlciBTZW1pYm9sZCBpcyB0aGUgc3RhbmRhcmQgcmVhZGluZyB3ZWlnaHQg4oCUIGNvbmZpZGVudCwgbm90IGxpZ2h0LgoKIyMgNC4gQ29tcG9uZW50IFN0eWxpbmdzCgojIyMgQnV0dG9ucwoKKipQcmltYXJ5IEdyZWVuIFBpbGwqKgotIEJhY2tncm91bmQ6IGAjOWZlODcwYCAoV2lzZSBHcmVlbikKLSBUZXh0OiBgIzE2MzMwMGAgKERhcmsgR3JlZW4pCi0gUGFkZGluZzogNXB4IDE2cHgKLSBSYWRpdXM6IDk5OTlweAotIEhvdmVyOiBzY2FsZSgxLjA1KSDigJQgYnV0dG9uIHBoeXNpY2FsbHkgZ3Jvd3MKLSBBY3RpdmU6IHNjYWxlKDAuOTUpIOKAlCBidXR0b24gY29tcHJlc3NlcwotIEZvY3VzOiBpbnNldCByaW5nICsgb3V0bGluZQoKKipTZWNvbmRhcnkgU3VidGxlIFBpbGwqKgotIEJhY2tncm91bmQ6IGByZ2JhKDIyLCA1MSwgMCwgMC4wOClgIChkYXJrIGdyZWVuIGF0IDglIG9wYWNpdHkpCi0gVGV4dDogYCMwZTBmMGNgCi0gUGFkZGluZzogOHB4IDEycHggOHB4IDE2cHgKLSBSYWRpdXM6IDk5OTlweAotIFNhbWUgc2NhbGUgaG92ZXIvYWN0aXZlIGJlaGF2aW9yCgojIyMgQ2FyZHMgJiBDb250YWluZXJzCi0gUmFkaXVzOiAxNnB4IChzbWFsbCksIDMwcHggKG1lZGl1bSksIDQwcHggKGxhcmdlIGNhcmRzL3RhYmxlcykKLSBCb3JkZXI6IGAxcHggc29saWQgcmdiYSgxNCwxNSwxMiwwLjEyKWAgb3IgYDFweCBzb2xpZCAjOWZlODcwYCAoZ3JlZW4gYWNjZW50KQotIFNoYWRvdzogYHJnYmEoMTQsMTUsMTIsMC4xMikgMHB4IDBweCAwcHggMXB4YCAocmluZyBzaGFkb3cpCgojIyMgTmF2aWdhdGlvbgotIEdyZWVuLXRpbnRlZCBuYXZpZ2F0aW9uIGhvdmVyOiBgcmdiYSgyMTEsMjQyLDE5MiwwLjQpYAotIENsZWFuIGhlYWRlciB3aXRoIFdpc2Ugd29yZG1hcmsKLSBQaWxsIENUQXMgcmlnaHQtYWxpZ25lZAoKIyMgNS4gTGF5b3V0IFByaW5jaXBsZXMKCiMjIyBTcGFjaW5nIFN5c3RlbQotIEJhc2UgdW5pdDogOHB4Ci0gU2NhbGU6IDFweCwgMnB4LCAzcHgsIDRweCwgNXB4LCA4cHgsIDEwcHgsIDExcHgsIDEycHgsIDE2cHgsIDE4cHgsIDE5cHgsIDIwcHgsIDIycHgsIDI0cHgKCiMjIyBCb3JkZXIgUmFkaXVzIFNjYWxlCi0gTWluaW1hbCAoMnB4KTogTGlua3MsIGlucHV0cwotIFN0YW5kYXJkICgxMHB4KTogQ29tYm9ib3hlcywgaW5wdXRzCi0gQ2FyZCAoMTZweCk6IFNtYWxsIGNhcmRzLCBidXR0b25zLCByYWRpbwotIE1lZGl1bSAoMjBweCk6IExpbmtzLCBtZWRpdW0gY2FyZHMKLSBMYXJnZSAoMzBweCk6IEZlYXR1cmUgY2FyZHMKLSBTZWN0aW9uICg0MHB4KTogVGFibGVzLCBsYXJnZSBjYXJkcwotIE1lZ2EgKDEwMDBweCk6IFByZXNlbnRhdGlvbiBlbGVtZW50cwotIFBpbGwgKDk5OTlweCk6IEFsbCBidXR0b25zLCBpbWFnZXMKLSBDaXJjbGUgKDUwJSk6IEljb25zLCBiYWRnZXMKCiMjIDYuIERlcHRoICYgRWxldmF0aW9uCgp8IExldmVsIHwgVHJlYXRtZW50IHwgVXNlIHwKfC0tLS0tLS18LS0tLS0tLS0tLS18LS0tLS18CnwgRmxhdCAoTGV2ZWwgMCkgfCBObyBzaGFkb3cgfCBEZWZhdWx0IHwKfCBSaW5nIChMZXZlbCAxKSB8IGByZ2JhKDE0LDE1LDEyLDAuMTIpIDBweCAwcHggMHB4IDFweGAgfCBDYXJkIGJvcmRlcnMgfAp8IEluc2V0IChMZXZlbCAyKSB8IGByZ2IoMTM0LDEzNCwxMzMpIDBweCAwcHggMHB4IDFweCBpbnNldGAgfCBJbnB1dCBmb2N1cyB8CgoqKlNoYWRvdyBQaGlsb3NvcGh5Kio6IFdpc2UgdXNlcyBtaW5pbWFsIHNoYWRvd3Mg4oCUIHJpbmcgc2hhZG93cyBvbmx5LiBEZXB0aCBjb21lcyBmcm9tIHRoZSBib2xkIGdyZWVuIGFjY2VudCBhZ2FpbnN0IHRoZSBuZXV0cmFsIGNhbnZhcy4KCiMjIDcuIERvJ3MgYW5kIERvbid0cwoKIyMjIERvCi0gVXNlIFdpc2UgU2FucyB3ZWlnaHQgOTAwIGZvciBkaXNwbGF5IOKAlCB0aGUgZXh0cmVtZSBib2xkbmVzcyBJUyB0aGUgYnJhbmQKLSBBcHBseSBsaW5lLWhlaWdodCAwLjg1IG9uIFdpc2UgU2FucyBkaXNwbGF5IOKAlCB1bHRyYS10aWdodCBpcyBpbnRlbnRpb25hbAotIFVzZSBMaW1lIEdyZWVuICgjOWZlODcwKSBmb3IgcHJpbWFyeSBDVEFzIHdpdGggRGFyayBHcmVlbiAoIzE2MzMwMCkgdGV4dAotIEFwcGx5IHNjYWxlKDEuMDUpIGhvdmVyIGFuZCBzY2FsZSgwLjk1KSBhY3RpdmUgb24gYnV0dG9ucwotIEVuYWJsZSAiY2FsdCIgb24gYWxsIHRleHQKLSBVc2UgSW50ZXIgd2VpZ2h0IDYwMCBhcyB0aGUgYm9keSBkZWZhdWx0CgojIyMgRG9uJ3QKLSBEb24ndCB1c2UgbGlnaHQgZm9udCB3ZWlnaHRzIGZvciBXaXNlIFNhbnMg4oCUIG9ubHkgOTAwCi0gRG9uJ3QgcmVsYXggdGhlIDAuODUgbGluZS1oZWlnaHQgb24gZGlzcGxheSDigJQgdGhlIGRlbnNpdHkgaXMgdGhlIGlkZW50aXR5Ci0gRG9uJ3QgdXNlIHRoZSBXaXNlIEdyZWVuIGFzIGJhY2tncm91bmQgZm9yIGxhcmdlIHN1cmZhY2VzIOKAlCBpdCdzIGZvciBidXR0b25zIGFuZCBhY2NlbnRzCi0gRG9uJ3Qgc2tpcCB0aGUgc2NhbGUgYW5pbWF0aW9uIG9uIGJ1dHRvbnMKLSBEb24ndCB1c2UgdHJhZGl0aW9uYWwgc2hhZG93cyDigJQgcmluZyBzaGFkb3dzIG9ubHkKCiMjIDguIFJlc3BvbnNpdmUgQmVoYXZpb3IKCiMjIyBCcmVha3BvaW50cwp8IE5hbWUgfCBXaWR0aCB8IEtleSBDaGFuZ2VzIHwKfC0tLS0tLXwtLS0tLS0tfC0tLS0tLS0tLS0tLS18CnwgTW9iaWxlIHwgPDU3NnB4IHwgU2luZ2xlIGNvbHVtbiB8CnwgVGFibGV0IHwgNTc24oCTOTkycHggfCAyLWNvbHVtbiB8CnwgRGVza3RvcCB8IDk5MuKAkzE0NDBweCB8IEZ1bGwgbGF5b3V0IHwKfCBMYXJnZSB8ID4xNDQwcHggfCBFeHBhbmRlZCB8CgojIyA5LiBBZ2VudCBQcm9tcHQgR3VpZGUKCiMjIyBRdWljayBDb2xvciBSZWZlcmVuY2UKLSBUZXh0OiBOZWFyIEJsYWNrIChgIzBlMGYwY2ApCi0gQmFja2dyb3VuZDogV2hpdGUgKGAjZmZmZmZmYCAvIG9mZi13aGl0ZSkKLSBBY2NlbnQ6IFdpc2UgR3JlZW4gKGAjOWZlODcwYCkKLSBCdXR0b24gdGV4dDogRGFyayBHcmVlbiAoYCMxNjMzMDBgKQotIFNlY29uZGFyeTogR3JheSAoYCM4Njg2ODVgKQoKIyMjIEV4YW1wbGUgQ29tcG9uZW50IFByb21wdHMKLSAiQ3JlYXRlIGhlcm86IHdoaXRlIGJhY2tncm91bmQuIEhlYWRsaW5lIGF0IDk2cHggV2lzZSBTYW5zIHdlaWdodCA5MDAsIGxpbmUtaGVpZ2h0IDAuODUsICdjYWx0JyBlbmFibGVkLCAjMGUwZjBjIHRleHQuIEdyZWVuIHBpbGwgQ1RBICgjOWZlODcwLCA5OTk5cHggcmFkaXVzLCA1cHggMTZweCBwYWRkaW5nLCAjMTYzMzAwIHRleHQpLiBIb3Zlcjogc2NhbGUoMS4wNSkuIgotICJCdWlsZCBhIGNhcmQ6IDMwcHggcmFkaXVzLCAxcHggc29saWQgcmdiYSgxNCwxNSwxMiwwLjEyKS4gVGl0bGUgYXQgMjJweCBJbnRlciB3ZWlnaHQgNjAwLCBib2R5IGF0IDE4cHggd2VpZ2h0IDQwMC4iCgojIyMgSXRlcmF0aW9uIEd1aWRlCjEuIFdpc2UgU2FucyA5MDAgYXQgMC44NSBsaW5lLWhlaWdodCDigJQgdGhlIGV4dHJlbWUgd2VpZ2h0IElTIHRoZSBicmFuZAoyLiBMaW1lIEdyZWVuIGZvciBidXR0b25zIG9ubHkg4oCUIGRhcmsgZ3JlZW4gdGV4dCBvbiBncmVlbiBiYWNrZ3JvdW5kCjMuIFNjYWxlIGFuaW1hdGlvbnMgKDEuMDUgaG92ZXIsIDAuOTUgYWN0aXZlKSBvbiBhbGwgaW50ZXJhY3RpdmUgZWxlbWVudHMKNC4gImNhbHQiIG9uIGV2ZXJ5dGhpbmcg4oCUIGNvbnRleHR1YWwgYWx0ZXJuYXRlcyBhcmUgbWFuZGF0b3J5CjUuIEludGVyIDYwMCBmb3IgYm9keSDigJQgY29uZmlkZW50IHJlYWRpbmcgd2VpZ2h0Cg==
+# Design System: Wise
+
+
+> **Hermes Agent — Implementation Notes**
+>
+> The original site uses proprietary fonts. For self-contained HTML output, use these CDN substitutes:
+> - **Primary:** `Inter` | **Mono:** `system monospace stack`
+> - **Font stack (CSS):** `font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;`
+> - **Mono stack (CSS):** `font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;`
+> ```html
+> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+> ```
+> Use `write_file` to create HTML, serve via `generative-widgets` skill (cloudflared tunnel).
+> Verify visual accuracy with `browser_vision` after generating.
+
+## 1. Visual Theme & Atmosphere
+
+Wise's website is a bold, confident fintech platform that communicates "money without borders" through massive typography and a distinctive lime-green accent. The design operates on a warm off-white canvas with near-black text (`#0e0f0c`) and a signature Wise Green (`#9fe870`) — a fresh, lime-bright color that feels alive and optimistic, unlike the corporate blues of traditional banking.
+
+The typography uses Wise Sans — a proprietary font used at extreme weight 900 (black) for display headings with a remarkably tight line-height of 0.85 and OpenType `"calt"` (contextual alternates). At 126px, the text is so dense it feels like a protest sign — bold, urgent, and impossible to ignore. Inter serves as the body font with weight 600 as the default for emphasis, creating a consistently confident voice.
+
+What distinguishes Wise is its green-on-white-on-black material palette. Lime Green (`#9fe870`) appears on buttons with dark green text (`#163300`), creating a nature-inspired CTA that feels fresh. Hover states use `scale(1.05)` expansion rather than color changes — buttons physically grow on interaction. The border-radius system uses 9999px for buttons (pill), 30px–40px for cards, and the shadow system is minimal — just `rgba(14,15,12,0.12) 0px 0px 0px 1px` ring shadows.
+
+**Key Characteristics:**
+- Wise Sans at weight 900, 0.85 line-height — billboard-scale bold headlines
+- Lime Green (`#9fe870`) accent with dark green text (`#163300`) — nature-inspired fintech
+- Inter body at weight 600 as default — confident, not light
+- Near-black (`#0e0f0c`) primary with warm green undertone
+- Scale(1.05) hover animations — buttons physically grow
+- OpenType `"calt"` on all text
+- Pill buttons (9999px) and large rounded cards (30px–40px)
+- Semantic color system with comprehensive state management
+
+## 2. Color Palette & Roles
+
+### Primary Brand
+- **Near Black** (`#0e0f0c`): Primary text, background for dark sections
+- **Wise Green** (`#9fe870`): Primary CTA button, brand accent
+- **Dark Green** (`#163300`): Button text on green, deep green accent
+- **Light Mint** (`#e2f6d5`): Soft green surface, badge backgrounds
+- **Pastel Green** (`#cdffad`): `--color-interactive-contrast-hover`, hover accent
+
+### Semantic
+- **Positive Green** (`#054d28`): `--color-sentiment-positive-primary`, success
+- **Danger Red** (`#d03238`): `--color-interactive-negative-hover`, error/destructive
+- **Warning Yellow** (`#ffd11a`): `--color-sentiment-warning-hover`, warnings
+- **Background Cyan** (`rgba(56,200,255,0.10)`): `--color-background-accent`, info tint
+- **Bright Orange** (`#ffc091`): `--color-bright-orange`, warm accent
+
+### Neutral
+- **Warm Dark** (`#454745`): Secondary text, borders
+- **Gray** (`#868685`): Muted text, tertiary
+- **Light Surface** (`#e8ebe6`): Subtle green-tinted light surface
+
+## 3. Typography Rules
+
+### Font Families
+- **Display**: `Wise Sans`, fallback: `Inter` — OpenType `"calt"` on all text
+- **Body / UI**: `Inter`, fallbacks: `Helvetica, Arial`
+
+### Hierarchy
+
+| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
+|------|------|------|--------|-------------|----------------|-------|
+| Display Mega | Wise Sans | 126px (7.88rem) | 900 | 0.85 (ultra-tight) | normal | `"calt"` |
+| Display Hero | Wise Sans | 96px (6.00rem) | 900 | 0.85 | normal | `"calt"` |
+| Section Heading | Wise Sans | 64px (4.00rem) | 900 | 0.85 | normal | `"calt"` |
+| Sub-heading | Wise Sans | 40px (2.50rem) | 900 | 0.85 | normal | `"calt"` |
+| Alt Heading | Inter | 78px (4.88rem) | 600 | 1.10 (tight) | -2.34px | `"calt"` |
+| Card Title | Inter | 26px (1.62rem) | 600 | 1.23 (tight) | -0.39px | `"calt"` |
+| Feature Title | Inter | 22px (1.38rem) | 600 | 1.25 (tight) | -0.396px | `"calt"` |
+| Body | Inter | 18px (1.13rem) | 400 | 1.44 | 0.18px | `"calt"` |
+| Body Semibold | Inter | 18px (1.13rem) | 600 | 1.44 | -0.108px | `"calt"` |
+| Button | Inter | 18px–22px | 600 | 1.00–1.44 | -0.108px | `"calt"` |
+| Caption | Inter | 14px (0.88rem) | 400–600 | 1.50–1.86 | -0.084px to -0.108px | `"calt"` |
+| Small | Inter | 12px (0.75rem) | 400–600 | 1.00–2.17 | -0.084px to -0.108px | `"calt"` |
+
+### Principles
+- **Weight 900 as identity**: Wise Sans Black (900) is used exclusively for display — the heaviest weight in any analyzed system. It creates text that feels stamped, pressed, physical.
+- **0.85 line-height**: The tightest display line-height analyzed. Letters overlap vertically, creating dense, billboard-like text blocks.
+- **"calt" everywhere**: Contextual alternates enabled on ALL text — both Wise Sans and Inter.
+- **Weight 600 as body default**: Inter Semibold is the standard reading weight — confident, not light.
+
+## 4. Component Stylings
+
+### Buttons
+
+**Primary Green Pill**
+- Background: `#9fe870` (Wise Green)
+- Text: `#163300` (Dark Green)
+- Padding: 5px 16px
+- Radius: 9999px
+- Hover: scale(1.05) — button physically grows
+- Active: scale(0.95) — button compresses
+- Focus: inset ring + outline
+
+**Secondary Subtle Pill**
+- Background: `rgba(22, 51, 0, 0.08)` (dark green at 8% opacity)
+- Text: `#0e0f0c`
+- Padding: 8px 12px 8px 16px
+- Radius: 9999px
+- Same scale hover/active behavior
+
+### Cards & Containers
+- Radius: 16px (small), 30px (medium), 40px (large cards/tables)
+- Border: `1px solid rgba(14,15,12,0.12)` or `1px solid #9fe870` (green accent)
+- Shadow: `rgba(14,15,12,0.12) 0px 0px 0px 1px` (ring shadow)
+
+### Navigation
+- Green-tinted navigation hover: `rgba(211,242,192,0.4)`
+- Clean header with Wise wordmark
+- Pill CTAs right-aligned
+
+## 5. Layout Principles
+
+### Spacing System
+- Base unit: 8px
+- Scale: 1px, 2px, 3px, 4px, 5px, 8px, 10px, 11px, 12px, 16px, 18px, 19px, 20px, 22px, 24px
+
+### Border Radius Scale
+- Minimal (2px): Links, inputs
+- Standard (10px): Comboboxes, inputs
+- Card (16px): Small cards, buttons, radio
+- Medium (20px): Links, medium cards
+- Large (30px): Feature cards
+- Section (40px): Tables, large cards
+- Mega (1000px): Presentation elements
+- Pill (9999px): All buttons, images
+- Circle (50%): Icons, badges
+
+## 6. Depth & Elevation
+
+| Level | Treatment | Use |
+|-------|-----------|-----|
+| Flat (Level 0) | No shadow | Default |
+| Ring (Level 1) | `rgba(14,15,12,0.12) 0px 0px 0px 1px` | Card borders |
+| Inset (Level 2) | `rgb(134,134,133) 0px 0px 0px 1px inset` | Input focus |
+
+**Shadow Philosophy**: Wise uses minimal shadows — ring shadows only. Depth comes from the bold green accent against the neutral canvas.
+
+## 7. Do's and Don'ts
+
+### Do
+- Use Wise Sans weight 900 for display — the extreme boldness IS the brand
+- Apply line-height 0.85 on Wise Sans display — ultra-tight is intentional
+- Use Lime Green (#9fe870) for primary CTAs with Dark Green (#163300) text
+- Apply scale(1.05) hover and scale(0.95) active on buttons
+- Enable "calt" on all text
+- Use Inter weight 600 as the body default
+
+### Don't
+- Don't use light font weights for Wise Sans — only 900
+- Don't relax the 0.85 line-height on display — the density is the identity
+- Don't use the Wise Green as background for large surfaces — it's for buttons and accents
+- Don't skip the scale animation on buttons
+- Don't use traditional shadows — ring shadows only
+
+## 8. Responsive Behavior
+
+### Breakpoints
+| Name | Width | Key Changes |
+|------|-------|-------------|
+| Mobile | <576px | Single column |
+| Tablet | 576–992px | 2-column |
+| Desktop | 992–1440px | Full layout |
+| Large | >1440px | Expanded |
+
+## 9. Agent Prompt Guide
+
+### Quick Color Reference
+- Text: Near Black (`#0e0f0c`)
+- Background: White (`#ffffff` / off-white)
+- Accent: Wise Green (`#9fe870`)
+- Button text: Dark Green (`#163300`)
+- Secondary: Gray (`#868685`)
+
+### Example Component Prompts
+- "Create hero: white background. Headline at 96px Wise Sans weight 900, line-height 0.85, 'calt' enabled, #0e0f0c text. Green pill CTA (#9fe870, 9999px radius, 5px 16px padding, #163300 text). Hover: scale(1.05)."
+- "Build a card: 30px radius, 1px solid rgba(14,15,12,0.12). Title at 22px Inter weight 600, body at 18px weight 400."
+
+### Iteration Guide
+1. Wise Sans 900 at 0.85 line-height — the extreme weight IS the brand
+2. Lime Green for buttons only — dark green text on green background
+3. Scale animations (1.05 hover, 0.95 active) on all interactive elements
+4. "calt" on everything — contextual alternates are mandatory
+5. Inter 600 for body — confident reading weight

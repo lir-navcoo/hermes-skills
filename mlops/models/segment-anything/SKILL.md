@@ -1,1 +1,503 @@
-LS0tCm5hbWU6IHNlZ21lbnQtYW55dGhpbmctbW9kZWwKZGVzY3JpcHRpb246IEZvdW5kYXRpb24gbW9kZWwgZm9yIGltYWdlIHNlZ21lbnRhdGlvbiB3aXRoIHplcm8tc2hvdCB0cmFuc2Zlci4gVXNlIHdoZW4geW91IG5lZWQgdG8gc2VnbWVudCBhbnkgb2JqZWN0IGluIGltYWdlcyB1c2luZyBwb2ludHMsIGJveGVzLCBvciBtYXNrcyBhcyBwcm9tcHRzLCBvciBhdXRvbWF0aWNhbGx5IGdlbmVyYXRlIGFsbCBvYmplY3QgbWFza3MgaW4gYW4gaW1hZ2UuCnZlcnNpb246IDEuMC4wCmF1dGhvcjogT3JjaGVzdHJhIFJlc2VhcmNoCmxpY2Vuc2U6IE1JVApkZXBlbmRlbmNpZXM6IFtzZWdtZW50LWFueXRoaW5nLCB0cmFuc2Zvcm1lcnM+PTQuMzAuMCwgdG9yY2g+PTEuNy4wXQptZXRhZGF0YToKICBoZXJtZXM6CiAgICB0YWdzOiBbTXVsdGltb2RhbCwgSW1hZ2UgU2VnbWVudGF0aW9uLCBDb21wdXRlciBWaXNpb24sIFNBTSwgWmVyby1TaG90XQoKLS0tCgojIFNlZ21lbnQgQW55dGhpbmcgTW9kZWwgKFNBTSkKCkNvbXByZWhlbnNpdmUgZ3VpZGUgdG8gdXNpbmcgTWV0YSBBSSdzIFNlZ21lbnQgQW55dGhpbmcgTW9kZWwgZm9yIHplcm8tc2hvdCBpbWFnZSBzZWdtZW50YXRpb24uCgojIyBXaGVuIHRvIHVzZSBTQU0KCioqVXNlIFNBTSB3aGVuOioqCi0gTmVlZCB0byBzZWdtZW50IGFueSBvYmplY3QgaW4gaW1hZ2VzIHdpdGhvdXQgdGFzay1zcGVjaWZpYyB0cmFpbmluZwotIEJ1aWxkaW5nIGludGVyYWN0aXZlIGFubm90YXRpb24gdG9vbHMgd2l0aCBwb2ludC9ib3ggcHJvbXB0cwotIEdlbmVyYXRpbmcgdHJhaW5pbmcgZGF0YSBmb3Igb3RoZXIgdmlzaW9uIG1vZGVscwotIE5lZWQgemVyby1zaG90IHRyYW5zZmVyIHRvIG5ldyBpbWFnZSBkb21haW5zCi0gQnVpbGRpbmcgb2JqZWN0IGRldGVjdGlvbi9zZWdtZW50YXRpb24gcGlwZWxpbmVzCi0gUHJvY2Vzc2luZyBtZWRpY2FsLCBzYXRlbGxpdGUsIG9yIGRvbWFpbi1zcGVjaWZpYyBpbWFnZXMKCioqS2V5IGZlYXR1cmVzOioqCi0gKipaZXJvLXNob3Qgc2VnbWVudGF0aW9uKio6IFdvcmtzIG9uIGFueSBpbWFnZSBkb21haW4gd2l0aG91dCBmaW5lLXR1bmluZwotICoqRmxleGlibGUgcHJvbXB0cyoqOiBQb2ludHMsIGJvdW5kaW5nIGJveGVzLCBvciBwcmV2aW91cyBtYXNrcwotICoqQXV0b21hdGljIHNlZ21lbnRhdGlvbioqOiBHZW5lcmF0ZSBhbGwgb2JqZWN0IG1hc2tzIGF1dG9tYXRpY2FsbHkKLSAqKkhpZ2ggcXVhbGl0eSoqOiBUcmFpbmVkIG9uIDEuMSBiaWxsaW9uIG1hc2tzIGZyb20gMTEgbWlsbGlvbiBpbWFnZXMKLSAqKk11bHRpcGxlIG1vZGVsIHNpemVzKio6IFZpVC1CIChmYXN0ZXN0KSwgVmlULUwsIFZpVC1IIChtb3N0IGFjY3VyYXRlKQotICoqT05OWCBleHBvcnQqKjogRGVwbG95IGluIGJyb3dzZXJzIGFuZCBlZGdlIGRldmljZXMKCioqVXNlIGFsdGVybmF0aXZlcyBpbnN0ZWFkOioqCi0gKipZT0xPL0RldGVjdHJvbjIqKjogRm9yIHJlYWwtdGltZSBvYmplY3QgZGV0ZWN0aW9uIHdpdGggY2xhc3NlcwotICoqTWFzazJGb3JtZXIqKjogRm9yIHNlbWFudGljL3Bhbm9wdGljIHNlZ21lbnRhdGlvbiB3aXRoIGNhdGVnb3JpZXMKLSAqKkdyb3VuZGluZ0RJTk8gKyBTQU0qKjogRm9yIHRleHQtcHJvbXB0ZWQgc2VnbWVudGF0aW9uCi0gKipTQU0gMioqOiBGb3IgdmlkZW8gc2VnbWVudGF0aW9uIHRhc2tzCgojIyBRdWljayBzdGFydAoKIyMjIEluc3RhbGxhdGlvbgoKYGBgYmFzaAojIEZyb20gR2l0SHViCnBpcCBpbnN0YWxsIGdpdCtodHRwczovL2dpdGh1Yi5jb20vZmFjZWJvb2tyZXNlYXJjaC9zZWdtZW50LWFueXRoaW5nLmdpdAoKIyBPcHRpb25hbCBkZXBlbmRlbmNpZXMKcGlwIGluc3RhbGwgb3BlbmN2LXB5dGhvbiBweWNvY290b29scyBtYXRwbG90bGliCgojIE9yIHVzZSBIdWdnaW5nRmFjZSB0cmFuc2Zvcm1lcnMKcGlwIGluc3RhbGwgdHJhbnNmb3JtZXJzCmBgYAoKIyMjIERvd25sb2FkIGNoZWNrcG9pbnRzCgpgYGBiYXNoCiMgVmlULUggKGxhcmdlc3QsIG1vc3QgYWNjdXJhdGUpIC0gMi40R0IKd2dldCBodHRwczovL2RsLmZiYWlwdWJsaWNmaWxlcy5jb20vc2VnbWVudF9hbnl0aGluZy9zYW1fdml0X2hfNGI4OTM5LnB0aAoKIyBWaVQtTCAobWVkaXVtKSAtIDEuMkdCCndnZXQgaHR0cHM6Ly9kbC5mYmFpcHVibGljZmlsZXMuY29tL3NlZ21lbnRfYW55dGhpbmcvc2FtX3ZpdF9sXzBiMzE5NS5wdGgKCiMgVmlULUIgKHNtYWxsZXN0LCBmYXN0ZXN0KSAtIDM3NU1CCndnZXQgaHR0cHM6Ly9kbC5mYmFpcHVibGljZmlsZXMuY29tL3NlZ21lbnRfYW55dGhpbmcvc2FtX3ZpdF9iXzAxZWM2NC5wdGgKYGBgCgojIyMgQmFzaWMgdXNhZ2Ugd2l0aCBTYW1QcmVkaWN0b3IKCmBgYHB5dGhvbgppbXBvcnQgbnVtcHkgYXMgbnAKZnJvbSBzZWdtZW50X2FueXRoaW5nIGltcG9ydCBzYW1fbW9kZWxfcmVnaXN0cnksIFNhbVByZWRpY3RvcgoKIyBMb2FkIG1vZGVsCnNhbSA9IHNhbV9tb2RlbF9yZWdpc3RyeVsidml0X2giXShjaGVja3BvaW50PSJzYW1fdml0X2hfNGI4OTM5LnB0aCIpCnNhbS50byhkZXZpY2U9ImN1ZGEiKQoKIyBDcmVhdGUgcHJlZGljdG9yCnByZWRpY3RvciA9IFNhbVByZWRpY3RvcihzYW0pCgojIFNldCBpbWFnZSAoY29tcHV0ZXMgZW1iZWRkaW5ncyBvbmNlKQppbWFnZSA9IGN2Mi5pbXJlYWQoImltYWdlLmpwZyIpCmltYWdlID0gY3YyLmN2dENvbG9yKGltYWdlLCBjdjIuQ09MT1JfQkdSMlJHQikKcHJlZGljdG9yLnNldF9pbWFnZShpbWFnZSkKCiMgUHJlZGljdCB3aXRoIHBvaW50IHByb21wdHMKaW5wdXRfcG9pbnQgPSBucC5hcnJheShbWzUwMCwgMzc1XV0pICAjICh4LCB5KSBjb29yZGluYXRlcwppbnB1dF9sYWJlbCA9IG5wLmFycmF5KFsxXSkgICMgMSA9IGZvcmVncm91bmQsIDAgPSBiYWNrZ3JvdW5kCgptYXNrcywgc2NvcmVzLCBsb2dpdHMgPSBwcmVkaWN0b3IucHJlZGljdCgKICAgIHBvaW50X2Nvb3Jkcz1pbnB1dF9wb2ludCwKICAgIHBvaW50X2xhYmVscz1pbnB1dF9sYWJlbCwKICAgIG11bHRpbWFza19vdXRwdXQ9VHJ1ZSAgIyBSZXR1cm5zIDMgbWFzayBvcHRpb25zCikKCiMgU2VsZWN0IGJlc3QgbWFzawpiZXN0X21hc2sgPSBtYXNrc1tucC5hcmdtYXgoc2NvcmVzKV0KYGBgCgojIyMgSHVnZ2luZ0ZhY2UgVHJhbnNmb3JtZXJzCgpgYGBweXRob24KaW1wb3J0IHRvcmNoCmZyb20gUElMIGltcG9ydCBJbWFnZQpmcm9tIHRyYW5zZm9ybWVycyBpbXBvcnQgU2FtTW9kZWwsIFNhbVByb2Nlc3NvcgoKIyBMb2FkIG1vZGVsIGFuZCBwcm9jZXNzb3IKbW9kZWwgPSBTYW1Nb2RlbC5mcm9tX3ByZXRyYWluZWQoImZhY2Vib29rL3NhbS12aXQtaHVnZSIpCnByb2Nlc3NvciA9IFNhbVByb2Nlc3Nvci5mcm9tX3ByZXRyYWluZWQoImZhY2Vib29rL3NhbS12aXQtaHVnZSIpCm1vZGVsLnRvKCJjdWRhIikKCiMgUHJvY2VzcyBpbWFnZSB3aXRoIHBvaW50IHByb21wdAppbWFnZSA9IEltYWdlLm9wZW4oImltYWdlLmpwZyIpCmlucHV0X3BvaW50cyA9IFtbWzQ1MCwgNjAwXV1dICAjIEJhdGNoIG9mIHBvaW50cwoKaW5wdXRzID0gcHJvY2Vzc29yKGltYWdlLCBpbnB1dF9wb2ludHM9aW5wdXRfcG9pbnRzLCByZXR1cm5fdGVuc29ycz0icHQiKQppbnB1dHMgPSB7azogdi50bygiY3VkYSIpIGZvciBrLCB2IGluIGlucHV0cy5pdGVtcygpfQoKIyBHZW5lcmF0ZSBtYXNrcwp3aXRoIHRvcmNoLm5vX2dyYWQoKToKICAgIG91dHB1dHMgPSBtb2RlbCgqKmlucHV0cykKCiMgUG9zdC1wcm9jZXNzIG1hc2tzIHRvIG9yaWdpbmFsIHNpemUKbWFza3MgPSBwcm9jZXNzb3IuaW1hZ2VfcHJvY2Vzc29yLnBvc3RfcHJvY2Vzc19tYXNrcygKICAgIG91dHB1dHMucHJlZF9tYXNrcy5jcHUoKSwKICAgIGlucHV0c1sib3JpZ2luYWxfc2l6ZXMiXS5jcHUoKSwKICAgIGlucHV0c1sicmVzaGFwZWRfaW5wdXRfc2l6ZXMiXS5jcHUoKQopCmBgYAoKIyMgQ29yZSBjb25jZXB0cwoKIyMjIE1vZGVsIGFyY2hpdGVjdHVyZQoKYGBgClNBTSBBcmNoaXRlY3R1cmU6CuKUjOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUkCAgICAg4pSM4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSQICAgICDilIzilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilJAK4pSCICBJbWFnZSBFbmNvZGVyICDilILilIDilIDilIDilIDilrbilIIgUHJvbXB0IEVuY29kZXIgIOKUguKUgOKUgOKUgOKUgOKWtuKUgiAgTWFzayBEZWNvZGVyICAg4pSCCuKUgiAgICAgKFZpVCkgICAgICAg4pSCICAgICDilIIgKFBvaW50cy9Cb3hlcykgIOKUgiAgICAg4pSCIChUcmFuc2Zvcm1lcikgICDilIIK4pSU4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSYICAgICDilJTilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilJggICAgIOKUlOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUmAogICAgICAgIOKUgiAgICAgICAgICAgICAgICAgICAgICAg4pSCICAgICAgICAgICAgICAgICAgICAgICDilIIKICAgSW1hZ2UgRW1iZWRkaW5ncyAgICAgIFByb21wdCBFbWJlZGRpbmdzICAgICAgICAgTWFza3MgKyBJb1UKICAgKGNvbXB1dGVkIG9uY2UpICAgICAgIChwZXIgcHJvbXB0KSAgICAgICAgICAgICBwcmVkaWN0aW9ucwpgYGAKCiMjIyBNb2RlbCB2YXJpYW50cwoKfCBNb2RlbCB8IENoZWNrcG9pbnQgfCBTaXplIHwgU3BlZWQgfCBBY2N1cmFjeSB8CnwtLS0tLS0tfC0tLS0tLS0tLS0tLXwtLS0tLS18LS0tLS0tLXwtLS0tLS0tLS0tfAp8IFZpVC1IIHwgYHZpdF9oYCB8IDIuNCBHQiB8IFNsb3dlc3QgfCBCZXN0IHwKfCBWaVQtTCB8IGB2aXRfbGAgfCAxLjIgR0IgfCBNZWRpdW0gfCBHb29kIHwKfCBWaVQtQiB8IGB2aXRfYmAgfCAzNzUgTUIgfCBGYXN0ZXN0IHwgR29vZCB8CgojIyMgUHJvbXB0IHR5cGVzCgp8IFByb21wdCB8IERlc2NyaXB0aW9uIHwgVXNlIENhc2UgfAp8LS0tLS0tLS18LS0tLS0tLS0tLS0tLXwtLS0tLS0tLS0tfAp8IFBvaW50IChmb3JlZ3JvdW5kKSB8IENsaWNrIG9uIG9iamVjdCB8IFNpbmdsZSBvYmplY3Qgc2VsZWN0aW9uIHwKfCBQb2ludCAoYmFja2dyb3VuZCkgfCBDbGljayBvdXRzaWRlIG9iamVjdCB8IEV4Y2x1ZGUgcmVnaW9ucyB8CnwgQm91bmRpbmcgYm94IHwgUmVjdGFuZ2xlIGFyb3VuZCBvYmplY3QgfCBMYXJnZXIgb2JqZWN0cyB8CnwgUHJldmlvdXMgbWFzayB8IExvdy1yZXMgbWFzayBpbnB1dCB8IEl0ZXJhdGl2ZSByZWZpbmVtZW50IHwKCiMjIEludGVyYWN0aXZlIHNlZ21lbnRhdGlvbgoKIyMjIFBvaW50IHByb21wdHMKCmBgYHB5dGhvbgojIFNpbmdsZSBmb3JlZ3JvdW5kIHBvaW50CmlucHV0X3BvaW50ID0gbnAuYXJyYXkoW1s1MDAsIDM3NV1dKQppbnB1dF9sYWJlbCA9IG5wLmFycmF5KFsxXSkKCm1hc2tzLCBzY29yZXMsIGxvZ2l0cyA9IHByZWRpY3Rvci5wcmVkaWN0KAogICAgcG9pbnRfY29vcmRzPWlucHV0X3BvaW50LAogICAgcG9pbnRfbGFiZWxzPWlucHV0X2xhYmVsLAogICAgbXVsdGltYXNrX291dHB1dD1UcnVlCikKCiMgTXVsdGlwbGUgcG9pbnRzIChmb3JlZ3JvdW5kICsgYmFja2dyb3VuZCkKaW5wdXRfcG9pbnRzID0gbnAuYXJyYXkoW1s1MDAsIDM3NV0sIFs2MDAsIDQwMF0sIFs0NTAsIDMwMF1dKQppbnB1dF9sYWJlbHMgPSBucC5hcnJheShbMSwgMSwgMF0pICAjIDIgZm9yZWdyb3VuZCwgMSBiYWNrZ3JvdW5kCgptYXNrcywgc2NvcmVzLCBsb2dpdHMgPSBwcmVkaWN0b3IucHJlZGljdCgKICAgIHBvaW50X2Nvb3Jkcz1pbnB1dF9wb2ludHMsCiAgICBwb2ludF9sYWJlbHM9aW5wdXRfbGFiZWxzLAogICAgbXVsdGltYXNrX291dHB1dD1GYWxzZSAgIyBTaW5nbGUgbWFzayB3aGVuIHByb21wdHMgYXJlIGNsZWFyCikKYGBgCgojIyMgQm94IHByb21wdHMKCmBgYHB5dGhvbgojIEJvdW5kaW5nIGJveCBbeDEsIHkxLCB4MiwgeTJdCmlucHV0X2JveCA9IG5wLmFycmF5KFs0MjUsIDYwMCwgNzAwLCA4NzVdKQoKbWFza3MsIHNjb3JlcywgbG9naXRzID0gcHJlZGljdG9yLnByZWRpY3QoCiAgICBib3g9aW5wdXRfYm94LAogICAgbXVsdGltYXNrX291dHB1dD1GYWxzZQopCmBgYAoKIyMjIENvbWJpbmVkIHByb21wdHMKCmBgYHB5dGhvbgojIEJveCArIHBvaW50cyBmb3IgcHJlY2lzZSBjb250cm9sCm1hc2tzLCBzY29yZXMsIGxvZ2l0cyA9IHByZWRpY3Rvci5wcmVkaWN0KAogICAgcG9pbnRfY29vcmRzPW5wLmFycmF5KFtbNTAwLCAzNzVdXSksCiAgICBwb2ludF9sYWJlbHM9bnAuYXJyYXkoWzFdKSwKICAgIGJveD1ucC5hcnJheShbNDAwLCAzMDAsIDcwMCwgNjAwXSksCiAgICBtdWx0aW1hc2tfb3V0cHV0PUZhbHNlCikKYGBgCgojIyMgSXRlcmF0aXZlIHJlZmluZW1lbnQKCmBgYHB5dGhvbgojIEluaXRpYWwgcHJlZGljdGlvbgptYXNrcywgc2NvcmVzLCBsb2dpdHMgPSBwcmVkaWN0b3IucHJlZGljdCgKICAgIHBvaW50X2Nvb3Jkcz1ucC5hcnJheShbWzUwMCwgMzc1XV0pLAogICAgcG9pbnRfbGFiZWxzPW5wLmFycmF5KFsxXSksCiAgICBtdWx0aW1hc2tfb3V0cHV0PVRydWUKKQoKIyBSZWZpbmUgd2l0aCBhZGRpdGlvbmFsIHBvaW50IHVzaW5nIHByZXZpb3VzIG1hc2sKbWFza3MsIHNjb3JlcywgbG9naXRzID0gcHJlZGljdG9yLnByZWRpY3QoCiAgICBwb2ludF9jb29yZHM9bnAuYXJyYXkoW1s1MDAsIDM3NV0sIFs1NTAsIDQwMF1dKSwKICAgIHBvaW50X2xhYmVscz1ucC5hcnJheShbMSwgMF0pLCAgIyBBZGQgYmFja2dyb3VuZCBwb2ludAogICAgbWFza19pbnB1dD1sb2dpdHNbbnAuYXJnbWF4KHNjb3JlcyldW05vbmUsIDosIDpdLCAgIyBVc2UgYmVzdCBtYXNrCiAgICBtdWx0aW1hc2tfb3V0cHV0PUZhbHNlCikKYGBgCgojIyBBdXRvbWF0aWMgbWFzayBnZW5lcmF0aW9uCgojIyMgQmFzaWMgYXV0b21hdGljIHNlZ21lbnRhdGlvbgoKYGBgcHl0aG9uCmZyb20gc2VnbWVudF9hbnl0aGluZyBpbXBvcnQgU2FtQXV0b21hdGljTWFza0dlbmVyYXRvcgoKIyBDcmVhdGUgZ2VuZXJhdG9yCm1hc2tfZ2VuZXJhdG9yID0gU2FtQXV0b21hdGljTWFza0dlbmVyYXRvcihzYW0pCgojIEdlbmVyYXRlIGFsbCBtYXNrcwptYXNrcyA9IG1hc2tfZ2VuZXJhdG9yLmdlbmVyYXRlKGltYWdlKQoKIyBFYWNoIG1hc2sgY29udGFpbnM6CiMgLSBzZWdtZW50YXRpb246IGJpbmFyeSBtYXNrCiMgLSBiYm94OiBbeCwgeSwgdywgaF0KIyAtIGFyZWE6IHBpeGVsIGNvdW50CiMgLSBwcmVkaWN0ZWRfaW91OiBxdWFsaXR5IHNjb3JlCiMgLSBzdGFiaWxpdHlfc2NvcmU6IHJvYnVzdG5lc3Mgc2NvcmUKIyAtIHBvaW50X2Nvb3JkczogZ2VuZXJhdGluZyBwb2ludApgYGAKCiMjIyBDdXN0b21pemVkIGdlbmVyYXRpb24KCmBgYHB5dGhvbgptYXNrX2dlbmVyYXRvciA9IFNhbUF1dG9tYXRpY01hc2tHZW5lcmF0b3IoCiAgICBtb2RlbD1zYW0sCiAgICBwb2ludHNfcGVyX3NpZGU9MzIsICAgICAgICAgICMgR3JpZCBkZW5zaXR5IChtb3JlID0gbW9yZSBtYXNrcykKICAgIHByZWRfaW91X3RocmVzaD0wLjg4LCAgICAgICAgIyBRdWFsaXR5IHRocmVzaG9sZAogICAgc3RhYmlsaXR5X3Njb3JlX3RocmVzaD0wLjk1LCAgIyBTdGFiaWxpdHkgdGhyZXNob2xkCiAgICBjcm9wX25fbGF5ZXJzPTEsICAgICAgICAgICAgICMgTXVsdGktc2NhbGUgY3JvcHMKICAgIGNyb3Bfbl9wb2ludHNfZG93bnNjYWxlX2ZhY3Rvcj0yLAogICAgbWluX21hc2tfcmVnaW9uX2FyZWE9MTAwLCAgICAjIFJlbW92ZSB0aW55IG1hc2tzCikKCm1hc2tzID0gbWFza19nZW5lcmF0b3IuZ2VuZXJhdGUoaW1hZ2UpCmBgYAoKIyMjIEZpbHRlcmluZyBtYXNrcwoKYGBgcHl0aG9uCiMgU29ydCBieSBhcmVhIChsYXJnZXN0IGZpcnN0KQptYXNrcyA9IHNvcnRlZChtYXNrcywga2V5PWxhbWJkYSB4OiB4WydhcmVhJ10sIHJldmVyc2U9VHJ1ZSkKCiMgRmlsdGVyIGJ5IHByZWRpY3RlZCBJb1UKaGlnaF9xdWFsaXR5ID0gW20gZm9yIG0gaW4gbWFza3MgaWYgbVsncHJlZGljdGVkX2lvdSddID4gMC45XQoKIyBGaWx0ZXIgYnkgc3RhYmlsaXR5IHNjb3JlCnN0YWJsZV9tYXNrcyA9IFttIGZvciBtIGluIG1hc2tzIGlmIG1bJ3N0YWJpbGl0eV9zY29yZSddID4gMC45NV0KYGBgCgojIyBCYXRjaGVkIGluZmVyZW5jZQoKIyMjIE11bHRpcGxlIGltYWdlcwoKYGBgcHl0aG9uCiMgUHJvY2VzcyBtdWx0aXBsZSBpbWFnZXMgZWZmaWNpZW50bHkKaW1hZ2VzID0gW2N2Mi5pbXJlYWQoZiJpbWFnZV97aX0uanBnIikgZm9yIGkgaW4gcmFuZ2UoMTApXQoKYWxsX21hc2tzID0gW10KZm9yIGltYWdlIGluIGltYWdlczoKICAgIHByZWRpY3Rvci5zZXRfaW1hZ2UoaW1hZ2UpCiAgICBtYXNrcywgXywgXyA9IHByZWRpY3Rvci5wcmVkaWN0KAogICAgICAgIHBvaW50X2Nvb3Jkcz1ucC5hcnJheShbWzUwMCwgMzc1XV0pLAogICAgICAgIHBvaW50X2xhYmVscz1ucC5hcnJheShbMV0pLAogICAgICAgIG11bHRpbWFza19vdXRwdXQ9VHJ1ZQogICAgKQogICAgYWxsX21hc2tzLmFwcGVuZChtYXNrcykKYGBgCgojIyMgTXVsdGlwbGUgcHJvbXB0cyBwZXIgaW1hZ2UKCmBgYHB5dGhvbgojIFByb2Nlc3MgbXVsdGlwbGUgcHJvbXB0cyBlZmZpY2llbnRseSAob25lIGltYWdlIGVuY29kaW5nKQpwcmVkaWN0b3Iuc2V0X2ltYWdlKGltYWdlKQoKIyBCYXRjaCBvZiBwb2ludCBwcm9tcHRzCnBvaW50cyA9IFsKICAgIG5wLmFycmF5KFtbMTAwLCAxMDBdXSksCiAgICBucC5hcnJheShbWzIwMCwgMjAwXV0pLAogICAgbnAuYXJyYXkoW1szMDAsIDMwMF1dKQpdCgphbGxfbWFza3MgPSBbXQpmb3IgcG9pbnQgaW4gcG9pbnRzOgogICAgbWFza3MsIHNjb3JlcywgXyA9IHByZWRpY3Rvci5wcmVkaWN0KAogICAgICAgIHBvaW50X2Nvb3Jkcz1wb2ludCwKICAgICAgICBwb2ludF9sYWJlbHM9bnAuYXJyYXkoWzFdKSwKICAgICAgICBtdWx0aW1hc2tfb3V0cHV0PVRydWUKICAgICkKICAgIGFsbF9tYXNrcy5hcHBlbmQobWFza3NbbnAuYXJnbWF4KHNjb3JlcyldKQpgYGAKCiMjIE9OTlggZGVwbG95bWVudAoKIyMjIEV4cG9ydCBtb2RlbAoKYGBgYmFzaApweXRob24gc2NyaXB0cy9leHBvcnRfb25ueF9tb2RlbC5weSBcCiAgICAtLWNoZWNrcG9pbnQgc2FtX3ZpdF9oXzRiODkzOS5wdGggXAogICAgLS1tb2RlbC10eXBlIHZpdF9oIFwKICAgIC0tb3V0cHV0IHNhbV9vbm54Lm9ubnggXAogICAgLS1yZXR1cm4tc2luZ2xlLW1hc2sKYGBgCgojIyMgVXNlIE9OTlggbW9kZWwKCmBgYHB5dGhvbgppbXBvcnQgb25ueHJ1bnRpbWUKCiMgTG9hZCBPTk5YIG1vZGVsCm9ydF9zZXNzaW9uID0gb25ueHJ1bnRpbWUuSW5mZXJlbmNlU2Vzc2lvbigic2FtX29ubngub25ueCIpCgojIFJ1biBpbmZlcmVuY2UgKGltYWdlIGVtYmVkZGluZ3MgY29tcHV0ZWQgc2VwYXJhdGVseSkKbWFza3MgPSBvcnRfc2Vzc2lvbi5ydW4oCiAgICBOb25lLAogICAgewogICAgICAgICJpbWFnZV9lbWJlZGRpbmdzIjogaW1hZ2VfZW1iZWRkaW5ncywKICAgICAgICAicG9pbnRfY29vcmRzIjogcG9pbnRfY29vcmRzLAogICAgICAgICJwb2ludF9sYWJlbHMiOiBwb2ludF9sYWJlbHMsCiAgICAgICAgIm1hc2tfaW5wdXQiOiBucC56ZXJvcygoMSwgMSwgMjU2LCAyNTYpLCBkdHlwZT1ucC5mbG9hdDMyKSwKICAgICAgICAiaGFzX21hc2tfaW5wdXQiOiBucC5hcnJheShbMF0sIGR0eXBlPW5wLmZsb2F0MzIpLAogICAgICAgICJvcmlnX2ltX3NpemUiOiBucC5hcnJheShbaCwgd10sIGR0eXBlPW5wLmZsb2F0MzIpCiAgICB9CikKYGBgCgojIyBDb21tb24gd29ya2Zsb3dzCgojIyMgV29ya2Zsb3cgMTogQW5ub3RhdGlvbiB0b29sCgpgYGBweXRob24KaW1wb3J0IGN2MgoKIyBMb2FkIG1vZGVsCnByZWRpY3RvciA9IFNhbVByZWRpY3RvcihzYW0pCnByZWRpY3Rvci5zZXRfaW1hZ2UoaW1hZ2UpCgpkZWYgb25fY2xpY2soZXZlbnQsIHgsIHksIGZsYWdzLCBwYXJhbSk6CiAgICBpZiBldmVudCA9PSBjdjIuRVZFTlRfTEJVVFRPTkRPV046CiAgICAgICAgIyBGb3JlZ3JvdW5kIHBvaW50CiAgICAgICAgbWFza3MsIHNjb3JlcywgXyA9IHByZWRpY3Rvci5wcmVkaWN0KAogICAgICAgICAgICBwb2ludF9jb29yZHM9bnAuYXJyYXkoW1t4LCB5XV0pLAogICAgICAgICAgICBwb2ludF9sYWJlbHM9bnAuYXJyYXkoWzFdKSwKICAgICAgICAgICAgbXVsdGltYXNrX291dHB1dD1UcnVlCiAgICAgICAgKQogICAgICAgICMgRGlzcGxheSBiZXN0IG1hc2sKICAgICAgICBkaXNwbGF5X21hc2sobWFza3NbbnAuYXJnbWF4KHNjb3JlcyldKQpgYGAKCiMjIyBXb3JrZmxvdyAyOiBPYmplY3QgZXh0cmFjdGlvbgoKYGBgcHl0aG9uCmRlZiBleHRyYWN0X29iamVjdChpbWFnZSwgcG9pbnQpOgogICAgIiIiRXh0cmFjdCBvYmplY3QgYXQgcG9pbnQgd2l0aCB0cmFuc3BhcmVudCBiYWNrZ3JvdW5kLiIiIgogICAgcHJlZGljdG9yLnNldF9pbWFnZShpbWFnZSkKCiAgICBtYXNrcywgc2NvcmVzLCBfID0gcHJlZGljdG9yLnByZWRpY3QoCiAgICAgICAgcG9pbnRfY29vcmRzPW5wLmFycmF5KFtwb2ludF0pLAogICAgICAgIHBvaW50X2xhYmVscz1ucC5hcnJheShbMV0pLAogICAgICAgIG11bHRpbWFza19vdXRwdXQ9VHJ1ZQogICAgKQoKICAgIGJlc3RfbWFzayA9IG1hc2tzW25wLmFyZ21heChzY29yZXMpXQoKICAgICMgQ3JlYXRlIFJHQkEgb3V0cHV0CiAgICByZ2JhID0gbnAuemVyb3MoKGltYWdlLnNoYXBlWzBdLCBpbWFnZS5zaGFwZVsxXSwgNCksIGR0eXBlPW5wLnVpbnQ4KQogICAgcmdiYVs6LCA6LCA6M10gPSBpbWFnZQogICAgcmdiYVs6LCA6LCAzXSA9IGJlc3RfbWFzayAqIDI1NQoKICAgIHJldHVybiByZ2JhCmBgYAoKIyMjIFdvcmtmbG93IDM6IE1lZGljYWwgaW1hZ2Ugc2VnbWVudGF0aW9uCgpgYGBweXRob24KIyBQcm9jZXNzIG1lZGljYWwgaW1hZ2VzIChncmF5c2NhbGUgdG8gUkdCKQptZWRpY2FsX2ltYWdlID0gY3YyLmltcmVhZCgic2Nhbi5wbmciLCBjdjIuSU1SRUFEX0dSQVlTQ0FMRSkKcmdiX2ltYWdlID0gY3YyLmN2dENvbG9yKG1lZGljYWxfaW1hZ2UsIGN2Mi5DT0xPUl9HUkFZMlJHQikKCnByZWRpY3Rvci5zZXRfaW1hZ2UocmdiX2ltYWdlKQoKIyBTZWdtZW50IHJlZ2lvbiBvZiBpbnRlcmVzdAptYXNrcywgc2NvcmVzLCBfID0gcHJlZGljdG9yLnByZWRpY3QoCiAgICBib3g9bnAuYXJyYXkoW3gxLCB5MSwgeDIsIHkyXSksICAjIFJPSSBib3VuZGluZyBib3gKICAgIG11bHRpbWFza19vdXRwdXQ9VHJ1ZQopCmBgYAoKIyMgT3V0cHV0IGZvcm1hdAoKIyMjIE1hc2sgZGF0YSBzdHJ1Y3R1cmUKCmBgYHB5dGhvbgojIFNhbUF1dG9tYXRpY01hc2tHZW5lcmF0b3Igb3V0cHV0CnsKICAgICJzZWdtZW50YXRpb24iOiBucC5uZGFycmF5LCAgIyBIw5dXIGJpbmFyeSBtYXNrCiAgICAiYmJveCI6IFt4LCB5LCB3LCBoXSwgICAgICAgICMgQm91bmRpbmcgYm94CiAgICAiYXJlYSI6IGludCwgICAgICAgICAgICAgICAgICMgUGl4ZWwgY291bnQKICAgICJwcmVkaWN0ZWRfaW91IjogZmxvYXQsICAgICAgIyAwLTEgcXVhbGl0eSBzY29yZQogICAgInN0YWJpbGl0eV9zY29yZSI6IGZsb2F0LCAgICAjIDAtMSByb2J1c3RuZXNzIHNjb3JlCiAgICAiY3JvcF9ib3giOiBbeCwgeSwgdywgaF0sICAgICMgR2VuZXJhdGlvbiBjcm9wIHJlZ2lvbgogICAgInBvaW50X2Nvb3JkcyI6IFtbeCwgeV1dLCAgICAjIElucHV0IHBvaW50Cn0KYGBgCgojIyMgQ09DTyBSTEUgZm9ybWF0CgpgYGBweXRob24KZnJvbSBweWNvY290b29scyBpbXBvcnQgbWFzayBhcyBtYXNrX3V0aWxzCgojIEVuY29kZSBtYXNrIHRvIFJMRQpybGUgPSBtYXNrX3V0aWxzLmVuY29kZShucC5hc2ZvcnRyYW5hcnJheShtYXNrLmFzdHlwZShucC51aW50OCkpKQpybGVbImNvdW50cyJdID0gcmxlWyJjb3VudHMiXS5kZWNvZGUoInV0Zi04IikKCiMgRGVjb2RlIFJMRSB0byBtYXNrCmRlY29kZWRfbWFzayA9IG1hc2tfdXRpbHMuZGVjb2RlKHJsZSkKYGBgCgojIyBQZXJmb3JtYW5jZSBvcHRpbWl6YXRpb24KCiMjIyBHUFUgbWVtb3J5CgpgYGBweXRob24KIyBVc2Ugc21hbGxlciBtb2RlbCBmb3IgbGltaXRlZCBWUkFNCnNhbSA9IHNhbV9tb2RlbF9yZWdpc3RyeVsidml0X2IiXShjaGVja3BvaW50PSJzYW1fdml0X2JfMDFlYzY0LnB0aCIpCgojIFByb2Nlc3MgaW1hZ2VzIGluIGJhdGNoZXMKIyBDbGVhciBDVURBIGNhY2hlIGJldHdlZW4gbGFyZ2UgYmF0Y2hlcwp0b3JjaC5jdWRhLmVtcHR5X2NhY2hlKCkKYGBgCgojIyMgU3BlZWQgb3B0aW1pemF0aW9uCgpgYGBweXRob24KIyBVc2UgaGFsZiBwcmVjaXNpb24Kc2FtID0gc2FtLmhhbGYoKQoKIyBSZWR1Y2UgcG9pbnRzIGZvciBhdXRvbWF0aWMgZ2VuZXJhdGlvbgptYXNrX2dlbmVyYXRvciA9IFNhbUF1dG9tYXRpY01hc2tHZW5lcmF0b3IoCiAgICBtb2RlbD1zYW0sCiAgICBwb2ludHNfcGVyX3NpZGU9MTYsICAjIERlZmF1bHQgaXMgMzIKKQoKIyBVc2UgT05OWCBmb3IgZGVwbG95bWVudAojIEV4cG9ydCB3aXRoIC0tcmV0dXJuLXNpbmdsZS1tYXNrIGZvciBmYXN0ZXIgaW5mZXJlbmNlCmBgYAoKIyMgQ29tbW9uIGlzc3VlcwoKfCBJc3N1ZSB8IFNvbHV0aW9uIHwKfC0tLS0tLS18LS0tLS0tLS0tLXwKfCBPdXQgb2YgbWVtb3J5IHwgVXNlIFZpVC1CIG1vZGVsLCByZWR1Y2UgaW1hZ2Ugc2l6ZSB8CnwgU2xvdyBpbmZlcmVuY2UgfCBVc2UgVmlULUIsIHJlZHVjZSBwb2ludHNfcGVyX3NpZGUgfAp8IFBvb3IgbWFzayBxdWFsaXR5IHwgVHJ5IGRpZmZlcmVudCBwcm9tcHRzLCB1c2UgYm94ICsgcG9pbnRzIHwKfCBFZGdlIGFydGlmYWN0cyB8IFVzZSBzdGFiaWxpdHlfc2NvcmUgZmlsdGVyaW5nIHwKfCBTbWFsbCBvYmplY3RzIG1pc3NlZCB8IEluY3JlYXNlIHBvaW50c19wZXJfc2lkZSB8CgojIyBSZWZlcmVuY2VzCgotICoqW0FkdmFuY2VkIFVzYWdlXShyZWZlcmVuY2VzL2FkdmFuY2VkLXVzYWdlLm1kKSoqIC0gQmF0Y2hpbmcsIGZpbmUtdHVuaW5nLCBpbnRlZ3JhdGlvbgotICoqW1Ryb3VibGVzaG9vdGluZ10ocmVmZXJlbmNlcy90cm91Ymxlc2hvb3RpbmcubWQpKiogLSBDb21tb24gaXNzdWVzIGFuZCBzb2x1dGlvbnMKCiMjIFJlc291cmNlcwoKLSAqKkdpdEh1YioqOiBodHRwczovL2dpdGh1Yi5jb20vZmFjZWJvb2tyZXNlYXJjaC9zZWdtZW50LWFueXRoaW5nCi0gKipQYXBlcioqOiBodHRwczovL2FyeGl2Lm9yZy9hYnMvMjMwNC4wMjY0MwotICoqRGVtbyoqOiBodHRwczovL3NlZ21lbnQtYW55dGhpbmcuY29tCi0gKipTQU0gMiAoVmlkZW8pKio6IGh0dHBzOi8vZ2l0aHViLmNvbS9mYWNlYm9va3Jlc2VhcmNoL3NlZ21lbnQtYW55dGhpbmctMgotICoqSHVnZ2luZ0ZhY2UqKjogaHR0cHM6Ly9odWdnaW5nZmFjZS5jby9mYWNlYm9vay9zYW0tdml0LWh1Z2UK
+---
+name: segment-anything-model
+description: Foundation model for image segmentation with zero-shot transfer. Use when you need to segment any object in images using points, boxes, or masks as prompts, or automatically generate all object masks in an image.
+version: 1.0.0
+author: Orchestra Research
+license: MIT
+dependencies: [segment-anything, transformers>=4.30.0, torch>=1.7.0]
+metadata:
+  hermes:
+    tags: [Multimodal, Image Segmentation, Computer Vision, SAM, Zero-Shot]
+
+---
+
+# Segment Anything Model (SAM)
+
+Comprehensive guide to using Meta AI's Segment Anything Model for zero-shot image segmentation.
+
+## When to use SAM
+
+**Use SAM when:**
+- Need to segment any object in images without task-specific training
+- Building interactive annotation tools with point/box prompts
+- Generating training data for other vision models
+- Need zero-shot transfer to new image domains
+- Building object detection/segmentation pipelines
+- Processing medical, satellite, or domain-specific images
+
+**Key features:**
+- **Zero-shot segmentation**: Works on any image domain without fine-tuning
+- **Flexible prompts**: Points, bounding boxes, or previous masks
+- **Automatic segmentation**: Generate all object masks automatically
+- **High quality**: Trained on 1.1 billion masks from 11 million images
+- **Multiple model sizes**: ViT-B (fastest), ViT-L, ViT-H (most accurate)
+- **ONNX export**: Deploy in browsers and edge devices
+
+**Use alternatives instead:**
+- **YOLO/Detectron2**: For real-time object detection with classes
+- **Mask2Former**: For semantic/panoptic segmentation with categories
+- **GroundingDINO + SAM**: For text-prompted segmentation
+- **SAM 2**: For video segmentation tasks
+
+## Quick start
+
+### Installation
+
+```bash
+# From GitHub
+pip install git+https://github.com/facebookresearch/segment-anything.git
+
+# Optional dependencies
+pip install opencv-python pycocotools matplotlib
+
+# Or use HuggingFace transformers
+pip install transformers
+```
+
+### Download checkpoints
+
+```bash
+# ViT-H (largest, most accurate) - 2.4GB
+wget https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth
+
+# ViT-L (medium) - 1.2GB
+wget https://dl.fbaipublicfiles.com/segment_anything/sam_vit_l_0b3195.pth
+
+# ViT-B (smallest, fastest) - 375MB
+wget https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth
+```
+
+### Basic usage with SamPredictor
+
+```python
+import numpy as np
+from segment_anything import sam_model_registry, SamPredictor
+
+# Load model
+sam = sam_model_registry["vit_h"](checkpoint="sam_vit_h_4b8939.pth")
+sam.to(device="cuda")
+
+# Create predictor
+predictor = SamPredictor(sam)
+
+# Set image (computes embeddings once)
+image = cv2.imread("image.jpg")
+image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+predictor.set_image(image)
+
+# Predict with point prompts
+input_point = np.array([[500, 375]])  # (x, y) coordinates
+input_label = np.array([1])  # 1 = foreground, 0 = background
+
+masks, scores, logits = predictor.predict(
+    point_coords=input_point,
+    point_labels=input_label,
+    multimask_output=True  # Returns 3 mask options
+)
+
+# Select best mask
+best_mask = masks[np.argmax(scores)]
+```
+
+### HuggingFace Transformers
+
+```python
+import torch
+from PIL import Image
+from transformers import SamModel, SamProcessor
+
+# Load model and processor
+model = SamModel.from_pretrained("facebook/sam-vit-huge")
+processor = SamProcessor.from_pretrained("facebook/sam-vit-huge")
+model.to("cuda")
+
+# Process image with point prompt
+image = Image.open("image.jpg")
+input_points = [[[450, 600]]]  # Batch of points
+
+inputs = processor(image, input_points=input_points, return_tensors="pt")
+inputs = {k: v.to("cuda") for k, v in inputs.items()}
+
+# Generate masks
+with torch.no_grad():
+    outputs = model(**inputs)
+
+# Post-process masks to original size
+masks = processor.image_processor.post_process_masks(
+    outputs.pred_masks.cpu(),
+    inputs["original_sizes"].cpu(),
+    inputs["reshaped_input_sizes"].cpu()
+)
+```
+
+## Core concepts
+
+### Model architecture
+
+```
+SAM Architecture:
+┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+│  Image Encoder  │────▶│ Prompt Encoder  │────▶│  Mask Decoder   │
+│     (ViT)       │     │ (Points/Boxes)  │     │ (Transformer)   │
+└─────────────────┘     └─────────────────┘     └─────────────────┘
+        │                       │                       │
+   Image Embeddings      Prompt Embeddings         Masks + IoU
+   (computed once)       (per prompt)             predictions
+```
+
+### Model variants
+
+| Model | Checkpoint | Size | Speed | Accuracy |
+|-------|------------|------|-------|----------|
+| ViT-H | `vit_h` | 2.4 GB | Slowest | Best |
+| ViT-L | `vit_l` | 1.2 GB | Medium | Good |
+| ViT-B | `vit_b` | 375 MB | Fastest | Good |
+
+### Prompt types
+
+| Prompt | Description | Use Case |
+|--------|-------------|----------|
+| Point (foreground) | Click on object | Single object selection |
+| Point (background) | Click outside object | Exclude regions |
+| Bounding box | Rectangle around object | Larger objects |
+| Previous mask | Low-res mask input | Iterative refinement |
+
+## Interactive segmentation
+
+### Point prompts
+
+```python
+# Single foreground point
+input_point = np.array([[500, 375]])
+input_label = np.array([1])
+
+masks, scores, logits = predictor.predict(
+    point_coords=input_point,
+    point_labels=input_label,
+    multimask_output=True
+)
+
+# Multiple points (foreground + background)
+input_points = np.array([[500, 375], [600, 400], [450, 300]])
+input_labels = np.array([1, 1, 0])  # 2 foreground, 1 background
+
+masks, scores, logits = predictor.predict(
+    point_coords=input_points,
+    point_labels=input_labels,
+    multimask_output=False  # Single mask when prompts are clear
+)
+```
+
+### Box prompts
+
+```python
+# Bounding box [x1, y1, x2, y2]
+input_box = np.array([425, 600, 700, 875])
+
+masks, scores, logits = predictor.predict(
+    box=input_box,
+    multimask_output=False
+)
+```
+
+### Combined prompts
+
+```python
+# Box + points for precise control
+masks, scores, logits = predictor.predict(
+    point_coords=np.array([[500, 375]]),
+    point_labels=np.array([1]),
+    box=np.array([400, 300, 700, 600]),
+    multimask_output=False
+)
+```
+
+### Iterative refinement
+
+```python
+# Initial prediction
+masks, scores, logits = predictor.predict(
+    point_coords=np.array([[500, 375]]),
+    point_labels=np.array([1]),
+    multimask_output=True
+)
+
+# Refine with additional point using previous mask
+masks, scores, logits = predictor.predict(
+    point_coords=np.array([[500, 375], [550, 400]]),
+    point_labels=np.array([1, 0]),  # Add background point
+    mask_input=logits[np.argmax(scores)][None, :, :],  # Use best mask
+    multimask_output=False
+)
+```
+
+## Automatic mask generation
+
+### Basic automatic segmentation
+
+```python
+from segment_anything import SamAutomaticMaskGenerator
+
+# Create generator
+mask_generator = SamAutomaticMaskGenerator(sam)
+
+# Generate all masks
+masks = mask_generator.generate(image)
+
+# Each mask contains:
+# - segmentation: binary mask
+# - bbox: [x, y, w, h]
+# - area: pixel count
+# - predicted_iou: quality score
+# - stability_score: robustness score
+# - point_coords: generating point
+```
+
+### Customized generation
+
+```python
+mask_generator = SamAutomaticMaskGenerator(
+    model=sam,
+    points_per_side=32,          # Grid density (more = more masks)
+    pred_iou_thresh=0.88,        # Quality threshold
+    stability_score_thresh=0.95,  # Stability threshold
+    crop_n_layers=1,             # Multi-scale crops
+    crop_n_points_downscale_factor=2,
+    min_mask_region_area=100,    # Remove tiny masks
+)
+
+masks = mask_generator.generate(image)
+```
+
+### Filtering masks
+
+```python
+# Sort by area (largest first)
+masks = sorted(masks, key=lambda x: x['area'], reverse=True)
+
+# Filter by predicted IoU
+high_quality = [m for m in masks if m['predicted_iou'] > 0.9]
+
+# Filter by stability score
+stable_masks = [m for m in masks if m['stability_score'] > 0.95]
+```
+
+## Batched inference
+
+### Multiple images
+
+```python
+# Process multiple images efficiently
+images = [cv2.imread(f"image_{i}.jpg") for i in range(10)]
+
+all_masks = []
+for image in images:
+    predictor.set_image(image)
+    masks, _, _ = predictor.predict(
+        point_coords=np.array([[500, 375]]),
+        point_labels=np.array([1]),
+        multimask_output=True
+    )
+    all_masks.append(masks)
+```
+
+### Multiple prompts per image
+
+```python
+# Process multiple prompts efficiently (one image encoding)
+predictor.set_image(image)
+
+# Batch of point prompts
+points = [
+    np.array([[100, 100]]),
+    np.array([[200, 200]]),
+    np.array([[300, 300]])
+]
+
+all_masks = []
+for point in points:
+    masks, scores, _ = predictor.predict(
+        point_coords=point,
+        point_labels=np.array([1]),
+        multimask_output=True
+    )
+    all_masks.append(masks[np.argmax(scores)])
+```
+
+## ONNX deployment
+
+### Export model
+
+```bash
+python scripts/export_onnx_model.py \
+    --checkpoint sam_vit_h_4b8939.pth \
+    --model-type vit_h \
+    --output sam_onnx.onnx \
+    --return-single-mask
+```
+
+### Use ONNX model
+
+```python
+import onnxruntime
+
+# Load ONNX model
+ort_session = onnxruntime.InferenceSession("sam_onnx.onnx")
+
+# Run inference (image embeddings computed separately)
+masks = ort_session.run(
+    None,
+    {
+        "image_embeddings": image_embeddings,
+        "point_coords": point_coords,
+        "point_labels": point_labels,
+        "mask_input": np.zeros((1, 1, 256, 256), dtype=np.float32),
+        "has_mask_input": np.array([0], dtype=np.float32),
+        "orig_im_size": np.array([h, w], dtype=np.float32)
+    }
+)
+```
+
+## Common workflows
+
+### Workflow 1: Annotation tool
+
+```python
+import cv2
+
+# Load model
+predictor = SamPredictor(sam)
+predictor.set_image(image)
+
+def on_click(event, x, y, flags, param):
+    if event == cv2.EVENT_LBUTTONDOWN:
+        # Foreground point
+        masks, scores, _ = predictor.predict(
+            point_coords=np.array([[x, y]]),
+            point_labels=np.array([1]),
+            multimask_output=True
+        )
+        # Display best mask
+        display_mask(masks[np.argmax(scores)])
+```
+
+### Workflow 2: Object extraction
+
+```python
+def extract_object(image, point):
+    """Extract object at point with transparent background."""
+    predictor.set_image(image)
+
+    masks, scores, _ = predictor.predict(
+        point_coords=np.array([point]),
+        point_labels=np.array([1]),
+        multimask_output=True
+    )
+
+    best_mask = masks[np.argmax(scores)]
+
+    # Create RGBA output
+    rgba = np.zeros((image.shape[0], image.shape[1], 4), dtype=np.uint8)
+    rgba[:, :, :3] = image
+    rgba[:, :, 3] = best_mask * 255
+
+    return rgba
+```
+
+### Workflow 3: Medical image segmentation
+
+```python
+# Process medical images (grayscale to RGB)
+medical_image = cv2.imread("scan.png", cv2.IMREAD_GRAYSCALE)
+rgb_image = cv2.cvtColor(medical_image, cv2.COLOR_GRAY2RGB)
+
+predictor.set_image(rgb_image)
+
+# Segment region of interest
+masks, scores, _ = predictor.predict(
+    box=np.array([x1, y1, x2, y2]),  # ROI bounding box
+    multimask_output=True
+)
+```
+
+## Output format
+
+### Mask data structure
+
+```python
+# SamAutomaticMaskGenerator output
+{
+    "segmentation": np.ndarray,  # H×W binary mask
+    "bbox": [x, y, w, h],        # Bounding box
+    "area": int,                 # Pixel count
+    "predicted_iou": float,      # 0-1 quality score
+    "stability_score": float,    # 0-1 robustness score
+    "crop_box": [x, y, w, h],    # Generation crop region
+    "point_coords": [[x, y]],    # Input point
+}
+```
+
+### COCO RLE format
+
+```python
+from pycocotools import mask as mask_utils
+
+# Encode mask to RLE
+rle = mask_utils.encode(np.asfortranarray(mask.astype(np.uint8)))
+rle["counts"] = rle["counts"].decode("utf-8")
+
+# Decode RLE to mask
+decoded_mask = mask_utils.decode(rle)
+```
+
+## Performance optimization
+
+### GPU memory
+
+```python
+# Use smaller model for limited VRAM
+sam = sam_model_registry["vit_b"](checkpoint="sam_vit_b_01ec64.pth")
+
+# Process images in batches
+# Clear CUDA cache between large batches
+torch.cuda.empty_cache()
+```
+
+### Speed optimization
+
+```python
+# Use half precision
+sam = sam.half()
+
+# Reduce points for automatic generation
+mask_generator = SamAutomaticMaskGenerator(
+    model=sam,
+    points_per_side=16,  # Default is 32
+)
+
+# Use ONNX for deployment
+# Export with --return-single-mask for faster inference
+```
+
+## Common issues
+
+| Issue | Solution |
+|-------|----------|
+| Out of memory | Use ViT-B model, reduce image size |
+| Slow inference | Use ViT-B, reduce points_per_side |
+| Poor mask quality | Try different prompts, use box + points |
+| Edge artifacts | Use stability_score filtering |
+| Small objects missed | Increase points_per_side |
+
+## References
+
+- **[Advanced Usage](references/advanced-usage.md)** - Batching, fine-tuning, integration
+- **[Troubleshooting](references/troubleshooting.md)** - Common issues and solutions
+
+## Resources
+
+- **GitHub**: https://github.com/facebookresearch/segment-anything
+- **Paper**: https://arxiv.org/abs/2304.02643
+- **Demo**: https://segment-anything.com
+- **SAM 2 (Video)**: https://github.com/facebookresearch/segment-anything-2
+- **HuggingFace**: https://huggingface.co/facebook/sam-vit-huge

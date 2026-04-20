@@ -1,1 +1,57 @@
-LS0tCm5hbWU6IGdpdGh1Yi1hcGktZmlsZS1lZGl0CmRlc2NyaXB0aW9uOiDpgJrov4cgR2l0SHViIFJFU1QgQVBJIOebtOaOpee8lui+kei/nOeoi+S7k+W6k+aWh+S7tu+8jOaXoOmcgCBjbG9uZeOAgumAgueUqOS6juS4tOaXtuaUueWKqOOAgei9u+mHj+e6p+S/ruaUueWcuuaZr+OAggotLS0KCiMgR2l0SHViIEFQSSBGaWxlIEVkaXQgV29ya2Zsb3cKCuS/ruaUuSBHaXRIdWIg5LiK5LuT5bqT5paH5Lu25pe277yM5aaC5peg5pys5Zyw5YWL6ZqG5Y+v55So77yM6YCa6L+HIEdpdEh1YiBSRVNUIEFQSSDnm7TmjqXmk43kvZzjgIIKCiMjIOmAgueUqOWcuuaZrwotIOacrOWcsOaXoOmhueebruWFi+mahgotIOWPquaDs+S/ruaUueWHoOS4quaWh+S7tuiAjOS4jeW/hSBjbG9uZSDmlbTkuKrku5PlupMKLSDkuLTml7blv6vpgJ/mjqjpgIHmlLnliqgKCiMjIOagh+WHhua1geeoiwoKIyMjIDEuIOiOt+WPluaWh+S7tiBTSEEg5ZKM5b2T5YmN5YaF5a65CmBgYGJhc2gKZ2ggYXBpICJyZXBvcy97b3duZXJ9L3tyZXBvfS9jb250ZW50cy97cGF0aH0/cmVmPXticmFuY2h9IiAtLWpxICcuc2hhLCAuY29udGVudCcKYGBgCui/lOWbniBge3NoYX1gIOWSjCBge2NvbnRlbnR9YO+8iGJhc2U2NOe8luegge+8iQoKIyMjIDIuIOS4i+i9veaWh+S7tuWGheWuue+8iOmcgCBkZWNvZGXvvIkKYGBgYmFzaApnaCBhcGkgInJlcG9zL3tvd25lcn0ve3JlcG99L2NvbnRlbnRzL3twYXRofT9yZWY9e2JyYW5jaH0iIC0tanEgJy5jb250ZW50JyB8IGJhc2U2NCAtZCA+IGxvY2FsX2ZpbGUKYGBgCgojIyMgMy4g5L+u5pS55paH5Lu25ZCO5o6o6YCBCmBgYGJhc2gKU0hBPSQoZ2ggYXBpICJyZXBvcy97b3duZXJ9L3tyZXBvfS9jb250ZW50cy97cGF0aH0/cmVmPXticmFuY2h9IiAtLWpxICcuc2hhJykKQ09OVEVOVD0kKGJhc2U2NCAtaSBsb2NhbF9maWxlKQpnaCBhcGkgLS1tZXRob2QgUFVUICJyZXBvcy97b3duZXJ9L3tyZXBvfS9jb250ZW50cy97cGF0aH0iIFwKICAtZiBtZXNzYWdlPSJjb21taXQgbWVzc2FnZSIgXAogIC1mIGNvbnRlbnQ9IiRDT05URU5UIiBcCiAgLWYgc2hhPSIkU0hBIgpgYGAKCiMjIyA0LiDor7vlj5bnm67lvZXnu5PmnoTvvIjmoJHlvaLvvIkKYGBgYmFzaApnaCBhcGkgInJlcG9zL3tvd25lcn0ve3JlcG99L2dpdC90cmVlcy97YnJhbmNofT9yZWN1cnNpdmU9MSIgLS1qcSAnLnRyZWVbXS5wYXRoJwpgYGAKCiMjIyA1LiBHcmFwaFFMIOafpeivou+8iOWmgiBwaW5uZWQgaXRlbXPvvIkKYGBgYmFzaApnaCBhcGkgZ3JhcGhxbCAtZiBxdWVyeT0neyB1c2VyKGxvZ2luOiAidXNlcm5hbWUiKSB7IHBpbm5lZEl0ZW1zKGZpcnN0OiA2LCB0eXBlczogUkVQT1NJVE9SWSkgeyBub2RlcyB7IC4uLiBvbiBSZXBvc2l0b3J5IHsgbmFtZSBkZXNjcmlwdGlvbiB1cmwgcHJpbWFyeUxhbmd1YWdlIHsgbmFtZSB9IH0gfSB9IH0gfScgLS1qcSAnLmRhdGEudXNlci5waW5uZWRJdGVtcy5ub2Rlc1tdJwpgYGAKCiMjIOWdkeeCuQoKLSBgZ2ggYXBpIC4uLiAtLWpxICcuY29udGVudCdgIOaLv+WIsOeahCBjb250ZW50IOaYryBiYXNlNjQg57yW56CB55qE77yM5LiN5piv5piO5paHCi0g55SoIGBwYXRjaGAg5bel5YW35YGa5a2X56ym5Liy5pu/5o2i5pe277yM5b+F6aG757K+56Gu5Yy56YWN77yI5YyF5ous56m65qC844CB57yp6L+b77yJ77yM5aSN5p2C5paH5Lu25a655piT5aSx6LSlCi0g5aSn6Z2i56ev5pS55Yqo5pe277yad3JpdGVfZmlsZSDlhpnliLAgYC90bXAvYO+8jOWGjSBiYXNlNjQg5o6o5LiK5Y6777yM5q+UIHBhdGNoIOabtOWPr+mdoAotIFNIQSDlv4XpobvnlKjmnIDmlrDlgLzvvIzml6fnmoTkvJrmiqUgNDA5IENvbmZsaWN0Ci0g6Lev5b6E5LiN5a2Y5Zyo5pe277yI5aaC5YiG5pSvL+ebruW9lemUmeivr++8ieS8mui/lOWbniA0MDQKCiMjIOadg+mZkArpnIAgR2l0SHViIFBBVO+8iGdpdCBjcmVkZW50aWFsIOaWueW8j++8mnJlbW90ZSBVUkwg5bWM5YWlIFRPS0VO77yM5oiWIGBnaCBhdXRoIGxvZ2luYO+8iQo=
+---
+name: github-api-file-edit
+description: 通过 GitHub REST API 直接编辑远程仓库文件，无需 clone。适用于临时改动、轻量级修改场景。
+---
+
+# GitHub API File Edit Workflow
+
+修改 GitHub 上仓库文件时，如无本地克隆可用，通过 GitHub REST API 直接操作。
+
+## 适用场景
+- 本地无项目克隆
+- 只想修改几个文件而不必 clone 整个仓库
+- 临时快速推送改动
+
+## 标准流程
+
+### 1. 获取文件 SHA 和当前内容
+```bash
+gh api "repos/{owner}/{repo}/contents/{path}?ref={branch}" --jq '.sha, .content'
+```
+返回 `{sha}` 和 `{content}`（base64编码）
+
+### 2. 下载文件内容（需 decode）
+```bash
+gh api "repos/{owner}/{repo}/contents/{path}?ref={branch}" --jq '.content' | base64 -d > local_file
+```
+
+### 3. 修改文件后推送
+```bash
+SHA=$(gh api "repos/{owner}/{repo}/contents/{path}?ref={branch}" --jq '.sha')
+CONTENT=$(base64 -i local_file)
+gh api --method PUT "repos/{owner}/{repo}/contents/{path}" \
+  -f message="commit message" \
+  -f content="$CONTENT" \
+  -f sha="$SHA"
+```
+
+### 4. 读取目录结构（树形）
+```bash
+gh api "repos/{owner}/{repo}/git/trees/{branch}?recursive=1" --jq '.tree[].path'
+```
+
+### 5. GraphQL 查询（如 pinned items）
+```bash
+gh api graphql -f query='{ user(login: "username") { pinnedItems(first: 6, types: REPOSITORY) { nodes { ... on Repository { name description url primaryLanguage { name } } } } } }' --jq '.data.user.pinnedItems.nodes[]'
+```
+
+## 坑点
+
+- `gh api ... --jq '.content'` 拿到的 content 是 base64 编码的，不是明文
+- 用 `patch` 工具做字符串替换时，必须精确匹配（包括空格、缩进），复杂文件容易失败
+- 大面积改动时：write_file 写到 `/tmp/`，再 base64 推上去，比 patch 更可靠
+- SHA 必须用最新值，旧的会报 409 Conflict
+- 路径不存在时（如分支/目录错误）会返回 404
+
+## 权限
+需 GitHub PAT（git credential 方式：remote URL 嵌入 TOKEN，或 `gh auth login`）

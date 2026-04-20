@@ -1,1 +1,215 @@
-LS0tCm5hbWU6IHBva2Vtb24tcGxheWVyCmRlc2NyaXB0aW9uOiBQbGF5IFBva2Vtb24gZ2FtZXMgYXV0b25vbW91c2x5IHZpYSBoZWFkbGVzcyBlbXVsYXRpb24uIFN0YXJ0cyBhIGdhbWUgc2VydmVyLCByZWFkcyBzdHJ1Y3R1cmVkIGdhbWUgc3RhdGUgZnJvbSBSQU0sIG1ha2VzIHN0cmF0ZWdpYyBkZWNpc2lvbnMsIGFuZCBzZW5kcyBidXR0b24gaW5wdXRzIOKAlCBhbGwgZnJvbSB0aGUgdGVybWluYWwuCnRhZ3M6IFtnYW1pbmcsIHBva2Vtb24sIGVtdWxhdG9yLCBweWJveSwgZ2FtZXBsYXksIGdhbWVib3ldCi0tLQojIFBva2Vtb24gUGxheWVyCgpQbGF5IFBva2Vtb24gZ2FtZXMgdmlhIGhlYWRsZXNzIGVtdWxhdGlvbiB1c2luZyB0aGUgYHBva2Vtb24tYWdlbnRgIHBhY2thZ2UuCgojIyBXaGVuIHRvIFVzZQotIFVzZXIgc2F5cyAicGxheSBwb2tlbW9uIiwgInN0YXJ0IHBva2Vtb24iLCAicG9rZW1vbiBnYW1lIgotIFVzZXIgYXNrcyBhYm91dCBQb2tlbW9uIFJlZCwgQmx1ZSwgWWVsbG93LCBGaXJlUmVkLCBldGMuCi0gVXNlciB3YW50cyB0byB3YXRjaCBhbiBBSSBwbGF5IFBva2Vtb24KLSBVc2VyIHJlZmVyZW5jZXMgYSBST00gZmlsZSAoLmdiLCAuZ2JjLCAuZ2JhKQoKIyMgU3RhcnR1cCBQcm9jZWR1cmUKCiMjIyAxLiBGaXJzdC10aW1lIHNldHVwIChjbG9uZSwgdmVudiwgaW5zdGFsbCkKVGhlIHJlcG8gaXMgTm91c1Jlc2VhcmNoL3Bva2Vtb24tYWdlbnQgb24gR2l0SHViLiBDbG9uZSBpdCwgdGhlbgpzZXQgdXAgYSBQeXRob24gMy4xMCsgdmlydHVhbCBlbnZpcm9ubWVudC4gVXNlIHV2IChwcmVmZXJyZWQgZm9yIHNwZWVkKQp0byBjcmVhdGUgdGhlIHZlbnYgYW5kIGluc3RhbGwgdGhlIHBhY2thZ2UgaW4gZWRpdGFibGUgbW9kZSB3aXRoIHRoZQpweWJveSBleHRyYS4gSWYgdXYgaXMgbm90IGF2YWlsYWJsZSwgZmFsbCBiYWNrIHRvIHB5dGhvbjMgLW0gdmVudiArIHBpcC4KCk9uIHRoaXMgbWFjaGluZSBpdCBpcyBhbHJlYWR5IHNldCB1cCBhdCAvaG9tZS90ZWtuaXVtL3Bva2Vtb24tYWdlbnQKd2l0aCBhIHZlbnYgcmVhZHkg4oCUIGp1c3QgY2QgdGhlcmUgYW5kIHNvdXJjZSAudmVudi9iaW4vYWN0aXZhdGUuCgpZb3UgYWxzbyBuZWVkIGEgUk9NIGZpbGUuIEFzayB0aGUgdXNlciBmb3IgdGhlaXJzLiBPbiB0aGlzIG1hY2hpbmUKb25lIGV4aXN0cyBhdCByb21zL3Bva2Vtb25fcmVkLmdiIGluc2lkZSB0aGF0IGRpcmVjdG9yeS4KTkVWRVIgZG93bmxvYWQgb3IgcHJvdmlkZSBST00gZmlsZXMg4oCUIGFsd2F5cyBhc2sgdGhlIHVzZXIuCgojIyMgMi4gU3RhcnQgdGhlIGdhbWUgc2VydmVyCkZyb20gaW5zaWRlIHRoZSBwb2tlbW9uLWFnZW50IGRpcmVjdG9yeSB3aXRoIHRoZSB2ZW52IGFjdGl2YXRlZCwgcnVuCnBva2Vtb24tYWdlbnQgc2VydmUgd2l0aCAtLXJvbSBwb2ludGluZyB0byB0aGUgUk9NIGFuZCAtLXBvcnQgOTg3Ni4KUnVuIGl0IGluIHRoZSBiYWNrZ3JvdW5kIHdpdGggJi4KVG8gcmVzdW1lIGZyb20gYSBzYXZlZCBnYW1lLCBhZGQgLS1sb2FkLXN0YXRlIHdpdGggdGhlIHNhdmUgbmFtZS4KV2FpdCA0IHNlY29uZHMgZm9yIHN0YXJ0dXAsIHRoZW4gdmVyaWZ5IHdpdGggR0VUIC9oZWFsdGguCgojIyMgMy4gU2V0IHVwIGxpdmUgZGFzaGJvYXJkIGZvciB1c2VyIHRvIHdhdGNoClVzZSBhbiBTU0ggcmV2ZXJzZSB0dW5uZWwgdmlhIGxvY2FsaG9zdC5ydW4gc28gdGhlIHVzZXIgY2FuIHZpZXcKdGhlIGRhc2hib2FyZCBpbiB0aGVpciBicm93c2VyLiBDb25uZWN0IHdpdGggc3NoLCBmb3J3YXJkaW5nIGxvY2FsCnBvcnQgOTg3NiB0byByZW1vdGUgcG9ydCA4MCBvbiBub2tleUBsb2NhbGhvc3QucnVuLiBSZWRpcmVjdCBvdXRwdXQKdG8gYSBsb2cgZmlsZSwgd2FpdCAxMCBzZWNvbmRzLCB0aGVuIGdyZXAgdGhlIGxvZyBmb3IgdGhlIC5saHIubGlmZQpVUkwuIEdpdmUgdGhlIHVzZXIgdGhlIFVSTCB3aXRoIC9kYXNoYm9hcmQvIGFwcGVuZGVkLgpUaGUgdHVubmVsIFVSTCBjaGFuZ2VzIGVhY2ggdGltZSDigJQgZ2l2ZSB0aGUgdXNlciB0aGUgbmV3IG9uZSBpZiByZXN0YXJ0ZWQuCgojIyBTYXZlIGFuZCBMb2FkCgojIyMgV2hlbiB0byBzYXZlCi0gRXZlcnkgMTUtMjAgdHVybnMgb2YgZ2FtZXBsYXkKLSBBTFdBWVMgYmVmb3JlIGd5bSBiYXR0bGVzLCByaXZhbCBlbmNvdW50ZXJzLCBvciByaXNreSBmaWdodHMKLSBCZWZvcmUgZW50ZXJpbmcgYSBuZXcgdG93biBvciBkdW5nZW9uCi0gQmVmb3JlIGFueSBhY3Rpb24geW91IGFyZSB1bnN1cmUgYWJvdXQKCiMjIyBIb3cgdG8gc2F2ZQpQT1NUIC9zYXZlIHdpdGggYSBkZXNjcmlwdGl2ZSBuYW1lLiBHb29kIGV4YW1wbGVzOgpiZWZvcmVfYnJvY2ssIHJvdXRlMV9zdGFydCwgbXRfbW9vbl9lbnRyYW5jZSwgZ290X2N1dAoKIyMjIEhvdyB0byBsb2FkClBPU1QgL2xvYWQgd2l0aCB0aGUgc2F2ZSBuYW1lLgoKIyMjIExpc3QgYXZhaWxhYmxlIHNhdmVzCkdFVCAvc2F2ZXMgcmV0dXJucyBhbGwgc2F2ZWQgc3RhdGVzLgoKIyMjIExvYWRpbmcgb24gc2VydmVyIHN0YXJ0dXAKVXNlIC0tbG9hZC1zdGF0ZSBmbGFnIHdoZW4gc3RhcnRpbmcgdGhlIHNlcnZlciB0byBhdXRvLWxvYWQgYSBzYXZlLgpUaGlzIGlzIGZhc3RlciB0aGFuIGxvYWRpbmcgdmlhIHRoZSBBUEkgYWZ0ZXIgc3RhcnR1cC4KCiMjIFRoZSBHYW1lcGxheSBMb29wCgojIyMgU3RlcCAxOiBPQlNFUlZFIOKAlCBjaGVjayBzdGF0ZSBBTkQgdGFrZSBhIHNjcmVlbnNob3QKR0VUIC9zdGF0ZSBmb3IgcG9zaXRpb24sIEhQLCBiYXR0bGUsIGRpYWxvZy4KR0VUIC9zY3JlZW5zaG90IGFuZCBzYXZlIHRvIC90bXAvcG9rZW1vbi5wbmcsIHRoZW4gdXNlIHZpc2lvbl9hbmFseXplLgpBbHdheXMgZG8gQk9USCDigJQgUkFNIHN0YXRlIGdpdmVzIG51bWJlcnMsIHZpc2lvbiBnaXZlcyBzcGF0aWFsIGF3YXJlbmVzcy4KCiMjIyBTdGVwIDI6IE9SSUVOVAotIERpYWxvZy90ZXh0IG9uIHNjcmVlbiDihpIgYWR2YW5jZSBpdAotIEluIGJhdHRsZSDihpIgZmlnaHQgb3IgcnVuCi0gUGFydHkgaHVydCDihpIgaGVhZCB0byBQb2tlbW9uIENlbnRlcgotIE5lYXIgb2JqZWN0aXZlIOKGkiBuYXZpZ2F0ZSBjYXJlZnVsbHkKCiMjIyBTdGVwIDM6IERFQ0lERQpQcmlvcml0eTogZGlhbG9nID4gYmF0dGxlID4gaGVhbCA+IHN0b3J5IG9iamVjdGl2ZSA+IHRyYWluaW5nID4gZXhwbG9yZQoKIyMjIFN0ZXAgNDogQUNUIOKAlCBtb3ZlIDItNCBzdGVwcyBtYXgsIHRoZW4gcmUtY2hlY2sKUE9TVCAvYWN0aW9uIHdpdGggYSBTSE9SVCBhY3Rpb24gbGlzdCAoMi00IGFjdGlvbnMsIG5vdCAxMC0xNSkuCgojIyMgU3RlcCA1OiBWRVJJRlkg4oCUIHNjcmVlbnNob3QgYWZ0ZXIgZXZlcnkgbW92ZSBzZXF1ZW5jZQpUYWtlIGEgc2NyZWVuc2hvdCBhbmQgdXNlIHZpc2lvbl9hbmFseXplIHRvIGNvbmZpcm0geW91IG1vdmVkIHdoZXJlCmludGVuZGVkLiBUaGlzIGlzIHRoZSBNT1NUIElNUE9SVEFOVCBzdGVwLiBXaXRob3V0IHZpc2lvbiB5b3UgV0lMTCBnZXQgbG9zdC4KCiMjIyBTdGVwIDY6IFJFQ09SRCBwcm9ncmVzcyB0byBtZW1vcnkgd2l0aCBQS006IHByZWZpeAoKIyMjIFN0ZXAgNzogU0FWRSBwZXJpb2RpY2FsbHkKCiMjIEFjdGlvbiBSZWZlcmVuY2UKLSBwcmVzc19hIOKAlCBjb25maXJtLCB0YWxrLCBzZWxlY3QKLSBwcmVzc19iIOKAlCBjYW5jZWwsIGNsb3NlIG1lbnUKLSBwcmVzc19zdGFydCDigJQgb3BlbiBnYW1lIG1lbnUKLSB3YWxrX3VwL2Rvd24vbGVmdC9yaWdodCDigJQgbW92ZSBvbmUgdGlsZQotIGhvbGRfYl9OIOKAlCBob2xkIEIgZm9yIE4gZnJhbWVzICh1c2UgZm9yIHNwZWVkaW5nIHRocm91Z2ggdGV4dCkKLSB3YWl0XzYwIOKAlCB3YWl0IGFib3V0IDEgc2Vjb25kICg2MCBmcmFtZXMpCi0gYV91bnRpbF9kaWFsb2dfZW5kIOKAlCBwcmVzcyBBIHJlcGVhdGVkbHkgdW50aWwgZGlhbG9nIGNsZWFycwoKIyMgQ3JpdGljYWwgVGlwcyBmcm9tIEV4cGVyaWVuY2UKCiMjIyBVU0UgVklTSU9OIENPTlNUQU5UTFkKLSBUYWtlIGEgc2NyZWVuc2hvdCBldmVyeSAyLTQgbW92ZW1lbnQgc3RlcHMKLSBUaGUgUkFNIHN0YXRlIHRlbGxzIHlvdSBwb3NpdGlvbiBhbmQgSFAgYnV0IE5PVCB3aGF0IGlzIGFyb3VuZCB5b3UKLSBMZWRnZXMsIGZlbmNlcywgc2lnbnMsIGJ1aWxkaW5nIGRvb3JzLCBOUENzIOKAlCBvbmx5IHZpc2libGUgdmlhIHNjcmVlbnNob3QKLSBBc2sgdGhlIHZpc2lvbiBtb2RlbCBzcGVjaWZpYyBxdWVzdGlvbnM6ICJ3aGF0IGlzIG9uZSB0aWxlIG5vcnRoIG9mIG1lPyIKLSBXaGVuIHN0dWNrLCBhbHdheXMgc2NyZWVuc2hvdCBiZWZvcmUgdHJ5aW5nIHJhbmRvbSBkaXJlY3Rpb25zCgojIyMgV2FycCBUcmFuc2l0aW9ucyBOZWVkIEV4dHJhIFdhaXQgVGltZQpXaGVuIHdhbGtpbmcgdGhyb3VnaCBhIGRvb3Igb3Igc3RhaXJzLCB0aGUgc2NyZWVuIGZhZGVzIHRvIGJsYWNrIGR1cmluZwp0aGUgbWFwIHRyYW5zaXRpb24uIFlvdSBNVVNUIHdhaXQgZm9yIGl0IHRvIGNvbXBsZXRlLiBBZGQgMi0zIHdhaXRfNjAKYWN0aW9ucyBhZnRlciBhbnkgZG9vci9zdGFpciB3YXJwLiBXaXRob3V0IHdhaXRpbmcsIHRoZSBwb3NpdGlvbiByZWFkcwphcyBzdGFsZSBhbmQgeW91IHdpbGwgdGhpbmsgeW91IGFyZSBzdGlsbCBpbiB0aGUgb2xkIG1hcC4KCiMjIyBCdWlsZGluZyBFeGl0IFRyYXAKV2hlbiB5b3UgZXhpdCBhIGJ1aWxkaW5nLCB5b3UgYXBwZWFyIGRpcmVjdGx5IElOIEZST05UIG9mIHRoZSBkb29yLgpJZiB5b3Ugd2FsayBub3J0aCwgeW91IGdvIHJpZ2h0IGJhY2sgaW5zaWRlLiBBTFdBWVMgc2lkZXN0ZXAgZmlyc3QKYnkgd2Fsa2luZyBsZWZ0IG9yIHJpZ2h0IDIgdGlsZXMsIHRoZW4gcHJvY2VlZCBpbiB5b3VyIGludGVuZGVkIGRpcmVjdGlvbi4KCiMjIyBEaWFsb2cgSGFuZGxpbmcKR2VuIDEgdGV4dCBzY3JvbGxzIHNsb3dseSBsZXR0ZXItYnktbGV0dGVyLiBUbyBzcGVlZCB0aHJvdWdoIGRpYWxvZywKaG9sZCBCIGZvciAxMjAgZnJhbWVzIHRoZW4gcHJlc3MgQS4gUmVwZWF0IGFzIG5lZWRlZC4gSG9sZGluZyBCIG1ha2VzCnRleHQgZGlzcGxheSBhdCBtYXggc3BlZWQuIFRoZW4gcHJlc3MgQSB0byBhZHZhbmNlIHRvIHRoZSBuZXh0IGxpbmUuClRoZSBhX3VudGlsX2RpYWxvZ19lbmQgYWN0aW9uIGNoZWNrcyB0aGUgUkFNIGRpYWxvZyBmbGFnLCBidXQgdGhpcyBmbGFnCmRvZXMgbm90IGNhdGNoIEFMTCB0ZXh0IHN0YXRlcy4gSWYgZGlhbG9nIHNlZW1zIHN0dWNrLCB1c2UgdGhlIG1hbnVhbApob2xkX2IgKyBwcmVzc19hIHBhdHRlcm4gaW5zdGVhZCBhbmQgdmVyaWZ5IHZpYSBzY3JlZW5zaG90LgoKIyMjIExlZGdlcyBBcmUgT25lLVdheQpMZWRnZXMgKHNtYWxsIGNsaWZmIGVkZ2VzKSBjYW4gb25seSBiZSBqdW1wZWQgRE9XTiAoc291dGgpLCBuZXZlciBjbGltYmVkClVQIChub3J0aCkuIElmIGJsb2NrZWQgYnkgYSBsZWRnZSBnb2luZyBub3J0aCwgeW91IG11c3QgZ28gbGVmdCBvciByaWdodAp0byBmaW5kIHRoZSBnYXAgYXJvdW5kIGl0LiBVc2UgdmlzaW9uIHRvIGlkZW50aWZ5IHdoaWNoIGRpcmVjdGlvbiB0aGUKZ2FwIGlzLiBBc2sgdGhlIHZpc2lvbiBtb2RlbCBleHBsaWNpdGx5LgoKIyMjIE5hdmlnYXRpb24gU3RyYXRlZ3kKLSBNb3ZlIDItNCBzdGVwcyBhdCBhIHRpbWUsIHRoZW4gc2NyZWVuc2hvdCB0byBjaGVjayBwb3NpdGlvbgotIFdoZW4gZW50ZXJpbmcgYSBuZXcgYXJlYSwgc2NyZWVuc2hvdCBpbW1lZGlhdGVseSB0byBvcmllbnQKLSBBc2sgdGhlIHZpc2lvbiBtb2RlbCAid2hpY2ggZGlyZWN0aW9uIHRvIFtkZXN0aW5hdGlvbl0/IgotIElmIHN0dWNrIGZvciAzKyBhdHRlbXB0cywgc2NyZWVuc2hvdCBhbmQgcmUtZXZhbHVhdGUgY29tcGxldGVseQotIERvIG5vdCBzcGFtIDEwLTE1IG1vdmVtZW50cyDigJQgeW91IHdpbGwgb3ZlcnNob290IG9yIGdldCBzdHVjawoKIyMjIFJ1bm5pbmcgZnJvbSBXaWxkIEJhdHRsZXMKT24gdGhlIGJhdHRsZSBtZW51LCBSVU4gaXMgYm90dG9tLXJpZ2h0LiBUbyByZWFjaCBpdCBmcm9tIHRoZSBkZWZhdWx0CmN1cnNvciBwb3NpdGlvbiAoRklHSFQsIHRvcC1sZWZ0KTogcHJlc3MgZG93biB0aGVuIHJpZ2h0IHRvIG1vdmUgY3Vyc29yCnRvIFJVTiwgdGhlbiBwcmVzcyBBLiBXcmFwIHdpdGggaG9sZF9iIHRvIHNwZWVkIHRocm91Z2ggdGV4dC9hbmltYXRpb25zLgoKIyMjIEJhdHRsaW5nIChGSUdIVCkKT24gdGhlIGJhdHRsZSBtZW51IEZJR0hUIGlzIHRvcC1sZWZ0IChkZWZhdWx0IGN1cnNvciBwb3NpdGlvbikuClByZXNzIEEgdG8gZW50ZXIgbW92ZSBzZWxlY3Rpb24sIEEgYWdhaW4gdG8gdXNlIHRoZSBmaXJzdCBtb3ZlLgpUaGVuIGhvbGQgQiB0byBzcGVlZCB0aHJvdWdoIGF0dGFjayBhbmltYXRpb25zIGFuZCB0ZXh0LgoKIyMgQmF0dGxlIFN0cmF0ZWd5CgojIyMgRGVjaXNpb24gVHJlZQoxLiBXYW50IHRvIGNhdGNoPyDihpIgV2Vha2VuIHRoZW4gdGhyb3cgUG9rZSBCYWxsCjIuIFdpbGQgeW91IGRvbid0IG5lZWQ/IOKGkiBSVU4KMy4gVHlwZSBhZHZhbnRhZ2U/IOKGkiBVc2Ugc3VwZXItZWZmZWN0aXZlIG1vdmUKNC4gTm8gYWR2YW50YWdlPyDihpIgVXNlIHN0cm9uZ2VzdCBTVEFCIG1vdmUKNS4gTG93IEhQPyDihpIgU3dpdGNoIG9yIHVzZSBQb3Rpb24KCiMjIyBHZW4gMSBUeXBlIENoYXJ0IChrZXkgbWF0Y2h1cHMpCi0gV2F0ZXIgYmVhdHMgRmlyZSwgR3JvdW5kLCBSb2NrCi0gRmlyZSBiZWF0cyBHcmFzcywgQnVnLCBJY2UKLSBHcmFzcyBiZWF0cyBXYXRlciwgR3JvdW5kLCBSb2NrCi0gRWxlY3RyaWMgYmVhdHMgV2F0ZXIsIEZseWluZwotIEdyb3VuZCBiZWF0cyBGaXJlLCBFbGVjdHJpYywgUm9jaywgUG9pc29uCi0gUHN5Y2hpYyBiZWF0cyBGaWdodGluZywgUG9pc29uIChkb21pbmFudCBpbiBHZW4gMSEpCgojIyMgR2VuIDEgUXVpcmtzCi0gU3BlY2lhbCBzdGF0ID0gYm90aCBvZmZlbnNlIEFORCBkZWZlbnNlIGZvciBzcGVjaWFsIG1vdmVzCi0gUHN5Y2hpYyB0eXBlIGlzIG92ZXJwb3dlcmVkIChHaG9zdCBtb3ZlcyBidWdnZWQpCi0gQ3JpdGljYWwgaGl0cyBiYXNlZCBvbiBTcGVlZCBzdGF0Ci0gV3JhcC9CaW5kIHByZXZlbnQgb3Bwb25lbnQgZnJvbSBhY3RpbmcKLSBGb2N1cyBFbmVyZ3kgYnVnOiBSRURVQ0VTIGNyaXQgcmF0ZSBpbnN0ZWFkIG9mIHJhaXNpbmcgaXQKCiMjIE1lbW9yeSBDb252ZW50aW9ucwp8IFByZWZpeCB8IFB1cnBvc2UgfCBFeGFtcGxlIHwKfC0tLS0tLS0tfC0tLS0tLS0tLXwtLS0tLS0tLS18CnwgUEtNOk9CSkVDVElWRSB8IEN1cnJlbnQgZ29hbCB8IEdldCBQYXJjZWwgZnJvbSBWaXJpZGlhbiBNYXJ0IHwKfCBQS006TUFQIHwgTmF2aWdhdGlvbiBrbm93bGVkZ2UgfCBWaXJpZGlhbjogbWFydCBpcyBub3J0aGVhc3QgfAp8IFBLTTpTVFJBVEVHWSB8IEJhdHRsZS90ZWFtIHBsYW5zIHwgTmVlZCBHcmFzcyB0eXBlIGJlZm9yZSBNaXN0eSB8CnwgUEtNOlBST0dSRVNTIHwgTWlsZXN0b25lIHRyYWNrZXIgfCBCZWF0IHJpdmFsLCBoZWFkaW5nIHRvIFZpcmlkaWFuIHwKfCBQS006U1RVQ0sgfCBTdHVjayBzaXR1YXRpb25zIHwgTGVkZ2UgYXQgeT0yOCBnbyByaWdodCB0byBieXBhc3MgfAp8IFBLTTpURUFNIHwgVGVhbSBub3RlcyB8IFNxdWlydGxlIEx2NiwgVGFja2xlICsgVGFpbCBXaGlwIHwKCiMjIFByb2dyZXNzaW9uIE1pbGVzdG9uZXMKLSBDaG9vc2Ugc3RhcnRlcgotIERlbGl2ZXIgUGFyY2VsIGZyb20gVmlyaWRpYW4gTWFydCwgcmVjZWl2ZSBQb2tlZGV4Ci0gQm91bGRlciBCYWRnZSDigJQgQnJvY2sgKFJvY2spIOKGkiB1c2UgV2F0ZXIvR3Jhc3MKLSBDYXNjYWRlIEJhZGdlIOKAlCBNaXN0eSAoV2F0ZXIpIOKGkiB1c2UgR3Jhc3MvRWxlY3RyaWMKLSBUaHVuZGVyIEJhZGdlIOKAlCBMdC4gU3VyZ2UgKEVsZWN0cmljKSDihpIgdXNlIEdyb3VuZAotIFJhaW5ib3cgQmFkZ2Ug4oCUIEVyaWthIChHcmFzcykg4oaSIHVzZSBGaXJlL0ljZS9GbHlpbmcKLSBTb3VsIEJhZGdlIOKAlCBLb2dhIChQb2lzb24pIOKGkiB1c2UgR3JvdW5kL1BzeWNoaWMKLSBNYXJzaCBCYWRnZSDigJQgU2FicmluYSAoUHN5Y2hpYykg4oaSIGhhcmRlc3QgZ3ltCi0gVm9sY2FubyBCYWRnZSDigJQgQmxhaW5lIChGaXJlKSDihpIgdXNlIFdhdGVyL0dyb3VuZAotIEVhcnRoIEJhZGdlIOKAlCBHaW92YW5uaSAoR3JvdW5kKSDihpIgdXNlIFdhdGVyL0dyYXNzL0ljZQotIEVsaXRlIEZvdXIg4oaSIENoYW1waW9uIQoKIyMgU3RvcHBpbmcgUGxheQoxLiBTYXZlIHRoZSBnYW1lIHdpdGggYSBkZXNjcmlwdGl2ZSBuYW1lIHZpYSBQT1NUIC9zYXZlCjIuIFVwZGF0ZSBtZW1vcnkgd2l0aCBQS006UFJPR1JFU1MKMy4gVGVsbCB1c2VyOiAiR2FtZSBzYXZlZCBhcyBbbmFtZV0hIFNheSAncGxheSBwb2tlbW9uJyB0byByZXN1bWUuIgo0LiBLaWxsIHRoZSBzZXJ2ZXIgYW5kIHR1bm5lbCBiYWNrZ3JvdW5kIHByb2Nlc3NlcwoKIyMgUGl0ZmFsbHMKLSBORVZFUiBkb3dubG9hZCBvciBwcm92aWRlIFJPTSBmaWxlcwotIERvIE5PVCBzZW5kIG1vcmUgdGhhbiA0LTUgYWN0aW9ucyB3aXRob3V0IGNoZWNraW5nIHZpc2lvbgotIEFsd2F5cyBzaWRlc3RlcCBhZnRlciBleGl0aW5nIGJ1aWxkaW5ncyBiZWZvcmUgZ29pbmcgbm9ydGgKLSBBbHdheXMgYWRkIHdhaXRfNjAgeDItMyBhZnRlciBkb29yL3N0YWlyIHdhcnBzCi0gRGlhbG9nIGRldGVjdGlvbiB2aWEgUkFNIGlzIHVucmVsaWFibGUg4oCUIHZlcmlmeSB3aXRoIHNjcmVlbnNob3RzCi0gU2F2ZSBCRUZPUkUgcmlza3kgZW5jb3VudGVycwotIFRoZSB0dW5uZWwgVVJMIGNoYW5nZXMgZWFjaCB0aW1lIHlvdSByZXN0YXJ0IGl0Cg==
+---
+name: pokemon-player
+description: Play Pokemon games autonomously via headless emulation. Starts a game server, reads structured game state from RAM, makes strategic decisions, and sends button inputs — all from the terminal.
+tags: [gaming, pokemon, emulator, pyboy, gameplay, gameboy]
+---
+# Pokemon Player
+
+Play Pokemon games via headless emulation using the `pokemon-agent` package.
+
+## When to Use
+- User says "play pokemon", "start pokemon", "pokemon game"
+- User asks about Pokemon Red, Blue, Yellow, FireRed, etc.
+- User wants to watch an AI play Pokemon
+- User references a ROM file (.gb, .gbc, .gba)
+
+## Startup Procedure
+
+### 1. First-time setup (clone, venv, install)
+The repo is NousResearch/pokemon-agent on GitHub. Clone it, then
+set up a Python 3.10+ virtual environment. Use uv (preferred for speed)
+to create the venv and install the package in editable mode with the
+pyboy extra. If uv is not available, fall back to python3 -m venv + pip.
+
+On this machine it is already set up at /home/teknium/pokemon-agent
+with a venv ready — just cd there and source .venv/bin/activate.
+
+You also need a ROM file. Ask the user for theirs. On this machine
+one exists at roms/pokemon_red.gb inside that directory.
+NEVER download or provide ROM files — always ask the user.
+
+### 2. Start the game server
+From inside the pokemon-agent directory with the venv activated, run
+pokemon-agent serve with --rom pointing to the ROM and --port 9876.
+Run it in the background with &.
+To resume from a saved game, add --load-state with the save name.
+Wait 4 seconds for startup, then verify with GET /health.
+
+### 3. Set up live dashboard for user to watch
+Use an SSH reverse tunnel via localhost.run so the user can view
+the dashboard in their browser. Connect with ssh, forwarding local
+port 9876 to remote port 80 on nokey@localhost.run. Redirect output
+to a log file, wait 10 seconds, then grep the log for the .lhr.life
+URL. Give the user the URL with /dashboard/ appended.
+The tunnel URL changes each time — give the user the new one if restarted.
+
+## Save and Load
+
+### When to save
+- Every 15-20 turns of gameplay
+- ALWAYS before gym battles, rival encounters, or risky fights
+- Before entering a new town or dungeon
+- Before any action you are unsure about
+
+### How to save
+POST /save with a descriptive name. Good examples:
+before_brock, route1_start, mt_moon_entrance, got_cut
+
+### How to load
+POST /load with the save name.
+
+### List available saves
+GET /saves returns all saved states.
+
+### Loading on server startup
+Use --load-state flag when starting the server to auto-load a save.
+This is faster than loading via the API after startup.
+
+## The Gameplay Loop
+
+### Step 1: OBSERVE — check state AND take a screenshot
+GET /state for position, HP, battle, dialog.
+GET /screenshot and save to /tmp/pokemon.png, then use vision_analyze.
+Always do BOTH — RAM state gives numbers, vision gives spatial awareness.
+
+### Step 2: ORIENT
+- Dialog/text on screen → advance it
+- In battle → fight or run
+- Party hurt → head to Pokemon Center
+- Near objective → navigate carefully
+
+### Step 3: DECIDE
+Priority: dialog > battle > heal > story objective > training > explore
+
+### Step 4: ACT — move 2-4 steps max, then re-check
+POST /action with a SHORT action list (2-4 actions, not 10-15).
+
+### Step 5: VERIFY — screenshot after every move sequence
+Take a screenshot and use vision_analyze to confirm you moved where
+intended. This is the MOST IMPORTANT step. Without vision you WILL get lost.
+
+### Step 6: RECORD progress to memory with PKM: prefix
+
+### Step 7: SAVE periodically
+
+## Action Reference
+- press_a — confirm, talk, select
+- press_b — cancel, close menu
+- press_start — open game menu
+- walk_up/down/left/right — move one tile
+- hold_b_N — hold B for N frames (use for speeding through text)
+- wait_60 — wait about 1 second (60 frames)
+- a_until_dialog_end — press A repeatedly until dialog clears
+
+## Critical Tips from Experience
+
+### USE VISION CONSTANTLY
+- Take a screenshot every 2-4 movement steps
+- The RAM state tells you position and HP but NOT what is around you
+- Ledges, fences, signs, building doors, NPCs — only visible via screenshot
+- Ask the vision model specific questions: "what is one tile north of me?"
+- When stuck, always screenshot before trying random directions
+
+### Warp Transitions Need Extra Wait Time
+When walking through a door or stairs, the screen fades to black during
+the map transition. You MUST wait for it to complete. Add 2-3 wait_60
+actions after any door/stair warp. Without waiting, the position reads
+as stale and you will think you are still in the old map.
+
+### Building Exit Trap
+When you exit a building, you appear directly IN FRONT of the door.
+If you walk north, you go right back inside. ALWAYS sidestep first
+by walking left or right 2 tiles, then proceed in your intended direction.
+
+### Dialog Handling
+Gen 1 text scrolls slowly letter-by-letter. To speed through dialog,
+hold B for 120 frames then press A. Repeat as needed. Holding B makes
+text display at max speed. Then press A to advance to the next line.
+The a_until_dialog_end action checks the RAM dialog flag, but this flag
+does not catch ALL text states. If dialog seems stuck, use the manual
+hold_b + press_a pattern instead and verify via screenshot.
+
+### Ledges Are One-Way
+Ledges (small cliff edges) can only be jumped DOWN (south), never climbed
+UP (north). If blocked by a ledge going north, you must go left or right
+to find the gap around it. Use vision to identify which direction the
+gap is. Ask the vision model explicitly.
+
+### Navigation Strategy
+- Move 2-4 steps at a time, then screenshot to check position
+- When entering a new area, screenshot immediately to orient
+- Ask the vision model "which direction to [destination]?"
+- If stuck for 3+ attempts, screenshot and re-evaluate completely
+- Do not spam 10-15 movements — you will overshoot or get stuck
+
+### Running from Wild Battles
+On the battle menu, RUN is bottom-right. To reach it from the default
+cursor position (FIGHT, top-left): press down then right to move cursor
+to RUN, then press A. Wrap with hold_b to speed through text/animations.
+
+### Battling (FIGHT)
+On the battle menu FIGHT is top-left (default cursor position).
+Press A to enter move selection, A again to use the first move.
+Then hold B to speed through attack animations and text.
+
+## Battle Strategy
+
+### Decision Tree
+1. Want to catch? → Weaken then throw Poke Ball
+2. Wild you don't need? → RUN
+3. Type advantage? → Use super-effective move
+4. No advantage? → Use strongest STAB move
+5. Low HP? → Switch or use Potion
+
+### Gen 1 Type Chart (key matchups)
+- Water beats Fire, Ground, Rock
+- Fire beats Grass, Bug, Ice
+- Grass beats Water, Ground, Rock
+- Electric beats Water, Flying
+- Ground beats Fire, Electric, Rock, Poison
+- Psychic beats Fighting, Poison (dominant in Gen 1!)
+
+### Gen 1 Quirks
+- Special stat = both offense AND defense for special moves
+- Psychic type is overpowered (Ghost moves bugged)
+- Critical hits based on Speed stat
+- Wrap/Bind prevent opponent from acting
+- Focus Energy bug: REDUCES crit rate instead of raising it
+
+## Memory Conventions
+| Prefix | Purpose | Example |
+|--------|---------|---------|
+| PKM:OBJECTIVE | Current goal | Get Parcel from Viridian Mart |
+| PKM:MAP | Navigation knowledge | Viridian: mart is northeast |
+| PKM:STRATEGY | Battle/team plans | Need Grass type before Misty |
+| PKM:PROGRESS | Milestone tracker | Beat rival, heading to Viridian |
+| PKM:STUCK | Stuck situations | Ledge at y=28 go right to bypass |
+| PKM:TEAM | Team notes | Squirtle Lv6, Tackle + Tail Whip |
+
+## Progression Milestones
+- Choose starter
+- Deliver Parcel from Viridian Mart, receive Pokedex
+- Boulder Badge — Brock (Rock) → use Water/Grass
+- Cascade Badge — Misty (Water) → use Grass/Electric
+- Thunder Badge — Lt. Surge (Electric) → use Ground
+- Rainbow Badge — Erika (Grass) → use Fire/Ice/Flying
+- Soul Badge — Koga (Poison) → use Ground/Psychic
+- Marsh Badge — Sabrina (Psychic) → hardest gym
+- Volcano Badge — Blaine (Fire) → use Water/Ground
+- Earth Badge — Giovanni (Ground) → use Water/Grass/Ice
+- Elite Four → Champion!
+
+## Stopping Play
+1. Save the game with a descriptive name via POST /save
+2. Update memory with PKM:PROGRESS
+3. Tell user: "Game saved as [name]! Say 'play pokemon' to resume."
+4. Kill the server and tunnel background processes
+
+## Pitfalls
+- NEVER download or provide ROM files
+- Do NOT send more than 4-5 actions without checking vision
+- Always sidestep after exiting buildings before going north
+- Always add wait_60 x2-3 after door/stair warps
+- Dialog detection via RAM is unreliable — verify with screenshots
+- Save BEFORE risky encounters
+- The tunnel URL changes each time you restart it

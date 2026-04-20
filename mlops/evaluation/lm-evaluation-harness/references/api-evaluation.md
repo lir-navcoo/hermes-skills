@@ -1,1 +1,490 @@
-IyBBUEkgRXZhbHVhdGlvbgoKR3VpZGUgdG8gZXZhbHVhdGluZyBPcGVuQUksIEFudGhyb3BpYywgYW5kIG90aGVyIEFQSS1iYXNlZCBsYW5ndWFnZSBtb2RlbHMuCgojIyBPdmVydmlldwoKVGhlIGxtLWV2YWx1YXRpb24taGFybmVzcyBzdXBwb3J0cyBldmFsdWF0aW5nIEFQSS1iYXNlZCBtb2RlbHMgdGhyb3VnaCBhIHVuaWZpZWQgYFRlbXBsYXRlQVBJYCBpbnRlcmZhY2UuIFRoaXMgYWxsb3dzIGJlbmNobWFya2luZyBvZjoKLSBPcGVuQUkgbW9kZWxzIChHUFQtNCwgR1BULTMuNSwgZXRjLikKLSBBbnRocm9waWMgbW9kZWxzIChDbGF1ZGUgMywgQ2xhdWRlIDIsIGV0Yy4pCi0gTG9jYWwgT3BlbkFJLWNvbXBhdGlibGUgQVBJcwotIEN1c3RvbSBBUEkgZW5kcG9pbnRzCgoqKldoeSBldmFsdWF0ZSBBUEkgbW9kZWxzKio6Ci0gQmVuY2htYXJrIGNsb3NlZC1zb3VyY2UgbW9kZWxzCi0gQ29tcGFyZSBBUEkgbW9kZWxzIHRvIG9wZW4gbW9kZWxzCi0gVmFsaWRhdGUgQVBJIHBlcmZvcm1hbmNlCi0gVHJhY2sgbW9kZWwgdXBkYXRlcyBvdmVyIHRpbWUKCiMjIFN1cHBvcnRlZCBBUEkgTW9kZWxzCgp8IFByb3ZpZGVyIHwgTW9kZWwgVHlwZSB8IFJlcXVlc3QgVHlwZXMgfCBMb2dwcm9icyB8CnwtLS0tLS0tLS0tfC0tLS0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLXwKfCBPcGVuQUkgKGNvbXBsZXRpb25zKSB8IGBvcGVuYWktY29tcGxldGlvbnNgIHwgQWxsIHwg4pyFIFllcyB8CnwgT3BlbkFJIChjaGF0KSB8IGBvcGVuYWktY2hhdC1jb21wbGV0aW9uc2AgfCBgZ2VuZXJhdGVfdW50aWxgIG9ubHkgfCDinYwgTm8gfAp8IEFudGhyb3BpYyAoY29tcGxldGlvbnMpIHwgYGFudGhyb3BpYy1jb21wbGV0aW9uc2AgfCBBbGwgfCDinYwgTm8gfAp8IEFudGhyb3BpYyAoY2hhdCkgfCBgYW50aHJvcGljLWNoYXRgIHwgYGdlbmVyYXRlX3VudGlsYCBvbmx5IHwg4p2MIE5vIHwKfCBMb2NhbCAoT3BlbkFJLWNvbXBhdGlibGUpIHwgYGxvY2FsLWNvbXBsZXRpb25zYCB8IERlcGVuZHMgb24gc2VydmVyIHwgVmFyaWVzIHwKCioqTm90ZSoqOiBNb2RlbHMgd2l0aG91dCBsb2dwcm9icyBjYW4gb25seSBiZSBldmFsdWF0ZWQgb24gZ2VuZXJhdGlvbiB0YXNrcywgbm90IHBlcnBsZXhpdHkgb3IgbG9nbGlrZWxpaG9vZCB0YXNrcy4KCiMjIE9wZW5BSSBNb2RlbHMKCiMjIyBTZXR1cAoKYGBgYmFzaApleHBvcnQgT1BFTkFJX0FQSV9LRVk9c2stLi4uCmBgYAoKIyMjIENvbXBsZXRpb24gTW9kZWxzIChMZWdhY3kpCgoqKkF2YWlsYWJsZSBtb2RlbHMqKjogYGRhdmluY2ktMDAyYCwgYGJhYmJhZ2UtMDAyYAoKYGBgYmFzaApsbV9ldmFsIC0tbW9kZWwgb3BlbmFpLWNvbXBsZXRpb25zIFwKICAtLW1vZGVsX2FyZ3MgbW9kZWw9ZGF2aW5jaS0wMDIgXAogIC0tdGFza3MgbGFtYmFkYV9vcGVuYWksaGVsbGFzd2FnIFwKICAtLWJhdGNoX3NpemUgYXV0bwpgYGAKCioqU3VwcG9ydHMqKjoKLSBgZ2VuZXJhdGVfdW50aWxgOiDinIUKLSBgbG9nbGlrZWxpaG9vZGA6IOKchQotIGBsb2dsaWtlbGlob29kX3JvbGxpbmdgOiDinIUKCiMjIyBDaGF0IE1vZGVscwoKKipBdmFpbGFibGUgbW9kZWxzKio6IGBncHQtNGAsIGBncHQtNC10dXJib2AsIGBncHQtMy41LXR1cmJvYAoKYGBgYmFzaApsbV9ldmFsIC0tbW9kZWwgb3BlbmFpLWNoYXQtY29tcGxldGlvbnMgXAogIC0tbW9kZWxfYXJncyBtb2RlbD1ncHQtNC10dXJibyBcCiAgLS10YXNrcyBtbWx1LGdzbThrLGh1bWFuZXZhbCBcCiAgLS1udW1fZmV3c2hvdCA1IFwKICAtLWJhdGNoX3NpemUgYXV0bwpgYGAKCioqU3VwcG9ydHMqKjoKLSBgZ2VuZXJhdGVfdW50aWxgOiDinIUKLSBgbG9nbGlrZWxpaG9vZGA6IOKdjCAobm8gbG9ncHJvYnMpCi0gYGxvZ2xpa2VsaWhvb2Rfcm9sbGluZ2A6IOKdjAoKKipJbXBvcnRhbnQqKjogQ2hhdCBtb2RlbHMgZG9uJ3QgcHJvdmlkZSBsb2dwcm9icywgc28gdGhleSBjYW4gb25seSBiZSB1c2VkIHdpdGggZ2VuZXJhdGlvbiB0YXNrcyAoTU1MVSwgR1NNOEssIEh1bWFuRXZhbCksIG5vdCBwZXJwbGV4aXR5IHRhc2tzLgoKIyMjIENvbmZpZ3VyYXRpb24gT3B0aW9ucwoKYGBgYmFzaApsbV9ldmFsIC0tbW9kZWwgb3BlbmFpLWNoYXQtY29tcGxldGlvbnMgXAogIC0tbW9kZWxfYXJncyBcCiAgICBtb2RlbD1ncHQtNC10dXJibyxcCiAgICBiYXNlX3VybD1odHRwczovL2FwaS5vcGVuYWkuY29tL3YxLFwKICAgIG51bV9jb25jdXJyZW50PTUsXAogICAgbWF4X3JldHJpZXM9MyxcCiAgICB0aW1lb3V0PTYwLFwKICAgIGJhdGNoX3NpemU9YXV0bwpgYGAKCioqUGFyYW1ldGVycyoqOgotIGBtb2RlbGA6IE1vZGVsIGlkZW50aWZpZXIgKHJlcXVpcmVkKQotIGBiYXNlX3VybGA6IEFQSSBlbmRwb2ludCAoZGVmYXVsdDogT3BlbkFJKQotIGBudW1fY29uY3VycmVudGA6IENvbmN1cnJlbnQgcmVxdWVzdHMgKGRlZmF1bHQ6IDUpCi0gYG1heF9yZXRyaWVzYDogUmV0cnkgZmFpbGVkIHJlcXVlc3RzIChkZWZhdWx0OiAzKQotIGB0aW1lb3V0YDogUmVxdWVzdCB0aW1lb3V0IGluIHNlY29uZHMgKGRlZmF1bHQ6IDYwKQotIGB0b2tlbml6ZXJgOiBUb2tlbml6ZXIgdG8gdXNlIChkZWZhdWx0OiBtYXRjaGVzIG1vZGVsKQotIGB0b2tlbml6ZXJfYmFja2VuZGA6IGAidGlrdG9rZW4iYCBvciBgImh1Z2dpbmdmYWNlImAKCiMjIyBDb3N0IE1hbmFnZW1lbnQKCk9wZW5BSSBjaGFyZ2VzIHBlciB0b2tlbi4gRXN0aW1hdGUgY29zdHMgYmVmb3JlIHJ1bm5pbmc6CgpgYGBweXRob24KIyBSb3VnaCBlc3RpbWF0ZQpudW1fc2FtcGxlcyA9IDEwMDAKYXZnX3Rva2Vuc19wZXJfc2FtcGxlID0gNTAwICAjIGlucHV0ICsgb3V0cHV0CmNvc3RfcGVyXzFrX3Rva2VucyA9IDAuMDEgICMgR1BULTMuNSBUdXJibwoKdG90YWxfY29zdCA9IChudW1fc2FtcGxlcyAqIGF2Z190b2tlbnNfcGVyX3NhbXBsZSAvIDEwMDApICogY29zdF9wZXJfMWtfdG9rZW5zCnByaW50KGYiRXN0aW1hdGVkIGNvc3Q6ICR7dG90YWxfY29zdDouMmZ9IikKYGBgCgoqKkNvc3Qtc2F2aW5nIHRpcHMqKjoKLSBVc2UgYC0tbGltaXQgTmAgZm9yIHRlc3RpbmcKLSBTdGFydCB3aXRoIGBncHQtMy41LXR1cmJvYCBiZWZvcmUgYGdwdC00YAotIFNldCBgbWF4X2dlbl90b2tzYCB0byBtaW5pbXVtIG5lZWRlZAotIFVzZSBgbnVtX2Zld3Nob3Q9MGAgZm9yIHplcm8tc2hvdCB3aGVuIHBvc3NpYmxlCgojIyBBbnRocm9waWMgTW9kZWxzCgojIyMgU2V0dXAKCmBgYGJhc2gKZXhwb3J0IEFOVEhST1BJQ19BUElfS0VZPXNrLWFudC0uLi4KYGBgCgojIyMgQ29tcGxldGlvbiBNb2RlbHMgKExlZ2FjeSkKCmBgYGJhc2gKbG1fZXZhbCAtLW1vZGVsIGFudGhyb3BpYy1jb21wbGV0aW9ucyBcCiAgLS1tb2RlbF9hcmdzIG1vZGVsPWNsYXVkZS0yLjEgXAogIC0tdGFza3MgbGFtYmFkYV9vcGVuYWksaGVsbGFzd2FnIFwKICAtLWJhdGNoX3NpemUgYXV0bwpgYGAKCiMjIyBDaGF0IE1vZGVscyAoUmVjb21tZW5kZWQpCgoqKkF2YWlsYWJsZSBtb2RlbHMqKjogYGNsYXVkZS0zLTUtc29ubmV0LTIwMjQxMDIyYCwgYGNsYXVkZS0zLW9wdXMtMjAyNDAyMjlgLCBgY2xhdWRlLTMtc29ubmV0LTIwMjQwMjI5YCwgYGNsYXVkZS0zLWhhaWt1LTIwMjQwMzA3YAoKYGBgYmFzaApsbV9ldmFsIC0tbW9kZWwgYW50aHJvcGljLWNoYXQgXAogIC0tbW9kZWxfYXJncyBtb2RlbD1jbGF1ZGUtMy01LXNvbm5ldC0yMDI0MTAyMiBcCiAgLS10YXNrcyBtbWx1LGdzbThrLGh1bWFuZXZhbCBcCiAgLS1udW1fZmV3c2hvdCA1IFwKICAtLWJhdGNoX3NpemUgYXV0bwpgYGAKCioqQWxpYXNlcyoqOiBgYW50aHJvcGljLWNoYXQtY29tcGxldGlvbnNgIChzYW1lIGFzIGBhbnRocm9waWMtY2hhdGApCgojIyMgQ29uZmlndXJhdGlvbiBPcHRpb25zCgpgYGBiYXNoCmxtX2V2YWwgLS1tb2RlbCBhbnRocm9waWMtY2hhdCBcCiAgLS1tb2RlbF9hcmdzIFwKICAgIG1vZGVsPWNsYXVkZS0zLTUtc29ubmV0LTIwMjQxMDIyLFwKICAgIGJhc2VfdXJsPWh0dHBzOi8vYXBpLmFudGhyb3BpYy5jb20sXAogICAgbnVtX2NvbmN1cnJlbnQ9NSxcCiAgICBtYXhfcmV0cmllcz0zLFwKICAgIHRpbWVvdXQ9NjAKYGBgCgojIyMgQ29zdCBNYW5hZ2VtZW50CgpBbnRocm9waWMgcHJpY2luZyAoYXMgb2YgMjAyNCk6Ci0gQ2xhdWRlIDMuNSBTb25uZXQ6ICQzLjAwIC8gMU0gaW5wdXQsICQxNS4wMCAvIDFNIG91dHB1dAotIENsYXVkZSAzIE9wdXM6ICQxNS4wMCAvIDFNIGlucHV0LCAkNzUuMDAgLyAxTSBvdXRwdXQKLSBDbGF1ZGUgMyBIYWlrdTogJDAuMjUgLyAxTSBpbnB1dCwgJDEuMjUgLyAxTSBvdXRwdXQKCioqQnVkZ2V0LWZyaWVuZGx5IHN0cmF0ZWd5Kio6CmBgYGJhc2gKIyBUZXN0IG9uIHNtYWxsIHNhbXBsZSBmaXJzdApsbV9ldmFsIC0tbW9kZWwgYW50aHJvcGljLWNoYXQgXAogIC0tbW9kZWxfYXJncyBtb2RlbD1jbGF1ZGUtMy1oYWlrdS0yMDI0MDMwNyBcCiAgLS10YXNrcyBtbWx1IFwKICAtLWxpbWl0IDEwMAoKIyBUaGVuIHJ1biBmdWxsIGV2YWwgb24gYmVzdCBtb2RlbApsbV9ldmFsIC0tbW9kZWwgYW50aHJvcGljLWNoYXQgXAogIC0tbW9kZWxfYXJncyBtb2RlbD1jbGF1ZGUtMy01LXNvbm5ldC0yMDI0MTAyMiBcCiAgLS10YXNrcyBtbWx1IFwKICAtLW51bV9mZXdzaG90IDUKYGBgCgojIyBMb2NhbCBPcGVuQUktQ29tcGF0aWJsZSBBUElzCgpNYW55IGxvY2FsIGluZmVyZW5jZSBzZXJ2ZXJzIGV4cG9zZSBPcGVuQUktY29tcGF0aWJsZSBBUElzICh2TExNLCBUZXh0IEdlbmVyYXRpb24gSW5mZXJlbmNlLCBsbGFtYS5jcHAsIE9sbGFtYSkuCgojIyMgdkxMTSBMb2NhbCBTZXJ2ZXIKCioqU3RhcnQgc2VydmVyKio6CmBgYGJhc2gKdmxsbSBzZXJ2ZSBtZXRhLWxsYW1hL0xsYW1hLTItN2ItaGYgXAogIC0taG9zdCAwLjAuMC4wIFwKICAtLXBvcnQgODAwMApgYGAKCioqRXZhbHVhdGUqKjoKYGBgYmFzaApsbV9ldmFsIC0tbW9kZWwgbG9jYWwtY29tcGxldGlvbnMgXAogIC0tbW9kZWxfYXJncyBcCiAgICBtb2RlbD1tZXRhLWxsYW1hL0xsYW1hLTItN2ItaGYsXAogICAgYmFzZV91cmw9aHR0cDovL2xvY2FsaG9zdDo4MDAwL3YxLFwKICAgIG51bV9jb25jdXJyZW50PTEgXAogIC0tdGFza3MgbW1sdSxnc204ayBcCiAgLS1iYXRjaF9zaXplIGF1dG8KYGBgCgojIyMgVGV4dCBHZW5lcmF0aW9uIEluZmVyZW5jZSAoVEdJKQoKKipTdGFydCBzZXJ2ZXIqKjoKYGBgYmFzaApkb2NrZXIgcnVuIC0tZ3B1cyBhbGwgLS1zaG0tc2l6ZSAxZyAtcCA4MDgwOjgwIFwKICBnaGNyLmlvL2h1Z2dpbmdmYWNlL3RleHQtZ2VuZXJhdGlvbi1pbmZlcmVuY2U6bGF0ZXN0IFwKICAtLW1vZGVsLWlkIG1ldGEtbGxhbWEvTGxhbWEtMi03Yi1oZgpgYGAKCioqRXZhbHVhdGUqKjoKYGBgYmFzaApsbV9ldmFsIC0tbW9kZWwgbG9jYWwtY29tcGxldGlvbnMgXAogIC0tbW9kZWxfYXJncyBcCiAgICBtb2RlbD1tZXRhLWxsYW1hL0xsYW1hLTItN2ItaGYsXAogICAgYmFzZV91cmw9aHR0cDovL2xvY2FsaG9zdDo4MDgwL3YxIFwKICAtLXRhc2tzIGhlbGxhc3dhZyxhcmNfY2hhbGxlbmdlCmBgYAoKIyMjIE9sbGFtYQoKKipTdGFydCBzZXJ2ZXIqKjoKYGBgYmFzaApvbGxhbWEgc2VydmUKb2xsYW1hIHB1bGwgbGxhbWEyOjdiCmBgYAoKKipFdmFsdWF0ZSoqOgpgYGBiYXNoCmxtX2V2YWwgLS1tb2RlbCBsb2NhbC1jb21wbGV0aW9ucyBcCiAgLS1tb2RlbF9hcmdzIFwKICAgIG1vZGVsPWxsYW1hMjo3YixcCiAgICBiYXNlX3VybD1odHRwOi8vbG9jYWxob3N0OjExNDM0L3YxIFwKICAtLXRhc2tzIG1tbHUKYGBgCgojIyMgbGxhbWEuY3BwIFNlcnZlcgoKKipTdGFydCBzZXJ2ZXIqKjoKYGBgYmFzaAouL3NlcnZlciAtbSBtb2RlbHMvbGxhbWEtMi03Yi5nZ3VmIC0taG9zdCAwLjAuMC4wIC0tcG9ydCA4MDgwCmBgYAoKKipFdmFsdWF0ZSoqOgpgYGBiYXNoCmxtX2V2YWwgLS1tb2RlbCBsb2NhbC1jb21wbGV0aW9ucyBcCiAgLS1tb2RlbF9hcmdzIFwKICAgIG1vZGVsPWxsYW1hMixcCiAgICBiYXNlX3VybD1odHRwOi8vbG9jYWxob3N0OjgwODAvdjEgXAogIC0tdGFza3MgZ3NtOGsKYGBgCgojIyBDdXN0b20gQVBJIEltcGxlbWVudGF0aW9uCgpGb3IgY3VzdG9tIEFQSSBlbmRwb2ludHMsIHN1YmNsYXNzIGBUZW1wbGF0ZUFQSWA6CgojIyMgQ3JlYXRlIGBteV9hcGkucHlgCgpgYGBweXRob24KZnJvbSBsbV9ldmFsLm1vZGVscy5hcGlfbW9kZWxzIGltcG9ydCBUZW1wbGF0ZUFQSQppbXBvcnQgcmVxdWVzdHMKCmNsYXNzIE15Q3VzdG9tQVBJKFRlbXBsYXRlQVBJKToKICAgICIiIkN1c3RvbSBBUEkgbW9kZWwuIiIiCgogICAgZGVmIF9faW5pdF9fKHNlbGYsIGJhc2VfdXJsLCBhcGlfa2V5LCAqKmt3YXJncyk6CiAgICAgICAgc3VwZXIoKS5fX2luaXRfXyhiYXNlX3VybD1iYXNlX3VybCwgKiprd2FyZ3MpCiAgICAgICAgc2VsZi5hcGlfa2V5ID0gYXBpX2tleQoKICAgIGRlZiBfY3JlYXRlX3BheWxvYWQoc2VsZiwgbWVzc2FnZXMsIGdlbl9rd2FyZ3MpOgogICAgICAgICIiIkNyZWF0ZSBBUEkgcmVxdWVzdCBwYXlsb2FkLiIiIgogICAgICAgIHJldHVybiB7CiAgICAgICAgICAgICJtZXNzYWdlcyI6IG1lc3NhZ2VzLAogICAgICAgICAgICAiYXBpX2tleSI6IHNlbGYuYXBpX2tleSwKICAgICAgICAgICAgKipnZW5fa3dhcmdzCiAgICAgICAgfQoKICAgIGRlZiBwYXJzZV9nZW5lcmF0aW9ucyhzZWxmLCByZXNwb25zZSk6CiAgICAgICAgIiIiUGFyc2UgZ2VuZXJhdGlvbiByZXNwb25zZS4iIiIKICAgICAgICByZXR1cm4gcmVzcG9uc2UuanNvbigpWyJjaG9pY2VzIl1bMF1bInRleHQiXQoKICAgIGRlZiBwYXJzZV9sb2dwcm9icyhzZWxmLCByZXNwb25zZSk6CiAgICAgICAgIiIiUGFyc2UgbG9ncHJvYnMgKGlmIGF2YWlsYWJsZSkuIiIiCiAgICAgICAgIyBSZXR1cm4gTm9uZSBpZiBBUEkgZG9lc24ndCBwcm92aWRlIGxvZ3Byb2JzCiAgICAgICAgbG9ncHJvYnMgPSByZXNwb25zZS5qc29uKCkuZ2V0KCJsb2dwcm9icyIpCiAgICAgICAgaWYgbG9ncHJvYnM6CiAgICAgICAgICAgIHJldHVybiBsb2dwcm9ic1sidG9rZW5fbG9ncHJvYnMiXQogICAgICAgIHJldHVybiBOb25lCmBgYAoKIyMjIFJlZ2lzdGVyIGFuZCBVc2UKCmBgYHB5dGhvbgpmcm9tIGxtX2V2YWwgaW1wb3J0IGV2YWx1YXRvcgpmcm9tIG15X2FwaSBpbXBvcnQgTXlDdXN0b21BUEkKCm1vZGVsID0gTXlDdXN0b21BUEkoCiAgICBiYXNlX3VybD0iaHR0cHM6Ly9hcGkuZXhhbXBsZS5jb20vdjEiLAogICAgYXBpX2tleT0ieW91ci1rZXkiCikKCnJlc3VsdHMgPSBldmFsdWF0b3Iuc2ltcGxlX2V2YWx1YXRlKAogICAgbW9kZWw9bW9kZWwsCiAgICB0YXNrcz1bIm1tbHUiLCAiZ3NtOGsiXSwKICAgIG51bV9mZXdzaG90PTUsCiAgICBiYXRjaF9zaXplPSJhdXRvIgopCmBgYAoKIyMgQ29tcGFyaW5nIEFQSSBhbmQgT3BlbiBNb2RlbHMKCiMjIyBTaWRlLWJ5LVNpZGUgRXZhbHVhdGlvbgoKYGBgYmFzaAojIEV2YWx1YXRlIE9wZW5BSSBHUFQtNApsbV9ldmFsIC0tbW9kZWwgb3BlbmFpLWNoYXQtY29tcGxldGlvbnMgXAogIC0tbW9kZWxfYXJncyBtb2RlbD1ncHQtNC10dXJibyBcCiAgLS10YXNrcyBtbWx1LGdzbThrLGhlbGxhc3dhZyBcCiAgLS1udW1fZmV3c2hvdCA1IFwKICAtLW91dHB1dF9wYXRoIHJlc3VsdHMvZ3B0NC5qc29uCgojIEV2YWx1YXRlIG9wZW4gTGxhbWEgMiA3MEIKbG1fZXZhbCAtLW1vZGVsIGhmIFwKICAtLW1vZGVsX2FyZ3MgcHJldHJhaW5lZD1tZXRhLWxsYW1hL0xsYW1hLTItNzBiLWhmLGR0eXBlPWJmbG9hdDE2IFwKICAtLXRhc2tzIG1tbHUsZ3NtOGssaGVsbGFzd2FnIFwKICAtLW51bV9mZXdzaG90IDUgXAogIC0tb3V0cHV0X3BhdGggcmVzdWx0cy9sbGFtYTItNzBiLmpzb24KCiMgQ29tcGFyZSByZXN1bHRzCnB5dGhvbiBzY3JpcHRzL2NvbXBhcmVfcmVzdWx0cy5weSBcCiAgcmVzdWx0cy9ncHQ0Lmpzb24gXAogIHJlc3VsdHMvbGxhbWEyLTcwYi5qc29uCmBgYAoKIyMjIFR5cGljYWwgQ29tcGFyaXNvbnMKCnwgTW9kZWwgfCBNTUxVIHwgR1NNOEsgfCBIdW1hbkV2YWwgfCBDb3N0IHwKfC0tLS0tLS18LS0tLS0tfC0tLS0tLS18LS0tLS0tLS0tLS18LS0tLS0tfAp8IEdQVC00IFR1cmJvIHwgODYuNCUgfCA5Mi4wJSB8IDY3LjAlIHwgJCQkJCB8CnwgQ2xhdWRlIDMgT3B1cyB8IDg2LjglIHwgOTUuMCUgfCA4NC45JSB8ICQkJCQgfAp8IEdQVC0zLjUgVHVyYm8gfCA3MC4wJSB8IDU3LjElIHwgNDguMSUgfCAkJCB8CnwgTGxhbWEgMiA3MEIgfCA2OC45JSB8IDU2LjglIHwgMjkuOSUgfCBGcmVlIChzZWxmLWhvc3QpIHwKfCBNaXh0cmFsIDh4N0IgfCA3MC42JSB8IDU4LjQlIHwgNDAuMiUgfCBGcmVlIChzZWxmLWhvc3QpIHwKCiMjIEJlc3QgUHJhY3RpY2VzCgojIyMgUmF0ZSBMaW1pdGluZwoKUmVzcGVjdCBBUEkgcmF0ZSBsaW1pdHM6CmBgYGJhc2gKbG1fZXZhbCAtLW1vZGVsIG9wZW5haS1jaGF0LWNvbXBsZXRpb25zIFwKICAtLW1vZGVsX2FyZ3MgXAogICAgbW9kZWw9Z3B0LTQtdHVyYm8sXAogICAgbnVtX2NvbmN1cnJlbnQ9MyxcICAjIExvd2VyIGNvbmN1cnJlbmN5CiAgICB0aW1lb3V0PTEyMCBcICAjIExvbmdlciB0aW1lb3V0CiAgLS10YXNrcyBtbWx1CmBgYAoKIyMjIFJlcHJvZHVjaWJpbGl0eQoKU2V0IHRlbXBlcmF0dXJlIHRvIDAgZm9yIGRldGVybWluaXN0aWMgcmVzdWx0czoKYGBgYmFzaApsbV9ldmFsIC0tbW9kZWwgb3BlbmFpLWNoYXQtY29tcGxldGlvbnMgXAogIC0tbW9kZWxfYXJncyBtb2RlbD1ncHQtNC10dXJibyBcCiAgLS10YXNrcyBtbWx1IFwKICAtLWdlbl9rd2FyZ3MgdGVtcGVyYXR1cmU9MC4wCmBgYAoKT3IgdXNlIGBzZWVkYCBmb3Igc2FtcGxpbmc6CmBgYGJhc2gKbG1fZXZhbCAtLW1vZGVsIGFudGhyb3BpYy1jaGF0IFwKICAtLW1vZGVsX2FyZ3MgbW9kZWw9Y2xhdWRlLTMtNS1zb25uZXQtMjAyNDEwMjIgXAogIC0tdGFza3MgZ3NtOGsgXAogIC0tZ2VuX2t3YXJncyB0ZW1wZXJhdHVyZT0wLjcsc2VlZD00MgpgYGAKCiMjIyBDYWNoaW5nCgpBUEkgbW9kZWxzIGF1dG9tYXRpY2FsbHkgY2FjaGUgcmVzcG9uc2VzIHRvIGF2b2lkIHJlZHVuZGFudCBjYWxsczoKYGBgYmFzaAojIEZpcnN0IHJ1bjogbWFrZXMgQVBJIGNhbGxzCmxtX2V2YWwgLS1tb2RlbCBvcGVuYWktY2hhdC1jb21wbGV0aW9ucyBcCiAgLS1tb2RlbF9hcmdzIG1vZGVsPWdwdC00LXR1cmJvIFwKICAtLXRhc2tzIG1tbHUgXAogIC0tbGltaXQgMTAwCgojIFNlY29uZCBydW46IHVzZXMgY2FjaGUgKGluc3RhbnQsIGZyZWUpCmxtX2V2YWwgLS1tb2RlbCBvcGVuYWktY2hhdC1jb21wbGV0aW9ucyBcCiAgLS1tb2RlbF9hcmdzIG1vZGVsPWdwdC00LXR1cmJvIFwKICAtLXRhc2tzIG1tbHUgXAogIC0tbGltaXQgMTAwCmBgYAoKQ2FjaGUgbG9jYXRpb246IGB+Ly5jYWNoZS9sbV9ldmFsL2AKCiMjIyBFcnJvciBIYW5kbGluZwoKQVBJcyBjYW4gZmFpbC4gVXNlIHJldHJpZXM6CmBgYGJhc2gKbG1fZXZhbCAtLW1vZGVsIG9wZW5haS1jaGF0LWNvbXBsZXRpb25zIFwKICAtLW1vZGVsX2FyZ3MgXAogICAgbW9kZWw9Z3B0LTQtdHVyYm8sXAogICAgbWF4X3JldHJpZXM9NSxcCiAgICB0aW1lb3V0PTEyMCBcCiAgLS10YXNrcyBtbWx1CmBgYAoKIyMgVHJvdWJsZXNob290aW5nCgojIyMgIkF1dGhlbnRpY2F0aW9uIGZhaWxlZCIKCkNoZWNrIEFQSSBrZXk6CmBgYGJhc2gKZWNobyAkT1BFTkFJX0FQSV9LRVkgICMgU2hvdWxkIHByaW50IHNrLS4uLgplY2hvICRBTlRIUk9QSUNfQVBJX0tFWSAgIyBTaG91bGQgcHJpbnQgc2stYW50LS4uLgpgYGAKCiMjIyAiUmF0ZSBsaW1pdCBleGNlZWRlZCIKClJlZHVjZSBjb25jdXJyZW5jeToKYGBgYmFzaAotLW1vZGVsX2FyZ3MgbnVtX2NvbmN1cnJlbnQ9MQpgYGAKCk9yIGFkZCBkZWxheXMgYmV0d2VlbiByZXF1ZXN0cy4KCiMjIyAiVGltZW91dCBlcnJvciIKCkluY3JlYXNlIHRpbWVvdXQ6CmBgYGJhc2gKLS1tb2RlbF9hcmdzIHRpbWVvdXQ9MTgwCmBgYAoKIyMjICJNb2RlbCBub3QgZm91bmQiCgpGb3IgbG9jYWwgQVBJcywgdmVyaWZ5IHNlcnZlciBpcyBydW5uaW5nOgpgYGBiYXNoCmN1cmwgaHR0cDovL2xvY2FsaG9zdDo4MDAwL3YxL21vZGVscwpgYGAKCiMjIyBDb3N0IFJ1bmF3YXkKClVzZSBgLS1saW1pdGAgZm9yIHRlc3Rpbmc6CmBgYGJhc2gKbG1fZXZhbCAtLW1vZGVsIG9wZW5haS1jaGF0LWNvbXBsZXRpb25zIFwKICAtLW1vZGVsX2FyZ3MgbW9kZWw9Z3B0LTQtdHVyYm8gXAogIC0tdGFza3MgbW1sdSBcCiAgLS1saW1pdCA1MCAgIyBPbmx5IDUwIHNhbXBsZXMKYGBgCgojIyBBZHZhbmNlZCBGZWF0dXJlcwoKIyMjIEN1c3RvbSBIZWFkZXJzCgpgYGBiYXNoCmxtX2V2YWwgLS1tb2RlbCBsb2NhbC1jb21wbGV0aW9ucyBcCiAgLS1tb2RlbF9hcmdzIFwKICAgIGJhc2VfdXJsPWh0dHA6Ly9hcGkuZXhhbXBsZS5jb20vdjEsXAogICAgaGVhZGVyPSJBdXRob3JpemF0aW9uOiBCZWFyZXIgdG9rZW4sWC1DdXN0b206IHZhbHVlIgpgYGAKCiMjIyBEaXNhYmxlIFNTTCBWZXJpZmljYXRpb24gKERldmVsb3BtZW50IE9ubHkpCgpgYGBiYXNoCmxtX2V2YWwgLS1tb2RlbCBsb2NhbC1jb21wbGV0aW9ucyBcCiAgLS1tb2RlbF9hcmdzIFwKICAgIGJhc2VfdXJsPWh0dHBzOi8vbG9jYWxob3N0OjgwMDAvdjEsXAogICAgdmVyaWZ5X2NlcnRpZmljYXRlPWZhbHNlCmBgYAoKIyMjIEN1c3RvbSBUb2tlbml6ZXIKCmBgYGJhc2gKbG1fZXZhbCAtLW1vZGVsIG9wZW5haS1jaGF0LWNvbXBsZXRpb25zIFwKICAtLW1vZGVsX2FyZ3MgXAogICAgbW9kZWw9Z3B0LTQtdHVyYm8sXAogICAgdG9rZW5pemVyPWdwdDIsXAogICAgdG9rZW5pemVyX2JhY2tlbmQ9aHVnZ2luZ2ZhY2UKYGBgCgojIyBSZWZlcmVuY2VzCgotIE9wZW5BSSBBUEk6IGh0dHBzOi8vcGxhdGZvcm0ub3BlbmFpLmNvbS9kb2NzL2FwaS1yZWZlcmVuY2UKLSBBbnRocm9waWMgQVBJOiBodHRwczovL2RvY3MuYW50aHJvcGljLmNvbS9jbGF1ZGUvcmVmZXJlbmNlCi0gVGVtcGxhdGVBUEk6IGBsbV9ldmFsL21vZGVscy9hcGlfbW9kZWxzLnB5YAotIE9wZW5BSSBtb2RlbHM6IGBsbV9ldmFsL21vZGVscy9vcGVuYWlfY29tcGxldGlvbnMucHlgCi0gQW50aHJvcGljIG1vZGVsczogYGxtX2V2YWwvbW9kZWxzL2FudGhyb3BpY19sbG1zLnB5YAo=
+# API Evaluation
+
+Guide to evaluating OpenAI, Anthropic, and other API-based language models.
+
+## Overview
+
+The lm-evaluation-harness supports evaluating API-based models through a unified `TemplateAPI` interface. This allows benchmarking of:
+- OpenAI models (GPT-4, GPT-3.5, etc.)
+- Anthropic models (Claude 3, Claude 2, etc.)
+- Local OpenAI-compatible APIs
+- Custom API endpoints
+
+**Why evaluate API models**:
+- Benchmark closed-source models
+- Compare API models to open models
+- Validate API performance
+- Track model updates over time
+
+## Supported API Models
+
+| Provider | Model Type | Request Types | Logprobs |
+|----------|------------|---------------|----------|
+| OpenAI (completions) | `openai-completions` | All | ✅ Yes |
+| OpenAI (chat) | `openai-chat-completions` | `generate_until` only | ❌ No |
+| Anthropic (completions) | `anthropic-completions` | All | ❌ No |
+| Anthropic (chat) | `anthropic-chat` | `generate_until` only | ❌ No |
+| Local (OpenAI-compatible) | `local-completions` | Depends on server | Varies |
+
+**Note**: Models without logprobs can only be evaluated on generation tasks, not perplexity or loglikelihood tasks.
+
+## OpenAI Models
+
+### Setup
+
+```bash
+export OPENAI_API_KEY=sk-...
+```
+
+### Completion Models (Legacy)
+
+**Available models**: `davinci-002`, `babbage-002`
+
+```bash
+lm_eval --model openai-completions \
+  --model_args model=davinci-002 \
+  --tasks lambada_openai,hellaswag \
+  --batch_size auto
+```
+
+**Supports**:
+- `generate_until`: ✅
+- `loglikelihood`: ✅
+- `loglikelihood_rolling`: ✅
+
+### Chat Models
+
+**Available models**: `gpt-4`, `gpt-4-turbo`, `gpt-3.5-turbo`
+
+```bash
+lm_eval --model openai-chat-completions \
+  --model_args model=gpt-4-turbo \
+  --tasks mmlu,gsm8k,humaneval \
+  --num_fewshot 5 \
+  --batch_size auto
+```
+
+**Supports**:
+- `generate_until`: ✅
+- `loglikelihood`: ❌ (no logprobs)
+- `loglikelihood_rolling`: ❌
+
+**Important**: Chat models don't provide logprobs, so they can only be used with generation tasks (MMLU, GSM8K, HumanEval), not perplexity tasks.
+
+### Configuration Options
+
+```bash
+lm_eval --model openai-chat-completions \
+  --model_args \
+    model=gpt-4-turbo,\
+    base_url=https://api.openai.com/v1,\
+    num_concurrent=5,\
+    max_retries=3,\
+    timeout=60,\
+    batch_size=auto
+```
+
+**Parameters**:
+- `model`: Model identifier (required)
+- `base_url`: API endpoint (default: OpenAI)
+- `num_concurrent`: Concurrent requests (default: 5)
+- `max_retries`: Retry failed requests (default: 3)
+- `timeout`: Request timeout in seconds (default: 60)
+- `tokenizer`: Tokenizer to use (default: matches model)
+- `tokenizer_backend`: `"tiktoken"` or `"huggingface"`
+
+### Cost Management
+
+OpenAI charges per token. Estimate costs before running:
+
+```python
+# Rough estimate
+num_samples = 1000
+avg_tokens_per_sample = 500  # input + output
+cost_per_1k_tokens = 0.01  # GPT-3.5 Turbo
+
+total_cost = (num_samples * avg_tokens_per_sample / 1000) * cost_per_1k_tokens
+print(f"Estimated cost: ${total_cost:.2f}")
+```
+
+**Cost-saving tips**:
+- Use `--limit N` for testing
+- Start with `gpt-3.5-turbo` before `gpt-4`
+- Set `max_gen_toks` to minimum needed
+- Use `num_fewshot=0` for zero-shot when possible
+
+## Anthropic Models
+
+### Setup
+
+```bash
+export ANTHROPIC_API_KEY=sk-ant-...
+```
+
+### Completion Models (Legacy)
+
+```bash
+lm_eval --model anthropic-completions \
+  --model_args model=claude-2.1 \
+  --tasks lambada_openai,hellaswag \
+  --batch_size auto
+```
+
+### Chat Models (Recommended)
+
+**Available models**: `claude-3-5-sonnet-20241022`, `claude-3-opus-20240229`, `claude-3-sonnet-20240229`, `claude-3-haiku-20240307`
+
+```bash
+lm_eval --model anthropic-chat \
+  --model_args model=claude-3-5-sonnet-20241022 \
+  --tasks mmlu,gsm8k,humaneval \
+  --num_fewshot 5 \
+  --batch_size auto
+```
+
+**Aliases**: `anthropic-chat-completions` (same as `anthropic-chat`)
+
+### Configuration Options
+
+```bash
+lm_eval --model anthropic-chat \
+  --model_args \
+    model=claude-3-5-sonnet-20241022,\
+    base_url=https://api.anthropic.com,\
+    num_concurrent=5,\
+    max_retries=3,\
+    timeout=60
+```
+
+### Cost Management
+
+Anthropic pricing (as of 2024):
+- Claude 3.5 Sonnet: $3.00 / 1M input, $15.00 / 1M output
+- Claude 3 Opus: $15.00 / 1M input, $75.00 / 1M output
+- Claude 3 Haiku: $0.25 / 1M input, $1.25 / 1M output
+
+**Budget-friendly strategy**:
+```bash
+# Test on small sample first
+lm_eval --model anthropic-chat \
+  --model_args model=claude-3-haiku-20240307 \
+  --tasks mmlu \
+  --limit 100
+
+# Then run full eval on best model
+lm_eval --model anthropic-chat \
+  --model_args model=claude-3-5-sonnet-20241022 \
+  --tasks mmlu \
+  --num_fewshot 5
+```
+
+## Local OpenAI-Compatible APIs
+
+Many local inference servers expose OpenAI-compatible APIs (vLLM, Text Generation Inference, llama.cpp, Ollama).
+
+### vLLM Local Server
+
+**Start server**:
+```bash
+vllm serve meta-llama/Llama-2-7b-hf \
+  --host 0.0.0.0 \
+  --port 8000
+```
+
+**Evaluate**:
+```bash
+lm_eval --model local-completions \
+  --model_args \
+    model=meta-llama/Llama-2-7b-hf,\
+    base_url=http://localhost:8000/v1,\
+    num_concurrent=1 \
+  --tasks mmlu,gsm8k \
+  --batch_size auto
+```
+
+### Text Generation Inference (TGI)
+
+**Start server**:
+```bash
+docker run --gpus all --shm-size 1g -p 8080:80 \
+  ghcr.io/huggingface/text-generation-inference:latest \
+  --model-id meta-llama/Llama-2-7b-hf
+```
+
+**Evaluate**:
+```bash
+lm_eval --model local-completions \
+  --model_args \
+    model=meta-llama/Llama-2-7b-hf,\
+    base_url=http://localhost:8080/v1 \
+  --tasks hellaswag,arc_challenge
+```
+
+### Ollama
+
+**Start server**:
+```bash
+ollama serve
+ollama pull llama2:7b
+```
+
+**Evaluate**:
+```bash
+lm_eval --model local-completions \
+  --model_args \
+    model=llama2:7b,\
+    base_url=http://localhost:11434/v1 \
+  --tasks mmlu
+```
+
+### llama.cpp Server
+
+**Start server**:
+```bash
+./server -m models/llama-2-7b.gguf --host 0.0.0.0 --port 8080
+```
+
+**Evaluate**:
+```bash
+lm_eval --model local-completions \
+  --model_args \
+    model=llama2,\
+    base_url=http://localhost:8080/v1 \
+  --tasks gsm8k
+```
+
+## Custom API Implementation
+
+For custom API endpoints, subclass `TemplateAPI`:
+
+### Create `my_api.py`
+
+```python
+from lm_eval.models.api_models import TemplateAPI
+import requests
+
+class MyCustomAPI(TemplateAPI):
+    """Custom API model."""
+
+    def __init__(self, base_url, api_key, **kwargs):
+        super().__init__(base_url=base_url, **kwargs)
+        self.api_key = api_key
+
+    def _create_payload(self, messages, gen_kwargs):
+        """Create API request payload."""
+        return {
+            "messages": messages,
+            "api_key": self.api_key,
+            **gen_kwargs
+        }
+
+    def parse_generations(self, response):
+        """Parse generation response."""
+        return response.json()["choices"][0]["text"]
+
+    def parse_logprobs(self, response):
+        """Parse logprobs (if available)."""
+        # Return None if API doesn't provide logprobs
+        logprobs = response.json().get("logprobs")
+        if logprobs:
+            return logprobs["token_logprobs"]
+        return None
+```
+
+### Register and Use
+
+```python
+from lm_eval import evaluator
+from my_api import MyCustomAPI
+
+model = MyCustomAPI(
+    base_url="https://api.example.com/v1",
+    api_key="your-key"
+)
+
+results = evaluator.simple_evaluate(
+    model=model,
+    tasks=["mmlu", "gsm8k"],
+    num_fewshot=5,
+    batch_size="auto"
+)
+```
+
+## Comparing API and Open Models
+
+### Side-by-Side Evaluation
+
+```bash
+# Evaluate OpenAI GPT-4
+lm_eval --model openai-chat-completions \
+  --model_args model=gpt-4-turbo \
+  --tasks mmlu,gsm8k,hellaswag \
+  --num_fewshot 5 \
+  --output_path results/gpt4.json
+
+# Evaluate open Llama 2 70B
+lm_eval --model hf \
+  --model_args pretrained=meta-llama/Llama-2-70b-hf,dtype=bfloat16 \
+  --tasks mmlu,gsm8k,hellaswag \
+  --num_fewshot 5 \
+  --output_path results/llama2-70b.json
+
+# Compare results
+python scripts/compare_results.py \
+  results/gpt4.json \
+  results/llama2-70b.json
+```
+
+### Typical Comparisons
+
+| Model | MMLU | GSM8K | HumanEval | Cost |
+|-------|------|-------|-----------|------|
+| GPT-4 Turbo | 86.4% | 92.0% | 67.0% | $$$$ |
+| Claude 3 Opus | 86.8% | 95.0% | 84.9% | $$$$ |
+| GPT-3.5 Turbo | 70.0% | 57.1% | 48.1% | $$ |
+| Llama 2 70B | 68.9% | 56.8% | 29.9% | Free (self-host) |
+| Mixtral 8x7B | 70.6% | 58.4% | 40.2% | Free (self-host) |
+
+## Best Practices
+
+### Rate Limiting
+
+Respect API rate limits:
+```bash
+lm_eval --model openai-chat-completions \
+  --model_args \
+    model=gpt-4-turbo,\
+    num_concurrent=3,\  # Lower concurrency
+    timeout=120 \  # Longer timeout
+  --tasks mmlu
+```
+
+### Reproducibility
+
+Set temperature to 0 for deterministic results:
+```bash
+lm_eval --model openai-chat-completions \
+  --model_args model=gpt-4-turbo \
+  --tasks mmlu \
+  --gen_kwargs temperature=0.0
+```
+
+Or use `seed` for sampling:
+```bash
+lm_eval --model anthropic-chat \
+  --model_args model=claude-3-5-sonnet-20241022 \
+  --tasks gsm8k \
+  --gen_kwargs temperature=0.7,seed=42
+```
+
+### Caching
+
+API models automatically cache responses to avoid redundant calls:
+```bash
+# First run: makes API calls
+lm_eval --model openai-chat-completions \
+  --model_args model=gpt-4-turbo \
+  --tasks mmlu \
+  --limit 100
+
+# Second run: uses cache (instant, free)
+lm_eval --model openai-chat-completions \
+  --model_args model=gpt-4-turbo \
+  --tasks mmlu \
+  --limit 100
+```
+
+Cache location: `~/.cache/lm_eval/`
+
+### Error Handling
+
+APIs can fail. Use retries:
+```bash
+lm_eval --model openai-chat-completions \
+  --model_args \
+    model=gpt-4-turbo,\
+    max_retries=5,\
+    timeout=120 \
+  --tasks mmlu
+```
+
+## Troubleshooting
+
+### "Authentication failed"
+
+Check API key:
+```bash
+echo $OPENAI_API_KEY  # Should print sk-...
+echo $ANTHROPIC_API_KEY  # Should print sk-ant-...
+```
+
+### "Rate limit exceeded"
+
+Reduce concurrency:
+```bash
+--model_args num_concurrent=1
+```
+
+Or add delays between requests.
+
+### "Timeout error"
+
+Increase timeout:
+```bash
+--model_args timeout=180
+```
+
+### "Model not found"
+
+For local APIs, verify server is running:
+```bash
+curl http://localhost:8000/v1/models
+```
+
+### Cost Runaway
+
+Use `--limit` for testing:
+```bash
+lm_eval --model openai-chat-completions \
+  --model_args model=gpt-4-turbo \
+  --tasks mmlu \
+  --limit 50  # Only 50 samples
+```
+
+## Advanced Features
+
+### Custom Headers
+
+```bash
+lm_eval --model local-completions \
+  --model_args \
+    base_url=http://api.example.com/v1,\
+    header="Authorization: Bearer token,X-Custom: value"
+```
+
+### Disable SSL Verification (Development Only)
+
+```bash
+lm_eval --model local-completions \
+  --model_args \
+    base_url=https://localhost:8000/v1,\
+    verify_certificate=false
+```
+
+### Custom Tokenizer
+
+```bash
+lm_eval --model openai-chat-completions \
+  --model_args \
+    model=gpt-4-turbo,\
+    tokenizer=gpt2,\
+    tokenizer_backend=huggingface
+```
+
+## References
+
+- OpenAI API: https://platform.openai.com/docs/api-reference
+- Anthropic API: https://docs.anthropic.com/claude/reference
+- TemplateAPI: `lm_eval/models/api_models.py`
+- OpenAI models: `lm_eval/models/openai_completions.py`
+- Anthropic models: `lm_eval/models/anthropic_llms.py`

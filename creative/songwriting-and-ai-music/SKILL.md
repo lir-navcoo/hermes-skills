@@ -1,1 +1,289 @@
-LS0tCm5hbWU6IHNvbmd3cml0aW5nLWFuZC1haS1tdXNpYwpkZXNjcmlwdGlvbjogPgogIFNvbmd3cml0aW5nIGNyYWZ0LCBBSSBtdXNpYyBnZW5lcmF0aW9uIHByb21wdHMgKFN1bm8gZm9jdXMpLCBwYXJvZHkvYWRhcHRhdGlvbgogIHRlY2huaXF1ZXMsIHBob25ldGljIHRyaWNrcywgYW5kIGxlc3NvbnMgbGVhcm5lZC4gVGhlc2UgYXJlIHRvb2xzIGFuZCBpZGVhcywKICBub3QgcnVsZXMuIEJyZWFrIGFueSBvZiB0aGVtIHdoZW4gdGhlIGFydCBjYWxscyBmb3IgaXQuCnRhZ3M6IFtzb25nd3JpdGluZywgbXVzaWMsIHN1bm8sIHBhcm9keSwgbHlyaWNzLCBjcmVhdGl2ZV0KdHJpZ2dlcnM6CiAgLSB3cml0aW5nIGEgc29uZwogIC0gc29uZyBseXJpY3MKICAtIG11c2ljIHByb21wdAogIC0gc3VubyBwcm9tcHQKICAtIHBhcm9keSBzb25nCiAgLSBhZGFwdGluZyBhIHNvbmcKICAtIEFJIG11c2ljIGdlbmVyYXRpb24KLS0tCgojIFNvbmd3cml0aW5nICYgQUkgTXVzaWMgR2VuZXJhdGlvbgoKRXZlcnl0aGluZyBoZXJlIGlzIGEgR1VJREVMSU5FLCBub3QgYSBydWxlLiBBcnQgYnJlYWtzIHJ1bGVzIG9uIHB1cnBvc2UuClVzZSB3aGF0IHNlcnZlcyB0aGUgc29uZy4gSWdub3JlIHdoYXQgZG9lc24ndC4KCi0tLQoKIyMgMS4gU29uZyBTdHJ1Y3R1cmUgKFBpY2sgT25lIG9yIEludmVudCBZb3VyIE93bikKCkNvbW1vbiBza2VsZXRvbnMg4oCUIG1peCwgbW9kaWZ5LCBvciB0aHJvdyBvdXQgYXMgbmVlZGVkOgoKYGBgCkFCQUJDQiAgVmVyc2UvQ2hvcnVzL1ZlcnNlL0Nob3J1cy9CcmlkZ2UvQ2hvcnVzICAgIChtb3N0IHBvcC9yb2NrKQpBQUJBICAgIFZlcnNlL1ZlcnNlL0JyaWRnZS9WZXJzZSAocmVmcmFpbi1iYXNlZCkgICAgKGphenogc3RhbmRhcmRzLCBiYWxsYWRzKQpBQkFCICAgIFZlcnNlL0Nob3J1cyBhbHRlcm5hdGluZyAgICAgICAgICAgICAgICAgICAgKHNpbXBsZSwgZGlyZWN0KQpBQUEgICAgIFZlcnNlL1ZlcnNlL1ZlcnNlIChzdHJvcGhpYywgbm8gY2hvcnVzKSAgICAgKGZvbGssIHN0b3J5dGVsbGluZykKYGBgCgpUaGUgc2l4IGJ1aWxkaW5nIGJsb2NrczoKLSBJbnRybyAgICAgIOKAlCBzZXQgdGhlIG1vb2QsIHB1bGwgdGhlIGxpc3RlbmVyIGluCi0gVmVyc2UgICAgICDigJQgdGhlIHN0b3J5LCB0aGUgZGV0YWlscywgdGhlIHdvcmxkLWJ1aWxkaW5nCi0gUHJlLUNob3J1cyDigJQgb3B0aW9uYWwgdGVuc2lvbiByYW1wIGJlZm9yZSB0aGUgcGF5b2ZmCi0gQ2hvcnVzICAgICDigJQgdGhlIGVtb3Rpb25hbCBjb3JlLCB0aGUgcGFydCBwZW9wbGUgcmVtZW1iZXIKLSBCcmlkZ2UgICAgIOKAlCBhIGRldG91ciwgYSBzaGlmdCBpbiBwZXJzcGVjdGl2ZSBvciBrZXkKLSBPdXRybyAgICAgIOKAlCB0aGUgZmFyZXdlbGwsIGNhbiBlY2hvIG9yIHN1YnZlcnQgdGhlIHJlc3QKCllvdSBkb24ndCBuZWVkIGFsbCBvZiB0aGVzZS4gU29tZSBncmVhdCBzb25ncyBhcmUganVzdCBvbmUgc2VjdGlvbgp0aGF0IGV2b2x2ZXMuIFN0cnVjdHVyZSBzZXJ2ZXMgdGhlIGVtb3Rpb24sIG5vdCB0aGUgb3RoZXIgd2F5IGFyb3VuZC4KCi0tLQoKIyMgMi4gUmh5bWUsIE1ldGVyLCBhbmQgU291bmQKClJIWU1FIFRZUEVTIChmcm9tIHRpZ2h0IHRvIGxvb3NlKToKLSBQZXJmZWN0OiBsZWFuL21lYW4KLSBGYW1pbHk6IGNyYXRlL2JyYWlkCi0gQXNzb25hbmNlOiBoYWQvZ2xhc3MgKHNhbWUgdm93ZWxzLCBkaWZmZXJlbnQgZW5kaW5ncykKLSBDb25zb25hbmNlOiBzY2VuZS93aGVuIChkaWZmZXJlbnQgdm93ZWxzLCBzaW1pbGFyIGVuZGluZ3MpCi0gTmVhci9zbGFudDogZW5vdWdoIHRvIHN1Z2dlc3QgY29ubmVjdGlvbiB3aXRob3V0IGxvY2tpbmcgaXQgZG93bgoKTWl4IHRoZW0uIEFsbCBwZXJmZWN0IHJoeW1lcyBjYW4gc291bmQgbGlrZSBhIG51cnNlcnkgcmh5bWUuCkFsbCBzbGFudCByaHltZXMgY2FuIHNvdW5kIGxhenkuIFRoZSBibGVuZCBpcyB3aGVyZSBpdCBsaXZlcy4KCklOVEVSTkFMIFJIWU1FOiBSaHltaW5nIHdpdGhpbiBhIGxpbmUsIG5vdCBqdXN0IGF0IHRoZSBlbmRzLgogICJXZSBwcnVuZWQgdGhlIGxpZXMgZnJvbSBibGVlZGluZyB0cmVlcyAvIERpc3RpbGxlZCB0aGUgc3Rvcm0KICAgZnJvbSBlbnRyb3B5IiDigJQgImxpZXMvZmxpZXMsIiAidHJlZXMvZW50cm9weSIgY3JlYXRlIGludGVybmFsIGVjaG9lcy4KCk1FVEVSOiBUaGUgcmh5dGhtIG9mIHN0cmVzc2VkIHZzIHVuc3RyZXNzZWQgc3lsbGFibGVzLgotIE1hdGNoaW5nIHN5bGxhYmxlIGNvdW50cyBiZXR3ZWVuIHBhcmFsbGVsIGxpbmVzIGhlbHBzIHNpbmdhYmlsaXR5Ci0gVGhlIFNUUkVTU0VEIHN5bGxhYmxlcyBtYXR0ZXIgbW9yZSB0aGFuIHRvdGFsIGNvdW50Ci0gU2F5IGl0IG91dCBsb3VkLiBJZiB5b3Ugc3R1bWJsZSwgdGhlIG1ldGVyIG5lZWRzIHdvcmsuCi0gSW50ZW50aW9uYWxseSBicmVha2luZyBtZXRlciBjYW4gY3JlYXRlIGVtcGhhc2lzIG9yIHN1cnByaXNlCgotLS0KCiMjIDMuIEVtb3Rpb25hbCBBcmMgYW5kIER5bmFtaWNzCgpUaGluayBvZiBhIHNvbmcgYXMgYSBqb3VybmV5LCBub3QgYSBmbGF0IHJvYWQuCgpFTkVSR1kgTUFQUElORyAocm91Z2ggaWRlYSwgbm90IHByZXNjcmlwdGlvbik6CiAgSW50cm86IDItMyAgfCAgVmVyc2U6IDUtNiAgfCAgUHJlLUNob3J1czogNwogIENob3J1czogOC05ICB8ICBCcmlkZ2U6IHZhcmllcyAgfCAgRmluYWwgQ2hvcnVzOiA5LTEwCgpUaGUgbW9zdCBwb3dlcmZ1bCBkeW5hbWljIHRyaWNrOiBDT05UUkFTVC4KLSBXaGlzcGVyIGJlZm9yZSBhIHNjcmVhbSBoaXRzIGhhcmRlciB0aGFuIGp1c3Qgc2NyZWFtaW5nCi0gU3BhcnNlIGJlZm9yZSBkZW5zZS4gU2xvdyBiZWZvcmUgZmFzdC4gTG93IGJlZm9yZSBoaWdoLgotIFRoZSBkcm9wIG9ubHkgd29ya3MgYmVjYXVzZSBvZiB0aGUgYnVpbGR1cAotIFNpbGVuY2UgaXMgYW4gaW5zdHJ1bWVudAoKIldoaXNwZXIgdG8gcm9hciB0byB3aGlzcGVyIiDigJQgc3RhcnQgaW50aW1hdGUsIGJ1aWxkIHRvIGZ1bGwgcG93ZXIsCnN0cmlwIGJhY2sgdG8gdnVsbmVyYWJpbGl0eS4gV29ya3MgZm9yIGJhbGxhZHMsIGVwaWNzLCBhbnRoZW1zLgoKLS0tCgojIyA0LiBXcml0aW5nIEx5cmljcyBUaGF0IFdvcmsKClNIT1csIERPTidUIFRFTEwgKHVzdWFsbHkpOgotICJJIHdhcyBzYWQiID0gZmxhdAotICJZb3VyIGhvb2RpZSdzIHN0aWxsIG9uIHRoZSBob29rIGJ5IHRoZSBkb29yIiA9IGFsaXZlCi0gQnV0IHNvbWV0aW1lcyAiSSBnaXZlIG15IGxpZmUiIHNhaWQgcGxhaW5seSBJUyB0aGUgcG93ZXIKClRIRSBIT09LOgotIFRoZSBsaW5lIHBlb3BsZSByZW1lbWJlciwgaHVtLCByZXBlYXQKLSBVc3VhbGx5IHRoZSB0aXRsZSBvciBjb3JlIHBocmFzZQotIFdvcmtzIGJlc3Qgd2hlbiBtZWxvZHkgKyBseXJpYyArIGVtb3Rpb24gYWxsIGFsaWduCi0gUGxhY2UgaXQgd2hlcmUgaXQgbGFuZHMgaGFyZGVzdCAob2Z0ZW4gZmlyc3QvbGFzdCBsaW5lIG9mIGNob3J1cykKClBST1NPRFkg4oCUIGx5cmljcyBhbmQgbXVzaWMgc3VwcG9ydGluZyBlYWNoIG90aGVyOgotIFN0YWJsZSBmZWVsaW5ncyAocmVzb2x1dGlvbiwgcGVhY2UpIHBhaXIgd2l0aCBzZXR0bGVkIG1lbG9kaWVzLAogIHBlcmZlY3Qgcmh5bWVzLCByZXNvbHZlZCBjaG9yZHMKLSBVbnN0YWJsZSBmZWVsaW5ncyAobG9uZ2luZywgZG91YnQpIHBhaXIgd2l0aCB3YW5kZXJpbmcgbWVsb2RpZXMsCiAgbmVhci1yaHltZXMsIHVucmVzb2x2ZWQgY2hvcmRzCi0gVmVyc2UgbWVsb2R5IHR5cGljYWxseSBzaXRzIGxvd2VyLCBjaG9ydXMgZ29lcyBoaWdoZXIKLSBCdXQgZmxpcCB0aGlzIGlmIGl0IHNlcnZlcyB0aGUgc29uZwoKQVZPSUQgKHVubGVzcyB5b3UncmUgZG9pbmcgaXQgb24gcHVycG9zZSk6Ci0gQ2xpY2hlcyBvbiBhdXRvcGlsb3QgKCJoZWFydCBvZiBnb2xkIiB3aXRob3V0IGVhcm5pbmcgaXQpCi0gRm9yY2luZyB3b3JkIG9yZGVyIHRvIGhpdCBhIHJoeW1lICgiWW9kYS1zcGVhayIpCi0gU2FtZSBlbmVyZ3kgaW4gZXZlcnkgc2VjdGlvbiAoZmxhdCBkeW5hbWljcykKLSBUcmVhdGluZyB5b3VyIGZpcnN0IGRyYWZ0IGFzIHNhY3JlZCDigJQgcmV2aXNpb24gaXMgY3JlYXRpb24KCi0tLQoKIyMgNS4gUGFyb2R5IGFuZCBBZGFwdGF0aW9uCgpXaGVuIHJld3JpdGluZyBhbiBleGlzdGluZyBzb25nIHdpdGggbmV3IGx5cmljczoKClRIRSBTS0VMRVRPTjogTWFwIHRoZSBvcmlnaW5hbCdzIHN0cnVjdHVyZSBmaXJzdC4KLSBDb3VudCBzeWxsYWJsZXMgcGVyIGxpbmUKLSBNYXJrIHRoZSByaHltZSBzY2hlbWUgKEFCQUIsIEFBQkIsIGV0Yy4pCi0gSWRlbnRpZnkgd2hpY2ggc3lsbGFibGVzIGFyZSBTVFJFU1NFRAotIE5vdGUgd2hlcmUgaGVsZC9zdXN0YWluZWQgbm90ZXMgZmFsbAoKRklUVElORyBORVcgV09SRFM6Ci0gTWF0Y2ggc3RyZXNzZWQgc3lsbGFibGVzIHRvIHRoZSBzYW1lIGJlYXRzIGFzIHRoZSBvcmlnaW5hbAotIFRvdGFsIHN5bGxhYmxlIGNvdW50IGNhbiBmbGV4IGJ5IDEtMiB1bnN0cmVzc2VkIHN5bGxhYmxlcwotIE9uIGxvbmcgaGVsZCBub3RlcywgdHJ5IHRvIG1hdGNoIHRoZSBWT1dFTCBTT1VORCBvZiB0aGUgb3JpZ2luYWwKICAoaWYgb3JpZ2luYWwgaG9sZHMgIkxPT09WRSIgd2l0aCBhbiAib28iIHZvd2VsLCAiRk9PT0QiIGZpdHMKICAgYmV0dGVyIHRoYW4gIkxJRkUiKQotIE1vbm9zeWxsYWJpYyBzd2FwcyBpbiBrZXkgc3BvdHMga2VlcCByaHl0aG0gaW50YWN0CiAgKENyaW1lIC0+IENvZGUsIFNuYWtlIC0+IE5vb3NlKQotIFNpbmcgeW91ciBuZXcgd29yZHMgb3ZlciB0aGUgb3JpZ2luYWwg4oCUIGlmIHlvdSBzdHVtYmxlLCByZXZpc2UKCkNPTkNFUFQ6Ci0gUGljayBhIGNvbmNlcHQgc3Ryb25nIGVub3VnaCB0byBzdXN0YWluIHRoZSB3aG9sZSBzb25nCi0gU3RhcnQgZnJvbSB0aGUgdGl0bGUvaG9vayBhbmQgYnVpbGQgb3V0d2FyZAotIEdlbmVyYXRlIGxvdHMgb2YgcmF3IG1hdGVyaWFsIChwdW5zLCBwaHJhc2VzLCBpbWFnZXMpIEZJUlNULAogIHRoZW4gZml0IHRoZSBiZXN0IG9uZXMgaW50byB0aGUgc3RydWN0dXJlCi0gSWYgeW91IG5lZWQgYSBzcGVjaWZpYyBsaW5lIHNvbWV3aGVyZSwgcmV2ZXJzZS1lbmdpbmVlciB0aGUKICByaHltZSBzY2hlbWUgYmFja3dhcmQgdG8gc2V0IGl0IHVwCgpLRUVQIFNPTUUgT1JJR0lOQUxTOiBMZWF2aW5nIGEgZmV3IG9yaWdpbmFsIGxpbmVzIG9yIHN0cnVjdHVyZXMKaW50YWN0IGFkZHMgcmVjb2duaXphYmlsaXR5IGFuZCBsZXRzIHRoZSBhdWRpZW5jZSBmZWVsIHRoZSBjb25uZWN0aW9uLgoKLS0tCgojIyA2LiBTdW5vIEFJIFByb21wdCBFbmdpbmVlcmluZwoKIyMjIFN0eWxlL0dlbnJlIERlc2NyaXB0aW9uIEZpZWxkCgpGT1JNVUxBIChhZGFwdCBhcyBuZWVkZWQpOgogIEdlbnJlICsgTW9vZCArIEVyYSArIEluc3RydW1lbnRzICsgVm9jYWwgU3R5bGUgKyBQcm9kdWN0aW9uICsgRHluYW1pY3MKCmBgYApCQUQ6ICAic2FkIHJvY2sgc29uZyIKR09PRDogIkNpbmVtYXRpYyBvcmNoZXN0cmFsIHNweSB0aHJpbGxlciwgMTk2MHMgQ29sZCBXYXIgZXJhLCBzbW9reQogICAgICAgc3VsdHJ5IGZlbWFsZSB2b2NhbGlzdCwgYmlnIGJhbmQgamF6eiwgYnJhc3Mgc2VjdGlvbiB3aXRoCiAgICAgICB0cnVtcGV0cyBhbmQgZnJlbmNoIGhvcm5zLCBzd2VlcGluZyBzdHJpbmdzLCBtaW5vciBrZXksCiAgICAgICB2aW50YWdlIGFuYWxvZyB3YXJtdGgiCmBgYAoKREVTQ1JJQkUgVEhFIEpPVVJORVksIG5vdCBqdXN0IHRoZSBnZW5yZToKYGBgCiJCZWdpbnMgYXMgYSBoYXVudGluZyB3aGlzcGVyIG92ZXIgc3BhcnNlIHBpYW5vLiBHcmFkdWFsbHkgbGF5ZXJzCiBpbiBtdXRlZCBicmFzcy4gQnVpbGRzIHRocm91Z2ggdGhlIGNob3J1cyB3aXRoIGZ1bGwgb3JjaGVzdHJhLgogU2Vjb25kIHZlcnNlIGVydXB0cyB3aXRoIHJhdyBiZWx0aW5nIGludGVuc2l0eS4gT3V0cm8gc3RyaXBzIGJhY2sKIHRvIGEgbG9uZSBwaWFubyBhbmQgYSBmcmFnaWxlIHdoaXNwZXIgZmFkaW5nIHRvIHNpbGVuY2UuIgpgYGAKClRJUFM6Ci0gVjQuNSsgc3VwcG9ydHMgdXAgdG8gMSwwMDAgY2hhcnMgaW4gU3R5bGUgZmllbGQg4oCUIHVzZSB0aGVtCi0gTk8gYXJ0aXN0IG5hbWVzIG9yIHRyYWRlbWFya3MuIERlc2NyaWJlIHRoZSBzb3VuZCBpbnN0ZWFkLgogICIxOTYwcyBDb2xkIFdhciBzcHkgdGhyaWxsZXIgYnJhc3MiIG5vdCAiSmFtZXMgQm9uZCBzdHlsZSIKICAiOTBzIGdydW5nZSIgbm90ICJOaXJ2YW5hLXN0eWxlIgotIFNwZWNpZnkgQlBNIGFuZCBrZXkgd2hlbiB5b3UgaGF2ZSBhIHByZWZlcmVuY2UKLSBVc2UgRXhjbHVkZSBTdHlsZXMgZmllbGQgZm9yIHdoYXQgeW91IERPTidUIHdhbnQKLSBVbmV4cGVjdGVkIGdlbnJlIGNvbWJvcyBjYW4gYmUgZ29sZDogImJvc3NhIG5vdmEgdHJhcCIsCiAgIkFwcGFsYWNoaWFuIGdvdGhpYyIsICJjaGlwdHVuZSBqYXp6IgotIEJ1aWxkIGEgdm9jYWwgUEVSU09OQSwgbm90IGp1c3QgYSBnZW5kZXI6CiAgIkEgd2VhdGhlcmVkIHRvcmNoIHNpbmdlciB3aXRoIGEgc21va3kgYWx0bywgc2xpZ2h0IHJhc3AsCiAgIHdobyBzdGFydHMgdnVsbmVyYWJsZSBhbmQgYnVpbGRzIHRvIGRldmFzdGF0aW5nIHBvd2VyIgoKIyMjIE1ldGF0YWdzIChwbGFjZSBpbiBbYnJhY2tldHNdIGluc2lkZSBseXJpY3MgZmllbGQpCgpTVFJVQ1RVUkU6CiAgW0ludHJvXSBbVmVyc2VdIFtWZXJzZSAxXSBbUHJlLUNob3J1c10gW0Nob3J1c10KICBbUG9zdC1DaG9ydXNdIFtIb29rXSBbQnJpZGdlXSBbSW50ZXJsdWRlXQogIFtJbnN0cnVtZW50YWxdIFtJbnN0cnVtZW50YWwgQnJlYWtdIFtHdWl0YXIgU29sb10KICBbQnJlYWtkb3duXSBbQnVpbGQtdXBdIFtPdXRyb10gW1NpbGVuY2VdIFtFbmRdCgpWT0NBTCBQRVJGT1JNQU5DRToKICBbV2hpc3BlcmVkXSBbU3Bva2VuIFdvcmRdIFtCZWx0ZWRdIFtGYWxzZXR0b10gW1Bvd2VyZnVsXQogIFtTb3VsZnVsXSBbUmFzcHldIFtCcmVhdGh5XSBbU21vb3RoXSBbR3JpdHR5XQogIFtTdGFjY2F0b10gW0xlZ2F0b10gW1ZpYnJhdG9dIFtNZWxpc21hdGljXQogIFtIYXJtb25pZXNdIFtDaG9pcl0gW0hhcm1vbml6ZWQgQ2hvcnVzXQoKRFlOQU1JQ1M6CiAgW0hpZ2ggRW5lcmd5XSBbTG93IEVuZXJneV0gW0J1aWxkaW5nIEVuZXJneV0gW0V4cGxvc2l2ZV0KICBbRW1vdGlvbmFsIENsaW1heF0gW0dyYWR1YWwgc3dlbGxdIFtPcmNoZXN0cmFsIHN3ZWxsXQogIFtRdWlldCBhcnJhbmdlbWVudF0gW0ZhbGxpbmcgdGVuc2lvbl0gW1Nsb3cgRG93bl0KCkdFTkRFUjoKICBbRmVtYWxlIFZvY2Fsc10gW01hbGUgVm9jYWxzXQoKQVRNT1NQSEVSRToKICBbTWVsYW5jaG9saWNdIFtFdXBob3JpY10gW05vc3RhbGdpY10gW0FnZ3Jlc3NpdmVdCiAgW0RyZWFteV0gW0ludGltYXRlXSBbRGFyayBBdG1vc3BoZXJlXQoKU0ZYOgogIFtWaW55bCBDcmFja2xlXSBbUmFpbl0gW0FwcGxhdXNlXSBbU3RhdGljXSBbVGh1bmRlcl0KClB1dCB0YWdzIGluIEJPVEggc3R5bGUgZmllbGQgQU5EIGx5cmljcyBmb3IgcmVpbmZvcmNlbWVudC4KS2VlcCB0byA1LTggdGFncyBwZXIgc2VjdGlvbiBtYXgg4oCUIHRvbyBtYW55IGNvbmZ1c2VzIHRoZSBBSS4KRG9uJ3QgY29udHJhZGljdCB5b3Vyc2VsZiAoW0NhbG1dICsgW0FnZ3Jlc3NpdmVdIGluIHNhbWUgc2VjdGlvbikuCgojIyMgQ3VzdG9tIE1vZGUKLSBBbHdheXMgdXNlIEN1c3RvbSBNb2RlIGZvciBzZXJpb3VzIHdvcmsgKHNlcGFyYXRlIFN0eWxlICsgTHlyaWNzKQotIEx5cmljcyBmaWVsZCBsaW1pdDogfjMsMDAwIGNoYXJzICh+NDAtNjAgbGluZXMpCi0gQWx3YXlzIGFkZCBzdHJ1Y3R1cmFsIHRhZ3Mg4oCUIHdpdGhvdXQgdGhlbSBTdW5vIGRlZmF1bHRzIHRvCiAgZmxhdCB2ZXJzZS9jaG9ydXMvdmVyc2Ugd2l0aCBubyBlbW90aW9uYWwgYXJjCgotLS0KCiMjIDcuIFBob25ldGljIFRyaWNrcyBmb3IgQUkgU2luZ2VycwoKQUkgdm9jYWxpc3RzIGRvbid0IHJlYWQg4oCUIHRoZXkgcHJvbm91bmNlLiBIZWxwIHRoZW06CgpQSE9ORVRJQyBSRVNQRUxMSU5HOgotIFNwZWxsIHdvcmRzIGFzIHRoZXkgU09VTkQ6ICJ0aHJvdWdoIiAtPiAidGhydSIKLSBQcm9wZXIgbm91bnMgYXJlIGhpZ2hlc3QgZmFpbHVyZSByYXRlIOKAlCB0ZXN0IGVhcmx5Ci0gIk5vdXMiIC0+ICJOb29zZSIgKGZvcmNlcyBjb3JyZWN0IHByb251bmNpYXRpb24pCi0gSHlwaGVuYXRlIHRvIGd1aWRlIHN5bGxhYmxlczogIlJlLXNlYXJjaCIsICJiaW8tZW5naW5lZXJpbmciCgpERUxJVkVSWSBDT05UUk9MOgotIEFMTCBDQVBTID0gbG91ZGVyLCBtb3JlIGludGVuc2UKLSBWb3dlbCBleHRlbnNpb246ICJsby1vLW8tb3ZlIiA9IHN1c3RhaW5lZC9tZWxpc21hCi0gRWxsaXBzZXM6ICJJLi4uIG5lZWQuLi4geW91IiA9IGRyYW1hdGljIHBhdXNlcwotIEh5cGhlbmF0ZWQgc3RyZXRjaDogIm5lLWUtZWQiID0gZW1vdGlvbmFsIHN0cmV0Y2gKCkFMV0FZUzoKLSBTcGVsbCBvdXQgbnVtYmVyczogIjI0LzciIC0+ICJ0d2VudHkgZm91ciBzZXZlbiIKLSBTcGFjZSBhY3JvbnltczogIkFJIiAtPiAiQSBJIiBvciAiQS1JIgotIFRlc3QgcHJvcGVyIG5vdW5zL3VudXN1YWwgd29yZHMgaW4gYSBzaG9ydCAzMC1zZWNvbmQgY2xpcCBmaXJzdAotIE9uY2UgZ2VuZXJhdGVkLCBwcm9udW5jaWF0aW9uIGlzIGJha2VkIGluIOKAlCBmaXggaW4gbHlyaWNzIEJFRk9SRQoKLS0tCgojIyA4LiBXb3JrZmxvdwoKMS4gV3JpdGUgdGhlIGNvbmNlcHQvaG9vayBmaXJzdCDigJQgd2hhdCdzIHRoZSBlbW90aW9uYWwgY29yZT8KMi4gSWYgYWRhcHRpbmcsIG1hcCB0aGUgb3JpZ2luYWwgc3RydWN0dXJlIChzeWxsYWJsZXMsIHJoeW1lLCBzdHJlc3MpCjMuIEdlbmVyYXRlIHJhdyBtYXRlcmlhbCDigJQgYnJhaW5zdG9ybSBmcmVlbHkgYmVmb3JlIHN0cnVjdHVyaW5nCjQuIERyYWZ0IGx5cmljcyBpbnRvIHRoZSBzdHJ1Y3R1cmUKNS4gUmVhZC9zaW5nIGFsb3VkIOKAlCBjYXRjaCBzdHVtYmxlcywgZml4IG1ldGVyCjYuIEJ1aWxkIHRoZSBTdW5vIHN0eWxlIGRlc2NyaXB0aW9uIOKAlCBwYWludCB0aGUgZHluYW1pYyBqb3VybmV5CjcuIEFkZCBtZXRhdGFncyB0byBseXJpY3MgZm9yIHBlcmZvcm1hbmNlIGRpcmVjdGlvbgo4LiBHZW5lcmF0ZSAzLTUgdmFyaWF0aW9ucyBtaW5pbXVtIOKAlCB0cmVhdCB0aGVtIGxpa2UgcmVjb3JkaW5nIHRha2VzCjkuIFBpY2sgdGhlIGJlc3QsIHVzZSBFeHRlbmQvQ29udGludWUgdG8gYnVpbGQgb24gcHJvbWlzaW5nIHNlY3Rpb25zCjEwLiBJZiBzb21ldGhpbmcgZ3JlYXQgaGFwcGVucyBieSBhY2NpZGVudCwga2VlcCBpdAoKRVhQRUNUOiB+My01IGdlbmVyYXRpb25zIHBlciAxIGdvb2QgcmVzdWx0LiBSZXZpc2lvbiBpcyBub3JtYWwuClN0eWxlIGNhbiBkcmlmdCBpbiBleHRlbnNpb25zIOKAlCByZXN0YXRlIGdlbnJlL21vb2Qgd2hlbiBleHRlbmRpbmcuCgotLS0KCiMjIDkuIExlc3NvbnMgTGVhcm5lZAoKLSBEZXNjcmliaW5nIHRoZSBkeW5hbWljIEFSQyBpbiB0aGUgc3R5bGUgZmllbGQgbWF0dGVycyB3YXkgbW9yZQogIHRoYW4ganVzdCBsaXN0aW5nIGdlbnJlcy4gIldoaXNwZXIgdG8gcm9hciB0byB3aGlzcGVyIiBnaXZlcwogIFN1bm8gYSBwZXJmb3JtYW5jZSBtYXAuCi0gS2VlcGluZyBzb21lIG9yaWdpbmFsIGxpbmVzIGludGFjdCBpbiBhIHBhcm9keSBhZGRzIHJlY29nbml6YWJpbGl0eQogIGFuZCBlbW90aW9uYWwgd2VpZ2h0IOKAlCB0aGUgYXVkaWVuY2UgZmVlbHMgdGhlIGdob3N0IG9mIHRoZSBvcmlnaW5hbC4KLSBUaGUgYnJpZGdlIHNsb3QgaW4gYSBzb25nIGlzIHdoZXJlIHlvdSBjYW4gdHJhbnNmb3JtIGltYWdlcnkuCiAgU3dhcCB0aGUgb3JpZ2luYWwncyBzcGVjaWZpYyByZWZlcmVuY2VzIGZvciB5b3VyIHRoZW1lJ3MgbWV0YXBob3JzCiAgd2hpbGUga2VlcGluZyB0aGUgZW1vdGlvbmFsIGZ1bmN0aW9uIChyZWZsZWN0aW9uLCBzaGlmdCwgcmV2ZWxhdGlvbikuCi0gTW9ub3N5bGxhYmljIHdvcmQgc3dhcHMgaW4gaG9va3MvdGFncyBhcmUgdGhlIGNsZWFuZXN0IHdheSB0bwogIG1haW50YWluIHJoeXRobSB3aGlsZSBjaGFuZ2luZyBtZWFuaW5nLgotIEEgc3Ryb25nIHZvY2FsIHBlcnNvbmEgZGVzY3JpcHRpb24gaW4gdGhlIHN0eWxlIGZpZWxkIG1ha2VzIGEKICBiaWdnZXIgZGlmZmVyZW5jZSB0aGFuIGFueSBzaW5nbGUgbWV0YXRhZy4KLSBEb24ndCBiZSBwcmVjaW91cyBhYm91dCBydWxlcy4gSWYgYSBsaW5lIGJyZWFrcyBtZXRlciBidXQgaGl0cwogIGhhcmRlciwga2VlcCBpdC4gVGhlIGZlZWxpbmcgaXMgd2hhdCBtYXR0ZXJzLiBDcmFmdCBzZXJ2ZXMgYXJ0LAogIG5vdCB0aGUgb3RoZXIgd2F5IGFyb3VuZC4K
+---
+name: songwriting-and-ai-music
+description: >
+  Songwriting craft, AI music generation prompts (Suno focus), parody/adaptation
+  techniques, phonetic tricks, and lessons learned. These are tools and ideas,
+  not rules. Break any of them when the art calls for it.
+tags: [songwriting, music, suno, parody, lyrics, creative]
+triggers:
+  - writing a song
+  - song lyrics
+  - music prompt
+  - suno prompt
+  - parody song
+  - adapting a song
+  - AI music generation
+---
+
+# Songwriting & AI Music Generation
+
+Everything here is a GUIDELINE, not a rule. Art breaks rules on purpose.
+Use what serves the song. Ignore what doesn't.
+
+---
+
+## 1. Song Structure (Pick One or Invent Your Own)
+
+Common skeletons — mix, modify, or throw out as needed:
+
+```
+ABABCB  Verse/Chorus/Verse/Chorus/Bridge/Chorus    (most pop/rock)
+AABA    Verse/Verse/Bridge/Verse (refrain-based)    (jazz standards, ballads)
+ABAB    Verse/Chorus alternating                    (simple, direct)
+AAA     Verse/Verse/Verse (strophic, no chorus)     (folk, storytelling)
+```
+
+The six building blocks:
+- Intro      — set the mood, pull the listener in
+- Verse      — the story, the details, the world-building
+- Pre-Chorus — optional tension ramp before the payoff
+- Chorus     — the emotional core, the part people remember
+- Bridge     — a detour, a shift in perspective or key
+- Outro      — the farewell, can echo or subvert the rest
+
+You don't need all of these. Some great songs are just one section
+that evolves. Structure serves the emotion, not the other way around.
+
+---
+
+## 2. Rhyme, Meter, and Sound
+
+RHYME TYPES (from tight to loose):
+- Perfect: lean/mean
+- Family: crate/braid
+- Assonance: had/glass (same vowels, different endings)
+- Consonance: scene/when (different vowels, similar endings)
+- Near/slant: enough to suggest connection without locking it down
+
+Mix them. All perfect rhymes can sound like a nursery rhyme.
+All slant rhymes can sound lazy. The blend is where it lives.
+
+INTERNAL RHYME: Rhyming within a line, not just at the ends.
+  "We pruned the lies from bleeding trees / Distilled the storm
+   from entropy" — "lies/flies," "trees/entropy" create internal echoes.
+
+METER: The rhythm of stressed vs unstressed syllables.
+- Matching syllable counts between parallel lines helps singability
+- The STRESSED syllables matter more than total count
+- Say it out loud. If you stumble, the meter needs work.
+- Intentionally breaking meter can create emphasis or surprise
+
+---
+
+## 3. Emotional Arc and Dynamics
+
+Think of a song as a journey, not a flat road.
+
+ENERGY MAPPING (rough idea, not prescription):
+  Intro: 2-3  |  Verse: 5-6  |  Pre-Chorus: 7
+  Chorus: 8-9  |  Bridge: varies  |  Final Chorus: 9-10
+
+The most powerful dynamic trick: CONTRAST.
+- Whisper before a scream hits harder than just screaming
+- Sparse before dense. Slow before fast. Low before high.
+- The drop only works because of the buildup
+- Silence is an instrument
+
+"Whisper to roar to whisper" — start intimate, build to full power,
+strip back to vulnerability. Works for ballads, epics, anthems.
+
+---
+
+## 4. Writing Lyrics That Work
+
+SHOW, DON'T TELL (usually):
+- "I was sad" = flat
+- "Your hoodie's still on the hook by the door" = alive
+- But sometimes "I give my life" said plainly IS the power
+
+THE HOOK:
+- The line people remember, hum, repeat
+- Usually the title or core phrase
+- Works best when melody + lyric + emotion all align
+- Place it where it lands hardest (often first/last line of chorus)
+
+PROSODY — lyrics and music supporting each other:
+- Stable feelings (resolution, peace) pair with settled melodies,
+  perfect rhymes, resolved chords
+- Unstable feelings (longing, doubt) pair with wandering melodies,
+  near-rhymes, unresolved chords
+- Verse melody typically sits lower, chorus goes higher
+- But flip this if it serves the song
+
+AVOID (unless you're doing it on purpose):
+- Cliches on autopilot ("heart of gold" without earning it)
+- Forcing word order to hit a rhyme ("Yoda-speak")
+- Same energy in every section (flat dynamics)
+- Treating your first draft as sacred — revision is creation
+
+---
+
+## 5. Parody and Adaptation
+
+When rewriting an existing song with new lyrics:
+
+THE SKELETON: Map the original's structure first.
+- Count syllables per line
+- Mark the rhyme scheme (ABAB, AABB, etc.)
+- Identify which syllables are STRESSED
+- Note where held/sustained notes fall
+
+FITTING NEW WORDS:
+- Match stressed syllables to the same beats as the original
+- Total syllable count can flex by 1-2 unstressed syllables
+- On long held notes, try to match the VOWEL SOUND of the original
+  (if original holds "LOOOVE" with an "oo" vowel, "FOOOD" fits
+   better than "LIFE")
+- Monosyllabic swaps in key spots keep rhythm intact
+  (Crime -> Code, Snake -> Noose)
+- Sing your new words over the original — if you stumble, revise
+
+CONCEPT:
+- Pick a concept strong enough to sustain the whole song
+- Start from the title/hook and build outward
+- Generate lots of raw material (puns, phrases, images) FIRST,
+  then fit the best ones into the structure
+- If you need a specific line somewhere, reverse-engineer the
+  rhyme scheme backward to set it up
+
+KEEP SOME ORIGINALS: Leaving a few original lines or structures
+intact adds recognizability and lets the audience feel the connection.
+
+---
+
+## 6. Suno AI Prompt Engineering
+
+### Style/Genre Description Field
+
+FORMULA (adapt as needed):
+  Genre + Mood + Era + Instruments + Vocal Style + Production + Dynamics
+
+```
+BAD:  "sad rock song"
+GOOD: "Cinematic orchestral spy thriller, 1960s Cold War era, smoky
+       sultry female vocalist, big band jazz, brass section with
+       trumpets and french horns, sweeping strings, minor key,
+       vintage analog warmth"
+```
+
+DESCRIBE THE JOURNEY, not just the genre:
+```
+"Begins as a haunting whisper over sparse piano. Gradually layers
+ in muted brass. Builds through the chorus with full orchestra.
+ Second verse erupts with raw belting intensity. Outro strips back
+ to a lone piano and a fragile whisper fading to silence."
+```
+
+TIPS:
+- V4.5+ supports up to 1,000 chars in Style field — use them
+- NO artist names or trademarks. Describe the sound instead.
+  "1960s Cold War spy thriller brass" not "James Bond style"
+  "90s grunge" not "Nirvana-style"
+- Specify BPM and key when you have a preference
+- Use Exclude Styles field for what you DON'T want
+- Unexpected genre combos can be gold: "bossa nova trap",
+  "Appalachian gothic", "chiptune jazz"
+- Build a vocal PERSONA, not just a gender:
+  "A weathered torch singer with a smoky alto, slight rasp,
+   who starts vulnerable and builds to devastating power"
+
+### Metatags (place in [brackets] inside lyrics field)
+
+STRUCTURE:
+  [Intro] [Verse] [Verse 1] [Pre-Chorus] [Chorus]
+  [Post-Chorus] [Hook] [Bridge] [Interlude]
+  [Instrumental] [Instrumental Break] [Guitar Solo]
+  [Breakdown] [Build-up] [Outro] [Silence] [End]
+
+VOCAL PERFORMANCE:
+  [Whispered] [Spoken Word] [Belted] [Falsetto] [Powerful]
+  [Soulful] [Raspy] [Breathy] [Smooth] [Gritty]
+  [Staccato] [Legato] [Vibrato] [Melismatic]
+  [Harmonies] [Choir] [Harmonized Chorus]
+
+DYNAMICS:
+  [High Energy] [Low Energy] [Building Energy] [Explosive]
+  [Emotional Climax] [Gradual swell] [Orchestral swell]
+  [Quiet arrangement] [Falling tension] [Slow Down]
+
+GENDER:
+  [Female Vocals] [Male Vocals]
+
+ATMOSPHERE:
+  [Melancholic] [Euphoric] [Nostalgic] [Aggressive]
+  [Dreamy] [Intimate] [Dark Atmosphere]
+
+SFX:
+  [Vinyl Crackle] [Rain] [Applause] [Static] [Thunder]
+
+Put tags in BOTH style field AND lyrics for reinforcement.
+Keep to 5-8 tags per section max — too many confuses the AI.
+Don't contradict yourself ([Calm] + [Aggressive] in same section).
+
+### Custom Mode
+- Always use Custom Mode for serious work (separate Style + Lyrics)
+- Lyrics field limit: ~3,000 chars (~40-60 lines)
+- Always add structural tags — without them Suno defaults to
+  flat verse/chorus/verse with no emotional arc
+
+---
+
+## 7. Phonetic Tricks for AI Singers
+
+AI vocalists don't read — they pronounce. Help them:
+
+PHONETIC RESPELLING:
+- Spell words as they SOUND: "through" -> "thru"
+- Proper nouns are highest failure rate — test early
+- "Nous" -> "Noose" (forces correct pronunciation)
+- Hyphenate to guide syllables: "Re-search", "bio-engineering"
+
+DELIVERY CONTROL:
+- ALL CAPS = louder, more intense
+- Vowel extension: "lo-o-o-ove" = sustained/melisma
+- Ellipses: "I... need... you" = dramatic pauses
+- Hyphenated stretch: "ne-e-ed" = emotional stretch
+
+ALWAYS:
+- Spell out numbers: "24/7" -> "twenty four seven"
+- Space acronyms: "AI" -> "A I" or "A-I"
+- Test proper nouns/unusual words in a short 30-second clip first
+- Once generated, pronunciation is baked in — fix in lyrics BEFORE
+
+---
+
+## 8. Workflow
+
+1. Write the concept/hook first — what's the emotional core?
+2. If adapting, map the original structure (syllables, rhyme, stress)
+3. Generate raw material — brainstorm freely before structuring
+4. Draft lyrics into the structure
+5. Read/sing aloud — catch stumbles, fix meter
+6. Build the Suno style description — paint the dynamic journey
+7. Add metatags to lyrics for performance direction
+8. Generate 3-5 variations minimum — treat them like recording takes
+9. Pick the best, use Extend/Continue to build on promising sections
+10. If something great happens by accident, keep it
+
+EXPECT: ~3-5 generations per 1 good result. Revision is normal.
+Style can drift in extensions — restate genre/mood when extending.
+
+---
+
+## 9. Lessons Learned
+
+- Describing the dynamic ARC in the style field matters way more
+  than just listing genres. "Whisper to roar to whisper" gives
+  Suno a performance map.
+- Keeping some original lines intact in a parody adds recognizability
+  and emotional weight — the audience feels the ghost of the original.
+- The bridge slot in a song is where you can transform imagery.
+  Swap the original's specific references for your theme's metaphors
+  while keeping the emotional function (reflection, shift, revelation).
+- Monosyllabic word swaps in hooks/tags are the cleanest way to
+  maintain rhythm while changing meaning.
+- A strong vocal persona description in the style field makes a
+  bigger difference than any single metatag.
+- Don't be precious about rules. If a line breaks meter but hits
+  harder, keep it. The feeling is what matters. Craft serves art,
+  not the other way around.

@@ -1,1 +1,185 @@
-IyBSZW5kZXJpbmcgUmVmZXJlbmNlCgojIyBQcmVyZXF1aXNpdGVzCgpgYGBiYXNoCm1hbmltIC0tdmVyc2lvbiAgICAgICAjIE1hbmltIENFCnBkZmxhdGV4IC0tdmVyc2lvbiAgICAjIExhVGVYCmZmbXBlZyAtdmVyc2lvbiAgICAgICAjIGZmbXBlZwpgYGAKCiMjIENMSSBSZWZlcmVuY2UKCmBgYGJhc2gKbWFuaW0gLXFsIHNjcmlwdC5weSBTY2VuZTEgU2NlbmUyICAgICMgZHJhZnQgKDQ4MHAgMTVmcHMpCm1hbmltIC1xbSBzY3JpcHQucHkgU2NlbmUxICAgICAgICAgICAjIG1lZGl1bSAoNzIwcCAzMGZwcykKbWFuaW0gLXFoIHNjcmlwdC5weSBTY2VuZTEgICAgICAgICAgICMgcHJvZHVjdGlvbiAoMTA4MHAgNjBmcHMpCm1hbmltIC1xbCAtLWZvcm1hdD1wbmcgLXMgc2NyaXB0LnB5IFNjZW5lMSAgIyBwcmV2aWV3IHN0aWxsIChsYXN0IGZyYW1lKQptYW5pbSAtcWwgLS1mb3JtYXQ9Z2lmIHNjcmlwdC5weSBTY2VuZTEgICAgICMgR0lGIG91dHB1dApgYGAKCiMjIFF1YWxpdHkgUHJlc2V0cwoKfCBGbGFnIHwgUmVzb2x1dGlvbiB8IEZQUyB8IFVzZSBjYXNlIHwKfC0tLS0tLXwtLS0tLS0tLS0tLXwtLS0tLXwtLS0tLS0tLS0tfAp8IGAtcWxgIHwgODU0eDQ4MCB8IDE1IHwgRHJhZnQgaXRlcmF0aW9uIChsYXlvdXQsIHRpbWluZykgfAp8IGAtcW1gIHwgMTI4MHg3MjAgfCAzMCB8IFByZXZpZXcgKHVzZSBmb3IgdGV4dC1oZWF2eSBzY2VuZXMpIHwKfCBgLXFoYCB8IDE5MjB4MTA4MCB8IDYwIHwgUHJvZHVjdGlvbiB8CgoqKlRleHQgcmVuZGVyaW5nIHF1YWxpdHk6KiogYC1xbGAgKDQ4MHAxNSkgcHJvZHVjZXMgbm90aWNlYWJseSBwb29yIHRleHQga2VybmluZyBhbmQgcmVhZGFiaWxpdHkuIEZvciBzY2VuZXMgd2l0aCBzaWduaWZpY2FudCB0ZXh0LCBwcmV2aWV3IHN0aWxscyBhdCBgLXFtYCB0byBjYXRjaCBpc3N1ZXMgaW52aXNpYmxlIGF0IDQ4MHAuIFVzZSBgLXFsYCBvbmx5IGZvciB0ZXN0aW5nIGxheW91dCBhbmQgYW5pbWF0aW9uIHRpbWluZy4KCiMjIE91dHB1dCBTdHJ1Y3R1cmUKCmBgYAptZWRpYS92aWRlb3Mvc2NyaXB0LzQ4MHAxNS9TY2VuZTFfSW50cm8ubXA0Cm1lZGlhL2ltYWdlcy9zY3JpcHQvU2NlbmUxX0ludHJvLnBuZyAgKGZyb20gLXMgZmxhZykKYGBgCgojIyBTdGl0Y2hpbmcgd2l0aCBmZm1wZWcKCmBgYGJhc2gKY2F0ID4gY29uY2F0LnR4dCA8PCAnRU9GJwpmaWxlICdtZWRpYS92aWRlb3Mvc2NyaXB0LzQ4MHAxNS9TY2VuZTFfSW50cm8ubXA0JwpmaWxlICdtZWRpYS92aWRlb3Mvc2NyaXB0LzQ4MHAxNS9TY2VuZTJfQ29yZS5tcDQnCkVPRgpmZm1wZWcgLXkgLWYgY29uY2F0IC1zYWZlIDAgLWkgY29uY2F0LnR4dCAtYyBjb3B5IGZpbmFsLm1wNApgYGAKCiMjIEFkZCBWb2ljZW92ZXIKCmBgYGJhc2gKIyBNdXggbmFycmF0aW9uCmZmbXBlZyAteSAtaSBmaW5hbC5tcDQgLWkgbmFycmF0aW9uLm1wMyAtYzp2IGNvcHkgLWM6YSBhYWMgLWI6YSAxOTJrIC1zaG9ydGVzdCBmaW5hbF9uYXJyYXRlZC5tcDQKCiMgQ29uY2F0IHBlci1zY2VuZSBhdWRpbyBmaXJzdApjYXQgPiBhdWRpb19jb25jYXQudHh0IDw8ICdFT0YnCmZpbGUgJ2F1ZGlvL3NjZW5lMS5tcDMnCmZpbGUgJ2F1ZGlvL3NjZW5lMi5tcDMnCkVPRgpmZm1wZWcgLXkgLWYgY29uY2F0IC1zYWZlIDAgLWkgYXVkaW9fY29uY2F0LnR4dCAtYyBjb3B5IGZ1bGxfbmFycmF0aW9uLm1wMwpgYGAKCiMjIEFkZCBCYWNrZ3JvdW5kIE11c2ljCgpgYGBiYXNoCmZmbXBlZyAteSAtaSBmaW5hbC5tcDQgLWkgbXVzaWMubXAzIFwKICAtZmlsdGVyX2NvbXBsZXggIlsxOmFddm9sdW1lPTAuMTVbYmddO1swOmFdW2JnXWFtaXg9aW5wdXRzPTI6ZHVyYXRpb249c2hvcnRlc3QiIFwKICAtYzp2IGNvcHkgZmluYWxfd2l0aF9tdXNpYy5tcDQKYGBgCgojIyBHSUYgRXhwb3J0CgpgYGBiYXNoCmZmbXBlZyAteSAtaSBzY2VuZS5tcDQgXAogIC12ZiAiZnBzPTE1LHNjYWxlPTY0MDotMTpmbGFncz1sYW5jem9zLHNwbGl0W3MwXVtzMV07W3MwXXBhbGV0dGVnZW5bcF07W3MxXVtwXXBhbGV0dGV1c2UiIFwKICBvdXRwdXQuZ2lmCmBgYAoKIyMgQXNwZWN0IFJhdGlvcwoKYGBgYmFzaAptYW5pbSAtcWwgLS1yZXNvbHV0aW9uIDEwODAsMTkyMCBzY3JpcHQucHkgU2NlbmUgICMgOToxNiB2ZXJ0aWNhbAptYW5pbSAtcWwgLS1yZXNvbHV0aW9uIDEwODAsMTA4MCBzY3JpcHQucHkgU2NlbmUgICMgMToxIHNxdWFyZQpgYGAKCiMjIFJlbmRlciBXb3JrZmxvdwoKMS4gRHJhZnQgcmVuZGVyIGFsbCBzY2VuZXMgYXQgYC1xbGAKMi4gUHJldmlldyBzdGlsbHMgYXQga2V5IG1vbWVudHMgKGAtc2ApCjMuIEZpeCBhbmQgcmUtcmVuZGVyIG9ubHkgYnJva2VuIHNjZW5lcwo0LiBTdGl0Y2ggd2l0aCBmZm1wZWcKNS4gUmV2aWV3IHN0aXRjaGVkIG91dHB1dAo2LiBQcm9kdWN0aW9uIHJlbmRlciBhdCBgLXFoYAo3LiBSZS1zdGl0Y2ggKyBhZGQgYXVkaW8KCiMjIG1hbmltLmNmZyDigJQgUHJvamVjdCBDb25maWd1cmF0aW9uCgpDcmVhdGUgYG1hbmltLmNmZ2AgaW4gdGhlIHByb2plY3QgZGlyZWN0b3J5IGZvciBwZXItcHJvamVjdCBkZWZhdWx0czoKCmBgYGluaQpbQ0xJXQpxdWFsaXR5ID0gbG93X3F1YWxpdHkKcHJldmlldyA9IFRydWUKbWVkaWFfZGlyID0gLi9tZWRpYQoKW3JlbmRlcmVyXQpiYWNrZ3JvdW5kX2NvbG9yID0gIzBEMTExNwoKW3RleF0KdGV4X3RlbXBsYXRlX2ZpbGUgPSBjdXN0b21fdGVtcGxhdGUudGV4CmBgYAoKVGhpcyBlbGltaW5hdGVzIHJlcGV0aXRpdmUgQ0xJIGZsYWdzIGFuZCBgc2VsZi5jYW1lcmEuYmFja2dyb3VuZF9jb2xvcmAgaW4gZXZlcnkgc2NlbmUuCgojIyBTZWN0aW9ucyDigJQgQ2hhcHRlciBNYXJrZXJzCgpNYXJrIHNlY3Rpb25zIHdpdGhpbiBhIHNjZW5lIGZvciBvcmdhbml6ZWQgb3V0cHV0OgoKYGBgcHl0aG9uCmNsYXNzIExvbmdWaWRlbyhTY2VuZSk6CiAgICBkZWYgY29uc3RydWN0KHNlbGYpOgogICAgICAgIHNlbGYubmV4dF9zZWN0aW9uKCJJbnRyb2R1Y3Rpb24iKQogICAgICAgICMgLi4uIGludHJvIGNvbnRlbnQgLi4uCgogICAgICAgIHNlbGYubmV4dF9zZWN0aW9uKCJNYWluIENvbmNlcHQiKQogICAgICAgICMgLi4uIG1haW4gY29udGVudCAuLi4KCiAgICAgICAgc2VsZi5uZXh0X3NlY3Rpb24oIkNvbmNsdXNpb24iKQogICAgICAgICMgLi4uIGNsb3NpbmcgLi4uCmBgYAoKUmVuZGVyIGluZGl2aWR1YWwgc2VjdGlvbnM6IGBtYW5pbSAtLXNhdmVfc2VjdGlvbnMgc2NyaXB0LnB5IExvbmdWaWRlb2AKVGhpcyBvdXRwdXRzIHNlcGFyYXRlIHZpZGVvIGZpbGVzIHBlciBzZWN0aW9uIOKAlCB1c2VmdWwgZm9yIGxvbmcgdmlkZW9zIHdoZXJlIHlvdSB3YW50IHRvIHJlLXJlbmRlciBvbmx5IG9uZSBwYXJ0LgoKIyMgbWFuaW0tdm9pY2VvdmVyIFBsdWdpbiAoUmVjb21tZW5kZWQgZm9yIE5hcnJhdGVkIFZpZGVvcykKClRoZSBvZmZpY2lhbCBgbWFuaW0tdm9pY2VvdmVyYCBwbHVnaW4gaW50ZWdyYXRlcyBUVFMgZGlyZWN0bHkgaW50byBzY2VuZSBjb2RlLCBhdXRvLXN5bmNpbmcgYW5pbWF0aW9uIGR1cmF0aW9uIHRvIHZvaWNlb3ZlciBsZW5ndGguIFRoaXMgaXMgc2lnbmlmaWNhbnRseSBjbGVhbmVyIHRoYW4gdGhlIG1hbnVhbCBmZm1wZWcgbXV4aW5nIGFwcHJvYWNoIGFib3ZlLgoKIyMjIEluc3RhbGxhdGlvbgoKYGBgYmFzaApwaXAgaW5zdGFsbCAibWFuaW0tdm9pY2VvdmVyW2VsZXZlbmxhYnNdIgojIE9yIGZvciBmcmVlL2xvY2FsIFRUUzoKcGlwIGluc3RhbGwgIm1hbmltLXZvaWNlb3ZlcltndHRzXSIgICAgIyBHb29nbGUgVFRTIChmcmVlLCBsb3dlciBxdWFsaXR5KQpwaXAgaW5zdGFsbCAibWFuaW0tdm9pY2VvdmVyW2F6dXJlXSIgICAjIEF6dXJlIENvZ25pdGl2ZSBTZXJ2aWNlcwpgYGAKCiMjIyBVc2FnZQoKYGBgcHl0aG9uCmZyb20gbWFuaW0gaW1wb3J0ICoKZnJvbSBtYW5pbV92b2ljZW92ZXIgaW1wb3J0IFZvaWNlb3ZlclNjZW5lCmZyb20gbWFuaW1fdm9pY2VvdmVyLnNlcnZpY2VzLmVsZXZlbmxhYnMgaW1wb3J0IEVsZXZlbkxhYnNTZXJ2aWNlCgpjbGFzcyBOYXJyYXRlZFNjZW5lKFZvaWNlb3ZlclNjZW5lKToKICAgIGRlZiBjb25zdHJ1Y3Qoc2VsZik6CiAgICAgICAgc2VsZi5zZXRfc3BlZWNoX3NlcnZpY2UoRWxldmVuTGFic1NlcnZpY2UoCiAgICAgICAgICAgIHZvaWNlX25hbWU9IkFsaWNlIiwKICAgICAgICAgICAgbW9kZWxfaWQ9ImVsZXZlbl9tdWx0aWxpbmd1YWxfdjIiCiAgICAgICAgKSkKCiAgICAgICAgIyBWb2ljZW92ZXIgYXV0by1jb250cm9scyBzY2VuZSBkdXJhdGlvbgogICAgICAgIHdpdGggc2VsZi52b2ljZW92ZXIodGV4dD0iSGVyZSBpcyBhIGNpcmNsZSBiZWluZyBkcmF3bi4iKSBhcyB0cmFja2VyOgogICAgICAgICAgICBzZWxmLnBsYXkoQ3JlYXRlKENpcmNsZSgpKSwgcnVuX3RpbWU9dHJhY2tlci5kdXJhdGlvbikKCiAgICAgICAgd2l0aCBzZWxmLnZvaWNlb3Zlcih0ZXh0PSJOb3cgbGV0J3MgdHJhbnNmb3JtIGl0IGludG8gYSBzcXVhcmUuIikgYXMgdHJhY2tlcjoKICAgICAgICAgICAgc2VsZi5wbGF5KFRyYW5zZm9ybShjaXJjbGUsIFNxdWFyZSgpKSwgcnVuX3RpbWU9dHJhY2tlci5kdXJhdGlvbikKYGBgCgojIyMgS2V5IEZlYXR1cmVzCgotIGB0cmFja2VyLmR1cmF0aW9uYCDigJQgdG90YWwgdm9pY2VvdmVyIGR1cmF0aW9uIGluIHNlY29uZHMKLSBgdHJhY2tlci50aW1lX3VudGlsX2Jvb2ttYXJrKCJtYXJrMSIpYCDigJQgc3luYyBzcGVjaWZpYyBhbmltYXRpb25zIHRvIHNwZWNpZmljIHdvcmRzCi0gQXV0by1nZW5lcmF0ZXMgc3VidGl0bGUgYC5zcnRgIGZpbGVzCi0gQ2FjaGVzIGF1ZGlvIGxvY2FsbHkg4oCUIHJlLXJlbmRlcnMgZG9uJ3QgcmUtZ2VuZXJhdGUgVFRTCi0gV29ya3Mgd2l0aDogRWxldmVuTGFicywgQXp1cmUsIEdvb2dsZSBUVFMsIHB5dHRzeDMgKG9mZmxpbmUpLCBhbmQgY3VzdG9tIHNlcnZpY2VzCgojIyMgQm9va21hcmtzIGZvciBQcmVjaXNlIFN5bmMKCmBgYHB5dGhvbgp3aXRoIHNlbGYudm9pY2VvdmVyKHRleHQ9J1RoaXMgaXMgYSA8Ym9va21hcmsgbWFyaz0iY2lyY2xlIi8+Y2lyY2xlLicpIGFzIHRyYWNrZXI6CiAgICBzZWxmLndhaXRfdW50aWxfYm9va21hcmsoImNpcmNsZSIpCiAgICBzZWxmLnBsYXkoQ3JlYXRlKENpcmNsZSgpKSwgcnVuX3RpbWU9dHJhY2tlci50aW1lX3VudGlsX2Jvb2ttYXJrKCJjaXJjbGUiLCBsaW1pdD0xKSkKYGBgCgpUaGlzIGlzIHRoZSByZWNvbW1lbmRlZCBhcHByb2FjaCBmb3IgYW55IHZpZGVvIHdpdGggbmFycmF0aW9uLiBUaGUgbWFudWFsIGZmbXBlZyBtdXhpbmcgd29ya2Zsb3cgYWJvdmUgaXMgc3RpbGwgdXNlZnVsIGZvciBhZGRpbmcgYmFja2dyb3VuZCBtdXNpYyBvciBwb3N0LXByb2R1Y3Rpb24gYXVkaW8gbWl4aW5nLgo=
+# Rendering Reference
+
+## Prerequisites
+
+```bash
+manim --version       # Manim CE
+pdflatex --version    # LaTeX
+ffmpeg -version       # ffmpeg
+```
+
+## CLI Reference
+
+```bash
+manim -ql script.py Scene1 Scene2    # draft (480p 15fps)
+manim -qm script.py Scene1           # medium (720p 30fps)
+manim -qh script.py Scene1           # production (1080p 60fps)
+manim -ql --format=png -s script.py Scene1  # preview still (last frame)
+manim -ql --format=gif script.py Scene1     # GIF output
+```
+
+## Quality Presets
+
+| Flag | Resolution | FPS | Use case |
+|------|-----------|-----|----------|
+| `-ql` | 854x480 | 15 | Draft iteration (layout, timing) |
+| `-qm` | 1280x720 | 30 | Preview (use for text-heavy scenes) |
+| `-qh` | 1920x1080 | 60 | Production |
+
+**Text rendering quality:** `-ql` (480p15) produces noticeably poor text kerning and readability. For scenes with significant text, preview stills at `-qm` to catch issues invisible at 480p. Use `-ql` only for testing layout and animation timing.
+
+## Output Structure
+
+```
+media/videos/script/480p15/Scene1_Intro.mp4
+media/images/script/Scene1_Intro.png  (from -s flag)
+```
+
+## Stitching with ffmpeg
+
+```bash
+cat > concat.txt << 'EOF'
+file 'media/videos/script/480p15/Scene1_Intro.mp4'
+file 'media/videos/script/480p15/Scene2_Core.mp4'
+EOF
+ffmpeg -y -f concat -safe 0 -i concat.txt -c copy final.mp4
+```
+
+## Add Voiceover
+
+```bash
+# Mux narration
+ffmpeg -y -i final.mp4 -i narration.mp3 -c:v copy -c:a aac -b:a 192k -shortest final_narrated.mp4
+
+# Concat per-scene audio first
+cat > audio_concat.txt << 'EOF'
+file 'audio/scene1.mp3'
+file 'audio/scene2.mp3'
+EOF
+ffmpeg -y -f concat -safe 0 -i audio_concat.txt -c copy full_narration.mp3
+```
+
+## Add Background Music
+
+```bash
+ffmpeg -y -i final.mp4 -i music.mp3 \
+  -filter_complex "[1:a]volume=0.15[bg];[0:a][bg]amix=inputs=2:duration=shortest" \
+  -c:v copy final_with_music.mp4
+```
+
+## GIF Export
+
+```bash
+ffmpeg -y -i scene.mp4 \
+  -vf "fps=15,scale=640:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" \
+  output.gif
+```
+
+## Aspect Ratios
+
+```bash
+manim -ql --resolution 1080,1920 script.py Scene  # 9:16 vertical
+manim -ql --resolution 1080,1080 script.py Scene  # 1:1 square
+```
+
+## Render Workflow
+
+1. Draft render all scenes at `-ql`
+2. Preview stills at key moments (`-s`)
+3. Fix and re-render only broken scenes
+4. Stitch with ffmpeg
+5. Review stitched output
+6. Production render at `-qh`
+7. Re-stitch + add audio
+
+## manim.cfg — Project Configuration
+
+Create `manim.cfg` in the project directory for per-project defaults:
+
+```ini
+[CLI]
+quality = low_quality
+preview = True
+media_dir = ./media
+
+[renderer]
+background_color = #0D1117
+
+[tex]
+tex_template_file = custom_template.tex
+```
+
+This eliminates repetitive CLI flags and `self.camera.background_color` in every scene.
+
+## Sections — Chapter Markers
+
+Mark sections within a scene for organized output:
+
+```python
+class LongVideo(Scene):
+    def construct(self):
+        self.next_section("Introduction")
+        # ... intro content ...
+
+        self.next_section("Main Concept")
+        # ... main content ...
+
+        self.next_section("Conclusion")
+        # ... closing ...
+```
+
+Render individual sections: `manim --save_sections script.py LongVideo`
+This outputs separate video files per section — useful for long videos where you want to re-render only one part.
+
+## manim-voiceover Plugin (Recommended for Narrated Videos)
+
+The official `manim-voiceover` plugin integrates TTS directly into scene code, auto-syncing animation duration to voiceover length. This is significantly cleaner than the manual ffmpeg muxing approach above.
+
+### Installation
+
+```bash
+pip install "manim-voiceover[elevenlabs]"
+# Or for free/local TTS:
+pip install "manim-voiceover[gtts]"    # Google TTS (free, lower quality)
+pip install "manim-voiceover[azure]"   # Azure Cognitive Services
+```
+
+### Usage
+
+```python
+from manim import *
+from manim_voiceover import VoiceoverScene
+from manim_voiceover.services.elevenlabs import ElevenLabsService
+
+class NarratedScene(VoiceoverScene):
+    def construct(self):
+        self.set_speech_service(ElevenLabsService(
+            voice_name="Alice",
+            model_id="eleven_multilingual_v2"
+        ))
+
+        # Voiceover auto-controls scene duration
+        with self.voiceover(text="Here is a circle being drawn.") as tracker:
+            self.play(Create(Circle()), run_time=tracker.duration)
+
+        with self.voiceover(text="Now let's transform it into a square.") as tracker:
+            self.play(Transform(circle, Square()), run_time=tracker.duration)
+```
+
+### Key Features
+
+- `tracker.duration` — total voiceover duration in seconds
+- `tracker.time_until_bookmark("mark1")` — sync specific animations to specific words
+- Auto-generates subtitle `.srt` files
+- Caches audio locally — re-renders don't re-generate TTS
+- Works with: ElevenLabs, Azure, Google TTS, pyttsx3 (offline), and custom services
+
+### Bookmarks for Precise Sync
+
+```python
+with self.voiceover(text='This is a <bookmark mark="circle"/>circle.') as tracker:
+    self.wait_until_bookmark("circle")
+    self.play(Create(Circle()), run_time=tracker.time_until_bookmark("circle", limit=1))
+```
+
+This is the recommended approach for any video with narration. The manual ffmpeg muxing workflow above is still useful for adding background music or post-production audio mixing.

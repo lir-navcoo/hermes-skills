@@ -1,1 +1,159 @@
-IyBEZXNpZ24gU3lzdGVtOiBJbnRlcmNvbQoKCj4gKipIZXJtZXMgQWdlbnQg4oCUIEltcGxlbWVudGF0aW9uIE5vdGVzKioKPgo+IFRoZSBvcmlnaW5hbCBzaXRlIHVzZXMgcHJvcHJpZXRhcnkgZm9udHMuIEZvciBzZWxmLWNvbnRhaW5lZCBIVE1MIG91dHB1dCwgdXNlIHRoZXNlIENETiBzdWJzdGl0dXRlczoKPiAtICoqUHJpbWFyeToqKiBgSW50ZXJgIHwgKipNb25vOioqIGBzeXN0ZW0gbW9ub3NwYWNlIHN0YWNrYAo+IC0gKipGb250IHN0YWNrIChDU1MpOioqIGBmb250LWZhbWlseTogJ0ludGVyJywgc3lzdGVtLXVpLCAtYXBwbGUtc3lzdGVtLCAnU2Vnb2UgVUknLCBSb2JvdG8sIHNhbnMtc2VyaWY7YAo+IC0gKipNb25vIHN0YWNrIChDU1MpOioqIGBmb250LWZhbWlseTogdWktbW9ub3NwYWNlLCBTRk1vbm8tUmVndWxhciwgTWVubG8sIE1vbmFjbywgQ29uc29sYXMsICdMaWJlcmF0aW9uIE1vbm8nLCAnQ291cmllciBOZXcnLCBtb25vc3BhY2U7YAo+IGBgYGh0bWwKPiA8bGluayBocmVmPSJodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2NzczI/ZmFtaWx5PUludGVyOndnaHRAMzAwOzQwMDs1MDA7NjAwOzcwMCZkaXNwbGF5PXN3YXAiIHJlbD0ic3R5bGVzaGVldCI+Cj4gYGBgCj4gVXNlIGB3cml0ZV9maWxlYCB0byBjcmVhdGUgSFRNTCwgc2VydmUgdmlhIGBnZW5lcmF0aXZlLXdpZGdldHNgIHNraWxsIChjbG91ZGZsYXJlZCB0dW5uZWwpLgo+IFZlcmlmeSB2aXN1YWwgYWNjdXJhY3kgd2l0aCBgYnJvd3Nlcl92aXNpb25gIGFmdGVyIGdlbmVyYXRpbmcuCgojIyAxLiBWaXN1YWwgVGhlbWUgJiBBdG1vc3BoZXJlCgpJbnRlcmNvbSdzIHdlYnNpdGUgaXMgYSB3YXJtLCBjb25maWRlbnQgY3VzdG9tZXIgc2VydmljZSBwbGF0Zm9ybSB0aGF0IGNvbW11bmljYXRlcyAiQUktZmlyc3QgaGVscGRlc2siIHRocm91Z2ggYSBjbGVhbiwgZWRpdG9yaWFsIGRlc2lnbiBsYW5ndWFnZS4gVGhlIHBhZ2Ugb3BlcmF0ZXMgb24gYSB3YXJtIG9mZi13aGl0ZSBjYW52YXMgKGAjZmFmOWY2YCkgd2l0aCBvZmYtYmxhY2sgKGAjMTExMTExYCkgdGV4dCwgY3JlYXRpbmcgYW4gaW50aW1hdGUsIG1hZ2F6aW5lLWxpa2UgcmVhZGluZyBleHBlcmllbmNlLiBUaGUgc2lnbmF0dXJlIEZpbiBPcmFuZ2UgKGAjZmY1NjAwYCkg4oCUIG5hbWVkIGFmdGVyIEludGVyY29tJ3MgQUkgYWdlbnQg4oCUIHNlcnZlcyBhcyB0aGUgc2luZ3VsYXIgdmlicmFudCBhY2NlbnQgYWdhaW5zdCB0aGUgd2FybSBuZXV0cmFsIHBhbGV0dGUuCgpUaGUgdHlwb2dyYXBoeSB1c2VzIFNhYW5zIOKAlCBhIGN1c3RvbSBnZW9tZXRyaWMgc2Fucy1zZXJpZiB3aXRoIGFnZ3Jlc3NpdmUgbmVnYXRpdmUgbGV0dGVyLXNwYWNpbmcgKC0yLjRweCBhdCA4MHB4LCAtMC40OHB4IGF0IDI0cHgpIGFuZCBhIGNvbnNpc3RlbnQgMS4wMCBsaW5lLWhlaWdodCBhY3Jvc3MgYWxsIGhlYWRpbmcgc2l6ZXMuIFRoaXMgY3JlYXRlcyB1bHRyYS1jb21wcmVzc2VkLCBiaWxsYm9hcmQtbGlrZSBoZWFkbGluZXMgdGhhdCBmZWVsIGVuZ2luZWVyZWQgYW5kIHByZWNpc2UuIFNlcnJpZiBwcm92aWRlcyB0aGUgc2VyaWYgY29tcGFuaW9uIGZvciBlZGl0b3JpYWwgbW9tZW50cywgYW5kIFNhYW5zTW9ubyBoYW5kbGVzIGNvZGUgYW5kIHVwcGVyY2FzZSB0ZWNobmljYWwgbGFiZWxzLiBNZWRpdW1MTCBhbmQgTExNZWRpdW0gYXBwZWFyIGZvciBzcGVjaWZpYyBVSSBjb250ZXh0cywgY3JlYXRpbmcgYSByaWNoIGZpdmUtZm9udCBlY29zeXN0ZW0uCgpXaGF0IGRpc3Rpbmd1aXNoZXMgSW50ZXJjb20gaXMgaXRzIHJlbWFya2FibHkgc2hhcnAgZ2VvbWV0cnkg4oCUIDRweCBib3JkZXItcmFkaXVzIG9uIGJ1dHRvbnMgY3JlYXRlcyBuZWFyLXJlY3Rhbmd1bGFyIGludGVyYWN0aXZlIGVsZW1lbnRzIHRoYXQgZmVlbCBpbmR1c3RyaWFsIGFuZCBwcmVjaXNlLCBjb250cmFzdGluZyB3aXRoIHRoZSB3YXJtIHN1cmZhY2UgY29sb3JzLiBCdXR0b24gaG92ZXIgc3RhdGVzIHVzZSBgc2NhbGUoMS4xKWAgZXhwYW5zaW9uLCBjcmVhdGluZyBhIHBoeXNpY2FsICJncm93aW5nIiBpbnRlcmFjdGlvbi4gVGhlIGJvcmRlciBzeXN0ZW0gdXNlcyB3YXJtIG9hdCB0b25lcyAoYCNkZWRiZDZgKSBhbmQgb2tsYWItYmFzZWQgb3BhY2l0eSB2YWx1ZXMgZm9yIHNvcGhpc3RpY2F0ZWQgY29sb3IgbWFuYWdlbWVudC4KCioqS2V5IENoYXJhY3RlcmlzdGljczoqKgotIFdhcm0gb2ZmLXdoaXRlIGNhbnZhcyAoYCNmYWY5ZjZgKSB3aXRoIG9hdC10b25lZCBib3JkZXJzIChgI2RlZGJkNmApCi0gU2FhbnMgZm9udCB3aXRoIGV4dHJlbWUgbmVnYXRpdmUgdHJhY2tpbmcgKC0yLjRweCBhdCA4MHB4KSBhbmQgMS4wMCBsaW5lLWhlaWdodAotIEZpbiBPcmFuZ2UgKGAjZmY1NjAwYCkgYXMgc2luZ3VsYXIgYnJhbmQgYWNjZW50Ci0gU2hhcnAgNHB4IGJvcmRlci1yYWRpdXMg4oCUIG5lYXItcmVjdGFuZ3VsYXIgYnV0dG9ucyBhbmQgZWxlbWVudHMKLSBTY2FsZSgxLjEpIGhvdmVyIHdpdGggc2NhbGUoMC44NSkgYWN0aXZlIOKAlCBwaHlzaWNhbCBidXR0b24gaW50ZXJhY3Rpb24KLSBTYWFuc01vbm8gdXBwZXJjYXNlIGxhYmVscyB3aXRoIHdpZGUgdHJhY2tpbmcgKDAuNnB44oCTMS4ycHgpCi0gUmljaCBtdWx0aS1jb2xvciByZXBvcnQgcGFsZXR0ZSAoYmx1ZSwgZ3JlZW4sIHJlZCwgcGluaywgbGltZSwgb3JhbmdlKQotIG9rbGFiIGNvbG9yIHZhbHVlcyBmb3Igc29waGlzdGljYXRlZCBvcGFjaXR5IG1hbmFnZW1lbnQKCiMjIDIuIENvbG9yIFBhbGV0dGUgJiBSb2xlcwoKIyMjIFByaW1hcnkKLSAqKk9mZiBCbGFjayoqIChgIzExMTExMWApOiBgLS1jb2xvci1vZmYtYmxhY2tgLCBwcmltYXJ5IHRleHQsIGJ1dHRvbiBiYWNrZ3JvdW5kcwotICoqUHVyZSBXaGl0ZSoqIChgI2ZmZmZmZmApOiBgLS13c2MtY29sb3ItY29udGVudC1wcmltYXJ5YCwgcHJpbWFyeSBzdXJmYWNlCi0gKipXYXJtIENyZWFtKiogKGAjZmFmOWY2YCk6IEJ1dHRvbiBiYWNrZ3JvdW5kcywgY2FyZCBzdXJmYWNlcwotICoqRmluIE9yYW5nZSoqIChgI2ZmNTYwMGApOiBgLS1jb2xvci1maW5gLCBwcmltYXJ5IGJyYW5kIGFjY2VudAotICoqUmVwb3J0IE9yYW5nZSoqIChgI2ZlNGMwMmApOiBgLS1jb2xvci1yZXBvcnQtb3JhbmdlYCwgZGF0YSB2aXN1YWxpemF0aW9uCgojIyMgUmVwb3J0IFBhbGV0dGUKLSAqKlJlcG9ydCBCbHVlKiogKGAjNjViNWZmYCk6IGAtLWNvbG9yLXJlcG9ydC1ibHVlYAotICoqUmVwb3J0IEdyZWVuKiogKGAjMGJkZjUwYCk6IGAtLWNvbG9yLXJlcG9ydC1ncmVlbmAKLSAqKlJlcG9ydCBSZWQqKiAoYCNjNDFjMWNgKTogYC0tY29sb3ItcmVwb3J0LXJlZGAKLSAqKlJlcG9ydCBQaW5rKiogKGAjZmYyMDY3YCk6IGAtLWNvbG9yLXJlcG9ydC1waW5rYAotICoqUmVwb3J0IExpbWUqKiAoYCNiM2UwMWNgKTogYC0tY29sb3ItcmVwb3J0LWxpbWUtMzAwYAotICoqR3JlZW4qKiAoYCMwMGRhMDBgKTogYC0tY29sb3ItZ3JlZW5gCi0gKipEZWVwIEJsdWUqKiAoYCMwMDA3Y2JgKTogRGVlcCBibHVlIGFjY2VudAoKIyMjIE5ldXRyYWwgU2NhbGUgKFdhcm0pCi0gKipCbGFjayA4MCoqIChgIzMxMzEzMGApOiBgLS13c2MtY29sb3ItYmxhY2stODBgLCBkYXJrIG5ldXRyYWwKLSAqKkJsYWNrIDYwKiogKGAjNjI2MjYwYCk6IGAtLXdzYy1jb2xvci1ibGFjay02MGAsIG1pZCBuZXV0cmFsCi0gKipCbGFjayA1MCoqIChgIzdiN2I3OGApOiBgLS13c2MtY29sb3ItYmxhY2stNTBgLCBtdXRlZCB0ZXh0Ci0gKipDb250ZW50IFRlcnRpYXJ5KiogKGAjOWM5ZmE1YCk6IGAtLXdzYy1jb2xvci1jb250ZW50LXRlcnRpYXJ5YAotICoqT2F0IEJvcmRlcioqIChgI2RlZGJkNmApOiBXYXJtIGJvcmRlciBjb2xvcgotICoqV2FybSBTYW5kKiogKGAjZDNjZWM2YCk6IExpZ2h0IHdhcm0gbmV1dHJhbAoKIyMgMy4gVHlwb2dyYXBoeSBSdWxlcwoKIyMjIEZvbnQgRmFtaWxpZXMKLSAqKlByaW1hcnkqKjogYFNhYW5zYCwgZmFsbGJhY2tzOiBgU2FhbnMgRmFsbGJhY2ssIHVpLXNhbnMtc2VyaWYsIHN5c3RlbS11aWAKLSAqKlNlcmlmKio6IGBTZXJyaWZgLCBmYWxsYmFja3M6IGBTZXJyaWYgRmFsbGJhY2ssIHVpLXNlcmlmLCBHZW9yZ2lhYAotICoqTW9ub3NwYWNlKio6IGBTYWFuc01vbm9gLCBmYWxsYmFja3M6IGBTYWFuc01vbm8gRmFsbGJhY2ssIHVpLW1vbm9zcGFjZWAKLSAqKlVJKio6IGBNZWRpdW1MTGAgLyBgTExNZWRpdW1gLCBmYWxsYmFja3M6IGBzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW1gCgojIyMgSGllcmFyY2h5Cgp8IFJvbGUgfCBGb250IHwgU2l6ZSB8IFdlaWdodCB8IExpbmUgSGVpZ2h0IHwgTGV0dGVyIFNwYWNpbmcgfAp8LS0tLS0tfC0tLS0tLXwtLS0tLS18LS0tLS0tLS18LS0tLS0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tLS0tfAp8IERpc3BsYXkgSGVybyB8IFNhYW5zIHwgODBweCB8IDQwMCB8IDEuMDAgKHRpZ2h0KSB8IC0yLjRweCB8CnwgU2VjdGlvbiBIZWFkaW5nIHwgU2FhbnMgfCA1NHB4IHwgNDAwIHwgMS4wMCB8IC0xLjZweCB8CnwgU3ViLWhlYWRpbmcgfCBTYWFucyB8IDQwcHggfCA0MDAgfCAxLjAwIHwgLTEuMnB4IHwKfCBDYXJkIFRpdGxlIHwgU2FhbnMgfCAzMnB4IHwgNDAwIHwgMS4wMCB8IC0wLjk2cHggfAp8IEZlYXR1cmUgVGl0bGUgfCBTYWFucyB8IDI0cHggfCA0MDAgfCAxLjAwIHwgLTAuNDhweCB8CnwgQm9keSBFbXBoYXNpcyB8IFNhYW5zIHwgMjBweCB8IDQwMCB8IDAuOTUgfCAtMC4ycHggfAp8IE5hdiAvIFVJIHwgU2FhbnMgfCAxOHB4IHwgNDAwIHwgMS4wMCB8IG5vcm1hbCB8CnwgQm9keSB8IFNhYW5zIHwgMTZweCB8IDQwMCB8IDEuNTAgfCBub3JtYWwgfAp8IEJvZHkgTGlnaHQgfCBTYWFucyB8IDE0cHggfCAzMDAgfCAxLjQwIHwgbm9ybWFsIHwKfCBCdXR0b24gfCBTYWFucyB8IDE2cHggLyAxNHB4IHwgNDAwIHwgMS41MCAvIDEuNDMgfCBub3JtYWwgfAp8IEJ1dHRvbiBCb2xkIHwgTExNZWRpdW0gfCAxNnB4IHwgNzAwIHwgMS4yMCB8IDAuMTZweCB8CnwgU2VyaWYgQm9keSB8IFNlcnJpZiB8IDE2cHggfCAzMDAgfCAxLjQwIHwgLTAuMTZweCB8CnwgTW9ubyBMYWJlbCB8IFNhYW5zTW9ubyB8IDEycHggfCA0MDDigJM1MDAgfCAxLjAw4oCTMS4zMCB8IDAuNnB44oCTMS4ycHggdXBwZXJjYXNlIHwKCiMjIDQuIENvbXBvbmVudCBTdHlsaW5ncwoKIyMjIEJ1dHRvbnMKCioqUHJpbWFyeSBEYXJrKioKLSBCYWNrZ3JvdW5kOiBgIzExMTExMWAKLSBUZXh0OiBgI2ZmZmZmZmAKLSBQYWRkaW5nOiAwcHggMTRweAotIFJhZGl1czogNHB4Ci0gSG92ZXI6IHdoaXRlIGJhY2tncm91bmQsIGRhcmsgdGV4dCwgc2NhbGUoMS4xKQotIEFjdGl2ZTogZ3JlZW4gYmFja2dyb3VuZCAoYCMyYzY0MTVgKSwgc2NhbGUoMC44NSkKCioqT3V0bGluZWQqKgotIEJhY2tncm91bmQ6IHRyYW5zcGFyZW50Ci0gVGV4dDogYCMxMTExMTFgCi0gQm9yZGVyOiBgMXB4IHNvbGlkICMxMTExMTFgCi0gUmFkaXVzOiA0cHgKLSBTYW1lIHNjYWxlIGhvdmVyL2FjdGl2ZSBiZWhhdmlvcgoKKipXYXJtIENhcmQgQnV0dG9uKioKLSBCYWNrZ3JvdW5kOiBgI2ZhZjlmNmAKLSBUZXh0OiBgIzExMTExMWAKLSBQYWRkaW5nOiAxNnB4Ci0gQm9yZGVyOiBgMXB4IHNvbGlkIG9rbGFiKC4uLiAvIDAuMSlgCgojIyMgQ2FyZHMgJiBDb250YWluZXJzCi0gQmFja2dyb3VuZDogYCNmYWY5ZjZgICh3YXJtIGNyZWFtKQotIEJvcmRlcjogYDFweCBzb2xpZCAjZGVkYmQ2YCAod2FybSBvYXQpCi0gUmFkaXVzOiA4cHgKLSBObyB2aXNpYmxlIHNoYWRvd3MKCiMjIyBOYXZpZ2F0aW9uCi0gU2FhbnMgMTZweCBmb3IgbGlua3MKLSBPZmYtYmxhY2sgdGV4dCBvbiB3aGl0ZQotIFNtYWxsIDRweOKAkzZweCByYWRpdXMgYnV0dG9ucwotIE9yYW5nZSBGaW4gYWNjZW50IGZvciBBSSBmZWF0dXJlcwoKIyMgNS4gTGF5b3V0IFByaW5jaXBsZXMKCiMjIyBTcGFjaW5nOiA4cHgsIDEwcHgsIDEycHgsIDE0cHgsIDE2cHgsIDIwcHgsIDI0cHgsIDMycHgsIDQwcHgsIDQ4cHgsIDYwcHgsIDY0cHgsIDgwcHgsIDk2cHgKIyMjIEJvcmRlciBSYWRpdXM6IDRweCAoYnV0dG9ucyksIDZweCAobmF2IGl0ZW1zKSwgOHB4IChjYXJkcywgY29udGFpbmVycykKCiMjIDYuIERlcHRoICYgRWxldmF0aW9uCk1pbmltYWwgc2hhZG93cy4gRGVwdGggdGhyb3VnaCB3YXJtIGJvcmRlciBjb2xvcnMgYW5kIHN1cmZhY2UgdGludHMuCgojIyA3LiBEbydzIGFuZCBEb24ndHMKCiMjIyBEbwotIFVzZSBTYWFucyB3aXRoIDEuMDAgbGluZS1oZWlnaHQgYW5kIG5lZ2F0aXZlIHRyYWNraW5nIG9uIGFsbCBoZWFkaW5ncwotIEFwcGx5IDRweCByYWRpdXMgb24gYnV0dG9ucyDigJQgc2hhcnAgZ2VvbWV0cnkgaXMgdGhlIGlkZW50aXR5Ci0gVXNlIEZpbiBPcmFuZ2UgKCNmZjU2MDApIGZvciBBSS9icmFuZCBhY2NlbnQgb25seQotIEFwcGx5IHNjYWxlKDEuMSkgaG92ZXIgb24gYnV0dG9ucwotIFVzZSB3YXJtIG5ldXRyYWxzICgjZmFmOWY2LCAjZGVkYmQ2KQoKIyMjIERvbid0Ci0gRG9uJ3Qgcm91bmQgYnV0dG9ucyBiZXlvbmQgNHB4Ci0gRG9uJ3QgdXNlIEZpbiBPcmFuZ2UgZGVjb3JhdGl2ZWx5Ci0gRG9uJ3QgdXNlIGNvb2wgZ3JheSBib3JkZXJzIOKAlCBhbHdheXMgd2FybSBvYXQgdG9uZXMKLSBEb24ndCBza2lwIHRoZSBuZWdhdGl2ZSB0cmFja2luZyBvbiBoZWFkaW5ncwoKIyMgOC4gUmVzcG9uc2l2ZSBCZWhhdmlvcgpCcmVha3BvaW50czogNDI1cHgsIDUzMHB4LCA2MDBweCwgNjQwcHgsIDc2OHB4LCA4OTZweAoKIyMgOS4gQWdlbnQgUHJvbXB0IEd1aWRlCgojIyMgUXVpY2sgQ29sb3IgUmVmZXJlbmNlCi0gVGV4dDogT2ZmIEJsYWNrIChgIzExMTExMWApCi0gQmFja2dyb3VuZDogV2FybSBDcmVhbSAoYCNmYWY5ZjZgKQotIEFjY2VudDogRmluIE9yYW5nZSAoYCNmZjU2MDBgKQotIEJvcmRlcjogT2F0IChgI2RlZGJkNmApCi0gTXV0ZWQ6IGAjN2I3Yjc4YAoKIyMjIEV4YW1wbGUgQ29tcG9uZW50IFByb21wdHMKLSAiQ3JlYXRlIGhlcm86IHdhcm0gY3JlYW0gKCNmYWY5ZjYpIGJhY2tncm91bmQuIFNhYW5zIDgwcHggd2VpZ2h0IDQwMCwgbGluZS1oZWlnaHQgMS4wMCwgbGV0dGVyLXNwYWNpbmcgLTIuNHB4LCAjMTExMTExLiBEYXJrIGJ1dHRvbiAoIzExMTExMSwgNHB4IHJhZGl1cykuIEhvdmVyOiBzY2FsZSgxLjEpLCB3aGl0ZSBiZy4iCg==
+# Design System: Intercom
+
+
+> **Hermes Agent — Implementation Notes**
+>
+> The original site uses proprietary fonts. For self-contained HTML output, use these CDN substitutes:
+> - **Primary:** `Inter` | **Mono:** `system monospace stack`
+> - **Font stack (CSS):** `font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;`
+> - **Mono stack (CSS):** `font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;`
+> ```html
+> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+> ```
+> Use `write_file` to create HTML, serve via `generative-widgets` skill (cloudflared tunnel).
+> Verify visual accuracy with `browser_vision` after generating.
+
+## 1. Visual Theme & Atmosphere
+
+Intercom's website is a warm, confident customer service platform that communicates "AI-first helpdesk" through a clean, editorial design language. The page operates on a warm off-white canvas (`#faf9f6`) with off-black (`#111111`) text, creating an intimate, magazine-like reading experience. The signature Fin Orange (`#ff5600`) — named after Intercom's AI agent — serves as the singular vibrant accent against the warm neutral palette.
+
+The typography uses Saans — a custom geometric sans-serif with aggressive negative letter-spacing (-2.4px at 80px, -0.48px at 24px) and a consistent 1.00 line-height across all heading sizes. This creates ultra-compressed, billboard-like headlines that feel engineered and precise. Serrif provides the serif companion for editorial moments, and SaansMono handles code and uppercase technical labels. MediumLL and LLMedium appear for specific UI contexts, creating a rich five-font ecosystem.
+
+What distinguishes Intercom is its remarkably sharp geometry — 4px border-radius on buttons creates near-rectangular interactive elements that feel industrial and precise, contrasting with the warm surface colors. Button hover states use `scale(1.1)` expansion, creating a physical "growing" interaction. The border system uses warm oat tones (`#dedbd6`) and oklab-based opacity values for sophisticated color management.
+
+**Key Characteristics:**
+- Warm off-white canvas (`#faf9f6`) with oat-toned borders (`#dedbd6`)
+- Saans font with extreme negative tracking (-2.4px at 80px) and 1.00 line-height
+- Fin Orange (`#ff5600`) as singular brand accent
+- Sharp 4px border-radius — near-rectangular buttons and elements
+- Scale(1.1) hover with scale(0.85) active — physical button interaction
+- SaansMono uppercase labels with wide tracking (0.6px–1.2px)
+- Rich multi-color report palette (blue, green, red, pink, lime, orange)
+- oklab color values for sophisticated opacity management
+
+## 2. Color Palette & Roles
+
+### Primary
+- **Off Black** (`#111111`): `--color-off-black`, primary text, button backgrounds
+- **Pure White** (`#ffffff`): `--wsc-color-content-primary`, primary surface
+- **Warm Cream** (`#faf9f6`): Button backgrounds, card surfaces
+- **Fin Orange** (`#ff5600`): `--color-fin`, primary brand accent
+- **Report Orange** (`#fe4c02`): `--color-report-orange`, data visualization
+
+### Report Palette
+- **Report Blue** (`#65b5ff`): `--color-report-blue`
+- **Report Green** (`#0bdf50`): `--color-report-green`
+- **Report Red** (`#c41c1c`): `--color-report-red`
+- **Report Pink** (`#ff2067`): `--color-report-pink`
+- **Report Lime** (`#b3e01c`): `--color-report-lime-300`
+- **Green** (`#00da00`): `--color-green`
+- **Deep Blue** (`#0007cb`): Deep blue accent
+
+### Neutral Scale (Warm)
+- **Black 80** (`#313130`): `--wsc-color-black-80`, dark neutral
+- **Black 60** (`#626260`): `--wsc-color-black-60`, mid neutral
+- **Black 50** (`#7b7b78`): `--wsc-color-black-50`, muted text
+- **Content Tertiary** (`#9c9fa5`): `--wsc-color-content-tertiary`
+- **Oat Border** (`#dedbd6`): Warm border color
+- **Warm Sand** (`#d3cec6`): Light warm neutral
+
+## 3. Typography Rules
+
+### Font Families
+- **Primary**: `Saans`, fallbacks: `Saans Fallback, ui-sans-serif, system-ui`
+- **Serif**: `Serrif`, fallbacks: `Serrif Fallback, ui-serif, Georgia`
+- **Monospace**: `SaansMono`, fallbacks: `SaansMono Fallback, ui-monospace`
+- **UI**: `MediumLL` / `LLMedium`, fallbacks: `system-ui, -apple-system`
+
+### Hierarchy
+
+| Role | Font | Size | Weight | Line Height | Letter Spacing |
+|------|------|------|--------|-------------|----------------|
+| Display Hero | Saans | 80px | 400 | 1.00 (tight) | -2.4px |
+| Section Heading | Saans | 54px | 400 | 1.00 | -1.6px |
+| Sub-heading | Saans | 40px | 400 | 1.00 | -1.2px |
+| Card Title | Saans | 32px | 400 | 1.00 | -0.96px |
+| Feature Title | Saans | 24px | 400 | 1.00 | -0.48px |
+| Body Emphasis | Saans | 20px | 400 | 0.95 | -0.2px |
+| Nav / UI | Saans | 18px | 400 | 1.00 | normal |
+| Body | Saans | 16px | 400 | 1.50 | normal |
+| Body Light | Saans | 14px | 300 | 1.40 | normal |
+| Button | Saans | 16px / 14px | 400 | 1.50 / 1.43 | normal |
+| Button Bold | LLMedium | 16px | 700 | 1.20 | 0.16px |
+| Serif Body | Serrif | 16px | 300 | 1.40 | -0.16px |
+| Mono Label | SaansMono | 12px | 400–500 | 1.00–1.30 | 0.6px–1.2px uppercase |
+
+## 4. Component Stylings
+
+### Buttons
+
+**Primary Dark**
+- Background: `#111111`
+- Text: `#ffffff`
+- Padding: 0px 14px
+- Radius: 4px
+- Hover: white background, dark text, scale(1.1)
+- Active: green background (`#2c6415`), scale(0.85)
+
+**Outlined**
+- Background: transparent
+- Text: `#111111`
+- Border: `1px solid #111111`
+- Radius: 4px
+- Same scale hover/active behavior
+
+**Warm Card Button**
+- Background: `#faf9f6`
+- Text: `#111111`
+- Padding: 16px
+- Border: `1px solid oklab(... / 0.1)`
+
+### Cards & Containers
+- Background: `#faf9f6` (warm cream)
+- Border: `1px solid #dedbd6` (warm oat)
+- Radius: 8px
+- No visible shadows
+
+### Navigation
+- Saans 16px for links
+- Off-black text on white
+- Small 4px–6px radius buttons
+- Orange Fin accent for AI features
+
+## 5. Layout Principles
+
+### Spacing: 8px, 10px, 12px, 14px, 16px, 20px, 24px, 32px, 40px, 48px, 60px, 64px, 80px, 96px
+### Border Radius: 4px (buttons), 6px (nav items), 8px (cards, containers)
+
+## 6. Depth & Elevation
+Minimal shadows. Depth through warm border colors and surface tints.
+
+## 7. Do's and Don'ts
+
+### Do
+- Use Saans with 1.00 line-height and negative tracking on all headings
+- Apply 4px radius on buttons — sharp geometry is the identity
+- Use Fin Orange (#ff5600) for AI/brand accent only
+- Apply scale(1.1) hover on buttons
+- Use warm neutrals (#faf9f6, #dedbd6)
+
+### Don't
+- Don't round buttons beyond 4px
+- Don't use Fin Orange decoratively
+- Don't use cool gray borders — always warm oat tones
+- Don't skip the negative tracking on headings
+
+## 8. Responsive Behavior
+Breakpoints: 425px, 530px, 600px, 640px, 768px, 896px
+
+## 9. Agent Prompt Guide
+
+### Quick Color Reference
+- Text: Off Black (`#111111`)
+- Background: Warm Cream (`#faf9f6`)
+- Accent: Fin Orange (`#ff5600`)
+- Border: Oat (`#dedbd6`)
+- Muted: `#7b7b78`
+
+### Example Component Prompts
+- "Create hero: warm cream (#faf9f6) background. Saans 80px weight 400, line-height 1.00, letter-spacing -2.4px, #111111. Dark button (#111111, 4px radius). Hover: scale(1.1), white bg."

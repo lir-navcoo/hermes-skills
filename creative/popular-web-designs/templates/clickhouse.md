@@ -1,1 +1,294 @@
-IyBEZXNpZ24gU3lzdGVtOiBDbGlja0hvdXNlCgoKPiAqKkhlcm1lcyBBZ2VudCDigJQgSW1wbGVtZW50YXRpb24gTm90ZXMqKgo+Cj4gVGhlIG9yaWdpbmFsIHNpdGUgdXNlcyBwcm9wcmlldGFyeSBmb250cy4gRm9yIHNlbGYtY29udGFpbmVkIEhUTUwgb3V0cHV0LCB1c2UgdGhlc2UgQ0ROIHN1YnN0aXR1dGVzOgo+IC0gKipQcmltYXJ5OioqIGBJbnRlcmAgfCAqKk1vbm86KiogYEpldEJyYWlucyBNb25vYAo+IC0gKipGb250IHN0YWNrIChDU1MpOioqIGBmb250LWZhbWlseTogJ0ludGVyJywgc3lzdGVtLXVpLCAtYXBwbGUtc3lzdGVtLCAnU2Vnb2UgVUknLCBSb2JvdG8sIHNhbnMtc2VyaWY7YAo+IC0gKipNb25vIHN0YWNrIChDU1MpOioqIGBmb250LWZhbWlseTogJ0pldEJyYWlucyBNb25vJywgdWktbW9ub3NwYWNlLCBTRk1vbm8tUmVndWxhciwgTWVubG8sIE1vbmFjbywgQ29uc29sYXMsICdMaWJlcmF0aW9uIE1vbm8nLCAnQ291cmllciBOZXcnLCBtb25vc3BhY2U7YAo+IGBgYGh0bWwKPiA8bGluayBocmVmPSJodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2NzczI/ZmFtaWx5PUludGVyOndnaHRAMzAwOzQwMDs1MDA7NjAwOzcwMCZmYW1pbHk9SmV0QnJhaW5zK01vbm86d2dodEA0MDA7NTAwJmRpc3BsYXk9c3dhcCIgcmVsPSJzdHlsZXNoZWV0Ij4KPiBgYGAKPiBVc2UgYHdyaXRlX2ZpbGVgIHRvIGNyZWF0ZSBIVE1MLCBzZXJ2ZSB2aWEgYGdlbmVyYXRpdmUtd2lkZ2V0c2Agc2tpbGwgKGNsb3VkZmxhcmVkIHR1bm5lbCkuCj4gVmVyaWZ5IHZpc3VhbCBhY2N1cmFjeSB3aXRoIGBicm93c2VyX3Zpc2lvbmAgYWZ0ZXIgZ2VuZXJhdGluZy4KCiMjIDEuIFZpc3VhbCBUaGVtZSAmIEF0bW9zcGhlcmUKCkNsaWNrSG91c2UncyBpbnRlcmZhY2UgaXMgYSBoaWdoLXBlcmZvcm1hbmNlIGNvY2twaXQgcmVuZGVyZWQgaW4gYWNpZCB5ZWxsb3ctZ3JlZW4gb24gb2JzaWRpYW4gYmxhY2sg4oCUIGEgZGVzaWduIHRoYXQgc2NyZWFtcyAic3BlZWQiIGJlZm9yZSB5b3UgcmVhZCBhIHNpbmdsZSB3b3JkLiBUaGUgZW50aXJlIGV4cGVyaWVuY2UgbGl2ZXMgaW4gZGFya25lc3M6IHB1cmUgYmxhY2sgYmFja2dyb3VuZHMgKGAjMDAwMDAwYCkgd2l0aCBkYXJrIGNoYXJjb2FsIGNhcmRzIChgIzQxNDE0MWAgYm9yZGVycykgY3JlYXRpbmcgYSB0ZXJtaW5hbC1ncmFkZSBhZXN0aGV0aWMgd2hlcmUgdGhlIG9ubHkgY2hyb21hdGljIGludGVycnVwdGlvbiBpcyB0aGUgc2lnbmF0dXJlIG5lb24geWVsbG93LWdyZWVuIChgI2ZhZmY2OWApIHRoYXQgc2xhc2hlcyBhY3Jvc3MgQ1RBcywgYm9yZGVycywgYW5kIGhpZ2hsaWdodGVkIG1vbWVudHMgbGlrZSBhIGhpZ2hsaWdodGVyIHBlbiBvbiBhIGRhcmsgY29uc29sZS4KClRoZSB0eXBvZ3JhcGh5IGlzIGFnZ3Jlc3NpdmVseSBoZWF2eSDigJQgSW50ZXIgYXQgd2VpZ2h0IDkwMCAoQmxhY2spIGZvciB0aGUgaGVybyBoZWFkbGluZSBhdCA5NnB4IGNyZWF0ZXMgdGV4dCBibG9ja3MgdGhhdCBmZWVsIGxpa2UgdGhleSBoYXZlIHBoeXNpY2FsIG1hc3MuIFRoaXMgImRhdGFiYXNlIGZvciBBSSIgc2l0ZSBjb21tdW5pY2F0ZXMgcmF3IHBvd2VyIHRocm91Z2ggdmlzdWFsIHdlaWdodDogdGhpY2sgdHlwZSwgaGlnaC1jb250cmFzdCBuZW9uIGFjY2VudHMsIGFuZCBwZXJmb3JtYW5jZSBzdGF0cyBkaXNwbGF5ZWQgYXMgb3ZlcnNpemVkIG51bWJlcnMuIFRoZXJlJ3Mgbm90aGluZyBzdWJ0bGUgYWJvdXQgQ2xpY2tIb3VzZSdzIGRlc2lnbiwgYW5kIHRoYXQncyBlbnRpcmVseSB0aGUgcG9pbnQg4oCUIGl0IG1pcnJvcnMgdGhlIHByb2R1Y3QncyBwcm9taXNlIG9mIGV4dHJlbWUgc3BlZWQgYW5kIHBlcmZvcm1hbmNlLgoKV2hhdCBtYWtlcyBDbGlja0hvdXNlIGRpc3RpbmN0aXZlIGlzIHRoZSBlbGVjdHJpZnlpbmcgdGVuc2lvbiBiZXR3ZWVuIHRoZSBuZWFyLWJsYWNrIGNhbnZhcyBhbmQgdGhlIG5lb24geWVsbG93LWdyZWVuIGFjY2VudC4gVGhpcyBjb2xvciBjb21iaW5hdGlvbiAoYCNmYWZmNjlgIG9uIGAjMDAwMDAwYCkgY3JlYXRlcyBvbmUgb2YgdGhlIGhpZ2hlc3QtY29udHJhc3QgcGFpcmluZ3MgaW4gYW55IHRlY2ggYnJhbmQsIG1ha2luZyBldmVyeSBDVEEgYnV0dG9uLCBldmVyeSBoaWdobGlnaHRlZCBjYXJkLCBhbmQgZXZlcnkgYWNjZW50IGJvcmRlciBpbXBvc3NpYmxlIHRvIG1pc3MuIFN1cHBvcnRpbmcgdGhpcyBpcyBhIGZvcmVzdCBncmVlbiAoYCMxNjY1MzRgKSBmb3Igc2Vjb25kYXJ5IENUQXMgdGhhdCBhZGRzIGRlcHRoIHRvIHRoZSBhY3Rpb24gaGllcmFyY2h5IHdpdGhvdXQgY29tcGV0aW5nIHdpdGggdGhlIG5lb24uCgoqKktleSBDaGFyYWN0ZXJpc3RpY3M6KioKLSBQdXJlIGJsYWNrIGNhbnZhcyAoIzAwMDAwMCkgd2l0aCBuZW9uIHllbGxvdy1ncmVlbiAoI2ZhZmY2OSkgYWNjZW50IOKAlCBtYXhpbXVtIGNvbnRyYXN0Ci0gRXh0cmEtaGVhdnkgZGlzcGxheSB0eXBvZ3JhcGh5OiBJbnRlciBhdCB3ZWlnaHQgOTAwIChCbGFjaykgdXAgdG8gOTZweAotIERhcmsgY2hhcmNvYWwgY2FyZCBzeXN0ZW0gd2l0aCAjNDE0MTQxIGJvcmRlcnMgYXQgODAlIG9wYWNpdHkKLSBGb3Jlc3QgZ3JlZW4gKCMxNjY1MzQpIHNlY29uZGFyeSBDVEEgYnV0dG9ucwotIFBlcmZvcm1hbmNlIHN0YXRzIGFzIG92ZXJzaXplZCBkaXNwbGF5IG51bWJlcnMKLSBVcHBlcmNhc2UgbGFiZWxzIHdpdGggd2lkZSBsZXR0ZXItc3BhY2luZyAoMS40cHgpIGZvciBuYXZpZ2F0aW9uIHN0cnVjdHVyZQotIEFjdGl2ZS9wcmVzc2VkIHN0YXRlIHNoaWZ0cyB0ZXh0IHRvIHBhbGUgeWVsbG93ICgjZjRmNjkyKQotIEFsbCBsaW5rcyBob3ZlciB0byBuZW9uIHllbGxvdy1ncmVlbiDigJQgdW5pZmllZCBpbnRlcmFjdGl2ZSBzaWduYWwKLSBJbnNldCBzaGFkb3dzIG9uIHNlbGVjdCBlbGVtZW50cyBjcmVhdGluZyAicHJlc3NlZCBpbnRvIHRoZSBzdXJmYWNlIiBkZXB0aAoKIyMgMi4gQ29sb3IgUGFsZXR0ZSAmIFJvbGVzCgojIyMgUHJpbWFyeQotICoqTmVvbiBWb2x0KiogKGAjZmFmZjY5YCk6IFRoZSBzaWduYXR1cmUgYnJhbmQgY29sb3Ig4oCUIGEgdml2aWQgYWNpZCB5ZWxsb3ctZ3JlZW4gdGhhdCdzIHRoZSBzb2xlIGNocm9tYXRpYyBhY2NlbnQgb24gdGhlIGJsYWNrIGNhbnZhcy4gVXNlZCBmb3IgcHJpbWFyeSBDVEFzLCBhY2NlbnQgYm9yZGVycywgbGluayBob3ZlcnMsIGFuZCBoaWdobGlnaHRlZCBtb21lbnRzLgotICoqRm9yZXN0IEdyZWVuKiogKGAjMTY2NTM0YCk6IFNlY29uZGFyeSBDVEEgY29sb3Ig4oCUIGEgZGVlcCwgc2F0dXJhdGVkIGdyZWVuIGZvciAiR2V0IFN0YXJ0ZWQiIGFuZCBwcmltYXJ5IGFjdGlvbiBidXR0b25zIHRoYXQgbmVlZCBkaXN0aW5jdGlvbiBmcm9tIHRoZSBuZW9uLgotICoqRGFyayBGb3Jlc3QqKiAoYCMxNDU3MmZgKTogQSBkYXJrZXIgZ3JlZW4gdmFyaWFudCBmb3IgYm9yZGVycyBhbmQgc2Vjb25kYXJ5IGFjY2VudHMuCgojIyMgU2Vjb25kYXJ5ICYgQWNjZW50Ci0gKipQYWxlIFllbGxvdyoqIChgI2Y0ZjY5MmApOiBBY3RpdmUvcHJlc3NlZCBzdGF0ZSB0ZXh0IGNvbG9yIOKAlCBhIHNvZnRlciwgbW9yZSBtdXRlZCB2ZXJzaW9uIG9mIE5lb24gVm9sdCBmb3Igc3RhdGUgZmVlZGJhY2suCi0gKipCb3JkZXIgT2xpdmUqKiAoYCM0ZjUxMDBgKTogQSBkYXJrIG9saXZlLXllbGxvdyBmb3IgZ2hvc3QgYnV0dG9uIGJvcmRlcnMg4oCUIHRoZSBuZW9uJ3MgbXV0ZWQgc2libGluZy4KLSAqKk9saXZlIERhcmsqKiAoYCMxNjE2MDBgKTogVGhlIGRhcmtlc3QgbmVvbi10aW50ZWQgY29sb3IgZm9yIHN1YnRsZSBicmFuZCB0ZXh0LgoKIyMjIFN1cmZhY2UgJiBCYWNrZ3JvdW5kCi0gKipQdXJlIEJsYWNrKiogKGAjMDAwMDAwYCk6IFRoZSBwcmltYXJ5IHBhZ2UgYmFja2dyb3VuZCDigJQgYWJzb2x1dGUgYmxhY2sgZm9yIG1heGltdW0gY29udHJhc3QuCi0gKipOZWFyIEJsYWNrKiogKGAjMTQxNDE0YCk6IEJ1dHRvbiBiYWNrZ3JvdW5kcyBhbmQgc2xpZ2h0bHkgZWxldmF0ZWQgZGFyayBzdXJmYWNlcy4KLSAqKkNoYXJjb2FsKiogKGAjNDE0MTQxYCk6IFRoZSBwcmltYXJ5IGJvcmRlciBjb2xvciBhdCA4MCUgb3BhY2l0eSDigJQgdGhlIHdvcmtob3JzZSBmb3IgY2FyZCBhbmQgY29udGFpbmVyIGNvbnRhaW5tZW50LgotICoqRGVlcCBDaGFyY29hbCoqIChgIzM0MzQzNGApOiBEYXJrZXIgYm9yZGVyIHZhcmlhbnQgZm9yIHN1YnRsZSBkaXZpc2lvbiBsaW5lcy4KLSAqKkhvdmVyIEdyYXkqKiAoYCMzYTNhM2FgKTogQnV0dG9uIGhvdmVyIHN0YXRlIGJhY2tncm91bmQg4oCUIHNsaWdodGx5IGxpZ2h0ZXIgdGhhbiBOZWFyIEJsYWNrLgoKIyMjIE5ldXRyYWxzICYgVGV4dAotICoqUHVyZSBXaGl0ZSoqIChgI2ZmZmZmZmApOiBQcmltYXJ5IHRleHQgb24gZGFyayBzdXJmYWNlcy4KLSAqKlNpbHZlcioqIChgI2EwYTBhMGApOiBTZWNvbmRhcnkgYm9keSB0ZXh0IGFuZCBtdXRlZCBjb250ZW50LgotICoqTWlkIEdyYXkqKiAoYCM1ODU4NThgIGF0IDI4JSk6IFN1YnRsZSBncmF5IG92ZXJsYXkgZm9yIGRlcHRoIGVmZmVjdHMuCi0gKipCb3JkZXIgR3JheSoqIChgI2U1ZTdlYmApOiBMaWdodCBib3JkZXIgdmFyaWFudCAodXNlZCBpbiByYXJlIGxpZ2h0IGNvbnRleHRzKS4KCiMjIyBHcmFkaWVudCBTeXN0ZW0KLSAqKk5vbmUgaW4gdGhlIHRyYWRpdGlvbmFsIHNlbnNlLioqIENsaWNrSG91c2UgdXNlcyBmbGF0IGNvbG9yIGJsb2NrcyBhbmQgaGlnaC1jb250cmFzdCBib3JkZXJzLiBUaGUgImdyYWRpZW50IiBpcyB0aGUgY29udHJhc3QgaXRzZWxmIOKAlCBuZW9uIHllbGxvdy1ncmVlbiBhZ2FpbnN0IHB1cmUgYmxhY2sgY3JlYXRlcyBhIHZpc3VhbCBpbnRlbnNpdHkgdGhhdCBncmFkaWVudHMgd291bGQgZGlsdXRlLgoKIyMgMy4gVHlwb2dyYXBoeSBSdWxlcwoKIyMjIEZvbnQgRmFtaWx5Ci0gKipQcmltYXJ5Kio6IGBJbnRlcmAgKE5leHQuanMgb3B0aW1pemVkIHZhcmlhbnQgYF9fSW50ZXJfZDFiOGVlYCkKLSAqKlNlY29uZGFyeSBEaXNwbGF5Kio6IGBCYXNpZXJgIChgX19iYXNpZXJfYTU4YjY1YCksIHdpdGggZmFsbGJhY2tzOiBgQXJpYWwsIEhlbHZldGljYWAKLSAqKkNvZGUqKjogYEluY29uc29sYXRhYCAoYF9fSW5jb25zb2xhdGFfYTI1ZjYyYCkKCiMjIyBIaWVyYXJjaHkKCnwgUm9sZSB8IEZvbnQgfCBTaXplIHwgV2VpZ2h0IHwgTGluZSBIZWlnaHQgfCBMZXR0ZXIgU3BhY2luZyB8IE5vdGVzIHwKfC0tLS0tLXwtLS0tLS18LS0tLS0tfC0tLS0tLS0tfC0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tLXwtLS0tLS0tfAp8IERpc3BsYXkgTWVnYSB8IEludGVyIHwgOTZweCAoNnJlbSkgfCA5MDAgfCAxLjAwICh0aWdodCkgfCBub3JtYWwgfCBNYXhpbXVtIGltcGFjdCwgZXh0cmEtaGVhdnkgfAp8IERpc3BsYXkgLyBIZXJvIHwgSW50ZXIgfCA3MnB4ICg0LjVyZW0pIHwgNzAwIHwgMS4wMCAodGlnaHQpIHwgbm9ybWFsIHwgU2VjdGlvbiBoZXJvIHRpdGxlcyB8CnwgRmVhdHVyZSBIZWFkaW5nIHwgQmFzaWVyIHwgMzZweCAoMi4yNXJlbSkgfCA2MDAgfCAxLjMwICh0aWdodCkgfCBub3JtYWwgfCBGZWF0dXJlIHNlY3Rpb24gYW5jaG9ycyB8CnwgU3ViLWhlYWRpbmcgfCBJbnRlciAvIEJhc2llciB8IDI0cHggKDEuNXJlbSkgfCA2MDDigJM3MDAgfCAxLjE34oCTMS4zOCB8IG5vcm1hbCB8IENhcmQgaGVhZGluZ3MgfAp8IEZlYXR1cmUgVGl0bGUgfCBJbnRlciAvIEJhc2llciB8IDIwcHggKDEuMjVyZW0pIHwgNjAw4oCTNzAwIHwgMS40MCB8IG5vcm1hbCB8IFNtYWxsIGZlYXR1cmUgdGl0bGVzIHwKfCBCb2R5IExhcmdlIHwgSW50ZXIgfCAxOHB4ICgxLjEzcmVtKSB8IDQwMOKAkzcwMCB8IDEuNTYgfCBub3JtYWwgfCBJbnRybyBwYXJhZ3JhcGhzLCBidXR0b24gdGV4dCB8CnwgQm9keSAvIEJ1dHRvbiB8IEludGVyIHwgMTZweCAoMXJlbSkgfCA0MDDigJM3MDAgfCAxLjUwIHwgbm9ybWFsIHwgU3RhbmRhcmQgYm9keSwgbmF2LCBidXR0b25zIHwKfCBDYXB0aW9uIHwgSW50ZXIgfCAxNHB4ICgwLjg4cmVtKSB8IDQwMOKAkzcwMCB8IDEuNDMgfCBub3JtYWwgfCBNZXRhZGF0YSwgZGVzY3JpcHRpb25zLCBsaW5rcyB8CnwgVXBwZXJjYXNlIExhYmVsIHwgSW50ZXIgfCAxNHB4ICgwLjg4cmVtKSB8IDYwMCB8IDEuNDMgfCAxLjRweCB8IFNlY3Rpb24gb3ZlcmxpbmVzLCB3aWRlLXRyYWNrZWQgfAp8IENvZGUgfCBJbmNvbnNvbGF0YSB8IDE2cHggKDFyZW0pIHwgNjAwIHwgMS41MCB8IG5vcm1hbCB8IENvZGUgYmxvY2tzLCBjb21tYW5kcyB8CnwgU21hbGwgfCBJbnRlciB8IDEycHggKDAuNzVyZW0pIHwgNTAwIHwgMS4zMyB8IG5vcm1hbCB8IFNtYWxsZXN0IHRleHQgfAp8IE1pY3JvIHwgSW50ZXIgfCAxMS4ycHggKDAuN3JlbSkgfCA1MDAgfCAxLjc5IChyZWxheGVkKSB8IG5vcm1hbCB8IFRhZ3MsIHRpbnkgbGFiZWxzIHwKCiMjIyBQcmluY2lwbGVzCi0gKipXZWlnaHQgOTAwIGlzIHRoZSB3ZWFwb24qKjogVGhlIGRpc3BsYXkgaGVhZGxpbmUgdXNlcyBJbnRlciBCbGFjayAoOTAwKSDigJQgYSB3ZWlnaHQgbW9zdCBzaXRlcyBuZXZlciB0b3VjaC4gQ29tYmluZWQgd2l0aCA5NnB4IHNpemUsIHRoaXMgY3JlYXRlcyB0ZXh0IHdpdGggYSBwaHlzaWNhbCwgYWxtb3N0IGFyY2hpdGVjdHVyYWwgcHJlc2VuY2UuCi0gKipGdWxsIHdlaWdodCBzcGVjdHJ1bSoqOiBUaGUgc3lzdGVtIHVzZXMgNDAwLCA1MDAsIDYwMCwgNzAwLCBhbmQgOTAwIOKAlCBjb3ZlcmluZyB0aGUgZnVsbCBnYW11dC4gV2VpZ2h0IElTIGhpZXJhcmNoeS4KLSAqKlVwcGVyY2FzZSB3aXRoIG1heGltdW0gdHJhY2tpbmcqKjogU2VjdGlvbiBvdmVybGluZXMgdXNlIDEuNHB4IGxldHRlci1zcGFjaW5nIOKAlCB3aWRlciB0aGFuIG1vc3Qgc3lzdGVtcyDigJQgY3JlYXRpbmcgYm9sZCBzdHJ1Y3R1cmFsIGxhYmVscyB0aGF0IHN0YW5kIG91dCBhZ2FpbnN0IHRoZSBkZW5zZSBkYXJrIGJhY2tncm91bmQuCi0gKipEdWFsIHNhbnMtc2VyaWYqKjogSW50ZXIgaGFuZGxlcyBkaXNwbGF5IGFuZCBib2R5OyBCYXNpZXIgaGFuZGxlcyBmZWF0dXJlIHNlY3Rpb24gaGVhZGluZ3MgYXQgNjAwIHdlaWdodC4gVGhpcyBjcmVhdGVzIGEgc3VidGxlIHBlcnNvbmFsaXR5IHNoaWZ0IGJldHdlZW4gImRhdGEvcGVyZm9ybWFuY2UiIChJbnRlcikgYW5kICJwcm9kdWN0L2ZlYXR1cmUiIChCYXNpZXIpIGNvbnRleHRzLgoKIyMgNC4gQ29tcG9uZW50IFN0eWxpbmdzCgojIyMgQnV0dG9ucwoKKipOZW9uIFByaW1hcnkqKgotIEJhY2tncm91bmQ6IE5lb24gVm9sdCAoYCNmYWZmNjlgKQotIFRleHQ6IE5lYXIgQmxhY2sgKGAjMTUxNTE1YCkKLSBQYWRkaW5nOiAwcHggMTZweAotIFJhZGl1czogc2hhcnAgKDRweCkKLSBCb3JkZXI6IGAxcHggc29saWQgI2ZhZmY2OWAKLSBIb3ZlcjogYmFja2dyb3VuZCBzaGlmdHMgdG8gZGFyayAoYHJnYigyOSwgMjksIDI5KWApLCB0ZXh0IHN0YXlzCi0gQWN0aXZlOiB0ZXh0IHNoaWZ0cyB0byBQYWxlIFllbGxvdyAoYCNmNGY2OTJgKQotIFRoZSBleWUtY2F0Y2hpbmcgQ1RBIOKAlCBuZW9uIG9uIGJsYWNrCgoqKkRhcmsgU29saWQqKgotIEJhY2tncm91bmQ6IE5lYXIgQmxhY2sgKGAjMTQxNDE0YCkKLSBUZXh0OiBQdXJlIFdoaXRlIChgI2ZmZmZmZmApCi0gUGFkZGluZzogMTJweCAxNnB4Ci0gUmFkaXVzOiA0cHggb3IgOHB4Ci0gQm9yZGVyOiBgMXB4IHNvbGlkICMxNDE0MTRgCi0gSG92ZXI6IGJnIHNoaWZ0cyB0byBIb3ZlciBHcmF5IChgIzNhM2EzYWApLCB0ZXh0IHRvIDgwJSBvcGFjaXR5Ci0gQWN0aXZlOiB0ZXh0IHRvIFBhbGUgWWVsbG93Ci0gVGhlIHN0YW5kYXJkIGFjdGlvbiBidXR0b24KCioqRm9yZXN0IEdyZWVuKioKLSBCYWNrZ3JvdW5kOiBGb3Jlc3QgR3JlZW4gKGAjMTY2NTM0YCkKLSBUZXh0OiBQdXJlIFdoaXRlIChgI2ZmZmZmZmApCi0gUGFkZGluZzogMTJweCAxNnB4Ci0gQm9yZGVyOiBgMXB4IHNvbGlkICMxNDE0MTRgCi0gSG92ZXI6IHNhbWUgZGFyayBzaGlmdAotIEFjdGl2ZTogUGFsZSBZZWxsb3cgdGV4dAotIFRoZSAiR2V0IFN0YXJ0ZWQiIC8gcHJpbWFyeSBjb252ZXJzaW9uIGJ1dHRvbgoKKipHaG9zdCAvIE91dGxpbmVkKioKLSBCYWNrZ3JvdW5kOiB0cmFuc3BhcmVudAotIFRleHQ6IFB1cmUgV2hpdGUgKGAjZmZmZmZmYCkKLSBQYWRkaW5nOiAwcHggMzJweAotIFJhZGl1czogNHB4Ci0gQm9yZGVyOiBgMXB4IHNvbGlkICM0ZjUxMDBgIChvbGl2ZS10aW50ZWQpCi0gSG92ZXI6IGRhcmsgYmcgc2hpZnQKLSBBY3RpdmU6IFBhbGUgWWVsbG93IHRleHQKLSBTZWNvbmRhcnkgYWN0aW9ucyB3aXRoIG5lb24tdGludGVkIGJvcmRlcgoKKipQaWxsIFRvZ2dsZSoqCi0gQmFja2dyb3VuZDogdHJhbnNwYXJlbnQKLSBSYWRpdXM6IHBpbGwgKDk5OTlweCkKLSBVc2VkIGZvciB0b2dnbGUvc3dpdGNoIGVsZW1lbnRzCgojIyMgQ2FyZHMgJiBDb250YWluZXJzCi0gQmFja2dyb3VuZDogdHJhbnNwYXJlbnQgb3IgTmVhciBCbGFjawotIEJvcmRlcjogYDFweCBzb2xpZCByZ2JhKDY1LCA2NSwgNjUsIDAuOClgIOKAlCB0aGUgc2lnbmF0dXJlIGNoYXJjb2FsIGNvbnRhaW5tZW50Ci0gUmFkaXVzOiA0cHggKHNtYWxsIGVsZW1lbnRzKSBvciA4cHggKGNhcmRzLCBjb250YWluZXJzKQotIFNoYWRvdyBMZXZlbCAxOiBzdWJ0bGUgKGByZ2JhKDAsMCwwLDAuMSkgMHB4IDFweCAzcHgsIHJnYmEoMCwwLDAsMC4xKSAwcHggMXB4IDJweCAtMXB4YCkKLSBTaGFkb3cgTGV2ZWwgMjogbWVkaXVtIChgcmdiYSgwLDAsMCwwLjEpIDBweCAxMHB4IDE1cHggLTNweCwgcmdiYSgwLDAsMCwwLjEpIDBweCA0cHggNnB4IC00cHhgKQotIFNoYWRvdyBMZXZlbCAzOiBpbnNldCAoYHJnYmEoMCwwLDAsMC4wNikgMHB4IDRweCA0cHgsIHJnYmEoMCwwLDAsMC4xNCkgMHB4IDRweCAyNXB4IGluc2V0YCkg4oCUIHRoZSAicHJlc3NlZCIgZWZmZWN0Ci0gTmVvbi1oaWdobGlnaHRlZCBjYXJkczogc2VsZWN0ZWQvYWN0aXZlIGNhcmRzIGdldCBuZW9uIHllbGxvdy1ncmVlbiBib3JkZXIgb3IgYWNjZW50CgojIyMgTmF2aWdhdGlvbgotIERhcmsgbmF2IG9uIGJsYWNrIGJhY2tncm91bmQKLSBMb2dvOiBDbGlja0hvdXNlIHdvcmRtYXJrICsgaWNvbiBpbiB5ZWxsb3cvbmVvbgotIExpbmtzOiB3aGl0ZSB0ZXh0LCBob3ZlciB0byBOZW9uIFZvbHQgKCNmYWZmNjkpCi0gQ1RBOiBOZW9uIFZvbHQgYnV0dG9uIG9yIEZvcmVzdCBHcmVlbiBidXR0b24KLSBVcHBlcmNhc2UgbGFiZWxzIGZvciBjYXRlZ29yaWVzCgojIyMgRGlzdGluY3RpdmUgQ29tcG9uZW50cwoKKipQZXJmb3JtYW5jZSBTdGF0cyoqCi0gT3ZlcnNpemVkIG51bWJlcnMgKDcycHgrLCB3ZWlnaHQgNzAw4oCTOTAwKQotIEJyaWVmIGRlc2NyaXB0aW9ucyBiZW5lYXRoCi0gSGlnaC1jb250cmFzdCBuZW9uIGFjY2VudHMgb24ga2V5IG1ldHJpY3MKLSBUaGUgcHJpbWFyeSB2aXN1YWwgcHJvb2Ygb2YgcGVyZm9ybWFuY2UgY2xhaW1zCgoqKk5lb24tSGlnaGxpZ2h0ZWQgQ2FyZCoqCi0gU3RhbmRhcmQgZGFyayBjYXJkIHdpdGggbmVvbiB5ZWxsb3ctZ3JlZW4gYm9yZGVyIGhpZ2hsaWdodAotIENyZWF0ZXMgInNlbGVjdGVkIiBvciAiZmVhdHVyZWQiIHRyZWF0bWVudAotIFRoZSBhY2NlbnQgYm9yZGVyIG1ha2VzIHRoZSBjYXJkIHBvcCBhZ2FpbnN0IHRoZSBkYXJrIGNhbnZhcwoKKipDb2RlIEJsb2NrcyoqCi0gRGFyayBzdXJmYWNlIHdpdGggSW5jb25zb2xhdGEgYXQgd2VpZ2h0IDYwMAotIE5lb24gYW5kIHdoaXRlIHN5bnRheCBoaWdobGlnaHRpbmcKLSBUZXJtaW5hbC1saWtlIGFlc3RoZXRpYwoKKipUcnVzdCBCYXIqKgotIENvbXBhbnkgbG9nb3Mgb24gZGFyayBiYWNrZ3JvdW5kCi0gTW9ub2Nocm9tZS93aGl0ZSBsb2dvIHRyZWF0bWVudAotIEhvcml6b250YWwgbGF5b3V0CgojIyA1LiBMYXlvdXQgUHJpbmNpcGxlcwoKIyMjIFNwYWNpbmcgU3lzdGVtCi0gQmFzZSB1bml0OiA4cHgKLSBTY2FsZTogMnB4LCA2cHgsIDdweCwgOHB4LCAxMHB4LCAxMnB4LCAxNnB4LCAyMHB4LCAyNHB4LCAyNXB4LCAzMnB4LCA0MHB4LCA0NHB4LCA0OHB4LCA2NHB4Ci0gQnV0dG9uIHBhZGRpbmc6IDEycHggMTZweCAoc3RhbmRhcmQpLCAwcHggMTZweCAoY29tcGFjdCksIDBweCAzMnB4ICh3aWRlIGdob3N0KQotIFNlY3Rpb24gdmVydGljYWwgc3BhY2luZzogZ2VuZXJvdXMgKDQ44oCTNjRweCkKCiMjIyBHcmlkICYgQ29udGFpbmVyCi0gTWF4IGNvbnRhaW5lciB3aWR0aDogdXAgdG8gMjIwMHB4IChleHRyYS13aWRlKSB3aXRoIHJlc3BvbnNpdmUgc2NhbGluZwotIEhlcm86IGZ1bGwtd2lkdGggZGFyayB3aXRoIG1hc3NpdmUgdHlwb2dyYXBoeQotIEZlYXR1cmUgc2VjdGlvbnM6IG11bHRpLWNvbHVtbiBjYXJkIGdyaWRzIHdpdGggZGFyayBib3JkZXJzCi0gU3RhdHM6IGhvcml6b250YWwgbWV0cmljIGJhcgotIEZ1bGwtZGFyayBwYWdlIOKAlCBubyBsaWdodCBzZWN0aW9ucwoKIyMjIFdoaXRlc3BhY2UgUGhpbG9zb3BoeQotICoqRGFyayB2b2lkIGFzIGNhbnZhcyoqOiBUaGUgcHVyZSBibGFjayBiYWNrZ3JvdW5kIHByb3ZpZGVzIGluZmluaXRlIGRlcHRoIOKAlCBlbGVtZW50cyBmbG9hdCBpbiBkYXJrbmVzcy4KLSAqKkRlbnNlIGluZm9ybWF0aW9uKio6IEZlYXR1cmUgY2FyZHMgYW5kIHN0YXRzIGFyZSBwYWNrZWQgd2l0aCBkYXRhLCByZWZsZWN0aW5nIHRoZSBkYXRhYmFzZSBwcm9kdWN0J3MgcGVyZm9ybWFuY2UgZm9jdXMuCi0gKipOZW9uIGhpZ2hsaWdodHMgYXMgd2F5ZmluZGluZyoqOiBZZWxsb3ctZ3JlZW4gYWNjZW50cyBndWlkZSB0aGUgZXllIHRocm91Z2ggdGhlIGRhcmsgaW50ZXJmYWNlIGxpa2UgcnVud2F5IGxpZ2h0cy4KCiMjIyBCb3JkZXIgUmFkaXVzIFNjYWxlCi0gU2hhcnAgKDRweCk6IEJ1dHRvbnMsIGJhZGdlcywgc21hbGwgZWxlbWVudHMsIGNvZGUgYmxvY2tzCi0gQ29tZm9ydGFibGUgKDhweCk6IENhcmRzLCBjb250YWluZXJzLCBkaXZpZGVycwotIFBpbGwgKDk5OTlweCk6IFRvZ2dsZSBidXR0b25zLCBzdGF0dXMgaW5kaWNhdG9ycwoKIyMgNi4gRGVwdGggJiBFbGV2YXRpb24KCnwgTGV2ZWwgfCBUcmVhdG1lbnQgfCBVc2UgfAp8LS0tLS0tLXwtLS0tLS0tLS0tLXwtLS0tLXwKfCBGbGF0IChMZXZlbCAwKSB8IE5vIHNoYWRvdyB8IEJsYWNrIGJhY2tncm91bmQsIHRleHQgYmxvY2tzIHwKfCBCb3JkZXJlZCAoTGV2ZWwgMSkgfCBgMXB4IHNvbGlkIHJnYmEoNjUsNjUsNjUsMC44KWAgfCBTdGFuZGFyZCBjYXJkcywgY29udGFpbmVycyB8CnwgU3VidGxlIChMZXZlbCAyKSB8IGAwcHggMXB4IDNweCByZ2JhKDAsMCwwLDAuMSlgIHwgU3VidGxlIGNhcmQgbGlmdCB8CnwgRWxldmF0ZWQgKExldmVsIDMpIHwgYDBweCAxMHB4IDE1cHggLTNweCByZ2JhKDAsMCwwLDAuMSlgIHwgRmVhdHVyZSBjYXJkcywgaG92ZXIgc3RhdGVzIHwKfCBQcmVzc2VkL0luc2V0IChMZXZlbCA0KSB8IGAwcHggNHB4IDI1cHggcmdiYSgwLDAsMCwwLjE0KSBpbnNldGAgfCBBY3RpdmUvcHJlc3NlZCBlbGVtZW50cyDigJQgInN1bmsgaW50byB0aGUgc3VyZmFjZSIgfAp8IE5lb24gSGlnaGxpZ2h0IChMZXZlbCA1KSB8IE5lb24gVm9sdCBib3JkZXIgKGAjZmFmZjY5YCkgfCBGZWF0dXJlZC9zZWxlY3RlZCBjYXJkcywgbWF4aW11bSBlbXBoYXNpcyB8CgoqKlNoYWRvdyBQaGlsb3NvcGh5Kio6IENsaWNrSG91c2UgdXNlcyBzaGFkb3dzIG9uIGEgYmxhY2sgY2FudmFzLCB3aGVyZSB0aGV5J3JlIGJhcmVseSB2aXNpYmxlIOKAlCB0aGV5IGV4aXN0IG1vcmUgZm9yIHN1YnRsZSBkaW1lbnNpb25hbGl0eSB0aGFuIG9idmlvdXMgZWxldmF0aW9uLiBUaGUgbW9zdCBkaXN0aW5jdGl2ZSBkZXB0aCBtZWNoYW5pc20gaXMgdGhlICoqaW5zZXQgc2hhZG93KiogKExldmVsIDQpLCB3aGljaCBjcmVhdGVzIGEgInByZXNzZWQgaW50byB0aGUgc3VyZmFjZSIgZWZmZWN0IHVuaXF1ZSB0byBDbGlja0hvdXNlLiBUaGUgbmVvbiBib3JkZXIgaGlnaGxpZ2h0IChMZXZlbCA1KSBpcyB0aGUgcHJpbWFyeSBhdHRlbnRpb24tZ2V0dGluZyBkZXB0aCBtZWNoYW5pc20uCgojIyA3LiBEbydzIGFuZCBEb24ndHMKCiMjIyBEbwotIFVzZSBOZW9uIFZvbHQgKCNmYWZmNjkpIGFzIHRoZSBzb2xlIGNocm9tYXRpYyBhY2NlbnQg4oCUIGl0IG11c3QgcG9wIGFnYWluc3QgcHVyZSBibGFjawotIFVzZSBJbnRlciBhdCB3ZWlnaHQgOTAwIGZvciBoZXJvIGRpc3BsYXkgdGV4dCDigJQgdGhlIGV4dHJlbWUgd2VpZ2h0IElTIHRoZSBwZXJzb25hbGl0eQotIEtlZXAgZXZlcnl0aGluZyBvbiBwdXJlIGJsYWNrICgjMDAwMDAwKSDigJQgbmV2ZXIgdXNlIGRhcmsgZ3JheSBhcyB0aGUgcGFnZSBiYWNrZ3JvdW5kCi0gVXNlIGNoYXJjb2FsIGJvcmRlcnMgKHJnYmEoNjUsNjUsNjUsMC44KSkgZm9yIGFsbCBjYXJkIGNvbnRhaW5tZW50Ci0gQXBwbHkgRm9yZXN0IEdyZWVuICgjMTY2NTM0KSBmb3IgcHJpbWFyeSBDVEEgYnV0dG9ucyDigJQgZGlzdGluY3QgZnJvbSBuZW9uIGZvciBhY3Rpb24gaGllcmFyY2h5Ci0gU2hvdyBwZXJmb3JtYW5jZSBzdGF0cyBhcyBvdmVyc2l6ZWQgZGlzcGxheSBudW1iZXJzIOKAlCBpdCdzIHRoZSBjb3JlIHZpc3VhbCBhcmd1bWVudAotIFVzZSB1cHBlcmNhc2Ugd2l0aCB3aWRlIGxldHRlci1zcGFjaW5nICgxLjRweCkgZm9yIHNlY3Rpb24gbGFiZWxzCi0gQXBwbHkgUGFsZSBZZWxsb3cgKCNmNGY2OTIpIGZvciBhY3RpdmUvcHJlc3NlZCB0ZXh0IHN0YXRlcwotIExpbmsgaG92ZXJzIHNob3VsZCBBTFdBWVMgc2hpZnQgdG8gTmVvbiBWb2x0IOKAlCB1bmlmaWVkIGludGVyYWN0aXZlIGZlZWRiYWNrCgojIyMgRG9uJ3QKLSBEb24ndCBpbnRyb2R1Y2UgYWRkaXRpb25hbCBjb2xvcnMg4oCUIHRoZSBwYWxldHRlIGlzIHN0cmljdGx5IGJsYWNrLCBuZW9uLCBncmVlbiwgYW5kIGdyYXkKLSBEb24ndCB1c2UgdGhlIG5lb24gYXMgYSBiYWNrZ3JvdW5kIGZpbGwg4oCUIGl0J3MgYW4gYWNjZW50IGFuZCBib3JkZXIgY29sb3Igb25seSAoZXhjZXB0IG9uIENUQSBidXR0b25zKQotIERvbid0IHJlZHVjZSBkaXNwbGF5IHdlaWdodCBiZWxvdyA3MDAg4oCUIGhlYXZ5IHdlaWdodCBpcyBjb3JlIHRvIHRoZSBwZXJzb25hbGl0eQotIERvbid0IHVzZSBsaWdodC93aGl0ZSBiYWNrZ3JvdW5kcyBhbnl3aGVyZSDigJQgdGhlIGVudGlyZSBleHBlcmllbmNlIGlzIGRhcmsKLSBEb24ndCByb3VuZCBjb3JuZXJzIGJleW9uZCA4cHgg4oCUIHRoZSBzaGFycCBnZW9tZXRyeSByZWZsZWN0cyBkYXRhYmFzZSBwcmVjaXNpb24KLSBEb24ndCB1c2Ugc29mdC9kaWZmdXNlZCBzaGFkb3dzIG9uIGJsYWNrIOKAlCB0aGV5J3JlIGludmlzaWJsZS4gVXNlIGJvcmRlci1iYXNlZCBkZXB0aCBpbnN0ZWFkCi0gRG9uJ3Qgc2tpcCB0aGUgaW5zZXQgc2hhZG93IG9uIGFjdGl2ZSBzdGF0ZXMg4oCUIHRoZSAicHJlc3NlZCIgZWZmZWN0IGlzIGRpc3RpbmN0aXZlCi0gRG9uJ3QgdXNlIHdhcm0gbmV1dHJhbHMg4oCUIGFsbCBncmF5cyBhcmUgcGVyZmVjdGx5IG5ldXRyYWwKCiMjIDguIFJlc3BvbnNpdmUgQmVoYXZpb3IKCiMjIyBCcmVha3BvaW50cwp8IE5hbWUgfCBXaWR0aCB8IEtleSBDaGFuZ2VzIHwKfC0tLS0tLXwtLS0tLS0tfC0tLS0tLS0tLS0tLS18CnwgTW9iaWxlIHwgPDY0MHB4IHwgU2luZ2xlIGNvbHVtbiwgc3RhY2tlZCBjYXJkcyB8CnwgU21hbGwgVGFibGV0IHwgNjQw4oCTNzY4cHggfCBNaW5vciBhZGp1c3RtZW50cyB8CnwgVGFibGV0IHwgNzY44oCTMTAyNHB4IHwgMi1jb2x1bW4gZ3JpZHMgfAp8IERlc2t0b3AgfCAxMDI04oCTMTI4MHB4IHwgU3RhbmRhcmQgbGF5b3V0IHwKfCBMYXJnZSBEZXNrdG9wIHwgMTI4MOKAkzE1MzZweCB8IEV4cGFuZGVkIGNvbnRlbnQgfAp8IFVsdHJhLXdpZGUgfCAxNTM24oCTMjIwMHB4IHwgTWF4aW11bSBjb250YWluZXIgd2lkdGggfAoKIyMjIFRvdWNoIFRhcmdldHMKLSBCdXR0b25zIHdpdGggMTJweCAxNnB4IHBhZGRpbmcgbWluaW11bQotIENhcmQgc3VyZmFjZXMgYXMgdG91Y2ggdGFyZ2V0cwotIEFkZXF1YXRlIG5hdiBsaW5rIHNwYWNpbmcKCiMjIyBDb2xsYXBzaW5nIFN0cmF0ZWd5Ci0gKipIZXJvIHRleHQqKjogOTZweCDihpIgNzJweCDihpIgNDhweCDihpIgMzZweAotICoqRmVhdHVyZSBncmlkcyoqOiBNdWx0aS1jb2x1bW4g4oaSIDIg4oaSIDEgY29sdW1uCi0gKipTdGF0cyoqOiBIb3Jpem9udGFsIOKGkiBzdGFja2VkCi0gKipOYXZpZ2F0aW9uKio6IEZ1bGwg4oaSIGhhbWJ1cmdlcgoKIyMjIEltYWdlIEJlaGF2aW9yCi0gUHJvZHVjdCBzY3JlZW5zaG90cyBtYWludGFpbiBhc3BlY3QgcmF0aW8KLSBDb2RlIGJsb2NrcyB1c2UgaG9yaXpvbnRhbCBzY3JvbGwgb24gbmFycm93IHNjcmVlbnMKLSBBbGwgaW1hZ2VzIG9uIGRhcmsgYmFja2dyb3VuZHMKCiMjIDkuIEFnZW50IFByb21wdCBHdWlkZQoKIyMjIFF1aWNrIENvbG9yIFJlZmVyZW5jZQotIEJyYW5kIEFjY2VudDogIk5lb24gVm9sdCAoI2ZhZmY2OSkiCi0gUGFnZSBCYWNrZ3JvdW5kOiAiUHVyZSBCbGFjayAoIzAwMDAwMCkiCi0gQ1RBIEdyZWVuOiAiRm9yZXN0IEdyZWVuICgjMTY2NTM0KSIKLSBDYXJkIEJvcmRlcjogIkNoYXJjb2FsIChyZ2JhKDY1LDY1LDY1LDAuOCkpIgotIFByaW1hcnkgVGV4dDogIlB1cmUgV2hpdGUgKCNmZmZmZmYpIgotIFNlY29uZGFyeSBUZXh0OiAiU2lsdmVyICgjYTBhMGEwKSIKLSBBY3RpdmUgU3RhdGU6ICJQYWxlIFllbGxvdyAoI2Y0ZjY5MikiCi0gQnV0dG9uIFN1cmZhY2U6ICJOZWFyIEJsYWNrICgjMTQxNDE0KSIKCiMjIyBFeGFtcGxlIENvbXBvbmVudCBQcm9tcHRzCi0gIkNyZWF0ZSBhIGhlcm8gc2VjdGlvbiBvbiBQdXJlIEJsYWNrICgjMDAwMDAwKSB3aXRoIGEgbWFzc2l2ZSBoZWFkbGluZSBhdCA5NnB4IEludGVyIHdlaWdodCA5MDAsIGxpbmUtaGVpZ2h0IDEuMC4gUHVyZSBXaGl0ZSB0ZXh0LiBBZGQgYSBOZW9uIFZvbHQgKCNmYWZmNjkpIENUQSBidXR0b24gKGRhcmsgdGV4dCwgNHB4IHJhZGl1cywgMHB4IDE2cHggcGFkZGluZykgYW5kIGEgZ2hvc3QgYnV0dG9uICh0cmFuc3BhcmVudCwgMXB4IHNvbGlkICM0ZjUxMDAgYm9yZGVyKS4iCi0gIkRlc2lnbiBhIGZlYXR1cmUgY2FyZCBvbiBibGFjayB3aXRoIDFweCBzb2xpZCByZ2JhKDY1LDY1LDY1LDAuOCkgYm9yZGVyIGFuZCA4cHggcmFkaXVzLiBUaXRsZSBhdCAyNHB4IEludGVyIHdlaWdodCA3MDAsIGJvZHkgYXQgMTZweCBpbiBTaWx2ZXIgKCNhMGEwYTApLiBBZGQgYSBuZW9uLWhpZ2hsaWdodGVkIHZhcmlhbnQgd2l0aCAxcHggc29saWQgI2ZhZmY2OSBib3JkZXIuIgotICJCdWlsZCBhIHBlcmZvcm1hbmNlIHN0YXRzIGJhcjogbGFyZ2UgbnVtYmVycyBhdCA3MnB4IEludGVyIHdlaWdodCA3MDAgaW4gUHVyZSBXaGl0ZS4gQnJpZWYgZGVzY3JpcHRpb25zIGF0IDE0cHggaW4gU2lsdmVyLiBPbiBibGFjayBiYWNrZ3JvdW5kLiIKLSAiQ3JlYXRlIGEgRm9yZXN0IEdyZWVuICgjMTY2NTM0KSBDVEEgYnV0dG9uOiB3aGl0ZSB0ZXh0LCAxMnB4IDE2cHggcGFkZGluZywgNHB4IHJhZGl1cywgMXB4IHNvbGlkICMxNDE0MTQgYm9yZGVyLiBIb3ZlcjogYmcgc2hpZnRzIHRvICMzYTNhM2EsIHRleHQgdG8gODAlIG9wYWNpdHkuIgotICJEZXNpZ24gYW4gdXBwZXJjYXNlIHNlY3Rpb24gbGFiZWw6IDE0cHggSW50ZXIgd2VpZ2h0IDYwMCwgbGV0dGVyLXNwYWNpbmcgMS40cHgsIHVwcGVyY2FzZS4gU2lsdmVyICgjYTBhMGEwKSB0ZXh0IG9uIGJsYWNrIGJhY2tncm91bmQuIgoKIyMjIEl0ZXJhdGlvbiBHdWlkZQoxLiBLZWVwIGV2ZXJ5dGhpbmcgb24gcHVyZSBibGFjayDigJQgbm8gZGFyayBncmF5IGFsdGVybmF0aXZlcwoyLiBOZW9uIFZvbHQgKCNmYWZmNjkpIGlzIGZvciBhY2NlbnRzIGFuZCBDVEFzIG9ubHkg4oCUIG5ldmVyIGxhcmdlIGJhY2tncm91bmRzCjMuIFdlaWdodCA5MDAgZm9yIGhlcm8sIDcwMCBmb3IgaGVhZGluZ3MsIDYwMCBmb3IgbGFiZWxzLCA0MDAtNTAwIGZvciBib2R5CjQuIEFjdGl2ZSBzdGF0ZXMgdXNlIFBhbGUgWWVsbG93ICgjZjRmNjkyKSDigJQgbm90IGp1c3Qgb3BhY2l0eSBjaGFuZ2VzCjUuIEFsbCBsaW5rcyBob3ZlciB0byBOZW9uIFZvbHQg4oCUIGNvbnNpc3RlbnQgaW50ZXJhY3RpdmUgZmVlZGJhY2sKNi4gQ2hhcmNvYWwgYm9yZGVycyAocmdiYSg2NSw2NSw2NSwwLjgpKSBhcmUgdGhlIHByaW1hcnkgZGVwdGggbWVjaGFuaXNtCg==
+# Design System: ClickHouse
+
+
+> **Hermes Agent — Implementation Notes**
+>
+> The original site uses proprietary fonts. For self-contained HTML output, use these CDN substitutes:
+> - **Primary:** `Inter` | **Mono:** `JetBrains Mono`
+> - **Font stack (CSS):** `font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;`
+> - **Mono stack (CSS):** `font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;`
+> ```html
+> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+> ```
+> Use `write_file` to create HTML, serve via `generative-widgets` skill (cloudflared tunnel).
+> Verify visual accuracy with `browser_vision` after generating.
+
+## 1. Visual Theme & Atmosphere
+
+ClickHouse's interface is a high-performance cockpit rendered in acid yellow-green on obsidian black — a design that screams "speed" before you read a single word. The entire experience lives in darkness: pure black backgrounds (`#000000`) with dark charcoal cards (`#414141` borders) creating a terminal-grade aesthetic where the only chromatic interruption is the signature neon yellow-green (`#faff69`) that slashes across CTAs, borders, and highlighted moments like a highlighter pen on a dark console.
+
+The typography is aggressively heavy — Inter at weight 900 (Black) for the hero headline at 96px creates text blocks that feel like they have physical mass. This "database for AI" site communicates raw power through visual weight: thick type, high-contrast neon accents, and performance stats displayed as oversized numbers. There's nothing subtle about ClickHouse's design, and that's entirely the point — it mirrors the product's promise of extreme speed and performance.
+
+What makes ClickHouse distinctive is the electrifying tension between the near-black canvas and the neon yellow-green accent. This color combination (`#faff69` on `#000000`) creates one of the highest-contrast pairings in any tech brand, making every CTA button, every highlighted card, and every accent border impossible to miss. Supporting this is a forest green (`#166534`) for secondary CTAs that adds depth to the action hierarchy without competing with the neon.
+
+**Key Characteristics:**
+- Pure black canvas (#000000) with neon yellow-green (#faff69) accent — maximum contrast
+- Extra-heavy display typography: Inter at weight 900 (Black) up to 96px
+- Dark charcoal card system with #414141 borders at 80% opacity
+- Forest green (#166534) secondary CTA buttons
+- Performance stats as oversized display numbers
+- Uppercase labels with wide letter-spacing (1.4px) for navigation structure
+- Active/pressed state shifts text to pale yellow (#f4f692)
+- All links hover to neon yellow-green — unified interactive signal
+- Inset shadows on select elements creating "pressed into the surface" depth
+
+## 2. Color Palette & Roles
+
+### Primary
+- **Neon Volt** (`#faff69`): The signature brand color — a vivid acid yellow-green that's the sole chromatic accent on the black canvas. Used for primary CTAs, accent borders, link hovers, and highlighted moments.
+- **Forest Green** (`#166534`): Secondary CTA color — a deep, saturated green for "Get Started" and primary action buttons that need distinction from the neon.
+- **Dark Forest** (`#14572f`): A darker green variant for borders and secondary accents.
+
+### Secondary & Accent
+- **Pale Yellow** (`#f4f692`): Active/pressed state text color — a softer, more muted version of Neon Volt for state feedback.
+- **Border Olive** (`#4f5100`): A dark olive-yellow for ghost button borders — the neon's muted sibling.
+- **Olive Dark** (`#161600`): The darkest neon-tinted color for subtle brand text.
+
+### Surface & Background
+- **Pure Black** (`#000000`): The primary page background — absolute black for maximum contrast.
+- **Near Black** (`#141414`): Button backgrounds and slightly elevated dark surfaces.
+- **Charcoal** (`#414141`): The primary border color at 80% opacity — the workhorse for card and container containment.
+- **Deep Charcoal** (`#343434`): Darker border variant for subtle division lines.
+- **Hover Gray** (`#3a3a3a`): Button hover state background — slightly lighter than Near Black.
+
+### Neutrals & Text
+- **Pure White** (`#ffffff`): Primary text on dark surfaces.
+- **Silver** (`#a0a0a0`): Secondary body text and muted content.
+- **Mid Gray** (`#585858` at 28%): Subtle gray overlay for depth effects.
+- **Border Gray** (`#e5e7eb`): Light border variant (used in rare light contexts).
+
+### Gradient System
+- **None in the traditional sense.** ClickHouse uses flat color blocks and high-contrast borders. The "gradient" is the contrast itself — neon yellow-green against pure black creates a visual intensity that gradients would dilute.
+
+## 3. Typography Rules
+
+### Font Family
+- **Primary**: `Inter` (Next.js optimized variant `__Inter_d1b8ee`)
+- **Secondary Display**: `Basier` (`__basier_a58b65`), with fallbacks: `Arial, Helvetica`
+- **Code**: `Inconsolata` (`__Inconsolata_a25f62`)
+
+### Hierarchy
+
+| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
+|------|------|------|--------|-------------|----------------|-------|
+| Display Mega | Inter | 96px (6rem) | 900 | 1.00 (tight) | normal | Maximum impact, extra-heavy |
+| Display / Hero | Inter | 72px (4.5rem) | 700 | 1.00 (tight) | normal | Section hero titles |
+| Feature Heading | Basier | 36px (2.25rem) | 600 | 1.30 (tight) | normal | Feature section anchors |
+| Sub-heading | Inter / Basier | 24px (1.5rem) | 600–700 | 1.17–1.38 | normal | Card headings |
+| Feature Title | Inter / Basier | 20px (1.25rem) | 600–700 | 1.40 | normal | Small feature titles |
+| Body Large | Inter | 18px (1.13rem) | 400–700 | 1.56 | normal | Intro paragraphs, button text |
+| Body / Button | Inter | 16px (1rem) | 400–700 | 1.50 | normal | Standard body, nav, buttons |
+| Caption | Inter | 14px (0.88rem) | 400–700 | 1.43 | normal | Metadata, descriptions, links |
+| Uppercase Label | Inter | 14px (0.88rem) | 600 | 1.43 | 1.4px | Section overlines, wide-tracked |
+| Code | Inconsolata | 16px (1rem) | 600 | 1.50 | normal | Code blocks, commands |
+| Small | Inter | 12px (0.75rem) | 500 | 1.33 | normal | Smallest text |
+| Micro | Inter | 11.2px (0.7rem) | 500 | 1.79 (relaxed) | normal | Tags, tiny labels |
+
+### Principles
+- **Weight 900 is the weapon**: The display headline uses Inter Black (900) — a weight most sites never touch. Combined with 96px size, this creates text with a physical, almost architectural presence.
+- **Full weight spectrum**: The system uses 400, 500, 600, 700, and 900 — covering the full gamut. Weight IS hierarchy.
+- **Uppercase with maximum tracking**: Section overlines use 1.4px letter-spacing — wider than most systems — creating bold structural labels that stand out against the dense dark background.
+- **Dual sans-serif**: Inter handles display and body; Basier handles feature section headings at 600 weight. This creates a subtle personality shift between "data/performance" (Inter) and "product/feature" (Basier) contexts.
+
+## 4. Component Stylings
+
+### Buttons
+
+**Neon Primary**
+- Background: Neon Volt (`#faff69`)
+- Text: Near Black (`#151515`)
+- Padding: 0px 16px
+- Radius: sharp (4px)
+- Border: `1px solid #faff69`
+- Hover: background shifts to dark (`rgb(29, 29, 29)`), text stays
+- Active: text shifts to Pale Yellow (`#f4f692`)
+- The eye-catching CTA — neon on black
+
+**Dark Solid**
+- Background: Near Black (`#141414`)
+- Text: Pure White (`#ffffff`)
+- Padding: 12px 16px
+- Radius: 4px or 8px
+- Border: `1px solid #141414`
+- Hover: bg shifts to Hover Gray (`#3a3a3a`), text to 80% opacity
+- Active: text to Pale Yellow
+- The standard action button
+
+**Forest Green**
+- Background: Forest Green (`#166534`)
+- Text: Pure White (`#ffffff`)
+- Padding: 12px 16px
+- Border: `1px solid #141414`
+- Hover: same dark shift
+- Active: Pale Yellow text
+- The "Get Started" / primary conversion button
+
+**Ghost / Outlined**
+- Background: transparent
+- Text: Pure White (`#ffffff`)
+- Padding: 0px 32px
+- Radius: 4px
+- Border: `1px solid #4f5100` (olive-tinted)
+- Hover: dark bg shift
+- Active: Pale Yellow text
+- Secondary actions with neon-tinted border
+
+**Pill Toggle**
+- Background: transparent
+- Radius: pill (9999px)
+- Used for toggle/switch elements
+
+### Cards & Containers
+- Background: transparent or Near Black
+- Border: `1px solid rgba(65, 65, 65, 0.8)` — the signature charcoal containment
+- Radius: 4px (small elements) or 8px (cards, containers)
+- Shadow Level 1: subtle (`rgba(0,0,0,0.1) 0px 1px 3px, rgba(0,0,0,0.1) 0px 1px 2px -1px`)
+- Shadow Level 2: medium (`rgba(0,0,0,0.1) 0px 10px 15px -3px, rgba(0,0,0,0.1) 0px 4px 6px -4px`)
+- Shadow Level 3: inset (`rgba(0,0,0,0.06) 0px 4px 4px, rgba(0,0,0,0.14) 0px 4px 25px inset`) — the "pressed" effect
+- Neon-highlighted cards: selected/active cards get neon yellow-green border or accent
+
+### Navigation
+- Dark nav on black background
+- Logo: ClickHouse wordmark + icon in yellow/neon
+- Links: white text, hover to Neon Volt (#faff69)
+- CTA: Neon Volt button or Forest Green button
+- Uppercase labels for categories
+
+### Distinctive Components
+
+**Performance Stats**
+- Oversized numbers (72px+, weight 700–900)
+- Brief descriptions beneath
+- High-contrast neon accents on key metrics
+- The primary visual proof of performance claims
+
+**Neon-Highlighted Card**
+- Standard dark card with neon yellow-green border highlight
+- Creates "selected" or "featured" treatment
+- The accent border makes the card pop against the dark canvas
+
+**Code Blocks**
+- Dark surface with Inconsolata at weight 600
+- Neon and white syntax highlighting
+- Terminal-like aesthetic
+
+**Trust Bar**
+- Company logos on dark background
+- Monochrome/white logo treatment
+- Horizontal layout
+
+## 5. Layout Principles
+
+### Spacing System
+- Base unit: 8px
+- Scale: 2px, 6px, 7px, 8px, 10px, 12px, 16px, 20px, 24px, 25px, 32px, 40px, 44px, 48px, 64px
+- Button padding: 12px 16px (standard), 0px 16px (compact), 0px 32px (wide ghost)
+- Section vertical spacing: generous (48–64px)
+
+### Grid & Container
+- Max container width: up to 2200px (extra-wide) with responsive scaling
+- Hero: full-width dark with massive typography
+- Feature sections: multi-column card grids with dark borders
+- Stats: horizontal metric bar
+- Full-dark page — no light sections
+
+### Whitespace Philosophy
+- **Dark void as canvas**: The pure black background provides infinite depth — elements float in darkness.
+- **Dense information**: Feature cards and stats are packed with data, reflecting the database product's performance focus.
+- **Neon highlights as wayfinding**: Yellow-green accents guide the eye through the dark interface like runway lights.
+
+### Border Radius Scale
+- Sharp (4px): Buttons, badges, small elements, code blocks
+- Comfortable (8px): Cards, containers, dividers
+- Pill (9999px): Toggle buttons, status indicators
+
+## 6. Depth & Elevation
+
+| Level | Treatment | Use |
+|-------|-----------|-----|
+| Flat (Level 0) | No shadow | Black background, text blocks |
+| Bordered (Level 1) | `1px solid rgba(65,65,65,0.8)` | Standard cards, containers |
+| Subtle (Level 2) | `0px 1px 3px rgba(0,0,0,0.1)` | Subtle card lift |
+| Elevated (Level 3) | `0px 10px 15px -3px rgba(0,0,0,0.1)` | Feature cards, hover states |
+| Pressed/Inset (Level 4) | `0px 4px 25px rgba(0,0,0,0.14) inset` | Active/pressed elements — "sunk into the surface" |
+| Neon Highlight (Level 5) | Neon Volt border (`#faff69`) | Featured/selected cards, maximum emphasis |
+
+**Shadow Philosophy**: ClickHouse uses shadows on a black canvas, where they're barely visible — they exist more for subtle dimensionality than obvious elevation. The most distinctive depth mechanism is the **inset shadow** (Level 4), which creates a "pressed into the surface" effect unique to ClickHouse. The neon border highlight (Level 5) is the primary attention-getting depth mechanism.
+
+## 7. Do's and Don'ts
+
+### Do
+- Use Neon Volt (#faff69) as the sole chromatic accent — it must pop against pure black
+- Use Inter at weight 900 for hero display text — the extreme weight IS the personality
+- Keep everything on pure black (#000000) — never use dark gray as the page background
+- Use charcoal borders (rgba(65,65,65,0.8)) for all card containment
+- Apply Forest Green (#166534) for primary CTA buttons — distinct from neon for action hierarchy
+- Show performance stats as oversized display numbers — it's the core visual argument
+- Use uppercase with wide letter-spacing (1.4px) for section labels
+- Apply Pale Yellow (#f4f692) for active/pressed text states
+- Link hovers should ALWAYS shift to Neon Volt — unified interactive feedback
+
+### Don't
+- Don't introduce additional colors — the palette is strictly black, neon, green, and gray
+- Don't use the neon as a background fill — it's an accent and border color only (except on CTA buttons)
+- Don't reduce display weight below 700 — heavy weight is core to the personality
+- Don't use light/white backgrounds anywhere — the entire experience is dark
+- Don't round corners beyond 8px — the sharp geometry reflects database precision
+- Don't use soft/diffused shadows on black — they're invisible. Use border-based depth instead
+- Don't skip the inset shadow on active states — the "pressed" effect is distinctive
+- Don't use warm neutrals — all grays are perfectly neutral
+
+## 8. Responsive Behavior
+
+### Breakpoints
+| Name | Width | Key Changes |
+|------|-------|-------------|
+| Mobile | <640px | Single column, stacked cards |
+| Small Tablet | 640–768px | Minor adjustments |
+| Tablet | 768–1024px | 2-column grids |
+| Desktop | 1024–1280px | Standard layout |
+| Large Desktop | 1280–1536px | Expanded content |
+| Ultra-wide | 1536–2200px | Maximum container width |
+
+### Touch Targets
+- Buttons with 12px 16px padding minimum
+- Card surfaces as touch targets
+- Adequate nav link spacing
+
+### Collapsing Strategy
+- **Hero text**: 96px → 72px → 48px → 36px
+- **Feature grids**: Multi-column → 2 → 1 column
+- **Stats**: Horizontal → stacked
+- **Navigation**: Full → hamburger
+
+### Image Behavior
+- Product screenshots maintain aspect ratio
+- Code blocks use horizontal scroll on narrow screens
+- All images on dark backgrounds
+
+## 9. Agent Prompt Guide
+
+### Quick Color Reference
+- Brand Accent: "Neon Volt (#faff69)"
+- Page Background: "Pure Black (#000000)"
+- CTA Green: "Forest Green (#166534)"
+- Card Border: "Charcoal (rgba(65,65,65,0.8))"
+- Primary Text: "Pure White (#ffffff)"
+- Secondary Text: "Silver (#a0a0a0)"
+- Active State: "Pale Yellow (#f4f692)"
+- Button Surface: "Near Black (#141414)"
+
+### Example Component Prompts
+- "Create a hero section on Pure Black (#000000) with a massive headline at 96px Inter weight 900, line-height 1.0. Pure White text. Add a Neon Volt (#faff69) CTA button (dark text, 4px radius, 0px 16px padding) and a ghost button (transparent, 1px solid #4f5100 border)."
+- "Design a feature card on black with 1px solid rgba(65,65,65,0.8) border and 8px radius. Title at 24px Inter weight 700, body at 16px in Silver (#a0a0a0). Add a neon-highlighted variant with 1px solid #faff69 border."
+- "Build a performance stats bar: large numbers at 72px Inter weight 700 in Pure White. Brief descriptions at 14px in Silver. On black background."
+- "Create a Forest Green (#166534) CTA button: white text, 12px 16px padding, 4px radius, 1px solid #141414 border. Hover: bg shifts to #3a3a3a, text to 80% opacity."
+- "Design an uppercase section label: 14px Inter weight 600, letter-spacing 1.4px, uppercase. Silver (#a0a0a0) text on black background."
+
+### Iteration Guide
+1. Keep everything on pure black — no dark gray alternatives
+2. Neon Volt (#faff69) is for accents and CTAs only — never large backgrounds
+3. Weight 900 for hero, 700 for headings, 600 for labels, 400-500 for body
+4. Active states use Pale Yellow (#f4f692) — not just opacity changes
+5. All links hover to Neon Volt — consistent interactive feedback
+6. Charcoal borders (rgba(65,65,65,0.8)) are the primary depth mechanism

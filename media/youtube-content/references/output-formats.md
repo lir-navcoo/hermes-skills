@@ -1,1 +1,56 @@
-IyBPdXRwdXQgRm9ybWF0IEV4YW1wbGVzCgojIyBDaGFwdGVycwoKYGBgCjAwOjAwIEludHJvZHVjdGlvbgowMjoxNSBCYWNrZ3JvdW5kIGFuZCBtb3RpdmF0aW9uCjA1OjMwIE1haW4gYXBwcm9hY2gKMTI6NDUgUmVzdWx0cyBhbmQgZXZhbHVhdGlvbgoxODoyMCBMaW1pdGF0aW9ucyBhbmQgZnV0dXJlIHdvcmsKMjE6MDAgUSZBCmBgYAoKIyMgU3VtbWFyeQoKQSA1LTEwIHNlbnRlbmNlIG92ZXJ2aWV3IGNvdmVyaW5nIHRoZSB2aWRlbydzIG1haW4gcG9pbnRzLCBrZXkgYXJndW1lbnRzLCBhbmQgY29uY2x1c2lvbnMuIFdyaXR0ZW4gaW4gdGhpcmQgcGVyc29uLCBwcmVzZW50IHRlbnNlLgoKIyMgQ2hhcHRlciBTdW1tYXJpZXMKCmBgYAojIyAwMDowMCBJbnRyb2R1Y3Rpb24gKDIgbWluKQpUaGUgc3BlYWtlciBpbnRyb2R1Y2VzIHRoZSB0b3BpYyBvZiBYIGFuZCBleHBsYWlucyB3aHkgaXQgbWF0dGVycyBmb3IgWS4KCiMjIDAyOjE1IEJhY2tncm91bmQgKDMgbWluKQpBIHJldmlldyBvZiBwcmlvciB3b3JrIGluIHRoZSBmaWVsZCwgY292ZXJpbmcgYXBwcm9hY2hlcyBBLCBCLCBhbmQgQy4KYGBgCgojIyBUaHJlYWQgKFR3aXR0ZXIvWCkKCmBgYAoxLyBKdXN0IHdhdGNoZWQgYW4gaW5jcmVkaWJsZSB0YWxrIG9uIFt0b3BpY10uIEhlcmUgYXJlIHRoZSBrZXkgdGFrZWF3YXlzOiDwn6e1CgoyLyBGaXJzdCBpbnNpZ2h0OiBbcG9pbnRdLiBUaGlzIG1hdHRlcnMgYmVjYXVzZSBbcmVhc29uXS4KCjMvIFRoZSBzdXJwcmlzaW5nIHBhcnQ6IFt1bmV4cGVjdGVkIGZpbmRpbmddLiBNb3N0IHBlb3BsZSBhc3N1bWUgW2NvbW1vbiBiZWxpZWZdLCBidXQgdGhlIGRhdGEgc2hvd3Mgb3RoZXJ3aXNlLgoKNC8gUHJhY3RpY2FsIHRha2Vhd2F5OiBbYWN0aW9uYWJsZSBhZHZpY2VdLgoKNS8gRnVsbCB2aWRlbzogW1VSTF0KYGBgCgojIyBCbG9nIFBvc3QKCkZ1bGwgYXJ0aWNsZSB3aXRoOgotIFRpdGxlCi0gSW50cm9kdWN0aW9uIHBhcmFncmFwaAotIEgyIHNlY3Rpb25zIGZvciBlYWNoIG1ham9yIHRvcGljCi0gS2V5IHF1b3RlcyAod2l0aCB0aW1lc3RhbXBzKQotIENvbmNsdXNpb24gLyB0YWtlYXdheXMKCiMjIFF1b3RlcwoKYGBgCiJUaGUgbW9zdCBpbXBvcnRhbnQgdGhpbmcgaXMgbm90IHRoZSBtb2RlbCBzaXplLCBidXQgdGhlIGRhdGEgcXVhbGl0eS4iIOKAlCAwNTozMgoiV2UgZm91bmQgdGhhdCBzY2FsaW5nIHBhc3QgNzBCIHBhcmFtZXRlcnMgZ2F2ZSBkaW1pbmlzaGluZyByZXR1cm5zLiIg4oCUIDEyOjE4CmBgYAo=
+# Output Format Examples
+
+## Chapters
+
+```
+00:00 Introduction
+02:15 Background and motivation
+05:30 Main approach
+12:45 Results and evaluation
+18:20 Limitations and future work
+21:00 Q&A
+```
+
+## Summary
+
+A 5-10 sentence overview covering the video's main points, key arguments, and conclusions. Written in third person, present tense.
+
+## Chapter Summaries
+
+```
+## 00:00 Introduction (2 min)
+The speaker introduces the topic of X and explains why it matters for Y.
+
+## 02:15 Background (3 min)
+A review of prior work in the field, covering approaches A, B, and C.
+```
+
+## Thread (Twitter/X)
+
+```
+1/ Just watched an incredible talk on [topic]. Here are the key takeaways: 🧵
+
+2/ First insight: [point]. This matters because [reason].
+
+3/ The surprising part: [unexpected finding]. Most people assume [common belief], but the data shows otherwise.
+
+4/ Practical takeaway: [actionable advice].
+
+5/ Full video: [URL]
+```
+
+## Blog Post
+
+Full article with:
+- Title
+- Introduction paragraph
+- H2 sections for each major topic
+- Key quotes (with timestamps)
+- Conclusion / takeaways
+
+## Quotes
+
+```
+"The most important thing is not the model size, but the data quality." — 05:32
+"We found that scaling past 70B parameters gave diminishing returns." — 12:18
+```

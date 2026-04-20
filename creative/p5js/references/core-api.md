@@ -1,1 +1,410 @@
-IyBDb3JlIEFQSSBSZWZlcmVuY2UKCiMjIENhbnZhcyBTZXR1cAoKIyMjIGNyZWF0ZUNhbnZhcygpCgpgYGBqYXZhc2NyaXB0Ci8vIDJEIChkZWZhdWx0IHJlbmRlcmVyKQpjcmVhdGVDYW52YXMoMTkyMCwgMTA4MCk7CgovLyBXZWJHTCAoM0QsIHNoYWRlcnMpCmNyZWF0ZUNhbnZhcygxOTIwLCAxMDgwLCBXRUJHTCk7CgovLyBSZXNwb25zaXZlCmNyZWF0ZUNhbnZhcyh3aW5kb3dXaWR0aCwgd2luZG93SGVpZ2h0KTsKYGBgCgojIyMgUGl4ZWwgRGVuc2l0eQoKSGlnaC1EUEkgZGlzcGxheXMgcmVuZGVyIGF0IDJ4IGJ5IGRlZmF1bHQuIFRoaXMgZG91YmxlcyBtZW1vcnkgdXNhZ2UgYW5kIGhhbHZlcyBwZXJmb3JtYW5jZS4KCmBgYGphdmFzY3JpcHQKLy8gRm9yY2UgMXggZm9yIGNvbnNpc3RlbnQgZXhwb3J0IGFuZCBwZXJmb3JtYW5jZQpwaXhlbERlbnNpdHkoMSk7CgovLyBNYXRjaCBkaXNwbGF5IChkZWZhdWx0KSDigJQgc2hhcnAgb24gcmV0aW5hIGJ1dCBleHBlbnNpdmUKcGl4ZWxEZW5zaXR5KGRpc3BsYXlEZW5zaXR5KCkpOwoKLy8gQUxXQVlTIGNhbGwgYmVmb3JlIGNyZWF0ZUNhbnZhcygpCmZ1bmN0aW9uIHNldHVwKCkgewogIHBpeGVsRGVuc2l0eSgxKTsgICAgICAgIC8vIGZpcnN0CiAgY3JlYXRlQ2FudmFzKDE5MjAsIDEwODApOyAvLyBzZWNvbmQKfQpgYGAKCkZvciBleHBvcnQsIGFsd2F5cyBgcGl4ZWxEZW5zaXR5KDEpYCBhbmQgdXNlIHRoZSBleGFjdCB0YXJnZXQgcmVzb2x1dGlvbi4gTmV2ZXIgcmVseSBvbiBkZXZpY2Ugc2NhbGluZyBmb3IgZmluYWwgb3V0cHV0LgoKIyMjIFJlc3BvbnNpdmUgUmVzaXplCgpgYGBqYXZhc2NyaXB0CmZ1bmN0aW9uIHdpbmRvd1Jlc2l6ZWQoKSB7CiAgcmVzaXplQ2FudmFzKHdpbmRvd1dpZHRoLCB3aW5kb3dIZWlnaHQpOwogIC8vIFJlY3JlYXRlIG9mZnNjcmVlbiBidWZmZXJzIGF0IG5ldyBzaXplCiAgYmdMYXllciA9IGNyZWF0ZUdyYXBoaWNzKHdpZHRoLCBoZWlnaHQpOwogIC8vIFJlaW5pdGlhbGl6ZSBhbnkgc2l6ZS1kZXBlbmRlbnQgc3RhdGUKfQpgYGAKCiMjIENvb3JkaW5hdGUgU3lzdGVtCgojIyMgUDJEIChEZWZhdWx0KQotIE9yaWdpbjogdG9wLWxlZnQgKDAsIDApCi0gWCBpbmNyZWFzZXMgcmlnaHR3YXJkCi0gWSBpbmNyZWFzZXMgZG93bndhcmQKLSBBbmdsZXM6IHJhZGlhbnMgYnkgZGVmYXVsdCwgYGFuZ2xlTW9kZShERUdSRUVTKWAgdG8gc3dpdGNoCgojIyMgV0VCR0wKLSBPcmlnaW46IGNlbnRlciBvZiBjYW52YXMKLSBYIGluY3JlYXNlcyByaWdodHdhcmQsIFkgaW5jcmVhc2VzICoqdXB3YXJkKiosIFogaW5jcmVhc2VzIHRvd2FyZCB2aWV3ZXIKLSBUbyBnZXQgUDJELWxpa2UgY29vcmRpbmF0ZXMgaW4gV0VCR0w6IGB0cmFuc2xhdGUoLXdpZHRoLzIsIC1oZWlnaHQvMilgCgojIyBEcmF3IExvb3AKCmBgYGphdmFzY3JpcHQKZnVuY3Rpb24gcHJlbG9hZCgpIHsKICAvLyBMb2FkIGFzc2V0cyBiZWZvcmUgc2V0dXAg4oCUIGZvbnRzLCBpbWFnZXMsIEpTT04sIENTVgogIC8vIEJsb2NrcyBleGVjdXRpb24gdW50aWwgYWxsIGxvYWRzIGNvbXBsZXRlCiAgZm9udCA9IGxvYWRGb250KCdmb250Lm90ZicpOwogIGltZyA9IGxvYWRJbWFnZSgndGV4dHVyZS5wbmcnKTsKICBkYXRhID0gbG9hZEpTT04oJ2RhdGEuanNvbicpOwp9CgpmdW5jdGlvbiBzZXR1cCgpIHsKICAvLyBSdW5zIG9uY2UuIENyZWF0ZSBjYW52YXMsIGluaXRpYWxpemUgc3RhdGUuCiAgY3JlYXRlQ2FudmFzKDE5MjAsIDEwODApOwogIGNvbG9yTW9kZShIU0IsIDM2MCwgMTAwLCAxMDAsIDEwMCk7CiAgcmFuZG9tU2VlZChDT05GSUcuc2VlZCk7CiAgbm9pc2VTZWVkKENPTkZJRy5zZWVkKTsKfQoKZnVuY3Rpb24gZHJhdygpIHsKICAvLyBSdW5zIGV2ZXJ5IGZyYW1lIChkZWZhdWx0IDYwZnBzKS4KICAvLyBTZXQgZnJhbWVSYXRlKDMwKSBpbiBzZXR1cCgpIHRvIGNoYW5nZS4KICAvLyBDYWxsIG5vTG9vcCgpIGZvciBzdGF0aWMgc2tldGNoZXMgKHJlbmRlciBvbmNlKS4KfQpgYGAKCiMjIyBGcmFtZSBDb250cm9sCgpgYGBqYXZhc2NyaXB0CmZyYW1lUmF0ZSgzMCk7ICAgICAgICAgICAvLyBzZXQgdGFyZ2V0IEZQUwpub0xvb3AoKTsgICAgICAgICAgICAgICAgLy8gc3RvcCBkcmF3IGxvb3AgKHN0YXRpYyBwaWVjZXMpCmxvb3AoKTsgICAgICAgICAgICAgICAgICAvLyByZXN0YXJ0IGRyYXcgbG9vcApyZWRyYXcoKTsgICAgICAgICAgICAgICAgLy8gY2FsbCBkcmF3KCkgb25jZSAobWFudWFsIHJlZnJlc2gpCmZyYW1lQ291bnQgICAgICAgICAgICAgIC8vIGZyYW1lcyBzaW5jZSBzdGFydCAoaW50ZWdlcikKZGVsdGFUaW1lICAgICAgICAgICAgICAgLy8gbWlsbGlzZWNvbmRzIHNpbmNlIGxhc3QgZnJhbWUgKGZsb2F0KQptaWxsaXMoKSAgICAgICAgICAgICAgICAvLyBtaWxsaXNlY29uZHMgc2luY2Ugc2tldGNoIHN0YXJ0ZWQKYGBgCgojIyBUcmFuc2Zvcm0gU3RhY2sKCkV2ZXJ5IHRyYW5zZm9ybSBpcyBjdW11bGF0aXZlLiBVc2UgYHB1c2goKWAvYHBvcCgpYCB0byBpc29sYXRlLgoKYGBgamF2YXNjcmlwdApwdXNoKCk7CiAgdHJhbnNsYXRlKHdpZHRoIC8gMiwgaGVpZ2h0IC8gMik7CiAgcm90YXRlKGFuZ2xlKTsKICBzY2FsZSgxLjUpOwogIC8vIGRyYXcgc29tZXRoaW5nIGF0IHRyYW5zZm9ybWVkIHBvc2l0aW9uCiAgZWxsaXBzZSgwLCAwLCAxMDAsIDEwMCk7CnBvcCgpOwovLyBiYWNrIHRvIG9yaWdpbmFsIGNvb3JkaW5hdGUgc3lzdGVtCmBgYAoKIyMjIFRyYW5zZm9ybSBGdW5jdGlvbnMKCnwgRnVuY3Rpb24gfCBFZmZlY3QgfAp8LS0tLS0tLS0tLXwtLS0tLS0tLXwKfCBgdHJhbnNsYXRlKHgsIHkpYCB8IE1vdmUgb3JpZ2luIHwKfCBgcm90YXRlKGFuZ2xlKWAgfCBSb3RhdGUgYXJvdW5kIG9yaWdpbiAocmFkaWFucykgfAp8IGBzY2FsZShzKWAgLyBgc2NhbGUoc3gsIHN5KWAgfCBTY2FsZSBmcm9tIG9yaWdpbiB8CnwgYHNoZWFyWChhbmdsZSlgIHwgU2tldyBYIGF4aXMgfAp8IGBzaGVhclkoYW5nbGUpYCB8IFNrZXcgWSBheGlzIHwKfCBgYXBwbHlNYXRyaXgoYSwgYiwgYywgZCwgZSwgZilgIHwgQXJiaXRyYXJ5IDJEIGFmZmluZSB0cmFuc2Zvcm0gfAp8IGByZXNldE1hdHJpeCgpYCB8IENsZWFyIGFsbCB0cmFuc2Zvcm1zIHwKCiMjIyBDb21wb3NpdGlvbiBQYXR0ZXJuOiBSb3RhdGUgQXJvdW5kIENlbnRlcgoKYGBgamF2YXNjcmlwdApwdXNoKCk7CiAgdHJhbnNsYXRlKGN4LCBjeSk7ICAgICAgIC8vIG1vdmUgb3JpZ2luIHRvIGNlbnRlcgogIHJvdGF0ZShhbmdsZSk7ICAgICAgICAgICAvLyByb3RhdGUgYXJvdW5kIHRoYXQgY2VudGVyCiAgdHJhbnNsYXRlKC1jeCwgLWN5KTsgICAgIC8vIG1vdmUgb3JpZ2luIGJhY2sKICAvLyBkcmF3IGF0IG9yaWdpbmFsIGNvb3JkaW5hdGVzLCBidXQgcm90YXRlZCBhcm91bmQgKGN4LCBjeSkKICByZWN0KGN4IC0gNTAsIGN5IC0gNTAsIDEwMCwgMTAwKTsKcG9wKCk7CmBgYAoKIyMgT2Zmc2NyZWVuIEJ1ZmZlcnMgKGNyZWF0ZUdyYXBoaWNzKQoKT2Zmc2NyZWVuIGJ1ZmZlcnMgYXJlIHNlcGFyYXRlIGNhbnZhc2VzIHlvdSBjYW4gZHJhdyB0byBhbmQgY29tcG9zaXRlLiBFc3NlbnRpYWwgZm9yOgotICoqTGF5ZXJlZCBjb21wb3NpdGlvbioqIOKAlCBiYWNrZ3JvdW5kLCBtaWRncm91bmQsIGZvcmVncm91bmQKLSAqKlBlcnNpc3RlbnQgdHJhaWxzKiog4oCUIGRyYXcgdG8gYnVmZmVyLCBmYWRlIHdpdGggc2VtaS10cmFuc3BhcmVudCByZWN0LCBuZXZlciBjbGVhcgotICoqTWFza2luZyoqIOKAlCBkcmF3IG1hc2sgdG8gYnVmZmVyLCBhcHBseSB3aXRoIGBpbWFnZSgpYCBvciBwaXhlbCBvcGVyYXRpb25zCi0gKipQb3N0LXByb2Nlc3NpbmcqKiDigJQgcmVuZGVyIHNjZW5lIHRvIGJ1ZmZlciwgYXBwbHkgZWZmZWN0cywgZHJhdyB0byBtYWluIGNhbnZhcwoKYGBgamF2YXNjcmlwdApsZXQgbGF5ZXI7CgpmdW5jdGlvbiBzZXR1cCgpIHsKICBjcmVhdGVDYW52YXMoMTkyMCwgMTA4MCk7CiAgbGF5ZXIgPSBjcmVhdGVHcmFwaGljcyh3aWR0aCwgaGVpZ2h0KTsKfQoKZnVuY3Rpb24gZHJhdygpIHsKICAvLyBEcmF3IHRvIG9mZnNjcmVlbiBidWZmZXIKICBsYXllci5iYWNrZ3JvdW5kKDAsIDEwKTsgIC8vIHNlbWktdHJhbnNwYXJlbnQgY2xlYXIgPSB0cmFpbHMKICBsYXllci5maWxsKDI1NSk7CiAgbGF5ZXIuZWxsaXBzZShtb3VzZVgsIG1vdXNlWSwgMjApOwoKICAvLyBDb21wb3NpdGUgdG8gbWFpbiBjYW52YXMKICBpbWFnZShsYXllciwgMCwgMCk7Cn0KYGBgCgojIyMgVHJhaWwgRWZmZWN0IFBhdHRlcm4KCmBgYGphdmFzY3JpcHQKbGV0IHRyYWlsQnVmZmVyOwoKZnVuY3Rpb24gc2V0dXAoKSB7CiAgY3JlYXRlQ2FudmFzKDE5MjAsIDEwODApOwogIHRyYWlsQnVmZmVyID0gY3JlYXRlR3JhcGhpY3Mod2lkdGgsIGhlaWdodCk7CiAgdHJhaWxCdWZmZXIuYmFja2dyb3VuZCgwKTsKfQoKZnVuY3Rpb24gZHJhdygpIHsKICAvLyBGYWRlIHByZXZpb3VzIGZyYW1lIChsb3dlciBhbHBoYSA9IGxvbmdlciB0cmFpbHMpCiAgdHJhaWxCdWZmZXIubm9TdHJva2UoKTsKICB0cmFpbEJ1ZmZlci5maWxsKDAsIDAsIDAsIDE1KTsgIC8vIFJHQkEg4oCUIDE1LzI1NSBhbHBoYQogIHRyYWlsQnVmZmVyLnJlY3QoMCwgMCwgd2lkdGgsIGhlaWdodCk7CgogIC8vIERyYXcgbmV3IGNvbnRlbnQKICB0cmFpbEJ1ZmZlci5maWxsKDI1NSk7CiAgdHJhaWxCdWZmZXIuZWxsaXBzZShtb3VzZVgsIG1vdXNlWSwgMTApOwoKICAvLyBTaG93CiAgaW1hZ2UodHJhaWxCdWZmZXIsIDAsIDApOwp9CmBgYAoKIyMjIE11bHRpLUxheWVyIENvbXBvc2l0aW9uCgpgYGBqYXZhc2NyaXB0CmxldCBiZ0xheWVyLCBjb250ZW50TGF5ZXIsIGZ4TGF5ZXI7CgpmdW5jdGlvbiBzZXR1cCgpIHsKICBjcmVhdGVDYW52YXMoMTkyMCwgMTA4MCk7CiAgYmdMYXllciA9IGNyZWF0ZUdyYXBoaWNzKHdpZHRoLCBoZWlnaHQpOwogIGNvbnRlbnRMYXllciA9IGNyZWF0ZUdyYXBoaWNzKHdpZHRoLCBoZWlnaHQpOwogIGZ4TGF5ZXIgPSBjcmVhdGVHcmFwaGljcyh3aWR0aCwgaGVpZ2h0KTsKfQoKZnVuY3Rpb24gZHJhdygpIHsKICAvLyBCYWNrZ3JvdW5kIOKAlCBkcmF3biBvbmNlIG9yIHNsb3dseSBldm9sdmluZwogIHJlbmRlckJhY2tncm91bmQoYmdMYXllcik7CgogIC8vIENvbnRlbnQg4oCUIG1haW4gdmlzdWFsIGVsZW1lbnRzCiAgY29udGVudExheWVyLmNsZWFyKCk7CiAgcmVuZGVyQ29udGVudChjb250ZW50TGF5ZXIpOwoKICAvLyBGWCDigJQgb3ZlcmxheXMsIHZpZ25ldHRlcywgZ3JhaW4KICBmeExheWVyLmNsZWFyKCk7CiAgcmVuZGVyRWZmZWN0cyhmeExheWVyKTsKCiAgLy8gQ29tcG9zaXRlIHdpdGggYmxlbmQgbW9kZXMKICBpbWFnZShiZ0xheWVyLCAwLCAwKTsKICBibGVuZE1vZGUoQUREKTsKICBpbWFnZShjb250ZW50TGF5ZXIsIDAsIDApOwogIGJsZW5kTW9kZShNVUxUSVBMWSk7CiAgaW1hZ2UoZnhMYXllciwgMCwgMCk7CiAgYmxlbmRNb2RlKEJMRU5EKTsgIC8vIHJlc2V0Cn0KYGBgCgojIyBDb21wb3NpdGlvbiBQYXR0ZXJucwoKIyMjIEdyaWQgTGF5b3V0CgpgYGBqYXZhc2NyaXB0CmxldCBjb2xzID0gMTAsIHJvd3MgPSAxMDsKbGV0IGNlbGxXID0gd2lkdGggLyBjb2xzOwpsZXQgY2VsbEggPSBoZWlnaHQgLyByb3dzOwpmb3IgKGxldCBpID0gMDsgaSA8IGNvbHM7IGkrKykgewogIGZvciAobGV0IGogPSAwOyBqIDwgcm93czsgaisrKSB7CiAgICBsZXQgY3ggPSBjZWxsVyAqIChpICsgMC41KTsKICAgIGxldCBjeSA9IGNlbGxIICogKGogKyAwLjUpOwogICAgLy8gZHJhdyBlbGVtZW50IGF0IChjeCwgY3kpIHdpdGhpbiBjZWxsIHNpemUgKGNlbGxXLCBjZWxsSCkKICB9Cn0KYGBgCgojIyMgUmFkaWFsIExheW91dAoKYGBgamF2YXNjcmlwdApsZXQgbiA9IDEyOwpmb3IgKGxldCBpID0gMDsgaSA8IG47IGkrKykgewogIGxldCBhbmdsZSA9IFRXT19QSSAqIGkgLyBuOwogIGxldCByID0gMzAwOwogIGxldCB4ID0gd2lkdGgvMiArIGNvcyhhbmdsZSkgKiByOwogIGxldCB5ID0gaGVpZ2h0LzIgKyBzaW4oYW5nbGUpICogcjsKICAvLyBkcmF3IGVsZW1lbnQgYXQgKHgsIHkpCn0KYGBgCgojIyMgR29sZGVuIFJhdGlvIFNwaXJhbAoKYGBgamF2YXNjcmlwdApsZXQgcGhpID0gKDEgKyBzcXJ0KDUpKSAvIDI7CmxldCBuID0gNTAwOwpmb3IgKGxldCBpID0gMDsgaSA8IG47IGkrKykgewogIGxldCBhbmdsZSA9IGkgKiBUV09fUEkgLyAocGhpICogcGhpKTsKICBsZXQgciA9IHNxcnQoaSkgKiAxMDsKICBsZXQgeCA9IHdpZHRoLzIgKyBjb3MoYW5nbGUpICogcjsKICBsZXQgeSA9IGhlaWdodC8yICsgc2luKGFuZ2xlKSAqIHI7CiAgbGV0IHNpemUgPSBtYXAoaSwgMCwgbiwgOCwgMik7CiAgZWxsaXBzZSh4LCB5LCBzaXplKTsKfQpgYGAKCiMjIyBNYXJnaW4tQXdhcmUgQ29tcG9zaXRpb24KCmBgYGphdmFzY3JpcHQKY29uc3QgTUFSR0lOID0gODA7ICAvLyBwaXhlbHMgZnJvbSBlZGdlCmNvbnN0IGRyYXdXID0gd2lkdGggLSAyICogTUFSR0lOOwpjb25zdCBkcmF3SCA9IGhlaWdodCAtIDIgKiBNQVJHSU47CgovLyBNYXAgbm9ybWFsaXplZCBbMCwxXSBjb29yZGluYXRlcyB0byBkcmF3YWJsZSBhcmVhCmZ1bmN0aW9uIG1hcFgodCkgeyByZXR1cm4gTUFSR0lOICsgdCAqIGRyYXdXOyB9CmZ1bmN0aW9uIG1hcFkodCkgeyByZXR1cm4gTUFSR0lOICsgdCAqIGRyYXdIOyB9CmBgYAoKIyMgUmFuZG9tIGFuZCBOb2lzZQoKIyMjIFNlZWRlZCBSYW5kb20KCmBgYGphdmFzY3JpcHQKcmFuZG9tU2VlZCg0Mik7CmxldCB4ID0gcmFuZG9tKDEwMCk7ICAgICAgICAvLyBhbHdheXMgc2FtZSB2YWx1ZSBmb3Igc2VlZCA0MgpsZXQgeSA9IHJhbmRvbSgtMSwgMSk7ICAgICAgLy8gcmFuZ2UKbGV0IGl0ZW0gPSByYW5kb20obXlBcnJheSk7ICAvLyByYW5kb20gZWxlbWVudApgYGAKCiMjIyBHYXVzc2lhbiBSYW5kb20KCmBgYGphdmFzY3JpcHQKbGV0IHggPSByYW5kb21HYXVzc2lhbigwLCAxKTsgIC8vIG1lYW49MCwgc3RkZGV2PTEKLy8gVXNlZnVsIGZvciBuYXR1cmFsLWxvb2tpbmcgZGlzdHJpYnV0aW9ucwpgYGAKCiMjIyBQZXJsaW4gTm9pc2UKCmBgYGphdmFzY3JpcHQKbm9pc2VTZWVkKDQyKTsKbm9pc2VEZXRhaWwoNCwgMC41KTsgIC8vIDQgb2N0YXZlcywgMC41IGZhbGxvZmYKCmxldCB2ID0gbm9pc2UoeCAqIDAuMDEsIHkgKiAwLjAxKTsgIC8vIHJldHVybnMgMC4wIHRvIDEuMAovLyBTY2FsZSBmYWN0b3IgKDAuMDEpIGNvbnRyb2xzIGZlYXR1cmUgc2l6ZSDigJQgc21hbGxlciA9IHNtb290aGVyCmBgYAoKIyMgTWF0aCBVdGlsaXRpZXMKCnwgRnVuY3Rpb24gfCBEZXNjcmlwdGlvbiB8CnwtLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS18CnwgYG1hcCh2LCBsbzEsIGhpMSwgbG8yLCBoaTIpYCB8IFJlbWFwIHZhbHVlIGJldHdlZW4gcmFuZ2VzIHwKfCBgY29uc3RyYWluKHYsIGxvLCBoaSlgIHwgQ2xhbXAgdG8gcmFuZ2UgfAp8IGBsZXJwKGEsIGIsIHQpYCB8IExpbmVhciBpbnRlcnBvbGF0aW9uIHwKfCBgbm9ybSh2LCBsbywgaGkpYCB8IE5vcm1hbGl6ZSB0byAwLTEgfAp8IGBkaXN0KHgxLCB5MSwgeDIsIHkyKWAgfCBFdWNsaWRlYW4gZGlzdGFuY2UgfAp8IGBtYWcoeCwgeSlgIHwgVmVjdG9yIG1hZ25pdHVkZSB8CnwgYGFicygpYCwgYGNlaWwoKWAsIGBmbG9vcigpYCwgYHJvdW5kKClgIHwgU3RhbmRhcmQgbWF0aCB8CnwgYHNxKG4pYCwgYHNxcnQobilgLCBgcG93KGIsIGUpYCB8IFBvd2VycyB8CnwgYHNpbigpYCwgYGNvcygpYCwgYHRhbigpYCwgYGF0YW4yKClgIHwgVHJpZyAocmFkaWFucykgfAp8IGBkZWdyZWVzKHIpYCwgYHJhZGlhbnMoZClgIHwgQW5nbGUgY29udmVyc2lvbiB8CnwgYGZyYWN0KG4pYCB8IEZyYWN0aW9uYWwgcGFydCB8CgojIyBwNS5qcyAyLjAgQ2hhbmdlcwoKcDUuanMgMi4wIChyZWxlYXNlZCBBcHIgMjAyNSwgY3VycmVudDogMi4yKSBpbnRyb2R1Y2VzIGJyZWFraW5nIGNoYW5nZXMuIFRoZSBwNS5qcyBlZGl0b3IgZGVmYXVsdHMgdG8gMS54IHVudGlsIEF1ZyAyMDI2LiBVc2UgMi54IG9ubHkgd2hlbiB5b3UgbmVlZCBpdHMgZmVhdHVyZXMuCgojIyMgYXN5bmMgc2V0dXAoKSByZXBsYWNlcyBwcmVsb2FkKCkKCmBgYGphdmFzY3JpcHQKLy8gcDUuanMgMS54CmxldCBpbWc7CmZ1bmN0aW9uIHByZWxvYWQoKSB7IGltZyA9IGxvYWRJbWFnZSgnY2F0LmpwZycpOyB9CmZ1bmN0aW9uIHNldHVwKCkgeyBjcmVhdGVDYW52YXMoODAwLCA4MDApOyB9CgovLyBwNS5qcyAyLngKbGV0IGltZzsKYXN5bmMgZnVuY3Rpb24gc2V0dXAoKSB7CiAgY3JlYXRlQ2FudmFzKDgwMCwgODAwKTsKICBpbWcgPSBhd2FpdCBsb2FkSW1hZ2UoJ2NhdC5qcGcnKTsKfQpgYGAKCiMjIyBOZXcgQ29sb3IgTW9kZXMKCmBgYGphdmFzY3JpcHQKY29sb3JNb2RlKE9LTENIKTsgIC8vIHBlcmNlcHR1YWxseSB1bmlmb3JtIOKAlCBiZXR0ZXIgZ3JhZGllbnRzCi8vIEw6IDAtMSAobGlnaHRuZXNzKSwgQzogMC0wLjQgKGNocm9tYSksIEg6IDAtMzYwIChodWUpCmZpbGwoMC43LCAwLjE1LCAyMDApOyAgLy8gbWVkaXVtLWJyaWdodCBzYXR1cmF0ZWQgYmx1ZQoKY29sb3JNb2RlKE9LTEFCKTsgIC8vIHBlcmNlcHR1YWxseSB1bmlmb3JtLCBubyBodWUgYW5nbGUKY29sb3JNb2RlKEhXQik7ICAgIC8vIEh1ZS1XaGl0ZW5lc3MtQmxhY2tuZXNzCmBgYAoKIyMjIHNwbGluZVZlcnRleCgpIHJlcGxhY2VzIGN1cnZlVmVydGV4KCkKCk5vIG1vcmUgZG91YmxpbmcgZmlyc3QvbGFzdCBjb250cm9sIHBvaW50czoKCmBgYGphdmFzY3JpcHQKLy8gcDUuanMgMS54IOKAlCBtdXN0IHJlcGVhdCBmaXJzdCBhbmQgbGFzdApiZWdpblNoYXBlKCk7CmN1cnZlVmVydGV4KHB0c1swXS54LCBwdHNbMF0ueSk7ICAvLyBkb3VibGVkCmZvciAobGV0IHAgb2YgcHRzKSBjdXJ2ZVZlcnRleChwLngsIHAueSk7CmN1cnZlVmVydGV4KHB0c1twdHMubGVuZ3RoLTFdLngsIHB0c1twdHMubGVuZ3RoLTFdLnkpOyAgLy8gZG91YmxlZAplbmRTaGFwZSgpOwoKLy8gcDUuanMgMi54IOKAlCBjbGVhbgpiZWdpblNoYXBlKCk7CmZvciAobGV0IHAgb2YgcHRzKSBzcGxpbmVWZXJ0ZXgocC54LCBwLnkpOwplbmRTaGFwZSgpOwpgYGAKCiMjIyBTaGFkZXIgLm1vZGlmeSgpIEFQSQoKTW9kaWZ5IGJ1aWx0LWluIHNoYWRlcnMgd2l0aG91dCB3cml0aW5nIGZ1bGwgR0xTTDoKCmBgYGphdmFzY3JpcHQKbGV0IG15U2hhZGVyID0gYmFzZU1hdGVyaWFsU2hhZGVyKCkubW9kaWZ5KHsKICB2ZXJ0ZXhEZWNsYXJhdGlvbnM6ICd1bmlmb3JtIGZsb2F0IHVUaW1lOycsCiAgJ3ZlYzQgZ2V0V29ybGRQb3NpdGlvbic6IGAodmVjNCBwb3MpIHsKICAgIHBvcy55ICs9IHNpbihwb3MueCAqIDAuMSArIHVUaW1lKSAqIDIwLjA7CiAgICByZXR1cm4gcG9zOwogIH1gCn0pOwpgYGAKCiMjIyBWYXJpYWJsZSBGb250cwoKYGBgamF2YXNjcmlwdAp0ZXh0V2VpZ2h0KDcwMCk7ICAvLyBkeW5hbWljIHdlaWdodCB3aXRob3V0IGxvYWRpbmcgbXVsdGlwbGUgZmlsZXMKYGBgCgojIyMgdGV4dFRvQ29udG91cnMoKSBhbmQgdGV4dFRvTW9kZWwoKQoKYGBgamF2YXNjcmlwdApsZXQgY29udG91cnMgPSBmb250LnRleHRUb0NvbnRvdXJzKCdIRUxMTycsIDAsIDAsIDIwMCk7Ci8vIFJldHVybnMgYXJyYXkgb2YgY29udG91ciBhcnJheXMgKGNsb3NlZCBwYXRocykKCmxldCBnZW8gPSBmb250LnRleHRUb01vZGVsKCdIRUxMTycsIDAsIDAsIDIwMCk7Ci8vIFJldHVybnMgcDUuR2VvbWV0cnkgZm9yIDNEIGV4dHJ1ZGVkIHRleHQKYGBgCgojIyMgQ0ROIGZvciBwNS5qcyAyLngKCmBgYGh0bWwKPHNjcmlwdCBzcmM9Imh0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9ucG0vcDVAMi9saWIvcDUubWluLmpzIj48L3NjcmlwdD4KYGBgCg==
+# Core API Reference
+
+## Canvas Setup
+
+### createCanvas()
+
+```javascript
+// 2D (default renderer)
+createCanvas(1920, 1080);
+
+// WebGL (3D, shaders)
+createCanvas(1920, 1080, WEBGL);
+
+// Responsive
+createCanvas(windowWidth, windowHeight);
+```
+
+### Pixel Density
+
+High-DPI displays render at 2x by default. This doubles memory usage and halves performance.
+
+```javascript
+// Force 1x for consistent export and performance
+pixelDensity(1);
+
+// Match display (default) — sharp on retina but expensive
+pixelDensity(displayDensity());
+
+// ALWAYS call before createCanvas()
+function setup() {
+  pixelDensity(1);        // first
+  createCanvas(1920, 1080); // second
+}
+```
+
+For export, always `pixelDensity(1)` and use the exact target resolution. Never rely on device scaling for final output.
+
+### Responsive Resize
+
+```javascript
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  // Recreate offscreen buffers at new size
+  bgLayer = createGraphics(width, height);
+  // Reinitialize any size-dependent state
+}
+```
+
+## Coordinate System
+
+### P2D (Default)
+- Origin: top-left (0, 0)
+- X increases rightward
+- Y increases downward
+- Angles: radians by default, `angleMode(DEGREES)` to switch
+
+### WEBGL
+- Origin: center of canvas
+- X increases rightward, Y increases **upward**, Z increases toward viewer
+- To get P2D-like coordinates in WEBGL: `translate(-width/2, -height/2)`
+
+## Draw Loop
+
+```javascript
+function preload() {
+  // Load assets before setup — fonts, images, JSON, CSV
+  // Blocks execution until all loads complete
+  font = loadFont('font.otf');
+  img = loadImage('texture.png');
+  data = loadJSON('data.json');
+}
+
+function setup() {
+  // Runs once. Create canvas, initialize state.
+  createCanvas(1920, 1080);
+  colorMode(HSB, 360, 100, 100, 100);
+  randomSeed(CONFIG.seed);
+  noiseSeed(CONFIG.seed);
+}
+
+function draw() {
+  // Runs every frame (default 60fps).
+  // Set frameRate(30) in setup() to change.
+  // Call noLoop() for static sketches (render once).
+}
+```
+
+### Frame Control
+
+```javascript
+frameRate(30);           // set target FPS
+noLoop();                // stop draw loop (static pieces)
+loop();                  // restart draw loop
+redraw();                // call draw() once (manual refresh)
+frameCount              // frames since start (integer)
+deltaTime               // milliseconds since last frame (float)
+millis()                // milliseconds since sketch started
+```
+
+## Transform Stack
+
+Every transform is cumulative. Use `push()`/`pop()` to isolate.
+
+```javascript
+push();
+  translate(width / 2, height / 2);
+  rotate(angle);
+  scale(1.5);
+  // draw something at transformed position
+  ellipse(0, 0, 100, 100);
+pop();
+// back to original coordinate system
+```
+
+### Transform Functions
+
+| Function | Effect |
+|----------|--------|
+| `translate(x, y)` | Move origin |
+| `rotate(angle)` | Rotate around origin (radians) |
+| `scale(s)` / `scale(sx, sy)` | Scale from origin |
+| `shearX(angle)` | Skew X axis |
+| `shearY(angle)` | Skew Y axis |
+| `applyMatrix(a, b, c, d, e, f)` | Arbitrary 2D affine transform |
+| `resetMatrix()` | Clear all transforms |
+
+### Composition Pattern: Rotate Around Center
+
+```javascript
+push();
+  translate(cx, cy);       // move origin to center
+  rotate(angle);           // rotate around that center
+  translate(-cx, -cy);     // move origin back
+  // draw at original coordinates, but rotated around (cx, cy)
+  rect(cx - 50, cy - 50, 100, 100);
+pop();
+```
+
+## Offscreen Buffers (createGraphics)
+
+Offscreen buffers are separate canvases you can draw to and composite. Essential for:
+- **Layered composition** — background, midground, foreground
+- **Persistent trails** — draw to buffer, fade with semi-transparent rect, never clear
+- **Masking** — draw mask to buffer, apply with `image()` or pixel operations
+- **Post-processing** — render scene to buffer, apply effects, draw to main canvas
+
+```javascript
+let layer;
+
+function setup() {
+  createCanvas(1920, 1080);
+  layer = createGraphics(width, height);
+}
+
+function draw() {
+  // Draw to offscreen buffer
+  layer.background(0, 10);  // semi-transparent clear = trails
+  layer.fill(255);
+  layer.ellipse(mouseX, mouseY, 20);
+
+  // Composite to main canvas
+  image(layer, 0, 0);
+}
+```
+
+### Trail Effect Pattern
+
+```javascript
+let trailBuffer;
+
+function setup() {
+  createCanvas(1920, 1080);
+  trailBuffer = createGraphics(width, height);
+  trailBuffer.background(0);
+}
+
+function draw() {
+  // Fade previous frame (lower alpha = longer trails)
+  trailBuffer.noStroke();
+  trailBuffer.fill(0, 0, 0, 15);  // RGBA — 15/255 alpha
+  trailBuffer.rect(0, 0, width, height);
+
+  // Draw new content
+  trailBuffer.fill(255);
+  trailBuffer.ellipse(mouseX, mouseY, 10);
+
+  // Show
+  image(trailBuffer, 0, 0);
+}
+```
+
+### Multi-Layer Composition
+
+```javascript
+let bgLayer, contentLayer, fxLayer;
+
+function setup() {
+  createCanvas(1920, 1080);
+  bgLayer = createGraphics(width, height);
+  contentLayer = createGraphics(width, height);
+  fxLayer = createGraphics(width, height);
+}
+
+function draw() {
+  // Background — drawn once or slowly evolving
+  renderBackground(bgLayer);
+
+  // Content — main visual elements
+  contentLayer.clear();
+  renderContent(contentLayer);
+
+  // FX — overlays, vignettes, grain
+  fxLayer.clear();
+  renderEffects(fxLayer);
+
+  // Composite with blend modes
+  image(bgLayer, 0, 0);
+  blendMode(ADD);
+  image(contentLayer, 0, 0);
+  blendMode(MULTIPLY);
+  image(fxLayer, 0, 0);
+  blendMode(BLEND);  // reset
+}
+```
+
+## Composition Patterns
+
+### Grid Layout
+
+```javascript
+let cols = 10, rows = 10;
+let cellW = width / cols;
+let cellH = height / rows;
+for (let i = 0; i < cols; i++) {
+  for (let j = 0; j < rows; j++) {
+    let cx = cellW * (i + 0.5);
+    let cy = cellH * (j + 0.5);
+    // draw element at (cx, cy) within cell size (cellW, cellH)
+  }
+}
+```
+
+### Radial Layout
+
+```javascript
+let n = 12;
+for (let i = 0; i < n; i++) {
+  let angle = TWO_PI * i / n;
+  let r = 300;
+  let x = width/2 + cos(angle) * r;
+  let y = height/2 + sin(angle) * r;
+  // draw element at (x, y)
+}
+```
+
+### Golden Ratio Spiral
+
+```javascript
+let phi = (1 + sqrt(5)) / 2;
+let n = 500;
+for (let i = 0; i < n; i++) {
+  let angle = i * TWO_PI / (phi * phi);
+  let r = sqrt(i) * 10;
+  let x = width/2 + cos(angle) * r;
+  let y = height/2 + sin(angle) * r;
+  let size = map(i, 0, n, 8, 2);
+  ellipse(x, y, size);
+}
+```
+
+### Margin-Aware Composition
+
+```javascript
+const MARGIN = 80;  // pixels from edge
+const drawW = width - 2 * MARGIN;
+const drawH = height - 2 * MARGIN;
+
+// Map normalized [0,1] coordinates to drawable area
+function mapX(t) { return MARGIN + t * drawW; }
+function mapY(t) { return MARGIN + t * drawH; }
+```
+
+## Random and Noise
+
+### Seeded Random
+
+```javascript
+randomSeed(42);
+let x = random(100);        // always same value for seed 42
+let y = random(-1, 1);      // range
+let item = random(myArray);  // random element
+```
+
+### Gaussian Random
+
+```javascript
+let x = randomGaussian(0, 1);  // mean=0, stddev=1
+// Useful for natural-looking distributions
+```
+
+### Perlin Noise
+
+```javascript
+noiseSeed(42);
+noiseDetail(4, 0.5);  // 4 octaves, 0.5 falloff
+
+let v = noise(x * 0.01, y * 0.01);  // returns 0.0 to 1.0
+// Scale factor (0.01) controls feature size — smaller = smoother
+```
+
+## Math Utilities
+
+| Function | Description |
+|----------|-------------|
+| `map(v, lo1, hi1, lo2, hi2)` | Remap value between ranges |
+| `constrain(v, lo, hi)` | Clamp to range |
+| `lerp(a, b, t)` | Linear interpolation |
+| `norm(v, lo, hi)` | Normalize to 0-1 |
+| `dist(x1, y1, x2, y2)` | Euclidean distance |
+| `mag(x, y)` | Vector magnitude |
+| `abs()`, `ceil()`, `floor()`, `round()` | Standard math |
+| `sq(n)`, `sqrt(n)`, `pow(b, e)` | Powers |
+| `sin()`, `cos()`, `tan()`, `atan2()` | Trig (radians) |
+| `degrees(r)`, `radians(d)` | Angle conversion |
+| `fract(n)` | Fractional part |
+
+## p5.js 2.0 Changes
+
+p5.js 2.0 (released Apr 2025, current: 2.2) introduces breaking changes. The p5.js editor defaults to 1.x until Aug 2026. Use 2.x only when you need its features.
+
+### async setup() replaces preload()
+
+```javascript
+// p5.js 1.x
+let img;
+function preload() { img = loadImage('cat.jpg'); }
+function setup() { createCanvas(800, 800); }
+
+// p5.js 2.x
+let img;
+async function setup() {
+  createCanvas(800, 800);
+  img = await loadImage('cat.jpg');
+}
+```
+
+### New Color Modes
+
+```javascript
+colorMode(OKLCH);  // perceptually uniform — better gradients
+// L: 0-1 (lightness), C: 0-0.4 (chroma), H: 0-360 (hue)
+fill(0.7, 0.15, 200);  // medium-bright saturated blue
+
+colorMode(OKLAB);  // perceptually uniform, no hue angle
+colorMode(HWB);    // Hue-Whiteness-Blackness
+```
+
+### splineVertex() replaces curveVertex()
+
+No more doubling first/last control points:
+
+```javascript
+// p5.js 1.x — must repeat first and last
+beginShape();
+curveVertex(pts[0].x, pts[0].y);  // doubled
+for (let p of pts) curveVertex(p.x, p.y);
+curveVertex(pts[pts.length-1].x, pts[pts.length-1].y);  // doubled
+endShape();
+
+// p5.js 2.x — clean
+beginShape();
+for (let p of pts) splineVertex(p.x, p.y);
+endShape();
+```
+
+### Shader .modify() API
+
+Modify built-in shaders without writing full GLSL:
+
+```javascript
+let myShader = baseMaterialShader().modify({
+  vertexDeclarations: 'uniform float uTime;',
+  'vec4 getWorldPosition': `(vec4 pos) {
+    pos.y += sin(pos.x * 0.1 + uTime) * 20.0;
+    return pos;
+  }`
+});
+```
+
+### Variable Fonts
+
+```javascript
+textWeight(700);  // dynamic weight without loading multiple files
+```
+
+### textToContours() and textToModel()
+
+```javascript
+let contours = font.textToContours('HELLO', 0, 0, 200);
+// Returns array of contour arrays (closed paths)
+
+let geo = font.textToModel('HELLO', 0, 0, 200);
+// Returns p5.Geometry for 3D extruded text
+```
+
+### CDN for p5.js 2.x
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/p5@2/lib/p5.min.js"></script>
+```

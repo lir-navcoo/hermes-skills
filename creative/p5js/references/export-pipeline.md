@@ -1,1 +1,566 @@
-IyBFeHBvcnQgUGlwZWxpbmUKCiMjIFBORyBFeHBvcnQKCiMjIyBJbi1Ta2V0Y2ggKEtleWJvYXJkIFNob3J0Y3V0KQoKYGBgamF2YXNjcmlwdApmdW5jdGlvbiBrZXlQcmVzc2VkKCkgewogIGlmIChrZXkgPT09ICdzJyB8fCBrZXkgPT09ICdTJykgewogICAgc2F2ZUNhbnZhcygnb3V0cHV0JywgJ3BuZycpOwogICAgLy8gRG93bmxvYWRzIG91dHB1dC5wbmcgaW1tZWRpYXRlbHkKICB9Cn0KYGBgCgojIyMgVGltZWQgRXhwb3J0IChTdGF0aWMgR2VuZXJhdGl2ZSkKCmBgYGphdmFzY3JpcHQKZnVuY3Rpb24gc2V0dXAoKSB7CiAgY3JlYXRlQ2FudmFzKDM4NDAsIDIxNjApOwogIHBpeGVsRGVuc2l0eSgxKTsKICByYW5kb21TZWVkKENPTkZJRy5zZWVkKTsKICBub2lzZVNlZWQoQ09ORklHLnNlZWQpOwogIG5vTG9vcCgpOwp9CgpmdW5jdGlvbiBkcmF3KCkgewogIC8vIC4uLiByZW5kZXIgZXZlcnl0aGluZyAuLi4KICBzYXZlQ2FudmFzKCdvdXRwdXQtc2VlZC0nICsgQ09ORklHLnNlZWQsICdwbmcnKTsKfQpgYGAKCiMjIyBIaWdoLVJlc29sdXRpb24gRXhwb3J0CgpGb3IgcmVzb2x1dGlvbnMgYmV5b25kIHNjcmVlbiBzaXplLCB1c2UgYHBpeGVsRGVuc2l0eSgpYCBvciBhIGxhcmdlIG9mZnNjcmVlbiBidWZmZXI6CgpgYGBqYXZhc2NyaXB0CmZ1bmN0aW9uIGV4cG9ydEhpZ2hSZXMoc2NhbGUpIHsKICBsZXQgYnVmZmVyID0gY3JlYXRlR3JhcGhpY3Mod2lkdGggKiBzY2FsZSwgaGVpZ2h0ICogc2NhbGUpOwogIGJ1ZmZlci5zY2FsZShzY2FsZSk7CiAgLy8gUmUtcmVuZGVyIGV2ZXJ5dGhpbmcgdG8gYnVmZmVyIGF0IGhpZ2hlciByZXNvbHV0aW9uCiAgcmVuZGVyU2NlbmUoYnVmZmVyKTsKICBidWZmZXIuc2F2ZSgnaGlnaHJlcy1vdXRwdXQucG5nJyk7Cn0KYGBgCgojIyMgQmF0Y2ggU2VlZCBFeHBvcnQKCmBgYGphdmFzY3JpcHQKZnVuY3Rpb24gZXhwb3J0QmF0Y2goc3RhcnRTZWVkLCBjb3VudCkgewogIGZvciAobGV0IGkgPSAwOyBpIDwgY291bnQ7IGkrKykgewogICAgQ09ORklHLnNlZWQgPSBzdGFydFNlZWQgKyBpOwogICAgcmFuZG9tU2VlZChDT05GSUcuc2VlZCk7CiAgICBub2lzZVNlZWQoQ09ORklHLnNlZWQpOwogICAgLy8gUmVuZGVyCiAgICBiYWNrZ3JvdW5kKDApOwogICAgcmVuZGVyU2NlbmUoKTsKICAgIHNhdmVDYW52YXMoJ3NlZWQtJyArIG5mKENPTkZJRy5zZWVkLCA1KSwgJ3BuZycpOwogIH0KfQpgYGAKCiMjIEdJRiBFeHBvcnQKCiMjIyBzYXZlR2lmKCkKCmBgYGphdmFzY3JpcHQKZnVuY3Rpb24ga2V5UHJlc3NlZCgpIHsKICBpZiAoa2V5ID09PSAnZycgfHwga2V5ID09PSAnRycpIHsKICAgIHNhdmVHaWYoJ291dHB1dCcsIDUpOwogICAgLy8gQ2FwdHVyZXMgNSBzZWNvbmRzIG9mIGFuaW1hdGlvbgogICAgLy8gT3B0aW9uczogc2F2ZUdpZihmaWxlbmFtZSwgZHVyYXRpb24sIG9wdGlvbnMpCiAgfQp9CgovLyBXaXRoIG9wdGlvbnMKc2F2ZUdpZignb3V0cHV0JywgNSwgewogIGRlbGF5OiAwLCAgICAgICAgLy8gZGVsYXkgYmVmb3JlIHN0YXJ0aW5nIGNhcHR1cmUgKHNlY29uZHMpCiAgdW5pdHM6ICdzZWNvbmRzJyAvLyBvciAnZnJhbWVzJwp9KTsKYGBgCgpMaW1pdGF0aW9uczoKLSBHSUYgaXMgMjU2IGNvbG9ycyBtYXgg4oCUIGRpdGhlcmluZyBhcnRpZmFjdHMgb24gZ3JhZGllbnRzCi0gTGFyZ2UgY2FudmFzZXMgcHJvZHVjZSBodWdlIGZpbGVzCi0gVXNlIGEgc21hbGxlciBjYW52YXMgKDY0MHgzNjApIGZvciBHSUYsIGhpZ2hlciBmb3IgUE5HL01QNAotIEZyYW1lIHJhdGUgaXMgYXBwcm94aW1hdGUKCiMjIyBPcHRpbWFsIEdJRiBTZXR0aW5ncwoKYGBgamF2YXNjcmlwdAovLyBGb3IgR0lGIG91dHB1dCwgdXNlIHNtYWxsZXIgY2FudmFzIGFuZCBsb3dlciBmcmFtZXJhdGUKZnVuY3Rpb24gc2V0dXAoKSB7CiAgY3JlYXRlQ2FudmFzKDY0MCwgMzYwKTsKICBmcmFtZVJhdGUoMTUpOyAgLy8gR0lGIHN0YW5kYXJkCiAgcGl4ZWxEZW5zaXR5KDEpOwp9CmBgYAoKIyMgRnJhbWUgU2VxdWVuY2UgRXhwb3J0CgojIyMgc2F2ZUZyYW1lcygpCgpgYGBqYXZhc2NyaXB0CmZ1bmN0aW9uIGtleVByZXNzZWQoKSB7CiAgaWYgKGtleSA9PT0gJ2YnKSB7CiAgICBzYXZlRnJhbWVzKCdmcmFtZScsICdwbmcnLCAxMCwgMzApOwogICAgLy8gMTAgc2Vjb25kcywgMzAgZnBzIOKGkiAzMDAgUE5HIGZpbGVzCiAgICAvLyBEb3dubG9hZHMgYXMgaW5kaXZpZHVhbCBmaWxlcyAoYnJvd3NlciBtYXkgYmxvY2sgYnVsayBkb3dubG9hZHMpCiAgfQp9CmBgYAoKIyMjIE1hbnVhbCBGcmFtZSBFeHBvcnQgKE1vcmUgQ29udHJvbCkKCmBgYGphdmFzY3JpcHQKbGV0IHJlY29yZGluZyA9IGZhbHNlOwpsZXQgZnJhbWVOdW0gPSAwOwpjb25zdCBUT1RBTF9GUkFNRVMgPSAzMDA7CgpmdW5jdGlvbiBrZXlQcmVzc2VkKCkgewogIGlmIChrZXkgPT09ICdyJykgcmVjb3JkaW5nID0gIXJlY29yZGluZzsKfQoKZnVuY3Rpb24gZHJhdygpIHsKICAvLyAuLi4gcmVuZGVyIGZyYW1lIC4uLgoKICBpZiAocmVjb3JkaW5nKSB7CiAgICBzYXZlQ2FudmFzKCdmcmFtZS0nICsgbmYoZnJhbWVOdW0sIDQpLCAncG5nJyk7CiAgICBmcmFtZU51bSsrOwogICAgaWYgKGZyYW1lTnVtID49IFRPVEFMX0ZSQU1FUykgewogICAgICByZWNvcmRpbmcgPSBmYWxzZTsKICAgICAgbm9Mb29wKCk7CiAgICAgIGNvbnNvbGUubG9nKCdSZWNvcmRpbmcgY29tcGxldGU6ICcgKyBmcmFtZU51bSArICcgZnJhbWVzJyk7CiAgICB9CiAgfQp9CmBgYAoKIyMjIERldGVybWluaXN0aWMgQ2FwdHVyZSAoQ3JpdGljYWwgZm9yIFZpZGVvKQoKVGhlIGBub0xvb3AoKWAgKyBgcmVkcmF3KClgIHBhdHRlcm4gaXMgKipyZXF1aXJlZCoqIGZvciBmcmFtZS1wZXJmZWN0IGhlYWRsZXNzIGNhcHR1cmUuIFdpdGhvdXQgaXQsIHA1J3MgZHJhdyBsb29wIHJ1bnMgZnJlZWx5IGluIENocm9tZSB3aGlsZSBQdXBwZXRlZXIgc2NyZWVuc2hvdHMgYXJlIHNsb3cg4oCUIHRoZSBza2V0Y2ggcnVucyBhaGVhZCBhbmQgeW91IGdldCBkdXBsaWNhdGUvbWlzc2luZyBmcmFtZXMuCgpgYGBqYXZhc2NyaXB0CmZ1bmN0aW9uIHNldHVwKCkgewogIGNyZWF0ZUNhbnZhcygxOTIwLCAxMDgwKTsKICBwaXhlbERlbnNpdHkoMSk7CiAgbm9Mb29wKCk7ICAgICAgICAgICAgICAgICAgICAvLyBTVE9QIHRoZSBhdXRvbWF0aWMgZHJhdyBsb29wCiAgd2luZG93Ll9wNVJlYWR5ID0gdHJ1ZTsgICAgICAvLyBTaWduYWwgdG8gY2FwdHVyZSBzY3JpcHQKfQoKZnVuY3Rpb24gZHJhdygpIHsKICAvLyBUaGlzIG9ubHkgcnVucyB3aGVuIHJlZHJhdygpIGlzIGNhbGxlZCBieSB0aGUgY2FwdHVyZSBzY3JpcHQKICAvLyBmcmFtZUNvdW50IGluY3JlbWVudHMgZXhhY3RseSBvbmNlIHBlciByZWRyYXcoKQp9CmBgYAoKVGhlIGJ1bmRsZWQgYHNjcmlwdHMvZXhwb3J0LWZyYW1lcy5qc2AgZGV0ZWN0cyBgd2luZG93Ll9wNVJlYWR5YCBhbmQgc3dpdGNoZXMgdG8gZGV0ZXJtaW5pc3RpYyBtb2RlIGF1dG9tYXRpY2FsbHkuIFdpdGhvdXQgaXQsIGZhbGxzIGJhY2sgdG8gdGltZWQgY2FwdHVyZSAobGVzcyBwcmVjaXNlKS4KCiMjIyBmZm1wZWc6IEZyYW1lcyB0byBNUDQKCmBgYGJhc2gKIyBCYXNpYyBlbmNvZGluZwpmZm1wZWcgLWZyYW1lcmF0ZSAzMCAtaSBmcmFtZS0lMDRkLnBuZyAtYzp2IGxpYngyNjQgLXBpeF9mbXQgeXV2NDIwcCBvdXRwdXQubXA0CgojIEhpZ2ggcXVhbGl0eQpmZm1wZWcgLWZyYW1lcmF0ZSAzMCAtaSBmcmFtZS0lMDRkLnBuZyBcCiAgLWM6diBsaWJ4MjY0IC1wcmVzZXQgc2xvdyAtY3JmIDE4IC1waXhfZm10IHl1djQyMHAgXAogIG91dHB1dC5tcDQKCiMgV2l0aCBhdWRpbwpmZm1wZWcgLWZyYW1lcmF0ZSAzMCAtaSBmcmFtZS0lMDRkLnBuZyAtaSBhdWRpby5tcDMgXAogIC1jOnYgbGlieDI2NCAtYzphIGFhYyAtc2hvcnRlc3QgXAogIG91dHB1dC5tcDQKCiMgTG9vcCBmb3Igc29jaWFsIG1lZGlhICgzIGxvb3BzKQpmZm1wZWcgLXN0cmVhbV9sb29wIDIgLWkgb3V0cHV0Lm1wNCAtYyBjb3B5IG91dHB1dC1sb29wZWQubXA0CmBgYAoKIyMjIFZpZGVvIEV4cG9ydCBHb3RjaGFzCgoqKllVVjQyMCBjbGlwcyBkYXJrIHZhbHVlcy4qKiBILjI2NCBlbmNvZGVzIGluIFlVVjQyMCBjb2xvciBzcGFjZSwgd2hpY2ggcm91bmRzIGRhcmsgUkdCIHZhbHVlcy4gQ29udGVudCBiZWxvdyBSR0IoOCw4LDgpIG1heSBiZWNvbWUgcHVyZSBibGFjay4gU3VidGxlIGRhcmsgZGV0YWlscyAoZGltIHBhcnRpY2xlIHRyYWlscywgZmFpbnQgbm9pc2UgdGV4dHVyZXMpIGRpc2FwcGVhciBpbiB0aGUgZW5jb2RlZCB2aWRlbyBldmVuIHRob3VnaCB0aGV5J3JlIHZpc2libGUgaW4gdGhlIFBORyBmcmFtZXMuCgoqKkZpeDoqKiBFbnN1cmUgbWluaW11bSBicmlnaHRuZXNzIG9mIH4xMCBmb3IgYW55IHZpc2libGUgY29udGVudC4gVGVzdCBieSBlbmNvZGluZyBhIGZldyBmcmFtZXMgYW5kIGNvbXBhcmluZyB0aGUgTVA0IGZyYW1lIHZzIHRoZSBzb3VyY2UgUE5HLgoKYGBgYmFzaAojIEV4dHJhY3QgYSBmcmFtZSBmcm9tIE1QNCBmb3IgY29tcGFyaXNvbgpmZm1wZWcgLWkgb3V0cHV0Lm1wNCAtdmYgInNlbGVjdD1lcShuXCwxMDApIiAtdmZyYW1lcyAxIGNoZWNrLnBuZwpgYGAKCioqU3RhdGljIGZyYW1lcyBsb29rIGJyb2tlbiBpbiB2aWRlby4qKiBJZiBhbiBhbGdvcml0aG0gcHJvZHVjZXMgYSBzaW5nbGUgc3RhdGljIGltYWdlIChsaWtlIGEgcHJlLWNvbXB1dGVkIGF0dHJhY3RvciBoZWF0bWFwKSwgaXQgcmVhZHMgYXMgYSBmcmVlemUvZ2xpdGNoIGluIHZpZGVvLiBBbHdheXMgYWRkIGFuaW1hdGlvbiBldmVuIHRvIHN0YXRpYyBjb250ZW50OgotIFByb2dyZXNzaXZlIHJldmVhbCAoZXhwYW5kIGZyb20gY2VudGVyLCBzd2VlcCBhY3Jvc3MpCi0gU2xvdyBwYXJhbWV0ZXIgZHJpZnQgKHJvdGF0ZSBjb2xvciBtYXBwaW5nLCBzaGlmdCBub2lzZSBvZmZzZXQpCi0gQ2FtZXJhLWxpa2UgbW90aW9uIChzbG93IHpvb20sIHNsaWdodCBwYW4pCi0gT3ZlcmxheSBhbmltYXRlZCBwYXJ0aWNsZXMgb3IgZ3JhaW4KCioqU2NlbmUgdHJhbnNpdGlvbnMgYXJlIG1hbmRhdG9yeS4qKiBIYXJkIGN1dHMgYmV0d2VlbiB2aXN1YWxseSBkaWZmZXJlbnQgc2NlbmVzIGFyZSBqYXJyaW5nLiBVc2UgZmFkZSBlbnZlbG9wZXM6CgpgYGBqYXZhc2NyaXB0CmNvbnN0IEZBREVfRlJBTUVTID0gMTU7ICAvLyBoYWxmLXNlY29uZCBhdCAzMGZwcwpsZXQgZmFkZSA9IDE7CmlmIChsb2NhbEZyYW1lIDwgRkFERV9GUkFNRVMpIGZhZGUgPSBsb2NhbEZyYW1lIC8gRkFERV9GUkFNRVM7CmlmIChsb2NhbEZyYW1lID4gU0NFTkVfRlJBTUVTIC0gRkFERV9GUkFNRVMpIGZhZGUgPSAoU0NFTkVfRlJBTUVTIC0gbG9jYWxGcmFtZSkgLyBGQURFX0ZSQU1FUzsKZmFkZSA9IGZhZGUgKiBmYWRlICogKDMgLSAyICogZmFkZSk7ICAvLyBzbW9vdGhzdGVwCi8vIEFwcGx5OiBtdWx0aXBseSBhbGwgYWxwaGEvYnJpZ2h0bmVzcyBieSBmYWRlCmBgYAoKIyMjIFBlci1DbGlwIEFyY2hpdGVjdHVyZSAoTXVsdGktU2NlbmUgVmlkZW9zKQoKRm9yIHZpZGVvcyB3aXRoIG11bHRpcGxlIHNjZW5lcywgcmVuZGVyIGVhY2ggYXMgYSBzZXBhcmF0ZSBIVE1MIGZpbGUgKyBNUDQgY2xpcCwgdGhlbiBzdGl0Y2ggd2l0aCBmZm1wZWcuIFRoaXMgZW5hYmxlcyByZS1yZW5kZXJpbmcgaW5kaXZpZHVhbCBzY2VuZXMgd2l0aG91dCB0b3VjaGluZyB0aGUgcmVzdC4KCioqRGlyZWN0b3J5IHN0cnVjdHVyZToqKgpgYGAKcHJvamVjdC8K4pSc4pSA4pSAIGNhcHR1cmUtc2NlbmUuanMgICAgICAgICAgIyBTaGFyZWQ6IG5vZGUgY2FwdHVyZS1zY2VuZS5qcyA8aHRtbD4gPG91dGRpcj4gPGZyYW1lcz4K4pSc4pSA4pSAIHJlbmRlci1hbGwuc2ggICAgICAgICAgICAgIyBSZW5kZXJzIGFsbCArIHN0aXRjaGVzCuKUnOKUgOKUgCBzY2VuZXMvCuKUgiAgIOKUnOKUgOKUgCAwMC1pbnRyby5odG1sICAgICAgICAgIyBFYWNoIHNjZW5lIGlzIHNlbGYtY29udGFpbmVkCuKUgiAgIOKUnOKUgOKUgCAwMS1wYXJ0aWNsZXMuaHRtbArilIIgICDilJzilIDilIAgMDItbm9pc2UuaHRtbArilIIgICDilJTilIDilIAgMDMtb3V0cm8uaHRtbArilJTilIDilIAgY2xpcHMvCiAgICDilJzilIDilIAgMDAtaW50cm8ubXA0ICAgICAgICAgICMgRWFjaCBjbGlwIHJlbmRlcmVkIGluZGVwZW5kZW50bHkKICAgIOKUnOKUgOKUgCAwMS1wYXJ0aWNsZXMubXA0CiAgICDilJzilIDilIAgMDItbm9pc2UubXA0CiAgICDilJzilIDilIAgMDMtb3V0cm8ubXA0CiAgICDilJTilIDilIAgY29uY2F0LnR4dApgYGAKCioqU3RpdGNoIGNsaXBzIHdpdGggZmZtcGVnIGNvbmNhdDoqKgpgYGBiYXNoCiMgY29uY2F0LnR4dCAob3JkZXIgZGV0ZXJtaW5lcyBmaW5hbCBzZXF1ZW5jZSkKZmlsZSAnMDAtaW50cm8ubXA0JwpmaWxlICcwMS1wYXJ0aWNsZXMubXA0JwpmaWxlICcwMi1ub2lzZS5tcDQnCmZpbGUgJzAzLW91dHJvLm1wNCcKCiMgTG9zc2xlc3Mgc3RpdGNoIChhbGwgY2xpcHMgbXVzdCBoYXZlIHNhbWUgY29kZWMvcmVzb2x1dGlvbi9mcHMpCmZmbXBlZyAtZiBjb25jYXQgLXNhZmUgMCAtaSBjb25jYXQudHh0IC1jIGNvcHkgZmluYWwubXA0CmBgYAoKKipSZS1yZW5kZXIgYSBzaW5nbGUgc2NlbmU6KioKYGBgYmFzaApub2RlIGNhcHR1cmUtc2NlbmUuanMgc2NlbmVzLzAxLXBhcnRpY2xlcy5odG1sIGNsaXBzLzAxLXBhcnRpY2xlcyAxNTAKZmZtcGVnIC15IC1mcmFtZXJhdGUgMzAgLWkgY2xpcHMvMDEtcGFydGljbGVzL2ZyYW1lLSUwNGQucG5nIFwKICAtYzp2IGxpYngyNjQgLXByZXNldCBzbG93IC1jcmYgMTYgLXBpeF9mbXQgeXV2NDIwcCBjbGlwcy8wMS1wYXJ0aWNsZXMubXA0CiMgVGhlbiByZS1zdGl0Y2gKZmZtcGVnIC15IC1mIGNvbmNhdCAtc2FmZSAwIC1pIGNsaXBzL2NvbmNhdC50eHQgLWMgY29weSBmaW5hbC5tcDQKYGBgCgoqKlJlLW9yZGVyIHdpdGhvdXQgcmUtcmVuZGVyaW5nOioqIEp1c3QgY2hhbmdlIHRoZSBvcmRlciBpbiBjb25jYXQudHh0IGFuZCByZS1zdGl0Y2guIE5vIGZyYW1lcyBuZWVkIHJlLXJlbmRlcmluZy4KCioqRWFjaCBzY2VuZSBIVE1MIG11c3Q6KioKLSBDYWxsIGBub0xvb3AoKWAgaW4gc2V0dXAgYW5kIHNldCBgd2luZG93Ll9wNVJlYWR5ID0gdHJ1ZWAKLSBVc2UgYGZyYW1lQ291bnRgLWJhc2VkIHRpbWluZyAobm90IGBtaWxsaXMoKWApIGZvciBkZXRlcm1pbmlzdGljIG91dHB1dAotIEhhbmRsZSBpdHMgb3duIGZhZGUtaW4vZmFkZS1vdXQgZW52ZWxvcGUKLSBCZSBmdWxseSBzZWxmLWNvbnRhaW5lZCAobm8gc2hhcmVkIHN0YXRlIGJldHdlZW4gc2NlbmVzKQoKIyMjIGZmbXBlZzogRnJhbWVzIHRvIEdJRiAoQmV0dGVyIFF1YWxpdHkpCgpgYGBiYXNoCiMgR2VuZXJhdGUgcGFsZXR0ZSBmaXJzdCBmb3Igb3B0aW1hbCBjb2xvcnMKZmZtcGVnIC1pIGZyYW1lLSUwNGQucG5nIC12ZiAiZnBzPTE1LHBhbGV0dGVnZW49bWF4X2NvbG9ycz0yNTYiIHBhbGV0dGUucG5nCgojIFJlbmRlciBHSUYgdXNpbmcgcGFsZXR0ZQpmZm1wZWcgLWkgZnJhbWUtJTA0ZC5wbmcgLWkgcGFsZXR0ZS5wbmcgXAogIC1sYXZmaSAiZnBzPTE1IFt4XTsgW3hdWzE6dl0gcGFsZXR0ZXVzZT1kaXRoZXI9YmF5ZXI6YmF5ZXJfc2NhbGU9MyIgXAogIG91dHB1dC5naWYKYGBgCgojIyBIZWFkbGVzcyBFeHBvcnQgKFB1cHBldGVlcikKCkZvciBhdXRvbWF0ZWQsIHNlcnZlci1zaWRlLCBvciBDSSByZW5kZXJpbmcuIFVzZXMgYSBoZWFkbGVzcyBDaHJvbWUgYnJvd3NlciB0byBydW4gdGhlIHNrZXRjaC4KCiMjIyBleHBvcnQtZnJhbWVzLmpzIChOb2RlLmpzIFNjcmlwdCkKClNlZSBgc2NyaXB0cy9leHBvcnQtZnJhbWVzLmpzYCBmb3IgdGhlIGZ1bGwgaW1wbGVtZW50YXRpb24uIEJhc2ljIHBhdHRlcm46CgpgYGBqYXZhc2NyaXB0CmNvbnN0IHB1cHBldGVlciA9IHJlcXVpcmUoJ3B1cHBldGVlcicpOwoKYXN5bmMgZnVuY3Rpb24gY2FwdHVyZUZyYW1lcyhodG1sUGF0aCwgb3V0cHV0RGlyLCBvcHRpb25zKSB7CiAgY29uc3QgYnJvd3NlciA9IGF3YWl0IHB1cHBldGVlci5sYXVuY2goewogICAgaGVhZGxlc3M6IHRydWUsCiAgICBhcmdzOiBbJy0tbm8tc2FuZGJveCcsICctLWRpc2FibGUtc2V0dWlkLXNhbmRib3gnXQogIH0pOwogIGNvbnN0IHBhZ2UgPSBhd2FpdCBicm93c2VyLm5ld1BhZ2UoKTsKCiAgYXdhaXQgcGFnZS5zZXRWaWV3cG9ydCh7CiAgICB3aWR0aDogb3B0aW9ucy53aWR0aCB8fCAxOTIwLAogICAgaGVpZ2h0OiBvcHRpb25zLmhlaWdodCB8fCAxMDgwLAogICAgZGV2aWNlU2NhbGVGYWN0b3I6IDEKICB9KTsKCiAgYXdhaXQgcGFnZS5nb3RvKGBmaWxlOi8vJHtwYXRoLnJlc29sdmUoaHRtbFBhdGgpfWAsIHsKICAgIHdhaXRVbnRpbDogJ25ldHdvcmtpZGxlMCcKICB9KTsKCiAgLy8gV2FpdCBmb3Igc2tldGNoIHRvIGluaXRpYWxpemUKICBhd2FpdCBwYWdlLndhaXRGb3JTZWxlY3RvcignY2FudmFzJyk7CiAgYXdhaXQgcGFnZS53YWl0Rm9yVGltZW91dCgxMDAwKTsKCiAgZm9yIChsZXQgaSA9IDA7IGkgPCBvcHRpb25zLmZyYW1lczsgaSsrKSB7CiAgICBjb25zdCBjYW52YXMgPSBhd2FpdCBwYWdlLiQoJ2NhbnZhcycpOwogICAgYXdhaXQgY2FudmFzLnNjcmVlbnNob3QoewogICAgICBwYXRoOiBwYXRoLmpvaW4ob3V0cHV0RGlyLCBgZnJhbWUtJHtTdHJpbmcoaSkucGFkU3RhcnQoNCwgJzAnKX0ucG5nYCkKICAgIH0pOwoKICAgIC8vIEFkdmFuY2Ugb25lIGZyYW1lCiAgICBhd2FpdCBwYWdlLmV2YWx1YXRlKCgpID0+IHsgcmVkcmF3KCk7IH0pOwogICAgYXdhaXQgcGFnZS53YWl0Rm9yVGltZW91dCgxMDAwIC8gb3B0aW9ucy5mcHMpOwogIH0KCiAgYXdhaXQgYnJvd3Nlci5jbG9zZSgpOwp9CmBgYAoKIyMjIHJlbmRlci5zaCAoRnVsbCBQaXBlbGluZSkKClNlZSBgc2NyaXB0cy9yZW5kZXIuc2hgIGZvciB0aGUgY29tcGxldGUgcmVuZGVyIHNjcmlwdC4gUGlwZWxpbmU6CgpgYGAKMS4gTGF1bmNoIFB1cHBldGVlciDihpIgb3BlbiBza2V0Y2ggSFRNTAoyLiBDYXB0dXJlIE4gZnJhbWVzIGFzIFBORyBzZXF1ZW5jZQozLiBQaXBlIHRvIGZmbXBlZyDihpIgZW5jb2RlIEguMjY0IE1QNAo0LiBPcHRpb25hbDogYWRkIGF1ZGlvIHRyYWNrCjUuIENsZWFuIHVwIHRlbXAgZnJhbWVzCmBgYAoKIyMgU1ZHIEV4cG9ydAoKIyMjIFVzaW5nIHA1LmpzLXN2ZyBMaWJyYXJ5CgpgYGBodG1sCjxzY3JpcHQgc3JjPSJodHRwczovL3VucGtnLmNvbS9wNS5qcy1zdmdAMS41LjEiPjwvc2NyaXB0PgpgYGAKCmBgYGphdmFzY3JpcHQKZnVuY3Rpb24gc2V0dXAoKSB7CiAgY3JlYXRlQ2FudmFzKDE5MjAsIDEwODAsIFNWRyk7ICAvLyBTVkcgcmVuZGVyZXIKICBub0xvb3AoKTsKfQoKZnVuY3Rpb24gZHJhdygpIHsKICAvLyBPbmx5IHZlY3RvciBvcGVyYXRpb25zIChubyBwaXhlbHMsIG5vIGJsZW5kIG1vZGVzKQogIHN0cm9rZSgwKTsKICBub0ZpbGwoKTsKICBmb3IgKGxldCBpID0gMDsgaSA8IDEwMDsgaSsrKSB7CiAgICBsZXQgeCA9IHJhbmRvbSh3aWR0aCk7CiAgICBsZXQgeSA9IHJhbmRvbShoZWlnaHQpOwogICAgZWxsaXBzZSh4LCB5LCByYW5kb20oMTAsIDUwKSk7CiAgfQogIHNhdmUoJ291dHB1dC5zdmcnKTsKfQpgYGAKCkxpbWl0YXRpb25zOgotIE5vIGBsb2FkUGl4ZWxzKClgLCBgdXBkYXRlUGl4ZWxzKClgLCBgZmlsdGVyKClgLCBgYmxlbmRNb2RlKClgCi0gTm8gV2ViR0wKLSBObyBwaXhlbC1sZXZlbCBlZmZlY3RzCi0gR3JlYXQgZm9yOiBsaW5lIGFydCwgZ2VvbWV0cmljIHBhdHRlcm5zLCBwbG90cwoKIyMjIEh5YnJpZDogUmFzdGVyIEJhY2tncm91bmQgKyBTVkcgT3ZlcmxheQoKUmVuZGVyIGJhY2tncm91bmQgZWZmZWN0cyB0byBQTkcsIHRoZW4gU1ZHIGZvciBjcmlzcCB2ZWN0b3IgZWxlbWVudHMgb24gdG9wLgoKIyMgRXhwb3J0IEZvcm1hdCBEZWNpc2lvbiBHdWlkZQoKfCBOZWVkIHwgRm9ybWF0IHwgTWV0aG9kIHwKfC0tLS0tLXwtLS0tLS0tLXwtLS0tLS0tLXwKfCBTaW5nbGUgc3RpbGwgaW1hZ2UgfCBQTkcgfCBgc2F2ZUNhbnZhcygpYCBvciBga2V5UHJlc3NlZCgpYCB8CnwgUHJpbnQtcXVhbGl0eSBzdGlsbCB8IFBORyAoaGlnaC1yZXMpIHwgYHBpeGVsRGVuc2l0eSgxKWAgKyBsYXJnZSBjYW52YXMgfAp8IFNob3J0IGFuaW1hdGVkIGxvb3AgfCBHSUYgfCBgc2F2ZUdpZigpYCB8CnwgTG9uZyBhbmltYXRpb24gfCBNUDQgfCBGcmFtZSBzZXF1ZW5jZSArIGZmbXBlZyB8CnwgU29jaWFsIG1lZGlhIHZpZGVvIHwgTVA0IHwgYHNjcmlwdHMvcmVuZGVyLnNoYCB8CnwgVmVjdG9yL3ByaW50IHwgU1ZHIHwgcDUuanMtc3ZnIHJlbmRlcmVyIHwKfCBCYXRjaCB2YXJpYXRpb25zIHwgUE5HIHNlcXVlbmNlIHwgU2VlZCBsb29wICsgYHNhdmVDYW52YXMoKWAgfAp8IEludGVyYWN0aXZlIGRlcGxveW1lbnQgfCBIVE1MIHwgU2luZ2xlIHNlbGYtY29udGFpbmVkIGZpbGUgfAp8IEhlYWRsZXNzIHJlbmRlcmluZyB8IFBORy9NUDQgfCBQdXBwZXRlZXIgKyBmZm1wZWcgfAoKIyMgVGlsaW5nIGZvciBVbHRyYS1IaWdoLVJlc29sdXRpb24KCkZvciByZXNvbHV0aW9ucyB0b28gbGFyZ2UgZm9yIGEgc2luZ2xlIGNhbnZhcyAoZS5nLiwgMTAwMDB4MTAwMDAgZm9yIHByaW50KToKCmBgYGphdmFzY3JpcHQKZnVuY3Rpb24gcmVuZGVyVGlsZWQodG90YWxXLCB0b3RhbEgsIHRpbGVTaXplKSB7CiAgbGV0IGNvbHMgPSBjZWlsKHRvdGFsVyAvIHRpbGVTaXplKTsKICBsZXQgcm93cyA9IGNlaWwodG90YWxIIC8gdGlsZVNpemUpOwoKICBmb3IgKGxldCB0eSA9IDA7IHR5IDwgcm93czsgdHkrKykgewogICAgZm9yIChsZXQgdHggPSAwOyB0eCA8IGNvbHM7IHR4KyspIHsKICAgICAgbGV0IGJ1ZmZlciA9IGNyZWF0ZUdyYXBoaWNzKHRpbGVTaXplLCB0aWxlU2l6ZSk7CiAgICAgIGJ1ZmZlci5wdXNoKCk7CiAgICAgIGJ1ZmZlci50cmFuc2xhdGUoLXR4ICogdGlsZVNpemUsIC10eSAqIHRpbGVTaXplKTsKICAgICAgcmVuZGVyU2NlbmUoYnVmZmVyLCB0b3RhbFcsIHRvdGFsSCk7CiAgICAgIGJ1ZmZlci5wb3AoKTsKICAgICAgYnVmZmVyLnNhdmUoYHRpbGUtJHt0eH0tJHt0eX0ucG5nYCk7CiAgICAgIGJ1ZmZlci5yZW1vdmUoKTsgIC8vIGZyZWUgbWVtb3J5CiAgICB9CiAgfQogIC8vIFN0aXRjaCB3aXRoIEltYWdlTWFnaWNrOgogIC8vIG1vbnRhZ2UgdGlsZS0qLnBuZyAtdGlsZSA0eDQgLWdlb21ldHJ5ICswKzAgZmluYWwucG5nCn0KYGBgCgojIyBDQ2FwdHVyZS5qcyDigJQgRGV0ZXJtaW5pc3RpYyBWaWRlbyBDYXB0dXJlCgpUaGUgYnVpbHQtaW4gYHNhdmVGcmFtZXMoKWAgaGFzIGxpbWl0YXRpb25zOiBzbWFsbCBmcmFtZSBjb3VudHMsIG1lbW9yeSBpc3N1ZXMsIGJyb3dzZXIgZG93bmxvYWQgYmxvY2tpbmcuIENDYXB0dXJlLmpzIHNvbHZlcyBhbGwgb2YgdGhlc2UgYnkgaG9va2luZyBpbnRvIHRoZSBicm93c2VyJ3MgdGltaW5nIGZ1bmN0aW9ucyB0byBzaW11bGF0ZSBjb25zdGFudCB0aW1lIHN0ZXBzIHJlZ2FyZGxlc3Mgb2YgYWN0dWFsIHJlbmRlciBzcGVlZC4KCmBgYGh0bWwKPHNjcmlwdCBzcmM9Imh0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9ucG0vY2NhcHR1cmUuanMtbnBtZml4ZWQvYnVpbGQvQ0NhcHR1cmUuYWxsLm1pbi5qcyI+PC9zY3JpcHQ+CmBgYAoKIyMjIEJhc2ljIFNldHVwCgpgYGBqYXZhc2NyaXB0CmxldCBjYXB0dXJlcjsKbGV0IHJlY29yZGluZyA9IGZhbHNlOwoKZnVuY3Rpb24gc2V0dXAoKSB7CiAgY3JlYXRlQ2FudmFzKDE5MjAsIDEwODApOwogIHBpeGVsRGVuc2l0eSgxKTsKCiAgY2FwdHVyZXIgPSBuZXcgQ0NhcHR1cmUoewogICAgZm9ybWF0OiAnd2VibScsICAgICAgIC8vICd3ZWJtJywgJ2dpZicsICdwbmcnLCAnanBnJwogICAgZnJhbWVyYXRlOiAzMCwKICAgIHF1YWxpdHk6IDk5LCAgICAgICAgICAgLy8gMC0xMDAgZm9yIHdlYm0vanBnCiAgICAvLyB0aW1lTGltaXQ6IDEwLCAgICAgIC8vIGF1dG8tc3RvcCBhZnRlciBOIHNlY29uZHMKICAgIC8vIG1vdGlvbkJsdXJGcmFtZXM6IDQgLy8gc3VwZXJzYW1wbGVkIG1vdGlvbiBibHVyCiAgfSk7Cn0KCmZ1bmN0aW9uIGRyYXcoKSB7CiAgLy8gLi4uIHJlbmRlciBmcmFtZSAuLi4KCiAgaWYgKHJlY29yZGluZykgewogICAgY2FwdHVyZXIuY2FwdHVyZShkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCdjYW52YXMnKSk7CiAgfQp9CgpmdW5jdGlvbiBrZXlQcmVzc2VkKCkgewogIGlmIChrZXkgPT09ICdjJykgewogICAgaWYgKCFyZWNvcmRpbmcpIHsKICAgICAgY2FwdHVyZXIuc3RhcnQoKTsKICAgICAgcmVjb3JkaW5nID0gdHJ1ZTsKICAgICAgY29uc29sZS5sb2coJ1JlY29yZGluZyBzdGFydGVkJyk7CiAgICB9IGVsc2UgewogICAgICBjYXB0dXJlci5zdG9wKCk7CiAgICAgIGNhcHR1cmVyLnNhdmUoKTsgIC8vIHRyaWdnZXJzIGRvd25sb2FkCiAgICAgIHJlY29yZGluZyA9IGZhbHNlOwogICAgICBjb25zb2xlLmxvZygnUmVjb3JkaW5nIHNhdmVkJyk7CiAgICB9CiAgfQp9CmBgYAoKIyMjIEZvcm1hdCBDb21wYXJpc29uCgp8IEZvcm1hdCB8IFF1YWxpdHkgfCBTaXplIHwgQnJvd3NlciBTdXBwb3J0IHwKfC0tLS0tLS0tfC0tLS0tLS0tLXwtLS0tLS18LS0tLS0tLS0tLS0tLS0tLS18CnwgKipXZWJNKiogfCBIaWdoIHwgTWVkaXVtIHwgQ2hyb21lIG9ubHkgfAp8ICoqR0lGKiogfCAyNTYgY29sb3JzIHwgTGFyZ2UgfCBBbGwgKHZpYSBnaWYuanMgd29ya2VyKSB8CnwgKipQTkcgc2VxdWVuY2UqKiB8IExvc3NsZXNzIHwgVmVyeSBsYXJnZSAoVEFSKSB8IEFsbCB8CnwgKipKUEVHIHNlcXVlbmNlKiogfCBMb3NzeSB8IExhcmdlIChUQVIpIHwgQWxsIHwKCiMjIyBJbXBvcnRhbnQ6IFRpbWluZyBIb29rCgpDQ2FwdHVyZS5qcyBvdmVycmlkZXMgYERhdGUubm93KClgLCBgc2V0VGltZW91dGAsIGByZXF1ZXN0QW5pbWF0aW9uRnJhbWVgLCBhbmQgYHBlcmZvcm1hbmNlLm5vdygpYC4gVGhpcyBtZWFuczoKLSBgbWlsbGlzKClgIHJldHVybnMgc2ltdWxhdGVkIHRpbWUgKHBlcmZlY3QgZm9yIHJlY29yZGluZykKLSBgZGVsdGFUaW1lYCBpcyBjb25zdGFudCAoMTAwMC9mcmFtZXJhdGUpCi0gQ29tcGxleCBza2V0Y2hlcyB0aGF0IHRha2UgNTAwbXMgcGVyIGZyYW1lIHN0aWxsIHJlY29yZCBhdCBzbW9vdGggMzBmcHMKLSAqKkNhdmVhdCoqOiBBdWRpbyBzeW5jIGJyZWFrcyAoYXVkaW8gcGxheXMgaW4gcmVhbC10aW1lLCBub3Qgc2ltdWxhdGVkIHRpbWUpCgojIyBQcm9ncmFtbWF0aWMgRXhwb3J0IChjYW52YXMgQVBJKQoKRm9yIGN1c3RvbSBleHBvcnQgd29ya2Zsb3dzIGJleW9uZCBgc2F2ZUNhbnZhcygpYDoKCmBgYGphdmFzY3JpcHQKLy8gQ2FudmFzIHRvIEJsb2IgKGZvciB1cGxvYWQsIHByb2Nlc3NpbmcpCmRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJ2NhbnZhcycpLnRvQmxvYigoYmxvYikgPT4gewogIC8vIFVwbG9hZCB0byBzZXJ2ZXIsIHByb2Nlc3MsIGV0Yy4KICBsZXQgdXJsID0gVVJMLmNyZWF0ZU9iamVjdFVSTChibG9iKTsKICBjb25zb2xlLmxvZygnQmxvYiBVUkw6JywgdXJsKTsKfSwgJ2ltYWdlL3BuZycpOwoKLy8gQ2FudmFzIHRvIERhdGEgVVJMIChmb3IgaW5saW5lIGVtYmVkZGluZykKbGV0IGRhdGFVcmwgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCdjYW52YXMnKS50b0RhdGFVUkwoJ2ltYWdlL3BuZycpOwovLyBVc2UgaW4gPGltZyBzcmM9Ii4uLiI+IG9yIHNlbmQgYXMgYmFzZTY0CmBgYAoKIyMgU1ZHIEV4cG9ydCAocDUuanMtc3ZnKQoKYGBgaHRtbAo8c2NyaXB0IHNyYz0iaHR0cHM6Ly91bnBrZy5jb20vcDUuanMtc3ZnQDEuNi4wIj48L3NjcmlwdD4KYGBgCgpgYGBqYXZhc2NyaXB0CmZ1bmN0aW9uIHNldHVwKCkgewogIGNyZWF0ZUNhbnZhcygxOTIwLCAxMDgwLCBTVkcpOyAgLy8gU1ZHIHJlbmRlcmVyCiAgbm9Mb29wKCk7Cn0KCmZ1bmN0aW9uIGRyYXcoKSB7CiAgLy8gT25seSB2ZWN0b3Igb3BlcmF0aW9ucyB3b3JrIChubyBwaXhlbCBvcHMsIG5vIGJsZW5kTW9kZSkKICBzdHJva2UoMCk7CiAgbm9GaWxsKCk7CiAgZm9yIChsZXQgaSA9IDA7IGkgPCAxMDA7IGkrKykgewogICAgZWxsaXBzZShyYW5kb20od2lkdGgpLCByYW5kb20oaGVpZ2h0KSwgcmFuZG9tKDEwLCA1MCkpOwogIH0KICBzYXZlKCdvdXRwdXQuc3ZnJyk7Cn0KYGBgCgoqKkNyaXRpY2FsIFNWRyBjYXZlYXRzOioqCi0gKipNdXN0IGNhbGwgYGNsZWFyKClgIGluIGBkcmF3KClgKiogZm9yIGFuaW1hdGVkIHNrZXRjaGVzIOKAlCBTVkcgRE9NIGFjY3VtdWxhdGVzIGNoaWxkIGVsZW1lbnRzLCBjYXVzaW5nIG1lbW9yeSBibG9hdAotIGBibGVuZE1vZGUoKWAgaXMgKipub3QgaW1wbGVtZW50ZWQqKiBpbiBTVkcgcmVuZGVyZXIKLSBgZmlsdGVyKClgLCBgbG9hZFBpeGVscygpYCwgYHVwZGF0ZVBpeGVscygpYCBkb24ndCB3b3JrCi0gUmVxdWlyZXMgKipwNS5qcyAxLjExLngqKiDigJQgbm90IGNvbXBhdGlibGUgd2l0aCBwNS5qcyAyLngKLSBQZXJmZWN0IGZvcjogbGluZSBhcnQsIGdlb21ldHJpYyBwYXR0ZXJucywgcGVuIHBsb3R0ZXIgb3V0cHV0CgojIyBQbGF0Zm9ybSBFeHBvcnQKCiMjIyBmeGhhc2ggQ29udmVudGlvbnMKCmBgYGphdmFzY3JpcHQKLy8gUmVwbGFjZSBwNSdzIHJhbmRvbSB3aXRoIGZ4aGFzaCdzIGRldGVybWluaXN0aWMgUFJORwpjb25zdCBybmcgPSAkZngucmFuZDsKCi8vIERlY2xhcmUgZmVhdHVyZXMgZm9yIHJhcml0eS9maWx0ZXJpbmcKJGZ4LmZlYXR1cmVzKHsKICAnUGFsZXR0ZSc6IHBhbGV0dGVOYW1lLAogICdDb21wbGV4aXR5JzogY29tcGxleGl0eSA+IDAuNyA/ICdIaWdoJyA6ICdMb3cnLAogICdIYXMgUGFydGljbGVzJzogcGFydGljbGVDb3VudCA+IDAKfSk7CgovLyBEZWNsYXJlIG9uLWNoYWluIHBhcmFtZXRlcnMKJGZ4LnBhcmFtcyhbCiAgeyBpZDogJ2RlbnNpdHknLCBuYW1lOiAnRGVuc2l0eScsIHR5cGU6ICdudW1iZXInLAogICAgb3B0aW9uczogeyBtaW46IDEsIG1heDogMTAwLCBzdGVwOiAxIH0gfSwKICB7IGlkOiAncGFsZXR0ZScsIG5hbWU6ICdQYWxldHRlJywgdHlwZTogJ3NlbGVjdCcsCiAgICBvcHRpb25zOiB7IG9wdGlvbnM6IFsnV2FybScsICdDb29sJywgJ01vbm8nXSB9IH0sCiAgeyBpZDogJ2FjY2VudCcsIG5hbWU6ICdBY2NlbnQgQ29sb3InLCB0eXBlOiAnY29sb3InIH0KXSk7CgovLyBSZWFkIHBhcmFtcwpsZXQgZGVuc2l0eSA9ICRmeC5nZXRQYXJhbSgnZGVuc2l0eScpOwoKLy8gQnVpbGQ6IG5weCBmeGhhc2ggYnVpbGQg4oaSIHVwbG9hZC56aXAKLy8gRGV2OiBucHggZnhoYXNoIGRldiDihpIgbG9jYWxob3N0OjMzMDAKYGBgCgojIyMgQXJ0IEJsb2NrcyAvIEdlbmVyaWMgUGxhdGZvcm0KCmBgYGphdmFzY3JpcHQKLy8gUGxhdGZvcm0gcHJvdmlkZXMgYSBoYXNoIHN0cmluZwpjb25zdCBoYXNoID0gdG9rZW5EYXRhLmhhc2g7ICAvLyBBcnQgQmxvY2tzIGNvbnZlbnRpb24KCi8vIEJ1aWxkIGRldGVybWluaXN0aWMgUFJORyBmcm9tIGhhc2gKZnVuY3Rpb24gcHJuZ0Zyb21IYXNoKGhhc2gpIHsKICBsZXQgc2VlZCA9IHBhcnNlSW50KGhhc2guc2xpY2UoMCwgMTYpLCAxNik7CiAgLy8geG9zaGlybzEyOCoqIG9yIHNpbWlsYXIKICByZXR1cm4gZnVuY3Rpb24oKSB7IC8qIC4uLiAqLyB9Owp9Cgpjb25zdCBybmcgPSBwcm5nRnJvbUhhc2goaGFzaCk7CmBgYAo=
+# Export Pipeline
+
+## PNG Export
+
+### In-Sketch (Keyboard Shortcut)
+
+```javascript
+function keyPressed() {
+  if (key === 's' || key === 'S') {
+    saveCanvas('output', 'png');
+    // Downloads output.png immediately
+  }
+}
+```
+
+### Timed Export (Static Generative)
+
+```javascript
+function setup() {
+  createCanvas(3840, 2160);
+  pixelDensity(1);
+  randomSeed(CONFIG.seed);
+  noiseSeed(CONFIG.seed);
+  noLoop();
+}
+
+function draw() {
+  // ... render everything ...
+  saveCanvas('output-seed-' + CONFIG.seed, 'png');
+}
+```
+
+### High-Resolution Export
+
+For resolutions beyond screen size, use `pixelDensity()` or a large offscreen buffer:
+
+```javascript
+function exportHighRes(scale) {
+  let buffer = createGraphics(width * scale, height * scale);
+  buffer.scale(scale);
+  // Re-render everything to buffer at higher resolution
+  renderScene(buffer);
+  buffer.save('highres-output.png');
+}
+```
+
+### Batch Seed Export
+
+```javascript
+function exportBatch(startSeed, count) {
+  for (let i = 0; i < count; i++) {
+    CONFIG.seed = startSeed + i;
+    randomSeed(CONFIG.seed);
+    noiseSeed(CONFIG.seed);
+    // Render
+    background(0);
+    renderScene();
+    saveCanvas('seed-' + nf(CONFIG.seed, 5), 'png');
+  }
+}
+```
+
+## GIF Export
+
+### saveGif()
+
+```javascript
+function keyPressed() {
+  if (key === 'g' || key === 'G') {
+    saveGif('output', 5);
+    // Captures 5 seconds of animation
+    // Options: saveGif(filename, duration, options)
+  }
+}
+
+// With options
+saveGif('output', 5, {
+  delay: 0,        // delay before starting capture (seconds)
+  units: 'seconds' // or 'frames'
+});
+```
+
+Limitations:
+- GIF is 256 colors max — dithering artifacts on gradients
+- Large canvases produce huge files
+- Use a smaller canvas (640x360) for GIF, higher for PNG/MP4
+- Frame rate is approximate
+
+### Optimal GIF Settings
+
+```javascript
+// For GIF output, use smaller canvas and lower framerate
+function setup() {
+  createCanvas(640, 360);
+  frameRate(15);  // GIF standard
+  pixelDensity(1);
+}
+```
+
+## Frame Sequence Export
+
+### saveFrames()
+
+```javascript
+function keyPressed() {
+  if (key === 'f') {
+    saveFrames('frame', 'png', 10, 30);
+    // 10 seconds, 30 fps → 300 PNG files
+    // Downloads as individual files (browser may block bulk downloads)
+  }
+}
+```
+
+### Manual Frame Export (More Control)
+
+```javascript
+let recording = false;
+let frameNum = 0;
+const TOTAL_FRAMES = 300;
+
+function keyPressed() {
+  if (key === 'r') recording = !recording;
+}
+
+function draw() {
+  // ... render frame ...
+
+  if (recording) {
+    saveCanvas('frame-' + nf(frameNum, 4), 'png');
+    frameNum++;
+    if (frameNum >= TOTAL_FRAMES) {
+      recording = false;
+      noLoop();
+      console.log('Recording complete: ' + frameNum + ' frames');
+    }
+  }
+}
+```
+
+### Deterministic Capture (Critical for Video)
+
+The `noLoop()` + `redraw()` pattern is **required** for frame-perfect headless capture. Without it, p5's draw loop runs freely in Chrome while Puppeteer screenshots are slow — the sketch runs ahead and you get duplicate/missing frames.
+
+```javascript
+function setup() {
+  createCanvas(1920, 1080);
+  pixelDensity(1);
+  noLoop();                    // STOP the automatic draw loop
+  window._p5Ready = true;      // Signal to capture script
+}
+
+function draw() {
+  // This only runs when redraw() is called by the capture script
+  // frameCount increments exactly once per redraw()
+}
+```
+
+The bundled `scripts/export-frames.js` detects `window._p5Ready` and switches to deterministic mode automatically. Without it, falls back to timed capture (less precise).
+
+### ffmpeg: Frames to MP4
+
+```bash
+# Basic encoding
+ffmpeg -framerate 30 -i frame-%04d.png -c:v libx264 -pix_fmt yuv420p output.mp4
+
+# High quality
+ffmpeg -framerate 30 -i frame-%04d.png \
+  -c:v libx264 -preset slow -crf 18 -pix_fmt yuv420p \
+  output.mp4
+
+# With audio
+ffmpeg -framerate 30 -i frame-%04d.png -i audio.mp3 \
+  -c:v libx264 -c:a aac -shortest \
+  output.mp4
+
+# Loop for social media (3 loops)
+ffmpeg -stream_loop 2 -i output.mp4 -c copy output-looped.mp4
+```
+
+### Video Export Gotchas
+
+**YUV420 clips dark values.** H.264 encodes in YUV420 color space, which rounds dark RGB values. Content below RGB(8,8,8) may become pure black. Subtle dark details (dim particle trails, faint noise textures) disappear in the encoded video even though they're visible in the PNG frames.
+
+**Fix:** Ensure minimum brightness of ~10 for any visible content. Test by encoding a few frames and comparing the MP4 frame vs the source PNG.
+
+```bash
+# Extract a frame from MP4 for comparison
+ffmpeg -i output.mp4 -vf "select=eq(n\,100)" -vframes 1 check.png
+```
+
+**Static frames look broken in video.** If an algorithm produces a single static image (like a pre-computed attractor heatmap), it reads as a freeze/glitch in video. Always add animation even to static content:
+- Progressive reveal (expand from center, sweep across)
+- Slow parameter drift (rotate color mapping, shift noise offset)
+- Camera-like motion (slow zoom, slight pan)
+- Overlay animated particles or grain
+
+**Scene transitions are mandatory.** Hard cuts between visually different scenes are jarring. Use fade envelopes:
+
+```javascript
+const FADE_FRAMES = 15;  // half-second at 30fps
+let fade = 1;
+if (localFrame < FADE_FRAMES) fade = localFrame / FADE_FRAMES;
+if (localFrame > SCENE_FRAMES - FADE_FRAMES) fade = (SCENE_FRAMES - localFrame) / FADE_FRAMES;
+fade = fade * fade * (3 - 2 * fade);  // smoothstep
+// Apply: multiply all alpha/brightness by fade
+```
+
+### Per-Clip Architecture (Multi-Scene Videos)
+
+For videos with multiple scenes, render each as a separate HTML file + MP4 clip, then stitch with ffmpeg. This enables re-rendering individual scenes without touching the rest.
+
+**Directory structure:**
+```
+project/
+├── capture-scene.js          # Shared: node capture-scene.js <html> <outdir> <frames>
+├── render-all.sh             # Renders all + stitches
+├── scenes/
+│   ├── 00-intro.html         # Each scene is self-contained
+│   ├── 01-particles.html
+│   ├── 02-noise.html
+│   └── 03-outro.html
+└── clips/
+    ├── 00-intro.mp4          # Each clip rendered independently
+    ├── 01-particles.mp4
+    ├── 02-noise.mp4
+    ├── 03-outro.mp4
+    └── concat.txt
+```
+
+**Stitch clips with ffmpeg concat:**
+```bash
+# concat.txt (order determines final sequence)
+file '00-intro.mp4'
+file '01-particles.mp4'
+file '02-noise.mp4'
+file '03-outro.mp4'
+
+# Lossless stitch (all clips must have same codec/resolution/fps)
+ffmpeg -f concat -safe 0 -i concat.txt -c copy final.mp4
+```
+
+**Re-render a single scene:**
+```bash
+node capture-scene.js scenes/01-particles.html clips/01-particles 150
+ffmpeg -y -framerate 30 -i clips/01-particles/frame-%04d.png \
+  -c:v libx264 -preset slow -crf 16 -pix_fmt yuv420p clips/01-particles.mp4
+# Then re-stitch
+ffmpeg -y -f concat -safe 0 -i clips/concat.txt -c copy final.mp4
+```
+
+**Re-order without re-rendering:** Just change the order in concat.txt and re-stitch. No frames need re-rendering.
+
+**Each scene HTML must:**
+- Call `noLoop()` in setup and set `window._p5Ready = true`
+- Use `frameCount`-based timing (not `millis()`) for deterministic output
+- Handle its own fade-in/fade-out envelope
+- Be fully self-contained (no shared state between scenes)
+
+### ffmpeg: Frames to GIF (Better Quality)
+
+```bash
+# Generate palette first for optimal colors
+ffmpeg -i frame-%04d.png -vf "fps=15,palettegen=max_colors=256" palette.png
+
+# Render GIF using palette
+ffmpeg -i frame-%04d.png -i palette.png \
+  -lavfi "fps=15 [x]; [x][1:v] paletteuse=dither=bayer:bayer_scale=3" \
+  output.gif
+```
+
+## Headless Export (Puppeteer)
+
+For automated, server-side, or CI rendering. Uses a headless Chrome browser to run the sketch.
+
+### export-frames.js (Node.js Script)
+
+See `scripts/export-frames.js` for the full implementation. Basic pattern:
+
+```javascript
+const puppeteer = require('puppeteer');
+
+async function captureFrames(htmlPath, outputDir, options) {
+  const browser = await puppeteer.launch({
+    headless: true,
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+  });
+  const page = await browser.newPage();
+
+  await page.setViewport({
+    width: options.width || 1920,
+    height: options.height || 1080,
+    deviceScaleFactor: 1
+  });
+
+  await page.goto(`file://${path.resolve(htmlPath)}`, {
+    waitUntil: 'networkidle0'
+  });
+
+  // Wait for sketch to initialize
+  await page.waitForSelector('canvas');
+  await page.waitForTimeout(1000);
+
+  for (let i = 0; i < options.frames; i++) {
+    const canvas = await page.$('canvas');
+    await canvas.screenshot({
+      path: path.join(outputDir, `frame-${String(i).padStart(4, '0')}.png`)
+    });
+
+    // Advance one frame
+    await page.evaluate(() => { redraw(); });
+    await page.waitForTimeout(1000 / options.fps);
+  }
+
+  await browser.close();
+}
+```
+
+### render.sh (Full Pipeline)
+
+See `scripts/render.sh` for the complete render script. Pipeline:
+
+```
+1. Launch Puppeteer → open sketch HTML
+2. Capture N frames as PNG sequence
+3. Pipe to ffmpeg → encode H.264 MP4
+4. Optional: add audio track
+5. Clean up temp frames
+```
+
+## SVG Export
+
+### Using p5.js-svg Library
+
+```html
+<script src="https://unpkg.com/p5.js-svg@1.5.1"></script>
+```
+
+```javascript
+function setup() {
+  createCanvas(1920, 1080, SVG);  // SVG renderer
+  noLoop();
+}
+
+function draw() {
+  // Only vector operations (no pixels, no blend modes)
+  stroke(0);
+  noFill();
+  for (let i = 0; i < 100; i++) {
+    let x = random(width);
+    let y = random(height);
+    ellipse(x, y, random(10, 50));
+  }
+  save('output.svg');
+}
+```
+
+Limitations:
+- No `loadPixels()`, `updatePixels()`, `filter()`, `blendMode()`
+- No WebGL
+- No pixel-level effects
+- Great for: line art, geometric patterns, plots
+
+### Hybrid: Raster Background + SVG Overlay
+
+Render background effects to PNG, then SVG for crisp vector elements on top.
+
+## Export Format Decision Guide
+
+| Need | Format | Method |
+|------|--------|--------|
+| Single still image | PNG | `saveCanvas()` or `keyPressed()` |
+| Print-quality still | PNG (high-res) | `pixelDensity(1)` + large canvas |
+| Short animated loop | GIF | `saveGif()` |
+| Long animation | MP4 | Frame sequence + ffmpeg |
+| Social media video | MP4 | `scripts/render.sh` |
+| Vector/print | SVG | p5.js-svg renderer |
+| Batch variations | PNG sequence | Seed loop + `saveCanvas()` |
+| Interactive deployment | HTML | Single self-contained file |
+| Headless rendering | PNG/MP4 | Puppeteer + ffmpeg |
+
+## Tiling for Ultra-High-Resolution
+
+For resolutions too large for a single canvas (e.g., 10000x10000 for print):
+
+```javascript
+function renderTiled(totalW, totalH, tileSize) {
+  let cols = ceil(totalW / tileSize);
+  let rows = ceil(totalH / tileSize);
+
+  for (let ty = 0; ty < rows; ty++) {
+    for (let tx = 0; tx < cols; tx++) {
+      let buffer = createGraphics(tileSize, tileSize);
+      buffer.push();
+      buffer.translate(-tx * tileSize, -ty * tileSize);
+      renderScene(buffer, totalW, totalH);
+      buffer.pop();
+      buffer.save(`tile-${tx}-${ty}.png`);
+      buffer.remove();  // free memory
+    }
+  }
+  // Stitch with ImageMagick:
+  // montage tile-*.png -tile 4x4 -geometry +0+0 final.png
+}
+```
+
+## CCapture.js — Deterministic Video Capture
+
+The built-in `saveFrames()` has limitations: small frame counts, memory issues, browser download blocking. CCapture.js solves all of these by hooking into the browser's timing functions to simulate constant time steps regardless of actual render speed.
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/ccapture.js-npmfixed/build/CCapture.all.min.js"></script>
+```
+
+### Basic Setup
+
+```javascript
+let capturer;
+let recording = false;
+
+function setup() {
+  createCanvas(1920, 1080);
+  pixelDensity(1);
+
+  capturer = new CCapture({
+    format: 'webm',       // 'webm', 'gif', 'png', 'jpg'
+    framerate: 30,
+    quality: 99,           // 0-100 for webm/jpg
+    // timeLimit: 10,      // auto-stop after N seconds
+    // motionBlurFrames: 4 // supersampled motion blur
+  });
+}
+
+function draw() {
+  // ... render frame ...
+
+  if (recording) {
+    capturer.capture(document.querySelector('canvas'));
+  }
+}
+
+function keyPressed() {
+  if (key === 'c') {
+    if (!recording) {
+      capturer.start();
+      recording = true;
+      console.log('Recording started');
+    } else {
+      capturer.stop();
+      capturer.save();  // triggers download
+      recording = false;
+      console.log('Recording saved');
+    }
+  }
+}
+```
+
+### Format Comparison
+
+| Format | Quality | Size | Browser Support |
+|--------|---------|------|-----------------|
+| **WebM** | High | Medium | Chrome only |
+| **GIF** | 256 colors | Large | All (via gif.js worker) |
+| **PNG sequence** | Lossless | Very large (TAR) | All |
+| **JPEG sequence** | Lossy | Large (TAR) | All |
+
+### Important: Timing Hook
+
+CCapture.js overrides `Date.now()`, `setTimeout`, `requestAnimationFrame`, and `performance.now()`. This means:
+- `millis()` returns simulated time (perfect for recording)
+- `deltaTime` is constant (1000/framerate)
+- Complex sketches that take 500ms per frame still record at smooth 30fps
+- **Caveat**: Audio sync breaks (audio plays in real-time, not simulated time)
+
+## Programmatic Export (canvas API)
+
+For custom export workflows beyond `saveCanvas()`:
+
+```javascript
+// Canvas to Blob (for upload, processing)
+document.querySelector('canvas').toBlob((blob) => {
+  // Upload to server, process, etc.
+  let url = URL.createObjectURL(blob);
+  console.log('Blob URL:', url);
+}, 'image/png');
+
+// Canvas to Data URL (for inline embedding)
+let dataUrl = document.querySelector('canvas').toDataURL('image/png');
+// Use in <img src="..."> or send as base64
+```
+
+## SVG Export (p5.js-svg)
+
+```html
+<script src="https://unpkg.com/p5.js-svg@1.6.0"></script>
+```
+
+```javascript
+function setup() {
+  createCanvas(1920, 1080, SVG);  // SVG renderer
+  noLoop();
+}
+
+function draw() {
+  // Only vector operations work (no pixel ops, no blendMode)
+  stroke(0);
+  noFill();
+  for (let i = 0; i < 100; i++) {
+    ellipse(random(width), random(height), random(10, 50));
+  }
+  save('output.svg');
+}
+```
+
+**Critical SVG caveats:**
+- **Must call `clear()` in `draw()`** for animated sketches — SVG DOM accumulates child elements, causing memory bloat
+- `blendMode()` is **not implemented** in SVG renderer
+- `filter()`, `loadPixels()`, `updatePixels()` don't work
+- Requires **p5.js 1.11.x** — not compatible with p5.js 2.x
+- Perfect for: line art, geometric patterns, pen plotter output
+
+## Platform Export
+
+### fxhash Conventions
+
+```javascript
+// Replace p5's random with fxhash's deterministic PRNG
+const rng = $fx.rand;
+
+// Declare features for rarity/filtering
+$fx.features({
+  'Palette': paletteName,
+  'Complexity': complexity > 0.7 ? 'High' : 'Low',
+  'Has Particles': particleCount > 0
+});
+
+// Declare on-chain parameters
+$fx.params([
+  { id: 'density', name: 'Density', type: 'number',
+    options: { min: 1, max: 100, step: 1 } },
+  { id: 'palette', name: 'Palette', type: 'select',
+    options: { options: ['Warm', 'Cool', 'Mono'] } },
+  { id: 'accent', name: 'Accent Color', type: 'color' }
+]);
+
+// Read params
+let density = $fx.getParam('density');
+
+// Build: npx fxhash build → upload.zip
+// Dev: npx fxhash dev → localhost:3300
+```
+
+### Art Blocks / Generic Platform
+
+```javascript
+// Platform provides a hash string
+const hash = tokenData.hash;  // Art Blocks convention
+
+// Build deterministic PRNG from hash
+function prngFromHash(hash) {
+  let seed = parseInt(hash.slice(0, 16), 16);
+  // xoshiro128** or similar
+  return function() { /* ... */ };
+}
+
+const rng = prngFromHash(hash);
+```

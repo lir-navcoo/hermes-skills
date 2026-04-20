@@ -1,1 +1,109 @@
-IyBJc3N1ZSBUYXhvbm9teQoKVXNlIHRoaXMgdGF4b25vbXkgdG8gY2xhc3NpZnkgaXNzdWVzIGZvdW5kIGR1cmluZyBkb2dmb29kIFFBIHRlc3RpbmcuCgojIyBTZXZlcml0eSBMZXZlbHMKCiMjIyBDcml0aWNhbApUaGUgaXNzdWUgbWFrZXMgYSBjb3JlIGZlYXR1cmUgY29tcGxldGVseSB1bnVzYWJsZSBvciBjYXVzZXMgZGF0YSBsb3NzLgoKKipFeGFtcGxlczoqKgotIEFwcGxpY2F0aW9uIGNyYXNoZXMgb3Igc2hvd3MgYSBibGFuayB3aGl0ZSBwYWdlCi0gRm9ybSBzdWJtaXNzaW9uIHNpbGVudGx5IGxvc2VzIHVzZXIgZGF0YQotIEF1dGhlbnRpY2F0aW9uIGlzIGNvbXBsZXRlbHkgYnJva2VuIChjYW4ndCBsb2cgaW4gYXQgYWxsKQotIFBheW1lbnQgZmxvdyBmYWlscyBhbmQgY2hhcmdlcyB0aGUgdXNlciB3aXRob3V0IGNvbXBsZXRpbmcgdGhlIG9yZGVyCi0gU2VjdXJpdHkgdnVsbmVyYWJpbGl0eSAoZS5nLiwgWFNTLCBleHBvc2VkIGNyZWRlbnRpYWxzIGluIGNvbnNvbGUpCgojIyMgSGlnaApUaGUgaXNzdWUgc2lnbmlmaWNhbnRseSBpbXBhaXJzIGZ1bmN0aW9uYWxpdHkgYnV0IGEgd29ya2Fyb3VuZCBtYXkgZXhpc3QuCgoqKkV4YW1wbGVzOioqCi0gQSBrZXkgYnV0dG9uIGRvZXMgbm90aGluZyB3aGVuIGNsaWNrZWQgKGJ1dCByZWZyZXNoaW5nIGZpeGVzIGl0KQotIFNlYXJjaCByZXR1cm5zIG5vIHJlc3VsdHMgZm9yIHZhbGlkIHF1ZXJpZXMKLSBGb3JtIHZhbGlkYXRpb24gcmVqZWN0cyB2YWxpZCBpbnB1dAotIFBhZ2UgbG9hZHMgYnV0IGNyaXRpY2FsIGNvbnRlbnQgaXMgbWlzc2luZyBvciBnYXJibGVkCi0gTmF2aWdhdGlvbiBsaW5rIGxlYWRzIHRvIGEgNDA0IG9yIHdyb25nIHBhZ2UKLSBVbmNhdWdodCBKYXZhU2NyaXB0IGV4Y2VwdGlvbnMgaW4gdGhlIGNvbnNvbGUgb24gY29yZSBwYWdlcwoKIyMjIE1lZGl1bQpUaGUgaXNzdWUgaXMgbm90aWNlYWJsZSBhbmQgYWZmZWN0cyB1c2VyIGV4cGVyaWVuY2UgYnV0IGRvZXNuJ3QgYmxvY2sgY29yZSBmdW5jdGlvbmFsaXR5LgoKKipFeGFtcGxlczoqKgotIExheW91dCBpcyBtaXNhbGlnbmVkIG9yIG92ZXJsYXBwaW5nIG9uIGNlcnRhaW4gc2NyZWVuIHNlY3Rpb25zCi0gSW1hZ2VzIGZhaWwgdG8gbG9hZCAoYnJva2VuIGltYWdlIGljb25zKQotIFNsb3cgcGVyZm9ybWFuY2UgKHZpc2libGUgbG9hZGluZyBkZWxheXMgPiAzIHNlY29uZHMpCi0gRm9ybSBmaWVsZCBsYWNrcyBwcm9wZXIgdmFsaWRhdGlvbiBmZWVkYmFjayAobm8gZXJyb3IgbWVzc2FnZSBvbiBiYWQgaW5wdXQpCi0gQ29uc29sZSB3YXJuaW5ncyB0aGF0IHN1Z2dlc3QgZGVwcmVjYXRlZCBvciBtaXNjb25maWd1cmVkIGZlYXR1cmVzCi0gSW5jb25zaXN0ZW50IHN0eWxpbmcgYmV0d2VlbiBzaW1pbGFyIHBhZ2VzCgojIyMgTG93Ck1pbm9yIHBvbGlzaCBpc3N1ZXMgdGhhdCBkb24ndCBhZmZlY3QgZnVuY3Rpb25hbGl0eS4KCioqRXhhbXBsZXM6KioKLSBUeXBvcyBvciBncmFtbWF0aWNhbCBlcnJvcnMgaW4gdGV4dCBjb250ZW50Ci0gTWlub3Igc3BhY2luZyBvciBhbGlnbm1lbnQgaW5jb25zaXN0ZW5jaWVzCi0gUGxhY2Vob2xkZXIgdGV4dCBsZWZ0IGluIHByb2R1Y3Rpb24gKCJMb3JlbSBpcHN1bSIpCi0gRmF2aWNvbiBtaXNzaW5nCi0gQ29uc29sZSBpbmZvL2RlYnVnIG1lc3NhZ2VzIHRoYXQgc2hvdWxkbid0IGJlIGluIHByb2R1Y3Rpb24KLSBTdWJ0bGUgY29sb3IgY29udHJhc3QgaXNzdWVzIHRoYXQgZG9uJ3QgZmFpbCBXQ0FHIHJlcXVpcmVtZW50cwoKIyMgQ2F0ZWdvcmllcwoKIyMjIEZ1bmN0aW9uYWwKSXNzdWVzIHdoZXJlIGZlYXR1cmVzIGRvbid0IHdvcmsgYXMgZXhwZWN0ZWQuCgotIEJ1dHRvbnMvbGlua3MgdGhhdCBkb24ndCByZXNwb25kCi0gRm9ybXMgdGhhdCBkb24ndCBzdWJtaXQgb3Igc3VibWl0IGluY29ycmVjdGx5Ci0gQnJva2VuIHVzZXIgZmxvd3MgKGNhbid0IGNvbXBsZXRlIGEgbXVsdGktc3RlcCBwcm9jZXNzKQotIEluY29ycmVjdCBkYXRhIGRpc3BsYXllZAotIEZlYXR1cmVzIHRoYXQgd29yayBwYXJ0aWFsbHkKCiMjIyBWaXN1YWwKSXNzdWVzIHdpdGggdGhlIHZpc3VhbCBwcmVzZW50YXRpb24gb2YgdGhlIHBhZ2UuCgotIExheW91dCBwcm9ibGVtcyAob3ZlcmxhcHBpbmcgZWxlbWVudHMsIGJyb2tlbiBncmlkcykKLSBCcm9rZW4gaW1hZ2VzIG9yIG1pc3NpbmcgbWVkaWEKLSBTdHlsaW5nIGluY29uc2lzdGVuY2llcwotIFJlc3BvbnNpdmUgZGVzaWduIGZhaWx1cmVzCi0gWi1pbmRleCBpc3N1ZXMgKGVsZW1lbnRzIGhpZGRlbiBiZWhpbmQgb3RoZXJzKQotIFRleHQgb3ZlcmZsb3cgb3IgdHJ1bmNhdGlvbgoKIyMjIEFjY2Vzc2liaWxpdHkKSXNzdWVzIHRoYXQgcHJldmVudCBvciBoaW5kZXIgYWNjZXNzIGZvciB1c2VycyB3aXRoIGRpc2FiaWxpdGllcy4KCi0gTWlzc2luZyBhbHQgdGV4dCBvbiBtZWFuaW5nZnVsIGltYWdlcwotIFBvb3IgY29sb3IgY29udHJhc3QgKGZhaWxzIFdDQUcgQUEpCi0gRWxlbWVudHMgbm90IHJlYWNoYWJsZSB2aWEga2V5Ym9hcmQgbmF2aWdhdGlvbgotIE1pc3NpbmcgZm9ybSBsYWJlbHMgb3IgQVJJQSBhdHRyaWJ1dGVzCi0gRm9jdXMgaW5kaWNhdG9ycyBtaXNzaW5nIG9yIHVuY2xlYXIKLSBTY3JlZW4gcmVhZGVyIGluY29tcGF0aWJsZSBjb250ZW50CgojIyMgQ29uc29sZQpJc3N1ZXMgZGV0ZWN0ZWQgdGhyb3VnaCBKYXZhU2NyaXB0IGNvbnNvbGUgb3V0cHV0LgoKLSBVbmNhdWdodCBleGNlcHRpb25zIGFuZCB1bmhhbmRsZWQgcHJvbWlzZSByZWplY3Rpb25zCi0gRmFpbGVkIG5ldHdvcmsgcmVxdWVzdHMgKDR4eCwgNXh4IGVycm9ycyBpbiBjb25zb2xlKQotIERlcHJlY2F0aW9uIHdhcm5pbmdzCi0gQ09SUyBlcnJvcnMKLSBNaXhlZCBjb250ZW50IHdhcm5pbmdzIChIVFRQIHJlc291cmNlcyBvbiBIVFRQUyBwYWdlKQotIEV4Y2Vzc2l2ZSBjb25zb2xlLmxvZyBvdXRwdXQgbGVmdCBmcm9tIGRldmVsb3BtZW50CgojIyMgVVggKFVzZXIgRXhwZXJpZW5jZSkKSXNzdWVzIHdoZXJlIGZ1bmN0aW9uYWxpdHkgd29ya3MgYnV0IHRoZSBleHBlcmllbmNlIGlzIHBvb3IuCgotIENvbmZ1c2luZyBuYXZpZ2F0aW9uIG9yIGluZm9ybWF0aW9uIGFyY2hpdGVjdHVyZQotIE1pc3NpbmcgbG9hZGluZyBpbmRpY2F0b3JzICh1c2VyIGRvZXNuJ3Qga25vdyBzb21ldGhpbmcgaXMgaGFwcGVuaW5nKQotIE5vIGZlZWRiYWNrIGFmdGVyIHVzZXIgYWN0aW9ucyAoZS5nLiwgYnV0dG9uIGNsaWNrIHdpdGggbm8gdmlzaWJsZSByZXN1bHQpCi0gSW5jb25zaXN0ZW50IGludGVyYWN0aW9uIHBhdHRlcm5zCi0gTWlzc2luZyBjb25maXJtYXRpb24gZGlhbG9ncyBmb3IgZGVzdHJ1Y3RpdmUgYWN0aW9ucwotIFBvb3IgZXJyb3IgbWVzc2FnZXMgdGhhdCBkb24ndCBoZWxwIHRoZSB1c2VyIHJlY292ZXIKCiMjIyBDb250ZW50Cklzc3VlcyB3aXRoIHRoZSB0ZXh0LCBtZWRpYSwgb3IgaW5mb3JtYXRpb24gb24gdGhlIHBhZ2UuCgotIFR5cG9zIGFuZCBncmFtbWF0aWNhbCBlcnJvcnMKLSBQbGFjZWhvbGRlci9kdW1teSBjb250ZW50IGluIHByb2R1Y3Rpb24KLSBPdXRkYXRlZCBpbmZvcm1hdGlvbgotIE1pc3NpbmcgY29udGVudCAoZW1wdHkgc2VjdGlvbnMpCi0gQnJva2VuIG9yIGRlYWQgbGlua3MgdG8gZXh0ZXJuYWwgcmVzb3VyY2VzCi0gSW5jb3JyZWN0IG9yIG1pc2xlYWRpbmcgbGFiZWxzCg==
+# Issue Taxonomy
+
+Use this taxonomy to classify issues found during dogfood QA testing.
+
+## Severity Levels
+
+### Critical
+The issue makes a core feature completely unusable or causes data loss.
+
+**Examples:**
+- Application crashes or shows a blank white page
+- Form submission silently loses user data
+- Authentication is completely broken (can't log in at all)
+- Payment flow fails and charges the user without completing the order
+- Security vulnerability (e.g., XSS, exposed credentials in console)
+
+### High
+The issue significantly impairs functionality but a workaround may exist.
+
+**Examples:**
+- A key button does nothing when clicked (but refreshing fixes it)
+- Search returns no results for valid queries
+- Form validation rejects valid input
+- Page loads but critical content is missing or garbled
+- Navigation link leads to a 404 or wrong page
+- Uncaught JavaScript exceptions in the console on core pages
+
+### Medium
+The issue is noticeable and affects user experience but doesn't block core functionality.
+
+**Examples:**
+- Layout is misaligned or overlapping on certain screen sections
+- Images fail to load (broken image icons)
+- Slow performance (visible loading delays > 3 seconds)
+- Form field lacks proper validation feedback (no error message on bad input)
+- Console warnings that suggest deprecated or misconfigured features
+- Inconsistent styling between similar pages
+
+### Low
+Minor polish issues that don't affect functionality.
+
+**Examples:**
+- Typos or grammatical errors in text content
+- Minor spacing or alignment inconsistencies
+- Placeholder text left in production ("Lorem ipsum")
+- Favicon missing
+- Console info/debug messages that shouldn't be in production
+- Subtle color contrast issues that don't fail WCAG requirements
+
+## Categories
+
+### Functional
+Issues where features don't work as expected.
+
+- Buttons/links that don't respond
+- Forms that don't submit or submit incorrectly
+- Broken user flows (can't complete a multi-step process)
+- Incorrect data displayed
+- Features that work partially
+
+### Visual
+Issues with the visual presentation of the page.
+
+- Layout problems (overlapping elements, broken grids)
+- Broken images or missing media
+- Styling inconsistencies
+- Responsive design failures
+- Z-index issues (elements hidden behind others)
+- Text overflow or truncation
+
+### Accessibility
+Issues that prevent or hinder access for users with disabilities.
+
+- Missing alt text on meaningful images
+- Poor color contrast (fails WCAG AA)
+- Elements not reachable via keyboard navigation
+- Missing form labels or ARIA attributes
+- Focus indicators missing or unclear
+- Screen reader incompatible content
+
+### Console
+Issues detected through JavaScript console output.
+
+- Uncaught exceptions and unhandled promise rejections
+- Failed network requests (4xx, 5xx errors in console)
+- Deprecation warnings
+- CORS errors
+- Mixed content warnings (HTTP resources on HTTPS page)
+- Excessive console.log output left from development
+
+### UX (User Experience)
+Issues where functionality works but the experience is poor.
+
+- Confusing navigation or information architecture
+- Missing loading indicators (user doesn't know something is happening)
+- No feedback after user actions (e.g., button click with no visible result)
+- Inconsistent interaction patterns
+- Missing confirmation dialogs for destructive actions
+- Poor error messages that don't help the user recover
+
+### Content
+Issues with the text, media, or information on the page.
+
+- Typos and grammatical errors
+- Placeholder/dummy content in production
+- Outdated information
+- Missing content (empty sections)
+- Broken or dead links to external resources
+- Incorrect or misleading labels

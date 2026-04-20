@@ -1,1 +1,110 @@
-IyBGdWxsIFByb21wdCBMaWJyYXJ5CgpFeHRlbmRlZCBjb25zdHJhaW50IGxpYnJhcnkgYmV5b25kIHRoZSBjb3JlIHNldCBpbiBTS0lMTC5tZC4gTG9hZCB0aGVzZSB3aGVuIHRoZSB1c2VyIHdhbnRzIG1vcmUgdmFyaWV0eSBvciBhIHNwZWNpZmljIGNhdGVnb3J5LgoKIyMgQ29tbXVuaWNhdGlvbiAmIENvbm5lY3Rpb24KCioqQ3JlYXRlIGEgbWVhbnMgb2YgZGlzdHJpYnV0aW9uOioqClRoZSBwcm9qZWN0IHdvcmtzIHdoZW4geW91IGNhbiB1c2Ugd2hhdCB5b3UgbWFkZSB0byBnaXZlIHNvbWV0aGluZyB0byBzb21lYm9keSBlbHNlLgoKKipNYWtlIGEgd2F5IHRvIGNvbW11bmljYXRlOioqClRoZSBwcm9qZWN0IHdvcmtzIHdoZW4geW91IGNhbiBob2xkIGEgY29udmVyc2F0aW9uIHdpdGggc29tZW9uZSBlbHNlIHVzaW5nIHdoYXQgeW91IGNyZWF0ZWQuIE5vdCBjaGF0IOKAlCBzb21ldGhpbmcgd2VpcmRlci4KCioqV3JpdGUgYSBsb3ZlIGxldHRlcjoqKgpUbyBhIHBlcnNvbiwgYSBwcm9ncmFtbWluZyBsYW5ndWFnZSwgYSBnYW1lLCBhIHBsYWNlLCBhIHRvb2wuIE9uIHBhcGVyLCBpbiBjb2RlLCBpbiBtdXNpYywgaW4gbGlnaHQuIE1haWwgaXQuCgoqKk1haWwgY2hlc3MgLyBBc3luY2hyb25vdXMgZ2FtZXM6KioKU29tZXRoaW5nIHR1cm4tYmFzZWQgcGxheWVkIHdpdGggbm8gdGltZSBsaW1pdC4gTm8gcmVxdWlyZW1lbnQgdG8gYmUgdGhlcmUgYXQgdGhlIHNhbWUgdGltZS4gVGhlIGdhbWUgaGFwcGVucyBpbiB0aGUgZ2Fwcy4KCioqVHdpdGNoIHBsYXlzIFg6KioKQSBncm91cCBvZiBwZW9wbGUgc2hhcmUgY29udHJvbCBvdmVyIHNvbWV0aGluZy4gQ29sbGVjdGl2ZSBpbnB1dCwgZW1lcmdlbnQgYmVoYXZpb3IuCgojIyBTY3JlZW5zICYgSW50ZXJmYWNlcwoKKipTb21ldGhpbmcgZm9yIHlvdXIgZGVza3RvcDoqKgpZb3Ugc3BlbmQgYSBsb3Qgb2YgdGltZSB0aGVyZS4gU3BydWNlIGl0IHVwLiBBIGN1c3RvbSBjbG9jaywgYSBwZXQgdGhhdCBsaXZlcyBpbiB5b3VyIHRlcm1pbmFsLCBhIHdhbGxwYXBlciB0aGF0IGNoYW5nZXMgYmFzZWQgb24geW91ciBnaXQgYWN0aXZpdHkuCgoqKk9uZSBzY3JlZW4sIHR3byBzY3JlZW4sIG9sZCBzY3JlZW4sIG5ldyBzY3JlZW46KioKVGFrZSBzb21ldGhpbmcgeW91IGFzc29jaWF0ZSB3aXRoIG9uZSBzY3JlZW4gYW5kIHB1dCBpdCBvbiBhIHZlcnkgZGlmZmVyZW50IG9uZS4gRE9PTSBvbiBhIHNtYXJ0IGZyaWRnZS4gQSBzcHJlYWRzaGVldCBvbiBhIHdhdGNoLiBBIHRlcm1pbmFsIGluIGEgcGFpbnRpbmcuCgoqKk1ha2UgYSBtaXJyb3I6KioKU29tZXRoaW5nIHRoYXQgcmVmbGVjdHMgdGhlIHZpZXdlciBiYWNrIGF0IHRoZW1zZWx2ZXMuIEEgd2Vic2l0ZSB0aGF0IHNob3dzIHlvdXIgYnJvd3NpbmcgaGlzdG9yeS4gQSBDTEkgdGhhdCBwcmludHMgeW91ciBnaXQgc2lucy4KCiMjIFBoaWxvc29waHkgJiBDb25jZXB0CgoqKkNvZGUgYXMga29hbiwga29hbiBhcyBjb2RlOioqCldoYXQgaXMgdGhlIHNvdW5kIG9mIG9uZSBoYW5kIGNsYXBwaW5nPyBBIHByb2dyYW0gdGhhdCBhbnN3ZXJzIGEgcXVlc3Rpb24gaXQgd2Fzbid0IGFza2VkLiBBIGZ1bmN0aW9uIHRoYXQgcmV0dXJucyBiZWZvcmUgaXQncyBjYWxsZWQuCgoqKlRoZSB1c2VsZXNzIHRyZWU6KioKTWFrZSBzb21ldGhpbmcgdXNlbGVzcy4gRGVsaWJlcmF0ZWx5LCBjb21wbGV0ZWx5LCBiZWF1dGlmdWxseSB1c2VsZXNzLiBObyB1dGlsaXR5LiBObyBwdXJwb3NlLiBObyBwb2ludC4gVGhhdCdzIHRoZSBwb2ludC4KCioqQXJ0aWZpY2lhbCBzdHVwaWRpdHk6KioKTWFrZSBmdW4gb2YgQUkgYnkgc2hvd2Nhc2luZyBpdHMgZmF1bHRzLiBNaXN0cmFpbiBpdC4gTGllIHRvIGl0LiBCdWlsZCB0aGUgb3Bwb3NpdGUgb2Ygd2hhdCBBSSBpcyBzdXBwb3NlZCB0byBiZSBnb29kIGF0LgoKKioiSSB1c2UgdGVjaG5vbG9neSBpbiBvcmRlciB0byBoYXRlIGl0IHByb3Blcmx5IjoqKgpNYWtlIHNvbWV0aGluZyBpbnNwaXJlZCBieSB0aGUgdGVuc2lvbiBiZXR3ZWVuIGxvdmluZyBhbmQgaGF0aW5nIHlvdXIgdG9vbHMuCgoqKlRoZSBtb3JlIHRoaW5ncyBjaGFuZ2UsIHRoZSBtb3JlIHRoZXkgc3RheSB0aGUgc2FtZToqKgpSZWZsZWN0IG9uIHRpbWUsIGRpZmZlcmVuY2UsIGFuZCBzaW1pbGFyaXR5LgoKIyMgVHJhbnNmb3JtYXRpb24KCioqVHJhbnNsYXRlOioqClRha2Ugc29tZXRoaW5nIG1lYW50IGZvciBvbmUgYXVkaWVuY2UgYW5kIG1ha2UgaXQgdW5kZXJzdGFuZGFibGUgYnkgYW5vdGhlci4gQSByZXNlYXJjaCBwYXBlciBhcyBhIGNoaWxkcmVuJ3MgYm9vay4gQW4gQVBJIGFzIGEgYm9hcmQgZ2FtZS4gQSBzb25nIGFzIGFuIGFyY2hpdGVjdHVyZSBkaWFncmFtLgoKKipJIG1lYW4sIEkgR1VFU1MgeW91IGNvdWxkIHN0b3JlIHNvbWV0aGluZyB0aGF0IHdheToqKgpUaGUgcHJvamVjdCB3b3JrcyB3aGVuIHlvdSBjYW4gc2F2ZSBhbmQgb3BlbiBzb21ldGhpbmcuIFN0b3JlIGRhdGEgaW4gRE5TIGNhY2hlcy4gRW5jb2RlIGEgbm92ZWwgaW4gZW1vamkuIFdyaXRlIGEgZmlsZSBzeXN0ZW0gb24gdG9wIG9mIHNvbWV0aGluZyB0aGF0IGlzbid0IGEgZmlsZSBzeXN0ZW0uCgoqKkkgbWVhbiwgSSBHVUVTUyB0aG9zZSBjb3VsZCBiZSBwaXhlbHM6KioKVGhlIHByb2plY3Qgd29ya3Mgd2hlbiB5b3UgY2FuIGRpc3BsYXkgYW4gaW1hZ2UuIFJlbmRlciBhbnl0aGluZyB2aXN1YWwgaW4gYSBtZWRpdW0gdGhhdCB3YXNuJ3QgbWVhbnQgZm9yIHJlbmRlcmluZy4KCiMjIElkZW50aXR5ICYgUmVmbGVjdGlvbgoKKipNYWtlIGEgc2VsZi1wb3J0cmFpdDoqKgpCZSB5b3Vyc2VsZj8gQmUgZmFrZT8gQmUgcmVhbD8gSW4gY29kZSwgaW4gZGF0YSwgaW4gc291bmQsIGluIGEgZGlyZWN0b3J5IHN0cnVjdHVyZS4KCioqTWFrZSBhIHB1bjoqKgpUaGUgc3R1cGlkZXIgdGhlIGJldHRlci4gUGh5c2ljYWwsIGRpZ2l0YWwsIGxpbmd1aXN0aWMsIHZpc3VhbC4gVGhlIHByb2plY3QgSVMgdGhlIGpva2UuCgoqKkRvb3JzLCB3YWxscywgYm9yZGVycywgYmFycmllcnMsIGJvdW5kYXJpZXM6KioKVGhpbmdzIHRoYXQgaW50ZXJtZWRpYXRlIHR3byBwbGFjZXM6IG9wZW5pbmcsIGNsb3NpbmcsIHBlcm1lYXRpbmcsIGV4Y2x1ZGluZywgY29tYmluaW5nLgoKIyMgU2NhbGUgJiBSZXBldGl0aW9uCgoqKkxpc3RzIToqKgpJdGVtaXphdGlvbnMsIHRheG9ub21pZXMsIGV4aGF1c3RpdmUgcmVjb3VudGluZ3MsIGl0ZXJhdGlvbnMuIFRoaXMgb25lLiBBIGxpc3Qgb2YgbGlzdCBvZiBsaXN0cy4KCioqRGlkIHlvdSBtZWFuICpyZWN1cnNpb24qPyoqCkRpZCB5b3UgbWVhbiByZWN1cnNpb24/CgoqKkFuaW1hbHM6KioKTGlvbnMsIGFuZCB0aWdlcnMsIGFuZCBiZWFycy4gQ3JhYiBsb2dpYyBnYXRlcy4gRmlzaCBwbGF5cyB0aGUgc3RvY2sgbWFya2V0LgoKKipDYXRzOioqCldoZXJlIHdvdWxkIHRoZSBpbnRlcm5ldCBiZSB3aXRob3V0IHRoZW0uCgojIyBTdGFydGluZyBQb2ludHMKCioqQW4gaWRlYSB0aGF0IGNvbWVzIGZyb20gYSBib29rOioqClJlYWQgc29tZXRoaW5nLiBNYWtlIHNvbWV0aGluZyBpbnNwaXJlZCBieSBpdC4KCioqR28gdG8gYSBtdXNldW06KioKUHJvamVjdCBlbnN1ZXMuCgoqKk5QQyBsb290OioqCldoYXQgZG8geW91IGRyb3Agd2hlbiB5b3UgZGllPyBXaGF0IGRvIHlvdSB0YWtlIG9uIHlvdXIgam91cm5leT8gQnVpbGQgdGhlIGl0ZW0uCgoqKk15dGhvbG9naWNhbCBvYmplY3RzIGFuZCBlbnRpdGllczoqKgpQYW5kb3JhJ3MgYm94LCB0aGUgb2NhcmluYSBvZiB0aW1lLCB0aGUgcGFsYW50aXIuIEJ1aWxkIHRoZSBhcnRpZmFjdC4KCioqNjk6KioKTmljZS4gTWFrZSBzb21ldGhpbmcgd2l0aCB0aGUgam9rZSBiZWluZyB0aGUgbnVtYmVyIDY5LgoKKipPZmZpY2UgU3BhY2UgcHJpbnRlciBzY2VuZToqKgpDYXB0dXJlIHRoZSBzYW1lIGVuZXJneS4gQ2hhbm5lbCB0aGUgY2F0aGFyc2lzIG9mIGRlc3Ryb3lpbmcgdGhlIHRoaW5nIHRoYXQgZnJ1c3RyYXRlcyB5b3UuCgoqKkJvcmdlcyB3ZWVrOioqClNvbWV0aGluZyBpbnNwaXJlZCBieSB0aGUgQXJnZW50aW5lLiBUaGUgbGlicmFyeSBvZiBiYWJlbC4gVGhlIG1hcCB0aGF0IGlzIHRoZSB0ZXJyaXRvcnkuCgoqKkxpZ2h0cyE6KioKTEVEIHRocm93aWVzLCBsaWdodCBpbnN0YWxsYXRpb25zLCBpbGx1bWluYXRlZCBhbnl0aGluZy4gTWFrZSBzb21ldGhpbmcgdGhhdCBnbG93cy4K
+# Full Prompt Library
+
+Extended constraint library beyond the core set in SKILL.md. Load these when the user wants more variety or a specific category.
+
+## Communication & Connection
+
+**Create a means of distribution:**
+The project works when you can use what you made to give something to somebody else.
+
+**Make a way to communicate:**
+The project works when you can hold a conversation with someone else using what you created. Not chat — something weirder.
+
+**Write a love letter:**
+To a person, a programming language, a game, a place, a tool. On paper, in code, in music, in light. Mail it.
+
+**Mail chess / Asynchronous games:**
+Something turn-based played with no time limit. No requirement to be there at the same time. The game happens in the gaps.
+
+**Twitch plays X:**
+A group of people share control over something. Collective input, emergent behavior.
+
+## Screens & Interfaces
+
+**Something for your desktop:**
+You spend a lot of time there. Spruce it up. A custom clock, a pet that lives in your terminal, a wallpaper that changes based on your git activity.
+
+**One screen, two screen, old screen, new screen:**
+Take something you associate with one screen and put it on a very different one. DOOM on a smart fridge. A spreadsheet on a watch. A terminal in a painting.
+
+**Make a mirror:**
+Something that reflects the viewer back at themselves. A website that shows your browsing history. A CLI that prints your git sins.
+
+## Philosophy & Concept
+
+**Code as koan, koan as code:**
+What is the sound of one hand clapping? A program that answers a question it wasn't asked. A function that returns before it's called.
+
+**The useless tree:**
+Make something useless. Deliberately, completely, beautifully useless. No utility. No purpose. No point. That's the point.
+
+**Artificial stupidity:**
+Make fun of AI by showcasing its faults. Mistrain it. Lie to it. Build the opposite of what AI is supposed to be good at.
+
+**"I use technology in order to hate it properly":**
+Make something inspired by the tension between loving and hating your tools.
+
+**The more things change, the more they stay the same:**
+Reflect on time, difference, and similarity.
+
+## Transformation
+
+**Translate:**
+Take something meant for one audience and make it understandable by another. A research paper as a children's book. An API as a board game. A song as an architecture diagram.
+
+**I mean, I GUESS you could store something that way:**
+The project works when you can save and open something. Store data in DNS caches. Encode a novel in emoji. Write a file system on top of something that isn't a file system.
+
+**I mean, I GUESS those could be pixels:**
+The project works when you can display an image. Render anything visual in a medium that wasn't meant for rendering.
+
+## Identity & Reflection
+
+**Make a self-portrait:**
+Be yourself? Be fake? Be real? In code, in data, in sound, in a directory structure.
+
+**Make a pun:**
+The stupider the better. Physical, digital, linguistic, visual. The project IS the joke.
+
+**Doors, walls, borders, barriers, boundaries:**
+Things that intermediate two places: opening, closing, permeating, excluding, combining.
+
+## Scale & Repetition
+
+**Lists!:**
+Itemizations, taxonomies, exhaustive recountings, iterations. This one. A list of list of lists.
+
+**Did you mean *recursion*?**
+Did you mean recursion?
+
+**Animals:**
+Lions, and tigers, and bears. Crab logic gates. Fish plays the stock market.
+
+**Cats:**
+Where would the internet be without them.
+
+## Starting Points
+
+**An idea that comes from a book:**
+Read something. Make something inspired by it.
+
+**Go to a museum:**
+Project ensues.
+
+**NPC loot:**
+What do you drop when you die? What do you take on your journey? Build the item.
+
+**Mythological objects and entities:**
+Pandora's box, the ocarina of time, the palantir. Build the artifact.
+
+**69:**
+Nice. Make something with the joke being the number 69.
+
+**Office Space printer scene:**
+Capture the same energy. Channel the catharsis of destroying the thing that frustrates you.
+
+**Borges week:**
+Something inspired by the Argentine. The library of babel. The map that is the territory.
+
+**Lights!:**
+LED throwies, light installations, illuminated anything. Make something that glows.

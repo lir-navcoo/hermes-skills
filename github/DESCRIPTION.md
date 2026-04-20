@@ -1,1 +1,3 @@
-LS0tCmRlc2NyaXB0aW9uOiBHaXRIdWIgd29ya2Zsb3cgc2tpbGxzIGZvciBtYW5hZ2luZyByZXBvc2l0b3JpZXMsIHB1bGwgcmVxdWVzdHMsIGNvZGUgcmV2aWV3cywgaXNzdWVzLCBhbmQgQ0kvQ0QgcGlwZWxpbmVzIHVzaW5nIHRoZSBnaCBDTEkgYW5kIGdpdCB2aWEgdGVybWluYWwuCi0tLQo=
+---
+description: GitHub workflow skills for managing repositories, pull requests, code reviews, issues, and CI/CD pipelines using the gh CLI and git via terminal.
+---

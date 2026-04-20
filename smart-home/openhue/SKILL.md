@@ -1,1 +1,108 @@
-LS0tCm5hbWU6IG9wZW5odWUKZGVzY3JpcHRpb246IENvbnRyb2wgUGhpbGlwcyBIdWUgbGlnaHRzLCByb29tcywgYW5kIHNjZW5lcyB2aWEgdGhlIE9wZW5IdWUgQ0xJLiBUdXJuIGxpZ2h0cyBvbi9vZmYsIGFkanVzdCBicmlnaHRuZXNzLCBjb2xvciwgY29sb3IgdGVtcGVyYXR1cmUsIGFuZCBhY3RpdmF0ZSBzY2VuZXMuCnZlcnNpb246IDEuMC4wCmF1dGhvcjogY29tbXVuaXR5CmxpY2Vuc2U6IE1JVAptZXRhZGF0YToKICBoZXJtZXM6CiAgICB0YWdzOiBbU21hcnQtSG9tZSwgSHVlLCBMaWdodHMsIElvVCwgQXV0b21hdGlvbl0KICAgIGhvbWVwYWdlOiBodHRwczovL3d3dy5vcGVuaHVlLmlvL2NsaQpwcmVyZXF1aXNpdGVzOgogIGNvbW1hbmRzOiBbb3Blbmh1ZV0KLS0tCgojIE9wZW5IdWUgQ0xJCgpDb250cm9sIFBoaWxpcHMgSHVlIGxpZ2h0cyBhbmQgc2NlbmVzIHZpYSBhIEh1ZSBCcmlkZ2UgZnJvbSB0aGUgdGVybWluYWwuCgojIyBQcmVyZXF1aXNpdGVzCgpgYGBiYXNoCiMgTGludXggKHByZS1idWlsdCBiaW5hcnkpCmN1cmwgLXNMIGh0dHBzOi8vZ2l0aHViLmNvbS9vcGVuaHVlL29wZW5odWUtY2xpL3JlbGVhc2VzL2xhdGVzdC9kb3dubG9hZC9vcGVuaHVlLWxpbnV4LWFtZDY0IC1vIH4vLmxvY2FsL2Jpbi9vcGVuaHVlICYmIGNobW9kICt4IH4vLmxvY2FsL2Jpbi9vcGVuaHVlCgojIG1hY09TCmJyZXcgaW5zdGFsbCBvcGVuaHVlL2NsaS9vcGVuaHVlLWNsaQpgYGAKCkZpcnN0IHJ1biByZXF1aXJlcyBwcmVzc2luZyB0aGUgYnV0dG9uIG9uIHlvdXIgSHVlIEJyaWRnZSB0byBwYWlyLiBUaGUgYnJpZGdlIG11c3QgYmUgb24gdGhlIHNhbWUgbG9jYWwgbmV0d29yay4KCiMjIFdoZW4gdG8gVXNlCgotICJUdXJuIG9uL29mZiB0aGUgbGlnaHRzIgotICJEaW0gdGhlIGxpdmluZyByb29tIGxpZ2h0cyIKLSAiU2V0IGEgc2NlbmUiIG9yICJtb3ZpZSBtb2RlIgotIENvbnRyb2xsaW5nIHNwZWNpZmljIEh1ZSByb29tcywgem9uZXMsIG9yIGluZGl2aWR1YWwgYnVsYnMKLSBBZGp1c3RpbmcgYnJpZ2h0bmVzcywgY29sb3IsIG9yIGNvbG9yIHRlbXBlcmF0dXJlCgojIyBDb21tb24gQ29tbWFuZHMKCiMjIyBMaXN0IFJlc291cmNlcwoKYGBgYmFzaApvcGVuaHVlIGdldCBsaWdodCAgICAgICAjIExpc3QgYWxsIGxpZ2h0cwpvcGVuaHVlIGdldCByb29tICAgICAgICAjIExpc3QgYWxsIHJvb21zCm9wZW5odWUgZ2V0IHNjZW5lICAgICAgICMgTGlzdCBhbGwgc2NlbmVzCmBgYAoKIyMjIENvbnRyb2wgTGlnaHRzCgpgYGBiYXNoCiMgVHVybiBvbi9vZmYKb3Blbmh1ZSBzZXQgbGlnaHQgIkJlZHJvb20gTGFtcCIgLS1vbgpvcGVuaHVlIHNldCBsaWdodCAiQmVkcm9vbSBMYW1wIiAtLW9mZgoKIyBCcmlnaHRuZXNzICgwLTEwMCkKb3Blbmh1ZSBzZXQgbGlnaHQgIkJlZHJvb20gTGFtcCIgLS1vbiAtLWJyaWdodG5lc3MgNTAKCiMgQ29sb3IgdGVtcGVyYXR1cmUgKHdhcm0gdG8gY29vbDogMTUzLTUwMCBtaXJlaykKb3Blbmh1ZSBzZXQgbGlnaHQgIkJlZHJvb20gTGFtcCIgLS1vbiAtLXRlbXBlcmF0dXJlIDMwMAoKIyBDb2xvciAoYnkgbmFtZSBvciBoZXgpCm9wZW5odWUgc2V0IGxpZ2h0ICJCZWRyb29tIExhbXAiIC0tb24gLS1jb2xvciByZWQKb3Blbmh1ZSBzZXQgbGlnaHQgIkJlZHJvb20gTGFtcCIgLS1vbiAtLXJnYiAiI0ZGNTUwMCIKYGBgCgojIyMgQ29udHJvbCBSb29tcwoKYGBgYmFzaAojIFR1cm4gb2ZmIGVudGlyZSByb29tCm9wZW5odWUgc2V0IHJvb20gIkJlZHJvb20iIC0tb2ZmCgojIFNldCByb29tIGJyaWdodG5lc3MKb3Blbmh1ZSBzZXQgcm9vbSAiQmVkcm9vbSIgLS1vbiAtLWJyaWdodG5lc3MgMzAKYGBgCgojIyMgU2NlbmVzCgpgYGBiYXNoCm9wZW5odWUgc2V0IHNjZW5lICJSZWxheCIgLS1yb29tICJCZWRyb29tIgpvcGVuaHVlIHNldCBzY2VuZSAiQ29uY2VudHJhdGUiIC0tcm9vbSAiT2ZmaWNlIgpgYGAKCiMjIFF1aWNrIFByZXNldHMKCmBgYGJhc2gKIyBCZWR0aW1lIChkaW0gd2FybSkKb3Blbmh1ZSBzZXQgcm9vbSAiQmVkcm9vbSIgLS1vbiAtLWJyaWdodG5lc3MgMjAgLS10ZW1wZXJhdHVyZSA0NTAKCiMgV29yayBtb2RlIChicmlnaHQgY29vbCkKb3Blbmh1ZSBzZXQgcm9vbSAiT2ZmaWNlIiAtLW9uIC0tYnJpZ2h0bmVzcyAxMDAgLS10ZW1wZXJhdHVyZSAyNTAKCiMgTW92aWUgbW9kZSAoZGltKQpvcGVuaHVlIHNldCByb29tICJMaXZpbmcgUm9vbSIgLS1vbiAtLWJyaWdodG5lc3MgMTAKCiMgRXZlcnl0aGluZyBvZmYKb3Blbmh1ZSBzZXQgcm9vbSAiQmVkcm9vbSIgLS1vZmYKb3Blbmh1ZSBzZXQgcm9vbSAiT2ZmaWNlIiAtLW9mZgpvcGVuaHVlIHNldCByb29tICJMaXZpbmcgUm9vbSIgLS1vZmYKYGBgCgojIyBOb3RlcwoKLSBCcmlkZ2UgbXVzdCBiZSBvbiB0aGUgc2FtZSBsb2NhbCBuZXR3b3JrIGFzIHRoZSBtYWNoaW5lIHJ1bm5pbmcgSGVybWVzCi0gRmlyc3QgcnVuIHJlcXVpcmVzIHBoeXNpY2FsbHkgcHJlc3NpbmcgdGhlIGJ1dHRvbiBvbiB0aGUgSHVlIEJyaWRnZSB0byBhdXRob3JpemUKLSBDb2xvcnMgb25seSB3b3JrIG9uIGNvbG9yLWNhcGFibGUgYnVsYnMgKG5vdCB3aGl0ZS1vbmx5IG1vZGVscykKLSBMaWdodCBhbmQgcm9vbSBuYW1lcyBhcmUgY2FzZS1zZW5zaXRpdmUg4oCUIHVzZSBgb3Blbmh1ZSBnZXQgbGlnaHRgIHRvIGNoZWNrIGV4YWN0IG5hbWVzCi0gV29ya3MgZ3JlYXQgd2l0aCBjcm9uIGpvYnMgZm9yIHNjaGVkdWxlZCBsaWdodGluZyAoZS5nLiBkaW0gYXQgYmVkdGltZSwgYnJpZ2h0IGF0IHdha2UpCg==
+---
+name: openhue
+description: Control Philips Hue lights, rooms, and scenes via the OpenHue CLI. Turn lights on/off, adjust brightness, color, color temperature, and activate scenes.
+version: 1.0.0
+author: community
+license: MIT
+metadata:
+  hermes:
+    tags: [Smart-Home, Hue, Lights, IoT, Automation]
+    homepage: https://www.openhue.io/cli
+prerequisites:
+  commands: [openhue]
+---
+
+# OpenHue CLI
+
+Control Philips Hue lights and scenes via a Hue Bridge from the terminal.
+
+## Prerequisites
+
+```bash
+# Linux (pre-built binary)
+curl -sL https://github.com/openhue/openhue-cli/releases/latest/download/openhue-linux-amd64 -o ~/.local/bin/openhue && chmod +x ~/.local/bin/openhue
+
+# macOS
+brew install openhue/cli/openhue-cli
+```
+
+First run requires pressing the button on your Hue Bridge to pair. The bridge must be on the same local network.
+
+## When to Use
+
+- "Turn on/off the lights"
+- "Dim the living room lights"
+- "Set a scene" or "movie mode"
+- Controlling specific Hue rooms, zones, or individual bulbs
+- Adjusting brightness, color, or color temperature
+
+## Common Commands
+
+### List Resources
+
+```bash
+openhue get light       # List all lights
+openhue get room        # List all rooms
+openhue get scene       # List all scenes
+```
+
+### Control Lights
+
+```bash
+# Turn on/off
+openhue set light "Bedroom Lamp" --on
+openhue set light "Bedroom Lamp" --off
+
+# Brightness (0-100)
+openhue set light "Bedroom Lamp" --on --brightness 50
+
+# Color temperature (warm to cool: 153-500 mirek)
+openhue set light "Bedroom Lamp" --on --temperature 300
+
+# Color (by name or hex)
+openhue set light "Bedroom Lamp" --on --color red
+openhue set light "Bedroom Lamp" --on --rgb "#FF5500"
+```
+
+### Control Rooms
+
+```bash
+# Turn off entire room
+openhue set room "Bedroom" --off
+
+# Set room brightness
+openhue set room "Bedroom" --on --brightness 30
+```
+
+### Scenes
+
+```bash
+openhue set scene "Relax" --room "Bedroom"
+openhue set scene "Concentrate" --room "Office"
+```
+
+## Quick Presets
+
+```bash
+# Bedtime (dim warm)
+openhue set room "Bedroom" --on --brightness 20 --temperature 450
+
+# Work mode (bright cool)
+openhue set room "Office" --on --brightness 100 --temperature 250
+
+# Movie mode (dim)
+openhue set room "Living Room" --on --brightness 10
+
+# Everything off
+openhue set room "Bedroom" --off
+openhue set room "Office" --off
+openhue set room "Living Room" --off
+```
+
+## Notes
+
+- Bridge must be on the same local network as the machine running Hermes
+- First run requires physically pressing the button on the Hue Bridge to authorize
+- Colors only work on color-capable bulbs (not white-only models)
+- Light and room names are case-sensitive — use `openhue get light` to check exact names
+- Works great with cron jobs for scheduled lighting (e.g. dim at bedtime, bright at wake)

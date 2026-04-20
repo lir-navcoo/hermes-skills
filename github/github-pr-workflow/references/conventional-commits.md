@@ -1,1 +1,71 @@
-IyBDb252ZW50aW9uYWwgQ29tbWl0cyBRdWljayBSZWZlcmVuY2UKCkZvcm1hdDogYHR5cGUoc2NvcGUpOiBkZXNjcmlwdGlvbmAKCiMjIFR5cGVzCgp8IFR5cGUgfCBXaGVuIHRvIHVzZSB8IEV4YW1wbGUgfAp8LS0tLS0tfC0tLS0tLS0tLS0tLXwtLS0tLS0tLS18CnwgYGZlYXRgIHwgTmV3IGZlYXR1cmUgb3IgY2FwYWJpbGl0eSB8IGBmZWF0KGF1dGgpOiBhZGQgT0F1dGgyIGxvZ2luIGZsb3dgIHwKfCBgZml4YCB8IEJ1ZyBmaXggfCBgZml4KGFwaSk6IGhhbmRsZSBudWxsIHJlc3BvbnNlIGZyb20gL3VzZXJzIGVuZHBvaW50YCB8CnwgYHJlZmFjdG9yYCB8IENvZGUgcmVzdHJ1Y3R1cmluZywgbm8gYmVoYXZpb3IgY2hhbmdlIHwgYHJlZmFjdG9yKGRiKTogZXh0cmFjdCBxdWVyeSBidWlsZGVyIGludG8gc2VwYXJhdGUgbW9kdWxlYCB8CnwgYGRvY3NgIHwgRG9jdW1lbnRhdGlvbiBvbmx5IHwgYGRvY3M6IHVwZGF0ZSBBUEkgdXNhZ2UgZXhhbXBsZXMgaW4gUkVBRE1FYCB8CnwgYHRlc3RgIHwgQWRkaW5nIG9yIHVwZGF0aW5nIHRlc3RzIHwgYHRlc3QoYXV0aCk6IGFkZCBpbnRlZ3JhdGlvbiB0ZXN0cyBmb3IgdG9rZW4gcmVmcmVzaGAgfAp8IGBjaWAgfCBDSS9DRCBjb25maWd1cmF0aW9uIHwgYGNpOiBhZGQgUHl0aG9uIDMuMTIgdG8gdGVzdCBtYXRyaXhgIHwKfCBgY2hvcmVgIHwgTWFpbnRlbmFuY2UsIGRlcGVuZGVuY2llcywgdG9vbGluZyB8IGBjaG9yZTogdXBncmFkZSBweXRlc3QgdG8gOC54YCB8CnwgYHBlcmZgIHwgUGVyZm9ybWFuY2UgaW1wcm92ZW1lbnQgfCBgcGVyZihzZWFyY2gpOiBhZGQgaW5kZXggb24gdXNlcnMuZW1haWwgY29sdW1uYCB8CnwgYHN0eWxlYCB8IEZvcm1hdHRpbmcsIHdoaXRlc3BhY2UsIHNlbWljb2xvbnMgfCBgc3R5bGU6IHJ1biBibGFjayBmb3JtYXR0ZXIgb24gc3JjL2AgfAp8IGBidWlsZGAgfCBCdWlsZCBzeXN0ZW0gb3IgZXh0ZXJuYWwgZGVwcyB8IGBidWlsZDogc3dpdGNoIGZyb20gc2V0dXB0b29scyB0byBoYXRjaGAgfAp8IGByZXZlcnRgIHwgUmV2ZXJ0cyBhIHByZXZpb3VzIGNvbW1pdCB8IGByZXZlcnQ6IHJldmVydCAiZmVhdChhdXRoKTogYWRkIE9BdXRoMiBsb2dpbiBmbG93ImAgfAoKIyMgU2NvcGUgKG9wdGlvbmFsKQoKU2hvcnQgaWRlbnRpZmllciBmb3IgdGhlIGFyZWEgb2YgdGhlIGNvZGViYXNlOiBgYXV0aGAsIGBhcGlgLCBgZGJgLCBgdWlgLCBgY2xpYCwgZXRjLgoKIyMgQnJlYWtpbmcgQ2hhbmdlcwoKQWRkIGAhYCBhZnRlciB0eXBlIG9yIGBCUkVBS0lORyBDSEFOR0U6YCBpbiBmb290ZXI6CgpgYGAKZmVhdChhcGkpITogY2hhbmdlIGF1dGhlbnRpY2F0aW9uIHRvIHVzZSBiZWFyZXIgdG9rZW5zCgpCUkVBS0lORyBDSEFOR0U6IEFQSSBlbmRwb2ludHMgbm93IHJlcXVpcmUgQmVhcmVyIHRva2VuIGluc3RlYWQgb2YgQVBJIGtleSBoZWFkZXIuCk1pZ3JhdGlvbiBndWlkZTogaHR0cHM6Ly9kb2NzLmV4YW1wbGUuY29tL21pZ3JhdGUtYXV0aApgYGAKCiMjIE11bHRpLWxpbmUgQm9keQoKV3JhcCBhdCA3MiBjaGFyYWN0ZXJzLiBVc2UgYnVsbGV0IHBvaW50cyBmb3IgbXVsdGlwbGUgY2hhbmdlczoKCmBgYApmZWF0KGF1dGgpOiBhZGQgSldULWJhc2VkIHVzZXIgYXV0aGVudGljYXRpb24KCi0gQWRkIGxvZ2luL3JlZ2lzdGVyIGVuZHBvaW50cyB3aXRoIGlucHV0IHZhbGlkYXRpb24KLSBBZGQgVXNlciBtb2RlbCB3aXRoIGFyZ29uMiBwYXNzd29yZCBoYXNoaW5nCi0gQWRkIGF1dGggbWlkZGxld2FyZSBmb3IgcHJvdGVjdGVkIHJvdXRlcwotIEFkZCB0b2tlbiByZWZyZXNoIGVuZHBvaW50IHdpdGggcm90YXRpb24KCkNsb3NlcyAjNDIKYGBgCgojIyBMaW5raW5nIElzc3VlcwoKSW4gdGhlIGNvbW1pdCBib2R5IG9yIGZvb3RlcjoKCmBgYApDbG9zZXMgIzQyICAgICAgICAgIOKGkCBjbG9zZXMgdGhlIGlzc3VlIHdoZW4gbWVyZ2VkCkZpeGVzICM0MiAgICAgICAgICAg4oaQIHNhbWUgZWZmZWN0ClJlZnMgIzQyICAgICAgICAgICAg4oaQIHJlZmVyZW5jZXMgd2l0aG91dCBjbG9zaW5nCkNvLWF1dGhvcmVkLWJ5OiBOYW1lIDxlbWFpbD4KYGBgCgojIyBRdWljayBEZWNpc2lvbiBHdWlkZQoKLSBBZGRlZCBzb21ldGhpbmcgbmV3PyDihpIgYGZlYXRgCi0gU29tZXRoaW5nIHdhcyBicm9rZW4gYW5kIHlvdSBmaXhlZCBpdD8g4oaSIGBmaXhgCi0gQ2hhbmdlZCBob3cgY29kZSBpcyBvcmdhbml6ZWQgYnV0IG5vdCB3aGF0IGl0IGRvZXM/IOKGkiBgcmVmYWN0b3JgCi0gT25seSB0b3VjaGVkIHRlc3RzPyDihpIgYHRlc3RgCi0gT25seSB0b3VjaGVkIGRvY3M/IOKGkiBgZG9jc2AKLSBVcGRhdGVkIENJL0NEIHBpcGVsaW5lcz8g4oaSIGBjaWAKLSBVcGRhdGVkIGRlcGVuZGVuY2llcyBvciB0b29saW5nPyDihpIgYGNob3JlYAotIE1hZGUgc29tZXRoaW5nIGZhc3Rlcj8g4oaSIGBwZXJmYAo=
+# Conventional Commits Quick Reference
+
+Format: `type(scope): description`
+
+## Types
+
+| Type | When to use | Example |
+|------|------------|---------|
+| `feat` | New feature or capability | `feat(auth): add OAuth2 login flow` |
+| `fix` | Bug fix | `fix(api): handle null response from /users endpoint` |
+| `refactor` | Code restructuring, no behavior change | `refactor(db): extract query builder into separate module` |
+| `docs` | Documentation only | `docs: update API usage examples in README` |
+| `test` | Adding or updating tests | `test(auth): add integration tests for token refresh` |
+| `ci` | CI/CD configuration | `ci: add Python 3.12 to test matrix` |
+| `chore` | Maintenance, dependencies, tooling | `chore: upgrade pytest to 8.x` |
+| `perf` | Performance improvement | `perf(search): add index on users.email column` |
+| `style` | Formatting, whitespace, semicolons | `style: run black formatter on src/` |
+| `build` | Build system or external deps | `build: switch from setuptools to hatch` |
+| `revert` | Reverts a previous commit | `revert: revert "feat(auth): add OAuth2 login flow"` |
+
+## Scope (optional)
+
+Short identifier for the area of the codebase: `auth`, `api`, `db`, `ui`, `cli`, etc.
+
+## Breaking Changes
+
+Add `!` after type or `BREAKING CHANGE:` in footer:
+
+```
+feat(api)!: change authentication to use bearer tokens
+
+BREAKING CHANGE: API endpoints now require Bearer token instead of API key header.
+Migration guide: https://docs.example.com/migrate-auth
+```
+
+## Multi-line Body
+
+Wrap at 72 characters. Use bullet points for multiple changes:
+
+```
+feat(auth): add JWT-based user authentication
+
+- Add login/register endpoints with input validation
+- Add User model with argon2 password hashing
+- Add auth middleware for protected routes
+- Add token refresh endpoint with rotation
+
+Closes #42
+```
+
+## Linking Issues
+
+In the commit body or footer:
+
+```
+Closes #42          ← closes the issue when merged
+Fixes #42           ← same effect
+Refs #42            ← references without closing
+Co-authored-by: Name <email>
+```
+
+## Quick Decision Guide
+
+- Added something new? → `feat`
+- Something was broken and you fixed it? → `fix`
+- Changed how code is organized but not what it does? → `refactor`
+- Only touched tests? → `test`
+- Only touched docs? → `docs`
+- Updated CI/CD pipelines? → `ci`
+- Updated dependencies or tooling? → `chore`
+- Made something faster? → `perf`

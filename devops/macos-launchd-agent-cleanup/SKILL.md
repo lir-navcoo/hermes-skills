@@ -1,1 +1,83 @@
-LS0tCm5hbWU6IG1hY29zLWxhdW5jaGQtYWdlbnQtY2xlYW51cApkZXNjcmlwdGlvbjogQ2xlYW5seSByZW1vdmUgbGF1bmNoZCBhZ2VudHMgKGxhdW5jaGQsIGxhdW5jaGN0bCkgb24gbWFjT1Mg4oCUIHN0b3AgcHJvY2Vzc2VzLCB1bmxvYWQsIGJvb3RvdXQsIGFuZCBkZWxldGUgcGxpc3QgZmlsZXMuCnRyaWdnZXJzOgogIC0gImhvdyB0byByZW1vdmUgYSBsYXVuY2hkIGFnZW50IG9uIG1hY09TIgogIC0gImxhdW5jaGN0bCBsaXN0IHN0aWxsIHNob3dzIGFnZW50IGFmdGVyIGRlbGV0aW5nIHBsaXN0IgogIC0gInBvcnQgc3RpbGwgaW4gdXNlIGFmdGVyIGtpbGxpbmcgcHJvY2VzcyIKICAtICJ1bmluc3RhbGwgbGF1bmNoZCBzZXJ2aWNlIG1hY09TIgpjYXRlZ29yeTogZGV2b3BzCi0tLQoKIyBtYWNPUyBMYXVuY2hkIEFnZW50IENsZWFudXAKCiMjIENvbXBsZXRlIFJlbW92YWwgV29ya2Zsb3cKCldoZW4geW91IG5lZWQgdG8gZnVsbHkgcmVtb3ZlIGEgbGF1bmNoZCBhZ2VudCAoZS5nLiwgYSBzZXJ2aWNlIGxpa2Ugb3BlbmNsYXcsIGEgYmFja2dyb3VuZCBkYWVtb24pOgoKIyMjIFN0ZXAgMTogSWRlbnRpZnkgdGhlIGFnZW50IGFuZCBraWxsIGl0cyBwcm9jZXNzCmBgYGJhc2gKIyBGaW5kIHdoYXQncyB1c2luZyB0aGUgcG9ydApsc29mIC1pIDo8UE9SVD4KCiMgRmluZCBydW5uaW5nIHByb2Nlc3NlcwpwcyBhdXggfCBncmVwIC1pIDxOQU1FPgoKIyBLaWxsIGJ5IFBJRApraWxsIDxQSUQ+CmBgYAoKIyMjIFN0ZXAgMjogVW5sb2FkIHRoZSBhZ2VudCAoc3RvcHMgaXQgYnV0IG1heSBsZWF2ZSByZWdpc3RyYXRpb24pCmBgYGJhc2gKbGF1bmNoY3RsIHVubG9hZCB+L0xpYnJhcnkvTGF1bmNoQWdlbnRzLzxuYW1lPi5wbGlzdApgYGAKCiMjIyBTdGVwIDM6IEJvb3RvdXQgKFRIRSBLRVkgU1RFUCDigJQgZnVsbHkgcmVtb3ZlcyBmcm9tIGxhdW5jaGQgZG9tYWluKQpgYGBiYXNoCmxhdW5jaGN0bCBib290b3V0IGd1aS8kKGlkIC11KS88bGFiZWw+CiMgRXhhbXBsZTogbGF1bmNoY3RsIGJvb3RvdXQgZ3VpLzUwMS9haS5vcGVuY2xhdy5nYXRld2F5CmBgYAoKIyMjIFN0ZXAgNDogRGVsZXRlIHBsaXN0IGZpbGUKYGBgYmFzaApybSAtZiB+L0xpYnJhcnkvTGF1bmNoQWdlbnRzLzxuYW1lPi5wbGlzdApgYGAKCiMjIyBTdGVwIDU6IFZlcmlmeQpgYGBiYXNoCmxhdW5jaGN0bCBsaXN0IHwgZ3JlcCAtaSA8TkFNRT4KbHNvZiAtaSA6PFBPUlQ+ICAjIHBvcnQgc2hvdWxkIGJlIGZyZWUKcHMgYXV4IHwgZ3JlcCAtaSA8TkFNRT4gICMgbm8gcHJvY2Vzc2VzCmBgYAoKIyMgQ29tbW9uIFBpdGZhbGxzCgojIyMgYGxhdW5jaGN0bCB1bmxvYWRgIGFsb25lIGlzIE5PVCBlbm91Z2gKLSBJdCBzdG9wcyB0aGUgam9iIGJ1dCBkb2VzIE5PVCByZW1vdmUgaXQgZnJvbSB0aGUgbGF1bmNoZCBuYW1lc3BhY2UKLSBgbGF1bmNoY3RsIGxpc3RgIHdpbGwgU1RJTEwgc2hvdyB0aGUgYWdlbnQgd2l0aCBhIG5vbi16ZXJvIGV4aXQgY29kZQotIFlvdSBNVVNUIHVzZSBgYm9vdG91dGAgdG8gZnVsbHkgZGVyZWdpc3RlcgoKIyMjIGBsYXVuY2hjdGwgcmVtb3ZlYCBpcyBhbHNvIGluc3VmZmljaWVudCBmb3IgdXNlciBhZ2VudHMKLSBgcmVtb3ZlYCB3b3JrcyBmb3Igc3lzdGVtLXdpZGUgYWdlbnRzCi0gRm9yIHVzZXIgYWdlbnRzIChndWkvVUlELyksIHVzZSBgYm9vdG91dCBndWkvVUlELzxsYWJlbD5gCgojIyMgT3JkZXIgbWF0dGVycwoxLiBLaWxsIHRoZSBwcm9jZXNzIGZpcnN0CjIuIFRoZW4gYm9vdG91dCAodGhpcyBhbHNvIHN0b3BzIHRoZSBqb2IpCjMuIFRoZW4gZGVsZXRlIHBsaXN0IChzYWZlIHRvIGRlbGV0ZSBhZnRlciBib290b3V0KQoKIyMgRmluZGluZyBhZ2VudHMKCmBgYGJhc2gKIyBVc2VyIGFnZW50cwpscyB+L0xpYnJhcnkvTGF1bmNoQWdlbnRzLwoKIyBTeXN0ZW0td2lkZSBhZ2VudHMgKHJlcXVpcmVzIHN1ZG8gZm9yIGluc3BlY3Rpb24pCmxzIC9MaWJyYXJ5L0xhdW5jaEFnZW50cy8KCiMgQWxsIHJ1bm5pbmcgYWdlbnRzIG1hdGNoaW5nIG5hbWUKbGF1bmNoY3RsIGxpc3QgfCBncmVwIC1pIDxOQU1FPgoKIyBCeSBwb3J0Cmxzb2YgLWkgOjxQT1JUPgpgYGAK
+---
+name: macos-launchd-agent-cleanup
+description: Cleanly remove launchd agents (launchd, launchctl) on macOS — stop processes, unload, bootout, and delete plist files.
+triggers:
+  - "how to remove a launchd agent on macOS"
+  - "launchctl list still shows agent after deleting plist"
+  - "port still in use after killing process"
+  - "uninstall launchd service macOS"
+category: devops
+---
+
+# macOS Launchd Agent Cleanup
+
+## Complete Removal Workflow
+
+When you need to fully remove a launchd agent (e.g., a service like openclaw, a background daemon):
+
+### Step 1: Identify the agent and kill its process
+```bash
+# Find what's using the port
+lsof -i :<PORT>
+
+# Find running processes
+ps aux | grep -i <NAME>
+
+# Kill by PID
+kill <PID>
+```
+
+### Step 2: Unload the agent (stops it but may leave registration)
+```bash
+launchctl unload ~/Library/LaunchAgents/<name>.plist
+```
+
+### Step 3: Bootout (THE KEY STEP — fully removes from launchd domain)
+```bash
+launchctl bootout gui/$(id -u)/<label>
+# Example: launchctl bootout gui/501/ai.openclaw.gateway
+```
+
+### Step 4: Delete plist file
+```bash
+rm -f ~/Library/LaunchAgents/<name>.plist
+```
+
+### Step 5: Verify
+```bash
+launchctl list | grep -i <NAME>
+lsof -i :<PORT>  # port should be free
+ps aux | grep -i <NAME>  # no processes
+```
+
+## Common Pitfalls
+
+### `launchctl unload` alone is NOT enough
+- It stops the job but does NOT remove it from the launchd namespace
+- `launchctl list` will STILL show the agent with a non-zero exit code
+- You MUST use `bootout` to fully deregister
+
+### `launchctl remove` is also insufficient for user agents
+- `remove` works for system-wide agents
+- For user agents (gui/UID/), use `bootout gui/UID/<label>`
+
+### Order matters
+1. Kill the process first
+2. Then bootout (this also stops the job)
+3. Then delete plist (safe to delete after bootout)
+
+## Finding agents
+
+```bash
+# User agents
+ls ~/Library/LaunchAgents/
+
+# System-wide agents (requires sudo for inspection)
+ls /Library/LaunchAgents/
+
+# All running agents matching name
+launchctl list | grep -i <NAME>
+
+# By port
+lsof -i :<PORT>
+```

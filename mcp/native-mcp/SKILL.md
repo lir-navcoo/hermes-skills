@@ -1,1 +1,356 @@
-LS0tCm5hbWU6IG5hdGl2ZS1tY3AKZGVzY3JpcHRpb246IEJ1aWx0LWluIE1DUCAoTW9kZWwgQ29udGV4dCBQcm90b2NvbCkgY2xpZW50IHRoYXQgY29ubmVjdHMgdG8gZXh0ZXJuYWwgTUNQIHNlcnZlcnMsIGRpc2NvdmVycyB0aGVpciB0b29scywgYW5kIHJlZ2lzdGVycyB0aGVtIGFzIG5hdGl2ZSBIZXJtZXMgQWdlbnQgdG9vbHMuIFN1cHBvcnRzIHN0ZGlvIGFuZCBIVFRQIHRyYW5zcG9ydHMgd2l0aCBhdXRvbWF0aWMgcmVjb25uZWN0aW9uLCBzZWN1cml0eSBmaWx0ZXJpbmcsIGFuZCB6ZXJvLWNvbmZpZyB0b29sIGluamVjdGlvbi4KdmVyc2lvbjogMS4wLjAKYXV0aG9yOiBIZXJtZXMgQWdlbnQKbGljZW5zZTogTUlUCm1ldGFkYXRhOgogIGhlcm1lczoKICAgIHRhZ3M6IFtNQ1AsIFRvb2xzLCBJbnRlZ3JhdGlvbnNdCiAgICByZWxhdGVkX3NraWxsczogW21jcG9ydGVyXQotLS0KCiMgTmF0aXZlIE1DUCBDbGllbnQKCkhlcm1lcyBBZ2VudCBoYXMgYSBidWlsdC1pbiBNQ1AgY2xpZW50IHRoYXQgY29ubmVjdHMgdG8gTUNQIHNlcnZlcnMgYXQgc3RhcnR1cCwgZGlzY292ZXJzIHRoZWlyIHRvb2xzLCBhbmQgbWFrZXMgdGhlbSBhdmFpbGFibGUgYXMgZmlyc3QtY2xhc3MgdG9vbHMgdGhlIGFnZW50IGNhbiBjYWxsIGRpcmVjdGx5LiBObyBicmlkZ2UgQ0xJIG5lZWRlZCAtLSB0b29scyBmcm9tIE1DUCBzZXJ2ZXJzIGFwcGVhciBhbG9uZ3NpZGUgYnVpbHQtaW4gdG9vbHMgbGlrZSBgdGVybWluYWxgLCBgcmVhZF9maWxlYCwgZXRjLgoKIyMgV2hlbiB0byBVc2UKClVzZSB0aGlzIHdoZW5ldmVyIHlvdSB3YW50IHRvOgotIENvbm5lY3QgdG8gTUNQIHNlcnZlcnMgYW5kIHVzZSB0aGVpciB0b29scyBmcm9tIHdpdGhpbiBIZXJtZXMgQWdlbnQKLSBBZGQgZXh0ZXJuYWwgY2FwYWJpbGl0aWVzIChmaWxlc3lzdGVtIGFjY2VzcywgR2l0SHViLCBkYXRhYmFzZXMsIEFQSXMpIHZpYSBNQ1AKLSBSdW4gbG9jYWwgc3RkaW8tYmFzZWQgTUNQIHNlcnZlcnMgKG5weCwgdXZ4LCBvciBhbnkgY29tbWFuZCkKLSBDb25uZWN0IHRvIHJlbW90ZSBIVFRQL1N0cmVhbWFibGVIVFRQIE1DUCBzZXJ2ZXJzCi0gSGF2ZSBNQ1AgdG9vbHMgYXV0by1kaXNjb3ZlcmVkIGFuZCBhdmFpbGFibGUgaW4gZXZlcnkgY29udmVyc2F0aW9uCgpGb3IgYWQtaG9jLCBvbmUtb2ZmIE1DUCB0b29sIGNhbGxzIGZyb20gdGhlIHRlcm1pbmFsIHdpdGhvdXQgY29uZmlndXJpbmcgYW55dGhpbmcsIHNlZSB0aGUgYG1jcG9ydGVyYCBza2lsbCBpbnN0ZWFkLgoKIyMgUHJlcmVxdWlzaXRlcwoKLSAqKm1jcCBQeXRob24gcGFja2FnZSoqIC0tIG9wdGlvbmFsIGRlcGVuZGVuY3k7IGluc3RhbGwgd2l0aCBgcGlwIGluc3RhbGwgbWNwYC4gSWYgbm90IGluc3RhbGxlZCwgTUNQIHN1cHBvcnQgaXMgc2lsZW50bHkgZGlzYWJsZWQuCi0gKipOb2RlLmpzKiogLS0gcmVxdWlyZWQgZm9yIGBucHhgLWJhc2VkIE1DUCBzZXJ2ZXJzIChtb3N0IGNvbW11bml0eSBzZXJ2ZXJzKQotICoqdXYqKiAtLSByZXF1aXJlZCBmb3IgYHV2eGAtYmFzZWQgTUNQIHNlcnZlcnMgKFB5dGhvbi1iYXNlZCBzZXJ2ZXJzKQoKSW5zdGFsbCB0aGUgTUNQIFNESzoKCmBgYGJhc2gKcGlwIGluc3RhbGwgbWNwCiMgb3IsIGlmIHVzaW5nIHV2Ogp1diBwaXAgaW5zdGFsbCBtY3AKYGBgCgojIyBRdWljayBTdGFydAoKQWRkIE1DUCBzZXJ2ZXJzIHRvIGB+Ly5oZXJtZXMvY29uZmlnLnlhbWxgIHVuZGVyIHRoZSBgbWNwX3NlcnZlcnNgIGtleToKCmBgYHlhbWwKbWNwX3NlcnZlcnM6CiAgdGltZToKICAgIGNvbW1hbmQ6ICJ1dngiCiAgICBhcmdzOiBbIm1jcC1zZXJ2ZXItdGltZSJdCmBgYAoKUmVzdGFydCBIZXJtZXMgQWdlbnQuIE9uIHN0YXJ0dXAgaXQgd2lsbDoKMS4gQ29ubmVjdCB0byB0aGUgc2VydmVyCjIuIERpc2NvdmVyIGF2YWlsYWJsZSB0b29scwozLiBSZWdpc3RlciB0aGVtIHdpdGggdGhlIHByZWZpeCBgbWNwX3RpbWVfKmAKNC4gSW5qZWN0IHRoZW0gaW50byBhbGwgcGxhdGZvcm0gdG9vbHNldHMKCllvdSBjYW4gdGhlbiB1c2UgdGhlIHRvb2xzIG5hdHVyYWxseSAtLSBqdXN0IGFzayB0aGUgYWdlbnQgdG8gZ2V0IHRoZSBjdXJyZW50IHRpbWUuCgojIyBDb25maWd1cmF0aW9uIFJlZmVyZW5jZQoKRWFjaCBlbnRyeSB1bmRlciBgbWNwX3NlcnZlcnNgIGlzIGEgc2VydmVyIG5hbWUgbWFwcGVkIHRvIGl0cyBjb25maWcuIFRoZXJlIGFyZSB0d28gdHJhbnNwb3J0IHR5cGVzOiAqKnN0ZGlvKiogKGNvbW1hbmQtYmFzZWQpIGFuZCAqKkhUVFAqKiAodXJsLWJhc2VkKS4KCiMjIyBTdGRpbyBUcmFuc3BvcnQgKGNvbW1hbmQgKyBhcmdzKQoKYGBgeWFtbAptY3Bfc2VydmVyczoKICBzZXJ2ZXJfbmFtZToKICAgIGNvbW1hbmQ6ICJucHgiICAgICAgICAgICAgICMgKHJlcXVpcmVkKSBleGVjdXRhYmxlIHRvIHJ1bgogICAgYXJnczogWyIteSIsICJwa2ctbmFtZSJdICAgIyAob3B0aW9uYWwpIGNvbW1hbmQgYXJndW1lbnRzLCBkZWZhdWx0OiBbXQogICAgZW52OiAgICAgICAgICAgICAgICAgICAgICAgIyAob3B0aW9uYWwpIGVudmlyb25tZW50IHZhcmlhYmxlcyBmb3IgdGhlIHN1YnByb2Nlc3MKICAgICAgU09NRV9BUElfS0VZOiAidmFsdWUiCiAgICB0aW1lb3V0OiAxMjAgICAgICAgICAgICAgICAjIChvcHRpb25hbCkgcGVyLXRvb2wtY2FsbCB0aW1lb3V0IGluIHNlY29uZHMsIGRlZmF1bHQ6IDEyMAogICAgY29ubmVjdF90aW1lb3V0OiA2MCAgICAgICAgIyAob3B0aW9uYWwpIGluaXRpYWwgY29ubmVjdGlvbiB0aW1lb3V0IGluIHNlY29uZHMsIGRlZmF1bHQ6IDYwCmBgYAoKIyMjIEhUVFAgVHJhbnNwb3J0ICh1cmwpCgpgYGB5YW1sCm1jcF9zZXJ2ZXJzOgogIHNlcnZlcl9uYW1lOgogICAgdXJsOiAiaHR0cHM6Ly9teS1zZXJ2ZXIuZXhhbXBsZS5jb20vbWNwIiAgICMgKHJlcXVpcmVkKSBzZXJ2ZXIgVVJMCiAgICBoZWFkZXJzOiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAjIChvcHRpb25hbCkgSFRUUCBoZWFkZXJzCiAgICAgIEF1dGhvcml6YXRpb246ICJCZWFyZXIgc2stLi4uIgogICAgdGltZW91dDogMTgwICAgICAgICAgICAgICAgIyAob3B0aW9uYWwpIHBlci10b29sLWNhbGwgdGltZW91dCBpbiBzZWNvbmRzLCBkZWZhdWx0OiAxMjAKICAgIGNvbm5lY3RfdGltZW91dDogNjAgICAgICAgICMgKG9wdGlvbmFsKSBpbml0aWFsIGNvbm5lY3Rpb24gdGltZW91dCBpbiBzZWNvbmRzLCBkZWZhdWx0OiA2MApgYGAKCiMjIyBBbGwgQ29uZmlnIE9wdGlvbnMKCnwgT3B0aW9uICAgICAgICAgICAgfCBUeXBlICAgfCBEZWZhdWx0IHwgRGVzY3JpcHRpb24gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwtLS0tLS0tLS0tLS0tLS0tLS0tfC0tLS0tLS0tfC0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS18CnwgYGNvbW1hbmRgICAgICAgICAgfCBzdHJpbmcgfCAtLSAgICAgIHwgRXhlY3V0YWJsZSB0byBydW4gKHN0ZGlvIHRyYW5zcG9ydCwgcmVxdWlyZWQpICAgICB8CnwgYGFyZ3NgICAgICAgICAgICAgfCBsaXN0ICAgfCBgW11gICAgIHwgQXJndW1lbnRzIHBhc3NlZCB0byB0aGUgY29tbWFuZCAgICAgICAgICAgICAgICAgICB8CnwgYGVudmAgICAgICAgICAgICAgfCBkaWN0ICAgfCBge31gICAgIHwgRXh0cmEgZW52aXJvbm1lbnQgdmFyaWFibGVzIGZvciB0aGUgc3VicHJvY2VzcyAgICB8CnwgYHVybGAgICAgICAgICAgICAgfCBzdHJpbmcgfCAtLSAgICAgIHwgU2VydmVyIFVSTCAoSFRUUCB0cmFuc3BvcnQsIHJlcXVpcmVkKSAgICAgICAgICAgICB8CnwgYGhlYWRlcnNgICAgICAgICAgfCBkaWN0ICAgfCBge31gICAgIHwgSFRUUCBoZWFkZXJzIHNlbnQgd2l0aCBldmVyeSByZXF1ZXN0ICAgICAgICAgICAgICB8CnwgYHRpbWVvdXRgICAgICAgICAgfCBpbnQgICAgfCBgMTIwYCAgIHwgUGVyLXRvb2wtY2FsbCB0aW1lb3V0IGluIHNlY29uZHMgICAgICAgICAgICAgICAgICB8CnwgYGNvbm5lY3RfdGltZW91dGAgfCBpbnQgICAgfCBgNjBgICAgIHwgVGltZW91dCBmb3IgaW5pdGlhbCBjb25uZWN0aW9uIGFuZCBkaXNjb3ZlcnkgICAgICB8CgpOb3RlOiBBIHNlcnZlciBjb25maWcgbXVzdCBoYXZlIGVpdGhlciBgY29tbWFuZGAgKHN0ZGlvKSBvciBgdXJsYCAoSFRUUCksIG5vdCBib3RoLgoKIyMgSG93IEl0IFdvcmtzCgojIyMgU3RhcnR1cCBEaXNjb3ZlcnkKCldoZW4gSGVybWVzIEFnZW50IHN0YXJ0cywgYGRpc2NvdmVyX21jcF90b29scygpYCBpcyBjYWxsZWQgZHVyaW5nIHRvb2wgaW5pdGlhbGl6YXRpb246CgoxLiBSZWFkcyBgbWNwX3NlcnZlcnNgIGZyb20gYH4vLmhlcm1lcy9jb25maWcueWFtbGAKMi4gRm9yIGVhY2ggc2VydmVyLCBzcGF3bnMgYSBjb25uZWN0aW9uIGluIGEgZGVkaWNhdGVkIGJhY2tncm91bmQgZXZlbnQgbG9vcAozLiBJbml0aWFsaXplcyB0aGUgTUNQIHNlc3Npb24gYW5kIGNhbGxzIGBsaXN0X3Rvb2xzKClgIHRvIGRpc2NvdmVyIGF2YWlsYWJsZSB0b29scwo0LiBSZWdpc3RlcnMgZWFjaCB0b29sIGluIHRoZSBIZXJtZXMgdG9vbCByZWdpc3RyeQoKIyMjIFRvb2wgTmFtaW5nIENvbnZlbnRpb24KCk1DUCB0b29scyBhcmUgcmVnaXN0ZXJlZCB3aXRoIHRoZSBuYW1pbmcgcGF0dGVybjoKCmBgYAptY3Bfe3NlcnZlcl9uYW1lfV97dG9vbF9uYW1lfQpgYGAKCkh5cGhlbnMgYW5kIGRvdHMgaW4gbmFtZXMgYXJlIHJlcGxhY2VkIHdpdGggdW5kZXJzY29yZXMgZm9yIExMTSBBUEkgY29tcGF0aWJpbGl0eS4KCkV4YW1wbGVzOgotIFNlcnZlciBgZmlsZXN5c3RlbWAsIHRvb2wgYHJlYWRfZmlsZWAg4oaSIGBtY3BfZmlsZXN5c3RlbV9yZWFkX2ZpbGVgCi0gU2VydmVyIGBnaXRodWJgLCB0b29sIGBsaXN0LWlzc3Vlc2Ag4oaSIGBtY3BfZ2l0aHViX2xpc3RfaXNzdWVzYAotIFNlcnZlciBgbXktYXBpYCwgdG9vbCBgZmV0Y2guZGF0YWAg4oaSIGBtY3BfbXlfYXBpX2ZldGNoX2RhdGFgCgojIyMgQXV0by1JbmplY3Rpb24KCkFmdGVyIGRpc2NvdmVyeSwgTUNQIHRvb2xzIGFyZSBhdXRvbWF0aWNhbGx5IGluamVjdGVkIGludG8gYWxsIGBoZXJtZXMtKmAgcGxhdGZvcm0gdG9vbHNldHMgKENMSSwgRGlzY29yZCwgVGVsZWdyYW0sIGV0Yy4pLiBUaGlzIG1lYW5zIE1DUCB0b29scyBhcmUgYXZhaWxhYmxlIGluIGV2ZXJ5IGNvbnZlcnNhdGlvbiB3aXRob3V0IGFueSBhZGRpdGlvbmFsIGNvbmZpZ3VyYXRpb24uCgojIyMgQ29ubmVjdGlvbiBMaWZlY3ljbGUKCi0gRWFjaCBzZXJ2ZXIgcnVucyBhcyBhIGxvbmctbGl2ZWQgYXN5bmNpbyBUYXNrIGluIGEgYmFja2dyb3VuZCBkYWVtb24gdGhyZWFkCi0gQ29ubmVjdGlvbnMgcGVyc2lzdCBmb3IgdGhlIGxpZmV0aW1lIG9mIHRoZSBhZ2VudCBwcm9jZXNzCi0gSWYgYSBjb25uZWN0aW9uIGRyb3BzLCBhdXRvbWF0aWMgcmVjb25uZWN0aW9uIHdpdGggZXhwb25lbnRpYWwgYmFja29mZiBraWNrcyBpbiAodXAgdG8gNSByZXRyaWVzLCBtYXggNjBzIGJhY2tvZmYpCi0gT24gYWdlbnQgc2h1dGRvd24sIGFsbCBjb25uZWN0aW9ucyBhcmUgZ3JhY2VmdWxseSBjbG9zZWQKCiMjIyBJZGVtcG90ZW5jeQoKYGRpc2NvdmVyX21jcF90b29scygpYCBpcyBpZGVtcG90ZW50IC0tIGNhbGxpbmcgaXQgbXVsdGlwbGUgdGltZXMgb25seSBjb25uZWN0cyB0byBzZXJ2ZXJzIHRoYXQgYXJlbid0IGFscmVhZHkgY29ubmVjdGVkLiBGYWlsZWQgc2VydmVycyBhcmUgcmV0cmllZCBvbiBzdWJzZXF1ZW50IGNhbGxzLgoKIyMgVHJhbnNwb3J0IFR5cGVzCgojIyMgU3RkaW8gVHJhbnNwb3J0CgpUaGUgbW9zdCBjb21tb24gdHJhbnNwb3J0LiBIZXJtZXMgbGF1bmNoZXMgdGhlIE1DUCBzZXJ2ZXIgYXMgYSBzdWJwcm9jZXNzIGFuZCBjb21tdW5pY2F0ZXMgb3ZlciBzdGRpbi9zdGRvdXQuCgpgYGB5YW1sCm1jcF9zZXJ2ZXJzOgogIGZpbGVzeXN0ZW06CiAgICBjb21tYW5kOiAibnB4IgogICAgYXJnczogWyIteSIsICJAbW9kZWxjb250ZXh0cHJvdG9jb2wvc2VydmVyLWZpbGVzeXN0ZW0iLCAiL2hvbWUvdXNlci9wcm9qZWN0cyJdCmBgYAoKVGhlIHN1YnByb2Nlc3MgaW5oZXJpdHMgYSAqKmZpbHRlcmVkKiogZW52aXJvbm1lbnQgKHNlZSBTZWN1cml0eSBzZWN0aW9uIGJlbG93KSBwbHVzIGFueSB2YXJpYWJsZXMgeW91IHNwZWNpZnkgaW4gYGVudmAuCgojIyMgSFRUUCAvIFN0cmVhbWFibGVIVFRQIFRyYW5zcG9ydAoKRm9yIHJlbW90ZSBvciBzaGFyZWQgTUNQIHNlcnZlcnMuIFJlcXVpcmVzIHRoZSBgbWNwYCBwYWNrYWdlIHRvIGluY2x1ZGUgSFRUUCBjbGllbnQgc3VwcG9ydCAoYG1jcC5jbGllbnQuc3RyZWFtYWJsZV9odHRwYCkuCgpgYGB5YW1sCm1jcF9zZXJ2ZXJzOgogIHJlbW90ZV9hcGk6CiAgICB1cmw6ICJodHRwczovL21jcC5leGFtcGxlLmNvbS9tY3AiCiAgICBoZWFkZXJzOgogICAgICBBdXRob3JpemF0aW9uOiAiQmVhcmVyIHNrLS4uLiIKYGBgCgpJZiBIVFRQIHN1cHBvcnQgaXMgbm90IGF2YWlsYWJsZSBpbiB5b3VyIGluc3RhbGxlZCBgbWNwYCB2ZXJzaW9uLCB0aGUgc2VydmVyIHdpbGwgZmFpbCB3aXRoIGFuIEltcG9ydEVycm9yIGFuZCBvdGhlciBzZXJ2ZXJzIHdpbGwgY29udGludWUgbm9ybWFsbHkuCgojIyBTZWN1cml0eQoKIyMjIEVudmlyb25tZW50IFZhcmlhYmxlIEZpbHRlcmluZwoKRm9yIHN0ZGlvIHNlcnZlcnMsIEhlcm1lcyBkb2VzIE5PVCBwYXNzIHlvdXIgZnVsbCBzaGVsbCBlbnZpcm9ubWVudCB0byBNQ1Agc3VicHJvY2Vzc2VzLiBPbmx5IHNhZmUgYmFzZWxpbmUgdmFyaWFibGVzIGFyZSBpbmhlcml0ZWQ6CgotIGBQQVRIYCwgYEhPTUVgLCBgVVNFUmAsIGBMQU5HYCwgYExDX0FMTGAsIGBURVJNYCwgYFNIRUxMYCwgYFRNUERJUmAKLSBBbnkgYFhER18qYCB2YXJpYWJsZXMKCkFsbCBvdGhlciBlbnZpcm9ubWVudCB2YXJpYWJsZXMgKEFQSSBrZXlzLCB0b2tlbnMsIHNlY3JldHMpIGFyZSBleGNsdWRlZCB1bmxlc3MgeW91IGV4cGxpY2l0bHkgYWRkIHRoZW0gdmlhIHRoZSBgZW52YCBjb25maWcga2V5LiBUaGlzIHByZXZlbnRzIGFjY2lkZW50YWwgY3JlZGVudGlhbCBsZWFrYWdlIHRvIHVudHJ1c3RlZCBNQ1Agc2VydmVycy4KCmBgYHlhbWwKbWNwX3NlcnZlcnM6CiAgZ2l0aHViOgogICAgY29tbWFuZDogIm5weCIKICAgIGFyZ3M6IFsiLXkiLCAiQG1vZGVsY29udGV4dHByb3RvY29sL3NlcnZlci1naXRodWIiXQogICAgZW52OgogICAgICAjIE9ubHkgdGhpcyB0b2tlbiBpcyBwYXNzZWQgdG8gdGhlIHN1YnByb2Nlc3MKICAgICAgR0lUSFVCX1BFUlNPTkFMX0FDQ0VTU19UT0tFTjogImdocF8uLi4iCmBgYAoKIyMjIENyZWRlbnRpYWwgU3RyaXBwaW5nIGluIEVycm9yIE1lc3NhZ2VzCgpJZiBhbiBNQ1AgdG9vbCBjYWxsIGZhaWxzLCBhbnkgY3JlZGVudGlhbC1saWtlIHBhdHRlcm5zIGluIHRoZSBlcnJvciBtZXNzYWdlIGFyZSBhdXRvbWF0aWNhbGx5IHJlZGFjdGVkIGJlZm9yZSBiZWluZyBzaG93biB0byB0aGUgTExNLiBUaGlzIGNvdmVyczoKCi0gR2l0SHViIFBBVHMgKGBnaHBfLi4uYCkKLSBPcGVuQUktc3R5bGUga2V5cyAoYHNrLS4uLmApCi0gQmVhcmVyIHRva2VucwotIEdlbmVyaWMgYHRva2VuPWAsIGBrZXk9YCwgYEFQSV9LRVk9YCwgYHBhc3N3b3JkPWAsIGBzZWNyZXQ9YCBwYXR0ZXJucwoKIyMgVHJvdWJsZXNob290aW5nCgojIyMgIk1DUCBTREsgbm90IGF2YWlsYWJsZSAtLSBza2lwcGluZyBNQ1AgdG9vbCBkaXNjb3ZlcnkiCgpUaGUgYG1jcGAgUHl0aG9uIHBhY2thZ2UgaXMgbm90IGluc3RhbGxlZC4gSW5zdGFsbCBpdDoKCmBgYGJhc2gKcGlwIGluc3RhbGwgbWNwCmBgYAoKIyMjICJObyBNQ1Agc2VydmVycyBjb25maWd1cmVkIgoKTm8gYG1jcF9zZXJ2ZXJzYCBrZXkgaW4gYH4vLmhlcm1lcy9jb25maWcueWFtbGAsIG9yIGl0J3MgZW1wdHkuIEFkZCBhdCBsZWFzdCBvbmUgc2VydmVyLgoKIyMjICJGYWlsZWQgdG8gY29ubmVjdCB0byBNQ1Agc2VydmVyICdYJyIKCkNvbW1vbiBjYXVzZXM6Ci0gKipDb21tYW5kIG5vdCBmb3VuZCoqOiBUaGUgYGNvbW1hbmRgIGJpbmFyeSBpc24ndCBvbiBQQVRILiBFbnN1cmUgYG5weGAsIGB1dnhgLCBvciB0aGUgcmVsZXZhbnQgY29tbWFuZCBpcyBpbnN0YWxsZWQuCi0gKipQYWNrYWdlIG5vdCBmb3VuZCoqOiBGb3IgbnB4IHNlcnZlcnMsIHRoZSBucG0gcGFja2FnZSBtYXkgbm90IGV4aXN0IG9yIG1heSBuZWVkIGAteWAgaW4gYXJncyB0byBhdXRvLWluc3RhbGwuCi0gKipUaW1lb3V0Kio6IFRoZSBzZXJ2ZXIgdG9vayB0b28gbG9uZyB0byBzdGFydC4gSW5jcmVhc2UgYGNvbm5lY3RfdGltZW91dGAuCi0gKipQb3J0IGNvbmZsaWN0Kio6IEZvciBIVFRQIHNlcnZlcnMsIHRoZSBVUkwgbWF5IGJlIHVucmVhY2hhYmxlLgoKIyMjICJNQ1Agc2VydmVyICdYJyByZXF1aXJlcyBIVFRQIHRyYW5zcG9ydCBidXQgbWNwLmNsaWVudC5zdHJlYW1hYmxlX2h0dHAgaXMgbm90IGF2YWlsYWJsZSIKCllvdXIgYG1jcGAgcGFja2FnZSB2ZXJzaW9uIGRvZXNuJ3QgaW5jbHVkZSBIVFRQIGNsaWVudCBzdXBwb3J0LiBVcGdyYWRlOgoKYGBgYmFzaApwaXAgaW5zdGFsbCAtLXVwZ3JhZGUgbWNwCmBgYAoKIyMjIFRvb2xzIG5vdCBhcHBlYXJpbmcKCi0gQ2hlY2sgdGhhdCB0aGUgc2VydmVyIGlzIGxpc3RlZCB1bmRlciBgbWNwX3NlcnZlcnNgIChub3QgYG1jcGAgb3IgYHNlcnZlcnNgKQotIEVuc3VyZSB0aGUgWUFNTCBpbmRlbnRhdGlvbiBpcyBjb3JyZWN0Ci0gTG9vayBhdCBIZXJtZXMgQWdlbnQgc3RhcnR1cCBsb2dzIGZvciBjb25uZWN0aW9uIG1lc3NhZ2VzCi0gVG9vbCBuYW1lcyBhcmUgcHJlZml4ZWQgd2l0aCBgbWNwX3tzZXJ2ZXJ9X3t0b29sfWAgLS0gbG9vayBmb3IgdGhhdCBwYXR0ZXJuCgojIyMgQ29ubmVjdGlvbiBrZWVwcyBkcm9wcGluZwoKVGhlIGNsaWVudCByZXRyaWVzIHVwIHRvIDUgdGltZXMgd2l0aCBleHBvbmVudGlhbCBiYWNrb2ZmICgxcywgMnMsIDRzLCA4cywgMTZzLCBjYXBwZWQgYXQgNjBzKS4gSWYgdGhlIHNlcnZlciBpcyBmdW5kYW1lbnRhbGx5IHVucmVhY2hhYmxlLCBpdCBnaXZlcyB1cCBhZnRlciA1IGF0dGVtcHRzLiBDaGVjayB0aGUgc2VydmVyIHByb2Nlc3MgYW5kIG5ldHdvcmsgY29ubmVjdGl2aXR5LgoKIyMgRXhhbXBsZXMKCiMjIyBUaW1lIFNlcnZlciAodXZ4KQoKYGBgeWFtbAptY3Bfc2VydmVyczoKICB0aW1lOgogICAgY29tbWFuZDogInV2eCIKICAgIGFyZ3M6IFsibWNwLXNlcnZlci10aW1lIl0KYGBgCgpSZWdpc3RlcnMgdG9vbHMgbGlrZSBgbWNwX3RpbWVfZ2V0X2N1cnJlbnRfdGltZWAuCgojIyMgRmlsZXN5c3RlbSBTZXJ2ZXIgKG5weCkKCmBgYHlhbWwKbWNwX3NlcnZlcnM6CiAgZmlsZXN5c3RlbToKICAgIGNvbW1hbmQ6ICJucHgiCiAgICBhcmdzOiBbIi15IiwgIkBtb2RlbGNvbnRleHRwcm90b2NvbC9zZXJ2ZXItZmlsZXN5c3RlbSIsICIvaG9tZS91c2VyL2RvY3VtZW50cyJdCiAgICB0aW1lb3V0OiAzMApgYGAKClJlZ2lzdGVycyB0b29scyBsaWtlIGBtY3BfZmlsZXN5c3RlbV9yZWFkX2ZpbGVgLCBgbWNwX2ZpbGVzeXN0ZW1fd3JpdGVfZmlsZWAsIGBtY3BfZmlsZXN5c3RlbV9saXN0X2RpcmVjdG9yeWAuCgojIyMgR2l0SHViIFNlcnZlciB3aXRoIEF1dGhlbnRpY2F0aW9uCgpgYGB5YW1sCm1jcF9zZXJ2ZXJzOgogIGdpdGh1YjoKICAgIGNvbW1hbmQ6ICJucHgiCiAgICBhcmdzOiBbIi15IiwgIkBtb2RlbGNvbnRleHRwcm90b2NvbC9zZXJ2ZXItZ2l0aHViIl0KICAgIGVudjoKICAgICAgR0lUSFVCX1BFUlNPTkFMX0FDQ0VTU19UT0tFTjogImdocF94eHh4eHh4eHh4eHh4eHh4eHh4eCIKICAgIHRpbWVvdXQ6IDYwCmBgYAoKUmVnaXN0ZXJzIHRvb2xzIGxpa2UgYG1jcF9naXRodWJfbGlzdF9pc3N1ZXNgLCBgbWNwX2dpdGh1Yl9jcmVhdGVfcHVsbF9yZXF1ZXN0YCwgZXRjLgoKIyMjIFJlbW90ZSBIVFRQIFNlcnZlcgoKYGBgeWFtbAptY3Bfc2VydmVyczoKICBjb21wYW55X2FwaToKICAgIHVybDogImh0dHBzOi8vbWNwLm15Y29tcGFueS5jb20vdjEvbWNwIgogICAgaGVhZGVyczoKICAgICAgQXV0aG9yaXphdGlvbjogIkJlYXJlciBzay14eHh4eHh4eHh4eHh4eHh4eHh4eCIKICAgICAgWC1UZWFtLUlkOiAiZW5naW5lZXJpbmciCiAgICB0aW1lb3V0OiAxODAKICAgIGNvbm5lY3RfdGltZW91dDogMzAKYGBgCgojIyMgTXVsdGlwbGUgU2VydmVycwoKYGBgeWFtbAptY3Bfc2VydmVyczoKICB0aW1lOgogICAgY29tbWFuZDogInV2eCIKICAgIGFyZ3M6IFsibWNwLXNlcnZlci10aW1lIl0KCiAgZmlsZXN5c3RlbToKICAgIGNvbW1hbmQ6ICJucHgiCiAgICBhcmdzOiBbIi15IiwgIkBtb2RlbGNvbnRleHRwcm90b2NvbC9zZXJ2ZXItZmlsZXN5c3RlbSIsICIvdG1wIl0KCiAgZ2l0aHViOgogICAgY29tbWFuZDogIm5weCIKICAgIGFyZ3M6IFsiLXkiLCAiQG1vZGVsY29udGV4dHByb3RvY29sL3NlcnZlci1naXRodWIiXQogICAgZW52OgogICAgICBHSVRIVUJfUEVSU09OQUxfQUNDRVNTX1RPS0VOOiAiZ2hwX3h4eHh4eHh4eHh4eHh4eHh4eHh4IgoKICBjb21wYW55X2FwaToKICAgIHVybDogImh0dHBzOi8vbWNwLmludGVybmFsLmNvbXBhbnkuY29tL21jcCIKICAgIGhlYWRlcnM6CiAgICAgIEF1dGhvcml6YXRpb246ICJCZWFyZXIgc2steHh4eHh4eHh4eHh4eHh4eHh4eHgiCiAgICB0aW1lb3V0OiAzMDAKYGBgCgpBbGwgdG9vbHMgZnJvbSBhbGwgc2VydmVycyBhcmUgcmVnaXN0ZXJlZCBhbmQgYXZhaWxhYmxlIHNpbXVsdGFuZW91c2x5LiBFYWNoIHNlcnZlcidzIHRvb2xzIGFyZSBwcmVmaXhlZCB3aXRoIGl0cyBuYW1lIHRvIGF2b2lkIGNvbGxpc2lvbnMuCgojIyBTYW1wbGluZyAoU2VydmVyLUluaXRpYXRlZCBMTE0gUmVxdWVzdHMpCgpIZXJtZXMgc3VwcG9ydHMgTUNQJ3MgYHNhbXBsaW5nL2NyZWF0ZU1lc3NhZ2VgIGNhcGFiaWxpdHkg4oCUIE1DUCBzZXJ2ZXJzIGNhbiByZXF1ZXN0IExMTSBjb21wbGV0aW9ucyB0aHJvdWdoIHRoZSBhZ2VudCBkdXJpbmcgdG9vbCBleGVjdXRpb24uIFRoaXMgZW5hYmxlcyBhZ2VudC1pbi10aGUtbG9vcCB3b3JrZmxvd3MgKGRhdGEgYW5hbHlzaXMsIGNvbnRlbnQgZ2VuZXJhdGlvbiwgZGVjaXNpb24tbWFraW5nKS4KClNhbXBsaW5nIGlzICoqZW5hYmxlZCBieSBkZWZhdWx0KiouIENvbmZpZ3VyZSBwZXIgc2VydmVyOgoKYGBgeWFtbAptY3Bfc2VydmVyczoKICBteV9zZXJ2ZXI6CiAgICBjb21tYW5kOiAibnB4IgogICAgYXJnczogWyIteSIsICJteS1tY3Atc2VydmVyIl0KICAgIHNhbXBsaW5nOgogICAgICBlbmFibGVkOiB0cnVlICAgICAgICAgICAjIGRlZmF1bHQ6IHRydWUKICAgICAgbW9kZWw6ICJnZW1pbmktMy1mbGFzaCIgIyBtb2RlbCBvdmVycmlkZSAob3B0aW9uYWwpCiAgICAgIG1heF90b2tlbnNfY2FwOiA0MDk2ICAgICMgbWF4IHRva2VucyBwZXIgcmVxdWVzdAogICAgICB0aW1lb3V0OiAzMCAgICAgICAgICAgICAjIExMTSBjYWxsIHRpbWVvdXQgKHNlY29uZHMpCiAgICAgIG1heF9ycG06IDEwICAgICAgICAgICAgICMgbWF4IHJlcXVlc3RzIHBlciBtaW51dGUKICAgICAgYWxsb3dlZF9tb2RlbHM6IFtdICAgICAgIyBtb2RlbCB3aGl0ZWxpc3QgKGVtcHR5ID0gYWxsKQogICAgICBtYXhfdG9vbF9yb3VuZHM6IDUgICAgICAjIHRvb2wgbG9vcCBsaW1pdCAoMCA9IGRpc2FibGUpCiAgICAgIGxvZ19sZXZlbDogImluZm8iICAgICAgICMgYXVkaXQgdmVyYm9zaXR5CmBgYAoKU2VydmVycyBjYW4gYWxzbyBpbmNsdWRlIGB0b29sc2AgaW4gc2FtcGxpbmcgcmVxdWVzdHMgZm9yIG11bHRpLXR1cm4gdG9vbC1hdWdtZW50ZWQgd29ya2Zsb3dzLiBUaGUgYG1heF90b29sX3JvdW5kc2AgY29uZmlnIHByZXZlbnRzIGluZmluaXRlIHRvb2wgbG9vcHMuIFBlci1zZXJ2ZXIgYXVkaXQgbWV0cmljcyAocmVxdWVzdHMsIGVycm9ycywgdG9rZW5zLCB0b29sIHVzZSBjb3VudCkgYXJlIHRyYWNrZWQgdmlhIGBnZXRfbWNwX3N0YXR1cygpYC4KCkRpc2FibGUgc2FtcGxpbmcgZm9yIHVudHJ1c3RlZCBzZXJ2ZXJzIHdpdGggYHNhbXBsaW5nOiB7IGVuYWJsZWQ6IGZhbHNlIH1gLgoKIyMgTm90ZXMKCi0gTUNQIHRvb2xzIGFyZSBjYWxsZWQgc3luY2hyb25vdXNseSBmcm9tIHRoZSBhZ2VudCdzIHBlcnNwZWN0aXZlIGJ1dCBydW4gYXN5bmNocm9ub3VzbHkgb24gYSBkZWRpY2F0ZWQgYmFja2dyb3VuZCBldmVudCBsb29wCi0gVG9vbCByZXN1bHRzIGFyZSByZXR1cm5lZCBhcyBKU09OIHdpdGggZWl0aGVyIGB7InJlc3VsdCI6ICIuLi4ifWAgb3IgYHsiZXJyb3IiOiAiLi4uIn1gCi0gVGhlIG5hdGl2ZSBNQ1AgY2xpZW50IGlzIGluZGVwZW5kZW50IG9mIGBtY3BvcnRlcmAgLS0geW91IGNhbiB1c2UgYm90aCBzaW11bHRhbmVvdXNseQotIFNlcnZlciBjb25uZWN0aW9ucyBhcmUgcGVyc2lzdGVudCBhbmQgc2hhcmVkIGFjcm9zcyBhbGwgY29udmVyc2F0aW9ucyBpbiB0aGUgc2FtZSBhZ2VudCBwcm9jZXNzCi0gQWRkaW5nIG9yIHJlbW92aW5nIHNlcnZlcnMgcmVxdWlyZXMgcmVzdGFydGluZyB0aGUgYWdlbnQgKG5vIGhvdC1yZWxvYWQgY3VycmVudGx5KQo=
+---
+name: native-mcp
+description: Built-in MCP (Model Context Protocol) client that connects to external MCP servers, discovers their tools, and registers them as native Hermes Agent tools. Supports stdio and HTTP transports with automatic reconnection, security filtering, and zero-config tool injection.
+version: 1.0.0
+author: Hermes Agent
+license: MIT
+metadata:
+  hermes:
+    tags: [MCP, Tools, Integrations]
+    related_skills: [mcporter]
+---
+
+# Native MCP Client
+
+Hermes Agent has a built-in MCP client that connects to MCP servers at startup, discovers their tools, and makes them available as first-class tools the agent can call directly. No bridge CLI needed -- tools from MCP servers appear alongside built-in tools like `terminal`, `read_file`, etc.
+
+## When to Use
+
+Use this whenever you want to:
+- Connect to MCP servers and use their tools from within Hermes Agent
+- Add external capabilities (filesystem access, GitHub, databases, APIs) via MCP
+- Run local stdio-based MCP servers (npx, uvx, or any command)
+- Connect to remote HTTP/StreamableHTTP MCP servers
+- Have MCP tools auto-discovered and available in every conversation
+
+For ad-hoc, one-off MCP tool calls from the terminal without configuring anything, see the `mcporter` skill instead.
+
+## Prerequisites
+
+- **mcp Python package** -- optional dependency; install with `pip install mcp`. If not installed, MCP support is silently disabled.
+- **Node.js** -- required for `npx`-based MCP servers (most community servers)
+- **uv** -- required for `uvx`-based MCP servers (Python-based servers)
+
+Install the MCP SDK:
+
+```bash
+pip install mcp
+# or, if using uv:
+uv pip install mcp
+```
+
+## Quick Start
+
+Add MCP servers to `~/.hermes/config.yaml` under the `mcp_servers` key:
+
+```yaml
+mcp_servers:
+  time:
+    command: "uvx"
+    args: ["mcp-server-time"]
+```
+
+Restart Hermes Agent. On startup it will:
+1. Connect to the server
+2. Discover available tools
+3. Register them with the prefix `mcp_time_*`
+4. Inject them into all platform toolsets
+
+You can then use the tools naturally -- just ask the agent to get the current time.
+
+## Configuration Reference
+
+Each entry under `mcp_servers` is a server name mapped to its config. There are two transport types: **stdio** (command-based) and **HTTP** (url-based).
+
+### Stdio Transport (command + args)
+
+```yaml
+mcp_servers:
+  server_name:
+    command: "npx"             # (required) executable to run
+    args: ["-y", "pkg-name"]   # (optional) command arguments, default: []
+    env:                       # (optional) environment variables for the subprocess
+      SOME_API_KEY: "value"
+    timeout: 120               # (optional) per-tool-call timeout in seconds, default: 120
+    connect_timeout: 60        # (optional) initial connection timeout in seconds, default: 60
+```
+
+### HTTP Transport (url)
+
+```yaml
+mcp_servers:
+  server_name:
+    url: "https://my-server.example.com/mcp"   # (required) server URL
+    headers:                                     # (optional) HTTP headers
+      Authorization: "Bearer sk-..."
+    timeout: 180               # (optional) per-tool-call timeout in seconds, default: 120
+    connect_timeout: 60        # (optional) initial connection timeout in seconds, default: 60
+```
+
+### All Config Options
+
+| Option            | Type   | Default | Description                                       |
+|-------------------|--------|---------|---------------------------------------------------|
+| `command`         | string | --      | Executable to run (stdio transport, required)     |
+| `args`            | list   | `[]`    | Arguments passed to the command                   |
+| `env`             | dict   | `{}`    | Extra environment variables for the subprocess    |
+| `url`             | string | --      | Server URL (HTTP transport, required)             |
+| `headers`         | dict   | `{}`    | HTTP headers sent with every request              |
+| `timeout`         | int    | `120`   | Per-tool-call timeout in seconds                  |
+| `connect_timeout` | int    | `60`    | Timeout for initial connection and discovery      |
+
+Note: A server config must have either `command` (stdio) or `url` (HTTP), not both.
+
+## How It Works
+
+### Startup Discovery
+
+When Hermes Agent starts, `discover_mcp_tools()` is called during tool initialization:
+
+1. Reads `mcp_servers` from `~/.hermes/config.yaml`
+2. For each server, spawns a connection in a dedicated background event loop
+3. Initializes the MCP session and calls `list_tools()` to discover available tools
+4. Registers each tool in the Hermes tool registry
+
+### Tool Naming Convention
+
+MCP tools are registered with the naming pattern:
+
+```
+mcp_{server_name}_{tool_name}
+```
+
+Hyphens and dots in names are replaced with underscores for LLM API compatibility.
+
+Examples:
+- Server `filesystem`, tool `read_file` → `mcp_filesystem_read_file`
+- Server `github`, tool `list-issues` → `mcp_github_list_issues`
+- Server `my-api`, tool `fetch.data` → `mcp_my_api_fetch_data`
+
+### Auto-Injection
+
+After discovery, MCP tools are automatically injected into all `hermes-*` platform toolsets (CLI, Discord, Telegram, etc.). This means MCP tools are available in every conversation without any additional configuration.
+
+### Connection Lifecycle
+
+- Each server runs as a long-lived asyncio Task in a background daemon thread
+- Connections persist for the lifetime of the agent process
+- If a connection drops, automatic reconnection with exponential backoff kicks in (up to 5 retries, max 60s backoff)
+- On agent shutdown, all connections are gracefully closed
+
+### Idempotency
+
+`discover_mcp_tools()` is idempotent -- calling it multiple times only connects to servers that aren't already connected. Failed servers are retried on subsequent calls.
+
+## Transport Types
+
+### Stdio Transport
+
+The most common transport. Hermes launches the MCP server as a subprocess and communicates over stdin/stdout.
+
+```yaml
+mcp_servers:
+  filesystem:
+    command: "npx"
+    args: ["-y", "@modelcontextprotocol/server-filesystem", "/home/user/projects"]
+```
+
+The subprocess inherits a **filtered** environment (see Security section below) plus any variables you specify in `env`.
+
+### HTTP / StreamableHTTP Transport
+
+For remote or shared MCP servers. Requires the `mcp` package to include HTTP client support (`mcp.client.streamable_http`).
+
+```yaml
+mcp_servers:
+  remote_api:
+    url: "https://mcp.example.com/mcp"
+    headers:
+      Authorization: "Bearer sk-..."
+```
+
+If HTTP support is not available in your installed `mcp` version, the server will fail with an ImportError and other servers will continue normally.
+
+## Security
+
+### Environment Variable Filtering
+
+For stdio servers, Hermes does NOT pass your full shell environment to MCP subprocesses. Only safe baseline variables are inherited:
+
+- `PATH`, `HOME`, `USER`, `LANG`, `LC_ALL`, `TERM`, `SHELL`, `TMPDIR`
+- Any `XDG_*` variables
+
+All other environment variables (API keys, tokens, secrets) are excluded unless you explicitly add them via the `env` config key. This prevents accidental credential leakage to untrusted MCP servers.
+
+```yaml
+mcp_servers:
+  github:
+    command: "npx"
+    args: ["-y", "@modelcontextprotocol/server-github"]
+    env:
+      # Only this token is passed to the subprocess
+      GITHUB_PERSONAL_ACCESS_TOKEN: "ghp_..."
+```
+
+### Credential Stripping in Error Messages
+
+If an MCP tool call fails, any credential-like patterns in the error message are automatically redacted before being shown to the LLM. This covers:
+
+- GitHub PATs (`ghp_...`)
+- OpenAI-style keys (`sk-...`)
+- Bearer tokens
+- Generic `token=`, `key=`, `API_KEY=`, `password=`, `secret=` patterns
+
+## Troubleshooting
+
+### "MCP SDK not available -- skipping MCP tool discovery"
+
+The `mcp` Python package is not installed. Install it:
+
+```bash
+pip install mcp
+```
+
+### "No MCP servers configured"
+
+No `mcp_servers` key in `~/.hermes/config.yaml`, or it's empty. Add at least one server.
+
+### "Failed to connect to MCP server 'X'"
+
+Common causes:
+- **Command not found**: The `command` binary isn't on PATH. Ensure `npx`, `uvx`, or the relevant command is installed.
+- **Package not found**: For npx servers, the npm package may not exist or may need `-y` in args to auto-install.
+- **Timeout**: The server took too long to start. Increase `connect_timeout`.
+- **Port conflict**: For HTTP servers, the URL may be unreachable.
+
+### "MCP server 'X' requires HTTP transport but mcp.client.streamable_http is not available"
+
+Your `mcp` package version doesn't include HTTP client support. Upgrade:
+
+```bash
+pip install --upgrade mcp
+```
+
+### Tools not appearing
+
+- Check that the server is listed under `mcp_servers` (not `mcp` or `servers`)
+- Ensure the YAML indentation is correct
+- Look at Hermes Agent startup logs for connection messages
+- Tool names are prefixed with `mcp_{server}_{tool}` -- look for that pattern
+
+### Connection keeps dropping
+
+The client retries up to 5 times with exponential backoff (1s, 2s, 4s, 8s, 16s, capped at 60s). If the server is fundamentally unreachable, it gives up after 5 attempts. Check the server process and network connectivity.
+
+## Examples
+
+### Time Server (uvx)
+
+```yaml
+mcp_servers:
+  time:
+    command: "uvx"
+    args: ["mcp-server-time"]
+```
+
+Registers tools like `mcp_time_get_current_time`.
+
+### Filesystem Server (npx)
+
+```yaml
+mcp_servers:
+  filesystem:
+    command: "npx"
+    args: ["-y", "@modelcontextprotocol/server-filesystem", "/home/user/documents"]
+    timeout: 30
+```
+
+Registers tools like `mcp_filesystem_read_file`, `mcp_filesystem_write_file`, `mcp_filesystem_list_directory`.
+
+### GitHub Server with Authentication
+
+```yaml
+mcp_servers:
+  github:
+    command: "npx"
+    args: ["-y", "@modelcontextprotocol/server-github"]
+    env:
+      GITHUB_PERSONAL_ACCESS_TOKEN: "ghp_xxxxxxxxxxxxxxxxxxxx"
+    timeout: 60
+```
+
+Registers tools like `mcp_github_list_issues`, `mcp_github_create_pull_request`, etc.
+
+### Remote HTTP Server
+
+```yaml
+mcp_servers:
+  company_api:
+    url: "https://mcp.mycompany.com/v1/mcp"
+    headers:
+      Authorization: "Bearer sk-xxxxxxxxxxxxxxxxxxxx"
+      X-Team-Id: "engineering"
+    timeout: 180
+    connect_timeout: 30
+```
+
+### Multiple Servers
+
+```yaml
+mcp_servers:
+  time:
+    command: "uvx"
+    args: ["mcp-server-time"]
+
+  filesystem:
+    command: "npx"
+    args: ["-y", "@modelcontextprotocol/server-filesystem", "/tmp"]
+
+  github:
+    command: "npx"
+    args: ["-y", "@modelcontextprotocol/server-github"]
+    env:
+      GITHUB_PERSONAL_ACCESS_TOKEN: "ghp_xxxxxxxxxxxxxxxxxxxx"
+
+  company_api:
+    url: "https://mcp.internal.company.com/mcp"
+    headers:
+      Authorization: "Bearer sk-xxxxxxxxxxxxxxxxxxxx"
+    timeout: 300
+```
+
+All tools from all servers are registered and available simultaneously. Each server's tools are prefixed with its name to avoid collisions.
+
+## Sampling (Server-Initiated LLM Requests)
+
+Hermes supports MCP's `sampling/createMessage` capability — MCP servers can request LLM completions through the agent during tool execution. This enables agent-in-the-loop workflows (data analysis, content generation, decision-making).
+
+Sampling is **enabled by default**. Configure per server:
+
+```yaml
+mcp_servers:
+  my_server:
+    command: "npx"
+    args: ["-y", "my-mcp-server"]
+    sampling:
+      enabled: true           # default: true
+      model: "gemini-3-flash" # model override (optional)
+      max_tokens_cap: 4096    # max tokens per request
+      timeout: 30             # LLM call timeout (seconds)
+      max_rpm: 10             # max requests per minute
+      allowed_models: []      # model whitelist (empty = all)
+      max_tool_rounds: 5      # tool loop limit (0 = disable)
+      log_level: "info"       # audit verbosity
+```
+
+Servers can also include `tools` in sampling requests for multi-turn tool-augmented workflows. The `max_tool_rounds` config prevents infinite tool loops. Per-server audit metrics (requests, errors, tokens, tool use count) are tracked via `get_mcp_status()`.
+
+Disable sampling for untrusted servers with `sampling: { enabled: false }`.
+
+## Notes
+
+- MCP tools are called synchronously from the agent's perspective but run asynchronously on a dedicated background event loop
+- Tool results are returned as JSON with either `{"result": "..."}` or `{"error": "..."}`
+- The native MCP client is independent of `mcporter` -- you can use both simultaneously
+- Server connections are persistent and shared across all conversations in the same agent process
+- Adding or removing servers requires restarting the agent (no hot-reload currently)

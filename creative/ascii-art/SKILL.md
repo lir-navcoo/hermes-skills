@@ -1,1 +1,321 @@
-LS0tCm5hbWU6IGFzY2lpLWFydApkZXNjcmlwdGlvbjogR2VuZXJhdGUgQVNDSUkgYXJ0IHVzaW5nIHB5ZmlnbGV0ICg1NzEgZm9udHMpLCBjb3dzYXksIGJveGVzLCB0b2lsZXQsIGltYWdlLXRvLWFzY2lpLCByZW1vdGUgQVBJcyAoYXNjaWlmaWVkLCBhc2NpaS5jby51ayksIGFuZCBMTE0gZmFsbGJhY2suIE5vIEFQSSBrZXlzIHJlcXVpcmVkLgp2ZXJzaW9uOiA0LjAuMAphdXRob3I6IDB4Ynl0NCwgSGVybWVzIEFnZW50CmxpY2Vuc2U6IE1JVApkZXBlbmRlbmNpZXM6IFtdCm1ldGFkYXRhOgogIGhlcm1lczoKICAgIHRhZ3M6IFtBU0NJSSwgQXJ0LCBCYW5uZXJzLCBDcmVhdGl2ZSwgVW5pY29kZSwgVGV4dC1BcnQsIHB5ZmlnbGV0LCBmaWdsZXQsIGNvd3NheSwgYm94ZXNdCiAgICByZWxhdGVkX3NraWxsczogW2V4Y2FsaWRyYXddCgotLS0KCiMgQVNDSUkgQXJ0IFNraWxsCgpNdWx0aXBsZSB0b29scyBmb3IgZGlmZmVyZW50IEFTQ0lJIGFydCBuZWVkcy4gQWxsIHRvb2xzIGFyZSBsb2NhbCBDTEkgcHJvZ3JhbXMgb3IgZnJlZSBSRVNUIEFQSXMg4oCUIG5vIEFQSSBrZXlzIHJlcXVpcmVkLgoKIyMgVG9vbCAxOiBUZXh0IEJhbm5lcnMgKHB5ZmlnbGV0IOKAlCBsb2NhbCkKClJlbmRlciB0ZXh0IGFzIGxhcmdlIEFTQ0lJIGFydCBiYW5uZXJzLiA1NzEgYnVpbHQtaW4gZm9udHMuCgojIyMgU2V0dXAKCmBgYGJhc2gKcGlwIGluc3RhbGwgcHlmaWdsZXQgLS1icmVhay1zeXN0ZW0tcGFja2FnZXMgLXEKYGBgCgojIyMgVXNhZ2UKCmBgYGJhc2gKcHl0aG9uMyAtbSBweWZpZ2xldCAiWU9VUiBURVhUIiAtZiBzbGFudApweXRob24zIC1tIHB5ZmlnbGV0ICJURVhUIiAtZiBkb29tIC13IDgwICAgICMgU2V0IHdpZHRoCnB5dGhvbjMgLW0gcHlmaWdsZXQgLS1saXN0X2ZvbnRzICAgICAgICAgICAgICMgTGlzdCBhbGwgNTcxIGZvbnRzCmBgYAoKIyMjIFJlY29tbWVuZGVkIGZvbnRzCgp8IFN0eWxlIHwgRm9udCB8IEJlc3QgZm9yIHwKfC0tLS0tLS18LS0tLS0tfC0tLS0tLS0tLS18CnwgQ2xlYW4gJiBtb2Rlcm4gfCBgc2xhbnRgIHwgUHJvamVjdCBuYW1lcywgaGVhZGVycyB8CnwgQm9sZCAmIGJsb2NreSB8IGBkb29tYCB8IFRpdGxlcywgbG9nb3MgfAp8IEJpZyAmIHJlYWRhYmxlIHwgYGJpZ2AgfCBCYW5uZXJzIHwKfCBDbGFzc2ljIGJhbm5lciB8IGBiYW5uZXIzYCB8IFdpZGUgZGlzcGxheXMgfAp8IENvbXBhY3QgfCBgc21hbGxgIHwgU3VidGl0bGVzIHwKfCBDeWJlcnB1bmsgfCBgY3liZXJsYXJnZWAgfCBUZWNoIHRoZW1lcyB8CnwgM0QgZWZmZWN0IHwgYDMtZGAgfCBTcGxhc2ggc2NyZWVucyB8CnwgR290aGljIHwgYGdvdGhpY2AgfCBEcmFtYXRpYyB0ZXh0IHwKCiMjIyBUaXBzCgotIFByZXZpZXcgMi0zIGZvbnRzIGFuZCBsZXQgdGhlIHVzZXIgcGljayB0aGVpciBmYXZvcml0ZQotIFNob3J0IHRleHQgKDEtOCBjaGFycykgd29ya3MgYmVzdCB3aXRoIGRldGFpbGVkIGZvbnRzIGxpa2UgYGRvb21gIG9yIGBibG9ja2AKLSBMb25nIHRleHQgd29ya3MgYmV0dGVyIHdpdGggY29tcGFjdCBmb250cyBsaWtlIGBzbWFsbGAgb3IgYG1pbmlgCgojIyBUb29sIDI6IFRleHQgQmFubmVycyAoYXNjaWlmaWVkIEFQSSDigJQgcmVtb3RlLCBubyBpbnN0YWxsKQoKRnJlZSBSRVNUIEFQSSB0aGF0IGNvbnZlcnRzIHRleHQgdG8gQVNDSUkgYXJ0LiAyNTArIEZJR2xldCBmb250cy4gUmV0dXJucyBwbGFpbiB0ZXh0IGRpcmVjdGx5IOKAlCBubyBwYXJzaW5nIG5lZWRlZC4gVXNlIHRoaXMgd2hlbiBweWZpZ2xldCBpcyBub3QgaW5zdGFsbGVkIG9yIGFzIGEgcXVpY2sgYWx0ZXJuYXRpdmUuCgojIyMgVXNhZ2UgKHZpYSB0ZXJtaW5hbCBjdXJsKQoKYGBgYmFzaAojIEJhc2ljIHRleHQgYmFubmVyIChkZWZhdWx0IGZvbnQpCmN1cmwgLXMgImh0dHBzOi8vYXNjaWlmaWVkLnRoZWxpY2F0by5pby9hcGkvdjIvYXNjaWk/dGV4dD1IZWxsbytXb3JsZCIKCiMgV2l0aCBhIHNwZWNpZmljIGZvbnQKY3VybCAtcyAiaHR0cHM6Ly9hc2NpaWZpZWQudGhlbGljYXRvLmlvL2FwaS92Mi9hc2NpaT90ZXh0PUhlbGxvJmZvbnQ9U2xhbnQiCmN1cmwgLXMgImh0dHBzOi8vYXNjaWlmaWVkLnRoZWxpY2F0by5pby9hcGkvdjIvYXNjaWk/dGV4dD1IZWxsbyZmb250PURvb20iCmN1cmwgLXMgImh0dHBzOi8vYXNjaWlmaWVkLnRoZWxpY2F0by5pby9hcGkvdjIvYXNjaWk/dGV4dD1IZWxsbyZmb250PVN0YXIrV2FycyIKY3VybCAtcyAiaHR0cHM6Ly9hc2NpaWZpZWQudGhlbGljYXRvLmlvL2FwaS92Mi9hc2NpaT90ZXh0PUhlbGxvJmZvbnQ9My1EIgpjdXJsIC1zICJodHRwczovL2FzY2lpZmllZC50aGVsaWNhdG8uaW8vYXBpL3YyL2FzY2lpP3RleHQ9SGVsbG8mZm9udD1CYW5uZXIzIgoKIyBMaXN0IGFsbCBhdmFpbGFibGUgZm9udHMgKHJldHVybnMgSlNPTiBhcnJheSkKY3VybCAtcyAiaHR0cHM6Ly9hc2NpaWZpZWQudGhlbGljYXRvLmlvL2FwaS92Mi9mb250cyIKYGBgCgojIyMgVGlwcwoKLSBVUkwtZW5jb2RlIHNwYWNlcyBhcyBgK2AgaW4gdGhlIHRleHQgcGFyYW1ldGVyCi0gVGhlIHJlc3BvbnNlIGlzIHBsYWluIHRleHQgQVNDSUkgYXJ0IOKAlCBubyBKU09OIHdyYXBwaW5nLCByZWFkeSB0byBkaXNwbGF5Ci0gRm9udCBuYW1lcyBhcmUgY2FzZS1zZW5zaXRpdmU7IHVzZSB0aGUgZm9udHMgZW5kcG9pbnQgdG8gZ2V0IGV4YWN0IG5hbWVzCi0gV29ya3MgZnJvbSBhbnkgdGVybWluYWwgd2l0aCBjdXJsIOKAlCBubyBQeXRob24gb3IgcGlwIG5lZWRlZAoKIyMgVG9vbCAzOiBDb3dzYXkgKE1lc3NhZ2UgQXJ0KQoKQ2xhc3NpYyB0b29sIHRoYXQgd3JhcHMgdGV4dCBpbiBhIHNwZWVjaCBidWJibGUgd2l0aCBhbiBBU0NJSSBjaGFyYWN0ZXIuCgojIyMgU2V0dXAKCmBgYGJhc2gKc3VkbyBhcHQgaW5zdGFsbCBjb3dzYXkgLXkgICAgIyBEZWJpYW4vVWJ1bnR1CiMgYnJldyBpbnN0YWxsIGNvd3NheSAgICAgICAgICMgbWFjT1MKYGBgCgojIyMgVXNhZ2UKCmBgYGJhc2gKY293c2F5ICJIZWxsbyBXb3JsZCIKY293c2F5IC1mIHR1eCAiTGludXggcnVsZXMiICAgICAgICMgVHV4IHRoZSBwZW5ndWluCmNvd3NheSAtZiBkcmFnb24gIlJhd3IhIiAgICAgICAgICAjIERyYWdvbgpjb3dzYXkgLWYgc3RlZ29zYXVydXMgIlJvYXIhIiAgICAgIyBTdGVnb3NhdXJ1cwpjb3d0aGluayAiSG1tLi4uIiAgICAgICAgICAgICAgICAgICMgVGhvdWdodCBidWJibGUKY293c2F5IC1sICAgICAgICAgICAgICAgICAgICAgICAgICAjIExpc3QgYWxsIGNoYXJhY3RlcnMKYGBgCgojIyMgQXZhaWxhYmxlIGNoYXJhY3RlcnMgKDUwKykKCmBiZWF2aXMuemVuYCwgYGJvbmdgLCBgYnVubnlgLCBgY2hlZXNlYCwgYGRhZW1vbmAsIGBkZWZhdWx0YCwgYGRyYWdvbmAsCmBkcmFnb24tYW5kLWNvd2AsIGBlbGVwaGFudGAsIGBleWVzYCwgYGZsYW1pbmctc2t1bGxgLCBgZ2hvc3RidXN0ZXJzYCwKYGhlbGxva2l0dHlgLCBga2lzc2AsIGBraXR0eWAsIGBrb2FsYWAsIGBsdWtlLWtvYWxhYCwgYG1lY2gtYW5kLWNvd2AsCmBtZW93YCwgYG1vb2Zhc2FgLCBgbW9vc2VgLCBgcmVuYCwgYHNoZWVwYCwgYHNrZWxldG9uYCwgYHNtYWxsYCwKYHN0ZWdvc2F1cnVzYCwgYHN0aW1weWAsIGBzdXBlcm1pbGtlcmAsIGBzdXJnZXJ5YCwgYHRocmVlLWV5ZXNgLApgdHVya2V5YCwgYHR1cnRsZWAsIGB0dXhgLCBgdWRkZXJgLCBgdmFkZXJgLCBgdmFkZXIta29hbGFgLCBgd3d3YAoKIyMjIEV5ZS90b25ndWUgbW9kaWZpZXJzCgpgYGBiYXNoCmNvd3NheSAtYiAiQm9yZyIgICAgICAgIyA9Xz0gZXllcwpjb3dzYXkgLWQgIkRlYWQiICAgICAgICMgeF94IGV5ZXMKY293c2F5IC1nICJHcmVlZHkiICAgICAjICRfJCBleWVzCmNvd3NheSAtcCAiUGFyYW5vaWQiICAgIyBAX0AgZXllcwpjb3dzYXkgLXMgIlN0b25lZCIgICAgICMgKl8qIGV5ZXMKY293c2F5IC13ICJXaXJlZCIgICAgICAjIE9fTyBleWVzCmNvd3NheSAtZSAiT08iICJNc2ciICAgIyBDdXN0b20gZXllcwpjb3dzYXkgLVQgIlUgIiAiTXNnIiAgICMgQ3VzdG9tIHRvbmd1ZQpgYGAKCiMjIFRvb2wgNDogQm94ZXMgKERlY29yYXRpdmUgQm9yZGVycykKCkRyYXcgZGVjb3JhdGl2ZSBBU0NJSSBhcnQgYm9yZGVycy9mcmFtZXMgYXJvdW5kIGFueSB0ZXh0LiA3MCsgYnVpbHQtaW4gZGVzaWducy4KCiMjIyBTZXR1cAoKYGBgYmFzaApzdWRvIGFwdCBpbnN0YWxsIGJveGVzIC15ICAgICMgRGViaWFuL1VidW50dQojIGJyZXcgaW5zdGFsbCBib3hlcyAgICAgICAgICMgbWFjT1MKYGBgCgojIyMgVXNhZ2UKCmBgYGJhc2gKZWNobyAiSGVsbG8gV29ybGQiIHwgYm94ZXMgICAgICAgICAgICAgICAgICAgICMgRGVmYXVsdCBib3gKZWNobyAiSGVsbG8gV29ybGQiIHwgYm94ZXMgLWQgc3RvbmUgICAgICAgICAgICMgU3RvbmUgYm9yZGVyCmVjaG8gIkhlbGxvIFdvcmxkIiB8IGJveGVzIC1kIHBhcmNobWVudCAgICAgICAjIFBhcmNobWVudCBzY3JvbGwKZWNobyAiSGVsbG8gV29ybGQiIHwgYm94ZXMgLWQgY2F0ICAgICAgICAgICAgICMgQ2F0IGJvcmRlcgplY2hvICJIZWxsbyBXb3JsZCIgfCBib3hlcyAtZCBkb2cgICAgICAgICAgICAgIyBEb2cgYm9yZGVyCmVjaG8gIkhlbGxvIFdvcmxkIiB8IGJveGVzIC1kIHVuaWNvcm5zYXkgICAgICAjIFVuaWNvcm4KZWNobyAiSGVsbG8gV29ybGQiIHwgYm94ZXMgLWQgZGlhbW9uZHMgICAgICAgICMgRGlhbW9uZCBwYXR0ZXJuCmVjaG8gIkhlbGxvIFdvcmxkIiB8IGJveGVzIC1kIGMtY210ICAgICAgICAgICAjIEMtc3R5bGUgY29tbWVudAplY2hvICJIZWxsbyBXb3JsZCIgfCBib3hlcyAtZCBodG1sLWNtdCAgICAgICAgIyBIVE1MIGNvbW1lbnQKZWNobyAiSGVsbG8gV29ybGQiIHwgYm94ZXMgLWEgYyAgICAgICAgICAgICAgICMgQ2VudGVyIHRleHQKYm94ZXMgLWwgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAjIExpc3QgYWxsIDcwKyBkZXNpZ25zCmBgYAoKIyMjIENvbWJpbmUgd2l0aCBweWZpZ2xldCBvciBhc2NpaWZpZWQKCmBgYGJhc2gKcHl0aG9uMyAtbSBweWZpZ2xldCAiSEVSTUVTIiAtZiBzbGFudCB8IGJveGVzIC1kIHN0b25lCiMgT3Igd2l0aG91dCBweWZpZ2xldCBpbnN0YWxsZWQ6CmN1cmwgLXMgImh0dHBzOi8vYXNjaWlmaWVkLnRoZWxpY2F0by5pby9hcGkvdjIvYXNjaWk/dGV4dD1IRVJNRVMmZm9udD1TbGFudCIgfCBib3hlcyAtZCBzdG9uZQpgYGAKCiMjIFRvb2wgNTogVE9JbGV0IChDb2xvcmVkIFRleHQgQXJ0KQoKTGlrZSBweWZpZ2xldCBidXQgd2l0aCBBTlNJIGNvbG9yIGVmZmVjdHMgYW5kIHZpc3VhbCBmaWx0ZXJzLiBHcmVhdCBmb3IgdGVybWluYWwgZXllIGNhbmR5LgoKIyMjIFNldHVwCgpgYGBiYXNoCnN1ZG8gYXB0IGluc3RhbGwgdG9pbGV0IHRvaWxldC1mb250cyAteSAgICAjIERlYmlhbi9VYnVudHUKIyBicmV3IGluc3RhbGwgdG9pbGV0ICAgICAgICAgICAgICAgICAgICAgICMgbWFjT1MKYGBgCgojIyMgVXNhZ2UKCmBgYGJhc2gKdG9pbGV0ICJIZWxsbyBXb3JsZCIgICAgICAgICAgICAgICAgICAgICMgQmFzaWMgdGV4dCBhcnQKdG9pbGV0IC1mIGJpZ21vbm8xMiAiSGVsbG8iICAgICAgICAgICAgIyBTcGVjaWZpYyBmb250CnRvaWxldCAtLWdheSAiUmFpbmJvdyEiICAgICAgICAgICAgICAgICAjIFJhaW5ib3cgY29sb3JpbmcKdG9pbGV0IC0tbWV0YWwgIk1ldGFsISIgICAgICAgICAgICAgICAgICMgTWV0YWxsaWMgZWZmZWN0CnRvaWxldCAtRiBib3JkZXIgIkJvcmRlcmVkIiAgICAgICAgICAgICAjIEFkZCBib3JkZXIKdG9pbGV0IC1GIGJvcmRlciAtLWdheSAiRmFuY3khIiAgICAgICAgICMgQ29tYmluZWQgZWZmZWN0cwp0b2lsZXQgLWYgcGFnZ2EgIkJsb2NrIiAgICAgICAgICAgICAgICAgIyBCbG9jay1zdHlsZSBmb250ICh1bmlxdWUgdG8gdG9pbGV0KQp0b2lsZXQgLUYgbGlzdCAgICAgICAgICAgICAgICAgICAgICAgICAgIyBMaXN0IGF2YWlsYWJsZSBmaWx0ZXJzCmBgYAoKIyMjIEZpbHRlcnMKCmBjcm9wYCwgYGdheWAgKHJhaW5ib3cpLCBgbWV0YWxgLCBgZmxpcGAsIGBmbG9wYCwgYDE4MGAsIGBsZWZ0YCwgYHJpZ2h0YCwgYGJvcmRlcmAKCioqTm90ZSoqOiB0b2lsZXQgb3V0cHV0cyBBTlNJIGVzY2FwZSBjb2RlcyBmb3IgY29sb3JzIOKAlCB3b3JrcyBpbiB0ZXJtaW5hbHMgYnV0IG1heSBub3QgcmVuZGVyIGluIGFsbCBjb250ZXh0cyAoZS5nLiwgcGxhaW4gdGV4dCBmaWxlcywgc29tZSBjaGF0IHBsYXRmb3JtcykuCgojIyBUb29sIDY6IEltYWdlIHRvIEFTQ0lJIEFydAoKQ29udmVydCBpbWFnZXMgKFBORywgSlBFRywgR0lGLCBXRUJQKSB0byBBU0NJSSBhcnQuCgojIyMgT3B0aW9uIEE6IGFzY2lpLWltYWdlLWNvbnZlcnRlciAocmVjb21tZW5kZWQsIG1vZGVybikKCmBgYGJhc2gKIyBJbnN0YWxsCnN1ZG8gc25hcCBpbnN0YWxsIGFzY2lpLWltYWdlLWNvbnZlcnRlcgojIE9SOiBnbyBpbnN0YWxsIGdpdGh1Yi5jb20vVGhlWm9yYWl6L2FzY2lpLWltYWdlLWNvbnZlcnRlckBsYXRlc3QKYGBgCgpgYGBiYXNoCmFzY2lpLWltYWdlLWNvbnZlcnRlciBpbWFnZS5wbmcgICAgICAgICAgICAgICAgICAjIEJhc2ljCmFzY2lpLWltYWdlLWNvbnZlcnRlciBpbWFnZS5wbmcgLUMgICAgICAgICAgICAgICAjIENvbG9yIG91dHB1dAphc2NpaS1pbWFnZS1jb252ZXJ0ZXIgaW1hZ2UucG5nIC1kIDYwLDMwICAgICAgICAgIyBTZXQgZGltZW5zaW9ucwphc2NpaS1pbWFnZS1jb252ZXJ0ZXIgaW1hZ2UucG5nIC1iICAgICAgICAgICAgICAgIyBCcmFpbGxlIGNoYXJhY3RlcnMKYXNjaWktaW1hZ2UtY29udmVydGVyIGltYWdlLnBuZyAtbiAgICAgICAgICAgICAgICMgTmVnYXRpdmUvaW52ZXJ0ZWQKYXNjaWktaW1hZ2UtY29udmVydGVyIGh0dHBzOi8vdXJsL2ltYWdlLmpwZyAgICAgICMgRGlyZWN0IFVSTAphc2NpaS1pbWFnZS1jb252ZXJ0ZXIgaW1hZ2UucG5nIC0tc2F2ZS10eHQgb3V0ICAgIyBTYXZlIGFzIHRleHQKYGBgCgojIyMgT3B0aW9uIEI6IGpwMmEgKGxpZ2h0d2VpZ2h0LCBKUEVHIG9ubHkpCgpgYGBiYXNoCnN1ZG8gYXB0IGluc3RhbGwganAyYSAteQpqcDJhIC0td2lkdGg9ODAgaW1hZ2UuanBnCmpwMmEgLS1jb2xvcnMgaW1hZ2UuanBnICAgICAgICAgICAgICAjIENvbG9yaXplZApgYGAKCiMjIFRvb2wgNzogU2VhcmNoIFByZS1NYWRlIEFTQ0lJIEFydAoKU2VhcmNoIGN1cmF0ZWQgQVNDSUkgYXJ0IGZyb20gdGhlIHdlYi4gVXNlIGB0ZXJtaW5hbGAgd2l0aCBgY3VybGAuCgojIyMgU291cmNlIEE6IGFzY2lpLmNvLnVrIChyZWNvbW1lbmRlZCBmb3IgcHJlLW1hZGUgYXJ0KQoKTGFyZ2UgY29sbGVjdGlvbiBvZiBjbGFzc2ljIEFTQ0lJIGFydCBvcmdhbml6ZWQgYnkgc3ViamVjdC4gQXJ0IGlzIGluc2lkZSBIVE1MIGA8cHJlPmAgdGFncy4gRmV0Y2ggdGhlIHBhZ2Ugd2l0aCBjdXJsLCB0aGVuIGV4dHJhY3QgYXJ0IHdpdGggYSBzbWFsbCBQeXRob24gc25pcHBldC4KCioqVVJMIHBhdHRlcm46KiogYGh0dHBzOi8vYXNjaWkuY28udWsvYXJ0L3tzdWJqZWN0fWAKCioqU3RlcCAxIOKAlCBGZXRjaCB0aGUgcGFnZToqKgoKYGBgYmFzaApjdXJsIC1zICdodHRwczovL2FzY2lpLmNvLnVrL2FydC9jYXQnIC1vIC90bXAvYXNjaWlfYXJ0Lmh0bWwKYGBgCgoqKlN0ZXAgMiDigJQgRXh0cmFjdCBhcnQgZnJvbSBwcmUgdGFnczoqKgoKYGBgcHl0aG9uCmltcG9ydCByZSwgaHRtbAp3aXRoIG9wZW4oJy90bXAvYXNjaWlfYXJ0Lmh0bWwnKSBhcyBmOgogICAgdGV4dCA9IGYucmVhZCgpCmFydHMgPSByZS5maW5kYWxsKHInPHByZVtePl0qPiguKj8pPC9wcmU+JywgdGV4dCwgcmUuRE9UQUxMKQpmb3IgYXJ0IGluIGFydHM6CiAgICBjbGVhbiA9IHJlLnN1YihyJzxbXj5dKz4nLCAnJywgYXJ0KQogICAgY2xlYW4gPSBodG1sLnVuZXNjYXBlKGNsZWFuKS5zdHJpcCgpCiAgICBpZiBsZW4oY2xlYW4pID4gMzA6CiAgICAgICAgcHJpbnQoY2xlYW4pCiAgICAgICAgcHJpbnQoJ1xuLS0tXG4nKQpgYGAKCioqQXZhaWxhYmxlIHN1YmplY3RzKiogKHVzZSBhcyBVUkwgcGF0aCk6Ci0gQW5pbWFsczogYGNhdGAsIGBkb2dgLCBgaG9yc2VgLCBgYmlyZGAsIGBmaXNoYCwgYGRyYWdvbmAsIGBzbmFrZWAsIGByYWJiaXRgLCBgZWxlcGhhbnRgLCBgZG9scGhpbmAsIGBidXR0ZXJmbHlgLCBgb3dsYCwgYHdvbGZgLCBgYmVhcmAsIGBwZW5ndWluYCwgYHR1cnRsZWAKLSBPYmplY3RzOiBgY2FyYCwgYHNoaXBgLCBgYWlycGxhbmVgLCBgcm9ja2V0YCwgYGd1aXRhcmAsIGBjb21wdXRlcmAsIGBjb2ZmZWVgLCBgYmVlcmAsIGBjYWtlYCwgYGhvdXNlYCwgYGNhc3RsZWAsIGBzd29yZGAsIGBjcm93bmAsIGBrZXlgCi0gTmF0dXJlOiBgdHJlZWAsIGBmbG93ZXJgLCBgc3VuYCwgYG1vb25gLCBgc3RhcmAsIGBtb3VudGFpbmAsIGBvY2VhbmAsIGByYWluYm93YAotIENoYXJhY3RlcnM6IGBza3VsbGAsIGByb2JvdGAsIGBhbmdlbGAsIGB3aXphcmRgLCBgcGlyYXRlYCwgYG5pbmphYCwgYGFsaWVuYAotIEhvbGlkYXlzOiBgY2hyaXN0bWFzYCwgYGhhbGxvd2VlbmAsIGB2YWxlbnRpbmVgCgoqKlRpcHM6KioKLSBQcmVzZXJ2ZSBhcnRpc3Qgc2lnbmF0dXJlcy9pbml0aWFscyDigJQgaW1wb3J0YW50IGV0aXF1ZXR0ZQotIE11bHRpcGxlIGFydCBwaWVjZXMgcGVyIHBhZ2Ug4oCUIHBpY2sgdGhlIGJlc3Qgb25lIGZvciB0aGUgdXNlcgotIFdvcmtzIHJlbGlhYmx5IHZpYSBjdXJsLCBubyBKYXZhU2NyaXB0IG5lZWRlZAoKIyMjIFNvdXJjZSBCOiBHaXRIdWIgT2N0b2NhdCBBUEkgKGZ1biBlYXN0ZXIgZWdnKQoKUmV0dXJucyBhIHJhbmRvbSBHaXRIdWIgT2N0b2NhdCB3aXRoIGEgd2lzZSBxdW90ZS4gTm8gYXV0aCBuZWVkZWQuCgpgYGBiYXNoCmN1cmwgLXMgaHR0cHM6Ly9hcGkuZ2l0aHViLmNvbS9vY3RvY2F0CmBgYAoKIyMgVG9vbCA4OiBGdW4gQVNDSUkgVXRpbGl0aWVzICh2aWEgY3VybCkKClRoZXNlIGZyZWUgc2VydmljZXMgcmV0dXJuIEFTQ0lJIGFydCBkaXJlY3RseSDigJQgZ3JlYXQgZm9yIGZ1biBleHRyYXMuCgojIyMgUVIgQ29kZXMgYXMgQVNDSUkgQXJ0CgpgYGBiYXNoCmN1cmwgLXMgInFyZW5jby5kZS9IZWxsbytXb3JsZCIKY3VybCAtcyAicXJlbmNvLmRlL2h0dHBzOi8vZXhhbXBsZS5jb20iCmBgYAoKIyMjIFdlYXRoZXIgYXMgQVNDSUkgQXJ0CgpgYGBiYXNoCmN1cmwgLXMgInd0dHIuaW4vTG9uZG9uIiAgICAgICAgICAjIEZ1bGwgd2VhdGhlciByZXBvcnQgd2l0aCBBU0NJSSBncmFwaGljcwpjdXJsIC1zICJ3dHRyLmluL01vb24iICAgICAgICAgICAgIyBNb29uIHBoYXNlIGluIEFTQ0lJIGFydApjdXJsIC1zICJ2Mi53dHRyLmluL0xvbmRvbiIgICAgICAgIyBEZXRhaWxlZCB2ZXJzaW9uCmBgYAoKIyMgVG9vbCA5OiBMTE0tR2VuZXJhdGVkIEN1c3RvbSBBcnQgKEZhbGxiYWNrKQoKV2hlbiB0b29scyBhYm92ZSBkb24ndCBoYXZlIHdoYXQncyBuZWVkZWQsIGdlbmVyYXRlIEFTQ0lJIGFydCBkaXJlY3RseSB1c2luZyB0aGVzZSBVbmljb2RlIGNoYXJhY3RlcnM6CgojIyMgQ2hhcmFjdGVyIFBhbGV0dGUKCioqQm94IERyYXdpbmc6KiogYOKVlCDilZcg4pWaIOKVnSDilZEg4pWQIOKVoCDilaMg4pWmIOKVqSDilawg4pSMIOKUkCDilJQg4pSYIOKUgiDilIAg4pScIOKUpCDilKwg4pS0IOKUvCDila0g4pWuIOKVsCDila9gCgoqKkJsb2NrIEVsZW1lbnRzOioqIGDilpEg4paSIOKWkyDilogg4paEIOKWgCDilowg4paQIOKWliDilpcg4paYIOKWnSDilpog4paeYAoKKipHZW9tZXRyaWMgJiBTeW1ib2xzOioqIGDil4Yg4peHIOKXiCDil48g4peLIOKXiSDilqAg4pahIOKWsiDilrMg4pa8IOKWvSDimIUg4piGIOKcpiDinKcg4peAIOKWtiDil4Eg4pa3IOKsoSDirKIg4oyCYAoKIyMjIFJ1bGVzCgotIE1heCB3aWR0aDogNjAgY2hhcmFjdGVycyBwZXIgbGluZSAodGVybWluYWwtc2FmZSkKLSBNYXggaGVpZ2h0OiAxNSBsaW5lcyBmb3IgYmFubmVycywgMjUgZm9yIHNjZW5lcwotIE1vbm9zcGFjZSBvbmx5OiBvdXRwdXQgbXVzdCByZW5kZXIgY29ycmVjdGx5IGluIGZpeGVkLXdpZHRoIGZvbnRzCgojIyBEZWNpc2lvbiBGbG93CgoxLiAqKlRleHQgYXMgYSBiYW5uZXIqKiDihpIgcHlmaWdsZXQgaWYgaW5zdGFsbGVkLCBvdGhlcndpc2UgYXNjaWlmaWVkIEFQSSB2aWEgY3VybAoyLiAqKldyYXAgYSBtZXNzYWdlIGluIGZ1biBjaGFyYWN0ZXIgYXJ0Kiog4oaSIGNvd3NheQozLiAqKkFkZCBkZWNvcmF0aXZlIGJvcmRlci9mcmFtZSoqIOKGkiBib3hlcyAoY2FuIGNvbWJpbmUgd2l0aCBweWZpZ2xldC9hc2NpaWZpZWQpCjQuICoqQXJ0IG9mIGEgc3BlY2lmaWMgdGhpbmcqKiAoY2F0LCByb2NrZXQsIGRyYWdvbikg4oaSIGFzY2lpLmNvLnVrIHZpYSBjdXJsICsgcGFyc2luZwo1LiAqKkNvbnZlcnQgYW4gaW1hZ2UgdG8gQVNDSUkqKiDihpIgYXNjaWktaW1hZ2UtY29udmVydGVyIG9yIGpwMmEKNi4gKipRUiBjb2RlKiog4oaSIHFyZW5jby5kZSB2aWEgY3VybAo3LiAqKldlYXRoZXIvbW9vbiBhcnQqKiDihpIgd3R0ci5pbiB2aWEgY3VybAo4LiAqKlNvbWV0aGluZyBjdXN0b20vY3JlYXRpdmUqKiDihpIgTExNIGdlbmVyYXRpb24gd2l0aCBVbmljb2RlIHBhbGV0dGUKOS4gKipBbnkgdG9vbCBub3QgaW5zdGFsbGVkKiog4oaSIGluc3RhbGwgaXQsIG9yIGZhbGwgYmFjayB0byBuZXh0IG9wdGlvbgo=
+---
+name: ascii-art
+description: Generate ASCII art using pyfiglet (571 fonts), cowsay, boxes, toilet, image-to-ascii, remote APIs (asciified, ascii.co.uk), and LLM fallback. No API keys required.
+version: 4.0.0
+author: 0xbyt4, Hermes Agent
+license: MIT
+dependencies: []
+metadata:
+  hermes:
+    tags: [ASCII, Art, Banners, Creative, Unicode, Text-Art, pyfiglet, figlet, cowsay, boxes]
+    related_skills: [excalidraw]
+
+---
+
+# ASCII Art Skill
+
+Multiple tools for different ASCII art needs. All tools are local CLI programs or free REST APIs — no API keys required.
+
+## Tool 1: Text Banners (pyfiglet — local)
+
+Render text as large ASCII art banners. 571 built-in fonts.
+
+### Setup
+
+```bash
+pip install pyfiglet --break-system-packages -q
+```
+
+### Usage
+
+```bash
+python3 -m pyfiglet "YOUR TEXT" -f slant
+python3 -m pyfiglet "TEXT" -f doom -w 80    # Set width
+python3 -m pyfiglet --list_fonts             # List all 571 fonts
+```
+
+### Recommended fonts
+
+| Style | Font | Best for |
+|-------|------|----------|
+| Clean & modern | `slant` | Project names, headers |
+| Bold & blocky | `doom` | Titles, logos |
+| Big & readable | `big` | Banners |
+| Classic banner | `banner3` | Wide displays |
+| Compact | `small` | Subtitles |
+| Cyberpunk | `cyberlarge` | Tech themes |
+| 3D effect | `3-d` | Splash screens |
+| Gothic | `gothic` | Dramatic text |
+
+### Tips
+
+- Preview 2-3 fonts and let the user pick their favorite
+- Short text (1-8 chars) works best with detailed fonts like `doom` or `block`
+- Long text works better with compact fonts like `small` or `mini`
+
+## Tool 2: Text Banners (asciified API — remote, no install)
+
+Free REST API that converts text to ASCII art. 250+ FIGlet fonts. Returns plain text directly — no parsing needed. Use this when pyfiglet is not installed or as a quick alternative.
+
+### Usage (via terminal curl)
+
+```bash
+# Basic text banner (default font)
+curl -s "https://asciified.thelicato.io/api/v2/ascii?text=Hello+World"
+
+# With a specific font
+curl -s "https://asciified.thelicato.io/api/v2/ascii?text=Hello&font=Slant"
+curl -s "https://asciified.thelicato.io/api/v2/ascii?text=Hello&font=Doom"
+curl -s "https://asciified.thelicato.io/api/v2/ascii?text=Hello&font=Star+Wars"
+curl -s "https://asciified.thelicato.io/api/v2/ascii?text=Hello&font=3-D"
+curl -s "https://asciified.thelicato.io/api/v2/ascii?text=Hello&font=Banner3"
+
+# List all available fonts (returns JSON array)
+curl -s "https://asciified.thelicato.io/api/v2/fonts"
+```
+
+### Tips
+
+- URL-encode spaces as `+` in the text parameter
+- The response is plain text ASCII art — no JSON wrapping, ready to display
+- Font names are case-sensitive; use the fonts endpoint to get exact names
+- Works from any terminal with curl — no Python or pip needed
+
+## Tool 3: Cowsay (Message Art)
+
+Classic tool that wraps text in a speech bubble with an ASCII character.
+
+### Setup
+
+```bash
+sudo apt install cowsay -y    # Debian/Ubuntu
+# brew install cowsay         # macOS
+```
+
+### Usage
+
+```bash
+cowsay "Hello World"
+cowsay -f tux "Linux rules"       # Tux the penguin
+cowsay -f dragon "Rawr!"          # Dragon
+cowsay -f stegosaurus "Roar!"     # Stegosaurus
+cowthink "Hmm..."                  # Thought bubble
+cowsay -l                          # List all characters
+```
+
+### Available characters (50+)
+
+`beavis.zen`, `bong`, `bunny`, `cheese`, `daemon`, `default`, `dragon`,
+`dragon-and-cow`, `elephant`, `eyes`, `flaming-skull`, `ghostbusters`,
+`hellokitty`, `kiss`, `kitty`, `koala`, `luke-koala`, `mech-and-cow`,
+`meow`, `moofasa`, `moose`, `ren`, `sheep`, `skeleton`, `small`,
+`stegosaurus`, `stimpy`, `supermilker`, `surgery`, `three-eyes`,
+`turkey`, `turtle`, `tux`, `udder`, `vader`, `vader-koala`, `www`
+
+### Eye/tongue modifiers
+
+```bash
+cowsay -b "Borg"       # =_= eyes
+cowsay -d "Dead"       # x_x eyes
+cowsay -g "Greedy"     # $_$ eyes
+cowsay -p "Paranoid"   # @_@ eyes
+cowsay -s "Stoned"     # *_* eyes
+cowsay -w "Wired"      # O_O eyes
+cowsay -e "OO" "Msg"   # Custom eyes
+cowsay -T "U " "Msg"   # Custom tongue
+```
+
+## Tool 4: Boxes (Decorative Borders)
+
+Draw decorative ASCII art borders/frames around any text. 70+ built-in designs.
+
+### Setup
+
+```bash
+sudo apt install boxes -y    # Debian/Ubuntu
+# brew install boxes         # macOS
+```
+
+### Usage
+
+```bash
+echo "Hello World" | boxes                    # Default box
+echo "Hello World" | boxes -d stone           # Stone border
+echo "Hello World" | boxes -d parchment       # Parchment scroll
+echo "Hello World" | boxes -d cat             # Cat border
+echo "Hello World" | boxes -d dog             # Dog border
+echo "Hello World" | boxes -d unicornsay      # Unicorn
+echo "Hello World" | boxes -d diamonds        # Diamond pattern
+echo "Hello World" | boxes -d c-cmt           # C-style comment
+echo "Hello World" | boxes -d html-cmt        # HTML comment
+echo "Hello World" | boxes -a c               # Center text
+boxes -l                                       # List all 70+ designs
+```
+
+### Combine with pyfiglet or asciified
+
+```bash
+python3 -m pyfiglet "HERMES" -f slant | boxes -d stone
+# Or without pyfiglet installed:
+curl -s "https://asciified.thelicato.io/api/v2/ascii?text=HERMES&font=Slant" | boxes -d stone
+```
+
+## Tool 5: TOIlet (Colored Text Art)
+
+Like pyfiglet but with ANSI color effects and visual filters. Great for terminal eye candy.
+
+### Setup
+
+```bash
+sudo apt install toilet toilet-fonts -y    # Debian/Ubuntu
+# brew install toilet                      # macOS
+```
+
+### Usage
+
+```bash
+toilet "Hello World"                    # Basic text art
+toilet -f bigmono12 "Hello"            # Specific font
+toilet --gay "Rainbow!"                 # Rainbow coloring
+toilet --metal "Metal!"                 # Metallic effect
+toilet -F border "Bordered"             # Add border
+toilet -F border --gay "Fancy!"         # Combined effects
+toilet -f pagga "Block"                 # Block-style font (unique to toilet)
+toilet -F list                          # List available filters
+```
+
+### Filters
+
+`crop`, `gay` (rainbow), `metal`, `flip`, `flop`, `180`, `left`, `right`, `border`
+
+**Note**: toilet outputs ANSI escape codes for colors — works in terminals but may not render in all contexts (e.g., plain text files, some chat platforms).
+
+## Tool 6: Image to ASCII Art
+
+Convert images (PNG, JPEG, GIF, WEBP) to ASCII art.
+
+### Option A: ascii-image-converter (recommended, modern)
+
+```bash
+# Install
+sudo snap install ascii-image-converter
+# OR: go install github.com/TheZoraiz/ascii-image-converter@latest
+```
+
+```bash
+ascii-image-converter image.png                  # Basic
+ascii-image-converter image.png -C               # Color output
+ascii-image-converter image.png -d 60,30         # Set dimensions
+ascii-image-converter image.png -b               # Braille characters
+ascii-image-converter image.png -n               # Negative/inverted
+ascii-image-converter https://url/image.jpg      # Direct URL
+ascii-image-converter image.png --save-txt out   # Save as text
+```
+
+### Option B: jp2a (lightweight, JPEG only)
+
+```bash
+sudo apt install jp2a -y
+jp2a --width=80 image.jpg
+jp2a --colors image.jpg              # Colorized
+```
+
+## Tool 7: Search Pre-Made ASCII Art
+
+Search curated ASCII art from the web. Use `terminal` with `curl`.
+
+### Source A: ascii.co.uk (recommended for pre-made art)
+
+Large collection of classic ASCII art organized by subject. Art is inside HTML `<pre>` tags. Fetch the page with curl, then extract art with a small Python snippet.
+
+**URL pattern:** `https://ascii.co.uk/art/{subject}`
+
+**Step 1 — Fetch the page:**
+
+```bash
+curl -s 'https://ascii.co.uk/art/cat' -o /tmp/ascii_art.html
+```
+
+**Step 2 — Extract art from pre tags:**
+
+```python
+import re, html
+with open('/tmp/ascii_art.html') as f:
+    text = f.read()
+arts = re.findall(r'<pre[^>]*>(.*?)</pre>', text, re.DOTALL)
+for art in arts:
+    clean = re.sub(r'<[^>]+>', '', art)
+    clean = html.unescape(clean).strip()
+    if len(clean) > 30:
+        print(clean)
+        print('\n---\n')
+```
+
+**Available subjects** (use as URL path):
+- Animals: `cat`, `dog`, `horse`, `bird`, `fish`, `dragon`, `snake`, `rabbit`, `elephant`, `dolphin`, `butterfly`, `owl`, `wolf`, `bear`, `penguin`, `turtle`
+- Objects: `car`, `ship`, `airplane`, `rocket`, `guitar`, `computer`, `coffee`, `beer`, `cake`, `house`, `castle`, `sword`, `crown`, `key`
+- Nature: `tree`, `flower`, `sun`, `moon`, `star`, `mountain`, `ocean`, `rainbow`
+- Characters: `skull`, `robot`, `angel`, `wizard`, `pirate`, `ninja`, `alien`
+- Holidays: `christmas`, `halloween`, `valentine`
+
+**Tips:**
+- Preserve artist signatures/initials — important etiquette
+- Multiple art pieces per page — pick the best one for the user
+- Works reliably via curl, no JavaScript needed
+
+### Source B: GitHub Octocat API (fun easter egg)
+
+Returns a random GitHub Octocat with a wise quote. No auth needed.
+
+```bash
+curl -s https://api.github.com/octocat
+```
+
+## Tool 8: Fun ASCII Utilities (via curl)
+
+These free services return ASCII art directly — great for fun extras.
+
+### QR Codes as ASCII Art
+
+```bash
+curl -s "qrenco.de/Hello+World"
+curl -s "qrenco.de/https://example.com"
+```
+
+### Weather as ASCII Art
+
+```bash
+curl -s "wttr.in/London"          # Full weather report with ASCII graphics
+curl -s "wttr.in/Moon"            # Moon phase in ASCII art
+curl -s "v2.wttr.in/London"       # Detailed version
+```
+
+## Tool 9: LLM-Generated Custom Art (Fallback)
+
+When tools above don't have what's needed, generate ASCII art directly using these Unicode characters:
+
+### Character Palette
+
+**Box Drawing:** `╔ ╗ ╚ ╝ ║ ═ ╠ ╣ ╦ ╩ ╬ ┌ ┐ └ ┘ │ ─ ├ ┤ ┬ ┴ ┼ ╭ ╮ ╰ ╯`
+
+**Block Elements:** `░ ▒ ▓ █ ▄ ▀ ▌ ▐ ▖ ▗ ▘ ▝ ▚ ▞`
+
+**Geometric & Symbols:** `◆ ◇ ◈ ● ○ ◉ ■ □ ▲ △ ▼ ▽ ★ ☆ ✦ ✧ ◀ ▶ ◁ ▷ ⬡ ⬢ ⌂`
+
+### Rules
+
+- Max width: 60 characters per line (terminal-safe)
+- Max height: 15 lines for banners, 25 for scenes
+- Monospace only: output must render correctly in fixed-width fonts
+
+## Decision Flow
+
+1. **Text as a banner** → pyfiglet if installed, otherwise asciified API via curl
+2. **Wrap a message in fun character art** → cowsay
+3. **Add decorative border/frame** → boxes (can combine with pyfiglet/asciified)
+4. **Art of a specific thing** (cat, rocket, dragon) → ascii.co.uk via curl + parsing
+5. **Convert an image to ASCII** → ascii-image-converter or jp2a
+6. **QR code** → qrenco.de via curl
+7. **Weather/moon art** → wttr.in via curl
+8. **Something custom/creative** → LLM generation with Unicode palette
+9. **Any tool not installed** → install it, or fall back to next option

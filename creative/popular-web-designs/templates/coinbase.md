@@ -1,1 +1,142 @@
-IyBEZXNpZ24gU3lzdGVtOiBDb2luYmFzZQoKCj4gKipIZXJtZXMgQWdlbnQg4oCUIEltcGxlbWVudGF0aW9uIE5vdGVzKioKPgo+IFRoZSBvcmlnaW5hbCBzaXRlIHVzZXMgcHJvcHJpZXRhcnkgZm9udHMuIEZvciBzZWxmLWNvbnRhaW5lZCBIVE1MIG91dHB1dCwgdXNlIHRoZXNlIENETiBzdWJzdGl0dXRlczoKPiAtICoqUHJpbWFyeToqKiBgRE0gU2Fuc2AgfCAqKk1vbm86KiogYHN5c3RlbSBtb25vc3BhY2Ugc3RhY2tgCj4gLSAqKkZvbnQgc3RhY2sgKENTUyk6KiogYGZvbnQtZmFtaWx5OiAnRE0gU2FucycsIHN5c3RlbS11aSwgLWFwcGxlLXN5c3RlbSwgJ1NlZ29lIFVJJywgUm9ib3RvLCBzYW5zLXNlcmlmO2AKPiAtICoqTW9ubyBzdGFjayAoQ1NTKToqKiBgZm9udC1mYW1pbHk6IHVpLW1vbm9zcGFjZSwgU0ZNb25vLVJlZ3VsYXIsIE1lbmxvLCBNb25hY28sIENvbnNvbGFzLCAnTGliZXJhdGlvbiBNb25vJywgJ0NvdXJpZXIgTmV3JywgbW9ub3NwYWNlO2AKPiBgYGBodG1sCj4gPGxpbmsgaHJlZj0iaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3MyP2ZhbWlseT1ETStTYW5zOml0YWwsb3Bzeix3Z2h0QDAsOS4uNDAsMTAwLi4xMDAwOzEsOS4uNDAsMTAwLi4xMDAwJmRpc3BsYXk9c3dhcCIgcmVsPSJzdHlsZXNoZWV0Ij4KPiBgYGAKPiBVc2UgYHdyaXRlX2ZpbGVgIHRvIGNyZWF0ZSBIVE1MLCBzZXJ2ZSB2aWEgYGdlbmVyYXRpdmUtd2lkZ2V0c2Agc2tpbGwgKGNsb3VkZmxhcmVkIHR1bm5lbCkuCj4gVmVyaWZ5IHZpc3VhbCBhY2N1cmFjeSB3aXRoIGBicm93c2VyX3Zpc2lvbmAgYWZ0ZXIgZ2VuZXJhdGluZy4KCiMjIDEuIFZpc3VhbCBUaGVtZSAmIEF0bW9zcGhlcmUKCkNvaW5iYXNlJ3Mgd2Vic2l0ZSBpcyBhIGNsZWFuLCB0cnVzdHdvcnRoeSBjcnlwdG8gcGxhdGZvcm0gdGhhdCBjb21tdW5pY2F0ZXMgZmluYW5jaWFsIHJlbGlhYmlsaXR5IHRocm91Z2ggYSBibHVlLWFuZC13aGl0ZSBiaW5hcnkgcGFsZXR0ZS4gVGhlIGRlc2lnbiB1c2VzIENvaW5iYXNlIEJsdWUgKGAjMDA1MmZmYCkg4oCUIGEgZGVlcCwgc2F0dXJhdGVkIGJsdWUg4oCUIGFzIHRoZSBzaW5ndWxhciBicmFuZCBhY2NlbnQgYWdhaW5zdCB3aGl0ZSBhbmQgbmVhci1ibGFjayBzdXJmYWNlcy4gVGhlIHByb3ByaWV0YXJ5IGZvbnQgZmFtaWx5IGluY2x1ZGVzIENvaW5iYXNlRGlzcGxheSBmb3IgaGVybyBoZWFkbGluZXMsIENvaW5iYXNlU2FucyBmb3IgVUkgdGV4dCwgQ29pbmJhc2VUZXh0IGZvciBib2R5IHJlYWRpbmcsIGFuZCBDb2luYmFzZUljb25zIGZvciBpY29ub2dyYXBoeSDigJQgYSBjb21wcmVoZW5zaXZlIGZvdXItZm9udCBzeXN0ZW0uCgpUaGUgYnV0dG9uIHN5c3RlbSB1c2VzIGEgZGlzdGluY3RpdmUgNTZweCByYWRpdXMgZm9yIHBpbGwtc2hhcGVkIENUQXMgd2l0aCBob3ZlciB0cmFuc2l0aW9ucyB0byBhIGxpZ2h0ZXIgYmx1ZSAoYCM1NzhiZmFgKS4gVGhlIGRlc2lnbiBhbHRlcm5hdGVzIGJldHdlZW4gd2hpdGUgY29udGVudCBzZWN0aW9ucyBhbmQgZGFyayAoYCMwYTBiMGRgLCBgIzI4MmIzMWApIGZlYXR1cmUgc2VjdGlvbnMsIGNyZWF0aW5nIGEgcHJvZmVzc2lvbmFsLCBmaW5hbmNpYWwtZ3JhZGUgaW50ZXJmYWNlLgoKKipLZXkgQ2hhcmFjdGVyaXN0aWNzOioqCi0gQ29pbmJhc2UgQmx1ZSAoYCMwMDUyZmZgKSBhcyBzaW5ndWxhciBicmFuZCBhY2NlbnQKLSBGb3VyLWZvbnQgcHJvcHJpZXRhcnkgZmFtaWx5OiBEaXNwbGF5LCBTYW5zLCBUZXh0LCBJY29ucwotIDU2cHggcmFkaXVzIHBpbGwgYnV0dG9ucyB3aXRoIGJsdWUgaG92ZXIgdHJhbnNpdGlvbgotIE5lYXItYmxhY2sgKGAjMGEwYjBkYCkgZGFyayBzZWN0aW9ucyArIHdoaXRlIGxpZ2h0IHNlY3Rpb25zCi0gMS4wMCBsaW5lLWhlaWdodCBvbiBkaXNwbGF5IGhlYWRpbmdzIOKAlCB1bHRyYS10aWdodAotIENvb2wgZ3JheSBzZWNvbmRhcnkgc3VyZmFjZSAoYCNlZWYwZjNgKSB3aXRoIGJsdWUgdGludAotIGB0ZXh0LXRyYW5zZm9ybTogbG93ZXJjYXNlYCBvbiBzb21lIGJ1dHRvbiBsYWJlbHMg4oCUIHVudXN1YWwKCiMjIDIuIENvbG9yIFBhbGV0dGUgJiBSb2xlcwoKIyMjIFByaW1hcnkKLSAqKkNvaW5iYXNlIEJsdWUqKiAoYCMwMDUyZmZgKTogUHJpbWFyeSBicmFuZCwgbGlua3MsIENUQSBib3JkZXJzCi0gKipQdXJlIFdoaXRlKiogKGAjZmZmZmZmYCk6IFByaW1hcnkgbGlnaHQgc3VyZmFjZQotICoqTmVhciBCbGFjayoqIChgIzBhMGIwZGApOiBUZXh0LCBkYXJrIHNlY3Rpb24gYmFja2dyb3VuZHMKLSAqKkNvb2wgR3JheSBTdXJmYWNlKiogKGAjZWVmMGYzYCk6IFNlY29uZGFyeSBidXR0b24gYmFja2dyb3VuZAoKIyMjIEludGVyYWN0aXZlCi0gKipIb3ZlciBCbHVlKiogKGAjNTc4YmZhYCk6IEJ1dHRvbiBob3ZlciBiYWNrZ3JvdW5kCi0gKipMaW5rIEJsdWUqKiAoYCMwNjY3ZDBgKTogU2Vjb25kYXJ5IGxpbmsgY29sb3IKLSAqKk11dGVkIEJsdWUqKiAoYCM1YjYxNmVgKTogQm9yZGVyIGNvbG9yIGF0IDIwJSBvcGFjaXR5CgojIyMgU3VyZmFjZQotICoqRGFyayBDYXJkKiogKGAjMjgyYjMxYCk6IERhcmsgYnV0dG9uL2NhcmQgYmFja2dyb3VuZHMKLSAqKkxpZ2h0IFN1cmZhY2UqKiAoYHJnYmEoMjQ3LDI0NywyNDcsMC44OClgKTogU3VidGxlIHN1cmZhY2UKCiMjIDMuIFR5cG9ncmFwaHkgUnVsZXMKCiMjIyBGb250IEZhbWlsaWVzCi0gKipEaXNwbGF5Kio6IGBDb2luYmFzZURpc3BsYXlgIOKAlCBoZXJvIGhlYWRsaW5lcwotICoqVUkgLyBTYW5zKio6IGBDb2luYmFzZVNhbnNgIOKAlCBidXR0b25zLCBoZWFkaW5ncywgbmF2Ci0gKipCb2R5Kio6IGBDb2luYmFzZVRleHRgIOKAlCByZWFkaW5nIHRleHQKLSAqKkljb25zKio6IGBDb2luYmFzZUljb25zYCDigJQgaWNvbiBmb250CgojIyMgSGllcmFyY2h5Cgp8IFJvbGUgfCBGb250IHwgU2l6ZSB8IFdlaWdodCB8IExpbmUgSGVpZ2h0IHwgTm90ZXMgfAp8LS0tLS0tfC0tLS0tLXwtLS0tLS18LS0tLS0tLS18LS0tLS0tLS0tLS0tLXwtLS0tLS0tfAp8IERpc3BsYXkgSGVybyB8IENvaW5iYXNlRGlzcGxheSB8IDgwcHggfCA0MDAgfCAxLjAwICh0aWdodCkgfCBNYXhpbXVtIGltcGFjdCB8CnwgRGlzcGxheSBTZWNvbmRhcnkgfCBDb2luYmFzZURpc3BsYXkgfCA2NHB4IHwgNDAwIHwgMS4wMCB8IFN1Yi1oZXJvIHwKfCBEaXNwbGF5IFRoaXJkIHwgQ29pbmJhc2VEaXNwbGF5IHwgNTJweCB8IDQwMCB8IDEuMDAgfCBUaGlyZCB0aWVyIHwKfCBTZWN0aW9uIEhlYWRpbmcgfCBDb2luYmFzZVNhbnMgfCAzNnB4IHwgNDAwIHwgMS4xMSAodGlnaHQpIHwgRmVhdHVyZSBzZWN0aW9ucyB8CnwgQ2FyZCBUaXRsZSB8IENvaW5iYXNlU2FucyB8IDMycHggfCA0MDAgfCAxLjEzIHwgQ2FyZCBoZWFkaW5ncyB8CnwgRmVhdHVyZSBUaXRsZSB8IENvaW5iYXNlU2FucyB8IDE4cHggfCA2MDAgfCAxLjMzIHwgRmVhdHVyZSBlbXBoYXNpcyB8CnwgQm9keSBCb2xkIHwgQ29pbmJhc2VTYW5zIHwgMTZweCB8IDcwMCB8IDEuNTAgfCBTdHJvbmcgYm9keSB8CnwgQm9keSBTZW1pYm9sZCB8IENvaW5iYXNlU2FucyB8IDE2cHggfCA2MDAgfCAxLjI1IHwgQnV0dG9ucywgbmF2IHwKfCBCb2R5IHwgQ29pbmJhc2VUZXh0IHwgMThweCB8IDQwMCB8IDEuNTYgfCBTdGFuZGFyZCByZWFkaW5nIHwKfCBCb2R5IFNtYWxsIHwgQ29pbmJhc2VUZXh0IHwgMTZweCB8IDQwMCB8IDEuNTAgfCBTZWNvbmRhcnkgcmVhZGluZyB8CnwgQnV0dG9uIHwgQ29pbmJhc2VTYW5zIHwgMTZweCB8IDYwMCB8IDEuMjAgfCArMC4xNnB4IHRyYWNraW5nIHwKfCBDYXB0aW9uIHwgQ29pbmJhc2VTYW5zIHwgMTRweCB8IDYwMOKAkzcwMCB8IDEuNTAgfCBNZXRhZGF0YSB8CnwgU21hbGwgfCBDb2luYmFzZVNhbnMgfCAxM3B4IHwgNjAwIHwgMS4yMyB8IFRhZ3MgfAoKIyMgNC4gQ29tcG9uZW50IFN0eWxpbmdzCgojIyMgQnV0dG9ucwoKKipQcmltYXJ5IFBpbGwgKDU2cHggcmFkaXVzKSoqCi0gQmFja2dyb3VuZDogYCNlZWYwZjNgIG9yIGAjMjgyYjMxYAotIFJhZGl1czogNTZweAotIEJvcmRlcjogYDFweCBzb2xpZGAgbWF0Y2hpbmcgYmFja2dyb3VuZAotIEhvdmVyOiBgIzU3OGJmYWAgKGxpZ2h0IGJsdWUpCi0gRm9jdXM6IGAycHggc29saWQgYmxhY2tgIG91dGxpbmUKCioqRnVsbCBQaWxsICgxMDAwMDBweCByYWRpdXMpKioKLSBVc2VkIGZvciBtYXhpbXVtIHBpbGwgc2hhcGUKCioqQmx1ZSBCb3JkZXJlZCoqCi0gQm9yZGVyOiBgMXB4IHNvbGlkICMwMDUyZmZgCi0gQmFja2dyb3VuZDogdHJhbnNwYXJlbnQKCiMjIyBDYXJkcyAmIENvbnRhaW5lcnMKLSBSYWRpdXM6IDhweOKAkzQwcHggcmFuZ2UKLSBCb3JkZXJzOiBgMXB4IHNvbGlkIHJnYmEoOTEsOTcsMTEwLDAuMilgCgojIyA1LiBMYXlvdXQgUHJpbmNpcGxlcwoKIyMjIFNwYWNpbmcgU3lzdGVtCi0gQmFzZTogOHB4Ci0gU2NhbGU6IDFweCwgM3B4LCA0cHgsIDVweCwgNnB4LCA4cHgsIDEwcHgsIDEycHgsIDE1cHgsIDE2cHgsIDIwcHgsIDI0cHgsIDI1cHgsIDMycHgsIDQ4cHgKCiMjIyBCb3JkZXIgUmFkaXVzIFNjYWxlCi0gU21hbGwgKDRweOKAkzhweCk6IEFydGljbGUgbGlua3MsIHNtYWxsIGNhcmRzCi0gU3RhbmRhcmQgKDEycHjigJMxNnB4KTogQ2FyZHMsIG1lbnVzCi0gTGFyZ2UgKDI0cHjigJMzMnB4KTogRmVhdHVyZSBjb250YWluZXJzCi0gWEwgKDQwcHgpOiBMYXJnZSBidXR0b25zL2NvbnRhaW5lcnMKLSBQaWxsICg1NnB4KTogUHJpbWFyeSBDVEFzCi0gRnVsbCAoMTAwMDAwcHgpOiBNYXhpbXVtIHBpbGwKCiMjIDYuIERlcHRoICYgRWxldmF0aW9uCgpNaW5pbWFsIHNoYWRvdyBzeXN0ZW0g4oCUIGRlcHRoIGZyb20gY29sb3IgY29udHJhc3QgYmV0d2VlbiBkYXJrL2xpZ2h0IHNlY3Rpb25zLgoKIyMgNy4gRG8ncyBhbmQgRG9uJ3RzCgojIyMgRG8KLSBVc2UgQ29pbmJhc2UgQmx1ZSAoIzAwNTJmZikgZm9yIHByaW1hcnkgaW50ZXJhY3RpdmUgZWxlbWVudHMKLSBBcHBseSA1NnB4IHJhZGl1cyBmb3IgYWxsIENUQSBidXR0b25zCi0gVXNlIENvaW5iYXNlRGlzcGxheSBmb3IgaGVybyBoZWFkaW5ncyBvbmx5Ci0gQWx0ZXJuYXRlIGRhcmsgKCMwYTBiMGQpIGFuZCB3aGl0ZSBzZWN0aW9ucwoKIyMjIERvbid0Ci0gRG9uJ3QgdXNlIHRoZSBibHVlIGRlY29yYXRpdmVseSDigJQgaXQncyBmdW5jdGlvbmFsIG9ubHkKLSBEb24ndCB1c2Ugc2hhcnAgY29ybmVycyBvbiBDVEFzIOKAlCA1NnB4IG1pbmltdW0KCiMjIDguIFJlc3BvbnNpdmUgQmVoYXZpb3IKCkJyZWFrcG9pbnRzOiA0MDBweCwgNTc2cHgsIDY0MHB4LCA3NjhweCwgODk2cHgsIDEyODBweCwgMTQ0MHB4LCAxNjAwcHgKCiMjIDkuIEFnZW50IFByb21wdCBHdWlkZQoKIyMjIFF1aWNrIENvbG9yIFJlZmVyZW5jZQotIEJyYW5kOiBDb2luYmFzZSBCbHVlIChgIzAwNTJmZmApCi0gQmFja2dyb3VuZDogV2hpdGUgKGAjZmZmZmZmYCkKLSBEYXJrIHN1cmZhY2U6IGAjMGEwYjBkYAotIFNlY29uZGFyeSBzdXJmYWNlOiBgI2VlZjBmM2AKLSBIb3ZlcjogYCM1NzhiZmFgCi0gVGV4dDogYCMwYTBiMGRgCgojIyMgRXhhbXBsZSBDb21wb25lbnQgUHJvbXB0cwotICJDcmVhdGUgaGVybzogd2hpdGUgYmFja2dyb3VuZC4gQ29pbmJhc2VEaXNwbGF5IDgwcHgsIGxpbmUtaGVpZ2h0IDEuMDAuIFBpbGwgQ1RBICgjZWVmMGYzLCA1NnB4IHJhZGl1cykuIEhvdmVyOiAjNTc4YmZhLiIKLSAiQnVpbGQgZGFyayBzZWN0aW9uOiAjMGEwYjBkIGJhY2tncm91bmQuIENvaW5iYXNlRGlzcGxheSA2NHB4IHdoaXRlIHRleHQuIEJsdWUgYWNjZW50IGxpbmsgKCMwMDUyZmYpLiIK
+# Design System: Coinbase
+
+
+> **Hermes Agent — Implementation Notes**
+>
+> The original site uses proprietary fonts. For self-contained HTML output, use these CDN substitutes:
+> - **Primary:** `DM Sans` | **Mono:** `system monospace stack`
+> - **Font stack (CSS):** `font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;`
+> - **Mono stack (CSS):** `font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;`
+> ```html
+> <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+> ```
+> Use `write_file` to create HTML, serve via `generative-widgets` skill (cloudflared tunnel).
+> Verify visual accuracy with `browser_vision` after generating.
+
+## 1. Visual Theme & Atmosphere
+
+Coinbase's website is a clean, trustworthy crypto platform that communicates financial reliability through a blue-and-white binary palette. The design uses Coinbase Blue (`#0052ff`) — a deep, saturated blue — as the singular brand accent against white and near-black surfaces. The proprietary font family includes CoinbaseDisplay for hero headlines, CoinbaseSans for UI text, CoinbaseText for body reading, and CoinbaseIcons for iconography — a comprehensive four-font system.
+
+The button system uses a distinctive 56px radius for pill-shaped CTAs with hover transitions to a lighter blue (`#578bfa`). The design alternates between white content sections and dark (`#0a0b0d`, `#282b31`) feature sections, creating a professional, financial-grade interface.
+
+**Key Characteristics:**
+- Coinbase Blue (`#0052ff`) as singular brand accent
+- Four-font proprietary family: Display, Sans, Text, Icons
+- 56px radius pill buttons with blue hover transition
+- Near-black (`#0a0b0d`) dark sections + white light sections
+- 1.00 line-height on display headings — ultra-tight
+- Cool gray secondary surface (`#eef0f3`) with blue tint
+- `text-transform: lowercase` on some button labels — unusual
+
+## 2. Color Palette & Roles
+
+### Primary
+- **Coinbase Blue** (`#0052ff`): Primary brand, links, CTA borders
+- **Pure White** (`#ffffff`): Primary light surface
+- **Near Black** (`#0a0b0d`): Text, dark section backgrounds
+- **Cool Gray Surface** (`#eef0f3`): Secondary button background
+
+### Interactive
+- **Hover Blue** (`#578bfa`): Button hover background
+- **Link Blue** (`#0667d0`): Secondary link color
+- **Muted Blue** (`#5b616e`): Border color at 20% opacity
+
+### Surface
+- **Dark Card** (`#282b31`): Dark button/card backgrounds
+- **Light Surface** (`rgba(247,247,247,0.88)`): Subtle surface
+
+## 3. Typography Rules
+
+### Font Families
+- **Display**: `CoinbaseDisplay` — hero headlines
+- **UI / Sans**: `CoinbaseSans` — buttons, headings, nav
+- **Body**: `CoinbaseText` — reading text
+- **Icons**: `CoinbaseIcons` — icon font
+
+### Hierarchy
+
+| Role | Font | Size | Weight | Line Height | Notes |
+|------|------|------|--------|-------------|-------|
+| Display Hero | CoinbaseDisplay | 80px | 400 | 1.00 (tight) | Maximum impact |
+| Display Secondary | CoinbaseDisplay | 64px | 400 | 1.00 | Sub-hero |
+| Display Third | CoinbaseDisplay | 52px | 400 | 1.00 | Third tier |
+| Section Heading | CoinbaseSans | 36px | 400 | 1.11 (tight) | Feature sections |
+| Card Title | CoinbaseSans | 32px | 400 | 1.13 | Card headings |
+| Feature Title | CoinbaseSans | 18px | 600 | 1.33 | Feature emphasis |
+| Body Bold | CoinbaseSans | 16px | 700 | 1.50 | Strong body |
+| Body Semibold | CoinbaseSans | 16px | 600 | 1.25 | Buttons, nav |
+| Body | CoinbaseText | 18px | 400 | 1.56 | Standard reading |
+| Body Small | CoinbaseText | 16px | 400 | 1.50 | Secondary reading |
+| Button | CoinbaseSans | 16px | 600 | 1.20 | +0.16px tracking |
+| Caption | CoinbaseSans | 14px | 600–700 | 1.50 | Metadata |
+| Small | CoinbaseSans | 13px | 600 | 1.23 | Tags |
+
+## 4. Component Stylings
+
+### Buttons
+
+**Primary Pill (56px radius)**
+- Background: `#eef0f3` or `#282b31`
+- Radius: 56px
+- Border: `1px solid` matching background
+- Hover: `#578bfa` (light blue)
+- Focus: `2px solid black` outline
+
+**Full Pill (100000px radius)**
+- Used for maximum pill shape
+
+**Blue Bordered**
+- Border: `1px solid #0052ff`
+- Background: transparent
+
+### Cards & Containers
+- Radius: 8px–40px range
+- Borders: `1px solid rgba(91,97,110,0.2)`
+
+## 5. Layout Principles
+
+### Spacing System
+- Base: 8px
+- Scale: 1px, 3px, 4px, 5px, 6px, 8px, 10px, 12px, 15px, 16px, 20px, 24px, 25px, 32px, 48px
+
+### Border Radius Scale
+- Small (4px–8px): Article links, small cards
+- Standard (12px–16px): Cards, menus
+- Large (24px–32px): Feature containers
+- XL (40px): Large buttons/containers
+- Pill (56px): Primary CTAs
+- Full (100000px): Maximum pill
+
+## 6. Depth & Elevation
+
+Minimal shadow system — depth from color contrast between dark/light sections.
+
+## 7. Do's and Don'ts
+
+### Do
+- Use Coinbase Blue (#0052ff) for primary interactive elements
+- Apply 56px radius for all CTA buttons
+- Use CoinbaseDisplay for hero headings only
+- Alternate dark (#0a0b0d) and white sections
+
+### Don't
+- Don't use the blue decoratively — it's functional only
+- Don't use sharp corners on CTAs — 56px minimum
+
+## 8. Responsive Behavior
+
+Breakpoints: 400px, 576px, 640px, 768px, 896px, 1280px, 1440px, 1600px
+
+## 9. Agent Prompt Guide
+
+### Quick Color Reference
+- Brand: Coinbase Blue (`#0052ff`)
+- Background: White (`#ffffff`)
+- Dark surface: `#0a0b0d`
+- Secondary surface: `#eef0f3`
+- Hover: `#578bfa`
+- Text: `#0a0b0d`
+
+### Example Component Prompts
+- "Create hero: white background. CoinbaseDisplay 80px, line-height 1.00. Pill CTA (#eef0f3, 56px radius). Hover: #578bfa."
+- "Build dark section: #0a0b0d background. CoinbaseDisplay 64px white text. Blue accent link (#0052ff)."

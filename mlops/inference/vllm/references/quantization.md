@@ -1,1 +1,284 @@
-IyBRdWFudGl6YXRpb24gR3VpZGUKCiMjIENvbnRlbnRzCi0gUXVhbnRpemF0aW9uIG1ldGhvZHMgY29tcGFyaXNvbgotIEFXUSBzZXR1cCBhbmQgdXNhZ2UKLSBHUFRRIHNldHVwIGFuZCB1c2FnZQotIEZQOCBxdWFudGl6YXRpb24gKEgxMDApCi0gTW9kZWwgcHJlcGFyYXRpb24KLSBBY2N1cmFjeSB2cyBjb21wcmVzc2lvbiB0cmFkZS1vZmZzCgojIyBRdWFudGl6YXRpb24gbWV0aG9kcyBjb21wYXJpc29uCgp8IE1ldGhvZCB8IENvbXByZXNzaW9uIHwgQWNjdXJhY3kgTG9zcyB8IFNwZWVkIHwgQmVzdCBGb3IgfAp8LS0tLS0tLS18LS0tLS0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tLS18LS0tLS0tLXwtLS0tLS0tLS0tfAp8ICoqQVdRKiogfCA0LWJpdCAoNzUlKSB8IDwxJSB8IEZhc3QgfCA3MEIgbW9kZWxzLCBwcm9kdWN0aW9uIHwKfCAqKkdQVFEqKiB8IDQtYml0ICg3NSUpIHwgMS0yJSB8IEZhc3QgfCBXaWRlIG1vZGVsIHN1cHBvcnQgfAp8ICoqRlA4KiogfCA4LWJpdCAoNTAlKSB8IDwwLjUlIHwgRmFzdGVzdCB8IEgxMDAgR1BVcyBvbmx5IHwKfCAqKlNxdWVlemVMTE0qKiB8IDMtNCBiaXQgKDc1LTgwJSkgfCAyLTMlIHwgTWVkaXVtIHwgRXh0cmVtZSBjb21wcmVzc2lvbiB8CgoqKlJlY29tbWVuZGF0aW9uKio6Ci0gKipQcm9kdWN0aW9uKio6IFVzZSBBV1EgZm9yIDcwQiBtb2RlbHMKLSAqKkgxMDAgR1BVcyoqOiBVc2UgRlA4IGZvciBiZXN0IHNwZWVkCi0gKipNYXhpbXVtIGNvbXBhdGliaWxpdHkqKjogVXNlIEdQVFEKLSAqKkV4dHJlbWUgY29tcHJlc3Npb24qKjogVXNlIFNxdWVlemVMTE0KCiMjIEFXUSBzZXR1cCBhbmQgdXNhZ2UKCioqQVdRKiogKEFjdGl2YXRpb24tYXdhcmUgV2VpZ2h0IFF1YW50aXphdGlvbikgYWNoaWV2ZXMgYmVzdCBhY2N1cmFjeSBhdCA0LWJpdC4KCioqU3RlcCAxOiBGaW5kIHByZS1xdWFudGl6ZWQgbW9kZWwqKgoKU2VhcmNoIEh1Z2dpbmdGYWNlIGZvciBBV1EgbW9kZWxzOgpgYGBiYXNoCiMgRXhhbXBsZTogVGhlQmxva2UvTGxhbWEtMi03MEItQVdRCiMgRXhhbXBsZTogVGhlQmxva2UvTWl4dHJhbC04eDdCLUluc3RydWN0LXYwLjEtQVdRCmBgYAoKKipTdGVwIDI6IExhdW5jaCB3aXRoIEFXUSoqCgpgYGBiYXNoCnZsbG0gc2VydmUgVGhlQmxva2UvTGxhbWEtMi03MEItQVdRIFwKICAtLXF1YW50aXphdGlvbiBhd3EgXAogIC0tdGVuc29yLXBhcmFsbGVsLXNpemUgMSBcCiAgLS1ncHUtbWVtb3J5LXV0aWxpemF0aW9uIDAuOTUKYGBgCgoqKk1lbW9yeSBzYXZpbmdzKio6CmBgYApMbGFtYSAyIDcwQiBmcDE2OiAxNDBHQiBWUkFNICg0eCBBMTAwIG5lZWRlZCkKTGxhbWEgMiA3MEIgQVdROiAzNUdCIFZSQU0gKDF4IEExMDAgNDBHQikKPSA0eCBtZW1vcnkgcmVkdWN0aW9uCmBgYAoKKipTdGVwIDM6IFZlcmlmeSBwZXJmb3JtYW5jZSoqCgpUZXN0IHRoYXQgb3V0cHV0cyBhcmUgYWNjZXB0YWJsZToKYGBgcHl0aG9uCmZyb20gb3BlbmFpIGltcG9ydCBPcGVuQUkKCmNsaWVudCA9IE9wZW5BSShiYXNlX3VybD0iaHR0cDovL2xvY2FsaG9zdDo4MDAwL3YxIiwgYXBpX2tleT0iRU1QVFkiKQoKIyBUZXN0IGNvbXBsZXggcmVhc29uaW5nCnJlc3BvbnNlID0gY2xpZW50LmNoYXQuY29tcGxldGlvbnMuY3JlYXRlKAogICAgbW9kZWw9IlRoZUJsb2tlL0xsYW1hLTItNzBCLUFXUSIsCiAgICBtZXNzYWdlcz1beyJyb2xlIjogInVzZXIiLCAiY29udGVudCI6ICJFeHBsYWluIHF1YW50dW0gZW50YW5nbGVtZW50In1dCikKCnByaW50KHJlc3BvbnNlLmNob2ljZXNbMF0ubWVzc2FnZS5jb250ZW50KQojIFZlcmlmeSBxdWFsaXR5IG1hdGNoZXMgeW91ciByZXF1aXJlbWVudHMKYGBgCgoqKlF1YW50aXplIHlvdXIgb3duIG1vZGVsKiogKHJlcXVpcmVzIEdQVSB3aXRoIDgwR0IrIFZSQU0pOgoKYGBgcHl0aG9uCmZyb20gYXdxIGltcG9ydCBBdXRvQVdRRm9yQ2F1c2FsTE0KZnJvbSB0cmFuc2Zvcm1lcnMgaW1wb3J0IEF1dG9Ub2tlbml6ZXIKCm1vZGVsX3BhdGggPSAibWV0YS1sbGFtYS9MbGFtYS0yLTcwYi1oZiIKcXVhbnRfcGF0aCA9ICJsbGFtYS0yLTcwYi1hd3EiCgojIExvYWQgbW9kZWwKbW9kZWwgPSBBdXRvQVdRRm9yQ2F1c2FsTE0uZnJvbV9wcmV0cmFpbmVkKG1vZGVsX3BhdGgpCnRva2VuaXplciA9IEF1dG9Ub2tlbml6ZXIuZnJvbV9wcmV0cmFpbmVkKG1vZGVsX3BhdGgpCgojIFF1YW50aXplCnF1YW50X2NvbmZpZyA9IHsiemVyb19wb2ludCI6IFRydWUsICJxX2dyb3VwX3NpemUiOiAxMjgsICJ3X2JpdCI6IDR9Cm1vZGVsLnF1YW50aXplKHRva2VuaXplciwgcXVhbnRfY29uZmlnPXF1YW50X2NvbmZpZykKCiMgU2F2ZQptb2RlbC5zYXZlX3F1YW50aXplZChxdWFudF9wYXRoKQp0b2tlbml6ZXIuc2F2ZV9wcmV0cmFpbmVkKHF1YW50X3BhdGgpCmBgYAoKIyMgR1BUUSBzZXR1cCBhbmQgdXNhZ2UKCioqR1BUUSoqIGhhcyB3aWRlc3QgbW9kZWwgc3VwcG9ydCBhbmQgZ29vZCBjb21wcmVzc2lvbi4KCioqU3RlcCAxOiBGaW5kIEdQVFEgbW9kZWwqKgoKYGBgYmFzaAojIEV4YW1wbGU6IFRoZUJsb2tlL0xsYW1hLTItMTNCLUdQVFEKIyBFeGFtcGxlOiBUaGVCbG9rZS9Db2RlTGxhbWEtMzRCLUdQVFEKYGBgCgoqKlN0ZXAgMjogTGF1bmNoIHdpdGggR1BUUSoqCgpgYGBiYXNoCnZsbG0gc2VydmUgVGhlQmxva2UvTGxhbWEtMi0xM0ItR1BUUSBcCiAgLS1xdWFudGl6YXRpb24gZ3B0cSBcCiAgLS1kdHlwZSBmbG9hdDE2CmBgYAoKKipHUFRRIGNvbmZpZ3VyYXRpb24gb3B0aW9ucyoqOgpgYGBiYXNoCiMgU3BlY2lmeSBHUFRRIHBhcmFtZXRlcnMgaWYgbmVlZGVkCnZsbG0gc2VydmUgTU9ERUwgXAogIC0tcXVhbnRpemF0aW9uIGdwdHEgXAogIC0tZ3B0cS1hY3Qtb3JkZXIgXCAgIyBBY3RpdmF0aW9uIG9yZGVyaW5nCiAgLS1kdHlwZSBmbG9hdDE2CmBgYAoKKipRdWFudGl6ZSB5b3VyIG93biBtb2RlbCoqOgoKYGBgcHl0aG9uCmZyb20gYXV0b19ncHRxIGltcG9ydCBBdXRvR1BUUUZvckNhdXNhbExNLCBCYXNlUXVhbnRpemVDb25maWcKZnJvbSB0cmFuc2Zvcm1lcnMgaW1wb3J0IEF1dG9Ub2tlbml6ZXIKCm1vZGVsX25hbWUgPSAibWV0YS1sbGFtYS9MbGFtYS0yLTEzYi1oZiIKcXVhbnRpemVkX25hbWUgPSAibGxhbWEtMi0xM2ItZ3B0cSIKCiMgTG9hZCBtb2RlbAp0b2tlbml6ZXIgPSBBdXRvVG9rZW5pemVyLmZyb21fcHJldHJhaW5lZChtb2RlbF9uYW1lKQptb2RlbCA9IEF1dG9HUFRRRm9yQ2F1c2FsTE0uZnJvbV9wcmV0cmFpbmVkKG1vZGVsX25hbWUsIHF1YW50aXplX2NvbmZpZykKCiMgUHJlcGFyZSBjYWxpYnJhdGlvbiBkYXRhCmNhbGliX2RhdGEgPSBbLi4uXSAgIyBMaXN0IG9mIHNhbXBsZSB0ZXh0cwoKIyBRdWFudGl6ZQpxdWFudGl6ZV9jb25maWcgPSBCYXNlUXVhbnRpemVDb25maWcoCiAgICBiaXRzPTQsCiAgICBncm91cF9zaXplPTEyOCwKICAgIGRlc2NfYWN0PVRydWUKKQptb2RlbC5xdWFudGl6ZShjYWxpYl9kYXRhKQoKIyBTYXZlCm1vZGVsLnNhdmVfcXVhbnRpemVkKHF1YW50aXplZF9uYW1lKQpgYGAKCiMjIEZQOCBxdWFudGl6YXRpb24gKEgxMDApCgoqKkZQOCoqICg4LWJpdCBmbG9hdGluZyBwb2ludCkgb2ZmZXJzIGJlc3Qgc3BlZWQgb24gSDEwMCBHUFVzIHdpdGggbWluaW1hbCBhY2N1cmFjeSBsb3NzLgoKKipSZXF1aXJlbWVudHMqKjoKLSBIMTAwIG9yIEg4MDAgR1BVCi0gQ1VEQSAxMi4zKyAoMTIuOCByZWNvbW1lbmRlZCkKLSBIb3BwZXIgYXJjaGl0ZWN0dXJlIHN1cHBvcnQKCioqU3RlcCAxOiBFbmFibGUgRlA4KioKCmBgYGJhc2gKdmxsbSBzZXJ2ZSBtZXRhLWxsYW1hL0xsYW1hLTMtNzBCLUluc3RydWN0IFwKICAtLXF1YW50aXphdGlvbiBmcDggXAogIC0tdGVuc29yLXBhcmFsbGVsLXNpemUgMgpgYGAKCioqUGVyZm9ybWFuY2UgZ2FpbnMgb24gSDEwMCoqOgpgYGAKZnAxNjogMTgwIHRva2Vucy9zZWMKRlA4OiAzMjAgdG9rZW5zL3NlYwo9IDEuOHggc3BlZWR1cApgYGAKCioqU3RlcCAyOiBWZXJpZnkgYWNjdXJhY3kqKgoKRlA4IHR5cGljYWxseSBoYXMgPDAuNSUgYWNjdXJhY3kgZGVncmFkYXRpb246CmBgYHB5dGhvbgojIFJ1biBldmFsdWF0aW9uIHN1aXRlCiMgQ29tcGFyZSBGUDggdnMgRlAxNiBvbiB5b3VyIHRhc2tzCiMgVmVyaWZ5IGFjY2VwdGFibGUgYWNjdXJhY3kKYGBgCgoqKkR5bmFtaWMgRlA4IHF1YW50aXphdGlvbioqIChubyBwcmUtcXVhbnRpemVkIG1vZGVsIG5lZWRlZCk6CgpgYGBiYXNoCiMgdkxMTSBhdXRvbWF0aWNhbGx5IHF1YW50aXplcyBhdCBydW50aW1lCnZsbG0gc2VydmUgTU9ERUwgLS1xdWFudGl6YXRpb24gZnA4CiMgTm8gbW9kZWwgcHJlcGFyYXRpb24gcmVxdWlyZWQKYGBgCgojIyBNb2RlbCBwcmVwYXJhdGlvbgoKKipQcmUtcXVhbnRpemVkIG1vZGVscyAoZWFzaWVzdCkqKjoKCjEuIFNlYXJjaCBIdWdnaW5nRmFjZTogYFttb2RlbCBuYW1lXSBBV1FgIG9yIGBbbW9kZWwgbmFtZV0gR1BUUWAKMi4gRG93bmxvYWQgb3IgdXNlIGRpcmVjdGx5OiBgVGhlQmxva2UvW01vZGVsXS1BV1FgCjMuIExhdW5jaCB3aXRoIGFwcHJvcHJpYXRlIGAtLXF1YW50aXphdGlvbmAgZmxhZwoKKipRdWFudGl6ZSB5b3VyIG93biBtb2RlbCoqOgoKKipBV1EqKjoKYGBgYmFzaAojIEluc3RhbGwgQXV0b0FXUQpwaXAgaW5zdGFsbCBhdXRvYXdxCgojIFJ1biBxdWFudGl6YXRpb24gc2NyaXB0CnB5dGhvbiBxdWFudGl6ZV9hd3EucHkgLS1tb2RlbCBNT0RFTCAtLW91dHB1dCBPVVRQVVQKYGBgCgoqKkdQVFEqKjoKYGBgYmFzaAojIEluc3RhbGwgQXV0b0dQVFEKcGlwIGluc3RhbGwgYXV0by1ncHRxCgojIFJ1biBxdWFudGl6YXRpb24gc2NyaXB0CnB5dGhvbiBxdWFudGl6ZV9ncHRxLnB5IC0tbW9kZWwgTU9ERUwgLS1vdXRwdXQgT1VUUFVUCmBgYAoKKipDYWxpYnJhdGlvbiBkYXRhKio6Ci0gVXNlIDEyOC01MTIgZGl2ZXJzZSBleGFtcGxlcyBmcm9tIHRhcmdldCBkb21haW4KLSBSZXByZXNlbnRhdGl2ZSBvZiBwcm9kdWN0aW9uIGlucHV0cwotIEhpZ2hlciBxdWFsaXR5IGNhbGlicmF0aW9uID0gYmV0dGVyIGFjY3VyYWN5CgojIyBBY2N1cmFjeSB2cyBjb21wcmVzc2lvbiB0cmFkZS1vZmZzCgoqKkVtcGlyaWNhbCByZXN1bHRzKiogKExsYW1hIDIgNzBCIG9uIE1NTFUgYmVuY2htYXJrKToKCnwgUXVhbnRpemF0aW9uIHwgQWNjdXJhY3kgfCBNZW1vcnkgfCBTcGVlZCB8IFByb2R1Y3Rpb24tUmVhZHkgfAp8LS0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLXwtLS0tLS0tLXwtLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS0tLXwKfCBGUDE2IChiYXNlbGluZSkgfCAxMDAlIHwgMTQwR0IgfCAxLjB4IHwg4pyFIChpZiBtZW1vcnkgYXZhaWxhYmxlKSB8CnwgRlA4IHwgOTkuNSUgfCA3MEdCIHwgMS44eCB8IOKchSAoSDEwMCBvbmx5KSB8CnwgQVdRIDQtYml0IHwgOTkuMCUgfCAzNUdCIHwgMS41eCB8IOKchSAoYmVzdCBmb3IgNzBCKSB8CnwgR1BUUSA0LWJpdCB8IDk4LjUlIHwgMzVHQiB8IDEuNXggfCDinIUgKGdvb2QgY29tcGF0aWJpbGl0eSkgfAp8IFNxdWVlemVMTE0gMy1iaXQgfCA5Ni4wJSB8IDI2R0IgfCAxLjN4IHwg4pqg77iPIChjaGVjayBhY2N1cmFjeSkgfAoKKipXaGVuIHRvIHVzZSBlYWNoKio6CgoqKk5vIHF1YW50aXphdGlvbiAoRlAxNikqKjoKLSBIYXZlIHN1ZmZpY2llbnQgR1BVIG1lbW9yeQotIE5lZWQgYWJzb2x1dGUgYmVzdCBhY2N1cmFjeQotIE1vZGVsIDwxM0IgcGFyYW1ldGVycwoKKipGUDgqKjoKLSBVc2luZyBIMTAwL0g4MDAgR1BVcwotIE5lZWQgYmVzdCBzcGVlZCB3aXRoIG1pbmltYWwgYWNjdXJhY3kgbG9zcwotIFByb2R1Y3Rpb24gZGVwbG95bWVudAoKKipBV1EgNC1iaXQqKjoKLSBOZWVkIHRvIGZpdCA3MEIgbW9kZWwgaW4gNDBHQiBHUFUKLSBQcm9kdWN0aW9uIGRlcGxveW1lbnQKLSA8MSUgYWNjdXJhY3kgbG9zcyBhY2NlcHRhYmxlCgoqKkdQVFEgNC1iaXQqKjoKLSBXaWRlIG1vZGVsIHN1cHBvcnQgbmVlZGVkCi0gTm90IG9uIEgxMDAgKHVzZSBGUDggaW5zdGVhZCkKLSAxLTIlIGFjY3VyYWN5IGxvc3MgYWNjZXB0YWJsZQoKKipUZXN0aW5nIHN0cmF0ZWd5Kio6CgoxLiAqKkJhc2VsaW5lKio6IE1lYXN1cmUgRlAxNiBhY2N1cmFjeSBvbiB5b3VyIGV2YWx1YXRpb24gc2V0CjIuICoqUXVhbnRpemUqKjogQ3JlYXRlIHF1YW50aXplZCB2ZXJzaW9uCjMuICoqRXZhbHVhdGUqKjogQ29tcGFyZSBxdWFudGl6ZWQgdnMgYmFzZWxpbmUgb24gc2FtZSB0YXNrcwo0LiAqKkRlY2lkZSoqOiBBY2NlcHQgaWYgZGVncmFkYXRpb24gPCB0aHJlc2hvbGQgKHR5cGljYWxseSAxLTIlKQoKKipFeGFtcGxlIGV2YWx1YXRpb24qKjoKYGBgcHl0aG9uCmZyb20gZXZhbHVhdGUgaW1wb3J0IGxvYWRfZXZhbHVhdGlvbl9zdWl0ZQoKIyBSdW4gb24gRlAxNiBiYXNlbGluZQpiYXNlbGluZV9zY29yZSA9IGV2YWx1YXRlKG1vZGVsX2ZwMTYsIGV2YWxfc3VpdGUpCgojIFJ1biBvbiBxdWFudGl6ZWQKcXVhbnRfc2NvcmUgPSBldmFsdWF0ZShtb2RlbF9hd3EsIGV2YWxfc3VpdGUpCgojIENvbXBhcmUKZGVncmFkYXRpb24gPSAoYmFzZWxpbmVfc2NvcmUgLSBxdWFudF9zY29yZSkgLyBiYXNlbGluZV9zY29yZSAqIDEwMApwcmludChmIkFjY3VyYWN5IGRlZ3JhZGF0aW9uOiB7ZGVncmFkYXRpb246LjJmfSUiKQoKIyBEZWNpc2lvbgppZiBkZWdyYWRhdGlvbiA8IDEuMDoKICAgIHByaW50KCLinIUgUXVhbnRpemF0aW9uIGFjY2VwdGFibGUgZm9yIHByb2R1Y3Rpb24iKQplbHNlOgogICAgcHJpbnQoIuKaoO+4jyBSZXZpZXcgYWNjdXJhY3kgbG9zcyIpCmBgYAo=
+# Quantization Guide
+
+## Contents
+- Quantization methods comparison
+- AWQ setup and usage
+- GPTQ setup and usage
+- FP8 quantization (H100)
+- Model preparation
+- Accuracy vs compression trade-offs
+
+## Quantization methods comparison
+
+| Method | Compression | Accuracy Loss | Speed | Best For |
+|--------|-------------|---------------|-------|----------|
+| **AWQ** | 4-bit (75%) | <1% | Fast | 70B models, production |
+| **GPTQ** | 4-bit (75%) | 1-2% | Fast | Wide model support |
+| **FP8** | 8-bit (50%) | <0.5% | Fastest | H100 GPUs only |
+| **SqueezeLLM** | 3-4 bit (75-80%) | 2-3% | Medium | Extreme compression |
+
+**Recommendation**:
+- **Production**: Use AWQ for 70B models
+- **H100 GPUs**: Use FP8 for best speed
+- **Maximum compatibility**: Use GPTQ
+- **Extreme compression**: Use SqueezeLLM
+
+## AWQ setup and usage
+
+**AWQ** (Activation-aware Weight Quantization) achieves best accuracy at 4-bit.
+
+**Step 1: Find pre-quantized model**
+
+Search HuggingFace for AWQ models:
+```bash
+# Example: TheBloke/Llama-2-70B-AWQ
+# Example: TheBloke/Mixtral-8x7B-Instruct-v0.1-AWQ
+```
+
+**Step 2: Launch with AWQ**
+
+```bash
+vllm serve TheBloke/Llama-2-70B-AWQ \
+  --quantization awq \
+  --tensor-parallel-size 1 \
+  --gpu-memory-utilization 0.95
+```
+
+**Memory savings**:
+```
+Llama 2 70B fp16: 140GB VRAM (4x A100 needed)
+Llama 2 70B AWQ: 35GB VRAM (1x A100 40GB)
+= 4x memory reduction
+```
+
+**Step 3: Verify performance**
+
+Test that outputs are acceptable:
+```python
+from openai import OpenAI
+
+client = OpenAI(base_url="http://localhost:8000/v1", api_key="EMPTY")
+
+# Test complex reasoning
+response = client.chat.completions.create(
+    model="TheBloke/Llama-2-70B-AWQ",
+    messages=[{"role": "user", "content": "Explain quantum entanglement"}]
+)
+
+print(response.choices[0].message.content)
+# Verify quality matches your requirements
+```
+
+**Quantize your own model** (requires GPU with 80GB+ VRAM):
+
+```python
+from awq import AutoAWQForCausalLM
+from transformers import AutoTokenizer
+
+model_path = "meta-llama/Llama-2-70b-hf"
+quant_path = "llama-2-70b-awq"
+
+# Load model
+model = AutoAWQForCausalLM.from_pretrained(model_path)
+tokenizer = AutoTokenizer.from_pretrained(model_path)
+
+# Quantize
+quant_config = {"zero_point": True, "q_group_size": 128, "w_bit": 4}
+model.quantize(tokenizer, quant_config=quant_config)
+
+# Save
+model.save_quantized(quant_path)
+tokenizer.save_pretrained(quant_path)
+```
+
+## GPTQ setup and usage
+
+**GPTQ** has widest model support and good compression.
+
+**Step 1: Find GPTQ model**
+
+```bash
+# Example: TheBloke/Llama-2-13B-GPTQ
+# Example: TheBloke/CodeLlama-34B-GPTQ
+```
+
+**Step 2: Launch with GPTQ**
+
+```bash
+vllm serve TheBloke/Llama-2-13B-GPTQ \
+  --quantization gptq \
+  --dtype float16
+```
+
+**GPTQ configuration options**:
+```bash
+# Specify GPTQ parameters if needed
+vllm serve MODEL \
+  --quantization gptq \
+  --gptq-act-order \  # Activation ordering
+  --dtype float16
+```
+
+**Quantize your own model**:
+
+```python
+from auto_gptq import AutoGPTQForCausalLM, BaseQuantizeConfig
+from transformers import AutoTokenizer
+
+model_name = "meta-llama/Llama-2-13b-hf"
+quantized_name = "llama-2-13b-gptq"
+
+# Load model
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoGPTQForCausalLM.from_pretrained(model_name, quantize_config)
+
+# Prepare calibration data
+calib_data = [...]  # List of sample texts
+
+# Quantize
+quantize_config = BaseQuantizeConfig(
+    bits=4,
+    group_size=128,
+    desc_act=True
+)
+model.quantize(calib_data)
+
+# Save
+model.save_quantized(quantized_name)
+```
+
+## FP8 quantization (H100)
+
+**FP8** (8-bit floating point) offers best speed on H100 GPUs with minimal accuracy loss.
+
+**Requirements**:
+- H100 or H800 GPU
+- CUDA 12.3+ (12.8 recommended)
+- Hopper architecture support
+
+**Step 1: Enable FP8**
+
+```bash
+vllm serve meta-llama/Llama-3-70B-Instruct \
+  --quantization fp8 \
+  --tensor-parallel-size 2
+```
+
+**Performance gains on H100**:
+```
+fp16: 180 tokens/sec
+FP8: 320 tokens/sec
+= 1.8x speedup
+```
+
+**Step 2: Verify accuracy**
+
+FP8 typically has <0.5% accuracy degradation:
+```python
+# Run evaluation suite
+# Compare FP8 vs FP16 on your tasks
+# Verify acceptable accuracy
+```
+
+**Dynamic FP8 quantization** (no pre-quantized model needed):
+
+```bash
+# vLLM automatically quantizes at runtime
+vllm serve MODEL --quantization fp8
+# No model preparation required
+```
+
+## Model preparation
+
+**Pre-quantized models (easiest)**:
+
+1. Search HuggingFace: `[model name] AWQ` or `[model name] GPTQ`
+2. Download or use directly: `TheBloke/[Model]-AWQ`
+3. Launch with appropriate `--quantization` flag
+
+**Quantize your own model**:
+
+**AWQ**:
+```bash
+# Install AutoAWQ
+pip install autoawq
+
+# Run quantization script
+python quantize_awq.py --model MODEL --output OUTPUT
+```
+
+**GPTQ**:
+```bash
+# Install AutoGPTQ
+pip install auto-gptq
+
+# Run quantization script
+python quantize_gptq.py --model MODEL --output OUTPUT
+```
+
+**Calibration data**:
+- Use 128-512 diverse examples from target domain
+- Representative of production inputs
+- Higher quality calibration = better accuracy
+
+## Accuracy vs compression trade-offs
+
+**Empirical results** (Llama 2 70B on MMLU benchmark):
+
+| Quantization | Accuracy | Memory | Speed | Production-Ready |
+|--------------|----------|--------|-------|------------------|
+| FP16 (baseline) | 100% | 140GB | 1.0x | ✅ (if memory available) |
+| FP8 | 99.5% | 70GB | 1.8x | ✅ (H100 only) |
+| AWQ 4-bit | 99.0% | 35GB | 1.5x | ✅ (best for 70B) |
+| GPTQ 4-bit | 98.5% | 35GB | 1.5x | ✅ (good compatibility) |
+| SqueezeLLM 3-bit | 96.0% | 26GB | 1.3x | ⚠️ (check accuracy) |
+
+**When to use each**:
+
+**No quantization (FP16)**:
+- Have sufficient GPU memory
+- Need absolute best accuracy
+- Model <13B parameters
+
+**FP8**:
+- Using H100/H800 GPUs
+- Need best speed with minimal accuracy loss
+- Production deployment
+
+**AWQ 4-bit**:
+- Need to fit 70B model in 40GB GPU
+- Production deployment
+- <1% accuracy loss acceptable
+
+**GPTQ 4-bit**:
+- Wide model support needed
+- Not on H100 (use FP8 instead)
+- 1-2% accuracy loss acceptable
+
+**Testing strategy**:
+
+1. **Baseline**: Measure FP16 accuracy on your evaluation set
+2. **Quantize**: Create quantized version
+3. **Evaluate**: Compare quantized vs baseline on same tasks
+4. **Decide**: Accept if degradation < threshold (typically 1-2%)
+
+**Example evaluation**:
+```python
+from evaluate import load_evaluation_suite
+
+# Run on FP16 baseline
+baseline_score = evaluate(model_fp16, eval_suite)
+
+# Run on quantized
+quant_score = evaluate(model_awq, eval_suite)
+
+# Compare
+degradation = (baseline_score - quant_score) / baseline_score * 100
+print(f"Accuracy degradation: {degradation:.2f}%")
+
+# Decision
+if degradation < 1.0:
+    print("✅ Quantization acceptable for production")
+else:
+    print("⚠️ Review accuracy loss")
+```

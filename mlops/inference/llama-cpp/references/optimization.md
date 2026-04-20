@@ -1,1 +1,89 @@
-IyBQZXJmb3JtYW5jZSBPcHRpbWl6YXRpb24gR3VpZGUKCk1heGltaXplIGxsYW1hLmNwcCBpbmZlcmVuY2Ugc3BlZWQgYW5kIGVmZmljaWVuY3kuCgojIyBDUFUgT3B0aW1pemF0aW9uCgojIyMgVGhyZWFkIHR1bmluZwpgYGBiYXNoCiMgU2V0IHRocmVhZHMgKGRlZmF1bHQ6IHBoeXNpY2FsIGNvcmVzKQouL2xsYW1hLWNsaSAtbSBtb2RlbC5nZ3VmIC10IDgKCiMgRm9yIEFNRCBSeXplbiA5IDc5NTBYICgxNiBjb3JlcywgMzIgdGhyZWFkcykKLXQgMTYgICMgQmVzdDogcGh5c2ljYWwgY29yZXMKCiMgQXZvaWQgaHlwZXJ0aHJlYWRpbmcgKHNsb3dlciBmb3IgbWF0cml4IG9wcykKYGBgCgojIyMgQkxBUyBhY2NlbGVyYXRpb24KYGBgYmFzaAojIE9wZW5CTEFTIChmYXN0ZXIgbWF0cml4IG9wcykKbWFrZSBMTEFNQV9PUEVOQkxBUz0xCgojIEJMQVMgZ2l2ZXMgMi0zw5cgc3BlZWR1cApgYGAKCiMjIEdQVSBPZmZsb2FkaW5nCgojIyMgTGF5ZXIgb2ZmbG9hZGluZwpgYGBiYXNoCiMgT2ZmbG9hZCAzNSBsYXllcnMgdG8gR1BVIChoeWJyaWQgbW9kZSkKLi9sbGFtYS1jbGkgLW0gbW9kZWwuZ2d1ZiAtbmdsIDM1CgojIE9mZmxvYWQgYWxsIGxheWVycwouL2xsYW1hLWNsaSAtbSBtb2RlbC5nZ3VmIC1uZ2wgOTk5CgojIEZpbmQgb3B0aW1hbCB2YWx1ZToKIyBTdGFydCB3aXRoIC1uZ2wgOTk5CiMgSWYgT09NLCByZWR1Y2UgYnkgNSB1bnRpbCBmaXRzCmBgYAoKIyMjIE1lbW9yeSB1c2FnZQpgYGBiYXNoCiMgQ2hlY2sgVlJBTSB1c2FnZQpudmlkaWEtc21pIGRtb24KCiMgUmVkdWNlIGNvbnRleHQgaWYgbmVlZGVkCi4vbGxhbWEtY2xpIC1tIG1vZGVsLmdndWYgLWMgMjA0OCAgIyAySyBjb250ZXh0IGluc3RlYWQgb2YgNEsKYGBgCgojIyBCYXRjaCBQcm9jZXNzaW5nCgpgYGBiYXNoCiMgSW5jcmVhc2UgYmF0Y2ggc2l6ZSBmb3IgdGhyb3VnaHB1dAouL2xsYW1hLWNsaSAtbSBtb2RlbC5nZ3VmIC1iIDUxMiAgIyBEZWZhdWx0OiA1MTIKCiMgUGh5c2ljYWwgYmF0Y2ggKEdQVSkKLS11YmF0Y2ggMTI4ICAjIFByb2Nlc3MgMTI4IHRva2VucyBhdCBvbmNlCmBgYAoKIyMgQ29udGV4dCBNYW5hZ2VtZW50CgpgYGBiYXNoCiMgRGVmYXVsdCBjb250ZXh0ICg1MTIgdG9rZW5zKQotYyA1MTIKCiMgTG9uZ2VyIGNvbnRleHQgKHNsb3dlciwgbW9yZSBtZW1vcnkpCi1jIDQwOTYKCiMgVmVyeSBsb25nIGNvbnRleHQgKGlmIG1vZGVsIHN1cHBvcnRzKQotYyAzMjc2OApgYGAKCiMjIEJlbmNobWFya3MKCiMjIyBDUFUgUGVyZm9ybWFuY2UgKExsYW1hIDItN0IgUTRfS19NKQoKfCBTZXR1cCB8IFNwZWVkIHwgTm90ZXMgfAp8LS0tLS0tLXwtLS0tLS0tfC0tLS0tLS18CnwgQXBwbGUgTTMgTWF4IHwgNTAgdG9rL3MgfCBNZXRhbCBhY2NlbGVyYXRpb24gfAp8IEFNRCA3OTUwWCAoMTZjKSB8IDM1IHRvay9zIHwgT3BlbkJMQVMgfAp8IEludGVsIGk5LTEzOTAwSyB8IDMwIHRvay9zIHwgQVZYMiB8CgojIyMgR1BVIE9mZmxvYWRpbmcgKFJUWCA0MDkwKQoKfCBMYXllcnMgR1BVIHwgU3BlZWQgfCBWUkFNIHwKfC0tLS0tLS0tLS0tLXwtLS0tLS0tfC0tLS0tLXwKfCAwIChDUFUgb25seSkgfCAzMCB0b2svcyB8IDAgR0IgfAp8IDIwIChoeWJyaWQpIHwgODAgdG9rL3MgfCA4IEdCIHwKfCAzNSAoYWxsKSB8IDEyMCB0b2svcyB8IDEyIEdCIHwK
+# Performance Optimization Guide
+
+Maximize llama.cpp inference speed and efficiency.
+
+## CPU Optimization
+
+### Thread tuning
+```bash
+# Set threads (default: physical cores)
+./llama-cli -m model.gguf -t 8
+
+# For AMD Ryzen 9 7950X (16 cores, 32 threads)
+-t 16  # Best: physical cores
+
+# Avoid hyperthreading (slower for matrix ops)
+```
+
+### BLAS acceleration
+```bash
+# OpenBLAS (faster matrix ops)
+make LLAMA_OPENBLAS=1
+
+# BLAS gives 2-3× speedup
+```
+
+## GPU Offloading
+
+### Layer offloading
+```bash
+# Offload 35 layers to GPU (hybrid mode)
+./llama-cli -m model.gguf -ngl 35
+
+# Offload all layers
+./llama-cli -m model.gguf -ngl 999
+
+# Find optimal value:
+# Start with -ngl 999
+# If OOM, reduce by 5 until fits
+```
+
+### Memory usage
+```bash
+# Check VRAM usage
+nvidia-smi dmon
+
+# Reduce context if needed
+./llama-cli -m model.gguf -c 2048  # 2K context instead of 4K
+```
+
+## Batch Processing
+
+```bash
+# Increase batch size for throughput
+./llama-cli -m model.gguf -b 512  # Default: 512
+
+# Physical batch (GPU)
+--ubatch 128  # Process 128 tokens at once
+```
+
+## Context Management
+
+```bash
+# Default context (512 tokens)
+-c 512
+
+# Longer context (slower, more memory)
+-c 4096
+
+# Very long context (if model supports)
+-c 32768
+```
+
+## Benchmarks
+
+### CPU Performance (Llama 2-7B Q4_K_M)
+
+| Setup | Speed | Notes |
+|-------|-------|-------|
+| Apple M3 Max | 50 tok/s | Metal acceleration |
+| AMD 7950X (16c) | 35 tok/s | OpenBLAS |
+| Intel i9-13900K | 30 tok/s | AVX2 |
+
+### GPU Offloading (RTX 4090)
+
+| Layers GPU | Speed | VRAM |
+|------------|-------|------|
+| 0 (CPU only) | 30 tok/s | 0 GB |
+| 20 (hybrid) | 80 tok/s | 8 GB |
+| 35 (all) | 120 tok/s | 12 GB |

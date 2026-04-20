@@ -1,1 +1,342 @@
-LS0tCm5hbWU6IHRlc3QtZHJpdmVuLWRldmVsb3BtZW50CmRlc2NyaXB0aW9uOiBVc2Ugd2hlbiBpbXBsZW1lbnRpbmcgYW55IGZlYXR1cmUgb3IgYnVnZml4LCBiZWZvcmUgd3JpdGluZyBpbXBsZW1lbnRhdGlvbiBjb2RlLiBFbmZvcmNlcyBSRUQtR1JFRU4tUkVGQUNUT1IgY3ljbGUgd2l0aCB0ZXN0LWZpcnN0IGFwcHJvYWNoLgp2ZXJzaW9uOiAxLjEuMAphdXRob3I6IEhlcm1lcyBBZ2VudCAoYWRhcHRlZCBmcm9tIG9icmEvc3VwZXJwb3dlcnMpCmxpY2Vuc2U6IE1JVAptZXRhZGF0YToKICBoZXJtZXM6CiAgICB0YWdzOiBbdGVzdGluZywgdGRkLCBkZXZlbG9wbWVudCwgcXVhbGl0eSwgcmVkLWdyZWVuLXJlZmFjdG9yXQogICAgcmVsYXRlZF9za2lsbHM6IFtzeXN0ZW1hdGljLWRlYnVnZ2luZywgd3JpdGluZy1wbGFucywgc3ViYWdlbnQtZHJpdmVuLWRldmVsb3BtZW50XQotLS0KCiMgVGVzdC1Ecml2ZW4gRGV2ZWxvcG1lbnQgKFRERCkKCiMjIE92ZXJ2aWV3CgpXcml0ZSB0aGUgdGVzdCBmaXJzdC4gV2F0Y2ggaXQgZmFpbC4gV3JpdGUgbWluaW1hbCBjb2RlIHRvIHBhc3MuCgoqKkNvcmUgcHJpbmNpcGxlOioqIElmIHlvdSBkaWRuJ3Qgd2F0Y2ggdGhlIHRlc3QgZmFpbCwgeW91IGRvbid0IGtub3cgaWYgaXQgdGVzdHMgdGhlIHJpZ2h0IHRoaW5nLgoKKipWaW9sYXRpbmcgdGhlIGxldHRlciBvZiB0aGUgcnVsZXMgaXMgdmlvbGF0aW5nIHRoZSBzcGlyaXQgb2YgdGhlIHJ1bGVzLioqCgojIyBXaGVuIHRvIFVzZQoKKipBbHdheXM6KioKLSBOZXcgZmVhdHVyZXMKLSBCdWcgZml4ZXMKLSBSZWZhY3RvcmluZwotIEJlaGF2aW9yIGNoYW5nZXMKCioqRXhjZXB0aW9ucyAoYXNrIHRoZSB1c2VyIGZpcnN0KToqKgotIFRocm93YXdheSBwcm90b3R5cGVzCi0gR2VuZXJhdGVkIGNvZGUKLSBDb25maWd1cmF0aW9uIGZpbGVzCgpUaGlua2luZyAic2tpcCBUREQganVzdCB0aGlzIG9uY2UiPyBTdG9wLiBUaGF0J3MgcmF0aW9uYWxpemF0aW9uLgoKIyMgVGhlIElyb24gTGF3CgpgYGAKTk8gUFJPRFVDVElPTiBDT0RFIFdJVEhPVVQgQSBGQUlMSU5HIFRFU1QgRklSU1QKYGBgCgpXcml0ZSBjb2RlIGJlZm9yZSB0aGUgdGVzdD8gRGVsZXRlIGl0LiBTdGFydCBvdmVyLgoKKipObyBleGNlcHRpb25zOioqCi0gRG9uJ3Qga2VlcCBpdCBhcyAicmVmZXJlbmNlIgotIERvbid0ICJhZGFwdCIgaXQgd2hpbGUgd3JpdGluZyB0ZXN0cwotIERvbid0IGxvb2sgYXQgaXQKLSBEZWxldGUgbWVhbnMgZGVsZXRlCgpJbXBsZW1lbnQgZnJlc2ggZnJvbSB0ZXN0cy4gUGVyaW9kLgoKIyMgUmVkLUdyZWVuLVJlZmFjdG9yIEN5Y2xlCgojIyMgUkVEIOKAlCBXcml0ZSBGYWlsaW5nIFRlc3QKCldyaXRlIG9uZSBtaW5pbWFsIHRlc3Qgc2hvd2luZyB3aGF0IHNob3VsZCBoYXBwZW4uCgoqKkdvb2QgdGVzdDoqKgpgYGBweXRob24KZGVmIHRlc3RfcmV0cmllc19mYWlsZWRfb3BlcmF0aW9uc18zX3RpbWVzKCk6CiAgICBhdHRlbXB0cyA9IDAKICAgIGRlZiBvcGVyYXRpb24oKToKICAgICAgICBub25sb2NhbCBhdHRlbXB0cwogICAgICAgIGF0dGVtcHRzICs9IDEKICAgICAgICBpZiBhdHRlbXB0cyA8IDM6CiAgICAgICAgICAgIHJhaXNlIEV4Y2VwdGlvbignZmFpbCcpCiAgICAgICAgcmV0dXJuICdzdWNjZXNzJwoKICAgIHJlc3VsdCA9IHJldHJ5X29wZXJhdGlvbihvcGVyYXRpb24pCgogICAgYXNzZXJ0IHJlc3VsdCA9PSAnc3VjY2VzcycKICAgIGFzc2VydCBhdHRlbXB0cyA9PSAzCmBgYApDbGVhciBuYW1lLCB0ZXN0cyByZWFsIGJlaGF2aW9yLCBvbmUgdGhpbmcuCgoqKkJhZCB0ZXN0OioqCmBgYHB5dGhvbgpkZWYgdGVzdF9yZXRyeV93b3JrcygpOgogICAgbW9jayA9IE1hZ2ljTW9jaygpCiAgICBtb2NrLnNpZGVfZWZmZWN0ID0gW0V4Y2VwdGlvbigpLCBFeGNlcHRpb24oKSwgJ3N1Y2Nlc3MnXQogICAgcmVzdWx0ID0gcmV0cnlfb3BlcmF0aW9uKG1vY2spCiAgICBhc3NlcnQgcmVzdWx0ID09ICdzdWNjZXNzJyAgIyBXaGF0IGFib3V0IHJldHJ5IGNvdW50PyBUaW1pbmc/CmBgYApWYWd1ZSBuYW1lLCB0ZXN0cyBtb2NrIG5vdCByZWFsIGNvZGUuCgoqKlJlcXVpcmVtZW50czoqKgotIE9uZSBiZWhhdmlvciBwZXIgdGVzdAotIENsZWFyIGRlc2NyaXB0aXZlIG5hbWUgKCJhbmQiIGluIG5hbWU/IFNwbGl0IGl0KQotIFJlYWwgY29kZSwgbm90IG1vY2tzICh1bmxlc3MgdHJ1bHkgdW5hdm9pZGFibGUpCi0gTmFtZSBkZXNjcmliZXMgYmVoYXZpb3IsIG5vdCBpbXBsZW1lbnRhdGlvbgoKIyMjIFZlcmlmeSBSRUQg4oCUIFdhdGNoIEl0IEZhaWwKCioqTUFOREFUT1JZLiBOZXZlciBza2lwLioqCgpgYGBiYXNoCiMgVXNlIHRlcm1pbmFsIHRvb2wgdG8gcnVuIHRoZSBzcGVjaWZpYyB0ZXN0CnB5dGVzdCB0ZXN0cy90ZXN0X2ZlYXR1cmUucHk6OnRlc3Rfc3BlY2lmaWNfYmVoYXZpb3IgLXYKYGBgCgpDb25maXJtOgotIFRlc3QgZmFpbHMgKG5vdCBlcnJvcnMgZnJvbSB0eXBvcykKLSBGYWlsdXJlIG1lc3NhZ2UgaXMgZXhwZWN0ZWQKLSBGYWlscyBiZWNhdXNlIHRoZSBmZWF0dXJlIGlzIG1pc3NpbmcKCioqVGVzdCBwYXNzZXMgaW1tZWRpYXRlbHk/KiogWW91J3JlIHRlc3RpbmcgZXhpc3RpbmcgYmVoYXZpb3IuIEZpeCB0aGUgdGVzdC4KCioqVGVzdCBlcnJvcnM/KiogRml4IHRoZSBlcnJvciwgcmUtcnVuIHVudGlsIGl0IGZhaWxzIGNvcnJlY3RseS4KCiMjIyBHUkVFTiDigJQgTWluaW1hbCBDb2RlCgpXcml0ZSB0aGUgc2ltcGxlc3QgY29kZSB0byBwYXNzIHRoZSB0ZXN0LiBOb3RoaW5nIG1vcmUuCgoqKkdvb2Q6KioKYGBgcHl0aG9uCmRlZiBhZGQoYSwgYik6CiAgICByZXR1cm4gYSArIGIgICMgTm90aGluZyBleHRyYQpgYGAKCioqQmFkOioqCmBgYHB5dGhvbgpkZWYgYWRkKGEsIGIpOgogICAgcmVzdWx0ID0gYSArIGIKICAgIGxvZ2dpbmcuaW5mbyhmIkFkZGluZyB7YX0gKyB7Yn0gPSB7cmVzdWx0fSIpICAjIEV4dHJhIQogICAgcmV0dXJuIHJlc3VsdApgYGAKCkRvbid0IGFkZCBmZWF0dXJlcywgcmVmYWN0b3Igb3RoZXIgY29kZSwgb3IgImltcHJvdmUiIGJleW9uZCB0aGUgdGVzdC4KCioqQ2hlYXRpbmcgaXMgT0sgaW4gR1JFRU46KioKLSBIYXJkY29kZSByZXR1cm4gdmFsdWVzCi0gQ29weS1wYXN0ZQotIER1cGxpY2F0ZSBjb2RlCi0gU2tpcCBlZGdlIGNhc2VzCgpXZSdsbCBmaXggaXQgaW4gUkVGQUNUT1IuCgojIyMgVmVyaWZ5IEdSRUVOIOKAlCBXYXRjaCBJdCBQYXNzCgoqKk1BTkRBVE9SWS4qKgoKYGBgYmFzaAojIFJ1biB0aGUgc3BlY2lmaWMgdGVzdApweXRlc3QgdGVzdHMvdGVzdF9mZWF0dXJlLnB5Ojp0ZXN0X3NwZWNpZmljX2JlaGF2aW9yIC12CgojIFRoZW4gcnVuIEFMTCB0ZXN0cyB0byBjaGVjayBmb3IgcmVncmVzc2lvbnMKcHl0ZXN0IHRlc3RzLyAtcQpgYGAKCkNvbmZpcm06Ci0gVGVzdCBwYXNzZXMKLSBPdGhlciB0ZXN0cyBzdGlsbCBwYXNzCi0gT3V0cHV0IHByaXN0aW5lIChubyBlcnJvcnMsIHdhcm5pbmdzKQoKKipUZXN0IGZhaWxzPyoqIEZpeCB0aGUgY29kZSwgbm90IHRoZSB0ZXN0LgoKKipPdGhlciB0ZXN0cyBmYWlsPyoqIEZpeCByZWdyZXNzaW9ucyBub3cuCgojIyMgUkVGQUNUT1Ig4oCUIENsZWFuIFVwCgpBZnRlciBncmVlbiBvbmx5OgotIFJlbW92ZSBkdXBsaWNhdGlvbgotIEltcHJvdmUgbmFtZXMKLSBFeHRyYWN0IGhlbHBlcnMKLSBTaW1wbGlmeSBleHByZXNzaW9ucwoKS2VlcCB0ZXN0cyBncmVlbiB0aHJvdWdob3V0LiBEb24ndCBhZGQgYmVoYXZpb3IuCgoqKklmIHRlc3RzIGZhaWwgZHVyaW5nIHJlZmFjdG9yOioqIFVuZG8gaW1tZWRpYXRlbHkuIFRha2Ugc21hbGxlciBzdGVwcy4KCiMjIyBSZXBlYXQKCk5leHQgZmFpbGluZyB0ZXN0IGZvciBuZXh0IGJlaGF2aW9yLiBPbmUgY3ljbGUgYXQgYSB0aW1lLgoKIyMgV2h5IE9yZGVyIE1hdHRlcnMKCioqIkknbGwgd3JpdGUgdGVzdHMgYWZ0ZXIgdG8gdmVyaWZ5IGl0IHdvcmtzIioqCgpUZXN0cyB3cml0dGVuIGFmdGVyIGNvZGUgcGFzcyBpbW1lZGlhdGVseS4gUGFzc2luZyBpbW1lZGlhdGVseSBwcm92ZXMgbm90aGluZzoKLSBNaWdodCB0ZXN0IHRoZSB3cm9uZyB0aGluZwotIE1pZ2h0IHRlc3QgaW1wbGVtZW50YXRpb24sIG5vdCBiZWhhdmlvcgotIE1pZ2h0IG1pc3MgZWRnZSBjYXNlcyB5b3UgZm9yZ290Ci0gWW91IG5ldmVyIHNhdyBpdCBjYXRjaCB0aGUgYnVnCgpUZXN0LWZpcnN0IGZvcmNlcyB5b3UgdG8gc2VlIHRoZSB0ZXN0IGZhaWwsIHByb3ZpbmcgaXQgYWN0dWFsbHkgdGVzdHMgc29tZXRoaW5nLgoKKioiSSBhbHJlYWR5IG1hbnVhbGx5IHRlc3RlZCBhbGwgdGhlIGVkZ2UgY2FzZXMiKioKCk1hbnVhbCB0ZXN0aW5nIGlzIGFkLWhvYy4gWW91IHRoaW5rIHlvdSB0ZXN0ZWQgZXZlcnl0aGluZyBidXQ6Ci0gTm8gcmVjb3JkIG9mIHdoYXQgeW91IHRlc3RlZAotIENhbid0IHJlLXJ1biB3aGVuIGNvZGUgY2hhbmdlcwotIEVhc3kgdG8gZm9yZ2V0IGNhc2VzIHVuZGVyIHByZXNzdXJlCi0gIkl0IHdvcmtlZCB3aGVuIEkgdHJpZWQgaXQiIOKJoCBjb21wcmVoZW5zaXZlCgpBdXRvbWF0ZWQgdGVzdHMgYXJlIHN5c3RlbWF0aWMuIFRoZXkgcnVuIHRoZSBzYW1lIHdheSBldmVyeSB0aW1lLgoKKioiRGVsZXRpbmcgWCBob3VycyBvZiB3b3JrIGlzIHdhc3RlZnVsIioqCgpTdW5rIGNvc3QgZmFsbGFjeS4gVGhlIHRpbWUgaXMgYWxyZWFkeSBnb25lLiBZb3VyIGNob2ljZSBub3c6Ci0gRGVsZXRlIGFuZCByZXdyaXRlIHdpdGggVEREIChoaWdoIGNvbmZpZGVuY2UpCi0gS2VlcCBpdCBhbmQgYWRkIHRlc3RzIGFmdGVyIChsb3cgY29uZmlkZW5jZSwgbGlrZWx5IGJ1Z3MpCgpUaGUgIndhc3RlIiBpcyBrZWVwaW5nIGNvZGUgeW91IGNhbid0IHRydXN0LgoKKioiVEREIGlzIGRvZ21hdGljLCBiZWluZyBwcmFnbWF0aWMgbWVhbnMgYWRhcHRpbmciKioKClRERCBJUyBwcmFnbWF0aWM6Ci0gRmluZHMgYnVncyBiZWZvcmUgY29tbWl0IChmYXN0ZXIgdGhhbiBkZWJ1Z2dpbmcgYWZ0ZXIpCi0gUHJldmVudHMgcmVncmVzc2lvbnMgKHRlc3RzIGNhdGNoIGJyZWFrcyBpbW1lZGlhdGVseSkKLSBEb2N1bWVudHMgYmVoYXZpb3IgKHRlc3RzIHNob3cgaG93IHRvIHVzZSBjb2RlKQotIEVuYWJsZXMgcmVmYWN0b3JpbmcgKGNoYW5nZSBmcmVlbHksIHRlc3RzIGNhdGNoIGJyZWFrcykKCiJQcmFnbWF0aWMiIHNob3J0Y3V0cyA9IGRlYnVnZ2luZyBpbiBwcm9kdWN0aW9uID0gc2xvd2VyLgoKKioiVGVzdHMgYWZ0ZXIgYWNoaWV2ZSB0aGUgc2FtZSBnb2FscyDigJQgaXQncyBzcGlyaXQgbm90IHJpdHVhbCIqKgoKTm8uIFRlc3RzLWFmdGVyIGFuc3dlciAiV2hhdCBkb2VzIHRoaXMgZG8/IiBUZXN0cy1maXJzdCBhbnN3ZXIgIldoYXQgc2hvdWxkIHRoaXMgZG8/IgoKVGVzdHMtYWZ0ZXIgYXJlIGJpYXNlZCBieSB5b3VyIGltcGxlbWVudGF0aW9uLiBZb3UgdGVzdCB3aGF0IHlvdSBidWlsdCwgbm90IHdoYXQncyByZXF1aXJlZC4gVGVzdHMtZmlyc3QgZm9yY2UgZWRnZSBjYXNlIGRpc2NvdmVyeSBiZWZvcmUgaW1wbGVtZW50aW5nLgoKIyMgQ29tbW9uIFJhdGlvbmFsaXphdGlvbnMKCnwgRXhjdXNlIHwgUmVhbGl0eSB8CnwtLS0tLS0tLXwtLS0tLS0tLS18CnwgIlRvbyBzaW1wbGUgdG8gdGVzdCIgfCBTaW1wbGUgY29kZSBicmVha3MuIFRlc3QgdGFrZXMgMzAgc2Vjb25kcy4gfAp8ICJJJ2xsIHRlc3QgYWZ0ZXIiIHwgVGVzdHMgcGFzc2luZyBpbW1lZGlhdGVseSBwcm92ZSBub3RoaW5nLiB8CnwgIlRlc3RzIGFmdGVyIGFjaGlldmUgc2FtZSBnb2FscyIgfCBUZXN0cy1hZnRlciA9ICJ3aGF0IGRvZXMgdGhpcyBkbz8iIFRlc3RzLWZpcnN0ID0gIndoYXQgc2hvdWxkIHRoaXMgZG8/IiB8CnwgIkFscmVhZHkgbWFudWFsbHkgdGVzdGVkIiB8IEFkLWhvYyDiiaAgc3lzdGVtYXRpYy4gTm8gcmVjb3JkLCBjYW4ndCByZS1ydW4uIHwKfCAiRGVsZXRpbmcgWCBob3VycyBpcyB3YXN0ZWZ1bCIgfCBTdW5rIGNvc3QgZmFsbGFjeS4gS2VlcGluZyB1bnZlcmlmaWVkIGNvZGUgaXMgdGVjaG5pY2FsIGRlYnQuIHwKfCAiS2VlcCBhcyByZWZlcmVuY2UsIHdyaXRlIHRlc3RzIGZpcnN0IiB8IFlvdSdsbCBhZGFwdCBpdC4gVGhhdCdzIHRlc3RpbmcgYWZ0ZXIuIERlbGV0ZSBtZWFucyBkZWxldGUuIHwKfCAiTmVlZCB0byBleHBsb3JlIGZpcnN0IiB8IEZpbmUuIFRocm93IGF3YXkgZXhwbG9yYXRpb24sIHN0YXJ0IHdpdGggVERELiB8CnwgIlRlc3QgaGFyZCA9IGRlc2lnbiB1bmNsZWFyIiB8IExpc3RlbiB0byB0aGUgdGVzdC4gSGFyZCB0byB0ZXN0ID0gaGFyZCB0byB1c2UuIHwKfCAiVEREIHdpbGwgc2xvdyBtZSBkb3duIiB8IFRERCBmYXN0ZXIgdGhhbiBkZWJ1Z2dpbmcuIFByYWdtYXRpYyA9IHRlc3QtZmlyc3QuIHwKfCAiTWFudWFsIHRlc3QgZmFzdGVyIiB8IE1hbnVhbCBkb2Vzbid0IHByb3ZlIGVkZ2UgY2FzZXMuIFlvdSdsbCByZS10ZXN0IGV2ZXJ5IGNoYW5nZS4gfAp8ICJFeGlzdGluZyBjb2RlIGhhcyBubyB0ZXN0cyIgfCBZb3UncmUgaW1wcm92aW5nIGl0LiBBZGQgdGVzdHMgZm9yIHRoZSBjb2RlIHlvdSB0b3VjaC4gfAoKIyMgUmVkIEZsYWdzIOKAlCBTVE9QIGFuZCBTdGFydCBPdmVyCgpJZiB5b3UgY2F0Y2ggeW91cnNlbGYgZG9pbmcgYW55IG9mIHRoZXNlLCBkZWxldGUgdGhlIGNvZGUgYW5kIHJlc3RhcnQgd2l0aCBUREQ6CgotIENvZGUgYmVmb3JlIHRlc3QKLSBUZXN0IGFmdGVyIGltcGxlbWVudGF0aW9uCi0gVGVzdCBwYXNzZXMgaW1tZWRpYXRlbHkgb24gZmlyc3QgcnVuCi0gQ2FuJ3QgZXhwbGFpbiB3aHkgdGVzdCBmYWlsZWQKLSBUZXN0cyBhZGRlZCAibGF0ZXIiCi0gUmF0aW9uYWxpemluZyAianVzdCB0aGlzIG9uY2UiCi0gIkkgYWxyZWFkeSBtYW51YWxseSB0ZXN0ZWQgaXQiCi0gIlRlc3RzIGFmdGVyIGFjaGlldmUgdGhlIHNhbWUgcHVycG9zZSIKLSAiS2VlcCBhcyByZWZlcmVuY2UiIG9yICJhZGFwdCBleGlzdGluZyBjb2RlIgotICJBbHJlYWR5IHNwZW50IFggaG91cnMsIGRlbGV0aW5nIGlzIHdhc3RlZnVsIgotICJUREQgaXMgZG9nbWF0aWMsIEknbSBiZWluZyBwcmFnbWF0aWMiCi0gIlRoaXMgaXMgZGlmZmVyZW50IGJlY2F1c2UuLi4iCgoqKkFsbCBvZiB0aGVzZSBtZWFuOiBEZWxldGUgY29kZS4gU3RhcnQgb3ZlciB3aXRoIFRERC4qKgoKIyMgVmVyaWZpY2F0aW9uIENoZWNrbGlzdAoKQmVmb3JlIG1hcmtpbmcgd29yayBjb21wbGV0ZToKCi0gWyBdIEV2ZXJ5IG5ldyBmdW5jdGlvbi9tZXRob2QgaGFzIGEgdGVzdAotIFsgXSBXYXRjaGVkIGVhY2ggdGVzdCBmYWlsIGJlZm9yZSBpbXBsZW1lbnRpbmcKLSBbIF0gRWFjaCB0ZXN0IGZhaWxlZCBmb3IgZXhwZWN0ZWQgcmVhc29uIChmZWF0dXJlIG1pc3NpbmcsIG5vdCB0eXBvKQotIFsgXSBXcm90ZSBtaW5pbWFsIGNvZGUgdG8gcGFzcyBlYWNoIHRlc3QKLSBbIF0gQWxsIHRlc3RzIHBhc3MKLSBbIF0gT3V0cHV0IHByaXN0aW5lIChubyBlcnJvcnMsIHdhcm5pbmdzKQotIFsgXSBUZXN0cyB1c2UgcmVhbCBjb2RlIChtb2NrcyBvbmx5IGlmIHVuYXZvaWRhYmxlKQotIFsgXSBFZGdlIGNhc2VzIGFuZCBlcnJvcnMgY292ZXJlZAoKQ2FuJ3QgY2hlY2sgYWxsIGJveGVzPyBZb3Ugc2tpcHBlZCBUREQuIFN0YXJ0IG92ZXIuCgojIyBXaGVuIFN0dWNrCgp8IFByb2JsZW0gfCBTb2x1dGlvbiB8CnwtLS0tLS0tLS18LS0tLS0tLS0tLXwKfCBEb24ndCBrbm93IGhvdyB0byB0ZXN0IHwgV3JpdGUgdGhlIHdpc2hlZC1mb3IgQVBJLiBXcml0ZSB0aGUgYXNzZXJ0aW9uIGZpcnN0LiBBc2sgdGhlIHVzZXIuIHwKfCBUZXN0IHRvbyBjb21wbGljYXRlZCB8IERlc2lnbiB0b28gY29tcGxpY2F0ZWQuIFNpbXBsaWZ5IHRoZSBpbnRlcmZhY2UuIHwKfCBNdXN0IG1vY2sgZXZlcnl0aGluZyB8IENvZGUgdG9vIGNvdXBsZWQuIFVzZSBkZXBlbmRlbmN5IGluamVjdGlvbi4gfAp8IFRlc3Qgc2V0dXAgaHVnZSB8IEV4dHJhY3QgaGVscGVycy4gU3RpbGwgY29tcGxleD8gU2ltcGxpZnkgdGhlIGRlc2lnbi4gfAoKIyMgSGVybWVzIEFnZW50IEludGVncmF0aW9uCgojIyMgUnVubmluZyBUZXN0cwoKVXNlIHRoZSBgdGVybWluYWxgIHRvb2wgdG8gcnVuIHRlc3RzIGF0IGVhY2ggc3RlcDoKCmBgYHB5dGhvbgojIFJFRCDigJQgdmVyaWZ5IGZhaWx1cmUKdGVybWluYWwoInB5dGVzdCB0ZXN0cy90ZXN0X2ZlYXR1cmUucHk6OnRlc3RfbmFtZSAtdiIpCgojIEdSRUVOIOKAlCB2ZXJpZnkgcGFzcwp0ZXJtaW5hbCgicHl0ZXN0IHRlc3RzL3Rlc3RfZmVhdHVyZS5weTo6dGVzdF9uYW1lIC12IikKCiMgRnVsbCBzdWl0ZSDigJQgdmVyaWZ5IG5vIHJlZ3Jlc3Npb25zCnRlcm1pbmFsKCJweXRlc3QgdGVzdHMvIC1xIikKYGBgCgojIyMgV2l0aCBkZWxlZ2F0ZV90YXNrCgpXaGVuIGRpc3BhdGNoaW5nIHN1YmFnZW50cyBmb3IgaW1wbGVtZW50YXRpb24sIGVuZm9yY2UgVEREIGluIHRoZSBnb2FsOgoKYGBgcHl0aG9uCmRlbGVnYXRlX3Rhc2soCiAgICBnb2FsPSJJbXBsZW1lbnQgW2ZlYXR1cmVdIHVzaW5nIHN0cmljdCBUREQiLAogICAgY29udGV4dD0iIiIKICAgIEZvbGxvdyB0ZXN0LWRyaXZlbi1kZXZlbG9wbWVudCBza2lsbDoKICAgIDEuIFdyaXRlIGZhaWxpbmcgdGVzdCBGSVJTVAogICAgMi4gUnVuIHRlc3QgdG8gdmVyaWZ5IGl0IGZhaWxzCiAgICAzLiBXcml0ZSBtaW5pbWFsIGNvZGUgdG8gcGFzcwogICAgNC4gUnVuIHRlc3QgdG8gdmVyaWZ5IGl0IHBhc3NlcwogICAgNS4gUmVmYWN0b3IgaWYgbmVlZGVkCiAgICA2LiBDb21taXQKCiAgICBQcm9qZWN0IHRlc3QgY29tbWFuZDogcHl0ZXN0IHRlc3RzLyAtcQogICAgUHJvamVjdCBzdHJ1Y3R1cmU6IFtkZXNjcmliZSByZWxldmFudCBmaWxlc10KICAgICIiIiwKICAgIHRvb2xzZXRzPVsndGVybWluYWwnLCAnZmlsZSddCikKYGBgCgojIyMgV2l0aCBzeXN0ZW1hdGljLWRlYnVnZ2luZwoKQnVnIGZvdW5kPyBXcml0ZSBmYWlsaW5nIHRlc3QgcmVwcm9kdWNpbmcgaXQuIEZvbGxvdyBUREQgY3ljbGUuIFRoZSB0ZXN0IHByb3ZlcyB0aGUgZml4IGFuZCBwcmV2ZW50cyByZWdyZXNzaW9uLgoKTmV2ZXIgZml4IGJ1Z3Mgd2l0aG91dCBhIHRlc3QuCgojIyBUZXN0aW5nIEFudGktUGF0dGVybnMKCi0gKipUZXN0aW5nIG1vY2sgYmVoYXZpb3IgaW5zdGVhZCBvZiByZWFsIGJlaGF2aW9yKiog4oCUIG1vY2tzIHNob3VsZCB2ZXJpZnkgaW50ZXJhY3Rpb25zLCBub3QgcmVwbGFjZSB0aGUgc3lzdGVtIHVuZGVyIHRlc3QKLSAqKlRlc3RpbmcgaW1wbGVtZW50YXRpb24gZGV0YWlscyoqIOKAlCB0ZXN0IGJlaGF2aW9yL3Jlc3VsdHMsIG5vdCBpbnRlcm5hbCBtZXRob2QgY2FsbHMKLSAqKkhhcHB5IHBhdGggb25seSoqIOKAlCBhbHdheXMgdGVzdCBlZGdlIGNhc2VzLCBlcnJvcnMsIGFuZCBib3VuZGFyaWVzCi0gKipCcml0dGxlIHRlc3RzKiog4oCUIHRlc3RzIHNob3VsZCB2ZXJpZnkgYmVoYXZpb3IsIG5vdCBzdHJ1Y3R1cmU7IHJlZmFjdG9yaW5nIHNob3VsZG4ndCBicmVhayB0aGVtCgojIyBGaW5hbCBSdWxlCgpgYGAKUHJvZHVjdGlvbiBjb2RlIOKGkiB0ZXN0IGV4aXN0cyBhbmQgZmFpbGVkIGZpcnN0Ck90aGVyd2lzZSDihpIgbm90IFRERApgYGAKCk5vIGV4Y2VwdGlvbnMgd2l0aG91dCB0aGUgdXNlcidzIGV4cGxpY2l0IHBlcm1pc3Npb24uCg==
+---
+name: test-driven-development
+description: Use when implementing any feature or bugfix, before writing implementation code. Enforces RED-GREEN-REFACTOR cycle with test-first approach.
+version: 1.1.0
+author: Hermes Agent (adapted from obra/superpowers)
+license: MIT
+metadata:
+  hermes:
+    tags: [testing, tdd, development, quality, red-green-refactor]
+    related_skills: [systematic-debugging, writing-plans, subagent-driven-development]
+---
+
+# Test-Driven Development (TDD)
+
+## Overview
+
+Write the test first. Watch it fail. Write minimal code to pass.
+
+**Core principle:** If you didn't watch the test fail, you don't know if it tests the right thing.
+
+**Violating the letter of the rules is violating the spirit of the rules.**
+
+## When to Use
+
+**Always:**
+- New features
+- Bug fixes
+- Refactoring
+- Behavior changes
+
+**Exceptions (ask the user first):**
+- Throwaway prototypes
+- Generated code
+- Configuration files
+
+Thinking "skip TDD just this once"? Stop. That's rationalization.
+
+## The Iron Law
+
+```
+NO PRODUCTION CODE WITHOUT A FAILING TEST FIRST
+```
+
+Write code before the test? Delete it. Start over.
+
+**No exceptions:**
+- Don't keep it as "reference"
+- Don't "adapt" it while writing tests
+- Don't look at it
+- Delete means delete
+
+Implement fresh from tests. Period.
+
+## Red-Green-Refactor Cycle
+
+### RED — Write Failing Test
+
+Write one minimal test showing what should happen.
+
+**Good test:**
+```python
+def test_retries_failed_operations_3_times():
+    attempts = 0
+    def operation():
+        nonlocal attempts
+        attempts += 1
+        if attempts < 3:
+            raise Exception('fail')
+        return 'success'
+
+    result = retry_operation(operation)
+
+    assert result == 'success'
+    assert attempts == 3
+```
+Clear name, tests real behavior, one thing.
+
+**Bad test:**
+```python
+def test_retry_works():
+    mock = MagicMock()
+    mock.side_effect = [Exception(), Exception(), 'success']
+    result = retry_operation(mock)
+    assert result == 'success'  # What about retry count? Timing?
+```
+Vague name, tests mock not real code.
+
+**Requirements:**
+- One behavior per test
+- Clear descriptive name ("and" in name? Split it)
+- Real code, not mocks (unless truly unavoidable)
+- Name describes behavior, not implementation
+
+### Verify RED — Watch It Fail
+
+**MANDATORY. Never skip.**
+
+```bash
+# Use terminal tool to run the specific test
+pytest tests/test_feature.py::test_specific_behavior -v
+```
+
+Confirm:
+- Test fails (not errors from typos)
+- Failure message is expected
+- Fails because the feature is missing
+
+**Test passes immediately?** You're testing existing behavior. Fix the test.
+
+**Test errors?** Fix the error, re-run until it fails correctly.
+
+### GREEN — Minimal Code
+
+Write the simplest code to pass the test. Nothing more.
+
+**Good:**
+```python
+def add(a, b):
+    return a + b  # Nothing extra
+```
+
+**Bad:**
+```python
+def add(a, b):
+    result = a + b
+    logging.info(f"Adding {a} + {b} = {result}")  # Extra!
+    return result
+```
+
+Don't add features, refactor other code, or "improve" beyond the test.
+
+**Cheating is OK in GREEN:**
+- Hardcode return values
+- Copy-paste
+- Duplicate code
+- Skip edge cases
+
+We'll fix it in REFACTOR.
+
+### Verify GREEN — Watch It Pass
+
+**MANDATORY.**
+
+```bash
+# Run the specific test
+pytest tests/test_feature.py::test_specific_behavior -v
+
+# Then run ALL tests to check for regressions
+pytest tests/ -q
+```
+
+Confirm:
+- Test passes
+- Other tests still pass
+- Output pristine (no errors, warnings)
+
+**Test fails?** Fix the code, not the test.
+
+**Other tests fail?** Fix regressions now.
+
+### REFACTOR — Clean Up
+
+After green only:
+- Remove duplication
+- Improve names
+- Extract helpers
+- Simplify expressions
+
+Keep tests green throughout. Don't add behavior.
+
+**If tests fail during refactor:** Undo immediately. Take smaller steps.
+
+### Repeat
+
+Next failing test for next behavior. One cycle at a time.
+
+## Why Order Matters
+
+**"I'll write tests after to verify it works"**
+
+Tests written after code pass immediately. Passing immediately proves nothing:
+- Might test the wrong thing
+- Might test implementation, not behavior
+- Might miss edge cases you forgot
+- You never saw it catch the bug
+
+Test-first forces you to see the test fail, proving it actually tests something.
+
+**"I already manually tested all the edge cases"**
+
+Manual testing is ad-hoc. You think you tested everything but:
+- No record of what you tested
+- Can't re-run when code changes
+- Easy to forget cases under pressure
+- "It worked when I tried it" ≠ comprehensive
+
+Automated tests are systematic. They run the same way every time.
+
+**"Deleting X hours of work is wasteful"**
+
+Sunk cost fallacy. The time is already gone. Your choice now:
+- Delete and rewrite with TDD (high confidence)
+- Keep it and add tests after (low confidence, likely bugs)
+
+The "waste" is keeping code you can't trust.
+
+**"TDD is dogmatic, being pragmatic means adapting"**
+
+TDD IS pragmatic:
+- Finds bugs before commit (faster than debugging after)
+- Prevents regressions (tests catch breaks immediately)
+- Documents behavior (tests show how to use code)
+- Enables refactoring (change freely, tests catch breaks)
+
+"Pragmatic" shortcuts = debugging in production = slower.
+
+**"Tests after achieve the same goals — it's spirit not ritual"**
+
+No. Tests-after answer "What does this do?" Tests-first answer "What should this do?"
+
+Tests-after are biased by your implementation. You test what you built, not what's required. Tests-first force edge case discovery before implementing.
+
+## Common Rationalizations
+
+| Excuse | Reality |
+|--------|---------|
+| "Too simple to test" | Simple code breaks. Test takes 30 seconds. |
+| "I'll test after" | Tests passing immediately prove nothing. |
+| "Tests after achieve same goals" | Tests-after = "what does this do?" Tests-first = "what should this do?" |
+| "Already manually tested" | Ad-hoc ≠ systematic. No record, can't re-run. |
+| "Deleting X hours is wasteful" | Sunk cost fallacy. Keeping unverified code is technical debt. |
+| "Keep as reference, write tests first" | You'll adapt it. That's testing after. Delete means delete. |
+| "Need to explore first" | Fine. Throw away exploration, start with TDD. |
+| "Test hard = design unclear" | Listen to the test. Hard to test = hard to use. |
+| "TDD will slow me down" | TDD faster than debugging. Pragmatic = test-first. |
+| "Manual test faster" | Manual doesn't prove edge cases. You'll re-test every change. |
+| "Existing code has no tests" | You're improving it. Add tests for the code you touch. |
+
+## Red Flags — STOP and Start Over
+
+If you catch yourself doing any of these, delete the code and restart with TDD:
+
+- Code before test
+- Test after implementation
+- Test passes immediately on first run
+- Can't explain why test failed
+- Tests added "later"
+- Rationalizing "just this once"
+- "I already manually tested it"
+- "Tests after achieve the same purpose"
+- "Keep as reference" or "adapt existing code"
+- "Already spent X hours, deleting is wasteful"
+- "TDD is dogmatic, I'm being pragmatic"
+- "This is different because..."
+
+**All of these mean: Delete code. Start over with TDD.**
+
+## Verification Checklist
+
+Before marking work complete:
+
+- [ ] Every new function/method has a test
+- [ ] Watched each test fail before implementing
+- [ ] Each test failed for expected reason (feature missing, not typo)
+- [ ] Wrote minimal code to pass each test
+- [ ] All tests pass
+- [ ] Output pristine (no errors, warnings)
+- [ ] Tests use real code (mocks only if unavoidable)
+- [ ] Edge cases and errors covered
+
+Can't check all boxes? You skipped TDD. Start over.
+
+## When Stuck
+
+| Problem | Solution |
+|---------|----------|
+| Don't know how to test | Write the wished-for API. Write the assertion first. Ask the user. |
+| Test too complicated | Design too complicated. Simplify the interface. |
+| Must mock everything | Code too coupled. Use dependency injection. |
+| Test setup huge | Extract helpers. Still complex? Simplify the design. |
+
+## Hermes Agent Integration
+
+### Running Tests
+
+Use the `terminal` tool to run tests at each step:
+
+```python
+# RED — verify failure
+terminal("pytest tests/test_feature.py::test_name -v")
+
+# GREEN — verify pass
+terminal("pytest tests/test_feature.py::test_name -v")
+
+# Full suite — verify no regressions
+terminal("pytest tests/ -q")
+```
+
+### With delegate_task
+
+When dispatching subagents for implementation, enforce TDD in the goal:
+
+```python
+delegate_task(
+    goal="Implement [feature] using strict TDD",
+    context="""
+    Follow test-driven-development skill:
+    1. Write failing test FIRST
+    2. Run test to verify it fails
+    3. Write minimal code to pass
+    4. Run test to verify it passes
+    5. Refactor if needed
+    6. Commit
+
+    Project test command: pytest tests/ -q
+    Project structure: [describe relevant files]
+    """,
+    toolsets=['terminal', 'file']
+)
+```
+
+### With systematic-debugging
+
+Bug found? Write failing test reproducing it. Follow TDD cycle. The test proves the fix and prevents regression.
+
+Never fix bugs without a test.
+
+## Testing Anti-Patterns
+
+- **Testing mock behavior instead of real behavior** — mocks should verify interactions, not replace the system under test
+- **Testing implementation details** — test behavior/results, not internal method calls
+- **Happy path only** — always test edge cases, errors, and boundaries
+- **Brittle tests** — tests should verify behavior, not structure; refactoring shouldn't break them
+
+## Final Rule
+
+```
+Production code → test exists and failed first
+Otherwise → not TDD
+```
+
+No exceptions without the user's explicit permission.

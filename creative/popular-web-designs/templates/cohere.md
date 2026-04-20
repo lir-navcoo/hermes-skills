@@ -1,1 +1,279 @@
-IyBEZXNpZ24gU3lzdGVtOiBDb2hlcmUKCgo+ICoqSGVybWVzIEFnZW50IOKAlCBJbXBsZW1lbnRhdGlvbiBOb3RlcyoqCj4KPiBUaGUgb3JpZ2luYWwgc2l0ZSB1c2VzIHByb3ByaWV0YXJ5IGZvbnRzLiBGb3Igc2VsZi1jb250YWluZWQgSFRNTCBvdXRwdXQsIHVzZSB0aGVzZSBDRE4gc3Vic3RpdHV0ZXM6Cj4gLSAqKlByaW1hcnk6KiogYEludGVyYCB8ICoqTW9ubzoqKiBgSmV0QnJhaW5zIE1vbm9gCj4gLSAqKkZvbnQgc3RhY2sgKENTUyk6KiogYGZvbnQtZmFtaWx5OiAnSW50ZXInLCBzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sICdTZWdvZSBVSScsIFJvYm90bywgc2Fucy1zZXJpZjtgCj4gLSAqKk1vbm8gc3RhY2sgKENTUyk6KiogYGZvbnQtZmFtaWx5OiAnSmV0QnJhaW5zIE1vbm8nLCB1aS1tb25vc3BhY2UsIFNGTW9uby1SZWd1bGFyLCBNZW5sbywgTW9uYWNvLCBDb25zb2xhcywgJ0xpYmVyYXRpb24gTW9ubycsICdDb3VyaWVyIE5ldycsIG1vbm9zcGFjZTtgCj4gYGBgaHRtbAo+IDxsaW5rIGhyZWY9Imh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9SW50ZXI6d2dodEAzMDA7NDAwOzUwMDs2MDA7NzAwJmZhbWlseT1KZXRCcmFpbnMrTW9ubzp3Z2h0QDQwMDs1MDAmZGlzcGxheT1zd2FwIiByZWw9InN0eWxlc2hlZXQiPgo+IGBgYAo+IFVzZSBgd3JpdGVfZmlsZWAgdG8gY3JlYXRlIEhUTUwsIHNlcnZlIHZpYSBgZ2VuZXJhdGl2ZS13aWRnZXRzYCBza2lsbCAoY2xvdWRmbGFyZWQgdHVubmVsKS4KPiBWZXJpZnkgdmlzdWFsIGFjY3VyYWN5IHdpdGggYGJyb3dzZXJfdmlzaW9uYCBhZnRlciBnZW5lcmF0aW5nLgoKIyMgMS4gVmlzdWFsIFRoZW1lICYgQXRtb3NwaGVyZQoKQ29oZXJlJ3MgaW50ZXJmYWNlIGlzIGEgcG9saXNoZWQgZW50ZXJwcmlzZSBjb21tYW5kIGRlY2sg4oCUIGNvbmZpZGVudCwgY2xlYW4sIGFuZCBkZXNpZ25lZCB0byBtYWtlIEFJIGZlZWwgbGlrZSBzZXJpb3VzIGluZnJhc3RydWN0dXJlIHJhdGhlciB0aGFuIGEgY29uc3VtZXIgdG95LiBUaGUgZXhwZXJpZW5jZSBsaXZlcyBvbiBhIGJyaWdodCB3aGl0ZSBjYW52YXMgd2hlcmUgY29udGVudCBpcyBvcmdhbml6ZWQgaW50byBnZW5lcm91c2x5IHJvdW5kZWQgY2FyZHMgKDIycHggcmFkaXVzKSB0aGF0IGNyZWF0ZSBhbiBvcmdhbmljLCBjbG91ZC1saWtlIGNvbnRhaW5tZW50IGxhbmd1YWdlLiBUaGlzIGlzIGEgc2l0ZSB0aGF0IHNwZWFrcyB0byBDVE9zIGFuZCBlbnRlcnByaXNlIGFyY2hpdGVjdHM6IHByb2Zlc3Npb25hbCB3aXRob3V0IGJlaW5nIGNvbGQsIHNvcGhpc3RpY2F0ZWQgd2l0aG91dCBiZWluZyBpbnRpbWlkYXRpbmcuCgpUaGUgZGVzaWduIGxhbmd1YWdlIGJyaWRnZXMgdHdvIHdvcmxkcyB3aXRoIGEgZHVhbC10eXBlZmFjZSBzeXN0ZW06IENvaGVyZVRleHQsIGEgY3VzdG9tIGRpc3BsYXkgc2VyaWYgd2l0aCB0aWdodCB0cmFja2luZywgZ2l2ZXMgaGVhZGxpbmVzIHRoZSBncmF2aXRhcyBvZiBhIHRlY2hub2xvZ3kgbWFuaWZlc3RvLCB3aGlsZSBVbmljYTc3IENvaGVyZSBXZWIgaGFuZGxlcyBhbGwgYm9keSBhbmQgVUkgdGV4dCB3aXRoIGdlb21ldHJpYyBTd2lzcyBwcmVjaXNpb24uIFRoaXMgc2VyaWYvc2FucyBwYWlyaW5nIGNyZWF0ZXMgYSAiY29uZmlkZW50IGF1dGhvcml0eSBtZWV0cyBlbmdpbmVlcmluZyBjbGFyaXR5IiBwZXJzb25hbGl0eSB0aGF0IHBlcmZlY3RseSByZWZsZWN0cyBhbiBlbnRlcnByaXNlIEFJIHBsYXRmb3JtLgoKQ29sb3IgaXMgdXNlZCB3aXRoIGV4dHJlbWUgcmVzdHJhaW50IOKAlCB0aGUgaW50ZXJmYWNlIGlzIGFsbW9zdCBlbnRpcmVseSBibGFjay1hbmQtd2hpdGUgd2l0aCBjb29sIGdyYXkgYm9yZGVycyAoYCNkOWQ5ZGRgLCBgI2U1ZTdlYmApLiBQdXJwbGUtdmlvbGV0IGFwcGVhcnMgb25seSBpbiBwaG90b2dyYXBoaWMgaGVybyBiYW5kcywgZ3JhZGllbnQgc2VjdGlvbnMsIGFuZCB0aGUgaW50ZXJhY3RpdmUgYmx1ZSAoYCMxODYzZGNgKSB0aGF0IHNpZ25hbHMgaG92ZXIgYW5kIGZvY3VzIHN0YXRlcy4gVGhpcyBjaHJvbWF0aWMgcmVzdHJhaW50IG1lYW5zIHRoYXQgd2hlbiBjb2xvciBET0VTIGFwcGVhciDigJQgaW4gcHJvZHVjdCBzY3JlZW5zaG90cywgZW50ZXJwcmlzZSBwaG90b2dyYXBoeSwgYW5kIHRoZSBkZWVwIHB1cnBsZSBzZWN0aW9uIOKAlCBpdCBjYXJyaWVzIG1heGltdW0gdmlzdWFsIHdlaWdodC4KCioqS2V5IENoYXJhY3RlcmlzdGljczoqKgotIEJyaWdodCB3aGl0ZSBjYW52YXMgd2l0aCBjb29sIGdyYXkgY29udGFpbm1lbnQgYm9yZGVycwotIDIycHggc2lnbmF0dXJlIGJvcmRlci1yYWRpdXMg4oCUIHRoZSBkaXN0aW5jdGl2ZSAiQ29oZXJlIGNhcmQiIHJvdW5kbmVzcwotIER1YWwgY3VzdG9tIHR5cGVmYWNlOiBDb2hlcmVUZXh0IChkaXNwbGF5IHNlcmlmKSArIFVuaWNhNzcgKGJvZHkgc2FucykKLSBFbnRlcnByaXNlLWdyYWRlIGNocm9tYXRpYyByZXN0cmFpbnQ6IGJsYWNrLCB3aGl0ZSwgY29vbCBncmF5cywgbWluaW1hbCBwdXJwbGUtYmx1ZSBhY2NlbnQKLSBEZWVwIHB1cnBsZS92aW9sZXQgaGVybyBzZWN0aW9ucyBwcm92aWRpbmcgZHJhbWF0aWMgY29udHJhc3QKLSBHaG9zdC90cmFuc3BhcmVudCBidXR0b25zIHRoYXQgc2hpZnQgdG8gYmx1ZSBvbiBob3ZlcgotIEVudGVycHJpc2UgcGhvdG9ncmFwaHkgc2hvd2luZyBkaXZlcnNlIHJlYWwtd29ybGQgYXBwbGljYXRpb25zCi0gQ29oZXJlTW9ubyBmb3IgY29kZSBhbmQgdGVjaG5pY2FsIGxhYmVscyB3aXRoIHVwcGVyY2FzZSB0cmFuc2Zvcm1zCgojIyAyLiBDb2xvciBQYWxldHRlICYgUm9sZXMKCiMjIyBQcmltYXJ5Ci0gKipDb2hlcmUgQmxhY2sqKiAoYCMwMDAwMDBgKTogUHJpbWFyeSBoZWFkbGluZSB0ZXh0IGFuZCBtYXhpbXVtLWVtcGhhc2lzIGVsZW1lbnRzLgotICoqTmVhciBCbGFjayoqIChgIzIxMjEyMWApOiBTdGFuZGFyZCBib2R5IGxpbmsgY29sb3Ig4oCUIHNsaWdodGx5IHNvZnRlciB0aGFuIHB1cmUgYmxhY2suCi0gKipEZWVwIERhcmsqKiAoYCMxNzE3MWNgKTogQSBibHVlLXRpbnRlZCBuZWFyLWJsYWNrIGZvciBuYXZpZ2F0aW9uIGFuZCBkYXJrLXNlY3Rpb24gdGV4dC4KCiMjIyBTZWNvbmRhcnkgJiBBY2NlbnQKLSAqKkludGVyYWN0aW9uIEJsdWUqKiAoYCMxODYzZGNgKTogVGhlIHByaW1hcnkgaW50ZXJhY3RpdmUgYWNjZW50IOKAlCBhcHBlYXJzIG9uIGJ1dHRvbiBob3ZlciwgZm9jdXMgc3RhdGVzLCBhbmQgYWN0aXZlIGxpbmtzLiBUaGUgc29sZSBjaHJvbWF0aWMgYWN0aW9uIGNvbG9yLgotICoqUmluZyBCbHVlKiogKGAjNGM2ZWU2YCBhdCA1MCUpOiBUYWlsd2luZCByaW5nIGNvbG9yIGZvciBrZXlib2FyZCBmb2N1cyBpbmRpY2F0b3JzLgotICoqRm9jdXMgUHVycGxlKiogKGAjOWI2MGFhYCk6IElucHV0IGZvY3VzIGJvcmRlciBjb2xvciDigJQgYSBtdXRlZCB2aW9sZXQuCgojIyMgU3VyZmFjZSAmIEJhY2tncm91bmQKLSAqKlB1cmUgV2hpdGUqKiAoYCNmZmZmZmZgKTogVGhlIHByaW1hcnkgcGFnZSBiYWNrZ3JvdW5kIGFuZCBjYXJkIHN1cmZhY2UuCi0gKipTbm93KiogKGAjZmFmYWZhYCk6IFN1YnRsZSBlbGV2YXRlZCBzdXJmYWNlcyBhbmQgbGlnaHQtc2VjdGlvbiBiYWNrZ3JvdW5kcy4KLSAqKkxpZ2h0ZXN0IEdyYXkqKiAoYCNmMmYyZjJgKTogQ2FyZCBib3JkZXJzIGFuZCB0aGUgc29mdGVzdCBjb250YWlubWVudCBsaW5lcy4KCiMjIyBOZXV0cmFscyAmIFRleHQKLSAqKk11dGVkIFNsYXRlKiogKGAjOTM5MzlmYCk6IERlLWVtcGhhc2l6ZWQgZm9vdGVyIGxpbmtzIGFuZCB0ZXJ0aWFyeSB0ZXh0IOKAlCBhIGNvb2wtdG9uZWQgZ3JheSB3aXRoIGEgc2xpZ2h0IGJsdWUtdmlvbGV0IHRpbnQuCi0gKipCb3JkZXIgQ29vbCoqIChgI2Q5ZDlkZGApOiBTdGFuZGFyZCBzZWN0aW9uIGFuZCBsaXN0LWl0ZW0gYm9yZGVycyDigJQgYSBjb29sLCBzbGlnaHRseSBwdXJwbGUtdGludGVkIGdyYXkuCi0gKipCb3JkZXIgTGlnaHQqKiAoYCNlNWU3ZWJgKTogTGlnaHRlciBib3JkZXIgdmFyaWFudCDigJQgVGFpbHdpbmQncyBzdGFuZGFyZCBncmF5LTIwMC4KCiMjIyBHcmFkaWVudCBTeXN0ZW0KLSAqKlB1cnBsZS1WaW9sZXQgSGVybyBCYW5kKio6IERlZXAgcHVycGxlIGdyYWRpZW50IHNlY3Rpb25zIHRoYXQgY3JlYXRlIGRyYW1hdGljIGNvbnRyYXN0IGFnYWluc3QgdGhlIHdoaXRlIGNhbnZhcy4gVGhlc2UgYXBwZWFyIGFzIGZ1bGwtd2lkdGggYmFuZHMgaG91c2luZyBwcm9kdWN0IHNjcmVlbnNob3RzIGFuZCBrZXkgbWVzc2FnaW5nLgotICoqRGFyayBGb290ZXIgR3JhZGllbnQqKjogVGhlIHBhZ2UgdHJhbnNpdGlvbnMgdGhyb3VnaCBkZWVwIHB1cnBsZS9jaGFyY29hbCB0byB0aGUgYmxhY2sgZm9vdGVyLCBjcmVhdGluZyBhICJkdXNrIiBlZmZlY3QuCgojIyAzLiBUeXBvZ3JhcGh5IFJ1bGVzCgojIyMgRm9udCBGYW1pbHkKLSAqKkRpc3BsYXkqKjogYENvaGVyZVRleHRgLCB3aXRoIGZhbGxiYWNrczogYFNwYWNlIEdyb3Rlc2ssIEludGVyLCB1aS1zYW5zLXNlcmlmLCBzeXN0ZW0tdWlgCi0gKipCb2R5IC8gVUkqKjogYFVuaWNhNzcgQ29oZXJlIFdlYmAsIHdpdGggZmFsbGJhY2tzOiBgSW50ZXIsIEFyaWFsLCB1aS1zYW5zLXNlcmlmLCBzeXN0ZW0tdWlgCi0gKipDb2RlKio6IGBDb2hlcmVNb25vYCwgd2l0aCBmYWxsYmFja3M6IGBBcmlhbCwgdWktc2Fucy1zZXJpZiwgc3lzdGVtLXVpYAotICoqSWNvbnMqKjogYENvaGVyZUljb25EZWZhdWx0YCAoY3VzdG9tIGljb24gZm9udCkKCiMjIyBIaWVyYXJjaHkKCnwgUm9sZSB8IEZvbnQgfCBTaXplIHwgV2VpZ2h0IHwgTGluZSBIZWlnaHQgfCBMZXR0ZXIgU3BhY2luZyB8IE5vdGVzIHwKfC0tLS0tLXwtLS0tLS18LS0tLS0tfC0tLS0tLS0tfC0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tLXwtLS0tLS0tfAp8IERpc3BsYXkgLyBIZXJvIHwgQ29oZXJlVGV4dCB8IDcycHggKDQuNXJlbSkgfCA0MDAgfCAxLjAwICh0aWdodCkgfCAtMS40NHB4IHwgTWF4aW11bSBpbXBhY3QsIHNlcmlmIGF1dGhvcml0eSB8CnwgRGlzcGxheSBTZWNvbmRhcnkgfCBDb2hlcmVUZXh0IHwgNjBweCAoMy43NXJlbSkgfCA0MDAgfCAxLjAwICh0aWdodCkgfCAtMS4ycHggfCBMYXJnZSBzZWN0aW9uIGhlYWRpbmdzIHwKfCBTZWN0aW9uIEhlYWRpbmcgfCBVbmljYTc3IHwgNDhweCAoM3JlbSkgfCA0MDAgfCAxLjIwICh0aWdodCkgfCAtMC40OHB4IHwgRmVhdHVyZSBzZWN0aW9uIHRpdGxlcyB8CnwgU3ViLWhlYWRpbmcgfCBVbmljYTc3IHwgMzJweCAoMnJlbSkgfCA0MDAgfCAxLjIwICh0aWdodCkgfCAtMC4zMnB4IHwgQ2FyZCBoZWFkaW5ncywgZmVhdHVyZSBuYW1lcyB8CnwgRmVhdHVyZSBUaXRsZSB8IFVuaWNhNzcgfCAyNHB4ICgxLjVyZW0pIHwgNDAwIHwgMS4zMCB8IG5vcm1hbCB8IFNtYWxsZXIgc2VjdGlvbiB0aXRsZXMgfAp8IEJvZHkgTGFyZ2UgfCBVbmljYTc3IHwgMThweCAoMS4xM3JlbSkgfCA0MDAgfCAxLjQwIHwgbm9ybWFsIHwgSW50cm8gcGFyYWdyYXBocyB8CnwgQm9keSAvIEJ1dHRvbiB8IFVuaWNhNzcgfCAxNnB4ICgxcmVtKSB8IDQwMCB8IDEuNTAgfCBub3JtYWwgfCBTdGFuZGFyZCBib2R5LCBidXR0b24gdGV4dCB8CnwgQnV0dG9uIE1lZGl1bSB8IFVuaWNhNzcgfCAxNHB4ICgwLjg4cmVtKSB8IDUwMCB8IDEuNzEgKHJlbGF4ZWQpIHwgbm9ybWFsIHwgU21hbGxlciBidXR0b25zLCBlbXBoYXNpemVkIGxhYmVscyB8CnwgQ2FwdGlvbiB8IFVuaWNhNzcgfCAxNHB4ICgwLjg4cmVtKSB8IDQwMCB8IDEuNDAgfCBub3JtYWwgfCBNZXRhZGF0YSwgZGVzY3JpcHRpb25zIHwKfCBVcHBlcmNhc2UgTGFiZWwgfCBVbmljYTc3IC8gQ29oZXJlTW9ubyB8IDE0cHggKDAuODhyZW0pIHwgNDAwIHwgMS40MCB8IDAuMjhweCB8IFVwcGVyY2FzZSBzZWN0aW9uIGxhYmVscyB8CnwgU21hbGwgfCBVbmljYTc3IHwgMTJweCAoMC43NXJlbSkgfCA0MDAgfCAxLjQwIHwgbm9ybWFsIHwgU21hbGxlc3QgdGV4dCwgZm9vdGVyIGxpbmtzIHwKfCBDb2RlIE1pY3JvIHwgQ29oZXJlTW9ubyB8IDhweCAoMC41cmVtKSB8IDQwMCB8IDEuNDAgfCAwLjE2cHggfCBUaW55IHVwcGVyY2FzZSBjb2RlIGxhYmVscyB8CgojIyMgUHJpbmNpcGxlcwotICoqU2VyaWYgZm9yIGRlY2xhcmF0aW9uLCBzYW5zIGZvciB1dGlsaXR5Kio6IENvaGVyZVRleHQgY2FycmllcyB0aGUgYnJhbmQgdm9pY2UgYXQgZGlzcGxheSBzY2FsZSDigJQgaXRzIHNlcmlmIHRlcm1pbmFscyBnaXZlIGhlYWRsaW5lcyB0aGUgYXV0aG9yaXR5IG9mIHB1Ymxpc2hlZCByZXNlYXJjaC4gVW5pY2E3NyBoYW5kbGVzIGV2ZXJ5dGhpbmcgZnVuY3Rpb25hbCB3aXRoIFN3aXNzLWdlb21ldHJpYyBuZXV0cmFsaXR5LgotICoqTmVnYXRpdmUgdHJhY2tpbmcgYXQgc2NhbGUqKjogQ29oZXJlVGV4dCB1c2VzIC0xLjJweCB0byAtMS40NHB4IGxldHRlci1zcGFjaW5nIGF0IDYw4oCTNzJweCwgY3JlYXRpbmcgZGVuc2UsIGltcGFjdGZ1bCB0ZXh0IGJsb2Nrcy4KLSAqKlNpbmdsZSBib2R5IHdlaWdodCoqOiBOZWFybHkgYWxsIFVuaWNhNzcgdXNhZ2UgaXMgd2VpZ2h0IDQwMC4gV2VpZ2h0IDUwMCBhcHBlYXJzIG9ubHkgZm9yIHNtYWxsIGJ1dHRvbiBlbXBoYXNpcy4gVGhlIHN5c3RlbSByZWxpZXMgb24gc2l6ZSBhbmQgc3BhY2luZywgbm90IHdlaWdodCBjb250cmFzdC4KLSAqKlVwcGVyY2FzZSBjb2RlIGxhYmVscyoqOiBDb2hlcmVNb25vIHVzZXMgdXBwZXJjYXNlIHdpdGggcG9zaXRpdmUgbGV0dGVyLXNwYWNpbmcgKDAuMTbigJMwLjI4cHgpIGZvciB0ZWNobmljYWwgdGFncyBhbmQgc2VjdGlvbiBtYXJrZXJzLgoKIyMgNC4gQ29tcG9uZW50IFN0eWxpbmdzCgojIyMgQnV0dG9ucwoKKipHaG9zdCAvIFRyYW5zcGFyZW50KioKLSBCYWNrZ3JvdW5kOiB0cmFuc3BhcmVudCAoYHJnYmEoMjU1LCAyNTUsIDI1NSwgMClgKQotIFRleHQ6IENvaGVyZSBCbGFjayAoYCMwMDAwMDBgKQotIE5vIGJvcmRlciB2aXNpYmxlCi0gSG92ZXI6IHRleHQgc2hpZnRzIHRvIEludGVyYWN0aW9uIEJsdWUgKGAjMTg2M2RjYCksIG9wYWNpdHkgMC44Ci0gRm9jdXM6IHNvbGlkIDJweCBvdXRsaW5lIGluIEludGVyYWN0aW9uIEJsdWUKLSBUaGUgcHJpbWFyeSBidXR0b24gc3R5bGUg4oCUIGludmlzaWJsZSB1bnRpbCBpbnRlcmFjdGVkIHdpdGgKCioqRGFyayBTb2xpZCoqCi0gQmFja2dyb3VuZDogZGFyay9ibGFjawotIFRleHQ6IFB1cmUgV2hpdGUKLSBGb3IgQ1RBIG9uIGxpZ2h0IHN1cmZhY2VzCi0gUGlsbC1zaGFwZWQgb3Igc3RhbmRhcmQgcmFkaXVzCgoqKk91dGxpbmVkKioKLSBCb3JkZXItYmFzZWQgY29udGFpbm1lbnQKLSBVc2VkIGluIHNlY29uZGFyeSBhY3Rpb25zCgojIyMgQ2FyZHMgJiBDb250YWluZXJzCi0gQmFja2dyb3VuZDogUHVyZSBXaGl0ZSAoYCNmZmZmZmZgKQotIEJvcmRlcjogdGhpbiBzb2xpZCBMaWdodGVzdCBHcmF5IChgMXB4IHNvbGlkICNmMmYyZjJgKSBmb3Igc3VidGxlIGNhcmRzOyBDb29sIEJvcmRlciAoYCNkOWQ5ZGRgKSBmb3IgZW1waGFzaXplZAotIFJhZGl1czogKioyMnB4Kiog4oCUIHRoZSBzaWduYXR1cmUgQ29oZXJlIHJhZGl1cyBmb3IgcHJpbWFyeSBjYXJkcywgaW1hZ2VzLCBhbmQgZGlhbG9nIGNvbnRhaW5lcnMuIEFsc28gNHB4LCA4cHgsIDE2cHgsIDIwcHggZm9yIHNtYWxsZXIgZWxlbWVudHMKLSBTaGFkb3c6IG1pbmltYWwg4oCUIENvaGVyZSByZWxpZXMgb24gYmFja2dyb3VuZCBjb2xvciBhbmQgYm9yZGVycyByYXRoZXIgdGhhbiBzaGFkb3dzCi0gU3BlY2lhbDogYDBweCAwcHggMjJweCAyMnB4YCByYWRpdXMgKGJvdHRvbS1vbmx5IHJvdW5kaW5nKSBmb3Igc2VjdGlvbiBjb250YWluZXJzCi0gRGlhbG9nOiA4cHggcmFkaXVzIGZvciBtb2RhbC9kaWFsb2cgYm94ZXMKCiMjIyBJbnB1dHMgJiBGb3JtcwotIFRleHQ6IHdoaXRlIG9uIGRhcmsgaW5wdXQsIGJsYWNrIG9uIGxpZ2h0Ci0gRm9jdXMgYm9yZGVyOiBGb2N1cyBQdXJwbGUgKGAjOWI2MGFhYCkgd2l0aCBgMXB4IHNvbGlkYAotIEZvY3VzIHNoYWRvdzogcmVkIHJpbmcgKGByZ2IoMTc5LCAwLCAwKSAwcHggMHB4IDBweCAycHhgKSDigJQgbGlrZWx5IGZvciBlcnJvciBzdGF0ZSBpbmRpY2F0aW9uCi0gRm9jdXMgb3V0bGluZTogSW50ZXJhY3Rpb24gQmx1ZSBzb2xpZCAycHgKCiMjIyBOYXZpZ2F0aW9uCi0gQ2xlYW4gaG9yaXpvbnRhbCBuYXYgb24gd2hpdGUgb3IgZGFyayBiYWNrZ3JvdW5kCi0gTG9nbzogQ29oZXJlIHdvcmRtYXJrIChjdXN0b20gU1ZHKQotIExpbmtzOiBEYXJrIHRleHQgYXQgMTZweCBVbmljYTc3Ci0gQ1RBOiBEYXJrIHNvbGlkIGJ1dHRvbgotIE1vYmlsZTogaGFtYnVyZ2VyIGNvbGxhcHNlCgojIyMgSW1hZ2UgVHJlYXRtZW50Ci0gRW50ZXJwcmlzZSBwaG90b2dyYXBoeSB3aXRoIGRpdmVyc2Ugc3ViamVjdHMgYW5kIGVudmlyb25tZW50cwotIFB1cnBsZS10aW50ZWQgaGVybyBwaG90b2dyYXBoeSBmb3IgZHJhbWF0aWMgc2VjdGlvbnMKLSBQcm9kdWN0IFVJIHNjcmVlbnNob3RzIG9uIGRhcmsgc3VyZmFjZXMKLSBJbWFnZXMgd2l0aCAyMnB4IHJhZGl1cyBtYXRjaGluZyBjYXJkIHN5c3RlbQotIEZ1bGwtYmxlZWQgcHVycGxlIGdyYWRpZW50IHNlY3Rpb25zCgojIyMgRGlzdGluY3RpdmUgQ29tcG9uZW50cwoKKioyMnB4IENhcmQgU3lzdGVtKioKLSBUaGUgMjJweCBib3JkZXItcmFkaXVzIGlzIENvaGVyZSdzIHZpc3VhbCBzaWduYXR1cmUKLSBBbGwgcHJpbWFyeSBjYXJkcywgaW1hZ2VzLCBhbmQgY29udGFpbmVycyB1c2UgdGhpcyByYWRpdXMKLSBDcmVhdGVzIGEgY2xvdWQtbGlrZSwgb3JnYW5pYyBzb2Z0bmVzcyB0aGF0J3MgZGlzdGluY3RpdmUgZnJvbSB0aGUgdHlwaWNhbCA44oCTMTJweAoKKipFbnRlcnByaXNlIFRydXN0IEJhcioqCi0gQ29tcGFueSBsb2dvcyBkaXNwbGF5ZWQgaW4gYSBob3Jpem9udGFsIHN0cmlwCi0gRGVtb25zdHJhdGVzIGVudGVycHJpc2UgYWRvcHRpb24KLSBDbGVhbiwgbW9ub2Nocm9tZSBsb2dvIHRyZWF0bWVudAoKKipQdXJwbGUgSGVybyBCYW5kcyoqCi0gRnVsbC13aWR0aCBkZWVwIHB1cnBsZSBzZWN0aW9ucyBob3VzaW5nIHByb2R1Y3Qgc2hvd2Nhc2VzCi0gQ3JlYXRlIGRyYW1hdGljIHZpc3VhbCBicmVha3MgaW4gdGhlIHdoaXRlIHBhZ2UgZmxvdwotIFByb2R1Y3Qgc2NyZWVuc2hvdHMgZmxvYXQgd2l0aGluIHRoZSBwdXJwbGUgZW52aXJvbm1lbnQKCioqVXBwZXJjYXNlIENvZGUgVGFncyoqCi0gQ29oZXJlTW9ubyBpbiB1cHBlcmNhc2Ugd2l0aCBsZXR0ZXItc3BhY2luZwotIFVzZWQgYXMgc2VjdGlvbiBtYXJrZXJzIGFuZCBjYXRlZ29yaXphdGlvbiBsYWJlbHMKLSBDcmVhdGVzIGEgdGVjaG5pY2FsLCBzdHJ1Y3R1cmVkIGluZm9ybWF0aW9uIGhpZXJhcmNoeQoKIyMgNS4gTGF5b3V0IFByaW5jaXBsZXMKCiMjIyBTcGFjaW5nIFN5c3RlbQotIEJhc2UgdW5pdDogOHB4Ci0gU2NhbGU6IDJweCwgNnB4LCA4cHgsIDEwcHgsIDEycHgsIDE2cHgsIDIwcHgsIDIycHgsIDI0cHgsIDI4cHgsIDMycHgsIDM2cHgsIDQwcHgsIDU2cHgsIDYwcHgKLSBCdXR0b24gcGFkZGluZyB2YXJpZXMgYnkgdmFyaWFudAotIENhcmQgaW50ZXJuYWwgcGFkZGluZzogYXBwcm94aW1hdGVseSAyNOKAkzMycHgKLSBTZWN0aW9uIHZlcnRpY2FsIHNwYWNpbmc6IGdlbmVyb3VzICg1NuKAkzYwcHggYmV0d2VlbiBzZWN0aW9ucykKCiMjIyBHcmlkICYgQ29udGFpbmVyCi0gTWF4IGNvbnRhaW5lciB3aWR0aDogdXAgdG8gMjU2MHB4ICh2ZXJ5IHdpZGUpIHdpdGggcmVzcG9uc2l2ZSBzY2FsaW5nCi0gSGVybzogY2VudGVyZWQgd2l0aCBkcmFtYXRpYyB0eXBvZ3JhcGh5Ci0gRmVhdHVyZSBzZWN0aW9uczogbXVsdGktY29sdW1uIGNhcmQgZ3JpZHMKLSBFbnRlcnByaXNlIHNlY3Rpb25zOiBmdWxsLXdpZHRoIHB1cnBsZSBiYW5kcwotIDI2IGJyZWFrcG9pbnRzIGRldGVjdGVkIOKAlCBleHRyZW1lbHkgZ3JhbnVsYXIgcmVzcG9uc2l2ZSBzeXN0ZW0KCiMjIyBXaGl0ZXNwYWNlIFBoaWxvc29waHkKLSAqKkVudGVycHJpc2UgY2xhcml0eSoqOiBFYWNoIHNlY3Rpb24gcHJlc2VudHMgb25lIGNsZWFyIHByb3Bvc2l0aW9uIHdpdGggYnJlYXRoaW5nIHJvb20gYmV0d2Vlbi4KLSAqKlBob3RvZ3JhcGh5IGFzIGhlcm8qKjogTGFyZ2UgcGhvdG9ncmFwaGljIHNlY3Rpb25zIHByb3ZpZGUgdmlzdWFsIGludGVyZXN0IHdpdGhvdXQgcmVxdWlyaW5nIGRlY29yYXRpdmUgZGVzaWduIGVsZW1lbnRzLgotICoqQ2FyZCBncm91cGluZyoqOiBSZWxhdGVkIGNvbnRlbnQgaXMgZ3JvdXBlZCBpbnRvIDIycHgtcm91bmRlZCBjYXJkcywgY3JlYXRpbmcgbmF0dXJhbCBpbmZvcm1hdGlvbiBjbHVzdGVycy4KCiMjIyBCb3JkZXIgUmFkaXVzIFNjYWxlCi0gU2hhcnAgKDRweCk6IE5hdmlnYXRpb24gZWxlbWVudHMsIHNtYWxsIHRhZ3MsIHBhZ2luYXRpb24KLSBDb21mb3J0YWJsZSAoOHB4KTogRGlhbG9nIGJveGVzLCBzZWNvbmRhcnkgY29udGFpbmVycywgc21hbGwgY2FyZHMKLSBHZW5lcm91cyAoMTZweCk6IEZlYXR1cmVkIGNvbnRhaW5lcnMsIG1lZGl1bSBjYXJkcwotIExhcmdlICgyMHB4KTogTGFyZ2UgZmVhdHVyZSBjYXJkcwotIFNpZ25hdHVyZSAoMjJweCk6IFByaW1hcnkgY2FyZHMsIGhlcm8gaW1hZ2VzLCBtYWluIGNvbnRhaW5lcnMg4oCUIFRIRSBDb2hlcmUgcmFkaXVzCi0gUGlsbCAoOTk5OXB4KTogQnV0dG9ucywgdGFncywgc3RhdHVzIGluZGljYXRvcnMKCiMjIDYuIERlcHRoICYgRWxldmF0aW9uCgp8IExldmVsIHwgVHJlYXRtZW50IHwgVXNlIHwKfC0tLS0tLS18LS0tLS0tLS0tLS18LS0tLS18CnwgRmxhdCAoTGV2ZWwgMCkgfCBObyBzaGFkb3csIG5vIGJvcmRlciB8IFBhZ2UgYmFja2dyb3VuZCwgdGV4dCBibG9ja3MgfAp8IEJvcmRlcmVkIChMZXZlbCAxKSB8IGAxcHggc29saWQgI2YyZjJmMmAgb3IgYCNkOWQ5ZGRgIHwgU3RhbmRhcmQgY2FyZHMsIGxpc3Qgc2VwYXJhdG9ycyB8CnwgUHVycGxlIEJhbmQgKExldmVsIDIpIHwgRnVsbC13aWR0aCBkYXJrIHB1cnBsZSBiYWNrZ3JvdW5kIHwgSGVybyBzZWN0aW9ucywgZmVhdHVyZSBzaG93Y2FzZXMgfAoKKipTaGFkb3cgUGhpbG9zb3BoeSoqOiBDb2hlcmUgaXMgbmVhcmx5IHNoYWRvdy1mcmVlLiBEZXB0aCBpcyBjb21tdW5pY2F0ZWQgdGhyb3VnaCAqKmJhY2tncm91bmQgY29sb3IgY29udHJhc3QqKiAod2hpdGUgY2FyZHMgb24gcHVycGxlIGJhbmRzLCB3aGl0ZSBzdXJmYWNlIG9uIHNub3cpLCAqKmJvcmRlciBjb250YWlubWVudCoqIChjb29sIGdyYXkgYm9yZGVycyksIGFuZCB0aGUgZHJhbWF0aWMgKipsaWdodC10by1kYXJrIHNlY3Rpb24gYWx0ZXJuYXRpb24qKi4gV2hlbiBlbGVtZW50cyBuZWVkIGVsZXZhdGlvbiwgdGhleSBhY2hpZXZlIGl0IHRocm91Z2ggYmVpbmcgd2hpdGUtb24tZGFyayByYXRoZXIgdGhhbiB0aHJvdWdoIHNoYWRvdyBjYXN0aW5nLgoKIyMgNy4gRG8ncyBhbmQgRG9uJ3RzCgojIyMgRG8KLSBVc2UgMjJweCBib3JkZXItcmFkaXVzIG9uIGFsbCBwcmltYXJ5IGNhcmRzIGFuZCBjb250YWluZXJzIOKAlCBpdCdzIHRoZSB2aXN1YWwgc2lnbmF0dXJlCi0gVXNlIENvaGVyZVRleHQgZm9yIGRpc3BsYXkgaGVhZGluZ3MgKDcycHgsIDYwcHgpIHdpdGggbmVnYXRpdmUgbGV0dGVyLXNwYWNpbmcKLSBVc2UgVW5pY2E3NyBmb3IgYWxsIGJvZHkgYW5kIFVJIHRleHQgYXQgd2VpZ2h0IDQwMAotIEtlZXAgdGhlIHBhbGV0dGUgYmxhY2stYW5kLXdoaXRlIHdpdGggY29vbCBncmF5IGJvcmRlcnMKLSBVc2UgSW50ZXJhY3Rpb24gQmx1ZSAoIzE4NjNkYykgb25seSBmb3IgaG92ZXIvZm9jdXMgaW50ZXJhY3RpdmUgc3RhdGVzCi0gVXNlIGRlZXAgcHVycGxlIHNlY3Rpb25zIGZvciBkcmFtYXRpYyB2aXN1YWwgYnJlYWtzIGFuZCBwcm9kdWN0IHNob3djYXNlcwotIEFwcGx5IHVwcGVyY2FzZSArIGxldHRlci1zcGFjaW5nIG9uIENvaGVyZU1vbm8gZm9yIHNlY3Rpb24gbGFiZWxzCi0gTWFpbnRhaW4gZW50ZXJwcmlzZS1hcHByb3ByaWF0ZSBwaG90b2dyYXBoeSB3aXRoIGRpdmVyc2Ugc3ViamVjdHMKCiMjIyBEb24ndAotIERvbid0IHVzZSBib3JkZXItcmFkaXVzIG90aGVyIHRoYW4gMjJweCBvbiBwcmltYXJ5IGNhcmRzIOKAlCB0aGUgc2lnbmF0dXJlIHJhZGl1cyBtYXR0ZXJzCi0gRG9uJ3QgaW50cm9kdWNlIHdhcm0gY29sb3JzIOKAlCB0aGUgcGFsZXR0ZSBpcyBzdHJpY3RseSBjb29sLXRvbmVkCi0gRG9uJ3QgdXNlIGhlYXZ5IHNoYWRvd3Mg4oCUIGRlcHRoIGNvbWVzIGZyb20gY29sb3IgY29udHJhc3QgYW5kIGJvcmRlcnMKLSBEb24ndCB1c2UgYm9sZCAoNzAwKykgd2VpZ2h0IG9uIGJvZHkgdGV4dCDigJQgNDAw4oCTNTAwIGlzIHRoZSByYW5nZQotIERvbid0IHNraXAgdGhlIHNlcmlmL3NhbnMgaGllcmFyY2h5IOKAlCBDb2hlcmVUZXh0IGZvciBoZWFkbGluZXMsIFVuaWNhNzcgZm9yIGJvZHkKLSBEb24ndCB1c2UgcHVycGxlIGFzIGEgc3VyZmFjZSBjb2xvciBmb3IgY2FyZHMg4oCUIHB1cnBsZSBpcyByZXNlcnZlZCBmb3IgZnVsbC13aWR0aCBzZWN0aW9ucwotIERvbid0IHJlZHVjZSBzZWN0aW9uIHNwYWNpbmcgYmVsb3cgNDBweCDigJQgZW50ZXJwcmlzZSBsYXlvdXRzIG5lZWQgYnJlYXRoaW5nIHJvb20KLSBEb24ndCB1c2UgZGVjb3JhdGlvbiBvbiBidXR0b25zIGJ5IGRlZmF1bHQg4oCUIGdob3N0L3RyYW5zcGFyZW50IGlzIHRoZSBiYXNlIHN0YXRlCgojIyA4LiBSZXNwb25zaXZlIEJlaGF2aW9yCgojIyMgQnJlYWtwb2ludHMKfCBOYW1lIHwgV2lkdGggfCBLZXkgQ2hhbmdlcyB8CnwtLS0tLS18LS0tLS0tLXwtLS0tLS0tLS0tLS0tfAp8IFNtYWxsIE1vYmlsZSB8IDw0MjVweCB8IENvbXBhY3QgbGF5b3V0LCBtaW5pbWFsIHNwYWNpbmcgfAp8IE1vYmlsZSB8IDQyNeKAkzY0MHB4IHwgU2luZ2xlIGNvbHVtbiwgc3RhY2tlZCBjYXJkcyB8CnwgTGFyZ2UgTW9iaWxlIHwgNjQw4oCTNzY4cHggfCBNaW5vciBzcGFjaW5nIGFkanVzdG1lbnRzIHwKfCBUYWJsZXQgfCA3NjjigJMxMDI0cHggfCAyLWNvbHVtbiBncmlkcyBiZWdpbiB8CnwgRGVza3RvcCB8IDEwMjTigJMxNDQwcHggfCBGdWxsIG11bHRpLWNvbHVtbiBsYXlvdXQgfAp8IExhcmdlIERlc2t0b3AgfCAxNDQw4oCTMjU2MHB4IHwgTWF4aW11bSBjb250YWluZXIgd2lkdGggfAoKKjI2IGJyZWFrcG9pbnRzIGRldGVjdGVkIOKAlCBvbmUgb2YgdGhlIG1vc3QgZ3JhbnVsYXJseSByZXNwb25zaXZlIHNpdGVzIGluIHRoZSBkYXRhc2V0LioKCiMjIyBUb3VjaCBUYXJnZXRzCi0gQnV0dG9ucyBhZGVxdWF0ZWx5IHNpemVkIGZvciB0b3VjaCBpbnRlcmFjdGlvbgotIE5hdmlnYXRpb24gbGlua3Mgd2l0aCBjb21mb3J0YWJsZSBzcGFjaW5nCi0gQ2FyZCBzdXJmYWNlcyBhcyB0b3VjaCB0YXJnZXRzCgojIyMgQ29sbGFwc2luZyBTdHJhdGVneQotICoqTmF2aWdhdGlvbioqOiBGdWxsIG5hdiBjb2xsYXBzZXMgdG8gaGFtYnVyZ2VyCi0gKipGZWF0dXJlIGdyaWRzKio6IE11bHRpLWNvbHVtbiDihpIgMi1jb2x1bW4g4oaSIHNpbmdsZSBjb2x1bW4KLSAqKkhlcm8gdGV4dCoqOiA3MnB4IOKGkiA0OHB4IOKGkiAzMnB4IHByb2dyZXNzaXZlIHNjYWxpbmcKLSAqKlB1cnBsZSBzZWN0aW9ucyoqOiBNYWludGFpbiBmdWxsLXdpZHRoLCBjb250ZW50IHN0YWNrcwotICoqQ2FyZCBncmlkcyoqOiAzIOKGkiAyIOKGkiAxIGNvbHVtbgoKIyMjIEltYWdlIEJlaGF2aW9yCi0gUGhvdG9ncmFwaHkgc2NhbGVzIHByb3BvcnRpb25hbGx5IHdpdGhpbiAyMnB4LXJhZGl1cyBjb250YWluZXJzCi0gUHJvZHVjdCBzY3JlZW5zaG90cyBtYWludGFpbiBhc3BlY3QgcmF0aW8KLSBQdXJwbGUgc2VjdGlvbnMgc2NhbGUgYmFja2dyb3VuZCBwcm9wb3J0aW9uYWxseQoKIyMgOS4gQWdlbnQgUHJvbXB0IEd1aWRlCgojIyMgUXVpY2sgQ29sb3IgUmVmZXJlbmNlCi0gUHJpbWFyeSBUZXh0OiAiQ29oZXJlIEJsYWNrICgjMDAwMDAwKSIKLSBQYWdlIEJhY2tncm91bmQ6ICJQdXJlIFdoaXRlICgjZmZmZmZmKSIKLSBTZWNvbmRhcnkgVGV4dDogIk5lYXIgQmxhY2sgKCMyMTIxMjEpIgotIEhvdmVyIEFjY2VudDogIkludGVyYWN0aW9uIEJsdWUgKCMxODYzZGMpIgotIE11dGVkIFRleHQ6ICJNdXRlZCBTbGF0ZSAoIzkzOTM5ZikiCi0gQ2FyZCBCb3JkZXJzOiAiTGlnaHRlc3QgR3JheSAoI2YyZjJmMikiCi0gU2VjdGlvbiBCb3JkZXJzOiAiQm9yZGVyIENvb2wgKCNkOWQ5ZGQpIgoKIyMjIEV4YW1wbGUgQ29tcG9uZW50IFByb21wdHMKLSAiQ3JlYXRlIGEgaGVybyBzZWN0aW9uIG9uIFB1cmUgV2hpdGUgKCNmZmZmZmYpIHdpdGggQ29oZXJlVGV4dCBhdCA3MnB4IHdlaWdodCA0MDAsIGxpbmUtaGVpZ2h0IDEuMCwgbGV0dGVyLXNwYWNpbmcgLTEuNDRweC4gQ29oZXJlIEJsYWNrIHRleHQuIFN1YnRpdGxlIGluIFVuaWNhNzcgYXQgMThweCB3ZWlnaHQgNDAwLCBsaW5lLWhlaWdodCAxLjQuIgotICJEZXNpZ24gYSBmZWF0dXJlIGNhcmQgd2l0aCAyMnB4IGJvcmRlci1yYWRpdXMsIDFweCBzb2xpZCBMaWdodGVzdCBHcmF5ICgjZjJmMmYyKSBib3JkZXIgb24gd2hpdGUuIFRpdGxlIGluIFVuaWNhNzcgYXQgMzJweCwgbGV0dGVyLXNwYWNpbmcgLTAuMzJweC4gQm9keSBpbiBVbmljYTc3IGF0IDE2cHgsIE11dGVkIFNsYXRlICgjOTM5MzlmKS4iCi0gIkJ1aWxkIGEgZ2hvc3QgYnV0dG9uOiB0cmFuc3BhcmVudCBiYWNrZ3JvdW5kLCBDb2hlcmUgQmxhY2sgdGV4dCBpbiBVbmljYTc3IGF0IDE2cHguIE9uIGhvdmVyLCB0ZXh0IHNoaWZ0cyB0byBJbnRlcmFjdGlvbiBCbHVlICgjMTg2M2RjKSB3aXRoIDAuOCBvcGFjaXR5LiBGb2N1czogMnB4IHNvbGlkIEludGVyYWN0aW9uIEJsdWUgb3V0bGluZS4iCi0gIkNyZWF0ZSBhIGRlZXAgcHVycGxlIGZ1bGwtd2lkdGggc2VjdGlvbiB3aXRoIHdoaXRlIHRleHQuIENvaGVyZVRleHQgYXQgNjBweCBmb3IgdGhlIGhlYWRpbmcuIFByb2R1Y3Qgc2NyZWVuc2hvdCBmbG9hdHMgd2l0aGluIHVzaW5nIDIycHggYm9yZGVyLXJhZGl1cy4iCi0gIkRlc2lnbiBhIHNlY3Rpb24gbGFiZWwgdXNpbmcgQ29oZXJlTW9ubyBhdCAxNHB4LCB1cHBlcmNhc2UsIGxldHRlci1zcGFjaW5nIDAuMjhweC4gTXV0ZWQgU2xhdGUgKCM5MzkzOWYpIHRleHQuIgoKIyMjIEl0ZXJhdGlvbiBHdWlkZQoxLiBGb2N1cyBvbiBPTkUgY29tcG9uZW50IGF0IGEgdGltZQoyLiBBbHdheXMgdXNlIDIycHggcmFkaXVzIGZvciBwcmltYXJ5IGNhcmRzIOKAlCAidGhlIENvaGVyZSBjYXJkIHJvdW5kbmVzcyIKMy4gU3BlY2lmeSB0aGUgdHlwZWZhY2Ug4oCUIENvaGVyZVRleHQgZm9yIGhlYWRsaW5lcywgVW5pY2E3NyBmb3IgYm9keSwgQ29oZXJlTW9ubyBmb3IgbGFiZWxzCjQuIEludGVyYWN0aXZlIGVsZW1lbnRzIHVzZSBJbnRlcmFjdGlvbiBCbHVlICgjMTg2M2RjKSBvbiBob3ZlciBvbmx5CjUuIEtlZXAgc3VyZmFjZXMgd2hpdGUgd2l0aCBjb29sIGdyYXkgYm9yZGVycyDigJQgbm8gd2FybSB0b25lcwo2LiBQdXJwbGUgaXMgZm9yIGZ1bGwtd2lkdGggc2VjdGlvbnMsIG5ldmVyIGNhcmQgYmFja2dyb3VuZHMK
+# Design System: Cohere
+
+
+> **Hermes Agent — Implementation Notes**
+>
+> The original site uses proprietary fonts. For self-contained HTML output, use these CDN substitutes:
+> - **Primary:** `Inter` | **Mono:** `JetBrains Mono`
+> - **Font stack (CSS):** `font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;`
+> - **Mono stack (CSS):** `font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;`
+> ```html
+> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+> ```
+> Use `write_file` to create HTML, serve via `generative-widgets` skill (cloudflared tunnel).
+> Verify visual accuracy with `browser_vision` after generating.
+
+## 1. Visual Theme & Atmosphere
+
+Cohere's interface is a polished enterprise command deck — confident, clean, and designed to make AI feel like serious infrastructure rather than a consumer toy. The experience lives on a bright white canvas where content is organized into generously rounded cards (22px radius) that create an organic, cloud-like containment language. This is a site that speaks to CTOs and enterprise architects: professional without being cold, sophisticated without being intimidating.
+
+The design language bridges two worlds with a dual-typeface system: CohereText, a custom display serif with tight tracking, gives headlines the gravitas of a technology manifesto, while Unica77 Cohere Web handles all body and UI text with geometric Swiss precision. This serif/sans pairing creates a "confident authority meets engineering clarity" personality that perfectly reflects an enterprise AI platform.
+
+Color is used with extreme restraint — the interface is almost entirely black-and-white with cool gray borders (`#d9d9dd`, `#e5e7eb`). Purple-violet appears only in photographic hero bands, gradient sections, and the interactive blue (`#1863dc`) that signals hover and focus states. This chromatic restraint means that when color DOES appear — in product screenshots, enterprise photography, and the deep purple section — it carries maximum visual weight.
+
+**Key Characteristics:**
+- Bright white canvas with cool gray containment borders
+- 22px signature border-radius — the distinctive "Cohere card" roundness
+- Dual custom typeface: CohereText (display serif) + Unica77 (body sans)
+- Enterprise-grade chromatic restraint: black, white, cool grays, minimal purple-blue accent
+- Deep purple/violet hero sections providing dramatic contrast
+- Ghost/transparent buttons that shift to blue on hover
+- Enterprise photography showing diverse real-world applications
+- CohereMono for code and technical labels with uppercase transforms
+
+## 2. Color Palette & Roles
+
+### Primary
+- **Cohere Black** (`#000000`): Primary headline text and maximum-emphasis elements.
+- **Near Black** (`#212121`): Standard body link color — slightly softer than pure black.
+- **Deep Dark** (`#17171c`): A blue-tinted near-black for navigation and dark-section text.
+
+### Secondary & Accent
+- **Interaction Blue** (`#1863dc`): The primary interactive accent — appears on button hover, focus states, and active links. The sole chromatic action color.
+- **Ring Blue** (`#4c6ee6` at 50%): Tailwind ring color for keyboard focus indicators.
+- **Focus Purple** (`#9b60aa`): Input focus border color — a muted violet.
+
+### Surface & Background
+- **Pure White** (`#ffffff`): The primary page background and card surface.
+- **Snow** (`#fafafa`): Subtle elevated surfaces and light-section backgrounds.
+- **Lightest Gray** (`#f2f2f2`): Card borders and the softest containment lines.
+
+### Neutrals & Text
+- **Muted Slate** (`#93939f`): De-emphasized footer links and tertiary text — a cool-toned gray with a slight blue-violet tint.
+- **Border Cool** (`#d9d9dd`): Standard section and list-item borders — a cool, slightly purple-tinted gray.
+- **Border Light** (`#e5e7eb`): Lighter border variant — Tailwind's standard gray-200.
+
+### Gradient System
+- **Purple-Violet Hero Band**: Deep purple gradient sections that create dramatic contrast against the white canvas. These appear as full-width bands housing product screenshots and key messaging.
+- **Dark Footer Gradient**: The page transitions through deep purple/charcoal to the black footer, creating a "dusk" effect.
+
+## 3. Typography Rules
+
+### Font Family
+- **Display**: `CohereText`, with fallbacks: `Space Grotesk, Inter, ui-sans-serif, system-ui`
+- **Body / UI**: `Unica77 Cohere Web`, with fallbacks: `Inter, Arial, ui-sans-serif, system-ui`
+- **Code**: `CohereMono`, with fallbacks: `Arial, ui-sans-serif, system-ui`
+- **Icons**: `CohereIconDefault` (custom icon font)
+
+### Hierarchy
+
+| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
+|------|------|------|--------|-------------|----------------|-------|
+| Display / Hero | CohereText | 72px (4.5rem) | 400 | 1.00 (tight) | -1.44px | Maximum impact, serif authority |
+| Display Secondary | CohereText | 60px (3.75rem) | 400 | 1.00 (tight) | -1.2px | Large section headings |
+| Section Heading | Unica77 | 48px (3rem) | 400 | 1.20 (tight) | -0.48px | Feature section titles |
+| Sub-heading | Unica77 | 32px (2rem) | 400 | 1.20 (tight) | -0.32px | Card headings, feature names |
+| Feature Title | Unica77 | 24px (1.5rem) | 400 | 1.30 | normal | Smaller section titles |
+| Body Large | Unica77 | 18px (1.13rem) | 400 | 1.40 | normal | Intro paragraphs |
+| Body / Button | Unica77 | 16px (1rem) | 400 | 1.50 | normal | Standard body, button text |
+| Button Medium | Unica77 | 14px (0.88rem) | 500 | 1.71 (relaxed) | normal | Smaller buttons, emphasized labels |
+| Caption | Unica77 | 14px (0.88rem) | 400 | 1.40 | normal | Metadata, descriptions |
+| Uppercase Label | Unica77 / CohereMono | 14px (0.88rem) | 400 | 1.40 | 0.28px | Uppercase section labels |
+| Small | Unica77 | 12px (0.75rem) | 400 | 1.40 | normal | Smallest text, footer links |
+| Code Micro | CohereMono | 8px (0.5rem) | 400 | 1.40 | 0.16px | Tiny uppercase code labels |
+
+### Principles
+- **Serif for declaration, sans for utility**: CohereText carries the brand voice at display scale — its serif terminals give headlines the authority of published research. Unica77 handles everything functional with Swiss-geometric neutrality.
+- **Negative tracking at scale**: CohereText uses -1.2px to -1.44px letter-spacing at 60–72px, creating dense, impactful text blocks.
+- **Single body weight**: Nearly all Unica77 usage is weight 400. Weight 500 appears only for small button emphasis. The system relies on size and spacing, not weight contrast.
+- **Uppercase code labels**: CohereMono uses uppercase with positive letter-spacing (0.16–0.28px) for technical tags and section markers.
+
+## 4. Component Stylings
+
+### Buttons
+
+**Ghost / Transparent**
+- Background: transparent (`rgba(255, 255, 255, 0)`)
+- Text: Cohere Black (`#000000`)
+- No border visible
+- Hover: text shifts to Interaction Blue (`#1863dc`), opacity 0.8
+- Focus: solid 2px outline in Interaction Blue
+- The primary button style — invisible until interacted with
+
+**Dark Solid**
+- Background: dark/black
+- Text: Pure White
+- For CTA on light surfaces
+- Pill-shaped or standard radius
+
+**Outlined**
+- Border-based containment
+- Used in secondary actions
+
+### Cards & Containers
+- Background: Pure White (`#ffffff`)
+- Border: thin solid Lightest Gray (`1px solid #f2f2f2`) for subtle cards; Cool Border (`#d9d9dd`) for emphasized
+- Radius: **22px** — the signature Cohere radius for primary cards, images, and dialog containers. Also 4px, 8px, 16px, 20px for smaller elements
+- Shadow: minimal — Cohere relies on background color and borders rather than shadows
+- Special: `0px 0px 22px 22px` radius (bottom-only rounding) for section containers
+- Dialog: 8px radius for modal/dialog boxes
+
+### Inputs & Forms
+- Text: white on dark input, black on light
+- Focus border: Focus Purple (`#9b60aa`) with `1px solid`
+- Focus shadow: red ring (`rgb(179, 0, 0) 0px 0px 0px 2px`) — likely for error state indication
+- Focus outline: Interaction Blue solid 2px
+
+### Navigation
+- Clean horizontal nav on white or dark background
+- Logo: Cohere wordmark (custom SVG)
+- Links: Dark text at 16px Unica77
+- CTA: Dark solid button
+- Mobile: hamburger collapse
+
+### Image Treatment
+- Enterprise photography with diverse subjects and environments
+- Purple-tinted hero photography for dramatic sections
+- Product UI screenshots on dark surfaces
+- Images with 22px radius matching card system
+- Full-bleed purple gradient sections
+
+### Distinctive Components
+
+**22px Card System**
+- The 22px border-radius is Cohere's visual signature
+- All primary cards, images, and containers use this radius
+- Creates a cloud-like, organic softness that's distinctive from the typical 8–12px
+
+**Enterprise Trust Bar**
+- Company logos displayed in a horizontal strip
+- Demonstrates enterprise adoption
+- Clean, monochrome logo treatment
+
+**Purple Hero Bands**
+- Full-width deep purple sections housing product showcases
+- Create dramatic visual breaks in the white page flow
+- Product screenshots float within the purple environment
+
+**Uppercase Code Tags**
+- CohereMono in uppercase with letter-spacing
+- Used as section markers and categorization labels
+- Creates a technical, structured information hierarchy
+
+## 5. Layout Principles
+
+### Spacing System
+- Base unit: 8px
+- Scale: 2px, 6px, 8px, 10px, 12px, 16px, 20px, 22px, 24px, 28px, 32px, 36px, 40px, 56px, 60px
+- Button padding varies by variant
+- Card internal padding: approximately 24–32px
+- Section vertical spacing: generous (56–60px between sections)
+
+### Grid & Container
+- Max container width: up to 2560px (very wide) with responsive scaling
+- Hero: centered with dramatic typography
+- Feature sections: multi-column card grids
+- Enterprise sections: full-width purple bands
+- 26 breakpoints detected — extremely granular responsive system
+
+### Whitespace Philosophy
+- **Enterprise clarity**: Each section presents one clear proposition with breathing room between.
+- **Photography as hero**: Large photographic sections provide visual interest without requiring decorative design elements.
+- **Card grouping**: Related content is grouped into 22px-rounded cards, creating natural information clusters.
+
+### Border Radius Scale
+- Sharp (4px): Navigation elements, small tags, pagination
+- Comfortable (8px): Dialog boxes, secondary containers, small cards
+- Generous (16px): Featured containers, medium cards
+- Large (20px): Large feature cards
+- Signature (22px): Primary cards, hero images, main containers — THE Cohere radius
+- Pill (9999px): Buttons, tags, status indicators
+
+## 6. Depth & Elevation
+
+| Level | Treatment | Use |
+|-------|-----------|-----|
+| Flat (Level 0) | No shadow, no border | Page background, text blocks |
+| Bordered (Level 1) | `1px solid #f2f2f2` or `#d9d9dd` | Standard cards, list separators |
+| Purple Band (Level 2) | Full-width dark purple background | Hero sections, feature showcases |
+
+**Shadow Philosophy**: Cohere is nearly shadow-free. Depth is communicated through **background color contrast** (white cards on purple bands, white surface on snow), **border containment** (cool gray borders), and the dramatic **light-to-dark section alternation**. When elements need elevation, they achieve it through being white-on-dark rather than through shadow casting.
+
+## 7. Do's and Don'ts
+
+### Do
+- Use 22px border-radius on all primary cards and containers — it's the visual signature
+- Use CohereText for display headings (72px, 60px) with negative letter-spacing
+- Use Unica77 for all body and UI text at weight 400
+- Keep the palette black-and-white with cool gray borders
+- Use Interaction Blue (#1863dc) only for hover/focus interactive states
+- Use deep purple sections for dramatic visual breaks and product showcases
+- Apply uppercase + letter-spacing on CohereMono for section labels
+- Maintain enterprise-appropriate photography with diverse subjects
+
+### Don't
+- Don't use border-radius other than 22px on primary cards — the signature radius matters
+- Don't introduce warm colors — the palette is strictly cool-toned
+- Don't use heavy shadows — depth comes from color contrast and borders
+- Don't use bold (700+) weight on body text — 400–500 is the range
+- Don't skip the serif/sans hierarchy — CohereText for headlines, Unica77 for body
+- Don't use purple as a surface color for cards — purple is reserved for full-width sections
+- Don't reduce section spacing below 40px — enterprise layouts need breathing room
+- Don't use decoration on buttons by default — ghost/transparent is the base state
+
+## 8. Responsive Behavior
+
+### Breakpoints
+| Name | Width | Key Changes |
+|------|-------|-------------|
+| Small Mobile | <425px | Compact layout, minimal spacing |
+| Mobile | 425–640px | Single column, stacked cards |
+| Large Mobile | 640–768px | Minor spacing adjustments |
+| Tablet | 768–1024px | 2-column grids begin |
+| Desktop | 1024–1440px | Full multi-column layout |
+| Large Desktop | 1440–2560px | Maximum container width |
+
+*26 breakpoints detected — one of the most granularly responsive sites in the dataset.*
+
+### Touch Targets
+- Buttons adequately sized for touch interaction
+- Navigation links with comfortable spacing
+- Card surfaces as touch targets
+
+### Collapsing Strategy
+- **Navigation**: Full nav collapses to hamburger
+- **Feature grids**: Multi-column → 2-column → single column
+- **Hero text**: 72px → 48px → 32px progressive scaling
+- **Purple sections**: Maintain full-width, content stacks
+- **Card grids**: 3 → 2 → 1 column
+
+### Image Behavior
+- Photography scales proportionally within 22px-radius containers
+- Product screenshots maintain aspect ratio
+- Purple sections scale background proportionally
+
+## 9. Agent Prompt Guide
+
+### Quick Color Reference
+- Primary Text: "Cohere Black (#000000)"
+- Page Background: "Pure White (#ffffff)"
+- Secondary Text: "Near Black (#212121)"
+- Hover Accent: "Interaction Blue (#1863dc)"
+- Muted Text: "Muted Slate (#93939f)"
+- Card Borders: "Lightest Gray (#f2f2f2)"
+- Section Borders: "Border Cool (#d9d9dd)"
+
+### Example Component Prompts
+- "Create a hero section on Pure White (#ffffff) with CohereText at 72px weight 400, line-height 1.0, letter-spacing -1.44px. Cohere Black text. Subtitle in Unica77 at 18px weight 400, line-height 1.4."
+- "Design a feature card with 22px border-radius, 1px solid Lightest Gray (#f2f2f2) border on white. Title in Unica77 at 32px, letter-spacing -0.32px. Body in Unica77 at 16px, Muted Slate (#93939f)."
+- "Build a ghost button: transparent background, Cohere Black text in Unica77 at 16px. On hover, text shifts to Interaction Blue (#1863dc) with 0.8 opacity. Focus: 2px solid Interaction Blue outline."
+- "Create a deep purple full-width section with white text. CohereText at 60px for the heading. Product screenshot floats within using 22px border-radius."
+- "Design a section label using CohereMono at 14px, uppercase, letter-spacing 0.28px. Muted Slate (#93939f) text."
+
+### Iteration Guide
+1. Focus on ONE component at a time
+2. Always use 22px radius for primary cards — "the Cohere card roundness"
+3. Specify the typeface — CohereText for headlines, Unica77 for body, CohereMono for labels
+4. Interactive elements use Interaction Blue (#1863dc) on hover only
+5. Keep surfaces white with cool gray borders — no warm tones
+6. Purple is for full-width sections, never card backgrounds

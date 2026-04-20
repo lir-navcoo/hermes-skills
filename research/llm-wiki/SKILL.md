@@ -1,1 +1,450 @@
-LS0tCm5hbWU6IGxsbS13aWtpCmRlc2NyaXB0aW9uOiAiS2FycGF0aHkncyBMTE0gV2lraSDigJQgYnVpbGQgYW5kIG1haW50YWluIGEgcGVyc2lzdGVudCwgaW50ZXJsaW5rZWQgbWFya2Rvd24ga25vd2xlZGdlIGJhc2UuIEluZ2VzdCBzb3VyY2VzLCBxdWVyeSBjb21waWxlZCBrbm93bGVkZ2UsIGFuZCBsaW50IGZvciBjb25zaXN0ZW5jeS4iCnZlcnNpb246IDIuMC4wCmF1dGhvcjogSGVybWVzIEFnZW50CmxpY2Vuc2U6IE1JVAptZXRhZGF0YToKICBoZXJtZXM6CiAgICB0YWdzOiBbd2lraSwga25vd2xlZGdlLWJhc2UsIHJlc2VhcmNoLCBub3RlcywgbWFya2Rvd24sIHJhZy1hbHRlcm5hdGl2ZV0KICAgIGNhdGVnb3J5OiByZXNlYXJjaAogICAgcmVsYXRlZF9za2lsbHM6IFtvYnNpZGlhbiwgYXJ4aXYsIGFnZW50aWMtcmVzZWFyY2gtaWRlYXNdCi0tLQoKIyBLYXJwYXRoeSdzIExMTSBXaWtpCgpCdWlsZCBhbmQgbWFpbnRhaW4gYSBwZXJzaXN0ZW50LCBjb21wb3VuZGluZyBrbm93bGVkZ2UgYmFzZSBhcyBpbnRlcmxpbmtlZCBtYXJrZG93biBmaWxlcy4KQmFzZWQgb24gW0FuZHJlaiBLYXJwYXRoeSdzIExMTSBXaWtpIHBhdHRlcm5dKGh0dHBzOi8vZ2lzdC5naXRodWIuY29tL2thcnBhdGh5LzQ0MmE2YmY1NTU5MTQ4OTNlOTg5MWMxMTUxOWRlOTRmKS4KClVubGlrZSB0cmFkaXRpb25hbCBSQUcgKHdoaWNoIHJlZGlzY292ZXJzIGtub3dsZWRnZSBmcm9tIHNjcmF0Y2ggcGVyIHF1ZXJ5KSwgdGhlIHdpa2kKY29tcGlsZXMga25vd2xlZGdlIG9uY2UgYW5kIGtlZXBzIGl0IGN1cnJlbnQuIENyb3NzLXJlZmVyZW5jZXMgYXJlIGFscmVhZHkgdGhlcmUuCkNvbnRyYWRpY3Rpb25zIGhhdmUgYWxyZWFkeSBiZWVuIGZsYWdnZWQuIFN5bnRoZXNpcyByZWZsZWN0cyBldmVyeXRoaW5nIGluZ2VzdGVkLgoKKipEaXZpc2lvbiBvZiBsYWJvcjoqKiBUaGUgaHVtYW4gY3VyYXRlcyBzb3VyY2VzIGFuZCBkaXJlY3RzIGFuYWx5c2lzLiBUaGUgYWdlbnQKc3VtbWFyaXplcywgY3Jvc3MtcmVmZXJlbmNlcywgZmlsZXMsIGFuZCBtYWludGFpbnMgY29uc2lzdGVuY3kuCgojIyBXaGVuIFRoaXMgU2tpbGwgQWN0aXZhdGVzCgpVc2UgdGhpcyBza2lsbCB3aGVuIHRoZSB1c2VyOgotIEFza3MgdG8gY3JlYXRlLCBidWlsZCwgb3Igc3RhcnQgYSB3aWtpIG9yIGtub3dsZWRnZSBiYXNlCi0gQXNrcyB0byBpbmdlc3QsIGFkZCwgb3IgcHJvY2VzcyBhIHNvdXJjZSBpbnRvIHRoZWlyIHdpa2kKLSBBc2tzIGEgcXVlc3Rpb24gYW5kIGFuIGV4aXN0aW5nIHdpa2kgaXMgcHJlc2VudCBhdCB0aGUgY29uZmlndXJlZCBwYXRoCi0gQXNrcyB0byBsaW50LCBhdWRpdCwgb3IgaGVhbHRoLWNoZWNrIHRoZWlyIHdpa2kKLSBSZWZlcmVuY2VzIHRoZWlyIHdpa2ksIGtub3dsZWRnZSBiYXNlLCBvciAibm90ZXMiIGluIGEgcmVzZWFyY2ggY29udGV4dAoKIyMgV2lraSBMb2NhdGlvbgoKKipMb2NhdGlvbjoqKiBTZXQgdmlhIGBXSUtJX1BBVEhgIGVudmlyb25tZW50IHZhcmlhYmxlIChlLmcuIGluIGB+Ly5oZXJtZXMvLmVudmApLgoKSWYgdW5zZXQsIGRlZmF1bHRzIHRvIGB+L3dpa2lgLgoKYGBgYmFzaApXSUtJPSIke1dJS0lfUEFUSDotJEhPTUUvd2lraX0iCmBgYAoKVGhlIHdpa2kgaXMganVzdCBhIGRpcmVjdG9yeSBvZiBtYXJrZG93biBmaWxlcyDigJQgb3BlbiBpdCBpbiBPYnNpZGlhbiwgVlMgQ29kZSwgb3IKYW55IGVkaXRvci4gTm8gZGF0YWJhc2UsIG5vIHNwZWNpYWwgdG9vbGluZyByZXF1aXJlZC4KCiMjIEFyY2hpdGVjdHVyZTogVGhyZWUgTGF5ZXJzCgpgYGAKd2lraS8K4pSc4pSA4pSAIFNDSEVNQS5tZCAgICAgICAgICAgIyBDb252ZW50aW9ucywgc3RydWN0dXJlIHJ1bGVzLCBkb21haW4gY29uZmlnCuKUnOKUgOKUgCBpbmRleC5tZCAgICAgICAgICAgICMgU2VjdGlvbmVkIGNvbnRlbnQgY2F0YWxvZyB3aXRoIG9uZS1saW5lIHN1bW1hcmllcwrilJzilIDilIAgbG9nLm1kICAgICAgICAgICAgICAjIENocm9ub2xvZ2ljYWwgYWN0aW9uIGxvZyAoYXBwZW5kLW9ubHksIHJvdGF0ZWQgeWVhcmx5KQrilJzilIDilIAgcmF3LyAgICAgICAgICAgICAgICAjIExheWVyIDE6IEltbXV0YWJsZSBzb3VyY2UgbWF0ZXJpYWwK4pSCICAg4pSc4pSA4pSAIGFydGljbGVzLyAgICAgICAjIFdlYiBhcnRpY2xlcywgY2xpcHBpbmdzCuKUgiAgIOKUnOKUgOKUgCBwYXBlcnMvICAgICAgICAgIyBQREZzLCBhcnhpdiBwYXBlcnMK4pSCICAg4pSc4pSA4pSAIHRyYW5zY3JpcHRzLyAgICAjIE1lZXRpbmcgbm90ZXMsIGludGVydmlld3MK4pSCICAg4pSU4pSA4pSAIGFzc2V0cy8gICAgICAgICAjIEltYWdlcywgZGlhZ3JhbXMgcmVmZXJlbmNlZCBieSBzb3VyY2VzCuKUnOKUgOKUgCBlbnRpdGllcy8gICAgICAgICAgICMgTGF5ZXIgMjogRW50aXR5IHBhZ2VzIChwZW9wbGUsIG9yZ3MsIHByb2R1Y3RzLCBtb2RlbHMpCuKUnOKUgOKUgCBjb25jZXB0cy8gICAgICAgICAgICMgTGF5ZXIgMjogQ29uY2VwdC90b3BpYyBwYWdlcwrilJzilIDilIAgY29tcGFyaXNvbnMvICAgICAgICAjIExheWVyIDI6IFNpZGUtYnktc2lkZSBhbmFseXNlcwrilJTilIDilIAgcXVlcmllcy8gICAgICAgICAgICAjIExheWVyIDI6IEZpbGVkIHF1ZXJ5IHJlc3VsdHMgd29ydGgga2VlcGluZwpgYGAKCioqTGF5ZXIgMSDigJQgUmF3IFNvdXJjZXM6KiogSW1tdXRhYmxlLiBUaGUgYWdlbnQgcmVhZHMgYnV0IG5ldmVyIG1vZGlmaWVzIHRoZXNlLgoqKkxheWVyIDIg4oCUIFRoZSBXaWtpOioqIEFnZW50LW93bmVkIG1hcmtkb3duIGZpbGVzLiBDcmVhdGVkLCB1cGRhdGVkLCBhbmQKY3Jvc3MtcmVmZXJlbmNlZCBieSB0aGUgYWdlbnQuCioqTGF5ZXIgMyDigJQgVGhlIFNjaGVtYToqKiBgU0NIRU1BLm1kYCBkZWZpbmVzIHN0cnVjdHVyZSwgY29udmVudGlvbnMsIGFuZCB0YWcgdGF4b25vbXkuCgojIyBSZXN1bWluZyBhbiBFeGlzdGluZyBXaWtpIChDUklUSUNBTCDigJQgZG8gdGhpcyBldmVyeSBzZXNzaW9uKQoKV2hlbiB0aGUgdXNlciBoYXMgYW4gZXhpc3Rpbmcgd2lraSwgKiphbHdheXMgb3JpZW50IHlvdXJzZWxmIGJlZm9yZSBkb2luZyBhbnl0aGluZyoqOgoK4pGgICoqUmVhZCBgU0NIRU1BLm1kYCoqIOKAlCB1bmRlcnN0YW5kIHRoZSBkb21haW4sIGNvbnZlbnRpb25zLCBhbmQgdGFnIHRheG9ub215LgrikaEgKipSZWFkIGBpbmRleC5tZGAqKiDigJQgbGVhcm4gd2hhdCBwYWdlcyBleGlzdCBhbmQgdGhlaXIgc3VtbWFyaWVzLgrikaIgKipTY2FuIHJlY2VudCBgbG9nLm1kYCoqIOKAlCByZWFkIHRoZSBsYXN0IDIwLTMwIGVudHJpZXMgdG8gdW5kZXJzdGFuZCByZWNlbnQgYWN0aXZpdHkuCgpgYGBiYXNoCldJS0k9IiR7V0lLSV9QQVRIOi0kSE9NRS93aWtpfSIKIyBPcmllbnRhdGlvbiByZWFkcyBhdCBzZXNzaW9uIHN0YXJ0CnJlYWRfZmlsZSAiJFdJS0kvU0NIRU1BLm1kIgpyZWFkX2ZpbGUgIiRXSUtJL2luZGV4Lm1kIgpyZWFkX2ZpbGUgIiRXSUtJL2xvZy5tZCIgb2Zmc2V0PTxsYXN0IDMwIGxpbmVzPgpgYGAKCk9ubHkgYWZ0ZXIgb3JpZW50YXRpb24gc2hvdWxkIHlvdSBpbmdlc3QsIHF1ZXJ5LCBvciBsaW50LiBUaGlzIHByZXZlbnRzOgotIENyZWF0aW5nIGR1cGxpY2F0ZSBwYWdlcyBmb3IgZW50aXRpZXMgdGhhdCBhbHJlYWR5IGV4aXN0Ci0gTWlzc2luZyBjcm9zcy1yZWZlcmVuY2VzIHRvIGV4aXN0aW5nIGNvbnRlbnQKLSBDb250cmFkaWN0aW5nIHRoZSBzY2hlbWEncyBjb252ZW50aW9ucwotIFJlcGVhdGluZyB3b3JrIGFscmVhZHkgbG9nZ2VkCgpGb3IgbGFyZ2Ugd2lraXMgKDEwMCsgcGFnZXMpLCBhbHNvIHJ1biBhIHF1aWNrIGBzZWFyY2hfZmlsZXNgIGZvciB0aGUgdG9waWMKYXQgaGFuZCBiZWZvcmUgY3JlYXRpbmcgYW55dGhpbmcgbmV3LgoKIyMgSW5pdGlhbGl6aW5nIGEgTmV3IFdpa2kKCldoZW4gdGhlIHVzZXIgYXNrcyB0byBjcmVhdGUgb3Igc3RhcnQgYSB3aWtpOgoKMS4gRGV0ZXJtaW5lIHRoZSB3aWtpIHBhdGggKGZyb20gYCRXSUtJX1BBVEhgIGVudiB2YXIsIG9yIGFzayB0aGUgdXNlcjsgZGVmYXVsdCBgfi93aWtpYCkKMi4gQ3JlYXRlIHRoZSBkaXJlY3Rvcnkgc3RydWN0dXJlIGFib3ZlCjMuIEFzayB0aGUgdXNlciB3aGF0IGRvbWFpbiB0aGUgd2lraSBjb3ZlcnMg4oCUIGJlIHNwZWNpZmljCjQuIFdyaXRlIGBTQ0hFTUEubWRgIGN1c3RvbWl6ZWQgdG8gdGhlIGRvbWFpbiAoc2VlIHRlbXBsYXRlIGJlbG93KQo1LiBXcml0ZSBpbml0aWFsIGBpbmRleC5tZGAgd2l0aCBzZWN0aW9uZWQgaGVhZGVyCjYuIFdyaXRlIGluaXRpYWwgYGxvZy5tZGAgd2l0aCBjcmVhdGlvbiBlbnRyeQo3LiBDb25maXJtIHRoZSB3aWtpIGlzIHJlYWR5IGFuZCBzdWdnZXN0IGZpcnN0IHNvdXJjZXMgdG8gaW5nZXN0CgojIyMgU0NIRU1BLm1kIFRlbXBsYXRlCgpBZGFwdCB0byB0aGUgdXNlcidzIGRvbWFpbi4gVGhlIHNjaGVtYSBjb25zdHJhaW5zIGFnZW50IGJlaGF2aW9yIGFuZCBlbnN1cmVzIGNvbnNpc3RlbmN5OgoKYGBgbWFya2Rvd24KIyBXaWtpIFNjaGVtYQoKIyMgRG9tYWluCltXaGF0IHRoaXMgd2lraSBjb3ZlcnMg4oCUIGUuZy4sICJBSS9NTCByZXNlYXJjaCIsICJwZXJzb25hbCBoZWFsdGgiLCAic3RhcnR1cCBpbnRlbGxpZ2VuY2UiXQoKIyMgQ29udmVudGlvbnMKLSBGaWxlIG5hbWVzOiBsb3dlcmNhc2UsIGh5cGhlbnMsIG5vIHNwYWNlcyAoZS5nLiwgYHRyYW5zZm9ybWVyLWFyY2hpdGVjdHVyZS5tZGApCi0gRXZlcnkgd2lraSBwYWdlIHN0YXJ0cyB3aXRoIFlBTUwgZnJvbnRtYXR0ZXIgKHNlZSBiZWxvdykKLSBVc2UgYFtbd2lraWxpbmtzXV1gIHRvIGxpbmsgYmV0d2VlbiBwYWdlcyAobWluaW11bSAyIG91dGJvdW5kIGxpbmtzIHBlciBwYWdlKQotIFdoZW4gdXBkYXRpbmcgYSBwYWdlLCBhbHdheXMgYnVtcCB0aGUgYHVwZGF0ZWRgIGRhdGUKLSBFdmVyeSBuZXcgcGFnZSBtdXN0IGJlIGFkZGVkIHRvIGBpbmRleC5tZGAgdW5kZXIgdGhlIGNvcnJlY3Qgc2VjdGlvbgotIEV2ZXJ5IGFjdGlvbiBtdXN0IGJlIGFwcGVuZGVkIHRvIGBsb2cubWRgCgojIyBGcm9udG1hdHRlcgogIGBgYHlhbWwKICAtLS0KICB0aXRsZTogUGFnZSBUaXRsZQogIGNyZWF0ZWQ6IFlZWVktTU0tREQKICB1cGRhdGVkOiBZWVlZLU1NLURECiAgdHlwZTogZW50aXR5IHwgY29uY2VwdCB8IGNvbXBhcmlzb24gfCBxdWVyeSB8IHN1bW1hcnkKICB0YWdzOiBbZnJvbSB0YXhvbm9teSBiZWxvd10KICBzb3VyY2VzOiBbcmF3L2FydGljbGVzL3NvdXJjZS1uYW1lLm1kXQogIC0tLQogIGBgYAoKIyMgVGFnIFRheG9ub215CltEZWZpbmUgMTAtMjAgdG9wLWxldmVsIHRhZ3MgZm9yIHRoZSBkb21haW4uIEFkZCBuZXcgdGFncyBoZXJlIEJFRk9SRSB1c2luZyB0aGVtLl0KCkV4YW1wbGUgZm9yIEFJL01MOgotIE1vZGVsczogbW9kZWwsIGFyY2hpdGVjdHVyZSwgYmVuY2htYXJrLCB0cmFpbmluZwotIFBlb3BsZS9PcmdzOiBwZXJzb24sIGNvbXBhbnksIGxhYiwgb3Blbi1zb3VyY2UKLSBUZWNobmlxdWVzOiBvcHRpbWl6YXRpb24sIGZpbmUtdHVuaW5nLCBpbmZlcmVuY2UsIGFsaWdubWVudCwgZGF0YQotIE1ldGE6IGNvbXBhcmlzb24sIHRpbWVsaW5lLCBjb250cm92ZXJzeSwgcHJlZGljdGlvbgoKUnVsZTogZXZlcnkgdGFnIG9uIGEgcGFnZSBtdXN0IGFwcGVhciBpbiB0aGlzIHRheG9ub215LiBJZiBhIG5ldyB0YWcgaXMgbmVlZGVkLAphZGQgaXQgaGVyZSBmaXJzdCwgdGhlbiB1c2UgaXQuIFRoaXMgcHJldmVudHMgdGFnIHNwcmF3bC4KCiMjIFBhZ2UgVGhyZXNob2xkcwotICoqQ3JlYXRlIGEgcGFnZSoqIHdoZW4gYW4gZW50aXR5L2NvbmNlcHQgYXBwZWFycyBpbiAyKyBzb3VyY2VzIE9SIGlzIGNlbnRyYWwgdG8gb25lIHNvdXJjZQotICoqQWRkIHRvIGV4aXN0aW5nIHBhZ2UqKiB3aGVuIGEgc291cmNlIG1lbnRpb25zIHNvbWV0aGluZyBhbHJlYWR5IGNvdmVyZWQKLSAqKkRPTidUIGNyZWF0ZSBhIHBhZ2UqKiBmb3IgcGFzc2luZyBtZW50aW9ucywgbWlub3IgZGV0YWlscywgb3IgdGhpbmdzIG91dHNpZGUgdGhlIGRvbWFpbgotICoqU3BsaXQgYSBwYWdlKiogd2hlbiBpdCBleGNlZWRzIH4yMDAgbGluZXMg4oCUIGJyZWFrIGludG8gc3ViLXRvcGljcyB3aXRoIGNyb3NzLWxpbmtzCi0gKipBcmNoaXZlIGEgcGFnZSoqIHdoZW4gaXRzIGNvbnRlbnQgaXMgZnVsbHkgc3VwZXJzZWRlZCDigJQgbW92ZSB0byBgX2FyY2hpdmUvYCwgcmVtb3ZlIGZyb20gaW5kZXgKCiMjIEVudGl0eSBQYWdlcwpPbmUgcGFnZSBwZXIgbm90YWJsZSBlbnRpdHkuIEluY2x1ZGU6Ci0gT3ZlcnZpZXcgLyB3aGF0IGl0IGlzCi0gS2V5IGZhY3RzIGFuZCBkYXRlcwotIFJlbGF0aW9uc2hpcHMgdG8gb3RoZXIgZW50aXRpZXMgKFtbd2lraWxpbmtzXV0pCi0gU291cmNlIHJlZmVyZW5jZXMKCiMjIENvbmNlcHQgUGFnZXMKT25lIHBhZ2UgcGVyIGNvbmNlcHQgb3IgdG9waWMuIEluY2x1ZGU6Ci0gRGVmaW5pdGlvbiAvIGV4cGxhbmF0aW9uCi0gQ3VycmVudCBzdGF0ZSBvZiBrbm93bGVkZ2UKLSBPcGVuIHF1ZXN0aW9ucyBvciBkZWJhdGVzCi0gUmVsYXRlZCBjb25jZXB0cyAoW1t3aWtpbGlua3NdXSkKCiMjIENvbXBhcmlzb24gUGFnZXMKU2lkZS1ieS1zaWRlIGFuYWx5c2VzLiBJbmNsdWRlOgotIFdoYXQgaXMgYmVpbmcgY29tcGFyZWQgYW5kIHdoeQotIERpbWVuc2lvbnMgb2YgY29tcGFyaXNvbiAodGFibGUgZm9ybWF0IHByZWZlcnJlZCkKLSBWZXJkaWN0IG9yIHN5bnRoZXNpcwotIFNvdXJjZXMKCiMjIFVwZGF0ZSBQb2xpY3kKV2hlbiBuZXcgaW5mb3JtYXRpb24gY29uZmxpY3RzIHdpdGggZXhpc3RpbmcgY29udGVudDoKMS4gQ2hlY2sgdGhlIGRhdGVzIOKAlCBuZXdlciBzb3VyY2VzIGdlbmVyYWxseSBzdXBlcnNlZGUgb2xkZXIgb25lcwoyLiBJZiBnZW51aW5lbHkgY29udHJhZGljdG9yeSwgbm90ZSBib3RoIHBvc2l0aW9ucyB3aXRoIGRhdGVzIGFuZCBzb3VyY2VzCjMuIE1hcmsgdGhlIGNvbnRyYWRpY3Rpb24gaW4gZnJvbnRtYXR0ZXI6IGBjb250cmFkaWN0aW9uczogW3BhZ2UtbmFtZV1gCjQuIEZsYWcgZm9yIHVzZXIgcmV2aWV3IGluIHRoZSBsaW50IHJlcG9ydApgYGAKCiMjIyBpbmRleC5tZCBUZW1wbGF0ZQoKVGhlIGluZGV4IGlzIHNlY3Rpb25lZCBieSB0eXBlLiBFYWNoIGVudHJ5IGlzIG9uZSBsaW5lOiB3aWtpbGluayArIHN1bW1hcnkuCgpgYGBtYXJrZG93bgojIFdpa2kgSW5kZXgKCj4gQ29udGVudCBjYXRhbG9nLiBFdmVyeSB3aWtpIHBhZ2UgbGlzdGVkIHVuZGVyIGl0cyB0eXBlIHdpdGggYSBvbmUtbGluZSBzdW1tYXJ5Lgo+IFJlYWQgdGhpcyBmaXJzdCB0byBmaW5kIHJlbGV2YW50IHBhZ2VzIGZvciBhbnkgcXVlcnkuCj4gTGFzdCB1cGRhdGVkOiBZWVlZLU1NLUREIHwgVG90YWwgcGFnZXM6IE4KCiMjIEVudGl0aWVzCjwhLS0gQWxwaGFiZXRpY2FsIHdpdGhpbiBzZWN0aW9uIC0tPgoKIyMgQ29uY2VwdHMKCiMjIENvbXBhcmlzb25zCgojIyBRdWVyaWVzCmBgYAoKKipTY2FsaW5nIHJ1bGU6KiogV2hlbiBhbnkgc2VjdGlvbiBleGNlZWRzIDUwIGVudHJpZXMsIHNwbGl0IGl0IGludG8gc3ViLXNlY3Rpb25zCmJ5IGZpcnN0IGxldHRlciBvciBzdWItZG9tYWluLiBXaGVuIHRoZSBpbmRleCBleGNlZWRzIDIwMCBlbnRyaWVzIHRvdGFsLCBjcmVhdGUKYSBgX21ldGEvdG9waWMtbWFwLm1kYCB0aGF0IGdyb3VwcyBwYWdlcyBieSB0aGVtZSBmb3IgZmFzdGVyIG5hdmlnYXRpb24uCgojIyMgbG9nLm1kIFRlbXBsYXRlCgpgYGBtYXJrZG93bgojIFdpa2kgTG9nCgo+IENocm9ub2xvZ2ljYWwgcmVjb3JkIG9mIGFsbCB3aWtpIGFjdGlvbnMuIEFwcGVuZC1vbmx5Lgo+IEZvcm1hdDogYCMjIFtZWVlZLU1NLUREXSBhY3Rpb24gfCBzdWJqZWN0YAo+IEFjdGlvbnM6IGluZ2VzdCwgdXBkYXRlLCBxdWVyeSwgbGludCwgY3JlYXRlLCBhcmNoaXZlLCBkZWxldGUKPiBXaGVuIHRoaXMgZmlsZSBleGNlZWRzIDUwMCBlbnRyaWVzLCByb3RhdGU6IHJlbmFtZSB0byBsb2ctWVlZWS5tZCwgc3RhcnQgZnJlc2guCgojIyBbWVlZWS1NTS1ERF0gY3JlYXRlIHwgV2lraSBpbml0aWFsaXplZAotIERvbWFpbjogW2RvbWFpbl0KLSBTdHJ1Y3R1cmUgY3JlYXRlZCB3aXRoIFNDSEVNQS5tZCwgaW5kZXgubWQsIGxvZy5tZApgYGAKCiMjIENvcmUgT3BlcmF0aW9ucwoKIyMjIDEuIEluZ2VzdAoKV2hlbiB0aGUgdXNlciBwcm92aWRlcyBhIHNvdXJjZSAoVVJMLCBmaWxlLCBwYXN0ZSksIGludGVncmF0ZSBpdCBpbnRvIHRoZSB3aWtpOgoK4pGgICoqQ2FwdHVyZSB0aGUgcmF3IHNvdXJjZToqKgogICAtIFVSTCDihpIgdXNlIGB3ZWJfZXh0cmFjdGAgdG8gZ2V0IG1hcmtkb3duLCBzYXZlIHRvIGByYXcvYXJ0aWNsZXMvYAogICAtIFBERiDihpIgdXNlIGB3ZWJfZXh0cmFjdGAgKGhhbmRsZXMgUERGcyksIHNhdmUgdG8gYHJhdy9wYXBlcnMvYAogICAtIFBhc3RlZCB0ZXh0IOKGkiBzYXZlIHRvIGFwcHJvcHJpYXRlIGByYXcvYCBzdWJkaXJlY3RvcnkKICAgLSBOYW1lIHRoZSBmaWxlIGRlc2NyaXB0aXZlbHk6IGByYXcvYXJ0aWNsZXMva2FycGF0aHktbGxtLXdpa2ktMjAyNi5tZGAKCuKRoSAqKkRpc2N1c3MgdGFrZWF3YXlzKiogd2l0aCB0aGUgdXNlciDigJQgd2hhdCdzIGludGVyZXN0aW5nLCB3aGF0IG1hdHRlcnMgZm9yCiAgIHRoZSBkb21haW4uIChTa2lwIHRoaXMgaW4gYXV0b21hdGVkL2Nyb24gY29udGV4dHMg4oCUIHByb2NlZWQgZGlyZWN0bHkuKQoK4pGiICoqQ2hlY2sgd2hhdCBhbHJlYWR5IGV4aXN0cyoqIOKAlCBzZWFyY2ggaW5kZXgubWQgYW5kIHVzZSBgc2VhcmNoX2ZpbGVzYCB0byBmaW5kCiAgIGV4aXN0aW5nIHBhZ2VzIGZvciBtZW50aW9uZWQgZW50aXRpZXMvY29uY2VwdHMuIFRoaXMgaXMgdGhlIGRpZmZlcmVuY2UgYmV0d2VlbgogICBhIGdyb3dpbmcgd2lraSBhbmQgYSBwaWxlIG9mIGR1cGxpY2F0ZXMuCgrikaMgKipXcml0ZSBvciB1cGRhdGUgd2lraSBwYWdlczoqKgogICAtICoqTmV3IGVudGl0aWVzL2NvbmNlcHRzOioqIENyZWF0ZSBwYWdlcyBvbmx5IGlmIHRoZXkgbWVldCB0aGUgUGFnZSBUaHJlc2hvbGRzCiAgICAgaW4gU0NIRU1BLm1kICgyKyBzb3VyY2UgbWVudGlvbnMsIG9yIGNlbnRyYWwgdG8gb25lIHNvdXJjZSkKICAgLSAqKkV4aXN0aW5nIHBhZ2VzOioqIEFkZCBuZXcgaW5mb3JtYXRpb24sIHVwZGF0ZSBmYWN0cywgYnVtcCBgdXBkYXRlZGAgZGF0ZS4KICAgICBXaGVuIG5ldyBpbmZvIGNvbnRyYWRpY3RzIGV4aXN0aW5nIGNvbnRlbnQsIGZvbGxvdyB0aGUgVXBkYXRlIFBvbGljeS4KICAgLSAqKkNyb3NzLXJlZmVyZW5jZToqKiBFdmVyeSBuZXcgb3IgdXBkYXRlZCBwYWdlIG11c3QgbGluayB0byBhdCBsZWFzdCAyIG90aGVyCiAgICAgcGFnZXMgdmlhIGBbW3dpa2lsaW5rc11dYC4gQ2hlY2sgdGhhdCBleGlzdGluZyBwYWdlcyBsaW5rIGJhY2suCiAgIC0gKipUYWdzOioqIE9ubHkgdXNlIHRhZ3MgZnJvbSB0aGUgdGF4b25vbXkgaW4gU0NIRU1BLm1kCgrikaQgKipVcGRhdGUgbmF2aWdhdGlvbjoqKgogICAtIEFkZCBuZXcgcGFnZXMgdG8gYGluZGV4Lm1kYCB1bmRlciB0aGUgY29ycmVjdCBzZWN0aW9uLCBhbHBoYWJldGljYWxseQogICAtIFVwZGF0ZSB0aGUgIlRvdGFsIHBhZ2VzIiBjb3VudCBhbmQgIkxhc3QgdXBkYXRlZCIgZGF0ZSBpbiBpbmRleCBoZWFkZXIKICAgLSBBcHBlbmQgdG8gYGxvZy5tZGA6IGAjIyBbWVlZWS1NTS1ERF0gaW5nZXN0IHwgU291cmNlIFRpdGxlYAogICAtIExpc3QgZXZlcnkgZmlsZSBjcmVhdGVkIG9yIHVwZGF0ZWQgaW4gdGhlIGxvZyBlbnRyeQoK4pGlICoqUmVwb3J0IHdoYXQgY2hhbmdlZCoqIOKAlCBsaXN0IGV2ZXJ5IGZpbGUgY3JlYXRlZCBvciB1cGRhdGVkIHRvIHRoZSB1c2VyLgoKQSBzaW5nbGUgc291cmNlIGNhbiB0cmlnZ2VyIHVwZGF0ZXMgYWNyb3NzIDUtMTUgd2lraSBwYWdlcy4gVGhpcyBpcyBub3JtYWwKYW5kIGRlc2lyZWQg4oCUIGl0J3MgdGhlIGNvbXBvdW5kaW5nIGVmZmVjdC4KCiMjIyAyLiBRdWVyeQoKV2hlbiB0aGUgdXNlciBhc2tzIGEgcXVlc3Rpb24gYWJvdXQgdGhlIHdpa2kncyBkb21haW46CgrikaAgKipSZWFkIGBpbmRleC5tZGAqKiB0byBpZGVudGlmeSByZWxldmFudCBwYWdlcy4K4pGhICoqRm9yIHdpa2lzIHdpdGggMTAwKyBwYWdlcyoqLCBhbHNvIGBzZWFyY2hfZmlsZXNgIGFjcm9zcyBhbGwgYC5tZGAgZmlsZXMKICAgZm9yIGtleSB0ZXJtcyDigJQgdGhlIGluZGV4IGFsb25lIG1heSBtaXNzIHJlbGV2YW50IGNvbnRlbnQuCuKRoiAqKlJlYWQgdGhlIHJlbGV2YW50IHBhZ2VzKiogdXNpbmcgYHJlYWRfZmlsZWAuCuKRoyAqKlN5bnRoZXNpemUgYW4gYW5zd2VyKiogZnJvbSB0aGUgY29tcGlsZWQga25vd2xlZGdlLiBDaXRlIHRoZSB3aWtpIHBhZ2VzCiAgIHlvdSBkcmV3IGZyb206ICJCYXNlZCBvbiBbW3BhZ2UtYV1dIGFuZCBbW3BhZ2UtYl1dLi4uIgrikaQgKipGaWxlIHZhbHVhYmxlIGFuc3dlcnMgYmFjayoqIOKAlCBpZiB0aGUgYW5zd2VyIGlzIGEgc3Vic3RhbnRpYWwgY29tcGFyaXNvbiwKICAgZGVlcCBkaXZlLCBvciBub3ZlbCBzeW50aGVzaXMsIGNyZWF0ZSBhIHBhZ2UgaW4gYHF1ZXJpZXMvYCBvciBgY29tcGFyaXNvbnMvYC4KICAgRG9uJ3QgZmlsZSB0cml2aWFsIGxvb2t1cHMg4oCUIG9ubHkgYW5zd2VycyB0aGF0IHdvdWxkIGJlIHBhaW5mdWwgdG8gcmUtZGVyaXZlLgrikaUgKipVcGRhdGUgbG9nLm1kKiogd2l0aCB0aGUgcXVlcnkgYW5kIHdoZXRoZXIgaXQgd2FzIGZpbGVkLgoKIyMjIDMuIExpbnQKCldoZW4gdGhlIHVzZXIgYXNrcyB0byBsaW50LCBoZWFsdGgtY2hlY2ssIG9yIGF1ZGl0IHRoZSB3aWtpOgoK4pGgICoqT3JwaGFuIHBhZ2VzOioqIEZpbmQgcGFnZXMgd2l0aCBubyBpbmJvdW5kIGBbW3dpa2lsaW5rc11dYCBmcm9tIG90aGVyIHBhZ2VzLgpgYGBweXRob24KIyBVc2UgZXhlY3V0ZV9jb2RlIGZvciB0aGlzIOKAlCBwcm9ncmFtbWF0aWMgc2NhbiBhY3Jvc3MgYWxsIHdpa2kgcGFnZXMKaW1wb3J0IG9zLCByZQpmcm9tIGNvbGxlY3Rpb25zIGltcG9ydCBkZWZhdWx0ZGljdAp3aWtpID0gIjxXSUtJX1BBVEg+IgojIFNjYW4gYWxsIC5tZCBmaWxlcyBpbiBlbnRpdGllcy8sIGNvbmNlcHRzLywgY29tcGFyaXNvbnMvLCBxdWVyaWVzLwojIEV4dHJhY3QgYWxsIFtbd2lraWxpbmtzXV0g4oCUIGJ1aWxkIGluYm91bmQgbGluayBtYXAKIyBQYWdlcyB3aXRoIHplcm8gaW5ib3VuZCBsaW5rcyBhcmUgb3JwaGFucwpgYGAKCuKRoSAqKkJyb2tlbiB3aWtpbGlua3M6KiogRmluZCBgW1tsaW5rc11dYCB0aGF0IHBvaW50IHRvIHBhZ2VzIHRoYXQgZG9uJ3QgZXhpc3QuCgrikaIgKipJbmRleCBjb21wbGV0ZW5lc3M6KiogRXZlcnkgd2lraSBwYWdlIHNob3VsZCBhcHBlYXIgaW4gYGluZGV4Lm1kYC4gQ29tcGFyZQogICB0aGUgZmlsZXN5c3RlbSBhZ2FpbnN0IGluZGV4IGVudHJpZXMuCgrikaMgKipGcm9udG1hdHRlciB2YWxpZGF0aW9uOioqIEV2ZXJ5IHdpa2kgcGFnZSBtdXN0IGhhdmUgYWxsIHJlcXVpcmVkIGZpZWxkcwogICAodGl0bGUsIGNyZWF0ZWQsIHVwZGF0ZWQsIHR5cGUsIHRhZ3MsIHNvdXJjZXMpLiBUYWdzIG11c3QgYmUgaW4gdGhlIHRheG9ub215LgoK4pGkICoqU3RhbGUgY29udGVudDoqKiBQYWdlcyB3aG9zZSBgdXBkYXRlZGAgZGF0ZSBpcyA+OTAgZGF5cyBvbGRlciB0aGFuIHRoZSBtb3N0CiAgIHJlY2VudCBzb3VyY2UgdGhhdCBtZW50aW9ucyB0aGUgc2FtZSBlbnRpdGllcy4KCuKRpSAqKkNvbnRyYWRpY3Rpb25zOioqIFBhZ2VzIG9uIHRoZSBzYW1lIHRvcGljIHdpdGggY29uZmxpY3RpbmcgY2xhaW1zLiBMb29rIGZvcgogICBwYWdlcyB0aGF0IHNoYXJlIHRhZ3MvZW50aXRpZXMgYnV0IHN0YXRlIGRpZmZlcmVudCBmYWN0cy4KCuKRpiAqKlBhZ2Ugc2l6ZToqKiBGbGFnIHBhZ2VzIG92ZXIgMjAwIGxpbmVzIOKAlCBjYW5kaWRhdGVzIGZvciBzcGxpdHRpbmcuCgrikacgKipUYWcgYXVkaXQ6KiogTGlzdCBhbGwgdGFncyBpbiB1c2UsIGZsYWcgYW55IG5vdCBpbiB0aGUgU0NIRU1BLm1kIHRheG9ub215LgoK4pGoICoqTG9nIHJvdGF0aW9uOioqIElmIGxvZy5tZCBleGNlZWRzIDUwMCBlbnRyaWVzLCByb3RhdGUgaXQuCgrikakgKipSZXBvcnQgZmluZGluZ3MqKiB3aXRoIHNwZWNpZmljIGZpbGUgcGF0aHMgYW5kIHN1Z2dlc3RlZCBhY3Rpb25zLCBncm91cGVkIGJ5CiAgIHNldmVyaXR5IChicm9rZW4gbGlua3MgPiBvcnBoYW5zID4gc3RhbGUgY29udGVudCA+IHN0eWxlIGlzc3VlcykuCgrikaogKipBcHBlbmQgdG8gbG9nLm1kOioqIGAjIyBbWVlZWS1NTS1ERF0gbGludCB8IE4gaXNzdWVzIGZvdW5kYAoKIyMgV29ya2luZyB3aXRoIHRoZSBXaWtpCgojIyMgU2VhcmNoaW5nCgpgYGBiYXNoCiMgRmluZCBwYWdlcyBieSBjb250ZW50CnNlYXJjaF9maWxlcyAidHJhbnNmb3JtZXIiIHBhdGg9IiRXSUtJIiBmaWxlX2dsb2I9IioubWQiCgojIEZpbmQgcGFnZXMgYnkgZmlsZW5hbWUKc2VhcmNoX2ZpbGVzICIqLm1kIiB0YXJnZXQ9ImZpbGVzIiBwYXRoPSIkV0lLSSIKCiMgRmluZCBwYWdlcyBieSB0YWcKc2VhcmNoX2ZpbGVzICJ0YWdzOi4qYWxpZ25tZW50IiBwYXRoPSIkV0lLSSIgZmlsZV9nbG9iPSIqLm1kIgoKIyBSZWNlbnQgYWN0aXZpdHkKcmVhZF9maWxlICIkV0lLSS9sb2cubWQiIG9mZnNldD08bGFzdCAyMCBsaW5lcz4KYGBgCgojIyMgQnVsayBJbmdlc3QKCldoZW4gaW5nZXN0aW5nIG11bHRpcGxlIHNvdXJjZXMgYXQgb25jZSwgYmF0Y2ggdGhlIHVwZGF0ZXM6CjEuIFJlYWQgYWxsIHNvdXJjZXMgZmlyc3QKMi4gSWRlbnRpZnkgYWxsIGVudGl0aWVzIGFuZCBjb25jZXB0cyBhY3Jvc3MgYWxsIHNvdXJjZXMKMy4gQ2hlY2sgZXhpc3RpbmcgcGFnZXMgZm9yIGFsbCBvZiB0aGVtIChvbmUgc2VhcmNoIHBhc3MsIG5vdCBOKQo0LiBDcmVhdGUvdXBkYXRlIHBhZ2VzIGluIG9uZSBwYXNzIChhdm9pZHMgcmVkdW5kYW50IHVwZGF0ZXMpCjUuIFVwZGF0ZSBpbmRleC5tZCBvbmNlIGF0IHRoZSBlbmQKNi4gV3JpdGUgYSBzaW5nbGUgbG9nIGVudHJ5IGNvdmVyaW5nIHRoZSBiYXRjaAoKIyMjIEFyY2hpdmluZwoKV2hlbiBjb250ZW50IGlzIGZ1bGx5IHN1cGVyc2VkZWQgb3IgdGhlIGRvbWFpbiBzY29wZSBjaGFuZ2VzOgoxLiBDcmVhdGUgYF9hcmNoaXZlL2AgZGlyZWN0b3J5IGlmIGl0IGRvZXNuJ3QgZXhpc3QKMi4gTW92ZSB0aGUgcGFnZSB0byBgX2FyY2hpdmUvYCB3aXRoIGl0cyBvcmlnaW5hbCBwYXRoIChlLmcuLCBgX2FyY2hpdmUvZW50aXRpZXMvb2xkLXBhZ2UubWRgKQozLiBSZW1vdmUgZnJvbSBgaW5kZXgubWRgCjQuIFVwZGF0ZSBhbnkgcGFnZXMgdGhhdCBsaW5rZWQgdG8gaXQg4oCUIHJlcGxhY2Ugd2lraWxpbmsgd2l0aCBwbGFpbiB0ZXh0ICsgIihhcmNoaXZlZCkiCjUuIExvZyB0aGUgYXJjaGl2ZSBhY3Rpb24KCiMjIyBPYnNpZGlhbiBJbnRlZ3JhdGlvbgoKVGhlIHdpa2kgZGlyZWN0b3J5IHdvcmtzIGFzIGFuIE9ic2lkaWFuIHZhdWx0IG91dCBvZiB0aGUgYm94OgotIGBbW3dpa2lsaW5rc11dYCByZW5kZXIgYXMgY2xpY2thYmxlIGxpbmtzCi0gR3JhcGggVmlldyB2aXN1YWxpemVzIHRoZSBrbm93bGVkZ2UgbmV0d29yawotIFlBTUwgZnJvbnRtYXR0ZXIgcG93ZXJzIERhdGF2aWV3IHF1ZXJpZXMKLSBUaGUgYHJhdy9hc3NldHMvYCBmb2xkZXIgaG9sZHMgaW1hZ2VzIHJlZmVyZW5jZWQgdmlhIGAhW1tpbWFnZS5wbmddXWAKCkZvciBiZXN0IHJlc3VsdHM6Ci0gU2V0IE9ic2lkaWFuJ3MgYXR0YWNobWVudCBmb2xkZXIgdG8gYHJhdy9hc3NldHMvYAotIEVuYWJsZSAiV2lraWxpbmtzIiBpbiBPYnNpZGlhbiBzZXR0aW5ncyAodXN1YWxseSBvbiBieSBkZWZhdWx0KQotIEluc3RhbGwgRGF0YXZpZXcgcGx1Z2luIGZvciBxdWVyaWVzIGxpa2UgYFRBQkxFIHRhZ3MgRlJPTSAiZW50aXRpZXMiIFdIRVJFIGNvbnRhaW5zKHRhZ3MsICJjb21wYW55IilgCgpJZiB1c2luZyB0aGUgT2JzaWRpYW4gc2tpbGwgYWxvbmdzaWRlIHRoaXMgb25lLCBzZXQgYE9CU0lESUFOX1ZBVUxUX1BBVEhgIHRvIHRoZQpzYW1lIGRpcmVjdG9yeSBhcyB0aGUgd2lraSBwYXRoLgoKIyMjIE9ic2lkaWFuIEhlYWRsZXNzIChzZXJ2ZXJzIGFuZCBoZWFkbGVzcyBtYWNoaW5lcykKCk9uIG1hY2hpbmVzIHdpdGhvdXQgYSBkaXNwbGF5LCB1c2UgYG9ic2lkaWFuLWhlYWRsZXNzYCBpbnN0ZWFkIG9mIHRoZSBkZXNrdG9wIGFwcC4KSXQgc3luY3MgdmF1bHRzIHZpYSBPYnNpZGlhbiBTeW5jIHdpdGhvdXQgYSBHVUkg4oCUIHBlcmZlY3QgZm9yIGFnZW50cyBydW5uaW5nIG9uCnNlcnZlcnMgdGhhdCB3cml0ZSB0byB0aGUgd2lraSB3aGlsZSBPYnNpZGlhbiBkZXNrdG9wIHJlYWRzIGl0IG9uIGFub3RoZXIgZGV2aWNlLgoKKipTZXR1cDoqKgpgYGBiYXNoCiMgUmVxdWlyZXMgTm9kZS5qcyAyMisKbnBtIGluc3RhbGwgLWcgb2JzaWRpYW4taGVhZGxlc3MKCiMgTG9naW4gKHJlcXVpcmVzIE9ic2lkaWFuIGFjY291bnQgd2l0aCBTeW5jIHN1YnNjcmlwdGlvbikKb2IgbG9naW4gLS1lbWFpbCA8ZW1haWw+IC0tcGFzc3dvcmQgJzxwYXNzd29yZD4nCgojIENyZWF0ZSBhIHJlbW90ZSB2YXVsdCBmb3IgdGhlIHdpa2kKb2Igc3luYy1jcmVhdGUtcmVtb3RlIC0tbmFtZSAiTExNIFdpa2kiCgojIENvbm5lY3QgdGhlIHdpa2kgZGlyZWN0b3J5IHRvIHRoZSB2YXVsdApjZCB+L3dpa2kKb2Igc3luYy1zZXR1cCAtLXZhdWx0ICI8dmF1bHQtaWQ+IgoKIyBJbml0aWFsIHN5bmMKb2Igc3luYwoKIyBDb250aW51b3VzIHN5bmMgKGZvcmVncm91bmQg4oCUIHVzZSBzeXN0ZW1kIGZvciBiYWNrZ3JvdW5kKQpvYiBzeW5jIC0tY29udGludW91cwpgYGAKCioqQ29udGludW91cyBiYWNrZ3JvdW5kIHN5bmMgdmlhIHN5c3RlbWQ6KioKYGBgaW5pCiMgfi8uY29uZmlnL3N5c3RlbWQvdXNlci9vYnNpZGlhbi13aWtpLXN5bmMuc2VydmljZQpbVW5pdF0KRGVzY3JpcHRpb249T2JzaWRpYW4gTExNIFdpa2kgU3luYwpBZnRlcj1uZXR3b3JrLW9ubGluZS50YXJnZXQKV2FudHM9bmV0d29yay1vbmxpbmUudGFyZ2V0CgpbU2VydmljZV0KRXhlY1N0YXJ0PS9wYXRoL3RvL29iIHN5bmMgLS1jb250aW51b3VzCldvcmtpbmdEaXJlY3Rvcnk9L2hvbWUvdXNlci93aWtpClJlc3RhcnQ9b24tZmFpbHVyZQpSZXN0YXJ0U2VjPTEwCgpbSW5zdGFsbF0KV2FudGVkQnk9ZGVmYXVsdC50YXJnZXQKYGBgCgpgYGBiYXNoCnN5c3RlbWN0bCAtLXVzZXIgZGFlbW9uLXJlbG9hZApzeXN0ZW1jdGwgLS11c2VyIGVuYWJsZSAtLW5vdyBvYnNpZGlhbi13aWtpLXN5bmMKIyBFbmFibGUgbGluZ2VyIHNvIHN5bmMgc3Vydml2ZXMgbG9nb3V0OgpzdWRvIGxvZ2luY3RsIGVuYWJsZS1saW5nZXIgJFVTRVIKYGBgCgpUaGlzIGxldHMgdGhlIGFnZW50IHdyaXRlIHRvIGB+L3dpa2lgIG9uIGEgc2VydmVyIHdoaWxlIHlvdSBicm93c2UgdGhlIHNhbWUKdmF1bHQgaW4gT2JzaWRpYW4gb24geW91ciBsYXB0b3AvcGhvbmUg4oCUIGNoYW5nZXMgYXBwZWFyIHdpdGhpbiBzZWNvbmRzLgoKIyMgUGl0ZmFsbHMKCi0gKipOZXZlciBtb2RpZnkgZmlsZXMgaW4gYHJhdy9gKiog4oCUIHNvdXJjZXMgYXJlIGltbXV0YWJsZS4gQ29ycmVjdGlvbnMgZ28gaW4gd2lraSBwYWdlcy4KLSAqKkFsd2F5cyBvcmllbnQgZmlyc3QqKiDigJQgcmVhZCBTQ0hFTUEgKyBpbmRleCArIHJlY2VudCBsb2cgYmVmb3JlIGFueSBvcGVyYXRpb24gaW4gYSBuZXcgc2Vzc2lvbi4KICBTa2lwcGluZyB0aGlzIGNhdXNlcyBkdXBsaWNhdGVzIGFuZCBtaXNzZWQgY3Jvc3MtcmVmZXJlbmNlcy4KLSAqKkFsd2F5cyB1cGRhdGUgaW5kZXgubWQgYW5kIGxvZy5tZCoqIOKAlCBza2lwcGluZyB0aGlzIG1ha2VzIHRoZSB3aWtpIGRlZ3JhZGUuIFRoZXNlIGFyZSB0aGUKICBuYXZpZ2F0aW9uYWwgYmFja2JvbmUuCi0gKipEb24ndCBjcmVhdGUgcGFnZXMgZm9yIHBhc3NpbmcgbWVudGlvbnMqKiDigJQgZm9sbG93IHRoZSBQYWdlIFRocmVzaG9sZHMgaW4gU0NIRU1BLm1kLiBBIG5hbWUKICBhcHBlYXJpbmcgb25jZSBpbiBhIGZvb3Rub3RlIGRvZXNuJ3Qgd2FycmFudCBhbiBlbnRpdHkgcGFnZS4KLSAqKkRvbid0IGNyZWF0ZSBwYWdlcyB3aXRob3V0IGNyb3NzLXJlZmVyZW5jZXMqKiDigJQgaXNvbGF0ZWQgcGFnZXMgYXJlIGludmlzaWJsZS4gRXZlcnkgcGFnZSBtdXN0CiAgbGluayB0byBhdCBsZWFzdCAyIG90aGVyIHBhZ2VzLgotICoqRnJvbnRtYXR0ZXIgaXMgcmVxdWlyZWQqKiDigJQgaXQgZW5hYmxlcyBzZWFyY2gsIGZpbHRlcmluZywgYW5kIHN0YWxlbmVzcyBkZXRlY3Rpb24uCi0gKipUYWdzIG11c3QgY29tZSBmcm9tIHRoZSB0YXhvbm9teSoqIOKAlCBmcmVlZm9ybSB0YWdzIGRlY2F5IGludG8gbm9pc2UuIEFkZCBuZXcgdGFncyB0byBTQ0hFTUEubWQKICBmaXJzdCwgdGhlbiB1c2UgdGhlbS4KLSAqKktlZXAgcGFnZXMgc2Nhbm5hYmxlKiog4oCUIGEgd2lraSBwYWdlIHNob3VsZCBiZSByZWFkYWJsZSBpbiAzMCBzZWNvbmRzLiBTcGxpdCBwYWdlcyBvdmVyCiAgMjAwIGxpbmVzLiBNb3ZlIGRldGFpbGVkIGFuYWx5c2lzIHRvIGRlZGljYXRlZCBkZWVwLWRpdmUgcGFnZXMuCi0gKipBc2sgYmVmb3JlIG1hc3MtdXBkYXRpbmcqKiDigJQgaWYgYW4gaW5nZXN0IHdvdWxkIHRvdWNoIDEwKyBleGlzdGluZyBwYWdlcywgY29uZmlybQogIHRoZSBzY29wZSB3aXRoIHRoZSB1c2VyIGZpcnN0LgotICoqUm90YXRlIHRoZSBsb2cqKiDigJQgd2hlbiBsb2cubWQgZXhjZWVkcyA1MDAgZW50cmllcywgcmVuYW1lIGl0IGBsb2ctWVlZWS5tZGAgYW5kIHN0YXJ0IGZyZXNoLgogIFRoZSBhZ2VudCBzaG91bGQgY2hlY2sgbG9nIHNpemUgZHVyaW5nIGxpbnQuCi0gKipIYW5kbGUgY29udHJhZGljdGlvbnMgZXhwbGljaXRseSoqIOKAlCBkb24ndCBzaWxlbnRseSBvdmVyd3JpdGUuIE5vdGUgYm90aCBjbGFpbXMgd2l0aCBkYXRlcywKICBtYXJrIGluIGZyb250bWF0dGVyLCBmbGFnIGZvciB1c2VyIHJldmlldy4K
+---
+name: llm-wiki
+description: "Karpathy's LLM Wiki — build and maintain a persistent, interlinked markdown knowledge base. Ingest sources, query compiled knowledge, and lint for consistency."
+version: 2.0.0
+author: Hermes Agent
+license: MIT
+metadata:
+  hermes:
+    tags: [wiki, knowledge-base, research, notes, markdown, rag-alternative]
+    category: research
+    related_skills: [obsidian, arxiv, agentic-research-ideas]
+---
+
+# Karpathy's LLM Wiki
+
+Build and maintain a persistent, compounding knowledge base as interlinked markdown files.
+Based on [Andrej Karpathy's LLM Wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).
+
+Unlike traditional RAG (which rediscovers knowledge from scratch per query), the wiki
+compiles knowledge once and keeps it current. Cross-references are already there.
+Contradictions have already been flagged. Synthesis reflects everything ingested.
+
+**Division of labor:** The human curates sources and directs analysis. The agent
+summarizes, cross-references, files, and maintains consistency.
+
+## When This Skill Activates
+
+Use this skill when the user:
+- Asks to create, build, or start a wiki or knowledge base
+- Asks to ingest, add, or process a source into their wiki
+- Asks a question and an existing wiki is present at the configured path
+- Asks to lint, audit, or health-check their wiki
+- References their wiki, knowledge base, or "notes" in a research context
+
+## Wiki Location
+
+**Location:** Set via `WIKI_PATH` environment variable (e.g. in `~/.hermes/.env`).
+
+If unset, defaults to `~/wiki`.
+
+```bash
+WIKI="${WIKI_PATH:-$HOME/wiki}"
+```
+
+The wiki is just a directory of markdown files — open it in Obsidian, VS Code, or
+any editor. No database, no special tooling required.
+
+## Architecture: Three Layers
+
+```
+wiki/
+├── SCHEMA.md           # Conventions, structure rules, domain config
+├── index.md            # Sectioned content catalog with one-line summaries
+├── log.md              # Chronological action log (append-only, rotated yearly)
+├── raw/                # Layer 1: Immutable source material
+│   ├── articles/       # Web articles, clippings
+│   ├── papers/         # PDFs, arxiv papers
+│   ├── transcripts/    # Meeting notes, interviews
+│   └── assets/         # Images, diagrams referenced by sources
+├── entities/           # Layer 2: Entity pages (people, orgs, products, models)
+├── concepts/           # Layer 2: Concept/topic pages
+├── comparisons/        # Layer 2: Side-by-side analyses
+└── queries/            # Layer 2: Filed query results worth keeping
+```
+
+**Layer 1 — Raw Sources:** Immutable. The agent reads but never modifies these.
+**Layer 2 — The Wiki:** Agent-owned markdown files. Created, updated, and
+cross-referenced by the agent.
+**Layer 3 — The Schema:** `SCHEMA.md` defines structure, conventions, and tag taxonomy.
+
+## Resuming an Existing Wiki (CRITICAL — do this every session)
+
+When the user has an existing wiki, **always orient yourself before doing anything**:
+
+① **Read `SCHEMA.md`** — understand the domain, conventions, and tag taxonomy.
+② **Read `index.md`** — learn what pages exist and their summaries.
+③ **Scan recent `log.md`** — read the last 20-30 entries to understand recent activity.
+
+```bash
+WIKI="${WIKI_PATH:-$HOME/wiki}"
+# Orientation reads at session start
+read_file "$WIKI/SCHEMA.md"
+read_file "$WIKI/index.md"
+read_file "$WIKI/log.md" offset=<last 30 lines>
+```
+
+Only after orientation should you ingest, query, or lint. This prevents:
+- Creating duplicate pages for entities that already exist
+- Missing cross-references to existing content
+- Contradicting the schema's conventions
+- Repeating work already logged
+
+For large wikis (100+ pages), also run a quick `search_files` for the topic
+at hand before creating anything new.
+
+## Initializing a New Wiki
+
+When the user asks to create or start a wiki:
+
+1. Determine the wiki path (from `$WIKI_PATH` env var, or ask the user; default `~/wiki`)
+2. Create the directory structure above
+3. Ask the user what domain the wiki covers — be specific
+4. Write `SCHEMA.md` customized to the domain (see template below)
+5. Write initial `index.md` with sectioned header
+6. Write initial `log.md` with creation entry
+7. Confirm the wiki is ready and suggest first sources to ingest
+
+### SCHEMA.md Template
+
+Adapt to the user's domain. The schema constrains agent behavior and ensures consistency:
+
+```markdown
+# Wiki Schema
+
+## Domain
+[What this wiki covers — e.g., "AI/ML research", "personal health", "startup intelligence"]
+
+## Conventions
+- File names: lowercase, hyphens, no spaces (e.g., `transformer-architecture.md`)
+- Every wiki page starts with YAML frontmatter (see below)
+- Use `[[wikilinks]]` to link between pages (minimum 2 outbound links per page)
+- When updating a page, always bump the `updated` date
+- Every new page must be added to `index.md` under the correct section
+- Every action must be appended to `log.md`
+
+## Frontmatter
+  ```yaml
+  ---
+  title: Page Title
+  created: YYYY-MM-DD
+  updated: YYYY-MM-DD
+  type: entity | concept | comparison | query | summary
+  tags: [from taxonomy below]
+  sources: [raw/articles/source-name.md]
+  ---
+  ```
+
+## Tag Taxonomy
+[Define 10-20 top-level tags for the domain. Add new tags here BEFORE using them.]
+
+Example for AI/ML:
+- Models: model, architecture, benchmark, training
+- People/Orgs: person, company, lab, open-source
+- Techniques: optimization, fine-tuning, inference, alignment, data
+- Meta: comparison, timeline, controversy, prediction
+
+Rule: every tag on a page must appear in this taxonomy. If a new tag is needed,
+add it here first, then use it. This prevents tag sprawl.
+
+## Page Thresholds
+- **Create a page** when an entity/concept appears in 2+ sources OR is central to one source
+- **Add to existing page** when a source mentions something already covered
+- **DON'T create a page** for passing mentions, minor details, or things outside the domain
+- **Split a page** when it exceeds ~200 lines — break into sub-topics with cross-links
+- **Archive a page** when its content is fully superseded — move to `_archive/`, remove from index
+
+## Entity Pages
+One page per notable entity. Include:
+- Overview / what it is
+- Key facts and dates
+- Relationships to other entities ([[wikilinks]])
+- Source references
+
+## Concept Pages
+One page per concept or topic. Include:
+- Definition / explanation
+- Current state of knowledge
+- Open questions or debates
+- Related concepts ([[wikilinks]])
+
+## Comparison Pages
+Side-by-side analyses. Include:
+- What is being compared and why
+- Dimensions of comparison (table format preferred)
+- Verdict or synthesis
+- Sources
+
+## Update Policy
+When new information conflicts with existing content:
+1. Check the dates — newer sources generally supersede older ones
+2. If genuinely contradictory, note both positions with dates and sources
+3. Mark the contradiction in frontmatter: `contradictions: [page-name]`
+4. Flag for user review in the lint report
+```
+
+### index.md Template
+
+The index is sectioned by type. Each entry is one line: wikilink + summary.
+
+```markdown
+# Wiki Index
+
+> Content catalog. Every wiki page listed under its type with a one-line summary.
+> Read this first to find relevant pages for any query.
+> Last updated: YYYY-MM-DD | Total pages: N
+
+## Entities
+<!-- Alphabetical within section -->
+
+## Concepts
+
+## Comparisons
+
+## Queries
+```
+
+**Scaling rule:** When any section exceeds 50 entries, split it into sub-sections
+by first letter or sub-domain. When the index exceeds 200 entries total, create
+a `_meta/topic-map.md` that groups pages by theme for faster navigation.
+
+### log.md Template
+
+```markdown
+# Wiki Log
+
+> Chronological record of all wiki actions. Append-only.
+> Format: `## [YYYY-MM-DD] action | subject`
+> Actions: ingest, update, query, lint, create, archive, delete
+> When this file exceeds 500 entries, rotate: rename to log-YYYY.md, start fresh.
+
+## [YYYY-MM-DD] create | Wiki initialized
+- Domain: [domain]
+- Structure created with SCHEMA.md, index.md, log.md
+```
+
+## Core Operations
+
+### 1. Ingest
+
+When the user provides a source (URL, file, paste), integrate it into the wiki:
+
+① **Capture the raw source:**
+   - URL → use `web_extract` to get markdown, save to `raw/articles/`
+   - PDF → use `web_extract` (handles PDFs), save to `raw/papers/`
+   - Pasted text → save to appropriate `raw/` subdirectory
+   - Name the file descriptively: `raw/articles/karpathy-llm-wiki-2026.md`
+
+② **Discuss takeaways** with the user — what's interesting, what matters for
+   the domain. (Skip this in automated/cron contexts — proceed directly.)
+
+③ **Check what already exists** — search index.md and use `search_files` to find
+   existing pages for mentioned entities/concepts. This is the difference between
+   a growing wiki and a pile of duplicates.
+
+④ **Write or update wiki pages:**
+   - **New entities/concepts:** Create pages only if they meet the Page Thresholds
+     in SCHEMA.md (2+ source mentions, or central to one source)
+   - **Existing pages:** Add new information, update facts, bump `updated` date.
+     When new info contradicts existing content, follow the Update Policy.
+   - **Cross-reference:** Every new or updated page must link to at least 2 other
+     pages via `[[wikilinks]]`. Check that existing pages link back.
+   - **Tags:** Only use tags from the taxonomy in SCHEMA.md
+
+⑤ **Update navigation:**
+   - Add new pages to `index.md` under the correct section, alphabetically
+   - Update the "Total pages" count and "Last updated" date in index header
+   - Append to `log.md`: `## [YYYY-MM-DD] ingest | Source Title`
+   - List every file created or updated in the log entry
+
+⑥ **Report what changed** — list every file created or updated to the user.
+
+A single source can trigger updates across 5-15 wiki pages. This is normal
+and desired — it's the compounding effect.
+
+### 2. Query
+
+When the user asks a question about the wiki's domain:
+
+① **Read `index.md`** to identify relevant pages.
+② **For wikis with 100+ pages**, also `search_files` across all `.md` files
+   for key terms — the index alone may miss relevant content.
+③ **Read the relevant pages** using `read_file`.
+④ **Synthesize an answer** from the compiled knowledge. Cite the wiki pages
+   you drew from: "Based on [[page-a]] and [[page-b]]..."
+⑤ **File valuable answers back** — if the answer is a substantial comparison,
+   deep dive, or novel synthesis, create a page in `queries/` or `comparisons/`.
+   Don't file trivial lookups — only answers that would be painful to re-derive.
+⑥ **Update log.md** with the query and whether it was filed.
+
+### 3. Lint
+
+When the user asks to lint, health-check, or audit the wiki:
+
+① **Orphan pages:** Find pages with no inbound `[[wikilinks]]` from other pages.
+```python
+# Use execute_code for this — programmatic scan across all wiki pages
+import os, re
+from collections import defaultdict
+wiki = "<WIKI_PATH>"
+# Scan all .md files in entities/, concepts/, comparisons/, queries/
+# Extract all [[wikilinks]] — build inbound link map
+# Pages with zero inbound links are orphans
+```
+
+② **Broken wikilinks:** Find `[[links]]` that point to pages that don't exist.
+
+③ **Index completeness:** Every wiki page should appear in `index.md`. Compare
+   the filesystem against index entries.
+
+④ **Frontmatter validation:** Every wiki page must have all required fields
+   (title, created, updated, type, tags, sources). Tags must be in the taxonomy.
+
+⑤ **Stale content:** Pages whose `updated` date is >90 days older than the most
+   recent source that mentions the same entities.
+
+⑥ **Contradictions:** Pages on the same topic with conflicting claims. Look for
+   pages that share tags/entities but state different facts.
+
+⑦ **Page size:** Flag pages over 200 lines — candidates for splitting.
+
+⑧ **Tag audit:** List all tags in use, flag any not in the SCHEMA.md taxonomy.
+
+⑨ **Log rotation:** If log.md exceeds 500 entries, rotate it.
+
+⑩ **Report findings** with specific file paths and suggested actions, grouped by
+   severity (broken links > orphans > stale content > style issues).
+
+⑪ **Append to log.md:** `## [YYYY-MM-DD] lint | N issues found`
+
+## Working with the Wiki
+
+### Searching
+
+```bash
+# Find pages by content
+search_files "transformer" path="$WIKI" file_glob="*.md"
+
+# Find pages by filename
+search_files "*.md" target="files" path="$WIKI"
+
+# Find pages by tag
+search_files "tags:.*alignment" path="$WIKI" file_glob="*.md"
+
+# Recent activity
+read_file "$WIKI/log.md" offset=<last 20 lines>
+```
+
+### Bulk Ingest
+
+When ingesting multiple sources at once, batch the updates:
+1. Read all sources first
+2. Identify all entities and concepts across all sources
+3. Check existing pages for all of them (one search pass, not N)
+4. Create/update pages in one pass (avoids redundant updates)
+5. Update index.md once at the end
+6. Write a single log entry covering the batch
+
+### Archiving
+
+When content is fully superseded or the domain scope changes:
+1. Create `_archive/` directory if it doesn't exist
+2. Move the page to `_archive/` with its original path (e.g., `_archive/entities/old-page.md`)
+3. Remove from `index.md`
+4. Update any pages that linked to it — replace wikilink with plain text + "(archived)"
+5. Log the archive action
+
+### Obsidian Integration
+
+The wiki directory works as an Obsidian vault out of the box:
+- `[[wikilinks]]` render as clickable links
+- Graph View visualizes the knowledge network
+- YAML frontmatter powers Dataview queries
+- The `raw/assets/` folder holds images referenced via `![[image.png]]`
+
+For best results:
+- Set Obsidian's attachment folder to `raw/assets/`
+- Enable "Wikilinks" in Obsidian settings (usually on by default)
+- Install Dataview plugin for queries like `TABLE tags FROM "entities" WHERE contains(tags, "company")`
+
+If using the Obsidian skill alongside this one, set `OBSIDIAN_VAULT_PATH` to the
+same directory as the wiki path.
+
+### Obsidian Headless (servers and headless machines)
+
+On machines without a display, use `obsidian-headless` instead of the desktop app.
+It syncs vaults via Obsidian Sync without a GUI — perfect for agents running on
+servers that write to the wiki while Obsidian desktop reads it on another device.
+
+**Setup:**
+```bash
+# Requires Node.js 22+
+npm install -g obsidian-headless
+
+# Login (requires Obsidian account with Sync subscription)
+ob login --email <email> --password '<password>'
+
+# Create a remote vault for the wiki
+ob sync-create-remote --name "LLM Wiki"
+
+# Connect the wiki directory to the vault
+cd ~/wiki
+ob sync-setup --vault "<vault-id>"
+
+# Initial sync
+ob sync
+
+# Continuous sync (foreground — use systemd for background)
+ob sync --continuous
+```
+
+**Continuous background sync via systemd:**
+```ini
+# ~/.config/systemd/user/obsidian-wiki-sync.service
+[Unit]
+Description=Obsidian LLM Wiki Sync
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/path/to/ob sync --continuous
+WorkingDirectory=/home/user/wiki
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=default.target
+```
+
+```bash
+systemctl --user daemon-reload
+systemctl --user enable --now obsidian-wiki-sync
+# Enable linger so sync survives logout:
+sudo loginctl enable-linger $USER
+```
+
+This lets the agent write to `~/wiki` on a server while you browse the same
+vault in Obsidian on your laptop/phone — changes appear within seconds.
+
+## Pitfalls
+
+- **Never modify files in `raw/`** — sources are immutable. Corrections go in wiki pages.
+- **Always orient first** — read SCHEMA + index + recent log before any operation in a new session.
+  Skipping this causes duplicates and missed cross-references.
+- **Always update index.md and log.md** — skipping this makes the wiki degrade. These are the
+  navigational backbone.
+- **Don't create pages for passing mentions** — follow the Page Thresholds in SCHEMA.md. A name
+  appearing once in a footnote doesn't warrant an entity page.
+- **Don't create pages without cross-references** — isolated pages are invisible. Every page must
+  link to at least 2 other pages.
+- **Frontmatter is required** — it enables search, filtering, and staleness detection.
+- **Tags must come from the taxonomy** — freeform tags decay into noise. Add new tags to SCHEMA.md
+  first, then use them.
+- **Keep pages scannable** — a wiki page should be readable in 30 seconds. Split pages over
+  200 lines. Move detailed analysis to dedicated deep-dive pages.
+- **Ask before mass-updating** — if an ingest would touch 10+ existing pages, confirm
+  the scope with the user first.
+- **Rotate the log** — when log.md exceeds 500 entries, rename it `log-YYYY.md` and start fresh.
+  The agent should check log size during lint.
+- **Handle contradictions explicitly** — don't silently overwrite. Note both claims with dates,
+  mark in frontmatter, flag for user review.

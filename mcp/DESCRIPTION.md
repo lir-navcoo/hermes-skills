@@ -1,1 +1,3 @@
-LS0tCmRlc2NyaXB0aW9uOiBTa2lsbHMgZm9yIHdvcmtpbmcgd2l0aCBNQ1AgKE1vZGVsIENvbnRleHQgUHJvdG9jb2wpIHNlcnZlcnMsIHRvb2xzLCBhbmQgaW50ZWdyYXRpb25zLiBJbmNsdWRlcyB0aGUgYnVpbHQtaW4gbmF0aXZlIE1DUCBjbGllbnQgKGNvbmZpZ3VyZSBzZXJ2ZXJzIGluIGNvbmZpZy55YW1sIGZvciBhdXRvbWF0aWMgdG9vbCBkaXNjb3ZlcnkpIGFuZCB0aGUgbWNwb3J0ZXIgQ0xJIGJyaWRnZSBmb3IgYWQtaG9jIHNlcnZlciBpbnRlcmFjdGlvbi4KLS0tCg==
+---
+description: Skills for working with MCP (Model Context Protocol) servers, tools, and integrations. Includes the built-in native MCP client (configure servers in config.yaml for automatic tool discovery) and the mcporter CLI bridge for ad-hoc server interaction.
+---

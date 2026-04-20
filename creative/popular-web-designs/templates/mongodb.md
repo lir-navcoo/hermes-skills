@@ -1,1 +1,279 @@
-IyBEZXNpZ24gU3lzdGVtOiBNb25nb0RCCgoKPiAqKkhlcm1lcyBBZ2VudCDigJQgSW1wbGVtZW50YXRpb24gTm90ZXMqKgo+Cj4gVGhlIG9yaWdpbmFsIHNpdGUgdXNlcyBwcm9wcmlldGFyeSBmb250cy4gRm9yIHNlbGYtY29udGFpbmVkIEhUTUwgb3V0cHV0LCB1c2UgdGhlc2UgQ0ROIHN1YnN0aXR1dGVzOgo+IC0gKipQcmltYXJ5OioqIGBJbnRlcmAgfCAqKk1vbm86KiogYFNvdXJjZSBDb2RlIFByb2AKPiAtICoqRm9udCBzdGFjayAoQ1NTKToqKiBgZm9udC1mYW1pbHk6ICdJbnRlcicsIHN5c3RlbS11aSwgLWFwcGxlLXN5c3RlbSwgJ1NlZ29lIFVJJywgUm9ib3RvLCBzYW5zLXNlcmlmO2AKPiAtICoqTW9ubyBzdGFjayAoQ1NTKToqKiBgZm9udC1mYW1pbHk6ICdTb3VyY2UgQ29kZSBQcm8nLCB1aS1tb25vc3BhY2UsIFNGTW9uby1SZWd1bGFyLCBNZW5sbywgTW9uYWNvLCBDb25zb2xhcywgJ0xpYmVyYXRpb24gTW9ubycsICdDb3VyaWVyIE5ldycsIG1vbm9zcGFjZTtgCj4gYGBgaHRtbAo+IDxsaW5rIGhyZWY9Imh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9SW50ZXI6d2dodEAzMDA7NDAwOzUwMDs2MDA7NzAwJmZhbWlseT1Tb3VyY2UrQ29kZStQcm86d2dodEA0MDA7NTAwOzYwMCZkaXNwbGF5PXN3YXAiIHJlbD0ic3R5bGVzaGVldCI+Cj4gYGBgCj4gVXNlIGB3cml0ZV9maWxlYCB0byBjcmVhdGUgSFRNTCwgc2VydmUgdmlhIGBnZW5lcmF0aXZlLXdpZGdldHNgIHNraWxsIChjbG91ZGZsYXJlZCB0dW5uZWwpLgo+IFZlcmlmeSB2aXN1YWwgYWNjdXJhY3kgd2l0aCBgYnJvd3Nlcl92aXNpb25gIGFmdGVyIGdlbmVyYXRpbmcuCgojIyAxLiBWaXN1YWwgVGhlbWUgJiBBdG1vc3BoZXJlCgpNb25nb0RCJ3Mgd2Vic2l0ZSBpcyBhIGRlZXAtZm9yZXN0LW1lZXRzLXRlcm1pbmFsIGV4cGVyaWVuY2Ug4oCUIGEgZGVzaWduIHN5c3RlbSByb290ZWQgaW4gdGhlIGRhcmtlc3QgdGVhbC1ibGFjayAoYCMwMDFlMmJgKSB0aGF0IGV2b2tlcyBib3RoIHRoZSBkZW5zaXR5IG9mIGEgZGF0YWJhc2UgYW5kIHRoZSBkZXB0aCBvZiBhIGZvcmVzdCBjYW5vcHkuIEFnYWluc3QgdGhpcyBuZWFyLWJsYWNrIGNhbnZhcywgYSBzdHJpa2luZyBuZW9uIGdyZWVuIChgIzAwZWQ2NGApIHB1bHNlcyBhcyB0aGUgYnJhbmQgYWNjZW50IOKAlCBicmlnaHQgZW5vdWdoIHRvIGZlZWwgZWxlY3RyaWMsIG9yZ2FuaWMgZW5vdWdoIHRvIGZlZWwgYWxpdmUuIFRoaXMgaXNuJ3QgdGhlIGNvbGQgbmVvbiBvZiBjeWJlcnB1bms7IGl0J3MgdGhlIGJpb2x1bWluZXNjZW50IGdyZWVuIG9mIHNvbWV0aGluZyBncm93aW5nIGluIHRoZSBkYXJrLgoKVGhlIHR5cG9ncmFwaHkgc3lzdGVtIGlzIGFyY2hpdGVjdHVyYWxseSBhbWJpdGlvdXM6IE1vbmdvREIgVmFsdWUgU2VyaWYgZm9yIG1hc3NpdmUgaGVybyBoZWFkbGluZXMgKDk2cHgpIGNyZWF0ZXMgYW4gZWRpdG9yaWFsLCBhdXRob3JpdGF0aXZlIHByZXNlbmNlIOKAlCBzZXJpZiB0eXBlIGF0IGRhdGFiYXNlLWNvbXBhbnkgc2NhbGUgaXMgYSBib2xkIGNob2ljZSB0aGF0IHNheXMgIndlJ3JlIG5vdCBqdXN0IGFub3RoZXIgdGVjaCBjb21wYW55LiIgRXVjbGlkIENpcmN1bGFyIEEgaGFuZGxlcyB0aGUgaGVhdnkgbGlmdGluZyBvZiBib2R5IGFuZCBVSSB0ZXh0IHdpdGggYW4gdW51c3VhbGx5IHdpZGUgd2VpZ2h0IHJhbmdlICgzMDDigJM3MDApLCB3aGlsZSBTb3VyY2UgQ29kZSBQcm8gc2VydmVzIGFzIHRoZSBjb2RlIGFuZCBsYWJlbCBmb250IHdpdGggZGlzdGluY3RpdmUgdXBwZXJjYXNlIHRyZWF0bWVudHMgZmVhdHVyaW5nIHZlcnkgd2lkZSBsZXR0ZXItc3BhY2luZyAoMXB44oCTM3B4KS4gVGhpcyB0aHJlZS1mb250IHN5c3RlbSBjcmVhdGVzIGEgaGllcmFyY2h5IHRoYXQgc3BhbnMgZWRpdG9yaWFsIGVsZWdhbmNlIOKGkiBnZW9tZXRyaWMgcHJvZmVzc2lvbmFsaXNtIOKGkiBlbmdpbmVlcmluZyBwcmVjaXNpb24uCgpXaGF0IG1ha2VzIE1vbmdvREIgZGlzdGluY3RpdmUgaXMgaXRzIGR1YWwtbW9kZSBkZXNpZ246IGEgZGFyayBoZXJvL2ZlYXR1cmUgc2VjdGlvbiB3b3JsZCAoYCMwMDFlMmJgIHdpdGggbmVvbiBncmVlbiBhY2NlbnRzKSBhbmQgYSBsaWdodCBjb250ZW50IHdvcmxkICh3aGl0ZSB3aXRoIHRlYWwtZ3JheSBib3JkZXJzIGAjYjhjNGMyYCkuIFRoZSB0cmFuc2l0aW9uIGJldHdlZW4gdGhlc2UgbW9kZXMgY3JlYXRlcyBkcmFtYXRpYyBjb250cmFzdC4gVGhlIHNoYWRvdyBzeXN0ZW0gdXNlcyB0ZWFsLXRpbnRlZCBkYXJrIHNoYWRvd3MgKGByZ2JhKDAsIDMwLCA0MywgMC4xMilgKSB0aGF0IG1haW50YWluIHRoZSBmb3Jlc3QtZGFyayBhdG1vc3BoZXJlIGV2ZW4gb24gbGlnaHQgc3VyZmFjZXMuIEJ1dHRvbnMgdXNlIHBpbGwgc2hhcGVzICgxMDBweOKAkzk5OXB4IHJhZGl1cykgd2l0aCBNb25nb0RCIEdyZWVuIGJvcmRlcnMgKGAjMDA2ODRhYCksIGFuZCB0aGUgZW50aXJlIGNvbXBvbmVudCBzeXN0ZW0gcmVmZXJlbmNlcyB0aGUgTGVhZnlHcmVlbiBkZXNpZ24gc3lzdGVtLgoKKipLZXkgQ2hhcmFjdGVyaXN0aWNzOioqCi0gRGVlcCB0ZWFsLWJsYWNrIGJhY2tncm91bmRzIChgIzAwMWUyYmApIOKAlCBmb3Jlc3QtZGFyaywgbm90IHNwYWNlLWRhcmsKLSBOZW9uIE1vbmdvREIgR3JlZW4gKGAjMDBlZDY0YCkgYXMgdGhlIHNpbmd1bGFyIGJyYW5kIGFjY2VudCDigJQgZWxlY3RyaWMgYW5kIG9yZ2FuaWMKLSBNb25nb0RCIFZhbHVlIFNlcmlmIGZvciBoZXJvIGhlYWRsaW5lcyDigJQgZWRpdG9yaWFsIGF1dGhvcml0eSBhdCB0ZWNoIHNjYWxlCi0gRXVjbGlkIENpcmN1bGFyIEEgZm9yIGJvZHkgd2l0aCB3ZWlnaHQgMzAwIChsaWdodCkgYXMgYSBkaXN0aW5jdGl2ZSBib2R5IHdlaWdodAotIFNvdXJjZSBDb2RlIFBybyB3aXRoIHdpZGUgdXBwZXJjYXNlIGxldHRlci1zcGFjaW5nICgxcHjigJMzcHgpIGZvciB0ZWNobmljYWwgbGFiZWxzCi0gVGVhbC10aW50ZWQgc2hhZG93czogYHJnYmEoMCwgMzAsIDQzLCAwLjEyKWAg4oCUIHNoYWRvd3MgY2FycnkgdGhlIGZvcmVzdCBjb2xvcgotIER1YWwtbW9kZTogZGFyayB0ZWFsIGhlcm8gc2VjdGlvbnMgKyBsaWdodCB3aGl0ZSBjb250ZW50IHNlY3Rpb25zCi0gUGlsbCBidXR0b25zICgxMDBweCByYWRpdXMpIHdpdGggZ3JlZW4gYm9yZGVycyAoYCMwMDY4NGFgKQotIExpbmsgQmx1ZSAoYCMwMDZjZmFgKSBhbmQgaG92ZXIgdHJhbnNpdGlvbiB0byBgIzM4NjBiZWAKCiMjIDIuIENvbG9yIFBhbGV0dGUgJiBSb2xlcwoKIyMjIFByaW1hcnkgQnJhbmQKLSAqKkZvcmVzdCBCbGFjayoqIChgIzAwMWUyYmApOiBQcmltYXJ5IGRhcmsgYmFja2dyb3VuZCDigJQgdGhlIGRlZXBlc3QgdGVhbC1ibGFjawotICoqTW9uZ29EQiBHcmVlbioqIChgIzAwZWQ2NGApOiBQcmltYXJ5IGJyYW5kIGFjY2VudCDigJQgbmVvbiBncmVlbiBmb3IgaGlnaGxpZ2h0cywgdW5kZXJsaW5lcywgZ3JhZGllbnRzCi0gKipEYXJrIEdyZWVuKiogKGAjMDA2ODRhYCk6IEJ1dHRvbiBib3JkZXJzLCBsaW5rIHRleHQgb24gbGlnaHQg4oCUIG11dGVkIGdyZWVuIGZvciBmdW5jdGlvbmFsIHVzZQoKIyMjIEludGVyYWN0aXZlCi0gKipBY3Rpb24gQmx1ZSoqIChgIzAwNmNmYWApOiBTZWNvbmRhcnkgYWNjZW50IOKAlCBsaW5rcywgaW50ZXJhY3RpdmUgaGlnaGxpZ2h0cwotICoqSG92ZXIgQmx1ZSoqIChgIzM4NjBiZWApOiBBbGwgbGluayBob3ZlciBzdGF0ZXMgdHJhbnNpdGlvbiB0byB0aGlzIGJsdWUKLSAqKlRlYWwgQWN0aXZlKiogKGAjMWVhZWRiYCk6IEJ1dHRvbiBob3ZlciBiYWNrZ3JvdW5kIOKAlCBicmlnaHQgdGVhbAoKIyMjIE5ldXRyYWwgU2NhbGUKLSAqKkRlZXAgVGVhbCoqIChgIzFjMmQzOGApOiBEYXJrIGJ1dHRvbiBiYWNrZ3JvdW5kcywgc2Vjb25kYXJ5IGRhcmsgc3VyZmFjZXMKLSAqKlRlYWwgR3JheSoqIChgIzNkNGY1OGApOiBEYXJrIGJvcmRlcnMgb24gZGFyayBzdXJmYWNlcwotICoqRGFyayBTbGF0ZSoqIChgIzIxMzEzY2ApOiBEYXJrIGxpbmsgdGV4dCB2YXJpYW50Ci0gKipDb29sIEdyYXkqKiAoYCM1YzZjNzVgKTogTXV0ZWQgdGV4dCBvbiBkYXJrLCBzZWNvbmRhcnkgYnV0dG9uIHRleHQKLSAqKlNpbHZlciBUZWFsKiogKGAjYjhjNGMyYCk6IEJvcmRlcnMgb24gbGlnaHQgc3VyZmFjZXMsIGRpdmlkZXJzCi0gKipMaWdodCBJbnB1dCoqIChgI2U4ZWRlYmApOiBJbnB1dCB0ZXh0IG9uIGRhcmsgc3VyZmFjZXMKLSAqKlB1cmUgV2hpdGUqKiAoYCNmZmZmZmZgKTogTGlnaHQgc2VjdGlvbiBiYWNrZ3JvdW5kLCBidXR0b24gdGV4dCBvbiBkYXJrCi0gKipCbGFjayoqIChgIzAwMDAwMGApOiBUZXh0IG9uIGxpZ2h0IHN1cmZhY2VzLCBkYXJrZXN0IGVsZW1lbnRzCgojIyMgU2hhZG93cwotICoqRm9yZXN0IFNoYWRvdyoqIChgcmdiYSgwLCAzMCwgNDMsIDAuMTIpIDBweCAyNnB4IDQ0cHgsIHJnYmEoMCwgMCwgMCwgMC4xMykgMHB4IDdweCAxM3B4YCk6IFByaW1hcnkgY2FyZCBlbGV2YXRpb24g4oCUIHRlYWwtdGludGVkCi0gKipTdGFuZGFyZCBTaGFkb3cqKiAoYHJnYmEoMCwgMCwgMCwgMC4xNSkgMHB4IDNweCAyMHB4YCk6IEdlbmVyYWwgZWxldmF0aW9uCi0gKipTdWJ0bGUgU2hhZG93KiogKGByZ2JhKDAsIDAsIDAsIDAuMSkgMHB4IDJweCA0cHhgKTogTGlnaHQgY2FyZCBsaWZ0CgojIyAzLiBUeXBvZ3JhcGh5IFJ1bGVzCgojIyMgRm9udCBGYW1pbGllcwotICoqRGlzcGxheSBTZXJpZioqOiBgTW9uZ29EQiBWYWx1ZSBTZXJpZmAg4oCUIGVkaXRvcmlhbCBoZXJvIGhlYWRsaW5lcwotICoqQm9keSAvIFVJKio6IGBFdWNsaWQgQ2lyY3VsYXIgQWAg4oCUIGdlb21ldHJpYyBzYW5zLXNlcmlmIHdvcmtob3JzZQotICoqQ29kZSAvIExhYmVscyoqOiBgU291cmNlIENvZGUgUHJvYCDigJQgbW9ub3NwYWNlIHdpdGggdXBwZXJjYXNlIGxhYmVsIHRyZWF0bWVudHMKLSAqKkZhbGxiYWNrcyoqOiBgQWt6aWRlbnotR3JvdGVzayBTdGRgICh3aXRoIENKSzogTm90byBTYW5zIEtSL1NDL0pQKSwgYFRpbWVzYCwgYEFyaWFsYCwgYHN5c3RlbS11aWAKCiMjIyBIaWVyYXJjaHkKCnwgUm9sZSB8IEZvbnQgfCBTaXplIHwgV2VpZ2h0IHwgTGluZSBIZWlnaHQgfCBMZXR0ZXIgU3BhY2luZyB8IE5vdGVzIHwKfC0tLS0tLXwtLS0tLS18LS0tLS0tfC0tLS0tLS0tfC0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tLXwtLS0tLS0tfAp8IERpc3BsYXkgSGVybyB8IE1vbmdvREIgVmFsdWUgU2VyaWYgfCA5NnB4ICg2LjAwcmVtKSB8IDQwMCB8IDEuMjAgKHRpZ2h0KSB8IG5vcm1hbCB8IFNlcmlmIGF1dGhvcml0eSB8CnwgRGlzcGxheSBTZWNvbmRhcnkgfCBNb25nb0RCIFZhbHVlIFNlcmlmIHwgNjRweCAoNC4wMHJlbSkgfCA0MDAgfCAxLjAwICh0aWdodCkgfCBub3JtYWwgfCBTZXJpZiBzdWItaGVybyB8CnwgU2VjdGlvbiBIZWFkaW5nIHwgRXVjbGlkIENpcmN1bGFyIEEgfCAzNnB4ICgyLjI1cmVtKSB8IDUwMCB8IDEuMzMgfCBub3JtYWwgfCBHZW9tZXRyaWMgcHJlY2lzaW9uIHwKfCBTdWItaGVhZGluZyB8IEV1Y2xpZCBDaXJjdWxhciBBIHwgMjRweCAoMS41MHJlbSkgfCA1MDAgfCAxLjMzIHwgbm9ybWFsIHwgRmVhdHVyZSB0aXRsZXMgfAp8IEJvZHkgTGFyZ2UgfCBFdWNsaWQgQ2lyY3VsYXIgQSB8IDIwcHggKDEuMjVyZW0pIHwgNDAwIHwgMS42MCAocmVsYXhlZCkgfCBub3JtYWwgfCBJbnRyb2R1Y3Rpb25zIHwKfCBCb2R5IHwgRXVjbGlkIENpcmN1bGFyIEEgfCAxOHB4ICgxLjEzcmVtKSB8IDQwMCB8IDEuMzMgfCBub3JtYWwgfCBTdGFuZGFyZCBib2R5IHwKfCBCb2R5IExpZ2h0IHwgRXVjbGlkIENpcmN1bGFyIEEgfCAxNnB4ICgxLjAwcmVtKSB8IDMwMCB8IDEuNTDigJMyLjAwIHwgbm9ybWFsIHwgTGlnaHQtd2VpZ2h0IHJlYWRpbmcgdGV4dCB8CnwgTmF2IC8gVUkgfCBFdWNsaWQgQ2lyY3VsYXIgQSB8IDE2cHggKDEuMDByZW0pIHwgNTAwIHwgMS4wMOKAkzEuODggfCAwLjE2cHggfCBOYXZpZ2F0aW9uLCBlbXBoYXNpemVkIHwKfCBCb2R5IEJvbGQgfCBFdWNsaWQgQ2lyY3VsYXIgQSB8IDE1cHggKDAuOTRyZW0pIHwgNzAwIHwgMS41MCB8IG5vcm1hbCB8IFN0cm9uZyBlbXBoYXNpcyB8CnwgQnV0dG9uIHwgRXVjbGlkIENpcmN1bGFyIEEgfCAxMy41cHjigJMxNnB4IHwgNTAw4oCTNzAwIHwgMS4wMCB8IDAuMTM1cHjigJMwLjlweCB8IENUQSBsYWJlbHMgfAp8IENhcHRpb24gfCBFdWNsaWQgQ2lyY3VsYXIgQSB8IDE0cHggKDAuODhyZW0pIHwgNDAwIHwgMS43MSAocmVsYXhlZCkgfCBub3JtYWwgfCBNZXRhZGF0YSB8CnwgU21hbGwgfCBFdWNsaWQgQ2lyY3VsYXIgQSB8IDExcHggKDAuNjlyZW0pIHwgNjAwIHwgMS44MiAocmVsYXhlZCkgfCAwLjJweCB8IFRhZ3MsIGFubm90YXRpb25zIHwKfCBDb2RlIEhlYWRpbmcgfCBTb3VyY2UgQ29kZSBQcm8gfCA0MHB4ICgyLjUwcmVtKSB8IDQwMCB8IDEuNjAgKHJlbGF4ZWQpIHwgbm9ybWFsIHwgQ29kZSBzaG93Y2FzZSB0aXRsZXMgfAp8IENvZGUgQm9keSB8IFNvdXJjZSBDb2RlIFBybyB8IDE2cHggKDEuMDByZW0pIHwgNDAwIHwgMS41MCB8IG5vcm1hbCB8IENvZGUgYmxvY2tzIHwKfCBDb2RlIExhYmVsIHwgU291cmNlIENvZGUgUHJvIHwgMTRweCAoMC44OHJlbSkgfCA0MDDigJM1MDAgfCAxLjE0ICh0aWdodCkgfCAxcHjigJMycHggfCBgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZWAgfAp8IENvZGUgTWljcm8gfCBTb3VyY2UgQ29kZSBQcm8gfCA5cHggKDAuNTZyZW0pIHwgNjAwIHwgMi42NyAocmVsYXhlZCkgfCAyLjVweCB8IGB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlYCB8CgojIyMgUHJpbmNpcGxlcwotICoqU2VyaWYgZm9yIGF1dGhvcml0eSoqOiBNb25nb0RCIFZhbHVlIFNlcmlmIGF0IGhlcm8gc2NhbGUgY3JlYXRlcyBhbiBlZGl0b3JpYWwgcHJlc2VuY2UgdW51c3VhbCBpbiB0ZWNoIOKAlCBpdCBjb21tdW5pY2F0ZXMgdGhhdCBNb25nb0RCIGlzIGFuIGluc3RpdHV0aW9uLCBub3QgYSBzdGFydHVwLgotICoqV2VpZ2h0IDMwMCBhcyBib2R5IGRlZmF1bHQqKjogRXVjbGlkIENpcmN1bGFyIEEgdXNlcyBsaWdodCAoMzAwKSBmb3IgYm9keSB0ZXh0LCBjcmVhdGluZyBhbiBhaXJ5IHJlYWRpbmcgZXhwZXJpZW5jZSB0aGF0IGNvbnRyYXN0cyB3aXRoIHRoZSBkZW5zZSwgZGFyayBiYWNrZ3JvdW5kcy4KLSAqKldpZGUtdHJhY2tlZCBtb25vc3BhY2UgbGFiZWxzKio6IFNvdXJjZSBDb2RlIFBybyB1cHBlcmNhc2UgYXQgMXB44oCTM3B4IGxldHRlci1zcGFjaW5nIGNyZWF0ZXMgdGVjaG5pY2FsIHNpZ25wb3N0cyB0aGF0IGZlZWwgbGlrZSBkYXRhYmFzZSBmaWVsZCBsYWJlbHMg4oCUIHN5c3RlbWF0aWMsIHN0cnVjdHVyZWQsIGNsYXNzaWZpZWQuCi0gKipGb3VyLXdlaWdodCByYW5nZSoqOiAzMDAgKGxpZ2h0IGJvZHkpIOKGkiA0MDAgKHN0YW5kYXJkKSDihpIgNTAwIChVSS9uYXYpIOKGkiA3MDAgKGJvbGQgQ1RBKSDigJQgYSB3aWRlciByYW5nZSB0aGFuIG1vc3Qgc3lzdGVtcywgZW5hYmxpbmcgZmluZS1ncmFpbmVkIGhpZXJhcmNoeS4KCiMjIDQuIENvbXBvbmVudCBTdHlsaW5ncwoKIyMjIEJ1dHRvbnMKCioqUHJpbWFyeSBHcmVlbiAoRGFyayBTdXJmYWNlKSoqCi0gQmFja2dyb3VuZDogYCMwMDY4NGFgIChtdXRlZCBNb25nb0RCIGdyZWVuKQotIFRleHQ6IGAjMDAwMDAwYAotIFJhZGl1czogNTAlIChjaXJjdWxhcikgb3IgMTAwcHggKHBpbGwpCi0gQm9yZGVyOiBgMXB4IHNvbGlkICMwMDY4NGFgCi0gU2hhZG93OiBgcmdiYSgwLDAsMCwwLjA2KSAwcHggMXB4IDZweGAKLSBIb3Zlcjogc2NhbGUgMS4xCi0gQWN0aXZlOiBzY2FsZSAwLjg1CgoqKkRhcmsgVGVhbCBCdXR0b24qKgotIEJhY2tncm91bmQ6IGAjMWMyZDM4YAotIFRleHQ6IGAjNWM2Yzc1YAotIFJhZGl1czogMTAwcHggKHBpbGwpCi0gQm9yZGVyOiBgMXB4IHNvbGlkICMzZDRmNThgCi0gSG92ZXI6IGJhY2tncm91bmQgYCMxZWFlZGJgLCB0ZXh0IHdoaXRlLCB0cmFuc2xhdGVYKDVweCkKCioqT3V0bGluZWQgQnV0dG9uIChMaWdodCBTdXJmYWNlKSoqCi0gQmFja2dyb3VuZDogdHJhbnNwYXJlbnQKLSBUZXh0OiBgIzAwMWUyYmAKLSBCb3JkZXI6IGAxcHggc29saWQgI2I4YzRjMmAKLSBSYWRpdXM6IDRweOKAkzhweAotIEhvdmVyOiBiYWNrZ3JvdW5kIHRpbnQKCiMjIyBDYXJkcyAmIENvbnRhaW5lcnMKLSBMaWdodCBtb2RlOiB3aGl0ZSBiYWNrZ3JvdW5kIHdpdGggYDFweCBzb2xpZCAjYjhjNGMyYCBib3JkZXIKLSBEYXJrIG1vZGU6IGAjMDAxZTJiYCBvciBgIzFjMmQzOGAgYmFja2dyb3VuZCB3aXRoIGAxcHggc29saWQgIzNkNGY1OGAKLSBSYWRpdXM6IDE2cHggKHN0YW5kYXJkKSwgMjRweCAobWVkaXVtKSwgNDhweCAobGFyZ2UvaGVybykKLSBTaGFkb3c6IGByZ2JhKDAsMzAsNDMsMC4xMikgMHB4IDI2cHggNDRweGAgKGZvcmVzdC10aW50ZWQpCi0gSW1hZ2UgY29udGFpbmVyczogMzBweOKAkzMycHggcmFkaXVzCgojIyMgSW5wdXRzICYgRm9ybXMKLSBUZXh0YXJlYTogdGV4dCBgI2U4ZWRlYmAsIHBhZGRpbmcgMTJweCAxMnB4IDEycHggOHB4Ci0gQm9yZGVyczogYDFweCBzb2xpZCAjYjhjNGMyYCBvbiBsaWdodCwgYDFweCBzb2xpZCAjM2Q0ZjU4YCBvbiBkYXJrCi0gSW5wdXQgcmFkaXVzOiA0cHgKCiMjIyBOYXZpZ2F0aW9uCi0gRGFyayBoZWFkZXIgb24gZm9yZXN0LWJsYWNrIGJhY2tncm91bmQKLSBFdWNsaWQgQ2lyY3VsYXIgQSAxNnB4IHdlaWdodCA1MDAgZm9yIG5hdiBsaW5rcwotIE1vbmdvREIgbG9nbyAobGVhZiBpY29uICsgd29yZG1hcmspIGxlZnQtYWxpZ25lZAotIEdyZWVuIENUQSBwaWxsIGJ1dHRvbnMgcmlnaHQtYWxpZ25lZAotIE1lZ2EtbWVudSBkcm9wZG93bnMgd2l0aCBwcm9kdWN0IGNhdGVnb3JpZXMKCiMjIyBJbWFnZSBUcmVhdG1lbnQKLSBEYXNoYm9hcmQgc2NyZWVuc2hvdHMgb24gZGFyayBiYWNrZ3JvdW5kcwotIEdyZWVuLWFjY2VudGVkIFVJIGVsZW1lbnRzIGluIHNjcmVlbnNob3RzCi0gMzBweOKAkzMycHggcmFkaXVzIG9uIGltYWdlIGNvbnRhaW5lcnMKLSBGdWxsLXdpZHRoIGRhcmsgc2VjdGlvbnMgZm9yIHByb2R1Y3Qgc2hvd2Nhc2VzCgojIyMgRGlzdGluY3RpdmUgQ29tcG9uZW50cwoKKipOZW9uIEdyZWVuIEFjY2VudCBVbmRlcmxpbmVzKioKLSBgMHB4IDJweCAycHggMHB4IHNvbGlkICMwMGVkNjRgIOKAlCBib3R0b20gKyByaWdodCBib3JkZXIgY3JlYXRpbmcgYWNjZW50IHVuZGVybGluZXMKLSBVc2VkIG9uIGZlYXR1cmUgaGVhZGluZ3MgYW5kIGhpZ2hsaWdodGVkIHRleHQKLSBBbHNvIGFwcGVhcnMgYXMgYCMwMDZjZmFgIChibHVlKSB2YXJpYW50CgoqKlNvdXJjZSBDb2RlIExhYmVsIFN5c3RlbSoqCi0gMTRweCB1cHBlcmNhc2UgU291cmNlIENvZGUgUHJvIHdpdGggMXB44oCTMnB4IGxldHRlci1zcGFjaW5nCi0gVXNlZCBhcyBzZWN0aW9uIGNhdGVnb3J5IG1hcmtlcnMgYWJvdmUgaGVhZGluZ3MKLSBDcmVhdGVzIGEgImRhdGFiYXNlIGZpZWxkIGxhYmVsIiBhZXN0aGV0aWMKCiMjIDUuIExheW91dCBQcmluY2lwbGVzCgojIyMgU3BhY2luZyBTeXN0ZW0KLSBCYXNlIHVuaXQ6IDhweAotIFNjYWxlOiAxcHgsIDRweCwgN3B4LCA4cHgsIDEwcHgsIDEycHgsIDE0cHgsIDE1cHgsIDE2cHgsIDE4cHgsIDIwcHgsIDI0cHgsIDMycHgKCiMjIyBHcmlkICYgQ29udGFpbmVyCi0gTWF4IGNvbnRlbnQgd2lkdGggY2VudGVyZWQKLSBEYXJrIGhlcm8gc2VjdGlvbiB3aXRoIGNvbnRhaW5lZCBjb250ZW50Ci0gTGlnaHQgY29udGVudCBzZWN0aW9ucyBiZWxvdwotIENhcmQgZ3JpZHM6IDLigJMzIGNvbHVtbnMKLSBGdWxsLXdpZHRoIGRhcmsgZm9vdGVyCgojIyMgV2hpdGVzcGFjZSBQaGlsb3NvcGh5Ci0gKipEcmFtYXRpYyBtb2RlIHRyYW5zaXRpb25zKio6IFRoZSBzaGlmdCBmcm9tIGRhcmsgdGVhbCBzZWN0aW9ucyB0byB3aGl0ZSBjb250ZW50IGNyZWF0ZXMgYnVpbHQtaW4gdmlzdWFsIGJyZWF0aGluZyB0aHJvdWdoIGNvbnRyYXN0LCBub3QganVzdCBzcGFjZS4KLSAqKkdlbmVyb3VzIGRhcmsgc2VjdGlvbnMqKjogRGFyayBoZXJvIGFuZCBmZWF0dXJlIGFyZWFzIHVzZSBleHRyYSB2ZXJ0aWNhbCBwYWRkaW5nICg4MHB4KykgdG8gbGV0IHRoZSBmb3Jlc3QtZGFyayBiYWNrZ3JvdW5kIGJyZWF0aGUuCi0gKipDb21wYWN0IGxpZ2h0IHNlY3Rpb25zKio6IFdoaXRlIGNvbnRlbnQgYXJlYXMgYXJlIGRlbnNlciwgd2l0aCB0aWdodGVyIGNhcmQgZ3JpZHMgYW5kIGxlc3MgdmVydGljYWwgc3BhY2luZy4KCiMjIyBCb3JkZXIgUmFkaXVzIFNjYWxlCi0gTWluaW1hbCAoMXB44oCTMnB4KTogU21hbGwgc3BhbnMsIGJhZGdlcwotIFN1YnRsZSAoNHB4KTogSW5wdXRzLCBzbWFsbCBidXR0b25zCi0gU3RhbmRhcmQgKDhweCk6IENhcmRzLCBsaW5rcwotIENhcmQgKDE2cHgpOiBTdGFuZGFyZCBjYXJkcywgY29udGFpbmVycwotIFRvZ2dsZSAoMjBweCk6IFN3aXRjaCBlbGVtZW50cwotIExhcmdlICgyNHB4KTogTGFyZ2UgcGFuZWxzCi0gSW1hZ2UgKDMwcHjigJMzMnB4KTogSW1hZ2UgY29udGFpbmVycwotIEhlcm8gKDQ4cHgpOiBIZXJvIGNhcmRzCi0gUGlsbCAoMTAwcHjigJM5OTlweCk6IEJ1dHRvbnMsIG5hdmlnYXRpb24gcGlsbHMKLSBGdWxsICg5OTk5cHgpOiBNYXhpbXVtIHBpbGwKCiMjIDYuIERlcHRoICYgRWxldmF0aW9uCgp8IExldmVsIHwgVHJlYXRtZW50IHwgVXNlIHwKfC0tLS0tLS18LS0tLS0tLS0tLS18LS0tLS18CnwgRmxhdCAoTGV2ZWwgMCkgfCBObyBzaGFkb3cgfCBEZWZhdWx0IHN1cmZhY2VzIHwKfCBTdWJ0bGUgKExldmVsIDEpIHwgYHJnYmEoMCwwLDAsMC4xKSAwcHggMnB4IDRweGAgfCBMaWdodCBjYXJkIGxpZnQgfAp8IFN0YW5kYXJkIChMZXZlbCAyKSB8IGByZ2JhKDAsMCwwLDAuMTUpIDBweCAzcHggOXB4YCB8IFN0YW5kYXJkIGNhcmRzIHwKfCBQcm9taW5lbnQgKExldmVsIDMpIHwgYHJnYmEoMCwwLDAsMC4xNSkgMHB4IDNweCAyMHB4YCB8IEVsZXZhdGVkIHBhbmVscyB8CnwgRm9yZXN0IChMZXZlbCA0KSB8IGByZ2JhKDAsMzAsNDMsMC4xMikgMHB4IDI2cHggNDRweCwgcmdiYSgwLDAsMCwwLjEzKSAwcHggN3B4IDEzcHhgIHwgSGVybyBjYXJkcyDigJQgdGVhbC10aW50ZWQgfAoKKipTaGFkb3cgUGhpbG9zb3BoeSoqOiBNb25nb0RCJ3Mgc2hhZG93IHN5c3RlbSBpcyB1bmlxdWUgaW4gdGhhdCB0aGUgcHJpbWFyeSBlbGV2YXRpb24gc2hhZG93IHVzZXMgYHJnYmEoMCwgMzAsIDQzLCAwLjEyKWAg4oCUIGEgdGVhbC10aW50ZWQgc2hhZG93IHRoYXQgY2FycmllcyB0aGUgZm9yZXN0LWRhcmsgYnJhbmQgY29sb3IgaW50byB0aGUgZGVwdGggc3lzdGVtLiBUaGlzIG1lYW5zIGV2ZW4gb24gd2hpdGUgc3VyZmFjZXMsIHNoYWRvd3MgZmVlbCBsaWtlIHRoZXkgYmVsb25nIHRvIHRoZSBNb25nb0RCIGNvbG9yIHdvcmxkIHJhdGhlciB0aGFuIGJlaW5nIGdlbmVyaWMgbmV1dHJhbCBibGFjay4KCiMjIDcuIERvJ3MgYW5kIERvbid0cwoKIyMjIERvCi0gVXNlIGAjMDAxZTJiYCAoZm9yZXN0LWJsYWNrKSBmb3IgZGFyayBzZWN0aW9ucyDigJQgbm90IHB1cmUgYmxhY2sKLSBBcHBseSBNb25nb0RCIEdyZWVuIChgIzAwZWQ2NGApIHNwYXJpbmdseSBmb3IgbWF4aW11bSBlbGVjdHJpYyBpbXBhY3QKLSBVc2UgTW9uZ29EQiBWYWx1ZSBTZXJpZiBPTkxZIGZvciBoZXJvL2Rpc3BsYXkgaGVhZGluZ3Mg4oCUIEV1Y2xpZCBDaXJjdWxhciBBIGZvciBldmVyeXRoaW5nIGVsc2UKLSBBcHBseSBTb3VyY2UgQ29kZSBQcm8gdXBwZXJjYXNlIHdpdGggd2lkZSB0cmFja2luZyAoMXB44oCTM3B4KSBmb3IgdGVjaG5pY2FsIGxhYmVscwotIFVzZSB0ZWFsLXRpbnRlZCBzaGFkb3dzIChgcmdiYSgwLDMwLDQzLDAuMTIpYCkgZm9yIHByaW1hcnkgY2FyZCBlbGV2YXRpb24KLSBNYWludGFpbiB0aGUgZGFyay9saWdodCBzZWN0aW9uIGR1YWxpdHkg4oCUIGRyYW1hdGljIGNvbnRyYXN0IGJldHdlZW4gbW9kZXMKLSBVc2Ugd2VpZ2h0IDMwMCBmb3IgYm9keSB0ZXh0IOKAlCB0aGUgbGlnaHQgd2VpZ2h0IGlzIHRoZSByZWFkYWJsZSB2b2ljZQotIEFwcGx5IHBpbGwgcmFkaXVzICgxMDBweCkgdG8gcHJpbWFyeSBhY3Rpb24gYnV0dG9ucwoKIyMjIERvbid0Ci0gRG9uJ3QgdXNlIHB1cmUgYmxhY2sgKGAjMDAwMDAwYCkgZm9yIGRhcmsgYmFja2dyb3VuZHMg4oCUIGFsd2F5cyB1c2UgdGVhbC1ibGFjayAoYCMwMDFlMmJgKQotIERvbid0IHVzZSBNb25nb0RCIEdyZWVuIChgIzAwZWQ2NGApIG9uIGJhY2tncm91bmRzIOKAlCBpdCdzIGFuIGFjY2VudCBmb3IgdGV4dCwgdW5kZXJsaW5lcywgYW5kIHNtYWxsIGhpZ2hsaWdodHMKLSBEb24ndCB1c2Ugc3RhbmRhcmQgZ3JheSBzaGFkb3dzIOKAlCBhbHdheXMgdXNlIHRlYWwtdGludGVkIChgcmdiYSgwLDMwLDQzLC4uLilgKQotIERvbid0IGFwcGx5IHNlcmlmIGZvbnQgdG8gYm9keSB0ZXh0IOKAlCBNb25nb0RCIFZhbHVlIFNlcmlmIGlzIGhlcm8tb25seQotIERvbid0IHVzZSBuYXJyb3cgbGV0dGVyLXNwYWNpbmcgb24gU291cmNlIENvZGUgUHJvIGxhYmVscyDigJQgdGhlIHdpZGUgdHJhY2tpbmcgSVMgdGhlIGlkZW50aXR5Ci0gRG9uJ3QgbWl4IGRhcmsgYW5kIGxpZ2h0IHNlY3Rpb24gdHJlYXRtZW50cyB3aXRoaW4gdGhlIHNhbWUgc2VjdGlvbgotIERvbid0IHVzZSB3YXJtIGNvbG9ycyDigJQgdGhlIHBhbGV0dGUgaXMgc3RyaWN0bHkgY29vbCAodGVhbCwgZ3JlZW4sIGJsdWUpCi0gRG9uJ3QgZm9yZ2V0IHRoZSBncmVlbiBhY2NlbnQgdW5kZXJsaW5lcyDigJQgdGhleSdyZSB0aGUgc2lnbmF0dXJlIGRlY29yYXRpdmUgZWxlbWVudAoKIyMgOC4gUmVzcG9uc2l2ZSBCZWhhdmlvcgoKIyMjIEJyZWFrcG9pbnRzCnwgTmFtZSB8IFdpZHRoIHwgS2V5IENoYW5nZXMgfAp8LS0tLS0tfC0tLS0tLS18LS0tLS0tLS0tLS0tLXwKfCBNb2JpbGUgU21hbGwgfCA8NDI1cHggfCBUaWdodCBzaW5nbGUgY29sdW1uIHwKfCBNb2JpbGUgfCA0MjXigJM3NjhweCB8IFN0YW5kYXJkIG1vYmlsZSB8CnwgVGFibGV0IHwgNzY44oCTMTAyNHB4IHwgMi1jb2x1bW4gZ3JpZHMgYmVnaW4gfAp8IERlc2t0b3AgfCAxMDI04oCTMTI4MHB4IHwgU3RhbmRhcmQgbGF5b3V0IHwKfCBMYXJnZSBEZXNrdG9wIHwgMTI4MOKAkzE0NDBweCB8IEV4cGFuZGVkIGxheW91dCB8CnwgVWx0cmEtd2lkZSB8ID4xNDQwcHggfCBNYXhpbXVtIHdpZHRoLCBnZW5lcm91cyBtYXJnaW5zIHwKCiMjIyBUb3VjaCBUYXJnZXRzCi0gUGlsbCBidXR0b25zIHdpdGggZ2VuZXJvdXMgcGFkZGluZwotIE5hdmlnYXRpb24gbGlua3MgYXQgMTZweCB3aXRoIGFkZXF1YXRlIHNwYWNpbmcKLSBDYXJkIHN1cmZhY2VzIGFzIGZ1bGwtYXJlYSB0b3VjaCB0YXJnZXRzCgojIyMgQ29sbGFwc2luZyBTdHJhdGVneQotIEhlcm86IE1vbmdvREIgVmFsdWUgU2VyaWYgOTZweCDihpIgNjRweCDihpIgc2NhbGVzIGZ1cnRoZXIKLSBOYXZpZ2F0aW9uOiBob3Jpem9udGFsIG1lZ2EtbWVudSDihpIgaGFtYnVyZ2VyCi0gRmVhdHVyZSBjYXJkczogbXVsdGktY29sdW1uIOKGkiBzdGFja2VkCi0gRGFyay9saWdodCBzZWN0aW9ucyBtYWludGFpbiB0aGVpciBtb2RlIGF0IGFsbCBzaXplcwotIFNvdXJjZSBDb2RlIFBybyBsYWJlbHMgbWFpbnRhaW4gdXBwZXJjYXNlIHRyZWF0bWVudAoKIyMjIEltYWdlIEJlaGF2aW9yCi0gRGFzaGJvYXJkIHNjcmVlbnNob3RzIHNjYWxlIHByb3BvcnRpb25hbGx5Ci0gRGFyayBzZWN0aW9uIGJhY2tncm91bmRzIG1haW50YWluZWQgZnVsbC13aWR0aAotIEltYWdlIHJhZGl1cyBtYWludGFpbmVkIGFjcm9zcyBicmVha3BvaW50cwoKIyMgOS4gQWdlbnQgUHJvbXB0IEd1aWRlCgojIyMgUXVpY2sgQ29sb3IgUmVmZXJlbmNlCi0gRGFyayBiYWNrZ3JvdW5kOiBGb3Jlc3QgQmxhY2sgKGAjMDAxZTJiYCkKLSBCcmFuZCBhY2NlbnQ6IE1vbmdvREIgR3JlZW4gKGAjMDBlZDY0YCkKLSBGdW5jdGlvbmFsIGdyZWVuOiBEYXJrIEdyZWVuIChgIzAwNjg0YWApCi0gTGluayBibHVlOiBBY3Rpb24gQmx1ZSAoYCMwMDZjZmFgKQotIFRleHQgb24gbGlnaHQ6IEJsYWNrIChgIzAwMDAwMGApCi0gVGV4dCBvbiBkYXJrOiBXaGl0ZSAoYCNmZmZmZmZgKSBvciBMaWdodCBJbnB1dCAoYCNlOGVkZWJgKQotIEJvcmRlciBsaWdodDogU2lsdmVyIFRlYWwgKGAjYjhjNGMyYCkKLSBCb3JkZXIgZGFyazogVGVhbCBHcmF5IChgIzNkNGY1OGApCgojIyMgRXhhbXBsZSBDb21wb25lbnQgUHJvbXB0cwotICJDcmVhdGUgYSBoZXJvIG9uIGZvcmVzdC1ibGFjayAoIzAwMWUyYikgYmFja2dyb3VuZC4gSGVhZGxpbmUgYXQgOTZweCBNb25nb0RCIFZhbHVlIFNlcmlmIHdlaWdodCA0MDAsIGxpbmUtaGVpZ2h0IDEuMjAsIHdoaXRlIHRleHQgd2l0aCAncG90ZW50aWFsJyBoaWdobGlnaHRlZCBpbiBNb25nb0RCIEdyZWVuICgjMDBlZDY0KS4gU3VidGl0bGUgYXQgMThweCBFdWNsaWQgQ2lyY3VsYXIgQSB3ZWlnaHQgNDAwLiBHcmVlbiBwaWxsIENUQSAoIzAwNjg0YSwgMTAwcHggcmFkaXVzKS4gTmVvbiBncmVlbiBncmFkaWVudCBnbG93IGJlaGluZCBwcm9kdWN0IHNjcmVlbnNob3QuIgotICJEZXNpZ24gYSBjYXJkIG9uIHdoaXRlIGJhY2tncm91bmQ6IDFweCBzb2xpZCAjYjhjNGMyIGJvcmRlciwgMTZweCByYWRpdXMsIHNoYWRvdyByZ2JhKDAsMzAsNDMsMC4xMikgMHB4IDI2cHggNDRweC4gVGl0bGUgYXQgMjRweCBFdWNsaWQgQ2lyY3VsYXIgQSB3ZWlnaHQgNTAwLiBCb2R5IGF0IDE2cHggd2VpZ2h0IDMwMC4gU291cmNlIENvZGUgUHJvIDE0cHggdXBwZXJjYXNlIGxhYmVsIGFib3ZlIHRpdGxlIHdpdGggMnB4IGxldHRlci1zcGFjaW5nLiIKLSAiQnVpbGQgYSBkYXJrIHNlY3Rpb246ICMwMDFlMmIgYmFja2dyb3VuZCwgMXB4IHNvbGlkICMzZDRmNTggYm9yZGVyIG9uIGNhcmRzLiBXaGl0ZSB0ZXh0LiBNb25nb0RCIEdyZWVuICgjMDBlZDY0KSBhY2NlbnQgdW5kZXJsaW5lcyBvbiBoZWFkaW5ncyB1c2luZyBib3R0b20tYm9yZGVyIDJweCBzb2xpZC4iCi0gIkNyZWF0ZSB0ZWNobmljYWwgbGFiZWw6IFNvdXJjZSBDb2RlIFBybyAxNHB4LCB0ZXh0LXRyYW5zZm9ybSB1cHBlcmNhc2UsIGxldHRlci1zcGFjaW5nIDJweCwgd2VpZ2h0IDUwMCwgIzAwZWQ2NCBjb2xvciBvbiBkYXJrIGJhY2tncm91bmQuIgotICJEZXNpZ24gYSBwaWxsIGJ1dHRvbjogIzFjMmQzOCBiYWNrZ3JvdW5kLCAxcHggc29saWQgIzNkNGY1OCBib3JkZXIsIDEwMHB4IHJhZGl1cywgIzVjNmM3NSB0ZXh0LiBIb3ZlcjogIzFlYWVkYiBiYWNrZ3JvdW5kLCB3aGl0ZSB0ZXh0LCB0cmFuc2xhdGVYKDVweCkuIgoKIyMjIEl0ZXJhdGlvbiBHdWlkZQoxLiBTdGFydCB3aXRoIHRoZSBtb2RlIGRlY2lzaW9uOiBkYXJrICgjMDAxZTJiKSBmb3IgaGVyby9mZWF0dXJlcywgd2hpdGUgZm9yIGNvbnRlbnQKMi4gTW9uZ29EQiBHcmVlbiAoIzAwZWQ2NCkgaXMgZWxlY3RyaWMg4oCUIHVzZSBvbmNlIHBlciBzZWN0aW9uIGZvciBtYXhpbXVtIGltcGFjdAozLiBTZXJpZiBoZWFkbGluZXMgKE1vbmdvREIgVmFsdWUgU2VyaWYpIGNyZWF0ZSB0aGUgZWRpdG9yaWFsIGF1dGhvcml0eSDigJQgbmV2ZXIgdXNlIGZvciBib2R5CjQuIFdlaWdodCAzMDAgYm9keSB0ZXh0IGNyZWF0ZXMgdGhlIGFpcnkgcmVhZGluZyBleHBlcmllbmNlIOKAlCBkb24ndCBkZWZhdWx0IHRvIDQwMAo1LiBTb3VyY2UgQ29kZSBQcm8gdXBwZXJjYXNlIHdpdGggd2lkZSB0cmFja2luZyBmb3IgdGVjaG5pY2FsIGxhYmVscyDigJQgdGhlIGRhdGFiYXNlIHZvaWNlCjYuIFRlYWwtdGludGVkIHNoYWRvd3Mga2VlcCBldmVyeXRoaW5nIGluIHRoZSBNb25nb0RCIGNvbG9yIHdvcmxkCg==
+# Design System: MongoDB
+
+
+> **Hermes Agent — Implementation Notes**
+>
+> The original site uses proprietary fonts. For self-contained HTML output, use these CDN substitutes:
+> - **Primary:** `Inter` | **Mono:** `Source Code Pro`
+> - **Font stack (CSS):** `font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;`
+> - **Mono stack (CSS):** `font-family: 'Source Code Pro', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;`
+> ```html
+> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+> ```
+> Use `write_file` to create HTML, serve via `generative-widgets` skill (cloudflared tunnel).
+> Verify visual accuracy with `browser_vision` after generating.
+
+## 1. Visual Theme & Atmosphere
+
+MongoDB's website is a deep-forest-meets-terminal experience — a design system rooted in the darkest teal-black (`#001e2b`) that evokes both the density of a database and the depth of a forest canopy. Against this near-black canvas, a striking neon green (`#00ed64`) pulses as the brand accent — bright enough to feel electric, organic enough to feel alive. This isn't the cold neon of cyberpunk; it's the bioluminescent green of something growing in the dark.
+
+The typography system is architecturally ambitious: MongoDB Value Serif for massive hero headlines (96px) creates an editorial, authoritative presence — serif type at database-company scale is a bold choice that says "we're not just another tech company." Euclid Circular A handles the heavy lifting of body and UI text with an unusually wide weight range (300–700), while Source Code Pro serves as the code and label font with distinctive uppercase treatments featuring very wide letter-spacing (1px–3px). This three-font system creates a hierarchy that spans editorial elegance → geometric professionalism → engineering precision.
+
+What makes MongoDB distinctive is its dual-mode design: a dark hero/feature section world (`#001e2b` with neon green accents) and a light content world (white with teal-gray borders `#b8c4c2`). The transition between these modes creates dramatic contrast. The shadow system uses teal-tinted dark shadows (`rgba(0, 30, 43, 0.12)`) that maintain the forest-dark atmosphere even on light surfaces. Buttons use pill shapes (100px–999px radius) with MongoDB Green borders (`#00684a`), and the entire component system references the LeafyGreen design system.
+
+**Key Characteristics:**
+- Deep teal-black backgrounds (`#001e2b`) — forest-dark, not space-dark
+- Neon MongoDB Green (`#00ed64`) as the singular brand accent — electric and organic
+- MongoDB Value Serif for hero headlines — editorial authority at tech scale
+- Euclid Circular A for body with weight 300 (light) as a distinctive body weight
+- Source Code Pro with wide uppercase letter-spacing (1px–3px) for technical labels
+- Teal-tinted shadows: `rgba(0, 30, 43, 0.12)` — shadows carry the forest color
+- Dual-mode: dark teal hero sections + light white content sections
+- Pill buttons (100px radius) with green borders (`#00684a`)
+- Link Blue (`#006cfa`) and hover transition to `#3860be`
+
+## 2. Color Palette & Roles
+
+### Primary Brand
+- **Forest Black** (`#001e2b`): Primary dark background — the deepest teal-black
+- **MongoDB Green** (`#00ed64`): Primary brand accent — neon green for highlights, underlines, gradients
+- **Dark Green** (`#00684a`): Button borders, link text on light — muted green for functional use
+
+### Interactive
+- **Action Blue** (`#006cfa`): Secondary accent — links, interactive highlights
+- **Hover Blue** (`#3860be`): All link hover states transition to this blue
+- **Teal Active** (`#1eaedb`): Button hover background — bright teal
+
+### Neutral Scale
+- **Deep Teal** (`#1c2d38`): Dark button backgrounds, secondary dark surfaces
+- **Teal Gray** (`#3d4f58`): Dark borders on dark surfaces
+- **Dark Slate** (`#21313c`): Dark link text variant
+- **Cool Gray** (`#5c6c75`): Muted text on dark, secondary button text
+- **Silver Teal** (`#b8c4c2`): Borders on light surfaces, dividers
+- **Light Input** (`#e8edeb`): Input text on dark surfaces
+- **Pure White** (`#ffffff`): Light section background, button text on dark
+- **Black** (`#000000`): Text on light surfaces, darkest elements
+
+### Shadows
+- **Forest Shadow** (`rgba(0, 30, 43, 0.12) 0px 26px 44px, rgba(0, 0, 0, 0.13) 0px 7px 13px`): Primary card elevation — teal-tinted
+- **Standard Shadow** (`rgba(0, 0, 0, 0.15) 0px 3px 20px`): General elevation
+- **Subtle Shadow** (`rgba(0, 0, 0, 0.1) 0px 2px 4px`): Light card lift
+
+## 3. Typography Rules
+
+### Font Families
+- **Display Serif**: `MongoDB Value Serif` — editorial hero headlines
+- **Body / UI**: `Euclid Circular A` — geometric sans-serif workhorse
+- **Code / Labels**: `Source Code Pro` — monospace with uppercase label treatments
+- **Fallbacks**: `Akzidenz-Grotesk Std` (with CJK: Noto Sans KR/SC/JP), `Times`, `Arial`, `system-ui`
+
+### Hierarchy
+
+| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
+|------|------|------|--------|-------------|----------------|-------|
+| Display Hero | MongoDB Value Serif | 96px (6.00rem) | 400 | 1.20 (tight) | normal | Serif authority |
+| Display Secondary | MongoDB Value Serif | 64px (4.00rem) | 400 | 1.00 (tight) | normal | Serif sub-hero |
+| Section Heading | Euclid Circular A | 36px (2.25rem) | 500 | 1.33 | normal | Geometric precision |
+| Sub-heading | Euclid Circular A | 24px (1.50rem) | 500 | 1.33 | normal | Feature titles |
+| Body Large | Euclid Circular A | 20px (1.25rem) | 400 | 1.60 (relaxed) | normal | Introductions |
+| Body | Euclid Circular A | 18px (1.13rem) | 400 | 1.33 | normal | Standard body |
+| Body Light | Euclid Circular A | 16px (1.00rem) | 300 | 1.50–2.00 | normal | Light-weight reading text |
+| Nav / UI | Euclid Circular A | 16px (1.00rem) | 500 | 1.00–1.88 | 0.16px | Navigation, emphasized |
+| Body Bold | Euclid Circular A | 15px (0.94rem) | 700 | 1.50 | normal | Strong emphasis |
+| Button | Euclid Circular A | 13.5px–16px | 500–700 | 1.00 | 0.135px–0.9px | CTA labels |
+| Caption | Euclid Circular A | 14px (0.88rem) | 400 | 1.71 (relaxed) | normal | Metadata |
+| Small | Euclid Circular A | 11px (0.69rem) | 600 | 1.82 (relaxed) | 0.2px | Tags, annotations |
+| Code Heading | Source Code Pro | 40px (2.50rem) | 400 | 1.60 (relaxed) | normal | Code showcase titles |
+| Code Body | Source Code Pro | 16px (1.00rem) | 400 | 1.50 | normal | Code blocks |
+| Code Label | Source Code Pro | 14px (0.88rem) | 400–500 | 1.14 (tight) | 1px–2px | `text-transform: uppercase` |
+| Code Micro | Source Code Pro | 9px (0.56rem) | 600 | 2.67 (relaxed) | 2.5px | `text-transform: uppercase` |
+
+### Principles
+- **Serif for authority**: MongoDB Value Serif at hero scale creates an editorial presence unusual in tech — it communicates that MongoDB is an institution, not a startup.
+- **Weight 300 as body default**: Euclid Circular A uses light (300) for body text, creating an airy reading experience that contrasts with the dense, dark backgrounds.
+- **Wide-tracked monospace labels**: Source Code Pro uppercase at 1px–3px letter-spacing creates technical signposts that feel like database field labels — systematic, structured, classified.
+- **Four-weight range**: 300 (light body) → 400 (standard) → 500 (UI/nav) → 700 (bold CTA) — a wider range than most systems, enabling fine-grained hierarchy.
+
+## 4. Component Stylings
+
+### Buttons
+
+**Primary Green (Dark Surface)**
+- Background: `#00684a` (muted MongoDB green)
+- Text: `#000000`
+- Radius: 50% (circular) or 100px (pill)
+- Border: `1px solid #00684a`
+- Shadow: `rgba(0,0,0,0.06) 0px 1px 6px`
+- Hover: scale 1.1
+- Active: scale 0.85
+
+**Dark Teal Button**
+- Background: `#1c2d38`
+- Text: `#5c6c75`
+- Radius: 100px (pill)
+- Border: `1px solid #3d4f58`
+- Hover: background `#1eaedb`, text white, translateX(5px)
+
+**Outlined Button (Light Surface)**
+- Background: transparent
+- Text: `#001e2b`
+- Border: `1px solid #b8c4c2`
+- Radius: 4px–8px
+- Hover: background tint
+
+### Cards & Containers
+- Light mode: white background with `1px solid #b8c4c2` border
+- Dark mode: `#001e2b` or `#1c2d38` background with `1px solid #3d4f58`
+- Radius: 16px (standard), 24px (medium), 48px (large/hero)
+- Shadow: `rgba(0,30,43,0.12) 0px 26px 44px` (forest-tinted)
+- Image containers: 30px–32px radius
+
+### Inputs & Forms
+- Textarea: text `#e8edeb`, padding 12px 12px 12px 8px
+- Borders: `1px solid #b8c4c2` on light, `1px solid #3d4f58` on dark
+- Input radius: 4px
+
+### Navigation
+- Dark header on forest-black background
+- Euclid Circular A 16px weight 500 for nav links
+- MongoDB logo (leaf icon + wordmark) left-aligned
+- Green CTA pill buttons right-aligned
+- Mega-menu dropdowns with product categories
+
+### Image Treatment
+- Dashboard screenshots on dark backgrounds
+- Green-accented UI elements in screenshots
+- 30px–32px radius on image containers
+- Full-width dark sections for product showcases
+
+### Distinctive Components
+
+**Neon Green Accent Underlines**
+- `0px 2px 2px 0px solid #00ed64` — bottom + right border creating accent underlines
+- Used on feature headings and highlighted text
+- Also appears as `#006cfa` (blue) variant
+
+**Source Code Label System**
+- 14px uppercase Source Code Pro with 1px–2px letter-spacing
+- Used as section category markers above headings
+- Creates a "database field label" aesthetic
+
+## 5. Layout Principles
+
+### Spacing System
+- Base unit: 8px
+- Scale: 1px, 4px, 7px, 8px, 10px, 12px, 14px, 15px, 16px, 18px, 20px, 24px, 32px
+
+### Grid & Container
+- Max content width centered
+- Dark hero section with contained content
+- Light content sections below
+- Card grids: 2–3 columns
+- Full-width dark footer
+
+### Whitespace Philosophy
+- **Dramatic mode transitions**: The shift from dark teal sections to white content creates built-in visual breathing through contrast, not just space.
+- **Generous dark sections**: Dark hero and feature areas use extra vertical padding (80px+) to let the forest-dark background breathe.
+- **Compact light sections**: White content areas are denser, with tighter card grids and less vertical spacing.
+
+### Border Radius Scale
+- Minimal (1px–2px): Small spans, badges
+- Subtle (4px): Inputs, small buttons
+- Standard (8px): Cards, links
+- Card (16px): Standard cards, containers
+- Toggle (20px): Switch elements
+- Large (24px): Large panels
+- Image (30px–32px): Image containers
+- Hero (48px): Hero cards
+- Pill (100px–999px): Buttons, navigation pills
+- Full (9999px): Maximum pill
+
+## 6. Depth & Elevation
+
+| Level | Treatment | Use |
+|-------|-----------|-----|
+| Flat (Level 0) | No shadow | Default surfaces |
+| Subtle (Level 1) | `rgba(0,0,0,0.1) 0px 2px 4px` | Light card lift |
+| Standard (Level 2) | `rgba(0,0,0,0.15) 0px 3px 9px` | Standard cards |
+| Prominent (Level 3) | `rgba(0,0,0,0.15) 0px 3px 20px` | Elevated panels |
+| Forest (Level 4) | `rgba(0,30,43,0.12) 0px 26px 44px, rgba(0,0,0,0.13) 0px 7px 13px` | Hero cards — teal-tinted |
+
+**Shadow Philosophy**: MongoDB's shadow system is unique in that the primary elevation shadow uses `rgba(0, 30, 43, 0.12)` — a teal-tinted shadow that carries the forest-dark brand color into the depth system. This means even on white surfaces, shadows feel like they belong to the MongoDB color world rather than being generic neutral black.
+
+## 7. Do's and Don'ts
+
+### Do
+- Use `#001e2b` (forest-black) for dark sections — not pure black
+- Apply MongoDB Green (`#00ed64`) sparingly for maximum electric impact
+- Use MongoDB Value Serif ONLY for hero/display headings — Euclid Circular A for everything else
+- Apply Source Code Pro uppercase with wide tracking (1px–3px) for technical labels
+- Use teal-tinted shadows (`rgba(0,30,43,0.12)`) for primary card elevation
+- Maintain the dark/light section duality — dramatic contrast between modes
+- Use weight 300 for body text — the light weight is the readable voice
+- Apply pill radius (100px) to primary action buttons
+
+### Don't
+- Don't use pure black (`#000000`) for dark backgrounds — always use teal-black (`#001e2b`)
+- Don't use MongoDB Green (`#00ed64`) on backgrounds — it's an accent for text, underlines, and small highlights
+- Don't use standard gray shadows — always use teal-tinted (`rgba(0,30,43,...)`)
+- Don't apply serif font to body text — MongoDB Value Serif is hero-only
+- Don't use narrow letter-spacing on Source Code Pro labels — the wide tracking IS the identity
+- Don't mix dark and light section treatments within the same section
+- Don't use warm colors — the palette is strictly cool (teal, green, blue)
+- Don't forget the green accent underlines — they're the signature decorative element
+
+## 8. Responsive Behavior
+
+### Breakpoints
+| Name | Width | Key Changes |
+|------|-------|-------------|
+| Mobile Small | <425px | Tight single column |
+| Mobile | 425–768px | Standard mobile |
+| Tablet | 768–1024px | 2-column grids begin |
+| Desktop | 1024–1280px | Standard layout |
+| Large Desktop | 1280–1440px | Expanded layout |
+| Ultra-wide | >1440px | Maximum width, generous margins |
+
+### Touch Targets
+- Pill buttons with generous padding
+- Navigation links at 16px with adequate spacing
+- Card surfaces as full-area touch targets
+
+### Collapsing Strategy
+- Hero: MongoDB Value Serif 96px → 64px → scales further
+- Navigation: horizontal mega-menu → hamburger
+- Feature cards: multi-column → stacked
+- Dark/light sections maintain their mode at all sizes
+- Source Code Pro labels maintain uppercase treatment
+
+### Image Behavior
+- Dashboard screenshots scale proportionally
+- Dark section backgrounds maintained full-width
+- Image radius maintained across breakpoints
+
+## 9. Agent Prompt Guide
+
+### Quick Color Reference
+- Dark background: Forest Black (`#001e2b`)
+- Brand accent: MongoDB Green (`#00ed64`)
+- Functional green: Dark Green (`#00684a`)
+- Link blue: Action Blue (`#006cfa`)
+- Text on light: Black (`#000000`)
+- Text on dark: White (`#ffffff`) or Light Input (`#e8edeb`)
+- Border light: Silver Teal (`#b8c4c2`)
+- Border dark: Teal Gray (`#3d4f58`)
+
+### Example Component Prompts
+- "Create a hero on forest-black (#001e2b) background. Headline at 96px MongoDB Value Serif weight 400, line-height 1.20, white text with 'potential' highlighted in MongoDB Green (#00ed64). Subtitle at 18px Euclid Circular A weight 400. Green pill CTA (#00684a, 100px radius). Neon green gradient glow behind product screenshot."
+- "Design a card on white background: 1px solid #b8c4c2 border, 16px radius, shadow rgba(0,30,43,0.12) 0px 26px 44px. Title at 24px Euclid Circular A weight 500. Body at 16px weight 300. Source Code Pro 14px uppercase label above title with 2px letter-spacing."
+- "Build a dark section: #001e2b background, 1px solid #3d4f58 border on cards. White text. MongoDB Green (#00ed64) accent underlines on headings using bottom-border 2px solid."
+- "Create technical label: Source Code Pro 14px, text-transform uppercase, letter-spacing 2px, weight 500, #00ed64 color on dark background."
+- "Design a pill button: #1c2d38 background, 1px solid #3d4f58 border, 100px radius, #5c6c75 text. Hover: #1eaedb background, white text, translateX(5px)."
+
+### Iteration Guide
+1. Start with the mode decision: dark (#001e2b) for hero/features, white for content
+2. MongoDB Green (#00ed64) is electric — use once per section for maximum impact
+3. Serif headlines (MongoDB Value Serif) create the editorial authority — never use for body
+4. Weight 300 body text creates the airy reading experience — don't default to 400
+5. Source Code Pro uppercase with wide tracking for technical labels — the database voice
+6. Teal-tinted shadows keep everything in the MongoDB color world

@@ -1,1 +1,102 @@
-IyBEZXNpZ24gU3lzdGVtOiBBaXJ0YWJsZQoKCj4gKipIZXJtZXMgQWdlbnQg4oCUIEltcGxlbWVudGF0aW9uIE5vdGVzKioKPgo+IFRoZSBvcmlnaW5hbCBzaXRlIHVzZXMgcHJvcHJpZXRhcnkgZm9udHMuIEZvciBzZWxmLWNvbnRhaW5lZCBIVE1MIG91dHB1dCwgdXNlIHRoZXNlIENETiBzdWJzdGl0dXRlczoKPiAtICoqUHJpbWFyeToqKiBgSW50ZXJgIHwgKipNb25vOioqIGBzeXN0ZW0gbW9ub3NwYWNlIHN0YWNrYAo+IC0gKipGb250IHN0YWNrIChDU1MpOioqIGBmb250LWZhbWlseTogJ0ludGVyJywgc3lzdGVtLXVpLCAtYXBwbGUtc3lzdGVtLCAnU2Vnb2UgVUknLCBSb2JvdG8sIHNhbnMtc2VyaWY7YAo+IC0gKipNb25vIHN0YWNrIChDU1MpOioqIGBmb250LWZhbWlseTogdWktbW9ub3NwYWNlLCBTRk1vbm8tUmVndWxhciwgTWVubG8sIE1vbmFjbywgQ29uc29sYXMsICdMaWJlcmF0aW9uIE1vbm8nLCAnQ291cmllciBOZXcnLCBtb25vc3BhY2U7YAo+IGBgYGh0bWwKPiA8bGluayBocmVmPSJodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2NzczI/ZmFtaWx5PUludGVyOndnaHRAMzAwOzQwMDs1MDA7NjAwOzcwMCZkaXNwbGF5PXN3YXAiIHJlbD0ic3R5bGVzaGVldCI+Cj4gYGBgCj4gVXNlIGB3cml0ZV9maWxlYCB0byBjcmVhdGUgSFRNTCwgc2VydmUgdmlhIGBnZW5lcmF0aXZlLXdpZGdldHNgIHNraWxsIChjbG91ZGZsYXJlZCB0dW5uZWwpLgo+IFZlcmlmeSB2aXN1YWwgYWNjdXJhY3kgd2l0aCBgYnJvd3Nlcl92aXNpb25gIGFmdGVyIGdlbmVyYXRpbmcuCgojIyAxLiBWaXN1YWwgVGhlbWUgJiBBdG1vc3BoZXJlCgpBaXJ0YWJsZSdzIHdlYnNpdGUgaXMgYSBjbGVhbiwgZW50ZXJwcmlzZS1mcmllbmRseSBwbGF0Zm9ybSB0aGF0IGNvbW11bmljYXRlcyAic29waGlzdGljYXRlZCBzaW1wbGljaXR5IiB0aHJvdWdoIGEgd2hpdGUgY2FudmFzIHdpdGggZGVlcCBuYXZ5IHRleHQgKGAjMTgxZDI2YCkgYW5kIEFpcnRhYmxlIEJsdWUgKGAjMWI2MWM5YCkgYXMgdGhlIHByaW1hcnkgaW50ZXJhY3RpdmUgYWNjZW50LiBUaGUgSGFhcyBmb250IGZhbWlseSAoZGlzcGxheSArIHRleHQgdmFyaWFudHMpIGNyZWF0ZXMgYSBTd2lzcy1wcmVjaXNpb24gdHlwb2dyYXBoeSBzeXN0ZW0gd2l0aCBwb3NpdGl2ZSBsZXR0ZXItc3BhY2luZyB0aHJvdWdob3V0LgoKKipLZXkgQ2hhcmFjdGVyaXN0aWNzOioqCi0gV2hpdGUgY2FudmFzIHdpdGggZGVlcCBuYXZ5IHRleHQgKGAjMTgxZDI2YCkKLSBBaXJ0YWJsZSBCbHVlIChgIzFiNjFjOWApIGFzIHByaW1hcnkgQ1RBIGFuZCBsaW5rIGNvbG9yCi0gSGFhcyArIEhhYXMgR3Jvb3QgRGlzcCBkdWFsIGZvbnQgc3lzdGVtCi0gUG9zaXRpdmUgbGV0dGVyLXNwYWNpbmcgb24gYm9keSB0ZXh0ICgwLjA4cHjigJMwLjI4cHgpCi0gMTJweCByYWRpdXMgYnV0dG9ucywgMTZweOKAkzMycHggZm9yIGNhcmRzCi0gTXVsdGktbGF5ZXIgYmx1ZS10aW50ZWQgc2hhZG93OiBgcmdiYSg0NSwxMjcsMjQ5LDAuMjgpIDBweCAxcHggM3B4YAotIFNlbWFudGljIHRoZW1lIHRva2VuczogYC0tdGhlbWVfKmAgQ1NTIHZhcmlhYmxlIG5hbWluZwoKIyMgMi4gQ29sb3IgUGFsZXR0ZSAmIFJvbGVzCgojIyMgUHJpbWFyeQotICoqRGVlcCBOYXZ5KiogKGAjMTgxZDI2YCk6IFByaW1hcnkgdGV4dAotICoqQWlydGFibGUgQmx1ZSoqIChgIzFiNjFjOWApOiBDVEEgYnV0dG9ucywgbGlua3MKLSAqKldoaXRlKiogKGAjZmZmZmZmYCk6IFByaW1hcnkgc3VyZmFjZQotICoqU3BvdGxpZ2h0KiogKGByZ2JhKDI0OSwyNTIsMjU1LDAuOTcpYCk6IGAtLXRoZW1lX2J1dHRvbi10ZXh0LXNwb3RsaWdodGAKCiMjIyBTZW1hbnRpYwotICoqU3VjY2VzcyBHcmVlbioqIChgIzAwNjQwMGApOiBgLS10aGVtZV9zdWNjZXNzLXRleHRgCi0gKipXZWFrIFRleHQqKiAoYHJnYmEoNCwxNCwzMiwwLjY5KWApOiBgLS10aGVtZV90ZXh0LXdlYWtgCi0gKipTZWNvbmRhcnkgQWN0aXZlKiogKGByZ2JhKDcsMTIsMjAsMC44MilgKTogYC0tdGhlbWVfYnV0dG9uLXRleHQtc2Vjb25kYXJ5LWFjdGl2ZWAKCiMjIyBOZXV0cmFsCi0gKipEYXJrIEdyYXkqKiAoYCMzMzMzMzNgKTogU2Vjb25kYXJ5IHRleHQKLSAqKk1pZCBCbHVlKiogKGAjMjU0ZmFkYCk6IExpbmsvYWNjZW50IGJsdWUgdmFyaWFudAotICoqQm9yZGVyKiogKGAjZTBlMmU2YCk6IENhcmQgYm9yZGVycwotICoqTGlnaHQgU3VyZmFjZSoqIChgI2Y4ZmFmY2ApOiBTdWJ0bGUgc3VyZmFjZQoKIyMjIFNoYWRvd3MKLSAqKkJsdWUtdGludGVkKiogKGByZ2JhKDAsMCwwLDAuMzIpIDBweCAwcHggMXB4LCByZ2JhKDAsMCwwLDAuMDgpIDBweCAwcHggMnB4LCByZ2JhKDQ1LDEyNywyNDksMC4yOCkgMHB4IDFweCAzcHgsIHJnYmEoMCwwLDAsMC4wNikgMHB4IDBweCAwcHggMC41cHggaW5zZXRgKQotICoqU29mdCoqIChgcmdiYSgxNSw0OCwxMDYsMC4wNSkgMHB4IDBweCAyMHB4YCkKCiMjIDMuIFR5cG9ncmFwaHkgUnVsZXMKCiMjIyBGb250IEZhbWlsaWVzCi0gKipQcmltYXJ5Kio6IGBIYWFzYCwgZmFsbGJhY2tzOiBgLWFwcGxlLXN5c3RlbSwgc3lzdGVtLXVpLCBTZWdvZSBVSSwgUm9ib3RvYAotICoqRGlzcGxheSoqOiBgSGFhcyBHcm9vdCBEaXNwYCwgZmFsbGJhY2s6IGBIYWFzYAoKIyMjIEhpZXJhcmNoeQoKfCBSb2xlIHwgRm9udCB8IFNpemUgfCBXZWlnaHQgfCBMaW5lIEhlaWdodCB8IExldHRlciBTcGFjaW5nIHwKfC0tLS0tLXwtLS0tLS18LS0tLS0tfC0tLS0tLS0tfC0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tLXwKfCBEaXNwbGF5IEhlcm8gfCBIYWFzIHwgNDhweCB8IDQwMCB8IDEuMTUgfCBub3JtYWwgfAp8IERpc3BsYXkgQm9sZCB8IEhhYXMgR3Jvb3QgRGlzcCB8IDQ4cHggfCA5MDAgfCAxLjUwIHwgbm9ybWFsIHwKfCBTZWN0aW9uIEhlYWRpbmcgfCBIYWFzIHwgNDBweCB8IDQwMCB8IDEuMjUgfCBub3JtYWwgfAp8IFN1Yi1oZWFkaW5nIHwgSGFhcyB8IDMycHggfCA0MDDigJM1MDAgfCAxLjE14oCTMS4yNSB8IG5vcm1hbCB8CnwgQ2FyZCBUaXRsZSB8IEhhYXMgfCAyNHB4IHwgNDAwIHwgMS4yMOKAkzEuMzAgfCAwLjEycHggfAp8IEZlYXR1cmUgfCBIYWFzIHwgMjBweCB8IDQwMCB8IDEuMjXigJMxLjUwIHwgMC4xcHggfAp8IEJvZHkgfCBIYWFzIHwgMThweCB8IDQwMCB8IDEuMzUgfCAwLjE4cHggfAp8IEJvZHkgTWVkaXVtIHwgSGFhcyB8IDE2cHggfCA1MDAgfCAxLjMwIHwgMC4wOOKAkzAuMTZweCB8CnwgQnV0dG9uIHwgSGFhcyB8IDE2cHggfCA1MDAgfCAxLjI14oCTMS4zMCB8IDAuMDhweCB8CnwgQ2FwdGlvbiB8IEhhYXMgfCAxNHB4IHwgNDAw4oCTNTAwIHwgMS4yNeKAkzEuMzUgfCAwLjA34oCTMC4yOHB4IHwKCiMjIDQuIENvbXBvbmVudCBTdHlsaW5ncwoKIyMjIEJ1dHRvbnMKLSAqKlByaW1hcnkgQmx1ZSoqOiBgIzFiNjFjOWAsIHdoaXRlIHRleHQsIDE2cHggMjRweCBwYWRkaW5nLCAxMnB4IHJhZGl1cwotICoqV2hpdGUqKjogd2hpdGUgYmcsIGAjMTgxZDI2YCB0ZXh0LCAxMnB4IHJhZGl1cywgMXB4IGJvcmRlciB3aGl0ZQotICoqQ29va2llIENvbnNlbnQqKjogYCMxYjYxYzlgIGJnLCAycHggcmFkaXVzIChzaGFycCkKCiMjIyBDYXJkczogYDFweCBzb2xpZCAjZTBlMmU2YCwgMTZweOKAkzI0cHggcmFkaXVzCiMjIyBJbnB1dHM6IFN0YW5kYXJkIEhhYXMgc3R5bGluZwoKIyMgNS4gTGF5b3V0Ci0gU3BhY2luZzogMeKAkzQ4cHggKDhweCBiYXNlKQotIFJhZGl1czogMnB4IChzbWFsbCksIDEycHggKGJ1dHRvbnMpLCAxNnB4IChjYXJkcyksIDI0cHggKHNlY3Rpb25zKSwgMzJweCAobGFyZ2UpLCA1MCUgKGNpcmNsZXMpCgojIyA2LiBEZXB0aAotIEJsdWUtdGludGVkIG11bHRpLWxheWVyIHNoYWRvdyBzeXN0ZW0KLSBTb2Z0IGFtYmllbnQ6IGByZ2JhKDE1LDQ4LDEwNiwwLjA1KSAwcHggMHB4IDIwcHhgCgojIyA3LiBEbydzIGFuZCBEb24ndHMKIyMjIERvOiBVc2UgQWlydGFibGUgQmx1ZSBmb3IgQ1RBcywgSGFhcyB3aXRoIHBvc2l0aXZlIHRyYWNraW5nLCAxMnB4IHJhZGl1cyBidXR0b25zCiMjIyBEb24ndDogU2tpcCBwb3NpdGl2ZSBsZXR0ZXItc3BhY2luZywgdXNlIGhlYXZ5IHNoYWRvd3MKCiMjIDguIFJlc3BvbnNpdmUgQmVoYXZpb3IKQnJlYWtwb2ludHM6IDQyNeKAkzE2NjRweCAoMjMgYnJlYWtwb2ludHMpCgojIyA5LiBBZ2VudCBQcm9tcHQgR3VpZGUKLSBUZXh0OiBEZWVwIE5hdnkgKGAjMTgxZDI2YCkKLSBDVEE6IEFpcnRhYmxlIEJsdWUgKGAjMWI2MWM5YCkKLSBCYWNrZ3JvdW5kOiBXaGl0ZSAoYCNmZmZmZmZgKQotIEJvcmRlcjogYCNlMGUyZTZgCg==
+# Design System: Airtable
+
+
+> **Hermes Agent — Implementation Notes**
+>
+> The original site uses proprietary fonts. For self-contained HTML output, use these CDN substitutes:
+> - **Primary:** `Inter` | **Mono:** `system monospace stack`
+> - **Font stack (CSS):** `font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;`
+> - **Mono stack (CSS):** `font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;`
+> ```html
+> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+> ```
+> Use `write_file` to create HTML, serve via `generative-widgets` skill (cloudflared tunnel).
+> Verify visual accuracy with `browser_vision` after generating.
+
+## 1. Visual Theme & Atmosphere
+
+Airtable's website is a clean, enterprise-friendly platform that communicates "sophisticated simplicity" through a white canvas with deep navy text (`#181d26`) and Airtable Blue (`#1b61c9`) as the primary interactive accent. The Haas font family (display + text variants) creates a Swiss-precision typography system with positive letter-spacing throughout.
+
+**Key Characteristics:**
+- White canvas with deep navy text (`#181d26`)
+- Airtable Blue (`#1b61c9`) as primary CTA and link color
+- Haas + Haas Groot Disp dual font system
+- Positive letter-spacing on body text (0.08px–0.28px)
+- 12px radius buttons, 16px–32px for cards
+- Multi-layer blue-tinted shadow: `rgba(45,127,249,0.28) 0px 1px 3px`
+- Semantic theme tokens: `--theme_*` CSS variable naming
+
+## 2. Color Palette & Roles
+
+### Primary
+- **Deep Navy** (`#181d26`): Primary text
+- **Airtable Blue** (`#1b61c9`): CTA buttons, links
+- **White** (`#ffffff`): Primary surface
+- **Spotlight** (`rgba(249,252,255,0.97)`): `--theme_button-text-spotlight`
+
+### Semantic
+- **Success Green** (`#006400`): `--theme_success-text`
+- **Weak Text** (`rgba(4,14,32,0.69)`): `--theme_text-weak`
+- **Secondary Active** (`rgba(7,12,20,0.82)`): `--theme_button-text-secondary-active`
+
+### Neutral
+- **Dark Gray** (`#333333`): Secondary text
+- **Mid Blue** (`#254fad`): Link/accent blue variant
+- **Border** (`#e0e2e6`): Card borders
+- **Light Surface** (`#f8fafc`): Subtle surface
+
+### Shadows
+- **Blue-tinted** (`rgba(0,0,0,0.32) 0px 0px 1px, rgba(0,0,0,0.08) 0px 0px 2px, rgba(45,127,249,0.28) 0px 1px 3px, rgba(0,0,0,0.06) 0px 0px 0px 0.5px inset`)
+- **Soft** (`rgba(15,48,106,0.05) 0px 0px 20px`)
+
+## 3. Typography Rules
+
+### Font Families
+- **Primary**: `Haas`, fallbacks: `-apple-system, system-ui, Segoe UI, Roboto`
+- **Display**: `Haas Groot Disp`, fallback: `Haas`
+
+### Hierarchy
+
+| Role | Font | Size | Weight | Line Height | Letter Spacing |
+|------|------|------|--------|-------------|----------------|
+| Display Hero | Haas | 48px | 400 | 1.15 | normal |
+| Display Bold | Haas Groot Disp | 48px | 900 | 1.50 | normal |
+| Section Heading | Haas | 40px | 400 | 1.25 | normal |
+| Sub-heading | Haas | 32px | 400–500 | 1.15–1.25 | normal |
+| Card Title | Haas | 24px | 400 | 1.20–1.30 | 0.12px |
+| Feature | Haas | 20px | 400 | 1.25–1.50 | 0.1px |
+| Body | Haas | 18px | 400 | 1.35 | 0.18px |
+| Body Medium | Haas | 16px | 500 | 1.30 | 0.08–0.16px |
+| Button | Haas | 16px | 500 | 1.25–1.30 | 0.08px |
+| Caption | Haas | 14px | 400–500 | 1.25–1.35 | 0.07–0.28px |
+
+## 4. Component Stylings
+
+### Buttons
+- **Primary Blue**: `#1b61c9`, white text, 16px 24px padding, 12px radius
+- **White**: white bg, `#181d26` text, 12px radius, 1px border white
+- **Cookie Consent**: `#1b61c9` bg, 2px radius (sharp)
+
+### Cards: `1px solid #e0e2e6`, 16px–24px radius
+### Inputs: Standard Haas styling
+
+## 5. Layout
+- Spacing: 1–48px (8px base)
+- Radius: 2px (small), 12px (buttons), 16px (cards), 24px (sections), 32px (large), 50% (circles)
+
+## 6. Depth
+- Blue-tinted multi-layer shadow system
+- Soft ambient: `rgba(15,48,106,0.05) 0px 0px 20px`
+
+## 7. Do's and Don'ts
+### Do: Use Airtable Blue for CTAs, Haas with positive tracking, 12px radius buttons
+### Don't: Skip positive letter-spacing, use heavy shadows
+
+## 8. Responsive Behavior
+Breakpoints: 425–1664px (23 breakpoints)
+
+## 9. Agent Prompt Guide
+- Text: Deep Navy (`#181d26`)
+- CTA: Airtable Blue (`#1b61c9`)
+- Background: White (`#ffffff`)
+- Border: `#e0e2e6`

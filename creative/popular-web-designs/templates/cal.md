@@ -1,1 +1,272 @@
-IyBEZXNpZ24gU3lzdGVtOiBDYWwuY29tCgoKPiAqKkhlcm1lcyBBZ2VudCDigJQgSW1wbGVtZW50YXRpb24gTm90ZXMqKgo+Cj4gVGhlIG9yaWdpbmFsIHNpdGUgdXNlcyBwcm9wcmlldGFyeSBmb250cy4gRm9yIHNlbGYtY29udGFpbmVkIEhUTUwgb3V0cHV0LCB1c2UgdGhlc2UgQ0ROIHN1YnN0aXR1dGVzOgo+IC0gKipQcmltYXJ5OioqIGBJbnRlcmAgfCAqKk1vbm86KiogYFJvYm90byBNb25vYAo+IC0gKipGb250IHN0YWNrIChDU1MpOioqIGBmb250LWZhbWlseTogJ0ludGVyJywgc3lzdGVtLXVpLCAtYXBwbGUtc3lzdGVtLCAnU2Vnb2UgVUknLCBSb2JvdG8sIHNhbnMtc2VyaWY7YAo+IC0gKipNb25vIHN0YWNrIChDU1MpOioqIGBmb250LWZhbWlseTogJ1JvYm90byBNb25vJywgdWktbW9ub3NwYWNlLCBTRk1vbm8tUmVndWxhciwgTWVubG8sIE1vbmFjbywgQ29uc29sYXMsICdMaWJlcmF0aW9uIE1vbm8nLCAnQ291cmllciBOZXcnLCBtb25vc3BhY2U7YAo+IGBgYGh0bWwKPiA8bGluayBocmVmPSJodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2NzczI/ZmFtaWx5PUludGVyOndnaHRAMzAwOzQwMDs1MDA7NjAwOzcwMCZmYW1pbHk9Um9ib3RvK01vbm86d2dodEA0MDA7NTAwOzcwMCZkaXNwbGF5PXN3YXAiIHJlbD0ic3R5bGVzaGVldCI+Cj4gYGBgCj4gVXNlIGB3cml0ZV9maWxlYCB0byBjcmVhdGUgSFRNTCwgc2VydmUgdmlhIGBnZW5lcmF0aXZlLXdpZGdldHNgIHNraWxsIChjbG91ZGZsYXJlZCB0dW5uZWwpLgo+IFZlcmlmeSB2aXN1YWwgYWNjdXJhY3kgd2l0aCBgYnJvd3Nlcl92aXNpb25gIGFmdGVyIGdlbmVyYXRpbmcuCgojIyAxLiBWaXN1YWwgVGhlbWUgJiBBdG1vc3BoZXJlCgpDYWwuY29tJ3Mgd2Vic2l0ZSBpcyBhIG1hc3RlcmNsYXNzIGluIG1vbm9jaHJvbWF0aWMgcmVzdHJhaW50IOKAlCBhIGdyYXlzY2FsZSB3b3JsZCB3aGVyZSBib2xkbmVzcyBjb21lcyBub3QgZnJvbSBjb2xvciBidXQgZnJvbSB0aGUgc2hlZXIgY29uZmlkZW5jZSBvZiBibGFjayB0ZXh0IG9uIHdoaXRlIHNwYWNlLiBJbnNwaXJlZCBieSBVYmVyJ3MgbWluaW1hbCBhZXN0aGV0aWMsIHRoZSBwYWxldHRlIGlzIGRlbGliZXJhdGVseSBzdHJpcHBlZCBvZiBodWU6IG5lYXItYmxhY2sgaGVhZGluZ3MgKGAjMjQyNDI0YCksIG1pZC1ncmF5IHNlY29uZGFyeSB0ZXh0IChgIzg5ODk4OWApLCBhbmQgcHVyZSB3aGl0ZSBzdXJmYWNlcy4gQ29sb3IgaXMgdHJlYXRlZCBhcyBhIGZvcmVpZ24gc3Vic3RhbmNlIOKAlCB3aGVuIGl0IGFwcGVhcnMgKGEgcmFyZSBibHVlIGxpbmssIGEgZ3JlZW4gdHJ1c3QgYmFkZ2UpLCBpdCBmZWVscyBsaWtlIGEgY29udHJvbGxlZCBhY2NlbnQgaW4gYW4gb3RoZXJ3aXNlIGJsYWNrLWFuZC13aGl0ZSBwaG90b2dyYXBoLgoKQ2FsIFNhbnMsIHRoZSBicmFuZCdzIGN1c3RvbSBnZW9tZXRyaWMgZGlzcGxheSB0eXBlZmFjZSBkZXNpZ25lZCBieSBNYXJrIERhdmlzLCBpcyB0aGUgdmlzdWFsIGNlbnRlcnBpZWNlLiBMZXR0ZXJzIGFyZSBpbnRlbnRpb25hbGx5IHNwYWNlZCBleHRyZW1lbHkgY2xvc2UgYXQgbGFyZ2Ugc2l6ZXMsIGNyZWF0aW5nIGRlbnNlLCBhcmNoaXRlY3R1cmFsIGhlYWRsaW5lcyB0aGF0IGZlZWwgbGlrZSB0aGV5J3JlIGNhcnZlZCBpbnRvIHRoZSBwYWdlLiBBdCA2NHB4IGFuZCA0OHB4LCBDYWwgU2FucyBoZWFkaW5ncyBzaXQgYXQgd2VpZ2h0IDYwMCB3aXRoIGEgdGlnaHQgMS4xMCBsaW5lLWhlaWdodCDigJQgY29uZmlkZW50LCBjb21wcmVzc2VkLCBhbmQgaW1tZWRpYXRlbHkgcmVjb2duaXphYmxlLiBGb3IgYm9keSB0ZXh0LCB0aGUgc3lzdGVtIHN3aXRjaGVzIHRvIEludGVyLCBwcm92aWRpbmcgInJvY2stc29saWQiIHJlYWRhYmlsaXR5IHRoYXQgY29tcGxlbWVudHMgQ2FsIFNhbnMncyBkaXNwbGF5IHBlcnNvbmFsaXR5LiBUaGUgdHlwb2dyYXBoeSBwYWlyaW5nIGNyZWF0ZXMgYSBjbGVhciBkaXZpc2lvbjogQ2FsIFNhbnMgc3BlYWtzLCBJbnRlciBleHBsYWlucy4KClRoZSBlbGV2YXRpb24gc3lzdGVtIGlzIG5vdGFibHkgc29waGlzdGljYXRlZCBmb3IgYSBtaW5pbWFsIHNpdGUg4oCUIDExIHNoYWRvdyBkZWZpbml0aW9ucyBjcmVhdGUgYSBudWFuY2VkIGRlcHRoIGhpZXJhcmNoeSB1c2luZyBtdWx0aS1sYXllcmVkIHNoYWRvd3MgdGhhdCBjb21iaW5lIHJpbmcgYm9yZGVycyAoYDBweCAwcHggMHB4IDFweGApLCBzb2Z0IGRpZmZ1c2VkIHNoYWRvd3MsIGFuZCBpbnNldCBoaWdobGlnaHRzLiBUaGlzIHNoYWRvdy1maXJzdCBhcHByb2FjaCB0byBkZXB0aCAocmF0aGVyIHRoYW4gYm9yZGVyLWZpcnN0KSBnaXZlcyBzdXJmYWNlcyBhIHN1YnRsZSB0aHJlZS1kaW1lbnNpb25hbGl0eSB0aGF0IGZlZWxzIG1vZGVybiBhbmQgcG9saXNoZWQuIEJ1aWx0IG9uIEZyYW1lciB3aXRoIGEgYm9yZGVyLXJhZGl1cyBzY2FsZSBmcm9tIDJweCB0byA5OTk5cHggKHBpbGwpLCBDYWwuY29tIGJhbGFuY2VzIGdlb21ldHJpYyBwcmVjaXNpb24gd2l0aCBzb2Z0LCByb3VuZGVkIGludGVyYWN0aXZlIGVsZW1lbnRzLgoKKipLZXkgQ2hhcmFjdGVyaXN0aWNzOioqCi0gUHVyZWx5IGdyYXlzY2FsZSBicmFuZCBwYWxldHRlIOKAlCBubyBicmFuZCBjb2xvcnMsIGJvbGRuZXNzIHRocm91Z2ggbW9ub2Nocm9tZQotIENhbCBTYW5zIGN1c3RvbSBnZW9tZXRyaWMgZGlzcGxheSBmb250IHdpdGggZXh0cmVtZWx5IHRpZ2h0IGRlZmF1bHQgbGV0dGVyLXNwYWNpbmcKLSBNdWx0aS1sYXllcmVkIHNoYWRvdyBzeXN0ZW0gKDExIGRlZmluaXRpb25zKSB3aXRoIHJpbmcgYm9yZGVycyArIGRpZmZ1c2VkIHNoYWRvd3MgKyBpbnNldCBoaWdobGlnaHRzCi0gQ2FsIFNhbnMgZm9yIGhlYWRpbmdzLCBJbnRlciBmb3IgYm9keSDigJQgY2xlYW4gdHlwb2dyYXBoaWMgZGl2aXNpb24KLSBXaWRlIGJvcmRlci1yYWRpdXMgc2NhbGUgZnJvbSAycHggdG8gOTk5OXB4IChwaWxsKSDigJQgdmVyc2F0aWxlIHJvdW5kaW5nCi0gV2hpdGUgY2FudmFzIHdpdGggbmVhci1ibGFjayAoIzI0MjQyNCkgdGV4dCDigJQgbWF4aW11bSBjb250cmFzdCwgemVybyBkZWNvcmF0aW9uCi0gUHJvZHVjdCBzY3JlZW5zaG90cyBhcyBwcmltYXJ5IHZpc3VhbCBjb250ZW50IOKAlCB0aGUgc2NoZWR1bGluZyBVSSBzZWxscyBpdHNlbGYKLSBCdWlsdCBvbiBGcmFtZXIgcGxhdGZvcm0KCiMjIDIuIENvbG9yIFBhbGV0dGUgJiBSb2xlcwoKIyMjIFByaW1hcnkKLSAqKkNoYXJjb2FsKiogKGAjMjQyNDI0YCk6IFByaW1hcnkgaGVhZGluZyBhbmQgYnV0dG9uIHRleHQg4oCUIENhbC5jb20ncyBzaWduYXR1cmUgbmVhci1ibGFjaywgd2FybWVyIHRoYW4gcHVyZSBibGFjawotICoqTWlkbmlnaHQqKiAoYCMxMTExMTFgKTogRGVlcGVzdCB0ZXh0L292ZXJsYXkgY29sb3Ig4oCUIHVzZWQgYXQgNTAlIG9wYWNpdHkgZm9yIHN1YnRsZSBvdmVybGF5cwotICoqV2hpdGUqKiAoYCNmZmZmZmZgKTogUHJpbWFyeSBiYWNrZ3JvdW5kIGFuZCBzdXJmYWNlIOKAlCB0aGUgZG9taW5hbnQgY2FudmFzCgojIyMgU2Vjb25kYXJ5ICYgQWNjZW50Ci0gKipMaW5rIEJsdWUqKiAoYCMwMDk5ZmZgKTogSW4tdGV4dCBsaW5rcyB3aXRoIHVuZGVybGluZSBkZWNvcmF0aW9uIOKAlCB0aGUgb25seSBibHVlIGluIHRoZSBzeXN0ZW0sIHJlc2VydmVkIHN0cmljdGx5IGZvciBoeXBlcmxpbmtzCi0gKipGb2N1cyBSaW5nKiogKGAjM2I4MmY2YCBhdCA1MCUgb3BhY2l0eSk6IEtleWJvYXJkIGZvY3VzIGluZGljYXRvciDigJQgYWNjZXNzaWJpbGl0eS1vbmx5LCBpbnZpc2libGUgaW4gbm9ybWFsIGludGVyYWN0aW9uCi0gKipEZWZhdWx0IExpbmsqKiAoYCMwMDAwZWVgKTogQnJvd3Nlci1kZWZhdWx0IGxpbmsgY29sb3Igb24gc29tZSBlbGVtZW50cyDigJQgdW5tb2RpZmllZCwgc2lnbmFsaW5nIG9wZW5uZXNzCgojIyMgU3VyZmFjZSAmIEJhY2tncm91bmQKLSAqKlB1cmUgV2hpdGUqKiAoYCNmZmZmZmZgKTogUHJpbWFyeSBwYWdlIGJhY2tncm91bmQgYW5kIGNhcmQgc3VyZmFjZXMKLSAqKkxpZ2h0IEdyYXkqKiAoYXBwcm94IGAjZjVmNWY1YCk6IFN1YnRsZSBzZWN0aW9uIGRpZmZlcmVudGlhdGlvbiDigJQgYmFyZWx5IHZpc2libGUgdGludAotICoqTWlkIEdyYXkqKiAoYCM4OTg5ODlgKTogU2Vjb25kYXJ5IHRleHQsIGRlc2NyaXB0aW9ucywgYW5kIG11dGVkIGxhYmVscwoKIyMjIE5ldXRyYWxzICYgVGV4dAotICoqQ2hhcmNvYWwqKiAoYCMyNDI0MjRgKTogSGVhZGxpbmVzLCBidXR0b25zLCBwcmltYXJ5IFVJIHRleHQKLSAqKk1pZG5pZ2h0KiogKGAjMTExMTExYCk6IERlZXAgYmxhY2sgZm9yIGhpZ2gtY29udHJhc3QgbGlua3MgYW5kIG5hdiB0ZXh0Ci0gKipNaWQgR3JheSoqIChgIzg5ODk4OWApOiBEZXNjcmlwdGlvbnMsIHNlY29uZGFyeSBsYWJlbHMsIG11dGVkIGNvbnRlbnQKLSAqKlB1cmUgQmxhY2sqKiAoYCMwMDAwMDBgKTogQ2VydGFpbiBsaW5rIHRleHQgZWxlbWVudHMKLSAqKkJvcmRlciBHcmF5KiogKGFwcHJveCBgcmdiYSgzNCwgNDIsIDUzLCAwLjA44oCTMC4xMClgKTogU2hhZG93LWJhc2VkIGJvcmRlcnMgdXNpbmcgcmluZyBzaGFkb3dzIGluc3RlYWQgb2YgQ1NTIGJvcmRlcnMKCiMjIyBTZW1hbnRpYyAmIEFjY2VudAotIENhbC5jb20gaXMgZGVsaWJlcmF0ZWx5IGNvbG9ybGVzcyBmb3IgYnJhbmQgZWxlbWVudHMg4oCUICJhIGdyYXlzY2FsZSBicmFuZCB0byBlbXBoYXNpc2Ugb24gYm9sZG5lc3MgYW5kIHByb2Zlc3Npb25hbGlzbSIKLSBQcm9kdWN0IFVJIHNjcmVlbnNob3RzIHNob3cgY29sb3IgKGJsdWVzLCBncmVlbnMgaW4gdGhlIHNjaGVkdWxpbmcgaW50ZXJmYWNlKSwgYnV0IHRoZSBtYXJrZXRpbmcgc2l0ZSBpdHNlbGYgc3RheXMgbW9ub2Nocm9tZQotIFRoZSBwaGlsb3NvcGh5IG1pcnJvcnMgVWJlcidzIGFwcHJvYWNoOiBsZXQgdGhlIGNvbnRlbnQgY2FycnkgY29sb3IsIHRoZSBmcmFtZSBzdGF5cyBuZXV0cmFsCgojIyMgR3JhZGllbnQgU3lzdGVtCi0gTm8gZ3JhZGllbnRzIG9uIHRoZSBtYXJrZXRpbmcgc2l0ZSDigJQgdGhlIGRlc2lnbiBpcyBmdWxseSBmbGF0IGFuZCBtb25vY2hyb21lCi0gRGVwdGggaXMgYWNoaWV2ZWQgZW50aXJlbHkgdGhyb3VnaCBzaGFkb3dzLCBub3QgY29sb3IgdHJhbnNpdGlvbnMKCiMjIDMuIFR5cG9ncmFwaHkgUnVsZXMKCiMjIyBGb250IEZhbWlseQotICoqRGlzcGxheSoqOiBgQ2FsIFNhbnNgIOKAlCBjdXN0b20gZ2VvbWV0cmljIHNhbnMtc2VyaWYgYnkgTWFyayBEYXZpcy4gT3Blbi1zb3VyY2UsIGF2YWlsYWJsZSBvbiBHb29nbGUgRm9udHMgYW5kIEdpdEh1Yi4gRXh0cmVtZWx5IHRpZ2h0IGRlZmF1bHQgbGV0dGVyLXNwYWNpbmcgZGVzaWduZWQgZm9yIGxhcmdlIGhlYWRsaW5lcy4gSGFzIDYgY2hhcmFjdGVyIHZhcmlhbnRzIChDYywgaiwgdCwgdSwgMCwgMSkKLSAqKkJvZHkqKjogYEludGVyYCDigJQgInJvY2stc29saWQiIHN0YW5kYXJkIGJvZHkgZm9udC4gRmFsbGJhY2s6IGBJbnRlciBQbGFjZWhvbGRlcmAKLSAqKlVJIExpZ2h0Kio6IGBDYWwgU2FucyBVSSBWYXJpYWJsZSBMaWdodGAg4oCUIGxpZ2h0LXdlaWdodCB2YXJpYW50ICgzMDApIGZvciBzb2Z0ZXIgVUkgdGV4dCB3aXRoIC0wLjJweCBsZXR0ZXItc3BhY2luZwotICoqVUkgTWVkaXVtKio6IGBDYWwgU2FucyBVSSBNZWRpdW1gIOKAlCBtZWRpdW0td2VpZ2h0IHZhcmlhbnQgKDUwMCkgZm9yIGVtcGhhc2l6ZWQgY2FwdGlvbnMKLSAqKk1vbm8qKjogYFJvYm90byBNb25vYCDigJQgZm9yIGNvZGUgYmxvY2tzIGFuZCB0ZWNobmljYWwgY29udGVudAotICoqVGVydGlhcnkqKjogYE1hdHRlciBSZWd1bGFyYCAvIGBNYXR0ZXIgU2VtaUJvbGRgIC8gYE1hdHRlciBNZWRpdW1gIOKAlCBhZGRpdGlvbmFsIGJvZHkgZm9udHMgZm9yIHNwZWNpZmljIGNvbnRleHRzCgojIyMgSGllcmFyY2h5Cgp8IFJvbGUgfCBGb250IHwgU2l6ZSB8IFdlaWdodCB8IExpbmUgSGVpZ2h0IHwgTGV0dGVyIFNwYWNpbmcgfCBOb3RlcyB8CnwtLS0tLS18LS0tLS0tfC0tLS0tLXwtLS0tLS0tLXwtLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS18LS0tLS0tLXwKfCBEaXNwbGF5IEhlcm8gfCBDYWwgU2FucyB8IDY0cHggfCA2MDAgfCAxLjEwIHwgMHB4IHwgTWF4aW11bSBpbXBhY3QsIHRpZ2h0IGRlZmF1bHQgc3BhY2luZyB8CnwgU2VjdGlvbiBIZWFkaW5nIHwgQ2FsIFNhbnMgfCA0OHB4IHwgNjAwIHwgMS4xMCB8IDBweCB8IExhcmdlIHNlY3Rpb24gdGl0bGVzIHwKfCBGZWF0dXJlIEhlYWRpbmcgfCBDYWwgU2FucyB8IDI0cHggfCA2MDAgfCAxLjMwIHwgMHB4IHwgRmVhdHVyZSBibG9jayBoZWFkbGluZXMgfAp8IFN1Yi1oZWFkaW5nIHwgQ2FsIFNhbnMgfCAyMHB4IHwgNjAwIHwgMS4yMCB8ICswLjJweCB8IFBvc2l0aXZlIHNwYWNpbmcgZm9yIHJlYWRhYmlsaXR5IGF0IHNtYWxsZXIgc2l6ZSB8CnwgU3ViLWhlYWRpbmcgQWx0IHwgQ2FsIFNhbnMgfCAyMHB4IHwgNjAwIHwgMS41MCB8IDBweCB8IFJlbGF4ZWQgbGluZS1oZWlnaHQgdmFyaWFudCB8CnwgQ2FyZCBUaXRsZSB8IENhbCBTYW5zIHwgMTZweCB8IDYwMCB8IDEuMTAgfCAwcHggfCBTbWFsbGVzdCBDYWwgU2FucyB1c2FnZSB8CnwgQ2FwdGlvbiBMYWJlbCB8IENhbCBTYW5zIHwgMTJweCB8IDYwMCB8IDEuNTAgfCAwcHggfCBTbWFsbCBsYWJlbHMgaW4gQ2FsIFNhbnMgfAp8IEJvZHkgTGlnaHQgfCBDYWwgU2FucyBVSSBMaWdodCB8IDE4cHggfCAzMDAgfCAxLjMwIHwgLTAuMnB4IHwgTGlnaHQtd2VpZ2h0IGJvZHkgaW50cm8gdGV4dCB8CnwgQm9keSBMaWdodCBTdGFuZGFyZCB8IENhbCBTYW5zIFVJIExpZ2h0IHwgMTZweCB8IDMwMCB8IDEuNTAgfCAtMC4ycHggfCBMaWdodC13ZWlnaHQgYm9keSB0ZXh0IHwKfCBDYXB0aW9uIExpZ2h0IHwgQ2FsIFNhbnMgVUkgTGlnaHQgfCAxNHB4IHwgMzAwIHwgMS40MOKAkzEuNTAgfCAtMC4yIHRvIC0wLjI4cHggfCBMaWdodCBjYXB0aW9ucyBhbmQgZGVzY3JpcHRpb25zIHwKfCBVSSBMYWJlbCB8IEludGVyIHwgMTZweCB8IDYwMCB8IDEuMDAgfCAwcHggfCBVSSBidXR0b25zIGFuZCBuYXYgbGFiZWxzIHwKfCBDYXB0aW9uIEludGVyIHwgSW50ZXIgfCAxNHB4IHwgNTAwIHwgMS4xNCB8IDBweCB8IFNtYWxsIFVJIHRleHQgfAp8IE1pY3JvIHwgSW50ZXIgfCAxMnB4IHwgNTAwIHwgMS4wMCB8IDBweCB8IFNtYWxsZXN0IEludGVyIHRleHQgfAp8IENvZGUgfCBSb2JvdG8gTW9ubyB8IDE0cHggfCA2MDAgfCAxLjAwIHwgMHB4IHwgQ29kZSBzbmlwcGV0cywgdGVjaG5pY2FsIHRleHQgfAp8IEJvZHkgTWF0dGVyIHwgTWF0dGVyIFJlZ3VsYXIgfCAxNHB4IHwgNDAwIHwgMS4xNCB8IDBweCB8IEFsdGVybmF0ZSBib2R5IHRleHQgKHByb2R1Y3QgVUkpIHwKCiMjIyBQcmluY2lwbGVzCi0gKipDYWwgU2FucyBhdCBsYXJnZSwgSW50ZXIgYXQgc21hbGwqKjogQ2FsIFNhbnMgaXMgZXhjbHVzaXZlbHkgZm9yIGhlYWRpbmdzIGFuZCBkaXNwbGF5IOKAlCBuZXZlciBmb3IgYm9keSB0ZXh0LiBUaGUgc3lzdGVtIGVuZm9yY2VzIHRoaXMgZGl2aXNpb24gc3RyaWN0bHkKLSAqKlRpZ2h0IGJ5IGRlZmF1bHQsIHNwYWNlIHdoZW4gc21hbGwqKjogQ2FsIFNhbnMgbGV0dGVycyBhcmUgImludGVudGlvbmFsbHkgc3BhY2VkIHRvIGJlIGV4dHJlbWVseSBjbG9zZSIgYXQgbGFyZ2Ugc2l6ZXMuIEF0IDIwcHggYW5kIGJlbG93LCBwb3NpdGl2ZSBsZXR0ZXItc3BhY2luZyAoKzAuMnB4KSBtdXN0IGJlIGFwcGxpZWQgdG8gcHJldmVudCBjcmFtbWluZwotICoqV2VpZ2h0IDMwMCBib2R5IHZhcmlhbnQqKjogQ2FsIFNhbnMgVUkgVmFyaWFibGUgTGlnaHQgYXQgMzAwIHdlaWdodCBjcmVhdGVzIGFuIGVsZWdhbnQsIGFpcnkgYm9keSB0ZXh0IHRoYXQgY29udHJhc3RzIHdpdGggdGhlIGRlbnNlIDYwMC13ZWlnaHQgaGVhZGxpbmVzCi0gKipXZWlnaHQgNjAwIGRvbWluYW5jZSoqOiBOZWFybHkgYWxsIENhbCBTYW5zIHVzYWdlIGlzIGF0IHdlaWdodCA2MDAgKHNlbWktYm9sZCkg4oCUIHRoZSBmb250IHdhcyBkZXNpZ25lZCB0byBwZXJmb3JtIGF0IHRoaXMgd2VpZ2h0Ci0gKipOZWdhdGl2ZSB0cmFja2luZyBvbiBsaWdodCB0ZXh0Kio6IENhbCBTYW5zIFVJIExpZ2h0IHVzZXMgLTAuMnB4IHRvIC0wLjI4cHggbGV0dGVyLXNwYWNpbmcsIHN1YnRseSB0aWdodGVuaW5nIHRoZSBhbHJlYWR5LWNvbXBhY3QgbGV0dGVyZm9ybXMKCiMjIDQuIENvbXBvbmVudCBTdHlsaW5ncwoKIyMjIEJ1dHRvbnMKLSAqKkRhcmsgUHJpbWFyeSoqOiBgIzI0MjQyNGAgKG9yIGAjMWUxZjIzYCkgYmFja2dyb3VuZCwgd2hpdGUgdGV4dCwgNuKAkzhweCByYWRpdXMuIEhvdmVyOiBvcGFjaXR5IHJlZHVjdGlvbiB0byAwLjcuIFRoZSBzaWduYXR1cmUgQ1RBIOKAlCBtYXhpbWFsbHkgZGFyayBvbiB3aGl0ZQotICoqV2hpdGUvR2hvc3QqKjogV2hpdGUgYmFja2dyb3VuZCB3aXRoIHNoYWRvdy1yaW5nIGJvcmRlciwgZGFyayB0ZXh0LiBVc2VzIHRoZSBtdWx0aS1sYXllcmVkIHNoYWRvdyBzeXN0ZW0gZm9yIHN1YnRsZSBlbGV2YXRpb24KLSAqKlBpbGwqKjogOTk5OXB4IHJhZGl1cyBmb3Igcm91bmRlZCBwaWxsLXNoYXBlZCBhY3Rpb25zIGFuZCBiYWRnZXMKLSAqKkNvbXBhY3QqKjogNHB4IHBhZGRpbmcsIHNtYWxsIHRleHQg4oCUIHV0aWxpdHkgYWN0aW9ucyB3aXRoaW4gcHJvZHVjdCBVSQotICoqSW5zZXQgaGlnaGxpZ2h0Kio6IFNvbWUgYnV0dG9ucyBmZWF0dXJlIGByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMTUpIDBweCAycHggMHB4IGluc2V0YCDigJQgYSBzdWJ0bGUgaW5uZXItdG9wIGhpZ2hsaWdodCBjcmVhdGluZyBhIDNEIHByZXNzZWQgZWZmZWN0CgojIyMgQ2FyZHMgJiBDb250YWluZXJzCi0gKipTaGFkb3cgQ2FyZCoqOiBXaGl0ZSBiYWNrZ3JvdW5kLCBtdWx0aS1sYXllcmVkIHNoYWRvdyDigJQgYHJnYmEoMTksIDE5LCAyMiwgMC43KSAwcHggMXB4IDVweCAtNHB4LCByZ2JhKDM0LCA0MiwgNTMsIDAuMDgpIDBweCAwcHggMHB4IDFweCwgcmdiYSgzNCwgNDIsIDUzLCAwLjA1KSAwcHggNHB4IDhweCAwcHhgLiBUaGUgcmluZyBzaGFkb3cgKDBweCAwcHggMHB4IDFweCkgYWN0cyBhcyBhIHNoYWRvdy1ib3JkZXIKLSAqKlByb2R1Y3QgVUkgQ2FyZHMqKjogU2NyZWVuc2hvdHMgb2YgdGhlIHNjaGVkdWxpbmcgaW50ZXJmYWNlIGRpc3BsYXllZCBpbiBjYXJkIGNvbnRhaW5lcnMgd2l0aCBzaGFkb3cgZWxldmF0aW9uCi0gKipSYWRpdXMqKjogOHB4IGZvciBzdGFuZGFyZCBjYXJkcywgMTJweCBmb3IgbGFyZ2VyIGNvbnRhaW5lcnMsIDE2cHggZm9yIHByb21pbmVudCBzZWN0aW9ucwotICoqSG92ZXIqKjogTGlrZWx5IHN1YnRsZSBzaGFkb3cgZGVlcGVuaW5nIG9yIHNjYWxlIHRyYW5zZm9ybQoKIyMjIElucHV0cyAmIEZvcm1zCi0gKipTZWxlY3QgZHJvcGRvd24qKjogV2hpdGUgYmFja2dyb3VuZCwgYCMwMDAwMDBgIHRleHQsIDFweCBzb2xpZCBgcmdiKDExOCwgMTE4LCAxMTgpYCBib3JkZXIKLSAqKkZvY3VzKio6IFVzZXMgRnJhbWVyJ3MgZm9jdXMgb3V0bGluZSBzeXN0ZW0gKGAtLWZyYW1lci1mb2N1cy1vdXRsaW5lYCkKLSAqKlRleHQgaW5wdXQqKjogOHB4IHJhZGl1cywgc3RhbmRhcmQgYm9yZGVyIHRyZWF0bWVudAotICoqTWluaW1hbCBmb3JtIHByZXNlbmNlKio6IFRoZSBtYXJrZXRpbmcgc2l0ZSBwcmlvcml0aXplcyBDVEEgYnV0dG9ucyBvdmVyIGNvbXBsZXggZm9ybXMKCiMjIyBOYXZpZ2F0aW9uCi0gKipUb3AgbmF2Kio6IFdoaXRlL3RyYW5zcGFyZW50IGJhY2tncm91bmQsIENhbCBTYW5zIGxpbmtzIGF0IG5lYXItYmxhY2sKLSAqKk5hdiB0ZXh0Kio6IGAjMTExMTExYCAoTWlkbmlnaHQpIGZvciBwcmltYXJ5IGxpbmtzLCBgIzAwMDAwMGAgZm9yIGVtcGhhc2lzCi0gKipDVEEgYnV0dG9uKio6IERhcmsgUHJpbWFyeSBpbiB0aGUgbmF2IOKAlCBoaWdoIGNvbnRyYXN0IGNhbGwtdG8tYWN0aW9uCi0gKipNb2JpbGUqKjogQ29sbGFwc2VzIHRvIGhhbWJ1cmdlciB3aXRoIHNpbXBsaWZpZWQgbmF2aWdhdGlvbgotICoqU3RpY2t5Kio6IEZpeGVkIG9uIHNjcm9sbAoKIyMjIEltYWdlIFRyZWF0bWVudAotICoqUHJvZHVjdCBzY3JlZW5zaG90cyoqOiBMYXJnZSBzY2hlZHVsaW5nIFVJIHNjcmVlbnNob3RzIOKAlCB0aGUgcHJvZHVjdCBpcyB0aGUgcHJpbWFyeSB2aXN1YWwKLSAqKlRydXN0IGxvZ29zKio6IEdyYXlzY2FsZSBjb21wYW55IGxvZ29zIGluIGEgaG9yaXpvbnRhbCB0cnVzdCBiYXIKLSAqKkFzcGVjdCByYXRpb3MqKjogV2lkZSBsYW5kc2NhcGUgZm9yIHByb2R1Y3QgVUkgc2NyZWVuc2hvdHMKLSAqKk5vIGRlY29yYXRpdmUgaW1hZ2VyeSoqOiBObyBpbGx1c3RyYXRpb25zLCBwaG90b3MsIG9yIGFic3RyYWN0IGdyYXBoaWNzIOKAlCBwdXJlIHByb2R1Y3QgKyB0eXBvZ3JhcGh5CgojIyA1LiBMYXlvdXQgUHJpbmNpcGxlcwoKIyMjIFNwYWNpbmcgU3lzdGVtCi0gKipCYXNlIHVuaXQqKjogOHB4Ci0gKipTY2FsZSoqOiAxcHgsIDJweCwgM3B4LCA0cHgsIDZweCwgOHB4LCAxMnB4LCAxNnB4LCAyMHB4LCAyNHB4LCAyOHB4LCA4MHB4LCA5NnB4Ci0gKipTZWN0aW9uIHBhZGRpbmcqKjogODBweOKAkzk2cHggdmVydGljYWwgYmV0d2VlbiBtYWpvciBzZWN0aW9ucyAoZ2VuZXJvdXMpCi0gKipDYXJkIHBhZGRpbmcqKjogMTJweOKAkzI0cHggaW50ZXJuYWwKLSAqKkNvbXBvbmVudCBnYXBzKio6IDRweOKAkzhweCBiZXR3ZWVuIHJlbGF0ZWQgZWxlbWVudHMKLSAqKk5vdGFibGUganVtcCoqOiBGcm9tIDI4cHggdG8gODBweCDigJQgYSBkZWxpYmVyYXRlIGdhcCBlbXBoYXNpemluZyB0aGUgc2VjdGlvbi1sZXZlbCBzcGFjaW5nIHRpZXIKCiMjIyBHcmlkICYgQ29udGFpbmVyCi0gKipNYXggd2lkdGgqKjogfjEyMDBweCBjb250ZW50IGNvbnRhaW5lciwgY2VudGVyZWQKLSAqKkNvbHVtbiBwYXR0ZXJucyoqOiBGdWxsLXdpZHRoIGhlcm8sIGNlbnRlcmVkIHRleHQgYmxvY2tzLCAyLTMgY29sdW1uIGZlYXR1cmUgZ3JpZHMKLSAqKkZlYXR1cmUgc2hvd2Nhc2UqKjogUHJvZHVjdCBzY3JlZW5zaG90cyBmbGFua2VkIGJ5IGRlc2NyaXB0aW9uIHRleHQKLSAqKkJyZWFrcG9pbnRzKio6IDk4cHgsIDY0MHB4LCA3NjhweCwgODEwcHgsIDEwMjRweCwgMTE5OXB4IOKAlCBGcmFtZXItZ2VuZXJhdGVkCgojIyMgV2hpdGVzcGFjZSBQaGlsb3NvcGh5Ci0gKipMYXZpc2ggc2VjdGlvbiBzcGFjaW5nKio6IDgwcHjigJM5NnB4IGJldHdlZW4gc2VjdGlvbnMgY3JlYXRlcyBhIGJyZWF0aGFibGUsIHByZW1pdW0gZmVlbAotICoqUHJvZHVjdC1maXJzdCBjb250ZW50Kio6IFNjcmVlbnNob3RzIGRvbWluYXRlIHRoZSB2aXN1YWwgc3BhY2Ug4oCUIG1pbmltYWwgc3Vycm91bmRpbmcgZGVjb3JhdGlvbgotICoqQ2VudGVyZWQgaGVhZGxpbmVzKio6IENhbCBTYW5zIGhlYWRpbmdzIGNlbnRlcmVkIHdpdGggZ2VuZXJvdXMgbWFyZ2lucyBhYm92ZSBhbmQgYmVsb3cKCiMjIyBCb3JkZXIgUmFkaXVzIFNjYWxlCi0gKioycHgqKjogU3VidGxlIHJvdW5kaW5nIG9uIGlubGluZSBlbGVtZW50cwotICoqNHB4Kio6IFNtYWxsIFVJIGNvbXBvbmVudHMKLSAqKjZweOKAkzdweCoqOiBCdXR0b25zLCBzbWFsbCBjYXJkcywgaW1hZ2VzCi0gKio4cHgqKjogU3RhbmRhcmQgaW50ZXJhY3RpdmUgZWxlbWVudHMg4oCUIGJ1dHRvbnMsIGlucHV0cywgaW1hZ2VzCi0gKioxMnB4Kio6IE1lZGl1bSBjb250YWluZXJzIOKAlCBsaW5rcywgbGFyZ2VyIGNhcmRzLCBpbWFnZXMKLSAqKjE2cHgqKjogTGFyZ2Ugc2VjdGlvbiBjb250YWluZXJzCi0gKioyOXB4Kio6IFNwZWNpYWwgcm91bmRlZCBlbGVtZW50cwotICoqMTAwcHgqKjogTGFyZ2Ugcm91bmRpbmcg4oCUIG5lYXJseSBjaXJjdWxhciBvbiBzbWFsbCBlbGVtZW50cwotICoqMTAwMHB4Kio6IFZlcnkgbGFyZ2Ugcm91bmRpbmcKLSAqKjk5OTlweCoqOiBGdWxsIHBpbGwgc2hhcGUg4oCUIGJhZGdlcywgbGlua3MKCiMjIDYuIERlcHRoICYgRWxldmF0aW9uCgp8IExldmVsIHwgVHJlYXRtZW50IHwgVXNlIHwKfC0tLS0tLS18LS0tLS0tLS0tLS18LS0tLS18CnwgTGV2ZWwgMCAoRmxhdCkgfCBObyBzaGFkb3cgfCBQYWdlIGNhbnZhcywgYmFzaWMgdGV4dCBjb250YWluZXJzIHwKfCBMZXZlbCAxIChJbnNldCkgfCBgcmdiYSgwLDAsMCwwLjE2KSAwcHggMXB4IDEuOXB4IDBweCBpbnNldGAgfCBQcmVzc2VkL3JlY2Vzc2VkIGVsZW1lbnRzLCBpbnB1dCB3ZWxscyB8CnwgTGV2ZWwgMiAoUmluZyArIFNvZnQpIHwgYHJnYmEoMTksMTksMjIsMC43KSAwcHggMXB4IDVweCAtNHB4LCByZ2JhKDM0LDQyLDUzLDAuMDgpIDBweCAwcHggMHB4IDFweCwgcmdiYSgzNCw0Miw1MywwLjA1KSAwcHggNHB4IDhweGAgfCBDYXJkcywgY29udGFpbmVycyDigJQgdGhlIHdvcmtob3JzZSBzaGFkb3cgfAp8IExldmVsIDMgKFJpbmcgKyBTb2Z0IEFsdCkgfCBgcmdiYSgzNiwzNiwzNiwwLjcpIDBweCAxcHggNXB4IC00cHgsIHJnYmEoMzYsMzYsMzYsMC4wNSkgMHB4IDRweCA4cHhgIHwgQWx0IGNhcmQgZWxldmF0aW9uIHdpdGhvdXQgcmluZyBib3JkZXIgfAp8IExldmVsIDQgKEluc2V0IEhpZ2hsaWdodCkgfCBgcmdiYSgyNTUsMjU1LDI1NSwwLjE1KSAwcHggMnB4IDBweCBpbnNldGAgb3IgYHJnYigyNTUsMjU1LDI1NSkgMHB4IDJweCAwcHggaW5zZXRgIHwgQnV0dG9uIGlubmVyIGhpZ2hsaWdodCDigJQgM0QgcHJlc3NlZCBlZmZlY3QgfAp8IExldmVsIDUgKFNvZnQgT25seSkgfCBgcmdiYSgzNCw0Miw1MywwLjA1KSAwcHggNHB4IDhweGAgfCBTdWJ0bGUgYW1iaWVudCBzaGFkb3cgfAoKIyMjIFNoYWRvdyBQaGlsb3NvcGh5CkNhbC5jb20ncyBzaGFkb3cgc3lzdGVtIGlzIHRoZSBtb3N0IHNvcGhpc3RpY2F0ZWQgZWxlbWVudCBvZiB0aGUgZGVzaWduIOKAlCAxMSBzaGFkb3cgZGVmaW5pdGlvbnMgdXNpbmcgYSBtdWx0aS1sYXllcmVkIGNvbXBvc2l0aW5nIHRlY2huaXF1ZToKLSAqKlJpbmcgYm9yZGVycyoqOiBgMHB4IDBweCAwcHggMXB4YCBzaGFkb3dzIGFjdCBhcyBib3JkZXJzLCBhdm9pZGluZyBDU1MgYGJvcmRlcmAgZW50aXJlbHkuIFRoaXMgY3JlYXRlcyBoYWlybGluZSBjb250YWlubWVudCB3aXRob3V0IGFmZmVjdGluZyBsYXlvdXQKLSAqKkRpZmZ1c2VkIHNvZnQgc2hhZG93cyoqOiBgMHB4IDRweCA4cHhgIGF0IDUlIG9wYWNpdHkgYWRkIGdlbnRsZSBhbWJpZW50IGRlcHRoCi0gKipTaGFycCBjb250YWN0IHNoYWRvd3MqKjogYDBweCAxcHggNXB4IC00cHhgIGF0IDcwJSBvcGFjaXR5IGNyZWF0ZSB0aWdodCBib3R0b20tZWRnZSBzaGFkb3dzIGZvciBncm91bmRpbmcKLSAqKkluc2V0IGhpZ2hsaWdodHMqKjogV2hpdGUgaW5zZXQgc2hhZG93cyBhdCB0aGUgdG9wIG9mIGJ1dHRvbnMgY3JlYXRlIGEgc3VidGxlIDNEIGJldmVsCi0gU2hhZG93cyBhcmUgY29tcG9zZWQgaW4gY29tbWEtc2VwYXJhdGVkIHN0YWNrcyDigJQgZWFjaCBzdXJmYWNlIGdldHMgMi0zIGxheWVyZWQgc2hhZG93IGRlZmluaXRpb25zIHdvcmtpbmcgdG9nZXRoZXIKCiMjIyBEZWNvcmF0aXZlIERlcHRoCi0gTm8gZ3JhZGllbnRzIG9yIGdsb3cgZWZmZWN0cwotIEFsbCBkZXB0aCBjb21lcyBmcm9tIHRoZSBzb3BoaXN0aWNhdGVkIHNoYWRvdyBjb21wb3NpdGluZyBzeXN0ZW0KLSBUaGUgb3ZlcmFsbCBlZmZlY3QgaXMgc3VidGxlIGJ1dCBwcmVjaXNlIOKAlCBzdXJmYWNlcyBmZWVsIGxpa2UgcGh5c2ljYWwgY2FyZHMgc2l0dGluZyBvbiBhIHRhYmxlCgojIyA3LiBEbydzIGFuZCBEb24ndHMKCiMjIyBEbwotIFVzZSBDYWwgU2FucyBleGNsdXNpdmVseSBmb3IgaGVhZGluZ3MgKDI0cHgrKSBhbmQgbmV2ZXIgZm9yIGJvZHkgdGV4dCDigJQgaXQncyBhIGRpc3BsYXkgZm9udCB3aXRoIHRpZ2h0IGRlZmF1bHQgc3BhY2luZwotIEFwcGx5IHBvc2l0aXZlIGxldHRlci1zcGFjaW5nICgrMC4ycHgpIHdoZW4gdXNpbmcgQ2FsIFNhbnMgYmVsb3cgMjRweCDigJQgdGhlIGZvbnQgY3JhbXBzIGF0IHNtYWxsIHNpemVzIHdpdGhvdXQgaXQKLSBNYWludGFpbiB0aGUgZ3JheXNjYWxlIHBhbGV0dGUg4oCUIGJvbGRuZXNzIGNvbWVzIGZyb20gY29udHJhc3QsIG5vdCBjb2xvcgotIFVzZSB0aGUgbXVsdGktbGF5ZXJlZCBzaGFkb3cgc3lzdGVtIGZvciBjYXJkIGVsZXZhdGlvbiDigJQgcmluZyBzaGFkb3cgKyBkaWZmdXNlZCBzaGFkb3cgKyBjb250YWN0IHNoYWRvdwotIEtlZXAgYmFja2dyb3VuZHMgcHVyZSB3aGl0ZSDigJQgdGhlIG1vbm9jaHJvbWUgcGhpbG9zb3BoeSByZXF1aXJlcyBhIGNsZWFuIGNhbnZhcwotIFVzZSBJbnRlciBmb3IgYWxsIGJvZHkgdGV4dCBhdCB3ZWlnaHQgMzAw4oCTNjAwIOKAlCBpdCdzIHRoZSByZWxpYWJsZSBjb3VudGVycGFydCB0byBDYWwgU2FucydzIGRpc3BsYXkgcGVyc29uYWxpdHkKLSBMZXQgcHJvZHVjdCBzY3JlZW5zaG90cyBiZSB0aGUgdmlzdWFsIGNvbnRlbnQg4oCUIG5vIGlsbHVzdHJhdGlvbnMsIG5vIGRlY29yYXRpdmUgZ3JhcGhpY3MKLSBBcHBseSBnZW5lcm91cyBzZWN0aW9uIHNwYWNpbmcgKDgwcHjigJM5NnB4KSDigJQgdGhlIGJyZWF0aGluZyByb29tIGlzIGVzc2VudGlhbCB0byB0aGUgcHJlbWl1bSBmZWVsCgojIyMgRG9uJ3QKLSBVc2UgQ2FsIFNhbnMgZm9yIGJvZHkgdGV4dCBvciB0ZXh0IGJlbG93IDE2cHgg4oCUIGl0IHdhc24ndCBkZXNpZ25lZCBmb3IgZXh0ZW5kZWQgcmVhZGluZwotIEFkZCBicmFuZCBjb2xvcnMg4oCUIENhbC5jb20gaXMgaW50ZW50aW9uYWxseSBncmF5c2NhbGUsIGNvbG9yIGlzIHJlc2VydmVkIGZvciBsaW5rcyBhbmQgVUkgc3RhdGVzIG9ubHkKLSBVc2UgQ1NTIGJvcmRlcnMgd2hlbiBzaGFkb3dzIGNhbiBhY2hpZXZlIHRoZSBzYW1lIGNvbnRhaW5tZW50IOKAlCB0aGUgcmluZy1zaGFkb3cgdGVjaG5pcXVlIGlzIHRoZSBzeXN0ZW0ncyBhcHByb2FjaAotIEFwcGx5IG5lZ2F0aXZlIGxldHRlci1zcGFjaW5nIHRvIENhbCBTYW5zIGF0IHNtYWxsIHNpemVzIOKAlCBpdCBuZWVkcyBwb3NpdGl2ZSBzcGFjaW5nICgrMC4ycHgpIGJlbG93IDI0cHgKLSBDcmVhdGUgaGVhdnksIGRhcmsgc2hhZG93cyDigJQgQ2FsLmNvbSdzIHNoYWRvd3MgYXJlIHN1YnRsZSAoNSUgb3BhY2l0eSBkaWZmdXNlZCkgd2l0aCBzaGFycCBjb250YWN0IGVkZ2VzCi0gVXNlIGlsbHVzdHJhdGlvbnMsIGFic3RyYWN0IGdyYXBoaWNzLCBvciBkZWNvcmF0aXZlIGVsZW1lbnRzIOKAlCB0aGUgdmlzdWFsIGxhbmd1YWdlIGlzIHR5cG9ncmFwaHkgKyBwcm9kdWN0IFVJIG9ubHkKLSBNaXggQ2FsIFNhbnMgd2VpZ2h0cyDigJQgdGhlIGZvbnQgaXMgZGVzaWduZWQgZm9yIHdlaWdodCA2MDAsIG90aGVyIHdlaWdodHMgYnJlYWsgdGhlIGludGVuZGVkIGNoYXJhY3RlcgotIFJlZHVjZSBzZWN0aW9uIHNwYWNpbmcgYmVsb3cgNDhweCDigJQgdGhlIGdlbmVyb3VzIHdoaXRlc3BhY2UgaXMgY29yZSB0byB0aGUgcHJlbWl1bSBtb25vY2hyb21lIGFlc3RoZXRpYwoKIyMgOC4gUmVzcG9uc2l2ZSBCZWhhdmlvcgoKIyMjIEJyZWFrcG9pbnRzCnwgTmFtZSB8IFdpZHRoIHwgS2V5IENoYW5nZXMgfAp8LS0tLS0tfC0tLS0tLS18LS0tLS0tLS0tLS0tLXwKfCBNb2JpbGUgfCA8NjQwcHggfCBTaW5nbGUgY29sdW1uLCBoZXJvIHRleHQgfjM2cHgsIHN0YWNrZWQgZmVhdHVyZXMsIGhhbWJ1cmdlciBuYXYgfAp8IFRhYmxldCBTbWFsbCB8IDY0MHB44oCTNzY4cHggfCAyLWNvbHVtbiBiZWdpbnMgZm9yIHNvbWUgZWxlbWVudHMgfAp8IFRhYmxldCB8IDc2OHB44oCTODEwcHggfCBMYXlvdXQgYWRqdXN0bWVudHMsIGZ1bGxlciBncmlkIHwKfCBUYWJsZXQgTGFyZ2UgfCA4MTBweOKAkzEwMjRweCB8IE11bHRpLWNvbHVtbiBmZWF0dXJlIGdyaWRzIHwKfCBEZXNrdG9wIHwgMTAyNHB44oCTMTE5OXB4IHwgRnVsbCBsYXlvdXQsIGV4cGFuZGVkIG5hdmlnYXRpb24gfAp8IExhcmdlIERlc2t0b3AgfCA+MTE5OXB4IHwgTWF4LXdpZHRoIGNvbnRhaW5lciwgY2VudGVyZWQgY29udGVudCB8CgojIyMgVG91Y2ggVGFyZ2V0cwotIEJ1dHRvbnM6IDhweCByYWRpdXMgd2l0aCBjb21mb3J0YWJsZSBwYWRkaW5nICgxMHB4KyB2ZXJ0aWNhbCkKLSBOYXYgbGlua3M6IERhcmsgdGV4dCB3aXRoIGFkZXF1YXRlIHNwYWNpbmcKLSBNb2JpbGUgQ1RBczogRnVsbC13aWR0aCBkYXJrIGJ1dHRvbnMgZm9yIGVhc3kgdGh1bWIgYWNjZXNzCi0gUGlsbCBiYWRnZXM6IDk5OTlweCByYWRpdXMgY3JlYXRlcyBsYXJnZSwgdGFwcGFibGUgdGFyZ2V0cwoKIyMjIENvbGxhcHNpbmcgU3RyYXRlZ3kKLSAqKk5hdmlnYXRpb24qKjogRnVsbCBob3Jpem9udGFsIG5hdiDihpIgaGFtYnVyZ2VyIG9uIG1vYmlsZQotICoqSGVybyoqOiA2NHB4IENhbCBTYW5zIGRpc3BsYXkg4oaSIH4zNnB4IG9uIG1vYmlsZQotICoqRmVhdHVyZSBncmlkcyoqOiBNdWx0aS1jb2x1bW4g4oaSIDItY29sdW1uIOKGkiBzaW5nbGUgc3RhY2tlZCBjb2x1bW4KLSAqKlByb2R1Y3Qgc2NyZWVuc2hvdHMqKjogU2NhbGUgd2l0aGluIGNvbnRhaW5lcnMsIG1haW50YWluaW5nIGFzcGVjdCByYXRpb3MKLSAqKlNlY3Rpb24gc3BhY2luZyoqOiBSZWR1Y2VzIGZyb20gODBweOKAkzk2cHggdG8gfjQ4cHggb24gbW9iaWxlCgojIyMgSW1hZ2UgQmVoYXZpb3IKLSBQcm9kdWN0IHNjcmVlbnNob3RzIHNjYWxlIHJlc3BvbnNpdmVseQotIFRydXN0IGxvZ29zIHJlZmxvdyB0byBtdWx0aS1yb3cgZ3JpZCBvbiBtb2JpbGUKLSBObyBhcnQgZGlyZWN0aW9uIGNoYW5nZXMg4oCUIHNhbWUgY29tcG9zaXRpb25zIGF0IGFsbCBzaXplcwotIEltYWdlcyB1c2UgN3B44oCTMTJweCBib3JkZXItcmFkaXVzIGZvciBjb25zaXN0ZW50IHJvdW5kZWQgY29ybmVycwoKIyMgOS4gQWdlbnQgUHJvbXB0IEd1aWRlCgojIyMgUXVpY2sgQ29sb3IgUmVmZXJlbmNlCi0gUHJpbWFyeSBUZXh0OiBDaGFyY29hbCAoYCMyNDI0MjRgKQotIERlZXAgVGV4dDogTWlkbmlnaHQgKGAjMTExMTExYCkKLSBTZWNvbmRhcnkgVGV4dDogTWlkIEdyYXkgKGAjODk4OTg5YCkKLSBCYWNrZ3JvdW5kOiBQdXJlIFdoaXRlIChgI2ZmZmZmZmApCi0gTGluazogTGluayBCbHVlIChgIzAwOTlmZmApCi0gQ1RBIEJ1dHRvbjogQ2hhcmNvYWwgKGAjMjQyNDI0YCkgYmcsIHdoaXRlIHRleHQKLSBTaGFkb3cgQm9yZGVyOiBgcmdiYSgzNCwgNDIsIDUzLCAwLjA4KWAgcmluZwoKIyMjIEV4YW1wbGUgQ29tcG9uZW50IFByb21wdHMKLSAiQ3JlYXRlIGEgaGVybyBzZWN0aW9uIHdpdGggd2hpdGUgYmFja2dyb3VuZCwgNjRweCBDYWwgU2FucyBoZWFkaW5nIGF0IHdlaWdodCA2MDAsIGxpbmUtaGVpZ2h0IDEuMTAsICMyNDI0MjQgdGV4dCwgY2VudGVyZWQgbGF5b3V0IHdpdGggYSBkYXJrIENUQSBidXR0b24gKCMyNDI0MjQsIDhweCByYWRpdXMsIHdoaXRlIHRleHQpIgotICJEZXNpZ24gYSBzY2hlZHVsaW5nIGNhcmQgd2l0aCB3aGl0ZSBiYWNrZ3JvdW5kLCBtdWx0aS1sYXllcmVkIHNoYWRvdyAoMHB4IDFweCA1cHggLTRweCByZ2JhKDE5LDE5LDIyLDAuNyksIDBweCAwcHggMHB4IDFweCByZ2JhKDM0LDQyLDUzLDAuMDgpLCAwcHggNHB4IDhweCByZ2JhKDM0LDQyLDUzLDAuMDUpKSwgMTJweCByYWRpdXMiCi0gIkJ1aWxkIGEgbmF2aWdhdGlvbiBiYXIgd2l0aCB3aGl0ZSBiYWNrZ3JvdW5kLCBJbnRlciBsaW5rcyBhdCAxNHB4IHdlaWdodCA1MDAgaW4gIzExMTExMSwgYSBkYXJrIENUQSBidXR0b24gKCMyNDI0MjQpLCBzdGlja3kgcG9zaXRpb25pbmciCi0gIkNyZWF0ZSBhIHRydXN0IGJhciB3aXRoIGdyYXlzY2FsZSBjb21wYW55IGxvZ29zLCBob3Jpem9udGFsbHkgY2VudGVyZWQsIDE2cHggZ2FwIGJldHdlZW4gbG9nb3MsIG9uIHdoaXRlIGJhY2tncm91bmQiCi0gIkRlc2lnbiBhIGZlYXR1cmUgc2VjdGlvbiB3aXRoIDQ4cHggQ2FsIFNhbnMgaGVhZGluZyAod2VpZ2h0IDYwMCwgIzI0MjQyNCksIDE2cHggSW50ZXIgYm9keSB0ZXh0ICh3ZWlnaHQgMzAwLCAjODk4OTg5LCBsaW5lLWhlaWdodCAxLjUwKSwgYW5kIGEgcHJvZHVjdCBzY3JlZW5zaG90IHdpdGggMTJweCByYWRpdXMgYW5kIHRoZSBjYXJkIHNoYWRvdyIKCiMjIyBJdGVyYXRpb24gR3VpZGUKV2hlbiByZWZpbmluZyBleGlzdGluZyBzY3JlZW5zIGdlbmVyYXRlZCB3aXRoIHRoaXMgZGVzaWduIHN5c3RlbToKMS4gVmVyaWZ5IGhlYWRpbmdzIHVzZSBDYWwgU2FucyBhdCB3ZWlnaHQgNjAwLCBib2R5IHVzZXMgSW50ZXIg4oCUIG5ldmVyIG1peCB0aGVtCjIuIENoZWNrIHRoYXQgdGhlIHBhbGV0dGUgaXMgcHVyZWx5IGdyYXlzY2FsZSDigJQgaWYgeW91IHNlZSBicmFuZCBjb2xvcnMsIHJlbW92ZSB0aGVtCjMuIEVuc3VyZSBjYXJkIGVsZXZhdGlvbiB1c2VzIHRoZSBtdWx0aS1sYXllcmVkIHNoYWRvdyBzdGFjaywgbm90IENTUyBib3JkZXJzCjQuIENvbmZpcm0gc2VjdGlvbiBzcGFjaW5nIGlzIGdlbmVyb3VzICg4MHB4Kykg4oCUIGlmIHNlY3Rpb25zIGZlZWwgY3JhbXBlZCwgYWRkIG1vcmUgc3BhY2UKNS4gVGhlIG92ZXJhbGwgdG9uZSBzaG91bGQgZmVlbCBsaWtlIGEgY2xlYW4sIHByb2Zlc3Npb25hbCBzY2hlZHVsaW5nIHRvb2wg4oCUIG1vbm9jaHJvbWUgY29uZmlkZW5jZSB3aXRob3V0IGFueSBkZWNvcmF0aXZlIGZsb3VyaXNoZXMK
+# Design System: Cal.com
+
+
+> **Hermes Agent — Implementation Notes**
+>
+> The original site uses proprietary fonts. For self-contained HTML output, use these CDN substitutes:
+> - **Primary:** `Inter` | **Mono:** `Roboto Mono`
+> - **Font stack (CSS):** `font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;`
+> - **Mono stack (CSS):** `font-family: 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;`
+> ```html
+> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+> ```
+> Use `write_file` to create HTML, serve via `generative-widgets` skill (cloudflared tunnel).
+> Verify visual accuracy with `browser_vision` after generating.
+
+## 1. Visual Theme & Atmosphere
+
+Cal.com's website is a masterclass in monochromatic restraint — a grayscale world where boldness comes not from color but from the sheer confidence of black text on white space. Inspired by Uber's minimal aesthetic, the palette is deliberately stripped of hue: near-black headings (`#242424`), mid-gray secondary text (`#898989`), and pure white surfaces. Color is treated as a foreign substance — when it appears (a rare blue link, a green trust badge), it feels like a controlled accent in an otherwise black-and-white photograph.
+
+Cal Sans, the brand's custom geometric display typeface designed by Mark Davis, is the visual centerpiece. Letters are intentionally spaced extremely close at large sizes, creating dense, architectural headlines that feel like they're carved into the page. At 64px and 48px, Cal Sans headings sit at weight 600 with a tight 1.10 line-height — confident, compressed, and immediately recognizable. For body text, the system switches to Inter, providing "rock-solid" readability that complements Cal Sans's display personality. The typography pairing creates a clear division: Cal Sans speaks, Inter explains.
+
+The elevation system is notably sophisticated for a minimal site — 11 shadow definitions create a nuanced depth hierarchy using multi-layered shadows that combine ring borders (`0px 0px 0px 1px`), soft diffused shadows, and inset highlights. This shadow-first approach to depth (rather than border-first) gives surfaces a subtle three-dimensionality that feels modern and polished. Built on Framer with a border-radius scale from 2px to 9999px (pill), Cal.com balances geometric precision with soft, rounded interactive elements.
+
+**Key Characteristics:**
+- Purely grayscale brand palette — no brand colors, boldness through monochrome
+- Cal Sans custom geometric display font with extremely tight default letter-spacing
+- Multi-layered shadow system (11 definitions) with ring borders + diffused shadows + inset highlights
+- Cal Sans for headings, Inter for body — clean typographic division
+- Wide border-radius scale from 2px to 9999px (pill) — versatile rounding
+- White canvas with near-black (#242424) text — maximum contrast, zero decoration
+- Product screenshots as primary visual content — the scheduling UI sells itself
+- Built on Framer platform
+
+## 2. Color Palette & Roles
+
+### Primary
+- **Charcoal** (`#242424`): Primary heading and button text — Cal.com's signature near-black, warmer than pure black
+- **Midnight** (`#111111`): Deepest text/overlay color — used at 50% opacity for subtle overlays
+- **White** (`#ffffff`): Primary background and surface — the dominant canvas
+
+### Secondary & Accent
+- **Link Blue** (`#0099ff`): In-text links with underline decoration — the only blue in the system, reserved strictly for hyperlinks
+- **Focus Ring** (`#3b82f6` at 50% opacity): Keyboard focus indicator — accessibility-only, invisible in normal interaction
+- **Default Link** (`#0000ee`): Browser-default link color on some elements — unmodified, signaling openness
+
+### Surface & Background
+- **Pure White** (`#ffffff`): Primary page background and card surfaces
+- **Light Gray** (approx `#f5f5f5`): Subtle section differentiation — barely visible tint
+- **Mid Gray** (`#898989`): Secondary text, descriptions, and muted labels
+
+### Neutrals & Text
+- **Charcoal** (`#242424`): Headlines, buttons, primary UI text
+- **Midnight** (`#111111`): Deep black for high-contrast links and nav text
+- **Mid Gray** (`#898989`): Descriptions, secondary labels, muted content
+- **Pure Black** (`#000000`): Certain link text elements
+- **Border Gray** (approx `rgba(34, 42, 53, 0.08–0.10)`): Shadow-based borders using ring shadows instead of CSS borders
+
+### Semantic & Accent
+- Cal.com is deliberately colorless for brand elements — "a grayscale brand to emphasise on boldness and professionalism"
+- Product UI screenshots show color (blues, greens in the scheduling interface), but the marketing site itself stays monochrome
+- The philosophy mirrors Uber's approach: let the content carry color, the frame stays neutral
+
+### Gradient System
+- No gradients on the marketing site — the design is fully flat and monochrome
+- Depth is achieved entirely through shadows, not color transitions
+
+## 3. Typography Rules
+
+### Font Family
+- **Display**: `Cal Sans` — custom geometric sans-serif by Mark Davis. Open-source, available on Google Fonts and GitHub. Extremely tight default letter-spacing designed for large headlines. Has 6 character variants (Cc, j, t, u, 0, 1)
+- **Body**: `Inter` — "rock-solid" standard body font. Fallback: `Inter Placeholder`
+- **UI Light**: `Cal Sans UI Variable Light` — light-weight variant (300) for softer UI text with -0.2px letter-spacing
+- **UI Medium**: `Cal Sans UI Medium` — medium-weight variant (500) for emphasized captions
+- **Mono**: `Roboto Mono` — for code blocks and technical content
+- **Tertiary**: `Matter Regular` / `Matter SemiBold` / `Matter Medium` — additional body fonts for specific contexts
+
+### Hierarchy
+
+| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
+|------|------|------|--------|-------------|----------------|-------|
+| Display Hero | Cal Sans | 64px | 600 | 1.10 | 0px | Maximum impact, tight default spacing |
+| Section Heading | Cal Sans | 48px | 600 | 1.10 | 0px | Large section titles |
+| Feature Heading | Cal Sans | 24px | 600 | 1.30 | 0px | Feature block headlines |
+| Sub-heading | Cal Sans | 20px | 600 | 1.20 | +0.2px | Positive spacing for readability at smaller size |
+| Sub-heading Alt | Cal Sans | 20px | 600 | 1.50 | 0px | Relaxed line-height variant |
+| Card Title | Cal Sans | 16px | 600 | 1.10 | 0px | Smallest Cal Sans usage |
+| Caption Label | Cal Sans | 12px | 600 | 1.50 | 0px | Small labels in Cal Sans |
+| Body Light | Cal Sans UI Light | 18px | 300 | 1.30 | -0.2px | Light-weight body intro text |
+| Body Light Standard | Cal Sans UI Light | 16px | 300 | 1.50 | -0.2px | Light-weight body text |
+| Caption Light | Cal Sans UI Light | 14px | 300 | 1.40–1.50 | -0.2 to -0.28px | Light captions and descriptions |
+| UI Label | Inter | 16px | 600 | 1.00 | 0px | UI buttons and nav labels |
+| Caption Inter | Inter | 14px | 500 | 1.14 | 0px | Small UI text |
+| Micro | Inter | 12px | 500 | 1.00 | 0px | Smallest Inter text |
+| Code | Roboto Mono | 14px | 600 | 1.00 | 0px | Code snippets, technical text |
+| Body Matter | Matter Regular | 14px | 400 | 1.14 | 0px | Alternate body text (product UI) |
+
+### Principles
+- **Cal Sans at large, Inter at small**: Cal Sans is exclusively for headings and display — never for body text. The system enforces this division strictly
+- **Tight by default, space when small**: Cal Sans letters are "intentionally spaced to be extremely close" at large sizes. At 20px and below, positive letter-spacing (+0.2px) must be applied to prevent cramming
+- **Weight 300 body variant**: Cal Sans UI Variable Light at 300 weight creates an elegant, airy body text that contrasts with the dense 600-weight headlines
+- **Weight 600 dominance**: Nearly all Cal Sans usage is at weight 600 (semi-bold) — the font was designed to perform at this weight
+- **Negative tracking on light text**: Cal Sans UI Light uses -0.2px to -0.28px letter-spacing, subtly tightening the already-compact letterforms
+
+## 4. Component Stylings
+
+### Buttons
+- **Dark Primary**: `#242424` (or `#1e1f23`) background, white text, 6–8px radius. Hover: opacity reduction to 0.7. The signature CTA — maximally dark on white
+- **White/Ghost**: White background with shadow-ring border, dark text. Uses the multi-layered shadow system for subtle elevation
+- **Pill**: 9999px radius for rounded pill-shaped actions and badges
+- **Compact**: 4px padding, small text — utility actions within product UI
+- **Inset highlight**: Some buttons feature `rgba(255, 255, 255, 0.15) 0px 2px 0px inset` — a subtle inner-top highlight creating a 3D pressed effect
+
+### Cards & Containers
+- **Shadow Card**: White background, multi-layered shadow — `rgba(19, 19, 22, 0.7) 0px 1px 5px -4px, rgba(34, 42, 53, 0.08) 0px 0px 0px 1px, rgba(34, 42, 53, 0.05) 0px 4px 8px 0px`. The ring shadow (0px 0px 0px 1px) acts as a shadow-border
+- **Product UI Cards**: Screenshots of the scheduling interface displayed in card containers with shadow elevation
+- **Radius**: 8px for standard cards, 12px for larger containers, 16px for prominent sections
+- **Hover**: Likely subtle shadow deepening or scale transform
+
+### Inputs & Forms
+- **Select dropdown**: White background, `#000000` text, 1px solid `rgb(118, 118, 118)` border
+- **Focus**: Uses Framer's focus outline system (`--framer-focus-outline`)
+- **Text input**: 8px radius, standard border treatment
+- **Minimal form presence**: The marketing site prioritizes CTA buttons over complex forms
+
+### Navigation
+- **Top nav**: White/transparent background, Cal Sans links at near-black
+- **Nav text**: `#111111` (Midnight) for primary links, `#000000` for emphasis
+- **CTA button**: Dark Primary in the nav — high contrast call-to-action
+- **Mobile**: Collapses to hamburger with simplified navigation
+- **Sticky**: Fixed on scroll
+
+### Image Treatment
+- **Product screenshots**: Large scheduling UI screenshots — the product is the primary visual
+- **Trust logos**: Grayscale company logos in a horizontal trust bar
+- **Aspect ratios**: Wide landscape for product UI screenshots
+- **No decorative imagery**: No illustrations, photos, or abstract graphics — pure product + typography
+
+## 5. Layout Principles
+
+### Spacing System
+- **Base unit**: 8px
+- **Scale**: 1px, 2px, 3px, 4px, 6px, 8px, 12px, 16px, 20px, 24px, 28px, 80px, 96px
+- **Section padding**: 80px–96px vertical between major sections (generous)
+- **Card padding**: 12px–24px internal
+- **Component gaps**: 4px–8px between related elements
+- **Notable jump**: From 28px to 80px — a deliberate gap emphasizing the section-level spacing tier
+
+### Grid & Container
+- **Max width**: ~1200px content container, centered
+- **Column patterns**: Full-width hero, centered text blocks, 2-3 column feature grids
+- **Feature showcase**: Product screenshots flanked by description text
+- **Breakpoints**: 98px, 640px, 768px, 810px, 1024px, 1199px — Framer-generated
+
+### Whitespace Philosophy
+- **Lavish section spacing**: 80px–96px between sections creates a breathable, premium feel
+- **Product-first content**: Screenshots dominate the visual space — minimal surrounding decoration
+- **Centered headlines**: Cal Sans headings centered with generous margins above and below
+
+### Border Radius Scale
+- **2px**: Subtle rounding on inline elements
+- **4px**: Small UI components
+- **6px–7px**: Buttons, small cards, images
+- **8px**: Standard interactive elements — buttons, inputs, images
+- **12px**: Medium containers — links, larger cards, images
+- **16px**: Large section containers
+- **29px**: Special rounded elements
+- **100px**: Large rounding — nearly circular on small elements
+- **1000px**: Very large rounding
+- **9999px**: Full pill shape — badges, links
+
+## 6. Depth & Elevation
+
+| Level | Treatment | Use |
+|-------|-----------|-----|
+| Level 0 (Flat) | No shadow | Page canvas, basic text containers |
+| Level 1 (Inset) | `rgba(0,0,0,0.16) 0px 1px 1.9px 0px inset` | Pressed/recessed elements, input wells |
+| Level 2 (Ring + Soft) | `rgba(19,19,22,0.7) 0px 1px 5px -4px, rgba(34,42,53,0.08) 0px 0px 0px 1px, rgba(34,42,53,0.05) 0px 4px 8px` | Cards, containers — the workhorse shadow |
+| Level 3 (Ring + Soft Alt) | `rgba(36,36,36,0.7) 0px 1px 5px -4px, rgba(36,36,36,0.05) 0px 4px 8px` | Alt card elevation without ring border |
+| Level 4 (Inset Highlight) | `rgba(255,255,255,0.15) 0px 2px 0px inset` or `rgb(255,255,255) 0px 2px 0px inset` | Button inner highlight — 3D pressed effect |
+| Level 5 (Soft Only) | `rgba(34,42,53,0.05) 0px 4px 8px` | Subtle ambient shadow |
+
+### Shadow Philosophy
+Cal.com's shadow system is the most sophisticated element of the design — 11 shadow definitions using a multi-layered compositing technique:
+- **Ring borders**: `0px 0px 0px 1px` shadows act as borders, avoiding CSS `border` entirely. This creates hairline containment without affecting layout
+- **Diffused soft shadows**: `0px 4px 8px` at 5% opacity add gentle ambient depth
+- **Sharp contact shadows**: `0px 1px 5px -4px` at 70% opacity create tight bottom-edge shadows for grounding
+- **Inset highlights**: White inset shadows at the top of buttons create a subtle 3D bevel
+- Shadows are composed in comma-separated stacks — each surface gets 2-3 layered shadow definitions working together
+
+### Decorative Depth
+- No gradients or glow effects
+- All depth comes from the sophisticated shadow compositing system
+- The overall effect is subtle but precise — surfaces feel like physical cards sitting on a table
+
+## 7. Do's and Don'ts
+
+### Do
+- Use Cal Sans exclusively for headings (24px+) and never for body text — it's a display font with tight default spacing
+- Apply positive letter-spacing (+0.2px) when using Cal Sans below 24px — the font cramps at small sizes without it
+- Maintain the grayscale palette — boldness comes from contrast, not color
+- Use the multi-layered shadow system for card elevation — ring shadow + diffused shadow + contact shadow
+- Keep backgrounds pure white — the monochrome philosophy requires a clean canvas
+- Use Inter for all body text at weight 300–600 — it's the reliable counterpart to Cal Sans's display personality
+- Let product screenshots be the visual content — no illustrations, no decorative graphics
+- Apply generous section spacing (80px–96px) — the breathing room is essential to the premium feel
+
+### Don't
+- Use Cal Sans for body text or text below 16px — it wasn't designed for extended reading
+- Add brand colors — Cal.com is intentionally grayscale, color is reserved for links and UI states only
+- Use CSS borders when shadows can achieve the same containment — the ring-shadow technique is the system's approach
+- Apply negative letter-spacing to Cal Sans at small sizes — it needs positive spacing (+0.2px) below 24px
+- Create heavy, dark shadows — Cal.com's shadows are subtle (5% opacity diffused) with sharp contact edges
+- Use illustrations, abstract graphics, or decorative elements — the visual language is typography + product UI only
+- Mix Cal Sans weights — the font is designed for weight 600, other weights break the intended character
+- Reduce section spacing below 48px — the generous whitespace is core to the premium monochrome aesthetic
+
+## 8. Responsive Behavior
+
+### Breakpoints
+| Name | Width | Key Changes |
+|------|-------|-------------|
+| Mobile | <640px | Single column, hero text ~36px, stacked features, hamburger nav |
+| Tablet Small | 640px–768px | 2-column begins for some elements |
+| Tablet | 768px–810px | Layout adjustments, fuller grid |
+| Tablet Large | 810px–1024px | Multi-column feature grids |
+| Desktop | 1024px–1199px | Full layout, expanded navigation |
+| Large Desktop | >1199px | Max-width container, centered content |
+
+### Touch Targets
+- Buttons: 8px radius with comfortable padding (10px+ vertical)
+- Nav links: Dark text with adequate spacing
+- Mobile CTAs: Full-width dark buttons for easy thumb access
+- Pill badges: 9999px radius creates large, tappable targets
+
+### Collapsing Strategy
+- **Navigation**: Full horizontal nav → hamburger on mobile
+- **Hero**: 64px Cal Sans display → ~36px on mobile
+- **Feature grids**: Multi-column → 2-column → single stacked column
+- **Product screenshots**: Scale within containers, maintaining aspect ratios
+- **Section spacing**: Reduces from 80px–96px to ~48px on mobile
+
+### Image Behavior
+- Product screenshots scale responsively
+- Trust logos reflow to multi-row grid on mobile
+- No art direction changes — same compositions at all sizes
+- Images use 7px–12px border-radius for consistent rounded corners
+
+## 9. Agent Prompt Guide
+
+### Quick Color Reference
+- Primary Text: Charcoal (`#242424`)
+- Deep Text: Midnight (`#111111`)
+- Secondary Text: Mid Gray (`#898989`)
+- Background: Pure White (`#ffffff`)
+- Link: Link Blue (`#0099ff`)
+- CTA Button: Charcoal (`#242424`) bg, white text
+- Shadow Border: `rgba(34, 42, 53, 0.08)` ring
+
+### Example Component Prompts
+- "Create a hero section with white background, 64px Cal Sans heading at weight 600, line-height 1.10, #242424 text, centered layout with a dark CTA button (#242424, 8px radius, white text)"
+- "Design a scheduling card with white background, multi-layered shadow (0px 1px 5px -4px rgba(19,19,22,0.7), 0px 0px 0px 1px rgba(34,42,53,0.08), 0px 4px 8px rgba(34,42,53,0.05)), 12px radius"
+- "Build a navigation bar with white background, Inter links at 14px weight 500 in #111111, a dark CTA button (#242424), sticky positioning"
+- "Create a trust bar with grayscale company logos, horizontally centered, 16px gap between logos, on white background"
+- "Design a feature section with 48px Cal Sans heading (weight 600, #242424), 16px Inter body text (weight 300, #898989, line-height 1.50), and a product screenshot with 12px radius and the card shadow"
+
+### Iteration Guide
+When refining existing screens generated with this design system:
+1. Verify headings use Cal Sans at weight 600, body uses Inter — never mix them
+2. Check that the palette is purely grayscale — if you see brand colors, remove them
+3. Ensure card elevation uses the multi-layered shadow stack, not CSS borders
+4. Confirm section spacing is generous (80px+) — if sections feel cramped, add more space
+5. The overall tone should feel like a clean, professional scheduling tool — monochrome confidence without any decorative flourishes

@@ -1,1 +1,135 @@
-IyBUcm91Ymxlc2hvb3RpbmcKCiMjIExhVGVYIEVycm9ycwoKKipNaXNzaW5nIHJhdyBzdHJpbmcqKiAodGhlICMxIGVycm9yKToKYGBgcHl0aG9uCiMgV1JPTkc6IE1hdGhUZXgoIlxcZnJhY3sxfXsyfSIpICAtLSBcXGYgaXMgZm9ybS1mZWVkCiMgUklHSFQ6IE1hdGhUZXgociJcZnJhY3sxfXsyfSIpCmBgYAoKKipVbmJhbGFuY2VkIGJyYWNlcyoqOiBgTWF0aFRleChyIlxmcmFjezF9ezIiKWAgLS0gbWlzc2luZyBjbG9zaW5nIGJyYWNlLgoKKipMYVRlWCBub3QgaW5zdGFsbGVkKio6IGB3aGljaCBwZGZsYXRleGAgLS0gaW5zdGFsbCB0ZXhsaXZlLWZ1bGwgb3IgbWFjdGV4LgoKKipNaXNzaW5nIHBhY2thZ2UqKjogQWRkIHRvIHByZWFtYmxlOgpgYGBweXRob24KdGV4X3RlbXBsYXRlID0gVGV4VGVtcGxhdGUoKQp0ZXhfdGVtcGxhdGUuYWRkX3RvX3ByZWFtYmxlKHIiXHVzZXBhY2thZ2V7bWF0aHJzZnN9IikKTWF0aFRleChyIlxtYXRoc2Nye0x9IiwgdGV4X3RlbXBsYXRlPXRleF90ZW1wbGF0ZSkKYGBgCgojIyBWR3JvdXAgVHlwZUVycm9yCgoqKkVycm9yOioqIGBUeXBlRXJyb3I6IE9ubHkgdmFsdWVzIG9mIHR5cGUgVk1vYmplY3QgY2FuIGJlIGFkZGVkIGFzIHN1Ym1vYmplY3RzIG9mIFZHcm91cGAKCioqQ2F1c2U6KiogYFRleHQoKWAgb2JqZWN0cyBhcmUgYE1vYmplY3RgLCBub3QgYFZNb2JqZWN0YC4gTWl4aW5nIGBUZXh0YCB3aXRoIHNoYXBlcyBpbiBhIGBWR3JvdXBgIGZhaWxzIG9uIE1hbmltIENFIHYwLjIwKy4KCmBgYHB5dGhvbgojIFdST05HOiBUZXh0IGlzIG5vdCBhIFZNb2JqZWN0Cmdyb3VwID0gVkdyb3VwKGNpcmNsZSwgVGV4dCgiTGFiZWwiKSkKCiMgUklHSFQ6IHVzZSBHcm91cCBmb3IgbWl4ZWQgdHlwZXMKZ3JvdXAgPSBHcm91cChjaXJjbGUsIFRleHQoIkxhYmVsIikpCgojIFJJR0hUOiBWR3JvdXAgaXMgZmluZSBmb3Igc2hhcGVzLW9ubHkKc2hhcGVzID0gVkdyb3VwKGNpcmNsZSwgc3F1YXJlLCBhcnJvdykKCiMgUklHSFQ6IE1hdGhUZXggSVMgYSBWTW9iamVjdCDigJQgVkdyb3VwIHdvcmtzCmVxdWF0aW9ucyA9IFZHcm91cChNYXRoVGV4KHIiYSIpLCBNYXRoVGV4KHIiYiIpKQpgYGAKCioqUnVsZToqKiBJZiB0aGUgZ3JvdXAgY29udGFpbnMgYW55IGBUZXh0KClgLCB1c2UgYEdyb3VwYC4gSWYgaXQncyBhbGwgc2hhcGVzIG9yIGFsbCBgTWF0aFRleGAsIGBWR3JvdXBgIGlzIGZpbmUuCgoqKkZhZGVPdXQgZXZlcnl0aGluZzoqKiBBbHdheXMgdXNlIGBHcm91cCgqc2VsZi5tb2JqZWN0cylgLCBub3QgYFZHcm91cCgqc2VsZi5tb2JqZWN0cylgOgpgYGBweXRob24Kc2VsZi5wbGF5KEZhZGVPdXQoR3JvdXAoKnNlbGYubW9iamVjdHMpKSkgICMgc2FmZSBmb3IgbWl4ZWQgdHlwZXMKYGBgCgojIyBHcm91cCBzYXZlX3N0YXRlKCkgLyByZXN0b3JlKCkgTm90IFN1cHBvcnRlZAoKKipFcnJvcjoqKiBgTm90SW1wbGVtZW50ZWRFcnJvcjogUGxlYXNlIG92ZXJyaWRlIGluIGEgY2hpbGQgY2xhc3MuYAoKKipDYXVzZToqKiBgR3JvdXAuc2F2ZV9zdGF0ZSgpYCBhbmQgYEdyb3VwLnJlc3RvcmUoKWAgYXJlIG5vdCBpbXBsZW1lbnRlZCBpbiBNYW5pbSBDRSB2MC4yMCsuIE9ubHkgYFZHcm91cGAgYW5kIGluZGl2aWR1YWwgYE1vYmplY3RgIHN1YmNsYXNzZXMgc3VwcG9ydCBzYXZlL3Jlc3RvcmUuCgpgYGBweXRob24KIyBXUk9ORzogR3JvdXAgZG9lc24ndCBzdXBwb3J0IHNhdmVfc3RhdGUKZ3JvdXAgPSBHcm91cChjaXJjbGUsIFRleHQoImxhYmVsIikpCmdyb3VwLnNhdmVfc3RhdGUoKSAgIyBOb3RJbXBsZW1lbnRlZEVycm9yIQoKIyBSSUdIVDogdXNlIEZhZGVJbiB3aXRoIHNoaWZ0L3NjYWxlIGluc3RlYWQgb2Ygc2F2ZV9zdGF0ZS9yZXN0b3JlCnNlbGYucGxheShGYWRlSW4oZ3JvdXAsIHNoaWZ0PVVQICogMC4zLCBzY2FsZT0wLjgpKQoKIyBSSUdIVDogb3Igc2F2ZS9yZXN0b3JlIG9uIGluZGl2aWR1YWwgVk1vYmplY3RzCmNpcmNsZS5zYXZlX3N0YXRlKCkKc2VsZi5wbGF5KGNpcmNsZS5hbmltYXRlLnNoaWZ0KFJJR0hUKSkKc2VsZi5wbGF5KFJlc3RvcmUoY2lyY2xlKSkKYGBgCgojIyBsZXR0ZXJfc3BhY2luZyBJcyBOb3QgYSBWYWxpZCBQYXJhbWV0ZXIKCioqRXJyb3I6KiogYFR5cGVFcnJvcjogTW9iamVjdC5fX2luaXRfXygpIGdvdCBhbiB1bmV4cGVjdGVkIGtleXdvcmQgYXJndW1lbnQgJ2xldHRlcl9zcGFjaW5nJ2AKCioqQ2F1c2U6KiogYFRleHQoKWAgZG9lcyBub3QgYWNjZXB0IGBsZXR0ZXJfc3BhY2luZ2AuIE1hbmltIHVzZXMgUGFuZ28gZm9yIHRleHQgcmVuZGVyaW5nIGFuZCBkb2VzIG5vdCBleHBvc2Uga2VybmluZyBjb250cm9scyBvbiBgVGV4dCgpYC4KCmBgYHB5dGhvbgojIFdST05HClRleHQoIkhFUk1FUyIsIGxldHRlcl9zcGFjaW5nPTYpCgojIFJJR0hUOiB1c2UgTWFya3VwVGV4dCB3aXRoIFBhbmdvIGF0dHJpYnV0ZXMgZm9yIHNwYWNpbmcgY29udHJvbApNYXJrdXBUZXh0KCc8c3BhbiBsZXR0ZXJfc3BhY2luZz0iNjAwMCI+SEVSTUVTPC9zcGFuPicsIGZvbnRfc2l6ZT0xOCkKIyBOb3RlOiBQYW5nbyBsZXR0ZXJfc3BhY2luZyBpcyBpbiAxLzEwMjQgb2YgYSBwb2ludApgYGAKCiMjIEFuaW1hdGlvbiBFcnJvcnMKCioqSW52aXNpYmxlIGFuaW1hdGlvbioqIC0tIG1vYmplY3QgbmV2ZXIgYWRkZWQ6CmBgYHB5dGhvbgojIFdST05HOiBjaXJjbGUgPSBDaXJjbGUoKTsgc2VsZi5wbGF5KGNpcmNsZS5hbmltYXRlLnNldF9jb2xvcihSRUQpKQojIFJJR0hUOiBzZWxmLnBsYXkoQ3JlYXRlKGNpcmNsZSkpOyBzZWxmLnBsYXkoY2lyY2xlLmFuaW1hdGUuc2V0X2NvbG9yKFJFRCkpCmBgYAoKKipUcmFuc2Zvcm0gY29uZnVzaW9uKiogLS0gYWZ0ZXIgVHJhbnNmb3JtKEEsIEIpLCBBIGlzIG9uIHNjcmVlbiwgQiBpcyBub3QuIFVzZSBSZXBsYWNlbWVudFRyYW5zZm9ybSBpZiB5b3Ugd2FudCBCLgoKKipEdXBsaWNhdGUgYW5pbWF0aW9uKiogLS0gc2FtZSBtb2JqZWN0IHR3aWNlIGluIG9uZSBwbGF5KCk6CmBgYHB5dGhvbgojIFdST05HOiBzZWxmLnBsYXkoYy5hbmltYXRlLnNoaWZ0KFJJR0hUKSwgYy5hbmltYXRlLnNldF9jb2xvcihSRUQpKQojIFJJR0hUOiBzZWxmLnBsYXkoYy5hbmltYXRlLnNoaWZ0KFJJR0hUKS5zZXRfY29sb3IoUkVEKSkKYGBgCgoqKlVwZGF0ZXIgZmlnaHRzIGFuaW1hdGlvbioqOgpgYGBweXRob24KbW9iLnN1c3BlbmRfdXBkYXRpbmcoKQpzZWxmLnBsYXkobW9iLmFuaW1hdGUuc2hpZnQoUklHSFQpKQptb2IucmVzdW1lX3VwZGF0aW5nKCkKYGBgCgojIyBSZW5kZXJpbmcgSXNzdWVzCgoqKkJsdXJyeSBvdXRwdXQqKjogVXNpbmcgLXFsICg0ODBwKS4gU3dpdGNoIHRvIC1xbS8tcWggZm9yIGZpbmFsLgoKKipTbG93IHJlbmRlcioqOiBVc2UgLXFsIGR1cmluZyBkZXZlbG9wbWVudC4gUmVkdWNlIFN1cmZhY2UgcmVzb2x1dGlvbi4gU2hvcnRlciBzZWxmLndhaXQoKS4KCioqU3RhbGUgb3V0cHV0Kio6IGBtYW5pbSAtcWwgLS1kaXNhYmxlX2NhY2hpbmcgc2NyaXB0LnB5IFNjZW5lYAoKKipmZm1wZWcgY29uY2F0IGZhaWxzKio6IEFsbCBjbGlwcyBtdXN0IG1hdGNoIHJlc29sdXRpb24vRlBTL2NvZGVjLgoKIyMgQ29tbW9uIE1pc3Rha2VzCgoqKlRleHQgY2xpcHMgYXQgZWRnZSoqOiBgYnVmZiA+PSAwLjVgIGZvciBgLnRvX2VkZ2UoKWAKCioqT3ZlcmxhcHBpbmcgdGV4dCoqOiBVc2UgYFJlcGxhY2VtZW50VHJhbnNmb3JtKG9sZCwgbmV3KWAsIG5vdCBgV3JpdGUobmV3KWAgb24gdG9wLgoKKipUb28gY3Jvd2RlZCoqOiBNYXggNS02IGVsZW1lbnRzIHZpc2libGUuIFNwbGl0IGludG8gc2NlbmVzIG9yIHVzZSBvcGFjaXR5IGxheWVyaW5nLgoKKipObyBicmVhdGhpbmcgcm9vbSoqOiBgc2VsZi53YWl0KDEuNSlgIG1pbmltdW0gYWZ0ZXIgcmV2ZWFscywgYHNlbGYud2FpdCgyLjApYCBmb3Iga2V5IG1vbWVudHMuCgoqKk1pc3NpbmcgYmFja2dyb3VuZCBjb2xvcioqOiBTZXQgYHNlbGYuY2FtZXJhLmJhY2tncm91bmRfY29sb3IgPSBCR2AgaW4gZXZlcnkgc2NlbmUuCgojIyBEZWJ1Z2dpbmcgU3RyYXRlZ3kKCjEuIFJlbmRlciBhIHN0aWxsOiBgbWFuaW0gLXFsIC1zIHNjcmlwdC5weSBTY2VuZWAgLS0gaW5zdGFudCBsYXlvdXQgY2hlY2sKMi4gSXNvbGF0ZSB0aGUgYnJva2VuIHNjZW5lIC0tIHJlbmRlciBvbmx5IHRoYXQgb25lCjMuIFJlcGxhY2UgYHNlbGYucGxheSgpYCB3aXRoIGBzZWxmLmFkZCgpYCB0byBzZWUgZmluYWwgc3RhdGUgaW5zdGFudGx5CjQuIFByaW50IHBvc2l0aW9uczogYHByaW50KG1vYi5nZXRfY2VudGVyKCkpYAo1LiBDbGVhciBjYWNoZTogZGVsZXRlIGBtZWRpYS9gIGRpcmVjdG9yeQo=
+# Troubleshooting
+
+## LaTeX Errors
+
+**Missing raw string** (the #1 error):
+```python
+# WRONG: MathTex("\\frac{1}{2}")  -- \\f is form-feed
+# RIGHT: MathTex(r"\frac{1}{2}")
+```
+
+**Unbalanced braces**: `MathTex(r"\frac{1}{2")` -- missing closing brace.
+
+**LaTeX not installed**: `which pdflatex` -- install texlive-full or mactex.
+
+**Missing package**: Add to preamble:
+```python
+tex_template = TexTemplate()
+tex_template.add_to_preamble(r"\usepackage{mathrsfs}")
+MathTex(r"\mathscr{L}", tex_template=tex_template)
+```
+
+## VGroup TypeError
+
+**Error:** `TypeError: Only values of type VMobject can be added as submobjects of VGroup`
+
+**Cause:** `Text()` objects are `Mobject`, not `VMobject`. Mixing `Text` with shapes in a `VGroup` fails on Manim CE v0.20+.
+
+```python
+# WRONG: Text is not a VMobject
+group = VGroup(circle, Text("Label"))
+
+# RIGHT: use Group for mixed types
+group = Group(circle, Text("Label"))
+
+# RIGHT: VGroup is fine for shapes-only
+shapes = VGroup(circle, square, arrow)
+
+# RIGHT: MathTex IS a VMobject — VGroup works
+equations = VGroup(MathTex(r"a"), MathTex(r"b"))
+```
+
+**Rule:** If the group contains any `Text()`, use `Group`. If it's all shapes or all `MathTex`, `VGroup` is fine.
+
+**FadeOut everything:** Always use `Group(*self.mobjects)`, not `VGroup(*self.mobjects)`:
+```python
+self.play(FadeOut(Group(*self.mobjects)))  # safe for mixed types
+```
+
+## Group save_state() / restore() Not Supported
+
+**Error:** `NotImplementedError: Please override in a child class.`
+
+**Cause:** `Group.save_state()` and `Group.restore()` are not implemented in Manim CE v0.20+. Only `VGroup` and individual `Mobject` subclasses support save/restore.
+
+```python
+# WRONG: Group doesn't support save_state
+group = Group(circle, Text("label"))
+group.save_state()  # NotImplementedError!
+
+# RIGHT: use FadeIn with shift/scale instead of save_state/restore
+self.play(FadeIn(group, shift=UP * 0.3, scale=0.8))
+
+# RIGHT: or save/restore on individual VMobjects
+circle.save_state()
+self.play(circle.animate.shift(RIGHT))
+self.play(Restore(circle))
+```
+
+## letter_spacing Is Not a Valid Parameter
+
+**Error:** `TypeError: Mobject.__init__() got an unexpected keyword argument 'letter_spacing'`
+
+**Cause:** `Text()` does not accept `letter_spacing`. Manim uses Pango for text rendering and does not expose kerning controls on `Text()`.
+
+```python
+# WRONG
+Text("HERMES", letter_spacing=6)
+
+# RIGHT: use MarkupText with Pango attributes for spacing control
+MarkupText('<span letter_spacing="6000">HERMES</span>', font_size=18)
+# Note: Pango letter_spacing is in 1/1024 of a point
+```
+
+## Animation Errors
+
+**Invisible animation** -- mobject never added:
+```python
+# WRONG: circle = Circle(); self.play(circle.animate.set_color(RED))
+# RIGHT: self.play(Create(circle)); self.play(circle.animate.set_color(RED))
+```
+
+**Transform confusion** -- after Transform(A, B), A is on screen, B is not. Use ReplacementTransform if you want B.
+
+**Duplicate animation** -- same mobject twice in one play():
+```python
+# WRONG: self.play(c.animate.shift(RIGHT), c.animate.set_color(RED))
+# RIGHT: self.play(c.animate.shift(RIGHT).set_color(RED))
+```
+
+**Updater fights animation**:
+```python
+mob.suspend_updating()
+self.play(mob.animate.shift(RIGHT))
+mob.resume_updating()
+```
+
+## Rendering Issues
+
+**Blurry output**: Using -ql (480p). Switch to -qm/-qh for final.
+
+**Slow render**: Use -ql during development. Reduce Surface resolution. Shorter self.wait().
+
+**Stale output**: `manim -ql --disable_caching script.py Scene`
+
+**ffmpeg concat fails**: All clips must match resolution/FPS/codec.
+
+## Common Mistakes
+
+**Text clips at edge**: `buff >= 0.5` for `.to_edge()`
+
+**Overlapping text**: Use `ReplacementTransform(old, new)`, not `Write(new)` on top.
+
+**Too crowded**: Max 5-6 elements visible. Split into scenes or use opacity layering.
+
+**No breathing room**: `self.wait(1.5)` minimum after reveals, `self.wait(2.0)` for key moments.
+
+**Missing background color**: Set `self.camera.background_color = BG` in every scene.
+
+## Debugging Strategy
+
+1. Render a still: `manim -ql -s script.py Scene` -- instant layout check
+2. Isolate the broken scene -- render only that one
+3. Replace `self.play()` with `self.add()` to see final state instantly
+4. Print positions: `print(mob.get_center())`
+5. Clear cache: delete `media/` directory

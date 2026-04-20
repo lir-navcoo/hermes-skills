@@ -1,1 +1,291 @@
-IyBEZXNpZ24gU3lzdGVtOiBIYXNoaUNvcnAKCgo+ICoqSGVybWVzIEFnZW50IOKAlCBJbXBsZW1lbnRhdGlvbiBOb3RlcyoqCj4KPiBUaGUgb3JpZ2luYWwgc2l0ZSB1c2VzIHByb3ByaWV0YXJ5IGZvbnRzLiBGb3Igc2VsZi1jb250YWluZWQgSFRNTCBvdXRwdXQsIHVzZSB0aGVzZSBDRE4gc3Vic3RpdHV0ZXM6Cj4gLSAqKlByaW1hcnk6KiogYEludGVyYCB8ICoqTW9ubzoqKiBgSmV0QnJhaW5zIE1vbm9gCj4gLSAqKkZvbnQgc3RhY2sgKENTUyk6KiogYGZvbnQtZmFtaWx5OiAnSW50ZXInLCBzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sICdTZWdvZSBVSScsIFJvYm90bywgc2Fucy1zZXJpZjtgCj4gLSAqKk1vbm8gc3RhY2sgKENTUyk6KiogYGZvbnQtZmFtaWx5OiAnSmV0QnJhaW5zIE1vbm8nLCB1aS1tb25vc3BhY2UsIFNGTW9uby1SZWd1bGFyLCBNZW5sbywgTW9uYWNvLCBDb25zb2xhcywgJ0xpYmVyYXRpb24gTW9ubycsICdDb3VyaWVyIE5ldycsIG1vbm9zcGFjZTtgCj4gYGBgaHRtbAo+IDxsaW5rIGhyZWY9Imh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9SW50ZXI6d2dodEAzMDA7NDAwOzUwMDs2MDA7NzAwJmZhbWlseT1KZXRCcmFpbnMrTW9ubzp3Z2h0QDQwMDs1MDAmZGlzcGxheT1zd2FwIiByZWw9InN0eWxlc2hlZXQiPgo+IGBgYAo+IFVzZSBgd3JpdGVfZmlsZWAgdG8gY3JlYXRlIEhUTUwsIHNlcnZlIHZpYSBgZ2VuZXJhdGl2ZS13aWRnZXRzYCBza2lsbCAoY2xvdWRmbGFyZWQgdHVubmVsKS4KPiBWZXJpZnkgdmlzdWFsIGFjY3VyYWN5IHdpdGggYGJyb3dzZXJfdmlzaW9uYCBhZnRlciBnZW5lcmF0aW5nLgoKIyMgMS4gVmlzdWFsIFRoZW1lICYgQXRtb3NwaGVyZQoKSGFzaGlDb3JwJ3Mgd2Vic2l0ZSBpcyBlbnRlcnByaXNlIGluZnJhc3RydWN0dXJlIG1hZGUgdGFuZ2libGUg4oCUIGEgZGVzaWduIHN5c3RlbSB0aGF0IG11c3QgY29tbXVuaWNhdGUgdGhlIGNvbXBsZXhpdHkgb2YgY2xvdWQgaW5mcmFzdHJ1Y3R1cmUgbWFuYWdlbWVudCB3aGlsZSByZW1haW5pbmcgYXBwcm9hY2hhYmxlLiBUaGUgdmlzdWFsIGxhbmd1YWdlIHNwbGl0cyBiZXR3ZWVuIHR3byBtb2RlczogYSBjbGVhbiB3aGl0ZSBsaWdodC1tb2RlIGZvciBpbmZvcm1hdGlvbmFsIHNlY3Rpb25zIGFuZCBhIGRyYW1hdGljIGRhcmstbW9kZSAoYCMxNTE4MWVgLCBgIzBkMGUxMmApIGZvciBoZXJvIGFyZWFzIGFuZCBwcm9kdWN0IHNob3djYXNlcywgY3JlYXRpbmcgYSBkYXkvbmlnaHQgZHVhbGl0eSB0aGF0IG1pcnJvcnMgdGhlICJidWlsZCBpbiBsaWdodCwgZGVwbG95IGluIGRhcmsiIGRldmVsb3BlciB3b3JrZmxvdy4KClRoZSB0eXBvZ3JhcGh5IGlzIGFuY2hvcmVkIGJ5IGEgY3VzdG9tIGJyYW5kIGZvbnQgKEhhc2hpQ29ycCBTYW5zLCBsb2FkZWQgYXMgYF9faGFzaGljb3JwU2Fuc185NmYwY2FgKSB0aGF0IGNhcnJpZXMgc3Vic3RhbnRpYWwgd2VpZ2h0IOKAlCBsaXRlcmFsbHkuIEhlYWRpbmdzIHVzZSA2MDDigJM3MDAgd2VpZ2h0cyB3aXRoIHRpZ2h0IGxpbmUtaGVpZ2h0cyAoMS4xN+KAkzEuMTkpLCBjcmVhdGluZyBkZW5zZSwgYXV0aG9yaXRhdGl2ZSB0ZXh0IGJsb2NrcyB0aGF0IGNvbW11bmljYXRlIGVudGVycHJpc2UgY29uZmlkZW5jZS4gVGhlIGhlcm8gaGVhZGxpbmUgYXQgODJweCB3ZWlnaHQgNjAwIHdpdGggT3BlblR5cGUgYCJrZXJuImAgZW5hYmxlZCBpcyBub3QgZGVjb3JhdGl2ZSDigJQgaXQncyBpbmZyYXN0cnVjdHVyZS1ncmFkZSB0eXBvZ3JhcGh5LgoKV2hhdCBkaXN0aW5ndWlzaGVzIEhhc2hpQ29ycCBpcyBpdHMgbXVsdGktcHJvZHVjdCBjb2xvciBzeXN0ZW0uIEVhY2ggcHJvZHVjdCBpbiB0aGUgcG9ydGZvbGlvIGhhcyBpdHMgb3duIGJyYW5kIGNvbG9yIOKAlCBUZXJyYWZvcm0gcHVycGxlIChgIzdiNDJiY2ApLCBWYXVsdCB5ZWxsb3cgKGAjZmZjZjI1YCksIFdheXBvaW50IHRlYWwgKGAjMTRjNmNiYCksIFZhZ3JhbnQgYmx1ZSAoYCMxODY4ZjJgKSDigJQgYW5kIHRoZXNlIGNvbG9ycyBhcHBlYXIgdGhyb3VnaG91dCBhcyBhY2NlbnQgdG9rZW5zIHZpYSBhIENTUyBjdXN0b20gcHJvcGVydHkgc3lzdGVtIChgLS1tZHMtY29sb3ItKmApLiBUaGlzIGNyZWF0ZXMgYSBkZXNpZ24gc3lzdGVtIHdpdGhpbiBhIGRlc2lnbiBzeXN0ZW06IHRoZSBwYXJlbnQgYnJhbmQgaXMgYmxhY2stYW5kLXdoaXRlIHdpdGggYmx1ZSBhY2NlbnRzLCB3aGlsZSBlYWNoIGNoaWxkIHByb2R1Y3QgaW5qZWN0cyBpdHMgb3duIGNocm9tYXRpYyBpZGVudGl0eS4KClRoZSBjb21wb25lbnQgc3lzdGVtIHVzZXMgdGhlIGBtZHNgIChNYXJrZG93biBEZXNpZ24gU3lzdGVtKSBwcmVmaXgsIGluZGljYXRpbmcgYSBzeXN0ZW1hdGljLCB0b2tlbi1kcml2ZW4gYXBwcm9hY2ggd2hlcmUgY29sb3JzLCBzcGFjaW5nLCBhbmQgc3RhdGVzIGFyZSBhbGwgbWFuYWdlZCB0aHJvdWdoIENTUyB2YXJpYWJsZXMuIFNoYWRvd3MgYXJlIHJlbWFya2FibHkgc3VidGxlIOKAlCBkdWFsLWxheWVyIG1pY3JvLXNoYWRvd3MgdXNpbmcgYHJnYmEoOTcsIDEwNCwgMTE3LCAwLjA1KWAgdGhhdCBhcmUgbmVhcmx5IGludmlzaWJsZSBidXQgcHJvdmlkZSBqdXN0IGVub3VnaCBkZXB0aCB0byBzZXBhcmF0ZSBpbnRlcmFjdGl2ZSBzdXJmYWNlcyBmcm9tIHRoZSBiYWNrZ3JvdW5kLgoKKipLZXkgQ2hhcmFjdGVyaXN0aWNzOioqCi0gRHVhbC1tb2RlOiBjbGVhbiB3aGl0ZSBzZWN0aW9ucyArIGRyYW1hdGljIGRhcmsgKGAjMTUxODFlYCkgaGVyby9wcm9kdWN0IGFyZWFzCi0gQ3VzdG9tIEhhc2hpQ29ycCBTYW5zIGZvbnQgd2l0aCA2MDDigJM3MDAgd2VpZ2h0cyBhbmQgYCJrZXJuImAgZmVhdHVyZQotIE11bHRpLXByb2R1Y3QgY29sb3Igc3lzdGVtIHZpYSBgLS1tZHMtY29sb3ItKmAgQ1NTIGN1c3RvbSBwcm9wZXJ0aWVzCi0gUHJvZHVjdCBicmFuZCBjb2xvcnM6IFRlcnJhZm9ybSBwdXJwbGUsIFZhdWx0IHllbGxvdywgV2F5cG9pbnQgdGVhbCwgVmFncmFudCBibHVlCi0gVXBwZXJjYXNlIGxldHRlci1zcGFjZWQgY2FwdGlvbnMgKDEzcHgsIHdlaWdodCA2MDAsIDEuM3B4IGxldHRlci1zcGFjaW5nKQotIE1pY3JvLXNoYWRvd3M6IGR1YWwtbGF5ZXIgYXQgMC4wNSBvcGFjaXR5IOKAlCBkZXB0aCB0aHJvdWdoIHdoaXNwZXIsIG5vdCBzaG91dAotIFRva2VuLWRyaXZlbiBgbWRzYCBjb21wb25lbnQgc3lzdGVtIHdpdGggc2VtYW50aWMgdmFyaWFibGUgbmFtZXMKLSBUaWdodCBib3JkZXIgcmFkaXVzOiAycHjigJM4cHgsIG5vdGhpbmcgcGlsbC1zaGFwZWQgb3IgY2lyY3VsYXIKLSBTeXN0ZW0tdWkgZmFsbGJhY2sgc3RhY2sgZm9yIHNlY29uZGFyeSB0ZXh0CgojIyAyLiBDb2xvciBQYWxldHRlICYgUm9sZXMKCiMjIyBCcmFuZCBQcmltYXJ5Ci0gKipCbGFjayoqIChgIzAwMDAwMGApOiBQcmltYXJ5IGJyYW5kIGNvbG9yLCB0ZXh0IG9uIGxpZ2h0IHN1cmZhY2VzLCBgLS1tZHMtY29sb3ItaGNwLWJyYW5kYAotICoqRGFyayBDaGFyY29hbCoqIChgIzE1MTgxZWApOiBEYXJrIG1vZGUgYmFja2dyb3VuZHMsIGhlcm8gc2VjdGlvbnMKLSAqKk5lYXIgQmxhY2sqKiAoYCMwZDBlMTJgKTogRGVlcGVzdCBkYXJrIG1vZGUgc3VyZmFjZSwgZm9ybSBpbnB1dHMgb24gZGFyawoKIyMjIE5ldXRyYWwgU2NhbGUKLSAqKkxpZ2h0IEdyYXkqKiAoYCNmMWYyZjNgKTogTGlnaHQgYmFja2dyb3VuZHMsIHN1YnRsZSBzdXJmYWNlcwotICoqTWlkIEdyYXkqKiAoYCNkNWQ3ZGJgKTogQm9yZGVycywgYnV0dG9uIHRleHQgb24gZGFyawotICoqQ29vbCBHcmF5KiogKGAjYjJiNmJkYCk6IEJvcmRlciBhY2NlbnRzIChhdCAwLjHigJMwLjQgb3BhY2l0eSkKLSAqKkRhcmsgR3JheSoqIChgIzY1NmE3NmApOiBIZWxwZXIgdGV4dCwgc2Vjb25kYXJ5IGxhYmVscywgYC0tbWRzLWZvcm0taGVscGVyLXRleHQtY29sb3JgCi0gKipDaGFyY29hbCoqIChgIzNiM2Q0NWApOiBTZWNvbmRhcnkgdGV4dCBvbiBsaWdodCwgYnV0dG9uIGJvcmRlcnMKLSAqKk5lYXIgV2hpdGUqKiAoYCNlZmVmZjFgKTogUHJpbWFyeSB0ZXh0IG9uIGRhcmsgc3VyZmFjZXMKCiMjIyBQcm9kdWN0IEJyYW5kIENvbG9ycwotICoqVGVycmFmb3JtIFB1cnBsZSoqIChgIzdiNDJiY2ApOiBgLS1tZHMtY29sb3ItdGVycmFmb3JtLWJ1dHRvbi1iYWNrZ3JvdW5kYAotICoqVmF1bHQgWWVsbG93KiogKGAjZmZjZjI1YCk6IGAtLW1kcy1jb2xvci12YXVsdC1idXR0b24tYmFja2dyb3VuZGAKLSAqKldheXBvaW50IFRlYWwqKiAoYCMxNGM2Y2JgKTogYC0tbWRzLWNvbG9yLXdheXBvaW50LWJ1dHRvbi1iYWNrZ3JvdW5kLWZvY3VzYAotICoqV2F5cG9pbnQgVGVhbCBIb3ZlcioqIChgIzEyYjZiYmApOiBgLS1tZHMtY29sb3Itd2F5cG9pbnQtYnV0dG9uLWJhY2tncm91bmQtaG92ZXJgCi0gKipWYWdyYW50IEJsdWUqKiAoYCMxODY4ZjJgKTogYC0tbWRzLWNvbG9yLXZhZ3JhbnQtYnJhbmRgCi0gKipQdXJwbGUgQWNjZW50KiogKGAjOTExY2VkYCk6IGAtLW1kcy1jb2xvci1wYWxldHRlLXB1cnBsZS0zMDBgCi0gKipWaXNpdGVkIFB1cnBsZSoqIChgI2E3MzdmZmApOiBgLS1tZHMtY29sb3ItZm9yZWdyb3VuZC1hY3Rpb24tdmlzaXRlZGAKCiMjIyBTZW1hbnRpYyBDb2xvcnMKLSAqKkFjdGlvbiBCbHVlKiogKGAjMTA2MGZmYCk6IFByaW1hcnkgYWN0aW9uIGxpbmtzIG9uIGRhcmsKLSAqKkxpbmsgQmx1ZSoqIChgIzIyNjRkNmApOiBQcmltYXJ5IGxpbmtzIG9uIGxpZ2h0Ci0gKipCcmlnaHQgQmx1ZSoqIChgIzJiODlmZmApOiBBY3RpdmUgbGlua3MsIGhvdmVyIGFjY2VudAotICoqQW1iZXIqKiAoYCNiYjVhMDBgKTogYC0tbWRzLWNvbG9yLXBhbGV0dGUtYW1iZXItMjAwYCwgd2FybmluZyBzdGF0ZXMKLSAqKkFtYmVyIExpZ2h0KiogKGAjZmJlYWJmYCk6IGAtLW1kcy1jb2xvci1wYWxldHRlLWFtYmVyLTEwMGAsIHdhcm5pbmcgYmFja2dyb3VuZHMKLSAqKlZhdWx0IEZhaW50IFllbGxvdyoqIChgI2ZmZjljZmApOiBgLS1tZHMtY29sb3ItdmF1bHQtcmFkYXItZ3JhZGllbnQtZmFpbnQtc3RvcGAKLSAqKk9yYW5nZSoqIChgI2E5NzIyZWApOiBgLS1tZHMtY29sb3ItdW5pZmllZC1jb3JlLW9yYW5nZS02YAotICoqUmVkKiogKGAjNzMxZTI1YCk6IGAtLW1kcy1jb2xvci11bmlmaWVkLWNvcmUtcmVkLTdgLCBlcnJvciBzdGF0ZXMKLSAqKk5hdnkqKiAoYCMxMDFhNTlgKTogYC0tbWRzLWNvbG9yLXVuaWZpZWQtY29yZS1ibHVlLTdgCgojIyMgU2hhZG93cwotICoqTWljcm8gU2hhZG93KiogKGByZ2JhKDk3LCAxMDQsIDExNywgMC4wNSkgMHB4IDFweCAxcHgsIHJnYmEoOTcsIDEwNCwgMTE3LCAwLjA1KSAwcHggMnB4IDJweGApOiBEZWZhdWx0IGNhcmQvYnV0dG9uIGVsZXZhdGlvbgotICoqRm9jdXMgT3V0bGluZSoqOiBgM3B4IHNvbGlkIHZhcigtLW1kcy1jb2xvci1mb2N1cy1hY3Rpb24tZXh0ZXJuYWwpYCDigJQgc3lzdGVtYXRpYyBmb2N1cyByaW5nCgojIyAzLiBUeXBvZ3JhcGh5IFJ1bGVzCgojIyMgRm9udCBGYW1pbGllcwotICoqUHJpbWFyeSBCcmFuZCoqOiBgX19oYXNoaWNvcnBTYW5zXzk2ZjBjYWAgKEhhc2hpQ29ycCBTYW5zKSwgd2l0aCBmYWxsYmFjazogYF9faGFzaGljb3JwU2Fuc19GYWxsYmFja185NmYwY2FgCi0gKipTeXN0ZW0gVUkqKjogYHN5c3RlbS11aSwgLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCBTZWdvZSBVSSwgSGVsdmV0aWNhLCBBcmlhbGAKCiMjIyBIaWVyYXJjaHkKCnwgUm9sZSB8IEZvbnQgfCBTaXplIHwgV2VpZ2h0IHwgTGluZSBIZWlnaHQgfCBMZXR0ZXIgU3BhY2luZyB8IE5vdGVzIHwKfC0tLS0tLXwtLS0tLS18LS0tLS0tfC0tLS0tLS0tfC0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tLXwtLS0tLS0tfAp8IERpc3BsYXkgSGVybyB8IEhhc2hpQ29ycCBTYW5zIHwgODJweCAoNS4xM3JlbSkgfCA2MDAgfCAxLjE3ICh0aWdodCkgfCBub3JtYWwgfCBgImtlcm4iYCBlbmFibGVkIHwKfCBTZWN0aW9uIEhlYWRpbmcgfCBIYXNoaUNvcnAgU2FucyB8IDUycHggKDMuMjVyZW0pIHwgNjAwIHwgMS4xOSAodGlnaHQpIHwgbm9ybWFsIHwgYCJrZXJuImAgZW5hYmxlZCB8CnwgRmVhdHVyZSBIZWFkaW5nIHwgSGFzaGlDb3JwIFNhbnMgfCA0MnB4ICgyLjYzcmVtKSB8IDcwMCB8IDEuMTkgKHRpZ2h0KSB8IC0wLjQycHggfCBOZWdhdGl2ZSB0cmFja2luZyB8CnwgU3ViLWhlYWRpbmcgfCBIYXNoaUNvcnAgU2FucyB8IDM0cHggKDIuMTNyZW0pIHwgNjAw4oCTNzAwIHwgMS4xOCAodGlnaHQpIHwgbm9ybWFsIHwgRmVhdHVyZSBibG9ja3MgfAp8IENhcmQgVGl0bGUgfCBIYXNoaUNvcnAgU2FucyB8IDI2cHggKDEuNjNyZW0pIHwgNzAwIHwgMS4xOSAodGlnaHQpIHwgbm9ybWFsIHwgQ2FyZCBhbmQgcGFuZWwgaGVhZGluZ3MgfAp8IFNtYWxsIFRpdGxlIHwgSGFzaGlDb3JwIFNhbnMgfCAxOXB4ICgxLjE5cmVtKSB8IDcwMCB8IDEuMjEgKHRpZ2h0KSB8IG5vcm1hbCB8IENvbXBhY3QgaGVhZGluZ3MgfAp8IEJvZHkgRW1waGFzaXMgfCBIYXNoaUNvcnAgU2FucyB8IDE3cHggKDEuMDZyZW0pIHwgNjAw4oCTNzAwIHwgMS4xOOKAkzEuMzUgfCBub3JtYWwgfCBCb2xkIGJvZHkgdGV4dCB8CnwgQm9keSBMYXJnZSB8IHN5c3RlbS11aSB8IDIwcHggKDEuMjVyZW0pIHwgNDAw4oCTNjAwIHwgMS41MCB8IG5vcm1hbCB8IEhlcm8gZGVzY3JpcHRpb25zIHwKfCBCb2R5IHwgc3lzdGVtLXVpIHwgMTZweCAoMS4wMHJlbSkgfCA0MDDigJM1MDAgfCAxLjYz4oCTMS42OSAocmVsYXhlZCkgfCBub3JtYWwgfCBTdGFuZGFyZCBib2R5IHRleHQgfAp8IE5hdiBMaW5rIHwgc3lzdGVtLXVpIHwgMTVweCAoMC45NHJlbSkgfCA1MDAgfCAxLjYwIChyZWxheGVkKSB8IG5vcm1hbCB8IE5hdmlnYXRpb24gaXRlbXMgfAp8IFNtYWxsIEJvZHkgfCBzeXN0ZW0tdWkgfCAxNHB4ICgwLjg4cmVtKSB8IDQwMOKAkzUwMCB8IDEuMjnigJMxLjcxIHwgbm9ybWFsIHwgU2Vjb25kYXJ5IGNvbnRlbnQgfAp8IENhcHRpb24gfCBzeXN0ZW0tdWkgfCAxM3B4ICgwLjgxcmVtKSB8IDQwMOKAkzUwMCB8IDEuMjPigJMxLjY5IHwgbm9ybWFsIHwgTWV0YWRhdGEsIGZvb3RlciBsaW5rcyB8CnwgVXBwZXJjYXNlIExhYmVsIHwgSGFzaGlDb3JwIFNhbnMgfCAxM3B4ICgwLjgxcmVtKSB8IDYwMCB8IDEuNjkgKHJlbGF4ZWQpIHwgMS4zcHggfCBgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZWAgfAoKIyMjIFByaW5jaXBsZXMKLSAqKkJyYW5kL1N5c3RlbSBzcGxpdCoqOiBIYXNoaUNvcnAgU2FucyBmb3IgaGVhZGluZ3MgYW5kIGJyYW5kLWNyaXRpY2FsIHRleHQ7IHN5c3RlbS11aSBmb3IgYm9keSwgbmF2aWdhdGlvbiwgYW5kIGZ1bmN0aW9uYWwgdGV4dC4gVGhlIGJyYW5kIGZvbnQgY2FycmllcyB0aGUgd2VpZ2h0LCBzeXN0ZW0tdWkgY2FycmllcyB0aGUgd29yZHMuCi0gKipLZXJuIGFsd2F5cyBvbioqOiBBbGwgSGFzaGlDb3JwIFNhbnMgdGV4dCBlbmFibGVzIE9wZW5UeXBlIGAia2VybiJgIOKAlCBsZXR0ZXJmaXR0aW5nIGlzIG5vbi1uZWdvdGlhYmxlLgotICoqVGlnaHQgaGVhZGluZ3MqKjogRXZlcnkgaGVhZGluZyB1c2VzIDEuMTfigJMxLjIxIGxpbmUtaGVpZ2h0LCBjcmVhdGluZyBkZW5zZSwgc3RhY2tlZCB0ZXh0IGJsb2NrcyB0aGF0IGZlZWwgaW5mcmFzdHJ1Y3R1cmFsIOKAlCBzb2xpZCwgbG9hZC1iZWFyaW5nLgotICoqUmVsYXhlZCBib2R5Kio6IEJvZHkgdGV4dCB1c2VzIDEuNTDigJMxLjY5IGxpbmUtaGVpZ2h0IChub3RhYmx5IGdlbmVyb3VzKSwgY3JlYXRpbmcgY29tZm9ydGFibGUgcmVhZGluZyByaHl0aG0gYmVuZWF0aCB0aGUgZGVuc2UgaGVhZGluZ3MuCi0gKipVcHBlcmNhc2UgbGFiZWxzIGFzIHdheWZpbmRpbmcqKjogMTNweCB1cHBlcmNhc2Ugd2l0aCAxLjNweCBsZXR0ZXItc3BhY2luZyBzZXJ2ZXMgYXMgdGhlIHN5c3RlbWF0aWMgY2F0ZWdvcnkvc2VjdGlvbiBtYXJrZXIg4oCUIGFsd2F5cyBIYXNoaUNvcnAgU2FucyB3ZWlnaHQgNjAwLgoKIyMgNC4gQ29tcG9uZW50IFN0eWxpbmdzCgojIyMgQnV0dG9ucwoKKipQcmltYXJ5IERhcmsqKgotIEJhY2tncm91bmQ6IGAjMTUxODFlYAotIFRleHQ6IGAjZDVkN2RiYAotIFBhZGRpbmc6IDlweCA5cHggOXB4IDE1cHggKGFzeW1tZXRyaWMsIG1vcmUgbGVmdCBwYWRkaW5nKQotIFJhZGl1czogNXB4Ci0gQm9yZGVyOiBgMXB4IHNvbGlkIHJnYmEoMTc4LCAxODIsIDE4OSwgMC40KWAKLSBTaGFkb3c6IGByZ2JhKDk3LCAxMDQsIDExNywgMC4wNSkgMHB4IDFweCAxcHgsIHJnYmEoOTcsIDEwNCwgMTE3LCAwLjA1KSAwcHggMnB4IDJweGAKLSBGb2N1czogYDNweCBzb2xpZCB2YXIoLS1tZHMtY29sb3ItZm9jdXMtYWN0aW9uLWV4dGVybmFsKWAKLSBIb3ZlcjogdXNlcyBgLS1tZHMtY29sb3Itc3VyZmFjZS1pbnRlcmFjdGl2ZWAgdG9rZW4KCioqU2Vjb25kYXJ5IFdoaXRlKioKLSBCYWNrZ3JvdW5kOiBgI2ZmZmZmZmAKLSBUZXh0OiBgIzNiM2Q0NWAKLSBQYWRkaW5nOiA4cHggMTJweAotIFJhZGl1czogNHB4Ci0gSG92ZXI6IGAtLW1kcy1jb2xvci1zdXJmYWNlLWludGVyYWN0aXZlYCArIGxvdy1zaGFkb3cgZWxldmF0aW9uCi0gRm9jdXM6IGAzcHggc29saWQgdHJhbnNwYXJlbnRgIG91dGxpbmUKLSBDbGVhbiwgbWluaW1hbCBhcHBlYXJhbmNlCgoqKlByb2R1Y3QtQ29sb3JlZCBCdXR0b25zKioKLSBUZXJyYWZvcm06IGJhY2tncm91bmQgYCM3YjQyYmNgCi0gVmF1bHQ6IGJhY2tncm91bmQgYCNmZmNmMjVgIChkYXJrIHRleHQpCi0gV2F5cG9pbnQ6IGJhY2tncm91bmQgYCMxNGM2Y2JgLCBob3ZlciBgIzEyYjZiYmAKLSBFYWNoIHByb2R1Y3QgYnV0dG9uIGZvbGxvd3MgdGhlIHNhbWUgc3RydWN0dXJhbCBwYXR0ZXJuIGJ1dCB1c2VzIGl0cyBicmFuZCBjb2xvcgoKIyMjIEJhZGdlcyAvIFBpbGxzCi0gQmFja2dyb3VuZDogYCM0MjIyNWJgIChkZWVwIHB1cnBsZSkKLSBUZXh0OiBgI2VmZWZmMWAKLSBQYWRkaW5nOiAzcHggN3B4Ci0gUmFkaXVzOiA1cHgKLSBCb3JkZXI6IGAxcHggc29saWQgcmdiKDE4MCwgODcsIDI1NSlgCi0gRm9udDogMTZweAoKIyMjIElucHV0cwoKKipUZXh0IElucHV0IChEYXJrIE1vZGUpKioKLSBCYWNrZ3JvdW5kOiBgIzBkMGUxMmAKLSBUZXh0OiBgI2VmZWZmMWAKLSBCb3JkZXI6IGAxcHggc29saWQgcmdiKDk3LCAxMDQsIDExNylgCi0gUGFkZGluZzogMTFweAotIFJhZGl1czogNXB4Ci0gRm9jdXM6IGAzcHggc29saWQgdmFyKC0tbWRzLWNvbG9yLWZvY3VzLWFjdGlvbi1leHRlcm5hbClgIG91dGxpbmUKCioqQ2hlY2tib3gqKgotIEJhY2tncm91bmQ6IGAjMGQwZTEyYAotIEJvcmRlcjogYDFweCBzb2xpZCByZ2IoOTcsIDEwNCwgMTE3KWAKLSBSYWRpdXM6IDNweAoKIyMjIExpbmtzCi0gKipBY3Rpb24gQmx1ZSBvbiBMaWdodCoqOiBgIzIyNjRkNmAsIGhvdmVyIOKGkiBibHVlLTYwMCB2YXJpYWJsZSwgdW5kZXJsaW5lIG9uIGhvdmVyCi0gKipBY3Rpb24gQmx1ZSBvbiBEYXJrKio6IGAjMTA2MGZmYCBvciBgIzJiODlmZmAsIHVuZGVybGluZSBvbiBob3ZlcgotICoqV2hpdGUgb24gRGFyayoqOiBgI2ZmZmZmZmAsIHRyYW5zcGFyZW50IHVuZGVybGluZSDihpIgdmlzaWJsZSB1bmRlcmxpbmUgb24gaG92ZXIKLSAqKk5ldXRyYWwgb24gTGlnaHQqKjogYCMzYjNkNDVgLCB0cmFuc3BhcmVudCB1bmRlcmxpbmUg4oaSIHZpc2libGUgdW5kZXJsaW5lIG9uIGhvdmVyCi0gKipMaWdodCBvbiBEYXJrKio6IGAjZWZlZmYxYCwgc2ltaWxhciBob3ZlciBwYXR0ZXJuCi0gQWxsIGxpbmtzIHVzZSBgdmFyKC0td3BsLWJsdWUtNjAwKWAgYXMgaG92ZXIgY29sb3IKCiMjIyBDYXJkcyAmIENvbnRhaW5lcnMKLSBMaWdodCBtb2RlOiB3aGl0ZSBiYWNrZ3JvdW5kLCBtaWNyby1zaGFkb3cgZWxldmF0aW9uCi0gRGFyayBtb2RlOiBgIzE1MTgxZWAgb3IgZGFya2VyIHN1cmZhY2VzCi0gUmFkaXVzOiA4cHggZm9yIGNhcmRzIGFuZCBjb250YWluZXJzCi0gUHJvZHVjdCBzaG93Y2FzZSBjYXJkcyB3aXRoIGdyYWRpZW50IGJvcmRlcnMgb3IgYWNjZW50IGxpZ2h0aW5nCgojIyMgTmF2aWdhdGlvbgotIENsZWFuIGhvcml6b250YWwgbmF2IHdpdGggbWVnYS1tZW51IGRyb3Bkb3ducwotIEhhc2hpQ29ycCBsb2dvIGxlZnQtYWxpZ25lZAotIHN5c3RlbS11aSAxNXB4IHdlaWdodCA1MDAgZm9yIGxpbmtzCi0gUHJvZHVjdCBjYXRlZ29yaWVzIG9yZ2FuaXplZCBieSBsaWZlY3ljbGUgbWFuYWdlbWVudCBncm91cAotICJHZXQgc3RhcnRlZCIgYW5kICJDb250YWN0IHVzIiBDVEFzIGluIGhlYWRlcgotIERhcmsgbW9kZSB2YXJpYW50IGZvciBoZXJvIHNlY3Rpb25zCgojIyA1LiBMYXlvdXQgUHJpbmNpcGxlcwoKIyMjIFNwYWNpbmcgU3lzdGVtCi0gQmFzZSB1bml0OiA4cHgKLSBTY2FsZTogMnB4LCAzcHgsIDRweCwgNnB4LCA3cHgsIDhweCwgOXB4LCAxMXB4LCAxMnB4LCAxNnB4LCAyMHB4LCAyNHB4LCAzMnB4LCA0MHB4LCA0OHB4CgojIyMgR3JpZCAmIENvbnRhaW5lcgotIE1heCBjb250ZW50IHdpZHRoOiB+MTE1MHB4ICh4bCBicmVha3BvaW50KQotIEZ1bGwtd2lkdGggZGFyayBoZXJvIHNlY3Rpb25zIHdpdGggY29udGFpbmVkIGNvbnRlbnQKLSBDYXJkIGdyaWRzOiAy4oCTMyBjb2x1bW4gbGF5b3V0cwotIEdlbmVyb3VzIGhvcml6b250YWwgcGFkZGluZyBhdCBkZXNrdG9wIHNjYWxlCgojIyMgQnJlYWtwb2ludHMKfCBOYW1lIHwgV2lkdGggfCBLZXkgQ2hhbmdlcyB8CnwtLS0tLS18LS0tLS0tLXwtLS0tLS0tLS0tLS0tfAp8IE1vYmlsZSBTbWFsbCB8IDwzNzVweCB8IFRpZ2h0IHNpbmdsZSBjb2x1bW4gfAp8IE1vYmlsZSB8IDM3NeKAkzQ4MHB4IHwgU3RhbmRhcmQgbW9iaWxlIHwKfCBTbWFsbCBUYWJsZXQgfCA0ODDigJM2MDBweCB8IE1pbm9yIGFkanVzdG1lbnRzIHwKfCBUYWJsZXQgfCA2MDDigJM3NjhweCB8IDItY29sdW1uIGdyaWRzIGJlZ2luIHwKfCBTbWFsbCBEZXNrdG9wIHwgNzY44oCTOTkycHggfCBGdWxsIG5hdiB2aXNpYmxlIHwKfCBEZXNrdG9wIHwgOTky4oCTMTEyMHB4IHwgU3RhbmRhcmQgbGF5b3V0IHwKfCBMYXJnZSBEZXNrdG9wIHwgMTEyMOKAkzE0NDBweCB8IE1heC13aWR0aCBjb250ZW50IHwKfCBVbHRyYS13aWRlIHwgPjE0NDBweCB8IENlbnRlcmVkLCBnZW5lcm91cyBtYXJnaW5zIHwKCiMjIyBXaGl0ZXNwYWNlIFBoaWxvc29waHkKLSAqKkVudGVycHJpc2UgYnJlYXRoaW5nIHJvb20qKjogR2VuZXJvdXMgdmVydGljYWwgc3BhY2luZyBiZXR3ZWVuIHNlY3Rpb25zICg0OHB44oCTODBweCspIGNvbW11bmljYXRlcyBzdGFiaWxpdHkgYW5kIHNlcmlvdXNuZXNzLgotICoqRGVuc2UgaGVhZGluZ3MsIHNwYWNpb3VzIGJvZHkqKjogVGlnaHQgbGluZS1oZWlnaHQgaGVhZGluZ3Mgc2l0IGFib3ZlIHJlbGF4ZWQgYm9keSB0ZXh0LCBjcmVhdGluZyB2aXN1YWwgIndlaWdodCBhdCB0aGUgdG9wIiBvZiBlYWNoIHNlY3Rpb24uCi0gKipEYXJrIGFzIGNhbnZhcyoqOiBEYXJrIGhlcm8gc2VjdGlvbnMgdXNlIGV4dHJhIHZlcnRpY2FsIHBhZGRpbmcgdG8gbGV0IDNEIGlsbHVzdHJhdGlvbnMgYW5kIGdyYWRpZW50cyBicmVhdGhlLgoKIyMjIEJvcmRlciBSYWRpdXMgU2NhbGUKLSBNaW5pbWFsICgycHgpOiBMaW5rcywgc21hbGwgaW5saW5lIGVsZW1lbnRzCi0gU3VidGxlICgzcHgpOiBDaGVja2JveGVzLCBzbWFsbCBpbnB1dHMKLSBTdGFuZGFyZCAoNHB4KTogU2Vjb25kYXJ5IGJ1dHRvbnMKLSBDb21mb3J0YWJsZSAoNXB4KTogUHJpbWFyeSBidXR0b25zLCBiYWRnZXMsIGlucHV0cwotIENhcmQgKDhweCk6IENhcmRzLCBjb250YWluZXJzLCBpbWFnZXMKCiMjIDYuIERlcHRoICYgRWxldmF0aW9uCgp8IExldmVsIHwgVHJlYXRtZW50IHwgVXNlIHwKfC0tLS0tLS18LS0tLS0tLS0tLS18LS0tLS18CnwgRmxhdCAoTGV2ZWwgMCkgfCBObyBzaGFkb3cgfCBEZWZhdWx0IHN1cmZhY2VzLCB0ZXh0IGJsb2NrcyB8CnwgV2hpc3BlciAoTGV2ZWwgMSkgfCBgcmdiYSg5NywgMTA0LCAxMTcsIDAuMDUpIDBweCAxcHggMXB4LCByZ2JhKDk3LCAxMDQsIDExNywgMC4wNSkgMHB4IDJweCAycHhgIHwgQ2FyZHMsIGJ1dHRvbnMsIGludGVyYWN0aXZlIHN1cmZhY2VzIHwKfCBGb2N1cyAoTGV2ZWwgMikgfCBgM3B4IHNvbGlkIHZhcigtLW1kcy1jb2xvci1mb2N1cy1hY3Rpb24tZXh0ZXJuYWwpYCBvdXRsaW5lIHwgRm9jdXMgcmluZ3Mg4oCUIGNvbG9yLW1hdGNoZWQgdG8gY29udGV4dCB8CgoqKlNoYWRvdyBQaGlsb3NvcGh5Kio6IEhhc2hpQ29ycCB1c2VzIGFyZ3VhYmx5IHRoZSBzdWJ0bGVzdCBzaGFkb3cgc3lzdGVtIGluIG1vZGVybiB3ZWIgZGVzaWduLiBUaGUgZHVhbC1sYXllciBzaGFkb3dzIGF0IDUlIG9wYWNpdHkgYXJlIG5lYXJseSBpbnZpc2libGUg4oCUIHRoZXkgZXhpc3Qgbm90IHRvIGNyZWF0ZSB2aXN1YWwgZGVwdGggYnV0IHRvIHNpZ25hbCBpbnRlcmFjdGl2aXR5LiBJZiB5b3UgY2FuIHNlZSB0aGUgc2hhZG93LCBpdCdzIHRvbyBzdHJvbmcuIFRoaXMgcmVzdHJhaW50IGNvbW11bmljYXRlcyB0aGUgZW50ZXJwcmlzZSB2YWx1ZSBvZiBzdGFiaWxpdHkg4oCUIG5vdGhpbmcgZmxvYXRzLCBub3RoaW5nIGlzIHVuY2VydGFpbi4KCiMjIDcuIERvJ3MgYW5kIERvbid0cwoKIyMjIERvCi0gVXNlIEhhc2hpQ29ycCBTYW5zIGZvciBoZWFkaW5ncyBhbmQgYnJhbmQgdGV4dCwgc3lzdGVtLXVpIGZvciBib2R5IGFuZCBVSSB0ZXh0Ci0gRW5hYmxlIGAia2VybiJgIG9uIGFsbCBIYXNoaUNvcnAgU2FucyB0ZXh0Ci0gVXNlIHByb2R1Y3QgYnJhbmQgY29sb3JzIE9OTFkgZm9yIHRoZWlyIHJlc3BlY3RpdmUgcHJvZHVjdHMgKFRlcnJhZm9ybSA9IHB1cnBsZSwgVmF1bHQgPSB5ZWxsb3csIGV0Yy4pCi0gQXBwbHkgdXBwZXJjYXNlIGxhYmVscyBhdCAxM3B4IHdlaWdodCA2MDAgd2l0aCAxLjNweCBsZXR0ZXItc3BhY2luZyBmb3Igc2VjdGlvbiBtYXJrZXJzCi0gS2VlcCBzaGFkb3dzIGF0IHRoZSAid2hpc3BlciIgbGV2ZWwgKDAuMDUgb3BhY2l0eSBkdWFsLWxheWVyKQotIFVzZSB0aGUgYC0tbWRzLWNvbG9yLSpgIHRva2VuIHN5c3RlbSBmb3IgY29uc2lzdGVudCBjb2xvciBhcHBsaWNhdGlvbgotIE1haW50YWluIHRoZSB0aWdodC1oZWFkaW5nIC8gcmVsYXhlZC1ib2R5IHJoeXRobSAoMS4xN+KAkzEuMjEgdnMgMS41MOKAkzEuNjkgbGluZS1oZWlnaHRzKQotIFVzZSBgM3B4IHNvbGlkYCBmb2N1cyBvdXRsaW5lcyBmb3IgYWNjZXNzaWJpbGl0eQoKIyMjIERvbid0Ci0gRG9uJ3QgdXNlIHByb2R1Y3QgYnJhbmQgY29sb3JzIG91dHNpZGUgdGhlaXIgcHJvZHVjdCBjb250ZXh0IChubyBUZXJyYWZvcm0gcHVycGxlIG9uIFZhdWx0IGNvbnRlbnQpCi0gRG9uJ3QgaW5jcmVhc2Ugc2hhZG93IG9wYWNpdHkgYWJvdmUgMC4xIOKAlCB0aGUgd2hpc3BlciBsZXZlbCBpcyBpbnRlbnRpb25hbAotIERvbid0IHVzZSBwaWxsLXNoYXBlZCBidXR0b25zICg+OHB4IHJhZGl1cykg4oCUIHRoZSBzaGFycCwgbWluaW1hbCByYWRpdXMgaXMgc3RydWN0dXJhbAotIERvbid0IHNraXAgdGhlIGAia2VybiJgIGZlYXR1cmUgb24gaGVhZGluZ3Mg4oCUIHRoZSBmb250IHJlcXVpcmVzIGl0Ci0gRG9uJ3QgdXNlIEhhc2hpQ29ycCBTYW5zIGZvciBzbWFsbCBib2R5IHRleHQg4oCUIGl0J3MgZGVzaWduZWQgZm9yIDE3cHgrIGhlYWRpbmcgdXNlCi0gRG9uJ3QgbWl4IHByb2R1Y3QgY29sb3JzIGluIHRoZSBzYW1lIGNvbXBvbmVudCDigJQgZWFjaCBwcm9kdWN0IGhhcyBvbmUgY29sb3IKLSBEb24ndCB1c2UgcHVyZSBibGFjayAoYCMwMDAwMDBgKSBmb3IgZGFyayBiYWNrZ3JvdW5kcyDigJQgdXNlIGAjMTUxODFlYCBvciBgIzBkMGUxMmAKLSBEb24ndCBmb3JnZXQgdGhlIGFzeW1tZXRyaWMgYnV0dG9uIHBhZGRpbmcg4oCUIDlweCA5cHggOXB4IDE1cHggaXMgaW50ZW50aW9uYWwKCiMjIDguIFJlc3BvbnNpdmUgQmVoYXZpb3IKCiMjIyBCcmVha3BvaW50cwp8IE5hbWUgfCBXaWR0aCB8IEtleSBDaGFuZ2VzIHwKfC0tLS0tLXwtLS0tLS0tfC0tLS0tLS0tLS0tLS18CnwgTW9iaWxlIHwgPDc2OHB4IHwgU2luZ2xlIGNvbHVtbiwgaGFtYnVyZ2VyIG5hdiwgc3RhY2tlZCBDVEFzIHwKfCBUYWJsZXQgfCA3NjjigJM5OTJweCB8IDItY29sdW1uIGdyaWRzLCBuYXYgYmVnaW5zIGV4cGFuZGluZyB8CnwgRGVza3RvcCB8IDk5MuKAkzExNTBweCB8IEZ1bGwgbGF5b3V0LCBtZWdhLW1lbnUgbmF2IHwKfCBMYXJnZSB8ID4xMTUwcHggfCBNYXgtd2lkdGggY2VudGVyZWQsIGdlbmVyb3VzIG1hcmdpbnMgfAoKIyMjIENvbGxhcHNpbmcgU3RyYXRlZ3kKLSBIZXJvOiA4MnB4IOKGkiA1MnB4IOKGkiA0MnB4IGhlYWRpbmcgc2l6ZXMKLSBOYXZpZ2F0aW9uOiBtZWdhLW1lbnUg4oaSIGhhbWJ1cmdlcgotIFByb2R1Y3QgY2FyZHM6IDMtY29sdW1uIOKGkiAyLWNvbHVtbiDihpIgc3RhY2tlZAotIERhcmsgc2VjdGlvbnMgbWFpbnRhaW4gZnVsbC13aWR0aCBidXQgY29tcHJlc3MgcGFkZGluZwotIEJ1dHRvbnM6IGlubGluZSDihpIgZnVsbC13aWR0aCBzdGFja2VkIG9uIG1vYmlsZQoKIyMgOS4gQWdlbnQgUHJvbXB0IEd1aWRlCgojIyMgUXVpY2sgQ29sb3IgUmVmZXJlbmNlCi0gTGlnaHQgYmc6IGAjZmZmZmZmYCwgYCNmMWYyZjNgCi0gRGFyayBiZzogYCMxNTE4MWVgLCBgIzBkMGUxMmAKLSBUZXh0IGxpZ2h0OiBgIzAwMDAwMGAsIGAjM2IzZDQ1YAotIFRleHQgZGFyazogYCNlZmVmZjFgLCBgI2Q1ZDdkYmAKLSBMaW5rczogYCMyMjY0ZDZgIChsaWdodCksIGAjMTA2MGZmYCAoZGFyayksIGAjMmI4OWZmYCAoYWN0aXZlKQotIEhlbHBlciB0ZXh0OiBgIzY1NmE3NmAKLSBCb3JkZXJzOiBgcmdiYSgxNzgsIDE4MiwgMTg5LCAwLjQpYCwgYHJnYig5NywgMTA0LCAxMTcpYAotIEZvY3VzOiBgM3B4IHNvbGlkYCBwcm9kdWN0LWFwcHJvcHJpYXRlIGNvbG9yCgojIyMgRXhhbXBsZSBDb21wb25lbnQgUHJvbXB0cwotICJDcmVhdGUgYSBoZXJvIG9uIGRhcmsgYmFja2dyb3VuZCAoIzE1MTgxZSkuIEhlYWRsaW5lIGF0IDgycHggSGFzaGlDb3JwIFNhbnMgd2VpZ2h0IDYwMCwgbGluZS1oZWlnaHQgMS4xNywga2VybiBlbmFibGVkLCB3aGl0ZSB0ZXh0LiBTdWItdGV4dCBhdCAyMHB4IHN5c3RlbS11aSB3ZWlnaHQgNDAwLCBsaW5lLWhlaWdodCAxLjUwLCAjZDVkN2RiIHRleHQuIFR3byBidXR0b25zOiBwcmltYXJ5IGRhcmsgKCMxNTE4MWUsIDVweCByYWRpdXMsIDlweCAxNXB4IHBhZGRpbmcpIGFuZCBzZWNvbmRhcnkgd2hpdGUgKCNmZmZmZmYsIDRweCByYWRpdXMsIDhweCAxMnB4IHBhZGRpbmcpLiIKLSAiRGVzaWduIGEgcHJvZHVjdCBjYXJkOiB3aGl0ZSBiYWNrZ3JvdW5kLCA4cHggcmFkaXVzLCBkdWFsLWxheWVyIHNoYWRvdyBhdCByZ2JhKDk3LDEwNCwxMTcsMC4wNSkuIFRpdGxlIGF0IDI2cHggSGFzaGlDb3JwIFNhbnMgd2VpZ2h0IDcwMCwgYm9keSBhdCAxNnB4IHN5c3RlbS11aSB3ZWlnaHQgNDAwIGxpbmUtaGVpZ2h0IDEuNjMuIgotICJCdWlsZCBhbiB1cHBlcmNhc2Ugc2VjdGlvbiBsYWJlbDogMTNweCBIYXNoaUNvcnAgU2FucyB3ZWlnaHQgNjAwLCBsaW5lLWhlaWdodCAxLjY5LCBsZXR0ZXItc3BhY2luZyAxLjNweCwgdGV4dC10cmFuc2Zvcm0gdXBwZXJjYXNlLCAjNjU2YTc2IGNvbG9yLiIKLSAiQ3JlYXRlIGEgcHJvZHVjdC1zcGVjaWZpYyBDVEEgYnV0dG9uOiBUZXJyYWZvcm0g4oaSICM3YjQyYmMgYmFja2dyb3VuZCwgVmF1bHQg4oaSICNmZmNmMjUgd2l0aCBkYXJrIHRleHQsIFdheXBvaW50IOKGkiAjMTRjNmNiLiBBbGw6IDVweCByYWRpdXMsIDUwMCB3ZWlnaHQgdGV4dCwgMTZweCBzeXN0ZW0tdWkuIgotICJEZXNpZ24gYSBkYXJrIGZvcm06ICMwZDBlMTIgaW5wdXQgYmFja2dyb3VuZCwgI2VmZWZmMSB0ZXh0LCAxcHggc29saWQgcmdiKDk3LDEwNCwxMTcpIGJvcmRlciwgNXB4IHJhZGl1cywgMTFweCBwYWRkaW5nLiBGb2N1czogM3B4IHNvbGlkIGFjY2VudC1jb2xvciBvdXRsaW5lLiIKCiMjIyBJdGVyYXRpb24gR3VpZGUKMS4gQWx3YXlzIHN0YXJ0IHdpdGggdGhlIG1vZGUgZGVjaXNpb246IGxpZ2h0ICh3aGl0ZSkgZm9yIGluZm9ybWF0aW9uYWwsIGRhcmsgKCMxNTE4MWUpIGZvciBoZXJvL3Byb2R1Y3QKMi4gSGFzaGlDb3JwIFNhbnMgZm9yIGhlYWRpbmdzIG9ubHkgKDE3cHgrKSwgc3lzdGVtLXVpIGZvciBldmVyeXRoaW5nIGVsc2UKMy4gU2hhZG93cyBhcmUgYXQgd2hpc3BlciBsZXZlbCAoMC4wNSBvcGFjaXR5KSDigJQgaWYgdmlzaWJsZSwgcmVkdWNlCjQuIFByb2R1Y3QgY29sb3JzIGFyZSBzYWNyZWQg4oCUIGVhY2ggcHJvZHVjdCBvd25zIGV4YWN0bHkgb25lIGNvbG9yCjUuIEZvY3VzIHJpbmdzIGFyZSBhbHdheXMgM3B4IHNvbGlkLCBjb2xvci1tYXRjaGVkIHRvIHByb2R1Y3QgY29udGV4dAo2LiBVcHBlcmNhc2UgbGFiZWxzIGFyZSB0aGUgc3lzdGVtYXRpYyB3YXlmaW5kaW5nIHBhdHRlcm4g4oCUIDEzcHgsIDYwMCwgMS4zcHggdHJhY2tpbmcK
+# Design System: HashiCorp
+
+
+> **Hermes Agent — Implementation Notes**
+>
+> The original site uses proprietary fonts. For self-contained HTML output, use these CDN substitutes:
+> - **Primary:** `Inter` | **Mono:** `JetBrains Mono`
+> - **Font stack (CSS):** `font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;`
+> - **Mono stack (CSS):** `font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;`
+> ```html
+> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+> ```
+> Use `write_file` to create HTML, serve via `generative-widgets` skill (cloudflared tunnel).
+> Verify visual accuracy with `browser_vision` after generating.
+
+## 1. Visual Theme & Atmosphere
+
+HashiCorp's website is enterprise infrastructure made tangible — a design system that must communicate the complexity of cloud infrastructure management while remaining approachable. The visual language splits between two modes: a clean white light-mode for informational sections and a dramatic dark-mode (`#15181e`, `#0d0e12`) for hero areas and product showcases, creating a day/night duality that mirrors the "build in light, deploy in dark" developer workflow.
+
+The typography is anchored by a custom brand font (HashiCorp Sans, loaded as `__hashicorpSans_96f0ca`) that carries substantial weight — literally. Headings use 600–700 weights with tight line-heights (1.17–1.19), creating dense, authoritative text blocks that communicate enterprise confidence. The hero headline at 82px weight 600 with OpenType `"kern"` enabled is not decorative — it's infrastructure-grade typography.
+
+What distinguishes HashiCorp is its multi-product color system. Each product in the portfolio has its own brand color — Terraform purple (`#7b42bc`), Vault yellow (`#ffcf25`), Waypoint teal (`#14c6cb`), Vagrant blue (`#1868f2`) — and these colors appear throughout as accent tokens via a CSS custom property system (`--mds-color-*`). This creates a design system within a design system: the parent brand is black-and-white with blue accents, while each child product injects its own chromatic identity.
+
+The component system uses the `mds` (Markdown Design System) prefix, indicating a systematic, token-driven approach where colors, spacing, and states are all managed through CSS variables. Shadows are remarkably subtle — dual-layer micro-shadows using `rgba(97, 104, 117, 0.05)` that are nearly invisible but provide just enough depth to separate interactive surfaces from the background.
+
+**Key Characteristics:**
+- Dual-mode: clean white sections + dramatic dark (`#15181e`) hero/product areas
+- Custom HashiCorp Sans font with 600–700 weights and `"kern"` feature
+- Multi-product color system via `--mds-color-*` CSS custom properties
+- Product brand colors: Terraform purple, Vault yellow, Waypoint teal, Vagrant blue
+- Uppercase letter-spaced captions (13px, weight 600, 1.3px letter-spacing)
+- Micro-shadows: dual-layer at 0.05 opacity — depth through whisper, not shout
+- Token-driven `mds` component system with semantic variable names
+- Tight border radius: 2px–8px, nothing pill-shaped or circular
+- System-ui fallback stack for secondary text
+
+## 2. Color Palette & Roles
+
+### Brand Primary
+- **Black** (`#000000`): Primary brand color, text on light surfaces, `--mds-color-hcp-brand`
+- **Dark Charcoal** (`#15181e`): Dark mode backgrounds, hero sections
+- **Near Black** (`#0d0e12`): Deepest dark mode surface, form inputs on dark
+
+### Neutral Scale
+- **Light Gray** (`#f1f2f3`): Light backgrounds, subtle surfaces
+- **Mid Gray** (`#d5d7db`): Borders, button text on dark
+- **Cool Gray** (`#b2b6bd`): Border accents (at 0.1–0.4 opacity)
+- **Dark Gray** (`#656a76`): Helper text, secondary labels, `--mds-form-helper-text-color`
+- **Charcoal** (`#3b3d45`): Secondary text on light, button borders
+- **Near White** (`#efeff1`): Primary text on dark surfaces
+
+### Product Brand Colors
+- **Terraform Purple** (`#7b42bc`): `--mds-color-terraform-button-background`
+- **Vault Yellow** (`#ffcf25`): `--mds-color-vault-button-background`
+- **Waypoint Teal** (`#14c6cb`): `--mds-color-waypoint-button-background-focus`
+- **Waypoint Teal Hover** (`#12b6bb`): `--mds-color-waypoint-button-background-hover`
+- **Vagrant Blue** (`#1868f2`): `--mds-color-vagrant-brand`
+- **Purple Accent** (`#911ced`): `--mds-color-palette-purple-300`
+- **Visited Purple** (`#a737ff`): `--mds-color-foreground-action-visited`
+
+### Semantic Colors
+- **Action Blue** (`#1060ff`): Primary action links on dark
+- **Link Blue** (`#2264d6`): Primary links on light
+- **Bright Blue** (`#2b89ff`): Active links, hover accent
+- **Amber** (`#bb5a00`): `--mds-color-palette-amber-200`, warning states
+- **Amber Light** (`#fbeabf`): `--mds-color-palette-amber-100`, warning backgrounds
+- **Vault Faint Yellow** (`#fff9cf`): `--mds-color-vault-radar-gradient-faint-stop`
+- **Orange** (`#a9722e`): `--mds-color-unified-core-orange-6`
+- **Red** (`#731e25`): `--mds-color-unified-core-red-7`, error states
+- **Navy** (`#101a59`): `--mds-color-unified-core-blue-7`
+
+### Shadows
+- **Micro Shadow** (`rgba(97, 104, 117, 0.05) 0px 1px 1px, rgba(97, 104, 117, 0.05) 0px 2px 2px`): Default card/button elevation
+- **Focus Outline**: `3px solid var(--mds-color-focus-action-external)` — systematic focus ring
+
+## 3. Typography Rules
+
+### Font Families
+- **Primary Brand**: `__hashicorpSans_96f0ca` (HashiCorp Sans), with fallback: `__hashicorpSans_Fallback_96f0ca`
+- **System UI**: `system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial`
+
+### Hierarchy
+
+| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
+|------|------|------|--------|-------------|----------------|-------|
+| Display Hero | HashiCorp Sans | 82px (5.13rem) | 600 | 1.17 (tight) | normal | `"kern"` enabled |
+| Section Heading | HashiCorp Sans | 52px (3.25rem) | 600 | 1.19 (tight) | normal | `"kern"` enabled |
+| Feature Heading | HashiCorp Sans | 42px (2.63rem) | 700 | 1.19 (tight) | -0.42px | Negative tracking |
+| Sub-heading | HashiCorp Sans | 34px (2.13rem) | 600–700 | 1.18 (tight) | normal | Feature blocks |
+| Card Title | HashiCorp Sans | 26px (1.63rem) | 700 | 1.19 (tight) | normal | Card and panel headings |
+| Small Title | HashiCorp Sans | 19px (1.19rem) | 700 | 1.21 (tight) | normal | Compact headings |
+| Body Emphasis | HashiCorp Sans | 17px (1.06rem) | 600–700 | 1.18–1.35 | normal | Bold body text |
+| Body Large | system-ui | 20px (1.25rem) | 400–600 | 1.50 | normal | Hero descriptions |
+| Body | system-ui | 16px (1.00rem) | 400–500 | 1.63–1.69 (relaxed) | normal | Standard body text |
+| Nav Link | system-ui | 15px (0.94rem) | 500 | 1.60 (relaxed) | normal | Navigation items |
+| Small Body | system-ui | 14px (0.88rem) | 400–500 | 1.29–1.71 | normal | Secondary content |
+| Caption | system-ui | 13px (0.81rem) | 400–500 | 1.23–1.69 | normal | Metadata, footer links |
+| Uppercase Label | HashiCorp Sans | 13px (0.81rem) | 600 | 1.69 (relaxed) | 1.3px | `text-transform: uppercase` |
+
+### Principles
+- **Brand/System split**: HashiCorp Sans for headings and brand-critical text; system-ui for body, navigation, and functional text. The brand font carries the weight, system-ui carries the words.
+- **Kern always on**: All HashiCorp Sans text enables OpenType `"kern"` — letterfitting is non-negotiable.
+- **Tight headings**: Every heading uses 1.17–1.21 line-height, creating dense, stacked text blocks that feel infrastructural — solid, load-bearing.
+- **Relaxed body**: Body text uses 1.50–1.69 line-height (notably generous), creating comfortable reading rhythm beneath the dense headings.
+- **Uppercase labels as wayfinding**: 13px uppercase with 1.3px letter-spacing serves as the systematic category/section marker — always HashiCorp Sans weight 600.
+
+## 4. Component Stylings
+
+### Buttons
+
+**Primary Dark**
+- Background: `#15181e`
+- Text: `#d5d7db`
+- Padding: 9px 9px 9px 15px (asymmetric, more left padding)
+- Radius: 5px
+- Border: `1px solid rgba(178, 182, 189, 0.4)`
+- Shadow: `rgba(97, 104, 117, 0.05) 0px 1px 1px, rgba(97, 104, 117, 0.05) 0px 2px 2px`
+- Focus: `3px solid var(--mds-color-focus-action-external)`
+- Hover: uses `--mds-color-surface-interactive` token
+
+**Secondary White**
+- Background: `#ffffff`
+- Text: `#3b3d45`
+- Padding: 8px 12px
+- Radius: 4px
+- Hover: `--mds-color-surface-interactive` + low-shadow elevation
+- Focus: `3px solid transparent` outline
+- Clean, minimal appearance
+
+**Product-Colored Buttons**
+- Terraform: background `#7b42bc`
+- Vault: background `#ffcf25` (dark text)
+- Waypoint: background `#14c6cb`, hover `#12b6bb`
+- Each product button follows the same structural pattern but uses its brand color
+
+### Badges / Pills
+- Background: `#42225b` (deep purple)
+- Text: `#efeff1`
+- Padding: 3px 7px
+- Radius: 5px
+- Border: `1px solid rgb(180, 87, 255)`
+- Font: 16px
+
+### Inputs
+
+**Text Input (Dark Mode)**
+- Background: `#0d0e12`
+- Text: `#efeff1`
+- Border: `1px solid rgb(97, 104, 117)`
+- Padding: 11px
+- Radius: 5px
+- Focus: `3px solid var(--mds-color-focus-action-external)` outline
+
+**Checkbox**
+- Background: `#0d0e12`
+- Border: `1px solid rgb(97, 104, 117)`
+- Radius: 3px
+
+### Links
+- **Action Blue on Light**: `#2264d6`, hover → blue-600 variable, underline on hover
+- **Action Blue on Dark**: `#1060ff` or `#2b89ff`, underline on hover
+- **White on Dark**: `#ffffff`, transparent underline → visible underline on hover
+- **Neutral on Light**: `#3b3d45`, transparent underline → visible underline on hover
+- **Light on Dark**: `#efeff1`, similar hover pattern
+- All links use `var(--wpl-blue-600)` as hover color
+
+### Cards & Containers
+- Light mode: white background, micro-shadow elevation
+- Dark mode: `#15181e` or darker surfaces
+- Radius: 8px for cards and containers
+- Product showcase cards with gradient borders or accent lighting
+
+### Navigation
+- Clean horizontal nav with mega-menu dropdowns
+- HashiCorp logo left-aligned
+- system-ui 15px weight 500 for links
+- Product categories organized by lifecycle management group
+- "Get started" and "Contact us" CTAs in header
+- Dark mode variant for hero sections
+
+## 5. Layout Principles
+
+### Spacing System
+- Base unit: 8px
+- Scale: 2px, 3px, 4px, 6px, 7px, 8px, 9px, 11px, 12px, 16px, 20px, 24px, 32px, 40px, 48px
+
+### Grid & Container
+- Max content width: ~1150px (xl breakpoint)
+- Full-width dark hero sections with contained content
+- Card grids: 2–3 column layouts
+- Generous horizontal padding at desktop scale
+
+### Breakpoints
+| Name | Width | Key Changes |
+|------|-------|-------------|
+| Mobile Small | <375px | Tight single column |
+| Mobile | 375–480px | Standard mobile |
+| Small Tablet | 480–600px | Minor adjustments |
+| Tablet | 600–768px | 2-column grids begin |
+| Small Desktop | 768–992px | Full nav visible |
+| Desktop | 992–1120px | Standard layout |
+| Large Desktop | 1120–1440px | Max-width content |
+| Ultra-wide | >1440px | Centered, generous margins |
+
+### Whitespace Philosophy
+- **Enterprise breathing room**: Generous vertical spacing between sections (48px–80px+) communicates stability and seriousness.
+- **Dense headings, spacious body**: Tight line-height headings sit above relaxed body text, creating visual "weight at the top" of each section.
+- **Dark as canvas**: Dark hero sections use extra vertical padding to let 3D illustrations and gradients breathe.
+
+### Border Radius Scale
+- Minimal (2px): Links, small inline elements
+- Subtle (3px): Checkboxes, small inputs
+- Standard (4px): Secondary buttons
+- Comfortable (5px): Primary buttons, badges, inputs
+- Card (8px): Cards, containers, images
+
+## 6. Depth & Elevation
+
+| Level | Treatment | Use |
+|-------|-----------|-----|
+| Flat (Level 0) | No shadow | Default surfaces, text blocks |
+| Whisper (Level 1) | `rgba(97, 104, 117, 0.05) 0px 1px 1px, rgba(97, 104, 117, 0.05) 0px 2px 2px` | Cards, buttons, interactive surfaces |
+| Focus (Level 2) | `3px solid var(--mds-color-focus-action-external)` outline | Focus rings — color-matched to context |
+
+**Shadow Philosophy**: HashiCorp uses arguably the subtlest shadow system in modern web design. The dual-layer shadows at 5% opacity are nearly invisible — they exist not to create visual depth but to signal interactivity. If you can see the shadow, it's too strong. This restraint communicates the enterprise value of stability — nothing floats, nothing is uncertain.
+
+## 7. Do's and Don'ts
+
+### Do
+- Use HashiCorp Sans for headings and brand text, system-ui for body and UI text
+- Enable `"kern"` on all HashiCorp Sans text
+- Use product brand colors ONLY for their respective products (Terraform = purple, Vault = yellow, etc.)
+- Apply uppercase labels at 13px weight 600 with 1.3px letter-spacing for section markers
+- Keep shadows at the "whisper" level (0.05 opacity dual-layer)
+- Use the `--mds-color-*` token system for consistent color application
+- Maintain the tight-heading / relaxed-body rhythm (1.17–1.21 vs 1.50–1.69 line-heights)
+- Use `3px solid` focus outlines for accessibility
+
+### Don't
+- Don't use product brand colors outside their product context (no Terraform purple on Vault content)
+- Don't increase shadow opacity above 0.1 — the whisper level is intentional
+- Don't use pill-shaped buttons (>8px radius) — the sharp, minimal radius is structural
+- Don't skip the `"kern"` feature on headings — the font requires it
+- Don't use HashiCorp Sans for small body text — it's designed for 17px+ heading use
+- Don't mix product colors in the same component — each product has one color
+- Don't use pure black (`#000000`) for dark backgrounds — use `#15181e` or `#0d0e12`
+- Don't forget the asymmetric button padding — 9px 9px 9px 15px is intentional
+
+## 8. Responsive Behavior
+
+### Breakpoints
+| Name | Width | Key Changes |
+|------|-------|-------------|
+| Mobile | <768px | Single column, hamburger nav, stacked CTAs |
+| Tablet | 768–992px | 2-column grids, nav begins expanding |
+| Desktop | 992–1150px | Full layout, mega-menu nav |
+| Large | >1150px | Max-width centered, generous margins |
+
+### Collapsing Strategy
+- Hero: 82px → 52px → 42px heading sizes
+- Navigation: mega-menu → hamburger
+- Product cards: 3-column → 2-column → stacked
+- Dark sections maintain full-width but compress padding
+- Buttons: inline → full-width stacked on mobile
+
+## 9. Agent Prompt Guide
+
+### Quick Color Reference
+- Light bg: `#ffffff`, `#f1f2f3`
+- Dark bg: `#15181e`, `#0d0e12`
+- Text light: `#000000`, `#3b3d45`
+- Text dark: `#efeff1`, `#d5d7db`
+- Links: `#2264d6` (light), `#1060ff` (dark), `#2b89ff` (active)
+- Helper text: `#656a76`
+- Borders: `rgba(178, 182, 189, 0.4)`, `rgb(97, 104, 117)`
+- Focus: `3px solid` product-appropriate color
+
+### Example Component Prompts
+- "Create a hero on dark background (#15181e). Headline at 82px HashiCorp Sans weight 600, line-height 1.17, kern enabled, white text. Sub-text at 20px system-ui weight 400, line-height 1.50, #d5d7db text. Two buttons: primary dark (#15181e, 5px radius, 9px 15px padding) and secondary white (#ffffff, 4px radius, 8px 12px padding)."
+- "Design a product card: white background, 8px radius, dual-layer shadow at rgba(97,104,117,0.05). Title at 26px HashiCorp Sans weight 700, body at 16px system-ui weight 400 line-height 1.63."
+- "Build an uppercase section label: 13px HashiCorp Sans weight 600, line-height 1.69, letter-spacing 1.3px, text-transform uppercase, #656a76 color."
+- "Create a product-specific CTA button: Terraform → #7b42bc background, Vault → #ffcf25 with dark text, Waypoint → #14c6cb. All: 5px radius, 500 weight text, 16px system-ui."
+- "Design a dark form: #0d0e12 input background, #efeff1 text, 1px solid rgb(97,104,117) border, 5px radius, 11px padding. Focus: 3px solid accent-color outline."
+
+### Iteration Guide
+1. Always start with the mode decision: light (white) for informational, dark (#15181e) for hero/product
+2. HashiCorp Sans for headings only (17px+), system-ui for everything else
+3. Shadows are at whisper level (0.05 opacity) — if visible, reduce
+4. Product colors are sacred — each product owns exactly one color
+5. Focus rings are always 3px solid, color-matched to product context
+6. Uppercase labels are the systematic wayfinding pattern — 13px, 600, 1.3px tracking

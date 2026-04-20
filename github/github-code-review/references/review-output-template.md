@@ -1,1 +1,74 @@
-IyBSZXZpZXcgT3V0cHV0IFRlbXBsYXRlCgpVc2UgdGhpcyBhcyB0aGUgc3RydWN0dXJlIGZvciBQUiByZXZpZXcgc3VtbWFyeSBjb21tZW50cy4gQ29weSBhbmQgZmlsbCBpbiB0aGUgc2VjdGlvbnMuCgojIyBGb3IgUFIgU3VtbWFyeSBDb21tZW50CgpgYGBtYXJrZG93bgojIyBDb2RlIFJldmlldyBTdW1tYXJ5CgoqKlZlcmRpY3Q6IFtBcHByb3ZlZCDinIUgfCBDaGFuZ2VzIFJlcXVlc3RlZCDwn5S0IHwgUmV2aWV3ZWQg8J+SrF0qKiAoW05dIGlzc3VlcywgW05dIHN1Z2dlc3Rpb25zKQoKKipQUjoqKiAjW251bWJlcl0g4oCUIFt0aXRsZV0KKipBdXRob3I6KiogQFt1c2VybmFtZV0KKipGaWxlcyBjaGFuZ2VkOioqIFtOXSAoK1thZGRpdGlvbnNdIC1bZGVsZXRpb25zXSkKCiMjIyDwn5S0IENyaXRpY2FsCjwhLS0gSXNzdWVzIHRoYXQgTVVTVCBiZSBmaXhlZCBiZWZvcmUgbWVyZ2UgLS0+Ci0gKipmaWxlLnB5OmxpbmUqKiDigJQgW2Rlc2NyaXB0aW9uXS4gU3VnZ2VzdGlvbjogW2ZpeF0uCgojIyMg4pqg77iPIFdhcm5pbmdzCjwhLS0gSXNzdWVzIHRoYXQgU0hPVUxEIGJlIGZpeGVkLCBidXQgbm90IHN0cmljdGx5IGJsb2NraW5nIC0tPgotICoqZmlsZS5weTpsaW5lKiog4oCUIFtkZXNjcmlwdGlvbl0uCgojIyMg8J+SoSBTdWdnZXN0aW9ucwo8IS0tIE5vbi1ibG9ja2luZyBpbXByb3ZlbWVudHMsIHN0eWxlIHByZWZlcmVuY2VzLCBmdXR1cmUgY29uc2lkZXJhdGlvbnMgLS0+Ci0gKipmaWxlLnB5OmxpbmUqKiDigJQgW2Rlc2NyaXB0aW9uXS4KCiMjIyDinIUgTG9va3MgR29vZAo8IS0tIENhbGwgb3V0IHRoaW5ncyBkb25lIHdlbGwg4oCUIHBvc2l0aXZlIHJlaW5mb3JjZW1lbnQgLS0+Ci0gW2FzcGVjdCB0aGF0IHdhcyBkb25lIHdlbGxdCgotLS0KKlJldmlld2VkIGJ5IEhlcm1lcyBBZ2VudCoKYGBgCgojIyBTZXZlcml0eSBHdWlkZQoKfCBMZXZlbCB8IEljb24gfCBXaGVuIHRvIHVzZSB8IEJsb2NrcyBtZXJnZT8gfAp8LS0tLS0tLXwtLS0tLS18LS0tLS0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tLS18CnwgQ3JpdGljYWwgfCDwn5S0IHwgU2VjdXJpdHkgdnVsbmVyYWJpbGl0aWVzLCBkYXRhIGxvc3MgcmlzaywgY3Jhc2hlcywgYnJva2VuIGNvcmUgZnVuY3Rpb25hbGl0eSB8IFllcyB8CnwgV2FybmluZyB8IOKaoO+4jyB8IEJ1Z3MgaW4gbm9uLWNyaXRpY2FsIHBhdGhzLCBtaXNzaW5nIGVycm9yIGhhbmRsaW5nLCBtaXNzaW5nIHRlc3RzIGZvciBuZXcgY29kZSB8IFVzdWFsbHkgeWVzIHwKfCBTdWdnZXN0aW9uIHwg8J+SoSB8IFN0eWxlIGltcHJvdmVtZW50cywgcmVmYWN0b3JpbmcgaWRlYXMsIHBlcmZvcm1hbmNlIGhpbnRzLCBkb2N1bWVudGF0aW9uIGdhcHMgfCBObyB8CnwgTG9va3MgR29vZCB8IOKchSB8IENsZWFuIHBhdHRlcm5zLCBnb29kIHRlc3QgY292ZXJhZ2UsIGNsZWFyIG5hbWluZywgc21hcnQgZGVzaWduIGRlY2lzaW9ucyB8IE4vQSB8CgojIyBWZXJkaWN0IERlY2lzaW9uCgotICoqQXBwcm92ZWQg4pyFKiog4oCUIFplcm8gY3JpdGljYWwvd2FybmluZyBpdGVtcy4gT25seSBzdWdnZXN0aW9ucyBvciBhbGwgY2xlYXIuCi0gKipDaGFuZ2VzIFJlcXVlc3RlZCDwn5S0Kiog4oCUIEFueSBjcml0aWNhbCBvciB3YXJuaW5nIGl0ZW0gZXhpc3RzLgotICoqUmV2aWV3ZWQg8J+SrCoqIOKAlCBPYnNlcnZhdGlvbnMgb25seSAoZHJhZnQgUFJzLCB1bmNlcnRhaW4gZmluZGluZ3MsIGluZm9ybWF0aW9uYWwpLgoKIyMgRm9yIElubGluZSBDb21tZW50cwoKUHJlZml4IGlubGluZSBjb21tZW50cyB3aXRoIHRoZSBzZXZlcml0eSBpY29uIHNvIHRoZXkncmUgc2Nhbm5hYmxlOgoKYGBgCvCflLQgKipDcml0aWNhbDoqKiBVc2VyIGlucHV0IHBhc3NlZCBkaXJlY3RseSB0byBTUUwgcXVlcnkg4oCUIHVzZSBwYXJhbWV0ZXJpemVkIHF1ZXJpZXMgdG8gcHJldmVudCBpbmplY3Rpb24uCmBgYAoKYGBgCuKaoO+4jyAqKldhcm5pbmc6KiogVGhpcyBlcnJvciBpcyBzaWxlbnRseSBzd2FsbG93ZWQuIEF0IG1pbmltdW0sIGxvZyBpdC4KYGBgCgpgYGAK8J+SoSAqKlN1Z2dlc3Rpb246KiogVGhpcyBjb3VsZCBiZSBzaW1wbGlmaWVkIHdpdGggYSBkaWN0IGNvbXByZWhlbnNpb246CmB7azogdiBmb3IgaywgdiBpbiBpdGVtcyBpZiB2IGlzIG5vdCBOb25lfWAKYGBgCgpgYGAK4pyFICoqTmljZToqKiBHb29kIHVzZSBvZiBjb250ZXh0IG1hbmFnZXIgaGVyZSDigJQgZW5zdXJlcyBjbGVhbnVwIG9uIGV4Y2VwdGlvbnMuCmBgYAoKIyMgRm9yIExvY2FsIChQcmUtUHVzaCkgUmV2aWV3CgpXaGVuIHJldmlld2luZyBsb2NhbGx5IGJlZm9yZSBwdXNoLCB1c2UgdGhlIHNhbWUgc3RydWN0dXJlIGJ1dCBwcmVzZW50IGl0IGFzIGEgbWVzc2FnZSB0byB0aGUgdXNlciBpbnN0ZWFkIG9mIGEgUFIgY29tbWVudC4gU2tpcCB0aGUgUFIgbWV0YWRhdGEgaGVhZGVyIGFuZCBqdXN0IHN0YXJ0IHdpdGggdGhlIHNldmVyaXR5IHNlY3Rpb25zLgo=
+# Review Output Template
+
+Use this as the structure for PR review summary comments. Copy and fill in the sections.
+
+## For PR Summary Comment
+
+```markdown
+## Code Review Summary
+
+**Verdict: [Approved ✅ | Changes Requested 🔴 | Reviewed 💬]** ([N] issues, [N] suggestions)
+
+**PR:** #[number] — [title]
+**Author:** @[username]
+**Files changed:** [N] (+[additions] -[deletions])
+
+### 🔴 Critical
+<!-- Issues that MUST be fixed before merge -->
+- **file.py:line** — [description]. Suggestion: [fix].
+
+### ⚠️ Warnings
+<!-- Issues that SHOULD be fixed, but not strictly blocking -->
+- **file.py:line** — [description].
+
+### 💡 Suggestions
+<!-- Non-blocking improvements, style preferences, future considerations -->
+- **file.py:line** — [description].
+
+### ✅ Looks Good
+<!-- Call out things done well — positive reinforcement -->
+- [aspect that was done well]
+
+---
+*Reviewed by Hermes Agent*
+```
+
+## Severity Guide
+
+| Level | Icon | When to use | Blocks merge? |
+|-------|------|-------------|---------------|
+| Critical | 🔴 | Security vulnerabilities, data loss risk, crashes, broken core functionality | Yes |
+| Warning | ⚠️ | Bugs in non-critical paths, missing error handling, missing tests for new code | Usually yes |
+| Suggestion | 💡 | Style improvements, refactoring ideas, performance hints, documentation gaps | No |
+| Looks Good | ✅ | Clean patterns, good test coverage, clear naming, smart design decisions | N/A |
+
+## Verdict Decision
+
+- **Approved ✅** — Zero critical/warning items. Only suggestions or all clear.
+- **Changes Requested 🔴** — Any critical or warning item exists.
+- **Reviewed 💬** — Observations only (draft PRs, uncertain findings, informational).
+
+## For Inline Comments
+
+Prefix inline comments with the severity icon so they're scannable:
+
+```
+🔴 **Critical:** User input passed directly to SQL query — use parameterized queries to prevent injection.
+```
+
+```
+⚠️ **Warning:** This error is silently swallowed. At minimum, log it.
+```
+
+```
+💡 **Suggestion:** This could be simplified with a dict comprehension:
+`{k: v for k, v in items if v is not None}`
+```
+
+```
+✅ **Nice:** Good use of context manager here — ensures cleanup on exceptions.
+```
+
+## For Local (Pre-Push) Review
+
+When reviewing locally before push, use the same structure but present it as a message to the user instead of a PR comment. Skip the PR metadata header and just start with the severity sections.

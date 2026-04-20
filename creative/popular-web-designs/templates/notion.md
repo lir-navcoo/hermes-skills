@@ -1,1 +1,322 @@
-IyBEZXNpZ24gU3lzdGVtOiBOb3Rpb24KCgo+ICoqSGVybWVzIEFnZW50IOKAlCBJbXBsZW1lbnRhdGlvbiBOb3RlcyoqCj4KPiBUaGUgb3JpZ2luYWwgc2l0ZSB1c2VzIHByb3ByaWV0YXJ5IGZvbnRzLiBGb3Igc2VsZi1jb250YWluZWQgSFRNTCBvdXRwdXQsIHVzZSB0aGVzZSBDRE4gc3Vic3RpdHV0ZXM6Cj4gLSAqKlByaW1hcnk6KiogYEludGVyYCB8ICoqTW9ubzoqKiBgc3lzdGVtIG1vbm9zcGFjZSBzdGFja2AKPiAtICoqRm9udCBzdGFjayAoQ1NTKToqKiBgZm9udC1mYW1pbHk6ICdJbnRlcicsIHN5c3RlbS11aSwgLWFwcGxlLXN5c3RlbSwgJ1NlZ29lIFVJJywgUm9ib3RvLCBzYW5zLXNlcmlmO2AKPiAtICoqTW9ubyBzdGFjayAoQ1NTKToqKiBgZm9udC1mYW1pbHk6IHVpLW1vbm9zcGFjZSwgU0ZNb25vLVJlZ3VsYXIsIE1lbmxvLCBNb25hY28sIENvbnNvbGFzLCAnTGliZXJhdGlvbiBNb25vJywgJ0NvdXJpZXIgTmV3JywgbW9ub3NwYWNlO2AKPiBgYGBodG1sCj4gPGxpbmsgaHJlZj0iaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3MyP2ZhbWlseT1JbnRlcjp3Z2h0QDMwMDs0MDA7NTAwOzYwMDs3MDAmZGlzcGxheT1zd2FwIiByZWw9InN0eWxlc2hlZXQiPgo+IGBgYAo+IFVzZSBgd3JpdGVfZmlsZWAgdG8gY3JlYXRlIEhUTUwsIHNlcnZlIHZpYSBgZ2VuZXJhdGl2ZS13aWRnZXRzYCBza2lsbCAoY2xvdWRmbGFyZWQgdHVubmVsKS4KPiBWZXJpZnkgdmlzdWFsIGFjY3VyYWN5IHdpdGggYGJyb3dzZXJfdmlzaW9uYCBhZnRlciBnZW5lcmF0aW5nLgoKIyMgMS4gVmlzdWFsIFRoZW1lICYgQXRtb3NwaGVyZQoKTm90aW9uJ3Mgd2Vic2l0ZSBlbWJvZGllcyB0aGUgcGhpbG9zb3BoeSBvZiB0aGUgdG9vbCBpdHNlbGY6IGEgYmxhbmsgY2FudmFzIHRoYXQgZ2V0cyBvdXQgb2YgeW91ciB3YXkuIFRoZSBkZXNpZ24gc3lzdGVtIGlzIGJ1aWx0IG9uIHdhcm0gbmV1dHJhbHMgcmF0aGVyIHRoYW4gY29sZCBncmF5cywgY3JlYXRpbmcgYSBkaXN0aW5jdGx5IGFwcHJvYWNoYWJsZSBtaW5pbWFsaXNtIHRoYXQgZmVlbHMgbGlrZSBxdWFsaXR5IHBhcGVyIHJhdGhlciB0aGFuIHN0ZXJpbGUgZ2xhc3MuIFRoZSBwYWdlIGNhbnZhcyBpcyBwdXJlIHdoaXRlIChgI2ZmZmZmZmApIGJ1dCB0aGUgdGV4dCBpc24ndCBwdXJlIGJsYWNrIC0tIGl0J3MgYSB3YXJtIG5lYXItYmxhY2sgKGByZ2JhKDAsMCwwLDAuOTUpYCkgdGhhdCBzb2Z0ZW5zIHRoZSByZWFkaW5nIGV4cGVyaWVuY2UgaW1wZXJjZXB0aWJseS4gVGhlIHdhcm0gZ3JheSBzY2FsZSAoYCNmNmY1ZjRgLCBgIzMxMzAyZWAsIGAjNjE1ZDU5YCwgYCNhMzllOThgKSBjYXJyaWVzIHN1YnRsZSB5ZWxsb3ctYnJvd24gdW5kZXJ0b25lcywgZ2l2aW5nIHRoZSBpbnRlcmZhY2UgYSB0YWN0aWxlLCBhbG1vc3QgYW5hbG9nIHdhcm10aC4KClRoZSBjdXN0b20gTm90aW9uSW50ZXIgZm9udCAoYSBtb2RpZmllZCBJbnRlcikgaXMgdGhlIGJhY2tib25lIG9mIHRoZSBzeXN0ZW0uIEF0IGRpc3BsYXkgc2l6ZXMgKDY0cHgpLCBpdCB1c2VzIGFnZ3Jlc3NpdmUgbmVnYXRpdmUgbGV0dGVyLXNwYWNpbmcgKC0yLjEyNXB4KSwgY3JlYXRpbmcgaGVhZGxpbmVzIHRoYXQgZmVlbCBjb21wcmVzc2VkIGFuZCBwcmVjaXNlLiBUaGUgd2VpZ2h0IHJhbmdlIGlzIGJyb2FkZXIgdGhhbiB0eXBpY2FsIHN5c3RlbXM6IDQwMCBmb3IgYm9keSwgNTAwIGZvciBVSSBlbGVtZW50cywgNjAwIGZvciBzZW1pLWJvbGQgbGFiZWxzLCBhbmQgNzAwIGZvciBkaXNwbGF5IGhlYWRpbmdzLiBPcGVuVHlwZSBmZWF0dXJlcyBgImxudW0iYCAobGluaW5nIG51bWVyYWxzKSBhbmQgYCJsb2NsImAgKGxvY2FsaXplZCBmb3JtcykgYXJlIGVuYWJsZWQgb24gbGFyZ2VyIHRleHQsIGFkZGluZyB0eXBvZ3JhcGhpYyBzb3BoaXN0aWNhdGlvbiB0aGF0IHJld2FyZHMgY2xvc2UgcmVhZGluZy4KCldoYXQgbWFrZXMgTm90aW9uJ3MgdmlzdWFsIGxhbmd1YWdlIGRpc3RpbmN0aXZlIGlzIGl0cyBib3JkZXIgcGhpbG9zb3BoeS4gUmF0aGVyIHRoYW4gaGVhdnkgYm9yZGVycyBvciBzaGFkb3dzLCBOb3Rpb24gdXNlcyB1bHRyYS10aGluIGAxcHggc29saWQgcmdiYSgwLDAsMCwwLjEpYCBib3JkZXJzIC0tIGJvcmRlcnMgdGhhdCBleGlzdCBhcyB3aGlzcGVycywgYmFyZWx5IHBlcmNlcHRpYmxlIGRpdmlzaW9uIGxpbmVzIHRoYXQgY3JlYXRlIHN0cnVjdHVyZSB3aXRob3V0IHdlaWdodC4gVGhlIHNoYWRvdyBzeXN0ZW0gaXMgZXF1YWxseSByZXN0cmFpbmVkOiBtdWx0aS1sYXllciBzdGFja3Mgd2l0aCBjdW11bGF0aXZlIG9wYWNpdHkgbmV2ZXIgZXhjZWVkaW5nIDAuMDUsIGNyZWF0aW5nIGRlcHRoIHRoYXQncyBmZWx0IHJhdGhlciB0aGFuIHNlZW4uCgoqKktleSBDaGFyYWN0ZXJpc3RpY3M6KioKLSBOb3Rpb25JbnRlciAobW9kaWZpZWQgSW50ZXIpIHdpdGggbmVnYXRpdmUgbGV0dGVyLXNwYWNpbmcgYXQgZGlzcGxheSBzaXplcyAoLTIuMTI1cHggYXQgNjRweCkKLSBXYXJtIG5ldXRyYWwgcGFsZXR0ZTogZ3JheXMgY2FycnkgeWVsbG93LWJyb3duIHVuZGVydG9uZXMgKGAjZjZmNWY0YCB3YXJtIHdoaXRlLCBgIzMxMzAyZWAgd2FybSBkYXJrKQotIE5lYXItYmxhY2sgdGV4dCB2aWEgYHJnYmEoMCwwLDAsMC45NSlgIC0tIG5vdCBwdXJlIGJsYWNrLCBjcmVhdGluZyBtaWNyby13YXJtdGgKLSBVbHRyYS10aGluIGJvcmRlcnM6IGAxcHggc29saWQgcmdiYSgwLDAsMCwwLjEpYCB0aHJvdWdob3V0IC0tIHdoaXNwZXItd2VpZ2h0IGRpdmlzaW9uCi0gTXVsdGktbGF5ZXIgc2hhZG93IHN0YWNrcyB3aXRoIHN1Yi0wLjA1IG9wYWNpdHkgZm9yIGJhcmVseS10aGVyZSBkZXB0aAotIE5vdGlvbiBCbHVlIChgIzAwNzVkZWApIGFzIHRoZSBzaW5ndWxhciBhY2NlbnQgY29sb3IgZm9yIENUQXMgYW5kIGludGVyYWN0aXZlIGVsZW1lbnRzCi0gUGlsbCBiYWRnZXMgKDk5OTlweCByYWRpdXMpIHdpdGggdGludGVkIGJsdWUgYmFja2dyb3VuZHMgZm9yIHN0YXR1cyBpbmRpY2F0b3JzCi0gOHB4IGJhc2Ugc3BhY2luZyB1bml0IHdpdGggYW4gb3JnYW5pYywgbm9uLXJpZ2lkIHNjYWxlCgojIyAyLiBDb2xvciBQYWxldHRlICYgUm9sZXMKCiMjIyBQcmltYXJ5Ci0gKipOb3Rpb24gQmxhY2sqKiAoYHJnYmEoMCwwLDAsMC45NSlgIC8gYCMwMDAwMDBmMmApOiBQcmltYXJ5IHRleHQsIGhlYWRpbmdzLCBib2R5IGNvcHkuIFRoZSA5NSUgb3BhY2l0eSBzb2Z0ZW5zIHB1cmUgYmxhY2sgd2l0aG91dCBzYWNyaWZpY2luZyByZWFkYWJpbGl0eS4KLSAqKlB1cmUgV2hpdGUqKiAoYCNmZmZmZmZgKTogUGFnZSBiYWNrZ3JvdW5kLCBjYXJkIHN1cmZhY2VzLCBidXR0b24gdGV4dCBvbiBibHVlLgotICoqTm90aW9uIEJsdWUqKiAoYCMwMDc1ZGVgKTogUHJpbWFyeSBDVEEsIGxpbmsgY29sb3IsIGludGVyYWN0aXZlIGFjY2VudCAtLSB0aGUgb25seSBzYXR1cmF0ZWQgY29sb3IgaW4gdGhlIGNvcmUgVUkgY2hyb21lLgoKIyMjIEJyYW5kIFNlY29uZGFyeQotICoqRGVlcCBOYXZ5KiogKGAjMjEzMTgzYCk6IFNlY29uZGFyeSBicmFuZCBjb2xvciwgdXNlZCBzcGFyaW5nbHkgZm9yIGVtcGhhc2lzIGFuZCBkYXJrIGZlYXR1cmUgc2VjdGlvbnMuCi0gKipBY3RpdmUgQmx1ZSoqIChgIzAwNWJhYmApOiBCdXR0b24gYWN0aXZlL3ByZXNzZWQgc3RhdGUgLS0gZGFya2VyIHZhcmlhbnQgb2YgTm90aW9uIEJsdWUuCgojIyMgV2FybSBOZXV0cmFsIFNjYWxlCi0gKipXYXJtIFdoaXRlKiogKGAjZjZmNWY0YCk6IEJhY2tncm91bmQgc3VyZmFjZSB0aW50LCBzZWN0aW9uIGFsdGVybmF0aW9uLCBzdWJ0bGUgY2FyZCBmaWxsLiBUaGUgeWVsbG93IHVuZGVydG9uZSBpcyBrZXkuCi0gKipXYXJtIERhcmsqKiAoYCMzMTMwMmVgKTogRGFyayBzdXJmYWNlIGJhY2tncm91bmQsIGRhcmsgc2VjdGlvbiB0ZXh0LiBXYXJtZXIgdGhhbiBzdGFuZGFyZCBncmF5cy4KLSAqKldhcm0gR3JheSA1MDAqKiAoYCM2MTVkNTlgKTogU2Vjb25kYXJ5IHRleHQsIGRlc2NyaXB0aW9ucywgbXV0ZWQgbGFiZWxzLgotICoqV2FybSBHcmF5IDMwMCoqIChgI2EzOWU5OGApOiBQbGFjZWhvbGRlciB0ZXh0LCBkaXNhYmxlZCBzdGF0ZXMsIGNhcHRpb24gdGV4dC4KCiMjIyBTZW1hbnRpYyBBY2NlbnQgQ29sb3JzCi0gKipUZWFsKiogKGAjMmE5ZDk5YCk6IFN1Y2Nlc3Mgc3RhdGVzLCBwb3NpdGl2ZSBpbmRpY2F0b3JzLgotICoqR3JlZW4qKiAoYCMxYWFlMzlgKTogQ29uZmlybWF0aW9uLCBjb21wbGV0aW9uIGJhZGdlcy4KLSAqKk9yYW5nZSoqIChgI2RkNWIwMGApOiBXYXJuaW5nIHN0YXRlcywgYXR0ZW50aW9uIGluZGljYXRvcnMuCi0gKipQaW5rKiogKGAjZmY2NGM4YCk6IERlY29yYXRpdmUgYWNjZW50LCBmZWF0dXJlIGhpZ2hsaWdodHMuCi0gKipQdXJwbGUqKiAoYCMzOTFjNTdgKTogUHJlbWl1bSBmZWF0dXJlcywgZGVlcCBhY2NlbnRzLgotICoqQnJvd24qKiAoYCM1MjM0MTBgKTogRWFydGh5IGFjY2VudCwgd2FybSBmZWF0dXJlIHNlY3Rpb25zLgoKIyMjIEludGVyYWN0aXZlCi0gKipMaW5rIEJsdWUqKiAoYCMwMDc1ZGVgKTogUHJpbWFyeSBsaW5rIGNvbG9yIHdpdGggdW5kZXJsaW5lLW9uLWhvdmVyLgotICoqTGluayBMaWdodCBCbHVlKiogKGAjNjJhZWYwYCk6IExpZ2h0ZXIgbGluayB2YXJpYW50IGZvciBkYXJrIGJhY2tncm91bmRzLgotICoqRm9jdXMgQmx1ZSoqIChgIzA5N2ZlOGApOiBGb2N1cyByaW5nIG9uIGludGVyYWN0aXZlIGVsZW1lbnRzLgotICoqQmFkZ2UgQmx1ZSBCZyoqIChgI2YyZjlmZmApOiBQaWxsIGJhZGdlIGJhY2tncm91bmQsIHRpbnRlZCBibHVlIHN1cmZhY2UuCi0gKipCYWRnZSBCbHVlIFRleHQqKiAoYCMwOTdmZThgKTogUGlsbCBiYWRnZSB0ZXh0LCBkYXJrZXIgYmx1ZSBmb3IgcmVhZGFiaWxpdHkuCgojIyMgU2hhZG93cyAmIERlcHRoCi0gKipDYXJkIFNoYWRvdyoqIChgcmdiYSgwLDAsMCwwLjA0KSAwcHggNHB4IDE4cHgsIHJnYmEoMCwwLDAsMC4wMjcpIDBweCAyLjAyNXB4IDcuODQ2ODhweCwgcmdiYSgwLDAsMCwwLjAyKSAwcHggMC44cHggMi45MjVweCwgcmdiYSgwLDAsMCwwLjAxKSAwcHggMC4xNzVweCAxLjA0MDYycHhgKTogTXVsdGktbGF5ZXIgY2FyZCBlbGV2YXRpb24uCi0gKipEZWVwIFNoYWRvdyoqIChgcmdiYSgwLDAsMCwwLjAxKSAwcHggMXB4IDNweCwgcmdiYSgwLDAsMCwwLjAyKSAwcHggM3B4IDdweCwgcmdiYSgwLDAsMCwwLjAyKSAwcHggN3B4IDE1cHgsIHJnYmEoMCwwLDAsMC4wNCkgMHB4IDE0cHggMjhweCwgcmdiYSgwLDAsMCwwLjA1KSAwcHggMjNweCA1MnB4YCk6IEZpdmUtbGF5ZXIgZGVlcCBlbGV2YXRpb24gZm9yIG1vZGFscyBhbmQgZmVhdHVyZWQgY29udGVudC4KLSAqKldoaXNwZXIgQm9yZGVyKiogKGAxcHggc29saWQgcmdiYSgwLDAsMCwwLjEpYCk6IFN0YW5kYXJkIGRpdmlzaW9uIGJvcmRlciAtLSBjYXJkcywgZGl2aWRlcnMsIHNlY3Rpb25zLgoKIyMgMy4gVHlwb2dyYXBoeSBSdWxlcwoKIyMjIEZvbnQgRmFtaWx5Ci0gKipQcmltYXJ5Kio6IGBOb3Rpb25JbnRlcmAsIHdpdGggZmFsbGJhY2tzOiBgSW50ZXIsIC1hcHBsZS1zeXN0ZW0sIHN5c3RlbS11aSwgU2Vnb2UgVUksIEhlbHZldGljYSwgQXBwbGUgQ29sb3IgRW1vamksIEFyaWFsLCBTZWdvZSBVSSBFbW9qaSwgU2Vnb2UgVUkgU3ltYm9sYAotICoqT3BlblR5cGUgRmVhdHVyZXMqKjogYCJsbnVtImAgKGxpbmluZyBudW1lcmFscykgYW5kIGAibG9jbCJgIChsb2NhbGl6ZWQgZm9ybXMpIGVuYWJsZWQgb24gZGlzcGxheSBhbmQgaGVhZGluZyB0ZXh0LgoKIyMjIEhpZXJhcmNoeQoKfCBSb2xlIHwgRm9udCB8IFNpemUgfCBXZWlnaHQgfCBMaW5lIEhlaWdodCB8IExldHRlciBTcGFjaW5nIHwgTm90ZXMgfAp8LS0tLS0tfC0tLS0tLXwtLS0tLS18LS0tLS0tLS18LS0tLS0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tLS0tfC0tLS0tLS18CnwgRGlzcGxheSBIZXJvIHwgTm90aW9uSW50ZXIgfCA2NHB4ICg0LjAwcmVtKSB8IDcwMCB8IDEuMDAgKHRpZ2h0KSB8IC0yLjEyNXB4IHwgTWF4aW11bSBjb21wcmVzc2lvbiwgYmlsbGJvYXJkIGhlYWRsaW5lcyB8CnwgRGlzcGxheSBTZWNvbmRhcnkgfCBOb3Rpb25JbnRlciB8IDU0cHggKDMuMzhyZW0pIHwgNzAwIHwgMS4wNCAodGlnaHQpIHwgLTEuODc1cHggfCBTZWNvbmRhcnkgaGVybywgZmVhdHVyZSBoZWFkbGluZXMgfAp8IFNlY3Rpb24gSGVhZGluZyB8IE5vdGlvbkludGVyIHwgNDhweCAoMy4wMHJlbSkgfCA3MDAgfCAxLjAwICh0aWdodCkgfCAtMS41cHggfCBGZWF0dXJlIHNlY3Rpb24gdGl0bGVzLCB3aXRoIGAibG51bSJgIHwKfCBTdWItaGVhZGluZyBMYXJnZSB8IE5vdGlvbkludGVyIHwgNDBweCAoMi41MHJlbSkgfCA3MDAgfCAxLjUwIHwgbm9ybWFsIHwgQ2FyZCBoZWFkaW5ncywgZmVhdHVyZSBzdWItc2VjdGlvbnMgfAp8IFN1Yi1oZWFkaW5nIHwgTm90aW9uSW50ZXIgfCAyNnB4ICgxLjYzcmVtKSB8IDcwMCB8IDEuMjMgKHRpZ2h0KSB8IC0wLjYyNXB4IHwgU2VjdGlvbiBzdWItdGl0bGVzLCBjb250ZW50IGhlYWRlcnMgfAp8IENhcmQgVGl0bGUgfCBOb3Rpb25JbnRlciB8IDIycHggKDEuMzhyZW0pIHwgNzAwIHwgMS4yNyAodGlnaHQpIHwgLTAuMjVweCB8IEZlYXR1cmUgY2FyZHMsIGxpc3QgdGl0bGVzIHwKfCBCb2R5IExhcmdlIHwgTm90aW9uSW50ZXIgfCAyMHB4ICgxLjI1cmVtKSB8IDYwMCB8IDEuNDAgfCAtMC4xMjVweCB8IEludHJvZHVjdGlvbnMsIGZlYXR1cmUgZGVzY3JpcHRpb25zIHwKfCBCb2R5IHwgTm90aW9uSW50ZXIgfCAxNnB4ICgxLjAwcmVtKSB8IDQwMCB8IDEuNTAgfCBub3JtYWwgfCBTdGFuZGFyZCByZWFkaW5nIHRleHQgfAp8IEJvZHkgTWVkaXVtIHwgTm90aW9uSW50ZXIgfCAxNnB4ICgxLjAwcmVtKSB8IDUwMCB8IDEuNTAgfCBub3JtYWwgfCBOYXZpZ2F0aW9uLCBlbXBoYXNpemVkIFVJIHRleHQgfAp8IEJvZHkgU2VtaWJvbGQgfCBOb3Rpb25JbnRlciB8IDE2cHggKDEuMDByZW0pIHwgNjAwIHwgMS41MCB8IG5vcm1hbCB8IFN0cm9uZyBsYWJlbHMsIGFjdGl2ZSBzdGF0ZXMgfAp8IEJvZHkgQm9sZCB8IE5vdGlvbkludGVyIHwgMTZweCAoMS4wMHJlbSkgfCA3MDAgfCAxLjUwIHwgbm9ybWFsIHwgSGVhZGxpbmVzIGF0IGJvZHkgc2l6ZSB8CnwgTmF2IC8gQnV0dG9uIHwgTm90aW9uSW50ZXIgfCAxNXB4ICgwLjk0cmVtKSB8IDYwMCB8IDEuMzMgfCBub3JtYWwgfCBOYXZpZ2F0aW9uIGxpbmtzLCBidXR0b24gdGV4dCB8CnwgQ2FwdGlvbiB8IE5vdGlvbkludGVyIHwgMTRweCAoMC44OHJlbSkgfCA1MDAgfCAxLjQzIHwgbm9ybWFsIHwgTWV0YWRhdGEsIHNlY29uZGFyeSBsYWJlbHMgfAp8IENhcHRpb24gTGlnaHQgfCBOb3Rpb25JbnRlciB8IDE0cHggKDAuODhyZW0pIHwgNDAwIHwgMS40MyB8IG5vcm1hbCB8IEJvZHkgY2FwdGlvbnMsIGRlc2NyaXB0aW9ucyB8CnwgQmFkZ2UgfCBOb3Rpb25JbnRlciB8IDEycHggKDAuNzVyZW0pIHwgNjAwIHwgMS4zMyB8IDAuMTI1cHggfCBQaWxsIGJhZGdlcywgdGFncywgc3RhdHVzIGxhYmVscyB8CnwgTWljcm8gTGFiZWwgfCBOb3Rpb25JbnRlciB8IDEycHggKDAuNzVyZW0pIHwgNDAwIHwgMS4zMyB8IDAuMTI1cHggfCBTbWFsbCBtZXRhZGF0YSwgdGltZXN0YW1wcyB8CgojIyMgUHJpbmNpcGxlcwotICoqQ29tcHJlc3Npb24gYXQgc2NhbGUqKjogTm90aW9uSW50ZXIgYXQgZGlzcGxheSBzaXplcyB1c2VzIC0yLjEyNXB4IGxldHRlci1zcGFjaW5nIGF0IDY0cHgsIHByb2dyZXNzaXZlbHkgcmVsYXhpbmcgdG8gLTAuNjI1cHggYXQgMjZweCBhbmQgbm9ybWFsIGF0IDE2cHguIFRoZSBjb21wcmVzc2lvbiBjcmVhdGVzIGRlbnNpdHkgYXQgaGVhZGxpbmVzIHdoaWxlIG1haW50YWluaW5nIHJlYWRhYmlsaXR5IGF0IGJvZHkgc2l6ZXMuCi0gKipGb3VyLXdlaWdodCBzeXN0ZW0qKjogNDAwIChib2R5L3JlYWRpbmcpLCA1MDAgKFVJL2ludGVyYWN0aXZlKSwgNjAwIChlbXBoYXNpcy9uYXZpZ2F0aW9uKSwgNzAwIChoZWFkaW5ncy9kaXNwbGF5KS4gVGhlIGJyb2FkZXIgd2VpZ2h0IHJhbmdlIGNvbXBhcmVkIHRvIG1vc3Qgc3lzdGVtcyBhbGxvd3MgbnVhbmNlZCBoaWVyYXJjaHkuCi0gKipXYXJtIHNjYWxpbmcqKjogTGluZSBoZWlnaHQgdGlnaHRlbnMgYXMgc2l6ZSBpbmNyZWFzZXMgLS0gMS41MCBhdCBib2R5ICgxNnB4KSwgMS4yMy0xLjI3IGF0IHN1Yi1oZWFkaW5ncywgMS4wMC0xLjA0IGF0IGRpc3BsYXkuIFRoaXMgY3JlYXRlcyBkZW5zZXIsIG1vcmUgaW1wYWN0ZnVsIGhlYWRsaW5lcy4KLSAqKkJhZGdlIG1pY3JvLXRyYWNraW5nKio6IFRoZSAxMnB4IGJhZGdlIHRleHQgdXNlcyBwb3NpdGl2ZSBsZXR0ZXItc3BhY2luZyAoMC4xMjVweCkgLS0gdGhlIG9ubHkgcG9zaXRpdmUgdHJhY2tpbmcgaW4gdGhlIHN5c3RlbSwgY3JlYXRpbmcgd2lkZXIsIG1vcmUgbGVnaWJsZSBzbWFsbCB0ZXh0LgoKIyMgNC4gQ29tcG9uZW50IFN0eWxpbmdzCgojIyMgQnV0dG9ucwoKKipQcmltYXJ5IEJsdWUqKgotIEJhY2tncm91bmQ6IGAjMDA3NWRlYCAoTm90aW9uIEJsdWUpCi0gVGV4dDogYCNmZmZmZmZgCi0gUGFkZGluZzogOHB4IDE2cHgKLSBSYWRpdXM6IDRweCAoc3VidGxlKQotIEJvcmRlcjogYDFweCBzb2xpZCB0cmFuc3BhcmVudGAKLSBIb3ZlcjogYmFja2dyb3VuZCBkYXJrZW5zIHRvIGAjMDA1YmFiYAotIEFjdGl2ZTogc2NhbGUoMC45KSB0cmFuc2Zvcm0KLSBGb2N1czogYDJweCBzb2xpZGAgZm9jdXMgb3V0bGluZSwgYHZhcigtLXNoYWRvdy1sZXZlbC0yMDApYCBzaGFkb3cKLSBVc2U6IFByaW1hcnkgQ1RBICgiR2V0IE5vdGlvbiBmcmVlIiwgIlRyeSBpdCIpCgoqKlNlY29uZGFyeSAvIFRlcnRpYXJ5KioKLSBCYWNrZ3JvdW5kOiBgcmdiYSgwLDAsMCwwLjA1KWAgKHRyYW5zbHVjZW50IHdhcm0gZ3JheSkKLSBUZXh0OiBgIzAwMDAwMGAgKG5lYXItYmxhY2spCi0gUGFkZGluZzogOHB4IDE2cHgKLSBSYWRpdXM6IDRweAotIEhvdmVyOiB0ZXh0IGNvbG9yIHNoaWZ0cywgc2NhbGUoMS4wNSkKLSBBY3RpdmU6IHNjYWxlKDAuOSkgdHJhbnNmb3JtCi0gVXNlOiBTZWNvbmRhcnkgYWN0aW9ucywgZm9ybSBzdWJtaXNzaW9ucwoKKipHaG9zdCAvIExpbmsgQnV0dG9uKioKLSBCYWNrZ3JvdW5kOiB0cmFuc3BhcmVudAotIFRleHQ6IGByZ2JhKDAsMCwwLDAuOTUpYAotIERlY29yYXRpb246IHVuZGVybGluZSBvbiBob3ZlcgotIFVzZTogVGVydGlhcnkgYWN0aW9ucywgaW5saW5lIGxpbmtzCgoqKlBpbGwgQmFkZ2UgQnV0dG9uKioKLSBCYWNrZ3JvdW5kOiBgI2YyZjlmZmAgKHRpbnRlZCBibHVlKQotIFRleHQ6IGAjMDk3ZmU4YAotIFBhZGRpbmc6IDRweCA4cHgKLSBSYWRpdXM6IDk5OTlweCAoZnVsbCBwaWxsKQotIEZvbnQ6IDEycHggd2VpZ2h0IDYwMAotIFVzZTogU3RhdHVzIGJhZGdlcywgZmVhdHVyZSBsYWJlbHMsICJOZXciIHRhZ3MKCiMjIyBDYXJkcyAmIENvbnRhaW5lcnMKLSBCYWNrZ3JvdW5kOiBgI2ZmZmZmZmAKLSBCb3JkZXI6IGAxcHggc29saWQgcmdiYSgwLDAsMCwwLjEpYCAod2hpc3BlciBib3JkZXIpCi0gUmFkaXVzOiAxMnB4IChzdGFuZGFyZCBjYXJkcyksIDE2cHggKGZlYXR1cmVkL2hlcm8gY2FyZHMpCi0gU2hhZG93OiBgcmdiYSgwLDAsMCwwLjA0KSAwcHggNHB4IDE4cHgsIHJnYmEoMCwwLDAsMC4wMjcpIDBweCAyLjAyNXB4IDcuODQ2ODhweCwgcmdiYSgwLDAsMCwwLjAyKSAwcHggMC44cHggMi45MjVweCwgcmdiYSgwLDAsMCwwLjAxKSAwcHggMC4xNzVweCAxLjA0MDYycHhgCi0gSG92ZXI6IHN1YnRsZSBzaGFkb3cgaW50ZW5zaWZpY2F0aW9uCi0gSW1hZ2UgY2FyZHM6IDEycHggdG9wIHJhZGl1cywgaW1hZ2UgZmlsbHMgdG9wIGhhbGYKCiMjIyBJbnB1dHMgJiBGb3JtcwotIEJhY2tncm91bmQ6IGAjZmZmZmZmYAotIFRleHQ6IGByZ2JhKDAsMCwwLDAuOSlgCi0gQm9yZGVyOiBgMXB4IHNvbGlkICNkZGRkZGRgCi0gUGFkZGluZzogNnB4Ci0gUmFkaXVzOiA0cHgKLSBGb2N1czogYmx1ZSBvdXRsaW5lIHJpbmcKLSBQbGFjZWhvbGRlcjogd2FybSBncmF5IGAjYTM5ZTk4YAoKIyMjIE5hdmlnYXRpb24KLSBDbGVhbiBob3Jpem9udGFsIG5hdiBvbiB3aGl0ZSwgbm90IHN0aWNreQotIEJyYW5kIGxvZ28gbGVmdC1hbGlnbmVkICgzM3gzNHB4IGljb24gKyB3b3JkbWFyaykKLSBMaW5rczogTm90aW9uSW50ZXIgMTVweCB3ZWlnaHQgNTAwLTYwMCwgbmVhci1ibGFjayB0ZXh0Ci0gSG92ZXI6IGNvbG9yIHNoaWZ0IHRvIGB2YXIoLS1jb2xvci1saW5rLXByaW1hcnktdGV4dC1ob3ZlcilgCi0gQ1RBOiBibHVlIHBpbGwgYnV0dG9uICgiR2V0IE5vdGlvbiBmcmVlIikgcmlnaHQtYWxpZ25lZAotIE1vYmlsZTogaGFtYnVyZ2VyIG1lbnUgY29sbGFwc2UKLSBQcm9kdWN0IGRyb3Bkb3ducyB3aXRoIG11bHRpLWxldmVsIGNhdGVnb3JpemVkIG1lbnVzCgojIyMgSW1hZ2UgVHJlYXRtZW50Ci0gUHJvZHVjdCBzY3JlZW5zaG90cyB3aXRoIGAxcHggc29saWQgcmdiYSgwLDAsMCwwLjEpYCBib3JkZXIKLSBUb3Atcm91bmRlZCBpbWFnZXM6IGAxMnB4IDEycHggMHB4IDBweGAgcmFkaXVzCi0gRGFzaGJvYXJkL3dvcmtzcGFjZSBwcmV2aWV3IHNjcmVlbnNob3RzIGRvbWluYXRlIGZlYXR1cmUgc2VjdGlvbnMKLSBXYXJtIGdyYWRpZW50IGJhY2tncm91bmRzIGJlaGluZCBoZXJvIGlsbHVzdHJhdGlvbnMgKGRlY29yYXRpdmUgY2hhcmFjdGVyIGlsbHVzdHJhdGlvbnMpCgojIyMgRGlzdGluY3RpdmUgQ29tcG9uZW50cwoKKipGZWF0dXJlIENhcmRzIHdpdGggSWxsdXN0cmF0aW9ucyoqCi0gTGFyZ2UgaWxsdXN0cmF0aXZlIGhlYWRlcnMgKFRoZSBHcmVhdCBXYXZlLCBwcm9kdWN0IFVJIHNjcmVlbnNob3RzKQotIDEycHggcmFkaXVzIGNhcmQgd2l0aCB3aGlzcGVyIGJvcmRlcgotIFRpdGxlIGF0IDIycHggd2VpZ2h0IDcwMCwgZGVzY3JpcHRpb24gYXQgMTZweCB3ZWlnaHQgNDAwCi0gV2FybSB3aGl0ZSAoYCNmNmY1ZjRgKSBiYWNrZ3JvdW5kIHZhcmlhbnQgZm9yIGFsdGVybmF0aW5nIHNlY3Rpb25zCgoqKlRydXN0IEJhciAvIExvZ28gR3JpZCoqCi0gQ29tcGFueSBsb2dvcyAodHJ1c3RlZCB0ZWFtcyBzZWN0aW9uKSBpbiB0aGVpciBicmFuZCBjb2xvcnMKLSBIb3Jpem9udGFsIHNjcm9sbCBvciBncmlkIGxheW91dCB3aXRoIHRlYW0gY291bnRzCi0gTWV0cmljIGRpc3BsYXk6IGxhcmdlIG51bWJlciArIGRlc2NyaXB0aW9uIHBhdHRlcm4KCioqTWV0cmljIENhcmRzKioKLSBMYXJnZSBudW1iZXIgZGlzcGxheSAoZS5nLiwgIiQ0LDIwMCBST0kiKQotIE5vdGlvbkludGVyIDQwcHgrIHdlaWdodCA3MDAgZm9yIHRoZSBtZXRyaWMKLSBEZXNjcmlwdGlvbiBiZWxvdyBpbiB3YXJtIGdyYXkgYm9keSB0ZXh0Ci0gV2hpc3Blci1ib3JkZXJlZCBjYXJkIGNvbnRhaW5lcgoKIyMgNS4gTGF5b3V0IFByaW5jaXBsZXMKCiMjIyBTcGFjaW5nIFN5c3RlbQotIEJhc2UgdW5pdDogOHB4Ci0gU2NhbGU6IDJweCwgM3B4LCA0cHgsIDVweCwgNnB4LCA3cHgsIDhweCwgMTFweCwgMTJweCwgMTRweCwgMTZweCwgMjRweCwgMzJweAotIE5vbi1yaWdpZCBvcmdhbmljIHNjYWxlIHdpdGggZnJhY3Rpb25hbCB2YWx1ZXMgKDUuNnB4LCA2LjRweCkgZm9yIG1pY3JvLWFkanVzdG1lbnRzCgojIyMgR3JpZCAmIENvbnRhaW5lcgotIE1heCBjb250ZW50IHdpZHRoOiBhcHByb3hpbWF0ZWx5IDEyMDBweAotIEhlcm86IGNlbnRlcmVkIHNpbmdsZS1jb2x1bW4gd2l0aCBnZW5lcm91cyB0b3AgcGFkZGluZyAoODAtMTIwcHgpCi0gRmVhdHVyZSBzZWN0aW9uczogMi0zIGNvbHVtbiBncmlkcyBmb3IgY2FyZHMKLSBGdWxsLXdpZHRoIHdhcm0gd2hpdGUgKGAjZjZmNWY0YCkgc2VjdGlvbiBiYWNrZ3JvdW5kcyBmb3IgYWx0ZXJuYXRpb24KLSBDb2RlL2Rhc2hib2FyZCBzY3JlZW5zaG90cyBhcyBjb250YWluZWQgd2l0aCB3aGlzcGVyIGJvcmRlcgoKIyMjIFdoaXRlc3BhY2UgUGhpbG9zb3BoeQotICoqR2VuZXJvdXMgdmVydGljYWwgcmh5dGhtKio6IDY0LTEyMHB4IGJldHdlZW4gbWFqb3Igc2VjdGlvbnMuIE5vdGlvbiBsZXRzIGNvbnRlbnQgYnJlYXRoZSB3aXRoIHZhc3QgdmVydGljYWwgcGFkZGluZy4KLSAqKldhcm0gYWx0ZXJuYXRpb24qKjogV2hpdGUgc2VjdGlvbnMgYWx0ZXJuYXRlIHdpdGggd2FybSB3aGl0ZSAoYCNmNmY1ZjRgKSBzZWN0aW9ucywgY3JlYXRpbmcgZ2VudGxlIHZpc3VhbCByaHl0aG0gd2l0aG91dCBoYXJzaCBjb2xvciBicmVha3MuCi0gKipDb250ZW50LWZpcnN0IGRlbnNpdHkqKjogQm9keSB0ZXh0IGJsb2NrcyBhcmUgY29tcGFjdCAobGluZS1oZWlnaHQgMS41MCkgYnV0IHN1cnJvdW5kZWQgYnkgYW1wbGUgbWFyZ2luLCBjcmVhdGluZyBpc2xhbmRzIG9mIHJlYWRhYmxlIGNvbnRlbnQgaW4gYSBzZWEgb2Ygd2hpdGUgc3BhY2UuCgojIyMgQm9yZGVyIFJhZGl1cyBTY2FsZQotIE1pY3JvICg0cHgpOiBCdXR0b25zLCBpbnB1dHMsIGZ1bmN0aW9uYWwgaW50ZXJhY3RpdmUgZWxlbWVudHMKLSBTdWJ0bGUgKDVweCk6IExpbmtzLCBsaXN0IGl0ZW1zLCBtZW51IGl0ZW1zCi0gU3RhbmRhcmQgKDhweCk6IFNtYWxsIGNhcmRzLCBjb250YWluZXJzLCBpbmxpbmUgZWxlbWVudHMKLSBDb21mb3J0YWJsZSAoMTJweCk6IFN0YW5kYXJkIGNhcmRzLCBmZWF0dXJlIGNvbnRhaW5lcnMsIGltYWdlIHRvcHMKLSBMYXJnZSAoMTZweCk6IEhlcm8gY2FyZHMsIGZlYXR1cmVkIGNvbnRlbnQsIHByb21vdGlvbmFsIGJsb2NrcwotIEZ1bGwgUGlsbCAoOTk5OXB4KTogQmFkZ2VzLCBwaWxscywgc3RhdHVzIGluZGljYXRvcnMKLSBDaXJjbGUgKDEwMCUpOiBUYWIgaW5kaWNhdG9ycywgYXZhdGFycwoKIyMgNi4gRGVwdGggJiBFbGV2YXRpb24KCnwgTGV2ZWwgfCBUcmVhdG1lbnQgfCBVc2UgfAp8LS0tLS0tLXwtLS0tLS0tLS0tLXwtLS0tLXwKfCBGbGF0IChMZXZlbCAwKSB8IE5vIHNoYWRvdywgbm8gYm9yZGVyIHwgUGFnZSBiYWNrZ3JvdW5kLCB0ZXh0IGJsb2NrcyB8CnwgV2hpc3BlciAoTGV2ZWwgMSkgfCBgMXB4IHNvbGlkIHJnYmEoMCwwLDAsMC4xKWAgfCBTdGFuZGFyZCBib3JkZXJzLCBjYXJkIG91dGxpbmVzLCBkaXZpZGVycyB8CnwgU29mdCBDYXJkIChMZXZlbCAyKSB8IDQtbGF5ZXIgc2hhZG93IHN0YWNrIChtYXggb3BhY2l0eSAwLjA0KSB8IENvbnRlbnQgY2FyZHMsIGZlYXR1cmUgYmxvY2tzIHwKfCBEZWVwIENhcmQgKExldmVsIDMpIHwgNS1sYXllciBzaGFkb3cgc3RhY2sgKG1heCBvcGFjaXR5IDAuMDUsIDUycHggYmx1cikgfCBNb2RhbHMsIGZlYXR1cmVkIHBhbmVscywgaGVybyBlbGVtZW50cyB8CnwgRm9jdXMgKEFjY2Vzc2liaWxpdHkpIHwgYDJweCBzb2xpZCB2YXIoLS1mb2N1cy1jb2xvcilgIG91dGxpbmUgfCBLZXlib2FyZCBmb2N1cyBvbiBhbGwgaW50ZXJhY3RpdmUgZWxlbWVudHMgfAoKKipTaGFkb3cgUGhpbG9zb3BoeSoqOiBOb3Rpb24ncyBzaGFkb3cgc3lzdGVtIHVzZXMgbXVsdGlwbGUgbGF5ZXJzIHdpdGggZXh0cmVtZWx5IGxvdyBpbmRpdmlkdWFsIG9wYWNpdHkgKDAuMDEgdG8gMC4wNSkgdGhhdCBhY2N1bXVsYXRlIGludG8gc29mdCwgbmF0dXJhbC1sb29raW5nIGVsZXZhdGlvbi4gVGhlIDQtbGF5ZXIgY2FyZCBzaGFkb3cgc3BhbnMgZnJvbSAxLjA0cHggdG8gMThweCBibHVyLCBjcmVhdGluZyBhIGdyYWRpZW50IG9mIGRlcHRoIHJhdGhlciB0aGFuIGEgc2luZ2xlIGhhcmQgc2hhZG93LiBUaGUgNS1sYXllciBkZWVwIHNoYWRvdyBleHRlbmRzIHRvIDUycHggYmx1ciBhdCAwLjA1IG9wYWNpdHksIHByb2R1Y2luZyBhbWJpZW50IG9jY2x1c2lvbiB0aGF0IGZlZWxzIGxpa2UgbmF0dXJhbCBsaWdodCByYXRoZXIgdGhhbiBjb21wdXRlci1nZW5lcmF0ZWQgZGVwdGguIFRoaXMgbGF5ZXJlZCBhcHByb2FjaCBtYWtlcyBlbGVtZW50cyBmZWVsIGVtYmVkZGVkIGluIHRoZSBwYWdlIHJhdGhlciB0aGFuIGZsb2F0aW5nIGFib3ZlIGl0LgoKIyMjIERlY29yYXRpdmUgRGVwdGgKLSBIZXJvIHNlY3Rpb246IGRlY29yYXRpdmUgY2hhcmFjdGVyIGlsbHVzdHJhdGlvbnMgKHBsYXlmdWwsIGhhbmQtZHJhd24gc3R5bGUpCi0gU2VjdGlvbiBhbHRlcm5hdGlvbjogd2hpdGUgdG8gd2FybSB3aGl0ZSAoYCNmNmY1ZjRgKSBiYWNrZ3JvdW5kIHNoaWZ0cwotIE5vIGhhcmQgc2VjdGlvbiBib3JkZXJzIC0tIHNlcGFyYXRpb24gY29tZXMgZnJvbSBiYWNrZ3JvdW5kIGNvbG9yIGNoYW5nZXMgYW5kIHNwYWNpbmcKCiMjIDcuIFJlc3BvbnNpdmUgQmVoYXZpb3IKCiMjIyBCcmVha3BvaW50cwp8IE5hbWUgfCBXaWR0aCB8IEtleSBDaGFuZ2VzIHwKfC0tLS0tLXwtLS0tLS0tfC0tLS0tLS0tLS0tLS18CnwgTW9iaWxlIFNtYWxsIHwgPDQwMHB4IHwgVGlnaHQgc2luZ2xlIGNvbHVtbiwgbWluaW1hbCBwYWRkaW5nIHwKfCBNb2JpbGUgfCA0MDAtNjAwcHggfCBTdGFuZGFyZCBtb2JpbGUsIHN0YWNrZWQgbGF5b3V0IHwKfCBUYWJsZXQgU21hbGwgfCA2MDAtNzY4cHggfCAyLWNvbHVtbiBncmlkcyBiZWdpbiB8CnwgVGFibGV0IHwgNzY4LTEwODBweCB8IEZ1bGwgY2FyZCBncmlkcywgZXhwYW5kZWQgcGFkZGluZyB8CnwgRGVza3RvcCBTbWFsbCB8IDEwODAtMTIwMHB4IHwgU3RhbmRhcmQgZGVza3RvcCBsYXlvdXQgfAp8IERlc2t0b3AgfCAxMjAwLTE0NDBweCB8IEZ1bGwgbGF5b3V0LCBtYXhpbXVtIGNvbnRlbnQgd2lkdGggfAp8IExhcmdlIERlc2t0b3AgfCA+MTQ0MHB4IHwgQ2VudGVyZWQsIGdlbmVyb3VzIG1hcmdpbnMgfAoKIyMjIFRvdWNoIFRhcmdldHMKLSBCdXR0b25zIHVzZSBjb21mb3J0YWJsZSBwYWRkaW5nICg4cHgtMTZweCB2ZXJ0aWNhbCkKLSBOYXZpZ2F0aW9uIGxpbmtzIGF0IDE1cHggd2l0aCBhZGVxdWF0ZSBzcGFjaW5nCi0gUGlsbCBiYWRnZXMgaGF2ZSA4cHggaG9yaXpvbnRhbCBwYWRkaW5nIGZvciB0YXAgdGFyZ2V0cwotIE1vYmlsZSBtZW51IHRvZ2dsZSB1c2VzIHN0YW5kYXJkIGhhbWJ1cmdlciBidXR0b24KCiMjIyBDb2xsYXBzaW5nIFN0cmF0ZWd5Ci0gSGVybzogNjRweCBkaXNwbGF5IC0+IHNjYWxlcyB0byA0MHB4IC0+IDI2cHggb24gbW9iaWxlLCBtYWludGFpbnMgcHJvcG9ydGlvbmFsIGxldHRlci1zcGFjaW5nCi0gTmF2aWdhdGlvbjogaG9yaXpvbnRhbCBsaW5rcyArIGJsdWUgQ1RBIC0+IGhhbWJ1cmdlciBtZW51Ci0gRmVhdHVyZSBjYXJkczogMy1jb2x1bW4gLT4gMi1jb2x1bW4gLT4gc2luZ2xlIGNvbHVtbiBzdGFja2VkCi0gUHJvZHVjdCBzY3JlZW5zaG90czogbWFpbnRhaW4gYXNwZWN0IHJhdGlvIHdpdGggcmVzcG9uc2l2ZSBpbWFnZXMKLSBUcnVzdCBiYXIgbG9nb3M6IGdyaWQgLT4gaG9yaXpvbnRhbCBzY3JvbGwgb24gbW9iaWxlCi0gRm9vdGVyOiBtdWx0aS1jb2x1bW4gLT4gc3RhY2tlZCBzaW5nbGUgY29sdW1uCi0gU2VjdGlvbiBzcGFjaW5nOiA4MHB4KyAtPiA0OHB4IG9uIG1vYmlsZQoKIyMjIEltYWdlIEJlaGF2aW9yCi0gV29ya3NwYWNlIHNjcmVlbnNob3RzIG1haW50YWluIHdoaXNwZXIgYm9yZGVyIGF0IGFsbCBzaXplcwotIEhlcm8gaWxsdXN0cmF0aW9ucyBzY2FsZSBwcm9wb3J0aW9uYWxseQotIFByb2R1Y3Qgc2NyZWVuc2hvdHMgdXNlIHJlc3BvbnNpdmUgaW1hZ2VzIHdpdGggY29uc2lzdGVudCBib3JkZXIgcmFkaXVzCi0gRnVsbC13aWR0aCB3YXJtIHdoaXRlIHNlY3Rpb25zIG1haW50YWluIGVkZ2UtdG8tZWRnZSB0cmVhdG1lbnQKCiMjIDguIEFjY2Vzc2liaWxpdHkgJiBTdGF0ZXMKCiMjIyBGb2N1cyBTeXN0ZW0KLSBBbGwgaW50ZXJhY3RpdmUgZWxlbWVudHMgcmVjZWl2ZSB2aXNpYmxlIGZvY3VzIGluZGljYXRvcnMKLSBGb2N1cyBvdXRsaW5lOiBgMnB4IHNvbGlkYCB3aXRoIGZvY3VzIGNvbG9yICsgc2hhZG93IGxldmVsIDIwMAotIFRhYiBuYXZpZ2F0aW9uIHN1cHBvcnRlZCB0aHJvdWdob3V0IGFsbCBpbnRlcmFjdGl2ZSBjb21wb25lbnRzCi0gSGlnaCBjb250cmFzdCB0ZXh0OiBuZWFyLWJsYWNrIG9uIHdoaXRlIGV4Y2VlZHMgV0NBRyBBQUEgKD4xNDoxIHJhdGlvKQoKIyMjIEludGVyYWN0aXZlIFN0YXRlcwotICoqRGVmYXVsdCoqOiBTdGFuZGFyZCBhcHBlYXJhbmNlIHdpdGggd2hpc3BlciBib3JkZXJzCi0gKipIb3ZlcioqOiBDb2xvciBzaGlmdCBvbiB0ZXh0LCBzY2FsZSgxLjA1KSBvbiBidXR0b25zLCB1bmRlcmxpbmUgb24gbGlua3MKLSAqKkFjdGl2ZS9QcmVzc2VkKio6IHNjYWxlKDAuOSkgdHJhbnNmb3JtLCBkYXJrZXIgYmFja2dyb3VuZCB2YXJpYW50Ci0gKipGb2N1cyoqOiBCbHVlIG91dGxpbmUgcmluZyB3aXRoIHNoYWRvdyByZWluZm9yY2VtZW50Ci0gKipEaXNhYmxlZCoqOiBXYXJtIGdyYXkgKGAjYTM5ZTk4YCkgdGV4dCwgcmVkdWNlZCBvcGFjaXR5CgojIyMgQ29sb3IgQ29udHJhc3QKLSBQcmltYXJ5IHRleHQgKHJnYmEoMCwwLDAsMC45NSkpIG9uIHdoaXRlOiB+MTg6MSByYXRpbwotIFNlY29uZGFyeSB0ZXh0ICgjNjE1ZDU5KSBvbiB3aGl0ZTogfjUuNToxIHJhdGlvIChXQ0FHIEFBKQotIEJsdWUgQ1RBICgjMDA3NWRlKSBvbiB3aGl0ZTogfjQuNjoxIHJhdGlvIChXQ0FHIEFBIGZvciBsYXJnZSB0ZXh0KQotIEJhZGdlIHRleHQgKCMwOTdmZTgpIG9uIGJhZGdlIGJnICgjZjJmOWZmKTogfjQuNToxIHJhdGlvIChXQ0FHIEFBIGZvciBsYXJnZSB0ZXh0KQoKIyMgOS4gQWdlbnQgUHJvbXB0IEd1aWRlCgojIyMgUXVpY2sgQ29sb3IgUmVmZXJlbmNlCi0gUHJpbWFyeSBDVEE6IE5vdGlvbiBCbHVlIChgIzAwNzVkZWApCi0gQmFja2dyb3VuZDogUHVyZSBXaGl0ZSAoYCNmZmZmZmZgKQotIEFsdCBCYWNrZ3JvdW5kOiBXYXJtIFdoaXRlIChgI2Y2ZjVmNGApCi0gSGVhZGluZyB0ZXh0OiBOZWFyLUJsYWNrIChgcmdiYSgwLDAsMCwwLjk1KWApCi0gQm9keSB0ZXh0OiBOZWFyLUJsYWNrIChgcmdiYSgwLDAsMCwwLjk1KWApCi0gU2Vjb25kYXJ5IHRleHQ6IFdhcm0gR3JheSA1MDAgKGAjNjE1ZDU5YCkKLSBNdXRlZCB0ZXh0OiBXYXJtIEdyYXkgMzAwIChgI2EzOWU5OGApCi0gQm9yZGVyOiBgMXB4IHNvbGlkIHJnYmEoMCwwLDAsMC4xKWAKLSBMaW5rOiBOb3Rpb24gQmx1ZSAoYCMwMDc1ZGVgKQotIEZvY3VzIHJpbmc6IEZvY3VzIEJsdWUgKGAjMDk3ZmU4YCkKCiMjIyBFeGFtcGxlIENvbXBvbmVudCBQcm9tcHRzCi0gIkNyZWF0ZSBhIGhlcm8gc2VjdGlvbiBvbiB3aGl0ZSBiYWNrZ3JvdW5kLiBIZWFkbGluZSBhdCA2NHB4IE5vdGlvbkludGVyIHdlaWdodCA3MDAsIGxpbmUtaGVpZ2h0IDEuMDAsIGxldHRlci1zcGFjaW5nIC0yLjEyNXB4LCBjb2xvciByZ2JhKDAsMCwwLDAuOTUpLiBTdWJ0aXRsZSBhdCAyMHB4IHdlaWdodCA2MDAsIGxpbmUtaGVpZ2h0IDEuNDAsIGNvbG9yICM2MTVkNTkuIEJsdWUgQ1RBIGJ1dHRvbiAoIzAwNzVkZSwgNHB4IHJhZGl1cywgOHB4IDE2cHggcGFkZGluZywgd2hpdGUgdGV4dCkgYW5kIGdob3N0IGJ1dHRvbiAodHJhbnNwYXJlbnQgYmcsIG5lYXItYmxhY2sgdGV4dCwgdW5kZXJsaW5lIG9uIGhvdmVyKS4iCi0gIkRlc2lnbiBhIGNhcmQ6IHdoaXRlIGJhY2tncm91bmQsIDFweCBzb2xpZCByZ2JhKDAsMCwwLDAuMSkgYm9yZGVyLCAxMnB4IHJhZGl1cy4gVXNlIHNoYWRvdyBzdGFjazogcmdiYSgwLDAsMCwwLjA0KSAwcHggNHB4IDE4cHgsIHJnYmEoMCwwLDAsMC4wMjcpIDBweCAyLjAyNXB4IDcuODVweCwgcmdiYSgwLDAsMCwwLjAyKSAwcHggMC44cHggMi45M3B4LCByZ2JhKDAsMCwwLDAuMDEpIDBweCAwLjE3NXB4IDEuMDRweC4gVGl0bGUgYXQgMjJweCBOb3Rpb25JbnRlciB3ZWlnaHQgNzAwLCBsZXR0ZXItc3BhY2luZyAtMC4yNXB4LiBCb2R5IGF0IDE2cHggd2VpZ2h0IDQwMCwgY29sb3IgIzYxNWQ1OS4iCi0gIkJ1aWxkIGEgcGlsbCBiYWRnZTogI2YyZjlmZiBiYWNrZ3JvdW5kLCAjMDk3ZmU4IHRleHQsIDk5OTlweCByYWRpdXMsIDRweCA4cHggcGFkZGluZywgMTJweCBOb3Rpb25JbnRlciB3ZWlnaHQgNjAwLCBsZXR0ZXItc3BhY2luZyAwLjEyNXB4LiIKLSAiQ3JlYXRlIG5hdmlnYXRpb246IHdoaXRlIGhlYWRlci4gTm90aW9uSW50ZXIgMTVweCB3ZWlnaHQgNjAwIGZvciBsaW5rcywgbmVhci1ibGFjayB0ZXh0LiBCbHVlIHBpbGwgQ1RBICdHZXQgTm90aW9uIGZyZWUnIHJpZ2h0LWFsaWduZWQgKCMwMDc1ZGUgYmcsIHdoaXRlIHRleHQsIDRweCByYWRpdXMpLiIKLSAiRGVzaWduIGFuIGFsdGVybmF0aW5nIHNlY3Rpb24gbGF5b3V0OiB3aGl0ZSBzZWN0aW9ucyBhbHRlcm5hdGUgd2l0aCB3YXJtIHdoaXRlICgjZjZmNWY0KSBzZWN0aW9ucy4gRWFjaCBzZWN0aW9uIGhhcyA2NC04MHB4IHZlcnRpY2FsIHBhZGRpbmcsIG1heC13aWR0aCAxMjAwcHggY2VudGVyZWQuIFNlY3Rpb24gaGVhZGluZyBhdCA0OHB4IHdlaWdodCA3MDAsIGxpbmUtaGVpZ2h0IDEuMDAsIGxldHRlci1zcGFjaW5nIC0xLjVweC4iCgojIyMgSXRlcmF0aW9uIEd1aWRlCjEuIEFsd2F5cyB1c2Ugd2FybSBuZXV0cmFscyAtLSBOb3Rpb24ncyBncmF5cyBoYXZlIHllbGxvdy1icm93biB1bmRlcnRvbmVzICgjZjZmNWY0LCAjMzEzMDJlLCAjNjE1ZDU5LCAjYTM5ZTk4KSwgbmV2ZXIgYmx1ZS1ncmF5CjIuIExldHRlci1zcGFjaW5nIHNjYWxlcyB3aXRoIGZvbnQgc2l6ZTogLTIuMTI1cHggYXQgNjRweCwgLTEuODc1cHggYXQgNTRweCwgLTAuNjI1cHggYXQgMjZweCwgbm9ybWFsIGF0IDE2cHgKMy4gRm91ciB3ZWlnaHRzOiA0MDAgKHJlYWQpLCA1MDAgKGludGVyYWN0KSwgNjAwIChlbXBoYXNpemUpLCA3MDAgKGFubm91bmNlKQo0LiBCb3JkZXJzIGFyZSB3aGlzcGVyczogMXB4IHNvbGlkIHJnYmEoMCwwLDAsMC4xKSAtLSBuZXZlciBoZWF2aWVyCjUuIFNoYWRvd3MgdXNlIDQtNSBsYXllcnMgd2l0aCBpbmRpdmlkdWFsIG9wYWNpdHkgbmV2ZXIgZXhjZWVkaW5nIDAuMDUKNi4gVGhlIHdhcm0gd2hpdGUgKCNmNmY1ZjQpIHNlY3Rpb24gYmFja2dyb3VuZCBpcyBlc3NlbnRpYWwgZm9yIHZpc3VhbCByaHl0aG0KNy4gUGlsbCBiYWRnZXMgKDk5OTlweCkgZm9yIHN0YXR1cy90YWdzLCA0cHggcmFkaXVzIGZvciBidXR0b25zIGFuZCBpbnB1dHMKOC4gTm90aW9uIEJsdWUgKCMwMDc1ZGUpIGlzIHRoZSBvbmx5IHNhdHVyYXRlZCBjb2xvciBpbiBjb3JlIFVJIC0tIHVzZSBpdCBzcGFyaW5nbHkgZm9yIENUQXMgYW5kIGxpbmtzCg==
+# Design System: Notion
+
+
+> **Hermes Agent — Implementation Notes**
+>
+> The original site uses proprietary fonts. For self-contained HTML output, use these CDN substitutes:
+> - **Primary:** `Inter` | **Mono:** `system monospace stack`
+> - **Font stack (CSS):** `font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;`
+> - **Mono stack (CSS):** `font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;`
+> ```html
+> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+> ```
+> Use `write_file` to create HTML, serve via `generative-widgets` skill (cloudflared tunnel).
+> Verify visual accuracy with `browser_vision` after generating.
+
+## 1. Visual Theme & Atmosphere
+
+Notion's website embodies the philosophy of the tool itself: a blank canvas that gets out of your way. The design system is built on warm neutrals rather than cold grays, creating a distinctly approachable minimalism that feels like quality paper rather than sterile glass. The page canvas is pure white (`#ffffff`) but the text isn't pure black -- it's a warm near-black (`rgba(0,0,0,0.95)`) that softens the reading experience imperceptibly. The warm gray scale (`#f6f5f4`, `#31302e`, `#615d59`, `#a39e98`) carries subtle yellow-brown undertones, giving the interface a tactile, almost analog warmth.
+
+The custom NotionInter font (a modified Inter) is the backbone of the system. At display sizes (64px), it uses aggressive negative letter-spacing (-2.125px), creating headlines that feel compressed and precise. The weight range is broader than typical systems: 400 for body, 500 for UI elements, 600 for semi-bold labels, and 700 for display headings. OpenType features `"lnum"` (lining numerals) and `"locl"` (localized forms) are enabled on larger text, adding typographic sophistication that rewards close reading.
+
+What makes Notion's visual language distinctive is its border philosophy. Rather than heavy borders or shadows, Notion uses ultra-thin `1px solid rgba(0,0,0,0.1)` borders -- borders that exist as whispers, barely perceptible division lines that create structure without weight. The shadow system is equally restrained: multi-layer stacks with cumulative opacity never exceeding 0.05, creating depth that's felt rather than seen.
+
+**Key Characteristics:**
+- NotionInter (modified Inter) with negative letter-spacing at display sizes (-2.125px at 64px)
+- Warm neutral palette: grays carry yellow-brown undertones (`#f6f5f4` warm white, `#31302e` warm dark)
+- Near-black text via `rgba(0,0,0,0.95)` -- not pure black, creating micro-warmth
+- Ultra-thin borders: `1px solid rgba(0,0,0,0.1)` throughout -- whisper-weight division
+- Multi-layer shadow stacks with sub-0.05 opacity for barely-there depth
+- Notion Blue (`#0075de`) as the singular accent color for CTAs and interactive elements
+- Pill badges (9999px radius) with tinted blue backgrounds for status indicators
+- 8px base spacing unit with an organic, non-rigid scale
+
+## 2. Color Palette & Roles
+
+### Primary
+- **Notion Black** (`rgba(0,0,0,0.95)` / `#000000f2`): Primary text, headings, body copy. The 95% opacity softens pure black without sacrificing readability.
+- **Pure White** (`#ffffff`): Page background, card surfaces, button text on blue.
+- **Notion Blue** (`#0075de`): Primary CTA, link color, interactive accent -- the only saturated color in the core UI chrome.
+
+### Brand Secondary
+- **Deep Navy** (`#213183`): Secondary brand color, used sparingly for emphasis and dark feature sections.
+- **Active Blue** (`#005bab`): Button active/pressed state -- darker variant of Notion Blue.
+
+### Warm Neutral Scale
+- **Warm White** (`#f6f5f4`): Background surface tint, section alternation, subtle card fill. The yellow undertone is key.
+- **Warm Dark** (`#31302e`): Dark surface background, dark section text. Warmer than standard grays.
+- **Warm Gray 500** (`#615d59`): Secondary text, descriptions, muted labels.
+- **Warm Gray 300** (`#a39e98`): Placeholder text, disabled states, caption text.
+
+### Semantic Accent Colors
+- **Teal** (`#2a9d99`): Success states, positive indicators.
+- **Green** (`#1aae39`): Confirmation, completion badges.
+- **Orange** (`#dd5b00`): Warning states, attention indicators.
+- **Pink** (`#ff64c8`): Decorative accent, feature highlights.
+- **Purple** (`#391c57`): Premium features, deep accents.
+- **Brown** (`#523410`): Earthy accent, warm feature sections.
+
+### Interactive
+- **Link Blue** (`#0075de`): Primary link color with underline-on-hover.
+- **Link Light Blue** (`#62aef0`): Lighter link variant for dark backgrounds.
+- **Focus Blue** (`#097fe8`): Focus ring on interactive elements.
+- **Badge Blue Bg** (`#f2f9ff`): Pill badge background, tinted blue surface.
+- **Badge Blue Text** (`#097fe8`): Pill badge text, darker blue for readability.
+
+### Shadows & Depth
+- **Card Shadow** (`rgba(0,0,0,0.04) 0px 4px 18px, rgba(0,0,0,0.027) 0px 2.025px 7.84688px, rgba(0,0,0,0.02) 0px 0.8px 2.925px, rgba(0,0,0,0.01) 0px 0.175px 1.04062px`): Multi-layer card elevation.
+- **Deep Shadow** (`rgba(0,0,0,0.01) 0px 1px 3px, rgba(0,0,0,0.02) 0px 3px 7px, rgba(0,0,0,0.02) 0px 7px 15px, rgba(0,0,0,0.04) 0px 14px 28px, rgba(0,0,0,0.05) 0px 23px 52px`): Five-layer deep elevation for modals and featured content.
+- **Whisper Border** (`1px solid rgba(0,0,0,0.1)`): Standard division border -- cards, dividers, sections.
+
+## 3. Typography Rules
+
+### Font Family
+- **Primary**: `NotionInter`, with fallbacks: `Inter, -apple-system, system-ui, Segoe UI, Helvetica, Apple Color Emoji, Arial, Segoe UI Emoji, Segoe UI Symbol`
+- **OpenType Features**: `"lnum"` (lining numerals) and `"locl"` (localized forms) enabled on display and heading text.
+
+### Hierarchy
+
+| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
+|------|------|------|--------|-------------|----------------|-------|
+| Display Hero | NotionInter | 64px (4.00rem) | 700 | 1.00 (tight) | -2.125px | Maximum compression, billboard headlines |
+| Display Secondary | NotionInter | 54px (3.38rem) | 700 | 1.04 (tight) | -1.875px | Secondary hero, feature headlines |
+| Section Heading | NotionInter | 48px (3.00rem) | 700 | 1.00 (tight) | -1.5px | Feature section titles, with `"lnum"` |
+| Sub-heading Large | NotionInter | 40px (2.50rem) | 700 | 1.50 | normal | Card headings, feature sub-sections |
+| Sub-heading | NotionInter | 26px (1.63rem) | 700 | 1.23 (tight) | -0.625px | Section sub-titles, content headers |
+| Card Title | NotionInter | 22px (1.38rem) | 700 | 1.27 (tight) | -0.25px | Feature cards, list titles |
+| Body Large | NotionInter | 20px (1.25rem) | 600 | 1.40 | -0.125px | Introductions, feature descriptions |
+| Body | NotionInter | 16px (1.00rem) | 400 | 1.50 | normal | Standard reading text |
+| Body Medium | NotionInter | 16px (1.00rem) | 500 | 1.50 | normal | Navigation, emphasized UI text |
+| Body Semibold | NotionInter | 16px (1.00rem) | 600 | 1.50 | normal | Strong labels, active states |
+| Body Bold | NotionInter | 16px (1.00rem) | 700 | 1.50 | normal | Headlines at body size |
+| Nav / Button | NotionInter | 15px (0.94rem) | 600 | 1.33 | normal | Navigation links, button text |
+| Caption | NotionInter | 14px (0.88rem) | 500 | 1.43 | normal | Metadata, secondary labels |
+| Caption Light | NotionInter | 14px (0.88rem) | 400 | 1.43 | normal | Body captions, descriptions |
+| Badge | NotionInter | 12px (0.75rem) | 600 | 1.33 | 0.125px | Pill badges, tags, status labels |
+| Micro Label | NotionInter | 12px (0.75rem) | 400 | 1.33 | 0.125px | Small metadata, timestamps |
+
+### Principles
+- **Compression at scale**: NotionInter at display sizes uses -2.125px letter-spacing at 64px, progressively relaxing to -0.625px at 26px and normal at 16px. The compression creates density at headlines while maintaining readability at body sizes.
+- **Four-weight system**: 400 (body/reading), 500 (UI/interactive), 600 (emphasis/navigation), 700 (headings/display). The broader weight range compared to most systems allows nuanced hierarchy.
+- **Warm scaling**: Line height tightens as size increases -- 1.50 at body (16px), 1.23-1.27 at sub-headings, 1.00-1.04 at display. This creates denser, more impactful headlines.
+- **Badge micro-tracking**: The 12px badge text uses positive letter-spacing (0.125px) -- the only positive tracking in the system, creating wider, more legible small text.
+
+## 4. Component Stylings
+
+### Buttons
+
+**Primary Blue**
+- Background: `#0075de` (Notion Blue)
+- Text: `#ffffff`
+- Padding: 8px 16px
+- Radius: 4px (subtle)
+- Border: `1px solid transparent`
+- Hover: background darkens to `#005bab`
+- Active: scale(0.9) transform
+- Focus: `2px solid` focus outline, `var(--shadow-level-200)` shadow
+- Use: Primary CTA ("Get Notion free", "Try it")
+
+**Secondary / Tertiary**
+- Background: `rgba(0,0,0,0.05)` (translucent warm gray)
+- Text: `#000000` (near-black)
+- Padding: 8px 16px
+- Radius: 4px
+- Hover: text color shifts, scale(1.05)
+- Active: scale(0.9) transform
+- Use: Secondary actions, form submissions
+
+**Ghost / Link Button**
+- Background: transparent
+- Text: `rgba(0,0,0,0.95)`
+- Decoration: underline on hover
+- Use: Tertiary actions, inline links
+
+**Pill Badge Button**
+- Background: `#f2f9ff` (tinted blue)
+- Text: `#097fe8`
+- Padding: 4px 8px
+- Radius: 9999px (full pill)
+- Font: 12px weight 600
+- Use: Status badges, feature labels, "New" tags
+
+### Cards & Containers
+- Background: `#ffffff`
+- Border: `1px solid rgba(0,0,0,0.1)` (whisper border)
+- Radius: 12px (standard cards), 16px (featured/hero cards)
+- Shadow: `rgba(0,0,0,0.04) 0px 4px 18px, rgba(0,0,0,0.027) 0px 2.025px 7.84688px, rgba(0,0,0,0.02) 0px 0.8px 2.925px, rgba(0,0,0,0.01) 0px 0.175px 1.04062px`
+- Hover: subtle shadow intensification
+- Image cards: 12px top radius, image fills top half
+
+### Inputs & Forms
+- Background: `#ffffff`
+- Text: `rgba(0,0,0,0.9)`
+- Border: `1px solid #dddddd`
+- Padding: 6px
+- Radius: 4px
+- Focus: blue outline ring
+- Placeholder: warm gray `#a39e98`
+
+### Navigation
+- Clean horizontal nav on white, not sticky
+- Brand logo left-aligned (33x34px icon + wordmark)
+- Links: NotionInter 15px weight 500-600, near-black text
+- Hover: color shift to `var(--color-link-primary-text-hover)`
+- CTA: blue pill button ("Get Notion free") right-aligned
+- Mobile: hamburger menu collapse
+- Product dropdowns with multi-level categorized menus
+
+### Image Treatment
+- Product screenshots with `1px solid rgba(0,0,0,0.1)` border
+- Top-rounded images: `12px 12px 0px 0px` radius
+- Dashboard/workspace preview screenshots dominate feature sections
+- Warm gradient backgrounds behind hero illustrations (decorative character illustrations)
+
+### Distinctive Components
+
+**Feature Cards with Illustrations**
+- Large illustrative headers (The Great Wave, product UI screenshots)
+- 12px radius card with whisper border
+- Title at 22px weight 700, description at 16px weight 400
+- Warm white (`#f6f5f4`) background variant for alternating sections
+
+**Trust Bar / Logo Grid**
+- Company logos (trusted teams section) in their brand colors
+- Horizontal scroll or grid layout with team counts
+- Metric display: large number + description pattern
+
+**Metric Cards**
+- Large number display (e.g., "$4,200 ROI")
+- NotionInter 40px+ weight 700 for the metric
+- Description below in warm gray body text
+- Whisper-bordered card container
+
+## 5. Layout Principles
+
+### Spacing System
+- Base unit: 8px
+- Scale: 2px, 3px, 4px, 5px, 6px, 7px, 8px, 11px, 12px, 14px, 16px, 24px, 32px
+- Non-rigid organic scale with fractional values (5.6px, 6.4px) for micro-adjustments
+
+### Grid & Container
+- Max content width: approximately 1200px
+- Hero: centered single-column with generous top padding (80-120px)
+- Feature sections: 2-3 column grids for cards
+- Full-width warm white (`#f6f5f4`) section backgrounds for alternation
+- Code/dashboard screenshots as contained with whisper border
+
+### Whitespace Philosophy
+- **Generous vertical rhythm**: 64-120px between major sections. Notion lets content breathe with vast vertical padding.
+- **Warm alternation**: White sections alternate with warm white (`#f6f5f4`) sections, creating gentle visual rhythm without harsh color breaks.
+- **Content-first density**: Body text blocks are compact (line-height 1.50) but surrounded by ample margin, creating islands of readable content in a sea of white space.
+
+### Border Radius Scale
+- Micro (4px): Buttons, inputs, functional interactive elements
+- Subtle (5px): Links, list items, menu items
+- Standard (8px): Small cards, containers, inline elements
+- Comfortable (12px): Standard cards, feature containers, image tops
+- Large (16px): Hero cards, featured content, promotional blocks
+- Full Pill (9999px): Badges, pills, status indicators
+- Circle (100%): Tab indicators, avatars
+
+## 6. Depth & Elevation
+
+| Level | Treatment | Use |
+|-------|-----------|-----|
+| Flat (Level 0) | No shadow, no border | Page background, text blocks |
+| Whisper (Level 1) | `1px solid rgba(0,0,0,0.1)` | Standard borders, card outlines, dividers |
+| Soft Card (Level 2) | 4-layer shadow stack (max opacity 0.04) | Content cards, feature blocks |
+| Deep Card (Level 3) | 5-layer shadow stack (max opacity 0.05, 52px blur) | Modals, featured panels, hero elements |
+| Focus (Accessibility) | `2px solid var(--focus-color)` outline | Keyboard focus on all interactive elements |
+
+**Shadow Philosophy**: Notion's shadow system uses multiple layers with extremely low individual opacity (0.01 to 0.05) that accumulate into soft, natural-looking elevation. The 4-layer card shadow spans from 1.04px to 18px blur, creating a gradient of depth rather than a single hard shadow. The 5-layer deep shadow extends to 52px blur at 0.05 opacity, producing ambient occlusion that feels like natural light rather than computer-generated depth. This layered approach makes elements feel embedded in the page rather than floating above it.
+
+### Decorative Depth
+- Hero section: decorative character illustrations (playful, hand-drawn style)
+- Section alternation: white to warm white (`#f6f5f4`) background shifts
+- No hard section borders -- separation comes from background color changes and spacing
+
+## 7. Responsive Behavior
+
+### Breakpoints
+| Name | Width | Key Changes |
+|------|-------|-------------|
+| Mobile Small | <400px | Tight single column, minimal padding |
+| Mobile | 400-600px | Standard mobile, stacked layout |
+| Tablet Small | 600-768px | 2-column grids begin |
+| Tablet | 768-1080px | Full card grids, expanded padding |
+| Desktop Small | 1080-1200px | Standard desktop layout |
+| Desktop | 1200-1440px | Full layout, maximum content width |
+| Large Desktop | >1440px | Centered, generous margins |
+
+### Touch Targets
+- Buttons use comfortable padding (8px-16px vertical)
+- Navigation links at 15px with adequate spacing
+- Pill badges have 8px horizontal padding for tap targets
+- Mobile menu toggle uses standard hamburger button
+
+### Collapsing Strategy
+- Hero: 64px display -> scales to 40px -> 26px on mobile, maintains proportional letter-spacing
+- Navigation: horizontal links + blue CTA -> hamburger menu
+- Feature cards: 3-column -> 2-column -> single column stacked
+- Product screenshots: maintain aspect ratio with responsive images
+- Trust bar logos: grid -> horizontal scroll on mobile
+- Footer: multi-column -> stacked single column
+- Section spacing: 80px+ -> 48px on mobile
+
+### Image Behavior
+- Workspace screenshots maintain whisper border at all sizes
+- Hero illustrations scale proportionally
+- Product screenshots use responsive images with consistent border radius
+- Full-width warm white sections maintain edge-to-edge treatment
+
+## 8. Accessibility & States
+
+### Focus System
+- All interactive elements receive visible focus indicators
+- Focus outline: `2px solid` with focus color + shadow level 200
+- Tab navigation supported throughout all interactive components
+- High contrast text: near-black on white exceeds WCAG AAA (>14:1 ratio)
+
+### Interactive States
+- **Default**: Standard appearance with whisper borders
+- **Hover**: Color shift on text, scale(1.05) on buttons, underline on links
+- **Active/Pressed**: scale(0.9) transform, darker background variant
+- **Focus**: Blue outline ring with shadow reinforcement
+- **Disabled**: Warm gray (`#a39e98`) text, reduced opacity
+
+### Color Contrast
+- Primary text (rgba(0,0,0,0.95)) on white: ~18:1 ratio
+- Secondary text (#615d59) on white: ~5.5:1 ratio (WCAG AA)
+- Blue CTA (#0075de) on white: ~4.6:1 ratio (WCAG AA for large text)
+- Badge text (#097fe8) on badge bg (#f2f9ff): ~4.5:1 ratio (WCAG AA for large text)
+
+## 9. Agent Prompt Guide
+
+### Quick Color Reference
+- Primary CTA: Notion Blue (`#0075de`)
+- Background: Pure White (`#ffffff`)
+- Alt Background: Warm White (`#f6f5f4`)
+- Heading text: Near-Black (`rgba(0,0,0,0.95)`)
+- Body text: Near-Black (`rgba(0,0,0,0.95)`)
+- Secondary text: Warm Gray 500 (`#615d59`)
+- Muted text: Warm Gray 300 (`#a39e98`)
+- Border: `1px solid rgba(0,0,0,0.1)`
+- Link: Notion Blue (`#0075de`)
+- Focus ring: Focus Blue (`#097fe8`)
+
+### Example Component Prompts
+- "Create a hero section on white background. Headline at 64px NotionInter weight 700, line-height 1.00, letter-spacing -2.125px, color rgba(0,0,0,0.95). Subtitle at 20px weight 600, line-height 1.40, color #615d59. Blue CTA button (#0075de, 4px radius, 8px 16px padding, white text) and ghost button (transparent bg, near-black text, underline on hover)."
+- "Design a card: white background, 1px solid rgba(0,0,0,0.1) border, 12px radius. Use shadow stack: rgba(0,0,0,0.04) 0px 4px 18px, rgba(0,0,0,0.027) 0px 2.025px 7.85px, rgba(0,0,0,0.02) 0px 0.8px 2.93px, rgba(0,0,0,0.01) 0px 0.175px 1.04px. Title at 22px NotionInter weight 700, letter-spacing -0.25px. Body at 16px weight 400, color #615d59."
+- "Build a pill badge: #f2f9ff background, #097fe8 text, 9999px radius, 4px 8px padding, 12px NotionInter weight 600, letter-spacing 0.125px."
+- "Create navigation: white header. NotionInter 15px weight 600 for links, near-black text. Blue pill CTA 'Get Notion free' right-aligned (#0075de bg, white text, 4px radius)."
+- "Design an alternating section layout: white sections alternate with warm white (#f6f5f4) sections. Each section has 64-80px vertical padding, max-width 1200px centered. Section heading at 48px weight 700, line-height 1.00, letter-spacing -1.5px."
+
+### Iteration Guide
+1. Always use warm neutrals -- Notion's grays have yellow-brown undertones (#f6f5f4, #31302e, #615d59, #a39e98), never blue-gray
+2. Letter-spacing scales with font size: -2.125px at 64px, -1.875px at 54px, -0.625px at 26px, normal at 16px
+3. Four weights: 400 (read), 500 (interact), 600 (emphasize), 700 (announce)
+4. Borders are whispers: 1px solid rgba(0,0,0,0.1) -- never heavier
+5. Shadows use 4-5 layers with individual opacity never exceeding 0.05
+6. The warm white (#f6f5f4) section background is essential for visual rhythm
+7. Pill badges (9999px) for status/tags, 4px radius for buttons and inputs
+8. Notion Blue (#0075de) is the only saturated color in core UI -- use it sparingly for CTAs and links

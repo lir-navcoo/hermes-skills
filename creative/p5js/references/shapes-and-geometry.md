@@ -1,1 +1,300 @@
-IyBTaGFwZXMgYW5kIEdlb21ldHJ5CgojIyAyRCBQcmltaXRpdmVzCgpgYGBqYXZhc2NyaXB0CnBvaW50KHgsIHkpOwpsaW5lKHgxLCB5MSwgeDIsIHkyKTsKcmVjdCh4LCB5LCB3LCBoKTsgICAgICAgICAgICAvLyBkZWZhdWx0OiBjb3JuZXIgbW9kZQpyZWN0KHgsIHksIHcsIGgsIHIpOyAgICAgICAgIC8vIHJvdW5kZWQgY29ybmVycwpyZWN0KHgsIHksIHcsIGgsIHRsLCB0ciwgYnIsIGJsKTsgIC8vIHBlci1jb3JuZXIgcmFkaXVzCnNxdWFyZSh4LCB5LCBzaXplKTsKZWxsaXBzZSh4LCB5LCB3LCBoKTsKY2lyY2xlKHgsIHksIGQpOyAgICAgICAgICAgICAvLyBkaWFtZXRlciwgbm90IHJhZGl1cwp0cmlhbmdsZSh4MSwgeTEsIHgyLCB5MiwgeDMsIHkzKTsKcXVhZCh4MSwgeTEsIHgyLCB5MiwgeDMsIHkzLCB4NCwgeTQpOwphcmMoeCwgeSwgdywgaCwgc3RhcnQsIHN0b3AsIG1vZGUpOyAgLy8gbW9kZTogT1BFTiwgQ0hPUkQsIFBJRQpgYGAKCiMjIyBEcmF3aW5nIE1vZGVzCgpgYGBqYXZhc2NyaXB0CnJlY3RNb2RlKENFTlRFUik7ICAgLy8geCx5IGlzIGNlbnRlciAoZGVmYXVsdDogQ09STkVSKQpyZWN0TW9kZShDT1JORVJTKTsgIC8vIHgxLHkxIHRvIHgyLHkyCmVsbGlwc2VNb2RlKENPUk5FUik7IC8vIHgseSBpcyB0b3AtbGVmdCBjb3JuZXIKZWxsaXBzZU1vZGUoQ0VOVEVSKTsgLy8gZGVmYXVsdCDigJQgeCx5IGlzIGNlbnRlcgpgYGAKCiMjIFN0cm9rZSBhbmQgRmlsbAoKYGBgamF2YXNjcmlwdApmaWxsKHIsIGcsIGIsIGEpOyAgICAvLyBvciBmaWxsKGdyYXkpLCBmaWxsKCcjaGV4JyksIGZpbGwoaCwgcywgYikgaW4gSFNCIG1vZGUKbm9GaWxsKCk7CnN0cm9rZShyLCBnLCBiLCBhKTsKbm9TdHJva2UoKTsKc3Ryb2tlV2VpZ2h0KDIpOwpzdHJva2VDYXAoUk9VTkQpOyAgICAgLy8gUk9VTkQsIFNRVUFSRSwgUFJPSkVDVApzdHJva2VKb2luKFJPVU5EKTsgICAgLy8gUk9VTkQsIE1JVEVSLCBCRVZFTApgYGAKCiMjIEN1c3RvbSBTaGFwZXMgd2l0aCBWZXJ0aWNlcwoKIyMjIEJhc2ljIHZlcnRleCBzaGFwZQoKYGBgamF2YXNjcmlwdApiZWdpblNoYXBlKCk7CiAgdmVydGV4KDEwMCwgMTAwKTsKICB2ZXJ0ZXgoMjAwLCA1MCk7CiAgdmVydGV4KDMwMCwgMTAwKTsKICB2ZXJ0ZXgoMjUwLCAyMDApOwogIHZlcnRleCgxNTAsIDIwMCk7CmVuZFNoYXBlKENMT1NFKTsgIC8vIENMT1NFIGNvbm5lY3RzIGxhc3QgdmVydGV4IHRvIGZpcnN0CmBgYAoKIyMjIFNoYXBlIG1vZGVzCgpgYGBqYXZhc2NyaXB0CmJlZ2luU2hhcGUoKTsgICAgICAgICAgLy8gZGVmYXVsdDogcG9seWdvbiBjb25uZWN0aW5nIGFsbCB2ZXJ0aWNlcwpiZWdpblNoYXBlKFBPSU5UUyk7ICAgIC8vIGluZGl2aWR1YWwgcG9pbnRzCmJlZ2luU2hhcGUoTElORVMpOyAgICAgLy8gcGFpcnMgb2YgdmVydGljZXMgYXMgbGluZXMKYmVnaW5TaGFwZShUUklBTkdMRVMpOyAvLyB0cmlwbGV0cyBhcyB0cmlhbmdsZXMKYmVnaW5TaGFwZShUUklBTkdMRV9GQU4pOwpiZWdpblNoYXBlKFRSSUFOR0xFX1NUUklQKTsKYmVnaW5TaGFwZShRVUFEUyk7ICAgICAvLyBncm91cHMgb2YgNApiZWdpblNoYXBlKFFVQURfU1RSSVApOwpgYGAKCiMjIyBDb250b3VycyAoaG9sZXMgaW4gc2hhcGVzKQoKYGBgamF2YXNjcmlwdApiZWdpblNoYXBlKCk7CiAgLy8gb3V0ZXIgc2hhcGUKICB2ZXJ0ZXgoMTAwLCAxMDApOwogIHZlcnRleCgzMDAsIDEwMCk7CiAgdmVydGV4KDMwMCwgMzAwKTsKICB2ZXJ0ZXgoMTAwLCAzMDApOwogIC8vIGlubmVyIGhvbGUKICBiZWdpbkNvbnRvdXIoKTsKICAgIHZlcnRleCgxNTAsIDE1MCk7CiAgICB2ZXJ0ZXgoMTUwLCAyNTApOwogICAgdmVydGV4KDI1MCwgMjUwKTsKICAgIHZlcnRleCgyNTAsIDE1MCk7CiAgZW5kQ29udG91cigpOwplbmRTaGFwZShDTE9TRSk7CmBgYAoKIyMgQmV6aWVyIEN1cnZlcwoKIyMjIEN1YmljIEJlemllcgoKYGBgamF2YXNjcmlwdApiZXppZXIoeDEsIHkxLCBjeDEsIGN5MSwgY3gyLCBjeTIsIHgyLCB5Mik7Ci8vIHgxLHkxID0gc3RhcnQgcG9pbnQKLy8gY3gxLGN5MSA9IGZpcnN0IGNvbnRyb2wgcG9pbnQKLy8gY3gyLGN5MiA9IHNlY29uZCBjb250cm9sIHBvaW50Ci8vIHgyLHkyID0gZW5kIHBvaW50CmBgYAoKIyMjIEJlemllciBpbiBjdXN0b20gc2hhcGVzCgpgYGBqYXZhc2NyaXB0CmJlZ2luU2hhcGUoKTsKICB2ZXJ0ZXgoMTAwLCAyMDApOwogIGJlemllclZlcnRleCgxNTAsIDUwLCAyNTAsIDUwLCAzMDAsIDIwMCk7CiAgLy8gY29udHJvbDEsIGNvbnRyb2wyLCBlbmRwb2ludAplbmRTaGFwZSgpOwpgYGAKCiMjIyBRdWFkcmF0aWMgQmV6aWVyCgpgYGBqYXZhc2NyaXB0CmJlZ2luU2hhcGUoKTsKICB2ZXJ0ZXgoMTAwLCAyMDApOwogIHF1YWRyYXRpY1ZlcnRleCgyMDAsIDUwLCAzMDAsIDIwMCk7CiAgLy8gc2luZ2xlIGNvbnRyb2wgcG9pbnQgKyBlbmRwb2ludAplbmRTaGFwZSgpOwpgYGAKCiMjIyBJbnRlcnBvbGF0aW9uIGFsb25nIEJlemllcgoKYGBgamF2YXNjcmlwdApsZXQgeCA9IGJlemllclBvaW50KHgxLCBjeDEsIGN4MiwgeDIsIHQpOyAgLy8gdCA9IDAuLjEKbGV0IHkgPSBiZXppZXJQb2ludCh5MSwgY3kxLCBjeTIsIHkyLCB0KTsKbGV0IHR4ID0gYmV6aWVyVGFuZ2VudCh4MSwgY3gxLCBjeDIsIHgyLCB0KTsgLy8gdGFuZ2VudApgYGAKCiMjIENhdG11bGwtUm9tIFNwbGluZXMKCmBgYGphdmFzY3JpcHQKY3VydmUoY3B4MSwgY3B5MSwgeDEsIHkxLCB4MiwgeTIsIGNweDIsIGNweTIpOwovLyBjcHgxLGNweTEgPSBjb250cm9sIHBvaW50IGJlZm9yZSBzdGFydAovLyB4MSx5MSA9IHN0YXJ0IHBvaW50ICh2aXNpYmxlKQovLyB4Mix5MiA9IGVuZCBwb2ludCAodmlzaWJsZSkKLy8gY3B4MixjcHkyID0gY29udHJvbCBwb2ludCBhZnRlciBlbmQKCmN1cnZlVmVydGV4KHgsIHkpOyAgLy8gaW4gYmVnaW5TaGFwZSgpIOKAlCBzbW9vdGggY3VydmUgdGhyb3VnaCBhbGwgcG9pbnRzCmN1cnZlVGlnaHRuZXNzKDApOyAgLy8gMCA9IENhdG11bGwtUm9tLCAxID0gc3RyYWlnaHQgbGluZXMsIC0xID0gbG9vc2UKYGBgCgojIyMgU21vb3RoIGN1cnZlIHRocm91Z2ggcG9pbnRzCgpgYGBqYXZhc2NyaXB0CmxldCBwb2ludHMgPSBbLyogYXJyYXkgb2Yge3gsIHl9ICovXTsKYmVnaW5TaGFwZSgpOwogIGN1cnZlVmVydGV4KHBvaW50c1swXS54LCBwb2ludHNbMF0ueSk7IC8vIHJlcGVhdCBmaXJzdCBmb3IgdGFuZ2VudAogIGZvciAobGV0IHAgb2YgcG9pbnRzKSB7CiAgICBjdXJ2ZVZlcnRleChwLngsIHAueSk7CiAgfQogIGN1cnZlVmVydGV4KHBvaW50c1twb2ludHMubGVuZ3RoLTFdLngsIHBvaW50c1twb2ludHMubGVuZ3RoLTFdLnkpOyAvLyByZXBlYXQgbGFzdAplbmRTaGFwZSgpOwpgYGAKCiMjIHA1LlZlY3RvcgoKRXNzZW50aWFsIGZvciBwaHlzaWNzLCBwYXJ0aWNsZSBzeXN0ZW1zLCBhbmQgZ2VvbWV0cmljIGNvbXB1dGF0aW9uLgoKYGBgamF2YXNjcmlwdApsZXQgdiA9IGNyZWF0ZVZlY3Rvcih4LCB5KTsKCi8vIEFyaXRobWV0aWMgKG1vZGlmaWVzIGluIHBsYWNlKQp2LmFkZChvdGhlcik7ICAgICAgICAvLyB2ZWN0b3IgYWRkaXRpb24Kdi5zdWIob3RoZXIpOyAgICAgICAgLy8gc3VidHJhY3Rpb24Kdi5tdWx0KHNjYWxhcik7ICAgICAgLy8gc2NhbGUKdi5kaXYoc2NhbGFyKTsgICAgICAgLy8gaW52ZXJzZSBzY2FsZQp2Lm5vcm1hbGl6ZSgpOyAgICAgICAvLyB1bml0IHZlY3RvciAobGVuZ3RoIDEpCnYubGltaXQobWF4KTsgICAgICAgIC8vIGNhcCBtYWduaXR1ZGUKdi5zZXRNYWcobGVuKTsgICAgICAgLy8gc2V0IGV4YWN0IG1hZ25pdHVkZQoKLy8gUXVlcmllcyAobm9uLWRlc3RydWN0aXZlKQp2Lm1hZygpOyAgICAgICAgICAgICAvLyBtYWduaXR1ZGUgKGxlbmd0aCkKdi5tYWdTcSgpOyAgICAgICAgICAgLy8gc3F1YXJlZCBtYWduaXR1ZGUgKGZhc3Rlciwgbm8gc3FydCkKdi5oZWFkaW5nKCk7ICAgICAgICAgLy8gYW5nbGUgaW4gcmFkaWFucwp2LmRpc3Qob3RoZXIpOyAgICAgICAvLyBkaXN0YW5jZSB0byBvdGhlciB2ZWN0b3IKdi5kb3Qob3RoZXIpOyAgICAgICAgLy8gZG90IHByb2R1Y3QKdi5jcm9zcyhvdGhlcik7ICAgICAgLy8gY3Jvc3MgcHJvZHVjdCAoM0QpCnYuYW5nbGVCZXR3ZWVuKG90aGVyKTsgLy8gYW5nbGUgYmV0d2VlbiB2ZWN0b3JzCgovLyBTdGF0aWMgbWV0aG9kcyAocmV0dXJuIG5ldyB2ZWN0b3IpCnA1LlZlY3Rvci5hZGQoYSwgYik7ICAgICAgLy8gYSArIGIg4oaSIG5ldyB2ZWN0b3IKcDUuVmVjdG9yLnN1YihhLCBiKTsgICAgICAvLyBhIC0gYiDihpIgbmV3IHZlY3RvcgpwNS5WZWN0b3IuZnJvbUFuZ2xlKGEpOyAgIC8vIHVuaXQgdmVjdG9yIGF0IGFuZ2xlCnA1LlZlY3Rvci5yYW5kb20yRCgpOyAgICAgLy8gcmFuZG9tIHVuaXQgdmVjdG9yCnA1LlZlY3Rvci5sZXJwKGEsIGIsIHQpOyAgLy8gaW50ZXJwb2xhdGUKCi8vIENvcHkKbGV0IGNvcHkgPSB2LmNvcHkoKTsKYGBgCgojIyBTaWduZWQgRGlzdGFuY2UgRmllbGRzICgyRCkKClNERnMgcmV0dXJuIHRoZSBkaXN0YW5jZSBmcm9tIGEgcG9pbnQgdG8gdGhlIG5lYXJlc3QgZWRnZSBvZiBhIHNoYXBlLiBOZWdhdGl2ZSBpbnNpZGUsIHBvc2l0aXZlIG91dHNpZGUuIFVzZWZ1bCBmb3Igc21vb3RoIHNoYXBlcywgZ2xvdyBlZmZlY3RzLCBib29sZWFuIG9wZXJhdGlvbnMuCgpgYGBqYXZhc2NyaXB0Ci8vIENpcmNsZSBTREYKZnVuY3Rpb24gc2RDaXJjbGUocHgsIHB5LCBjeCwgY3ksIHIpIHsKICByZXR1cm4gZGlzdChweCwgcHksIGN4LCBjeSkgLSByOwp9CgovLyBCb3ggU0RGCmZ1bmN0aW9uIHNkQm94KHB4LCBweSwgY3gsIGN5LCBodywgaGgpIHsKICBsZXQgZHggPSBhYnMocHggLSBjeCkgLSBodzsKICBsZXQgZHkgPSBhYnMocHkgLSBjeSkgLSBoaDsKICByZXR1cm4gc3FydChtYXgoZHgsIDApICoqIDIgKyBtYXgoZHksIDApICoqIDIpICsgbWluKG1heChkeCwgZHkpLCAwKTsKfQoKLy8gTGluZSBzZWdtZW50IFNERgpmdW5jdGlvbiBzZFNlZ21lbnQocHgsIHB5LCBheCwgYXksIGJ4LCBieSkgewogIGxldCBwYSA9IGNyZWF0ZVZlY3RvcihweCAtIGF4LCBweSAtIGF5KTsKICBsZXQgYmEgPSBjcmVhdGVWZWN0b3IoYnggLSBheCwgYnkgLSBheSk7CiAgbGV0IHQgPSBjb25zdHJhaW4ocGEuZG90KGJhKSAvIGJhLmRvdChiYSksIDAsIDEpOwogIGxldCBjbG9zZXN0ID0gcDUuVmVjdG9yLmFkZChjcmVhdGVWZWN0b3IoYXgsIGF5KSwgcDUuVmVjdG9yLm11bHQoYmEsIHQpKTsKICByZXR1cm4gZGlzdChweCwgcHksIGNsb3Nlc3QueCwgY2xvc2VzdC55KTsKfQoKLy8gU21vb3RoIGJvb2xlYW4gdW5pb24KZnVuY3Rpb24gb3BTbW9vdGhVbmlvbihkMSwgZDIsIGspIHsKICBsZXQgaCA9IGNvbnN0cmFpbigwLjUgKyAwLjUgKiAoZDIgLSBkMSkgLyBrLCAwLCAxKTsKICByZXR1cm4gbGVycChkMiwgZDEsIGgpIC0gayAqIGggKiAoMSAtIGgpOwp9CgovLyBSZW5kZXJpbmcgU0RGIGFzIGdsb3cKbGV0IGQgPSBzZENpcmNsZSh4LCB5LCB3aWR0aC8yLCBoZWlnaHQvMiwgMjAwKTsKbGV0IGdsb3cgPSBleHAoLWFicyhkKSAqIDAuMDIpOyAgLy8gZXhwb25lbnRpYWwgZmFsbG9mZgpmaWxsKGdsb3cgKiAyNTUpOwpgYGAKCiMjIFVzZWZ1bCBHZW9tZXRyeSBQYXR0ZXJucwoKIyMjIFJlZ3VsYXIgUG9seWdvbgoKYGBgamF2YXNjcmlwdApmdW5jdGlvbiByZWd1bGFyUG9seWdvbihjeCwgY3ksIHIsIHNpZGVzKSB7CiAgYmVnaW5TaGFwZSgpOwogIGZvciAobGV0IGkgPSAwOyBpIDwgc2lkZXM7IGkrKykgewogICAgbGV0IGEgPSBUV09fUEkgKiBpIC8gc2lkZXMgLSBIQUxGX1BJOwogICAgdmVydGV4KGN4ICsgY29zKGEpICogciwgY3kgKyBzaW4oYSkgKiByKTsKICB9CiAgZW5kU2hhcGUoQ0xPU0UpOwp9CmBgYAoKIyMjIFN0YXIgU2hhcGUKCmBgYGphdmFzY3JpcHQKZnVuY3Rpb24gc3RhcihjeCwgY3ksIHIxLCByMiwgbnBvaW50cykgewogIGJlZ2luU2hhcGUoKTsKICBsZXQgYW5nbGUgPSBUV09fUEkgLyBucG9pbnRzOwogIGxldCBoYWxmQW5nbGUgPSBhbmdsZSAvIDI7CiAgZm9yIChsZXQgYSA9IC1IQUxGX1BJOyBhIDwgVFdPX1BJIC0gSEFMRl9QSTsgYSArPSBhbmdsZSkgewogICAgdmVydGV4KGN4ICsgY29zKGEpICogcjIsIGN5ICsgc2luKGEpICogcjIpOwogICAgdmVydGV4KGN4ICsgY29zKGEgKyBoYWxmQW5nbGUpICogcjEsIGN5ICsgc2luKGEgKyBoYWxmQW5nbGUpICogcjEpOwogIH0KICBlbmRTaGFwZShDTE9TRSk7Cn0KYGBgCgojIyMgUm91bmRlZCBMaW5lIChDYXBzdWxlKQoKYGBgamF2YXNjcmlwdApmdW5jdGlvbiBjYXBzdWxlKHgxLCB5MSwgeDIsIHkyLCB3ZWlnaHQpIHsKICBzdHJva2VXZWlnaHQod2VpZ2h0KTsKICBzdHJva2VDYXAoUk9VTkQpOwogIGxpbmUoeDEsIHkxLCB4MiwgeTIpOwp9CmBgYAoKIyMjIFNvZnQgQm9keSAvIEJsb2IKCmBgYGphdmFzY3JpcHQKZnVuY3Rpb24gYmxvYihjeCwgY3ksIGJhc2VSLCBub2lzZVNjYWxlLCBub2lzZU9mZnNldCwgZGV0YWlsID0gNjQpIHsKICBiZWdpblNoYXBlKCk7CiAgZm9yIChsZXQgaSA9IDA7IGkgPCBkZXRhaWw7IGkrKykgewogICAgbGV0IGEgPSBUV09fUEkgKiBpIC8gZGV0YWlsOwogICAgbGV0IHIgPSBiYXNlUiArIG5vaXNlKGNvcyhhKSAqIG5vaXNlU2NhbGUgKyBub2lzZU9mZnNldCwKICAgICAgICAgICAgICAgICAgICAgICAgICBzaW4oYSkgKiBub2lzZVNjYWxlICsgbm9pc2VPZmZzZXQpICogYmFzZVIgKiAwLjQ7CiAgICB2ZXJ0ZXgoY3ggKyBjb3MoYSkgKiByLCBjeSArIHNpbihhKSAqIHIpOwogIH0KICBlbmRTaGFwZShDTE9TRSk7Cn0KYGBgCgojIyBDbGlwcGluZyBhbmQgTWFza2luZwoKYGBgamF2YXNjcmlwdAovLyBDbGlwIHNoYXBlIOKAlCBldmVyeXRoaW5nIGRyYXduIGFmdGVyIGlzIG1hc2tlZCBieSB0aGUgY2xpcCBzaGFwZQpiZWdpbkNsaXAoKTsKICBjaXJjbGUod2lkdGgvMiwgaGVpZ2h0LzIsIDQwMCk7CmVuZENsaXAoKTsKLy8gT25seSBjb250ZW50IGluc2lkZSB0aGUgY2lyY2xlIGlzIHZpc2libGUKaW1hZ2UobXlJbWFnZSwgMCwgMCk7CgovLyBPciBmdW5jdGlvbmFsIGZvcm0KY2xpcCgoKSA9PiB7CiAgY2lyY2xlKHdpZHRoLzIsIGhlaWdodC8yLCA0MDApOwp9KTsKCi8vIEVyYXNlIG1vZGUg4oCUIGN1dCBob2xlcwplcmFzZSgpOwogIGNpcmNsZShtb3VzZVgsIG1vdXNlWSwgMTAwKTsgIC8vIHRoaXMgYXJlYSBiZWNvbWVzIHRyYW5zcGFyZW50Cm5vRXJhc2UoKTsKYGBgCg==
+# Shapes and Geometry
+
+## 2D Primitives
+
+```javascript
+point(x, y);
+line(x1, y1, x2, y2);
+rect(x, y, w, h);            // default: corner mode
+rect(x, y, w, h, r);         // rounded corners
+rect(x, y, w, h, tl, tr, br, bl);  // per-corner radius
+square(x, y, size);
+ellipse(x, y, w, h);
+circle(x, y, d);             // diameter, not radius
+triangle(x1, y1, x2, y2, x3, y3);
+quad(x1, y1, x2, y2, x3, y3, x4, y4);
+arc(x, y, w, h, start, stop, mode);  // mode: OPEN, CHORD, PIE
+```
+
+### Drawing Modes
+
+```javascript
+rectMode(CENTER);   // x,y is center (default: CORNER)
+rectMode(CORNERS);  // x1,y1 to x2,y2
+ellipseMode(CORNER); // x,y is top-left corner
+ellipseMode(CENTER); // default — x,y is center
+```
+
+## Stroke and Fill
+
+```javascript
+fill(r, g, b, a);    // or fill(gray), fill('#hex'), fill(h, s, b) in HSB mode
+noFill();
+stroke(r, g, b, a);
+noStroke();
+strokeWeight(2);
+strokeCap(ROUND);     // ROUND, SQUARE, PROJECT
+strokeJoin(ROUND);    // ROUND, MITER, BEVEL
+```
+
+## Custom Shapes with Vertices
+
+### Basic vertex shape
+
+```javascript
+beginShape();
+  vertex(100, 100);
+  vertex(200, 50);
+  vertex(300, 100);
+  vertex(250, 200);
+  vertex(150, 200);
+endShape(CLOSE);  // CLOSE connects last vertex to first
+```
+
+### Shape modes
+
+```javascript
+beginShape();          // default: polygon connecting all vertices
+beginShape(POINTS);    // individual points
+beginShape(LINES);     // pairs of vertices as lines
+beginShape(TRIANGLES); // triplets as triangles
+beginShape(TRIANGLE_FAN);
+beginShape(TRIANGLE_STRIP);
+beginShape(QUADS);     // groups of 4
+beginShape(QUAD_STRIP);
+```
+
+### Contours (holes in shapes)
+
+```javascript
+beginShape();
+  // outer shape
+  vertex(100, 100);
+  vertex(300, 100);
+  vertex(300, 300);
+  vertex(100, 300);
+  // inner hole
+  beginContour();
+    vertex(150, 150);
+    vertex(150, 250);
+    vertex(250, 250);
+    vertex(250, 150);
+  endContour();
+endShape(CLOSE);
+```
+
+## Bezier Curves
+
+### Cubic Bezier
+
+```javascript
+bezier(x1, y1, cx1, cy1, cx2, cy2, x2, y2);
+// x1,y1 = start point
+// cx1,cy1 = first control point
+// cx2,cy2 = second control point
+// x2,y2 = end point
+```
+
+### Bezier in custom shapes
+
+```javascript
+beginShape();
+  vertex(100, 200);
+  bezierVertex(150, 50, 250, 50, 300, 200);
+  // control1, control2, endpoint
+endShape();
+```
+
+### Quadratic Bezier
+
+```javascript
+beginShape();
+  vertex(100, 200);
+  quadraticVertex(200, 50, 300, 200);
+  // single control point + endpoint
+endShape();
+```
+
+### Interpolation along Bezier
+
+```javascript
+let x = bezierPoint(x1, cx1, cx2, x2, t);  // t = 0..1
+let y = bezierPoint(y1, cy1, cy2, y2, t);
+let tx = bezierTangent(x1, cx1, cx2, x2, t); // tangent
+```
+
+## Catmull-Rom Splines
+
+```javascript
+curve(cpx1, cpy1, x1, y1, x2, y2, cpx2, cpy2);
+// cpx1,cpy1 = control point before start
+// x1,y1 = start point (visible)
+// x2,y2 = end point (visible)
+// cpx2,cpy2 = control point after end
+
+curveVertex(x, y);  // in beginShape() — smooth curve through all points
+curveTightness(0);  // 0 = Catmull-Rom, 1 = straight lines, -1 = loose
+```
+
+### Smooth curve through points
+
+```javascript
+let points = [/* array of {x, y} */];
+beginShape();
+  curveVertex(points[0].x, points[0].y); // repeat first for tangent
+  for (let p of points) {
+    curveVertex(p.x, p.y);
+  }
+  curveVertex(points[points.length-1].x, points[points.length-1].y); // repeat last
+endShape();
+```
+
+## p5.Vector
+
+Essential for physics, particle systems, and geometric computation.
+
+```javascript
+let v = createVector(x, y);
+
+// Arithmetic (modifies in place)
+v.add(other);        // vector addition
+v.sub(other);        // subtraction
+v.mult(scalar);      // scale
+v.div(scalar);       // inverse scale
+v.normalize();       // unit vector (length 1)
+v.limit(max);        // cap magnitude
+v.setMag(len);       // set exact magnitude
+
+// Queries (non-destructive)
+v.mag();             // magnitude (length)
+v.magSq();           // squared magnitude (faster, no sqrt)
+v.heading();         // angle in radians
+v.dist(other);       // distance to other vector
+v.dot(other);        // dot product
+v.cross(other);      // cross product (3D)
+v.angleBetween(other); // angle between vectors
+
+// Static methods (return new vector)
+p5.Vector.add(a, b);      // a + b → new vector
+p5.Vector.sub(a, b);      // a - b → new vector
+p5.Vector.fromAngle(a);   // unit vector at angle
+p5.Vector.random2D();     // random unit vector
+p5.Vector.lerp(a, b, t);  // interpolate
+
+// Copy
+let copy = v.copy();
+```
+
+## Signed Distance Fields (2D)
+
+SDFs return the distance from a point to the nearest edge of a shape. Negative inside, positive outside. Useful for smooth shapes, glow effects, boolean operations.
+
+```javascript
+// Circle SDF
+function sdCircle(px, py, cx, cy, r) {
+  return dist(px, py, cx, cy) - r;
+}
+
+// Box SDF
+function sdBox(px, py, cx, cy, hw, hh) {
+  let dx = abs(px - cx) - hw;
+  let dy = abs(py - cy) - hh;
+  return sqrt(max(dx, 0) ** 2 + max(dy, 0) ** 2) + min(max(dx, dy), 0);
+}
+
+// Line segment SDF
+function sdSegment(px, py, ax, ay, bx, by) {
+  let pa = createVector(px - ax, py - ay);
+  let ba = createVector(bx - ax, by - ay);
+  let t = constrain(pa.dot(ba) / ba.dot(ba), 0, 1);
+  let closest = p5.Vector.add(createVector(ax, ay), p5.Vector.mult(ba, t));
+  return dist(px, py, closest.x, closest.y);
+}
+
+// Smooth boolean union
+function opSmoothUnion(d1, d2, k) {
+  let h = constrain(0.5 + 0.5 * (d2 - d1) / k, 0, 1);
+  return lerp(d2, d1, h) - k * h * (1 - h);
+}
+
+// Rendering SDF as glow
+let d = sdCircle(x, y, width/2, height/2, 200);
+let glow = exp(-abs(d) * 0.02);  // exponential falloff
+fill(glow * 255);
+```
+
+## Useful Geometry Patterns
+
+### Regular Polygon
+
+```javascript
+function regularPolygon(cx, cy, r, sides) {
+  beginShape();
+  for (let i = 0; i < sides; i++) {
+    let a = TWO_PI * i / sides - HALF_PI;
+    vertex(cx + cos(a) * r, cy + sin(a) * r);
+  }
+  endShape(CLOSE);
+}
+```
+
+### Star Shape
+
+```javascript
+function star(cx, cy, r1, r2, npoints) {
+  beginShape();
+  let angle = TWO_PI / npoints;
+  let halfAngle = angle / 2;
+  for (let a = -HALF_PI; a < TWO_PI - HALF_PI; a += angle) {
+    vertex(cx + cos(a) * r2, cy + sin(a) * r2);
+    vertex(cx + cos(a + halfAngle) * r1, cy + sin(a + halfAngle) * r1);
+  }
+  endShape(CLOSE);
+}
+```
+
+### Rounded Line (Capsule)
+
+```javascript
+function capsule(x1, y1, x2, y2, weight) {
+  strokeWeight(weight);
+  strokeCap(ROUND);
+  line(x1, y1, x2, y2);
+}
+```
+
+### Soft Body / Blob
+
+```javascript
+function blob(cx, cy, baseR, noiseScale, noiseOffset, detail = 64) {
+  beginShape();
+  for (let i = 0; i < detail; i++) {
+    let a = TWO_PI * i / detail;
+    let r = baseR + noise(cos(a) * noiseScale + noiseOffset,
+                          sin(a) * noiseScale + noiseOffset) * baseR * 0.4;
+    vertex(cx + cos(a) * r, cy + sin(a) * r);
+  }
+  endShape(CLOSE);
+}
+```
+
+## Clipping and Masking
+
+```javascript
+// Clip shape — everything drawn after is masked by the clip shape
+beginClip();
+  circle(width/2, height/2, 400);
+endClip();
+// Only content inside the circle is visible
+image(myImage, 0, 0);
+
+// Or functional form
+clip(() => {
+  circle(width/2, height/2, 400);
+});
+
+// Erase mode — cut holes
+erase();
+  circle(mouseX, mouseY, 100);  // this area becomes transparent
+noErase();
+```

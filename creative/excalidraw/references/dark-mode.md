@@ -1,1 +1,68 @@
-IyBFeGNhbGlkcmF3IERhcmsgTW9kZSBEaWFncmFtcwoKVG8gY3JlYXRlIGEgZGFyay10aGVtZWQgZGlhZ3JhbSwgdXNlIGEgbWFzc2l2ZSBkYXJrIGJhY2tncm91bmQgcmVjdGFuZ2xlIGFzIHRoZSAqKmZpcnN0IGVsZW1lbnQqKiBpbiB0aGUgYXJyYXkuIE1ha2UgaXQgbGFyZ2UgZW5vdWdoIHRvIGNvdmVyIGFueSB2aWV3cG9ydDoKCmBgYGpzb24KewogICJ0eXBlIjogInJlY3RhbmdsZSIsICJpZCI6ICJkYXJrYmciLAogICJ4IjogLTQwMDAsICJ5IjogLTMwMDAsICJ3aWR0aCI6IDEwMDAwLCAiaGVpZ2h0IjogNzUwMCwKICAiYmFja2dyb3VuZENvbG9yIjogIiMxZTFlMmUiLCAiZmlsbFN0eWxlIjogInNvbGlkIiwKICAic3Ryb2tlQ29sb3IiOiAidHJhbnNwYXJlbnQiLCAic3Ryb2tlV2lkdGgiOiAwCn0KYGBgCgpUaGVuIHVzZSB0aGUgZm9sbG93aW5nIGNvbG9yIHBhbGV0dGVzIGZvciBlbGVtZW50cyBvbiB0aGUgZGFyayBiYWNrZ3JvdW5kLgoKIyMgVGV4dCBDb2xvcnMgKG9uIGRhcmspCgp8IENvbG9yIHwgSGV4IHwgVXNlIHwKfC0tLS0tLS18LS0tLS18LS0tLS18CnwgV2hpdGUgfCBgI2U1ZTVlNWAgfCBQcmltYXJ5IHRleHQsIHRpdGxlcyB8CnwgTXV0ZWQgfCBgI2EwYTBhMGAgfCBTZWNvbmRhcnkgdGV4dCwgYW5ub3RhdGlvbnMgfAp8IE5FVkVSIHwgYCM1NTVgIG9yIGRhcmtlciB8IEludmlzaWJsZSBvbiBkYXJrIGJnISB8CgojIyBTaGFwZSBGaWxscyAob24gZGFyaykKCnwgQ29sb3IgfCBIZXggfCBHb29kIEZvciB8CnwtLS0tLS0tfC0tLS0tfC0tLS0tLS0tLS18CnwgRGFyayBCbHVlIHwgYCMxZTNhNWZgIHwgUHJpbWFyeSBub2RlcyB8CnwgRGFyayBHcmVlbiB8IGAjMWE0ZDJlYCB8IFN1Y2Nlc3MsIG91dHB1dCB8CnwgRGFyayBQdXJwbGUgfCBgIzJkMWI2OWAgfCBQcm9jZXNzaW5nLCBzcGVjaWFsIHwKfCBEYXJrIE9yYW5nZSB8IGAjNWMzZDFhYCB8IFdhcm5pbmcsIHBlbmRpbmcgfAp8IERhcmsgUmVkIHwgYCM1YzFhMWFgIHwgRXJyb3IsIGNyaXRpY2FsIHwKfCBEYXJrIFRlYWwgfCBgIzFhNGQ0ZGAgfCBTdG9yYWdlLCBkYXRhIHwKCiMjIFN0cm9rZSBhbmQgQXJyb3cgQ29sb3JzIChvbiBkYXJrKQoKVXNlIHRoZSBzdGFuZGFyZCBQcmltYXJ5IENvbG9ycyBmcm9tIHRoZSBtYWluIGNvbG9yIHBhbGV0dGUgLS0gdGhleSdyZSBicmlnaHQgZW5vdWdoIG9uIGRhcmsgYmFja2dyb3VuZHM6Ci0gQmx1ZSBgIzRhOWVlZGAsIEFtYmVyIGAjZjU5ZTBiYCwgR3JlZW4gYCMyMmM1NWVgLCBSZWQgYCNlZjQ0NDRgLCBQdXJwbGUgYCM4YjVjZjZgCgpGb3Igc3VidGxlIHNoYXBlIGJvcmRlcnMsIHVzZSBgIzU1NTU1NWAuCgojIyBFeGFtcGxlOiBEYXJrIG1vZGUgbGFiZWxlZCByZWN0YW5nbGUKClVzZSBjb250YWluZXIgYmluZGluZyAoTk9UIHRoZSBgImxhYmVsImAgcHJvcGVydHksIHdoaWNoIGRvZXNuJ3Qgd29yaykuIE9uIGRhcmsgYmFja2dyb3VuZHMsIHNldCB0ZXh0IGBzdHJva2VDb2xvcmAgdG8gYCIjZTVlNWU1ImAgc28gaXQncyB2aXNpYmxlOgoKYGBganNvbgpbCiAgewogICAgInR5cGUiOiAicmVjdGFuZ2xlIiwgImlkIjogInIxIiwKICAgICJ4IjogMTAwLCAieSI6IDEwMCwgIndpZHRoIjogMjAwLCAiaGVpZ2h0IjogODAsCiAgICAiYmFja2dyb3VuZENvbG9yIjogIiMxZTNhNWYiLCAiZmlsbFN0eWxlIjogInNvbGlkIiwKICAgICJzdHJva2VDb2xvciI6ICIjNGE5ZWVkIiwgInN0cm9rZVdpZHRoIjogMiwKICAgICJyb3VuZG5lc3MiOiB7ICJ0eXBlIjogMyB9LAogICAgImJvdW5kRWxlbWVudHMiOiBbeyAiaWQiOiAidF9yMSIsICJ0eXBlIjogInRleHQiIH1dCiAgfSwKICB7CiAgICAidHlwZSI6ICJ0ZXh0IiwgImlkIjogInRfcjEiLAogICAgIngiOiAxMDUsICJ5IjogMTIwLCAid2lkdGgiOiAxOTAsICJoZWlnaHQiOiAyNSwKICAgICJ0ZXh0IjogIkRhcmsgTm9kZSIsICJmb250U2l6ZSI6IDIwLCAiZm9udEZhbWlseSI6IDEsCiAgICAic3Ryb2tlQ29sb3IiOiAiI2U1ZTVlNSIsCiAgICAidGV4dEFsaWduIjogImNlbnRlciIsICJ2ZXJ0aWNhbEFsaWduIjogIm1pZGRsZSIsCiAgICAiY29udGFpbmVySWQiOiAicjEiLCAib3JpZ2luYWxUZXh0IjogIkRhcmsgTm9kZSIsICJhdXRvUmVzaXplIjogdHJ1ZQogIH0KXQpgYGAKCk5vdGU6IEZvciBzdGFuZGFsb25lIHRleHQgZWxlbWVudHMgb24gZGFyayBiYWNrZ3JvdW5kcywgYWx3YXlzIHNldCBgInN0cm9rZUNvbG9yIjogIiNlNWU1ZTUiYCBleHBsaWNpdGx5LiBUaGUgZGVmYXVsdCBgIzFlMWUxZWAgaXMgaW52aXNpYmxlIG9uIGRhcmsuCgo=
+# Excalidraw Dark Mode Diagrams
+
+To create a dark-themed diagram, use a massive dark background rectangle as the **first element** in the array. Make it large enough to cover any viewport:
+
+```json
+{
+  "type": "rectangle", "id": "darkbg",
+  "x": -4000, "y": -3000, "width": 10000, "height": 7500,
+  "backgroundColor": "#1e1e2e", "fillStyle": "solid",
+  "strokeColor": "transparent", "strokeWidth": 0
+}
+```
+
+Then use the following color palettes for elements on the dark background.
+
+## Text Colors (on dark)
+
+| Color | Hex | Use |
+|-------|-----|-----|
+| White | `#e5e5e5` | Primary text, titles |
+| Muted | `#a0a0a0` | Secondary text, annotations |
+| NEVER | `#555` or darker | Invisible on dark bg! |
+
+## Shape Fills (on dark)
+
+| Color | Hex | Good For |
+|-------|-----|----------|
+| Dark Blue | `#1e3a5f` | Primary nodes |
+| Dark Green | `#1a4d2e` | Success, output |
+| Dark Purple | `#2d1b69` | Processing, special |
+| Dark Orange | `#5c3d1a` | Warning, pending |
+| Dark Red | `#5c1a1a` | Error, critical |
+| Dark Teal | `#1a4d4d` | Storage, data |
+
+## Stroke and Arrow Colors (on dark)
+
+Use the standard Primary Colors from the main color palette -- they're bright enough on dark backgrounds:
+- Blue `#4a9eed`, Amber `#f59e0b`, Green `#22c55e`, Red `#ef4444`, Purple `#8b5cf6`
+
+For subtle shape borders, use `#555555`.
+
+## Example: Dark mode labeled rectangle
+
+Use container binding (NOT the `"label"` property, which doesn't work). On dark backgrounds, set text `strokeColor` to `"#e5e5e5"` so it's visible:
+
+```json
+[
+  {
+    "type": "rectangle", "id": "r1",
+    "x": 100, "y": 100, "width": 200, "height": 80,
+    "backgroundColor": "#1e3a5f", "fillStyle": "solid",
+    "strokeColor": "#4a9eed", "strokeWidth": 2,
+    "roundness": { "type": 3 },
+    "boundElements": [{ "id": "t_r1", "type": "text" }]
+  },
+  {
+    "type": "text", "id": "t_r1",
+    "x": 105, "y": 120, "width": 190, "height": 25,
+    "text": "Dark Node", "fontSize": 20, "fontFamily": 1,
+    "strokeColor": "#e5e5e5",
+    "textAlign": "center", "verticalAlign": "middle",
+    "containerId": "r1", "originalText": "Dark Node", "autoResize": true
+  }
+]
+```
+
+Note: For standalone text elements on dark backgrounds, always set `"strokeColor": "#e5e5e5"` explicitly. The default `#1e1e1e` is invisible on dark.
+

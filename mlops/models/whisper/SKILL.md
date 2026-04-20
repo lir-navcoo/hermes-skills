@@ -1,1 +1,320 @@
-LS0tCm5hbWU6IHdoaXNwZXIKZGVzY3JpcHRpb246IE9wZW5BSSdzIGdlbmVyYWwtcHVycG9zZSBzcGVlY2ggcmVjb2duaXRpb24gbW9kZWwuIFN1cHBvcnRzIDk5IGxhbmd1YWdlcywgdHJhbnNjcmlwdGlvbiwgdHJhbnNsYXRpb24gdG8gRW5nbGlzaCwgYW5kIGxhbmd1YWdlIGlkZW50aWZpY2F0aW9uLiBTaXggbW9kZWwgc2l6ZXMgZnJvbSB0aW55ICgzOU0gcGFyYW1zKSB0byBsYXJnZSAoMTU1ME0gcGFyYW1zKS4gVXNlIGZvciBzcGVlY2gtdG8tdGV4dCwgcG9kY2FzdCB0cmFuc2NyaXB0aW9uLCBvciBtdWx0aWxpbmd1YWwgYXVkaW8gcHJvY2Vzc2luZy4gQmVzdCBmb3Igcm9idXN0LCBtdWx0aWxpbmd1YWwgQVNSLgp2ZXJzaW9uOiAxLjAuMAphdXRob3I6IE9yY2hlc3RyYSBSZXNlYXJjaApsaWNlbnNlOiBNSVQKZGVwZW5kZW5jaWVzOiBbb3BlbmFpLXdoaXNwZXIsIHRyYW5zZm9ybWVycywgdG9yY2hdCm1ldGFkYXRhOgogIGhlcm1lczoKICAgIHRhZ3M6IFtXaGlzcGVyLCBTcGVlY2ggUmVjb2duaXRpb24sIEFTUiwgTXVsdGltb2RhbCwgTXVsdGlsaW5ndWFsLCBPcGVuQUksIFNwZWVjaC1Uby1UZXh0LCBUcmFuc2NyaXB0aW9uLCBUcmFuc2xhdGlvbiwgQXVkaW8gUHJvY2Vzc2luZ10KCi0tLQoKIyBXaGlzcGVyIC0gUm9idXN0IFNwZWVjaCBSZWNvZ25pdGlvbgoKT3BlbkFJJ3MgbXVsdGlsaW5ndWFsIHNwZWVjaCByZWNvZ25pdGlvbiBtb2RlbC4KCiMjIFdoZW4gdG8gdXNlIFdoaXNwZXIKCioqVXNlIHdoZW46KioKLSBTcGVlY2gtdG8tdGV4dCB0cmFuc2NyaXB0aW9uICg5OSBsYW5ndWFnZXMpCi0gUG9kY2FzdC92aWRlbyB0cmFuc2NyaXB0aW9uCi0gTWVldGluZyBub3RlcyBhdXRvbWF0aW9uCi0gVHJhbnNsYXRpb24gdG8gRW5nbGlzaAotIE5vaXN5IGF1ZGlvIHRyYW5zY3JpcHRpb24KLSBNdWx0aWxpbmd1YWwgYXVkaW8gcHJvY2Vzc2luZwoKKipNZXRyaWNzKio6Ci0gKio3Miw5MDArIEdpdEh1YiBzdGFycyoqCi0gOTkgbGFuZ3VhZ2VzIHN1cHBvcnRlZAotIFRyYWluZWQgb24gNjgwLDAwMCBob3VycyBvZiBhdWRpbwotIE1JVCBMaWNlbnNlCgoqKlVzZSBhbHRlcm5hdGl2ZXMgaW5zdGVhZCoqOgotICoqQXNzZW1ibHlBSSoqOiBNYW5hZ2VkIEFQSSwgc3BlYWtlciBkaWFyaXphdGlvbgotICoqRGVlcGdyYW0qKjogUmVhbC10aW1lIHN0cmVhbWluZyBBU1IKLSAqKkdvb2dsZSBTcGVlY2gtdG8tVGV4dCoqOiBDbG91ZC1iYXNlZAoKIyMgUXVpY2sgc3RhcnQKCiMjIyBJbnN0YWxsYXRpb24KCmBgYGJhc2gKIyBSZXF1aXJlcyBQeXRob24gMy44LTMuMTEKcGlwIGluc3RhbGwgLVUgb3BlbmFpLXdoaXNwZXIKCiMgUmVxdWlyZXMgZmZtcGVnCiMgbWFjT1M6IGJyZXcgaW5zdGFsbCBmZm1wZWcKIyBVYnVudHU6IHN1ZG8gYXB0IGluc3RhbGwgZmZtcGVnCiMgV2luZG93czogY2hvY28gaW5zdGFsbCBmZm1wZWcKYGBgCgojIyMgQmFzaWMgdHJhbnNjcmlwdGlvbgoKYGBgcHl0aG9uCmltcG9ydCB3aGlzcGVyCgojIExvYWQgbW9kZWwKbW9kZWwgPSB3aGlzcGVyLmxvYWRfbW9kZWwoImJhc2UiKQoKIyBUcmFuc2NyaWJlCnJlc3VsdCA9IG1vZGVsLnRyYW5zY3JpYmUoImF1ZGlvLm1wMyIpCgojIFByaW50IHRleHQKcHJpbnQocmVzdWx0WyJ0ZXh0Il0pCgojIEFjY2VzcyBzZWdtZW50cwpmb3Igc2VnbWVudCBpbiByZXN1bHRbInNlZ21lbnRzIl06CiAgICBwcmludChmIlt7c2VnbWVudFsnc3RhcnQnXTouMmZ9cyAtIHtzZWdtZW50WydlbmQnXTouMmZ9c10ge3NlZ21lbnRbJ3RleHQnXX0iKQpgYGAKCiMjIE1vZGVsIHNpemVzCgpgYGBweXRob24KIyBBdmFpbGFibGUgbW9kZWxzCm1vZGVscyA9IFsidGlueSIsICJiYXNlIiwgInNtYWxsIiwgIm1lZGl1bSIsICJsYXJnZSIsICJ0dXJibyJdCgojIExvYWQgc3BlY2lmaWMgbW9kZWwKbW9kZWwgPSB3aGlzcGVyLmxvYWRfbW9kZWwoInR1cmJvIikgICMgRmFzdGVzdCwgZ29vZCBxdWFsaXR5CmBgYAoKfCBNb2RlbCB8IFBhcmFtZXRlcnMgfCBFbmdsaXNoLW9ubHkgfCBNdWx0aWxpbmd1YWwgfCBTcGVlZCB8IFZSQU0gfAp8LS0tLS0tLXwtLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS18LS0tLS0tLXwtLS0tLS18CnwgdGlueSB8IDM5TSB8IOKckyB8IOKckyB8IH4zMnggfCB+MSBHQiB8CnwgYmFzZSB8IDc0TSB8IOKckyB8IOKckyB8IH4xNnggfCB+MSBHQiB8Cnwgc21hbGwgfCAyNDRNIHwg4pyTIHwg4pyTIHwgfjZ4IHwgfjIgR0IgfAp8IG1lZGl1bSB8IDc2OU0gfCDinJMgfCDinJMgfCB+MnggfCB+NSBHQiB8CnwgbGFyZ2UgfCAxNTUwTSB8IOKclyB8IOKckyB8IDF4IHwgfjEwIEdCIHwKfCB0dXJibyB8IDgwOU0gfCDinJcgfCDinJMgfCB+OHggfCB+NiBHQiB8CgoqKlJlY29tbWVuZGF0aW9uKio6IFVzZSBgdHVyYm9gIGZvciBiZXN0IHNwZWVkL3F1YWxpdHksIGBiYXNlYCBmb3IgcHJvdG90eXBpbmcKCiMjIFRyYW5zY3JpcHRpb24gb3B0aW9ucwoKIyMjIExhbmd1YWdlIHNwZWNpZmljYXRpb24KCmBgYHB5dGhvbgojIEF1dG8tZGV0ZWN0IGxhbmd1YWdlCnJlc3VsdCA9IG1vZGVsLnRyYW5zY3JpYmUoImF1ZGlvLm1wMyIpCgojIFNwZWNpZnkgbGFuZ3VhZ2UgKGZhc3RlcikKcmVzdWx0ID0gbW9kZWwudHJhbnNjcmliZSgiYXVkaW8ubXAzIiwgbGFuZ3VhZ2U9ImVuIikKCiMgU3VwcG9ydGVkOiBlbiwgZXMsIGZyLCBkZSwgaXQsIHB0LCBydSwgamEsIGtvLCB6aCwgYW5kIDg5IG1vcmUKYGBgCgojIyMgVGFzayBzZWxlY3Rpb24KCmBgYHB5dGhvbgojIFRyYW5zY3JpcHRpb24gKGRlZmF1bHQpCnJlc3VsdCA9IG1vZGVsLnRyYW5zY3JpYmUoImF1ZGlvLm1wMyIsIHRhc2s9InRyYW5zY3JpYmUiKQoKIyBUcmFuc2xhdGlvbiB0byBFbmdsaXNoCnJlc3VsdCA9IG1vZGVsLnRyYW5zY3JpYmUoInNwYW5pc2gubXAzIiwgdGFzaz0idHJhbnNsYXRlIikKIyBJbnB1dDogU3BhbmlzaCBhdWRpbyDihpIgT3V0cHV0OiBFbmdsaXNoIHRleHQKYGBgCgojIyMgSW5pdGlhbCBwcm9tcHQKCmBgYHB5dGhvbgojIEltcHJvdmUgYWNjdXJhY3kgd2l0aCBjb250ZXh0CnJlc3VsdCA9IG1vZGVsLnRyYW5zY3JpYmUoCiAgICAiYXVkaW8ubXAzIiwKICAgIGluaXRpYWxfcHJvbXB0PSJUaGlzIGlzIGEgdGVjaG5pY2FsIHBvZGNhc3QgYWJvdXQgbWFjaGluZSBsZWFybmluZyBhbmQgQUkuIgopCgojIEhlbHBzIHdpdGg6CiMgLSBUZWNobmljYWwgdGVybXMKIyAtIFByb3BlciBub3VucwojIC0gRG9tYWluLXNwZWNpZmljIHZvY2FidWxhcnkKYGBgCgojIyMgVGltZXN0YW1wcwoKYGBgcHl0aG9uCiMgV29yZC1sZXZlbCB0aW1lc3RhbXBzCnJlc3VsdCA9IG1vZGVsLnRyYW5zY3JpYmUoImF1ZGlvLm1wMyIsIHdvcmRfdGltZXN0YW1wcz1UcnVlKQoKZm9yIHNlZ21lbnQgaW4gcmVzdWx0WyJzZWdtZW50cyJdOgogICAgZm9yIHdvcmQgaW4gc2VnbWVudFsid29yZHMiXToKICAgICAgICBwcmludChmInt3b3JkWyd3b3JkJ119ICh7d29yZFsnc3RhcnQnXTouMmZ9cyAtIHt3b3JkWydlbmQnXTouMmZ9cykiKQpgYGAKCiMjIyBUZW1wZXJhdHVyZSBmYWxsYmFjawoKYGBgcHl0aG9uCiMgUmV0cnkgd2l0aCBkaWZmZXJlbnQgdGVtcGVyYXR1cmVzIGlmIGNvbmZpZGVuY2UgbG93CnJlc3VsdCA9IG1vZGVsLnRyYW5zY3JpYmUoCiAgICAiYXVkaW8ubXAzIiwKICAgIHRlbXBlcmF0dXJlPSgwLjAsIDAuMiwgMC40LCAwLjYsIDAuOCwgMS4wKQopCmBgYAoKIyMgQ29tbWFuZCBsaW5lIHVzYWdlCgpgYGBiYXNoCiMgQmFzaWMgdHJhbnNjcmlwdGlvbgp3aGlzcGVyIGF1ZGlvLm1wMwoKIyBTcGVjaWZ5IG1vZGVsCndoaXNwZXIgYXVkaW8ubXAzIC0tbW9kZWwgdHVyYm8KCiMgT3V0cHV0IGZvcm1hdHMKd2hpc3BlciBhdWRpby5tcDMgLS1vdXRwdXRfZm9ybWF0IHR4dCAgICAgIyBQbGFpbiB0ZXh0CndoaXNwZXIgYXVkaW8ubXAzIC0tb3V0cHV0X2Zvcm1hdCBzcnQgICAgICMgU3VidGl0bGVzCndoaXNwZXIgYXVkaW8ubXAzIC0tb3V0cHV0X2Zvcm1hdCB2dHQgICAgICMgV2ViVlRUCndoaXNwZXIgYXVkaW8ubXAzIC0tb3V0cHV0X2Zvcm1hdCBqc29uICAgICMgSlNPTiB3aXRoIHRpbWVzdGFtcHMKCiMgTGFuZ3VhZ2UKd2hpc3BlciBhdWRpby5tcDMgLS1sYW5ndWFnZSBTcGFuaXNoCgojIFRyYW5zbGF0aW9uCndoaXNwZXIgc3BhbmlzaC5tcDMgLS10YXNrIHRyYW5zbGF0ZQpgYGAKCiMjIEJhdGNoIHByb2Nlc3NpbmcKCmBgYHB5dGhvbgppbXBvcnQgb3MKCmF1ZGlvX2ZpbGVzID0gWyJmaWxlMS5tcDMiLCAiZmlsZTIubXAzIiwgImZpbGUzLm1wMyJdCgpmb3IgYXVkaW9fZmlsZSBpbiBhdWRpb19maWxlczoKICAgIHByaW50KGYiVHJhbnNjcmliaW5nIHthdWRpb19maWxlfS4uLiIpCiAgICByZXN1bHQgPSBtb2RlbC50cmFuc2NyaWJlKGF1ZGlvX2ZpbGUpCgogICAgIyBTYXZlIHRvIGZpbGUKICAgIG91dHB1dF9maWxlID0gYXVkaW9fZmlsZS5yZXBsYWNlKCIubXAzIiwgIi50eHQiKQogICAgd2l0aCBvcGVuKG91dHB1dF9maWxlLCAidyIpIGFzIGY6CiAgICAgICAgZi53cml0ZShyZXN1bHRbInRleHQiXSkKYGBgCgojIyBSZWFsLXRpbWUgdHJhbnNjcmlwdGlvbgoKYGBgcHl0aG9uCiMgRm9yIHN0cmVhbWluZyBhdWRpbywgdXNlIGZhc3Rlci13aGlzcGVyCiMgcGlwIGluc3RhbGwgZmFzdGVyLXdoaXNwZXIKCmZyb20gZmFzdGVyX3doaXNwZXIgaW1wb3J0IFdoaXNwZXJNb2RlbAoKbW9kZWwgPSBXaGlzcGVyTW9kZWwoImJhc2UiLCBkZXZpY2U9ImN1ZGEiLCBjb21wdXRlX3R5cGU9ImZsb2F0MTYiKQoKIyBUcmFuc2NyaWJlIHdpdGggc3RyZWFtaW5nCnNlZ21lbnRzLCBpbmZvID0gbW9kZWwudHJhbnNjcmliZSgiYXVkaW8ubXAzIiwgYmVhbV9zaXplPTUpCgpmb3Igc2VnbWVudCBpbiBzZWdtZW50czoKICAgIHByaW50KGYiW3tzZWdtZW50LnN0YXJ0Oi4yZn1zIC0+IHtzZWdtZW50LmVuZDouMmZ9c10ge3NlZ21lbnQudGV4dH0iKQpgYGAKCiMjIEdQVSBhY2NlbGVyYXRpb24KCmBgYHB5dGhvbgppbXBvcnQgd2hpc3BlcgoKIyBBdXRvbWF0aWNhbGx5IHVzZXMgR1BVIGlmIGF2YWlsYWJsZQptb2RlbCA9IHdoaXNwZXIubG9hZF9tb2RlbCgidHVyYm8iKQoKIyBGb3JjZSBDUFUKbW9kZWwgPSB3aGlzcGVyLmxvYWRfbW9kZWwoInR1cmJvIiwgZGV2aWNlPSJjcHUiKQoKIyBGb3JjZSBHUFUKbW9kZWwgPSB3aGlzcGVyLmxvYWRfbW9kZWwoInR1cmJvIiwgZGV2aWNlPSJjdWRhIikKCiMgMTAtMjDDlyBmYXN0ZXIgb24gR1BVCmBgYAoKIyMgSW50ZWdyYXRpb24gd2l0aCBvdGhlciB0b29scwoKIyMjIFN1YnRpdGxlIGdlbmVyYXRpb24KCmBgYGJhc2gKIyBHZW5lcmF0ZSBTUlQgc3VidGl0bGVzCndoaXNwZXIgdmlkZW8ubXA0IC0tb3V0cHV0X2Zvcm1hdCBzcnQgLS1sYW5ndWFnZSBFbmdsaXNoCgojIE91dHB1dDogdmlkZW8uc3J0CmBgYAoKIyMjIFdpdGggTGFuZ0NoYWluCgpgYGBweXRob24KZnJvbSBsYW5nY2hhaW4uZG9jdW1lbnRfbG9hZGVycyBpbXBvcnQgV2hpc3BlclRyYW5zY3JpcHRpb25Mb2FkZXIKCmxvYWRlciA9IFdoaXNwZXJUcmFuc2NyaXB0aW9uTG9hZGVyKGZpbGVfcGF0aD0iYXVkaW8ubXAzIikKZG9jcyA9IGxvYWRlci5sb2FkKCkKCiMgVXNlIHRyYW5zY3JpcHRpb24gaW4gUkFHCmZyb20gbGFuZ2NoYWluX2Nocm9tYSBpbXBvcnQgQ2hyb21hCmZyb20gbGFuZ2NoYWluX29wZW5haSBpbXBvcnQgT3BlbkFJRW1iZWRkaW5ncwoKdmVjdG9yc3RvcmUgPSBDaHJvbWEuZnJvbV9kb2N1bWVudHMoZG9jcywgT3BlbkFJRW1iZWRkaW5ncygpKQpgYGAKCiMjIyBFeHRyYWN0IGF1ZGlvIGZyb20gdmlkZW8KCmBgYGJhc2gKIyBVc2UgZmZtcGVnIHRvIGV4dHJhY3QgYXVkaW8KZmZtcGVnIC1pIHZpZGVvLm1wNCAtdm4gLWFjb2RlYyBwY21fczE2bGUgYXVkaW8ud2F2CgojIFRoZW4gdHJhbnNjcmliZQp3aGlzcGVyIGF1ZGlvLndhdgpgYGAKCiMjIEJlc3QgcHJhY3RpY2VzCgoxLiAqKlVzZSB0dXJibyBtb2RlbCoqIC0gQmVzdCBzcGVlZC9xdWFsaXR5IGZvciBFbmdsaXNoCjIuICoqU3BlY2lmeSBsYW5ndWFnZSoqIC0gRmFzdGVyIHRoYW4gYXV0by1kZXRlY3QKMy4gKipBZGQgaW5pdGlhbCBwcm9tcHQqKiAtIEltcHJvdmVzIHRlY2huaWNhbCB0ZXJtcwo0LiAqKlVzZSBHUFUqKiAtIDEwLTIww5cgZmFzdGVyCjUuICoqQmF0Y2ggcHJvY2VzcyoqIC0gTW9yZSBlZmZpY2llbnQKNi4gKipDb252ZXJ0IHRvIFdBVioqIC0gQmV0dGVyIGNvbXBhdGliaWxpdHkKNy4gKipTcGxpdCBsb25nIGF1ZGlvKiogLSA8MzAgbWluIGNodW5rcwo4LiAqKkNoZWNrIGxhbmd1YWdlIHN1cHBvcnQqKiAtIFF1YWxpdHkgdmFyaWVzIGJ5IGxhbmd1YWdlCjkuICoqVXNlIGZhc3Rlci13aGlzcGVyKiogLSA0w5cgZmFzdGVyIHRoYW4gb3BlbmFpLXdoaXNwZXIKMTAuICoqTW9uaXRvciBWUkFNKiogLSBTY2FsZSBtb2RlbCBzaXplIHRvIGhhcmR3YXJlCgojIyBQZXJmb3JtYW5jZQoKfCBNb2RlbCB8IFJlYWwtdGltZSBmYWN0b3IgKENQVSkgfCBSZWFsLXRpbWUgZmFjdG9yIChHUFUpIHwKfC0tLS0tLS18LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLXwKfCB0aW55IHwgfjAuMzIgfCB+MC4wMSB8CnwgYmFzZSB8IH4wLjE2IHwgfjAuMDEgfAp8IHR1cmJvIHwgfjAuMDggfCB+MC4wMSB8CnwgbGFyZ2UgfCB+MS4wIHwgfjAuMDUgfAoKKlJlYWwtdGltZSBmYWN0b3I6IDAuMSA9IDEww5cgZmFzdGVyIHRoYW4gcmVhbC10aW1lKgoKIyMgTGFuZ3VhZ2Ugc3VwcG9ydAoKVG9wLXN1cHBvcnRlZCBsYW5ndWFnZXM6Ci0gRW5nbGlzaCAoZW4pCi0gU3BhbmlzaCAoZXMpCi0gRnJlbmNoIChmcikKLSBHZXJtYW4gKGRlKQotIEl0YWxpYW4gKGl0KQotIFBvcnR1Z3Vlc2UgKHB0KQotIFJ1c3NpYW4gKHJ1KQotIEphcGFuZXNlIChqYSkKLSBLb3JlYW4gKGtvKQotIENoaW5lc2UgKHpoKQoKRnVsbCBsaXN0OiA5OSBsYW5ndWFnZXMgdG90YWwKCiMjIExpbWl0YXRpb25zCgoxLiAqKkhhbGx1Y2luYXRpb25zKiogLSBNYXkgcmVwZWF0IG9yIGludmVudCB0ZXh0CjIuICoqTG9uZy1mb3JtIGFjY3VyYWN5KiogLSBEZWdyYWRlcyBvbiA+MzAgbWluIGF1ZGlvCjMuICoqU3BlYWtlciBpZGVudGlmaWNhdGlvbioqIC0gTm8gZGlhcml6YXRpb24KNC4gKipBY2NlbnRzKiogLSBRdWFsaXR5IHZhcmllcwo1LiAqKkJhY2tncm91bmQgbm9pc2UqKiAtIENhbiBhZmZlY3QgYWNjdXJhY3kKNi4gKipSZWFsLXRpbWUgbGF0ZW5jeSoqIC0gTm90IHN1aXRhYmxlIGZvciBsaXZlIGNhcHRpb25pbmcKCiMjIFJlc291cmNlcwoKLSAqKkdpdEh1YioqOiBodHRwczovL2dpdGh1Yi5jb20vb3BlbmFpL3doaXNwZXIg4q2QIDcyLDkwMCsKLSAqKlBhcGVyKio6IGh0dHBzOi8vYXJ4aXYub3JnL2Ficy8yMjEyLjA0MzU2Ci0gKipNb2RlbCBDYXJkKio6IGh0dHBzOi8vZ2l0aHViLmNvbS9vcGVuYWkvd2hpc3Blci9ibG9iL21haW4vbW9kZWwtY2FyZC5tZAotICoqQ29sYWIqKjogQXZhaWxhYmxlIGluIHJlcG8KLSAqKkxpY2Vuc2UqKjogTUlUCgoK
+---
+name: whisper
+description: OpenAI's general-purpose speech recognition model. Supports 99 languages, transcription, translation to English, and language identification. Six model sizes from tiny (39M params) to large (1550M params). Use for speech-to-text, podcast transcription, or multilingual audio processing. Best for robust, multilingual ASR.
+version: 1.0.0
+author: Orchestra Research
+license: MIT
+dependencies: [openai-whisper, transformers, torch]
+metadata:
+  hermes:
+    tags: [Whisper, Speech Recognition, ASR, Multimodal, Multilingual, OpenAI, Speech-To-Text, Transcription, Translation, Audio Processing]
+
+---
+
+# Whisper - Robust Speech Recognition
+
+OpenAI's multilingual speech recognition model.
+
+## When to use Whisper
+
+**Use when:**
+- Speech-to-text transcription (99 languages)
+- Podcast/video transcription
+- Meeting notes automation
+- Translation to English
+- Noisy audio transcription
+- Multilingual audio processing
+
+**Metrics**:
+- **72,900+ GitHub stars**
+- 99 languages supported
+- Trained on 680,000 hours of audio
+- MIT License
+
+**Use alternatives instead**:
+- **AssemblyAI**: Managed API, speaker diarization
+- **Deepgram**: Real-time streaming ASR
+- **Google Speech-to-Text**: Cloud-based
+
+## Quick start
+
+### Installation
+
+```bash
+# Requires Python 3.8-3.11
+pip install -U openai-whisper
+
+# Requires ffmpeg
+# macOS: brew install ffmpeg
+# Ubuntu: sudo apt install ffmpeg
+# Windows: choco install ffmpeg
+```
+
+### Basic transcription
+
+```python
+import whisper
+
+# Load model
+model = whisper.load_model("base")
+
+# Transcribe
+result = model.transcribe("audio.mp3")
+
+# Print text
+print(result["text"])
+
+# Access segments
+for segment in result["segments"]:
+    print(f"[{segment['start']:.2f}s - {segment['end']:.2f}s] {segment['text']}")
+```
+
+## Model sizes
+
+```python
+# Available models
+models = ["tiny", "base", "small", "medium", "large", "turbo"]
+
+# Load specific model
+model = whisper.load_model("turbo")  # Fastest, good quality
+```
+
+| Model | Parameters | English-only | Multilingual | Speed | VRAM |
+|-------|------------|--------------|--------------|-------|------|
+| tiny | 39M | ✓ | ✓ | ~32x | ~1 GB |
+| base | 74M | ✓ | ✓ | ~16x | ~1 GB |
+| small | 244M | ✓ | ✓ | ~6x | ~2 GB |
+| medium | 769M | ✓ | ✓ | ~2x | ~5 GB |
+| large | 1550M | ✗ | ✓ | 1x | ~10 GB |
+| turbo | 809M | ✗ | ✓ | ~8x | ~6 GB |
+
+**Recommendation**: Use `turbo` for best speed/quality, `base` for prototyping
+
+## Transcription options
+
+### Language specification
+
+```python
+# Auto-detect language
+result = model.transcribe("audio.mp3")
+
+# Specify language (faster)
+result = model.transcribe("audio.mp3", language="en")
+
+# Supported: en, es, fr, de, it, pt, ru, ja, ko, zh, and 89 more
+```
+
+### Task selection
+
+```python
+# Transcription (default)
+result = model.transcribe("audio.mp3", task="transcribe")
+
+# Translation to English
+result = model.transcribe("spanish.mp3", task="translate")
+# Input: Spanish audio → Output: English text
+```
+
+### Initial prompt
+
+```python
+# Improve accuracy with context
+result = model.transcribe(
+    "audio.mp3",
+    initial_prompt="This is a technical podcast about machine learning and AI."
+)
+
+# Helps with:
+# - Technical terms
+# - Proper nouns
+# - Domain-specific vocabulary
+```
+
+### Timestamps
+
+```python
+# Word-level timestamps
+result = model.transcribe("audio.mp3", word_timestamps=True)
+
+for segment in result["segments"]:
+    for word in segment["words"]:
+        print(f"{word['word']} ({word['start']:.2f}s - {word['end']:.2f}s)")
+```
+
+### Temperature fallback
+
+```python
+# Retry with different temperatures if confidence low
+result = model.transcribe(
+    "audio.mp3",
+    temperature=(0.0, 0.2, 0.4, 0.6, 0.8, 1.0)
+)
+```
+
+## Command line usage
+
+```bash
+# Basic transcription
+whisper audio.mp3
+
+# Specify model
+whisper audio.mp3 --model turbo
+
+# Output formats
+whisper audio.mp3 --output_format txt     # Plain text
+whisper audio.mp3 --output_format srt     # Subtitles
+whisper audio.mp3 --output_format vtt     # WebVTT
+whisper audio.mp3 --output_format json    # JSON with timestamps
+
+# Language
+whisper audio.mp3 --language Spanish
+
+# Translation
+whisper spanish.mp3 --task translate
+```
+
+## Batch processing
+
+```python
+import os
+
+audio_files = ["file1.mp3", "file2.mp3", "file3.mp3"]
+
+for audio_file in audio_files:
+    print(f"Transcribing {audio_file}...")
+    result = model.transcribe(audio_file)
+
+    # Save to file
+    output_file = audio_file.replace(".mp3", ".txt")
+    with open(output_file, "w") as f:
+        f.write(result["text"])
+```
+
+## Real-time transcription
+
+```python
+# For streaming audio, use faster-whisper
+# pip install faster-whisper
+
+from faster_whisper import WhisperModel
+
+model = WhisperModel("base", device="cuda", compute_type="float16")
+
+# Transcribe with streaming
+segments, info = model.transcribe("audio.mp3", beam_size=5)
+
+for segment in segments:
+    print(f"[{segment.start:.2f}s -> {segment.end:.2f}s] {segment.text}")
+```
+
+## GPU acceleration
+
+```python
+import whisper
+
+# Automatically uses GPU if available
+model = whisper.load_model("turbo")
+
+# Force CPU
+model = whisper.load_model("turbo", device="cpu")
+
+# Force GPU
+model = whisper.load_model("turbo", device="cuda")
+
+# 10-20× faster on GPU
+```
+
+## Integration with other tools
+
+### Subtitle generation
+
+```bash
+# Generate SRT subtitles
+whisper video.mp4 --output_format srt --language English
+
+# Output: video.srt
+```
+
+### With LangChain
+
+```python
+from langchain.document_loaders import WhisperTranscriptionLoader
+
+loader = WhisperTranscriptionLoader(file_path="audio.mp3")
+docs = loader.load()
+
+# Use transcription in RAG
+from langchain_chroma import Chroma
+from langchain_openai import OpenAIEmbeddings
+
+vectorstore = Chroma.from_documents(docs, OpenAIEmbeddings())
+```
+
+### Extract audio from video
+
+```bash
+# Use ffmpeg to extract audio
+ffmpeg -i video.mp4 -vn -acodec pcm_s16le audio.wav
+
+# Then transcribe
+whisper audio.wav
+```
+
+## Best practices
+
+1. **Use turbo model** - Best speed/quality for English
+2. **Specify language** - Faster than auto-detect
+3. **Add initial prompt** - Improves technical terms
+4. **Use GPU** - 10-20× faster
+5. **Batch process** - More efficient
+6. **Convert to WAV** - Better compatibility
+7. **Split long audio** - <30 min chunks
+8. **Check language support** - Quality varies by language
+9. **Use faster-whisper** - 4× faster than openai-whisper
+10. **Monitor VRAM** - Scale model size to hardware
+
+## Performance
+
+| Model | Real-time factor (CPU) | Real-time factor (GPU) |
+|-------|------------------------|------------------------|
+| tiny | ~0.32 | ~0.01 |
+| base | ~0.16 | ~0.01 |
+| turbo | ~0.08 | ~0.01 |
+| large | ~1.0 | ~0.05 |
+
+*Real-time factor: 0.1 = 10× faster than real-time*
+
+## Language support
+
+Top-supported languages:
+- English (en)
+- Spanish (es)
+- French (fr)
+- German (de)
+- Italian (it)
+- Portuguese (pt)
+- Russian (ru)
+- Japanese (ja)
+- Korean (ko)
+- Chinese (zh)
+
+Full list: 99 languages total
+
+## Limitations
+
+1. **Hallucinations** - May repeat or invent text
+2. **Long-form accuracy** - Degrades on >30 min audio
+3. **Speaker identification** - No diarization
+4. **Accents** - Quality varies
+5. **Background noise** - Can affect accuracy
+6. **Real-time latency** - Not suitable for live captioning
+
+## Resources
+
+- **GitHub**: https://github.com/openai/whisper ⭐ 72,900+
+- **Paper**: https://arxiv.org/abs/2212.04356
+- **Model Card**: https://github.com/openai/whisper/blob/main/model-card.md
+- **Colab**: Available in repo
+- **License**: MIT
+
+

@@ -1,1 +1,193 @@
-IyBEZXNpZ24gU3lzdGVtOiBCTVcKCgo+ICoqSGVybWVzIEFnZW50IOKAlCBJbXBsZW1lbnRhdGlvbiBOb3RlcyoqCj4KPiBUaGUgb3JpZ2luYWwgc2l0ZSB1c2VzIHByb3ByaWV0YXJ5IGZvbnRzLiBGb3Igc2VsZi1jb250YWluZWQgSFRNTCBvdXRwdXQsIHVzZSB0aGVzZSBDRE4gc3Vic3RpdHV0ZXM6Cj4gLSAqKlByaW1hcnk6KiogYERNIFNhbnNgIHwgKipNb25vOioqIGBzeXN0ZW0gbW9ub3NwYWNlIHN0YWNrYAo+IC0gKipGb250IHN0YWNrIChDU1MpOioqIGBmb250LWZhbWlseTogJ0RNIFNhbnMnLCBzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sICdTZWdvZSBVSScsIFJvYm90bywgc2Fucy1zZXJpZjtgCj4gLSAqKk1vbm8gc3RhY2sgKENTUyk6KiogYGZvbnQtZmFtaWx5OiB1aS1tb25vc3BhY2UsIFNGTW9uby1SZWd1bGFyLCBNZW5sbywgTW9uYWNvLCBDb25zb2xhcywgJ0xpYmVyYXRpb24gTW9ubycsICdDb3VyaWVyIE5ldycsIG1vbm9zcGFjZTtgCj4gYGBgaHRtbAo+IDxsaW5rIGhyZWY9Imh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9RE0rU2FuczppdGFsLG9wc3osd2dodEAwLDkuLjQwLDEwMC4uMTAwMDsxLDkuLjQwLDEwMC4uMTAwMCZkaXNwbGF5PXN3YXAiIHJlbD0ic3R5bGVzaGVldCI+Cj4gYGBgCj4gVXNlIGB3cml0ZV9maWxlYCB0byBjcmVhdGUgSFRNTCwgc2VydmUgdmlhIGBnZW5lcmF0aXZlLXdpZGdldHNgIHNraWxsIChjbG91ZGZsYXJlZCB0dW5uZWwpLgo+IFZlcmlmeSB2aXN1YWwgYWNjdXJhY3kgd2l0aCBgYnJvd3Nlcl92aXNpb25gIGFmdGVyIGdlbmVyYXRpbmcuCgojIyAxLiBWaXN1YWwgVGhlbWUgJiBBdG1vc3BoZXJlCgpCTVcncyB3ZWJzaXRlIGlzIGF1dG9tb3RpdmUgZW5naW5lZXJpbmcgbWFkZSB2aXN1YWwg4oCUIGEgZGVzaWduIHN5c3RlbSB0aGF0IGNvbW11bmljYXRlcyBwcmVjaXNpb24sIHBlcmZvcm1hbmNlLCBhbmQgR2VybWFuIGluZHVzdHJpYWwgY29uZmlkZW5jZS4gVGhlIHBhZ2UgYWx0ZXJuYXRlcyBiZXR3ZWVuIGRlZXAgZGFyayBoZXJvIHNlY3Rpb25zIChmZWF0dXJpbmcgZnVsbC1ibGVlZCBhdXRvbW90aXZlIHBob3RvZ3JhcGh5KSBhbmQgY2xlYW4gd2hpdGUgY29udGVudCBhcmVhcywgY3JlYXRpbmcgYSBjaW5lbWF0aWMgcmh5dGhtIHJlbWluaXNjZW50IG9mIGEgbHV4dXJ5IGNhciBzaG93cm9vbSB3aGVyZSB2ZWhpY2xlcyBhcmUgbGl0IGFnYWluc3QgZGFya25lc3MuIFRoZSBCTVcgQ0kyMDIwIGRlc2lnbiBsYW5ndWFnZSAodGhlaXIgY29ycG9yYXRlIGlkZW50aXR5IHJlZnJlc2gpIGRlZmluZXMgZXZlcnkgZWxlbWVudC4KClRoZSB0eXBvZ3JhcGh5IGlzIGJ1aWx0IG9uIEJNV1R5cGVOZXh0TGF0aW4g4oCUIGEgcHJvcHJpZXRhcnkgdHlwZWZhY2UgaW4gdHdvIHZhcmlhbnRzOiBCTVdUeXBlTmV4dExhdGluIExpZ2h0ICh3ZWlnaHQgMzAwKSBmb3IgbWFzc2l2ZSB1cHBlcmNhc2UgZGlzcGxheSBoZWFkaW5ncywgYW5kIEJNV1R5cGVOZXh0TGF0aW4gUmVndWxhciBmb3IgYm9keSBhbmQgVUkgdGV4dC4gVGhlIDYwcHggdXBwZXJjYXNlIGhlYWRsaW5lIGF0IHdlaWdodCAzMDAgaXMgdGhlIGRlZmluaW5nIHR5cG9ncmFwaGljIGdlc3R1cmUg4oCUIGxpZ2h0LXdlaWdodCB0eXBlIHRoYXQgd2hpc3BlcnMgYXV0aG9yaXR5IHJhdGhlciB0aGFuIHNob3V0aW5nIGl0LiBUaGUgZmFsbGJhY2sgc3RhY2sgaW5jbHVkZXMgSGVsdmV0aWNhIGFuZCBKYXBhbmVzZSBmb250cyAoSGlyYWdpbm8sIE1laXJ5byksIHJlZmxlY3RpbmcgQk1XJ3MgZ2xvYmFsIHByZXNlbmNlLgoKV2hhdCBtYWtlcyBCTVcgZGlzdGluY3RpdmUgaXMgaXRzIENTUyB2YXJpYWJsZS1kcml2ZW4gdGhlbWluZyBzeXN0ZW0uIENvbnRleHQtYXdhcmUgdmFyaWFibGVzIChgLS1zaXRlLWNvbnRleHQtaGlnaGxpZ2h0LWNvbG9yOiAjMWM2OWQ0YCwgYC0tc2l0ZS1jb250ZXh0LWZvY3VzLWNvbG9yOiAjMDY1M2I2YCwgYC0tc2l0ZS1jb250ZXh0LW1ldGFpbmZvLWNvbG9yOiAjNzU3NTc1YCkgc3VnZ2VzdCBhIGRlc2lnbiBzeXN0ZW0gYnVpbHQgZm9yIG11bHRpLWJyYW5kLCBtdWx0aS1jb250ZXh0IGRlcGxveW1lbnQgd2hlcmUgY29sb3JzIGNhbiBiZSBzd2FwcGVkIGdsb2JhbGx5LiBUaGUgYmx1ZSBoaWdobGlnaHQgY29sb3IgKGAjMWM2OWQ0YCkgaXMgQk1XJ3Mgc2lnbmF0dXJlIGJsdWUg4oCUIHVzZWQgc3BhcmluZ2x5IGZvciBpbnRlcmFjdGl2ZSBlbGVtZW50cyBhbmQgZm9jdXMgc3RhdGVzLCBuZXZlciBkZWNvcmF0aXZlbHkuIFplcm8gYm9yZGVyLXJhZGl1cyB3YXMgZGV0ZWN0ZWQg4oCUIEJNVydzIGRlc2lnbiBpcyBhbmd1bGFyLCBzaGFycC1jb3JuZXJlZCwgYW5kIHVuY29tcHJvbWlzaW5nbHkgZ2VvbWV0cmljLgoKKipLZXkgQ2hhcmFjdGVyaXN0aWNzOioqCi0gQk1XVHlwZU5leHRMYXRpbiBMaWdodCAod2VpZ2h0IDMwMCkgdXBwZXJjYXNlIGZvciBkaXNwbGF5IOKAlCB3aGlzcGVyZWQgYXV0aG9yaXR5Ci0gQk1XIEJsdWUgKGAjMWM2OWQ0YCkgYXMgc2luZ3VsYXIgYWNjZW50IOKAlCB1c2VkIG9ubHkgZm9yIGludGVyYWN0aXZlIGVsZW1lbnRzCi0gWmVybyBib3JkZXItcmFkaXVzIGRldGVjdGVkIOKAlCBhbmd1bGFyLCBzaGFycC1jb3JuZXJlZCwgaW5kdXN0cmlhbCBnZW9tZXRyeQotIERhcmsgaGVybyBwaG90b2dyYXBoeSArIHdoaXRlIGNvbnRlbnQgc2VjdGlvbnMg4oCUIHNob3dyb29tIGxpZ2h0aW5nIHJoeXRobQotIENTUyB2YXJpYWJsZS1kcml2ZW4gdGhlbWluZzogYC0tc2l0ZS1jb250ZXh0LSpgIHRva2VucyBmb3IgYnJhbmQgZmxleGliaWxpdHkKLSBXZWlnaHQgOTAwIGZvciBuYXZpZ2F0aW9uIGVtcGhhc2lzIOKAlCBleHRyZW1lIGNvbnRyYXN0IHdpdGggMzAwIGRpc3BsYXkKLSBUaWdodCBsaW5lLWhlaWdodHMgKDEuMTXigJMxLjMwKSB0aHJvdWdob3V0IOKAlCBjb21wcmVzc2VkLCBlZmZpY2llbnQsIEdlcm1hbiBlbmdpbmVlcmluZwotIEZ1bGwtYmxlZWQgYXV0b21vdGl2ZSBwaG90b2dyYXBoeSBhcyBwcmltYXJ5IHZpc3VhbCBjb250ZW50CgojIyAyLiBDb2xvciBQYWxldHRlICYgUm9sZXMKCiMjIyBQcmltYXJ5IEJyYW5kCi0gKipQdXJlIFdoaXRlKiogKGAjZmZmZmZmYCk6IGAtLXNpdGUtY29udGV4dC10aGVtZS1jb2xvcmAsIHByaW1hcnkgc3VyZmFjZSwgY2FyZCBiYWNrZ3JvdW5kcwotICoqQk1XIEJsdWUqKiAoYCMxYzY5ZDRgKTogYC0tc2l0ZS1jb250ZXh0LWhpZ2hsaWdodC1jb2xvcmAsIHByaW1hcnkgaW50ZXJhY3RpdmUgYWNjZW50Ci0gKipCTVcgRm9jdXMgQmx1ZSoqIChgIzA2NTNiNmApOiBgLS1zaXRlLWNvbnRleHQtZm9jdXMtY29sb3JgLCBrZXlib2FyZCBmb2N1cyBhbmQgYWN0aXZlIHN0YXRlcwoKIyMjIE5ldXRyYWwgU2NhbGUKLSAqKk5lYXIgQmxhY2sqKiAoYCMyNjI2MjZgKTogUHJpbWFyeSB0ZXh0IG9uIGxpZ2h0IHN1cmZhY2VzLCBkYXJrIGxpbmsgdGV4dAotICoqTWV0YSBHcmF5KiogKGAjNzU3NTc1YCk6IGAtLXNpdGUtY29udGV4dC1tZXRhaW5mby1jb2xvcmAsIHNlY29uZGFyeSB0ZXh0LCBtZXRhZGF0YQotICoqU2lsdmVyKiogKGAjYmJiYmJiYCk6IFRlcnRpYXJ5IHRleHQsIG11dGVkIGxpbmtzLCBmb290ZXIgZWxlbWVudHMKCiMjIyBJbnRlcmFjdGl2ZSBTdGF0ZXMKLSBBbGwgbGlua3MgaG92ZXIgdG8gd2hpdGUgKGAjZmZmZmZmYCkg4oCUIHN1Z2dlc3RpbmcgcHJpbWFyaWx5IGRhcmstc3VyZmFjZSBuYXZpZ2F0aW9uCi0gVGV4dCBsaW5rcyB1c2UgdW5kZXJsaW5lOiBub25lIG9uIGhvdmVyIOKAlCBjbGVhbiBpbnRlcmFjdGlvbgoKIyMjIFNoYWRvd3MKLSBNaW5pbWFsIHNoYWRvdyBzeXN0ZW0g4oCUIGRlcHRoIHRocm91Z2ggcGhvdG9ncmFwaHkgYW5kIGRhcmsvbGlnaHQgc2VjdGlvbiBjb250cmFzdAoKIyMgMy4gVHlwb2dyYXBoeSBSdWxlcwoKIyMjIEZvbnQgRmFtaWxpZXMKLSAqKkRpc3BsYXkgTGlnaHQqKjogYEJNV1R5cGVOZXh0TGF0aW4gTGlnaHRgLCBmYWxsYmFja3M6IGBIZWx2ZXRpY2EsIEFyaWFsLCBIaXJhZ2lubyBLYWt1IEdvdGhpYyBQcm9OLCBIaXJhZ2lubyBTYW5zLCBNZWlyeW9gCi0gKipCb2R5IC8gVUkqKjogYEJNV1R5cGVOZXh0TGF0aW5gLCBzYW1lIGZhbGxiYWNrIHN0YWNrCgojIyMgSGllcmFyY2h5Cgp8IFJvbGUgfCBGb250IHwgU2l6ZSB8IFdlaWdodCB8IExpbmUgSGVpZ2h0IHwgTm90ZXMgfAp8LS0tLS0tfC0tLS0tLXwtLS0tLS18LS0tLS0tLS18LS0tLS0tLS0tLS0tLXwtLS0tLS0tfAp8IERpc3BsYXkgSGVybyB8IEJNV1R5cGVOZXh0TGF0aW4gTGlnaHQgfCA2MHB4ICgzLjc1cmVtKSB8IDMwMCB8IDEuMzAgKHRpZ2h0KSB8IGB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlYCB8CnwgU2VjdGlvbiBIZWFkaW5nIHwgQk1XVHlwZU5leHRMYXRpbiB8IDMycHggKDIuMDByZW0pIHwgNDAwIHwgMS4zMCAodGlnaHQpIHwgTWFqb3Igc2VjdGlvbiB0aXRsZXMgfAp8IE5hdiBFbXBoYXNpcyB8IEJNV1R5cGVOZXh0TGF0aW4gfCAxOHB4ICgxLjEzcmVtKSB8IDkwMCB8IDEuMzAgKHRpZ2h0KSB8IE5hdmlnYXRpb24gYm9sZCBpdGVtcyB8CnwgQm9keSB8IEJNV1R5cGVOZXh0TGF0aW4gfCAxNnB4ICgxLjAwcmVtKSB8IDQwMCB8IDEuMTUgKHRpZ2h0KSB8IFN0YW5kYXJkIGJvZHkgdGV4dCB8CnwgQnV0dG9uIEJvbGQgfCBCTVdUeXBlTmV4dExhdGluIHwgMTZweCAoMS4wMHJlbSkgfCA3MDAgfCAxLjIw4oCTMi44OCB8IENUQSBidXR0b25zIHwKfCBCdXR0b24gfCBCTVdUeXBlTmV4dExhdGluIHwgMTZweCAoMS4wMHJlbSkgfCA0MDAgfCAxLjE1ICh0aWdodCkgfCBTdGFuZGFyZCBidXR0b25zIHwKCiMjIyBQcmluY2lwbGVzCi0gKipMaWdodCBkaXNwbGF5LCBoZWF2eSBuYXZpZ2F0aW9uKio6IFdlaWdodCAzMDAgZm9yIGhlcm8gaGVhZGxpbmVzIGNyZWF0ZXMgd2hpc3BlcmVkIGVsZWdhbmNlOyB3ZWlnaHQgOTAwIGZvciBuYXZpZ2F0aW9uIGNyZWF0ZXMgc3RhcmsgYXV0aG9yaXR5LiBUaGlzIGV4dHJlbWUgd2VpZ2h0IGNvbnRyYXN0ICgzMDAgdnMgOTAwKSBpcyB0aGUgc2lnbmF0dXJlIHR5cG9ncmFwaGljIHRlbnNpb24uCi0gKipVbml2ZXJzYWwgdXBwZXJjYXNlIGRpc3BsYXkqKjogVGhlIDYwcHggaGVybyBpcyBhbHdheXMgdXBwZXJjYXNlIOKAlCBjcmVhdGluZyBhIG1vbnVtZW50YWwsIGFyY2hpdGVjdHVyYWwgcXVhbGl0eS4KLSAqKlRpZ2h0IGV2ZXJ5dGhpbmcqKjogTGluZS1oZWlnaHRzIGZyb20gMS4xNSB0byAxLjMwIGFjcm9zcyB0aGUgZW50aXJlIHN5c3RlbS4gTm90aGluZyBicmVhdGhlcyDigJQgZXZlcnkgbGluZSBpcyBjb21wcmVzc2VkLCBlZmZpY2llbnQsIEdlcm1hbi1lbmdpbmVlcmVkLgotICoqU2luZ2xlIGZvbnQgZmFtaWx5Kio6IEJNV1R5cGVOZXh0TGF0aW4gaGFuZGxlcyBldmVyeXRoaW5nIGZyb20gNjBweCBkaXNwbGF5IHRvIDE2cHggYm9keSDigJQgdW5pdHkgdGhyb3VnaCBvbmUgdHlwZWZhY2UgYXQgZGlmZmVyZW50IHdlaWdodHMuCgojIyA0LiBDb21wb25lbnQgU3R5bGluZ3MKCiMjIyBCdXR0b25zCi0gVGV4dDogMTZweCBCTVdUeXBlTmV4dExhdGluLCB3ZWlnaHQgNzAwIGZvciBwcmltYXJ5LCA0MDAgZm9yIHNlY29uZGFyeQotIExpbmUtaGVpZ2h0OiAxLjE14oCTMi44OCAobGFyZ2UgdmFyaWF0aW9uIHN1Z2dlc3RzIHBhZGRpbmctZHJpdmVuIHNpemluZykKLSBCb3JkZXI6IHdoaXRlIGJvdHRvbS1ib3JkZXIgb24gZGFyayBzdXJmYWNlcyAoYDFweCBzb2xpZCAjZmZmZmZmYCkKLSBObyBib3JkZXItcmFkaXVzIOKAlCBzaGFycCByZWN0YW5ndWxhciBidXR0b25zCgojIyMgQ2FyZHMgJiBDb250YWluZXJzCi0gTm8gYm9yZGVyLXJhZGl1cyDigJQgYWxsIGNvbnRhaW5lcnMgYXJlIHNoYXJwLWNvcm5lcmVkIHJlY3RhbmdsZXMKLSBXaGl0ZSBiYWNrZ3JvdW5kcyBvbiBsaWdodCBzZWN0aW9ucwotIERhcmsgYmFja2dyb3VuZHMgZm9yIGhlcm8vZmVhdHVyZSBzZWN0aW9ucwotIE5vIHZpc2libGUgYm9yZGVycyBvbiBtb3N0IGVsZW1lbnRzCgojIyMgTmF2aWdhdGlvbgotIEJNV1R5cGVOZXh0TGF0aW4gMThweCB3ZWlnaHQgOTAwIGZvciBwcmltYXJ5IG5hdiBsaW5rcwotIFdoaXRlIHRleHQgb24gZGFyayBoZWFkZXIKLSBCTVcgbG9nbyA1NHg1NHB4Ci0gSG92ZXI6IHJlbWFpbnMgd2hpdGUsIHRleHQtZGVjb3JhdGlvbiBub25lCi0gIkhvbWUiIHRleHQgbGluayBpbiBoZWFkZXIKCiMjIyBJbWFnZSBUcmVhdG1lbnQKLSBGdWxsLWJsZWVkIGF1dG9tb3RpdmUgcGhvdG9ncmFwaHkKLSBEYXJrIGNpbmVtYXRpYyBsaWdodGluZwotIEVkZ2UtdG8tZWRnZSBoZXJvIGltYWdlcwotIENhciBwaG90b2dyYXBoeSBhcyBwcmltYXJ5IHZpc3VhbCBjb250ZW50CgojIyA1LiBMYXlvdXQgUHJpbmNpcGxlcwoKIyMjIFNwYWNpbmcgU3lzdGVtCi0gQmFzZSB1bml0OiA4cHgKLSBTY2FsZTogMXB4LCA1cHgsIDhweCwgMTBweCwgMTJweCwgMTVweCwgMTZweCwgMjBweCwgMjRweCwgMzBweCwgMzJweCwgNDBweCwgNDVweCwgNTZweCwgNjBweAoKIyMjIEdyaWQgJiBDb250YWluZXIKLSBGdWxsLXdpZHRoIGhlcm8gcGhvdG9ncmFwaHkKLSBDZW50ZXJlZCBjb250ZW50IHNlY3Rpb25zCi0gRm9vdGVyOiBtdWx0aS1jb2x1bW4gbGluayBncmlkCgojIyMgV2hpdGVzcGFjZSBQaGlsb3NvcGh5Ci0gKipTaG93cm9vbSBwYWNpbmcqKjogRGFyayBoZXJvIHNlY3Rpb25zIHdpdGggZ2VuZXJvdXMgcGFkZGluZyBjcmVhdGUgdGhlIGZlZWxpbmcgb2Ygd2Fsa2luZyB0aHJvdWdoIGEgc2hvd3Jvb20gd2hlcmUgZWFjaCB2ZWhpY2xlIGlzIHNwb3RsaXQgaW4gaXRzIG93biBzcGFjZS4KLSAqKkNvbXByZXNzZWQgY29udGVudCoqOiBCb2R5IHRleHQgYXJlYXMgdXNlIHRpZ2h0IGxpbmUtaGVpZ2h0cyBhbmQgY29tcGFjdCBzcGFjaW5nIOKAlCBpbmZvcm1hdGlvbi1kZW5zZSwgbm8gd2FzdGUuCgojIyMgQm9yZGVyIFJhZGl1cyBTY2FsZQotICoqTm9uZSBkZXRlY3RlZC4qKiBCTVcgdXNlcyBzaGFycCBjb3JuZXJzIGV4Y2x1c2l2ZWx5IOKAlCBldmVyeSBlbGVtZW50IGlzIGEgcHJlY2lzZSByZWN0YW5nbGUuIFRoaXMgaXMgdGhlIG1vc3QgYW5ndWxhciBkZXNpZ24gc3lzdGVtIGFuYWx5emVkLgoKIyMgNi4gRGVwdGggJiBFbGV2YXRpb24KCnwgTGV2ZWwgfCBUcmVhdG1lbnQgfCBVc2UgfAp8LS0tLS0tLXwtLS0tLS0tLS0tLXwtLS0tLXwKfCBQaG90b2dyYXBoeSAoTGV2ZWwgMCkgfCBGdWxsLWJsZWVkIGRhcmsgaW1hZ2VyeSB8IEhlcm8gYmFja2dyb3VuZHMgfAp8IEZsYXQgKExldmVsIDEpIHwgV2hpdGUgc3VyZmFjZSwgbm8gc2hhZG93IHwgQ29udGVudCBzZWN0aW9ucyB8CnwgRm9jdXMgKEFjY2Vzc2liaWxpdHkpIHwgQk1XIEZvY3VzIEJsdWUgKGAjMDY1M2I2YCkgfCBGb2N1cyBzdGF0ZXMgfAoKKipTaGFkb3cgUGhpbG9zb3BoeSoqOiBCTVcgdXNlcyB2aXJ0dWFsbHkgbm8gc2hhZG93cy4gRGVwdGggaXMgY3JlYXRlZCBlbnRpcmVseSB0aHJvdWdoIHRoZSBjb250cmFzdCBiZXR3ZWVuIGRhcmsgcGhvdG9ncmFwaGljIHNlY3Rpb25zIGFuZCB3aGl0ZSBjb250ZW50IHNlY3Rpb25zIOKAlCB0aGUgYXV0b21vdGl2ZSBsaWdodGluZyBkb2VzIHRoZSBlbGV2YXRpb24gd29yay4KCiMjIDcuIERvJ3MgYW5kIERvbid0cwoKIyMjIERvCi0gVXNlIEJNV1R5cGVOZXh0TGF0aW4gTGlnaHQgKDMwMCkgdXBwZXJjYXNlIGZvciBhbGwgZGlzcGxheSBoZWFkaW5ncwotIEtlZXAgQUxMIGNvcm5lcnMgc2hhcnAgKDBweCByYWRpdXMpIOKAlCBhbmd1bGFyIGdlb21ldHJ5IGlzIG5vbi1uZWdvdGlhYmxlCi0gVXNlIEJNVyBCbHVlIChgIzFjNjlkNGApIG9ubHkgZm9yIGludGVyYWN0aXZlIGVsZW1lbnRzIOKAlCBuZXZlciBkZWNvcmF0aXZlbHkKLSBBcHBseSB3ZWlnaHQgOTAwIGZvciBuYXZpZ2F0aW9uIGVtcGhhc2lzIOKAlCB0aGUgZXh0cmVtZSB3ZWlnaHQgY29udHJhc3QgaXMgaW50ZW50aW9uYWwKLSBVc2UgZnVsbC1ibGVlZCBhdXRvbW90aXZlIHBob3RvZ3JhcGh5IGZvciBoZXJvIHNlY3Rpb25zCi0gS2VlcCBsaW5lLWhlaWdodHMgdGlnaHQgKDEuMTXigJMxLjMwKSB0aHJvdWdob3V0Ci0gVXNlIGAtLXNpdGUtY29udGV4dC0qYCBDU1MgdmFyaWFibGVzIGZvciB0aGVtaW5nCgojIyMgRG9uJ3QKLSBEb24ndCByb3VuZCBjb3JuZXJzIOKAlCB6ZXJvIHJhZGl1cyBpcyB0aGUgQk1XIGlkZW50aXR5Ci0gRG9uJ3QgdXNlIEJNVyBCbHVlIGZvciBiYWNrZ3JvdW5kcyBvciBsYXJnZSBzdXJmYWNlcyDigJQgaXQncyBhbiBhY2NlbnQgb25seQotIERvbid0IHVzZSBtZWRpdW0gZm9udCB3ZWlnaHRzICg1MDDigJM2MDApIOKAlCB0aGUgc3lzdGVtIHVzZXMgMzAwLCA0MDAsIDcwMCwgOTAwIGV4dHJlbWVzCi0gRG9uJ3QgYWRkIGRlY29yYXRpdmUgZWxlbWVudHMg4oCUIHRoZSBwaG90b2dyYXBoeSBhbmQgdHlwb2dyYXBoeSBjYXJyeSBldmVyeXRoaW5nCi0gRG9uJ3QgdXNlIHJlbGF4ZWQgbGluZS1oZWlnaHRzIOKAlCBCTVcgdGV4dCBpcyBhbHdheXMgY29tcHJlc3NlZAotIERvbid0IGxpZ2h0ZW4gdGhlIGRhcmsgaGVybyBzZWN0aW9ucyDigJQgdGhlIGNvbnRyYXN0IHdpdGggd2hpdGUgSVMgdGhlIGRlc2lnbgoKIyMgOC4gUmVzcG9uc2l2ZSBCZWhhdmlvcgoKIyMjIEJyZWFrcG9pbnRzCnwgTmFtZSB8IFdpZHRoIHwgS2V5IENoYW5nZXMgfAp8LS0tLS0tfC0tLS0tLS18LS0tLS0tLS0tLS0tLXwKfCBNb2JpbGUgU21hbGwgfCA8Mzc1cHggfCBNaW5pbXVtIHN1cHBvcnRlZCB8CnwgTW9iaWxlIHwgMzc14oCTNDgwcHggfCBTaW5nbGUgY29sdW1uIHwKfCBNb2JpbGUgTGFyZ2UgfCA0ODDigJM2NDBweCB8IFNsaWdodCBhZGp1c3RtZW50cyB8CnwgVGFibGV0IFNtYWxsIHwgNjQw4oCTNzY4cHggfCAyLWNvbHVtbiBiZWdpbnMgfAp8IFRhYmxldCB8IDc2OOKAkzkyMHB4IHwgU3RhbmRhcmQgdGFibGV0IHwKfCBEZXNrdG9wIFNtYWxsIHwgOTIw4oCTMTAyNHB4IHwgRGVza3RvcCBsYXlvdXQgYmVnaW5zIHwKfCBEZXNrdG9wIHwgMTAyNOKAkzEyODBweCB8IFN0YW5kYXJkIGRlc2t0b3AgfAp8IExhcmdlIERlc2t0b3AgfCAxMjgw4oCTMTQ0MHB4IHwgRXhwYW5kZWQgfAp8IFVsdHJhLXdpZGUgfCAxNDQw4oCTMTYwMHB4IHwgTWF4aW11bSBsYXlvdXQgfAoKIyMjIENvbGxhcHNpbmcgU3RyYXRlZ3kKLSBIZXJvOiA2MHB4IOKGkiBzY2FsZXMgZG93biwgbWFpbnRhaW5zIHVwcGVyY2FzZQotIE5hdmlnYXRpb246IGhvcml6b250YWwg4oaSIGhhbWJ1cmdlcgotIFBob3RvZ3JhcGh5OiBmdWxsLWJsZWVkIG1haW50YWluZWQgYXQgYWxsIHNpemVzCi0gQ29udGVudCBzZWN0aW9uczogc3RhY2sgdmVydGljYWxseQotIEZvb3RlcjogbXVsdGktY29sdW1uIOKGkiBzdGFja2VkCgojIyA5LiBBZ2VudCBQcm9tcHQgR3VpZGUKCiMjIyBRdWljayBDb2xvciBSZWZlcmVuY2UKLSBCYWNrZ3JvdW5kOiBQdXJlIFdoaXRlIChgI2ZmZmZmZmApCi0gVGV4dDogTmVhciBCbGFjayAoYCMyNjI2MjZgKQotIFNlY29uZGFyeSB0ZXh0OiBNZXRhIEdyYXkgKGAjNzU3NTc1YCkKLSBBY2NlbnQ6IEJNVyBCbHVlIChgIzFjNjlkNGApCi0gRm9jdXM6IEJNVyBGb2N1cyBCbHVlIChgIzA2NTNiNmApCi0gTXV0ZWQ6IFNpbHZlciAoYCNiYmJiYmJgKQoKIyMjIEV4YW1wbGUgQ29tcG9uZW50IFByb21wdHMKLSAiQ3JlYXRlIGEgaGVybzogZnVsbC13aWR0aCBkYXJrIGF1dG9tb3RpdmUgcGhvdG9ncmFwaHkgYmFja2dyb3VuZC4gSGVhZGluZyBhdCA2MHB4IEJNV1R5cGVOZXh0TGF0aW4gTGlnaHQgd2VpZ2h0IDMwMCwgdXBwZXJjYXNlLCBsaW5lLWhlaWdodCAxLjMwLCB3aGl0ZSB0ZXh0LiBObyBib3JkZXItcmFkaXVzIGFueXdoZXJlLiIKLSAiRGVzaWduIG5hdmlnYXRpb246IGRhcmsgYmFja2dyb3VuZC4gQk1XVHlwZU5leHRMYXRpbiAxOHB4IHdlaWdodCA5MDAgZm9yIGxpbmtzLCB3aGl0ZSB0ZXh0LiBCTVcgbG9nbyA1NHg1NC4gU2hhcnAgcmVjdGFuZ3VsYXIgbGF5b3V0LiIKLSAiQnVpbGQgYSBidXR0b246IDE2cHggQk1XVHlwZU5leHRMYXRpbiB3ZWlnaHQgNzAwLCBsaW5lLWhlaWdodCAxLjIwLiBTaGFycCBjb3JuZXJzICgwcHggcmFkaXVzKS4gV2hpdGUgYm90dG9tIGJvcmRlciBvbiBkYXJrIHN1cmZhY2UuIgotICJDcmVhdGUgY29udGVudCBzZWN0aW9uOiB3aGl0ZSBiYWNrZ3JvdW5kLiBIZWFkaW5nIGF0IDMycHggd2VpZ2h0IDQwMCwgbGluZS1oZWlnaHQgMS4zMCwgIzI2MjYyNi4gQm9keSBhdCAxNnB4IHdlaWdodCA0MDAsIGxpbmUtaGVpZ2h0IDEuMTUuIgoKIyMjIEl0ZXJhdGlvbiBHdWlkZQoxLiBaZXJvIGJvcmRlci1yYWRpdXMg4oCUIGV2ZXJ5IGNvcm5lciBpcyBzaGFycCwgbm8gZXhjZXB0aW9ucwoyLiBXZWlnaHQgZXh0cmVtZXM6IDMwMCAoZGlzcGxheSksIDQwMCAoYm9keSksIDcwMCAoYnV0dG9ucyksIDkwMCAobmF2KQozLiBCTVcgQmx1ZSBmb3IgaW50ZXJhY3RpdmUgb25seSDigJQgbmV2ZXIgYXMgYmFja2dyb3VuZCBvciBkZWNvcmF0aW9uCjQuIFBob3RvZ3JhcGh5IGNhcnJpZXMgZW1vdGlvbiDigJQgdGhlIFVJIGlzIHB1cmUgcHJlY2lzaW9uCjUuIFRpZ2h0IGxpbmUtaGVpZ2h0cyBldmVyeXdoZXJlIOKAlCAxLjE1IHRvIDEuMzAgaXMgdGhlIHJhbmdlCg==
+# Design System: BMW
+
+
+> **Hermes Agent — Implementation Notes**
+>
+> The original site uses proprietary fonts. For self-contained HTML output, use these CDN substitutes:
+> - **Primary:** `DM Sans` | **Mono:** `system monospace stack`
+> - **Font stack (CSS):** `font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;`
+> - **Mono stack (CSS):** `font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;`
+> ```html
+> <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+> ```
+> Use `write_file` to create HTML, serve via `generative-widgets` skill (cloudflared tunnel).
+> Verify visual accuracy with `browser_vision` after generating.
+
+## 1. Visual Theme & Atmosphere
+
+BMW's website is automotive engineering made visual — a design system that communicates precision, performance, and German industrial confidence. The page alternates between deep dark hero sections (featuring full-bleed automotive photography) and clean white content areas, creating a cinematic rhythm reminiscent of a luxury car showroom where vehicles are lit against darkness. The BMW CI2020 design language (their corporate identity refresh) defines every element.
+
+The typography is built on BMWTypeNextLatin — a proprietary typeface in two variants: BMWTypeNextLatin Light (weight 300) for massive uppercase display headings, and BMWTypeNextLatin Regular for body and UI text. The 60px uppercase headline at weight 300 is the defining typographic gesture — light-weight type that whispers authority rather than shouting it. The fallback stack includes Helvetica and Japanese fonts (Hiragino, Meiryo), reflecting BMW's global presence.
+
+What makes BMW distinctive is its CSS variable-driven theming system. Context-aware variables (`--site-context-highlight-color: #1c69d4`, `--site-context-focus-color: #0653b6`, `--site-context-metainfo-color: #757575`) suggest a design system built for multi-brand, multi-context deployment where colors can be swapped globally. The blue highlight color (`#1c69d4`) is BMW's signature blue — used sparingly for interactive elements and focus states, never decoratively. Zero border-radius was detected — BMW's design is angular, sharp-cornered, and uncompromisingly geometric.
+
+**Key Characteristics:**
+- BMWTypeNextLatin Light (weight 300) uppercase for display — whispered authority
+- BMW Blue (`#1c69d4`) as singular accent — used only for interactive elements
+- Zero border-radius detected — angular, sharp-cornered, industrial geometry
+- Dark hero photography + white content sections — showroom lighting rhythm
+- CSS variable-driven theming: `--site-context-*` tokens for brand flexibility
+- Weight 900 for navigation emphasis — extreme contrast with 300 display
+- Tight line-heights (1.15–1.30) throughout — compressed, efficient, German engineering
+- Full-bleed automotive photography as primary visual content
+
+## 2. Color Palette & Roles
+
+### Primary Brand
+- **Pure White** (`#ffffff`): `--site-context-theme-color`, primary surface, card backgrounds
+- **BMW Blue** (`#1c69d4`): `--site-context-highlight-color`, primary interactive accent
+- **BMW Focus Blue** (`#0653b6`): `--site-context-focus-color`, keyboard focus and active states
+
+### Neutral Scale
+- **Near Black** (`#262626`): Primary text on light surfaces, dark link text
+- **Meta Gray** (`#757575`): `--site-context-metainfo-color`, secondary text, metadata
+- **Silver** (`#bbbbbb`): Tertiary text, muted links, footer elements
+
+### Interactive States
+- All links hover to white (`#ffffff`) — suggesting primarily dark-surface navigation
+- Text links use underline: none on hover — clean interaction
+
+### Shadows
+- Minimal shadow system — depth through photography and dark/light section contrast
+
+## 3. Typography Rules
+
+### Font Families
+- **Display Light**: `BMWTypeNextLatin Light`, fallbacks: `Helvetica, Arial, Hiragino Kaku Gothic ProN, Hiragino Sans, Meiryo`
+- **Body / UI**: `BMWTypeNextLatin`, same fallback stack
+
+### Hierarchy
+
+| Role | Font | Size | Weight | Line Height | Notes |
+|------|------|------|--------|-------------|-------|
+| Display Hero | BMWTypeNextLatin Light | 60px (3.75rem) | 300 | 1.30 (tight) | `text-transform: uppercase` |
+| Section Heading | BMWTypeNextLatin | 32px (2.00rem) | 400 | 1.30 (tight) | Major section titles |
+| Nav Emphasis | BMWTypeNextLatin | 18px (1.13rem) | 900 | 1.30 (tight) | Navigation bold items |
+| Body | BMWTypeNextLatin | 16px (1.00rem) | 400 | 1.15 (tight) | Standard body text |
+| Button Bold | BMWTypeNextLatin | 16px (1.00rem) | 700 | 1.20–2.88 | CTA buttons |
+| Button | BMWTypeNextLatin | 16px (1.00rem) | 400 | 1.15 (tight) | Standard buttons |
+
+### Principles
+- **Light display, heavy navigation**: Weight 300 for hero headlines creates whispered elegance; weight 900 for navigation creates stark authority. This extreme weight contrast (300 vs 900) is the signature typographic tension.
+- **Universal uppercase display**: The 60px hero is always uppercase — creating a monumental, architectural quality.
+- **Tight everything**: Line-heights from 1.15 to 1.30 across the entire system. Nothing breathes — every line is compressed, efficient, German-engineered.
+- **Single font family**: BMWTypeNextLatin handles everything from 60px display to 16px body — unity through one typeface at different weights.
+
+## 4. Component Stylings
+
+### Buttons
+- Text: 16px BMWTypeNextLatin, weight 700 for primary, 400 for secondary
+- Line-height: 1.15–2.88 (large variation suggests padding-driven sizing)
+- Border: white bottom-border on dark surfaces (`1px solid #ffffff`)
+- No border-radius — sharp rectangular buttons
+
+### Cards & Containers
+- No border-radius — all containers are sharp-cornered rectangles
+- White backgrounds on light sections
+- Dark backgrounds for hero/feature sections
+- No visible borders on most elements
+
+### Navigation
+- BMWTypeNextLatin 18px weight 900 for primary nav links
+- White text on dark header
+- BMW logo 54x54px
+- Hover: remains white, text-decoration none
+- "Home" text link in header
+
+### Image Treatment
+- Full-bleed automotive photography
+- Dark cinematic lighting
+- Edge-to-edge hero images
+- Car photography as primary visual content
+
+## 5. Layout Principles
+
+### Spacing System
+- Base unit: 8px
+- Scale: 1px, 5px, 8px, 10px, 12px, 15px, 16px, 20px, 24px, 30px, 32px, 40px, 45px, 56px, 60px
+
+### Grid & Container
+- Full-width hero photography
+- Centered content sections
+- Footer: multi-column link grid
+
+### Whitespace Philosophy
+- **Showroom pacing**: Dark hero sections with generous padding create the feeling of walking through a showroom where each vehicle is spotlit in its own space.
+- **Compressed content**: Body text areas use tight line-heights and compact spacing — information-dense, no waste.
+
+### Border Radius Scale
+- **None detected.** BMW uses sharp corners exclusively — every element is a precise rectangle. This is the most angular design system analyzed.
+
+## 6. Depth & Elevation
+
+| Level | Treatment | Use |
+|-------|-----------|-----|
+| Photography (Level 0) | Full-bleed dark imagery | Hero backgrounds |
+| Flat (Level 1) | White surface, no shadow | Content sections |
+| Focus (Accessibility) | BMW Focus Blue (`#0653b6`) | Focus states |
+
+**Shadow Philosophy**: BMW uses virtually no shadows. Depth is created entirely through the contrast between dark photographic sections and white content sections — the automotive lighting does the elevation work.
+
+## 7. Do's and Don'ts
+
+### Do
+- Use BMWTypeNextLatin Light (300) uppercase for all display headings
+- Keep ALL corners sharp (0px radius) — angular geometry is non-negotiable
+- Use BMW Blue (`#1c69d4`) only for interactive elements — never decoratively
+- Apply weight 900 for navigation emphasis — the extreme weight contrast is intentional
+- Use full-bleed automotive photography for hero sections
+- Keep line-heights tight (1.15–1.30) throughout
+- Use `--site-context-*` CSS variables for theming
+
+### Don't
+- Don't round corners — zero radius is the BMW identity
+- Don't use BMW Blue for backgrounds or large surfaces — it's an accent only
+- Don't use medium font weights (500–600) — the system uses 300, 400, 700, 900 extremes
+- Don't add decorative elements — the photography and typography carry everything
+- Don't use relaxed line-heights — BMW text is always compressed
+- Don't lighten the dark hero sections — the contrast with white IS the design
+
+## 8. Responsive Behavior
+
+### Breakpoints
+| Name | Width | Key Changes |
+|------|-------|-------------|
+| Mobile Small | <375px | Minimum supported |
+| Mobile | 375–480px | Single column |
+| Mobile Large | 480–640px | Slight adjustments |
+| Tablet Small | 640–768px | 2-column begins |
+| Tablet | 768–920px | Standard tablet |
+| Desktop Small | 920–1024px | Desktop layout begins |
+| Desktop | 1024–1280px | Standard desktop |
+| Large Desktop | 1280–1440px | Expanded |
+| Ultra-wide | 1440–1600px | Maximum layout |
+
+### Collapsing Strategy
+- Hero: 60px → scales down, maintains uppercase
+- Navigation: horizontal → hamburger
+- Photography: full-bleed maintained at all sizes
+- Content sections: stack vertically
+- Footer: multi-column → stacked
+
+## 9. Agent Prompt Guide
+
+### Quick Color Reference
+- Background: Pure White (`#ffffff`)
+- Text: Near Black (`#262626`)
+- Secondary text: Meta Gray (`#757575`)
+- Accent: BMW Blue (`#1c69d4`)
+- Focus: BMW Focus Blue (`#0653b6`)
+- Muted: Silver (`#bbbbbb`)
+
+### Example Component Prompts
+- "Create a hero: full-width dark automotive photography background. Heading at 60px BMWTypeNextLatin Light weight 300, uppercase, line-height 1.30, white text. No border-radius anywhere."
+- "Design navigation: dark background. BMWTypeNextLatin 18px weight 900 for links, white text. BMW logo 54x54. Sharp rectangular layout."
+- "Build a button: 16px BMWTypeNextLatin weight 700, line-height 1.20. Sharp corners (0px radius). White bottom border on dark surface."
+- "Create content section: white background. Heading at 32px weight 400, line-height 1.30, #262626. Body at 16px weight 400, line-height 1.15."
+
+### Iteration Guide
+1. Zero border-radius — every corner is sharp, no exceptions
+2. Weight extremes: 300 (display), 400 (body), 700 (buttons), 900 (nav)
+3. BMW Blue for interactive only — never as background or decoration
+4. Photography carries emotion — the UI is pure precision
+5. Tight line-heights everywhere — 1.15 to 1.30 is the range

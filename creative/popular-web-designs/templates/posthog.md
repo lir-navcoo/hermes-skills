@@ -1,1 +1,269 @@
-IyBEZXNpZ24gU3lzdGVtOiBQb3N0SG9nCgoKPiAqKkhlcm1lcyBBZ2VudCDigJQgSW1wbGVtZW50YXRpb24gTm90ZXMqKgo+Cj4gVGhlIG9yaWdpbmFsIHNpdGUgdXNlcyBwcm9wcmlldGFyeSBmb250cy4gRm9yIHNlbGYtY29udGFpbmVkIEhUTUwgb3V0cHV0LCB1c2UgdGhlc2UgQ0ROIHN1YnN0aXR1dGVzOgo+IC0gKipQcmltYXJ5OioqIGBJbnRlcmAgfCAqKk1vbm86KiogYEpldEJyYWlucyBNb25vYAo+IC0gKipGb250IHN0YWNrIChDU1MpOioqIGBmb250LWZhbWlseTogJ0ludGVyJywgc3lzdGVtLXVpLCAtYXBwbGUtc3lzdGVtLCAnU2Vnb2UgVUknLCBSb2JvdG8sIHNhbnMtc2VyaWY7YAo+IC0gKipNb25vIHN0YWNrIChDU1MpOioqIGBmb250LWZhbWlseTogJ0pldEJyYWlucyBNb25vJywgdWktbW9ub3NwYWNlLCBTRk1vbm8tUmVndWxhciwgTWVubG8sIE1vbmFjbywgQ29uc29sYXMsICdMaWJlcmF0aW9uIE1vbm8nLCAnQ291cmllciBOZXcnLCBtb25vc3BhY2U7YAo+IGBgYGh0bWwKPiA8bGluayBocmVmPSJodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2NzczI/ZmFtaWx5PUludGVyOndnaHRAMzAwOzQwMDs1MDA7NjAwOzcwMCZmYW1pbHk9SmV0QnJhaW5zK01vbm86d2dodEA0MDA7NTAwJmRpc3BsYXk9c3dhcCIgcmVsPSJzdHlsZXNoZWV0Ij4KPiBgYGAKPiBVc2UgYHdyaXRlX2ZpbGVgIHRvIGNyZWF0ZSBIVE1MLCBzZXJ2ZSB2aWEgYGdlbmVyYXRpdmUtd2lkZ2V0c2Agc2tpbGwgKGNsb3VkZmxhcmVkIHR1bm5lbCkuCj4gVmVyaWZ5IHZpc3VhbCBhY2N1cmFjeSB3aXRoIGBicm93c2VyX3Zpc2lvbmAgYWZ0ZXIgZ2VuZXJhdGluZy4KCiMjIDEuIFZpc3VhbCBUaGVtZSAmIEF0bW9zcGhlcmUKClBvc3RIb2cncyB3ZWJzaXRlIGZlZWxzIGxpa2UgYSBzdGFydHVwJ3MgaW50ZXJuYWwgd2lraSB0aGF0IGVzY2FwZWQgaW50byB0aGUgd2lsZCDigJQgd2FybSwgaXJyZXZlcmVudCwgYW5kIGRlbGliZXJhdGVseSBhbnRpLWNvcnBvcmF0ZS4gVGhlIGJhY2tncm91bmQgaXNuJ3QgdGhlIGV4cGVjdGVkIGNyaXNwIHdoaXRlIG9yIGRhcmsgdm9pZCBvZiBkZXZlbG9wZXIgdG9vbHM7IGl0J3MgYSB3YXJtLCBzYWdlLXRpbnRlZCBjcmVhbSAoYCNmZGZkZjhgKSB0aGF0IGdpdmVzIGV2ZXJ5IHN1cmZhY2UgYSBoYW5kbWFkZSwgcGFwZXItbGlrZSBxdWFsaXR5LiBDb2xvcnMgbGVhbiBpbnRvIGVhcnRoeSBvbGl2ZSBncmVlbnMgYW5kIG11dGVkIHNhZ2UgcmF0aGVyIHRoYW4gdGhlIGNvbnZlbnRpb25hbCBibHVlcyBhbmQgcHVycGxlcyBvZiB0aGUgU2FhUyB3b3JsZC4gSXQncyBhcyBpZiBzb21lb25lIGRlc2lnbmVkIGEgZGV2ZWxvcGVyIGFuYWx5dGljcyBwbGF0Zm9ybSBpbnNpZGUgYSBjb3p5IGdhcmRlbiBzaGVkLgoKVGhlIHBlcnNvbmFsaXR5IGlzIHRoZSBzdGFyOiBoYW5kLWRyYXduIGhlZGdlaG9nIGlsbHVzdHJhdGlvbnMsIHF1aXJreSBhY3Rpb24gZmlndXJlcywgYW5kIHBsYXlmdWwgaW1hZ2VyeSByZXBsYWNlIHRoZSBzdG9jayBwaG90b2dyYXBoeSBhbmQgYWJzdHJhY3QgZ3JhZGllbnRzIHR5cGljYWwgb2YgQjJCIFNhYVMuIElCTSBQbGV4IFNhbnMgVmFyaWFibGUgc2VydmVzIGFzIHRoZSB0eXBvZ3JhcGhpYyBmb3VuZGF0aW9uIOKAlCBhIGZvbnQgd2l0aCBnZW51aW5lIHRlY2huaWNhbCBjcmVkaWJpbGl0eSAoY3JlYXRlZCBieSBJQk0sIHdpZGVseSB1c2VkIGluIGRldmVsb3BlciBjb250ZXh0cykgZGVwbG95ZWQgaGVyZSB3aXRoIGJvbGQgd2VpZ2h0cyAoNzAwLCA4MDApIG9uIGhlYWRpbmdzIGFuZCBnZW5lcm91cyBsaW5lLWhlaWdodHMgb24gYm9keSB0ZXh0LiBUaGUgdHlwb2dyYXBoeSBzYXlzICJ3ZSdyZSBzZXJpb3VzIGVuZ2luZWVycyIgd2hpbGUgZXZlcnl0aGluZyBhcm91bmQgaXQgc2F5cyAiYnV0IHdlIGRvbid0IHRha2Ugb3Vyc2VsdmVzIHRvbyBzZXJpb3VzbHkuIgoKVGhlIGludGVyYWN0aW9uIGRlc2lnbiBjYXJyaWVzIHRoZSBzYW1lIHNwaXJpdDogaG92ZXIgc3RhdGVzIGZsYXNoIFBvc3RIb2cgT3JhbmdlIChgI0Y1NEUwMGApIHRleHQg4oCUIGEgaGlkZGVuIGJyYW5kIGNvbG9yIHRoYXQgZG9lc24ndCBhcHBlYXIgYXQgcmVzdCBidXQgc3VycHJpc2VzIG9uIGludGVyYWN0aW9uLiBEYXJrIG5lYXItYmxhY2sgYnV0dG9ucyAoYCMxZTFmMjNgKSB1c2Ugb3BhY2l0eSByZWR1Y3Rpb24gb24gaG92ZXIgcmF0aGVyIHRoYW4gY29sb3Igc2hpZnRzLCBhbmQgYWN0aXZlIHN0YXRlcyBzY2FsZSBzbGlnaHRseS4gVGhlIGJvcmRlciBzeXN0ZW0gdXNlcyBzYWdlLXRpbnRlZCBncmF5cyAoYCNiZmMxYjdgKSB0aGF0IGhhcm1vbml6ZSB3aXRoIHRoZSBvbGl2ZSB0ZXh0IHBhbGV0dGUuIEJ1aWx0IG9uIFRhaWx3aW5kIENTUyB3aXRoIFJhZGl4IFVJIGFuZCBzaGFkY24vdWkgcHJpbWl0aXZlcywgdGhlIHRlY2huaWNhbCBmb3VuZGF0aW9uIGlzIG1vZGVybiBhbmQgY29tcG9uZW50LWRyaXZlbiwgYnV0IHRoZSB2aXN1YWwgb3V0cHV0IGlzIHN0dWJib3JubHkgdW5pcXVlLgoKKipLZXkgQ2hhcmFjdGVyaXN0aWNzOioqCi0gV2FybSBzYWdlL29saXZlIGNvbG9yIHBhbGV0dGUgaW5zdGVhZCBvZiBjb252ZW50aW9uYWwgYmx1ZXMg4oCUIGVhcnRoeSBhbmQgYXBwcm9hY2hhYmxlCi0gSUJNIFBsZXggU2FucyBWYXJpYWJsZSBmb250IGF0IGJvbGQgd2VpZ2h0cyAoNzAwLzgwMCkgZm9yIGhlYWRpbmdzIHdpdGggZ2VuZXJvdXMgMS41MCsgbGluZS1oZWlnaHRzCi0gSGlkZGVuIGJyYW5kIG9yYW5nZSAoYCNGNTRFMDBgKSB0aGF0IG9ubHkgYXBwZWFycyBvbiBob3ZlciBpbnRlcmFjdGlvbnMg4oCUIGEgZGVsaWdodGZ1bCBzdXJwcmlzZQotIEhhbmQtZHJhd24gaGVkZ2Vob2cgaWxsdXN0cmF0aW9ucyBhbmQgcGxheWZ1bCBpbWFnZXJ5IOKAlCBkZWxpYmVyYXRlbHkgYW50aS1jb3Jwb3JhdGUKLSBTYWdlLXRpbnRlZCBib3JkZXJzIChgI2JmYzFiN2ApIGFuZCBiYWNrZ3JvdW5kcyAoYCNlZWVmZTlgKSBjcmVhdGluZyBhIHVuaWZpZWQgd2FybS1ncmVlbiBzeXN0ZW0KLSBEYXJrIG5lYXItYmxhY2sgQ1RBcyAoYCMxZTFmMjNgKSB3aXRoIG9wYWNpdHktYmFzZWQgaG92ZXIgc3RhdGVzCi0gQ29udGVudC1oZWF2eSBlZGl0b3JpYWwgbGF5b3V0IOKAlCB0aGUgc2l0ZSByZWFkcyBsaWtlIGEgbWFnYXppbmUsIG5vdCBhIHR5cGljYWwgbGFuZGluZyBwYWdlCi0gVGFpbHdpbmQgQ1NTICsgUmFkaXggVUkgKyBzaGFkY24vdWkgY29tcG9uZW50IGFyY2hpdGVjdHVyZQoKIyMgMi4gQ29sb3IgUGFsZXR0ZSAmIFJvbGVzCgojIyMgUHJpbWFyeQotICoqT2xpdmUgSW5rKiogKGAjNGQ0ZjQ2YCk6IFByaW1hcnkgdGV4dCBjb2xvciDigJQgYSBkaXN0aW5jdGl2ZSBvbGl2ZS1ncmF5IHRoYXQgZ2l2ZXMgYWxsIHRleHQgYSB3YXJtLCBlYXJ0aHkgdG9uZQotICoqRGVlcCBPbGl2ZSoqIChgIzIzMjUxZGApOiBMaW5rIHRleHQgYW5kIGhpZ2gtZW1waGFzaXMgaGVhZGluZ3Mg4oCUIG5lYXItYmxhY2sgd2l0aCBncmVlbiB1bmRlcnRvbmUKLSAqKlBvc3RIb2cgT3JhbmdlKiogKGAjRjU0RTAwYCk6IEhpZGRlbiBicmFuZCBhY2NlbnQg4oCUIGFwcGVhcnMgb25seSBvbiBob3ZlciBzdGF0ZXMsIGEgdmlicmFudCBvcmFuZ2UgdGhhdCBzdXJwcmlzZXMKCiMjIyBTZWNvbmRhcnkgJiBBY2NlbnQKLSAqKkFtYmVyIEdvbGQqKiAoYCNGN0E1MDFgKTogU2Vjb25kYXJ5IGhvdmVyIGFjY2VudCBvbiBkYXJrIGJ1dHRvbnMg4oCUIHdhcm0gZ29sZCB0aGF0IHBhaXJzIHdpdGggdGhlIG9yYW5nZQotICoqR29sZCBCb3JkZXIqKiAoYCNiMTc4MTZgKTogU3BlY2lhbCBidXR0b24gYm9yZGVycyDigJQgYW4gYW1iZXItZ29sZCBmb3IgZmVhdHVyZWQgQ1RBcwotICoqRm9jdXMgQmx1ZSoqIChgIzNiODJmNmApOiBGb2N1cyByaW5nIGNvbG9yIChUYWlsd2luZCBkZWZhdWx0KSDigJQgdGhlIG9ubHkgYmx1ZSBpbiB0aGUgc3lzdGVtLCByZXNlcnZlZCBmb3IgYWNjZXNzaWJpbGl0eQoKIyMjIFN1cmZhY2UgJiBCYWNrZ3JvdW5kCi0gKipXYXJtIFBhcmNobWVudCoqIChgI2ZkZmRmOGApOiBQcmltYXJ5IHBhZ2UgYmFja2dyb3VuZCDigJQgd2FybSBuZWFyLXdoaXRlIHdpdGggeWVsbG93LWdyZWVuIHVuZGVydG9uZQotICoqU2FnZSBDcmVhbSoqIChgI2VlZWZlOWApOiBJbnB1dCBiYWNrZ3JvdW5kcywgc2Vjb25kYXJ5IHN1cmZhY2VzIOKAlCBsaWdodCBzYWdlIHRpbnQKLSAqKkxpZ2h0IFNhZ2UqKiAoYCNlNWU3ZTBgKTogQnV0dG9uIGJhY2tncm91bmRzLCB0ZXJ0aWFyeSBzdXJmYWNlcyDigJQgbXV0ZWQgc2FnZS1ncmVlbgotICoqV2FybSBUYW4qKiAoYCNkNGM5YjhgKTogRmVhdHVyZWQgYnV0dG9uIGJhY2tncm91bmRzIOKAlCB3YXJtIHRhbi9raGFraSBmb3IgZW1waGFzaXMKLSAqKkhvdmVyIFdoaXRlKiogKGAjZjRmNGY0YCk6IFVuaXZlcnNhbCBob3ZlciBiYWNrZ3JvdW5kIHN0YXRlCgojIyMgTmV1dHJhbHMgJiBUZXh0Ci0gKipPbGl2ZSBJbmsqKiAoYCM0ZDRmNDZgKTogUHJpbWFyeSBib2R5IGFuZCBVSSB0ZXh0Ci0gKipNdXRlZCBPbGl2ZSoqIChgIzY1Njc1ZWApOiBTZWNvbmRhcnkgdGV4dCwgYnV0dG9uIGxhYmVscyBvbiBsaWdodCBiYWNrZ3JvdW5kcwotICoqU2FnZSBQbGFjZWhvbGRlcioqIChgIzllYTA5NmApOiBQbGFjZWhvbGRlciB0ZXh0LCBkaXNhYmxlZCBzdGF0ZXMg4oCUIHdhcm0gc2FnZS1ncmVlbgotICoqU2FnZSBCb3JkZXIqKiAoYCNiZmMxYjdgKTogUHJpbWFyeSBib3JkZXIgY29sb3Ig4oCUIG9saXZlLXRpbnRlZCBncmF5IGZvciBhbGwgYm9yZGVycwotICoqTGlnaHQgQm9yZGVyKiogKGAjYjZiN2FmYCk6IFNlY29uZGFyeSBib3JkZXIsIHRvb2xiYXIgYm9yZGVycyDigJQgc2xpZ2h0bHkgZGFya2VyIHNhZ2UKCiMjIyBTZW1hbnRpYyAmIEFjY2VudAotICoqUG9zdEhvZyBPcmFuZ2UqKiAoYCNGNTRFMDBgKTogSG92ZXIgdGV4dCBhY2NlbnQg4oCUIHNpZ25hbHMgaW50ZXJhY3Rpdml0eSBhbmQgYnJhbmQgcGVyc29uYWxpdHkKLSAqKkFtYmVyIEdvbGQqKiAoYCNGN0E1MDFgKTogRGFyayBidXR0b24gaG92ZXIgYWNjZW50IOKAlCB3YXJtdGggc2lnbmFsCi0gKipGb2N1cyBCbHVlKiogKGAjM2I4MmY2YCBhdCA1MCUgb3BhY2l0eSk6IEtleWJvYXJkIGZvY3VzIHJpbmdzIOKAlCBhY2Nlc3NpYmlsaXR5LW9ubHkgY29sb3IKLSAqKkRhcmsgVGV4dCoqIChgIzExMTgyN2ApOiBIaWdoLWNvbnRyYXN0IGxpbmsgdGV4dCDigJQgbmVhci1ibGFjayBmb3IgaW1wb3J0YW50IGxpbmtzCgojIyMgR3JhZGllbnQgU3lzdGVtCi0gTm8gZ3JhZGllbnRzIG9uIHRoZSBtYXJrZXRpbmcgc2l0ZSDigJQgUG9zdEhvZydzIHZpc3VhbCBsYW5ndWFnZSBpcyBkZWxpYmVyYXRlbHkgZmxhdCBhbmQgd2FybQotIERlcHRoIGlzIGFjaGlldmVkIHRocm91Z2ggbGF5ZXJlZCBzdXJmYWNlcyBhbmQgYm9yZGVyIGNvbnRhaW5tZW50LCBub3QgY29sb3IgdHJhbnNpdGlvbnMKCiMjIDMuIFR5cG9ncmFwaHkgUnVsZXMKCiMjIyBGb250IEZhbWlseQotICoqRGlzcGxheSAmIEJvZHkqKjogYElCTSBQbGV4IFNhbnMgVmFyaWFibGVgIOKAlCB2YXJpYWJsZSBmb250ICgxMDDigJM3MDArIHdlaWdodCByYW5nZSkuIEZhbGxiYWNrczogYElCTSBQbGV4IFNhbnMsIC1hcHBsZS1zeXN0ZW0sIHN5c3RlbS11aSwgQXZlbmlyIE5leHQsIEF2ZW5pciwgU2Vnb2UgVUksIEhlbHZldGljYSBOZXVlLCBIZWx2ZXRpY2EsIFVidW50dSwgUm9ib3RvLCBOb3RvLCBBcmlhbGAKLSAqKk1vbm9zcGFjZSoqOiBgdWktbW9ub3NwYWNlLCBTRk1vbm8tUmVndWxhciwgTWVubG8sIE1vbmFjbywgQ29uc29sYXMsIExpYmVyYXRpb24gTW9ubywgQ291cmllciBOZXdgIOKAlCBzeXN0ZW0gbW9ub3NwYWNlIHN0YWNrCi0gKipDb2RlIERpc3BsYXkqKjogYFNvdXJjZSBDb2RlIFByb2Ag4oCUIHdpdGggZmFsbGJhY2tzOiBgTWVubG8sIENvbnNvbGFzLCBNb25hY29gCgojIyMgSGllcmFyY2h5Cgp8IFJvbGUgfCBGb250IHwgU2l6ZSB8IFdlaWdodCB8IExpbmUgSGVpZ2h0IHwgTGV0dGVyIFNwYWNpbmcgfCBOb3RlcyB8CnwtLS0tLS18LS0tLS0tfC0tLS0tLXwtLS0tLS0tLXwtLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS18LS0tLS0tLXwKfCBEaXNwbGF5IEhlcm8gfCBJQk0gUGxleCBTYW5zIFZhcmlhYmxlIHwgMzBweCB8IDgwMCB8IDEuMjAgfCAtMC43NXB4IHwgRXh0cmEtYm9sZCwgdGlnaHQsIG1heGltdW0gaW1wYWN0IHwKfCBTZWN0aW9uIEhlYWRpbmcgfCBJQk0gUGxleCBTYW5zIFZhcmlhYmxlIHwgMzZweCB8IDcwMCB8IDEuNTAgfCAwcHggfCBMYXJnZSBidXQgZ2VuZXJvdXMgbGluZS1oZWlnaHQgfAp8IEZlYXR1cmUgSGVhZGluZyB8IElCTSBQbGV4IFNhbnMgVmFyaWFibGUgfCAyNHB4IHwgNzAwIHwgMS4zMyB8IDBweCB8IEZlYXR1cmUgc2VjdGlvbiB0aXRsZXMgfAp8IENhcmQgSGVhZGluZyB8IElCTSBQbGV4IFNhbnMgVmFyaWFibGUgfCAyMS40cHggfCA3MDAgfCAxLjQwIHwgLTAuNTRweCB8IFNsaWdodGx5IHVudXN1YWwgc2l6ZSAoc2NhbGVkKSB8CnwgU3ViLWhlYWRpbmcgfCBJQk0gUGxleCBTYW5zIFZhcmlhYmxlIHwgMjBweCB8IDcwMCB8IDEuNDAgfCAtMC41cHggfCBDb250ZW50IHN1Yi1zZWN0aW9ucyB8CnwgU3ViLWhlYWRpbmcgVXBwZXJjYXNlIHwgSUJNIFBsZXggU2FucyBWYXJpYWJsZSB8IDIwcHggfCA3MDAgfCAxLjQwIHwgMHB4IHwgVXBwZXJjYXNlIHRyYW5zZm9ybSBmb3IgbGFiZWxzIHwKfCBCb2R5IEVtcGhhc2lzIHwgSUJNIFBsZXggU2FucyBWYXJpYWJsZSB8IDE5LjNweCB8IDYwMCB8IDEuNTYgfCAtMC40OHB4IHwgU2VtaS1ib2xkIGNhbGxvdXQgdGV4dCB8CnwgTGFiZWwgVXBwZXJjYXNlIHwgSUJNIFBsZXggU2FucyBWYXJpYWJsZSB8IDE4cHggfCA3MDAgfCAxLjUwIHwgMHB4IHwgVXBwZXJjYXNlIGNhdGVnb3J5IGxhYmVscyB8CnwgQm9keSBTZW1pIHwgSUJNIFBsZXggU2FucyBWYXJpYWJsZSB8IDE4cHggfCA2MDAgfCAxLjU2IHwgMHB4IHwgU2VtaS1ib2xkIGJvZHkgdGV4dCB8CnwgQm9keSB8IElCTSBQbGV4IFNhbnMgVmFyaWFibGUgfCAxNnB4IHwgNDAwIHwgMS41MCB8IDBweCB8IFN0YW5kYXJkIHJlYWRpbmcgdGV4dCB8CnwgQm9keSBNZWRpdW0gfCBJQk0gUGxleCBTYW5zIFZhcmlhYmxlIHwgMTZweCB8IDUwMCB8IDEuNTAgfCAwcHggfCBNZWRpdW0td2VpZ2h0IGJvZHkgfAp8IEJvZHkgUmVsYXhlZCB8IElCTSBQbGV4IFNhbnMgVmFyaWFibGUgfCAxNXB4IHwgNDAwIHwgMS43MSB8IDBweCB8IFJlbGF4ZWQgbGluZS1oZWlnaHQgZm9yIGxvbmcgcmVhZHMgfAp8IE5hdiAvIFVJIHwgSUJNIFBsZXggU2FucyBWYXJpYWJsZSB8IDE1cHggfCA2MDAgfCAxLjUwIHwgMHB4IHwgTmF2aWdhdGlvbiBhbmQgVUkgbGFiZWxzIHwKfCBDYXB0aW9uIHwgSUJNIFBsZXggU2FucyBWYXJpYWJsZSB8IDE0cHggfCA0MDDigJM3MDAgfCAxLjQzIHwgMHB4IHwgU21hbGwgdGV4dCwgdmFyaW91cyB3ZWlnaHRzIHwKfCBTbWFsbCBMYWJlbCB8IElCTSBQbGV4IFNhbnMgVmFyaWFibGUgfCAxM3B4IHwgNTAw4oCTNzAwIHwgMS4wMOKAkzEuNTAgfCAwcHggfCBUYWdzLCBiYWRnZXMsIG1pY3JvIGxhYmVscyB8CnwgTWljcm8gfCBJQk0gUGxleCBTYW5zIFZhcmlhYmxlIHwgMTJweCB8IDQwMOKAkzcwMCB8IDEuMzMgfCAwcHggfCBTbWFsbGVzdCB0ZXh0LCBzb21lIHVwcGVyY2FzZSB8CnwgQ29kZSB8IFNvdXJjZSBDb2RlIFBybyB8IDE0cHggfCA1MDAgfCAxLjQzIHwgMHB4IHwgQ29kZSBzbmlwcGV0cyBhbmQgdGVybWluYWwgfAoKIyMjIFByaW5jaXBsZXMKLSAqKkJvbGQgaGVhZGluZyBkb21pbmFuY2UqKjogSGVhZGluZ3MgdXNlIDcwMOKAkzgwMCB3ZWlnaHQg4oCUIFBvc3RIb2cncyB0eXBvZ3JhcGh5IGlzIGNvbmZpZGVudCBhbmQgYXNzZXJ0aXZlLCBub3Qgd2hpc3BlcnkKLSAqKkdlbmVyb3VzIGJvZHkgbGluZS1oZWlnaHRzKio6IEJvZHkgdGV4dCBhdCAxLjUw4oCTMS43MSBsaW5lLWhlaWdodCBjcmVhdGVzIGV4dHJlbWVseSBjb21mb3J0YWJsZSByZWFkaW5nIOKAlCB0aGUgc2l0ZSBpcyBjb250ZW50LWhlYXZ5IGFuZCBvcHRpbWl6ZWQgZm9yIGxvbmcgc2Vzc2lvbnMKLSAqKkZyYWN0aW9uYWwgc2l6ZXMqKjogU2V2ZXJhbCBzaXplcyAoMjEuNHB4LCAxOS4zcHgsIDEzLjdweCkgc3VnZ2VzdCBhIGZsdWlkL3NjYWxlZCB0eXBlIHN5c3RlbSByYXRoZXIgdGhhbiBmaXhlZCBzdG9wcyDigJQgbGlrZWx5IGNvbXB1dGVkIGZyb20gVGFpbHdpbmQncyByZW0gc2NhbGUgYXQgbm9uLXN0YW5kYXJkIGJhc2UKLSAqKlVwcGVyY2FzZSBhcyBjYXRlZ29yeSBzaWduYWwqKjogQm9sZCB1cHBlcmNhc2UgbGFiZWxzICgxOHB44oCTMjBweCB3ZWlnaHQgNzAwKSBhcmUgdXNlZCBmb3IgcHJvZHVjdCBjYXRlZ29yeSBoZWFkaW5ncyDigJQgYSBtYWdhemluZS1lZGl0b3JpYWwgY29udmVudGlvbgotICoqU2VsZWN0aXZlIG5lZ2F0aXZlIHRyYWNraW5nKio6IExldHRlci1zcGFjaW5nIHRpZ2h0ZW5zIG9uIGRpc3BsYXkgdGV4dCAoLTAuNzVweCBhdCAzMHB4KSBidXQgcmVsYXhlcyB0byAwcHggb24gYm9keSDigJQgaGVhZGxpbmVzIGNvbXByZXNzLCBib2R5IGJyZWF0aGVzCgojIyA0LiBDb21wb25lbnQgU3R5bGluZ3MKCiMjIyBCdXR0b25zCi0gKipEYXJrIFByaW1hcnkqKjogYCMxZTFmMjNgIGJhY2tncm91bmQsIHdoaXRlIHRleHQsIDZweCByYWRpdXMsIGAxMHB4IDEycHhgIHBhZGRpbmcuIEhvdmVyOiBvcGFjaXR5IDAuNyB3aXRoIEFtYmVyIEdvbGQgdGV4dC4gQWN0aXZlOiBvcGFjaXR5IDAuOCB3aXRoIHNsaWdodCBzY2FsZSB0cmFuc2Zvcm0uIFRoZSBtYWluIENUQSDigJQgZGFyayBhbmQgY29uZmlkZW50Ci0gKipTYWdlIExpZ2h0Kio6IGAjZTVlN2UwYCBiYWNrZ3JvdW5kLCBPbGl2ZSBJbmsgKGAjNGQ0ZjQ2YCkgdGV4dCwgNHB4IHJhZGl1cywgYDRweGAgcGFkZGluZy4gSG92ZXI6IGAjZjRmNGY0YCBiZyB3aXRoIFBvc3RIb2cgT3JhbmdlIHRleHQuIENvbXBhY3QgdXRpbGl0eSBidXR0b24KLSAqKldhcm0gVGFuIEZlYXR1cmVkKio6IGAjZDRjOWI4YCBiYWNrZ3JvdW5kLCBibGFjayB0ZXh0LCBubyB2aXNpYmxlIHJhZGl1cy4gSG92ZXI6IHNhbWUgb3JhbmdlIHRleHQgZmxhc2guIEZlYXR1cmVkL3ByZW1pdW0gYWN0aW9ucwotICoqSW5wdXQtc3R5bGUqKjogYCNlZWVmZTlgIGJhY2tncm91bmQsIFNhZ2UgUGxhY2Vob2xkZXIgKGAjOWVhMDk2YCkgdGV4dCwgNHB4IHJhZGl1cywgMXB4IGAjYjZiN2FmYCBib3JkZXIuIExvb2tzIGxpa2UgYSBzZWFyY2gvZmlsdGVyIGNvbnRyb2wKLSAqKk5lYXItd2hpdGUgR2hvc3QqKjogYCNmZGZkZjhgIGJhY2tncm91bmQsIE9saXZlIEluayB0ZXh0LCA0cHggcmFkaXVzLCB0cmFuc3BhcmVudCAxcHggYm9yZGVyLiBNaW5pbWFsIHByZXNlbmNlCi0gKipIb3ZlciBwYXR0ZXJuKio6IEFsbCBidXR0b25zIGZsYXNoIFBvc3RIb2cgT3JhbmdlIChgI0Y1NEUwMGApIG9yIEFtYmVyIEdvbGQgKGAjRjdBNTAxYCkgdGV4dCBvbiBob3ZlciDigJQgdGhlIGJyYW5kJ3Mgc2lnbmF0dXJlIGludGVyYWN0aW9uIHN1cnByaXNlCgojIyMgQ2FyZHMgJiBDb250YWluZXJzCi0gKipCb3JkZXJlZCBDYXJkKio6IFdhcm0gUGFyY2htZW50IChgI2ZkZmRmOGApIG9yIHdoaXRlIGJhY2tncm91bmQsIDFweCBgI2JmYzFiN2AgYm9yZGVyLCA0cHjigJM2cHggcmFkaXVzIOKAlCBjbGVhbiBhbmQgbWluaW1hbAotICoqU2FnZSBTdXJmYWNlIENhcmQqKjogYCNlZWVmZTlgIGJhY2tncm91bmQgZm9yIHNlY29uZGFyeSBjb250ZW50IGNvbnRhaW5lcnMKLSAqKlNoYWRvdyBDYXJkKio6IGAwcHggMjVweCA1MHB4IC0xMnB4IHJnYmEoMCwgMCwgMCwgMC4yNSlgIOKAlCBhIHNpbmdsZSBkZWVwIHNoYWRvdyBmb3IgZWxldmF0ZWQgY29udGVudCAobW9kYWxzLCBkcm9wZG93bnMpCi0gKipIb3ZlcioqOiBPcmFuZ2UgdGV4dCBmbGFzaCBvbiBpbnRlcmFjdGl2ZSBjYXJkcyDigJQgY29uc2lzdGVudCB3aXRoIGJ1dHRvbiBiZWhhdmlvcgoKIyMjIElucHV0cyAmIEZvcm1zCi0gKipEZWZhdWx0Kio6IGAjZWVlZmU5YCBiYWNrZ3JvdW5kLCBgIzllYTA5NmAgcGxhY2Vob2xkZXIgdGV4dCwgMXB4IGAjYjZiN2FmYCBib3JkZXIsIDRweCByYWRpdXMsIGAycHggMHB4IDJweCA4cHhgIHBhZGRpbmcKLSAqKkZvY3VzKio6IGAjM2I4MmY2YCByaW5nIGF0IDUwJSBvcGFjaXR5IChUYWlsd2luZCBibHVlIGZvY3VzIHJpbmcpCi0gKipUZXh0IGNvbG9yKio6IGAjMzc0MTUxYCBmb3IgaW5wdXQgdmFsdWVzIOKAlCBkYXJrZXIgdGhhbiBwcmltYXJ5IHRleHQgZm9yIHJlYWRhYmlsaXR5Ci0gKipCb3JkZXIgdmFyaWF0aW9ucyoqOiBNdWx0aXBsZSBib3JkZXIgcGF0dGVybnMg4oCUIHNvbWUgaW5wdXRzIHVzZSBjb21wb3VuZCBib3JkZXJzICh0b3AsIGxlZnQsIGJvdHRvbS1vbmx5KQoKIyMjIE5hdmlnYXRpb24KLSAqKlRvcCBuYXYqKjogV2FybSBiYWNrZ3JvdW5kLCBJQk0gUGxleCBTYW5zIGF0IDE1cHggd2VpZ2h0IDYwMAotICoqRHJvcGRvd24gbWVudXMqKjogUmljaCBtZWdhLW1lbnUgc3RydWN0dXJlIHdpdGggcHJvZHVjdCBjYXRlZ29yaWVzCi0gKipMaW5rIGNvbG9yKio6IERlZXAgT2xpdmUgKGAjMjMyNTFkYCkgZm9yIG5hdiBsaW5rcywgdW5kZXJsaW5lIG9uIGhvdmVyCi0gKipDVEEqKjogRGFyayBQcmltYXJ5IGJ1dHRvbiAoIzFlMWYyMykgaW4gdGhlIG5hdiDigJQgIkdldCBzdGFydGVkIC0gZnJlZSIKLSAqKk1vYmlsZSoqOiBDb2xsYXBzZXMgdG8gaGFtYnVyZ2VyIHdpdGggc2ltcGxpZmllZCBtZW51CgojIyMgSW1hZ2UgVHJlYXRtZW50Ci0gKipIYW5kLWRyYXduIGlsbHVzdHJhdGlvbnMqKjogSGVkZ2Vob2cgbWFzY290IGFuZCBxdWlya3kgaWxsdXN0cmF0aW9ucyDigJQgdGhlIHNpZ25hdHVyZSB2aXN1YWwgZWxlbWVudAotICoqUHJvZHVjdCBzY3JlZW5zaG90cyoqOiBVSSBzY3JlZW5zaG90cyBlbWJlZGRlZCBpbiBkZXZpY2UgZnJhbWVzIG9yIGNsZWFuIGNvbnRhaW5lcnMKLSAqKkFjdGlvbiBmaWd1cmVzKio6IFBsYXlmdWwgcHJvZHVjdCBwaG90b2dyYXBoeSBvZiBoZWRnZWhvZyBmaWd1cmluZXMg4oCUIGFudGktY29ycG9yYXRlCi0gKipUcnVzdCBsb2dvcyoqOiBFbnRlcnByaXNlIGxvZ29zIChBaXJidXMsIEdPVi5VSykgZGlzcGxheWVkIGluIGEgbXV0ZWQgdHJ1c3QgYmFyCi0gKipBc3BlY3QgcmF0aW9zKio6IE1peGVkIOKAlCBpbGx1c3RyYXRpb25zIGFyZSBpcnJlZ3VsYXIsIHNjcmVlbnNob3RzIGFyZSAxNjo5IG9yIHdpZGVzY3JlZW4KCiMjIyBBSSBDaGF0IFdpZGdldAotIEZsb2F0aW5nIFBvc3RIb2cgQUkgYXNzaXN0YW50IHdpdGggc3BlZWNoIGJ1YmJsZSDigJQgYW4gaW50ZXJhY3RpdmUgcHJvZHVjdCBkZW1vIGVtYmVkZGVkIGluIHRoZSBtYXJrZXRpbmcgc2l0ZQoKIyMgNS4gTGF5b3V0IFByaW5jaXBsZXMKCiMjIyBTcGFjaW5nIFN5c3RlbQotICoqQmFzZSB1bml0Kio6IDhweAotICoqU2NhbGUqKjogMnB4LCA0cHgsIDZweCwgOHB4LCAxMHB4LCAxMnB4LCAxNnB4LCAxOHB4LCAyNHB4LCAzMnB4LCAzNHB4Ci0gKipTZWN0aW9uIHBhZGRpbmcqKjogMzJweOKAkzQ4cHggdmVydGljYWwgYmV0d2VlbiBzZWN0aW9ucyAoY29tcGFjdCBmb3IgYSBjb250ZW50LWhlYXZ5IHNpdGUpCi0gKipDYXJkIHBhZGRpbmcqKjogNHB44oCTMTJweCBpbnRlcm5hbCAobm90YWJseSBjb21wYWN0KQotICoqQ29tcG9uZW50IGdhcHMqKjogNHB44oCTOHB4IGJldHdlZW4gcmVsYXRlZCBlbGVtZW50cwoKIyMjIEdyaWQgJiBDb250YWluZXIKLSAqKk1heCB3aWR0aCoqOiAxNTM2cHggKGxhcmdlc3QgYnJlYWtwb2ludCksIHdpdGggY29udGVudCBjb250YWluZXJzIGxpa2VseSAxMjAwcHjigJMxMjgwcHgKLSAqKkNvbHVtbiBwYXR0ZXJucyoqOiBWYXJpZWQg4oCUIHNpbmdsZSBjb2x1bW4gZm9yIHRleHQgY29udGVudCwgMi0zIGNvbHVtbiBncmlkcyBmb3IgZmVhdHVyZSBjYXJkcywgYXN5bW1ldHJpYyBsYXlvdXRzIGZvciBwcm9kdWN0IGRlbW9zCi0gKipCcmVha3BvaW50cyoqOiAxMyBkZWZpbmVkIOKAlCAxcHgsIDQyNXB4LCA0ODJweCwgNjQwcHgsIDc2OHB4LCA3NjdweCwgODAwcHgsIDkwMHB4LCAxMDI0cHgsIDEwNzZweCwgMTE2MHB4LCAxMjgwcHgsIDE1MzZweAoKIyMjIFdoaXRlc3BhY2UgUGhpbG9zb3BoeQotICoqQ29udGVudC1kZW5zZSBieSBkZXNpZ24qKjogUG9zdEhvZydzIHNpdGUgaXMgaW5mb3JtYXRpb24tcmljaCDigJQgd2hpdGVzcGFjZSBpcyBtZWFzdXJlZCwgbm90IGxhdmlzaAotICoqRWRpdG9yaWFsIHBhY2luZyoqOiBDb250ZW50IHNlY3Rpb25zIGZsb3cgbGlrZSBhIG1hZ2F6aW5lIHdpdGggdmFyaWVkIGxheW91dHMga2VlcGluZyB0aGUgZXllIG1vdmluZwotICoqSWxsdXN0cmF0aW9ucyBhcyBicmVhdGhpbmcgcm9vbSoqOiBIYW5kLWRyYXduIGhlZGdlaG9nIGFydCBicmVha3MgdXAgZGVuc2UgY29udGVudCBzZWN0aW9ucyBuYXR1cmFsbHkKCiMjIyBCb3JkZXIgUmFkaXVzIFNjYWxlCi0gKioycHgqKjogU21hbGwgaW5saW5lIGVsZW1lbnRzLCB0YWdzIChgc3BhbmApCi0gKio0cHgqKjogUHJpbWFyeSBVSSBjb21wb25lbnRzIOKAlCBidXR0b25zLCBpbnB1dHMsIGRyb3Bkb3ducywgbWVudSBpdGVtcyAoYGJ1dHRvbmAsIGBkaXZgLCBgY29tYm9ib3hgKQotICoqNnB4Kio6IFNlY29uZGFyeSBjb250YWluZXJzIOKAlCBsYXJnZXIgYnV0dG9ucywgbGlzdCBpdGVtcywgY2FyZCB2YXJpYW50cyAoYGJ1dHRvbmAsIGBkaXZgLCBgbGlgKQotICoqOTk5OXB4Kio6IFBpbGwgc2hhcGUg4oCUIGJhZGdlcywgc3RhdHVzIGluZGljYXRvcnMsIHJvdW5kZWQgdGFncyAoYHNwYW5gLCBgZGl2YCkKCiMjIDYuIERlcHRoICYgRWxldmF0aW9uCgp8IExldmVsIHwgVHJlYXRtZW50IHwgVXNlIHwKfC0tLS0tLS18LS0tLS0tLS0tLS18LS0tLS18CnwgTGV2ZWwgMCAoRmxhdCkgfCBObyBzaGFkb3csIHdhcm0gcGFyY2htZW50IGJhY2tncm91bmQgfCBQYWdlIGNhbnZhcywgbW9zdCBzdXJmYWNlcyB8CnwgTGV2ZWwgMSAoQm9yZGVyKSB8IGAxcHggc29saWQgI2JmYzFiN2AgKFNhZ2UgQm9yZGVyKSB8IENhcmQgY29udGFpbm1lbnQsIGlucHV0IGJvcmRlcnMsIHNlY3Rpb24gZGl2aWRlcnMgfAp8IExldmVsIDIgKENvbXBvdW5kIEJvcmRlcikgfCBNdWx0aXBsZSAxcHggYm9yZGVycyBvbiBkaWZmZXJlbnQgc2lkZXMgfCBJbnB1dCBncm91cGluZ3MsIHRvb2xiYXIgZWxlbWVudHMgfAp8IExldmVsIDMgKERlZXAgU2hhZG93KSB8IGAwcHggMjVweCA1MHB4IC0xMnB4IHJnYmEoMCwgMCwgMCwgMC4yNSlgIHwgTW9kYWxzLCBmbG9hdGluZyBlbGVtZW50cywgbWVnYS1tZW51IGRyb3Bkb3ducyB8CgojIyMgU2hhZG93IFBoaWxvc29waHkKUG9zdEhvZydzIGVsZXZhdGlvbiBzeXN0ZW0gaXMgcmVtYXJrYWJseSBtaW5pbWFsIOKAlCBvbmx5IG9uZSBzaGFkb3cgZGVmaW5pdGlvbiBleGlzdHMgaW4gdGhlIGVudGlyZSBzeXN0ZW0uIERlcHRoIGlzIGNvbW11bmljYXRlZCB0aHJvdWdoOgotICoqQm9yZGVyIGNvbnRhaW5tZW50Kio6IFNhZ2UtdGludGVkIGJvcmRlcnMgKGAjYmZjMWI3YCkgYXQgMXB4IGNyZWF0ZSBnZW50bGUgd2FybSBzZXBhcmF0aW9uCi0gKipTdXJmYWNlIGNvbG9yIHNoaWZ0cyoqOiBNb3ZpbmcgZnJvbSBgI2ZkZmRmOGAgdG8gYCNlZWVmZTlgIHRvIGAjZTVlN2UwYCBjcmVhdGVzIGxheWVyZWQgZGVwdGggd2l0aG91dCBzaGFkb3dzCi0gKipUaGUgc2luZ2xlIHNoYWRvdyoqOiBUaGUgb25lIGRlZmluZWQgc2hhZG93IChgMCAyNXB4IDUwcHggLTEycHhgKSBpcyByZXNlcnZlZCBmb3IgZmxvYXRpbmcgZWxlbWVudHMg4oCUIG1vZGFscywgZHJvcGRvd25zLCBwb3BvdmVycy4gSXQncyBhIGRlZXAsIGRyYW1hdGljIHNoYWRvdyB0aGF0IGNyZWF0ZXMgY2xlYXIgc2VwYXJhdGlvbiB3aGVuIG5lZWRlZAoKIyMjIERlY29yYXRpdmUgRGVwdGgKLSAqKklsbHVzdHJhdGlvbiBsYXllcmluZyoqOiBIYW5kLWRyYXduIGhlZGdlaG9nIGFydCBjcmVhdGVzIHZpc3VhbCBkZXB0aCBuYXR1cmFsbHkKLSAqKk5vIGdyYWRpZW50cyBvciBnbG93Kio6IFRoZSBmbGF0LCB3YXJtIHN1cmZhY2Ugc3lzdGVtIHJlbGllcyBlbnRpcmVseSBvbiBib3JkZXIgYW5kIHN1cmZhY2UtY29sb3IgZGlmZmVyZW50aWF0aW9uCi0gKipObyBnbGFzc21vcnBoaXNtKio6IEZ1bGx5IG9wYXF1ZSBzdXJmYWNlcyB0aHJvdWdob3V0CgojIyA3LiBEbydzIGFuZCBEb24ndHMKCiMjIyBEbwotIFVzZSB0aGUgb2xpdmUvc2FnZSBjb2xvciBmYW1pbHkgKCM0ZDRmNDYsICMyMzI1MWQsICNiZmMxYjcpIGZvciB0ZXh0IGFuZCBib3JkZXJzIOKAlCB0aGUgd2FybSBncmVlbiB1bmRlcnRvbmUgaXMgZXNzZW50aWFsIHRvIHRoZSBicmFuZAotIEZsYXNoIFBvc3RIb2cgT3JhbmdlICgjRjU0RTAwKSBvbiBob3ZlciBzdGF0ZXMg4oCUIGl0J3MgdGhlIGhpZGRlbiBicmFuZCBzaWduYXR1cmUKLSBVc2UgSUJNIFBsZXggU2FucyBhdCBib2xkIHdlaWdodHMgKDcwMC84MDApIGZvciBoZWFkaW5ncyDigJQgdGhlIGZvbnQgY2FycmllcyB0ZWNobmljYWwgY3JlZGliaWxpdHkKLSBLZWVwIGJvZHkgdGV4dCBhdCBnZW5lcm91cyBsaW5lLWhlaWdodHMgKDEuNTDigJMxLjcxKSDigJQgdGhlIGNvbnRlbnQtaGVhdnkgc2l0ZSBkZW1hbmRzIHJlYWRhYmlsaXR5Ci0gTWFpbnRhaW4gdGhlIHdhcm0gcGFyY2htZW50IGJhY2tncm91bmQgKCNmZGZkZjgpIOKAlCBub3QgcHVyZSB3aGl0ZSwgbmV2ZXIgY29sZAotIFVzZSA0cHggYm9yZGVyLXJhZGl1cyBmb3IgbW9zdCBVSSBlbGVtZW50cyDigJQga2VlcCBjb3JuZXJzIHN1YnRsZSBhbmQgZnVuY3Rpb25hbAotIEluY2x1ZGUgcGxheWZ1bCwgaGFuZC1kcmF3biBpbGx1c3RyYXRpb24gZWxlbWVudHMg4oCUIHRoZSBwZXJzb25hbGl0eSBpcyB0aGUgZGlmZmVyZW50aWF0b3IKLSBBcHBseSBvcGFjaXR5LWJhc2VkIGhvdmVyIHN0YXRlcyAoMC43IG9wYWNpdHkpIG9uIGRhcmsgYnV0dG9ucyByYXRoZXIgdGhhbiBjb2xvciBzaGlmdHMKCiMjIyBEb24ndAotIFVzZSBibHVlLCBwdXJwbGUsIG9yIHR5cGljYWwgdGVjaC1TYWFTIGNvbG9ycyDigJQgUG9zdEhvZydzIHBhbGV0dGUgaXMgZGVsaWJlcmF0ZWx5IG9saXZlL3NhZ2UKLSBBZGQgaGVhdnkgc2hhZG93cyDigJQgdGhlIHN5c3RlbSB1c2VzIG9uZSBzaGFkb3cgZm9yIGZsb2F0aW5nIGVsZW1lbnRzIG9ubHk7IGV2ZXJ5dGhpbmcgZWxzZSB1c2VzIGJvcmRlcnMKLSBNYWtlIHRoZSBkZXNpZ24gbG9vayAicG9saXNoZWQiIG9yICJwcmVtaXVtIiBpbiBhIGNvbnZlbnRpb25hbCBzZW5zZSDigJQgUG9zdEhvZydzIGNoYXJtIGlzIGl0cyBpcnJldmVyZW50LCBzY3JhcHB5IGVuZXJneQotIFVzZSB0aWdodCBsaW5lLWhlaWdodHMgb24gYm9keSB0ZXh0IOKAlCB0aGUgZ2VuZXJvdXMgMS41MCsgc3BhY2luZyBpcyBlc3NlbnRpYWwgZm9yIHRoZSBjb250ZW50LWhlYXZ5IGxheW91dAotIEFwcGx5IGxhcmdlIGJvcmRlci1yYWRpdXMgKDEycHgrKSBvbiBjYXJkcyDigJQgUG9zdEhvZyB1c2VzIDRweOKAkzZweCwga2VlcGluZyB0aGluZ3MgdGlnaHQgYW5kIGZ1bmN0aW9uYWwKLSBSZW1vdmUgdGhlIG9yYW5nZSBob3ZlciBmbGFzaCDigJQgaXQncyBhIGNvcmUgaW50ZXJhY3Rpb24gcGF0dGVybiwgbm90IGRlY29yYXRpb24KLSBSZXBsYWNlIGlsbHVzdHJhdGlvbnMgd2l0aCBzdG9jayBwaG90b2dyYXBoeSDigJQgdGhlIGhhbmQtZHJhd24gaGVkZ2Vob2cgYXJ0IGlzIHRoZSBicmFuZAotIFVzZSBwdXJlIHdoaXRlICgjZmZmZmZmKSBhcyBwYWdlIGJhY2tncm91bmQg4oCUIHRoZSB3YXJtIHNhZ2UtY3JlYW0gKCNmZGZkZjgpIHRpbnQgaXMgZm91bmRhdGlvbmFsCgojIyA4LiBSZXNwb25zaXZlIEJlaGF2aW9yCgojIyMgQnJlYWtwb2ludHMKfCBOYW1lIHwgV2lkdGggfCBLZXkgQ2hhbmdlcyB8CnwtLS0tLS18LS0tLS0tLXwtLS0tLS0tLS0tLS0tfAp8IE1vYmlsZSBTbWFsbCB8IDw0MjVweCB8IFNpbmdsZSBjb2x1bW4sIGNvbXBhY3QgcGFkZGluZywgc3RhY2tlZCBjYXJkcyB8CnwgTW9iaWxlIHwgNDI1cHjigJM2NDBweCB8IFNsaWdodCBsYXlvdXQgYWRqdXN0bWVudHMsIGxhcmdlciB0b3VjaCB0YXJnZXRzIHwKfCBUYWJsZXQgfCA2NDBweOKAkzc2OHB4IHwgMi1jb2x1bW4gZ3JpZHMgYmVnaW4sIG5hdiBwYXJ0aWFsbHkgdmlzaWJsZSB8CnwgVGFibGV0IExhcmdlIHwgNzY4cHjigJMxMDI0cHggfCBNdWx0aS1jb2x1bW4gbGF5b3V0cywgZXhwYW5kZWQgbmF2aWdhdGlvbiB8CnwgRGVza3RvcCB8IDEwMjRweOKAkzEyODBweCB8IEZ1bGwgbGF5b3V0LCAzLWNvbHVtbiBmZWF0dXJlIGdyaWRzLCBleHBhbmRlZCBtZWdhLW1lbnUgfAp8IExhcmdlIERlc2t0b3AgfCAxMjgwcHjigJMxNTM2cHggfCBNYXgtd2lkdGggY29udGFpbmVyLCBnZW5lcm91cyBtYXJnaW5zIHwKfCBFeHRyYSBMYXJnZSB8ID4xNTM2cHggfCBDZW50ZXJlZCBjb250YWluZXIgYXQgbWF4LXdpZHRoIHwKCiMjIyBUb3VjaCBUYXJnZXRzCi0gQnV0dG9uczogNHB44oCTNnB4IHJhZGl1cyB3aXRoIGA0cHjigJMxMnB4YCBwYWRkaW5nIOKAlCBjb21wYWN0IGJ1dCB1c2FibGUKLSBOYXYgbGlua3M6IDE1cHggdGV4dCBhdCB3ZWlnaHQgNjAwIHdpdGggYWRlcXVhdGUgcGFkZGluZwotIE1vYmlsZTogSGFtYnVyZ2VyIG1lbnUgd2l0aCBzaW1wbGlmaWVkIG5hdmlnYXRpb24KLSBJbnB1dHM6IEdlbmVyb3VzIHZlcnRpY2FsIHBhZGRpbmcgZm9yIHRodW1iLWZyaWVuZGx5IGZvcm1zCgojIyMgQ29sbGFwc2luZyBTdHJhdGVneQotICoqTmF2aWdhdGlvbioqOiBGdWxsIG1lZ2EtbWVudSB3aXRoIGRyb3Bkb3ducyDihpIgaGFtYnVyZ2VyIG1lbnUgb24gbW9iaWxlCi0gKipGZWF0dXJlIGdyaWRzKio6IDMtY29sdW1uIOKGkiAyLWNvbHVtbiDihpIgc2luZ2xlIGNvbHVtbiBzdGFja2VkCi0gKipUeXBvZ3JhcGh5Kio6IERpc3BsYXkgc2l6ZXMgcmVkdWNlIGFjcm9zcyBicmVha3BvaW50cyAoMzBweCDihpIgc21hbGxlcikKLSAqKklsbHVzdHJhdGlvbnMqKjogU2NhbGUgd2l0aGluIGNvbnRhaW5lcnMsIHNvbWUgbWF5IGhpZGUgb24gbW9iaWxlIGZvciBzcGFjZQotICoqU2VjdGlvbiBzcGFjaW5nKio6IFJlZHVjZXMgcHJvcG9ydGlvbmFsbHkgd2hpbGUgbWFpbnRhaW5pbmcgcmVhZGFiaWxpdHkKCiMjIyBJbWFnZSBCZWhhdmlvcgotIElsbHVzdHJhdGlvbnMgc2NhbGUgcmVzcG9uc2l2ZWx5IHdpdGhpbiBjb250YWluZXJzCi0gUHJvZHVjdCBzY3JlZW5zaG90cyBtYWludGFpbiBhc3BlY3QgcmF0aW9zCi0gVHJ1c3QgbG9nb3MgcmVmbG93IGludG8gbXVsdGktcm93IGdyaWRzIG9uIG1vYmlsZQotIEFJIGNoYXQgd2lkZ2V0IG1heSByZXBvc2l0aW9uIG9yIHNpbXBsaWZ5IG9uIHNtYWxsIHNjcmVlbnMKCiMjIDkuIEFnZW50IFByb21wdCBHdWlkZQoKIyMjIFF1aWNrIENvbG9yIFJlZmVyZW5jZQotIFByaW1hcnkgVGV4dDogT2xpdmUgSW5rIChgIzRkNGY0NmApCi0gRGFyayBUZXh0OiBEZWVwIE9saXZlIChgIzIzMjUxZGApCi0gSG92ZXIgQWNjZW50OiBQb3N0SG9nIE9yYW5nZSAoYCNGNTRFMDBgKQotIERhcmsgQ1RBOiBOZWFyLUJsYWNrIChgIzFlMWYyM2ApCi0gQnV0dG9uIFN1cmZhY2U6IExpZ2h0IFNhZ2UgKGAjZTVlN2UwYCkKLSBQYWdlIEJhY2tncm91bmQ6IFdhcm0gUGFyY2htZW50IChgI2ZkZmRmOGApCi0gQm9yZGVyOiBTYWdlIEJvcmRlciAoYCNiZmMxYjdgKQotIFBsYWNlaG9sZGVyOiBTYWdlIFBsYWNlaG9sZGVyIChgIzllYTA5NmApCgojIyMgRXhhbXBsZSBDb21wb25lbnQgUHJvbXB0cwotICJDcmVhdGUgYSBoZXJvIHNlY3Rpb24gb24gd2FybSBwYXJjaG1lbnQgYmFja2dyb3VuZCAoI2ZkZmRmOCkgd2l0aCAzMHB4IElCTSBQbGV4IFNhbnMgaGVhZGluZyBhdCB3ZWlnaHQgODAwLCBsaW5lLWhlaWdodCAxLjIwLCBsZXR0ZXItc3BhY2luZyAtMC43NXB4LCBvbGl2ZSBpbmsgdGV4dCAoIzRkNGY0NiksIGFuZCBhIGRhcmsgQ1RBIGJ1dHRvbiAoIzFlMWYyMywgNnB4IHJhZGl1cywgd2hpdGUgdGV4dCwgb3BhY2l0eSAwLjcgb24gaG92ZXIpIgotICJEZXNpZ24gYSBmZWF0dXJlIGNhcmQgd2l0aCAjZmRmZGY4IGJhY2tncm91bmQsIDFweCAjYmZjMWI3IGJvcmRlciwgNHB4IHJhZGl1cywgSUJNIFBsZXggU2FucyBoZWFkaW5nIGF0IDIwcHggd2VpZ2h0IDcwMCwgYW5kIDE2cHggYm9keSB0ZXh0IGF0IHdlaWdodCA0MDAgd2l0aCAxLjUwIGxpbmUtaGVpZ2h0IGluIG9saXZlIGluayAoIzRkNGY0NikiCi0gIkJ1aWxkIGEgbmF2aWdhdGlvbiBiYXIgd2l0aCB3YXJtIGJhY2tncm91bmQsIElCTSBQbGV4IFNhbnMgbGlua3MgYXQgMTVweCB3ZWlnaHQgNjAwIGluIGRlZXAgb2xpdmUgKCMyMzI1MWQpLCB1bmRlcmxpbmUgb24gaG92ZXIsIGFuZCBhIGRhcmsgQ1RBIGJ1dHRvbiAoIzFlMWYyMykgYXQgdGhlIHJpZ2h0IgotICJDcmVhdGUgYSBidXR0b24gZ3JvdXA6IHByaW1hcnkgZGFyayAoIzFlMWYyMywgd2hpdGUgdGV4dCwgNnB4IHJhZGl1cyksIHNlY29uZGFyeSBzYWdlICgjZTVlN2UwLCAjNGQ0ZjQ2IHRleHQsIDRweCByYWRpdXMpLCBhbmQgZ2hvc3QvdGV4dCBidXR0b24g4oCUIGFsbCBmbGFzaCAjRjU0RTAwIG9yYW5nZSB0ZXh0IG9uIGhvdmVyIgotICJEZXNpZ24gYW4gaW5wdXQgZmllbGQgd2l0aCAjZWVlZmU5IGJhY2tncm91bmQsIDFweCAjYjZiN2FmIGJvcmRlciwgNHB4IHJhZGl1cywgIzllYTA5NiBwbGFjZWhvbGRlciB0ZXh0LCBmb2N1cyByaW5nIGluICMzYjgyZjYgYXQgNTAlIG9wYWNpdHkiCgojIyMgSXRlcmF0aW9uIEd1aWRlCldoZW4gcmVmaW5pbmcgZXhpc3Rpbmcgc2NyZWVucyBnZW5lcmF0ZWQgd2l0aCB0aGlzIGRlc2lnbiBzeXN0ZW06CjEuIFZlcmlmeSB0aGUgYmFja2dyb3VuZCBpcyB3YXJtIHBhcmNobWVudCAoI2ZkZmRmOCkgbm90IHB1cmUgd2hpdGUg4oCUIHRoZSBzYWdlLWNyZWFtIHdhcm10aCBpcyBlc3NlbnRpYWwKMi4gQ2hlY2sgdGhhdCBhbGwgdGV4dCB1c2VzIHRoZSBvbGl2ZSBmYW1pbHkgKCM0ZDRmNDYsICMyMzI1MWQpIG5vdCBwdXJlIGJsYWNrIG9yIG5ldXRyYWwgZ3JheQozLiBFbnN1cmUgaG92ZXIgc3RhdGVzIGZsYXNoIFBvc3RIb2cgT3JhbmdlICgjRjU0RTAwKSDigJQgaWYgaG92ZXJpbmcgZmVlbHMgYmxhbmQsIHlvdSdyZSBtaXNzaW5nIHRoaXMKNC4gQ29uZmlybSBib3JkZXJzIHVzZSBzYWdlLXRpbnRlZCBncmF5ICgjYmZjMWI3KSBub3QgbmV1dHJhbCBncmF5IOKAlCB3YXJtdGggcnVucyB0aHJvdWdoIGV2ZXJ5IGVsZW1lbnQKNS4gVGhlIG92ZXJhbGwgdG9uZSBzaG91bGQgZmVlbCBsaWtlIGEgZnVuLCBzY3JhcHB5IHN0YXJ0dXAgd2lraSDigJQgbmV2ZXIgY29ycG9yYXRlLXBvbGlzaGVkIG9yIHN0ZXJpbGUK
+# Design System: PostHog
+
+
+> **Hermes Agent — Implementation Notes**
+>
+> The original site uses proprietary fonts. For self-contained HTML output, use these CDN substitutes:
+> - **Primary:** `Inter` | **Mono:** `JetBrains Mono`
+> - **Font stack (CSS):** `font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;`
+> - **Mono stack (CSS):** `font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;`
+> ```html
+> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+> ```
+> Use `write_file` to create HTML, serve via `generative-widgets` skill (cloudflared tunnel).
+> Verify visual accuracy with `browser_vision` after generating.
+
+## 1. Visual Theme & Atmosphere
+
+PostHog's website feels like a startup's internal wiki that escaped into the wild — warm, irreverent, and deliberately anti-corporate. The background isn't the expected crisp white or dark void of developer tools; it's a warm, sage-tinted cream (`#fdfdf8`) that gives every surface a handmade, paper-like quality. Colors lean into earthy olive greens and muted sage rather than the conventional blues and purples of the SaaS world. It's as if someone designed a developer analytics platform inside a cozy garden shed.
+
+The personality is the star: hand-drawn hedgehog illustrations, quirky action figures, and playful imagery replace the stock photography and abstract gradients typical of B2B SaaS. IBM Plex Sans Variable serves as the typographic foundation — a font with genuine technical credibility (created by IBM, widely used in developer contexts) deployed here with bold weights (700, 800) on headings and generous line-heights on body text. The typography says "we're serious engineers" while everything around it says "but we don't take ourselves too seriously."
+
+The interaction design carries the same spirit: hover states flash PostHog Orange (`#F54E00`) text — a hidden brand color that doesn't appear at rest but surprises on interaction. Dark near-black buttons (`#1e1f23`) use opacity reduction on hover rather than color shifts, and active states scale slightly. The border system uses sage-tinted grays (`#bfc1b7`) that harmonize with the olive text palette. Built on Tailwind CSS with Radix UI and shadcn/ui primitives, the technical foundation is modern and component-driven, but the visual output is stubbornly unique.
+
+**Key Characteristics:**
+- Warm sage/olive color palette instead of conventional blues — earthy and approachable
+- IBM Plex Sans Variable font at bold weights (700/800) for headings with generous 1.50+ line-heights
+- Hidden brand orange (`#F54E00`) that only appears on hover interactions — a delightful surprise
+- Hand-drawn hedgehog illustrations and playful imagery — deliberately anti-corporate
+- Sage-tinted borders (`#bfc1b7`) and backgrounds (`#eeefe9`) creating a unified warm-green system
+- Dark near-black CTAs (`#1e1f23`) with opacity-based hover states
+- Content-heavy editorial layout — the site reads like a magazine, not a typical landing page
+- Tailwind CSS + Radix UI + shadcn/ui component architecture
+
+## 2. Color Palette & Roles
+
+### Primary
+- **Olive Ink** (`#4d4f46`): Primary text color — a distinctive olive-gray that gives all text a warm, earthy tone
+- **Deep Olive** (`#23251d`): Link text and high-emphasis headings — near-black with green undertone
+- **PostHog Orange** (`#F54E00`): Hidden brand accent — appears only on hover states, a vibrant orange that surprises
+
+### Secondary & Accent
+- **Amber Gold** (`#F7A501`): Secondary hover accent on dark buttons — warm gold that pairs with the orange
+- **Gold Border** (`#b17816`): Special button borders — an amber-gold for featured CTAs
+- **Focus Blue** (`#3b82f6`): Focus ring color (Tailwind default) — the only blue in the system, reserved for accessibility
+
+### Surface & Background
+- **Warm Parchment** (`#fdfdf8`): Primary page background — warm near-white with yellow-green undertone
+- **Sage Cream** (`#eeefe9`): Input backgrounds, secondary surfaces — light sage tint
+- **Light Sage** (`#e5e7e0`): Button backgrounds, tertiary surfaces — muted sage-green
+- **Warm Tan** (`#d4c9b8`): Featured button backgrounds — warm tan/khaki for emphasis
+- **Hover White** (`#f4f4f4`): Universal hover background state
+
+### Neutrals & Text
+- **Olive Ink** (`#4d4f46`): Primary body and UI text
+- **Muted Olive** (`#65675e`): Secondary text, button labels on light backgrounds
+- **Sage Placeholder** (`#9ea096`): Placeholder text, disabled states — warm sage-green
+- **Sage Border** (`#bfc1b7`): Primary border color — olive-tinted gray for all borders
+- **Light Border** (`#b6b7af`): Secondary border, toolbar borders — slightly darker sage
+
+### Semantic & Accent
+- **PostHog Orange** (`#F54E00`): Hover text accent — signals interactivity and brand personality
+- **Amber Gold** (`#F7A501`): Dark button hover accent — warmth signal
+- **Focus Blue** (`#3b82f6` at 50% opacity): Keyboard focus rings — accessibility-only color
+- **Dark Text** (`#111827`): High-contrast link text — near-black for important links
+
+### Gradient System
+- No gradients on the marketing site — PostHog's visual language is deliberately flat and warm
+- Depth is achieved through layered surfaces and border containment, not color transitions
+
+## 3. Typography Rules
+
+### Font Family
+- **Display & Body**: `IBM Plex Sans Variable` — variable font (100–700+ weight range). Fallbacks: `IBM Plex Sans, -apple-system, system-ui, Avenir Next, Avenir, Segoe UI, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Arial`
+- **Monospace**: `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New` — system monospace stack
+- **Code Display**: `Source Code Pro` — with fallbacks: `Menlo, Consolas, Monaco`
+
+### Hierarchy
+
+| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
+|------|------|------|--------|-------------|----------------|-------|
+| Display Hero | IBM Plex Sans Variable | 30px | 800 | 1.20 | -0.75px | Extra-bold, tight, maximum impact |
+| Section Heading | IBM Plex Sans Variable | 36px | 700 | 1.50 | 0px | Large but generous line-height |
+| Feature Heading | IBM Plex Sans Variable | 24px | 700 | 1.33 | 0px | Feature section titles |
+| Card Heading | IBM Plex Sans Variable | 21.4px | 700 | 1.40 | -0.54px | Slightly unusual size (scaled) |
+| Sub-heading | IBM Plex Sans Variable | 20px | 700 | 1.40 | -0.5px | Content sub-sections |
+| Sub-heading Uppercase | IBM Plex Sans Variable | 20px | 700 | 1.40 | 0px | Uppercase transform for labels |
+| Body Emphasis | IBM Plex Sans Variable | 19.3px | 600 | 1.56 | -0.48px | Semi-bold callout text |
+| Label Uppercase | IBM Plex Sans Variable | 18px | 700 | 1.50 | 0px | Uppercase category labels |
+| Body Semi | IBM Plex Sans Variable | 18px | 600 | 1.56 | 0px | Semi-bold body text |
+| Body | IBM Plex Sans Variable | 16px | 400 | 1.50 | 0px | Standard reading text |
+| Body Medium | IBM Plex Sans Variable | 16px | 500 | 1.50 | 0px | Medium-weight body |
+| Body Relaxed | IBM Plex Sans Variable | 15px | 400 | 1.71 | 0px | Relaxed line-height for long reads |
+| Nav / UI | IBM Plex Sans Variable | 15px | 600 | 1.50 | 0px | Navigation and UI labels |
+| Caption | IBM Plex Sans Variable | 14px | 400–700 | 1.43 | 0px | Small text, various weights |
+| Small Label | IBM Plex Sans Variable | 13px | 500–700 | 1.00–1.50 | 0px | Tags, badges, micro labels |
+| Micro | IBM Plex Sans Variable | 12px | 400–700 | 1.33 | 0px | Smallest text, some uppercase |
+| Code | Source Code Pro | 14px | 500 | 1.43 | 0px | Code snippets and terminal |
+
+### Principles
+- **Bold heading dominance**: Headings use 700–800 weight — PostHog's typography is confident and assertive, not whispery
+- **Generous body line-heights**: Body text at 1.50–1.71 line-height creates extremely comfortable reading — the site is content-heavy and optimized for long sessions
+- **Fractional sizes**: Several sizes (21.4px, 19.3px, 13.7px) suggest a fluid/scaled type system rather than fixed stops — likely computed from Tailwind's rem scale at non-standard base
+- **Uppercase as category signal**: Bold uppercase labels (18px–20px weight 700) are used for product category headings — a magazine-editorial convention
+- **Selective negative tracking**: Letter-spacing tightens on display text (-0.75px at 30px) but relaxes to 0px on body — headlines compress, body breathes
+
+## 4. Component Stylings
+
+### Buttons
+- **Dark Primary**: `#1e1f23` background, white text, 6px radius, `10px 12px` padding. Hover: opacity 0.7 with Amber Gold text. Active: opacity 0.8 with slight scale transform. The main CTA — dark and confident
+- **Sage Light**: `#e5e7e0` background, Olive Ink (`#4d4f46`) text, 4px radius, `4px` padding. Hover: `#f4f4f4` bg with PostHog Orange text. Compact utility button
+- **Warm Tan Featured**: `#d4c9b8` background, black text, no visible radius. Hover: same orange text flash. Featured/premium actions
+- **Input-style**: `#eeefe9` background, Sage Placeholder (`#9ea096`) text, 4px radius, 1px `#b6b7af` border. Looks like a search/filter control
+- **Near-white Ghost**: `#fdfdf8` background, Olive Ink text, 4px radius, transparent 1px border. Minimal presence
+- **Hover pattern**: All buttons flash PostHog Orange (`#F54E00`) or Amber Gold (`#F7A501`) text on hover — the brand's signature interaction surprise
+
+### Cards & Containers
+- **Bordered Card**: Warm Parchment (`#fdfdf8`) or white background, 1px `#bfc1b7` border, 4px–6px radius — clean and minimal
+- **Sage Surface Card**: `#eeefe9` background for secondary content containers
+- **Shadow Card**: `0px 25px 50px -12px rgba(0, 0, 0, 0.25)` — a single deep shadow for elevated content (modals, dropdowns)
+- **Hover**: Orange text flash on interactive cards — consistent with button behavior
+
+### Inputs & Forms
+- **Default**: `#eeefe9` background, `#9ea096` placeholder text, 1px `#b6b7af` border, 4px radius, `2px 0px 2px 8px` padding
+- **Focus**: `#3b82f6` ring at 50% opacity (Tailwind blue focus ring)
+- **Text color**: `#374151` for input values — darker than primary text for readability
+- **Border variations**: Multiple border patterns — some inputs use compound borders (top, left, bottom-only)
+
+### Navigation
+- **Top nav**: Warm background, IBM Plex Sans at 15px weight 600
+- **Dropdown menus**: Rich mega-menu structure with product categories
+- **Link color**: Deep Olive (`#23251d`) for nav links, underline on hover
+- **CTA**: Dark Primary button (#1e1f23) in the nav — "Get started - free"
+- **Mobile**: Collapses to hamburger with simplified menu
+
+### Image Treatment
+- **Hand-drawn illustrations**: Hedgehog mascot and quirky illustrations — the signature visual element
+- **Product screenshots**: UI screenshots embedded in device frames or clean containers
+- **Action figures**: Playful product photography of hedgehog figurines — anti-corporate
+- **Trust logos**: Enterprise logos (Airbus, GOV.UK) displayed in a muted trust bar
+- **Aspect ratios**: Mixed — illustrations are irregular, screenshots are 16:9 or widescreen
+
+### AI Chat Widget
+- Floating PostHog AI assistant with speech bubble — an interactive product demo embedded in the marketing site
+
+## 5. Layout Principles
+
+### Spacing System
+- **Base unit**: 8px
+- **Scale**: 2px, 4px, 6px, 8px, 10px, 12px, 16px, 18px, 24px, 32px, 34px
+- **Section padding**: 32px–48px vertical between sections (compact for a content-heavy site)
+- **Card padding**: 4px–12px internal (notably compact)
+- **Component gaps**: 4px–8px between related elements
+
+### Grid & Container
+- **Max width**: 1536px (largest breakpoint), with content containers likely 1200px–1280px
+- **Column patterns**: Varied — single column for text content, 2-3 column grids for feature cards, asymmetric layouts for product demos
+- **Breakpoints**: 13 defined — 1px, 425px, 482px, 640px, 768px, 767px, 800px, 900px, 1024px, 1076px, 1160px, 1280px, 1536px
+
+### Whitespace Philosophy
+- **Content-dense by design**: PostHog's site is information-rich — whitespace is measured, not lavish
+- **Editorial pacing**: Content sections flow like a magazine with varied layouts keeping the eye moving
+- **Illustrations as breathing room**: Hand-drawn hedgehog art breaks up dense content sections naturally
+
+### Border Radius Scale
+- **2px**: Small inline elements, tags (`span`)
+- **4px**: Primary UI components — buttons, inputs, dropdowns, menu items (`button`, `div`, `combobox`)
+- **6px**: Secondary containers — larger buttons, list items, card variants (`button`, `div`, `li`)
+- **9999px**: Pill shape — badges, status indicators, rounded tags (`span`, `div`)
+
+## 6. Depth & Elevation
+
+| Level | Treatment | Use |
+|-------|-----------|-----|
+| Level 0 (Flat) | No shadow, warm parchment background | Page canvas, most surfaces |
+| Level 1 (Border) | `1px solid #bfc1b7` (Sage Border) | Card containment, input borders, section dividers |
+| Level 2 (Compound Border) | Multiple 1px borders on different sides | Input groupings, toolbar elements |
+| Level 3 (Deep Shadow) | `0px 25px 50px -12px rgba(0, 0, 0, 0.25)` | Modals, floating elements, mega-menu dropdowns |
+
+### Shadow Philosophy
+PostHog's elevation system is remarkably minimal — only one shadow definition exists in the entire system. Depth is communicated through:
+- **Border containment**: Sage-tinted borders (`#bfc1b7`) at 1px create gentle warm separation
+- **Surface color shifts**: Moving from `#fdfdf8` to `#eeefe9` to `#e5e7e0` creates layered depth without shadows
+- **The single shadow**: The one defined shadow (`0 25px 50px -12px`) is reserved for floating elements — modals, dropdowns, popovers. It's a deep, dramatic shadow that creates clear separation when needed
+
+### Decorative Depth
+- **Illustration layering**: Hand-drawn hedgehog art creates visual depth naturally
+- **No gradients or glow**: The flat, warm surface system relies entirely on border and surface-color differentiation
+- **No glassmorphism**: Fully opaque surfaces throughout
+
+## 7. Do's and Don'ts
+
+### Do
+- Use the olive/sage color family (#4d4f46, #23251d, #bfc1b7) for text and borders — the warm green undertone is essential to the brand
+- Flash PostHog Orange (#F54E00) on hover states — it's the hidden brand signature
+- Use IBM Plex Sans at bold weights (700/800) for headings — the font carries technical credibility
+- Keep body text at generous line-heights (1.50–1.71) — the content-heavy site demands readability
+- Maintain the warm parchment background (#fdfdf8) — not pure white, never cold
+- Use 4px border-radius for most UI elements — keep corners subtle and functional
+- Include playful, hand-drawn illustration elements — the personality is the differentiator
+- Apply opacity-based hover states (0.7 opacity) on dark buttons rather than color shifts
+
+### Don't
+- Use blue, purple, or typical tech-SaaS colors — PostHog's palette is deliberately olive/sage
+- Add heavy shadows — the system uses one shadow for floating elements only; everything else uses borders
+- Make the design look "polished" or "premium" in a conventional sense — PostHog's charm is its irreverent, scrappy energy
+- Use tight line-heights on body text — the generous 1.50+ spacing is essential for the content-heavy layout
+- Apply large border-radius (12px+) on cards — PostHog uses 4px–6px, keeping things tight and functional
+- Remove the orange hover flash — it's a core interaction pattern, not decoration
+- Replace illustrations with stock photography — the hand-drawn hedgehog art is the brand
+- Use pure white (#ffffff) as page background — the warm sage-cream (#fdfdf8) tint is foundational
+
+## 8. Responsive Behavior
+
+### Breakpoints
+| Name | Width | Key Changes |
+|------|-------|-------------|
+| Mobile Small | <425px | Single column, compact padding, stacked cards |
+| Mobile | 425px–640px | Slight layout adjustments, larger touch targets |
+| Tablet | 640px–768px | 2-column grids begin, nav partially visible |
+| Tablet Large | 768px–1024px | Multi-column layouts, expanded navigation |
+| Desktop | 1024px–1280px | Full layout, 3-column feature grids, expanded mega-menu |
+| Large Desktop | 1280px–1536px | Max-width container, generous margins |
+| Extra Large | >1536px | Centered container at max-width |
+
+### Touch Targets
+- Buttons: 4px–6px radius with `4px–12px` padding — compact but usable
+- Nav links: 15px text at weight 600 with adequate padding
+- Mobile: Hamburger menu with simplified navigation
+- Inputs: Generous vertical padding for thumb-friendly forms
+
+### Collapsing Strategy
+- **Navigation**: Full mega-menu with dropdowns → hamburger menu on mobile
+- **Feature grids**: 3-column → 2-column → single column stacked
+- **Typography**: Display sizes reduce across breakpoints (30px → smaller)
+- **Illustrations**: Scale within containers, some may hide on mobile for space
+- **Section spacing**: Reduces proportionally while maintaining readability
+
+### Image Behavior
+- Illustrations scale responsively within containers
+- Product screenshots maintain aspect ratios
+- Trust logos reflow into multi-row grids on mobile
+- AI chat widget may reposition or simplify on small screens
+
+## 9. Agent Prompt Guide
+
+### Quick Color Reference
+- Primary Text: Olive Ink (`#4d4f46`)
+- Dark Text: Deep Olive (`#23251d`)
+- Hover Accent: PostHog Orange (`#F54E00`)
+- Dark CTA: Near-Black (`#1e1f23`)
+- Button Surface: Light Sage (`#e5e7e0`)
+- Page Background: Warm Parchment (`#fdfdf8`)
+- Border: Sage Border (`#bfc1b7`)
+- Placeholder: Sage Placeholder (`#9ea096`)
+
+### Example Component Prompts
+- "Create a hero section on warm parchment background (#fdfdf8) with 30px IBM Plex Sans heading at weight 800, line-height 1.20, letter-spacing -0.75px, olive ink text (#4d4f46), and a dark CTA button (#1e1f23, 6px radius, white text, opacity 0.7 on hover)"
+- "Design a feature card with #fdfdf8 background, 1px #bfc1b7 border, 4px radius, IBM Plex Sans heading at 20px weight 700, and 16px body text at weight 400 with 1.50 line-height in olive ink (#4d4f46)"
+- "Build a navigation bar with warm background, IBM Plex Sans links at 15px weight 600 in deep olive (#23251d), underline on hover, and a dark CTA button (#1e1f23) at the right"
+- "Create a button group: primary dark (#1e1f23, white text, 6px radius), secondary sage (#e5e7e0, #4d4f46 text, 4px radius), and ghost/text button — all flash #F54E00 orange text on hover"
+- "Design an input field with #eeefe9 background, 1px #b6b7af border, 4px radius, #9ea096 placeholder text, focus ring in #3b82f6 at 50% opacity"
+
+### Iteration Guide
+When refining existing screens generated with this design system:
+1. Verify the background is warm parchment (#fdfdf8) not pure white — the sage-cream warmth is essential
+2. Check that all text uses the olive family (#4d4f46, #23251d) not pure black or neutral gray
+3. Ensure hover states flash PostHog Orange (#F54E00) — if hovering feels bland, you're missing this
+4. Confirm borders use sage-tinted gray (#bfc1b7) not neutral gray — warmth runs through every element
+5. The overall tone should feel like a fun, scrappy startup wiki — never corporate-polished or sterile

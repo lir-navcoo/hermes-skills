@@ -1,1 +1,58 @@
-LS0tCm5hbWU6IGFzdG9jay12YXVsdApkZXNjcmlwdGlvbjog5Z+65LqOIE9ic2lkaWFuIHZhdWx0IOeahCBBIOiCoeWIhuaekOefpeivhuW6k+WIneWni+WMluS4jue7tOaKpOa1geeoiwp2ZXJzaW9uOiAxLjAuMAp0YWdzOiBbT2JzaWRpYW4sIOefpeivhuW6kywgQeiCoSwg56yU6K6w57O757ufXQotLS0KCiMgQeiCoeWIhuaekCBPYnNpZGlhbiBWYXVsdAoKIyMg5qaC6L+wCgrnlKggT2JzaWRpYW4g5L2c5Li6IEEg6IKh5YiG5p6Q55+l6K+G5bqT77yM6K6w5b2V5q+P5pel6YCJ6IKh44CB5aSN55uY44CB5oyB5LuT6L+96Liq44CCCgpWYXVsdCDot6/lvoTvvJpgfi9Eb2N1bWVudHMvT2JzaWRpYW4gVmF1bHQvYAoKIyMg55uu5b2V57uT5p6ECgpgYGAKQeiCoeWIhuaekC8K4pSc4pSA4pSAIElOREVYLm1kICAgICAgICAgICAgICAgICAgICAjIOS4u+e0ouW8le+8iOWQq+aMgeS7k+S4gOiniOOAgei/keacn+abtOaWsO+8iQrilJzilIDilIAg5pep55uY5o6o6I2QLwrilIIgICDilJTilIDilIAgSU5ERVgubWQgICAgICAgICAgICAgICAgIyDml6nnm5jntKLlvJUK4pSCICAg4pSU4pSA4pSAIFlZWVktTU0tREQt5pep55uY5o6o6I2QLm1kICAjIOavj+aXpeaXqeebmOmAieiCoeaKpeWRigrilJzilIDilIAg5LiL5Y2I5aSN55uYLwrilIIgICDilJTilIDilIAgSU5ERVgubWQgICAgICAgICAgICAgICAgIyDlpI3nm5jntKLlvJUK4pSCICAg4pSU4pSA4pSAIFlZWVktTU0tREQt5aSN55uYLm1kICAgICAjIOavj+aXpeebmOWQjuWkjeebmArilJzilIDilIAg5qCH55qE6L+96LiqLwrilIIgICDilJTilIDilIAgSU5ERVgubWQgICAgICAgICAgICAgICAgIyDmjIHku5PntKLlvJUK4pSCICAg4pSU4pSA4pSAIOS7o+eggS3lkI3np7AubWQgICAgICAgICAgICAjIOiHquacieaMgeS7k++8iOWmgiAwMDIwOTct5bGx5rKz5pm66IO9Lm1k77yJCuKUlOKUgOKUgCDluILlnLrmtJ7lr58vCiAgICDilJTilIDilIAgSU5ERVgubWQgICAgICAgICAgICAgICAgIyDluILlnLrmtJ7lr5/ntKLlvJUKYGBgCgojIyDmjIHku5Pmlofku7bmoLzlvI8KCuavj+WPquaMgeS7k+S4gOS4qiBtZCDmlofku7bvvIxmcm9udG1hdHRlciDljIXlkKvmjIHku5PmiJDmnKzlkozmlbDph4/vvJoKCmBgYHlhbWwKLS0tCnRpdGxlOiAwMDIwOTcg5bGx5rKz5pm66IO9CmNyZWF0ZWQ6IDIwMjYtMDQtMTkKdXBkYXRlZDogMjAyNi0wNC0xOQp0eXBlOiDmjIHku5PmoIfnmoQKdGFnczogW+aMgeS7kywgMDAyMDk3LCDlsbHmsrPmmbrog71dCmNvc3Q6IDI0LjI1MgpzaGFyZXM6IDEwMAotLS0KYGBgCgojIyBJTkRFWC5tZCDmoLzlvI8KCuavj+S4quebruW9leeahCBJTkRFWC5tZCDljIXlkKvor6Xnm67lvZXnmoTmlofku7bmuIXljZXlkozlhYPmlbDmja7jgIIKCiMjIOaJp+ihjOaXtuacugoKLSAqKmNyb24g5pep55uY5Lu75YqhKiog4oaSIOWGmeWFpSBg5pep55uY5o6o6I2QL1lZWVktTU0tREQt5pep55uY5o6o6I2QLm1kYAotICoqY3JvbiDlpI3nm5jku7vliqEqKiDihpIg5YaZ5YWlIGDkuIvljYjlpI3nm5gvWVlZWS1NTS1ERC3lpI3nm5gubWRgCi0gKirmjIHku5Pmm7TmlrAqKiDihpIg55u05o6l5L+u5pS55a+55bqUIGDmoIfnmoTov73ouKov5Luj56CBLeWQjeensC5tZGAK
+---
+name: astock-vault
+description: 基于 Obsidian vault 的 A 股分析知识库初始化与维护流程
+version: 1.0.0
+tags: [Obsidian, 知识库, A股, 笔记系统]
+---
+
+# A股分析 Obsidian Vault
+
+## 概述
+
+用 Obsidian 作为 A 股分析知识库，记录每日选股、复盘、持仓追踪。
+
+Vault 路径：`~/Documents/Obsidian Vault/`
+
+## 目录结构
+
+```
+A股分析/
+├── INDEX.md                    # 主索引（含持仓一览、近期更新）
+├── 早盘推荐/
+│   └── INDEX.md                # 早盘索引
+│   └── YYYY-MM-DD-早盘推荐.md  # 每日早盘选股报告
+├── 下午复盘/
+│   └── INDEX.md                # 复盘索引
+│   └── YYYY-MM-DD-复盘.md     # 每日盘后复盘
+├── 标的追踪/
+│   └── INDEX.md                # 持仓索引
+│   └── 代码-名称.md            # 自有持仓（如 002097-山河智能.md）
+└── 市场洞察/
+    └── INDEX.md                # 市场洞察索引
+```
+
+## 持仓文件格式
+
+每只持仓一个 md 文件，frontmatter 包含持仓成本和数量：
+
+```yaml
+---
+title: 002097 山河智能
+created: 2026-04-19
+updated: 2026-04-19
+type: 持仓标的
+tags: [持仓, 002097, 山河智能]
+cost: 24.252
+shares: 100
+---
+```
+
+## INDEX.md 格式
+
+每个目录的 INDEX.md 包含该目录的文件清单和元数据。
+
+## 执行时机
+
+- **cron 早盘任务** → 写入 `早盘推荐/YYYY-MM-DD-早盘推荐.md`
+- **cron 复盘任务** → 写入 `下午复盘/YYYY-MM-DD-复盘.md`
+- **持仓更新** → 直接修改对应 `标的追踪/代码-名称.md`

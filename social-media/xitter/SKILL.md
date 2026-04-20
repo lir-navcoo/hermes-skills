@@ -1,1 +1,202 @@
-LS0tCm5hbWU6IHhpdHRlcgpkZXNjcmlwdGlvbjogSW50ZXJhY3Qgd2l0aCBYL1R3aXR0ZXIgdmlhIHRoZSB4LWNsaSB0ZXJtaW5hbCBjbGllbnQgdXNpbmcgb2ZmaWNpYWwgWCBBUEkgY3JlZGVudGlhbHMuIFVzZSBmb3IgcG9zdGluZywgcmVhZGluZyB0aW1lbGluZXMsIHNlYXJjaGluZyB0d2VldHMsIGxpa2luZywgcmV0d2VldGluZywgYm9va21hcmtzLCBtZW50aW9ucywgYW5kIHVzZXIgbG9va3Vwcy4KdmVyc2lvbjogMS4wLjAKYXV0aG9yOiBTaWRkaGFydGggQmFseWFuICsgSGVybWVzIEFnZW50CmxpY2Vuc2U6IE1JVApwbGF0Zm9ybXM6IFtsaW51eCwgbWFjb3NdCnByZXJlcXVpc2l0ZXM6CiAgY29tbWFuZHM6IFt1dl0KICBlbnZfdmFyczogW1hfQVBJX0tFWSwgWF9BUElfU0VDUkVULCBYX0JFQVJFUl9UT0tFTiwgWF9BQ0NFU1NfVE9LRU4sIFhfQUNDRVNTX1RPS0VOX1NFQ1JFVF0KbWV0YWRhdGE6CiAgaGVybWVzOgogICAgdGFnczogW3R3aXR0ZXIsIHgsIHNvY2lhbC1tZWRpYSwgeC1jbGldCiAgICBob21lcGFnZTogaHR0cHM6Ly9naXRodWIuY29tL0luZmF0b3NoaS94LWNsaQotLS0KCiMgWGl0dGVyIOKAlCBYL1R3aXR0ZXIgdmlhIHgtY2xpCgpVc2UgYHgtY2xpYCBmb3Igb2ZmaWNpYWwgWC9Ud2l0dGVyIEFQSSBpbnRlcmFjdGlvbnMgZnJvbSB0aGUgdGVybWluYWwuCgpUaGlzIHNraWxsIGlzIGZvcjoKLSBwb3N0aW5nIHR3ZWV0cywgcmVwbGllcywgYW5kIHF1b3RlIHR3ZWV0cwotIHNlYXJjaGluZyB0d2VldHMgYW5kIHJlYWRpbmcgdGltZWxpbmVzCi0gbG9va2luZyB1cCB1c2VycywgZm9sbG93ZXJzLCBhbmQgZm9sbG93aW5nCi0gbGlraW5nIGFuZCByZXR3ZWV0aW5nCi0gY2hlY2tpbmcgbWVudGlvbnMgYW5kIGJvb2ttYXJrcwoKVGhpcyBza2lsbCBpbnRlbnRpb25hbGx5IGRvZXMgbm90IHZlbmRvciBhIHNlcGFyYXRlIENMSSBpbXBsZW1lbnRhdGlvbiBpbnRvIEhlcm1lcy4gSW5zdGFsbCBhbmQgdXNlIHVwc3RyZWFtIGB4LWNsaWAgaW5zdGVhZC4KCiMjIEltcG9ydGFudCBDb3N0IC8gQWNjZXNzIE5vdGUKClggQVBJIGFjY2VzcyBpcyBub3QgbWVhbmluZ2Z1bGx5IGZyZWUgZm9yIG1vc3QgcmVhbCB1c2FnZS4gRXhwZWN0IHRvIG5lZWQgcGFpZCBvciBwcmVwYWlkIFggZGV2ZWxvcGVyIGFjY2Vzcy4gSWYgY29tbWFuZHMgZmFpbCB3aXRoIHBlcm1pc3Npb25zIG9yIHF1b3RhIGVycm9ycywgY2hlY2sgeW91ciBYIGRldmVsb3BlciBwbGFuIGZpcnN0LgoKIyMgSW5zdGFsbAoKSW5zdGFsbCB1cHN0cmVhbSBgeC1jbGlgIHdpdGggYHV2YDoKCmBgYGJhc2gKdXYgdG9vbCBpbnN0YWxsIGdpdCtodHRwczovL2dpdGh1Yi5jb20vSW5mYXRvc2hpL3gtY2xpLmdpdApgYGAKClVwZ3JhZGUgbGF0ZXIgd2l0aDoKCmBgYGJhc2gKdXYgdG9vbCB1cGdyYWRlIHgtY2xpCmBgYAoKVmVyaWZ5OgoKYGBgYmFzaAp4LWNsaSAtLWhlbHAKYGBgCgojIyBDcmVkZW50aWFscwoKWW91IG5lZWQgdGhlc2UgZml2ZSB2YWx1ZXMgZnJvbSB0aGUgWCBEZXZlbG9wZXIgUG9ydGFsOgotIGBYX0FQSV9LRVlgCi0gYFhfQVBJX1NFQ1JFVGAKLSBgWF9CRUFSRVJfVE9LRU5gCi0gYFhfQUNDRVNTX1RPS0VOYAotIGBYX0FDQ0VTU19UT0tFTl9TRUNSRVRgCgpHZXQgdGhlbSBmcm9tOgotIGh0dHBzOi8vZGV2ZWxvcGVyLnguY29tL2VuL3BvcnRhbC9kYXNoYm9hcmQKCiMjIyBXaHkgZG9lcyBYIG5lZWQgNSBzZWNyZXRzPwoKVW5mb3J0dW5hdGVseSwgdGhlIG9mZmljaWFsIFggQVBJIHNwbGl0cyBhdXRoIGFjcm9zcyBib3RoIGFwcC1sZXZlbCBhbmQgdXNlci1sZXZlbCBjcmVkZW50aWFsczoKCi0gYFhfQVBJX0tFWWAgKyBgWF9BUElfU0VDUkVUYCBpZGVudGlmeSB5b3VyIGFwcAotIGBYX0JFQVJFUl9UT0tFTmAgaXMgdXNlZCBmb3IgYXBwLWxldmVsIHJlYWQgYWNjZXNzCi0gYFhfQUNDRVNTX1RPS0VOYCArIGBYX0FDQ0VTU19UT0tFTl9TRUNSRVRgIGxldCB0aGUgQ0xJIGFjdCBhcyB5b3VyIHVzZXIgYWNjb3VudCBmb3Igd3JpdGVzIGFuZCBhdXRoZW50aWNhdGVkIGFjdGlvbnMKClNvIHllcyDigJQgaXQgaXMgYSBsb3Qgb2Ygc2VjcmV0cyBmb3Igb25lIGludGVncmF0aW9uLCBidXQgdGhpcyBpcyB0aGUgc3RhYmxlIG9mZmljaWFsIEFQSSBwYXRoIGFuZCBpcyBzdGlsbCBwcmVmZXJhYmxlIHRvIGNvb2tpZS9zZXNzaW9uIHNjcmFwaW5nLgoKU2V0dXAgcmVxdWlyZW1lbnRzIGluIHRoZSBwb3J0YWw6CjEuIENyZWF0ZSBvciBvcGVuIHlvdXIgYXBwCjIuIEluIHVzZXIgYXV0aGVudGljYXRpb24gc2V0dGluZ3MsIHNldCBwZXJtaXNzaW9ucyB0byBgUmVhZCBhbmQgd3JpdGVgCjMuIEdlbmVyYXRlIG9yIHJlZ2VuZXJhdGUgdGhlIGFjY2VzcyB0b2tlbiArIGFjY2VzcyB0b2tlbiBzZWNyZXQgYWZ0ZXIgZW5hYmxpbmcgd3JpdGUgcGVybWlzc2lvbnMKNC4gU2F2ZSBhbGwgZml2ZSB2YWx1ZXMgY2FyZWZ1bGx5IOKAlCBtaXNzaW5nIGFueSBvbmUgb2YgdGhlbSB3aWxsIHVzdWFsbHkgcHJvZHVjZSBjb25mdXNpbmcgYXV0aCBvciBwZXJtaXNzaW9uIGVycm9ycwoKTm90ZTogdXBzdHJlYW0gYHgtY2xpYCBleHBlY3RzIHRoZSBmdWxsIGNyZWRlbnRpYWwgc2V0IHRvIGJlIHByZXNlbnQsIHNvIGV2ZW4gaWYgeW91IG1vc3RseSBjYXJlIGFib3V0IHJlYWQtb25seSBjb21tYW5kcywgaXQgaXMgc2ltcGxlc3QgdG8gY29uZmlndXJlIGFsbCBmaXZlLgoKIyMgQ29zdCAvIEZyaWN0aW9uIFJlYWxpdHkgQ2hlY2sKCklmIHRoaXMgc2V0dXAgZmVlbHMgaGVhdmllciB0aGFuIGl0IHNob3VsZCBiZSwgdGhhdCBpcyBiZWNhdXNlIGl0IGlzLiBY4oCZcyBvZmZpY2lhbCBkZXZlbG9wZXIgZmxvdyBpcyBoaWdoLWZyaWN0aW9uIGFuZCBvZnRlbiBwYWlkLiBUaGlzIHNraWxsIGNob29zZXMgdGhlIG9mZmljaWFsIEFQSSBwYXRoIGJlY2F1c2UgaXQgaXMgbW9yZSBzdGFibGUgYW5kIG1haW50YWluYWJsZSB0aGFuIGJyb3dzZXItY29va2llL3Nlc3Npb24gYXBwcm9hY2hlcy4KCklmIHRoZSB1c2VyIHdhbnRzIHRoZSBsZWFzdCBicml0dGxlIGxvbmctdGVybSBzZXR1cCwgdXNlIHRoaXMgc2tpbGwuIElmIHRoZXkgd2FudCBhIHplcm8tc2V0dXAgb3IgdW5vZmZpY2lhbCBwYXRoLCB0aGF0IGlzIGEgZGlmZmVyZW50IHRyYWRlLW9mZiBhbmQgbm90IHdoYXQgdGhpcyBza2lsbCBpcyBmb3IuCgoKIyMgV2hlcmUgdG8gU3RvcmUgQ3JlZGVudGlhbHMKCmB4LWNsaWAgbG9va3MgZm9yIGNyZWRlbnRpYWxzIGluIGB+Ly5jb25maWcveC1jbGkvLmVudmAuCgpJZiB5b3UgYWxyZWFkeSBrZWVwIHlvdXIgWCBjcmVkZW50aWFscyBpbiBgfi8uaGVybWVzLy5lbnZgLCB0aGUgY2xlYW5lc3Qgc2V0dXAgaXM6CgpgYGBiYXNoCm1rZGlyIC1wIH4vLmNvbmZpZy94LWNsaQpsbiAtc2Ygfi8uaGVybWVzLy5lbnYgfi8uY29uZmlnL3gtY2xpLy5lbnYKYGBgCgpPciBjcmVhdGUgYSBkZWRpY2F0ZWQgZmlsZToKCmBgYGJhc2gKbWtkaXIgLXAgfi8uY29uZmlnL3gtY2xpCmNhdCA+IH4vLmNvbmZpZy94LWNsaS8uZW52IDw8J0VPRicKWF9BUElfS0VZPXlvdXJfY29uc3VtZXJfa2V5ClhfQVBJX1NFQ1JFVD15b3VyX3NlY3JldF9rZXkKWF9CRUFSRVJfVE9LRU49eW91cl9iZWFyZXJfdG9rZW4KWF9BQ0NFU1NfVE9LRU49eW91cl9hY2Nlc3NfdG9rZW4KWF9BQ0NFU1NfVE9LRU5fU0VDUkVUPXlvdXJfYWNjZXNzX3Rva2VuX3NlY3JldApFT0YKY2htb2QgNjAwIH4vLmNvbmZpZy94LWNsaS8uZW52CmBgYAoKIyMgUXVpY2sgVmVyaWZpY2F0aW9uCgpgYGBiYXNoCngtY2xpIHVzZXIgZ2V0IG9wZW5haQp4LWNsaSB0d2VldCBzZWFyY2ggImZyb206Tm91c1Jlc2VhcmNoIiAtLW1heCAzCngtY2xpIG1lIG1lbnRpb25zIC0tbWF4IDUKYGBgCgpJZiByZWFkcyB3b3JrIGJ1dCB3cml0ZXMgZmFpbCwgcmVnZW5lcmF0ZSB0aGUgYWNjZXNzIHRva2VuIGFmdGVyIGNvbmZpcm1pbmcgYFJlYWQgYW5kIHdyaXRlYCBwZXJtaXNzaW9ucy4KCiMjIENvbW1vbiBDb21tYW5kcwoKIyMjIFR3ZWV0cwoKYGBgYmFzaAp4LWNsaSB0d2VldCBwb3N0ICJoZWxsbyB3b3JsZCIKeC1jbGkgdHdlZXQgZ2V0IGh0dHBzOi8veC5jb20vdXNlci9zdGF0dXMvMTIzNDU2Nzg5MAp4LWNsaSB0d2VldCBkZWxldGUgMTIzNDU2Nzg5MAp4LWNsaSB0d2VldCByZXBseSAxMjM0NTY3ODkwICJuaWNlIHBvc3QiCngtY2xpIHR3ZWV0IHF1b3RlIDEyMzQ1Njc4OTAgIndvcnRoIHJlYWRpbmciCngtY2xpIHR3ZWV0IHNlYXJjaCAiQUkgYWdlbnRzIiAtLW1heCAyMAp4LWNsaSB0d2VldCBtZXRyaWNzIDEyMzQ1Njc4OTAKYGBgCgojIyMgVXNlcnMKCmBgYGJhc2gKeC1jbGkgdXNlciBnZXQgb3BlbmFpCngtY2xpIHVzZXIgdGltZWxpbmUgb3BlbmFpIC0tbWF4IDEwCngtY2xpIHVzZXIgZm9sbG93ZXJzIG9wZW5haSAtLW1heCA1MAp4LWNsaSB1c2VyIGZvbGxvd2luZyBvcGVuYWkgLS1tYXggNTAKYGBgCgojIyMgU2VsZiAvIEF1dGhlbnRpY2F0ZWQgVXNlcgoKYGBgYmFzaAp4LWNsaSBtZSBtZW50aW9ucyAtLW1heCAyMAp4LWNsaSBtZSBib29rbWFya3MgLS1tYXggMjAKeC1jbGkgbWUgYm9va21hcmsgMTIzNDU2Nzg5MAp4LWNsaSBtZSB1bmJvb2ttYXJrIDEyMzQ1Njc4OTAKYGBgCgojIyMgUXVpY2sgQWN0aW9ucwoKYGBgYmFzaAp4LWNsaSBsaWtlIDEyMzQ1Njc4OTAKeC1jbGkgcmV0d2VldCAxMjM0NTY3ODkwCmBgYAoKIyMgT3V0cHV0IE1vZGVzCgpVc2Ugc3RydWN0dXJlZCBvdXRwdXQgd2hlbiB0aGUgYWdlbnQgbmVlZHMgdG8gaW5zcGVjdCBmaWVsZHMgcHJvZ3JhbW1hdGljYWxseToKCmBgYGJhc2gKeC1jbGkgLWogdHdlZXQgc2VhcmNoICJBSSBhZ2VudHMiIC0tbWF4IDUKeC1jbGkgLXAgdXNlciBnZXQgb3BlbmFpCngtY2xpIC1tZCB0d2VldCBnZXQgMTIzNDU2Nzg5MAp4LWNsaSAtdiAtaiB0d2VldCBnZXQgMTIzNDU2Nzg5MApgYGAKClJlY29tbWVuZGVkIGRlZmF1bHRzOgotIGAtamAgZm9yIG1hY2hpbmUtcmVhZGFibGUgb3V0cHV0Ci0gYC12YCB3aGVuIHlvdSBuZWVkIHRpbWVzdGFtcHMsIG1ldHJpY3MsIG9yIG1ldGFkYXRhCi0gcGxhaW4vZGVmYXVsdCBtb2RlIGZvciBxdWljayBodW1hbiBpbnNwZWN0aW9uCgojIyBBZ2VudCBXb3JrZmxvdwoKMS4gQ29uZmlybSBgeC1jbGlgIGlzIGluc3RhbGxlZAoyLiBDb25maXJtIGNyZWRlbnRpYWxzIGFyZSBwcmVzZW50CjMuIFN0YXJ0IHdpdGggYSByZWFkIGNvbW1hbmQgKGB1c2VyIGdldGAsIGB0d2VldCBzZWFyY2hgLCBgbWUgbWVudGlvbnNgKQo0LiBVc2UgYC1qYCB3aGVuIGV4dHJhY3RpbmcgZmllbGRzIGZvciBsYXRlciBzdGVwcwo1LiBPbmx5IHBlcmZvcm0gd3JpdGUgYWN0aW9ucyBhZnRlciBjb25maXJtaW5nIHRoZSB0YXJnZXQgdHdlZXQvdXNlciBhbmQgdGhlIHVzZXIncyBpbnRlbnQKCiMjIFBpdGZhbGxzCgotICoqUGFpZCBBUEkgYWNjZXNzKio6IG1hbnkgZmFpbHVyZXMgYXJlIHBsYW4vcGVybWlzc2lvbiBwcm9ibGVtcywgbm90IGNvZGUgcHJvYmxlbXMuCi0gKio0MDMgb2F1dGgxLXBlcm1pc3Npb25zKio6IHJlZ2VuZXJhdGUgdGhlIGFjY2VzcyB0b2tlbiBhZnRlciBlbmFibGluZyBgUmVhZCBhbmQgd3JpdGVgLgotICoqUmVwbHkgcmVzdHJpY3Rpb25zKio6IFggcmVzdHJpY3RzIG1hbnkgcHJvZ3JhbW1hdGljIHJlcGxpZXMuIGB0d2VldCBxdW90ZWAgaXMgb2Z0ZW4gbW9yZSByZWxpYWJsZSB0aGFuIGB0d2VldCByZXBseWAuCi0gKipSYXRlIGxpbWl0cyoqOiBleHBlY3QgcGVyLWVuZHBvaW50IGxpbWl0cyBhbmQgY29vbGRvd24gd2luZG93cy4KLSAqKkNyZWRlbnRpYWwgZHJpZnQqKjogaWYgeW91IHJvdGF0ZSB0b2tlbnMgaW4gYH4vLmhlcm1lcy8uZW52YCwgbWFrZSBzdXJlIGB+Ly5jb25maWcveC1jbGkvLmVudmAgc3RpbGwgcG9pbnRzIGF0IHRoZSBjdXJyZW50IGZpbGUuCgojIyBOb3RlcwoKLSBQcmVmZXIgb2ZmaWNpYWwgQVBJIHdvcmtmbG93cyBvdmVyIGNvb2tpZS9zZXNzaW9uIHNjcmFwaW5nLgotIFVzZSB0d2VldCBVUkxzIG9yIElEcyBpbnRlcmNoYW5nZWFibHkg4oCUIGB4LWNsaWAgYWNjZXB0cyBib3RoLgotIElmIGJvb2ttYXJrIGJlaGF2aW9yIGNoYW5nZXMgdXBzdHJlYW0sIGNoZWNrIHRoZSB1cHN0cmVhbSBSRUFETUUgZmlyc3Q6CiAgaHR0cHM6Ly9naXRodWIuY29tL0luZmF0b3NoaS94LWNsaQo=
+---
+name: xitter
+description: Interact with X/Twitter via the x-cli terminal client using official X API credentials. Use for posting, reading timelines, searching tweets, liking, retweeting, bookmarks, mentions, and user lookups.
+version: 1.0.0
+author: Siddharth Balyan + Hermes Agent
+license: MIT
+platforms: [linux, macos]
+prerequisites:
+  commands: [uv]
+  env_vars: [X_API_KEY, X_API_SECRET, X_BEARER_TOKEN, X_ACCESS_TOKEN, X_ACCESS_TOKEN_SECRET]
+metadata:
+  hermes:
+    tags: [twitter, x, social-media, x-cli]
+    homepage: https://github.com/Infatoshi/x-cli
+---
+
+# Xitter — X/Twitter via x-cli
+
+Use `x-cli` for official X/Twitter API interactions from the terminal.
+
+This skill is for:
+- posting tweets, replies, and quote tweets
+- searching tweets and reading timelines
+- looking up users, followers, and following
+- liking and retweeting
+- checking mentions and bookmarks
+
+This skill intentionally does not vendor a separate CLI implementation into Hermes. Install and use upstream `x-cli` instead.
+
+## Important Cost / Access Note
+
+X API access is not meaningfully free for most real usage. Expect to need paid or prepaid X developer access. If commands fail with permissions or quota errors, check your X developer plan first.
+
+## Install
+
+Install upstream `x-cli` with `uv`:
+
+```bash
+uv tool install git+https://github.com/Infatoshi/x-cli.git
+```
+
+Upgrade later with:
+
+```bash
+uv tool upgrade x-cli
+```
+
+Verify:
+
+```bash
+x-cli --help
+```
+
+## Credentials
+
+You need these five values from the X Developer Portal:
+- `X_API_KEY`
+- `X_API_SECRET`
+- `X_BEARER_TOKEN`
+- `X_ACCESS_TOKEN`
+- `X_ACCESS_TOKEN_SECRET`
+
+Get them from:
+- https://developer.x.com/en/portal/dashboard
+
+### Why does X need 5 secrets?
+
+Unfortunately, the official X API splits auth across both app-level and user-level credentials:
+
+- `X_API_KEY` + `X_API_SECRET` identify your app
+- `X_BEARER_TOKEN` is used for app-level read access
+- `X_ACCESS_TOKEN` + `X_ACCESS_TOKEN_SECRET` let the CLI act as your user account for writes and authenticated actions
+
+So yes — it is a lot of secrets for one integration, but this is the stable official API path and is still preferable to cookie/session scraping.
+
+Setup requirements in the portal:
+1. Create or open your app
+2. In user authentication settings, set permissions to `Read and write`
+3. Generate or regenerate the access token + access token secret after enabling write permissions
+4. Save all five values carefully — missing any one of them will usually produce confusing auth or permission errors
+
+Note: upstream `x-cli` expects the full credential set to be present, so even if you mostly care about read-only commands, it is simplest to configure all five.
+
+## Cost / Friction Reality Check
+
+If this setup feels heavier than it should be, that is because it is. X’s official developer flow is high-friction and often paid. This skill chooses the official API path because it is more stable and maintainable than browser-cookie/session approaches.
+
+If the user wants the least brittle long-term setup, use this skill. If they want a zero-setup or unofficial path, that is a different trade-off and not what this skill is for.
+
+
+## Where to Store Credentials
+
+`x-cli` looks for credentials in `~/.config/x-cli/.env`.
+
+If you already keep your X credentials in `~/.hermes/.env`, the cleanest setup is:
+
+```bash
+mkdir -p ~/.config/x-cli
+ln -sf ~/.hermes/.env ~/.config/x-cli/.env
+```
+
+Or create a dedicated file:
+
+```bash
+mkdir -p ~/.config/x-cli
+cat > ~/.config/x-cli/.env <<'EOF'
+X_API_KEY=your_consumer_key
+X_API_SECRET=your_secret_key
+X_BEARER_TOKEN=your_bearer_token
+X_ACCESS_TOKEN=your_access_token
+X_ACCESS_TOKEN_SECRET=your_access_token_secret
+EOF
+chmod 600 ~/.config/x-cli/.env
+```
+
+## Quick Verification
+
+```bash
+x-cli user get openai
+x-cli tweet search "from:NousResearch" --max 3
+x-cli me mentions --max 5
+```
+
+If reads work but writes fail, regenerate the access token after confirming `Read and write` permissions.
+
+## Common Commands
+
+### Tweets
+
+```bash
+x-cli tweet post "hello world"
+x-cli tweet get https://x.com/user/status/1234567890
+x-cli tweet delete 1234567890
+x-cli tweet reply 1234567890 "nice post"
+x-cli tweet quote 1234567890 "worth reading"
+x-cli tweet search "AI agents" --max 20
+x-cli tweet metrics 1234567890
+```
+
+### Users
+
+```bash
+x-cli user get openai
+x-cli user timeline openai --max 10
+x-cli user followers openai --max 50
+x-cli user following openai --max 50
+```
+
+### Self / Authenticated User
+
+```bash
+x-cli me mentions --max 20
+x-cli me bookmarks --max 20
+x-cli me bookmark 1234567890
+x-cli me unbookmark 1234567890
+```
+
+### Quick Actions
+
+```bash
+x-cli like 1234567890
+x-cli retweet 1234567890
+```
+
+## Output Modes
+
+Use structured output when the agent needs to inspect fields programmatically:
+
+```bash
+x-cli -j tweet search "AI agents" --max 5
+x-cli -p user get openai
+x-cli -md tweet get 1234567890
+x-cli -v -j tweet get 1234567890
+```
+
+Recommended defaults:
+- `-j` for machine-readable output
+- `-v` when you need timestamps, metrics, or metadata
+- plain/default mode for quick human inspection
+
+## Agent Workflow
+
+1. Confirm `x-cli` is installed
+2. Confirm credentials are present
+3. Start with a read command (`user get`, `tweet search`, `me mentions`)
+4. Use `-j` when extracting fields for later steps
+5. Only perform write actions after confirming the target tweet/user and the user's intent
+
+## Pitfalls
+
+- **Paid API access**: many failures are plan/permission problems, not code problems.
+- **403 oauth1-permissions**: regenerate the access token after enabling `Read and write`.
+- **Reply restrictions**: X restricts many programmatic replies. `tweet quote` is often more reliable than `tweet reply`.
+- **Rate limits**: expect per-endpoint limits and cooldown windows.
+- **Credential drift**: if you rotate tokens in `~/.hermes/.env`, make sure `~/.config/x-cli/.env` still points at the current file.
+
+## Notes
+
+- Prefer official API workflows over cookie/session scraping.
+- Use tweet URLs or IDs interchangeably — `x-cli` accepts both.
+- If bookmark behavior changes upstream, check the upstream README first:
+  https://github.com/Infatoshi/x-cli

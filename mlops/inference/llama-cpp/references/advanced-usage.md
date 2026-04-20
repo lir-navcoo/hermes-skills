@@ -1,1 +1,504 @@
-IyBHR1VGIEFkdmFuY2VkIFVzYWdlIEd1aWRlCgojIyBTcGVjdWxhdGl2ZSBEZWNvZGluZwoKIyMjIERyYWZ0IE1vZGVsIEFwcHJvYWNoCgpgYGBiYXNoCiMgVXNlIHNtYWxsZXIgbW9kZWwgYXMgZHJhZnQgZm9yIGZhc3RlciBnZW5lcmF0aW9uCi4vbGxhbWEtc3BlY3VsYXRpdmUgXAogICAgLW0gbGFyZ2UtbW9kZWwtcTRfa19tLmdndWYgXAogICAgLW1kIGRyYWZ0LW1vZGVsLXE0X2tfbS5nZ3VmIFwKICAgIC1wICJXcml0ZSBhIHN0b3J5IGFib3V0IEFJIiBcCiAgICAtbiA1MDAgXAogICAgLS1kcmFmdCA4ICAjIERyYWZ0IHRva2VucyBiZWZvcmUgdmVyaWZpY2F0aW9uCmBgYAoKIyMjIFNlbGYtU3BlY3VsYXRpdmUgRGVjb2RpbmcKCmBgYGJhc2gKIyBVc2Ugc2FtZSBtb2RlbCB3aXRoIGRpZmZlcmVudCBjb250ZXh0IGZvciBzcGVjdWxhdGlvbgouL2xsYW1hLWNsaSAtbSBtb2RlbC1xNF9rX20uZ2d1ZiBcCiAgICAtLWxvb2t1cC1jYWNoZS1zdGF0aWMgbG9va3VwLmJpbiBcCiAgICAtLWxvb2t1cC1jYWNoZS1keW5hbWljIGxvb2t1cC1keW5hbWljLmJpbiBcCiAgICAtcCAiSGVsbG8gd29ybGQiCmBgYAoKIyMgQmF0Y2hlZCBJbmZlcmVuY2UKCiMjIyBQcm9jZXNzIE11bHRpcGxlIFByb21wdHMKCmBgYHB5dGhvbgpmcm9tIGxsYW1hX2NwcCBpbXBvcnQgTGxhbWEKCmxsbSA9IExsYW1hKAogICAgbW9kZWxfcGF0aD0ibW9kZWwtcTRfa19tLmdndWYiLAogICAgbl9jdHg9NDA5NiwKICAgIG5fZ3B1X2xheWVycz0zNSwKICAgIG5fYmF0Y2g9NTEyICAjIExhcmdlciBiYXRjaCBmb3IgcGFyYWxsZWwgcHJvY2Vzc2luZwopCgpwcm9tcHRzID0gWwogICAgIldoYXQgaXMgUHl0aG9uPyIsCiAgICAiRXhwbGFpbiBtYWNoaW5lIGxlYXJuaW5nLiIsCiAgICAiRGVzY3JpYmUgbmV1cmFsIG5ldHdvcmtzLiIKXQoKIyBQcm9jZXNzIGluIGJhdGNoIChlYWNoIHByb21wdCBnZXRzIHNlcGFyYXRlIGNvbnRleHQpCmZvciBwcm9tcHQgaW4gcHJvbXB0czoKICAgIG91dHB1dCA9IGxsbShwcm9tcHQsIG1heF90b2tlbnM9MTAwKQogICAgcHJpbnQoZiJROiB7cHJvbXB0fSIpCiAgICBwcmludChmIkE6IHtvdXRwdXRbJ2Nob2ljZXMnXVswXVsndGV4dCddfVxuIikKYGBgCgojIyMgU2VydmVyIEJhdGNoaW5nCgpgYGBiYXNoCiMgU3RhcnQgc2VydmVyIHdpdGggYmF0Y2hpbmcKLi9sbGFtYS1zZXJ2ZXIgLW0gbW9kZWwtcTRfa19tLmdndWYgXAogICAgLS1ob3N0IDAuMC4wLjAgXAogICAgLS1wb3J0IDgwODAgXAogICAgLW5nbCAzNSBcCiAgICAtYyA0MDk2IFwKICAgIC0tcGFyYWxsZWwgNCAgICAgICAgIyBDb25jdXJyZW50IHJlcXVlc3RzCiAgICAtLWNvbnQtYmF0Y2hpbmcgICAgICMgQ29udGludW91cyBiYXRjaGluZwpgYGAKCiMjIEN1c3RvbSBNb2RlbCBDb252ZXJzaW9uCgojIyMgQ29udmVydCB3aXRoIFZvY2FidWxhcnkgTW9kaWZpY2F0aW9ucwoKYGBgcHl0aG9uCiMgY3VzdG9tX2NvbnZlcnQucHkKaW1wb3J0IHN5cwpzeXMucGF0aC5pbnNlcnQoMCwgJy4vbGxhbWEuY3BwJykKCmZyb20gY29udmVydF9oZl90b19nZ3VmIGltcG9ydCBtYWluCmZyb20gZ2d1ZiBpbXBvcnQgR0dVRldyaXRlcgoKIyBDdXN0b20gY29udmVyc2lvbiB3aXRoIG1vZGlmaWVkIHZvY2FiCmRlZiBjb252ZXJ0X3dpdGhfY3VzdG9tX3ZvY2FiKG1vZGVsX3BhdGgsIG91dHB1dF9wYXRoKToKICAgICMgTG9hZCBhbmQgbW9kaWZ5IHRva2VuaXplcgogICAgZnJvbSB0cmFuc2Zvcm1lcnMgaW1wb3J0IEF1dG9Ub2tlbml6ZXIKICAgIHRva2VuaXplciA9IEF1dG9Ub2tlbml6ZXIuZnJvbV9wcmV0cmFpbmVkKG1vZGVsX3BhdGgpCgogICAgIyBBZGQgc3BlY2lhbCB0b2tlbnMgaWYgbmVlZGVkCiAgICBzcGVjaWFsX3Rva2VucyA9IHsiYWRkaXRpb25hbF9zcGVjaWFsX3Rva2VucyI6IFsiPHxjdXN0b218PiJdfQogICAgdG9rZW5pemVyLmFkZF9zcGVjaWFsX3Rva2VucyhzcGVjaWFsX3Rva2VucykKICAgIHRva2VuaXplci5zYXZlX3ByZXRyYWluZWQobW9kZWxfcGF0aCkKCiAgICAjIFRoZW4gcnVuIHN0YW5kYXJkIGNvbnZlcnNpb24KICAgIG1haW4oW21vZGVsX3BhdGgsICItLW91dGZpbGUiLCBvdXRwdXRfcGF0aF0pCmBgYAoKIyMjIENvbnZlcnQgU3BlY2lmaWMgQXJjaGl0ZWN0dXJlCgpgYGBiYXNoCiMgRm9yIE1pc3RyYWwtc3R5bGUgbW9kZWxzCnB5dGhvbiBjb252ZXJ0X2hmX3RvX2dndWYucHkgLi9taXN0cmFsLW1vZGVsIFwKICAgIC0tb3V0ZmlsZSBtaXN0cmFsLWYxNi5nZ3VmIFwKICAgIC0tb3V0dHlwZSBmMTYKCiMgRm9yIFF3ZW4gbW9kZWxzCnB5dGhvbiBjb252ZXJ0X2hmX3RvX2dndWYucHkgLi9xd2VuLW1vZGVsIFwKICAgIC0tb3V0ZmlsZSBxd2VuLWYxNi5nZ3VmIFwKICAgIC0tb3V0dHlwZSBmMTYKCiMgRm9yIFBoaSBtb2RlbHMKcHl0aG9uIGNvbnZlcnRfaGZfdG9fZ2d1Zi5weSAuL3BoaS1tb2RlbCBcCiAgICAtLW91dGZpbGUgcGhpLWYxNi5nZ3VmIFwKICAgIC0tb3V0dHlwZSBmMTYKYGBgCgojIyBBZHZhbmNlZCBRdWFudGl6YXRpb24KCiMjIyBNaXhlZCBRdWFudGl6YXRpb24KCmBgYGJhc2gKIyBRdWFudGl6ZSBkaWZmZXJlbnQgbGF5ZXIgdHlwZXMgZGlmZmVyZW50bHkKLi9sbGFtYS1xdWFudGl6ZSBtb2RlbC1mMTYuZ2d1ZiBtb2RlbC1taXhlZC5nZ3VmIFE0X0tfTSBcCiAgICAtLWFsbG93LXJlcXVhbnRpemUgXAogICAgLS1sZWF2ZS1vdXRwdXQtdGVuc29yCmBgYAoKIyMjIFF1YW50aXphdGlvbiB3aXRoIFRva2VuIEVtYmVkZGluZ3MKCmBgYGJhc2gKIyBLZWVwIGVtYmVkZGluZ3MgYXQgaGlnaGVyIHByZWNpc2lvbgouL2xsYW1hLXF1YW50aXplIG1vZGVsLWYxNi5nZ3VmIG1vZGVsLXE0LmdndWYgUTRfS19NIFwKICAgIC0tdG9rZW4tZW1iZWRkaW5nLXR5cGUgZjE2CmBgYAoKIyMjIElRIFF1YW50aXphdGlvbiAoSW1wb3J0YW5jZS1hd2FyZSkKCmBgYGJhc2gKIyBVbHRyYS1sb3cgYml0IHF1YW50aXphdGlvbiB3aXRoIGltcG9ydGFuY2UKLi9sbGFtYS1xdWFudGl6ZSAtLWltYXRyaXggbW9kZWwuaW1hdHJpeCBcCiAgICBtb2RlbC1mMTYuZ2d1ZiBtb2RlbC1pcTJfeHhzLmdndWYgSVEyX1hYUwoKIyBBdmFpbGFibGUgSVEgdHlwZXM6IElRMl9YWFMsIElRMl9YUywgSVEyX1MsIElRM19YWFMsIElRM19YUywgSVEzX1MsIElRNF9YUwpgYGAKCiMjIE1lbW9yeSBPcHRpbWl6YXRpb24KCiMjIyBNZW1vcnkgTWFwcGluZwoKYGBgcHl0aG9uCmZyb20gbGxhbWFfY3BwIGltcG9ydCBMbGFtYQoKIyBVc2UgbWVtb3J5IG1hcHBpbmcgZm9yIGxhcmdlIG1vZGVscwpsbG0gPSBMbGFtYSgKICAgIG1vZGVsX3BhdGg9Im1vZGVsLXE0X2tfbS5nZ3VmIiwKICAgIHVzZV9tbWFwPVRydWUsICAgICAgICMgTWVtb3J5IG1hcCB0aGUgbW9kZWwKICAgIHVzZV9tbG9jaz1GYWxzZSwgICAgICMgRG9uJ3QgbG9jayBpbiBSQU0KICAgIG5fZ3B1X2xheWVycz0zNQopCmBgYAoKIyMjIFBhcnRpYWwgR1BVIE9mZmxvYWQKCmBgYHB5dGhvbgojIENhbGN1bGF0ZSBsYXllcnMgdG8gb2ZmbG9hZCBiYXNlZCBvbiBWUkFNCmltcG9ydCBzdWJwcm9jZXNzCgpkZWYgZ2V0X2ZyZWVfdnJhbV9nYigpOgogICAgcmVzdWx0ID0gc3VicHJvY2Vzcy5ydW4oCiAgICAgICAgWydudmlkaWEtc21pJywgJy0tcXVlcnktZ3B1PW1lbW9yeS5mcmVlJywgJy0tZm9ybWF0PWNzdixub3VuaXRzLG5vaGVhZGVyJ10sCiAgICAgICAgY2FwdHVyZV9vdXRwdXQ9VHJ1ZSwgdGV4dD1UcnVlCiAgICApCiAgICByZXR1cm4gaW50KHJlc3VsdC5zdGRvdXQuc3RyaXAoKSkgLyAxMDI0CgojIEVzdGltYXRlIGxheWVycyBiYXNlZCBvbiBWUkFNIChyb3VnaDogMC41R0IgcGVyIGxheWVyIGZvciA3QiBRNCkKZnJlZV92cmFtID0gZ2V0X2ZyZWVfdnJhbV9nYigpCmxheWVyc190b19vZmZsb2FkID0gaW50KGZyZWVfdnJhbSAvIDAuNSkKCmxsbSA9IExsYW1hKAogICAgbW9kZWxfcGF0aD0ibW9kZWwtcTRfa19tLmdndWYiLAogICAgbl9ncHVfbGF5ZXJzPW1pbihsYXllcnNfdG9fb2ZmbG9hZCwgMzUpICAjIENhcCBhdCB0b3RhbCBsYXllcnMKKQpgYGAKCiMjIyBLViBDYWNoZSBPcHRpbWl6YXRpb24KCmBgYHB5dGhvbgpmcm9tIGxsYW1hX2NwcCBpbXBvcnQgTGxhbWEKCiMgT3B0aW1pemUgS1YgY2FjaGUgZm9yIGxvbmcgY29udGV4dHMKbGxtID0gTGxhbWEoCiAgICBtb2RlbF9wYXRoPSJtb2RlbC1xNF9rX20uZ2d1ZiIsCiAgICBuX2N0eD04MTkyLCAgICAgICAgICAjIExhcmdlIGNvbnRleHQKICAgIG5fZ3B1X2xheWVycz0zNSwKICAgIHR5cGVfaz0xLCAgICAgICAgICAgICMgUThfMCBmb3IgSyBjYWNoZSAoMSkKICAgIHR5cGVfdj0xLCAgICAgICAgICAgICMgUThfMCBmb3IgViBjYWNoZSAoMSkKICAgICMgT3IgdXNlIFE0XzAgKDIpIGZvciBtb3JlIGNvbXByZXNzaW9uCikKYGBgCgojIyBDb250ZXh0IE1hbmFnZW1lbnQKCiMjIyBDb250ZXh0IFNoaWZ0aW5nCgpgYGBweXRob24KZnJvbSBsbGFtYV9jcHAgaW1wb3J0IExsYW1hCgpsbG0gPSBMbGFtYSgKICAgIG1vZGVsX3BhdGg9Im1vZGVsLXE0X2tfbS5nZ3VmIiwKICAgIG5fY3R4PTQwOTYsCiAgICBuX2dwdV9sYXllcnM9MzUKKQoKIyBIYW5kbGUgbG9uZyBjb252ZXJzYXRpb25zIHdpdGggY29udGV4dCBzaGlmdGluZwpjb252ZXJzYXRpb24gPSBbXQptYXhfaGlzdG9yeSA9IDEwCgpkZWYgY2hhdCh1c2VyX21lc3NhZ2UpOgogICAgY29udmVyc2F0aW9uLmFwcGVuZCh7InJvbGUiOiAidXNlciIsICJjb250ZW50IjogdXNlcl9tZXNzYWdlfSkKCiAgICAjIEtlZXAgb25seSByZWNlbnQgaGlzdG9yeQogICAgaWYgbGVuKGNvbnZlcnNhdGlvbikgPiBtYXhfaGlzdG9yeSAqIDI6CiAgICAgICAgY29udmVyc2F0aW9uID0gY29udmVyc2F0aW9uWy1tYXhfaGlzdG9yeSAqIDI6XQoKICAgIHJlc3BvbnNlID0gbGxtLmNyZWF0ZV9jaGF0X2NvbXBsZXRpb24oCiAgICAgICAgbWVzc2FnZXM9Y29udmVyc2F0aW9uLAogICAgICAgIG1heF90b2tlbnM9MjU2CiAgICApCgogICAgYXNzaXN0YW50X21lc3NhZ2UgPSByZXNwb25zZVsiY2hvaWNlcyJdWzBdWyJtZXNzYWdlIl1bImNvbnRlbnQiXQogICAgY29udmVyc2F0aW9uLmFwcGVuZCh7InJvbGUiOiAiYXNzaXN0YW50IiwgImNvbnRlbnQiOiBhc3Npc3RhbnRfbWVzc2FnZX0pCiAgICByZXR1cm4gYXNzaXN0YW50X21lc3NhZ2UKYGBgCgojIyMgU2F2ZSBhbmQgTG9hZCBTdGF0ZQoKYGBgYmFzaAojIFNhdmUgc3RhdGUgdG8gZmlsZQouL2xsYW1hLWNsaSAtbSBtb2RlbC5nZ3VmIFwKICAgIC1wICJPbmNlIHVwb24gYSB0aW1lIiBcCiAgICAtLXNhdmUtc2Vzc2lvbiBzZXNzaW9uLmJpbiBcCiAgICAtbiAxMDAKCiMgTG9hZCBhbmQgY29udGludWUKLi9sbGFtYS1jbGkgLW0gbW9kZWwuZ2d1ZiBcCiAgICAtLWxvYWQtc2Vzc2lvbiBzZXNzaW9uLmJpbiBcCiAgICAtcCAiIGFuZCB0aGV5IGxpdmVkIiBcCiAgICAtbiAxMDAKYGBgCgojIyBHcmFtbWFyIENvbnN0cmFpbmVkIEdlbmVyYXRpb24KCiMjIyBKU09OIE91dHB1dAoKYGBgcHl0aG9uCmZyb20gbGxhbWFfY3BwIGltcG9ydCBMbGFtYSwgTGxhbWFHcmFtbWFyCgojIERlZmluZSBKU09OIGdyYW1tYXIKanNvbl9ncmFtbWFyID0gTGxhbWFHcmFtbWFyLmZyb21fc3RyaW5nKCcnJwpyb290IDo6PSBvYmplY3QKb2JqZWN0IDo6PSAieyIgd3MgcGFpciAoIiwiIHdzIHBhaXIpKiAifSIgd3MKcGFpciA6Oj0gc3RyaW5nICI6IiB3cyB2YWx1ZQp2YWx1ZSA6Oj0gc3RyaW5nIHwgbnVtYmVyIHwgb2JqZWN0IHwgYXJyYXkgfCAidHJ1ZSIgfCAiZmFsc2UiIHwgIm51bGwiCmFycmF5IDo6PSAiWyIgd3MgdmFsdWUgKCIsIiB3cyB2YWx1ZSkqICJdIiB3cwpzdHJpbmcgOjo9ICJcXCIiIFteIlxcXFxdKiAiXFwiIgpudW1iZXIgOjo9IFswLTldKwp3cyA6Oj0gWyBcXHRcXG5dKgonJycpCgpsbG0gPSBMbGFtYShtb2RlbF9wYXRoPSJtb2RlbC1xNF9rX20uZ2d1ZiIsIG5fZ3B1X2xheWVycz0zNSkKCm91dHB1dCA9IGxsbSgKICAgICJPdXRwdXQgYSBKU09OIG9iamVjdCB3aXRoIG5hbWUgYW5kIGFnZToiLAogICAgZ3JhbW1hcj1qc29uX2dyYW1tYXIsCiAgICBtYXhfdG9rZW5zPTEwMAopCnByaW50KG91dHB1dFsiY2hvaWNlcyJdWzBdWyJ0ZXh0Il0pCmBgYAoKIyMjIEN1c3RvbSBHcmFtbWFyCgpgYGBweXRob24KIyBHcmFtbWFyIGZvciBzcGVjaWZpYyBmb3JtYXQKYW5zd2VyX2dyYW1tYXIgPSBMbGFtYUdyYW1tYXIuZnJvbV9zdHJpbmcoJycnCnJvb3QgOjo9ICJBbnN3ZXI6ICIgbGV0dGVyICJcXG4iICJFeHBsYW5hdGlvbjogIiBleHBsYW5hdGlvbgpsZXR0ZXIgOjo9IFtBLURdCmV4cGxhbmF0aW9uIDo6PSBbYS16QS1aMC05IC4sIT9dKwonJycpCgpvdXRwdXQgPSBsbG0oCiAgICAiUTogV2hhdCBpcyAyKzI/IEEpIDMgQikgNCBDKSA1IEQpIDYiLAogICAgZ3JhbW1hcj1hbnN3ZXJfZ3JhbW1hciwKICAgIG1heF90b2tlbnM9MTAwCikKYGBgCgojIyBMb1JBIEludGVncmF0aW9uCgojIyMgTG9hZCBMb1JBIEFkYXB0ZXIKCmBgYGJhc2gKIyBBcHBseSBMb1JBIGF0IHJ1bnRpbWUKLi9sbGFtYS1jbGkgLW0gYmFzZS1tb2RlbC1xNF9rX20uZ2d1ZiBcCiAgICAtLWxvcmEgbG9yYS1hZGFwdGVyLmdndWYgXAogICAgLS1sb3JhLXNjYWxlIDEuMCBcCiAgICAtcCAiSGVsbG8hIgpgYGAKCiMjIyBNdWx0aXBsZSBMb1JBIEFkYXB0ZXJzCgpgYGBiYXNoCiMgU3RhY2sgbXVsdGlwbGUgYWRhcHRlcnMKLi9sbGFtYS1jbGkgLW0gYmFzZS1tb2RlbC5nZ3VmIFwKICAgIC0tbG9yYSBhZGFwdGVyMS5nZ3VmIC0tbG9yYS1zY2FsZSAwLjUgXAogICAgLS1sb3JhIGFkYXB0ZXIyLmdndWYgLS1sb3JhLXNjYWxlIDAuNSBcCiAgICAtcCAiSGVsbG8hIgpgYGAKCiMjIyBQeXRob24gTG9SQSBVc2FnZQoKYGBgcHl0aG9uCmZyb20gbGxhbWFfY3BwIGltcG9ydCBMbGFtYQoKbGxtID0gTGxhbWEoCiAgICBtb2RlbF9wYXRoPSJiYXNlLW1vZGVsLXE0X2tfbS5nZ3VmIiwKICAgIGxvcmFfcGF0aD0ibG9yYS1hZGFwdGVyLmdndWYiLAogICAgbG9yYV9zY2FsZT0xLjAsCiAgICBuX2dwdV9sYXllcnM9MzUKKQpgYGAKCiMjIEVtYmVkZGluZyBHZW5lcmF0aW9uCgojIyMgRXh0cmFjdCBFbWJlZGRpbmdzCgpgYGBweXRob24KZnJvbSBsbGFtYV9jcHAgaW1wb3J0IExsYW1hCgpsbG0gPSBMbGFtYSgKICAgIG1vZGVsX3BhdGg9Im1vZGVsLXE0X2tfbS5nZ3VmIiwKICAgIGVtYmVkZGluZz1UcnVlLCAgICAgICMgRW5hYmxlIGVtYmVkZGluZyBtb2RlCiAgICBuX2dwdV9sYXllcnM9MzUKKQoKIyBHZXQgZW1iZWRkaW5ncwplbWJlZGRpbmdzID0gbGxtLmVtYmVkKCJUaGlzIGlzIGEgdGVzdCBzZW50ZW5jZS4iKQpwcmludChmIkVtYmVkZGluZyBkaW1lbnNpb246IHtsZW4oZW1iZWRkaW5ncyl9IikKYGBgCgojIyMgQmF0Y2ggRW1iZWRkaW5ncwoKYGBgcHl0aG9uCnRleHRzID0gWwogICAgIk1hY2hpbmUgbGVhcm5pbmcgaXMgZmFzY2luYXRpbmcuIiwKICAgICJEZWVwIGxlYXJuaW5nIHVzZXMgbmV1cmFsIG5ldHdvcmtzLiIsCiAgICAiUHl0aG9uIGlzIGEgcHJvZ3JhbW1pbmcgbGFuZ3VhZ2UuIgpdCgplbWJlZGRpbmdzID0gW2xsbS5lbWJlZCh0ZXh0KSBmb3IgdGV4dCBpbiB0ZXh0c10KCiMgQ2FsY3VsYXRlIHNpbWlsYXJpdHkKaW1wb3J0IG51bXB5IGFzIG5wCgpkZWYgY29zaW5lX3NpbWlsYXJpdHkoYSwgYik6CiAgICByZXR1cm4gbnAuZG90KGEsIGIpIC8gKG5wLmxpbmFsZy5ub3JtKGEpICogbnAubGluYWxnLm5vcm0oYikpCgpzaW0gPSBjb3NpbmVfc2ltaWxhcml0eShlbWJlZGRpbmdzWzBdLCBlbWJlZGRpbmdzWzFdKQpwcmludChmIlNpbWlsYXJpdHk6IHtzaW06LjRmfSIpCmBgYAoKIyMgUGVyZm9ybWFuY2UgVHVuaW5nCgojIyMgQmVuY2htYXJrIFNjcmlwdAoKYGBgcHl0aG9uCmltcG9ydCB0aW1lCmZyb20gbGxhbWFfY3BwIGltcG9ydCBMbGFtYQoKZGVmIGJlbmNobWFyayhtb2RlbF9wYXRoLCBwcm9tcHQsIG5fdG9rZW5zPTEwMCwgbl9ydW5zPTUpOgogICAgbGxtID0gTGxhbWEoCiAgICAgICAgbW9kZWxfcGF0aD1tb2RlbF9wYXRoLAogICAgICAgIG5fZ3B1X2xheWVycz0zNSwKICAgICAgICBuX2N0eD0yMDQ4LAogICAgICAgIHZlcmJvc2U9RmFsc2UKICAgICkKCiAgICAjIFdhcm11cAogICAgbGxtKHByb21wdCwgbWF4X3Rva2Vucz0xMCkKCiAgICAjIEJlbmNobWFyawogICAgdGltZXMgPSBbXQogICAgZm9yIF8gaW4gcmFuZ2Uobl9ydW5zKToKICAgICAgICBzdGFydCA9IHRpbWUudGltZSgpCiAgICAgICAgb3V0cHV0ID0gbGxtKHByb21wdCwgbWF4X3Rva2Vucz1uX3Rva2VucykKICAgICAgICBlbGFwc2VkID0gdGltZS50aW1lKCkgLSBzdGFydAogICAgICAgIHRpbWVzLmFwcGVuZChlbGFwc2VkKQoKICAgIGF2Z190aW1lID0gc3VtKHRpbWVzKSAvIGxlbih0aW1lcykKICAgIHRva2Vuc19wZXJfc2VjID0gbl90b2tlbnMgLyBhdmdfdGltZQoKICAgIHByaW50KGYiTW9kZWw6IHttb2RlbF9wYXRofSIpCiAgICBwcmludChmIkF2ZyB0aW1lOiB7YXZnX3RpbWU6LjJmfXMiKQogICAgcHJpbnQoZiJUb2tlbnMvc2VjOiB7dG9rZW5zX3Blcl9zZWM6LjFmfSIpCgogICAgcmV0dXJuIHRva2Vuc19wZXJfc2VjCgojIENvbXBhcmUgcXVhbnRpemF0aW9ucwpmb3IgcXVhbnQgaW4gWyJxNF9rX20iLCAicTVfa19tIiwgInE4XzAiXToKICAgIGJlbmNobWFyayhmIm1vZGVsLXtxdWFudH0uZ2d1ZiIsICJFeHBsYWluIHF1YW50dW0gY29tcHV0aW5nOiIsIDEwMCkKYGBgCgojIyMgT3B0aW1hbCBDb25maWd1cmF0aW9uIEZpbmRlcgoKYGBgcHl0aG9uCmRlZiBmaW5kX29wdGltYWxfY29uZmlnKG1vZGVsX3BhdGgsIHRhcmdldF92cmFtX2diPTgpOgogICAgIiIiRmluZCBvcHRpbWFsIG5fZ3B1X2xheWVycyBhbmQgbl9iYXRjaCBmb3IgdGFyZ2V0IFZSQU0uIiIiCiAgICBmcm9tIGxsYW1hX2NwcCBpbXBvcnQgTGxhbWEKICAgIGltcG9ydCBnYwoKICAgIGJlc3RfY29uZmlnID0gTm9uZQogICAgYmVzdF9zcGVlZCA9IDAKCiAgICBmb3Igbl9ncHVfbGF5ZXJzIGluIHJhbmdlKDAsIDUwLCA1KToKICAgICAgICBmb3Igbl9iYXRjaCBpbiBbMTI4LCAyNTYsIDUxMiwgMTAyNF06CiAgICAgICAgICAgIHRyeToKICAgICAgICAgICAgICAgIGdjLmNvbGxlY3QoKQogICAgICAgICAgICAgICAgbGxtID0gTGxhbWEoCiAgICAgICAgICAgICAgICAgICAgbW9kZWxfcGF0aD1tb2RlbF9wYXRoLAogICAgICAgICAgICAgICAgICAgIG5fZ3B1X2xheWVycz1uX2dwdV9sYXllcnMsCiAgICAgICAgICAgICAgICAgICAgbl9iYXRjaD1uX2JhdGNoLAogICAgICAgICAgICAgICAgICAgIG5fY3R4PTIwNDgsCiAgICAgICAgICAgICAgICAgICAgdmVyYm9zZT1GYWxzZQogICAgICAgICAgICAgICAgKQoKICAgICAgICAgICAgICAgICMgUXVpY2sgYmVuY2htYXJrCiAgICAgICAgICAgICAgICBzdGFydCA9IHRpbWUudGltZSgpCiAgICAgICAgICAgICAgICBsbG0oIkhlbGxvIiwgbWF4X3Rva2Vucz01MCkKICAgICAgICAgICAgICAgIHNwZWVkID0gNTAgLyAodGltZS50aW1lKCkgLSBzdGFydCkKCiAgICAgICAgICAgICAgICBpZiBzcGVlZCA+IGJlc3Rfc3BlZWQ6CiAgICAgICAgICAgICAgICAgICAgYmVzdF9zcGVlZCA9IHNwZWVkCiAgICAgICAgICAgICAgICAgICAgYmVzdF9jb25maWcgPSB7CiAgICAgICAgICAgICAgICAgICAgICAgICJuX2dwdV9sYXllcnMiOiBuX2dwdV9sYXllcnMsCiAgICAgICAgICAgICAgICAgICAgICAgICJuX2JhdGNoIjogbl9iYXRjaCwKICAgICAgICAgICAgICAgICAgICAgICAgInNwZWVkIjogc3BlZWQKICAgICAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgZGVsIGxsbQogICAgICAgICAgICAgICAgZ2MuY29sbGVjdCgpCgogICAgICAgICAgICBleGNlcHQgRXhjZXB0aW9uIGFzIGU6CiAgICAgICAgICAgICAgICBwcmludChmIk9PTSBhdCBsYXllcnM9e25fZ3B1X2xheWVyc30sIGJhdGNoPXtuX2JhdGNofSIpCiAgICAgICAgICAgICAgICBicmVhawoKICAgIHJldHVybiBiZXN0X2NvbmZpZwpgYGAKCiMjIE11bHRpLUdQVSBTZXR1cAoKIyMjIERpc3RyaWJ1dGUgQWNyb3NzIEdQVXMKCmBgYGJhc2gKIyBTcGxpdCBtb2RlbCBhY3Jvc3MgbXVsdGlwbGUgR1BVcwouL2xsYW1hLWNsaSAtbSBsYXJnZS1tb2RlbC5nZ3VmIFwKICAgIC0tdGVuc29yLXNwbGl0IDAuNSwwLjUgXAogICAgLW5nbCA2MCBcCiAgICAtcCAiSGVsbG8hIgpgYGAKCiMjIyBQeXRob24gTXVsdGktR1BVCgpgYGBweXRob24KaW1wb3J0IG9zCm9zLmVudmlyb25bIkNVREFfVklTSUJMRV9ERVZJQ0VTIl0gPSAiMCwxIgoKZnJvbSBsbGFtYV9jcHAgaW1wb3J0IExsYW1hCgpsbG0gPSBMbGFtYSgKICAgIG1vZGVsX3BhdGg9ImxhcmdlLW1vZGVsLXE0X2tfbS5nZ3VmIiwKICAgIG5fZ3B1X2xheWVycz02MCwKICAgIHRlbnNvcl9zcGxpdD1bMC41LCAwLjVdICAjIFNwbGl0IGV2ZW5seSBhY3Jvc3MgMiBHUFVzCikKYGBgCgojIyBDdXN0b20gQnVpbGRzCgojIyMgQnVpbGQgd2l0aCBBbGwgT3B0aW1pemF0aW9ucwoKYGBgYmFzaAojIENsZWFuIGJ1aWxkIHdpdGggYWxsIENQVSBvcHRpbWl6YXRpb25zCm1ha2UgY2xlYW4KTExBTUFfT1BFTkJMQVM9MSBMTEFNQV9CTEFTX1ZFTkRPUj1PcGVuQkxBUyBtYWtlIC1qCgojIFdpdGggQ1VEQSBhbmQgY3VCTEFTCm1ha2UgY2xlYW4KR0dNTF9DVURBPTEgTExBTUFfQ1VCTEFTPTEgbWFrZSAtagoKIyBXaXRoIHNwZWNpZmljIENVREEgYXJjaGl0ZWN0dXJlCkdHTUxfQ1VEQT0xIENVREFfRE9DS0VSX0FSQ0g9c21fODYgbWFrZSAtagpgYGAKCiMjIyBDTWFrZSBCdWlsZAoKYGBgYmFzaApta2RpciBidWlsZCAmJiBjZCBidWlsZApjbWFrZSAuLiAtREdHTUxfQ1VEQT1PTiAtRENNQUtFX0JVSUxEX1RZUEU9UmVsZWFzZQpjbWFrZSAtLWJ1aWxkIC4gLS1jb25maWcgUmVsZWFzZSAtagpgYGAK
+# GGUF Advanced Usage Guide
+
+## Speculative Decoding
+
+### Draft Model Approach
+
+```bash
+# Use smaller model as draft for faster generation
+./llama-speculative \
+    -m large-model-q4_k_m.gguf \
+    -md draft-model-q4_k_m.gguf \
+    -p "Write a story about AI" \
+    -n 500 \
+    --draft 8  # Draft tokens before verification
+```
+
+### Self-Speculative Decoding
+
+```bash
+# Use same model with different context for speculation
+./llama-cli -m model-q4_k_m.gguf \
+    --lookup-cache-static lookup.bin \
+    --lookup-cache-dynamic lookup-dynamic.bin \
+    -p "Hello world"
+```
+
+## Batched Inference
+
+### Process Multiple Prompts
+
+```python
+from llama_cpp import Llama
+
+llm = Llama(
+    model_path="model-q4_k_m.gguf",
+    n_ctx=4096,
+    n_gpu_layers=35,
+    n_batch=512  # Larger batch for parallel processing
+)
+
+prompts = [
+    "What is Python?",
+    "Explain machine learning.",
+    "Describe neural networks."
+]
+
+# Process in batch (each prompt gets separate context)
+for prompt in prompts:
+    output = llm(prompt, max_tokens=100)
+    print(f"Q: {prompt}")
+    print(f"A: {output['choices'][0]['text']}\n")
+```
+
+### Server Batching
+
+```bash
+# Start server with batching
+./llama-server -m model-q4_k_m.gguf \
+    --host 0.0.0.0 \
+    --port 8080 \
+    -ngl 35 \
+    -c 4096 \
+    --parallel 4        # Concurrent requests
+    --cont-batching     # Continuous batching
+```
+
+## Custom Model Conversion
+
+### Convert with Vocabulary Modifications
+
+```python
+# custom_convert.py
+import sys
+sys.path.insert(0, './llama.cpp')
+
+from convert_hf_to_gguf import main
+from gguf import GGUFWriter
+
+# Custom conversion with modified vocab
+def convert_with_custom_vocab(model_path, output_path):
+    # Load and modify tokenizer
+    from transformers import AutoTokenizer
+    tokenizer = AutoTokenizer.from_pretrained(model_path)
+
+    # Add special tokens if needed
+    special_tokens = {"additional_special_tokens": ["<|custom|>"]}
+    tokenizer.add_special_tokens(special_tokens)
+    tokenizer.save_pretrained(model_path)
+
+    # Then run standard conversion
+    main([model_path, "--outfile", output_path])
+```
+
+### Convert Specific Architecture
+
+```bash
+# For Mistral-style models
+python convert_hf_to_gguf.py ./mistral-model \
+    --outfile mistral-f16.gguf \
+    --outtype f16
+
+# For Qwen models
+python convert_hf_to_gguf.py ./qwen-model \
+    --outfile qwen-f16.gguf \
+    --outtype f16
+
+# For Phi models
+python convert_hf_to_gguf.py ./phi-model \
+    --outfile phi-f16.gguf \
+    --outtype f16
+```
+
+## Advanced Quantization
+
+### Mixed Quantization
+
+```bash
+# Quantize different layer types differently
+./llama-quantize model-f16.gguf model-mixed.gguf Q4_K_M \
+    --allow-requantize \
+    --leave-output-tensor
+```
+
+### Quantization with Token Embeddings
+
+```bash
+# Keep embeddings at higher precision
+./llama-quantize model-f16.gguf model-q4.gguf Q4_K_M \
+    --token-embedding-type f16
+```
+
+### IQ Quantization (Importance-aware)
+
+```bash
+# Ultra-low bit quantization with importance
+./llama-quantize --imatrix model.imatrix \
+    model-f16.gguf model-iq2_xxs.gguf IQ2_XXS
+
+# Available IQ types: IQ2_XXS, IQ2_XS, IQ2_S, IQ3_XXS, IQ3_XS, IQ3_S, IQ4_XS
+```
+
+## Memory Optimization
+
+### Memory Mapping
+
+```python
+from llama_cpp import Llama
+
+# Use memory mapping for large models
+llm = Llama(
+    model_path="model-q4_k_m.gguf",
+    use_mmap=True,       # Memory map the model
+    use_mlock=False,     # Don't lock in RAM
+    n_gpu_layers=35
+)
+```
+
+### Partial GPU Offload
+
+```python
+# Calculate layers to offload based on VRAM
+import subprocess
+
+def get_free_vram_gb():
+    result = subprocess.run(
+        ['nvidia-smi', '--query-gpu=memory.free', '--format=csv,nounits,noheader'],
+        capture_output=True, text=True
+    )
+    return int(result.stdout.strip()) / 1024
+
+# Estimate layers based on VRAM (rough: 0.5GB per layer for 7B Q4)
+free_vram = get_free_vram_gb()
+layers_to_offload = int(free_vram / 0.5)
+
+llm = Llama(
+    model_path="model-q4_k_m.gguf",
+    n_gpu_layers=min(layers_to_offload, 35)  # Cap at total layers
+)
+```
+
+### KV Cache Optimization
+
+```python
+from llama_cpp import Llama
+
+# Optimize KV cache for long contexts
+llm = Llama(
+    model_path="model-q4_k_m.gguf",
+    n_ctx=8192,          # Large context
+    n_gpu_layers=35,
+    type_k=1,            # Q8_0 for K cache (1)
+    type_v=1,            # Q8_0 for V cache (1)
+    # Or use Q4_0 (2) for more compression
+)
+```
+
+## Context Management
+
+### Context Shifting
+
+```python
+from llama_cpp import Llama
+
+llm = Llama(
+    model_path="model-q4_k_m.gguf",
+    n_ctx=4096,
+    n_gpu_layers=35
+)
+
+# Handle long conversations with context shifting
+conversation = []
+max_history = 10
+
+def chat(user_message):
+    conversation.append({"role": "user", "content": user_message})
+
+    # Keep only recent history
+    if len(conversation) > max_history * 2:
+        conversation = conversation[-max_history * 2:]
+
+    response = llm.create_chat_completion(
+        messages=conversation,
+        max_tokens=256
+    )
+
+    assistant_message = response["choices"][0]["message"]["content"]
+    conversation.append({"role": "assistant", "content": assistant_message})
+    return assistant_message
+```
+
+### Save and Load State
+
+```bash
+# Save state to file
+./llama-cli -m model.gguf \
+    -p "Once upon a time" \
+    --save-session session.bin \
+    -n 100
+
+# Load and continue
+./llama-cli -m model.gguf \
+    --load-session session.bin \
+    -p " and they lived" \
+    -n 100
+```
+
+## Grammar Constrained Generation
+
+### JSON Output
+
+```python
+from llama_cpp import Llama, LlamaGrammar
+
+# Define JSON grammar
+json_grammar = LlamaGrammar.from_string('''
+root ::= object
+object ::= "{" ws pair ("," ws pair)* "}" ws
+pair ::= string ":" ws value
+value ::= string | number | object | array | "true" | "false" | "null"
+array ::= "[" ws value ("," ws value)* "]" ws
+string ::= "\\"" [^"\\\\]* "\\""
+number ::= [0-9]+
+ws ::= [ \\t\\n]*
+''')
+
+llm = Llama(model_path="model-q4_k_m.gguf", n_gpu_layers=35)
+
+output = llm(
+    "Output a JSON object with name and age:",
+    grammar=json_grammar,
+    max_tokens=100
+)
+print(output["choices"][0]["text"])
+```
+
+### Custom Grammar
+
+```python
+# Grammar for specific format
+answer_grammar = LlamaGrammar.from_string('''
+root ::= "Answer: " letter "\\n" "Explanation: " explanation
+letter ::= [A-D]
+explanation ::= [a-zA-Z0-9 .,!?]+
+''')
+
+output = llm(
+    "Q: What is 2+2? A) 3 B) 4 C) 5 D) 6",
+    grammar=answer_grammar,
+    max_tokens=100
+)
+```
+
+## LoRA Integration
+
+### Load LoRA Adapter
+
+```bash
+# Apply LoRA at runtime
+./llama-cli -m base-model-q4_k_m.gguf \
+    --lora lora-adapter.gguf \
+    --lora-scale 1.0 \
+    -p "Hello!"
+```
+
+### Multiple LoRA Adapters
+
+```bash
+# Stack multiple adapters
+./llama-cli -m base-model.gguf \
+    --lora adapter1.gguf --lora-scale 0.5 \
+    --lora adapter2.gguf --lora-scale 0.5 \
+    -p "Hello!"
+```
+
+### Python LoRA Usage
+
+```python
+from llama_cpp import Llama
+
+llm = Llama(
+    model_path="base-model-q4_k_m.gguf",
+    lora_path="lora-adapter.gguf",
+    lora_scale=1.0,
+    n_gpu_layers=35
+)
+```
+
+## Embedding Generation
+
+### Extract Embeddings
+
+```python
+from llama_cpp import Llama
+
+llm = Llama(
+    model_path="model-q4_k_m.gguf",
+    embedding=True,      # Enable embedding mode
+    n_gpu_layers=35
+)
+
+# Get embeddings
+embeddings = llm.embed("This is a test sentence.")
+print(f"Embedding dimension: {len(embeddings)}")
+```
+
+### Batch Embeddings
+
+```python
+texts = [
+    "Machine learning is fascinating.",
+    "Deep learning uses neural networks.",
+    "Python is a programming language."
+]
+
+embeddings = [llm.embed(text) for text in texts]
+
+# Calculate similarity
+import numpy as np
+
+def cosine_similarity(a, b):
+    return np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
+
+sim = cosine_similarity(embeddings[0], embeddings[1])
+print(f"Similarity: {sim:.4f}")
+```
+
+## Performance Tuning
+
+### Benchmark Script
+
+```python
+import time
+from llama_cpp import Llama
+
+def benchmark(model_path, prompt, n_tokens=100, n_runs=5):
+    llm = Llama(
+        model_path=model_path,
+        n_gpu_layers=35,
+        n_ctx=2048,
+        verbose=False
+    )
+
+    # Warmup
+    llm(prompt, max_tokens=10)
+
+    # Benchmark
+    times = []
+    for _ in range(n_runs):
+        start = time.time()
+        output = llm(prompt, max_tokens=n_tokens)
+        elapsed = time.time() - start
+        times.append(elapsed)
+
+    avg_time = sum(times) / len(times)
+    tokens_per_sec = n_tokens / avg_time
+
+    print(f"Model: {model_path}")
+    print(f"Avg time: {avg_time:.2f}s")
+    print(f"Tokens/sec: {tokens_per_sec:.1f}")
+
+    return tokens_per_sec
+
+# Compare quantizations
+for quant in ["q4_k_m", "q5_k_m", "q8_0"]:
+    benchmark(f"model-{quant}.gguf", "Explain quantum computing:", 100)
+```
+
+### Optimal Configuration Finder
+
+```python
+def find_optimal_config(model_path, target_vram_gb=8):
+    """Find optimal n_gpu_layers and n_batch for target VRAM."""
+    from llama_cpp import Llama
+    import gc
+
+    best_config = None
+    best_speed = 0
+
+    for n_gpu_layers in range(0, 50, 5):
+        for n_batch in [128, 256, 512, 1024]:
+            try:
+                gc.collect()
+                llm = Llama(
+                    model_path=model_path,
+                    n_gpu_layers=n_gpu_layers,
+                    n_batch=n_batch,
+                    n_ctx=2048,
+                    verbose=False
+                )
+
+                # Quick benchmark
+                start = time.time()
+                llm("Hello", max_tokens=50)
+                speed = 50 / (time.time() - start)
+
+                if speed > best_speed:
+                    best_speed = speed
+                    best_config = {
+                        "n_gpu_layers": n_gpu_layers,
+                        "n_batch": n_batch,
+                        "speed": speed
+                    }
+
+                del llm
+                gc.collect()
+
+            except Exception as e:
+                print(f"OOM at layers={n_gpu_layers}, batch={n_batch}")
+                break
+
+    return best_config
+```
+
+## Multi-GPU Setup
+
+### Distribute Across GPUs
+
+```bash
+# Split model across multiple GPUs
+./llama-cli -m large-model.gguf \
+    --tensor-split 0.5,0.5 \
+    -ngl 60 \
+    -p "Hello!"
+```
+
+### Python Multi-GPU
+
+```python
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "0,1"
+
+from llama_cpp import Llama
+
+llm = Llama(
+    model_path="large-model-q4_k_m.gguf",
+    n_gpu_layers=60,
+    tensor_split=[0.5, 0.5]  # Split evenly across 2 GPUs
+)
+```
+
+## Custom Builds
+
+### Build with All Optimizations
+
+```bash
+# Clean build with all CPU optimizations
+make clean
+LLAMA_OPENBLAS=1 LLAMA_BLAS_VENDOR=OpenBLAS make -j
+
+# With CUDA and cuBLAS
+make clean
+GGML_CUDA=1 LLAMA_CUBLAS=1 make -j
+
+# With specific CUDA architecture
+GGML_CUDA=1 CUDA_DOCKER_ARCH=sm_86 make -j
+```
+
+### CMake Build
+
+```bash
+mkdir build && cd build
+cmake .. -DGGML_CUDA=ON -DCMAKE_BUILD_TYPE=Release
+cmake --build . --config Release -j
+```

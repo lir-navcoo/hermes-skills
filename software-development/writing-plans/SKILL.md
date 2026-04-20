@@ -1,1 +1,296 @@
-LS0tCm5hbWU6IHdyaXRpbmctcGxhbnMKZGVzY3JpcHRpb246IFVzZSB3aGVuIHlvdSBoYXZlIGEgc3BlYyBvciByZXF1aXJlbWVudHMgZm9yIGEgbXVsdGktc3RlcCB0YXNrLiBDcmVhdGVzIGNvbXByZWhlbnNpdmUgaW1wbGVtZW50YXRpb24gcGxhbnMgd2l0aCBiaXRlLXNpemVkIHRhc2tzLCBleGFjdCBmaWxlIHBhdGhzLCBhbmQgY29tcGxldGUgY29kZSBleGFtcGxlcy4KdmVyc2lvbjogMS4xLjAKYXV0aG9yOiBIZXJtZXMgQWdlbnQgKGFkYXB0ZWQgZnJvbSBvYnJhL3N1cGVycG93ZXJzKQpsaWNlbnNlOiBNSVQKbWV0YWRhdGE6CiAgaGVybWVzOgogICAgdGFnczogW3BsYW5uaW5nLCBkZXNpZ24sIGltcGxlbWVudGF0aW9uLCB3b3JrZmxvdywgZG9jdW1lbnRhdGlvbl0KICAgIHJlbGF0ZWRfc2tpbGxzOiBbc3ViYWdlbnQtZHJpdmVuLWRldmVsb3BtZW50LCB0ZXN0LWRyaXZlbi1kZXZlbG9wbWVudCwgcmVxdWVzdGluZy1jb2RlLXJldmlld10KLS0tCgojIFdyaXRpbmcgSW1wbGVtZW50YXRpb24gUGxhbnMKCiMjIE92ZXJ2aWV3CgpXcml0ZSBjb21wcmVoZW5zaXZlIGltcGxlbWVudGF0aW9uIHBsYW5zIGFzc3VtaW5nIHRoZSBpbXBsZW1lbnRlciBoYXMgemVybyBjb250ZXh0IGZvciB0aGUgY29kZWJhc2UgYW5kIHF1ZXN0aW9uYWJsZSB0YXN0ZS4gRG9jdW1lbnQgZXZlcnl0aGluZyB0aGV5IG5lZWQ6IHdoaWNoIGZpbGVzIHRvIHRvdWNoLCBjb21wbGV0ZSBjb2RlLCB0ZXN0aW5nIGNvbW1hbmRzLCBkb2NzIHRvIGNoZWNrLCBob3cgdG8gdmVyaWZ5LiBHaXZlIHRoZW0gYml0ZS1zaXplZCB0YXNrcy4gRFJZLiBZQUdOSS4gVERELiBGcmVxdWVudCBjb21taXRzLgoKQXNzdW1lIHRoZSBpbXBsZW1lbnRlciBpcyBhIHNraWxsZWQgZGV2ZWxvcGVyIGJ1dCBrbm93cyBhbG1vc3Qgbm90aGluZyBhYm91dCB0aGUgdG9vbHNldCBvciBwcm9ibGVtIGRvbWFpbi4gQXNzdW1lIHRoZXkgZG9uJ3Qga25vdyBnb29kIHRlc3QgZGVzaWduIHZlcnkgd2VsbC4KCioqQ29yZSBwcmluY2lwbGU6KiogQSBnb29kIHBsYW4gbWFrZXMgaW1wbGVtZW50YXRpb24gb2J2aW91cy4gSWYgc29tZW9uZSBoYXMgdG8gZ3Vlc3MsIHRoZSBwbGFuIGlzIGluY29tcGxldGUuCgojIyBXaGVuIHRvIFVzZQoKKipBbHdheXMgdXNlIGJlZm9yZToqKgotIEltcGxlbWVudGluZyBtdWx0aS1zdGVwIGZlYXR1cmVzCi0gQnJlYWtpbmcgZG93biBjb21wbGV4IHJlcXVpcmVtZW50cwotIERlbGVnYXRpbmcgdG8gc3ViYWdlbnRzIHZpYSBzdWJhZ2VudC1kcml2ZW4tZGV2ZWxvcG1lbnQKCioqRG9uJ3Qgc2tpcCB3aGVuOioqCi0gRmVhdHVyZSBzZWVtcyBzaW1wbGUgKGFzc3VtcHRpb25zIGNhdXNlIGJ1Z3MpCi0gWW91IHBsYW4gdG8gaW1wbGVtZW50IGl0IHlvdXJzZWxmIChmdXR1cmUgeW91IG5lZWRzIGd1aWRhbmNlKQotIFdvcmtpbmcgYWxvbmUgKGRvY3VtZW50YXRpb24gbWF0dGVycykKCiMjIEJpdGUtU2l6ZWQgVGFzayBHcmFudWxhcml0eQoKKipFYWNoIHRhc2sgPSAyLTUgbWludXRlcyBvZiBmb2N1c2VkIHdvcmsuKioKCkV2ZXJ5IHN0ZXAgaXMgb25lIGFjdGlvbjoKLSAiV3JpdGUgdGhlIGZhaWxpbmcgdGVzdCIg4oCUIHN0ZXAKLSAiUnVuIGl0IHRvIG1ha2Ugc3VyZSBpdCBmYWlscyIg4oCUIHN0ZXAKLSAiSW1wbGVtZW50IHRoZSBtaW5pbWFsIGNvZGUgdG8gbWFrZSB0aGUgdGVzdCBwYXNzIiDigJQgc3RlcAotICJSdW4gdGhlIHRlc3RzIGFuZCBtYWtlIHN1cmUgdGhleSBwYXNzIiDigJQgc3RlcAotICJDb21taXQiIOKAlCBzdGVwCgoqKlRvbyBiaWc6KioKYGBgbWFya2Rvd24KIyMjIFRhc2sgMTogQnVpbGQgYXV0aGVudGljYXRpb24gc3lzdGVtCls1MCBsaW5lcyBvZiBjb2RlIGFjcm9zcyA1IGZpbGVzXQpgYGAKCioqUmlnaHQgc2l6ZToqKgpgYGBtYXJrZG93bgojIyMgVGFzayAxOiBDcmVhdGUgVXNlciBtb2RlbCB3aXRoIGVtYWlsIGZpZWxkClsxMCBsaW5lcywgMSBmaWxlXQoKIyMjIFRhc2sgMjogQWRkIHBhc3N3b3JkIGhhc2ggZmllbGQgdG8gVXNlcgpbOCBsaW5lcywgMSBmaWxlXQoKIyMjIFRhc2sgMzogQ3JlYXRlIHBhc3N3b3JkIGhhc2hpbmcgdXRpbGl0eQpbMTUgbGluZXMsIDEgZmlsZV0KYGBgCgojIyBQbGFuIERvY3VtZW50IFN0cnVjdHVyZQoKIyMjIEhlYWRlciAoUmVxdWlyZWQpCgpFdmVyeSBwbGFuIE1VU1Qgc3RhcnQgd2l0aDoKCmBgYG1hcmtkb3duCiMgW0ZlYXR1cmUgTmFtZV0gSW1wbGVtZW50YXRpb24gUGxhbgoKPiAqKkZvciBIZXJtZXM6KiogVXNlIHN1YmFnZW50LWRyaXZlbi1kZXZlbG9wbWVudCBza2lsbCB0byBpbXBsZW1lbnQgdGhpcyBwbGFuIHRhc2stYnktdGFzay4KCioqR29hbDoqKiBbT25lIHNlbnRlbmNlIGRlc2NyaWJpbmcgd2hhdCB0aGlzIGJ1aWxkc10KCioqQXJjaGl0ZWN0dXJlOioqIFsyLTMgc2VudGVuY2VzIGFib3V0IGFwcHJvYWNoXQoKKipUZWNoIFN0YWNrOioqIFtLZXkgdGVjaG5vbG9naWVzL2xpYnJhcmllc10KCi0tLQpgYGAKCiMjIyBUYXNrIFN0cnVjdHVyZQoKRWFjaCB0YXNrIGZvbGxvd3MgdGhpcyBmb3JtYXQ6CgpgYGBgbWFya2Rvd24KIyMjIFRhc2sgTjogW0Rlc2NyaXB0aXZlIE5hbWVdCgoqKk9iamVjdGl2ZToqKiBXaGF0IHRoaXMgdGFzayBhY2NvbXBsaXNoZXMgKG9uZSBzZW50ZW5jZSkKCioqRmlsZXM6KioKLSBDcmVhdGU6IGBleGFjdC9wYXRoL3RvL25ld19maWxlLnB5YAotIE1vZGlmeTogYGV4YWN0L3BhdGgvdG8vZXhpc3RpbmcucHk6NDUtNjdgIChsaW5lIG51bWJlcnMgaWYga25vd24pCi0gVGVzdDogYHRlc3RzL3BhdGgvdG8vdGVzdF9maWxlLnB5YAoKKipTdGVwIDE6IFdyaXRlIGZhaWxpbmcgdGVzdCoqCgpgYGBweXRob24KZGVmIHRlc3Rfc3BlY2lmaWNfYmVoYXZpb3IoKToKICAgIHJlc3VsdCA9IGZ1bmN0aW9uKGlucHV0KQogICAgYXNzZXJ0IHJlc3VsdCA9PSBleHBlY3RlZApgYGAKCioqU3RlcCAyOiBSdW4gdGVzdCB0byB2ZXJpZnkgZmFpbHVyZSoqCgpSdW46IGBweXRlc3QgdGVzdHMvcGF0aC90ZXN0LnB5Ojp0ZXN0X3NwZWNpZmljX2JlaGF2aW9yIC12YApFeHBlY3RlZDogRkFJTCDigJQgImZ1bmN0aW9uIG5vdCBkZWZpbmVkIgoKKipTdGVwIDM6IFdyaXRlIG1pbmltYWwgaW1wbGVtZW50YXRpb24qKgoKYGBgcHl0aG9uCmRlZiBmdW5jdGlvbihpbnB1dCk6CiAgICByZXR1cm4gZXhwZWN0ZWQKYGBgCgoqKlN0ZXAgNDogUnVuIHRlc3QgdG8gdmVyaWZ5IHBhc3MqKgoKUnVuOiBgcHl0ZXN0IHRlc3RzL3BhdGgvdGVzdC5weTo6dGVzdF9zcGVjaWZpY19iZWhhdmlvciAtdmAKRXhwZWN0ZWQ6IFBBU1MKCioqU3RlcCA1OiBDb21taXQqKgoKYGBgYmFzaApnaXQgYWRkIHRlc3RzL3BhdGgvdGVzdC5weSBzcmMvcGF0aC9maWxlLnB5CmdpdCBjb21taXQgLW0gImZlYXQ6IGFkZCBzcGVjaWZpYyBmZWF0dXJlIgpgYGAKYGBgYAoKIyMgV3JpdGluZyBQcm9jZXNzCgojIyMgU3RlcCAxOiBVbmRlcnN0YW5kIFJlcXVpcmVtZW50cwoKUmVhZCBhbmQgdW5kZXJzdGFuZDoKLSBGZWF0dXJlIHJlcXVpcmVtZW50cwotIERlc2lnbiBkb2N1bWVudHMgb3IgdXNlciBkZXNjcmlwdGlvbgotIEFjY2VwdGFuY2UgY3JpdGVyaWEKLSBDb25zdHJhaW50cwoKIyMjIFN0ZXAgMjogRXhwbG9yZSB0aGUgQ29kZWJhc2UKClVzZSBIZXJtZXMgdG9vbHMgdG8gdW5kZXJzdGFuZCB0aGUgcHJvamVjdDoKCmBgYHB5dGhvbgojIFVuZGVyc3RhbmQgcHJvamVjdCBzdHJ1Y3R1cmUKc2VhcmNoX2ZpbGVzKCIqLnB5IiwgdGFyZ2V0PSJmaWxlcyIsIHBhdGg9InNyYy8iKQoKIyBMb29rIGF0IHNpbWlsYXIgZmVhdHVyZXMKc2VhcmNoX2ZpbGVzKCJzaW1pbGFyX3BhdHRlcm4iLCBwYXRoPSJzcmMvIiwgZmlsZV9nbG9iPSIqLnB5IikKCiMgQ2hlY2sgZXhpc3RpbmcgdGVzdHMKc2VhcmNoX2ZpbGVzKCIqLnB5IiwgdGFyZ2V0PSJmaWxlcyIsIHBhdGg9InRlc3RzLyIpCgojIFJlYWQga2V5IGZpbGVzCnJlYWRfZmlsZSgic3JjL2FwcC5weSIpCmBgYAoKIyMjIFN0ZXAgMzogRGVzaWduIEFwcHJvYWNoCgpEZWNpZGU6Ci0gQXJjaGl0ZWN0dXJlIHBhdHRlcm4KLSBGaWxlIG9yZ2FuaXphdGlvbgotIERlcGVuZGVuY2llcyBuZWVkZWQKLSBUZXN0aW5nIHN0cmF0ZWd5CgojIyMgU3RlcCA0OiBXcml0ZSBUYXNrcwoKQ3JlYXRlIHRhc2tzIGluIG9yZGVyOgoxLiBTZXR1cC9pbmZyYXN0cnVjdHVyZQoyLiBDb3JlIGZ1bmN0aW9uYWxpdHkgKFRERCBmb3IgZWFjaCkKMy4gRWRnZSBjYXNlcwo0LiBJbnRlZ3JhdGlvbgo1LiBDbGVhbnVwL2RvY3VtZW50YXRpb24KCiMjIyBTdGVwIDU6IEFkZCBDb21wbGV0ZSBEZXRhaWxzCgpGb3IgZWFjaCB0YXNrLCBpbmNsdWRlOgotICoqRXhhY3QgZmlsZSBwYXRocyoqIChub3QgInRoZSBjb25maWcgZmlsZSIgYnV0IGBzcmMvY29uZmlnL3NldHRpbmdzLnB5YCkKLSAqKkNvbXBsZXRlIGNvZGUgZXhhbXBsZXMqKiAobm90ICJhZGQgdmFsaWRhdGlvbiIgYnV0IHRoZSBhY3R1YWwgY29kZSkKLSAqKkV4YWN0IGNvbW1hbmRzKiogd2l0aCBleHBlY3RlZCBvdXRwdXQKLSAqKlZlcmlmaWNhdGlvbiBzdGVwcyoqIHRoYXQgcHJvdmUgdGhlIHRhc2sgd29ya3MKCiMjIyBTdGVwIDY6IFJldmlldyB0aGUgUGxhbgoKQ2hlY2s6Ci0gWyBdIFRhc2tzIGFyZSBzZXF1ZW50aWFsIGFuZCBsb2dpY2FsCi0gWyBdIEVhY2ggdGFzayBpcyBiaXRlLXNpemVkICgyLTUgbWluKQotIFsgXSBGaWxlIHBhdGhzIGFyZSBleGFjdAotIFsgXSBDb2RlIGV4YW1wbGVzIGFyZSBjb21wbGV0ZSAoY29weS1wYXN0ZWFibGUpCi0gWyBdIENvbW1hbmRzIGFyZSBleGFjdCB3aXRoIGV4cGVjdGVkIG91dHB1dAotIFsgXSBObyBtaXNzaW5nIGNvbnRleHQKLSBbIF0gRFJZLCBZQUdOSSwgVEREIHByaW5jaXBsZXMgYXBwbGllZAoKIyMjIFN0ZXAgNzogU2F2ZSB0aGUgUGxhbgoKYGBgYmFzaApta2RpciAtcCBkb2NzL3BsYW5zCiMgU2F2ZSBwbGFuIHRvIGRvY3MvcGxhbnMvWVlZWS1NTS1ERC1mZWF0dXJlLW5hbWUubWQKZ2l0IGFkZCBkb2NzL3BsYW5zLwpnaXQgY29tbWl0IC1tICJkb2NzOiBhZGQgaW1wbGVtZW50YXRpb24gcGxhbiBmb3IgW2ZlYXR1cmVdIgpgYGAKCiMjIFByaW5jaXBsZXMKCiMjIyBEUlkgKERvbid0IFJlcGVhdCBZb3Vyc2VsZikKCioqQmFkOioqIENvcHktcGFzdGUgdmFsaWRhdGlvbiBpbiAzIHBsYWNlcwoqKkdvb2Q6KiogRXh0cmFjdCB2YWxpZGF0aW9uIGZ1bmN0aW9uLCB1c2UgZXZlcnl3aGVyZQoKIyMjIFlBR05JIChZb3UgQXJlbid0IEdvbm5hIE5lZWQgSXQpCgoqKkJhZDoqKiBBZGQgImZsZXhpYmlsaXR5IiBmb3IgZnV0dXJlIHJlcXVpcmVtZW50cwoqKkdvb2Q6KiogSW1wbGVtZW50IG9ubHkgd2hhdCdzIG5lZWRlZCBub3cKCmBgYHB5dGhvbgojIEJhZCDigJQgWUFHTkkgdmlvbGF0aW9uCmNsYXNzIFVzZXI6CiAgICBkZWYgX19pbml0X18oc2VsZiwgbmFtZSwgZW1haWwpOgogICAgICAgIHNlbGYubmFtZSA9IG5hbWUKICAgICAgICBzZWxmLmVtYWlsID0gZW1haWwKICAgICAgICBzZWxmLnByZWZlcmVuY2VzID0ge30gICMgTm90IG5lZWRlZCB5ZXQhCiAgICAgICAgc2VsZi5tZXRhZGF0YSA9IHt9ICAgICAjIE5vdCBuZWVkZWQgeWV0IQoKIyBHb29kIOKAlCBZQUdOSQpjbGFzcyBVc2VyOgogICAgZGVmIF9faW5pdF9fKHNlbGYsIG5hbWUsIGVtYWlsKToKICAgICAgICBzZWxmLm5hbWUgPSBuYW1lCiAgICAgICAgc2VsZi5lbWFpbCA9IGVtYWlsCmBgYAoKIyMjIFRERCAoVGVzdC1Ecml2ZW4gRGV2ZWxvcG1lbnQpCgpFdmVyeSB0YXNrIHRoYXQgcHJvZHVjZXMgY29kZSBzaG91bGQgaW5jbHVkZSB0aGUgZnVsbCBUREQgY3ljbGU6CjEuIFdyaXRlIGZhaWxpbmcgdGVzdAoyLiBSdW4gdG8gdmVyaWZ5IGZhaWx1cmUKMy4gV3JpdGUgbWluaW1hbCBjb2RlCjQuIFJ1biB0byB2ZXJpZnkgcGFzcwoKU2VlIGB0ZXN0LWRyaXZlbi1kZXZlbG9wbWVudGAgc2tpbGwgZm9yIGRldGFpbHMuCgojIyMgRnJlcXVlbnQgQ29tbWl0cwoKQ29tbWl0IGFmdGVyIGV2ZXJ5IHRhc2s6CmBgYGJhc2gKZ2l0IGFkZCBbZmlsZXNdCmdpdCBjb21taXQgLW0gInR5cGU6IGRlc2NyaXB0aW9uIgpgYGAKCiMjIENvbW1vbiBNaXN0YWtlcwoKIyMjIFZhZ3VlIFRhc2tzCgoqKkJhZDoqKiAiQWRkIGF1dGhlbnRpY2F0aW9uIgoqKkdvb2Q6KiogIkNyZWF0ZSBVc2VyIG1vZGVsIHdpdGggZW1haWwgYW5kIHBhc3N3b3JkX2hhc2ggZmllbGRzIgoKIyMjIEluY29tcGxldGUgQ29kZQoKKipCYWQ6KiogIlN0ZXAgMTogQWRkIHZhbGlkYXRpb24gZnVuY3Rpb24iCioqR29vZDoqKiAiU3RlcCAxOiBBZGQgdmFsaWRhdGlvbiBmdW5jdGlvbiIgZm9sbG93ZWQgYnkgdGhlIGNvbXBsZXRlIGZ1bmN0aW9uIGNvZGUKCiMjIyBNaXNzaW5nIFZlcmlmaWNhdGlvbgoKKipCYWQ6KiogIlN0ZXAgMzogVGVzdCBpdCB3b3JrcyIKKipHb29kOioqICJTdGVwIDM6IFJ1biBgcHl0ZXN0IHRlc3RzL3Rlc3RfYXV0aC5weSAtdmAsIGV4cGVjdGVkOiAzIHBhc3NlZCIKCiMjIyBNaXNzaW5nIEZpbGUgUGF0aHMKCioqQmFkOioqICJDcmVhdGUgdGhlIG1vZGVsIGZpbGUiCioqR29vZDoqKiAiQ3JlYXRlOiBgc3JjL21vZGVscy91c2VyLnB5YCIKCiMjIEV4ZWN1dGlvbiBIYW5kb2ZmCgpBZnRlciBzYXZpbmcgdGhlIHBsYW4sIG9mZmVyIHRoZSBleGVjdXRpb24gYXBwcm9hY2g6CgoqKiJQbGFuIGNvbXBsZXRlIGFuZCBzYXZlZC4gUmVhZHkgdG8gZXhlY3V0ZSB1c2luZyBzdWJhZ2VudC1kcml2ZW4tZGV2ZWxvcG1lbnQg4oCUIEknbGwgZGlzcGF0Y2ggYSBmcmVzaCBzdWJhZ2VudCBwZXIgdGFzayB3aXRoIHR3by1zdGFnZSByZXZpZXcgKHNwZWMgY29tcGxpYW5jZSB0aGVuIGNvZGUgcXVhbGl0eSkuIFNoYWxsIEkgcHJvY2VlZD8iKioKCldoZW4gZXhlY3V0aW5nLCB1c2UgdGhlIGBzdWJhZ2VudC1kcml2ZW4tZGV2ZWxvcG1lbnRgIHNraWxsOgotIEZyZXNoIGBkZWxlZ2F0ZV90YXNrYCBwZXIgdGFzayB3aXRoIGZ1bGwgY29udGV4dAotIFNwZWMgY29tcGxpYW5jZSByZXZpZXcgYWZ0ZXIgZWFjaCB0YXNrCi0gQ29kZSBxdWFsaXR5IHJldmlldyBhZnRlciBzcGVjIHBhc3NlcwotIFByb2NlZWQgb25seSB3aGVuIGJvdGggcmV2aWV3cyBhcHByb3ZlCgojIyBSZW1lbWJlcgoKYGBgCkJpdGUtc2l6ZWQgdGFza3MgKDItNSBtaW4gZWFjaCkKRXhhY3QgZmlsZSBwYXRocwpDb21wbGV0ZSBjb2RlIChjb3B5LXBhc3RlYWJsZSkKRXhhY3QgY29tbWFuZHMgd2l0aCBleHBlY3RlZCBvdXRwdXQKVmVyaWZpY2F0aW9uIHN0ZXBzCkRSWSwgWUFHTkksIFRERApGcmVxdWVudCBjb21taXRzCmBgYAoKKipBIGdvb2QgcGxhbiBtYWtlcyBpbXBsZW1lbnRhdGlvbiBvYnZpb3VzLioqCg==
+---
+name: writing-plans
+description: Use when you have a spec or requirements for a multi-step task. Creates comprehensive implementation plans with bite-sized tasks, exact file paths, and complete code examples.
+version: 1.1.0
+author: Hermes Agent (adapted from obra/superpowers)
+license: MIT
+metadata:
+  hermes:
+    tags: [planning, design, implementation, workflow, documentation]
+    related_skills: [subagent-driven-development, test-driven-development, requesting-code-review]
+---
+
+# Writing Implementation Plans
+
+## Overview
+
+Write comprehensive implementation plans assuming the implementer has zero context for the codebase and questionable taste. Document everything they need: which files to touch, complete code, testing commands, docs to check, how to verify. Give them bite-sized tasks. DRY. YAGNI. TDD. Frequent commits.
+
+Assume the implementer is a skilled developer but knows almost nothing about the toolset or problem domain. Assume they don't know good test design very well.
+
+**Core principle:** A good plan makes implementation obvious. If someone has to guess, the plan is incomplete.
+
+## When to Use
+
+**Always use before:**
+- Implementing multi-step features
+- Breaking down complex requirements
+- Delegating to subagents via subagent-driven-development
+
+**Don't skip when:**
+- Feature seems simple (assumptions cause bugs)
+- You plan to implement it yourself (future you needs guidance)
+- Working alone (documentation matters)
+
+## Bite-Sized Task Granularity
+
+**Each task = 2-5 minutes of focused work.**
+
+Every step is one action:
+- "Write the failing test" — step
+- "Run it to make sure it fails" — step
+- "Implement the minimal code to make the test pass" — step
+- "Run the tests and make sure they pass" — step
+- "Commit" — step
+
+**Too big:**
+```markdown
+### Task 1: Build authentication system
+[50 lines of code across 5 files]
+```
+
+**Right size:**
+```markdown
+### Task 1: Create User model with email field
+[10 lines, 1 file]
+
+### Task 2: Add password hash field to User
+[8 lines, 1 file]
+
+### Task 3: Create password hashing utility
+[15 lines, 1 file]
+```
+
+## Plan Document Structure
+
+### Header (Required)
+
+Every plan MUST start with:
+
+```markdown
+# [Feature Name] Implementation Plan
+
+> **For Hermes:** Use subagent-driven-development skill to implement this plan task-by-task.
+
+**Goal:** [One sentence describing what this builds]
+
+**Architecture:** [2-3 sentences about approach]
+
+**Tech Stack:** [Key technologies/libraries]
+
+---
+```
+
+### Task Structure
+
+Each task follows this format:
+
+````markdown
+### Task N: [Descriptive Name]
+
+**Objective:** What this task accomplishes (one sentence)
+
+**Files:**
+- Create: `exact/path/to/new_file.py`
+- Modify: `exact/path/to/existing.py:45-67` (line numbers if known)
+- Test: `tests/path/to/test_file.py`
+
+**Step 1: Write failing test**
+
+```python
+def test_specific_behavior():
+    result = function(input)
+    assert result == expected
+```
+
+**Step 2: Run test to verify failure**
+
+Run: `pytest tests/path/test.py::test_specific_behavior -v`
+Expected: FAIL — "function not defined"
+
+**Step 3: Write minimal implementation**
+
+```python
+def function(input):
+    return expected
+```
+
+**Step 4: Run test to verify pass**
+
+Run: `pytest tests/path/test.py::test_specific_behavior -v`
+Expected: PASS
+
+**Step 5: Commit**
+
+```bash
+git add tests/path/test.py src/path/file.py
+git commit -m "feat: add specific feature"
+```
+````
+
+## Writing Process
+
+### Step 1: Understand Requirements
+
+Read and understand:
+- Feature requirements
+- Design documents or user description
+- Acceptance criteria
+- Constraints
+
+### Step 2: Explore the Codebase
+
+Use Hermes tools to understand the project:
+
+```python
+# Understand project structure
+search_files("*.py", target="files", path="src/")
+
+# Look at similar features
+search_files("similar_pattern", path="src/", file_glob="*.py")
+
+# Check existing tests
+search_files("*.py", target="files", path="tests/")
+
+# Read key files
+read_file("src/app.py")
+```
+
+### Step 3: Design Approach
+
+Decide:
+- Architecture pattern
+- File organization
+- Dependencies needed
+- Testing strategy
+
+### Step 4: Write Tasks
+
+Create tasks in order:
+1. Setup/infrastructure
+2. Core functionality (TDD for each)
+3. Edge cases
+4. Integration
+5. Cleanup/documentation
+
+### Step 5: Add Complete Details
+
+For each task, include:
+- **Exact file paths** (not "the config file" but `src/config/settings.py`)
+- **Complete code examples** (not "add validation" but the actual code)
+- **Exact commands** with expected output
+- **Verification steps** that prove the task works
+
+### Step 6: Review the Plan
+
+Check:
+- [ ] Tasks are sequential and logical
+- [ ] Each task is bite-sized (2-5 min)
+- [ ] File paths are exact
+- [ ] Code examples are complete (copy-pasteable)
+- [ ] Commands are exact with expected output
+- [ ] No missing context
+- [ ] DRY, YAGNI, TDD principles applied
+
+### Step 7: Save the Plan
+
+```bash
+mkdir -p docs/plans
+# Save plan to docs/plans/YYYY-MM-DD-feature-name.md
+git add docs/plans/
+git commit -m "docs: add implementation plan for [feature]"
+```
+
+## Principles
+
+### DRY (Don't Repeat Yourself)
+
+**Bad:** Copy-paste validation in 3 places
+**Good:** Extract validation function, use everywhere
+
+### YAGNI (You Aren't Gonna Need It)
+
+**Bad:** Add "flexibility" for future requirements
+**Good:** Implement only what's needed now
+
+```python
+# Bad — YAGNI violation
+class User:
+    def __init__(self, name, email):
+        self.name = name
+        self.email = email
+        self.preferences = {}  # Not needed yet!
+        self.metadata = {}     # Not needed yet!
+
+# Good — YAGNI
+class User:
+    def __init__(self, name, email):
+        self.name = name
+        self.email = email
+```
+
+### TDD (Test-Driven Development)
+
+Every task that produces code should include the full TDD cycle:
+1. Write failing test
+2. Run to verify failure
+3. Write minimal code
+4. Run to verify pass
+
+See `test-driven-development` skill for details.
+
+### Frequent Commits
+
+Commit after every task:
+```bash
+git add [files]
+git commit -m "type: description"
+```
+
+## Common Mistakes
+
+### Vague Tasks
+
+**Bad:** "Add authentication"
+**Good:** "Create User model with email and password_hash fields"
+
+### Incomplete Code
+
+**Bad:** "Step 1: Add validation function"
+**Good:** "Step 1: Add validation function" followed by the complete function code
+
+### Missing Verification
+
+**Bad:** "Step 3: Test it works"
+**Good:** "Step 3: Run `pytest tests/test_auth.py -v`, expected: 3 passed"
+
+### Missing File Paths
+
+**Bad:** "Create the model file"
+**Good:** "Create: `src/models/user.py`"
+
+## Execution Handoff
+
+After saving the plan, offer the execution approach:
+
+**"Plan complete and saved. Ready to execute using subagent-driven-development — I'll dispatch a fresh subagent per task with two-stage review (spec compliance then code quality). Shall I proceed?"**
+
+When executing, use the `subagent-driven-development` skill:
+- Fresh `delegate_task` per task with full context
+- Spec compliance review after each task
+- Code quality review after spec passes
+- Proceed only when both reviews approve
+
+## Remember
+
+```
+Bite-sized tasks (2-5 min each)
+Exact file paths
+Complete code (copy-pasteable)
+Exact commands with expected output
+Verification steps
+DRY, YAGNI, TDD
+Frequent commits
+```
+
+**A good plan makes implementation obvious.**

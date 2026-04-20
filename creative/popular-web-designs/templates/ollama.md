@@ -1,1 +1,280 @@
-IyBEZXNpZ24gU3lzdGVtOiBPbGxhbWEKCgo+ICoqSGVybWVzIEFnZW50IOKAlCBJbXBsZW1lbnRhdGlvbiBOb3RlcyoqCj4KPiBUaGUgb3JpZ2luYWwgc2l0ZSB1c2VzIHByb3ByaWV0YXJ5IGZvbnRzLiBGb3Igc2VsZi1jb250YWluZWQgSFRNTCBvdXRwdXQsIHVzZSB0aGVzZSBDRE4gc3Vic3RpdHV0ZXM6Cj4gLSAqKlByaW1hcnk6KiogYEludGVyYCB8ICoqTW9ubzoqKiBgSmV0QnJhaW5zIE1vbm9gCj4gLSAqKkZvbnQgc3RhY2sgKENTUyk6KiogYGZvbnQtZmFtaWx5OiAnSW50ZXInLCBzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sICdTZWdvZSBVSScsIFJvYm90bywgc2Fucy1zZXJpZjtgCj4gLSAqKk1vbm8gc3RhY2sgKENTUyk6KiogYGZvbnQtZmFtaWx5OiAnSmV0QnJhaW5zIE1vbm8nLCB1aS1tb25vc3BhY2UsIFNGTW9uby1SZWd1bGFyLCBNZW5sbywgTW9uYWNvLCBDb25zb2xhcywgJ0xpYmVyYXRpb24gTW9ubycsICdDb3VyaWVyIE5ldycsIG1vbm9zcGFjZTtgCj4gYGBgaHRtbAo+IDxsaW5rIGhyZWY9Imh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9SW50ZXI6d2dodEAzMDA7NDAwOzUwMDs2MDA7NzAwJmZhbWlseT1KZXRCcmFpbnMrTW9ubzp3Z2h0QDQwMDs1MDAmZGlzcGxheT1zd2FwIiByZWw9InN0eWxlc2hlZXQiPgo+IGBgYAo+IFVzZSBgd3JpdGVfZmlsZWAgdG8gY3JlYXRlIEhUTUwsIHNlcnZlIHZpYSBgZ2VuZXJhdGl2ZS13aWRnZXRzYCBza2lsbCAoY2xvdWRmbGFyZWQgdHVubmVsKS4KPiBWZXJpZnkgdmlzdWFsIGFjY3VyYWN5IHdpdGggYGJyb3dzZXJfdmlzaW9uYCBhZnRlciBnZW5lcmF0aW5nLgoKIyMgMS4gVmlzdWFsIFRoZW1lICYgQXRtb3NwaGVyZQoKT2xsYW1hJ3MgaW50ZXJmYWNlIGlzIHJhZGljYWwgbWluaW1hbGlzbSB0YWtlbiB0byBpdHMgbG9naWNhbCBjb25jbHVzaW9uIOKAlCBhIHB1cmUtd2hpdGUgdm9pZCB3aGVyZSBjb250ZW50IGZsb2F0cyB3aXRob3V0IGRlY29yYXRpb24sIHNoYWRvdywgb3IgY29sb3IuIFRoZSBkZXNpZ24gcGhpbG9zb3BoeSBtaXJyb3JzIHRoZSBwcm9kdWN0IGl0c2VsZjogc3RyaXAgYXdheSBldmVyeXRoaW5nIHVubmVjZXNzYXJ5IHVudGlsIG9ubHkgdGhlIGVzc2VudGlhbCB0b29sIHJlbWFpbnMuIFRoaXMgaXMgdGhlIGRpZ2l0YWwgZXF1aXZhbGVudCBvZiBhIERpZXRlciBSYW1zIG9iamVjdCDigJQgZXZlcnkgcGl4ZWwgZWFybnMgaXRzIHBsYWNlLCBhbmQgdGhlIGFic2VuY2Ugb2YgZGVzaWduIElTIHRoZSBkZXNpZ24uCgpUaGUgZW50aXJlIHBhZ2UgZXhpc3RzIGluIHB1cmUgZ3JheXNjYWxlLiBUaGVyZSBpcyB6ZXJvIGNocm9tYXRpYyBjb2xvciBpbiB0aGUgaW50ZXJmYWNlIOKAlCBubyBicmFuZCBibHVlLCBubyBhY2NlbnQgZ3JlZW4sIG5vIHNlbWFudGljIHJlZC4gVGhlIG9ubHkgY29sb3JzIHRoYXQgZXhpc3QgYXJlIHNoYWRlcyBiZXR3ZWVuIHB1cmUgYmxhY2sgKGAjMDAwMDAwYCkgYW5kIHB1cmUgd2hpdGUgKGAjZmZmZmZmYCksIGNyZWF0aW5nIGEgbW9ub2Nocm9tZSBlbnZpcm9ubWVudCB0aGF0IGxldHMgdGhlIHVzZXIncyBtZW50YWwgbW9kZWwgb2YgIm9wZW4gbW9kZWxzIiByZW1haW4gdW5jb2xvcmVkIGJ5IGJyYW5kIG9waW5pb24uIFRoZSBPbGxhbWEgbGxhbWEgbWFzY290LCByZW5kZXJlZCBpbiBzaW1wbGUgYmxhY2sgbGluZSBhcnQsIGlzIHRoZSBvbmx5IGlsbHVzdHJhdGlvbiDigJQgYW5kIGV2ZW4gaXQncyBtb25vY2hyb21lLgoKV2hhdCBtYWtlcyBPbGxhbWEgZGlzdGluY3RpdmUgaXMgdGhlIGNvbWJpbmF0aW9uIG9mIFNGIFBybyBSb3VuZGVkIChBcHBsZSdzIHJvdW5kZWQgc3lzdGVtIGZvbnQpIHdpdGggYW4gZXhjbHVzaXZlbHkgcGlsbC1zaGFwZWQgZ2VvbWV0cnkgKDk5OTlweCByYWRpdXMgb24gZXZlcnl0aGluZyBpbnRlcmFjdGl2ZSkuIFRoZSByb3VuZGVkIGxldHRlcmZvcm1zICsgcm91bmRlZCBidXR0b25zICsgcm91bmRlZCBjb250YWluZXJzIGNyZWF0ZSBhIGNvaGVzaXZlICJzb2Z0bmVzcyBsYW5ndWFnZSIgdGhhdCBtYWtlcyBhIGRldmVsb3BlciBDTEkgdG9vbCBmZWVsIGFwcHJvYWNoYWJsZSBhbmQgZnJpZW5kbHkgcmF0aGVyIHRoYW4gaW50aW1pZGF0aW5nLiBUaGlzIGlzIG1pbmltYWxpc20gd2l0aCB3YXJtdGgg4oCUIG5vdCBjb2xkIFN3aXNzLXN0eWxlIGdyaWQgbWluaW1hbGlzbSwgYnV0IHRoZSBraW5kIHdoZXJlIHRoZSBlZGdlcyBhcmUgbGl0ZXJhbGx5IHNvZnRlbmVkLgoKKipLZXkgQ2hhcmFjdGVyaXN0aWNzOioqCi0gUHVyZSB3aGl0ZSBjYW52YXMgd2l0aCB6ZXJvIGNocm9tYXRpYyBjb2xvciDigJQgY29tcGxldGVseSBncmF5c2NhbGUKLSBTRiBQcm8gUm91bmRlZCBoZWFkbGluZXMgY3JlYXRpbmcgYSBkaXN0aW5jdGl2ZWx5IEFwcGxlLWxpa2Ugc29mdG5lc3MKLSBCaW5hcnkgYm9yZGVyLXJhZGl1cyBzeXN0ZW06IDEycHggKGNvbnRhaW5lcnMpIG9yIDk5OTlweCAoZXZlcnl0aGluZyBpbnRlcmFjdGl2ZSkKLSBaZXJvIHNoYWRvd3Mg4oCUIGRlcHRoIGNvbWVzIGV4Y2x1c2l2ZWx5IGZyb20gYmFja2dyb3VuZCBjb2xvciBzaGlmdHMgYW5kIGJvcmRlcnMKLSBQaWxsLXNoYXBlZCBnZW9tZXRyeSBvbiBhbGwgaW50ZXJhY3RpdmUgZWxlbWVudHMgKGJ1dHRvbnMsIHRhYnMsIGlucHV0cywgdGFncykKLSBUaGUgT2xsYW1hIGxsYW1hIGFzIHRoZSBzb2xlIGlsbHVzdHJhdGlvbiDigJQgYmxhY2sgbGluZSBhcnQsIG5vIGNvbG9yCi0gRXh0cmVtZSBjb250ZW50IHJlc3RyYWludCDigJQgdGhlIGhvbWVwYWdlIGlzIHNob3J0LCBmb2N1c2VkLCBhbmQgdW5jbHV0dGVyZWQKCiMjIDIuIENvbG9yIFBhbGV0dGUgJiBSb2xlcwoKIyMjIFByaW1hcnkKLSAqKlB1cmUgQmxhY2sqKiAoYCMwMDAwMDBgKTogUHJpbWFyeSBoZWFkbGluZXMsIHByaW1hcnkgbGlua3MsIGFuZCB0aGUgZGFya2VzdCB0ZXh0LiBUaGUgb25seSAiY29sb3IiIHRoYXQgZGVtYW5kcyBhdHRlbnRpb24uCi0gKipOZWFyIEJsYWNrKiogKGAjMjYyNjI2YCk6IEJ1dHRvbiB0ZXh0IG9uIGxpZ2h0IHN1cmZhY2VzLCBzZWNvbmRhcnkgaGVhZGxpbmUgd2VpZ2h0LgotICoqRGFya2VzdCBTdXJmYWNlKiogKGAjMDkwOTA5YCk6IFRoZSBkYXJrZXN0IHBvc3NpYmxlIHN1cmZhY2Ug4oCUIGJhcmVseSBkaXN0aW5ndWlzaGFibGUgZnJvbSBwdXJlIGJsYWNrLCB1c2VkIGZvciBmb290ZXIgb3IgZGFyayBjb250YWluZXJzLgoKIyMjIFN1cmZhY2UgJiBCYWNrZ3JvdW5kCi0gKipQdXJlIFdoaXRlKiogKGAjZmZmZmZmYCk6IFRoZSBwcmltYXJ5IHBhZ2UgYmFja2dyb3VuZCDigJQgbm90IG9mZi13aGl0ZSwgbm90IGNyZWFtLCBwdXJlIHdoaXRlLiBCdXR0b24gc3VyZmFjZXMgZm9yIHNlY29uZGFyeSBhY3Rpb25zLgotICoqU25vdyoqIChgI2ZhZmFmYWApOiBUaGUgc3VidGxlc3QgcG9zc2libGUgc3VyZmFjZSBkaXN0aW5jdGlvbiBmcm9tIHdoaXRlIOKAlCB1c2VkIGZvciBzZWN0aW9uIGJhY2tncm91bmRzIGFuZCBiYXJlbHktZWxldmF0ZWQgY29udGFpbmVycy4KLSAqKkxpZ2h0IEdyYXkqKiAoYCNlNWU1ZTVgKTogQnV0dG9uIGJhY2tncm91bmRzLCBib3JkZXJzLCBhbmQgdGhlIHByaW1hcnkgY29udGFpbm1lbnQgY29sb3IuIFRoZSB3b3JraG9yc2UgbmV1dHJhbC4KCiMjIyBOZXV0cmFscyAmIFRleHQKLSAqKlN0b25lKiogKGAjNzM3MzczYCk6IFNlY29uZGFyeSBib2R5IHRleHQsIGZvb3RlciBsaW5rcywgYW5kIGRlLWVtcGhhc2l6ZWQgY29udGVudC4gVGhlIHByaW1hcnkgIm11dGVkIiB0b25lLgotICoqTWlkIEdyYXkqKiAoYCM1MjUyNTJgKTogRW1waGFzaXplZCBzZWNvbmRhcnkgdGV4dCwgc2xpZ2h0bHkgZGFya2VyIHRoYW4gU3RvbmUuCi0gKipTaWx2ZXIqKiAoYCNhM2EzYTNgKTogVGVydGlhcnkgdGV4dCwgcGxhY2Vob2xkZXJzLCBhbmQgZGVlcGx5IGRlLWVtcGhhc2l6ZWQgbWV0YWRhdGEuCi0gKipCdXR0b24gVGV4dCBEYXJrKiogKGAjNDA0MDQwYCk6IFNwZWNpZmljIHRvIHdoaXRlLXN1cmZhY2UgYnV0dG9uIHRleHQuCgojIyMgU2VtYW50aWMgJiBBY2NlbnQKLSAqKlJpbmcgQmx1ZSoqIChgIzNiODJmNmAgYXQgNTAlKTogVGhlIE9OTFkgbm9uLWdyYXkgY29sb3IgaW4gdGhlIGVudGlyZSBzeXN0ZW0g4oCUIFRhaWx3aW5kJ3MgZGVmYXVsdCBmb2N1cyByaW5nLCB1c2VkIGV4Y2x1c2l2ZWx5IGZvciBrZXlib2FyZCBhY2Nlc3NpYmlsaXR5LiBOZXZlciB2aXNpYmxlIGluIG5vcm1hbCBpbnRlcmFjdGlvbiBmbG93LgotICoqQm9yZGVyIExpZ2h0KiogKGAjZDRkNGQ0YCk6IEEgc2xpZ2h0bHkgZGFya2VyIGdyYXkgZm9yIHdoaXRlLXN1cmZhY2UgYnV0dG9uIGJvcmRlcnMuCgojIyMgR3JhZGllbnQgU3lzdGVtCi0gKipOb25lLioqIE9sbGFtYSB1c2VzIGFic29sdXRlbHkgbm8gZ3JhZGllbnRzLiBWaXN1YWwgc2VwYXJhdGlvbiBjb21lcyBmcm9tIGZsYXQgY29sb3IgYmxvY2tzIGFuZCBzaW5nbGUtcGl4ZWwgYm9yZGVycy4gVGhpcyBpcyBhIGRlbGliZXJhdGUsIGFsbW9zdCBwaGlsb3NvcGhpY2FsIGRlc2lnbiBjaG9pY2UuCgojIyAzLiBUeXBvZ3JhcGh5IFJ1bGVzCgojIyMgRm9udCBGYW1pbHkKLSAqKkRpc3BsYXkqKjogYFNGIFBybyBSb3VuZGVkYCwgd2l0aCBmYWxsYmFja3M6IGBzeXN0ZW0tdWksIC1hcHBsZS1zeXN0ZW0sIHN5c3RlbS11aWAKLSAqKkJvZHkgLyBVSSoqOiBgdWktc2Fucy1zZXJpZmAsIHdpdGggZmFsbGJhY2tzOiBgc3lzdGVtLXVpLCBBcHBsZSBDb2xvciBFbW9qaSwgU2Vnb2UgVUkgRW1vamksIFNlZ29lIFVJIFN5bWJvbCwgTm90byBDb2xvciBFbW9qaWAKLSAqKk1vbm9zcGFjZSoqOiBgdWktbW9ub3NwYWNlYCwgd2l0aCBmYWxsYmFja3M6IGBTRk1vbm8tUmVndWxhciwgTWVubG8sIE1vbmFjbywgQ29uc29sYXMsIExpYmVyYXRpb24gTW9ubywgQ291cmllciBOZXdgCgoqTm90ZTogU0YgUHJvIFJvdW5kZWQgaXMgQXBwbGUncyBzeXN0ZW0gZm9udCDigJQgaXQgcmVuZGVycyB3aXRoIHJvdW5kZWQgdGVybWluYWxzIG9uIG1hY09TL2lPUyBhbmQgZmFsbHMgYmFjayB0byB0aGUgc3lzdGVtIHNhbnMtc2VyaWYgb24gb3RoZXIgcGxhdGZvcm1zLioKCiMjIyBIaWVyYXJjaHkKCnwgUm9sZSB8IEZvbnQgfCBTaXplIHwgV2VpZ2h0IHwgTGluZSBIZWlnaHQgfCBMZXR0ZXIgU3BhY2luZyB8IE5vdGVzIHwKfC0tLS0tLXwtLS0tLS18LS0tLS0tfC0tLS0tLS0tfC0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tLXwtLS0tLS0tfAp8IERpc3BsYXkgLyBIZXJvIHwgU0YgUHJvIFJvdW5kZWQgfCA0OHB4ICgzcmVtKSB8IDUwMCB8IDEuMDAgKHRpZ2h0KSB8IG5vcm1hbCB8IE1heGltdW0gaW1wYWN0LCByb3VuZGVkIGxldHRlcmZvcm1zIHwKfCBTZWN0aW9uIEhlYWRpbmcgfCBTRiBQcm8gUm91bmRlZCB8IDM2cHggKDIuMjVyZW0pIHwgNTAwIHwgMS4xMSAodGlnaHQpIHwgbm9ybWFsIHwgRmVhdHVyZSBzZWN0aW9uIHRpdGxlcyB8CnwgU3ViLWhlYWRpbmcgfCBTRiBQcm8gUm91bmRlZCAvIHVpLXNhbnMtc2VyaWYgfCAzMHB4ICgxLjg4cmVtKSB8IDQwMOKAkzUwMCB8IDEuMjAgKHRpZ2h0KSB8IG5vcm1hbCB8IENhcmQgaGVhZGluZ3MsIGZlYXR1cmUgbmFtZXMgfAp8IENhcmQgVGl0bGUgfCB1aS1zYW5zLXNlcmlmIHwgMjRweCAoMS41cmVtKSB8IDQwMCB8IDEuMzMgfCBub3JtYWwgfCBNZWRpdW0gZW1waGFzaXMgaGVhZGluZ3MgfAp8IEJvZHkgTGFyZ2UgfCB1aS1zYW5zLXNlcmlmIHwgMThweCAoMS4xM3JlbSkgfCA0MDDigJM1MDAgfCAxLjU2IHwgbm9ybWFsIHwgSGVybyBkZXNjcmlwdGlvbnMsIGJ1dHRvbiB0ZXh0IHwKfCBCb2R5IC8gTGluayB8IHVpLXNhbnMtc2VyaWYgfCAxNnB4ICgxcmVtKSB8IDQwMOKAkzUwMCB8IDEuNTAgfCBub3JtYWwgfCBTdGFuZGFyZCBib2R5IHRleHQsIG5hdmlnYXRpb24gfAp8IENhcHRpb24gfCB1aS1zYW5zLXNlcmlmIHwgMTRweCAoMC44OHJlbSkgfCA0MDAgfCAxLjQzIHwgbm9ybWFsIHwgTWV0YWRhdGEsIGRlc2NyaXB0aW9ucyB8CnwgU21hbGwgfCB1aS1zYW5zLXNlcmlmIHwgMTJweCAoMC43NXJlbSkgfCA0MDAgfCAxLjMzIHwgbm9ybWFsIHwgU21hbGxlc3Qgc2Fucy1zZXJpZiB0ZXh0IHwKfCBDb2RlIEJvZHkgfCB1aS1tb25vc3BhY2UgfCAxNnB4ICgxcmVtKSB8IDQwMCB8IDEuNTAgfCBub3JtYWwgfCBJbmxpbmUgY29kZSwgY29tbWFuZHMgfAp8IENvZGUgQ2FwdGlvbiB8IHVpLW1vbm9zcGFjZSB8IDE0cHggKDAuODhyZW0pIHwgNDAwIHwgMS40MyB8IG5vcm1hbCB8IENvZGUgc25pcHBldHMsIHNlY29uZGFyeSB8CnwgQ29kZSBTbWFsbCB8IHVpLW1vbm9zcGFjZSB8IDEycHggKDAuNzVyZW0pIHwgNDAw4oCTNzAwIHwgMS42MyB8IG5vcm1hbCB8IFRhZ3MsIGxhYmVscyB8CgojIyMgUHJpbmNpcGxlcwotICoqUm91bmRlZCBkaXNwbGF5LCBzdGFuZGFyZCBib2R5Kio6IFNGIFBybyBSb3VuZGVkIGNhcnJpZXMgZGlzcGxheSBoZWFkbGluZXMgd2l0aCBpdHMgZGlzdGluY3RpdmUgcm91bmRlZCB0ZXJtaW5hbHMsIHdoaWxlIHRoZSBzdGFuZGFyZCBzeXN0ZW0gc2FucyBoYW5kbGVzIGFsbCBib2R5IHRleHQuIFRoZSByb3VuZGVkIGZvbnQgSVMgdGhlIGJyYW5kIGV4cHJlc3Npb24uCi0gKipXZWlnaHQgcmVzdHJhaW50Kio6IE9ubHkgdHdvIHdlaWdodHMgbWF0dGVyIOKAlCA0MDAgKHJlZ3VsYXIpIGZvciBib2R5IGFuZCA1MDAgKG1lZGl1bSkgZm9yIGhlYWRpbmdzLiBObyBib2xkLCBubyBsaWdodCwgbm8gYmxhY2sgd2VpZ2h0LiBUaGlzIGV4dHJlbWUgcmVzdHJhaW50IHJlaW5mb3JjZXMgdGhlIG1pbmltYWwgcGhpbG9zb3BoeS4KLSAqKlRpZ2h0IGRpc3BsYXksIGNvbWZvcnRhYmxlIGJvZHkqKjogSGVhZGxpbmVzIGNvbXByZXNzIHRvIDEuMCBsaW5lLWhlaWdodCwgd2hpbGUgYm9keSB0ZXh0IHJlbGF4ZXMgdG8gMS40M+KAkzEuNTYuIFRoZSBjb250cmFzdCBjcmVhdGVzIGNsZWFyIGhpZXJhcmNoeSB3aXRob3V0IG5lZWRpbmcgd2VpZ2h0IGNvbnRyYXN0LgotICoqTW9ub3NwYWNlIGZvciBkZXZlbG9wZXIgaWRlbnRpdHkqKjogQ29kZSBibG9ja3MgYW5kIHRlcm1pbmFsIGNvbW1hbmRzIGFwcGVhciB0aHJvdWdob3V0IGFzIHByaW1hcnkgY29udGVudCwgdXNpbmcgdGhlIHN5c3RlbSBtb25vc3BhY2Ugc3RhY2suCgojIyA0LiBDb21wb25lbnQgU3R5bGluZ3MKCiMjIyBCdXR0b25zCgoqKkdyYXkgUGlsbCAoUHJpbWFyeSkqKgotIEJhY2tncm91bmQ6IExpZ2h0IEdyYXkgKGAjZTVlNWU1YCkKLSBUZXh0OiBOZWFyIEJsYWNrIChgIzI2MjYyNmApCi0gUGFkZGluZzogMTBweCAyNHB4Ci0gQm9yZGVyOiB0aGluIHNvbGlkIExpZ2h0IEdyYXkgKGAxcHggc29saWQgI2U1ZTVlNWApCi0gUmFkaXVzOiBwaWxsLXNoYXBlZCAoOTk5OXB4KQotIFRoZSBwcmltYXJ5IGFjdGlvbiBidXR0b24g4oCUIHVuZGVyc3RhdGVkLCBncmF5c2NhbGUsIGFsd2F5cyBwaWxsLXNoYXBlZAoKKipXaGl0ZSBQaWxsIChTZWNvbmRhcnkpKioKLSBCYWNrZ3JvdW5kOiBQdXJlIFdoaXRlIChgI2ZmZmZmZmApCi0gVGV4dDogQnV0dG9uIFRleHQgRGFyayAoYCM0MDQwNDBgKQotIFBhZGRpbmc6IDEwcHggMjRweAotIEJvcmRlcjogdGhpbiBzb2xpZCBCb3JkZXIgTGlnaHQgKGAxcHggc29saWQgI2Q0ZDRkNGApCi0gUmFkaXVzOiBwaWxsLXNoYXBlZCAoOTk5OXB4KQotIFNlY29uZGFyeSBhY3Rpb24g4oCUIHZpc3VhbGx5IGxpZ2h0ZXIgdGhhbiBHcmF5IFBpbGwKCioqQmxhY2sgUGlsbCAoQ1RBKSoqCi0gQmFja2dyb3VuZDogUHVyZSBCbGFjayAoYCMwMDAwMDBgKQotIFRleHQ6IFB1cmUgV2hpdGUgKGAjZmZmZmZmYCkKLSBSYWRpdXM6IHBpbGwtc2hhcGVkICg5OTk5cHgpCi0gSW5mZXJyZWQgZnJvbSAiQ3JlYXRlIGFjY291bnQiIGFuZCAiRXhwbG9yZSIgYnV0dG9ucwotIE1heGltdW0gZW1waGFzaXMg4oCUIGJsYWNrIG9uIHdoaXRlCgojIyMgQ2FyZHMgJiBDb250YWluZXJzCi0gQmFja2dyb3VuZDogUHVyZSBXaGl0ZSBvciBTbm93IChgI2ZhZmFmYWApCi0gQm9yZGVyOiB0aGluIHNvbGlkIExpZ2h0IEdyYXkgKGAxcHggc29saWQgI2U1ZTVlNWApIHdoZW4gbmVlZGVkCi0gUmFkaXVzOiBjb21mb3J0YWJseSByb3VuZGVkICgxMnB4KSDigJQgdGhlIE9OTFkgbm9uLXBpbGwgcmFkaXVzIGluIHRoZSBzeXN0ZW0KLSBTaGFkb3c6ICoqbm9uZSoqIOKAlCB6ZXJvIHNoYWRvd3Mgb24gYW55IGVsZW1lbnQKLSBIb3ZlcjogbGlrZWx5IHN1YnRsZSBiYWNrZ3JvdW5kIHNoaWZ0IG9yIGJvcmRlciBkYXJrZW5pbmcKCiMjIyBJbnB1dHMgJiBGb3JtcwotIEJhY2tncm91bmQ6IFB1cmUgV2hpdGUKLSBCb3JkZXI6IGAxcHggc29saWQgI2U1ZTVlNWAKLSBSYWRpdXM6IHBpbGwtc2hhcGVkICg5OTk5cHgpIOKAlCBzZWFyY2ggaW5wdXRzIGFuZCBmb3JtIGZpZWxkcyBhcmUgcGlsbC1zaGFwZWQKLSBGb2N1czogUmluZyBCbHVlIChgIzNiODJmNmAgYXQgNTAlKSByaW5nCi0gUGxhY2Vob2xkZXI6IFNpbHZlciAoYCNhM2EzYTNgKQoKIyMjIE5hdmlnYXRpb24KLSBDbGVhbiBob3Jpem9udGFsIG5hdiB3aXRoIG1pbmltYWwgZWxlbWVudHMKLSBMb2dvOiBPbGxhbWEgbGxhbWEgaWNvbiArIHdvcmRtYXJrIGluIGJsYWNrCi0gTGlua3M6ICJNb2RlbHMiLCAiRG9jcyIsICJQcmljaW5nIiBpbiBibGFjayBhdCAxNnB4LCB3ZWlnaHQgNDAwCi0gU2VhcmNoIGJhcjogcGlsbC1zaGFwZWQgd2l0aCBwbGFjZWhvbGRlciB0ZXh0Ci0gUmlnaHQgc2lkZTogIlNpZ24gaW4iIGxpbmsgKyAiRG93bmxvYWQiIGJsYWNrIHBpbGwgQ1RBCi0gTm8gYm9yZGVycywgbm8gYmFja2dyb3VuZCDigJQgdHJhbnNwYXJlbnQgbmF2IG9uIHdoaXRlIHBhZ2UKCiMjIyBJbWFnZSBUcmVhdG1lbnQKLSBUaGUgT2xsYW1hIGxsYW1hIG1hc2NvdCBpcyB0aGUgb25seSBpbGx1c3RyYXRpb24g4oCUIGJsYWNrIGxpbmUgYXJ0IG9uIHdoaXRlCi0gQ29kZSBzY3JlZW5zaG90cy90ZXJtaW5hbCBvdXRwdXRzIHNob3duIGluIGJvcmRlcmVkIGNvbnRhaW5lcnMgKDEycHggcmFkaXVzKQotIEludGVncmF0aW9uIGxvZ29zIGRpc3BsYXllZCBhcyBzaW1wbGUgaWNvbnMgaW4gYSBncmlkCi0gTm8gcGhvdG9ncmFwaHMsIG5vIGdyYWRpZW50cywgbm8gZGVjb3JhdGl2ZSBpbWFnZXJ5CgojIyMgRGlzdGluY3RpdmUgQ29tcG9uZW50cwoKKipUYWIgUGlsbHMqKgotIFBpbGwtc2hhcGVkIHRhYiBzZWxlY3RvcnMgKGUuZy4sICJDb2RpbmciIHwgIk9wZW5DbGF3IikKLSBBY3RpdmU6IExpZ2h0IEdyYXkgYmc7IEluYWN0aXZlOiB0cmFuc3BhcmVudAotIEFsbCBwaWxsLXNoYXBlZCAoOTk5OXB4KQoKKipNb2RlbCBUYWdzKioKLSBTbWFsbCBwaWxsLXNoYXBlZCB0YWdzIChlLmcuLCAib2xsYW1hIiwgImxhdW5jaCIsICJjbGF1ZGUiKQotIExpZ2h0IEdyYXkgYmFja2dyb3VuZCwgZGFyayB0ZXh0Ci0gVGhlIHByaW1hcnkgd2F5IHRvIGJyb3dzZSBtb2RlbHMKCioqVGVybWluYWwgQ29tbWFuZCBCbG9jayoqCi0gTW9ub3NwYWNlIGNvZGUgc2hvd2luZyBgb2xsYW1hIHJ1bmAgY29tbWFuZHMKLSBNaW5pbWFsIHN0eWxpbmcg4oCUIGp1c3QgYSBib3JkZXJlZCAxMnB4LXJhZGl1cyBjb250YWluZXIKLSBDb3B5IGJ1dHRvbiBpbnRlZ3JhdGVkCgoqKkludGVncmF0aW9uIEdyaWQqKgotIEdyaWQgb2YgaW50ZWdyYXRpb24gbG9nb3MgKENvZGV4LCBDbGF1ZGUgQ29kZSwgT3BlbkNvZGUsIExhbmdDaGFpbiwgZXRjLikKLSBFYWNoIGluIGEgYm9yZGVyZWQgcGlsbCBvciBjYXJkIHdpdGggaWNvbiArIG5hbWUKLSBUYWJiZWQgYnkgY2F0ZWdvcnkgKENvZGluZywgRG9jdW1lbnRzICYgUkFHLCBBdXRvbWF0aW9uLCBDaGF0KQoKIyMgNS4gTGF5b3V0IFByaW5jaXBsZXMKCiMjIyBTcGFjaW5nIFN5c3RlbQotIEJhc2UgdW5pdDogOHB4Ci0gU2NhbGU6IDRweCwgNnB4LCA4cHgsIDlweCwgMTBweCwgMTJweCwgMTRweCwgMTZweCwgMjBweCwgMjRweCwgMzJweCwgNDBweCwgNDhweCwgODhweCwgMTEycHgKLSBCdXR0b24gcGFkZGluZzogMTBweCAyNHB4IChjb25zaXN0ZW50IGFjcm9zcyBhbGwgYnV0dG9ucykKLSBDYXJkIGludGVybmFsIHBhZGRpbmc6IGFwcHJveGltYXRlbHkgMjTigJMzMnB4Ci0gU2VjdGlvbiB2ZXJ0aWNhbCBzcGFjaW5nOiB2ZXJ5IGdlbmVyb3VzICg4OHB44oCTMTEycHgpCgojIyMgR3JpZCAmIENvbnRhaW5lcgotIE1heCBjb250YWluZXIgd2lkdGg6IGFwcHJveGltYXRlbHkgMTAyNOKAkzEyODBweCwgY2VudGVyZWQKLSBIZXJvOiBjZW50ZXJlZCBzaW5nbGUtY29sdW1uIHdpdGggbGxhbWEgaWxsdXN0cmF0aW9uCi0gRmVhdHVyZSBzZWN0aW9uczogMi1jb2x1bW4gbGF5b3V0ICh0ZXh0IGxlZnQsIGNvZGUgcmlnaHQpCi0gSW50ZWdyYXRpb24gZ3JpZDogcmVzcG9uc2l2ZSBtdWx0aS1jb2x1bW4KLSBGb290ZXI6IGNsZWFuIHNpbmdsZS1yb3cKCiMjIyBXaGl0ZXNwYWNlIFBoaWxvc29waHkKLSAqKkVtcHRpbmVzcyBhcyBsdXh1cnkqKjogVGhlIHBhZ2UgaXMgcmVtYXJrYWJseSBzaG9ydCBhbmQgc3BhcnNlIOKAlCBubyBmZWF0dXJlIHNlY3Rpb24gb3ZlcnN0YXlzIGl0cyB3ZWxjb21lLiBFYWNoIGNvbmNlcHQgZ2V0cyBtaW5pbWFsIGJ1dCBzdWZmaWNpZW50IHNwYWNlLgotICoqQ29udGVudCBkZW5zaXR5IGlzIGxvdyBieSBkZXNpZ24qKjogV2hlcmUgb3RoZXIgQUkgY29tcGFuaWVzIHBhY2sgZmVhdHVyZSBhZnRlciBmZWF0dXJlLCBPbGxhbWEgcHJlc2VudHMgdGhyZWUgaWRlYXMgKHJ1biBtb2RlbHMsIHVzZSB3aXRoIGFwcHMsIGludGVncmF0aW9ucykgYW5kIHN0b3BzLgotICoqVGhlIHdoaXRlIHNwYWNlIElTIHRoZSBicmFuZCoqOiBQdXJlIHdoaXRlIHNwYWNlIHdpdGggemVybyBkZWNvcmF0aW9uIGNvbW11bmljYXRlcyAidGhpcyB0b29sIGdldHMgb3V0IG9mIHlvdXIgd2F5LiIKCiMjIyBCb3JkZXIgUmFkaXVzIFNjYWxlCi0gQ29tZm9ydGFibHkgcm91bmRlZCAoMTJweCk6IFRoZSBzb2xlIGNvbnRhaW5lciByYWRpdXMg4oCUIGNvZGUgYmxvY2tzLCBjYXJkcywgcGFuZWxzCi0gUGlsbC1zaGFwZWQgKDk5OTlweCk6IEV2ZXJ5dGhpbmcgaW50ZXJhY3RpdmUg4oCUIGJ1dHRvbnMsIHRhYnMsIGlucHV0cywgdGFncywgYmFkZ2VzCgoqVGhpcyBiaW5hcnkgc3lzdGVtIGlzIGV4dHJlbWUgYW5kIGRpc3RpbmN0aXZlLiBUaGVyZSBpcyBubyA0cHgsIG5vIDhweCwgbm8gZ3JhZGllbnQgb2Ygcm91bmRuZXNzLiBFbGVtZW50cyBhcmUgZWl0aGVyIGNvbnRhaW5lcnMgKDEycHgpIG9yIGludGVyYWN0aXZlIChwaWxsKS4qCgojIyA2LiBEZXB0aCAmIEVsZXZhdGlvbgoKfCBMZXZlbCB8IFRyZWF0bWVudCB8IFVzZSB8CnwtLS0tLS0tfC0tLS0tLS0tLS0tfC0tLS0tfAp8IEZsYXQgKExldmVsIDApIHwgTm8gc2hhZG93LCBubyBib3JkZXIgfCBQYWdlIGJhY2tncm91bmQsIG1vc3QgY29udGVudCB8CnwgQm9yZGVyZWQgKExldmVsIDEpIHwgYDFweCBzb2xpZCAjZTVlNWU1YCB8IENhcmRzLCBjb2RlIGJsb2NrcywgYnV0dG9ucyB8CgoqKlNoYWRvdyBQaGlsb3NvcGh5Kio6IE9sbGFtYSB1c2VzICoqemVybyBzaGFkb3dzKiouIFRoaXMgaXMgbm90IGFuIG92ZXJzaWdodCDigJQgaXQncyBhIGRlbGliZXJhdGUgZGVzaWduIGRlY2lzaW9uLiBFdmVyeSBvdGhlciBtYWpvciBBSSBwcm9kdWN0IHNpdGUgdXNlcyBhdCBsZWFzdCBzdWJ0bGUgc2hhZG93cy4gT2xsYW1hJ3MgZmxhdCwgc2hhZG93bGVzcyBhcHByb2FjaCBjcmVhdGVzIGEgcGFwZXItbGlrZSBleHBlcmllbmNlIHdoZXJlIGVsZW1lbnRzIGFyZSBkaXN0aW5ndWlzaGVkIHB1cmVseSBieSBiYWNrZ3JvdW5kIGNvbG9yIGFuZCBzaW5nbGUtcGl4ZWwgYm9yZGVycy4gRGVwdGggaXMgY29tbXVuaWNhdGVkIHRocm91Z2ggKipjb250ZW50IGhpZXJhcmNoeSBhbmQgdHlwb2dyYXBoeSB3ZWlnaHQqKiwgbm90IHZpc3VhbCBsYXllcmluZy4KCiMjIDcuIERvJ3MgYW5kIERvbid0cwoKIyMjIERvCi0gVXNlIHB1cmUgd2hpdGUgKGAjZmZmZmZmYCkgYXMgdGhlIHBhZ2UgYmFja2dyb3VuZCDigJQgbmV2ZXIgb2ZmLXdoaXRlIG9yIGNyZWFtCi0gVXNlIHBpbGwtc2hhcGVkICg5OTk5cHgpIHJhZGl1cyBvbiBhbGwgaW50ZXJhY3RpdmUgZWxlbWVudHMg4oCUIGJ1dHRvbnMsIHRhYnMsIGlucHV0cywgdGFncwotIFVzZSAxMnB4IHJhZGl1cyBvbiBhbGwgbm9uLWludGVyYWN0aXZlIGNvbnRhaW5lcnMg4oCUIGNvZGUgYmxvY2tzLCBjYXJkcywgcGFuZWxzCi0gS2VlcCB0aGUgcGFsZXR0ZSBzdHJpY3RseSBncmF5c2NhbGUg4oCUIG5vIGNocm9tYXRpYyBjb2xvcnMgZXhjZXB0IHRoZSBibHVlIGZvY3VzIHJpbmcKLSBVc2UgU0YgUHJvIFJvdW5kZWQgYXQgd2VpZ2h0IDUwMCBmb3IgZGlzcGxheSBoZWFkaW5ncyDigJQgdGhlIHJvdW5kZWQgdGVybWluYWxzIGFyZSB0aGUgYnJhbmQgZXhwcmVzc2lvbgotIE1haW50YWluIHplcm8gc2hhZG93cyDigJQgZGVwdGggY29tZXMgZnJvbSBib3JkZXJzIGFuZCBiYWNrZ3JvdW5kIHNoaWZ0cyBvbmx5Ci0gS2VlcCBjb250ZW50IGRlbnNpdHkgbG93IOKAlCBlYWNoIHNlY3Rpb24gc2hvdWxkIHByZXNlbnQgb25lIGNsZWFyIGlkZWEKLSBVc2UgbW9ub3NwYWNlIGZvciB0ZXJtaW5hbCBjb21tYW5kcyBhbmQgY29kZSDigJQgaXQncyBwcmltYXJ5IGNvbnRlbnQsIG5vdCBkZWNvcmF0aW9uCi0gS2VlcCBhbGwgYnV0dG9ucyBhdCAxMHB4IDI0cHggcGFkZGluZyB3aXRoIHBpbGwgc2hhcGUg4oCUIGNvbnNpc3RlbmN5IGlzIGFic29sdXRlCgojIyMgRG9uJ3QKLSBEb24ndCBpbnRyb2R1Y2UgYW55IGNocm9tYXRpYyBjb2xvciDigJQgbm8gYnJhbmQgYmx1ZSwgbm8gYWNjZW50IGdyZWVuLCBubyB3YXJtIHRvbmVzCi0gRG9uJ3QgdXNlIGJvcmRlci1yYWRpdXMgYmV0d2VlbiAxMnB4IGFuZCA5OTk5cHgg4oCUIHRoZSBzeXN0ZW0gaXMgYmluYXJ5Ci0gRG9uJ3QgYWRkIHNoYWRvd3MgdG8gYW55IGVsZW1lbnQg4oCUIHRoZSBmbGF0IGFlc3RoZXRpYyBpcyBpbnRlbnRpb25hbAotIERvbid0IHVzZSBmb250IHdlaWdodHMgYWJvdmUgNTAwIOKAlCBubyBib2xkLCBubyBibGFjayB3ZWlnaHQKLSBEb24ndCBhZGQgZGVjb3JhdGl2ZSBpbGx1c3RyYXRpb25zIGJleW9uZCB0aGUgbGxhbWEgbWFzY290Ci0gRG9uJ3QgdXNlIGdyYWRpZW50cyBhbnl3aGVyZSDigJQgZmxhdCBibG9ja3MgYW5kIGJvcmRlcnMgb25seQotIERvbid0IG92ZXJjb21wbGljYXRlIHRoZSBsYXlvdXQg4oCUIHR3byBjb2x1bW5zIG1heGltdW0sIG5vIGNvbXBsZXggZ3JpZHMKLSBEb24ndCB1c2UgYm9yZGVycyBoZWF2aWVyIHRoYW4gMXB4IOKAlCBjb250YWlubWVudCBpcyBhbHdheXMgdGhlIGxpZ2h0ZXN0IHBvc3NpYmxlIHRvdWNoCi0gRG9uJ3QgYWRkIGhvdmVyIGFuaW1hdGlvbnMgb3IgdHJhbnNpdGlvbnMg4oCUIGludGVyYWN0aW9ucyBzaG91bGQgZmVlbCBpbnN0YW50IGFuZCBkaXJlY3QKCiMjIDguIFJlc3BvbnNpdmUgQmVoYXZpb3IKCiMjIyBCcmVha3BvaW50cwp8IE5hbWUgfCBXaWR0aCB8IEtleSBDaGFuZ2VzIHwKfC0tLS0tLXwtLS0tLS0tfC0tLS0tLS0tLS0tLS18CnwgTW9iaWxlIHwgPDY0MHB4IHwgU2luZ2xlIGNvbHVtbiwgc3RhY2tlZCBldmVyeXRoaW5nLCBoYW1idXJnZXIgbmF2IHwKfCBTbWFsbCBUYWJsZXQgfCA2NDDigJM3NjhweCB8IE1pbm9yIGFkanVzdG1lbnRzIHRvIHNwYWNpbmcgfAp8IFRhYmxldCB8IDc2OOKAkzg1MHB4IHwgMi1jb2x1bW4gbGF5b3V0cyBiZWdpbiB8CnwgRGVza3RvcCB8IDg1MOKAkzEwMjRweCB8IFN0YW5kYXJkIGxheW91dCwgZXhwYW5kZWQgZmVhdHVyZXMgfAp8IExhcmdlIERlc2t0b3AgfCAxMDI04oCTMTI4MHB4IHwgTWF4aW11bSBjb250ZW50IHdpZHRoIHwKCiMjIyBUb3VjaCBUYXJnZXRzCi0gQWxsIGJ1dHRvbnMgYXJlIHBpbGwtc2hhcGVkIHdpdGggZ2VuZXJvdXMgcGFkZGluZyAoMTBweCAyNHB4KQotIE5hdmlnYXRpb24gbGlua3MgYXQgY29tZm9ydGFibGUgMTZweCBzaXplCi0gTWluaW11bSB0b3VjaCBhcmVhIGVhc2lseSBleGNlZWRzIDQ0eDQ0cHgKCiMjIyBDb2xsYXBzaW5nIFN0cmF0ZWd5Ci0gKipOYXZpZ2F0aW9uKio6IENvbGxhcHNlcyB0byBoYW1idXJnZXIgbWVudSBvbiBtb2JpbGUKLSAqKkZlYXR1cmUgc2VjdGlvbnMqKjogMi1jb2x1bW4g4oaSIHN0YWNrZWQgc2luZ2xlIGNvbHVtbgotICoqSGVybyB0ZXh0Kio6IDQ4cHgg4oaSIDM2cHgg4oaSIDMwcHggcHJvZ3Jlc3NpdmUgc2NhbGluZwotICoqSW50ZWdyYXRpb24gZ3JpZCoqOiBNdWx0aS1jb2x1bW4g4oaSIDItY29sdW1uIOKGkiBzaW5nbGUgY29sdW1uCi0gKipDb2RlIGJsb2NrcyoqOiBIb3Jpem9udGFsIHNjcm9sbCBtYWludGFpbmVkCgojIyMgSW1hZ2UgQmVoYXZpb3IKLSBMbGFtYSBtYXNjb3Qgc2NhbGVzIHByb3BvcnRpb25hbGx5Ci0gQ29kZSBibG9ja3MgbWFpbnRhaW4gbW9ub3NwYWNlIGZvcm1hdHRpbmcKLSBJbnRlZ3JhdGlvbiBpY29ucyByZWZsb3cgdG8gZmV3ZXIgY29sdW1ucwotIE5vIGFydCBkaXJlY3Rpb24gY2hhbmdlcwoKIyMgOS4gQWdlbnQgUHJvbXB0IEd1aWRlCgojIyMgUXVpY2sgQ29sb3IgUmVmZXJlbmNlCi0gUHJpbWFyeSBUZXh0OiAiUHVyZSBCbGFjayAoIzAwMDAwMCkiCi0gUGFnZSBCYWNrZ3JvdW5kOiAiUHVyZSBXaGl0ZSAoI2ZmZmZmZikiCi0gU2Vjb25kYXJ5IFRleHQ6ICJTdG9uZSAoIzczNzM3MykiCi0gQnV0dG9uIEJhY2tncm91bmQ6ICJMaWdodCBHcmF5ICgjZTVlNWU1KSIKLSBCb3JkZXJzOiAiTGlnaHQgR3JheSAoI2U1ZTVlNSkiCi0gTXV0ZWQgVGV4dDogIlNpbHZlciAoI2EzYTNhMykiCi0gRGFyayBUZXh0OiAiTmVhciBCbGFjayAoIzI2MjYyNikiCi0gU3VidGxlIFN1cmZhY2U6ICJTbm93ICgjZmFmYWZhKSIKCiMjIyBFeGFtcGxlIENvbXBvbmVudCBQcm9tcHRzCi0gIkNyZWF0ZSBhIGhlcm8gc2VjdGlvbiBvbiBwdXJlIHdoaXRlICgjZmZmZmZmKSB3aXRoIGFuIGlsbHVzdHJhdGlvbiBjZW50ZXJlZCBhYm92ZSBhIGhlYWRsaW5lIGF0IDQ4cHggU0YgUHJvIFJvdW5kZWQgd2VpZ2h0IDUwMCwgbGluZS1oZWlnaHQgMS4wLiBVc2UgUHVyZSBCbGFjayAoIzAwMDAwMCkgdGV4dC4gQmVsb3csIGFkZCBhIGJsYWNrIHBpbGwtc2hhcGVkIENUQSBidXR0b24gKDk5OTlweCByYWRpdXMsIDEwcHggMjRweCBwYWRkaW5nKSBhbmQgYSBncmF5IHBpbGwgYnV0dG9uLiIKLSAiRGVzaWduIGEgY29kZSBibG9jayB3aXRoIGEgMTJweCBib3JkZXItcmFkaXVzLCAxcHggc29saWQgTGlnaHQgR3JheSAoI2U1ZTVlNSkgYm9yZGVyIG9uIHdoaXRlIGJhY2tncm91bmQuIFVzZSB1aS1tb25vc3BhY2UgYXQgMTZweCBmb3IgdGhlIHRlcm1pbmFsIGNvbW1hbmQuIE5vIHNoYWRvdy4iCi0gIkJ1aWxkIGEgdGFiIGJhciB3aXRoIHBpbGwtc2hhcGVkIHRhYnMgKDk5OTlweCByYWRpdXMpLiBBY3RpdmUgdGFiOiBMaWdodCBHcmF5ICgjZTVlNWU1KSBiYWNrZ3JvdW5kLCBOZWFyIEJsYWNrICgjMjYyNjI2KSB0ZXh0LiBJbmFjdGl2ZTogdHJhbnNwYXJlbnQgYmFja2dyb3VuZCwgU3RvbmUgKCM3MzczNzMpIHRleHQuIgotICJDcmVhdGUgYW4gaW50ZWdyYXRpb24gY2FyZCBncmlkLiBFYWNoIGNhcmQgaXMgYSBib3JkZXJlZCBwaWxsICg5OTk5cHggcmFkaXVzKSBvciBhIDEycHgtcmFkaXVzIGNhcmQgd2l0aCAxcHggc29saWQgI2U1ZTVlNSBib3JkZXIuIEljb24gKyBuYW1lIGluc2lkZS4gR3JpZCBvZiA0IGNvbHVtbnMgb24gZGVza3RvcC4iCi0gIkRlc2lnbiBhIG5hdmlnYXRpb24gYmFyOiB0cmFuc3BhcmVudCBiYWNrZ3JvdW5kLCBubyBib3JkZXIuIE9sbGFtYSBsb2dvIG9uIHRoZSBsZWZ0LCAzIHRleHQgbGlua3MgKFB1cmUgQmxhY2ssIDE2cHgsIHdlaWdodCA0MDApLCBwaWxsIHNlYXJjaCBpbnB1dCBpbiB0aGUgY2VudGVyLCAnU2lnbiBpbicgdGV4dCBsaW5rIGFuZCBibGFjayBwaWxsICdEb3dubG9hZCcgYnV0dG9uIG9uIHRoZSByaWdodC4iCgojIyMgSXRlcmF0aW9uIEd1aWRlCjEuIEZvY3VzIG9uIE9ORSBjb21wb25lbnQgYXQgYSB0aW1lCjIuIEtlZXAgYWxsIHZhbHVlcyBncmF5c2NhbGUg4oCUICJTdG9uZSAoIzczNzM3MykiIG5vdCAidXNlIGEgbGlnaHQgY29sb3IiCjMuIEFsd2F5cyBzcGVjaWZ5IHBpbGwgKDk5OTlweCkgb3IgY29udGFpbmVyICgxMnB4KSByYWRpdXMg4oCUIG5vdGhpbmcgaW4gYmV0d2Vlbgo0LiBTaGFkb3dzIGFyZSBhbHdheXMgemVybyDigJQgbmV2ZXIgYWRkIHRoZW0KNS4gV2VpZ2h0IGlzIGFsd2F5cyA0MDAgb3IgNTAwIOKAlCBuZXZlciBib2xkCjYuIElmIHNvbWV0aGluZyBmZWVscyB0b28gZGVjb3JhdGVkLCByZW1vdmUgaXQg4oCUIGxlc3MgaXMgYWx3YXlzIG1vcmUgZm9yIE9sbGFtYQo=
+# Design System: Ollama
+
+
+> **Hermes Agent — Implementation Notes**
+>
+> The original site uses proprietary fonts. For self-contained HTML output, use these CDN substitutes:
+> - **Primary:** `Inter` | **Mono:** `JetBrains Mono`
+> - **Font stack (CSS):** `font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;`
+> - **Mono stack (CSS):** `font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;`
+> ```html
+> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+> ```
+> Use `write_file` to create HTML, serve via `generative-widgets` skill (cloudflared tunnel).
+> Verify visual accuracy with `browser_vision` after generating.
+
+## 1. Visual Theme & Atmosphere
+
+Ollama's interface is radical minimalism taken to its logical conclusion — a pure-white void where content floats without decoration, shadow, or color. The design philosophy mirrors the product itself: strip away everything unnecessary until only the essential tool remains. This is the digital equivalent of a Dieter Rams object — every pixel earns its place, and the absence of design IS the design.
+
+The entire page exists in pure grayscale. There is zero chromatic color in the interface — no brand blue, no accent green, no semantic red. The only colors that exist are shades between pure black (`#000000`) and pure white (`#ffffff`), creating a monochrome environment that lets the user's mental model of "open models" remain uncolored by brand opinion. The Ollama llama mascot, rendered in simple black line art, is the only illustration — and even it's monochrome.
+
+What makes Ollama distinctive is the combination of SF Pro Rounded (Apple's rounded system font) with an exclusively pill-shaped geometry (9999px radius on everything interactive). The rounded letterforms + rounded buttons + rounded containers create a cohesive "softness language" that makes a developer CLI tool feel approachable and friendly rather than intimidating. This is minimalism with warmth — not cold Swiss-style grid minimalism, but the kind where the edges are literally softened.
+
+**Key Characteristics:**
+- Pure white canvas with zero chromatic color — completely grayscale
+- SF Pro Rounded headlines creating a distinctively Apple-like softness
+- Binary border-radius system: 12px (containers) or 9999px (everything interactive)
+- Zero shadows — depth comes exclusively from background color shifts and borders
+- Pill-shaped geometry on all interactive elements (buttons, tabs, inputs, tags)
+- The Ollama llama as the sole illustration — black line art, no color
+- Extreme content restraint — the homepage is short, focused, and uncluttered
+
+## 2. Color Palette & Roles
+
+### Primary
+- **Pure Black** (`#000000`): Primary headlines, primary links, and the darkest text. The only "color" that demands attention.
+- **Near Black** (`#262626`): Button text on light surfaces, secondary headline weight.
+- **Darkest Surface** (`#090909`): The darkest possible surface — barely distinguishable from pure black, used for footer or dark containers.
+
+### Surface & Background
+- **Pure White** (`#ffffff`): The primary page background — not off-white, not cream, pure white. Button surfaces for secondary actions.
+- **Snow** (`#fafafa`): The subtlest possible surface distinction from white — used for section backgrounds and barely-elevated containers.
+- **Light Gray** (`#e5e5e5`): Button backgrounds, borders, and the primary containment color. The workhorse neutral.
+
+### Neutrals & Text
+- **Stone** (`#737373`): Secondary body text, footer links, and de-emphasized content. The primary "muted" tone.
+- **Mid Gray** (`#525252`): Emphasized secondary text, slightly darker than Stone.
+- **Silver** (`#a3a3a3`): Tertiary text, placeholders, and deeply de-emphasized metadata.
+- **Button Text Dark** (`#404040`): Specific to white-surface button text.
+
+### Semantic & Accent
+- **Ring Blue** (`#3b82f6` at 50%): The ONLY non-gray color in the entire system — Tailwind's default focus ring, used exclusively for keyboard accessibility. Never visible in normal interaction flow.
+- **Border Light** (`#d4d4d4`): A slightly darker gray for white-surface button borders.
+
+### Gradient System
+- **None.** Ollama uses absolutely no gradients. Visual separation comes from flat color blocks and single-pixel borders. This is a deliberate, almost philosophical design choice.
+
+## 3. Typography Rules
+
+### Font Family
+- **Display**: `SF Pro Rounded`, with fallbacks: `system-ui, -apple-system, system-ui`
+- **Body / UI**: `ui-sans-serif`, with fallbacks: `system-ui, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji`
+- **Monospace**: `ui-monospace`, with fallbacks: `SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New`
+
+*Note: SF Pro Rounded is Apple's system font — it renders with rounded terminals on macOS/iOS and falls back to the system sans-serif on other platforms.*
+
+### Hierarchy
+
+| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
+|------|------|------|--------|-------------|----------------|-------|
+| Display / Hero | SF Pro Rounded | 48px (3rem) | 500 | 1.00 (tight) | normal | Maximum impact, rounded letterforms |
+| Section Heading | SF Pro Rounded | 36px (2.25rem) | 500 | 1.11 (tight) | normal | Feature section titles |
+| Sub-heading | SF Pro Rounded / ui-sans-serif | 30px (1.88rem) | 400–500 | 1.20 (tight) | normal | Card headings, feature names |
+| Card Title | ui-sans-serif | 24px (1.5rem) | 400 | 1.33 | normal | Medium emphasis headings |
+| Body Large | ui-sans-serif | 18px (1.13rem) | 400–500 | 1.56 | normal | Hero descriptions, button text |
+| Body / Link | ui-sans-serif | 16px (1rem) | 400–500 | 1.50 | normal | Standard body text, navigation |
+| Caption | ui-sans-serif | 14px (0.88rem) | 400 | 1.43 | normal | Metadata, descriptions |
+| Small | ui-sans-serif | 12px (0.75rem) | 400 | 1.33 | normal | Smallest sans-serif text |
+| Code Body | ui-monospace | 16px (1rem) | 400 | 1.50 | normal | Inline code, commands |
+| Code Caption | ui-monospace | 14px (0.88rem) | 400 | 1.43 | normal | Code snippets, secondary |
+| Code Small | ui-monospace | 12px (0.75rem) | 400–700 | 1.63 | normal | Tags, labels |
+
+### Principles
+- **Rounded display, standard body**: SF Pro Rounded carries display headlines with its distinctive rounded terminals, while the standard system sans handles all body text. The rounded font IS the brand expression.
+- **Weight restraint**: Only two weights matter — 400 (regular) for body and 500 (medium) for headings. No bold, no light, no black weight. This extreme restraint reinforces the minimal philosophy.
+- **Tight display, comfortable body**: Headlines compress to 1.0 line-height, while body text relaxes to 1.43–1.56. The contrast creates clear hierarchy without needing weight contrast.
+- **Monospace for developer identity**: Code blocks and terminal commands appear throughout as primary content, using the system monospace stack.
+
+## 4. Component Stylings
+
+### Buttons
+
+**Gray Pill (Primary)**
+- Background: Light Gray (`#e5e5e5`)
+- Text: Near Black (`#262626`)
+- Padding: 10px 24px
+- Border: thin solid Light Gray (`1px solid #e5e5e5`)
+- Radius: pill-shaped (9999px)
+- The primary action button — understated, grayscale, always pill-shaped
+
+**White Pill (Secondary)**
+- Background: Pure White (`#ffffff`)
+- Text: Button Text Dark (`#404040`)
+- Padding: 10px 24px
+- Border: thin solid Border Light (`1px solid #d4d4d4`)
+- Radius: pill-shaped (9999px)
+- Secondary action — visually lighter than Gray Pill
+
+**Black Pill (CTA)**
+- Background: Pure Black (`#000000`)
+- Text: Pure White (`#ffffff`)
+- Radius: pill-shaped (9999px)
+- Inferred from "Create account" and "Explore" buttons
+- Maximum emphasis — black on white
+
+### Cards & Containers
+- Background: Pure White or Snow (`#fafafa`)
+- Border: thin solid Light Gray (`1px solid #e5e5e5`) when needed
+- Radius: comfortably rounded (12px) — the ONLY non-pill radius in the system
+- Shadow: **none** — zero shadows on any element
+- Hover: likely subtle background shift or border darkening
+
+### Inputs & Forms
+- Background: Pure White
+- Border: `1px solid #e5e5e5`
+- Radius: pill-shaped (9999px) — search inputs and form fields are pill-shaped
+- Focus: Ring Blue (`#3b82f6` at 50%) ring
+- Placeholder: Silver (`#a3a3a3`)
+
+### Navigation
+- Clean horizontal nav with minimal elements
+- Logo: Ollama llama icon + wordmark in black
+- Links: "Models", "Docs", "Pricing" in black at 16px, weight 400
+- Search bar: pill-shaped with placeholder text
+- Right side: "Sign in" link + "Download" black pill CTA
+- No borders, no background — transparent nav on white page
+
+### Image Treatment
+- The Ollama llama mascot is the only illustration — black line art on white
+- Code screenshots/terminal outputs shown in bordered containers (12px radius)
+- Integration logos displayed as simple icons in a grid
+- No photographs, no gradients, no decorative imagery
+
+### Distinctive Components
+
+**Tab Pills**
+- Pill-shaped tab selectors (e.g., "Coding" | "OpenClaw")
+- Active: Light Gray bg; Inactive: transparent
+- All pill-shaped (9999px)
+
+**Model Tags**
+- Small pill-shaped tags (e.g., "ollama", "launch", "claude")
+- Light Gray background, dark text
+- The primary way to browse models
+
+**Terminal Command Block**
+- Monospace code showing `ollama run` commands
+- Minimal styling — just a bordered 12px-radius container
+- Copy button integrated
+
+**Integration Grid**
+- Grid of integration logos (Codex, Claude Code, OpenCode, LangChain, etc.)
+- Each in a bordered pill or card with icon + name
+- Tabbed by category (Coding, Documents & RAG, Automation, Chat)
+
+## 5. Layout Principles
+
+### Spacing System
+- Base unit: 8px
+- Scale: 4px, 6px, 8px, 9px, 10px, 12px, 14px, 16px, 20px, 24px, 32px, 40px, 48px, 88px, 112px
+- Button padding: 10px 24px (consistent across all buttons)
+- Card internal padding: approximately 24–32px
+- Section vertical spacing: very generous (88px–112px)
+
+### Grid & Container
+- Max container width: approximately 1024–1280px, centered
+- Hero: centered single-column with llama illustration
+- Feature sections: 2-column layout (text left, code right)
+- Integration grid: responsive multi-column
+- Footer: clean single-row
+
+### Whitespace Philosophy
+- **Emptiness as luxury**: The page is remarkably short and sparse — no feature section overstays its welcome. Each concept gets minimal but sufficient space.
+- **Content density is low by design**: Where other AI companies pack feature after feature, Ollama presents three ideas (run models, use with apps, integrations) and stops.
+- **The white space IS the brand**: Pure white space with zero decoration communicates "this tool gets out of your way."
+
+### Border Radius Scale
+- Comfortably rounded (12px): The sole container radius — code blocks, cards, panels
+- Pill-shaped (9999px): Everything interactive — buttons, tabs, inputs, tags, badges
+
+*This binary system is extreme and distinctive. There is no 4px, no 8px, no gradient of roundness. Elements are either containers (12px) or interactive (pill).*
+
+## 6. Depth & Elevation
+
+| Level | Treatment | Use |
+|-------|-----------|-----|
+| Flat (Level 0) | No shadow, no border | Page background, most content |
+| Bordered (Level 1) | `1px solid #e5e5e5` | Cards, code blocks, buttons |
+
+**Shadow Philosophy**: Ollama uses **zero shadows**. This is not an oversight — it's a deliberate design decision. Every other major AI product site uses at least subtle shadows. Ollama's flat, shadowless approach creates a paper-like experience where elements are distinguished purely by background color and single-pixel borders. Depth is communicated through **content hierarchy and typography weight**, not visual layering.
+
+## 7. Do's and Don'ts
+
+### Do
+- Use pure white (`#ffffff`) as the page background — never off-white or cream
+- Use pill-shaped (9999px) radius on all interactive elements — buttons, tabs, inputs, tags
+- Use 12px radius on all non-interactive containers — code blocks, cards, panels
+- Keep the palette strictly grayscale — no chromatic colors except the blue focus ring
+- Use SF Pro Rounded at weight 500 for display headings — the rounded terminals are the brand expression
+- Maintain zero shadows — depth comes from borders and background shifts only
+- Keep content density low — each section should present one clear idea
+- Use monospace for terminal commands and code — it's primary content, not decoration
+- Keep all buttons at 10px 24px padding with pill shape — consistency is absolute
+
+### Don't
+- Don't introduce any chromatic color — no brand blue, no accent green, no warm tones
+- Don't use border-radius between 12px and 9999px — the system is binary
+- Don't add shadows to any element — the flat aesthetic is intentional
+- Don't use font weights above 500 — no bold, no black weight
+- Don't add decorative illustrations beyond the llama mascot
+- Don't use gradients anywhere — flat blocks and borders only
+- Don't overcomplicate the layout — two columns maximum, no complex grids
+- Don't use borders heavier than 1px — containment is always the lightest possible touch
+- Don't add hover animations or transitions — interactions should feel instant and direct
+
+## 8. Responsive Behavior
+
+### Breakpoints
+| Name | Width | Key Changes |
+|------|-------|-------------|
+| Mobile | <640px | Single column, stacked everything, hamburger nav |
+| Small Tablet | 640–768px | Minor adjustments to spacing |
+| Tablet | 768–850px | 2-column layouts begin |
+| Desktop | 850–1024px | Standard layout, expanded features |
+| Large Desktop | 1024–1280px | Maximum content width |
+
+### Touch Targets
+- All buttons are pill-shaped with generous padding (10px 24px)
+- Navigation links at comfortable 16px size
+- Minimum touch area easily exceeds 44x44px
+
+### Collapsing Strategy
+- **Navigation**: Collapses to hamburger menu on mobile
+- **Feature sections**: 2-column → stacked single column
+- **Hero text**: 48px → 36px → 30px progressive scaling
+- **Integration grid**: Multi-column → 2-column → single column
+- **Code blocks**: Horizontal scroll maintained
+
+### Image Behavior
+- Llama mascot scales proportionally
+- Code blocks maintain monospace formatting
+- Integration icons reflow to fewer columns
+- No art direction changes
+
+## 9. Agent Prompt Guide
+
+### Quick Color Reference
+- Primary Text: "Pure Black (#000000)"
+- Page Background: "Pure White (#ffffff)"
+- Secondary Text: "Stone (#737373)"
+- Button Background: "Light Gray (#e5e5e5)"
+- Borders: "Light Gray (#e5e5e5)"
+- Muted Text: "Silver (#a3a3a3)"
+- Dark Text: "Near Black (#262626)"
+- Subtle Surface: "Snow (#fafafa)"
+
+### Example Component Prompts
+- "Create a hero section on pure white (#ffffff) with an illustration centered above a headline at 48px SF Pro Rounded weight 500, line-height 1.0. Use Pure Black (#000000) text. Below, add a black pill-shaped CTA button (9999px radius, 10px 24px padding) and a gray pill button."
+- "Design a code block with a 12px border-radius, 1px solid Light Gray (#e5e5e5) border on white background. Use ui-monospace at 16px for the terminal command. No shadow."
+- "Build a tab bar with pill-shaped tabs (9999px radius). Active tab: Light Gray (#e5e5e5) background, Near Black (#262626) text. Inactive: transparent background, Stone (#737373) text."
+- "Create an integration card grid. Each card is a bordered pill (9999px radius) or a 12px-radius card with 1px solid #e5e5e5 border. Icon + name inside. Grid of 4 columns on desktop."
+- "Design a navigation bar: transparent background, no border. Ollama logo on the left, 3 text links (Pure Black, 16px, weight 400), pill search input in the center, 'Sign in' text link and black pill 'Download' button on the right."
+
+### Iteration Guide
+1. Focus on ONE component at a time
+2. Keep all values grayscale — "Stone (#737373)" not "use a light color"
+3. Always specify pill (9999px) or container (12px) radius — nothing in between
+4. Shadows are always zero — never add them
+5. Weight is always 400 or 500 — never bold
+6. If something feels too decorated, remove it — less is always more for Ollama

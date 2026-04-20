@@ -1,1 +1,767 @@
-IyBQcm9kdWN0aW9uLVJlYWR5IEV4YW1wbGVzCgpSZWFsLXdvcmxkIGV4YW1wbGVzIG9mIHVzaW5nIEd1aWRhbmNlIGZvciBzdHJ1Y3R1cmVkIGdlbmVyYXRpb24sIGFnZW50cywgYW5kIHdvcmtmbG93cy4KCiMjIFRhYmxlIG9mIENvbnRlbnRzCi0gSlNPTiBHZW5lcmF0aW9uCi0gRGF0YSBFeHRyYWN0aW9uCi0gQ2xhc3NpZmljYXRpb24gU3lzdGVtcwotIEFnZW50IFN5c3RlbXMKLSBNdWx0aS1TdGVwIFdvcmtmbG93cwotIENvZGUgR2VuZXJhdGlvbgotIFByb2R1Y3Rpb24gVGlwcwoKIyMgSlNPTiBHZW5lcmF0aW9uCgojIyMgQmFzaWMgSlNPTgoKYGBgcHl0aG9uCmZyb20gZ3VpZGFuY2UgaW1wb3J0IG1vZGVscywgZ2VuLCBndWlkYW5jZQoKQGd1aWRhbmNlCmRlZiBnZW5lcmF0ZV91c2VyKGxtKToKICAgICIiIkdlbmVyYXRlIHZhbGlkIHVzZXIgSlNPTi4iIiIKICAgIGxtICs9ICJ7XG4iCiAgICBsbSArPSAnICAibmFtZSI6ICcgKyBnZW4oIm5hbWUiLCByZWdleD1yJyJbQS1aYS16IF0rIicpICsgIixcbiIKICAgIGxtICs9ICcgICJhZ2UiOiAnICsgZ2VuKCJhZ2UiLCByZWdleD1yIlswLTldKyIpICsgIixcbiIKICAgIGxtICs9ICcgICJlbWFpbCI6ICcgKyBnZW4oCiAgICAgICAgImVtYWlsIiwKICAgICAgICByZWdleD1yJyJbYS16QS1aMC05Ll8lKy1dK0BbYS16QS1aMC05Li1dK1wuW2EtekEtWl17Mix9IicKICAgICkgKyAiXG4iCiAgICBsbSArPSAifSIKICAgIHJldHVybiBsbQoKIyBVc2UgaXQKbG0gPSBtb2RlbHMuQW50aHJvcGljKCJjbGF1ZGUtc29ubmV0LTQtNS0yMDI1MDkyOSIpCmxtICs9ICJHZW5lcmF0ZSBhIHVzZXIgcHJvZmlsZTpcbiIKbG0gPSBnZW5lcmF0ZV91c2VyKGxtKQoKcHJpbnQobG0pCiMgT3V0cHV0OiBWYWxpZCBKU09OIGd1YXJhbnRlZWQKYGBgCgojIyMgTmVzdGVkIEpTT04KCmBgYHB5dGhvbgpAZ3VpZGFuY2UKZGVmIGdlbmVyYXRlX29yZGVyKGxtKToKICAgICIiIkdlbmVyYXRlIG5lc3RlZCBvcmRlciBKU09OLiIiIgogICAgbG0gKz0gIntcbiIKCiAgICAjIEN1c3RvbWVyIGluZm8KICAgIGxtICs9ICcgICJjdXN0b21lciI6IHtcbicKICAgIGxtICs9ICcgICAgIm5hbWUiOiAnICsgZ2VuKCJjdXN0b21lcl9uYW1lIiwgcmVnZXg9ciciW0EtWmEteiBdKyInKSArICIsXG4iCiAgICBsbSArPSAnICAgICJlbWFpbCI6ICcgKyBnZW4oCiAgICAgICAgImN1c3RvbWVyX2VtYWlsIiwKICAgICAgICByZWdleD1yJyJbYS16QS1aMC05Ll8lKy1dK0BbYS16QS1aMC05Li1dK1wuW2EtekEtWl17Mix9IicKICAgICkgKyAiXG4iCiAgICBsbSArPSAiICB9LFxuIgoKICAgICMgT3JkZXIgZGV0YWlscwogICAgbG0gKz0gJyAgIm9yZGVyIjoge1xuJwogICAgbG0gKz0gJyAgICAiaWQiOiAnICsgZ2VuKCJvcmRlcl9pZCIsIHJlZ2V4PXInIk9SRC1bMC05XXs2fSInKSArICIsXG4iCiAgICBsbSArPSAnICAgICJkYXRlIjogJyArIGdlbigib3JkZXJfZGF0ZSIsIHJlZ2V4PXInIlxkezR9LVxkezJ9LVxkezJ9IicpICsgIixcbiIKICAgIGxtICs9ICcgICAgInRvdGFsIjogJyArIGdlbigib3JkZXJfdG90YWwiLCByZWdleD1yIlswLTldK1wuWzAtOV17Mn0iKSArICJcbiIKICAgIGxtICs9ICIgIH0sXG4iCgogICAgIyBTdGF0dXMKICAgIGxtICs9ICcgICJzdGF0dXMiOiAnICsgZ2VuKAogICAgICAgICJzdGF0dXMiLAogICAgICAgIHJlZ2V4PXInIihwZW5kaW5nfHByb2Nlc3Npbmd8c2hpcHBlZHxkZWxpdmVyZWQpIicKICAgICkgKyAiXG4iCgogICAgbG0gKz0gIn0iCiAgICByZXR1cm4gbG0KCmxtID0gbW9kZWxzLkFudGhyb3BpYygiY2xhdWRlLXNvbm5ldC00LTUtMjAyNTA5MjkiKQpsbSA9IGdlbmVyYXRlX29yZGVyKGxtKQpgYGAKCiMjIyBKU09OIEFycmF5CgpgYGBweXRob24KQGd1aWRhbmNlCmRlZiBnZW5lcmF0ZV91c2VyX2xpc3QobG0sIGNvdW50PTMpOgogICAgIiIiR2VuZXJhdGUgSlNPTiBhcnJheSBvZiB1c2Vycy4iIiIKICAgIGxtICs9ICJbXG4iCgogICAgZm9yIGkgaW4gcmFuZ2UoY291bnQpOgogICAgICAgIGxtICs9ICIgIHtcbiIKICAgICAgICBsbSArPSAnICAgICJpZCI6ICcgKyBnZW4oZiJpZF97aX0iLCByZWdleD1yIlswLTldKyIpICsgIixcbiIKICAgICAgICBsbSArPSAnICAgICJuYW1lIjogJyArIGdlbihmIm5hbWVfe2l9IiwgcmVnZXg9ciciW0EtWmEteiBdKyInKSArICIsXG4iCiAgICAgICAgbG0gKz0gJyAgICAiYWN0aXZlIjogJyArIGdlbihmImFjdGl2ZV97aX0iLCByZWdleD1yIih0cnVlfGZhbHNlKSIpICsgIlxuIgogICAgICAgIGxtICs9ICIgIH0iCiAgICAgICAgaWYgaSA8IGNvdW50IC0gMToKICAgICAgICAgICAgbG0gKz0gIiwiCiAgICAgICAgbG0gKz0gIlxuIgoKICAgIGxtICs9ICJdIgogICAgcmV0dXJuIGxtCgpsbSA9IG1vZGVscy5BbnRocm9waWMoImNsYXVkZS1zb25uZXQtNC01LTIwMjUwOTI5IikKbG0gPSBnZW5lcmF0ZV91c2VyX2xpc3QobG0sIGNvdW50PTUpCmBgYAoKIyMjIER5bmFtaWMgSlNPTiBTY2hlbWEKCmBgYHB5dGhvbgppbXBvcnQganNvbgpmcm9tIGd1aWRhbmNlIGltcG9ydCBtb2RlbHMsIGdlbiwgZ3VpZGFuY2UKCkBndWlkYW5jZQpkZWYganNvbl9mcm9tX3NjaGVtYShsbSwgc2NoZW1hKToKICAgICIiIkdlbmVyYXRlIEpTT04gbWF0Y2hpbmcgYSBzY2hlbWEuIiIiCiAgICBsbSArPSAie1xuIgoKICAgIGZpZWxkcyA9IGxpc3Qoc2NoZW1hWyJwcm9wZXJ0aWVzIl0uaXRlbXMoKSkKICAgIGZvciBpLCAoZmllbGRfbmFtZSwgZmllbGRfc2NoZW1hKSBpbiBlbnVtZXJhdGUoZmllbGRzKToKICAgICAgICBsbSArPSBmJyAgIntmaWVsZF9uYW1lfSI6ICcKCiAgICAgICAgIyBIYW5kbGUgZGlmZmVyZW50IHR5cGVzCiAgICAgICAgaWYgZmllbGRfc2NoZW1hWyJ0eXBlIl0gPT0gInN0cmluZyI6CiAgICAgICAgICAgIGlmICJwYXR0ZXJuIiBpbiBmaWVsZF9zY2hlbWE6CiAgICAgICAgICAgICAgICBsbSArPSBnZW4oZmllbGRfbmFtZSwgcmVnZXg9Zicie2ZpZWxkX3NjaGVtYVsicGF0dGVybiJdfSInKQogICAgICAgICAgICBlbHNlOgogICAgICAgICAgICAgICAgbG0gKz0gZ2VuKGZpZWxkX25hbWUsIHJlZ2V4PXInIlteIl0rIicpCiAgICAgICAgZWxpZiBmaWVsZF9zY2hlbWFbInR5cGUiXSA9PSAibnVtYmVyIjoKICAgICAgICAgICAgbG0gKz0gZ2VuKGZpZWxkX25hbWUsIHJlZ2V4PXIiWzAtOV0rKFwuWzAtOV0rKT8iKQogICAgICAgIGVsaWYgZmllbGRfc2NoZW1hWyJ0eXBlIl0gPT0gImludGVnZXIiOgogICAgICAgICAgICBsbSArPSBnZW4oZmllbGRfbmFtZSwgcmVnZXg9ciJbMC05XSsiKQogICAgICAgIGVsaWYgZmllbGRfc2NoZW1hWyJ0eXBlIl0gPT0gImJvb2xlYW4iOgogICAgICAgICAgICBsbSArPSBnZW4oZmllbGRfbmFtZSwgcmVnZXg9ciIodHJ1ZXxmYWxzZSkiKQoKICAgICAgICBpZiBpIDwgbGVuKGZpZWxkcykgLSAxOgogICAgICAgICAgICBsbSArPSAiLCIKICAgICAgICBsbSArPSAiXG4iCgogICAgbG0gKz0gIn0iCiAgICByZXR1cm4gbG0KCiMgRGVmaW5lIHNjaGVtYQpzY2hlbWEgPSB7CiAgICAidHlwZSI6ICJvYmplY3QiLAogICAgInByb3BlcnRpZXMiOiB7CiAgICAgICAgIm5hbWUiOiB7InR5cGUiOiAic3RyaW5nIn0sCiAgICAgICAgImFnZSI6IHsidHlwZSI6ICJpbnRlZ2VyIn0sCiAgICAgICAgInNjb3JlIjogeyJ0eXBlIjogIm51bWJlciJ9LAogICAgICAgICJhY3RpdmUiOiB7InR5cGUiOiAiYm9vbGVhbiJ9CiAgICB9Cn0KCmxtID0gbW9kZWxzLkFudGhyb3BpYygiY2xhdWRlLXNvbm5ldC00LTUtMjAyNTA5MjkiKQpsbSA9IGpzb25fZnJvbV9zY2hlbWEobG0sIHNjaGVtYSkKYGBgCgojIyBEYXRhIEV4dHJhY3Rpb24KCiMjIyBFeHRyYWN0IGZyb20gVGV4dAoKYGBgcHl0aG9uCmZyb20gZ3VpZGFuY2UgaW1wb3J0IG1vZGVscywgZ2VuLCBndWlkYW5jZSwgc3lzdGVtLCB1c2VyLCBhc3Npc3RhbnQKCkBndWlkYW5jZQpkZWYgZXh0cmFjdF9wZXJzb25faW5mbyhsbSwgdGV4dCk6CiAgICAiIiJFeHRyYWN0IHN0cnVjdHVyZWQgaW5mbyBmcm9tIHRleHQuIiIiCiAgICBsbSArPSBmIlRleHQ6IHt0ZXh0fVxuXG4iCgogICAgd2l0aCBhc3Npc3RhbnQoKToKICAgICAgICBsbSArPSAiTmFtZTogIiArIGdlbigibmFtZSIsIHJlZ2V4PXIiW0EtWmEteiBdKyIsIHN0b3A9IlxuIikgKyAiXG4iCiAgICAgICAgbG0gKz0gIkFnZTogIiArIGdlbigiYWdlIiwgcmVnZXg9ciJbMC05XSsiLCBtYXhfdG9rZW5zPTMpICsgIlxuIgogICAgICAgIGxtICs9ICJPY2N1cGF0aW9uOiAiICsgZ2VuKCJvY2N1cGF0aW9uIiwgcmVnZXg9ciJbQS1aYS16IF0rIiwgc3RvcD0iXG4iKSArICJcbiIKICAgICAgICBsbSArPSAiRW1haWw6ICIgKyBnZW4oCiAgICAgICAgICAgICJlbWFpbCIsCiAgICAgICAgICAgIHJlZ2V4PXIiW2EtekEtWjAtOS5fJSstXStAW2EtekEtWjAtOS4tXStcLlthLXpBLVpdezIsfSIsCiAgICAgICAgICAgIHN0b3A9IlxuIgogICAgICAgICkgKyAiXG4iCgogICAgcmV0dXJuIGxtCgp0ZXh0ID0gIkpvaG4gU21pdGggaXMgYSAzNS15ZWFyLW9sZCBzb2Z0d2FyZSBlbmdpbmVlci4gQ29udGFjdDogam9obkBleGFtcGxlLmNvbSIKCmxtID0gbW9kZWxzLkFudGhyb3BpYygiY2xhdWRlLXNvbm5ldC00LTUtMjAyNTA5MjkiKQoKd2l0aCBzeXN0ZW0oKToKICAgIGxtICs9ICJZb3UgZXh0cmFjdCBzdHJ1Y3R1cmVkIGluZm9ybWF0aW9uIGZyb20gdGV4dC4iCgp3aXRoIHVzZXIoKToKICAgIGxtID0gZXh0cmFjdF9wZXJzb25faW5mbyhsbSwgdGV4dCkKCnByaW50KGYiTmFtZToge2xtWyduYW1lJ119IikKcHJpbnQoZiJBZ2U6IHtsbVsnYWdlJ119IikKcHJpbnQoZiJPY2N1cGF0aW9uOiB7bG1bJ29jY3VwYXRpb24nXX0iKQpwcmludChmIkVtYWlsOiB7bG1bJ2VtYWlsJ119IikKYGBgCgojIyMgTXVsdGktRW50aXR5IEV4dHJhY3Rpb24KCmBgYHB5dGhvbgpAZ3VpZGFuY2UKZGVmIGV4dHJhY3RfZW50aXRpZXMobG0sIHRleHQpOgogICAgIiIiRXh0cmFjdCBtdWx0aXBsZSBlbnRpdHkgdHlwZXMuIiIiCiAgICBsbSArPSBmIkFuYWx5emU6IHt0ZXh0fVxuXG4iCgogICAgIyBQZXJzb24gZW50aXRpZXMKICAgIGxtICs9ICJQZW9wbGU6XG4iCiAgICBmb3IgaSBpbiByYW5nZSgzKTogICMgVXAgdG8gMyBwZW9wbGUKICAgICAgICBsbSArPSBmIi0gIiArIGdlbihmInBlcnNvbl97aX0iLCByZWdleD1yIltBLVphLXogXSsiLCBzdG9wPSJcbiIpICsgIlxuIgoKICAgICMgT3JnYW5pemF0aW9uIGVudGl0aWVzCiAgICBsbSArPSAiXG5Pcmdhbml6YXRpb25zOlxuIgogICAgZm9yIGkgaW4gcmFuZ2UoMik6ICAjIFVwIHRvIDIgb3JncwogICAgICAgIGxtICs9IGYiLSAiICsgZ2VuKGYib3JnX3tpfSIsIHJlZ2V4PXIiW0EtWmEtejAtOSBdKyIsIHN0b3A9IlxuIikgKyAiXG4iCgogICAgIyBEYXRlcwogICAgbG0gKz0gIlxuRGF0ZXM6XG4iCiAgICBmb3IgaSBpbiByYW5nZSgyKTogICMgVXAgdG8gMiBkYXRlcwogICAgICAgIGxtICs9IGYiLSAiICsgZ2VuKGYiZGF0ZV97aX0iLCByZWdleD1yIlxkezR9LVxkezJ9LVxkezJ9Iiwgc3RvcD0iXG4iKSArICJcbiIKCiAgICAjIExvY2F0aW9ucwogICAgbG0gKz0gIlxuTG9jYXRpb25zOlxuIgogICAgZm9yIGkgaW4gcmFuZ2UoMik6ICAjIFVwIHRvIDIgbG9jYXRpb25zCiAgICAgICAgbG0gKz0gZiItICIgKyBnZW4oZiJsb2NhdGlvbl97aX0iLCByZWdleD1yIltBLVphLXogXSsiLCBzdG9wPSJcbiIpICsgIlxuIgoKICAgIHJldHVybiBsbQoKdGV4dCA9ICIiIgpUaW0gQ29vayBhbmQgU2F0eWEgTmFkZWxsYSBtZXQgYXQgTWljcm9zb2Z0IGhlYWRxdWFydGVycyBpbiBSZWRtb25kIG9uIDIwMjQtMDktMTUKdG8gZGlzY3VzcyB0aGUgY29sbGFib3JhdGlvbiBiZXR3ZWVuIEFwcGxlIGFuZCBNaWNyb3NvZnQuIFRoZSBtZWV0aW5nIGNvbnRpbnVlZAppbiBDdXBlcnRpbm8gb24gMjAyNC0wOS0yMC4KIiIiCgpsbSA9IG1vZGVscy5BbnRocm9waWMoImNsYXVkZS1zb25uZXQtNC01LTIwMjUwOTI5IikKbG0gPSBleHRyYWN0X2VudGl0aWVzKGxtLCB0ZXh0KQpgYGAKCiMjIyBCYXRjaCBFeHRyYWN0aW9uCgpgYGBweXRob24KQGd1aWRhbmNlCmRlZiBiYXRjaF9leHRyYWN0KGxtLCB0ZXh0cyk6CiAgICAiIiJFeHRyYWN0IGZyb20gbXVsdGlwbGUgdGV4dHMuIiIiCiAgICBsbSArPSAiQmF0Y2ggRXh0cmFjdGlvbiBSZXN1bHRzOlxuXG4iCgogICAgZm9yIGksIHRleHQgaW4gZW51bWVyYXRlKHRleHRzKToKICAgICAgICBsbSArPSBmIj09PSBJdGVtIHtpKzF9ID09PVxuIgogICAgICAgIGxtICs9IGYiVGV4dDoge3RleHR9XG4iCiAgICAgICAgbG0gKz0gIk5hbWU6ICIgKyBnZW4oZiJuYW1lX3tpfSIsIHJlZ2V4PXIiW0EtWmEteiBdKyIsIHN0b3A9IlxuIikgKyAiXG4iCiAgICAgICAgbG0gKz0gIlNlbnRpbWVudDogIiArIGdlbigKICAgICAgICAgICAgZiJzZW50aW1lbnRfe2l9IiwKICAgICAgICAgICAgcmVnZXg9ciIocG9zaXRpdmV8bmVnYXRpdmV8bmV1dHJhbCkiLAogICAgICAgICAgICBzdG9wPSJcbiIKICAgICAgICApICsgIlxuXG4iCgogICAgcmV0dXJuIGxtCgp0ZXh0cyA9IFsKICAgICJBbGljZSBpcyBoYXBweSB3aXRoIHRoZSBwcm9kdWN0IiwKICAgICJCb2IgaXMgZGlzYXBwb2ludGVkIHdpdGggdGhlIHNlcnZpY2UiLAogICAgIkNhcm9sIGhhcyBubyBzdHJvbmcgZmVlbGluZ3MgZWl0aGVyIHdheSIKXQoKbG0gPSBtb2RlbHMuQW50aHJvcGljKCJjbGF1ZGUtc29ubmV0LTQtNS0yMDI1MDkyOSIpCmxtID0gYmF0Y2hfZXh0cmFjdChsbSwgdGV4dHMpCmBgYAoKIyMgQ2xhc3NpZmljYXRpb24gU3lzdGVtcwoKIyMjIFNlbnRpbWVudCBBbmFseXNpcwoKYGBgcHl0aG9uCmZyb20gZ3VpZGFuY2UgaW1wb3J0IG1vZGVscywgc2VsZWN0LCBnZW4KCmxtID0gbW9kZWxzLkFudGhyb3BpYygiY2xhdWRlLXNvbm5ldC00LTUtMjAyNTA5MjkiKQoKdGV4dCA9ICJUaGlzIHByb2R1Y3QgaXMgYWJzb2x1dGVseSBhbWF6aW5nISBCZXN0IHB1cmNoYXNlIGV2ZXIuIgoKbG0gKz0gZiJUZXh0OiB7dGV4dH1cblxuIgpsbSArPSAiU2VudGltZW50OiAiICsgc2VsZWN0KAogICAgWyJwb3NpdGl2ZSIsICJuZWdhdGl2ZSIsICJuZXV0cmFsIl0sCiAgICBuYW1lPSJzZW50aW1lbnQiCikKbG0gKz0gIlxuQ29uZmlkZW5jZTogIiArIGdlbigiY29uZmlkZW5jZSIsIHJlZ2V4PXIiWzAtOV17MSwzfSIpICsgIiVcbiIKbG0gKz0gIlJlYXNvbmluZzogIiArIGdlbigicmVhc29uaW5nIiwgc3RvcD0iXG4iLCBtYXhfdG9rZW5zPTUwKQoKcHJpbnQoZiJTZW50aW1lbnQ6IHtsbVsnc2VudGltZW50J119IikKcHJpbnQoZiJDb25maWRlbmNlOiB7bG1bJ2NvbmZpZGVuY2UnXX0lIikKcHJpbnQoZiJSZWFzb25pbmc6IHtsbVsncmVhc29uaW5nJ119IikKYGBgCgojIyMgTXVsdGktTGFiZWwgQ2xhc3NpZmljYXRpb24KCmBgYHB5dGhvbgpAZ3VpZGFuY2UKZGVmIGNsYXNzaWZ5X2FydGljbGUobG0sIHRleHQpOgogICAgIiIiQ2xhc3NpZnkgYXJ0aWNsZSB3aXRoIG11bHRpcGxlIGxhYmVscy4iIiIKICAgIGxtICs9IGYiQXJ0aWNsZToge3RleHR9XG5cbiIKCiAgICAjIFByaW1hcnkgY2F0ZWdvcnkKICAgIGxtICs9ICJQcmltYXJ5IENhdGVnb3J5OiAiICsgc2VsZWN0KAogICAgICAgIFsiVGVjaG5vbG9neSIsICJCdXNpbmVzcyIsICJTY2llbmNlIiwgIlBvbGl0aWNzIiwgIkVudGVydGFpbm1lbnQiXSwKICAgICAgICBuYW1lPSJwcmltYXJ5X2NhdGVnb3J5IgogICAgKSArICJcbiIKCiAgICAjIFNlY29uZGFyeSBjYXRlZ29yaWVzICh1cCB0byAzKQogICAgbG0gKz0gIlxuU2Vjb25kYXJ5IENhdGVnb3JpZXM6XG4iCiAgICBjYXRlZ29yaWVzID0gWyJUZWNobm9sb2d5IiwgIkJ1c2luZXNzIiwgIlNjaWVuY2UiLCAiUG9saXRpY3MiLCAiRW50ZXJ0YWlubWVudCJdCiAgICBmb3IgaSBpbiByYW5nZSgzKToKICAgICAgICBsbSArPSBmIntpKzF9LiAiICsgc2VsZWN0KGNhdGVnb3JpZXMsIG5hbWU9ZiJzZWNvbmRhcnlfe2l9IikgKyAiXG4iCgogICAgIyBUYWdzCiAgICBsbSArPSAiXG5UYWdzOiAiICsgZ2VuKCJ0YWdzIiwgc3RvcD0iXG4iLCBtYXhfdG9rZW5zPTUwKSArICJcbiIKCiAgICAjIFRhcmdldCBhdWRpZW5jZQogICAgbG0gKz0gIlRhcmdldCBBdWRpZW5jZTogIiArIHNlbGVjdCgKICAgICAgICBbIkdlbmVyYWwiLCAiRXhwZXJ0IiwgIkJlZ2lubmVyIl0sCiAgICAgICAgbmFtZT0iYXVkaWVuY2UiCiAgICApCgogICAgcmV0dXJuIGxtCgphcnRpY2xlID0gIiIiCkFwcGxlIGFubm91bmNlZCBuZXcgQUkgZmVhdHVyZXMgaW4gaU9TIDE4LCBsZXZlcmFnaW5nIG1hY2hpbmUgbGVhcm5pbmcgdG8gaW1wcm92ZQpiYXR0ZXJ5IGxpZmUgYW5kIHBlcmZvcm1hbmNlLiBUaGUgY29tcGFueSdzIHN0b2NrIHJvc2UgNSUgZm9sbG93aW5nIHRoZSBhbm5vdW5jZW1lbnQuCiIiIgoKbG0gPSBtb2RlbHMuQW50aHJvcGljKCJjbGF1ZGUtc29ubmV0LTQtNS0yMDI1MDkyOSIpCmxtID0gY2xhc3NpZnlfYXJ0aWNsZShsbSwgYXJ0aWNsZSkKYGBgCgojIyMgSW50ZW50IENsYXNzaWZpY2F0aW9uCgpgYGBweXRob24KQGd1aWRhbmNlCmRlZiBjbGFzc2lmeV9pbnRlbnQobG0sIG1lc3NhZ2UpOgogICAgIiIiQ2xhc3NpZnkgdXNlciBpbnRlbnQuIiIiCiAgICBsbSArPSBmIlVzZXIgTWVzc2FnZToge21lc3NhZ2V9XG5cbiIKCiAgICAjIEludGVudAogICAgbG0gKz0gIkludGVudDogIiArIHNlbGVjdCgKICAgICAgICBbInF1ZXN0aW9uIiwgImNvbXBsYWludCIsICJyZXF1ZXN0IiwgImZlZWRiYWNrIiwgIm90aGVyIl0sCiAgICAgICAgbmFtZT0iaW50ZW50IgogICAgKSArICJcbiIKCiAgICAjIFVyZ2VuY3kKICAgIGxtICs9ICJVcmdlbmN5OiAiICsgc2VsZWN0KAogICAgICAgIFsibG93IiwgIm1lZGl1bSIsICJoaWdoIiwgImNyaXRpY2FsIl0sCiAgICAgICAgbmFtZT0idXJnZW5jeSIKICAgICkgKyAiXG4iCgogICAgIyBEZXBhcnRtZW50CiAgICBsbSArPSAiUm91dGUgVG86ICIgKyBzZWxlY3QoCiAgICAgICAgWyJzdXBwb3J0IiwgInNhbGVzIiwgImJpbGxpbmciLCAidGVjaG5pY2FsIl0sCiAgICAgICAgbmFtZT0iZGVwYXJ0bWVudCIKICAgICkgKyAiXG4iCgogICAgIyBTZW50aW1lbnQKICAgIGxtICs9ICJTZW50aW1lbnQ6ICIgKyBzZWxlY3QoCiAgICAgICAgWyJwb3NpdGl2ZSIsICJuZXV0cmFsIiwgIm5lZ2F0aXZlIl0sCiAgICAgICAgbmFtZT0ic2VudGltZW50IgogICAgKQoKICAgIHJldHVybiBsbQoKbWVzc2FnZSA9ICJNeSBhY2NvdW50IHdhcyBjaGFyZ2VkIHR3aWNlIGZvciB0aGUgc2FtZSBvcmRlci4gTmVlZCBoZWxwIEFTQVAhIgoKbG0gPSBtb2RlbHMuQW50aHJvcGljKCJjbGF1ZGUtc29ubmV0LTQtNS0yMDI1MDkyOSIpCmxtID0gY2xhc3NpZnlfaW50ZW50KGxtLCBtZXNzYWdlKQoKcHJpbnQoZiJJbnRlbnQ6IHtsbVsnaW50ZW50J119IikKcHJpbnQoZiJVcmdlbmN5OiB7bG1bJ3VyZ2VuY3knXX0iKQpwcmludChmIkRlcGFydG1lbnQ6IHtsbVsnZGVwYXJ0bWVudCddfSIpCmBgYAoKIyMgQWdlbnQgU3lzdGVtcwoKIyMjIFJlQWN0IEFnZW50CgpgYGBweXRob24KZnJvbSBndWlkYW5jZSBpbXBvcnQgbW9kZWxzLCBnZW4sIHNlbGVjdCwgZ3VpZGFuY2UKCkBndWlkYW5jZShzdGF0ZWxlc3M9RmFsc2UpCmRlZiByZWFjdF9hZ2VudChsbSwgcXVlc3Rpb24sIHRvb2xzLCBtYXhfcm91bmRzPTUpOgogICAgIiIiUmVBY3QgYWdlbnQgd2l0aCB0b29sIHVzZS4iIiIKICAgIGxtICs9IGYiUXVlc3Rpb246IHtxdWVzdGlvbn1cblxuIgoKICAgIGZvciByb3VuZCBpbiByYW5nZShtYXhfcm91bmRzKToKICAgICAgICAjIFRob3VnaHQKICAgICAgICBsbSArPSBmIlRob3VnaHQge3JvdW5kKzF9OiAiICsgZ2VuKCJ0aG91Z2h0Iiwgc3RvcD0iXG4iLCBtYXhfdG9rZW5zPTEwMCkgKyAiXG4iCgogICAgICAgICMgQWN0aW9uIHNlbGVjdGlvbgogICAgICAgIGxtICs9ICJBY3Rpb246ICIgKyBzZWxlY3QoCiAgICAgICAgICAgIGxpc3QodG9vbHMua2V5cygpKSArIFsiYW5zd2VyIl0sCiAgICAgICAgICAgIG5hbWU9ImFjdGlvbiIKICAgICAgICApCgogICAgICAgIGlmIGxtWyJhY3Rpb24iXSA9PSAiYW5zd2VyIjoKICAgICAgICAgICAgbG0gKz0gIlxuXG5GaW5hbCBBbnN3ZXI6ICIgKyBnZW4oImFuc3dlciIsIG1heF90b2tlbnM9MjAwKQogICAgICAgICAgICBicmVhawoKICAgICAgICAjIEFjdGlvbiBpbnB1dAogICAgICAgIGxtICs9ICJcbkFjdGlvbiBJbnB1dDogIiArIGdlbigiYWN0aW9uX2lucHV0Iiwgc3RvcD0iXG4iLCBtYXhfdG9rZW5zPTEwMCkgKyAiXG4iCgogICAgICAgICMgRXhlY3V0ZSB0b29sCiAgICAgICAgaWYgbG1bImFjdGlvbiJdIGluIHRvb2xzOgogICAgICAgICAgICB0cnk6CiAgICAgICAgICAgICAgICByZXN1bHQgPSB0b29sc1tsbVsiYWN0aW9uIl1dKGxtWyJhY3Rpb25faW5wdXQiXSkKICAgICAgICAgICAgICAgIGxtICs9IGYiT2JzZXJ2YXRpb246IHtyZXN1bHR9XG5cbiIKICAgICAgICAgICAgZXhjZXB0IEV4Y2VwdGlvbiBhcyBlOgogICAgICAgICAgICAgICAgbG0gKz0gZiJPYnNlcnZhdGlvbjogRXJyb3IgLSB7c3RyKGUpfVxuXG4iCgogICAgcmV0dXJuIGxtCgojIERlZmluZSB0b29scwp0b29scyA9IHsKICAgICJjYWxjdWxhdG9yIjogbGFtYmRhIGV4cHI6IGV2YWwoZXhwciksCiAgICAic2VhcmNoIjogbGFtYmRhIHF1ZXJ5OiBmIlNlYXJjaCByZXN1bHRzIGZvciAne3F1ZXJ5fSc6IFtNb2NrIHJlc3VsdHNdIiwKICAgICJ3ZWF0aGVyIjogbGFtYmRhIGNpdHk6IGYiV2VhdGhlciBpbiB7Y2l0eX06IFN1bm55LCA3MsKwRiIKfQoKIyBVc2UgYWdlbnQKbG0gPSBtb2RlbHMuQW50aHJvcGljKCJjbGF1ZGUtc29ubmV0LTQtNS0yMDI1MDkyOSIpCmxtID0gcmVhY3RfYWdlbnQobG0sICJXaGF0IGlzICgyNSAqIDQpICsgMTA/IiwgdG9vbHMpCgpwcmludChsbVsiYW5zd2VyIl0pCmBgYAoKIyMjIE11bHRpLUFnZW50IFN5c3RlbQoKYGBgcHl0aG9uCkBndWlkYW5jZQpkZWYgY29vcmRpbmF0b3JfYWdlbnQobG0sIHRhc2spOgogICAgIiIiQ29vcmRpbmF0b3IgdGhhdCBkZWxlZ2F0ZXMgdG8gc3BlY2lhbGlzdHMuIiIiCiAgICBsbSArPSBmIlRhc2s6IHt0YXNrfVxuXG4iCgogICAgIyBEZXRlcm1pbmUgd2hpY2ggc3BlY2lhbGlzdCB0byB1c2UKICAgIGxtICs9ICJTcGVjaWFsaXN0OiAiICsgc2VsZWN0KAogICAgICAgIFsicmVzZWFyY2hlciIsICJ3cml0ZXIiLCAiY29kZXIiLCAiYW5hbHlzdCJdLAogICAgICAgIG5hbWU9InNwZWNpYWxpc3QiCiAgICApICsgIlxuIgoKICAgIGxtICs9ICJSZWFzb25pbmc6ICIgKyBnZW4oInJlYXNvbmluZyIsIHN0b3A9IlxuIiwgbWF4X3Rva2Vucz0xMDApICsgIlxuIgoKICAgIHJldHVybiBsbQoKQGd1aWRhbmNlCmRlZiByZXNlYXJjaGVyX2FnZW50KGxtLCBxdWVyeSk6CiAgICAiIiJSZXNlYXJjaCBzcGVjaWFsaXN0LiIiIgogICAgbG0gKz0gZiJSZXNlYXJjaCBRdWVyeToge3F1ZXJ5fVxuXG4iCiAgICBsbSArPSAiRmluZGluZ3M6XG4iCiAgICBmb3IgaSBpbiByYW5nZSgzKToKICAgICAgICBsbSArPSBmIntpKzF9LiAiICsgZ2VuKGYiZmluZGluZ197aX0iLCBzdG9wPSJcbiIsIG1heF90b2tlbnM9MTAwKSArICJcbiIKICAgIHJldHVybiBsbQoKQGd1aWRhbmNlCmRlZiB3cml0ZXJfYWdlbnQobG0sIHRvcGljKToKICAgICIiIldyaXRpbmcgc3BlY2lhbGlzdC4iIiIKICAgIGxtICs9IGYiVG9waWM6IHt0b3BpY31cblxuIgogICAgbG0gKz0gIlRpdGxlOiAiICsgZ2VuKCJ0aXRsZSIsIHN0b3A9IlxuIiwgbWF4X3Rva2Vucz01MCkgKyAiXG4iCiAgICBsbSArPSAiQ29udGVudDpcbiIgKyBnZW4oImNvbnRlbnQiLCBtYXhfdG9rZW5zPTUwMCkKICAgIHJldHVybiBsbQoKIyBDb29yZGluYXRpb24gd29ya2Zsb3cKdGFzayA9ICJXcml0ZSBhbiBhcnRpY2xlIGFib3V0IEFJIHNhZmV0eSIKCmxtID0gbW9kZWxzLkFudGhyb3BpYygiY2xhdWRlLXNvbm5ldC00LTUtMjAyNTA5MjkiKQpsbSA9IGNvb3JkaW5hdG9yX2FnZW50KGxtLCB0YXNrKQoKc3BlY2lhbGlzdCA9IGxtWyJzcGVjaWFsaXN0Il0KaWYgc3BlY2lhbGlzdCA9PSAicmVzZWFyY2hlciI6CiAgICBsbSA9IHJlc2VhcmNoZXJfYWdlbnQobG0sIHRhc2spCmVsaWYgc3BlY2lhbGlzdCA9PSAid3JpdGVyIjoKICAgIGxtID0gd3JpdGVyX2FnZW50KGxtLCB0YXNrKQpgYGAKCiMjIyBUb29sIFVzZSB3aXRoIFZhbGlkYXRpb24KCmBgYHB5dGhvbgpAZ3VpZGFuY2Uoc3RhdGVsZXNzPUZhbHNlKQpkZWYgdmFsaWRhdGVkX3Rvb2xfYWdlbnQobG0sIHF1ZXN0aW9uKToKICAgICIiIkFnZW50IHdpdGggdmFsaWRhdGVkIHRvb2wgY2FsbHMuIiIiCiAgICB0b29scyA9IHsKICAgICAgICAiYWRkIjogbGFtYmRhIGEsIGI6IGZsb2F0KGEpICsgZmxvYXQoYiksCiAgICAgICAgIm11bHRpcGx5IjogbGFtYmRhIGEsIGI6IGZsb2F0KGEpICogZmxvYXQoYiksCiAgICAgICAgImRpdmlkZSI6IGxhbWJkYSBhLCBiOiBmbG9hdChhKSAvIGZsb2F0KGIpIGlmIGZsb2F0KGIpICE9IDAgZWxzZSAiRXJyb3I6IERpdmlzaW9uIGJ5IHplcm8iCiAgICB9CgogICAgbG0gKz0gZiJRdWVzdGlvbjoge3F1ZXN0aW9ufVxuXG4iCgogICAgZm9yIGkgaW4gcmFuZ2UoNSk6CiAgICAgICAgIyBTZWxlY3QgdG9vbAogICAgICAgIGxtICs9ICJUb29sOiAiICsgc2VsZWN0KGxpc3QodG9vbHMua2V5cygpKSArIFsiZG9uZSJdLCBuYW1lPSJ0b29sIikKCiAgICAgICAgaWYgbG1bInRvb2wiXSA9PSAiZG9uZSI6CiAgICAgICAgICAgIGxtICs9ICJcbkFuc3dlcjogIiArIGdlbigiYW5zd2VyIiwgbWF4X3Rva2Vucz0xMDApCiAgICAgICAgICAgIGJyZWFrCgogICAgICAgICMgR2V0IHZhbGlkYXRlZCBudW1lcmljIGFyZ3VtZW50cwogICAgICAgIGxtICs9ICJcbkFyZzE6ICIgKyBnZW4oImFyZzEiLCByZWdleD1yIi0/WzAtOV0rKFwuWzAtOV0rKT8iKSArICJcbiIKICAgICAgICBsbSArPSAiQXJnMjogIiArIGdlbigiYXJnMiIsIHJlZ2V4PXIiLT9bMC05XSsoXC5bMC05XSspPyIpICsgIlxuIgoKICAgICAgICAjIEV4ZWN1dGUKICAgICAgICByZXN1bHQgPSB0b29sc1tsbVsidG9vbCJdXShsbVsiYXJnMSJdLCBsbVsiYXJnMiJdKQogICAgICAgIGxtICs9IGYiUmVzdWx0OiB7cmVzdWx0fVxuXG4iCgogICAgcmV0dXJuIGxtCgpsbSA9IG1vZGVscy5BbnRocm9waWMoImNsYXVkZS1zb25uZXQtNC01LTIwMjUwOTI5IikKbG0gPSB2YWxpZGF0ZWRfdG9vbF9hZ2VudChsbSwgIldoYXQgaXMgKDEwICsgNSkgKiAzPyIpCmBgYAoKIyMgTXVsdGktU3RlcCBXb3JrZmxvd3MKCiMjIyBDaGFpbiBvZiBUaG91Z2h0CgpgYGBweXRob24KQGd1aWRhbmNlCmRlZiBjaGFpbl9vZl90aG91Z2h0KGxtLCBxdWVzdGlvbik6CiAgICAiIiJNdWx0aS1zdGVwIHJlYXNvbmluZyB3aXRoIENvVC4iIiIKICAgIGxtICs9IGYiUXVlc3Rpb246IHtxdWVzdGlvbn1cblxuIgoKICAgICMgR2VuZXJhdGUgcmVhc29uaW5nIHN0ZXBzCiAgICBsbSArPSAiTGV0IG1lIHRoaW5rIHN0ZXAgYnkgc3RlcDpcblxuIgogICAgZm9yIGkgaW4gcmFuZ2UoNCk6CiAgICAgICAgbG0gKz0gZiJTdGVwIHtpKzF9OiAiICsgZ2VuKGYic3RlcF97aSsxfSIsIHN0b3A9IlxuIiwgbWF4X3Rva2Vucz0xMDApICsgIlxuIgoKICAgICMgRmluYWwgYW5zd2VyCiAgICBsbSArPSAiXG5UaGVyZWZvcmUsIHRoZSBhbnN3ZXIgaXM6ICIgKyBnZW4oImFuc3dlciIsIHN0b3A9IlxuIiwgbWF4X3Rva2Vucz01MCkKCiAgICByZXR1cm4gbG0KCmxtID0gbW9kZWxzLkFudGhyb3BpYygiY2xhdWRlLXNvbm5ldC00LTUtMjAyNTA5MjkiKQpsbSA9IGNoYWluX29mX3Rob3VnaHQobG0sICJJZiBhIHRyYWluIHRyYXZlbHMgNjAgbXBoIGZvciAyLjUgaG91cnMsIGhvdyBmYXIgZG9lcyBpdCBnbz8iKQoKcHJpbnQobG1bImFuc3dlciJdKQpgYGAKCiMjIyBTZWxmLUNvbnNpc3RlbmN5CgpgYGBweXRob24KQGd1aWRhbmNlCmRlZiBzZWxmX2NvbnNpc3RlbmN5KGxtLCBxdWVzdGlvbiwgbnVtX3NhbXBsZXM9Myk6CiAgICAiIiJHZW5lcmF0ZSBtdWx0aXBsZSByZWFzb25pbmcgcGF0aHMgYW5kIGFnZ3JlZ2F0ZS4iIiIKICAgIGxtICs9IGYiUXVlc3Rpb246IHtxdWVzdGlvbn1cblxuIgoKICAgIGFuc3dlcnMgPSBbXQogICAgZm9yIGkgaW4gcmFuZ2UobnVtX3NhbXBsZXMpOgogICAgICAgIGxtICs9IGYiPT09IEF0dGVtcHQge2krMX0gPT09XG4iCiAgICAgICAgbG0gKz0gIlJlYXNvbmluZzogIiArIGdlbihmInJlYXNvbmluZ197aX0iLCBzdG9wPSJcbiIsIG1heF90b2tlbnM9MTAwKSArICJcbiIKICAgICAgICBsbSArPSAiQW5zd2VyOiAiICsgZ2VuKGYiYW5zd2VyX3tpfSIsIHN0b3A9IlxuIiwgbWF4X3Rva2Vucz01MCkgKyAiXG5cbiIKICAgICAgICBhbnN3ZXJzLmFwcGVuZChsbVtmImFuc3dlcl97aX0iXSkKCiAgICAjIEFnZ3JlZ2F0ZSAoc2ltcGxlIG1ham9yaXR5IHZvdGUpCiAgICBmcm9tIGNvbGxlY3Rpb25zIGltcG9ydCBDb3VudGVyCiAgICBtb3N0X2NvbW1vbiA9IENvdW50ZXIoYW5zd2VycykubW9zdF9jb21tb24oMSlbMF1bMF0KCiAgICBsbSArPSBmIkZpbmFsIEFuc3dlciAoYnkgbWFqb3JpdHkpOiB7bW9zdF9jb21tb259XG4iCiAgICByZXR1cm4gbG0KCmxtID0gbW9kZWxzLkFudGhyb3BpYygiY2xhdWRlLXNvbm5ldC00LTUtMjAyNTA5MjkiKQpsbSA9IHNlbGZfY29uc2lzdGVuY3kobG0sICJXaGF0IGlzIDE1JSBvZiAyMDA/IikKYGBgCgojIyMgUGxhbm5pbmcgYW5kIEV4ZWN1dGlvbgoKYGBgcHl0aG9uCkBndWlkYW5jZQpkZWYgcGxhbl9hbmRfZXhlY3V0ZShsbSwgZ29hbCk6CiAgICAiIiJQbGFuIHRhc2tzIHRoZW4gZXhlY3V0ZSB0aGVtLiIiIgogICAgbG0gKz0gZiJHb2FsOiB7Z29hbH1cblxuIgoKICAgICMgUGxhbm5pbmcgcGhhc2UKICAgIGxtICs9ICJQbGFuOlxuIgogICAgbnVtX3N0ZXBzID0gNAogICAgZm9yIGkgaW4gcmFuZ2UobnVtX3N0ZXBzKToKICAgICAgICBsbSArPSBmIntpKzF9LiAiICsgZ2VuKGYicGxhbl9zdGVwX3tpfSIsIHN0b3A9IlxuIiwgbWF4X3Rva2Vucz0xMDApICsgIlxuIgoKICAgICMgRXhlY3V0aW9uIHBoYXNlCiAgICBsbSArPSAiXG5FeGVjdXRpb246XG5cbiIKICAgIGZvciBpIGluIHJhbmdlKG51bV9zdGVwcyk6CiAgICAgICAgbG0gKz0gZiJTdGVwIHtpKzF9OiB7bG1bZidwbGFuX3N0ZXBfe2l9J119XG4iCiAgICAgICAgbG0gKz0gIlN0YXR1czogIiArIHNlbGVjdChbImNvbXBsZXRlZCIsICJpbi1wcm9ncmVzcyIsICJibG9ja2VkIl0sIG5hbWU9ZiJzdGF0dXNfe2l9IikgKyAiXG4iCiAgICAgICAgbG0gKz0gIlJlc3VsdDogIiArIGdlbihmInJlc3VsdF97aX0iLCBzdG9wPSJcbiIsIG1heF90b2tlbnM9MTUwKSArICJcblxuIgoKICAgICMgU3VtbWFyeQogICAgbG0gKz0gIlN1bW1hcnk6ICIgKyBnZW4oInN1bW1hcnkiLCBtYXhfdG9rZW5zPTIwMCkKCiAgICByZXR1cm4gbG0KCmxtID0gbW9kZWxzLkFudGhyb3BpYygiY2xhdWRlLXNvbm5ldC00LTUtMjAyNTA5MjkiKQpsbSA9IHBsYW5fYW5kX2V4ZWN1dGUobG0sICJCdWlsZCBhIFJFU1QgQVBJIGZvciBhIGJsb2cgcGxhdGZvcm0iKQpgYGAKCiMjIENvZGUgR2VuZXJhdGlvbgoKIyMjIFB5dGhvbiBGdW5jdGlvbgoKYGBgcHl0aG9uCkBndWlkYW5jZQpkZWYgZ2VuZXJhdGVfcHl0aG9uX2Z1bmN0aW9uKGxtLCBkZXNjcmlwdGlvbik6CiAgICAiIiJHZW5lcmF0ZSBQeXRob24gZnVuY3Rpb24gZnJvbSBkZXNjcmlwdGlvbi4iIiIKICAgIGxtICs9IGYiRGVzY3JpcHRpb246IHtkZXNjcmlwdGlvbn1cblxuIgoKICAgICMgRnVuY3Rpb24gc2lnbmF0dXJlCiAgICBsbSArPSAiZGVmICIgKyBnZW4oImZ1bmNfbmFtZSIsIHJlZ2V4PXIiW2Etel9dW2EtejAtOV9dKiIpICsgIigiCiAgICBsbSArPSBnZW4oInBhcmFtcyIsIHJlZ2V4PXIiW2Etel9dW2EtejAtOV9dKigsIFthLXpfXVthLXowLTlfXSopKiIpICsgIik6XG4iCgogICAgIyBEb2NzdHJpbmcKICAgIGxtICs9ICcgICAgIiIiJyArIGdlbigiZG9jc3RyaW5nIiwgc3RvcD0nIiIiJywgbWF4X3Rva2Vucz0xMDApICsgJyIiIlxuJwoKICAgICMgRnVuY3Rpb24gYm9keQogICAgbG0gKz0gIiAgICAiICsgZ2VuKCJib2R5Iiwgc3RvcD0iXG4iLCBtYXhfdG9rZW5zPTIwMCkgKyAiXG4iCgogICAgcmV0dXJuIGxtCgpsbSA9IG1vZGVscy5BbnRocm9waWMoImNsYXVkZS1zb25uZXQtNC01LTIwMjUwOTI5IikKbG0gPSBnZW5lcmF0ZV9weXRob25fZnVuY3Rpb24obG0sICJDaGVjayBpZiBhIG51bWJlciBpcyBwcmltZSIpCgpwcmludChsbSkKYGBgCgojIyMgU1FMIFF1ZXJ5CgpgYGBweXRob24KQGd1aWRhbmNlCmRlZiBnZW5lcmF0ZV9zcWwobG0sIGRlc2NyaXB0aW9uKToKICAgICIiIkdlbmVyYXRlIFNRTCBxdWVyeSBmcm9tIGRlc2NyaXB0aW9uLiIiIgogICAgbG0gKz0gZiJEZXNjcmlwdGlvbjoge2Rlc2NyaXB0aW9ufVxuXG4iCiAgICBsbSArPSAiU1FMIFF1ZXJ5OlxuIgoKICAgICMgU0VMRUNUIGNsYXVzZQogICAgbG0gKz0gIlNFTEVDVCAiICsgZ2VuKCJzZWxlY3RfY2xhdXNlIiwgc3RvcD0iIEZST00iLCBtYXhfdG9rZW5zPTEwMCkKCiAgICAjIEZST00gY2xhdXNlCiAgICBsbSArPSAiIEZST00gIiArIGdlbigiZnJvbV9jbGF1c2UiLCBzdG9wPSIgV0hFUkUiLCBtYXhfdG9rZW5zPTUwKQoKICAgICMgV0hFUkUgY2xhdXNlIChvcHRpb25hbCkKICAgIGxtICs9ICIgV0hFUkUgIiArIGdlbigid2hlcmVfY2xhdXNlIiwgc3RvcD0iOyIsIG1heF90b2tlbnM9MTAwKSArICI7IgoKICAgIHJldHVybiBsbQoKbG0gPSBtb2RlbHMuQW50aHJvcGljKCJjbGF1ZGUtc29ubmV0LTQtNS0yMDI1MDkyOSIpCmxtID0gZ2VuZXJhdGVfc3FsKGxtLCAiR2V0IGFsbCB1c2VycyB3aG8gc2lnbmVkIHVwIGluIHRoZSBsYXN0IDMwIGRheXMiKQpgYGAKCiMjIyBBUEkgRW5kcG9pbnQKCmBgYHB5dGhvbgpAZ3VpZGFuY2UKZGVmIGdlbmVyYXRlX2FwaV9lbmRwb2ludChsbSwgZGVzY3JpcHRpb24pOgogICAgIiIiR2VuZXJhdGUgUkVTVCBBUEkgZW5kcG9pbnQuIiIiCiAgICBsbSArPSBmIkRlc2NyaXB0aW9uOiB7ZGVzY3JpcHRpb259XG5cbiIKCiAgICAjIEhUVFAgbWV0aG9kCiAgICBsbSArPSAiTWV0aG9kOiAiICsgc2VsZWN0KFsiR0VUIiwgIlBPU1QiLCAiUFVUIiwgIkRFTEVURSJdLCBuYW1lPSJtZXRob2QiKSArICJcbiIKCiAgICAjIFBhdGgKICAgIGxtICs9ICJQYXRoOiAvIiArIGdlbigicGF0aCIsIHJlZ2V4PXIiW2EtejAtOS8tXSsiLCBzdG9wPSJcbiIpICsgIlxuIgoKICAgICMgUmVxdWVzdCBib2R5IChpZiBQT1NUL1BVVCkKICAgIGlmIGxtWyJtZXRob2QiXSBpbiBbIlBPU1QiLCAiUFVUIl06CiAgICAgICAgbG0gKz0gIlxuUmVxdWVzdCBCb2R5OlxuIgogICAgICAgIGxtICs9ICJ7XG4iCiAgICAgICAgbG0gKz0gJyAgImZpZWxkMSI6ICcgKyBnZW4oImZpZWxkMSIsIHJlZ2V4PXInIlthLXpfXSsiJykgKyAiLFxuIgogICAgICAgIGxtICs9ICcgICJmaWVsZDIiOiAnICsgZ2VuKCJmaWVsZDIiLCByZWdleD1yJyJbYS16X10rIicpICsgIlxuIgogICAgICAgIGxtICs9ICJ9XG4iCgogICAgIyBSZXNwb25zZQogICAgbG0gKz0gIlxuUmVzcG9uc2UgKDIwMCBPSyk6XG4iCiAgICBsbSArPSAie1xuIgogICAgbG0gKz0gJyAgInN0YXR1cyI6ICJzdWNjZXNzIixcbicKICAgIGxtICs9ICcgICJkYXRhIjogJyArIGdlbigicmVzcG9uc2VfZGF0YSIsIG1heF90b2tlbnM9MTAwKSArICJcbiIKICAgIGxtICs9ICJ9XG4iCgogICAgcmV0dXJuIGxtCgpsbSA9IG1vZGVscy5BbnRocm9waWMoImNsYXVkZS1zb25uZXQtNC01LTIwMjUwOTI5IikKbG0gPSBnZW5lcmF0ZV9hcGlfZW5kcG9pbnQobG0sICJDcmVhdGUgYSBuZXcgYmxvZyBwb3N0IikKYGBgCgojIyBQcm9kdWN0aW9uIFRpcHMKCiMjIyBFcnJvciBIYW5kbGluZwoKYGBgcHl0aG9uCkBndWlkYW5jZQpkZWYgc2FmZV9leHRyYWN0aW9uKGxtLCB0ZXh0KToKICAgICIiIkV4dHJhY3Qgd2l0aCBmYWxsYmFjayBoYW5kbGluZy4iIiIKICAgIHRyeToKICAgICAgICBsbSArPSBmIlRleHQ6IHt0ZXh0fVxuIgogICAgICAgIGxtICs9ICJOYW1lOiAiICsgZ2VuKCJuYW1lIiwgcmVnZXg9ciJbQS1aYS16IF0rIiwgc3RvcD0iXG4iLCBtYXhfdG9rZW5zPTMwKQogICAgICAgIHJldHVybiBsbQogICAgZXhjZXB0IEV4Y2VwdGlvbiBhcyBlOgogICAgICAgICMgRmFsbGJhY2sgdG8gbGVzcyBzdHJpY3QgZXh0cmFjdGlvbgogICAgICAgIGxtICs9IGYiVGV4dDoge3RleHR9XG4iCiAgICAgICAgbG0gKz0gIk5hbWU6ICIgKyBnZW4oIm5hbWUiLCBzdG9wPSJcbiIsIG1heF90b2tlbnM9MzApCiAgICAgICAgcmV0dXJuIGxtCmBgYAoKIyMjIENhY2hpbmcKCmBgYHB5dGhvbgpmcm9tIGZ1bmN0b29scyBpbXBvcnQgbHJ1X2NhY2hlCgpAbHJ1X2NhY2hlKG1heHNpemU9MTAwKQpkZWYgY2FjaGVkX2dlbmVyYXRpb24odGV4dCk6CiAgICAiIiJDYWNoZSBMTE0gZ2VuZXJhdGlvbnMuIiIiCiAgICBsbSA9IG1vZGVscy5BbnRocm9waWMoImNsYXVkZS1zb25uZXQtNC01LTIwMjUwOTI5IikKICAgIGxtICs9IGYiQW5hbHl6ZToge3RleHR9XG4iCiAgICBsbSArPSAiU2VudGltZW50OiAiICsgc2VsZWN0KFsicG9zaXRpdmUiLCAibmVnYXRpdmUiLCAibmV1dHJhbCJdLCBuYW1lPSJzZW50aW1lbnQiKQogICAgcmV0dXJuIGxtWyJzZW50aW1lbnQiXQoKIyBGaXJzdCBjYWxsOiBoaXRzIExMTQpyZXN1bHQxID0gY2FjaGVkX2dlbmVyYXRpb24oIlRoaXMgaXMgZ3JlYXQhIikKCiMgU2Vjb25kIGNhbGw6IHJldHVybnMgY2FjaGVkIHJlc3VsdApyZXN1bHQyID0gY2FjaGVkX2dlbmVyYXRpb24oIlRoaXMgaXMgZ3JlYXQhIikgICMgSW5zdGFudCEKYGBgCgojIyMgTW9uaXRvcmluZwoKYGBgcHl0aG9uCmltcG9ydCB0aW1lCgpAZ3VpZGFuY2UKZGVmIG1vbml0b3JlZF9nZW5lcmF0aW9uKGxtLCB0ZXh0KToKICAgICIiIlRyYWNrIGdlbmVyYXRpb24gbWV0cmljcy4iIiIKICAgIHN0YXJ0X3RpbWUgPSB0aW1lLnRpbWUoKQoKICAgIGxtICs9IGYiVGV4dDoge3RleHR9XG4iCiAgICBsbSArPSAiQW5hbHlzaXM6ICIgKyBnZW4oImFuYWx5c2lzIiwgbWF4X3Rva2Vucz0xMDApCgogICAgZWxhcHNlZCA9IHRpbWUudGltZSgpIC0gc3RhcnRfdGltZQoKICAgICMgTG9nIG1ldHJpY3MKICAgIHByaW50KGYiR2VuZXJhdGlvbiB0aW1lOiB7ZWxhcHNlZDouMmZ9cyIpCiAgICBwcmludChmIk91dHB1dCBsZW5ndGg6IHtsZW4obG1bJ2FuYWx5c2lzJ10pfSBjaGFycyIpCgogICAgcmV0dXJuIGxtCmBgYAoKIyMjIEJhdGNoIFByb2Nlc3NpbmcKCmBgYHB5dGhvbgpkZWYgYmF0Y2hfcHJvY2Vzcyh0ZXh0cywgYmF0Y2hfc2l6ZT0xMCk6CiAgICAiIiJQcm9jZXNzIHRleHRzIGluIGJhdGNoZXMuIiIiCiAgICBsbSA9IG1vZGVscy5BbnRocm9waWMoImNsYXVkZS1zb25uZXQtNC01LTIwMjUwOTI5IikKICAgIHJlc3VsdHMgPSBbXQoKICAgIGZvciBpIGluIHJhbmdlKDAsIGxlbih0ZXh0cyksIGJhdGNoX3NpemUpOgogICAgICAgIGJhdGNoID0gdGV4dHNbaTppK2JhdGNoX3NpemVdCgogICAgICAgIGZvciB0ZXh0IGluIGJhdGNoOgogICAgICAgICAgICBsbSArPSBmIlRleHQ6IHt0ZXh0fVxuIgogICAgICAgICAgICBsbSArPSAiU2VudGltZW50OiAiICsgc2VsZWN0KAogICAgICAgICAgICAgICAgWyJwb3NpdGl2ZSIsICJuZWdhdGl2ZSIsICJuZXV0cmFsIl0sCiAgICAgICAgICAgICAgICBuYW1lPWYic2VudGltZW50X3tpfSIKICAgICAgICAgICAgKSArICJcblxuIgoKICAgICAgICByZXN1bHRzLmV4dGVuZChbbG1bZiJzZW50aW1lbnRfe2l9Il0gZm9yIGkgaW4gcmFuZ2UobGVuKGJhdGNoKSldKQoKICAgIHJldHVybiByZXN1bHRzCmBgYAoKIyMgUmVzb3VyY2VzCgotICoqR3VpZGFuY2UgTm90ZWJvb2tzKio6IGh0dHBzOi8vZ2l0aHViLmNvbS9ndWlkYW5jZS1haS9ndWlkYW5jZS90cmVlL21haW4vbm90ZWJvb2tzCi0gKipHdWlkYW5jZSBEb2NzKio6IGh0dHBzOi8vZ3VpZGFuY2UucmVhZHRoZWRvY3MuaW8KLSAqKkNvbW11bml0eSBFeGFtcGxlcyoqOiBodHRwczovL2dpdGh1Yi5jb20vZ3VpZGFuY2UtYWkvZ3VpZGFuY2UvZGlzY3Vzc2lvbnMK
+# Production-Ready Examples
+
+Real-world examples of using Guidance for structured generation, agents, and workflows.
+
+## Table of Contents
+- JSON Generation
+- Data Extraction
+- Classification Systems
+- Agent Systems
+- Multi-Step Workflows
+- Code Generation
+- Production Tips
+
+## JSON Generation
+
+### Basic JSON
+
+```python
+from guidance import models, gen, guidance
+
+@guidance
+def generate_user(lm):
+    """Generate valid user JSON."""
+    lm += "{\n"
+    lm += '  "name": ' + gen("name", regex=r'"[A-Za-z ]+"') + ",\n"
+    lm += '  "age": ' + gen("age", regex=r"[0-9]+") + ",\n"
+    lm += '  "email": ' + gen(
+        "email",
+        regex=r'"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"'
+    ) + "\n"
+    lm += "}"
+    return lm
+
+# Use it
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+lm += "Generate a user profile:\n"
+lm = generate_user(lm)
+
+print(lm)
+# Output: Valid JSON guaranteed
+```
+
+### Nested JSON
+
+```python
+@guidance
+def generate_order(lm):
+    """Generate nested order JSON."""
+    lm += "{\n"
+
+    # Customer info
+    lm += '  "customer": {\n'
+    lm += '    "name": ' + gen("customer_name", regex=r'"[A-Za-z ]+"') + ",\n"
+    lm += '    "email": ' + gen(
+        "customer_email",
+        regex=r'"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"'
+    ) + "\n"
+    lm += "  },\n"
+
+    # Order details
+    lm += '  "order": {\n'
+    lm += '    "id": ' + gen("order_id", regex=r'"ORD-[0-9]{6}"') + ",\n"
+    lm += '    "date": ' + gen("order_date", regex=r'"\d{4}-\d{2}-\d{2}"') + ",\n"
+    lm += '    "total": ' + gen("order_total", regex=r"[0-9]+\.[0-9]{2}") + "\n"
+    lm += "  },\n"
+
+    # Status
+    lm += '  "status": ' + gen(
+        "status",
+        regex=r'"(pending|processing|shipped|delivered)"'
+    ) + "\n"
+
+    lm += "}"
+    return lm
+
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+lm = generate_order(lm)
+```
+
+### JSON Array
+
+```python
+@guidance
+def generate_user_list(lm, count=3):
+    """Generate JSON array of users."""
+    lm += "[\n"
+
+    for i in range(count):
+        lm += "  {\n"
+        lm += '    "id": ' + gen(f"id_{i}", regex=r"[0-9]+") + ",\n"
+        lm += '    "name": ' + gen(f"name_{i}", regex=r'"[A-Za-z ]+"') + ",\n"
+        lm += '    "active": ' + gen(f"active_{i}", regex=r"(true|false)") + "\n"
+        lm += "  }"
+        if i < count - 1:
+            lm += ","
+        lm += "\n"
+
+    lm += "]"
+    return lm
+
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+lm = generate_user_list(lm, count=5)
+```
+
+### Dynamic JSON Schema
+
+```python
+import json
+from guidance import models, gen, guidance
+
+@guidance
+def json_from_schema(lm, schema):
+    """Generate JSON matching a schema."""
+    lm += "{\n"
+
+    fields = list(schema["properties"].items())
+    for i, (field_name, field_schema) in enumerate(fields):
+        lm += f'  "{field_name}": '
+
+        # Handle different types
+        if field_schema["type"] == "string":
+            if "pattern" in field_schema:
+                lm += gen(field_name, regex=f'"{field_schema["pattern"]}"')
+            else:
+                lm += gen(field_name, regex=r'"[^"]+"')
+        elif field_schema["type"] == "number":
+            lm += gen(field_name, regex=r"[0-9]+(\.[0-9]+)?")
+        elif field_schema["type"] == "integer":
+            lm += gen(field_name, regex=r"[0-9]+")
+        elif field_schema["type"] == "boolean":
+            lm += gen(field_name, regex=r"(true|false)")
+
+        if i < len(fields) - 1:
+            lm += ","
+        lm += "\n"
+
+    lm += "}"
+    return lm
+
+# Define schema
+schema = {
+    "type": "object",
+    "properties": {
+        "name": {"type": "string"},
+        "age": {"type": "integer"},
+        "score": {"type": "number"},
+        "active": {"type": "boolean"}
+    }
+}
+
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+lm = json_from_schema(lm, schema)
+```
+
+## Data Extraction
+
+### Extract from Text
+
+```python
+from guidance import models, gen, guidance, system, user, assistant
+
+@guidance
+def extract_person_info(lm, text):
+    """Extract structured info from text."""
+    lm += f"Text: {text}\n\n"
+
+    with assistant():
+        lm += "Name: " + gen("name", regex=r"[A-Za-z ]+", stop="\n") + "\n"
+        lm += "Age: " + gen("age", regex=r"[0-9]+", max_tokens=3) + "\n"
+        lm += "Occupation: " + gen("occupation", regex=r"[A-Za-z ]+", stop="\n") + "\n"
+        lm += "Email: " + gen(
+            "email",
+            regex=r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}",
+            stop="\n"
+        ) + "\n"
+
+    return lm
+
+text = "John Smith is a 35-year-old software engineer. Contact: john@example.com"
+
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+
+with system():
+    lm += "You extract structured information from text."
+
+with user():
+    lm = extract_person_info(lm, text)
+
+print(f"Name: {lm['name']}")
+print(f"Age: {lm['age']}")
+print(f"Occupation: {lm['occupation']}")
+print(f"Email: {lm['email']}")
+```
+
+### Multi-Entity Extraction
+
+```python
+@guidance
+def extract_entities(lm, text):
+    """Extract multiple entity types."""
+    lm += f"Analyze: {text}\n\n"
+
+    # Person entities
+    lm += "People:\n"
+    for i in range(3):  # Up to 3 people
+        lm += f"- " + gen(f"person_{i}", regex=r"[A-Za-z ]+", stop="\n") + "\n"
+
+    # Organization entities
+    lm += "\nOrganizations:\n"
+    for i in range(2):  # Up to 2 orgs
+        lm += f"- " + gen(f"org_{i}", regex=r"[A-Za-z0-9 ]+", stop="\n") + "\n"
+
+    # Dates
+    lm += "\nDates:\n"
+    for i in range(2):  # Up to 2 dates
+        lm += f"- " + gen(f"date_{i}", regex=r"\d{4}-\d{2}-\d{2}", stop="\n") + "\n"
+
+    # Locations
+    lm += "\nLocations:\n"
+    for i in range(2):  # Up to 2 locations
+        lm += f"- " + gen(f"location_{i}", regex=r"[A-Za-z ]+", stop="\n") + "\n"
+
+    return lm
+
+text = """
+Tim Cook and Satya Nadella met at Microsoft headquarters in Redmond on 2024-09-15
+to discuss the collaboration between Apple and Microsoft. The meeting continued
+in Cupertino on 2024-09-20.
+"""
+
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+lm = extract_entities(lm, text)
+```
+
+### Batch Extraction
+
+```python
+@guidance
+def batch_extract(lm, texts):
+    """Extract from multiple texts."""
+    lm += "Batch Extraction Results:\n\n"
+
+    for i, text in enumerate(texts):
+        lm += f"=== Item {i+1} ===\n"
+        lm += f"Text: {text}\n"
+        lm += "Name: " + gen(f"name_{i}", regex=r"[A-Za-z ]+", stop="\n") + "\n"
+        lm += "Sentiment: " + gen(
+            f"sentiment_{i}",
+            regex=r"(positive|negative|neutral)",
+            stop="\n"
+        ) + "\n\n"
+
+    return lm
+
+texts = [
+    "Alice is happy with the product",
+    "Bob is disappointed with the service",
+    "Carol has no strong feelings either way"
+]
+
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+lm = batch_extract(lm, texts)
+```
+
+## Classification Systems
+
+### Sentiment Analysis
+
+```python
+from guidance import models, select, gen
+
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+
+text = "This product is absolutely amazing! Best purchase ever."
+
+lm += f"Text: {text}\n\n"
+lm += "Sentiment: " + select(
+    ["positive", "negative", "neutral"],
+    name="sentiment"
+)
+lm += "\nConfidence: " + gen("confidence", regex=r"[0-9]{1,3}") + "%\n"
+lm += "Reasoning: " + gen("reasoning", stop="\n", max_tokens=50)
+
+print(f"Sentiment: {lm['sentiment']}")
+print(f"Confidence: {lm['confidence']}%")
+print(f"Reasoning: {lm['reasoning']}")
+```
+
+### Multi-Label Classification
+
+```python
+@guidance
+def classify_article(lm, text):
+    """Classify article with multiple labels."""
+    lm += f"Article: {text}\n\n"
+
+    # Primary category
+    lm += "Primary Category: " + select(
+        ["Technology", "Business", "Science", "Politics", "Entertainment"],
+        name="primary_category"
+    ) + "\n"
+
+    # Secondary categories (up to 3)
+    lm += "\nSecondary Categories:\n"
+    categories = ["Technology", "Business", "Science", "Politics", "Entertainment"]
+    for i in range(3):
+        lm += f"{i+1}. " + select(categories, name=f"secondary_{i}") + "\n"
+
+    # Tags
+    lm += "\nTags: " + gen("tags", stop="\n", max_tokens=50) + "\n"
+
+    # Target audience
+    lm += "Target Audience: " + select(
+        ["General", "Expert", "Beginner"],
+        name="audience"
+    )
+
+    return lm
+
+article = """
+Apple announced new AI features in iOS 18, leveraging machine learning to improve
+battery life and performance. The company's stock rose 5% following the announcement.
+"""
+
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+lm = classify_article(lm, article)
+```
+
+### Intent Classification
+
+```python
+@guidance
+def classify_intent(lm, message):
+    """Classify user intent."""
+    lm += f"User Message: {message}\n\n"
+
+    # Intent
+    lm += "Intent: " + select(
+        ["question", "complaint", "request", "feedback", "other"],
+        name="intent"
+    ) + "\n"
+
+    # Urgency
+    lm += "Urgency: " + select(
+        ["low", "medium", "high", "critical"],
+        name="urgency"
+    ) + "\n"
+
+    # Department
+    lm += "Route To: " + select(
+        ["support", "sales", "billing", "technical"],
+        name="department"
+    ) + "\n"
+
+    # Sentiment
+    lm += "Sentiment: " + select(
+        ["positive", "neutral", "negative"],
+        name="sentiment"
+    )
+
+    return lm
+
+message = "My account was charged twice for the same order. Need help ASAP!"
+
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+lm = classify_intent(lm, message)
+
+print(f"Intent: {lm['intent']}")
+print(f"Urgency: {lm['urgency']}")
+print(f"Department: {lm['department']}")
+```
+
+## Agent Systems
+
+### ReAct Agent
+
+```python
+from guidance import models, gen, select, guidance
+
+@guidance(stateless=False)
+def react_agent(lm, question, tools, max_rounds=5):
+    """ReAct agent with tool use."""
+    lm += f"Question: {question}\n\n"
+
+    for round in range(max_rounds):
+        # Thought
+        lm += f"Thought {round+1}: " + gen("thought", stop="\n", max_tokens=100) + "\n"
+
+        # Action selection
+        lm += "Action: " + select(
+            list(tools.keys()) + ["answer"],
+            name="action"
+        )
+
+        if lm["action"] == "answer":
+            lm += "\n\nFinal Answer: " + gen("answer", max_tokens=200)
+            break
+
+        # Action input
+        lm += "\nAction Input: " + gen("action_input", stop="\n", max_tokens=100) + "\n"
+
+        # Execute tool
+        if lm["action"] in tools:
+            try:
+                result = tools[lm["action"]](lm["action_input"])
+                lm += f"Observation: {result}\n\n"
+            except Exception as e:
+                lm += f"Observation: Error - {str(e)}\n\n"
+
+    return lm
+
+# Define tools
+tools = {
+    "calculator": lambda expr: eval(expr),
+    "search": lambda query: f"Search results for '{query}': [Mock results]",
+    "weather": lambda city: f"Weather in {city}: Sunny, 72°F"
+}
+
+# Use agent
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+lm = react_agent(lm, "What is (25 * 4) + 10?", tools)
+
+print(lm["answer"])
+```
+
+### Multi-Agent System
+
+```python
+@guidance
+def coordinator_agent(lm, task):
+    """Coordinator that delegates to specialists."""
+    lm += f"Task: {task}\n\n"
+
+    # Determine which specialist to use
+    lm += "Specialist: " + select(
+        ["researcher", "writer", "coder", "analyst"],
+        name="specialist"
+    ) + "\n"
+
+    lm += "Reasoning: " + gen("reasoning", stop="\n", max_tokens=100) + "\n"
+
+    return lm
+
+@guidance
+def researcher_agent(lm, query):
+    """Research specialist."""
+    lm += f"Research Query: {query}\n\n"
+    lm += "Findings:\n"
+    for i in range(3):
+        lm += f"{i+1}. " + gen(f"finding_{i}", stop="\n", max_tokens=100) + "\n"
+    return lm
+
+@guidance
+def writer_agent(lm, topic):
+    """Writing specialist."""
+    lm += f"Topic: {topic}\n\n"
+    lm += "Title: " + gen("title", stop="\n", max_tokens=50) + "\n"
+    lm += "Content:\n" + gen("content", max_tokens=500)
+    return lm
+
+# Coordination workflow
+task = "Write an article about AI safety"
+
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+lm = coordinator_agent(lm, task)
+
+specialist = lm["specialist"]
+if specialist == "researcher":
+    lm = researcher_agent(lm, task)
+elif specialist == "writer":
+    lm = writer_agent(lm, task)
+```
+
+### Tool Use with Validation
+
+```python
+@guidance(stateless=False)
+def validated_tool_agent(lm, question):
+    """Agent with validated tool calls."""
+    tools = {
+        "add": lambda a, b: float(a) + float(b),
+        "multiply": lambda a, b: float(a) * float(b),
+        "divide": lambda a, b: float(a) / float(b) if float(b) != 0 else "Error: Division by zero"
+    }
+
+    lm += f"Question: {question}\n\n"
+
+    for i in range(5):
+        # Select tool
+        lm += "Tool: " + select(list(tools.keys()) + ["done"], name="tool")
+
+        if lm["tool"] == "done":
+            lm += "\nAnswer: " + gen("answer", max_tokens=100)
+            break
+
+        # Get validated numeric arguments
+        lm += "\nArg1: " + gen("arg1", regex=r"-?[0-9]+(\.[0-9]+)?") + "\n"
+        lm += "Arg2: " + gen("arg2", regex=r"-?[0-9]+(\.[0-9]+)?") + "\n"
+
+        # Execute
+        result = tools[lm["tool"]](lm["arg1"], lm["arg2"])
+        lm += f"Result: {result}\n\n"
+
+    return lm
+
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+lm = validated_tool_agent(lm, "What is (10 + 5) * 3?")
+```
+
+## Multi-Step Workflows
+
+### Chain of Thought
+
+```python
+@guidance
+def chain_of_thought(lm, question):
+    """Multi-step reasoning with CoT."""
+    lm += f"Question: {question}\n\n"
+
+    # Generate reasoning steps
+    lm += "Let me think step by step:\n\n"
+    for i in range(4):
+        lm += f"Step {i+1}: " + gen(f"step_{i+1}", stop="\n", max_tokens=100) + "\n"
+
+    # Final answer
+    lm += "\nTherefore, the answer is: " + gen("answer", stop="\n", max_tokens=50)
+
+    return lm
+
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+lm = chain_of_thought(lm, "If a train travels 60 mph for 2.5 hours, how far does it go?")
+
+print(lm["answer"])
+```
+
+### Self-Consistency
+
+```python
+@guidance
+def self_consistency(lm, question, num_samples=3):
+    """Generate multiple reasoning paths and aggregate."""
+    lm += f"Question: {question}\n\n"
+
+    answers = []
+    for i in range(num_samples):
+        lm += f"=== Attempt {i+1} ===\n"
+        lm += "Reasoning: " + gen(f"reasoning_{i}", stop="\n", max_tokens=100) + "\n"
+        lm += "Answer: " + gen(f"answer_{i}", stop="\n", max_tokens=50) + "\n\n"
+        answers.append(lm[f"answer_{i}"])
+
+    # Aggregate (simple majority vote)
+    from collections import Counter
+    most_common = Counter(answers).most_common(1)[0][0]
+
+    lm += f"Final Answer (by majority): {most_common}\n"
+    return lm
+
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+lm = self_consistency(lm, "What is 15% of 200?")
+```
+
+### Planning and Execution
+
+```python
+@guidance
+def plan_and_execute(lm, goal):
+    """Plan tasks then execute them."""
+    lm += f"Goal: {goal}\n\n"
+
+    # Planning phase
+    lm += "Plan:\n"
+    num_steps = 4
+    for i in range(num_steps):
+        lm += f"{i+1}. " + gen(f"plan_step_{i}", stop="\n", max_tokens=100) + "\n"
+
+    # Execution phase
+    lm += "\nExecution:\n\n"
+    for i in range(num_steps):
+        lm += f"Step {i+1}: {lm[f'plan_step_{i}']}\n"
+        lm += "Status: " + select(["completed", "in-progress", "blocked"], name=f"status_{i}") + "\n"
+        lm += "Result: " + gen(f"result_{i}", stop="\n", max_tokens=150) + "\n\n"
+
+    # Summary
+    lm += "Summary: " + gen("summary", max_tokens=200)
+
+    return lm
+
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+lm = plan_and_execute(lm, "Build a REST API for a blog platform")
+```
+
+## Code Generation
+
+### Python Function
+
+```python
+@guidance
+def generate_python_function(lm, description):
+    """Generate Python function from description."""
+    lm += f"Description: {description}\n\n"
+
+    # Function signature
+    lm += "def " + gen("func_name", regex=r"[a-z_][a-z0-9_]*") + "("
+    lm += gen("params", regex=r"[a-z_][a-z0-9_]*(, [a-z_][a-z0-9_]*)*") + "):\n"
+
+    # Docstring
+    lm += '    """' + gen("docstring", stop='"""', max_tokens=100) + '"""\n'
+
+    # Function body
+    lm += "    " + gen("body", stop="\n", max_tokens=200) + "\n"
+
+    return lm
+
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+lm = generate_python_function(lm, "Check if a number is prime")
+
+print(lm)
+```
+
+### SQL Query
+
+```python
+@guidance
+def generate_sql(lm, description):
+    """Generate SQL query from description."""
+    lm += f"Description: {description}\n\n"
+    lm += "SQL Query:\n"
+
+    # SELECT clause
+    lm += "SELECT " + gen("select_clause", stop=" FROM", max_tokens=100)
+
+    # FROM clause
+    lm += " FROM " + gen("from_clause", stop=" WHERE", max_tokens=50)
+
+    # WHERE clause (optional)
+    lm += " WHERE " + gen("where_clause", stop=";", max_tokens=100) + ";"
+
+    return lm
+
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+lm = generate_sql(lm, "Get all users who signed up in the last 30 days")
+```
+
+### API Endpoint
+
+```python
+@guidance
+def generate_api_endpoint(lm, description):
+    """Generate REST API endpoint."""
+    lm += f"Description: {description}\n\n"
+
+    # HTTP method
+    lm += "Method: " + select(["GET", "POST", "PUT", "DELETE"], name="method") + "\n"
+
+    # Path
+    lm += "Path: /" + gen("path", regex=r"[a-z0-9/-]+", stop="\n") + "\n"
+
+    # Request body (if POST/PUT)
+    if lm["method"] in ["POST", "PUT"]:
+        lm += "\nRequest Body:\n"
+        lm += "{\n"
+        lm += '  "field1": ' + gen("field1", regex=r'"[a-z_]+"') + ",\n"
+        lm += '  "field2": ' + gen("field2", regex=r'"[a-z_]+"') + "\n"
+        lm += "}\n"
+
+    # Response
+    lm += "\nResponse (200 OK):\n"
+    lm += "{\n"
+    lm += '  "status": "success",\n'
+    lm += '  "data": ' + gen("response_data", max_tokens=100) + "\n"
+    lm += "}\n"
+
+    return lm
+
+lm = models.Anthropic("claude-sonnet-4-5-20250929")
+lm = generate_api_endpoint(lm, "Create a new blog post")
+```
+
+## Production Tips
+
+### Error Handling
+
+```python
+@guidance
+def safe_extraction(lm, text):
+    """Extract with fallback handling."""
+    try:
+        lm += f"Text: {text}\n"
+        lm += "Name: " + gen("name", regex=r"[A-Za-z ]+", stop="\n", max_tokens=30)
+        return lm
+    except Exception as e:
+        # Fallback to less strict extraction
+        lm += f"Text: {text}\n"
+        lm += "Name: " + gen("name", stop="\n", max_tokens=30)
+        return lm
+```
+
+### Caching
+
+```python
+from functools import lru_cache
+
+@lru_cache(maxsize=100)
+def cached_generation(text):
+    """Cache LLM generations."""
+    lm = models.Anthropic("claude-sonnet-4-5-20250929")
+    lm += f"Analyze: {text}\n"
+    lm += "Sentiment: " + select(["positive", "negative", "neutral"], name="sentiment")
+    return lm["sentiment"]
+
+# First call: hits LLM
+result1 = cached_generation("This is great!")
+
+# Second call: returns cached result
+result2 = cached_generation("This is great!")  # Instant!
+```
+
+### Monitoring
+
+```python
+import time
+
+@guidance
+def monitored_generation(lm, text):
+    """Track generation metrics."""
+    start_time = time.time()
+
+    lm += f"Text: {text}\n"
+    lm += "Analysis: " + gen("analysis", max_tokens=100)
+
+    elapsed = time.time() - start_time
+
+    # Log metrics
+    print(f"Generation time: {elapsed:.2f}s")
+    print(f"Output length: {len(lm['analysis'])} chars")
+
+    return lm
+```
+
+### Batch Processing
+
+```python
+def batch_process(texts, batch_size=10):
+    """Process texts in batches."""
+    lm = models.Anthropic("claude-sonnet-4-5-20250929")
+    results = []
+
+    for i in range(0, len(texts), batch_size):
+        batch = texts[i:i+batch_size]
+
+        for text in batch:
+            lm += f"Text: {text}\n"
+            lm += "Sentiment: " + select(
+                ["positive", "negative", "neutral"],
+                name=f"sentiment_{i}"
+            ) + "\n\n"
+
+        results.extend([lm[f"sentiment_{i}"] for i in range(len(batch))])
+
+    return results
+```
+
+## Resources
+
+- **Guidance Notebooks**: https://github.com/guidance-ai/guidance/tree/main/notebooks
+- **Guidance Docs**: https://guidance.readthedocs.io
+- **Community Examples**: https://github.com/guidance-ai/guidance/discussions

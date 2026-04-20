@@ -1,1 +1,191 @@
-IyBTb3VyY2UgQmlibGlvZ3JhcGh5CgpUaGlzIGRvY3VtZW50IGxpc3RzIGFsbCBhdXRob3JpdGF0aXZlIHNvdXJjZXMgdXNlZCB0byBidWlsZCB0aGlzIHNraWxsLCBvcmdhbml6ZWQgYnkgdG9waWMuCgotLS0KCiMjIE9yaWdpbiAmIEF0dHJpYnV0aW9uCgpUaGUgd3JpdGluZyBwaGlsb3NvcGh5LCBjaXRhdGlvbiB2ZXJpZmljYXRpb24gd29ya2Zsb3csIGFuZCBjb25mZXJlbmNlIHJlZmVyZW5jZSBtYXRlcmlhbHMgaW4gdGhpcyBza2lsbCB3ZXJlIG9yaWdpbmFsbHkgY29tcGlsZWQgYnkgKipbT3JjaGVzdHJhIFJlc2VhcmNoXShodHRwczovL2dpdGh1Yi5jb20vb3JjaGVzdHJhLXJlc2VhcmNoKSoqIGFzIHRoZSBgbWwtcGFwZXItd3JpdGluZ2Agc2tpbGwgKEphbnVhcnkgMjAyNiksIGRyYXdpbmcgb24gTmVlbCBOYW5kYSdzIGJsb2cgcG9zdCBhbmQgb3RoZXIgcmVzZWFyY2hlciBndWlkZXMgbGlzdGVkIGJlbG93LiBUaGUgc2tpbGwgd2FzIGludGVncmF0ZWQgaW50byBoZXJtZXMtYWdlbnQgYnkgdGVrbml1bSAoSmFudWFyeSAyMDI2KSwgdGhlbiBleHBhbmRlZCBpbnRvIHRoZSBjdXJyZW50IGByZXNlYXJjaC1wYXBlci13cml0aW5nYCBwaXBlbGluZSBieSBTSEwwTVMgKEFwcmlsIDIwMjYsIFBSICM0NjU0KSwgd2hpY2ggYWRkZWQgZXhwZXJpbWVudCBkZXNpZ24sIGV4ZWN1dGlvbiBtb25pdG9yaW5nLCBpdGVyYXRpdmUgcmVmaW5lbWVudCwgYW5kIHN1Ym1pc3Npb24gcGhhc2VzIHdoaWxlIHByZXNlcnZpbmcgdGhlIG9yaWdpbmFsIHdyaXRpbmcgcGhpbG9zb3BoeSBhbmQgcmVmZXJlbmNlIGZpbGVzLgoKLS0tCgojIyBXcml0aW5nIFBoaWxvc29waHkgJiBHdWlkZXMKCiMjIyBQcmltYXJ5IFNvdXJjZXMgKE11c3QtUmVhZCkKCnwgU291cmNlIHwgQXV0aG9yIHwgVVJMIHwgS2V5IENvbnRyaWJ1dGlvbiB8CnwtLS0tLS0tLXwtLS0tLS0tLXwtLS0tLXwtLS0tLS0tLS0tLS0tLS0tLS18CnwgKipIaWdobHkgT3BpbmlvbmF0ZWQgQWR2aWNlIG9uIEhvdyB0byBXcml0ZSBNTCBQYXBlcnMqKiB8IE5lZWwgTmFuZGEgfCBbQWxpZ25tZW50IEZvcnVtXShodHRwczovL3d3dy5hbGlnbm1lbnRmb3J1bS5vcmcvcG9zdHMvZUpHcHRQYmJGUFpHTHBqc3AvaGlnaGx5LW9waW5pb25hdGVkLWFkdmljZS1vbi1ob3ctdG8td3JpdGUtbWwtcGFwZXJzKSB8IE5hcnJhdGl2ZSBmcmFtZXdvcmssICJXaGF0L1doeS9TbyBXaGF0IiwgdGltZSBhbGxvY2F0aW9uIHwKfCAqKkhvdyB0byBXcml0ZSBNTCBQYXBlcnMqKiB8IFNlYmFzdGlhbiBGYXJxdWhhciAoRGVlcE1pbmQpIHwgW0Jsb2ddKGh0dHBzOi8vc2ViYXN0aWFuZmFycXVoYXIuY29tL29uLXJlc2VhcmNoLzIwMjQvMTEvMDQvaG93X3RvX3dyaXRlX21sX3BhcGVycy8pIHwgNS1zZW50ZW5jZSBhYnN0cmFjdCBmb3JtdWxhLCBzdHJ1Y3R1cmUgdGVtcGxhdGVzIHwKfCAqKkEgU3Vydml2YWwgR3VpZGUgdG8gYSBQaEQqKiB8IEFuZHJlaiBLYXJwYXRoeSB8IFtCbG9nXShodHRwOi8va2FycGF0aHkuZ2l0aHViLmlvLzIwMTYvMDkvMDcvcGhkLykgfCBQYXBlciBzdHJ1Y3R1cmUgcmVjaXBlLCBjb250cmlidXRpb24gZnJhbWluZyB8CnwgKipIZXVyaXN0aWNzIGZvciBTY2llbnRpZmljIFdyaXRpbmcqKiB8IFphY2hhcnkgTGlwdG9uIChDTVUpIHwgW0Jsb2ddKGh0dHBzOi8vd3d3LmFwcHJveGltYXRlbHljb3JyZWN0LmNvbS8yMDE4LzAxLzI5L2hldXJpc3RpY3MtdGVjaG5pY2FsLXNjaWVudGlmaWMtd3JpdGluZy1tYWNoaW5lLWxlYXJuaW5nLXBlcnNwZWN0aXZlLykgfCBXb3JkIGNob2ljZSwgc2VjdGlvbiBiYWxhbmNlLCBpbnRlbnNpZmllciB3YXJuaW5ncyB8CnwgKipBZHZpY2UgZm9yIEF1dGhvcnMqKiB8IEphY29iIFN0ZWluaGFyZHQgKFVDIEJlcmtlbGV5KSB8IFtCbG9nXShodHRwczovL2pzdGVpbmhhcmR0LnN0YXQuYmVya2VsZXkuZWR1L2Jsb2cvYWR2aWNlLWZvci1hdXRob3JzKSB8IFByZWNpc2lvbiBvdmVyIGJyZXZpdHksIGNvbnNpc3RlbnQgdGVybWlub2xvZ3kgfAp8ICoqRWFzeSBQYXBlciBXcml0aW5nIFRpcHMqKiB8IEV0aGFuIFBlcmV6IChBbnRocm9waWMpIHwgW0Jsb2ddKGh0dHBzOi8vZXRoYW5wZXJlei5uZXQvZWFzeS1wYXBlci13cml0aW5nLXRpcHMvKSB8IE1pY3JvLWxldmVsIHRpcHMsIGFwb3N0cm9waGUgdW5mb2xkaW5nLCBjbGFyaXR5IHRyaWNrcyB8CgojIyMgRm91bmRhdGlvbmFsIFNjaWVudGlmaWMgV3JpdGluZwoKfCBTb3VyY2UgfCBBdXRob3IgfCBVUkwgfCBLZXkgQ29udHJpYnV0aW9uIHwKfC0tLS0tLS0tfC0tLS0tLS0tfC0tLS0tfC0tLS0tLS0tLS0tLS0tLS0tLXwKfCAqKlRoZSBTY2llbmNlIG9mIFNjaWVudGlmaWMgV3JpdGluZyoqIHwgR29wZW4gJiBTd2FuIHwgW1BERl0oaHR0cHM6Ly9jc2V3ZWIudWNzZC5lZHUvfnN3YW5zb24vcGFwZXJzL3NjaWVuY2Utb2Ytd3JpdGluZy5wZGYpIHwgVG9waWMvc3RyZXNzIHBvc2l0aW9ucywgb2xkLWJlZm9yZS1uZXcsIDcgcHJpbmNpcGxlcyB8CnwgKipTdW1tYXJ5IG9mIFNjaWVuY2Ugb2YgU2NpZW50aWZpYyBXcml0aW5nKiogfCBMYXdyZW5jZSBDcm93bCB8IFtTdW1tYXJ5XShodHRwczovL3d3dy5jcm93bC5vcmcvTGF3cmVuY2Uvd3JpdGluZy9Hb3BlblN3YW45MC5odG1sKSB8IENvbmRlbnNlZCB2ZXJzaW9uIG9mIEdvcGVuICYgU3dhbiB8CgojIyMgQWRkaXRpb25hbCBSZXNvdXJjZXMKCnwgU291cmNlIHwgVVJMIHwgS2V5IENvbnRyaWJ1dGlvbiB8CnwtLS0tLS0tLXwtLS0tLXwtLS0tLS0tLS0tLS0tLS0tLS18CnwgSG93IFRvIFdyaXRlIEEgUmVzZWFyY2ggUGFwZXIgSW4gTUwgfCBbQmxvZ10oaHR0cHM6Ly9ncmlnb3Jpc2c5Z3IuZ2l0aHViLmlvL21hY2hpbmUlMjBsZWFybmluZy9yZXNlYXJjaCUyMHBhcGVyL2hvdy10by13cml0ZS1hLXJlc2VhcmNoLXBhcGVyLWluLW1hY2hpbmUtbGVhcm5pbmcvKSB8IFByYWN0aWNhbCB3YWxrdGhyb3VnaCwgTGFUZVggdGlwcyB8CnwgQSBSZWNpcGUgZm9yIFRyYWluaW5nIE5ldXJhbCBOZXR3b3JrcyB8IFtLYXJwYXRoeSBCbG9nXShodHRwOi8va2FycGF0aHkuZ2l0aHViLmlvLzIwMTkvMDQvMjUvcmVjaXBlLykgfCBEZWJ1Z2dpbmcgbWV0aG9kb2xvZ3kgdGhhdCB0cmFuc2xhdGVzIHRvIHBhcGVyIHN0cnVjdHVyZSB8CnwgSUNNTCBQYXBlciBXcml0aW5nIEJlc3QgUHJhY3RpY2VzIHwgW0lDTUxdKGh0dHBzOi8vaWNtbC5jYy9Db25mZXJlbmNlcy8yMDIyL0Jlc3RQcmFjdGljZXMpIHwgT2ZmaWNpYWwgdmVudWUgZ3VpZGFuY2UgfAp8IEJpbGwgRnJlZW1hbidzIFdyaXRpbmcgU2xpZGVzIHwgW01JVF0oaHR0cHM6Ly9iaWxsZi5taXQuZWR1L3NpdGVzL2RlZmF1bHQvZmlsZXMvZG9jdW1lbnRzL2N2cHJQYXBlcnMucGRmKSB8IFZpc3VhbCBndWlkZSB0byBwYXBlciBzdHJ1Y3R1cmUgfAoKLS0tCgojIyBPZmZpY2lhbCBDb25mZXJlbmNlIEd1aWRlbGluZXMKCiMjIyBOZXVySVBTCgp8IERvY3VtZW50IHwgVVJMIHwgUHVycG9zZSB8CnwtLS0tLS0tLS0tfC0tLS0tfC0tLS0tLS0tLXwKfCBQYXBlciBDaGVja2xpc3QgR3VpZGVsaW5lcyB8IFtOZXVySVBTXShodHRwczovL25ldXJpcHMuY2MvcHVibGljL2d1aWRlcy9QYXBlckNoZWNrbGlzdCkgfCAxNi1pdGVtIG1hbmRhdG9yeSBjaGVja2xpc3QgfAp8IFJldmlld2VyIEd1aWRlbGluZXMgMjAyNSB8IFtOZXVySVBTXShodHRwczovL25ldXJpcHMuY2MvQ29uZmVyZW5jZXMvMjAyNS9SZXZpZXdlckd1aWRlbGluZXMpIHwgRXZhbHVhdGlvbiBjcml0ZXJpYSwgc2NvcmluZyB8CnwgU3R5bGUgRmlsZXMgfCBbTmV1cklQU10oaHR0cHM6Ly9uZXVyaXBzLmNjL0NvbmZlcmVuY2VzLzIwMjUvUGFwZXJJbmZvcm1hdGlvbi9TdHlsZUZpbGVzKSB8IExhVGVYIHRlbXBsYXRlcyB8CgojIyMgSUNNTAoKfCBEb2N1bWVudCB8IFVSTCB8IFB1cnBvc2UgfAp8LS0tLS0tLS0tLXwtLS0tLXwtLS0tLS0tLS18CnwgUGFwZXIgR3VpZGVsaW5lcyB8IFtJQ01MXShodHRwczovL2ljbWwuY2MvQ29uZmVyZW5jZXMvMjAyNC9QYXBlckd1aWRlbGluZXMpIHwgU3VibWlzc2lvbiByZXF1aXJlbWVudHMgfAp8IFJldmlld2VyIEluc3RydWN0aW9ucyAyMDI1IHwgW0lDTUxdKGh0dHBzOi8vaWNtbC5jYy9Db25mZXJlbmNlcy8yMDI1L1Jldmlld2VySW5zdHJ1Y3Rpb25zKSB8IFJldmlldyBmb3JtLCBldmFsdWF0aW9uIHwKfCBTdHlsZSAmIEF1dGhvciBJbnN0cnVjdGlvbnMgfCBbSUNNTF0oaHR0cHM6Ly9pY21sLmNjL0NvbmZlcmVuY2VzLzIwMjIvU3R5bGVBdXRob3JJbnN0cnVjdGlvbnMpIHwgRm9ybWF0dGluZyBzcGVjaWZpY2F0aW9ucyB8CgojIyMgSUNMUgoKfCBEb2N1bWVudCB8IFVSTCB8IFB1cnBvc2UgfAp8LS0tLS0tLS0tLXwtLS0tLXwtLS0tLS0tLS18CnwgQXV0aG9yIEd1aWRlIDIwMjYgfCBbSUNMUl0oaHR0cHM6Ly9pY2xyLmNjL0NvbmZlcmVuY2VzLzIwMjYvQXV0aG9yR3VpZGUpIHwgU3VibWlzc2lvbiByZXF1aXJlbWVudHMsIExMTSBkaXNjbG9zdXJlIHwKfCBSZXZpZXdlciBHdWlkZSAyMDI1IHwgW0lDTFJdKGh0dHBzOi8vaWNsci5jYy9Db25mZXJlbmNlcy8yMDI1L1Jldmlld2VyR3VpZGUpIHwgUmV2aWV3IHByb2Nlc3MsIGV2YWx1YXRpb24gfAoKIyMjIEFDTC9FTU5MUAoKfCBEb2N1bWVudCB8IFVSTCB8IFB1cnBvc2UgfAp8LS0tLS0tLS0tLXwtLS0tLXwtLS0tLS0tLS18CnwgQUNMIFN0eWxlIEZpbGVzIHwgW0dpdEh1Yl0oaHR0cHM6Ly9naXRodWIuY29tL2FjbC1vcmcvYWNsLXN0eWxlLWZpbGVzKSB8IExhVGVYIHRlbXBsYXRlcyB8CnwgQUNMIFJvbGxpbmcgUmV2aWV3IHwgW0FSUl0oaHR0cHM6Ly9hY2xyb2xsaW5ncmV2aWV3Lm9yZy8pIHwgU3VibWlzc2lvbiBwcm9jZXNzIHwKCiMjIyBBQUFJCgp8IERvY3VtZW50IHwgVVJMIHwgUHVycG9zZSB8CnwtLS0tLS0tLS0tfC0tLS0tfC0tLS0tLS0tLXwKfCBBdXRob3IgS2l0IDIwMjYgfCBbQUFBSV0oaHR0cHM6Ly9hYWFpLm9yZy9hdXRob3JraXQyNi8pIHwgVGVtcGxhdGVzIGFuZCBndWlkZWxpbmVzIHwKCiMjIyBDT0xNCgp8IERvY3VtZW50IHwgVVJMIHwgUHVycG9zZSB8CnwtLS0tLS0tLS0tfC0tLS0tfC0tLS0tLS0tLXwKfCBUZW1wbGF0ZSB8IFtHaXRIdWJdKGh0dHBzOi8vZ2l0aHViLmNvbS9DT0xNLW9yZy9UZW1wbGF0ZSkgfCBMYVRlWCB0ZW1wbGF0ZXMgfAoKLS0tCgojIyBDaXRhdGlvbiBBUElzICYgVG9vbHMKCiMjIyBBUElzCgp8IEFQSSB8IERvY3VtZW50YXRpb24gfCBCZXN0IEZvciB8CnwtLS0tLXwtLS0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLXwKfCAqKlNlbWFudGljIFNjaG9sYXIqKiB8IFtEb2NzXShodHRwczovL2FwaS5zZW1hbnRpY3NjaG9sYXIub3JnL2FwaS1kb2NzLykgfCBNTC9BSSBwYXBlcnMsIGNpdGF0aW9uIGdyYXBocyB8CnwgKipDcm9zc1JlZioqIHwgW0RvY3NdKGh0dHBzOi8vd3d3LmNyb3NzcmVmLm9yZy9kb2N1bWVudGF0aW9uL3JldHJpZXZlLW1ldGFkYXRhL3Jlc3QtYXBpLykgfCBET0kgbG9va3VwLCBCaWJUZVggcmV0cmlldmFsIHwKfCAqKmFyWGl2KiogfCBbRG9jc10oaHR0cHM6Ly9pbmZvLmFyeGl2Lm9yZy9oZWxwL2FwaS9iYXNpY3MuaHRtbCkgfCBQcmVwcmludHMsIFBERiBhY2Nlc3MgfAp8ICoqT3BlbkFsZXgqKiB8IFtEb2NzXShodHRwczovL2RvY3Mub3BlbmFsZXgub3JnLykgfCBPcGVuIGFsdGVybmF0aXZlLCBidWxrIGFjY2VzcyB8CgojIyMgUHl0aG9uIExpYnJhcmllcwoKfCBMaWJyYXJ5IHwgSW5zdGFsbCB8IFB1cnBvc2UgfAp8LS0tLS0tLS0tfC0tLS0tLS0tLXwtLS0tLS0tLS18CnwgYHNlbWFudGljc2Nob2xhcmAgfCBgcGlwIGluc3RhbGwgc2VtYW50aWNzY2hvbGFyYCB8IFNlbWFudGljIFNjaG9sYXIgd3JhcHBlciB8CnwgYGFyeGl2YCB8IGBwaXAgaW5zdGFsbCBhcnhpdmAgfCBhclhpdiBzZWFyY2ggYW5kIGRvd25sb2FkIHwKfCBgaGFiYW5lcm9gIHwgYHBpcCBpbnN0YWxsIGhhYmFuZXJvYCB8IENyb3NzUmVmIGNsaWVudCB8CgojIyMgQ2l0YXRpb24gVmVyaWZpY2F0aW9uCgp8IFRvb2wgfCBVUkwgfCBQdXJwb3NlIHwKfC0tLS0tLXwtLS0tLXwtLS0tLS0tLS18CnwgQ2l0ZWx5IHwgW2NpdGVseS5haV0oaHR0cHM6Ly9jaXRlbHkuYWkvY2l0YXRpb24tY2hlY2tlcikgfCBCYXRjaCB2ZXJpZmljYXRpb24gfAp8IFJlY2l0ZVdvcmtzIHwgW3JlY2l0ZXdvcmtzLmNvbV0oaHR0cHM6Ly9yZWNpdGV3b3Jrcy5jb20vKSB8IEluLXRleHQgY2l0YXRpb24gY2hlY2tpbmcgfAoKLS0tCgojIyBWaXN1YWxpemF0aW9uICYgRm9ybWF0dGluZwoKIyMjIEZpZ3VyZSBDcmVhdGlvbgoKfCBUb29sIHwgVVJMIHwgUHVycG9zZSB8CnwtLS0tLS18LS0tLS18LS0tLS0tLS0tfAp8IFBsb3ROZXVyYWxOZXQgfCBbR2l0SHViXShodHRwczovL2dpdGh1Yi5jb20vSGFyaXNJcWJhbDg4L1Bsb3ROZXVyYWxOZXQpIHwgVGlrWiBuZXVyYWwgbmV0d29yayBkaWFncmFtcyB8CnwgU2NpZW5jZVBsb3RzIHwgW0dpdEh1Yl0oaHR0cHM6Ly9naXRodWIuY29tL2dhcnJldHRqNDAzL1NjaWVuY2VQbG90cykgfCBQdWJsaWNhdGlvbi1yZWFkeSBtYXRwbG90bGliIHwKfCBPa2FiZS1JdG8gUGFsZXR0ZSB8IFtSZWZlcmVuY2VdKGh0dHBzOi8vamZseS51bmkta29lbG4uZGUvY29sb3IvKSB8IENvbG9yYmxpbmQtc2FmZSBjb2xvcnMgfAoKIyMjIExhVGVYIFJlc291cmNlcwoKfCBSZXNvdXJjZSB8IFVSTCB8IFB1cnBvc2UgfAp8LS0tLS0tLS0tLXwtLS0tLXwtLS0tLS0tLS18CnwgT3ZlcmxlYWYgVGVtcGxhdGVzIHwgW092ZXJsZWFmXShodHRwczovL3d3dy5vdmVybGVhZi5jb20vbGF0ZXgvdGVtcGxhdGVzKSB8IE9ubGluZSBMYVRlWCBlZGl0b3IgfAp8IEJpYkxhVGVYIEd1aWRlIHwgW0NUQU5dKGh0dHBzOi8vY3Rhbi5vcmcvcGtnL2JpYmxhdGV4KSB8IE1vZGVybiBjaXRhdGlvbiBtYW5hZ2VtZW50IHwKCi0tLQoKIyMgUmVzZWFyY2ggb24gQUkgV3JpdGluZyAmIEhhbGx1Y2luYXRpb24KCnwgU291cmNlIHwgVVJMIHwgS2V5IEZpbmRpbmcgfAp8LS0tLS0tLS18LS0tLS18LS0tLS0tLS0tLS0tLXwKfCBBSSBIYWxsdWNpbmF0aW9ucyBpbiBDaXRhdGlvbnMgfCBbRW5hZ29dKGh0dHBzOi8vd3d3LmVuYWdvLmNvbS9hY2FkZW15L2FpLWhhbGx1Y2luYXRpb25zLXJlc2VhcmNoLWNpdGF0aW9ucy8pIHwgfjQwJSBlcnJvciByYXRlIHwKfCBIYWxsdWNpbmF0aW9uIGluIEFJIFdyaXRpbmcgfCBbUE1DXShodHRwczovL3BtYy5uY2JpLm5sbS5uaWguZ292L2FydGljbGVzL1BNQzEwNzI2NzUxLykgfCBUeXBlcyBvZiBjaXRhdGlvbiBlcnJvcnMgfAp8IE5ldXJJUFMgMjAyNSBBSSBSZXBvcnQgfCBbQnl0ZUlvdGFdKGh0dHBzOi8vYnl0ZWlvdGEuY29tL25ldXJpcHMtMjAyNS0xMDAtYWktaGFsbHVjaW5hdGlvbnMtc2xpcC10aHJvdWdoLXJldmlldy8pIHwgMTAwKyBoYWxsdWNpbmF0ZWQgY2l0YXRpb25zIHwKCi0tLQoKIyMgUXVpY2sgUmVmZXJlbmNlIGJ5IFRvcGljCgojIyMgRm9yIE5hcnJhdGl2ZSAmIFN0cnVjdHVyZQrihpIgU3RhcnQgd2l0aDogTmVlbCBOYW5kYSwgU2ViYXN0aWFuIEZhcnF1aGFyLCBBbmRyZWogS2FycGF0aHkKCiMjIyBGb3IgU2VudGVuY2UtTGV2ZWwgQ2xhcml0eQrihpIgU3RhcnQgd2l0aDogR29wZW4gJiBTd2FuLCBFdGhhbiBQZXJleiwgWmFjaGFyeSBMaXB0b24KCiMjIyBGb3IgV29yZCBDaG9pY2UgJiBTdHlsZQrihpIgU3RhcnQgd2l0aDogWmFjaGFyeSBMaXB0b24sIEphY29iIFN0ZWluaGFyZHQKCiMjIyBGb3IgQ29uZmVyZW5jZS1TcGVjaWZpYyBSZXF1aXJlbWVudHMK4oaSIFN0YXJ0IHdpdGg6IE9mZmljaWFsIHZlbnVlIGd1aWRlbGluZXMgKE5ldXJJUFMsIElDTUwsIElDTFIsIEFDTCkKCiMjIyBGb3IgQ2l0YXRpb24gTWFuYWdlbWVudArihpIgU3RhcnQgd2l0aDogU2VtYW50aWMgU2Nob2xhciBBUEksIENyb3NzUmVmLCBjaXRhdGlvbi13b3JrZmxvdy5tZAoKIyMjIEZvciBSZXZpZXdlciBFeHBlY3RhdGlvbnMK4oaSIFN0YXJ0IHdpdGg6IFZlbnVlIHJldmlld2VyIGd1aWRlbGluZXMsIHJldmlld2VyLWd1aWRlbGluZXMubWQKCiMjIyBGb3IgSHVtYW4gRXZhbHVhdGlvbgrihpIgU3RhcnQgd2l0aDogaHVtYW4tZXZhbHVhdGlvbi5tZCwgUHJvbGlmaWMvTVR1cmsgZG9jdW1lbnRhdGlvbgoKIyMjIEZvciBOb24tRW1waXJpY2FsIFBhcGVycyAoVGhlb3J5LCBTdXJ2ZXksIEJlbmNobWFyaywgUG9zaXRpb24pCuKGkiBTdGFydCB3aXRoOiBwYXBlci10eXBlcy5tZAoKLS0tCgojIyBIdW1hbiBFdmFsdWF0aW9uICYgQW5ub3RhdGlvbgoKfCBTb3VyY2UgfCBVUkwgfCBLZXkgQ29udHJpYnV0aW9uIHwKfC0tLS0tLS0tfC0tLS0tfC0tLS0tLS0tLS0tLS0tLS0tLXwKfCAqKkRhdGFzaGVldHMgZm9yIERhdGFzZXRzKiogfCBHZWJydSBldCBhbC4sIDIwMjEgKFthclhpdl0oaHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE4MDMuMDkwMTApKSB8IFN0cnVjdHVyZWQgZGF0YXNldCBkb2N1bWVudGF0aW9uIGZyYW1ld29yayB8CnwgKipNb2RlbCBDYXJkcyBmb3IgTW9kZWwgUmVwb3J0aW5nKiogfCBNaXRjaGVsbCBldCBhbC4sIDIwMTkgKFthclhpdl0oaHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzE4MTAuMDM5OTMpKSB8IFN0cnVjdHVyZWQgbW9kZWwgZG9jdW1lbnRhdGlvbiBmcmFtZXdvcmsgfAp8ICoqQ3Jvd2Rzb3VyY2luZyBhbmQgSHVtYW4gQ29tcHV0YXRpb24qKiB8IFtTdXJ2ZXldKGh0dHBzOi8vYXJ4aXYub3JnL2Ficy8yMjAyLjA2NTE2KSB8IEJlc3QgcHJhY3RpY2VzIGZvciBjcm93ZHNvdXJjZWQgYW5ub3RhdGlvbiB8CnwgKipLcmlwcGVuZG9yZmYncyBBbHBoYSoqIHwgW1dpa2lwZWRpYV0oaHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvS3JpcHBlbmRvcmZmJTI3c19hbHBoYSkgfCBJbnRlci1hbm5vdGF0b3IgYWdyZWVtZW50IG1ldHJpYyByZWZlcmVuY2UgfAp8ICoqUHJvbGlmaWMqKiB8IFtwcm9saWZpYy5jb10oaHR0cHM6Ly93d3cucHJvbGlmaWMuY28vKSB8IFJlY29tbWVuZGVkIGNyb3dkc291cmNpbmcgcGxhdGZvcm0gZm9yIHJlc2VhcmNoIHwKCiMjIEV0aGljcyAmIEJyb2FkZXIgSW1wYWN0Cgp8IFNvdXJjZSB8IFVSTCB8IEtleSBDb250cmlidXRpb24gfAp8LS0tLS0tLS18LS0tLS18LS0tLS0tLS0tLS0tLS0tLS0tfAp8ICoqTUwgQ08yIEltcGFjdCoqIHwgW21sY28yLmdpdGh1Yi5pb10oaHR0cHM6Ly9tbGNvMi5naXRodWIuaW8vaW1wYWN0LykgfCBDb21wdXRlIGNhcmJvbiBmb290cHJpbnQgY2FsY3VsYXRvciB8CnwgKipOZXVySVBTIEJyb2FkZXIgSW1wYWN0IEd1aWRlKiogfCBbTmV1cklQU10oaHR0cHM6Ly9uZXVyaXBzLmNjL3B1YmxpYy9ndWlkZXMvUGFwZXJDaGVja2xpc3QpIHwgT2ZmaWNpYWwgZ3VpZGFuY2Ugb24gaW1wYWN0IHN0YXRlbWVudHMgfAp8ICoqQUNMIEV0aGljcyBQb2xpY3kqKiB8IFtBQ0xdKGh0dHBzOi8vd3d3LmFjbHdlYi5vcmcvcG9ydGFsL2NvbnRlbnQvYWNsLWNvZGUtZXRoaWNzKSB8IEV0aGljcyByZXF1aXJlbWVudHMgZm9yIE5MUCByZXNlYXJjaCB8Cg==
+# Source Bibliography
+
+This document lists all authoritative sources used to build this skill, organized by topic.
+
+---
+
+## Origin & Attribution
+
+The writing philosophy, citation verification workflow, and conference reference materials in this skill were originally compiled by **[Orchestra Research](https://github.com/orchestra-research)** as the `ml-paper-writing` skill (January 2026), drawing on Neel Nanda's blog post and other researcher guides listed below. The skill was integrated into hermes-agent by teknium (January 2026), then expanded into the current `research-paper-writing` pipeline by SHL0MS (April 2026, PR #4654), which added experiment design, execution monitoring, iterative refinement, and submission phases while preserving the original writing philosophy and reference files.
+
+---
+
+## Writing Philosophy & Guides
+
+### Primary Sources (Must-Read)
+
+| Source | Author | URL | Key Contribution |
+|--------|--------|-----|------------------|
+| **Highly Opinionated Advice on How to Write ML Papers** | Neel Nanda | [Alignment Forum](https://www.alignmentforum.org/posts/eJGptPbbFPZGLpjsp/highly-opinionated-advice-on-how-to-write-ml-papers) | Narrative framework, "What/Why/So What", time allocation |
+| **How to Write ML Papers** | Sebastian Farquhar (DeepMind) | [Blog](https://sebastianfarquhar.com/on-research/2024/11/04/how_to_write_ml_papers/) | 5-sentence abstract formula, structure templates |
+| **A Survival Guide to a PhD** | Andrej Karpathy | [Blog](http://karpathy.github.io/2016/09/07/phd/) | Paper structure recipe, contribution framing |
+| **Heuristics for Scientific Writing** | Zachary Lipton (CMU) | [Blog](https://www.approximatelycorrect.com/2018/01/29/heuristics-technical-scientific-writing-machine-learning-perspective/) | Word choice, section balance, intensifier warnings |
+| **Advice for Authors** | Jacob Steinhardt (UC Berkeley) | [Blog](https://jsteinhardt.stat.berkeley.edu/blog/advice-for-authors) | Precision over brevity, consistent terminology |
+| **Easy Paper Writing Tips** | Ethan Perez (Anthropic) | [Blog](https://ethanperez.net/easy-paper-writing-tips/) | Micro-level tips, apostrophe unfolding, clarity tricks |
+
+### Foundational Scientific Writing
+
+| Source | Author | URL | Key Contribution |
+|--------|--------|-----|------------------|
+| **The Science of Scientific Writing** | Gopen & Swan | [PDF](https://cseweb.ucsd.edu/~swanson/papers/science-of-writing.pdf) | Topic/stress positions, old-before-new, 7 principles |
+| **Summary of Science of Scientific Writing** | Lawrence Crowl | [Summary](https://www.crowl.org/Lawrence/writing/GopenSwan90.html) | Condensed version of Gopen & Swan |
+
+### Additional Resources
+
+| Source | URL | Key Contribution |
+|--------|-----|------------------|
+| How To Write A Research Paper In ML | [Blog](https://grigorisg9gr.github.io/machine%20learning/research%20paper/how-to-write-a-research-paper-in-machine-learning/) | Practical walkthrough, LaTeX tips |
+| A Recipe for Training Neural Networks | [Karpathy Blog](http://karpathy.github.io/2019/04/25/recipe/) | Debugging methodology that translates to paper structure |
+| ICML Paper Writing Best Practices | [ICML](https://icml.cc/Conferences/2022/BestPractices) | Official venue guidance |
+| Bill Freeman's Writing Slides | [MIT](https://billf.mit.edu/sites/default/files/documents/cvprPapers.pdf) | Visual guide to paper structure |
+
+---
+
+## Official Conference Guidelines
+
+### NeurIPS
+
+| Document | URL | Purpose |
+|----------|-----|---------|
+| Paper Checklist Guidelines | [NeurIPS](https://neurips.cc/public/guides/PaperChecklist) | 16-item mandatory checklist |
+| Reviewer Guidelines 2025 | [NeurIPS](https://neurips.cc/Conferences/2025/ReviewerGuidelines) | Evaluation criteria, scoring |
+| Style Files | [NeurIPS](https://neurips.cc/Conferences/2025/PaperInformation/StyleFiles) | LaTeX templates |
+
+### ICML
+
+| Document | URL | Purpose |
+|----------|-----|---------|
+| Paper Guidelines | [ICML](https://icml.cc/Conferences/2024/PaperGuidelines) | Submission requirements |
+| Reviewer Instructions 2025 | [ICML](https://icml.cc/Conferences/2025/ReviewerInstructions) | Review form, evaluation |
+| Style & Author Instructions | [ICML](https://icml.cc/Conferences/2022/StyleAuthorInstructions) | Formatting specifications |
+
+### ICLR
+
+| Document | URL | Purpose |
+|----------|-----|---------|
+| Author Guide 2026 | [ICLR](https://iclr.cc/Conferences/2026/AuthorGuide) | Submission requirements, LLM disclosure |
+| Reviewer Guide 2025 | [ICLR](https://iclr.cc/Conferences/2025/ReviewerGuide) | Review process, evaluation |
+
+### ACL/EMNLP
+
+| Document | URL | Purpose |
+|----------|-----|---------|
+| ACL Style Files | [GitHub](https://github.com/acl-org/acl-style-files) | LaTeX templates |
+| ACL Rolling Review | [ARR](https://aclrollingreview.org/) | Submission process |
+
+### AAAI
+
+| Document | URL | Purpose |
+|----------|-----|---------|
+| Author Kit 2026 | [AAAI](https://aaai.org/authorkit26/) | Templates and guidelines |
+
+### COLM
+
+| Document | URL | Purpose |
+|----------|-----|---------|
+| Template | [GitHub](https://github.com/COLM-org/Template) | LaTeX templates |
+
+---
+
+## Citation APIs & Tools
+
+### APIs
+
+| API | Documentation | Best For |
+|-----|---------------|----------|
+| **Semantic Scholar** | [Docs](https://api.semanticscholar.org/api-docs/) | ML/AI papers, citation graphs |
+| **CrossRef** | [Docs](https://www.crossref.org/documentation/retrieve-metadata/rest-api/) | DOI lookup, BibTeX retrieval |
+| **arXiv** | [Docs](https://info.arxiv.org/help/api/basics.html) | Preprints, PDF access |
+| **OpenAlex** | [Docs](https://docs.openalex.org/) | Open alternative, bulk access |
+
+### Python Libraries
+
+| Library | Install | Purpose |
+|---------|---------|---------|
+| `semanticscholar` | `pip install semanticscholar` | Semantic Scholar wrapper |
+| `arxiv` | `pip install arxiv` | arXiv search and download |
+| `habanero` | `pip install habanero` | CrossRef client |
+
+### Citation Verification
+
+| Tool | URL | Purpose |
+|------|-----|---------|
+| Citely | [citely.ai](https://citely.ai/citation-checker) | Batch verification |
+| ReciteWorks | [reciteworks.com](https://reciteworks.com/) | In-text citation checking |
+
+---
+
+## Visualization & Formatting
+
+### Figure Creation
+
+| Tool | URL | Purpose |
+|------|-----|---------|
+| PlotNeuralNet | [GitHub](https://github.com/HarisIqbal88/PlotNeuralNet) | TikZ neural network diagrams |
+| SciencePlots | [GitHub](https://github.com/garrettj403/SciencePlots) | Publication-ready matplotlib |
+| Okabe-Ito Palette | [Reference](https://jfly.uni-koeln.de/color/) | Colorblind-safe colors |
+
+### LaTeX Resources
+
+| Resource | URL | Purpose |
+|----------|-----|---------|
+| Overleaf Templates | [Overleaf](https://www.overleaf.com/latex/templates) | Online LaTeX editor |
+| BibLaTeX Guide | [CTAN](https://ctan.org/pkg/biblatex) | Modern citation management |
+
+---
+
+## Research on AI Writing & Hallucination
+
+| Source | URL | Key Finding |
+|--------|-----|-------------|
+| AI Hallucinations in Citations | [Enago](https://www.enago.com/academy/ai-hallucinations-research-citations/) | ~40% error rate |
+| Hallucination in AI Writing | [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC10726751/) | Types of citation errors |
+| NeurIPS 2025 AI Report | [ByteIota](https://byteiota.com/neurips-2025-100-ai-hallucinations-slip-through-review/) | 100+ hallucinated citations |
+
+---
+
+## Quick Reference by Topic
+
+### For Narrative & Structure
+→ Start with: Neel Nanda, Sebastian Farquhar, Andrej Karpathy
+
+### For Sentence-Level Clarity
+→ Start with: Gopen & Swan, Ethan Perez, Zachary Lipton
+
+### For Word Choice & Style
+→ Start with: Zachary Lipton, Jacob Steinhardt
+
+### For Conference-Specific Requirements
+→ Start with: Official venue guidelines (NeurIPS, ICML, ICLR, ACL)
+
+### For Citation Management
+→ Start with: Semantic Scholar API, CrossRef, citation-workflow.md
+
+### For Reviewer Expectations
+→ Start with: Venue reviewer guidelines, reviewer-guidelines.md
+
+### For Human Evaluation
+→ Start with: human-evaluation.md, Prolific/MTurk documentation
+
+### For Non-Empirical Papers (Theory, Survey, Benchmark, Position)
+→ Start with: paper-types.md
+
+---
+
+## Human Evaluation & Annotation
+
+| Source | URL | Key Contribution |
+|--------|-----|------------------|
+| **Datasheets for Datasets** | Gebru et al., 2021 ([arXiv](https://arxiv.org/abs/1803.09010)) | Structured dataset documentation framework |
+| **Model Cards for Model Reporting** | Mitchell et al., 2019 ([arXiv](https://arxiv.org/abs/1810.03993)) | Structured model documentation framework |
+| **Crowdsourcing and Human Computation** | [Survey](https://arxiv.org/abs/2202.06516) | Best practices for crowdsourced annotation |
+| **Krippendorff's Alpha** | [Wikipedia](https://en.wikipedia.org/wiki/Krippendorff%27s_alpha) | Inter-annotator agreement metric reference |
+| **Prolific** | [prolific.co](https://www.prolific.co/) | Recommended crowdsourcing platform for research |
+
+## Ethics & Broader Impact
+
+| Source | URL | Key Contribution |
+|--------|-----|------------------|
+| **ML CO2 Impact** | [mlco2.github.io](https://mlco2.github.io/impact/) | Compute carbon footprint calculator |
+| **NeurIPS Broader Impact Guide** | [NeurIPS](https://neurips.cc/public/guides/PaperChecklist) | Official guidance on impact statements |
+| **ACL Ethics Policy** | [ACL](https://www.aclweb.org/portal/content/acl-code-ethics) | Ethics requirements for NLP research |

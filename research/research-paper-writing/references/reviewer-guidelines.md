@@ -1,1 +1,433 @@
-IyBSZXZpZXdlciBHdWlkZWxpbmVzICYgRXZhbHVhdGlvbiBDcml0ZXJpYQoKVGhpcyByZWZlcmVuY2UgZG9jdW1lbnRzIGhvdyByZXZpZXdlcnMgZXZhbHVhdGUgcGFwZXJzIGF0IG1ham9yIE1ML0FJIGNvbmZlcmVuY2VzLCBoZWxwaW5nIGF1dGhvcnMgYW50aWNpcGF0ZSBhbmQgYWRkcmVzcyByZXZpZXdlciBjb25jZXJucy4KCi0tLQoKIyMgQ29udGVudHMKCi0gW1VuaXZlcnNhbCBFdmFsdWF0aW9uIERpbWVuc2lvbnNdKCN1bml2ZXJzYWwtZXZhbHVhdGlvbi1kaW1lbnNpb25zKQotIFtOZXVySVBTIFJldmlld2VyIEd1aWRlbGluZXNdKCNuZXVyaXBzLXJldmlld2VyLWd1aWRlbGluZXMpCi0gW0lDTUwgUmV2aWV3ZXIgR3VpZGVsaW5lc10oI2ljbWwtcmV2aWV3ZXItZ3VpZGVsaW5lcykKLSBbSUNMUiBSZXZpZXdlciBHdWlkZWxpbmVzXSgjaWNsci1yZXZpZXdlci1ndWlkZWxpbmVzKQotIFtBQ0wgUmV2aWV3ZXIgR3VpZGVsaW5lc10oI2FjbC1yZXZpZXdlci1ndWlkZWxpbmVzKQotIFtXaGF0IE1ha2VzIFJldmlld3MgU3Ryb25nXSgjd2hhdC1tYWtlcy1yZXZpZXdzLXN0cm9uZykKLSBbQ29tbW9uIFJldmlld2VyIENvbmNlcm5zXSgjY29tbW9uLXJldmlld2VyLWNvbmNlcm5zKQotIFtIb3cgdG8gQWRkcmVzcyBSZXZpZXdlciBGZWVkYmFja10oI2hvdy10by1hZGRyZXNzLXJldmlld2VyLWZlZWRiYWNrKQoKLS0tCgojIyBVbml2ZXJzYWwgRXZhbHVhdGlvbiBEaW1lbnNpb25zCgpBbGwgbWFqb3IgTUwgY29uZmVyZW5jZXMgYXNzZXNzIHBhcGVycyBhY3Jvc3MgZm91ciBjb3JlIGRpbWVuc2lvbnM6CgojIyMgMS4gUXVhbGl0eSAoVGVjaG5pY2FsIFNvdW5kbmVzcykKCioqV2hhdCByZXZpZXdlcnMgYXNrOioqCi0gQXJlIGNsYWltcyB3ZWxsLXN1cHBvcnRlZCBieSB0aGVvcmV0aWNhbCBhbmFseXNpcyBvciBleHBlcmltZW50YWwgcmVzdWx0cz8KLSBBcmUgdGhlIHByb29mcyBjb3JyZWN0PyBBcmUgdGhlIGV4cGVyaW1lbnRzIHByb3Blcmx5IGNvbnRyb2xsZWQ/Ci0gQXJlIGJhc2VsaW5lcyBhcHByb3ByaWF0ZSBhbmQgZmFpcmx5IGNvbXBhcmVkPwotIElzIHRoZSBtZXRob2RvbG9neSBzb3VuZD8KCioqSG93IHRvIGVuc3VyZSBoaWdoIHF1YWxpdHk6KioKLSBJbmNsdWRlIGNvbXBsZXRlIHByb29mcyAobWFpbiBwYXBlciBvciBhcHBlbmRpeCB3aXRoIHNrZXRjaGVzKQotIFVzZSBhcHByb3ByaWF0ZSBiYXNlbGluZXMgKG5vdCBzdHJhd21lbikKLSBSZXBvcnQgdmFyaWFuY2UvZXJyb3IgYmFycyB3aXRoIG1ldGhvZG9sb2d5Ci0gRG9jdW1lbnQgaHlwZXJwYXJhbWV0ZXIgc2VsZWN0aW9uIHByb2Nlc3MKCiMjIyAyLiBDbGFyaXR5IChXcml0aW5nICYgT3JnYW5pemF0aW9uKQoKKipXaGF0IHJldmlld2VycyBhc2s6KioKLSBJcyB0aGUgcGFwZXIgY2xlYXJseSB3cml0dGVuIGFuZCB3ZWxsIG9yZ2FuaXplZD8KLSBDYW4gYW4gZXhwZXJ0IGluIHRoZSBmaWVsZCByZXByb2R1Y2UgdGhlIHJlc3VsdHM/Ci0gSXMgbm90YXRpb24gY29uc2lzdGVudD8gQXJlIHRlcm1zIGRlZmluZWQ/Ci0gSXMgdGhlIHBhcGVyIHNlbGYtY29udGFpbmVkPwoKKipIb3cgdG8gZW5zdXJlIGNsYXJpdHk6KioKLSBVc2UgY29uc2lzdGVudCB0ZXJtaW5vbG9neSB0aHJvdWdob3V0Ci0gRGVmaW5lIGFsbCBub3RhdGlvbiBhdCBmaXJzdCB1c2UKLSBJbmNsdWRlIHJlcHJvZHVjaWJpbGl0eSBkZXRhaWxzIChhcHBlbmRpeCBhY2NlcHRhYmxlKQotIEhhdmUgbm9uLWF1dGhvcnMgcmVhZCBiZWZvcmUgc3VibWlzc2lvbgoKIyMjIDMuIFNpZ25pZmljYW5jZSAoSW1wYWN0ICYgSW1wb3J0YW5jZSkKCioqV2hhdCByZXZpZXdlcnMgYXNrOioqCi0gQXJlIHRoZSByZXN1bHRzIGltcGFjdGZ1bCBmb3IgdGhlIGNvbW11bml0eT8KLSBXaWxsIG90aGVycyBidWlsZCB1cG9uIHRoaXMgd29yaz8KLSBEb2VzIGl0IGFkZHJlc3MgYW4gaW1wb3J0YW50IHByb2JsZW0/Ci0gV2hhdCBpcyB0aGUgcG90ZW50aWFsIGZvciByZWFsLXdvcmxkIGltcGFjdD8KCioqSG93IHRvIGRlbW9uc3RyYXRlIHNpZ25pZmljYW5jZToqKgotIENsZWFybHkgYXJ0aWN1bGF0ZSB0aGUgcHJvYmxlbSdzIGltcG9ydGFuY2UKLSBDb25uZWN0IHRvIGJyb2FkZXIgcmVzZWFyY2ggdGhlbWVzCi0gRGlzY3VzcyBwb3RlbnRpYWwgYXBwbGljYXRpb25zCi0gQ29tcGFyZSB0byBleGlzdGluZyBhcHByb2FjaGVzIG1lYW5pbmdmdWxseQoKIyMjIDQuIE9yaWdpbmFsaXR5IChOb3ZlbHR5ICYgQ29udHJpYnV0aW9uKQoKKipXaGF0IHJldmlld2VycyBhc2s6KioKLSBEb2VzIHRoaXMgcHJvdmlkZSBuZXcgaW5zaWdodHM/Ci0gSG93IGRvZXMgaXQgZGlmZmVyIGZyb20gcHJpb3Igd29yaz8KLSBJcyB0aGUgY29udHJpYnV0aW9uIG5vbi10cml2aWFsPwoKKipLZXkgaW5zaWdodCBmcm9tIE5ldXJJUFMgZ3VpZGVsaW5lczoqKgo+ICJPcmlnaW5hbGl0eSBkb2VzIG5vdCBuZWNlc3NhcmlseSByZXF1aXJlIGludHJvZHVjaW5nIGFuIGVudGlyZWx5IG5ldyBtZXRob2QuIFBhcGVycyB0aGF0IHByb3ZpZGUgbm92ZWwgaW5zaWdodHMgZnJvbSBldmFsdWF0aW5nIGV4aXN0aW5nIGFwcHJvYWNoZXMgb3Igc2hlZCBsaWdodCBvbiB3aHkgbWV0aG9kcyBzdWNjZWVkIGNhbiBhbHNvIGJlIGhpZ2hseSBvcmlnaW5hbC4iCgotLS0KCiMjIE5ldXJJUFMgUmV2aWV3ZXIgR3VpZGVsaW5lcwoKIyMjIFNjb3JpbmcgU3lzdGVtICgxLTYgU2NhbGUpCgp8IFNjb3JlIHwgTGFiZWwgfCBEZXNjcmlwdGlvbiB8CnwtLS0tLS0tfC0tLS0tLS18LS0tLS0tLS0tLS0tLXwKfCAqKjYqKiB8IFN0cm9uZyBBY2NlcHQgfCBHcm91bmRicmVha2luZywgZmxhd2xlc3Mgd29yazsgdG9wIDItMyUgb2Ygc3VibWlzc2lvbnMgfAp8ICoqNSoqIHwgQWNjZXB0IHwgVGVjaG5pY2FsbHkgc29saWQsIGhpZ2ggaW1wYWN0OyB3b3VsZCBiZW5lZml0IHRoZSBjb21tdW5pdHkgfAp8ICoqNCoqIHwgQm9yZGVybGluZSBBY2NlcHQgfCBTb2xpZCB3b3JrIHdpdGggbGltaXRlZCBldmFsdWF0aW9uOyBsZWFucyBhY2NlcHQgfAp8ICoqMyoqIHwgQm9yZGVybGluZSBSZWplY3QgfCBTb2xpZCBidXQgd2Vha25lc3NlcyBvdXR3ZWlnaCBzdHJlbmd0aHM7IGxlYW5zIHJlamVjdCB8CnwgKioyKiogfCBSZWplY3QgfCBUZWNobmljYWwgZmxhd3Mgb3Igd2VhayBldmFsdWF0aW9uIHwKfCAqKjEqKiB8IFN0cm9uZyBSZWplY3QgfCBXZWxsLWtub3duIHJlc3VsdHMgb3IgdW5hZGRyZXNzZWQgZXRoaWNzIGNvbmNlcm5zIHwKCiMjIyBSZXZpZXdlciBJbnN0cnVjdGlvbnMKClJldmlld2VycyBhcmUgZXhwbGljaXRseSBpbnN0cnVjdGVkIHRvOgoKMS4gKipFdmFsdWF0ZSB0aGUgcGFwZXIgYXMgd3JpdHRlbioqIC0gbm90IHdoYXQgaXQgY291bGQgYmUgd2l0aCByZXZpc2lvbnMKMi4gKipQcm92aWRlIGNvbnN0cnVjdGl2ZSBmZWVkYmFjayoqIC0gMy01IGFjdGlvbmFibGUgcG9pbnRzCjMuICoqTm90IHBlbmFsaXplIGhvbmVzdCBsaW1pdGF0aW9ucyoqIC0gYWNrbm93bGVkZ2luZyB3ZWFrbmVzc2VzIGlzIGVuY291cmFnZWQKNC4gKipBc3Nlc3MgcmVwcm9kdWNpYmlsaXR5KiogLSBjYW4gdGhlIHdvcmsgYmUgdmVyaWZpZWQ/CjUuICoqQ29uc2lkZXIgZXRoaWNhbCBpbXBsaWNhdGlvbnMqKiAtIHBvdGVudGlhbCBtaXN1c2Ugb3IgaGFybQoKIyMjIFdoYXQgUmV2aWV3ZXJzIFNob3VsZCBBdm9pZAoKLSBTdXBlcmZpY2lhbCwgdW5pbmZvcm1lZCByZXZpZXdzCi0gRGVtYW5kaW5nIHVucmVhc29uYWJsZSBhZGRpdGlvbmFsIGV4cGVyaW1lbnRzCi0gUGVuYWxpemluZyBhdXRob3JzIGZvciBob25lc3QgbGltaXRhdGlvbiBhY2tub3dsZWRnbWVudAotIFJlamVjdGluZyBmb3IgbWlzc2luZyBjaXRhdGlvbnMgdG8gcmV2aWV3ZXIncyBvd24gd29yawoKIyMjIFRpbWVsaW5lIChOZXVySVBTIDIwMjUg4oCUIHZlcmlmeSBkYXRlcyBmb3IgY3VycmVudCB5ZWFyKQoKLSBCaWRkaW5nOiBNYXkgMTctMjEKLSBSZXZpZXdpbmcgcGVyaW9kOiBNYXkgMjkgLSBKdWx5IDIKLSBBdXRob3IgcmVidXR0YWxzOiBKdWx5IDI0LTMwCi0gRGlzY3Vzc2lvbiBwZXJpb2Q6IEp1bHkgMzEgLSBBdWd1c3QgMTMKLSBGaW5hbCBub3RpZmljYXRpb25zOiBTZXB0ZW1iZXIgMTgKCj4gKipOb3RlKio6IFRoZXNlIGRhdGVzIGFyZSBmcm9tIHRoZSAyMDI1IGN5Y2xlLiBBbHdheXMgY2hlY2sgdGhlIGN1cnJlbnQgeWVhcidzIGNhbGwgZm9yIHBhcGVycyBhdCB0aGUgdmVudWUgd2Vic2l0ZS4KCi0tLQoKIyMgSUNNTCBSZXZpZXdlciBHdWlkZWxpbmVzCgojIyMgUmV2aWV3IFN0cnVjdHVyZQoKSUNNTCByZXZpZXdlcnMgcHJvdmlkZToKCjEuICoqU3VtbWFyeSoqIC0gQnJpZWYgZGVzY3JpcHRpb24gb2YgY29udHJpYnV0aW9ucwoyLiAqKlN0cmVuZ3RocyoqIC0gUG9zaXRpdmUgYXNwZWN0cwozLiAqKldlYWtuZXNzZXMqKiAtIEFyZWFzIGZvciBpbXByb3ZlbWVudAo0LiAqKlF1ZXN0aW9ucyoqIC0gQ2xhcmlmaWNhdGlvbnMgZm9yIGF1dGhvcnMKNS4gKipMaW1pdGF0aW9ucyoqIC0gQXNzZXNzbWVudCBvZiBzdGF0ZWQgbGltaXRhdGlvbnMKNi4gKipFdGhpY3MqKiAtIEFueSBjb25jZXJucwo3LiAqKk92ZXJhbGwgU2NvcmUqKiAtIFJlY29tbWVuZGF0aW9uCgojIyMgU2NvcmluZyBHdWlkZWxpbmVzCgpJQ01MIHVzZXMgYSBzaW1pbGFyIDEtNiBzY2FsZSB3aXRoIGNhbGlicmF0aW9uOgotIFRvcCAyNSUgb2YgYWNjZXB0ZWQgcGFwZXJzOiBTY29yZSA1LTYKLSBUeXBpY2FsIGFjY2VwdGVkIHBhcGVyOiBTY29yZSA0LTUKLSBCb3JkZXJsaW5lOiBTY29yZSAzLTQKLSBDbGVhciByZWplY3Q6IFNjb3JlIDEtMgoKIyMjIEtleSBFdmFsdWF0aW9uIFBvaW50cwoKMS4gKipSZXByb2R1Y2liaWxpdHkqKiAtIEFyZSB0aGVyZSBlbm91Z2ggZGV0YWlscz8KMi4gKipFeHBlcmltZW50YWwgcmlnb3IqKiAtIE11bHRpcGxlIHNlZWRzLCBwcm9wZXIgYmFzZWxpbmVzPwozLiAqKldyaXRpbmcgcXVhbGl0eSoqIC0gQ2xlYXIsIG9yZ2FuaXplZCwgd2VsbC1zdHJ1Y3R1cmVkPwo0LiAqKk5vdmVsdHkqKiAtIE5vbi10cml2aWFsIGNvbnRyaWJ1dGlvbj8KCi0tLQoKIyMgSUNMUiBSZXZpZXdlciBHdWlkZWxpbmVzCgojIyMgT3BlblJldmlldyBQcm9jZXNzCgpJQ0xSIHVzZXMgT3BlblJldmlldyB3aXRoOgotIFB1YmxpYyByZXZpZXdzIChhZnRlciBhY2NlcHRhbmNlIGRlY2lzaW9ucykKLSBBdXRob3IgcmVzcG9uc2VzIHZpc2libGUgdG8gcmV2aWV3ZXJzCi0gRGlzY3Vzc2lvbiBiZXR3ZWVuIHJldmlld2VycyBhbmQgQUNzCgojIyMgU2NvcmluZwoKSUNMUiByZXZpZXdzIGluY2x1ZGU6Ci0gKipTb3VuZG5lc3MqKjogMS00IHNjYWxlCi0gKipQcmVzZW50YXRpb24qKjogMS00IHNjYWxlCi0gKipDb250cmlidXRpb24qKjogMS00IHNjYWxlCi0gKipPdmVyYWxsKio6IDEtMTAgc2NhbGUKLSAqKkNvbmZpZGVuY2UqKjogMS01IHNjYWxlCgojIyMgVW5pcXVlIElDTFIgQ29uc2lkZXJhdGlvbnMKCjEuICoqTExNIERpc2Nsb3N1cmUqKiAtIFJldmlld2VycyBhc3Nlc3Mgd2hldGhlciBMTE0gdXNlIGlzIHByb3Blcmx5IGRpc2Nsb3NlZAoyLiAqKlJlcHJvZHVjaWJpbGl0eSoqIC0gRW1waGFzaXMgb24gY29kZSBhdmFpbGFiaWxpdHkKMy4gKipSZWNpcHJvY2FsIFJldmlld2luZyoqIC0gQXV0aG9ycyBtdXN0IGFsc28gc2VydmUgYXMgcmV2aWV3ZXJzCgotLS0KCiMjIEFDTCBSZXZpZXdlciBHdWlkZWxpbmVzCgojIyMgQUNMLVNwZWNpZmljIENyaXRlcmlhCgpBQ0wgYWRkcyBOTFAtc3BlY2lmaWMgZXZhbHVhdGlvbjoKCjEuICoqTGluZ3Vpc3RpYyBzb3VuZG5lc3MqKiAtIEFyZSBsaW5ndWlzdGljIGNsYWltcyBhY2N1cmF0ZT8KMi4gKipSZXNvdXJjZSBkb2N1bWVudGF0aW9uKiogLSBBcmUgZGF0YXNldHMvbW9kZWxzIHByb3Blcmx5IGRvY3VtZW50ZWQ/CjMuICoqTXVsdGlsaW5ndWFsIGNvbnNpZGVyYXRpb24qKiAtIElmIGFwcGxpY2FibGUsIGlzIGxhbmd1YWdlIGRpdmVyc2l0eSBhZGRyZXNzZWQ/CgojIyMgTGltaXRhdGlvbnMgU2VjdGlvbgoKQUNMIHNwZWNpZmljYWxseSByZXF1aXJlcyBhIExpbWl0YXRpb25zIHNlY3Rpb24uIFJldmlld2VycyBjaGVjazoKLSBBcmUgbGltaXRhdGlvbnMgaG9uZXN0IGFuZCBjb21wcmVoZW5zaXZlPwotIERvIGxpbWl0YXRpb25zIHVuZGVybWluZSBjb3JlIGNsYWltcz8KLSBBcmUgcG90ZW50aWFsIG5lZ2F0aXZlIGltcGFjdHMgYWRkcmVzc2VkPwoKIyMjIEV0aGljcyBSZXZpZXcKCkFDTCBoYXMgYSBkZWRpY2F0ZWQgZXRoaWNzIHJldmlldyBwcm9jZXNzIGZvcjoKLSBEdWFsLXVzZSBjb25jZXJucwotIERhdGEgcHJpdmFjeSBpc3N1ZXMKLSBCaWFzIGFuZCBmYWlybmVzcyBpbXBsaWNhdGlvbnMKCi0tLQoKIyMgQUFBSSBSZXZpZXdlciBHdWlkZWxpbmVzCgojIyMgRXZhbHVhdGlvbiBDcml0ZXJpYQoKQUFBSSByZXZpZXdlcnMgZXZhbHVhdGUgYWxvbmcgc2ltaWxhciBheGVzIHRvIE5ldXJJUFMvSUNNTCBidXQgd2l0aCBzb21lIGRpZmZlcmVuY2VzOgoKfCBDcml0ZXJpb24gfCBXZWlnaHQgfCBOb3RlcyB8CnwtLS0tLS0tLS0tLXwtLS0tLS0tLXwtLS0tLS0tfAp8ICoqVGVjaG5pY2FsIHF1YWxpdHkqKiB8IEhpZ2ggfCBTb3VuZG5lc3Mgb2YgYXBwcm9hY2gsIGNvcnJlY3RuZXNzIG9mIHJlc3VsdHMgfAp8ICoqU2lnbmlmaWNhbmNlKiogfCBIaWdoIHwgSW1wb3J0YW5jZSBvZiB0aGUgcHJvYmxlbSBhbmQgY29udHJpYnV0aW9uIHwKfCAqKk5vdmVsdHkqKiB8IE1lZGl1bS1IaWdoIHwgTmV3IGlkZWFzLCBtZXRob2RzLCBvciBpbnNpZ2h0cyB8CnwgKipDbGFyaXR5KiogfCBNZWRpdW0gfCBDbGVhciB3cml0aW5nLCB3ZWxsLW9yZ2FuaXplZCBwcmVzZW50YXRpb24gfAp8ICoqUmVwcm9kdWNpYmlsaXR5KiogfCBNZWRpdW0gfCBTdWZmaWNpZW50IGRldGFpbCB0byByZXByb2R1Y2UgcmVzdWx0cyB8CgojIyMgQUFBSS1TcGVjaWZpYyBDb25zaWRlcmF0aW9ucwoKLSAqKkJyb2FkZXIgQUkgc2NvcGUqKjogQUFBSSBjb3ZlcnMgYWxsIG9mIEFJLCBub3QganVzdCBNTC4gUGFwZXJzIG9uIHBsYW5uaW5nLCByZWFzb25pbmcsIGtub3dsZWRnZSByZXByZXNlbnRhdGlvbiwgTkxQLCB2aXNpb24sIHJvYm90aWNzLCBhbmQgbXVsdGktYWdlbnQgc3lzdGVtcyBhcmUgYWxsIGluIHNjb3BlLiBSZXZpZXdlcnMgbWF5IG5vdCBiZSBkZWVwIE1MIHNwZWNpYWxpc3RzLgotICoqRm9ybWF0dGluZyBzdHJpY3RuZXNzKio6IEFBQUkgcmV2aWV3ZXJzIGFyZSBpbnN0cnVjdGVkIHRvIGZsYWcgZm9ybWF0dGluZyB2aW9sYXRpb25zLiBOb24tY29tcGxpYW50IHBhcGVycyBtYXkgYmUgZGVzay1yZWplY3RlZCBiZWZvcmUgcmV2aWV3LgotICoqQXBwbGljYXRpb24gcGFwZXJzKio6IEFBQUkgaXMgbW9yZSByZWNlcHRpdmUgdG8gYXBwbGljYXRpb24tZm9jdXNlZCB3b3JrIHRoYW4gTmV1cklQUy9JQ01MLiBGcmFtaW5nIGEgc3Ryb25nIGFwcGxpY2F0aW9uIGNvbnRyaWJ1dGlvbiBpcyB2aWFibGUuCi0gKipTZW5pb3IgUHJvZ3JhbSBDb21taXR0ZWUqKjogQUFBSSB1c2VzIFNQQ3MgKFNlbmlvciBQcm9ncmFtIENvbW1pdHRlZSBtZW1iZXJzKSB3aG8gbWVkaWF0ZSBiZXR3ZWVuIHJldmlld2VycyBhbmQgbWFrZSBhY2NlcHQvcmVqZWN0IHJlY29tbWVuZGF0aW9ucy4KCiMjIyBTY29yaW5nIChBQUFJIFNjYWxlKQoKLSAqKlN0cm9uZyBBY2NlcHQqKjogQ2xlYXJseSBhYm92ZSB0aHJlc2hvbGQsIGV4Y2VsbGVudCBjb250cmlidXRpb24KLSAqKkFjY2VwdCoqOiBBYm92ZSB0aHJlc2hvbGQsIGdvb2QgY29udHJpYnV0aW9uIHdpdGggbWlub3IgaXNzdWVzCi0gKipXZWFrIEFjY2VwdCoqOiBCb3JkZXJsaW5lLCBtZXJpdHMgb3V0d2VpZ2ggY29uY2VybnMKLSAqKldlYWsgUmVqZWN0Kio6IEJvcmRlcmxpbmUsIGNvbmNlcm5zIG91dHdlaWdoIG1lcml0cwotICoqUmVqZWN0Kio6IEJlbG93IHRocmVzaG9sZCwgc2lnbmlmaWNhbnQgaXNzdWVzCi0gKipTdHJvbmcgUmVqZWN0Kio6IFdlbGwgYmVsb3cgdGhyZXNob2xkCgotLS0KCiMjIENPTE0gUmV2aWV3ZXIgR3VpZGVsaW5lcwoKIyMjIEV2YWx1YXRpb24gQ3JpdGVyaWEKCkNPTE0gcmV2aWV3cyBmb2N1cyBvbiByZWxldmFuY2UgdG8gbGFuZ3VhZ2UgbW9kZWxpbmcgaW4gYWRkaXRpb24gdG8gc3RhbmRhcmQgY3JpdGVyaWE6Cgp8IENyaXRlcmlvbiB8IFdlaWdodCB8IE5vdGVzIHwKfC0tLS0tLS0tLS0tfC0tLS0tLS0tfC0tLS0tLS18CnwgKipSZWxldmFuY2UqKiB8IEhpZ2ggfCBNdXN0IGJlIHJlbGV2YW50IHRvIGxhbmd1YWdlIG1vZGVsaW5nIGNvbW11bml0eSB8CnwgKipUZWNobmljYWwgcXVhbGl0eSoqIHwgSGlnaCB8IFNvdW5kIG1ldGhvZG9sb2d5LCB3ZWxsLXN1cHBvcnRlZCBjbGFpbXMgfAp8ICoqTm92ZWx0eSoqIHwgTWVkaXVtLUhpZ2ggfCBOZXcgaW5zaWdodHMgYWJvdXQgbGFuZ3VhZ2UgbW9kZWxzIHwKfCAqKkNsYXJpdHkqKiB8IE1lZGl1bSB8IENsZWFyIHByZXNlbnRhdGlvbiwgcmVwcm9kdWNpYmxlIHwKfCAqKlNpZ25pZmljYW5jZSoqIHwgTWVkaXVtLUhpZ2ggfCBJbXBhY3Qgb24gTE0gcmVzZWFyY2ggYW5kIHByYWN0aWNlIHwKCiMjIyBDT0xNLVNwZWNpZmljIENvbnNpZGVyYXRpb25zCgotICoqTGFuZ3VhZ2UgbW9kZWwgZm9jdXMqKjogUmV2aWV3ZXJzIHdpbGwgYXNzZXNzIHdoZXRoZXIgdGhlIGNvbnRyaWJ1dGlvbiBhZHZhbmNlcyB1bmRlcnN0YW5kaW5nIG9mIGxhbmd1YWdlIG1vZGVscy4gR2VuZXJhbCBNTCBjb250cmlidXRpb25zIG5lZWQgZXhwbGljaXQgTE0gZnJhbWluZy4KLSAqKk5ld2VyIHZlbnVlIG5vcm1zKio6IENPTE0gaXMgbmV3ZXIgdGhhbiBOZXVySVBTL0lDTUwsIHNvIHJldmlld2VyIGNhbGlicmF0aW9uIHZhcmllcyBtb3JlLiBXcml0ZSBtb3JlIGRlZmVuc2l2ZWx5IOKAlCBhbnRpY2lwYXRlIGEgd2lkZXIgcmFuZ2Ugb2YgcmV2aWV3ZXIgZXhwZXJ0aXNlLgotICoqSUNMUi1kZXJpdmVkIHByb2Nlc3MqKjogUmV2aWV3IHByb2Nlc3MgaXMgbW9kZWxlZCBvbiBJQ0xSIChvcGVuIHJldmlld3MsIGF1dGhvciByZXNwb25zZSBwZXJpb2QsIGRpc2N1c3Npb24gYW1vbmcgcmV2aWV3ZXJzKS4KLSAqKkJyb2FkIGludGVycHJldGF0aW9uIG9mICJsYW5ndWFnZSBtb2RlbGluZyIqKjogSW5jbHVkZXMgdHJhaW5pbmcsIGV2YWx1YXRpb24sIGFsaWdubWVudCwgc2FmZXR5LCBlZmZpY2llbmN5LCBhcHBsaWNhdGlvbnMsIHRoZW9yeSwgbXVsdGltb2RhbGl0eSAoaWYgbGFuZ3VhZ2UgaXMgY2VudHJhbCksIGFuZCBzb2NpYWwgaW1wYWN0IG9mIExNcy4KCiMjIyBTY29yaW5nCgpDT0xNIHVzZXMgYW4gSUNMUi1zdHlsZSBzY29yaW5nIHN5c3RlbToKLSAqKjgtMTAqKjogU3Ryb25nIGFjY2VwdCAodG9wIHBhcGVycykKLSAqKjYtNyoqOiBXZWFrIGFjY2VwdCAoc29saWQgY29udHJpYnV0aW9uKQotICoqNSoqOiBCb3JkZXJsaW5lCi0gKiozLTQqKjogV2VhayByZWplY3QgKGJlbG93IHRocmVzaG9sZCkKLSAqKjEtMioqOiBTdHJvbmcgcmVqZWN0CgotLS0KCiMjIFdoYXQgTWFrZXMgUmV2aWV3cyBTdHJvbmcKCiMjIyBGb2xsb3dpbmcgRGFuaWVsIERlbm5ldHQncyBSdWxlcwoKR29vZCByZXZpZXdlcnMgZm9sbG93IHRoZXNlIHByaW5jaXBsZXM6CgoxLiAqKlJlLWV4cHJlc3MgdGhlIHBvc2l0aW9uIGZhaXJseSoqIC0gU2hvdyB5b3UgdW5kZXJzdGFuZCB0aGUgcGFwZXIKMi4gKipMaXN0IGFncmVlbWVudHMqKiAtIEFja25vd2xlZGdlIHdoYXQgd29ya3Mgd2VsbAozLiAqKkxpc3Qgd2hhdCB5b3UgbGVhcm5lZCoqIC0gQ3JlZGl0IHRoZSBjb250cmlidXRpb24KNC4gKipPbmx5IHRoZW4gY3JpdGlxdWUqKiAtIEFmdGVyIGVzdGFibGlzaGluZyB1bmRlcnN0YW5kaW5nCgojIyMgUmV2aWV3IFN0cnVjdHVyZSBCZXN0IFByYWN0aWNlcwoKKipTdHJvbmcgUmV2aWV3IFN0cnVjdHVyZToqKgpgYGAKU3VtbWFyeSAoMSBwYXJhZ3JhcGgpOgotIFdoYXQgdGhlIHBhcGVyIGRvZXMKLSBNYWluIGNvbnRyaWJ1dGlvbiBjbGFpbWVkCgpTdHJlbmd0aHMgKDMtNSBidWxsZXRzKToKLSBTcGVjaWZpYyBwb3NpdGl2ZSBhc3BlY3RzCi0gV2h5IHRoZXNlIG1hdHRlcgoKV2Vha25lc3NlcyAoMy01IGJ1bGxldHMpOgotIFNwZWNpZmljIGNvbmNlcm5zCi0gV2h5IHRoZXNlIG1hdHRlcgotIFN1Z2dlc3Rpb25zIGZvciBhZGRyZXNzaW5nCgpRdWVzdGlvbnMgKDItNCBpdGVtcyk6Ci0gQ2xhcmlmaWNhdGlvbnMgbmVlZGVkCi0gVGhpbmdzIHRoYXQgd291bGQgY2hhbmdlIGFzc2Vzc21lbnQKCk1pbm9yIElzc3VlcyAob3B0aW9uYWwpOgotIFR5cG9zLCB1bmNsZWFyIHNlbnRlbmNlcwotIEZvcm1hdHRpbmcgaXNzdWVzCgpPdmVyYWxsIEFzc2Vzc21lbnQ6Ci0gQ2xlYXIgcmVjb21tZW5kYXRpb24gd2l0aCByZWFzb25pbmcKYGBgCgotLS0KCiMjIENvbW1vbiBSZXZpZXdlciBDb25jZXJucwoKIyMjIFRlY2huaWNhbCBDb25jZXJucwoKfCBDb25jZXJuIHwgSG93IHRvIFByZS1lbXB0IHwKfC0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tLS0tLXwKfCAiQmFzZWxpbmVzIHRvbyB3ZWFrIiB8IFVzZSBzdGF0ZS1vZi10aGUtYXJ0IGJhc2VsaW5lcywgY2l0ZSByZWNlbnQgd29yayB8CnwgIk1pc3NpbmcgYWJsYXRpb25zIiB8IEluY2x1ZGUgc3lzdGVtYXRpYyBhYmxhdGlvbiBzdHVkeSB8CnwgIk5vIGVycm9yIGJhcnMiIHwgUmVwb3J0IHN0ZCBkZXYvZXJyb3IsIG11bHRpcGxlIHJ1bnMgfAp8ICJIeXBlcnBhcmFtZXRlcnMgbm90IHR1bmVkIiB8IERvY3VtZW50IHR1bmluZyBwcm9jZXNzLCBzZWFyY2ggcmFuZ2VzIHwKfCAiQ2xhaW1zIG5vdCBzdXBwb3J0ZWQiIHwgRW5zdXJlIGV2ZXJ5IGNsYWltIGhhcyBldmlkZW5jZSB8CgojIyMgTm92ZWx0eSBDb25jZXJucwoKfCBDb25jZXJuIHwgSG93IHRvIFByZS1lbXB0IHwKfC0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tLS0tLXwKfCAiSW5jcmVtZW50YWwgY29udHJpYnV0aW9uIiB8IENsZWFybHkgYXJ0aWN1bGF0ZSB3aGF0J3MgbmV3IHZzIHByaW9yIHdvcmsgfAp8ICJTaW1pbGFyIHRvIFtwYXBlciBYXSIgfCBFeHBsaWNpdGx5IGNvbXBhcmUgdG8gWCBpbiBSZWxhdGVkIFdvcmsgfAp8ICJTdHJhaWdodGZvcndhcmQgZXh0ZW5zaW9uIiB8IEhpZ2hsaWdodCBub24tb2J2aW91cyBhc3BlY3RzIHwKCiMjIyBDbGFyaXR5IENvbmNlcm5zCgp8IENvbmNlcm4gfCBIb3cgdG8gUHJlLWVtcHQgfAp8LS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS0tfAp8ICJIYXJkIHRvIGZvbGxvdyIgfCBVc2UgY2xlYXIgc3RydWN0dXJlLCBzaWducG9zdGluZyB8CnwgIk5vdGF0aW9uIGluY29uc2lzdGVudCIgfCBSZXZpZXcgYWxsIG5vdGF0aW9uLCBjcmVhdGUgbm90YXRpb24gdGFibGUgfAp8ICJNaXNzaW5nIGRldGFpbHMiIHwgSW5jbHVkZSByZXByb2R1Y2liaWxpdHkgYXBwZW5kaXggfAp8ICJGaWd1cmVzIHVuY2xlYXIiIHwgU2VsZi1jb250YWluZWQgY2FwdGlvbnMsIHByb3BlciBzaXppbmcgfAoKIyMjIFNpZ25pZmljYW5jZSBDb25jZXJucwoKfCBDb25jZXJuIHwgSG93IHRvIFByZS1lbXB0IHwKfC0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tLS0tLXwKfCAiTGltaXRlZCBpbXBhY3QiIHwgRGlzY3VzcyBicm9hZGVyIGltcGxpY2F0aW9ucyB8CnwgIk5hcnJvdyBldmFsdWF0aW9uIiB8IEV2YWx1YXRlIG9uIG11bHRpcGxlIGJlbmNobWFya3MgfAp8ICJPbmx5IHdvcmtzIGluIHJlc3RyaWN0ZWQgc2V0dGluZyIgfCBBY2tub3dsZWRnZSBzY29wZSwgZXhwbGFpbiB3aHkgc3RpbGwgdmFsdWFibGUgfAoKLS0tCgojIyBIb3cgdG8gQWRkcmVzcyBSZXZpZXdlciBGZWVkYmFjawoKIyMjIFJlYnV0dGFsIEJlc3QgUHJhY3RpY2VzCgoqKkRvOioqCi0gVGhhbmsgcmV2aWV3ZXJzIGZvciB0aGVpciB0aW1lCi0gQWRkcmVzcyBlYWNoIGNvbmNlcm4gc3BlY2lmaWNhbGx5Ci0gUHJvdmlkZSBldmlkZW5jZSAobmV3IGV4cGVyaW1lbnRzIGlmIHBvc3NpYmxlKQotIEJlIGNvbmNpc2XigJRyZXZpZXdlcnMgYXJlIGJ1c3kKLSBBY2tub3dsZWRnZSB2YWxpZCBjcml0aWNpc21zCgoqKkRvbid0OioqCi0gQmUgZGVmZW5zaXZlIG9yIGRpc21pc3NpdmUKLSBNYWtlIHByb21pc2VzIHlvdSBjYW4ndCBrZWVwCi0gSWdub3JlIGRpZmZpY3VsdCBjcml0aWNpc21zCi0gV3JpdGUgZXhjZXNzaXZlbHkgbG9uZyByZWJ1dHRhbHMKLSBBcmd1ZSBhYm91dCBzdWJqZWN0aXZlIGFzc2Vzc21lbnRzCgojIyMgUmVidXR0YWwgVGVtcGxhdGUKCmBgYG1hcmtkb3duCldlIHRoYW5rIHRoZSByZXZpZXdlcnMgZm9yIHRoZWlyIHRob3VnaHRmdWwgZmVlZGJhY2suCgojIyBSZXZpZXdlciAxCgoqKlIxLVExOiBbUXVvdGVkIGNvbmNlcm5dKioKW0RpcmVjdCByZXNwb25zZSB3aXRoIGV2aWRlbmNlXQoKKipSMS1RMjogW1F1b3RlZCBjb25jZXJuXSoqCltEaXJlY3QgcmVzcG9uc2Ugd2l0aCBldmlkZW5jZV0KCiMjIFJldmlld2VyIDIKCi4uLgoKIyMgU3VtbWFyeSBvZiBDaGFuZ2VzCklmIGFjY2VwdGVkLCB3ZSB3aWxsOgoxLiBbU3BlY2lmaWMgY2hhbmdlXQoyLiBbU3BlY2lmaWMgY2hhbmdlXQozLiBbU3BlY2lmaWMgY2hhbmdlXQpgYGAKCiMjIyBXaGVuIHRvIEFjY2VwdCBDcml0aWNpc20KClNvbWUgcmV2aWV3ZXIgZmVlZGJhY2sgc2hvdWxkIHNpbXBseSBiZSBhY2NlcHRlZDoKLSBWYWxpZCB0ZWNobmljYWwgZXJyb3JzCi0gTWlzc2luZyBpbXBvcnRhbnQgcmVsYXRlZCB3b3JrCi0gVW5jbGVhciBleHBsYW5hdGlvbnMKLSBNaXNzaW5nIGV4cGVyaW1lbnRhbCBkZXRhaWxzCgpBY2tub3dsZWRnZSB0aGVzZSBncmFjZWZ1bGx5OiAiVGhlIHJldmlld2VyIGlzIGNvcnJlY3QgdGhhdC4uLiBXZSB3aWxsIHJldmlzZSB0by4uLiIKCiMjIyBXaGVuIHRvIFB1c2ggQmFjawoKWW91IGNhbiByZXNwZWN0ZnVsbHkgZGlzYWdyZWUgd2hlbjoKLSBSZXZpZXdlciBtaXN1bmRlcnN0b29kIHRoZSBwYXBlcgotIFJlcXVlc3RlZCBleHBlcmltZW50cyBhcmUgb3V0IG9mIHNjb3BlCi0gQ3JpdGljaXNtIGlzIGZhY3R1YWxseSBpbmNvcnJlY3QKCkZyYW1lIGRpc2FncmVlbWVudHMgY29uc3RydWN0aXZlbHk6ICJXZSBhcHByZWNpYXRlIHRoaXMgcGVyc3BlY3RpdmUuIEhvd2V2ZXIsIFtleHBsYW5hdGlvbl0uLi4iCgotLS0KCiMjIFByZS1TdWJtaXNzaW9uIFJldmlld2VyIFNpbXVsYXRpb24KCkJlZm9yZSBzdWJtaXR0aW5nLCBhc2sgeW91cnNlbGY6CgoqKlF1YWxpdHk6KioKLSBbIF0gV291bGQgSSB0cnVzdCB0aGVzZSByZXN1bHRzIGlmIEkgc2F3IHRoZW0/Ci0gWyBdIEFyZSBhbGwgY2xhaW1zIHN1cHBvcnRlZCBieSBldmlkZW5jZT8KLSBbIF0gQXJlIGJhc2VsaW5lcyBmYWlyIGFuZCByZWNlbnQ/CgoqKkNsYXJpdHk6KioKLSBbIF0gQ2FuIHNvbWVvbmUgcmVwcm9kdWNlIHRoaXMgZnJvbSB0aGUgcGFwZXI/Ci0gWyBdIElzIHRoZSB3cml0aW5nIGNsZWFyIHRvIG5vbi1leHBlcnRzIGluIHRoaXMgc3ViZmllbGQ/Ci0gWyBdIEFyZSBhbGwgdGVybXMgYW5kIG5vdGF0aW9uIGRlZmluZWQ/CgoqKlNpZ25pZmljYW5jZToqKgotIFsgXSBXaHkgc2hvdWxkIHRoZSBjb21tdW5pdHkgY2FyZSBhYm91dCB0aGlzPwotIFsgXSBXaGF0IGNhbiBwZW9wbGUgZG8gd2l0aCB0aGlzIHdvcms/Ci0gWyBdIElzIHRoZSBwcm9ibGVtIGltcG9ydGFudD8KCioqT3JpZ2luYWxpdHk6KioKLSBbIF0gV2hhdCBzcGVjaWZpY2FsbHkgaXMgbmV3IGhlcmU/Ci0gWyBdIEhvdyBkb2VzIHRoaXMgZGlmZmVyIGZyb20gY2xvc2VzdCByZWxhdGVkIHdvcms/Ci0gWyBdIElzIHRoZSBjb250cmlidXRpb24gbm9uLXRyaXZpYWw/Cg==
+# Reviewer Guidelines & Evaluation Criteria
+
+This reference documents how reviewers evaluate papers at major ML/AI conferences, helping authors anticipate and address reviewer concerns.
+
+---
+
+## Contents
+
+- [Universal Evaluation Dimensions](#universal-evaluation-dimensions)
+- [NeurIPS Reviewer Guidelines](#neurips-reviewer-guidelines)
+- [ICML Reviewer Guidelines](#icml-reviewer-guidelines)
+- [ICLR Reviewer Guidelines](#iclr-reviewer-guidelines)
+- [ACL Reviewer Guidelines](#acl-reviewer-guidelines)
+- [What Makes Reviews Strong](#what-makes-reviews-strong)
+- [Common Reviewer Concerns](#common-reviewer-concerns)
+- [How to Address Reviewer Feedback](#how-to-address-reviewer-feedback)
+
+---
+
+## Universal Evaluation Dimensions
+
+All major ML conferences assess papers across four core dimensions:
+
+### 1. Quality (Technical Soundness)
+
+**What reviewers ask:**
+- Are claims well-supported by theoretical analysis or experimental results?
+- Are the proofs correct? Are the experiments properly controlled?
+- Are baselines appropriate and fairly compared?
+- Is the methodology sound?
+
+**How to ensure high quality:**
+- Include complete proofs (main paper or appendix with sketches)
+- Use appropriate baselines (not strawmen)
+- Report variance/error bars with methodology
+- Document hyperparameter selection process
+
+### 2. Clarity (Writing & Organization)
+
+**What reviewers ask:**
+- Is the paper clearly written and well organized?
+- Can an expert in the field reproduce the results?
+- Is notation consistent? Are terms defined?
+- Is the paper self-contained?
+
+**How to ensure clarity:**
+- Use consistent terminology throughout
+- Define all notation at first use
+- Include reproducibility details (appendix acceptable)
+- Have non-authors read before submission
+
+### 3. Significance (Impact & Importance)
+
+**What reviewers ask:**
+- Are the results impactful for the community?
+- Will others build upon this work?
+- Does it address an important problem?
+- What is the potential for real-world impact?
+
+**How to demonstrate significance:**
+- Clearly articulate the problem's importance
+- Connect to broader research themes
+- Discuss potential applications
+- Compare to existing approaches meaningfully
+
+### 4. Originality (Novelty & Contribution)
+
+**What reviewers ask:**
+- Does this provide new insights?
+- How does it differ from prior work?
+- Is the contribution non-trivial?
+
+**Key insight from NeurIPS guidelines:**
+> "Originality does not necessarily require introducing an entirely new method. Papers that provide novel insights from evaluating existing approaches or shed light on why methods succeed can also be highly original."
+
+---
+
+## NeurIPS Reviewer Guidelines
+
+### Scoring System (1-6 Scale)
+
+| Score | Label | Description |
+|-------|-------|-------------|
+| **6** | Strong Accept | Groundbreaking, flawless work; top 2-3% of submissions |
+| **5** | Accept | Technically solid, high impact; would benefit the community |
+| **4** | Borderline Accept | Solid work with limited evaluation; leans accept |
+| **3** | Borderline Reject | Solid but weaknesses outweigh strengths; leans reject |
+| **2** | Reject | Technical flaws or weak evaluation |
+| **1** | Strong Reject | Well-known results or unaddressed ethics concerns |
+
+### Reviewer Instructions
+
+Reviewers are explicitly instructed to:
+
+1. **Evaluate the paper as written** - not what it could be with revisions
+2. **Provide constructive feedback** - 3-5 actionable points
+3. **Not penalize honest limitations** - acknowledging weaknesses is encouraged
+4. **Assess reproducibility** - can the work be verified?
+5. **Consider ethical implications** - potential misuse or harm
+
+### What Reviewers Should Avoid
+
+- Superficial, uninformed reviews
+- Demanding unreasonable additional experiments
+- Penalizing authors for honest limitation acknowledgment
+- Rejecting for missing citations to reviewer's own work
+
+### Timeline (NeurIPS 2025 — verify dates for current year)
+
+- Bidding: May 17-21
+- Reviewing period: May 29 - July 2
+- Author rebuttals: July 24-30
+- Discussion period: July 31 - August 13
+- Final notifications: September 18
+
+> **Note**: These dates are from the 2025 cycle. Always check the current year's call for papers at the venue website.
+
+---
+
+## ICML Reviewer Guidelines
+
+### Review Structure
+
+ICML reviewers provide:
+
+1. **Summary** - Brief description of contributions
+2. **Strengths** - Positive aspects
+3. **Weaknesses** - Areas for improvement
+4. **Questions** - Clarifications for authors
+5. **Limitations** - Assessment of stated limitations
+6. **Ethics** - Any concerns
+7. **Overall Score** - Recommendation
+
+### Scoring Guidelines
+
+ICML uses a similar 1-6 scale with calibration:
+- Top 25% of accepted papers: Score 5-6
+- Typical accepted paper: Score 4-5
+- Borderline: Score 3-4
+- Clear reject: Score 1-2
+
+### Key Evaluation Points
+
+1. **Reproducibility** - Are there enough details?
+2. **Experimental rigor** - Multiple seeds, proper baselines?
+3. **Writing quality** - Clear, organized, well-structured?
+4. **Novelty** - Non-trivial contribution?
+
+---
+
+## ICLR Reviewer Guidelines
+
+### OpenReview Process
+
+ICLR uses OpenReview with:
+- Public reviews (after acceptance decisions)
+- Author responses visible to reviewers
+- Discussion between reviewers and ACs
+
+### Scoring
+
+ICLR reviews include:
+- **Soundness**: 1-4 scale
+- **Presentation**: 1-4 scale
+- **Contribution**: 1-4 scale
+- **Overall**: 1-10 scale
+- **Confidence**: 1-5 scale
+
+### Unique ICLR Considerations
+
+1. **LLM Disclosure** - Reviewers assess whether LLM use is properly disclosed
+2. **Reproducibility** - Emphasis on code availability
+3. **Reciprocal Reviewing** - Authors must also serve as reviewers
+
+---
+
+## ACL Reviewer Guidelines
+
+### ACL-Specific Criteria
+
+ACL adds NLP-specific evaluation:
+
+1. **Linguistic soundness** - Are linguistic claims accurate?
+2. **Resource documentation** - Are datasets/models properly documented?
+3. **Multilingual consideration** - If applicable, is language diversity addressed?
+
+### Limitations Section
+
+ACL specifically requires a Limitations section. Reviewers check:
+- Are limitations honest and comprehensive?
+- Do limitations undermine core claims?
+- Are potential negative impacts addressed?
+
+### Ethics Review
+
+ACL has a dedicated ethics review process for:
+- Dual-use concerns
+- Data privacy issues
+- Bias and fairness implications
+
+---
+
+## AAAI Reviewer Guidelines
+
+### Evaluation Criteria
+
+AAAI reviewers evaluate along similar axes to NeurIPS/ICML but with some differences:
+
+| Criterion | Weight | Notes |
+|-----------|--------|-------|
+| **Technical quality** | High | Soundness of approach, correctness of results |
+| **Significance** | High | Importance of the problem and contribution |
+| **Novelty** | Medium-High | New ideas, methods, or insights |
+| **Clarity** | Medium | Clear writing, well-organized presentation |
+| **Reproducibility** | Medium | Sufficient detail to reproduce results |
+
+### AAAI-Specific Considerations
+
+- **Broader AI scope**: AAAI covers all of AI, not just ML. Papers on planning, reasoning, knowledge representation, NLP, vision, robotics, and multi-agent systems are all in scope. Reviewers may not be deep ML specialists.
+- **Formatting strictness**: AAAI reviewers are instructed to flag formatting violations. Non-compliant papers may be desk-rejected before review.
+- **Application papers**: AAAI is more receptive to application-focused work than NeurIPS/ICML. Framing a strong application contribution is viable.
+- **Senior Program Committee**: AAAI uses SPCs (Senior Program Committee members) who mediate between reviewers and make accept/reject recommendations.
+
+### Scoring (AAAI Scale)
+
+- **Strong Accept**: Clearly above threshold, excellent contribution
+- **Accept**: Above threshold, good contribution with minor issues
+- **Weak Accept**: Borderline, merits outweigh concerns
+- **Weak Reject**: Borderline, concerns outweigh merits
+- **Reject**: Below threshold, significant issues
+- **Strong Reject**: Well below threshold
+
+---
+
+## COLM Reviewer Guidelines
+
+### Evaluation Criteria
+
+COLM reviews focus on relevance to language modeling in addition to standard criteria:
+
+| Criterion | Weight | Notes |
+|-----------|--------|-------|
+| **Relevance** | High | Must be relevant to language modeling community |
+| **Technical quality** | High | Sound methodology, well-supported claims |
+| **Novelty** | Medium-High | New insights about language models |
+| **Clarity** | Medium | Clear presentation, reproducible |
+| **Significance** | Medium-High | Impact on LM research and practice |
+
+### COLM-Specific Considerations
+
+- **Language model focus**: Reviewers will assess whether the contribution advances understanding of language models. General ML contributions need explicit LM framing.
+- **Newer venue norms**: COLM is newer than NeurIPS/ICML, so reviewer calibration varies more. Write more defensively — anticipate a wider range of reviewer expertise.
+- **ICLR-derived process**: Review process is modeled on ICLR (open reviews, author response period, discussion among reviewers).
+- **Broad interpretation of "language modeling"**: Includes training, evaluation, alignment, safety, efficiency, applications, theory, multimodality (if language is central), and social impact of LMs.
+
+### Scoring
+
+COLM uses an ICLR-style scoring system:
+- **8-10**: Strong accept (top papers)
+- **6-7**: Weak accept (solid contribution)
+- **5**: Borderline
+- **3-4**: Weak reject (below threshold)
+- **1-2**: Strong reject
+
+---
+
+## What Makes Reviews Strong
+
+### Following Daniel Dennett's Rules
+
+Good reviewers follow these principles:
+
+1. **Re-express the position fairly** - Show you understand the paper
+2. **List agreements** - Acknowledge what works well
+3. **List what you learned** - Credit the contribution
+4. **Only then critique** - After establishing understanding
+
+### Review Structure Best Practices
+
+**Strong Review Structure:**
+```
+Summary (1 paragraph):
+- What the paper does
+- Main contribution claimed
+
+Strengths (3-5 bullets):
+- Specific positive aspects
+- Why these matter
+
+Weaknesses (3-5 bullets):
+- Specific concerns
+- Why these matter
+- Suggestions for addressing
+
+Questions (2-4 items):
+- Clarifications needed
+- Things that would change assessment
+
+Minor Issues (optional):
+- Typos, unclear sentences
+- Formatting issues
+
+Overall Assessment:
+- Clear recommendation with reasoning
+```
+
+---
+
+## Common Reviewer Concerns
+
+### Technical Concerns
+
+| Concern | How to Pre-empt |
+|---------|-----------------|
+| "Baselines too weak" | Use state-of-the-art baselines, cite recent work |
+| "Missing ablations" | Include systematic ablation study |
+| "No error bars" | Report std dev/error, multiple runs |
+| "Hyperparameters not tuned" | Document tuning process, search ranges |
+| "Claims not supported" | Ensure every claim has evidence |
+
+### Novelty Concerns
+
+| Concern | How to Pre-empt |
+|---------|-----------------|
+| "Incremental contribution" | Clearly articulate what's new vs prior work |
+| "Similar to [paper X]" | Explicitly compare to X in Related Work |
+| "Straightforward extension" | Highlight non-obvious aspects |
+
+### Clarity Concerns
+
+| Concern | How to Pre-empt |
+|---------|-----------------|
+| "Hard to follow" | Use clear structure, signposting |
+| "Notation inconsistent" | Review all notation, create notation table |
+| "Missing details" | Include reproducibility appendix |
+| "Figures unclear" | Self-contained captions, proper sizing |
+
+### Significance Concerns
+
+| Concern | How to Pre-empt |
+|---------|-----------------|
+| "Limited impact" | Discuss broader implications |
+| "Narrow evaluation" | Evaluate on multiple benchmarks |
+| "Only works in restricted setting" | Acknowledge scope, explain why still valuable |
+
+---
+
+## How to Address Reviewer Feedback
+
+### Rebuttal Best Practices
+
+**Do:**
+- Thank reviewers for their time
+- Address each concern specifically
+- Provide evidence (new experiments if possible)
+- Be concise—reviewers are busy
+- Acknowledge valid criticisms
+
+**Don't:**
+- Be defensive or dismissive
+- Make promises you can't keep
+- Ignore difficult criticisms
+- Write excessively long rebuttals
+- Argue about subjective assessments
+
+### Rebuttal Template
+
+```markdown
+We thank the reviewers for their thoughtful feedback.
+
+## Reviewer 1
+
+**R1-Q1: [Quoted concern]**
+[Direct response with evidence]
+
+**R1-Q2: [Quoted concern]**
+[Direct response with evidence]
+
+## Reviewer 2
+
+...
+
+## Summary of Changes
+If accepted, we will:
+1. [Specific change]
+2. [Specific change]
+3. [Specific change]
+```
+
+### When to Accept Criticism
+
+Some reviewer feedback should simply be accepted:
+- Valid technical errors
+- Missing important related work
+- Unclear explanations
+- Missing experimental details
+
+Acknowledge these gracefully: "The reviewer is correct that... We will revise to..."
+
+### When to Push Back
+
+You can respectfully disagree when:
+- Reviewer misunderstood the paper
+- Requested experiments are out of scope
+- Criticism is factually incorrect
+
+Frame disagreements constructively: "We appreciate this perspective. However, [explanation]..."
+
+---
+
+## Pre-Submission Reviewer Simulation
+
+Before submitting, ask yourself:
+
+**Quality:**
+- [ ] Would I trust these results if I saw them?
+- [ ] Are all claims supported by evidence?
+- [ ] Are baselines fair and recent?
+
+**Clarity:**
+- [ ] Can someone reproduce this from the paper?
+- [ ] Is the writing clear to non-experts in this subfield?
+- [ ] Are all terms and notation defined?
+
+**Significance:**
+- [ ] Why should the community care about this?
+- [ ] What can people do with this work?
+- [ ] Is the problem important?
+
+**Originality:**
+- [ ] What specifically is new here?
+- [ ] How does this differ from closest related work?
+- [ ] Is the contribution non-trivial?

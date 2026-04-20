@@ -1,1 +1,279 @@
-LS0tCm5hbWU6IGdvb2dsZS13b3Jrc3BhY2UKZGVzY3JpcHRpb246IEdtYWlsLCBDYWxlbmRhciwgRHJpdmUsIENvbnRhY3RzLCBTaGVldHMsIGFuZCBEb2NzIGludGVncmF0aW9uIGZvciBIZXJtZXMuIFVzZXMgSGVybWVzLW1hbmFnZWQgT0F1dGgyIHNldHVwLCBwcmVmZXJzIHRoZSBHb29nbGUgV29ya3NwYWNlIENMSSAoYGd3c2ApIHdoZW4gYXZhaWxhYmxlIGZvciBicm9hZGVyIEFQSSBjb3ZlcmFnZSwgYW5kIGZhbGxzIGJhY2sgdG8gdGhlIFB5dGhvbiBjbGllbnQgbGlicmFyaWVzIG90aGVyd2lzZS4KdmVyc2lvbjogMS4wLjAKYXV0aG9yOiBOb3VzIFJlc2VhcmNoCmxpY2Vuc2U6IE1JVAptZXRhZGF0YToKICBoZXJtZXM6CiAgICB0YWdzOiBbR29vZ2xlLCBHbWFpbCwgQ2FsZW5kYXIsIERyaXZlLCBTaGVldHMsIERvY3MsIENvbnRhY3RzLCBFbWFpbCwgT0F1dGhdCiAgICBob21lcGFnZTogaHR0cHM6Ly9naXRodWIuY29tL05vdXNSZXNlYXJjaC9oZXJtZXMtYWdlbnQKICAgIHJlbGF0ZWRfc2tpbGxzOiBbaGltYWxheWFdCi0tLQoKIyBHb29nbGUgV29ya3NwYWNlCgpHbWFpbCwgQ2FsZW5kYXIsIERyaXZlLCBDb250YWN0cywgU2hlZXRzLCBhbmQgRG9jcyDigJQgdGhyb3VnaCBIZXJtZXMtbWFuYWdlZCBPQXV0aCBhbmQgYSB0aGluIENMSSB3cmFwcGVyLiBXaGVuIGBnd3NgIGlzIGluc3RhbGxlZCwgdGhlIHNraWxsIHVzZXMgaXQgYXMgdGhlIGV4ZWN1dGlvbiBiYWNrZW5kIGZvciBicm9hZGVyIEdvb2dsZSBXb3Jrc3BhY2UgY292ZXJhZ2U7IG90aGVyd2lzZSBpdCBmYWxscyBiYWNrIHRvIHRoZSBidW5kbGVkIFB5dGhvbiBjbGllbnQgaW1wbGVtZW50YXRpb24uCgojIyBSZWZlcmVuY2VzCgotIGByZWZlcmVuY2VzL2dtYWlsLXNlYXJjaC1zeW50YXgubWRgIOKAlCBHbWFpbCBzZWFyY2ggb3BlcmF0b3JzIChpczp1bnJlYWQsIGZyb206LCBuZXdlcl90aGFuOiwgZXRjLikKCiMjIFNjcmlwdHMKCi0gYHNjcmlwdHMvc2V0dXAucHlgIOKAlCBPQXV0aDIgc2V0dXAgKHJ1biBvbmNlIHRvIGF1dGhvcml6ZSkKLSBgc2NyaXB0cy9nb29nbGVfYXBpLnB5YCDigJQgY29tcGF0aWJpbGl0eSB3cmFwcGVyIENMSS4gSXQgcHJlZmVycyBgZ3dzYCBmb3Igb3BlcmF0aW9ucyB3aGVuIGF2YWlsYWJsZSwgd2hpbGUgcHJlc2VydmluZyBIZXJtZXMnIGV4aXN0aW5nIEpTT04gb3V0cHV0IGNvbnRyYWN0LgoKIyMgRmlyc3QtVGltZSBTZXR1cAoKVGhlIHNldHVwIGlzIGZ1bGx5IG5vbi1pbnRlcmFjdGl2ZSDigJQgeW91IGRyaXZlIGl0IHN0ZXAgYnkgc3RlcCBzbyBpdCB3b3JrcwpvbiBDTEksIFRlbGVncmFtLCBEaXNjb3JkLCBvciBhbnkgcGxhdGZvcm0uCgpEZWZpbmUgYSBzaG9ydGhhbmQgZmlyc3Q6CgpgYGBiYXNoCkdTRVRVUD0icHl0aG9uICR7SEVSTUVTX0hPTUU6LSRIT01FLy5oZXJtZXN9L3NraWxscy9wcm9kdWN0aXZpdHkvZ29vZ2xlLXdvcmtzcGFjZS9zY3JpcHRzL3NldHVwLnB5IgpgYGAKCiMjIyBTdGVwIDA6IENoZWNrIGlmIGFscmVhZHkgc2V0IHVwCgpgYGBiYXNoCiRHU0VUVVAgLS1jaGVjawpgYGAKCklmIGl0IHByaW50cyBgQVVUSEVOVElDQVRFRGAsIHNraXAgdG8gVXNhZ2Ug4oCUIHNldHVwIGlzIGFscmVhZHkgZG9uZS4KCiMjIyBTdGVwIDE6IFRyaWFnZSDigJQgYXNrIHRoZSB1c2VyIHdoYXQgdGhleSBuZWVkCgpCZWZvcmUgc3RhcnRpbmcgT0F1dGggc2V0dXAsIGFzayB0aGUgdXNlciBUV08gcXVlc3Rpb25zOgoKKipRdWVzdGlvbiAxOiAiV2hhdCBHb29nbGUgc2VydmljZXMgZG8geW91IG5lZWQ/IEp1c3QgZW1haWwsIG9yIGFsc28KQ2FsZW5kYXIvRHJpdmUvU2hlZXRzL0RvY3M/IioqCgotICoqRW1haWwgb25seSoqIOKGkiBUaGV5IGRvbid0IG5lZWQgdGhpcyBza2lsbCBhdCBhbGwuIFVzZSB0aGUgYGhpbWFsYXlhYCBza2lsbAogIGluc3RlYWQg4oCUIGl0IHdvcmtzIHdpdGggYSBHbWFpbCBBcHAgUGFzc3dvcmQgKFNldHRpbmdzIOKGkiBTZWN1cml0eSDihpIgQXBwCiAgUGFzc3dvcmRzKSBhbmQgdGFrZXMgMiBtaW51dGVzIHRvIHNldCB1cC4gTm8gR29vZ2xlIENsb3VkIHByb2plY3QgbmVlZGVkLgogIExvYWQgdGhlIGhpbWFsYXlhIHNraWxsIGFuZCBmb2xsb3cgaXRzIHNldHVwIGluc3RydWN0aW9ucy4KCi0gKipFbWFpbCArIENhbGVuZGFyKiog4oaSIENvbnRpbnVlIHdpdGggdGhpcyBza2lsbCwgYnV0IHVzZQogIGAtLXNlcnZpY2VzIGVtYWlsLGNhbGVuZGFyYCBkdXJpbmcgYXV0aCBzbyB0aGUgY29uc2VudCBzY3JlZW4gb25seSBhc2tzIGZvcgogIHRoZSBzY29wZXMgdGhleSBhY3R1YWxseSBuZWVkLgoKLSAqKkNhbGVuZGFyL0RyaXZlL1NoZWV0cy9Eb2NzIG9ubHkqKiDihpIgQ29udGludWUgd2l0aCB0aGlzIHNraWxsIGFuZCB1c2UgYQogIG5hcnJvd2VyIGAtLXNlcnZpY2VzYCBzZXQgbGlrZSBgY2FsZW5kYXIsZHJpdmUsc2hlZXRzLGRvY3NgLgoKLSAqKkZ1bGwgV29ya3NwYWNlIGFjY2VzcyoqIOKGkiBDb250aW51ZSB3aXRoIHRoaXMgc2tpbGwgYW5kIHVzZSB0aGUgZGVmYXVsdAogIGBhbGxgIHNlcnZpY2Ugc2V0LgoKKipRdWVzdGlvbiAyOiAiRG9lcyB5b3VyIEdvb2dsZSBhY2NvdW50IHVzZSBBZHZhbmNlZCBQcm90ZWN0aW9uIChoYXJkd2FyZQpzZWN1cml0eSBrZXlzIHJlcXVpcmVkIHRvIHNpZ24gaW4pPyBJZiB5b3UncmUgbm90IHN1cmUsIHlvdSBwcm9iYWJseSBkb24ndArigJQgaXQncyBzb21ldGhpbmcgeW91IHdvdWxkIGhhdmUgZXhwbGljaXRseSBlbnJvbGxlZCBpbi4iKioKCi0gKipObyAvIE5vdCBzdXJlKiog4oaSIE5vcm1hbCBzZXR1cC4gQ29udGludWUgYmVsb3cuCi0gKipZZXMqKiDihpIgVGhlaXIgV29ya3NwYWNlIGFkbWluIG11c3QgYWRkIHRoZSBPQXV0aCBjbGllbnQgSUQgdG8gdGhlIG9yZydzCiAgYWxsb3dlZCBhcHBzIGxpc3QgYmVmb3JlIFN0ZXAgNCB3aWxsIHdvcmsuIExldCB0aGVtIGtub3cgdXBmcm9udC4KCiMjIyBTdGVwIDI6IENyZWF0ZSBPQXV0aCBjcmVkZW50aWFscyAob25lLXRpbWUsIH41IG1pbnV0ZXMpCgpUZWxsIHRoZSB1c2VyOgoKPiBZb3UgbmVlZCBhIEdvb2dsZSBDbG91ZCBPQXV0aCBjbGllbnQuIFRoaXMgaXMgYSBvbmUtdGltZSBzZXR1cDoKPgo+IDEuIENyZWF0ZSBvciBzZWxlY3QgYSBwcm9qZWN0Ogo+ICAgIGh0dHBzOi8vY29uc29sZS5jbG91ZC5nb29nbGUuY29tL3Byb2plY3RzZWxlY3RvcjIvaG9tZS9kYXNoYm9hcmQKPiAyLiBFbmFibGUgdGhlIHJlcXVpcmVkIEFQSXMgZnJvbSB0aGUgQVBJIExpYnJhcnk6Cj4gICAgaHR0cHM6Ly9jb25zb2xlLmNsb3VkLmdvb2dsZS5jb20vYXBpcy9saWJyYXJ5Cj4gICAgRW5hYmxlOiBHbWFpbCBBUEksIEdvb2dsZSBDYWxlbmRhciBBUEksIEdvb2dsZSBEcml2ZSBBUEksCj4gICAgR29vZ2xlIFNoZWV0cyBBUEksIEdvb2dsZSBEb2NzIEFQSSwgUGVvcGxlIEFQSQo+IDMuIENyZWF0ZSB0aGUgT0F1dGggY2xpZW50IGhlcmU6Cj4gICAgaHR0cHM6Ly9jb25zb2xlLmNsb3VkLmdvb2dsZS5jb20vYXBpcy9jcmVkZW50aWFscwo+ICAgIENyZWRlbnRpYWxzIOKGkiBDcmVhdGUgQ3JlZGVudGlhbHMg4oaSIE9BdXRoIDIuMCBDbGllbnQgSUQKPiA0LiBBcHBsaWNhdGlvbiB0eXBlOiAiRGVza3RvcCBhcHAiIOKGkiBDcmVhdGUKPiA1LiBJZiB0aGUgYXBwIGlzIHN0aWxsIGluIFRlc3RpbmcsIGFkZCB0aGUgdXNlcidzIEdvb2dsZSBhY2NvdW50IGFzIGEgdGVzdCB1c2VyIGhlcmU6Cj4gICAgaHR0cHM6Ly9jb25zb2xlLmNsb3VkLmdvb2dsZS5jb20vYXV0aC9hdWRpZW5jZQo+ICAgIEF1ZGllbmNlIOKGkiBUZXN0IHVzZXJzIOKGkiBBZGQgdXNlcnMKPiA2LiBEb3dubG9hZCB0aGUgSlNPTiBmaWxlIGFuZCB0ZWxsIG1lIHRoZSBmaWxlIHBhdGgKPgo+IEltcG9ydGFudCBIZXJtZXMgQ0xJIG5vdGU6IGlmIHRoZSBmaWxlIHBhdGggc3RhcnRzIHdpdGggYC9gLCBkbyBOT1Qgc2VuZCBvbmx5IHRoZSBiYXJlIHBhdGggYXMgaXRzIG93biBtZXNzYWdlIGluIHRoZSBDTEksIGJlY2F1c2UgaXQgY2FuIGJlIG1pc3Rha2VuIGZvciBhIHNsYXNoIGNvbW1hbmQuIFNlbmQgaXQgaW4gYSBzZW50ZW5jZSBpbnN0ZWFkLCBsaWtlOgo+IGBUaGUgSlNPTiBmaWxlIHBhdGggaXM6IC9ob21lL3VzZXIvRG93bmxvYWRzL2NsaWVudF9zZWNyZXRfLi4uLmpzb25gCgpPbmNlIHRoZXkgcHJvdmlkZSB0aGUgcGF0aDoKCmBgYGJhc2gKJEdTRVRVUCAtLWNsaWVudC1zZWNyZXQgL3BhdGgvdG8vY2xpZW50X3NlY3JldC5qc29uCmBgYAoKSWYgdGhleSBwYXN0ZSB0aGUgcmF3IGNsaWVudCBJRCAvIGNsaWVudCBzZWNyZXQgdmFsdWVzIGluc3RlYWQgb2YgYSBmaWxlIHBhdGgsCndyaXRlIGEgdmFsaWQgRGVza3RvcCBPQXV0aCBKU09OIGZpbGUgZm9yIHRoZW0geW91cnNlbGYsIHNhdmUgaXQgc29tZXdoZXJlCmV4cGxpY2l0IChmb3IgZXhhbXBsZSBgfi9Eb3dubG9hZHMvaGVybWVzLWdvb2dsZS1jbGllbnQtc2VjcmV0Lmpzb25gKSwgdGhlbiBydW4KYC0tY2xpZW50LXNlY3JldGAgYWdhaW5zdCB0aGF0IGZpbGUuCgojIyMgU3RlcCAzOiBHZXQgYXV0aG9yaXphdGlvbiBVUkwKClVzZSB0aGUgc2VydmljZSBzZXQgY2hvc2VuIGluIFN0ZXAgMS4gRXhhbXBsZXM6CgpgYGBiYXNoCiRHU0VUVVAgLS1hdXRoLXVybCAtLXNlcnZpY2VzIGVtYWlsLGNhbGVuZGFyIC0tZm9ybWF0IGpzb24KJEdTRVRVUCAtLWF1dGgtdXJsIC0tc2VydmljZXMgY2FsZW5kYXIsZHJpdmUsc2hlZXRzLGRvY3MgLS1mb3JtYXQganNvbgokR1NFVFVQIC0tYXV0aC11cmwgLS1zZXJ2aWNlcyBhbGwgLS1mb3JtYXQganNvbgpgYGAKClRoaXMgcmV0dXJucyBKU09OIHdpdGggYW4gYGF1dGhfdXJsYCBmaWVsZCBhbmQgYWxzbyBzYXZlcyB0aGUgZXhhY3QgVVJMIHRvCmB+Ly5oZXJtZXMvZ29vZ2xlX29hdXRoX2xhc3RfdXJsLnR4dGAuCgpBZ2VudCBydWxlcyBmb3IgdGhpcyBzdGVwOgotIEV4dHJhY3QgdGhlIGBhdXRoX3VybGAgZmllbGQgYW5kIHNlbmQgdGhhdCBleGFjdCBVUkwgdG8gdGhlIHVzZXIgYXMgYSBzaW5nbGUgbGluZS4KLSBUZWxsIHRoZSB1c2VyIHRoYXQgdGhlIGJyb3dzZXIgd2lsbCBsaWtlbHkgZmFpbCBvbiBgaHR0cDovL2xvY2FsaG9zdDoxYCBhZnRlciBhcHByb3ZhbCwgYW5kIHRoYXQgdGhpcyBpcyBleHBlY3RlZC4KLSBUZWxsIHRoZW0gdG8gY29weSB0aGUgRU5USVJFIHJlZGlyZWN0ZWQgVVJMIGZyb20gdGhlIGJyb3dzZXIgYWRkcmVzcyBiYXIuCi0gSWYgdGhlIHVzZXIgZ2V0cyBgRXJyb3IgNDAzOiBhY2Nlc3NfZGVuaWVkYCwgc2VuZCB0aGVtIGRpcmVjdGx5IHRvIGBodHRwczovL2NvbnNvbGUuY2xvdWQuZ29vZ2xlLmNvbS9hdXRoL2F1ZGllbmNlYCB0byBhZGQgdGhlbXNlbHZlcyBhcyBhIHRlc3QgdXNlci4KCiMjIyBTdGVwIDQ6IEV4Y2hhbmdlIHRoZSBjb2RlCgpUaGUgdXNlciB3aWxsIHBhc3RlIGJhY2sgZWl0aGVyIGEgVVJMIGxpa2UgYGh0dHA6Ly9sb2NhbGhvc3Q6MS8/Y29kZT00LzBBLi4uJnNjb3BlPS4uLmAKb3IganVzdCB0aGUgY29kZSBzdHJpbmcuIEVpdGhlciB3b3Jrcy4gVGhlIGAtLWF1dGgtdXJsYCBzdGVwIHN0b3JlcyBhIHRlbXBvcmFyeQpwZW5kaW5nIE9BdXRoIHNlc3Npb24gbG9jYWxseSBzbyBgLS1hdXRoLWNvZGVgIGNhbiBjb21wbGV0ZSB0aGUgUEtDRSBleGNoYW5nZQpsYXRlciwgZXZlbiBvbiBoZWFkbGVzcyBzeXN0ZW1zOgoKYGBgYmFzaAokR1NFVFVQIC0tYXV0aC1jb2RlICJUSEVfVVJMX09SX0NPREVfVEhFX1VTRVJfUEFTVEVEIiAtLWZvcm1hdCBqc29uCmBgYAoKSWYgYC0tYXV0aC1jb2RlYCBmYWlscyBiZWNhdXNlIHRoZSBjb2RlIGV4cGlyZWQsIHdhcyBhbHJlYWR5IHVzZWQsIG9yIGNhbWUgZnJvbQphbiBvbGRlciBicm93c2VyIHRhYiwgaXQgbm93IHJldHVybnMgYSBmcmVzaCBgZnJlc2hfYXV0aF91cmxgLiBJbiB0aGF0IGNhc2UsCmltbWVkaWF0ZWx5IHNlbmQgdGhlIG5ldyBVUkwgdG8gdGhlIHVzZXIgYW5kIGhhdmUgdGhlbSByZXRyeSB3aXRoIHRoZSBuZXdlc3QKYnJvd3NlciByZWRpcmVjdCBvbmx5LgoKIyMjIFN0ZXAgNTogVmVyaWZ5CgpgYGBiYXNoCiRHU0VUVVAgLS1jaGVjawpgYGAKClNob3VsZCBwcmludCBgQVVUSEVOVElDQVRFRGAuIFNldHVwIGlzIGNvbXBsZXRlIOKAlCB0b2tlbiByZWZyZXNoZXMgYXV0b21hdGljYWxseSBmcm9tIG5vdyBvbi4KCiMjIyBOb3RlcwoKLSBUb2tlbiBpcyBzdG9yZWQgYXQgYH4vLmhlcm1lcy9nb29nbGVfdG9rZW4uanNvbmAgYW5kIGF1dG8tcmVmcmVzaGVzLgotIFBlbmRpbmcgT0F1dGggc2Vzc2lvbiBzdGF0ZS92ZXJpZmllciBhcmUgc3RvcmVkIHRlbXBvcmFyaWx5IGF0IGB+Ly5oZXJtZXMvZ29vZ2xlX29hdXRoX3BlbmRpbmcuanNvbmAgdW50aWwgZXhjaGFuZ2UgY29tcGxldGVzLgotIElmIGBnd3NgIGlzIGluc3RhbGxlZCwgYGdvb2dsZV9hcGkucHlgIHBvaW50cyBpdCBhdCB0aGUgc2FtZSBgfi8uaGVybWVzL2dvb2dsZV90b2tlbi5qc29uYCBjcmVkZW50aWFscyBmaWxlLiBVc2VycyBkbyBub3QgbmVlZCB0byBydW4gYSBzZXBhcmF0ZSBgZ3dzIGF1dGggbG9naW5gIGZsb3cuCi0gVG8gcmV2b2tlOiBgJEdTRVRVUCAtLXJldm9rZWAKCiMjIFVzYWdlCgpBbGwgY29tbWFuZHMgZ28gdGhyb3VnaCB0aGUgQVBJIHNjcmlwdC4gU2V0IGBHQVBJYCBhcyBhIHNob3J0aGFuZDoKCmBgYGJhc2gKR0FQST0icHl0aG9uICR7SEVSTUVTX0hPTUU6LSRIT01FLy5oZXJtZXN9L3NraWxscy9wcm9kdWN0aXZpdHkvZ29vZ2xlLXdvcmtzcGFjZS9zY3JpcHRzL2dvb2dsZV9hcGkucHkiCmBgYAoKIyMjIEdtYWlsCgpgYGBiYXNoCiMgU2VhcmNoIChyZXR1cm5zIEpTT04gYXJyYXkgd2l0aCBpZCwgZnJvbSwgc3ViamVjdCwgZGF0ZSwgc25pcHBldCkKJEdBUEkgZ21haWwgc2VhcmNoICJpczp1bnJlYWQiIC0tbWF4IDEwCiRHQVBJIGdtYWlsIHNlYXJjaCAiZnJvbTpib3NzQGNvbXBhbnkuY29tIG5ld2VyX3RoYW46MWQiCiRHQVBJIGdtYWlsIHNlYXJjaCAiaGFzOmF0dGFjaG1lbnQgZmlsZW5hbWU6cGRmIG5ld2VyX3RoYW46N2QiCgojIFJlYWQgZnVsbCBtZXNzYWdlIChyZXR1cm5zIEpTT04gd2l0aCBib2R5IHRleHQpCiRHQVBJIGdtYWlsIGdldCBNRVNTQUdFX0lECgojIFNlbmQKJEdBUEkgZ21haWwgc2VuZCAtLXRvIHVzZXJAZXhhbXBsZS5jb20gLS1zdWJqZWN0ICJIZWxsbyIgLS1ib2R5ICJNZXNzYWdlIHRleHQiCiRHQVBJIGdtYWlsIHNlbmQgLS10byB1c2VyQGV4YW1wbGUuY29tIC0tc3ViamVjdCAiUmVwb3J0IiAtLWJvZHkgIjxoMT5RNDwvaDE+PHA+RGV0YWlscy4uLjwvcD4iIC0taHRtbAokR0FQSSBnbWFpbCBzZW5kIC0tdG8gdXNlckBleGFtcGxlLmNvbSAtLXN1YmplY3QgIkhlbGxvIiAtLWZyb20gJyJSZXNlYXJjaCBBZ2VudCIgPHVzZXJAZXhhbXBsZS5jb20+JyAtLWJvZHkgIk1lc3NhZ2UgdGV4dCIKCiMgUmVwbHkgKGF1dG9tYXRpY2FsbHkgdGhyZWFkcyBhbmQgc2V0cyBJbi1SZXBseS1UbykKJEdBUEkgZ21haWwgcmVwbHkgTUVTU0FHRV9JRCAtLWJvZHkgIlRoYW5rcywgdGhhdCB3b3JrcyBmb3IgbWUuIgokR0FQSSBnbWFpbCByZXBseSBNRVNTQUdFX0lEIC0tZnJvbSAnIlN1cHBvcnQgQm90IiA8dXNlckBleGFtcGxlLmNvbT4nIC0tYm9keSAiVGhhbmtzIgoKIyBMYWJlbHMKJEdBUEkgZ21haWwgbGFiZWxzCiRHQVBJIGdtYWlsIG1vZGlmeSBNRVNTQUdFX0lEIC0tYWRkLWxhYmVscyBMQUJFTF9JRAokR0FQSSBnbWFpbCBtb2RpZnkgTUVTU0FHRV9JRCAtLXJlbW92ZS1sYWJlbHMgVU5SRUFECmBgYAoKIyMjIENhbGVuZGFyCgpgYGBiYXNoCiMgTGlzdCBldmVudHMgKGRlZmF1bHRzIHRvIG5leHQgNyBkYXlzKQokR0FQSSBjYWxlbmRhciBsaXN0CiRHQVBJIGNhbGVuZGFyIGxpc3QgLS1zdGFydCAyMDI2LTAzLTAxVDAwOjAwOjAwWiAtLWVuZCAyMDI2LTAzLTA3VDIzOjU5OjU5WgoKIyBDcmVhdGUgZXZlbnQgKElTTyA4NjAxIHdpdGggdGltZXpvbmUgcmVxdWlyZWQpCiRHQVBJIGNhbGVuZGFyIGNyZWF0ZSAtLXN1bW1hcnkgIlRlYW0gU3RhbmR1cCIgLS1zdGFydCAyMDI2LTAzLTAxVDEwOjAwOjAwLTA2OjAwIC0tZW5kIDIwMjYtMDMtMDFUMTA6MzA6MDAtMDY6MDAKJEdBUEkgY2FsZW5kYXIgY3JlYXRlIC0tc3VtbWFyeSAiTHVuY2giIC0tc3RhcnQgMjAyNi0wMy0wMVQxMjowMDowMFogLS1lbmQgMjAyNi0wMy0wMVQxMzowMDowMFogLS1sb2NhdGlvbiAiQ2FmZSIKJEdBUEkgY2FsZW5kYXIgY3JlYXRlIC0tc3VtbWFyeSAiUmV2aWV3IiAtLXN0YXJ0IDIwMjYtMDMtMDFUMTQ6MDA6MDBaIC0tZW5kIDIwMjYtMDMtMDFUMTU6MDA6MDBaIC0tYXR0ZW5kZWVzICJhbGljZUBjby5jb20sYm9iQGNvLmNvbSIKCiMgRGVsZXRlIGV2ZW50CiRHQVBJIGNhbGVuZGFyIGRlbGV0ZSBFVkVOVF9JRApgYGAKCiMjIyBEcml2ZQoKYGBgYmFzaAokR0FQSSBkcml2ZSBzZWFyY2ggInF1YXJ0ZXJseSByZXBvcnQiIC0tbWF4IDEwCiRHQVBJIGRyaXZlIHNlYXJjaCAibWltZVR5cGU9J2FwcGxpY2F0aW9uL3BkZiciIC0tcmF3LXF1ZXJ5IC0tbWF4IDUKYGBgCgojIyMgQ29udGFjdHMKCmBgYGJhc2gKJEdBUEkgY29udGFjdHMgbGlzdCAtLW1heCAyMApgYGAKCiMjIyBTaGVldHMKCmBgYGJhc2gKIyBSZWFkCiRHQVBJIHNoZWV0cyBnZXQgU0hFRVRfSUQgIlNoZWV0MSFBMTpEMTAiCgojIFdyaXRlCiRHQVBJIHNoZWV0cyB1cGRhdGUgU0hFRVRfSUQgIlNoZWV0MSFBMTpCMiIgLS12YWx1ZXMgJ1tbIk5hbWUiLCJTY29yZSJdLFsiQWxpY2UiLCI5NSJdXScKCiMgQXBwZW5kIHJvd3MKJEdBUEkgc2hlZXRzIGFwcGVuZCBTSEVFVF9JRCAiU2hlZXQxIUE6QyIgLS12YWx1ZXMgJ1tbIm5ldyIsInJvdyIsImRhdGEiXV0nCmBgYAoKIyMjIERvY3MKCmBgYGJhc2gKJEdBUEkgZG9jcyBnZXQgRE9DX0lECmBgYAoKIyMgT3V0cHV0IEZvcm1hdAoKQWxsIGNvbW1hbmRzIHJldHVybiBKU09OLiBQYXJzZSB3aXRoIGBqcWAgb3IgcmVhZCBkaXJlY3RseS4gS2V5IGZpZWxkczoKCi0gKipHbWFpbCBzZWFyY2gqKjogYFt7aWQsIHRocmVhZElkLCBmcm9tLCB0bywgc3ViamVjdCwgZGF0ZSwgc25pcHBldCwgbGFiZWxzfV1gCi0gKipHbWFpbCBnZXQqKjogYHtpZCwgdGhyZWFkSWQsIGZyb20sIHRvLCBzdWJqZWN0LCBkYXRlLCBsYWJlbHMsIGJvZHl9YAotICoqR21haWwgc2VuZC9yZXBseSoqOiBge3N0YXR1czogInNlbnQiLCBpZCwgdGhyZWFkSWR9YAotICoqQ2FsZW5kYXIgbGlzdCoqOiBgW3tpZCwgc3VtbWFyeSwgc3RhcnQsIGVuZCwgbG9jYXRpb24sIGRlc2NyaXB0aW9uLCBodG1sTGlua31dYAotICoqQ2FsZW5kYXIgY3JlYXRlKio6IGB7c3RhdHVzOiAiY3JlYXRlZCIsIGlkLCBzdW1tYXJ5LCBodG1sTGlua31gCi0gKipEcml2ZSBzZWFyY2gqKjogYFt7aWQsIG5hbWUsIG1pbWVUeXBlLCBtb2RpZmllZFRpbWUsIHdlYlZpZXdMaW5rfV1gCi0gKipDb250YWN0cyBsaXN0Kio6IGBbe25hbWUsIGVtYWlsczogWy4uLl0sIHBob25lczogWy4uLl19XWAKLSAqKlNoZWV0cyBnZXQqKjogYFtbY2VsbCwgY2VsbCwgLi4uXSwgLi4uXWAKCiMjIFJ1bGVzCgoxLiAqKk5ldmVyIHNlbmQgZW1haWwgb3IgY3JlYXRlL2RlbGV0ZSBldmVudHMgd2l0aG91dCBjb25maXJtaW5nIHdpdGggdGhlIHVzZXIgZmlyc3QuKiogU2hvdyB0aGUgZHJhZnQgY29udGVudCBhbmQgYXNrIGZvciBhcHByb3ZhbC4KMi4gKipDaGVjayBhdXRoIGJlZm9yZSBmaXJzdCB1c2UqKiDigJQgcnVuIGBzZXR1cC5weSAtLWNoZWNrYC4gSWYgaXQgZmFpbHMsIGd1aWRlIHRoZSB1c2VyIHRocm91Z2ggc2V0dXAuCjMuICoqVXNlIHRoZSBHbWFpbCBzZWFyY2ggc3ludGF4IHJlZmVyZW5jZSoqIGZvciBjb21wbGV4IHF1ZXJpZXMg4oCUIGxvYWQgaXQgd2l0aCBgc2tpbGxfdmlldygiZ29vZ2xlLXdvcmtzcGFjZSIsIGZpbGVfcGF0aD0icmVmZXJlbmNlcy9nbWFpbC1zZWFyY2gtc3ludGF4Lm1kIilgLgo0LiAqKkNhbGVuZGFyIHRpbWVzIG11c3QgaW5jbHVkZSB0aW1lem9uZSoqIOKAlCBhbHdheXMgdXNlIElTTyA4NjAxIHdpdGggb2Zmc2V0IChlLmcuLCBgMjAyNi0wMy0wMVQxMDowMDowMC0wNjowMGApIG9yIFVUQyAoYFpgKS4KNS4gKipSZXNwZWN0IHJhdGUgbGltaXRzKiog4oCUIGF2b2lkIHJhcGlkLWZpcmUgc2VxdWVudGlhbCBBUEkgY2FsbHMuIEJhdGNoIHJlYWRzIHdoZW4gcG9zc2libGUuCgojIyBUcm91Ymxlc2hvb3RpbmcKCnwgUHJvYmxlbSB8IEZpeCB8CnwtLS0tLS0tLS18LS0tLS18CnwgYE5PVF9BVVRIRU5USUNBVEVEYCB8IFJ1biBzZXR1cCBTdGVwcyAyLTUgYWJvdmUgfAp8IGBSRUZSRVNIX0ZBSUxFRGAgfCBUb2tlbiByZXZva2VkIG9yIGV4cGlyZWQg4oCUIHJlZG8gU3RlcHMgMy01IHwKfCBgSHR0cEVycm9yIDQwMzogSW5zdWZmaWNpZW50IFBlcm1pc3Npb25gIHwgTWlzc2luZyBBUEkgc2NvcGUg4oCUIGAkR1NFVFVQIC0tcmV2b2tlYCB0aGVuIHJlZG8gU3RlcHMgMy01IHwKfCBgSHR0cEVycm9yIDQwMzogQWNjZXNzIE5vdCBDb25maWd1cmVkYCB8IEFQSSBub3QgZW5hYmxlZCDigJQgdXNlciBuZWVkcyB0byBlbmFibGUgaXQgaW4gR29vZ2xlIENsb3VkIENvbnNvbGUgfAp8IGBNb2R1bGVOb3RGb3VuZEVycm9yYCB8IFJ1biBgJEdTRVRVUCAtLWluc3RhbGwtZGVwc2AgfAp8IEFkdmFuY2VkIFByb3RlY3Rpb24gYmxvY2tzIGF1dGggfCBXb3Jrc3BhY2UgYWRtaW4gbXVzdCBhbGxvd2xpc3QgdGhlIE9BdXRoIGNsaWVudCBJRCB8CgojIyBSZXZva2luZyBBY2Nlc3MKCmBgYGJhc2gKJEdTRVRVUCAtLXJldm9rZQpgYGAK
+---
+name: google-workspace
+description: Gmail, Calendar, Drive, Contacts, Sheets, and Docs integration for Hermes. Uses Hermes-managed OAuth2 setup, prefers the Google Workspace CLI (`gws`) when available for broader API coverage, and falls back to the Python client libraries otherwise.
+version: 1.0.0
+author: Nous Research
+license: MIT
+metadata:
+  hermes:
+    tags: [Google, Gmail, Calendar, Drive, Sheets, Docs, Contacts, Email, OAuth]
+    homepage: https://github.com/NousResearch/hermes-agent
+    related_skills: [himalaya]
+---
+
+# Google Workspace
+
+Gmail, Calendar, Drive, Contacts, Sheets, and Docs — through Hermes-managed OAuth and a thin CLI wrapper. When `gws` is installed, the skill uses it as the execution backend for broader Google Workspace coverage; otherwise it falls back to the bundled Python client implementation.
+
+## References
+
+- `references/gmail-search-syntax.md` — Gmail search operators (is:unread, from:, newer_than:, etc.)
+
+## Scripts
+
+- `scripts/setup.py` — OAuth2 setup (run once to authorize)
+- `scripts/google_api.py` — compatibility wrapper CLI. It prefers `gws` for operations when available, while preserving Hermes' existing JSON output contract.
+
+## First-Time Setup
+
+The setup is fully non-interactive — you drive it step by step so it works
+on CLI, Telegram, Discord, or any platform.
+
+Define a shorthand first:
+
+```bash
+GSETUP="python ${HERMES_HOME:-$HOME/.hermes}/skills/productivity/google-workspace/scripts/setup.py"
+```
+
+### Step 0: Check if already set up
+
+```bash
+$GSETUP --check
+```
+
+If it prints `AUTHENTICATED`, skip to Usage — setup is already done.
+
+### Step 1: Triage — ask the user what they need
+
+Before starting OAuth setup, ask the user TWO questions:
+
+**Question 1: "What Google services do you need? Just email, or also
+Calendar/Drive/Sheets/Docs?"**
+
+- **Email only** → They don't need this skill at all. Use the `himalaya` skill
+  instead — it works with a Gmail App Password (Settings → Security → App
+  Passwords) and takes 2 minutes to set up. No Google Cloud project needed.
+  Load the himalaya skill and follow its setup instructions.
+
+- **Email + Calendar** → Continue with this skill, but use
+  `--services email,calendar` during auth so the consent screen only asks for
+  the scopes they actually need.
+
+- **Calendar/Drive/Sheets/Docs only** → Continue with this skill and use a
+  narrower `--services` set like `calendar,drive,sheets,docs`.
+
+- **Full Workspace access** → Continue with this skill and use the default
+  `all` service set.
+
+**Question 2: "Does your Google account use Advanced Protection (hardware
+security keys required to sign in)? If you're not sure, you probably don't
+— it's something you would have explicitly enrolled in."**
+
+- **No / Not sure** → Normal setup. Continue below.
+- **Yes** → Their Workspace admin must add the OAuth client ID to the org's
+  allowed apps list before Step 4 will work. Let them know upfront.
+
+### Step 2: Create OAuth credentials (one-time, ~5 minutes)
+
+Tell the user:
+
+> You need a Google Cloud OAuth client. This is a one-time setup:
+>
+> 1. Create or select a project:
+>    https://console.cloud.google.com/projectselector2/home/dashboard
+> 2. Enable the required APIs from the API Library:
+>    https://console.cloud.google.com/apis/library
+>    Enable: Gmail API, Google Calendar API, Google Drive API,
+>    Google Sheets API, Google Docs API, People API
+> 3. Create the OAuth client here:
+>    https://console.cloud.google.com/apis/credentials
+>    Credentials → Create Credentials → OAuth 2.0 Client ID
+> 4. Application type: "Desktop app" → Create
+> 5. If the app is still in Testing, add the user's Google account as a test user here:
+>    https://console.cloud.google.com/auth/audience
+>    Audience → Test users → Add users
+> 6. Download the JSON file and tell me the file path
+>
+> Important Hermes CLI note: if the file path starts with `/`, do NOT send only the bare path as its own message in the CLI, because it can be mistaken for a slash command. Send it in a sentence instead, like:
+> `The JSON file path is: /home/user/Downloads/client_secret_....json`
+
+Once they provide the path:
+
+```bash
+$GSETUP --client-secret /path/to/client_secret.json
+```
+
+If they paste the raw client ID / client secret values instead of a file path,
+write a valid Desktop OAuth JSON file for them yourself, save it somewhere
+explicit (for example `~/Downloads/hermes-google-client-secret.json`), then run
+`--client-secret` against that file.
+
+### Step 3: Get authorization URL
+
+Use the service set chosen in Step 1. Examples:
+
+```bash
+$GSETUP --auth-url --services email,calendar --format json
+$GSETUP --auth-url --services calendar,drive,sheets,docs --format json
+$GSETUP --auth-url --services all --format json
+```
+
+This returns JSON with an `auth_url` field and also saves the exact URL to
+`~/.hermes/google_oauth_last_url.txt`.
+
+Agent rules for this step:
+- Extract the `auth_url` field and send that exact URL to the user as a single line.
+- Tell the user that the browser will likely fail on `http://localhost:1` after approval, and that this is expected.
+- Tell them to copy the ENTIRE redirected URL from the browser address bar.
+- If the user gets `Error 403: access_denied`, send them directly to `https://console.cloud.google.com/auth/audience` to add themselves as a test user.
+
+### Step 4: Exchange the code
+
+The user will paste back either a URL like `http://localhost:1/?code=4/0A...&scope=...`
+or just the code string. Either works. The `--auth-url` step stores a temporary
+pending OAuth session locally so `--auth-code` can complete the PKCE exchange
+later, even on headless systems:
+
+```bash
+$GSETUP --auth-code "THE_URL_OR_CODE_THE_USER_PASTED" --format json
+```
+
+If `--auth-code` fails because the code expired, was already used, or came from
+an older browser tab, it now returns a fresh `fresh_auth_url`. In that case,
+immediately send the new URL to the user and have them retry with the newest
+browser redirect only.
+
+### Step 5: Verify
+
+```bash
+$GSETUP --check
+```
+
+Should print `AUTHENTICATED`. Setup is complete — token refreshes automatically from now on.
+
+### Notes
+
+- Token is stored at `~/.hermes/google_token.json` and auto-refreshes.
+- Pending OAuth session state/verifier are stored temporarily at `~/.hermes/google_oauth_pending.json` until exchange completes.
+- If `gws` is installed, `google_api.py` points it at the same `~/.hermes/google_token.json` credentials file. Users do not need to run a separate `gws auth login` flow.
+- To revoke: `$GSETUP --revoke`
+
+## Usage
+
+All commands go through the API script. Set `GAPI` as a shorthand:
+
+```bash
+GAPI="python ${HERMES_HOME:-$HOME/.hermes}/skills/productivity/google-workspace/scripts/google_api.py"
+```
+
+### Gmail
+
+```bash
+# Search (returns JSON array with id, from, subject, date, snippet)
+$GAPI gmail search "is:unread" --max 10
+$GAPI gmail search "from:boss@company.com newer_than:1d"
+$GAPI gmail search "has:attachment filename:pdf newer_than:7d"
+
+# Read full message (returns JSON with body text)
+$GAPI gmail get MESSAGE_ID
+
+# Send
+$GAPI gmail send --to user@example.com --subject "Hello" --body "Message text"
+$GAPI gmail send --to user@example.com --subject "Report" --body "<h1>Q4</h1><p>Details...</p>" --html
+$GAPI gmail send --to user@example.com --subject "Hello" --from '"Research Agent" <user@example.com>' --body "Message text"
+
+# Reply (automatically threads and sets In-Reply-To)
+$GAPI gmail reply MESSAGE_ID --body "Thanks, that works for me."
+$GAPI gmail reply MESSAGE_ID --from '"Support Bot" <user@example.com>' --body "Thanks"
+
+# Labels
+$GAPI gmail labels
+$GAPI gmail modify MESSAGE_ID --add-labels LABEL_ID
+$GAPI gmail modify MESSAGE_ID --remove-labels UNREAD
+```
+
+### Calendar
+
+```bash
+# List events (defaults to next 7 days)
+$GAPI calendar list
+$GAPI calendar list --start 2026-03-01T00:00:00Z --end 2026-03-07T23:59:59Z
+
+# Create event (ISO 8601 with timezone required)
+$GAPI calendar create --summary "Team Standup" --start 2026-03-01T10:00:00-06:00 --end 2026-03-01T10:30:00-06:00
+$GAPI calendar create --summary "Lunch" --start 2026-03-01T12:00:00Z --end 2026-03-01T13:00:00Z --location "Cafe"
+$GAPI calendar create --summary "Review" --start 2026-03-01T14:00:00Z --end 2026-03-01T15:00:00Z --attendees "alice@co.com,bob@co.com"
+
+# Delete event
+$GAPI calendar delete EVENT_ID
+```
+
+### Drive
+
+```bash
+$GAPI drive search "quarterly report" --max 10
+$GAPI drive search "mimeType='application/pdf'" --raw-query --max 5
+```
+
+### Contacts
+
+```bash
+$GAPI contacts list --max 20
+```
+
+### Sheets
+
+```bash
+# Read
+$GAPI sheets get SHEET_ID "Sheet1!A1:D10"
+
+# Write
+$GAPI sheets update SHEET_ID "Sheet1!A1:B2" --values '[["Name","Score"],["Alice","95"]]'
+
+# Append rows
+$GAPI sheets append SHEET_ID "Sheet1!A:C" --values '[["new","row","data"]]'
+```
+
+### Docs
+
+```bash
+$GAPI docs get DOC_ID
+```
+
+## Output Format
+
+All commands return JSON. Parse with `jq` or read directly. Key fields:
+
+- **Gmail search**: `[{id, threadId, from, to, subject, date, snippet, labels}]`
+- **Gmail get**: `{id, threadId, from, to, subject, date, labels, body}`
+- **Gmail send/reply**: `{status: "sent", id, threadId}`
+- **Calendar list**: `[{id, summary, start, end, location, description, htmlLink}]`
+- **Calendar create**: `{status: "created", id, summary, htmlLink}`
+- **Drive search**: `[{id, name, mimeType, modifiedTime, webViewLink}]`
+- **Contacts list**: `[{name, emails: [...], phones: [...]}]`
+- **Sheets get**: `[[cell, cell, ...], ...]`
+
+## Rules
+
+1. **Never send email or create/delete events without confirming with the user first.** Show the draft content and ask for approval.
+2. **Check auth before first use** — run `setup.py --check`. If it fails, guide the user through setup.
+3. **Use the Gmail search syntax reference** for complex queries — load it with `skill_view("google-workspace", file_path="references/gmail-search-syntax.md")`.
+4. **Calendar times must include timezone** — always use ISO 8601 with offset (e.g., `2026-03-01T10:00:00-06:00`) or UTC (`Z`).
+5. **Respect rate limits** — avoid rapid-fire sequential API calls. Batch reads when possible.
+
+## Troubleshooting
+
+| Problem | Fix |
+|---------|-----|
+| `NOT_AUTHENTICATED` | Run setup Steps 2-5 above |
+| `REFRESH_FAILED` | Token revoked or expired — redo Steps 3-5 |
+| `HttpError 403: Insufficient Permission` | Missing API scope — `$GSETUP --revoke` then redo Steps 3-5 |
+| `HttpError 403: Access Not Configured` | API not enabled — user needs to enable it in Google Cloud Console |
+| `ModuleNotFoundError` | Run `$GSETUP --install-deps` |
+| Advanced Protection blocks auth | Workspace admin must allowlist the OAuth client ID |
+
+## Revoking Access
+
+```bash
+$GSETUP --revoke
+```

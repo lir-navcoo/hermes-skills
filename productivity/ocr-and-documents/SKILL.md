@@ -1,1 +1,171 @@
-LS0tCm5hbWU6IG9jci1hbmQtZG9jdW1lbnRzCmRlc2NyaXB0aW9uOiBFeHRyYWN0IHRleHQgZnJvbSBQREZzIGFuZCBzY2FubmVkIGRvY3VtZW50cy4gVXNlIHdlYl9leHRyYWN0IGZvciByZW1vdGUgVVJMcywgcHltdXBkZiBmb3IgbG9jYWwgdGV4dC1iYXNlZCBQREZzLCBtYXJrZXItcGRmIGZvciBPQ1Ivc2Nhbm5lZCBkb2NzLiBGb3IgRE9DWCB1c2UgcHl0aG9uLWRvY3gsIGZvciBQUFRYIHNlZSB0aGUgcG93ZXJwb2ludCBza2lsbC4KdmVyc2lvbjogMi4zLjAKYXV0aG9yOiBIZXJtZXMgQWdlbnQKbGljZW5zZTogTUlUCm1ldGFkYXRhOgogIGhlcm1lczoKICAgIHRhZ3M6IFtQREYsIERvY3VtZW50cywgUmVzZWFyY2gsIEFyeGl2LCBUZXh0LUV4dHJhY3Rpb24sIE9DUl0KICAgIHJlbGF0ZWRfc2tpbGxzOiBbcG93ZXJwb2ludF0KLS0tCgojIFBERiAmIERvY3VtZW50IEV4dHJhY3Rpb24KCkZvciBET0NYOiB1c2UgYHB5dGhvbi1kb2N4YCAocGFyc2VzIGFjdHVhbCBkb2N1bWVudCBzdHJ1Y3R1cmUsIGZhciBiZXR0ZXIgdGhhbiBPQ1IpLgpGb3IgUFBUWDogc2VlIHRoZSBgcG93ZXJwb2ludGAgc2tpbGwgKHVzZXMgYHB5dGhvbi1wcHR4YCB3aXRoIGZ1bGwgc2xpZGUvbm90ZXMgc3VwcG9ydCkuClRoaXMgc2tpbGwgY292ZXJzICoqUERGcyBhbmQgc2Nhbm5lZCBkb2N1bWVudHMqKi4KCiMjIFN0ZXAgMTogUmVtb3RlIFVSTCBBdmFpbGFibGU/CgpJZiB0aGUgZG9jdW1lbnQgaGFzIGEgVVJMLCAqKmFsd2F5cyB0cnkgYHdlYl9leHRyYWN0YCBmaXJzdCoqOgoKYGBgCndlYl9leHRyYWN0KHVybHM9WyJodHRwczovL2FyeGl2Lm9yZy9wZGYvMjQwMi4wMzMwMCJdKQp3ZWJfZXh0cmFjdCh1cmxzPVsiaHR0cHM6Ly9leGFtcGxlLmNvbS9yZXBvcnQucGRmIl0pCmBgYAoKVGhpcyBoYW5kbGVzIFBERi10by1tYXJrZG93biBjb252ZXJzaW9uIHZpYSBGaXJlY3Jhd2wgd2l0aCBubyBsb2NhbCBkZXBlbmRlbmNpZXMuCgpPbmx5IHVzZSBsb2NhbCBleHRyYWN0aW9uIHdoZW46IHRoZSBmaWxlIGlzIGxvY2FsLCB3ZWJfZXh0cmFjdCBmYWlscywgb3IgeW91IG5lZWQgYmF0Y2ggcHJvY2Vzc2luZy4KCiMjIFN0ZXAgMjogQ2hvb3NlIExvY2FsIEV4dHJhY3RvcgoKfCBGZWF0dXJlIHwgcHltdXBkZiAofjI1TUIpIHwgbWFya2VyLXBkZiAofjMtNUdCKSB8CnwtLS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tLS0tLS0tfAp8ICoqVGV4dC1iYXNlZCBQREYqKiB8IOKchSB8IOKchSB8CnwgKipTY2FubmVkIFBERiAoT0NSKSoqIHwg4p2MIHwg4pyFICg5MCsgbGFuZ3VhZ2VzKSB8CnwgKipUYWJsZXMqKiB8IOKchSAoYmFzaWMpIHwg4pyFIChoaWdoIGFjY3VyYWN5KSB8CnwgKipFcXVhdGlvbnMgLyBMYVRlWCoqIHwg4p2MIHwg4pyFIHwKfCAqKkNvZGUgYmxvY2tzKiogfCDinYwgfCDinIUgfAp8ICoqRm9ybXMqKiB8IOKdjCB8IOKchSB8CnwgKipIZWFkZXJzL2Zvb3RlcnMgcmVtb3ZhbCoqIHwg4p2MIHwg4pyFIHwKfCAqKlJlYWRpbmcgb3JkZXIgZGV0ZWN0aW9uKiogfCDinYwgfCDinIUgfAp8ICoqSW1hZ2VzIGV4dHJhY3Rpb24qKiB8IOKchSAoZW1iZWRkZWQpIHwg4pyFICh3aXRoIGNvbnRleHQpIHwKfCAqKkltYWdlcyDihpIgdGV4dCAoT0NSKSoqIHwg4p2MIHwg4pyFIHwKfCAqKkVQVUIqKiB8IOKchSB8IOKchSB8CnwgKipNYXJrZG93biBvdXRwdXQqKiB8IOKchSAodmlhIHB5bXVwZGY0bGxtKSB8IOKchSAobmF0aXZlLCBoaWdoZXIgcXVhbGl0eSkgfAp8ICoqSW5zdGFsbCBzaXplKiogfCB+MjVNQiB8IH4zLTVHQiAoUHlUb3JjaCArIG1vZGVscykgfAp8ICoqU3BlZWQqKiB8IEluc3RhbnQgfCB+MS0xNHMvcGFnZSAoQ1BVKSwgfjAuMnMvcGFnZSAoR1BVKSB8CgoqKkRlY2lzaW9uKio6IFVzZSBweW11cGRmIHVubGVzcyB5b3UgbmVlZCBPQ1IsIGVxdWF0aW9ucywgZm9ybXMsIG9yIGNvbXBsZXggbGF5b3V0IGFuYWx5c2lzLgoKSWYgdGhlIHVzZXIgbmVlZHMgbWFya2VyIGNhcGFiaWxpdGllcyBidXQgdGhlIHN5c3RlbSBsYWNrcyB+NUdCIGZyZWUgZGlzazoKPiAiVGhpcyBkb2N1bWVudCBuZWVkcyBPQ1IvYWR2YW5jZWQgZXh0cmFjdGlvbiAobWFya2VyLXBkZiksIHdoaWNoIHJlcXVpcmVzIH41R0IgZm9yIFB5VG9yY2ggYW5kIG1vZGVscy4gWW91ciBzeXN0ZW0gaGFzIFtYXUdCIGZyZWUuIE9wdGlvbnM6IGZyZWUgdXAgc3BhY2UsIHByb3ZpZGUgYSBVUkwgc28gSSBjYW4gdXNlIHdlYl9leHRyYWN0LCBvciBJIGNhbiB0cnkgcHltdXBkZiB3aGljaCB3b3JrcyBmb3IgdGV4dC1iYXNlZCBQREZzIGJ1dCBub3Qgc2Nhbm5lZCBkb2N1bWVudHMgb3IgZXF1YXRpb25zLiIKCi0tLQoKIyMgcHltdXBkZiAobGlnaHR3ZWlnaHQpCgpgYGBiYXNoCnBpcCBpbnN0YWxsIHB5bXVwZGYgcHltdXBkZjRsbG0KYGBgCgoqKlZpYSBoZWxwZXIgc2NyaXB0Kio6CmBgYGJhc2gKcHl0aG9uIHNjcmlwdHMvZXh0cmFjdF9weW11cGRmLnB5IGRvY3VtZW50LnBkZiAgICAgICAgICAgICAgIyBQbGFpbiB0ZXh0CnB5dGhvbiBzY3JpcHRzL2V4dHJhY3RfcHltdXBkZi5weSBkb2N1bWVudC5wZGYgLS1tYXJrZG93biAgICAjIE1hcmtkb3duCnB5dGhvbiBzY3JpcHRzL2V4dHJhY3RfcHltdXBkZi5weSBkb2N1bWVudC5wZGYgLS10YWJsZXMgICAgICAjIFRhYmxlcwpweXRob24gc2NyaXB0cy9leHRyYWN0X3B5bXVwZGYucHkgZG9jdW1lbnQucGRmIC0taW1hZ2VzIG91dC8gIyBFeHRyYWN0IGltYWdlcwpweXRob24gc2NyaXB0cy9leHRyYWN0X3B5bXVwZGYucHkgZG9jdW1lbnQucGRmIC0tbWV0YWRhdGEgICAgIyBUaXRsZSwgYXV0aG9yLCBwYWdlcwpweXRob24gc2NyaXB0cy9leHRyYWN0X3B5bXVwZGYucHkgZG9jdW1lbnQucGRmIC0tcGFnZXMgMC00ICAgIyBTcGVjaWZpYyBwYWdlcwpgYGAKCioqSW5saW5lKio6CmBgYGJhc2gKcHl0aG9uMyAtYyAiCmltcG9ydCBweW11cGRmCmRvYyA9IHB5bXVwZGYub3BlbignZG9jdW1lbnQucGRmJykKZm9yIHBhZ2UgaW4gZG9jOgogICAgcHJpbnQocGFnZS5nZXRfdGV4dCgpKQoiCmBgYAoKLS0tCgojIyBtYXJrZXItcGRmIChoaWdoLXF1YWxpdHkgT0NSKQoKYGBgYmFzaAojIENoZWNrIGRpc2sgc3BhY2UgZmlyc3QKcHl0aG9uIHNjcmlwdHMvZXh0cmFjdF9tYXJrZXIucHkgLS1jaGVjawoKcGlwIGluc3RhbGwgbWFya2VyLXBkZgpgYGAKCioqVmlhIGhlbHBlciBzY3JpcHQqKjoKYGBgYmFzaApweXRob24gc2NyaXB0cy9leHRyYWN0X21hcmtlci5weSBkb2N1bWVudC5wZGYgICAgICAgICAgICAgICAgIyBNYXJrZG93bgpweXRob24gc2NyaXB0cy9leHRyYWN0X21hcmtlci5weSBkb2N1bWVudC5wZGYgLS1qc29uICAgICAgICAgIyBKU09OIHdpdGggbWV0YWRhdGEKcHl0aG9uIHNjcmlwdHMvZXh0cmFjdF9tYXJrZXIucHkgZG9jdW1lbnQucGRmIC0tb3V0cHV0X2RpciBvdXQvICAjIFNhdmUgaW1hZ2VzCnB5dGhvbiBzY3JpcHRzL2V4dHJhY3RfbWFya2VyLnB5IHNjYW5uZWQucGRmICAgICAgICAgICAgICAgICAjIFNjYW5uZWQgUERGIChPQ1IpCnB5dGhvbiBzY3JpcHRzL2V4dHJhY3RfbWFya2VyLnB5IGRvY3VtZW50LnBkZiAtLXVzZV9sbG0gICAgICAjIExMTS1ib29zdGVkIGFjY3VyYWN5CmBgYAoKKipDTEkqKiAoaW5zdGFsbGVkIHdpdGggbWFya2VyLXBkZik6CmBgYGJhc2gKbWFya2VyX3NpbmdsZSBkb2N1bWVudC5wZGYgLS1vdXRwdXRfZGlyIC4vb3V0cHV0Cm1hcmtlciAvcGF0aC90by9mb2xkZXIgLS13b3JrZXJzIDQgICAgIyBCYXRjaApgYGAKCi0tLQoKIyMgQXJ4aXYgUGFwZXJzCgpgYGAKIyBBYnN0cmFjdCBvbmx5IChmYXN0KQp3ZWJfZXh0cmFjdCh1cmxzPVsiaHR0cHM6Ly9hcnhpdi5vcmcvYWJzLzI0MDIuMDMzMDAiXSkKCiMgRnVsbCBwYXBlcgp3ZWJfZXh0cmFjdCh1cmxzPVsiaHR0cHM6Ly9hcnhpdi5vcmcvcGRmLzI0MDIuMDMzMDAiXSkKCiMgU2VhcmNoCndlYl9zZWFyY2gocXVlcnk9ImFyeGl2IEdSUE8gcmVpbmZvcmNlbWVudCBsZWFybmluZyAyMDI2IikKYGBgCgojIyBTcGxpdCwgTWVyZ2UgJiBTZWFyY2gKCnB5bXVwZGYgaGFuZGxlcyB0aGVzZSBuYXRpdmVseSDigJQgdXNlIGBleGVjdXRlX2NvZGVgIG9yIGlubGluZSBQeXRob246CgpgYGBweXRob24KIyBTcGxpdDogZXh0cmFjdCBwYWdlcyAxLTUgdG8gYSBuZXcgUERGCmltcG9ydCBweW11cGRmCmRvYyA9IHB5bXVwZGYub3BlbigicmVwb3J0LnBkZiIpCm5ldyA9IHB5bXVwZGYub3BlbigpCmZvciBpIGluIHJhbmdlKDUpOgogICAgbmV3Lmluc2VydF9wZGYoZG9jLCBmcm9tX3BhZ2U9aSwgdG9fcGFnZT1pKQpuZXcuc2F2ZSgicGFnZXNfMS01LnBkZiIpCmBgYAoKYGBgcHl0aG9uCiMgTWVyZ2UgbXVsdGlwbGUgUERGcwppbXBvcnQgcHltdXBkZgpyZXN1bHQgPSBweW11cGRmLm9wZW4oKQpmb3IgcGF0aCBpbiBbImEucGRmIiwgImIucGRmIiwgImMucGRmIl06CiAgICByZXN1bHQuaW5zZXJ0X3BkZihweW11cGRmLm9wZW4ocGF0aCkpCnJlc3VsdC5zYXZlKCJtZXJnZWQucGRmIikKYGBgCgpgYGBweXRob24KIyBTZWFyY2ggZm9yIHRleHQgYWNyb3NzIGFsbCBwYWdlcwppbXBvcnQgcHltdXBkZgpkb2MgPSBweW11cGRmLm9wZW4oInJlcG9ydC5wZGYiKQpmb3IgaSwgcGFnZSBpbiBlbnVtZXJhdGUoZG9jKToKICAgIHJlc3VsdHMgPSBwYWdlLnNlYXJjaF9mb3IoInJldmVudWUiKQogICAgaWYgcmVzdWx0czoKICAgICAgICBwcmludChmIlBhZ2Uge2krMX06IHtsZW4ocmVzdWx0cyl9IG1hdGNoKGVzKSIpCiAgICAgICAgcHJpbnQocGFnZS5nZXRfdGV4dCgidGV4dCIpKQpgYGAKCk5vIGV4dHJhIGRlcGVuZGVuY2llcyBuZWVkZWQg4oCUIHB5bXVwZGYgY292ZXJzIHNwbGl0LCBtZXJnZSwgc2VhcmNoLCBhbmQgdGV4dCBleHRyYWN0aW9uIGluIG9uZSBwYWNrYWdlLgoKLS0tCgojIyBOb3RlcwoKLSBgd2ViX2V4dHJhY3RgIGlzIGFsd2F5cyBmaXJzdCBjaG9pY2UgZm9yIFVSTHMKLSBweW11cGRmIGlzIHRoZSBzYWZlIGRlZmF1bHQg4oCUIGluc3RhbnQsIG5vIG1vZGVscywgd29ya3MgZXZlcnl3aGVyZQotIG1hcmtlci1wZGYgaXMgZm9yIE9DUiwgc2Nhbm5lZCBkb2NzLCBlcXVhdGlvbnMsIGNvbXBsZXggbGF5b3V0cyDigJQgaW5zdGFsbCBvbmx5IHdoZW4gbmVlZGVkCi0gQm90aCBoZWxwZXIgc2NyaXB0cyBhY2NlcHQgYC0taGVscGAgZm9yIGZ1bGwgdXNhZ2UKLSBtYXJrZXItcGRmIGRvd25sb2FkcyB+Mi41R0Igb2YgbW9kZWxzIHRvIGB+Ly5jYWNoZS9odWdnaW5nZmFjZS9gIG9uIGZpcnN0IHVzZQotIEZvciBXb3JkIGRvY3M6IGBwaXAgaW5zdGFsbCBweXRob24tZG9jeGAgKGJldHRlciB0aGFuIE9DUiDigJQgcGFyc2VzIGFjdHVhbCBzdHJ1Y3R1cmUpCi0gRm9yIFBvd2VyUG9pbnQ6IHNlZSB0aGUgYHBvd2VycG9pbnRgIHNraWxsICh1c2VzIHB5dGhvbi1wcHR4KQo=
+---
+name: ocr-and-documents
+description: Extract text from PDFs and scanned documents. Use web_extract for remote URLs, pymupdf for local text-based PDFs, marker-pdf for OCR/scanned docs. For DOCX use python-docx, for PPTX see the powerpoint skill.
+version: 2.3.0
+author: Hermes Agent
+license: MIT
+metadata:
+  hermes:
+    tags: [PDF, Documents, Research, Arxiv, Text-Extraction, OCR]
+    related_skills: [powerpoint]
+---
+
+# PDF & Document Extraction
+
+For DOCX: use `python-docx` (parses actual document structure, far better than OCR).
+For PPTX: see the `powerpoint` skill (uses `python-pptx` with full slide/notes support).
+This skill covers **PDFs and scanned documents**.
+
+## Step 1: Remote URL Available?
+
+If the document has a URL, **always try `web_extract` first**:
+
+```
+web_extract(urls=["https://arxiv.org/pdf/2402.03300"])
+web_extract(urls=["https://example.com/report.pdf"])
+```
+
+This handles PDF-to-markdown conversion via Firecrawl with no local dependencies.
+
+Only use local extraction when: the file is local, web_extract fails, or you need batch processing.
+
+## Step 2: Choose Local Extractor
+
+| Feature | pymupdf (~25MB) | marker-pdf (~3-5GB) |
+|---------|-----------------|---------------------|
+| **Text-based PDF** | ✅ | ✅ |
+| **Scanned PDF (OCR)** | ❌ | ✅ (90+ languages) |
+| **Tables** | ✅ (basic) | ✅ (high accuracy) |
+| **Equations / LaTeX** | ❌ | ✅ |
+| **Code blocks** | ❌ | ✅ |
+| **Forms** | ❌ | ✅ |
+| **Headers/footers removal** | ❌ | ✅ |
+| **Reading order detection** | ❌ | ✅ |
+| **Images extraction** | ✅ (embedded) | ✅ (with context) |
+| **Images → text (OCR)** | ❌ | ✅ |
+| **EPUB** | ✅ | ✅ |
+| **Markdown output** | ✅ (via pymupdf4llm) | ✅ (native, higher quality) |
+| **Install size** | ~25MB | ~3-5GB (PyTorch + models) |
+| **Speed** | Instant | ~1-14s/page (CPU), ~0.2s/page (GPU) |
+
+**Decision**: Use pymupdf unless you need OCR, equations, forms, or complex layout analysis.
+
+If the user needs marker capabilities but the system lacks ~5GB free disk:
+> "This document needs OCR/advanced extraction (marker-pdf), which requires ~5GB for PyTorch and models. Your system has [X]GB free. Options: free up space, provide a URL so I can use web_extract, or I can try pymupdf which works for text-based PDFs but not scanned documents or equations."
+
+---
+
+## pymupdf (lightweight)
+
+```bash
+pip install pymupdf pymupdf4llm
+```
+
+**Via helper script**:
+```bash
+python scripts/extract_pymupdf.py document.pdf              # Plain text
+python scripts/extract_pymupdf.py document.pdf --markdown    # Markdown
+python scripts/extract_pymupdf.py document.pdf --tables      # Tables
+python scripts/extract_pymupdf.py document.pdf --images out/ # Extract images
+python scripts/extract_pymupdf.py document.pdf --metadata    # Title, author, pages
+python scripts/extract_pymupdf.py document.pdf --pages 0-4   # Specific pages
+```
+
+**Inline**:
+```bash
+python3 -c "
+import pymupdf
+doc = pymupdf.open('document.pdf')
+for page in doc:
+    print(page.get_text())
+"
+```
+
+---
+
+## marker-pdf (high-quality OCR)
+
+```bash
+# Check disk space first
+python scripts/extract_marker.py --check
+
+pip install marker-pdf
+```
+
+**Via helper script**:
+```bash
+python scripts/extract_marker.py document.pdf                # Markdown
+python scripts/extract_marker.py document.pdf --json         # JSON with metadata
+python scripts/extract_marker.py document.pdf --output_dir out/  # Save images
+python scripts/extract_marker.py scanned.pdf                 # Scanned PDF (OCR)
+python scripts/extract_marker.py document.pdf --use_llm      # LLM-boosted accuracy
+```
+
+**CLI** (installed with marker-pdf):
+```bash
+marker_single document.pdf --output_dir ./output
+marker /path/to/folder --workers 4    # Batch
+```
+
+---
+
+## Arxiv Papers
+
+```
+# Abstract only (fast)
+web_extract(urls=["https://arxiv.org/abs/2402.03300"])
+
+# Full paper
+web_extract(urls=["https://arxiv.org/pdf/2402.03300"])
+
+# Search
+web_search(query="arxiv GRPO reinforcement learning 2026")
+```
+
+## Split, Merge & Search
+
+pymupdf handles these natively — use `execute_code` or inline Python:
+
+```python
+# Split: extract pages 1-5 to a new PDF
+import pymupdf
+doc = pymupdf.open("report.pdf")
+new = pymupdf.open()
+for i in range(5):
+    new.insert_pdf(doc, from_page=i, to_page=i)
+new.save("pages_1-5.pdf")
+```
+
+```python
+# Merge multiple PDFs
+import pymupdf
+result = pymupdf.open()
+for path in ["a.pdf", "b.pdf", "c.pdf"]:
+    result.insert_pdf(pymupdf.open(path))
+result.save("merged.pdf")
+```
+
+```python
+# Search for text across all pages
+import pymupdf
+doc = pymupdf.open("report.pdf")
+for i, page in enumerate(doc):
+    results = page.search_for("revenue")
+    if results:
+        print(f"Page {i+1}: {len(results)} match(es)")
+        print(page.get_text("text"))
+```
+
+No extra dependencies needed — pymupdf covers split, merge, search, and text extraction in one package.
+
+---
+
+## Notes
+
+- `web_extract` is always first choice for URLs
+- pymupdf is the safe default — instant, no models, works everywhere
+- marker-pdf is for OCR, scanned docs, equations, complex layouts — install only when needed
+- Both helper scripts accept `--help` for full usage
+- marker-pdf downloads ~2.5GB of models to `~/.cache/huggingface/` on first use
+- For Word docs: `pip install python-docx` (better than OCR — parses actual structure)
+- For PowerPoint: see the `powerpoint` skill (uses python-pptx)

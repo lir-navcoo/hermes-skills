@@ -1,1 +1,274 @@
-IyBEZXNpZ24gU3lzdGVtOiBNaXN0cmFsIEFJCgoKPiAqKkhlcm1lcyBBZ2VudCDigJQgSW1wbGVtZW50YXRpb24gTm90ZXMqKgo+Cj4gVGhlIG9yaWdpbmFsIHNpdGUgdXNlcyBwcm9wcmlldGFyeSBmb250cy4gRm9yIHNlbGYtY29udGFpbmVkIEhUTUwgb3V0cHV0LCB1c2UgdGhlc2UgQ0ROIHN1YnN0aXR1dGVzOgo+IC0gKipQcmltYXJ5OioqIGBJbnRlcmAgfCAqKk1vbm86KiogYEpldEJyYWlucyBNb25vYAo+IC0gKipGb250IHN0YWNrIChDU1MpOioqIGBmb250LWZhbWlseTogJ0ludGVyJywgc3lzdGVtLXVpLCAtYXBwbGUtc3lzdGVtLCAnU2Vnb2UgVUknLCBSb2JvdG8sIHNhbnMtc2VyaWY7YAo+IC0gKipNb25vIHN0YWNrIChDU1MpOioqIGBmb250LWZhbWlseTogJ0pldEJyYWlucyBNb25vJywgdWktbW9ub3NwYWNlLCBTRk1vbm8tUmVndWxhciwgTWVubG8sIE1vbmFjbywgQ29uc29sYXMsICdMaWJlcmF0aW9uIE1vbm8nLCAnQ291cmllciBOZXcnLCBtb25vc3BhY2U7YAo+IGBgYGh0bWwKPiA8bGluayBocmVmPSJodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2NzczI/ZmFtaWx5PUludGVyOndnaHRAMzAwOzQwMDs1MDA7NjAwOzcwMCZmYW1pbHk9SmV0QnJhaW5zK01vbm86d2dodEA0MDA7NTAwJmRpc3BsYXk9c3dhcCIgcmVsPSJzdHlsZXNoZWV0Ij4KPiBgYGAKPiBVc2UgYHdyaXRlX2ZpbGVgIHRvIGNyZWF0ZSBIVE1MLCBzZXJ2ZSB2aWEgYGdlbmVyYXRpdmUtd2lkZ2V0c2Agc2tpbGwgKGNsb3VkZmxhcmVkIHR1bm5lbCkuCj4gVmVyaWZ5IHZpc3VhbCBhY2N1cmFjeSB3aXRoIGBicm93c2VyX3Zpc2lvbmAgYWZ0ZXIgZ2VuZXJhdGluZy4KCiMjIDEuIFZpc3VhbCBUaGVtZSAmIEF0bW9zcGhlcmUKCk1pc3RyYWwgQUkncyBpbnRlcmZhY2UgaXMgYSBzdW4tZHJlbmNoZWQgbGFuZHNjYXBlIHJlbmRlcmVkIGluIGNvZGUg4oCUIGEgd2FybSwgYm9sZCwgdW5hcG9sb2dldGljYWxseSBFdXJvcGVhbiBkZXNpZ24gdGhhdCB0cmFkZXMgdGhlIHR5cGljYWwgYmx1ZS1zY3JlZW4gQUkgYWVzdGhldGljIGZvciBnb2xkZW4gYW1iZXIsIGJ1cm50IG9yYW5nZSwgYW5kIHRoZSBmZWVsaW5nIG9mIGxhdGUtYWZ0ZXJub29uIGxpZ2h0IGluIHNvdXRoZXJuIEZyYW5jZS4gRXZlcnkgc3VyZmFjZSBnbG93cyB3aXRoIHdhcm10aDogYmFja2dyb3VuZHMgZmFkZSBmcm9tIHBhbGUgY3JlYW0gdG8gZGVlcCBhbWJlciwgc2hhZG93cyBjYXJyeSBnb2xkZW4gdW5kZXJ0b25lcyAoYHJnYmEoMTI3LCA5OSwgMjEsIC4uLilgKSwgYW5kIHRoZSBicmFuZCdzIHNpZ25hdHVyZSBvcmFuZ2UgKGAjZmE1MjBmYCkgYnVybnMgdGhyb3VnaCB0aGUgcGFnZSBsaWtlIGEgc2lnbmFsIGZpcmUuCgpUaGUgZGVzaWduIGxhbmd1YWdlIGlzIG1heGltYWxpc3QgaW4gaXRzIHdhcm10aCBidXQgbWluaW1hbGlzdCBpbiBpdHMgc3RydWN0dXJlLiBIdWdlIGRpc3BsYXkgaGVhZGxpbmVzICg4MnB4KSBjcmFzaCBpbnRvIHRoZSB2aWV3cG9ydCB3aXRoIGFnZ3Jlc3NpdmUgbmVnYXRpdmUgdHJhY2tpbmcgKC0yLjA1cHgpLCBjcmVhdGluZyB0ZXh0IGJsb2NrcyB0aGF0IGZlZWwgbGlrZSBiaWxsYm9hcmRzIG9yIHByb3Rlc3QgcG9zdGVycyDigJQgZGVjbGFyYXRpb25zIHJhdGhlciB0aGFuIGRlc2NyaXB0aW9ucy4gVGhlIHR5cG9ncmFwaHkgdXNlcyBBcmlhbCAobGlrZWx5IGEgY3VzdG9tIGZvbnQgd2l0aCBBcmlhbCBhcyBmYWxsYmFjaykgYXQgZXh0cmVtZSBzaXplcywgY3JlYXRpbmcgYSByYXcsIHVuYWRvcm5lZCB2b2ljZSB0aGF0IHNheXMgIndlIGJ1aWxkIGZyb250aWVyIEFJIiB3aXRoIG5vIGRlY29yYXRpb24gbmVlZGVkLgoKV2hhdCBtYWtlcyBNaXN0cmFsIGRpc3RpbmN0aXZlIGlzIHRoZSBjb21wbGV0ZSBjb21taXRtZW50IHRvIGEgd2FybSBjb2xvciB0ZW1wZXJhdHVyZS4gVGhlIHNpZ25hdHVyZSAiYmxvY2siIGlkZW50aXR5IOKAlCBhIGdyYWRpZW50IHN5c3RlbSBmbG93aW5nIGZyb20gYnJpZ2h0IHllbGxvdyAoYCNmZmQ5MDBgKSB0aHJvdWdoIGFtYmVyIChgI2ZmYTExMGApIHRvIGJ1cm50IG9yYW5nZSAoYCNmYTUyMGZgKSDigJQgY3JlYXRlcyBhIHZpc3VhbCBpZGVudGl0eSB0aGF0J3MgaW1tZWRpYXRlbHkgcmVjb2duaXphYmxlLiBFdmVuIHRoZSBzaGFkb3dzIGFyZSB3YXJtLCB1c2luZyBhbWJlci10aW50ZWQgYmxhY2tzIGluc3RlYWQgb2YgY29vbCBncmF5cy4gQ29tYmluZWQgd2l0aCBkcmFtYXRpYyBsYW5kc2NhcGUgcGhvdG9ncmFwaHkgaW4gZ29sZGVuIHRvbmVzLCB0aGUgZGVzaWduIGZlZWxzIGxlc3MgbGlrZSBhIHRlY2ggY29tcGFueSBhbmQgbW9yZSBsaWtlIGEgRXVyb3BlYW4gbHV4dXJ5IGJyYW5kIHRoYXQgaGFwcGVucyB0byBidWlsZCBsYW5ndWFnZSBtb2RlbHMuCgoqKktleSBDaGFyYWN0ZXJpc3RpY3M6KioKLSBHb2xkZW4tYW1iZXIgY29sb3IgdW5pdmVyc2U6IGV2ZXJ5IHRvbmUgZnJvbSBwYWxlIGNyZWFtICgjZmZmYWViKSB0byBidXJudCBvcmFuZ2UgKCNmYTUyMGYpCi0gTWFzc2l2ZSBkaXNwbGF5IHR5cG9ncmFwaHkgKDgycHgpIHdpdGggYWdncmVzc2l2ZSBuZWdhdGl2ZSBsZXR0ZXItc3BhY2luZyAoLTIuMDVweCkKLSBXYXJtIGdvbGRlbiBzaGFkb3cgc3lzdGVtIHVzaW5nIGFtYmVyLXRpbnRlZCByZ2JhIHZhbHVlcwotIFRoZSBNaXN0cmFsICJNIiBibG9jayBpZGVudGl0eSDigJQgYSBncmFkaWVudCBmcm9tIHllbGxvdyB0byBvcmFuZ2UKLSBEcmFtYXRpYyBsYW5kc2NhcGUgcGhvdG9ncmFwaHkgaW4gd2FybSBnb2xkZW4gdG9uZXMKLSBVcHBlcmNhc2UgdHlwb2dyYXBoeSB1c2VkIHN0cmF0ZWdpY2FsbHkgZm9yIHNlY3Rpb24gbGFiZWxzIGFuZCBDVEFzCi0gTmVhci16ZXJvIGJvcmRlci1yYWRpdXMg4oCUIHNoYXJwLCBhcmNoaXRlY3R1cmFsIGdlb21ldHJ5Ci0gRnJlbmNoLUV1cm9wZWFuIGNvbmZpZGVuY2U6IGJvbGQsIHdhcm0sIGRlY2xhcmF0aXZlCgojIyAyLiBDb2xvciBQYWxldHRlICYgUm9sZXMKCiMjIyBQcmltYXJ5Ci0gKipNaXN0cmFsIE9yYW5nZSoqIChgI2ZhNTIwZmApOiBUaGUgY29yZSBicmFuZCBjb2xvciDigJQgYSB2aXZpZCwgc2F0dXJhdGVkIG9yYW5nZS1yZWQgdGhhdCBhbmNob3JzIHRoZSBlbnRpcmUgaWRlbnRpdHkuIFVzZWQgZm9yIHByaW1hcnkgZW1waGFzaXMsIHRoZSBicmFuZCBibG9jaywgYW5kIHRoZSBoaWdoZXN0LXNpZ25hbCBtb21lbnRzLgotICoqTWlzdHJhbCBGbGFtZSoqIChgI2ZiNjQyNGApOiBBIHNsaWdodGx5IHdhcm1lciwgbGlnaHRlciB2YXJpYW50IG9mIHRoZSBicmFuZCBvcmFuZ2UgdXNlZCBmb3Igc2Vjb25kYXJ5IGJyYW5kIG1vbWVudHMgYW5kIGhvdmVyIHN0YXRlcy4KLSAqKkJsb2NrIE9yYW5nZSoqIChgI2ZmODEwNWApOiBBIHB1cmUgb3JhbmdlIHVzZWQgaW4gdGhlIGdyYWRpZW50IGJsb2NrIHN5c3RlbSDigJQgd2FybWVyIGFuZCBsZXNzIHJlZCB0aGFuIE1pc3RyYWwgT3JhbmdlLgoKIyMjIFNlY29uZGFyeSAmIEFjY2VudAotICoqU3Vuc2hpbmUgOTAwKiogKGAjZmY4YTAwYCk6IERlZXAgZ29sZGVuIGFtYmVyIOKAlCB0aGUgZGFya2VzdCBzdW5zaGluZSB0b25lLCB1c2VkIGZvciBzdHJvbmcgYWNjZW50IG1vbWVudHMuCi0gKipTdW5zaGluZSA3MDAqKiAoYCNmZmExMTBgKTogV2FybSBhbWJlci1nb2xkIOKAlCB0aGUgY29yZSBzdW5zaGluZSBhY2NlbnQgZm9yIGJhY2tncm91bmRzIGFuZCBpbnRlcmFjdGl2ZSBlbGVtZW50cy4KLSAqKlN1bnNoaW5lIDUwMCoqIChgI2ZmYjgzZWApOiBNZWRpdW0gZ29sZGVuIOKAlCBiYWxhbmNlZCB3YXJtdGggZm9yIG1pZC1sZXZlbCBlbXBoYXNpcy4KLSAqKlN1bnNoaW5lIDMwMCoqIChgI2ZmZDA2YWApOiBMaWdodCBnb2xkZW4g4oCUIGZvciBzdWJ0bGUgd2FybSB0aW50cyBhbmQgc2Vjb25kYXJ5IGJhY2tncm91bmRzLgotICoqQmxvY2sgR29sZCoqIChgI2ZmZTI5NWApOiBQYWxlIGdvbGQg4oCUIHNvZnQgYmFja2dyb3VuZCBhY2NlbnRzIGFuZCBnZW50bGUgd2FybXRoLgotICoqQnJpZ2h0IFllbGxvdyoqIChgI2ZmZDkwMGApOiBUaGUgYnJpZ2h0ZXN0IHRvbmUgaW4gdGhlIGdyYWRpZW50IOKAlCB1c2VkIGF0IHRoZSAidG9wIiBvZiB0aGUgYmxvY2sgaWRlbnRpdHkuCgojIyMgU3VyZmFjZSAmIEJhY2tncm91bmQKLSAqKldhcm0gSXZvcnkqKiAoYCNmZmZhZWJgKTogVGhlIGxpZ2h0ZXN0IHBhZ2UgYmFja2dyb3VuZCDigJQgYmFyZWx5IHRpbnRlZCB3aXRoIHdhcm10aCwgdGhlIGZvdW5kYXRpb24gY2FudmFzLgotICoqQ3JlYW0qKiAoYCNmZmYwYzJgKTogVGhlIHByaW1hcnkgd2FybSBzdXJmYWNlIGFuZCBzZWNvbmRhcnkgYnV0dG9uIGJhY2tncm91bmQg4oCUIG5vdGljZWFibHkgZ29sZGVuLgotICoqUHVyZSBXaGl0ZSoqIChgI2ZmZmZmZmApOiBVc2VkIGZvciBtYXhpbXVtIGNvbnRyYXN0IGVsZW1lbnRzIGFuZCBwb3BvdmVyIHN1cmZhY2VzLgotICoqTWlzdHJhbCBCbGFjayoqIChgIzFmMWYxZmApOiBUaGUgcHJpbWFyeSBkYXJrIHN1cmZhY2UgZm9yIGJ1dHRvbnMsIHRleHQsIGFuZCBkYXJrIHNlY3Rpb25zLgotICoqQWNjZW50IE9yYW5nZSoqIChkZWZpbmVkIGFzIGBoc2woMTcsIDk2JSwgNTIlKWApOiBUaGUgZnVuY3Rpb25hbCBhY2NlbnQgY29sb3IgZm9yIGludGVyYWN0aXZlIHN0YXRlcy4KCiMjIyBOZXV0cmFscyAmIFRleHQKLSAqKk1pc3RyYWwgQmxhY2sqKiAoYCMxZjFmMWZgKTogUHJpbWFyeSB0ZXh0IGNvbG9yIGFuZCBkYXJrIGJ1dHRvbiBiYWNrZ3JvdW5kcyDigJQgYSBuZWFyLWJsYWNrIHRoYXQncyB3YXJtZXIgdGhhbiBwdXJlICMwMDAuCi0gKipCbGFjayBUaW50KiogKGRlZmluZWQgYXMgYGhzbCgwLCAwJSwgMjQlKWApOiBBIG1lZGl1bSBkYXJrIGdyYXkgZm9yIHNlY29uZGFyeSB0ZXh0IG9uIGxpZ2h0IGJhY2tncm91bmRzLgotICoqUHVyZSBXaGl0ZSoqIChgI2ZmZmZmZmApOiBUZXh0IG9uIGRhcmsgc3VyZmFjZXMgYW5kIENUQSBsYWJlbHMuCgojIyMgU2VtYW50aWMgJiBBY2NlbnQKLSAqKklucHV0IEJvcmRlcioqIChkZWZpbmVkIGFzIGBoc2woMjQwLCA1LjklLCA5MCUpYCk6IEEgY29vbC10aW50ZWQgbGlnaHQgZ3JheSBmb3IgZm9ybSBib3JkZXJzIOKAlCBvbmUgb2YgdGhlIGZldyBjb29sIHRvbmVzIGluIHRoZSBzeXN0ZW0uCi0gKipXaGl0ZSBPdmVybGF5KiogKGBva2xhYigxLCAwLCAwIC8gMC4wODjigJMwLjEpYCk6IFNlbWktdHJhbnNwYXJlbnQgd2hpdGUgZm9yIGZyb3N0ZWQgZ2xhc3MgZWZmZWN0cyBhbmQgYnV0dG9uIG92ZXJsYXlzLgoKIyMjIEdyYWRpZW50IFN5c3RlbQotICoqTWlzdHJhbCBCbG9jayBHcmFkaWVudCoqOiBUaGUgc2lnbmF0dXJlIGlkZW50aXR5IOKAlCBhIG11bHRpLXN0ZXAgZ3JhZGllbnQgZmxvd2luZyB0aHJvdWdoIFllbGxvdyAoYCNmZmQ5MDBgKSDihpIgR29sZCAoYCNmZmUyOTVgKSDihpIgQW1iZXIgKGAjZmZhMTEwYCkg4oaSIE9yYW5nZSAoYCNmZjgxMDVgKSDihpIgRmxhbWUgKGAjZmI2NDI0YCkg4oaSIE1pc3RyYWwgT3JhbmdlIChgI2ZhNTIwZmApLiBUaGlzIGdyYWRpZW50IGFwcGVhcnMgaW4gdGhlIGxvZ28gYmxvY2tzLCBzZWN0aW9uIGJhY2tncm91bmRzLCBhbmQgZGVjb3JhdGl2ZSBlbGVtZW50cy4KLSAqKkdvbGRlbiBMYW5kc2NhcGUgV2FzaCoqOiBQaG90b2dyYXBoeSBhbmQgYmFja2dyb3VuZHMgdXNlIHdhcm0gYW1iZXIgb3ZlcmxheXMgY3JlYXRpbmcgYSBjb25zaXN0ZW50IGdvbGRlbiB0ZW1wZXJhdHVyZSBhY3Jvc3MgdGhlIHBhZ2UuCi0gKipXYXJtIFNoYWRvdyBDYXNjYWRlKio6IE11bHRpLWxheWVyZWQgZ29sZGVuIHNoYWRvd3MgdGhhdCBidWlsZCBkZXB0aCB3aXRoIGFtYmVyLXRpbnRlZCB0cmFuc3BhcmVuY3kgcmF0aGVyIHRoYW4gZ3JheS4KCiMjIDMuIFR5cG9ncmFwaHkgUnVsZXMKCiMjIyBGb250IEZhbWlseQotICoqUHJpbWFyeSoqOiBMaWtlbHkgYSBjdXN0b20gZm9udCAoRm9udCBTb3VyY2UgZGV0ZWN0ZWQpIHdpdGggYEFyaWFsYCBhcyBmYWxsYmFjaywgYW5kIGV4dGVuZGVkIHN0YWNrOiBgdWktc2Fucy1zZXJpZiwgc3lzdGVtLXVpLCBBcHBsZSBDb2xvciBFbW9qaSwgU2Vnb2UgVUkgRW1vamksIFNlZ29lIFVJIFN5bWJvbCwgTm90byBDb2xvciBFbW9qaWAKCiMjIyBIaWVyYXJjaHkKCnwgUm9sZSB8IEZvbnQgfCBTaXplIHwgV2VpZ2h0IHwgTGluZSBIZWlnaHQgfCBMZXR0ZXIgU3BhY2luZyB8IE5vdGVzIHwKfC0tLS0tLXwtLS0tLS18LS0tLS0tfC0tLS0tLS0tfC0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tLS0tLXwtLS0tLS0tfAp8IERpc3BsYXkgLyBIZXJvIHwgQXJpYWwgKGN1c3RvbSkgfCA4MnB4ICg1LjEzcmVtKSB8IDQwMCB8IDEuMDAgKHRpZ2h0KSB8IC0yLjA1cHggfCBNYXhpbXVtIGltcGFjdCwgYmlsbGJvYXJkIHNjYWxlIHwKfCBTZWN0aW9uIEhlYWRpbmcgfCBBcmlhbCAoY3VzdG9tKSB8IDU2cHggKDMuNXJlbSkgfCA0MDAgfCAwLjk1ICh1bHRyYS10aWdodCkgfCBub3JtYWwgfCBGZWF0dXJlIHNlY3Rpb24gYW5jaG9ycyB8CnwgU3ViLWhlYWRpbmcgTGFyZ2UgfCBBcmlhbCAoY3VzdG9tKSB8IDQ4cHggKDNyZW0pIHwgNDAwIHwgMC45NSAodWx0cmEtdGlnaHQpIHwgbm9ybWFsIHwgU2Vjb25kYXJ5IHNlY3Rpb24gdGl0bGVzIHwKfCBTdWItaGVhZGluZyB8IEFyaWFsIChjdXN0b20pIHwgMzJweCAoMnJlbSkgfCA0MDAgfCAxLjE1ICh0aWdodCkgfCBub3JtYWwgfCBDYXJkIGhlYWRpbmdzLCBmZWF0dXJlIG5hbWVzIHwKfCBDYXJkIFRpdGxlIHwgQXJpYWwgKGN1c3RvbSkgfCAzMHB4ICgxLjg4cmVtKSB8IDQwMCB8IDEuMjAgKHRpZ2h0KSB8IG5vcm1hbCB8IE1pZC1sZXZlbCBoZWFkaW5ncyB8CnwgRmVhdHVyZSBUaXRsZSB8IEFyaWFsIChjdXN0b20pIHwgMjRweCAoMS41cmVtKSB8IDQwMCB8IDEuMzMgfCBub3JtYWwgfCBTbWFsbCBoZWFkaW5ncyB8CnwgQm9keSAvIEJ1dHRvbiB8IEFyaWFsIChjdXN0b20pIHwgMTZweCAoMXJlbSkgfCA0MDAgfCAxLjUwIHwgbm9ybWFsIHwgU3RhbmRhcmQgYm9keSwgYnV0dG9uIHRleHQgfAp8IEJ1dHRvbiBVcHBlcmNhc2UgfCBBcmlhbCAoY3VzdG9tKSB8IDE2cHggKDFyZW0pIHwgNDAwIHwgMS41MCB8IG5vcm1hbCB8IFVwcGVyY2FzZSBDVEEgbGFiZWxzIHwKfCBDYXB0aW9uIC8gTGluayB8IEFyaWFsIChjdXN0b20pIHwgMTRweCAoMC44OHJlbSkgfCA0MDAgfCAxLjQzIHwgbm9ybWFsIHwgTWV0YWRhdGEsIHNlY29uZGFyeSBsaW5rcyB8CgojIyMgUHJpbmNpcGxlcwotICoqU2luZ2xlIHdlaWdodCwgbWF4aW11bSBpbXBhY3QqKjogVGhlIGVudGlyZSBzeXN0ZW0gdXNlcyB3ZWlnaHQgNDAwIChyZWd1bGFyKSDigJQgZXZlbiBhdCA4MnB4LiBUaGlzIGNyZWF0ZXMgYSBzdXJwcmlzaW5nbHkgZWxlZ2FudCBlZmZlY3Qgd2hlcmUgdGhlIHNpemUgYWxvbmUgY2FycmllcyBhdXRob3JpdHkgd2l0aG91dCBuZWVkaW5nIGJvbGQgd2VpZ2h0LgotICoqVWx0cmEtdGlnaHQgYXQgc2NhbGUqKjogTGluZS1oZWlnaHRzIG9mIDAuOTXigJMxLjAwIGF0IGRpc3BsYXkgc2l6ZXMgY3JlYXRlIHRleHQgYmxvY2tzIHdoZXJlIGFzY2VuZGVycyBuZWFybHkgdG91Y2ggZGVzY2VuZGVycyBmcm9tIHRoZSBsaW5lIGFib3ZlIOKAlCBjcmVhdGluZyBkZW5zZSwgcG9zdGVyLWxpa2UgY29tcG9zaXRpb24uCi0gKipBZ2dyZXNzaXZlIHRyYWNraW5nIG9uIGRpc3BsYXkqKjogLTIuMDVweCBsZXR0ZXItc3BhY2luZyBhdCA4MnB4IGNvbXByZXNzZXMgdGhlIGhlcm8gdGV4dCBpbnRvIGEgbW9ub2xpdGhpYyBibG9jay4KLSAqKlVwcGVyY2FzZSBhcyBlbXBoYXNpcyoqOiBTdHJhdGVnaWMgYHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2VgIG9uIGJ1dHRvbiBsYWJlbHMgYW5kIHNlY3Rpb24gbWFya2VycyBjcmVhdGVzIGEgZm9ybWFsLCBFdXJvcGVhbiBzaWduYWdlIHF1YWxpdHkuCi0gKipObyB3ZWlnaHQgdmFyaWF0aW9uKio6IFVubGlrZSBtb3N0IHN5c3RlbXMgdGhhdCB1c2UgMzAw4oCTNzAwIHdlaWdodCByYW5nZSwgTWlzdHJhbCB1c2VzIDQwMCBldmVyeXdoZXJlLiBIaWVyYXJjaHkgY29tZXMgZnJvbSBzaXplIGFuZCBjb2xvciwgbmV2ZXIgd2VpZ2h0LgoKIyMgNC4gQ29tcG9uZW50IFN0eWxpbmdzCgojIyMgQnV0dG9ucwoKKipDcmVhbSBTdXJmYWNlKioKLSBCYWNrZ3JvdW5kOiBDcmVhbSAoYCNmZmYwYzJgKQotIFRleHQ6IE1pc3RyYWwgQmxhY2sgKGAjMWYxZjFmYCkKLSBObyB2aXNpYmxlIGJvcmRlcgotIFRoZSB3YXJtLCBpbnZpdGluZyBzZWNvbmRhcnkgQ1RBCgoqKkRhcmsgU29saWQqKgotIEJhY2tncm91bmQ6IE1pc3RyYWwgQmxhY2sgKGAjMWYxZjFmYCkKLSBUZXh0OiBQdXJlIFdoaXRlIChgI2ZmZmZmZmApCi0gUGFkZGluZzogMTJweCAoYWxsIHNpZGVzKQotIE5vIHZpc2libGUgYm9yZGVyCi0gVGhlIHByaW1hcnkgYWN0aW9uIGJ1dHRvbiDigJQgZGFyayBvbiB3YXJtCgoqKkdob3N0IC8gVHJhbnNwYXJlbnQqKgotIEJhY2tncm91bmQ6IHRyYW5zcGFyZW50IHdpdGggc2xpZ2h0IGRhcmsgb3ZlcmxheSAoYG9rbGFiKDAsIDAsIDAgLyAwLjEpYCkKLSBUZXh0OiBNaXN0cmFsIEJsYWNrIChgIzFmMWYxZmApCi0gT3BhY2l0eTogMC40Ci0gRm9yIHNlY29uZGFyeS9kZS1lbXBoYXNpemVkIGFjdGlvbnMKCioqVGV4dCAvIFVuZGVybGluZSoqCi0gQmFja2dyb3VuZDogdHJhbnNwYXJlbnQKLSBUZXh0OiBNaXN0cmFsIEJsYWNrIChgIzFmMWYxZmApCi0gUGFkZGluZzogOHB4IDBweCAwcHggKHRvcC1vbmx5KQotIE1pbmltYWwgc3R5bGluZyDigJQgdGV4dCBsaW5rIGFzIGJ1dHRvbgotIEZvciB0ZXJ0aWFyeSBuYXZpZ2F0aW9uIGFjdGlvbnMKCiMjIyBDYXJkcyAmIENvbnRhaW5lcnMKLSBCYWNrZ3JvdW5kOiBXYXJtIEl2b3J5IChgI2ZmZmFlYmApLCBDcmVhbSAoYCNmZmYwYzJgKSwgb3IgUHVyZSBXaGl0ZQotIEJvcmRlcjogbWluaW1hbCB0byBub25lIOKAlCBjb250YWluZXJzIGRlZmluZWQgYnkgYmFja2dyb3VuZCBjb2xvcgotIFJhZGl1czogbmVhci16ZXJvIOKAlCBzaGFycCwgYXJjaGl0ZWN0dXJhbCBjb3JuZXJzCi0gU2hhZG93OiB3YXJtIGdvbGRlbiBtdWx0aS1sYXllciAoYHJnYmEoMTI3LCA5OSwgMjEsIDAuMTIpIC04cHggMTZweCAzOXB4LCByZ2JhKDEyNywgOTksIDIxLCAwLjEpIC0zM3B4IDY0cHggNzJweCwgcmdiYSgxMjcsIDk5LCAyMSwgMC4wNikgLTczcHggMTQ0cHggOTdweCwgLi4uYCkg4oCUIGEgZHJhbWF0aWMsIGNhc2NhZGluZyB3YXJtIHNoYWRvdwotIERpc3RpbmN0aXZlOiB0aGUgZ29sZGVuIHNoYWRvdyBjcmVhdGVzIGEgImdvbGRlbiBob3VyIiBsaWdodGluZyBlZmZlY3QKCiMjIyBJbnB1dHMgJiBGb3JtcwotIEJvcmRlcjogYGhzbCgyNDAsIDUuOSUsIDkwJSlgIOKAlCB0aGUgc29sZSBjb29sLXRvbmVkIGVsZW1lbnQKLSBGb2N1czogYWNjZW50IGNvbG9yIHJpbmcKLSBNaW5pbWFsIHN0eWxpbmcgY29uc2lzdGVudCB3aXRoIHNwYXJzZSBhZXN0aGV0aWMKCiMjIyBOYXZpZ2F0aW9uCi0gVHJhbnNwYXJlbnQgbmF2IG92ZXJsYXlpbmcgdGhlIHdhcm0gaGVybwotIExvZ286IE1pc3RyYWwgIk0iIHdvcmRtYXJrCi0gTGlua3M6IERhcmsgdGV4dCAod2hpdGUgb24gZGFyayBzZWN0aW9ucykKLSBDVEE6IERhcmsgc29saWQgYnV0dG9uIG9yIGNyZWFtIHN1cmZhY2UgYnV0dG9uCi0gTWluaW1hbCwgd2lkZS1zcGFjZWQgbGF5b3V0CgojIyMgSW1hZ2UgVHJlYXRtZW50Ci0gRHJhbWF0aWMgbGFuZHNjYXBlIHBob3RvZ3JhcGh5IGluIHdhcm0gZ29sZGVuIHRvbmVzCi0gVGhlIHdpbmRpbmcgcm9hZCB0aHJvdWdoIGdvbGRlbiBoaWxscyDigJQgYSByZWN1cnJpbmcgdmlzdWFsIG1vdGlmCi0gVGhlIE1pc3RyYWwgIk0iIHJlbmRlcmVkIGF0IGxhcmdlIHNjYWxlIG9uIGdvbGRlbiBiYWNrZ3JvdW5kcwotIFdhcm0gY29sb3IgZ3JhZGluZyBvbiBhbGwgcGhvdG9ncmFwaHkKLSBGdWxsLWJsZWVkIHNlY3Rpb25zIHdpdGggcGhvdG9ncmFwaHkKCiMjIyBEaXN0aW5jdGl2ZSBDb21wb25lbnRzCgoqKk1pc3RyYWwgQmxvY2sgSWRlbnRpdHkqKgotIEEgcm93IG9mIGNvbG9yZWQgYmxvY2tzIGZvcm1pbmcgdGhlIGdyYWRpZW50OiB5ZWxsb3cg4oaSIGFtYmVyIOKGkiBvcmFuZ2Ug4oaSIGJ1cm50IG9yYW5nZQotIEVhY2ggYmxvY2sgZ2V0cyBwcm9ncmVzc2l2ZWx5IG1vcmUgb3JhbmdlL3JlZAotIFRoZSB2aXN1YWwgRE5BIG9mIHRoZSBicmFuZCDigJQgcmVjb2duaXphYmxlIGF0IGFueSBzaXplCgoqKkdvbGRlbiBTaGFkb3cgQ2FyZHMqKgotIENhcmRzIGVsZXZhdGVkIHdpdGggd2FybSBhbWJlciBtdWx0aS1sYXllcmVkIHNoYWRvd3MKLSA1IGxheWVycyBvZiBzaGFkb3cgZnJvbSAxNnB4IHRvIDQwMHB4IG9mZnNldAotIENyZWF0ZXMgYSAiZmxvYXRpbmcgaW4gZ29sZGVuIGxpZ2h0IiBlZmZlY3QgdW5pcXVlIHRvIE1pc3RyYWwKCioqRGFyayBGb290ZXIgR3JhZGllbnQqKgotIEZvb3RlciB0cmFuc2l0aW9ucyBmcm9tIHdhcm0gYW1iZXIgdG8gZGFyayB0aHJvdWdoIGEgZHJhbWF0aWMgZ3JhZGllbnQKLSBDcmVhdGVzIGEgInN1bnNldCIgZWZmZWN0IGFzIHRoZSBwYWdlIGVuZHMKCiMjIDUuIExheW91dCBQcmluY2lwbGVzCgojIyMgU3BhY2luZyBTeXN0ZW0KLSBCYXNlIHVuaXQ6IDhweAotIFNjYWxlOiAycHgsIDRweCwgOHB4LCAxMHB4LCAxMnB4LCAxNnB4LCAyMHB4LCAyNHB4LCAzMnB4LCA0MHB4LCA0OHB4LCA2NHB4LCA4MHB4LCA5OHB4LCAxMDBweAotIEJ1dHRvbiBwYWRkaW5nOiAxMnB4IG9yIDhweCAwcHggKGNvbXBhY3QpCi0gU2VjdGlvbiB2ZXJ0aWNhbCBzcGFjaW5nOiB2ZXJ5IGdlbmVyb3VzICg4MHB44oCTMTAwcHgpCgojIyMgR3JpZCAmIENvbnRhaW5lcgotIE1heCBjb250YWluZXIgd2lkdGg6IGFwcHJveGltYXRlbHkgMTI4MHB4LCBjZW50ZXJlZAotIEhlcm86IGZ1bGwtd2lkdGggd2l0aCBtYXNzaXZlIHR5cG9ncmFwaHkgb3ZlcmxheWluZyB3YXJtIGJhY2tncm91bmRzCi0gRmVhdHVyZSBzZWN0aW9uczogd2lkZS1mb3JtYXQgbGF5b3V0cyB3aXRoIGRyYW1hdGljIGltYWdlcnkKLSBDYXJkIGdyaWRzOiAy4oCTMyBjb2x1bW4gbGF5b3V0cwoKIyMjIFdoaXRlc3BhY2UgUGhpbG9zb3BoeQotICoqQm9sZCBkZWNsYXJhdGlvbnMqKjogSHVnZSBoZWFkbGluZXMgc3Vycm91bmRlZCBieSBnZW5lcm91cyB3aGl0ZXNwYWNlIGNyZWF0ZSBiaWxsYm9hcmQtbGlrZSBpbXBhY3Qg4oCUIGVhY2ggc3RhdGVtZW50IGdldHMgaXRzIG93biBicmVhdGhpbmcgc3BhY2UuCi0gKipXYXJtIHZvaWQqKjogRW1wdHkgc3BhY2UgaXRzZWxmIGZlZWxzIHdhcm0gYmVjYXVzZSB0aGUgYmFja2dyb3VuZHMgYXJlIHRpbnRlZCBpdm9yeS9jcmVhbSByYXRoZXIgdGhhbiBwdXJlIHdoaXRlLgotICoqUGhvdG9ncmFwaHkgYXMgc3BhY2UtZmlsbGVyKio6IExhcmdlIGxhbmRzY2FwZSBpbWFnZXMgc2VydmUgZG91YmxlIGR1dHkgYXMgY29udGVudCBhbmQgZGVjb3JhdGl2ZSB3aGl0ZXNwYWNlLgoKIyMjIEJvcmRlciBSYWRpdXMgU2NhbGUKLSBOZWFyLXplcm86IFRoZSBkb21pbmFudCByYWRpdXMg4oCUIHNoYXJwLCBhcmNoaXRlY3R1cmFsIGNvcm5lcnMgb24gbW9zdCBlbGVtZW50cwotIFRoaXMgZXh0cmVtZSBzaGFycG5lc3MgY29udHJhc3RzIHdpdGggdGhlIHdhcm10aCBvZiB0aGUgY29sb3JzLCBjcmVhdGluZyBhIHRlbnNpb24gYmV0d2VlbiBzb2Z0IGNvbG9yIGFuZCBoYXJkIGdlb21ldHJ5LgoKIyMgNi4gRGVwdGggJiBFbGV2YXRpb24KCnwgTGV2ZWwgfCBUcmVhdG1lbnQgfCBVc2UgfAp8LS0tLS0tLXwtLS0tLS0tLS0tLXwtLS0tLXwKfCBGbGF0IChMZXZlbCAwKSB8IE5vIHNoYWRvdyB8IFBhZ2UgYmFja2dyb3VuZHMsIHRleHQgYmxvY2tzIHwKfCBHb2xkZW4gRmxvYXQgKExldmVsIDEpIHwgTXVsdGktbGF5ZXIgd2FybSBzaGFkb3cgKDUgbGF5ZXJzLCAxMiXihpIwJSBvcGFjaXR5LCBhbWJlci10aW50ZWQpIHwgRmVhdHVyZSBjYXJkcywgcHJvZHVjdCBzaG93Y2FzZXMsIGVsZXZhdGVkIGNvbnRlbnQgfAoKKipTaGFkb3cgUGhpbG9zb3BoeSoqOiBNaXN0cmFsIHVzZXMgYSBzaW5nbGUgYnV0IGV4dHJhb3JkaW5hcmlseSBjb21wbGV4IHNoYWRvdyDigJQgKipmaXZlIGNhc2NhZGluZyBsYXllcnMqKiBvZiBhbWJlci10aW50ZWQgc2hhZG93IChgcmdiYSgxMjcsIDk5LCAyMSwgLi4uKWApIHRoYXQgYnVpbGQgZnJvbSBhIGNsb3NlIDE2cHggb2Zmc2V0IHRvIGEgZGlzdGFudCA0MDBweCBvZmZzZXQuIFRoZSByZXN1bHQgaXMgYSByaWNoLCB3YXJtLCAiZ29sZGVuIGhvdXIiIGxpZ2h0aW5nIGVmZmVjdCB0aGF0IG1ha2VzIGVsZXZhdGVkIGVsZW1lbnRzIGxvb2sgbGlrZSB0aGV5J3JlIGJhdGhlZCBpbiBhZnRlcm5vb24gc3VubGlnaHQuIFRoaXMgaXMgdGhlIG1vc3QgZGlzdGluY3RpdmUgc2hhZG93IHN5c3RlbSBpbiBhbnkgbWFqb3IgQUkgYnJhbmQuCgojIyA3LiBEbydzIGFuZCBEb24ndHMKCiMjIyBEbwotIFVzZSB0aGUgd2FybSBjb2xvciBzcGVjdHJ1bSBleGNsdXNpdmVseTogaXZvcnksIGNyZWFtLCBhbWJlciwgZ29sZCwgb3JhbmdlCi0gS2VlcCBkaXNwbGF5IHR5cG9ncmFwaHkgYXQgODJweCsgd2l0aCAtMi4wNXB4IGxldHRlci1zcGFjaW5nIGZvciBoZXJvIHNlY3Rpb25zCi0gVXNlIHRoZSBNaXN0cmFsIGJsb2NrIGdyYWRpZW50ICh5ZWxsb3cg4oaSIGFtYmVyIOKGkiBvcmFuZ2UpIGZvciBicmFuZCBtb21lbnRzCi0gQXBwbHkgd2FybSBnb2xkZW4gc2hhZG93cyAoYW1iZXItdGludGVkIHJnYmEpIGZvciBlbGV2YXRlZCBlbGVtZW50cwotIFVzZSBNaXN0cmFsIEJsYWNrICgjMWYxZjFmKSBmb3IgdGV4dCDigJQgbmV2ZXIgcHVyZSAjMDAwMDAwCi0gS2VlcCBmb250IHdlaWdodCBhdCA0MDAgdGhyb3VnaG91dCDigJQgbGV0IHNpemUgYW5kIGNvbG9yIGNhcnJ5IGhpZXJhcmNoeQotIFVzZSBzaGFycCwgYXJjaGl0ZWN0dXJhbCBjb3JuZXJzIOKAlCBuZWFyLXplcm8gYm9yZGVyLXJhZGl1cwotIEFwcGx5IHVwcGVyY2FzZSBvbiBidXR0b24gbGFiZWxzIGFuZCBzZWN0aW9uIG1hcmtlcnMgZm9yIEV1cm9wZWFuIGZvcm1hbGl0eQotIFVzZSB3YXJtIGxhbmRzY2FwZSBwaG90b2dyYXBoeSB3aXRoIGdvbGRlbiBjb2xvciBncmFkaW5nCgojIyMgRG9uJ3QKLSBEb24ndCBpbnRyb2R1Y2UgY29vbCBjb2xvcnMgKGJsdWUsIGdyZWVuLCBwdXJwbGUpIOKAlCB0aGUgcGFsZXR0ZSBpcyBleGNsdXNpdmVseSB3YXJtCi0gRG9uJ3QgdXNlIGJvbGQgKDcwMCspIHdlaWdodCDigJQgNDAwIGlzIHRoZSBvbmx5IHdlaWdodAotIERvbid0IHJvdW5kIGNvcm5lcnMg4oCUIHRoZSBzaGFycCBnZW9tZXRyeSBpcyBpbnRlbnRpb25hbAotIERvbid0IHVzZSBjb29sLXRvbmVkIHNoYWRvd3Mg4oCUIHNoYWRvd3MgbXVzdCBjYXJyeSBhbWJlciB3YXJtdGgKLSBEb24ndCB1c2UgcHVyZSB3aGl0ZSBhcyBhIHBhZ2UgYmFja2dyb3VuZCDigJQgYWx3YXlzIHdhcm0tdGludGVkICgjZmZmYWViIG1pbmltdW0pCi0gRG9uJ3QgcmVkdWNlIGhlcm8gdGV4dCBiZWxvdyA0OHB4IG9uIGRlc2t0b3Ag4oCUIHRoZSBiaWxsYm9hcmQgc2NhbGUgaXMgY29yZQotIERvbid0IHVzZSBtb3JlIHRoYW4gMiBmb250IHdlaWdodHMg4oCUIHNpemUgdmFyaWF0aW9uIHJlcGxhY2VzIHdlaWdodCB2YXJpYXRpb24KLSBEb24ndCBhZGQgZ3JhZGllbnRzIG91dHNpZGUgdGhlIHdhcm0gc3BlY3RydW0g4oCUIG5vIGJsdWUtdG8tcHVycGxlLCBubyBjb29sIHRyYW5zaXRpb25zCi0gRG9uJ3QgdXNlIGdlbmVyaWMgZ3JheSBmb3IgdGV4dCDigJQgZXZlbiBuZXV0cmFscyBzaG91bGQgYmUgd2FybS10aW50ZWQKCiMjIDguIFJlc3BvbnNpdmUgQmVoYXZpb3IKCiMjIyBCcmVha3BvaW50cwp8IE5hbWUgfCBXaWR0aCB8IEtleSBDaGFuZ2VzIHwKfC0tLS0tLXwtLS0tLS0tfC0tLS0tLS0tLS0tLS18CnwgTW9iaWxlIHwgPDY0MHB4IHwgU2luZ2xlIGNvbHVtbiwgc3RhY2tlZCBldmVyeXRoaW5nLCBoZXJvIHRleHQgcmVkdWNlcyB0byB+MzJweCB8CnwgVGFibGV0IHwgNjQw4oCTNzY4cHggfCBNaW5vciBsYXlvdXQgYWRqdXN0bWVudHMgfAp8IFNtYWxsIERlc2t0b3AgfCA3NjjigJMxMDI0cHggfCAyLWNvbHVtbiBsYXlvdXRzIGJlZ2luIHwKfCBEZXNrdG9wIHwgMTAyNOKAkzEyODBweCB8IEZ1bGwgbGF5b3V0IHdpdGggbWF4aW11bSB0eXBvZ3JhcGh5IHNjYWxlIHwKCiMjIyBUb3VjaCBUYXJnZXRzCi0gQnV0dG9ucyB1c2UgZ2VuZXJvdXMgcGFkZGluZyAoMTJweCBtaW5pbXVtKQotIE5hdmlnYXRpb24gZWxlbWVudHMgYWRlcXVhdGVseSBzcGFjZWQKLSBDYXJkcyBzZXJ2ZSBhcyBsYXJnZSB0b3VjaCB0YXJnZXRzCgojIyMgQ29sbGFwc2luZyBTdHJhdGVneQotICoqTmF2aWdhdGlvbioqOiBDb2xsYXBzZXMgdG8gaGFtYnVyZ2VyIG9uIG1vYmlsZQotICoqSGVybyB0ZXh0Kio6IDgycHgg4oaSIDU2cHgg4oaSIDQ4cHgg4oaSIDMycHggcHJvZ3Jlc3NpdmUgc2NhbGluZwotICoqRmVhdHVyZSBzZWN0aW9ucyoqOiBNdWx0aS1jb2x1bW4g4oaSIHN0YWNrZWQKLSAqKlBob3RvZ3JhcGh5Kio6IFNjYWxlcyBwcm9wb3J0aW9uYWxseSwgbWF5IGNyb3Agb24gbW9iaWxlCi0gKipCbG9jayBpZGVudGl0eSoqOiBTY2FsZXMgZG93biBwcm9wb3J0aW9uYWxseQoKIyMjIEltYWdlIEJlaGF2aW9yCi0gTGFuZHNjYXBlIHBob3RvZ3JhcGh5IHNjYWxlcyBwcm9wb3J0aW9uYWxseQotIFdhcm0gY29sb3IgZ3JhZGluZyBtYWludGFpbmVkIGF0IGFsbCBzaXplcwotIEJsb2NrIGdyYWRpZW50IGVsZW1lbnRzIHJlc2l6ZSBmbHVpZGx5Ci0gTm8gYXJ0IGRpcmVjdGlvbiBjaGFuZ2VzIOKAlCBzYW1lIHdhcm0gY29tcG9zaXRpb24gYXQgYWxsIHNpemVzCgojIyA5LiBBZ2VudCBQcm9tcHQgR3VpZGUKCiMjIyBRdWljayBDb2xvciBSZWZlcmVuY2UKLSBCcmFuZCBPcmFuZ2U6ICJNaXN0cmFsIE9yYW5nZSAoI2ZhNTIwZikiCi0gUGFnZSBCYWNrZ3JvdW5kOiAiV2FybSBJdm9yeSAoI2ZmZmFlYikiCi0gV2FybSBTdXJmYWNlOiAiQ3JlYW0gKCNmZmYwYzIpIgotIFByaW1hcnkgVGV4dDogIk1pc3RyYWwgQmxhY2sgKCMxZjFmMWYpIgotIFN1bnNoaW5lIEFtYmVyOiAiU3Vuc2hpbmUgNzAwICgjZmZhMTEwKSIKLSBCcmlnaHQgR29sZDogIkJyaWdodCBZZWxsb3cgKCNmZmQ5MDApIgotIFRleHQgb24gRGFyazogIlB1cmUgV2hpdGUgKCNmZmZmZmYpIgoKIyMjIEV4YW1wbGUgQ29tcG9uZW50IFByb21wdHMKLSAiQ3JlYXRlIGEgaGVybyBzZWN0aW9uIG9uIFdhcm0gSXZvcnkgKCNmZmZhZWIpIHdpdGggYSBtYXNzaXZlIGhlYWRsaW5lIGF0IDgycHggQXJpYWwgd2VpZ2h0IDQwMCwgbGluZS1oZWlnaHQgMS4wLCBsZXR0ZXItc3BhY2luZyAtMi4wNXB4LiBNaXN0cmFsIEJsYWNrICgjMWYxZjFmKSB0ZXh0LiBBZGQgYSBkYXJrIHNvbGlkIENUQSBidXR0b24gKCMxZjFmMWYgYmcsIHdoaXRlIHRleHQsIDEycHggcGFkZGluZywgc2hhcnAgY29ybmVycykgYW5kIGEgY3JlYW0gc2Vjb25kYXJ5IGJ1dHRvbiAoI2ZmZjBjMiBiZykuIgotICJEZXNpZ24gYSBmZWF0dXJlIGNhcmQgb24gQ3JlYW0gKCNmZmYwYzIpIHdpdGggc2hhcnAgY29ybmVycyAobm8gYm9yZGVyLXJhZGl1cykuIEFwcGx5IHRoZSBnb2xkZW4gc2hhZG93IHN5c3RlbTogcmdiYSgxMjcsIDk5LCAyMSwgMC4xMikgLThweCAxNnB4IDM5cHggYXMgdGhlIHByaW1hcnkgbGF5ZXIuIFRpdGxlIGF0IDMycHggd2VpZ2h0IDQwMCwgYm9keSBhdCAxNnB4LiIKLSAiQnVpbGQgdGhlIE1pc3RyYWwgYmxvY2sgaWRlbnRpdHk6IGEgcm93IG9mIGNvbG9yZWQgYmxvY2tzIGZyb20gQnJpZ2h0IFllbGxvdyAoI2ZmZDkwMCkgdGhyb3VnaCBTdW5zaGluZSA3MDAgKCNmZmExMTApIHRvIE1pc3RyYWwgT3JhbmdlICgjZmE1MjBmKS4gU2hhcnAgY29ybmVycywgbm8gZ2Fwcy4iCi0gIkNyZWF0ZSBhIGRhcmsgZm9vdGVyIHNlY3Rpb24gb24gTWlzdHJhbCBCbGFjayAoIzFmMWYxZikgd2l0aCBQdXJlIFdoaXRlICgjZmZmZmZmKSB0ZXh0LiBGb290ZXIgbGlua3MgYXQgMTRweC4gQWRkIGEgd2FybSBncmFkaWVudCBmcm9tIFN1bnNoaW5lIDcwMCAoI2ZmYTExMCkgYXQgdGhlIHRvcCBmYWRpbmcgdG8gTWlzdHJhbCBCbGFjay4iCgojIyMgSXRlcmF0aW9uIEd1aWRlCjEuIEtlZXAgdGhlIHdhcm0gdGVtcGVyYXR1cmUg4oCUICJzaGlmdCB0b3dhcmQgYW1iZXIiIG5vdCAic2hpZnQgdG93YXJkIGdyYXkiCjIuIFVzZSBzaXplIGZvciBoaWVyYXJjaHkg4oCUIDgycHgg4oaSIDU2cHgg4oaSIDQ4cHgg4oaSIDMycHgg4oaSIDI0cHgg4oaSIDE2cHgKMy4gTmV2ZXIgYWRkIGJvcmRlci1yYWRpdXMg4oCUIHNoYXJwIGNvcm5lcnMgb25seQo0LiBTaGFkb3dzIGFyZSBhbHdheXMgd2FybTogImdvbGRlbiBzaGFkb3cgd2l0aCBhbWJlciB0b25lcyIKNS4gRm9udCB3ZWlnaHQgaXMgYWx3YXlzIDQwMCDigJQgZGVzY3JpYmUgZW1waGFzaXMgdGhyb3VnaCBzaXplIGFuZCBjb2xvcgo=
+# Design System: Mistral AI
+
+
+> **Hermes Agent — Implementation Notes**
+>
+> The original site uses proprietary fonts. For self-contained HTML output, use these CDN substitutes:
+> - **Primary:** `Inter` | **Mono:** `JetBrains Mono`
+> - **Font stack (CSS):** `font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;`
+> - **Mono stack (CSS):** `font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;`
+> ```html
+> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+> ```
+> Use `write_file` to create HTML, serve via `generative-widgets` skill (cloudflared tunnel).
+> Verify visual accuracy with `browser_vision` after generating.
+
+## 1. Visual Theme & Atmosphere
+
+Mistral AI's interface is a sun-drenched landscape rendered in code — a warm, bold, unapologetically European design that trades the typical blue-screen AI aesthetic for golden amber, burnt orange, and the feeling of late-afternoon light in southern France. Every surface glows with warmth: backgrounds fade from pale cream to deep amber, shadows carry golden undertones (`rgba(127, 99, 21, ...)`), and the brand's signature orange (`#fa520f`) burns through the page like a signal fire.
+
+The design language is maximalist in its warmth but minimalist in its structure. Huge display headlines (82px) crash into the viewport with aggressive negative tracking (-2.05px), creating text blocks that feel like billboards or protest posters — declarations rather than descriptions. The typography uses Arial (likely a custom font with Arial as fallback) at extreme sizes, creating a raw, unadorned voice that says "we build frontier AI" with no decoration needed.
+
+What makes Mistral distinctive is the complete commitment to a warm color temperature. The signature "block" identity — a gradient system flowing from bright yellow (`#ffd900`) through amber (`#ffa110`) to burnt orange (`#fa520f`) — creates a visual identity that's immediately recognizable. Even the shadows are warm, using amber-tinted blacks instead of cool grays. Combined with dramatic landscape photography in golden tones, the design feels less like a tech company and more like a European luxury brand that happens to build language models.
+
+**Key Characteristics:**
+- Golden-amber color universe: every tone from pale cream (#fffaeb) to burnt orange (#fa520f)
+- Massive display typography (82px) with aggressive negative letter-spacing (-2.05px)
+- Warm golden shadow system using amber-tinted rgba values
+- The Mistral "M" block identity — a gradient from yellow to orange
+- Dramatic landscape photography in warm golden tones
+- Uppercase typography used strategically for section labels and CTAs
+- Near-zero border-radius — sharp, architectural geometry
+- French-European confidence: bold, warm, declarative
+
+## 2. Color Palette & Roles
+
+### Primary
+- **Mistral Orange** (`#fa520f`): The core brand color — a vivid, saturated orange-red that anchors the entire identity. Used for primary emphasis, the brand block, and the highest-signal moments.
+- **Mistral Flame** (`#fb6424`): A slightly warmer, lighter variant of the brand orange used for secondary brand moments and hover states.
+- **Block Orange** (`#ff8105`): A pure orange used in the gradient block system — warmer and less red than Mistral Orange.
+
+### Secondary & Accent
+- **Sunshine 900** (`#ff8a00`): Deep golden amber — the darkest sunshine tone, used for strong accent moments.
+- **Sunshine 700** (`#ffa110`): Warm amber-gold — the core sunshine accent for backgrounds and interactive elements.
+- **Sunshine 500** (`#ffb83e`): Medium golden — balanced warmth for mid-level emphasis.
+- **Sunshine 300** (`#ffd06a`): Light golden — for subtle warm tints and secondary backgrounds.
+- **Block Gold** (`#ffe295`): Pale gold — soft background accents and gentle warmth.
+- **Bright Yellow** (`#ffd900`): The brightest tone in the gradient — used at the "top" of the block identity.
+
+### Surface & Background
+- **Warm Ivory** (`#fffaeb`): The lightest page background — barely tinted with warmth, the foundation canvas.
+- **Cream** (`#fff0c2`): The primary warm surface and secondary button background — noticeably golden.
+- **Pure White** (`#ffffff`): Used for maximum contrast elements and popover surfaces.
+- **Mistral Black** (`#1f1f1f`): The primary dark surface for buttons, text, and dark sections.
+- **Accent Orange** (defined as `hsl(17, 96%, 52%)`): The functional accent color for interactive states.
+
+### Neutrals & Text
+- **Mistral Black** (`#1f1f1f`): Primary text color and dark button backgrounds — a near-black that's warmer than pure #000.
+- **Black Tint** (defined as `hsl(0, 0%, 24%)`): A medium dark gray for secondary text on light backgrounds.
+- **Pure White** (`#ffffff`): Text on dark surfaces and CTA labels.
+
+### Semantic & Accent
+- **Input Border** (defined as `hsl(240, 5.9%, 90%)`): A cool-tinted light gray for form borders — one of the few cool tones in the system.
+- **White Overlay** (`oklab(1, 0, 0 / 0.088–0.1)`): Semi-transparent white for frosted glass effects and button overlays.
+
+### Gradient System
+- **Mistral Block Gradient**: The signature identity — a multi-step gradient flowing through Yellow (`#ffd900`) → Gold (`#ffe295`) → Amber (`#ffa110`) → Orange (`#ff8105`) → Flame (`#fb6424`) → Mistral Orange (`#fa520f`). This gradient appears in the logo blocks, section backgrounds, and decorative elements.
+- **Golden Landscape Wash**: Photography and backgrounds use warm amber overlays creating a consistent golden temperature across the page.
+- **Warm Shadow Cascade**: Multi-layered golden shadows that build depth with amber-tinted transparency rather than gray.
+
+## 3. Typography Rules
+
+### Font Family
+- **Primary**: Likely a custom font (Font Source detected) with `Arial` as fallback, and extended stack: `ui-sans-serif, system-ui, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji`
+
+### Hierarchy
+
+| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
+|------|------|------|--------|-------------|----------------|-------|
+| Display / Hero | Arial (custom) | 82px (5.13rem) | 400 | 1.00 (tight) | -2.05px | Maximum impact, billboard scale |
+| Section Heading | Arial (custom) | 56px (3.5rem) | 400 | 0.95 (ultra-tight) | normal | Feature section anchors |
+| Sub-heading Large | Arial (custom) | 48px (3rem) | 400 | 0.95 (ultra-tight) | normal | Secondary section titles |
+| Sub-heading | Arial (custom) | 32px (2rem) | 400 | 1.15 (tight) | normal | Card headings, feature names |
+| Card Title | Arial (custom) | 30px (1.88rem) | 400 | 1.20 (tight) | normal | Mid-level headings |
+| Feature Title | Arial (custom) | 24px (1.5rem) | 400 | 1.33 | normal | Small headings |
+| Body / Button | Arial (custom) | 16px (1rem) | 400 | 1.50 | normal | Standard body, button text |
+| Button Uppercase | Arial (custom) | 16px (1rem) | 400 | 1.50 | normal | Uppercase CTA labels |
+| Caption / Link | Arial (custom) | 14px (0.88rem) | 400 | 1.43 | normal | Metadata, secondary links |
+
+### Principles
+- **Single weight, maximum impact**: The entire system uses weight 400 (regular) — even at 82px. This creates a surprisingly elegant effect where the size alone carries authority without needing bold weight.
+- **Ultra-tight at scale**: Line-heights of 0.95–1.00 at display sizes create text blocks where ascenders nearly touch descenders from the line above — creating dense, poster-like composition.
+- **Aggressive tracking on display**: -2.05px letter-spacing at 82px compresses the hero text into a monolithic block.
+- **Uppercase as emphasis**: Strategic `text-transform: uppercase` on button labels and section markers creates a formal, European signage quality.
+- **No weight variation**: Unlike most systems that use 300–700 weight range, Mistral uses 400 everywhere. Hierarchy comes from size and color, never weight.
+
+## 4. Component Stylings
+
+### Buttons
+
+**Cream Surface**
+- Background: Cream (`#fff0c2`)
+- Text: Mistral Black (`#1f1f1f`)
+- No visible border
+- The warm, inviting secondary CTA
+
+**Dark Solid**
+- Background: Mistral Black (`#1f1f1f`)
+- Text: Pure White (`#ffffff`)
+- Padding: 12px (all sides)
+- No visible border
+- The primary action button — dark on warm
+
+**Ghost / Transparent**
+- Background: transparent with slight dark overlay (`oklab(0, 0, 0 / 0.1)`)
+- Text: Mistral Black (`#1f1f1f`)
+- Opacity: 0.4
+- For secondary/de-emphasized actions
+
+**Text / Underline**
+- Background: transparent
+- Text: Mistral Black (`#1f1f1f`)
+- Padding: 8px 0px 0px (top-only)
+- Minimal styling — text link as button
+- For tertiary navigation actions
+
+### Cards & Containers
+- Background: Warm Ivory (`#fffaeb`), Cream (`#fff0c2`), or Pure White
+- Border: minimal to none — containers defined by background color
+- Radius: near-zero — sharp, architectural corners
+- Shadow: warm golden multi-layer (`rgba(127, 99, 21, 0.12) -8px 16px 39px, rgba(127, 99, 21, 0.1) -33px 64px 72px, rgba(127, 99, 21, 0.06) -73px 144px 97px, ...`) — a dramatic, cascading warm shadow
+- Distinctive: the golden shadow creates a "golden hour" lighting effect
+
+### Inputs & Forms
+- Border: `hsl(240, 5.9%, 90%)` — the sole cool-toned element
+- Focus: accent color ring
+- Minimal styling consistent with sparse aesthetic
+
+### Navigation
+- Transparent nav overlaying the warm hero
+- Logo: Mistral "M" wordmark
+- Links: Dark text (white on dark sections)
+- CTA: Dark solid button or cream surface button
+- Minimal, wide-spaced layout
+
+### Image Treatment
+- Dramatic landscape photography in warm golden tones
+- The winding road through golden hills — a recurring visual motif
+- The Mistral "M" rendered at large scale on golden backgrounds
+- Warm color grading on all photography
+- Full-bleed sections with photography
+
+### Distinctive Components
+
+**Mistral Block Identity**
+- A row of colored blocks forming the gradient: yellow → amber → orange → burnt orange
+- Each block gets progressively more orange/red
+- The visual DNA of the brand — recognizable at any size
+
+**Golden Shadow Cards**
+- Cards elevated with warm amber multi-layered shadows
+- 5 layers of shadow from 16px to 400px offset
+- Creates a "floating in golden light" effect unique to Mistral
+
+**Dark Footer Gradient**
+- Footer transitions from warm amber to dark through a dramatic gradient
+- Creates a "sunset" effect as the page ends
+
+## 5. Layout Principles
+
+### Spacing System
+- Base unit: 8px
+- Scale: 2px, 4px, 8px, 10px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px, 80px, 98px, 100px
+- Button padding: 12px or 8px 0px (compact)
+- Section vertical spacing: very generous (80px–100px)
+
+### Grid & Container
+- Max container width: approximately 1280px, centered
+- Hero: full-width with massive typography overlaying warm backgrounds
+- Feature sections: wide-format layouts with dramatic imagery
+- Card grids: 2–3 column layouts
+
+### Whitespace Philosophy
+- **Bold declarations**: Huge headlines surrounded by generous whitespace create billboard-like impact — each statement gets its own breathing space.
+- **Warm void**: Empty space itself feels warm because the backgrounds are tinted ivory/cream rather than pure white.
+- **Photography as space-filler**: Large landscape images serve double duty as content and decorative whitespace.
+
+### Border Radius Scale
+- Near-zero: The dominant radius — sharp, architectural corners on most elements
+- This extreme sharpness contrasts with the warmth of the colors, creating a tension between soft color and hard geometry.
+
+## 6. Depth & Elevation
+
+| Level | Treatment | Use |
+|-------|-----------|-----|
+| Flat (Level 0) | No shadow | Page backgrounds, text blocks |
+| Golden Float (Level 1) | Multi-layer warm shadow (5 layers, 12%→0% opacity, amber-tinted) | Feature cards, product showcases, elevated content |
+
+**Shadow Philosophy**: Mistral uses a single but extraordinarily complex shadow — **five cascading layers** of amber-tinted shadow (`rgba(127, 99, 21, ...)`) that build from a close 16px offset to a distant 400px offset. The result is a rich, warm, "golden hour" lighting effect that makes elevated elements look like they're bathed in afternoon sunlight. This is the most distinctive shadow system in any major AI brand.
+
+## 7. Do's and Don'ts
+
+### Do
+- Use the warm color spectrum exclusively: ivory, cream, amber, gold, orange
+- Keep display typography at 82px+ with -2.05px letter-spacing for hero sections
+- Use the Mistral block gradient (yellow → amber → orange) for brand moments
+- Apply warm golden shadows (amber-tinted rgba) for elevated elements
+- Use Mistral Black (#1f1f1f) for text — never pure #000000
+- Keep font weight at 400 throughout — let size and color carry hierarchy
+- Use sharp, architectural corners — near-zero border-radius
+- Apply uppercase on button labels and section markers for European formality
+- Use warm landscape photography with golden color grading
+
+### Don't
+- Don't introduce cool colors (blue, green, purple) — the palette is exclusively warm
+- Don't use bold (700+) weight — 400 is the only weight
+- Don't round corners — the sharp geometry is intentional
+- Don't use cool-toned shadows — shadows must carry amber warmth
+- Don't use pure white as a page background — always warm-tinted (#fffaeb minimum)
+- Don't reduce hero text below 48px on desktop — the billboard scale is core
+- Don't use more than 2 font weights — size variation replaces weight variation
+- Don't add gradients outside the warm spectrum — no blue-to-purple, no cool transitions
+- Don't use generic gray for text — even neutrals should be warm-tinted
+
+## 8. Responsive Behavior
+
+### Breakpoints
+| Name | Width | Key Changes |
+|------|-------|-------------|
+| Mobile | <640px | Single column, stacked everything, hero text reduces to ~32px |
+| Tablet | 640–768px | Minor layout adjustments |
+| Small Desktop | 768–1024px | 2-column layouts begin |
+| Desktop | 1024–1280px | Full layout with maximum typography scale |
+
+### Touch Targets
+- Buttons use generous padding (12px minimum)
+- Navigation elements adequately spaced
+- Cards serve as large touch targets
+
+### Collapsing Strategy
+- **Navigation**: Collapses to hamburger on mobile
+- **Hero text**: 82px → 56px → 48px → 32px progressive scaling
+- **Feature sections**: Multi-column → stacked
+- **Photography**: Scales proportionally, may crop on mobile
+- **Block identity**: Scales down proportionally
+
+### Image Behavior
+- Landscape photography scales proportionally
+- Warm color grading maintained at all sizes
+- Block gradient elements resize fluidly
+- No art direction changes — same warm composition at all sizes
+
+## 9. Agent Prompt Guide
+
+### Quick Color Reference
+- Brand Orange: "Mistral Orange (#fa520f)"
+- Page Background: "Warm Ivory (#fffaeb)"
+- Warm Surface: "Cream (#fff0c2)"
+- Primary Text: "Mistral Black (#1f1f1f)"
+- Sunshine Amber: "Sunshine 700 (#ffa110)"
+- Bright Gold: "Bright Yellow (#ffd900)"
+- Text on Dark: "Pure White (#ffffff)"
+
+### Example Component Prompts
+- "Create a hero section on Warm Ivory (#fffaeb) with a massive headline at 82px Arial weight 400, line-height 1.0, letter-spacing -2.05px. Mistral Black (#1f1f1f) text. Add a dark solid CTA button (#1f1f1f bg, white text, 12px padding, sharp corners) and a cream secondary button (#fff0c2 bg)."
+- "Design a feature card on Cream (#fff0c2) with sharp corners (no border-radius). Apply the golden shadow system: rgba(127, 99, 21, 0.12) -8px 16px 39px as the primary layer. Title at 32px weight 400, body at 16px."
+- "Build the Mistral block identity: a row of colored blocks from Bright Yellow (#ffd900) through Sunshine 700 (#ffa110) to Mistral Orange (#fa520f). Sharp corners, no gaps."
+- "Create a dark footer section on Mistral Black (#1f1f1f) with Pure White (#ffffff) text. Footer links at 14px. Add a warm gradient from Sunshine 700 (#ffa110) at the top fading to Mistral Black."
+
+### Iteration Guide
+1. Keep the warm temperature — "shift toward amber" not "shift toward gray"
+2. Use size for hierarchy — 82px → 56px → 48px → 32px → 24px → 16px
+3. Never add border-radius — sharp corners only
+4. Shadows are always warm: "golden shadow with amber tones"
+5. Font weight is always 400 — describe emphasis through size and color

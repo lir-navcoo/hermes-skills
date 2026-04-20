@@ -1,1 +1,3 @@
-LS0tCmRlc2NyaXB0aW9uOiBTcGVjaWZpYyBtb2RlbCBhcmNoaXRlY3R1cmVzIGFuZCB0b29scyDigJQgY29tcHV0ZXIgdmlzaW9uIChDTElQLCBTQU0sIFN0YWJsZSBEaWZmdXNpb24pLCBzcGVlY2ggKFdoaXNwZXIpLCBhdWRpbyBnZW5lcmF0aW9uIChBdWRpb0NyYWZ0KSwgYW5kIG11bHRpbW9kYWwgbW9kZWxzIChMTGFWQSkuCi0tLQo=
+---
+description: Specific model architectures and tools — computer vision (CLIP, SAM, Stable Diffusion), speech (Whisper), audio generation (AudioCraft), and multimodal models (LLaVA).
+---

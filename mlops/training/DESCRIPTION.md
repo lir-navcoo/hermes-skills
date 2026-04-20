@@ -1,1 +1,3 @@
-LS0tCmRlc2NyaXB0aW9uOiBGaW5lLXR1bmluZywgUkxIRi9EUE8vR1JQTyB0cmFpbmluZywgZGlzdHJpYnV0ZWQgdHJhaW5pbmcgZnJhbWV3b3JrcywgYW5kIG9wdGltaXphdGlvbiB0b29scyBmb3IgdHJhaW5pbmcgTExNcyBhbmQgb3RoZXIgbW9kZWxzLgotLS0K
+---
+description: Fine-tuning, RLHF/DPO/GRPO training, distributed training frameworks, and optimization tools for training LLMs and other models.
+---

@@ -1,1 +1,423 @@
-IyBXZWJHTCBhbmQgM0QKCiMjIFdlYkdMIE1vZGUgU2V0dXAKCmBgYGphdmFzY3JpcHQKZnVuY3Rpb24gc2V0dXAoKSB7CiAgY3JlYXRlQ2FudmFzKDE5MjAsIDEwODAsIFdFQkdMKTsKICAvLyBPcmlnaW4gaXMgQ0VOVEVSLCBub3QgdG9wLWxlZnQKICAvLyBZLWF4aXMgcG9pbnRzIFVQIChvcHBvc2l0ZSBvZiAyRCBtb2RlKQogIC8vIFotYXhpcyBwb2ludHMgdG93YXJkIHZpZXdlcgp9CmBgYAoKIyMjIENvb3JkaW5hdGUgQ29udmVyc2lvbiAoV0VCR0wgdG8gUDJELWxpa2UpCgpgYGBqYXZhc2NyaXB0CmZ1bmN0aW9uIGRyYXcoKSB7CiAgdHJhbnNsYXRlKC13aWR0aC8yLCAtaGVpZ2h0LzIpOyAgLy8gc2hpZnQgb3JpZ2luIHRvIHRvcC1sZWZ0CiAgLy8gTm93IGNvb3JkaW5hdGVzIHdvcmsgbGlrZSBQMkQKfQpgYGAKCiMjIDNEIFByaW1pdGl2ZXMKCmBgYGphdmFzY3JpcHQKYm94KHcsIGgsIGQpOyAgICAgICAgICAgICAvLyByZWN0YW5ndWxhciBwcmlzbQpzcGhlcmUocmFkaXVzLCBkZXRhaWxYLCBkZXRhaWxZKTsKY3lsaW5kZXIocmFkaXVzLCBoZWlnaHQsIGRldGFpbFgsIGRldGFpbFkpOwpjb25lKHJhZGl1cywgaGVpZ2h0LCBkZXRhaWxYLCBkZXRhaWxZKTsKdG9ydXMocmFkaXVzLCB0dWJlUmFkaXVzLCBkZXRhaWxYLCBkZXRhaWxZKTsKcGxhbmUod2lkdGgsIGhlaWdodCk7ICAgICAvLyBmbGF0IHJlY3RhbmdsZQplbGxpcHNvaWQocngsIHJ5LCByeik7ICAgIC8vIHN0cmV0Y2hlZCBzcGhlcmUKYGBgCgojIyMgM0QgVHJhbnNmb3JtcwoKYGBgamF2YXNjcmlwdApwdXNoKCk7CiAgdHJhbnNsYXRlKHgsIHksIHopOwogIHJvdGF0ZVgoYW5nbGVYKTsKICByb3RhdGVZKGFuZ2xlWSk7CiAgcm90YXRlWihhbmdsZVopOwogIHNjYWxlKHMpOwogIGJveCgxMDApOwpwb3AoKTsKYGBgCgojIyBDYW1lcmEKCiMjIyBEZWZhdWx0IENhbWVyYQoKYGBgamF2YXNjcmlwdApjYW1lcmEoCiAgZXllWCwgZXllWSwgZXllWiwgICAgICAgLy8gY2FtZXJhIHBvc2l0aW9uCiAgY2VudGVyWCwgY2VudGVyWSwgY2VudGVyWiwgLy8gbG9vay1hdCB0YXJnZXQKICB1cFgsIHVwWSwgdXBaICAgICAgICAgICAgIC8vIHVwIGRpcmVjdGlvbgopOwoKLy8gRGVmYXVsdDogY2FtZXJhKDAsIDAsIChoZWlnaHQvMikvdGFuKFBJLzYpLCAwLCAwLCAwLCAwLCAxLCAwKQpgYGAKCiMjIyBPcmJpdCBDb250cm9sCgpgYGBqYXZhc2NyaXB0CmZ1bmN0aW9uIGRyYXcoKSB7CiAgb3JiaXRDb250cm9sKCk7ICAvLyBtb3VzZSBkcmFnIHRvIHJvdGF0ZSwgc2Nyb2xsIHRvIHpvb20KICBib3goMjAwKTsKfQpgYGAKCiMjIyBjcmVhdGVDYW1lcmEKCmBgYGphdmFzY3JpcHQKbGV0IGNhbTsKCmZ1bmN0aW9uIHNldHVwKCkgewogIGNyZWF0ZUNhbnZhcyg4MDAsIDgwMCwgV0VCR0wpOwogIGNhbSA9IGNyZWF0ZUNhbWVyYSgpOwogIGNhbS5zZXRQb3NpdGlvbigzMDAsIC0yMDAsIDUwMCk7CiAgY2FtLmxvb2tBdCgwLCAwLCAwKTsKfQoKLy8gQ2FtZXJhIG1ldGhvZHMKY2FtLnNldFBvc2l0aW9uKHgsIHksIHopOwpjYW0ubG9va0F0KHgsIHksIHopOwpjYW0ubW92ZShkeCwgZHksIGR6KTsgICAgICAvLyByZWxhdGl2ZSB0byBjYW1lcmEgb3JpZW50YXRpb24KY2FtLnBhbihhbmdsZSk7ICAgICAgICAgICAgICAvLyBob3Jpem9udGFsIHJvdGF0aW9uCmNhbS50aWx0KGFuZ2xlKTsgICAgICAgICAgICAgLy8gdmVydGljYWwgcm90YXRpb24KY2FtLnJvbGwoYW5nbGUpOyAgICAgICAgICAgICAvLyB6LWF4aXMgcm90YXRpb24KY2FtLnNsZXJwKG90aGVyQ2FtLCB0KTsgICAgIC8vIHNtb290aCBpbnRlcnBvbGF0aW9uIGJldHdlZW4gY2FtZXJhcwpgYGAKCiMjIyBQZXJzcGVjdGl2ZSBhbmQgT3J0aG9ncmFwaGljCgpgYGBqYXZhc2NyaXB0Ci8vIFBlcnNwZWN0aXZlIChkZWZhdWx0KQpwZXJzcGVjdGl2ZShmb3YsIGFzcGVjdCwgbmVhciwgZmFyKTsKLy8gZm92OiBmaWVsZCBvZiB2aWV3IGluIHJhZGlhbnMgKFBJLzMgZGVmYXVsdCkKLy8gYXNwZWN0OiB3aWR0aC9oZWlnaHQKLy8gbmVhci9mYXI6IGNsaXBwaW5nIHBsYW5lcwoKLy8gT3J0aG9ncmFwaGljIChubyBkZXB0aCBmb3Jlc2hvcnRlbmluZykKb3J0aG8oLXdpZHRoLzIsIHdpZHRoLzIsIC1oZWlnaHQvMiwgaGVpZ2h0LzIsIDAsIDIwMDApOwpgYGAKCiMjIExpZ2h0aW5nCgpgYGBqYXZhc2NyaXB0Ci8vIEFtYmllbnQgKHVuaWZvcm0sIG5vIGRpcmVjdGlvbikKYW1iaWVudExpZ2h0KDUwLCA1MCwgNTApOyAgICAgLy8gZGltIGZpbGwgbGlnaHQKCi8vIERpcmVjdGlvbmFsIChwYXJhbGxlbCByYXlzLCBsaWtlIHN1bikKZGlyZWN0aW9uYWxMaWdodCgyNTUsIDI1NSwgMjU1LCAwLCAtMSwgMCk7ICAvLyBjb2xvciArIGRpcmVjdGlvbgoKLy8gUG9pbnQgKHJhZGlhdGVzIGZyb20gcG9zaXRpb24pCnBvaW50TGlnaHQoMjU1LCAyMDAsIDE1MCwgMjAwLCAtMzAwLCA0MDApOyAgIC8vIGNvbG9yICsgcG9zaXRpb24KCi8vIFNwb3QgKGNvbmUgZnJvbSBwb3NpdGlvbiB0b3dhcmQgdGFyZ2V0KQpzcG90TGlnaHQoMjU1LCAyNTUsIDI1NSwgICAgICAgLy8gY29sb3IKICAgICAgICAgIDAsIC0zMDAsIDMwMCwgICAgICAgICAvLyBwb3NpdGlvbgogICAgICAgICAgMCwgMSwgLTEsICAgICAgICAgICAgIC8vIGRpcmVjdGlvbgogICAgICAgICAgUEkgLyA0LCA1KTsgICAgICAgICAgIC8vIGFuZ2xlLCBjb25jZW50cmF0aW9uCgovLyBJbWFnZS1iYXNlZCBsaWdodGluZwppbWFnZUxpZ2h0KG15SERSSSk7CgovLyBObyBsaWdodHMgKGZsYXQgc2hhZGluZykKbm9MaWdodHMoKTsKCi8vIFF1aWNrIGRlZmF1bHQgbGlnaHRpbmcKbGlnaHRzKCk7CmBgYAoKIyMjIFRocmVlLVBvaW50IExpZ2h0aW5nIFNldHVwCgpgYGBqYXZhc2NyaXB0CmZ1bmN0aW9uIHNldHVwTGlnaHRpbmcoKSB7CiAgYW1iaWVudExpZ2h0KDMwLCAzMCwgNDApOyAgICAgICAgICAgICAgICAgICAgLy8gZGltIGJsdWUgZmlsbAoKICAvLyBLZXkgbGlnaHQgKG1haW4sIHdhcm0pCiAgZGlyZWN0aW9uYWxMaWdodCgyNTUsIDI0MCwgMjIwLCAtMSwgLTEsIC0xKTsKCiAgLy8gRmlsbCBsaWdodCAoc29mdGVyLCBjb29sZXIsIG9wcG9zaXRlIHNpZGUpCiAgZGlyZWN0aW9uYWxMaWdodCg4MCwgMTAwLCAxNDAsIDEsIC0wLjUsIC0xKTsKCiAgLy8gUmltIGxpZ2h0IChiZWhpbmQgc3ViamVjdCwgZm9yIGVkZ2UgZGVmaW5pdGlvbikKICBwb2ludExpZ2h0KDIwMCwgMjAwLCAyNTUsIDAsIC0yMDAsIC00MDApOwp9CmBgYAoKIyMgTWF0ZXJpYWxzCgpgYGBqYXZhc2NyaXB0Ci8vIE5vcm1hbCBtYXRlcmlhbCAoZGVidWcg4oCUIGNvbG9ycyBmcm9tIHN1cmZhY2Ugbm9ybWFscykKbm9ybWFsTWF0ZXJpYWwoKTsKCi8vIEFtYmllbnQgKHJlc3BvbmRzIG9ubHkgdG8gYW1iaWVudExpZ2h0KQphbWJpZW50TWF0ZXJpYWwoMjAwLCAxMDAsIDEwMCk7CgovLyBFbWlzc2l2ZSAoc2VsZi1saXQsIG5vIHNoYWRvd3MpCmVtaXNzaXZlTWF0ZXJpYWwoMjU1LCAwLCAxMDApOwoKLy8gU3BlY3VsYXIgKHNoaW55IHJlZmxlY3Rpb25zKQpzcGVjdWxhck1hdGVyaWFsKDI1NSk7CnNoaW5pbmVzcyg1MCk7ICAgICAgICAgICAgICAgIC8vIDEtMjAwIChoaWdoZXIgPSB0aWdodGVyIGhpZ2hsaWdodCkKbWV0YWxuZXNzKDEwMCk7ICAgICAgICAgICAgICAgLy8gMC0yMDAgKG1ldGFsbGljIHJlZmxlY3Rpb24pCgovLyBGaWxsIHdvcmtzIHRvbyAobm8gbGlnaHRpbmcgcmVzcG9uc2UpCmZpbGwoMjU1LCAwLCAwKTsKYGBgCgojIyMgVGV4dHVyZQoKYGBgamF2YXNjcmlwdApsZXQgaW1nOwpmdW5jdGlvbiBwcmVsb2FkKCkgeyBpbWcgPSBsb2FkSW1hZ2UoJ3RleHR1cmUuanBnJyk7IH0KCmZ1bmN0aW9uIGRyYXcoKSB7CiAgdGV4dHVyZShpbWcpOwogIHRleHR1cmVNb2RlKE5PUk1BTCk7ICAvLyBVViBjb29yZHMgMC0xCiAgLy8gdGV4dHVyZU1vZGUoSU1BR0UpOyAvLyBVViBjb29yZHMgaW4gcGl4ZWxzCiAgdGV4dHVyZVdyYXAoUkVQRUFUKTsgIC8vIG9yIENMQU1QLCBNSVJST1IKICBib3goMjAwKTsKfQpgYGAKCiMjIEN1c3RvbSBHZW9tZXRyeQoKIyMjIGJ1aWxkR2VvbWV0cnkKCmBgYGphdmFzY3JpcHQKbGV0IG15U2hhcGU7CgpmdW5jdGlvbiBzZXR1cCgpIHsKICBjcmVhdGVDYW52YXMoODAwLCA4MDAsIFdFQkdMKTsKICBteVNoYXBlID0gYnVpbGRHZW9tZXRyeSgoKSA9PiB7CiAgICBmb3IgKGxldCBpID0gMDsgaSA8IDUwOyBpKyspIHsKICAgICAgcHVzaCgpOwogICAgICB0cmFuc2xhdGUocmFuZG9tKC0yMDAsIDIwMCksIHJhbmRvbSgtMjAwLCAyMDApLCByYW5kb20oLTIwMCwgMjAwKSk7CiAgICAgIHNwaGVyZSgxMCk7CiAgICAgIHBvcCgpOwogICAgfQogIH0pOwp9CgpmdW5jdGlvbiBkcmF3KCkgewogIG1vZGVsKG15U2hhcGUpOyAgLy8gcmVuZGVycyBvbmNlLWJ1aWx0IGdlb21ldHJ5IGVmZmljaWVudGx5Cn0KYGBgCgojIyMgYmVnaW5HZW9tZXRyeSAvIGVuZEdlb21ldHJ5CgpgYGBqYXZhc2NyaXB0CmJlZ2luR2VvbWV0cnkoKTsKICAvLyBkcmF3IHNoYXBlcyBoZXJlCiAgYm94KDUwKTsKICB0cmFuc2xhdGUoMTAwLCAwLCAwKTsKICBzcGhlcmUoMzApOwpsZXQgZ2VvID0gZW5kR2VvbWV0cnkoKTsKCm1vZGVsKGdlbyk7ICAvLyByZXVzZQpgYGAKCiMjIyBNYW51YWwgR2VvbWV0cnkgKHA1Lkdlb21ldHJ5KQoKYGBgamF2YXNjcmlwdApsZXQgZ2VvID0gbmV3IHA1Lkdlb21ldHJ5KGRldGFpbFgsIGRldGFpbFksIGZ1bmN0aW9uKCkgewogIGZvciAobGV0IGkgPSAwOyBpIDw9IGRldGFpbFg7IGkrKykgewogICAgZm9yIChsZXQgaiA9IDA7IGogPD0gZGV0YWlsWTsgaisrKSB7CiAgICAgIGxldCB1ID0gaSAvIGRldGFpbFg7CiAgICAgIGxldCB2ID0gaiAvIGRldGFpbFk7CiAgICAgIGxldCB4ID0gY29zKHUgKiBUV09fUEkpICogKDEwMCArIDMwICogY29zKHYgKiBUV09fUEkpKTsKICAgICAgbGV0IHkgPSBzaW4odSAqIFRXT19QSSkgKiAoMTAwICsgMzAgKiBjb3ModiAqIFRXT19QSSkpOwogICAgICBsZXQgeiA9IDMwICogc2luKHYgKiBUV09fUEkpOwogICAgICB0aGlzLnZlcnRpY2VzLnB1c2goY3JlYXRlVmVjdG9yKHgsIHksIHopKTsKICAgICAgdGhpcy51dnMucHVzaCh1LCB2KTsKICAgIH0KICB9CiAgdGhpcy5jb21wdXRlRmFjZXMoKTsKICB0aGlzLmNvbXB1dGVOb3JtYWxzKCk7Cn0pOwpgYGAKCiMjIEdMU0wgU2hhZGVycwoKIyMjIGNyZWF0ZVNoYWRlciAoVmVydGV4ICsgRnJhZ21lbnQpCgpgYGBqYXZhc2NyaXB0CmxldCBteVNoYWRlcjsKCmZ1bmN0aW9uIHNldHVwKCkgewogIGNyZWF0ZUNhbnZhcyg4MDAsIDgwMCwgV0VCR0wpOwoKICBsZXQgdmVydCA9IGAKICAgIHByZWNpc2lvbiBtZWRpdW1wIGZsb2F0OwogICAgYXR0cmlidXRlIHZlYzMgYVBvc2l0aW9uOwogICAgYXR0cmlidXRlIHZlYzIgYVRleENvb3JkOwogICAgdmFyeWluZyB2ZWMyIHZUZXhDb29yZDsKICAgIHVuaWZvcm0gbWF0NCB1TW9kZWxWaWV3TWF0cml4OwogICAgdW5pZm9ybSBtYXQ0IHVQcm9qZWN0aW9uTWF0cml4OwogICAgdm9pZCBtYWluKCkgewogICAgICB2VGV4Q29vcmQgPSBhVGV4Q29vcmQ7CiAgICAgIHZlYzQgcG9zID0gdVByb2plY3Rpb25NYXRyaXggKiB1TW9kZWxWaWV3TWF0cml4ICogdmVjNChhUG9zaXRpb24sIDEuMCk7CiAgICAgIGdsX1Bvc2l0aW9uID0gcG9zOwogICAgfQogIGA7CgogIGxldCBmcmFnID0gYAogICAgcHJlY2lzaW9uIG1lZGl1bXAgZmxvYXQ7CiAgICB2YXJ5aW5nIHZlYzIgdlRleENvb3JkOwogICAgdW5pZm9ybSBmbG9hdCB1VGltZTsKICAgIHVuaWZvcm0gdmVjMiB1UmVzb2x1dGlvbjsKCiAgICB2b2lkIG1haW4oKSB7CiAgICAgIHZlYzIgdXYgPSB2VGV4Q29vcmQ7CiAgICAgIHZlYzMgY29sID0gMC41ICsgMC41ICogY29zKHVUaW1lICsgdXYueHl4ICsgdmVjMygwLCAyLCA0KSk7CiAgICAgIGdsX0ZyYWdDb2xvciA9IHZlYzQoY29sLCAxLjApOwogICAgfQogIGA7CgogIG15U2hhZGVyID0gY3JlYXRlU2hhZGVyKHZlcnQsIGZyYWcpOwp9CgpmdW5jdGlvbiBkcmF3KCkgewogIHNoYWRlcihteVNoYWRlcik7CiAgbXlTaGFkZXIuc2V0VW5pZm9ybSgndVRpbWUnLCBtaWxsaXMoKSAvIDEwMDAuMCk7CiAgbXlTaGFkZXIuc2V0VW5pZm9ybSgndVJlc29sdXRpb24nLCBbd2lkdGgsIGhlaWdodF0pOwogIHJlY3QoMCwgMCwgd2lkdGgsIGhlaWdodCk7CiAgcmVzZXRTaGFkZXIoKTsKfQpgYGAKCiMjIyBjcmVhdGVGaWx0ZXJTaGFkZXIgKFBvc3QtUHJvY2Vzc2luZykKClNpbXBsZXIg4oCUIG9ubHkgbmVlZHMgYSBmcmFnbWVudCBzaGFkZXIuIEF1dG9tYXRpY2FsbHkgZ2V0cyB0aGUgY2FudmFzIGFzIGEgdGV4dHVyZS4KCmBgYGphdmFzY3JpcHQKbGV0IGJsdXJTaGFkZXI7CgpmdW5jdGlvbiBzZXR1cCgpIHsKICBjcmVhdGVDYW52YXMoODAwLCA4MDAsIFdFQkdMKTsKCiAgYmx1clNoYWRlciA9IGNyZWF0ZUZpbHRlclNoYWRlcihgCiAgICBwcmVjaXNpb24gbWVkaXVtcCBmbG9hdDsKICAgIHZhcnlpbmcgdmVjMiB2VGV4Q29vcmQ7CiAgICB1bmlmb3JtIHNhbXBsZXIyRCB0ZXgwOwogICAgdW5pZm9ybSB2ZWMyIHRleGVsU2l6ZTsKCiAgICB2b2lkIG1haW4oKSB7CiAgICAgIHZlYzQgc3VtID0gdmVjNCgwLjApOwogICAgICBmb3IgKGludCB4ID0gLTI7IHggPD0gMjsgeCsrKSB7CiAgICAgICAgZm9yIChpbnQgeSA9IC0yOyB5IDw9IDI7IHkrKykgewogICAgICAgICAgc3VtICs9IHRleHR1cmUyRCh0ZXgwLCB2VGV4Q29vcmQgKyB2ZWMyKGZsb2F0KHgpLCBmbG9hdCh5KSkgKiB0ZXhlbFNpemUpOwogICAgICAgIH0KICAgICAgfQogICAgICBnbF9GcmFnQ29sb3IgPSBzdW0gLyAyNS4wOwogICAgfQogIGApOwp9CgpmdW5jdGlvbiBkcmF3KCkgewogIC8vIERyYXcgc2NlbmUgbm9ybWFsbHkKICBiYWNrZ3JvdW5kKDApOwogIGZpbGwoMjU1LCAwLCAwKTsKICBzcGhlcmUoMTAwKTsKCiAgLy8gQXBwbHkgcG9zdC1wcm9jZXNzaW5nIGZpbHRlcgogIGZpbHRlcihibHVyU2hhZGVyKTsKfQpgYGAKCiMjIyBDb21tb24gU2hhZGVyIFVuaWZvcm1zCgpgYGBqYXZhc2NyaXB0Cm15U2hhZGVyLnNldFVuaWZvcm0oJ3VUaW1lJywgbWlsbGlzKCkgLyAxMDAwLjApOwpteVNoYWRlci5zZXRVbmlmb3JtKCd1UmVzb2x1dGlvbicsIFt3aWR0aCwgaGVpZ2h0XSk7Cm15U2hhZGVyLnNldFVuaWZvcm0oJ3VNb3VzZScsIFttb3VzZVggLyB3aWR0aCwgbW91c2VZIC8gaGVpZ2h0XSk7Cm15U2hhZGVyLnNldFVuaWZvcm0oJ3VUZXh0dXJlJywgbXlHcmFwaGljcyk7ICAvLyBwYXNzIHA1LkdyYXBoaWNzIGFzIHRleHR1cmUKbXlTaGFkZXIuc2V0VW5pZm9ybSgndVZhbHVlJywgMC41KTsgICAgICAgICAgIC8vIGZsb2F0Cm15U2hhZGVyLnNldFVuaWZvcm0oJ3VDb2xvcicsIFsxLjAsIDAuMCwgMC41LCAxLjBdKTsgLy8gdmVjNApgYGAKCiMjIyBTaGFkZXIgUmVjaXBlcwoKKipDaHJvbWF0aWMgQWJlcnJhdGlvbjoqKgpgYGBnbHNsCnZlYzQgciA9IHRleHR1cmUyRCh0ZXgwLCB2VGV4Q29vcmQgKyB2ZWMyKDAuMDA1LCAwLjApKTsKdmVjNCBnID0gdGV4dHVyZTJEKHRleDAsIHZUZXhDb29yZCk7CnZlYzQgYiA9IHRleHR1cmUyRCh0ZXgwLCB2VGV4Q29vcmQgLSB2ZWMyKDAuMDA1LCAwLjApKTsKZ2xfRnJhZ0NvbG9yID0gdmVjNChyLnIsIGcuZywgYi5iLCAxLjApOwpgYGAKCioqVmlnbmV0dGU6KioKYGBgZ2xzbApmbG9hdCBkID0gZGlzdGFuY2UodlRleENvb3JkLCB2ZWMyKDAuNSkpOwpmbG9hdCB2ID0gc21vb3Roc3RlcCgwLjcsIDAuNCwgZCk7CmdsX0ZyYWdDb2xvciA9IHRleHR1cmUyRCh0ZXgwLCB2VGV4Q29vcmQpICogdjsKYGBgCgoqKlNjYW5saW5lczoqKgpgYGBnbHNsCmZsb2F0IHNjYW5saW5lID0gc2luKHZUZXhDb29yZC55ICogdVJlc29sdXRpb24ueSAqIDMuMTQxNTkpICogMC4wNDsKdmVjNCBjb2wgPSB0ZXh0dXJlMkQodGV4MCwgdlRleENvb3JkKTsKZ2xfRnJhZ0NvbG9yID0gY29sIC0gc2NhbmxpbmU7CmBgYAoKIyMgRnJhbWVidWZmZXJzCgpgYGBqYXZhc2NyaXB0CmxldCBmYm87CgpmdW5jdGlvbiBzZXR1cCgpIHsKICBjcmVhdGVDYW52YXMoODAwLCA4MDAsIFdFQkdMKTsKICBmYm8gPSBjcmVhdGVGcmFtZWJ1ZmZlcigpOwp9CgpmdW5jdGlvbiBkcmF3KCkgewogIC8vIFJlbmRlciB0byBmcmFtZWJ1ZmZlcgogIGZiby5iZWdpbigpOwogIGNsZWFyKCk7CiAgcm90YXRlWShmcmFtZUNvdW50ICogMC4wMSk7CiAgYm94KDIwMCk7CiAgZmJvLmVuZCgpOwoKICAvLyBVc2UgZnJhbWVidWZmZXIgYXMgdGV4dHVyZQogIHRleHR1cmUoZmJvLmNvbG9yKTsKICBwbGFuZSh3aWR0aCwgaGVpZ2h0KTsKfQpgYGAKCiMjIyBNdWx0aS1QYXNzIFJlbmRlcmluZwoKYGBgamF2YXNjcmlwdApsZXQgc2NlbmVCdWZmZXIsIGJsdXJCdWZmZXI7CgpmdW5jdGlvbiBzZXR1cCgpIHsKICBjcmVhdGVDYW52YXMoODAwLCA4MDAsIFdFQkdMKTsKICBzY2VuZUJ1ZmZlciA9IGNyZWF0ZUZyYW1lYnVmZmVyKCk7CiAgYmx1ckJ1ZmZlciA9IGNyZWF0ZUZyYW1lYnVmZmVyKCk7Cn0KCmZ1bmN0aW9uIGRyYXcoKSB7CiAgLy8gUGFzcyAxOiByZW5kZXIgc2NlbmUKICBzY2VuZUJ1ZmZlci5iZWdpbigpOwogIGNsZWFyKCk7CiAgbGlnaHRzKCk7CiAgcm90YXRlWShmcmFtZUNvdW50ICogMC4wMSk7CiAgYm94KDIwMCk7CiAgc2NlbmVCdWZmZXIuZW5kKCk7CgogIC8vIFBhc3MgMjogYmx1cgogIGJsdXJCdWZmZXIuYmVnaW4oKTsKICBzaGFkZXIoYmx1clNoYWRlcik7CiAgYmx1clNoYWRlci5zZXRVbmlmb3JtKCd1VGV4dHVyZScsIHNjZW5lQnVmZmVyLmNvbG9yKTsKICByZWN0KDAsIDAsIHdpZHRoLCBoZWlnaHQpOwogIHJlc2V0U2hhZGVyKCk7CiAgYmx1ckJ1ZmZlci5lbmQoKTsKCiAgLy8gRmluYWw6IGNvbXBvc2l0ZQogIHRleHR1cmUoYmx1ckJ1ZmZlci5jb2xvcik7CiAgcGxhbmUod2lkdGgsIGhlaWdodCk7Cn0KYGBgCg==
+# WebGL and 3D
+
+## WebGL Mode Setup
+
+```javascript
+function setup() {
+  createCanvas(1920, 1080, WEBGL);
+  // Origin is CENTER, not top-left
+  // Y-axis points UP (opposite of 2D mode)
+  // Z-axis points toward viewer
+}
+```
+
+### Coordinate Conversion (WEBGL to P2D-like)
+
+```javascript
+function draw() {
+  translate(-width/2, -height/2);  // shift origin to top-left
+  // Now coordinates work like P2D
+}
+```
+
+## 3D Primitives
+
+```javascript
+box(w, h, d);             // rectangular prism
+sphere(radius, detailX, detailY);
+cylinder(radius, height, detailX, detailY);
+cone(radius, height, detailX, detailY);
+torus(radius, tubeRadius, detailX, detailY);
+plane(width, height);     // flat rectangle
+ellipsoid(rx, ry, rz);    // stretched sphere
+```
+
+### 3D Transforms
+
+```javascript
+push();
+  translate(x, y, z);
+  rotateX(angleX);
+  rotateY(angleY);
+  rotateZ(angleZ);
+  scale(s);
+  box(100);
+pop();
+```
+
+## Camera
+
+### Default Camera
+
+```javascript
+camera(
+  eyeX, eyeY, eyeZ,       // camera position
+  centerX, centerY, centerZ, // look-at target
+  upX, upY, upZ             // up direction
+);
+
+// Default: camera(0, 0, (height/2)/tan(PI/6), 0, 0, 0, 0, 1, 0)
+```
+
+### Orbit Control
+
+```javascript
+function draw() {
+  orbitControl();  // mouse drag to rotate, scroll to zoom
+  box(200);
+}
+```
+
+### createCamera
+
+```javascript
+let cam;
+
+function setup() {
+  createCanvas(800, 800, WEBGL);
+  cam = createCamera();
+  cam.setPosition(300, -200, 500);
+  cam.lookAt(0, 0, 0);
+}
+
+// Camera methods
+cam.setPosition(x, y, z);
+cam.lookAt(x, y, z);
+cam.move(dx, dy, dz);      // relative to camera orientation
+cam.pan(angle);              // horizontal rotation
+cam.tilt(angle);             // vertical rotation
+cam.roll(angle);             // z-axis rotation
+cam.slerp(otherCam, t);     // smooth interpolation between cameras
+```
+
+### Perspective and Orthographic
+
+```javascript
+// Perspective (default)
+perspective(fov, aspect, near, far);
+// fov: field of view in radians (PI/3 default)
+// aspect: width/height
+// near/far: clipping planes
+
+// Orthographic (no depth foreshortening)
+ortho(-width/2, width/2, -height/2, height/2, 0, 2000);
+```
+
+## Lighting
+
+```javascript
+// Ambient (uniform, no direction)
+ambientLight(50, 50, 50);     // dim fill light
+
+// Directional (parallel rays, like sun)
+directionalLight(255, 255, 255, 0, -1, 0);  // color + direction
+
+// Point (radiates from position)
+pointLight(255, 200, 150, 200, -300, 400);   // color + position
+
+// Spot (cone from position toward target)
+spotLight(255, 255, 255,       // color
+          0, -300, 300,         // position
+          0, 1, -1,             // direction
+          PI / 4, 5);           // angle, concentration
+
+// Image-based lighting
+imageLight(myHDRI);
+
+// No lights (flat shading)
+noLights();
+
+// Quick default lighting
+lights();
+```
+
+### Three-Point Lighting Setup
+
+```javascript
+function setupLighting() {
+  ambientLight(30, 30, 40);                    // dim blue fill
+
+  // Key light (main, warm)
+  directionalLight(255, 240, 220, -1, -1, -1);
+
+  // Fill light (softer, cooler, opposite side)
+  directionalLight(80, 100, 140, 1, -0.5, -1);
+
+  // Rim light (behind subject, for edge definition)
+  pointLight(200, 200, 255, 0, -200, -400);
+}
+```
+
+## Materials
+
+```javascript
+// Normal material (debug — colors from surface normals)
+normalMaterial();
+
+// Ambient (responds only to ambientLight)
+ambientMaterial(200, 100, 100);
+
+// Emissive (self-lit, no shadows)
+emissiveMaterial(255, 0, 100);
+
+// Specular (shiny reflections)
+specularMaterial(255);
+shininess(50);                // 1-200 (higher = tighter highlight)
+metalness(100);               // 0-200 (metallic reflection)
+
+// Fill works too (no lighting response)
+fill(255, 0, 0);
+```
+
+### Texture
+
+```javascript
+let img;
+function preload() { img = loadImage('texture.jpg'); }
+
+function draw() {
+  texture(img);
+  textureMode(NORMAL);  // UV coords 0-1
+  // textureMode(IMAGE); // UV coords in pixels
+  textureWrap(REPEAT);  // or CLAMP, MIRROR
+  box(200);
+}
+```
+
+## Custom Geometry
+
+### buildGeometry
+
+```javascript
+let myShape;
+
+function setup() {
+  createCanvas(800, 800, WEBGL);
+  myShape = buildGeometry(() => {
+    for (let i = 0; i < 50; i++) {
+      push();
+      translate(random(-200, 200), random(-200, 200), random(-200, 200));
+      sphere(10);
+      pop();
+    }
+  });
+}
+
+function draw() {
+  model(myShape);  // renders once-built geometry efficiently
+}
+```
+
+### beginGeometry / endGeometry
+
+```javascript
+beginGeometry();
+  // draw shapes here
+  box(50);
+  translate(100, 0, 0);
+  sphere(30);
+let geo = endGeometry();
+
+model(geo);  // reuse
+```
+
+### Manual Geometry (p5.Geometry)
+
+```javascript
+let geo = new p5.Geometry(detailX, detailY, function() {
+  for (let i = 0; i <= detailX; i++) {
+    for (let j = 0; j <= detailY; j++) {
+      let u = i / detailX;
+      let v = j / detailY;
+      let x = cos(u * TWO_PI) * (100 + 30 * cos(v * TWO_PI));
+      let y = sin(u * TWO_PI) * (100 + 30 * cos(v * TWO_PI));
+      let z = 30 * sin(v * TWO_PI);
+      this.vertices.push(createVector(x, y, z));
+      this.uvs.push(u, v);
+    }
+  }
+  this.computeFaces();
+  this.computeNormals();
+});
+```
+
+## GLSL Shaders
+
+### createShader (Vertex + Fragment)
+
+```javascript
+let myShader;
+
+function setup() {
+  createCanvas(800, 800, WEBGL);
+
+  let vert = `
+    precision mediump float;
+    attribute vec3 aPosition;
+    attribute vec2 aTexCoord;
+    varying vec2 vTexCoord;
+    uniform mat4 uModelViewMatrix;
+    uniform mat4 uProjectionMatrix;
+    void main() {
+      vTexCoord = aTexCoord;
+      vec4 pos = uProjectionMatrix * uModelViewMatrix * vec4(aPosition, 1.0);
+      gl_Position = pos;
+    }
+  `;
+
+  let frag = `
+    precision mediump float;
+    varying vec2 vTexCoord;
+    uniform float uTime;
+    uniform vec2 uResolution;
+
+    void main() {
+      vec2 uv = vTexCoord;
+      vec3 col = 0.5 + 0.5 * cos(uTime + uv.xyx + vec3(0, 2, 4));
+      gl_FragColor = vec4(col, 1.0);
+    }
+  `;
+
+  myShader = createShader(vert, frag);
+}
+
+function draw() {
+  shader(myShader);
+  myShader.setUniform('uTime', millis() / 1000.0);
+  myShader.setUniform('uResolution', [width, height]);
+  rect(0, 0, width, height);
+  resetShader();
+}
+```
+
+### createFilterShader (Post-Processing)
+
+Simpler — only needs a fragment shader. Automatically gets the canvas as a texture.
+
+```javascript
+let blurShader;
+
+function setup() {
+  createCanvas(800, 800, WEBGL);
+
+  blurShader = createFilterShader(`
+    precision mediump float;
+    varying vec2 vTexCoord;
+    uniform sampler2D tex0;
+    uniform vec2 texelSize;
+
+    void main() {
+      vec4 sum = vec4(0.0);
+      for (int x = -2; x <= 2; x++) {
+        for (int y = -2; y <= 2; y++) {
+          sum += texture2D(tex0, vTexCoord + vec2(float(x), float(y)) * texelSize);
+        }
+      }
+      gl_FragColor = sum / 25.0;
+    }
+  `);
+}
+
+function draw() {
+  // Draw scene normally
+  background(0);
+  fill(255, 0, 0);
+  sphere(100);
+
+  // Apply post-processing filter
+  filter(blurShader);
+}
+```
+
+### Common Shader Uniforms
+
+```javascript
+myShader.setUniform('uTime', millis() / 1000.0);
+myShader.setUniform('uResolution', [width, height]);
+myShader.setUniform('uMouse', [mouseX / width, mouseY / height]);
+myShader.setUniform('uTexture', myGraphics);  // pass p5.Graphics as texture
+myShader.setUniform('uValue', 0.5);           // float
+myShader.setUniform('uColor', [1.0, 0.0, 0.5, 1.0]); // vec4
+```
+
+### Shader Recipes
+
+**Chromatic Aberration:**
+```glsl
+vec4 r = texture2D(tex0, vTexCoord + vec2(0.005, 0.0));
+vec4 g = texture2D(tex0, vTexCoord);
+vec4 b = texture2D(tex0, vTexCoord - vec2(0.005, 0.0));
+gl_FragColor = vec4(r.r, g.g, b.b, 1.0);
+```
+
+**Vignette:**
+```glsl
+float d = distance(vTexCoord, vec2(0.5));
+float v = smoothstep(0.7, 0.4, d);
+gl_FragColor = texture2D(tex0, vTexCoord) * v;
+```
+
+**Scanlines:**
+```glsl
+float scanline = sin(vTexCoord.y * uResolution.y * 3.14159) * 0.04;
+vec4 col = texture2D(tex0, vTexCoord);
+gl_FragColor = col - scanline;
+```
+
+## Framebuffers
+
+```javascript
+let fbo;
+
+function setup() {
+  createCanvas(800, 800, WEBGL);
+  fbo = createFramebuffer();
+}
+
+function draw() {
+  // Render to framebuffer
+  fbo.begin();
+  clear();
+  rotateY(frameCount * 0.01);
+  box(200);
+  fbo.end();
+
+  // Use framebuffer as texture
+  texture(fbo.color);
+  plane(width, height);
+}
+```
+
+### Multi-Pass Rendering
+
+```javascript
+let sceneBuffer, blurBuffer;
+
+function setup() {
+  createCanvas(800, 800, WEBGL);
+  sceneBuffer = createFramebuffer();
+  blurBuffer = createFramebuffer();
+}
+
+function draw() {
+  // Pass 1: render scene
+  sceneBuffer.begin();
+  clear();
+  lights();
+  rotateY(frameCount * 0.01);
+  box(200);
+  sceneBuffer.end();
+
+  // Pass 2: blur
+  blurBuffer.begin();
+  shader(blurShader);
+  blurShader.setUniform('uTexture', sceneBuffer.color);
+  rect(0, 0, width, height);
+  resetShader();
+  blurBuffer.end();
+
+  // Final: composite
+  texture(blurBuffer.color);
+  plane(width, height);
+}
+```

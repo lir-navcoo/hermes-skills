@@ -1,1 +1,3 @@
-LS0tCmRlc2NyaXB0aW9uOiBBcHBsZS9tYWNPUy1zcGVjaWZpYyBza2lsbHMg4oCUIGlNZXNzYWdlLCBSZW1pbmRlcnMsIE5vdGVzLCBGaW5kTXksIGFuZCBtYWNPUyBhdXRvbWF0aW9uLiBUaGVzZSBza2lsbHMgb25seSBsb2FkIG9uIG1hY09TIHN5c3RlbXMuCi0tLQo=
+---
+description: Apple/macOS-specific skills — iMessage, Reminders, Notes, FindMy, and macOS automation. These skills only load on macOS systems.
+---

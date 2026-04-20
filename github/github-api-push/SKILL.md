@@ -1,1 +1,404 @@
-LS0tCm5hbWU6IGdpdGh1Yi1hcGktcHVzaApkZXNjcmlwdGlvbjogR2l0SHViIEFQSSDmlofku7bmjqjpgIHlt6XkvZzmtYEg4oCUIOWMheWQq+WIm+W7uuepuuS7k+W6k+WIneWni+WMluOAgeaJuemHj+WkmuaWh+S7tuaOqOmAgeOAgUdpdEh1YiBQYWdlcyDphY3nva7jgIHnlKjnqbogY29tbWl0IOinpuWPkSBBY3Rpb25zIHJlYnVpbGTjgILmnKzlnLAgYnVpbGQg6aqM6K+B5piv5by65Yi25q2l6aqk44CCCi0tLQoKIyBHaXRIdWIgQVBJIOaWh+S7tuaOqOmAgeW3peS9nOa1gQoKIyMg6IOM5pmvCmBnaCBhdXRoIGdpdC1jcmVkZW50aWFsYCDlnKjmn5Dkupvnjq/looPkuIvkuI3lt6XkvZzvvIzlr7zoh7QgYGdpdCBwdXNoYCDmiqUgImNvdWxkIG5vdCByZWFkIFBhc3N3b3JkOiBEZXZpY2Ugbm90IGNvbmZpZ3VyZWQi44CC6Kej5Yaz5pa55qGI77ya57uV5byAIGdpdO+8jOebtOaOpeeUqCBHaXRIdWIgUkVTVCBBUEkg5o6o6YCB5paH5Lu244CCCgojIyDimqDvuI8g5YWz6ZSu5Y6f5YiZ77ya5b+F6aG75omL5YqoIEJhc2U2NCDnvJbnoIEKR2l0SHViIEFQSSDnmoQgYGNvbnRlbnRgIOWtl+auteacn+acmyAqKkJhc2U2NCDnvJbnoIHlkI7nmoTlrZfnrKbkuLIqKu+8jOS4jeaYr+WOn+Wni+aWh+acrOOAggrlpoLmnpzkuI0gYmFzZTY0IOebtOaOpeS8oO+8jEFQSSDmiqUgYGNvbnRlbnQgaXMgbm90IHZhbGlkIEJhc2U2NGAgKEhUVFAgNDIyKeOAggoK5q2j56Gu5YGa5rOV77yIUHl0aG9u77yJ77yaCmBgYHB5dGhvbgppbXBvcnQgYmFzZTY0CmVuY29kZWQgPSBiYXNlNjQuYjY0ZW5jb2RlKHJhd19jb250ZW50LmVuY29kZSgndXRmLTgnKSkuZGVjb2RlKCdhc2NpaScpCnN1YnByb2Nlc3MucnVuKFsnZ2gnLCAnYXBpJywgJy0tbWV0aG9kJywgJ1BVVCcsIGYncmVwb3Mve3JlcG99L2NvbnRlbnRzL3twYXRofScsCiAgICAgICAgICAgICAgICAnLWYnLCBmJ21lc3NhZ2U9e21zZ30nLCAnLWYnLCBmJ2NvbnRlbnQ9e2VuY29kZWR9J10pCmBgYAoKU2hlbGwg5Lit5Y+v5o6l5Y+X77yI5L2G5LiN5aaCIFB5dGhvbiDlj6/pnaDvvInvvJoKYGBgYmFzaApDT05URU5UPSQoYmFzZTY0IC1pIC9wYXRoL3RvL2ZpbGUgfCB0ciAtZCAnXG4nKQpnaCBhcGkgLS1tZXRob2QgUFVUICJyZXBvcy8uLi4vY29udGVudHMvcGF0aCIgXAogIC1mIG1lc3NhZ2U9Ii4uLiIgLWYgY29udGVudD0iJENPTlRFTlQiCmBgYAoKIyMg5o6o6YCB5rWB56iL77yI5bey5pyJ5paH5Lu255qE5pu05paw77yJCgojIyMg56ys5LiA5q2l77ya6I635Y+W5b2T5YmNIFNIQQpgYGBiYXNoClNIQT0kKGdoIGFwaSAicmVwb3Mve293bmVyfS97cmVwb30vY29udGVudHMve3BhdGh9P3JlZj17YnJhbmNofSIgLS1qcSAnLnNoYScpCmBgYAoKIyMjIOesrOS6jOatpe+8mkJhc2U2NCDnvJbnoIEKYGBgYmFzaApDT05URU5UPSQoYmFzZTY0IC1pIC9wYXRoL3RvL2ZpbGUgfCB0ciAtZCAnXG4nKQpgYGAKCiMjIyDnrKzkuInmraXvvJpQVVQg5o6o6YCBCmBgYGJhc2gKZ2ggYXBpIC0tbWV0aG9kIFBVVCAicmVwb3Mve293bmVyfS97cmVwb30vY29udGVudHMve3BhdGh9IiBcCiAgLWYgbWVzc2FnZT0iY29tbWl0IG1lc3NhZ2UiIFwKICAtZiBjb250ZW50PSIkQ09OVEVOVCIgXAogIC1mIHNoYT0iJFNIQSIKYGBgCgojIyDimqDvuI8gR2l0SHViIFBhZ2VzIOi3r+W+hOmZkOWItgpgL2Rpc3RgIOS4jeaYr+acieaViOi3r+W+hO+8jOWPquiDveeUqCBgL2DvvIjmoLnnm67lvZXvvInmiJYgYC9kb2NzYOOAguWmguaenOmhueebriBidWlsZCDovpPlh7rlnKggYGRpc3QvYO+8jOmcgOimgeeUqCBgYWN0aW9ucy91cGxvYWQtcGFnZXMtYXJ0aWZhY3RgICsgYGFjdGlvbnMvZGVwbG95LXBhZ2VzYO+8iOiAjOmdniBgYWN0aW9ucy91cGxvYWQtYXJ0aWZhY3Rg77yJ77yM5LiUIFBhZ2VzIHNvdXJjZSDorr7nva7kuLogYC9g44CCCgojIyDlrozmlbTmqKHmnb8KYGBgYmFzaApTSEE9JChnaCBhcGkgInJlcG9zL1VTRVIvUkVQTy9jb250ZW50cy9zcmMvQXBwLnRzeD9yZWY9bWFpbiIgLS1qcSAnLnNoYScpCkNPTlRFTlQ9JChiYXNlNjQgLWkgL3RtcC9BcHAudHN4IHwgdHIgLWQgJ1xuJykKZ2ggYXBpIC0tbWV0aG9kIFBVVCAicmVwb3MvVVNFUi9SRVBPL2NvbnRlbnRzL3NyYy9BcHAudHN4IiBcCiAgLWYgbWVzc2FnZT0ieW91ciBjb21taXQgbWVzc2FnZSIgXAogIC1mIGNvbnRlbnQ9IiRDT05URU5UIiBcCiAgLWYgc2hhPSIkU0hBIgpgYGAKCiMjIOKaoO+4jyDlhbPplK7lnZHngrkx77ya5pu05paw5bey5pyJ5paH5Lu25b+F6aG75o+Q5L6bIFNIQQpQVVQg5paw5paH5Lu25LiN6ZyA6KaBIFNIQe+8jOS9hioq5pu05paw5bey5a2Y5Zyo55qE5paH5Lu25b+F6aG75YWI5p+lIFNIQSDlho3mjqjpgIEqKu+8jOWQpuWImeaKpSA0MjLvvJoKYGBgYmFzaAojIOesrOS4gOatpe+8muafpeivoiBTSEHvvIjmlofku7blrZjlnKjliJnov5Tlm57lgLzvvIzkuI3lrZjlnKjliJkgNDA077yJClNIQT0kKGdoIGFwaSAicmVwb3Mve293bmVyfS97cmVwb30vY29udGVudHMve3BhdGh9P3JlZj1tYWluIiAtLWpxICcuc2hhJyAyPi9kZXYvbnVsbCkKCiMg56ys5LqM5q2l77ya5qC55o2u5piv5ZCm5a2Y5Zyo5Yaz5a6a5piv5ZCm5YqgIHNoYSDlj4LmlbAKaWYgWyAiJFNIQSIgPSAiTm90IEZvdW5kIiBdIHx8IFsgLXogIiRTSEEiIF07IHRoZW4KICAgICMg5paw5paH5Lu25oiW572V6KeB5oOF5Ya177ya5LiN5LygIHNoYQogICAgZ2ggYXBpIC0tbWV0aG9kIFBVVCAicmVwb3Mve293bmVyfS97cmVwb30vY29udGVudHMve3BhdGh9IiBcCiAgICAgIC1mIG1lc3NhZ2U9ImFkZDoge3BhdGh9IiAtZiBjb250ZW50PSIkQ09OVEVOVCIKZWxzZQogICAgIyDlt7LmnInmlofku7bvvJrlv4XpobvkvKAgc2hhCiAgICBnaCBhcGkgLS1tZXRob2QgUFVUICJyZXBvcy97b3duZXJ9L3tyZXBvfS9jb250ZW50cy97cGF0aH0iIFwKICAgICAgLWYgbWVzc2FnZT0idXBkYXRlOiB7cGF0aH0iIC1mIGNvbnRlbnQ9IiRDT05URU5UIiAtZiBzaGE9IiRTSEEiCmZpCmBgYAoKIyMg4pqg77iPIOWFs+mUruWdkeeCuTLvvJpUcmVlIEFQSSDkvJrlj4zph43nvJbnoIEgY29udGVudArmibnph4/lpJrmlofku7bmjqjpgIHkvb/nlKggdHJlZSBBUEkg5pe277yMY29udGVudCDlrZfmrrXkvJrnu4/ov4flj4zph40gYmFzZTY0IOe8luegge+8iEFQSSDlhoXpg6joh6rliqjlho3liqDkuIDlsYLvvInvvIzlr7zoh7Tmlofku7blhoXlrrnkuI7ljp/lp4vlhoXlrrnkuI3nrKbjgIIqKuW3sumqjOivge+8mnRyZWUgQVBJIOaOqOmAgeeahOaWh+S7tiBzaXplIOS4juacrOWcsOWOn+WniyBzaXplIOS4jeS4gOiHtO+8iEdpdEh1YiDlgY/lpKfvvIzlm6DkuLrlpJrkuobkuIDlsYLnvJbnoIHvvIkqKuOAggoKKirop6PlhrPmlrnmoYgqKu+8muWkp+aJuemHj+WQjOatpeaXtu+8jOaUueeUqCoq6YCQ5paH5Lu25Y2V5qyhIFBVVCoqIOaOqOmAgeOAguaJgOacieaWh+S7tuWdh+mAmui/h+S7peS4iyBQeXRob24g6ISa5pys5a6M5oiQ77yaCmBgYHB5dGhvbgppbXBvcnQgc3VicHJvY2Vzcywgb3MsIGJhc2U2NCwganNvbgoKcmVwbyA9ICJvd25lci9yZXBvIgpiYXNlX3BhdGggPSAiL3BhdGgvdG8vbG9jYWwvc2tpbGxzIgpza2lwX2RpcnMgPSB7Jy5naXQnLCAnbm9kZV9tb2R1bGVzJywgJy5EU19TdG9yZSd9CgojIOmBjeWOhuaJgOacieacrOWcsOaWh+S7tgpmb3Igcm9vdCwgZGlycywgZmlsZXMgaW4gb3Mud2FsayhiYXNlX3BhdGgpOgogICAgZGlyc1s6XSA9IFtkIGZvciBkIGluIGRpcnMgaWYgZCBub3QgaW4gc2tpcF9kaXJzXQogICAgZm9yIGZuYW1lIGluIGZpbGVzOgogICAgICAgIGZwYXRoID0gb3MucGF0aC5qb2luKHJvb3QsIGZuYW1lKQogICAgICAgIHJlbCA9IG9zLnBhdGgucmVscGF0aChmcGF0aCwgYmFzZV9wYXRoKQogICAgICAgIHdpdGggb3BlbihmcGF0aCwgJ3InLCBlbmNvZGluZz0ndXRmLTgnKSBhcyBmOgogICAgICAgICAgICBjb250ZW50ID0gZi5yZWFkKCkKICAgICAgICBlbmNvZGVkID0gYmFzZTY0LmI2NGVuY29kZShjb250ZW50LmVuY29kZSgndXRmLTgnKSkuZGVjb2RlKCdhc2NpaScpCiAgICAgICAgCiAgICAgICAgIyDmn6Xor6LnjrDmnIkgU0hB77yI5aSE55CG5paw5paH5Lu2IHZzIOabtOaWsO+8iQogICAgICAgIGNoZWNrID0gc3VicHJvY2Vzcy5ydW4oCiAgICAgICAgICAgIFsnZ2gnLCAnYXBpJywgZidyZXBvcy97cmVwb30vY29udGVudHMve3JlbH0/cmVmPW1haW4nLCAnLS1qcScsICcuc2hhJ10sCiAgICAgICAgICAgIGNhcHR1cmVfb3V0cHV0PVRydWUsIHRleHQ9VHJ1ZQogICAgICAgICkKICAgICAgICBzaGEgPSBjaGVjay5zdGRvdXQuc3RyaXAoKQogICAgICAgIG1zZyA9IGYic3luYzoge3JlbH0iCiAgICAgICAgCiAgICAgICAgaWYgY2hlY2sucmV0dXJuY29kZSAhPSAwIG9yIG5vdCBzaGEgb3IgJ3NoYScgbm90IGluIGNoZWNrLnN0ZG91dDoKICAgICAgICAgICAgIyDmlrDmlofku7YKICAgICAgICAgICAgc3VicHJvY2Vzcy5ydW4oWydnaCcsICdhcGknLCAnLS1tZXRob2QnLCAnUFVUJywgZidyZXBvcy97cmVwb30vY29udGVudHMve3JlbH0nLAogICAgICAgICAgICAgICAgICAgICAgICAgICAnLWYnLCBmJ21lc3NhZ2U9e21zZ30nLCAnLWYnLCBmJ2NvbnRlbnQ9e2VuY29kZWR9J10pCiAgICAgICAgZWxzZToKICAgICAgICAgICAgIyDlt7LmnInmlofku7bvvIzpnIAgU0hBCiAgICAgICAgICAgIHN1YnByb2Nlc3MucnVuKFsnZ2gnLCAnYXBpJywgJy0tbWV0aG9kJywgJ1BVVCcsIGYncmVwb3Mve3JlcG99L2NvbnRlbnRzL3tyZWx9JywKICAgICAgICAgICAgICAgICAgICAgICAgICAgJy1mJywgZidtZXNzYWdlPXttc2d9JywgJy1mJywgZidjb250ZW50PXtlbmNvZGVkfScsICctZicsIGYnc2hhPXtzaGF9J10pCmBgYAoKIyMg4pqg77iPIOWFs+mUruWdkeeCuTPvvJpHaXRIdWIg5paH5Lu2IHNpemUg5LiN562J5LqO5pys5ZywIHNpemUKR2l0SHViIOWvueaWh+S7tuWGheWuueS8mumineWklue8luegge+8jOWQjOS4gOS4quaWh+S7tuWcqCBHaXRIdWIg5pi+56S655qEIHNpemUg5Lya5q+U5pys5Zyw5aSn77yIVVRGLTgg5YaF5a655aSn57qm5aSnIDEwLTIwJe+8ieOAgioq5LiN6IO96YCa6L+HIHNpemUg5a+55q+U5p2l5Yik5pat5ZCM5q2l5piv5ZCm5oiQ5YqfKirvvIzlv4XpobvkuIvovb3lkI7mr5Tlr7nlhoXlrrnmiJbpqozor4EgbWQ144CCCgojIyDimqDvuI8g5pen54mI5omB5bmz57uT5p6EIHZzIOaWsOeJiOebruW9lee7k+aehArml6nmnJ/lkIzmraXmm77lsIYgc2tpbGxzIOaJgeW5s+WMluaOqOmAge+8iOWmgiBgYXN0b2NrLWFuYWx5c2lzLm1kYO+8ie+8jOWQjuaUueS4uuebruW9lee7k+aehO+8iOWmgiBgZmluYW5jZS9hc3RvY2stYW5hbHlzaXMvU0tJTEwubWRg77yJ44CC5ZCM5LiA5LuT5bqT5Lit5Y+v6IO95a2Y5Zyo5Lik56eN57uT5p6E5bm25a2Y44CB5paH5Lu26Lev5b6E5Yay56qB44CB5pen5paH5Lu25aSa5L2Z562J5oOF5Ya144CC5o6S5p+l5beu5byC5pe255SoIHRyZWUgcmVjdXJzaXZlIEFQSSDojrflj5blrozmlbTmlofku7bliJfooajvvJoKYGBgYmFzaApnaCBhcGkgcmVwb3Mve293bmVyfS97cmVwb30vZ2l0L3RyZWVzL21haW4/cmVjdXJzaXZlPTEKYGBgCgojIyDimqDvuI8g5YWz6ZSu5Z2R54K5NO+8mmRvY3MvIOaWh+S7tuWkueW/hemhu+WFiOafpSBTSEEKR2l0SHViIFBhZ2VzIOS7jiBgZG9jcy9gIOebruW9leaJmOeuoeaWh+S7tuaXtu+8jOWNs+S9v+aYr+aWsOaWh+S7tuS5n+W/hemhu+WFiOafpSBTSEEg5YaN5o6o6YCB77yI5ZCm5YiZ5oqlIDQyMu+8ie+8mgoKIyMg4pqg77iPIEdpdEh1YiBBY3Rpb25zIFBhZ2VzIEJ1aWxkIOaXpeW/l+S4jeWvueWkluaatOmcsgroi6UgYnVpbGQg5aSx6LSl6ZyA6KaB5o6S5p+l77yM5b+F6aG7IGNsb25lIOWIsOacrOWcsCBidWlsZCDpqozor4HvvIxHaXRIdWIg5LiN5o+Q5L6bIEFjdGlvbnMg5pel5b+X5YWs5byAIEFQSeOAggoKIyMg5Yib5bu656m65LuT5bqTCgpgYGBiYXNoCiMg5q2j56GuIGVuZHBvaW50OiAvdXNlci9yZXBvc++8iOS4jeaYryAvcmVwb3PvvIkKZ2ggYXBpIC91c2VyL3JlcG9zIC1YIFBPU1QgXAogIC1mIG5hbWU9InJlcG8tbmFtZSIgXAogIC1mIGRlc2NyaXB0aW9uPSIuLi4iIFwKICAtZiB2aXNpYmlsaXR5PXB1YmxpYyBcCiAgLWYgYXV0b19pbml0PWZhbHNlCmBgYAoKIyMg5om56YeP5o6o6YCB5aSa5paH5Lu277yI55So5LqO5bey5Yid5aeL5YyW55qE5LuT5bqT77yJCumAgueUqOS6jumcgOimgeS4gOasoeaAp+aOqOmAgeWkp+mHj+aWh+S7tu+8iOWmgiBucG0gaW5zdGFsbCDlkI7nmoQgbm9kZV9tb2R1bGVzIOS4jeeul++8jOS9hua6kOaWh+S7tuWPr+S7pe+8ieeahOWcuuaZr++8mgpgYGBweXRob24KaW1wb3J0IGpzb24sIHN1YnByb2Nlc3MsIG9zCgpyZXBvID0gIm93bmVyL3JlcG8iCmJhc2VfcGF0aCA9ICIvcGF0aC90by9wcm9qZWN0Igpza2lwX2RpcnMgPSB7J25vZGVfbW9kdWxlcycsICcuZ2l0JywgJ2Rpc3QnfQoKIyDojrflj5blvZPliY0gSEVBRApoZWFkX3NoYSA9IHN1YnByb2Nlc3MucnVuKAogICAgWydnaCcsICdhcGknLCBmJ3JlcG9zL3tyZXBvfS9naXQvcmVmL2hlYWRzL21haW4nLCAnLS1qcScsICcub2JqZWN0LnNoYSddLAogICAgY2FwdHVyZV9vdXRwdXQ9VHJ1ZSwgdGV4dD1UcnVlCikuc3Rkb3V0LnN0cmlwKCkKCnRyZWVfc2hhID0gc3VicHJvY2Vzcy5ydW4oCiAgICBbJ2doJywgJ2FwaScsIGYncmVwb3Mve3JlcG99L2dpdC9jb21taXRzL3toZWFkX3NoYX0nLCAnLS1qcScsICcudHJlZS5zaGEnXSwKICAgIGNhcHR1cmVfb3V0cHV0PVRydWUsIHRleHQ9VHJ1ZQopLnN0ZG91dC5zdHJpcCgpCgojIOaehOW7uiB0cmVl77yIY29udGVudCDkvKAgYmFzZTY0IOe8lueggeWQjueahOWtl+espuS4su+8iQppbXBvcnQgYmFzZTY0CnRyZWUgPSBbXQpmb3Igcm9vdCwgZGlycywgZmlsZXMgaW4gb3Mud2FsayhiYXNlX3BhdGgpOgogICAgZGlyc1s6XSA9IFtkIGZvciBkIGluIGRpcnMgaWYgZCBub3QgaW4gc2tpcF9kaXJzXQogICAgZm9yIGZuYW1lIGluIGZpbGVzOgogICAgICAgIGZwYXRoID0gb3MucGF0aC5qb2luKHJvb3QsIGZuYW1lKQogICAgICAgIHJlbCA9IG9zLnBhdGgucmVscGF0aChmcGF0aCwgYmFzZV9wYXRoKQogICAgICAgIHdpdGggb3BlbihmcGF0aCwgJ3InLCBlbmNvZGluZz0ndXRmLTgnKSBhcyBmOgogICAgICAgICAgICBjb250ZW50ID0gZi5yZWFkKCkKICAgICAgICBlbmNvZGVkID0gYmFzZTY0LmI2NGVuY29kZShjb250ZW50LmVuY29kZSgndXRmLTgnKSkuZGVjb2RlKCdhc2NpaScpCiAgICAgICAgdHJlZS5hcHBlbmQoeydwYXRoJzogcmVsLCAnbW9kZSc6ICcxMDA2NDQnLCAndHlwZSc6ICdibG9iJywgJ2NvbnRlbnQnOiBlbmNvZGVkfSkKCiMg5Yib5bu65pawIHRyZWUKcGF5bG9hZCA9IGpzb24uZHVtcHMoeyJiYXNlX3RyZWUiOiB0cmVlX3NoYSwgInRyZWUiOiB0cmVlfSkKd2l0aCBvcGVuKCcvdG1wL3RyZWVfcGF5bG9hZC5qc29uJywgJ3cnKSBhcyBmOgogICAgZi53cml0ZShwYXlsb2FkKQoKciA9IHN1YnByb2Nlc3MucnVuKAogICAgWydnaCcsICdhcGknLCBmJ3JlcG9zL3tyZXBvfS9naXQvdHJlZXMnLCAnLS1tZXRob2QnLCAnUE9TVCcsICctLWlucHV0JywgJy90bXAvdHJlZV9wYXlsb2FkLmpzb24nXSwKICAgIGNhcHR1cmVfb3V0cHV0PVRydWUsIHRleHQ9VHJ1ZQopCm5ld190cmVlX3NoYSA9IGpzb24ubG9hZHMoci5zdGRvdXQpWydzaGEnXQoKIyDliJvlu7ogY29tbWl0CmNvbW1pdF9wYXlsb2FkID0ganNvbi5kdW1wcyh7Im1lc3NhZ2UiOiAiY29tbWl0IG1zZyIsICJ0cmVlIjogbmV3X3RyZWVfc2hhLCAicGFyZW50cyI6IFtoZWFkX3NoYV19KQp3aXRoIG9wZW4oJy90bXAvY29tbWl0X3BheWxvYWQuanNvbicsICd3JykgYXMgZjoKICAgIGYud3JpdGUoY29tbWl0X3BheWxvYWQpCgpyMiA9IHN1YnByb2Nlc3MucnVuKAogICAgWydnaCcsICdhcGknLCBmJ3JlcG9zL3tyZXBvfS9naXQvY29tbWl0cycsICctLW1ldGhvZCcsICdQT1NUJywgJy0taW5wdXQnLCAnL3RtcC9jb21taXRfcGF5bG9hZC5qc29uJ10sCiAgICBjYXB0dXJlX291dHB1dD1UcnVlLCB0ZXh0PVRydWUKKQpjb21taXRfc2hhID0ganNvbi5sb2FkcyhyMi5zdGRvdXQpWydzaGEnXQoKIyDmm7TmlrAgcmVmCnJlZl9wYXlsb2FkID0ganNvbi5kdW1wcyh7InNoYSI6IGNvbW1pdF9zaGF9KQp3aXRoIG9wZW4oJy90bXAvcmVmX3BheWxvYWQuanNvbicsICd3JykgYXMgZjoKICAgIGYud3JpdGUocmVmX3BheWxvYWQpCnN1YnByb2Nlc3MucnVuKAogICAgWydnaCcsICdhcGknLCBmJ3JlcG9zL3tyZXBvfS9naXQvcmVmcy9oZWFkcy9tYWluJywgJy0tbWV0aG9kJywgJ1BBVENIJywgJy0taW5wdXQnLCAnL3RtcC9yZWZfcGF5bG9hZC5qc29uJ10sCiAgICBjYXB0dXJlX291dHB1dD1UcnVlLCB0ZXh0PVRydWUKKQpgYGAKCiMjIyDop6blj5HnqbogY29tbWl0IOmHjeW7uiBBY3Rpb25zCuWmguaenOmcgOimgeiuqSBHaXRIdWIgQWN0aW9ucyDph43mlrDov5DooYzkvYbkuI3mg7PmlLnku7vkvZXmlofku7bvvJoKYGBgcHl0aG9uCnIgPSBzdWJwcm9jZXNzLnJ1bihbJ2doJywgJ2FwaScsIGYncmVwb3Mve3JlcG99L2dpdC9yZWYvaGVhZHMvbWFpbicsICctLWpxJywgJy5vYmplY3Quc2hhJ10sIGNhcHR1cmVfb3V0cHV0PVRydWUsIHRleHQ9VHJ1ZSkKaGVhZF9zaGEgPSByLnN0ZG91dC5zdHJpcCgpCnIyID0gc3VicHJvY2Vzcy5ydW4oWydnaCcsICdhcGknLCBmJ3JlcG9zL3tyZXBvfS9naXQvY29tbWl0cy97aGVhZF9zaGF9JywgJy0tanEnLCAnLnRyZWUuc2hhJ10sIGNhcHR1cmVfb3V0cHV0PVRydWUsIHRleHQ9VHJ1ZSkKYmFzZV90cmVlX3NoYSA9IHIyLnN0ZG91dC5zdHJpcCgpCmNvbW1pdF9wYXlsb2FkID0ganNvbi5kdW1wcyh7Im1lc3NhZ2UiOiAiY2k6IHRyaWdnZXIgcmVidWlsZCIsICJ0cmVlIjogYmFzZV90cmVlX3NoYSwgInBhcmVudHMiOiBbaGVhZF9zaGFdfSkKd2l0aCBvcGVuKCcvdG1wL2MuanNvbicsICd3JykgYXMgZjogZi53cml0ZShjb21taXRfcGF5bG9hZCkKcjMgPSBzdWJwcm9jZXNzLnJ1bihbJ2doJywgJ2FwaScsIGYncmVwb3Mve3JlcG99L2dpdC9jb21taXRzJywgJy0tbWV0aG9kJywgJ1BPU1QnLCAnLS1pbnB1dCcsICcvdG1wL2MuanNvbiddLCBjYXB0dXJlX291dHB1dD1UcnVlLCB0ZXh0PVRydWUpCmlmIHIzLnJldHVybmNvZGUgPT0gMDoKICAgIGNvbW1pdF9zaGEgPSBqc29uLmxvYWRzKHIzLnN0ZG91dClbJ3NoYSddCiAgICByZWZfcGF5bG9hZCA9IGpzb24uZHVtcHMoeyJzaGEiOiBjb21taXRfc2hhfSkKICAgIHdpdGggb3BlbignL3RtcC9yLmpzb24nLCAndycpIGFzIGY6IGYud3JpdGUocmVmX3BheWxvYWQpCiAgICBzdWJwcm9jZXNzLnJ1bihbJ2doJywgJ2FwaScsIGYncmVwb3Mve3JlcG99L2dpdC9yZWZzL2hlYWRzL21haW4nLCAnLS1tZXRob2QnLCAnUEFUQ0gnLCAnLS1pbnB1dCcsICcvdG1wL3IuanNvbiddLCBjYXB0dXJlX291dHB1dD1UcnVlLCB0ZXh0PVRydWUpCmBgYAoKIyMgR2l0SHViIFBhZ2VzIOmFjee9ru+8iOW9kyBHaXRIdWIgUGFnZXMg5pyq5ZCv55So5pe277yJCmBgYGJhc2gKZ2ggYXBpIHJlcG9zL3tvd25lcn0ve3JlcG99L3BhZ2VzIC0tbWV0aG9kIFBPU1QgXAogIC1mIHNvdXJjZVticmFuY2hdPW1haW4gXAogIC1mIGJ1aWxkX3R5cGU9d29ya2Zsb3cKYGBgCuazqOaEj++8mmBzb3VyY2VbcGF0aF1gIOWPquiDveaYryBgL2Ag5oiWIGAvZG9jc2DvvIzkuI3og73mmK8gYC9kaXN0YOOAggoKIyMg5pys5ZywIEJ1aWxkIOmqjOivge+8iOW8uuWItu+8iQrmr4/mrKHmlLnliqjlv4XpobvlhYjlnKjmnKzlnLDot5EgYnVpbGTvvIznoa7orqQgVHlwZVNjcmlwdCDnvJbor5HpgJrov4flho3mjqjpgIHvvJoKYGBgYmFzaApjZCAvcGF0aC90by9yZXBvCm5wbSBpbnN0YWxsIDI+JjEgfCB0YWlsIC0zCm5wbSBydW4gYnVpbGQgMj4mMSB8IHRhaWwgLTgKYGBgCkJ1aWxkIOWksei0pSDihpIg5L+u5aSN5ZCO5YaN5o6o6YCB77yM5LiN5o6o6YCB5pyJ6Zeu6aKY55qE5Luj56CB5YiwIG1haW7jgIIKCiMjIOaOkuafpei/nOeoi+S7k+W6k++8muajgOafpeaWh+S7tuaYr+WQpuWtmOWcqCAvIOW3ruW8guWvueavlAoKIyMjIOafpeeci+ebruW9leWGheWuue+8iOWIl+WHuuaWh+S7ti/lrZDnm67lvZXvvIkKYGBgYmFzaAojIOebruW9lSBwYXRoIOS4jeW4puWwvumDqOaWnOadoApnaCBhcGkgcmVwb3Mve293bmVyfS97cmVwb30vY29udGVudHMve3BhdGh9IC0tanEgJy5bXS5uYW1lLC5bXS50eXBlJwojIOS+i+Wmgu+8muWIl+WHuuagueebruW9lQpnaCBhcGkgcmVwb3MvbGlyLW5hdmNvby9oZXJtZXMtc2tpbGxzL2NvbnRlbnRzLyAtLWpxICcuW10ubmFtZScKIyDkvovlpoLvvJrliJflh7ogZmluYW5jZSDlrZDnm67lvZUKZ2ggYXBpIHJlcG9zL2xpci1uYXZjb28vaGVybWVzLXNraWxscy9jb250ZW50cy9maW5hbmNlIC0tanEgJy5bXS5uYW1lJwojIOS+i+Wmgu+8muafpeeci+afkOS4qiBza2lsbCDnm67lvZXph4znmoTmlofku7YKZ2ggYXBpIHJlcG9zL2xpci1uYXZjb28vaGVybWVzLXNraWxscy9jb250ZW50cy9maW5hbmNlL2FzdG9jay1hbmFseXNpcyAtLWpxICcuW10ubmFtZScKYGBgCgojIyMg5qOA5p+l5Y2V5Liq5paH5Lu25piv5ZCm5a2Y5ZyoICsg6K+75Y+W5YaF5a65CmBgYGJhc2gKIyDmo4Dmn6Xmlofku7YgU0hB77yI5a2Y5Zyo5YiZ6L+U5ZueIHNoYe+8jOS4jeWtmOWcqOWImSA0MDTvvIkKZ2ggYXBpIHJlcG9zL3tvd25lcn0ve3JlcG99L2NvbnRlbnRzL3twYXRofSAtLWpxICcuc2hhJwoKIyDnm7TmjqXor7vlj5bmlofku7blhoXlrrnvvIjoh6rliqjov5Tlm54gYmFzZTY077yM6ZyA6Kej56CB77yJCmdoIGFwaSByZXBvcy97b3duZXJ9L3tyZXBvfS9jb250ZW50cy97cGF0aH0gLS1qcSAnLmNvbnRlbnQnIHwgYmFzZTY0IC1kCiMg56S65L6L77ya6K+75Y+W6L+c56iLIGhpbWFsYXlhLm1kCmdoIGFwaSByZXBvcy9saXItbmF2Y29vL2hlcm1lcy1za2lsbHMvY29udGVudHMvaGltYWxheWEubWQgLS1qcSAnLmNvbnRlbnQnIHwgYmFzZTY0IC1kIHwgaGVhZCAtMjAKYGBgCgojIyMg5o6S5p+l5pys5ZywIHZzIOi/nOeoi+W3ruW8ggpgYGBiYXNoCiMg5pys5Zyw5pyJ5L2GIEdpdEh1YiDmsqHmnInnmoTmlofku7bvvIjmnKzlnLAgdnMgR2l0SHViIOagueebruW9le+8iQpjb21tIC0yMyA8KGxzIH4vLmhlcm1lcy9za2lsbHMvIHwgc29ydCkgXAogICAgICAgIDwoZ2ggYXBpIHJlcG9zL2xpci1uYXZjb28vaGVybWVzLXNraWxscy9jb250ZW50cy8gLS1qcSAnLltdLm5hbWUnIHwgc29ydCkKCiMg5a+55q+U54m55a6a55uu5b2VCmRpZmYgPChscyB+Ly5oZXJtZXMvc2tpbGxzL2ZpbmFuY2UvIHwgc29ydCkgXAogICAgIDwoZ2ggYXBpIHJlcG9zL2xpci1uYXZjb28vaGVybWVzLXNraWxscy9jb250ZW50cy9maW5hbmNlIC0tanEgJy5bXS5uYW1lJyB8IHNvcnQpCmBgYAoKIyMjIOWFs+mUruWdkeeCuQotICoqNDIyICsgInNoYSB3YXNuJ3Qgc3VwcGxpZWQiKiogPSDmlofku7blnKggR2l0SHViIOW3suWtmOWcqO+8jOabtOaWsOaXtuW/hemhu+S8oCBzaGEg5Y+C5pWwCi0gKio0MDQqKiA9IOaWh+S7tuaIluebruW9leWcqOi/nOeoi+S4jeWtmOWcqAotICoqR2l0SHViIOaYvuekuueahCBzaXplIOKJoCDmnKzlnLDljp/lp4sgc2l6ZSoq77yM5LiN6IO955So5LqO6aqM6K+B5ZCM5q2l5q2j56Gu5oCnCi0g5p+l6K+i55uu5b2V5pe2IHBhdGgg5LiN6IO95pyJ5bC+6YOo5pac5p2gCi0g5om56YeP5o6o6YCB5LyY5YWI55SoKirpgJDmlofku7bljZXmrKEgUFVUKirvvIzpgb/lhY0gdHJlZSBBUEkg5Y+M6YeN57yW56CB6Zeu6aKYCgojIyBHaXQgQ2xvbmXvvIjku4UgYnVpbGQg6aqM6K+B5pe255So77yJCmBgYGJhc2gKIyDljZXmlofku7bkuIvovb0KZ2ggYXBpICJyZXBvcy97b3duZXJ9L3tyZXBvfS9jb250ZW50cy97cGF0aH0/cmVmPW1haW4iIC0tanEgJy5jb250ZW50JyB8IGJhc2U2NCAtZCA+IC90bXAvZmlsZQojIOWujOaVtCBjbG9uZQpnaXQgY2xvbmUgaHR0cHM6Ly9UT0tFTkBnaXRodWIuY29tL3tvd25lcn0ve3JlcG99LmdpdApgYGAK5rOo5oSP77yaY2xvbmUg5pe2IHJlbW90ZSBVUkwg6ZyA6KaB5YaF5bWMIFRPS0VO77yM5qC85byP77yaYGh0dHBzOi8vVE9LRU5AZ2l0aHViLmNvbS91c2VyL3JlcG8uZ2l0YAo=
+---
+name: github-api-push
+description: GitHub API 文件推送工作流 — 包含创建空仓库初始化、批量多文件推送、GitHub Pages 配置、用空 commit 触发 Actions rebuild。本地 build 验证是强制步骤。
+---
+
+# GitHub API 文件推送工作流
+
+## 背景
+`gh auth git-credential` 在某些环境下不工作，导致 `git push` 报 "could not read Password: Device not configured"。解决方案：绕开 git，直接用 GitHub REST API 推送文件。
+
+## ⚠️ 关键原则：必须手动 Base64 编码
+GitHub API 的 `content` 字段期望 **Base64 编码后的字符串**，不是原始文本。
+如果不 base64 直接传，API 报 `content is not valid Base64` (HTTP 422)。
+
+正确做法（Python）：
+```python
+import base64
+encoded = base64.b64encode(raw_content.encode('utf-8')).decode('ascii')
+subprocess.run(['gh', 'api', '--method', 'PUT', f'repos/{repo}/contents/{path}',
+                '-f', f'message={msg}', '-f', f'content={encoded}'])
+```
+
+Shell 中可接受（但不如 Python 可靠）：
+```bash
+CONTENT=$(base64 -i /path/to/file | tr -d '\n')
+gh api --method PUT "repos/.../contents/path" \
+  -f message="..." -f content="$CONTENT"
+```
+
+## 推送流程（已有文件的更新）
+
+### 第一步：获取当前 SHA
+```bash
+SHA=$(gh api "repos/{owner}/{repo}/contents/{path}?ref={branch}" --jq '.sha')
+```
+
+### 第二步：Base64 编码
+```bash
+CONTENT=$(base64 -i /path/to/file | tr -d '\n')
+```
+
+### 第三步：PUT 推送
+```bash
+gh api --method PUT "repos/{owner}/{repo}/contents/{path}" \
+  -f message="commit message" \
+  -f content="$CONTENT" \
+  -f sha="$SHA"
+```
+
+## ⚠️ GitHub Pages 路径限制
+`/dist` 不是有效路径，只能用 `/`（根目录）或 `/docs`。如果项目 build 输出在 `dist/`，需要用 `actions/upload-pages-artifact` + `actions/deploy-pages`（而非 `actions/upload-artifact`），且 Pages source 设置为 `/`。
+
+## 完整模板
+```bash
+SHA=$(gh api "repos/USER/REPO/contents/src/App.tsx?ref=main" --jq '.sha')
+CONTENT=$(base64 -i /tmp/App.tsx | tr -d '\n')
+gh api --method PUT "repos/USER/REPO/contents/src/App.tsx" \
+  -f message="your commit message" \
+  -f content="$CONTENT" \
+  -f sha="$SHA"
+```
+
+## ⚠️ 关键坑点1：更新已有文件必须提供 SHA
+PUT 新文件不需要 SHA，但**更新已存在的文件必须先查 SHA 再推送**，否则报 422：
+```bash
+# 第一步：查询 SHA（文件存在则返回值，不存在则 404）
+SHA=$(gh api "repos/{owner}/{repo}/contents/{path}?ref=main" --jq '.sha' 2>/dev/null)
+
+# 第二步：根据是否存在决定是否加 sha 参数
+if [ "$SHA" = "Not Found" ] || [ -z "$SHA" ]; then
+    # 新文件或罕见情况：不传 sha
+    gh api --method PUT "repos/{owner}/{repo}/contents/{path}" \
+      -f message="add: {path}" -f content="$CONTENT"
+else
+    # 已有文件：必须传 sha
+    gh api --method PUT "repos/{owner}/{repo}/contents/{path}" \
+      -f message="update: {path}" -f content="$CONTENT" -f sha="$SHA"
+fi
+```
+
+## ⚠️ 关键坑点2：Tree API 会双重编码 content（已造成303个文件全部损坏）
+**严重问题**：批量多文件推送时，tree API 的 `content` 字段会被 API 内部自动再做一层 base64 编码。**实测结果：所有303个文件全部损坏，MD5与原始内容完全不同**。绝对不能在 tree 的 `content` 字段传 base64 字符串。
+
+**正确方案：Tree API 必须分两步走（blob-first）**
+
+第一步 — 创建 blob 获取 SHA：
+```python
+import subprocess, base64
+
+def create_blob(repo, file_path):
+    with open(file_path, 'rb') as f:
+        encoded = base64.b64encode(f.read()).decode('ascii')
+    result = subprocess.run(
+        ['gh', 'api', f'repos/{repo}/git/blobs', '--method', 'POST',
+         '-f', f'content={encoded}', '-f', 'encoding=base64'],
+        capture_output=True, text=True
+    )
+    return json.loads(result.stdout)['sha']
+```
+
+第二步 — 用 blob SHA 构建 tree（不是 content）：
+```python
+tree = [{'path': rel_path, 'mode': '100644', 'type': 'blob', 'sha': blob_sha}]
+```
+
+**注意**：`type` 必须是 `'blob'`（不是 `'file'`），且用 `sha` 引用而非 `content`。
+
+**简单方案（推荐）**：大批量同步时，改用**逐文件单次 PUT** 推送，详见下方 Python 脚本。
+```python
+import subprocess, os, base64, json
+
+repo = "owner/repo"
+base_path = "/path/to/local/skills"
+skip_dirs = {'.git', 'node_modules', '.DS_Store'}
+
+# 遍历所有本地文件
+for root, dirs, files in os.walk(base_path):
+    dirs[:] = [d for d in dirs if d not in skip_dirs]
+    for fname in files:
+        fpath = os.path.join(root, fname)
+        rel = os.path.relpath(fpath, base_path)
+        with open(fpath, 'r', encoding='utf-8') as f:
+            content = f.read()
+        encoded = base64.b64encode(content.encode('utf-8')).decode('ascii')
+        
+        # 查询现有 SHA（处理新文件 vs 更新）
+        check = subprocess.run(
+            ['gh', 'api', f'repos/{repo}/contents/{rel}?ref=main', '--jq', '.sha'],
+            capture_output=True, text=True
+        )
+        sha = check.stdout.strip()
+        msg = f"sync: {rel}"
+        
+        if check.returncode != 0 or not sha or 'sha' not in check.stdout:
+            # 新文件
+            subprocess.run(['gh', 'api', '--method', 'PUT', f'repos/{repo}/contents/{rel}',
+                           '-f', f'message={msg}', '-f', f'content={encoded}'])
+        else:
+            # 已有文件，需 SHA
+            subprocess.run(['gh', 'api', '--method', 'PUT', f'repos/{repo}/contents/{rel}',
+                           '-f', f'message={msg}', '-f', f'content={encoded}', '-f', f'sha={sha}'])
+```
+
+## ⚠️ 关键坑点3：GitHub 文件 size 不等于本地 size，且 size 不能用于同步验证
+GitHub 对文件内容会额外编码，**同一个文件在 GitHub 显示的 size 会比本地大**（UTF-8 文本大约大 10-20%，非ASCII内容差异更大）。**绝对不能通过 size 对比来判断同步是否成功**，否则会漏掉所有损坏的文件（如本次303个文件全部损坏但size差异固定在33%左右）。
+
+**正确的验证方式：用 md5 抽查关键文件**：
+```bash
+# 本地 md5
+md5 ~/.hermes/skills/apple/apple-reminders/SKILL.md
+
+# GitHub md5（下载后验证）
+gh api repos/{owner}/{repo}/contents/apple/apple-reminders/SKILL.md \
+  --jq '.content' | base64 -d | md5
+
+# 用 diff 对比（最可靠）
+gh api repos/{owner}/{repo}/contents/apple/apple-reminders/SKILL.md \
+  --jq '.content' | base64 -d > /tmp/gh_file.md
+diff ~/.hermes/skills/apple/apple-reminders/SKILL.md /tmp/gh_file.md
+```
+
+**同步完整性验证脚本**：
+```python
+import subprocess, os, hashlib, base64, json
+
+def md5_local(path):
+    with open(path, 'rb') as f:
+        return hashlib.md5(f.read()).hexdigest()
+
+def md5_remote(repo, path):
+    result = subprocess.run(
+        ['gh', 'api', f'repos/{repo}/contents/{path}', '--jq', '.content'],
+        capture_output=True, text=True
+    )
+    return hashlib.md5(base64.b64decode(result.stdout.strip())).hexdigest()
+```
+
+## ⚠️ 旧版扁平结构 vs 新版目录结构
+早期同步曾将 skills 扁平化推送（如 `astock-analysis.md`），后改为目录结构（如 `finance/astock-analysis/SKILL.md`）。同一仓库中可能存在两种结构并存、文件路径冲突、旧文件多余等情况。排查差异时用 tree recursive API 获取完整文件列表：
+```bash
+gh api repos/{owner}/{repo}/git/trees/main?recursive=1
+```
+
+## ⚠️ 关键坑点4：docs/ 文件夹必须先查 SHA
+GitHub Pages 从 `docs/` 目录托管文件时，即使是新文件也必须先查 SHA 再推送（否则报 422）：
+
+## ⚠️ GitHub Actions Pages Build 日志不对外暴露
+若 build 失败需要排查，必须 clone 到本地 build 验证，GitHub 不提供 Actions 日志公开 API。
+
+## 创建空仓库
+
+```bash
+# 正确 endpoint: /user/repos（不是 /repos）
+gh api /user/repos -X POST \
+  -f name="repo-name" \
+  -f description="..." \
+  -f visibility=public \
+  -f auto_init=false
+```
+
+## 批量推送多文件（推荐逐文件PUT，tree API需用blob-first）
+**重要**：由于 tree API 的 `content` 字段存在双重编码问题，**强烈建议用逐文件 PUT 方式**推送。tree API 仅在需要原子性提交大量文件时才用，且必须用 blob-first 写法。
+
+### 推荐：逐文件PUT（安全可靠）
+```python
+import subprocess, os, base64, json
+
+repo = "owner/repo"
+base_path = "/path/to/local/skills"
+skip_dirs = {'.git', 'node_modules', '.DS_Store'}
+
+for root, dirs, files in os.walk(base_path):
+    dirs[:] = [d for d in dirs if d not in skip_dirs]
+    for fname in files:
+        if not fname.endswith('.md'):
+            continue
+        fpath = os.path.join(root, fname)
+        rel = os.path.relpath(fpath, base_path)
+
+        # 读取并编码
+        with open(fpath, 'rb') as f:
+            encoded = base64.b64encode(f.read()).decode('ascii')
+
+        # 查询现有 SHA
+        check = subprocess.run(
+            ['gh', 'api', f'repos/{repo}/contents/{rel}?ref=main', '--jq', '.sha'],
+            capture_output=True, text=True
+        )
+        sha = check.stdout.strip()
+        msg = f"sync: {rel}"
+
+        if check.returncode != 0 or not sha or 'sha' not in check.stdout:
+            subprocess.run(
+                ['gh', 'api', '--method', 'PUT', f'repos/{repo}/contents/{rel}',
+                 '-f', f'message={msg}', '-f', f'content={encoded}']
+            )
+        else:
+            subprocess.run(
+                ['gh', 'api', '--method', 'PUT', f'repos/{repo}/contents/{rel}',
+                 '-f', f'message={msg}', '-f', f'content={encoded}', '-f', f'sha={sha}']
+            )
+        print(f"Pushed: {rel}")
+```
+
+### 仅在需要时用：Tree API blob-first（正确写法）
+```python
+import json, subprocess, os, base64
+
+repo = "owner/repo"
+base_path = "/path/to/project"
+skip_dirs = {'node_modules', '.git', 'dist'}
+
+def create_blob(repo, path):
+    with open(path, 'rb') as f:
+        encoded = base64.b64encode(f.read()).decode('ascii')
+    result = subprocess.run(
+        ['gh', 'api', f'repos/{repo}/git/blobs', '--method', 'POST',
+         '-f', f'content={encoded}', '-f', 'encoding=base64'],
+        capture_output=True, text=True
+    )
+    return json.loads(result.stdout)['sha']
+
+# 获取当前 HEAD
+head_sha = subprocess.run(
+    ['gh', 'api', f'repos/{repo}/git/ref/heads/main', '--jq', '.object.sha'],
+    capture_output=True, text=True
+).stdout.strip()
+
+# 先创建所有 blobs
+blob_map = {}
+for root, dirs, files in os.walk(base_path):
+    dirs[:] = [d for d in dirs if d not in skip_dirs]
+    for fname in files:
+        fpath = os.path.join(root, fname)
+        rel = os.path.relpath(fpath, base_path)
+        blob_map[rel] = create_blob(repo, fpath)
+        print(f"Blob created: {rel}")
+
+# 用 blob SHA 构建 tree（type='blob' 且用 sha 引用）
+tree = [
+    {'path': rel, 'mode': '100644', 'type': 'blob', 'sha': sha}
+    for rel, sha in blob_map.items()
+]
+
+# 创建新 tree
+tree_payload = json.dumps({"tree": tree})
+with open('/tmp/tree_payload.json', 'w') as f:
+    f.write(tree_payload)
+
+r = subprocess.run(
+    ['gh', 'api', f'repos/{repo}/git/trees', '--method', 'POST', '--input', '/tmp/tree_payload.json'],
+    capture_output=True, text=True
+)
+new_tree_sha = json.loads(r.stdout)['sha']
+
+# 创建 commit
+commit_payload = json.dumps({"message": "sync: batch update", "tree": new_tree_sha, "parents": [head_sha]})
+with open('/tmp/commit_payload.json', 'w') as f:
+    f.write(commit_payload)
+
+r2 = subprocess.run(
+    ['gh', 'api', f'repos/{repo}/git/commits', '--method', 'POST', '--input', '/tmp/commit_payload.json'],
+    capture_output=True, text=True
+)
+commit_sha = json.loads(r2.stdout)['sha']
+
+# 更新 ref
+ref_payload = json.dumps({"sha": commit_sha})
+with open('/tmp/ref_payload.json', 'w') as f:
+    f.write(ref_payload)
+subprocess.run(
+    ['gh', 'api', f'repos/{repo}/git/refs/heads/main', '--method', 'PATCH', '--input', '/tmp/ref_payload.json'],
+    capture_output=True, text=True
+)
+print(f"Done: {len(blob_map)} files synced")
+```
+
+**关键**：`tree[].type` 必须是 `'blob'`，且用 `sha` 引用而非 `content`。
+
+### 触发空 commit 重建 Actions
+如果需要让 GitHub Actions 重新运行但不想改任何文件：
+```python
+r = subprocess.run(['gh', 'api', f'repos/{repo}/git/ref/heads/main', '--jq', '.object.sha'], capture_output=True, text=True)
+head_sha = r.stdout.strip()
+r2 = subprocess.run(['gh', 'api', f'repos/{repo}/git/commits/{head_sha}', '--jq', '.tree.sha'], capture_output=True, text=True)
+base_tree_sha = r2.stdout.strip()
+commit_payload = json.dumps({"message": "ci: trigger rebuild", "tree": base_tree_sha, "parents": [head_sha]})
+with open('/tmp/c.json', 'w') as f: f.write(commit_payload)
+r3 = subprocess.run(['gh', 'api', f'repos/{repo}/git/commits', '--method', 'POST', '--input', '/tmp/c.json'], capture_output=True, text=True)
+if r3.returncode == 0:
+    commit_sha = json.loads(r3.stdout)['sha']
+    ref_payload = json.dumps({"sha": commit_sha})
+    with open('/tmp/r.json', 'w') as f: f.write(ref_payload)
+    subprocess.run(['gh', 'api', f'repos/{repo}/git/refs/heads/main', '--method', 'PATCH', '--input', '/tmp/r.json'], capture_output=True, text=True)
+```
+
+## GitHub Pages 配置（当 GitHub Pages 未启用时）
+```bash
+gh api repos/{owner}/{repo}/pages --method POST \
+  -f source[branch]=main \
+  -f build_type=workflow
+```
+注意：`source[path]` 只能是 `/` 或 `/docs`，不能是 `/dist`。
+
+## 本地 Build 验证（强制）
+每次改动必须先在本地跑 build，确认 TypeScript 编译通过再推送：
+```bash
+cd /path/to/repo
+npm install 2>&1 | tail -3
+npm run build 2>&1 | tail -8
+```
+Build 失败 → 修复后再推送，不推送有问题的代码到 main。
+
+## 排查远程仓库：检查文件是否存在 / 差异对比
+
+### 查看目录内容（列出文件/子目录）
+```bash
+# 目录 path 不带尾部斜杠
+gh api repos/{owner}/{repo}/contents/{path} --jq '.[].name,.[].type'
+# 例如：列出根目录
+gh api repos/lir-navcoo/hermes-skills/contents/ --jq '.[].name'
+# 例如：列出 finance 子目录
+gh api repos/lir-navcoo/hermes-skills/contents/finance --jq '.[].name'
+# 例如：查看某个 skill 目录里的文件
+gh api repos/lir-navcoo/hermes-skills/contents/finance/astock-analysis --jq '.[].name'
+```
+
+### 检查单个文件是否存在 + 读取内容
+```bash
+# 检查文件 SHA（存在则返回 sha，不存在则 404）
+gh api repos/{owner}/{repo}/contents/{path} --jq '.sha'
+
+# 直接读取文件内容（自动返回 base64，需解码）
+gh api repos/{owner}/{repo}/contents/{path} --jq '.content' | base64 -d
+# 示例：读取远程 himalaya.md
+gh api repos/lir-navcoo/hermes-skills/contents/himalaya.md --jq '.content' | base64 -d | head -20
+```
+
+### 排查本地 vs 远程差异
+```bash
+# 本地有但 GitHub 没有的文件（本地 vs GitHub 根目录）
+comm -23 <(ls ~/.hermes/skills/ | sort) \
+        <(gh api repos/lir-navcoo/hermes-skills/contents/ --jq '.[].name' | sort)
+
+# 对比特定目录
+diff <(ls ~/.hermes/skills/finance/ | sort) \
+     <(gh api repos/lir-navcoo/hermes-skills/contents/finance --jq '.[].name' | sort)
+```
+
+### 关键坑点
+- **422 + "sha wasn't supplied"** = 文件在 GitHub 已存在，更新时必须传 sha 参数
+- **404** = 文件或目录在远程不存在
+- **GitHub 显示的 size ≠ 本地原始 size**，不能用于验证同步正确性
+- 查询目录时 path 不能有尾部斜杠
+- 批量推送优先用**逐文件单次 PUT**，避免 tree API 双重编码问题
+
+## Git Clone（仅 build 验证时用）
+```bash
+# 单文件下载
+gh api "repos/{owner}/{repo}/contents/{path}?ref=main" --jq '.content' | base64 -d > /tmp/file
+# 完整 clone
+git clone https://TOKEN@github.com/{owner}/{repo}.git
+```
+注意：clone 时 remote URL 需要内嵌 TOKEN，格式：`https://TOKEN@github.com/user/repo.git`

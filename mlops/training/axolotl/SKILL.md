@@ -1,1 +1,161 @@
-LS0tCm5hbWU6IGF4b2xvdGwKZGVzY3JpcHRpb246IEV4cGVydCBndWlkYW5jZSBmb3IgZmluZS10dW5pbmcgTExNcyB3aXRoIEF4b2xvdGwgLSBZQU1MIGNvbmZpZ3MsIDEwMCsgbW9kZWxzLCBMb1JBL1FMb1JBLCBEUE8vS1RPL09SUE8vR1JQTywgbXVsdGltb2RhbCBzdXBwb3J0CnZlcnNpb246IDEuMC4wCmF1dGhvcjogT3JjaGVzdHJhIFJlc2VhcmNoCmxpY2Vuc2U6IE1JVApkZXBlbmRlbmNpZXM6IFtheG9sb3RsLCB0b3JjaCwgdHJhbnNmb3JtZXJzLCBkYXRhc2V0cywgcGVmdCwgYWNjZWxlcmF0ZSwgZGVlcHNwZWVkXQptZXRhZGF0YToKICBoZXJtZXM6CiAgICB0YWdzOiBbRmluZS1UdW5pbmcsIEF4b2xvdGwsIExMTSwgTG9SQSwgUUxvUkEsIERQTywgS1RPLCBPUlBPLCBHUlBPLCBZQU1MLCBIdWdnaW5nRmFjZSwgRGVlcFNwZWVkLCBNdWx0aW1vZGFsXQoKLS0tCgojIEF4b2xvdGwgU2tpbGwKCkNvbXByZWhlbnNpdmUgYXNzaXN0YW5jZSB3aXRoIGF4b2xvdGwgZGV2ZWxvcG1lbnQsIGdlbmVyYXRlZCBmcm9tIG9mZmljaWFsIGRvY3VtZW50YXRpb24uCgojIyBXaGVuIHRvIFVzZSBUaGlzIFNraWxsCgpUaGlzIHNraWxsIHNob3VsZCBiZSB0cmlnZ2VyZWQgd2hlbjoKLSBXb3JraW5nIHdpdGggYXhvbG90bAotIEFza2luZyBhYm91dCBheG9sb3RsIGZlYXR1cmVzIG9yIEFQSXMKLSBJbXBsZW1lbnRpbmcgYXhvbG90bCBzb2x1dGlvbnMKLSBEZWJ1Z2dpbmcgYXhvbG90bCBjb2RlCi0gTGVhcm5pbmcgYXhvbG90bCBiZXN0IHByYWN0aWNlcwoKIyMgUXVpY2sgUmVmZXJlbmNlCgojIyMgQ29tbW9uIFBhdHRlcm5zCgoqKlBhdHRlcm4gMToqKiBUbyB2YWxpZGF0ZSB0aGF0IGFjY2VwdGFibGUgZGF0YSB0cmFuc2ZlciBzcGVlZHMgZXhpc3QgZm9yIHlvdXIgdHJhaW5pbmcgam9iLCBydW5uaW5nIE5DQ0wgVGVzdHMgY2FuIGhlbHAgcGlucG9pbnQgYm90dGxlbmVja3MsIGZvciBleGFtcGxlOgoKYGBgCi4vYnVpbGQvYWxsX3JlZHVjZV9wZXJmIC1iIDggLWUgMTI4TSAtZiAyIC1nIDMKYGBgCgoqKlBhdHRlcm4gMjoqKiBDb25maWd1cmUgeW91ciBtb2RlbCB0byB1c2UgRlNEUCBpbiB0aGUgQXhvbG90bCB5YW1sLiBGb3IgZXhhbXBsZToKCmBgYApmc2RwX3ZlcnNpb246IDIKZnNkcF9jb25maWc6CiAgb2ZmbG9hZF9wYXJhbXM6IHRydWUKICBzdGF0ZV9kaWN0X3R5cGU6IEZVTExfU1RBVEVfRElDVAogIGF1dG9fd3JhcF9wb2xpY3k6IFRSQU5TRk9STUVSX0JBU0VEX1dSQVAKICB0cmFuc2Zvcm1lcl9sYXllcl9jbHNfdG9fd3JhcDogTGxhbWFEZWNvZGVyTGF5ZXIKICByZXNoYXJkX2FmdGVyX2ZvcndhcmQ6IHRydWUKYGBgCgoqKlBhdHRlcm4gMzoqKiBUaGUgY29udGV4dF9wYXJhbGxlbF9zaXplIHNob3VsZCBiZSBhIGRpdmlzb3Igb2YgdGhlIHRvdGFsIG51bWJlciBvZiBHUFVzLiBGb3IgZXhhbXBsZToKCmBgYApjb250ZXh0X3BhcmFsbGVsX3NpemUKYGBgCgoqKlBhdHRlcm4gNDoqKiBGb3IgZXhhbXBsZTogLSBXaXRoIDggR1BVcyBhbmQgbm8gc2VxdWVuY2UgcGFyYWxsZWxpc206IDggZGlmZmVyZW50IGJhdGNoZXMgcHJvY2Vzc2VkIHBlciBzdGVwIC0gV2l0aCA4IEdQVXMgYW5kIGNvbnRleHRfcGFyYWxsZWxfc2l6ZT00OiBPbmx5IDIgZGlmZmVyZW50IGJhdGNoZXMgcHJvY2Vzc2VkIHBlciBzdGVwIChlYWNoIHNwbGl0IGFjcm9zcyA0IEdQVXMpIC0gSWYgeW91ciBwZXItR1BVIG1pY3JvX2JhdGNoX3NpemUgaXMgMiwgdGhlIGdsb2JhbCBiYXRjaCBzaXplIGRlY3JlYXNlcyBmcm9tIDE2IHRvIDQKCmBgYApjb250ZXh0X3BhcmFsbGVsX3NpemU9NApgYGAKCioqUGF0dGVybiA1OioqIFNldHRpbmcgc2F2ZV9jb21wcmVzc2VkOiB0cnVlIGluIHlvdXIgY29uZmlndXJhdGlvbiBlbmFibGVzIHNhdmluZyBtb2RlbHMgaW4gYSBjb21wcmVzc2VkIGZvcm1hdCwgd2hpY2g6IC0gUmVkdWNlcyBkaXNrIHNwYWNlIHVzYWdlIGJ5IGFwcHJveGltYXRlbHkgNDAlIC0gTWFpbnRhaW5zIGNvbXBhdGliaWxpdHkgd2l0aCB2TExNIGZvciBhY2NlbGVyYXRlZCBpbmZlcmVuY2UgLSBNYWludGFpbnMgY29tcGF0aWJpbGl0eSB3aXRoIGxsbWNvbXByZXNzb3IgZm9yIGZ1cnRoZXIgb3B0aW1pemF0aW9uIChleGFtcGxlOiBxdWFudGl6YXRpb24pCgpgYGAKc2F2ZV9jb21wcmVzc2VkOiB0cnVlCmBgYAoKKipQYXR0ZXJuIDY6KiogTm90ZSBJdCBpcyBub3QgbmVjZXNzYXJ5IHRvIHBsYWNlIHlvdXIgaW50ZWdyYXRpb24gaW4gdGhlIGludGVncmF0aW9ucyBmb2xkZXIuIEl0IGNhbiBiZSBpbiBhbnkgbG9jYXRpb24sIHNvIGxvbmcgYXMgaXTigJlzIGluc3RhbGxlZCBpbiBhIHBhY2thZ2UgaW4geW91ciBweXRob24gZW52LiBTZWUgdGhpcyByZXBvIGZvciBhbiBleGFtcGxlOiBodHRwczovL2dpdGh1Yi5jb20vYXhvbG90bC1haS1jbG91ZC9kaWZmLXRyYW5zZm9ybWVyCgpgYGAKaW50ZWdyYXRpb25zCmBgYAoKKipQYXR0ZXJuIDc6KiogSGFuZGxlIGJvdGggc2luZ2xlLWV4YW1wbGUgYW5kIGJhdGNoZWQgZGF0YS4gLSBzaW5nbGUgZXhhbXBsZTogc2FtcGxlW+KAmGlucHV0X2lkc+KAmV0gaXMgYSBsaXN0W2ludF0gLSBiYXRjaGVkIGRhdGE6IHNhbXBsZVvigJhpbnB1dF9pZHPigJldIGlzIGEgbGlzdFtsaXN0W2ludF1dCgpgYGAKdXRpbHMudHJhaW5lci5kcm9wX2xvbmdfc2VxKHNhbXBsZSwgc2VxdWVuY2VfbGVuPTIwNDgsIG1pbl9zZXF1ZW5jZV9sZW49MikKYGBgCgojIyMgRXhhbXBsZSBDb2RlIFBhdHRlcm5zCgoqKkV4YW1wbGUgMSoqIChweXRob24pOgpgYGBweXRob24KY2xpLmNsb3VkLm1vZGFsXy5Nb2RhbENsb3VkKGNvbmZpZywgYXBwPU5vbmUpCmBgYAoKKipFeGFtcGxlIDIqKiAocHl0aG9uKToKYGBgcHl0aG9uCmNsaS5jbG91ZC5tb2RhbF8ucnVuX2NtZChjbWQsIHJ1bl9mb2xkZXIsIHZvbHVtZXM9Tm9uZSkKYGBgCgoqKkV4YW1wbGUgMyoqIChweXRob24pOgpgYGBweXRob24KY29yZS50cmFpbmVycy5iYXNlLkF4b2xvdGxUcmFpbmVyKAogICAgKl9hcmdzLAogICAgYmVuY2hfZGF0YV9jb2xsYXRvcj1Ob25lLAogICAgZXZhbF9kYXRhX2NvbGxhdG9yPU5vbmUsCiAgICBkYXRhc2V0X3RhZ3M9Tm9uZSwKICAgICoqa3dhcmdzLAopCmBgYAoKKipFeGFtcGxlIDQqKiAocHl0aG9uKToKYGBgcHl0aG9uCmNvcmUudHJhaW5lcnMuYmFzZS5BeG9sb3RsVHJhaW5lci5sb2cobG9ncywgc3RhcnRfdGltZT1Ob25lKQpgYGAKCioqRXhhbXBsZSA1KiogKHB5dGhvbik6CmBgYHB5dGhvbgpwcm9tcHRfc3RyYXRlZ2llcy5pbnB1dF9vdXRwdXQuUmF3SW5wdXRPdXRwdXRQcm9tcHRlcigpCmBgYAoKIyMgUmVmZXJlbmNlIEZpbGVzCgpUaGlzIHNraWxsIGluY2x1ZGVzIGNvbXByZWhlbnNpdmUgZG9jdW1lbnRhdGlvbiBpbiBgcmVmZXJlbmNlcy9gOgoKLSAqKmFwaS5tZCoqIC0gQXBpIGRvY3VtZW50YXRpb24KLSAqKmRhdGFzZXQtZm9ybWF0cy5tZCoqIC0gRGF0YXNldC1Gb3JtYXRzIGRvY3VtZW50YXRpb24KLSAqKm90aGVyLm1kKiogLSBPdGhlciBkb2N1bWVudGF0aW9uCgpVc2UgYHZpZXdgIHRvIHJlYWQgc3BlY2lmaWMgcmVmZXJlbmNlIGZpbGVzIHdoZW4gZGV0YWlsZWQgaW5mb3JtYXRpb24gaXMgbmVlZGVkLgoKIyMgV29ya2luZyB3aXRoIFRoaXMgU2tpbGwKCiMjIyBGb3IgQmVnaW5uZXJzClN0YXJ0IHdpdGggdGhlIGdldHRpbmdfc3RhcnRlZCBvciB0dXRvcmlhbHMgcmVmZXJlbmNlIGZpbGVzIGZvciBmb3VuZGF0aW9uYWwgY29uY2VwdHMuCgojIyMgRm9yIFNwZWNpZmljIEZlYXR1cmVzClVzZSB0aGUgYXBwcm9wcmlhdGUgY2F0ZWdvcnkgcmVmZXJlbmNlIGZpbGUgKGFwaSwgZ3VpZGVzLCBldGMuKSBmb3IgZGV0YWlsZWQgaW5mb3JtYXRpb24uCgojIyMgRm9yIENvZGUgRXhhbXBsZXMKVGhlIHF1aWNrIHJlZmVyZW5jZSBzZWN0aW9uIGFib3ZlIGNvbnRhaW5zIGNvbW1vbiBwYXR0ZXJucyBleHRyYWN0ZWQgZnJvbSB0aGUgb2ZmaWNpYWwgZG9jcy4KCiMjIFJlc291cmNlcwoKIyMjIHJlZmVyZW5jZXMvCk9yZ2FuaXplZCBkb2N1bWVudGF0aW9uIGV4dHJhY3RlZCBmcm9tIG9mZmljaWFsIHNvdXJjZXMuIFRoZXNlIGZpbGVzIGNvbnRhaW46Ci0gRGV0YWlsZWQgZXhwbGFuYXRpb25zCi0gQ29kZSBleGFtcGxlcyB3aXRoIGxhbmd1YWdlIGFubm90YXRpb25zCi0gTGlua3MgdG8gb3JpZ2luYWwgZG9jdW1lbnRhdGlvbgotIFRhYmxlIG9mIGNvbnRlbnRzIGZvciBxdWljayBuYXZpZ2F0aW9uCgojIyMgc2NyaXB0cy8KQWRkIGhlbHBlciBzY3JpcHRzIGhlcmUgZm9yIGNvbW1vbiBhdXRvbWF0aW9uIHRhc2tzLgoKIyMjIGFzc2V0cy8KQWRkIHRlbXBsYXRlcywgYm9pbGVycGxhdGUsIG9yIGV4YW1wbGUgcHJvamVjdHMgaGVyZS4KCiMjIE5vdGVzCgotIFRoaXMgc2tpbGwgd2FzIGF1dG9tYXRpY2FsbHkgZ2VuZXJhdGVkIGZyb20gb2ZmaWNpYWwgZG9jdW1lbnRhdGlvbgotIFJlZmVyZW5jZSBmaWxlcyBwcmVzZXJ2ZSB0aGUgc3RydWN0dXJlIGFuZCBleGFtcGxlcyBmcm9tIHNvdXJjZSBkb2NzCi0gQ29kZSBleGFtcGxlcyBpbmNsdWRlIGxhbmd1YWdlIGRldGVjdGlvbiBmb3IgYmV0dGVyIHN5bnRheCBoaWdobGlnaHRpbmcKLSBRdWljayByZWZlcmVuY2UgcGF0dGVybnMgYXJlIGV4dHJhY3RlZCBmcm9tIGNvbW1vbiB1c2FnZSBleGFtcGxlcyBpbiB0aGUgZG9jcwoKIyMgVXBkYXRpbmcKClRvIHJlZnJlc2ggdGhpcyBza2lsbCB3aXRoIHVwZGF0ZWQgZG9jdW1lbnRhdGlvbjoKMS4gUmUtcnVuIHRoZSBzY3JhcGVyIHdpdGggdGhlIHNhbWUgY29uZmlndXJhdGlvbgoyLiBUaGUgc2tpbGwgd2lsbCBiZSByZWJ1aWx0IHdpdGggdGhlIGxhdGVzdCBpbmZvcm1hdGlvbgoKCg==
+---
+name: axolotl
+description: Expert guidance for fine-tuning LLMs with Axolotl - YAML configs, 100+ models, LoRA/QLoRA, DPO/KTO/ORPO/GRPO, multimodal support
+version: 1.0.0
+author: Orchestra Research
+license: MIT
+dependencies: [axolotl, torch, transformers, datasets, peft, accelerate, deepspeed]
+metadata:
+  hermes:
+    tags: [Fine-Tuning, Axolotl, LLM, LoRA, QLoRA, DPO, KTO, ORPO, GRPO, YAML, HuggingFace, DeepSpeed, Multimodal]
+
+---
+
+# Axolotl Skill
+
+Comprehensive assistance with axolotl development, generated from official documentation.
+
+## When to Use This Skill
+
+This skill should be triggered when:
+- Working with axolotl
+- Asking about axolotl features or APIs
+- Implementing axolotl solutions
+- Debugging axolotl code
+- Learning axolotl best practices
+
+## Quick Reference
+
+### Common Patterns
+
+**Pattern 1:** To validate that acceptable data transfer speeds exist for your training job, running NCCL Tests can help pinpoint bottlenecks, for example:
+
+```
+./build/all_reduce_perf -b 8 -e 128M -f 2 -g 3
+```
+
+**Pattern 2:** Configure your model to use FSDP in the Axolotl yaml. For example:
+
+```
+fsdp_version: 2
+fsdp_config:
+  offload_params: true
+  state_dict_type: FULL_STATE_DICT
+  auto_wrap_policy: TRANSFORMER_BASED_WRAP
+  transformer_layer_cls_to_wrap: LlamaDecoderLayer
+  reshard_after_forward: true
+```
+
+**Pattern 3:** The context_parallel_size should be a divisor of the total number of GPUs. For example:
+
+```
+context_parallel_size
+```
+
+**Pattern 4:** For example: - With 8 GPUs and no sequence parallelism: 8 different batches processed per step - With 8 GPUs and context_parallel_size=4: Only 2 different batches processed per step (each split across 4 GPUs) - If your per-GPU micro_batch_size is 2, the global batch size decreases from 16 to 4
+
+```
+context_parallel_size=4
+```
+
+**Pattern 5:** Setting save_compressed: true in your configuration enables saving models in a compressed format, which: - Reduces disk space usage by approximately 40% - Maintains compatibility with vLLM for accelerated inference - Maintains compatibility with llmcompressor for further optimization (example: quantization)
+
+```
+save_compressed: true
+```
+
+**Pattern 6:** Note It is not necessary to place your integration in the integrations folder. It can be in any location, so long as it’s installed in a package in your python env. See this repo for an example: https://github.com/axolotl-ai-cloud/diff-transformer
+
+```
+integrations
+```
+
+**Pattern 7:** Handle both single-example and batched data. - single example: sample[‘input_ids’] is a list[int] - batched data: sample[‘input_ids’] is a list[list[int]]
+
+```
+utils.trainer.drop_long_seq(sample, sequence_len=2048, min_sequence_len=2)
+```
+
+### Example Code Patterns
+
+**Example 1** (python):
+```python
+cli.cloud.modal_.ModalCloud(config, app=None)
+```
+
+**Example 2** (python):
+```python
+cli.cloud.modal_.run_cmd(cmd, run_folder, volumes=None)
+```
+
+**Example 3** (python):
+```python
+core.trainers.base.AxolotlTrainer(
+    *_args,
+    bench_data_collator=None,
+    eval_data_collator=None,
+    dataset_tags=None,
+    **kwargs,
+)
+```
+
+**Example 4** (python):
+```python
+core.trainers.base.AxolotlTrainer.log(logs, start_time=None)
+```
+
+**Example 5** (python):
+```python
+prompt_strategies.input_output.RawInputOutputPrompter()
+```
+
+## Reference Files
+
+This skill includes comprehensive documentation in `references/`:
+
+- **api.md** - Api documentation
+- **dataset-formats.md** - Dataset-Formats documentation
+- **other.md** - Other documentation
+
+Use `view` to read specific reference files when detailed information is needed.
+
+## Working with This Skill
+
+### For Beginners
+Start with the getting_started or tutorials reference files for foundational concepts.
+
+### For Specific Features
+Use the appropriate category reference file (api, guides, etc.) for detailed information.
+
+### For Code Examples
+The quick reference section above contains common patterns extracted from the official docs.
+
+## Resources
+
+### references/
+Organized documentation extracted from official sources. These files contain:
+- Detailed explanations
+- Code examples with language annotations
+- Links to original documentation
+- Table of contents for quick navigation
+
+### scripts/
+Add helper scripts here for common automation tasks.
+
+### assets/
+Add templates, boilerplate, or example projects here.
+
+## Notes
+
+- This skill was automatically generated from official documentation
+- Reference files preserve the structure and examples from source docs
+- Code examples include language detection for better syntax highlighting
+- Quick reference patterns are extracted from common usage examples in the docs
+
+## Updating
+
+To refresh this skill with updated documentation:
+1. Re-run the scraper with the same configuration
+2. The skill will be rebuilt with the latest information
+
+

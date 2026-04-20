@@ -1,1 +1,207 @@
-IyBEZXNpZ24gU3lzdGVtOiBTcGFjZVgKCgo+ICoqSGVybWVzIEFnZW50IOKAlCBJbXBsZW1lbnRhdGlvbiBOb3RlcyoqCj4KPiBUaGUgb3JpZ2luYWwgc2l0ZSB1c2VzIHByb3ByaWV0YXJ5IGZvbnRzLiBGb3Igc2VsZi1jb250YWluZWQgSFRNTCBvdXRwdXQsIHVzZSB0aGVzZSBDRE4gc3Vic3RpdHV0ZXM6Cj4gLSAqKlByaW1hcnk6KiogYEludGVyYCB8ICoqTW9ubzoqKiBgc3lzdGVtIG1vbm9zcGFjZSBzdGFja2AKPiAtICoqRm9udCBzdGFjayAoQ1NTKToqKiBgZm9udC1mYW1pbHk6ICdJbnRlcicsIHN5c3RlbS11aSwgLWFwcGxlLXN5c3RlbSwgJ1NlZ29lIFVJJywgUm9ib3RvLCBzYW5zLXNlcmlmO2AKPiAtICoqTW9ubyBzdGFjayAoQ1NTKToqKiBgZm9udC1mYW1pbHk6IHVpLW1vbm9zcGFjZSwgU0ZNb25vLVJlZ3VsYXIsIE1lbmxvLCBNb25hY28sIENvbnNvbGFzLCAnTGliZXJhdGlvbiBNb25vJywgJ0NvdXJpZXIgTmV3JywgbW9ub3NwYWNlO2AKPiBgYGBodG1sCj4gPGxpbmsgaHJlZj0iaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3MyP2ZhbWlseT1JbnRlcjp3Z2h0QDMwMDs0MDA7NTAwOzYwMDs3MDAmZGlzcGxheT1zd2FwIiByZWw9InN0eWxlc2hlZXQiPgo+IGBgYAo+IFVzZSBgd3JpdGVfZmlsZWAgdG8gY3JlYXRlIEhUTUwsIHNlcnZlIHZpYSBgZ2VuZXJhdGl2ZS13aWRnZXRzYCBza2lsbCAoY2xvdWRmbGFyZWQgdHVubmVsKS4KPiBWZXJpZnkgdmlzdWFsIGFjY3VyYWN5IHdpdGggYGJyb3dzZXJfdmlzaW9uYCBhZnRlciBnZW5lcmF0aW5nLgoKIyMgMS4gVmlzdWFsIFRoZW1lICYgQXRtb3NwaGVyZQoKU3BhY2VYJ3Mgd2Vic2l0ZSBpcyBhIGZ1bGwtc2NyZWVuIGNpbmVtYXRpYyBleHBlcmllbmNlIHRoYXQgdHJlYXRzIGFlcm9zcGFjZSBlbmdpbmVlcmluZyBsaWtlIGEgZmlsbSDigJQgZXZlcnkgc2VjdGlvbiBpcyBhIHNjZW5lLCBldmVyeSBwaG90b2dyYXBoIGlzIGEgZnJhbWUsIGFuZCB0aGUgaW50ZXJmYWNlIGRpc2FwcGVhcnMgZW50aXJlbHkgYmVoaW5kIHRoZSBpbWFnZXJ5LiBUaGUgZGVzaWduIGlzIHB1cmUgYmxhY2sgKGAjMDAwMDAwYCkgd2l0aCBwaG90b2dyYXBoeSBvZiByb2NrZXRzLCBzcGFjZSwgYW5kIHBsYW5ldHMgb2NjdXB5aW5nIDEwMCUgb2YgdGhlIHZpZXdwb3J0LiBUZXh0IG92ZXJsYXlzIHNpdCBkaXJlY3RseSBvbiB0aGVzZSBwaG90b2dyYXBocyB3aXRoIG5vIGJhY2tncm91bmQgcGFuZWxzLCBjYXJkcywgb3IgY29udGFpbmVycyDigJQganVzdCB0eXBlIG9uIGltYWdlLCBib2xkIGFuZCB1bmFwb2xvZ2V0aWMuCgpUaGUgdHlwb2dyYXBoeSBzeXN0ZW0gdXNlcyBELURJTiwgYW4gaW5kdXN0cmlhbCBnZW9tZXRyaWMgdHlwZWZhY2Ugd2l0aCBESU4gaGVyaXRhZ2UgKHRoZSBHZXJtYW4gaW5kdXN0cmlhbCBzdGFuZGFyZCkuIFRoZSBkZWZpbmluZyBjaGFyYWN0ZXJpc3RpYyBpcyB0aGF0IHZpcnR1YWxseSBBTEwgdGV4dCBpcyB1cHBlcmNhc2Ugd2l0aCBwb3NpdGl2ZSBsZXR0ZXItc3BhY2luZyAoMC45NnB44oCTMS4xN3B4KSwgY3JlYXRpbmcgYSBtaWxpdGFyeS9hZXJvc3BhY2UgbGFiZWxpbmcgc3lzdGVtIHdoZXJlIGV2ZXJ5IHdvcmQgZmVlbHMgc3RlbmNpbGVkIG9udG8gYSBzcGFjZWNyYWZ0IGh1bGwuIEQtRElOLUJvbGQgYXQgNDhweCB3aXRoIHVwcGVyY2FzZSBhbmQgMC45NnB4IHRyYWNraW5nIGZvciB0aGUgaGVybyBjcmVhdGVzIGhlYWRsaW5lcyB0aGF0IGZlZWwgbGlrZSBtaXNzaW9uIGJyaWVmaW5nIHRpdGxlcy4gRXZlbiBib2R5IHRleHQgYXQgMTZweCBtYWludGFpbnMgdGhlIHVwcGVyY2FzZS90cmFja2VkIHRyZWF0bWVudCBhdCBzbWFsbGVyIHNjYWxlcy4KCldoYXQgbWFrZXMgU3BhY2VYIGRpc3RpbmN0aXZlIGlzIGl0cyByYWRpY2FsIG1pbmltYWxpc206IG5vIHNoYWRvd3MsIG5vIGJvcmRlcnMgKGV4Y2VwdCBvbmUgZ2hvc3QgYnV0dG9uIGJvcmRlciBhdCBgcmdiYSgyNDAsMjQwLDI1MCwwLjM1KWApLCBubyBjb2xvciAob25seSBibGFjayBhbmQgYSBzcGVjdHJhbCBuZWFyLXdoaXRlIGAjZjBmMGZhYCksIG5vIGNhcmRzLCBubyBncmlkcy4gVGhlIG9ubHkgdmlzdWFsIGVsZW1lbnQgaXMgcGhvdG9ncmFwaHkgKyB0ZXh0LiBUaGUgZ2hvc3QgYnV0dG9uIHdpdGggYHJnYmEoMjQwLDI0MCwyNTAsMC4xKWAgYmFja2dyb3VuZCBhbmQgMzJweCByYWRpdXMgaXMgdGhlIHNvbGUgaW50ZXJhY3RpdmUgZWxlbWVudCDigJQgYmFyZWx5IHZpc2libGUsIGZsb2F0aW5nIG92ZXIgdGhlIGltYWdlcnkgbGlrZSBhIGhlYWRzLXVwIGRpc3BsYXkuIFRoaXMgaXNuJ3QgYSBkZXNpZ24gc3lzdGVtIGluIHRoZSB0cmFkaXRpb25hbCBzZW5zZSDigJQgaXQncyBhIHBob3RvZ3JhcGhpYyBleGhpYml0aW9uIHdpdGggYSB0eXBlIHN5c3RlbSBhbmQgYSBzaW5nbGUgYnV0dG9uLgoKKipLZXkgQ2hhcmFjdGVyaXN0aWNzOioqCi0gUHVyZSBibGFjayBjYW52YXMgd2l0aCBmdWxsLXZpZXdwb3J0IGNpbmVtYXRpYyBwaG90b2dyYXBoeSDigJQgdGhlIGludGVyZmFjZSBpcyBpbnZpc2libGUKLSBELURJTiAvIEQtRElOLUJvbGQg4oCUIGluZHVzdHJpYWwgRElOLWhlcml0YWdlIHR5cGVmYWNlCi0gVW5pdmVyc2FsIHVwcGVyY2FzZSArIHBvc2l0aXZlIGxldHRlci1zcGFjaW5nICgwLjk2cHjigJMxLjE3cHgpIOKAlCBhZXJvc3BhY2Ugc3RlbmNpbCBhZXN0aGV0aWMKLSBOZWFyLXdoaXRlIHNwZWN0cmFsIHRleHQgKGAjZjBmMGZhYCkg4oCUIG5vdCBwdXJlIHdoaXRlLCBhIHNsaWdodCBibHVlLXZpb2xldCB0aW50Ci0gWmVybyBzaGFkb3dzLCB6ZXJvIGNhcmRzLCB6ZXJvIGNvbnRhaW5lcnMg4oCUIHRleHQgb24gaW1hZ2Ugb25seQotIFNpbmdsZSBnaG9zdCBidXR0b246IGByZ2JhKDI0MCwyNDAsMjUwLDAuMSlgIGJhY2tncm91bmQgd2l0aCBzcGVjdHJhbCBib3JkZXIKLSBGdWxsLXZpZXdwb3J0IHNlY3Rpb25zIOKAlCBlYWNoIHNlY3Rpb24gaXMgYSBjaW5lbWF0aWMgInNjZW5lIgotIE5vIGRlY29yYXRpdmUgZWxlbWVudHMg4oCUIGV2ZXJ5IHBpeGVsIHNlcnZlcyB0aGUgcGhvdG9ncmFwaHkKCiMjIDIuIENvbG9yIFBhbGV0dGUgJiBSb2xlcwoKIyMjIFByaW1hcnkKLSAqKlNwYWNlIEJsYWNrKiogKGAjMDAwMDAwYCk6IFBhZ2UgYmFja2dyb3VuZCwgdGhlIHZvaWQgb2Ygc3BhY2Ug4oCUIGF0IDUwJSBvcGFjaXR5IGZvciBvdmVybGF5IGdyYWRpZW50Ci0gKipTcGVjdHJhbCBXaGl0ZSoqIChgI2YwZjBmYWApOiBUZXh0IGNvbG9yIOKAlCBub3QgcHVyZSB3aGl0ZSwgYSBzbGlnaHQgYmx1ZS12aW9sZXQgdGludCB0aGF0IG1pbWljcyBzdGFybGlnaHQKCiMjIyBJbnRlcmFjdGl2ZQotICoqR2hvc3QgU3VyZmFjZSoqIChgcmdiYSgyNDAsIDI0MCwgMjUwLCAwLjEpYCk6IEJ1dHRvbiBiYWNrZ3JvdW5kIOKAlCBuZWFybHkgaW52aXNpYmxlLCAxMCUgb3BhY2l0eQotICoqR2hvc3QgQm9yZGVyKiogKGByZ2JhKDI0MCwgMjQwLCAyNTAsIDAuMzUpYCk6IEJ1dHRvbiBib3JkZXIg4oCUIHNwZWN0cmFsLCAzNSUgb3BhY2l0eQotICoqSG92ZXIgV2hpdGUqKiAoYHZhcigtLXdoaXRlLTEwMClgKTogTGluayBob3ZlciBzdGF0ZSDigJQgZnVsbCBzcGVjdHJhbCB3aGl0ZQoKIyMjIEdyYWRpZW50Ci0gKipEYXJrIE92ZXJsYXkqKiAoYHJnYmEoMCwgMCwgMCwgMC41KWApOiBHcmFkaWVudCBvdmVybGF5IG9uIHBob3RvZ3JhcGhzIHRvIGVuc3VyZSB0ZXh0IGxlZ2liaWxpdHkKCiMjIDMuIFR5cG9ncmFwaHkgUnVsZXMKCiMjIyBGb250IEZhbWlsaWVzCi0gKipEaXNwbGF5Kio6IGBELURJTi1Cb2xkYCDigJQgYm9sZCBpbmR1c3RyaWFsIGdlb21ldHJpYwotICoqQm9keSAvIFVJKio6IGBELURJTmAsIGZhbGxiYWNrczogYEFyaWFsLCBWZXJkYW5hYAoKIyMjIEhpZXJhcmNoeQoKfCBSb2xlIHwgRm9udCB8IFNpemUgfCBXZWlnaHQgfCBMaW5lIEhlaWdodCB8IExldHRlciBTcGFjaW5nIHwgTm90ZXMgfAp8LS0tLS0tfC0tLS0tLXwtLS0tLS18LS0tLS0tLS18LS0tLS0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tLS0tfC0tLS0tLS18CnwgRGlzcGxheSBIZXJvIHwgRC1ESU4tQm9sZCB8IDQ4cHggKDMuMDByZW0pIHwgNzAwIHwgMS4wMCAodGlnaHQpIHwgMC45NnB4IHwgYHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2VgIHwKfCBCb2R5IHwgRC1ESU4gfCAxNnB4ICgxLjAwcmVtKSB8IDQwMCB8IDEuNTDigJMxLjcwIHwgbm9ybWFsIHwgU3RhbmRhcmQgcmVhZGluZyB0ZXh0IHwKfCBOYXYgTGluayBCb2xkIHwgRC1ESU4gfCAxM3B4ICgwLjgxcmVtKSB8IDcwMCB8IDAuOTQgKHRpZ2h0KSB8IDEuMTdweCB8IGB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlYCB8CnwgTmF2IExpbmsgfCBELURJTiB8IDEycHggKDAuNzVyZW0pIHwgNDAwIHwgMi4wMCAocmVsYXhlZCkgfCBub3JtYWwgfCBgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZWAgfAp8IENhcHRpb24gQm9sZCB8IEQtRElOIHwgMTNweCAoMC44MXJlbSkgfCA3MDAgfCAwLjk0ICh0aWdodCkgfCAxLjE3cHggfCBgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZWAgfAp8IENhcHRpb24gfCBELURJTiB8IDEycHggKDAuNzVyZW0pIHwgNDAwIHwgMS4wMCAodGlnaHQpIHwgbm9ybWFsIHwgYHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2VgIHwKfCBNaWNybyB8IEQtRElOIHwgMTBweCAoMC42M3JlbSkgfCA0MDAgfCAwLjk0ICh0aWdodCkgfCAxcHggfCBgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZWAgfAoKIyMjIFByaW5jaXBsZXMKLSAqKlVuaXZlcnNhbCB1cHBlcmNhc2UqKjogTmVhcmx5IGV2ZXJ5IHRleHQgZWxlbWVudCB1c2VzIGB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlYC4gVGhpcyBjcmVhdGVzIGEgc3lzdGVtYXRpYyBtaWxpdGFyeS9hZXJvc3BhY2Ugdm9pY2Ugd2hlcmUgYWxsIGNvbW11bmljYXRpb24gZmVlbHMgbGlrZSBvZmZpY2lhbCBkb2N1bWVudGF0aW9uLgotICoqUG9zaXRpdmUgbGV0dGVyLXNwYWNpbmcgYXMgaWRlbnRpdHkqKjogMC45NnB4IG9uIGRpc3BsYXksIDEuMTdweCBvbiBuYXYg4oCUIHRoZSB3aWRlIHRyYWNraW5nIGNyZWF0ZXMgdGhlIHN0ZW5jaWxlZCwgaW5kdXN0cmlhbCBmZWVsIHRoYXQgY29ubmVjdHMgdG8gRElOJ3MgaGVyaXRhZ2UgYXMgYSBHZXJtYW4gZW5naW5lZXJpbmcgc3RhbmRhcmQuCi0gKipUd28gd2VpZ2h0cywgc3RyaWN0IGhpZXJhcmNoeSoqOiBELURJTi1Cb2xkICg3MDApIGZvciBoZWFkbGluZXMgYW5kIG5hdiBlbXBoYXNpcywgRC1ESU4gKDQwMCkgZm9yIGJvZHkuIE5vIG1lZGl1bSBvciBzZW1pYm9sZCB3ZWlnaHRzIGV4aXN0IGluIHRoZSBzeXN0ZW0uCi0gKipUaWdodCBsaW5lLWhlaWdodHMqKjogMC45NOKAkzEuMDAgYWNyb3NzIG1vc3QgdGV4dCDigJQgY29tcHJlc3NlZCwgZWZmaWNpZW50LCBtaXNzaW9uLWNyaXRpY2FsIGNvbW11bmljYXRpb24uCgojIyA0LiBDb21wb25lbnQgU3R5bGluZ3MKCiMjIyBCdXR0b25zCgoqKkdob3N0IEJ1dHRvbioqCi0gQmFja2dyb3VuZDogYHJnYmEoMjQwLCAyNDAsIDI1MCwgMC4xKWAgKGJhcmVseSB2aXNpYmxlKQotIFRleHQ6IFNwZWN0cmFsIFdoaXRlIChgI2YwZjBmYWApCi0gUGFkZGluZzogMThweAotIFJhZGl1czogMzJweAotIEJvcmRlcjogYDFweCBzb2xpZCByZ2JhKDI0MCwgMjQwLCAyNTAsIDAuMzUpYAotIEhvdmVyOiBiYWNrZ3JvdW5kIGJyaWdodGVucywgdGV4dCB0byBgdmFyKC0td2hpdGUtMTAwKWAKLSBVc2U6IFRoZSBvbmx5IGJ1dHRvbiB2YXJpYW50IOKAlCAiTEVBUk4gTU9SRSIgQ1RBcyBvbiBwaG90b2dyYXBoeQoKIyMjIENhcmRzICYgQ29udGFpbmVycwotICoqTm9uZS4qKiBTcGFjZVggZG9lcyBub3QgdXNlIGNhcmRzLCBwYW5lbHMsIG9yIGNvbnRhaW5lcnMuIEFsbCBjb250ZW50IGlzIHRleHQgZGlyZWN0bHkgb24gZnVsbC12aWV3cG9ydCBwaG90b2dyYXBocy4gVGhlIGFic2VuY2Ugb2YgY29udGFpbmVycyBJUyB0aGUgZGVzaWduLgoKIyMjIElucHV0cyAmIEZvcm1zCi0gTm90IHByZXNlbnQgb24gdGhlIGhvbWVwYWdlLiBUaGUgc2l0ZSBpcyBwdXJlbHkgcHJlc2VudGF0aW9uYWwuCgojIyMgTmF2aWdhdGlvbgotIFRyYW5zcGFyZW50IG92ZXJsYXkgbmF2IG9uIHBob3RvZ3JhcGh5Ci0gRC1ESU4gMTNweCB3ZWlnaHQgNzAwLCB1cHBlcmNhc2UsIDEuMTdweCB0cmFja2luZwotIFNwZWN0cmFsIHdoaXRlIHRleHQgb24gZGFyayBpbWFnZXJ5Ci0gTG9nbzogU3BhY2VYIHdvcmRtYXJrIGF0IDE0N3gxOXB4Ci0gTW9iaWxlOiBoYW1idXJnZXIgY29sbGFwc2UKCiMjIyBJbWFnZSBUcmVhdG1lbnQKLSBGdWxsLXZpZXdwb3J0ICgxMDB2aCkgcGhvdG9ncmFwaHkgc2VjdGlvbnMKLSBQcm9mZXNzaW9uYWwgYWVyb3NwYWNlIHBob3RvZ3JhcGh5OiByb2NrZXRzLCBNYXJzLCBzcGFjZQotIERhcmsgZ3JhZGllbnQgb3ZlcmxheXMgKGByZ2JhKDAsMCwwLDAuNSlgKSBmb3IgdGV4dCBsZWdpYmlsaXR5Ci0gRWFjaCBzZWN0aW9uID0gb25lIGZ1bGwtc2NyZWVuIHBob3RvZ3JhcGggd2l0aCB0ZXh0IG92ZXJsYXkKLSBObyBib3JkZXIgcmFkaXVzLCBubyBmcmFtZXMg4oCUIGVkZ2UtdG8tZWRnZSBpbWFnZXJ5CgojIyA1LiBMYXlvdXQgUHJpbmNpcGxlcwoKIyMjIFNwYWNpbmcgU3lzdGVtCi0gQmFzZSB1bml0OiA4cHgKLSBTY2FsZTogM3B4LCA1cHgsIDEycHgsIDE1cHgsIDE4cHgsIDIwcHgsIDI0cHgsIDMwcHgKLSBNaW5pbWFsIHNjYWxlIOKAlCBzcGFjaW5nIGlzIG5vdCB0aGUgb3JnYW5pemluZyBwcmluY2lwbGU7IHBob3RvZ3JhcGh5IGlzCgojIyMgR3JpZCAmIENvbnRhaW5lcgotIE5vIHRyYWRpdGlvbmFsIGdyaWQg4oCUIGVhY2ggc2VjdGlvbiBpcyBhIGZ1bGwtdmlld3BvcnQgY2luZW1hdGljIGZyYW1lCi0gVGV4dCBpcyBwb3NpdGlvbmVkIGFic29sdXRlbHkgb3Igd2l0aCBnZW5lcm91cyBwYWRkaW5nIG92ZXIgaW1hZ2VyeQotIExlZnQtYWxpZ25lZCB0ZXh0IGJsb2NrcyBvbiBwaG90b2dyYXBoeSBiYWNrZ3JvdW5kcwotIE5vIG1heC13aWR0aCBjb250YWluZXIg4oCUIGNvbnRlbnQgYmxlZWRzIHRvIHZpZXdwb3J0IGVkZ2VzCgojIyMgV2hpdGVzcGFjZSBQaGlsb3NvcGh5Ci0gKipQaG90b2dyYXBoeSBJUyB0aGUgd2hpdGVzcGFjZSoqOiBFbXB0eSBzcGFjZSBpbiB0aGUgZGVzaWduIGlzIG5ldmVyIGVtcHR5IOKAlCBpdCdzIGZpbGxlZCB3aXRoIHRoZSBkYXJrIGV4cGFuc2Ugb2Ygc3BhY2UsIHRoZSBjdXJ2ZSBvZiBhIHBsYW5ldCwgb3IgdGhlIGZsYW1lIG9mIGEgcm9ja2V0IGVuZ2luZS4gVHJhZGl0aW9uYWwgd2hpdGVzcGFjZSBjb25jZXB0cyBkb24ndCBhcHBseS4KLSAqKlZlcnRpY2FsIHBhY2luZyB0aHJvdWdoIHZpZXdwb3J0Kio6IEVhY2ggc2VjdGlvbiBpcyBleGFjdGx5IG9uZSB2aWV3cG9ydCB0YWxsLCBjcmVhdGluZyBhIHJoeXRobWljIHNjcm9sbCB3aGVyZSBlYWNoICJwYWdlIiByZXZlYWxzIGEgbmV3IHNjZW5lLgoKIyMjIEJvcmRlciBSYWRpdXMgU2NhbGUKLSBTaGFycCAoNHB4KTogU21hbGwgZGl2aWRlcnMsIHV0aWxpdHkgZWxlbWVudHMKLSBCdXR0b24gKDMycHgpOiBHaG9zdCBidXR0b25zIOKAlCB0aGUgb25seSByb3VuZGVkIGVsZW1lbnQKCiMjIDYuIERlcHRoICYgRWxldmF0aW9uCgp8IExldmVsIHwgVHJlYXRtZW50IHwgVXNlIHwKfC0tLS0tLS18LS0tLS0tLS0tLS18LS0tLS18CnwgUGhvdG9ncmFwaHkgKExldmVsIDApIHwgRnVsbC12aWV3cG9ydCBpbWFnZXJ5IHwgQmFja2dyb3VuZCBsYXllciDigJQgYWx3YXlzIHByZXNlbnQgfAp8IE92ZXJsYXkgKExldmVsIDEpIHwgYHJnYmEoMCwgMCwgMCwgMC41KWAgZ3JhZGllbnQgfCBUZXh0IGxlZ2liaWxpdHkgbGF5ZXIgb3ZlciBwaG90b2dyYXBoeSB8CnwgVGV4dCAoTGV2ZWwgMikgfCBTcGVjdHJhbCB3aGl0ZSB0ZXh0LCBubyBzaGFkb3cgfCBDb250ZW50IGxheWVyIOKAlCB0ZXh0IGZsb2F0cyBkaXJlY3RseSBvbiBpbWFnZSB8CnwgR2hvc3QgKExldmVsIDMpIHwgYHJnYmEoMjQwLCAyNDAsIDI1MCwgMC4xKWAgc3VyZmFjZSB8IEJhcmVseS12aXNpYmxlIGludGVyYWN0aXZlIGxheWVyIHwKCioqU2hhZG93IFBoaWxvc29waHkqKjogU3BhY2VYIHVzZXMgWkVSTyBzaGFkb3dzLiBJbiBhIGRlc2lnbiBidWlsdCBlbnRpcmVseSBvbiBwaG90b2dyYXBoeSwgc2hhZG93cyBhcmUgbWVhbmluZ2xlc3Mg4oCUIGV2ZXJ5IHN1cmZhY2UgaXMgYWxyZWFkeSBhIHBob3RvZ3JhcGggd2l0aCBuYXR1cmFsIGxpZ2h0aW5nLiBEZXB0aCBjb21lcyBmcm9tIHRoZSBwaG90b2dyYXBoaWMgY29udGVudCBpdHNlbGY6IHRoZSByZWNlZGluZyBjdXJ2YXR1cmUgb2YgRWFydGgsIHRoZSBkaW1pbmlzaGluZyB0cmFpbCBvZiBhIHJvY2tldCwgdGhlIGF0bW9zcGhlcmljIGhhemUgYXJvdW5kIE1hcnMuCgojIyA3LiBEbydzIGFuZCBEb24ndHMKCiMjIyBEbwotIFVzZSBmdWxsLXZpZXdwb3J0IHBob3RvZ3JhcGh5IGFzIHRoZSBwcmltYXJ5IGRlc2lnbiBlbGVtZW50IOKAlCBldmVyeSBzZWN0aW9uIGlzIGEgc2NlbmUKLSBBcHBseSB1cHBlcmNhc2UgKyBwb3NpdGl2ZSBsZXR0ZXItc3BhY2luZyB0byBBTEwgdGV4dCDigJQgdGhlIGFlcm9zcGFjZSBzdGVuY2lsIHZvaWNlCi0gVXNlIEQtRElOIGV4Y2x1c2l2ZWx5IOKAlCBubyBvdGhlciBmb250cyBleGlzdCBpbiB0aGUgc3lzdGVtCi0gS2VlcCB0aGUgY29sb3IgcGFsZXR0ZSB0byBibGFjayArIHNwZWN0cmFsIHdoaXRlIChgI2YwZjBmYWApIG9ubHkKLSBVc2UgZ2hvc3QgYnV0dG9ucyAoYHJnYmEoMjQwLDI0MCwyNTAsMC4xKWApIGFzIHRoZSBzb2xlIGludGVyYWN0aXZlIGVsZW1lbnQKLSBBcHBseSBkYXJrIGdyYWRpZW50IG92ZXJsYXlzIGZvciB0ZXh0IGxlZ2liaWxpdHkgb24gcGhvdG9ncmFwaHMKLSBMZXQgcGhvdG9ncmFwaHkgY2FycnkgdGhlIGVtb3Rpb25hbCB3ZWlnaHQg4oCUIHRoZSB0eXBlIHN5c3RlbSBpcyBmdW5jdGlvbmFsLCBub3QgZXhwcmVzc2l2ZQoKIyMjIERvbid0Ci0gRG9uJ3QgYWRkIGNhcmRzLCBwYW5lbHMsIG9yIGNvbnRhaW5lcnMg4oCUIHRleHQgc2l0cyBkaXJlY3RseSBvbiBwaG90b2dyYXBoeQotIERvbid0IHVzZSBzaGFkb3dzIOKAlCB0aGV5IGhhdmUgbm8gbWVhbmluZyBpbiBhIHBob3RvZ3JhcGhpYyBjb250ZXh0Ci0gRG9uJ3QgaW50cm9kdWNlIGNvbG9ycyDigJQgdGhlIHBhbGV0dGUgaXMgc3RyaWN0bHkgYWNocm9tYXRpYyB3aXRoIHNwZWN0cmFsIHRpbnQKLSBEb24ndCB1c2Ugc2VudGVuY2UgY2FzZSDigJQgZXZlcnl0aGluZyBpcyB1cHBlcmNhc2UKLSBEb24ndCB1c2UgbmVnYXRpdmUgbGV0dGVyLXNwYWNpbmcg4oCUIGFsbCB0cmFja2luZyBpcyBwb3NpdGl2ZSAoMC45NnB44oCTMS4xN3B4KQotIERvbid0IHJlZHVjZSBwaG90b2dyYXBoeSB0byB0aHVtYm5haWxzIOKAlCBldmVyeSBpbWFnZSBpcyBmdWxsLXZpZXdwb3J0Ci0gRG9uJ3QgYWRkIGRlY29yYXRpdmUgZWxlbWVudHMgKGljb25zLCBiYWRnZXMsIGRpdmlkZXJzKSDigJQgdGhlIGRlc2lnbiBpcyBwaG90b2dyYXBoeSArIHR5cGUgKyBvbmUgYnV0dG9uCgojIyA4LiBSZXNwb25zaXZlIEJlaGF2aW9yCgojIyMgQnJlYWtwb2ludHMKfCBOYW1lIHwgV2lkdGggfCBLZXkgQ2hhbmdlcyB8CnwtLS0tLS18LS0tLS0tLXwtLS0tLS0tLS0tLS0tfAp8IE1vYmlsZSB8IDw2MDBweCB8IFN0YWNrZWQsIHJlZHVjZWQgcGFkZGluZywgc21hbGxlciB0eXBlIHwKfCBUYWJsZXQgU21hbGwgfCA2MDDigJM5NjBweCB8IEFkanVzdGVkIGxheW91dCB8CnwgVGFibGV0IHwgOTYw4oCTMTI4MHB4IHwgU3RhbmRhcmQgc2NhbGluZyB8CnwgRGVza3RvcCB8IDEyODDigJMxMzUwcHggfCBGdWxsIGxheW91dCB8CnwgTGFyZ2UgRGVza3RvcCB8IDEzNTDigJMxNTAwcHggfCBFeHBhbmRlZCB8CnwgVWx0cmEtd2lkZSB8ID4xNTAwcHggfCBNYXhpbXVtIHZpZXdwb3J0IHwKCiMjIyBUb3VjaCBUYXJnZXRzCi0gR2hvc3QgYnV0dG9uczogMThweCBwYWRkaW5nIHByb3ZpZGVzIGFkZXF1YXRlIHRvdWNoIGFyZWEKLSBOYXZpZ2F0aW9uIGxpbmtzOiB1cHBlcmNhc2Ugd2l0aCBnZW5lcm91cyBsZXR0ZXItc3BhY2luZyBhaWRzIHJlYWRhYmlsaXR5CgojIyMgQ29sbGFwc2luZyBTdHJhdGVneQotIFBob3RvZ3JhcGh5OiBtYWludGFpbnMgZnVsbC12aWV3cG9ydCBhdCBhbGwgc2l6ZXMsIGNvbnRlbnQgcmVwb3NpdGlvbgotIEhlcm8gdGV4dDogNDhweCDihpIgc2NhbGVzIGRvd24gcHJvcG9ydGlvbmFsbHkKLSBOYXZpZ2F0aW9uOiBob3Jpem9udGFsIOKGkiBoYW1idXJnZXIKLSBUZXh0IGJsb2NrczogcmVwb3NpdGlvbiBidXQgbWFpbnRhaW4gb3ZlcmxheS1vbi1waG90b2dyYXBoeSBwYXR0ZXJuCi0gRnVsbC12aWV3cG9ydCBzZWN0aW9ucyBtYWludGFpbmVkIG9uIG1vYmlsZQoKIyMjIEltYWdlIEJlaGF2aW9yCi0gRWRnZS10by1lZGdlIHBob3RvZ3JhcGh5IGF0IGFsbCB2aWV3cG9ydCBzaXplcwotIEJhY2tncm91bmQtc2l6ZTogY292ZXIgd2l0aCBjZW50ZXIgZm9jdXMKLSBEYXJrIG92ZXJsYXkgZ3JhZGllbnRzIGFkYXB0IHRvIGNvbnRlbnQgcG9zaXRpb24KLSBObyBhcnQgZGlyZWN0aW9uIGNoYW5nZXMg4oCUIHNhbWUgcGhvdG9ncmFwaHMsIHJlc3BvbnNpdmUgcG9zaXRpb25pbmcKCiMjIDkuIEFnZW50IFByb21wdCBHdWlkZQoKIyMjIFF1aWNrIENvbG9yIFJlZmVyZW5jZQotIEJhY2tncm91bmQ6IFNwYWNlIEJsYWNrIChgIzAwMDAwMGApCi0gVGV4dDogU3BlY3RyYWwgV2hpdGUgKGAjZjBmMGZhYCkKLSBCdXR0b24gYmFja2dyb3VuZDogR2hvc3QgKGByZ2JhKDI0MCwgMjQwLCAyNTAsIDAuMSlgKQotIEJ1dHRvbiBib3JkZXI6IEdob3N0IEJvcmRlciAoYHJnYmEoMjQwLCAyNDAsIDI1MCwgMC4zNSlgKQotIE92ZXJsYXk6IGByZ2JhKDAsIDAsIDAsIDAuNSlgCgojIyMgRXhhbXBsZSBDb21wb25lbnQgUHJvbXB0cwotICJDcmVhdGUgYSBmdWxsLXZpZXdwb3J0IGhlcm86IGJhY2tncm91bmQtaW1hZ2UgY292ZXJpbmcgMTAwdmgsIGRhcmsgZ3JhZGllbnQgb3ZlcmxheSByZ2JhKDAsMCwwLDAuNSkuIEhlYWRsaW5lIGF0IDQ4cHggRC1ESU4tQm9sZCwgdXBwZXJjYXNlLCBsZXR0ZXItc3BhY2luZyAwLjk2cHgsIHNwZWN0cmFsIHdoaXRlICgjZjBmMGZhKSB0ZXh0LiBHaG9zdCBDVEEgYnV0dG9uOiByZ2JhKDI0MCwyNDAsMjUwLDAuMSkgYmcsIDFweCBzb2xpZCByZ2JhKDI0MCwyNDAsMjUwLDAuMzUpIGJvcmRlciwgMzJweCByYWRpdXMsIDE4cHggcGFkZGluZy4iCi0gIkRlc2lnbiBhIG5hdmlnYXRpb246IHRyYW5zcGFyZW50IG92ZXIgcGhvdG9ncmFwaHkuIEQtRElOIDEzcHggd2VpZ2h0IDcwMCwgdXBwZXJjYXNlLCBsZXR0ZXItc3BhY2luZyAxLjE3cHgsIHNwZWN0cmFsIHdoaXRlIHRleHQuIFNwYWNlWCB3b3JkbWFyayBsZWZ0LWFsaWduZWQuIgotICJCdWlsZCBhIGNvbnRlbnQgc2VjdGlvbjogZnVsbC12aWV3cG9ydCBoZWlnaHQsIGJhY2tncm91bmQgcGhvdG9ncmFwaHkgd2l0aCBkYXJrIG92ZXJsYXkuIExlZnQtYWxpZ25lZCB0ZXh0IGJsb2NrIHdpdGggNDhweCBELURJTi1Cb2xkIHVwcGVyY2FzZSBoZWFkaW5nLCAxNnB4IEQtRElOIGJvZHkgdGV4dCwgYW5kIGdob3N0IGJ1dHRvbiBiZWxvdy4iCi0gIkNyZWF0ZSBhIG1pY3JvIGxhYmVsOiBELURJTiAxMHB4LCB1cHBlcmNhc2UsIGxldHRlci1zcGFjaW5nIDFweCwgc3BlY3RyYWwgd2hpdGUsIGxpbmUtaGVpZ2h0IDAuOTQuIgoKIyMjIEl0ZXJhdGlvbiBHdWlkZQoxLiBTdGFydCB3aXRoIHBob3RvZ3JhcGh5IOKAlCB0aGUgaW1hZ2UgSVMgdGhlIGRlc2lnbgoyLiBBbGwgdGV4dCBpcyB1cHBlcmNhc2Ugd2l0aCBwb3NpdGl2ZSBsZXR0ZXItc3BhY2luZyDigJQgbm8gZXhjZXB0aW9ucwozLiBPbmx5IHR3byBjb2xvcnM6IGJsYWNrIGFuZCBzcGVjdHJhbCB3aGl0ZSAoI2YwZjBmYSkKNC4gR2hvc3QgYnV0dG9ucyBhcmUgdGhlIG9ubHkgaW50ZXJhY3RpdmUgZWxlbWVudCDigJQgdHJhbnNwYXJlbnQsIHNwZWN0cmFsLWJvcmRlcmVkCjUuIFplcm8gc2hhZG93cywgemVybyBjYXJkcywgemVybyBkZWNvcmF0aXZlIGVsZW1lbnRzCjYuIEV2ZXJ5IHNlY3Rpb24gaXMgZnVsbC12aWV3cG9ydCAoMTAwdmgpIOKAlCBjaW5lbWF0aWMgcGFjaW5nCg==
+# Design System: SpaceX
+
+
+> **Hermes Agent — Implementation Notes**
+>
+> The original site uses proprietary fonts. For self-contained HTML output, use these CDN substitutes:
+> - **Primary:** `Inter` | **Mono:** `system monospace stack`
+> - **Font stack (CSS):** `font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;`
+> - **Mono stack (CSS):** `font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;`
+> ```html
+> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+> ```
+> Use `write_file` to create HTML, serve via `generative-widgets` skill (cloudflared tunnel).
+> Verify visual accuracy with `browser_vision` after generating.
+
+## 1. Visual Theme & Atmosphere
+
+SpaceX's website is a full-screen cinematic experience that treats aerospace engineering like a film — every section is a scene, every photograph is a frame, and the interface disappears entirely behind the imagery. The design is pure black (`#000000`) with photography of rockets, space, and planets occupying 100% of the viewport. Text overlays sit directly on these photographs with no background panels, cards, or containers — just type on image, bold and unapologetic.
+
+The typography system uses D-DIN, an industrial geometric typeface with DIN heritage (the German industrial standard). The defining characteristic is that virtually ALL text is uppercase with positive letter-spacing (0.96px–1.17px), creating a military/aerospace labeling system where every word feels stenciled onto a spacecraft hull. D-DIN-Bold at 48px with uppercase and 0.96px tracking for the hero creates headlines that feel like mission briefing titles. Even body text at 16px maintains the uppercase/tracked treatment at smaller scales.
+
+What makes SpaceX distinctive is its radical minimalism: no shadows, no borders (except one ghost button border at `rgba(240,240,250,0.35)`), no color (only black and a spectral near-white `#f0f0fa`), no cards, no grids. The only visual element is photography + text. The ghost button with `rgba(240,240,250,0.1)` background and 32px radius is the sole interactive element — barely visible, floating over the imagery like a heads-up display. This isn't a design system in the traditional sense — it's a photographic exhibition with a type system and a single button.
+
+**Key Characteristics:**
+- Pure black canvas with full-viewport cinematic photography — the interface is invisible
+- D-DIN / D-DIN-Bold — industrial DIN-heritage typeface
+- Universal uppercase + positive letter-spacing (0.96px–1.17px) — aerospace stencil aesthetic
+- Near-white spectral text (`#f0f0fa`) — not pure white, a slight blue-violet tint
+- Zero shadows, zero cards, zero containers — text on image only
+- Single ghost button: `rgba(240,240,250,0.1)` background with spectral border
+- Full-viewport sections — each section is a cinematic "scene"
+- No decorative elements — every pixel serves the photography
+
+## 2. Color Palette & Roles
+
+### Primary
+- **Space Black** (`#000000`): Page background, the void of space — at 50% opacity for overlay gradient
+- **Spectral White** (`#f0f0fa`): Text color — not pure white, a slight blue-violet tint that mimics starlight
+
+### Interactive
+- **Ghost Surface** (`rgba(240, 240, 250, 0.1)`): Button background — nearly invisible, 10% opacity
+- **Ghost Border** (`rgba(240, 240, 250, 0.35)`): Button border — spectral, 35% opacity
+- **Hover White** (`var(--white-100)`): Link hover state — full spectral white
+
+### Gradient
+- **Dark Overlay** (`rgba(0, 0, 0, 0.5)`): Gradient overlay on photographs to ensure text legibility
+
+## 3. Typography Rules
+
+### Font Families
+- **Display**: `D-DIN-Bold` — bold industrial geometric
+- **Body / UI**: `D-DIN`, fallbacks: `Arial, Verdana`
+
+### Hierarchy
+
+| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
+|------|------|------|--------|-------------|----------------|-------|
+| Display Hero | D-DIN-Bold | 48px (3.00rem) | 700 | 1.00 (tight) | 0.96px | `text-transform: uppercase` |
+| Body | D-DIN | 16px (1.00rem) | 400 | 1.50–1.70 | normal | Standard reading text |
+| Nav Link Bold | D-DIN | 13px (0.81rem) | 700 | 0.94 (tight) | 1.17px | `text-transform: uppercase` |
+| Nav Link | D-DIN | 12px (0.75rem) | 400 | 2.00 (relaxed) | normal | `text-transform: uppercase` |
+| Caption Bold | D-DIN | 13px (0.81rem) | 700 | 0.94 (tight) | 1.17px | `text-transform: uppercase` |
+| Caption | D-DIN | 12px (0.75rem) | 400 | 1.00 (tight) | normal | `text-transform: uppercase` |
+| Micro | D-DIN | 10px (0.63rem) | 400 | 0.94 (tight) | 1px | `text-transform: uppercase` |
+
+### Principles
+- **Universal uppercase**: Nearly every text element uses `text-transform: uppercase`. This creates a systematic military/aerospace voice where all communication feels like official documentation.
+- **Positive letter-spacing as identity**: 0.96px on display, 1.17px on nav — the wide tracking creates the stenciled, industrial feel that connects to DIN's heritage as a German engineering standard.
+- **Two weights, strict hierarchy**: D-DIN-Bold (700) for headlines and nav emphasis, D-DIN (400) for body. No medium or semibold weights exist in the system.
+- **Tight line-heights**: 0.94–1.00 across most text — compressed, efficient, mission-critical communication.
+
+## 4. Component Stylings
+
+### Buttons
+
+**Ghost Button**
+- Background: `rgba(240, 240, 250, 0.1)` (barely visible)
+- Text: Spectral White (`#f0f0fa`)
+- Padding: 18px
+- Radius: 32px
+- Border: `1px solid rgba(240, 240, 250, 0.35)`
+- Hover: background brightens, text to `var(--white-100)`
+- Use: The only button variant — "LEARN MORE" CTAs on photography
+
+### Cards & Containers
+- **None.** SpaceX does not use cards, panels, or containers. All content is text directly on full-viewport photographs. The absence of containers IS the design.
+
+### Inputs & Forms
+- Not present on the homepage. The site is purely presentational.
+
+### Navigation
+- Transparent overlay nav on photography
+- D-DIN 13px weight 700, uppercase, 1.17px tracking
+- Spectral white text on dark imagery
+- Logo: SpaceX wordmark at 147x19px
+- Mobile: hamburger collapse
+
+### Image Treatment
+- Full-viewport (100vh) photography sections
+- Professional aerospace photography: rockets, Mars, space
+- Dark gradient overlays (`rgba(0,0,0,0.5)`) for text legibility
+- Each section = one full-screen photograph with text overlay
+- No border radius, no frames — edge-to-edge imagery
+
+## 5. Layout Principles
+
+### Spacing System
+- Base unit: 8px
+- Scale: 3px, 5px, 12px, 15px, 18px, 20px, 24px, 30px
+- Minimal scale — spacing is not the organizing principle; photography is
+
+### Grid & Container
+- No traditional grid — each section is a full-viewport cinematic frame
+- Text is positioned absolutely or with generous padding over imagery
+- Left-aligned text blocks on photography backgrounds
+- No max-width container — content bleeds to viewport edges
+
+### Whitespace Philosophy
+- **Photography IS the whitespace**: Empty space in the design is never empty — it's filled with the dark expanse of space, the curve of a planet, or the flame of a rocket engine. Traditional whitespace concepts don't apply.
+- **Vertical pacing through viewport**: Each section is exactly one viewport tall, creating a rhythmic scroll where each "page" reveals a new scene.
+
+### Border Radius Scale
+- Sharp (4px): Small dividers, utility elements
+- Button (32px): Ghost buttons — the only rounded element
+
+## 6. Depth & Elevation
+
+| Level | Treatment | Use |
+|-------|-----------|-----|
+| Photography (Level 0) | Full-viewport imagery | Background layer — always present |
+| Overlay (Level 1) | `rgba(0, 0, 0, 0.5)` gradient | Text legibility layer over photography |
+| Text (Level 2) | Spectral white text, no shadow | Content layer — text floats directly on image |
+| Ghost (Level 3) | `rgba(240, 240, 250, 0.1)` surface | Barely-visible interactive layer |
+
+**Shadow Philosophy**: SpaceX uses ZERO shadows. In a design built entirely on photography, shadows are meaningless — every surface is already a photograph with natural lighting. Depth comes from the photographic content itself: the receding curvature of Earth, the diminishing trail of a rocket, the atmospheric haze around Mars.
+
+## 7. Do's and Don'ts
+
+### Do
+- Use full-viewport photography as the primary design element — every section is a scene
+- Apply uppercase + positive letter-spacing to ALL text — the aerospace stencil voice
+- Use D-DIN exclusively — no other fonts exist in the system
+- Keep the color palette to black + spectral white (`#f0f0fa`) only
+- Use ghost buttons (`rgba(240,240,250,0.1)`) as the sole interactive element
+- Apply dark gradient overlays for text legibility on photographs
+- Let photography carry the emotional weight — the type system is functional, not expressive
+
+### Don't
+- Don't add cards, panels, or containers — text sits directly on photography
+- Don't use shadows — they have no meaning in a photographic context
+- Don't introduce colors — the palette is strictly achromatic with spectral tint
+- Don't use sentence case — everything is uppercase
+- Don't use negative letter-spacing — all tracking is positive (0.96px–1.17px)
+- Don't reduce photography to thumbnails — every image is full-viewport
+- Don't add decorative elements (icons, badges, dividers) — the design is photography + type + one button
+
+## 8. Responsive Behavior
+
+### Breakpoints
+| Name | Width | Key Changes |
+|------|-------|-------------|
+| Mobile | <600px | Stacked, reduced padding, smaller type |
+| Tablet Small | 600–960px | Adjusted layout |
+| Tablet | 960–1280px | Standard scaling |
+| Desktop | 1280–1350px | Full layout |
+| Large Desktop | 1350–1500px | Expanded |
+| Ultra-wide | >1500px | Maximum viewport |
+
+### Touch Targets
+- Ghost buttons: 18px padding provides adequate touch area
+- Navigation links: uppercase with generous letter-spacing aids readability
+
+### Collapsing Strategy
+- Photography: maintains full-viewport at all sizes, content reposition
+- Hero text: 48px → scales down proportionally
+- Navigation: horizontal → hamburger
+- Text blocks: reposition but maintain overlay-on-photography pattern
+- Full-viewport sections maintained on mobile
+
+### Image Behavior
+- Edge-to-edge photography at all viewport sizes
+- Background-size: cover with center focus
+- Dark overlay gradients adapt to content position
+- No art direction changes — same photographs, responsive positioning
+
+## 9. Agent Prompt Guide
+
+### Quick Color Reference
+- Background: Space Black (`#000000`)
+- Text: Spectral White (`#f0f0fa`)
+- Button background: Ghost (`rgba(240, 240, 250, 0.1)`)
+- Button border: Ghost Border (`rgba(240, 240, 250, 0.35)`)
+- Overlay: `rgba(0, 0, 0, 0.5)`
+
+### Example Component Prompts
+- "Create a full-viewport hero: background-image covering 100vh, dark gradient overlay rgba(0,0,0,0.5). Headline at 48px D-DIN-Bold, uppercase, letter-spacing 0.96px, spectral white (#f0f0fa) text. Ghost CTA button: rgba(240,240,250,0.1) bg, 1px solid rgba(240,240,250,0.35) border, 32px radius, 18px padding."
+- "Design a navigation: transparent over photography. D-DIN 13px weight 700, uppercase, letter-spacing 1.17px, spectral white text. SpaceX wordmark left-aligned."
+- "Build a content section: full-viewport height, background photography with dark overlay. Left-aligned text block with 48px D-DIN-Bold uppercase heading, 16px D-DIN body text, and ghost button below."
+- "Create a micro label: D-DIN 10px, uppercase, letter-spacing 1px, spectral white, line-height 0.94."
+
+### Iteration Guide
+1. Start with photography — the image IS the design
+2. All text is uppercase with positive letter-spacing — no exceptions
+3. Only two colors: black and spectral white (#f0f0fa)
+4. Ghost buttons are the only interactive element — transparent, spectral-bordered
+5. Zero shadows, zero cards, zero decorative elements
+6. Every section is full-viewport (100vh) — cinematic pacing

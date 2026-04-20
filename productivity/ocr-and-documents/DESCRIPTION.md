@@ -1,1 +1,3 @@
-LS0tCmRlc2NyaXB0aW9uOiBTa2lsbHMgZm9yIGV4dHJhY3RpbmcgdGV4dCBmcm9tIFBERnMsIHNjYW5uZWQgZG9jdW1lbnRzLCBpbWFnZXMsIGFuZCBvdGhlciBmaWxlIGZvcm1hdHMgdXNpbmcgT0NSIGFuZCBkb2N1bWVudCBwYXJzaW5nIHRvb2xzLgotLS0K
+---
+description: Skills for extracting text from PDFs, scanned documents, images, and other file formats using OCR and document parsing tools.
+---

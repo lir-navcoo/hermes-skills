@@ -1,1 +1,3 @@
-LS0tCmRlc2NyaXB0aW9uOiBTa2lsbHMgZm9yIG1vbml0b3JpbmcsIGFnZ3JlZ2F0aW5nLCBhbmQgcHJvY2Vzc2luZyBSU1MgZmVlZHMsIGJsb2dzLCBhbmQgd2ViIGNvbnRlbnQgc291cmNlcy4KLS0tCg==
+---
+description: Skills for monitoring, aggregating, and processing RSS feeds, blogs, and web content sources.
+---

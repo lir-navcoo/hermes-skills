@@ -1,1 +1,434 @@
-IyBDb25mZXJlbmNlIFBhcGVyIENoZWNrbGlzdHMKClRoaXMgcmVmZXJlbmNlIGRvY3VtZW50cyB0aGUgbWFuZGF0b3J5IGNoZWNrbGlzdCByZXF1aXJlbWVudHMgZm9yIG1ham9yIE1ML0FJIGNvbmZlcmVuY2VzLiBBbGwgbWFqb3IgdmVudWVzIG5vdyByZXF1aXJlIHBhcGVyIGNoZWNrbGlzdHPigJRtaXNzaW5nIHRoZW0gcmVzdWx0cyBpbiBkZXNrIHJlamVjdGlvbi4KCi0tLQoKIyMgQ29udGVudHMKCi0gW05ldXJJUFMgUGFwZXIgQ2hlY2tsaXN0XSgjbmV1cmlwcy1wYXBlci1jaGVja2xpc3QpCi0gW0lDTUwgUGFwZXIgQ2hlY2tsaXN0XSgjaWNtbC1wYXBlci1jaGVja2xpc3QpCi0gW0lDTFIgUmVxdWlyZW1lbnRzXSgjaWNsci1yZXF1aXJlbWVudHMpCi0gW0FDTCBSZXF1aXJlbWVudHNdKCNhY2wtcmVxdWlyZW1lbnRzKQotIFtBQUFJIFJlcXVpcmVtZW50c10oI2FhYWktcmVxdWlyZW1lbnRzKQotIFtDT0xNIFJlcXVpcmVtZW50c10oI2NvbG0tcmVxdWlyZW1lbnRzKQotIFtVbml2ZXJzYWwgUHJlLVN1Ym1pc3Npb24gQ2hlY2tsaXN0XSgjdW5pdmVyc2FsLXByZS1zdWJtaXNzaW9uLWNoZWNrbGlzdCkKCi0tLQoKIyMgTmV1cklQUyBQYXBlciBDaGVja2xpc3QKCiMjIyBNYW5kYXRvcnkgQ29tcG9uZW50cwoKQWxsIE5ldXJJUFMgc3VibWlzc2lvbnMgbXVzdCBpbmNsdWRlIGEgY29tcGxldGVkIHBhcGVyIGNoZWNrbGlzdC4gUGFwZXJzIGxhY2tpbmcgdGhpcyBlbGVtZW50IGZhY2UgKiphdXRvbWF0aWMgZGVzayByZWplY3Rpb24qKi4gVGhlIGNoZWNrbGlzdCBhcHBlYXJzIGFmdGVyIHJlZmVyZW5jZXMgYW5kIHN1cHBsZW1lbnRhbCBtYXRlcmlhbCwgb3V0c2lkZSB0aGUgcGFnZSBsaW1pdC4KCiMjIyAxNiBSZXF1aXJlZCBDaGVja2xpc3QgSXRlbXMKCiMjIyMgMS4gQ2xhaW1zIEFsaWdubWVudApBdXRob3JzIG11c3QgdmVyaWZ5IHRoYXQgYWJzdHJhY3QgYW5kIGludHJvZHVjdGlvbiBjbGFpbXMgbWF0Y2ggdGhlb3JldGljYWwgYW5kIGV4cGVyaW1lbnRhbCByZXN1bHRzLCB3aXRoIGNsZWFybHkgc3RhdGVkIGNvbnRyaWJ1dGlvbnMsIGFzc3VtcHRpb25zLCBhbmQgbGltaXRhdGlvbnMuCgoqKldoYXQgdG8gY2hlY2s6KioKLSBbIF0gQWJzdHJhY3QgY2xhaW1zIG1hdGNoIGFjdHVhbCByZXN1bHRzCi0gWyBdIEludHJvZHVjdGlvbiBkb2Vzbid0IG92ZXJjbGFpbQotIFsgXSBDb250cmlidXRpb25zIGFyZSBzcGVjaWZpYyBhbmQgZmFsc2lmaWFibGUKCiMjIyMgMi4gTGltaXRhdGlvbnMgRGlzY3Vzc2lvbgpQYXBlcnMgc2hvdWxkIGluY2x1ZGUgYSBkZWRpY2F0ZWQgIkxpbWl0YXRpb25zIiBzZWN0aW9uIGFkZHJlc3Npbmcgc3Ryb25nIGFzc3VtcHRpb25zLCByb2J1c3RuZXNzIHRvIHZpb2xhdGlvbnMsIHNjb3BlIGNvbnN0cmFpbnRzLCBhbmQgcGVyZm9ybWFuY2UtaW5mbHVlbmNpbmcgZmFjdG9ycy4KCioqV2hhdCB0byBpbmNsdWRlOioqCi0gWyBdIERlZGljYXRlZCBMaW1pdGF0aW9ucyBzZWN0aW9uCi0gWyBdIEhvbmVzdCBhc3Nlc3NtZW50IG9mIHNjb3BlCi0gWyBdIENvbmRpdGlvbnMgd2hlcmUgbWV0aG9kIG1heSBmYWlsCgojIyMjIDMuIFRoZW9yeSAmIFByb29mcwpUaGVvcmV0aWNhbCBjb250cmlidXRpb25zIHJlcXVpcmUgZnVsbCBhc3N1bXB0aW9uIHN0YXRlbWVudHMgYW5kIGNvbXBsZXRlIHByb29mcyAobWFpbiBwYXBlciBvciBhcHBlbmRpeCB3aXRoIHByb29mIHNrZXRjaGVzIGZvciBpbnR1aXRpb24pLgoKKipXaGF0IHRvIGNoZWNrOioqCi0gWyBdIEFsbCBhc3N1bXB0aW9ucyBzdGF0ZWQgZm9ybWFsbHkKLSBbIF0gQ29tcGxldGUgcHJvb2ZzIHByb3ZpZGVkIChtYWluIHRleHQgb3IgYXBwZW5kaXgpCi0gWyBdIFByb29mIHNrZXRjaGVzIGZvciBpbnR1aXRpb24gaW4gbWFpbiB0ZXh0CgojIyMjIDQuIFJlcHJvZHVjaWJpbGl0eQpBdXRob3JzIG11c3QgZGVzY3JpYmUgc3RlcHMgZW5zdXJpbmcgcmVzdWx0cyB2ZXJpZmljYXRpb24gdGhyb3VnaCBjb2RlIHJlbGVhc2UsIGRldGFpbGVkIGluc3RydWN0aW9ucywgbW9kZWwgYWNjZXNzLCBvciBjaGVja3BvaW50cyBhcHByb3ByaWF0ZSB0byB0aGVpciBjb250cmlidXRpb24gdHlwZS4KCioqV2hhdCB0byBwcm92aWRlOioqCi0gWyBdIENsZWFyIHJlcHJvZHVjaWJpbGl0eSBzdGF0ZW1lbnQKLSBbIF0gQ29kZSBhdmFpbGFiaWxpdHkgaW5mb3JtYXRpb24KLSBbIF0gTW9kZWwgY2hlY2twb2ludHMgaWYgYXBwbGljYWJsZQoKIyMjIyA1LiBEYXRhICYgQ29kZSBBY2Nlc3MKSW5zdHJ1Y3Rpb25zIGZvciByZXByb2R1Y2luZyBtYWluIGV4cGVyaW1lbnRhbCByZXN1bHRzIHNob3VsZCBiZSBwcm92aWRlZCAoc3VwcGxlbWVudGFsIG1hdGVyaWFsIG9yIFVSTHMpLCBpbmNsdWRpbmcgZXhhY3QgY29tbWFuZHMgYW5kIGVudmlyb25tZW50IHNwZWNpZmljYXRpb25zLgoKKipXaGF0IHRvIGluY2x1ZGU6KioKLSBbIF0gRXhhY3QgY29tbWFuZHMgdG8gcnVuIGV4cGVyaW1lbnRzCi0gWyBdIEVudmlyb25tZW50IHNwZWNpZmljYXRpb25zIChyZXF1aXJlbWVudHMudHh0LCBjb25kYSBlbnYpCi0gWyBdIERhdGEgYWNjZXNzIGluc3RydWN0aW9ucwoKIyMjIyA2LiBFeHBlcmltZW50YWwgRGV0YWlscwpQYXBlcnMgbXVzdCBzcGVjaWZ5IHRyYWluaW5nIGRldGFpbHM6IGRhdGEgc3BsaXRzLCBoeXBlcnBhcmFtZXRlcnMsIGFuZCBzZWxlY3Rpb24gbWV0aG9kcyBpbiB0aGUgbWFpbiBwYXBlciBvciBzdXBwbGVtZW50YXJ5IG1hdGVyaWFscy4KCioqV2hhdCB0byBkb2N1bWVudDoqKgotIFsgXSBUcmFpbi92YWwvdGVzdCBzcGxpdCBkZXRhaWxzCi0gWyBdIEFsbCBoeXBlcnBhcmFtZXRlcnMgdXNlZAotIFsgXSBIeXBlcnBhcmFtZXRlciBzZWxlY3Rpb24gbWV0aG9kCgojIyMjIDcuIFN0YXRpc3RpY2FsIFNpZ25pZmljYW5jZQpSZXN1bHRzIHJlcXVpcmUgZXJyb3IgYmFycywgY29uZmlkZW5jZSBpbnRlcnZhbHMsIG9yIHN0YXRpc3RpY2FsIHRlc3RzIHdpdGggY2xlYXJseSBzdGF0ZWQgY2FsY3VsYXRpb24gbWV0aG9kcyBhbmQgdW5kZXJseWluZyBhc3N1bXB0aW9ucy4KCioqV2hhdCB0byBpbmNsdWRlOioqCi0gWyBdIEVycm9yIGJhcnMgb3IgY29uZmlkZW5jZSBpbnRlcnZhbHMKLSBbIF0gTnVtYmVyIG9mIHJ1bnMvc2VlZHMKLSBbIF0gQ2FsY3VsYXRpb24gbWV0aG9kIChzdGQgZGV2IHZzIHN0ZCBlcnJvcikKCiMjIyMgOC4gQ29tcHV0ZSBSZXNvdXJjZXMKU3BlY2lmaWNhdGlvbnMgbmVlZGVkOiBjb21wdXRlIHdvcmtlciB0eXBlcyAoQ1BVL0dQVSksIG1lbW9yeSwgc3RvcmFnZSwgZXhlY3V0aW9uIHRpbWUgcGVyIHJ1biwgYW5kIHRvdGFsIHByb2plY3QgY29tcHV0ZSByZXF1aXJlbWVudHMuCgoqKldoYXQgdG8gZG9jdW1lbnQ6KioKLSBbIF0gR1BVIHR5cGUgYW5kIGNvdW50Ci0gWyBdIFRyYWluaW5nIHRpbWUgcGVyIHJ1bgotIFsgXSBUb3RhbCBjb21wdXRlIHVzZWQKCiMjIyMgOS4gRXRoaWNzIENvZGUgQ29tcGxpYW5jZQpBdXRob3JzIGNvbmZpcm0gYWRoZXJlbmNlIHRvIHRoZSBOZXVySVBTIENvZGUgb2YgRXRoaWNzLCBub3RpbmcgYW55IG5lY2Vzc2FyeSBkZXZpYXRpb25zLgoKKipXaGF0IHRvIHZlcmlmeToqKgotIFsgXSBSZWFkIE5ldXJJUFMgQ29kZSBvZiBFdGhpY3MKLSBbIF0gQ29uZmlybSBjb21wbGlhbmNlCi0gWyBdIE5vdGUgYW55IGRldmlhdGlvbnMgd2l0aCBqdXN0aWZpY2F0aW9uCgojIyMjIDEwLiBCcm9hZGVyIEltcGFjdHMKRGlzY3Vzc2lvbiBvZiBwb3RlbnRpYWwgbmVnYXRpdmUgc29jaWV0YWwgYXBwbGljYXRpb25zLCBmYWlybmVzcyBjb25jZXJucywgcHJpdmFjeSByaXNrcywgYW5kIHBvc3NpYmxlIG1pdGlnYXRpb24gc3RyYXRlZ2llcyB3aGVuIGFwcGxpY2FibGUuCgoqKldoYXQgdG8gYWRkcmVzczoqKgotIFsgXSBQb3RlbnRpYWwgbmVnYXRpdmUgYXBwbGljYXRpb25zCi0gWyBdIEZhaXJuZXNzIGNvbnNpZGVyYXRpb25zCi0gWyBdIFByaXZhY3kgaW1wbGljYXRpb25zCi0gWyBdIE1pdGlnYXRpb24gc3RyYXRlZ2llcwoKIyMjIyAxMS4gU2FmZWd1YXJkcwpIaWdoLXJpc2sgbW9kZWxzIChsYW5ndWFnZSBtb2RlbHMsIGludGVybmV0LXNjcmFwZWQgZGF0YXNldHMpIHJlcXVpcmUgY29udHJvbGxlZCByZWxlYXNlIG1lY2hhbmlzbXMgYW5kIHVzYWdlIGd1aWRlbGluZXMuCgoqKldoYXQgdG8gY29uc2lkZXI6KioKLSBbIF0gUmVsZWFzZSBzdHJhdGVneSBmb3Igc2Vuc2l0aXZlIG1vZGVscwotIFsgXSBVc2FnZSBndWlkZWxpbmVzIGlmIG5lZWRlZAotIFsgXSBBY2Nlc3MgY29udHJvbHMgaWYgYXBwcm9wcmlhdGUKCiMjIyMgMTIuIExpY2Vuc2UgUmVzcGVjdApBbGwgZXhpc3RpbmcgYXNzZXRzIHJlcXVpcmUgY3JlYXRvciBjaXRhdGlvbnMsIGxpY2Vuc2UgbmFtZXMsIFVSTHMsIHZlcnNpb24gbnVtYmVycywgYW5kIHRlcm1zLW9mLXNlcnZpY2UgYWNrbm93bGVkZ21lbnQuCgoqKldoYXQgdG8gZG9jdW1lbnQ6KioKLSBbIF0gRGF0YXNldCBsaWNlbnNlcyBjaXRlZAotIFsgXSBDb2RlIGxpY2Vuc2VzIHJlc3BlY3RlZAotIFsgXSBWZXJzaW9uIG51bWJlcnMgaW5jbHVkZWQKCiMjIyMgMTMuIEFzc2V0IERvY3VtZW50YXRpb24KTmV3IHJlbGVhc2VzIG5lZWQgc3RydWN0dXJlZCB0ZW1wbGF0ZXMgZG9jdW1lbnRpbmcgdHJhaW5pbmcgZGV0YWlscywgbGltaXRhdGlvbnMsIGNvbnNlbnQgcHJvY2VkdXJlcywgYW5kIGxpY2Vuc2luZyBpbmZvcm1hdGlvbi4KCioqRm9yIG5ldyBkYXRhc2V0cy9tb2RlbHM6KioKLSBbIF0gRGF0YXNoZWV0IG9yIG1vZGVsIGNhcmQKLSBbIF0gVHJhaW5pbmcgZGF0YSBkb2N1bWVudGF0aW9uCi0gWyBdIEtub3duIGxpbWl0YXRpb25zCgojIyMjIDE0LiBIdW1hbiBTdWJqZWN0cwpDcm93ZHNvdXJjaW5nIHN0dWRpZXMgbXVzdCBpbmNsdWRlIHBhcnRpY2lwYW50IGluc3RydWN0aW9ucywgc2NyZWVuc2hvdHMsIGNvbXBlbnNhdGlvbiBkZXRhaWxzLCBhbmQgY29tcGx5IHdpdGggbWluaW11bSB3YWdlIHJlcXVpcmVtZW50cy4KCioqV2hhdCB0byBpbmNsdWRlOioqCi0gWyBdIFRhc2sgaW5zdHJ1Y3Rpb25zCi0gWyBdIENvbXBlbnNhdGlvbiBkZXRhaWxzCi0gWyBdIFRpbWUgZXN0aW1hdGVzCgojIyMjIDE1LiBJUkIgQXBwcm92YWxzCkh1bWFuIHN1YmplY3RzIHJlc2VhcmNoIHJlcXVpcmVzIGRvY3VtZW50ZWQgaW5zdGl0dXRpb25hbCByZXZpZXcgYm9hcmQgYXBwcm92YWwgb3IgZXF1aXZhbGVudCwgd2l0aCByaXNrIGRlc2NyaXB0aW9ucyBkaXNjbG9zZWQgKG1haW50YWluaW5nIGFub255bWl0eSBhdCBzdWJtaXNzaW9uKS4KCioqV2hhdCB0byB2ZXJpZnk6KioKLSBbIF0gSVJCIGFwcHJvdmFsIG9idGFpbmVkCi0gWyBdIFJpc2sgYXNzZXNzbWVudCBjb21wbGV0ZWQKLSBbIF0gQW5vbnltaXplZCBhdCBzdWJtaXNzaW9uCgojIyMjIDE2LiBMTE0gRGVjbGFyYXRpb24KVXNhZ2Ugb2YgbGFyZ2UgbGFuZ3VhZ2UgbW9kZWxzIGFzIGNvcmUgbWV0aG9kb2xvZ3kgY29tcG9uZW50cyByZXF1aXJlcyBkaXNjbG9zdXJlOyB3cml0aW5nL2VkaXRpbmcgdXNlIGRvZXNuJ3QgcmVxdWlyZSBkZWNsYXJhdGlvbi4KCioqV2hhdCB0byBkaXNjbG9zZToqKgotIFsgXSBMTE0gdXNlZCBhcyBjb3JlIG1ldGhvZG9sb2d5IGNvbXBvbmVudAotIFsgXSBIb3cgTExNIHdhcyB1c2VkCi0gWyBdIChXcml0aW5nIGFzc2lzdGFuY2UgZG9lc24ndCByZXF1aXJlIGRpc2Nsb3N1cmUpCgojIyMgUmVzcG9uc2UgRm9ybWF0CgpBdXRob3JzIHNlbGVjdCAieWVzLCIgIm5vLCIgb3IgIk4vQSIgcGVyIHF1ZXN0aW9uLCB3aXRoIG9wdGlvbmFsIDEtMiBzZW50ZW5jZSBqdXN0aWZpY2F0aW9ucy4KCioqSW1wb3J0YW50OioqIFJldmlld2VycyBhcmUgZXhwbGljaXRseSBpbnN0cnVjdGVkIG5vdCB0byBwZW5hbGl6ZSBob25lc3QgbGltaXRhdGlvbiBhY2tub3dsZWRnbWVudC4KCi0tLQoKIyMgSUNNTCBQYXBlciBDaGVja2xpc3QKCiMjIyBCcm9hZGVyIEltcGFjdCBTdGF0ZW1lbnQKCklDTUwgcmVxdWlyZXMgYSBCcm9hZGVyIEltcGFjdCBTdGF0ZW1lbnQgYXQgdGhlIGVuZCBvZiB0aGUgcGFwZXIsIGJlZm9yZSByZWZlcmVuY2VzLiBUaGlzIGRvZXMgTk9UIGNvdW50IHRvd2FyZCB0aGUgcGFnZSBsaW1pdC4KCioqUmVxdWlyZWQgZWxlbWVudHM6KioKLSBQb3RlbnRpYWwgcG9zaXRpdmUgaW1wYWN0cwotIFBvdGVudGlhbCBuZWdhdGl2ZSBpbXBhY3RzCi0gTWl0aWdhdGlvbiBzdHJhdGVnaWVzCi0gV2hvIG1heSBiZSBhZmZlY3RlZAoKIyMjIElDTUwgU3BlY2lmaWMgUmVxdWlyZW1lbnRzCgojIyMjIFJlcHJvZHVjaWJpbGl0eSBDaGVja2xpc3QKCi0gWyBdIERhdGEgc3BsaXRzIGNsZWFybHkgc3BlY2lmaWVkCi0gWyBdIEh5cGVycGFyYW1ldGVycyBsaXN0ZWQKLSBbIF0gU2VhcmNoIHJhbmdlcyBkb2N1bWVudGVkCi0gWyBdIFNlbGVjdGlvbiBtZXRob2QgZXhwbGFpbmVkCi0gWyBdIENvbXB1dGUgcmVzb3VyY2VzIHNwZWNpZmllZAotIFsgXSBDb2RlIGF2YWlsYWJpbGl0eSBzdGF0ZWQKCiMjIyMgU3RhdGlzdGljYWwgUmVwb3J0aW5nCgotIFsgXSBFcnJvciBiYXJzIG9uIGFsbCBmaWd1cmVzCi0gWyBdIFN0YW5kYXJkIGRldmlhdGlvbiB2cyBzdGFuZGFyZCBlcnJvciBzcGVjaWZpZWQKLSBbIF0gTnVtYmVyIG9mIHJ1bnMgc3RhdGVkCi0gWyBdIFNpZ25pZmljYW5jZSB0ZXN0cyBpZiBjb21wYXJpbmcgbWV0aG9kcwoKIyMjIyBBbm9ueW1pemF0aW9uCgotIFsgXSBObyBhdXRob3IgbmFtZXMgaW4gcGFwZXIKLSBbIF0gTm8gYWNrbm93bGVkZ21lbnRzCi0gWyBdIE5vIGdyYW50IG51bWJlcnMKLSBbIF0gUHJpb3Igd29yayBjaXRlZCBpbiB0aGlyZCBwZXJzb24KLSBbIF0gTm8gaWRlbnRpZmlhYmxlIHJlcG9zaXRvcnkgVVJMcwoKLS0tCgojIyBJQ0xSIFJlcXVpcmVtZW50cwoKIyMjIExMTSBEaXNjbG9zdXJlIFBvbGljeSAoTmV3IGZvciAyMDI2KQoKSUNMUiBoYXMgYSBzcGVjaWZpYyBMTE0gZGlzY2xvc3VyZSByZXF1aXJlbWVudDoKCj4gIklmIExMTXMgcGxheWVkIGEgc2lnbmlmaWNhbnQgcm9sZSBpbiByZXNlYXJjaCBpZGVhdGlvbiBhbmQvb3Igd3JpdGluZyB0byB0aGUgZXh0ZW50IHRoYXQgdGhleSBjb3VsZCBiZSByZWdhcmRlZCBhcyBhIGNvbnRyaWJ1dG9yLCBhdXRob3JzIG11c3QgZGVzY3JpYmUgdGhlaXIgcHJlY2lzZSByb2xlIGluIGEgc2VwYXJhdGUgYXBwZW5kaXggc2VjdGlvbi4iCgoqKldoZW4gZGlzY2xvc3VyZSBpcyByZXF1aXJlZDoqKgotIExMTSB1c2VkIGZvciBzaWduaWZpY2FudCByZXNlYXJjaCBpZGVhdGlvbgotIExMTSB1c2VkIGZvciBzdWJzdGFudGlhbCB3cml0aW5nCi0gTExNIGNvdWxkIGJlIGNvbnNpZGVyZWQgYSBjb250cmlidXRvcgoKKipXaGVuIGRpc2Nsb3N1cmUgaXMgTk9UIHJlcXVpcmVkOioqCi0gR3JhbW1hciBjaGVja2luZwotIE1pbm9yIGVkaXRpbmcgYXNzaXN0YW5jZQotIENvZGUgY29tcGxldGlvbiB0b29scwoKKipDb25zZXF1ZW5jZXMgb2Ygbm9uLWRpc2Nsb3N1cmU6KioKLSBEZXNrIHJlamVjdGlvbgotIFBvdGVudGlhbCBwb3N0LXB1YmxpY2F0aW9uIGlzc3VlcwoKIyMjIElDTFIgU3BlY2lmaWMgUmVxdWlyZW1lbnRzCgojIyMjIFJlcHJvZHVjaWJpbGl0eSBTdGF0ZW1lbnQgKE9wdGlvbmFsIGJ1dCBSZWNvbW1lbmRlZCkKCkFkZCBhIHN0YXRlbWVudCByZWZlcmVuY2luZzoKLSBTdXBwb3J0aW5nIG1hdGVyaWFscwotIENvZGUgYXZhaWxhYmlsaXR5Ci0gRGF0YSBhdmFpbGFiaWxpdHkKLSBNb2RlbCBjaGVja3BvaW50cwoKIyMjIyBFdGhpY3MgU3RhdGVtZW50IChPcHRpb25hbCkKCkFkZHJlc3MgcG90ZW50aWFsIGNvbmNlcm5zIGluIOKJpDEgcGFnZS4gRG9lcyBub3QgY291bnQgdG93YXJkIHBhZ2UgbGltaXQuCgojIyMjIFJlY2lwcm9jYWwgUmV2aWV3aW5nCgotIEF1dGhvcnMgb24gMysgcGFwZXJzIG11c3Qgc2VydmUgYXMgcmV2aWV3ZXJzIGZvciDiiaU2IHBhcGVycwotIEVhY2ggc3VibWlzc2lvbiBuZWVkcyDiiaUxIGF1dGhvciByZWdpc3RlcmVkIHRvIHJldmlldyDiiaUzIHBhcGVycwoKLS0tCgojIyBBQ0wgUmVxdWlyZW1lbnRzCgojIyMgTGltaXRhdGlvbnMgU2VjdGlvbiAoTWFuZGF0b3J5KQoKQUNMIHNwZWNpZmljYWxseSByZXF1aXJlcyBhIExpbWl0YXRpb25zIHNlY3Rpb246CgoqKldoYXQgdG8gaW5jbHVkZToqKgotIFN0cm9uZyBhc3N1bXB0aW9ucyBtYWRlCi0gU2NvcGUgbGltaXRhdGlvbnMKLSBXaGVuIG1ldGhvZCBtYXkgZmFpbAotIEdlbmVyYWxpemF0aW9uIGNvbmNlcm5zCgoqKkltcG9ydGFudDoqKiBUaGUgTGltaXRhdGlvbnMgc2VjdGlvbiBkb2VzIE5PVCBjb3VudCB0b3dhcmQgdGhlIHBhZ2UgbGltaXQuCgojIyMgQUNMIFNwZWNpZmljIENoZWNrbGlzdAoKIyMjIyBSZXNwb25zaWJsZSBOTFAKCi0gWyBdIEJpYXMgY29uc2lkZXJhdGlvbnMgYWRkcmVzc2VkCi0gWyBdIEZhaXJuZXNzIGV2YWx1YXRlZCBpZiBhcHBsaWNhYmxlCi0gWyBdIER1YWwtdXNlIGNvbmNlcm5zIGRpc2N1c3NlZAoKIyMjIyBNdWx0aWxpbmd1YWwgQ29uc2lkZXJhdGlvbnMKCklmIGFwcGxpY2FibGU6Ci0gWyBdIExhbmd1YWdlIGRpdmVyc2l0eSBhZGRyZXNzZWQKLSBbIF0gTm9uLUVuZ2xpc2ggbGFuZ3VhZ2VzIGluY2x1ZGVkCi0gWyBdIFRyYW5zbGF0aW9uIHF1YWxpdHkgdmVyaWZpZWQKCiMjIyMgSHVtYW4gRXZhbHVhdGlvbgoKSWYgYXBwbGljYWJsZToKLSBbIF0gQW5ub3RhdG9yIGRldGFpbHMgcHJvdmlkZWQKLSBbIF0gQWdyZWVtZW50IG1ldHJpY3MgcmVwb3J0ZWQKLSBbIF0gQ29tcGVuc2F0aW9uIGRvY3VtZW50ZWQKCi0tLQoKIyMgQUFBSSBSZXF1aXJlbWVudHMKCiMjIyBGb3JtYXR0aW5nIChTdHJpY3Rlc3Qgb2YgQWxsIFZlbnVlcykKCkFBQUkgZW5mb3JjZXMgZm9ybWF0dGluZyBydWxlcyBtb3JlIHN0cmljdGx5IHRoYW4gYW55IG90aGVyIG1ham9yIHZlbnVlLiBQYXBlcnMgdGhhdCBkZXZpYXRlIGZyb20gdGhlIHRlbXBsYXRlIGFyZSBkZXNrLXJlamVjdGVkLgoKLSBbIF0gVXNlIHRoZSAqKmV4YWN0KiogQUFBSSBzdHlsZSBmaWxlIHdpdGhvdXQgbW9kaWZpY2F0aW9uIOKAlCBubyBgXHNldGxlbmd0aGAsIG5vIGBcdnNwYWNlYCBoYWNrcywgbm8gZm9udCBvdmVycmlkZXMKLSBbIF0gNyBwYWdlcyBtYWluIGNvbnRlbnQgKDggZm9yIGNhbWVyYS1yZWFkeSB3aXRoIGF1dGhvciBpbmZvKQotIFsgXSBUd28tY29sdW1uIGZvcm1hdCwgVGltZXMgZm9udCAoc2V0IGJ5IHRlbXBsYXRlKQotIFsgXSBSZWZlcmVuY2VzIGFuZCBhcHBlbmRpY2VzIGRvIG5vdCBjb3VudCB0b3dhcmQgcGFnZSBsaW1pdAotIFsgXSBBYnN0cmFjdCBtdXN0IGJlIGEgc2luZ2xlIHBhcmFncmFwaAotIFsgXSBEbyBub3QgbW9kaWZ5IG1hcmdpbnMsIGNvbHVtbiB3aWR0aHMsIG9yIGZvbnQgc2l6ZXMKCiMjIyBSZXF1aXJlZCBTZWN0aW9ucwoKLSBbIF0gQWJzdHJhY3QgKHNpbmdsZSBwYXJhZ3JhcGgsIG5vIG1hdGggb3IgY2l0YXRpb25zKQotIFsgXSBJbnRyb2R1Y3Rpb24gd2l0aCBjbGVhciBjb250cmlidXRpb24gc3RhdGVtZW50Ci0gWyBdIFJlZmVyZW5jZXMgaW4gQUFBSSBmb3JtYXQgKHVzZXMgYGFhYWkyMDI2LmJzdGApCi0gWyBdIEFwcGVuZGl4IChvcHRpb25hbCwgdW5saW1pdGVkKQoKIyMjIEV0aGljcyBhbmQgUmVwcm9kdWNpYmlsaXR5CgotIFsgXSBCcm9hZGVyIGltcGFjdCBzdGF0ZW1lbnQgKGVuY291cmFnZWQgYnV0IG5vdCBhbHdheXMgbWFuZGF0b3J5IOKAlCBjaGVjayBjdXJyZW50IHllYXIncyBDRlApCi0gWyBdIFJlcHJvZHVjaWJpbGl0eSBkZXRhaWxzIChkYXRhc2V0cywgY29kZSBhdmFpbGFiaWxpdHkpCi0gWyBdIEFja25vd2xlZGdlIHVzZSBvZiBBSSB3cml0aW5nIHRvb2xzIGlmIGFwcGxpY2FibGUKCiMjIyBLZXkgRGlmZmVyZW5jZXMgZnJvbSBPdGhlciBWZW51ZXMKCi0gKipObyBzZXBhcmF0ZSBsaW1pdGF0aW9ucyBzZWN0aW9uIHJlcXVpcmVkKiogKHVubGlrZSBBQ0wpLCBidXQgZGlzY3Vzc2luZyBsaW1pdGF0aW9ucyBpcyByZWNvbW1lbmRlZAotICoqU3RyaWN0ZXN0IGZvcm1hdHRpbmcgZW5mb3JjZW1lbnQqKiDigJQgdGhlIHN0eWxlIGNoZWNrZXIgd2lsbCByZWplY3Qgbm9uLWNvbXBsaWFudCBQREZzCi0gKipObyBwYXBlciBjaGVja2xpc3QqKiBsaWtlIE5ldXJJUFMgaGFzLCBidXQgdGhlIHVuaXZlcnNhbCBjaGVja2xpc3QgYmVsb3cgc3RpbGwgYXBwbGllcwotICoqVW5pZmllZCB0ZW1wbGF0ZSoqIGNvdmVycyBtYWluIHBhcGVyIGFuZCBzdXBwbGVtZW50YXJ5IGluIHRoZSBzYW1lIGZpbGUKCi0tLQoKIyMgQ09MTSBSZXF1aXJlbWVudHMKCiMjIyBPdmVydmlldwoKQ09MTSAoQ29uZmVyZW5jZSBvbiBMYW5ndWFnZSBNb2RlbGluZykgZm9jdXNlcyBzcGVjaWZpY2FsbHkgb24gbGFuZ3VhZ2UgbW9kZWwgcmVzZWFyY2guIEZyYW1pbmcgbXVzdCB0YXJnZXQgdGhpcyBjb21tdW5pdHkuCgojIyMgRm9ybWF0dGluZwoKLSBbIF0gOSBwYWdlcyBtYWluIGNvbnRlbnQgKDEwIGZvciBjYW1lcmEtcmVhZHkpCi0gWyBdIFVzZSBDT0xNIHRlbXBsYXRlIChiYXNlZCBvbiBJQ0xSIHRlbXBsYXRlIHdpdGggbW9kaWZpY2F0aW9ucykKLSBbIF0gRG91YmxlLWJsaW5kIHJldmlldwotIFsgXSBSZWZlcmVuY2VzIGFuZCBhcHBlbmRpY2VzIHVubGltaXRlZAoKIyMjIFJlcXVpcmVkIFNlY3Rpb25zCgotIFsgXSBBYnN0cmFjdAotIFsgXSBJbnRyb2R1Y3Rpb24gZnJhbWVkIGZvciBsYW5ndWFnZSBtb2RlbGluZyBjb21tdW5pdHkKLSBbIF0gQ29uY2x1c2lvbgotIFsgXSBSZWZlcmVuY2VzCgojIyMgQ29udGVudCBFeHBlY3RhdGlvbnMKCi0gWyBdIENvbnRyaWJ1dGlvbiBtdXN0IGJlIHJlbGV2YW50IHRvIGxhbmd1YWdlIG1vZGVscyAoYnJvYWRseSBpbnRlcnByZXRlZDogdHJhaW5pbmcsIGV2YWx1YXRpb24sIGFwcGxpY2F0aW9ucywgdGhlb3J5LCBhbGlnbm1lbnQsIHNhZmV0eSkKLSBbIF0gSWYgdGhlIG1ldGhvZCBpcyBnZW5lcmFsLCBmcmFtZSB3aXRoIGxhbmd1YWdlIG1vZGVsIGV4YW1wbGVzCi0gWyBdIEJhc2VsaW5lcyBzaG91bGQgaW5jbHVkZSByZWNlbnQgTE0tc3BlY2lmaWMgbWV0aG9kcyB3aGVyZSBhcHBsaWNhYmxlCgojIyMgS2V5IERpZmZlcmVuY2VzIGZyb20gT3RoZXIgVmVudWVzCgotICoqTmFycm93ZXIgc2NvcGUqKiB0aGFuIE5ldXJJUFMvSUNNTCDigJQgbXVzdCBmcmFtZSBmb3IgTE0gY29tbXVuaXR5Ci0gKipUZW1wbGF0ZSBkZXJpdmVkIGZyb20gSUNMUioqIOKAlCBzaW1pbGFyIGZvcm1hdHRpbmcgcnVsZXMKLSAqKk5ld2VyIHZlbnVlKiog4oCUIHJldmlld2VyIG5vcm1zIGFyZSBzdGlsbCBlc3RhYmxpc2hpbmc7IGVyciBvbiB0aGUgc2lkZSBvZiB0aG9yb3VnaCBldmFsdWF0aW9uCi0gKipObyBtYW5kYXRvcnkgY2hlY2tsaXN0KiogbGlrZSBOZXVySVBTLCBidXQgYnJvYWRlciBpbXBhY3QgZGlzY3Vzc2lvbiBpcyBleHBlY3RlZAotICoqTExNIGRpc2Nsb3N1cmUqKjogSWYgTExNcyB3ZXJlIHVzZWQgaW4gcmVzZWFyY2ggKGNvZGUgZ2VuZXJhdGlvbiwgZGF0YSBhbm5vdGF0aW9uLCB3cml0aW5nIGFzc2lzdGFuY2UpLCBkaXNjbG9zZSB0aGlzCgotLS0KCiMjIFVuaXZlcnNhbCBQcmUtU3VibWlzc2lvbiBDaGVja2xpc3QKCiMjIyBCZWZvcmUgRXZlcnkgU3VibWlzc2lvbgoKIyMjIyBQYXBlciBDb250ZW50CgotIFsgXSBBYnN0cmFjdCDiiaQgd29yZCBsaW1pdCAodXN1YWxseSAyNTAtMzAwIHdvcmRzKQotIFsgXSBNYWluIGNvbnRlbnQgd2l0aGluIHBhZ2UgbGltaXQKLSBbIF0gUmVmZXJlbmNlcyBjb21wbGV0ZSBhbmQgdmVyaWZpZWQKLSBbIF0gTGltaXRhdGlvbnMgc2VjdGlvbiBpbmNsdWRlZAotIFsgXSBBbGwgZmlndXJlcy90YWJsZXMgaGF2ZSBjYXB0aW9ucwotIFsgXSBDYXB0aW9ucyBhcmUgc2VsZi1jb250YWluZWQKCiMjIyMgRm9ybWF0dGluZwoKLSBbIF0gQ29ycmVjdCB0ZW1wbGF0ZSB1c2VkICh2ZW51ZSArIHllYXIgc3BlY2lmaWMpCi0gWyBdIE1hcmdpbnMgbm90IG1vZGlmaWVkCi0gWyBdIEZvbnQgc2l6ZXMgbm90IG1vZGlmaWVkCi0gWyBdIERvdWJsZS1ibGluZCByZXF1aXJlbWVudHMgbWV0Ci0gWyBdIFBhZ2UgbnVtYmVycyAoZm9yIHJldmlldykgb3Igbm9uZSAoY2FtZXJhLXJlYWR5KQoKIyMjIyBUZWNobmljYWwKCi0gWyBdIEFsbCBjbGFpbXMgc3VwcG9ydGVkIGJ5IGV2aWRlbmNlCi0gWyBdIEVycm9yIGJhcnMgaW5jbHVkZWQKLSBbIF0gQmFzZWxpbmVzIGFwcHJvcHJpYXRlCi0gWyBdIEh5cGVycGFyYW1ldGVycyBkb2N1bWVudGVkCi0gWyBdIENvbXB1dGUgcmVzb3VyY2VzIHN0YXRlZAoKIyMjIyBSZXByb2R1Y2liaWxpdHkKCi0gWyBdIENvZGUgd2lsbCBiZSBhdmFpbGFibGUgKG9yIGp1c3RpZmljYXRpb24pCi0gWyBdIERhdGEgd2lsbCBiZSBhdmFpbGFibGUgKG9yIGp1c3RpZmljYXRpb24pCi0gWyBdIEVudmlyb25tZW50IGRvY3VtZW50ZWQKLSBbIF0gQ29tbWFuZHMgdG8gcmVwcm9kdWNlIHByb3ZpZGVkCgojIyMjIEV0aGljcwoKLSBbIF0gQnJvYWRlciBpbXBhY3RzIGNvbnNpZGVyZWQKLSBbIF0gTGltaXRhdGlvbnMgaG9uZXN0bHkgc3RhdGVkCi0gWyBdIExpY2Vuc2VzIHJlc3BlY3RlZAotIFsgXSBJUkIgb2J0YWluZWQgaWYgbmVlZGVkCgojIyMjIEZpbmFsIENoZWNrcwoKLSBbIF0gUERGIGNvbXBpbGVzIHdpdGhvdXQgZXJyb3JzCi0gWyBdIEFsbCBmaWd1cmVzIHJlbmRlciBjb3JyZWN0bHkKLSBbIF0gQWxsIGNpdGF0aW9ucyByZXNvbHZlCi0gWyBdIFN1cHBsZW1lbnRhcnkgbWF0ZXJpYWwgb3JnYW5pemVkCi0gWyBdIENvbmZlcmVuY2UgY2hlY2tsaXN0IGNvbXBsZXRlZAoKLS0tCgojIyBRdWljayBSZWZlcmVuY2U6IFBhZ2UgTGltaXRzCgp8IENvbmZlcmVuY2UgfCBNYWluIENvbnRlbnQgfCBSZWZlcmVuY2VzIHwgQXBwZW5kaXggfAp8LS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS18LS0tLS0tLS0tLS0tfC0tLS0tLS0tLS18CnwgTmV1cklQUyAyMDI1IHwgOSBwYWdlcyB8IFVubGltaXRlZCB8IFVubGltaXRlZCAoY2hlY2tsaXN0IHNlcGFyYXRlKSB8CnwgSUNNTCAyMDI2IHwgOCBwYWdlcyAoKzEgY2FtZXJhKSB8IFVubGltaXRlZCB8IFVubGltaXRlZCB8CnwgSUNMUiAyMDI2IHwgOSBwYWdlcyAoKzEgY2FtZXJhKSB8IFVubGltaXRlZCB8IFVubGltaXRlZCB8CnwgQUNMIDIwMjUgfCA4IHBhZ2VzIChsb25nKSB8IFVubGltaXRlZCB8IFVubGltaXRlZCB8CnwgQUFBSSAyMDI2IHwgNyBwYWdlcyAoKzEgY2FtZXJhKSB8IFVubGltaXRlZCB8IFVubGltaXRlZCB8CnwgQ09MTSAyMDI1IHwgOSBwYWdlcyAoKzEgY2FtZXJhKSB8IFVubGltaXRlZCB8IFVubGltaXRlZCB8CgotLS0KCiMjIFRlbXBsYXRlIExvY2F0aW9ucwoKQWxsIGNvbmZlcmVuY2UgdGVtcGxhdGVzIGFyZSBpbiB0aGUgYHRlbXBsYXRlcy9gIGRpcmVjdG9yeToKCmBgYAp0ZW1wbGF0ZXMvCuKUnOKUgOKUgCBpY21sMjAyNi8gICAgICAgIyBJQ01MIDIwMjYgb2ZmaWNpYWwK4pSc4pSA4pSAIGljbHIyMDI2LyAgICAgICAjIElDTFIgMjAyNiBvZmZpY2lhbArilJzilIDilIAgbmV1cmlwczIwMjUvICAgICMgTmV1cklQUyAyMDI1CuKUnOKUgOKUgCBhY2wvICAgICAgICAgICAgIyBBQ0wgc3R5bGUgZmlsZXMK4pSc4pSA4pSAIGFhYWkyMDI2LyAgICAgICAjIEFBQUkgMjAyNgrilJTilIDilIAgY29sbTIwMjUvICAgICAgICMgQ09MTSAyMDI1CmBgYAo=
+# Conference Paper Checklists
+
+This reference documents the mandatory checklist requirements for major ML/AI conferences. All major venues now require paper checklists—missing them results in desk rejection.
+
+---
+
+## Contents
+
+- [NeurIPS Paper Checklist](#neurips-paper-checklist)
+- [ICML Paper Checklist](#icml-paper-checklist)
+- [ICLR Requirements](#iclr-requirements)
+- [ACL Requirements](#acl-requirements)
+- [AAAI Requirements](#aaai-requirements)
+- [COLM Requirements](#colm-requirements)
+- [Universal Pre-Submission Checklist](#universal-pre-submission-checklist)
+
+---
+
+## NeurIPS Paper Checklist
+
+### Mandatory Components
+
+All NeurIPS submissions must include a completed paper checklist. Papers lacking this element face **automatic desk rejection**. The checklist appears after references and supplemental material, outside the page limit.
+
+### 16 Required Checklist Items
+
+#### 1. Claims Alignment
+Authors must verify that abstract and introduction claims match theoretical and experimental results, with clearly stated contributions, assumptions, and limitations.
+
+**What to check:**
+- [ ] Abstract claims match actual results
+- [ ] Introduction doesn't overclaim
+- [ ] Contributions are specific and falsifiable
+
+#### 2. Limitations Discussion
+Papers should include a dedicated "Limitations" section addressing strong assumptions, robustness to violations, scope constraints, and performance-influencing factors.
+
+**What to include:**
+- [ ] Dedicated Limitations section
+- [ ] Honest assessment of scope
+- [ ] Conditions where method may fail
+
+#### 3. Theory & Proofs
+Theoretical contributions require full assumption statements and complete proofs (main paper or appendix with proof sketches for intuition).
+
+**What to check:**
+- [ ] All assumptions stated formally
+- [ ] Complete proofs provided (main text or appendix)
+- [ ] Proof sketches for intuition in main text
+
+#### 4. Reproducibility
+Authors must describe steps ensuring results verification through code release, detailed instructions, model access, or checkpoints appropriate to their contribution type.
+
+**What to provide:**
+- [ ] Clear reproducibility statement
+- [ ] Code availability information
+- [ ] Model checkpoints if applicable
+
+#### 5. Data & Code Access
+Instructions for reproducing main experimental results should be provided (supplemental material or URLs), including exact commands and environment specifications.
+
+**What to include:**
+- [ ] Exact commands to run experiments
+- [ ] Environment specifications (requirements.txt, conda env)
+- [ ] Data access instructions
+
+#### 6. Experimental Details
+Papers must specify training details: data splits, hyperparameters, and selection methods in the main paper or supplementary materials.
+
+**What to document:**
+- [ ] Train/val/test split details
+- [ ] All hyperparameters used
+- [ ] Hyperparameter selection method
+
+#### 7. Statistical Significance
+Results require error bars, confidence intervals, or statistical tests with clearly stated calculation methods and underlying assumptions.
+
+**What to include:**
+- [ ] Error bars or confidence intervals
+- [ ] Number of runs/seeds
+- [ ] Calculation method (std dev vs std error)
+
+#### 8. Compute Resources
+Specifications needed: compute worker types (CPU/GPU), memory, storage, execution time per run, and total project compute requirements.
+
+**What to document:**
+- [ ] GPU type and count
+- [ ] Training time per run
+- [ ] Total compute used
+
+#### 9. Ethics Code Compliance
+Authors confirm adherence to the NeurIPS Code of Ethics, noting any necessary deviations.
+
+**What to verify:**
+- [ ] Read NeurIPS Code of Ethics
+- [ ] Confirm compliance
+- [ ] Note any deviations with justification
+
+#### 10. Broader Impacts
+Discussion of potential negative societal applications, fairness concerns, privacy risks, and possible mitigation strategies when applicable.
+
+**What to address:**
+- [ ] Potential negative applications
+- [ ] Fairness considerations
+- [ ] Privacy implications
+- [ ] Mitigation strategies
+
+#### 11. Safeguards
+High-risk models (language models, internet-scraped datasets) require controlled release mechanisms and usage guidelines.
+
+**What to consider:**
+- [ ] Release strategy for sensitive models
+- [ ] Usage guidelines if needed
+- [ ] Access controls if appropriate
+
+#### 12. License Respect
+All existing assets require creator citations, license names, URLs, version numbers, and terms-of-service acknowledgment.
+
+**What to document:**
+- [ ] Dataset licenses cited
+- [ ] Code licenses respected
+- [ ] Version numbers included
+
+#### 13. Asset Documentation
+New releases need structured templates documenting training details, limitations, consent procedures, and licensing information.
+
+**For new datasets/models:**
+- [ ] Datasheet or model card
+- [ ] Training data documentation
+- [ ] Known limitations
+
+#### 14. Human Subjects
+Crowdsourcing studies must include participant instructions, screenshots, compensation details, and comply with minimum wage requirements.
+
+**What to include:**
+- [ ] Task instructions
+- [ ] Compensation details
+- [ ] Time estimates
+
+#### 15. IRB Approvals
+Human subjects research requires documented institutional review board approval or equivalent, with risk descriptions disclosed (maintaining anonymity at submission).
+
+**What to verify:**
+- [ ] IRB approval obtained
+- [ ] Risk assessment completed
+- [ ] Anonymized at submission
+
+#### 16. LLM Declaration
+Usage of large language models as core methodology components requires disclosure; writing/editing use doesn't require declaration.
+
+**What to disclose:**
+- [ ] LLM used as core methodology component
+- [ ] How LLM was used
+- [ ] (Writing assistance doesn't require disclosure)
+
+### Response Format
+
+Authors select "yes," "no," or "N/A" per question, with optional 1-2 sentence justifications.
+
+**Important:** Reviewers are explicitly instructed not to penalize honest limitation acknowledgment.
+
+---
+
+## ICML Paper Checklist
+
+### Broader Impact Statement
+
+ICML requires a Broader Impact Statement at the end of the paper, before references. This does NOT count toward the page limit.
+
+**Required elements:**
+- Potential positive impacts
+- Potential negative impacts
+- Mitigation strategies
+- Who may be affected
+
+### ICML Specific Requirements
+
+#### Reproducibility Checklist
+
+- [ ] Data splits clearly specified
+- [ ] Hyperparameters listed
+- [ ] Search ranges documented
+- [ ] Selection method explained
+- [ ] Compute resources specified
+- [ ] Code availability stated
+
+#### Statistical Reporting
+
+- [ ] Error bars on all figures
+- [ ] Standard deviation vs standard error specified
+- [ ] Number of runs stated
+- [ ] Significance tests if comparing methods
+
+#### Anonymization
+
+- [ ] No author names in paper
+- [ ] No acknowledgments
+- [ ] No grant numbers
+- [ ] Prior work cited in third person
+- [ ] No identifiable repository URLs
+
+---
+
+## ICLR Requirements
+
+### LLM Disclosure Policy (New for 2026)
+
+ICLR has a specific LLM disclosure requirement:
+
+> "If LLMs played a significant role in research ideation and/or writing to the extent that they could be regarded as a contributor, authors must describe their precise role in a separate appendix section."
+
+**When disclosure is required:**
+- LLM used for significant research ideation
+- LLM used for substantial writing
+- LLM could be considered a contributor
+
+**When disclosure is NOT required:**
+- Grammar checking
+- Minor editing assistance
+- Code completion tools
+
+**Consequences of non-disclosure:**
+- Desk rejection
+- Potential post-publication issues
+
+### ICLR Specific Requirements
+
+#### Reproducibility Statement (Optional but Recommended)
+
+Add a statement referencing:
+- Supporting materials
+- Code availability
+- Data availability
+- Model checkpoints
+
+#### Ethics Statement (Optional)
+
+Address potential concerns in ≤1 page. Does not count toward page limit.
+
+#### Reciprocal Reviewing
+
+- Authors on 3+ papers must serve as reviewers for ≥6 papers
+- Each submission needs ≥1 author registered to review ≥3 papers
+
+---
+
+## ACL Requirements
+
+### Limitations Section (Mandatory)
+
+ACL specifically requires a Limitations section:
+
+**What to include:**
+- Strong assumptions made
+- Scope limitations
+- When method may fail
+- Generalization concerns
+
+**Important:** The Limitations section does NOT count toward the page limit.
+
+### ACL Specific Checklist
+
+#### Responsible NLP
+
+- [ ] Bias considerations addressed
+- [ ] Fairness evaluated if applicable
+- [ ] Dual-use concerns discussed
+
+#### Multilingual Considerations
+
+If applicable:
+- [ ] Language diversity addressed
+- [ ] Non-English languages included
+- [ ] Translation quality verified
+
+#### Human Evaluation
+
+If applicable:
+- [ ] Annotator details provided
+- [ ] Agreement metrics reported
+- [ ] Compensation documented
+
+---
+
+## AAAI Requirements
+
+### Formatting (Strictest of All Venues)
+
+AAAI enforces formatting rules more strictly than any other major venue. Papers that deviate from the template are desk-rejected.
+
+- [ ] Use the **exact** AAAI style file without modification — no `\setlength`, no `\vspace` hacks, no font overrides
+- [ ] 7 pages main content (8 for camera-ready with author info)
+- [ ] Two-column format, Times font (set by template)
+- [ ] References and appendices do not count toward page limit
+- [ ] Abstract must be a single paragraph
+- [ ] Do not modify margins, column widths, or font sizes
+
+### Required Sections
+
+- [ ] Abstract (single paragraph, no math or citations)
+- [ ] Introduction with clear contribution statement
+- [ ] References in AAAI format (uses `aaai2026.bst`)
+- [ ] Appendix (optional, unlimited)
+
+### Ethics and Reproducibility
+
+- [ ] Broader impact statement (encouraged but not always mandatory — check current year's CFP)
+- [ ] Reproducibility details (datasets, code availability)
+- [ ] Acknowledge use of AI writing tools if applicable
+
+### Key Differences from Other Venues
+
+- **No separate limitations section required** (unlike ACL), but discussing limitations is recommended
+- **Strictest formatting enforcement** — the style checker will reject non-compliant PDFs
+- **No paper checklist** like NeurIPS has, but the universal checklist below still applies
+- **Unified template** covers main paper and supplementary in the same file
+
+---
+
+## COLM Requirements
+
+### Overview
+
+COLM (Conference on Language Modeling) focuses specifically on language model research. Framing must target this community.
+
+### Formatting
+
+- [ ] 9 pages main content (10 for camera-ready)
+- [ ] Use COLM template (based on ICLR template with modifications)
+- [ ] Double-blind review
+- [ ] References and appendices unlimited
+
+### Required Sections
+
+- [ ] Abstract
+- [ ] Introduction framed for language modeling community
+- [ ] Conclusion
+- [ ] References
+
+### Content Expectations
+
+- [ ] Contribution must be relevant to language models (broadly interpreted: training, evaluation, applications, theory, alignment, safety)
+- [ ] If the method is general, frame with language model examples
+- [ ] Baselines should include recent LM-specific methods where applicable
+
+### Key Differences from Other Venues
+
+- **Narrower scope** than NeurIPS/ICML — must frame for LM community
+- **Template derived from ICLR** — similar formatting rules
+- **Newer venue** — reviewer norms are still establishing; err on the side of thorough evaluation
+- **No mandatory checklist** like NeurIPS, but broader impact discussion is expected
+- **LLM disclosure**: If LLMs were used in research (code generation, data annotation, writing assistance), disclose this
+
+---
+
+## Universal Pre-Submission Checklist
+
+### Before Every Submission
+
+#### Paper Content
+
+- [ ] Abstract ≤ word limit (usually 250-300 words)
+- [ ] Main content within page limit
+- [ ] References complete and verified
+- [ ] Limitations section included
+- [ ] All figures/tables have captions
+- [ ] Captions are self-contained
+
+#### Formatting
+
+- [ ] Correct template used (venue + year specific)
+- [ ] Margins not modified
+- [ ] Font sizes not modified
+- [ ] Double-blind requirements met
+- [ ] Page numbers (for review) or none (camera-ready)
+
+#### Technical
+
+- [ ] All claims supported by evidence
+- [ ] Error bars included
+- [ ] Baselines appropriate
+- [ ] Hyperparameters documented
+- [ ] Compute resources stated
+
+#### Reproducibility
+
+- [ ] Code will be available (or justification)
+- [ ] Data will be available (or justification)
+- [ ] Environment documented
+- [ ] Commands to reproduce provided
+
+#### Ethics
+
+- [ ] Broader impacts considered
+- [ ] Limitations honestly stated
+- [ ] Licenses respected
+- [ ] IRB obtained if needed
+
+#### Final Checks
+
+- [ ] PDF compiles without errors
+- [ ] All figures render correctly
+- [ ] All citations resolve
+- [ ] Supplementary material organized
+- [ ] Conference checklist completed
+
+---
+
+## Quick Reference: Page Limits
+
+| Conference | Main Content | References | Appendix |
+|------------|-------------|------------|----------|
+| NeurIPS 2025 | 9 pages | Unlimited | Unlimited (checklist separate) |
+| ICML 2026 | 8 pages (+1 camera) | Unlimited | Unlimited |
+| ICLR 2026 | 9 pages (+1 camera) | Unlimited | Unlimited |
+| ACL 2025 | 8 pages (long) | Unlimited | Unlimited |
+| AAAI 2026 | 7 pages (+1 camera) | Unlimited | Unlimited |
+| COLM 2025 | 9 pages (+1 camera) | Unlimited | Unlimited |
+
+---
+
+## Template Locations
+
+All conference templates are in the `templates/` directory:
+
+```
+templates/
+├── icml2026/       # ICML 2026 official
+├── iclr2026/       # ICLR 2026 official
+├── neurips2025/    # NeurIPS 2025
+├── acl/            # ACL style files
+├── aaai2026/       # AAAI 2026
+└── colm2025/       # COLM 2025
+```

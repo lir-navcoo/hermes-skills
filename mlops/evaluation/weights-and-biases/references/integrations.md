@@ -1,1 +1,700 @@
-IyBGcmFtZXdvcmsgSW50ZWdyYXRpb25zIEd1aWRlCgpDb21wbGV0ZSBndWlkZSB0byBpbnRlZ3JhdGluZyBXJkIgd2l0aCBwb3B1bGFyIE1MIGZyYW1ld29ya3MuCgojIyBUYWJsZSBvZiBDb250ZW50cwotIEh1Z2dpbmdGYWNlIFRyYW5zZm9ybWVycwotIFB5VG9yY2ggTGlnaHRuaW5nCi0gS2VyYXMvVGVuc29yRmxvdwotIEZhc3QuYWkKLSBYR0Jvb3N0L0xpZ2h0R0JNCi0gUHlUb3JjaCBOYXRpdmUKLSBDdXN0b20gSW50ZWdyYXRpb25zCgojIyBIdWdnaW5nRmFjZSBUcmFuc2Zvcm1lcnMKCiMjIyBBdXRvbWF0aWMgSW50ZWdyYXRpb24KCmBgYHB5dGhvbgpmcm9tIHRyYW5zZm9ybWVycyBpbXBvcnQgVHJhaW5lciwgVHJhaW5pbmdBcmd1bWVudHMKaW1wb3J0IHdhbmRiCgojIEluaXRpYWxpemUgVyZCCndhbmRiLmluaXQocHJvamVjdD0iaGYtdHJhbnNmb3JtZXJzIiwgbmFtZT0iYmVydC1maW5ldHVuaW5nIikKCiMgVHJhaW5pbmcgYXJndW1lbnRzIHdpdGggVyZCCnRyYWluaW5nX2FyZ3MgPSBUcmFpbmluZ0FyZ3VtZW50cygKICAgIG91dHB1dF9kaXI9Ii4vcmVzdWx0cyIsCiAgICByZXBvcnRfdG89IndhbmRiIiwgICMgRW5hYmxlIFcmQiBsb2dnaW5nCiAgICBydW5fbmFtZT0iYmVydC1iYXNlLWZpbmV0dW5pbmciLAoKICAgICMgVHJhaW5pbmcgcGFyYW1zCiAgICBudW1fdHJhaW5fZXBvY2hzPTMsCiAgICBwZXJfZGV2aWNlX3RyYWluX2JhdGNoX3NpemU9MTYsCiAgICBwZXJfZGV2aWNlX2V2YWxfYmF0Y2hfc2l6ZT02NCwKICAgIGxlYXJuaW5nX3JhdGU9MmUtNSwKCiAgICAjIExvZ2dpbmcKICAgIGxvZ2dpbmdfZGlyPSIuL2xvZ3MiLAogICAgbG9nZ2luZ19zdGVwcz0xMDAsCiAgICBsb2dnaW5nX2ZpcnN0X3N0ZXA9VHJ1ZSwKCiAgICAjIEV2YWx1YXRpb24KICAgIGV2YWx1YXRpb25fc3RyYXRlZ3k9InN0ZXBzIiwKICAgIGV2YWxfc3RlcHM9NTAwLAogICAgc2F2ZV9zdGVwcz01MDAsCgogICAgIyBPdGhlcgogICAgbG9hZF9iZXN0X21vZGVsX2F0X2VuZD1UcnVlLAogICAgbWV0cmljX2Zvcl9iZXN0X21vZGVsPSJldmFsX2FjY3VyYWN5IgopCgojIFRyYWluZXIgYXV0b21hdGljYWxseSBsb2dzIHRvIFcmQgp0cmFpbmVyID0gVHJhaW5lcigKICAgIG1vZGVsPW1vZGVsLAogICAgYXJncz10cmFpbmluZ19hcmdzLAogICAgdHJhaW5fZGF0YXNldD10cmFpbl9kYXRhc2V0LAogICAgZXZhbF9kYXRhc2V0PWV2YWxfZGF0YXNldCwKICAgIGNvbXB1dGVfbWV0cmljcz1jb21wdXRlX21ldHJpY3MKKQoKIyBUcmFpbiAobWV0cmljcyBsb2dnZWQgYXV0b21hdGljYWxseSkKdHJhaW5lci50cmFpbigpCgojIEZpbmlzaCBXJkIgcnVuCndhbmRiLmZpbmlzaCgpCmBgYAoKIyMjIEN1c3RvbSBMb2dnaW5nCgpgYGBweXRob24KZnJvbSB0cmFuc2Zvcm1lcnMgaW1wb3J0IFRyYWluZXIsIFRyYWluaW5nQXJndW1lbnRzCmZyb20gdHJhbnNmb3JtZXJzLmludGVncmF0aW9ucyBpbXBvcnQgV2FuZGJDYWxsYmFjawppbXBvcnQgd2FuZGIKCmNsYXNzIEN1c3RvbVdhbmRiQ2FsbGJhY2soV2FuZGJDYWxsYmFjayk6CiAgICBkZWYgb25fZXZhbHVhdGUoc2VsZiwgYXJncywgc3RhdGUsIGNvbnRyb2wsIG1ldHJpY3M9Tm9uZSwgKiprd2FyZ3MpOgogICAgICAgIHN1cGVyKCkub25fZXZhbHVhdGUoYXJncywgc3RhdGUsIGNvbnRyb2wsIG1ldHJpY3MsICoqa3dhcmdzKQoKICAgICAgICAjIExvZyBjdXN0b20gbWV0cmljcwogICAgICAgIHdhbmRiLmxvZyh7CiAgICAgICAgICAgICJjdXN0b20vZXZhbF9zY29yZSI6IG1ldHJpY3NbImV2YWxfYWNjdXJhY3kiXSAqIDEwMCwKICAgICAgICAgICAgImN1c3RvbS9lcG9jaCI6IHN0YXRlLmVwb2NoCiAgICAgICAgfSkKCiMgVXNlIGN1c3RvbSBjYWxsYmFjawp0cmFpbmVyID0gVHJhaW5lcigKICAgIG1vZGVsPW1vZGVsLAogICAgYXJncz10cmFpbmluZ19hcmdzLAogICAgdHJhaW5fZGF0YXNldD10cmFpbl9kYXRhc2V0LAogICAgZXZhbF9kYXRhc2V0PWV2YWxfZGF0YXNldCwKICAgIGNhbGxiYWNrcz1bQ3VzdG9tV2FuZGJDYWxsYmFjaygpXQopCmBgYAoKIyMjIExvZyBNb2RlbCB0byBSZWdpc3RyeQoKYGBgcHl0aG9uCmZyb20gdHJhbnNmb3JtZXJzIGltcG9ydCBUcmFpbmVyLCBUcmFpbmluZ0FyZ3VtZW50cwoKdHJhaW5pbmdfYXJncyA9IFRyYWluaW5nQXJndW1lbnRzKAogICAgb3V0cHV0X2Rpcj0iLi9yZXN1bHRzIiwKICAgIHJlcG9ydF90bz0id2FuZGIiLAogICAgbG9hZF9iZXN0X21vZGVsX2F0X2VuZD1UcnVlCikKCnRyYWluZXIgPSBUcmFpbmVyKAogICAgbW9kZWw9bW9kZWwsCiAgICBhcmdzPXRyYWluaW5nX2FyZ3MsCiAgICB0cmFpbl9kYXRhc2V0PXRyYWluX2RhdGFzZXQsCiAgICBldmFsX2RhdGFzZXQ9ZXZhbF9kYXRhc2V0CikKCnRyYWluZXIudHJhaW4oKQoKIyBTYXZlIGZpbmFsIG1vZGVsIGFzIGFydGlmYWN0Cm1vZGVsX2FydGlmYWN0ID0gd2FuZGIuQXJ0aWZhY3QoCiAgICAnaGYtYmVydC1tb2RlbCcsCiAgICB0eXBlPSdtb2RlbCcsCiAgICBkZXNjcmlwdGlvbj0nQkVSVCBmaW5ldHVuZWQgb24gc2VudGltZW50IGFuYWx5c2lzJwopCgojIFNhdmUgbW9kZWwgZmlsZXMKdHJhaW5lci5zYXZlX21vZGVsKCIuL2ZpbmFsX21vZGVsIikKbW9kZWxfYXJ0aWZhY3QuYWRkX2RpcigiLi9maW5hbF9tb2RlbCIpCgojIExvZyBhcnRpZmFjdAp3YW5kYi5sb2dfYXJ0aWZhY3QobW9kZWxfYXJ0aWZhY3QsIGFsaWFzZXM9WydiZXN0JywgJ3Byb2R1Y3Rpb24nXSkKd2FuZGIuZmluaXNoKCkKYGBgCgojIyBQeVRvcmNoIExpZ2h0bmluZwoKIyMjIEJhc2ljIEludGVncmF0aW9uCgpgYGBweXRob24KaW1wb3J0IHB5dG9yY2hfbGlnaHRuaW5nIGFzIHBsCmZyb20gcHl0b3JjaF9saWdodG5pbmcubG9nZ2VycyBpbXBvcnQgV2FuZGJMb2dnZXIKaW1wb3J0IHdhbmRiCgojIENyZWF0ZSBXJkIgbG9nZ2VyCndhbmRiX2xvZ2dlciA9IFdhbmRiTG9nZ2VyKAogICAgcHJvamVjdD0ibGlnaHRuaW5nLWRlbW8iLAogICAgbmFtZT0icmVzbmV0NTAtdHJhaW5pbmciLAogICAgbG9nX21vZGVsPVRydWUsICAjIExvZyBtb2RlbCBjaGVja3BvaW50cyBhcyBhcnRpZmFjdHMKICAgIHNhdmVfY29kZT1UcnVlICAgIyBTYXZlIGNvZGUgYXMgYXJ0aWZhY3QKKQoKIyBMaWdodG5pbmcgbW9kdWxlCmNsYXNzIExpdE1vZGVsKHBsLkxpZ2h0bmluZ01vZHVsZSk6CiAgICBkZWYgX19pbml0X18oc2VsZiwgbGVhcm5pbmdfcmF0ZT0wLjAwMSk6CiAgICAgICAgc3VwZXIoKS5fX2luaXRfXygpCiAgICAgICAgc2VsZi5zYXZlX2h5cGVycGFyYW1ldGVycygpCiAgICAgICAgc2VsZi5tb2RlbCA9IGNyZWF0ZV9tb2RlbCgpCgogICAgZGVmIHRyYWluaW5nX3N0ZXAoc2VsZiwgYmF0Y2gsIGJhdGNoX2lkeCk6CiAgICAgICAgeCwgeSA9IGJhdGNoCiAgICAgICAgeV9oYXQgPSBzZWxmLm1vZGVsKHgpCiAgICAgICAgbG9zcyA9IEYuY3Jvc3NfZW50cm9weSh5X2hhdCwgeSkKCiAgICAgICAgIyBMb2cgbWV0cmljcyAoYXV0b21hdGljYWxseSBzZW50IHRvIFcmQikKICAgICAgICBzZWxmLmxvZygndHJhaW4vbG9zcycsIGxvc3MsIG9uX3N0ZXA9VHJ1ZSwgb25fZXBvY2g9VHJ1ZSkKICAgICAgICBzZWxmLmxvZygndHJhaW4vYWNjdXJhY3knLCBhY2N1cmFjeSh5X2hhdCwgeSksIG9uX2Vwb2NoPVRydWUpCgogICAgICAgIHJldHVybiBsb3NzCgogICAgZGVmIHZhbGlkYXRpb25fc3RlcChzZWxmLCBiYXRjaCwgYmF0Y2hfaWR4KToKICAgICAgICB4LCB5ID0gYmF0Y2gKICAgICAgICB5X2hhdCA9IHNlbGYubW9kZWwoeCkKICAgICAgICBsb3NzID0gRi5jcm9zc19lbnRyb3B5KHlfaGF0LCB5KQoKICAgICAgICBzZWxmLmxvZygndmFsL2xvc3MnLCBsb3NzLCBvbl9zdGVwPUZhbHNlLCBvbl9lcG9jaD1UcnVlKQogICAgICAgIHNlbGYubG9nKCd2YWwvYWNjdXJhY3knLCBhY2N1cmFjeSh5X2hhdCwgeSksIG9uX2Vwb2NoPVRydWUpCgogICAgICAgIHJldHVybiBsb3NzCgogICAgZGVmIGNvbmZpZ3VyZV9vcHRpbWl6ZXJzKHNlbGYpOgogICAgICAgIHJldHVybiB0b3JjaC5vcHRpbS5BZGFtKHNlbGYucGFyYW1ldGVycygpLCBscj1zZWxmLmhwYXJhbXMubGVhcm5pbmdfcmF0ZSkKCiMgVHJhaW5lciB3aXRoIFcmQiBsb2dnZXIKdHJhaW5lciA9IHBsLlRyYWluZXIoCiAgICBsb2dnZXI9d2FuZGJfbG9nZ2VyLAogICAgbWF4X2Vwb2Nocz0xMCwKICAgIGFjY2VsZXJhdG9yPSJncHUiLAogICAgZGV2aWNlcz0xCikKCiMgVHJhaW4gKG1ldHJpY3MgbG9nZ2VkIGF1dG9tYXRpY2FsbHkpCnRyYWluZXIuZml0KG1vZGVsLCBkYXRhbW9kdWxlPWRtKQoKIyBGaW5pc2ggVyZCIHJ1bgp3YW5kYi5maW5pc2goKQpgYGAKCiMjIyBMb2cgTWVkaWEKCmBgYHB5dGhvbgpjbGFzcyBMaXRNb2RlbChwbC5MaWdodG5pbmdNb2R1bGUpOgogICAgZGVmIHZhbGlkYXRpb25fc3RlcChzZWxmLCBiYXRjaCwgYmF0Y2hfaWR4KToKICAgICAgICB4LCB5ID0gYmF0Y2gKICAgICAgICB5X2hhdCA9IHNlbGYubW9kZWwoeCkKCiAgICAgICAgIyBMb2cgaW1hZ2VzIChmaXJzdCBiYXRjaCBvbmx5KQogICAgICAgIGlmIGJhdGNoX2lkeCA9PSAwOgogICAgICAgICAgICBzZWxmLmxvZ2dlci5leHBlcmltZW50LmxvZyh7CiAgICAgICAgICAgICAgICAiZXhhbXBsZXMiOiBbd2FuZGIuSW1hZ2UoaW1nKSBmb3IgaW1nIGluIHhbOjhdXQogICAgICAgICAgICB9KQoKICAgICAgICByZXR1cm4gbG9zcwoKICAgIGRlZiBvbl92YWxpZGF0aW9uX2Vwb2NoX2VuZChzZWxmKToKICAgICAgICAjIExvZyBjb25mdXNpb24gbWF0cml4CiAgICAgICAgY20gPSBjb21wdXRlX2NvbmZ1c2lvbl9tYXRyaXgoc2VsZi5hbGxfcHJlZHMsIHNlbGYuYWxsX3RhcmdldHMpCgogICAgICAgIHNlbGYubG9nZ2VyLmV4cGVyaW1lbnQubG9nKHsKICAgICAgICAgICAgImNvbmZ1c2lvbl9tYXRyaXgiOiB3YW5kYi5wbG90LmNvbmZ1c2lvbl9tYXRyaXgoCiAgICAgICAgICAgICAgICBwcm9icz1Ob25lLAogICAgICAgICAgICAgICAgeV90cnVlPXNlbGYuYWxsX3RhcmdldHMsCiAgICAgICAgICAgICAgICBwcmVkcz1zZWxmLmFsbF9wcmVkcywKICAgICAgICAgICAgICAgIGNsYXNzX25hbWVzPXNlbGYuY2xhc3NfbmFtZXMKICAgICAgICAgICAgKQogICAgICAgIH0pCmBgYAoKIyMjIEh5cGVycGFyYW1ldGVyIFN3ZWVwcwoKYGBgcHl0aG9uCmltcG9ydCBweXRvcmNoX2xpZ2h0bmluZyBhcyBwbApmcm9tIHB5dG9yY2hfbGlnaHRuaW5nLmxvZ2dlcnMgaW1wb3J0IFdhbmRiTG9nZ2VyCmltcG9ydCB3YW5kYgoKIyBEZWZpbmUgc3dlZXAKc3dlZXBfY29uZmlnID0gewogICAgJ21ldGhvZCc6ICdiYXllcycsCiAgICAnbWV0cmljJzogeyduYW1lJzogJ3ZhbC9hY2N1cmFjeScsICdnb2FsJzogJ21heGltaXplJ30sCiAgICAncGFyYW1ldGVycyc6IHsKICAgICAgICAnbGVhcm5pbmdfcmF0ZSc6IHsnbWluJzogMWUtNSwgJ21heCc6IDFlLTIsICdkaXN0cmlidXRpb24nOiAnbG9nX3VuaWZvcm0nfSwKICAgICAgICAnYmF0Y2hfc2l6ZSc6IHsndmFsdWVzJzogWzE2LCAzMiwgNjRdfSwKICAgICAgICAnaGlkZGVuX3NpemUnOiB7J3ZhbHVlcyc6IFsxMjgsIDI1NiwgNTEyXX0KICAgIH0KfQoKc3dlZXBfaWQgPSB3YW5kYi5zd2VlcChzd2VlcF9jb25maWcsIHByb2plY3Q9ImxpZ2h0bmluZy1zd2VlcHMiKQoKZGVmIHRyYWluKCk6CiAgICAjIEluaXRpYWxpemUgVyZCCiAgICBydW4gPSB3YW5kYi5pbml0KCkKCiAgICAjIEdldCBoeXBlcnBhcmFtZXRlcnMKICAgIGNvbmZpZyA9IHdhbmRiLmNvbmZpZwoKICAgICMgQ3JlYXRlIGxvZ2dlcgogICAgd2FuZGJfbG9nZ2VyID0gV2FuZGJMb2dnZXIoKQoKICAgICMgQ3JlYXRlIG1vZGVsIHdpdGggc3dlZXAgcGFyYW1zCiAgICBtb2RlbCA9IExpdE1vZGVsKAogICAgICAgIGxlYXJuaW5nX3JhdGU9Y29uZmlnLmxlYXJuaW5nX3JhdGUsCiAgICAgICAgaGlkZGVuX3NpemU9Y29uZmlnLmhpZGRlbl9zaXplCiAgICApCgogICAgIyBDcmVhdGUgZGF0YW1vZHVsZSB3aXRoIHN3ZWVwIGJhdGNoIHNpemUKICAgIGRtID0gRGF0YU1vZHVsZShiYXRjaF9zaXplPWNvbmZpZy5iYXRjaF9zaXplKQoKICAgICMgVHJhaW4KICAgIHRyYWluZXIgPSBwbC5UcmFpbmVyKGxvZ2dlcj13YW5kYl9sb2dnZXIsIG1heF9lcG9jaHM9MTApCiAgICB0cmFpbmVyLmZpdChtb2RlbCwgZG0pCgojIFJ1biBzd2VlcAp3YW5kYi5hZ2VudChzd2VlcF9pZCwgZnVuY3Rpb249dHJhaW4sIGNvdW50PTMwKQpgYGAKCiMjIEtlcmFzL1RlbnNvckZsb3cKCiMjIyBXaXRoIENhbGxiYWNrCgpgYGBweXRob24KaW1wb3J0IHRlbnNvcmZsb3cgYXMgdGYKZnJvbSB3YW5kYi5rZXJhcyBpbXBvcnQgV2FuZGJDYWxsYmFjawppbXBvcnQgd2FuZGIKCiMgSW5pdGlhbGl6ZSBXJkIKd2FuZGIuaW5pdCgKICAgIHByb2plY3Q9ImtlcmFzLWRlbW8iLAogICAgY29uZmlnPXsKICAgICAgICAibGVhcm5pbmdfcmF0ZSI6IDAuMDAxLAogICAgICAgICJlcG9jaHMiOiAxMCwKICAgICAgICAiYmF0Y2hfc2l6ZSI6IDMyCiAgICB9CikKCmNvbmZpZyA9IHdhbmRiLmNvbmZpZwoKIyBCdWlsZCBtb2RlbAptb2RlbCA9IHRmLmtlcmFzLlNlcXVlbnRpYWwoWwogICAgdGYua2VyYXMubGF5ZXJzLkRlbnNlKDEyOCwgYWN0aXZhdGlvbj0ncmVsdScpLAogICAgdGYua2VyYXMubGF5ZXJzLkRyb3BvdXQoMC4yKSwKICAgIHRmLmtlcmFzLmxheWVycy5EZW5zZSgxMCwgYWN0aXZhdGlvbj0nc29mdG1heCcpCl0pCgptb2RlbC5jb21waWxlKAogICAgb3B0aW1pemVyPXRmLmtlcmFzLm9wdGltaXplcnMuQWRhbShjb25maWcubGVhcm5pbmdfcmF0ZSksCiAgICBsb3NzPSdzcGFyc2VfY2F0ZWdvcmljYWxfY3Jvc3NlbnRyb3B5JywKICAgIG1ldHJpY3M9WydhY2N1cmFjeSddCikKCiMgVHJhaW4gd2l0aCBXJkIgY2FsbGJhY2sKaGlzdG9yeSA9IG1vZGVsLmZpdCgKICAgIHhfdHJhaW4sIHlfdHJhaW4sCiAgICB2YWxpZGF0aW9uX2RhdGE9KHhfdmFsLCB5X3ZhbCksCiAgICBlcG9jaHM9Y29uZmlnLmVwb2NocywKICAgIGJhdGNoX3NpemU9Y29uZmlnLmJhdGNoX3NpemUsCiAgICBjYWxsYmFja3M9WwogICAgICAgIFdhbmRiQ2FsbGJhY2soCiAgICAgICAgICAgIGxvZ193ZWlnaHRzPVRydWUsICAgICAgIyBMb2cgbW9kZWwgd2VpZ2h0cwogICAgICAgICAgICBsb2dfZ3JhZGllbnRzPVRydWUsICAgICMgTG9nIGdyYWRpZW50cwogICAgICAgICAgICB0cmFpbmluZ19kYXRhPSh4X3RyYWluLCB5X3RyYWluKSwKICAgICAgICAgICAgdmFsaWRhdGlvbl9kYXRhPSh4X3ZhbCwgeV92YWwpLAogICAgICAgICAgICBsYWJlbHM9Y2xhc3NfbmFtZXMKICAgICAgICApCiAgICBdCikKCiMgU2F2ZSBtb2RlbCBhcyBhcnRpZmFjdAptb2RlbC5zYXZlKCdtb2RlbC5oNScpCmFydGlmYWN0ID0gd2FuZGIuQXJ0aWZhY3QoJ2tlcmFzLW1vZGVsJywgdHlwZT0nbW9kZWwnKQphcnRpZmFjdC5hZGRfZmlsZSgnbW9kZWwuaDUnKQp3YW5kYi5sb2dfYXJ0aWZhY3QoYXJ0aWZhY3QpCgp3YW5kYi5maW5pc2goKQpgYGAKCiMjIyBDdXN0b20gVHJhaW5pbmcgTG9vcAoKYGBgcHl0aG9uCmltcG9ydCB0ZW5zb3JmbG93IGFzIHRmCmltcG9ydCB3YW5kYgoKd2FuZGIuaW5pdChwcm9qZWN0PSJ0Zi1jdXN0b20tbG9vcCIpCgojIE1vZGVsLCBvcHRpbWl6ZXIsIGxvc3MKbW9kZWwgPSBjcmVhdGVfbW9kZWwoKQpvcHRpbWl6ZXIgPSB0Zi5rZXJhcy5vcHRpbWl6ZXJzLkFkYW0oMWUtMykKbG9zc19mbiA9IHRmLmtlcmFzLmxvc3Nlcy5TcGFyc2VDYXRlZ29yaWNhbENyb3NzZW50cm9weSgpCgojIE1ldHJpY3MKdHJhaW5fbG9zcyA9IHRmLmtlcmFzLm1ldHJpY3MuTWVhbihuYW1lPSd0cmFpbl9sb3NzJykKdHJhaW5fYWNjdXJhY3kgPSB0Zi5rZXJhcy5tZXRyaWNzLlNwYXJzZUNhdGVnb3JpY2FsQWNjdXJhY3kobmFtZT0ndHJhaW5fYWNjdXJhY3knKQoKQHRmLmZ1bmN0aW9uCmRlZiB0cmFpbl9zdGVwKHgsIHkpOgogICAgd2l0aCB0Zi5HcmFkaWVudFRhcGUoKSBhcyB0YXBlOgogICAgICAgIHByZWRpY3Rpb25zID0gbW9kZWwoeCwgdHJhaW5pbmc9VHJ1ZSkKICAgICAgICBsb3NzID0gbG9zc19mbih5LCBwcmVkaWN0aW9ucykKCiAgICBncmFkaWVudHMgPSB0YXBlLmdyYWRpZW50KGxvc3MsIG1vZGVsLnRyYWluYWJsZV92YXJpYWJsZXMpCiAgICBvcHRpbWl6ZXIuYXBwbHlfZ3JhZGllbnRzKHppcChncmFkaWVudHMsIG1vZGVsLnRyYWluYWJsZV92YXJpYWJsZXMpKQoKICAgIHRyYWluX2xvc3MobG9zcykKICAgIHRyYWluX2FjY3VyYWN5KHksIHByZWRpY3Rpb25zKQoKIyBUcmFpbmluZyBsb29wCmZvciBlcG9jaCBpbiByYW5nZShFUE9DSFMpOgogICAgdHJhaW5fbG9zcy5yZXNldF9zdGF0ZXMoKQogICAgdHJhaW5fYWNjdXJhY3kucmVzZXRfc3RhdGVzKCkKCiAgICBmb3Igc3RlcCwgKHgsIHkpIGluIGVudW1lcmF0ZSh0cmFpbl9kYXRhc2V0KToKICAgICAgICB0cmFpbl9zdGVwKHgsIHkpCgogICAgICAgICMgTG9nIGV2ZXJ5IDEwMCBzdGVwcwogICAgICAgIGlmIHN0ZXAgJSAxMDAgPT0gMDoKICAgICAgICAgICAgd2FuZGIubG9nKHsKICAgICAgICAgICAgICAgICd0cmFpbi9sb3NzJzogdHJhaW5fbG9zcy5yZXN1bHQoKS5udW1weSgpLAogICAgICAgICAgICAgICAgJ3RyYWluL2FjY3VyYWN5JzogdHJhaW5fYWNjdXJhY3kucmVzdWx0KCkubnVtcHkoKSwKICAgICAgICAgICAgICAgICdlcG9jaCc6IGVwb2NoLAogICAgICAgICAgICAgICAgJ3N0ZXAnOiBzdGVwCiAgICAgICAgICAgIH0pCgogICAgIyBMb2cgZXBvY2ggbWV0cmljcwogICAgd2FuZGIubG9nKHsKICAgICAgICAnZXBvY2gvdHJhaW5fbG9zcyc6IHRyYWluX2xvc3MucmVzdWx0KCkubnVtcHkoKSwKICAgICAgICAnZXBvY2gvdHJhaW5fYWNjdXJhY3knOiB0cmFpbl9hY2N1cmFjeS5yZXN1bHQoKS5udW1weSgpLAogICAgICAgICdlcG9jaCc6IGVwb2NoCiAgICB9KQoKd2FuZGIuZmluaXNoKCkKYGBgCgojIyBGYXN0LmFpCgojIyMgV2l0aCBDYWxsYmFjawoKYGBgcHl0aG9uCmZyb20gZmFzdGFpLnZpc2lvbi5hbGwgaW1wb3J0ICoKZnJvbSBmYXN0YWkuY2FsbGJhY2sud2FuZGIgaW1wb3J0ICoKaW1wb3J0IHdhbmRiCgojIEluaXRpYWxpemUgVyZCCndhbmRiLmluaXQocHJvamVjdD0iZmFzdGFpLWRlbW8iKQoKIyBDcmVhdGUgZGF0YSBsb2FkZXJzCmRscyA9IEltYWdlRGF0YUxvYWRlcnMuZnJvbV9mb2xkZXIoCiAgICBwYXRoLAogICAgdHJhaW49J3RyYWluJywKICAgIHZhbGlkPSd2YWxpZCcsCiAgICBicz02NAopCgojIENyZWF0ZSBsZWFybmVyIHdpdGggVyZCIGNhbGxiYWNrCmxlYXJuID0gdmlzaW9uX2xlYXJuZXIoCiAgICBkbHMsCiAgICByZXNuZXQzNCwKICAgIG1ldHJpY3M9YWNjdXJhY3ksCiAgICBjYnM9V2FuZGJDYWxsYmFjaygKICAgICAgICBsb2dfcHJlZHM9VHJ1ZSwgICAgICMgTG9nIHByZWRpY3Rpb25zCiAgICAgICAgbG9nX21vZGVsPVRydWUsICAgICAjIExvZyBtb2RlbCBhcyBhcnRpZmFjdAogICAgICAgIGxvZ19kYXRhc2V0PVRydWUgICAgIyBMb2cgZGF0YXNldCBhcyBhcnRpZmFjdAogICAgKQopCgojIFRyYWluIChtZXRyaWNzIGxvZ2dlZCBhdXRvbWF0aWNhbGx5KQpsZWFybi5maW5lX3R1bmUoNSkKCndhbmRiLmZpbmlzaCgpCmBgYAoKIyMgWEdCb29zdC9MaWdodEdCTQoKIyMjIFhHQm9vc3QKCmBgYHB5dGhvbgppbXBvcnQgeGdib29zdCBhcyB4Z2IKaW1wb3J0IHdhbmRiCgojIEluaXRpYWxpemUgVyZCCnJ1biA9IHdhbmRiLmluaXQocHJvamVjdD0ieGdib29zdC1kZW1vIiwgY29uZmlnPXsKICAgICJtYXhfZGVwdGgiOiA2LAogICAgImxlYXJuaW5nX3JhdGUiOiAwLjEsCiAgICAibl9lc3RpbWF0b3JzIjogMTAwCn0pCgpjb25maWcgPSB3YW5kYi5jb25maWcKCiMgQ3JlYXRlIERNYXRyaXgKZHRyYWluID0geGdiLkRNYXRyaXgoWF90cmFpbiwgbGFiZWw9eV90cmFpbikKZHZhbCA9IHhnYi5ETWF0cml4KFhfdmFsLCBsYWJlbD15X3ZhbCkKCiMgWEdCb29zdCBwYXJhbXMKcGFyYW1zID0gewogICAgJ21heF9kZXB0aCc6IGNvbmZpZy5tYXhfZGVwdGgsCiAgICAnbGVhcm5pbmdfcmF0ZSc6IGNvbmZpZy5sZWFybmluZ19yYXRlLAogICAgJ29iamVjdGl2ZSc6ICdiaW5hcnk6bG9naXN0aWMnLAogICAgJ2V2YWxfbWV0cmljJzogWydsb2dsb3NzJywgJ2F1YyddCn0KCiMgQ3VzdG9tIGNhbGxiYWNrIGZvciBXJkIKZGVmIHdhbmRiX2NhbGxiYWNrKGVudik6CiAgICAiIiJMb2cgWEdCb29zdCBtZXRyaWNzIHRvIFcmQi4iIiIKICAgIGZvciBtZXRyaWNfbmFtZSwgbWV0cmljX3ZhbHVlIGluIGVudi5ldmFsdWF0aW9uX3Jlc3VsdF9saXN0OgogICAgICAgIHdhbmRiLmxvZyh7CiAgICAgICAgICAgIGYie21ldHJpY19uYW1lfSI6IG1ldHJpY192YWx1ZSwKICAgICAgICAgICAgIml0ZXJhdGlvbiI6IGVudi5pdGVyYXRpb24KICAgICAgICB9KQoKIyBUcmFpbiB3aXRoIGNhbGxiYWNrCm1vZGVsID0geGdiLnRyYWluKAogICAgcGFyYW1zLAogICAgZHRyYWluLAogICAgbnVtX2Jvb3N0X3JvdW5kPWNvbmZpZy5uX2VzdGltYXRvcnMsCiAgICBldmFscz1bKGR0cmFpbiwgJ3RyYWluJyksIChkdmFsLCAndmFsJyldLAogICAgY2FsbGJhY2tzPVt3YW5kYl9jYWxsYmFja10sCiAgICB2ZXJib3NlX2V2YWw9MTAKKQoKIyBTYXZlIG1vZGVsCm1vZGVsLnNhdmVfbW9kZWwoJ3hnYm9vc3RfbW9kZWwuanNvbicpCmFydGlmYWN0ID0gd2FuZGIuQXJ0aWZhY3QoJ3hnYm9vc3QtbW9kZWwnLCB0eXBlPSdtb2RlbCcpCmFydGlmYWN0LmFkZF9maWxlKCd4Z2Jvb3N0X21vZGVsLmpzb24nKQp3YW5kYi5sb2dfYXJ0aWZhY3QoYXJ0aWZhY3QpCgp3YW5kYi5maW5pc2goKQpgYGAKCiMjIyBMaWdodEdCTQoKYGBgcHl0aG9uCmltcG9ydCBsaWdodGdibSBhcyBsZ2IKaW1wb3J0IHdhbmRiCgpydW4gPSB3YW5kYi5pbml0KHByb2plY3Q9ImxnYm0tZGVtbyIpCgojIENyZWF0ZSBkYXRhc2V0cwp0cmFpbl9kYXRhID0gbGdiLkRhdGFzZXQoWF90cmFpbiwgbGFiZWw9eV90cmFpbikKdmFsX2RhdGEgPSBsZ2IuRGF0YXNldChYX3ZhbCwgbGFiZWw9eV92YWwsIHJlZmVyZW5jZT10cmFpbl9kYXRhKQoKIyBQYXJhbWV0ZXJzCnBhcmFtcyA9IHsKICAgICdvYmplY3RpdmUnOiAnYmluYXJ5JywKICAgICdtZXRyaWMnOiBbJ2JpbmFyeV9sb2dsb3NzJywgJ2F1YyddLAogICAgJ2xlYXJuaW5nX3JhdGUnOiAwLjEsCiAgICAnbnVtX2xlYXZlcyc6IDMxCn0KCiMgQ3VzdG9tIGNhbGxiYWNrCmRlZiBsb2dfdG9fd2FuZGIoZW52KToKICAgICIiIkxvZyBMaWdodEdCTSBtZXRyaWNzIHRvIFcmQi4iIiIKICAgIGZvciBlbnRyeSBpbiBlbnYuZXZhbHVhdGlvbl9yZXN1bHRfbGlzdDoKICAgICAgICBkYXRhc2V0X25hbWUsIG1ldHJpY19uYW1lLCBtZXRyaWNfdmFsdWUsIF8gPSBlbnRyeQogICAgICAgIHdhbmRiLmxvZyh7CiAgICAgICAgICAgIGYie2RhdGFzZXRfbmFtZX0ve21ldHJpY19uYW1lfSI6IG1ldHJpY192YWx1ZSwKICAgICAgICAgICAgIml0ZXJhdGlvbiI6IGVudi5pdGVyYXRpb24KICAgICAgICB9KQoKIyBUcmFpbgptb2RlbCA9IGxnYi50cmFpbigKICAgIHBhcmFtcywKICAgIHRyYWluX2RhdGEsCiAgICBudW1fYm9vc3Rfcm91bmQ9MTAwLAogICAgdmFsaWRfc2V0cz1bdHJhaW5fZGF0YSwgdmFsX2RhdGFdLAogICAgdmFsaWRfbmFtZXM9Wyd0cmFpbicsICd2YWwnXSwKICAgIGNhbGxiYWNrcz1bbG9nX3RvX3dhbmRiXQopCgojIFNhdmUgbW9kZWwKbW9kZWwuc2F2ZV9tb2RlbCgnbGdibV9tb2RlbC50eHQnKQphcnRpZmFjdCA9IHdhbmRiLkFydGlmYWN0KCdsZ2JtLW1vZGVsJywgdHlwZT0nbW9kZWwnKQphcnRpZmFjdC5hZGRfZmlsZSgnbGdibV9tb2RlbC50eHQnKQp3YW5kYi5sb2dfYXJ0aWZhY3QoYXJ0aWZhY3QpCgp3YW5kYi5maW5pc2goKQpgYGAKCiMjIFB5VG9yY2ggTmF0aXZlCgojIyMgVHJhaW5pbmcgTG9vcCBJbnRlZ3JhdGlvbgoKYGBgcHl0aG9uCmltcG9ydCB0b3JjaAppbXBvcnQgdG9yY2gubm4gYXMgbm4KaW1wb3J0IHRvcmNoLm9wdGltIGFzIG9wdGltCmltcG9ydCB3YW5kYgoKIyBJbml0aWFsaXplIFcmQgp3YW5kYi5pbml0KHByb2plY3Q9InB5dG9yY2gtbmF0aXZlIiwgY29uZmlnPXsKICAgICJsZWFybmluZ19yYXRlIjogMC4wMDEsCiAgICAiZXBvY2hzIjogMTAsCiAgICAiYmF0Y2hfc2l6ZSI6IDMyCn0pCgpjb25maWcgPSB3YW5kYi5jb25maWcKCiMgTW9kZWwsIGxvc3MsIG9wdGltaXplcgptb2RlbCA9IGNyZWF0ZV9tb2RlbCgpCmNyaXRlcmlvbiA9IG5uLkNyb3NzRW50cm9weUxvc3MoKQpvcHRpbWl6ZXIgPSBvcHRpbS5BZGFtKG1vZGVsLnBhcmFtZXRlcnMoKSwgbHI9Y29uZmlnLmxlYXJuaW5nX3JhdGUpCgojIFdhdGNoIG1vZGVsIChsb2dzIGdyYWRpZW50cyBhbmQgcGFyYW1ldGVycykKd2FuZGIud2F0Y2gobW9kZWwsIGNyaXRlcmlvbiwgbG9nPSJhbGwiLCBsb2dfZnJlcT0xMDApCgojIFRyYWluaW5nIGxvb3AKZm9yIGVwb2NoIGluIHJhbmdlKGNvbmZpZy5lcG9jaHMpOgogICAgbW9kZWwudHJhaW4oKQogICAgdHJhaW5fbG9zcyA9IDAuMAogICAgY29ycmVjdCA9IDAKICAgIHRvdGFsID0gMAoKICAgIGZvciBiYXRjaF9pZHgsIChkYXRhLCB0YXJnZXQpIGluIGVudW1lcmF0ZSh0cmFpbl9sb2FkZXIpOgogICAgICAgIGRhdGEsIHRhcmdldCA9IGRhdGEudG8oZGV2aWNlKSwgdGFyZ2V0LnRvKGRldmljZSkKCiAgICAgICAgIyBGb3J3YXJkIHBhc3MKICAgICAgICBvcHRpbWl6ZXIuemVyb19ncmFkKCkKICAgICAgICBvdXRwdXQgPSBtb2RlbChkYXRhKQogICAgICAgIGxvc3MgPSBjcml0ZXJpb24ob3V0cHV0LCB0YXJnZXQpCgogICAgICAgICMgQmFja3dhcmQgcGFzcwogICAgICAgIGxvc3MuYmFja3dhcmQoKQogICAgICAgIG9wdGltaXplci5zdGVwKCkKCiAgICAgICAgIyBUcmFjayBtZXRyaWNzCiAgICAgICAgdHJhaW5fbG9zcyArPSBsb3NzLml0ZW0oKQogICAgICAgIF8sIHByZWRpY3RlZCA9IG91dHB1dC5tYXgoMSkKICAgICAgICB0b3RhbCArPSB0YXJnZXQuc2l6ZSgwKQogICAgICAgIGNvcnJlY3QgKz0gcHJlZGljdGVkLmVxKHRhcmdldCkuc3VtKCkuaXRlbSgpCgogICAgICAgICMgTG9nIGV2ZXJ5IDEwMCBiYXRjaGVzCiAgICAgICAgaWYgYmF0Y2hfaWR4ICUgMTAwID09IDA6CiAgICAgICAgICAgIHdhbmRiLmxvZyh7CiAgICAgICAgICAgICAgICAndHJhaW4vbG9zcyc6IGxvc3MuaXRlbSgpLAogICAgICAgICAgICAgICAgJ3RyYWluL2JhdGNoX2FjY3VyYWN5JzogMTAwLiAqIGNvcnJlY3QgLyB0b3RhbCwKICAgICAgICAgICAgICAgICdlcG9jaCc6IGVwb2NoLAogICAgICAgICAgICAgICAgJ2JhdGNoJzogYmF0Y2hfaWR4CiAgICAgICAgICAgIH0pCgogICAgIyBWYWxpZGF0aW9uCiAgICBtb2RlbC5ldmFsKCkKICAgIHZhbF9sb3NzID0gMC4wCiAgICB2YWxfY29ycmVjdCA9IDAKICAgIHZhbF90b3RhbCA9IDAKCiAgICB3aXRoIHRvcmNoLm5vX2dyYWQoKToKICAgICAgICBmb3IgZGF0YSwgdGFyZ2V0IGluIHZhbF9sb2FkZXI6CiAgICAgICAgICAgIGRhdGEsIHRhcmdldCA9IGRhdGEudG8oZGV2aWNlKSwgdGFyZ2V0LnRvKGRldmljZSkKICAgICAgICAgICAgb3V0cHV0ID0gbW9kZWwoZGF0YSkKICAgICAgICAgICAgbG9zcyA9IGNyaXRlcmlvbihvdXRwdXQsIHRhcmdldCkKCiAgICAgICAgICAgIHZhbF9sb3NzICs9IGxvc3MuaXRlbSgpCiAgICAgICAgICAgIF8sIHByZWRpY3RlZCA9IG91dHB1dC5tYXgoMSkKICAgICAgICAgICAgdmFsX3RvdGFsICs9IHRhcmdldC5zaXplKDApCiAgICAgICAgICAgIHZhbF9jb3JyZWN0ICs9IHByZWRpY3RlZC5lcSh0YXJnZXQpLnN1bSgpLml0ZW0oKQoKICAgICMgTG9nIGVwb2NoIG1ldHJpY3MKICAgIHdhbmRiLmxvZyh7CiAgICAgICAgJ2Vwb2NoL3RyYWluX2xvc3MnOiB0cmFpbl9sb3NzIC8gbGVuKHRyYWluX2xvYWRlciksCiAgICAgICAgJ2Vwb2NoL3RyYWluX2FjY3VyYWN5JzogMTAwLiAqIGNvcnJlY3QgLyB0b3RhbCwKICAgICAgICAnZXBvY2gvdmFsX2xvc3MnOiB2YWxfbG9zcyAvIGxlbih2YWxfbG9hZGVyKSwKICAgICAgICAnZXBvY2gvdmFsX2FjY3VyYWN5JzogMTAwLiAqIHZhbF9jb3JyZWN0IC8gdmFsX3RvdGFsLAogICAgICAgICdlcG9jaCc6IGVwb2NoCiAgICB9KQoKIyBTYXZlIGZpbmFsIG1vZGVsCnRvcmNoLnNhdmUobW9kZWwuc3RhdGVfZGljdCgpLCAnbW9kZWwucHRoJykKYXJ0aWZhY3QgPSB3YW5kYi5BcnRpZmFjdCgnZmluYWwtbW9kZWwnLCB0eXBlPSdtb2RlbCcpCmFydGlmYWN0LmFkZF9maWxlKCdtb2RlbC5wdGgnKQp3YW5kYi5sb2dfYXJ0aWZhY3QoYXJ0aWZhY3QpCgp3YW5kYi5maW5pc2goKQpgYGAKCiMjIEN1c3RvbSBJbnRlZ3JhdGlvbnMKCiMjIyBHZW5lcmljIEZyYW1ld29yayBJbnRlZ3JhdGlvbgoKYGBgcHl0aG9uCmltcG9ydCB3YW5kYgoKY2xhc3MgV2FuZGJJbnRlZ3JhdGlvbjoKICAgICIiIkdlbmVyaWMgVyZCIGludGVncmF0aW9uIHdyYXBwZXIuIiIiCgogICAgZGVmIF9faW5pdF9fKHNlbGYsIHByb2plY3QsIGNvbmZpZyk6CiAgICAgICAgc2VsZi5ydW4gPSB3YW5kYi5pbml0KHByb2plY3Q9cHJvamVjdCwgY29uZmlnPWNvbmZpZykKICAgICAgICBzZWxmLmNvbmZpZyA9IHdhbmRiLmNvbmZpZwogICAgICAgIHNlbGYuc3RlcCA9IDAKCiAgICBkZWYgbG9nX21ldHJpY3Moc2VsZiwgbWV0cmljcywgc3RlcD1Ob25lKToKICAgICAgICAiIiJMb2cgdHJhaW5pbmcgbWV0cmljcy4iIiIKICAgICAgICBpZiBzdGVwIGlzIE5vbmU6CiAgICAgICAgICAgIHN0ZXAgPSBzZWxmLnN0ZXAKICAgICAgICAgICAgc2VsZi5zdGVwICs9IDEKCiAgICAgICAgd2FuZGIubG9nKG1ldHJpY3MsIHN0ZXA9c3RlcCkKCiAgICBkZWYgbG9nX2ltYWdlcyhzZWxmLCBpbWFnZXMsIGNhcHRpb249IiIpOgogICAgICAgICIiIkxvZyBpbWFnZXMuIiIiCiAgICAgICAgd2FuZGIubG9nKHsKICAgICAgICAgICAgY2FwdGlvbjogW3dhbmRiLkltYWdlKGltZykgZm9yIGltZyBpbiBpbWFnZXNdCiAgICAgICAgfSkKCiAgICBkZWYgbG9nX3RhYmxlKHNlbGYsIGRhdGEsIGNvbHVtbnMpOgogICAgICAgICIiIkxvZyB0YWJ1bGFyIGRhdGEuIiIiCiAgICAgICAgdGFibGUgPSB3YW5kYi5UYWJsZShjb2x1bW5zPWNvbHVtbnMsIGRhdGE9ZGF0YSkKICAgICAgICB3YW5kYi5sb2coeyJ0YWJsZSI6IHRhYmxlfSkKCiAgICBkZWYgc2F2ZV9tb2RlbChzZWxmLCBtb2RlbF9wYXRoLCBtZXRhZGF0YT1Ob25lKToKICAgICAgICAiIiJTYXZlIG1vZGVsIGFzIGFydGlmYWN0LiIiIgogICAgICAgIGFydGlmYWN0ID0gd2FuZGIuQXJ0aWZhY3QoCiAgICAgICAgICAgICdtb2RlbCcsCiAgICAgICAgICAgIHR5cGU9J21vZGVsJywKICAgICAgICAgICAgbWV0YWRhdGE9bWV0YWRhdGEgb3Ige30KICAgICAgICApCiAgICAgICAgYXJ0aWZhY3QuYWRkX2ZpbGUobW9kZWxfcGF0aCkKICAgICAgICBzZWxmLnJ1bi5sb2dfYXJ0aWZhY3QoYXJ0aWZhY3QpCgogICAgZGVmIGZpbmlzaChzZWxmKToKICAgICAgICAiIiJGaW5pc2ggVyZCIHJ1bi4iIiIKICAgICAgICB3YW5kYi5maW5pc2goKQoKIyBVc2FnZQp3YiA9IFdhbmRiSW50ZWdyYXRpb24ocHJvamVjdD0ibXktcHJvamVjdCIsIGNvbmZpZz17ImxyIjogMC4wMDF9KQoKIyBUcmFpbmluZyBsb29wCmZvciBlcG9jaCBpbiByYW5nZSgxMCk6CiAgICAjIFlvdXIgdHJhaW5pbmcgY29kZQogICAgbG9zcywgYWNjdXJhY3kgPSB0cmFpbl9lcG9jaCgpCgogICAgIyBMb2cgbWV0cmljcwogICAgd2IubG9nX21ldHJpY3MoewogICAgICAgICd0cmFpbi9sb3NzJzogbG9zcywKICAgICAgICAndHJhaW4vYWNjdXJhY3knOiBhY2N1cmFjeQogICAgfSkKCiMgU2F2ZSBtb2RlbAp3Yi5zYXZlX21vZGVsKCdtb2RlbC5wdGgnLCBtZXRhZGF0YT17J2FjY3VyYWN5JzogMC45NX0pCndiLmZpbmlzaCgpCmBgYAoKIyMgUmVzb3VyY2VzCgotICoqSW50ZWdyYXRpb25zIEd1aWRlKio6IGh0dHBzOi8vZG9jcy53YW5kYi5haS9ndWlkZXMvaW50ZWdyYXRpb25zCi0gKipIdWdnaW5nRmFjZSoqOiBodHRwczovL2RvY3Mud2FuZGIuYWkvZ3VpZGVzL2ludGVncmF0aW9ucy9odWdnaW5nZmFjZQotICoqUHlUb3JjaCBMaWdodG5pbmcqKjogaHR0cHM6Ly9kb2NzLndhbmRiLmFpL2d1aWRlcy9pbnRlZ3JhdGlvbnMvbGlnaHRuaW5nCi0gKipLZXJhcyoqOiBodHRwczovL2RvY3Mud2FuZGIuYWkvZ3VpZGVzL2ludGVncmF0aW9ucy9rZXJhcwotICoqRXhhbXBsZXMqKjogaHR0cHM6Ly9naXRodWIuY29tL3dhbmRiL2V4YW1wbGVzCg==
+# Framework Integrations Guide
+
+Complete guide to integrating W&B with popular ML frameworks.
+
+## Table of Contents
+- HuggingFace Transformers
+- PyTorch Lightning
+- Keras/TensorFlow
+- Fast.ai
+- XGBoost/LightGBM
+- PyTorch Native
+- Custom Integrations
+
+## HuggingFace Transformers
+
+### Automatic Integration
+
+```python
+from transformers import Trainer, TrainingArguments
+import wandb
+
+# Initialize W&B
+wandb.init(project="hf-transformers", name="bert-finetuning")
+
+# Training arguments with W&B
+training_args = TrainingArguments(
+    output_dir="./results",
+    report_to="wandb",  # Enable W&B logging
+    run_name="bert-base-finetuning",
+
+    # Training params
+    num_train_epochs=3,
+    per_device_train_batch_size=16,
+    per_device_eval_batch_size=64,
+    learning_rate=2e-5,
+
+    # Logging
+    logging_dir="./logs",
+    logging_steps=100,
+    logging_first_step=True,
+
+    # Evaluation
+    evaluation_strategy="steps",
+    eval_steps=500,
+    save_steps=500,
+
+    # Other
+    load_best_model_at_end=True,
+    metric_for_best_model="eval_accuracy"
+)
+
+# Trainer automatically logs to W&B
+trainer = Trainer(
+    model=model,
+    args=training_args,
+    train_dataset=train_dataset,
+    eval_dataset=eval_dataset,
+    compute_metrics=compute_metrics
+)
+
+# Train (metrics logged automatically)
+trainer.train()
+
+# Finish W&B run
+wandb.finish()
+```
+
+### Custom Logging
+
+```python
+from transformers import Trainer, TrainingArguments
+from transformers.integrations import WandbCallback
+import wandb
+
+class CustomWandbCallback(WandbCallback):
+    def on_evaluate(self, args, state, control, metrics=None, **kwargs):
+        super().on_evaluate(args, state, control, metrics, **kwargs)
+
+        # Log custom metrics
+        wandb.log({
+            "custom/eval_score": metrics["eval_accuracy"] * 100,
+            "custom/epoch": state.epoch
+        })
+
+# Use custom callback
+trainer = Trainer(
+    model=model,
+    args=training_args,
+    train_dataset=train_dataset,
+    eval_dataset=eval_dataset,
+    callbacks=[CustomWandbCallback()]
+)
+```
+
+### Log Model to Registry
+
+```python
+from transformers import Trainer, TrainingArguments
+
+training_args = TrainingArguments(
+    output_dir="./results",
+    report_to="wandb",
+    load_best_model_at_end=True
+)
+
+trainer = Trainer(
+    model=model,
+    args=training_args,
+    train_dataset=train_dataset,
+    eval_dataset=eval_dataset
+)
+
+trainer.train()
+
+# Save final model as artifact
+model_artifact = wandb.Artifact(
+    'hf-bert-model',
+    type='model',
+    description='BERT finetuned on sentiment analysis'
+)
+
+# Save model files
+trainer.save_model("./final_model")
+model_artifact.add_dir("./final_model")
+
+# Log artifact
+wandb.log_artifact(model_artifact, aliases=['best', 'production'])
+wandb.finish()
+```
+
+## PyTorch Lightning
+
+### Basic Integration
+
+```python
+import pytorch_lightning as pl
+from pytorch_lightning.loggers import WandbLogger
+import wandb
+
+# Create W&B logger
+wandb_logger = WandbLogger(
+    project="lightning-demo",
+    name="resnet50-training",
+    log_model=True,  # Log model checkpoints as artifacts
+    save_code=True   # Save code as artifact
+)
+
+# Lightning module
+class LitModel(pl.LightningModule):
+    def __init__(self, learning_rate=0.001):
+        super().__init__()
+        self.save_hyperparameters()
+        self.model = create_model()
+
+    def training_step(self, batch, batch_idx):
+        x, y = batch
+        y_hat = self.model(x)
+        loss = F.cross_entropy(y_hat, y)
+
+        # Log metrics (automatically sent to W&B)
+        self.log('train/loss', loss, on_step=True, on_epoch=True)
+        self.log('train/accuracy', accuracy(y_hat, y), on_epoch=True)
+
+        return loss
+
+    def validation_step(self, batch, batch_idx):
+        x, y = batch
+        y_hat = self.model(x)
+        loss = F.cross_entropy(y_hat, y)
+
+        self.log('val/loss', loss, on_step=False, on_epoch=True)
+        self.log('val/accuracy', accuracy(y_hat, y), on_epoch=True)
+
+        return loss
+
+    def configure_optimizers(self):
+        return torch.optim.Adam(self.parameters(), lr=self.hparams.learning_rate)
+
+# Trainer with W&B logger
+trainer = pl.Trainer(
+    logger=wandb_logger,
+    max_epochs=10,
+    accelerator="gpu",
+    devices=1
+)
+
+# Train (metrics logged automatically)
+trainer.fit(model, datamodule=dm)
+
+# Finish W&B run
+wandb.finish()
+```
+
+### Log Media
+
+```python
+class LitModel(pl.LightningModule):
+    def validation_step(self, batch, batch_idx):
+        x, y = batch
+        y_hat = self.model(x)
+
+        # Log images (first batch only)
+        if batch_idx == 0:
+            self.logger.experiment.log({
+                "examples": [wandb.Image(img) for img in x[:8]]
+            })
+
+        return loss
+
+    def on_validation_epoch_end(self):
+        # Log confusion matrix
+        cm = compute_confusion_matrix(self.all_preds, self.all_targets)
+
+        self.logger.experiment.log({
+            "confusion_matrix": wandb.plot.confusion_matrix(
+                probs=None,
+                y_true=self.all_targets,
+                preds=self.all_preds,
+                class_names=self.class_names
+            )
+        })
+```
+
+### Hyperparameter Sweeps
+
+```python
+import pytorch_lightning as pl
+from pytorch_lightning.loggers import WandbLogger
+import wandb
+
+# Define sweep
+sweep_config = {
+    'method': 'bayes',
+    'metric': {'name': 'val/accuracy', 'goal': 'maximize'},
+    'parameters': {
+        'learning_rate': {'min': 1e-5, 'max': 1e-2, 'distribution': 'log_uniform'},
+        'batch_size': {'values': [16, 32, 64]},
+        'hidden_size': {'values': [128, 256, 512]}
+    }
+}
+
+sweep_id = wandb.sweep(sweep_config, project="lightning-sweeps")
+
+def train():
+    # Initialize W&B
+    run = wandb.init()
+
+    # Get hyperparameters
+    config = wandb.config
+
+    # Create logger
+    wandb_logger = WandbLogger()
+
+    # Create model with sweep params
+    model = LitModel(
+        learning_rate=config.learning_rate,
+        hidden_size=config.hidden_size
+    )
+
+    # Create datamodule with sweep batch size
+    dm = DataModule(batch_size=config.batch_size)
+
+    # Train
+    trainer = pl.Trainer(logger=wandb_logger, max_epochs=10)
+    trainer.fit(model, dm)
+
+# Run sweep
+wandb.agent(sweep_id, function=train, count=30)
+```
+
+## Keras/TensorFlow
+
+### With Callback
+
+```python
+import tensorflow as tf
+from wandb.keras import WandbCallback
+import wandb
+
+# Initialize W&B
+wandb.init(
+    project="keras-demo",
+    config={
+        "learning_rate": 0.001,
+        "epochs": 10,
+        "batch_size": 32
+    }
+)
+
+config = wandb.config
+
+# Build model
+model = tf.keras.Sequential([
+    tf.keras.layers.Dense(128, activation='relu'),
+    tf.keras.layers.Dropout(0.2),
+    tf.keras.layers.Dense(10, activation='softmax')
+])
+
+model.compile(
+    optimizer=tf.keras.optimizers.Adam(config.learning_rate),
+    loss='sparse_categorical_crossentropy',
+    metrics=['accuracy']
+)
+
+# Train with W&B callback
+history = model.fit(
+    x_train, y_train,
+    validation_data=(x_val, y_val),
+    epochs=config.epochs,
+    batch_size=config.batch_size,
+    callbacks=[
+        WandbCallback(
+            log_weights=True,      # Log model weights
+            log_gradients=True,    # Log gradients
+            training_data=(x_train, y_train),
+            validation_data=(x_val, y_val),
+            labels=class_names
+        )
+    ]
+)
+
+# Save model as artifact
+model.save('model.h5')
+artifact = wandb.Artifact('keras-model', type='model')
+artifact.add_file('model.h5')
+wandb.log_artifact(artifact)
+
+wandb.finish()
+```
+
+### Custom Training Loop
+
+```python
+import tensorflow as tf
+import wandb
+
+wandb.init(project="tf-custom-loop")
+
+# Model, optimizer, loss
+model = create_model()
+optimizer = tf.keras.optimizers.Adam(1e-3)
+loss_fn = tf.keras.losses.SparseCategoricalCrossentropy()
+
+# Metrics
+train_loss = tf.keras.metrics.Mean(name='train_loss')
+train_accuracy = tf.keras.metrics.SparseCategoricalAccuracy(name='train_accuracy')
+
+@tf.function
+def train_step(x, y):
+    with tf.GradientTape() as tape:
+        predictions = model(x, training=True)
+        loss = loss_fn(y, predictions)
+
+    gradients = tape.gradient(loss, model.trainable_variables)
+    optimizer.apply_gradients(zip(gradients, model.trainable_variables))
+
+    train_loss(loss)
+    train_accuracy(y, predictions)
+
+# Training loop
+for epoch in range(EPOCHS):
+    train_loss.reset_states()
+    train_accuracy.reset_states()
+
+    for step, (x, y) in enumerate(train_dataset):
+        train_step(x, y)
+
+        # Log every 100 steps
+        if step % 100 == 0:
+            wandb.log({
+                'train/loss': train_loss.result().numpy(),
+                'train/accuracy': train_accuracy.result().numpy(),
+                'epoch': epoch,
+                'step': step
+            })
+
+    # Log epoch metrics
+    wandb.log({
+        'epoch/train_loss': train_loss.result().numpy(),
+        'epoch/train_accuracy': train_accuracy.result().numpy(),
+        'epoch': epoch
+    })
+
+wandb.finish()
+```
+
+## Fast.ai
+
+### With Callback
+
+```python
+from fastai.vision.all import *
+from fastai.callback.wandb import *
+import wandb
+
+# Initialize W&B
+wandb.init(project="fastai-demo")
+
+# Create data loaders
+dls = ImageDataLoaders.from_folder(
+    path,
+    train='train',
+    valid='valid',
+    bs=64
+)
+
+# Create learner with W&B callback
+learn = vision_learner(
+    dls,
+    resnet34,
+    metrics=accuracy,
+    cbs=WandbCallback(
+        log_preds=True,     # Log predictions
+        log_model=True,     # Log model as artifact
+        log_dataset=True    # Log dataset as artifact
+    )
+)
+
+# Train (metrics logged automatically)
+learn.fine_tune(5)
+
+wandb.finish()
+```
+
+## XGBoost/LightGBM
+
+### XGBoost
+
+```python
+import xgboost as xgb
+import wandb
+
+# Initialize W&B
+run = wandb.init(project="xgboost-demo", config={
+    "max_depth": 6,
+    "learning_rate": 0.1,
+    "n_estimators": 100
+})
+
+config = wandb.config
+
+# Create DMatrix
+dtrain = xgb.DMatrix(X_train, label=y_train)
+dval = xgb.DMatrix(X_val, label=y_val)
+
+# XGBoost params
+params = {
+    'max_depth': config.max_depth,
+    'learning_rate': config.learning_rate,
+    'objective': 'binary:logistic',
+    'eval_metric': ['logloss', 'auc']
+}
+
+# Custom callback for W&B
+def wandb_callback(env):
+    """Log XGBoost metrics to W&B."""
+    for metric_name, metric_value in env.evaluation_result_list:
+        wandb.log({
+            f"{metric_name}": metric_value,
+            "iteration": env.iteration
+        })
+
+# Train with callback
+model = xgb.train(
+    params,
+    dtrain,
+    num_boost_round=config.n_estimators,
+    evals=[(dtrain, 'train'), (dval, 'val')],
+    callbacks=[wandb_callback],
+    verbose_eval=10
+)
+
+# Save model
+model.save_model('xgboost_model.json')
+artifact = wandb.Artifact('xgboost-model', type='model')
+artifact.add_file('xgboost_model.json')
+wandb.log_artifact(artifact)
+
+wandb.finish()
+```
+
+### LightGBM
+
+```python
+import lightgbm as lgb
+import wandb
+
+run = wandb.init(project="lgbm-demo")
+
+# Create datasets
+train_data = lgb.Dataset(X_train, label=y_train)
+val_data = lgb.Dataset(X_val, label=y_val, reference=train_data)
+
+# Parameters
+params = {
+    'objective': 'binary',
+    'metric': ['binary_logloss', 'auc'],
+    'learning_rate': 0.1,
+    'num_leaves': 31
+}
+
+# Custom callback
+def log_to_wandb(env):
+    """Log LightGBM metrics to W&B."""
+    for entry in env.evaluation_result_list:
+        dataset_name, metric_name, metric_value, _ = entry
+        wandb.log({
+            f"{dataset_name}/{metric_name}": metric_value,
+            "iteration": env.iteration
+        })
+
+# Train
+model = lgb.train(
+    params,
+    train_data,
+    num_boost_round=100,
+    valid_sets=[train_data, val_data],
+    valid_names=['train', 'val'],
+    callbacks=[log_to_wandb]
+)
+
+# Save model
+model.save_model('lgbm_model.txt')
+artifact = wandb.Artifact('lgbm-model', type='model')
+artifact.add_file('lgbm_model.txt')
+wandb.log_artifact(artifact)
+
+wandb.finish()
+```
+
+## PyTorch Native
+
+### Training Loop Integration
+
+```python
+import torch
+import torch.nn as nn
+import torch.optim as optim
+import wandb
+
+# Initialize W&B
+wandb.init(project="pytorch-native", config={
+    "learning_rate": 0.001,
+    "epochs": 10,
+    "batch_size": 32
+})
+
+config = wandb.config
+
+# Model, loss, optimizer
+model = create_model()
+criterion = nn.CrossEntropyLoss()
+optimizer = optim.Adam(model.parameters(), lr=config.learning_rate)
+
+# Watch model (logs gradients and parameters)
+wandb.watch(model, criterion, log="all", log_freq=100)
+
+# Training loop
+for epoch in range(config.epochs):
+    model.train()
+    train_loss = 0.0
+    correct = 0
+    total = 0
+
+    for batch_idx, (data, target) in enumerate(train_loader):
+        data, target = data.to(device), target.to(device)
+
+        # Forward pass
+        optimizer.zero_grad()
+        output = model(data)
+        loss = criterion(output, target)
+
+        # Backward pass
+        loss.backward()
+        optimizer.step()
+
+        # Track metrics
+        train_loss += loss.item()
+        _, predicted = output.max(1)
+        total += target.size(0)
+        correct += predicted.eq(target).sum().item()
+
+        # Log every 100 batches
+        if batch_idx % 100 == 0:
+            wandb.log({
+                'train/loss': loss.item(),
+                'train/batch_accuracy': 100. * correct / total,
+                'epoch': epoch,
+                'batch': batch_idx
+            })
+
+    # Validation
+    model.eval()
+    val_loss = 0.0
+    val_correct = 0
+    val_total = 0
+
+    with torch.no_grad():
+        for data, target in val_loader:
+            data, target = data.to(device), target.to(device)
+            output = model(data)
+            loss = criterion(output, target)
+
+            val_loss += loss.item()
+            _, predicted = output.max(1)
+            val_total += target.size(0)
+            val_correct += predicted.eq(target).sum().item()
+
+    # Log epoch metrics
+    wandb.log({
+        'epoch/train_loss': train_loss / len(train_loader),
+        'epoch/train_accuracy': 100. * correct / total,
+        'epoch/val_loss': val_loss / len(val_loader),
+        'epoch/val_accuracy': 100. * val_correct / val_total,
+        'epoch': epoch
+    })
+
+# Save final model
+torch.save(model.state_dict(), 'model.pth')
+artifact = wandb.Artifact('final-model', type='model')
+artifact.add_file('model.pth')
+wandb.log_artifact(artifact)
+
+wandb.finish()
+```
+
+## Custom Integrations
+
+### Generic Framework Integration
+
+```python
+import wandb
+
+class WandbIntegration:
+    """Generic W&B integration wrapper."""
+
+    def __init__(self, project, config):
+        self.run = wandb.init(project=project, config=config)
+        self.config = wandb.config
+        self.step = 0
+
+    def log_metrics(self, metrics, step=None):
+        """Log training metrics."""
+        if step is None:
+            step = self.step
+            self.step += 1
+
+        wandb.log(metrics, step=step)
+
+    def log_images(self, images, caption=""):
+        """Log images."""
+        wandb.log({
+            caption: [wandb.Image(img) for img in images]
+        })
+
+    def log_table(self, data, columns):
+        """Log tabular data."""
+        table = wandb.Table(columns=columns, data=data)
+        wandb.log({"table": table})
+
+    def save_model(self, model_path, metadata=None):
+        """Save model as artifact."""
+        artifact = wandb.Artifact(
+            'model',
+            type='model',
+            metadata=metadata or {}
+        )
+        artifact.add_file(model_path)
+        self.run.log_artifact(artifact)
+
+    def finish(self):
+        """Finish W&B run."""
+        wandb.finish()
+
+# Usage
+wb = WandbIntegration(project="my-project", config={"lr": 0.001})
+
+# Training loop
+for epoch in range(10):
+    # Your training code
+    loss, accuracy = train_epoch()
+
+    # Log metrics
+    wb.log_metrics({
+        'train/loss': loss,
+        'train/accuracy': accuracy
+    })
+
+# Save model
+wb.save_model('model.pth', metadata={'accuracy': 0.95})
+wb.finish()
+```
+
+## Resources
+
+- **Integrations Guide**: https://docs.wandb.ai/guides/integrations
+- **HuggingFace**: https://docs.wandb.ai/guides/integrations/huggingface
+- **PyTorch Lightning**: https://docs.wandb.ai/guides/integrations/lightning
+- **Keras**: https://docs.wandb.ai/guides/integrations/keras
+- **Examples**: https://github.com/wandb/examples

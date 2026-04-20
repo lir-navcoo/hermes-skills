@@ -1,1 +1,847 @@
-IyBDb21wcmVoZW5zaXZlIEh5cGVycGFyYW1ldGVyIFN3ZWVwcyBHdWlkZQoKQ29tcGxldGUgZ3VpZGUgdG8gaHlwZXJwYXJhbWV0ZXIgb3B0aW1pemF0aW9uIHdpdGggVyZCIFN3ZWVwcy4KCiMjIFRhYmxlIG9mIENvbnRlbnRzCi0gU3dlZXAgQ29uZmlndXJhdGlvbgotIFNlYXJjaCBTdHJhdGVnaWVzCi0gUGFyYW1ldGVyIERpc3RyaWJ1dGlvbnMKLSBFYXJseSBUZXJtaW5hdGlvbgotIFBhcmFsbGVsIEV4ZWN1dGlvbgotIEFkdmFuY2VkIFBhdHRlcm5zCi0gUmVhbC1Xb3JsZCBFeGFtcGxlcwoKIyMgU3dlZXAgQ29uZmlndXJhdGlvbgoKIyMjIEJhc2ljIFN3ZWVwIENvbmZpZwoKYGBgcHl0aG9uCnN3ZWVwX2NvbmZpZyA9IHsKICAgICdtZXRob2QnOiAnYmF5ZXMnLCAgIyBTZWFyY2ggc3RyYXRlZ3kKICAgICdtZXRyaWMnOiB7CiAgICAgICAgJ25hbWUnOiAndmFsL2FjY3VyYWN5JywKICAgICAgICAnZ29hbCc6ICdtYXhpbWl6ZScgICMgb3IgJ21pbmltaXplJwogICAgfSwKICAgICdwYXJhbWV0ZXJzJzogewogICAgICAgICdsZWFybmluZ19yYXRlJzogewogICAgICAgICAgICAnZGlzdHJpYnV0aW9uJzogJ2xvZ191bmlmb3JtJywKICAgICAgICAgICAgJ21pbic6IDFlLTUsCiAgICAgICAgICAgICdtYXgnOiAxZS0xCiAgICAgICAgfSwKICAgICAgICAnYmF0Y2hfc2l6ZSc6IHsKICAgICAgICAgICAgJ3ZhbHVlcyc6IFsxNiwgMzIsIDY0LCAxMjhdCiAgICAgICAgfQogICAgfQp9CgojIEluaXRpYWxpemUgc3dlZXAKc3dlZXBfaWQgPSB3YW5kYi5zd2VlcChzd2VlcF9jb25maWcsIHByb2plY3Q9Im15LXByb2plY3QiKQpgYGAKCiMjIyBDb21wbGV0ZSBDb25maWcgRXhhbXBsZQoKYGBgcHl0aG9uCnN3ZWVwX2NvbmZpZyA9IHsKICAgICMgUmVxdWlyZWQ6IFNlYXJjaCBtZXRob2QKICAgICdtZXRob2QnOiAnYmF5ZXMnLAoKICAgICMgUmVxdWlyZWQ6IE9wdGltaXphdGlvbiBtZXRyaWMKICAgICdtZXRyaWMnOiB7CiAgICAgICAgJ25hbWUnOiAndmFsL2YxX3Njb3JlJywKICAgICAgICAnZ29hbCc6ICdtYXhpbWl6ZScKICAgIH0sCgogICAgIyBSZXF1aXJlZDogUGFyYW1ldGVycyB0byBzZWFyY2gKICAgICdwYXJhbWV0ZXJzJzogewogICAgICAgICMgQ29udGludW91cyBwYXJhbWV0ZXIKICAgICAgICAnbGVhcm5pbmdfcmF0ZSc6IHsKICAgICAgICAgICAgJ2Rpc3RyaWJ1dGlvbic6ICdsb2dfdW5pZm9ybScsCiAgICAgICAgICAgICdtaW4nOiAxZS01LAogICAgICAgICAgICAnbWF4JzogMWUtMQogICAgICAgIH0sCgogICAgICAgICMgRGlzY3JldGUgdmFsdWVzCiAgICAgICAgJ2JhdGNoX3NpemUnOiB7CiAgICAgICAgICAgICd2YWx1ZXMnOiBbMTYsIDMyLCA2NCwgMTI4XQogICAgICAgIH0sCgogICAgICAgICMgQ2F0ZWdvcmljYWwKICAgICAgICAnb3B0aW1pemVyJzogewogICAgICAgICAgICAndmFsdWVzJzogWydhZGFtJywgJ3NnZCcsICdybXNwcm9wJywgJ2FkYW13J10KICAgICAgICB9LAoKICAgICAgICAjIFVuaWZvcm0gZGlzdHJpYnV0aW9uCiAgICAgICAgJ2Ryb3BvdXQnOiB7CiAgICAgICAgICAgICdkaXN0cmlidXRpb24nOiAndW5pZm9ybScsCiAgICAgICAgICAgICdtaW4nOiAwLjEsCiAgICAgICAgICAgICdtYXgnOiAwLjUKICAgICAgICB9LAoKICAgICAgICAjIEludGVnZXIgcmFuZ2UKICAgICAgICAnbnVtX2xheWVycyc6IHsKICAgICAgICAgICAgJ2Rpc3RyaWJ1dGlvbic6ICdpbnRfdW5pZm9ybScsCiAgICAgICAgICAgICdtaW4nOiAyLAogICAgICAgICAgICAnbWF4JzogMTAKICAgICAgICB9LAoKICAgICAgICAjIEZpeGVkIHZhbHVlIChjb25zdGFudCBhY3Jvc3MgcnVucykKICAgICAgICAnZXBvY2hzJzogewogICAgICAgICAgICAndmFsdWUnOiA1MAogICAgICAgIH0KICAgIH0sCgogICAgIyBPcHRpb25hbDogRWFybHkgdGVybWluYXRpb24KICAgICdlYXJseV90ZXJtaW5hdGUnOiB7CiAgICAgICAgJ3R5cGUnOiAnaHlwZXJiYW5kJywKICAgICAgICAnbWluX2l0ZXInOiA1LAogICAgICAgICdzJzogMiwKICAgICAgICAnZXRhJzogMywKICAgICAgICAnbWF4X2l0ZXInOiAyNwogICAgfQp9CmBgYAoKIyMgU2VhcmNoIFN0cmF0ZWdpZXMKCiMjIyAxLiBHcmlkIFNlYXJjaAoKRXhoYXVzdGl2ZWx5IHNlYXJjaCBhbGwgY29tYmluYXRpb25zLgoKYGBgcHl0aG9uCnN3ZWVwX2NvbmZpZyA9IHsKICAgICdtZXRob2QnOiAnZ3JpZCcsCiAgICAncGFyYW1ldGVycyc6IHsKICAgICAgICAnbGVhcm5pbmdfcmF0ZSc6IHsKICAgICAgICAgICAgJ3ZhbHVlcyc6IFswLjAwMSwgMC4wMSwgMC4xXQogICAgICAgIH0sCiAgICAgICAgJ2JhdGNoX3NpemUnOiB7CiAgICAgICAgICAgICd2YWx1ZXMnOiBbMTYsIDMyLCA2NF0KICAgICAgICB9LAogICAgICAgICdvcHRpbWl6ZXInOiB7CiAgICAgICAgICAgICd2YWx1ZXMnOiBbJ2FkYW0nLCAnc2dkJ10KICAgICAgICB9CiAgICB9Cn0KCiMgVG90YWwgcnVuczogMyDDlyAzIMOXIDIgPSAxOCBydW5zCmBgYAoKKipQcm9zOioqCi0gQ29tcHJlaGVuc2l2ZSBzZWFyY2gKLSBSZXByb2R1Y2libGUgcmVzdWx0cwotIE5vIHJhbmRvbW5lc3MKCioqQ29uczoqKgotIEV4cG9uZW50aWFsIGdyb3d0aCB3aXRoIHBhcmFtZXRlcnMKLSBJbmVmZmljaWVudCBmb3IgY29udGludW91cyBwYXJhbWV0ZXJzCi0gTm90IHNjYWxhYmxlIGJleW9uZCAzLTQgcGFyYW1ldGVycwoKKipXaGVuIHRvIHVzZToqKgotIEZldyBwYXJhbWV0ZXJzICg8IDQpCi0gQWxsIGRpc2NyZXRlIHZhbHVlcwotIE5lZWQgY29tcGxldGUgY292ZXJhZ2UKCiMjIyAyLiBSYW5kb20gU2VhcmNoCgpSYW5kb21seSBzYW1wbGUgcGFyYW1ldGVyIGNvbWJpbmF0aW9ucy4KCmBgYHB5dGhvbgpzd2VlcF9jb25maWcgPSB7CiAgICAnbWV0aG9kJzogJ3JhbmRvbScsCiAgICAncGFyYW1ldGVycyc6IHsKICAgICAgICAnbGVhcm5pbmdfcmF0ZSc6IHsKICAgICAgICAgICAgJ2Rpc3RyaWJ1dGlvbic6ICdsb2dfdW5pZm9ybScsCiAgICAgICAgICAgICdtaW4nOiAxZS01LAogICAgICAgICAgICAnbWF4JzogMWUtMQogICAgICAgIH0sCiAgICAgICAgJ2JhdGNoX3NpemUnOiB7CiAgICAgICAgICAgICd2YWx1ZXMnOiBbMTYsIDMyLCA2NCwgMTI4LCAyNTZdCiAgICAgICAgfSwKICAgICAgICAnZHJvcG91dCc6IHsKICAgICAgICAgICAgJ2Rpc3RyaWJ1dGlvbic6ICd1bmlmb3JtJywKICAgICAgICAgICAgJ21pbic6IDAuMCwKICAgICAgICAgICAgJ21heCc6IDAuNQogICAgICAgIH0sCiAgICAgICAgJ251bV9sYXllcnMnOiB7CiAgICAgICAgICAgICdkaXN0cmlidXRpb24nOiAnaW50X3VuaWZvcm0nLAogICAgICAgICAgICAnbWluJzogMiwKICAgICAgICAgICAgJ21heCc6IDgKICAgICAgICB9CiAgICB9Cn0KCiMgUnVuIDEwMCByYW5kb20gdHJpYWxzCndhbmRiLmFnZW50KHN3ZWVwX2lkLCBmdW5jdGlvbj10cmFpbiwgY291bnQ9MTAwKQpgYGAKCioqUHJvczoqKgotIFNjYWxlcyB0byBtYW55IHBhcmFtZXRlcnMKLSBDYW4gcnVuIGluZGVmaW5pdGVseQotIE9mdGVuIGZpbmRzIGdvb2Qgc29sdXRpb25zIHF1aWNrbHkKCioqQ29uczoqKgotIE5vIGxlYXJuaW5nIGZyb20gcHJldmlvdXMgcnVucwotIE1heSBtaXNzIG9wdGltYWwgcmVnaW9uCi0gUmVzdWx0cyB2YXJ5IHdpdGggcmFuZG9tIHNlZWQKCioqV2hlbiB0byB1c2U6KioKLSBNYW55IHBhcmFtZXRlcnMgKD4gNCkKLSBRdWljayBleHBsb3JhdGlvbgotIExpbWl0ZWQgYnVkZ2V0CgojIyMgMy4gQmF5ZXNpYW4gT3B0aW1pemF0aW9uIChSZWNvbW1lbmRlZCkKCkxlYXJuIGZyb20gcHJldmlvdXMgdHJpYWxzIHRvIHNhbXBsZSBwcm9taXNpbmcgcmVnaW9ucy4KCmBgYHB5dGhvbgpzd2VlcF9jb25maWcgPSB7CiAgICAnbWV0aG9kJzogJ2JheWVzJywKICAgICdtZXRyaWMnOiB7CiAgICAgICAgJ25hbWUnOiAndmFsL2xvc3MnLAogICAgICAgICdnb2FsJzogJ21pbmltaXplJwogICAgfSwKICAgICdwYXJhbWV0ZXJzJzogewogICAgICAgICdsZWFybmluZ19yYXRlJzogewogICAgICAgICAgICAnZGlzdHJpYnV0aW9uJzogJ2xvZ191bmlmb3JtJywKICAgICAgICAgICAgJ21pbic6IDFlLTUsCiAgICAgICAgICAgICdtYXgnOiAxZS0xCiAgICAgICAgfSwKICAgICAgICAnd2VpZ2h0X2RlY2F5JzogewogICAgICAgICAgICAnZGlzdHJpYnV0aW9uJzogJ2xvZ191bmlmb3JtJywKICAgICAgICAgICAgJ21pbic6IDFlLTYsCiAgICAgICAgICAgICdtYXgnOiAxZS0yCiAgICAgICAgfSwKICAgICAgICAnZHJvcG91dCc6IHsKICAgICAgICAgICAgJ2Rpc3RyaWJ1dGlvbic6ICd1bmlmb3JtJywKICAgICAgICAgICAgJ21pbic6IDAuMSwKICAgICAgICAgICAgJ21heCc6IDAuNQogICAgICAgIH0sCiAgICAgICAgJ251bV9sYXllcnMnOiB7CiAgICAgICAgICAgICd2YWx1ZXMnOiBbMiwgMywgNCwgNSwgNl0KICAgICAgICB9CiAgICB9Cn0KYGBgCgoqKlByb3M6KioKLSBNb3N0IHNhbXBsZS1lZmZpY2llbnQKLSBMZWFybnMgZnJvbSBwYXN0IHRyaWFscwotIEZvY3VzZXMgb24gcHJvbWlzaW5nIHJlZ2lvbnMKCioqQ29uczoqKgotIEluaXRpYWwgcmFuZG9tIGV4cGxvcmF0aW9uIHBoYXNlCi0gTWF5IGdldCBzdHVjayBpbiBsb2NhbCBvcHRpbWEKLSBTbG93ZXIgcGVyIGl0ZXJhdGlvbgoKKipXaGVuIHRvIHVzZToqKgotIEV4cGVuc2l2ZSB0cmFpbmluZyBydW5zCi0gTmVlZCBiZXN0IHBlcmZvcm1hbmNlCi0gTGltaXRlZCBjb21wdXRlIGJ1ZGdldAoKIyMgUGFyYW1ldGVyIERpc3RyaWJ1dGlvbnMKCiMjIyBDb250aW51b3VzIERpc3RyaWJ1dGlvbnMKCmBgYHB5dGhvbgojIExvZy11bmlmb3JtOiBHb29kIGZvciBsZWFybmluZyByYXRlcywgcmVndWxhcml6YXRpb24KJ2xlYXJuaW5nX3JhdGUnOiB7CiAgICAnZGlzdHJpYnV0aW9uJzogJ2xvZ191bmlmb3JtJywKICAgICdtaW4nOiAxZS02LAogICAgJ21heCc6IDFlLTEKfQoKIyBVbmlmb3JtOiBHb29kIGZvciBkcm9wb3V0LCBtb21lbnR1bQonZHJvcG91dCc6IHsKICAgICdkaXN0cmlidXRpb24nOiAndW5pZm9ybScsCiAgICAnbWluJzogMC4wLAogICAgJ21heCc6IDAuNQp9CgojIE5vcm1hbCBkaXN0cmlidXRpb24KJ3BhcmFtZXRlcic6IHsKICAgICdkaXN0cmlidXRpb24nOiAnbm9ybWFsJywKICAgICdtdSc6IDAuNSwKICAgICdzaWdtYSc6IDAuMQp9CgojIExvZy1ub3JtYWwgZGlzdHJpYnV0aW9uCidwYXJhbWV0ZXInOiB7CiAgICAnZGlzdHJpYnV0aW9uJzogJ2xvZ19ub3JtYWwnLAogICAgJ211JzogMC4wLAogICAgJ3NpZ21hJzogMS4wCn0KYGBgCgojIyMgRGlzY3JldGUgRGlzdHJpYnV0aW9ucwoKYGBgcHl0aG9uCiMgRml4ZWQgdmFsdWVzCidiYXRjaF9zaXplJzogewogICAgJ3ZhbHVlcyc6IFsxNiwgMzIsIDY0LCAxMjgsIDI1Nl0KfQoKIyBJbnRlZ2VyIHVuaWZvcm0KJ251bV9sYXllcnMnOiB7CiAgICAnZGlzdHJpYnV0aW9uJzogJ2ludF91bmlmb3JtJywKICAgICdtaW4nOiAyLAogICAgJ21heCc6IDEwCn0KCiMgUXVhbnRpemVkIHVuaWZvcm0gKHN0ZXAgc2l6ZSkKJ2xheWVyX3NpemUnOiB7CiAgICAnZGlzdHJpYnV0aW9uJzogJ3FfdW5pZm9ybScsCiAgICAnbWluJzogMzIsCiAgICAnbWF4JzogNTEyLAogICAgJ3EnOiAzMiAgIyBTdGVwIGJ5IDMyOiAzMiwgNjQsIDk2LCAxMjguLi4KfQoKIyBRdWFudGl6ZWQgbG9nLXVuaWZvcm0KJ2hpZGRlbl9zaXplJzogewogICAgJ2Rpc3RyaWJ1dGlvbic6ICdxX2xvZ191bmlmb3JtJywKICAgICdtaW4nOiAzMiwKICAgICdtYXgnOiAxMDI0LAogICAgJ3EnOiAzMgp9CmBgYAoKIyMjIENhdGVnb3JpY2FsIFBhcmFtZXRlcnMKCmBgYHB5dGhvbgojIE9wdGltaXplcnMKJ29wdGltaXplcic6IHsKICAgICd2YWx1ZXMnOiBbJ2FkYW0nLCAnc2dkJywgJ3Jtc3Byb3AnLCAnYWRhbXcnXQp9CgojIE1vZGVsIGFyY2hpdGVjdHVyZXMKJ21vZGVsJzogewogICAgJ3ZhbHVlcyc6IFsncmVzbmV0MTgnLCAncmVzbmV0MzQnLCAncmVzbmV0NTAnLCAnZWZmaWNpZW50bmV0X2IwJ10KfQoKIyBBY3RpdmF0aW9uIGZ1bmN0aW9ucwonYWN0aXZhdGlvbic6IHsKICAgICd2YWx1ZXMnOiBbJ3JlbHUnLCAnZ2VsdScsICdzaWx1JywgJ2xlYWt5X3JlbHUnXQp9CmBgYAoKIyMgRWFybHkgVGVybWluYXRpb24KClN0b3AgdW5kZXJwZXJmb3JtaW5nIHJ1bnMgZWFybHkgdG8gc2F2ZSBjb21wdXRlLgoKIyMjIEh5cGVyYmFuZAoKYGBgcHl0aG9uCnN3ZWVwX2NvbmZpZyA9IHsKICAgICdtZXRob2QnOiAnYmF5ZXMnLAogICAgJ21ldHJpYyc6IHsnbmFtZSc6ICd2YWwvYWNjdXJhY3knLCAnZ29hbCc6ICdtYXhpbWl6ZSd9LAogICAgJ3BhcmFtZXRlcnMnOiB7Li4ufSwKCiAgICAjIEh5cGVyYmFuZCBlYXJseSB0ZXJtaW5hdGlvbgogICAgJ2Vhcmx5X3Rlcm1pbmF0ZSc6IHsKICAgICAgICAndHlwZSc6ICdoeXBlcmJhbmQnLAogICAgICAgICdtaW5faXRlcic6IDMsICAgICAgIyBNaW5pbXVtIGl0ZXJhdGlvbnMgYmVmb3JlIHRlcm1pbmF0aW9uCiAgICAgICAgJ3MnOiAyLCAgICAgICAgICAgICAjIEJyYWNrZXQgY291bnQKICAgICAgICAnZXRhJzogMywgICAgICAgICAgICMgRG93bnNhbXBsaW5nIHJhdGUKICAgICAgICAnbWF4X2l0ZXInOiAyNyAgICAgICMgTWF4aW11bSBpdGVyYXRpb25zCiAgICB9Cn0KYGBgCgoqKkhvdyBpdCB3b3JrczoqKgotIFJ1bnMgdHJpYWxzIGluIGJyYWNrZXRzCi0gS2VlcHMgdG9wIDEvZXRhIHBlcmZvcm1lcnMgZWFjaCByb3VuZAotIEVsaW1pbmF0ZXMgYm90dG9tIHBlcmZvcm1lcnMgZWFybHkKCiMjIyBDdXN0b20gVGVybWluYXRpb24KCmBgYHB5dGhvbgpkZWYgdHJhaW4oKToKICAgIHJ1biA9IHdhbmRiLmluaXQoKQoKICAgIGZvciBlcG9jaCBpbiByYW5nZShNQVhfRVBPQ0hTKToKICAgICAgICBsb3NzID0gdHJhaW5fZXBvY2goKQogICAgICAgIHZhbF9hY2MgPSB2YWxpZGF0ZSgpCgogICAgICAgIHdhbmRiLmxvZyh7J3ZhbC9hY2N1cmFjeSc6IHZhbF9hY2MsICdlcG9jaCc6IGVwb2NofSkKCiAgICAgICAgIyBDdXN0b20gZWFybHkgc3RvcHBpbmcKICAgICAgICBpZiBlcG9jaCA+IDUgYW5kIHZhbF9hY2MgPCAwLjU6CiAgICAgICAgICAgIHByaW50KCJFYXJseSBzdG9wOiBQb29yIHBlcmZvcm1hbmNlIikKICAgICAgICAgICAgYnJlYWsKCiAgICAgICAgaWYgZXBvY2ggPiAxMCBhbmQgdmFsX2FjYyA+IGJlc3RfYWNjIC0gMC4wMToKICAgICAgICAgICAgcHJpbnQoIkVhcmx5IHN0b3A6IE5vIGltcHJvdmVtZW50IikKICAgICAgICAgICAgYnJlYWsKYGBgCgojIyBUcmFpbmluZyBGdW5jdGlvbgoKIyMjIEJhc2ljIFRlbXBsYXRlCgpgYGBweXRob24KZGVmIHRyYWluKCk6CiAgICAjIEluaXRpYWxpemUgVyZCIHJ1bgogICAgcnVuID0gd2FuZGIuaW5pdCgpCgogICAgIyBHZXQgaHlwZXJwYXJhbWV0ZXJzCiAgICBjb25maWcgPSB3YW5kYi5jb25maWcKCiAgICAjIEJ1aWxkIG1vZGVsIHdpdGggY29uZmlnCiAgICBtb2RlbCA9IGJ1aWxkX21vZGVsKAogICAgICAgIGhpZGRlbl9zaXplPWNvbmZpZy5oaWRkZW5fc2l6ZSwKICAgICAgICBudW1fbGF5ZXJzPWNvbmZpZy5udW1fbGF5ZXJzLAogICAgICAgIGRyb3BvdXQ9Y29uZmlnLmRyb3BvdXQKICAgICkKCiAgICAjIENyZWF0ZSBvcHRpbWl6ZXIKICAgIG9wdGltaXplciA9IGNyZWF0ZV9vcHRpbWl6ZXIoCiAgICAgICAgbW9kZWwucGFyYW1ldGVycygpLAogICAgICAgIG5hbWU9Y29uZmlnLm9wdGltaXplciwKICAgICAgICBscj1jb25maWcubGVhcm5pbmdfcmF0ZSwKICAgICAgICB3ZWlnaHRfZGVjYXk9Y29uZmlnLndlaWdodF9kZWNheQogICAgKQoKICAgICMgVHJhaW5pbmcgbG9vcAogICAgZm9yIGVwb2NoIGluIHJhbmdlKGNvbmZpZy5lcG9jaHMpOgogICAgICAgICMgVHJhaW4KICAgICAgICB0cmFpbl9sb3NzLCB0cmFpbl9hY2MgPSB0cmFpbl9lcG9jaCgKICAgICAgICAgICAgbW9kZWwsIG9wdGltaXplciwgdHJhaW5fbG9hZGVyLCBjb25maWcuYmF0Y2hfc2l6ZQogICAgICAgICkKCiAgICAgICAgIyBWYWxpZGF0ZQogICAgICAgIHZhbF9sb3NzLCB2YWxfYWNjID0gdmFsaWRhdGUobW9kZWwsIHZhbF9sb2FkZXIpCgogICAgICAgICMgTG9nIG1ldHJpY3MKICAgICAgICB3YW5kYi5sb2coewogICAgICAgICAgICAndHJhaW4vbG9zcyc6IHRyYWluX2xvc3MsCiAgICAgICAgICAgICd0cmFpbi9hY2N1cmFjeSc6IHRyYWluX2FjYywKICAgICAgICAgICAgJ3ZhbC9sb3NzJzogdmFsX2xvc3MsCiAgICAgICAgICAgICd2YWwvYWNjdXJhY3knOiB2YWxfYWNjLAogICAgICAgICAgICAnZXBvY2gnOiBlcG9jaAogICAgICAgIH0pCgogICAgIyBMb2cgZmluYWwgbW9kZWwKICAgIHRvcmNoLnNhdmUobW9kZWwuc3RhdGVfZGljdCgpLCAnbW9kZWwucHRoJykKICAgIHdhbmRiLnNhdmUoJ21vZGVsLnB0aCcpCgogICAgIyBGaW5pc2ggcnVuCiAgICB3YW5kYi5maW5pc2goKQpgYGAKCiMjIyBXaXRoIFB5VG9yY2gKCmBgYHB5dGhvbgppbXBvcnQgdG9yY2gKaW1wb3J0IHRvcmNoLm5uIGFzIG5uCmZyb20gdG9yY2gudXRpbHMuZGF0YSBpbXBvcnQgRGF0YUxvYWRlcgppbXBvcnQgd2FuZGIKCmRlZiB0cmFpbigpOgogICAgcnVuID0gd2FuZGIuaW5pdCgpCiAgICBjb25maWcgPSB3YW5kYi5jb25maWcKCiAgICAjIERhdGEKICAgIHRyYWluX2xvYWRlciA9IERhdGFMb2FkZXIoCiAgICAgICAgdHJhaW5fZGF0YXNldCwKICAgICAgICBiYXRjaF9zaXplPWNvbmZpZy5iYXRjaF9zaXplLAogICAgICAgIHNodWZmbGU9VHJ1ZQogICAgKQoKICAgICMgTW9kZWwKICAgIG1vZGVsID0gUmVzTmV0KAogICAgICAgIG51bV9jbGFzc2VzPWNvbmZpZy5udW1fY2xhc3NlcywKICAgICAgICBkcm9wb3V0PWNvbmZpZy5kcm9wb3V0CiAgICApLnRvKGRldmljZSkKCiAgICAjIE9wdGltaXplcgogICAgaWYgY29uZmlnLm9wdGltaXplciA9PSAnYWRhbSc6CiAgICAgICAgb3B0aW1pemVyID0gdG9yY2gub3B0aW0uQWRhbSgKICAgICAgICAgICAgbW9kZWwucGFyYW1ldGVycygpLAogICAgICAgICAgICBscj1jb25maWcubGVhcm5pbmdfcmF0ZSwKICAgICAgICAgICAgd2VpZ2h0X2RlY2F5PWNvbmZpZy53ZWlnaHRfZGVjYXkKICAgICAgICApCiAgICBlbGlmIGNvbmZpZy5vcHRpbWl6ZXIgPT0gJ3NnZCc6CiAgICAgICAgb3B0aW1pemVyID0gdG9yY2gub3B0aW0uU0dEKAogICAgICAgICAgICBtb2RlbC5wYXJhbWV0ZXJzKCksCiAgICAgICAgICAgIGxyPWNvbmZpZy5sZWFybmluZ19yYXRlLAogICAgICAgICAgICBtb21lbnR1bT1jb25maWcubW9tZW50dW0sCiAgICAgICAgICAgIHdlaWdodF9kZWNheT1jb25maWcud2VpZ2h0X2RlY2F5CiAgICAgICAgKQoKICAgICMgU2NoZWR1bGVyCiAgICBzY2hlZHVsZXIgPSB0b3JjaC5vcHRpbS5scl9zY2hlZHVsZXIuQ29zaW5lQW5uZWFsaW5nTFIoCiAgICAgICAgb3B0aW1pemVyLCBUX21heD1jb25maWcuZXBvY2hzCiAgICApCgogICAgIyBUcmFpbmluZwogICAgZm9yIGVwb2NoIGluIHJhbmdlKGNvbmZpZy5lcG9jaHMpOgogICAgICAgIG1vZGVsLnRyYWluKCkKICAgICAgICB0cmFpbl9sb3NzID0gMC4wCgogICAgICAgIGZvciBkYXRhLCB0YXJnZXQgaW4gdHJhaW5fbG9hZGVyOgogICAgICAgICAgICBkYXRhLCB0YXJnZXQgPSBkYXRhLnRvKGRldmljZSksIHRhcmdldC50byhkZXZpY2UpCgogICAgICAgICAgICBvcHRpbWl6ZXIuemVyb19ncmFkKCkKICAgICAgICAgICAgb3V0cHV0ID0gbW9kZWwoZGF0YSkKICAgICAgICAgICAgbG9zcyA9IG5uLkNyb3NzRW50cm9weUxvc3MoKShvdXRwdXQsIHRhcmdldCkKICAgICAgICAgICAgbG9zcy5iYWNrd2FyZCgpCiAgICAgICAgICAgIG9wdGltaXplci5zdGVwKCkKCiAgICAgICAgICAgIHRyYWluX2xvc3MgKz0gbG9zcy5pdGVtKCkKCiAgICAgICAgIyBWYWxpZGF0aW9uCiAgICAgICAgbW9kZWwuZXZhbCgpCiAgICAgICAgdmFsX2xvc3MsIHZhbF9hY2MgPSB2YWxpZGF0ZShtb2RlbCwgdmFsX2xvYWRlcikKCiAgICAgICAgIyBTdGVwIHNjaGVkdWxlcgogICAgICAgIHNjaGVkdWxlci5zdGVwKCkKCiAgICAgICAgIyBMb2cKICAgICAgICB3YW5kYi5sb2coewogICAgICAgICAgICAndHJhaW4vbG9zcyc6IHRyYWluX2xvc3MgLyBsZW4odHJhaW5fbG9hZGVyKSwKICAgICAgICAgICAgJ3ZhbC9sb3NzJzogdmFsX2xvc3MsCiAgICAgICAgICAgICd2YWwvYWNjdXJhY3knOiB2YWxfYWNjLAogICAgICAgICAgICAnbGVhcm5pbmdfcmF0ZSc6IHNjaGVkdWxlci5nZXRfbGFzdF9scigpWzBdLAogICAgICAgICAgICAnZXBvY2gnOiBlcG9jaAogICAgICAgIH0pCmBgYAoKIyMgUGFyYWxsZWwgRXhlY3V0aW9uCgojIyMgTXVsdGlwbGUgQWdlbnRzCgpSdW4gc3dlZXAgYWdlbnRzIGluIHBhcmFsbGVsIHRvIHNwZWVkIHVwIHNlYXJjaC4KCmBgYHB5dGhvbgojIEluaXRpYWxpemUgc3dlZXAgb25jZQpzd2VlcF9pZCA9IHdhbmRiLnN3ZWVwKHN3ZWVwX2NvbmZpZywgcHJvamVjdD0ibXktcHJvamVjdCIpCgojIFJ1biBtdWx0aXBsZSBhZ2VudHMgaW4gcGFyYWxsZWwKIyBBZ2VudCAxIChUZXJtaW5hbCAxKQp3YW5kYi5hZ2VudChzd2VlcF9pZCwgZnVuY3Rpb249dHJhaW4sIGNvdW50PTIwKQoKIyBBZ2VudCAyIChUZXJtaW5hbCAyKQp3YW5kYi5hZ2VudChzd2VlcF9pZCwgZnVuY3Rpb249dHJhaW4sIGNvdW50PTIwKQoKIyBBZ2VudCAzIChUZXJtaW5hbCAzKQp3YW5kYi5hZ2VudChzd2VlcF9pZCwgZnVuY3Rpb249dHJhaW4sIGNvdW50PTIwKQoKIyBUb3RhbDogNjAgcnVucyBhY3Jvc3MgMyBhZ2VudHMKYGBgCgojIyMgTXVsdGktR1BVIEV4ZWN1dGlvbgoKYGBgcHl0aG9uCmltcG9ydCBvcwoKZGVmIHRyYWluKCk6CiAgICAjIEdldCBhdmFpbGFibGUgR1BVCiAgICBncHVfaWQgPSBvcy5lbnZpcm9uLmdldCgnQ1VEQV9WSVNJQkxFX0RFVklDRVMnLCAnMCcpCgogICAgcnVuID0gd2FuZGIuaW5pdCgpCiAgICBjb25maWcgPSB3YW5kYi5jb25maWcKCiAgICAjIFRyYWluIG9uIHNwZWNpZmljIEdQVQogICAgZGV2aWNlID0gdG9yY2guZGV2aWNlKGYnY3VkYTp7Z3B1X2lkfScpCiAgICBtb2RlbCA9IG1vZGVsLnRvKGRldmljZSkKCiAgICAjIC4uLiByZXN0IG9mIHRyYWluaW5nIC4uLgoKIyBSdW4gYWdlbnRzIG9uIGRpZmZlcmVudCBHUFVzCiMgVGVybWluYWwgMQojIENVREFfVklTSUJMRV9ERVZJQ0VTPTAgd2FuZGIgYWdlbnQgc3dlZXBfaWQKCiMgVGVybWluYWwgMgojIENVREFfVklTSUJMRV9ERVZJQ0VTPTEgd2FuZGIgYWdlbnQgc3dlZXBfaWQKCiMgVGVybWluYWwgMwojIENVREFfVklTSUJMRV9ERVZJQ0VTPTIgd2FuZGIgYWdlbnQgc3dlZXBfaWQKYGBgCgojIyBBZHZhbmNlZCBQYXR0ZXJucwoKIyMjIE5lc3RlZCBQYXJhbWV0ZXJzCgpgYGBweXRob24Kc3dlZXBfY29uZmlnID0gewogICAgJ21ldGhvZCc6ICdiYXllcycsCiAgICAnbWV0cmljJzogeyduYW1lJzogJ3ZhbC9hY2N1cmFjeScsICdnb2FsJzogJ21heGltaXplJ30sCiAgICAncGFyYW1ldGVycyc6IHsKICAgICAgICAnbW9kZWwnOiB7CiAgICAgICAgICAgICdwYXJhbWV0ZXJzJzogewogICAgICAgICAgICAgICAgJ3R5cGUnOiB7CiAgICAgICAgICAgICAgICAgICAgJ3ZhbHVlcyc6IFsncmVzbmV0JywgJ2VmZmljaWVudG5ldCddCiAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgJ3NpemUnOiB7CiAgICAgICAgICAgICAgICAgICAgJ3ZhbHVlcyc6IFsnc21hbGwnLCAnbWVkaXVtJywgJ2xhcmdlJ10KICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgIH0sCiAgICAgICAgJ29wdGltaXplcic6IHsKICAgICAgICAgICAgJ3BhcmFtZXRlcnMnOiB7CiAgICAgICAgICAgICAgICAndHlwZSc6IHsKICAgICAgICAgICAgICAgICAgICAndmFsdWVzJzogWydhZGFtJywgJ3NnZCddCiAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgJ2xyJzogewogICAgICAgICAgICAgICAgICAgICdkaXN0cmlidXRpb24nOiAnbG9nX3VuaWZvcm0nLAogICAgICAgICAgICAgICAgICAgICdtaW4nOiAxZS01LAogICAgICAgICAgICAgICAgICAgICdtYXgnOiAxZS0xCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9Cn0KCiMgQWNjZXNzIG5lc3RlZCBjb25maWcKZGVmIHRyYWluKCk6CiAgICBydW4gPSB3YW5kYi5pbml0KCkKICAgIG1vZGVsX3R5cGUgPSB3YW5kYi5jb25maWcubW9kZWwudHlwZQogICAgbW9kZWxfc2l6ZSA9IHdhbmRiLmNvbmZpZy5tb2RlbC5zaXplCiAgICBvcHRfdHlwZSA9IHdhbmRiLmNvbmZpZy5vcHRpbWl6ZXIudHlwZQogICAgbHIgPSB3YW5kYi5jb25maWcub3B0aW1pemVyLmxyCmBgYAoKIyMjIENvbmRpdGlvbmFsIFBhcmFtZXRlcnMKCmBgYHB5dGhvbgpzd2VlcF9jb25maWcgPSB7CiAgICAnbWV0aG9kJzogJ2JheWVzJywKICAgICdwYXJhbWV0ZXJzJzogewogICAgICAgICdvcHRpbWl6ZXInOiB7CiAgICAgICAgICAgICd2YWx1ZXMnOiBbJ2FkYW0nLCAnc2dkJ10KICAgICAgICB9LAogICAgICAgICdsZWFybmluZ19yYXRlJzogewogICAgICAgICAgICAnZGlzdHJpYnV0aW9uJzogJ2xvZ191bmlmb3JtJywKICAgICAgICAgICAgJ21pbic6IDFlLTUsCiAgICAgICAgICAgICdtYXgnOiAxZS0xCiAgICAgICAgfSwKICAgICAgICAjIE9ubHkgdXNlZCBpZiBvcHRpbWl6ZXIgPT0gJ3NnZCcKICAgICAgICAnbW9tZW50dW0nOiB7CiAgICAgICAgICAgICdkaXN0cmlidXRpb24nOiAndW5pZm9ybScsCiAgICAgICAgICAgICdtaW4nOiAwLjUsCiAgICAgICAgICAgICdtYXgnOiAwLjk5CiAgICAgICAgfQogICAgfQp9CgpkZWYgdHJhaW4oKToKICAgIHJ1biA9IHdhbmRiLmluaXQoKQogICAgY29uZmlnID0gd2FuZGIuY29uZmlnCgogICAgaWYgY29uZmlnLm9wdGltaXplciA9PSAnYWRhbSc6CiAgICAgICAgb3B0aW1pemVyID0gdG9yY2gub3B0aW0uQWRhbSgKICAgICAgICAgICAgbW9kZWwucGFyYW1ldGVycygpLAogICAgICAgICAgICBscj1jb25maWcubGVhcm5pbmdfcmF0ZQogICAgICAgICkKICAgIGVsaWYgY29uZmlnLm9wdGltaXplciA9PSAnc2dkJzoKICAgICAgICBvcHRpbWl6ZXIgPSB0b3JjaC5vcHRpbS5TR0QoCiAgICAgICAgICAgIG1vZGVsLnBhcmFtZXRlcnMoKSwKICAgICAgICAgICAgbHI9Y29uZmlnLmxlYXJuaW5nX3JhdGUsCiAgICAgICAgICAgIG1vbWVudHVtPWNvbmZpZy5tb21lbnR1bSAgIyBDb25kaXRpb25hbCBwYXJhbWV0ZXIKICAgICAgICApCmBgYAoKIyMgUmVhbC1Xb3JsZCBFeGFtcGxlcwoKIyMjIEltYWdlIENsYXNzaWZpY2F0aW9uCgpgYGBweXRob24Kc3dlZXBfY29uZmlnID0gewogICAgJ21ldGhvZCc6ICdiYXllcycsCiAgICAnbWV0cmljJzogewogICAgICAgICduYW1lJzogJ3ZhbC90b3AxX2FjY3VyYWN5JywKICAgICAgICAnZ29hbCc6ICdtYXhpbWl6ZScKICAgIH0sCiAgICAncGFyYW1ldGVycyc6IHsKICAgICAgICAjIE1vZGVsCiAgICAgICAgJ2FyY2hpdGVjdHVyZSc6IHsKICAgICAgICAgICAgJ3ZhbHVlcyc6IFsncmVzbmV0NTAnLCAncmVzbmV0MTAxJywgJ2VmZmljaWVudG5ldF9iMCcsICdlZmZpY2llbnRuZXRfYjMnXQogICAgICAgIH0sCiAgICAgICAgJ3ByZXRyYWluZWQnOiB7CiAgICAgICAgICAgICd2YWx1ZXMnOiBbVHJ1ZSwgRmFsc2VdCiAgICAgICAgfSwKCiAgICAgICAgIyBUcmFpbmluZwogICAgICAgICdsZWFybmluZ19yYXRlJzogewogICAgICAgICAgICAnZGlzdHJpYnV0aW9uJzogJ2xvZ191bmlmb3JtJywKICAgICAgICAgICAgJ21pbic6IDFlLTUsCiAgICAgICAgICAgICdtYXgnOiAxZS0yCiAgICAgICAgfSwKICAgICAgICAnYmF0Y2hfc2l6ZSc6IHsKICAgICAgICAgICAgJ3ZhbHVlcyc6IFsxNiwgMzIsIDY0LCAxMjhdCiAgICAgICAgfSwKICAgICAgICAnb3B0aW1pemVyJzogewogICAgICAgICAgICAndmFsdWVzJzogWydhZGFtJywgJ3NnZCcsICdhZGFtdyddCiAgICAgICAgfSwKICAgICAgICAnd2VpZ2h0X2RlY2F5JzogewogICAgICAgICAgICAnZGlzdHJpYnV0aW9uJzogJ2xvZ191bmlmb3JtJywKICAgICAgICAgICAgJ21pbic6IDFlLTYsCiAgICAgICAgICAgICdtYXgnOiAxZS0yCiAgICAgICAgfSwKCiAgICAgICAgIyBSZWd1bGFyaXphdGlvbgogICAgICAgICdkcm9wb3V0JzogewogICAgICAgICAgICAnZGlzdHJpYnV0aW9uJzogJ3VuaWZvcm0nLAogICAgICAgICAgICAnbWluJzogMC4wLAogICAgICAgICAgICAnbWF4JzogMC41CiAgICAgICAgfSwKICAgICAgICAnbGFiZWxfc21vb3RoaW5nJzogewogICAgICAgICAgICAnZGlzdHJpYnV0aW9uJzogJ3VuaWZvcm0nLAogICAgICAgICAgICAnbWluJzogMC4wLAogICAgICAgICAgICAnbWF4JzogMC4yCiAgICAgICAgfSwKCiAgICAgICAgIyBEYXRhIGF1Z21lbnRhdGlvbgogICAgICAgICdtaXh1cF9hbHBoYSc6IHsKICAgICAgICAgICAgJ2Rpc3RyaWJ1dGlvbic6ICd1bmlmb3JtJywKICAgICAgICAgICAgJ21pbic6IDAuMCwKICAgICAgICAgICAgJ21heCc6IDEuMAogICAgICAgIH0sCiAgICAgICAgJ2N1dG1peF9hbHBoYSc6IHsKICAgICAgICAgICAgJ2Rpc3RyaWJ1dGlvbic6ICd1bmlmb3JtJywKICAgICAgICAgICAgJ21pbic6IDAuMCwKICAgICAgICAgICAgJ21heCc6IDEuMAogICAgICAgIH0KICAgIH0sCiAgICAnZWFybHlfdGVybWluYXRlJzogewogICAgICAgICd0eXBlJzogJ2h5cGVyYmFuZCcsCiAgICAgICAgJ21pbl9pdGVyJzogNQogICAgfQp9CmBgYAoKIyMjIE5MUCBGaW5lLVR1bmluZwoKYGBgcHl0aG9uCnN3ZWVwX2NvbmZpZyA9IHsKICAgICdtZXRob2QnOiAnYmF5ZXMnLAogICAgJ21ldHJpYyc6IHsnbmFtZSc6ICdldmFsL2YxJywgJ2dvYWwnOiAnbWF4aW1pemUnfSwKICAgICdwYXJhbWV0ZXJzJzogewogICAgICAgICMgTW9kZWwKICAgICAgICAnbW9kZWxfbmFtZSc6IHsKICAgICAgICAgICAgJ3ZhbHVlcyc6IFsnYmVydC1iYXNlLXVuY2FzZWQnLCAncm9iZXJ0YS1iYXNlJywgJ2Rpc3RpbGJlcnQtYmFzZS11bmNhc2VkJ10KICAgICAgICB9LAoKICAgICAgICAjIFRyYWluaW5nCiAgICAgICAgJ2xlYXJuaW5nX3JhdGUnOiB7CiAgICAgICAgICAgICdkaXN0cmlidXRpb24nOiAnbG9nX3VuaWZvcm0nLAogICAgICAgICAgICAnbWluJzogMWUtNiwKICAgICAgICAgICAgJ21heCc6IDFlLTQKICAgICAgICB9LAogICAgICAgICdwZXJfZGV2aWNlX3RyYWluX2JhdGNoX3NpemUnOiB7CiAgICAgICAgICAgICd2YWx1ZXMnOiBbOCwgMTYsIDMyXQogICAgICAgIH0sCiAgICAgICAgJ251bV90cmFpbl9lcG9jaHMnOiB7CiAgICAgICAgICAgICd2YWx1ZXMnOiBbMywgNCwgNV0KICAgICAgICB9LAogICAgICAgICd3YXJtdXBfcmF0aW8nOiB7CiAgICAgICAgICAgICdkaXN0cmlidXRpb24nOiAndW5pZm9ybScsCiAgICAgICAgICAgICdtaW4nOiAwLjAsCiAgICAgICAgICAgICdtYXgnOiAwLjEKICAgICAgICB9LAogICAgICAgICd3ZWlnaHRfZGVjYXknOiB7CiAgICAgICAgICAgICdkaXN0cmlidXRpb24nOiAnbG9nX3VuaWZvcm0nLAogICAgICAgICAgICAnbWluJzogMWUtNCwKICAgICAgICAgICAgJ21heCc6IDFlLTEKICAgICAgICB9LAoKICAgICAgICAjIE9wdGltaXplcgogICAgICAgICdhZGFtX2JldGExJzogewogICAgICAgICAgICAnZGlzdHJpYnV0aW9uJzogJ3VuaWZvcm0nLAogICAgICAgICAgICAnbWluJzogMC44LAogICAgICAgICAgICAnbWF4JzogMC45NQogICAgICAgIH0sCiAgICAgICAgJ2FkYW1fYmV0YTInOiB7CiAgICAgICAgICAgICdkaXN0cmlidXRpb24nOiAndW5pZm9ybScsCiAgICAgICAgICAgICdtaW4nOiAwLjk1LAogICAgICAgICAgICAnbWF4JzogMC45OTkKICAgICAgICB9CiAgICB9Cn0KYGBgCgojIyBCZXN0IFByYWN0aWNlcwoKIyMjIDEuIFN0YXJ0IFNtYWxsCgpgYGBweXRob24KIyBJbml0aWFsIGV4cGxvcmF0aW9uOiBSYW5kb20gc2VhcmNoLCAyMCBydW5zCnN3ZWVwX2NvbmZpZ192MSA9IHsKICAgICdtZXRob2QnOiAncmFuZG9tJywKICAgICdwYXJhbWV0ZXJzJzogey4uLn0KfQp3YW5kYi5hZ2VudChzd2VlcF9pZF92MSwgdHJhaW4sIGNvdW50PTIwKQoKIyBSZWZpbmVkIHNlYXJjaDogQmF5ZXMsIG5hcnJvdyByYW5nZXMKc3dlZXBfY29uZmlnX3YyID0gewogICAgJ21ldGhvZCc6ICdiYXllcycsCiAgICAncGFyYW1ldGVycyc6IHsKICAgICAgICAnbGVhcm5pbmdfcmF0ZSc6IHsKICAgICAgICAgICAgJ21pbic6IDVlLTUsICAjIE5hcnJvd2VkIGZyb20gMWUtNiB0byAxZS00CiAgICAgICAgICAgICdtYXgnOiAxZS00CiAgICAgICAgfQogICAgfQp9CmBgYAoKIyMjIDIuIFVzZSBMb2cgU2NhbGVzCgpgYGBweXRob24KIyDinIUgR29vZDogTG9nIHNjYWxlIGZvciBsZWFybmluZyByYXRlCidsZWFybmluZ19yYXRlJzogewogICAgJ2Rpc3RyaWJ1dGlvbic6ICdsb2dfdW5pZm9ybScsCiAgICAnbWluJzogMWUtNiwKICAgICdtYXgnOiAxZS0yCn0KCiMg4p2MIEJhZDogTGluZWFyIHNjYWxlCidsZWFybmluZ19yYXRlJzogewogICAgJ2Rpc3RyaWJ1dGlvbic6ICd1bmlmb3JtJywKICAgICdtaW4nOiAwLjAwMDAwMSwKICAgICdtYXgnOiAwLjAxCn0KYGBgCgojIyMgMy4gU2V0IFJlYXNvbmFibGUgUmFuZ2VzCgpgYGBweXRob24KIyBCYXNlIHJhbmdlcyBvbiBwcmlvciBrbm93bGVkZ2UKJ2xlYXJuaW5nX3JhdGUnOiB7J21pbic6IDFlLTUsICdtYXgnOiAxZS0zfSwgICMgVHlwaWNhbCBmb3IgQWRhbQonYmF0Y2hfc2l6ZSc6IHsndmFsdWVzJzogWzE2LCAzMiwgNjRdfSwgICAgICAgIyBHUFUgbWVtb3J5IGxpbWl0cwonZHJvcG91dCc6IHsnbWluJzogMC4xLCAnbWF4JzogMC41fSAgICAgICAgICAgIyBUb28gaGlnaCBodXJ0cyB0cmFpbmluZwpgYGAKCiMjIyA0LiBNb25pdG9yIFJlc291cmNlIFVzYWdlCgpgYGBweXRob24KZGVmIHRyYWluKCk6CiAgICBydW4gPSB3YW5kYi5pbml0KCkKCiAgICAjIExvZyBzeXN0ZW0gbWV0cmljcwogICAgd2FuZGIubG9nKHsKICAgICAgICAnc3lzdGVtL2dwdV9tZW1vcnlfYWxsb2NhdGVkJzogdG9yY2guY3VkYS5tZW1vcnlfYWxsb2NhdGVkKCksCiAgICAgICAgJ3N5c3RlbS9ncHVfbWVtb3J5X3Jlc2VydmVkJzogdG9yY2guY3VkYS5tZW1vcnlfcmVzZXJ2ZWQoKQogICAgfSkKYGBgCgojIyMgNS4gU2F2ZSBCZXN0IE1vZGVscwoKYGBgcHl0aG9uCmRlZiB0cmFpbigpOgogICAgcnVuID0gd2FuZGIuaW5pdCgpCiAgICBiZXN0X2FjYyA9IDAuMAoKICAgIGZvciBlcG9jaCBpbiByYW5nZShjb25maWcuZXBvY2hzKToKICAgICAgICB2YWxfYWNjID0gdmFsaWRhdGUobW9kZWwpCgogICAgICAgIGlmIHZhbF9hY2MgPiBiZXN0X2FjYzoKICAgICAgICAgICAgYmVzdF9hY2MgPSB2YWxfYWNjCiAgICAgICAgICAgICMgU2F2ZSBiZXN0IGNoZWNrcG9pbnQKICAgICAgICAgICAgdG9yY2guc2F2ZShtb2RlbC5zdGF0ZV9kaWN0KCksICdiZXN0X21vZGVsLnB0aCcpCiAgICAgICAgICAgIHdhbmRiLnNhdmUoJ2Jlc3RfbW9kZWwucHRoJykKYGBgCgojIyBSZXNvdXJjZXMKCi0gKipTd2VlcHMgRG9jdW1lbnRhdGlvbioqOiBodHRwczovL2RvY3Mud2FuZGIuYWkvZ3VpZGVzL3N3ZWVwcwotICoqQ29uZmlndXJhdGlvbiBSZWZlcmVuY2UqKjogaHR0cHM6Ly9kb2NzLndhbmRiLmFpL2d1aWRlcy9zd2VlcHMvY29uZmlndXJhdGlvbgotICoqRXhhbXBsZXMqKjogaHR0cHM6Ly9naXRodWIuY29tL3dhbmRiL2V4YW1wbGVzL3RyZWUvbWFzdGVyL2V4YW1wbGVzL3dhbmRiLXN3ZWVwcwo=
+# Comprehensive Hyperparameter Sweeps Guide
+
+Complete guide to hyperparameter optimization with W&B Sweeps.
+
+## Table of Contents
+- Sweep Configuration
+- Search Strategies
+- Parameter Distributions
+- Early Termination
+- Parallel Execution
+- Advanced Patterns
+- Real-World Examples
+
+## Sweep Configuration
+
+### Basic Sweep Config
+
+```python
+sweep_config = {
+    'method': 'bayes',  # Search strategy
+    'metric': {
+        'name': 'val/accuracy',
+        'goal': 'maximize'  # or 'minimize'
+    },
+    'parameters': {
+        'learning_rate': {
+            'distribution': 'log_uniform',
+            'min': 1e-5,
+            'max': 1e-1
+        },
+        'batch_size': {
+            'values': [16, 32, 64, 128]
+        }
+    }
+}
+
+# Initialize sweep
+sweep_id = wandb.sweep(sweep_config, project="my-project")
+```
+
+### Complete Config Example
+
+```python
+sweep_config = {
+    # Required: Search method
+    'method': 'bayes',
+
+    # Required: Optimization metric
+    'metric': {
+        'name': 'val/f1_score',
+        'goal': 'maximize'
+    },
+
+    # Required: Parameters to search
+    'parameters': {
+        # Continuous parameter
+        'learning_rate': {
+            'distribution': 'log_uniform',
+            'min': 1e-5,
+            'max': 1e-1
+        },
+
+        # Discrete values
+        'batch_size': {
+            'values': [16, 32, 64, 128]
+        },
+
+        # Categorical
+        'optimizer': {
+            'values': ['adam', 'sgd', 'rmsprop', 'adamw']
+        },
+
+        # Uniform distribution
+        'dropout': {
+            'distribution': 'uniform',
+            'min': 0.1,
+            'max': 0.5
+        },
+
+        # Integer range
+        'num_layers': {
+            'distribution': 'int_uniform',
+            'min': 2,
+            'max': 10
+        },
+
+        # Fixed value (constant across runs)
+        'epochs': {
+            'value': 50
+        }
+    },
+
+    # Optional: Early termination
+    'early_terminate': {
+        'type': 'hyperband',
+        'min_iter': 5,
+        's': 2,
+        'eta': 3,
+        'max_iter': 27
+    }
+}
+```
+
+## Search Strategies
+
+### 1. Grid Search
+
+Exhaustively search all combinations.
+
+```python
+sweep_config = {
+    'method': 'grid',
+    'parameters': {
+        'learning_rate': {
+            'values': [0.001, 0.01, 0.1]
+        },
+        'batch_size': {
+            'values': [16, 32, 64]
+        },
+        'optimizer': {
+            'values': ['adam', 'sgd']
+        }
+    }
+}
+
+# Total runs: 3 × 3 × 2 = 18 runs
+```
+
+**Pros:**
+- Comprehensive search
+- Reproducible results
+- No randomness
+
+**Cons:**
+- Exponential growth with parameters
+- Inefficient for continuous parameters
+- Not scalable beyond 3-4 parameters
+
+**When to use:**
+- Few parameters (< 4)
+- All discrete values
+- Need complete coverage
+
+### 2. Random Search
+
+Randomly sample parameter combinations.
+
+```python
+sweep_config = {
+    'method': 'random',
+    'parameters': {
+        'learning_rate': {
+            'distribution': 'log_uniform',
+            'min': 1e-5,
+            'max': 1e-1
+        },
+        'batch_size': {
+            'values': [16, 32, 64, 128, 256]
+        },
+        'dropout': {
+            'distribution': 'uniform',
+            'min': 0.0,
+            'max': 0.5
+        },
+        'num_layers': {
+            'distribution': 'int_uniform',
+            'min': 2,
+            'max': 8
+        }
+    }
+}
+
+# Run 100 random trials
+wandb.agent(sweep_id, function=train, count=100)
+```
+
+**Pros:**
+- Scales to many parameters
+- Can run indefinitely
+- Often finds good solutions quickly
+
+**Cons:**
+- No learning from previous runs
+- May miss optimal region
+- Results vary with random seed
+
+**When to use:**
+- Many parameters (> 4)
+- Quick exploration
+- Limited budget
+
+### 3. Bayesian Optimization (Recommended)
+
+Learn from previous trials to sample promising regions.
+
+```python
+sweep_config = {
+    'method': 'bayes',
+    'metric': {
+        'name': 'val/loss',
+        'goal': 'minimize'
+    },
+    'parameters': {
+        'learning_rate': {
+            'distribution': 'log_uniform',
+            'min': 1e-5,
+            'max': 1e-1
+        },
+        'weight_decay': {
+            'distribution': 'log_uniform',
+            'min': 1e-6,
+            'max': 1e-2
+        },
+        'dropout': {
+            'distribution': 'uniform',
+            'min': 0.1,
+            'max': 0.5
+        },
+        'num_layers': {
+            'values': [2, 3, 4, 5, 6]
+        }
+    }
+}
+```
+
+**Pros:**
+- Most sample-efficient
+- Learns from past trials
+- Focuses on promising regions
+
+**Cons:**
+- Initial random exploration phase
+- May get stuck in local optima
+- Slower per iteration
+
+**When to use:**
+- Expensive training runs
+- Need best performance
+- Limited compute budget
+
+## Parameter Distributions
+
+### Continuous Distributions
+
+```python
+# Log-uniform: Good for learning rates, regularization
+'learning_rate': {
+    'distribution': 'log_uniform',
+    'min': 1e-6,
+    'max': 1e-1
+}
+
+# Uniform: Good for dropout, momentum
+'dropout': {
+    'distribution': 'uniform',
+    'min': 0.0,
+    'max': 0.5
+}
+
+# Normal distribution
+'parameter': {
+    'distribution': 'normal',
+    'mu': 0.5,
+    'sigma': 0.1
+}
+
+# Log-normal distribution
+'parameter': {
+    'distribution': 'log_normal',
+    'mu': 0.0,
+    'sigma': 1.0
+}
+```
+
+### Discrete Distributions
+
+```python
+# Fixed values
+'batch_size': {
+    'values': [16, 32, 64, 128, 256]
+}
+
+# Integer uniform
+'num_layers': {
+    'distribution': 'int_uniform',
+    'min': 2,
+    'max': 10
+}
+
+# Quantized uniform (step size)
+'layer_size': {
+    'distribution': 'q_uniform',
+    'min': 32,
+    'max': 512,
+    'q': 32  # Step by 32: 32, 64, 96, 128...
+}
+
+# Quantized log-uniform
+'hidden_size': {
+    'distribution': 'q_log_uniform',
+    'min': 32,
+    'max': 1024,
+    'q': 32
+}
+```
+
+### Categorical Parameters
+
+```python
+# Optimizers
+'optimizer': {
+    'values': ['adam', 'sgd', 'rmsprop', 'adamw']
+}
+
+# Model architectures
+'model': {
+    'values': ['resnet18', 'resnet34', 'resnet50', 'efficientnet_b0']
+}
+
+# Activation functions
+'activation': {
+    'values': ['relu', 'gelu', 'silu', 'leaky_relu']
+}
+```
+
+## Early Termination
+
+Stop underperforming runs early to save compute.
+
+### Hyperband
+
+```python
+sweep_config = {
+    'method': 'bayes',
+    'metric': {'name': 'val/accuracy', 'goal': 'maximize'},
+    'parameters': {...},
+
+    # Hyperband early termination
+    'early_terminate': {
+        'type': 'hyperband',
+        'min_iter': 3,      # Minimum iterations before termination
+        's': 2,             # Bracket count
+        'eta': 3,           # Downsampling rate
+        'max_iter': 27      # Maximum iterations
+    }
+}
+```
+
+**How it works:**
+- Runs trials in brackets
+- Keeps top 1/eta performers each round
+- Eliminates bottom performers early
+
+### Custom Termination
+
+```python
+def train():
+    run = wandb.init()
+
+    for epoch in range(MAX_EPOCHS):
+        loss = train_epoch()
+        val_acc = validate()
+
+        wandb.log({'val/accuracy': val_acc, 'epoch': epoch})
+
+        # Custom early stopping
+        if epoch > 5 and val_acc < 0.5:
+            print("Early stop: Poor performance")
+            break
+
+        if epoch > 10 and val_acc > best_acc - 0.01:
+            print("Early stop: No improvement")
+            break
+```
+
+## Training Function
+
+### Basic Template
+
+```python
+def train():
+    # Initialize W&B run
+    run = wandb.init()
+
+    # Get hyperparameters
+    config = wandb.config
+
+    # Build model with config
+    model = build_model(
+        hidden_size=config.hidden_size,
+        num_layers=config.num_layers,
+        dropout=config.dropout
+    )
+
+    # Create optimizer
+    optimizer = create_optimizer(
+        model.parameters(),
+        name=config.optimizer,
+        lr=config.learning_rate,
+        weight_decay=config.weight_decay
+    )
+
+    # Training loop
+    for epoch in range(config.epochs):
+        # Train
+        train_loss, train_acc = train_epoch(
+            model, optimizer, train_loader, config.batch_size
+        )
+
+        # Validate
+        val_loss, val_acc = validate(model, val_loader)
+
+        # Log metrics
+        wandb.log({
+            'train/loss': train_loss,
+            'train/accuracy': train_acc,
+            'val/loss': val_loss,
+            'val/accuracy': val_acc,
+            'epoch': epoch
+        })
+
+    # Log final model
+    torch.save(model.state_dict(), 'model.pth')
+    wandb.save('model.pth')
+
+    # Finish run
+    wandb.finish()
+```
+
+### With PyTorch
+
+```python
+import torch
+import torch.nn as nn
+from torch.utils.data import DataLoader
+import wandb
+
+def train():
+    run = wandb.init()
+    config = wandb.config
+
+    # Data
+    train_loader = DataLoader(
+        train_dataset,
+        batch_size=config.batch_size,
+        shuffle=True
+    )
+
+    # Model
+    model = ResNet(
+        num_classes=config.num_classes,
+        dropout=config.dropout
+    ).to(device)
+
+    # Optimizer
+    if config.optimizer == 'adam':
+        optimizer = torch.optim.Adam(
+            model.parameters(),
+            lr=config.learning_rate,
+            weight_decay=config.weight_decay
+        )
+    elif config.optimizer == 'sgd':
+        optimizer = torch.optim.SGD(
+            model.parameters(),
+            lr=config.learning_rate,
+            momentum=config.momentum,
+            weight_decay=config.weight_decay
+        )
+
+    # Scheduler
+    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(
+        optimizer, T_max=config.epochs
+    )
+
+    # Training
+    for epoch in range(config.epochs):
+        model.train()
+        train_loss = 0.0
+
+        for data, target in train_loader:
+            data, target = data.to(device), target.to(device)
+
+            optimizer.zero_grad()
+            output = model(data)
+            loss = nn.CrossEntropyLoss()(output, target)
+            loss.backward()
+            optimizer.step()
+
+            train_loss += loss.item()
+
+        # Validation
+        model.eval()
+        val_loss, val_acc = validate(model, val_loader)
+
+        # Step scheduler
+        scheduler.step()
+
+        # Log
+        wandb.log({
+            'train/loss': train_loss / len(train_loader),
+            'val/loss': val_loss,
+            'val/accuracy': val_acc,
+            'learning_rate': scheduler.get_last_lr()[0],
+            'epoch': epoch
+        })
+```
+
+## Parallel Execution
+
+### Multiple Agents
+
+Run sweep agents in parallel to speed up search.
+
+```python
+# Initialize sweep once
+sweep_id = wandb.sweep(sweep_config, project="my-project")
+
+# Run multiple agents in parallel
+# Agent 1 (Terminal 1)
+wandb.agent(sweep_id, function=train, count=20)
+
+# Agent 2 (Terminal 2)
+wandb.agent(sweep_id, function=train, count=20)
+
+# Agent 3 (Terminal 3)
+wandb.agent(sweep_id, function=train, count=20)
+
+# Total: 60 runs across 3 agents
+```
+
+### Multi-GPU Execution
+
+```python
+import os
+
+def train():
+    # Get available GPU
+    gpu_id = os.environ.get('CUDA_VISIBLE_DEVICES', '0')
+
+    run = wandb.init()
+    config = wandb.config
+
+    # Train on specific GPU
+    device = torch.device(f'cuda:{gpu_id}')
+    model = model.to(device)
+
+    # ... rest of training ...
+
+# Run agents on different GPUs
+# Terminal 1
+# CUDA_VISIBLE_DEVICES=0 wandb agent sweep_id
+
+# Terminal 2
+# CUDA_VISIBLE_DEVICES=1 wandb agent sweep_id
+
+# Terminal 3
+# CUDA_VISIBLE_DEVICES=2 wandb agent sweep_id
+```
+
+## Advanced Patterns
+
+### Nested Parameters
+
+```python
+sweep_config = {
+    'method': 'bayes',
+    'metric': {'name': 'val/accuracy', 'goal': 'maximize'},
+    'parameters': {
+        'model': {
+            'parameters': {
+                'type': {
+                    'values': ['resnet', 'efficientnet']
+                },
+                'size': {
+                    'values': ['small', 'medium', 'large']
+                }
+            }
+        },
+        'optimizer': {
+            'parameters': {
+                'type': {
+                    'values': ['adam', 'sgd']
+                },
+                'lr': {
+                    'distribution': 'log_uniform',
+                    'min': 1e-5,
+                    'max': 1e-1
+                }
+            }
+        }
+    }
+}
+
+# Access nested config
+def train():
+    run = wandb.init()
+    model_type = wandb.config.model.type
+    model_size = wandb.config.model.size
+    opt_type = wandb.config.optimizer.type
+    lr = wandb.config.optimizer.lr
+```
+
+### Conditional Parameters
+
+```python
+sweep_config = {
+    'method': 'bayes',
+    'parameters': {
+        'optimizer': {
+            'values': ['adam', 'sgd']
+        },
+        'learning_rate': {
+            'distribution': 'log_uniform',
+            'min': 1e-5,
+            'max': 1e-1
+        },
+        # Only used if optimizer == 'sgd'
+        'momentum': {
+            'distribution': 'uniform',
+            'min': 0.5,
+            'max': 0.99
+        }
+    }
+}
+
+def train():
+    run = wandb.init()
+    config = wandb.config
+
+    if config.optimizer == 'adam':
+        optimizer = torch.optim.Adam(
+            model.parameters(),
+            lr=config.learning_rate
+        )
+    elif config.optimizer == 'sgd':
+        optimizer = torch.optim.SGD(
+            model.parameters(),
+            lr=config.learning_rate,
+            momentum=config.momentum  # Conditional parameter
+        )
+```
+
+## Real-World Examples
+
+### Image Classification
+
+```python
+sweep_config = {
+    'method': 'bayes',
+    'metric': {
+        'name': 'val/top1_accuracy',
+        'goal': 'maximize'
+    },
+    'parameters': {
+        # Model
+        'architecture': {
+            'values': ['resnet50', 'resnet101', 'efficientnet_b0', 'efficientnet_b3']
+        },
+        'pretrained': {
+            'values': [True, False]
+        },
+
+        # Training
+        'learning_rate': {
+            'distribution': 'log_uniform',
+            'min': 1e-5,
+            'max': 1e-2
+        },
+        'batch_size': {
+            'values': [16, 32, 64, 128]
+        },
+        'optimizer': {
+            'values': ['adam', 'sgd', 'adamw']
+        },
+        'weight_decay': {
+            'distribution': 'log_uniform',
+            'min': 1e-6,
+            'max': 1e-2
+        },
+
+        # Regularization
+        'dropout': {
+            'distribution': 'uniform',
+            'min': 0.0,
+            'max': 0.5
+        },
+        'label_smoothing': {
+            'distribution': 'uniform',
+            'min': 0.0,
+            'max': 0.2
+        },
+
+        # Data augmentation
+        'mixup_alpha': {
+            'distribution': 'uniform',
+            'min': 0.0,
+            'max': 1.0
+        },
+        'cutmix_alpha': {
+            'distribution': 'uniform',
+            'min': 0.0,
+            'max': 1.0
+        }
+    },
+    'early_terminate': {
+        'type': 'hyperband',
+        'min_iter': 5
+    }
+}
+```
+
+### NLP Fine-Tuning
+
+```python
+sweep_config = {
+    'method': 'bayes',
+    'metric': {'name': 'eval/f1', 'goal': 'maximize'},
+    'parameters': {
+        # Model
+        'model_name': {
+            'values': ['bert-base-uncased', 'roberta-base', 'distilbert-base-uncased']
+        },
+
+        # Training
+        'learning_rate': {
+            'distribution': 'log_uniform',
+            'min': 1e-6,
+            'max': 1e-4
+        },
+        'per_device_train_batch_size': {
+            'values': [8, 16, 32]
+        },
+        'num_train_epochs': {
+            'values': [3, 4, 5]
+        },
+        'warmup_ratio': {
+            'distribution': 'uniform',
+            'min': 0.0,
+            'max': 0.1
+        },
+        'weight_decay': {
+            'distribution': 'log_uniform',
+            'min': 1e-4,
+            'max': 1e-1
+        },
+
+        # Optimizer
+        'adam_beta1': {
+            'distribution': 'uniform',
+            'min': 0.8,
+            'max': 0.95
+        },
+        'adam_beta2': {
+            'distribution': 'uniform',
+            'min': 0.95,
+            'max': 0.999
+        }
+    }
+}
+```
+
+## Best Practices
+
+### 1. Start Small
+
+```python
+# Initial exploration: Random search, 20 runs
+sweep_config_v1 = {
+    'method': 'random',
+    'parameters': {...}
+}
+wandb.agent(sweep_id_v1, train, count=20)
+
+# Refined search: Bayes, narrow ranges
+sweep_config_v2 = {
+    'method': 'bayes',
+    'parameters': {
+        'learning_rate': {
+            'min': 5e-5,  # Narrowed from 1e-6 to 1e-4
+            'max': 1e-4
+        }
+    }
+}
+```
+
+### 2. Use Log Scales
+
+```python
+# ✅ Good: Log scale for learning rate
+'learning_rate': {
+    'distribution': 'log_uniform',
+    'min': 1e-6,
+    'max': 1e-2
+}
+
+# ❌ Bad: Linear scale
+'learning_rate': {
+    'distribution': 'uniform',
+    'min': 0.000001,
+    'max': 0.01
+}
+```
+
+### 3. Set Reasonable Ranges
+
+```python
+# Base ranges on prior knowledge
+'learning_rate': {'min': 1e-5, 'max': 1e-3},  # Typical for Adam
+'batch_size': {'values': [16, 32, 64]},       # GPU memory limits
+'dropout': {'min': 0.1, 'max': 0.5}           # Too high hurts training
+```
+
+### 4. Monitor Resource Usage
+
+```python
+def train():
+    run = wandb.init()
+
+    # Log system metrics
+    wandb.log({
+        'system/gpu_memory_allocated': torch.cuda.memory_allocated(),
+        'system/gpu_memory_reserved': torch.cuda.memory_reserved()
+    })
+```
+
+### 5. Save Best Models
+
+```python
+def train():
+    run = wandb.init()
+    best_acc = 0.0
+
+    for epoch in range(config.epochs):
+        val_acc = validate(model)
+
+        if val_acc > best_acc:
+            best_acc = val_acc
+            # Save best checkpoint
+            torch.save(model.state_dict(), 'best_model.pth')
+            wandb.save('best_model.pth')
+```
+
+## Resources
+
+- **Sweeps Documentation**: https://docs.wandb.ai/guides/sweeps
+- **Configuration Reference**: https://docs.wandb.ai/guides/sweeps/configuration
+- **Examples**: https://github.com/wandb/examples/tree/master/examples/wandb-sweeps

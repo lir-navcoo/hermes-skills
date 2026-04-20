@@ -1,1 +1,493 @@
-LS0tCm5hbWU6IGV2YWx1YXRpbmctbGxtcy1oYXJuZXNzCmRlc2NyaXB0aW9uOiBFdmFsdWF0ZXMgTExNcyBhY3Jvc3MgNjArIGFjYWRlbWljIGJlbmNobWFya3MgKE1NTFUsIEh1bWFuRXZhbCwgR1NNOEssIFRydXRoZnVsUUEsIEhlbGxhU3dhZykuIFVzZSB3aGVuIGJlbmNobWFya2luZyBtb2RlbCBxdWFsaXR5LCBjb21wYXJpbmcgbW9kZWxzLCByZXBvcnRpbmcgYWNhZGVtaWMgcmVzdWx0cywgb3IgdHJhY2tpbmcgdHJhaW5pbmcgcHJvZ3Jlc3MuIEluZHVzdHJ5IHN0YW5kYXJkIHVzZWQgYnkgRWxldXRoZXJBSSwgSHVnZ2luZ0ZhY2UsIGFuZCBtYWpvciBsYWJzLiBTdXBwb3J0cyBIdWdnaW5nRmFjZSwgdkxMTSwgQVBJcy4KdmVyc2lvbjogMS4wLjAKYXV0aG9yOiBPcmNoZXN0cmEgUmVzZWFyY2gKbGljZW5zZTogTUlUCmRlcGVuZGVuY2llczogW2xtLWV2YWwsIHRyYW5zZm9ybWVycywgdmxsbV0KbWV0YWRhdGE6CiAgaGVybWVzOgogICAgdGFnczogW0V2YWx1YXRpb24sIExNIEV2YWx1YXRpb24gSGFybmVzcywgQmVuY2htYXJraW5nLCBNTUxVLCBIdW1hbkV2YWwsIEdTTThLLCBFbGV1dGhlckFJLCBNb2RlbCBRdWFsaXR5LCBBY2FkZW1pYyBCZW5jaG1hcmtzLCBJbmR1c3RyeSBTdGFuZGFyZF0KCi0tLQoKIyBsbS1ldmFsdWF0aW9uLWhhcm5lc3MgLSBMTE0gQmVuY2htYXJraW5nCgojIyBRdWljayBzdGFydAoKbG0tZXZhbHVhdGlvbi1oYXJuZXNzIGV2YWx1YXRlcyBMTE1zIGFjcm9zcyA2MCsgYWNhZGVtaWMgYmVuY2htYXJrcyB1c2luZyBzdGFuZGFyZGl6ZWQgcHJvbXB0cyBhbmQgbWV0cmljcy4KCioqSW5zdGFsbGF0aW9uKio6CmBgYGJhc2gKcGlwIGluc3RhbGwgbG0tZXZhbApgYGAKCioqRXZhbHVhdGUgYW55IEh1Z2dpbmdGYWNlIG1vZGVsKio6CmBgYGJhc2gKbG1fZXZhbCAtLW1vZGVsIGhmIFwKICAtLW1vZGVsX2FyZ3MgcHJldHJhaW5lZD1tZXRhLWxsYW1hL0xsYW1hLTItN2ItaGYgXAogIC0tdGFza3MgbW1sdSxnc204ayxoZWxsYXN3YWcgXAogIC0tZGV2aWNlIGN1ZGE6MCBcCiAgLS1iYXRjaF9zaXplIDgKYGBgCgoqKlZpZXcgYXZhaWxhYmxlIHRhc2tzKio6CmBgYGJhc2gKbG1fZXZhbCAtLXRhc2tzIGxpc3QKYGBgCgojIyBDb21tb24gd29ya2Zsb3dzCgojIyMgV29ya2Zsb3cgMTogU3RhbmRhcmQgYmVuY2htYXJrIGV2YWx1YXRpb24KCkV2YWx1YXRlIG1vZGVsIG9uIGNvcmUgYmVuY2htYXJrcyAoTU1MVSwgR1NNOEssIEh1bWFuRXZhbCkuCgpDb3B5IHRoaXMgY2hlY2tsaXN0OgoKYGBgCkJlbmNobWFyayBFdmFsdWF0aW9uOgotIFsgXSBTdGVwIDE6IENob29zZSBiZW5jaG1hcmsgc3VpdGUKLSBbIF0gU3RlcCAyOiBDb25maWd1cmUgbW9kZWwKLSBbIF0gU3RlcCAzOiBSdW4gZXZhbHVhdGlvbgotIFsgXSBTdGVwIDQ6IEFuYWx5emUgcmVzdWx0cwpgYGAKCioqU3RlcCAxOiBDaG9vc2UgYmVuY2htYXJrIHN1aXRlKioKCioqQ29yZSByZWFzb25pbmcgYmVuY2htYXJrcyoqOgotICoqTU1MVSoqIChNYXNzaXZlIE11bHRpdGFzayBMYW5ndWFnZSBVbmRlcnN0YW5kaW5nKSAtIDU3IHN1YmplY3RzLCBtdWx0aXBsZSBjaG9pY2UKLSAqKkdTTThLKiogLSBHcmFkZSBzY2hvb2wgbWF0aCB3b3JkIHByb2JsZW1zCi0gKipIZWxsYVN3YWcqKiAtIENvbW1vbiBzZW5zZSByZWFzb25pbmcKLSAqKlRydXRoZnVsUUEqKiAtIFRydXRoZnVsbmVzcyBhbmQgZmFjdHVhbGl0eQotICoqQVJDKiogKEFJMiBSZWFzb25pbmcgQ2hhbGxlbmdlKSAtIFNjaWVuY2UgcXVlc3Rpb25zCgoqKkNvZGUgYmVuY2htYXJrcyoqOgotICoqSHVtYW5FdmFsKiogLSBQeXRob24gY29kZSBnZW5lcmF0aW9uICgxNjQgcHJvYmxlbXMpCi0gKipNQlBQKiogKE1vc3RseSBCYXNpYyBQeXRob24gUHJvYmxlbXMpIC0gUHl0aG9uIGNvZGluZwoKKipTdGFuZGFyZCBzdWl0ZSoqIChyZWNvbW1lbmRlZCBmb3IgbW9kZWwgcmVsZWFzZXMpOgpgYGBiYXNoCi0tdGFza3MgbW1sdSxnc204ayxoZWxsYXN3YWcsdHJ1dGhmdWxxYSxhcmNfY2hhbGxlbmdlCmBgYAoKKipTdGVwIDI6IENvbmZpZ3VyZSBtb2RlbCoqCgoqKkh1Z2dpbmdGYWNlIG1vZGVsKio6CmBgYGJhc2gKbG1fZXZhbCAtLW1vZGVsIGhmIFwKICAtLW1vZGVsX2FyZ3MgcHJldHJhaW5lZD1tZXRhLWxsYW1hL0xsYW1hLTItN2ItaGYsZHR5cGU9YmZsb2F0MTYgXAogIC0tdGFza3MgbW1sdSBcCiAgLS1kZXZpY2UgY3VkYTowIFwKICAtLWJhdGNoX3NpemUgYXV0byAgIyBBdXRvLWRldGVjdCBvcHRpbWFsIGJhdGNoIHNpemUKYGBgCgoqKlF1YW50aXplZCBtb2RlbCAoNC1iaXQvOC1iaXQpKio6CmBgYGJhc2gKbG1fZXZhbCAtLW1vZGVsIGhmIFwKICAtLW1vZGVsX2FyZ3MgcHJldHJhaW5lZD1tZXRhLWxsYW1hL0xsYW1hLTItN2ItaGYsbG9hZF9pbl80Yml0PVRydWUgXAogIC0tdGFza3MgbW1sdSBcCiAgLS1kZXZpY2UgY3VkYTowCmBgYAoKKipDdXN0b20gY2hlY2twb2ludCoqOgpgYGBiYXNoCmxtX2V2YWwgLS1tb2RlbCBoZiBcCiAgLS1tb2RlbF9hcmdzIHByZXRyYWluZWQ9L3BhdGgvdG8vbXktbW9kZWwsdG9rZW5pemVyPS9wYXRoL3RvL3Rva2VuaXplciBcCiAgLS10YXNrcyBtbWx1IFwKICAtLWRldmljZSBjdWRhOjAKYGBgCgoqKlN0ZXAgMzogUnVuIGV2YWx1YXRpb24qKgoKYGBgYmFzaAojIEZ1bGwgTU1MVSBldmFsdWF0aW9uICg1NyBzdWJqZWN0cykKbG1fZXZhbCAtLW1vZGVsIGhmIFwKICAtLW1vZGVsX2FyZ3MgcHJldHJhaW5lZD1tZXRhLWxsYW1hL0xsYW1hLTItN2ItaGYgXAogIC0tdGFza3MgbW1sdSBcCiAgLS1udW1fZmV3c2hvdCA1IFwgICMgNS1zaG90IGV2YWx1YXRpb24gKHN0YW5kYXJkKQogIC0tYmF0Y2hfc2l6ZSA4IFwKICAtLW91dHB1dF9wYXRoIHJlc3VsdHMvIFwKICAtLWxvZ19zYW1wbGVzICAjIFNhdmUgaW5kaXZpZHVhbCBwcmVkaWN0aW9ucwoKIyBNdWx0aXBsZSBiZW5jaG1hcmtzIGF0IG9uY2UKbG1fZXZhbCAtLW1vZGVsIGhmIFwKICAtLW1vZGVsX2FyZ3MgcHJldHJhaW5lZD1tZXRhLWxsYW1hL0xsYW1hLTItN2ItaGYgXAogIC0tdGFza3MgbW1sdSxnc204ayxoZWxsYXN3YWcsdHJ1dGhmdWxxYSxhcmNfY2hhbGxlbmdlIFwKICAtLW51bV9mZXdzaG90IDUgXAogIC0tYmF0Y2hfc2l6ZSA4IFwKICAtLW91dHB1dF9wYXRoIHJlc3VsdHMvbGxhbWEyLTdiLWV2YWwuanNvbgpgYGAKCioqU3RlcCA0OiBBbmFseXplIHJlc3VsdHMqKgoKUmVzdWx0cyBzYXZlZCB0byBgcmVzdWx0cy9sbGFtYTItN2ItZXZhbC5qc29uYDoKCmBgYGpzb24KewogICJyZXN1bHRzIjogewogICAgIm1tbHUiOiB7CiAgICAgICJhY2MiOiAwLjQ1OSwKICAgICAgImFjY19zdGRlcnIiOiAwLjAwNAogICAgfSwKICAgICJnc204ayI6IHsKICAgICAgImV4YWN0X21hdGNoIjogMC4xNDIsCiAgICAgICJleGFjdF9tYXRjaF9zdGRlcnIiOiAwLjAwNgogICAgfSwKICAgICJoZWxsYXN3YWciOiB7CiAgICAgICJhY2Nfbm9ybSI6IDAuNzY1LAogICAgICAiYWNjX25vcm1fc3RkZXJyIjogMC4wMDQKICAgIH0KICB9LAogICJjb25maWciOiB7CiAgICAibW9kZWwiOiAiaGYiLAogICAgIm1vZGVsX2FyZ3MiOiAicHJldHJhaW5lZD1tZXRhLWxsYW1hL0xsYW1hLTItN2ItaGYiLAogICAgIm51bV9mZXdzaG90IjogNQogIH0KfQpgYGAKCiMjIyBXb3JrZmxvdyAyOiBUcmFjayB0cmFpbmluZyBwcm9ncmVzcwoKRXZhbHVhdGUgY2hlY2twb2ludHMgZHVyaW5nIHRyYWluaW5nLgoKYGBgClRyYWluaW5nIFByb2dyZXNzIFRyYWNraW5nOgotIFsgXSBTdGVwIDE6IFNldCB1cCBwZXJpb2RpYyBldmFsdWF0aW9uCi0gWyBdIFN0ZXAgMjogQ2hvb3NlIHF1aWNrIGJlbmNobWFya3MKLSBbIF0gU3RlcCAzOiBBdXRvbWF0ZSBldmFsdWF0aW9uCi0gWyBdIFN0ZXAgNDogUGxvdCBsZWFybmluZyBjdXJ2ZXMKYGBgCgoqKlN0ZXAgMTogU2V0IHVwIHBlcmlvZGljIGV2YWx1YXRpb24qKgoKRXZhbHVhdGUgZXZlcnkgTiB0cmFpbmluZyBzdGVwczoKCmBgYGJhc2gKIyEvYmluL2Jhc2gKIyBldmFsX2NoZWNrcG9pbnQuc2gKCkNIRUNLUE9JTlRfRElSPSQxClNURVA9JDIKCmxtX2V2YWwgLS1tb2RlbCBoZiBcCiAgLS1tb2RlbF9hcmdzIHByZXRyYWluZWQ9JENIRUNLUE9JTlRfRElSL2NoZWNrcG9pbnQtJFNURVAgXAogIC0tdGFza3MgZ3NtOGssaGVsbGFzd2FnIFwKICAtLW51bV9mZXdzaG90IDAgXCAgIyAwLXNob3QgZm9yIHNwZWVkCiAgLS1iYXRjaF9zaXplIDE2IFwKICAtLW91dHB1dF9wYXRoIHJlc3VsdHMvc3RlcC0kU1RFUC5qc29uCmBgYAoKKipTdGVwIDI6IENob29zZSBxdWljayBiZW5jaG1hcmtzKioKCkZhc3QgYmVuY2htYXJrcyBmb3IgZnJlcXVlbnQgZXZhbHVhdGlvbjoKLSAqKkhlbGxhU3dhZyoqOiB+MTAgbWludXRlcyBvbiAxIEdQVQotICoqR1NNOEsqKjogfjUgbWludXRlcwotICoqUElRQSoqOiB+MiBtaW51dGVzCgpBdm9pZCBmb3IgZnJlcXVlbnQgZXZhbCAodG9vIHNsb3cpOgotICoqTU1MVSoqOiB+MiBob3VycyAoNTcgc3ViamVjdHMpCi0gKipIdW1hbkV2YWwqKjogUmVxdWlyZXMgY29kZSBleGVjdXRpb24KCioqU3RlcCAzOiBBdXRvbWF0ZSBldmFsdWF0aW9uKioKCkludGVncmF0ZSB3aXRoIHRyYWluaW5nIHNjcmlwdDoKCmBgYHB5dGhvbgojIEluIHRyYWluaW5nIGxvb3AKaWYgc3RlcCAlIGV2YWxfaW50ZXJ2YWwgPT0gMDoKICAgIG1vZGVsLnNhdmVfcHJldHJhaW5lZChmImNoZWNrcG9pbnRzL3N0ZXAte3N0ZXB9IikKCiAgICAjIFJ1biBldmFsdWF0aW9uCiAgICBvcy5zeXN0ZW0oZiIuL2V2YWxfY2hlY2twb2ludC5zaCBjaGVja3BvaW50cyBzdGVwLXtzdGVwfSIpCmBgYAoKT3IgdXNlIFB5VG9yY2ggTGlnaHRuaW5nIGNhbGxiYWNrczoKCmBgYHB5dGhvbgpmcm9tIHB5dG9yY2hfbGlnaHRuaW5nIGltcG9ydCBDYWxsYmFjawoKY2xhc3MgRXZhbEhhcm5lc3NDYWxsYmFjayhDYWxsYmFjayk6CiAgICBkZWYgb25fdmFsaWRhdGlvbl9lcG9jaF9lbmQoc2VsZiwgdHJhaW5lciwgcGxfbW9kdWxlKToKICAgICAgICBzdGVwID0gdHJhaW5lci5nbG9iYWxfc3RlcAogICAgICAgIGNoZWNrcG9pbnRfcGF0aCA9IGYiY2hlY2twb2ludHMvc3RlcC17c3RlcH0iCgogICAgICAgICMgU2F2ZSBjaGVja3BvaW50CiAgICAgICAgdHJhaW5lci5zYXZlX2NoZWNrcG9pbnQoY2hlY2twb2ludF9wYXRoKQoKICAgICAgICAjIFJ1biBsbS1ldmFsCiAgICAgICAgb3Muc3lzdGVtKGYibG1fZXZhbCAtLW1vZGVsIGhmIC0tbW9kZWxfYXJncyBwcmV0cmFpbmVkPXtjaGVja3BvaW50X3BhdGh9IC4uLiIpCmBgYAoKKipTdGVwIDQ6IFBsb3QgbGVhcm5pbmcgY3VydmVzKioKCmBgYHB5dGhvbgppbXBvcnQganNvbgppbXBvcnQgbWF0cGxvdGxpYi5weXBsb3QgYXMgcGx0CgojIExvYWQgYWxsIHJlc3VsdHMKc3RlcHMgPSBbXQptbWx1X3Njb3JlcyA9IFtdCgpmb3IgZmlsZSBpbiBzb3J0ZWQoZ2xvYi5nbG9iKCJyZXN1bHRzL3N0ZXAtKi5qc29uIikpOgogICAgd2l0aCBvcGVuKGZpbGUpIGFzIGY6CiAgICAgICAgZGF0YSA9IGpzb24ubG9hZChmKQogICAgICAgIHN0ZXAgPSBpbnQoZmlsZS5zcGxpdCgiLSIpWzFdLnNwbGl0KCIuIilbMF0pCiAgICAgICAgc3RlcHMuYXBwZW5kKHN0ZXApCiAgICAgICAgbW1sdV9zY29yZXMuYXBwZW5kKGRhdGFbInJlc3VsdHMiXVsibW1sdSJdWyJhY2MiXSkKCiMgUGxvdApwbHQucGxvdChzdGVwcywgbW1sdV9zY29yZXMpCnBsdC54bGFiZWwoIlRyYWluaW5nIFN0ZXAiKQpwbHQueWxhYmVsKCJNTUxVIEFjY3VyYWN5IikKcGx0LnRpdGxlKCJUcmFpbmluZyBQcm9ncmVzcyIpCnBsdC5zYXZlZmlnKCJ0cmFpbmluZ19jdXJ2ZS5wbmciKQpgYGAKCiMjIyBXb3JrZmxvdyAzOiBDb21wYXJlIG11bHRpcGxlIG1vZGVscwoKQmVuY2htYXJrIHN1aXRlIGZvciBtb2RlbCBjb21wYXJpc29uLgoKYGBgCk1vZGVsIENvbXBhcmlzb246Ci0gWyBdIFN0ZXAgMTogRGVmaW5lIG1vZGVsIGxpc3QKLSBbIF0gU3RlcCAyOiBSdW4gZXZhbHVhdGlvbnMKLSBbIF0gU3RlcCAzOiBHZW5lcmF0ZSBjb21wYXJpc29uIHRhYmxlCmBgYAoKKipTdGVwIDE6IERlZmluZSBtb2RlbCBsaXN0KioKCmBgYGJhc2gKIyBtb2RlbHMudHh0Cm1ldGEtbGxhbWEvTGxhbWEtMi03Yi1oZgptZXRhLWxsYW1hL0xsYW1hLTItMTNiLWhmCm1pc3RyYWxhaS9NaXN0cmFsLTdCLXYwLjEKbWljcm9zb2Z0L3BoaS0yCmBgYAoKKipTdGVwIDI6IFJ1biBldmFsdWF0aW9ucyoqCgpgYGBiYXNoCiMhL2Jpbi9iYXNoCiMgZXZhbF9hbGxfbW9kZWxzLnNoCgpUQVNLUz0ibW1sdSxnc204ayxoZWxsYXN3YWcsdHJ1dGhmdWxxYSIKCndoaWxlIHJlYWQgbW9kZWw7IGRvCiAgICBlY2hvICJFdmFsdWF0aW5nICRtb2RlbCIKCiAgICAjIEV4dHJhY3QgbW9kZWwgbmFtZSBmb3Igb3V0cHV0IGZpbGUKICAgIG1vZGVsX25hbWU9JChlY2hvICRtb2RlbCB8IHNlZCAncy9cLy8tL2cnKQoKICAgIGxtX2V2YWwgLS1tb2RlbCBoZiBcCiAgICAgIC0tbW9kZWxfYXJncyBwcmV0cmFpbmVkPSRtb2RlbCxkdHlwZT1iZmxvYXQxNiBcCiAgICAgIC0tdGFza3MgJFRBU0tTIFwKICAgICAgLS1udW1fZmV3c2hvdCA1IFwKICAgICAgLS1iYXRjaF9zaXplIGF1dG8gXAogICAgICAtLW91dHB1dF9wYXRoIHJlc3VsdHMvJG1vZGVsX25hbWUuanNvbgoKZG9uZSA8IG1vZGVscy50eHQKYGBgCgoqKlN0ZXAgMzogR2VuZXJhdGUgY29tcGFyaXNvbiB0YWJsZSoqCgpgYGBweXRob24KaW1wb3J0IGpzb24KaW1wb3J0IHBhbmRhcyBhcyBwZAoKbW9kZWxzID0gWwogICAgIm1ldGEtbGxhbWEtTGxhbWEtMi03Yi1oZiIsCiAgICAibWV0YS1sbGFtYS1MbGFtYS0yLTEzYi1oZiIsCiAgICAibWlzdHJhbGFpLU1pc3RyYWwtN0ItdjAuMSIsCiAgICAibWljcm9zb2Z0LXBoaS0yIgpdCgp0YXNrcyA9IFsibW1sdSIsICJnc204ayIsICJoZWxsYXN3YWciLCAidHJ1dGhmdWxxYSJdCgpyZXN1bHRzID0gW10KZm9yIG1vZGVsIGluIG1vZGVsczoKICAgIHdpdGggb3BlbihmInJlc3VsdHMve21vZGVsfS5qc29uIikgYXMgZjoKICAgICAgICBkYXRhID0ganNvbi5sb2FkKGYpCiAgICAgICAgcm93ID0geyJNb2RlbCI6IG1vZGVsLnJlcGxhY2UoIi0iLCAiLyIpfQogICAgICAgIGZvciB0YXNrIGluIHRhc2tzOgogICAgICAgICAgICAjIEdldCBwcmltYXJ5IG1ldHJpYyBmb3IgZWFjaCB0YXNrCiAgICAgICAgICAgIG1ldHJpY3MgPSBkYXRhWyJyZXN1bHRzIl1bdGFza10KICAgICAgICAgICAgaWYgImFjYyIgaW4gbWV0cmljczoKICAgICAgICAgICAgICAgIHJvd1t0YXNrLnVwcGVyKCldID0gZiJ7bWV0cmljc1snYWNjJ106LjNmfSIKICAgICAgICAgICAgZWxpZiAiZXhhY3RfbWF0Y2giIGluIG1ldHJpY3M6CiAgICAgICAgICAgICAgICByb3dbdGFzay51cHBlcigpXSA9IGYie21ldHJpY3NbJ2V4YWN0X21hdGNoJ106LjNmfSIKICAgICAgICByZXN1bHRzLmFwcGVuZChyb3cpCgpkZiA9IHBkLkRhdGFGcmFtZShyZXN1bHRzKQpwcmludChkZi50b19tYXJrZG93bihpbmRleD1GYWxzZSkpCmBgYAoKT3V0cHV0OgpgYGAKfCBNb2RlbCAgICAgICAgICAgICAgICAgIHwgTU1MVSAgfCBHU004SyB8IEhFTExBU1dBRyB8IFRSVVRIRlVMUUEgfAp8LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tfC0tLS0tLS18LS0tLS0tLXwtLS0tLS0tLS0tLXwtLS0tLS0tLS0tLS18CnwgbWV0YS1sbGFtYS9MbGFtYS0yLTdiICB8IDAuNDU5IHwgMC4xNDIgfCAwLjc2NSAgICAgfCAwLjM5MSAgICAgIHwKfCBtZXRhLWxsYW1hL0xsYW1hLTItMTNiIHwgMC41NDkgfCAwLjI4NyB8IDAuODAxICAgICB8IDAuNDMwICAgICAgfAp8IG1pc3RyYWxhaS9NaXN0cmFsLTdCICAgfCAwLjYyNiB8IDAuMzk1IHwgMC44MTIgICAgIHwgMC40MjggICAgICB8CnwgbWljcm9zb2Z0L3BoaS0yICAgICAgICB8IDAuNTYwIHwgMC42MTMgfCAwLjY4MiAgICAgfCAwLjQ0NyAgICAgIHwKYGBgCgojIyMgV29ya2Zsb3cgNDogRXZhbHVhdGUgd2l0aCB2TExNIChmYXN0ZXIgaW5mZXJlbmNlKQoKVXNlIHZMTE0gYmFja2VuZCBmb3IgNS0xMHggZmFzdGVyIGV2YWx1YXRpb24uCgpgYGAKdkxMTSBFdmFsdWF0aW9uOgotIFsgXSBTdGVwIDE6IEluc3RhbGwgdkxMTQotIFsgXSBTdGVwIDI6IENvbmZpZ3VyZSB2TExNIGJhY2tlbmQKLSBbIF0gU3RlcCAzOiBSdW4gZXZhbHVhdGlvbgpgYGAKCioqU3RlcCAxOiBJbnN0YWxsIHZMTE0qKgoKYGBgYmFzaApwaXAgaW5zdGFsbCB2bGxtCmBgYAoKKipTdGVwIDI6IENvbmZpZ3VyZSB2TExNIGJhY2tlbmQqKgoKYGBgYmFzaApsbV9ldmFsIC0tbW9kZWwgdmxsbSBcCiAgLS1tb2RlbF9hcmdzIHByZXRyYWluZWQ9bWV0YS1sbGFtYS9MbGFtYS0yLTdiLWhmLHRlbnNvcl9wYXJhbGxlbF9zaXplPTEsZHR5cGU9YXV0byxncHVfbWVtb3J5X3V0aWxpemF0aW9uPTAuOCBcCiAgLS10YXNrcyBtbWx1IFwKICAtLWJhdGNoX3NpemUgYXV0bwpgYGAKCioqU3RlcCAzOiBSdW4gZXZhbHVhdGlvbioqCgp2TExNIGlzIDUtMTDDlyBmYXN0ZXIgdGhhbiBzdGFuZGFyZCBIdWdnaW5nRmFjZToKCmBgYGJhc2gKIyBTdGFuZGFyZCBIRjogfjIgaG91cnMgZm9yIE1NTFUgb24gN0IgbW9kZWwKbG1fZXZhbCAtLW1vZGVsIGhmIFwKICAtLW1vZGVsX2FyZ3MgcHJldHJhaW5lZD1tZXRhLWxsYW1hL0xsYW1hLTItN2ItaGYgXAogIC0tdGFza3MgbW1sdSBcCiAgLS1iYXRjaF9zaXplIDgKCiMgdkxMTTogfjE1LTIwIG1pbnV0ZXMgZm9yIE1NTFUgb24gN0IgbW9kZWwKbG1fZXZhbCAtLW1vZGVsIHZsbG0gXAogIC0tbW9kZWxfYXJncyBwcmV0cmFpbmVkPW1ldGEtbGxhbWEvTGxhbWEtMi03Yi1oZix0ZW5zb3JfcGFyYWxsZWxfc2l6ZT0yIFwKICAtLXRhc2tzIG1tbHUgXAogIC0tYmF0Y2hfc2l6ZSBhdXRvCmBgYAoKIyMgV2hlbiB0byB1c2UgdnMgYWx0ZXJuYXRpdmVzCgoqKlVzZSBsbS1ldmFsdWF0aW9uLWhhcm5lc3Mgd2hlbjoqKgotIEJlbmNobWFya2luZyBtb2RlbHMgZm9yIGFjYWRlbWljIHBhcGVycwotIENvbXBhcmluZyBtb2RlbCBxdWFsaXR5IGFjcm9zcyBzdGFuZGFyZCB0YXNrcwotIFRyYWNraW5nIHRyYWluaW5nIHByb2dyZXNzCi0gUmVwb3J0aW5nIHN0YW5kYXJkaXplZCBtZXRyaWNzIChldmVyeW9uZSB1c2VzIHNhbWUgcHJvbXB0cykKLSBOZWVkIHJlcHJvZHVjaWJsZSBldmFsdWF0aW9uCgoqKlVzZSBhbHRlcm5hdGl2ZXMgaW5zdGVhZDoqKgotICoqSEVMTSoqIChTdGFuZm9yZCk6IEJyb2FkZXIgZXZhbHVhdGlvbiAoZmFpcm5lc3MsIGVmZmljaWVuY3ksIGNhbGlicmF0aW9uKQotICoqQWxwYWNhRXZhbCoqOiBJbnN0cnVjdGlvbi1mb2xsb3dpbmcgZXZhbHVhdGlvbiB3aXRoIExMTSBqdWRnZXMKLSAqKk1ULUJlbmNoKio6IENvbnZlcnNhdGlvbmFsIG11bHRpLXR1cm4gZXZhbHVhdGlvbgotICoqQ3VzdG9tIHNjcmlwdHMqKjogRG9tYWluLXNwZWNpZmljIGV2YWx1YXRpb24KCiMjIENvbW1vbiBpc3N1ZXMKCioqSXNzdWU6IEV2YWx1YXRpb24gdG9vIHNsb3cqKgoKVXNlIHZMTE0gYmFja2VuZDoKYGBgYmFzaApsbV9ldmFsIC0tbW9kZWwgdmxsbSBcCiAgLS1tb2RlbF9hcmdzIHByZXRyYWluZWQ9bW9kZWwtbmFtZSx0ZW5zb3JfcGFyYWxsZWxfc2l6ZT0yCmBgYAoKT3IgcmVkdWNlIGZld3Nob3QgZXhhbXBsZXM6CmBgYGJhc2gKLS1udW1fZmV3c2hvdCAwICAjIEluc3RlYWQgb2YgNQpgYGAKCk9yIGV2YWx1YXRlIHN1YnNldCBvZiBNTUxVOgpgYGBiYXNoCi0tdGFza3MgbW1sdV9zdGVtICAjIE9ubHkgU1RFTSBzdWJqZWN0cwpgYGAKCioqSXNzdWU6IE91dCBvZiBtZW1vcnkqKgoKUmVkdWNlIGJhdGNoIHNpemU6CmBgYGJhc2gKLS1iYXRjaF9zaXplIDEgICMgT3IgLS1iYXRjaF9zaXplIGF1dG8KYGBgCgpVc2UgcXVhbnRpemF0aW9uOgpgYGBiYXNoCi0tbW9kZWxfYXJncyBwcmV0cmFpbmVkPW1vZGVsLW5hbWUsbG9hZF9pbl84Yml0PVRydWUKYGBgCgpFbmFibGUgQ1BVIG9mZmxvYWRpbmc6CmBgYGJhc2gKLS1tb2RlbF9hcmdzIHByZXRyYWluZWQ9bW9kZWwtbmFtZSxkZXZpY2VfbWFwPWF1dG8sb2ZmbG9hZF9mb2xkZXI9b2ZmbG9hZApgYGAKCioqSXNzdWU6IERpZmZlcmVudCByZXN1bHRzIHRoYW4gcmVwb3J0ZWQqKgoKQ2hlY2sgZmV3c2hvdCBjb3VudDoKYGBgYmFzaAotLW51bV9mZXdzaG90IDUgICMgTW9zdCBwYXBlcnMgdXNlIDUtc2hvdApgYGAKCkNoZWNrIGV4YWN0IHRhc2sgbmFtZToKYGBgYmFzaAotLXRhc2tzIG1tbHUgICMgTm90IG1tbHVfZGlyZWN0IG9yIG1tbHVfZmV3c2hvdApgYGAKClZlcmlmeSBtb2RlbCBhbmQgdG9rZW5pemVyIG1hdGNoOgpgYGBiYXNoCi0tbW9kZWxfYXJncyBwcmV0cmFpbmVkPW1vZGVsLW5hbWUsdG9rZW5pemVyPXNhbWUtbW9kZWwtbmFtZQpgYGAKCioqSXNzdWU6IEh1bWFuRXZhbCBub3QgZXhlY3V0aW5nIGNvZGUqKgoKSW5zdGFsbCBleGVjdXRpb24gZGVwZW5kZW5jaWVzOgpgYGBiYXNoCnBpcCBpbnN0YWxsIGh1bWFuLWV2YWwKYGBgCgpFbmFibGUgY29kZSBleGVjdXRpb246CmBgYGJhc2gKbG1fZXZhbCAtLW1vZGVsIGhmIFwKICAtLW1vZGVsX2FyZ3MgcHJldHJhaW5lZD1tb2RlbC1uYW1lIFwKICAtLXRhc2tzIGh1bWFuZXZhbCBcCiAgLS1hbGxvd19jb2RlX2V4ZWN1dGlvbiAgIyBSZXF1aXJlZCBmb3IgSHVtYW5FdmFsCmBgYAoKIyMgQWR2YW5jZWQgdG9waWNzCgoqKkJlbmNobWFyayBkZXNjcmlwdGlvbnMqKjogU2VlIFtyZWZlcmVuY2VzL2JlbmNobWFyay1ndWlkZS5tZF0ocmVmZXJlbmNlcy9iZW5jaG1hcmstZ3VpZGUubWQpIGZvciBkZXRhaWxlZCBkZXNjcmlwdGlvbiBvZiBhbGwgNjArIHRhc2tzLCB3aGF0IHRoZXkgbWVhc3VyZSwgYW5kIGludGVycHJldGF0aW9uLgoKKipDdXN0b20gdGFza3MqKjogU2VlIFtyZWZlcmVuY2VzL2N1c3RvbS10YXNrcy5tZF0ocmVmZXJlbmNlcy9jdXN0b20tdGFza3MubWQpIGZvciBjcmVhdGluZyBkb21haW4tc3BlY2lmaWMgZXZhbHVhdGlvbiB0YXNrcy4KCioqQVBJIGV2YWx1YXRpb24qKjogU2VlIFtyZWZlcmVuY2VzL2FwaS1ldmFsdWF0aW9uLm1kXShyZWZlcmVuY2VzL2FwaS1ldmFsdWF0aW9uLm1kKSBmb3IgZXZhbHVhdGluZyBPcGVuQUksIEFudGhyb3BpYywgYW5kIG90aGVyIEFQSSBtb2RlbHMuCgoqKk11bHRpLUdQVSBzdHJhdGVnaWVzKio6IFNlZSBbcmVmZXJlbmNlcy9kaXN0cmlidXRlZC1ldmFsLm1kXShyZWZlcmVuY2VzL2Rpc3RyaWJ1dGVkLWV2YWwubWQpIGZvciBkYXRhIHBhcmFsbGVsIGFuZCB0ZW5zb3IgcGFyYWxsZWwgZXZhbHVhdGlvbi4KCiMjIEhhcmR3YXJlIHJlcXVpcmVtZW50cwoKLSAqKkdQVSoqOiBOVklESUEgKENVREEgMTEuOCspLCB3b3JrcyBvbiBDUFUgKHZlcnkgc2xvdykKLSAqKlZSQU0qKjoKICAtIDdCIG1vZGVsOiAxNkdCIChiZjE2KSBvciA4R0IgKDgtYml0KQogIC0gMTNCIG1vZGVsOiAyOEdCIChiZjE2KSBvciAxNEdCICg4LWJpdCkKICAtIDcwQiBtb2RlbDogUmVxdWlyZXMgbXVsdGktR1BVIG9yIHF1YW50aXphdGlvbgotICoqVGltZSoqICg3QiBtb2RlbCwgc2luZ2xlIEExMDApOgogIC0gSGVsbGFTd2FnOiAxMCBtaW51dGVzCiAgLSBHU004SzogNSBtaW51dGVzCiAgLSBNTUxVIChmdWxsKTogMiBob3VycwogIC0gSHVtYW5FdmFsOiAyMCBtaW51dGVzCgojIyBSZXNvdXJjZXMKCi0gR2l0SHViOiBodHRwczovL2dpdGh1Yi5jb20vRWxldXRoZXJBSS9sbS1ldmFsdWF0aW9uLWhhcm5lc3MKLSBEb2NzOiBodHRwczovL2dpdGh1Yi5jb20vRWxldXRoZXJBSS9sbS1ldmFsdWF0aW9uLWhhcm5lc3MvdHJlZS9tYWluL2RvY3MKLSBUYXNrIGxpYnJhcnk6IDYwKyB0YXNrcyBpbmNsdWRpbmcgTU1MVSwgR1NNOEssIEh1bWFuRXZhbCwgVHJ1dGhmdWxRQSwgSGVsbGFTd2FnLCBBUkMsIFdpbm9HcmFuZGUsIGV0Yy4KLSBMZWFkZXJib2FyZDogaHR0cHM6Ly9odWdnaW5nZmFjZS5jby9zcGFjZXMvSHVnZ2luZ0ZhY2VINC9vcGVuX2xsbV9sZWFkZXJib2FyZCAodXNlcyB0aGlzIGhhcm5lc3MpCgoKCg==
+---
+name: evaluating-llms-harness
+description: Evaluates LLMs across 60+ academic benchmarks (MMLU, HumanEval, GSM8K, TruthfulQA, HellaSwag). Use when benchmarking model quality, comparing models, reporting academic results, or tracking training progress. Industry standard used by EleutherAI, HuggingFace, and major labs. Supports HuggingFace, vLLM, APIs.
+version: 1.0.0
+author: Orchestra Research
+license: MIT
+dependencies: [lm-eval, transformers, vllm]
+metadata:
+  hermes:
+    tags: [Evaluation, LM Evaluation Harness, Benchmarking, MMLU, HumanEval, GSM8K, EleutherAI, Model Quality, Academic Benchmarks, Industry Standard]
+
+---
+
+# lm-evaluation-harness - LLM Benchmarking
+
+## Quick start
+
+lm-evaluation-harness evaluates LLMs across 60+ academic benchmarks using standardized prompts and metrics.
+
+**Installation**:
+```bash
+pip install lm-eval
+```
+
+**Evaluate any HuggingFace model**:
+```bash
+lm_eval --model hf \
+  --model_args pretrained=meta-llama/Llama-2-7b-hf \
+  --tasks mmlu,gsm8k,hellaswag \
+  --device cuda:0 \
+  --batch_size 8
+```
+
+**View available tasks**:
+```bash
+lm_eval --tasks list
+```
+
+## Common workflows
+
+### Workflow 1: Standard benchmark evaluation
+
+Evaluate model on core benchmarks (MMLU, GSM8K, HumanEval).
+
+Copy this checklist:
+
+```
+Benchmark Evaluation:
+- [ ] Step 1: Choose benchmark suite
+- [ ] Step 2: Configure model
+- [ ] Step 3: Run evaluation
+- [ ] Step 4: Analyze results
+```
+
+**Step 1: Choose benchmark suite**
+
+**Core reasoning benchmarks**:
+- **MMLU** (Massive Multitask Language Understanding) - 57 subjects, multiple choice
+- **GSM8K** - Grade school math word problems
+- **HellaSwag** - Common sense reasoning
+- **TruthfulQA** - Truthfulness and factuality
+- **ARC** (AI2 Reasoning Challenge) - Science questions
+
+**Code benchmarks**:
+- **HumanEval** - Python code generation (164 problems)
+- **MBPP** (Mostly Basic Python Problems) - Python coding
+
+**Standard suite** (recommended for model releases):
+```bash
+--tasks mmlu,gsm8k,hellaswag,truthfulqa,arc_challenge
+```
+
+**Step 2: Configure model**
+
+**HuggingFace model**:
+```bash
+lm_eval --model hf \
+  --model_args pretrained=meta-llama/Llama-2-7b-hf,dtype=bfloat16 \
+  --tasks mmlu \
+  --device cuda:0 \
+  --batch_size auto  # Auto-detect optimal batch size
+```
+
+**Quantized model (4-bit/8-bit)**:
+```bash
+lm_eval --model hf \
+  --model_args pretrained=meta-llama/Llama-2-7b-hf,load_in_4bit=True \
+  --tasks mmlu \
+  --device cuda:0
+```
+
+**Custom checkpoint**:
+```bash
+lm_eval --model hf \
+  --model_args pretrained=/path/to/my-model,tokenizer=/path/to/tokenizer \
+  --tasks mmlu \
+  --device cuda:0
+```
+
+**Step 3: Run evaluation**
+
+```bash
+# Full MMLU evaluation (57 subjects)
+lm_eval --model hf \
+  --model_args pretrained=meta-llama/Llama-2-7b-hf \
+  --tasks mmlu \
+  --num_fewshot 5 \  # 5-shot evaluation (standard)
+  --batch_size 8 \
+  --output_path results/ \
+  --log_samples  # Save individual predictions
+
+# Multiple benchmarks at once
+lm_eval --model hf \
+  --model_args pretrained=meta-llama/Llama-2-7b-hf \
+  --tasks mmlu,gsm8k,hellaswag,truthfulqa,arc_challenge \
+  --num_fewshot 5 \
+  --batch_size 8 \
+  --output_path results/llama2-7b-eval.json
+```
+
+**Step 4: Analyze results**
+
+Results saved to `results/llama2-7b-eval.json`:
+
+```json
+{
+  "results": {
+    "mmlu": {
+      "acc": 0.459,
+      "acc_stderr": 0.004
+    },
+    "gsm8k": {
+      "exact_match": 0.142,
+      "exact_match_stderr": 0.006
+    },
+    "hellaswag": {
+      "acc_norm": 0.765,
+      "acc_norm_stderr": 0.004
+    }
+  },
+  "config": {
+    "model": "hf",
+    "model_args": "pretrained=meta-llama/Llama-2-7b-hf",
+    "num_fewshot": 5
+  }
+}
+```
+
+### Workflow 2: Track training progress
+
+Evaluate checkpoints during training.
+
+```
+Training Progress Tracking:
+- [ ] Step 1: Set up periodic evaluation
+- [ ] Step 2: Choose quick benchmarks
+- [ ] Step 3: Automate evaluation
+- [ ] Step 4: Plot learning curves
+```
+
+**Step 1: Set up periodic evaluation**
+
+Evaluate every N training steps:
+
+```bash
+#!/bin/bash
+# eval_checkpoint.sh
+
+CHECKPOINT_DIR=$1
+STEP=$2
+
+lm_eval --model hf \
+  --model_args pretrained=$CHECKPOINT_DIR/checkpoint-$STEP \
+  --tasks gsm8k,hellaswag \
+  --num_fewshot 0 \  # 0-shot for speed
+  --batch_size 16 \
+  --output_path results/step-$STEP.json
+```
+
+**Step 2: Choose quick benchmarks**
+
+Fast benchmarks for frequent evaluation:
+- **HellaSwag**: ~10 minutes on 1 GPU
+- **GSM8K**: ~5 minutes
+- **PIQA**: ~2 minutes
+
+Avoid for frequent eval (too slow):
+- **MMLU**: ~2 hours (57 subjects)
+- **HumanEval**: Requires code execution
+
+**Step 3: Automate evaluation**
+
+Integrate with training script:
+
+```python
+# In training loop
+if step % eval_interval == 0:
+    model.save_pretrained(f"checkpoints/step-{step}")
+
+    # Run evaluation
+    os.system(f"./eval_checkpoint.sh checkpoints step-{step}")
+```
+
+Or use PyTorch Lightning callbacks:
+
+```python
+from pytorch_lightning import Callback
+
+class EvalHarnessCallback(Callback):
+    def on_validation_epoch_end(self, trainer, pl_module):
+        step = trainer.global_step
+        checkpoint_path = f"checkpoints/step-{step}"
+
+        # Save checkpoint
+        trainer.save_checkpoint(checkpoint_path)
+
+        # Run lm-eval
+        os.system(f"lm_eval --model hf --model_args pretrained={checkpoint_path} ...")
+```
+
+**Step 4: Plot learning curves**
+
+```python
+import json
+import matplotlib.pyplot as plt
+
+# Load all results
+steps = []
+mmlu_scores = []
+
+for file in sorted(glob.glob("results/step-*.json")):
+    with open(file) as f:
+        data = json.load(f)
+        step = int(file.split("-")[1].split(".")[0])
+        steps.append(step)
+        mmlu_scores.append(data["results"]["mmlu"]["acc"])
+
+# Plot
+plt.plot(steps, mmlu_scores)
+plt.xlabel("Training Step")
+plt.ylabel("MMLU Accuracy")
+plt.title("Training Progress")
+plt.savefig("training_curve.png")
+```
+
+### Workflow 3: Compare multiple models
+
+Benchmark suite for model comparison.
+
+```
+Model Comparison:
+- [ ] Step 1: Define model list
+- [ ] Step 2: Run evaluations
+- [ ] Step 3: Generate comparison table
+```
+
+**Step 1: Define model list**
+
+```bash
+# models.txt
+meta-llama/Llama-2-7b-hf
+meta-llama/Llama-2-13b-hf
+mistralai/Mistral-7B-v0.1
+microsoft/phi-2
+```
+
+**Step 2: Run evaluations**
+
+```bash
+#!/bin/bash
+# eval_all_models.sh
+
+TASKS="mmlu,gsm8k,hellaswag,truthfulqa"
+
+while read model; do
+    echo "Evaluating $model"
+
+    # Extract model name for output file
+    model_name=$(echo $model | sed 's/\//-/g')
+
+    lm_eval --model hf \
+      --model_args pretrained=$model,dtype=bfloat16 \
+      --tasks $TASKS \
+      --num_fewshot 5 \
+      --batch_size auto \
+      --output_path results/$model_name.json
+
+done < models.txt
+```
+
+**Step 3: Generate comparison table**
+
+```python
+import json
+import pandas as pd
+
+models = [
+    "meta-llama-Llama-2-7b-hf",
+    "meta-llama-Llama-2-13b-hf",
+    "mistralai-Mistral-7B-v0.1",
+    "microsoft-phi-2"
+]
+
+tasks = ["mmlu", "gsm8k", "hellaswag", "truthfulqa"]
+
+results = []
+for model in models:
+    with open(f"results/{model}.json") as f:
+        data = json.load(f)
+        row = {"Model": model.replace("-", "/")}
+        for task in tasks:
+            # Get primary metric for each task
+            metrics = data["results"][task]
+            if "acc" in metrics:
+                row[task.upper()] = f"{metrics['acc']:.3f}"
+            elif "exact_match" in metrics:
+                row[task.upper()] = f"{metrics['exact_match']:.3f}"
+        results.append(row)
+
+df = pd.DataFrame(results)
+print(df.to_markdown(index=False))
+```
+
+Output:
+```
+| Model                  | MMLU  | GSM8K | HELLASWAG | TRUTHFULQA |
+|------------------------|-------|-------|-----------|------------|
+| meta-llama/Llama-2-7b  | 0.459 | 0.142 | 0.765     | 0.391      |
+| meta-llama/Llama-2-13b | 0.549 | 0.287 | 0.801     | 0.430      |
+| mistralai/Mistral-7B   | 0.626 | 0.395 | 0.812     | 0.428      |
+| microsoft/phi-2        | 0.560 | 0.613 | 0.682     | 0.447      |
+```
+
+### Workflow 4: Evaluate with vLLM (faster inference)
+
+Use vLLM backend for 5-10x faster evaluation.
+
+```
+vLLM Evaluation:
+- [ ] Step 1: Install vLLM
+- [ ] Step 2: Configure vLLM backend
+- [ ] Step 3: Run evaluation
+```
+
+**Step 1: Install vLLM**
+
+```bash
+pip install vllm
+```
+
+**Step 2: Configure vLLM backend**
+
+```bash
+lm_eval --model vllm \
+  --model_args pretrained=meta-llama/Llama-2-7b-hf,tensor_parallel_size=1,dtype=auto,gpu_memory_utilization=0.8 \
+  --tasks mmlu \
+  --batch_size auto
+```
+
+**Step 3: Run evaluation**
+
+vLLM is 5-10× faster than standard HuggingFace:
+
+```bash
+# Standard HF: ~2 hours for MMLU on 7B model
+lm_eval --model hf \
+  --model_args pretrained=meta-llama/Llama-2-7b-hf \
+  --tasks mmlu \
+  --batch_size 8
+
+# vLLM: ~15-20 minutes for MMLU on 7B model
+lm_eval --model vllm \
+  --model_args pretrained=meta-llama/Llama-2-7b-hf,tensor_parallel_size=2 \
+  --tasks mmlu \
+  --batch_size auto
+```
+
+## When to use vs alternatives
+
+**Use lm-evaluation-harness when:**
+- Benchmarking models for academic papers
+- Comparing model quality across standard tasks
+- Tracking training progress
+- Reporting standardized metrics (everyone uses same prompts)
+- Need reproducible evaluation
+
+**Use alternatives instead:**
+- **HELM** (Stanford): Broader evaluation (fairness, efficiency, calibration)
+- **AlpacaEval**: Instruction-following evaluation with LLM judges
+- **MT-Bench**: Conversational multi-turn evaluation
+- **Custom scripts**: Domain-specific evaluation
+
+## Common issues
+
+**Issue: Evaluation too slow**
+
+Use vLLM backend:
+```bash
+lm_eval --model vllm \
+  --model_args pretrained=model-name,tensor_parallel_size=2
+```
+
+Or reduce fewshot examples:
+```bash
+--num_fewshot 0  # Instead of 5
+```
+
+Or evaluate subset of MMLU:
+```bash
+--tasks mmlu_stem  # Only STEM subjects
+```
+
+**Issue: Out of memory**
+
+Reduce batch size:
+```bash
+--batch_size 1  # Or --batch_size auto
+```
+
+Use quantization:
+```bash
+--model_args pretrained=model-name,load_in_8bit=True
+```
+
+Enable CPU offloading:
+```bash
+--model_args pretrained=model-name,device_map=auto,offload_folder=offload
+```
+
+**Issue: Different results than reported**
+
+Check fewshot count:
+```bash
+--num_fewshot 5  # Most papers use 5-shot
+```
+
+Check exact task name:
+```bash
+--tasks mmlu  # Not mmlu_direct or mmlu_fewshot
+```
+
+Verify model and tokenizer match:
+```bash
+--model_args pretrained=model-name,tokenizer=same-model-name
+```
+
+**Issue: HumanEval not executing code**
+
+Install execution dependencies:
+```bash
+pip install human-eval
+```
+
+Enable code execution:
+```bash
+lm_eval --model hf \
+  --model_args pretrained=model-name \
+  --tasks humaneval \
+  --allow_code_execution  # Required for HumanEval
+```
+
+## Advanced topics
+
+**Benchmark descriptions**: See [references/benchmark-guide.md](references/benchmark-guide.md) for detailed description of all 60+ tasks, what they measure, and interpretation.
+
+**Custom tasks**: See [references/custom-tasks.md](references/custom-tasks.md) for creating domain-specific evaluation tasks.
+
+**API evaluation**: See [references/api-evaluation.md](references/api-evaluation.md) for evaluating OpenAI, Anthropic, and other API models.
+
+**Multi-GPU strategies**: See [references/distributed-eval.md](references/distributed-eval.md) for data parallel and tensor parallel evaluation.
+
+## Hardware requirements
+
+- **GPU**: NVIDIA (CUDA 11.8+), works on CPU (very slow)
+- **VRAM**:
+  - 7B model: 16GB (bf16) or 8GB (8-bit)
+  - 13B model: 28GB (bf16) or 14GB (8-bit)
+  - 70B model: Requires multi-GPU or quantization
+- **Time** (7B model, single A100):
+  - HellaSwag: 10 minutes
+  - GSM8K: 5 minutes
+  - MMLU (full): 2 hours
+  - HumanEval: 20 minutes
+
+## Resources
+
+- GitHub: https://github.com/EleutherAI/lm-evaluation-harness
+- Docs: https://github.com/EleutherAI/lm-evaluation-harness/tree/main/docs
+- Task library: 60+ tasks including MMLU, GSM8K, HumanEval, TruthfulQA, HellaSwag, ARC, WinoGrande, etc.
+- Leaderboard: https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard (uses this harness)
+
+
+

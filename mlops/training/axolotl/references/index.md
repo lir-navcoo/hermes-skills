@@ -1,1 +1,15 @@
-IyBBeG9sb3RsIERvY3VtZW50YXRpb24gSW5kZXgKCiMjIENhdGVnb3JpZXMKCiMjIyBBcGkKKipGaWxlOioqIGBhcGkubWRgCioqUGFnZXM6KiogMTUwCgojIyMgRGF0YXNldC1Gb3JtYXRzCioqRmlsZToqKiBgZGF0YXNldC1mb3JtYXRzLm1kYAoqKlBhZ2VzOioqIDkKCiMjIyBPdGhlcgoqKkZpbGU6KiogYG90aGVyLm1kYAoqKlBhZ2VzOioqIDI2Cg==
+# Axolotl Documentation Index
+
+## Categories
+
+### Api
+**File:** `api.md`
+**Pages:** 150
+
+### Dataset-Formats
+**File:** `dataset-formats.md`
+**Pages:** 9
+
+### Other
+**File:** `other.md`
+**Pages:** 26
