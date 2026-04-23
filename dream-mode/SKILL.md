@@ -229,7 +229,7 @@ dreaming:
       enabled: true
       lookbackDays: 7
       minPatternStrength: 0.75
-```
+---
 
 ## 在Hermes Agent中实现
 
@@ -237,6 +237,11 @@ dreaming:
 1. **轻度梦境** - 每6小时（`0 */6 * * *`）
 2. **深度梦境** - 每天凌晨3点（`0 3 * * *`）
 3. **REM梦境** - 每周日凌晨5点（`0 5 * * 0`）
+
+### 投递规则（2026-04-23更新）
+- cron `deliver` 设置为 `local`（cron 系统不支持邮件地址）
+- **实际邮件发送**：由 dream-mode skill 内部通过 `himalaya` skill 发送至 `78080114@qq.com`
+- 三个梦境均通过 himalaya 发送邮件，不再依赖 cron deliver 机制
 
 ### 执行流程
 1. 扫描对应时间范围内的记忆/笔记
@@ -248,7 +253,28 @@ dreaming:
 ### 邮件通知
 - 轻度梦境：简单汇总
 - 深度梦境：详细报告+优化建议
-- REM梦境：模式分析+Skills优化报告+下周预测
+- REM梦境：模式分析+Skills优化执行报告+下周预测
+
+### ⚠️ ProcessDesigner imperativeRef 实现注意
+REM 梦境分析中发现的设计器实现经验（2026-04-23）：
+
+`useImperativeHandle` **必须**放在所有 handler 定义之后，否则引用会 undefined。具体顺序：
+
+```
+1. handleSave (useCallback)
+2. handleExport (useCallback)
+3. handleImport (useCallback)
+4. handleUndo (useCallback)
+5. handleRedo (useCallback)
+6. handleZoomIn (useCallback)
+7. handleZoomOut (useCallback)
+8. handleFitView (useCallback) ← 最后定义
+9. useImperativeHandle(ref, () => ({...全部handler...}), [所有handler])
+```
+
+不能用 `onExport/onImport` 等 prop 回调（会导致 unused 警告），全部通过 `imperativeRef` 暴露。`hideToolbar` prop 用于隐藏内置工具栏。
+
+---
 
 ## 参考
 - OpenClaw源码：`src/memory-host-sdk/dreaming.ts`
