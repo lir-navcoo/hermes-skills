@@ -57,7 +57,7 @@ recency_weight = 0.5 ^ (days_since_last_recall / 14)
 - budget: medium（中等成本）
 
 ### 3. REM Dreaming（REM梦境）
-**用途**：识别跨记忆的行为模式，类比人类REM睡眠
+**用途**：识别跨记忆的行为模式，类比人类REM睡眠中的梦境整合，并**真实执行** Skills 优化
 
 | 参数 | 默认值 | 说明 |
 |------|--------|------|
@@ -77,9 +77,9 @@ recency_weight = 0.5 ^ (days_since_last_recall / 14)
 - thinking: high（深度思考）
 - budget: expensive（高成本）
 
-#### Skills 优化分析（REM 中嵌入）
+#### Skills 真实优化（REM 中嵌入，**实际执行**）
 
-基于 memory、sessions、daily、logs 全部数据，每周分析 skills 使用状况：
+基于 memory、sessions、daily、logs 全部数据，每周分析并**真实修改** skills：
 
 **分析维度**：
 - **使用频率**：哪些 skills 被频繁调用，哪些从未使用或长期未调用
@@ -89,35 +89,67 @@ recency_weight = 0.5 ^ (days_since_last_recall / 14)
 - **记忆反馈**：BOSS 纠正过的方法是否已同步到对应 skill，memory 中的项目规范是否与 skills 一致
 - **过时清理**：超过 30 天未调用的 skills，评估是否应归档或移除
 
-**Skills 优化报告格式**（整合进 REM 梦境报告）：
+**执行流程（实际修改，不只是报告）**：
 
 ```
-## Skills 优化报告 — {date}
+第一步：分析
+  → 扫描全部数据源，识别上述6个维度的问题
 
-### 🔴 需要立即修复（影响日常使用）
-- {skill名}：{问题描述} → {建议修复方案}
-  - 依据：{来源} — {具体引用}
+第二步：制定优化清单
+  → 🆕 新增：需求反复出现但无 skill 支持 → 规划新 skill 内容
+  → 🔧 修复：过时/错误/缺失的 skill → 制定 patch 方案
+  → 🗑️ 归档：30天未调用 + 技术过时的 skill → 标记待删除
 
-### 🟡 建议优化（提升效率）
-- {skill名}：{优化点} → {建议方案}
-  - 依据：{来源} — {具体引用}
+第三步：执行优化（REM 执行主体）
+  → 对每个 🆕 新增：调用 skill_manage(action='create') 创建 skill
+  → 对每个 🔧 修复：调用 skill_manage(action='patch') 修补 skill
+  → 对每个 🗑️ 归档：调用 skill_manage(action='delete') 删除 skill
 
-### 🟢 新增建议（基于需求分析）
-- {需求描述} → 建议新增「{skill名}」，核心功能：{功能列表}
-  - 依据：{sessions/daily 中的具体需求}
-
-### 📌 优化依据来源
-| 类型 | 记忆内容摘要 |
-|------|------------|
-| memory | {关键项目规范/技术决策} |
-| sessions | {本周期内的开发任务/问题/决策} |
-| daily | {Obsidian 中的工作记录} |
+第四步：生成执行报告
+  → 报告包含：执行了哪些操作、依据什么、结果如何
 ```
 
-**不活跃 Skills 检测（每月一次）**：
+**Skills 优化执行报告格式**：
+
+```
+## Skills 优化执行报告 — {date}
+
+### ✅ 已执行的操作
+
+#### 🆕 新增 Skills（{n}个）
+- 新增「{skill名}」
+  - 依据：{sessions/daily/memory 中的具体需求}
+  - 内容：{核心功能列表}
+  - 状态：创建成功 / 创建失败（原因）
+
+#### 🔧 修复 Skills（{n}个）
+- 修复「{skill名}」
+  - 依据：{具体问题描述}
+  - 改动：{old → new 简要描述}
+  - 状态：修复成功 / 修复失败（原因）
+
+#### 🗑️ 归档 Skills（{n}个）
+- 归档「{skill名}」
+  - 依据：{30天未调用 / 技术过时}
+  - 状态：归档成功 / 归档失败（原因）
+
+### 📋 执行摘要
+- 新增：{n} 个 skill
+- 修复：{n} 个 skill
+- 归档：{n} 个 skill
+- 失败：{n} 个（原因见上方）
+```
+
+**不活跃 Skills 处理（每月一次）**：
 - 从 sessions 日志统计各 skill 调用频率
-- 超过 30 天未调用 → 列入「建议审查」列表
-- 若 skill 描述的技术/工具已过时 → 建议移除或归档
+- 超过 30 天未调用 → 直接归档（不只建议）
+- 若 skill 描述的技术/工具已过时 → 直接归档（不只建议）
+
+**⚠️ 执行约束**：
+- 修复现有 skill 前，先 patch 旧内容再验证新内容正确
+- 删除 skill 前，确认无其他 skill 依赖它
+- 新增 skill 需包含：trigger（触发条件）、numbered steps（编号步骤）、pitfalls（踩坑记录）、verification（验证步骤）
+- 执行后无论成功失败，如实写入报告
 
 ---
 
@@ -168,10 +200,11 @@ health = (active_memories / max_capacity) × pattern_coherence
 4. **recall**（回忆记录）— 被反复引用的上下文
 5. **logs**（操作日志）— 辅助验证行为模式
 
-## 安全约束
-- 只读模式，不执行外部操作
-- 不修改原始记忆内容
-- 记忆输出仅用于反思和优化
+## 操作约束
+- 修复现有 skill 前，先 patch 旧内容再验证新内容正确
+- 删除 skill 前，确认无其他 skill 依赖它
+- 新增 skill 需包含：trigger（触发条件）、numbered steps（编号步骤）、pitfalls（踩坑记录）、verification（验证步骤）
+- 执行后无论成功失败，如实写入报告
 
 ## 配置示例
 ```yaml
