@@ -10,10 +10,10 @@ tags: [A股, 选股, 技术分析, 基本面分析, 量化交易]
 ## 一、持仓诊断（每个早盘必做）
 
 **BOSS持仓：**
-- 002097 山河智能（深100股，成本24.252）
-- 002195 岩山科技（深600股，成本10.667）
-- 600633 浙数文化（沪300股，成本16.780）
-- 600967 内蒙一机（沪300股，成本30.600）
+- 002097 山河智能（深100股，成本24.128）
+- 002195 岩山科技（深600股，成本10.647）
+- 600633 浙数文化（沪300股，成本16.688）
+- 600967 内蒙一机（沪300股，成本30.117）
 
 **持仓分析步骤：**
 1. 获取持仓实时价格（腾讯行情API）
@@ -148,10 +148,39 @@ for line in data.strip().split('\n'):
         print(f"{name}({code}): {price} ({change_pct:+.2f}%)")
 ```
 
+### 腾讯行情API（Python）— 优先方案
+
+```python
+import urllib.request
+
+stocks = ['sz002097', 'sz002195', 'sh600633', 'sh600967']
+url = 'https://qt.gtimg.cn/q=' + ','.join(stocks)
+req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+response = urllib.request.urlopen(req, timeout=10)
+data = response.read().decode('gbk')
+
+for line in data.strip().split('\n'):
+    parts = line.split('~')
+    if len(parts) > 3:
+        code = parts[2]
+        name = parts[1]
+        price = float(parts[3])
+        change_pct = float(parts[32])
+        print(f"{name}({code}): {price} ({change_pct:+.2f}%)")
+```
+
+### 浏览器方案 — API失效时的备选
+
+当API调用失败时，直接用浏览器访问新浪财经：
+- 深圳股票：`https://finance.sina.com.cn/realstock/company/sz{代码}/nc.shtml`
+- 上海股票：`https://finance.sina.com.cn/realstock/company/sh{代码}/nc.shtml`
+
+从页面title提取价格，如 "岩山科技 9.30(1.64%)"，或从右侧自选股栏读取最新价和涨跌幅。
+
 ### 注意事项
-- 浏览器直接访问API会CORS拦截，必须用Python/后端
+- 腾讯API可能因网络问题返回空，浏览器方案始终可用
 - 股票代码前缀：sz=深圳、sh=上海、us=美股
-- 返回数据为GBK编码，非UTF-8
+- 新浪财经返回GBK编码，浏览器自动处理
 
 ---
 
