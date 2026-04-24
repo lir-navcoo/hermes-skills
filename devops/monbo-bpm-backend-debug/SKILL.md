@@ -66,3 +66,57 @@ repositoryService.activateProcessDefinitionById(def.getCamundaProcessDefId(), ..
 **文件**：`SecurityConfig.java`
 
 `CorsConfigurationSource` Bean：允许所有来源、全部方法、全部头、credentials、maxAge=3600。在 `filterChain` 中通过 `.cors()` 启用。
+
+---
+
+## Demo Data Fallback：无登录时返回演示任务
+
+**场景**：前端"我的任务"页面接正式 API，但未登录时后端抛 401，导致页面空白
+
+**解决思路**：
+1. SecurityConfig 放开 `/api/tasks/my` 和 `/api/tasks/history` 为 `permitAll`
+2. Service 层 `getCurrentUserId() == null` 时返回 demo 数据，而非抛异常
+
+**SecurityConfig.java**：
+```java
+.requestMatchers("/api/tasks/my", "/api/tasks/history").permitAll()
+```
+
+**TaskServiceImpl.java**（无用户时返回 demo）：
+```java
+public List<TaskRespDTO> listMyTasks(Long userId) {
+    Long currentUserId = userId != null ? userId : getCurrentUserId();
+    if (currentUserId == null) {
+        return getDemoPendingTasks(); // 不抛异常，返回演示数据
+    }
+    // ... 正常逻辑
+}
+
+// 演示数据
+private List<TaskRespDTO> getDemoPendingTasks() {
+    return java.util.List.of(
+        createDemoTask("TASK-001", "请假审批", "出差申请", "请假申请", 1, "admin", 50),
+        createDemoTask("TASK-002", "费用报销", "EXP-2026-001", "费用报销", 2, "admin", 30),
+        createDemoTask("TASK-003", "采购审批", "PUR-2026-002", "办公用品采购", 1, "admin", 80)
+    );
+}
+
+private TaskRespDTO createDemoTask(String taskId, String taskName, String businessKey,
+        String processName, int status, String assignee, int priority) {
+    TaskRespDTO dto = new TaskRespDTO();
+    dto.setCamundaTaskId(taskId);
+    dto.setTaskName(taskName);
+    dto.setProcessDefName(processName);
+    dto.setProcessInstBusinessKey(businessKey);
+    dto.setAssignee(assignee);
+    dto.setPriority(priority);
+    dto.setCreatedTime(java.time.LocalDateTime.now());
+    dto.setStatus(status == 1 ? "active" : "finished"); // 前端用 active=1, finished=2
+    return dto;
+}
+```
+
+**前端映射**（`tasks/index.tsx`）：
+```typescript
+status: dto.status === "active" ? 1 : 2  // 注意：后端返回的是 "active"/"finished"，不是 "pending"
+```
