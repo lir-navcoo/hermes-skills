@@ -83,10 +83,27 @@ fi
 
 **正确方案：Tree API 必须分两步走（blob-first）**
 
-第一步 — 创建 blob 获取 SHA：
-```python
-import subprocess, base64
+第一步 — 创建 blob 获取 SHA（两种方式，任选其一）：
 
+**方式A（推荐）：通过JSON file**：
+```python
+import subprocess, base64, json
+
+def create_blob(repo, file_path):
+    with open(file_path, 'rb') as f:
+        encoded = base64.b64encode(f.read()).decode('ascii')
+    payload = json.dumps({"content": encoded, "encoding": "base64"})
+    with open('/tmp/blob_payload.json', 'w') as fp:
+        fp.write(payload)
+    r = subprocess.run(
+        ['gh', 'api', f'repos/{repo}/git/blobs', '--method', 'POST', '--input', '/tmp/blob_payload.json'],
+        capture_output=True, text=True
+    )
+    return json.loads(r.stdout)['sha']
+```
+
+**方式B（等效）：用 --input 传参**：
+```python
 def create_blob(repo, file_path):
     with open(file_path, 'rb') as f:
         encoded = base64.b64encode(f.read()).decode('ascii')
@@ -97,6 +114,8 @@ def create_blob(repo, file_path):
     )
     return json.loads(result.stdout)['sha']
 ```
+
+两种方式效果相同。**关键**：`encoding` 必须是字符串 `"base64"`，不能漏。
 
 第二步 — 用 blob SHA 构建 tree（不是 content）：
 ```python
