@@ -210,13 +210,9 @@ Hello from Himalaya!
 EOF
 ```
 
-Or with headers flag:
-
-```bash
-himalaya message write -H "To:recipient@example.com" -H "Subject:Test" "Message body here"
-```
-
 Note: `himalaya message write` without piped input opens `$EDITOR`. This works with `pty=true` + background mode, but piping is simpler and more reliable.
+
+**踩坑记录：** `himalaya email write` 不是有效子命令（2026-04-21 发现）。所有邮件发送必须走 `himalaya template send` + stdin 管道。
 
 ### Move/Copy Emails
 
@@ -319,6 +315,9 @@ RUST_LOG=trace RUST_BACKTRACE=1 himalaya envelope list
 | `cannot find maildir matching name Sent` | maildir 文件夹未创建或命名错误 | 先 `mkdir -p` 创建 Sent/INBOX/Drafts 等文件夹 |
 | `TOML parse error: unknown variant 'ssl-tls'` | encryption type 拼写错误 | IMAP 用 `tls`，SMTP 用 `start-tls` |
 | `cannot add message: feature not available` | 没有后端配置 | 至少需要一个后端（maildir 或 imap）才能发送 |
+| `cannot parse email: empty entries` | maildir格式邮件读取失败 | 用 `envelope list` 替代 `message read` 查看邮件列表 |
+| `Foreground command uses '&' backgrounding` | heredoc 管道发送在某些环境失败 | 改用 temp file 中转：`write_file` 写内容到 `/tmp/email.txt`，再 `cat /tmp/email.txt | himalaya template send` |
+| `Could not determine home directory` | heredoc 管道在某些环境（如cron/daemon）下无法确定 HOME | 改用 temp file 中转：`write_file` 写内容到 `/tmp/email.txt`，再 `cat /tmp/email.txt | himalaya template send` |
 
 ### 发送邮件的关键约束
 
