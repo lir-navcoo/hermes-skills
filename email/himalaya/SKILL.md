@@ -317,7 +317,26 @@ RUST_LOG=trace RUST_BACKTRACE=1 himalaya envelope list
 | `cannot add message: feature not available` | 没有后端配置 | 至少需要一个后端（maildir 或 imap）才能发送 |
 | `cannot parse email: empty entries` | maildir格式邮件读取失败 | 用 `envelope list` 替代 `message read` 查看邮件列表 |
 | `Foreground command uses '&' backgrounding` | heredoc 管道发送在某些环境失败 | 改用 temp file 中转：`write_file` 写内容到 `/tmp/email.txt`，再 `cat /tmp/email.txt | himalaya template send` |
-| `Could not determine home directory` | heredoc 管道在某些环境（如cron/daemon）下无法确定 HOME | 改用 temp file 中转：`write_file` 写内容到 `/tmp/email.txt`，再 `cat /tmp/email.txt | himalaya template send` |
+| `Could not determine home directory` | heredoc 管道在某些环境（如cron/daemon）下无法确定 HOME | 改用 temp file 中转：`write_file` 写内容到 `/tmp/email.txt`，再 `cat /tmp/email.txt \| himalaya template send` |
+| `shell=True` pipe silently fails | `subprocess.run(['cat', f, '\|', 'himalaya', ...], shell=True)` 返回 0 但邮件未发送 | 用 `subprocess.Popen` + `communicate()` 而非 `shell=True` |
+
+**可靠的非交互式发送（Python）：**
+```python
+import subprocess
+
+email_text = """From: you@example.com
+To: recipient@example.com
+Subject: Subject Here
+
+Body here."""
+
+proc = subprocess.Popen(
+    ['himalaya', 'template', 'send'],
+    stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
+)
+stdout, stderr = proc.communicate(input=email_text)
+print(stdout)  # "Message successfully sent!"
+```
 
 ### 发送邮件的关键约束
 
